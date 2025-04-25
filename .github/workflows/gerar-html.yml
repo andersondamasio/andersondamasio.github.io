@@ -27,10 +27,15 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
-      - name: Commitar alterações
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add -A
-          git commit -m "🧠 Novo artigo com estilo refinado"
-          git push origin HEAD:main
+     - name: Commitar alterações
+  run: |
+    git config user.name "github-actions"
+    git config user.email "actions@github.com"
+    git add -A
+    if git diff --cached --quiet; then
+      echo "⚠️ Nada para commitar, encerrando."
+    else
+      git commit -m "📝 Novo artigo com estilo refinado"
+      git push origin HEAD:main
+    fi
+
