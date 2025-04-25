@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  gerar-e-publicar:
+  gerar-e-commitar:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,6 +31,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add artigos/*.html index.html titulos.json
-          git commit -m "🧠 Novo artigo com Analytics embutido"
+          git add artigos/*.html index.html titulos.json sitemap.xml
+          git commit -m "🧠 Novo artigo e sitemap.xml atualizado"
           git push origin HEAD:main
