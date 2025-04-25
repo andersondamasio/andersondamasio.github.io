@@ -164,14 +164,14 @@ function gerarIndicesPaginados(titulos) {
 <meta name="description" content="Perfil profissional de Anderson Damasio, Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas escaláveis e arquitetura moderna.">
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <style>
-body {{ font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }}
-header {{ background-color: #0a66c2; color: white; padding: 2rem 1rem; text-align: center; }}
-header a {{ color: white; font-weight: bold; text-decoration: underline; }}
-main {{ max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }}
-footer {{ text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }}
-ul {{ padding-left: 1.5rem; line-height: 1.8; }}
-a {{ color: #0a66c2; text-decoration: none; font-weight: bold; }}
-a:hover {{ text-decoration: underline; }}
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+header { background-color: #0a66c2; color: white; padding: 2rem 1rem; text-align: center; }
+header a { color: white; font-weight: bold; text-decoration: underline; }
+main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
+ul { padding-left: 1.5rem; line-height: 1.8; }
+a { color: #0a66c2; text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
