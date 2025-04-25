@@ -8,7 +8,7 @@ const apiKey = process.env.OPENAI_API_KEY;
 const artigosPorPagina = 10;
 
 if (!apiKey) {
-  console.error("❌ OPENAI_API_KEY não definida.");
+  console.error("❌ OPENAI_API_KEY não definida. ");
   process.exit(1);
 }
 
