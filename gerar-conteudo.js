@@ -97,7 +97,7 @@ async function gerar() {
 </head>
 <body>
   <main>
-<section style="margin-bottom: 3rem;">
+<!-- Bloco Sobre Mim apenas em index.html -->
   <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem;">
     <h2>Sobre Mim</h2>
     <p>Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna. Atua com foco em inovação, performance e confiabilidade de aplicações.</p>
@@ -108,6 +108,9 @@ async function gerar() {
     <h1>${titulo}</h1>
     <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
     <div class="article-body">${content.replace(/\n/g, "<br>")}</div>
+<p class="back-link">
+  <a href="../index.html">← Voltar para a página inicial</a>
+</p>
     <p class="back-link">
       <a href="../index.html">← Voltar para a página inicial</a>
     </p>
@@ -189,7 +192,7 @@ a:hover { text-decoration: underline; }
 <p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener">Acesse o perfil no LinkedIn</a></p>
 </header>
 <main>
-<section style="margin-bottom: 3rem;">
+<!-- Bloco Sobre Mim apenas em index.html -->
   <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem;">
     <h2>Sobre Mim</h2>
     <p>Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna. Atua com foco em inovação, performance e confiabilidade de aplicações.</p>
