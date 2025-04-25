@@ -1,6 +1,8 @@
 const fs = require('fs');
 const axios = require('axios');
 
+const siteUrl = "https://www.andersondamasio.com.br";
+
 const apiKey = process.env.OPENAI_API_KEY;
 const promptBase = "Escreva um artigo técnico original sobre um tema relevante de arquitetura de software. Comece com uma linha 'Título: ...'";
 
@@ -46,13 +48,17 @@ async function gerar() {
       process.exit(0);
     }
 
+    const resumo = content.split("\n").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
+
     const html = `
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>${titulo}</title>
-  <!-- Google tag (gtag.js) -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>${titulo} | Anderson Damasio</title>
+  <meta name="description" content="${resumo}">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -60,30 +66,65 @@ async function gerar() {
     gtag('js', new Date());
     gtag('config', 'G-T15623VZYE');
   </script>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+    main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    a { color: #0a66c2; text-decoration: none; font-weight: bold; }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
-  <h1>${titulo}</h1>
-  <pre style="white-space: pre-wrap">${content}</pre>
+  <main>
+    <h1>${titulo}</h1>
+    <pre style="white-space: pre-wrap;">${content}</pre>
+    <p style="text-align:center; margin-top:2rem;">
+      <a href="../index.html">← Voltar para a página inicial</a>
+    </p>
+  </main>
 </body>
 </html>`;
 
     if (!fs.existsSync('artigos')) fs.mkdirSync('artigos');
     fs.writeFileSync(filename, html);
 
-    // Atualiza titulos.json
     titulosGerados.push(titulo);
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
-    // Atualiza index.html
-    const link = `<li><a href="${filename}">📝 ${titulo}</a></li>`;
-    const existing = fs.existsSync('index.html') ? fs.readFileSync('index.html', 'utf-8') : '';
-    const artigosExistentes = existing.match(/<li>.*?<\/li>/g) || [];
+    // Atualizar links no index.html
+    const indexPath = "index.html";
+    if (fs.existsSync(indexPath)) {
+      let indexContent = fs.readFileSync(indexPath, "utf-8");
 
-    const novosLinks = [link, ...artigosExistentes.filter(l => !l.includes(slug))].slice(0, 50).join("\n");
-    const indexContent = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Index de Artigos</title></head><body><h1>📚 Artigos Gerados</h1><ul>${novosLinks}</ul></body></html>`;
+      const links = titulosGerados.map(t => {
+        const slugLink = slugify(t);
+        return `<li><a href="artigos/${slugLink}.html">${t}</a></li>`;
+      }).join("\n");
 
-    fs.writeFileSync('index.html', indexContent);
-    console.log(`✅ Artigo salvo como ${filename}`);
+      indexContent = indexContent.replace(
+        /<!-- LINKS-DOS-ARTIGOS-INICIO -->(.|\n|\r)*?<!-- LINKS-DOS-ARTIGOS-FIM -->/,
+        `<!-- LINKS-DOS-ARTIGOS-INICIO -->\n${links}\n<!-- LINKS-DOS-ARTIGOS-FIM -->`
+      );
+
+      fs.writeFileSync(indexPath, indexContent);
+    }
+
+    // Gerar sitemap.xml com domínio personalizado
+    const sitemapLinks = [
+      `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
+      ...titulosGerados.map(t => {
+        const slugLink = slugify(t);
+        return `<url><loc>${siteUrl}/artigos/${slugLink}.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
+      })
+    ].join("\n");
+
+    const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapLinks}
+</urlset>`;
+
+    fs.writeFileSync("sitemap.xml", sitemapContent);
+
+    console.log(`✅ Artigo salvo como ${filename} e sitemap.xml atualizado`);
   } catch (error) {
     console.error("❌ Erro ao gerar conteúdo:", error.response?.data || error.message);
     process.exit(1);
