@@ -86,7 +86,7 @@ async function gerar() {
       },
       {
         headers: {
-          Authorization: \`Bearer \${apiKey}\`,
+          Authorization: `Bearer \${apiKey}`,
           'Content-Type': 'application/json'
         }
       }
@@ -95,7 +95,7 @@ async function gerar() {
     const content = response.data.choices[0].message.content;
     const titulo = content.match(/^Título:\s*(.*)$/mi)?.[1]?.trim() || noticia?.titulo || "Artigo de Arquitetura";
     const slug = slugify(titulo);
-    const filename = \`artigos/\${slug}.html\`;
+    const filename = `artigos/\${slug}.html`;
 
     if (titulosExistentes.includes(titulo.toLowerCase())) {
       console.log("⚠️ Artigo já gerado anteriormente. Abortando.");
@@ -105,7 +105,7 @@ async function gerar() {
     const resumo = content.split("\n").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
     const dataHoraFormatada = formatDateTime(now);
 
-    const html = \`<!DOCTYPE html>
+    const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
@@ -145,7 +145,7 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </p>
 </main>
 </body>
-</html>\`;
+</html>`;
 
     if (!fs.existsSync('artigos')) fs.mkdirSync('artigos');
     fs.writeFileSync(filename, html);
@@ -156,7 +156,7 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
     gerarIndicesPaginados(titulosGerados);
     gerarSitemap(titulosGerados);
 
-    console.log(\`✅ Artigo gerado: \${titulo}\`);
+    console.log(`✅ Artigo gerado: \${titulo}`);
   } catch (error) {
     console.error("❌ Erro:", error.message);
     process.exit(1);
@@ -173,16 +173,16 @@ function gerarIndicesPaginados(titulos) {
     const links = artigosPagina.map(t => {
       const slug = slugify(t.titulo);
       const data = formatDateTime(new Date(t.data));
-      return \`<li><a href="artigos/\${slug}.html" title="Leia o artigo: \${t.titulo}">\${t.titulo}</a> <span style="color:#777; font-size: 0.85rem;">(\${data})</span></li>\`;
+      return `<li><a href="artigos/\${slug}.html" title="Leia o artigo: \${t.titulo}">\${t.titulo}</a> <span style="color:#777; font-size: 0.85rem;">(\${data})</span></li>`;
     }).join("\n");
 
     const paginacao = paginas > 1 ? '<div style="text-align:center; margin-top:2rem;">' + 
       Array.from({length: paginas}).map((_, idx) => {
-        const pageName = idx === 0 ? "index.html" : \`index\${idx+1}.html\`;
-        return \`<a href="\${pageName}" style="margin:0 8px;">Página \${idx+1}</a>\`;
+        const pageName = idx === 0 ? "index.html" : `index\${idx+1}.html`;
+        return `<a href="\${pageName}" style="margin:0 8px;">Página \${idx+1}</a>`;
       }).join("") + '</div>' : '';
 
-    const html = \`<!DOCTYPE html>
+    const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -227,9 +227,9 @@ a:hover { text-decoration: underline; }
 &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 </body>
-</html>\`;
+</html>`;
 
-    const nome = i === 0 ? "index.html" : \`index\${i+1}.html\`;
+    const nome = i === 0 ? "index.html" : `index\${i+1}.html`;
     fs.writeFileSync(nome, html);
   }
 }
