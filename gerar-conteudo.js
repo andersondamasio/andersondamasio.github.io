@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
@@ -6,11 +7,6 @@ const parser = new Parser();
 const siteUrl = "https://www.andersondamasio.com.br";
 const apiKey = process.env.OPENAI_API_KEY;
 const artigosPorPagina = 10;
-
-if (!apiKey) {
-  console.error("❌ OPENAI_API_KEY não definida.");
-  process.exit(1);
-}
 
 const hackerNewsUrl = "https://hacker-news.firebaseio.com/v0/topstories.json";
 const devBlogsFeeds = [
@@ -29,64 +25,75 @@ function slugify(str) {
     .replace(/(^-|-$)/g, '');
 }
 
-function normalizarTitulo(titulo) {
-  return titulo.toLowerCase()
-    .normalize("NFD").replace(/[̀-ͯ]/g, "")
-    .replace(/[^a-z0-9]/g, '');
-}
-
 function formatDateTime(date) {
   const pad = n => n.toString().padStart(2, '0');
   return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}`;
 }
 
-async function buscarNoticiaHackerNews(titulosExistentesNorm) {
-  const ids = await axios.get(hackerNewsUrl).then(res => res.data.slice(0, 50));
-  for (const id of ids) {
-    const item = await axios.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(res => res.data);
-    if (item && item.title && !item.deleted && !item.dead &&
-        !titulosExistentesNorm.includes(normalizarTitulo(item.title))) {
-      return { titulo: item.title, url: item.url || '' };
-    }
-  }
-  return null;
+function normalizarTexto(str) {
+  return str?.toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]/g, '') || "";
 }
 
-async function buscarNoticiaDevBlogs(titulosExistentesNorm) {
-  for (const feedUrl of devBlogsFeeds) {
-    const feed = await parser.parseURL(feedUrl);
-    for (const item of feed.items) {
-      if (item.title && item.link &&
-          !titulosExistentesNorm.includes(normalizarTitulo(item.title))) {
-        return { titulo: item.title, url: item.link };
+async function buscarNoticia() {
+  const titulosPath = "titulos.json";
+  const titulosGerados = fs.existsSync(titulosPath) ? JSON.parse(fs.readFileSync(titulosPath, "utf-8")) : [];
+  const noticiasAntigas = titulosGerados.map(t => normalizarTexto(t.noticiaOriginal));
+
+  const fontes = [buscarNoticiaHackerNews, buscarNoticiaDevBlogs];
+
+  for (const fonte of fontes) {
+    const lista = await fonte();
+    for (const noticia of lista) {
+      const normalizada = normalizarTexto(noticia.titulo);
+      if (!noticiasAntigas.includes(normalizada)) {
+        return noticia;
       }
     }
   }
   return null;
 }
 
+async function buscarNoticiaHackerNews() {
+  const ids = await axios.get(hackerNewsUrl).then(res => res.data.slice(0, 30));
+  const lista = [];
+  for (const id of ids) {
+    const item = await axios.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(res => res.data);
+    if (item?.title && !item.deleted && !item.dead) {
+      lista.push({ titulo: item.title, url: item.url || '' });
+    }
+  }
+  return lista;
+}
+
+async function buscarNoticiaDevBlogs() {
+  const lista = [];
+  for (const feedUrl of devBlogsFeeds) {
+    const feed = await parser.parseURL(feedUrl);
+    for (const item of feed.items) {
+      if (item.title && item.link) {
+        lista.push({ titulo: item.title, url: item.link });
+      }
+    }
+  }
+  return lista;
+}
+
 async function gerar() {
   try {
     const now = new Date();
     const titulosPath = "titulos.json";
+    let titulosGerados = fs.existsSync(titulosPath) ? JSON.parse(fs.readFileSync(titulosPath, "utf-8")) : [];
 
-    let titulosGerados = [];
-    if (fs.existsSync(titulosPath)) {
-      titulosGerados = JSON.parse(fs.readFileSync(titulosPath, "utf-8"));
-    }
-    const titulosExistentesNorm = titulosGerados.map(t => normalizarTitulo(t.titulo));
-
-    let noticia = await buscarNoticiaHackerNews(titulosExistentesNorm);
-    if (!noticia) {
-      noticia = await buscarNoticiaDevBlogs(titulosExistentesNorm);
-    }
+    const noticia = await buscarNoticia();
 
     if (!noticia) {
-      console.log("⚠️ Nenhuma notícia inédita encontrada. Abortando.");
+      console.log("⚠️ Nenhuma notícia nova encontrada. Abortando.");
       process.exit(0);
     }
 
-    let prompt = `Resumo da notícia: ${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico e original com conteúdo e título em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software. Você pode opcionalmente abranger os assuntos mais relevantes que tenham a ver com o tema, como Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture, Cloud-Native Patterns, Resilience Engineering, API Gateway Patterns, Edge Computing, Observability, DevOps, Continuous Delivery, AI System Architecture, Data Mesh e Event Sourcing.`;
+    const prompt = `Resumo da notícia: ${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico e original com conteúdo e título em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software. Utilize conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture, Cloud-Native Patterns, API Gateway, Observability, DevOps, Data Mesh, entre outros se relevante.`;
 
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
@@ -108,12 +115,8 @@ async function gerar() {
     const slug = slugify(titulo);
     const filename = `artigos/${slug}.html`;
 
-    if (titulosExistentesNorm.includes(normalizarTitulo(titulo))) {
-      console.log("⚠️ Artigo já gerado anteriormente. Abortando.");
-      process.exit(0);
-    }
-
-    const resumo = content.split("\n").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
+    const resumo = content.split("
+").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
     const dataHoraFormatada = formatDateTime(now);
 
     const html = `<!DOCTYPE html>
@@ -130,9 +133,7 @@ async function gerar() {
 <h1>${titulo}</h1>
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
 <div class="article-body">${content.replace(/\n/g, "<br>")}</div>
-<p class="back-link">
-  <a href="../index.html">← Voltar para a página inicial</a>
-</p>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 </body>
 </html>`;
@@ -140,14 +141,67 @@ async function gerar() {
     if (!fs.existsSync('artigos')) fs.mkdirSync('artigos');
     fs.writeFileSync(filename, html);
 
-    titulosGerados.push({ titulo, data: now.toISOString() });
+    titulosGerados.push({ titulo, noticiaOriginal: noticia.titulo, data: now.toISOString() });
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
+
+    gerarIndicesPaginados(titulosGerados);
+    gerarSitemap(titulosGerados);
 
     console.log(`✅ Artigo gerado: ${titulo}`);
   } catch (error) {
-    console.error("❌ Erro:", error.response?.data || error.message);
+    console.error("❌ Erro:", error.message);
     process.exit(1);
   }
+}
+
+function gerarIndicesPaginados(titulos) {
+  const ordenados = titulos.slice().sort((a, b) => new Date(b.data) - new Date(a.data));
+  const paginas = Math.ceil(ordenados.length / artigosPorPagina);
+
+  for (let i = 0; i < paginas; i++) {
+    const artigosPagina = ordenados.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
+    const links = artigosPagina.map(t => {
+      const slug = slugify(t.titulo);
+      const data = formatDateTime(new Date(t.data));
+      return `<li><a href="artigos/${slug}.html">${t.titulo}</a> <span style="color:#777;">(${data})</span></li>`;
+    }).join("\n");
+
+    const paginacao = paginas > 1 ? '<div style="text-align:center;">' +
+      Array.from({ length: paginas }).map((_, idx) => {
+        const pageName = idx === 0 ? "index.html" : `index${idx + 1}.html`;
+        return `<a href="${pageName}" style="margin:0 8px;">Página ${idx + 1}</a>`;
+      }).join("") + '</div>' : '';
+
+    const html = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>Anderson Damasio</title></head>
+<body>
+<h1>Anderson Damasio – Arquiteto de Software</h1>
+<ul>${links}</ul>
+${paginacao}
+</body>
+</html>`;
+
+    const nome = i === 0 ? "index.html" : `index${i + 1}.html`;
+    fs.writeFileSync(nome, html);
+  }
+}
+
+function gerarSitemap(titulos) {
+  const sitemapLinks = [
+    `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
+    ...titulos.map(t => {
+      const slug = slugify(t.titulo);
+      return `<url><loc>${siteUrl}/artigos/${slug}.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
+    })
+  ].join("\n");
+
+  const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapLinks}
+</urlset>`;
+
+  fs.writeFileSync("sitemap.xml", sitemapContent);
 }
 
 gerar();
