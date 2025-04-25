@@ -93,7 +93,7 @@ async function gerar() {
       process.exit(0);
     }
 
-    const prompt = `Resumo da notícia: ${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico e original com conteúdo e título em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software. Utilize conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture, Cloud-Native Patterns, API Gateway, Observability, DevOps, Data Mesh, entre outros se relevante.`;
+    const prompt = `Resumo da notícia: ${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico e original com conteúdo e título em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software.`;
 
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
