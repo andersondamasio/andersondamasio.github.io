@@ -1,9 +1,9 @@
-name: Gerar HTML com ChatGPT
+name: gerar-e-commitar
 
 on:
+  workflow_dispatch: {}
   schedule:
     - cron: '0 * * * *'
-  workflow_dispatch:
 
 jobs:
   gerar-e-commitar:
@@ -31,6 +31,10 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add artigos/*.html index.html titulos.json sitemap.xml
-          git commit -m "🧠 Novo artigo com estilo refinado"
-          git push origin HEAD:main
+          git add -A
+          if git diff --cached --quiet; then
+            echo "⚠️ Nada para commitar, encerrando."
+          else
+            git commit -m "📝 Novo artigo com estilo refinado"
+            git push origin HEAD:main
+          fi
