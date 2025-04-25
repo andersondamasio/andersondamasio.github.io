@@ -115,8 +115,7 @@ async function gerar() {
     const slug = slugify(titulo);
     const filename = `artigos/${slug}.html`;
 
-    const resumo = content.split("
-").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
+    const resumo = content.split("").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
     const dataHoraFormatada = formatDateTime(now);
 
     const html = `<!DOCTYPE html>
