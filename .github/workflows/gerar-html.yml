@@ -20,7 +20,7 @@ jobs:
           node-version: '18'
 
       - name: Instalar dependências
-        run: npm install axios
+        run: npm install axios rss-parser
 
       - name: Gerar conteúdo com ChatGPT
         run: node gerar-conteudo.js
