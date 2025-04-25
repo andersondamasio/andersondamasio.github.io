@@ -1,10 +1,21 @@
 const fs = require('fs');
 const axios = require('axios');
-const path = require('path');
+const Parser = require('rss-parser');
+const parser = new Parser();
 
 const siteUrl = "https://www.andersondamasio.com.br";
 const apiKey = process.env.OPENAI_API_KEY;
 const artigosPorPagina = 10;
+
+// Fontes
+const hackerNewsUrl = "https://hacker-news.firebaseio.com/v0/topstories.json";
+const devBlogsFeeds = [
+  "https://devblogs.microsoft.com/dotnet/feed/",
+  "https://devblogs.microsoft.com/azure/feed/",
+  "https://devblogs.microsoft.com/visualstudio/feed/",
+  "https://devblogs.microsoft.com/devops/feed/",
+  "https://devblogs.microsoft.com/opensource/feed/"
+];
 
 function slugify(str) {
   if (!str || typeof str !== "string") return "artigo";
@@ -16,22 +27,54 @@ function slugify(str) {
 
 function formatDateTime(date) {
   const pad = n => n.toString().padStart(2, '0');
-  return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}`;
+  return \`\${pad(date.getDate())}/\${pad(date.getMonth() + 1)}/\${date.getFullYear()} \${pad(date.getHours())}:\${pad(date.getMinutes())}\`;
+}
+
+async function buscarNoticiaHackerNews() {
+  const ids = await axios.get(hackerNewsUrl).then(res => res.data.slice(0, 30));
+  for (const id of ids) {
+    const item = await axios.get(\`https://hacker-news.firebaseio.com/v0/item/\${id}.json\`).then(res => res.data);
+    if (item && item.title && !item.deleted && !item.dead) {
+      return { titulo: item.title, url: item.url || '' };
+    }
+  }
+  return null;
+}
+
+async function buscarNoticiaDevBlogs() {
+  for (const feedUrl of devBlogsFeeds) {
+    const feed = await parser.parseURL(feedUrl);
+    for (const item of feed.items) {
+      if (item.title && item.link) {
+        return { titulo: item.title, url: item.link };
+      }
+    }
+  }
+  return null;
 }
 
 async function gerar() {
   try {
     const now = new Date();
-    const dataHoraFormatada = formatDateTime(now);
     const titulosPath = "titulos.json";
 
     let titulosGerados = [];
     if (fs.existsSync(titulosPath)) {
       titulosGerados = JSON.parse(fs.readFileSync(titulosPath, "utf-8"));
     }
+    const titulosExistentes = titulosGerados.map(t => t.titulo.toLowerCase());
 
-    const titulosApenas = titulosGerados.map(t => t.titulo);
-    const prompt = "Escreva um artigo técnico original sobre um tema relevante de arquitetura de software. Comece com uma linha 'Título: ...'. Evite os temas: " + titulosApenas.join(", ");
+    let noticia = await buscarNoticiaHackerNews();
+    if (!noticia || titulosExistentes.includes(noticia.titulo.toLowerCase())) {
+      noticia = await buscarNoticiaDevBlogs();
+    }
+
+    let prompt;
+    if (noticia && !titulosExistentes.includes(noticia.titulo.toLowerCase())) {
+      prompt = \`Resumo da notícia: \${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software. Utilize conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design e Event-Driven Architecture.\`;
+    } else {
+      prompt = "Escreva um artigo técnico moderno sobre arquitetura de software utilizando tendências como Microservices, Serverless, Kubernetes, Domain-Driven Design e Event-Driven Architecture. O artigo deve ser original e em português.";
+    }
 
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
@@ -42,81 +85,66 @@ async function gerar() {
       },
       {
         headers: {
-          Authorization: `Bearer ${apiKey}`,
+          Authorization: \`Bearer \${apiKey}\`,
           'Content-Type': 'application/json'
         }
       }
     );
 
     const content = response.data.choices[0].message.content;
-    const titulo = content.match(/^Título:\s*(.*)$/mi)?.[1]?.trim();
-    if (!titulo) {
-      console.error("❌ Título não encontrado no conteúdo gerado.");
-      process.exit(1);
-    }
-
+    const titulo = content.match(/^Título:\s*(.*)$/mi)?.[1]?.trim() || noticia?.titulo || "Artigo de Arquitetura";
     const slug = slugify(titulo);
-    const filename = `artigos/${slug}.html`;
+    const filename = \`artigos/\${slug}.html\`;
 
-    if (titulosApenas.includes(titulo)) {
+    if (titulosExistentes.includes(titulo.toLowerCase())) {
       console.log("⚠️ Artigo já gerado anteriormente. Abortando.");
       process.exit(0);
     }
 
     const resumo = content.split("\n").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
+    const dataHoraFormatada = formatDateTime(now);
 
-    const html = `<!DOCTYPE html>
+    const html = \`<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>${titulo} | Anderson Damasio</title>
-  <meta name="description" content="${resumo}">
-  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-T15623VZYE');
-  </script>
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
-    h1 { font-size: 1.8rem; margin-bottom: 1rem; }
-    .article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
-    .article-body { font-size: 1.05rem; line-height: 1.7; }
-    .back-link { text-align: center; margin-top: 2rem; }
-    .back-link a {
-      font-weight: bold; color: #0a66c2; font-size: 1.05rem;
-      border: 1px solid #0a66c2; padding: 0.4rem 1rem;
-      border-radius: 6px; display: inline-block; text-decoration: none;
-    }
-    .back-link a:hover { background-color: #0a66c2; color: white; }
-    main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>\${titulo} | Anderson Damasio</title>
+<meta name="description" content="\${resumo}">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a {
+  font-weight: bold; color: #0a66c2; font-size: 1.05rem;
+  border: 1px solid #0a66c2; padding: 0.4rem 1rem;
+  border-radius: 6px; display: inline-block; text-decoration: none;
+}
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
 </head>
 <body>
-  <main>
-<!-- Bloco Sobre Mim apenas em index.html -->
-  <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem;">
-    <h2>Sobre Mim</h2>
-    <p>Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna. Atua com foco em inovação, performance e confiabilidade de aplicações.</p>
-    <h3>Contato</h3>
-    <p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
-  </div>
-</section>
-    <h1>${titulo}</h1>
-    <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
-    <div class="article-body">${content.replace(/\n/g, "<br>")}</div>
+<main>
+<h1>\${titulo}</h1>
+<p class="article-meta">Publicado em: \${dataHoraFormatada}</p>
+<div class="article-body">\${content.replace(/\n/g, "<br>")}</div>
 <p class="back-link">
   <a href="../index.html">← Voltar para a página inicial</a>
 </p>
-    <p class="back-link">
-      <a href="../index.html">← Voltar para a página inicial</a>
-    </p>
-  </main>
+</main>
 </body>
-</html>`;
+</html>\`;
 
     if (!fs.existsSync('artigos')) fs.mkdirSync('artigos');
     fs.writeFileSync(filename, html);
@@ -125,24 +153,11 @@ async function gerar() {
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
     gerarIndicesPaginados(titulosGerados);
+    gerarSitemap(titulosGerados);
 
-    const sitemapLinks = [
-      `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
-      ...titulosGerados.map(t => {
-        const slugLink = slugify(t.titulo);
-        return `<url><loc>${siteUrl}/artigos/${slugLink}.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
-      })
-    ].join("\n");
-
-    const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapLinks}
-</urlset>`;
-
-    fs.writeFileSync("sitemap.xml", sitemapContent);
-    console.log(`✅ Artigo salvo como ${filename}, index paginado e sitemap atualizados.`);
+    console.log(\`✅ Artigo gerado: \${titulo}\`);
   } catch (error) {
-    console.error("❌ Erro ao gerar conteúdo:", error.response?.data || error.message);
+    console.error("❌ Erro:", error.message);
     process.exit(1);
   }
 }
@@ -157,16 +172,16 @@ function gerarIndicesPaginados(titulos) {
     const links = artigosPagina.map(t => {
       const slug = slugify(t.titulo);
       const data = formatDateTime(new Date(t.data));
-      return `<li><a href="artigos/${slug}.html" title="Leia o artigo: ${t.titulo}">${t.titulo}</a> <span style="color:#777; font-size: 0.85rem;">(${data})</span></li>`;
+      return \`<li><a href="artigos/\${slug}.html" title="Leia o artigo: \${t.titulo}">\${t.titulo}</a> <span style="color:#777; font-size: 0.85rem;">(\${data})</span></li>\`;
     }).join("\n");
 
     const paginacao = paginas > 1 ? '<div style="text-align:center; margin-top:2rem;">' + 
       Array.from({length: paginas}).map((_, idx) => {
-        const pageName = idx === 0 ? "index.html" : `index${idx+1}.html`;
-        return `<a href="${pageName}" style="margin:0 8px;">Página ${idx+1}</a>`;
+        const pageName = idx === 0 ? "index.html" : \`index\${idx+1}.html\`;
+        return \`<a href="\${pageName}" style="margin:0 8px;">Página \${idx+1}</a>\`;
       }).join("") + '</div>' : '';
 
-    const html = `<!DOCTYPE html>
+    const html = \`<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -192,32 +207,47 @@ a:hover { text-decoration: underline; }
 <p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener">Acesse o perfil no LinkedIn</a></p>
 </header>
 <main>
-<!-- Bloco Sobre Mim apenas em index.html -->
-  <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem;">
-    <h2>Sobre Mim</h2>
-    <p>Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna. Atua com foco em inovação, performance e confiabilidade de aplicações.</p>
-    <h3>Contato</h3>
-    <p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
-  </div>
-</section>
 <section>
+<div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
+<h2>Sobre Mim</h2>
+<p>Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna.</p>
+<h3>Contato</h3>
+<p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
+</div>
 <h2>📚 Artigos Publicados</h2>
 <ul>
-${links}
+\${links}
 </ul>
-${paginacao}
+\${paginacao}
 </section>
 </main>
 <footer>
 <a href="politica.html">Política de Privacidade</a><br/>
-&copy; 2025 Anderson Damasio – Todos os direitos reservados.
+&copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 </body>
-</html>`;
+</html>\`;
 
-    const nome = i === 0 ? "index.html" : `index${i+1}.html`;
+    const nome = i === 0 ? "index.html" : \`index\${i+1}.html\`;
     fs.writeFileSync(nome, html);
   }
+}
+
+function gerarSitemap(titulos) {
+  const sitemapLinks = [
+    `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
+    ...titulos.map(t => {
+      const slugLink = slugify(t.titulo);
+      return `<url><loc>${siteUrl}/artigos/${slugLink}.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
+    })
+  ].join("\n");
+
+  const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapLinks}
+</urlset>`;
+
+  fs.writeFileSync("sitemap.xml", sitemapContent);
 }
 
 gerar();
