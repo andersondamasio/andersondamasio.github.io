@@ -27,13 +27,14 @@ function slugify(str) {
 
 function formatDateTime(date) {
   const pad = n => n.toString().padStart(2, '0');
-  return \`\${pad(date.getDate())}/\${pad(date.getMonth() + 1)}/\${date.getFullYear()} \${pad(date.getHours())}:\${pad(date.getMinutes())}\`;
+return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}`;
 }
 
 async function buscarNoticiaHackerNews() {
   const ids = await axios.get(hackerNewsUrl).then(res => res.data.slice(0, 30));
   for (const id of ids) {
     const item = await axios.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(res => res.data);
+
     if (item && item.title && !item.deleted && !item.dead) {
       return { titulo: item.title, url: item.url || '' };
     }
