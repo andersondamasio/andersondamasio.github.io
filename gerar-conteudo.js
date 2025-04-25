@@ -27,14 +27,13 @@ function slugify(str) {
 
 function formatDateTime(date) {
   const pad = n => n.toString().padStart(2, '0');
-  return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}`;
-
+  return \`\${pad(date.getDate())}/\${pad(date.getMonth() + 1)}/\${date.getFullYear()} \${pad(date.getHours())}:\${pad(date.getMinutes())}\`;
 }
 
 async function buscarNoticiaHackerNews() {
   const ids = await axios.get(hackerNewsUrl).then(res => res.data.slice(0, 30));
   for (const id of ids) {
-    const item = await axios.get(\`https://hacker-news.firebaseio.com/v0/item/\${id}.json\`).then(res => res.data);
+    const item = await axios.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(res => res.data);
     if (item && item.title && !item.deleted && !item.dead) {
       return { titulo: item.title, url: item.url || '' };
     }
@@ -72,7 +71,7 @@ async function gerar() {
 
     let prompt;
     if (noticia && !titulosExistentes.includes(noticia.titulo.toLowerCase())) {
-      prompt = \`Resumo da notícia: \${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software. Utilize conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture (Ports and Adapters), Cloud-Native Patterns, Resilience Engineering, API Gateway Patterns, Edge Computing, Observability (Logs, Metrics, Tracing), DevOps, Continuous Delivery, Monolith to Microservices Migration, AI System Architecture, Data Mesh e Event Sourcing.\`;
+      prompt = \`Resumo da notícia: \${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software. Utilize conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design e Event-Driven Architecture.\`;
     } else {
       prompt = "Escreva um artigo técnico moderno em português sobre arquitetura de software, utilizando conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture (Ports and Adapters), Cloud-Native Patterns, Resilience Engineering, API Gateway Patterns, Edge Computing, Observability (Logs, Metrics, Tracing), DevOps, Continuous Delivery, Monolith to Microservices Migration, AI System Architecture, Data Mesh e Event Sourcing. O artigo deve ser original.";
     }
