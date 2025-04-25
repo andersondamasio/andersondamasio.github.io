@@ -24,14 +24,14 @@ const devBlogsFeeds = [
 function slugify(str) {
   if (!str || typeof str !== "string") return "artigo";
   return str.toLowerCase()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
 }
 
 function normalizarTitulo(titulo) {
   return titulo.toLowerCase()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]/g, '');
 }
 
@@ -72,15 +72,24 @@ async function gerar() {
     if (fs.existsSync(titulosPath)) {
       titulosGerados = JSON.parse(fs.readFileSync(titulosPath, "utf-8"));
     }
-    const titulosExistentesNorm = titulosGerados.map(t => normalizarTitulo(t.titulo));
+
+    const noticiasUtilizadas = titulosGerados
+      .map(t => t.noticiaOriginal)
+      .filter(Boolean)
+      .map(normalizarTitulo);
 
     let noticia = await buscarNoticiaHackerNews();
-    if (!noticia || titulosExistentesNorm.includes(normalizarTitulo(noticia.titulo))) {
+    if (!noticia || noticiasUtilizadas.includes(normalizarTitulo(noticia.titulo))) {
       noticia = await buscarNoticiaDevBlogs();
     }
 
+    if (noticia && noticiasUtilizadas.includes(normalizarTitulo(noticia.titulo))) {
+      console.log("⚠️ Notícia já utilizada anteriormente. Abortando.");
+      process.exit(0);
+    }
+
     let prompt;
-    if (noticia && !titulosExistentesNorm.includes(normalizarTitulo(noticia.titulo))) {
+    if (noticia) {
       prompt = `Resumo da notícia: ${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico e original com conteúdo e título em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software. Você pode opcionalmente abranger os assuntos mais relevantes que tenha haver com o assunto, sendo eles como exemplo Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture (Ports and Adapters), Cloud-Native Patterns, Resilience Engineering, API Gateway Patterns, Edge Computing, Observability (Logs, Metrics, Tracing), DevOps, Continuous Delivery, Monolith to Microservices Migration, AI System Architecture, Data Mesh e Event Sourcing ou algum outro que seja mais relevante para o assunto.`;
     } else {
       prompt = "Escreva um artigo técnico moderno e original em português sobre arquitetura de software, utilizando opcionalmente conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture (Ports and Adapters), Cloud-Native Patterns, Resilience Engineering, API Gateway Patterns, Edge Computing, Observability (Logs, Metrics, Tracing), DevOps, Continuous Delivery, Monolith to Microservices Migration, AI System Architecture, Data Mesh e Event Sourcing. O artigo deve ser original.";
@@ -105,11 +114,6 @@ async function gerar() {
     const titulo = content.match(/^Título:\s*(.*)$/mi)?.[1]?.trim() || noticia?.titulo || "Artigo de Arquitetura";
     const slug = slugify(titulo);
     const filename = `artigos/${slug}.html`;
-
-    if (titulosExistentesNorm.includes(normalizarTitulo(titulo))) {
-      console.log("⚠️ Artigo já gerado anteriormente. Abortando.");
-      process.exit(0);
-    }
 
     const resumo = content.split("\n").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
     const dataHoraFormatada = formatDateTime(now);
@@ -138,7 +142,11 @@ async function gerar() {
     if (!fs.existsSync('artigos')) fs.mkdirSync('artigos');
     fs.writeFileSync(filename, html);
 
-    titulosGerados.push({ titulo, data: now.toISOString() });
+    titulosGerados.push({
+      titulo,
+      data: now.toISOString(),
+      noticiaOriginal: noticia?.titulo || null
+    });
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
     console.log(`✅ Artigo gerado: ${titulo}`);
