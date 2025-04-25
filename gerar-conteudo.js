@@ -6,7 +6,6 @@ const siteUrl = "https://www.andersondamasio.com.br";
 const apiKey = process.env.OPENAI_API_KEY;
 const promptBase = "Escreva um artigo técnico original sobre um tema relevante de arquitetura de software. Comece com uma linha 'Título: ...'";
 
-// Função para gerar slug SEO-friendly
 function slugify(str) {
   return str.toLowerCase()
     .normalize("NFD").replace(/[̀-ͯ]/g, "")
@@ -90,25 +89,25 @@ async function gerar() {
     titulosGerados.push(titulo);
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
-    // Atualizar links no index.html
+    // Atualizar index.html com <section><h2><ul> para SEO e boa leitura
     const indexPath = "index.html";
     if (fs.existsSync(indexPath)) {
       let indexContent = fs.readFileSync(indexPath, "utf-8");
 
       const links = titulosGerados.map(t => {
         const slugLink = slugify(t);
-        return `<li><a href="artigos/${slugLink}.html">${t}</a></li>`;
+        return `<li><a href="artigos/${slugLink}.html" title="Leia o artigo: ${t}">${t}</a></li>`;
       }).join("\n");
 
       indexContent = indexContent.replace(
         /<!-- LINKS-DOS-ARTIGOS-INICIO -->(.|\n|\r)*?<!-- LINKS-DOS-ARTIGOS-FIM -->/,
-        `<!-- LINKS-DOS-ARTIGOS-INICIO -->\n${links}\n<!-- LINKS-DOS-ARTIGOS-FIM -->`
+        `<!-- LINKS-DOS-ARTIGOS-INICIO -->\n<section id="artigos-gerados">\n<h2>📚 Artigos Publicados</h2>\n<ul style="list-style: disc; padding-left: 1.5rem; line-height: 1.8;">\n${links}\n</ul>\n</section>\n<!-- LINKS-DOS-ARTIGOS-FIM -->`
       );
 
       fs.writeFileSync(indexPath, indexContent);
     }
 
-    // Gerar sitemap.xml com domínio personalizado
+    // Atualizar sitemap.xml
     const sitemapLinks = [
       `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
       ...titulosGerados.map(t => {
@@ -123,8 +122,7 @@ ${sitemapLinks}
 </urlset>`;
 
     fs.writeFileSync("sitemap.xml", sitemapContent);
-
-    console.log(`✅ Artigo salvo como ${filename} e sitemap.xml atualizado`);
+    console.log(`✅ Artigo salvo como ${filename}, index.html e sitemap.xml atualizados.`);
   } catch (error) {
     console.error("❌ Erro ao gerar conteúdo:", error.response?.data || error.message);
     process.exit(1);
