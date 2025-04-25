@@ -13,8 +13,16 @@ function slugify(str) {
     .replace(/(^-|-$)/g, '');
 }
 
+function formatDateTime(date) {
+  const pad = n => n.toString().padStart(2, '0');
+  return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}`;
+}
+
 async function gerar() {
   try {
+    const now = new Date();
+    const dataHoraFormatada = formatDateTime(now);
+
     const titulosPath = "titulos.json";
     const titulosGerados = fs.existsSync(titulosPath)
       ? JSON.parse(fs.readFileSync(titulosPath, "utf-8"))
@@ -67,16 +75,25 @@ async function gerar() {
   </script>
   <style>
     body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+    h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+    .article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+    .article-body { font-size: 1.05rem; line-height: 1.7; }
+    .back-link { text-align: center; margin-top: 2rem; }
+    .back-link a {
+      font-weight: bold; color: #0a66c2; font-size: 1.05rem;
+      border: 1px solid #0a66c2; padding: 0.4rem 1rem;
+      border-radius: 6px; display: inline-block; text-decoration: none;
+    }
+    .back-link a:hover { background-color: #0a66c2; color: white; }
     main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-    a { color: #0a66c2; text-decoration: none; font-weight: bold; }
-    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <main>
     <h1>${titulo}</h1>
-    <pre style="white-space: pre-wrap;">${content}</pre>
-    <p style="text-align:center; margin-top:2rem;">
+    <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
+    <div class="article-body">${content.replace(/\n/g, "<br>")}</div>
+    <p class="back-link">
       <a href="../index.html">← Voltar para a página inicial</a>
     </p>
   </main>
@@ -89,14 +106,15 @@ async function gerar() {
     titulosGerados.push(titulo);
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
-    // Atualizar index.html com <section><h2><ul> para SEO e boa leitura
     const indexPath = "index.html";
     if (fs.existsSync(indexPath)) {
       let indexContent = fs.readFileSync(indexPath, "utf-8");
 
-      const links = titulosGerados.map(t => {
+      const links = titulosGerados.map((t, i) => {
         const slugLink = slugify(t);
-        return `<li><a href="artigos/${slugLink}.html" title="Leia o artigo: ${t}">${t}</a></li>`;
+        const stats = fs.existsSync(`artigos/${slugLink}.html`) ? fs.statSync(`artigos/${slugLink}.html`) : now;
+        const dataLink = formatDateTime(new Date(stats.mtime));
+        return `<li><a href="artigos/${slugLink}.html" title="Leia o artigo: ${t}">${t}</a> <span style="color:#777; font-size: 0.85rem;">(${dataLink})</span></li>`;
       }).join("\n");
 
       indexContent = indexContent.replace(
@@ -107,7 +125,6 @@ async function gerar() {
       fs.writeFileSync(indexPath, indexContent);
     }
 
-    // Atualizar sitemap.xml
     const sitemapLinks = [
       `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
       ...titulosGerados.map(t => {
@@ -122,7 +139,7 @@ ${sitemapLinks}
 </urlset>`;
 
     fs.writeFileSync("sitemap.xml", sitemapContent);
-    console.log(`✅ Artigo salvo como ${filename}, index.html e sitemap.xml atualizados.`);
+    console.log(`✅ Artigo salvo como ${filename}, com estilo, data/hora, index.html e sitemap.xml atualizados.`);
   } catch (error) {
     console.error("❌ Erro ao gerar conteúdo:", error.response?.data || error.message);
     process.exit(1);
