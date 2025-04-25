@@ -32,5 +32,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add artigos/*.html index.html titulos.json sitemap.xml
-          git commit -m "🧠 Novo artigo e sitemap.xml atualizado"
+          git commit -m "🧠 Novo artigo com estilo refinado"
           git push origin HEAD:main
