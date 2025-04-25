@@ -2,9 +2,7 @@ const fs = require('fs');
 const axios = require('axios');
 
 const siteUrl = "https://www.andersondamasio.com.br";
-
 const apiKey = process.env.OPENAI_API_KEY;
-const promptBase = "Escreva um artigo técnico original sobre um tema relevante de arquitetura de software. Comece com uma linha 'Título: ...'";
 
 function slugify(str) {
   return str.toLowerCase()
@@ -22,13 +20,15 @@ async function gerar() {
   try {
     const now = new Date();
     const dataHoraFormatada = formatDateTime(now);
-
     const titulosPath = "titulos.json";
-    const titulosGerados = fs.existsSync(titulosPath)
-      ? JSON.parse(fs.readFileSync(titulosPath, "utf-8"))
-      : [];
 
-    const prompt = `${promptBase}\nEvite os seguintes temas: ${titulosGerados.join(", ")}`;
+    let titulosGerados = [];
+    if (fs.existsSync(titulosPath)) {
+      titulosGerados = JSON.parse(fs.readFileSync(titulosPath, "utf-8"));
+    }
+
+    const titulosApenas = titulosGerados.map(t => t.titulo);
+    const prompt = "Escreva um artigo técnico original sobre um tema relevante de arquitetura de software. Comece com uma linha 'Título: ...'. Evite os temas: " + titulosApenas.join(", ");
 
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
@@ -50,15 +50,14 @@ async function gerar() {
     const slug = slugify(titulo);
     const filename = `artigos/${slug}.html`;
 
-    if (titulosGerados.includes(titulo)) {
+    if (titulosApenas.includes(titulo)) {
       console.log("⚠️ Artigo já gerado anteriormente. Abortando.");
       process.exit(0);
     }
 
     const resumo = content.split("\n").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
 
-    const html = `
-<!DOCTYPE html>
+    const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -103,18 +102,17 @@ async function gerar() {
     if (!fs.existsSync('artigos')) fs.mkdirSync('artigos');
     fs.writeFileSync(filename, html);
 
-    titulosGerados.push(titulo);
+    titulosGerados.push({ titulo, data: now.toISOString() });
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
     const indexPath = "index.html";
     if (fs.existsSync(indexPath)) {
       let indexContent = fs.readFileSync(indexPath, "utf-8");
 
-      const links = titulosGerados.map((t, i) => {
-        const slugLink = slugify(t);
-        const stats = fs.existsSync(`artigos/${slugLink}.html`) ? fs.statSync(`artigos/${slugLink}.html`) : now;
-        const dataLink = formatDateTime(new Date(stats.mtime));
-        return `<li><a href="artigos/${slugLink}.html" title="Leia o artigo: ${t}">${t}</a> <span style="color:#777; font-size: 0.85rem;">(${dataLink})</span></li>`;
+      const links = titulosGerados.map((t) => {
+        const slugLink = slugify(t.titulo);
+        const dataLink = formatDateTime(new Date(t.data));
+        return `<li><a href="artigos/${slugLink}.html" title="Leia o artigo: ${t.titulo}">${t.titulo}</a> <span style="color:#777; font-size: 0.85rem;">(${dataLink})</span></li>`;
       }).join("\n");
 
       indexContent = indexContent.replace(
@@ -128,7 +126,7 @@ async function gerar() {
     const sitemapLinks = [
       `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
       ...titulosGerados.map(t => {
-        const slugLink = slugify(t);
+        const slugLink = slugify(t.titulo);
         return `<url><loc>${siteUrl}/artigos/${slugLink}.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
       })
     ].join("\n");
@@ -139,7 +137,7 @@ ${sitemapLinks}
 </urlset>`;
 
     fs.writeFileSync("sitemap.xml", sitemapContent);
-    console.log(`✅ Artigo salvo como ${filename}, com estilo, data/hora, index.html e sitemap.xml atualizados.`);
+    console.log(`✅ Artigo salvo como ${filename}, com data histórica, index.html e sitemap.xml atualizados.`);
   } catch (error) {
     console.error("❌ Erro ao gerar conteúdo:", error.response?.data || error.message);
     process.exit(1);
