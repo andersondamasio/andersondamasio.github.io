@@ -1,6 +1,8 @@
 name: Gerar HTML com ChatGPT
 
 on:
+  schedule:
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -29,6 +31,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add artigo.html
-          git commit -m "🤖 Novo artigo gerado automaticamente"
+          git add artigos/*.html index.html titulos.json
+          git commit -m "🧠 Novo artigo com Analytics embutido"
           git push origin HEAD:main
