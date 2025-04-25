@@ -1,0 +1,33 @@
+name: Gerar HTML com ChatGPT
+
+on:
+  workflow_dispatch:
+
+jobs:
+  gerar-e-publicar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Instalar dependências
+        run: npm install axios
+
+      - name: Gerar conteúdo com ChatGPT
+        run: node gerar-conteudo.js
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Commitar alterações
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add artigo.html
+          git commit -m "🤖 Novo artigo gerado automaticamente"
+          git push
