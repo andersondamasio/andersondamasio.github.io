@@ -1,3 +1,8 @@
+name: Gerar HTML com ChatGPT
+
+on:
+  workflow_dispatch:
+
 jobs:
   gerar-e-publicar:
     runs-on: ubuntu-latest
