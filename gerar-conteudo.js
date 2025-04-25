@@ -7,7 +7,11 @@ const siteUrl = "https://www.andersondamasio.com.br";
 const apiKey = process.env.OPENAI_API_KEY;
 const artigosPorPagina = 10;
 
-// Fontes
+if (!apiKey) {
+  console.error("❌ OPENAI_API_KEY não definida.");
+  process.exit(1);
+}
+
 const hackerNewsUrl = "https://hacker-news.firebaseio.com/v0/topstories.json";
 const devBlogsFeeds = [
   "https://devblogs.microsoft.com/dotnet/feed/",
@@ -20,21 +24,20 @@ const devBlogsFeeds = [
 function slugify(str) {
   if (!str || typeof str !== "string") return "artigo";
   return str.toLowerCase()
-    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
 }
 
 function formatDateTime(date) {
   const pad = n => n.toString().padStart(2, '0');
-return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}`;
+  return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}`;
 }
 
 async function buscarNoticiaHackerNews() {
   const ids = await axios.get(hackerNewsUrl).then(res => res.data.slice(0, 30));
   for (const id of ids) {
     const item = await axios.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(res => res.data);
-
     if (item && item.title && !item.deleted && !item.dead) {
       return { titulo: item.title, url: item.url || '' };
     }
@@ -72,7 +75,7 @@ async function gerar() {
 
     let prompt;
     if (noticia && !titulosExistentes.includes(noticia.titulo.toLowerCase())) {
-     prompt = `Resumo da notícia: ${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software. Utilize conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design e Event-Driven Architecture.`;
+      prompt = `Resumo da notícia: ${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software. Utilize conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture (Ports and Adapters), Cloud-Native Patterns, Resilience Engineering, API Gateway Patterns, Edge Computing, Observability (Logs, Metrics, Tracing), DevOps, Continuous Delivery, Monolith to Microservices Migration, AI System Architecture, Data Mesh e Event Sourcing.`;
     } else {
       prompt = "Escreva um artigo técnico moderno em português sobre arquitetura de software, utilizando conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture (Ports and Adapters), Cloud-Native Patterns, Resilience Engineering, API Gateway Patterns, Edge Computing, Observability (Logs, Metrics, Tracing), DevOps, Continuous Delivery, Monolith to Microservices Migration, AI System Architecture, Data Mesh e Event Sourcing. O artigo deve ser original.";
     }
@@ -86,7 +89,7 @@ async function gerar() {
       },
       {
         headers: {
-          Authorization: `Bearer \${apiKey}`,
+          Authorization: `Bearer ${apiKey}`,
           'Content-Type': 'application/json'
         }
       }
@@ -95,7 +98,7 @@ async function gerar() {
     const content = response.data.choices[0].message.content;
     const titulo = content.match(/^Título:\s*(.*)$/mi)?.[1]?.trim() || noticia?.titulo || "Artigo de Arquitetura";
     const slug = slugify(titulo);
-    const filename = `artigos/\${slug}.html`;
+    const filename = `artigos/${slug}.html`;
 
     if (titulosExistentes.includes(titulo.toLowerCase())) {
       console.log("⚠️ Artigo já gerado anteriormente. Abortando.");
@@ -110,8 +113,8 @@ async function gerar() {
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>\${titulo} | Anderson Damasio</title>
-<meta name="description" content="\${resumo}">
+<title>${titulo} | Anderson Damasio</title>
+<meta name="description" content="${resumo}">
 <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -137,9 +140,9 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </head>
 <body>
 <main>
-<h1>\${titulo}</h1>
-<p class="article-meta">Publicado em: \${dataHoraFormatada}</p>
-<div class="article-body">\${content.replace(/\n/g, "<br>")}</div>
+<h1>${titulo}</h1>
+<p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
+<div class="article-body">${content.replace(/\n/g, "<br>")}</div>
 <p class="back-link">
   <a href="../index.html">← Voltar para a página inicial</a>
 </p>
@@ -156,9 +159,9 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
     gerarIndicesPaginados(titulosGerados);
     gerarSitemap(titulosGerados);
 
-    console.log(`✅ Artigo gerado: \${titulo}`);
+    console.log(`✅ Artigo gerado: ${titulo}`);
   } catch (error) {
-    console.error("❌ Erro:", error.message);
+    console.error("❌ Erro:", error.response?.data || error.message);
     process.exit(1);
   }
 }
@@ -173,13 +176,13 @@ function gerarIndicesPaginados(titulos) {
     const links = artigosPagina.map(t => {
       const slug = slugify(t.titulo);
       const data = formatDateTime(new Date(t.data));
-      return `<li><a href="artigos/\${slug}.html" title="Leia o artigo: \${t.titulo}">\${t.titulo}</a> <span style="color:#777; font-size: 0.85rem;">(\${data})</span></li>`;
+      return `<li><a href="artigos/${slug}.html" title="Leia o artigo: ${t.titulo}">${t.titulo}</a> <span style="color:#777; font-size: 0.85rem;">(${data})</span></li>`;
     }).join("\n");
 
-    const paginacao = paginas > 1 ? '<div style="text-align:center; margin-top:2rem;">' + 
-      Array.from({length: paginas}).map((_, idx) => {
-        const pageName = idx === 0 ? "index.html" : `index\${idx+1}.html`;
-        return `<a href="\${pageName}" style="margin:0 8px;">Página \${idx+1}</a>`;
+    const paginacao = paginas > 1 ? '<div style="text-align:center; margin-top:2rem;">' +
+      Array.from({ length: paginas }).map((_, idx) => {
+        const pageName = idx === 0 ? "index.html" : `index${idx+1}.html`;
+        return `<a href="${pageName}" style="margin:0 8px;">Página ${idx+1}</a>`;
       }).join("") + '</div>' : '';
 
     const html = `<!DOCTYPE html>
@@ -217,9 +220,9 @@ a:hover { text-decoration: underline; }
 </div>
 <h2>📚 Artigos Publicados</h2>
 <ul>
-\${links}
+${links}
 </ul>
-\${paginacao}
+${paginacao}
 </section>
 </main>
 <footer>
@@ -229,7 +232,7 @@ a:hover { text-decoration: underline; }
 </body>
 </html>`;
 
-    const nome = i === 0 ? "index.html" : `index\${i+1}.html`;
+    const nome = i === 0 ? "index.html" : `index${i+1}.html`;
     fs.writeFileSync(nome, html);
   }
 }
