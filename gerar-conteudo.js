@@ -115,7 +115,7 @@ async function gerar() {
     const slug = slugify(titulo);
     const filename = `artigos/${slug}.html`;
 
-    const resumo = content.split("").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
+    const resumo = content.split("\n").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
     const dataHoraFormatada = formatDateTime(now);
 
     const html = `<!DOCTYPE html>
@@ -126,6 +126,20 @@ async function gerar() {
 <title>${titulo} | Anderson Damasio</title>
 <meta name="description" content="${resumo}">
 <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a {
+  font-weight: bold; color: #0a66c2; font-size: 1.05rem;
+  border: 1px solid #0a66c2; padding: 0.4rem 1rem;
+  border-radius: 6px; display: inline-block; text-decoration: none;
+}
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
 </head>
 <body>
 <main>
@@ -173,11 +187,47 @@ function gerarIndicesPaginados(titulos) {
 
     const html = `<!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Anderson Damasio</title></head>
+<head>
+<meta charset="UTF-8">
+<title>Anderson Damasio – Arquiteto de Software</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+header { background-color: #0a66c2; color: white; padding: 2rem 1rem; text-align: center; }
+header a { color: white; font-weight: bold; text-decoration: underline; }
+main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
+ul { padding-left: 1.5rem; line-height: 1.8; }
+a { color: #0a66c2; text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; }
+</style>
+</head>
 <body>
-<h1>Anderson Damasio – Arquiteto de Software</h1>
-<ul>${links}</ul>
+<header>
+<h1>Anderson Damasio</h1>
+<p>Arquiteto de Software</p>
+<p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener">Acesse o perfil no LinkedIn</a></p>
+</header>
+<main>
+<section>
+<div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
+<h2>Sobre Mim</h2>
+<p>Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna.</p>
+<h3>Contato</h3>
+<p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
+</div>
+<h2>📚 Artigos Publicados</h2>
+<ul>
+${links}
+</ul>
 ${paginacao}
+</section>
+</main>
+<footer>
+<a href="politica.html">Política de Privacidade</a><br/>
+&copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
 </body>
 </html>`;
 
