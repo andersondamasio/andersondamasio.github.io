@@ -1,8 +1,10 @@
 const fs = require('fs');
 const axios = require('axios');
+const path = require('path');
 
 const siteUrl = "https://www.andersondamasio.com.br";
 const apiKey = process.env.OPENAI_API_KEY;
+const artigosPorPagina = 10;
 
 function slugify(str) {
   if (!str || typeof str !== "string") return "artigo";
@@ -111,23 +113,7 @@ async function gerar() {
     titulosGerados.push({ titulo, data: now.toISOString() });
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
-    const indexPath = "index.html";
-    if (fs.existsSync(indexPath)) {
-      let indexContent = fs.readFileSync(indexPath, "utf-8");
-
-      const links = titulosGerados.map((t) => {
-        const slugLink = slugify(t.titulo);
-        const dataLink = formatDateTime(new Date(t.data));
-        return `<li><a href="artigos/${slugLink}.html" title="Leia o artigo: ${t.titulo}">${t.titulo}</a> <span style="color:#777; font-size: 0.85rem;">(${dataLink})</span></li>`;
-      }).join("\n");
-
-      indexContent = indexContent.replace(
-        /<!-- LINKS-DOS-ARTIGOS-INICIO -->(.|\n|\r)*?<!-- LINKS-DOS-ARTIGOS-FIM -->/,
-        `<!-- LINKS-DOS-ARTIGOS-INICIO -->\n<section id="artigos-gerados">\n<h2>📚 Artigos Publicados</h2>\n<ul style="list-style: disc; padding-left: 1.5rem; line-height: 1.8;">\n${links}\n</ul>\n</section>\n<!-- LINKS-DOS-ARTIGOS-FIM -->`
-      );
-
-      fs.writeFileSync(indexPath, indexContent);
-    }
+    gerarIndicesPaginados(titulosGerados);
 
     const sitemapLinks = [
       `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
@@ -143,10 +129,75 @@ ${sitemapLinks}
 </urlset>`;
 
     fs.writeFileSync("sitemap.xml", sitemapContent);
-    console.log(`✅ Artigo salvo como ${filename}, com dados protegidos e sitemap atualizado.`);
+    console.log(`✅ Artigo salvo como ${filename}, index paginado e sitemap atualizados.`);
   } catch (error) {
     console.error("❌ Erro ao gerar conteúdo:", error.response?.data || error.message);
     process.exit(1);
+  }
+}
+
+function gerarIndicesPaginados(titulos) {
+  const ordenados = titulos.slice().sort((a, b) => new Date(b.data) - new Date(a.data));
+  const paginas = Math.ceil(ordenados.length / artigosPorPagina);
+
+  for (let i = 0; i < paginas; i++) {
+    const artigosPagina = ordenados.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
+
+    const links = artigosPagina.map(t => {
+      const slug = slugify(t.titulo);
+      const data = formatDateTime(new Date(t.data));
+      return `<li><a href="artigos/${slug}.html" title="Leia o artigo: ${t.titulo}">${t.titulo}</a> <span style="color:#777; font-size: 0.85rem;">(${data})</span></li>`;
+    }).join("\n");
+
+    const paginacao = paginas > 1 ? '<div style="text-align:center; margin-top:2rem;">' + 
+      Array.from({length: paginas}).map((_, idx) => {
+        const pageName = idx === 0 ? "index.html" : `index${idx+1}.html`;
+        return `<a href="${pageName}" style="margin:0 8px;">Página ${idx+1}</a>`;
+      }).join("") + '</div>' : '';
+
+    const html = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anderson Damasio – Arquiteto de Software</title>
+<meta name="description" content="Perfil profissional de Anderson Damasio, Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas escaláveis e arquitetura moderna.">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<style>
+body {{ font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }}
+header {{ background-color: #0a66c2; color: white; padding: 2rem 1rem; text-align: center; }}
+header a {{ color: white; font-weight: bold; text-decoration: underline; }}
+main {{ max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }}
+footer {{ text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }}
+ul {{ padding-left: 1.5rem; line-height: 1.8; }}
+a {{ color: #0a66c2; text-decoration: none; font-weight: bold; }}
+a:hover {{ text-decoration: underline; }}
+</style>
+</head>
+<body>
+<header>
+<h1>Anderson Damasio</h1>
+<p>Arquiteto de Software</p>
+<p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener">Acesse o perfil no LinkedIn</a></p>
+</header>
+<main>
+<section>
+<h2>📚 Artigos Publicados</h2>
+<ul>
+${links}
+</ul>
+${paginacao}
+</section>
+</main>
+<footer>
+<a href="politica.html">Política de Privacidade</a><br/>
+&copy; 2025 Anderson Damasio – Todos os direitos reservados.
+</footer>
+</body>
+</html>`;
+
+    const nome = i === 0 ? "index.html" : `index${i+1}.html`;
+    fs.writeFileSync(nome, html);
   }
 }
 
