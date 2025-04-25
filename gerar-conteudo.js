@@ -29,6 +29,12 @@ function slugify(str) {
     .replace(/(^-|-$)/g, '');
 }
 
+function normalizarTitulo(titulo) {
+  return titulo.toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]/g, '');
+}
+
 function formatDateTime(date) {
   const pad = n => n.toString().padStart(2, '0');
   return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}`;
@@ -66,18 +72,18 @@ async function gerar() {
     if (fs.existsSync(titulosPath)) {
       titulosGerados = JSON.parse(fs.readFileSync(titulosPath, "utf-8"));
     }
-    const titulosExistentes = titulosGerados.map(t => t.titulo.toLowerCase());
+    const titulosExistentesNorm = titulosGerados.map(t => normalizarTitulo(t.titulo));
 
     let noticia = await buscarNoticiaHackerNews();
-    if (!noticia || titulosExistentes.includes(noticia.titulo.toLowerCase())) {
+    if (!noticia || titulosExistentesNorm.includes(normalizarTitulo(noticia.titulo))) {
       noticia = await buscarNoticiaDevBlogs();
     }
 
     let prompt;
-    if (noticia && !titulosExistentes.includes(noticia.titulo.toLowerCase())) {
-      prompt = `Resumo da notícia: ${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico e original com conteúdo e título em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software. Você pode abranger os assuntos mais relevantes que tenha haver com o assunto, sendo eles como exemplo Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture (Ports and Adapters), Cloud-Native Patterns, Resilience Engineering, API Gateway Patterns, Edge Computing, Observability (Logs, Metrics, Tracing), DevOps, Continuous Delivery, Monolith to Microservices Migration, AI System Architecture, Data Mesh e Event Sourcing ou algum outro que seja mais relevante para o assunto.`;
+    if (noticia && !titulosExistentesNorm.includes(normalizarTitulo(noticia.titulo))) {
+      prompt = `Resumo da notícia: ${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico e original com conteúdo e título em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software. Você pode opcionalmente abranger os assuntos mais relevantes que tenha haver com o assunto, sendo eles como exemplo Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture (Ports and Adapters), Cloud-Native Patterns, Resilience Engineering, API Gateway Patterns, Edge Computing, Observability (Logs, Metrics, Tracing), DevOps, Continuous Delivery, Monolith to Microservices Migration, AI System Architecture, Data Mesh e Event Sourcing ou algum outro que seja mais relevante para o assunto.`;
     } else {
-      prompt = "Escreva um artigo técnico moderno e original em português sobre arquitetura de software, utilizando conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture (Ports and Adapters), Cloud-Native Patterns, Resilience Engineering, API Gateway Patterns, Edge Computing, Observability (Logs, Metrics, Tracing), DevOps, Continuous Delivery, Monolith to Microservices Migration, AI System Architecture, Data Mesh e Event Sourcing. O artigo deve ser original.";
+      prompt = "Escreva um artigo técnico moderno e original em português sobre arquitetura de software, utilizando opcionalmente conceitos como Microservices, Serverless, Kubernetes, Domain-Driven Design, Event-Driven Architecture, Clean Architecture, CQRS, Hexagonal Architecture (Ports and Adapters), Cloud-Native Patterns, Resilience Engineering, API Gateway Patterns, Edge Computing, Observability (Logs, Metrics, Tracing), DevOps, Continuous Delivery, Monolith to Microservices Migration, AI System Architecture, Data Mesh e Event Sourcing. O artigo deve ser original.";
     }
 
     const response = await axios.post(
@@ -100,7 +106,7 @@ async function gerar() {
     const slug = slugify(titulo);
     const filename = `artigos/${slug}.html`;
 
-    if (titulosExistentes.includes(titulo.toLowerCase())) {
+    if (titulosExistentesNorm.includes(normalizarTitulo(titulo))) {
       console.log("⚠️ Artigo já gerado anteriormente. Abortando.");
       process.exit(0);
     }
@@ -116,27 +122,6 @@ async function gerar() {
 <title>${titulo} | Anderson Damasio</title>
 <meta name="description" content="${resumo}">
 <link rel="icon" href="../favicon.ico" type="image/x-icon" />
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-T15623VZYE');
-</script>
-<style>
-body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
-h1 { font-size: 1.8rem; margin-bottom: 1rem; }
-.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
-.article-body { font-size: 1.05rem; line-height: 1.7; }
-.back-link { text-align: center; margin-top: 2rem; }
-.back-link a {
-  font-weight: bold; color: #0a66c2; font-size: 1.05rem;
-  border: 1px solid #0a66c2; padding: 0.4rem 1rem;
-  border-radius: 6px; display: inline-block; text-decoration: none;
-}
-.back-link a:hover { background-color: #0a66c2; color: white; }
-main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-</style>
 </head>
 <body>
 <main>
@@ -156,102 +141,11 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
     titulosGerados.push({ titulo, data: now.toISOString() });
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
-    gerarIndicesPaginados(titulosGerados);
-    gerarSitemap(titulosGerados);
-
     console.log(`✅ Artigo gerado: ${titulo}`);
   } catch (error) {
     console.error("❌ Erro:", error.response?.data || error.message);
     process.exit(1);
   }
-}
-
-function gerarIndicesPaginados(titulos) {
-  const ordenados = titulos.slice().sort((a, b) => new Date(b.data) - new Date(a.data));
-  const paginas = Math.ceil(ordenados.length / artigosPorPagina);
-
-  for (let i = 0; i < paginas; i++) {
-    const artigosPagina = ordenados.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
-
-    const links = artigosPagina.map(t => {
-      const slug = slugify(t.titulo);
-      const data = formatDateTime(new Date(t.data));
-      return `<li><a href="artigos/${slug}.html" title="Leia o artigo: ${t.titulo}">${t.titulo}</a> <span style="color:#777; font-size: 0.85rem;">(${data})</span></li>`;
-    }).join("\n");
-
-    const paginacao = paginas > 1 ? '<div style="text-align:center; margin-top:2rem;">' +
-      Array.from({ length: paginas }).map((_, idx) => {
-        const pageName = idx === 0 ? "index.html" : `index${idx+1}.html`;
-        return `<a href="${pageName}" style="margin:0 8px;">Página ${idx+1}</a>`;
-      }).join("") + '</div>' : '';
-
-    const html = `<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anderson Damasio – Arquiteto de Software</title>
-<meta name="description" content="Perfil profissional de Anderson Damasio, Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas escaláveis e arquitetura moderna.">
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-<style>
-body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
-header { background-color: #0a66c2; color: white; padding: 2rem 1rem; text-align: center; }
-header a { color: white; font-weight: bold; text-decoration: underline; }
-main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
-ul { padding-left: 1.5rem; line-height: 1.8; }
-a { color: #0a66c2; text-decoration: none; font-weight: bold; }
-a:hover { text-decoration: underline; }
-</style>
-</head>
-<body>
-<header>
-<h1>Anderson Damasio</h1>
-<p>Arquiteto de Software</p>
-<p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener">Acesse o perfil no LinkedIn</a></p>
-</header>
-<main>
-<section>
-<div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
-<h2>Sobre Mim</h2>
-<p>Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna.</p>
-<h3>Contato</h3>
-<p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
-</div>
-<h2>📚 Artigos Publicados</h2>
-<ul>
-${links}
-</ul>
-${paginacao}
-</section>
-</main>
-<footer>
-<a href="politica.html">Política de Privacidade</a><br/>
-&copy; 2025 Anderson Damasio – Todos os direitos reservados
-</footer>
-</body>
-</html>`;
-
-    const nome = i === 0 ? "index.html" : `index${i+1}.html`;
-    fs.writeFileSync(nome, html);
-  }
-}
-
-function gerarSitemap(titulos) {
-  const sitemapLinks = [
-    `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
-    ...titulos.map(t => {
-      const slugLink = slugify(t.titulo);
-      return `<url><loc>${siteUrl}/artigos/${slugLink}.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
-    })
-  ].join("\n");
-
-  const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapLinks}
-</urlset>`;
-
-  fs.writeFileSync("sitemap.xml", sitemapContent);
 }
 
 gerar();
