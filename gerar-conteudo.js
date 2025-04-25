@@ -5,6 +5,7 @@ const siteUrl = "https://www.andersondamasio.com.br";
 const apiKey = process.env.OPENAI_API_KEY;
 
 function slugify(str) {
+  if (!str || typeof str !== "string") return "artigo";
   return str.toLowerCase()
     .normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, '-')
@@ -46,7 +47,12 @@ async function gerar() {
     );
 
     const content = response.data.choices[0].message.content;
-    const titulo = content.match(/^Título:\s*(.*)$/mi)?.[1] || 'artigo';
+    const titulo = content.match(/^Título:\s*(.*)$/mi)?.[1]?.trim();
+    if (!titulo) {
+      console.error("❌ Título não encontrado no conteúdo gerado.");
+      process.exit(1);
+    }
+
     const slug = slugify(titulo);
     const filename = `artigos/${slug}.html`;
 
@@ -137,7 +143,7 @@ ${sitemapLinks}
 </urlset>`;
 
     fs.writeFileSync("sitemap.xml", sitemapContent);
-    console.log(`✅ Artigo salvo como ${filename}, com data histórica, index.html e sitemap.xml atualizados.`);
+    console.log(`✅ Artigo salvo como ${filename}, com dados protegidos e sitemap atualizado.`);
   } catch (error) {
     console.error("❌ Erro ao gerar conteúdo:", error.response?.data || error.message);
     process.exit(1);
