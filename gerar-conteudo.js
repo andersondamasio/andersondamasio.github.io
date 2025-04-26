@@ -41,7 +41,7 @@ async function buscarNoticia() {
   const titulosGerados = fs.existsSync(titulosPath) ? JSON.parse(fs.readFileSync(titulosPath, "utf-8")) : [];
   const noticiasAntigas = titulosGerados.map(t => normalizarTexto(t.noticiaOriginal));
 
-  const fontes = [buscarNoticiaHackerNews, buscarNoticiaDevBlogs];
+  const fontes = [buscarNoticiaDevBlogs];
 
   for (const fonte of fontes) {
     const lista = await fonte();
