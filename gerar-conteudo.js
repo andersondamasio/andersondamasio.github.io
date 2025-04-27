@@ -122,8 +122,6 @@ Importante:
 - Comece o artigo em uma nova linha, depois do título.
 `;
 
-
-
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
       {
@@ -142,10 +140,8 @@ Importante:
     const content = response.data.choices[0].message.content;
     const titulo = (content.match(/^(.+)$/m)?.[1] || noticia.titulo).replace(/^\*\*(.+?)\*\*$/, '$1').trim();
 
-    // Remover a primeira linha (título) do corpo do artigo
     let corpoArtigo = content.split('\n').slice(1).join('\n').trim();
 
-    // Formatar blocos de código Markdown para HTML <pre><code>
     corpoArtigo = corpoArtigo
       .replace(/```csharp\n([\s\S]*?)```/g, '<pre><code class="language-csharp">$1</code></pre>')
       .replace(/```[\s\S]*?\n([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
@@ -164,6 +160,17 @@ Importante:
 <title>${titulo} | Anderson Damasio</title>
 <meta name="description" content="${resumo}">
 <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
 <style>
 body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
 h1 { font-size: 1.8rem; margin-bottom: 1rem; }
@@ -222,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
     process.exit(1);
   }
 }
+
 
 
 function gerarIndicesPaginados(titulos) {
