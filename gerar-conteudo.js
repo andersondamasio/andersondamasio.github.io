@@ -101,24 +101,25 @@ async function gerar() {
       process.exit(0);
     }
 
-    const prompt = `
+const prompt = `
 Imagine que você recebeu uma notícia técnica internacional sobre: "${noticia.titulo}".
 Seu trabalho é:
 
-1. Criar um título novo, original, atrativo e 100% em português, baseado nesse tema, mas não apenas traduzido literalmente.
-2. Usar esse novo título para escrever um artigo técnico totalmente em português que:
+1. Crie diretamente um novo título, original, atrativo e 100% em português, sem escrever palavras como "Título:", "Novo Título:", "Artigo:" antes. Apenas o título puro na primeira linha.
+2. Abaixo do título, escreva um artigo técnico totalmente em português que:
    - Explique a relevância para práticas modernas de arquitetura de software e desenvolvimento de sistemas.
-   - Traga exemplos práticos de aplicação, preferencialmente com trechos de código (em C# ou outra linguagem relacionada ao tema).
+   - Traga exemplos práticos de aplicação, preferencialmente com trechos de código (em C# ou outra linguagem relacionada).
    - Ofereça dicas avançadas que normalmente não são facilmente encontradas em artigos comuns.
-   - Seja didático, técnico e voltado para desenvolvedores e arquitetos de software.
-   - Tenha uma estrutura clara: introdução, exemplo de código, explicação técnica e conclusão.
+   - Use linguagem clara, técnica, estruturada com: introdução, exemplo de código, explicação técnica e conclusão.
 
 Importante:
-- O artigo deve ser todo em português.
-- O título deve ser apresentado no topo do artigo, antes da introdução.
-- O novo título deve ser original, criativo e relevante para o tema.
-- Não traduza literalmente o título original; reescreva de forma natural para o público brasileiro.
+- Não adicione rótulos como "Título:", "Novo Título:", "Artigo:" antes do título.
+- Não adicione aspas ou asteriscos no título.
+- Não use negrito (**).
+- Apenas escreva o título puro na primeira linha.
+- Depois do título, inicie o artigo normalmente em nova linha.
 `;
+
 
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
