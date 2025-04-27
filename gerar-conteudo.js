@@ -14,7 +14,8 @@ const devBlogsFeeds = [
   "https://devblogs.microsoft.com/azure/feed/",
   "https://devblogs.microsoft.com/visualstudio/feed/",
   "https://devblogs.microsoft.com/devops/feed/",
-  "https://devblogs.microsoft.com/opensource/feed/"
+  "https://devblogs.microsoft.com/opensource/feed/",
+  "https://martinfowler.com/feed.atom/"
 ];
 
 function slugify(str) {
