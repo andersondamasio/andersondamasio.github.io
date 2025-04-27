@@ -237,7 +237,23 @@ function gerarIndicesPaginados(titulos) {
 <div style="display:flex; overflow-x:auto; gap: 12px; padding: 8px; margin-top: 2rem; justify-content: center;">
   ${Array.from({ length: paginas }).map((_, idx) => {
     const pageName = idx === 0 ? "index.html" : `index${idx + 1}.html`;
-    return `<a href="${pageName}" style="flex-shrink:0; white-space:nowrap; font-weight:bold; color:#0a66c2;">Página ${idx + 1}</a>`;
+    const paginaLabel = `Página ${idx + 1}`;
+    const isActive = i === idx; // Destaque da página atual
+
+    return `<a href="${pageName}" style="
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-weight: bold;
+      text-decoration: none;
+      color: ${isActive ? '#ffffff' : '#0a66c2'};
+      background-color: ${isActive ? '#0a66c2' : 'transparent'};
+      border: 1px solid #0a66c2;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      ">
+      ${paginaLabel}
+    </a>`;
   }).join("")}
 </div>
 ` : '';
@@ -256,7 +272,7 @@ header a { color: white; font-weight: bold; text-decoration: underline; }
 main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
 ul { padding-left: 1.5rem; line-height: 1.8; }
-a { color: #0a66c2; text-decoration: none; font-weight: bold; }
+a { text-decoration: none; font-weight: bold; }
 a:hover { text-decoration: underline; }
 </style>
 </head>
@@ -288,6 +304,7 @@ ${paginacao}
     fs.writeFileSync(nome, html);
   }
 }
+
 
 function gerarSitemap(titulos) {
   const sitemapLinks = [
