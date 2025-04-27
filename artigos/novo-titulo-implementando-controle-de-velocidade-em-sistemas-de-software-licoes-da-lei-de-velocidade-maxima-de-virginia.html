@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Novo Título: "Implementando Controle de Velocidade em Sistemas de Software: Lições da Lei de Velocidade Máxima de Virginia" | Anderson Damasio</title>
+<meta name="description" content="Introdução: Recentemente, o estado da Virginia aprovou uma lei para impor limites de velocidade máxima para motoristas que repetidamente excedem os limites de v">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Novo Título: "Implementando Controle de Velocidade em Sistemas de Software: Lições da Lei de Velocidade Máxima de Virginia"</h1>
+<p class="article-meta">Publicado em: 27/04/2025 14:15</p>
+<div class="article-body">Introdução:<br>Recentemente, o estado da Virginia aprovou uma lei para impor limites de velocidade máxima para motoristas que repetidamente excedem os limites de velocidade. Essa medida visa aumentar a segurança nas estradas e garantir o cumprimento das leis de trânsito. Mas o que podemos aprender dessa iniciativa para aplicar em práticas modernas de arquitetura de software e desenvolvimento de sistemas?<br><br>Relevância para práticas modernas de arquitetura de software e desenvolvimento de sistemas:<br>Assim como a lei de velocidade máxima de Virginia visa controlar o comportamento dos motoristas nas estradas, em sistemas de software é essencial implementar mecanismos de controle de velocidade para garantir a estabilidade, segurança e eficiência do sistema. Neste artigo, vamos explorar como podemos aplicar os princípios por trás dessa lei no desenvolvimento de software.<br><br>Exemplo de código em C#:<br><pre><code class="language-csharp">public class SpeedController<br>{<br>    private int maxSpeed = 100; // Velocidade máxima permitida<br>    private int currentSpeed = 0; // Velocidade atual do veículo<br><br>    public void SetSpeed(int speed)<br>    {<br>        if (speed <= maxSpeed)<br>        {<br>            currentSpeed = speed;<br>        }<br>        else<br>        {<br>            currentSpeed = maxSpeed;<br>        }<br>    }<br>}<br></code></pre><br><br>Explicação técnica:<br>No exemplo de código acima, criamos uma classe SpeedController que controla a velocidade de um veículo. Ao chamar o método SetSpeed, o sistema verifica se a velocidade inserida está dentro do limite máximo permitido. Caso contrário, a velocidade é ajustada para o limite máximo. Essa abordagem garante que o veículo não ultrapasse a velocidade estabelecida, sem comprometer o funcionamento do sistema.<br><br>Dicas avançadas:<br>- Implemente um mecanismo de notificação para alertar os usuários quando a velocidade máxima for atingida.<br>- Utilize padrões de design como o Strategy Pattern para permitir diferentes estratégias de controle de velocidade.<br>- Realize testes de unidade para garantir que o controle de velocidade funcione corretamente em diferentes cenários.<br><br>Conclusão:<br>A lei de velocidade máxima de Virginia nos ensina a importância de controlar o comportamento dos usuários para garantir a segurança e eficiência de um sistema. Ao aplicarmos os princípios por trás dessa lei no desenvolvimento de software, podemos criar sistemas mais robustos e confiáveis. Implemente mecanismos de controle de velocidade em seus sistemas e garanta uma experiência segura para os usuários.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
