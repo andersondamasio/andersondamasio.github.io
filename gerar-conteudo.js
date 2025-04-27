@@ -136,7 +136,7 @@ Importante:
     );
 
     const content = response.data.choices[0].message.content;
-    const titulo = content.match(/^(.+)$/m)?.[1]?.trim() || noticia.titulo;
+    const titulo = (content.match(/^(.+)$/m)?.[1] || noticia.titulo).replace(/^\*\*(.+?)\*\*$/, '$1').trim();
 
     // Remover a primeira linha (título) do corpo do artigo
     let corpoArtigo = content.split('\n').slice(1).join('\n').trim();
