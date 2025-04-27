@@ -1,0 +1,70 @@
+name: Atualizar Analytics
+
+on:
+  workflow_dispatch: # Para rodar manualmente
+  schedule:
+    - cron: '0 0 * * 0' # Opcional: roda todo domingo à meia-noite (UTC)
+
+jobs:
+  atualizar-analytics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar o repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Instalar dependências (nenhuma)
+        run: echo "Nenhuma dependência necessária"
+
+      - name: Atualizar arquivos HTML com Analytics
+        run: |
+          node <<'EOF'
+          const fs = require('fs');
+          const path = require('path');
+
+          const diretorioArtigos = path.join(process.cwd(), 'artigos');
+          const analyticsTag = `
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+`;
+
+          fs.readdirSync(diretorioArtigos).forEach(file => {
+            const filePath = path.join(diretorioArtigos, file);
+
+            if (file.endsWith('.html')) {
+              let content = fs.readFileSync(filePath, 'utf8');
+
+              if (!content.includes('gtag/js?id=G-T15623VZYE')) {
+                console.log(`Atualizando: ${file}`);
+
+                content = content.replace(
+                  /(<meta name="description"[^>]*>)/i,
+                  `$1\n${analyticsTag}`
+                );
+
+                fs.writeFileSync(filePath, content, 'utf8');
+              }
+            }
+          });
+
+          console.log('✅ Atualização concluída!');
+          EOF
+
+      - name: Commitar mudanças
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "github-actions"
+          git add artigos/*.html
+          git commit -m "Atualizar Google Analytics nos artigos" || echo "Nada para commitar"
+          git push
