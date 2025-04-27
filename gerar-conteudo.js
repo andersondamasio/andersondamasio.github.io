@@ -238,7 +238,7 @@ function gerarIndicesPaginados(titulos) {
   ${Array.from({ length: paginas }).map((_, idx) => {
     const pageName = idx === 0 ? "index.html" : `index${idx + 1}.html`;
     const paginaLabel = `Página ${idx + 1}`;
-    const isActive = i === idx; // Destaque da página atual
+    const isActive = i === idx; // Destaca a página atual
 
     return `<a href="${pageName}" style="
       flex-shrink: 0;
@@ -282,17 +282,31 @@ a:hover { text-decoration: underline; }
 <p>Arquiteto de Software</p>
 <p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener">Acesse o perfil no LinkedIn</a></p>
 </header>
+
 <main>
 <section>
+
+<!-- Sobre Mim -->
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
-<h2>📚 Artigos</h2>
+<h2>Sobre Mim</h2>
+<p>Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna.</p>
+
+<h3>Contato</h3>
+<p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
+</div>
+
+<!-- Artigos -->
+<div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
+<h2>📚 Artigos Publicados</h2>
 <ul>
 ${links}
 </ul>
 ${paginacao}
 </div>
+
 </section>
 </main>
+
 <footer>
 <a href="politica.html">Política de Privacidade</a><br/>
 &copy; 2025 Anderson Damasio – Todos os direitos reservados
@@ -304,6 +318,7 @@ ${paginacao}
     fs.writeFileSync(nome, html);
   }
 }
+
 
 
 function gerarSitemap(titulos) {
