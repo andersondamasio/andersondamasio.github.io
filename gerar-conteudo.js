@@ -25,10 +25,14 @@ function slugify(str) {
     .replace(/(^-|-$)/g, '');
 }
 
+
 function formatDateTime(date) {
+  const brasiliaDate = new Date(date.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+
   const pad = n => n.toString().padStart(2, '0');
-  return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}`;
+  return `${pad(brasiliaDate.getDate())}/${pad(brasiliaDate.getMonth() + 1)}/${brasiliaDate.getFullYear()} ${pad(brasiliaDate.getHours())}:${pad(brasiliaDate.getMinutes())}`;
 }
+
 
 function normalizarTexto(str) {
   return str?.toLowerCase()
