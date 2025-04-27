@@ -95,10 +95,11 @@ async function gerar() {
 
     const noticia = await buscarNoticia();
 
-    if (!noticia) {
-      console.log("⚠️ Nenhuma notícia nova encontrada. Abortando.");
-      process.exit(0);
-    }
+   if (!noticia || !noticia.titulo) {
+  console.log("⚠️ Nenhuma notícia válida encontrada. Abortando.");
+  process.exit(0);
+}
+
 
     const prompt = `Resumo da notícia: ${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico e original com conteúdo e título em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software.`;
 
