@@ -103,22 +103,24 @@ async function gerar() {
 
 
 const prompt = `
-Resumo da notícia (em qualquer idioma): ${noticia.titulo}.
+Imagine que você recebeu uma notícia técnica internacional sobre: "${noticia.titulo}".
+Seu trabalho é:
 
-Tarefa:
-1. Reescreva o título acima de forma criativa e original em português, tornando-o mais atrativo e natural para falantes de português, mas mantendo o sentido principal.
-2. Usando o novo título reescrito, escreva um artigo técnico e original com conteúdo e título em português que:
+1. Criar um título novo, original, atrativo e 100% em português, baseado nesse tema, mas não apenas traduzido literalmente.
+2. Usar esse novo título para escrever um artigo técnico totalmente em português que:
    - Explique a relevância para práticas modernas de arquitetura de software e desenvolvimento de sistemas.
-   - Explore a aplicação prática para desenvolvedores, incluindo exemplos reais de código (em C# ou outra linguagem relacionada).
-   - Traga dicas avançadas e práticas que normalmente não são facilmente encontradas na internet.
-   - Utilize uma linguagem clara, didática, mas voltada para público técnico (desenvolvedores e arquitetos de software).
-   - Estruture o artigo com seções claras: introdução, exemplo de código, explicação técnica e conclusão.
-3. O novo título reescrito deve ser usado como o título do artigo.
+   - Traga exemplos práticos de aplicação, preferencialmente com trechos de código (em C# ou outra linguagem relacionada ao tema).
+   - Ofereça dicas avançadas que normalmente não são facilmente encontradas em artigos comuns.
+   - Seja didático, técnico e voltado para desenvolvedores e arquitetos de software.
+   - Tenha uma estrutura clara: introdução, exemplo de código, explicação técnica e conclusão.
 
 Importante:
-- Toda a resposta deve ser em português.
-- Não mantenha o título original, apenas o novo título reescrito.
+- O artigo deve ser todo em português.
+- O título deve ser apresentado no topo do artigo, antes da introdução.
+- O novo título deve ser original, criativo e relevante para o tema.
+- Não traduza literalmente o título original; reescreva de forma natural para o público brasileiro.
 `;
+
 
 
     const response = await axios.post(
@@ -137,7 +139,7 @@ Importante:
     );
 
     const content = response.data.choices[0].message.content;
-    const titulo = content.match(/^Título:\s*(.*)$/mi)?.[1]?.trim() || noticia.titulo;
+    const titulo = content.match(/^(.+)$/m)?.[1]?.trim() || noticia.titulo;
     const slug = slugify(titulo);
     const filename = `artigos/${slug}.html`;
 
