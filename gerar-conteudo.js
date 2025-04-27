@@ -297,7 +297,7 @@ a:hover { text-decoration: underline; }
 
 <!-- Artigos -->
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
-<h2>📚 Artigos Publicados</h2>
+<h2>📚 Artigos</h2>
 <ul>
 ${links}
 </ul>
