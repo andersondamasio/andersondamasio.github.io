@@ -102,18 +102,24 @@ async function gerar() {
 }
 
 
-   const prompt = `
-Resumo da notícia: ${noticia.titulo}.
+const prompt = `
+Resumo da notícia (em qualquer idioma): ${noticia.titulo}.
 
-Com base nesta novidade real, escreva um artigo técnico e original em português que:
+Tarefa:
+1. Reescreva o título acima de forma criativa e original em português, tornando-o mais atrativo e natural para falantes de português, mas mantendo o sentido principal.
+2. Usando o novo título reescrito, escreva um artigo técnico e original em português que:
+   - Explique a relevância para práticas modernas de arquitetura de software e desenvolvimento de sistemas.
+   - Explore a aplicação prática para desenvolvedores, incluindo exemplos reais de código (em C# ou outra linguagem relacionada).
+   - Traga dicas avançadas e práticas que normalmente não são facilmente encontradas na internet.
+   - Utilize uma linguagem clara, didática, mas voltada para público técnico (desenvolvedores e arquitetos de software).
+   - Estruture o artigo com seções claras: introdução, exemplo de código, explicação técnica e conclusão.
+3. O novo título reescrito deve ser usado como o título do artigo.
 
-- Explique a relevância para práticas modernas de arquitetura de software e desenvolvimento de sistemas.
-- Explore a aplicação prática para desenvolvedores, incluindo exemplos reais de código (em C# ou outra linguagem relacionada).
-- Traga dicas avançadas e práticas que normalmente não são facilmente encontradas na internet.
-- Utilize uma linguagem clara, didática, mas voltada para público técnico (desenvolvedores e arquitetos de software).
-- Estruture o artigo com seções claras: introdução, exemplo de código, explicação técnica e conclusão.
-- Crie um título atraente e descritivo.
+Importante:
+- Toda a resposta deve ser em português.
+- Não mantenha o título original, apenas o novo título reescrito.
 `;
+
 
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
