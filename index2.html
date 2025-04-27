@@ -12,7 +12,7 @@ header a { color: white; font-weight: bold; text-decoration: underline; }
 main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
 ul { padding-left: 1.5rem; line-height: 1.8; }
-a { color: #0a66c2; text-decoration: none; font-weight: bold; }
+a { text-decoration: none; font-weight: bold; }
 a:hover { text-decoration: underline; }
 </style>
 </head>
@@ -25,13 +25,9 @@ a:hover { text-decoration: underline; }
 <main>
 <section>
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
-<h2>Sobre Mim</h2>
-<p>Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna.</p>
-<h3>Contato</h3>
-<p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
-</div>
-<h2>📚 Artigos Publicados</h2>
+<h2>📚 Artigos</h2>
 <ul>
+<li><a href="artigos/show-hn-a-common-lisp-implementation-in-development-supports-asdf.html">Show HN: A Common Lisp implementation in development, supports ASDF</a> <span style="color:#777;">(27/04/2025 13:36)</span></li>
 <li><a href="artigos/we-re-building-a-dystopia-just-to-make-people-click-on-ads-video.html">We're building a dystopia just to make people click on ads [video]</a> <span style="color:#777;">(27/04/2025 13:30)</span></li>
 <li><a href="artigos/a-complexidade-do-reverse-geocoding-e-sua-relevancia-na-arquitetura-de-software-moderna.html">A complexidade do Reverse Geocoding e sua relevância na arquitetura de software moderna</a> <span style="color:#777;">(27/04/2025 12:17)</span></li>
 <li><a href="artigos/a-influencia-das-padroes-geometricos-japoneses-na-arquitetura-de-software-moderna.html">A influência das padrões geométricos japoneses na arquitetura de software moderna</a> <span style="color:#777;">(27/04/2025 11:14)</span></li>
@@ -41,9 +37,104 @@ a:hover { text-decoration: underline; }
 <li><a href="artigos/etica-privacidade-e-intencao-na-arquitetura-de-software-reflexoes-a-partir-do-projeto-de-dados-sobre-autismo-nos-eua.html">Ética, privacidade e intenção na arquitetura de software: reflexões a partir do projeto de dados sobre autismo nos EUA</a> <span style="color:#777;">(27/04/2025 07:18)</span></li>
 <li><a href="artigos/desenvolvendo-um-jogo-de-aventura-de-texto-em-c-conexoes-com-a-arquitetura-de-software-moderna.html">Desenvolvendo um jogo de aventura de texto em C: conexões com a arquitetura de software moderna</a> <span style="color:#777;">(27/04/2025 06:16)</span></li>
 <li><a href="artigos/a-integracao-da-internet-das-coisas-na-arquitetura-de-software-o-caso-do-controle-remoto-da-lampada-deathstar-da-ikea.html">A integração da Internet das Coisas na arquitetura de software: o caso do controle remoto da lâmpada Deathstar da IKEA</a> <span style="color:#777;">(27/04/2025 05:20)</span></li>
-<li><a href="artigos/a-importancia-da-modelagem-de-bancos-de-dados-na-arquitetura-de-software-moderna.html">A importância da modelagem de bancos de dados na arquitetura de software moderna</a> <span style="color:#777;">(27/04/2025 04:15)</span></li>
 </ul>
-<div style="text-align:center;"><a href="index.html" style="margin:0 8px;">Página 1</a><a href="index2.html" style="margin:0 8px;">Página 2</a><a href="index3.html" style="margin:0 8px;">Página 3</a><a href="index4.html" style="margin:0 8px;">Página 4</a><a href="index5.html" style="margin:0 8px;">Página 5</a><a href="index6.html" style="margin:0 8px;">Página 6</a><a href="index7.html" style="margin:0 8px;">Página 7</a></div>
+
+<div style="display:flex; overflow-x:auto; gap: 12px; padding: 8px; margin-top: 2rem; justify-content: center;">
+  <a href="index.html" style="
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-weight: bold;
+      text-decoration: none;
+      color: #0a66c2;
+      background-color: transparent;
+      border: 1px solid #0a66c2;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      ">
+      Página 1
+    </a><a href="index2.html" style="
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-weight: bold;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #0a66c2;
+      border: 1px solid #0a66c2;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      ">
+      Página 2
+    </a><a href="index3.html" style="
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-weight: bold;
+      text-decoration: none;
+      color: #0a66c2;
+      background-color: transparent;
+      border: 1px solid #0a66c2;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      ">
+      Página 3
+    </a><a href="index4.html" style="
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-weight: bold;
+      text-decoration: none;
+      color: #0a66c2;
+      background-color: transparent;
+      border: 1px solid #0a66c2;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      ">
+      Página 4
+    </a><a href="index5.html" style="
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-weight: bold;
+      text-decoration: none;
+      color: #0a66c2;
+      background-color: transparent;
+      border: 1px solid #0a66c2;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      ">
+      Página 5
+    </a><a href="index6.html" style="
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-weight: bold;
+      text-decoration: none;
+      color: #0a66c2;
+      background-color: transparent;
+      border: 1px solid #0a66c2;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      ">
+      Página 6
+    </a><a href="index7.html" style="
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-weight: bold;
+      text-decoration: none;
+      color: #0a66c2;
+      background-color: transparent;
+      border: 1px solid #0a66c2;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      ">
+      Página 7
+    </a>
+</div>
+
+</div>
 </section>
 </main>
 <footer>

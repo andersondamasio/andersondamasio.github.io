@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Desenvolvendo sistemas eficientes com a técnica de Paul Morphy | Anderson Damasio</title>
+<meta name="description" content="Nos dias atuais, a busca por sistemas mais eficientes e rápidos é constante no mundo da arquitetura de software e desenvolvimento de sistemas. A técnica de Paul">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Desenvolvendo sistemas eficientes com a técnica de Paul Morphy</h1>
+<p class="article-meta">Publicado em: 27/04/2025 14:51</p>
+<div class="article-body">Nos dias atuais, a busca por sistemas mais eficientes e rápidos é constante no mundo da arquitetura de software e desenvolvimento de sistemas. A técnica de Paul Morphy, conhecida por sua capacidade de antecipar movimentos do adversário no xadrez, pode ser aplicada de forma brilhante para melhorar a performance de nossos sistemas.<br><br>Imagine um cenário onde temos um modelo de previsão de dados complexos, representado por uma classe "Model03", que precisa realizar um cálculo crítico em apenas duas etapas para otimizar o desempenho do sistema. Vamos analisar como podemos aplicar a técnica de Paul Morphy para alcançar esse objetivo.<br><br><pre><code>public class Model03<br>{<br>    public void Calculate()<br>    {<br>        // Passo 1: Realizar primeira etapa do cálculo<br>        Step1();<br><br>        // Passo 2: Realizar segunda etapa do cálculo<br>        Step2();<br>    }<br><br>    private void Step1()<br>    {<br>        // Implementação da primeira etapa do cálculo<br>    }<br><br>    private void Step2()<br>    {<br>        // Implementação da segunda etapa do cálculo<br>    }<br>}<br></code></pre><br><br>Neste exemplo, a classe Model03 representa o modelo de previsão de dados e a função Calculate() é responsável por executar as duas etapas do cálculo. Ao dividir o processo em etapas separadas, podemos otimizar o desempenho do sistema, permitindo que cada etapa seja executada de forma eficiente e rápida.<br><br>Ao aplicar a técnica de Paul Morphy, podemos antecipar possíveis gargalos no sistema e otimizar as etapas do cálculo de forma a alcançar um resultado mais eficiente. Isso nos permite desenvolver sistemas mais rápidos e eficientes, atendendo às demandas cada vez mais exigentes do mercado.<br><br>Em conclusão, a técnica de Paul Morphy pode ser uma ferramenta poderosa para os desenvolvedores que buscam melhorar a performance de seus sistemas. Ao antecipar movimentos e otimizar etapas críticas, podemos criar sistemas mais eficientes e rápidos, atendendo às necessidades das práticas modernas de arquitetura de software e desenvolvimento de sistemas.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
