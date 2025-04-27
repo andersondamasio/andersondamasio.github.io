@@ -15,7 +15,7 @@ const devBlogsFeeds = [
   "https://devblogs.microsoft.com/visualstudio/feed/",
   "https://devblogs.microsoft.com/devops/feed/",
   "https://devblogs.microsoft.com/opensource/feed/",
-  "https://martinfowler.com/feed.atom/"
+  "https://martinfowler.com/feed.atom"
 ];
 
 function slugify(str) {
@@ -140,10 +140,14 @@ Importante:
 
     const content = response.data.choices[0].message.content;
     const titulo = content.match(/^(.+)$/m)?.[1]?.trim() || noticia.titulo;
+
+    // Remover a primeira linha (título) do corpo do artigo
+    const corpoArtigo = content.split('\n').slice(1).join('\n').trim();
+    
     const slug = slugify(titulo);
     const filename = `artigos/${slug}.html`;
 
-    const resumo = content.split("\n").slice(1, 3).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
+    const resumo = corpoArtigo.split("\n").slice(0, 2).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
     const dataHoraFormatada = formatDateTime(now);
 
     const html = `<!DOCTYPE html>
@@ -173,7 +177,7 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>${titulo}</h1>
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
-<div class="article-body">${content.replace(/\n/g, "<br>")}</div>
+<div class="article-body">${corpoArtigo.replace(/\n/g, "<br>")}</div>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 </body>
