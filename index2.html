@@ -14,6 +14,35 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; 
 ul { padding-left: 1.5rem; line-height: 1.8; }
 a { text-decoration: none; font-weight: bold; }
 a:hover { text-decoration: underline; }
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 8px 16px;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  scroll-padding-left: 16px;
+  gap: 12px;
+}
+.scroll-container a {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.scroll-container a:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+.scroll-container a.active {
+  background-color: #0a66c2;
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -39,6 +68,7 @@ a:hover { text-decoration: underline; }
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
 <h2>📚 Artigos</h2>
 <ul>
+<li><a href="artigos/obituarios-automatizados.html">Obituários Automatizados</a> <span style="color:#777;">(27/04/2025 14:20)</span></li>
 <li><a href="artigos/novo-titulo-implementando-controle-de-velocidade-em-sistemas-de-software-licoes-da-lei-de-velocidade-maxima-de-virginia.html">Novo Título: "Implementando Controle de Velocidade em Sistemas de Software: Lições da Lei de Velocidade Máxima de Virginia"</a> <span style="color:#777;">(27/04/2025 14:15)</span></li>
 <li><a href="artigos/capturando-nos-do-dom-como-imagens-em-alta-velocidade-introducao-ao-snapdom.html">Capturando nós do DOM como imagens em alta velocidade: Introdução ao snapDOM</a> <span style="color:#777;">(27/04/2025 14:10)</span></li>
 <li><a href="artigos/titulo-contratacao-de-engenheiros-para-construcao-de-processamento-de-documentos-llm-na-extend-yc-w23.html">Título: "Contratação de Engenheiros para Construção de Processamento de Documentos LLM na Extend (YC W23)"</a> <span style="color:#777;">(27/04/2025 14:09)</span></li>
@@ -48,115 +78,10 @@ a:hover { text-decoration: underline; }
 <li><a href="artigos/explorando-o-potencial-da-wikipedia-download-de-banco-de-dados.html">**Explorando o Potencial da Wikipedia: Download de Banco de Dados**</a> <span style="color:#777;">(27/04/2025 13:47)</span></li>
 <li><a href="artigos/how-nasa-is-using-graph-technology-and-llms-to-build-a-people-knowledge-graph.html">How NASA Is Using Graph Technology and LLMs to Build a People Knowledge Graph</a> <span style="color:#777;">(27/04/2025 13:40)</span></li>
 <li><a href="artigos/show-hn-a-common-lisp-implementation-in-development-supports-asdf.html">Show HN: A Common Lisp implementation in development, supports ASDF</a> <span style="color:#777;">(27/04/2025 13:36)</span></li>
-<li><a href="artigos/we-re-building-a-dystopia-just-to-make-people-click-on-ads-video.html">We're building a dystopia just to make people click on ads [video]</a> <span style="color:#777;">(27/04/2025 13:30)</span></li>
 </ul>
 
-<div style="display:flex; overflow-x:auto; gap: 12px; padding: 8px 16px; margin-top: 2rem; justify-content: center;">
-  <a href="index.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 1
-    </a><a href="index2.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #ffffff;
-      background-color: #0a66c2;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 2
-    </a><a href="index3.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 3
-    </a><a href="index4.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 4
-    </a><a href="index5.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 5
-    </a><a href="index6.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 6
-    </a><a href="index7.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 7
-    </a><a href="index8.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 8
-    </a>
+<div class="scroll-container">
+  <a href="index.html" class="">Página 1</a><a href="index2.html" class="active">Página 2</a><a href="index3.html" class="">Página 3</a><a href="index4.html" class="">Página 4</a><a href="index5.html" class="">Página 5</a><a href="index6.html" class="">Página 6</a><a href="index7.html" class="">Página 7</a><a href="index8.html" class="">Página 8</a>
 </div>
 
 </div>

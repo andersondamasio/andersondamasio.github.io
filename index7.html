@@ -14,6 +14,35 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; 
 ul { padding-left: 1.5rem; line-height: 1.8; }
 a { text-decoration: none; font-weight: bold; }
 a:hover { text-decoration: underline; }
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 8px 16px;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  scroll-padding-left: 16px;
+  gap: 12px;
+}
+.scroll-container a {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.scroll-container a:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+.scroll-container a.active {
+  background-color: #0a66c2;
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -39,6 +68,7 @@ a:hover { text-decoration: underline; }
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
 <h2>📚 Artigos</h2>
 <ul>
+<li><a href="artigos/integracao-entre-hardware-e-software-uma-nova-tendencia-na-arquitetura-de-sistemas.html">Integração entre hardware e software: uma nova tendência na arquitetura de sistemas</a> <span style="color:#777;">(25/04/2025 21:46)</span></li>
 <li><a href="artigos/emulacao-mundial-atraves-de-redes-neurais-profundas-dnn-uma-abordagem-inovadora-na-arquitetura-de-software.html">Emulação Mundial através de Redes Neurais Profundas (DNN): uma abordagem inovadora na arquitetura de software</a> <span style="color:#777;">(25/04/2025 20:20)</span></li>
 <li><a href="artigos/formalizando-principia-mathematica-com-lean-uma-abordagem-moderna-de-arquitetura-de-software.html">Formalizando Principia Mathematica com Lean: Uma abordagem moderna de arquitetura de software</a> <span style="color:#777;">(25/04/2025 20:16)</span></li>
 <li><a href="artigos/integrando-python-em-planilhas-modernas-uma-abordagem-arquitetural.html">Integrando Python em planilhas modernas: uma abordagem arquitetural</a> <span style="color:#777;">(25/04/2025 20:15)</span></li>
@@ -48,115 +78,10 @@ a:hover { text-decoration: underline; }
 <li><a href="artigos/arquitetura-de-software-distribuida-desafios-e-solucoes.html">Arquitetura de Software Distribuída: Desafios e Soluções</a> <span style="color:#777;">(25/04/2025 18:13)</span></li>
 <li><a href="artigos/arquitetura-serverless-uma-abordagem-inovadora-para-o-desenvolvimento-de-software.html">Arquitetura Serverless: uma abordagem inovadora para o desenvolvimento de software</a> <span style="color:#777;">(25/04/2025 17:52)</span></li>
 <li><a href="artigos/arquitetura-de-software-baseada-em-eventos-uma-abordagem-eficiente-para-sistemas-distribuidos.html">Arquitetura de Software Baseada em Eventos: Uma Abordagem Eficiente para Sistemas Distribuídos</a> <span style="color:#777;">(25/04/2025 17:47)</span></li>
-<li><a href="artigos/arquitetura-hexagonal-uma-abordagem-eficiente-para-o-desenvolvimento-de-software.html">Arquitetura Hexagonal: uma abordagem eficiente para o desenvolvimento de software</a> <span style="color:#777;">(25/04/2025 17:42)</span></li>
 </ul>
 
-<div style="display:flex; overflow-x:auto; gap: 12px; padding: 8px 16px; margin-top: 2rem; justify-content: center;">
-  <a href="index.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 1
-    </a><a href="index2.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 2
-    </a><a href="index3.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 3
-    </a><a href="index4.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 4
-    </a><a href="index5.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 5
-    </a><a href="index6.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 6
-    </a><a href="index7.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #ffffff;
-      background-color: #0a66c2;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 7
-    </a><a href="index8.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 8
-    </a>
+<div class="scroll-container">
+  <a href="index.html" class="">Página 1</a><a href="index2.html" class="">Página 2</a><a href="index3.html" class="">Página 3</a><a href="index4.html" class="">Página 4</a><a href="index5.html" class="">Página 5</a><a href="index6.html" class="">Página 6</a><a href="index7.html" class="active">Página 7</a><a href="index8.html" class="">Página 8</a>
 </div>
 
 </div>

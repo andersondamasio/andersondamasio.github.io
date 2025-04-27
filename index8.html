@@ -14,6 +14,35 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; 
 ul { padding-left: 1.5rem; line-height: 1.8; }
 a { text-decoration: none; font-weight: bold; }
 a:hover { text-decoration: underline; }
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 8px 16px;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  scroll-padding-left: 16px;
+  gap: 12px;
+}
+.scroll-container a {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.scroll-container a:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+.scroll-container a.active {
+  background-color: #0a66c2;
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -39,118 +68,15 @@ a:hover { text-decoration: underline; }
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
 <h2>📚 Artigos</h2>
 <ul>
+<li><a href="artigos/arquitetura-hexagonal-uma-abordagem-eficiente-para-o-desenvolvimento-de-software.html">Arquitetura Hexagonal: uma abordagem eficiente para o desenvolvimento de software</a> <span style="color:#777;">(25/04/2025 17:42)</span></li>
 <li><a href="artigos/escalabilidade-horizontal-em-arquitetura-de-software.html">Escalabilidade Horizontal em Arquitetura de Software</a> <span style="color:#777;">(25/04/2025 17:32)</span></li>
 <li><a href="artigos/a-importancia-da-arquitetura-de-software-orientada-a-servicos.html">A Importância da Arquitetura de Software Orientada a Serviços</a> <span style="color:#777;">(25/04/2025 16:45)</span></li>
 <li><a href="artigos/microservices-a-arquitetura-de-software-do-futuro.html">Microservices: a arquitetura de software do futuro</a> <span style="color:#777;">(25/04/2025 16:27)</span></li>
 <li><a href="artigos/microservices-uma-abordagem-para-arquitetura-de-software.html">Microservices: uma abordagem para arquitetura de software</a> <span style="color:#777;">(25/04/2025 16:00)</span></li>
 </ul>
 
-<div style="display:flex; overflow-x:auto; gap: 12px; padding: 8px 16px; margin-top: 2rem; justify-content: center;">
-  <a href="index.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 1
-    </a><a href="index2.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 2
-    </a><a href="index3.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 3
-    </a><a href="index4.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 4
-    </a><a href="index5.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 5
-    </a><a href="index6.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 6
-    </a><a href="index7.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 7
-    </a><a href="index8.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #ffffff;
-      background-color: #0a66c2;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 8
-    </a>
+<div class="scroll-container">
+  <a href="index.html" class="">Página 1</a><a href="index2.html" class="">Página 2</a><a href="index3.html" class="">Página 3</a><a href="index4.html" class="">Página 4</a><a href="index5.html" class="">Página 5</a><a href="index6.html" class="">Página 6</a><a href="index7.html" class="">Página 7</a><a href="index8.html" class="active">Página 8</a>
 </div>
 
 </div>

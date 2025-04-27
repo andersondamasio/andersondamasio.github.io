@@ -14,6 +14,35 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; 
 ul { padding-left: 1.5rem; line-height: 1.8; }
 a { text-decoration: none; font-weight: bold; }
 a:hover { text-decoration: underline; }
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 8px 16px;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  scroll-padding-left: 16px;
+  gap: 12px;
+}
+.scroll-container a {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.scroll-container a:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+.scroll-container a.active {
+  background-color: #0a66c2;
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -39,6 +68,7 @@ a:hover { text-decoration: underline; }
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
 <h2>📚 Artigos</h2>
 <ul>
+<li><a href="artigos/we-re-building-a-dystopia-just-to-make-people-click-on-ads-video.html">We're building a dystopia just to make people click on ads [video]</a> <span style="color:#777;">(27/04/2025 13:30)</span></li>
 <li><a href="artigos/a-complexidade-do-reverse-geocoding-e-sua-relevancia-na-arquitetura-de-software-moderna.html">A complexidade do Reverse Geocoding e sua relevância na arquitetura de software moderna</a> <span style="color:#777;">(27/04/2025 12:17)</span></li>
 <li><a href="artigos/a-influencia-das-padroes-geometricos-japoneses-na-arquitetura-de-software-moderna.html">A influência das padrões geométricos japoneses na arquitetura de software moderna</a> <span style="color:#777;">(27/04/2025 11:14)</span></li>
 <li><a href="artigos/shardines-banco-de-dados-sqlite3-por-inquilino-com-activerecord.html">Shardines: Banco de Dados SQLite3 por Inquilino com ActiveRecord</a> <span style="color:#777;">(27/04/2025 10:22)</span></li>
@@ -48,115 +78,10 @@ a:hover { text-decoration: underline; }
 <li><a href="artigos/desenvolvendo-um-jogo-de-aventura-de-texto-em-c-conexoes-com-a-arquitetura-de-software-moderna.html">Desenvolvendo um jogo de aventura de texto em C: conexões com a arquitetura de software moderna</a> <span style="color:#777;">(27/04/2025 06:16)</span></li>
 <li><a href="artigos/a-integracao-da-internet-das-coisas-na-arquitetura-de-software-o-caso-do-controle-remoto-da-lampada-deathstar-da-ikea.html">A integração da Internet das Coisas na arquitetura de software: o caso do controle remoto da lâmpada Deathstar da IKEA</a> <span style="color:#777;">(27/04/2025 05:20)</span></li>
 <li><a href="artigos/a-importancia-da-modelagem-de-bancos-de-dados-na-arquitetura-de-software-moderna.html">A importância da modelagem de bancos de dados na arquitetura de software moderna</a> <span style="color:#777;">(27/04/2025 04:15)</span></li>
-<li><a href="artigos/css-zen-garden.html">CSS Zen Garden</a> <span style="color:#777;">(27/04/2025 03:23)</span></li>
 </ul>
 
-<div style="display:flex; overflow-x:auto; gap: 12px; padding: 8px 16px; margin-top: 2rem; justify-content: center;">
-  <a href="index.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 1
-    </a><a href="index2.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 2
-    </a><a href="index3.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #ffffff;
-      background-color: #0a66c2;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 3
-    </a><a href="index4.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 4
-    </a><a href="index5.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 5
-    </a><a href="index6.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 6
-    </a><a href="index7.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 7
-    </a><a href="index8.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 8
-    </a>
+<div class="scroll-container">
+  <a href="index.html" class="">Página 1</a><a href="index2.html" class="">Página 2</a><a href="index3.html" class="active">Página 3</a><a href="index4.html" class="">Página 4</a><a href="index5.html" class="">Página 5</a><a href="index6.html" class="">Página 6</a><a href="index7.html" class="">Página 7</a><a href="index8.html" class="">Página 8</a>
 </div>
 
 </div>

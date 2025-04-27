@@ -14,6 +14,35 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; 
 ul { padding-left: 1.5rem; line-height: 1.8; }
 a { text-decoration: none; font-weight: bold; }
 a:hover { text-decoration: underline; }
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 8px 16px;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  scroll-padding-left: 16px;
+  gap: 12px;
+}
+.scroll-container a {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.scroll-container a:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+.scroll-container a.active {
+  background-color: #0a66c2;
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -39,6 +68,7 @@ a:hover { text-decoration: underline; }
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
 <h2>📚 Artigos</h2>
 <ul>
+<li><a href="artigos/barlow-s-principles-of-adult-behaviour.html">Barlow's Principles of Adult Behaviour</a> <span style="color:#777;">(26/04/2025 16:13)</span></li>
 <li><a href="artigos/a-importancia-da-flexibilidade-e-adaptabilidade-na-arquitetura-de-software-licoes-aprendidas-com-thank-you-for-holding-my-duck.html">A importância da flexibilidade e adaptabilidade na arquitetura de software: lições aprendidas com "Thank you for holding my duck"</a> <span style="color:#777;">(26/04/2025 15:21)</span></li>
 <li><a href="artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html">Como a tendência "Stuffed-Na(a)N" se conecta à arquitetura de software moderna</a> <span style="color:#777;">(26/04/2025 14:13)</span></li>
 <li><a href="artigos/a-importancia-da-criacao-de-sistemas-operacionais-como-hobby-na-arquitetura-de-software-moderna.html">A importância da criação de sistemas operacionais como hobby na arquitetura de software moderna</a> <span style="color:#777;">(26/04/2025 13:19)</span></li>
@@ -48,115 +78,10 @@ a:hover { text-decoration: underline; }
 <li><a href="artigos/the-friendship-recession-the-lost-art-of-connecting.html">The Friendship Recession: The Lost Art of Connecting</a> <span style="color:#777;">(26/04/2025 09:31)</span></li>
 <li><a href="artigos/implicacoes-da-perda-de-mark-zuckerberg-no-caso-antitruste-do-facebook-para-a-arquitetura-de-software-moderna.html">Implicações da perda de Mark Zuckerberg no caso antitruste do Facebook para a arquitetura de software moderna</a> <span style="color:#777;">(26/04/2025 08:13)</span></li>
 <li><a href="artigos/o-fim-de-todos-os-problemas-de-prostata-uma-analise-tecnica-sobre-a-conexao-entre-essa-tendencia-e-praticas-modernas-de-arquitetura-de-software.html">O fim de todos os problemas de próstata? Uma análise técnica sobre a conexão entre essa tendência e práticas modernas de arquitetura de software</a> <span style="color:#777;">(26/04/2025 07:16)</span></li>
-<li><a href="artigos/o-impacto-do-arquivo-etc-hosts-na-arquitetura-de-software-moderna.html">O impacto do arquivo "/etc/hosts" na arquitetura de software moderna</a> <span style="color:#777;">(26/04/2025 06:16)</span></li>
 </ul>
 
-<div style="display:flex; overflow-x:auto; gap: 12px; padding: 8px 16px; margin-top: 2rem; justify-content: center;">
-  <a href="index.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 1
-    </a><a href="index2.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 2
-    </a><a href="index3.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 3
-    </a><a href="index4.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 4
-    </a><a href="index5.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #ffffff;
-      background-color: #0a66c2;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 5
-    </a><a href="index6.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 6
-    </a><a href="index7.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 7
-    </a><a href="index8.html" style="
-      flex-shrink: 0;
-      white-space: nowrap;
-      font-weight: bold;
-      text-decoration: none;
-      color: #0a66c2;
-      background-color: transparent;
-      border: 1px solid #0a66c2;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      ">
-      Página 8
-    </a>
+<div class="scroll-container">
+  <a href="index.html" class="">Página 1</a><a href="index2.html" class="">Página 2</a><a href="index3.html" class="">Página 3</a><a href="index4.html" class="">Página 4</a><a href="index5.html" class="active">Página 5</a><a href="index6.html" class="">Página 6</a><a href="index7.html" class="">Página 7</a><a href="index8.html" class="">Página 8</a>
 </div>
 
 </div>
