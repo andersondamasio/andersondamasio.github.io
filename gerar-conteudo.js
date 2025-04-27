@@ -245,7 +245,7 @@ function gerarIndicesPaginados(titulos) {
     }).join("\n");
 
     const paginacao = paginas > 1 ? `
-<div style="display:flex; overflow-x:auto; gap: 12px; padding: 8px; margin-top: 2rem; justify-content: center;">
+<div style="display:flex; overflow-x:auto; gap: 12px; padding: 8px 16px; margin-top: 2rem; justify-content: center;">
   ${Array.from({ length: paginas }).map((_, idx) => {
     const pageName = idx === 0 ? "index.html" : `index${idx + 1}.html`;
     const paginaLabel = `Página ${idx + 1}`;
