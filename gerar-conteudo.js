@@ -105,20 +105,23 @@ const prompt = `
 Imagine que você recebeu uma notícia técnica internacional sobre: "${noticia.titulo}".
 Seu trabalho é:
 
-1. Crie diretamente um novo título, original, atrativo e 100% em português, sem escrever palavras como "Título:", "Novo Título:", "Artigo:" antes. Apenas o título puro na primeira linha.
-2. Abaixo do título, escreva um artigo técnico totalmente em português que:
+1. Criar um novo título 100% original em português, inspirado no tema da notícia, mas sem traduzir literalmente.
+   - Reescreva o título de forma natural e adaptada para o público brasileiro.
+   - Use sinônimos, reformule as frases e traga uma abordagem diferente, mantendo o sentido geral.
+   - O título deve ser único, atrativo e relacionado ao tema, mas não parecer uma tradução.
+
+2. Em seguida, abaixo do título, escreva um artigo técnico totalmente em português que:
    - Explique a relevância para práticas modernas de arquitetura de software e desenvolvimento de sistemas.
    - Traga exemplos práticos de aplicação, preferencialmente com trechos de código (em C# ou outra linguagem relacionada).
    - Ofereça dicas avançadas que normalmente não são facilmente encontradas em artigos comuns.
-   - Use linguagem clara, técnica, estruturada com: introdução, exemplo de código, explicação técnica e conclusão.
+   - Use linguagem clara, didática e estruturada com: introdução, exemplo de código, explicação técnica e conclusão.
 
 Importante:
-- Não adicione rótulos como "Título:", "Novo Título:", "Artigo:" antes do título.
-- Não adicione aspas ou asteriscos no título.
-- Não use negrito (**).
-- Apenas escreva o título puro na primeira linha.
-- Depois do título, inicie o artigo normalmente em nova linha.
+- O título deve ser apresentado na primeira linha, sem prefixos como "Título:", "Novo Título:" ou "Artigo:".
+- Não adicione aspas, negrito ou marcações no título.
+- Comece o artigo em uma nova linha, depois do título.
 `;
+
 
 
     const response = await axios.post(
