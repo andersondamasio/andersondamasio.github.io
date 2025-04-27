@@ -96,13 +96,12 @@ async function gerar() {
 
     const noticia = await buscarNoticia();
 
-   if (!noticia || !noticia.titulo) {
-  console.log("⚠️ Nenhuma notícia válida encontrada. Abortando.");
-  process.exit(0);
-}
+    if (!noticia || !noticia.titulo) {
+      console.log("⚠️ Nenhuma notícia válida encontrada. Abortando.");
+      process.exit(0);
+    }
 
-
-const prompt = `
+    const prompt = `
 Imagine que você recebeu uma notícia técnica internacional sobre: "${noticia.titulo}".
 Seu trabalho é:
 
@@ -120,8 +119,6 @@ Importante:
 - O novo título deve ser original, criativo e relevante para o tema.
 - Não traduza literalmente o título original; reescreva de forma natural para o público brasileiro.
 `;
-
-
 
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
@@ -142,8 +139,13 @@ Importante:
     const titulo = content.match(/^(.+)$/m)?.[1]?.trim() || noticia.titulo;
 
     // Remover a primeira linha (título) do corpo do artigo
-    const corpoArtigo = content.split('\n').slice(1).join('\n').trim();
-    
+    let corpoArtigo = content.split('\n').slice(1).join('\n').trim();
+
+    // Formatar blocos de código Markdown para HTML <pre><code>
+    corpoArtigo = corpoArtigo
+      .replace(/```csharp\n([\s\S]*?)```/g, '<pre><code class="language-csharp">$1</code></pre>')
+      .replace(/```[\s\S]*?\n([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+
     const slug = slugify(titulo);
     const filename = `artigos/${slug}.html`;
 
@@ -163,12 +165,12 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-co
 h1 { font-size: 1.8rem; margin-bottom: 1rem; }
 .article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
 .article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
 .back-link { text-align: center; margin-top: 2rem; }
-.back-link a {
-  font-weight: bold; color: #0a66c2; font-size: 1.05rem;
-  border: 1px solid #0a66c2; padding: 0.4rem 1rem;
-  border-radius: 6px; display: inline-block; text-decoration: none;
-}
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 </style>
@@ -180,6 +182,24 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <div class="article-body">${corpoArtigo.replace(/\n/g, "<br>")}</div>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
 </body>
 </html>`;
 
@@ -198,6 +218,7 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
     process.exit(1);
   }
 }
+
 
 function gerarIndicesPaginados(titulos) {
   const ordenados = titulos.slice().sort((a, b) => new Date(b.data) - new Date(a.data));
