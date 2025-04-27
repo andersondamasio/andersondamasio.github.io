@@ -107,7 +107,7 @@ Resumo da notícia (em qualquer idioma): ${noticia.titulo}.
 
 Tarefa:
 1. Reescreva o título acima de forma criativa e original em português, tornando-o mais atrativo e natural para falantes de português, mas mantendo o sentido principal.
-2. Usando o novo título reescrito, escreva um artigo técnico e original em português que:
+2. Usando o novo título reescrito, escreva um artigo técnico e original com conteúdo e título em português que:
    - Explique a relevância para práticas modernas de arquitetura de software e desenvolvimento de sistemas.
    - Explore a aplicação prática para desenvolvedores, incluindo exemplos reais de código (em C# ou outra linguagem relacionada).
    - Traga dicas avançadas e práticas que normalmente não são facilmente encontradas na internet.
