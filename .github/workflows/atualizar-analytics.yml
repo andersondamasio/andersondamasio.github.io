@@ -1,9 +1,9 @@
 name: Atualizar Analytics
 
 on:
-  workflow_dispatch: # Para rodar manualmente
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 0' # Opcional: roda todo domingo à meia-noite (UTC)
+    - cron: '0 0 * * 0'
 
 jobs:
   atualizar-analytics:
@@ -18,53 +18,41 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Instalar dependências (nenhuma)
-        run: echo "Nenhuma dependência necessária"
-
-      - name: Atualizar arquivos HTML com Analytics
+      - name: Criar script de atualização
         run: |
-          node <<'EOF'
-          const fs = require('fs');
-          const path = require('path');
+          echo "const fs = require('fs');" > atualizar-analytics.js
+          echo "const path = require('path');" >> atualizar-analytics.js
+          echo "const diretorioArtigos = path.join(process.cwd(), 'artigos');" >> atualizar-analytics.js
+          echo "const analyticsTag = \`" >> atualizar-analytics.js
+          echo "<!-- Google tag (gtag.js) -->" >> atualizar-analytics.js
+          echo "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE\"></script>" >> atualizar-analytics.js
+          echo "<script>" >> atualizar-analytics.js
+          echo "  window.dataLayer = window.dataLayer || [];" >> atualizar-analytics.js
+          echo "  function gtag(){dataLayer.push(arguments);}" >> atualizar-analytics.js
+          echo "  gtag('js', new Date());" >> atualizar-analytics.js
+          echo "  gtag('config', 'G-T15623VZYE');" >> atualizar-analytics.js
+          echo "</script>" >> atualizar-analytics.js
+          echo "\`;" >> atualizar-analytics.js
+          echo "fs.readdirSync(diretorioArtigos).forEach(file => {" >> atualizar-analytics.js
+          echo "  const filePath = path.join(diretorioArtigos, file);" >> atualizar-analytics.js
+          echo "  if (file.endsWith('.html')) {" >> atualizar-analytics.js
+          echo "    let content = fs.readFileSync(filePath, 'utf8');" >> atualizar-analytics.js
+          echo "    if (!content.includes('gtag/js?id=G-T15623VZYE')) {" >> atualizar-analytics.js
+          echo "      console.log(\`Atualizando: \${file}\`);" >> atualizar-analytics.js
+          echo "      content = content.replace(/(<meta name=\"description\"[^>]*>)/i, \`$1\n\${analyticsTag}\`);" >> atualizar-analytics.js
+          echo "      fs.writeFileSync(filePath, content, 'utf8');" >> atualizar-analytics.js
+          echo "    }" >> atualizar-analytics.js
+          echo "  }" >> atualizar-analytics.js
+          echo "});" >> atualizar-analytics.js
+          echo "console.log('✅ Atualização concluída!');" >> atualizar-analytics.js
 
-          const diretorioArtigos = path.join(process.cwd(), 'artigos');
-          const analyticsTag = `
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-T15623VZYE');
-</script>
-`;
-
-          fs.readdirSync(diretorioArtigos).forEach(file => {
-            const filePath = path.join(diretorioArtigos, file);
-
-            if (file.endsWith('.html')) {
-              let content = fs.readFileSync(filePath, 'utf8');
-
-              if (!content.includes('gtag/js?id=G-T15623VZYE')) {
-                console.log(`Atualizando: ${file}`);
-
-                content = content.replace(
-                  /(<meta name="description"[^>]*>)/i,
-                  `$1\n${analyticsTag}`
-                );
-
-                fs.writeFileSync(filePath, content, 'utf8');
-              }
-            }
-          });
-
-          console.log('✅ Atualização concluída!');
-          EOF
+      - name: Executar script de atualização
+        run: node atualizar-analytics.js
 
       - name: Commitar mudanças
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "github-actions"
-          git add artigos/*.html
+          git add artigos/*.html || echo "Nenhum artigo alterado"
           git commit -m "Atualizar Google Analytics nos artigos" || echo "Nada para commitar"
           git push
