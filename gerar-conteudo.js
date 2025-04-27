@@ -233,11 +233,14 @@ function gerarIndicesPaginados(titulos) {
       return `<li><a href="artigos/${slug}.html">${t.titulo}</a> <span style="color:#777;">(${data})</span></li>`;
     }).join("\n");
 
-    const paginacao = paginas > 1 ? '<div style="text-align:center;">' +
-      Array.from({ length: paginas }).map((_, idx) => {
-        const pageName = idx === 0 ? "index.html" : `index${idx + 1}.html`;
-        return `<a href="${pageName}" style="margin:0 8px;">Página ${idx + 1}</a>`;
-      }).join("") + '</div>' : '';
+    const paginacao = paginas > 1 ? `
+<div style="display:flex; overflow-x:auto; gap: 12px; padding: 8px; margin-top: 2rem; justify-content: center;">
+  ${Array.from({ length: paginas }).map((_, idx) => {
+    const pageName = idx === 0 ? "index.html" : `index${idx + 1}.html`;
+    return `<a href="${pageName}" style="flex-shrink:0; white-space:nowrap; font-weight:bold; color:#0a66c2;">Página ${idx + 1}</a>`;
+  }).join("")}
+</div>
+` : '';
 
     const html = `<!DOCTYPE html>
 <html lang="pt-BR">
@@ -266,16 +269,12 @@ a:hover { text-decoration: underline; }
 <main>
 <section>
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
-<h2>Sobre Mim</h2>
-<p>Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna.</p>
-<h3>Contato</h3>
-<p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
-</div>
 <h2>📚 Artigos</h2>
 <ul>
 ${links}
 </ul>
 ${paginacao}
+</div>
 </section>
 </main>
 <footer>
