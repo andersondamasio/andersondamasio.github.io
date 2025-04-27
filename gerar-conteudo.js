@@ -101,7 +101,18 @@ async function gerar() {
 }
 
 
-    const prompt = `Resumo da notícia: ${noticia.titulo}. Com base nesta novidade real, escreva um artigo técnico e original com conteúdo e título em português, explicando como essa tendência se conecta a práticas modernas de arquitetura de software.`;
+   const prompt = `
+Resumo da notícia: ${noticia.titulo}.
+
+Com base nesta novidade real, escreva um artigo técnico e original em português que:
+
+- Explique a relevância para práticas modernas de arquitetura de software e desenvolvimento de sistemas.
+- Explore a aplicação prática para desenvolvedores, incluindo exemplos reais de código (em C# ou outra linguagem relacionada).
+- Traga dicas avançadas e práticas que normalmente não são facilmente encontradas na internet.
+- Utilize uma linguagem clara, didática, mas voltada para público técnico (desenvolvedores e arquitetos de software).
+- Estruture o artigo com seções claras: introdução, exemplo de código, explicação técnica e conclusão.
+- Crie um título atraente e descritivo.
+`;
 
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
