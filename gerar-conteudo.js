@@ -112,7 +112,7 @@ Seu trabalho é:
 
 2. Em seguida, abaixo do título, escreva um artigo técnico totalmente em português que:
    - Explique a relevância para práticas modernas de arquitetura de software e desenvolvimento de sistemas.
-   - Traga exemplos práticos de aplicação, preferencialmente com trechos de código (em C# ou outra linguagem relacionada).
+   - Traga exemplos práticos de aplicação, preferencialmente com trechos de código (em C# ou outra linguagem relacionada, quando possível também trazer apis disponíveis que podem ajudar no desenvolvimento).
    - Ofereça dicas avançadas que normalmente não são facilmente encontradas em artigos comuns.
    - Use linguagem clara, didática e estruturada com: introdução, exemplo de código, explicação técnica e conclusão.
 
