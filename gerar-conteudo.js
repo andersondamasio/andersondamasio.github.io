@@ -271,7 +271,7 @@ a:hover { text-decoration: underline; }
 <h3>Contato</h3>
 <p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
 </div>
-<h2>📚 Artigos Publicados</h2>
+<h2>📚 Artigos</h2>
 <ul>
 ${links}
 </ul>
