@@ -24,14 +24,14 @@ glob("artigos/**/*.html", { ignore: ["node_modules/**", ".git/**"] }, (err, file
     let content = fs.readFileSync(file, "utf8");
     let originalContent = content;
 
-    // Inserir o HEAD_SCRIPT antes de </head>
+    // Inserir o HEAD_SCRIPT antes de </head> usando regex tolerante
     if (!content.includes("amp-auto-ads-0.1.js")) {
-      content = content.replace("</head>", `${HEAD_SCRIPT}\n</head>`);
+      content = content.replace(/<\/head>/i, `${HEAD_SCRIPT}\n</head>`);
     }
 
-    // Inserir o BODY_SCRIPT logo após <body>
+    // Inserir o BODY_SCRIPT logo depois da primeira ocorrência de <body>
     if (!content.includes("<amp-auto-ads")) {
-      content = content.replace("<body>", `<body>\n${BODY_SCRIPT}`);
+      content = content.replace(/<body[^>]*>/i, match => `${match}\n${BODY_SCRIPT}`);
     }
 
     if (content !== originalContent) {
