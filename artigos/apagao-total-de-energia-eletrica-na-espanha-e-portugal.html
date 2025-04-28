@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Apagão total de energia elétrica na Espanha e Portugal | Anderson Damasio</title>
+<meta name="description" content="Os apagões de energia são eventos extremamente disruptivos que podem causar sérios impactos em sistemas críticos, como o fornecimento de eletricidade. Recenteme">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Apagão total de energia elétrica na Espanha e Portugal</h1>
+<p class="article-meta">Publicado em: 28/04/2025 11:20</p>
+<div class="article-body">Os apagões de energia são eventos extremamente disruptivos que podem causar sérios impactos em sistemas críticos, como o fornecimento de eletricidade. Recentemente, a Espanha e Portugal foram atingidos por um apagão total de energia elétrica, o que evidencia a importância de arquiteturas de software e sistemas de desenvolvimento resilientes a falhas.<br><br>Para práticas modernas de arquitetura de software, é fundamental considerar a possibilidade de falhas em componentes externos, como fornecimento de energia, e garantir que o sistema seja capaz de se recuperar de forma rápida e eficiente. Uma abordagem comum para lidar com esse tipo de situação é o uso de redundância e failover, garantindo que, mesmo em casos de falha, o sistema possa continuar operando de forma estável.<br><br>Um exemplo prático de aplicação seria a implementação de um sistema de backup de energia para garantir que, mesmo em casos de apagão, os dados críticos não sejam perdidos. Utilizando linguagens como C# e frameworks como .NET, é possível desenvolver soluções robustas e confiáveis que podem lidar com situações de falha de forma elegante.<br><br><pre><code class="language-csharp">using System;<br><br>public class Program<br>{<br>    public static void Main()<br>    {<br>        try<br>        {<br>            // Código principal do sistema<br>            <br>            // Verifica se há falha de energia<br>            if (FalhaDeEnergia())<br>            {<br>                // Aciona o sistema de backup<br>                SistemaBackup();<br>            }<br>        }<br>        catch (Exception ex)<br>        {<br>            Console.WriteLine("Ocorreu um erro: " + ex.Message);<br>        }<br>    }<br>    <br>    private static bool FalhaDeEnergia()<br>    {<br>        // Verifica se houve uma falha de energia<br>        return true;<br>    }<br>    <br>    private static void SistemaBackup()<br>    {<br>        // Implementação do sistema de backup de energia<br>        Console.WriteLine("Acionando sistema de backup de energia...");<br>    }<br>}<br></code></pre><br><br>Além disso, é importante considerar a utilização de APIs e serviços de monitoramento de energia que possam fornecer informações em tempo real sobre o status do fornecimento de energia. Isso pode auxiliar no desenvolvimento de sistemas que sejam capazes de se adaptar rapidamente a situações de falha, minimizando os impactos para os usuários finais.<br><br>Em resumo, diante de eventos como o apagão total de energia elétrica na Espanha e Portugal, é essencial que arquitetos de software e desenvolvedores estejam preparados para lidar com situações de falha de forma eficiente, garantindo a disponibilidade e confiabilidade dos sistemas em qualquer cenário adverso.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
