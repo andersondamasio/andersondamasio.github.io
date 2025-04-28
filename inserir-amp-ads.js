@@ -1,5 +1,5 @@
 const fs = require('fs');
-const glob = require('glob');
+const { glob } = require('glob');
 
 const HEAD_SCRIPT = `
 <script async custom-element="amp-auto-ads"
