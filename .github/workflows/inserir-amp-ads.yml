@@ -1,12 +1,12 @@
-name: Inserir AMP Ads
+name: Inserir AMP Ads SuperLog
 
 on:
   workflow_dispatch:
-  schedule:
+ schedule:
    - cron: '0 */2 * * *'
-
+   
 jobs:
-  inserir-amp-ads:
+  inserir-amp-ads-superlog:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,5 +29,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Inserido código de AMP Ads nos artigos" || echo "Nenhuma mudança"
+          git commit -m "Inserido AMP Ads com super log" || echo "Nenhuma mudança"
           git push
