@@ -11,9 +11,16 @@ const BODY_SCRIPT = `
     data-ad-client="ca-pub-1824544776589069">
 </amp-auto-ads>`;
 
+let modifiedFiles = [];
+
 glob("artigos/**/*.html", { ignore: ["node_modules/**", ".git/**"] }, (err, files) => {
   if (err) {
     console.error(err);
+    process.exit(1);
+  }
+
+  if (files.length === 0) {
+    console.error("Nenhum arquivo HTML encontrado dentro de /artigos.");
     process.exit(1);
   }
 
@@ -30,8 +37,16 @@ glob("artigos/**/*.html", { ignore: ["node_modules/**", ".git/**"] }, (err, file
     }
 
     if (content !== originalContent) {
-      console.log(`Atualizando ${file}`);
+      console.log(`Arquivo modificado: ${file}`);
       fs.writeFileSync(file, content, "utf8");
+      modifiedFiles.push(file);
     }
   });
+
+  if (modifiedFiles.length === 0) {
+    console.error("Nenhum arquivo foi modificado. Verifique se os códigos já não existem ou ajuste o script.");
+    process.exit(1);
+  } else {
+    console.log(`Total de arquivos modificados: ${modifiedFiles.length}`);
+  }
 });
