@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Subversão Digital: Táticas da Stasi na Era Moderna (2021) | Anderson Damasio</title>
+<meta name="description" content="A subversão digital é um conceito que remonta às táticas utilizadas pela Stasi na Alemanha Oriental, conhecidas como Zersetzung. Essas estratégias eram empregad">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Subversão Digital: Táticas da Stasi na Era Moderna (2021)</h1>
+<p class="article-meta">Publicado em: 28/04/2025 03:32</p>
+<div class="article-body">A subversão digital é um conceito que remonta às táticas utilizadas pela Stasi na Alemanha Oriental, conhecidas como Zersetzung. Essas estratégias eram empregadas para desestabilizar opositores e dissidentes, minando sua credibilidade e prejudicando seu trabalho.<br><br>No contexto moderno da arquitetura de software e desenvolvimento de sistemas, a subversão digital pode ser aplicada de diversas formas. Por exemplo, um atacante mal-intencionado pode utilizar técnicas de engenharia social para manipular usuários e obter acesso não autorizado a sistemas críticos.<br><br>Para mitigar os riscos associados à subversão digital, é fundamental implementar práticas de segurança robustas em todas as camadas de um sistema. Isso inclui a utilização de criptografia forte, autenticação multifator e monitoramento contínuo de atividades suspeitas.<br><br>Um exemplo prático de aplicação dessas medidas de segurança pode ser visto no seguinte trecho de código em C#:<br><br><pre><code class="language-csharp">using System;<br><br>public class Program<br>{<br>    public static void Main()<br>    {<br>        string senha = "minhaSenha123";<br>        <br>        // Aplicando criptografia à senha<br>        byte[] senhaCriptografada = CriptografarSenha(senha);<br>        <br>        Console.WriteLine("Senha criptografada: " + Convert.ToBase64String(senhaCriptografada));<br>    }<br>    <br>    public static byte[] CriptografarSenha(string senha)<br>    {<br>        byte[] senhaBytes = System.Text.Encoding.UTF8.GetBytes(senha);<br>        return System.Security.Cryptography.SHA256.Create().ComputeHash(senhaBytes);<br>    }<br>}<br></code></pre><br><br>Neste exemplo, a função `CriptografarSenha` utiliza o algoritmo de hash SHA256 para criptografar a senha do usuário antes de armazená-la no sistema. Isso ajuda a proteger as informações sensíveis contra ataques de subversão digital.<br><br>Além disso, é importante estar atento a possíveis vulnerabilidades em bibliotecas e frameworks utilizados no desenvolvimento de software. Manter essas dependências atualizadas e realizar testes de segurança regulares são práticas essenciais para evitar brechas que possam ser exploradas por agentes maliciosos.<br><br>Em conclusão, a subversão digital representa uma ameaça significativa para a segurança da informação na era moderna. Ao adotar medidas proativas e implementar práticas de segurança robustas, é possível mitigar os riscos associados a essas táticas, protegendo assim os sistemas e dados sensíveis contra potenciais ataques.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
