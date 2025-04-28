@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Otimização Consciente de Inferência para Melhor Seleção de Amostragem em Grandes Modelos de Linguagem | Anderson Damasio</title>
+<meta name="description" content="---">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Otimização Consciente de Inferência para Melhor Seleção de Amostragem em Grandes Modelos de Linguagem</h1>
+<p class="article-meta">Publicado em: 28/04/2025 04:42</p>
+<div class="article-body">---<br><br>Nos últimos anos, os grandes modelos de linguagem têm se mostrado extremamente eficazes em uma diversidade de tarefas, como tradução automática, sumarização de texto, geração de texto, entre outros. No entanto, o processo de fine-tuning desses modelos para atingir o melhor desempenho possível pode ser desafiador, especialmente quando se trata de seleção de amostragem.<br><br>A técnica de "Inference-Aware Fine-Tuning for Best-of-N Sampling" visa otimizar esse processo, levando em consideração não apenas o desempenho do modelo, mas também a eficiência computacional. Isso significa que, ao realizar o fine-tuning, é importante considerar não apenas a precisão da inferência, mas também o custo computacional envolvido em cada etapa do processo.<br><br>Para aplicar essa técnica na prática, é fundamental ter um bom entendimento do funcionamento do modelo de linguagem em questão e das métricas de avaliação relevantes para a tarefa em mãos. Além disso, é importante utilizar bibliotecas e frameworks de machine learning que ofereçam suporte a esse tipo de otimização.<br><br>Abaixo, um exemplo simplificado de como essa técnica pode ser implementada em um modelo de linguagem utilizando a biblioteca TensorFlow em Python:<br><br><pre><code>import tensorflow as tf<br><br># Carregar o modelo de linguagem pré-treinado<br>modelo = tf.keras.applications.BERT()<br><br># Definir a função de perda e otimizador<br>loss_fn = tf.keras.losses.SparseCategoricalCrossentropy()<br>optimizer = tf.keras.optimizers.Adam()<br><br># Fine-tuning do modelo com inferência-aware<br>for batch in dataset:<br>    with tf.GradientTape() as tape:<br>        logits = modelo(batch['input'])<br>        loss = loss_fn(batch['target'], logits)<br>    <br>    gradients = tape.gradient(loss, modelo.trainable_variables)<br>    optimizer.apply_gradients(zip(gradients, modelo.trainable_variables))<br></code></pre><br><br>Neste exemplo, estamos fine-tuning um modelo de linguagem utilizando a técnica de "Inference-Aware Fine-Tuning for Best-of-N Sampling", levando em consideração tanto a precisão da inferência quanto a eficiência computacional.<br><br>Em resumo, a otimização consciente de inferência é essencial para alcançar o melhor desempenho possível em grandes modelos de linguagem, garantindo que o processo de fine-tuning seja não apenas preciso, mas também eficiente. Ao aplicar essa técnica de forma adequada, é possível obter resultados superiores em uma variedade de tarefas de processamento de linguagem natural.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
