@@ -2,9 +2,7 @@ name: Inserir AMP Ads SuperLog
 
 on:
   workflow_dispatch:
- schedule:
-   - cron: '0 */2 * * *'
-   
+
 jobs:
   inserir-amp-ads-superlog:
     runs-on: ubuntu-latest
