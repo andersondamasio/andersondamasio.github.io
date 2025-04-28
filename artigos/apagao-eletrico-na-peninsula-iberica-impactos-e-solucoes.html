@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Apagão elétrico na Península Ibérica: Impactos e Soluções | Anderson Damasio</title>
+<meta name="description" content="Na era moderna da tecnologia, onde a dependência de energia elétrica é fundamental para o funcionamento de sistemas e aplicativos, os relatos de cortes de energ">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Apagão elétrico na Península Ibérica: Impactos e Soluções</h1>
+<p class="article-meta">Publicado em: 28/04/2025 13:21</p>
+<div class="article-body">Na era moderna da tecnologia, onde a dependência de energia elétrica é fundamental para o funcionamento de sistemas e aplicativos, os relatos de cortes de energia generalizados na Espanha e Portugal são motivo de preocupação. Além dos transtornos causados aos cidadãos e empresas locais, a notícia destaca a importância de práticas modernas de arquitetura de software e desenvolvimento de sistemas para lidar com situações de falta de energia.<br><br>Para garantir a resiliência de sistemas em casos de cortes de energia, é crucial implementar estratégias de contingência e recuperação. Uma abordagem comum é o uso de sistemas de energia alternativa, como baterias ou geradores, para manter a operação contínua de servidores e equipamentos críticos. Além disso, a utilização de balanceamento de carga e redundância de servidores em diferentes locais geográficos pode minimizar os impactos de cortes de energia em um local específico.<br><br><pre><code class="language-csharp">using System;<br><br>public class Program<br>{<br>    public static void Main()<br>    {<br>        try<br>        {<br>            // Verificar a disponibilidade de energia antes de executar operações críticas<br>            VerificarEnergiaDisponivel();<br>            <br>            // Executar operações críticas do sistema<br>            ExecutarOperacoesCriticas();<br>        }<br>        catch (Exception ex)<br>        {<br>            Console.WriteLine("Erro: " + ex.Message);<br>        }<br>    }<br>    <br>    public static void VerificarEnergiaDisponivel()<br>    {<br>        // Verificar se há energia disponível para operações críticas<br>        if (Energia.EstaDisponivel())<br>        {<br>            Console.WriteLine("Energia disponível. Executando operações.");<br>        }<br>        else<br>        {<br>            Console.WriteLine("Sem energia disponível. Acionando plano de contingência.");<br>            // Acionar plano de contingência<br>        }<br>    }<br>    <br>    public static void ExecutarOperacoesCriticas()<br>    {<br>        // Lógica para executar operações críticas do sistema<br>    }<br>}<br><br>public class Energia<br>{<br>    public static bool EstaDisponivel()<br>    {<br>        // Verificar se há energia disponível<br>        return true;<br>    }<br>}<br></code></pre><br><br>Além disso, a integração de APIs de monitoramento de energia em tempo real pode fornecer informações valiosas sobre o status da rede elétrica, permitindo uma resposta rápida e eficaz em casos de cortes de energia. APIs como a OpenWeatherMap API, que fornece dados meteorológicos em tempo real, podem auxiliar no planejamento de contingência com base nas condições climáticas que podem afetar a distribuição de energia.<br><br>Em suma, a notícia dos cortes de energia na Espanha e Portugal destaca a importância de adotar práticas avançadas de arquitetura de software e desenvolvimento de sistemas para garantir a disponibilidade e continuidade de operações em situações adversas. A implementação de estratégias de contingência, a utilização de energia alternativa e a integração de APIs de monitoramento são essenciais para mitigar os impactos de cortes de energia e manter a operação eficiente de sistemas críticos.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
