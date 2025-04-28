@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Reimaginando a Transição do Rust | Anderson Damasio</title>
+<meta name="description" content="A transição do Rust para outras linguagens de programação tem se tornado um tema relevante no mundo da tecnologia. Com a crescente demanda por flexibilidade e e">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Reimaginando a Transição do Rust</h1>
+<p class="article-meta">Publicado em: 28/04/2025 17:19</p>
+<div class="article-body">A transição do Rust para outras linguagens de programação tem se tornado um tema relevante no mundo da tecnologia. Com a crescente demanda por flexibilidade e eficiência, muitas empresas estão considerando migrar seus projetos para outras linguagens que melhor se adequem às suas necessidades.<br><br>Essa mudança pode trazer benefícios significativos para as práticas modernas de arquitetura de software e desenvolvimento de sistemas. Ao optar por linguagens mais estabelecidas e amplamente utilizadas, as equipes de desenvolvimento podem se beneficiar de uma maior disponibilidade de recursos, bibliotecas e suporte da comunidade.<br><br>Um exemplo prático dessa migração pode ser visto na transição de um projeto de Rust para C#. Ao migrar um trecho de código que faz uso de structs em Rust para classes em C#, podemos observar como a sintaxe e a abordagem de programação diferem entre as duas linguagens:<br><br><pre><code>struct Point {<br>    x: i32,<br>    y: i32,<br>}<br><br>impl Point {<br>    fn new(x: i32, y: i32) -> Point {<br>        Point { x, y }<br>    }<br><br>    fn display(&self) {<br>        println!("({}, {})", self.x, self.y);<br>    }<br>}<br></code></pre><br><br><pre><code class="language-csharp">public class Point<br>{<br>    public int X { get; set; }<br>    public int Y { get; set; }<br><br>    public Point(int x, int y)<br>    {<br>        X = x;<br>        Y = y;<br>    }<br><br>    public void Display()<br>    {<br>        Console.WriteLine($"({X}, {Y})");<br>    }<br>}<br></code></pre><br><br>Além disso, ao realizar essa transição, é importante considerar a utilização de APIs disponíveis que possam facilitar o processo de desenvolvimento. Por exemplo, ao migrar um projeto web de Rust para C#, é possível explorar o uso do framework ASP.NET Core, que oferece uma série de recursos e ferramentas para o desenvolvimento de aplicações web modernas.<br><br>Para tornar essa transição ainda mais suave, é recomendado realizar testes extensivos e revisões de código para garantir que todas as funcionalidades do projeto sejam preservadas. Além disso, é essencial envolver toda a equipe no processo de migração, garantindo que todos estejam alinhados e preparados para as mudanças.<br><br>Em conclusão, a transição do Rust para outras linguagens pode ser um desafio, mas também uma oportunidade para melhorar a eficiência e a escalabilidade dos projetos de desenvolvimento de software. Ao adotar uma abordagem cuidadosa e estruturada, as equipes de desenvolvimento podem colher os benefícios de uma linguagem mais adequada às suas necessidades e objetivos.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
