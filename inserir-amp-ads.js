@@ -9,7 +9,7 @@ data-ad-client="ca-pub-1824544776589069"></amp-auto-ads>`;
 
 let modifiedFiles = [];
 
-glob("artigos/**/*.html", { ignore: ["node_modules/**", ".git/**"] }, (err, files) => {
+glob("./artigos/**/*.html", { ignore: ["node_modules/**", ".git/**"] }, (err, files) => {
   if (err) {
     console.error("Erro ao buscar arquivos:", err);
     process.exit(1);
