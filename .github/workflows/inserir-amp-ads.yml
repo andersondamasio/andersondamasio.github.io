@@ -1,0 +1,31 @@
+name: Inserir AMP Ads
+
+on:
+  workflow_dispatch:
+
+jobs:
+  inserir-amp-ads:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependências
+        run: npm install glob
+
+      - name: Inserir AMP Ads nos artigos
+        run: node inserir-amp-ads.js
+
+      - name: Commitar alterações
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Inserido código de AMP Ads nos artigos" || echo "Nenhuma mudança"
+          git push
