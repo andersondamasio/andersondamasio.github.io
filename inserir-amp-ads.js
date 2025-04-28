@@ -1,15 +1,11 @@
 const fs = require('fs');
 const { glob } = require('glob');
 
-const HEAD_SCRIPT = `
-<script async custom-element="amp-auto-ads"
-    src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>`;
+const HEAD_SCRIPT = `<script async custom-element="amp-auto-ads"
+src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>`;
 
-const BODY_SCRIPT = `
-<amp-auto-ads type="adsense"
-    data-ad-client="ca-pub-1824544776589069">
-</amp-auto-ads>`;
+const BODY_SCRIPT = `<amp-auto-ads type="adsense"
+data-ad-client="ca-pub-1824544776589069"></amp-auto-ads>`;
 
 let modifiedFiles = [];
 
@@ -28,12 +24,14 @@ glob("artigos/**/*.html", { ignore: ["node_modules/**", ".git/**"] }, (err, file
     let content = fs.readFileSync(file, "utf8");
     let originalContent = content;
 
-    if (content.includes("<head>") && !content.includes("amp-auto-ads-0.1.js")) {
-      content = content.replace("<head>", `<head>${HEAD_SCRIPT}`);
+    // Inserir o HEAD_SCRIPT antes de </head>
+    if (!content.includes("amp-auto-ads-0.1.js")) {
+      content = content.replace("</head>", `${HEAD_SCRIPT}\n</head>`);
     }
 
-    if (content.includes("<body>") && !content.includes("<amp-auto-ads")) {
-      content = content.replace("<body>", `<body>${BODY_SCRIPT}`);
+    // Inserir o BODY_SCRIPT logo após <body>
+    if (!content.includes("<amp-auto-ads")) {
+      content = content.replace("<body>", `<body>\n${BODY_SCRIPT}`);
     }
 
     if (content !== originalContent) {
