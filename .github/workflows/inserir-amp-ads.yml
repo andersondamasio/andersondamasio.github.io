@@ -13,6 +13,7 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
+          submodules: recursive
 
       - name: Listar todos os arquivos após checkout
         run: ls -R
@@ -23,7 +24,7 @@ jobs:
           node-version: '20'
 
       - name: Instalar dependências
-        run: npm install glob
+        run: npm install
 
       - name: Inserir AMP Ads nos artigos
         run: node inserir-amp-ads.js
@@ -33,5 +34,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Inserido AMP Ads com LFS habilitado" || echo "Nenhuma mudança"
+          git commit -m "Inserido AMP Ads com Node.js puro (sem glob)" || echo "Nenhuma mudança"
           git push
