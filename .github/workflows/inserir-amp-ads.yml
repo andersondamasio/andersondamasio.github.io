@@ -1,15 +1,19 @@
-name: Inserir AMP Ads SuperLog
+name: Inserir AMP Ads SuperLog V3 (com checkout completo)
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 */2 * * *'  # Executa a cada 2 horas
 
 jobs:
-  inserir-amp-ads-superlog:
+  inserir-amp-ads-superlog-v3:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clonar repositório
+      - name: Clonar repositório completo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
@@ -27,5 +31,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Inserido AMP Ads com super log" || echo "Nenhuma mudança"
+          git commit -m "Inserido AMP Ads SuperLog V3 com fetch completo" || echo "Nenhuma mudança"
           git push
