@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Clojure na Web com GraalVM: Desenvolvendo aplicações web de alto desempenho | Anderson Damasio</title>
+<meta name="description" content="Nos últimos anos, a tecnologia WebAssembly (WASM) tem se popularizado como uma forma eficiente de executar código de forma rápida e segura no navegador. Com a a">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Clojure na Web com GraalVM: Desenvolvendo aplicações web de alto desempenho</h1>
+<p class="article-meta">Publicado em: 28/04/2025 20:16</p>
+<div class="article-body">Nos últimos anos, a tecnologia WebAssembly (WASM) tem se popularizado como uma forma eficiente de executar código de forma rápida e segura no navegador. Com a ajuda do GraalVM, é possível agora executar aplicações Clojure diretamente em WASM, abrindo um novo mundo de possibilidades para desenvolvedores.<br><br>A capacidade de rodar aplicações Clojure em WASM com o GraalVM traz inúmeras vantagens para o desenvolvimento de sistemas modernos. Com essa combinação, é possível obter um desempenho excepcional, além de garantir a segurança e a portabilidade do código.<br><br>Um exemplo prático de aplicação dessa tecnologia seria a criação de um frontend web utilizando ClojureScript, compilado para WASM com o GraalVM. Essa abordagem permite que os desenvolvedores escrevam código em Clojure, uma linguagem funcional elegante e expressiva, e o executem de forma eficiente no navegador.<br><br>Vale ressaltar que, apesar de ainda ser uma tecnologia em evolução, a combinação de Clojure, WASM e GraalVM oferece um potencial enorme para o desenvolvimento de aplicações web de alta performance. Com a crescente adoção de WASM e o constante aprimoramento do GraalVM, essa tendência promete revolucionar a forma como desenvolvemos sistemas na web.<br><br>Para quem deseja se aprofundar nesse tema, recomenda-se explorar as APIs disponíveis para o desenvolvimento de aplicações WASM, bem como experimentar diferentes otimizações de código para obter o melhor desempenho possível. Além disso, é importante estar atento às atualizações e novas funcionalidades do GraalVM, que podem trazer ainda mais benefícios para o desenvolvimento de aplicações Clojure em WASM.<br><br>Em conclusão, a combinação de Clojure, WASM e GraalVM representa uma oportunidade única para os desenvolvedores que buscam criar aplicações web de alto desempenho e eficiência. Com a capacidade de executar código Clojure de forma otimizada em navegadores, essa tecnologia promete revolucionar a maneira como pensamos e desenvolvemos sistemas na web.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
