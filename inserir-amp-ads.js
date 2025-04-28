@@ -16,6 +16,8 @@ glob("./artigos/**/*.html", { ignore: ["node_modules/**", ".git/**"] }, (err, fi
   }
 
   console.log(`Arquivos encontrados: ${files.length}`);
+  console.log(files);
+
   if (files.length === 0) {
     console.error("Nenhum arquivo HTML encontrado dentro de /artigos.");
     process.exit(1);
@@ -26,7 +28,6 @@ glob("./artigos/**/*.html", { ignore: ["node_modules/**", ".git/**"] }, (err, fi
     let originalContent = content;
     let altered = false;
 
-    // Verifica e insere no <head>
     if (!content.includes("amp-auto-ads-0.1.js")) {
       if (/<\/head>/i.test(content)) {
         content = content.replace(/<\/head>/i, `${HEAD_SCRIPT}\n</head>`);
@@ -37,7 +38,6 @@ glob("./artigos/**/*.html", { ignore: ["node_modules/**", ".git/**"] }, (err, fi
       }
     }
 
-    // Verifica e insere no <body>
     if (!content.includes("<amp-auto-ads")) {
       if (/<body[^>]*>/i.test(content)) {
         content = content.replace(/<body([^>]*)>/i, `<body$1>\n${BODY_SCRIPT}`);
