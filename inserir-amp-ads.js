@@ -11,7 +11,7 @@ let modifiedFiles = [];
 
 glob("artigos/**/*.html", { ignore: ["node_modules/**", ".git/**"] }, (err, files) => {
   if (err) {
-    console.error(err);
+    console.error("Erro ao buscar arquivos:", err);
     process.exit(1);
   }
 
@@ -20,29 +20,43 @@ glob("artigos/**/*.html", { ignore: ["node_modules/**", ".git/**"] }, (err, file
     process.exit(1);
   }
 
+  console.log(`Total de arquivos HTML encontrados: ${files.length}`);
+
   files.forEach(file => {
     let content = fs.readFileSync(file, "utf8");
     let originalContent = content;
+    let altered = false;
 
-    // Inserir o HEAD_SCRIPT antes de </head> usando regex tolerante
+    // Verifica e insere no <head>
     if (!content.includes("amp-auto-ads-0.1.js")) {
-      content = content.replace(/<\/head>/i, `${HEAD_SCRIPT}\n</head>`);
+      if (/<\/head>/i.test(content)) {
+        content = content.replace(/<\/head>/i, `${HEAD_SCRIPT}\n</head>`);
+        console.log(`AMP script inserido no head de: ${file}`);
+        altered = true;
+      } else {
+        console.warn(`⚠️ Arquivo ${file} não possui </head>!`);
+      }
     }
 
-    // Inserir o BODY_SCRIPT logo depois da primeira ocorrência de <body>
+    // Verifica e insere no <body>
     if (!content.includes("<amp-auto-ads")) {
-      content = content.replace(/<body[^>]*>/i, match => `${match}\n${BODY_SCRIPT}`);
+      if (/<body[^>]*>/i.test(content)) {
+        content = content.replace(/<body([^>]*)>/i, `<body$1>\n${BODY_SCRIPT}`);
+        console.log(`AMP ads inserido no body de: ${file}`);
+        altered = true;
+      } else {
+        console.warn(`⚠️ Arquivo ${file} não possui <body>!`);
+      }
     }
 
-    if (content !== originalContent) {
-      console.log(`Arquivo modificado: ${file}`);
+    if (altered) {
       fs.writeFileSync(file, content, "utf8");
       modifiedFiles.push(file);
     }
   });
 
   if (modifiedFiles.length === 0) {
-    console.error("Nenhum arquivo foi modificado. Verifique se os códigos já não existem ou ajuste o script.");
+    console.error("Nenhum arquivo foi modificado. Talvez já esteja tudo atualizado?");
     process.exit(1);
   } else {
     console.log(`Total de arquivos modificados: ${modifiedFiles.length}`);
