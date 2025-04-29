@@ -1,0 +1,36 @@
+name: Inserir Cookie Banner
+
+on:
+  workflow_dispatch:  # permite execução manual
+  push:
+    paths:
+      - '**/*.html'
+      - 'scripts/cookies-banner.js'
+      - 'inserir-cookie-banner.js'
+
+jobs:
+  inserir-cookie-banner:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependências (se necessário)
+        run: npm install
+
+      - name: Executar script de inserção do cookie banner
+        run: node inserir-cookie-banner.js
+
+      - name: Commitar alterações (se houver)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "Inserção automática de cookie banner"
+          git push
