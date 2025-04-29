@@ -152,7 +152,7 @@ Importante:
     const resumo = corpoArtigo.split("\n").slice(0, 2).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
     const dataHoraFormatada = formatDateTime(now);
 
-    const html = `<!DOCTYPE html>
+const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
@@ -167,9 +167,12 @@ Importante:
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-T15623VZYE');
 </script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1824544776589069"
+     crossorigin="anonymous"></script>
 
 <style>
 body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
@@ -187,6 +190,7 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </style>
 </head>
 <body>
+
 <main>
 <h1>${titulo}</h1>
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
@@ -213,6 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>`;
+
 
     if (!fs.existsSync('artigos')) fs.mkdirSync('artigos');
     fs.writeFileSync(filename, html);
