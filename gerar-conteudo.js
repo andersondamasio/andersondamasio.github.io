@@ -233,7 +233,18 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
 <div class="article-body">${corpoArtigo.replace(/\n/g, "<br>")}</div>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="../sobre.html">Sobre</a> |
+    <a href="../contato.html">Contato</a> |
+    <a href="../termos.html">Termos de Uso</a> |
+    <a href="../politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
 </main>
+
 
 <!-- Aviso de Cookies -->
 <div id="cookie-banner" style="
