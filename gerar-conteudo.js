@@ -449,8 +449,13 @@ ${paginacao}
 </main>
 
 <footer>
-<a href="politica.html">Política de Privacidade</a><br/>
-&copy; 2025 Anderson Damasio – Todos os direitos reservados
+  <nav style="margin-bottom: 1rem;">
+    <a href="sobre.html">Sobre</a> |
+    <a href="contato.html">Contato</a> |
+    <a href="termos.html">Termos de Uso</a> |
+    <a href="politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
 <!-- Aviso de Cookies -->
