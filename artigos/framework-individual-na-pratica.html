@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Framework Individual na Prática | Anderson Damasio</title>
+<meta name="description" content="Nos últimos anos, a ideia de desenvolver software utilizando frameworks tem se tornado cada vez mais popular. No entanto, uma abordagem inovadora tem surgido: o">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Framework Individual na Prática</h1>
+<p class="article-meta">Publicado em: 29/04/2025 02:17</p>
+<div class="article-body">Nos últimos anos, a ideia de desenvolver software utilizando frameworks tem se tornado cada vez mais popular. No entanto, uma abordagem inovadora tem surgido: o Framework Individual. Neste artigo, vamos explorar a relevância dessa prática para arquitetura de software e desenvolvimento de sistemas modernos.<br><br>O Framework Individual propõe que um único desenvolvedor seja capaz de criar um conjunto de ferramentas e padrões personalizados para um projeto específico, ao invés de depender de um framework genérico. Isso permite uma maior flexibilidade e controle sobre o código produzido, além de possibilitar um melhor alinhamento com as necessidades do projeto.<br><br>Para exemplificar a aplicação do Framework Individual, vamos considerar um cenário em que um desenvolvedor está trabalhando em um sistema de gerenciamento de tarefas. Em vez de utilizar um framework tradicional, ele decide criar suas próprias abstrações e componentes, personalizando a solução de acordo com as características únicas do projeto.<br><br><pre><code class="language-csharp">public class TaskManager<br>{<br>    private List<Task> tasks = new List<Task>();<br><br>    public void AddTask(Task task)<br>    {<br>        tasks.Add(task);<br>    }<br><br>    public void CompleteTask(int taskId)<br>    {<br>        var task = tasks.FirstOrDefault(t => t.Id == taskId);<br>        if (task != null)<br>        {<br>            task.Complete();<br>        }<br>    }<br>}<br><br>public class Task<br>{<br>    public int Id { get; set; }<br>    public string Description { get; set; }<br>    public bool IsCompleted { get; private set; }<br><br>    public void Complete()<br>    {<br>        IsCompleted = true;<br>    }<br>}<br></code></pre><br><br>Neste exemplo simplificado, o desenvolvedor criou suas próprias classes para representar tarefas e o gerenciador de tarefas, em vez de depender de classes predefinidas por um framework. Isso demonstra como o Framework Individual pode ser aplicado de forma prática em um projeto real.<br><br>Para quem deseja adotar o Framework Individual em seus projetos, algumas dicas avançadas podem ser úteis. É importante investir tempo na análise das necessidades do projeto e na definição de abstrações e padrões que possam ser reutilizados. Além disso, a documentação clara e a manutenção cuidadosa do código são fundamentais para garantir a escalabilidade e a sustentabilidade da solução.<br><br>Em conclusão, o Framework Individual oferece uma abordagem inovadora e personalizada para o desenvolvimento de software, permitindo maior controle e flexibilidade aos desenvolvedores. Ao aplicar essa prática de forma consciente e estruturada, é possível obter soluções mais alinhadas com as necessidades específicas de cada projeto, contribuindo para a qualidade e eficiência do desenvolvimento de sistemas modernos.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
