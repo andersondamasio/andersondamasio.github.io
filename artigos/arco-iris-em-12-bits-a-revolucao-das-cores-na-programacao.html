@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Arco-Íris em 12 bits: A Revolução das Cores na Programação | Anderson Damasio</title>
+<meta name="description" content="A paleta de cores de 12 bits, também conhecida como arco-íris em 12 bits, está revolucionando a forma como as cores são utilizadas na programação e design de si">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Arco-Íris em 12 bits: A Revolução das Cores na Programação</h1>
+<p class="article-meta">Publicado em: 28/04/2025 22:23</p>
+<div class="article-body">A paleta de cores de 12 bits, também conhecida como arco-íris em 12 bits, está revolucionando a forma como as cores são utilizadas na programação e design de sistemas. Com uma gama mais ampla de cores disponíveis, os desenvolvedores agora têm a possibilidade de criar interfaces mais vibrantes e atrativas para os usuários.<br><br>Essa nova paleta de cores tem se mostrado especialmente relevante para práticas modernas de arquitetura de software, onde a experiência do usuário é um fator crucial. Com a capacidade de representar até 4.096 cores diferentes, os desenvolvedores podem criar designs mais ricos e personalizados, tornando seus aplicativos mais atraentes e intuitivos.<br><br>Um exemplo prático de aplicação da paleta de cores de 12 bits é na criação de gráficos e interfaces de usuário em jogos. Com cores mais vibrantes e detalhadas, os jogadores podem desfrutar de uma experiência visual mais imersiva e envolvente. Abaixo, segue um trecho de código em C# que demonstra como utilizar a paleta de cores de 12 bits em um jogo simples:<br><br><pre><code class="language-csharp">// Definição das cores na paleta de 12 bits<br>Color[] rainbowPalette = new Color[4096];<br><br>// Preenchimento da paleta com cores do arco-íris<br>for (int i = 0; i < 4096; i++)<br>{<br>    rainbowPalette[i] = CalculateRainbowColor(i);<br>}<br><br>// Função para calcular a cor do arco-íris com base no índice<br>Color CalculateRainbowColor(int index)<br>{<br>    // Lógica para calcular a cor com base no índice<br>    // Retorna a cor correspondente<br>}<br></code></pre><br><br>Além disso, existem APIs disponíveis que facilitam o uso da paleta de cores de 12 bits em diferentes plataformas e frameworks, como a biblioteca RainbowSharp para C#.<br><br>Para os desenvolvedores que desejam se destacar e oferecer uma experiência visual única em seus aplicativos, dominar o uso da paleta de cores de 12 bits pode ser um diferencial importante. Combinada com técnicas de design e usabilidade, essa nova abordagem para a escolha de cores pode elevar a qualidade e a atratividade dos sistemas desenvolvidos.<br><br>Em conclusão, a paleta de cores de 12 bits representa uma evolução significativa no campo da programação e design de sistemas, oferecendo aos desenvolvedores a oportunidade de explorar novas possibilidades criativas e visuais. Ao incorporar essa tecnologia em seus projetos, os profissionais podem criar interfaces mais cativantes e impactantes, proporcionando uma experiência de usuário excepcional.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
