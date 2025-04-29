@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Amazon RDS para PostgreSQL: Novidades da Versão 17.4 | Anderson Damasio</title>
+<meta name="description" content="A Amazon RDS (Relational Database Service) é um serviço de banco de dados relacional gerenciado pela Amazon Web Services (AWS) que facilita a configuração, oper">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Amazon RDS para PostgreSQL: Novidades da Versão 17.4</h1>
+<p class="article-meta">Publicado em: 29/04/2025 19:05</p>
+<div class="article-body">A Amazon RDS (Relational Database Service) é um serviço de banco de dados relacional gerenciado pela Amazon Web Services (AWS) que facilita a configuração, operação e escalabilidade de bancos de dados na nuvem. O PostgreSQL é um dos sistemas de gerenciamento de banco de dados suportados pelo Amazon RDS e a versão 17.4 traz diversas melhorias e novas funcionalidades para os usuários.<br><br>Uma das atualizações mais significativas nesta versão é a otimização de desempenho, que visa melhorar a eficiência e a velocidade das consultas realizadas no banco de dados PostgreSQL. Além disso, foram implementadas novas ferramentas de monitoramento e diagnóstico para auxiliar os desenvolvedores na identificação e resolução de problemas de desempenho de forma mais ágil.<br><br>Para ilustrar a importância dessas melhorias, vamos considerar um cenário comum de aplicação web que utiliza o Amazon RDS para PostgreSQL. Suponha que tenhamos uma aplicação de comércio eletrônico que precisa realizar consultas frequentes no banco de dados para exibir informações de produtos aos usuários. Com as melhorias de desempenho da versão 17.4, as consultas serão executadas de forma mais eficiente, resultando em uma experiência mais rápida e fluida para os clientes.<br><br>Além disso, a Amazon RDS para PostgreSQL 17.4 oferece suporte a recursos avançados de segurança, como criptografia de dados em repouso e em trânsito, garantindo a proteção das informações armazenadas no banco de dados. Esses recursos são essenciais para empresas que lidam com dados sensíveis e precisam cumprir regulamentações de segurança, como a GDPR.<br><br>Para aproveitar ao máximo as funcionalidades da Amazon RDS para PostgreSQL, os desenvolvedores podem utilizar APIs disponíveis para integração com suas aplicações. Por exemplo, a AWS SDK for .NET oferece suporte para interagir com o Amazon RDS de forma programática, permitindo automatizar tarefas de gerenciamento de banco de dados e facilitar a implementação de boas práticas de desenvolvimento.<br><br>Em resumo, a versão 17.4 do Amazon RDS para PostgreSQL traz diversas melhorias e recursos que podem beneficiar projetos de arquitetura de software e desenvolvimento de sistemas na nuvem. Ao aproveitar as novas funcionalidades e adotar boas práticas de segurança e desempenho, os desenvolvedores podem garantir uma experiência mais positiva para os usuários finais e uma maior eficiência operacional em seus projetos.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
