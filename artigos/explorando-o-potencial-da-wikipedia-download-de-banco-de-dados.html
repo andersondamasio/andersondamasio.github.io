@@ -42,5 +42,40 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <div class="article-body">**Explorando o Potencial da Wikipedia: Download de Banco de Dados**<br><br>Introdução:<br>A Wikipedia é uma fonte de informações vasta e acessível, e muitas vezes podemos nos deparar com a necessidade de acessar seu banco de dados para diferentes finalidades. Neste artigo, exploraremos como realizar o download do banco de dados da Wikipedia e como isso pode ser relevante para práticas modernas de arquitetura de software e desenvolvimento de sistemas.<br><br>Exemplo de Código:<br>Abaixo, apresentamos um exemplo simples em Python de como realizar o download do banco de dados da Wikipedia utilizando a API disponível:<br><br>```python<br>import requests<br><br>url = "https://dumps.wikimedia.org/ptwiki/latest/ptwiki-latest-pages-articles.xml.bz2"<br>response = requests.get(url)<br><br>with open("ptwiki-latest-pages-articles.xml.bz2", "wb") as file:<br>    file.write(response.content)<br>```<br><br>Explicação Técnica:<br>Realizar o download do banco de dados da Wikipedia pode ser útil para diversos fins, como análise de dados, desenvolvimento de ferramentas de busca personalizadas e muito mais. Ao ter acesso aos dados brutos da Wikipedia, podemos extrair insights valiosos e criar soluções inovadoras.<br><br>Dicas Avançadas:<br>- Utilize ferramentas de processamento de dados em larga escala, como o Apache Spark, para lidar com grandes volumes de dados da Wikipedia.<br>- Explore técnicas de NLP (Processamento de Linguagem Natural) para extrair informações relevantes dos textos da Wikipedia.<br>- Considere utilizar bancos de dados NoSQL para armazenar e consultar os dados da Wikipedia de forma eficiente.<br><br>Conclusão:<br>O download do banco de dados da Wikipedia pode abrir portas para inúmeras possibilidades no mundo da arquitetura de software e desenvolvimento de sistemas. Ao explorar e analisar esses dados, podemos impulsionar a inovação e criar soluções cada vez mais inteligentes e eficazes.</div>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica-de-privacidade.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
 </body>
 </html>

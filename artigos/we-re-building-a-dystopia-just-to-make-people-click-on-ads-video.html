@@ -42,5 +42,40 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <div class="article-body">**Título: Utilizando técnicas de personalização em sistemas para aumentar a eficácia de anúncios**<br><br>**Introdução:**<br>Com o avanço da tecnologia e a coleta massiva de dados, empresas têm utilizado cada vez mais técnicas de personalização em seus sistemas para direcionar anúncios de forma mais eficaz. No entanto, como apontado na notícia, esse uso indiscriminado pode levar à construção de uma distopia, onde a privacidade e a ética são comprometidas em prol do lucro. Neste artigo, exploraremos como desenvolvedores podem utilizar essas técnicas de forma responsável e eficaz.<br><br>**Exemplo de código:**<br>```csharp<br>public class AnuncioPersonalizado<br>{<br>    public string ExibirAnuncio(Usuario usuario)<br>    {<br>        if (usuario.Idade >= 18 && usuario.Interesses.Contains("tecnologia"))<br>        {<br>            return "Confira as últimas novidades em tecnologia!";<br>        }<br>        else<br>        {<br>            return "Veja as promoções da semana!";<br>        }<br>    }<br>}<br><br>public class Usuario<br>{<br>    public int Idade { get; set; }<br>    public List<string> Interesses { get; set; }<br>}<br>```<br><br>**Explicação técnica:**<br>No exemplo de código acima, temos uma classe `AnuncioPersonalizado` que recebe um objeto `Usuario` e exibe um anúncio personalizado com base na idade e interesses do usuário. Ao utilizar informações como idade e interesses, é possível direcionar anúncios de forma mais relevante para o usuário, aumentando a chance de cliques e conversões. No entanto, é importante respeitar a privacidade do usuário e obter seu consentimento para utilizar essas informações.<br><br>**Dicas avançadas:**<br>- Utilize algoritmos de machine learning para prever os interesses do usuário com base em seu comportamento online.<br>- Implemente um sistema de permissões granulares para que o usuário possa controlar quais informações são utilizadas para personalizar os anúncios.<br>- Monitore constantemente o desempenho dos anúncios personalizados e faça ajustes conforme necessário para melhorar a eficácia.<br><br>**Conclusão:**<br>O uso de técnicas de personalização em sistemas pode ser uma ferramenta poderosa para aumentar a eficácia de anúncios, mas é essencial utilizá-las de forma ética e responsável. Ao respeitar a privacidade do usuário e obter seu consentimento para utilizar suas informações, é possível criar uma experiência mais relevante e agradável para o usuário, ao mesmo tempo em que se alcança os objetivos de negócio da empresa. Este equilíbrio entre personalização e privacidade é fundamental para o desenvolvimento de sistemas modernos e sustentáveis.</div>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica-de-privacidade.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
 </body>
 </html>

@@ -42,5 +42,40 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <div class="article-body">Construindo um Gráfico de Conhecimento de Pessoas com Tecnologia de Grafos e LLMs: O Poder da NASA Revelado<br><br>Introdução:<br>A NASA, conhecida por suas inovações tecnológicas, está utilizando tecnologia de grafos e LLMs para criar um Gráfico de Conhecimento de Pessoas. Neste artigo, vamos explorar como essa abordagem pode ser relevante para práticas modernas de arquitetura de software e desenvolvimento de sistemas, além de fornecer exemplos práticos para desenvolvedores.<br><br>Exemplo de Código:<br>Vamos considerar um exemplo simples em C# de como podemos construir um grafo de conhecimento de pessoas usando tecnologia de grafos:<br><br>```csharp<br>// Código de exemplo para criar um grafo de conhecimento de pessoas<br>Graph<Person> knowledgeGraph = new Graph<Person>();<br><br>Person alice = new Person("Alice");<br>Person bob = new Person("Bob");<br>Person charlie = new Person("Charlie");<br><br>knowledgeGraph.AddNode(alice);<br>knowledgeGraph.AddNode(bob);<br>knowledgeGraph.AddNode(charlie);<br><br>knowledgeGraph.AddEdge(alice, bob);<br>knowledgeGraph.AddEdge(bob, charlie);<br>```<br><br>Explicação Técnica:<br>Neste exemplo, estamos criando um grafo de conhecimento de pessoas representando as relações entre Alice, Bob e Charlie. A adição de nós e arestas ao grafo permite visualizar e analisar as conexões entre essas pessoas de forma eficiente.<br><br>Dicas Avançadas:<br>- Utilize algoritmos de grafos avançados, como PageRank, para identificar as pessoas mais influentes em seu grafo de conhecimento.<br>- Considere a integração de aprendizado de máquina para enriquecer o grafo com informações adicionais sobre as pessoas.<br><br>Conclusão:<br>A utilização de tecnologia de grafos e LLMs para construir um Gráfico de Conhecimento de Pessoas pode trazer benefícios significativos para arquitetura de software e desenvolvimento de sistemas. Ao visualizar e analisar as relações entre pessoas de forma estruturada, os desenvolvedores podem obter insights valiosos para aplicações diversas. Experimente incorporar essa abordagem em seus projetos e potencialize a inteligência por trás dos dados.</div>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica-de-privacidade.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
 </body>
 </html>
