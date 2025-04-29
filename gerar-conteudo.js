@@ -151,15 +151,52 @@ Importante:
 
     const resumo = corpoArtigo.split("\n").slice(0, 2).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
     const dataHoraFormatada = formatDateTime(now);
+    const dataISO = new Date(now).toISOString();
 
 const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>${titulo} | Anderson Damasio</title>
+<title>${titulo} – Artigo Técnico por Anderson Damasio</title>
 <meta name="description" content="${resumo}">
 <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="${titulo}">
+<meta property="og:description" content="${resumo}">
+<meta property="og:url" content="https://www.andersondamasio.com.br/artigos/${slug}">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${titulo}">
+<meta name="twitter:description" content="${resumo}">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "${titulo}",
+  "description": "${resumo}",
+  "datePublished": "${dataISO}",
+  "author": {
+    "@type": "Person",
+    "name": "Anderson Damasio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anderson Damasio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/favicon.ico"
+    }
+  }
+}
+</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
@@ -198,6 +235,40 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   document.querySelectorAll('pre').forEach(pre => {
@@ -217,6 +288,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>`;
+
 
 
     if (!fs.existsSync('artigos')) fs.mkdirSync('artigos');
