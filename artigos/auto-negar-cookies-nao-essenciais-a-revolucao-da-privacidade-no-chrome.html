@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Auto-negar cookies não essenciais: a revolução da privacidade no Chrome | Anderson Damasio</title>
+<meta name="description" content="Com o crescente foco na privacidade dos usuários, a criação de uma extensão para o Chrome que automaticamente rejeita cookies não essenciais é uma grande inovaç">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Auto-negar cookies não essenciais: a revolução da privacidade no Chrome</h1>
+<p class="article-meta">Publicado em: 29/04/2025 09:38</p>
+<div class="article-body">Com o crescente foco na privacidade dos usuários, a criação de uma extensão para o Chrome que automaticamente rejeita cookies não essenciais é uma grande inovação no mundo da tecnologia. Essa ferramenta não apenas simplifica a experiência do usuário, mas também coloca a privacidade em primeiro plano.<br><br>Para arquitetos de software e desenvolvedores de sistemas, a implementação dessa extensão pode trazer benefícios significativos. Ao adotar essa abordagem, é possível garantir que apenas os cookies essenciais sejam aceitos, evitando assim problemas de privacidade e segurança.<br><br>Vamos considerar um exemplo prático de como essa extensão poderia ser implementada em uma aplicação web. <br><br>Suponha que temos um site que utiliza cookies para armazenar informações de login do usuário. Com a extensão instalada, podemos garantir que apenas esses cookies essenciais sejam aceitos, enquanto os cookies de rastreamento de terceiros sejam automaticamente rejeitados.<br><br>Aqui está um trecho de código em JavaScript que demonstra como essa lógica poderia ser implementada:<br><br><pre><code>// Verifica se o cookie é essencial<br>function isEssentialCookie(cookieName) {<br>  return essentialCookies.includes(cookieName);<br>}<br><br>// Rejeita cookies não essenciais<br>function rejectNonEssentialCookies() {<br>  const cookies = getAllCookies();<br>  cookies.forEach(cookie => {<br>    if (!isEssentialCookie(cookie.name)) {<br>      rejectCookie(cookie.name);<br>    }<br>  });<br>}<br></code></pre><br><br>Neste exemplo, a função `rejectNonEssentialCookies` percorre todos os cookies presentes na página e os rejeita se não forem considerados essenciais.<br><br>Além disso, é importante considerar a utilização de APIs disponíveis que possam facilitar o desenvolvimento dessa extensão. Por exemplo, a API de cookies do Chrome pode ser útil para manipular cookies de forma programática.<br><br>Em conclusão, a criação de uma extensão para o Chrome que auto-rejeita cookies não essenciais representa um avanço significativo na proteção da privacidade dos usuários. Ao adotar essa abordagem, os desenvolvedores podem garantir que seus sistemas sejam mais seguros e respeitem a privacidade dos usuários.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
