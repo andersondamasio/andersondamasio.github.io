@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>LibreLingo: A Nova Era do Aprendizado de Idiomas | Anderson Damasio</title>
+<meta name="description" content="LibreLingo é uma alternativa de código aberto ao popular aplicativo Duolingo, oferecendo uma abordagem mais flexível e personalizável para o aprendizado de idio">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>LibreLingo: A Nova Era do Aprendizado de Idiomas</h1>
+<p class="article-meta">Publicado em: 29/04/2025 04:18</p>
+<div class="article-body">LibreLingo é uma alternativa de código aberto ao popular aplicativo Duolingo, oferecendo uma abordagem mais flexível e personalizável para o aprendizado de idiomas. Com a crescente demanda por soluções de software livre e práticas modernas de arquitetura de software, o LibreLingo se destaca como uma opção inovadora para desenvolvedores e usuários em todo o mundo.<br><br>Em termos de arquitetura de software, o LibreLingo adota uma abordagem modular e extensível, permitindo que os desenvolvedores personalizem o sistema de acordo com suas necessidades específicas. Isso é especialmente relevante em um cenário onde a personalização e a escalabilidade são cada vez mais valorizadas.<br><br>Um exemplo prático de aplicação do LibreLingo é a integração de novos idiomas e conteúdos de forma colaborativa. Os desenvolvedores podem facilmente adicionar novos cursos e exercícios, enriquecendo a experiência de aprendizado para os usuários finais.<br><br>Veja abaixo um trecho de código exemplificando como adicionar um novo curso ao LibreLingo:<br><br><pre><code>from librelingo import Curso<br><br>novo_curso = Curso("Espanhol para Iniciantes")<br>novo_curso.adicionar_licao("Saudações", ["Hola", "Buenos días", "Adiós"])<br></code></pre><br><br>Neste exemplo, estamos criando um novo curso de espanhol para iniciantes e adicionando uma lição com saudações básicas. Essa flexibilidade e facilidade de expansão são características fundamentais do LibreLingo.<br><br>Além disso, o LibreLingo oferece uma API robusta que pode ser explorada pelos desenvolvedores para criar integrações personalizadas e inovadoras. Com endpoints bem documentados e suporte a webhooks, as possibilidades de integração são praticamente ilimitadas.<br><br>Para se aprofundar ainda mais no LibreLingo, recomendamos explorar a documentação oficial e participar da comunidade ativa de desenvolvedores. Com uma abordagem colaborativa e transparente, o LibreLingo promete revolucionar a forma como aprendemos idiomas.<br><br>Em conclusão, o LibreLingo representa não apenas uma alternativa ao Duolingo, mas uma nova era no aprendizado de idiomas com software de código aberto. Com sua arquitetura flexível, API poderosa e comunidade engajada, o LibreLingo está preparado para conquistar o mercado e transformar a maneira como interagimos com novos idiomas.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
