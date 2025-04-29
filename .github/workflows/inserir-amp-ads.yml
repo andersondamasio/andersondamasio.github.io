@@ -1,9 +1,7 @@
-name: Inserir AMP Ads Profissional
+name: Inserir Adsense
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 */2 * * *' # Executar a cada 2 horas
+  workflow_dispatch: # Executa apenas manualmente
 
 jobs:
   inserir-amp-ads-pro:
