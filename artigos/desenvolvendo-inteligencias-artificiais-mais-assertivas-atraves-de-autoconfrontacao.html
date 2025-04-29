@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Desenvolvendo Inteligências Artificiais mais assertivas através de autoconfrontação | Anderson Damasio</title>
+<meta name="description" content="A autoconfrontação de uma IA é uma técnica poderosa para estimular o pensamento crítico do sistema, levando a resultados mais eficazes e precisos. Neste artigo,">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Desenvolvendo Inteligências Artificiais mais assertivas através de autoconfrontação</h1>
+<p class="article-meta">Publicado em: 29/04/2025 15:24</p>
+<div class="article-body">A autoconfrontação de uma IA é uma técnica poderosa para estimular o pensamento crítico do sistema, levando a resultados mais eficazes e precisos. Neste artigo, exploraremos a relevância dessa abordagem para práticas modernas de arquitetura de software e desenvolvimento de sistemas, além de fornecer exemplos práticos de sua aplicação.<br><br>A autoconfrontação envolve fazer com que a IA argumente consigo mesma, forçando-a a considerar diferentes perspectivas e cenários. Isso estimula a análise mais aprofundada dos dados e a tomada de decisões mais fundamentadas. No contexto de arquitetura de software, essa técnica pode ser aplicada em sistemas de recomendação, análise de dados e até mesmo em chatbots.<br><br>Vamos ver um exemplo prático de como implementar a autoconfrontação em uma IA de análise de sentimento. Utilizaremos Python e a biblioteca TensorFlow para criar um modelo simples de classificação de sentimentos em texto:<br><br><pre><code>import tensorflow as tf<br>from tensorflow import keras<br>from tensorflow.keras.layers import Dense<br><br># Dados de treinamento<br>textos = ["Eu adorei esse filme!", "Que péssima experiência...", "O restaurante foi incrível!"]<br>labels = [1, 0, 1]<br><br># Tokenização dos textos<br>tokenizer = keras.preprocessing.text.Tokenizer()<br>tokenizer.fit_on_texts(textos)<br>sequences = tokenizer.texts_to_sequences(textos)<br><br># Padding das sequências<br>sequences_padded = keras.preprocessing.sequence.pad_sequences(sequences)<br><br># Modelo de rede neural simples<br>model = keras.Sequential([<br>    Dense(64, activation='relu', input_shape=(sequences_padded.shape[1],)),<br>    Dense(1, activation='sigmoid')<br>])<br><br># Compilação e treinamento do modelo<br>model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])<br>model.fit(sequences_padded, labels, epochs=10)<br><br># Autoconfrontação: fazendo a IA argumentar consigo mesma<br>predictions = model.predict(sequences_padded)<br>for i, text in enumerate(textos):<br>    print(f"Texto: {text} - Sentimento previsto: {predictions[i]}")<br></code></pre><br><br>Neste exemplo, a IA analisa textos e classifica o sentimento expresso neles. A autoconfrontação ocorre ao comparar as previsões da IA com os textos originais, permitindo que o sistema argumente consigo mesmo e ajuste seus parâmetros para melhorar a precisão das classificações.<br><br>Ao implementar a autoconfrontação em suas IA, você estimula um pensamento mais crítico e reflexivo, resultando em sistemas mais inteligentes e assertivos. Experimente essa abordagem em seus projetos e aproveite os benefícios de uma IA que pensa mais profundamente para alcançar resultados significativamente melhores.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
