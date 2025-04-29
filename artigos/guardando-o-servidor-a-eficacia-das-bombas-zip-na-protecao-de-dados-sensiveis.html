@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Guardando o servidor: a eficácia das bombas zip na proteção de dados sensíveis – Artigo Técnico por Anderson Damasio</title>
+<meta name="description" content="---">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Guardando o servidor: a eficácia das bombas zip na proteção de dados sensíveis">
+<meta property="og:description" content="---">
+<meta property="og:url" content="https://www.andersondamasio.com.br/artigos/guardando-o-servidor-a-eficacia-das-bombas-zip-na-protecao-de-dados-sensiveis">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Guardando o servidor: a eficácia das bombas zip na proteção de dados sensíveis">
+<meta name="twitter:description" content="---">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Guardando o servidor: a eficácia das bombas zip na proteção de dados sensíveis",
+  "description": "---",
+  "datePublished": "2025-04-29T23:10:07.937Z",
+  "author": {
+    "@type": "Person",
+    "name": "Anderson Damasio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anderson Damasio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/favicon.ico"
+    }
+  }
+}
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1824544776589069"
+     crossorigin="anonymous"></script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+
+<main>
+<h1>Guardando o servidor: a eficácia das bombas zip na proteção de dados sensíveis</h1>
+<p class="article-meta">Publicado em: 29/04/2025 20:10</p>
+<div class="article-body">---<br><br>Com o avanço da tecnologia e a crescente preocupação com a segurança de dados, a utilização de zip bombs para proteger servidores tem se tornado uma prática cada vez mais comum no mundo da arquitetura de software e desenvolvimento de sistemas. Mas afinal, o que são zip bombs e como elas podem ser aplicadas de forma eficaz?<br><br>As zip bombs são arquivos compactados que, quando descompactados, liberam uma quantidade massiva de dados, consumindo recursos do sistema e dificultando ou até mesmo impossibilitando o acesso não autorizado às informações contidas no servidor. Essa técnica se baseia na compressão extrema de arquivos, resultando em um arquivo zip aparentemente inofensivo, mas que na verdade contém uma grande quantidade de dados.<br><br>Um exemplo prático de aplicação das zip bombs é a proteção de arquivos sensíveis em um servidor. Ao utilizar uma zip bomb para compactar tais arquivos, é possível dificultar significativamente o acesso não autorizado, uma vez que a descompactação demandará uma quantidade exorbitante de recursos do sistema, tornando o processo inviável para um possível invasor.<br><br>Veja um exemplo simples de como criar e descompactar uma zip bomb em C#:<br><br><pre><code class="language-csharp">using System;<br>using System.IO;<br>using System.IO.Compression;<br><br>public class ZipBombExample<br>{<br>    public static void CreateZipBomb(string filePath)<br>    {<br>        using (FileStream fs = new FileStream(filePath, FileMode.Create))<br>        {<br>            using (ZipArchive archive = new ZipArchive(fs, ZipArchiveMode.Create))<br>            {<br>                for (int i = 0; i < 1000000; i++)<br>                {<br>                    ZipArchiveEntry entry = archive.CreateEntry($"file_{i}.txt");<br>                    using (StreamWriter writer = new StreamWriter(entry.Open()))<br>                    {<br>                        writer.WriteLine("Lorem ipsum dolor sit amet, consectetur adipiscing elit...");<br>                    }<br>                }<br>            }<br>        }<br>    }<br><br>    public static void ExtractZipBomb(string filePath)<br>    {<br>        using (ZipArchive archive = ZipFile.OpenRead(filePath))<br>        {<br>            foreach (ZipArchiveEntry entry in archive.Entries)<br>            {<br>                using (StreamReader reader = new StreamReader(entry.Open()))<br>                {<br>                    string contents = reader.ReadToEnd();<br>                    // Processar os dados conforme necessário<br>                }<br>            }<br>        }<br>    }<br>}<br></code></pre><br><br>Ao implementar adequadamente a utilização de zip bombs em seu servidor, é possível adicionar uma camada extra de segurança aos seus dados sensíveis. No entanto, é importante ressaltar que essa técnica deve ser empregada com cautela, uma vez que a descompactação de uma zip bomb consome recursos significativos e pode impactar o desempenho do sistema.<br><br>Em resumo, as zip bombs são uma ferramenta poderosa na proteção de servidores e dados sensíveis, mas é essencial compreender seu funcionamento e aplicação correta para garantir a eficácia e segurança do seu sistema. Experimente implementar essa técnica em seus projetos e fortaleça a proteção dos seus dados contra possíveis ataques cibernéticos.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
