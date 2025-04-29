@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mensagem para os Pesquisadores de Segurança | Anderson Damasio</title>
+<meta name="description" content="Com a crescente complexidade das aplicações modernas e o aumento das preocupações com segurança cibernética, é essencial que os desenvolvedores estejam sempre a">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+<main>
+<h1>Mensagem para os Pesquisadores de Segurança</h1>
+<p class="article-meta">Publicado em: 29/04/2025 06:19</p>
+<div class="article-body">Com a crescente complexidade das aplicações modernas e o aumento das preocupações com segurança cibernética, é essencial que os desenvolvedores estejam sempre atentos às melhores práticas de arquitetura de software. Neste artigo, vamos explorar a importância de considerar a segurança desde o início do processo de desenvolvimento e como isso pode impactar diretamente na robustez e na confiabilidade de um sistema.<br><br>Um dos principais aspectos a se ter em mente é a autenticação e autorização adequadas. Utilizando frameworks como o ASP.NET Core Identity, é possível implementar de forma eficiente a autenticação de usuários, gerenciamento de senhas e controle de acesso baseado em funções. Vejamos um exemplo prático de como isso pode ser feito:<br><br><pre><code class="language-csharp">services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)<br>    .AddEntityFrameworkStores<ApplicationDbContext>();<br></code></pre><br><br>Além disso, é fundamental proteger os dados sensíveis armazenados no sistema. Uma abordagem comum é a criptografia de dados, que pode ser facilmente implementada utilizando a classe `ProtectedData` do .NET Framework. Veja um exemplo simples de como criptografar e descriptografar uma string:<br><br><pre><code class="language-csharp">byte[] encryptedData = ProtectedData.Protect(Encoding.UTF8.GetBytes("Dados sensíveis"), null, DataProtectionScope.CurrentUser);<br>byte[] decryptedData = ProtectedData.Unprotect(encryptedData, null, DataProtectionScope.CurrentUser);<br>string decryptedString = Encoding.UTF8.GetString(decryptedData);<br></code></pre><br><br>Por fim, é importante realizar auditorias regulares de segurança, identificando possíveis vulnerabilidades e aplicando correções proativamente. Ferramentas como o OWASP ZAP podem auxiliar nesse processo, fornecendo relatórios detalhados sobre possíveis falhas de segurança no sistema.<br><br>Ao adotar essas práticas de segurança desde o início do desenvolvimento, os desenvolvedores podem garantir que seus sistemas sejam robustos e confiáveis, protegendo tanto os dados dos usuários quanto a reputação da empresa. A segurança cibernética não deve ser uma reflexão tardia, mas sim uma consideração fundamental em todas as etapas do processo de desenvolvimento de software.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
