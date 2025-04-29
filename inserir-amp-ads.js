@@ -19,62 +19,63 @@ function listarHtmls(dir) {
   return arquivosHtml;
 }
 
-const HEAD_SCRIPT = `<script async custom-element="amp-auto-ads"
-src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>`;
-
-const BODY_SCRIPT = `<amp-auto-ads type="adsense"
-data-ad-client="ca-pub-1824544776589069"></amp-auto-ads>`;
-
-let modifiedFiles = [];
-let headInsertions = 0;
-let bodyInsertions = 0;
+const SCRIPT_CORRETO = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1824544776589069"
+     crossorigin="anonymous"></script>`;
 
 const arquivos = listarHtmls('./artigos');
 
-console.log(`🔍 Arquivos encontrados: ${arquivos.length}`);
+let removidos = 0;
+let adicionados = 0;
+let modificados = [];
 
-if (arquivos.length === 0) {
-  console.error("🚫 Nenhum arquivo HTML encontrado dentro de /artigos.");
-  process.exit(1);
-}
+console.log(`🔍 Arquivos encontrados: ${arquivos.length}`);
 
 arquivos.forEach(file => {
   let content = fs.readFileSync(file, "utf8");
+  let original = content;
   let altered = false;
 
-  if (!content.includes("amp-auto-ads-0.1.js")) {
+  // Remove script AMP do <head>
+  content = content.replace(/<script async custom-element="amp-auto-ads"[\s\S]*?<\/script>/gi, () => {
+    removidos++;
+    altered = true;
+    return '';
+  });
+
+  // Remove tag <amp-auto-ads ...> do <body>
+  content = content.replace(/<amp-auto-ads[\s\S]*?<\/amp-auto-ads>|<amp-auto-ads[^>]*\/?>/gi, () => {
+    removidos++;
+    altered = true;
+    return '';
+  });
+
+  // Adiciona script correto se ainda não estiver presente
+  if (!content.includes("pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")) {
     if (/<\/head>/i.test(content)) {
-      content = content.replace(/<\/head>/i, `${HEAD_SCRIPT}\n</head>`);
-      headInsertions++;
+      content = content.replace(/<\/head>/i, `${SCRIPT_CORRETO}\n</head>`);
+      adicionados++;
       altered = true;
     } else {
       console.warn(`⚠️ Arquivo ${file} não possui </head>!`);
     }
   }
 
-  if (!content.includes("<amp-auto-ads")) {
-    if (/<body[^>]*>/i.test(content)) {
-      content = content.replace(/<body([^>]*)>/i, `<body$1>\n${BODY_SCRIPT}`);
-      bodyInsertions++;
-      altered = true;
-    } else {
-      console.warn(`⚠️ Arquivo ${file} não possui <body>!`);
-    }
-  }
-
-  if (altered) {
+  // Gravar alterações se necessário
+  if (altered && content !== original) {
     fs.writeFileSync(file, content, "utf8");
-    modifiedFiles.push(file);
+    modificados.push(file);
   }
 });
 
 console.log("\n===== RESUMO =====");
 console.log(`✅ Total de arquivos analisados: ${arquivos.length}`);
-console.log(`✅ Scripts AMP inseridos no <head>: ${headInsertions}`);
-console.log(`✅ Tags AMP Ads inseridas no <body>: ${bodyInsertions}`);
-console.log(`✅ Total de arquivos modificados: ${modifiedFiles.length}`);
+console.log(`🗑️ Scripts AMP removidos: ${removidos}`);
+console.log(`➕ Scripts corretos adicionados ao <head>: ${adicionados}`);
+console.log(`📝 Total de arquivos modificados: ${modificados.length}`);
 
-if (modifiedFiles.length === 0) {
-  console.log("🎯 Nenhum arquivo precisava de alteração. Tudo atualizado!");
-  process.exit(0);
+if (modificados.length > 0) {
+  console.log("📄 Arquivos alterados:");
+  modificados.forEach(f => console.log(" - " + f));
+} else {
+  console.log("🎯 Nenhum arquivo precisou de alteração. Tudo certo!");
 }
