@@ -255,12 +255,50 @@ function gerarIndicesPaginados(titulos) {
 </div>
 ` : '';
 
-    const html = `<!DOCTYPE html>
+const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Anderson Damasio – Arquiteto de Software</title>
+<title>Anderson Damasio – Arquiteto de Software | Artigos sobre Desenvolvimento e Arquitetura</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Padrão -->
+<meta name="description" content="Anderson Damasio – Arquiteto de Software com mais de 19 anos de experiência em soluções modernas e escaláveis.">
+<meta name="keywords" content="Anderson Damasio, arquiteto de software, artigos de tecnologia, desenvolvimento, sistemas escaláveis">
+<meta name="author" content="Anderson Damasio">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.andersondamasio.com.br/">
+
+<!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content="Anderson Damasio – Arquiteto de Software">
+<meta property="og:description" content="Artigos técnicos e insights sobre desenvolvimento de software moderno, arquitetura escalável e boas práticas.">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+<meta property="og:url" content="https://www.andersondamasio.com.br/">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@andersondamasio"> <!-- Altere para o seu @ se necessário -->
+<meta name="twitter:title" content="Anderson Damasio – Arquiteto de Software">
+<meta name="twitter:description" content="Mais de 19 anos de experiência em desenvolvimento de sistemas, arquitetura moderna e artigos técnicos.">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Verificação Google AdSense -->
+<meta name="google-adsense-account" content="ca-pub-1824544776589069">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-1824544776589069"
+     crossorigin="anonymous"></script>
+
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <style>
 body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
@@ -339,6 +377,7 @@ ${paginacao}
 </footer>
 </body>
 </html>`;
+
 
     const nome = i === 0 ? "index.html" : `index${i + 1}.html`;
     fs.writeFileSync(nome, html);
