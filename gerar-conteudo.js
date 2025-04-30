@@ -2,6 +2,7 @@
 const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
+const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const parser = new Parser();
 
 const siteUrl = "https://www.andersondamasio.com.br";
@@ -95,6 +96,8 @@ async function gerar() {
     let titulosGerados = fs.existsSync(titulosPath) ? JSON.parse(fs.readFileSync(titulosPath, "utf-8")) : [];
 
     const noticia = await buscarNoticia();
+    const tematica = noticia.titulo;
+    const introducaoVaria = escolherIntroducao(tematica);
 
     if (!noticia || !noticia.titulo) {
       console.log("⚠️ Nenhuma notícia válida encontrada. Abortando.");
@@ -102,10 +105,10 @@ async function gerar() {
     }
 
 const prompt = `
-Você é Anderson Damasio, um Arquiteto de Software com mais de 19 anos de experiência prática em sistemas escaláveis. 
+Você é Anderson Damasio, um Arquiteto de Software com mais de 19 anos de experiência prática em sistemas escaláveis.
 Você acaba de ler uma notícia técnica internacional sobre: "${noticia.titulo}".
 
-Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e autoral**, publicado em seu blog pessoal no Brasil. 
+Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e autoral**, publicado em seu blog pessoal no Brasil.
 
 **O que você deve produzir:**
 
@@ -115,7 +118,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Que traga um olhar técnico, provocativo ou prático, como se fosse você mesmo escrevendo.
 
 2. Em seguida, **um artigo completo**, com:
-   - Uma breve introdução editorial sua, explicando por que o tema chamou sua atenção, com um toque pessoal (ex: “Quando trabalhei com...”, “Percebo que muitos desenvolvedores erram ao...”).
+   - Uma introdução como esta: ${introducaoVaria}
    - Uma explicação técnica clara e aprofundada sobre o tema.
    - Trechos de código reais (preferencialmente em C# ou outra linguagem prática, com APIs úteis quando possível).
    - Dicas avançadas que mostrem domínio prático, indo além do básico.
@@ -316,6 +319,11 @@ document.addEventListener("DOMContentLoaded", function() {
     gerarIndicesPaginados(titulosGerados);
     gerarSitemap(titulosGerados);
 
+    const usadasPath = './dados/usadas.json';
+    const usadas = fs.existsSync(usadasPath) ? JSON.parse(fs.readFileSync(usadasPath, 'utf-8')) : {};
+    usadas[`${now.toISOString().split('T')[0]}-${slug}`] = { intro: introducaoVaria };
+    fs.writeFileSync(usadasPath, JSON.stringify(usadas, null, 2));
+    
     console.log(`✅ Artigo gerado: ${titulo}`);
   } catch (error) {
     console.error("❌ Erro:", error.message);
