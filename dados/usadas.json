@@ -99,5 +99,9 @@
   "2025-04-30-ataque-vsock-desvendando-os-segredos-do-linux-kernel": {
     "intro": "Você já parou para pensar no impacto real de Linux Kernel Exploitation: Attack of the Vsock nos sistemas modernos?",
     "data": "2025-04-30"
+  },
+  "2025-04-30-mercury-a-revolucao-dos-modelos-de-linguagem-escalaveis": {
+    "intro": "Sempre que vejo discussões sobre Mercury, the first commercial-scale diffusion language model, lembro de uma situação real em produção...",
+    "data": "2025-04-30"
   }
 }
