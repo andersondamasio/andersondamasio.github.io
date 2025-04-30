@@ -748,5 +748,10 @@
     "titulo": "Explorando as entranhas do Linux: Uma análise profunda da CVE-2025-21756",
     "noticiaOriginal": "Linux Kernel Exploitation: CVE-2025-21756",
     "data": "2025-04-30T21:16:28.393Z"
+  },
+  {
+    "titulo": "Ataque Vsock: Desvendando os Segredos do Linux Kernel",
+    "noticiaOriginal": "Linux Kernel Exploitation: Attack of the Vsock",
+    "data": "2025-04-30T22:16:42.939Z"
   }
 ]
