@@ -11,7 +11,7 @@ const artigosPorPagina = 10;
 
 const hackerNewsUrl = "https://hacker-news.firebaseio.com/v0/topstories.json";
 const devBlogsFeeds = [
-  "https://rss.app/feeds/pgPpIEPhhshd64LJ.xml/",
+  "https://rss.app/feeds/pgPpIEPhhshd64LJ.xml",
   "https://devblogs.microsoft.com/dotnet/feed/",
   "https://devblogs.microsoft.com/azure/feed/",
   "https://devblogs.microsoft.com/visualstudio/feed/",
