@@ -1,15 +1,17 @@
 const fs = require('fs');
+const path = require('path');
 
 function escolherIntroducao(tematica) {
-  const todas = JSON.parse(fs.readFileSync('introducoes.json', 'utf-8'));
-  const usadas = Object.values(JSON.parse(fs.readFileSync('usadas.json', 'utf-8')))
-    .map(x => x.intro);
+  const todas = JSON.parse(fs.readFileSync(path.join(__dirname, 'introducoes.json'), 'utf-8'));
+  const usadasPath = path.join(__dirname, 'usadas.json');
+  const usadas = fs.existsSync(usadasPath)
+    ? Object.values(JSON.parse(fs.readFileSync(usadasPath, 'utf-8')))
+        .map(x => x.intro)
+    : [];
 
   const disponiveis = todas.filter(intro => !usadas.includes(intro));
-
-  if (disponiveis.length === 0) return todas[0].replace(/__TEMATICA__/g, tematica);
-
-  const sorteada = disponiveis[Math.floor(Math.random() * disponiveis.length)];
+  const base = disponiveis.length > 0 ? disponiveis : todas;
+  const sorteada = base[Math.floor(Math.random() * base.length)];
   return sorteada.replace(/__TEMATICA__/g, tematica);
 }
 
