@@ -319,9 +319,13 @@ document.addEventListener("DOMContentLoaded", function() {
     gerarIndicesPaginados(titulosGerados);
     gerarSitemap(titulosGerados);
 
+   // Registrar introdução usada
     const usadasPath = './dados/usadas.json';
     const usadas = fs.existsSync(usadasPath) ? JSON.parse(fs.readFileSync(usadasPath, 'utf-8')) : {};
-    usadas[`${now.toISOString().split('T')[0]}-${slug}`] = { intro: introducaoVaria };
+    usadas[`${now.toISOString().split('T')[0]}-${slug}`] = {
+  intro: introducaoVaria,
+  data: now.toISOString().split('T')[0]
+};
     fs.writeFileSync(usadasPath, JSON.stringify(usadas, null, 2));
     
     console.log(`✅ Artigo gerado: ${titulo}`);
