@@ -216,6 +216,13 @@ const html = `<!DOCTYPE html>
   gtag('config', 'G-T15623VZYE');
 </script>
 
+<!-- Script principal da Ezoic (Standalone) no <head> -->
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+  window.ezstandalone = window.ezstandalone || {};
+  ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1824544776589069"
      crossorigin="anonymous"></script>
@@ -240,6 +247,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>${titulo}</h1>
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
+
+<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
+<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
+<script>
+  ezstandalone.cmd.push(function() {
+    ezstandalone.showAds(115);
+  });
+</script>
+
 <div class="article-body">${corpoArtigo.replace(/\n/g, "<br>")}</div>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
@@ -401,6 +417,13 @@ const html = `<!DOCTYPE html>
   gtag('config', 'G-T15623VZYE');
 </script>
 
+<!-- Ezoic Standalone -->
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+  window.ezstandalone = window.ezstandalone || {};
+  ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-1824544776589069"
      crossorigin="anonymous"></script>
@@ -464,6 +487,14 @@ a:hover { text-decoration: underline; }
 <h3>Contato</h3>
 <p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
 </div>
+
+<!-- Ezoic Ad Placeholder (ID 115) -->
+<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
+<script>
+  ezstandalone.cmd.push(function() {
+    ezstandalone.showAds(115);
+  });
+</script>
 
 <!-- Artigos -->
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
