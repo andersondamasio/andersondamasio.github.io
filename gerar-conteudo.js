@@ -217,6 +217,8 @@ const html = `<!DOCTYPE html>
 </script>
 
 <!-- Script principal da Ezoic (Standalone) no <head> -->
+<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
 <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
 <script>
   window.ezstandalone = window.ezstandalone || {};
@@ -418,6 +420,8 @@ const html = `<!DOCTYPE html>
 </script>
 
 <!-- Ezoic Standalone -->
+<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
 <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
 <script>
   window.ezstandalone = window.ezstandalone || {};
