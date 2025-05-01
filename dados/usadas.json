@@ -183,5 +183,9 @@
   "2025-05-01-desvendando-o-modelo-de-compensacao-da-oxide-e-ai-como-esta": {
     "intro": "Você já parou para pensar no impacto real de Oxide's compensation model: how's it going? nos sistemas modernos?",
     "data": "2025-05-01"
+  },
+  "2025-05-01-kubetail-a-revolucao-dos-logs-em-tempo-real-no-kubernetes": {
+    "intro": "Mais importante do que a notícia em si, é o impacto prático de Show HN: Kubetail – Real-time log search for Kubernetes no nosso dia a dia como devs.",
+    "data": "2025-05-01"
   }
 }
