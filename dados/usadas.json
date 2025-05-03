@@ -279,5 +279,9 @@
   "2025-05-02-reentrada-na-terra-aproximacao-do-antigo-veiculo-de-descida-sovietico-de-venus": {
     "intro": "A discussão sobre Old Soviet Venus descent craft nearing Earth reentry voltou à tona, e acredito que precisamos falar sobre isso com mais seriedade.",
     "data": "2025-05-02"
+  },
+  "2025-05-03-gitdroid-simplificando-a-gestao-de-aplicativos-android-atraves-do-github": {
+    "intro": "Existe uma armadilha técnica que muitos ignoram quando falamos de GitDroid: A third party Android app manager for apps uploaded to GitHub releases.",
+    "data": "2025-05-03"
   }
 }
