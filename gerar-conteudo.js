@@ -63,16 +63,30 @@ async function buscarNoticia() {
 }
 
 async function buscarNoticiaHackerNews() {
-  const ids = await axios.get(hackerNewsUrl).then(res => res.data.slice(0, 30));
   const lista = [];
-  for (const id of ids) {
-    const item = await axios.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(res => res.data);
-    if (item?.title && !item.deleted && !item.dead) {
-      lista.push({ titulo: item.title, url: item.url || '' });
+
+  try {
+    const ids = await axios.get(hackerNewsUrl).then(res => res.data.slice(0, 30));
+
+    for (const id of ids) {
+      try {
+        const item = await axios.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(res => res.data);
+        if (item?.title && !item.deleted && !item.dead) {
+          lista.push({ titulo: item.title, url: item.url || '' });
+        }
+      } catch (err) {
+        console.warn(`⚠️ Erro ao carregar item HackerNews ID ${id}: ${err.message}`);
+        continue;
+      }
     }
+
+  } catch (err) {
+    console.warn(`⚠️ Erro ao carregar lista de IDs do Hacker News: ${err.message}`);
   }
+
   return lista;
 }
+
 
 async function buscarNoticiaDevBlogs() {
   const lista = [];
