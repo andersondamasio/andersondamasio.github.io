@@ -1321,5 +1321,12 @@
     "url": "https://devblogs.microsoft.com/devops/spring-cleaning-cta-for-azure-devops-oauth-apps-with-expired-or-long-living-secrets/",
     "data": "2025-05-04T22:15:58.691Z",
     "dataFonte": "2025-04-23T17:16:23.000Z"
+  },
+  {
+    "titulo": "Desenvolvimento de Software: DDD, Onion Arch e CA - Filosofia x Arquitetura",
+    "noticiaOriginal": "@pokerdev7 Basicamente DDD é uma abordagem de desenvolvimento, tá mais pra um tipo de filosofia que aplica princípios. Onion Arch e CA são padrões arquiteturais, arquitetura de software mesmo. Ou seja, você pode ter DDD sendo aplicado em qualquer arquitetura que quiser utilizar na sua app.",
+    "url": "https://x.com/lucasmoraisdev/status/1915073506858909796",
+    "data": "2025-05-04T23:16:15.686Z",
+    "dataFonte": "2025-04-23T16:01:19.000Z"
   }
 ]
