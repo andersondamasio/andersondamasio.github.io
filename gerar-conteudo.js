@@ -79,16 +79,24 @@ async function buscarNoticiaHackerNews() {
 
 async function buscarNoticiaDevBlogs() {
   const lista = [];
+
   for (const feedUrl of devBlogsFeeds) {
-    const feed = await parser.parseURL(feedUrl);
-    for (const item of feed.items) {
-      if (item.title && item.link) {
-        lista.push({ titulo: item.title, url: item.link });
+    try {
+      const feed = await parser.parseURL(feedUrl);
+      for (const item of feed.items) {
+        if (item.title && item.link) {
+          lista.push({ titulo: item.title, url: item.link });
+        }
       }
+    } catch (err) {
+      console.warn(`⚠️ Erro ao carregar feed: ${feedUrl} – ${err.message}`);
+      // Continua para o próximo feed
     }
   }
+
   return lista;
 }
+
 
 async function gerar() {
   try {
