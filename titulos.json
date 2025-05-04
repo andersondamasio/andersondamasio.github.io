@@ -1223,5 +1223,12 @@
     "url": "https://devblogs.microsoft.com/visualstudio/net-aspire-and-azure-functions-integration-preview/",
     "data": "2025-05-04T17:02:01.689Z",
     "dataFonte": "2025-04-09T12:00:19.000Z"
+  },
+  {
+    "titulo": "Analisando o Uso de CPU em Múltiplos Processos no Visual Studio",
+    "noticiaOriginal": "Multi-Process CPU Usage Analysis in Visual Studio",
+    "url": "https://devblogs.microsoft.com/visualstudio/multi-process-cpu-usage-analysis-in-visual-studio/",
+    "data": "2025-05-04T17:04:23.046Z",
+    "dataFonte": "2025-04-08T16:17:16.000Z"
   }
 ]
