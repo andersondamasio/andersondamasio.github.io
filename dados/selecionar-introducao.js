@@ -12,12 +12,13 @@ function escolherIntroducao(tematica) {
   const trintaDiasAtras = new Date();
   trintaDiasAtras.setDate(trintaDiasAtras.getDate() - 30);
 
-  const usadasRecentes = Object.values(usadasRaw)
-    .filter(x => {
-      const data = x.data ? new Date(x.data) : new Date();
-      return data >= trintaDiasAtras;
-    })
-    .map(x => x.intro);
+const usadasRecentes = Object.values(usadasRaw)
+  .filter(x => {
+    const data = x.data ? new Date(x.data) : new Date(0);
+    return data > trintaDiasAtras;
+  })
+  .map(x => x.introOriginal || x.intro); // fallback para registros antigos
+
 
   const disponiveis = todas.filter(intro => !usadasRecentes.includes(intro));
   const base = disponiveis.length > 0 ? disponiveis : todas;
