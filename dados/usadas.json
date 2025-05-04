@@ -509,5 +509,10 @@
     "intro": "Você já parou para pensar no impacto real de Mimari konulara ilgisi olan yazılımcıların okuması gereken kitaplar:\n\n- Software Architecture: The Hard Parts\n- Designing Data Intensive Applications\n- Domain Driven Design Distilled nos sistemas modernos?",
     "introOriginal": "Você já parou para pensar no impacto real de __TEMATICA__ nos sistemas modernos?",
     "data": "2025-05-04"
+  },
+  "2025-05-04-repositorios-do-github-uma-paixao-ou-uma-obsessao": {
+    "intro": "Tenho visto muita gente tratando Confession:\n\nI can't stop collecting GitHub repos.\n\nHere are 7 popular GitHub repos on software architecture:\n\n(for .NET developers)\n\n1. Evolutionary architecture by example - \n\n2. Modular monolith application with DDD - \n\n3. .NET 8 como algo simples — mas a realidade é bem diferente.",
+    "introOriginal": "Tenho visto muita gente tratando __TEMATICA__ como algo simples — mas a realidade é bem diferente.",
+    "data": "2025-05-04"
   }
 }
