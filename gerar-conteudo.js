@@ -49,8 +49,8 @@ async function buscarNoticia() {
   const noticiasAntigas = titulosGerados.map(t => normalizarTexto(t.noticiaOriginal));
 
     const fontes = [
-    buscarNoticiaHackerNews, 
-    buscarNoticiaDevBlogs
+      buscarNoticiaDevBlogs,
+      buscarNoticiaHackerNews  
   ];
 
   for (const fonte of fontes) {
