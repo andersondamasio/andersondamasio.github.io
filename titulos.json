@@ -1202,5 +1202,12 @@
     "url": "https://x.com/dionisiodev/status/1919059523001594184",
     "data": "2025-05-04T16:14:46.502Z",
     "dataFonte": "2025-05-04T16:00:19.000Z"
+  },
+  {
+    "titulo": "Atualização Azure DevOps: Refrescando Tokens e Versão 5 do Terraform",
+    "noticiaOriginal": "Introducing Azure DevOps ID Token Refresh and Terraform Task Version 5",
+    "url": "https://devblogs.microsoft.com/devops/introducing-azure-devops-id-token-refresh-and-terraform-task-version-5/",
+    "data": "2025-05-04T16:20:12.572Z",
+    "dataFonte": "2025-05-02T08:16:56.000Z"
   }
 ]
