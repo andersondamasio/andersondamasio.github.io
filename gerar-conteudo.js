@@ -225,9 +225,22 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
     );
 
     const content = response.data.choices[0].message.content;
-    const titulo = (content.match(/^(.+)$/m)?.[1] || noticia.titulo).replace(/^\*\*(.+?)\*\*$/, '$1').trim();
+  const linhas = content.trim().split('\n').map(l => l.trim()).filter(Boolean);
 
-    let corpoArtigo = content.split('\n').slice(1).join('\n').trim();
+// Busca a primeira linha que não seja genérica como "Título:"
+let titulo = linhas.find(l =>
+  !/^t[ií]tulo[:：]/i.test(l) && l.length > 10
+);
+
+if (!titulo) {
+  titulo = noticia.titulo;
+} else {
+  titulo = titulo.replace(/^\*\*(.+?)\*\*$/, '$1').trim();
+}
+
+// Remove o título do corpo do artigo, mantendo o resto
+let corpoArtigo = linhas.filter(l => l !== titulo).join('\n').trim();
+
 
     corpoArtigo = corpoArtigo
       .replace(/```csharp\n([\s\S]*?)```/g, '<pre><code class="language-csharp">$1</code></pre>')
