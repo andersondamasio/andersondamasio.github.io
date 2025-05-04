@@ -74,7 +74,7 @@ async function buscarNoticia() {
     normalizarTexto(t.noticiaOriginal)
   );
 
-  const fontes = [buscarNoticiaDevBlogs, buscarNoticiaHackerNews];
+  const fontes = [buscarNoticiaDevBlogs];
   let todasNoticias = [];
 
   for (const fonte of fontes) {
