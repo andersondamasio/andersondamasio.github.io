@@ -183,7 +183,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Que traga um olhar técnico, provocativo ou prático, como se fosse você mesmo escrevendo.
 
 2. Em seguida, **um artigo completo**, com:
-   - Uma introdução como esta: ${introducaoVaria}
+   - Uma introdução como esta: ${introducaoVaria.intro}
    - Uma explicação técnica clara e aprofundada sobre o tema.
    - Trechos de código reais (preferencialmente em C# ou outra linguagem prática, com APIs úteis quando possível).
    - Dicas avançadas que mostrem domínio prático, indo além do básico.
@@ -413,7 +413,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const usadasPath = './dados/usadas.json';
     const usadas = fs.existsSync(usadasPath) ? JSON.parse(fs.readFileSync(usadasPath, 'utf-8')) : {};
     usadas[`${now.toISOString().split('T')[0]}-${slug}`] = {
-  intro: introducaoVaria,
+  intro: introducaoVaria.intro,
+  introOriginal: introducaoVaria.introOriginal,
   data: now.toISOString().split('T')[0]
 };
     fs.writeFileSync(usadasPath, JSON.stringify(usadas, null, 2));
