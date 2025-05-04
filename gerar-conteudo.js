@@ -11,10 +11,10 @@ const artigosPorPagina = 10;
 
 const hackerNewsUrl = "https://hacker-news.firebaseio.com/v0/topstories.json";
 const devBlogsFeeds = [
-  "https://rss.app/feeds/pgPpIEPhhshd64LJ.xml",
   "https://devblogs.microsoft.com/visualstudio/feed/",
   "https://devblogs.microsoft.com/devops/feed/",
-  "https://martinfowler.com/feed.atom"
+  "https://martinfowler.com/feed.atom",
+  "https://rss.app/feeds/pgPpIEPhhshd64LJ.xml"
 ];
 
 function slugify(str) {
