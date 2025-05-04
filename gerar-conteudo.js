@@ -66,25 +66,39 @@ function normalizarTexto(str) {
 
 async function buscarNoticia() {
   const titulosPath = "titulos.json";
-  const titulosGerados = fs.existsSync(titulosPath) ? JSON.parse(fs.readFileSync(titulosPath, "utf-8")) : [];
-  const noticiasAntigas = titulosGerados.map(t => normalizarTexto(t.noticiaOriginal));
+  const titulosGerados = fs.existsSync(titulosPath)
+    ? JSON.parse(fs.readFileSync(titulosPath, "utf-8"))
+    : [];
 
-    const fontes = [
-      buscarNoticiaDevBlogs,
-      buscarNoticiaHackerNews  
-  ];
+  const noticiasAntigas = titulosGerados.map(t =>
+    normalizarTexto(t.noticiaOriginal)
+  );
+
+  const fontes = [buscarNoticiaDevBlogs, buscarNoticiaHackerNews];
+  let todasNoticias = [];
 
   for (const fonte of fontes) {
-    const lista = await fonte();
-    for (const noticia of lista) {
-      const normalizada = normalizarTexto(noticia.titulo);
-      if (!noticiasAntigas.includes(normalizada)) {
-        return noticia;
-      }
+    try {
+      const lista = await fonte();
+      todasNoticias.push(...lista);
+    } catch (e) {
+      console.warn(`⚠️ Erro ao buscar notícias da fonte: ${e.message}`);
     }
   }
+
+  // Ordena pela data, da mais recente para a mais antiga
+  todasNoticias.sort((a, b) => b.data - a.data);
+
+  for (const noticia of todasNoticias) {
+    const normalizada = normalizarTexto(noticia.titulo);
+    if (!noticiasAntigas.includes(normalizada)) {
+      return noticia;
+    }
+  }
+
   return null;
 }
+
 
 async function buscarNoticiaHackerNews() {
   const lista = [];
