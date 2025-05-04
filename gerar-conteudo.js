@@ -72,11 +72,14 @@ async function buscarNoticiaHackerNews() {
       try {
         const item = await axios.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(res => res.data);
         if (item?.title && !item.deleted && !item.dead) {
-          lista.push({ titulo: item.title, url: item.url || '' });
+          lista.push({
+            titulo: item.title,
+            url: item.url || '',
+            data: item.time ? item.time * 1000 : Date.now()
+          });
         }
       } catch (err) {
         console.warn(`⚠️ Erro ao carregar item HackerNews ID ${id}: ${err.message}`);
-        continue;
       }
     }
 
@@ -84,8 +87,12 @@ async function buscarNoticiaHackerNews() {
     console.warn(`⚠️ Erro ao carregar lista de IDs do Hacker News: ${err.message}`);
   }
 
+  // Ordena também
+  lista.sort((a, b) => b.data - a.data);
+
   return lista;
 }
+
 
 
 async function buscarNoticiaDevBlogs() {
@@ -96,17 +103,24 @@ async function buscarNoticiaDevBlogs() {
       const feed = await parser.parseURL(feedUrl);
       for (const item of feed.items) {
         if (item.title && item.link) {
-          lista.push({ titulo: item.title, url: item.link });
+          lista.push({
+            titulo: item.title,
+            url: item.link,
+            data: new Date(item.pubDate || item.isoDate || Date.now()).getTime()
+          });
         }
       }
     } catch (err) {
       console.warn(`⚠️ Erro ao carregar feed: ${feedUrl} – ${err.message}`);
-      // Continua para o próximo feed
     }
   }
 
+  // Ordena da mais recente para mais antiga
+  lista.sort((a, b) => b.data - a.data);
+
   return lista;
 }
+
 
 
 async function gerar() {
