@@ -55,6 +55,7 @@ async function buscarNoticia() {
     for (const noticia of lista) {
       const normalizada = normalizarTexto(noticia.titulo);
       if (!noticiasAntigas.includes(normalizada)) {
+         console.log(`📌 Notícia selecionada da fonte: ${fonte.nome}`);
         return noticia;
       }
     }
