@@ -365,7 +365,14 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!fs.existsSync('artigos')) fs.mkdirSync('artigos');
     fs.writeFileSync(filename, html);
 
-    titulosGerados.push({ titulo, noticiaOriginal: noticia.titulo, data: now.toISOString() });
+   titulosGerados.push({
+  titulo,
+  noticiaOriginal: noticia.titulo,
+  url: noticia.url || "",
+  data: now.toISOString(),
+  dataFonte: noticia.data ? new Date(noticia.data).toISOString() : null
+});
+
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
     gerarIndicesPaginados(titulosGerados);
