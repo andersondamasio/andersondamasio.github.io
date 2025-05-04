@@ -238,8 +238,11 @@ if (!titulo) {
   titulo = titulo.replace(/^\*\*(.+?)\*\*$/, '$1').trim();
 }
 
-// Remove o título do corpo do artigo, mantendo o resto
-let corpoArtigo = linhas.filter(l => l !== titulo).join('\n').trim();
+let corpoArtigo = linhas.filter(l => {
+  const semAsteriscos = l.replace(/^\*\*(.+?)\*\*$/, '$1').trim();
+  return semAsteriscos !== titulo;
+}).join('\n').trim();
+
 
 
     corpoArtigo = corpoArtigo
