@@ -1265,5 +1265,12 @@
     "url": "https://x.com/NadeemAlam97801/status/1918948279171023245",
     "data": "2025-05-04T17:37:34.628Z",
     "dataFonte": "2025-05-04T08:38:16.000Z"
+  },
+  {
+    "titulo": "Título:",
+    "noticiaOriginal": "Where should authorization live in your software architecture? Should it be inside the domain model if you're using Domain-Driven Design (DDD)? Or should authorization always stay in the application layer?",
+    "url": "https://x.com/codeopinion/status/1917639545602072770",
+    "data": "2025-05-04T17:54:40.890Z",
+    "dataFonte": "2025-04-30T17:57:50.000Z"
   }
 ]
