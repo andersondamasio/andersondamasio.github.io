@@ -7,6 +7,7 @@ const parser = new Parser();
 
 const siteUrl = "https://www.andersondamasio.com.br";
 const apiKey = process.env.OPENAI_API_KEY;
+const twitterBearer = process.env.TWITTER_BEARER_TOKEN;
 const artigosPorPagina = 10;
 
 const hackerNewsUrl = "https://hacker-news.firebaseio.com/v0/topstories.json";
@@ -16,6 +17,29 @@ const devBlogsFeeds = [
   "https://martinfowler.com/feed.atom",
   "https://rss.app/feeds/pgPpIEPhhshd64LJ.xml"
 ];
+
+async function verificarTweetOriginalViaApi(tweetUrl) {
+  const match = tweetUrl.match(/status\/(\d+)/);
+  if (!match) return null;
+
+  const tweetId = match[1];
+  const apiUrl = `https://api.twitter.com/2/tweets/${tweetId}?tweet.fields=referenced_tweets`;
+
+  try {
+    const res = await axios.get(apiUrl, {
+      headers: { Authorization: `Bearer ${twitterBearer}` }
+    });
+
+    const referenced = res.data.data?.referenced_tweets?.find(t => t.type === 'replied_to');
+    return referenced?.id ? `https://twitter.com/i/web/status/${referenced.id}` : null;
+
+  } catch (e) {
+    console.warn(`⚠️ Erro na API do Twitter: ${e.message}`);
+    return null;
+  }
+}
+
+
 
 function slugify(str) {
   if (!str || typeof str !== "string") return "artigo";
@@ -98,28 +122,35 @@ async function buscarNoticiaHackerNews() {
 async function buscarNoticiaDevBlogs() {
   const lista = [];
 
-  for (const feedUrl of devBlogsFeeds) {
+  for (const url of devBlogsFeeds) {
     try {
-      const feed = await parser.parseURL(feedUrl);
+      const feed = await parser.parseURL(url);
       for (const item of feed.items) {
         if (item.title && item.link) {
+          let finalLink = item.link;
+          if (finalLink.includes('twitter.com/')) {
+            const linkOriginal = await verificarTweetOriginalViaApi(finalLink);
+            if (linkOriginal) {
+              console.log(`🔁 Substituindo resposta por tweet original: ${linkOriginal}`);
+              finalLink = linkOriginal;
+            }
+          }
+
           lista.push({
             titulo: item.title,
-            url: item.link,
+            url: finalLink,
             data: new Date(item.pubDate || item.isoDate || Date.now()).getTime()
           });
         }
       }
-    } catch (err) {
-      console.warn(`⚠️ Erro ao carregar feed: ${feedUrl} – ${err.message}`);
+    } catch (erro) {
+      console.error(`Erro ao buscar feed ${url}: ${erro.message}`);
     }
   }
 
-  // Ordena da mais recente para mais antiga
-  lista.sort((a, b) => b.data - a.data);
-
   return lista;
 }
+
 
 
 
