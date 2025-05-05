@@ -485,7 +485,7 @@ const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Anderson Damasio – Arquiteto de Software | Artigos sobre Desenvolvimento e Arquitetura</title>
+<title>Anderson Damasio – Arquiteto de Software e Desenvolvedor</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
