@@ -1433,5 +1433,12 @@
     "url": "https://martinfowler.com/articles/2025-caro.html",
     "data": "2025-05-05T16:23:24.521Z",
     "dataFonte": "2025-04-01T21:22:00.000Z"
+  },
+  {
+    "titulo": "Azure DevOps Services: O Futuro da Segurança nas Nuvens",
+    "noticiaOriginal": "Important Update: Server Name Indication (SNI) Now Mandatory for Azure DevOps Services",
+    "url": "https://devblogs.microsoft.com/devops/sni-mandatory-for-azdo-services/",
+    "data": "2025-05-05T17:16:09.138Z",
+    "dataFonte": "2025-04-01T19:04:32.000Z"
   }
 ]
