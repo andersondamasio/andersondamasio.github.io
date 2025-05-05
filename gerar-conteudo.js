@@ -481,6 +481,8 @@ function gerarIndicesPaginados(titulos) {
 </div>
 ` : '';
 
+ const updated_time = new Date().toISOString();
+    
 const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -501,6 +503,7 @@ const html = `<!DOCTYPE html>
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 <meta property="og:url" content="https://www.andersondamasio.com.br/">
 <meta property="og:type" content="website">
+<meta property="og:updated_time" content="${updated_time}" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
