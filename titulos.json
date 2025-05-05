@@ -1440,5 +1440,12 @@
     "url": "https://devblogs.microsoft.com/devops/sni-mandatory-for-azdo-services/",
     "data": "2025-05-05T17:16:09.138Z",
     "dataFonte": "2025-04-01T19:04:32.000Z"
+  },
+  {
+    "titulo": "Segredos Sobrepostos: Desvendando os Desafios do Azure DevOps OAuth",
+    "noticiaOriginal": "New Overlapping Secrets on Azure DevOps OAuth",
+    "url": "https://devblogs.microsoft.com/devops/new-overlapping-secrets-on-azure-devops-oauth/",
+    "data": "2025-05-05T17:41:42.667Z",
+    "dataFonte": "2025-03-26T16:19:22.000Z"
   }
 ]
