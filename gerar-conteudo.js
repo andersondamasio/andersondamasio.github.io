@@ -530,6 +530,17 @@ const html = `<!DOCTYPE html>
   ezstandalone.cmd = ezstandalone.cmd || [];
 </script>
 
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Anderson Damasio",
+  "url": "https://www.andersondamasio.com.br"
+}
+</script>
+
+
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-1824544776589069"
      crossorigin="anonymous"></script>
