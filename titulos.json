@@ -1629,5 +1629,12 @@
     "url": "https://martinfowler.com/articles/codemods-api-refactoring.html#RefactoringAnAvatarComponent",
     "data": "2025-05-06T20:19:59.778Z",
     "dataFonte": "2025-01-08T14:44:00.000Z"
+  },
+  {
+    "titulo": "Automatizando Mudanças em APIs com Codemods: O Poder do Refactoring",
+    "noticiaOriginal": "Refactoring with Codemods to Automate API Changes",
+    "url": "https://martinfowler.com/articles/codemods-api-refactoring.html",
+    "data": "2025-05-06T21:17:00.927Z",
+    "dataFonte": "2025-01-07T14:34:00.000Z"
   }
 ]
