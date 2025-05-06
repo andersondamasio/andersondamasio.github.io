@@ -1587,5 +1587,12 @@
     "url": "https://martinfowler.com/articles/function-call-LLM.html",
     "data": "2025-05-06T14:18:17.602Z",
     "dataFonte": "2025-05-06T13:02:00.000Z"
+  },
+  {
+    "titulo": "Design Patterns: A Beleza e a Armadilha na Arquitetura de Software",
+    "noticiaOriginal": "@unclebobmartin The criticism is not \"they're complicated.\" Some design patterns are ok as an abstract vocabulary. But they quickly become problematic when they are implemented literally. And they immediately become disastrous when they are treated as the atomic units of software architecture.",
+    "url": "https://x.com/xdfdev/status/1919753899986096379",
+    "data": "2025-05-06T15:24:05.387Z",
+    "dataFonte": "2025-05-06T13:59:31.000Z"
   }
 ]

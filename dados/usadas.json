@@ -724,5 +724,10 @@
     "intro": "Essa notícia me fez refletir sobre como o mercado ainda lida mal com Function calling using LLMs.",
     "introOriginal": "Essa notícia me fez refletir sobre como o mercado ainda lida mal com __TEMATICA__.",
     "data": "2025-05-06"
+  },
+  "2025-05-06-design-patterns-a-beleza-e-a-armadilha-na-arquitetura-de-software": {
+    "intro": "Existe uma armadilha técnica que muitos ignoram quando falamos de @unclebobmartin The criticism is not \"they're complicated.\" Some design patterns are ok as an abstract vocabulary. But they quickly become problematic when they are implemented literally. And they immediately become disastrous when they are treated as the atomic units of software architecture..",
+    "introOriginal": "Existe uma armadilha técnica que muitos ignoram quando falamos de __TEMATICA__.",
+    "data": "2025-05-06"
   }
 }
