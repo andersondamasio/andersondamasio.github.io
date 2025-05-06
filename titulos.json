@@ -1622,5 +1622,12 @@
     "url": "https://martinfowler.com/articles/2024-music.html",
     "data": "2025-05-06T19:12:45.993Z",
     "dataFonte": "2025-01-09T14:49:00.000Z"
+  },
+  {
+    "titulo": "Transformando seu código com maestria: explorando um codemod mais complexo",
+    "noticiaOriginal": "A more complex codemod",
+    "url": "https://martinfowler.com/articles/codemods-api-refactoring.html#RefactoringAnAvatarComponent",
+    "data": "2025-05-06T20:19:59.778Z",
+    "dataFonte": "2025-01-08T14:44:00.000Z"
   }
 ]
