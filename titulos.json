@@ -1608,5 +1608,12 @@
     "url": "https://martinfowler.com/articles/codemods-api-refactoring.html#CodemodsInOtherLanguages",
     "data": "2025-05-06T17:16:04.159Z",
     "dataFonte": "2025-01-22T15:54:00.000Z"
+  },
+  {
+    "titulo": "Desvendando os Erros Comuns dos Codemods",
+    "noticiaOriginal": "Fixing Common Pitfalls of Codemods",
+    "url": "https://martinfowler.com/articles/codemods-api-refactoring.html#FixingCommonPitfallsOfCodemods",
+    "data": "2025-05-06T18:25:22.325Z",
+    "dataFonte": "2025-01-15T14:43:00.000Z"
   }
 ]
