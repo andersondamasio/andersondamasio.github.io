@@ -729,5 +729,10 @@
     "intro": "Existe uma armadilha técnica que muitos ignoram quando falamos de @unclebobmartin The criticism is not \"they're complicated.\" Some design patterns are ok as an abstract vocabulary. But they quickly become problematic when they are implemented literally. And they immediately become disastrous when they are treated as the atomic units of software architecture..",
     "introOriginal": "Existe uma armadilha técnica que muitos ignoram quando falamos de __TEMATICA__.",
     "data": "2025-05-06"
+  },
+  "2025-05-06-design-patterns-mais-do-que-um-vocabulario-uma-filosofia-de-desenvolvimento": {
+    "intro": "O problema com Design patterns are fine as a vocabulary to talk about certain approaches abstractly. But they quickly become problematic when they are implemented literally. And they immediately become disastrous when they are treated as the atomic units of software architecture. não é novo, mas a forma como ignoramos continua evoluindo.",
+    "introOriginal": "O problema com __TEMATICA__ não é novo, mas a forma como ignoramos continua evoluindo.",
+    "data": "2025-05-06"
   }
 }
