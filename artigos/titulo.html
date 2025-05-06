@@ -4,20 +4,20 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Título: – Artigo Técnico por Anderson Damasio</title>
-<meta name="description" content="Desvendando o mistério da autorização na arquitetura de software: dentro do modelo de domínio ou na camada de aplicação?">
+<meta name="description" content="Revolução Tecnológica: Desvendando o Poder por Trás do GenAI Patterns RAG A discussão sobre GenAI Patterns: Retrieval Augmented Generation (RAG) voltou à tona,">
 <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="Título:">
-<meta property="og:description" content="Desvendando o mistério da autorização na arquitetura de software: dentro do modelo de domínio ou na camada de aplicação?">
+<meta property="og:description" content="Revolução Tecnológica: Desvendando o Poder por Trás do GenAI Patterns RAG A discussão sobre GenAI Patterns: Retrieval Augmented Generation (RAG) voltou à tona,">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/titulo.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Título:">
-<meta name="twitter:description" content="Desvendando o mistério da autorização na arquitetura de software: dentro do modelo de domínio ou na camada de aplicação?">
+<meta name="twitter:description" content="Revolução Tecnológica: Desvendando o Poder por Trás do GenAI Patterns RAG A discussão sobre GenAI Patterns: Retrieval Augmented Generation (RAG) voltou à tona,">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 
 <!-- Schema.org -->
@@ -26,8 +26,8 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Título:",
-  "description": "Desvendando o mistério da autorização na arquitetura de software: dentro do modelo de domínio ou na camada de aplicação?",
-  "datePublished": "2025-05-04T17:54:40.890Z",
+  "description": "Revolução Tecnológica: Desvendando o Poder por Trás do GenAI Patterns RAG A discussão sobre GenAI Patterns: Retrieval Augmented Generation (RAG) voltou à tona,",
+  "datePublished": "2025-05-06T08:24:36.275Z",
   "author": {
     "@type": "Person",
     "name": "Anderson Damasio"
@@ -84,7 +84,7 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 
 <main>
 <h1>Título:</h1>
-<p class="article-meta">Publicado em: 04/05/2025 14:54</p>
+<p class="article-meta">Publicado em: 06/05/2025 05:24</p>
 
 <!-- Ezoic Placeholder: incontent_5 (ID 115) -->
 <div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
@@ -94,7 +94,7 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   });
 </script>
 
-<div class="article-body">Desvendando o mistério da autorização na arquitetura de software: dentro do modelo de domínio ou na camada de aplicação?<br><br>Essa notícia me fez refletir sobre como o mercado ainda lida mal com a questão de onde a autorização deve residir em uma arquitetura de software. Muitas vezes, nos deparamos com a dúvida: a autorização deve estar dentro do modelo de domínio, especialmente se estamos utilizando o Domain-Driven Design (DDD)? Ou será que ela deve sempre permanecer na camada de aplicação?<br><br>Para responder a essas questões, é importante entender o papel da autorização em um sistema e como ela pode ser implementada de forma eficiente para garantir a segurança e a integridade dos dados.<br><br>Em termos gerais, a autorização refere-se ao controle de acesso a recursos e funcionalidades dentro de um sistema. Ela determina quem pode fazer o quê, com base em regras predefinidas. No entanto, a questão de onde essa lógica deve residir na arquitetura do software pode variar de acordo com o contexto e as necessidades específicas do projeto.<br><br>No contexto do Domain-Driven Design (DDD), a ideia principal é que a lógica de negócios e as regras do domínio devem estar contidas dentro do modelo de domínio. Isso inclui as regras de autorização que determinam quem pode executar determinadas ações dentro do sistema. Portanto, para muitos defensores do DDD, a autorização deve estar integrada ao modelo de domínio, garantindo que as regras de acesso sejam explicitamente definidas no núcleo da aplicação.<br><br>Por outro lado, há aqueles que argumentam que a autorização deve permanecer na camada de aplicação, separada do modelo de domínio. Essa abordagem permite uma maior flexibilidade e facilidade de manutenção, uma vez que as regras de autorização podem ser facilmente modificadas sem afetar diretamente o modelo de domínio. Além disso, ao manter a autorização na camada de aplicação, é possível centralizar a lógica de controle de acesso e garantir uma maior coesão e separação de responsabilidades dentro do sistema.<br><br>Na prática, a escolha entre integrar a autorização ao modelo de domínio ou mantê-la na camada de aplicação deve levar em consideração diversos fatores, como a complexidade das regras de autorização, a escalabilidade do sistema, a facilidade de manutenção e a clareza da arquitetura como um todo.<br><br>Para ilustrar essa discussão, vamos considerar um exemplo simples em C#:<br><br><pre><code class="language-csharp">public class PedidoService<br>{<br>    private readonly IAuthorizationService _authorizationService;<br><br>    public PedidoService(IAuthorizationService authorizationService)<br>    {<br>        _authorizationService = authorizationService;<br>    }<br><br>    public async Task CriarPedido(Pedido pedido)<br>    {<br>        if (await _authorizationService.AuthorizeAsync(pedido, "CriarPedidoPolicy"))<br>        {<br>            // Lógica para criar o pedido<br>        }<br>        else<br>        {<br>            throw new UnauthorizedAccessException("Usuário não autorizado a criar pedido.");<br>        }<br>    }<br>}<br></code></pre><br><br>Nesse exemplo, a autorização é feita na camada de aplicação, utilizando um serviço de autorização externo. Isso permite uma maior flexibilidade e reutilização em diferentes partes do sistema, sem comprometer a integridade do modelo de domínio.<br><br>Em conclusão, a decisão de onde a autorização deve residir na arquitetura de software é uma escolha que deve levar em consideração diversos fatores e contextos específicos de cada projeto. Tanto a integração da autorização ao modelo de domínio quanto a sua manutenção na camada de aplicação têm vantagens e desvantagens, e cabe aos arquitetos e desenvolvedores avaliar qual abordagem melhor se adequa às necessidades do sistema em questão.<br><br>E você, onde prefere colocar a lógica de autorização em suas aplicações? Compartilhe sua opinião nos comentários!</div>
+<div class="article-body">Revolução Tecnológica: Desvendando o Poder por Trás do GenAI Patterns RAG<br>A discussão sobre GenAI Patterns: Retrieval Augmented Generation (RAG) voltou à tona, e acredito que precisamos falar sobre isso com mais seriedade.<br>Recentemente, o mundo da inteligência artificial tem sido impactado pelo surgimento de uma nova abordagem revolucionária: o GenAI Patterns RAG. Esta tecnologia promete combinar a geração de texto com a recuperação de informações, abrindo portas para inúmeras aplicações inovadoras.<br>Em termos simples, o RAG funciona integrando modelos de linguagem pré-treinados com mecanismos de busca, permitindo que o sistema consulte uma grande base de conhecimento ao gerar texto. Essa combinação inteligente possibilita a produção de conteúdo mais relevante, coerente e preciso, tornando-o uma ferramenta poderosa para diversas áreas, como assistentes virtuais, geração automática de texto e muito mais.<br>Para entender melhor como o RAG funciona na prática, vamos dar uma olhada em um exemplo simples de implementação em Python:<br><pre><code>from transformers import RagTokenizer, RagRetriever, RagTokenForGeneration<br>tokenizer = RagTokenizer.from_pretrained("facebook/rag-token-base")<br>retriever = RagRetriever.from_pretrained("facebook/rag-token-base")<br>model = RagTokenForGeneration.from_pretrained("facebook/rag-token-base")<br>input_text = "Qual é a capital do Brasil?"<br>input_ids = tokenizer(input_text, return_tensors="pt")["input_ids"]<br>context = retriever(input_ids=input_ids)<br>generated = model.generate(context=input_ids, max_length=100)<br>generated_text = tokenizer.batch_decode(generated, skip_special_tokens=True)[0]<br>print(generated_text)<br></code></pre><br>Neste exemplo, utilizamos as bibliotecas Transformers do Hugging Face para implementar o RAG. Primeiramente, tokenizamos a pergunta de entrada e recuperamos o contexto relevante. Em seguida, geramos uma resposta utilizando o modelo RAG. O resultado final é um texto gerado automaticamente com base na pergunta inicial e no conhecimento recuperado.<br>Além disso, algumas dicas avançadas para otimizar o uso do RAG incluem ajustar os parâmetros de geração, como a probabilidade de amostragem e a temperatura, para controlar a criatividade e coesão do texto gerado. Experimentar diferentes modelos pré-treinados e conjuntos de dados também pode impactar significativamente a qualidade das respostas geradas.<br>Em conclusão, o GenAI Patterns RAG representa um avanço significativo no campo da geração de texto assistida por IA. Sua capacidade de combinar geração e recuperação de informações abre novas possibilidades para aplicações práticas e inovadoras. Aprofundar o conhecimento sobre essa tecnologia e explorar suas aplicações é essencial para acompanhar a evolução constante do mundo da inteligência artificial.</div>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
