@@ -734,5 +734,10 @@
     "intro": "O problema com Design patterns are fine as a vocabulary to talk about certain approaches abstractly. But they quickly become problematic when they are implemented literally. And they immediately become disastrous when they are treated as the atomic units of software architecture. não é novo, mas a forma como ignoramos continua evoluindo.",
     "introOriginal": "O problema com __TEMATICA__ não é novo, mas a forma como ignoramos continua evoluindo.",
     "data": "2025-05-06"
+  },
+  "2025-05-06-codemods-a-revolucao-da-refatoracao-de-codigo": {
+    "intro": "Longe de ser novidade, o tema da notícia me trouxe à memória um erro clássico que vejo em consultorias.",
+    "introOriginal": "Longe de ser novidade, o tema da notícia me trouxe à memória um erro clássico que vejo em consultorias.",
+    "data": "2025-05-06"
   }
 }
