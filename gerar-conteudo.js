@@ -174,8 +174,12 @@ async function gerar() {
     const titulosPath = "titulos.json";
     let titulosGerados = fs.existsSync(titulosPath) ? JSON.parse(fs.readFileSync(titulosPath, "utf-8")) : [];
 
-    const noticia = await buscarNoticia();
-
+  
+const noticia = await buscarNoticia();
+if (!noticia || !noticia.titulo) {
+  console.log("⚠️ Nenhuma notícia válida encontrada. Abortando com segurança.");
+  return; // ou process.exit(0);
+}
 
 
     const tematica = noticia.titulo;
