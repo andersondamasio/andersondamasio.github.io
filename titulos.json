@@ -1650,5 +1650,12 @@
     "url": "https://martinfowler.com/articles/designing-data-products.html#HowBigShouldDataProductsBe",
     "data": "2025-05-06T23:16:41.848Z",
     "dataFonte": "2024-12-10T14:22:00.000Z"
+  },
+  {
+    "titulo": "Construindo Data Products: A Arte da Generalização na Arquitetura de Software",
+    "noticiaOriginal": "Generalizing the design of data products",
+    "url": "https://martinfowler.com/articles/designing-data-products.html#OverlayAdditionalUseCasesAndGeneralise",
+    "data": "2025-05-07T01:25:09.864Z",
+    "dataFonte": "2024-12-04T15:36:00.000Z"
   }
 ]
