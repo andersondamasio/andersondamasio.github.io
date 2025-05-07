@@ -175,10 +175,13 @@ async function gerar() {
     let titulosGerados = fs.existsSync(titulosPath) ? JSON.parse(fs.readFileSync(titulosPath, "utf-8")) : [];
 
     const noticia = await buscarNoticia();
+
+
+
     const tematica = noticia.titulo;
     const introducaoVaria = escolherIntroducao(tematica);
 
-    if (!noticia || !noticia.titulo) {
+   if (!noticia || typeof noticia.titulo !== 'string') {
       console.log("⚠️ Nenhuma notícia válida encontrada. Abortando.");
       process.exit(0);
     }
