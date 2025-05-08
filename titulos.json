@@ -1762,5 +1762,12 @@
     "url": "https://www.ycombinator.com/companies/thunder-compute/jobs/6nKTbsu-systems-engineer",
     "data": "2025-05-08T07:17:55.986Z",
     "dataFonte": "2025-05-08T07:01:08.000Z"
+  },
+  {
+    "titulo": "Gmail vai parar de suportar 3DES para SMTP: o que isso significa para os desenvolvedores?",
+    "noticiaOriginal": "Gmail will soon stop support for the 3DES encryption cipher for incoming SMTP",
+    "url": "https://workspaceupdates.googleblog.com/2025/05/update-for-gmail-support-for-the-3des-encryption-cipher-for-incoming-smtp-connections.html",
+    "data": "2025-05-08T08:24:38.043Z",
+    "dataFonte": "2025-05-08T04:09:40.000Z"
   }
 ]

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gmail vai parar de suportar 3DES para SMTP: o que isso significa para os desenvolvedores? – Artigo Técnico por Anderson Damasio</title>
+<meta name="description" content="Mais importante do que a notícia em si, é o impacto prático de Gmail will soon stop support for the 3DES encryption cipher for incoming SMTP no nosso dia a dia">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Gmail vai parar de suportar 3DES para SMTP: o que isso significa para os desenvolvedores?">
+<meta property="og:description" content="Mais importante do que a notícia em si, é o impacto prático de Gmail will soon stop support for the 3DES encryption cipher for incoming SMTP no nosso dia a dia">
+<meta property="og:url" content="https://www.andersondamasio.com.br/artigos/gmail-vai-parar-de-suportar-3des-para-smtp-o-que-isso-significa-para-os-desenvolvedores.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gmail vai parar de suportar 3DES para SMTP: o que isso significa para os desenvolvedores?">
+<meta name="twitter:description" content="Mais importante do que a notícia em si, é o impacto prático de Gmail will soon stop support for the 3DES encryption cipher for incoming SMTP no nosso dia a dia">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Gmail vai parar de suportar 3DES para SMTP: o que isso significa para os desenvolvedores?",
+  "description": "Mais importante do que a notícia em si, é o impacto prático de Gmail will soon stop support for the 3DES encryption cipher for incoming SMTP no nosso dia a dia",
+  "datePublished": "2025-05-08T08:24:38.043Z",
+  "author": {
+    "@type": "Person",
+    "name": "Anderson Damasio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anderson Damasio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/favicon.ico"
+    }
+  }
+}
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<!-- Script principal da Ezoic (Standalone) no <head> -->
+<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+  window.ezstandalone = window.ezstandalone || {};
+  ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1824544776589069"
+     crossorigin="anonymous"></script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+
+<main>
+<h1>Gmail vai parar de suportar 3DES para SMTP: o que isso significa para os desenvolvedores?</h1>
+<p class="article-meta">Publicado em: 08/05/2025 05:24</p>
+
+<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
+<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
+<script>
+  ezstandalone.cmd.push(function() {
+    ezstandalone.showAds(115);
+  });
+</script>
+
+<div class="article-body">Mais importante do que a notícia em si, é o impacto prático de Gmail will soon stop support for the 3DES encryption cipher for incoming SMTP no nosso dia a dia como devs.<br>Para quem trabalha com desenvolvimento de software, especialmente com comunicação via email, a segurança dos dados é uma preocupação constante. A criptografia desempenha um papel fundamental nesse sentido, garantindo que as informações sensíveis não sejam interceptadas por terceiros mal-intencionados. E é por isso que a decisão do Gmail de interromper o suporte ao algoritmo de criptografia 3DES para o protocolo SMTP tem gerado discussões e levantado questionamentos sobre as práticas de segurança adotadas pelas empresas.<br>O 3DES, ou Triple Data Encryption Standard, é um algoritmo de criptografia simétrica amplamente utilizado em sistemas de segurança de rede. No entanto, devido ao avanço da tecnologia e ao surgimento de algoritmos mais seguros e eficientes, como o AES (Advanced Encryption Standard), o 3DES tem sido gradualmente substituído em diversos contextos. E a decisão do Gmail de descontinuar o suporte a esse algoritmo para o SMTP é mais um passo nessa direção.<br>Para os desenvolvedores, isso significa que será necessário revisar e, eventualmente, atualizar as configurações de segurança dos sistemas que utilizam o Gmail como provedor de email. Caso contrário, corre-se o risco de ter mensagens não entregues ou até mesmo expostas a possíveis ataques cibernéticos.<br>Para exemplificar, vamos considerar um cenário em que um sistema de envio de emails automatizado é configurado para utilizar o Gmail como servidor SMTP. Nesse caso, é fundamental garantir que as configurações de criptografia estejam alinhadas com as diretrizes de segurança mais recentes. Abaixo, um trecho de código em C# que ilustra como configurar a criptografia TLS para o envio de emails via SMTP:<br><pre><code class="language-csharp">using System.Net;<br>using System.Net.Mail;<br>SmtpClient client = new SmtpClient("smtp.gmail.com");<br>client.Port = 587;<br>client.Credentials = new NetworkCredential("seuemail@gmail.com", "suasenha");<br>client.EnableSsl = true; // Habilita criptografia TLS<br></code></pre><br>Além disso, é importante estar atento às recomendações de segurança do Gmail e manter-se atualizado sobre as melhores práticas de criptografia e proteção de dados. Afinal, a segurança da informação é uma responsabilidade compartilhada entre os provedores de serviços e os desenvolvedores que utilizam esses serviços em seus sistemas.<br>Em conclusão, a decisão do Gmail de encerrar o suporte ao 3DES para o SMTP é mais um lembrete da importância da segurança da informação no desenvolvimento de software. É essencial estar sempre atento às atualizações e recomendações dos provedores de serviços, bem como buscar constantemente aprimorar as práticas de segurança em nossos sistemas. Afinal, a proteção dos dados dos usuários é uma prioridade que não pode ser negligenciada.</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="../sobre.html">Sobre</a> |
+    <a href="../contato.html">Contato</a> |
+    <a href="../termos.html">Termos de Uso</a> |
+    <a href="../politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>

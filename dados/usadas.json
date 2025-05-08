@@ -849,5 +849,10 @@
     "intro": "Em um projeto antigo, enfrentei um problema parecido com o que essa notícia levanta...",
     "introOriginal": "Em um projeto antigo, enfrentei um problema parecido com o que essa notícia levanta...",
     "data": "2025-05-08"
+  },
+  "2025-05-08-gmail-vai-parar-de-suportar-3des-para-smtp-o-que-isso-significa-para-os-desenvolvedores": {
+    "intro": "Mais importante do que a notícia em si, é o impacto prático de Gmail will soon stop support for the 3DES encryption cipher for incoming SMTP no nosso dia a dia como devs.",
+    "introOriginal": "Mais importante do que a notícia em si, é o impacto prático de __TEMATICA__ no nosso dia a dia como devs.",
+    "data": "2025-05-08"
   }
 }
