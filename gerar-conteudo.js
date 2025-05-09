@@ -202,6 +202,17 @@ async function buscarNoticiaDevBlogs() {
 }
 
 
+function gerarHeaderNavegacao(base = "..") {
+  return `<header style="background: #0a66c2; padding: 1rem; text-align: center;">
+    <nav style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <a href="${base}/index.html" style="color: white; font-weight: bold; text-decoration: none;">Início</a>
+      <a href="${base}/sobre.html" style="color: white; font-weight: bold; text-decoration: none;">Sobre</a>
+      <a href="${base}/contato.html" style="color: white; font-weight: bold; text-decoration: none;">Contato</a>
+      <a href="${base}/termos.html" style="color: white; font-weight: bold; text-decoration: none;">Termos</a>
+      <a href="${base}/politica.html" style="color: white; font-weight: bold; text-decoration: none;">Privacidade</a>
+    </nav>
+  </header>`;
+}
 
 
 async function gerar() {
@@ -382,7 +393,7 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </style>
 </head>
 <body>
-
+${gerarHeaderNavegacao("..")}
 <main>
 <h1>${titulo}</h1>
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
@@ -633,14 +644,15 @@ a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
-<header>
-<h1>Anderson Damasio</h1>
-<p>Arquiteto de Software</p>
-<p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener">Acesse o perfil no LinkedIn</a></p>
-</header>
+${gerarHeaderNavegacao(".")}
 
 <main>
 <section>
+  <div style="text-align: center; margin-bottom: 2rem;">
+    <h1>Anderson Damasio</h1>
+    <p style="font-size: 1.1rem; color: #555;">Arquiteto de Software</p>
+    <p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener" style="color: #0a66c2; font-weight: bold;">Acesse o perfil no LinkedIn</a></p>
+  </div>
 
 <!-- Sobre Mim -->
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
