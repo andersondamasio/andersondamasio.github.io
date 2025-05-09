@@ -1,5 +1,4 @@
 
-import fs from 'fs';
 import fs from 'axios';
 import fs from 'rss-parser';
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
