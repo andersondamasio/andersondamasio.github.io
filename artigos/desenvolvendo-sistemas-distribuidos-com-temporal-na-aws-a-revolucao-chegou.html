@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Desenvolvendo Sistemas Distribuídos com Temporal na AWS: A Revolução Chegou! – Artigo Técnico por Anderson Damasio</title>
+<meta name="description" content="Não importa a stack: Temporal on AWS Aims to Ease Building Resilient Distributed Systems sempre encontra um jeito de te cobrar atenção. Recentemente, uma notíci">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Desenvolvendo Sistemas Distribuídos com Temporal na AWS: A Revolução Chegou!">
+<meta property="og:description" content="Não importa a stack: Temporal on AWS Aims to Ease Building Resilient Distributed Systems sempre encontra um jeito de te cobrar atenção. Recentemente, uma notíci">
+<meta property="og:url" content="https://www.andersondamasio.com.br/artigos/desenvolvendo-sistemas-distribuidos-com-temporal-na-aws-a-revolucao-chegou.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Desenvolvendo Sistemas Distribuídos com Temporal na AWS: A Revolução Chegou!">
+<meta name="twitter:description" content="Não importa a stack: Temporal on AWS Aims to Ease Building Resilient Distributed Systems sempre encontra um jeito de te cobrar atenção. Recentemente, uma notíci">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Desenvolvendo Sistemas Distribuídos com Temporal na AWS: A Revolução Chegou!",
+  "description": "Não importa a stack: Temporal on AWS Aims to Ease Building Resilient Distributed Systems sempre encontra um jeito de te cobrar atenção. Recentemente, uma notíci",
+  "datePublished": "2025-05-09T10:20:14.281Z",
+  "author": {
+    "@type": "Person",
+    "name": "Anderson Damasio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anderson Damasio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/favicon.ico"
+    }
+  }
+}
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+<!-- Script principal da Ezoic (Standalone) no <head> -->
+<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+  window.ezstandalone = window.ezstandalone || {};
+  ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1824544776589069"
+     crossorigin="anonymous"></script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+header a:hover {
+  text-decoration: underline;
+  color: #f1c40f;
+}
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+    <a href="../termos.html" style="color: white; font-weight: 600; text-decoration: none;">Termos</a>
+    <a href="../politica.html" style="color: white; font-weight: 600; text-decoration: none;">Privacidade</a>
+  </nav>
+</header>
+<main>
+<h1>Desenvolvendo Sistemas Distribuídos com Temporal na AWS: A Revolução Chegou!</h1>
+
+<p class="article-meta">Publicado em: 09/05/2025 07:20</p>
+
+<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
+<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
+<script>
+  ezstandalone.cmd.push(function() {
+    ezstandalone.showAds(115);
+  });
+</script>
+
+<div class="article-body">Não importa a stack: Temporal on AWS Aims to Ease Building Resilient Distributed Systems sempre encontra um jeito de te cobrar atenção.<br>Recentemente, uma notícia técnica internacional chamou a atenção da comunidade de desenvolvimento de software: Temporal on AWS está chegando para facilitar a construção de sistemas distribuídos resilientes. Para aqueles que estão familiarizados com os desafios de desenvolver e manter sistemas distribuídos de alta disponibilidade, essa novidade promete revolucionar a forma como lidamos com a complexidade dessas arquiteturas.<br>Mas afinal, o que é Temporal e como ele pode ajudar os desenvolvedores a construir sistemas distribuídos mais robustos e confiáveis na AWS?<br>Temporal é uma plataforma de orquestração de tarefas distribuídas que oferece uma abordagem única para lidar com a complexidade inerente aos sistemas distribuídos. Com Temporal, os desenvolvedores podem escrever código que descreve a lógica de negócios de forma simples e direta, sem se preocupar com os detalhes de implementação da infraestrutura subjacente. Isso permite que as equipes de desenvolvimento foquem no que realmente importa: resolver os problemas de negócio de forma eficiente e escalável.<br>Uma das principais vantagens de usar Temporal on AWS é a facilidade de integração com os serviços nativos da AWS, como o Amazon DynamoDB, Amazon S3 e Amazon SQS. Isso significa que os desenvolvedores podem construir sistemas distribuídos resilientes sem se preocupar com a complexidade de gerenciar a infraestrutura subjacente, aproveitando a escalabilidade e confiabilidade dos serviços da AWS.<br>Além disso, Temporal oferece uma série de recursos avançados que facilitam o desenvolvimento de sistemas distribuídos, como o controle de fluxo de execução, o gerenciamento de retries e a capacidade de lidar com falhas de forma transparente. Com esses recursos, os desenvolvedores podem construir sistemas distribuídos mais robustos e confiáveis, garantindo a disponibilidade e a escalabilidade das aplicações em ambientes de produção.<br>Para demonstrar na prática como Temporal on AWS pode facilitar a construção de sistemas distribuídos resilientes, vamos mostrar um exemplo simples de como implementar um workflow básico utilizando a plataforma. Vamos utilizar a linguagem de programação C# e a API do Temporal para criar um workflow que realiza o processamento de dados de forma assíncrona e escalável.<br><pre><code class="language-csharp">using System;<br>using Temporal;<br>class Program<br>{<br>static void Main()<br>{<br>var workflow = new Workflow();<br>workflow.StartNewWorkflow("ProcessamentoDeDados", () =><br>{<br>// Lógica de negócio para processamento de dados<br>Console.WriteLine("Processando dados...");<br>});<br>}<br>}<br></code></pre><br>Neste exemplo, estamos criando um workflow chamado "ProcessamentoDeDados" que realiza o processamento de dados de forma assíncrona. Com Temporal, podemos garantir que o workflow seja executado de forma confiável, mesmo em caso de falhas ou interrupções na execução.<br>Em conclusão, Temporal on AWS representa uma evolução significativa na forma como desenvolvemos sistemas distribuídos resilientes. Com sua abordagem simplificada e seus recursos avançados, a plataforma facilita a construção de aplicações escaláveis e confiáveis na AWS. Para os desenvolvedores que buscam uma solução eficiente para lidar com a complexidade dos sistemas distribuídos, Temporal é, sem dúvidas, uma ferramenta indispensável.<br>E você, já experimentou utilizar Temporal on AWS em seus projetos? Compartilhe sua experiência nos comentários e vamos juntos explorar as possibilidades dessa incrível plataforma!</div>
+<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="../sobre.html">Sobre</a> |
+    <a href="../contato.html">Contato</a> |
+    <a href="../termos.html">Termos de Uso</a> |
+    <a href="../politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
