@@ -314,7 +314,7 @@ let corpoArtigo = linhas.filter(l => {
     const dataHoraFormatada = formatDateTime(now);
     const dataISO = new Date(now).toISOString();
 
-     const imagemCapaUrl = await buscarImagemCapa(titulo, slug);
+     const imagemCapaUrl = null;//await buscarImagemCapa(titulo, slug);
 
     
 
