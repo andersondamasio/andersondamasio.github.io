@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Instalar dependências do sistema para o Sharp
+        run: sudo apt-get update && sudo apt-get install -y libvips-dev
+
       - name: Instalar dependências
         run: npm install axios rss-parser
 
@@ -27,6 +30,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
 
       - name: Commitar alterações
         run: |
