@@ -202,17 +202,19 @@ async function buscarNoticiaDevBlogs() {
 }
 
 
-function gerarHeaderNavegacao(base = "..") {
-  return `<header style="background: #0a66c2; padding: 1rem; text-align: center;">
-    <nav style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-      <a href="${base}/index.html" style="color: white; font-weight: bold; text-decoration: none;">Início</a>
-      <a href="${base}/sobre.html" style="color: white; font-weight: bold; text-decoration: none;">Sobre</a>
-      <a href="${base}/contato.html" style="color: white; font-weight: bold; text-decoration: none;">Contato</a>
-      <a href="${base}/termos.html" style="color: white; font-weight: bold; text-decoration: none;">Termos</a>
-      <a href="${base}/politica.html" style="color: white; font-weight: bold; text-decoration: none;">Privacidade</a>
-    </nav>
-  </header>`;
+function gerarHeaderNavegacao(base = ".") {
+  return `
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="${base}/index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="${base}/sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="${base}/contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+    <a href="${base}/termos.html" style="color: white; font-weight: 600; text-decoration: none;">Termos</a>
+    <a href="${base}/politica.html" style="color: white; font-weight: 600; text-decoration: none;">Privacidade</a>
+  </nav>
+</header>`;
 }
+
 
 
 async function gerar() {
@@ -379,6 +381,10 @@ const html = `<!DOCTYPE html>
 
 <style>
 body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+header a:hover {
+  text-decoration: underline;
+  color: #f1c40f;
+}
 h1 { font-size: 1.8rem; margin-bottom: 1rem; }
 .article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
 .article-body { font-size: 1.05rem; line-height: 1.7; }
@@ -607,6 +613,10 @@ const html = `<!DOCTYPE html>
 body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
 header { background-color: #0a66c2; color: white; padding: 2rem 1rem; text-align: center; }
 header a { color: white; font-weight: bold; text-decoration: underline; }
+header a:hover {
+  text-decoration: underline;
+  color: #f1c40f;
+}
 main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
 ul { padding-left: 1.5rem; line-height: 1.8; }
@@ -648,11 +658,12 @@ ${gerarHeaderNavegacao(".")}
 
 <main>
 <section>
-  <div style="text-align: center; margin-bottom: 2rem;">
-    <h1>Anderson Damasio</h1>
-    <p style="font-size: 1.1rem; color: #555;">Arquiteto de Software</p>
-    <p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener" style="color: #0a66c2; font-weight: bold;">Acesse o perfil no LinkedIn</a></p>
-  </div>
+<div style="text-align: center; margin: 2rem auto 1rem;">
+  <h1 style="font-size: 2rem; margin-bottom: 0.2rem;">Anderson Damasio</h1>
+  <p style="font-size: 1.1rem; color: #444; margin-bottom: 0.5rem;">Arquiteto de Software</p>
+  <p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener" style="color: #0a66c2; font-weight: bold;">Acesse o perfil no LinkedIn</a></p>
+</div>
+
 
 <!-- Sobre Mim -->
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
