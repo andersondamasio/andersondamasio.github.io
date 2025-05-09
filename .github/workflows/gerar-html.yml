@@ -23,7 +23,8 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y libvips-dev
 
       - name: Instalar dependências
-        run: npm install axios rss-parser
+        run: npm install axios rss-parser sharp
+
 
       - name: Gerar conteúdo com ChatGPT
         run: node gerar-conteudo.js
