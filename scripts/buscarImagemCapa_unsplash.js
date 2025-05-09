@@ -29,7 +29,15 @@ async function buscarImagemCapa(query, slug) {
 
     const imageRes = await axios.get(imageUrl, { responseType: "arraybuffer" });
     fs.mkdirSync(path.dirname(imagePath), { recursive: true });
-    fs.writeFileSync(imagePath, imageRes.data);
+
+     const buffer = await sharp(imageRes.data)
+  .resize({ width: 800 }) // limita a largura da imagem
+  .jpeg({ quality: 80 })   // reduz o tamanho do arquivo mantendo qualidade razoável
+  .toBuffer();
+
+    fs.writeFileSync(imagePath, buffer);
+
+
     console.log(`✅ Imagem salva: ${imagePath}`);
     return `/images/artigos/${slug}.jpg`;
 
