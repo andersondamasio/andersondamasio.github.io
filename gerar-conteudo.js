@@ -1,6 +1,7 @@
 
-import fs from 'axios';
-import fs from 'rss-parser';
+const fs = require('fs');
+const axios = require('axios');
+const Parser = require('rss-parser');
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { buscarImagemCapa } = require('./scripts/buscarImagemCapa_unsplash');
 
