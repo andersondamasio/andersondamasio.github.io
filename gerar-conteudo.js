@@ -3,6 +3,8 @@ const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
+const { buscarImagemCapa } = require('./scripts/buscarImagemCapa_unsplash');
+
 const parser = new Parser({
   requestOptions: {
     headers: {
@@ -312,6 +314,10 @@ let corpoArtigo = linhas.filter(l => {
     const dataHoraFormatada = formatDateTime(now);
     const dataISO = new Date(now).toISOString();
 
+     const imagemCapaUrl = await buscarImagemCapa(titulo, slug);
+
+    
+
 const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -333,6 +339,8 @@ const html = `<!DOCTYPE html>
 <meta name="twitter:title" content="${titulo}">
 <meta name="twitter:description" content="${resumo}">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+
 
 <!-- Schema.org -->
 <script type="application/ld+json">
@@ -402,6 +410,7 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 ${gerarHeaderNavegacao("..")}
 <main>
 <h1>${titulo}</h1>
+${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="Imagem relacionada ao tema" style="width:100%; border-radius:8px; margin:1rem 0;" />` : ''}
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
 
 <!-- Ezoic Placeholder: incontent_5 (ID 115) -->
