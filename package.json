@@ -1,7 +1,16 @@
 {
+  "name": "anderson-damasio-blog",
+  "version": "1.0.0",
+  "description": "Perfil e Artigos",
+  "main": "gerar-conteudo.js",
+  "type": "module",
+  "scripts": {
+    "start": "node gerar-conteudo.js"
+  },
   "dependencies": {
     "axios": "^1.9.0",
     "glob": "^11.0.2",
     "rss-parser": "^3.13.0"
+    "sharp": "^0.33.3"
   }
 }
