@@ -410,7 +410,7 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 ${gerarHeaderNavegacao("..")}
 <main>
 <h1>${titulo}</h1>
-${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="Imagem relacionada ao tema" style="width:100%; border-radius:8px; margin:1rem 0;" />` : ''}
+${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="Imagem relacionada" style="width:100%; max-width:600px; border-radius:8px; margin: 0 auto 1.5rem; display:block;" />` : ''}
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
 
 <!-- Ezoic Placeholder: incontent_5 (ID 115) -->
