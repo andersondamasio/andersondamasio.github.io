@@ -38,3 +38,4 @@ async function buscarImagemCapa(query, slug) {
     return null;
   }
 }
+module.exports = { buscarImagemCapa };
