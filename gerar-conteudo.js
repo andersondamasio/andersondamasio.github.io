@@ -25,7 +25,8 @@ const devBlogsFeeds = [
   "https://devblogs.microsoft.com/visualstudio/feed/",
   "https://devblogs.microsoft.com/devops/feed/",
   "https://martinfowler.com/feed.atom",
-  "https://feed.infoq.com"
+  "https://feed.infoq.com",
+  "https://feeds.bbci.co.uk/news/technology/rss.xml"
 ];
 
 async function verificarTweetOriginalViaApi(tweetUrl) {
