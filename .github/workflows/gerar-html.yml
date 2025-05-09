@@ -26,6 +26,7 @@ jobs:
         run: node gerar-conteudo.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
 
       - name: Commitar alterações
         run: |
