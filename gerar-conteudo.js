@@ -3,7 +3,15 @@ const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
-const parser = new Parser();
+const parser = new Parser({
+  requestOptions: {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Node.js RSS Reader)',
+      'Accept': 'application/rss+xml, application/xml;q=0.9, */*;q=0.8'
+    }
+  }
+});
+
 
 const siteUrl = "https://www.andersondamasio.com.br";
 const apiKey = process.env.OPENAI_API_KEY;
