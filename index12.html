@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 <meta property="og:url" content="https://www.andersondamasio.com.br/">
 <meta property="og:type" content="website">
-<meta property="og:updated_time" content="2025-05-09T01:35:13.771Z" />
+<meta property="og:updated_time" content="2025-05-09T01:43:28.870Z" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
@@ -68,6 +68,10 @@
 body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
 header { background-color: #0a66c2; color: white; padding: 2rem 1rem; text-align: center; }
 header a { color: white; font-weight: bold; text-decoration: underline; }
+header a:hover {
+  text-decoration: underline;
+  color: #f1c40f;
+}
 main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
 ul { padding-left: 1.5rem; line-height: 1.8; }
@@ -105,23 +109,25 @@ a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
-<header style="background: #0a66c2; padding: 1rem; text-align: center;">
-    <nav style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-      <a href="./index.html" style="color: white; font-weight: bold; text-decoration: none;">Início</a>
-      <a href="./sobre.html" style="color: white; font-weight: bold; text-decoration: none;">Sobre</a>
-      <a href="./contato.html" style="color: white; font-weight: bold; text-decoration: none;">Contato</a>
-      <a href="./termos.html" style="color: white; font-weight: bold; text-decoration: none;">Termos</a>
-      <a href="./politica.html" style="color: white; font-weight: bold; text-decoration: none;">Privacidade</a>
-    </nav>
-  </header>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+    <a href="./termos.html" style="color: white; font-weight: 600; text-decoration: none;">Termos</a>
+    <a href="./politica.html" style="color: white; font-weight: 600; text-decoration: none;">Privacidade</a>
+  </nav>
+</header>
 
 <main>
 <section>
-  <div style="text-align: center; margin-bottom: 2rem;">
-    <h1>Anderson Damasio</h1>
-    <p style="font-size: 1.1rem; color: #555;">Arquiteto de Software</p>
-    <p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener" style="color: #0a66c2; font-weight: bold;">Acesse o perfil no LinkedIn</a></p>
-  </div>
+<div style="text-align: center; margin: 2rem auto 1rem;">
+  <h1 style="font-size: 2rem; margin-bottom: 0.2rem;">Anderson Damasio</h1>
+  <p style="font-size: 1.1rem; color: #444; margin-bottom: 0.5rem;">Arquiteto de Software</p>
+  <p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener" style="color: #0a66c2; font-weight: bold;">Acesse o perfil no LinkedIn</a></p>
+</div>
+
 
 <!-- Sobre Mim -->
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
@@ -144,6 +150,7 @@ a:hover { text-decoration: underline; }
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
 <h2>📚 Artigos</h2>
 <ul>
+<li><a href="artigos/lilith-and-modula-2-a-revolucao-silenciosa-dos-sistemas-modernos.html">Lilith and Modula-2: A Revolução Silenciosa dos Sistemas Modernos</a> <span style="color:#777;">(04/05/2025 10:23)</span></li>
 <li><a href="artigos/o-misterio-da-linha-fixa-de-alabama-que-nao-para-de-tocar.html">O Mistério da Linha Fixa de Alabama que Não Para de Tocar</a> <span style="color:#777;">(04/05/2025 09:33)</span></li>
 <li><a href="artigos/oberon-pi-a-revolucao-silenciosa-no-mundo-da-computacao-embarcada.html">Oberon Pi: A revolução silenciosa no mundo da computação embarcada</a> <span style="color:#777;">(04/05/2025 08:13)</span></li>
 <li><a href="artigos/inteligencia-artificial-com-a-bola-toda-ensinando-ai-a-comentar-pong-em-tempo-real.html">Inteligência Artificial com a Bola Toda: Ensinando AI a Comentar Pong em Tempo Real</a> <span style="color:#777;">(04/05/2025 07:17)</span></li>
@@ -153,7 +160,6 @@ a:hover { text-decoration: underline; }
 <li><a href="artigos/a-teoria-de-brian-eno-sobre-democracia-na-era-da-tecnologia.html">A Teoria de Brian Eno sobre Democracia na Era da Tecnologia</a> <span style="color:#777;">(04/05/2025 03:24)</span></li>
 <li><a href="artigos/protocolos-de-agentes-de-ia-desvendando-o-futuro-dos-sistemas-inteligentes.html">Protocolos de Agentes de IA: Desvendando o Futuro dos Sistemas Inteligentes</a> <span style="color:#777;">(04/05/2025 02:17)</span></li>
 <li><a href="artigos/desvendando-os-segredos-do-amibios-guia-para-desenvolvedores-1993.html">Desvendando os Segredos do AMIBIOS: Guia para Desenvolvedores (1993)</a> <span style="color:#777;">(04/05/2025 01:21)</span></li>
-<li><a href="artigos/wi-fi-usb-o-que-deu-errado-e-como-evitar-problemas.html">Wi-Fi USB: O que deu errado e como evitar problemas</a> <span style="color:#777;">(04/05/2025 00:15)</span></li>
 </ul>
 
 <div class="scroll-container">
