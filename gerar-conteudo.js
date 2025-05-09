@@ -14,7 +14,8 @@ const hackerNewsUrl = "https://hacker-news.firebaseio.com/v0/topstories.json";
 const devBlogsFeeds = [
   "https://devblogs.microsoft.com/visualstudio/feed/",
   "https://devblogs.microsoft.com/devops/feed/",
-  "https://martinfowler.com/feed.atom"
+  "https://martinfowler.com/feed.atom",
+  "https://feed.infoq.com"
 ];
 
 async function verificarTweetOriginalViaApi(tweetUrl) {
