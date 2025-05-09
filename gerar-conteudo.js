@@ -74,7 +74,7 @@ async function buscarNoticia() {
     normalizarTexto(t.noticiaOriginal)
   );
 
-  const fontes = [buscarNoticiaDevBlogs];
+  const fontes = [buscarNoticiaDevBlogs,buscarNoticiaX];
   let todasNoticias = [];
 
   for (const fonte of fontes) {
@@ -97,6 +97,34 @@ async function buscarNoticia() {
   }
 
   return null;
+}
+
+async function buscarNoticiaX() {
+  const query = encodeURIComponent("arquitetura de software OR .NET OR PostgreSQL OR MAUI lang:pt -is:retweet");
+  const url = `https://api.twitter.com/2/tweets/search/recent?query=${query}&tweet.fields=created_at,author_id&expansions=author_id&user.fields=username`;
+
+  try {
+    const res = await axios.get(url, {
+      headers: { Authorization: `Bearer ${twitterBearer}` }
+    });
+
+    const tweets = res.data.data || [];
+    const users = res.data.includes?.users || [];
+
+    const lista = tweets.map(tweet => {
+      const user = users.find(u => u.id === tweet.author_id);
+      return {
+        titulo: tweet.text.slice(0, 80).replace(/\n/g, ' ') + '...',
+        url: `https://twitter.com/${user?.username}/status/${tweet.id}`,
+        data: new Date(tweet.created_at).getTime()
+      };
+    });
+
+    return lista;
+  } catch (e) {
+    console.warn(`⚠️ Erro ao buscar tweets do X: ${e.message}`);
+    return [];
+  }
 }
 
 
