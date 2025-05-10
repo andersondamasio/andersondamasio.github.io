@@ -1208,10 +1208,10 @@
   {
     "titulo": "Atualização Azure DevOps: Refrescando Tokens e Versão 5 do Terraform",
     "noticiaOriginal": "Introducing Azure DevOps ID Token Refresh and Terraform Task Version 5",
-    "url": "artigos/devops/atualizacao-azure-devops-refrescando-tokens-e-versao-5-do-terraform.html",
+    "url": "artigos/atualizacao-azure-devops-refrescando-tokens-e-versao-5-do-terraform.html",
     "data": "2025-05-04T16:20:12.572Z",
     "dataFonte": "2025-05-02T08:16:56.000Z",
-    "categoria": "DevOps"
+    "categoria": "Outros"
   },
   {
     "titulo": "GitHub Copilot: A revolução da codificação colaborativa no Visual Studio 17.14 Preview 3",
@@ -1336,10 +1336,10 @@
   {
     "titulo": "Limpeza de Primavera: Como lidar com segredos expirados em aplicativos OAuth do Azure DevOps",
     "noticiaOriginal": "Spring Cleaning: A CTA for Azure DevOps OAuth Apps with expired or long-living secrets",
-    "url": "artigos/devops/limpeza-de-primavera-como-lidar-com-segredos-expirados-em-aplicativos-oauth-do-azure-devops.html",
+    "url": "artigos/limpeza-de-primavera-como-lidar-com-segredos-expirados-em-aplicativos-oauth-do-azure-devops.html",
     "data": "2025-05-04T22:15:58.691Z",
     "dataFonte": "2025-04-23T17:16:23.000Z",
-    "categoria": "DevOps"
+    "categoria": "Outros"
   },
   {
     "titulo": "Desenvolvimento de Software: DDD, Onion Arch e CA - Filosofia x Arquitetura",
@@ -1416,10 +1416,10 @@
   {
     "titulo": "Atualização de Abril para Azure DevOps Server e Team Foundation Server: O que você precisa saber",
     "noticiaOriginal": "April Patches for Azure DevOps Server and Team Foundation Server",
-    "url": "artigos/devops/atualizacao-de-abril-para-azure-devops-server-e-team-foundation-server-o-que-voce-precisa-saber.html",
+    "url": "artigos/atualizacao-de-abril-para-azure-devops-server-e-team-foundation-server-o-que-voce-precisa-saber.html",
     "data": "2025-05-05T10:19:58.437Z",
     "dataFonte": "2025-04-08T19:26:16.000Z",
-    "categoria": "DevOps"
+    "categoria": "Outros"
   },
   {
     "titulo": "Atualização de Posts Antigos: Como Aumentar o Engajamento nas Redes Sociais",
@@ -1472,18 +1472,18 @@
   {
     "titulo": "Azure DevOps Services: O Futuro da Segurança nas Nuvens",
     "noticiaOriginal": "Important Update: Server Name Indication (SNI) Now Mandatory for Azure DevOps Services",
-    "url": "artigos/devops/azure-devops-services-o-futuro-da-seguranca-nas-nuvens.html",
+    "url": "artigos/azure-devops-services-o-futuro-da-seguranca-nas-nuvens.html",
     "data": "2025-05-05T17:16:09.138Z",
     "dataFonte": "2025-04-01T19:04:32.000Z",
-    "categoria": "DevOps"
+    "categoria": "Outros"
   },
   {
     "titulo": "Segredos Sobrepostos: Desvendando os Desafios do Azure DevOps OAuth",
     "noticiaOriginal": "New Overlapping Secrets on Azure DevOps OAuth",
-    "url": "artigos/devops/segredos-sobrepostos-desvendando-os-desafios-do-azure-devops-oauth.html",
+    "url": "artigos/segredos-sobrepostos-desvendando-os-desafios-do-azure-devops-oauth.html",
     "data": "2025-05-05T17:41:42.667Z",
     "dataFonte": "2025-03-26T16:19:22.000Z",
-    "categoria": "DevOps"
+    "categoria": "Outros"
   },
   {
     "titulo": "Debugging com o Visualizador AI-powered para IEnumerable: muito mais do que parece",
@@ -1999,10 +1999,10 @@
   {
     "titulo": "Desbravando o Caminho do Uber para Ray no Kubernetes",
     "noticiaOriginal": "Uber’s Journey to Ray on Kubernetes",
-    "url": "artigos/devops/desbravando-o-caminho-do-uber-para-ray-no-kubernetes.html",
+    "url": "artigos/desbravando-o-caminho-do-uber-para-ray-no-kubernetes.html",
     "data": "2025-05-09T01:43:19.816Z",
     "dataFonte": "2025-05-08T10:00:00.000Z",
-    "categoria": "DevOps"
+    "categoria": "Outros"
   },
   {
     "titulo": "Desbravando o Protocolo de Contexto de Modelo no Ecossistema Java",
