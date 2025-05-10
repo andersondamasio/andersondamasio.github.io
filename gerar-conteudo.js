@@ -278,7 +278,7 @@ async function buscarNoticiaDevBlogs() {
 function gerarHeaderNavegacao(base = ".") {
   return `
 <header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem;">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
     <a href="${base}/index.html">Início</a>
     <a href="${base}/categoria/index.html">Artigos</a>
     <a href="${base}/sobre.html">Sobre</a>
@@ -492,7 +492,7 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </style>
 </head>
 <body>
-${gerarHeaderNavegacao("..")}
+${gerarHeaderNavegacao("../..")}
 <main>
 <h1>${titulo}</h1>
 ${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="Imagem relacionada" style="width:100%; max-width:600px; border-radius:8px; margin: 0 auto 1.5rem; display:block;" />` : ''}
