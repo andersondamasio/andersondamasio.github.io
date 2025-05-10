@@ -122,6 +122,7 @@ function gerarPaginasPorCategoria(titulos) {
 
   for (const [categoria, artigos] of Object.entries(agrupados)) {
     const slugCat = slugify(categoria);
+    artigos.sort((a, b) => new Date(b.data) - new Date(a.data));
     const paginas = Math.ceil(artigos.length / artigosPorPagina);
 
     for (let i = 0; i < paginas; i++) {
