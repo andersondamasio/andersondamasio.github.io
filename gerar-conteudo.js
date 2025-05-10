@@ -886,7 +886,8 @@ function gerarSitemap(titulos) {
     `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
     ...titulos.map(t => {
       const slug = slugify(t.titulo);
-      return `<url><loc>${siteUrl}/${t.url}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
+      const urlFinal = t.url || `artigos/${slug}.html`;
+      return `<url><loc>${siteUrl}/${urlFinal}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
     })
   ].join("\n");
 
