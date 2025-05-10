@@ -188,11 +188,23 @@ const html = `
 
 
 function gerarIndiceCategorias(agrupados) {
-  const links = Object.entries(agrupados).map(([categoria, artigos]) => {
+  // Cria um array com categoria e data mais recente
+  const categoriasOrdenadas = Object.entries(agrupados)
+    .map(([categoria, artigos]) => {
+      const dataMaisRecente = artigos
+        .map(a => new Date(a.data))
+        .reduce((max, d) => d > max ? d : max, new Date(0));
+      return { categoria, artigos, dataMaisRecente };
+    })
+    .sort((a, b) => b.dataMaisRecente - a.dataMaisRecente); // Ordem decrescente
+
+  // Gera os links com base na ordem
+  const links = categoriasOrdenadas.map(({ categoria, artigos }) => {
     const slug = categoria.toLowerCase().replace(/\s+/g, '-');
     return `<li><a href="${slug}.html">${categoria}</a> (${artigos.length})</li>`;
   }).join("\n");
-const html = `<!DOCTYPE html>
+
+  const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -220,6 +232,7 @@ ${gerarFooterNavegacao("..")}
 
   fs.writeFileSync("categoria/index.html", html);
 }
+
 
 const siteUrl = "https://www.andersondamasio.com.br";
 const apiKey = process.env.OPENAI_API_KEY;
