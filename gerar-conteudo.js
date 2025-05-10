@@ -41,6 +41,7 @@ function descobrirCategoria(titulo) {
   if (/automation|automacao\s?de\s?processos|rpa/.test(texto)) return "Automação";
   if (/excel|planilha|vba|spreadsheet/.test(texto)) return "Produtividade";
   if (/tarifa[s]?|preço[s]?|mercado|economia|imposto[s]?|taxa[s]?|aumento|vendas|comercial/.test(texto)) return "Economia e Mercado";
+if (/ciberataque|segurança|cyber|vazamento|hacker/.test(texto)) return "Segurança";
 
 
   return "Outros";
