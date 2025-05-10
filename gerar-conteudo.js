@@ -304,26 +304,6 @@ async function gerar() {
     const titulosPath = "titulos.json";
     let titulosGerados = fs.existsSync(titulosPath) ? JSON.parse(fs.readFileSync(titulosPath, "utf-8")) : [];
 
-// Corrige os registros antigos que ainda possuem links externos
-titulosGerados = titulosGerados.map(t => {
-  if (t.url?.startsWith("http")) {
-    const categoria = t.categoria || descobrirCategoria(t.titulo);
-    const categoriaSlug = categoria
-      .normalize("NFD").replace(/[̀-ͯ]/g, "")
-      .toLowerCase().replace(/[^a-z0-9]+/g, '-');
-    const slug = slugify(t.titulo);
-    return {
-      ...t,
-      url: `artigos/${categoriaSlug}/${slug}.html`,
-      categoria
-    };
-  }
-  return t;
-});
-
-
-
-    
 const noticia = await buscarNoticia();
 if (!noticia || !noticia.titulo) {
   console.log("⚠️ Nenhuma notícia válida encontrada. Abortando com segurança.");
