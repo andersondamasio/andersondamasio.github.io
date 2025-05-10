@@ -72,16 +72,32 @@ function gerarIndiceCategorias(agrupados) {
     const slug = categoria.toLowerCase().replace(/\s+/g, '-');
     return `<li><a href="${slug}.html">${categoria}</a> (${artigos.length})</li>`;
   }).join("\n");
-  const html = `
-<!DOCTYPE html>
+const html = `<!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Artigos</title></head>
+<head>
+  <meta charset="UTF-8">
+  <title>Artigos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+    main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    ul { padding-left: 1.5rem; line-height: 1.8; }
+    a { text-decoration: none; font-weight: bold; color: #0a66c2; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
 <body>
 ${gerarHeaderNavegacao("..")}
-<main><h1>Artigos</h1><ul>${links}</ul></main>
+<main>
+  <h1>Artigos</h1>
+  <ul>
+    ${links}
+  </ul>
+</main>
 ${gerarFooterNavegacao("..")}
 </body>
 </html>`;
+
   fs.writeFileSync("categoria/index.html", html);
 }
 
