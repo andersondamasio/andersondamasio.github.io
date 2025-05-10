@@ -146,12 +146,12 @@ function normalizarTexto(str) {
 }
 
 async function buscarNoticia() {
-  const titulosPath = "titulos.json";
-  let titulosGerados = fs.existsSync(titulosPath)
-    ? JSON.parse(fs.readFileSync(titulosPath, "utf-8"))
-    : [];
+const titulosPath = "titulos.json";
+let titulosGerados = fs.existsSync(titulosPath)
+  ? JSON.parse(fs.readFileSync(titulosPath, "utf-8"))
+  : [];
 
-// Corrige URLs externas para caminhos locais (caso estejam erradas)
+// Corrigir links externos
 titulosGerados = titulosGerados.map(t => {
   if (t.url?.startsWith("http")) {
     const categoria = t.categoria || descobrirCategoria(t.titulo);
@@ -168,8 +168,9 @@ titulosGerados = titulosGerados.map(t => {
   return t;
 });
 
+// Salvar imediatamente após corrigir
+fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
-  
   const noticiasAntigas = titulosGerados.map(t =>
     normalizarTexto(t.noticiaOriginal)
   );
