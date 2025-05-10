@@ -277,7 +277,7 @@ async function buscarNoticiaDevBlogs() {
 
 function gerarHeaderNavegacao(base = ".") {
   return `
-<header style="background: #0a66c2; padding: 1rem 2rem;">
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
   <nav style="display: flex; justify-content: center; gap: 2rem;">
     <a href="${base}/index.html">Início</a>
     <a href="${base}/categoria/index.html">Artigos</a>
