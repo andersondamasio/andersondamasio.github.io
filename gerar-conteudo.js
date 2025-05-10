@@ -878,9 +878,6 @@ ${paginacao}
   }
 }
 
-
-
-
 function gerarSitemap(titulos) {
   const sitemapLinks = [
     `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
@@ -898,5 +895,6 @@ ${sitemapLinks}
 
   fs.writeFileSync("sitemap.xml", sitemapContent);
 }
+
 
 gerar();
