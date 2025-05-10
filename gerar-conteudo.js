@@ -15,6 +15,17 @@ const parser = new Parser({
 });
 
 
+function extrairCategoriaDoConteudo(conteudo, tituloFallback) {
+  // Tenta extrair a categoria do final do conteúdo, ex: |Segurança|
+  const match = conteudo.match(/\|(.+?)\|$/);
+  const categoria = match ? match[1].trim() : descobrirCategoria(tituloFallback);
+  
+  // Remove a linha final com a categoria (se existir)
+  const conteudoLimpo = conteudo.replace(/\|(.+?)\|$/, '').trim();
+
+  return { categoria, conteudoLimpo };
+}
+
 
 function descobrirCategoria(titulo) {
   const texto = normalizarTexto(titulo);
@@ -436,6 +447,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 - Não inicie com “Título:” ou similares. Apenas escreva o título direto na primeira linha.
 - Pule uma linha e inicie o artigo.
 - O conteúdo deve parecer escrito por um humano experiente, com estilo natural, fluente e levemente opinativo.
+- **Ao final do texto, inclua a categoria mais adequada para o tema entre barras verticais, no formato: |Categoria|.**
 `;
 
     const response = await axios.post(
@@ -479,7 +491,12 @@ let corpoArtigo = linhas.filter(l => {
       .replace(/```[\s\S]*?\n([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
 
     const slug = slugify(titulo);
-    const categoria = descobrirCategoria(titulo);
+  
+
+const { categoria, conteudoLimpo } = extrairCategoriaDoConteudo(corpoArtigo, titulo);
+corpoArtigo = conteudoLimpo;
+
+
 const categoriaSlug = categoria
   .normalize("NFD").replace(/[̀-ͯ]/g, "")     // remove acentos
   .toLowerCase().replace(/[^a-z0-9]+/g, '-'); // substitui tudo que não for letra/número por hífen
