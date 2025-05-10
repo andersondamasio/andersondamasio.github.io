@@ -408,7 +408,7 @@ const html = `<!DOCTYPE html>
 <meta property="og:type" content="article">
 <meta property="og:title" content="${titulo}">
 <meta property="og:description" content="${resumo}">
-<meta property="og:url" content="https://www.andersondamasio.com.br/${t.url}">
+<meta property="og:url" content="https://www.andersondamasio.com.br/${categoriaSlug}/${slug}.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 
 <!-- Twitter -->
