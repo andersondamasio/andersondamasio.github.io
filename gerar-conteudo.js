@@ -151,6 +151,25 @@ async function buscarNoticia() {
     ? JSON.parse(fs.readFileSync(titulosPath, "utf-8"))
     : [];
 
+// Corrige URLs externas para caminhos locais (caso estejam erradas)
+titulosGerados = titulosGerados.map(t => {
+  if (t.url?.startsWith("http")) {
+    const categoria = t.categoria || descobrirCategoria(t.titulo);
+    const categoriaSlug = categoria
+      .normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    const slug = slugify(t.titulo);
+    return {
+      ...t,
+      url: `artigos/${categoriaSlug}/${slug}.html`,
+      categoria
+    };
+  }
+  return t;
+});
+
+
+  
   const noticiasAntigas = titulosGerados.map(t =>
     normalizarTexto(t.noticiaOriginal)
   );
