@@ -159,24 +159,33 @@ function gerarPaginasPorCategoria(titulos) {
     a:hover { text-decoration: underline; }
     footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
     .scroll-container {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 2rem;
-      justify-content: center;
-    }
-    .scroll-container a {
-      padding: 6px 12px;
-      border: 1px solid #0a66c2;
-      border-radius: 6px;
-      text-decoration: none;
-      color: #0a66c2;
-      font-weight: bold;
-    }
-    .scroll-container a.active {
-      background-color: #0a66c2;
-      color: white;
-    }
+  display: flex;
+  overflow-x: auto;
+  padding: 8px 16px;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  scroll-padding-left: 16px;
+  gap: 12px;
+}
+.scroll-container a {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.scroll-container a:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+.scroll-container a.active {
+  background-color: #0a66c2;
+  color: white;
+}
   </style>
 </head>
 <body>
