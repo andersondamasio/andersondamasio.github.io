@@ -147,7 +147,7 @@ function normalizarTexto(str) {
 
 async function buscarNoticia() {
   const titulosPath = "titulos.json";
-  const titulosGerados = fs.existsSync(titulosPath)
+  let titulosGerados = fs.existsSync(titulosPath)
     ? JSON.parse(fs.readFileSync(titulosPath, "utf-8"))
     : [];
 
