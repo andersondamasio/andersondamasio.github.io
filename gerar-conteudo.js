@@ -102,7 +102,9 @@ function gerarFooterNavegacao(base = ".") {
 }
 
 function gerarPaginasPorCategoria(titulos) {
+  const artigosPorPagina = 10;
   const agrupados = {};
+
   for (const artigo of titulos) {
     const cat = artigo.categoria || "Outros";
     if (!agrupados[cat]) agrupados[cat] = [];
@@ -112,58 +114,61 @@ function gerarPaginasPorCategoria(titulos) {
   if (!fs.existsSync("categoria")) fs.mkdirSync("categoria", { recursive: true });
 
   for (const [categoria, artigos] of Object.entries(agrupados)) {
-    const links = artigos.map(t => {
-      const slug = slugify(t.titulo);
-      const url = t.url || `artigos/${slug}.html`;
-      return `<li><a href="../${url}">${t.titulo}</a></li>`;
-    }).join("\n");
-
     const slugCat = categoria.toLowerCase().replace(/\s+/g, '-');
-const html = `
-<!DOCTYPE html>
+    const paginas = Math.ceil(artigos.length / artigosPorPagina);
+
+    for (let i = 0; i < paginas; i++) {
+      const paginaArtigos = artigos.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
+
+      const links = paginaArtigos.map(t => {
+        const slug = slugify(t.titulo);
+        const url = t.url || `artigos/${slug}.html`;
+        return `<li><a href="../${url}">${t.titulo}</a></li>`;
+      }).join("\n");
+
+      const paginacao = paginas > 1
+        ? `
+<div class="scroll-container">
+  ${Array.from({ length: paginas }).map((_, idx) => {
+    const nomePagina = idx === 0 ? `${slugCat}.html` : `${slugCat}${idx + 1}.html`;
+    const ativa = idx === i ? 'active' : '';
+    return `<a href="${nomePagina}" class="${ativa}">Página ${idx + 1}</a>`;
+  }).join('')}
+</div>`
+        : '';
+
+      const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>Categoria: ${categoria}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f2f5;
-      color: #333;
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+    main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    h1 { font-size: 1.8rem; margin-bottom: 1rem; color: #0a66c2; }
+    ul { padding-left: 1.5rem; line-height: 1.8; }
+    a { text-decoration: none; font-weight: bold; color: #0a66c2; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
+    .scroll-container {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      justify-content: center;
     }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      background-color: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #0a66c2;
-    }
-    ul {
-      padding-left: 1.5rem;
-      line-height: 1.8;
-    }
-    a {
+    .scroll-container a {
+      padding: 6px 12px;
+      border: 1px solid #0a66c2;
+      border-radius: 6px;
       text-decoration: none;
-      font-weight: bold;
       color: #0a66c2;
+      font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.95rem;
-      color: #666;
+    .scroll-container a.active {
+      background-color: #0a66c2;
+      color: white;
     }
   </style>
 </head>
@@ -174,17 +179,20 @@ const html = `
     <ul>
       ${links}
     </ul>
+    ${paginacao}
   </main>
   ${gerarFooterNavegacao("..")}
 </body>
 </html>`;
 
-
-    fs.writeFileSync(`categoria/${slugCat}.html`, html);
+      const filename = `categoria/${slugCat}${i === 0 ? '' : (i + 1)}.html`;
+      fs.writeFileSync(filename, html);
+    }
   }
 
   gerarIndiceCategorias(agrupados);
 }
+
 
 
 function gerarIndiceCategorias(agrupados) {
