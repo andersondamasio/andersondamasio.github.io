@@ -14,6 +14,13 @@ const parser = new Parser({
   }
 });
 
+function slugify(str) {
+  if (!str || typeof str !== "string") return "artigo";
+  return str.toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
 
 function extrairCategoriaDoConteudo(conteudo, tituloFallback) {
   const match = conteudo.match(/\|(.+?)\|$/);
@@ -114,7 +121,7 @@ function gerarPaginasPorCategoria(titulos) {
   if (!fs.existsSync("categoria")) fs.mkdirSync("categoria", { recursive: true });
 
   for (const [categoria, artigos] of Object.entries(agrupados)) {
-    const slugCat = categoria.toLowerCase().replace(/\s+/g, '-');
+    const slugCat = slugify(categoria);
     const paginas = Math.ceil(artigos.length / artigosPorPagina);
 
     for (let i = 0; i < paginas; i++) {
@@ -276,17 +283,6 @@ async function verificarTweetOriginalViaApi(tweetUrl) {
     return null;
   }
 }
-
-
-
-function slugify(str) {
-  if (!str || typeof str !== "string") return "artigo";
-  return str.toLowerCase()
-    .normalize("NFD").replace(/[̀-ͯ]/g, "")
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-}
-
 
 function formatDateTime(date) {
   const brasiliaDate = new Date(date.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
