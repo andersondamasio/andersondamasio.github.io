@@ -750,7 +750,7 @@ if (!existe) {
     url: urlLocal,
     data: now.toISOString(),
     dataFonte: noticia.data ? new Date(noticia.data).toISOString() : null,
-    categoria
+    categoria: categoria.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, '-')
   });
 }
 
