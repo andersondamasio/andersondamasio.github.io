@@ -306,7 +306,7 @@ function gerarHeaderNavegacao(base = ".") {
 <header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
   <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
     <a href="${base}/index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="${base}/categoria/index.html">Artigos</a>
+    <a href="${base}/categoria/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
     <a href="${base}/sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
     <a href="${base}/contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
     <a href="${base}/termos.html" style="color: white; font-weight: 600; text-decoration: none;">Termos</a>
