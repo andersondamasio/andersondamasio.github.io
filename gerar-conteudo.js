@@ -523,7 +523,7 @@ ${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="Imagem relacionada" style="w
 </script>
 
 <div class="article-body">${corpoArtigo.replace(/\n/g, "<br>")}</div>
-<p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
+<p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
   <nav style="margin-bottom: 1rem;">
