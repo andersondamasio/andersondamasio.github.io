@@ -16,47 +16,73 @@ const parser = new Parser({
 
 
 function extrairCategoriaDoConteudo(conteudo, tituloFallback) {
-  // Tenta extrair a categoria do final do conteúdo, ex: |Segurança|
   const match = conteudo.match(/\|(.+?)\|$/);
-  const categoria = match ? match[1].trim() : descobrirCategoria(tituloFallback);
-  
-  // Remove a linha final com a categoria (se existir)
+  const categoriaSugerida = match ? match[1].trim() : null;
+
   const conteudoLimpo = conteudo.replace(/\|(.+?)\|$/, '').trim();
 
-  return { categoria, conteudoLimpo };
+  // Carrega categorias já utilizadas em titulos.json
+  const titulosPath = "titulos.json";
+  let categoriasExistentes = [];
+
+  if (fs.existsSync(titulosPath)) {
+    const titulosGerados = JSON.parse(fs.readFileSync(titulosPath, "utf-8"));
+    categoriasExistentes = [...new Set(titulosGerados.map(t => t.categoria).filter(Boolean))];
+  }
+
+  let categoriaFinal;
+
+  if (categoriasExistentes.length >= 30) {
+    // Limita a categorias já existentes, usando o título para tentar uma mais coerente
+    const candidata = descobrirCategoria(tituloFallback, categoriasExistentes);
+    categoriaFinal = categoriasExistentes.includes(categoriaSugerida) ? categoriaSugerida : candidata;
+  } else {
+    // Ainda pode criar novas categorias
+    categoriaFinal = categoriaSugerida || descobrirCategoria(tituloFallback);
+  }
+
+  return { categoria: categoriaFinal, conteudoLimpo };
 }
 
-
-function descobrirCategoria(titulo) {
+function descobrirCategoria(titulo, categoriasPermitidas = null) {
   const texto = normalizarTexto(titulo);
 
-  if (/csharp|dotnet|maui|aspnet|blazor/.test(texto)) return "Programação";
-  if (/docker|kubernetes|devops|ci\/cd|terraform|ansible/.test(texto)) return "DevOps";
-  if (/chatgpt|openai|ia|inteligenciaartificial|llm|machinelearning|deeplearning|modelo[sg]?/.test(texto)) return "Inteligência Artificial";
-  if (/seguranca|ciberseguranca|lgpd|jwt|criptografia|privacidade/.test(texto)) return "Segurança";
-  if (/carreira|techlead|vaga|curriculo|entrevista|softskills|mentoria/.test(texto)) return "Carreira";
-  if (/frontend|html|css|javascript|react|vue|angular/.test(texto)) return "Front-end";
-  if (/backend|api|rest|graphql|microservico[s]?|webapi/.test(texto)) return "Back-end";
-  if (/banco[s]?dedados|postgres|mysql|sqlite|nosql|mongodb/.test(texto)) return "Banco de Dados";
-  if (/cloud|aws|azure|gcp|nuvem/.test(texto)) return "Cloud";
-  if (/blockchain|ethereum|bitcoin|cripto|nft|web3/.test(texto)) return "Blockchain";
-  if (/empreendedorismo|startup|pitch|investidor/.test(texto)) return "Empreendedorismo";
-  if (/negocio|gestao|okrs|kpis|estrategia/.test(texto)) return "Negócios";
-  if (/ci[êe]ncia|pesquisa|universidade|academic[oa]?/.test(texto)) return "Ciência";
-  if (/robot|robotica|arduino|automacao/.test(texto)) return "Robótica";
-  if (/veiculoeletrico|carroautonomo|automovel|tesla/.test(texto)) return "Tecnologia Automotiva";
-  if (/wearable|oculosinteligente|smartwatch|vestivel/.test(texto)) return "Tecnologia Vestível";
-  if (/visualizacao|grafico|dashboard|powerbi|dataviz/.test(texto)) return "Visualização de Dados";
-  if (/etica|moral|filosofia|bias|preconceitoalgoritmico/.test(texto)) return "Ética e Tecnologia";
-  if (/educacao|ensino|ead|plataformaeducacional|mooc/.test(texto)) return "Educação";
-  if (/automation|automacao\s?de\s?processos|rpa/.test(texto)) return "Automação";
-  if (/excel|planilha|vba|spreadsheet/.test(texto)) return "Produtividade";
-  if (/tarifa[s]?|preço[s]?|mercado|economia|imposto[s]?|taxa[s]?|aumento|vendas|comercial/.test(texto)) return "Economia e Mercado";
-if (/ciberataque|segurança|cyber|vazamento|hacker/.test(texto)) return "Segurança";
+  const categorias = [
+    { padrao: /csharp|dotnet|maui|aspnet|blazor/, nome: "Programação" },
+    { padrao: /docker|kubernetes|devops|ci\/cd|terraform|ansible/, nome: "DevOps" },
+    { padrao: /chatgpt|openai|ia|inteligenciaartificial|llm|machinelearning|deeplearning/, nome: "Inteligência Artificial" },
+    { padrao: /seguranca|ciberseguranca|lgpd|jwt|criptografia|privacidade|ciberataque|cyber|vazamento|hacker/, nome: "Segurança" },
+    { padrao: /carreira|techlead|vaga|curriculo|entrevista|softskills|mentoria/, nome: "Carreira" },
+    { padrao: /frontend|html|css|javascript|react|vue|angular/, nome: "Front-end" },
+    { padrao: /backend|api|rest|graphql|microservico[s]?|webapi/, nome: "Back-end" },
+    { padrao: /banco[s]?dedados|postgres|mysql|sqlite|nosql|mongodb/, nome: "Banco de Dados" },
+    { padrao: /cloud|aws|azure|gcp|nuvem/, nome: "Cloud" },
+    { padrao: /blockchain|ethereum|bitcoin|cripto|nft|web3/, nome: "Blockchain" },
+    { padrao: /empreendedorismo|startup|pitch|investidor/, nome: "Empreendedorismo" },
+    { padrao: /negocio|gestao|okrs|kpis|estrategia/, nome: "Negócios" },
+    { padrao: /ci[êe]ncia|pesquisa|universidade|academic[oa]?/, nome: "Ciência" },
+    { padrao: /robot|robotica|arduino|automacao/, nome: "Robótica" },
+    { padrao: /veiculoeletrico|carroautonomo|automovel|tesla/, nome: "Tecnologia Automotiva" },
+    { padrao: /wearable|oculosinteligente|smartwatch|vestivel/, nome: "Tecnologia Vestível" },
+    { padrao: /visualizacao|grafico|dashboard|powerbi|dataviz/, nome: "Visualização de Dados" },
+    { padrao: /etica|moral|filosofia|bias|preconceitoalgoritmico/, nome: "Ética e Tecnologia" },
+    { padrao: /educacao|ensino|ead|plataformaeducacional|mooc/, nome: "Educação" },
+    { padrao: /automation|automacao\s?de\s?processos|rpa/, nome: "Automação" },
+    { padrao: /excel|planilha|vba|spreadsheet/, nome: "Produtividade" },
+    { padrao: /tarifa[s]?|preço[s]?|mercado|economia|imposto[s]?|taxa[s]?|aumento|vendas|comercial/, nome: "Economia e Mercado" }
+  ];
 
+  for (const item of categorias) {
+    if (item.padrao.test(texto)) {
+      if (!categoriasPermitidas || categoriasPermitidas.includes(item.nome)) {
+        return item.nome;
+      }
+    }
+  }
 
-  return "Outros";
+  return categoriasPermitidas?.includes("Outros") ? "Outros" : (categoriasPermitidas ? categoriasPermitidas[0] : "Outros");
 }
+
 
 
 function gerarFooterNavegacao(base = ".") {
