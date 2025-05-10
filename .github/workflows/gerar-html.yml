@@ -19,6 +19,15 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Cache do npm
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+
       - name: Instalar dependências do sistema para o Sharp
         run: sudo apt-get update && sudo apt-get install -y libvips-dev
 
