@@ -59,16 +59,66 @@ function gerarPaginasPorCategoria(titulos) {
     }).join("\n");
 
     const slugCat = categoria.toLowerCase().replace(/\s+/g, '-');
-    const html = `
+const html = `
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><title>${categoria}</title></head>
+<head>
+  <meta charset="UTF-8">
+  <title>Categoria: ${categoria}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #0a66c2;
+    }
+    ul {
+      padding-left: 1.5rem;
+      line-height: 1.8;
+    }
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #0a66c2;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #666;
+    }
+  </style>
+</head>
 <body>
-${gerarHeaderNavegacao("..")}
-<main><h1>Categoria: ${categoria}</h1><ul>${links}</ul></main>
-${gerarFooterNavegacao("..")}
+  ${gerarHeaderNavegacao("..")}
+  <main>
+    <h1>Categoria: ${categoria}</h1>
+    <ul>
+      ${links}
+    </ul>
+  </main>
+  ${gerarFooterNavegacao("..")}
 </body>
 </html>`;
+
 
     fs.writeFileSync(`categoria/${slugCat}.html`, html);
   }
