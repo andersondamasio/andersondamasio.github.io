@@ -747,7 +747,8 @@ if (!existe) {
     data: now.toISOString(),
     dataFonte: noticia.data ? new Date(noticia.data).toISOString() : null,
     categoria
-}
+)};
+  
 
 
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
