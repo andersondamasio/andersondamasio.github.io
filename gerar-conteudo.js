@@ -15,6 +15,76 @@ const parser = new Parser({
 });
 
 
+
+function descobrirCategoria(titulo) {
+  const texto = normalizarTexto(titulo);
+  if (/csharp|dotnet|maui|aspnet/.test(texto)) return "Programação";
+  if (/docker|kubernetes|devops/.test(texto)) return "DevOps";
+  if (/chatgpt|ia|inteligenciaartificial|openai/.test(texto)) return "Inteligência Artificial";
+  if (/carreira|techlead|vaga/.test(texto)) return "Carreira";
+  return "Outros";
+}
+
+function gerarFooterNavegacao(base = ".") {
+  return \`
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="${base}/index.html">Início</a>
+    <a href="${base}/categoria/index.html">Artigos</a>
+    <a href="${base}/sobre.html">Sobre</a>
+    <a href="${base}/contato.html">Contato</a>
+    <a href="${base}/termos.html">Termos</a>
+    <a href="${base}/politica.html">Privacidade</a>
+    <a href="${base}/politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>\`;
+}
+
+function gerarPaginasPorCategoria(titulos) {
+  const agrupados = {};
+  for (const artigo of titulos) {
+    const cat = artigo.categoria || "Outros";
+    if (!agrupados[cat]) agrupados[cat] = [];
+    agrupados[cat].push(artigo);
+  }
+  if (!fs.existsSync("categoria")) fs.mkdirSync("categoria", { recursive: true });
+  for (const [categoria, artigos] of Object.entries(agrupados)) {
+    const links = artigos.map(t => \`<li><a href="../\${t.url}">\${t.titulo}</a></li>\`).join("\n");
+    const slugCat = categoria.toLowerCase().replace(/\s+/g, '-');
+    const html = \`
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>\${categoria}</title></head>
+<body>
+\${gerarHeaderNavegacao("..")}
+<main><h1>Categoria: \${categoria}</h1><ul>\${links}</ul></main>
+\${gerarFooterNavegacao("..")}
+</body>
+</html>\`;
+    fs.writeFileSync(\`categoria/\${slugCat}.html\`, html);
+  }
+  gerarIndiceCategorias(agrupados);
+}
+
+function gerarIndiceCategorias(agrupados) {
+  const links = Object.entries(agrupados).map(([categoria, artigos]) => {
+    const slug = categoria.toLowerCase().replace(/\s+/g, '-');
+    return \`<li><a href="\${slug}.html">\${categoria}</a> (\${artigos.length})</li>\`;
+  }).join("\n");
+  const html = \`
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>Artigos</title></head>
+<body>
+\${gerarHeaderNavegacao(".")}
+<main><h1>Artigos</h1><ul>\${links}</ul></main>
+\${gerarFooterNavegacao(".")}
+</body>
+</html>\`;
+  fs.writeFileSync("categoria/index.html", html);
+}
+
 const siteUrl = "https://www.andersondamasio.com.br";
 const apiKey = process.env.OPENAI_API_KEY;
 const twitterBearer = process.env.TWITTER_BEARER_TOKEN;
@@ -207,16 +277,18 @@ async function buscarNoticiaDevBlogs() {
 
 function gerarHeaderNavegacao(base = ".") {
   return `
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="${base}/index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="${base}/sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="${base}/contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-    <a href="${base}/termos.html" style="color: white; font-weight: 600; text-decoration: none;">Termos</a>
-    <a href="${base}/politica.html" style="color: white; font-weight: 600; text-decoration: none;">Privacidade</a>
+<header style="background: #0a66c2; padding: 1rem 2rem;">
+  <nav style="display: flex; justify-content: center; gap: 2rem;">
+    <a href="${base}/index.html">Início</a>
+    <a href="${base}/categoria/index.html">Artigos</a>
+    <a href="${base}/sobre.html">Sobre</a>
+    <a href="${base}/contato.html">Contato</a>
+    <a href="${base}/termos.html">Termos</a>
+    <a href="${base}/politica.html">Privacidade</a>
   </nav>
 </header>`;
 }
+
 
 
 
@@ -309,7 +381,11 @@ let corpoArtigo = linhas.filter(l => {
       .replace(/```[\s\S]*?\n([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
 
     const slug = slugify(titulo);
-    const filename = `artigos/${slug}.html`;
+    const categoria = descobrirCategoria(titulo);
+const categoriaSlug = categoria.toLowerCase().replace(/\s+/g, "-");
+const pastaCategoria = `artigos/${categoriaSlug}`;
+if (!fs.existsSync(pastaCategoria)) fs.mkdirSync(pastaCategoria, { recursive: true });
+const filename = `${pastaCategoria}/${slug}.html`;
 
     const resumo = corpoArtigo.split("\n").slice(0, 2).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
     const dataHoraFormatada = formatDateTime(now);
@@ -332,7 +408,7 @@ const html = `<!DOCTYPE html>
 <meta property="og:type" content="article">
 <meta property="og:title" content="${titulo}">
 <meta property="og:description" content="${resumo}">
-<meta property="og:url" content="https://www.andersondamasio.com.br/artigos/${slug}.html">
+<meta property="og:url" content="https://www.andersondamasio.com.br/${t.url}">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 
 <!-- Twitter -->
@@ -496,18 +572,26 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!fs.existsSync('artigos')) fs.mkdirSync('artigos');
     fs.writeFileSync(filename, html);
 
-   titulosGerados.push({
-  titulo,
-  noticiaOriginal: noticia.titulo,
-  url: noticia.url || "",
-  data: now.toISOString(),
-  dataFonte: noticia.data ? new Date(noticia.data).toISOString() : null
-});
+   
+// Verifica se o título já existe no titulosGerados
+const existe = titulosGerados.some(t => normalizarTexto(t.titulo) === normalizarTexto(titulo));
+if (!existe) {
+  titulosGerados.push({
+    titulo,
+    noticiaOriginal: noticia.titulo,
+    url: `artigos/${categoriaSlug}/${slug}.html`,
+    data: now.toISOString(),
+    dataFonte: noticia.data ? new Date(noticia.data).toISOString() : null,
+    categoria
+  });
+}
+
 
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
     gerarIndicesPaginados(titulosGerados);
     gerarSitemap(titulosGerados);
+gerarPaginasPorCategoria(titulosGerados);
 
    // Registrar introdução usada
     const usadasPath = './dados/usadas.json';
@@ -537,7 +621,7 @@ function gerarIndicesPaginados(titulos) {
     const links = artigosPagina.map(t => {
       const slug = slugify(t.titulo);
       const data = formatDateTime(new Date(t.data));
-      return `<li><a href="artigos/${slug}.html">${t.titulo}</a> <span style="color:#777;">(${data})</span></li>`;
+      return `<li><a href="${t.url}">${t.titulo}</a> <span style="color:#777;">(${data})</span></li>`;
     }).join("\n");
 
     const paginacao = paginas > 1 ? `
@@ -765,7 +849,7 @@ function gerarSitemap(titulos) {
     `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
     ...titulos.map(t => {
       const slug = slugify(t.titulo);
-      return `<url><loc>${siteUrl}/artigos/${slug}.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
+      return `<url><loc>${siteUrl}/${t.url}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
     })
   ].join("\n");
 
