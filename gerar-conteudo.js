@@ -577,12 +577,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
    
 // Verifica se o título já existe no titulosGerados
+const urlLocal = `artigos/${categoriaSlug}/${slug}.html`;
+
 const existe = titulosGerados.some(t => normalizarTexto(t.titulo) === normalizarTexto(titulo));
 if (!existe) {
   titulosGerados.push({
     titulo,
     noticiaOriginal: noticia.titulo,
-    url: `artigos/${categoriaSlug}/${slug}.html`,
+    url: urlLocal,
     data: now.toISOString(),
     dataFonte: noticia.data ? new Date(noticia.data).toISOString() : null,
     categoria
