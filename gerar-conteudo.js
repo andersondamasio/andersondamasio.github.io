@@ -1,4 +1,4 @@
-
+9
 const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
@@ -750,8 +750,7 @@ if (!existe) {
     url: urlLocal,
     data: now.toISOString(),
     dataFonte: noticia.data ? new Date(noticia.data).toISOString() : null,
-    categoria: categoria.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, '-')
-  });
+    categoria
 }
 
 
