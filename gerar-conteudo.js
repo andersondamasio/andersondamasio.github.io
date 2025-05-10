@@ -77,9 +77,9 @@ function gerarIndiceCategorias(agrupados) {
 <html lang="pt-BR">
 <head><meta charset="UTF-8"><title>Artigos</title></head>
 <body>
-${gerarHeaderNavegacao(".")}
+${gerarHeaderNavegacao("..")}
 <main><h1>Artigos</h1><ul>${links}</ul></main>
-${gerarFooterNavegacao(".")}
+${gerarFooterNavegacao("..")}
 </body>
 </html>`;
   fs.writeFileSync("categoria/index.html", html);
@@ -382,7 +382,10 @@ let corpoArtigo = linhas.filter(l => {
 
     const slug = slugify(titulo);
     const categoria = descobrirCategoria(titulo);
-const categoriaSlug = categoria.toLowerCase().replace(/\s+/g, "-");
+const categoriaSlug = categoria
+  .normalize("NFD").replace(/[̀-ͯ]/g, "")     // remove acentos
+  .toLowerCase().replace(/[^a-z0-9]+/g, '-'); // substitui tudo que não for letra/número por hífen
+
 const pastaCategoria = `artigos/${categoriaSlug}`;
 if (!fs.existsSync(pastaCategoria)) fs.mkdirSync(pastaCategoria, { recursive: true });
 const filename = `${pastaCategoria}/${slug}.html`;
