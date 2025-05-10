@@ -1192,7 +1192,7 @@
   {
     "titulo": "Arquitetura de Software: Decifrando os 40min de Estudo que Parecem Grego",
     "noticiaOriginal": "40min estudando arquitetura de software e eu sinto que to lendo em grego",
-    "url": "artigos/outros/arquitetura-de-software-decifrando-os-40min-de-estudo-que-parecem-grego.html",
+    "url": "artigos/arquitetura-de-software-decifrando-os-40min-de-estudo-que-parecem-grego.html",
     "data": "2025-05-04T15:40:42.817Z",
     "dataFonte": "2025-05-02T18:31:17.000Z",
     "categoria": "Outros"
@@ -1200,7 +1200,7 @@
   {
     "titulo": "Fundamentos da Arquitetura de Software: Desvendando os Segredos por Trás de @LucasrbSouza",
     "noticiaOriginal": "@LucasrbSouza Esse é o Fundamentos da Arquitetura de Software",
-    "url": "artigos/outros/fundamentos-da-arquitetura-de-software-desvendando-os-segredos-por-tras-de-lucasrbsouza.html",
+    "url": "artigos/fundamentos-da-arquitetura-de-software-desvendando-os-segredos-por-tras-de-lucasrbsouza.html",
     "data": "2025-05-04T16:14:46.502Z",
     "dataFonte": "2025-05-04T16:00:19.000Z",
     "categoria": "Outros"
@@ -1216,7 +1216,7 @@
   {
     "titulo": "GitHub Copilot: A revolução da codificação colaborativa no Visual Studio 17.14 Preview 3",
     "noticiaOriginal": "GitHub Copilot Highlights in Visual Studio 17.14 Preview 3 (Available Now)",
-    "url": "artigos/outros/github-copilot-a-revolucao-da-codificacao-colaborativa-no-visual-studio-17-14-preview-3.html",
+    "url": "artigos/github-copilot-a-revolucao-da-codificacao-colaborativa-no-visual-studio-17-14-preview-3.html",
     "data": "2025-05-04T16:39:53.654Z",
     "dataFonte": "2025-04-16T18:24:10.000Z",
     "categoria": "Outros"
@@ -1232,7 +1232,7 @@
   {
     "titulo": "Analisando o Uso de CPU em Múltiplos Processos no Visual Studio",
     "noticiaOriginal": "Multi-Process CPU Usage Analysis in Visual Studio",
-    "url": "artigos/outros/analisando-o-uso-de-cpu-em-multiplos-processos-no-visual-studio.html",
+    "url": "artigos/analisando-o-uso-de-cpu-em-multiplos-processos-no-visual-studio.html",
     "data": "2025-05-04T17:04:23.046Z",
     "dataFonte": "2025-04-08T16:17:16.000Z",
     "categoria": "Outros"
@@ -1240,7 +1240,7 @@
   {
     "titulo": "O Pluralsight Acaba de Evoluir: Descubra Como Aproveitar ao Máximo essa Nova Possibilidade",
     "noticiaOriginal": "Your Pluralsight Benefit Just Got Better",
-    "url": "artigos/outros/o-pluralsight-acaba-de-evoluir-descubra-como-aproveitar-ao-maximo-essa-nova-possibilidade.html",
+    "url": "artigos/o-pluralsight-acaba-de-evoluir-descubra-como-aproveitar-ao-maximo-essa-nova-possibilidade.html",
     "data": "2025-05-04T17:14:03.543Z",
     "dataFonte": "2025-04-03T13:45:56.000Z",
     "categoria": "Outros"
@@ -1256,7 +1256,7 @@
   {
     "titulo": "Conectando talentos e inovação: Hightouch (YC S19) está recrutando!",
     "noticiaOriginal": "Hightouch (YC S19) Is Hiring",
-    "url": "artigos/outros/conectando-talentos-e-inovacao-hightouch-yc-s19-esta-recrutando.html",
+    "url": "artigos/conectando-talentos-e-inovacao-hightouch-yc-s19-esta-recrutando.html",
     "data": "2025-05-04T17:26:33.922Z",
     "dataFonte": "2025-05-04T17:00:38.000Z",
     "categoria": "Outros"
@@ -1264,7 +1264,7 @@
   {
     "titulo": "Desvendando os Segredos da Amostragem LLM na Era Moderna",
     "noticiaOriginal": "Dummy's Guide to Modern LLM Sampling",
-    "url": "artigos/outros/desvendando-os-segredos-da-amostragem-llm-na-era-moderna.html",
+    "url": "artigos/desvendando-os-segredos-da-amostragem-llm-na-era-moderna.html",
     "data": "2025-05-04T17:31:35.029Z",
     "dataFonte": "2025-05-04T16:26:28.000Z",
     "categoria": "Outros"
@@ -1272,7 +1272,7 @@
   {
     "titulo": "Dominando os Padrões de Design: 5 cursos imperdíveis para evoluir como desenvolvedor",
     "noticiaOriginal": "5 Best Courses to learn Design Pattern\n1. Design Patterns in Java - \n2. Grokking the OOP Design - \n3. Basics of Software Architecture & Design Patterns  \n4. Master Microservices",
-    "url": "artigos/outros/dominando-os-padroes-de-design-5-cursos-imperdiveis-para-evoluir-como-desenvolvedor.html",
+    "url": "artigos/dominando-os-padroes-de-design-5-cursos-imperdiveis-para-evoluir-como-desenvolvedor.html",
     "data": "2025-05-04T17:37:34.628Z",
     "dataFonte": "2025-05-04T08:38:16.000Z",
     "categoria": "Outros"
@@ -1280,7 +1280,7 @@
   {
     "titulo": "Título:",
     "noticiaOriginal": "Where should authorization live in your software architecture? Should it be inside the domain model if you're using Domain-Driven Design (DDD)? Or should authorization always stay in the application layer?",
-    "url": "artigos/outros/titulo.html",
+    "url": "artigos/titulo.html",
     "data": "2025-05-04T17:54:40.890Z",
     "dataFonte": "2025-04-30T17:57:50.000Z",
     "categoria": "Outros"
@@ -1288,7 +1288,7 @@
   {
     "titulo": "Refletindo sobre a Construção de Visualizações de Espelho de TMT com LLM",
     "noticiaOriginal": "Building TMT Mirror Visualization with LLM",
-    "url": "artigos/outros/refletindo-sobre-a-construcao-de-visualizacoes-de-espelho-de-tmt-com-llm.html",
+    "url": "artigos/refletindo-sobre-a-construcao-de-visualizacoes-de-espelho-de-tmt-com-llm.html",
     "data": "2025-05-04T17:59:31.645Z",
     "dataFonte": "2025-04-30T13:54:00.000Z",
     "categoria": "Outros"
@@ -1304,7 +1304,7 @@
   {
     "titulo": "Repositórios do GitHub: uma paixão ou uma obsessão?",
     "noticiaOriginal": "Confession:\n\nI can't stop collecting GitHub repos.\n\nHere are 7 popular GitHub repos on software architecture:\n\n(for .NET developers)\n\n1. Evolutionary architecture by example - \n\n2. Modular monolith application with DDD - \n\n3. .NET 8",
-    "url": "artigos/outros/repositorios-do-github-uma-paixao-ou-uma-obsessao.html",
+    "url": "artigos/repositorios-do-github-uma-paixao-ou-uma-obsessao.html",
     "data": "2025-05-04T18:22:46.430Z",
     "dataFonte": "2025-04-29T06:25:46.000Z",
     "categoria": "Outros"
@@ -1312,7 +1312,7 @@
   {
     "titulo": "Arquitetura de Software: Dos Trade-offs à Visão Holística",
     "noticiaOriginal": "@default666y @dionisiodev Olá! Aqui estão os 5 pontos mais importantes do livro *Fundamentos da Arquitetura de Software*:\n\n1. **Visão Holística**: Arquitetura combina estrutura, características (ex.: escalabilidade) e decisões, equilibrando necessidades técnicas e de negócios.\n2. **Trade-offs**: Toda",
-    "url": "artigos/outros/arquitetura-de-software-dos-trade-offs-a-visao-holistica.html",
+    "url": "artigos/arquitetura-de-software-dos-trade-offs-a-visao-holistica.html",
     "data": "2025-05-04T19:14:14.590Z",
     "dataFonte": "2025-04-27T16:47:00.000Z",
     "categoria": "Outros"
@@ -1320,7 +1320,7 @@
   {
     "titulo": "Desvendando o Poder dos Padrões de Design na Arquitetura de Software: Eleve seu Jogo no Desenvolvimento!",
     "noticiaOriginal": "Discover the power of design patterns in simplifying software architecture! Elevate your development game. #DesignPatterns #Architecture #SoftwareDev Visit us at",
-    "url": "artigos/outros/desvendando-o-poder-dos-padroes-de-design-na-arquitetura-de-software-eleve-seu-jogo-no-desenvolvimento.html",
+    "url": "artigos/desvendando-o-poder-dos-padroes-de-design-na-arquitetura-de-software-eleve-seu-jogo-no-desenvolvimento.html",
     "data": "2025-05-04T20:18:07.597Z",
     "dataFonte": "2025-04-27T01:04:35.000Z",
     "categoria": "Outros"
@@ -1328,7 +1328,7 @@
   {
     "titulo": "Desbravando o Futuro da Arquitetura de Software em 2025",
     "noticiaOriginal": "Resources to Learn Software Architecture in 2025 \n\nSoftware Design Books\nSome books that can help are DDIA, System Design Volume 1 & 2, Clean Architecture, Domain-Driven Design, and Software Architecture: the Hard Parts\n\nTech Blogs and Newsletters\nRead technical blogs by",
-    "url": "artigos/outros/desbravando-o-futuro-da-arquitetura-de-software-em-2025.html",
+    "url": "artigos/desbravando-o-futuro-da-arquitetura-de-software-em-2025.html",
     "data": "2025-05-04T21:15:31.759Z",
     "dataFonte": "2025-04-25T08:02:25.000Z",
     "categoria": "Outros"
@@ -1352,7 +1352,7 @@
   {
     "titulo": "**Título:** Revolucionando sua arquitetura de software com padrões de design distribuído",
     "noticiaOriginal": "🚨 Tomorrow’s the day! Discover how distributed design patterns can transform your software architecture. \n\n🌟 Join us April 22 for expert insights and strategies. \n\n🗓️ Secure your spot now!  \n\n#DistributedSystems #DesignPatterns",
-    "url": "artigos/outros/titulo-revolucionando-sua-arquitetura-de-software-com-padroes-de-design-distribuido.html",
+    "url": "artigos/titulo-revolucionando-sua-arquitetura-de-software-com-padroes-de-design-distribuido.html",
     "data": "2025-05-05T01:27:01.321Z",
     "dataFonte": "2025-04-21T16:00:49.000Z",
     "categoria": "Outros"
@@ -1360,7 +1360,7 @@
   {
     "titulo": "\"Desvendando os Segredos do Deepseek: Uma Visão Técnica Profunda\"",
     "noticiaOriginal": "Additional explanatory material for the Deepseek Overview",
-    "url": "artigos/outros/desvendando-os-segredos-do-deepseek-uma-visao-tecnica-profunda.html",
+    "url": "artigos/desvendando-os-segredos-do-deepseek-uma-visao-tecnica-profunda.html",
     "data": "2025-05-05T03:11:34.985Z",
     "dataFonte": "2025-04-21T13:07:00.000Z",
     "categoria": "Outros"
@@ -1368,7 +1368,7 @@
   {
     "titulo": "Descomplicando o \"Clean Code\": Por que simplicidade é mais importante",
     "noticiaOriginal": "@thairizard @Grichabb Eu nunca fui mto com esse lance de “clean code”, pra mim o mais importante é “simple code”.\nO argumento principal do vídeo é que programadores são ensinados a usarem “design patterns” e “software architecture” e acabam esquecendo performance e simplicidade.",
-    "url": "artigos/outros/descomplicando-o-clean-code-por-que-simplicidade-e-mais-importante.html",
+    "url": "artigos/descomplicando-o-clean-code-por-que-simplicidade-e-mais-importante.html",
     "data": "2025-05-05T04:21:59.593Z",
     "dataFonte": "2025-04-20T14:13:28.000Z",
     "categoria": "Outros"
@@ -1376,7 +1376,7 @@
   {
     "titulo": "Arquitetura de Software: Acelerando o Desenvolvimento com Design Patterns",
     "noticiaOriginal": "@AlfredoMenezes6 Agora montar uma arquitetura de software, ajudar na decisão e gerar template de Design Patterns ideias, seguindo princípios XP ou SOLID, isso funciona, bem e acelera desenvolvimento.\nNovamente, ótimo como ferramenta aprenda a usar!",
-    "url": "artigos/outros/arquitetura-de-software-acelerando-o-desenvolvimento-com-design-patterns.html",
+    "url": "artigos/arquitetura-de-software-acelerando-o-desenvolvimento-com-design-patterns.html",
     "data": "2025-05-05T05:18:35.134Z",
     "dataFonte": "2025-04-18T23:56:52.000Z",
     "categoria": "Outros"
@@ -1384,7 +1384,7 @@
   {
     "titulo": "Azure Boards + GitHub: A combinação perfeita para aprimorar a colaboração em seus projetos",
     "noticiaOriginal": "Azure Boards + GitHub: Recent Updates",
-    "url": "artigos/outros/azure-boards-github-a-combinacao-perfeita-para-aprimorar-a-colaboracao-em-seus-projetos.html",
+    "url": "artigos/azure-boards-github-a-combinacao-perfeita-para-aprimorar-a-colaboracao-em-seus-projetos.html",
     "data": "2025-05-05T06:27:07.209Z",
     "dataFonte": "2025-04-18T14:19:12.000Z",
     "categoria": "Outros"
@@ -1392,7 +1392,7 @@
   {
     "titulo": "Desvendando os Segredos da Arquitetura de Software e Design de Código Limpo em OOP",
     "noticiaOriginal": "Software Architecture and Clean Code Design in OOP\n\nLearn design patterns and principles for Object-oriented programming to make your software scalable and easy to maintain\n\nCoupon code is APRIL_FREE2_2025",
-    "url": "artigos/outros/desvendando-os-segredos-da-arquitetura-de-software-e-design-de-codigo-limpo-em-oop.html",
+    "url": "artigos/desvendando-os-segredos-da-arquitetura-de-software-e-design-de-codigo-limpo-em-oop.html",
     "data": "2025-05-05T07:18:35.311Z",
     "dataFonte": "2025-04-18T08:53:26.000Z",
     "categoria": "Outros"
@@ -1432,7 +1432,7 @@
   {
     "titulo": "Integrando Boards com GitHub Enterprise Cloud: Desafios e Oportunidades",
     "noticiaOriginal": "Boards Integration with GitHub Enterprise Cloud and Data Residency (Public Preview)",
-    "url": "artigos/outros/integrando-boards-com-github-enterprise-cloud-desafios-e-oportunidades.html",
+    "url": "artigos/integrando-boards-com-github-enterprise-cloud-desafios-e-oportunidades.html",
     "data": "2025-05-05T12:36:22.037Z",
     "dataFonte": "2025-04-04T17:24:29.000Z",
     "categoria": "Outros"
@@ -1448,7 +1448,7 @@
   {
     "titulo": "CDN e a Revolução nas URLs dos Agentes em Pipelines de Desenvolvimento",
     "noticiaOriginal": "CDN Domain URL change for Agents in Pipelines",
-    "url": "artigos/outros/cdn-e-a-revolucao-nas-urls-dos-agentes-em-pipelines-de-desenvolvimento.html",
+    "url": "artigos/cdn-e-a-revolucao-nas-urls-dos-agentes-em-pipelines-de-desenvolvimento.html",
     "data": "2025-05-05T14:18:07.936Z",
     "dataFonte": "2025-04-03T11:05:07.000Z",
     "categoria": "Outros"
@@ -1456,7 +1456,7 @@
   {
     "titulo": "TFVC Policies Storage Updates: A Revolução Silenciosa nos Sistemas de Controle de Versão",
     "noticiaOriginal": "TFVC Policies Storage Updates",
-    "url": "artigos/outros/tfvc-policies-storage-updates-a-revolucao-silenciosa-nos-sistemas-de-controle-de-versao.html",
+    "url": "artigos/tfvc-policies-storage-updates-a-revolucao-silenciosa-nos-sistemas-de-controle-de-versao.html",
     "data": "2025-05-05T15:19:05.646Z",
     "dataFonte": "2025-04-02T21:02:11.000Z",
     "categoria": "Outros"
@@ -1464,7 +1464,7 @@
   {
     "titulo": "O Sequestro de Robert Caro: Uma Lição Sobre Segurança em Sistemas",
     "noticiaOriginal": "I've been kidnapped by Robert Caro",
-    "url": "artigos/outros/o-sequestro-de-robert-caro-uma-licao-sobre-seguranca-em-sistemas.html",
+    "url": "artigos/o-sequestro-de-robert-caro-uma-licao-sobre-seguranca-em-sistemas.html",
     "data": "2025-05-05T16:23:24.521Z",
     "dataFonte": "2025-04-01T21:22:00.000Z",
     "categoria": "Outros"
@@ -1488,7 +1488,7 @@
   {
     "titulo": "Debugging com o Visualizador AI-powered para IEnumerable: muito mais do que parece",
     "noticiaOriginal": "Debugging with the AI-powered IEnumerable visualizer",
-    "url": "artigos/outros/debugging-com-o-visualizador-ai-powered-para-ienumerable-muito-mais-do-que-parece.html",
+    "url": "artigos/debugging-com-o-visualizador-ai-powered-para-ienumerable-muito-mais-do-que-parece.html",
     "data": "2025-05-05T18:01:57.937Z",
     "dataFonte": "2025-03-26T15:00:31.000Z",
     "categoria": "Outros"
@@ -1496,7 +1496,7 @@
   {
     "titulo": "Desenvolvimento de Software: O Poder das Habilidades do Desenvolvedor na Codificação Agente",
     "noticiaOriginal": "The role of developer skills in agentic coding",
-    "url": "artigos/outros/desenvolvimento-de-software-o-poder-das-habilidades-do-desenvolvedor-na-codificacao-agente.html",
+    "url": "artigos/desenvolvimento-de-software-o-poder-das-habilidades-do-desenvolvedor-na-codificacao-agente.html",
     "data": "2025-05-05T18:21:37.984Z",
     "dataFonte": "2025-03-25T14:39:00.000Z",
     "categoria": "Outros"
@@ -1504,7 +1504,7 @@
   {
     "titulo": "Visual Studio Hub: A Revolução na Integração de Desenvolvimento",
     "noticiaOriginal": "Introducing Visual Studio Hub",
-    "url": "artigos/outros/visual-studio-hub-a-revolucao-na-integracao-de-desenvolvimento.html",
+    "url": "artigos/visual-studio-hub-a-revolucao-na-integracao-de-desenvolvimento.html",
     "data": "2025-05-05T19:12:31.618Z",
     "dataFonte": "2025-03-24T14:44:42.000Z",
     "categoria": "Outros"
@@ -1512,7 +1512,7 @@
   {
     "titulo": "Explorando o Suporte a Java, JS e Python nos Planos de Teste",
     "noticiaOriginal": "Introducing Java, JS and Python support in Test Plans",
-    "url": "artigos/outros/explorando-o-suporte-a-java-js-e-python-nos-planos-de-teste.html",
+    "url": "artigos/explorando-o-suporte-a-java-js-e-python-nos-planos-de-teste.html",
     "data": "2025-05-05T20:19:46.347Z",
     "dataFonte": "2025-03-21T06:50:20.000Z",
     "categoria": "Outros"
@@ -1520,7 +1520,7 @@
   {
     "titulo": "Como remover \"X\" dos passaportes dos EUA: uma abordagem técnica",
     "noticiaOriginal": "Commenting on removing \"X\" on US passports",
-    "url": "artigos/outros/como-remover-x-dos-passaportes-dos-eua-uma-abordagem-tecnica.html",
+    "url": "artigos/como-remover-x-dos-passaportes-dos-eua-uma-abordagem-tecnica.html",
     "data": "2025-05-05T21:16:36.058Z",
     "dataFonte": "2025-02-26T16:49:00.000Z",
     "categoria": "Outros"
@@ -1528,7 +1528,7 @@
   {
     "titulo": "GenAI Patterns: Desvendando os Segredos do Fine Tuning",
     "noticiaOriginal": "GenAI Patterns: Fine Tuning",
-    "url": "artigos/outros/genai-patterns-desvendando-os-segredos-do-fine-tuning.html",
+    "url": "artigos/genai-patterns-desvendando-os-segredos-do-fine-tuning.html",
     "data": "2025-05-05T22:17:26.931Z",
     "dataFonte": "2025-02-25T12:20:00.000Z",
     "categoria": "Outros"
@@ -1544,7 +1544,7 @@
   {
     "titulo": "Desvendando o Poder do LLM Reasoning para Tarefas de Software",
     "noticiaOriginal": "What role does LLM reasoning play for software tasks?",
-    "url": "artigos/outros/desvendando-o-poder-do-llm-reasoning-para-tarefas-de-software.html",
+    "url": "artigos/desvendando-o-poder-do-llm-reasoning-para-tarefas-de-software.html",
     "data": "2025-05-06T01:24:12.068Z",
     "dataFonte": "2025-02-18T00:02:00.000Z",
     "categoria": "Outros"
@@ -1552,7 +1552,7 @@
   {
     "titulo": "GenAI Patterns: Revolucionando o Reranker em 2025",
     "noticiaOriginal": "GenAI Patterns: Reranker",
-    "url": "artigos/outros/genai-patterns-revolucionando-o-reranker-em-2025.html",
+    "url": "artigos/genai-patterns-revolucionando-o-reranker-em-2025.html",
     "data": "2025-05-06T03:07:02.315Z",
     "dataFonte": "2025-02-13T10:16:00.000Z",
     "categoria": "Outros"
@@ -1560,7 +1560,7 @@
   {
     "titulo": "GenAI Patterns: Repensando suas Queries",
     "noticiaOriginal": "GenAI Patterns: Query Rewriting",
-    "url": "artigos/outros/genai-patterns-repensando-suas-queries.html",
+    "url": "artigos/genai-patterns-repensando-suas-queries.html",
     "data": "2025-05-06T04:21:14.049Z",
     "dataFonte": "2025-02-11T20:58:00.000Z",
     "categoria": "Outros"
@@ -1568,7 +1568,7 @@
   {
     "titulo": "Explorando o Poder do DeepSeek: Uma Análise Técnica Profunda",
     "noticiaOriginal": "The DeepSeek Series: A Technical Overview",
-    "url": "artigos/outros/explorando-o-poder-do-deepseek-uma-analise-tecnica-profunda.html",
+    "url": "artigos/explorando-o-poder-do-deepseek-uma-analise-tecnica-profunda.html",
     "data": "2025-05-06T05:18:19.432Z",
     "dataFonte": "2025-02-06T14:17:00.000Z",
     "categoria": "Outros"
@@ -1576,7 +1576,7 @@
   {
     "titulo": "Desvendando os Segredos do GenAI: Limitações do RAG e o Retriever Híbrido",
     "noticiaOriginal": "GenAI Patterns: RAG Limitations and Hybrid Retriever",
-    "url": "artigos/outros/desvendando-os-segredos-do-genai-limitacoes-do-rag-e-o-retriever-hibrido.html",
+    "url": "artigos/desvendando-os-segredos-do-genai-limitacoes-do-rag-e-o-retriever-hibrido.html",
     "data": "2025-05-06T06:26:01.673Z",
     "dataFonte": "2025-02-05T15:03:00.000Z",
     "categoria": "Outros"
@@ -1592,7 +1592,7 @@
   {
     "titulo": "Título:",
     "noticiaOriginal": "GenAI Patterns: Retrieval Augmented Generation (RAG)",
-    "url": "artigos/outros/titulo.html",
+    "url": "artigos/titulo.html",
     "data": "2025-05-06T08:24:36.275Z",
     "dataFonte": "2025-02-04T14:57:00.000Z",
     "categoria": "Outros"
@@ -1600,7 +1600,7 @@
   {
     "titulo": "Floresta e Deserto: Onde a arquitetura de software encontra a natureza",
     "noticiaOriginal": "Bliki: Forest And Desert",
-    "url": "artigos/outros/floresta-e-deserto-onde-a-arquitetura-de-software-encontra-a-natureza.html",
+    "url": "artigos/floresta-e-deserto-onde-a-arquitetura-de-software-encontra-a-natureza.html",
     "data": "2025-05-06T09:19:45.239Z",
     "dataFonte": "2025-01-30T05:00:00.000Z",
     "categoria": "Outros"
@@ -1608,7 +1608,7 @@
   {
     "titulo": "Desvendando os Segredos dos Embeddings em Produtos GenAI",
     "noticiaOriginal": "Embeddings in GenAI Products",
-    "url": "artigos/outros/desvendando-os-segredos-dos-embeddings-em-produtos-genai.html",
+    "url": "artigos/desvendando-os-segredos-dos-embeddings-em-produtos-genai.html",
     "data": "2025-05-06T10:19:23.185Z",
     "dataFonte": "2025-01-29T15:55:00.000Z",
     "categoria": "Outros"
@@ -1624,7 +1624,7 @@
   {
     "titulo": "Podcast com Luca Rossi: O Futuro da Comunicação Online",
     "noticiaOriginal": "Podcast with Luca Rossi",
-    "url": "artigos/outros/podcast-com-luca-rossi-o-futuro-da-comunicacao-online.html",
+    "url": "artigos/podcast-com-luca-rossi-o-futuro-da-comunicacao-online.html",
     "data": "2025-05-06T12:38:14.656Z",
     "dataFonte": "2025-01-24T18:01:00.000Z",
     "categoria": "Outros"
@@ -1632,7 +1632,7 @@
   {
     "titulo": "Padrões de Design: o segredo por trás dos frameworks",
     "noticiaOriginal": "@unclebobmartin Design Patterns is still one of my favorite books. It opened my eyes to software architecture. Developers who criticize patterns often overlook that the frameworks they depend on are full of those very patterns. It's often an experience level and as they say now \"skills issue\".",
-    "url": "artigos/outros/padroes-de-design-o-segredo-por-tras-dos-frameworks.html",
+    "url": "artigos/padroes-de-design-o-segredo-por-tras-dos-frameworks.html",
     "data": "2025-05-06T13:30:54.100Z",
     "dataFonte": "2025-05-06T13:21:12.000Z",
     "categoria": "Outros"
@@ -1640,7 +1640,7 @@
   {
     "titulo": "Desvendando o Poder das Chamadas de Função com LLMs",
     "noticiaOriginal": "Function calling using LLMs",
-    "url": "artigos/outros/desvendando-o-poder-das-chamadas-de-funcao-com-llms.html",
+    "url": "artigos/desvendando-o-poder-das-chamadas-de-funcao-com-llms.html",
     "data": "2025-05-06T14:18:17.602Z",
     "dataFonte": "2025-05-06T13:02:00.000Z",
     "categoria": "Outros"
@@ -1648,7 +1648,7 @@
   {
     "titulo": "Design Patterns: A Beleza e a Armadilha na Arquitetura de Software",
     "noticiaOriginal": "@unclebobmartin The criticism is not \"they're complicated.\" Some design patterns are ok as an abstract vocabulary. But they quickly become problematic when they are implemented literally. And they immediately become disastrous when they are treated as the atomic units of software architecture.",
-    "url": "artigos/outros/design-patterns-a-beleza-e-a-armadilha-na-arquitetura-de-software.html",
+    "url": "artigos/design-patterns-a-beleza-e-a-armadilha-na-arquitetura-de-software.html",
     "data": "2025-05-06T15:24:05.387Z",
     "dataFonte": "2025-05-06T13:59:31.000Z",
     "categoria": "Outros"
@@ -1664,7 +1664,7 @@
   {
     "titulo": "Codemods: A revolução da refatoração de código",
     "noticiaOriginal": "Codemods in other languages",
-    "url": "artigos/outros/codemods-a-revolucao-da-refatoracao-de-codigo.html",
+    "url": "artigos/codemods-a-revolucao-da-refatoracao-de-codigo.html",
     "data": "2025-05-06T17:16:04.159Z",
     "dataFonte": "2025-01-22T15:54:00.000Z",
     "categoria": "Outros"
@@ -1672,7 +1672,7 @@
   {
     "titulo": "Desvendando os Erros Comuns dos Codemods",
     "noticiaOriginal": "Fixing Common Pitfalls of Codemods",
-    "url": "artigos/outros/desvendando-os-erros-comuns-dos-codemods.html",
+    "url": "artigos/desvendando-os-erros-comuns-dos-codemods.html",
     "data": "2025-05-06T18:25:22.325Z",
     "dataFonte": "2025-01-15T14:43:00.000Z",
     "categoria": "Outros"
@@ -1696,7 +1696,7 @@
   {
     "titulo": "Automatizando Mudanças em APIs com Codemods: O Poder do Refactoring",
     "noticiaOriginal": "Refactoring with Codemods to Automate API Changes",
-    "url": "artigos/outros/automatizando-mudancas-em-apis-com-codemods-o-poder-do-refactoring.html",
+    "url": "artigos/automatizando-mudancas-em-apis-com-codemods-o-poder-do-refactoring.html",
     "data": "2025-05-06T21:17:00.927Z",
     "dataFonte": "2025-01-07T14:34:00.000Z",
     "categoria": "Outros"
@@ -1704,7 +1704,7 @@
   {
     "titulo": "Design Tokens: A Arquitetura Secreta por Trás de Interfaces de Usuário Incríveis",
     "noticiaOriginal": "Design Token-Based UI Architecture",
-    "url": "artigos/outros/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html",
+    "url": "artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html",
     "data": "2025-05-06T22:17:15.566Z",
     "dataFonte": "2024-12-12T09:36:00.000Z",
     "categoria": "Outros"
@@ -1712,7 +1712,7 @@
   {
     "titulo": "Desenvolvendo Produtos de Dados: O Próximo Passo",
     "noticiaOriginal": "Designing Data Products: next steps",
-    "url": "artigos/outros/desenvolvendo-produtos-de-dados-o-proximo-passo.html",
+    "url": "artigos/desenvolvendo-produtos-de-dados-o-proximo-passo.html",
     "data": "2025-05-06T23:16:41.848Z",
     "dataFonte": "2024-12-10T14:22:00.000Z",
     "categoria": "Outros"
@@ -1720,7 +1720,7 @@
   {
     "titulo": "Construindo Data Products: A Arte da Generalização na Arquitetura de Software",
     "noticiaOriginal": "Generalizing the design of data products",
-    "url": "artigos/outros/construindo-data-products-a-arte-da-generalizacao-na-arquitetura-de-software.html",
+    "url": "artigos/construindo-data-products-a-arte-da-generalizacao-na-arquitetura-de-software.html",
     "data": "2025-05-07T01:25:09.864Z",
     "dataFonte": "2024-12-04T15:36:00.000Z",
     "categoria": "Outros"
@@ -1728,7 +1728,7 @@
   {
     "titulo": "Unity: O que está por trás da polêmica com o VLC?",
     "noticiaOriginal": "Unity’s Open-Source Double Standard: the ban of VLC",
-    "url": "artigos/outros/unity-o-que-esta-por-tras-da-polemica-com-o-vlc.html",
+    "url": "artigos/unity-o-que-esta-por-tras-da-polemica-com-o-vlc.html",
     "data": "2025-05-07T14:31:34.770Z",
     "dataFonte": "2025-05-07T12:33:40.000Z",
     "categoria": "Outros"
@@ -1736,7 +1736,7 @@
   {
     "titulo": "Lançamentos musicais e distribuição online em 1996: os segredos revelados por Bowie",
     "noticiaOriginal": "Telling Lies: Bowie and Online Music Distribution in 1996",
-    "url": "artigos/outros/lancamentos-musicais-e-distribuicao-online-em-1996-os-segredos-revelados-por-bowie.html",
+    "url": "artigos/lancamentos-musicais-e-distribuicao-online-em-1996-os-segredos-revelados-por-bowie.html",
     "data": "2025-05-07T16:23:50.759Z",
     "dataFonte": "2025-05-07T15:58:41.000Z",
     "categoria": "Outros"
@@ -1744,7 +1744,7 @@
   {
     "titulo": "O poder da contratação de Engenheiros Sênior: uma análise prática",
     "noticiaOriginal": "Motion (YC W20) Is Hiring a Senior Engineers",
-    "url": "artigos/outros/o-poder-da-contratacao-de-engenheiros-senior-uma-analise-pratica.html",
+    "url": "artigos/o-poder-da-contratacao-de-engenheiros-senior-uma-analise-pratica.html",
     "data": "2025-05-07T17:16:18.072Z",
     "dataFonte": "2025-05-07T17:01:45.000Z",
     "categoria": "Outros"
@@ -1752,7 +1752,7 @@
   {
     "titulo": "Três Capítulos na Cloudflare: De Programador a CTO a Membro do Conselho",
     "noticiaOriginal": "Three Chapters at Cloudflare: Programmer to CTO to Board of Directors",
-    "url": "artigos/outros/tres-capitulos-na-cloudflare-de-programador-a-cto-a-membro-do-conselho.html",
+    "url": "artigos/tres-capitulos-na-cloudflare-de-programador-a-cto-a-membro-do-conselho.html",
     "data": "2025-05-07T18:25:46.362Z",
     "dataFonte": "2025-05-07T17:43:06.000Z",
     "categoria": "Outros"
@@ -1760,7 +1760,7 @@
   {
     "titulo": "\"Analytics Livre: O Futuro da Análise de Dados na Web\"",
     "noticiaOriginal": "Open source Google Analytics replacement",
-    "url": "artigos/outros/analytics-livre-o-futuro-da-analise-de-dados-na-web.html",
+    "url": "artigos/analytics-livre-o-futuro-da-analise-de-dados-na-web.html",
     "data": "2025-05-07T19:15:13.090Z",
     "dataFonte": "2025-05-07T17:45:33.000Z",
     "categoria": "Outros"
@@ -1768,7 +1768,7 @@
   {
     "titulo": "Web Search no Anthropic API: Desvendando os Segredos da Busca na Web",
     "noticiaOriginal": "Introducing Web Search on the Anthropic API",
-    "url": "artigos/outros/web-search-no-anthropic-api-desvendando-os-segredos-da-busca-na-web.html",
+    "url": "artigos/web-search-no-anthropic-api-desvendando-os-segredos-da-busca-na-web.html",
     "data": "2025-05-07T20:20:00.723Z",
     "dataFonte": "2025-05-07T20:18:47.000Z",
     "categoria": "Outros"
@@ -1776,7 +1776,7 @@
   {
     "titulo": "\"Decolando para o Futuro: GovEagle (YC W23) está contratando\"",
     "noticiaOriginal": "GovEagle (YC W23) Is Hiring",
-    "url": "artigos/outros/decolando-para-o-futuro-goveagle-yc-w23-esta-contratando.html",
+    "url": "artigos/decolando-para-o-futuro-goveagle-yc-w23-esta-contratando.html",
     "data": "2025-05-07T21:15:22.688Z",
     "dataFonte": "2025-05-07T21:00:28.000Z",
     "categoria": "Outros"
@@ -1792,7 +1792,7 @@
   {
     "titulo": "\"Desafios e Lições: Como a Pakistani Firm Enviou Fentanil Analógico e Golpes para os EUA\"",
     "noticiaOriginal": "Pakistani Firm Shipped Fentanyl Analogs, Scams to US",
-    "url": "artigos/outros/desafios-e-licoes-como-a-pakistani-firm-enviou-fentanil-analogico-e-golpes-para-os-eua.html",
+    "url": "artigos/desafios-e-licoes-como-a-pakistani-firm-enviou-fentanil-analogico-e-golpes-para-os-eua.html",
     "data": "2025-05-07T23:16:47.906Z",
     "dataFonte": "2025-05-07T22:25:54.000Z",
     "categoria": "Outros"
@@ -1800,7 +1800,7 @@
   {
     "titulo": "O lado obscuro de World of Warcraft: analisando discurso e comportamento problemáticos",
     "noticiaOriginal": "Examining problematic speech and behavior in World of Warcraft (2022)",
-    "url": "artigos/outros/o-lado-obscuro-de-world-of-warcraft-analisando-discurso-e-comportamento-problematicos.html",
+    "url": "artigos/o-lado-obscuro-de-world-of-warcraft-analisando-discurso-e-comportamento-problematicos.html",
     "data": "2025-05-08T01:25:20.774Z",
     "dataFonte": "2025-05-08T00:18:47.000Z",
     "categoria": "Outros"
@@ -1816,7 +1816,7 @@
   {
     "titulo": "Desbravando os Caminhos: Biblioteca Python para Roteamento Local Rápido nos Estados Unidos",
     "noticiaOriginal": "Show HN: US Routing – Python library for fast local routing in the United States",
-    "url": "artigos/outros/desbravando-os-caminhos-biblioteca-python-para-roteamento-local-rapido-nos-estados-unidos.html",
+    "url": "artigos/desbravando-os-caminhos-biblioteca-python-para-roteamento-local-rapido-nos-estados-unidos.html",
     "data": "2025-05-08T04:22:17.851Z",
     "dataFonte": "2025-05-07T23:51:32.000Z",
     "categoria": "Outros"
@@ -1847,7 +1847,7 @@
   {
     "titulo": "Gmail vai parar de suportar 3DES para SMTP: o que isso significa para os desenvolvedores?",
     "noticiaOriginal": "Gmail will soon stop support for the 3DES encryption cipher for incoming SMTP",
-    "url": "artigos/outros/gmail-vai-parar-de-suportar-3des-para-smtp-o-que-isso-significa-para-os-desenvolvedores.html",
+    "url": "artigos/gmail-vai-parar-de-suportar-3des-para-smtp-o-que-isso-significa-para-os-desenvolvedores.html",
     "data": "2025-05-08T08:24:38.043Z",
     "dataFonte": "2025-05-08T04:09:40.000Z",
     "categoria": "Outros"
@@ -1855,7 +1855,7 @@
   {
     "titulo": "Alertas Críticos da Apple: Uma Política Incompreensível?",
     "noticiaOriginal": "I can't understand Apple's Critical Alert policy",
-    "url": "artigos/outros/alertas-criticos-da-apple-uma-politica-incompreensivel.html",
+    "url": "artigos/alertas-criticos-da-apple-uma-politica-incompreensivel.html",
     "data": "2025-05-08T09:19:16.127Z",
     "dataFonte": "2025-05-08T03:04:03.000Z",
     "categoria": "Outros"
@@ -1863,7 +1863,7 @@
   {
     "titulo": "Desvendando os Segredos do Transmitir em 1,4 GHz!",
     "noticiaOriginal": "How Dare You Transmit at 1.4 GHz!",
-    "url": "artigos/outros/desvendando-os-segredos-do-transmitir-em-1-4-ghz.html",
+    "url": "artigos/desvendando-os-segredos-do-transmitir-em-1-4-ghz.html",
     "data": "2025-05-08T10:19:56.778Z",
     "dataFonte": "2025-05-08T08:52:56.000Z",
     "categoria": "Outros"
@@ -1879,7 +1879,7 @@
   {
     "titulo": "CoreWCF: A revolução que você precisava conhecer",
     "noticiaOriginal": "My stackoverflow question was closed so here's a blog post about CoreWCF",
-    "url": "artigos/outros/corewcf-a-revolucao-que-voce-precisava-conhecer.html",
+    "url": "artigos/corewcf-a-revolucao-que-voce-precisava-conhecer.html",
     "data": "2025-05-08T12:36:28.725Z",
     "dataFonte": "2025-05-08T12:11:39.000Z",
     "categoria": "Outros"
@@ -1903,7 +1903,7 @@
   {
     "titulo": "Huawei inova com laptop rodando HarmonyOS enquanto licença do Windows expira",
     "noticiaOriginal": "Huawei unveils laptop running self-developed HarmonyOS as Windows licence expire",
-    "url": "artigos/outros/huawei-inova-com-laptop-rodando-harmonyos-enquanto-licenca-do-windows-expira.html",
+    "url": "artigos/huawei-inova-com-laptop-rodando-harmonyos-enquanto-licenca-do-windows-expira.html",
     "data": "2025-05-08T15:19:33.936Z",
     "dataFonte": "2025-05-08T14:24:04.000Z",
     "categoria": "Outros"
@@ -1919,7 +1919,7 @@
   {
     "titulo": "Explorando os Segredos do Reservoir Sampling",
     "noticiaOriginal": "Reservoir Sampling",
-    "url": "artigos/outros/explorando-os-segredos-do-reservoir-sampling.html",
+    "url": "artigos/explorando-os-segredos-do-reservoir-sampling.html",
     "data": "2025-05-08T17:15:43.194Z",
     "dataFonte": "2025-05-08T17:02:10.000Z",
     "categoria": "Outros"
@@ -1935,7 +1935,7 @@
   {
     "titulo": "O código escondido por trás do elogio de Steve Jobs",
     "noticiaOriginal": "From: Steve Jobs. \"Great idea, thank you.\"",
-    "url": "artigos/outros/o-codigo-escondido-por-tras-do-elogio-de-steve-jobs.html",
+    "url": "artigos/o-codigo-escondido-por-tras-do-elogio-de-steve-jobs.html",
     "data": "2025-05-08T19:14:42.544Z",
     "dataFonte": "2025-05-08T18:40:12.000Z",
     "categoria": "Outros"
@@ -1943,7 +1943,7 @@
   {
     "titulo": "Stabilidade: a chave para sistemas robustos",
     "noticiaOriginal": "Stability by Design",
-    "url": "artigos/outros/stabilidade-a-chave-para-sistemas-robustos.html",
+    "url": "artigos/stabilidade-a-chave-para-sistemas-robustos.html",
     "data": "2025-05-08T20:19:59.400Z",
     "dataFonte": "2025-05-08T19:51:29.000Z",
     "categoria": "Outros"
@@ -1951,7 +1951,7 @@
   {
     "titulo": "Desvendando os Mistérios por Trás das Propriedades Emergentes dos LLMs",
     "noticiaOriginal": "Why do LLMs have emergent properties?",
-    "url": "artigos/outros/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html",
+    "url": "artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html",
     "data": "2025-05-08T21:17:10.515Z",
     "dataFonte": "2025-05-08T20:07:00.000Z",
     "categoria": "Outros"
@@ -1959,7 +1959,7 @@
   {
     "titulo": "A revolução das assinaturas fixas para Claude Code",
     "noticiaOriginal": "A flat pricing subscription for Claude Code",
-    "url": "artigos/outros/a-revolucao-das-assinaturas-fixas-para-claude-code.html",
+    "url": "artigos/a-revolucao-das-assinaturas-fixas-para-claude-code.html",
     "data": "2025-05-08T22:17:04.883Z",
     "dataFonte": "2025-05-08T21:12:32.000Z",
     "categoria": "Outros"
@@ -1967,7 +1967,7 @@
   {
     "titulo": "Check It Out: Como Manter Seu Software Sempre Atualizado",
     "noticiaOriginal": "Show HN: Req Update Check",
-    "url": "artigos/outros/check-it-out-como-manter-seu-software-sempre-atualizado.html",
+    "url": "artigos/check-it-out-como-manter-seu-software-sempre-atualizado.html",
     "data": "2025-05-08T23:17:29.399Z",
     "dataFonte": "2025-05-08T22:30:17.000Z",
     "categoria": "Outros"
@@ -1975,7 +1975,7 @@
   {
     "titulo": "Desvendando os Segredos do Processamento de Fluxo de Dados: Desafios e Soluções",
     "noticiaOriginal": "Presentation: Stream All the Things — Patterns of Effective Data Stream Processing",
-    "url": "artigos/outros/desvendando-os-segredos-do-processamento-de-fluxo-de-dados-desafios-e-solucoes.html",
+    "url": "artigos/desvendando-os-segredos-do-processamento-de-fluxo-de-dados-desafios-e-solucoes.html",
     "data": "2025-05-09T01:03:31.920Z",
     "dataFonte": "2025-05-08T14:05:00.000Z",
     "categoria": "Outros"
@@ -2007,7 +2007,7 @@
   {
     "titulo": "Desbravando o Protocolo de Contexto de Modelo no Ecossistema Java",
     "noticiaOriginal": "Adoption of the Model Context Protocol Within the Java Ecosystem",
-    "url": "artigos/outros/desbravando-o-protocolo-de-contexto-de-modelo-no-ecossistema-java.html",
+    "url": "artigos/desbravando-o-protocolo-de-contexto-de-modelo-no-ecossistema-java.html",
     "data": "2025-05-09T02:31:36.055Z",
     "dataFonte": "2025-05-08T08:15:00.000Z",
     "categoria": "Outros"
@@ -2031,7 +2031,7 @@
   {
     "titulo": "Visibilidade na Segurança em Nuvem: Desvendando as Configurações dos Nossos Ambientes na Nuvem",
     "noticiaOriginal": "Presentation: Visibility in Cloud Security: How Exactly Are Our Cloud Environments Configured?",
-    "url": "artigos/outros/visibilidade-na-seguranca-em-nuvem-desvendando-as-configuracoes-dos-nossos-ambientes-na-nuvem.html",
+    "url": "artigos/visibilidade-na-seguranca-em-nuvem-desvendando-as-configuracoes-dos-nossos-ambientes-na-nuvem.html",
     "data": "2025-05-09T02:49:47.024Z",
     "dataFonte": "2025-05-07T15:00:00.000Z",
     "categoria": "Outros"
@@ -2039,7 +2039,7 @@
   {
     "titulo": "Windows Community Toolkit 8.2: A revolução da compilação AOT no universo Windows",
     "noticiaOriginal": "Windows Community Toolkit 8.2 Supports Native AOT Compilation",
-    "url": "artigos/outros/windows-community-toolkit-8-2-a-revolucao-da-compilacao-aot-no-universo-windows.html",
+    "url": "artigos/windows-community-toolkit-8-2-a-revolucao-da-compilacao-aot-no-universo-windows.html",
     "data": "2025-05-09T03:09:14.599Z",
     "dataFonte": "2025-05-07T12:00:00.000Z",
     "categoria": "Outros"
@@ -2047,7 +2047,7 @@
   {
     "titulo": "Automatizando a Infraestrutura com Estilo: A Revolução da Pulumi nos Componentes de Código",
     "noticiaOriginal": "Pulumi Announces Improved Components Feature to Simplify Infrastructure as Code",
-    "url": "artigos/outros/automatizando-a-infraestrutura-com-estilo-a-revolucao-da-pulumi-nos-componentes-de-codigo.html",
+    "url": "artigos/automatizando-a-infraestrutura-com-estilo-a-revolucao-da-pulumi-nos-componentes-de-codigo.html",
     "data": "2025-05-09T04:22:32.736Z",
     "dataFonte": "2025-05-07T07:00:00.000Z",
     "categoria": "Outros"
@@ -2071,7 +2071,7 @@
   {
     "titulo": "Explorando as Novidades do Universo Java: Updates no OpenJDK, Spring AI, Quarkus, LangChain4j, JReleaser e WildFly",
     "noticiaOriginal": "Java News Roundup: OpenJDK JEP Updates, Spring AI, Quarkus, LangChain4j, JReleaser, WildFly",
-    "url": "artigos/outros/explorando-as-novidades-do-universo-java-updates-no-openjdk-spring-ai-quarkus-langchain4j-jreleaser-e-wildfly.html",
+    "url": "artigos/explorando-as-novidades-do-universo-java-updates-no-openjdk-spring-ai-quarkus-langchain4j-jreleaser-e-wildfly.html",
     "data": "2025-05-09T07:19:20.746Z",
     "dataFonte": "2025-05-05T16:15:00.000Z",
     "categoria": "Outros"
@@ -2079,7 +2079,7 @@
   {
     "titulo": "O Poder dos Instance Main Methods no JDK 25: A Evolução da Arquitetura de Software",
     "noticiaOriginal": "Instance Main Methods Move from Preview to Final in JDK 25",
-    "url": "artigos/outros/o-poder-dos-instance-main-methods-no-jdk-25-a-evolucao-da-arquitetura-de-software.html",
+    "url": "artigos/o-poder-dos-instance-main-methods-no-jdk-25-a-evolucao-da-arquitetura-de-software.html",
     "data": "2025-05-09T08:24:53.416Z",
     "dataFonte": "2025-05-05T14:27:00.000Z",
     "categoria": "Outros"
@@ -2095,7 +2095,7 @@
   {
     "titulo": "Desenvolvendo Sistemas Distribuídos com Temporal na AWS: A Revolução Chegou!",
     "noticiaOriginal": "Temporal on AWS Aims to Ease Building Resilient Distributed Systems",
-    "url": "artigos/outros/desenvolvendo-sistemas-distribuidos-com-temporal-na-aws-a-revolucao-chegou.html",
+    "url": "artigos/desenvolvendo-sistemas-distribuidos-com-temporal-na-aws-a-revolucao-chegou.html",
     "data": "2025-05-09T10:20:14.281Z",
     "dataFonte": "2025-05-09T10:00:00.000Z",
     "categoria": "Outros"
@@ -2119,7 +2119,7 @@
   {
     "titulo": "Revolução Tecnológica: Rumo aos Novos Horizontes em 2025",
     "noticiaOriginal": "Podcast: InfoQ Culture & Methods Trends in 2025",
-    "url": "artigos/outros/revolucao-tecnologica-rumo-aos-novos-horizontes-em-2025.html",
+    "url": "artigos/revolucao-tecnologica-rumo-aos-novos-horizontes-em-2025.html",
     "data": "2025-05-09T13:28:36.459Z",
     "dataFonte": "2025-05-09T09:00:00.000Z",
     "categoria": "Outros"
@@ -2127,7 +2127,7 @@
   {
     "titulo": "Java Reimaginado: Desenvolvimento Ágil com JBang Jash",
     "noticiaOriginal": "JBang Jash Brings Streamlined Process Execution to Java",
-    "url": "artigos/outros/java-reimaginado-desenvolvimento-agil-com-jbang-jash.html",
+    "url": "artigos/java-reimaginado-desenvolvimento-agil-com-jbang-jash.html",
     "data": "2025-05-09T15:19:13.291Z",
     "dataFonte": "2025-05-09T15:00:00.000Z",
     "categoria": "Outros"
@@ -2135,7 +2135,7 @@
   {
     "titulo": "Investigação de dois sites pornográficos por possíveis falhas na verificação de idade",
     "noticiaOriginal": "Two porn sites investigated for suspected age check failings",
-    "url": "artigos/outros/investigacao-de-dois-sites-pornograficos-por-possiveis-falhas-na-verificacao-de-idade.html",
+    "url": "artigos/investigacao-de-dois-sites-pornograficos-por-possiveis-falhas-na-verificacao-de-idade.html",
     "data": "2025-05-09T18:29:54.102Z",
     "dataFonte": "2025-05-09T12:09:22.000Z",
     "categoria": "Outros"
@@ -2143,7 +2143,7 @@
   {
     "titulo": "Guardando os Tesouros: Como garantir a segurança dos backups no Ártico",
     "noticiaOriginal": "Visit the Arctic vault holding back-ups of great works",
-    "url": "artigos/outros/guardando-os-tesouros-como-garantir-a-seguranca-dos-backups-no-artico.html",
+    "url": "artigos/guardando-os-tesouros-como-garantir-a-seguranca-dos-backups-no-artico.html",
     "data": "2025-05-09T19:14:49.399Z",
     "dataFonte": "2025-05-08T23:37:28.000Z",
     "categoria": "Outros"
@@ -2159,7 +2159,7 @@
   {
     "titulo": "Apple X Juiz dos EUA: A Batalha dos Gigantes",
     "noticiaOriginal": "Apple hits back at US judge's 'extraordinary' contempt order",
-    "url": "artigos/outros/apple-x-juiz-dos-eua-a-batalha-dos-gigantes.html",
+    "url": "artigos/apple-x-juiz-dos-eua-a-batalha-dos-gigantes.html",
     "data": "2025-05-09T21:16:55.521Z",
     "dataFonte": "2025-05-08T15:45:10.000Z",
     "categoria": "Outros"
@@ -2191,7 +2191,7 @@
   {
     "titulo": "O Fantástico Retorno do Homem de Arizona para Enfrentar seu Assassino",
     "noticiaOriginal": "Arizona man shot to death in road rage 'returns' to address his killer",
-    "url": "artigos/outros/o-fantastico-retorno-do-homem-de-arizona-para-enfrentar-seu-assassino.html",
+    "url": "artigos/o-fantastico-retorno-do-homem-de-arizona-para-enfrentar-seu-assassino.html",
     "data": "2025-05-10T03:03:12.921Z",
     "dataFonte": "2025-05-07T22:27:48.000Z",
     "categoria": "Outros"
