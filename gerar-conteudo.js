@@ -747,7 +747,7 @@ if (!existe) {
     data: now.toISOString(),
     dataFonte: noticia.data ? new Date(noticia.data).toISOString() : null,
     categoria
-)};
+  });
   
 
 
