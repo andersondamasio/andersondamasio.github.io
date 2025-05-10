@@ -50,19 +50,19 @@ function gerarPaginasPorCategoria(titulos) {
   }
   if (!fs.existsSync("categoria")) fs.mkdirSync("categoria", { recursive: true });
   for (const [categoria, artigos] of Object.entries(agrupados)) {
-    const links = artigos.map(t => `<li><a href="../\${t.url}">\${t.titulo}</a></li>`).join("\n");
+    const links = artigos.map(t => `<li><a href="../${t.url}">${t.titulo}</a></li>`).join("\n");
     const slugCat = categoria.toLowerCase().replace(/\s+/g, '-');
     const html = `
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><title>\${categoria}</title></head>
+<head><meta charset="UTF-8"><title>${categoria}</title></head>
 <body>
-\${gerarHeaderNavegacao("..")}
-<main><h1>Categoria: \${categoria}</h1><ul>\${links}</ul></main>
-\${gerarFooterNavegacao("..")}
+${gerarHeaderNavegacao("..")}
+<main><h1>Categoria: ${categoria}</h1><ul>${links}</ul></main>
+${gerarFooterNavegacao("..")}
 </body>
 </html>`;
-    fs.writeFileSync(`categoria/\${slugCat}.html`, html);
+    fs.writeFileSync(`categoria/${slugCat}.html`, html);
   }
   gerarIndiceCategorias(agrupados);
 }
@@ -70,16 +70,16 @@ function gerarPaginasPorCategoria(titulos) {
 function gerarIndiceCategorias(agrupados) {
   const links = Object.entries(agrupados).map(([categoria, artigos]) => {
     const slug = categoria.toLowerCase().replace(/\s+/g, '-');
-    return `<li><a href="\${slug}.html">\${categoria}</a> (\${artigos.length})</li>`;
+    return `<li><a href="${slug}.html">${categoria}</a> (${artigos.length})</li>`;
   }).join("\n");
   const html = `
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head><meta charset="UTF-8"><title>Artigos</title></head>
 <body>
-\${gerarHeaderNavegacao(".")}
-<main><h1>Artigos</h1><ul>\${links}</ul></main>
-\${gerarFooterNavegacao(".")}
+${gerarHeaderNavegacao(".")}
+<main><h1>Artigos</h1><ul>${links}</ul></main>
+${gerarFooterNavegacao(".")}
 </body>
 </html>`;
   fs.writeFileSync("categoria/index.html", html);
