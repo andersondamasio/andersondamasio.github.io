@@ -471,6 +471,14 @@ if (!noticia || !noticia.titulo) {
       process.exit(0);
     }
 
+
+const categoriasExistentes = [...new Set(
+  titulosGerados.map(t => t.categoria).filter(Boolean)
+)];
+const textoCategoriasExistentes = categoriasExistentes.length
+  ? `As categorias já usadas até agora no site são: ${categoriasExistentes.join(", ")}. Dê preferência a reutilizar uma delas.`
+  : "";
+    
 const prompt = `
 Você é Anderson Damasio, um Arquiteto de Software com mais de 19 anos de experiência prática em sistemas escaláveis.
 Você acaba de ler uma notícia técnica internacional sobre: "${noticia.titulo}".
@@ -492,10 +500,19 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Uma conclusão com reflexões ou recomendações suas.
 
 **Importante:**
+
 - Não inicie com “Título:” ou similares. Apenas escreva o título direto na primeira linha.
 - Pule uma linha e inicie o artigo.
 - O conteúdo deve parecer escrito por um humano experiente, com estilo natural, fluente e levemente opinativo.
-- **Ao final do texto, inclua a categoria mais adequada para o tema entre barras verticais, no formato: |Categoria|.**
+
+- Ao final do texto, adicione a categoria mais adequada entre barras verticais, no formato: |Categoria|
+
+- **Use exatamente um dos seguintes nomes de categoria (sem variações, sem criar novas):**
+  Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia, Outros
+
+${textoCategoriasExistentes}
+
+- Exemplo: |Segurança|
 `;
 
     const response = await axios.post(
