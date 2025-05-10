@@ -1192,555 +1192,634 @@
   {
     "titulo": "Arquitetura de Software: Decifrando os 40min de Estudo que Parecem Grego",
     "noticiaOriginal": "40min estudando arquitetura de software e eu sinto que to lendo em grego",
-    "url": "https://x.com/cookiegio_/status/1918372740777599049",
+    "url": "artigos/outros/arquitetura-de-software-decifrando-os-40min-de-estudo-que-parecem-grego.html",
     "data": "2025-05-04T15:40:42.817Z",
-    "dataFonte": "2025-05-02T18:31:17.000Z"
+    "dataFonte": "2025-05-02T18:31:17.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Fundamentos da Arquitetura de Software: Desvendando os Segredos por Trás de @LucasrbSouza",
     "noticiaOriginal": "@LucasrbSouza Esse é o Fundamentos da Arquitetura de Software",
-    "url": "https://x.com/dionisiodev/status/1919059523001594184",
+    "url": "artigos/outros/fundamentos-da-arquitetura-de-software-desvendando-os-segredos-por-tras-de-lucasrbsouza.html",
     "data": "2025-05-04T16:14:46.502Z",
-    "dataFonte": "2025-05-04T16:00:19.000Z"
+    "dataFonte": "2025-05-04T16:00:19.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Atualização Azure DevOps: Refrescando Tokens e Versão 5 do Terraform",
     "noticiaOriginal": "Introducing Azure DevOps ID Token Refresh and Terraform Task Version 5",
-    "url": "https://devblogs.microsoft.com/devops/introducing-azure-devops-id-token-refresh-and-terraform-task-version-5/",
+    "url": "artigos/devops/atualizacao-azure-devops-refrescando-tokens-e-versao-5-do-terraform.html",
     "data": "2025-05-04T16:20:12.572Z",
-    "dataFonte": "2025-05-02T08:16:56.000Z"
+    "dataFonte": "2025-05-02T08:16:56.000Z",
+    "categoria": "DevOps"
   },
   {
     "titulo": "GitHub Copilot: A revolução da codificação colaborativa no Visual Studio 17.14 Preview 3",
     "noticiaOriginal": "GitHub Copilot Highlights in Visual Studio 17.14 Preview 3 (Available Now)",
-    "url": "https://devblogs.microsoft.com/visualstudio/github-copilot-highlights-in-visual-studio-17-14-preview-3-available-now/",
+    "url": "artigos/outros/github-copilot-a-revolucao-da-codificacao-colaborativa-no-visual-studio-17-14-preview-3.html",
     "data": "2025-05-04T16:39:53.654Z",
-    "dataFonte": "2025-04-16T18:24:10.000Z"
+    "dataFonte": "2025-04-16T18:24:10.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": ".NET Aspire e a Integração com Azure Functions: Desvendando a Potência dessa Dupla!",
     "noticiaOriginal": ".NET Aspire and Azure Functions integration preview",
-    "url": "https://devblogs.microsoft.com/visualstudio/net-aspire-and-azure-functions-integration-preview/",
+    "url": "artigos/inteligencia-artificial/net-aspire-e-a-integracao-com-azure-functions-desvendando-a-potencia-dessa-dupla.html",
     "data": "2025-05-04T17:02:01.689Z",
-    "dataFonte": "2025-04-09T12:00:19.000Z"
+    "dataFonte": "2025-04-09T12:00:19.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Analisando o Uso de CPU em Múltiplos Processos no Visual Studio",
     "noticiaOriginal": "Multi-Process CPU Usage Analysis in Visual Studio",
-    "url": "https://devblogs.microsoft.com/visualstudio/multi-process-cpu-usage-analysis-in-visual-studio/",
+    "url": "artigos/outros/analisando-o-uso-de-cpu-em-multiplos-processos-no-visual-studio.html",
     "data": "2025-05-04T17:04:23.046Z",
-    "dataFonte": "2025-04-08T16:17:16.000Z"
+    "dataFonte": "2025-04-08T16:17:16.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "O Pluralsight Acaba de Evoluir: Descubra Como Aproveitar ao Máximo essa Nova Possibilidade",
     "noticiaOriginal": "Your Pluralsight Benefit Just Got Better",
-    "url": "https://devblogs.microsoft.com/visualstudio/vss-pluralsight-2025/",
+    "url": "artigos/outros/o-pluralsight-acaba-de-evoluir-descubra-como-aproveitar-ao-maximo-essa-nova-possibilidade.html",
     "data": "2025-05-04T17:14:03.543Z",
-    "dataFonte": "2025-04-03T13:45:56.000Z"
+    "dataFonte": "2025-04-03T13:45:56.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Gerenciando e Visualizando Tags no Git: Domine essa Ferramenta Essencial",
     "noticiaOriginal": "View and manage git tags",
-    "url": "https://devblogs.microsoft.com/visualstudio/view-and-manage-git-tags/",
+    "url": "artigos/inteligencia-artificial/gerenciando-e-visualizando-tags-no-git-domine-essa-ferramenta-essencial.html",
     "data": "2025-05-04T17:19:47.377Z",
-    "dataFonte": "2025-03-31T15:10:25.000Z"
+    "dataFonte": "2025-03-31T15:10:25.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Conectando talentos e inovação: Hightouch (YC S19) está recrutando!",
     "noticiaOriginal": "Hightouch (YC S19) Is Hiring",
-    "url": "https://www.ycombinator.com/companies/hightouch/jobs/kIoY0yH-machine-learning-engineer-ai-decisioning",
+    "url": "artigos/outros/conectando-talentos-e-inovacao-hightouch-yc-s19-esta-recrutando.html",
     "data": "2025-05-04T17:26:33.922Z",
-    "dataFonte": "2025-05-04T17:00:38.000Z"
+    "dataFonte": "2025-05-04T17:00:38.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desvendando os Segredos da Amostragem LLM na Era Moderna",
     "noticiaOriginal": "Dummy's Guide to Modern LLM Sampling",
-    "url": "https://rentry.co/samplers",
+    "url": "artigos/outros/desvendando-os-segredos-da-amostragem-llm-na-era-moderna.html",
     "data": "2025-05-04T17:31:35.029Z",
-    "dataFonte": "2025-05-04T16:26:28.000Z"
+    "dataFonte": "2025-05-04T16:26:28.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Dominando os Padrões de Design: 5 cursos imperdíveis para evoluir como desenvolvedor",
     "noticiaOriginal": "5 Best Courses to learn Design Pattern\n1. Design Patterns in Java - \n2. Grokking the OOP Design - \n3. Basics of Software Architecture & Design Patterns  \n4. Master Microservices",
-    "url": "https://x.com/NadeemAlam97801/status/1918948279171023245",
+    "url": "artigos/outros/dominando-os-padroes-de-design-5-cursos-imperdiveis-para-evoluir-como-desenvolvedor.html",
     "data": "2025-05-04T17:37:34.628Z",
-    "dataFonte": "2025-05-04T08:38:16.000Z"
+    "dataFonte": "2025-05-04T08:38:16.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Título:",
     "noticiaOriginal": "Where should authorization live in your software architecture? Should it be inside the domain model if you're using Domain-Driven Design (DDD)? Or should authorization always stay in the application layer?",
-    "url": "https://x.com/codeopinion/status/1917639545602072770",
+    "url": "artigos/outros/titulo.html",
     "data": "2025-05-04T17:54:40.890Z",
-    "dataFonte": "2025-04-30T17:57:50.000Z"
+    "dataFonte": "2025-04-30T17:57:50.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Refletindo sobre a Construção de Visualizações de Espelho de TMT com LLM",
     "noticiaOriginal": "Building TMT Mirror Visualization with LLM",
-    "url": "https://martinfowler.com/articles/exploring-gen-ai/15-building-tmt-mirror-visualization.html",
+    "url": "artigos/outros/refletindo-sobre-a-construcao-de-visualizacoes-de-espelho-de-tmt-com-llm.html",
     "data": "2025-05-04T17:59:31.645Z",
-    "dataFonte": "2025-04-30T13:54:00.000Z"
+    "dataFonte": "2025-04-30T13:54:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Explorando as entranhas da Arquitetura de Software: Livros essenciais para desenvolvedores com interesse em temas arquiteturais",
     "noticiaOriginal": "Mimari konulara ilgisi olan yazılımcıların okuması gereken kitaplar:\n\n- Software Architecture: The Hard Parts\n- Designing Data Intensive Applications\n- Domain Driven Design Distilled",
-    "url": "https://x.com/mstrYoda_/status/1917139508878770385",
+    "url": "artigos/inteligencia-artificial/explorando-as-entranhas-da-arquitetura-de-software-livros-essenciais-para-desenvolvedores-com-interesse-em-temas-arquiteturais.html",
     "data": "2025-05-04T18:12:20.871Z",
-    "dataFonte": "2025-04-29T08:50:52.000Z"
+    "dataFonte": "2025-04-29T08:50:52.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Repositórios do GitHub: uma paixão ou uma obsessão?",
     "noticiaOriginal": "Confession:\n\nI can't stop collecting GitHub repos.\n\nHere are 7 popular GitHub repos on software architecture:\n\n(for .NET developers)\n\n1. Evolutionary architecture by example - \n\n2. Modular monolith application with DDD - \n\n3. .NET 8",
-    "url": "https://x.com/kristijan_kralj/status/1917102992378958255",
+    "url": "artigos/outros/repositorios-do-github-uma-paixao-ou-uma-obsessao.html",
     "data": "2025-05-04T18:22:46.430Z",
-    "dataFonte": "2025-04-29T06:25:46.000Z"
+    "dataFonte": "2025-04-29T06:25:46.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Arquitetura de Software: Dos Trade-offs à Visão Holística",
     "noticiaOriginal": "@default666y @dionisiodev Olá! Aqui estão os 5 pontos mais importantes do livro *Fundamentos da Arquitetura de Software*:\n\n1. **Visão Holística**: Arquitetura combina estrutura, características (ex.: escalabilidade) e decisões, equilibrando necessidades técnicas e de negócios.\n2. **Trade-offs**: Toda",
-    "url": "https://x.com/grok/status/1916534557043753132",
+    "url": "artigos/outros/arquitetura-de-software-dos-trade-offs-a-visao-holistica.html",
     "data": "2025-05-04T19:14:14.590Z",
-    "dataFonte": "2025-04-27T16:47:00.000Z"
+    "dataFonte": "2025-04-27T16:47:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desvendando o Poder dos Padrões de Design na Arquitetura de Software: Eleve seu Jogo no Desenvolvimento!",
     "noticiaOriginal": "Discover the power of design patterns in simplifying software architecture! Elevate your development game. #DesignPatterns #Architecture #SoftwareDev Visit us at",
-    "url": "https://x.com/MangoByteLtd/status/1916297389897617540",
+    "url": "artigos/outros/desvendando-o-poder-dos-padroes-de-design-na-arquitetura-de-software-eleve-seu-jogo-no-desenvolvimento.html",
     "data": "2025-05-04T20:18:07.597Z",
-    "dataFonte": "2025-04-27T01:04:35.000Z"
+    "dataFonte": "2025-04-27T01:04:35.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desbravando o Futuro da Arquitetura de Software em 2025",
     "noticiaOriginal": "Resources to Learn Software Architecture in 2025 \n\nSoftware Design Books\nSome books that can help are DDIA, System Design Volume 1 & 2, Clean Architecture, Domain-Driven Design, and Software Architecture: the Hard Parts\n\nTech Blogs and Newsletters\nRead technical blogs by",
-    "url": "https://x.com/k_k_kaundal/status/1915677764977361300",
+    "url": "artigos/outros/desbravando-o-futuro-da-arquitetura-de-software-em-2025.html",
     "data": "2025-05-04T21:15:31.759Z",
-    "dataFonte": "2025-04-25T08:02:25.000Z"
+    "dataFonte": "2025-04-25T08:02:25.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Limpeza de Primavera: Como lidar com segredos expirados em aplicativos OAuth do Azure DevOps",
     "noticiaOriginal": "Spring Cleaning: A CTA for Azure DevOps OAuth Apps with expired or long-living secrets",
-    "url": "https://devblogs.microsoft.com/devops/spring-cleaning-cta-for-azure-devops-oauth-apps-with-expired-or-long-living-secrets/",
+    "url": "artigos/devops/limpeza-de-primavera-como-lidar-com-segredos-expirados-em-aplicativos-oauth-do-azure-devops.html",
     "data": "2025-05-04T22:15:58.691Z",
-    "dataFonte": "2025-04-23T17:16:23.000Z"
+    "dataFonte": "2025-04-23T17:16:23.000Z",
+    "categoria": "DevOps"
   },
   {
     "titulo": "Desenvolvimento de Software: DDD, Onion Arch e CA - Filosofia x Arquitetura",
     "noticiaOriginal": "@pokerdev7 Basicamente DDD é uma abordagem de desenvolvimento, tá mais pra um tipo de filosofia que aplica princípios. Onion Arch e CA são padrões arquiteturais, arquitetura de software mesmo. Ou seja, você pode ter DDD sendo aplicado em qualquer arquitetura que quiser utilizar na sua app.",
-    "url": "https://x.com/lucasmoraisdev/status/1915073506858909796",
+    "url": "artigos/inteligencia-artificial/desenvolvimento-de-software-ddd-onion-arch-e-ca-filosofia-x-arquitetura.html",
     "data": "2025-05-04T23:16:15.686Z",
-    "dataFonte": "2025-04-23T16:01:19.000Z"
+    "dataFonte": "2025-04-23T16:01:19.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "**Título:** Revolucionando sua arquitetura de software com padrões de design distribuído",
     "noticiaOriginal": "🚨 Tomorrow’s the day! Discover how distributed design patterns can transform your software architecture. \n\n🌟 Join us April 22 for expert insights and strategies. \n\n🗓️ Secure your spot now!  \n\n#DistributedSystems #DesignPatterns",
-    "url": "https://x.com/nimblepros/status/1914348606930243918",
+    "url": "artigos/outros/titulo-revolucionando-sua-arquitetura-de-software-com-padroes-de-design-distribuido.html",
     "data": "2025-05-05T01:27:01.321Z",
-    "dataFonte": "2025-04-21T16:00:49.000Z"
+    "dataFonte": "2025-04-21T16:00:49.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "\"Desvendando os Segredos do Deepseek: Uma Visão Técnica Profunda\"",
     "noticiaOriginal": "Additional explanatory material for the Deepseek Overview",
-    "url": "https://martinfowler.com/articles/deepseek-papers.html",
+    "url": "artigos/outros/desvendando-os-segredos-do-deepseek-uma-visao-tecnica-profunda.html",
     "data": "2025-05-05T03:11:34.985Z",
-    "dataFonte": "2025-04-21T13:07:00.000Z"
+    "dataFonte": "2025-04-21T13:07:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Descomplicando o \"Clean Code\": Por que simplicidade é mais importante",
     "noticiaOriginal": "@thairizard @Grichabb Eu nunca fui mto com esse lance de “clean code”, pra mim o mais importante é “simple code”.\nO argumento principal do vídeo é que programadores são ensinados a usarem “design patterns” e “software architecture” e acabam esquecendo performance e simplicidade.",
-    "url": "https://x.com/metanalogue/status/1913959205523882267",
+    "url": "artigos/outros/descomplicando-o-clean-code-por-que-simplicidade-e-mais-importante.html",
     "data": "2025-05-05T04:21:59.593Z",
-    "dataFonte": "2025-04-20T14:13:28.000Z"
+    "dataFonte": "2025-04-20T14:13:28.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Arquitetura de Software: Acelerando o Desenvolvimento com Design Patterns",
     "noticiaOriginal": "@AlfredoMenezes6 Agora montar uma arquitetura de software, ajudar na decisão e gerar template de Design Patterns ideias, seguindo princípios XP ou SOLID, isso funciona, bem e acelera desenvolvimento.\nNovamente, ótimo como ferramenta aprenda a usar!",
-    "url": "https://x.com/cleitonrbueno/status/1913381243523416144",
+    "url": "artigos/outros/arquitetura-de-software-acelerando-o-desenvolvimento-com-design-patterns.html",
     "data": "2025-05-05T05:18:35.134Z",
-    "dataFonte": "2025-04-18T23:56:52.000Z"
+    "dataFonte": "2025-04-18T23:56:52.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Azure Boards + GitHub: A combinação perfeita para aprimorar a colaboração em seus projetos",
     "noticiaOriginal": "Azure Boards + GitHub: Recent Updates",
-    "url": "https://devblogs.microsoft.com/devops/azure-boards-github-recent-updates/",
+    "url": "artigos/outros/azure-boards-github-a-combinacao-perfeita-para-aprimorar-a-colaboracao-em-seus-projetos.html",
     "data": "2025-05-05T06:27:07.209Z",
-    "dataFonte": "2025-04-18T14:19:12.000Z"
+    "dataFonte": "2025-04-18T14:19:12.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desvendando os Segredos da Arquitetura de Software e Design de Código Limpo em OOP",
     "noticiaOriginal": "Software Architecture and Clean Code Design in OOP\n\nLearn design patterns and principles for Object-oriented programming to make your software scalable and easy to maintain\n\nCoupon code is APRIL_FREE2_2025",
-    "url": "https://x.com/omoalhajaabiola/status/1913153888028405969",
+    "url": "artigos/outros/desvendando-os-segredos-da-arquitetura-de-software-e-design-de-codigo-limpo-em-oop.html",
     "data": "2025-05-05T07:18:35.311Z",
-    "dataFonte": "2025-04-18T08:53:26.000Z"
+    "dataFonte": "2025-04-18T08:53:26.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "O Pássaro que Ensina: Desvendando o Pattern Pigeon no DialogflowCX",
     "noticiaOriginal": "Introducing 🐦 Pattern Pigeon: A conversational assistant built with @googlecloud #DialogflowCX to teach software architecture design patterns! This was a lot of fun to create, and for a (probably) limited time you can even call it!\n\n🔗 \n📞 (361) 360-5763",
-    "url": "https://x.com/JamesKerrane/status/1912894385697542462",
+    "url": "artigos/inteligencia-artificial/o-passaro-que-ensina-desvendando-o-pattern-pigeon-no-dialogflowcx.html",
     "data": "2025-05-05T08:25:29.845Z",
-    "dataFonte": "2025-04-17T15:42:16.000Z"
+    "dataFonte": "2025-04-17T15:42:16.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Desbravando o Terreno do ByteBuffer em Java: Como Guiar seu LLM para um Código Robusto",
     "noticiaOriginal": "Guiding an LLM for Robust Java ByteBuffer Code",
-    "url": "https://martinfowler.com/articles/exploring-gen-ai/14-guiding-llm-java-bytebuffer.html",
+    "url": "artigos/inteligencia-artificial/desbravando-o-terreno-do-bytebuffer-em-java-como-guiar-seu-llm-para-um-codigo-robusto.html",
     "data": "2025-05-05T09:19:25.133Z",
-    "dataFonte": "2025-04-17T13:39:00.000Z"
+    "dataFonte": "2025-04-17T13:39:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Atualização de Abril para Azure DevOps Server e Team Foundation Server: O que você precisa saber",
     "noticiaOriginal": "April Patches for Azure DevOps Server and Team Foundation Server",
-    "url": "https://devblogs.microsoft.com/devops/april-patches-for-azure-devops-server-and-team-foundation-server-3/",
+    "url": "artigos/devops/atualizacao-de-abril-para-azure-devops-server-e-team-foundation-server-o-que-voce-precisa-saber.html",
     "data": "2025-05-05T10:19:58.437Z",
-    "dataFonte": "2025-04-08T19:26:16.000Z"
+    "dataFonte": "2025-04-08T19:26:16.000Z",
+    "categoria": "DevOps"
   },
   {
     "titulo": "Atualização de Posts Antigos: Como Aumentar o Engajamento nas Redes Sociais",
     "noticiaOriginal": "Updating yesterday's post on social media engagement",
-    "url": "https://martinfowler.com/articles/2025-social-traffic.html",
+    "url": "artigos/inteligencia-artificial/atualizacao-de-posts-antigos-como-aumentar-o-engajamento-nas-redes-sociais.html",
     "data": "2025-05-05T11:15:04.915Z",
-    "dataFonte": "2025-04-04T18:32:00.000Z"
+    "dataFonte": "2025-04-04T18:32:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Integrando Boards com GitHub Enterprise Cloud: Desafios e Oportunidades",
     "noticiaOriginal": "Boards Integration with GitHub Enterprise Cloud and Data Residency (Public Preview)",
-    "url": "https://devblogs.microsoft.com/devops/boards-integration-with-github-enterprise-cloud-and-data-residency-public-preview/",
+    "url": "artigos/outros/integrando-boards-com-github-enterprise-cloud-desafios-e-oportunidades.html",
     "data": "2025-05-05T12:36:22.037Z",
-    "dataFonte": "2025-04-04T17:24:29.000Z"
+    "dataFonte": "2025-04-04T17:24:29.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Engajamento nas Redes Sociais em 2025: Desafios e Oportunidades",
     "noticiaOriginal": "Social Media Engagement in Early 2025",
-    "url": "https://martinfowler.com/articles/2025-social-traffic.html",
+    "url": "artigos/inteligencia-artificial/engajamento-nas-redes-sociais-em-2025-desafios-e-oportunidades.html",
     "data": "2025-05-05T13:28:30.505Z",
-    "dataFonte": "2025-04-03T13:41:00.000Z"
+    "dataFonte": "2025-04-03T13:41:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "CDN e a Revolução nas URLs dos Agentes em Pipelines de Desenvolvimento",
     "noticiaOriginal": "CDN Domain URL change for Agents in Pipelines",
-    "url": "https://devblogs.microsoft.com/devops/cdn-domain-url-change-for-agents-in-pipelines/",
+    "url": "artigos/outros/cdn-e-a-revolucao-nas-urls-dos-agentes-em-pipelines-de-desenvolvimento.html",
     "data": "2025-05-05T14:18:07.936Z",
-    "dataFonte": "2025-04-03T11:05:07.000Z"
+    "dataFonte": "2025-04-03T11:05:07.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "TFVC Policies Storage Updates: A Revolução Silenciosa nos Sistemas de Controle de Versão",
     "noticiaOriginal": "TFVC Policies Storage Updates",
-    "url": "https://devblogs.microsoft.com/devops/tfvc-policies-storage-updates/",
+    "url": "artigos/outros/tfvc-policies-storage-updates-a-revolucao-silenciosa-nos-sistemas-de-controle-de-versao.html",
     "data": "2025-05-05T15:19:05.646Z",
-    "dataFonte": "2025-04-02T21:02:11.000Z"
+    "dataFonte": "2025-04-02T21:02:11.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "O Sequestro de Robert Caro: Uma Lição Sobre Segurança em Sistemas",
     "noticiaOriginal": "I've been kidnapped by Robert Caro",
-    "url": "https://martinfowler.com/articles/2025-caro.html",
+    "url": "artigos/outros/o-sequestro-de-robert-caro-uma-licao-sobre-seguranca-em-sistemas.html",
     "data": "2025-05-05T16:23:24.521Z",
-    "dataFonte": "2025-04-01T21:22:00.000Z"
+    "dataFonte": "2025-04-01T21:22:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Azure DevOps Services: O Futuro da Segurança nas Nuvens",
     "noticiaOriginal": "Important Update: Server Name Indication (SNI) Now Mandatory for Azure DevOps Services",
-    "url": "https://devblogs.microsoft.com/devops/sni-mandatory-for-azdo-services/",
+    "url": "artigos/devops/azure-devops-services-o-futuro-da-seguranca-nas-nuvens.html",
     "data": "2025-05-05T17:16:09.138Z",
-    "dataFonte": "2025-04-01T19:04:32.000Z"
+    "dataFonte": "2025-04-01T19:04:32.000Z",
+    "categoria": "DevOps"
   },
   {
     "titulo": "Segredos Sobrepostos: Desvendando os Desafios do Azure DevOps OAuth",
     "noticiaOriginal": "New Overlapping Secrets on Azure DevOps OAuth",
-    "url": "https://devblogs.microsoft.com/devops/new-overlapping-secrets-on-azure-devops-oauth/",
+    "url": "artigos/devops/segredos-sobrepostos-desvendando-os-desafios-do-azure-devops-oauth.html",
     "data": "2025-05-05T17:41:42.667Z",
-    "dataFonte": "2025-03-26T16:19:22.000Z"
+    "dataFonte": "2025-03-26T16:19:22.000Z",
+    "categoria": "DevOps"
   },
   {
     "titulo": "Debugging com o Visualizador AI-powered para IEnumerable: muito mais do que parece",
     "noticiaOriginal": "Debugging with the AI-powered IEnumerable visualizer",
-    "url": "https://devblogs.microsoft.com/visualstudio/debugging-with-the-ai-powered-ienumerable-visualizer/",
+    "url": "artigos/outros/debugging-com-o-visualizador-ai-powered-para-ienumerable-muito-mais-do-que-parece.html",
     "data": "2025-05-05T18:01:57.937Z",
-    "dataFonte": "2025-03-26T15:00:31.000Z"
+    "dataFonte": "2025-03-26T15:00:31.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desenvolvimento de Software: O Poder das Habilidades do Desenvolvedor na Codificação Agente",
     "noticiaOriginal": "The role of developer skills in agentic coding",
-    "url": "https://martinfowler.com/articles/exploring-gen-ai.html#memo-13",
+    "url": "artigos/outros/desenvolvimento-de-software-o-poder-das-habilidades-do-desenvolvedor-na-codificacao-agente.html",
     "data": "2025-05-05T18:21:37.984Z",
-    "dataFonte": "2025-03-25T14:39:00.000Z"
+    "dataFonte": "2025-03-25T14:39:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Visual Studio Hub: A Revolução na Integração de Desenvolvimento",
     "noticiaOriginal": "Introducing Visual Studio Hub",
-    "url": "https://devblogs.microsoft.com/visualstudio/visual-studio-hub/",
+    "url": "artigos/outros/visual-studio-hub-a-revolucao-na-integracao-de-desenvolvimento.html",
     "data": "2025-05-05T19:12:31.618Z",
-    "dataFonte": "2025-03-24T14:44:42.000Z"
+    "dataFonte": "2025-03-24T14:44:42.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Explorando o Suporte a Java, JS e Python nos Planos de Teste",
     "noticiaOriginal": "Introducing Java, JS and Python support in Test Plans",
-    "url": "https://devblogs.microsoft.com/devops/introducing-java-javascript-and-python-support-in-azuredevops-test-plans/",
+    "url": "artigos/outros/explorando-o-suporte-a-java-js-e-python-nos-planos-de-teste.html",
     "data": "2025-05-05T20:19:46.347Z",
-    "dataFonte": "2025-03-21T06:50:20.000Z"
+    "dataFonte": "2025-03-21T06:50:20.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Como remover \"X\" dos passaportes dos EUA: uma abordagem técnica",
     "noticiaOriginal": "Commenting on removing \"X\" on US passports",
-    "url": "https://martinfowler.com/articles/2025-passport-x.html",
+    "url": "artigos/outros/como-remover-x-dos-passaportes-dos-eua-uma-abordagem-tecnica.html",
     "data": "2025-05-05T21:16:36.058Z",
-    "dataFonte": "2025-02-26T16:49:00.000Z"
+    "dataFonte": "2025-02-26T16:49:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "GenAI Patterns: Desvendando os Segredos do Fine Tuning",
     "noticiaOriginal": "GenAI Patterns: Fine Tuning",
-    "url": "https://martinfowler.com/articles/gen-ai-patterns/#fine-tuning",
+    "url": "artigos/outros/genai-patterns-desvendando-os-segredos-do-fine-tuning.html",
     "data": "2025-05-05T22:17:26.931Z",
-    "dataFonte": "2025-02-25T12:20:00.000Z"
+    "dataFonte": "2025-02-25T12:20:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "GenAI Patterns: Guardrails e a Visão RAG - Desvendando os Segredos da Inteligência Artificial",
     "noticiaOriginal": "GenAI Patterns: Guardrails and RAG overview",
-    "url": "https://martinfowler.com/articles/gen-ai-patterns/#guardrails",
+    "url": "artigos/inteligencia-artificial/genai-patterns-guardrails-e-a-visao-rag-desvendando-os-segredos-da-inteligencia-artificial.html",
     "data": "2025-05-05T23:16:34.281Z",
-    "dataFonte": "2025-02-19T00:02:00.000Z"
+    "dataFonte": "2025-02-19T00:02:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Desvendando o Poder do LLM Reasoning para Tarefas de Software",
     "noticiaOriginal": "What role does LLM reasoning play for software tasks?",
-    "url": "https://martinfowler.com/articles/exploring-gen-ai.html#memo-12",
+    "url": "artigos/outros/desvendando-o-poder-do-llm-reasoning-para-tarefas-de-software.html",
     "data": "2025-05-06T01:24:12.068Z",
-    "dataFonte": "2025-02-18T00:02:00.000Z"
+    "dataFonte": "2025-02-18T00:02:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "GenAI Patterns: Revolucionando o Reranker em 2025",
     "noticiaOriginal": "GenAI Patterns: Reranker",
-    "url": "https://martinfowler.com/articles/gen-ai-patterns/#reranker",
+    "url": "artigos/outros/genai-patterns-revolucionando-o-reranker-em-2025.html",
     "data": "2025-05-06T03:07:02.315Z",
-    "dataFonte": "2025-02-13T10:16:00.000Z"
+    "dataFonte": "2025-02-13T10:16:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "GenAI Patterns: Repensando suas Queries",
     "noticiaOriginal": "GenAI Patterns: Query Rewriting",
-    "url": "https://martinfowler.com/articles/gen-ai-patterns/#query-rewrite",
+    "url": "artigos/outros/genai-patterns-repensando-suas-queries.html",
     "data": "2025-05-06T04:21:14.049Z",
-    "dataFonte": "2025-02-11T20:58:00.000Z"
+    "dataFonte": "2025-02-11T20:58:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Explorando o Poder do DeepSeek: Uma Análise Técnica Profunda",
     "noticiaOriginal": "The DeepSeek Series: A Technical Overview",
-    "url": "https://martinfowler.com/articles/deepseek-papers.html",
+    "url": "artigos/outros/explorando-o-poder-do-deepseek-uma-analise-tecnica-profunda.html",
     "data": "2025-05-06T05:18:19.432Z",
-    "dataFonte": "2025-02-06T14:17:00.000Z"
+    "dataFonte": "2025-02-06T14:17:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desvendando os Segredos do GenAI: Limitações do RAG e o Retriever Híbrido",
     "noticiaOriginal": "GenAI Patterns: RAG Limitations and Hybrid Retriever",
-    "url": "https://martinfowler.com/articles/gen-ai-patterns/#RagInPractice",
+    "url": "artigos/outros/desvendando-os-segredos-do-genai-limitacoes-do-rag-e-o-retriever-hibrido.html",
     "data": "2025-05-06T06:26:01.673Z",
-    "dataFonte": "2025-02-05T15:03:00.000Z"
+    "dataFonte": "2025-02-05T15:03:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "O Futuro da Engenharia de Software: Insights do Panel no goto Copenhagen",
     "noticiaOriginal": "Panel at goto Copenhagen: \"Where is SW development Going",
-    "url": "https://www.youtube.com/watch?v=86-Dy5U2p5Y",
+    "url": "artigos/inteligencia-artificial/o-futuro-da-engenharia-de-software-insights-do-panel-no-goto-copenhagen.html",
     "data": "2025-05-06T07:17:58.586Z",
-    "dataFonte": "2025-02-04T15:23:00.000Z"
+    "dataFonte": "2025-02-04T15:23:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Título:",
     "noticiaOriginal": "GenAI Patterns: Retrieval Augmented Generation (RAG)",
-    "url": "https://martinfowler.com/articles/gen-ai-patterns/#rag",
+    "url": "artigos/outros/titulo.html",
     "data": "2025-05-06T08:24:36.275Z",
-    "dataFonte": "2025-02-04T14:57:00.000Z"
+    "dataFonte": "2025-02-04T14:57:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Floresta e Deserto: Onde a arquitetura de software encontra a natureza",
     "noticiaOriginal": "Bliki: Forest And Desert",
-    "url": "https://martinfowler.com/bliki/ForestAndDesert.html",
+    "url": "artigos/outros/floresta-e-deserto-onde-a-arquitetura-de-software-encontra-a-natureza.html",
     "data": "2025-05-06T09:19:45.239Z",
-    "dataFonte": "2025-01-30T05:00:00.000Z"
+    "dataFonte": "2025-01-30T05:00:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desvendando os Segredos dos Embeddings em Produtos GenAI",
     "noticiaOriginal": "Embeddings in GenAI Products",
-    "url": "https://martinfowler.com/articles/gen-ai-patterns/#embedding",
+    "url": "artigos/outros/desvendando-os-segredos-dos-embeddings-em-produtos-genai.html",
     "data": "2025-05-06T10:19:23.185Z",
-    "dataFonte": "2025-01-29T15:55:00.000Z"
+    "dataFonte": "2025-01-29T15:55:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Construindo o Futuro: Desvendando os Padrões Emergentes na Criação de Produtos com GenAI",
     "noticiaOriginal": "Emerging Patterns in Building GenAI Products",
-    "url": "https://martinfowler.com/articles/gen-ai-patterns/",
+    "url": "artigos/inteligencia-artificial/construindo-o-futuro-desvendando-os-padroes-emergentes-na-criacao-de-produtos-com-genai.html",
     "data": "2025-05-06T11:15:18.789Z",
-    "dataFonte": "2025-01-28T12:43:00.000Z"
+    "dataFonte": "2025-01-28T12:43:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Podcast com Luca Rossi: O Futuro da Comunicação Online",
     "noticiaOriginal": "Podcast with Luca Rossi",
-    "url": "https://refactoring.fm/p/growing-the-development-forest-with",
+    "url": "artigos/outros/podcast-com-luca-rossi-o-futuro-da-comunicacao-online.html",
     "data": "2025-05-06T12:38:14.656Z",
-    "dataFonte": "2025-01-24T18:01:00.000Z"
+    "dataFonte": "2025-01-24T18:01:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Padrões de Design: o segredo por trás dos frameworks",
     "noticiaOriginal": "@unclebobmartin Design Patterns is still one of my favorite books. It opened my eyes to software architecture. Developers who criticize patterns often overlook that the frameworks they depend on are full of those very patterns. It's often an experience level and as they say now \"skills issue\".",
-    "url": "https://x.com/JohnDoritosKane/status/1919744255964151817",
+    "url": "artigos/outros/padroes-de-design-o-segredo-por-tras-dos-frameworks.html",
     "data": "2025-05-06T13:30:54.100Z",
-    "dataFonte": "2025-05-06T13:21:12.000Z"
+    "dataFonte": "2025-05-06T13:21:12.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desvendando o Poder das Chamadas de Função com LLMs",
     "noticiaOriginal": "Function calling using LLMs",
-    "url": "https://martinfowler.com/articles/function-call-LLM.html",
+    "url": "artigos/outros/desvendando-o-poder-das-chamadas-de-funcao-com-llms.html",
     "data": "2025-05-06T14:18:17.602Z",
-    "dataFonte": "2025-05-06T13:02:00.000Z"
+    "dataFonte": "2025-05-06T13:02:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Design Patterns: A Beleza e a Armadilha na Arquitetura de Software",
     "noticiaOriginal": "@unclebobmartin The criticism is not \"they're complicated.\" Some design patterns are ok as an abstract vocabulary. But they quickly become problematic when they are implemented literally. And they immediately become disastrous when they are treated as the atomic units of software architecture.",
-    "url": "https://x.com/xdfdev/status/1919753899986096379",
+    "url": "artigos/outros/design-patterns-a-beleza-e-a-armadilha-na-arquitetura-de-software.html",
     "data": "2025-05-06T15:24:05.387Z",
-    "dataFonte": "2025-05-06T13:59:31.000Z"
+    "dataFonte": "2025-05-06T13:59:31.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Design Patterns: Mais do que um Vocabulário, uma Filosofia de Desenvolvimento",
     "noticiaOriginal": "Design patterns are fine as a vocabulary to talk about certain approaches abstractly. But they quickly become problematic when they are implemented literally. And they immediately become disastrous when they are treated as the atomic units of software architecture.",
-    "url": "https://x.com/xdfdev/status/1919750699920887916",
+    "url": "artigos/inteligencia-artificial/design-patterns-mais-do-que-um-vocabulario-uma-filosofia-de-desenvolvimento.html",
     "data": "2025-05-06T16:21:17.771Z",
-    "dataFonte": "2025-05-06T13:46:48.000Z"
+    "dataFonte": "2025-05-06T13:46:48.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Codemods: A revolução da refatoração de código",
     "noticiaOriginal": "Codemods in other languages",
-    "url": "https://martinfowler.com/articles/codemods-api-refactoring.html#CodemodsInOtherLanguages",
+    "url": "artigos/outros/codemods-a-revolucao-da-refatoracao-de-codigo.html",
     "data": "2025-05-06T17:16:04.159Z",
-    "dataFonte": "2025-01-22T15:54:00.000Z"
+    "dataFonte": "2025-01-22T15:54:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desvendando os Erros Comuns dos Codemods",
     "noticiaOriginal": "Fixing Common Pitfalls of Codemods",
-    "url": "https://martinfowler.com/articles/codemods-api-refactoring.html#FixingCommonPitfallsOfCodemods",
+    "url": "artigos/outros/desvendando-os-erros-comuns-dos-codemods.html",
     "data": "2025-05-06T18:25:22.325Z",
-    "dataFonte": "2025-01-15T14:43:00.000Z"
+    "dataFonte": "2025-01-15T14:43:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Descobertas musicais de 2024: como a tecnologia está transformando a forma como encontramos novas músicas",
     "noticiaOriginal": "My favorite musical discoveries of 2024",
-    "url": "https://martinfowler.com/articles/2024-music.html",
+    "url": "artigos/inteligencia-artificial/descobertas-musicais-de-2024-como-a-tecnologia-esta-transformando-a-forma-como-encontramos-novas-musicas.html",
     "data": "2025-05-06T19:12:45.993Z",
-    "dataFonte": "2025-01-09T14:49:00.000Z"
+    "dataFonte": "2025-01-09T14:49:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Transformando seu código com maestria: explorando um codemod mais complexo",
     "noticiaOriginal": "A more complex codemod",
-    "url": "https://martinfowler.com/articles/codemods-api-refactoring.html#RefactoringAnAvatarComponent",
+    "url": "artigos/inteligencia-artificial/transformando-seu-codigo-com-maestria-explorando-um-codemod-mais-complexo.html",
     "data": "2025-05-06T20:19:59.778Z",
-    "dataFonte": "2025-01-08T14:44:00.000Z"
+    "dataFonte": "2025-01-08T14:44:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Automatizando Mudanças em APIs com Codemods: O Poder do Refactoring",
     "noticiaOriginal": "Refactoring with Codemods to Automate API Changes",
-    "url": "https://martinfowler.com/articles/codemods-api-refactoring.html",
+    "url": "artigos/outros/automatizando-mudancas-em-apis-com-codemods-o-poder-do-refactoring.html",
     "data": "2025-05-06T21:17:00.927Z",
-    "dataFonte": "2025-01-07T14:34:00.000Z"
+    "dataFonte": "2025-01-07T14:34:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Design Tokens: A Arquitetura Secreta por Trás de Interfaces de Usuário Incríveis",
     "noticiaOriginal": "Design Token-Based UI Architecture",
-    "url": "https://martinfowler.com/articles/design-token-based-ui-architecture.html",
+    "url": "artigos/outros/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html",
     "data": "2025-05-06T22:17:15.566Z",
-    "dataFonte": "2024-12-12T09:36:00.000Z"
+    "dataFonte": "2024-12-12T09:36:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desenvolvendo Produtos de Dados: O Próximo Passo",
     "noticiaOriginal": "Designing Data Products: next steps",
-    "url": "https://martinfowler.com/articles/designing-data-products.html#HowBigShouldDataProductsBe",
+    "url": "artigos/outros/desenvolvendo-produtos-de-dados-o-proximo-passo.html",
     "data": "2025-05-06T23:16:41.848Z",
-    "dataFonte": "2024-12-10T14:22:00.000Z"
+    "dataFonte": "2024-12-10T14:22:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Construindo Data Products: A Arte da Generalização na Arquitetura de Software",
     "noticiaOriginal": "Generalizing the design of data products",
-    "url": "https://martinfowler.com/articles/designing-data-products.html#OverlayAdditionalUseCasesAndGeneralise",
+    "url": "artigos/outros/construindo-data-products-a-arte-da-generalizacao-na-arquitetura-de-software.html",
     "data": "2025-05-07T01:25:09.864Z",
-    "dataFonte": "2024-12-04T15:36:00.000Z"
+    "dataFonte": "2024-12-04T15:36:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Unity: O que está por trás da polêmica com o VLC?",
     "noticiaOriginal": "Unity’s Open-Source Double Standard: the ban of VLC",
-    "url": "https://mfkl.github.io/2024/01/10/unity-double-oss-standards.html",
+    "url": "artigos/outros/unity-o-que-esta-por-tras-da-polemica-com-o-vlc.html",
     "data": "2025-05-07T14:31:34.770Z",
-    "dataFonte": "2025-05-07T12:33:40.000Z"
+    "dataFonte": "2025-05-07T12:33:40.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Lançamentos musicais e distribuição online em 1996: os segredos revelados por Bowie",
     "noticiaOriginal": "Telling Lies: Bowie and Online Music Distribution in 1996",
-    "url": "https://cybercultural.com/p/online-music-distribution-1996/",
+    "url": "artigos/outros/lancamentos-musicais-e-distribuicao-online-em-1996-os-segredos-revelados-por-bowie.html",
     "data": "2025-05-07T16:23:50.759Z",
-    "dataFonte": "2025-05-07T15:58:41.000Z"
+    "dataFonte": "2025-05-07T15:58:41.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "O poder da contratação de Engenheiros Sênior: uma análise prática",
     "noticiaOriginal": "Motion (YC W20) Is Hiring a Senior Engineers",
-    "url": "https://jobs.ashbyhq.com/motion/4f5f6a29-3af0-4d79-99a4-988ff7c5ba05?utm_source=hn",
+    "url": "artigos/outros/o-poder-da-contratacao-de-engenheiros-senior-uma-analise-pratica.html",
     "data": "2025-05-07T17:16:18.072Z",
-    "dataFonte": "2025-05-07T17:01:45.000Z"
+    "dataFonte": "2025-05-07T17:01:45.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Três Capítulos na Cloudflare: De Programador a CTO a Membro do Conselho",
     "noticiaOriginal": "Three Chapters at Cloudflare: Programmer to CTO to Board of Directors",
-    "url": "https://blog.cloudflare.com/en-us/three-chapters-at-cloudflare-programmer-to-cto-to-board-of-directors/",
+    "url": "artigos/outros/tres-capitulos-na-cloudflare-de-programador-a-cto-a-membro-do-conselho.html",
     "data": "2025-05-07T18:25:46.362Z",
-    "dataFonte": "2025-05-07T17:43:06.000Z"
+    "dataFonte": "2025-05-07T17:43:06.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "\"Analytics Livre: O Futuro da Análise de Dados na Web\"",
     "noticiaOriginal": "Open source Google Analytics replacement",
-    "url": "https://github.com/rybbit-io/rybbit",
+    "url": "artigos/outros/analytics-livre-o-futuro-da-analise-de-dados-na-web.html",
     "data": "2025-05-07T19:15:13.090Z",
-    "dataFonte": "2025-05-07T17:45:33.000Z"
+    "dataFonte": "2025-05-07T17:45:33.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Web Search no Anthropic API: Desvendando os Segredos da Busca na Web",
     "noticiaOriginal": "Introducing Web Search on the Anthropic API",
-    "url": "https://www.anthropic.com/news/web-search-api",
+    "url": "artigos/outros/web-search-no-anthropic-api-desvendando-os-segredos-da-busca-na-web.html",
     "data": "2025-05-07T20:20:00.723Z",
-    "dataFonte": "2025-05-07T20:18:47.000Z"
+    "dataFonte": "2025-05-07T20:18:47.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "\"Decolando para o Futuro: GovEagle (YC W23) está contratando\"",
     "noticiaOriginal": "GovEagle (YC W23) Is Hiring",
-    "url": "https://www.ycombinator.com/companies/goveagle/jobs/ogNRCkd-platform-engineering-contractor-short-term",
+    "url": "artigos/outros/decolando-para-o-futuro-goveagle-yc-w23-esta-contratando.html",
     "data": "2025-05-07T21:15:22.688Z",
-    "dataFonte": "2025-05-07T21:00:28.000Z"
+    "dataFonte": "2025-05-07T21:00:28.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "\"Reinventando Fronteiras: O Impacto da OpenAI para Países na Era da Tecnologia\"",
     "noticiaOriginal": "OpenAI for Countries",
-    "url": "https://openai.com/global-affairs/openai-for-countries/",
+    "url": "artigos/inteligencia-artificial/reinventando-fronteiras-o-impacto-da-openai-para-paises-na-era-da-tecnologia.html",
     "data": "2025-05-07T22:17:34.630Z",
-    "dataFonte": "2025-05-07T21:05:36.000Z"
+    "dataFonte": "2025-05-07T21:05:36.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "\"Desafios e Lições: Como a Pakistani Firm Enviou Fentanil Analógico e Golpes para os EUA\"",
     "noticiaOriginal": "Pakistani Firm Shipped Fentanyl Analogs, Scams to US",
-    "url": "https://krebsonsecurity.com/2025/05/pakistani-firm-shipped-fentanyl-analogs-scams-to-us/",
+    "url": "artigos/outros/desafios-e-licoes-como-a-pakistani-firm-enviou-fentanil-analogico-e-golpes-para-os-eua.html",
     "data": "2025-05-07T23:16:47.906Z",
-    "dataFonte": "2025-05-07T22:25:54.000Z"
+    "dataFonte": "2025-05-07T22:25:54.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "O lado obscuro de World of Warcraft: analisando discurso e comportamento problemáticos",
     "noticiaOriginal": "Examining problematic speech and behavior in World of Warcraft (2022)",
-    "url": "https://tcjournal.org/vol8/jackson/",
+    "url": "artigos/outros/o-lado-obscuro-de-world-of-warcraft-analisando-discurso-e-comportamento-problematicos.html",
     "data": "2025-05-08T01:25:20.774Z",
-    "dataFonte": "2025-05-08T00:18:47.000Z"
+    "dataFonte": "2025-05-08T00:18:47.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Explorando o Potencial do Parametric Modeling com Grasshopper",
     "noticiaOriginal": "Parametric Modeling with Grasshopper",
-    "url": "https://baharmon.github.io/basics",
+    "url": "artigos/inteligencia-artificial/explorando-o-potencial-do-parametric-modeling-com-grasshopper.html",
     "data": "2025-05-08T03:09:51.551Z",
-    "dataFonte": "2025-05-07T23:57:12.000Z"
+    "dataFonte": "2025-05-07T23:57:12.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Desbravando os Caminhos: Biblioteca Python para Roteamento Local Rápido nos Estados Unidos",
     "noticiaOriginal": "Show HN: US Routing – Python library for fast local routing in the United States",
-    "url": "https://github.com/ivanbelenky/us-routing",
+    "url": "artigos/outros/desbravando-os-caminhos-biblioteca-python-para-roteamento-local-rapido-nos-estados-unidos.html",
     "data": "2025-05-08T04:22:17.851Z",
-    "dataFonte": "2025-05-07T23:51:32.000Z"
+    "dataFonte": "2025-05-07T23:51:32.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Inteligência Artificial e Desenvolvimento de Software: A Revolução dos IDEs",
@@ -1752,324 +1831,370 @@
   {
     "titulo": "Conectando o Futuro: Desvendando os Segredos da Rede Mycoria",
     "noticiaOriginal": "Mycoria is an open and secure overlay network that connects all participants",
-    "url": "https://mycoria.org/",
+    "url": "artigos/inteligencia-artificial/conectando-o-futuro-desvendando-os-segredos-da-rede-mycoria.html",
     "data": "2025-05-08T06:27:02.010Z",
-    "dataFonte": "2025-05-08T05:40:52.000Z"
+    "dataFonte": "2025-05-08T05:40:52.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Desenvolvendo Sistemas de Baixa Latência com C++: Desafios e Oportunidades",
     "noticiaOriginal": "Thunder Compute (YC S24) Is Hiring a C++ Low-Latency Systems Developer",
-    "url": "https://www.ycombinator.com/companies/thunder-compute/jobs/6nKTbsu-systems-engineer",
+    "url": "artigos/inteligencia-artificial/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html",
     "data": "2025-05-08T07:17:55.986Z",
-    "dataFonte": "2025-05-08T07:01:08.000Z"
+    "dataFonte": "2025-05-08T07:01:08.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Gmail vai parar de suportar 3DES para SMTP: o que isso significa para os desenvolvedores?",
     "noticiaOriginal": "Gmail will soon stop support for the 3DES encryption cipher for incoming SMTP",
-    "url": "https://workspaceupdates.googleblog.com/2025/05/update-for-gmail-support-for-the-3des-encryption-cipher-for-incoming-smtp-connections.html",
+    "url": "artigos/outros/gmail-vai-parar-de-suportar-3des-para-smtp-o-que-isso-significa-para-os-desenvolvedores.html",
     "data": "2025-05-08T08:24:38.043Z",
-    "dataFonte": "2025-05-08T04:09:40.000Z"
+    "dataFonte": "2025-05-08T04:09:40.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Alertas Críticos da Apple: Uma Política Incompreensível?",
     "noticiaOriginal": "I can't understand Apple's Critical Alert policy",
-    "url": "https://jhan.bearblog.dev/i-cant-understand-apples-critical-alert-policy/",
+    "url": "artigos/outros/alertas-criticos-da-apple-uma-politica-incompreensivel.html",
     "data": "2025-05-08T09:19:16.127Z",
-    "dataFonte": "2025-05-08T03:04:03.000Z"
+    "dataFonte": "2025-05-08T03:04:03.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desvendando os Segredos do Transmitir em 1,4 GHz!",
     "noticiaOriginal": "How Dare You Transmit at 1.4 GHz!",
-    "url": "https://radioandnukes.substack.com/p/how-dare-you-transmit-at-14-ghz",
+    "url": "artigos/outros/desvendando-os-segredos-do-transmitir-em-1-4-ghz.html",
     "data": "2025-05-08T10:19:56.778Z",
-    "dataFonte": "2025-05-08T08:52:56.000Z"
+    "dataFonte": "2025-05-08T08:52:56.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Satélite SMAP da NASA: Detectando Interferência na Faixa L com Maestria",
     "noticiaOriginal": "Using NASA’s SMAP satellite to detect L-band interference",
-    "url": "https://radioandnukes.substack.com/p/how-dare-you-transmit-at-14-ghz",
+    "url": "artigos/inteligencia-artificial/satelite-smap-da-nasa-detectando-interferencia-na-faixa-l-com-maestria.html",
     "data": "2025-05-08T11:15:26.344Z",
-    "dataFonte": "2025-05-08T08:52:56.000Z"
+    "dataFonte": "2025-05-08T08:52:56.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "CoreWCF: A revolução que você precisava conhecer",
     "noticiaOriginal": "My stackoverflow question was closed so here's a blog post about CoreWCF",
-    "url": "https://richardcocks.github.io/2025-05-08-CoreWCF.html",
+    "url": "artigos/outros/corewcf-a-revolucao-que-voce-precisava-conhecer.html",
     "data": "2025-05-08T12:36:28.725Z",
-    "dataFonte": "2025-05-08T12:11:39.000Z"
+    "dataFonte": "2025-05-08T12:11:39.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Globalização não esvaziou a classe média americana: uma análise técnica",
     "noticiaOriginal": "Globalization did not hollow out the American middle class",
-    "url": "https://www.noahpinion.blog/p/globalization-did-not-hollow-out",
+    "url": "artigos/inteligencia-artificial/globalizacao-nao-esvaziou-a-classe-media-americana-uma-analise-tecnica.html",
     "data": "2025-05-08T13:29:17.472Z",
-    "dataFonte": "2025-05-08T13:25:25.000Z"
+    "dataFonte": "2025-05-08T13:25:25.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Google e a Revolução Nuclear: O Futuro da Energia está Chegando!",
     "noticiaOriginal": "Google to Back Three New Advanced Nuclear Projects",
-    "url": "https://www.esgtoday.com/google-to-back-three-new-advanced-nuclear-projects/",
+    "url": "artigos/inteligencia-artificial/google-e-a-revolucao-nuclear-o-futuro-da-energia-esta-chegando.html",
     "data": "2025-05-08T14:16:24.504Z",
-    "dataFonte": "2025-05-08T13:36:09.000Z"
+    "dataFonte": "2025-05-08T13:36:09.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Huawei inova com laptop rodando HarmonyOS enquanto licença do Windows expira",
     "noticiaOriginal": "Huawei unveils laptop running self-developed HarmonyOS as Windows licence expire",
-    "url": "https://www.scmp.com/tech/big-tech/article/3309569/huawei-unveils-first-laptop-running-self-developed-harmonyos-windows-licence-expires",
+    "url": "artigos/outros/huawei-inova-com-laptop-rodando-harmonyos-enquanto-licenca-do-windows-expira.html",
     "data": "2025-05-08T15:19:33.936Z",
-    "dataFonte": "2025-05-08T14:24:04.000Z"
+    "dataFonte": "2025-05-08T14:24:04.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Doação de Riqueza: Um Desafio de Escala para o Mundo da Tecnologia",
     "noticiaOriginal": "20 years to give away virtually all my wealth",
-    "url": "https://www.gatesnotes.com/home/home-page-topic/reader/n20-years-to-give-away-virtually-all-my-wealth",
+    "url": "artigos/inteligencia-artificial/doacao-de-riqueza-um-desafio-de-escala-para-o-mundo-da-tecnologia.html",
     "data": "2025-05-08T16:23:18.229Z",
-    "dataFonte": "2025-05-08T13:59:49.000Z"
+    "dataFonte": "2025-05-08T13:59:49.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Explorando os Segredos do Reservoir Sampling",
     "noticiaOriginal": "Reservoir Sampling",
-    "url": "https://samwho.dev/reservoir-sampling/",
+    "url": "artigos/outros/explorando-os-segredos-do-reservoir-sampling.html",
     "data": "2025-05-08T17:15:43.194Z",
-    "dataFonte": "2025-05-08T17:02:10.000Z"
+    "dataFonte": "2025-05-08T17:02:10.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Static as a Server: A revolução silenciosa nos bastidores da tecnologia",
     "noticiaOriginal": "Static as a Server",
-    "url": "https://overreacted.io/static-as-a-server/",
+    "url": "artigos/inteligencia-artificial/static-as-a-server-a-revolucao-silenciosa-nos-bastidores-da-tecnologia.html",
     "data": "2025-05-08T18:25:26.133Z",
-    "dataFonte": "2025-05-08T17:49:02.000Z"
+    "dataFonte": "2025-05-08T17:49:02.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "O código escondido por trás do elogio de Steve Jobs",
     "noticiaOriginal": "From: Steve Jobs. \"Great idea, thank you.\"",
-    "url": "https://blog.hayman.net/2025/05/06/from-steve-jobs-great-idea.html",
+    "url": "artigos/outros/o-codigo-escondido-por-tras-do-elogio-de-steve-jobs.html",
     "data": "2025-05-08T19:14:42.544Z",
-    "dataFonte": "2025-05-08T18:40:12.000Z"
+    "dataFonte": "2025-05-08T18:40:12.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Stabilidade: a chave para sistemas robustos",
     "noticiaOriginal": "Stability by Design",
-    "url": "https://potetm.com/devtalk/stability-by-design.html",
+    "url": "artigos/outros/stabilidade-a-chave-para-sistemas-robustos.html",
     "data": "2025-05-08T20:19:59.400Z",
-    "dataFonte": "2025-05-08T19:51:29.000Z"
+    "dataFonte": "2025-05-08T19:51:29.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desvendando os Mistérios por Trás das Propriedades Emergentes dos LLMs",
     "noticiaOriginal": "Why do LLMs have emergent properties?",
-    "url": "https://www.johndcook.com/blog/2025/05/08/why-do-llms-have-emergent-properties/",
+    "url": "artigos/outros/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html",
     "data": "2025-05-08T21:17:10.515Z",
-    "dataFonte": "2025-05-08T20:07:00.000Z"
+    "dataFonte": "2025-05-08T20:07:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "A revolução das assinaturas fixas para Claude Code",
     "noticiaOriginal": "A flat pricing subscription for Claude Code",
-    "url": "https://support.anthropic.com/en/articles/11145838-using-claude-code-with-your-max-plan",
+    "url": "artigos/outros/a-revolucao-das-assinaturas-fixas-para-claude-code.html",
     "data": "2025-05-08T22:17:04.883Z",
-    "dataFonte": "2025-05-08T21:12:32.000Z"
+    "dataFonte": "2025-05-08T21:12:32.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Check It Out: Como Manter Seu Software Sempre Atualizado",
     "noticiaOriginal": "Show HN: Req Update Check",
-    "url": "https://github.com/ontherivt/req-update-check",
+    "url": "artigos/outros/check-it-out-como-manter-seu-software-sempre-atualizado.html",
     "data": "2025-05-08T23:17:29.399Z",
-    "dataFonte": "2025-05-08T22:30:17.000Z"
+    "dataFonte": "2025-05-08T22:30:17.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desvendando os Segredos do Processamento de Fluxo de Dados: Desafios e Soluções",
     "noticiaOriginal": "Presentation: Stream All the Things — Patterns of Effective Data Stream Processing",
-    "url": "https://www.infoq.com/presentations/streaming-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/outros/desvendando-os-segredos-do-processamento-de-fluxo-de-dados-desafios-e-solucoes.html",
     "data": "2025-05-09T01:03:31.920Z",
-    "dataFonte": "2025-05-08T14:05:00.000Z"
+    "dataFonte": "2025-05-08T14:05:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Despertando o Potencial: Como as Relações Sociais Impulsionam o Desempenho das Equipes de Engenharia de Software",
     "noticiaOriginal": "Using Social Drivers to Improve Software Engineering Team Performance",
-    "url": "https://www.infoq.com/news/2025/05/software-engineering-performance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/inteligencia-artificial/despertando-o-potencial-como-as-relacoes-sociais-impulsionam-o-desempenho-das-equipes-de-engenharia-de-software.html",
     "data": "2025-05-09T01:24:47.341Z",
-    "dataFonte": "2025-05-08T11:03:00.000Z"
+    "dataFonte": "2025-05-08T11:03:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Conectando Pontos: A Promessa da Microsoft de Laços Mais Profundos com a Tecnologia Europeia",
     "noticiaOriginal": "Microsoft Pledges Deeper European Tech Ties amidst Sovereignty Debate",
-    "url": "https://www.infoq.com/news/2025/05/microsoft-europe-tech-ties/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/inteligencia-artificial/conectando-pontos-a-promessa-da-microsoft-de-lacos-mais-profundos-com-a-tecnologia-europeia.html",
     "data": "2025-05-09T01:35:05.270Z",
-    "dataFonte": "2025-05-08T10:00:00.000Z"
+    "dataFonte": "2025-05-08T10:00:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Desbravando o Caminho do Uber para Ray no Kubernetes",
     "noticiaOriginal": "Uber’s Journey to Ray on Kubernetes",
-    "url": "https://www.infoq.com/news/2025/05/uber-journey-ray-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/devops/desbravando-o-caminho-do-uber-para-ray-no-kubernetes.html",
     "data": "2025-05-09T01:43:19.816Z",
-    "dataFonte": "2025-05-08T10:00:00.000Z"
+    "dataFonte": "2025-05-08T10:00:00.000Z",
+    "categoria": "DevOps"
   },
   {
     "titulo": "Desbravando o Protocolo de Contexto de Modelo no Ecossistema Java",
     "noticiaOriginal": "Adoption of the Model Context Protocol Within the Java Ecosystem",
-    "url": "https://www.infoq.com/news/2025/05/mcp-within-java-ecosystem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/outros/desbravando-o-protocolo-de-contexto-de-modelo-no-ecossistema-java.html",
     "data": "2025-05-09T02:31:36.055Z",
-    "dataFonte": "2025-05-08T08:15:00.000Z"
+    "dataFonte": "2025-05-08T08:15:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Dev Proxy v0.27: Desvendando as Novas Possibilidades da Modelagem de API, Integração de IA e Recursos de Configuração Aprimorados",
     "noticiaOriginal": "Dev Proxy v0.27 Released: Enhanced API Modeling, AI Integration, and Improved Configuration Features",
-    "url": "https://www.infoq.com/news/2025/05/microsoft-dev-proxy-0-27/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/inteligencia-artificial/dev-proxy-v0-27-desvendando-as-novas-possibilidades-da-modelagem-de-api-integracao-de-ia-e-recursos-de-configuracao-aprimorados.html",
     "data": "2025-05-09T02:37:17.232Z",
-    "dataFonte": "2025-05-08T07:30:00.000Z"
+    "dataFonte": "2025-05-08T07:30:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Patchs de Segurança: A Nova Fronteira da Meta e sua Ferramenta Revolucionária",
     "noticiaOriginal": "Meta Launches AutoPatchBench to Evaluate LLM Agents on Security Fixes",
-    "url": "https://www.infoq.com/news/2025/05/meta-autopatchbench-ai-patching/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/inteligencia-artificial/patchs-de-seguranca-a-nova-fronteira-da-meta-e-sua-ferramenta-revolucionaria.html",
     "data": "2025-05-09T02:44:19.284Z",
-    "dataFonte": "2025-05-07T18:00:00.000Z"
+    "dataFonte": "2025-05-07T18:00:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Visibilidade na Segurança em Nuvem: Desvendando as Configurações dos Nossos Ambientes na Nuvem",
     "noticiaOriginal": "Presentation: Visibility in Cloud Security: How Exactly Are Our Cloud Environments Configured?",
-    "url": "https://www.infoq.com/presentations/visibility-cloud-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/outros/visibilidade-na-seguranca-em-nuvem-desvendando-as-configuracoes-dos-nossos-ambientes-na-nuvem.html",
     "data": "2025-05-09T02:49:47.024Z",
-    "dataFonte": "2025-05-07T15:00:00.000Z"
+    "dataFonte": "2025-05-07T15:00:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Windows Community Toolkit 8.2: A revolução da compilação AOT no universo Windows",
     "noticiaOriginal": "Windows Community Toolkit 8.2 Supports Native AOT Compilation",
-    "url": "https://www.infoq.com/news/2025/05/wct-8-2-native-aot/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/outros/windows-community-toolkit-8-2-a-revolucao-da-compilacao-aot-no-universo-windows.html",
     "data": "2025-05-09T03:09:14.599Z",
-    "dataFonte": "2025-05-07T12:00:00.000Z"
+    "dataFonte": "2025-05-07T12:00:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Automatizando a Infraestrutura com Estilo: A Revolução da Pulumi nos Componentes de Código",
     "noticiaOriginal": "Pulumi Announces Improved Components Feature to Simplify Infrastructure as Code",
-    "url": "https://www.infoq.com/news/2025/05/pulumi-components-improved/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/outros/automatizando-a-infraestrutura-com-estilo-a-revolucao-da-pulumi-nos-componentes-de-codigo.html",
     "data": "2025-05-09T04:22:32.736Z",
-    "dataFonte": "2025-05-07T07:00:00.000Z"
+    "dataFonte": "2025-05-07T07:00:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Cultivando a Robustez: Construindo para Durar na Cultura da Resiliência",
     "noticiaOriginal": "Presentation: Built to Outlast: Cultivating a Culture of Resilience",
-    "url": "https://www.infoq.com/presentations/culture-resilience/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/inteligencia-artificial/cultivando-a-robustez-construindo-para-durar-na-cultura-da-resiliencia.html",
     "data": "2025-05-09T05:18:35.003Z",
-    "dataFonte": "2025-05-06T12:05:00.000Z"
+    "dataFonte": "2025-05-06T12:05:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Construindo Sistemas de Conhecimento Empresarial Precisos Através da Propriedade Distribuída",
     "noticiaOriginal": "Article: Domain-Driven RAG: Building Accurate Enterprise Knowledge Systems Through Distributed Ownership",
-    "url": "https://www.infoq.com/articles/domain-driven-rag/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/inteligencia-artificial/construindo-sistemas-de-conhecimento-empresarial-precisos-atraves-da-propriedade-distribuida.html",
     "data": "2025-05-09T06:28:13.173Z",
-    "dataFonte": "2025-05-06T09:00:00.000Z"
+    "dataFonte": "2025-05-06T09:00:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Explorando as Novidades do Universo Java: Updates no OpenJDK, Spring AI, Quarkus, LangChain4j, JReleaser e WildFly",
     "noticiaOriginal": "Java News Roundup: OpenJDK JEP Updates, Spring AI, Quarkus, LangChain4j, JReleaser, WildFly",
-    "url": "https://www.infoq.com/news/2025/05/java-news-roundup-apr28-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/outros/explorando-as-novidades-do-universo-java-updates-no-openjdk-spring-ai-quarkus-langchain4j-jreleaser-e-wildfly.html",
     "data": "2025-05-09T07:19:20.746Z",
-    "dataFonte": "2025-05-05T16:15:00.000Z"
+    "dataFonte": "2025-05-05T16:15:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "O Poder dos Instance Main Methods no JDK 25: A Evolução da Arquitetura de Software",
     "noticiaOriginal": "Instance Main Methods Move from Preview to Final in JDK 25",
-    "url": "https://www.infoq.com/news/2025/05/jdk25-instance-main-methods/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/outros/o-poder-dos-instance-main-methods-no-jdk-25-a-evolucao-da-arquitetura-de-software.html",
     "data": "2025-05-09T08:24:53.416Z",
-    "dataFonte": "2025-05-05T14:27:00.000Z"
+    "dataFonte": "2025-05-05T14:27:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desvendando as Tendências de Cultura e Métodos para 2025",
     "noticiaOriginal": "Article: InfoQ Culture and Methods Trends Report - 2025",
-    "url": "https://www.infoq.com/articles/culture-trends-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/inteligencia-artificial/desvendando-as-tendencias-de-cultura-e-metodos-para-2025.html",
     "data": "2025-05-09T09:19:42.093Z",
-    "dataFonte": "2025-05-09T09:05:00.000Z"
+    "dataFonte": "2025-05-09T09:05:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Desenvolvendo Sistemas Distribuídos com Temporal na AWS: A Revolução Chegou!",
     "noticiaOriginal": "Temporal on AWS Aims to Ease Building Resilient Distributed Systems",
-    "url": "https://www.infoq.com/news/2025/05/temporal-aws-resilient-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/outros/desenvolvendo-sistemas-distribuidos-com-temporal-na-aws-a-revolucao-chegou.html",
     "data": "2025-05-09T10:20:14.281Z",
-    "dataFonte": "2025-05-09T10:00:00.000Z"
+    "dataFonte": "2025-05-09T10:00:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Construindo Sistemas de IA/ML Eficientes em Energia: Desafios e Soluções",
     "noticiaOriginal": "Article: Best Practices to Build Energy-Efficient AI/ML Systems",
-    "url": "https://www.infoq.com/articles/best-practices-energy-efficient-ai-ml-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/inteligencia-artificial/construindo-sistemas-de-ia-ml-eficientes-em-energia-desafios-e-solucoes.html",
     "data": "2025-05-09T11:15:35.546Z",
-    "dataFonte": "2025-05-09T11:00:00.000Z"
+    "dataFonte": "2025-05-09T11:00:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "InfoQ Dev Summit Boston 2025: Desenvolvimento de IA, Plataformas e Experiência do Desenvolvedor",
     "noticiaOriginal": "InfoQ Dev Summit Boston 2025: AI, Platforms, and Developer Experience",
-    "url": "https://www.infoq.com/news/2025/05/ids-boston-2025-topics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/inteligencia-artificial/infoq-dev-summit-boston-2025-desenvolvimento-de-ia-plataformas-e-experiencia-do-desenvolvedor.html",
     "data": "2025-05-09T12:36:26.236Z",
-    "dataFonte": "2025-05-09T12:00:00.000Z"
+    "dataFonte": "2025-05-09T12:00:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Revolução Tecnológica: Rumo aos Novos Horizontes em 2025",
     "noticiaOriginal": "Podcast: InfoQ Culture & Methods Trends in 2025",
-    "url": "https://www.infoq.com/podcasts/infoq-culture-trends-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/outros/revolucao-tecnologica-rumo-aos-novos-horizontes-em-2025.html",
     "data": "2025-05-09T13:28:36.459Z",
-    "dataFonte": "2025-05-09T09:00:00.000Z"
+    "dataFonte": "2025-05-09T09:00:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Java Reimaginado: Desenvolvimento Ágil com JBang Jash",
     "noticiaOriginal": "JBang Jash Brings Streamlined Process Execution to Java",
-    "url": "https://www.infoq.com/news/2025/05/jbang-jash/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "artigos/outros/java-reimaginado-desenvolvimento-agil-com-jbang-jash.html",
     "data": "2025-05-09T15:19:13.291Z",
-    "dataFonte": "2025-05-09T15:00:00.000Z"
+    "dataFonte": "2025-05-09T15:00:00.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Investigação de dois sites pornográficos por possíveis falhas na verificação de idade",
     "noticiaOriginal": "Two porn sites investigated for suspected age check failings",
-    "url": "https://www.bbc.com/news/articles/cx2qn1j0jd6o",
+    "url": "artigos/outros/investigacao-de-dois-sites-pornograficos-por-possiveis-falhas-na-verificacao-de-idade.html",
     "data": "2025-05-09T18:29:54.102Z",
-    "dataFonte": "2025-05-09T12:09:22.000Z"
+    "dataFonte": "2025-05-09T12:09:22.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Guardando os Tesouros: Como garantir a segurança dos backups no Ártico",
     "noticiaOriginal": "Visit the Arctic vault holding back-ups of great works",
-    "url": "https://www.bbc.com/news/articles/c7vnyn17p57o",
+    "url": "artigos/outros/guardando-os-tesouros-como-garantir-a-seguranca-dos-backups-no-artico.html",
     "data": "2025-05-09T19:14:49.399Z",
-    "dataFonte": "2025-05-08T23:37:28.000Z"
+    "dataFonte": "2025-05-08T23:37:28.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Caos bancário: como evitar que seu sistema desabe no dia do pagamento",
     "noticiaOriginal": "Pay day banking outages hit 1.2m people, banks reveal",
-    "url": "https://www.bbc.com/news/articles/c7875w07l93o",
+    "url": "artigos/inteligencia-artificial/caos-bancario-como-evitar-que-seu-sistema-desabe-no-dia-do-pagamento.html",
     "data": "2025-05-09T20:20:23.653Z",
-    "dataFonte": "2025-05-08T15:47:05.000Z"
+    "dataFonte": "2025-05-08T15:47:05.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Apple X Juiz dos EUA: A Batalha dos Gigantes",
     "noticiaOriginal": "Apple hits back at US judge's 'extraordinary' contempt order",
-    "url": "https://www.bbc.com/news/articles/c3r8rg4w2v0o",
+    "url": "artigos/outros/apple-x-juiz-dos-eua-a-batalha-dos-gigantes.html",
     "data": "2025-05-09T21:16:55.521Z",
-    "dataFonte": "2025-05-08T15:45:10.000Z"
+    "dataFonte": "2025-05-08T15:45:10.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Desafio da Wikipedia: questionando as regras de segurança online",
     "noticiaOriginal": "Wikipedia legally challenges 'flawed' online safety rules",
-    "url": "https://www.bbc.com/news/articles/c62j2gr8866o",
+    "url": "artigos/inteligencia-artificial/desafio-da-wikipedia-questionando-as-regras-de-seguranca-online.html",
     "data": "2025-05-09T22:17:14.103Z",
-    "dataFonte": "2025-05-08T09:30:31.000Z"
+    "dataFonte": "2025-05-08T09:30:31.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Transformando a Indústria Automobilística: A Apple entra no mercado de carros elétricos",
     "noticiaOriginal": "iPhone maker announces plan to build Mitsubishi EVs",
-    "url": "https://www.bbc.com/news/articles/cz7974l151po",
+    "url": "artigos/inteligencia-artificial/transformando-a-industria-automobilistica-a-apple-entra-no-mercado-de-carros-eletricos.html",
     "data": "2025-05-09T23:16:40.744Z",
-    "dataFonte": "2025-05-08T01:51:00.000Z"
+    "dataFonte": "2025-05-08T01:51:00.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "Protegendo Elton John e Dua Lipa do Avanço da Inteligência Artificial",
     "noticiaOriginal": "Elton John and Dua Lipa seek protection from AI",
-    "url": "https://www.bbc.com/news/articles/c071elp1rv1o",
+    "url": "artigos/inteligencia-artificial/protegendo-elton-john-e-dua-lipa-do-avanco-da-inteligencia-artificial.html",
     "data": "2025-05-10T01:23:29.124Z",
-    "dataFonte": "2025-05-10T00:27:24.000Z"
+    "dataFonte": "2025-05-10T00:27:24.000Z",
+    "categoria": "Inteligência Artificial"
   },
   {
     "titulo": "O Fantástico Retorno do Homem de Arizona para Enfrentar seu Assassino",
     "noticiaOriginal": "Arizona man shot to death in road rage 'returns' to address his killer",
-    "url": "https://www.bbc.com/news/articles/cq808px90wxo",
+    "url": "artigos/outros/o-fantastico-retorno-do-homem-de-arizona-para-enfrentar-seu-assassino.html",
     "data": "2025-05-10T03:03:12.921Z",
-    "dataFonte": "2025-05-07T22:27:48.000Z"
+    "dataFonte": "2025-05-07T22:27:48.000Z",
+    "categoria": "Outros"
   },
   {
     "titulo": "Rastros Digitais: A Conta Chegou para o Criador do Spyware Pegasus em Caso de Hack do WhatsApp",
@@ -2125,6 +2250,14 @@
     "url": "artigos/inteligencia-artificial/cuidado-com-as-ligacoes-falsas-de-ti-apos-os-hacks-da-co-op-e-m-s-alerta-centro-cibernetico-do-reino-unido.html",
     "data": "2025-05-10T05:21:23.584Z",
     "dataFonte": "2025-05-05T10:30:03.000Z",
+    "categoria": "Inteligência Artificial"
+  },
+  {
+    "titulo": "Skype e a Importância do Fechamento em Relacionamentos à Distância",
+    "noticiaOriginal": "Long-distance romance and closure from husband's death - your memories of Skype",
+    "url": "artigos/inteligencia-artificial/skype-e-a-importancia-do-fechamento-em-relacionamentos-a-distancia.html",
+    "data": "2025-05-10T05:37:07.829Z",
+    "dataFonte": "2025-05-04T03:18:58.000Z",
     "categoria": "Inteligência Artificial"
   }
 ]
