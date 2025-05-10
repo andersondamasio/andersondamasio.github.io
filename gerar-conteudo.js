@@ -490,11 +490,17 @@ const html = `<!DOCTYPE html>
 
 <style>
 body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
-header a:hover {
-  text-decoration: underline;
-  color: #f1c40f;
-}
 h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+
+ a {
+      color: #0a66c2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
 .article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
 .article-body { font-size: 1.05rem; line-height: 1.7; }
 pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
@@ -740,9 +746,14 @@ header a:hover {
 main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
 ul { padding-left: 1.5rem; line-height: 1.8; }
-a { text-decoration: none; font-weight: bold; }
-a:hover { text-decoration: underline; }
-
+ a {
+      color: #0a66c2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
 .scroll-container {
   display: flex;
   overflow-x: auto;
