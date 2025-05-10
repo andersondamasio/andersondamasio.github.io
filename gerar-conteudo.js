@@ -40,6 +40,8 @@ function descobrirCategoria(titulo) {
   if (/educacao|ensino|ead|plataformaeducacional|mooc/.test(texto)) return "Educação";
   if (/automation|automacao\s?de\s?processos|rpa/.test(texto)) return "Automação";
   if (/excel|planilha|vba|spreadsheet/.test(texto)) return "Produtividade";
+  if (/tarifa[s]?|preço[s]?|mercado|economia|imposto[s]?|taxa[s]?|aumento|vendas|comercial/.test(texto)) return "Economia e Mercado";
+
 
   return "Outros";
 }
