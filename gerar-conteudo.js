@@ -432,14 +432,9 @@ function gerarHeaderNavegacao(base = ".") {
     <a href="${base}/categoria/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
     <a href="${base}/sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
     <a href="${base}/contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-    <a href="${base}/termos.html" style="color: white; font-weight: 600; text-decoration: none;">Termos</a>
-    <a href="${base}/politica.html" style="color: white; font-weight: 600; text-decoration: none;">Privacidade</a>
   </nav>
 </header>`;
 }
-
-
-
 
 async function gerar() {
   try {
