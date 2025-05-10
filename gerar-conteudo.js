@@ -48,9 +48,16 @@ function gerarPaginasPorCategoria(titulos) {
     if (!agrupados[cat]) agrupados[cat] = [];
     agrupados[cat].push(artigo);
   }
+
   if (!fs.existsSync("categoria")) fs.mkdirSync("categoria", { recursive: true });
+
   for (const [categoria, artigos] of Object.entries(agrupados)) {
-    const links = artigos.map(t => `<li><a href="../${t.url}">${t.titulo}</a></li>`).join("\n");
+    const links = artigos.map(t => {
+      const slug = slugify(t.titulo);
+      const url = t.url || `artigos/${slug}.html`;
+      return `<li><a href="../${url}">${t.titulo}</a></li>`;
+    }).join("\n");
+
     const slugCat = categoria.toLowerCase().replace(/\s+/g, '-');
     const html = `
 <!DOCTYPE html>
@@ -62,10 +69,13 @@ ${gerarHeaderNavegacao("..")}
 ${gerarFooterNavegacao("..")}
 </body>
 </html>`;
+
     fs.writeFileSync(`categoria/${slugCat}.html`, html);
   }
+
   gerarIndiceCategorias(agrupados);
 }
+
 
 function gerarIndiceCategorias(agrupados) {
   const links = Object.entries(agrupados).map(([categoria, artigos]) => {
