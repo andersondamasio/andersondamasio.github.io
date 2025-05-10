@@ -296,6 +296,14 @@ async function gerar() {
   try {
 
 
+
+
+
+    
+    const now = new Date();
+    const titulosPath = "titulos.json";
+    let titulosGerados = fs.existsSync(titulosPath) ? JSON.parse(fs.readFileSync(titulosPath, "utf-8")) : [];
+
 // Corrige os registros antigos que ainda possuem links externos
 titulosGerados = titulosGerados.map(t => {
   if (t.url?.startsWith("http")) {
@@ -316,11 +324,6 @@ titulosGerados = titulosGerados.map(t => {
 
 
     
-    const now = new Date();
-    const titulosPath = "titulos.json";
-    let titulosGerados = fs.existsSync(titulosPath) ? JSON.parse(fs.readFileSync(titulosPath, "utf-8")) : [];
-
-  
 const noticia = await buscarNoticia();
 if (!noticia || !noticia.titulo) {
   console.log("⚠️ Nenhuma notícia válida encontrada. Abortando com segurança.");
