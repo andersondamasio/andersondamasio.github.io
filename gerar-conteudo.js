@@ -18,12 +18,32 @@ const parser = new Parser({
 
 function descobrirCategoria(titulo) {
   const texto = normalizarTexto(titulo);
-  if (/csharp|dotnet|maui|aspnet/.test(texto)) return "Programação";
-  if (/docker|kubernetes|devops/.test(texto)) return "DevOps";
-  if (/chatgpt|ia|inteligenciaartificial|openai/.test(texto)) return "Inteligência Artificial";
-  if (/carreira|techlead|vaga/.test(texto)) return "Carreira";
+
+  if (/csharp|dotnet|maui|aspnet|blazor/.test(texto)) return "Programação";
+  if (/docker|kubernetes|devops|ci\/cd|terraform|ansible/.test(texto)) return "DevOps";
+  if (/chatgpt|openai|ia|inteligenciaartificial|llm|machinelearning|deeplearning|modelo[sg]?/.test(texto)) return "Inteligência Artificial";
+  if (/seguranca|ciberseguranca|lgpd|jwt|criptografia|privacidade/.test(texto)) return "Segurança";
+  if (/carreira|techlead|vaga|curriculo|entrevista|softskills|mentoria/.test(texto)) return "Carreira";
+  if (/frontend|html|css|javascript|react|vue|angular/.test(texto)) return "Front-end";
+  if (/backend|api|rest|graphql|microservico[s]?|webapi/.test(texto)) return "Back-end";
+  if (/banco[s]?dedados|postgres|mysql|sqlite|nosql|mongodb/.test(texto)) return "Banco de Dados";
+  if (/cloud|aws|azure|gcp|nuvem/.test(texto)) return "Cloud";
+  if (/blockchain|ethereum|bitcoin|cripto|nft|web3/.test(texto)) return "Blockchain";
+  if (/empreendedorismo|startup|pitch|investidor/.test(texto)) return "Empreendedorismo";
+  if (/negocio|gestao|okrs|kpis|estrategia/.test(texto)) return "Negócios";
+  if (/ci[êe]ncia|pesquisa|universidade|academic[oa]?/.test(texto)) return "Ciência";
+  if (/robot|robotica|arduino|automacao/.test(texto)) return "Robótica";
+  if (/veiculoeletrico|carroautonomo|automovel|tesla/.test(texto)) return "Tecnologia Automotiva";
+  if (/wearable|oculosinteligente|smartwatch|vestivel/.test(texto)) return "Tecnologia Vestível";
+  if (/visualizacao|grafico|dashboard|powerbi|dataviz/.test(texto)) return "Visualização de Dados";
+  if (/etica|moral|filosofia|bias|preconceitoalgoritmico/.test(texto)) return "Ética e Tecnologia";
+  if (/educacao|ensino|ead|plataformaeducacional|mooc/.test(texto)) return "Educação";
+  if (/automation|automacao\s?de\s?processos|rpa/.test(texto)) return "Automação";
+  if (/excel|planilha|vba|spreadsheet/.test(texto)) return "Produtividade";
+
   return "Outros";
 }
+
 
 function gerarFooterNavegacao(base = ".") {
   return `
