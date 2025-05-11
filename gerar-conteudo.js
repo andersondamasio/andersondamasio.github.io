@@ -497,10 +497,7 @@ if (!noticia || !noticia.titulo) {
 const categoriasExistentes = [...new Set(
   titulosGerados.map(t => t.categoria).filter(Boolean)
 )];
-const textoCategoriasExistentes = categoriasExistentes.length
-  ? `As categorias já usadas até agora no site são: ${categoriasExistentes.join(", ")}. Dê preferência a reutilizar uma delas.`
-  : "";
-    
+
 const textoCategoriasExistentes = categoriasExistentes.length
   ? `As categorias já usadas até agora no site são: ${categoriasExistentes.join(", ")}. Dê preferência a reutilizar uma delas.`
   : "";
