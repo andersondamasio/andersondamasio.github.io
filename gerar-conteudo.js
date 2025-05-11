@@ -1,4 +1,3 @@
-9
 const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
