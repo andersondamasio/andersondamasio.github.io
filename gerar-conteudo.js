@@ -1,4 +1,4 @@
-const fs = require('fs');
+7const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
 const { marked } = require('marked'); // Conversão de markdown para HTML
@@ -517,12 +517,13 @@ Você acaba de ler uma notícia técnica internacional sobre: "${noticia.titulo}
 
 Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e autoral**, publicado em seu blog pessoal no Brasil.
 
-**O que você deve produzir:**
+O que você deve produzir:
 
 1. Gere um **título original e criativo** (em português), que será usado como título da página.
-   - **IMPORTANTE:** Não inclua o título no corpo do artigo.
-   - Não escreva "Título:", "Artigo:", "**Título:**" ou qualquer introdução desse tipo.
-   - O título será usado separadamente, portanto o texto do artigo deve começar diretamente com a introdução.
+   - IMPORTANTE: Não inclua o título no corpo do artigo.
+   - Não escreva "Título:", "Artigo:" ou "**Título:**" no texto.
+   - O artigo deve começar diretamente com a introdução.
+   - O título deve ter entre **50 e 60 caracteres** (ideal para SEO), e **nunca ultrapassar 70 caracteres**.
 
 2. Em seguida, escreva o **corpo do artigo completo**, com:
    - Uma introdução como esta: ${introducaoVaria.intro}
@@ -531,7 +532,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Dicas avançadas e insights práticos, indo além do básico.
    - Uma conclusão com reflexões ou recomendações pessoais.
 
-3. **Aplique boas práticas de SEO**, incluindo:
+3. Aplique boas práticas de SEO, incluindo:
    - Mantenha parágrafos curtos (3 a 4 linhas).
    - Varie palavras-chave de forma natural (ex: escalabilidade, desempenho, disponibilidade).
 
@@ -539,14 +540,13 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Um resumo objetivo com até 150 caracteres (para SEO), começando com: **Resumo: **
    - A categoria mais adequada entre barras verticais, no formato: |Categoria|
 
-**Use exatamente uma destas categorias (sem criar novas):**
-Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia, Outros
+Use exatamente uma destas categorias (sem criar novas):
+Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia
 
 ${textoCategoriasExistentes}
 
 Exemplo de categoria: |Segurança|
 `;
-
 
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
