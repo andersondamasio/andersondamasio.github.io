@@ -17,6 +17,7 @@ const parser = new Parser({
 function slugify(str) {
   if (!str || typeof str !== "string") return "artigo";
   return str.toLowerCase()
+    .trim()
     .normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
@@ -517,25 +518,29 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 2. Em seguida, **um artigo completo**, com:
    - Uma introdução como esta: ${introducaoVaria.intro}
    - Uma explicação técnica clara e aprofundada sobre o tema.
-   - Trechos de código reais (preferencialmente em C# ou outra linguagem prática, com APIs úteis quando possível).
-   - Dicas avançadas que mostrem domínio prático, indo além do básico.
-   - Uma conclusão com reflexões ou recomendações suas.
+   - Trechos de código reais (preferencialmente em C# ou outra linguagem prática).
+   - Dicas avançadas e insights práticos, indo além do básico.
+   - Uma conclusão com reflexões ou recomendações pessoais.
 
-**Importante:**
+3. **Aplique boas práticas de SEO**, incluindo:
+   - Subtítulos (usando markdown: ##, ###).
+   - Parágrafos curtos (3 a 4 linhas).
+   - Listas com marcadores ou numeradas sempre que fizer sentido.
+   - Destaque termos técnicos relevantes com **negrito**.
+   - Varie palavras-chave sem mudar o sentido (ex: escalabilidade, desempenho, disponibilidade).
 
-- Não inicie com “Título:” ou similares. Apenas escreva o título direto na primeira linha.
-- Pule uma linha e inicie o artigo.
-- O conteúdo deve parecer escrito por um humano experiente, com estilo natural, fluente e levemente opinativo.
+4. Ao final do artigo, inclua:
+   - Um resumo objetivo com até 150 caracteres (para SEO), começando com "Resumo: "
+   - A categoria mais adequada entre barras verticais, no formato: |Categoria|
 
-- Ao final do texto, adicione a categoria mais adequada entre barras verticais, no formato: |Categoria|
-
-- **Use exatamente um dos seguintes nomes de categoria (sem variações, sem criar novas):**
-  Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia, Outros
+**Use exatamente uma destas categorias (sem criar novas):**
+Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia, Outros
 
 ${textoCategoriasExistentes}
 
-- Exemplo: |Segurança|
+Exemplo de categoria: |Segurança|
 `;
+
 
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
@@ -591,12 +596,17 @@ if (!fs.existsSync(pastaCategoria)) fs.mkdirSync(pastaCategoria, { recursive: tr
 const filename = `${pastaCategoria}/${slug}.html`;
 
     const resumo = corpoArtigo.split("\n").slice(0, 2).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
+    const matchResumo = corpoArtigo.match(/Resumo:\s*(.+)/i);
+    if (matchResumo) {
+        resumo = matchResumo[1].substring(0, 160).trim();
+        corpoArtigo = corpoArtigo.replace(/Resumo:\s*.+/i, '').trim(); // remove do corpo
+       }
+
     const dataHoraFormatada = formatDateTime(now);
     const dataISO = new Date(now).toISOString();
+    const imagemCapaUrl = null;//await buscarImagemCapa(titulo, slug);
+    const escapeJson = str => (str || "").replace(/"/g, '\\"');
 
-     const imagemCapaUrl = null;//await buscarImagemCapa(titulo, slug);
-
-    
 
 const html = `<!DOCTYPE html>
 <html lang="pt-BR">
@@ -644,6 +654,41 @@ const html = `<!DOCTYPE html>
   }
 }
 </script>
+
+<!-- Schema.org: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://www.andersondamasio.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://www.andersondamasio.com.br/artigos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "${categoria}",
+      "item": "https://www.andersondamasio.com.br/artigos/${categoriaSlug}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "${escapeJson(titulo)}",
+      "item": "https://www.andersondamasio.com.br/${categoriaSlug}/${slug}.html"
+    }
+  ]
+}
+</script>
+
 
  ${gerarGoogleAnalyticsTag()}
 
