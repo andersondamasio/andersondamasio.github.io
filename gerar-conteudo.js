@@ -513,7 +513,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 
 1. Gere um **título original e criativo** (em português) que será usado fora do corpo do artigo (como título da página). 
    - Não inclua esse título novamente no corpo do texto.
-   - Evite termos genéricos como "Título:", "Artigo:" ou similares no conteúdo.
+   - Evite termos genéricos como "Título:", "Artigo:" ou similares no conteúdo ou no titulo.
 
 2. Em seguida, **escreva um artigo completo**, com:
    - Uma introdução como esta: ${introducaoVaria.intro}
