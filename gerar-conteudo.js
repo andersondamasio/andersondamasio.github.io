@@ -767,7 +767,8 @@ if (!existe) {
     url: urlLocal,
     data: now.toISOString(),
     dataFonte: noticia.data ? new Date(noticia.data).toISOString() : null,
-    categoria
+    categoria,
+    urlFonte: noticia.url 
   });
 }
 
