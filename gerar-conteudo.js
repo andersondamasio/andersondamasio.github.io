@@ -298,7 +298,6 @@ const devBlogsFeeds = [
   "https://feeds.arstechnica.com/arstechnica/technology-lab",
   "https://www.wired.com/feed/tag/ai/latest/rss",
   "https://techcrunch.com/feed/",
-  "https://www.theverge.com/rss/index.xml",
   "https://www.zdnet.com/topic/artificial-intelligence/rss.xml"
 ];
 
