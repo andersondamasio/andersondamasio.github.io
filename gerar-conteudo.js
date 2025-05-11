@@ -571,11 +571,17 @@ Exemplo de categoria: |Segurança|
     );
 
     const content = response.data.choices[0].message.content;
+// Garante que nenhuma linha HTML será interpretada como JS
 const linhas = content.trim().split('\n').map(l => l.trim());
 
-// Filtra a primeira linha que pareça ser um título sem tag HTML
+// Seleciona a primeira linha que não é HTML nem vazia nem título
 let titulo = linhas.find(l =>
-  l && !/^t[ií]tulo[:：]/i.test(l) && l.length > 10 && !l.startsWith('<') && !l.startsWith('#')
+  l &&
+  !/^t[ií]tulo[:：]/i.test(l) &&
+  l.length > 10 &&
+  !l.match(/^<[^>]+>$/) && // evita linhas que são só tags como <h2>...</h2>
+  !l.startsWith('<') &&    // protege ainda mais
+  !l.startsWith('#')
 );
 
 if (!titulo) {
@@ -587,11 +593,12 @@ if (!titulo) {
     .trim();
 }
 
-// Remove do corpo todas as linhas que são exatamente o título
+// Garante que o corpo não tenha o título repetido nem linhas incorretas
 let corpoArtigo = linhas
   .filter(l => l !== titulo && !/^t[ií]tulo[:：]/i.test(l))
   .join('\n')
   .trim();
+
 
 
 
