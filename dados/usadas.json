@@ -1284,5 +1284,10 @@
     "intro": "A complexidade de The AUCTUS A6: the chip enabling inexpensive DMR Radio (2021) ainda é subestimada por muita gente na área.",
     "introOriginal": "A complexidade de __TEMATICA__ ainda é subestimada por muita gente na área.",
     "data": "2025-05-11"
+  },
+  "2025-05-11-se-voce-ja-enfrentou-producao-sabe-que-netbsd-10-x-kernel-math-emulation-nao-e-apenas-um-detalhe-tecnico": {
+    "intro": "Se você já enfrentou produção, sabe que NetBSD 10.x Kernel Math_emulation não é apenas um detalhe técnico.",
+    "introOriginal": "Se você já enfrentou produção, sabe que __TEMATICA__ não é apenas um detalhe técnico.",
+    "data": "2025-05-11"
   }
 }
