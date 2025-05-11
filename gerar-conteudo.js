@@ -108,6 +108,19 @@ function gerarFooterNavegacao(base = ".") {
 </footer>`;
 }
 
+function gerarGoogleAnalyticsTag(gaId = 'G-T15623VZYE') {
+  return `
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=${gaId}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${gaId}');
+</script>
+`;
+}
+
 function gerarPaginasPorCategoria(titulos) {
   const artigosPorPagina = 10;
   const agrupados = {};
@@ -188,6 +201,7 @@ function gerarPaginasPorCategoria(titulos) {
   color: white;
 }
   </style>
+   ${gerarGoogleAnalyticsTag()}
 </head>
 <body>
   ${gerarHeaderNavegacao("..")}
@@ -242,6 +256,7 @@ function gerarIndiceCategorias(agrupados) {
     a { text-decoration: none; font-weight: bold; color: #0a66c2; }
     a:hover { text-decoration: underline; }
   </style>
+   ${gerarGoogleAnalyticsTag()}
 </head>
 <body>
 ${gerarHeaderNavegacao("..")}
@@ -623,14 +638,7 @@ const html = `<!DOCTYPE html>
 }
 </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-T15623VZYE');
-</script>
+ ${gerarGoogleAnalyticsTag()}
 
 <!-- Script principal da Ezoic (Standalone) no <head> -->
 <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
@@ -852,14 +860,7 @@ const html = `<!DOCTYPE html>
 <meta name="twitter:description" content="Mais de 19 anos de experiência em desenvolvimento de sistemas, arquitetura moderna e artigos técnicos.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-T15623VZYE');
-</script>
+ ${gerarGoogleAnalyticsTag()}
 
 <!-- Ezoic Standalone -->
 <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
