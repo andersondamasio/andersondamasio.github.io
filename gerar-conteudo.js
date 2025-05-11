@@ -571,24 +571,27 @@ Exemplo de categoria: |Segurança|
     );
 
     const content = response.data.choices[0].message.content;
-  const linhas = content.trim().split('\n').map(l => l.trim()).filter(Boolean);
+const linhas = content.trim().split('\n').map(l => l.trim());
 
+// Filtra a primeira linha que pareça ser um título sem tag HTML
 let titulo = linhas.find(l =>
-  !/^t[ií]tulo[:：]/i.test(l) && l.length > 10
+  l && !/^t[ií]tulo[:：]/i.test(l) && l.length > 10 && !l.startsWith('<') && !l.startsWith('#')
 );
 
 if (!titulo) {
   titulo = noticia.titulo;
 } else {
   titulo = titulo
-    .replace(/^(\*\*)?t[ií]tulo[:：]\s*/i, '')   // Remove "Título:", "Título：", etc
-    .replace(/\*\*/g, '')                       // Remove todos os "**"
+    .replace(/^(\*\*)?t[ií]tulo[:：]\s*/i, '')
+    .replace(/\*\*/g, '')
     .trim();
 }
-let corpoArtigo = linhas.filter(l => {
-  const semAsteriscos = l.replace(/^\*\*(.+?)\*\*$/, '$1').trim();
-  return semAsteriscos !== titulo;
-}).join('\n').trim();
+
+// Remove do corpo todas as linhas que são exatamente o título
+let corpoArtigo = linhas
+  .filter(l => l !== titulo && !/^t[ií]tulo[:：]/i.test(l))
+  .join('\n')
+  .trim();
 
 
 
