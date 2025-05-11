@@ -523,10 +523,8 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Uma conclusão com reflexões ou recomendações pessoais.
 
 3. **Aplique boas práticas de SEO**, incluindo:
-   - Subtítulos com markdown (ex: "## O que é X"), mas sem escrever os caracteres "##" literalmente no texto.
    - Parágrafos curtos (3 a 4 linhas).
    - Listas com marcadores ou numeradas sempre que fizer sentido.
-   - Destaque termos técnicos relevantes com **negrito**.
    - Varie palavras-chave sem mudar o sentido (ex: escalabilidade, desempenho, disponibilidade).
 
 4. Ao final do artigo, inclua:
