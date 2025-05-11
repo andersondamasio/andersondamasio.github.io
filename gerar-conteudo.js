@@ -594,7 +594,7 @@ const pastaCategoria = `artigos/${categoriaSlug}`;
 if (!fs.existsSync(pastaCategoria)) fs.mkdirSync(pastaCategoria, { recursive: true });
 const filename = `${pastaCategoria}/${slug}.html`;
 
-    const resumo = corpoArtigo.split("\n").slice(0, 2).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
+    let resumo = corpoArtigo.split("\n").slice(0, 2).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
     const matchResumo = corpoArtigo.match(/Resumo:\s*(.+)/i);
     if (matchResumo) {
         resumo = matchResumo[1].substring(0, 160).trim();
