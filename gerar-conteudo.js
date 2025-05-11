@@ -519,13 +519,13 @@ Seu objetivo é criar um conteúdo editorial com aparência 100% humana e autora
 
 O que você deve produzir:
 
-1. Gere um título original e criativo (em português), que será usado como título da página.
-   - O título deve parecer um título de artigo técnico, direto e objetivo — evite frases reflexivas ou sentimentais.
-   - Escreva como um título jornalístico, técnico e natural para o público brasileiro.
-   - Limite o título a no máximo 40 caracteres, priorizando clareza e palavras-chave.
-   - IMPORTANTE: Não inclua o título no corpo do artigo.
-   - Não escreva "Título:", "Artigo:", ou qualquer introdução do tipo.
-   - O título será usado separadamente. O corpo do texto deve começar diretamente com a introdução.
+
+1. Gere um **título objetivo e técnico** (em português), que será usado como título da página:
+   - Deve parecer um título jornalístico técnico e direto.
+   - ⚠️ Máximo de **40 caracteres**, contando letras e espaços.
+   - Evite subtítulos ou frases reflexivas.
+   - Não escreva "Título:", "Artigo:", nem repita esse título no corpo.
+   - O corpo do texto deve começar diretamente com a introdução.
 
 2. Em seguida, escreva o corpo do artigo completo, com:
    - Uma introdução como esta: ${introducaoVaria.intro}
