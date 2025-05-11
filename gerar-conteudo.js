@@ -225,7 +225,7 @@ function gerarIndiceCategorias(agrupados) {
 
   // Gera os links com base na ordem
   const links = categoriasOrdenadas.map(({ categoria, artigos }) => {
-    const slug = categoria.toLowerCase().replace(/\s+/g, '-');
+    const slug = slugify(categoria);
     return `<li><a href="${slug}.html">${categoria}</a> (${artigos.length})</li>`;
   }).join("\n");
 
