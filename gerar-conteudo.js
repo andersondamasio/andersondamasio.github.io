@@ -532,11 +532,6 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Uma conclusão com reflexões ou recomendações pessoais.
 
 3. **Aplique boas práticas de SEO**, incluindo:
-   - Utilize marcações HTML semânticas no corpo do artigo para melhorar o SEO:
-     - Use `<p>` para parágrafos.
-     - Use `<h2>` e `<h3>` para subtítulos e seções.
-     - Use `<ul>` ou `<ol>` com `<li>` para listas.
-     - Evite usar `<br>` para quebra de linha; prefira novos parágrafos.
    - Mantenha parágrafos curtos (3 a 4 linhas).
    - Varie palavras-chave de forma natural (ex: escalabilidade, desempenho, disponibilidade).
 
