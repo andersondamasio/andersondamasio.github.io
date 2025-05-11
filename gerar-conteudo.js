@@ -333,7 +333,7 @@ let titulosGerados = fs.existsSync(titulosPath)
     normalizarTexto(t.noticiaOriginal)
   );
 
-  const fontes = [buscarNoticiaDevBlogs,buscarNoticiaX];
+  const fontes = [buscarNoticiaDevBlogs,buscarNoticiaX,buscarNoticiaHackerNews];
   let todasNoticias = [];
 
   for (const fonte of fontes) {
