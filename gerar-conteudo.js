@@ -568,7 +568,6 @@ Exemplo de categoria: |Segurança|
     const content = response.data.choices[0].message.content;
   const linhas = content.trim().split('\n').map(l => l.trim()).filter(Boolean);
 
-// Busca a primeira linha que não seja genérica como "Título:"
 let titulo = linhas.find(l =>
   !/^t[ií]tulo[:：]/i.test(l) && l.length > 10
 );
@@ -576,7 +575,10 @@ let titulo = linhas.find(l =>
 if (!titulo) {
   titulo = noticia.titulo;
 } else {
-  titulo = titulo.replace(/^\*\*(.+?)\*\*$/, '$1').trim();
+  titulo = titulo
+    .replace(/^(\*\*)?t[ií]tulo[:：]\s*/i, '')   // Remove "Título:", "**Título:**", etc
+    .replace(/^\*\*(.+?)\*\*$/, '$1')           // Remove negrito em volta do título
+    .trim();
 }
 
 let corpoArtigo = linhas.filter(l => {
