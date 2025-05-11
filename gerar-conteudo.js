@@ -501,6 +501,10 @@ const textoCategoriasExistentes = categoriasExistentes.length
   ? `As categorias já usadas até agora no site são: ${categoriasExistentes.join(", ")}. Dê preferência a reutilizar uma delas.`
   : "";
     
+const textoCategoriasExistentes = categoriasExistentes.length
+  ? `As categorias já usadas até agora no site são: ${categoriasExistentes.join(", ")}. Dê preferência a reutilizar uma delas.`
+  : "";
+
 const prompt = `
 Você é Anderson Damasio, um Arquiteto de Software com mais de 19 anos de experiência prática em sistemas escaláveis.
 Você acaba de ler uma notícia técnica internacional sobre: "${noticia.titulo}".
@@ -509,12 +513,11 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 
 **O que você deve produzir:**
 
-1. Um **título original e criativo**, em português, inspirado na notícia, mas:
-   - Sem tradução literal.
-   - Com estilo natural para o público brasileiro de tecnologia.
-   - Que traga um olhar técnico, provocativo ou prático, como se fosse você mesmo escrevendo.
+1. Gere um **título original e criativo** (em português) que será usado fora do corpo do artigo (como título da página). 
+   - Não inclua esse título novamente no corpo do texto.
+   - Evite termos genéricos como "Título:", "Artigo:" ou similares no conteúdo.
 
-2. Em seguida, **um artigo completo**, com:
+2. Em seguida, **escreva um artigo completo**, com:
    - Uma introdução como esta: ${introducaoVaria.intro}
    - Uma explicação técnica clara e aprofundada sobre o tema.
    - Trechos de código reais (preferencialmente em C# ou outra linguagem prática).
@@ -522,7 +525,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Uma conclusão com reflexões ou recomendações pessoais.
 
 3. **Aplique boas práticas de SEO**, incluindo:
-   - Subtítulos (usando markdown: ##, ###).
+   - Subtítulos com markdown (ex: "## O que é X"), mas sem escrever os caracteres "##" literalmente no texto.
    - Parágrafos curtos (3 a 4 linhas).
    - Listas com marcadores ou numeradas sempre que fizer sentido.
    - Destaque termos técnicos relevantes com **negrito**.
@@ -539,6 +542,7 @@ ${textoCategoriasExistentes}
 
 Exemplo de categoria: |Segurança|
 `;
+
 
 
     const response = await axios.post(
