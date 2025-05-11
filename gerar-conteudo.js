@@ -338,6 +338,7 @@ let titulosGerados = fs.existsSync(titulosPath)
 
   for (const fonte of fontes) {
     try {
+      console.log(`📡 Buscando notícias da fonte: ${fonte.name || 'anônima'}`);
       const lista = await fonte();
       todasNoticias.push(...lista);
     } catch (e) {
@@ -351,6 +352,7 @@ let titulosGerados = fs.existsSync(titulosPath)
   for (const noticia of todasNoticias) {
     const normalizada = normalizarTexto(noticia.titulo);
     if (!noticiasAntigas.includes(normalizada)) {
+      console.log(`🔍 Notícias encontradas (filtradas):`, todasNoticias.length);
       return noticia;
     }
   }
