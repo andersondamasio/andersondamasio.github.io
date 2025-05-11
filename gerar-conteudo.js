@@ -571,6 +571,8 @@ Exemplo de categoria: |Segurança|
     );
 
     const content = response.data.choices[0].message.content;
+  
+
 // Garante que nenhuma linha HTML será interpretada como JS
 const linhas = content.trim().split('\n').map(l => l.trim());
 
@@ -599,7 +601,8 @@ let corpoArtigo = linhas
   .join('\n')
   .trim();
 
-
+ console.error("DEBUG: titulo:", titulo);
+ console.error("DEBUG: content:", content);
 
 
     corpoArtigo = corpoArtigo
