@@ -2,6 +2,23 @@ const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
 const { marked } = require('marked'); // Conversão de markdown para HTML
+// Configuração do marked para permitir HTML direto e bom SEO
+marked.setOptions({
+  mangle: false,        // Evita alterar e-mails ou conteúdo textual
+  headerIds: false,     // Não adiciona IDs automáticos em títulos (evita poluição de SEO)
+  gfm: true,            // Ativa suporte a GitHub Flavored Markdown
+  breaks: true          // Permite quebra de linha simples
+});
+
+// Mantém qualquer HTML puro passado no conteúdo
+marked.use({
+  renderer: {
+    html(html) {
+      return html;
+    }
+  }
+});
+
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { buscarImagemCapa } = require('./scripts/buscarImagemCapa_unsplash');
 
@@ -524,12 +541,16 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Uma conclusão com reflexões ou recomendações pessoais.
 
 3. **Aplique boas práticas de SEO**, incluindo:
-   - Parágrafos curtos (3 a 4 linhas).
-   - Listas com marcadores ou numeradas sempre que fizer sentido.
-   - Varie palavras-chave sem mudar o sentido (ex: escalabilidade, desempenho, disponibilidade).
+   - Utilize marcações HTML semânticas no corpo do artigo para melhorar o SEO:
+     - Use `<p>` para parágrafos.
+     - Use `<h2>` e `<h3>` para subtítulos e seções.
+     - Use `<ul>` ou `<ol>` com `<li>` para listas.
+     - Evite usar `<br>` para quebra de linha; prefira novos parágrafos.
+   - Mantenha parágrafos curtos (3 a 4 linhas).
+   - Varie palavras-chave de forma natural (ex: escalabilidade, desempenho, disponibilidade).
 
 4. Ao final do artigo, inclua:
-   - Um resumo objetivo com até 150 caracteres (para SEO), começando com "Resumo: "
+   - Um resumo objetivo com até 150 caracteres (para SEO), começando com: **Resumo: **
    - A categoria mais adequada entre barras verticais, no formato: |Categoria|
 
 **Use exatamente uma destas categorias (sem criar novas):**
