@@ -1,6 +1,7 @@
 const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
+const { marked } = require('marked'); // Conversão de markdown para HTML
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { buscarImagemCapa } = require('./scripts/buscarImagemCapa_unsplash');
 
@@ -741,7 +742,7 @@ ${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="Imagem relacionada" style="w
   });
 </script>
 
-<div class="article-body">${corpoArtigo.replace(/\n/g, "<br>")}</div>
+<div class="article-body">${marked.parse(corpoArtigo)}</div>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
