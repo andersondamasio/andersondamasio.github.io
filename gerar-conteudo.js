@@ -1,4 +1,4 @@
-7const fs = require('fs');
+const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
 const { marked } = require('marked'); // Conversão de markdown para HTML
