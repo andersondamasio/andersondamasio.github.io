@@ -641,10 +641,6 @@ const html = `<!DOCTYPE html>
   ezstandalone.cmd = ezstandalone.cmd || [];
 </script>
 
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1824544776589069"
-     crossorigin="anonymous"></script>
-
 <style>
 body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
 h1 { font-size: 1.8rem; margin-bottom: 1rem; }
@@ -855,9 +851,6 @@ const html = `<!DOCTYPE html>
 <meta name="twitter:description" content="Mais de 19 anos de experiência em desenvolvimento de sistemas, arquitetura moderna e artigos técnicos.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 
-<!-- Verificação Google AdSense -->
-<meta name="google-adsense-account" content="ca-pub-1824544776589069">
-
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -885,11 +878,6 @@ const html = `<!DOCTYPE html>
   "url": "https://www.andersondamasio.com.br"
 }
 </script>
-
-
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-1824544776589069"
-     crossorigin="anonymous"></script>
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <style>
