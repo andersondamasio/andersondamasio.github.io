@@ -10,15 +10,6 @@ marked.setOptions({
   breaks: true          // Permite quebra de linha simples
 });
 
-// Mantém qualquer HTML puro passado no conteúdo
-marked.use({
-  renderer: {
-    html(html) {
-      return html;
-    }
-  }
-});
-
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { buscarImagemCapa } = require('./scripts/buscarImagemCapa_unsplash');
 
