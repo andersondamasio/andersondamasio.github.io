@@ -522,7 +522,7 @@ O que você deve produzir:
 1. Gere um título original e criativo (em português), que será usado como título da página.
    - O título deve parecer um título de artigo técnico, direto e objetivo — evite frases reflexivas ou sentimentais.
    - Escreva como um título jornalístico, técnico e natural para o público brasileiro.
-   - Limite o título a no máximo 60 caracteres, priorizando clareza e palavras-chave.
+   - Limite o título a no máximo 40 caracteres, priorizando clareza e palavras-chave.
    - IMPORTANTE: Não inclua o título no corpo do artigo.
    - Não escreva "Título:", "Artigo:", ou qualquer introdução do tipo.
    - O título será usado separadamente. O corpo do texto deve começar diretamente com a introdução.
@@ -533,17 +533,14 @@ O que você deve produzir:
    - Trechos de código reais (preferencialmente em C# ou outra linguagem prática).
    - Dicas avançadas e insights práticos, indo além do básico.
    - Uma conclusão com reflexões ou recomendações pessoais.
+   - Não escreva "Título:", "Artigo:", ou qualquer introdução do tipo.
 
-3. Aplique boas práticas de SEO, incluindo:
-   - Mantenha parágrafos curtos (3 a 4 linhas).
-   - Varie palavras-chave de forma natural (ex: escalabilidade, desempenho, disponibilidade).
-
-4. Ao final do artigo, inclua:
+3. Ao final do artigo, inclua:
    - Um resumo objetivo com até 150 caracteres, começando com: Resumo: 
    - A categoria mais adequada entre barras verticais, no formato: |Categoria|
 
 Use exatamente uma destas categorias (sem criar novas):
-Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia, Outros
+Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia
 
 ${textoCategoriasExistentes}
 
