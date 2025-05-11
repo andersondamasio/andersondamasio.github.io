@@ -511,11 +511,12 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 
 **O que você deve produzir:**
 
-1. Gere um **título original e criativo** (em português) que será usado fora do corpo do artigo (como título da página). 
-   - Não inclua esse título novamente no corpo do texto.
-   - Evite termos genéricos como "Título:", "Artigo:" ou similares no conteúdo ou no titulo.
+1. Gere um **título original e criativo** (em português), que será usado como título da página.
+   - **IMPORTANTE:** Não inclua o título no corpo do artigo.
+   - Não escreva "Título:", "Artigo:", "**Título:**" ou qualquer introdução desse tipo.
+   - O título será usado separadamente, portanto o texto do artigo deve começar diretamente com a introdução.
 
-2. Em seguida, **escreva um artigo completo**, com:
+2. Em seguida, escreva o **corpo do artigo completo**, com:
    - Uma introdução como esta: ${introducaoVaria.intro}
    - Uma explicação técnica clara e aprofundada sobre o tema.
    - Trechos de código reais (preferencialmente em C# ou outra linguagem prática).
@@ -538,7 +539,6 @@ ${textoCategoriasExistentes}
 
 Exemplo de categoria: |Segurança|
 `;
-
 
 
     const response = await axios.post(
