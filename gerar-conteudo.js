@@ -562,9 +562,7 @@ const { categoria, conteudoLimpo } = extrairCategoriaDoConteudo(corpoArtigo, tit
 corpoArtigo = conteudoLimpo;
 
 
-const categoriaSlug = categoria
-  .normalize("NFD").replace(/[̀-ͯ]/g, "")     // remove acentos
-  .toLowerCase().replace(/[^a-z0-9]+/g, '-'); // substitui tudo que não for letra/número por hífen
+const categoriaSlug = slugify(categoria);
 
 const pastaCategoria = `artigos/${categoriaSlug}`;
 if (!fs.existsSync(pastaCategoria)) fs.mkdirSync(pastaCategoria, { recursive: true });
