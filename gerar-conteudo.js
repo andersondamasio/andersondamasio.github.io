@@ -286,7 +286,10 @@ const devBlogsFeeds = [
   "https://martinfowler.com/feed.atom",
   "https://feed.infoq.com",
   "https://feeds.bbci.co.uk/news/technology/rss.xml",
-  "https://techcrunch.com/feed/"
+  "https://feeds.arstechnica.com/arstechnica/technology-lab",
+  "https://www.wired.com/feed/tag/ai/latest/rss",
+  "https://techcrunch.com/feed/",
+  "https://www.theverge.com/rss/index.xml"
 ];
 
 async function verificarTweetOriginalViaApi(tweetUrl) {
