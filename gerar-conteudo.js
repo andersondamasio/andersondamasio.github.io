@@ -285,7 +285,8 @@ const devBlogsFeeds = [
   "https://devblogs.microsoft.com/devops/feed/",
   "https://martinfowler.com/feed.atom",
   "https://feed.infoq.com",
-  "https://feeds.bbci.co.uk/news/technology/rss.xml"
+  "https://feeds.bbci.co.uk/news/technology/rss.xml",
+  "https://techcrunch.com/feed/"
 ];
 
 async function verificarTweetOriginalViaApi(tweetUrl) {
