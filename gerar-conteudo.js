@@ -530,7 +530,14 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Dicas avançadas que mostrem domínio prático, indo além do básico.
    - Uma conclusão com reflexões ou recomendações suas.
 
-3. Ao final do artigo, inclua:
+3. Ao longo do artigo, use marcações HTML semânticas para melhorar o SEO:
+- Use `<h2>` e `<h3>` para subtítulos e seções importantes.
+- Use listas com `<ul>` ou `<ol>` quando houver itens.
+- Destaque trechos importantes com `<strong>` ou `<em>`.
+- Use `<blockquote>` para trechos citados ou reflexões.
+
+
+4. Ao final do artigo, inclua:
    - Um resumo objetivo com até 150 caracteres, começando com: Resumo: 
    - A categoria mais adequada entre barras verticais, no formato: |Categoria|
 
