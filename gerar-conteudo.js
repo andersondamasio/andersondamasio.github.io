@@ -576,11 +576,10 @@ if (!titulo) {
   titulo = noticia.titulo;
 } else {
   titulo = titulo
-    .replace(/^(\*\*)?t[ií]tulo[:：]\s*/i, '')   // Remove "Título:", "**Título:**", etc
-    .replace(/^\*\*(.+?)\*\*$/, '$1')           // Remove negrito em volta do título
+    .replace(/^(\*\*)?t[ií]tulo[:：]\s*/i, '')   // Remove "Título:", "Título：", etc
+    .replace(/\*\*/g, '')                       // Remove todos os "**"
     .trim();
 }
-
 let corpoArtigo = linhas.filter(l => {
   const semAsteriscos = l.replace(/^\*\*(.+?)\*\*$/, '$1').trim();
   return semAsteriscos !== titulo;
