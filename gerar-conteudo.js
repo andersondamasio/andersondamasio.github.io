@@ -581,45 +581,19 @@ Exemplo de categoria: |Segurança|
         }
       }
     );
-
-    const content = response.data.choices[0].message.content;
-  
-
-// Garante que nenhuma linha HTML será interpretada como JS
-const linhas = content.trim().split('\n').map(l => l.trim());
-
+    
+ const content = response.data.choices[0].message.content;
 
  console.error("DEBUG: content:", content);
 
-// Seleciona a primeira linha que não é HTML nem vazia nem título
-let titulo = linhas.find(l =>
-  l &&
-  !/^t[ií]tulo[:：]/i.test(l) &&
-  l.length > 10 &&
-  !l.match(/^<[^>]+>$/) && // evita linhas que são só tags como <h2>...</h2>
-  !l.startsWith('<') &&    // protege ainda mais
-  !l.startsWith('#')
-);
+const linhas = content.trim().split('\n').map(l => l.trim()).filter(Boolean);
 
- console.error("DEBUG: titulo:", titulo);
+let titulo = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.length > 10);
 
-if (!titulo) {
-  titulo = noticia.titulo;
-} else {
-  titulo = titulo
-    .replace(/^(\*\*)?t[ií]tulo[:：]\s*/i, '')
-    .replace(/\*\*/g, '')
-    .trim();
-}
-
-// Garante que o corpo não tenha o título repetido nem linhas incorretas
-let corpoArtigo = linhas
-  .filter(l => l !== titulo && !/^t[ií]tulo[:：]/i.test(l))
-  .join('\n')
-  .trim();
-
-
-
+let corpoArtigo = linhas.filter(l => {
+  const semAsteriscos = l.replace(/^\*\*(.+?)\*\*$/, '$1').trim();
+  return semAsteriscos !== titulo;
+}).join('\n').trim();
 
     corpoArtigo = corpoArtigo
       .replace(/```csharp\n([\s\S]*?)```/g, '<pre><code class="language-csharp">$1</code></pre>')
