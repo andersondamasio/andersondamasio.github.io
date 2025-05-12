@@ -32,13 +32,17 @@ function slugify(str) {
     .replace(/(^-|-$)/g, '');
 }
 
+
+
 function extrairCategoriaDoConteudo(conteudo, tituloFallback) {
-  const match = conteudo.match(/\|(.+?)\|$/);
+  // Captura a categoria entre pipes, desde que venha antes de uma tag HTML de fechamento ou fim do texto
+  const match = conteudo.match(/\|(.+?)\|(?=<\/[^>]+>|$)/);
   const categoriaSugerida = match ? match[1].trim() : null;
 
-  const conteudoLimpo = conteudo.replace(/\|(.+?)\|$/, '').trim();
+  // Remove o marcador de categoria do conteúdo
+  const conteudoLimpo = conteudo.replace(/\|(.+?)\|(?=<\/[^>]+>|$)/, '').trim();
 
-  // Carrega categorias já utilizadas em titulos.json
+  // Carrega categorias já utilizadas
   const titulosPath = "titulos.json";
   let categoriasExistentes = [];
 
@@ -50,7 +54,7 @@ function extrairCategoriaDoConteudo(conteudo, tituloFallback) {
   let categoriaFinal;
 
   if (categoriasExistentes.length >= 30) {
-    // Limita a categorias já existentes, usando o título para tentar uma mais coerente
+    // Limita a categorias já existentes
     const candidata = descobrirCategoria(tituloFallback, categoriasExistentes);
     categoriaFinal = categoriasExistentes.includes(categoriaSugerida) ? categoriaSugerida : candidata;
   } else {
@@ -58,7 +62,7 @@ function extrairCategoriaDoConteudo(conteudo, tituloFallback) {
     categoriaFinal = categoriaSugerida || descobrirCategoria(tituloFallback);
   }
 
-  return { categoria: categoriaFinal, conteudoLimpo };
+  return { categoriaFinal, conteudoLimpo };
 }
 
 function descobrirCategoria(titulo, categoriasPermitidas = null) {
