@@ -602,7 +602,7 @@ const linhas = content.trim().split('\n').map(l => l.trim()).filter(Boolean);
 let titulo = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.length > 10)?.replace(/^\*{1,2}(.+?)\*{1,2}$/, '$1').replace(/<[^>]*>/g, '').trim();
 
 let tituloRaw = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.length > 10);
-let titulo = limparTitulo(tituloRaw || "");
+titulo = limparTitulo(tituloRaw || "");
 
 let tituloRemovido = false;
 
