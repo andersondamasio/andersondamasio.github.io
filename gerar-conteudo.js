@@ -706,7 +706,7 @@ const html = `<!DOCTYPE html>
       "@type": "ListItem",
       "position": 3,
       "name": "${categoria}",
-      "item": "https://www.andersondamasio.com.br/artigos/${categoriaSlug}.html"
+      "item": "https://www.andersondamasio.com.br/artigos/${categoriaSlug}"
     },
     {
       "@type": "ListItem",
