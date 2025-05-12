@@ -549,13 +549,13 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 
 3. Ao longo do artigo, use marcações HTML semânticas para melhorar o SEO:
 
-- Use <h2> apenas para títulos principais de seções (ex: Introdução, Conclusão, Dicas).
+- Use <h2> apenas para títulos principais de seções (ex: Introdução, Conclusão, Dicas, etc).
 - Use <h3> para subtítulos dentro de seções.
+- Nunca inclua mais de uma frase ou parágrafo dentro de uma única tag <h2>. 
 - Nunca coloque parágrafos, blocos de código ou listas dentro de <h2> ou <h3>.
-- Use <p> para parágrafos.
+- Use <p> para conteúdo descritivo e <h2>/<h3> apenas para títulos curtos. 
 - Use listas com <ul> ou <ol> sempre que houver itens.
 - Destaque palavras com <strong> ou <em>.
-- Use <blockquote> para citações e reflexões.
 
 4. Ao final do artigo, inclua:
    - Um resumo objetivo com até 150 caracteres, começando com: Resumo: 
