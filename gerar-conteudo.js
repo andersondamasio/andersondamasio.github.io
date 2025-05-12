@@ -536,7 +536,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 **O que você deve produzir:**
 
 1. Um **título original e criativo**, em português, inspirado na notícia, mas:
-   - Sem tradução literal.
+   - Sem tradução literal, use palavras diferentes sem distorcer a original.
    - Com estilo natural para o público brasileiro de tecnologia.
    - Que traga um olhar técnico, provocativo ou prático, e como a Arquitetura e Desenvolvimento de Software pode colaborar com isso, como se fosse você mesmo escrevendo.
 
