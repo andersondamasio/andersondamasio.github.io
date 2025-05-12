@@ -36,10 +36,11 @@ function slugify(str) {
 
 function extrairCategoriaDoConteudo(conteudo, tituloFallback) {
   
-const match = conteudo.match(/\|\s*([^|<]+?)\s*\|(?=\s*<\/[^>]+>|$)/);
+const match = conteudo.match(/\|([^|]+)\|/);
 const categoriaSugerida = match ? match[1].trim() : null;
 
-const conteudoLimpo = conteudo.replace(/\|\s*([^|<]+?)\s*\|(?=\s*<\/[^>]+>|$)/, '').trim();
+const conteudoLimpo = conteudo.replace(/\|([^|]+)\|/, '').trim();
+
   // Carrega categorias já utilizadas
   const titulosPath = "titulos.json";
   let categoriasExistentes = [];
