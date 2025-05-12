@@ -591,7 +591,7 @@ Exemplo de categoria: |Segurança|
 
 const linhas = content.trim().split('\n').map(l => l.trim()).filter(Boolean);
 
-let titulo = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.length > 10);
+let titulo = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.length > 10)?.replace(/^\*{1,2}(.+?)\*{1,2}$/, '$1').trim();
 
 let corpoArtigo = linhas.filter(l => {
   const semAsteriscos = l.replace(/^\*\*(.+?)\*\*$/, '$1').trim();
