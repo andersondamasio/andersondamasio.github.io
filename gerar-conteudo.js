@@ -481,6 +481,15 @@ function gerarHeaderNavegacao(base = ".") {
 </header>`;
 }
 
+function limparTitulo(raw) {
+  return raw
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<[^>]*>/g, '')
+    .replace(/&[^;]+;/g, '')
+    .replace(/^\*{1,2}(.+?)\*{1,2}$/, '$1')
+    .trim();
+}
+
 async function gerar() {
   try {
     const now = new Date();
@@ -542,7 +551,6 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Uma conclusão com reflexões ou recomendações suas.
 
 3. Ao longo do artigo, use marcações HTML semânticas para melhorar o SEO:
-
 - Use <h2> apenas para títulos principais de seções (ex: Introdução, Conclusão, Dicas, etc).
 - Use <h3> para subtítulos dentro de seções.
 - Nunca inclua mais de uma frase ou parágrafo dentro de uma única tag <h2>. 
@@ -593,9 +601,18 @@ const linhas = content.trim().split('\n').map(l => l.trim()).filter(Boolean);
 
 let titulo = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.length > 10)?.replace(/^\*{1,2}(.+?)\*{1,2}$/, '$1').replace(/<[^>]*>/g, '').trim();
 
+let tituloRaw = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.length > 10);
+let titulo = limparTitulo(tituloRaw || "");
+
+let tituloRemovido = false;
+
 let corpoArtigo = linhas.filter(l => {
-  const semAsteriscos = l.replace(/^\*\*(.+?)\*\*$/, '$1').trim();
-  return semAsteriscos !== titulo;
+  const linhaLimpa = limparTitulo(l);
+  if (!tituloRemovido && linhaLimpa === titulo) {
+    tituloRemovido = true;
+    return false;
+  }
+  return true;
 }).join('\n').trim();
 
     corpoArtigo = corpoArtigo
