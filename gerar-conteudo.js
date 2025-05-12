@@ -894,7 +894,8 @@ gerarPaginasPorCategoria(titulosGerados);
     
     console.log(`✅ Artigo gerado: ${titulo}`);
   } catch (error) {
-    console.error("❌ Erro:", error.message);
+    console.error("❌ Erro inesperado:", err.message);
+    console.error("📌 Stacktrace:", err.stack);
     process.exit(1);
   }
 }
