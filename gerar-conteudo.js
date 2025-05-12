@@ -627,7 +627,7 @@ let corpoArtigo = linhas.filter(l => {
     const slug = slugify(titulo);
   
 
-const { categoria, conteudoLimpo } = extrairCategoriaDoConteudo(corpoArtigo, titulo);
+const { categoriaFinal: categoria, conteudoLimpo } = extrairCategoriaDoConteudo(corpoArtigo, titulo);
 corpoArtigo = conteudoLimpo;
     
 corpoArtigo = corpoArtigo
