@@ -1,3 +1,15 @@
+process.on('uncaughtException', err => {
+  console.error("❌ Exceção não capturada:", err.message);
+  console.error("📌 Stacktrace:", err.stack);
+  process.exit(1);
+});
+
+process.on('unhandledRejection', err => {
+  console.error("❌ Promessa rejeitada sem tratamento:", err);
+  process.exit(1);
+});
+
+
 const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
@@ -576,6 +588,9 @@ Exemplo de categoria: |Segurança|
 // Garante que nenhuma linha HTML será interpretada como JS
 const linhas = content.trim().split('\n').map(l => l.trim());
 
+
+ console.error("DEBUG: content:", content);
+
 // Seleciona a primeira linha que não é HTML nem vazia nem título
 let titulo = linhas.find(l =>
   l &&
@@ -585,6 +600,8 @@ let titulo = linhas.find(l =>
   !l.startsWith('<') &&    // protege ainda mais
   !l.startsWith('#')
 );
+
+ console.error("DEBUG: titulo:", titulo);
 
 if (!titulo) {
   titulo = noticia.titulo;
@@ -601,8 +618,7 @@ let corpoArtigo = linhas
   .join('\n')
   .trim();
 
- console.error("DEBUG: titulo:", titulo);
- console.error("DEBUG: content:", content);
+
 
 
     corpoArtigo = corpoArtigo
