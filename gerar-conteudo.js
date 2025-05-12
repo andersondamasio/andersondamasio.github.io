@@ -518,13 +518,18 @@ const categoriasExistentes = [...new Set(
   titulosGerados.map(t => t.categoria).filter(Boolean)
 )];
 
+ console.error("DEBUG: noticia.titulo:", ${noticia.titulo});
+ console.error("DEBUG: introducaoVaria.intro:", ${introducaoVaria.intro});
+ console.error("DEBUG: introducaoVaria.introOriginal:", ${introducaoVaria.introOriginal});
+    
+    
 const textoCategoriasExistentes = categoriasExistentes.length
   ? `As categorias já usadas até agora no site são: ${categoriasExistentes.join(", ")}. Dê preferência a reutilizar uma delas.`
   : "";
 
 const prompt = `
 Você é Anderson Damasio, um Arquiteto de Software com mais de 19 anos de experiência prática em sistemas escaláveis.
-Você acaba de ler uma notícia técnica internacional sobre: "${noticia.titulo}".
+Você acaba de ler uma notícia técnica internacional sobre: "${noticia.titulo}". 
 
 Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e autoral**, publicado em seu blog pessoal no Brasil.
 
@@ -536,7 +541,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Que traga um olhar técnico, provocativo ou prático, como se fosse você mesmo escrevendo.
 
 2. Em seguida, **um artigo completo**, com:
-   - Uma introdução baseada nesta, mas traduzida para a a lingua portuguesa: ${introducaoVaria.intro}.
+   - Uma introdução baseada nesta: ${introducaoVaria.introOriginal}, onde __TEMATICA__ é o titulo da noticia.
    - Uma explicação técnica clara e aprofundada sobre o tema.
    - Trechos de código reais (preferencialmente em C# ou outra linguagem prática, com APIs úteis quando possível).
    - Dicas avançadas que mostrem domínio prático, indo além do básico.
