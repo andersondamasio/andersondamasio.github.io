@@ -2855,5 +2855,14 @@
     "dataFonte": "2025-05-12T01:36:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.infoq.com/news/2025/05/deepseek-prover-v2-formal-proof/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Como Construir um Banco de Dados Sem um Servidor: Desafios e Possibilidades",
+    "noticiaOriginal": "QCon London 2025: How to Build a Database Without a Server",
+    "url": "artigos/banco-de-dados/como-construir-um-banco-de-dados-sem-um-servidor-desafios-e-possibilidades.html",
+    "data": "2025-05-12T01:55:01.612Z",
+    "dataFonte": "2025-05-12T01:30:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2025/05/serverless-database-seaton/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
