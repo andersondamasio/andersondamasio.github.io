@@ -517,7 +517,9 @@ if (!noticia || !noticia.titulo) {
 
 
 const categoriasExistentes = [...new Set(
-  titulosGerados.map(t => t.categoria).filter(Boolean)
+  titulosGerados
+    .map(t => t.categoria)
+    .filter(c => c && c !== "Outros")
 )];
     
 const resumoFonte = await extrairResumoDaNoticia(noticia.url,noticia.noticiaOriginal);
