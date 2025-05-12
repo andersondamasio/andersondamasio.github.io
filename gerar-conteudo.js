@@ -1,15 +1,3 @@
-process.on('uncaughtException', err => {
-  console.error("❌ Exceção não capturada:", err.message);
-  console.error("📌 Stacktrace:", err.stack);
-  process.exit(1);
-});
-
-process.on('unhandledRejection', err => {
-  console.error("❌ Promessa rejeitada sem tratamento:", err);
-  process.exit(1);
-});
-
-
 const fs = require('fs');
 const axios = require('axios');
 const Parser = require('rss-parser');
@@ -24,6 +12,7 @@ marked.setOptions({
 
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { buscarImagemCapa } = require('./scripts/buscarImagemCapa_unsplash');
+const { extrairResumoDaNoticia } = require('./scripts/extrairResumoDaNoticia');
 
 const parser = new Parser({
   requestOptions: {
@@ -517,6 +506,8 @@ if (!noticia || !noticia.titulo) {
 const categoriasExistentes = [...new Set(
   titulosGerados.map(t => t.categoria).filter(Boolean)
 )];
+    
+const resumoFonte = await extrairResumoDaNoticia(noticia.url);
 
  console.error("DEBUG: noticia.titulo:", noticia.titulo);
  console.error("DEBUG: introducaoVaria.intro:", introducaoVaria.intro);
@@ -530,6 +521,8 @@ const textoCategoriasExistentes = categoriasExistentes.length
 const prompt = `
 Você é Anderson Damasio, um Arquiteto de Software com mais de 19 anos de experiência prática em sistemas escaláveis.
 Você acaba de ler uma notícia técnica internacional sobre: "${noticia.titulo}". 
+Resumo da notícia original: "${resumoFonte}"
+
 
 Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e autoral**, publicado em seu blog pessoal no Brasil.
 
@@ -597,7 +590,7 @@ Exemplo de categoria: |Segurança|
 
 const linhas = content.trim().split('\n').map(l => l.trim()).filter(Boolean);
 
-let titulo = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.length > 10)?.replace(/^\*{1,2}(.+?)\*{1,2}$/, '$1').trim();
+let titulo = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.length > 10)?.replace(/^\*{1,2}(.+?)\*{1,2}$/, '$1').replace(/<[^>]*>/g, '').trim();
 
 let corpoArtigo = linhas.filter(l => {
   const semAsteriscos = l.replace(/^\*\*(.+?)\*\*$/, '$1').trim();
