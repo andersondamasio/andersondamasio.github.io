@@ -516,7 +516,7 @@ const categoriasExistentes = [...new Set(
   titulosGerados.map(t => t.categoria).filter(Boolean)
 )];
     
-const resumoFonte = await extrairResumoDaNoticia(noticia.url);
+const resumoFonte = await extrairResumoDaNoticia(noticia.url,noticia.noticiaOriginal);
 
  console.error("DEBUG: noticia.titulo:", noticia.titulo);
  console.error("DEBUG: introducaoVaria.intro:", introducaoVaria.intro);
