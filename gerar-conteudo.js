@@ -518,9 +518,9 @@ const categoriasExistentes = [...new Set(
   titulosGerados.map(t => t.categoria).filter(Boolean)
 )];
 
- console.error("DEBUG: noticia.titulo:", ${noticia.titulo});
- console.error("DEBUG: introducaoVaria.intro:", ${introducaoVaria.intro});
- console.error("DEBUG: introducaoVaria.introOriginal:", ${introducaoVaria.introOriginal});
+ console.error("DEBUG: noticia.titulo:", noticia.titulo);
+ console.error("DEBUG: introducaoVaria.intro:", introducaoVaria.intro);
+ console.error("DEBUG: introducaoVaria.introOriginal:", introducaoVaria.introOriginal);
     
     
 const textoCategoriasExistentes = categoriasExistentes.length
