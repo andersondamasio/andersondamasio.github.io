@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Como Projetar Soluções Resilientes para Ambientes Extremos: Lições da Lua e Marte – Artigo Técnico por Anderson Damasio</title>
+<meta name="description" content="Como a exploração espacial nos ensina a projetar sistemas de software resilientes para ambientes extremos.</p>">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como Projetar Soluções Resilientes para Ambientes Extremos: Lições da Lua e Marte">
+<meta property="og:description" content="Como a exploração espacial nos ensina a projetar sistemas de software resilientes para ambientes extremos.</p>">
+<meta property="og:url" content="https://www.andersondamasio.com.br/programacao/como-projetar-solucoes-resilientes-para-ambientes-extremos-licoes-da-lua-e-marte.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Como Projetar Soluções Resilientes para Ambientes Extremos: Lições da Lua e Marte">
+<meta name="twitter:description" content="Como a exploração espacial nos ensina a projetar sistemas de software resilientes para ambientes extremos.</p>">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Como Projetar Soluções Resilientes para Ambientes Extremos: Lições da Lua e Marte",
+  "description": "Como a exploração espacial nos ensina a projetar sistemas de software resilientes para ambientes extremos.</p>",
+  "datePublished": "2025-05-12T23:17:41.576Z",
+  "author": {
+    "@type": "Person",
+    "name": "Anderson Damasio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anderson Damasio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/favicon.ico"
+    }
+  }
+}
+</script>
+
+<!-- Schema.org: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://www.andersondamasio.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://www.andersondamasio.com.br/artigos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Programação",
+      "item": "https://www.andersondamasio.com.br/artigos/programacao"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Como Projetar Soluções Resilientes para Ambientes Extremos: Lições da Lua e Marte",
+      "item": "https://www.andersondamasio.com.br/programacao/como-projetar-solucoes-resilientes-para-ambientes-extremos-licoes-da-lua-e-marte.html"
+    }
+  ]
+}
+</script>
+
+
+ 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+
+<!-- Script principal da Ezoic (Standalone) no <head> -->
+<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+  window.ezstandalone = window.ezstandalone || {};
+  ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+
+ a {
+      color: #0a66c2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../../artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
+    <a href="../../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+  </nav>
+</header>
+<main>
+<h1>Como Projetar Soluções Resilientes para Ambientes Extremos: Lições da Lua e Marte</h1>
+
+<p class="article-meta">Publicado em: 12/05/2025 20:17</p>
+
+<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
+<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
+<script>
+  ezstandalone.cmd.push(function() {
+    ezstandalone.showAds(115);
+  });
+</script>
+
+<div class="article-body"><p>Vivemos em uma era em que a exploração espacial não é mais um sonho distante, mas uma realidade palpável. Com as missões Artemis programadas para levar astronautas novamente à Lua, e planos audaciosos para Marte, surgem desafios técnicos que nos lembram a importância de projetar soluções resilientes. Neste contexto, a arquitetura de software desempenha um papel crucial, especialmente quando pensamos em sistemas que precisam operar em condições extremas.</p>
+<h2>O Desafio de Pneus para a Lua e Marte</h2>
+<p>O CEO da Michelin, <strong>Florent Menegaux</strong>, destaca que "uma coisa que você não pode ter é um furo". Essa afirmação ressoa não apenas no mundo dos pneus, mas também na engenharia de software. Assim como os pneus devem resistir a terrenos acidentados e condições adversas, nossos sistemas precisam ser projetados para lidar com falhas e imprevistos. Isso envolve uma abordagem que vai além do desenvolvimento básico, incorporando técnicas de <strong>resiliência</strong> e <strong>tolerância a falhas</strong>.</p>
+<h3>Arquitetura Resiliente em Sistemas</h3>
+<p>Em ambientes extremos, como a superfície lunar ou marciana, a comunicação e a operação contínua são vitais. Isso nos leva a considerar a aplicação de padrões de arquitetura como <em>Microservices</em> e <em>Event-Driven Architecture</em>. Ambas as abordagens permitem que os sistemas continuem a funcionar mesmo quando partes deles falham. Além disso, a utilização de <strong>circuit breakers</strong> pode prevenir que falhas em um serviço comprometam todo o sistema.</p>
+<h3>Implementando Resiliência com C#</h3>
+<p>Vamos explorar um exemplo prático em C# que demonstra como implementar um <em>circuit breaker</em> em um microserviço. Para isso, utilizaremos a biblioteca <strong>Polly</strong>, que oferece uma maneira simples de adicionar resiliência aos nossos sistemas:</p>
+<pre><code>using Polly;
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+public class ResilientService
+{
+private readonly HttpClient _httpClient;
+public ResilientService(HttpClient httpClient)
+{
+_httpClient = httpClient;
+}
+public async Task<string> GetDataAsync(string url)
+{
+var circuitBreaker = Policy
+.Handle<HttpRequestException>()
+.CircuitBreaker(2, TimeSpan.FromMinutes(1));
+return await circuitBreaker.ExecuteAsync(async () =>
+{
+return await _httpClient.GetStringAsync(url);
+});
+}
+}
+</code></pre>
+<p>Este código implementa um <strong>circuit breaker</strong> que interrompe chamadas para um serviço externo em caso de falhas repetidas, permitindo que o sistema se recupere e mantenha sua operação.</p>
+<h2>Dicas Avançadas para Arquitetura Resiliente</h2>
+<ul>
+<li><strong>Teste de Falhas:</strong> Realize simulações de falhas para entender como seu sistema responde e ajuste a arquitetura conforme necessário.</li>
+<li><strong>Monitoramento Contínuo:</strong> Utilize ferramentas de monitoramento para detectar anomalias e ter visibilidade sobre o desempenho do sistema.</li>
+<li><strong>Automação de Deploy:</strong> Implemente pipelines de CI/CD que garantam que novas versões do software possam ser implantadas rapidamente, minimizando o tempo de inatividade.</li>
+</ul>
+<h2>Conclusão</h2>
+<p>A exploração de ambientes extremos, como a Lua e Marte, nos ensina que a resiliência é uma característica essencial em qualquer sistema. Ao projetar soluções de software, é fundamental incorporar práticas que garantam a continuidade operacional, mesmo diante de falhas. Como profissionais de software, devemos sempre buscar maneiras de inovar e garantir que nossas aplicações sejam tão robustas quanto os veículos que nos levarão a novos mundos.</p>
+<p>Seja em nosso planeta ou em outros, a arquitetura de software deve estar à altura dos desafios que enfrentamos. Vamos aproveitar essas lições para construir o futuro, tanto na Terra quanto nas estrelas.</p>
+<p>
+<p></p></div>
+<p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="../sobre.html">Sobre</a> |
+    <a href="../contato.html">Contato</a> |
+    <a href="../termos.html">Termos de Uso</a> |
+    <a href="../politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
