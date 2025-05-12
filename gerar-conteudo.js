@@ -536,12 +536,12 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Que traga um olhar técnico, provocativo ou prático, como se fosse você mesmo escrevendo.
 
 2. Em seguida, **um artigo completo**, com:
-   - Uma introdução como esta: ${introducaoVaria.intro}, mas em português quando não for uma palavra reservada.
+   - Uma introdução original baseada nesta: ${introducaoVaria.intro}.
+   - A introdução deve ser traduzida para o português mas não de forma literal.
    - Uma explicação técnica clara e aprofundada sobre o tema.
    - Trechos de código reais (preferencialmente em C# ou outra linguagem prática, com APIs úteis quando possível).
    - Dicas avançadas que mostrem domínio prático, indo além do básico.
    - Uma conclusão com reflexões ou recomendações suas.
-   - ⚠️ **Importante**: todo o conteúdo deve estar em português brasileiro, sem frases, trechos ou termos técnicos longos em inglês.
 
 3. Ao longo do artigo, use marcações HTML semânticas para melhorar o SEO:
 
