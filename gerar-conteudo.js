@@ -568,6 +568,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Um resumo objetivo com até 150 caracteres, começando com: Resumo: 
    - A categoria mais adequada entre barras verticais, no formato: |Categoria|
 
+Nunca escreva \'|Categoria|\'
 Use exatamente uma destas categorias (sem criar novas):
 Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia
 
