@@ -543,11 +543,14 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Uma conclusão com reflexões ou recomendações suas.
 
 3. Ao longo do artigo, use marcações HTML semânticas para melhorar o SEO:
-- Use <h2> e <h3> para subtítulos e seções importantes.
-- Use listas com <ul> ou <ol> quando houver itens.
-- Destaque trechos importantes com <strong> ou <em>.
-- Use <blockquote> para trechos citados ou reflexões.
 
+- Use <h2> apenas para títulos principais de seções (ex: Introdução, Conclusão, Dicas).
+- Use <h3> para subtítulos dentro de seções.
+- Nunca coloque parágrafos, blocos de código ou listas dentro de <h2> ou <h3>.
+- Use <p> para parágrafos.
+- Use listas com <ul> ou <ol> sempre que houver itens.
+- Destaque palavras com <strong> ou <em>.
+- Use <blockquote> para citações e reflexões.
 
 4. Ao final do artigo, inclua:
    - Um resumo objetivo com até 150 caracteres, começando com: Resumo: 
@@ -604,7 +607,15 @@ let corpoArtigo = linhas.filter(l => {
 
 const { categoria, conteudoLimpo } = extrairCategoriaDoConteudo(corpoArtigo, titulo);
 corpoArtigo = conteudoLimpo;
-
+    
+corpoArtigo = corpoArtigo
+  .split('\n')
+  .filter(l => {
+    const linha = l.trim();
+    return linha.length > 0 && !/^\*{2,}$/.test(linha);
+  })
+  .join('\n')
+  .trim();
 
 const categoriaSlug = slugify(categoria);
 
@@ -624,6 +635,7 @@ const filename = `${pastaCategoria}/${slug}.html`;
     const imagemCapaUrl = null;//await buscarImagemCapa(titulo, slug);
     const escapeJson = str => (str || "").replace(/"/g, '\\"');
 
+    
 
 const html = `<!DOCTYPE html>
 <html lang="pt-BR">
