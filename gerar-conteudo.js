@@ -512,6 +512,7 @@ const resumoFonte = await extrairResumoDaNoticia(noticia.url);
  console.error("DEBUG: noticia.titulo:", noticia.titulo);
  console.error("DEBUG: introducaoVaria.intro:", introducaoVaria.intro);
  console.error("DEBUG: introducaoVaria.introOriginal:", introducaoVaria.introOriginal);
+ console.error("DEBUG: resumoFonte:", resumoFonte);
     
     
 const textoCategoriasExistentes = categoriasExistentes.length
