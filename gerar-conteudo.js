@@ -35,13 +35,11 @@ function slugify(str) {
 
 
 function extrairCategoriaDoConteudo(conteudo, tituloFallback) {
-  // Captura a categoria entre pipes, desde que venha antes de uma tag HTML de fechamento ou fim do texto
-  const match = conteudo.match(/\|(.+?)\|(?=<\/[^>]+>|$)/);
-  const categoriaSugerida = match ? match[1].trim() : null;
+  
+const match = conteudo.match(/\|\s*([^|<]+?)\s*\|(?=\s*<\/[^>]+>|$)/);
+const categoriaSugerida = match ? match[1].trim() : null;
 
-  // Remove o marcador de categoria do conteúdo
-  const conteudoLimpo = conteudo.replace(/\|(.+?)\|(?=<\/[^>]+>|$)/, '').trim();
-
+const conteudoLimpo = conteudo.replace(/\|\s*([^|<]+?)\s*\|(?=\s*<\/[^>]+>|$)/, '').trim();
   // Carrega categorias já utilizadas
   const titulosPath = "titulos.json";
   let categoriasExistentes = [];
