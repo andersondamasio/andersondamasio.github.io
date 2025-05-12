@@ -541,7 +541,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Que traga um olhar técnico, provocativo ou prático, e como a Arquitetura e Desenvolvimento de Software pode colaborar com isso, como se fosse você mesmo escrevendo.
 
 2. Em seguida, **um artigo completo**, com:
-   - Uma introdução baseada nesta: ${introducaoVaria.introOriginal}, onde __TEMATICA__ é o titulo da noticia.
+   - Uma introdução natural e humanizada.
    - Uma explicação técnica clara e aprofundada sobre o tema.
    - Trechos de código reais (preferencialmente em C# ou outra linguagem prática, com APIs úteis quando possível).
    - Dicas avançadas que mostrem domínio prático, indo além do básico.
