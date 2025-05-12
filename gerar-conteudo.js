@@ -538,7 +538,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 1. Um **título original e criativo**, em português, inspirado na notícia, mas:
    - Sem tradução literal.
    - Com estilo natural para o público brasileiro de tecnologia.
-   - Que traga um olhar técnico, provocativo ou prático, como se fosse você mesmo escrevendo.
+   - Que traga um olhar técnico, provocativo ou prático, e como a Arquitetura e Desenvolvimento de Software pode colaborar com isso, como se fosse você mesmo escrevendo.
 
 2. Em seguida, **um artigo completo**, com:
    - Uma introdução baseada nesta: ${introducaoVaria.introOriginal}, onde __TEMATICA__ é o titulo da noticia.
