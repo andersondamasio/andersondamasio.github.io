@@ -552,7 +552,6 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 - Use listas com <ul> ou <ol> sempre que houver itens.
 - Destaque palavras com <strong> ou <em>.
 - Use <blockquote> para citações e reflexões.
-- Importante: o conteúdo deve ser retornado já com **HTML semântico completo**, sem usar **asteriscos** ou sintaxe de Markdown.
 
 4. Ao final do artigo, inclua:
    - Um resumo objetivo com até 150 caracteres, começando com: Resumo: 
@@ -569,6 +568,7 @@ Exemplo de categoria: |Segurança|
 - Não inicie com “Título:” ou similares. Apenas escreva o título direto na primeira linha.
 - Pule uma linha e inicie o artigo.
 - O conteúdo deve parecer escrito por um humano experiente, com estilo natural, fluente e levemente opinativo.
+- O conteúdo deve ser retornado já com **HTML semântico completo**, sem usar **asteriscos** ou sintaxe de Markdown.
 
 `;
 
