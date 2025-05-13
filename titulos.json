@@ -3269,5 +3269,14 @@
     "dataFonte": "2025-05-13T12:26:09.000Z",
     "categoria": "Blockchain",
     "urlFonte": "https://techcrunch.com/2025/05/13/robinhood-grows-its-footprint-in-canada-by-acquiring-wonderfi/"
+  },
+  {
+    "titulo": "Desafios e Oportunidades: Como Assistentes de Codificação Podem Impactar a Segurança da Cadeia de Suprimentos de Software",
+    "noticiaOriginal": "Coding Assistants Threaten the Software Supply Chain",
+    "url": "artigos/seguranca/desafios-e-oportunidades-como-assistentes-de-codificacao-podem-impactar-a-seguranca-da-cadeia-de-suprimentos-de-software.html",
+    "data": "2025-05-13T13:36:27.188Z",
+    "dataFonte": "2025-05-13T13:11:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://martinfowler.com/articles/exploring-gen-ai/software-supply-chain-attack-surface.html"
   }
 ]
