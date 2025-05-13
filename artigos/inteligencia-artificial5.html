@@ -2,14 +2,44 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Artigos</title>
+  <title>Categoria: Inteligência Artificial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
     main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    h1 { font-size: 1.8rem; margin-bottom: 1rem; color: #0a66c2; }
     ul { padding-left: 1.5rem; line-height: 1.8; }
     a { text-decoration: none; font-weight: bold; color: #0a66c2; }
     a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
+    .scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 8px 16px;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  scroll-padding-left: 16px;
+  gap: 12px;
+}
+.scroll-container a {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.scroll-container a:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+.scroll-container a.active {
+  background-color: #0a66c2;
+  color: white;
+}
   </style>
    
 <!-- Google tag (gtag.js) -->
@@ -23,7 +53,7 @@
 
 </head>
 <body>
-
+  
 <header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
   <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
     <a href="../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
@@ -32,27 +62,17 @@
     <a href="../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
   </nav>
 </header>
-<main>
-  <h1>Artigos</h1>
-  <ul>
-    <li><a href="inteligencia-artificial.html">Inteligência Artificial</a> (41)</li>
-<li><a href="programacao.html">Programação</a> (14)</li>
-<li><a href="robotica.html">Robótica</a> (2)</li>
-<li><a href="tecnologia.html">Tecnologia</a> (33)</li>
-<li><a href="seguranca.html">Segurança</a> (5)</li>
-<li><a href="outros.html">Outros</a> (371)</li>
-<li><a href="banco-de-dados.html">Banco de Dados</a> (1)</li>
-<li><a href="desenvolvimento-de-software.html">Desenvolvimento de Software</a> (3)</li>
-<li><a href="carreira.html">Carreira</a> (2)</li>
-<li><a href="blockchain.html">Blockchain</a> (1)</li>
-<li><a href="tecnologia-e-desenvolvimento.html">Tecnologia e Desenvolvimento</a> (1)</li>
-<li><a href="seguranca-online.html">Segurança Online</a> (1)</li>
-<li><a href="seguranca-cibernetica.html">Segurança Cibernética</a> (2)</li>
-<li><a href="tecnologia-domestica.html">Tecnologia Doméstica</a> (1)</li>
-<li><a href="tecnologia-automotiva.html">Tecnologia Automotiva</a> (1)</li>
-  </ul>
-</main>
-
+  <main>
+    <h1>Categoria: Inteligência Artificial</h1>
+    <ul>
+      <li><a href="../artigos/infoq-dev-summit-boston-2025-desenvolvimento-de-ia-plataformas-e-experiencia-do-desenvolvedor.html">InfoQ Dev Summit Boston 2025: Desenvolvimento de IA, Plataformas e Experiência do Desenvolvedor</a></li>
+    </ul>
+    
+<div class="scroll-container">
+  <a href="inteligencia-artificial.html" class="">Página 1</a><a href="inteligencia-artificial2.html" class="">Página 2</a><a href="inteligencia-artificial3.html" class="">Página 3</a><a href="inteligencia-artificial4.html" class="">Página 4</a><a href="inteligencia-artificial5.html" class="active">Página 5</a>
+</div>
+  </main>
+  
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
   <nav style="margin-bottom: 1rem;">
     <a href="../index.html">Início</a> |
