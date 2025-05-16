@@ -32,7 +32,21 @@ function slugify(str) {
     .replace(/(^-|-$)/g, '');
 }
 
+function escapeHTML(code) {
+  return code
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
 
+function limparTitulo(raw) {
+  return raw
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<[^>]*>/g, '')
+    .replace(/&[^;]+;/g, '')
+    .replace(/^\*{1,2}(.+?)\*{1,2}$/, '$1')
+    .trim();
+}
 
 function extrairCategoriaDoConteudo(conteudo, tituloFallback) {
   
@@ -493,6 +507,45 @@ function limparTitulo(raw) {
     .trim();
 }
 
+function processarArtigoComCodigo(content) {
+  const linhas = content.trim().split('\n');
+
+  const tituloRaw = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.trim().length > 10);
+  const titulo = limparTitulo(tituloRaw || "");
+
+  let tituloRemovido = false;
+
+  const corpoArtigoOriginal = linhas
+    .filter(l => {
+      const linhaLimpa = limparTitulo(l);
+      if (!tituloRemovido && linhaLimpa === titulo) {
+        tituloRemovido = true;
+        return false;
+      }
+      return true;
+    })
+    .join('\n');
+
+  const corpoComCodigo = corpoArtigoOriginal
+    .replace(/```csharp\n([\s\S]*?)```/g, (match, code) => {
+      return `<pre><code class="language-csharp">${escapeHTML(code)}</code></pre>`;
+    })
+    .replace(/```\n([\s\S]*?)```/g, (match, code) => {
+      return `<pre><code>${escapeHTML(code)}</code></pre>`;
+    });
+
+  const corpoLimpo = corpoComCodigo
+    .split('\n')
+    .filter(l => {
+      const linha = l.trim();
+      return linha.length > 0 && !/^\*{2,}$/.test(linha);
+    })
+    .join('\n')
+    .trim();
+
+  return { titulo, corpo: corpoLimpo };
+}
+
 async function gerar() {
   try {
     const now = new Date();
@@ -603,6 +656,10 @@ Exemplo de categoria: |Segurança|
 
  console.error("DEBUG: content:", content);
 
+
+const { titulo, corpo: corpoArtigo } = processarArtigoComCodigo(content);
+
+ /*   
 const linhas = content.trim().split('\n').map(l => l.trim()).filter(Boolean);
 
 let titulo = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.length > 10)?.replace(/^\*{1,2}(.+?)\*{1,2}$/, '$1').replace(/<[^>]*>/g, '').trim();
@@ -621,10 +678,14 @@ let corpoArtigo = linhas.filter(l => {
   return true;
 }).join('\n').trim();
 
-    corpoArtigo = corpoArtigo
-      .replace(/```csharp\n([\s\S]*?)```/g, '<pre><code class="language-csharp">$1</code></pre>')
-      .replace(/```[\s\S]*?\n([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
-
+  corpoArtigo = corpoArtigo
+  .replace(/```csharp\n([\s\S]*?)```/g, (match, code) => {
+    return `<pre><code class="language-csharp">${escapeHTML(code)}</code></pre>`;
+  })
+  .replace(/```\n([\s\S]*?)```/g, (match, code) => {
+    return `<pre><code>${escapeHTML(code)}</code></pre>`;
+  });
+*/
     const slug = slugify(titulo);
   
 
