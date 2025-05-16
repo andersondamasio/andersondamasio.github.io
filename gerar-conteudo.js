@@ -657,7 +657,7 @@ Exemplo de categoria: |Segurança|
  console.error("DEBUG: content:", content);
 
 
-const { titulo, corpo: corpoArtigo } = processarArtigoComCodigo(content);
+let { titulo, corpo: corpoArtigo } = processarArtigoComCodigo(content);
 
  /*   
 const linhas = content.trim().split('\n').map(l => l.trim()).filter(Boolean);
