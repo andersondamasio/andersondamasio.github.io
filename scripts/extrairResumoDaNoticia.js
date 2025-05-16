@@ -2,47 +2,69 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 /**
- * Extrai um trecho limpo da notícia da URL original para usar no prompt do ChatGPT.
- * Prioriza o parágrafo que vem após o título, se fornecido.
+ * Extrai um resumo limpo da página HTML da notícia.
+ * Funciona em múltiplos formatos de HTML (blogs, portais, X, etc).
  * 
- * @param {string} url URL da notícia original
- * @param {string} [tituloOriginal] Título da notícia (opcional, melhora precisão)
- * @returns {Promise<string>} Um resumo limpo da página (máximo 1200 caracteres)
+ * @param {string} url 
+ * @param {string} [tituloOriginal] 
+ * @returns {Promise<string>}
  */
 async function extrairResumoDaNoticia(url, tituloOriginal = '') {
   try {
-    const res = await axios.get(url);
-    const $ = cheerio.load(res.data);
+    const res = await axios.get(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (ResumoBot)'
+      }
+    });
 
+    const $ = cheerio.load(res.data);
     let texto = '';
 
-    if (tituloOriginal) {
-      const normalizado = tituloOriginal.trim().toLowerCase();
+    // ✅ 1. Tenta pegar parágrafo especial (#speakable-summary)
+    texto = $('#speakable-summary').text().trim();
 
-      // Procura o título dentro do HTML (em tags comuns de título)
+    // ✅ 2. Tenta pegar resumo do <meta name="description">
+    if (!texto) {
+      texto = $('meta[name="description"]').attr('content')?.trim() || '';
+    }
+
+    // ✅ 3. Se título foi passado, tenta encontrar <p> próximo ao título
+    if (!texto && tituloOriginal) {
+      const normalizado = tituloOriginal.trim().toLowerCase();
+      const tokens = normalizado.split(/\s+/).filter(t => t.length > 3);
+
       let posTitulo = null;
+
       $('h1, h2, h3, strong, b').each((i, el) => {
-        const t = $(el).text().trim().toLowerCase();
-        if (t.includes(normalizado)) {
+        const textoEl = $(el).text().trim().toLowerCase();
+        if (tokens.every(tok => textoEl.includes(tok))) {
           posTitulo = el;
           return false;
         }
       });
 
       if (posTitulo) {
-        // Pega o primeiro <p> visível após o título
         const paragrafo = $(posTitulo).nextAll('p').first().text().trim();
-        if (paragrafo && paragrafo.length > 40) {
+        if (paragrafo.length > 40) {
           texto = paragrafo;
         }
       }
     }
 
-    // Fallback: junta os <p> principais se nada for encontrado
+    // ✅ 4. Fallback com heurística anti-lixo
     if (!texto) {
       texto = $('article p, main p, .content p, .article-body p, p')
-        .map((i, el) => $(el).text())
+        .map((i, el) => $(el).text().trim())
         .get()
+        .filter(p => {
+          const limpado = p.replace(/\s+/g, ' ');
+          return (
+            limpado.length > 40 &&
+            !/cookies|subscribe|terms|privacy|login|comments|sign up|newsletter|advert/i.test(limpado) &&
+            !/\s{2,}/.test(p) // ❌ Rejeita parágrafos com muitos espaços seguidos
+          );
+        })
+        .slice(0, 3)
         .join(' ')
         .replace(/\s+/g, ' ')
         .trim();
