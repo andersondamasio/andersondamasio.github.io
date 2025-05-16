@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>A importância da resiliência em sistemas: lições do incidente da Tesco – Artigo Técnico por Anderson Damasio</title>
+<meta name="description" content="Tesco enfrentou problemas técnicos, destacando a importância da resiliência em sistemas. Como podemos aprender com isso?</p>">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="A importância da resiliência em sistemas: lições do incidente da Tesco">
+<meta property="og:description" content="Tesco enfrentou problemas técnicos, destacando a importância da resiliência em sistemas. Como podemos aprender com isso?</p>">
+<meta property="og:url" content="https://www.andersondamasio.com.br/tecnologia/a-importancia-da-resiliencia-em-sistemas-licoes-do-incidente-da-tesco.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A importância da resiliência em sistemas: lições do incidente da Tesco">
+<meta name="twitter:description" content="Tesco enfrentou problemas técnicos, destacando a importância da resiliência em sistemas. Como podemos aprender com isso?</p>">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "A importância da resiliência em sistemas: lições do incidente da Tesco",
+  "description": "Tesco enfrentou problemas técnicos, destacando a importância da resiliência em sistemas. Como podemos aprender com isso?</p>",
+  "datePublished": "2025-05-16T16:24:40.744Z",
+  "author": {
+    "@type": "Person",
+    "name": "Anderson Damasio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anderson Damasio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/favicon.ico"
+    }
+  }
+}
+</script>
+
+<!-- Schema.org: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://www.andersondamasio.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://www.andersondamasio.com.br/artigos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tecnologia",
+      "item": "https://www.andersondamasio.com.br/artigos/tecnologia"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "A importância da resiliência em sistemas: lições do incidente da Tesco",
+      "item": "https://www.andersondamasio.com.br/tecnologia/a-importancia-da-resiliencia-em-sistemas-licoes-do-incidente-da-tesco.html"
+    }
+  ]
+}
+</script>
+
+
+ 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+
+<!-- Script principal da Ezoic (Standalone) no <head> -->
+<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+  window.ezstandalone = window.ezstandalone || {};
+  ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+
+ a {
+      color: #0a66c2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: #084e91; }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: #0a66c2; color: white; }
+main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+</style>
+</head>
+<body>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../../artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
+    <a href="../../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+  </nav>
+</header>
+<main>
+<h1>A importância da resiliência em sistemas: lições do incidente da Tesco</h1>
+
+<p class="article-meta">Publicado em: 16/05/2025 13:24</p>
+
+<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
+<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
+<script>
+  ezstandalone.cmd.push(function() {
+    ezstandalone.showAds(115);
+  });
+</script>
+
+<div class="article-body"><p>Recentemente, a Tesco se viu em uma situação que muitos de nós tememos: um problema técnico que deixou usuários sem acesso a funcionalidades essenciais de seu site e aplicativo. Essa situação gerou um alvoroço nas redes sociais e, como sempre, nos faz refletir sobre a importância da resiliência em sistemas de software. Neste artigo, vamos explorar como uma arquitetura bem projetada pode evitar que problemas de software causem transtornos tão significativos e o que podemos aprender com essa situação.</p>
+<h2>Introdução</h2>
+<p>Com a evolução da tecnologia, a dependência de sistemas digitais só aumenta. A Tesco, uma das maiores redes de supermercados do mundo, enfrentou problemas que impediram seus clientes de realizar alterações em pedidos online e acessar suas Clubcards digitais. Embora tenha resolvido a questão rapidamente, isso ressalta a necessidade de uma abordagem robusta na arquitetura de software.</p>
+<h2>Entendendo o problema</h2>
+<p>O incidente da Tesco destaca o que pode acontecer quando um sistema falha. No caso deles, a empresa identificou um "problema de software" que causou interrupções temporárias. Provavelmente, isso se refere a questões relacionadas a APIs, gerenciamento de sessões ou até mesmo a uma falha na comunicação entre microserviços. Vamos explorar um exemplo prático de como um sistema pode ser projetado para minimizar esses riscos.</p>
+<h3>Arquitetura baseada em microserviços</h3>
+<p>Uma das abordagens mais eficazes para aumentar a resiliência é a utilização de uma arquitetura de microserviços. Ao dividir aplicações em serviços menores e independentes, conseguimos isolar falhas e garantir que um problema em um serviço não comprometa todo o sistema. Aqui está um exemplo básico de como isso pode ser implementado em C# usando ASP.NET Core:</p>
+<pre><code>public class OrderService
+{
+    public Order GetOrder(int orderId)
+    {
+        // lógica para obter um pedido
+    }
+    public bool UpdateOrder(Order order)
+    {
+        // lógica para atualizar um pedido
+    }
+}
+</code></pre>
+<p>Além disso, cada microserviço deve ter sua própria base de dados, o que permite que a falha em um serviço não afete a integridade dos dados de outros serviços.</p>
+<h3>Implementação de circuit breakers</h3>
+<p>Outra prática recomendada é a implementação de <strong>circuit breakers</strong>. Essa técnica permite que o sistema detecte falhas e evite chamadas a serviços que estão fora do ar, redirecionando as solicitações para um fallback ou uma mensagem de erro amigável ao usuário. Aqui está um exemplo de como isso pode ser feito:</p>
+<pre><code>public class CircuitBreaker
+{
+    private bool _isOpen = false;
+    public void Execute(Action action)
+    {
+        if (_isOpen)
+        {
+            throw new Exception("Serviço indisponível.");
+        }
+        try
+        {
+            action();
+        }
+        catch
+        {
+            _isOpen = true;
+            // lógica para abrir o circuito
+        }
+    }
+}
+</code></pre>
+<p>Essa abordagem evita que os usuários sejam impactados por falhas temporárias e reduz a carga sobre os serviços que estão enfrentando problemas.</p>
+<h2>Dicas para aumentar a resiliência dos sistemas</h2>
+<ul>
+    <li><strong>Monitoramento constante:</strong> Use ferramentas de monitoramento para identificar falhas antes que afetem os usuários.</li>
+    <li><strong>Testes de carga:</strong> Realize testes de carga para entender como seu sistema se comporta sob pressão e identifique possíveis pontos de falha.</li>
+    <li><strong>Backup e recuperação:</strong> Implemente estratégias de backup que garantam a recuperação rápida dos dados em caso de falhas graves.</li>
+    <li><strong>Documentação clara:</strong> Mantenha uma documentação detalhada para facilitar a identificação de problemas e a implementação de soluções.</li>
+</ul>
+<h2>Conclusão</h2>
+<p>A situação da Tesco é um lembrete claro de que falhas em sistemas são inevitáveis, mas a forma como respondemos a essas falhas pode fazer toda a diferença. Investir em uma arquitetura resiliente e em boas práticas de desenvolvimento não apenas melhora a experiência do usuário, mas também protege a reputação da empresa. À medida que continuamos a desenvolver sistemas mais complexos, essa resiliência deve ser uma prioridade em nosso trabalho.</p>
+<p>Em um mundo onde a tecnologia é cada vez mais central, é essencial que nos preparemos para o imprevisto. A resiliência não é apenas uma característica desejável; é uma necessidade.</p>
+<p>
+<p></p></div>
+<p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="../sobre.html">Sobre</a> |
+    <a href="../contato.html">Contato</a> |
+    <a href="../termos.html">Termos de Uso</a> |
+    <a href="../politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+</body>
+</html>
