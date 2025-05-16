@@ -577,11 +577,8 @@ const categoriasExistentes = [...new Set(
 const resumoFonte = await extrairResumoDaNoticia(noticia.url,noticia.noticiaOriginal);
 
  console.error("DEBUG: noticia.titulo:", noticia.titulo);
- console.error("DEBUG: introducaoVaria.intro:", introducaoVaria.intro);
- console.error("DEBUG: introducaoVaria.introOriginal:", introducaoVaria.introOriginal);
  console.error("DEBUG: resumoFonte:", resumoFonte);
-    
-    
+     
 const textoCategoriasExistentes = categoriasExistentes.length
   ? `As categorias já usadas até agora no site são: ${categoriasExistentes.join(", ")}. Dê preferência a reutilizar uma delas.`
   : "";
