@@ -38,15 +38,21 @@ async function extrairResumoDaNoticia(url, tituloOriginal = '') {
       }
     }
 
-    // Fallback: junta os <p> principais se nada for encontrado
-    if (!texto) {
-      texto = $('article p, main p, .content p, .article-body p, p')
-        .map((i, el) => $(el).text())
-        .get()
-        .join(' ')
-        .replace(/\s+/g, ' ')
-        .trim();
-    }
+    // Fallback: pega apenas os <p> dentro de <article> ou <main>, ignorando menus
+if (!texto) {
+  const paragrafos = $('article p, main p')
+    .filter((i, el) => {
+      const parentClasses = $(el).parents().map((_, p) => $(p).attr('class') || '').get().join(' ');
+      return !/mega-menu|menu|nav|header|footer|sidebar/i.test(parentClasses);
+    })
+    .map((i, el) => $(el).text().trim())
+    .get()
+    .filter(p => p.length > 60 && !/\s{2,}/.test(p))
+    .slice(0, 5);
+
+  texto = paragrafos.join(' ').replace(/\s+/g, ' ').trim();
+}
+
 
     return texto.substring(0, 1200);
   } catch (e) {
