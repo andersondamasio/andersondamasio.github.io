@@ -4052,5 +4052,14 @@
     "dataFonte": "2025-05-16T17:57:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/05/16/the-nuclear-company-raises-51m-to-develop-massive-reactor-sites/"
+  },
+  {
+    "titulo": "A Revolução dos Logs: Como o Novo Modelo de Preços da AWS Pode Transformar sua Arquitetura",
+    "noticiaOriginal": "AWS Lambda Introduces Tiered Pricing for CloudWatch Logs and Expands Logging Destinations",
+    "url": "artigos/cloud/a-revolucao-dos-logs-como-o-novo-modelo-de-precos-da-aws-pode-transformar-sua-arquitetura.html",
+    "data": "2025-05-17T10:18:26.155Z",
+    "dataFonte": "2025-05-17T10:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/05/lambda-cloudwatch-logs-tiered/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
