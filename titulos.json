@@ -4394,5 +4394,14 @@
     "dataFonte": "2025-05-19T03:03:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.zdnet.com/article/how-to-move-your-codebase-into-github-for-analysis-by-chatgpt-deep-research/"
+  },
+  {
+    "titulo": "Desvendando o Futuro do Java: O Impacto das Novas Funcionalidades do OpenJDK",
+    "noticiaOriginal": "OpenJDK News Roundup: Key Derivation, Scoped Values, Compact Headers, JFR Method Timing & Tracing",
+    "url": "artigos/programacao/desvendando-o-futuro-do-java-o-impacto-das-novas-funcionalidades-do-openjdk.html",
+    "data": "2025-05-19T04:27:44.722Z",
+    "dataFonte": "2025-05-19T02:30:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/05/jdk-news-roundup-may12-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
