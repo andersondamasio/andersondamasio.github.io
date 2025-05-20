@@ -791,7 +791,7 @@ const html = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>${titulo} – Artigo Técnico por Anderson Damasio</title>
 <meta name="description" content="${resumo}">
-<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="article">
