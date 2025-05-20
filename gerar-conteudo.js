@@ -342,16 +342,58 @@ function gerarIndiceCategorias(agrupados) {
   <meta charset="UTF-8">
   <title>Artigos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
-    main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-    ul { padding-left: 1.5rem; line-height: 1.8; }
-    a { text-decoration: none; font-weight: bold; color: #0a66c2; }
-    a:hover { text-decoration: underline; }
-  </style>
+ <style>
+  :root {
+    --bg: #f0f2f5;
+    --text: #333;
+    --main-bg: #fff;
+    --link: #0a66c2;
+    --link-hover: #084e91;
+    --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  body.dark-theme {
+    --bg: #181b1f;
+    --text: #ddd;
+    --main-bg: #23262d;
+    --link: #67aaff;
+    --link-hover: #f1c40f;
+    --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0; padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  main {
+    max-width: 800px; margin: 2rem auto;
+    background-color: var(--main-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+  }
+  ul { padding-left: 1.5rem; line-height: 1.8; }
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--link);
+  }
+  a:hover {
+    text-decoration: underline;
+    color: var(--link-hover);
+  }
+</style>
+
   ${gerarGoogleAnalyticsTag()}
 </head>
 <body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+
 ${gerarHeaderNavegacao("..")}
 <main>
   <h1>Artigos</h1>
@@ -360,6 +402,35 @@ ${gerarHeaderNavegacao("..")}
   </ul>
 </main>
 ${gerarFooterNavegacao("..")}
+
+<script>
+(function() {
+  function getPreferredTheme() {
+    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+    return 'light';
+  }
+  function setTheme(theme) {
+    document.body.classList.toggle('dark-theme', theme === 'dark');
+    var btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    var theme = getPreferredTheme();
+    setTheme(theme);
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
+        localStorage.setItem('theme', theme);
+        setTheme(theme);
+      });
+    }
+  });
+})();
+</script>
+
+
 </body>
 </html>`;
 
@@ -1018,6 +1089,34 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
+
+<script>
+(function() {
+  function getPreferredTheme() {
+    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+    return 'light';
+  }
+  function setTheme(theme) {
+    document.body.classList.toggle('dark-theme', theme === 'dark');
+    var btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    var theme = getPreferredTheme();
+    setTheme(theme);
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
+        localStorage.setItem('theme', theme);
+        setTheme(theme);
+      });
+    }
+  });
+})();
+</script>
+
 </body>
 </html>`;
 
@@ -1144,34 +1243,6 @@ const html = `<!DOCTYPE html>
   "url": "https://www.andersondamasio.com.br"
 }
 </script>
-
-<script>
-(function() {
-  function getPreferredTheme() {
-    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
-    return 'light';
-  }
-  function setTheme(theme) {
-    document.body.classList.toggle('dark-theme', theme === 'dark');
-    var btn = document.getElementById('theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
-  }
-  document.addEventListener('DOMContentLoaded', function() {
-    var theme = getPreferredTheme();
-    setTheme(theme);
-    var btn = document.getElementById('theme-toggle');
-    if (btn) {
-      btn.addEventListener('click', function() {
-        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
-        localStorage.setItem('theme', theme);
-        setTheme(theme);
-      });
-    }
-  });
-})();
-</script>
-
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <style>
@@ -1353,6 +1424,33 @@ ${paginacao}
 </div>
 
 <script src="/scripts/cookies-banner.js"></script>
+
+<script>
+(function() {
+  function getPreferredTheme() {
+    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+    return 'light';
+  }
+  function setTheme(theme) {
+    document.body.classList.toggle('dark-theme', theme === 'dark');
+    var btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    var theme = getPreferredTheme();
+    setTheme(theme);
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
+        localStorage.setItem('theme', theme);
+        setTheme(theme);
+      });
+    }
+  });
+})();
+</script>
 
 </body>
 </html>`;
