@@ -123,66 +123,6 @@
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
-<!-- NOVO: Script de alternância de tema -->
-<script>
-(function() {
-  function getPreferredTheme() {
-    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
-    return 'light';
-  }
-  function setTheme(theme) {
-    document.body.classList.toggle('dark-theme', theme === 'dark');
-    var btn = document.getElementById('theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
-  }
-  document.addEventListener('DOMContentLoaded', function() {
-    var theme = getPreferredTheme();
-    setTheme(theme);
-    var btn = document.getElementById('theme-toggle');
-    if (btn) {
-      btn.addEventListener('click', function() {
-        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
-        localStorage.setItem('theme', theme);
-        setTheme(theme);
-      });
-    }
-  });
-})();
-</script>
-
-<!-- Aviso de Cookies -->
-<div id="cookie-banner" style="
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #2c2c2c;
-  color: #fff;
-  padding: 15px;
-  font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 9999;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
-">
-  <span>
-    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
-    <a href="/politica-de-privacidade.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
-  </span>
-  <button onclick="aceitarCookies()" style="
-    background: #f1c40f;
-    border: none;
-    padding: 8px 12px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #000;
-    border-radius: 5px;
-    margin-left: 15px;
-  ">Aceitar</button>
-</div>
-
-<script src="/scripts/cookies-banner.js"></script>
+<script src="http://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
 
 </body>
