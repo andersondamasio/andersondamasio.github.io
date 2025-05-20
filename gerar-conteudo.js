@@ -185,52 +185,90 @@ function gerarPaginasPorCategoria(titulos) {
 </div>`
         : '';
 
-      const html = `<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+      const html = `<head>
   <meta charset="UTF-8">
   <title>Categoria: ${categoria}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
-    main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-    h1 { font-size: 1.8rem; margin-bottom: 1rem; color: #0a66c2; }
+    :root {
+      --bg: #f0f2f5;
+      --text: #333;
+      --main-bg: #fff;
+      --link: #0a66c2;
+      --link-hover: #084e91;
+      --footer: #666;
+      --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    body.dark-theme {
+      --bg: #181b1f;
+      --text: #ddd;
+      --main-bg: #23262d;
+      --link: #67aaff;
+      --link-hover: #f1c40f;
+      --footer: #b3b3b3;
+      --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0; padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+    main {
+      max-width: 800px; margin: 2rem auto;
+      background-color: var(--main-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: var(--box-shadow);
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--link);
+    }
     ul { padding-left: 1.5rem; line-height: 1.8; }
-    a { text-decoration: none; font-weight: bold; color: #0a66c2; }
-    a:hover { text-decoration: underline; }
-    footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: var(--link);
+    }
+    a:hover { text-decoration: underline; color: var(--link-hover);}
+    footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
     .scroll-container {
-  display: flex;
-  overflow-x: auto;
-  padding: 8px 16px;
-  margin-top: 2rem;
-  justify-content: flex-start;
-  scroll-padding-left: 16px;
-  gap: 12px;
-}
-.scroll-container a {
-  flex-shrink: 0;
-  white-space: nowrap;
-  font-weight: bold;
-  text-decoration: none;
-  color: #0a66c2;
-  border: 1px solid #0a66c2;
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: background-color 0.3s, color 0.3s;
-}
-.scroll-container a:hover {
-  background-color: #0a66c2;
-  color: white;
-}
-.scroll-container a.active {
-  background-color: #0a66c2;
-  color: white;
-}
+      display: flex;
+      overflow-x: auto;
+      padding: 8px 16px;
+      margin-top: 2rem;
+      justify-content: flex-start;
+      scroll-padding-left: 16px;
+      gap: 12px;
+    }
+    .scroll-container a {
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--link);
+      border: 1px solid var(--link);
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .scroll-container a:hover, .scroll-container a.active {
+      background-color: var(--link);
+      color: var(--main-bg);
+    }
   </style>
-   ${gerarGoogleAnalyticsTag()}
+  ${gerarGoogleAnalyticsTag()}
 </head>
 <body>
+<!-- NOVO: Botão de tema escuro/claro -->
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
   ${gerarHeaderNavegacao("..")}
   <main>
     <h1>Categoria: ${categoria}</h1>
@@ -240,8 +278,36 @@ function gerarPaginasPorCategoria(titulos) {
     ${paginacao}
   </main>
   ${gerarFooterNavegacao("..")}
+
+<!-- NOVO: Script de alternância de tema -->
+<script>
+(function() {
+  function getPreferredTheme() {
+    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+    return 'light';
+  }
+  function setTheme(theme) {
+    document.body.classList.toggle('dark-theme', theme === 'dark');
+    var btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    var theme = getPreferredTheme();
+    setTheme(theme);
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
+        localStorage.setItem('theme', theme);
+        setTheme(theme);
+      });
+    }
+  });
+})();
+</script>
 </body>
-</html>`;
+`;
 
       const filename = `artigos/${slugCat}${i === 0 ? '' : (i + 1)}.html`;
       fs.writeFileSync(filename, html);
@@ -283,7 +349,7 @@ function gerarIndiceCategorias(agrupados) {
     a { text-decoration: none; font-weight: bold; color: #0a66c2; }
     a:hover { text-decoration: underline; }
   </style>
-   ${gerarGoogleAnalyticsTag()}
+  ${gerarGoogleAnalyticsTag()}
 </head>
 <body>
 ${gerarHeaderNavegacao("..")}
@@ -812,31 +878,66 @@ const html = `<!DOCTYPE html>
 </script>
 
 <style>
-body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
-h1 { font-size: 1.8rem; margin-bottom: 1rem; }
-
- a {
-      color: #0a66c2;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-.article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --main-bg: #fff;
+  --link: #0a66c2;
+  --link-hover: #084e91;
+  --footer: #666;
+  --meta: #777;
+  --pre-bg: #272822;
+  --pre-color: #f8f8f2;
+  --copy-bg: #0a66c2;
+  --copy-color: #fff;
+  --copy-bg-hover: #084e91;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body.dark-theme {
+  --bg: #181b1f;
+  --text: #ddd;
+  --main-bg: #23262d;
+  --link: #67aaff;
+  --link-hover: #f1c40f;
+  --footer: #b3b3b3;
+  --meta: #b3b3b3;
+  --pre-bg: #22262b;
+  --pre-color: #e0e7ef;
+  --copy-bg: #67aaff;
+  --copy-color: #11131a;
+  --copy-bg-hover: #f1c40f;
+  --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+h1 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--link); }
+a { color: var(--link); text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: var(--link-hover);}
+.article-meta { color: var(--meta); font-size: 0.95rem; margin-bottom: 1.5rem; }
 .article-body { font-size: 1.05rem; line-height: 1.7; }
-pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
 code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
-.copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
-.copy-button:hover { opacity: 1; background-color: #084e91; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: var(--copy-bg-hover); color: var(--main-bg); }
 .back-link { text-align: center; margin-top: 2rem; }
-.back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
-.back-link a:hover { background-color: #0a66c2; color: white; }
-main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.back-link a { font-weight: bold; color: var(--link); font-size: 1.05rem; border: 1px solid var(--link); padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: var(--link); color: var(--main-bg); }
+main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
 </style>
+
 </head>
 <body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
 ${gerarHeaderNavegacao("../..")}
 <main>
 <h1>${titulo}</h1>
