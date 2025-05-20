@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 <meta property="og:url" content="https://www.andersondamasio.com.br/">
 <meta property="og:type" content="website">
-<meta property="og:updated_time" content="2025-05-20T21:45:43.215Z" />
+<meta property="og:updated_time" content="2025-05-20T22:10:17.031Z" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
@@ -59,24 +59,66 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <style>
-body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
-header { background-color: #0a66c2; color: white; padding: 2rem 1rem; text-align: center; }
-header a { color: white; font-weight: bold; text-decoration: underline; }
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --main-bg: #fff;
+  --header-bg: #0a66c2;
+  --header-color: #fff;
+  --link: #0a66c2;
+  --link-hover: #f1c40f;
+  --footer: #666;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body.dark-theme {
+  --bg: #181b1f;
+  --text: #ddd;
+  --main-bg: #23262d;
+  --header-bg: #181b1f;
+  --header-color: #f1c40f;
+  --link: #67aaff;
+  --link-hover: #f1c40f;
+  --footer: #b3b3b3;
+  --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+body {
+  font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+header {
+  background-color: var(--header-bg);
+  color: var(--header-color);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+header a {
+  color: var(--header-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
 header a:hover {
   text-decoration: underline;
-  color: #f1c40f;
+  color: var(--link-hover);
 }
-main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
+main {
+  max-width: 800px; margin: 2rem auto;
+  background-color: var(--main-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+}
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
 ul { padding-left: 1.5rem; line-height: 1.8; }
- a {
-      color: #0a66c2;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+a {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
 .scroll-container {
   display: flex;
   overflow-x: auto;
@@ -91,23 +133,27 @@ ul { padding-left: 1.5rem; line-height: 1.8; }
   white-space: nowrap;
   font-weight: bold;
   text-decoration: none;
-  color: #0a66c2;
-  border: 1px solid #0a66c2;
+  color: var(--link);
+  border: 1px solid var(--link);
   padding: 6px 12px;
   border-radius: 8px;
   transition: background-color 0.3s, color 0.3s;
 }
-.scroll-container a:hover {
-  background-color: #0a66c2;
-  color: white;
-}
-.scroll-container a.active {
-  background-color: #0a66c2;
-  color: white;
+.scroll-container a:hover, .scroll-container a.active {
+  background-color: var(--link);
+  color: var(--main-bg);
 }
 </style>
+
 </head>
 <body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+
 
 <header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
   <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
@@ -148,6 +194,7 @@ ul { padding-left: 1.5rem; line-height: 1.8; }
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
 <h2>📚 Artigos</h2>
 <ul>
+<li><a href="undefined">Desenvolvimento de Sistemas: O Crescimento dos Testes Clínicos na China</a> <span style="color:#777;">(29/04/2025 20:21)</span></li>
 <li><a href="undefined">Parceria entre Waymo e Toyota para trazer direção autônoma para veículos pessoais</a> <span style="color:#777;">(29/04/2025 20:16)</span></li>
 <li><a href="undefined">Guardando o servidor: a eficácia das bombas zip na proteção de dados sensíveis</a> <span style="color:#777;">(29/04/2025 20:10)</span></li>
 <li><a href="undefined">Atualização do Amazon RDS PostgreSQL: Novidades e benefícios para desenvolvedores</a> <span style="color:#777;">(29/04/2025 20:04)</span></li>
@@ -157,7 +204,6 @@ ul { padding-left: 1.5rem; line-height: 1.8; }
 <li><a href="undefined">Desafio da Mente Artificial: Potencializando a Inteligência através do Debate Interno</a> <span style="color:#777;">(29/04/2025 18:16)</span></li>
 <li><a href="undefined">Desafiando a Inteligência Artificial: Como fazer seu sistema argumentar consigo mesmo</a> <span style="color:#777;">(29/04/2025 17:19)</span></li>
 <li><a href="undefined">Bamba: Uma nova abordagem de arquitetura de software inspirada em transformers e SSMs</a> <span style="color:#777;">(29/04/2025 16:14)</span></li>
-<li><a href="undefined">Desenvolvendo Inteligências Artificiais mais assertivas através de autoconfrontação</a> <span style="color:#777;">(29/04/2025 15:24)</span></li>
 </ul>
 
 <div class="scroll-container">
@@ -212,6 +258,33 @@ ul { padding-left: 1.5rem; line-height: 1.8; }
 </div>
 
 <script src="/scripts/cookies-banner.js"></script>
+
+<script>
+(function() {
+  function getPreferredTheme() {
+    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+    return 'light';
+  }
+  function setTheme(theme) {
+    document.body.classList.toggle('dark-theme', theme === 'dark');
+    var btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    var theme = getPreferredTheme();
+    setTheme(theme);
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
+        localStorage.setItem('theme', theme);
+        setTheme(theme);
+      });
+    }
+  });
+})();
+</script>
 
 </body>
 </html>

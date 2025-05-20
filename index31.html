@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 <meta property="og:url" content="https://www.andersondamasio.com.br/">
 <meta property="og:type" content="website">
-<meta property="og:updated_time" content="2025-05-20T21:45:43.187Z" />
+<meta property="og:updated_time" content="2025-05-20T22:10:17.002Z" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
@@ -59,24 +59,66 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <style>
-body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
-header { background-color: #0a66c2; color: white; padding: 2rem 1rem; text-align: center; }
-header a { color: white; font-weight: bold; text-decoration: underline; }
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --main-bg: #fff;
+  --header-bg: #0a66c2;
+  --header-color: #fff;
+  --link: #0a66c2;
+  --link-hover: #f1c40f;
+  --footer: #666;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body.dark-theme {
+  --bg: #181b1f;
+  --text: #ddd;
+  --main-bg: #23262d;
+  --header-bg: #181b1f;
+  --header-color: #f1c40f;
+  --link: #67aaff;
+  --link-hover: #f1c40f;
+  --footer: #b3b3b3;
+  --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+body {
+  font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+header {
+  background-color: var(--header-bg);
+  color: var(--header-color);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+header a {
+  color: var(--header-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
 header a:hover {
   text-decoration: underline;
-  color: #f1c40f;
+  color: var(--link-hover);
 }
-main { max-width: 800px; margin: 2rem auto; background-color: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666; }
+main {
+  max-width: 800px; margin: 2rem auto;
+  background-color: var(--main-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+}
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
 ul { padding-left: 1.5rem; line-height: 1.8; }
- a {
-      color: #0a66c2;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+a {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
 .scroll-container {
   display: flex;
   overflow-x: auto;
@@ -91,23 +133,27 @@ ul { padding-left: 1.5rem; line-height: 1.8; }
   white-space: nowrap;
   font-weight: bold;
   text-decoration: none;
-  color: #0a66c2;
-  border: 1px solid #0a66c2;
+  color: var(--link);
+  border: 1px solid var(--link);
   padding: 6px 12px;
   border-radius: 8px;
   transition: background-color 0.3s, color 0.3s;
 }
-.scroll-container a:hover {
-  background-color: #0a66c2;
-  color: white;
-}
-.scroll-container a.active {
-  background-color: #0a66c2;
-  color: white;
+.scroll-container a:hover, .scroll-container a.active {
+  background-color: var(--link);
+  color: var(--main-bg);
 }
 </style>
+
 </head>
 <body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+
 
 <header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
   <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
@@ -148,6 +194,7 @@ ul { padding-left: 1.5rem; line-height: 1.8; }
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
 <h2>📚 Artigos</h2>
 <ul>
+<li><a href="artigos/infoq-dev-summit-boston-2025-desenvolvimento-de-ia-plataformas-e-experiencia-do-desenvolvedor.html">InfoQ Dev Summit Boston 2025: Desenvolvimento de IA, Plataformas e Experiência do Desenvolvedor</a> <span style="color:#777;">(09/05/2025 09:36)</span></li>
 <li><a href="artigos/construindo-sistemas-de-ia-ml-eficientes-em-energia-desafios-e-solucoes.html">Construindo Sistemas de IA/ML Eficientes em Energia: Desafios e Soluções</a> <span style="color:#777;">(09/05/2025 08:15)</span></li>
 <li><a href="artigos/desenvolvendo-sistemas-distribuidos-com-temporal-na-aws-a-revolucao-chegou.html">Desenvolvendo Sistemas Distribuídos com Temporal na AWS: A Revolução Chegou!</a> <span style="color:#777;">(09/05/2025 07:20)</span></li>
 <li><a href="artigos/desvendando-as-tendencias-de-cultura-e-metodos-para-2025.html">Desvendando as Tendências de Cultura e Métodos para 2025</a> <span style="color:#777;">(09/05/2025 06:19)</span></li>
@@ -157,7 +204,6 @@ ul { padding-left: 1.5rem; line-height: 1.8; }
 <li><a href="artigos/cultivando-a-robustez-construindo-para-durar-na-cultura-da-resiliencia.html">Cultivando a Robustez: Construindo para Durar na Cultura da Resiliência</a> <span style="color:#777;">(09/05/2025 02:18)</span></li>
 <li><a href="artigos/automatizando-a-infraestrutura-com-estilo-a-revolucao-da-pulumi-nos-componentes-de-codigo.html">Automatizando a Infraestrutura com Estilo: A Revolução da Pulumi nos Componentes de Código</a> <span style="color:#777;">(09/05/2025 01:22)</span></li>
 <li><a href="artigos/windows-community-toolkit-8-2-a-revolucao-da-compilacao-aot-no-universo-windows.html">Windows Community Toolkit 8.2: A revolução da compilação AOT no universo Windows</a> <span style="color:#777;">(09/05/2025 00:09)</span></li>
-<li><a href="artigos/visibilidade-na-seguranca-em-nuvem-desvendando-as-configuracoes-dos-nossos-ambientes-na-nuvem.html">Visibilidade na Segurança em Nuvem: Desvendando as Configurações dos Nossos Ambientes na Nuvem</a> <span style="color:#777;">(08/05/2025 23:49)</span></li>
 </ul>
 
 <div class="scroll-container">
@@ -212,6 +258,33 @@ ul { padding-left: 1.5rem; line-height: 1.8; }
 </div>
 
 <script src="/scripts/cookies-banner.js"></script>
+
+<script>
+(function() {
+  function getPreferredTheme() {
+    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+    return 'light';
+  }
+  function setTheme(theme) {
+    document.body.classList.toggle('dark-theme', theme === 'dark');
+    var btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    var theme = getPreferredTheme();
+    setTheme(theme);
+    var btn = document.getElementById('theme-toggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
+        localStorage.setItem('theme', theme);
+        setTheme(theme);
+      });
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
