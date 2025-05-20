@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.getElementById('theme-toggle');
+  if (btn) btn.style.display = "none";
+  // ...restante do código
+});
+
+
 (function() {
   function getPreferredTheme() {
     // Sempre começa com claro (a menos que o usuário já tenha salvo preferência no localStorage)
@@ -22,3 +29,5 @@
     }
   });
 })();
+
+
