@@ -279,33 +279,8 @@ function gerarPaginasPorCategoria(titulos) {
   </main>
   ${gerarFooterNavegacao("..")}
 
-<!-- NOVO: Script de alternância de tema -->
-<script>
-(function() {
-  function getPreferredTheme() {
-    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
-    return 'light';
-  }
-  function setTheme(theme) {
-    document.body.classList.toggle('dark-theme', theme === 'dark');
-    var btn = document.getElementById('theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
-  }
-  document.addEventListener('DOMContentLoaded', function() {
-    var theme = getPreferredTheme();
-    setTheme(theme);
-    var btn = document.getElementById('theme-toggle');
-    if (btn) {
-      btn.addEventListener('click', function() {
-        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
-        localStorage.setItem('theme', theme);
-        setTheme(theme);
-      });
-    }
-  });
-})();
-</script>
+<script src="http://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+
 </body>
 `;
 
@@ -403,33 +378,7 @@ ${gerarHeaderNavegacao("..")}
 </main>
 ${gerarFooterNavegacao("..")}
 
-<script>
-(function() {
-  function getPreferredTheme() {
-    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
-    return 'light';
-  }
-  function setTheme(theme) {
-    document.body.classList.toggle('dark-theme', theme === 'dark');
-    var btn = document.getElementById('theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
-  }
-  document.addEventListener('DOMContentLoaded', function() {
-    var theme = getPreferredTheme();
-    setTheme(theme);
-    var btn = document.getElementById('theme-toggle');
-    if (btn) {
-      btn.addEventListener('click', function() {
-        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
-        localStorage.setItem('theme', theme);
-        setTheme(theme);
-      });
-    }
-  });
-})();
-</script>
-
+<script src="http://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
 
 </body>
 </html>`;
@@ -1090,32 +1039,8 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 
-<script>
-(function() {
-  function getPreferredTheme() {
-    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
-    return 'light';
-  }
-  function setTheme(theme) {
-    document.body.classList.toggle('dark-theme', theme === 'dark');
-    var btn = document.getElementById('theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
-  }
-  document.addEventListener('DOMContentLoaded', function() {
-    var theme = getPreferredTheme();
-    setTheme(theme);
-    var btn = document.getElementById('theme-toggle');
-    if (btn) {
-      btn.addEventListener('click', function() {
-        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
-        localStorage.setItem('theme', theme);
-        setTheme(theme);
-      });
-    }
-  });
-})();
-</script>
+<script src="http://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+
 
 </body>
 </html>`;
@@ -1425,32 +1350,8 @@ ${paginacao}
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script>
-(function() {
-  function getPreferredTheme() {
-    if (localStorage.getItem('theme')) return localStorage.getItem('theme');
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
-    return 'light';
-  }
-  function setTheme(theme) {
-    document.body.classList.toggle('dark-theme', theme === 'dark');
-    var btn = document.getElementById('theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? '☀️ Claro' : '🌙 Escuro';
-  }
-  document.addEventListener('DOMContentLoaded', function() {
-    var theme = getPreferredTheme();
-    setTheme(theme);
-    var btn = document.getElementById('theme-toggle');
-    if (btn) {
-      btn.addEventListener('click', function() {
-        theme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
-        localStorage.setItem('theme', theme);
-        setTheme(theme);
-      });
-    }
-  });
-})();
-</script>
+<script src="/scripts/theme-toggle.js"></script>
+
 
 </body>
 </html>`;
