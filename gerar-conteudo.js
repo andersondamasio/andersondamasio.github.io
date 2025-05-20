@@ -279,7 +279,7 @@ function gerarPaginasPorCategoria(titulos) {
   </main>
   ${gerarFooterNavegacao("..")}
 
-<script src="http://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
 
 </body>
 `;
@@ -378,7 +378,7 @@ ${gerarHeaderNavegacao("..")}
 </main>
 ${gerarFooterNavegacao("..")}
 
-<script src="http://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
 
 </body>
 </html>`;
@@ -1039,7 +1039,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 
-<script src="http://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
 
 
 </body>
