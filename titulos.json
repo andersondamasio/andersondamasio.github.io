@@ -4844,5 +4844,14 @@
     "dataFonte": "2025-05-20T23:49:56.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.bbc.com/news/articles/ckgnndrgxv3o"
+  },
+  {
+    "titulo": "Orquestrando Pipelines: O Segredo Para Resultados de Scans sem Caos",
+    "noticiaOriginal": "One Pipeline to Rule Them All: Ensuring CodeQL Scanning Results and Dependency Scanning Results Go to the Intended Repository",
+    "url": "artigos/devops/orquestrando-pipelines-o-segredo-para-resultados-de-scans-sem-caos.html",
+    "data": "2025-05-21T07:18:59.347Z",
+    "dataFonte": "2025-05-20T23:47:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://devblogs.microsoft.com/devops/one-pipeline-to-rule-them-all-codeql-dependency-scanning/"
   }
 ]
