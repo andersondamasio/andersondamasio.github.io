@@ -4970,5 +4970,14 @@
     "dataFonte": "2025-05-21T20:08:00.000Z",
     "categoria": "Robótica",
     "urlFonte": "https://www.zdnet.com/article/best-roborock-robot-vacuum/"
+  },
+  {
+    "titulo": "Signal e a Privacidade em Tempos de Recall: Um Desafio para Desenvolvedores",
+    "noticiaOriginal": "“Microsoft has simply given us no other option,” Signal says as it blocks Windows Recall",
+    "url": "artigos/seguranca/signal-e-a-privacidade-em-tempos-de-recall-um-desafio-para-desenvolvedores.html",
+    "data": "2025-05-21T21:17:23.547Z",
+    "dataFonte": "2025-05-21T20:21:39.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/05/signal-resorts-to-weird-trick-to-block-windows-recall-in-desktop-app/"
   }
 ]
