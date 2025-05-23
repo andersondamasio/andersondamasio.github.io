@@ -5249,5 +5249,14 @@
     "dataFonte": "2025-05-22T21:28:56.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://techcrunch.com/2025/05/22/bluesky-will-begin-verifying-notable-users/"
+  },
+  {
+    "titulo": "A arte de testar: Mocking de gRPC em Microserviços Spring Boot com WireMock",
+    "noticiaOriginal": "Article: Mocking gRPC in Spring Boot Microservice Integration Tests with WireMock",
+    "url": "artigos/programacao/a-arte-de-testar-mocking-de-grpc-em-microservicos-spring-boot-com-wiremock.html",
+    "data": "2025-05-23T09:20:06.204Z",
+    "dataFonte": "2025-05-23T09:00:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/articles/mocking-grpc-microservices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

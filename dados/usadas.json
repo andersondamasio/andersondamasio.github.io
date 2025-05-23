@@ -2804,5 +2804,10 @@
     "intro": "Essa leitura me lembrou da importância de revisitar nossas práticas sobre Bluesky will begin verifying ‘notable’ users regularmente.",
     "introOriginal": "Essa leitura me lembrou da importância de revisitar nossas práticas sobre __TEMATICA__ regularmente.",
     "data": "2025-05-23"
+  },
+  "2025-05-23-a-arte-de-testar-mocking-de-grpc-em-microservicos-spring-boot-com-wiremock": {
+    "intro": "Talvez o maior desafio em Article: Mocking gRPC in Spring Boot Microservice Integration Tests with WireMock seja justamente o excesso de confiança.",
+    "introOriginal": "Talvez o maior desafio em __TEMATICA__ seja justamente o excesso de confiança.",
+    "data": "2025-05-23"
   }
 }
