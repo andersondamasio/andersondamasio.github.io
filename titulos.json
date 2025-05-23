@@ -5258,5 +5258,14 @@
     "dataFonte": "2025-05-23T09:00:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.infoq.com/articles/mocking-grpc-microservices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A máscara do Careto: como a arquitetura de software pode enfrentar ameaças invisíveis",
+    "noticiaOriginal": "Mysterious hacking group Careto was run by the Spanish government, sources say",
+    "url": "artigos/seguranca/a-mascara-do-careto-como-a-arquitetura-de-software-pode-enfrentar-ameacas-invisiveis.html",
+    "data": "2025-05-23T10:20:32.834Z",
+    "dataFonte": "2025-05-23T10:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://techcrunch.com/2025/05/23/mysterious-hacking-group-careto-was-run-by-the-spanish-government-sources-say/"
   }
 ]
