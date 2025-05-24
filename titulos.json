@@ -5447,5 +5447,14 @@
     "dataFonte": "2025-05-24T08:00:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.infoq.com/news/2025/05/google-litert-on-device-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Uber e a Revolução Kubernetes: Lições para Arquitetos de Software",
+    "noticiaOriginal": "Uber Completes Massive Kubernetes Migration for Microservices and Large-Scale Compute Workloads",
+    "url": "artigos/cloud/uber-e-a-revolucao-kubernetes-licoes-para-arquitetos-de-software.html",
+    "data": "2025-05-24T09:17:48.960Z",
+    "dataFonte": "2025-05-24T09:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/05/uber-kubernetes-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
