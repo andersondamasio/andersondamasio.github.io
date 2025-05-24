@@ -5501,5 +5501,14 @@
     "dataFonte": "2025-05-23T19:09:58.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/05/23/kesha-is-now-a-startup-founder/"
+  },
+  {
+    "titulo": "Quando a Inteligência Artificial se Torna uma Ameaça: Lições de Segurança para Desenvolvedores",
+    "noticiaOriginal": "Researchers cause GitLab AI developer assistant to turn safe code malicious",
+    "url": "artigos/seguranca/quando-a-inteligencia-artificial-se-torna-uma-ameaca-licoes-de-seguranca-para-desenvolvedores.html",
+    "data": "2025-05-24T16:21:20.808Z",
+    "dataFonte": "2025-05-23T19:06:59.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/05/researchers-cause-gitlab-ai-developer-assistant-to-turn-safe-code-malicious/"
   }
 ]
