@@ -5726,5 +5726,14 @@
     "dataFonte": "2025-05-23T09:00:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.infoq.com/podcasts/technical-leadership-building-powerful-solutions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Desvendando as Armadilhas do Repositório NPM: Uma Reflexão sobre Segurança na Arquitetura de Software",
+    "noticiaOriginal": "Destructive malware available in NPM repo went unnoticed for 2 years",
+    "url": "artigos/seguranca/desvendando-as-armadilhas-do-repositorio-npm-uma-reflexao-sobre-seguranca-na-arquitetura-de-software.html",
+    "data": "2025-05-25T19:13:47.677Z",
+    "dataFonte": "2025-05-22T19:15:27.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/information-technology/2025/05/destructive-malware-available-in-npm-repo-went-unnoticed-for-2-years/"
   }
 ]
