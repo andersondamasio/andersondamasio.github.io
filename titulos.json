@@ -5924,5 +5924,14 @@
     "dataFonte": "2025-05-26T17:22:07.000Z",
     "categoria": "Programação",
     "urlFonte": "https://techcrunch.com/2025/05/26/four-vw-execs-found-guilty-in-trial-that-transformed-europes-auto-market/"
+  },
+  {
+    "titulo": "Kubernetes e a Resiliência em Edge: Como Recuperar de Ataques Ransomware em Minutos",
+    "noticiaOriginal": "Podcast: Kubernetes Edge Resiliency: Recovering from Ransomware Attacks in Minutes",
+    "url": "artigos/seguranca/kubernetes-e-a-resiliencia-em-edge-como-recuperar-de-ataques-ransomware-em-minutos.html",
+    "data": "2025-05-26T19:15:07.269Z",
+    "dataFonte": "2025-05-26T11:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/podcasts/kubernetes-resiliency-recovering-ransomware-attacks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
