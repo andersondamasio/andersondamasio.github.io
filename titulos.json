@@ -6104,5 +6104,14 @@
     "dataFonte": "2025-05-27T16:00:42.000Z",
     "categoria": "Programação",
     "urlFonte": "https://devblogs.microsoft.com/visualstudio/visualstudio-extensibility-editor-classification-and-updates-to-user-prompt/"
+  },
+  {
+    "titulo": "A vulnerabilidade das transferências de dados em um mundo interconectado",
+    "noticiaOriginal": "Report: TuSimple sent sensitive self-driving data to China after US national security agreement",
+    "url": "artigos/seguranca/a-vulnerabilidade-das-transferencias-de-dados-em-um-mundo-interconectado.html",
+    "data": "2025-05-27T17:17:55.412Z",
+    "dataFonte": "2025-05-27T17:03:55.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://techcrunch.com/2025/05/27/report-tusimple-sent-sensitive-self-driving-data-to-china-after-us-national-security-agreement/"
   }
 ]
