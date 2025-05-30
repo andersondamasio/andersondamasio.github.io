@@ -6545,5 +6545,14 @@
     "dataFonte": "2025-05-30T02:15:46.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.bbc.com/news/articles/cpd46266vgdo"
+  },
+  {
+    "titulo": "Desmistificando o AOT: A Nova Fronteira da Performance em Aplicações Spring",
+    "noticiaOriginal": "Spring Team on AOT Cache Handling, Null Safety with JSpecify, and Support Durations",
+    "url": "artigos/programacao/desmistificando-o-aot-a-nova-fronteira-da-performance-em-aplicacoes-spring.html",
+    "data": "2025-05-30T04:23:49.224Z",
+    "dataFonte": "2025-05-30T04:00:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/05/spring-aot-jspecify-support/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
