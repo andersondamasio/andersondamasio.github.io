@@ -6842,5 +6842,14 @@
     "dataFonte": "2025-05-31T14:15:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://techcrunch.com/2025/05/31/day-3-of-the-techcrunch-sessions-ai-trivia-countdown-your-next-shot-at-winning-big/"
+  },
+  {
+    "titulo": "A nova era da avaliação de modelos de linguagem: Como o LMEval pode transformar o desenvolvimento de software",
+    "noticiaOriginal": "Google Releases LMEval, an Open-Source Cross-Provider LLM Evaluation Tool",
+    "url": "artigos/inteligencia-artificial/a-nova-era-da-avaliacao-de-modelos-de-linguagem-como-o-lmeval-pode-transformar-o-desenvolvimento-de-software.html",
+    "data": "2025-05-31T15:18:37.646Z",
+    "dataFonte": "2025-05-31T15:00:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://www.infoq.com/news/2025/05/google-lmeval-benchmark/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
