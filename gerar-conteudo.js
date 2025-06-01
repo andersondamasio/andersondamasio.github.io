@@ -722,6 +722,7 @@ Exemplo de categoria: |Segurança|
 - Utilize *erros ou gírias leves*, frases de efeito ou construções que soem autênticas e pessoais, incluindo observações subjetivas e experiências reais quando cabível.
 - Intercale períodos curtos e longos, utilize pausas com reticências, perguntas retóricas e comentários próprios.
 - Evite frases perfeitas demais; permita pequenas quebras de estilo, repetições naturais e uso espontâneo de conectivos.
+- Evite iniciar frases como "Nos últimos anos".
 - Ao trazer exemplos, busque analogias práticas, histórias rápidas, curiosidades ou opiniões pessoais, mesmo que breves.
 - Sempre insira pelo menos uma frase que traga uma visão ou comentário seu, como se estivesse realmente opinando sobre o tema.
 - Não inicie com “Título:” ou similares. Apenas escreva o título direto na primeira linha.
