@@ -7031,5 +7031,14 @@
     "dataFonte": "2025-05-30T09:38:13.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/this-interactive-ai-video-generator-feels-like-walking-into-a-video-game-how-to-try-it/"
+  },
+  {
+    "titulo": "Arquiteturas Resilientes: Dominando o Caos dos Eventos em Escala",
+    "noticiaOriginal": "Article: Designing Resilient Event-Driven Systems at Scale",
+    "url": "artigos/programacao/arquiteturas-resilientes-dominando-o-caos-dos-eventos-em-escala.html",
+    "data": "2025-06-01T08:24:28.539Z",
+    "dataFonte": "2025-05-30T09:00:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/articles/scalable-resilient-event-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
