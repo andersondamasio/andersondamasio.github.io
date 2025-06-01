@@ -698,7 +698,7 @@ Sua tarefa é criar um conteúdo editorial **autoral, espontâneo e com aparênc
 4. No final do artigo, adicione:
    - Um resumo direto, com até 150 caracteres, começando por: **Resumo:**
    - A categoria mais adequada no formato: |Categoria|  
-     (Use exatamente uma destas: Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia. Nunca invente categoria nova.)
+     (Use exatamente uma destas: Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia. Nunca invente categoria nova.
 
 ${textoCategoriasExistentes}
 
@@ -719,9 +719,7 @@ Exemplo de categoria: |Segurança|
 - Evite repetir fórmulas ou expressões do exemplo acima; cada artigo deve ter sua própria “voz”.
 
 O conteúdo deve parecer escrito por um humano experiente, com estilo pessoal, opiniões sinceras, fluidez, criatividade e algum tempero emocional ou crítico — e claro, cumprir todos os requisitos acima.
-`;}
-`
-
+`;
 
 
 
