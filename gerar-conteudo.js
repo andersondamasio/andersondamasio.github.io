@@ -632,6 +632,10 @@ function processarArtigoComCodigo(content) {
   return { titulo, corpo: corpoLimpo };
 }
 
+function removerTagsHtml(texto) {
+  return texto.replace(/<[^>]*>/g, '');
+}
+
 async function gerar() {
   try {
     const now = new Date();
@@ -748,6 +752,8 @@ Exemplo de categoria: |Segurança|
 
 let { titulo, corpo: corpoArtigo } = processarArtigoComCodigo(content);
 
+titulo = removerTagsHtml(titulo);
+    
  /*   
 const linhas = content.trim().split('\n').map(l => l.trim()).filter(Boolean);
 
