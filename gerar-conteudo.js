@@ -821,21 +821,21 @@ const html = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>${titulo} – Artigo Técnico por Anderson Damasio</title>
-<meta name="description" content="${resumo}">
+<title>${escapeHTML(titulo)} – Artigo Técnico por Anderson Damasio</title>
+<meta name="description" content="${escapeHTML(resumo)}">
 <link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="article">
-<meta property="og:title" content="${titulo}">
-<meta property="og:description" content="${resumo}">
+<meta property="og:title" content="${escapeHTML(titulo)}">
+<meta property="og:description" content="${escapeHTML(resumo)}">
 <meta property="og:url" content="https://www.andersondamasio.com.br/${categoriaSlug}/${slug}.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${titulo}">
-<meta name="twitter:description" content="${resumo}">
+<meta name="twitter:title" content="${escapeHTML(titulo)}">
+<meta name="twitter:description" content="${escapeHTML(resumo)}">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 
 
@@ -845,8 +845,8 @@ const html = `<!DOCTYPE html>
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "${titulo}",
-  "description": "${resumo}",
+  "headline": "${escapeJson(titulo)}",
+  "description": "${escapeJson(resumo)}",
   "datePublished": "${dataISO}",
   "author": {
     "@type": "Person",
