@@ -674,16 +674,7 @@ Você é Anderson Damasio, um Arquiteto de Software com mais de 19 anos de exper
 Você acaba de ler uma notícia técnica internacional sobre: "${noticia.titulo}". 
 Resumo da notícia original: "${resumoFonte}"
 
-
 Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e autoral**, publicado em seu blog pessoal no Brasil.
-
-*Regras importantes a seguir no conteúdo*
-- **Evite qualquer estrutura repetitiva, previsível ou padrão de respostas típicas de IA**.
-- Utilize *erros ou gírias leves*, frases de efeito ou construções que soem autênticas e pessoais, incluindo observações subjetivas e experiências reais quando cabível.
-- Intercale períodos curtos e longos, utilize pausas com reticências, perguntas retóricas e comentários próprios.
-- Evite frases perfeitas demais; permita pequenas quebras de estilo, repetições naturais e uso espontâneo de conectivos.
-- Ao trazer exemplos, busque analogias práticas, histórias rápidas, curiosidades ou opiniões pessoais, mesmo que breves.
-- Sempre insira pelo menos uma frase que traga uma visão ou comentário seu, como se estivesse realmente opinando sobre o tema.
 
 **O que você deve produzir:**
 
@@ -721,10 +712,19 @@ ${textoCategoriasExistentes}
 Exemplo de categoria: |Segurança|
 
 **Importante:**
+
+*Regras importantes a seguir no conteúdo*
+- **Evite qualquer estrutura repetitiva, previsível ou padrão de respostas típicas de IA**.
+- Utilize *erros ou gírias leves*, frases de efeito ou construções que soem autênticas e pessoais, incluindo observações subjetivas e experiências reais quando cabível.
+- Intercale períodos curtos e longos, utilize pausas com reticências, perguntas retóricas e comentários próprios.
+- Evite frases perfeitas demais; permita pequenas quebras de estilo, repetições naturais e uso espontâneo de conectivos.
+- Ao trazer exemplos, busque analogias práticas, histórias rápidas, curiosidades ou opiniões pessoais, mesmo que breves.
+- Sempre insira pelo menos uma frase que traga uma visão ou comentário seu, como se estivesse realmente opinando sobre o tema.
 - Não inicie com “Título:” ou similares. Apenas escreva o título direto na primeira linha.
 - Pule uma linha e inicie o artigo.
 - O conteúdo deve parecer escrito por um humano experiente, com estilo natural, fluente e levemente opinativo.
 - O conteúdo deve ser retornado já com **HTML semântico completo**, sem usar **asteriscos** ou sintaxe de Markdown.`;
+
 
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
