@@ -116,11 +116,18 @@ function inserirErrosOrtograficosSutis(texto) {
       erro = erroOpcoes[Math.floor(Math.random() * erroOpcoes.length)];
     }
     usadasEsteArtigo[base] = erro;
-    blocos = blocos.map((bl, i) =>
-      textoIdxs.includes(i)
-        ? bl.replace(new RegExp("\\b" + word + "\\b", "g"), erro)
-        : bl
-    );
+   let erroSubstituido = false;
+   blocos = blocos.map((bl, i) => {
+  if (!textoIdxs.includes(i)) return bl;
+  if (erroSubstituido) return bl;
+  // Substitui só a primeira ocorrência no bloco
+  if (bl.includes(word)) {
+    erroSubstituido = true;
+    return bl.replace(new RegExp("\\b" + word + "\\b"), erro);
+  }
+  return bl;
+});
+
   });
 
   salvarErrosUsados(usadasEsteArtigo);
