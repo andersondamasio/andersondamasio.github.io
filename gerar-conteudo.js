@@ -709,8 +709,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 
 Nunca escreva \'|Categoria|\'
 Use exatamente uma destas categorias (sem criar novas):
-Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia
-
+Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia,
 ${textoCategoriasExistentes}
 
 Exemplo de categoria: |Segurança|
@@ -727,10 +726,10 @@ Exemplo de categoria: |Segurança|
 - Sempre insira pelo menos uma frase que traga uma visão ou comentário seu, como se estivesse realmente opinando sobre o tema.
 - Não inicie com “Título:” ou similares. Apenas escreva o título direto na primeira linha.
 - Pule uma linha e inicie o artigo.
-- O conteúdo deve parecer escrito por um humano experiente, com estilo natural, fluente e levemente opinativo.
+- O conteúdo deve parecer escrito por um humano experiente, com estilo natural, fluente e levemente opinativo, porém pode eventuamente cometer erros sutis de ortografia.
 - O conteúdo deve ser retornado já com **HTML semântico completo**, sem usar **asteriscos** ou sintaxe de Markdown.
 
-- NÃO escreva sem erros, repito: é obrigatório que o texto possua erros ortográficos leves e naturais.`;
+- **IMPORTANTE:** é obrigatório que o texto possua erros ortográficos leves e naturais.`;
   
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
