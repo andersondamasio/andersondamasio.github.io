@@ -13,6 +13,7 @@ marked.setOptions({
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { buscarImagemCapa } = require('./scripts/buscarImagemCapa_unsplash');
 const { extrairResumoDaNoticia } = require('./scripts/extrairResumoDaNoticia');
+const { errorsMaps } = require('./dados/selecionar-errorsMaps');
 const errosUsadosPath = './dados/erros_usados.json';
 
 const parser = new Parser({
@@ -46,26 +47,8 @@ function salvarErrosUsados(novosErros) {
 }
 
 function inserirErrosOrtograficosSutis(texto) {
-  const errosMap = {
-    "também": ["tambem", "tmbém"],
-    "exemplo": ["exenplo", "exemplo."],
-    "difícil": ["dificil", "difcil"],
-    "necessário": ["nescessário", "necessario"],
-    "acesso": ["aceso", "acesso."],
-    "processo": ["proceso", "processso"],
-    "tecnologia": ["tecnoligia", "tecnolgia"],
-    "melhor": ["melhorr", "melor"],
-    "muito": ["muiito", "muinto"],
-    "simples": ["simplis", "cimples"],
-    "funciona": ["funsiona", "funciona."],
-    "possível": ["possivel", "posível"],
-    "diferença": ["diferensa", "diferençaa"],
-    "desenvolvimento": ["desenvolvimente", "desenvolvmento"],
-    "arquitetura": ["arquitertura", "arquiteturra"],
-    "segurança": ["seguransa", "segurança."],
-    "geralmente": ["geralmete", "geralment"],
-    "incrível": ["incrivel", "incrívl"],
-  };
+  const errosMap = errorsMaps;
+  
   let blocos = texto.split(/(<[^>]+>)/g);
   let textoIdxs = blocos
     .map((t, i) => (t.startsWith('<') ? null : i))
