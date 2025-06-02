@@ -1,4 +1,4 @@
-const errosMap = {
+const errorsMaps = {
   "também": ["tambem", "tmbém", "tambèm"],
   "exemplo": ["exenplo", "exemplo.", "exemplo,"],
   "difícil": ["dificil", "difcil", "dificíl"],
