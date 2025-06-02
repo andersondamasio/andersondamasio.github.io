@@ -13,7 +13,7 @@ marked.setOptions({
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { buscarImagemCapa } = require('./scripts/buscarImagemCapa_unsplash');
 const { extrairResumoDaNoticia } = require('./scripts/extrairResumoDaNoticia');
-const errosUsadosPath = './scripts/erros_usados.json';
+const errosUsadosPath = './dados/erros_usados.json';
 
 const parser = new Parser({
   requestOptions: {
