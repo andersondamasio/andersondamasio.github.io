@@ -692,6 +692,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Uma explicação técnica clara e aprofundada sobre o tema.
    - Dicas avançadas que mostrem domínio prático, indo além do básico.
    - Uma conclusão com reflexões ou recomendações suas.
+   - Escreva com alguns erros de ortografia sutis.
 
 3. Ao longo do artigo, use marcações HTML semânticas para melhorar o SEO:
 - Use <h2> apenas para títulos principais de seções (ex: Introdução, Conclusão, Dicas, etc).
