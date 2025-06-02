@@ -728,9 +728,10 @@ Exemplo de categoria: |Segurança|
 - Não inicie com “Título:” ou similares. Apenas escreva o título direto na primeira linha.
 - Pule uma linha e inicie o artigo.
 - O conteúdo deve parecer escrito por um humano experiente, com estilo natural, fluente e levemente opinativo.
-- O conteúdo deve ser retornado já com **HTML semântico completo**, sem usar **asteriscos** ou sintaxe de Markdown.`;
+- O conteúdo deve ser retornado já com **HTML semântico completo**, sem usar **asteriscos** ou sintaxe de Markdown.
 
-
+- NÃO escreva sem erros, repito: é obrigatório que o texto possua erros ortográficos leves e naturais.`;
+  
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
       {
