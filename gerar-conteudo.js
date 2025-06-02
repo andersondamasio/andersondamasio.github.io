@@ -682,6 +682,11 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 
 **O que você deve produzir:**
 
+IMPORTANTE:
+- Só escreva o conteúdo se conseguir inserir erros ortográficos leves e naturais.
+LEMBRE-SE: Se não conseguir inserir erros ortográficos, NÃO produza o texto.
+
+
 1. Um **título original e criativo**, em português, inspirado na notícia, mas:
    - Sem tradução literal, use palavras diferentes sem distorcer a original.
    - Com estilo natural para o público brasileiro de tecnologia.
