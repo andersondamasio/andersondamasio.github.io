@@ -123,14 +123,18 @@ palavrasJaUsadas = [...new Set(palavrasJaUsadas)];
     const base = word.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     const erroOpcoes = errosMap[base];
     let erro;
-    if (errosUsados[base]) {
-      const restantes = erroOpcoes.filter(e => e !== errosUsados[base]);
-      erro = restantes.length > 0
-        ? restantes[Math.floor(Math.random() * restantes.length)]
-        : erroOpcoes[Math.floor(Math.random() * erroOpcoes.length)];
-    } else {
-      erro = erroOpcoes[Math.floor(Math.random() * erroOpcoes.length)];
-    }
+// Pega o último artigo do histórico (pode ser undefined se vazio)
+let ultimoErros = errosHistorico.length ? errosHistorico[errosHistorico.length - 1] : {};
+
+if (ultimoErros[base]) {
+  const restantes = erroOpcoes.filter(e => e !== ultimoErros[base]);
+  erro = restantes.length > 0
+    ? restantes[Math.floor(Math.random() * restantes.length)]
+    : erroOpcoes[Math.floor(Math.random() * erroOpcoes.length)];
+} else {
+  erro = erroOpcoes[Math.floor(Math.random() * erroOpcoes.length)];
+}
+
     usadasEsteArtigo[base] = erro;
    let erroSubstituido = false;
    blocos = blocos.map((bl, i) => {
