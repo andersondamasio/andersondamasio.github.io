@@ -24,13 +24,25 @@ const parser = new Parser({
   }
 });
 
+const ERROS_HISTORICO_MAX = 20;
+
 function lerErrosUsados() {
-  if (!fs.existsSync(errosUsadosPath)) return {};
-  try { return JSON.parse(fs.readFileSync(errosUsadosPath, "utf-8")); }
-  catch { return {}; }
+  if (!fs.existsSync(errosUsadosPath)) return [];
+  try {
+    const arr = JSON.parse(fs.readFileSync(errosUsadosPath, "utf-8"));
+    return Array.isArray(arr) ? arr : [];
+  } catch {
+    return [];
+  }
 }
-function salvarErrosUsados(data) {
-  fs.writeFileSync(errosUsadosPath, JSON.stringify(data, null, 2));
+function salvarErrosUsados(novosErros) {
+  // Lê o histórico, adiciona o novo, mantém no máximo 20
+  let historico = lerErrosUsados();
+  historico.push(novosErros);
+  if (historico.length > ERROS_HISTORICO_MAX) {
+    historico = historico.slice(-ERROS_HISTORICO_MAX);
+  }
+  fs.writeFileSync(errosUsadosPath, JSON.stringify(historico, null, 2));
 }
 
 function inserirErrosOrtograficosSutis(texto) {
@@ -75,8 +87,12 @@ function inserirErrosOrtograficosSutis(texto) {
   }
   
   // Evita repetir palavras do último artigo
-  let errosUsados = lerErrosUsados();
-  let palavrasJaUsadas = Object.keys(errosUsados);
+let errosHistorico = lerErrosUsados();
+let palavrasJaUsadas = [];
+errosHistorico.forEach(obj => {
+  palavrasJaUsadas.push(...Object.keys(obj));
+});
+palavrasJaUsadas = [...new Set(palavrasJaUsadas)];
 
   let candidatosFiltrados = candidatos.filter(p =>
     !palavrasJaUsadas.includes(p.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase())
