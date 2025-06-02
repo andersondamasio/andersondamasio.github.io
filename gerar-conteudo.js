@@ -13,6 +13,7 @@ marked.setOptions({
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { buscarImagemCapa } = require('./scripts/buscarImagemCapa_unsplash');
 const { extrairResumoDaNoticia } = require('./scripts/extrairResumoDaNoticia');
+const errosUsadosPath = './scripts/erros_usados.json';
 
 const parser = new Parser({
   requestOptions: {
@@ -22,6 +23,110 @@ const parser = new Parser({
     }
   }
 });
+
+function lerErrosUsados() {
+  if (!fs.existsSync(errosUsadosPath)) return {};
+  try { return JSON.parse(fs.readFileSync(errosUsadosPath, "utf-8")); }
+  catch { return {}; }
+}
+function salvarErrosUsados(data) {
+  fs.writeFileSync(errosUsadosPath, JSON.stringify(data, null, 2));
+}
+
+function inserirErrosOrtograficosSutis(texto) {
+  const errosMap = {
+    "também": ["tambem", "tmbém"],
+    "exemplo": ["exenplo", "exemplo."],
+    "difícil": ["dificil", "difcil"],
+    "necessário": ["nescessário", "necessario"],
+    "acesso": ["aceso", "acesso."],
+    "processo": ["proceso", "processso"],
+    "tecnologia": ["tecnoligia", "tecnolgia"],
+    "melhor": ["melhorr", "melor"],
+    "muito": ["muiito", "muinto"],
+    "simples": ["simplis", "cimples"],
+    "funciona": ["funsiona", "funciona."],
+    "possível": ["possivel", "posível"],
+    "diferença": ["diferensa", "diferençaa"],
+    "desenvolvimento": ["desenvolvimente", "desenvolvmento"],
+    "arquitetura": ["arquitertura", "arquiteturra"],
+    "segurança": ["seguransa", "segurança."],
+    "geralmente": ["geralmete", "geralment"],
+    "incrível": ["incrivel", "incrívl"],
+  };
+  let blocos = texto.split(/(<[^>]+>)/g);
+  let textoIdxs = blocos
+    .map((t, i) => (t.startsWith('<') ? null : i))
+    .filter(i => i !== null);
+
+  let todasPalavras = [];
+  textoIdxs.forEach(idx => {
+    const palavras = blocos[idx]
+      .split(/\b/)
+      .filter(p => /^[a-zA-Zãõáéíóúàâêôçü-]{4,}$/.test(p.normalize("NFD").replace(/[\u0300-\u036f]/g, "")));
+    todasPalavras.push(...palavras);
+  });
+  if (todasPalavras.length < 6) return texto;
+
+  const meio = todasPalavras.slice(Math.floor(todasPalavras.length * 0.15), Math.floor(todasPalavras.length * 0.85));
+  let candidatos = meio.filter(p => errosMap[p.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()]);
+  if (candidatos.length < 3) {
+    candidatos = todasPalavras.filter(p => errosMap[p.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()]);
+  }
+  
+  // Evita repetir palavras do último artigo
+  let errosUsados = lerErrosUsados();
+  let palavrasJaUsadas = Object.keys(errosUsados);
+
+  let candidatosFiltrados = candidatos.filter(p =>
+    !palavrasJaUsadas.includes(p.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase())
+  );
+
+  let escolhidas = [];
+  while (escolhidas.length < 3 && candidatosFiltrados.length) {
+    let idx = Math.floor(Math.random() * candidatosFiltrados.length);
+    if (!escolhidas.includes(candidatosFiltrados[idx])) {
+      escolhidas.push(candidatosFiltrados[idx]);
+    }
+    candidatosFiltrados.splice(idx, 1);
+  }
+
+  if (escolhidas.length < 3) {
+    let faltam = 3 - escolhidas.length;
+    while (faltam-- && candidatos.length) {
+      let idx = Math.floor(Math.random() * candidatos.length);
+      if (!escolhidas.includes(candidatos[idx])) {
+        escolhidas.push(candidatos[idx]);
+      }
+      candidatos.splice(idx, 1);
+    }
+  }
+
+  let usadasEsteArtigo = {};
+  escolhidas.forEach(word => {
+    const base = word.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const erroOpcoes = errosMap[base];
+    let erro;
+    if (errosUsados[base]) {
+      const restantes = erroOpcoes.filter(e => e !== errosUsados[base]);
+      erro = restantes.length > 0
+        ? restantes[Math.floor(Math.random() * restantes.length)]
+        : erroOpcoes[Math.floor(Math.random() * erroOpcoes.length)];
+    } else {
+      erro = erroOpcoes[Math.floor(Math.random() * erroOpcoes.length)];
+    }
+    usadasEsteArtigo[base] = erro;
+    blocos = blocos.map((bl, i) =>
+      textoIdxs.includes(i)
+        ? bl.replace(new RegExp("\\b" + word + "\\b", "g"), erro)
+        : bl
+    );
+  });
+
+  salvarErrosUsados(usadasEsteArtigo);
+  return blocos.join('');
+}
+
 
 function slugify(str) {
   if (!str || typeof str !== "string") return "artigo";
@@ -792,7 +897,7 @@ let corpoArtigo = linhas.filter(l => {
 
 const { categoriaFinal: categoria, conteudoLimpo } = extrairCategoriaDoConteudo(corpoArtigo, titulo);
 corpoArtigo = conteudoLimpo;
-    
+corpoArtigo = inserirErrosOrtograficosSutis(corpoArtigo);   
 corpoArtigo = corpoArtigo
   .split('\n')
   .filter(l => {
