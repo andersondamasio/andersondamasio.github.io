@@ -3,7 +3,7 @@ import fs from 'fs';
 import { JSDOM } from 'jsdom';
 import { Readability } from '@mozilla/readability';
 
-const url = 'https://cgn.inf.br/noticia/1852029/acidente-entre-carreta-e-caminhao-guincho-e-registrado-em-cascavel';
+const url = 'https://www.nytimes.com/live/2025/06/03/world/south-korea-presidential-election';
 
 (async () => {
   const browser = await puppeteer.launch({
