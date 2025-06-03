@@ -4,7 +4,7 @@ import { JSDOM } from 'jsdom';
 import { Readability } from '@mozilla/readability';
 
 // Altere para a URL da notícia individual que deseja extrair!
-const url = 'https://cgn.inf.br/cascavel/noticia/657212/familia-e-assaltada-no-interior-de-cascavel';
+const url = 'https://cgn.inf.br/noticia/1852029/acidente-entre-carreta-e-caminhao-guincho-e-registrado-em-cascavel';
 
 (async () => {
   const browser = await puppeteer.launch({
