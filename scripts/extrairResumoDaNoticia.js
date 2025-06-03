@@ -61,4 +61,38 @@ if (!texto) {
   }
 }
 
-module.exports = { extrairResumoDaNoticia };
+/**
+ * Extrai o resumo usando Puppeteer + Readability (renderização JavaScript).
+ * 
+ * @param {string} url URL da notícia original
+ * @returns {Promise<{resumoFonte: string, textoPrincipal: string}>}
+ */
+function extrairResumoDaNoticiaReadability(url) {
+  return new Promise((resolve, reject) => {
+    const child = spawn('node', ['scripts/extrai-noticia.js', url]);
+    let data = '';
+    let error = '';
+    child.stdout.on('data', chunk => { data += chunk; });
+    child.stderr.on('data', chunk => { error += chunk; });
+    child.on('close', code => {
+      if (code !== 0) {
+        reject(new Error(error));
+      } else {
+        try {
+          const resultado = JSON.parse(data);
+          resolve({
+            resumoFonte: resultado.resumoFonte || '',
+            textoPrincipal: resultado.textoPrincipal || ''
+          });
+        } catch (e) {
+          reject(new Error('Falha ao parsear JSON do extrai-noticia.js: ' + e.message));
+        }
+      }
+    });
+  });
+}
+
+module.exports = {
+  extrairResumoDaNoticiaCheerio,
+  extrairResumoDaNoticiaReadability
+};
