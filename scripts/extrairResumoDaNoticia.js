@@ -93,6 +93,6 @@ function extrairResumoDaNoticiaReadability(url) {
 }
 
 module.exports = {
-  extrairResumoDaNoticiaCheerio,
+  extrairResumoDaNoticia,
   extrairResumoDaNoticiaReadability
 };
