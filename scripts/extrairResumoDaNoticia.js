@@ -69,7 +69,7 @@ if (!texto) {
  * @param {string} url URL da notícia original
  * @returns {Promise<{resumoFonte: string, textoPrincipal: string}>}
  */
-function extrairResumoDaNoticiaReadability(url, limite = 2000) {
+function extrairResumoDaNoticiaReadability(url, limite = 50000) {
   return new Promise((resolve, reject) => {
     const child = spawn('node', ['scripts/extrai-noticia.js', url]);
     let data = '';
