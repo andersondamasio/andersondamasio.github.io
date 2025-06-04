@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliadde",
-    "abordagem": "abordage",
-    "recurso": "reccurso"
-  },
-  {
     "propriedade": "proprieade",
     "desenvolvimento": "desenvolmento"
   },
@@ -87,5 +82,10 @@
     "muito": "muiito",
     "acesso": "aceso",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "componente": "componente.",
+    "estrutura": "estrututra",
+    "processo": "prosseso"
   }
 ]
