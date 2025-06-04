@@ -1,6 +1,6 @@
-import puppeteer from 'puppeteer';
-import { JSDOM } from 'jsdom';
-import { Readability } from '@mozilla/readability';
+const puppeteer = require('puppeteer');
+const { JSDOM } = require('jsdom');
+const { Readability } = require('@mozilla/readability');
 
 // Verifica se recebeu URL como argumento
 if (process.argv.length < 3) {
