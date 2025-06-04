@@ -783,9 +783,13 @@ console.error("ORIGEM",noticia);
 
 const { resumoFonte, textoPrincipal }  = await extrairResumoDaNoticiaReadability(noticia.url);
     
-//console.error("resumoFonte",resumoFonte);
-//console.error("resumoFonte",textoPrincipal);
-    
+
+
+if(textoPrincipal == ''){ 
+  console.error("resumoFonte",resumoFonte);
+  console.error("resumoFonte",textoPrincipal);
+  return;
+   }
  
 const textoCategoriasExistentes = categoriasExistentes.length
   ? `As categorias já usadas até agora no site são: ${categoriasExistentes.join(", ")}. Dê preferência a reutilizar uma delas.`
