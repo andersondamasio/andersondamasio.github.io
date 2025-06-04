@@ -12,7 +12,7 @@ marked.setOptions({
 
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { buscarImagemCapa } = require('./scripts/buscarImagemCapa_unsplash');
-const { extrairResumoDaNoticia } = require('./scripts/extrairResumoDaNoticia');
+const { extrairResumoDaNoticia, extrairResumoDaNoticiaReadability } = require('./scripts/extrairResumoDaNoticia');
 const { errorsMaps } = require('./dados/selecionar-errorsMaps');
 const errosUsadosPath = './dados/erros_usados.json';
 
@@ -779,11 +779,10 @@ const categoriasExistentes = [...new Set(
     .filter(c => c && c !== "Outros")
 )];
     
-const resumoFonte = await extrairResumoDaNoticia(noticia.url,noticia.noticiaOriginal);
+//const resumoFonte = await extrairResumoDaNoticia(noticia.url,noticia.noticiaOriginal);
+const { resumoFonte, textoPrincipal }  = await extrairResumoDaNoticia(noticia.noticiaOriginal);
 
- console.error("DEBUG: noticia.titulo:", noticia.titulo);
- console.error("DEBUG: resumoFonte:", resumoFonte);
-     
+  
 const textoCategoriasExistentes = categoriasExistentes.length
   ? `As categorias já usadas até agora no site são: ${categoriasExistentes.join(", ")}. Dê preferência a reutilizar uma delas.`
   : "";
@@ -791,7 +790,7 @@ const textoCategoriasExistentes = categoriasExistentes.length
 const prompt = `
 Você é Anderson Damasio, um Arquiteto de Software com mais de 19 anos de experiência prática em sistemas escaláveis.
 Você acaba de ler uma notícia técnica internacional sobre: "${noticia.titulo}". 
-Resumo da notícia original: "${resumoFonte}"
+Resumo da notícia original: "${textoPrincipal}"
 
 Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e autoral**, publicado em seu blog pessoal no Brasil.
 
@@ -850,7 +849,12 @@ Exemplo de categoria: |Segurança|
 - O conteúdo deve ser retornado já com **HTML semântico completo**, sem usar **asteriscos** ou sintaxe de Markdown.
 
 - **IMPORTANTE:** é obrigatório que o texto possua erros ortográficos leves e naturais.`;
-  
+
+ console.error("DEBUG: PROMPT:", noticia.titulo);
+ console.error("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+ console.error("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+   
+    
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
       {
