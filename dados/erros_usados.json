@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "gerenciamento": "gerenciamnto",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "funciona": "funsiona",
     "complexidade": "complexsidade",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,10 @@
     "prioridade": "prioriade",
     "conectado": "conectado.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "problema": "problema.",
+    "constante": "constante.",
+    "tecnologia": "tecnolgia"
   }
 ]
