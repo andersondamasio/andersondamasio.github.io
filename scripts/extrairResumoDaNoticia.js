@@ -1,5 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
+const { spawn } = require('child_process');
+
 
 /**
  * Extrai um trecho limpo da notícia da URL original para usar no prompt do ChatGPT.
