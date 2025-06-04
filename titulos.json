@@ -7697,5 +7697,14 @@
     "dataFonte": "2025-06-03T17:46:49.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/06/03/reddit-now-lets-you-hide-content-like-posts-and-comments-from-your-user-profile/"
+  },
+  {
+    "titulo": "A revolução do Rust: OpenAI e a nova era do Codex CLI",
+    "noticiaOriginal": "Another Rust Rewrite: OpenAI’s Codex CLI Goes Native, Drops Node and TypeScript for Rust",
+    "url": "artigos/programacao/a-revolucao-do-rust-openai-e-a-nova-era-do-codex-cli.html",
+    "data": "2025-06-04T03:17:25.307Z",
+    "dataFonte": "2025-06-04T02:34:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/06/codex-cli-rust-native-rewrite/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
