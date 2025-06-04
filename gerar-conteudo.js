@@ -779,13 +779,10 @@ const categoriasExistentes = [...new Set(
     .filter(c => c && c !== "Outros")
 )];
 
-console.error("TESTE",noticia);
+console.error("ORIGEM",noticia);
 
-return;
-//const resumoFonte = await extrairResumoDaNoticia(noticia.url,noticia.noticiaOriginal);
-const { resumoFonte, textoPrincipal }  = await extrairResumoDaNoticia(noticia.urlFonte);
+const { resumoFonte, textoPrincipal }  = await extrairResumoDaNoticia(noticia.url);
 
-  
 const textoCategoriasExistentes = categoriasExistentes.length
   ? `As categorias já usadas até agora no site são: ${categoriasExistentes.join(", ")}. Dê preferência a reutilizar uma delas.`
   : "";
