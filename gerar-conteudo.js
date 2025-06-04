@@ -778,9 +778,12 @@ const categoriasExistentes = [...new Set(
     .map(t => t.categoria)
     .filter(c => c && c !== "Outros")
 )];
-    
+
+console.error("TESTE",noticia);
+
+return;
 //const resumoFonte = await extrairResumoDaNoticia(noticia.url,noticia.noticiaOriginal);
-const { resumoFonte, textoPrincipal }  = await extrairResumoDaNoticia(noticia.noticiaOriginal);
+const { resumoFonte, textoPrincipal }  = await extrairResumoDaNoticia(noticia.urlFonte);
 
   
 const textoCategoriasExistentes = categoriasExistentes.length
@@ -850,7 +853,7 @@ Exemplo de categoria: |Segurança|
 
 - **IMPORTANTE:** é obrigatório que o texto possua erros ortográficos leves e naturais.`;
 
- console.error("DEBUG: PROMPT:", noticia.titulo);
+ console.error("DEBUG: PROMPT:", prompt);
  console.error("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
  console.error("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
    
