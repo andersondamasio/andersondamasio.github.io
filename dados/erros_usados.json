@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "proprieade",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "sistema": "cistema"
   },
@@ -87,5 +83,9 @@
     "componente": "componente.",
     "estrutura": "estrututra",
     "processo": "prosseso"
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "sistema": "sistma"
   }
 ]
