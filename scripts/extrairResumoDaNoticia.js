@@ -67,7 +67,7 @@ if (!texto) {
  * @param {string} url URL da notícia original
  * @returns {Promise<{resumoFonte: string, textoPrincipal: string}>}
  */
-function extrairResumoDaNoticiaReadability(url) {
+function extrairResumoDaNoticiaReadability(url, limite = 2000) {
   return new Promise((resolve, reject) => {
     const child = spawn('node', ['scripts/extrai-noticia.js', url]);
     let data = '';
@@ -81,8 +81,8 @@ function extrairResumoDaNoticiaReadability(url) {
         try {
           const resultado = JSON.parse(data);
           resolve({
-            resumoFonte: resultado.resumoFonte || '',
-            textoPrincipal: resultado.textoPrincipal || ''
+           resumoFonte: (resultado.resumoFonte || '').substring(0, limite),
+            textoPrincipal: (resultado.textoPrincipal || '').substring(0, limite)
           });
         } catch (e) {
           reject(new Error('Falha ao parsear JSON do extrai-noticia.js: ' + e.message));
