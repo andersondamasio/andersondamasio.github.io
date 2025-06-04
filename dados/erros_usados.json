@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "desafio": "desafío"
-  },
-  {
     "dispositivo": "dispotivo",
     "estrutura": "estrututra",
     "abordagem": "abordage"
@@ -91,5 +87,10 @@
     "arquitetura": "arquiteturra",
     "suporte": "suportte",
     "sistema": "sistéma"
+  },
+  {
+    "mensagem": "menssagen",
+    "computador": "computadorr",
+    "exemplo": "exemplo,"
   }
 ]
