@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "conectado": "conectado.",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "problema": "problema.",
     "constante": "constante.",
     "tecnologia": "tecnolgia"
@@ -87,5 +82,10 @@
     "sistema": "cistema",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
+  },
+  {
+    "monitoramento": "monitorameto",
+    "tecnologia": "tecnnologia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
