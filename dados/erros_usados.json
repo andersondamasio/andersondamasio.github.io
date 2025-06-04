@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "acesso": "acesço",
-    "arquitetura": "arquitertura"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "abordagem": "abordage",
     "recurso": "reccurso"
@@ -87,5 +82,10 @@
     "melhor": "melor",
     "tecnologia": "tecnoligia",
     "acesso": "acesso."
+  },
+  {
+    "muito": "muiito",
+    "acesso": "aceso",
+    "funcionalidade": "funcionalidade."
   }
 ]
