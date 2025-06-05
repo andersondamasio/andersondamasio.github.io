@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "abordagem": "abordajem",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "tecnologia": "tecnoligia"
   },
   {
@@ -92,5 +87,10 @@
     "virtual": "virtuaal",
     "rotina": "rotna",
     "operacional": "operaciona"
+  },
+  {
+    "suporte": "suporte.",
+    "operacional": "operacionl",
+    "arquitetura": "arquiteturra"
   }
 ]
