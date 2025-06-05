@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "tecnologia": "tecnoligia",
-    "acesso": "acesso."
-  },
-  {
     "muito": "muiito",
     "acesso": "aceso",
     "funcionalidade": "funcionalidade."
@@ -93,5 +88,10 @@
   {
     "melhor": "melor",
     "acesso": "aceso"
+  },
+  {
+    "monitoramento": "monitramento",
+    "tecnologia": "tecnnologia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
