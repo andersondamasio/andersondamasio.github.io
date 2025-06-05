@@ -7958,5 +7958,14 @@
     "dataFonte": "2025-06-05T09:00:22.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/the-hidden-data-crisis-threatening-your-ai-transformation-plans/"
+  },
+  {
+    "titulo": "A nova era dos testes: Vitest Browser Mode e o fim do JSDOM?",
+    "noticiaOriginal": "Vitest Introduces Browser Mode as Alternative to JSDOM",
+    "url": "artigos/desenvolvimento-de-software/a-nova-era-dos-testes-vitest-browser-mode-e-o-fim-do-jsdom.html",
+    "data": "2025-06-05T10:23:16.648Z",
+    "dataFonte": "2025-06-05T09:30:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://www.infoq.com/news/2025/06/vitest-browser-mode-jsdom/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
