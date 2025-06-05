@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "tecnologia": "tecnnologia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "melhor": "melor",
     "tecnologia": "tecnoligia",
     "acesso": "acesso."
@@ -94,5 +89,9 @@
     "conectado": "conectdo",
     "dispositivo": "dispotivo",
     "arquitetura": "arquitretura"
+  },
+  {
+    "melhor": "melor",
+    "acesso": "aceso"
   }
 ]

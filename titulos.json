@@ -8021,5 +8021,14 @@
     "dataFonte": "2025-06-05T16:00:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/06/05/snapchat-launches-an-apple-watch-app-globally/"
+  },
+  {
+    "titulo": "Gerenciando Tokens de Acesso Pessoal: Um Passo à Frente na Segurança do Azure DevOps",
+    "noticiaOriginal": "Restricting PAT Creation in Azure DevOps Is Now in Preview",
+    "url": "artigos/seguranca/gerenciando-tokens-de-acesso-pessoal-um-passo-a-frente-na-seguranca-do-azure-devops.html",
+    "data": "2025-06-05T17:14:18.946Z",
+    "dataFonte": "2025-06-05T17:08:48.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://devblogs.microsoft.com/devops/restricting-pat-creation-in-azure-devops-is-now-in-preview/"
   }
 ]
