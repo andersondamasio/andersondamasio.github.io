@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "conhecimento": "conhescimento",
     "desenvolvimento": "desenvolvmento"
   },
@@ -90,5 +86,10 @@
     "desenvolvimento": "desenvolvimente",
     "muito": "muinto",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "executado": "execudado",
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
