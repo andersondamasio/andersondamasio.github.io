@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "suporte": "suportte",
-    "sistema": "sistéma"
-  },
-  {
     "mensagem": "menssagen",
     "computador": "computadorr",
     "exemplo": "exemplo,"
@@ -87,5 +82,10 @@
   {
     "arquitetura": "arquitertura",
     "processo": "proceso"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "sistema": "sistma",
+    "desenvolvimento": "desenvolmento"
   }
 ]
