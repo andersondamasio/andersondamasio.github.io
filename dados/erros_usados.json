@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "controle": "contrle",
-    "utilizado": "utilizado."
-  },
-  {
     "arquitetura": "arquitretura",
     "exemplo": "exenplo"
   },
@@ -94,5 +89,9 @@
     "simples": "cimples",
     "processo": "proceso",
     "controle": "contrle"
+  },
+  {
+    "estrutura": "estrura",
+    "desenvolvimento": "desenvolmento"
   }
 ]
