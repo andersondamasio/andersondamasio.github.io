@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra"
-  },
-  {
     "exemplo": "exenplo",
     "abordagem": "abordage"
   },
@@ -87,5 +84,10 @@
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura"
+  },
+  {
+    "complexidade": "complezidade",
+    "problema": "problema.",
+    "necessidade": "necessidade."
   }
 ]
