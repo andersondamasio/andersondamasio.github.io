@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "sistema": "sistma"
-  },
-  {
     "constante": "constate",
     "controle": "contrle",
     "utilizado": "utilizado."
@@ -93,5 +89,10 @@
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma",
     "exemplo": "exemplo,"
+  },
+  {
+    "simples": "cimples",
+    "processo": "proceso",
+    "controle": "contrle"
   }
 ]
