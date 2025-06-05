@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componente.",
-    "estrutura": "estrututra",
-    "processo": "prosseso"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "sistema": "sistma"
   },
@@ -93,5 +88,10 @@
     "sistema": "cistema",
     "exemplo": "exemplo.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "sistema": "sistéma",
+    "exemplo": "exemplo,"
   }
 ]
