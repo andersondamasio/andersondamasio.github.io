@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "propriedade": "propriadade",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "arquitetura": "arquitertura",
     "exemplo": "exemplo,"
   },
@@ -88,5 +83,9 @@
     "constante": "constate",
     "controle": "contrle",
     "utilizado": "utilizado."
+  },
+  {
+    "arquitetura": "arquitretura",
+    "exemplo": "exenplo"
   }
 ]
