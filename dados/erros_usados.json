@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectdo",
-    "dispositivo": "dispotivo",
-    "arquitetura": "arquitretura"
-  },
-  {
     "melhor": "melor",
     "acesso": "aceso"
   },
@@ -93,5 +88,10 @@
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia",
     "monitoramento": "monitorameto"
+  },
+  {
+    "funciona": "funciona,",
+    "tecnologia": "tecnnologia",
+    "funcionalidade": "funcionaliade"
   }
 ]
