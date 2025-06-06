@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "recurso": "recuro",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura"
@@ -94,5 +89,10 @@
     "mensagem": "menssagem",
     "monitoramento": "monitorameto",
     "arquitetura": "arquitretura"
+  },
+  {
+    "desafio": "desaío",
+    "resultado": "resutlado",
+    "constante": "constante."
   }
 ]
