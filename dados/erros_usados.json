@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "complexidade": "complezidade",
     "problema": "problema.",
     "necessidade": "necessidade."
@@ -94,5 +89,9 @@
     "desafio": "desaío",
     "resultado": "resutlado",
     "constante": "constante."
+  },
+  {
+    "muito": "muiito",
+    "acesso": "aceso"
   }
 ]
