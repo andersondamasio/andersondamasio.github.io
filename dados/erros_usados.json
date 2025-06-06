@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "rotina": "rotna",
-    "operacional": "operaciona"
-  },
-  {
     "suporte": "suporte.",
     "operacional": "operacionl",
     "arquitetura": "arquiteturra"
@@ -93,5 +88,10 @@
     "necessidade": "necessidade.",
     "arquitetura": "arquitertura",
     "monitoramento": "monitorameto"
+  },
+  {
+    "componente": "componentte",
+    "abordagem": "abordagem.",
+    "prioridade": "prioridade."
   }
 ]
