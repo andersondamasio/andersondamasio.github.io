@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "abordagem": "abordage"
-  },
-  {
     "conectado": "conectdo",
     "dispositivo": "dispotivo",
     "arquitetura": "arquitretura"
@@ -92,5 +88,10 @@
   {
     "desenvolvimento": "desenvolvmento",
     "processo": "proceso"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia",
+    "monitoramento": "monitorameto"
   }
 ]
