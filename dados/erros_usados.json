@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "acesso": "aceso",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "arquitetura": "arquitertura",
     "processo": "proceso"
   },
@@ -94,5 +89,9 @@
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvimente",
     "exemplo": "exemplo,"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "muito": "muinto"
   }
 ]
