@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "exemplo": "exenplo"
-  },
-  {
     "armazenamento": "armazanamento",
     "acesso": "aceso",
     "funcionalidade": "funcionaliadde"
@@ -93,5 +89,10 @@
   {
     "estrutura": "estrura",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "desenvolvimento": "desenvolvimente",
+    "exemplo": "exemplo,"
   }
 ]
