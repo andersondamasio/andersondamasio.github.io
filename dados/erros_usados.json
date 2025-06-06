@@ -1,10 +1,5 @@
 [
   {
-    "executado": "execudado",
-    "tecnologia": "tecnoligia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "virtual": "virtuaal",
     "rotina": "rotna",
     "operacional": "operaciona"
@@ -93,5 +88,10 @@
     "conhecimento": "conhecimeto",
     "funcionalidade": "funcionaliade",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "necessidade": "necessidade.",
+    "arquitetura": "arquitertura",
+    "monitoramento": "monitorameto"
   }
 ]
