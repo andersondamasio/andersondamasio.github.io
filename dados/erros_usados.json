@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "operacional": "operacionl",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "abordagem": "abordajem",
     "prioridade": "prioriade.",
     "arquitetura": "arquitertura"
@@ -93,5 +88,10 @@
     "componente": "componentte",
     "abordagem": "abordagem.",
     "prioridade": "prioridade."
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "abordagem": "abordage",
+    "suporte": "suprte"
   }
 ]
