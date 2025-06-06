@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "processo": "proceso"
-  },
-  {
     "arquitetura": "arquitretura",
     "sistema": "sistma",
     "desenvolvimento": "desenvolmento"
@@ -93,5 +89,10 @@
   {
     "tecnologia": "tecnnologia",
     "muito": "muinto"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
