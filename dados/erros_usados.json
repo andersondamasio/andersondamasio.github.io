@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma",
     "exemplo": "exemplo,"
@@ -93,5 +88,10 @@
   {
     "conhecimento": "conhecimeto",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "processo": "prosseso",
+    "prioridade": "prioridade.",
+    "arquitetura": "arquitertura"
   }
 ]
