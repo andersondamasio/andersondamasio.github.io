@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "processo": "proceso",
-    "controle": "contrle"
-  },
-  {
     "estrutura": "estrura",
     "desenvolvimento": "desenvolmento"
   },
@@ -92,5 +87,9 @@
   {
     "acesso": "aceso",
     "arquitetura": "arquitretura"
+  },
+  {
+    "categoria": "categria",
+    "constante": "constanate"
   }
 ]
