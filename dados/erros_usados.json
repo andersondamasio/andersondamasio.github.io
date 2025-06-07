@@ -1,9 +1,5 @@
 [
   {
-    "categoria": "categria",
-    "constante": "constanate"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra"
   },
@@ -91,5 +87,10 @@
   {
     "sistema": "sistma",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "sistema": "sistéma",
+    "simples": "simlpes",
+    "abordagem": "abordagem."
   }
 ]
