@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "arquitetura": "arquitretura"
-  },
-  {
     "categoria": "categria",
     "constante": "constanate"
   },
@@ -91,5 +87,9 @@
     "conhecimento": "conhescimento",
     "propriedade": "propriedade.",
     "monitoramento": "monitorameto"
+  },
+  {
+    "sistema": "sistma",
+    "tecnologia": "tecnnologia"
   }
 ]
