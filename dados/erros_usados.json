@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "sistema": "cistema",
-    "necessidade": "necessidade."
-  },
-  {
     "complexidade": "complexsidade",
     "exemplo": "exemplo,",
     "arquitetura": "arquiteturra"
@@ -93,5 +88,10 @@
     "funcionalidade": "funcionaliade",
     "arquitetura": "arquiteturra",
     "exemplo": "exemplo."
+  },
+  {
+    "arquitetura": "arquitretura",
+    "abordagem": "abordage",
+    "desenvolvimento": "desenvolmento"
   }
 ]
