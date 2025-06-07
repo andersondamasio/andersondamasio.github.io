@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "controle": "controlle",
     "sistema": "cistema",
     "necessidade": "necessidade."
@@ -92,5 +88,10 @@
     "sistema": "sistéma",
     "simples": "simlpes",
     "abordagem": "abordagem."
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "arquitetura": "arquiteturra",
+    "exemplo": "exemplo."
   }
 ]
