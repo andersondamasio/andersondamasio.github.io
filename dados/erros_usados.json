@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "processo": "prosseso",
     "prioridade": "prioridade.",
     "arquitetura": "arquitertura"
@@ -90,5 +86,10 @@
   {
     "resultado": "resultadoo",
     "exemplo": "exenplo"
+  },
+  {
+    "sistema": "cistema",
+    "desenvolvimento": "desenvolvmento",
+    "necessidade": "necissidade"
   }
 ]
