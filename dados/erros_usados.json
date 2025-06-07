@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafío",
-    "desenvolvimento": "desenvolvimente",
-    "problema": "poblema"
-  },
-  {
     "conhecimento": "conhecimeto",
     "funcionalidade": "funcionaliade",
     "desenvolvimento": "desenvolvmento"
@@ -92,5 +87,10 @@
     "virtual": "virtal",
     "constante": "constanate",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "exemplo": "exemplo,",
+    "sistema": "sistma"
   }
 ]

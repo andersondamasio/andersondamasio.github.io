@@ -8300,5 +8300,14 @@
     "dataFonte": "2025-06-06T21:52:20.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/06/06/2025-will-be-a-pivotal-year-for-metas-augmented-and-virtual-reality-says-cto/"
+  },
+  {
+    "titulo": "Desbravando o Futuro com Amazon Aurora DSQL: A Revolução do Banco de Dados Serverless",
+    "noticiaOriginal": "Amazon Aurora DSQL Goes GA: Distributed, PostgreSQL-Compatible Serverless Database",
+    "url": "artigos/banco-de-dados/desbravando-o-futuro-com-amazon-aurora-dsql-a-revolucao-do-banco-de-dados-serverless.html",
+    "data": "2025-06-07T07:17:03.267Z",
+    "dataFonte": "2025-06-07T06:42:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2025/06/amazon-aurora-dsql-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
