@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "processo": "proceso"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia",
     "monitoramento": "monitorameto"
@@ -91,5 +87,10 @@
     "estrutura": "estrura",
     "abordagem": "abordajem",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "constante": "constanate",
+    "simples": "cimples"
   }
 ]
