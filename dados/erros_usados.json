@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia",
-    "monitoramento": "monitorameto"
-  },
-  {
     "funciona": "funciona,",
     "tecnologia": "tecnnologia",
     "funcionalidade": "funcionaliade"
@@ -92,5 +87,9 @@
     "tecnologia": "tecnoligia",
     "constante": "constanate",
     "simples": "cimples"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "necessidade": "nescessidade"
   }
 ]
