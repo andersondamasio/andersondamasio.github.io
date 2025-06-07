@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "exemplo": "exemplo,",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "simples": "simplis",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
@@ -93,5 +88,9 @@
     "arquitetura": "arquitretura",
     "abordagem": "abordage",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "processo": "processso",
+    "arquitetura": "arquitertura"
   }
 ]
