@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "funcionalidade": "funcionaliade",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "necessidade": "necessidade.",
     "arquitetura": "arquitertura",
     "monitoramento": "monitorameto"
@@ -92,5 +87,9 @@
     "arquitetura": "arquitertura",
     "exemplo": "exemplo,",
     "sistema": "sistma"
+  },
+  {
+    "problema": "problema.",
+    "tecnologia": "tecnolgia"
   }
 ]
