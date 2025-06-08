@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "virtual": "virtal",
     "constante": "constanate",
     "tecnologia": "tecnnologia"
@@ -92,5 +88,10 @@
     "simples": "simplis",
     "muito": "muiito",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "prioridade": "prioridade.",
+    "tecnologia": "tecnoligia"
   }
 ]
