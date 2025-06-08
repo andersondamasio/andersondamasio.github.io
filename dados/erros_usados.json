@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "monitoramento": "monitoramento.",
-    "necessidade": "necissidade"
-  },
-  {
     "resultado": "resultadoo",
     "exemplo": "exenplo"
   },
@@ -93,5 +88,10 @@
     "constante": "constanate",
     "arquitetura": "arquiteturra",
     "utilizado": "utilizdo"
+  },
+  {
+    "acesso": "acesso.",
+    "recurso": "reccurso",
+    "arquitetura": "arquitertura"
   }
 ]
