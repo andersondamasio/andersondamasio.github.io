@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "abordagem": "abordage",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "processo": "processso",
     "arquitetura": "arquitertura"
   },
@@ -93,5 +88,9 @@
   {
     "resultado": "resutlado",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "abordagem": "abordajem",
+    "sistema": "cistema"
   }
 ]
