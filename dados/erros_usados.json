@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "arquitetura": "arquiteturra",
-    "utilizado": "utilizdo"
-  },
-  {
     "acesso": "acesso.",
     "recurso": "reccurso",
     "arquitetura": "arquitertura"
@@ -92,5 +87,9 @@
     "constante": "constate",
     "melhor": "melor",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "complexidade": "complexsidade",
+    "arquitetura": "arquiteturra"
   }
 ]
