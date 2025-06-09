@@ -1,9 +1,5 @@
 [
   {
-    "melhor": "melhorr",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "necessidade": "nescessidade",
     "exemplo": "exenplo"
   },
@@ -89,5 +85,9 @@
   {
     "mensagem": "mensagen",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "virtual": "virtuaal",
+    "arquitetura": "arquitretura"
   }
 ]
