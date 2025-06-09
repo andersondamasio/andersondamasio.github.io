@@ -8669,5 +8669,14 @@
     "dataFonte": "2025-06-09T02:30:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.infoq.com/news/2025/06/java-news-roundup-jun02-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A Revolução do Vite: Rolldown e o Poder do Rust nas Compilações",
+    "noticiaOriginal": "Rust-Based Drop-in Replacement for Vite Released, Early Adopters Report 10X Faster Builds",
+    "url": "artigos/programacao/a-revolucao-do-vite-rolldown-e-o-poder-do-rust-nas-compilacoes.html",
+    "data": "2025-06-09T04:30:53.688Z",
+    "dataFonte": "2025-06-09T00:18:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/06/rolldown-vite-10x-faster-builds/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
