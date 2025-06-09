@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "tecnologia": "tecnnologia",
     "exemplo": "exenplo",
     "abordagem": "abordajem"
@@ -90,5 +85,10 @@
     "funcionalidade": "funcionaliadde",
     "gerenciamento": "gerenciamneto",
     "arquitetura": "arquitretura"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "funcionalidade": "funcionaliade",
+    "controle": "controlle"
   }
 ]
