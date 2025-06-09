@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "funcionalidade": "funcionaliade",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "constante": "constante.",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
@@ -91,5 +86,10 @@
     "operacional": "operacionl",
     "armazenamento": "armazanamento",
     "parceria": "parcería"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "abordagem": "abordage",
+    "tecnologia": "tecnnologia"
   }
 ]
