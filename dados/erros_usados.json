@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "operacional": "operacionl",
     "armazenamento": "armazanamento",
     "parceria": "parcería"
@@ -88,5 +84,9 @@
     "exemplo": "exenplo",
     "abordagem": "abordajem",
     "necessidade": "necessidade."
+  },
+  {
+    "suporte": "suprte",
+    "funcionalidade": "funcionalidade."
   }
 ]

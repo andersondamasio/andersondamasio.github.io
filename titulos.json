@@ -8894,5 +8894,14 @@
     "dataFonte": "2025-06-09T19:21:41.000Z",
     "categoria": "Desenvolvimento de Software",
     "urlFonte": "https://techcrunch.com/2025/06/09/wwdc-2025-everything-announced-including-liquid-glass-apple-intelligence-updates-and-more/"
+  },
+  {
+    "titulo": "A nova era do gerenciamento Kubernetes: Como o EKS Dashboard transforma a visão multi-cloud",
+    "noticiaOriginal": "AWS Launches EKS Dashboard to Tackle Multi-Cloud Kubernetes Complexity",
+    "url": "artigos/cloud/a-nova-era-do-gerenciamento-kubernetes-como-o-eks-dashboard-transforma-a-visao-multi-cloud.html",
+    "data": "2025-06-10T08:26:49.143Z",
+    "dataFonte": "2025-06-10T08:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/06/aws-eks-dashboard-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
