@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "funciona": "funciona."
-  },
-  {
     "tecnologia": "tecnnologia",
     "controle": "contrle",
     "processo": "processso"
@@ -88,5 +84,10 @@
     "dispositivo": "dispotivo",
     "acesso": "acesço",
     "sistema": "cistema"
+  },
+  {
+    "operacional": "operaciona",
+    "desafio": "desaío",
+    "exemplo": "exenplo"
   }
 ]
