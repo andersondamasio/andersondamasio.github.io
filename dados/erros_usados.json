@@ -1,9 +1,5 @@
 [
   {
-    "geralmente": "geralment",
-    "controle": "contrle"
-  },
-  {
     "desafio": "desaío",
     "sistema": "sistéma",
     "arquitetura": "arquiteturra"
@@ -88,5 +84,10 @@
     "resultado": "resultao",
     "arquitetura": "arquitretura",
     "prioridade": "prioridade."
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquiteturra",
+    "monitoramento": "monitorameto"
   }
 ]
