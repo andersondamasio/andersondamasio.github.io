@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "controle": "contrle",
-    "processo": "processso"
-  },
-  {
     "monitoramento": "monitramento",
     "prioridade": "prioriade."
   },
@@ -89,5 +84,9 @@
     "operacional": "operaciona",
     "desafio": "desaío",
     "exemplo": "exenplo"
+  },
+  {
+    "problema": "poblema",
+    "arquitetura": "arquitertura"
   }
 ]
