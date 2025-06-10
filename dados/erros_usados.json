@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "mensagen",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "virtual": "virtuaal",
     "arquitetura": "arquitretura"
   },
@@ -90,5 +86,10 @@
   {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exemplo.",
+    "problema": "problema."
   }
 ]
