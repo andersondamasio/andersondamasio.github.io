@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "desenvolvimento": "desenvolvimente",
-    "muito": "muiito"
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
   },
@@ -89,5 +84,9 @@
   {
     "problema": "problema.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "simples": "simplis"
   }
 ]
