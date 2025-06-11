@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "arquitetura": "arquitretura",
-    "prioridade": "prioridade."
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra",
     "monitoramento": "monitorameto"
@@ -92,5 +87,10 @@
     "controle": "contrle",
     "mensagem": "menssagen",
     "necessidade": "necissidade"
+  },
+  {
+    "internet": "internert",
+    "tecnologia": "tecnolgia",
+    "sistema": "sistéma"
   }
 ]
