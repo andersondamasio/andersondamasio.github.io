@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "abordagem": "abordajem",
-    "necessidade": "necessidade."
-  },
-  {
     "suporte": "suprte",
     "funcionalidade": "funcionalidade."
   },
@@ -92,5 +87,9 @@
     "funciona": "funciona.",
     "geralmente": "geralmemte",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "exemplo": "exenplo"
   }
 ]
