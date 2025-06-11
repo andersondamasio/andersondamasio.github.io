@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "recurso": "reccurso",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "processo": "proceso",
     "desenvolvimento": "desenvolvimente",
     "muito": "muiito"
@@ -90,5 +85,9 @@
   {
     "suporte": "suprte",
     "dispositivo": "disposotivo"
+  },
+  {
+    "problema": "problema.",
+    "tecnologia": "tecnnologia"
   }
 ]
