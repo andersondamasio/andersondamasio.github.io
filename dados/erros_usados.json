@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "prioridade": "prioridade.",
-    "arquitetura": "arquitretura"
-  },
-  {
     "constante": "constanate",
     "tecnologia": "tecnnologia",
     "melhor": "melor"
@@ -91,5 +86,10 @@
     "tecnologia": "tecnolgia",
     "muito": "muiito",
     "processo": "prosseso"
+  },
+  {
+    "virtual": "virtal",
+    "simples": "cimples",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
