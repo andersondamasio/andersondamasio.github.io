@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "desafio": "desaío",
-    "exemplo": "exenplo"
-  },
-  {
     "problema": "poblema",
     "arquitetura": "arquitertura"
   },
@@ -92,5 +87,9 @@
     "simples": "cimples",
     "melhor": "melor",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "sistema": "cistema"
   }
 ]
