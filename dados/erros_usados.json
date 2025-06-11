@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "tecnologia": "tecnoligia",
-    "estrutura": "estrtura"
-  },
-  {
     "resultado": "resultao",
     "arquitetura": "arquitretura",
     "prioridade": "prioridade."
@@ -92,5 +87,10 @@
     "utilizado": "utilizdo",
     "arquitetura": "arquiteturra",
     "melhor": "melhorr"
+  },
+  {
+    "controle": "contrle",
+    "mensagem": "menssagen",
+    "necessidade": "necissidade"
   }
 ]
