@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitretura"
   },
@@ -88,5 +84,10 @@
     "conhecimento": "conhescimento",
     "recurso": "recuro",
     "muito": "muiito"
+  },
+  {
+    "exemplo": "exemplo,",
+    "melhor": "melhorr",
+    "funcionalidade": "funcionaliade"
   }
 ]
