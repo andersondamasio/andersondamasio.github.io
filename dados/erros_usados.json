@@ -1,10 +1,5 @@
 [
   {
-    "utilizado": "utilizdo",
-    "arquitetura": "arquiteturra",
-    "melhor": "melhorr"
-  },
-  {
     "controle": "contrle",
     "mensagem": "menssagen",
     "necessidade": "necissidade"
@@ -90,5 +85,10 @@
     "mensagem": "menssagen",
     "sistema": "cistema",
     "processo": "processso"
+  },
+  {
+    "constante": "constanate",
+    "arquitetura": "arquiteturra",
+    "muito": "muinto"
   }
 ]
