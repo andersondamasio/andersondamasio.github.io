@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "acesso": "acesço",
-    "sistema": "cistema"
-  },
-  {
     "operacional": "operaciona",
     "desafio": "desaío",
     "exemplo": "exenplo"
@@ -92,5 +87,10 @@
     "abordagem": "abordagem.",
     "desenvolvimento": "desenvolvimente",
     "processo": "proceso"
+  },
+  {
+    "simples": "cimples",
+    "melhor": "melor",
+    "desenvolvimento": "desenvolmento"
   }
 ]
