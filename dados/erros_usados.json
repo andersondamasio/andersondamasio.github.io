@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo.",
     "problema": "problema."
@@ -88,5 +84,9 @@
   {
     "funcionalidade": "funcionalidade.",
     "simples": "simplis"
+  },
+  {
+    "propriedade": "propriadade",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
