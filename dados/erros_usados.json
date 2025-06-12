@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "simples": "cimples",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "suporte": "suprte",
     "dispositivo": "disposotivo"
   },
@@ -92,5 +87,10 @@
     "funciona": "funciona.",
     "controle": "controlle",
     "muito": "muto"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "gerenciamento": "gerenciamente",
+    "consistente": "consiteente"
   }
 ]
