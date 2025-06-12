@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "propriadade",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "conhecimento": "conhescimento",
     "recurso": "recuro",
     "muito": "muiito"
@@ -94,5 +90,10 @@
     "dispositivo": "dispotivo",
     "suporte": "suportte",
     "arquitetura": "arquitertura"
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "desafio": "desafiu",
+    "arquitetura": "arquiteturra"
   }
 ]
