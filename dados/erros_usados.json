@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "muito": "muiito",
-    "processo": "prosseso"
-  },
-  {
     "virtual": "virtal",
     "simples": "cimples",
     "desenvolvimento": "desenvolvmento"
@@ -92,5 +87,10 @@
     "tecnologia": "tecnolgia",
     "simples": "simlpes",
     "mensagem": "mensagen"
+  },
+  {
+    "funciona": "funciona.",
+    "controle": "controlle",
+    "muito": "muto"
   }
 ]
