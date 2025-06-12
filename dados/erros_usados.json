@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internert",
-    "tecnologia": "tecnolgia",
-    "sistema": "sistéma"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitretura"
   },
@@ -90,5 +85,10 @@
     "resultado": "resutlado",
     "processo": "processso",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "parceria": "parcería",
+    "desenvolvimento": "desenvolvimente",
+    "arquitetura": "arquitertura"
   }
 ]
