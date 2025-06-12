@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "arquitetura": "arquiteturra",
-    "muito": "muinto"
-  },
-  {
     "resultado": "resutlado",
     "processo": "processso",
     "tecnologia": "tecnnologia"
@@ -93,5 +88,10 @@
   {
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo,"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "processo": "prosseso",
+    "controle": "controlle"
   }
 ]
