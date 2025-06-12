@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "dispositivo": "disposotivo"
-  },
-  {
     "problema": "problema.",
     "tecnologia": "tecnnologia"
   },
@@ -92,5 +88,9 @@
     "monitoramento": "monitorameto",
     "gerenciamento": "gerenciamente",
     "consistente": "consiteente"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "problema": "problema."
   }
 ]
