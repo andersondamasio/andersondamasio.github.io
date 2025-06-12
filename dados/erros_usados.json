@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "melhor": "melhorr"
-  },
-  {
     "tecnologia": "tecnolgia",
     "muito": "muiito",
     "processo": "prosseso"
@@ -91,5 +87,10 @@
   {
     "estrutura": "estrtura",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "simples": "simlpes",
+    "mensagem": "mensagen"
   }
 ]
