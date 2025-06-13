@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "exemplo": "exemplo,"
-  },
-  {
     "tecnologia": "tecnoligia",
     "processo": "prosseso",
     "controle": "controlle"
@@ -87,5 +83,9 @@
   {
     "complexidade": "complexidade.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "necessidade": "necissidade",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
