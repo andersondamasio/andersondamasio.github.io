@@ -9479,5 +9479,14 @@
     "dataFonte": "2025-06-12T19:34:10.000Z",
     "categoria": "Cloud",
     "urlFonte": "https://techcrunch.com/2025/06/12/google-cloud-outage-brings-down-a-lot-of-the-internet/"
+  },
+  {
+    "titulo": "A nova era do roteamento dinâmico na Amazon API Gateway",
+    "noticiaOriginal": "Amazon API Gateway Adds Dynamic Routing Based on Headers and Paths",
+    "url": "artigos/cloud/a-nova-era-do-roteamento-dinamico-na-amazon-api-gateway.html",
+    "data": "2025-06-13T11:16:45.757Z",
+    "dataFonte": "2025-06-13T11:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/06/aws-api-gateway-dynamic-routing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
