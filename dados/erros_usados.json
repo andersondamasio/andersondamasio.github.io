@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "suporte": "suportte",
-    "arquitetura": "arquitertura"
-  },
-  {
     "armazenamento": "armazenamentto",
     "desafio": "desafiu",
     "arquitetura": "arquiteturra"
@@ -89,5 +84,9 @@
     "desenvolvimento": "desenvolmento",
     "funcionalidade": "funcionalidade.",
     "acesso": "acesso."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "simples": "simlpes"
   }
 ]
