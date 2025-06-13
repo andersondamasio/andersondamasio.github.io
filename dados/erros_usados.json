@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquitertura"
-  },
-  {
     "constante": "constanate",
     "arquitetura": "arquitretura",
     "melhor": "melor"
@@ -93,5 +88,10 @@
     "funciona": "funciona.",
     "problema": "problema.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "sistema": "cistema",
+    "abordagem": "abordage",
+    "arquitetura": "arquitertura"
   }
 ]
