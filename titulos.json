@@ -9425,5 +9425,14 @@
     "dataFonte": "2025-06-12T20:27:19.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/06/12/bluesky-backlash-misses-the-point/"
+  },
+  {
+    "titulo": "A era das senhas está mudando: o futuro é dos passkeys",
+    "noticiaOriginal": "Coming to Apple OSes: A seamless, secure way to import and export passkeys",
+    "url": "artigos/seguranca/a-era-das-senhas-esta-mudando-o-futuro-e-dos-passkeys.html",
+    "data": "2025-06-13T05:19:12.811Z",
+    "dataFonte": "2025-06-12T20:26:28.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/06/apple-previews-new-import-export-feature-to-make-passkeys-more-interoperable/"
   }
 ]
