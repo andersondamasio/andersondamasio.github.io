@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "utilizado": "utilizdo.",
-    "arquitetura": "arquitretura"
-  },
-  {
     "abordagem": "abordage",
     "necessidade": "necessidade.",
     "desenvolvimento": "desenvolvimente"
@@ -93,5 +88,9 @@
     "acesso": "acesço",
     "monitoramento": "monitoramento.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "desenvolvimento": "desenvolmento"
   }
 ]
