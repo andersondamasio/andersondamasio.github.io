@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "gerenciamento": "gerenciamente",
-    "consistente": "consiteente"
-  },
-  {
     "tecnologia": "tecnolgia",
     "problema": "problema."
   },
@@ -90,5 +85,9 @@
   {
     "personalizado": "personalizdo",
     "prioridade": "prioridade."
+  },
+  {
+    "problema": "problema.",
+    "simples": "cimples"
   }
 ]
