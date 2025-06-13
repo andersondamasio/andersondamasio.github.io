@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "desenvolvimento": "desenvolmento",
-    "virtual": "virtuaal"
-  },
-  {
     "prioridade": "prioriade",
     "utilizado": "utilizdo.",
     "arquitetura": "arquitretura"
@@ -93,5 +88,10 @@
     "processo": "prosseso",
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistma"
+  },
+  {
+    "acesso": "acesço",
+    "monitoramento": "monitoramento.",
+    "arquitetura": "arquitretura"
   }
 ]
