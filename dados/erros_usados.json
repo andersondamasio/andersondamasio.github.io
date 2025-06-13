@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "desenvolvimento": "desenvolvimente",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo,"
   },
@@ -88,5 +83,9 @@
   {
     "resultado": "resutlado",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "complexidade": "complexidade.",
+    "tecnologia": "tecnnologia"
   }
 ]
