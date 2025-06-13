@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "problema": "problema."
-  },
-  {
     "tecnologia": "tecnoligia",
     "melhor": "melhorr",
     "simples": "cimples"
@@ -89,5 +85,9 @@
   {
     "problema": "problema.",
     "simples": "cimples"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "constante": "constante."
   }
 ]
