@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "processo": "prosseso",
-    "controle": "controlle"
-  },
-  {
     "funciona": "funciona.",
     "problema": "problema.",
     "desenvolvimento": "desenvolmento"
@@ -87,5 +82,10 @@
   {
     "necessidade": "necissidade",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "constante": "constante.",
+    "arquitetura": "arquitertura"
   }
 ]
