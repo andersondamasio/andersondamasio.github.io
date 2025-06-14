@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "estrutura": "estrututra"
-  },
-  {
     "monitoramento": "monitramento",
     "exemplo": "exenplo",
     "tecnologia": "tecnnologia"
@@ -88,5 +84,9 @@
     "gerenciamento": "gerenciamente",
     "muito": "muto",
     "monitoramento": "monitramento"
+  },
+  {
+    "virtual": "virtual.",
+    "processo": "prosseso"
   }
 ]
