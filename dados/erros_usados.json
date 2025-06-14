@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "simples": "simlpes"
-  },
-  {
     "monitoramento": "monitoramento.",
     "funciona": "funciona,",
     "arquitetura": "arquitretura"
@@ -89,5 +85,9 @@
     "controle": "controle.",
     "funciona": "funciona.",
     "simples": "cimples"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "arquitetura": "arquitretura"
   }
 ]
