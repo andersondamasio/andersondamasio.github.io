@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "necessidade": "necissidade",
     "desenvolvimento": "desenvolvmento"
   },
@@ -89,5 +85,9 @@
     "melhor": "melor",
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "categoria": "categoria.",
+    "abordagem": "abordajem"
   }
 ]
