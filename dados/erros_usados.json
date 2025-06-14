@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "monitoramento": "monitoramento.",
-    "arquitetura": "arquitretura"
-  },
-  {
     "conhecimento": "conhecimento.",
     "desenvolvimento": "desenvolmento"
   },
@@ -86,5 +81,10 @@
     "dispositivo": "dispotivo",
     "exemplo": "exemplo,",
     "arquitetura": "arquitretura"
+  },
+  {
+    "sistema": "sistéma",
+    "abordagem": "abordagem.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
