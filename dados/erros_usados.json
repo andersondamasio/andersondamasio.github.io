@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "constante": "constante.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "desafio": "desaío",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +85,10 @@
     "tecnologia": "tecnolgia",
     "necessidade": "necessidade.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "controle": "controle.",
+    "desenvolvimento": "desenvolmento"
   }
 ]
