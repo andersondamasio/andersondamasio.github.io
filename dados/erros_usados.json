@@ -1,9 +1,5 @@
 [
   {
-    "personalizado": "personalizdo",
-    "prioridade": "prioridade."
-  },
-  {
     "problema": "problema.",
     "simples": "cimples"
   },
@@ -86,5 +82,10 @@
   },
   {
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desafio": "desafiu",
+    "acesso": "acesço",
+    "monitoramento": "monitramento"
   }
 ]
