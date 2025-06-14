@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "conhecimento": "conhescimento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "dispositivo": "dispotivo",
     "exemplo": "exemplo,",
     "arquitetura": "arquitretura"
@@ -90,5 +85,9 @@
   {
     "tecnologia": "tecnoligia",
     "processo": "prosseso"
+  },
+  {
+    "componente": "componentte",
+    "sistema": "cistema"
   }
 ]
