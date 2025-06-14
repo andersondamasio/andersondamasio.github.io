@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizdo",
-    "suporte": "suportte"
-  },
-  {
     "tecnologia": "tecnoligia",
     "estrutura": "estrututra"
   },
@@ -87,5 +83,10 @@
     "funciona": "funsiona",
     "simples": "cimples",
     "arquitetura": "arquitertura"
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "muito": "muto",
+    "monitoramento": "monitramento"
   }
 ]
