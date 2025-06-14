@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "utilizado": "utilizdo",
     "suporte": "suportte"
   },
@@ -86,5 +82,10 @@
     "sistema": "sistéma",
     "abordagem": "abordagem.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "funciona": "funsiona",
+    "simples": "cimples",
+    "arquitetura": "arquitertura"
   }
 ]
