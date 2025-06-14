@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "exemplo": "exenplo",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "personalizado": "personalizdo",
     "prioridade": "prioridade."
   },
@@ -88,5 +83,8 @@
   {
     "virtual": "virtual.",
     "processo": "prosseso"
+  },
+  {
+    "tecnologia": "tecnolgia"
   }
 ]
