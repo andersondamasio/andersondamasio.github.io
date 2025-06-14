@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "processo": "prosseso",
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistma"
@@ -85,5 +81,10 @@
     "exemplo": "exemplo.",
     "tecnologia": "tecnoligia",
     "estrutura": "estrura"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "conhecimento": "conhescimento",
+    "arquitetura": "arquitertura"
   }
 ]
