@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desafio": "desafiu",
     "acesso": "acesço",
     "monitoramento": "monitramento"
@@ -88,5 +85,10 @@
     "computador": "computadorr",
     "muito": "muiito",
     "exemplo": "exemplo."
+  },
+  {
+    "prioridade": "prioriade.",
+    "consistente": "consiteente",
+    "arquitetura": "arquitretura"
   }
 ]
