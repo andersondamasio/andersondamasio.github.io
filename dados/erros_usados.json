@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "exemplo": "exemplo,",
-    "arquitetura": "arquitretura"
-  },
-  {
     "sistema": "sistéma",
     "abordagem": "abordagem.",
     "desenvolvimento": "desenvolvmento"
@@ -89,5 +84,10 @@
   {
     "componente": "componentte",
     "sistema": "cistema"
+  },
+  {
+    "funciona": "funciona,",
+    "melhor": "melhorr",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
