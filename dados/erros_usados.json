@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "tecnologia": "tecnnologia",
-    "sistema": "sistma"
-  },
-  {
     "tecnologia": "tecnoligia",
     "processo": "prosseso"
   },
@@ -92,5 +87,9 @@
     "necessidade": "nescessidade",
     "suporte": "suporte.",
     "exemplo": "exemplo,"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquiteturra"
   }
 ]
