@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "utilizado": "utilizdo",
-    "constante": "constanate"
-  },
-  {
     "controle": "controle.",
     "funciona": "funciona.",
     "simples": "cimples"
@@ -90,5 +85,10 @@
     "funcionalidade": "funcionaliade",
     "acesso": "acesço",
     "exemplo": "exemplo,"
+  },
+  {
+    "acesso": "acesso.",
+    "tecnologia": "tecnnologia",
+    "constante": "constante."
   }
 ]
