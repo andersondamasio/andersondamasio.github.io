@@ -1,9 +1,5 @@
 [
   {
-    "categoria": "categoria.",
-    "abordagem": "abordajem"
-  },
-  {
     "tecnologia": "tecnolgia",
     "necessidade": "necessidade.",
     "desenvolvimento": "desenvolvimente"
@@ -90,5 +86,10 @@
     "utilizado": "utilizdo.",
     "tecnologia": "tecnolgia",
     "processo": "proceso"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "simples": "simlpes",
+    "funcionalidade": "funcionaliade"
   }
 ]

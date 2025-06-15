@@ -9902,5 +9902,14 @@
     "dataFonte": "2025-06-12T12:13:32.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.bbc.com/news/articles/c8e6z590wweo"
+  },
+  {
+    "titulo": "Acelerando o Desenvolvimento: Como o Novo Docker Server da AWS Pode Transformar Seus Pipelines",
+    "noticiaOriginal": "AWS CodeBuild Introduces Docker Server Capability to Accelerate CI/CD Pipelines",
+    "url": "artigos/devops/acelerando-o-desenvolvimento-como-o-novo-docker-server-da-aws-pode-transformar-seus-pipelines.html",
+    "data": "2025-06-15T15:17:54.673Z",
+    "dataFonte": "2025-06-12T12:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2025/06/codebuild-docker-server/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
