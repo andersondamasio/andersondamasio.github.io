@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "processo": "prosseso"
-  },
-  {
     "componente": "componentte",
     "sistema": "cistema"
   },
@@ -91,5 +87,9 @@
   {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "exemplo": "exenplo"
   }
 ]
