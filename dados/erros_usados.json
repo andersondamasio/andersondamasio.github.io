@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "exemplo": "exenplo"
-  },
-  {
     "necessidade": "necessidade.",
     "desenvolvimento": "desenvolvmento"
   },
@@ -85,5 +81,10 @@
     "simples": "cimples",
     "melhor": "melor",
     "acesso": "acesço"
+  },
+  {
+    "mensagem": "mensagen",
+    "funcionalidade": "funcionalidade.",
+    "simples": "simplis"
   }
 ]
