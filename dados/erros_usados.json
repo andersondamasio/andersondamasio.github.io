@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "consistente": "consiteente",
-    "arquitetura": "arquitretura"
-  },
-  {
     "complexidade": "complexidade.",
     "armazenamento": "armazenamentto",
     "abordagem": "abordajem"
@@ -89,5 +84,10 @@
     "desafio": "desaío",
     "abordagem": "abordagem.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "acesso": "acesço",
+    "arquitetura": "arquitertura",
+    "abordagem": "abordage"
   }
 ]
