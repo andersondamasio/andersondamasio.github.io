@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "componente": "componentte",
     "tecnologia": "tecnnologia"
   },
@@ -89,5 +85,9 @@
     "armazenamento": "armasenamento",
     "utilizado": "utilizdo",
     "geralmente": "geralment"
+  },
+  {
+    "propriedade": "propriedade.",
+    "constante": "constante."
   }
 ]
