@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "recurso": "recusso"
-  },
-  {
     "utilizado": "utilizdo.",
     "tecnologia": "tecnolgia",
     "processo": "proceso"
@@ -88,5 +84,9 @@
     "processo": "proceso",
     "melhor": "melor",
     "exemplo": "exemplo,"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "complexidade": "complezidade"
   }
 ]
