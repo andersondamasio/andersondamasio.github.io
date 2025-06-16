@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "constante": "constate"
-  },
-  {
     "problema": "poblema",
     "arquitetura": "arquitretura"
   },
@@ -87,5 +83,10 @@
     "automatizado": "automatizdo.",
     "efetivo": "efetvo",
     "problema": "problema."
+  },
+  {
+    "internet": "internat",
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura"
   }
 ]
