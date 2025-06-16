@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "tecnologia": "tecnolgia",
-    "melhor": "melhorr"
-  },
-  {
     "dispositivo": "dispotivo",
     "recurso": "recusso"
   },
@@ -88,5 +83,10 @@
   {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "processo": "proceso",
+    "melhor": "melor",
+    "exemplo": "exemplo,"
   }
 ]
