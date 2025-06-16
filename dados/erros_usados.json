@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "suporte": "suporte.",
-    "exemplo": "exemplo,"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra"
   },
@@ -84,5 +79,10 @@
   {
     "funcionalidade": "funcionaliadde",
     "melhor": "melhorr"
+  },
+  {
+    "constante": "constanate",
+    "simples": "simplis",
+    "estrutura": "estrura"
   }
 ]
