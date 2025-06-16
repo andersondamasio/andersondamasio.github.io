@@ -1,10 +1,5 @@
 [
   {
-    "utilizado": "utilizdo.",
-    "tecnologia": "tecnolgia",
-    "processo": "proceso"
-  },
-  {
     "monitoramento": "monitorameto",
     "simples": "simlpes",
     "funcionalidade": "funcionaliade"
@@ -88,5 +83,10 @@
   {
     "conhecimento": "conhescimento",
     "complexidade": "complezidade"
+  },
+  {
+    "controle": "controlle",
+    "suporte": "suportte",
+    "desafio": "desafiu"
   }
 ]
