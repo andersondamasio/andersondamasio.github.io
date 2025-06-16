@@ -1,9 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "arquitetura": "arquitretura"
-  },
-  {
     "estrutura": "estrura",
     "tecnologia": "tecnoligia"
   },
@@ -88,5 +84,10 @@
     "internet": "internat",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "utilizado": "utilizdo",
+    "geralmente": "geralment"
   }
 ]
