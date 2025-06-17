@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "utilizado": "utilizdo",
-    "geralmente": "geralment"
-  },
-  {
     "propriedade": "propriedade.",
     "constante": "constante."
   },
@@ -90,5 +85,10 @@
     "mensagem": "mensagen",
     "sistema": "sistma",
     "resultado": "resultadoo"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "estrutura": "estrura",
+    "tecnologia": "tecnolgia"
   }
 ]
