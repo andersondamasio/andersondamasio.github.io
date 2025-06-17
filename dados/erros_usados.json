@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "complexidade": "complezidade"
-  },
-  {
     "controle": "controlle",
     "suporte": "suportte",
     "desafio": "desafiu"
@@ -89,5 +85,9 @@
     "complexidade": "complexidade.",
     "desenvolvimento": "desenvolmento",
     "controle": "contrle"
+  },
+  {
+    "processo": "processso",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
