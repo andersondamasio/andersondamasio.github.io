@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "suporte": "suportte",
-    "desafio": "desafiu"
-  },
-  {
     "recurso": "recusso"
   },
   {
@@ -89,5 +84,9 @@
   {
     "processo": "processso",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "melhor": "melhorr"
   }
 ]
