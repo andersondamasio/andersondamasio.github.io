@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "propriedade.",
-    "constante": "constante."
-  },
-  {
     "abordagem": "abordagem.",
     "necessidade": "necissidade",
     "arquitetura": "arquitretura"
@@ -90,5 +86,10 @@
     "dispositivo": "dispotivo",
     "estrutura": "estrura",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "exemplo": "exenplo",
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquiteturra"
   }
 ]
