@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "armazenamento": "armasenamento",
     "utilizado": "utilizdo",
     "geralmente": "geralment"
@@ -90,5 +85,10 @@
     "personalizado": "personalizdo",
     "resultado": "resultao",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "mensagem": "mensagen",
+    "sistema": "sistma",
+    "resultado": "resultadoo"
   }
 ]
