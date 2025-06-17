@@ -1,9 +1,5 @@
 [
   {
-    "componente": "componentte",
-    "exemplo": "exenplo"
-  },
-  {
     "sistema": "sistma",
     "tecnologia": "tecnnologia",
     "suporte": "suprte"
@@ -91,5 +87,10 @@
     "internet": "internete",
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo."
+  },
+  {
+    "simples": "simlpes",
+    "sistema": "cistema",
+    "monitoramento": "monitramento"
   }
 ]
