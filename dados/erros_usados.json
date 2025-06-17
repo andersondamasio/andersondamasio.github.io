@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "melhor": "melor",
-    "exemplo": "exemplo,"
-  },
-  {
     "conhecimento": "conhescimento",
     "complexidade": "complezidade"
   },
@@ -89,5 +84,10 @@
     "muito": "muto",
     "funciona": "funciona,",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "complexidade": "complexidade.",
+    "desenvolvimento": "desenvolmento",
+    "controle": "contrle"
   }
 ]
