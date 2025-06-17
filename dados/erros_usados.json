@@ -1,9 +1,5 @@
 [
   {
-    "componente": "componentte",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "desafio": "desaío",
     "abordagem": "abordagem.",
     "tecnologia": "tecnolgia"
@@ -89,5 +85,10 @@
   {
     "propriedade": "propriedade.",
     "constante": "constante."
+  },
+  {
+    "abordagem": "abordagem.",
+    "necessidade": "necissidade",
+    "arquitetura": "arquitretura"
   }
 ]
