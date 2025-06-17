@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "processo": "proceso",
     "melhor": "melor",
     "exemplo": "exemplo,"
@@ -88,5 +84,10 @@
     "prioridade": "prioriade",
     "parceria": "parcería",
     "monitoramento": "monitorameto"
+  },
+  {
+    "muito": "muto",
+    "funciona": "funciona,",
+    "funcionalidade": "funcionaliade"
   }
 ]
