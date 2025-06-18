@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "desenvolvimento": "desenvolmento",
-    "controle": "contrle"
-  },
-  {
     "processo": "processso",
     "desenvolvimento": "desenvolvmento"
   },
@@ -92,5 +87,9 @@
   {
     "suporte": "suprte",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "suporte": "suporte.",
+    "arquitetura": "arquiteturra"
   }
 ]
