@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "estrutura": "estrura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra"
@@ -90,5 +85,10 @@
   {
     "tecnologia": "tecnnologia",
     "constante": "constate"
+  },
+  {
+    "funciona": "funciona,",
+    "exemplo": "exenplo",
+    "arquitetura": "arquiteturra"
   }
 ]
