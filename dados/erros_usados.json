@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "sistema": "cistema",
-    "monitoramento": "monitramento"
-  },
-  {
     "necessidade": "necessidade.",
     "constante": "constante.",
     "propriedade": "propriadade"
@@ -89,5 +84,10 @@
   {
     "paralelo": "paralelo.",
     "estrutura": "estrura"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "dispositivo": "dispotivo",
+    "armazenamento": "armasenamento"
   }
 ]
