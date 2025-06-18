@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "constante": "constante.",
-    "propriedade": "propriadade"
-  },
-  {
     "arquitetura": "arquitertura",
     "simples": "simlpes",
     "desenvolvimento": "desenvolmento"
@@ -89,5 +84,10 @@
     "gerenciamento": "gerenciamneto",
     "dispositivo": "dispotivo",
     "armazenamento": "armasenamento"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "tecnologia": "tecnoligia",
+    "desafio": "desafiu"
   }
 ]
