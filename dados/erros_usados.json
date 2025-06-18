@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "conhecimento": "conhecimeto"
-  },
-  {
     "prioridade": "prioriade",
     "parceria": "parcería",
     "monitoramento": "monitorameto"
@@ -93,5 +89,10 @@
     "arquitetura": "arquitertura",
     "simples": "simlpes",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "utilizado": "utilizdo",
+    "desenvolvimento": "desenvolvmento",
+    "monitoramento": "monitoramento."
   }
 ]
