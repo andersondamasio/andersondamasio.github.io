@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "internet": "internete",
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo."
@@ -90,5 +85,10 @@
     "funciona": "funciona,",
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "abordagem": "abordage",
+    "processo": "prosseso",
+    "sistema": "cistema"
   }
 ]
