@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "recurso": "recusso"
-  },
-  {
     "tecnologia": "tecnoligia",
     "conhecimento": "conhecimeto"
   },
@@ -92,5 +88,10 @@
     "necessidade": "necessidade.",
     "constante": "constante.",
     "propriedade": "propriadade"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "simples": "simlpes",
+    "desenvolvimento": "desenvolmento"
   }
 ]
