@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "tecnologia": "tecnnologia",
-    "suporte": "suprte"
-  },
-  {
     "carregamento": "carregamento.",
     "recurso": "recusso"
   },
@@ -92,5 +87,10 @@
     "simples": "simlpes",
     "sistema": "cistema",
     "monitoramento": "monitramento"
+  },
+  {
+    "necessidade": "necessidade.",
+    "constante": "constante.",
+    "propriedade": "propriadade"
   }
 ]
