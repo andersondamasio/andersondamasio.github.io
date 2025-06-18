@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "tecnologia": "tecnnologia",
-    "exemplo": "exemplo."
-  },
-  {
     "simples": "simlpes",
     "sistema": "cistema",
     "monitoramento": "monitramento"
@@ -90,5 +85,9 @@
     "abordagem": "abordage",
     "processo": "prosseso",
     "sistema": "cistema"
+  },
+  {
+    "paralelo": "paralelo.",
+    "estrutura": "estrura"
   }
 ]
