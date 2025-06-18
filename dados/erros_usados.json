@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "desenvolvimento": "desenvolmento",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "processo": "prosseso",
     "desenvolvimento": "desenvolvimente",
     "sistema": "sistéma"
@@ -92,5 +87,9 @@
     "simples": "simplis",
     "necessidade": "necessidade.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "conhecimento": "conhecimento."
   }
 ]
