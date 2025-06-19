@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "necessidade": "necessidade.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "conhecimento": "conhecimento."
   },
@@ -90,5 +85,10 @@
   {
     "simples": "cimples",
     "muito": "muiito"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "desenvolvimento": "desenvolvimente",
+    "tecnologia": "tecnoligia"
   }
 ]
