@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnoligia",
-    "desafio": "desafiu"
-  },
-  {
     "constante": "constate",
     "funcionalidade": "funcionaliadde",
     "muito": "muto"
@@ -86,5 +81,10 @@
   {
     "problema": "poblema",
     "paralelo": "paralélo"
+  },
+  {
+    "complexidade": "complexidade.",
+    "resultado": "resutlado",
+    "exemplo": "exenplo"
   }
 ]
