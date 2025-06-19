@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "dispositivo": "dispotivo",
-    "armazenamento": "armasenamento"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnoligia",
     "desafio": "desafiu"
@@ -87,5 +82,9 @@
   {
     "sistema": "sistéma",
     "monitoramento": "monitorameto"
+  },
+  {
+    "problema": "poblema",
+    "paralelo": "paralélo"
   }
 ]
