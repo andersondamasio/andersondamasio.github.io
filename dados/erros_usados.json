@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "simples": "simlpes",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "utilizado": "utilizdo",
     "desenvolvimento": "desenvolvmento",
     "monitoramento": "monitoramento."
@@ -89,5 +84,10 @@
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnoligia",
     "desafio": "desafiu"
+  },
+  {
+    "constante": "constate",
+    "funcionalidade": "funcionaliadde",
+    "muito": "muto"
   }
 ]
