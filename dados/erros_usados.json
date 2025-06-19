@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "suporte": "suporte.",
     "arquitetura": "arquiteturra"
   },
@@ -89,5 +85,9 @@
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionaliade",
     "constante": "constante."
+  },
+  {
+    "monitoramento": "monitramento",
+    "utilizado": "utilizado."
   }
 ]
