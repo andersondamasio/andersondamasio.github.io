@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "suporte": "suprte",
     "tecnologia": "tecnnologia"
   },
@@ -88,5 +84,10 @@
   {
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "funcionalidade": "funcionaliade",
+    "constante": "constante."
   }
 ]
