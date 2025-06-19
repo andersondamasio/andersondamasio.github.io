@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "constante": "constate"
-  },
-  {
     "funciona": "funciona,",
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra"
@@ -90,5 +86,9 @@
     "simples": "simplis",
     "exemplo": "exenplo",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "controle": "controlle",
+    "computador": "computador,"
   }
 ]
