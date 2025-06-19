@@ -1,9 +1,5 @@
 [
   {
-    "paralelo": "paralelo.",
-    "estrutura": "estrura"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "dispositivo": "dispotivo",
     "armazenamento": "armasenamento"
@@ -87,5 +83,9 @@
   },
   {
     "arquitetura": "arquitertura"
+  },
+  {
+    "sistema": "sistéma",
+    "monitoramento": "monitorameto"
   }
 ]
