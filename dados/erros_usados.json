@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "utilizado": "utilizado."
-  },
-  {
     "prioridade": "prioriade",
     "suporte": "suprte"
   },
@@ -86,5 +82,9 @@
     "desafio": "desafiu",
     "paralelo": "paralélo",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "operacional": "operaciona",
+    "arquitetura": "arquiteturra"
   }
 ]
