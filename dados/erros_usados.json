@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "monitoramento": "monitorameto"
-  },
-  {
     "problema": "poblema",
     "paralelo": "paralélo"
   },
@@ -90,5 +86,10 @@
     "necessidade": "nescessidade",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "personalizado": "personalizdo",
+    "recurso": "recusso",
+    "prioridade": "prioriade."
   }
 ]
