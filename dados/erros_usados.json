@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "arquitetura": "arquitertura",
     "sistema": "sistéma",
     "tecnologia": "tecnolgia"
@@ -89,5 +85,10 @@
   {
     "constante": "constanate",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "resultado": "resultao",
+    "muito": "muto",
+    "tecnologia": "tecnolgia"
   }
 ]
