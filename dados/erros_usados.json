@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordagem.",
-    "conhecimento": "conhescimento"
-  },
-  {
     "mensagem": "menssagem",
     "estrutura": "estrura"
   },
@@ -84,5 +80,10 @@
   {
     "melhor": "melhorr",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "propriedade": "propriadade",
+    "constante": "constanate",
+    "acesso": "aceso"
   }
 ]
