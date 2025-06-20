@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "suporte": "suprte"
-  },
-  {
     "resultado": "resultadoo",
     "tecnologia": "tecnolgia",
     "estrutura": "estrtura"
@@ -86,5 +82,10 @@
   {
     "operacional": "operaciona",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "sistema": "sistéma",
+    "tecnologia": "tecnolgia"
   }
 ]
