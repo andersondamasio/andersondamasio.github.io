@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "menssagem",
-    "estrutura": "estrura"
-  },
-  {
     "simples": "simplis",
     "exemplo": "exenplo",
     "tecnologia": "tecnnologia"
@@ -85,5 +81,10 @@
     "propriedade": "propriadade",
     "constante": "constanate",
     "acesso": "aceso"
+  },
+  {
+    "processo": "prosseso",
+    "suporte": "suprte",
+    "necessidade": "necessidade."
   }
 ]
