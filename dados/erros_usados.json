@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "funcionalidade": "funcionaliade",
-    "constante": "constante."
-  },
-  {
     "monitoramento": "monitramento",
     "utilizado": "utilizado."
   },
@@ -86,5 +81,10 @@
   {
     "melhor": "melor",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "desafio": "desafiu",
+    "paralelo": "paralélo",
+    "desenvolvimento": "desenvolmento"
   }
 ]
