@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "desenvolvimento": "desenvolvimente",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "processo": "prosseso",
     "desenvolvimento": "desenvolvmento",
     "funciona": "funciona."
@@ -87,5 +82,9 @@
     "funcionalidade": "funcionaliadde",
     "virtual": "virtuaal",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "conectado": "conectado.",
+    "acesso": "acesço"
   }
 ]
