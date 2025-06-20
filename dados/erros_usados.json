@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura"
-  },
-  {
     "sistema": "sistéma",
     "monitoramento": "monitorameto"
   },
@@ -88,5 +85,10 @@
     "dispositivo": "dispotivo",
     "funciona": "funsiona",
     "acesso": "aceso"
+  },
+  {
+    "necessidade": "nescessidade",
+    "desenvolvimento": "desenvolmento",
+    "tecnologia": "tecnnologia"
   }
 ]
