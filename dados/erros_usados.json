@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "resultado": "resutlado",
-    "exemplo": "exenplo"
-  },
-  {
     "complexidade": "complezidade",
     "exemplo": "exemplo,",
     "melhor": "melhorr"
@@ -92,5 +87,9 @@
     "simples": "simplis",
     "muito": "muiito",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "sistema": "sistma",
+    "arquitetura": "arquitertura"
   }
 ]
