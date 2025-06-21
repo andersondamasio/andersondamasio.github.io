@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "constante": "constanate",
     "desenvolvimento": "desenvolmento"
   },
@@ -94,5 +90,10 @@
     "propriedade": "proprieade",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "abordagem": "abordage",
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquiteturra"
   }
 ]
