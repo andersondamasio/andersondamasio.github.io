@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "sistéma",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "geralmente": "geralment",
     "internet": "internert"
   },
@@ -90,5 +85,10 @@
     "resultado": "resultao",
     "muito": "muto",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exenplo",
+    "monitoramento": "monitorameto"
   }
 ]
