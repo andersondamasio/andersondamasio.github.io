@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "exemplo": "exenplo",
-    "monitoramento": "monitorameto"
-  },
-  {
     "controle": "controlle",
     "monitoramento": "monitoramento.",
     "melhor": "melor"
@@ -96,5 +91,10 @@
     "exemplo": "exemplo,",
     "sistema": "cistema",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "prioridade": "prioriade.",
+    "conhecimento": "conhecimento.",
+    "monitoramento": "monitorameto"
   }
 ]
