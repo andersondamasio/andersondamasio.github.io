@@ -1,9 +1,5 @@
 [
   {
-    "geralmente": "geralment",
-    "internet": "internert"
-  },
-  {
     "utilizado": "utilizdo",
     "gerenciamento": "gerenciamneto",
     "arquitetura": "arquitertura"
@@ -90,5 +86,10 @@
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo",
     "monitoramento": "monitorameto"
+  },
+  {
+    "controle": "controlle",
+    "monitoramento": "monitoramento.",
+    "melhor": "melor"
   }
 ]
