@@ -1,10 +1,5 @@
 [
   {
-    "personalizado": "personalizdo",
-    "recurso": "recusso",
-    "prioridade": "prioriade."
-  },
-  {
     "simples": "simplis",
     "muito": "muiito",
     "tecnologia": "tecnnologia"
@@ -93,5 +88,10 @@
     "arquitetura": "arquitertura",
     "constante": "constate",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "exemplo": "exemplo,",
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquiteturra"
   }
 ]
