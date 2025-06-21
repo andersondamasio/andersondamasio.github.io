@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
   },
@@ -92,5 +88,10 @@
   {
     "tecnologia": "tecnoligia",
     "controle": "controle."
+  },
+  {
+    "virtual": "virtual.",
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
