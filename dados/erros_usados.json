@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "funciona": "funsiona",
-    "acesso": "aceso"
-  },
-  {
     "necessidade": "nescessidade",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnnologia"
@@ -93,5 +88,10 @@
     "processo": "proceso",
     "estrutura": "estrura",
     "automatizado": "automatizdo."
+  },
+  {
+    "carregamento": "carregamneto",
+    "exemplo": "exenplo",
+    "necessidade": "necissidade"
   }
 ]
