@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "exemplo": "exemplo.",
     "tecnologia": "tecnoligia"
   },
@@ -93,5 +89,10 @@
     "virtual": "virtual.",
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "propriedade": "proprieade",
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitretura"
   }
 ]
