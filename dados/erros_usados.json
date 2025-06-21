@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "muito": "muto",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo",
     "monitoramento": "monitorameto"
@@ -96,5 +91,10 @@
     "armazenamento": "armazenamentto",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "exemplo": "exemplo,",
+    "sistema": "cistema",
+    "desenvolvimento": "desenvolmento"
   }
 ]
