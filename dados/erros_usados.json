@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "personalizado": "personalizdo",
     "recurso": "recusso",
     "prioridade": "prioriade."
@@ -93,5 +88,10 @@
     "carregamento": "carregamneto",
     "exemplo": "exenplo",
     "necessidade": "necissidade"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "constante": "constate",
+    "tecnologia": "tecnnologia"
   }
 ]
