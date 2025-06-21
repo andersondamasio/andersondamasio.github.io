@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "acesso": "acesço"
-  },
-  {
     "monitoramento": "monitorameto",
     "simples": "cimples"
   },
@@ -91,5 +87,9 @@
     "desafio": "desafiu",
     "sistema": "sistma",
     "suporte": "suporte."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desafio": "desaío"
   }
 ]
