@@ -11027,5 +11027,14 @@
     "dataFonte": "2025-06-20T19:04:22.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://arstechnica.com/security/2025/06/record-ddos-pummels-site-with-once-unimaginable-7-3tbps-of-junk-traffic/"
+  },
+  {
+    "titulo": "Docker Revoluciona Segurança com Imagens Base Endurecidas",
+    "noticiaOriginal": "Docker Launches Hardened Base Images",
+    "url": "artigos/seguranca/docker-revoluciona-seguranca-com-imagens-base-endurecidas.html",
+    "data": "2025-06-21T10:19:11.102Z",
+    "dataFonte": "2025-06-21T10:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2025/06/docker-hardened-images/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

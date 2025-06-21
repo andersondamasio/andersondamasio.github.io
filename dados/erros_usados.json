@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "suporte": "suprte",
-    "necessidade": "necessidade."
-  },
-  {
     "muito": "muiito",
     "abordagem": "abordajem",
     "melhor": "melhorr"
@@ -93,5 +88,10 @@
     "internet": "internete",
     "resultado": "resultadoo",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "desenvolvimento": "desenvolmento",
+    "monitoramento": "monitoramento."
   }
 ]
