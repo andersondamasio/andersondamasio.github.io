@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "tecnologia": "tecnolgia",
-    "desafio": "desafío"
-  },
-  {
     "recurso": "reccurso",
     "funcionalidade": "funcionaliade"
   },
@@ -88,5 +83,10 @@
   {
     "controle": "controle.",
     "abordagem": "abordajem"
+  },
+  {
+    "parceria": "parcería",
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura"
   }
 ]
