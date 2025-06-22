@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "proprieade",
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "abordagem": "abordage",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra"
@@ -90,5 +85,10 @@
   {
     "melhor": "melor",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "controle": "controle.",
+    "tecnologia": "tecnolgia",
+    "simples": "simlpes"
   }
 ]
