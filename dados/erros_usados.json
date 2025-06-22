@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "sistema": "sistma",
-    "suporte": "suporte."
-  },
-  {
     "tecnologia": "tecnoligia",
     "desafio": "desaío"
   },
@@ -96,5 +91,9 @@
     "simples": "cimples",
     "tecnologia": "tecnolgia",
     "desafio": "desafío"
+  },
+  {
+    "recurso": "reccurso",
+    "funcionalidade": "funcionaliade"
   }
 ]
