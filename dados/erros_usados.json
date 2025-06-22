@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "exemplo": "exemplo,",
     "sistema": "cistema",
     "desenvolvimento": "desenvolmento"
@@ -90,5 +85,10 @@
     "constante": "constante.",
     "suporte": "suportte",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "necessidade": "necessidade.",
+    "abordagem": "abordajem",
+    "controle": "contrle"
   }
 ]
