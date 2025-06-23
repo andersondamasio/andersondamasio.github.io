@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "tecnologia": "tecnolgia",
-    "simples": "simlpes"
-  },
-  {
     "constante": "constante.",
     "suporte": "suportte",
     "desenvolvimento": "desenvolmento"
@@ -90,5 +85,10 @@
     "desafio": "desafiu",
     "exemplo": "exenplo",
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "funciona": "funciona,",
+    "constante": "constanate"
   }
 ]
