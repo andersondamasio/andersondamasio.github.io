@@ -11423,5 +11423,14 @@
     "dataFonte": "2025-06-20T23:58:02.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.bbc.com/news/articles/cj4edkdxz2xo"
+  },
+  {
+    "titulo": "A nova era da observabilidade: OpenTelemetry no Azure e suas implicações para desenvolvedores",
+    "noticiaOriginal": "Microsoft Azure Enhances Observability with OpenTelemetry Support for Logic Apps and Functions",
+    "url": "artigos/cloud/a-nova-era-da-observabilidade-opentelemetry-no-azure-e-suas-implicacoes-para-desenvolvedores.html",
+    "data": "2025-06-23T10:22:01.171Z",
+    "dataFonte": "2025-06-23T10:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/06/otel-azure-logic-apps-functions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

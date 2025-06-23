@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "problema": "probrema"
-  },
-  {
     "monitoramento": "monitoramento.",
     "tecnologia": "tecnnologia"
   },
@@ -87,5 +83,10 @@
   {
     "virtual": "virtal",
     "funciona": "funciona."
+  },
+  {
+    "complexidade": "complezidade",
+    "monitoramento": "monitramento",
+    "melhor": "melor"
   }
 ]
