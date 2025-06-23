@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "suporte": "suprte"
-  },
-  {
     "dispositivo": "dispositivo.",
     "melhor": "melhorr",
     "controle": "controlle"
@@ -91,5 +87,10 @@
   {
     "arquitetura": "arquiteturra",
     "desafio": "desafío"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "internet": "internat",
+    "arquitetura": "arquitertura"
   }
 ]
