@@ -781,7 +781,7 @@ const categoriasExistentes = [...new Set(
 
 console.error("ORIGEM",noticia);
 
-const { resumoFonte, textoPrincipal }  = await extrairResumoDaNoticiaReadability(noticia.url);
+const { resumoFonte, textoPrincipal }  = await extrairResumoDaNoticiaReadability("https://learn.microsoft.com/pt-br/dotnet/maui/whats-new/dotnet-10?view=net-maui-9.0");//(noticia.url);
     
 
 
