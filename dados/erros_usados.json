@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "abordagem": "abordajem"
-  },
-  {
     "parceria": "parcería",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura"
@@ -90,5 +86,10 @@
     "tecnologia": "tecnoligia",
     "monitoramento": "monitorameto",
     "constante": "constante."
+  },
+  {
+    "acesso": "aceso",
+    "simples": "simplis",
+    "tecnologia": "tecnolgia"
   }
 ]
