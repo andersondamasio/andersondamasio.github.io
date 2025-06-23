@@ -1,10 +1,5 @@
 [
   {
-    "personalizado": "personalizad",
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "funciona": "funsiona",
     "gerenciamento": "gerenciamnto"
   },
@@ -86,5 +81,10 @@
   {
     "recurso": "recusso",
     "suporte": "suprte"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "melhor": "melhorr",
+    "controle": "controlle"
   }
 ]
