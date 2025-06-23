@@ -1,9 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "controle": "controle.",
     "tecnologia": "tecnolgia",
     "simples": "simlpes"
@@ -89,5 +85,10 @@
     "simples": "simplis",
     "sistema": "sistma",
     "funciona": "funciona."
+  },
+  {
+    "desafio": "desafiu",
+    "exemplo": "exenplo",
+    "arquitetura": "arquitretura"
   }
 ]
