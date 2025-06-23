@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia"
-  },
-  {
     "recurso": "recusso",
     "suporte": "suprte"
   },
@@ -90,5 +87,9 @@
     "simples": "simlpes",
     "exemplo": "exemplo.",
     "recurso": "recusso"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "desafio": "desafío"
   }
 ]
