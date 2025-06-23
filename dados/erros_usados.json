@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "problema": "problema.",
     "complexidade": "complexidade."
   },
@@ -87,5 +83,10 @@
     "processo": "prosseso",
     "abordagem": "abordajem",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "exemplo": "exenplo",
+    "abordagem": "abordagem."
   }
 ]
