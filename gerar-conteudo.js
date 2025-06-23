@@ -593,7 +593,7 @@ let titulosGerados = fs.existsSync(titulosPath)
 }
 
 async function buscarNoticiaX() {
-  const query = encodeURIComponent("arquitetura de software OR .NET OR PostgreSQL OR MAUI lang:pt -is:retweet");
+  const query = encodeURIComponent("arquitetura de software OR .NET OR PostgreSQL OR  lang:pt -is:retweet");
   const url = `https://api.twitter.com/2/tweets/search/recent?query=${query}&tweet.fields=created_at,author_id&expansions=author_id&user.fields=username`;
 
   try {
@@ -781,7 +781,7 @@ const categoriasExistentes = [...new Set(
 
 console.error("ORIGEM",noticia);
 
-const { resumoFonte, textoPrincipal }  = await extrairResumoDaNoticiaReadability("https://learn.microsoft.com/pt-br/dotnet/maui/whats-new/dotnet-10?view=net-maui-9.0");//(noticia.url);
+const { resumoFonte, textoPrincipal }  = await extrairResumoDaNoticiaReadability(noticia.url);
     
 
 
