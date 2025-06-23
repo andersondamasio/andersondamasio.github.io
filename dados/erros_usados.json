@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "sistema": "sistma",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "personalizado": "personalizad",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
@@ -87,5 +82,9 @@
   },
   {
     "tecnologia": "tecnolgia"
+  },
+  {
+    "recurso": "recusso",
+    "suporte": "suprte"
   }
 ]
