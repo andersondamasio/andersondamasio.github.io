@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "tecnologia": "tecnoligia",
     "monitoramento": "monitorameto",
     "constante": "constante."
@@ -92,5 +88,9 @@
     "conhecimento": "conhecimento.",
     "melhor": "melor",
     "desafio": "desafiu"
+  },
+  {
+    "processo": "proceso",
+    "armazenamento": "armasenamento"
   }
 ]
