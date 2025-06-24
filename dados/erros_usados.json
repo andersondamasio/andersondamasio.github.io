@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "exemplo": "exemplo.",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "problema": "problema.",
     "sistema": "sistma",
     "tecnologia": "tecnolgia"
@@ -95,5 +90,10 @@
     "sistema": "sistma",
     "desafio": "desafío",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "tecnologia": "tecnolgia",
+    "muito": "muinto"
   }
 ]
