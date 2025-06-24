@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "monitoramento": "monitorameto",
-    "constante": "constante."
-  },
-  {
     "acesso": "aceso",
     "simples": "simplis",
     "tecnologia": "tecnolgia"
@@ -92,5 +87,10 @@
   {
     "processo": "proceso",
     "armazenamento": "armasenamento"
+  },
+  {
+    "propriedade": "propriadade",
+    "necessidade": "nescessidade",
+    "tecnologia": "tecnolgia"
   }
 ]
