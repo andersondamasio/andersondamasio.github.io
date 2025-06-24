@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "simples": "simplis",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "necessidade": "nescessidade",
     "exemplo": "exenplo"
   },
@@ -92,5 +87,10 @@
     "propriedade": "propriadade",
     "necessidade": "nescessidade",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "operacional": "operacionl",
+    "sistema": "sistéma",
+    "desafio": "desafiu"
   }
 ]
