@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "funciona": "funciona."
-  },
-  {
     "complexidade": "complezidade",
     "monitoramento": "monitramento",
     "melhor": "melor"
@@ -92,5 +88,9 @@
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnnologia",
     "abordagem": "abordajem"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "sistema": "cistema"
   }
 ]
