@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "exemplo": "exenplo"
-  },
-  {
     "simples": "simlpes",
     "exemplo": "exemplo.",
     "recurso": "recusso"
@@ -92,5 +88,10 @@
     "operacional": "operacionl",
     "sistema": "sistéma",
     "desafio": "desafiu"
+  },
+  {
+    "simples": "simplis",
+    "acesso": "acesço",
+    "necessidade": "necessidade."
   }
 ]
