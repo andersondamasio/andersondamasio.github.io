@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "monitoramento": "monitramento",
-    "melhor": "melor"
-  },
-  {
     "arquitetura": "arquitertura",
     "constante": "constanate"
   },
@@ -92,5 +87,10 @@
   {
     "arquitetura": "arquitretura",
     "sistema": "cistema"
+  },
+  {
+    "controle": "contrle",
+    "sistema": "sistma",
+    "arquitetura": "arquitertura"
   }
 ]
