@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliadde",
-    "prioridade": "prioriade."
-  },
-  {
     "muito": "muinto",
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvmento"
@@ -91,5 +87,10 @@
     "suporte": "suporte.",
     "exemplo": "exemplo.",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "problema": "problema.",
+    "sistema": "sistma",
+    "tecnologia": "tecnolgia"
   }
 ]
