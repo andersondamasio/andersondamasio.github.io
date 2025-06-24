@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "constante": "constanate"
-  },
-  {
     "simples": "simplis",
     "sistema": "sistma",
     "funciona": "funciona."
@@ -92,5 +88,10 @@
     "controle": "contrle",
     "sistema": "sistma",
     "arquitetura": "arquitertura"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "acesso": "acesso.",
+    "internet": "internat"
   }
 ]
