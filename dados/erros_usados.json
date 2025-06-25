@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "arquitetura": "arquitertura",
-    "internet": "internert"
-  },
-  {
     "sistema": "sistma",
     "desafio": "desafío",
     "tecnologia": "tecnnologia"
@@ -90,5 +85,10 @@
   },
   {
     "acesso": "aceso"
+  },
+  {
+    "constante": "constanate",
+    "desenvolvimento": "desenvolvmento",
+    "suporte": "suprte"
   }
 ]
