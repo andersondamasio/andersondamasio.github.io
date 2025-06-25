@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "propriadade",
-    "necessidade": "nescessidade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "operacional": "operacionl",
     "sistema": "sistéma",
     "desafio": "desafiu"
@@ -92,5 +87,10 @@
     "funciona": "funciona,",
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "estrutura": "estrura",
+    "armazenamento": "armazenamentto",
+    "necessidade": "nescessidade"
   }
 ]
