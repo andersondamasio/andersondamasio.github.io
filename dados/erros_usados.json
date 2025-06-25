@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "abordagem": "abordagem.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "sistema": "sistéma",
     "arquitetura": "arquitertura",
     "internet": "internert"
@@ -92,5 +87,8 @@
     "tecnologia": "tecnolgia",
     "simples": "simplis",
     "desafio": "desafiu"
+  },
+  {
+    "acesso": "aceso"
   }
 ]

@@ -11900,5 +11900,14 @@
     "dataFonte": "2025-06-25T17:01:21.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/your-next-job-managing-a-fleet-of-ai-agents/"
+  },
+  {
+    "titulo": "A nova era do Azure DevOps: liberdade e segurança na gestão de acessos",
+    "noticiaOriginal": "Removing Azure Resource Manager reliance on Azure DevOps sign-ins",
+    "url": "artigos/devops/a-nova-era-do-azure-devops-liberdade-e-seguranca-na-gestao-de-acessos.html",
+    "data": "2025-06-25T18:29:16.914Z",
+    "dataFonte": "2025-06-25T18:24:26.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://devblogs.microsoft.com/devops/removing-azure-resource-manager-reliance-on-azure-devops-sign-ins/"
   }
 ]
