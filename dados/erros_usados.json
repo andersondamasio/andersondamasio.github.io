@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "sistema": "sistma",
-    "arquitetura": "arquitertura"
-  },
-  {
     "arquitetura": "arquitretura",
     "acesso": "acesso.",
     "internet": "internat"
@@ -93,5 +88,9 @@
   {
     "desenvolvimento": "desenvolvmento",
     "prioridade": "prioriade"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "abordagem": "abordajem"
   }
 ]
