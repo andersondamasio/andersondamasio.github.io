@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "correto": "coreto",
-    "arquitetura": "arquitretura"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "exemplo": "exemplo,"
   },
@@ -90,5 +85,10 @@
   {
     "monitoramento": "monitorameto",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "desafio": "desafiu",
+    "conhecimento": "conhecimento.",
+    "sistema": "sistéma"
   }
 ]
