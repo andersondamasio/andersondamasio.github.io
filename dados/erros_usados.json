@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "acesso": "acesço",
-    "necessidade": "necessidade."
-  },
-  {
     "desafio": "desafiu",
     "constante": "constanate",
     "exemplo": "exenplo"
@@ -92,5 +87,10 @@
     "estrutura": "estrtura",
     "melhor": "melor",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "processo": "prosseso",
+    "arquitetura": "arquitretura",
+    "sistema": "sistma"
   }
 ]
