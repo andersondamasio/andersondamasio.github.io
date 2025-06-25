@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "sistema": "cistema"
-  },
-  {
     "controle": "contrle",
     "sistema": "sistma",
     "arquitetura": "arquitertura"
@@ -93,5 +89,9 @@
   {
     "suporte": "suprte",
     "problema": "problema."
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "prioridade": "prioriade"
   }
 ]
