@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "sistema": "sistma",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnnologia",
     "abordagem": "abordajem"
@@ -95,5 +90,9 @@
     "dispositivo": "dispotivo",
     "tecnologia": "tecnolgia",
     "muito": "muinto"
+  },
+  {
+    "complexidade": "complexidade.",
+    "tecnologia": "tecnnologia"
   }
 ]
