@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "desafio": "desafiu",
     "conhecimento": "conhecimento.",
     "sistema": "sistéma"
@@ -95,5 +91,9 @@
     "abordagem": "abordagem.",
     "processo": "processso",
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitertura"
   }
 ]
