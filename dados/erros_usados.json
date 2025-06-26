@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "gerenciamento": "gerenciamente",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "constante": "constanate",
     "monitoramento": "monitorameto",
     "tecnologia": "tecnolgia"
@@ -90,5 +85,9 @@
   },
   {
     "simples": "simlpes"
+  },
+  {
+    "sistema": "sistéma",
+    "arquitetura": "arquitretura"
   }
 ]
