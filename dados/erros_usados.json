@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona,",
-    "arquitetura": "arquitretura",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "estrutura": "estrura",
     "armazenamento": "armazenamentto",
     "necessidade": "nescessidade"
@@ -94,5 +89,10 @@
     "controle": "controle.",
     "muito": "muto",
     "acesso": "acesço"
+  },
+  {
+    "exemplo": "exenplo",
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura"
   }
 ]
