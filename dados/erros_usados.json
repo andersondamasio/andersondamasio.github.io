@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "abordagem": "abordage"
-  },
-  {
     "muito": "muinto",
     "simples": "simlpes",
     "funcionalidade": "funcionaliade"
@@ -94,5 +90,10 @@
     "simples": "simplis",
     "estrutura": "estrututra",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura",
+    "necessidade": "necissidade"
   }
 ]
