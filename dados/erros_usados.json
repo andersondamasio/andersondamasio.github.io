@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "sistema": "sistma",
-    "processo": "processso"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitertura",
     "prioridade": "prioridade."
@@ -93,5 +88,9 @@
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "internet": "internete",
+    "necessidade": "nescessidade"
   }
 ]
