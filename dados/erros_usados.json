@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "desafio": "desafiu",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "complexidade": "complezidade",
     "arquitetura": "arquitertura"
   },
@@ -88,5 +83,9 @@
   {
     "estrutura": "estrtura",
     "arquitetura": "arquitertura"
+  },
+  {
+    "processo": "processso",
+    "conhecimento": "conhecimeto"
   }
 ]
