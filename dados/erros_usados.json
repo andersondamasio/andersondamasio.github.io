@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "resultado": "resultao"
-  },
-  {
     "monitoramento": "monitoramento.",
     "sistema": "sistma",
     "processo": "processso"
@@ -92,5 +88,10 @@
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnoligia",
     "sistema": "cistema"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquiteturra"
   }
 ]
