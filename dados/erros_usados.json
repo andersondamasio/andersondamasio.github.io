@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona,",
-    "exemplo": "exenplo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "recurso": "reccurso",
     "arquitetura": "arquitretura"
   },
@@ -88,5 +83,10 @@
     "mensagem": "menssagen",
     "sistema": "sistma",
     "simples": "simplis"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "exemplo": "exemplo.",
+    "muito": "muiito"
   }
 ]
