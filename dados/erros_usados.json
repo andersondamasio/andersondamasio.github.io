@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "utilizado": "utilizdo."
-  },
-  {
     "virtual": "virtuaal",
     "resultado": "resultao"
   },
@@ -91,5 +87,10 @@
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra",
     "constante": "constanate"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "tecnologia": "tecnoligia",
+    "sistema": "cistema"
   }
 ]
