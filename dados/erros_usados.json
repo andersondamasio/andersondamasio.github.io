@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "arquitetura": "arquitretura"
-  },
-  {
     "arquitetura": "arquitertura",
     "sistema": "sistma",
     "desenvolvimento": "desenvolvmento"
@@ -91,5 +87,9 @@
   {
     "recurso": "reccurso",
     "funciona": "funciona,"
+  },
+  {
+    "operacional": "operacionl",
+    "tecnologia": "tecnolgia"
   }
 ]
