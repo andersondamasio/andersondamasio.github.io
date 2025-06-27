@@ -12188,5 +12188,14 @@
     "dataFonte": "2025-06-27T01:59:29.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://techcrunch.com/2025/06/26/this-ai-powered-startup-studio-plans-to-launch-100000-companies-a-year-really/"
+  },
+  {
+    "titulo": "Explorando a Vulnerabilidade dos BMCs: O Novo Desafio para a Segurança de Servidores",
+    "noticiaOriginal": "Actively exploited vulnerability gives extraordinary control over server fleets",
+    "url": "artigos/seguranca/explorando-a-vulnerabilidade-dos-bmcs-o-novo-desafio-para-a-seguranca-de-servidores.html",
+    "data": "2025-06-27T07:19:30.596Z",
+    "dataFonte": "2025-06-26T22:52:42.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/06/active-exploitation-of-ami-management-tool-imperils-thousands-of-servers/"
   }
 ]
