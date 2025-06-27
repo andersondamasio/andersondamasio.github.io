@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "arquitetura": "arquitertura"
-  },
-  {
     "funciona": "funciona,",
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia"
@@ -87,5 +83,10 @@
   {
     "processo": "processso",
     "conhecimento": "conhecimeto"
+  },
+  {
+    "mensagem": "menssagen",
+    "sistema": "sistma",
+    "simples": "simplis"
   }
 ]

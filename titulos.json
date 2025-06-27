@@ -12215,5 +12215,14 @@
     "dataFonte": "2025-06-27T09:05:00.000Z",
     "categoria": "Carreira",
     "urlFonte": "https://www.infoq.com/articles/strategic-influence-staff-engineer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Navegando na Nova Era do AWS Lambda: Avro e Protobuf na Prática",
+    "noticiaOriginal": "AWS Lambda Gains Native Avro and Protobuf Support for Kafka Events with Schema Registry Integration",
+    "url": "artigos/cloud/navegando-na-nova-era-do-aws-lambda-avro-e-protobuf-na-pratica.html",
+    "data": "2025-06-27T10:21:10.228Z",
+    "dataFonte": "2025-06-27T10:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/06/aws-lambda-avro-protobuf-kafka/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
