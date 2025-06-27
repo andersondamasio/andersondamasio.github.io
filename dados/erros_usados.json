@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "arquitetura": "arquitretura"
-  },
-  {
     "arquitetura": "arquiteturra"
   },
   {
@@ -88,5 +84,10 @@
     "tecnologia": "tecnolgia",
     "exemplo": "exemplo.",
     "muito": "muiito"
+  },
+  {
+    "acesso": "acesço",
+    "desafio": "desafío",
+    "controle": "contrle"
   }
 ]
