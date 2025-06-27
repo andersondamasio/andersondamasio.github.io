@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "arquitetura": "arquitretura",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "necessidade": "necessidade.",
     "constante": "constanate",
     "parceria": "parceria."
@@ -92,5 +87,10 @@
     "tecnologia": "tecnnologia",
     "necessidade": "necissidade",
     "controle": "controle."
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnolgia",
+    "conhecimento": "conhecimento."
   }
 ]
