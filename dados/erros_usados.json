@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnolgia",
-    "conhecimento": "conhecimento."
-  },
-  {
     "monitoramento": "monitorameto",
     "gerenciamento": "gerenciamneto"
   },
@@ -89,5 +84,9 @@
   {
     "muito": "muinto",
     "simples": "simplis"
+  },
+  {
+    "resultado": "resultao",
+    "tecnologia": "tecnoligia"
   }
 ]
