@@ -1,9 +1,5 @@
 [
   {
-    "efetivo": "efetívo",
-    "melhor": "melhorr"
-  },
-  {
     "mensagem": "menssagem",
     "desenvolvimento": "desenvolvmento",
     "desafio": "desaío"
@@ -88,5 +84,10 @@
   {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura"
+  },
+  {
+    "suporte": "suporte.",
+    "necessidade": "necessidade.",
+    "sistema": "sistéma"
   }
 ]
