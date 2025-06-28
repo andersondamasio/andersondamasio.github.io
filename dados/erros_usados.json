@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "tecnologia": "tecnoligia",
-    "sistema": "cistema"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra"
@@ -90,5 +85,10 @@
   {
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "constante": "constate",
+    "complexidade": "complexsidade",
+    "armazenamento": "armazanamento"
   }
 ]
