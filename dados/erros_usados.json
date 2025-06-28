@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "muito": "muiito",
     "arquitetura": "arquitertura"
@@ -90,5 +86,10 @@
     "acesso": "acesso.",
     "componente": "componentte",
     "rotina": "rotna"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "simples": "cimples",
+    "prioridade": "prioriade."
   }
 ]
