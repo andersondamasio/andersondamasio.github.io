@@ -1,9 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "operacional": "operaciona"
-  },
-  {
     "constante": "constate",
     "processo": "processso",
     "desenvolvimento": "desenvolvmento"
@@ -91,5 +87,8 @@
     "prioridade": "prioriade",
     "sistema": "sistma",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "tecnologia": "tecnolgia"
   }
 ]
