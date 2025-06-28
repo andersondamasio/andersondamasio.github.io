@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "gerenciamento": "gerenciamneto"
-  },
-  {
     "efetivo": "efetívo",
     "melhor": "melhorr"
   },
@@ -88,5 +84,9 @@
   {
     "resultado": "resultao",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura"
   }
 ]
