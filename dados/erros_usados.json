@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "processo": "processso",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "recurso": "reccurso",
     "funciona": "funciona,"
   },
@@ -90,5 +85,9 @@
   },
   {
     "tecnologia": "tecnolgia"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
