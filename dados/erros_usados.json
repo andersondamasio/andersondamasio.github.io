@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internete",
-    "necessidade": "nescessidade"
-  },
-  {
     "tecnologia": "tecnnologia",
     "necessidade": "necissidade",
     "controle": "controle."
@@ -89,5 +85,10 @@
   {
     "abordagem": "abordajem",
     "sistema": "sistéma"
+  },
+  {
+    "processo": "processso",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitertura"
   }
 ]
