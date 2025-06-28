@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "internet": "internete",
     "necessidade": "nescessidade"
   },
@@ -90,5 +85,9 @@
     "constante": "constate",
     "complexidade": "complexsidade",
     "armazenamento": "armazanamento"
+  },
+  {
+    "abordagem": "abordajem",
+    "sistema": "sistéma"
   }
 ]
