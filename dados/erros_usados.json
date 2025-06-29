@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "componente": "componentte",
-    "rotina": "rotna"
-  },
-  {
     "arquitetura": "arquitretura",
     "simples": "cimples",
     "prioridade": "prioriade."
@@ -90,5 +85,9 @@
     "resultado": "resultao",
     "processo": "proceso",
     "melhor": "melhorr"
+  },
+  {
+    "recurso": "recusso",
+    "exemplo": "exemplo."
   }
 ]
