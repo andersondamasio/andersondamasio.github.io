@@ -1,10 +1,5 @@
 [
   {
-    "mensagem": "menssagem",
-    "desenvolvimento": "desenvolvmento",
-    "desafio": "desaío"
-  },
-  {
     "necessidade": "necissidade",
     "simples": "simlpes"
   },
@@ -89,5 +84,9 @@
     "suporte": "suporte.",
     "necessidade": "necessidade.",
     "sistema": "sistéma"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "tecnologia": "tecnolgia"
   }
 ]
