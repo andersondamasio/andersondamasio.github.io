@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muinto",
-    "simples": "simplis"
-  },
-  {
     "resultado": "resultao",
     "tecnologia": "tecnoligia"
   },
@@ -88,5 +84,10 @@
   {
     "desenvolvimento": "desenvolvimente",
     "monitoramento": "monitorameto"
+  },
+  {
+    "sistema": "sistma",
+    "estrutura": "estrtura",
+    "arquitetura": "arquitertura"
   }
 ]
