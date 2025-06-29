@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "suporte": "suporte.",
     "necessidade": "necessidade.",
     "sistema": "sistéma"
@@ -88,5 +84,10 @@
   },
   {
     "arquitetura": "arquitretura"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquiteturra",
+    "constante": "constate"
   }
 ]
