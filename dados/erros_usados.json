@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "complexidade": "complexsidade",
-    "armazenamento": "armazanamento"
-  },
-  {
     "abordagem": "abordajem",
     "sistema": "sistéma"
   },
@@ -89,5 +84,10 @@
   {
     "funciona": "funciona,",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "problema": "problema.",
+    "conectado": "conectado."
   }
 ]
