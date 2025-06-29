@@ -12629,5 +12629,14 @@
     "dataFonte": "2025-06-29T09:30:14.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/google-just-gave-its-photos-app-the-feature-upgrade-it-deserves-heres-whats-new/"
+  },
+  {
+    "titulo": "A nova era do C++: Reflexão, Contratos e Execução Assíncrona",
+    "noticiaOriginal": "C++26 Draft Finalized with Static Reflection, Contracts, and Sender/Receiver Types",
+    "url": "artigos/programacao/a-nova-era-do-c-reflexao-contratos-e-execucao-assincrona.html",
+    "data": "2025-06-29T12:37:12.639Z",
+    "dataFonte": "2025-06-27T18:00:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/06/cpp-26-feature-complete/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
