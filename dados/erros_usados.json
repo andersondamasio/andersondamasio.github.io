@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "tecnologia": "tecnoligia",
-    "melhor": "melhorr"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "estrutura": "estrututra",
     "tecnologia": "tecnolgia"
@@ -89,5 +84,10 @@
     "tecnologia": "tecnnologia",
     "sistema": "sistma",
     "exemplo": "exenplo"
+  },
+  {
+    "sistema": "cistema",
+    "arquitetura": "arquiteturra",
+    "estrutura": "estrututra"
   }
 ]
