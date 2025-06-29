@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "necessidade": "necessidade.",
-    "sistema": "sistéma"
-  },
-  {
     "monitoramento": "monitorameto",
     "tecnologia": "tecnolgia"
   },
@@ -89,5 +84,9 @@
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra",
     "constante": "constate"
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "exemplo": "exemplo,"
   }
 ]
