@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia"
-  },
-  {
     "dispositivo": "dispositivo.",
     "desenvolvimento": "desenvolvmento"
   },
@@ -88,5 +85,9 @@
     "acesso": "acesço",
     "funcionalidade": "funcionalidade.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia"
   }
 ]
