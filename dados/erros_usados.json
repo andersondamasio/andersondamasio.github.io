@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura"
   },
@@ -89,5 +85,8 @@
     "sistema": "sistma",
     "estrutura": "estrtura",
     "arquitetura": "arquitertura"
+  },
+  {
+    "arquitetura": "arquitretura"
   }
 ]
