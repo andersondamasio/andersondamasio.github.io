@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "estrutura": "estrtura",
-    "arquitetura": "arquitertura"
-  },
-  {
     "arquitetura": "arquitretura"
   },
   {
@@ -92,5 +87,10 @@
     "funciona": "funsiona",
     "abordagem": "abordagem.",
     "exemplo": "exemplo."
+  },
+  {
+    "desafio": "desafiu",
+    "acesso": "acesço",
+    "tecnologia": "tecnnologia"
   }
 ]
