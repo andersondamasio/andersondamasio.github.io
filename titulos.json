@@ -12818,5 +12818,14 @@
     "dataFonte": "2025-06-30T10:00:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/06/30/spotify-will-revamp-its-discover-weekly-playlist-after-ten-years/"
+  },
+  {
+    "titulo": "Reduzindo o Inchaço das Imagens Docker: Um Passo a Passo para Otimização",
+    "noticiaOriginal": "Article: Why Is My Docker Image So Big? A Deep Dive with ‘dive’ to Find the Bloat",
+    "url": "artigos/devops/reduzindo-o-inchaco-das-imagens-docker-um-passo-a-passo-para-otimizacao.html",
+    "data": "2025-06-30T11:17:09.547Z",
+    "dataFonte": "2025-06-30T11:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/articles/docker-size-dive/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "exemplo": "exemplo.",
-    "abordagem": "abordage"
-  },
-  {
     "funciona": "funciona,",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +85,10 @@
     "complexidade": "complexsidade",
     "sistema": "cistema",
     "abordagem": "abordajem"
+  },
+  {
+    "operacional": "operaciona",
+    "resultado": "resultao",
+    "exemplo": "exemplo."
   }
 ]
