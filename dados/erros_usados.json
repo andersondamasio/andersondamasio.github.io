@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "conhecimento": "conhecimeto"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "monitoramento": "monitorameto"
   },
@@ -91,5 +87,9 @@
     "arquitetura": "arquitretura",
     "sistema": "sistma",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "componente": "componente.",
+    "arquitetura": "arquitertura"
   }
 ]
