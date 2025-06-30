@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra",
     "constante": "constate"
@@ -92,5 +89,9 @@
     "desafio": "desafiu",
     "acesso": "acesço",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
