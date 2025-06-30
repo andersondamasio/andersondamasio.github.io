@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "sistema": "sistma",
-    "exemplo": "exenplo"
-  },
-  {
     "sistema": "cistema",
     "arquitetura": "arquiteturra",
     "estrutura": "estrututra"
@@ -88,5 +83,10 @@
   {
     "processo": "processso",
     "armazenamento": "armazenamentto"
+  },
+  {
+    "necessidade": "necessidade.",
+    "suporte": "suportte",
+    "simples": "cimples"
   }
 ]
