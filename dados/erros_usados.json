@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "resultado": "resultao",
     "processo": "proceso",
     "melhor": "melhorr"
@@ -89,5 +85,10 @@
     "geralmente": "geralment",
     "processo": "prosseso",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "controle": "contrle",
+    "monitoramento": "monitramento",
+    "arquitetura": "arquiteturra"
   }
 ]
