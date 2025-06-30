@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "exemplo": "exemplo,",
-    "recurso": "reccurso"
-  },
-  {
     "desafio": "desaío",
     "exemplo": "exemplo.",
     "abordagem": "abordage"
@@ -90,5 +85,10 @@
   {
     "mensagem": "menssagem",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "complexidade": "complexsidade",
+    "sistema": "cistema",
+    "abordagem": "abordajem"
   }
 ]
