@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "exemplo": "exemplo."
-  },
-  {
     "gerenciamento": "gerenciamente",
     "exemplo": "exemplo,",
     "recurso": "reccurso"
@@ -90,5 +86,9 @@
     "internet": "internat",
     "arquitetura": "arquitretura",
     "necessidade": "necissidade"
+  },
+  {
+    "mensagem": "menssagem",
+    "funcionalidade": "funcionalidade."
   }
 ]
