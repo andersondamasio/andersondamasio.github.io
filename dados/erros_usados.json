@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "monitoramento": "monitorameto"
-  },
-  {
     "sistema": "sistma",
     "estrutura": "estrtura",
     "arquitetura": "arquitertura"
@@ -91,5 +87,10 @@
   {
     "componente": "componente.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "funciona": "funsiona",
+    "abordagem": "abordagem.",
+    "exemplo": "exemplo."
   }
 ]
