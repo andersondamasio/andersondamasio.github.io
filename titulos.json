@@ -12827,5 +12827,14 @@
     "dataFonte": "2025-06-30T11:00:00.000Z",
     "categoria": "DevOps",
     "urlFonte": "https://www.infoq.com/articles/docker-size-dive/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Desvendando o Impacto do OpenTelemetry na Performance de Aplicações Go",
+    "noticiaOriginal": "Report Shows OpenTelemetry’s Impact on Go Performance",
+    "url": "artigos/programacao/desvendando-o-impacto-do-opentelemetry-na-performance-de-aplicacoes-go.html",
+    "data": "2025-06-30T12:39:23.320Z",
+    "dataFonte": "2025-06-30T12:00:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/06/opentelemetry-go-performance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

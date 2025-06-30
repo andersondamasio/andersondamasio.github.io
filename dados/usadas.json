@@ -7024,5 +7024,10 @@
     "intro": "A notícia me fez lembrar de quando subestimei Article: Why Is My Docker Image So Big? A Deep Dive with ‘dive’ to Find the Bloat e paguei o preço com uma madrugada em claro.",
     "introOriginal": "A notícia me fez lembrar de quando subestimei __TEMATICA__ e paguei o preço com uma madrugada em claro.",
     "data": "2025-06-30"
+  },
+  "2025-06-30-desvendando-o-impacto-do-opentelemetry-na-performance-de-aplicacoes-go": {
+    "intro": "Sempre que releio algo sobre Report Shows OpenTelemetry’s Impact on Go Performance, percebo o quanto já evoluí nessa parte do desenvolvimento.",
+    "introOriginal": "Sempre que releio algo sobre __TEMATICA__, percebo o quanto já evoluí nessa parte do desenvolvimento.",
+    "data": "2025-06-30"
   }
 }
