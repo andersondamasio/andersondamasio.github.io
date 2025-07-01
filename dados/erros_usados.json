@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "menssagem",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "complexidade": "complexsidade",
     "sistema": "cistema",
     "abordagem": "abordajem"
@@ -90,5 +86,10 @@
     "constante": "constanate",
     "processo": "prosseso",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "estrutura": "estrura",
+    "conhecimento": "conhescimento",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
