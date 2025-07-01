@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "suporte": "suprte"
-  },
-  {
     "conhecimento": "conhescimento",
     "suporte": "suporte."
   },
@@ -92,5 +88,9 @@
     "arquitetura": "arquitretura",
     "utilizado": "utilizdo",
     "simples": "simlpes"
+  },
+  {
+    "operacional": "operaciona",
+    "abordagem": "abordage"
   }
 ]
