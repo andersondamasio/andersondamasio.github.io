@@ -1,9 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "monitoramento": "monitoramento."
-  },
-  {
     "dispositivo": "dispotivo",
     "abordagem": "abordajem",
     "processo": "processso"
@@ -91,5 +87,9 @@
     "internet": "internete",
     "acesso": "acesso.",
     "controle": "controle."
+  },
+  {
+    "resultado": "resultao",
+    "componente": "componentte"
   }
 ]
