@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "sistema": "cistema",
-    "abordagem": "abordajem"
-  },
-  {
     "operacional": "operaciona",
     "resultado": "resultao",
     "exemplo": "exemplo."
@@ -91,5 +86,10 @@
     "estrutura": "estrura",
     "conhecimento": "conhescimento",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "exemplo": "exenplo",
+    "prioridade": "prioriade",
+    "dispositivo": "dispotivo"
   }
 ]
