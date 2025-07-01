@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "muito": "muinto",
-    "sistema": "sistma"
-  },
-  {
     "recurso": "reccurso",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,10 @@
     "utilizado": "utilizdo.",
     "exemplo": "exenplo",
     "melhor": "melhorr"
+  },
+  {
+    "problema": "problema.",
+    "controle": "controle.",
+    "acesso": "acesço"
   }
 ]
