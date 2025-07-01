@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "necessidade": "nescessidade",
-    "arquitetura": "arquitretura"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnnologia"
   },
@@ -91,5 +86,10 @@
     "complexidade": "complexsidade",
     "monitoramento": "monitorameto",
     "desafio": "desafiu"
+  },
+  {
+    "recurso": "reccurso",
+    "estrutura": "estrututra",
+    "funciona": "funciona,"
   }
 ]
