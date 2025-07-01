@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "arquitetura": "arquitretura",
-    "necessidade": "necissidade"
-  },
-  {
     "mensagem": "menssagem",
     "funcionalidade": "funcionalidade."
   },
@@ -90,5 +85,10 @@
     "arquitetura": "arquiteturra",
     "funciona": "funciona,",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "constante": "constanate",
+    "processo": "prosseso",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
