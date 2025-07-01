@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "tecnologia": "tecnoligia",
-    "exemplo": "exenplo"
-  },
-  {
     "arquitetura": "arquiteturra",
     "conhecimento": "conhecimeto",
     "processo": "processso"
@@ -93,5 +88,9 @@
     "recurso": "reccurso",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "exemplo": "exenplo",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
