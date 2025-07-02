@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "arquitetura": "arquitretura",
     "utilizado": "utilizdo",
     "simples": "simlpes"
@@ -88,5 +84,10 @@
     "acesso": "acesso.",
     "desenvolvimento": "desenvolmento",
     "prioridade": "prioriade"
+  },
+  {
+    "estrutura": "estrura",
+    "automatizado": "automatizdo.",
+    "tecnologia": "tecnnologia"
   }
 ]
