@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "processo": "proceso"
-  },
-  {
     "internet": "internete",
     "acesso": "acesso.",
     "controle": "controle."
@@ -90,5 +86,10 @@
   {
     "prioridade": "prioridade.",
     "conectado": "conectdo"
+  },
+  {
+    "sistema": "cistema",
+    "arquitetura": "arquiteturra",
+    "monitoramento": "monitoramento."
   }
 ]
