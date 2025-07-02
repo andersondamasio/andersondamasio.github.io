@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "melhor": "melhorr",
     "conhecimento": "conhescimento",
     "muito": "muto"
@@ -90,5 +86,10 @@
     "suporte": "suprte",
     "exemplo": "exenplo",
     "operacional": "operaciona"
+  },
+  {
+    "problema": "poblema",
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
