@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "processo": "prosseso",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "estrutura": "estrura",
     "conhecimento": "conhescimento",
     "desenvolvimento": "desenvolvimente"
@@ -93,5 +88,10 @@
     "tecnologia": "tecnolgia",
     "sistema": "cistema",
     "problema": "probrema"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvimente",
+    "processo": "processso"
   }
 ]
