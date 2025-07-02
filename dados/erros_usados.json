@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "sistema": "cistema",
-    "problema": "probrema"
-  },
-  {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente",
     "processo": "processso"
@@ -89,5 +84,9 @@
     "desafio": "desafiu",
     "arquitetura": "arquitretura",
     "sistema": "sistéma"
+  },
+  {
+    "efetivo": "efetvo",
+    "sistema": "cistema"
   }
 ]
