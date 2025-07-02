@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "melhor": "melor",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "tecnologia": "tecnolgia",
     "sistema": "cistema",
     "problema": "probrema"
@@ -89,5 +84,10 @@
   {
     "controle": "controlle",
     "funciona": "funsiona"
+  },
+  {
+    "desafio": "desafiu",
+    "arquitetura": "arquitretura",
+    "sistema": "sistéma"
   }
 ]
