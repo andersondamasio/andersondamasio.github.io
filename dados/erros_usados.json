@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "prioridade": "prioriade",
-    "dispositivo": "dispotivo"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "melhor": "melhorr",
     "desenvolvimento": "desenvolmento"
@@ -92,5 +87,9 @@
   {
     "sistema": "cistema",
     "processo": "proceso"
+  },
+  {
+    "constante": "constate",
+    "exemplo": "exemplo."
   }
 ]
