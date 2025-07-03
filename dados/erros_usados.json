@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "exemplo": "exenplo",
-    "operacional": "operaciona"
-  },
-  {
     "problema": "poblema",
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolmento"
@@ -89,5 +84,9 @@
     "estrutura": "estrtura",
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquiteturra"
   }
 ]
