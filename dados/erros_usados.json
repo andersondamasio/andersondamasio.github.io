@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "dispositivo": "dispositivo.",
-    "sistema": "sistéma"
-  },
-  {
     "acesso": "acesso.",
     "desenvolvimento": "desenvolmento",
     "prioridade": "prioriade"
@@ -93,5 +88,10 @@
     "processo": "prosseso",
     "exemplo": "exemplo.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "componente": "componete",
+    "exemplo": "exemplo,",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
