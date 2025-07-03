@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parceriaa",
-    "acesso": "acesço"
-  },
-  {
     "suporte": "suprte",
     "exemplo": "exenplo",
     "operacional": "operaciona"
@@ -88,5 +84,10 @@
   {
     "abordagem": "abordage",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "estrutura": "estrtura",
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
