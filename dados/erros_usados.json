@@ -1,10 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "prioridade": "prioridade.",
     "conectado": "conectdo"
   },
@@ -88,5 +83,10 @@
   {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "suporte": "suportte",
+    "arquitetura": "arquitertura",
+    "sistema": "sistma"
   }
 ]
