@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constate",
-    "exemplo": "exemplo."
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "necessidade": "necessidade.",
     "arquitetura": "arquitertura"
@@ -88,5 +84,10 @@
     "abordagem": "abordajem",
     "complexidade": "complezidade",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "muito": "muto",
+    "exemplo": "exemplo.",
+    "arquitetura": "arquiteturra"
   }
 ]
