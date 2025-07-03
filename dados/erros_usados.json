@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "constante": "constanate"
-  },
-  {
     "abordagem": "abordajem",
     "complexidade": "complezidade",
     "tecnologia": "tecnoligia"
@@ -93,5 +89,9 @@
     "prioridade": "prioridade.",
     "tecnologia": "tecnolgia",
     "acesso": "acesço"
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "tecnologia": "tecnoligia"
   }
 ]
