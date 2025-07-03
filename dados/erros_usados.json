@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquiteturra",
-    "exemplo": "exenplo"
-  },
-  {
     "controle": "controlle",
     "funciona": "funsiona"
   },
@@ -92,5 +87,10 @@
   {
     "conhecimento": "conhecimento.",
     "exemplo": "exemplo."
+  },
+  {
+    "monitoramento": "monitorameto",
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquiteturra"
   }
 ]
