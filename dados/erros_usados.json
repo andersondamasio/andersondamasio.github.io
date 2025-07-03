@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "arquitetura": "arquiteturra",
-    "monitoramento": "monitoramento."
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
   },
@@ -89,5 +84,10 @@
     "consistente": "consitente",
     "simples": "simlpes",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "problema": "problema.",
+    "geralmente": "geralmemte",
+    "acesso": "acesso."
   }
 ]
