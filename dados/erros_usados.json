@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "conhecimento": "conhecimeto",
     "simples": "simplis"
   },
@@ -89,5 +85,10 @@
     "problema": "problema.",
     "geralmente": "geralmemte",
     "acesso": "acesso."
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "tecnologia": "tecnnologia",
+    "simples": "simplis"
   }
 ]
