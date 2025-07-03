@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "processo": "proceso"
-  },
-  {
     "constante": "constate",
     "exemplo": "exemplo."
   },
@@ -87,5 +83,10 @@
   {
     "arquitetura": "arquiteturra",
     "constante": "constanate"
+  },
+  {
+    "abordagem": "abordajem",
+    "complexidade": "complezidade",
+    "tecnologia": "tecnoligia"
   }
 ]
