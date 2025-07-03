@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvimente",
-    "processo": "processso"
-  },
-  {
     "sistema": "cistema",
     "processo": "proceso"
   },
@@ -88,5 +83,9 @@
   {
     "efetivo": "efetvo",
     "sistema": "cistema"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "constante": "constanate"
   }
 ]
