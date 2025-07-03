@@ -13430,5 +13430,14 @@
     "dataFonte": "2025-07-03T11:28:48.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.bbc.com/news/articles/cdxl0w1w394o"
+  },
+  {
+    "titulo": "A nova era das **Pipelines Declarativas**: Como o Databricks está mudando o jogo do Apache Spark",
+    "noticiaOriginal": "Databricks Contributes Spark Declarative Pipelines to Apache Spark",
+    "url": "artigos/banco-de-dados/a-nova-era-das-pipelines-declarativas-como-o-databricks-esta-mudando-o-jogo-do-apache-spark.html",
+    "data": "2025-07-03T13:32:03.859Z",
+    "dataFonte": "2025-07-03T13:00:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2025/07/databricks-declarative-pipelines/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
