@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "conectado": "conectdo"
-  },
-  {
     "sistema": "cistema",
     "arquitetura": "arquiteturra",
     "monitoramento": "monitoramento."
@@ -88,5 +84,10 @@
     "suporte": "suportte",
     "arquitetura": "arquitertura",
     "sistema": "sistma"
+  },
+  {
+    "consistente": "consitente",
+    "simples": "simlpes",
+    "tecnologia": "tecnoligia"
   }
 ]
