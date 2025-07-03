@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "rotina": "rotna"
-  },
-  {
     "virtual": "virtal",
     "dispositivo": "dispositivo.",
     "sistema": "sistéma"
@@ -92,5 +88,10 @@
     "necessidade": "necissidade",
     "recurso": "recuro",
     "gerenciamento": "gerenciamente"
+  },
+  {
+    "processo": "prosseso",
+    "exemplo": "exemplo.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
