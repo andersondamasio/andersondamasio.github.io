@@ -1,9 +1,5 @@
 [
   {
-    "efetivo": "efetvo",
-    "sistema": "cistema"
-  },
-  {
     "arquitetura": "arquiteturra",
     "constante": "constanate"
   },
@@ -92,5 +88,10 @@
   {
     "acesso": "aceso",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "prioridade": "prioridade.",
+    "tecnologia": "tecnolgia",
+    "acesso": "acesço"
   }
 ]
