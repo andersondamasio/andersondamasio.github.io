@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "tecnologia": "tecnolgia",
     "exemplo": "exemplo,"
   },
@@ -86,5 +82,10 @@
   {
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "sistema": "cistema",
+    "tecnologia": "tecnoligia"
   }
 ]
