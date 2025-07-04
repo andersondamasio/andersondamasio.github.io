@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "suporte": "suportte",
     "arquitetura": "arquitertura",
     "sistema": "sistma"
@@ -92,5 +88,9 @@
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia",
     "processo": "prosseso"
+  },
+  {
+    "rotina": "rotna",
+    "simples": "simlpes"
   }
 ]
