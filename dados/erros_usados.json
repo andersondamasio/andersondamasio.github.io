@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "geralmente": "geralmemte",
-    "acesso": "acesso."
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "tecnologia": "tecnnologia",
     "simples": "simplis"
@@ -90,5 +85,10 @@
   },
   {
     "tecnologia": "tecnnologia"
+  },
+  {
+    "abordagem": "abordajem",
+    "mensagem": "menssagem",
+    "arquitetura": "arquitertura"
   }
 ]
