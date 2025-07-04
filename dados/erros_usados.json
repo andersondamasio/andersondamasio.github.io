@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "muito": "muinto",
-    "constante": "constate"
-  },
-  {
     "necessidade": "necissidade",
     "recurso": "recuro",
     "gerenciamento": "gerenciamente"
@@ -90,5 +85,9 @@
     "resultado": "resultao",
     "processo": "processso",
     "abordagem": "abordage"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "tecnologia": "tecnnologia"
   }
 ]
