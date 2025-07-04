@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrtura",
-    "tecnologia": "tecnoligia",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra"
   },
@@ -92,5 +87,10 @@
   {
     "desafio": "desafío",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnolgia",
+    "processo": "prosseso"
   }
 ]
