@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "prioridade": "prioridade.",
     "tecnologia": "tecnolgia",
     "acesso": "acesço"
@@ -87,5 +83,9 @@
     "funcionalidade": "funcionaliade",
     "processo": "prosseso",
     "simples": "simlpes"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "exemplo": "exemplo,"
   }
 ]
