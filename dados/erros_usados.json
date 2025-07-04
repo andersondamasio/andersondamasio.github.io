@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "recurso": "recuro",
-    "gerenciamento": "gerenciamente"
-  },
-  {
     "processo": "prosseso",
     "exemplo": "exemplo.",
     "desenvolvimento": "desenvolvmento"
@@ -89,5 +84,10 @@
   {
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "funciona": "funciona,",
+    "arquitetura": "arquitretura",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
