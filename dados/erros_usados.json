@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultadoo",
-    "problema": "problema.",
-    "necessidade": "nescessidade"
-  },
-  {
     "desafio": "desafío",
     "desenvolvimento": "desenvolmento"
   },
@@ -86,5 +81,9 @@
   },
   {
     "monitoramento": "monitorameto"
+  },
+  {
+    "utilizado": "utilizdo.",
+    "exemplo": "exemplo."
   }
 ]
