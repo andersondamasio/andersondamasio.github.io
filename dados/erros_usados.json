@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "tecnologia": "tecnolgia",
-    "acesso": "acesço"
-  },
-  {
     "conhecimento": "conhecimeto",
     "tecnologia": "tecnoligia"
   },
@@ -87,5 +82,9 @@
   {
     "dispositivo": "dispositivo.",
     "exemplo": "exemplo,"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
