@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "estrutura": "estrtura",
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvimente"
@@ -92,5 +88,9 @@
     "resultado": "resultadoo",
     "problema": "problema.",
     "necessidade": "nescessidade"
+  },
+  {
+    "desafio": "desafío",
+    "desenvolvimento": "desenvolmento"
   }
 ]
