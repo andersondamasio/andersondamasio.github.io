@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "dispositivo": "disposotivo",
-    "melhor": "melhorr"
-  },
-  {
     "conhecimento": "conhecimento.",
     "exemplo": "exemplo."
   },
@@ -88,5 +83,9 @@
     "arquitetura": "arquiteturra",
     "melhor": "melhorr",
     "estrutura": "estrututra"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura"
   }
 ]
