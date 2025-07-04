@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "exemplo": "exemplo,"
-  },
-  {
     "resultado": "resultadoo",
     "problema": "problema.",
     "necessidade": "nescessidade"
@@ -87,5 +83,8 @@
     "desenvolvimento": "desenvolvimente",
     "sistema": "cistema",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "monitoramento": "monitorameto"
   }
 ]
