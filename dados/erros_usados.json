@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura",
     "sistema": "sistma"
@@ -86,5 +82,10 @@
   {
     "muito": "muiito",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "constante": "constate",
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
