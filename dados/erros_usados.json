@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "exemplo": "exemplo,"
-  },
-  {
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvmento"
   },
@@ -86,5 +82,10 @@
   {
     "operacional": "operaciona",
     "estrutura": "estrtura"
+  },
+  {
+    "muito": "muinto",
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnoligia"
   }
 ]
