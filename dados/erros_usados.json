@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizdo.",
-    "exemplo": "exemplo."
-  },
-  {
     "arquitetura": "arquitretura",
     "exemplo": "exemplo,"
   },
@@ -88,5 +84,9 @@
     "desafio": "desafío",
     "gerenciamento": "gerenciamneto",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "funciona": "funciona.",
+    "arquitetura": "arquitertura"
   }
 ]
