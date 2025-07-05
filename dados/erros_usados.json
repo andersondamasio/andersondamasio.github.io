@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "processo": "prosseso",
-    "simples": "simlpes"
-  },
-  {
     "dispositivo": "dispositivo.",
     "exemplo": "exemplo,"
   },
@@ -87,5 +82,9 @@
     "exemplo": "exemplo.",
     "monitoramento": "monitorameto",
     "recurso": "recusso"
+  },
+  {
+    "operacional": "operaciona",
+    "estrutura": "estrtura"
   }
 ]
