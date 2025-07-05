@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "processo": "processso",
-    "abordagem": "abordage"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnnologia"
   },
@@ -85,5 +80,10 @@
     "recurso": "reccurso",
     "funcionalidade": "funcionaliadde",
     "processo": "proceso"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnolgia"
   }
 ]
