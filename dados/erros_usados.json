@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "sistema": "cistema",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "monitoramento": "monitorameto"
   },
   {
@@ -87,5 +82,9 @@
   {
     "problema": "problema.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "necessidade": "necessidade.",
+    "parceria": "parcería"
   }
 ]
