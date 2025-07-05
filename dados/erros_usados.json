@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "arquitetura": "arquitertura"
-  },
-  {
     "acesso": "aceso",
     "conhecimento": "conhecimento."
   },
@@ -89,5 +85,10 @@
     "carregamento": "carregameno",
     "desafio": "desafío",
     "suporte": "suporte."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "processo": "processso",
+    "conhecimento": "conhecimeto"
   }
 ]
