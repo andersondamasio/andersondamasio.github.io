@@ -1,9 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "arquitetura": "arquitretura"
-  },
-  {
     "necessidade": "necessidade.",
     "parceria": "parcería"
   },
@@ -89,5 +85,9 @@
     "resultado": "resutlado",
     "constante": "constate",
     "sistema": "sistma"
+  },
+  {
+    "estrutura": "estrura",
+    "processo": "prosseso"
   }
 ]
