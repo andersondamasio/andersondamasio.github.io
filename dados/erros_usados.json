@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotna",
-    "controle": "contrle",
-    "muito": "muinto"
-  },
-  {
     "recurso": "reccurso",
     "funcionalidade": "funcionaliadde",
     "processo": "proceso"
@@ -90,5 +85,9 @@
   {
     "simples": "simlpes",
     "complexidade": "complezidade"
+  },
+  {
+    "automatizado": "automatizdo",
+    "melhor": "melhorr"
   }
 ]
