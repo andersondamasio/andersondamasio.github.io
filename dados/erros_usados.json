@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "parceria": "parcería"
-  },
-  {
     "desafio": "desafío",
     "gerenciamento": "gerenciamneto",
     "tecnologia": "tecnoligia"
@@ -89,5 +85,10 @@
   {
     "estrutura": "estrura",
     "processo": "prosseso"
+  },
+  {
+    "exemplo": "exemplo.",
+    "prioridade": "prioridade.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
