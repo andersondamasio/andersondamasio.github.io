@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "monitoramento": "monitorameto",
-    "recurso": "recusso"
-  },
-  {
     "operacional": "operaciona",
     "estrutura": "estrtura"
   },
@@ -89,5 +84,9 @@
   {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "suporte": "suportte"
   }
 ]

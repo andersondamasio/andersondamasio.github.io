@@ -14015,5 +14015,14 @@
     "dataFonte": "2025-06-26T16:53:29.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.bbc.com/news/articles/cy4yv3pmmwjo"
+  },
+  {
+    "titulo": "Transformando o Código: Novidades do Copilot no Visual Studio e Seus Impactos na Arquitetura de Software",
+    "noticiaOriginal": "Better Models, Smarter Defaults: Claude Sonnet 4, GPT-4.1, and More Control in Visual Studio",
+    "url": "artigos/programacao/transformando-o-codigo-novidades-do-copilot-no-visual-studio-e-seus-impactos-na-arquitetura-de-software.html",
+    "data": "2025-07-06T12:36:26.004Z",
+    "dataFonte": "2025-06-25T23:24:03.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://devblogs.microsoft.com/visualstudio/better-models-smarter-defaults-claude-sonnet-4-gpt-4-1-and-more-control-in-visual-studio/"
   }
 ]
