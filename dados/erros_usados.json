@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "tecnologia": "tecnoligia",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "exemplo": "exemplo.",
     "monitoramento": "monitorameto",
     "recurso": "recusso"
@@ -90,5 +85,9 @@
   {
     "controle": "controle.",
     "componente": "componentte"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitretura"
   }
 ]
