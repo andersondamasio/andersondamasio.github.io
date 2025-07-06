@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafío",
-    "gerenciamento": "gerenciamneto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funciona": "funciona.",
     "arquitetura": "arquitertura"
   },
@@ -90,5 +85,10 @@
     "exemplo": "exemplo.",
     "prioridade": "prioridade.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "utilizado": "utilizdo.",
+    "muito": "muiito",
+    "processo": "processso"
   }
 ]
