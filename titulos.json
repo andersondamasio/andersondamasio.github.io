@@ -14033,5 +14033,14 @@
     "dataFonte": "2025-06-25T20:00:03.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://arstechnica.com/ai/2025/06/anthropic-destroyed-millions-of-print-books-to-build-its-ai-models/"
+  },
+  {
+    "titulo": "A performance gráfica em xeque: Ubuntu desativa mitigação para Intel e promete mais desempenho",
+    "noticiaOriginal": "Ubuntu disables Intel GPU security mitigations, promises 20% performance boost",
+    "url": "artigos/desenvolvimento-de-software/a-performance-grafica-em-xeque-ubuntu-desativa-mitigacao-para-intel-e-promete-mais-desempenho.html",
+    "data": "2025-07-06T14:17:17.041Z",
+    "dataFonte": "2025-06-25T19:39:19.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://arstechnica.com/security/2025/06/ubuntu-disables-intel-gpu-security-mitigations-promises-20-performance-boost/"
   }
 ]
