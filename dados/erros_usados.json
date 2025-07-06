@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "exemplo": "exemplo,"
-  },
-  {
     "muito": "muiito",
     "desenvolvimento": "desenvolmento"
   },
@@ -89,5 +85,10 @@
     "conectado": "conetado",
     "dispositivo": "dispotivo",
     "recurso": "recusso"
+  },
+  {
+    "acesso": "acesço",
+    "conhecimento": "conhecimento.",
+    "arquitetura": "arquitretura"
   }
 ]
