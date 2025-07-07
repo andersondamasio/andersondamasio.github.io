@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "arquitetura": "arquitretura",
-    "exemplo": "exenplo"
-  },
-  {
     "sistema": "cistema",
     "tecnologia": "tecnolgia",
     "melhor": "melor"
@@ -90,5 +85,10 @@
     "muito": "muiito",
     "sistema": "cistema",
     "abordagem": "abordage"
+  },
+  {
+    "desafio": "desafío",
+    "funciona": "funciona,",
+    "tecnologia": "tecnolgia"
   }
 ]
