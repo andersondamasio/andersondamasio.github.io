@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "constante": "constate",
-    "sistema": "sistma"
-  },
-  {
     "estrutura": "estrura",
     "processo": "prosseso"
   },
@@ -90,5 +85,10 @@
   {
     "funcionalidade": "funcionalidade.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "necessidade": "necissidade",
+    "arquitetura": "arquitretura",
+    "funciona": "funciona,"
   }
 ]
