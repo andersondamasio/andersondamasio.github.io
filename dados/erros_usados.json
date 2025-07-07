@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "simples": "simplis",
-    "desafio": "desaío"
-  },
-  {
     "conectado": "conetado",
     "dispositivo": "dispotivo",
     "recurso": "recusso"
@@ -90,5 +85,10 @@
     "resultado": "resultao",
     "processo": "proceso",
     "simples": "cimples"
+  },
+  {
+    "executado": "execudado",
+    "desafio": "desaío",
+    "tecnologia": "tecnnologia"
   }
 ]

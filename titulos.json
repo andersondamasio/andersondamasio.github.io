@@ -14150,5 +14150,14 @@
     "dataFonte": "2025-06-24T17:25:41.000Z",
     "categoria": "Carreira",
     "urlFonte": "https://arstechnica.com/ai/2025/06/the-resume-is-dying-and-ai-is-holding-the-smoking-gun/"
+  },
+  {
+    "titulo": "A revolução dos LLMs: o novo paradigma da abstração em software",
+    "noticiaOriginal": "LLMs bring new nature of abstraction",
+    "url": "artigos/inteligencia-artificial/a-revolucao-dos-llms-o-novo-paradigma-da-abstracao-em-software.html",
+    "data": "2025-07-07T05:22:23.491Z",
+    "dataFonte": "2025-06-24T14:02:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://martinfowler.com/articles/2025-nature-abstraction.html"
   }
 ]
