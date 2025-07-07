@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "desafio": "desaío",
-    "conhecimento": "conhescimento"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra"
   },
@@ -89,5 +84,8 @@
   {
     "acesso": "acesso.",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "tecnologia": "tecnnologia"
   }
 ]
