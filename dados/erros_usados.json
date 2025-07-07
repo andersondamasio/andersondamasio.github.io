@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "componente": "componentte"
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitretura"
   },
@@ -89,5 +85,10 @@
     "complexidade": "complezidade",
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "monitoramento": "monitramento",
+    "abordagem": "abordagem.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
