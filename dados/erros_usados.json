@@ -1,9 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "mensagem": "menssagem"
-  },
-  {
     "tecnologia": "tecnnologia",
     "desafio": "desaío",
     "conhecimento": "conhescimento"
@@ -89,5 +85,9 @@
   {
     "controle": "controle.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "acesso": "acesso.",
+    "funcionalidade": "funcionalidade."
   }
 ]
