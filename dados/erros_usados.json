@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "tecnologia": "tecnoligia",
-    "sistema": "sistma"
-  },
-  {
     "tecnologia": "tecnolgia",
     "simples": "simplis",
     "desafio": "desaío"
@@ -90,5 +85,10 @@
   {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "resultado": "resultao",
+    "processo": "proceso",
+    "simples": "cimples"
   }
 ]
