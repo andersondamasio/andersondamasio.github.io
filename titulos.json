@@ -14393,5 +14393,14 @@
     "dataFonte": "2025-07-08T05:44:33.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://techcrunch.com/2025/07/07/openai-tightens-the-screws-on-security-to-keep-away-prying-eyes/"
+  },
+  {
+    "titulo": "Como um Plugin Quebrado Me Fez Usar IA Para Reescrever Meu Código e Salvar Meu Site",
+    "noticiaOriginal": "How I used ChatGPT to analyze, debug, and rewrite a broken plugin from scratch - in an hour",
+    "url": "artigos/programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html",
+    "data": "2025-07-08T10:21:02.010Z",
+    "dataFonte": "2025-07-08T02:00:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.zdnet.com/article/how-i-used-chatgpt-to-analyze-debug-and-rewrite-a-broken-plugin-from-scratch-in-an-hour/"
   }
 ]

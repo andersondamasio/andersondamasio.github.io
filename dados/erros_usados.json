@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "arquitetura": "arquitretura",
-    "funciona": "funciona,"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra"
   },
@@ -89,5 +84,9 @@
     "acesso": "acesço",
     "arquitetura": "arquitertura",
     "controle": "controle."
+  },
+  {
+    "problema": "problema.",
+    "processo": "proceso"
   }
 ]
