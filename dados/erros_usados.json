@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "necessidade": "necissidade",
     "arquitetura": "arquitretura",
     "funciona": "funciona,"
@@ -88,5 +84,10 @@
     "utilizado": "utilizado.",
     "estrutura": "estrututra",
     "suporte": "suporte."
+  },
+  {
+    "acesso": "acesço",
+    "arquitetura": "arquitertura",
+    "controle": "controle."
   }
 ]
