@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "armazenamento": "armazanamento",
     "conhecimento": "conhescimento",
     "constante": "constante."
@@ -87,5 +83,10 @@
     "parceria": "parceria.",
     "suporte": "suportte",
     "processo": "proceso"
+  },
+  {
+    "mensagem": "mensagen",
+    "funciona": "funciona.",
+    "melhor": "melhorr"
   }
 ]
