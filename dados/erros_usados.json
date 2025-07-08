@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "processo": "proceso",
-    "simples": "cimples"
-  },
-  {
     "executado": "execudado",
     "desafio": "desaío",
     "tecnologia": "tecnnologia"
@@ -88,5 +83,10 @@
     "internet": "internat",
     "tecnologia": "tecnoligia",
     "sistema": "sistma"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "prioridade": "prioridade.",
+    "arquitetura": "arquitretura"
   }
 ]
