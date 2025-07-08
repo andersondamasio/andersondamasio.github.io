@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "carregamento": "carregameno",
     "arquitetura": "arquitretura",
     "desafio": "desaío"
@@ -88,5 +84,10 @@
   {
     "problema": "problema.",
     "processo": "proceso"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitretura"
   }
 ]
