@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafío",
-    "funciona": "funciona,",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "exemplo": "exemplo.",
     "funcionalidade": "funcionaliade"
   },
@@ -90,5 +85,8 @@
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitertura",
     "exemplo": "exemplo,"
+  },
+  {
+    "arquitetura": "arquitretura"
   }
 ]
