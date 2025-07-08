@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "acesso": "acesso.",
     "funcionalidade": "funcionalidade."
   },
@@ -88,5 +84,10 @@
   {
     "processo": "proceso",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "funciona": "funciona.",
+    "arquitetura": "arquiteturra",
+    "suporte": "suporte."
   }
 ]
