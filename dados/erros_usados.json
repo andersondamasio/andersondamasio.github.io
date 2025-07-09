@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "dispositivo": "disposotivo"
-  },
-  {
     "conhecimento": "conhescimento",
     "estrutura": "estrututra"
   },
@@ -88,5 +84,9 @@
     "arquitetura": "arquitertura",
     "funcionalidade": "funcionalidade.",
     "simples": "simlpes"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitretura"
   }
 ]
