@@ -1,9 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "funciona": "funciona.",
     "arquitetura": "arquiteturra",
     "suporte": "suporte."
@@ -87,5 +83,10 @@
     "melhor": "melhorr",
     "simples": "simlpes",
     "muito": "muinto"
+  },
+  {
+    "complexidade": "complezidade",
+    "arquitetura": "arquitertura",
+    "sistema": "cistema"
   }
 ]
