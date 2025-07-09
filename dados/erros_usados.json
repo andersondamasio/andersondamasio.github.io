@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "acesso": "aceso",
-    "monitoramento": "monitramento"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitertura",
     "exemplo": "exemplo,"
@@ -87,5 +82,8 @@
   {
     "complexidade": "complezidade",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "tecnologia": "tecnoligia"
   }
 ]
