@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "sistema": "sistma",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "recurso": "recusso",
     "sistema": "cistema",
     "tecnologia": "tecnnologia"
@@ -89,5 +84,9 @@
   {
     "tecnologia": "tecnoligia",
     "constante": "constate"
+  },
+  {
+    "controle": "controle.",
+    "problema": "poblema"
   }
 ]

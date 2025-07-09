@@ -14591,5 +14591,14 @@
     "dataFonte": "2025-07-09T08:47:47.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.bbc.com/news/articles/cwyxggv9j9zo"
+  },
+  {
+    "titulo": "Desvendando os Custos Ocultos da Nuvem: O Caso Figma e os Riscos da Dependência",
+    "noticiaOriginal": "Figma's $300,000 Daily AWS Bill Highlights Cloud Dependency Risks",
+    "url": "artigos/cloud/desvendando-os-custos-ocultos-da-nuvem-o-caso-figma-e-os-riscos-da-dependencia.html",
+    "data": "2025-07-09T10:21:51.876Z",
+    "dataFonte": "2025-07-09T10:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/07/figma-aws-300k-daily-bill/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
