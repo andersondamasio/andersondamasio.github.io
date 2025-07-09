@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "muito": "muto",
-    "arquitetura": "arquitretura"
-  },
-  {
     "tecnologia": "tecnoligia",
     "dispositivo": "disposotivo"
   },
@@ -88,5 +83,10 @@
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura",
     "sistema": "sistma"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "funcionalidade": "funcionalidade.",
+    "simples": "simlpes"
   }
 ]
