@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "suporte": "suportte",
-    "processo": "proceso"
-  },
-  {
     "mensagem": "mensagen",
     "funciona": "funciona.",
     "melhor": "melhorr"
@@ -92,5 +87,9 @@
     "necessidade": "necissidade",
     "desafio": "desafío",
     "abordagem": "abordagem."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
