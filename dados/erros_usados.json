@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "estrutura": "estrututra"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "tecnologia": "tecnolgia",
     "sistema": "cistema"
@@ -88,5 +84,9 @@
   {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "acesso": "acesço",
+    "sistema": "cistema"
   }
 ]
