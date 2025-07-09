@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura"
-  },
-  {
     "processo": "proceso",
     "tecnologia": "tecnolgia"
   },
@@ -85,5 +82,10 @@
     "arquitetura": "arquitretura",
     "desafio": "desafiu",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "melhor": "melhorr",
+    "simples": "simlpes",
+    "muito": "muinto"
   }
 ]
