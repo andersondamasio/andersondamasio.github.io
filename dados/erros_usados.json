@@ -1,9 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "processo": "proceso"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitretura"
@@ -89,5 +85,10 @@
     "melhor": "melhorr",
     "necessidade": "necissidade",
     "conectado": "conectado."
+  },
+  {
+    "resultado": "resultao",
+    "monitoramento": "monitorameto",
+    "sistema": "sistma"
   }
 ]
