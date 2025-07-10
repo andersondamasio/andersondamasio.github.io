@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melhorr",
-    "simples": "simlpes",
-    "muito": "muinto"
-  },
-  {
     "complexidade": "complezidade",
     "arquitetura": "arquitertura",
     "sistema": "cistema"
@@ -90,5 +85,9 @@
   {
     "arquitetura": "arquitertura",
     "monitoramento": "monitramento"
+  },
+  {
+    "sistema": "sistma",
+    "tecnologia": "tecnoligia"
   }
 ]
