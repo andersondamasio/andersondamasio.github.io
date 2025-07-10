@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "arquitetura": "arquitertura",
-    "sistema": "cistema"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura",
     "sistema": "sistma"
@@ -89,5 +84,9 @@
   {
     "sistema": "sistma",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "utilizado": "utilizdo",
+    "suporte": "suprte"
   }
 ]
