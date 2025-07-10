@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "problema": "poblema"
-  },
-  {
     "complexidade": "complezidade",
     "tecnologia": "tecnnologia"
   },
@@ -87,5 +83,10 @@
   {
     "conhecimento": "conhescimento",
     "prioridade": "prioriade"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "problema": "poblema",
+    "conhecimento": "conhecimeto"
   }
 ]
