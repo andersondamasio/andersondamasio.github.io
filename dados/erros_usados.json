@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "virtual": "virtual."
-  },
-  {
     "rotina": "rotína",
     "controle": "controle.",
     "tecnologia": "tecnnologia"
@@ -87,5 +83,9 @@
   {
     "acesso": "acesço",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "muito": "muiito"
   }
 ]
