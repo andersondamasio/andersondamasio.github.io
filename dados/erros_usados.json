@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "sistema": "cistema"
-  },
-  {
     "funciona": "funciona,",
     "necessidade": "necissidade",
     "tecnologia": "tecnolgia"
@@ -88,5 +84,10 @@
     "conectado": "conectado.",
     "prioridade": "prioriade.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "propriedade": "propriadade",
+    "desenvolvimento": "desenvolvimente",
+    "necessidade": "necessidade."
   }
 ]
