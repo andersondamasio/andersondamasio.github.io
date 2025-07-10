@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitretura",
-    "sistema": "sistma"
-  },
-  {
     "arquitetura": "arquitertura",
     "funcionalidade": "funcionalidade.",
     "simples": "simlpes"
@@ -88,5 +83,10 @@
   {
     "utilizado": "utilizdo",
     "suporte": "suprte"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "processo": "processso",
+    "prioridade": "prioriade."
   }
 ]
