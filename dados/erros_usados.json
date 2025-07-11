@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "problema": "poblema",
-    "conhecimento": "conhecimeto"
-  },
-  {
     "melhor": "melhorr",
     "sistema": "cistema",
     "tecnologia": "tecnolgia"
@@ -89,5 +84,9 @@
     "tecnologia": "tecnnologia",
     "simples": "simplis",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "processo": "proceso",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
