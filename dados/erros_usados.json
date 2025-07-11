@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "muito": "muiito"
-  },
-  {
     "simples": "simplis",
     "tecnologia": "tecnolgia"
   },
@@ -89,5 +85,9 @@
     "computador": "computador.",
     "dispositivo": "dispositivo.",
     "internet": "internat"
+  },
+  {
+    "suporte": "suporte.",
+    "arquitetura": "arquitertura"
   }
 ]
