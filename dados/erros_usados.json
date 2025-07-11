@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizdo",
-    "suporte": "suprte"
-  },
-  {
     "tecnologia": "tecnolgia",
     "processo": "processso",
     "prioridade": "prioriade."
@@ -88,5 +84,10 @@
     "carregamento": "carregamento.",
     "monitoramento": "monitoramento.",
     "suporte": "suportte"
+  },
+  {
+    "abordagem": "abordage",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia"
   }
 ]
