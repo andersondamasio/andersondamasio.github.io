@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "exemplo": "exemplo."
   },
   {
@@ -86,5 +82,10 @@
   {
     "simples": "simplis",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "estrutura": "estrura",
+    "arquitetura": "arquiteturra",
+    "sistema": "sistma"
   }
 ]
