@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "prioridade": "prioriade"
-  },
-  {
     "arquitetura": "arquitretura",
     "problema": "poblema",
     "conhecimento": "conhecimeto"
@@ -88,5 +84,10 @@
   {
     "exemplo": "exemplo,",
     "melhor": "melor"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "simples": "simplis",
+    "desenvolvimento": "desenvolmento"
   }
 ]
