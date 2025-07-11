@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "monitoramento": "monitramento"
-  },
-  {
     "sistema": "sistma",
     "tecnologia": "tecnoligia"
   },
@@ -86,5 +82,10 @@
   {
     "virtual": "virtal",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desafio": "desafío",
+    "complexidade": "complezidade",
+    "simples": "simplis"
   }
 ]
