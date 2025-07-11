@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "dispositivo": "dispotivo",
-    "muito": "muto"
-  },
-  {
     "componente": "componete",
     "desenvolvimento": "desenvolmento",
     "muito": "muinto"
@@ -87,5 +82,10 @@
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnoligia",
     "muito": "muto"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "sistema": "sistéma",
+    "suporte": "suprte"
   }
 ]
