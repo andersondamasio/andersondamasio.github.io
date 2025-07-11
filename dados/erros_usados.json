@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "utilizado": "utilizdo",
     "suporte": "suprte"
   },
@@ -87,5 +83,10 @@
     "desafio": "desafío",
     "complexidade": "complezidade",
     "simples": "simplis"
+  },
+  {
+    "carregamento": "carregamento.",
+    "monitoramento": "monitoramento.",
+    "suporte": "suportte"
   }
 ]
