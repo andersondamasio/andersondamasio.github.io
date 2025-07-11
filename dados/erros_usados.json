@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrura",
-    "arquitetura": "arquiteturra",
-    "sistema": "sistma"
-  },
-  {
     "constante": "constate",
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitertura"
@@ -89,5 +84,10 @@
   {
     "utilizado": "utilizdo",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "suporte": "suportte",
+    "abordagem": "abordage",
+    "monitoramento": "monitorameto"
   }
 ]
