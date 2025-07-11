@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquitertura"
-  },
-  {
     "exemplo": "exemplo,",
     "melhor": "melor"
   },
@@ -89,5 +84,10 @@
     "suporte": "suportte",
     "abordagem": "abordage",
     "monitoramento": "monitorameto"
+  },
+  {
+    "necessidade": "nescessidade",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnnologia"
   }
 ]
