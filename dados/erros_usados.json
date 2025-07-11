@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "prioridade": "prioriade.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "propriedade": "propriadade",
     "desenvolvimento": "desenvolvimente",
     "necessidade": "necessidade."
@@ -88,5 +83,9 @@
   {
     "acesso": "acesso.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "acesso": "aceso"
   }
 ]
