@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "abordagem": "abordage",
-    "monitoramento": "monitorameto"
-  },
-  {
     "necessidade": "nescessidade",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnnologia"
@@ -87,5 +82,10 @@
     "abordagem": "abordajem",
     "muito": "muinto",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "processo": "proceso",
+    "necessidade": "nescessidade",
+    "tecnologia": "tecnolgia"
   }
 ]
