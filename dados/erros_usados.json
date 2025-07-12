@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "melhor": "melor"
-  },
-  {
     "tecnologia": "tecnnologia",
     "simples": "simplis",
     "desenvolvimento": "desenvolmento"
@@ -89,5 +85,9 @@
     "necessidade": "nescessidade",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "constante": "constante.",
+    "desenvolvimento": "desenvolmento"
   }
 ]
