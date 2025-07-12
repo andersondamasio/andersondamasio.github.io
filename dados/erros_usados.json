@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desafio": "desafío",
     "complexidade": "complezidade",
     "simples": "simplis"
@@ -89,5 +85,9 @@
     "componente": "componete",
     "conectado": "conetado",
     "arquitetura": "arquitertura"
+  },
+  {
+    "funciona": "funciona.",
+    "arquitetura": "arquitretura"
   }
 ]
