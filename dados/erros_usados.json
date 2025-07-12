@@ -1,10 +1,5 @@
 [
   {
-    "computador": "computador.",
-    "dispositivo": "dispositivo.",
-    "internet": "internat"
-  },
-  {
     "suporte": "suporte.",
     "arquitetura": "arquitertura"
   },
@@ -86,5 +81,10 @@
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvmento",
     "monitoramento": "monitorameto"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "abordagem": "abordage",
+    "dispositivo": "disposotivo"
   }
 ]
