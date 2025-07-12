@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "arquitetura": "arquitretura",
-    "controle": "contrle"
-  },
-  {
     "computador": "computador.",
     "dispositivo": "dispositivo.",
     "internet": "internat"
@@ -86,5 +81,10 @@
     "desenvolvimento": "desenvolvimente",
     "monitoramento": "monitramento",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvmento",
+    "monitoramento": "monitorameto"
   }
 ]
