@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "constante": "constante.",
     "desenvolvimento": "desenvolmento"
   },
@@ -87,5 +82,10 @@
     "processo": "proceso",
     "necessidade": "nescessidade",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "controle": "controlle",
+    "prioridade": "prioridade.",
+    "arquitetura": "arquitertura"
   }
 ]
