@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "acesso": "aceso"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnoligia",
     "muito": "muto"
@@ -88,5 +84,10 @@
     "problema": "poblema",
     "estrutura": "estrura",
     "arquitetura": "arquitertura"
+  },
+  {
+    "desafio": "desafiu",
+    "sistema": "sistma",
+    "tecnologia": "tecnnologia"
   }
 ]
