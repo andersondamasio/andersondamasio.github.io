@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "sistema": "sistéma",
-    "suporte": "suprte"
-  },
-  {
     "abordagem": "abordage",
     "monitoramento": "monitramento",
     "sistema": "sistma"
@@ -88,5 +83,8 @@
   {
     "mensagem": "menssagem",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "tecnologia": "tecnnologia"
   }
 ]
