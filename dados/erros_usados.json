@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "utilizado": "utilizdo",
     "tecnologia": "tecnolgia"
   },
@@ -86,5 +82,9 @@
     "arquitetura": "arquitretura",
     "abordagem": "abordage",
     "dispositivo": "disposotivo"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquiteturra"
   }
 ]
