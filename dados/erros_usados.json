@@ -1,9 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "abordagem": "abordajem",
     "controle": "controlle"
   },
@@ -88,5 +84,9 @@
   {
     "acesso": "acesço",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia"
   }
 ]
