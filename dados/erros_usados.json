@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordajem",
-    "controle": "controlle"
-  },
-  {
     "virtual": "virtal",
     "tecnologia": "tecnoligia"
   },
@@ -88,5 +84,10 @@
   {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "componente": "componete",
+    "conectado": "conetado",
+    "arquitetura": "arquitertura"
   }
 ]
