@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "sistema": "sistéma"
-  },
-  {
     "problema": "poblema",
     "estrutura": "estrura",
     "arquitetura": "arquitertura"
@@ -90,5 +86,9 @@
     "executado": "execudado",
     "utilizado": "utilizado.",
     "exemplo": "exemplo."
+  },
+  {
+    "simples": "cimples",
+    "tecnologia": "tecnnologia"
   }
 ]
