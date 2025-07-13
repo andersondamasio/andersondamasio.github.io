@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "componente": "componete",
     "conectado": "conetado",
     "arquitetura": "arquitertura"
@@ -88,5 +84,9 @@
   {
     "rotina": "rotina.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "propriedade": "propriedade.",
+    "tecnologia": "tecnolgia"
   }
 ]
