@@ -15347,5 +15347,14 @@
     "dataFonte": "2025-07-11T14:23:00.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.zdnet.com/article/my-favorite-indoor-security-camera-has-no-subscription-fees-and-is-39-off-for-prime-day/"
+  },
+  {
+    "titulo": "A nova era do Docker: IPv6, ferramentas integradas e IA na palma da mão",
+    "noticiaOriginal": "Docker Desktop 4.42 Launches with Native IPv6, Integrated MCP Toolkit, and AI Model Packaging",
+    "url": "artigos/devops/a-nova-era-do-docker-ipv6-ferramentas-integradas-e-ia-na-palma-da-mao.html",
+    "data": "2025-07-13T08:24:40.770Z",
+    "dataFonte": "2025-07-11T12:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2025/07/docker-desktop-442/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
