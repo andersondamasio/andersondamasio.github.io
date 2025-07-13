@@ -15428,5 +15428,14 @@
     "dataFonte": "2025-07-13T14:30:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/07/13/uk-launches-500-package-to-support-diverse-underrepresented-investors-and-founders/"
+  },
+  {
+    "titulo": "OpenTofu 1.10: A Revolução na Infraestrutura como Código",
+    "noticiaOriginal": "OpenTofu 1.10 Released with OCI Registry Support and an MCP Server for AI Infra as Code",
+    "url": "artigos/devops/opentofu-1-10-a-revolucao-na-infraestrutura-como-codigo.html",
+    "data": "2025-07-13T17:17:17.615Z",
+    "dataFonte": "2025-07-11T09:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2025/07/opentofu-1-10/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

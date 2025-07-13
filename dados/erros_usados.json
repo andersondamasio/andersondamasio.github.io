@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "abordagem": "abordage",
-    "dispositivo": "disposotivo"
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
   },
@@ -90,5 +85,10 @@
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "gerenciamento": "gerenciamnto",
+    "controle": "controlle"
   }
 ]
