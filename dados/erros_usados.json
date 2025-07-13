@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "sistema": "sistma",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "mensagem": "menssagem",
     "funcionalidade": "funcionaliadde"
   },
@@ -90,5 +85,10 @@
     "internet": "internert",
     "desafio": "desafiu",
     "arquitetura": "arquitretura"
+  },
+  {
+    "personalizado": "personalisado",
+    "simples": "simlpes",
+    "muito": "muinto"
   }
 ]

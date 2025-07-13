@@ -15383,5 +15383,14 @@
     "dataFonte": "2025-07-13T10:23:11.000Z",
     "categoria": "Segurança Online",
     "urlFonte": "https://www.bbc.com/news/articles/cp82447l84ko"
+  },
+  {
+    "titulo": "Docker Desktop 4.43: O Futuro do Desenvolvimento com Model Runner e a Ponte Kubernetes",
+    "noticiaOriginal": "Docker Desktop 4.43 Expands Model Runner and Brings New Compose-Kubernetes Bridge",
+    "url": "artigos/devops/docker-desktop-4-43-o-futuro-do-desenvolvimento-com-model-runner-e-a-ponte-kubernetes.html",
+    "data": "2025-07-13T12:38:27.001Z",
+    "dataFonte": "2025-07-11T09:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2025/07/docker-desktop-kubernetes-bridge/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
