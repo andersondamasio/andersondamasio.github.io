@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componete",
-    "conectado": "conetado",
-    "arquitetura": "arquitertura"
-  },
-  {
     "funciona": "funciona.",
     "arquitetura": "arquitretura"
   },
@@ -88,5 +83,10 @@
   {
     "propriedade": "propriedade.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "complexidade": "complexidade.",
+    "constante": "constate",
+    "arquitetura": "arquitertura"
   }
 ]
