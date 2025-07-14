@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "estrutura": "estrututra"
-  },
-  {
     "conhecimento": "conhecimento.",
     "tecnologia": "tecnolgia"
   },
@@ -90,5 +86,10 @@
     "tecnologia": "tecnolgia",
     "simples": "simlpes",
     "funciona": "funsiona"
+  },
+  {
+    "resultado": "resultao",
+    "processo": "proceso",
+    "necessidade": "necessidade."
   }
 ]
