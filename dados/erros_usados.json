@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
   },
@@ -91,5 +87,10 @@
     "resultado": "resultao",
     "processo": "proceso",
     "necessidade": "necessidade."
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "recurso": "recuro",
+    "exemplo": "exemplo."
   }
 ]
