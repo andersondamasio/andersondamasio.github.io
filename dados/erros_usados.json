@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultadoo",
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "prioridade": "prioriade",
     "muito": "muiito",
     "desenvolvimento": "desenvolvmento"
@@ -95,5 +90,9 @@
     "muito": "muiito",
     "tecnologia": "tecnnologia",
     "simples": "cimples"
+  },
+  {
+    "suporte": "suprte",
+    "exemplo": "exemplo."
   }
 ]
