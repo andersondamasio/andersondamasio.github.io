@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo."
-  },
-  {
     "monitoramento": "monitramento",
     "funciona": "funsiona",
     "exemplo": "exenplo"
@@ -94,5 +89,10 @@
     "melhor": "melhorr",
     "muito": "muiito",
     "conhecimento": "conhecimeto"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "funcionalidade": "funcionaliadde",
+    "processo": "prosseso"
   }
 ]
