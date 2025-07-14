@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "propriedade.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "complexidade": "complexidade.",
     "constante": "constate",
     "arquitetura": "arquitertura"
@@ -90,5 +86,10 @@
     "funciona": "funciona,",
     "tecnologia": "tecnoligia",
     "muito": "muiito"
+  },
+  {
+    "resultado": "resultadoo",
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolmento"
   }
 ]
