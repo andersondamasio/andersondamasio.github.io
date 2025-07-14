@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnoligia"
@@ -92,5 +88,10 @@
     "desenvolvimento": "desenvolvimente",
     "recurso": "recuro",
     "exemplo": "exemplo."
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "acesso": "acesso.",
+    "melhor": "melor"
   }
 ]
