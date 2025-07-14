@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "funciona": "funciona,",
     "tecnologia": "tecnoligia",
     "muito": "muiito"
@@ -94,5 +90,10 @@
     "controle": "contrle",
     "acesso": "acesço",
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "funcionalidade": "funcionaliadde",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
