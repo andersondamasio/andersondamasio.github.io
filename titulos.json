@@ -15554,5 +15554,14 @@
     "dataFonte": "2025-07-14T08:16:14.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/for-developers-and-it-pros-ai-can-be-both-secret-weapon-and-ticking-time-bomb/"
+  },
+  {
+    "titulo": "Docker: A Nova Era da Desenvolvimento de Agentes com Compose",
+    "noticiaOriginal": "Docker Expands Compose for Agent Development and Ties in Cloud Offload Support",
+    "url": "artigos/tecnologia/docker-a-nova-era-da-desenvolvimento-de-agentes-com-compose.html",
+    "data": "2025-07-14T09:27:50.808Z",
+    "dataFonte": "2025-07-14T08:00:00.000Z",
+    "categoria": "Tecnologia",
+    "urlFonte": "https://www.infoq.com/news/2025/07/docker-compose-agent-gpu-offload/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
