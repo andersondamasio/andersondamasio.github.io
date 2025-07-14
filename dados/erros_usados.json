@@ -1,9 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "internet": "internert",
     "desafio": "desafiu",
     "arquitetura": "arquitretura"
@@ -90,5 +86,10 @@
   {
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "complexidade": "complezidade",
+    "problema": "poblema",
+    "recurso": "recusso"
   }
 ]
