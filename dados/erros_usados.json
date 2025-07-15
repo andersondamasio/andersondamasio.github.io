@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "acesso": "acesço",
-    "arquitetura": "arquitretura"
-  },
-  {
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionaliadde",
     "desenvolvimento": "desenvolvmento"
@@ -93,5 +88,9 @@
     "abordagem": "abordage",
     "processo": "proceso",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "desafio": "desafiu",
+    "tecnologia": "tecnolgia"
   }
 ]
