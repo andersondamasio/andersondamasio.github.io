@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "exemplo": "exemplo,"
-  },
-  {
     "tecnologia": "tecnolgia",
     "simples": "simlpes",
     "funciona": "funsiona"
@@ -92,5 +88,10 @@
   {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "carregamento": "carregameno",
+    "arquitetura": "arquitretura",
+    "exemplo": "exenplo"
   }
 ]
