@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "complexidade": "complezidade",
     "problema": "poblema",
     "recurso": "recusso"
@@ -92,5 +88,10 @@
   {
     "constante": "constante.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "gerenciamento": "gerenciamneto",
+    "conhecimento": "conhescimento"
   }
 ]
