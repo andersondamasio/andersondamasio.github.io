@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "simples": "simlpes",
-    "funciona": "funsiona"
-  },
-  {
     "resultado": "resultao",
     "processo": "proceso",
     "necessidade": "necessidade."
@@ -93,5 +88,10 @@
     "carregamento": "carregameno",
     "arquitetura": "arquitretura",
     "exemplo": "exenplo"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquiteturra",
+    "acesso": "acesço"
   }
 ]
