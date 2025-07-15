@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "recurso": "recuro",
-    "exemplo": "exemplo."
-  },
-  {
     "conhecimento": "conhecimeto",
     "acesso": "acesso.",
     "melhor": "melor"
@@ -93,5 +88,10 @@
     "problema": "probrema",
     "prioridade": "prioriade",
     "abordagem": "abordagem."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "gerenciamento": "gerenciamnto",
+    "simples": "cimples"
   }
 ]
