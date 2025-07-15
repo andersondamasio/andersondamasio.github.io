@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "exemplo": "exemplo."
-  },
-  {
     "arquitetura": "arquitretura",
     "funciona": "funciona.",
     "tecnologia": "tecnolgia"
@@ -90,5 +86,10 @@
   {
     "complexidade": "complexidade.",
     "abordagem": "abordage"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquiteturra"
   }
 ]
