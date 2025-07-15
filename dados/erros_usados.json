@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "exemplo": "exenplo",
-    "simples": "cimples"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura"
@@ -93,5 +88,10 @@
     "monitoramento": "monitoramento.",
     "internet": "internete",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "constante": "constate",
+    "desenvolvimento": "desenvolvmento",
+    "exemplo": "exenplo"
   }
 ]
