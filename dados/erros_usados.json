@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "resultado": "resultadoo",
     "tecnologia": "tecnnologia",
     "necessidade": "necissidade"
@@ -94,5 +89,9 @@
     "exemplo": "exenplo",
     "prioridade": "prioridade.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "propriedade": "propriadade",
+    "desafio": "desaío"
   }
 ]
