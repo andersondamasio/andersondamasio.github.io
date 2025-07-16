@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "efetivo": "efetívo",
     "funcionalidade": "funcionalidade.",
     "abordagem": "abordage"
@@ -93,5 +89,9 @@
     "muito": "muiito",
     "acesso": "acesso.",
     "simples": "simplis"
+  },
+  {
+    "computador": "computador,",
+    "desafio": "desafiu"
   }
 ]
