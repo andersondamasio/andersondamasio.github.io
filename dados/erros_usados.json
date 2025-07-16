@@ -1,9 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "sistema": "sistéma",
     "arquitetura": "arquitertura"
   },
@@ -91,5 +87,10 @@
   {
     "problema": "probrema",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "abordagem": "abordage",
+    "sistema": "cistema",
+    "arquitetura": "arquitertura"
   }
 ]
