@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "gerenciamento": "gerenciamnto",
-    "simples": "cimples"
-  },
-  {
     "melhor": "melhorr",
     "processo": "processso",
     "necessidade": "nescessidade"
@@ -93,5 +88,10 @@
   {
     "sistema": "sistéma",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura",
+    "monitoramento": "monitoramento."
   }
 ]
