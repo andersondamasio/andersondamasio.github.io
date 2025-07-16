@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muto",
-    "acesso": "acesço",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "sistema": "cistema",
     "controle": "controle.",
     "exemplo": "exemplo."
@@ -93,5 +88,10 @@
     "executado": "execudado",
     "sistema": "sistma",
     "arquitetura": "arquitertura"
+  },
+  {
+    "constante": "constanate",
+    "prioridade": "prioridade.",
+    "conhecimento": "conhescimento"
   }
 ]
