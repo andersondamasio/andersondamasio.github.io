@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrura",
-    "paralelo": "paralelo.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "executado": "execudado",
     "sistema": "sistma",
     "arquitetura": "arquitertura"
@@ -92,5 +87,9 @@
     "controle": "contrle",
     "tecnologia": "tecnnologia",
     "exemplo": "exenplo"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "acesso": "acesço"
   }
 ]
