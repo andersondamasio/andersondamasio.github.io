@@ -1,9 +1,5 @@
 [
   {
-    "computador": "computador,",
-    "desafio": "desafiu"
-  },
-  {
     "consistente": "consitente",
     "funciona": "funciona."
   },
@@ -90,5 +86,9 @@
   {
     "tecnologia": "tecnoligia",
     "desafio": "desafío"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "problema": "poblema"
   }
 ]
