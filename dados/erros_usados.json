@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura",
     "monitoramento": "monitoramento."
@@ -92,5 +88,10 @@
     "necessidade": "nescessidade",
     "tecnologia": "tecnoligia",
     "abordagem": "abordage"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "necessidade": "necessidade.",
+    "simples": "simplis"
   }
 ]
