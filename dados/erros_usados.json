@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "monitoramento": "monitoramento."
-  },
-  {
     "problema": "probrema",
     "desenvolvimento": "desenvolvimente"
   },
@@ -90,5 +86,9 @@
   {
     "armazenamento": "armasenamento",
     "virtual": "virtual."
+  },
+  {
+    "parceria": "parceria.",
+    "gerenciamento": "gerenciamneto"
   }
 ]
