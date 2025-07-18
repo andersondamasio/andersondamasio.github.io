@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "exemplo": "exenplo",
-    "funciona": "funsiona"
-  },
-  {
     "tecnologia": "tecnoligia",
     "desafio": "desafío"
   },
@@ -87,5 +82,10 @@
   {
     "armazenamento": "armazanamento",
     "dispositivo": "dispotivo"
+  },
+  {
+    "internet": "internert",
+    "funcionalidade": "funcionaliadde",
+    "funciona": "funsiona"
   }
 ]
