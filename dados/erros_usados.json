@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "melhor": "melhorr",
-    "muito": "muiito"
-  },
-  {
     "tecnologia": "tecnolgia",
     "exemplo": "exenplo",
     "funciona": "funsiona"
@@ -88,5 +83,9 @@
     "computador": "computador.",
     "exemplo": "exemplo.",
     "muito": "muinto"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "dispositivo": "dispotivo"
   }
 ]
