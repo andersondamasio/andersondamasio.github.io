@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "rotina": "rotina."
-  },
-  {
     "controle": "contrle",
     "tecnologia": "tecnnologia",
     "exemplo": "exenplo"
@@ -89,5 +85,10 @@
     "arquitetura": "arquiteturra",
     "desafio": "desaío",
     "acesso": "aceso"
+  },
+  {
+    "categoria": "categria",
+    "prioridade": "prioriade.",
+    "exemplo": "exenplo"
   }
 ]
