@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "problema": "poblema"
-  },
-  {
     "processo": "proceso",
     "prioridade": "prioriade.",
     "arquitetura": "arquitretura"
@@ -88,5 +84,9 @@
     "constante": "constante.",
     "controle": "controle.",
     "necessidade": "necessidade."
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "constante": "constate"
   }
 ]
