@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "gerenciamento": "gerenciamneto"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitretura"
   },
@@ -88,5 +84,9 @@
   {
     "consistente": "consiteente",
     "mensagem": "menssagem"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "monitoramento": "monitorameto"
   }
 ]
