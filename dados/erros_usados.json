@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "necessidade": "nescessidade",
     "tecnologia": "tecnoligia",
     "abordagem": "abordage"
@@ -90,5 +85,10 @@
   {
     "arquitetura": "arquiteturra",
     "sistema": "sistma"
+  },
+  {
+    "sistema": "sistéma",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia"
   }
 ]
