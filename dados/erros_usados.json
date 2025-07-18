@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "sistema": "sistma"
-  },
-  {
     "sistema": "sistéma",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
@@ -88,5 +84,10 @@
     "necessidade": "necessidade.",
     "exemplo": "exemplo,",
     "constante": "constanate"
+  },
+  {
+    "muito": "muinto",
+    "acesso": "acesço",
+    "exemplo": "exemplo."
   }
 ]
