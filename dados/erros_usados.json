@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "acesso": "acesço"
-  },
-  {
     "exemplo": "exemplo.",
     "suporte": "suporte.",
     "tecnologia": "tecnoligia"
@@ -89,5 +85,9 @@
   {
     "funciona": "funciona,",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "armazenamento": "armazenamentto"
   }
 ]
