@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "tecnologia": "tecnnologia",
-    "exemplo": "exenplo"
-  },
-  {
     "dispositivo": "dispositivo.",
     "acesso": "acesço"
   },
@@ -90,5 +85,9 @@
     "categoria": "categria",
     "prioridade": "prioriade.",
     "exemplo": "exenplo"
+  },
+  {
+    "funciona": "funciona,",
+    "tecnologia": "tecnolgia"
   }
 ]
