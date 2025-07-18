@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "desafio": "desafío"
-  },
-  {
     "monitoramento": "monitorameto",
     "problema": "poblema"
   },
@@ -87,5 +83,10 @@
     "internet": "internert",
     "funcionalidade": "funcionaliadde",
     "funciona": "funsiona"
+  },
+  {
+    "constante": "constante.",
+    "controle": "controle.",
+    "necessidade": "necessidade."
   }
 ]
