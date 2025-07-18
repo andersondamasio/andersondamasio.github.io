@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "prioridade": "prioriade.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "arquitetura": "arquiteturra",
     "sistema": "sistma"
   },
@@ -88,5 +83,10 @@
     "arquitetura": "arquitertura",
     "funciona": "funciona,",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "necessidade": "necessidade.",
+    "exemplo": "exemplo,",
+    "constante": "constanate"
   }
 ]
