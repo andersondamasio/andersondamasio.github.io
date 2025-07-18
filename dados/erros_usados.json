@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "acesso": "aceso",
     "prioridade": "prioriade.",
     "tecnologia": "tecnoligia"
@@ -88,5 +83,10 @@
     "melhor": "melhorr",
     "gerenciamento": "gerenciamneto",
     "sistema": "sistma"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "funciona": "funciona,",
+    "tecnologia": "tecnolgia"
   }
 ]
