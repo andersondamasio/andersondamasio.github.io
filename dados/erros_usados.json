@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "operacional": "operacional.",
     "desenvolvimento": "desenvolvmento"
   },
@@ -89,5 +84,10 @@
     "muito": "muinto",
     "acesso": "acesço",
     "exemplo": "exemplo."
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
