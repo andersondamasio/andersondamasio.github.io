@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "desafio": "desaío",
-    "acesso": "aceso"
-  },
-  {
     "categoria": "categria",
     "prioridade": "prioriade.",
     "exemplo": "exenplo"
@@ -90,5 +85,10 @@
     "abordagem": "abordajem",
     "sistema": "sistma",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "necessidade": "nescessidade",
+    "tecnologia": "tecnolgia",
+    "acesso": "acesso."
   }
 ]
