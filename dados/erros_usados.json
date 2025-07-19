@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "abordagem": "abordajem",
     "sistema": "sistma",
     "desenvolvimento": "desenvolvimente"
@@ -90,5 +85,10 @@
     "prioridade": "prioriade.",
     "estrutura": "estrututra",
     "necessidade": "nescessidade"
+  },
+  {
+    "rotina": "rotína",
+    "suporte": "suportte",
+    "muito": "muinto"
   }
 ]
