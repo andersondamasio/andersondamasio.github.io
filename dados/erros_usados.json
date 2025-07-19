@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "computador": "computador.",
     "exemplo": "exemplo.",
     "muito": "muinto"
@@ -91,5 +87,10 @@
   {
     "dispositivo": "disposotivo",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "acesso": "acesço",
+    "funciona": "funsiona"
   }
 ]

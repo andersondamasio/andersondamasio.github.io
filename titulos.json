@@ -16544,5 +16544,14 @@
     "dataFonte": "2025-07-19T08:45:12.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/i-took-a-walk-with-metas-new-oakley-smart-glasses-they-beat-my-ray-bans-in-every-way/"
+  },
+  {
+    "titulo": "A nova era da migração: relocação de buckets no Google Cloud",
+    "noticiaOriginal": "Google Cloud Introduces Non-Disruptive Cloud Storage Bucket Relocation",
+    "url": "artigos/cloud/a-nova-era-da-migracao-relocacao-de-buckets-no-google-cloud.html",
+    "data": "2025-07-19T10:20:29.590Z",
+    "dataFonte": "2025-07-19T10:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/07/gcp-storage-non-disruptive-move/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
