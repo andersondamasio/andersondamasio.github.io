@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordajem",
-    "sistema": "sistma",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "necessidade": "nescessidade",
     "tecnologia": "tecnolgia",
     "acesso": "acesso."
@@ -90,5 +85,10 @@
     "rotina": "rotína",
     "suporte": "suportte",
     "muito": "muinto"
+  },
+  {
+    "monitoramento": "monitramento",
+    "desenvolvimento": "desenvolvmento",
+    "sistema": "sistma"
   }
 ]
