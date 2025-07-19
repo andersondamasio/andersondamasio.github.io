@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "monitoramento": "monitorameto"
-  },
-  {
     "suporte": "suportte",
     "exemplo": "exenplo",
     "prioridade": "prioriade"
@@ -92,5 +88,9 @@
     "desafio": "desafiu",
     "melhor": "melhorr",
     "funciona": "funsiona"
+  },
+  {
+    "carregamento": "carregamento.",
+    "necessidade": "necissidade"
   }
 ]
