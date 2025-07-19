@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "dispositivo": "dispotivo"
-  },
-  {
     "internet": "internert",
     "funcionalidade": "funcionaliadde",
     "funciona": "funsiona"
@@ -92,5 +88,10 @@
     "recurso": "reccurso",
     "simples": "cimples",
     "arquitetura": "arquitretura"
+  },
+  {
+    "exemplo": "exemplo,",
+    "sistema": "sistma",
+    "acesso": "acesso."
   }
 ]
