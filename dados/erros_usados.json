@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "dispositivo": "disposotivo"
-  },
-  {
     "consistente": "consiteente",
     "mensagem": "menssagem"
   },
@@ -90,5 +86,10 @@
   {
     "resultado": "resultadoo",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "processo": "proceso",
+    "correto": "corretoo",
+    "geralmente": "geralmemte"
   }
 ]

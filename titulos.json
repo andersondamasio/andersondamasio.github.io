@@ -16508,5 +16508,14 @@
     "dataFonte": "2025-07-18T19:34:14.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://arstechnica.com/ai/2025/07/exhausted-man-defeats-ai-model-in-world-coding-championship/"
+  },
+  {
+    "titulo": "A armadilha do MFA: como os phishers estão contornando a segurança FIDO",
+    "noticiaOriginal": "Phishers have found a way to downgrade—not bypass—FIDO MFA",
+    "url": "artigos/seguranca/a-armadilha-do-mfa-como-os-phishers-estao-contornando-a-seguranca-fido.html",
+    "data": "2025-07-19T06:29:11.569Z",
+    "dataFonte": "2025-07-18T19:07:21.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/07/no-phishers-are-not-bypassing-fido-mfa-at-least-not-yet-heres-why/"
   }
 ]
