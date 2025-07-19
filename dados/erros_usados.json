@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "exemplo": "exenplo",
-    "prioridade": "prioriade"
-  },
-  {
     "conhecimento": "conhescimento",
     "tecnologia": "tecnnologia"
   },
@@ -92,5 +87,9 @@
   {
     "carregamento": "carregamento.",
     "necessidade": "necissidade"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnoligia"
   }
 ]
