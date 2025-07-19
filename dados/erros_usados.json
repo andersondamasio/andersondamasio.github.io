@@ -1,10 +1,5 @@
 [
   {
-    "computador": "computador.",
-    "exemplo": "exemplo.",
-    "muito": "muinto"
-  },
-  {
     "armazenamento": "armazanamento",
     "dispositivo": "dispotivo"
   },
@@ -92,5 +87,10 @@
     "armazenamento": "armazanamento",
     "acesso": "acesço",
     "funciona": "funsiona"
+  },
+  {
+    "recurso": "reccurso",
+    "simples": "cimples",
+    "arquitetura": "arquitretura"
   }
 ]
