@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "problema": "problema.",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "controle": "contrle",
     "suporte": "suporte.",
     "dispositivo": "dispositivo."
@@ -92,5 +87,10 @@
     "exemplo": "exemplo,",
     "funcionalidade": "funcionalidade.",
     "conhecimento": "conhecimento."
+  },
+  {
+    "resultado": "resultao",
+    "simples": "simlpes",
+    "tecnologia": "tecnoligia"
   }
 ]
