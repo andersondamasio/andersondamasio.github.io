@@ -16742,5 +16742,14 @@
     "dataFonte": "2025-07-20T09:00:00.000Z",
     "categoria": "DevOps",
     "urlFonte": "https://www.infoq.com/news/2025/07/wix-chaos-ai-cicd-pipelines/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A nova era do Pulumi: consumindo módulos Terraform sem dor de cabeça",
+    "noticiaOriginal": "Pulumi Enables Direct Consumption of Terraform Modules",
+    "url": "artigos/devops/a-nova-era-do-pulumi-consumindo-modulos-terraform-sem-dor-de-cabeca.html",
+    "data": "2025-07-20T10:22:14.372Z",
+    "dataFonte": "2025-07-20T10:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2025/07/pulumi-terraform-module-support/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
