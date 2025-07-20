@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo,"
-  },
-  {
     "tecnologia": "tecnolgia"
   },
   {
@@ -89,5 +85,10 @@
     "conectado": "conectado.",
     "armazenamento": "armasenamento",
     "simples": "simplis"
+  },
+  {
+    "funciona": "funciona,",
+    "internet": "internert",
+    "tecnologia": "tecnoligia"
   }
 ]
