@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "desenvolvimento": "desenvolvmento",
-    "sistema": "sistma"
-  },
-  {
     "acesso": "acesso.",
     "tecnologia": "tecnolgia"
   },
@@ -92,5 +87,9 @@
     "automatizado": "automatizdo.",
     "sistema": "sistéma",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "resultado": "resutlado",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
