@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "necessidade": "necissidade"
-  },
-  {
     "dispositivo": "disposotivo",
     "tecnologia": "tecnoligia"
   },
@@ -88,5 +84,10 @@
   {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "controle": "controlle",
+    "desenvolvimento": "desenvolvimente",
+    "necessidade": "necissidade"
   }
 ]
