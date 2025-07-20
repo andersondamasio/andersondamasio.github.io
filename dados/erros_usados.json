@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "melhor": "melhorr",
-    "funciona": "funsiona"
-  },
-  {
     "carregamento": "carregamento.",
     "necessidade": "necissidade"
   },
@@ -89,5 +84,9 @@
     "sistema": "sistma",
     "melhor": "melhorr",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitertura"
   }
 ]
