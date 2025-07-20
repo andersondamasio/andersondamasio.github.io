@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "armazenamento": "armazanamento",
     "acesso": "acesço",
     "funciona": "funsiona"
@@ -89,5 +85,9 @@
     "controle": "controlle",
     "desenvolvimento": "desenvolvimente",
     "necessidade": "necissidade"
+  },
+  {
+    "suporte": "suprte",
+    "desenvolvimento": "desenvolmento"
   }
 ]
