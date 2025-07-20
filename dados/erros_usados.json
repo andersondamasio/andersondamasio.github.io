@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia"
-  },
-  {
     "estrutura": "estrututra",
     "problema": "problema.",
     "desenvolvimento": "desenvolmento"
@@ -90,5 +87,10 @@
     "funciona": "funciona,",
     "internet": "internert",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "exemplo": "exemplo,",
+    "funcionalidade": "funcionalidade.",
+    "conhecimento": "conhecimento."
   }
 ]
