@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceriaa",
-    "simples": "simplis",
-    "acesso": "acesço"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo,"
   },
@@ -89,5 +84,10 @@
     "recurso": "recuro",
     "gerenciamento": "gerenciamneto",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "conectado": "conectado.",
+    "armazenamento": "armasenamento",
+    "simples": "simplis"
   }
 ]
