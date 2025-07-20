@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "tecnologia": "tecnoligia",
     "rotina": "rotína",
     "suporte": "suportte"
@@ -91,5 +87,10 @@
   {
     "resultado": "resutlado",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "propriedade": "propriedade.",
+    "complexidade": "complezidade",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
