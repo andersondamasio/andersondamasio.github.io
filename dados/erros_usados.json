@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultadoo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "processo": "proceso",
     "correto": "corretoo",
     "geralmente": "geralmemte"
@@ -89,5 +85,9 @@
   {
     "tecnologia": "tecnnologia",
     "sistema": "sistma"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "monitoramento": "monitoramento."
   }
 ]
