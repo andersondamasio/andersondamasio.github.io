@@ -16850,5 +16850,14 @@
     "dataFonte": "2025-07-18T08:54:29.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.bbc.com/news/articles/c9vr4rymlw9o"
+  },
+  {
+    "titulo": "A nova face do malware: GitHub como vetor de ataque",
+    "noticiaOriginal": "GitHub abused to distribute payloads on behalf of malware-as-a-service",
+    "url": "artigos/seguranca/a-nova-face-do-malware-github-como-vetor-de-ataque.html",
+    "data": "2025-07-20T22:19:03.525Z",
+    "dataFonte": "2025-07-17T22:16:09.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/07/malware-as-a-service-caught-using-github-to-distribute-its-payloads/"
   }
 ]
