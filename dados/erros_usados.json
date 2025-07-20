@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "conhecimento": "conhecimento."
-  },
-  {
     "prioridade": "prioriade.",
     "estrutura": "estrututra",
     "necessidade": "nescessidade"
@@ -92,5 +88,10 @@
     "funcionalidade": "funcionaliadde",
     "simples": "cimples",
     "melhor": "melhorr"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "constante": "constate",
+    "monitoramento": "monitoramento."
   }
 ]
