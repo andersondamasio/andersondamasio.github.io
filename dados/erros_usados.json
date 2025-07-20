@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "acesso": "acesço",
-    "funciona": "funsiona"
-  },
-  {
     "recurso": "reccurso",
     "simples": "cimples",
     "arquitetura": "arquitretura"
@@ -89,5 +84,10 @@
   {
     "suporte": "suprte",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "carregamento": "carregamento.",
+    "desafio": "desaío",
+    "dispositivo": "dispotivo"
   }
 ]
