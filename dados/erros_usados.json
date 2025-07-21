@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "simples": "simlpes",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "simples": "cimples",
     "melhor": "melhorr"
@@ -91,5 +86,10 @@
   {
     "exemplo": "exemplo.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "exemplo": "exenplo",
+    "melhor": "melhorr"
   }
 ]
