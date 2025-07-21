@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "funcionalidade": "funcionalidade.",
-    "conhecimento": "conhecimento."
-  },
-  {
     "resultado": "resultao",
     "simples": "simlpes",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,9 @@
   {
     "armazenamento": "armazenamentto",
     "controle": "controle."
+  },
+  {
+    "exemplo": "exemplo.",
+    "arquitetura": "arquitretura"
   }
 ]
