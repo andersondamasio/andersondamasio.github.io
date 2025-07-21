@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "propriedade": "propriedade.",
     "complexidade": "complezidade",
     "desenvolvimento": "desenvolvimente"
@@ -91,5 +87,9 @@
     "funcionalidade": "funcionalidade.",
     "funciona": "funsiona",
     "processo": "processso"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "muito": "muinto"
   }
 ]
