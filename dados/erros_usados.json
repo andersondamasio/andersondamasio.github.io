@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "desenvolvimento": "desenvolvimente",
-    "necessidade": "necissidade"
-  },
-  {
     "suporte": "suprte",
     "desenvolvimento": "desenvolmento"
   },
@@ -93,5 +88,10 @@
     "problema": "poblema",
     "melhor": "melhorr",
     "sistema": "sistma"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "monitoramento": "monitoramento.",
+    "simples": "simplis"
   }
 ]
