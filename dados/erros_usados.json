@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "melhor": "melhorr",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
   },
@@ -92,5 +87,10 @@
   {
     "tecnologia": "tecnoligia",
     "recurso": "recusso"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "desenvolvimento": "desenvolmento",
+    "tecnologia": "tecnolgia"
   }
 ]
