@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "processo": "prosseso",
-    "abordagem": "abordajem"
-  },
-  {
     "recurso": "recuro",
     "gerenciamento": "gerenciamneto",
     "funcionalidade": "funcionaliadde"
@@ -94,5 +89,9 @@
     "muito": "muto",
     "tecnologia": "tecnolgia",
     "processo": "processso"
+  },
+  {
+    "carregamento": "carregameno",
+    "sistema": "sistéma"
   }
 ]
