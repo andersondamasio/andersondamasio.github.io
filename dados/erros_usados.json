@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "carregamento": "carregamento.",
     "desafio": "desaío",
     "dispositivo": "dispotivo"
@@ -93,5 +89,10 @@
     "tecnologia": "tecnolgia",
     "monitoramento": "monitoramento.",
     "simples": "simplis"
+  },
+  {
+    "mensagem": "menssagem",
+    "necessidade": "necessidade.",
+    "abordagem": "abordage"
   }
 ]
