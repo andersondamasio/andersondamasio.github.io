@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "controle": "controle."
-  },
-  {
     "exemplo": "exemplo.",
     "arquitetura": "arquitretura"
   },
@@ -90,5 +86,10 @@
     "exemplo": "exenplo",
     "dispositivo": "dispositivo.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "carregamento": "carregameno",
+    "tecnologia": "tecnolgia",
+    "sistema": "sistéma"
   }
 ]
