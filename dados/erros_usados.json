@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "tecnologia": "tecnnologia",
-    "sistema": "cistema"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "geralmente": "geralmete",
     "estrutura": "estrtura"
@@ -90,5 +85,10 @@
     "propriedade": "proprieade",
     "parceria": "parceria.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "prioridade": "prioriade.",
+    "funciona": "funciona.",
+    "tecnologia": "tecnolgia"
   }
 ]
