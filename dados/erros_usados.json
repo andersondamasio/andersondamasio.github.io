@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "sistema": "sistéma"
-  },
-  {
     "resultado": "resutlado",
     "tecnologia": "tecnnologia",
     "sistema": "cistema"
@@ -89,5 +85,10 @@
   {
     "virtual": "virtual.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "propriedade": "proprieade",
+    "parceria": "parceria.",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
