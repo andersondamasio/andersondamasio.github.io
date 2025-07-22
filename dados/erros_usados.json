@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "sistema": "sistéma",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo,"
@@ -93,5 +88,10 @@
     "exemplo": "exemplo,",
     "monitoramento": "monitorameto",
     "arquitetura": "arquitertura"
+  },
+  {
+    "exemplo": "exemplo.",
+    "constante": "constate",
+    "monitoramento": "monitoramento."
   }
 ]
