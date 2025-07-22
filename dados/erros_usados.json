@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internert",
-    "muito": "muinto"
-  },
-  {
     "controle": "controle.",
     "necessidade": "nescessidade",
     "complexidade": "complezidade"
@@ -91,5 +87,10 @@
     "prioridade": "prioriade",
     "funciona": "funciona.",
     "internet": "internete"
+  },
+  {
+    "complexidade": "complezidade",
+    "monitoramento": "monitoramento.",
+    "sistema": "sistéma"
   }
 ]
