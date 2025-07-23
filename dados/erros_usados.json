@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "armazenamento": "armazanamento",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "simples": "cimples"
   },
@@ -92,5 +87,10 @@
   {
     "resultado": "resutlado",
     "acesso": "acesço"
+  },
+  {
+    "consistente": "consiteente",
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquitertura"
   }
 ]
