@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "monitoramento": "monitoramento.",
-    "sistema": "sistéma"
-  },
-  {
     "tecnologia": "tecnnologia",
     "controle": "contrle"
   },
@@ -94,5 +89,9 @@
     "tecnologia": "tecnnologia",
     "armazenamento": "armazanamento",
     "controle": "controlle"
+  },
+  {
+    "suporte": "suprte",
+    "processo": "proceso"
   }
 ]
