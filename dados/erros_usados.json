@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "monitoramento": "monitorameto",
-    "arquitetura": "arquitertura"
-  },
-  {
     "exemplo": "exemplo.",
     "constante": "constate",
     "monitoramento": "monitoramento."
@@ -94,5 +89,10 @@
     "desafio": "desafío",
     "abordagem": "abordagem.",
     "simples": "cimples"
+  },
+  {
+    "componente": "componentte",
+    "exemplo": "exenplo",
+    "arquitetura": "arquitretura"
   }
 ]
