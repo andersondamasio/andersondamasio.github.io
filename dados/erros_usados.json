@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "melhor": "melor",
-    "constante": "constanate"
-  },
-  {
     "tecnologia": "tecnolgia",
     "internet": "internat",
     "exemplo": "exemplo."
@@ -93,5 +88,9 @@
   {
     "complexidade": "complezidade",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "muito": "muto",
+    "melhor": "melor"
   }
 ]
