@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "tecnologia": "tecnolgia",
-    "dispositivo": "disposotivo"
-  },
-  {
     "exemplo": "exemplo,",
     "monitoramento": "monitorameto",
     "arquitetura": "arquitertura"
@@ -94,5 +89,10 @@
     "conectado": "conectdo",
     "acesso": "aceso",
     "monitoramento": "monitorameto"
+  },
+  {
+    "desafio": "desafío",
+    "abordagem": "abordagem.",
+    "simples": "cimples"
   }
 ]
