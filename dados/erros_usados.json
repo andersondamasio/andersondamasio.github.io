@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "tecnologia": "tecnolgia",
-    "sistema": "sistéma"
-  },
-  {
     "acesso": "aceso",
     "necessidade": "nescessidade"
   },
@@ -93,5 +88,10 @@
     "problema": "poblema",
     "estrutura": "estrura",
     "dispositivo": "dispotivo"
+  },
+  {
+    "operacional": "operacionl",
+    "abordagem": "abordagem.",
+    "arquitetura": "arquitretura"
   }
 ]
