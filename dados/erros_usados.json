@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "abordagem": "abordajem",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "acesso": "acesço",
     "tecnologia": "tecnolgia",
     "propriedade": "propriadade"
@@ -92,5 +87,9 @@
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia",
     "constante": "constate"
+  },
+  {
+    "propriedade": "propriedade.",
+    "arquitetura": "arquitretura"
   }
 ]
