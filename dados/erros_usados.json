@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "necessidade": "nescessidade"
-  },
-  {
     "prioridade": "prioriade",
     "funciona": "funciona.",
     "internet": "internete"
@@ -93,5 +89,10 @@
     "operacional": "operacionl",
     "abordagem": "abordagem.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "constante": "constate",
+    "melhor": "melhorr"
   }
 ]
