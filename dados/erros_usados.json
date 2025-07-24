@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parceriaa",
-    "suporte": "suportte"
-  },
-  {
     "problema": "poblema",
     "estrutura": "estrura",
     "dispositivo": "dispotivo"
@@ -91,5 +87,10 @@
     "conhecimento": "conhecimento.",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "sistema": "cistema",
+    "desenvolvimento": "desenvolvmento",
+    "simples": "simplis"
   }
 ]
