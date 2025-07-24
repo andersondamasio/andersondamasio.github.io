@@ -1,10 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "estrutura": "estrura",
-    "dispositivo": "dispotivo"
-  },
-  {
     "operacional": "operacionl",
     "abordagem": "abordagem.",
     "arquitetura": "arquitretura"
@@ -92,5 +87,9 @@
     "sistema": "cistema",
     "desenvolvimento": "desenvolvmento",
     "simples": "simplis"
+  },
+  {
+    "necessidade": "necessidade.",
+    "monitoramento": "monitoramento."
   }
 ]
