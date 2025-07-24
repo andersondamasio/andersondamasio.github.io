@@ -1,10 +1,5 @@
 [
   {
-    "efetivo": "efetívo",
-    "acesso": "acesso.",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "resultado": "resutlado",
     "acesso": "acesço"
   },
@@ -92,5 +87,10 @@
     "controle": "contrle",
     "internet": "internete",
     "computador": "computador,"
+  },
+  {
+    "rotina": "rotna",
+    "dispositivo": "dispositivo.",
+    "suporte": "suporte."
   }
 ]
