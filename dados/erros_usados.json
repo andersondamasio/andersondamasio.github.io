@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "prioridade": "prioriade",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "conectado": "conectdo",
     "acesso": "aceso",
     "monitoramento": "monitorameto"
@@ -92,5 +87,10 @@
     "desenvolvimento": "desenvolvimente",
     "sistema": "sistéma",
     "necessidade": "necessidade."
+  },
+  {
+    "armazenamento": "armazanamento",
+    "tecnologia": "tecnnologia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
