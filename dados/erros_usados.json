@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "processo": "proceso"
-  },
-  {
     "necessidade": "nescessidade",
     "melhor": "melhorr"
   },
@@ -90,5 +86,10 @@
     "arquitetura": "arquitertura",
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "constante": "constante.",
+    "desafio": "desafío",
+    "suporte": "suprte"
   }
 ]
