@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectdo",
-    "acesso": "aceso",
-    "monitoramento": "monitorameto"
-  },
-  {
     "desafio": "desafío",
     "abordagem": "abordagem.",
     "simples": "cimples"
@@ -92,5 +87,10 @@
     "armazenamento": "armazanamento",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "simples": "simplis",
+    "constante": "constanate",
+    "controle": "controlle"
   }
 ]
