@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "armazenamento": "armazanamento",
-    "controle": "controlle"
-  },
-  {
     "suporte": "suprte",
     "processo": "proceso"
   },
@@ -90,5 +85,10 @@
     "carregamento": "carregameno",
     "sistema": "sistéma",
     "abordagem": "abordage"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "exemplo": "exenplo",
+    "tecnologia": "tecnoligia"
   }
 ]
