@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "muito": "muto",
     "melhor": "melor"
   },
@@ -92,5 +88,10 @@
     "prioridade": "prioriade.",
     "necessidade": "nescessidade",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "recurso": "recusso",
+    "acesso": "acesso.",
+    "tecnologia": "tecnoligia"
   }
 ]
