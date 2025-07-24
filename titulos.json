@@ -17552,5 +17552,14 @@
     "dataFonte": "2025-07-24T11:00:18.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.zdnet.com/article/surfshark-vs-cyberghost/"
+  },
+  {
+    "titulo": "Rust e Serverless: A Dupla Dinâmica para Performance em Nuvem",
+    "noticiaOriginal": "Presentation: High Performance Serverless with Rust",
+    "url": "artigos/programacao/rust-e-serverless-a-dupla-dinamica-para-performance-em-nuvem.html",
+    "data": "2025-07-24T12:42:19.592Z",
+    "dataFonte": "2025-07-24T12:00:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/presentations/serverless-rust-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
