@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "desafio": "desafío",
-    "suporte": "suprte"
-  },
-  {
     "controle": "contrle",
     "internet": "internete",
     "computador": "computador,"
@@ -95,5 +90,10 @@
     "arquitetura": "arquitretura",
     "acesso": "aceso",
     "monitoramento": "monitramento"
+  },
+  {
+    "funciona": "funsiona",
+    "suporte": "suprte",
+    "funcionalidade": "funcionaliadde"
   }
 ]
