@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "exemplo": "exenplo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "constante": "constante.",
     "desafio": "desafío",
     "suporte": "suprte"
@@ -95,5 +90,10 @@
   {
     "monitoramento": "monitorameto",
     "constante": "constate"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "acesso": "aceso",
+    "monitoramento": "monitramento"
   }
 ]
