@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "desenvolvimento": "desenvolvmento",
-    "simples": "simplis"
-  },
-  {
     "necessidade": "necessidade.",
     "monitoramento": "monitoramento."
   },
@@ -94,5 +89,10 @@
     "utilizado": "utilizado.",
     "operacional": "operaciona",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "sistema": "cistema",
+    "problema": "probrema",
+    "simples": "simplis"
   }
 ]
