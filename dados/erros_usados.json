@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "arquitetura": "arquitertura",
-    "sistema": "sistma"
-  },
-  {
     "prioridade": "prioriade.",
     "necessidade": "nescessidade",
     "tecnologia": "tecnnologia"
@@ -93,5 +88,9 @@
     "carregamento": "carregamneto",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "processo": "prosseso"
   }
 ]
