@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "monitoramento": "monitoramento."
-  },
-  {
     "tecnologia": "tecnoligia",
     "suporte": "suprte"
   },
@@ -94,5 +90,10 @@
     "sistema": "cistema",
     "problema": "probrema",
     "simples": "simplis"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desafio": "desafío",
+    "arquitetura": "arquiteturra"
   }
 ]
