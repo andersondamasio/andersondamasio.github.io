@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "sistema": "sistéma",
-    "abordagem": "abordage"
-  },
-  {
     "arquitetura": "arquitertura",
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia"
@@ -96,5 +91,9 @@
     "funcionalidade": "funcionalidade.",
     "acesso": "acesço",
     "melhor": "melhorr"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "constante": "constate"
   }
 ]
