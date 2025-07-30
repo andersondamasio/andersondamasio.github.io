@@ -1,10 +1,5 @@
 [
   {
-    "utilizado": "utilizado.",
-    "operacional": "operaciona",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "sistema": "cistema",
     "problema": "probrema",
     "simples": "simplis"
@@ -92,5 +87,9 @@
     "prioridade": "prioriade",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "necessidade": "necissidade",
+    "desenvolvimento": "desenvolmento"
   }
 ]
