@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "suporte": "suprte"
-  },
-  {
     "carregamento": "carregameno",
     "sistema": "sistéma",
     "abordagem": "abordage"
@@ -95,5 +91,10 @@
     "tecnologia": "tecnoligia",
     "desafio": "desafío",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "acesso": "acesço",
+    "melhor": "melhorr"
   }
 ]
