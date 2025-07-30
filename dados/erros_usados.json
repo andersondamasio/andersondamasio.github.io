@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "suporte": "suporte."
-  },
-  {
     "processo": "proceso",
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolmento"
@@ -91,5 +87,10 @@
     "dispositivo": "dispotivo",
     "funciona": "funsiona",
     "muito": "muinto"
+  },
+  {
+    "acesso": "acesso.",
+    "dispositivo": "dispositivo.",
+    "simples": "cimples"
   }
 ]
