@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "necessidade": "nescessidade",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "recurso": "recusso",
     "acesso": "acesso.",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,9 @@
   {
     "funcionalidade": "funcionaliade",
     "processo": "prosseso"
+  },
+  {
+    "controle": "controlle",
+    "internet": "internert"
   }
 ]
