@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "propriedade.",
-    "arquitetura": "arquitretura"
-  },
-  {
     "conhecimento": "conhecimento.",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
@@ -93,5 +89,10 @@
   {
     "gerenciamento": "gerenciamneto",
     "suporte": "suporte."
+  },
+  {
+    "processo": "proceso",
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
