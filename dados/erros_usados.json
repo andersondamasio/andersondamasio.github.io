@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolvmento"
   },
@@ -86,5 +82,9 @@
   {
     "categoria": "categória",
     "recurso": "recusso"
+  },
+  {
+    "necessidade": "necessidade.",
+    "complexidade": "complexsidade"
   }
 ]
