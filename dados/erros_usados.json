@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "necessidade": "necissidade",
     "desenvolvimento": "desenvolmento"
   },
@@ -87,5 +82,10 @@
     "dispositivo": "disposotivo",
     "funcionalidade": "funcionaliadde",
     "simples": "simplis"
+  },
+  {
+    "controle": "controle.",
+    "monitoramento": "monitorameto",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
