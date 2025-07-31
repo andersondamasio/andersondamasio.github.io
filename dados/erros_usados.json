@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "exemplo": "exenplo",
-    "sistema": "cistema"
-  },
-  {
     "conhecimento": "conhecimento.",
     "tecnologia": "tecnoligia"
   },
@@ -87,5 +82,9 @@
   {
     "arquitetura": "arquiteturra",
     "simples": "simlpes"
+  },
+  {
+    "categoria": "categória",
+    "recurso": "recusso"
   }
 ]
