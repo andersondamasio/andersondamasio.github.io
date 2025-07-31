@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "acesso": "aceso",
-    "monitoramento": "monitramento"
-  },
-  {
     "funciona": "funsiona",
     "suporte": "suprte",
     "funcionalidade": "funcionaliadde"
@@ -90,5 +85,10 @@
     "exemplo": "exemplo,",
     "constante": "constante.",
     "abordagem": "abordajem"
+  },
+  {
+    "muito": "muiito",
+    "sistema": "cistema",
+    "tecnologia": "tecnnologia"
   }
 ]
