@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "dispositivo": "dispositivo.",
-    "simples": "cimples"
-  },
-  {
     "prioridade": "prioriade",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
@@ -87,5 +82,10 @@
   {
     "arquitetura": "arquitertura",
     "prioridade": "prioridade."
+  },
+  {
+    "dispositivo": "disposotivo",
+    "funcionalidade": "funcionaliadde",
+    "simples": "simplis"
   }
 ]
