@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "sistema": "sistéma"
-  },
-  {
     "carregamento": "carregamneto",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento"
@@ -88,5 +84,10 @@
     "mensagem": "menssagem",
     "processo": "prosseso",
     "melhor": "melhorr"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "funcionalidade": "funcionaliadde",
+    "exemplo": "exenplo"
   }
 ]
