@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "tecnologia": "tecnnologia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "processo": "prosseso"
   },
@@ -89,5 +84,10 @@
     "tecnologia": "tecnolgia",
     "funcionalidade": "funcionaliadde",
     "exemplo": "exenplo"
+  },
+  {
+    "virtual": "virtuaal",
+    "simples": "cimples",
+    "armazenamento": "armazanamento"
   }
 ]
