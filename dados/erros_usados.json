@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "prioridade": "prioridade."
-  },
-  {
     "dispositivo": "disposotivo",
     "funcionalidade": "funcionaliadde",
     "simples": "simplis"
@@ -86,5 +82,10 @@
   },
   {
     "estrutura": "estrututra"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "necessidade": "necissidade",
+    "monitoramento": "monitorameto"
   }
 ]
