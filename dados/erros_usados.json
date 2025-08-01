@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "monitoramento": "monitorameto",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "arquitetura": "arquiteturra",
     "simples": "simlpes"
   },
@@ -87,5 +82,9 @@
     "suporte": "suporte.",
     "virtual": "virtuaal",
     "arquitetura": "arquitertura"
+  },
+  {
+    "abordagem": "abordage",
+    "arquitetura": "arquitretura"
   }
 ]
