@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "monitoramento": "monitramento",
-    "sistema": "cistema"
-  },
-  {
     "mensagem": "menssagem",
     "processo": "prosseso",
     "melhor": "melhorr"
@@ -87,5 +82,10 @@
     "melhor": "melor",
     "exemplo": "exemplo.",
     "muito": "muiito"
+  },
+  {
+    "muito": "muinto",
+    "acesso": "aceso",
+    "melhor": "melhorr"
   }
 ]
