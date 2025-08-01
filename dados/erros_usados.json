@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "exemplo": "exemplo,",
     "constante": "constante.",
     "abordagem": "abordajem"
@@ -86,5 +82,10 @@
   {
     "necessidade": "necessidade.",
     "complexidade": "complexsidade"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "exemplo": "exemplo.",
+    "sistema": "sistma"
   }
 ]
