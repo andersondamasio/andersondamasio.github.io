@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "exemplo": "exemplo.",
-    "sistema": "sistma"
-  },
-  {
     "acesso": "acesço"
   },
   {
@@ -86,5 +81,9 @@
   {
     "exemplo": "exemplo.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "sistema": "sistéma",
+    "arquitetura": "arquitretura"
   }
 ]
