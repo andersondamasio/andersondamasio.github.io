@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "simples": "simlpes"
-  },
-  {
     "categoria": "categória",
     "recurso": "recusso"
   },
@@ -86,5 +82,9 @@
   {
     "abordagem": "abordage",
     "arquitetura": "arquitretura"
+  },
+  {
+    "carregamento": "carregamento.",
+    "tecnologia": "tecnnologia"
   }
 ]
