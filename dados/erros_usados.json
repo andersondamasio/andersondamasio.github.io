@@ -1,9 +1,5 @@
 [
   {
-    "categoria": "categória",
-    "recurso": "recusso"
-  },
-  {
     "necessidade": "necessidade.",
     "complexidade": "complexsidade"
   },
@@ -86,5 +82,9 @@
   {
     "carregamento": "carregamento.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "rotina": "rotna"
   }
 ]
