@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliadde",
-    "constante": "constate"
-  },
-  {
     "arquitetura": "arquitertura",
     "prioridade": "prioridade."
   },
@@ -87,5 +83,8 @@
     "componente": "componentte",
     "problema": "problema.",
     "sistema": "sistma"
+  },
+  {
+    "estrutura": "estrututra"
   }
 ]
