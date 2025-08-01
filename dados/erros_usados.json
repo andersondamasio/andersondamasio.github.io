@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "funcionalidade": "funcionaliadde",
-    "exemplo": "exenplo"
-  },
-  {
     "virtual": "virtuaal",
     "simples": "cimples",
     "armazenamento": "armazanamento"
@@ -86,5 +81,10 @@
   {
     "sistema": "sistma",
     "processo": "processso"
+  },
+  {
+    "paralelo": "paralélo",
+    "funciona": "funciona,",
+    "tecnologia": "tecnolgia"
   }
 ]
