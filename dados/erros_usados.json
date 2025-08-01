@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "complexidade": "complexsidade"
-  },
-  {
     "dispositivo": "dispotivo",
     "exemplo": "exemplo.",
     "sistema": "sistma"
@@ -86,5 +82,9 @@
   {
     "armazenamento": "armazanamento",
     "rotina": "rotna"
+  },
+  {
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnnologia"
   }
 ]
