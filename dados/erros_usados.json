@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "sistema": "sistéma",
     "arquitetura": "arquitretura"
   },
@@ -91,5 +87,10 @@
     "suporte": "suprte",
     "necessidade": "nescessidade",
     "melhor": "melhorr"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "sistema": "sistéma",
+    "necessidade": "necissidade"
   }
 ]
