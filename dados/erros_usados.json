@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "virtual": "virtuaal",
-    "arquitetura": "arquitertura"
-  },
-  {
     "abordagem": "abordage",
     "arquitetura": "arquitretura"
   },
@@ -89,5 +84,10 @@
   {
     "internet": "internete",
     "simples": "simplis"
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "tecnologia": "tecnolgia",
+    "acesso": "aceso"
   }
 ]
