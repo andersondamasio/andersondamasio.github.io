@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "processo": "processso"
-  },
-  {
     "paralelo": "paralélo",
     "funciona": "funciona,",
     "tecnologia": "tecnolgia"
@@ -88,5 +84,10 @@
     "recurso": "reccurso",
     "mensagem": "mensagen",
     "computador": "computadorr"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "exemplo": "exemplo,",
+    "simples": "simplis"
   }
 ]
