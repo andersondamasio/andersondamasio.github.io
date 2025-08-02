@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "armazenamento": "armazanamento",
     "rotina": "rotna"
   },
@@ -90,5 +86,9 @@
     "muito": "muiito",
     "dispositivo": "dispositivo.",
     "sistema": "sistma"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "acesso": "aceso"
   }
 ]
