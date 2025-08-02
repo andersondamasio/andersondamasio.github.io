@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "muito": "muiito"
-  },
-  {
     "componente": "componentte",
     "problema": "problema.",
     "sistema": "sistma"
@@ -89,5 +85,9 @@
     "exemplo": "exemplo.",
     "constante": "constante.",
     "melhor": "melhorr"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "armazenamento": "armazanamento"
   }
 ]
