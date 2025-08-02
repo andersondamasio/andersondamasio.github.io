@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "necessidade": "necissidade",
-    "monitoramento": "monitorameto"
-  },
-  {
     "suporte": "suporte.",
     "virtual": "virtuaal",
     "arquitetura": "arquitertura"
@@ -90,5 +85,9 @@
     "melhor": "melor",
     "abordagem": "abordajem",
     "exemplo": "exemplo."
+  },
+  {
+    "internet": "internete",
+    "simples": "simplis"
   }
 ]
