@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "arquitetura": "arquitretura"
-  },
-  {
     "propriedade": "propriedade.",
     "tecnologia": "tecnolgia",
     "acesso": "aceso"
@@ -92,5 +88,10 @@
     "funcionalidade": "funcionalidade.",
     "sistema": "sistéma",
     "necessidade": "necissidade"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "utilizado": "utilizdo",
+    "arquitetura": "arquiteturra"
   }
 ]
