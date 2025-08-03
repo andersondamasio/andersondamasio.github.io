@@ -18551,5 +18551,14 @@
     "dataFonte": "2025-08-03T17:12:51.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/08/03/sap-is-acquiring-smartrecruiters/"
+  },
+  {
+    "titulo": "Descomplicando a Concurrency: O Que a Nova Versão do Swift Traz para Nós",
+    "noticiaOriginal": "Swift 6.2 Introduces Approachable Concurrency to Simplify Concurrent Programming",
+    "url": "artigos/programacao/descomplicando-a-concurrency-o-que-a-nova-versao-do-swift-traz-para-nos.html",
+    "data": "2025-08-03T18:28:39.187Z",
+    "dataFonte": "2025-08-03T18:00:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/08/swift62-approachable-concurrency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
