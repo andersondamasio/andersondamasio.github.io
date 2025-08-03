@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "sistema": "sistéma",
-    "necessidade": "necissidade"
-  },
-  {
     "monitoramento": "monitorameto",
     "utilizado": "utilizdo",
     "arquitetura": "arquiteturra"
@@ -89,5 +84,10 @@
     "operacional": "operaciona",
     "complexidade": "complexidade.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "necessidade": "necissidade",
+    "sistema": "cistema",
+    "abordagem": "abordajem"
   }
 ]
