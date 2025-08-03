@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "constante": "constante.",
-    "melhor": "melhorr"
-  },
-  {
     "dispositivo": "disposotivo",
     "armazenamento": "armazanamento"
   },
@@ -90,5 +85,10 @@
     "arquitetura": "arquitretura",
     "constante": "constante.",
     "monitoramento": "monitramento"
+  },
+  {
+    "paralelo": "paralélo",
+    "arquitetura": "arquitertura",
+    "dispositivo": "disposotivo"
   }
 ]
