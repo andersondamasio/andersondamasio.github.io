@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "prioridade": "prioriade",
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitertura"
@@ -92,5 +88,9 @@
     "tecnologia": "tecnnologia",
     "melhor": "melhorr",
     "sistema": "sistéma"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
