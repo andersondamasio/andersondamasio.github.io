@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muiito",
-    "dispositivo": "dispositivo.",
-    "sistema": "sistma"
-  },
-  {
     "arquitetura": "arquitertura",
     "acesso": "aceso"
   },
@@ -89,5 +84,9 @@
   {
     "parceria": "parceria.",
     "simples": "cimples"
+  },
+  {
+    "complexidade": "complexsidade",
+    "tecnologia": "tecnolgia"
   }
 ]
