@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "mensagem": "mensagen",
-    "computador": "computadorr"
-  },
-  {
     "dispositivo": "dispotivo",
     "exemplo": "exemplo,",
     "simples": "simplis"
@@ -90,5 +85,10 @@
   {
     "arquitetura": "arquiteturra",
     "sistema": "sistma"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "acesso": "acesso.",
+    "melhor": "melor"
   }
 ]
