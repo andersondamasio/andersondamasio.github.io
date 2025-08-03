@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internete",
-    "simples": "simplis"
-  },
-  {
     "armazenamento": "armazenamentto",
     "tecnologia": "tecnolgia",
     "acesso": "aceso"
@@ -90,5 +86,9 @@
   {
     "rotina": "rotna",
     "dispositivo": "disposotivo"
+  },
+  {
+    "processo": "prosseso",
+    "funciona": "funciona,"
   }
 ]
