@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "acesso": "aceso"
-  },
-  {
     "suporte": "suprte",
     "necessidade": "nescessidade",
     "melhor": "melhorr"
@@ -88,5 +84,10 @@
   {
     "complexidade": "complexsidade",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "abordagem": "abordajem",
+    "constante": "constate"
   }
 ]
