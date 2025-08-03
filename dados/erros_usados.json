@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "armazenamento": "armazanamento"
-  },
-  {
     "muito": "muinto",
     "tecnologia": "tecnolgia"
   },
@@ -90,5 +86,10 @@
     "paralelo": "paralélo",
     "arquitetura": "arquitertura",
     "dispositivo": "disposotivo"
+  },
+  {
+    "exemplo": "exenplo",
+    "tecnologia": "tecnolgia",
+    "muito": "muto"
   }
 ]
