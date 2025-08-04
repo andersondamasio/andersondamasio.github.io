@@ -1,9 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "funciona": "funciona,"
-  },
-  {
     "parceria": "parceria.",
     "simples": "cimples"
   },
@@ -89,5 +85,9 @@
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura",
     "sistema": "cistema"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "tecnologia": "tecnnologia"
   }
 ]
