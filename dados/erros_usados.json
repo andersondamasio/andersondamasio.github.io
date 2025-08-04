@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "gerenciamento": "gerenciamente"
-  },
-  {
     "rotina": "rotna",
     "dispositivo": "disposotivo"
   },
@@ -88,5 +84,9 @@
     "sistema": "sistma",
     "melhor": "melor",
     "resultado": "resultao"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "monitoramento": "monitoramento."
   }
 ]
