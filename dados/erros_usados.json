@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "sistéma"
-  },
-  {
     "resultado": "resultao",
     "sistema": "sistma",
     "muito": "muiito"
@@ -92,5 +88,10 @@
     "operacional": "operacionl",
     "exemplo": "exenplo",
     "constante": "constate"
+  },
+  {
+    "exemplo": "exemplo.",
+    "conhecimento": "conhescimento",
+    "arquitetura": "arquitretura"
   }
 ]
