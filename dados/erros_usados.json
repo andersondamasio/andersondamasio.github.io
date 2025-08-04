@@ -1,9 +1,5 @@
 [
   {
-    "rotina": "rotna",
-    "dispositivo": "disposotivo"
-  },
-  {
     "processo": "prosseso",
     "funciona": "funciona,"
   },
@@ -88,5 +84,10 @@
   {
     "conhecimento": "conhescimento",
     "monitoramento": "monitoramento."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitretura",
+    "sistema": "cistema"
   }
 ]
