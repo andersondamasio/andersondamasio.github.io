@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "armazenamento": "armasenamento",
-    "simples": "cimples"
-  },
-  {
     "automatizado": "automatisado",
     "simples": "simplis"
   },
@@ -93,5 +88,10 @@
     "processo": "processso",
     "arquitetura": "arquitertura",
     "melhor": "melor"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "recurso": "reccurso",
+    "tecnologia": "tecnoligia"
   }
 ]
