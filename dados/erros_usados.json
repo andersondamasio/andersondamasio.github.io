@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "simples": "cimples"
-  },
-  {
     "complexidade": "complexsidade",
     "tecnologia": "tecnolgia"
   },
@@ -89,5 +85,10 @@
   {
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "desafio": "desafiu",
+    "funciona": "funciona,",
+    "sistema": "sistéma"
   }
 ]
