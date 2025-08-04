@@ -18740,5 +18740,14 @@
     "dataFonte": "2025-08-04T16:05:00.000Z",
     "categoria": "Tecnologia Automotiva",
     "urlFonte": "https://techcrunch.com/2025/08/04/techcrunch-mobility-teslas-ride-hailing-gambit/"
+  },
+  {
+    "titulo": "Automatizando a Varredura de Dependências: Uma Nova Era de Segurança no Desenvolvimento",
+    "noticiaOriginal": "Automate your open-source dependency scanning with Advanced Security",
+    "url": "artigos/seguranca/automatizando-a-varredura-de-dependencias-uma-nova-era-de-seguranca-no-desenvolvimento.html",
+    "data": "2025-08-04T17:24:34.094Z",
+    "dataFonte": "2025-08-04T17:17:37.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://devblogs.microsoft.com/devops/automate-your-open-source-dependency-scanning-with-advanced-security/"
   }
 ]
