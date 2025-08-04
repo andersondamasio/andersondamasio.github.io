@@ -18632,5 +18632,14 @@
     "dataFonte": "2025-08-01T09:00:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.infoq.com/podcasts/transforming-software-engineering-culture-leadership/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Analisando Redes em Containers: A Revolução do Subtrace",
+    "noticiaOriginal": "New Open Source Tool Subtrace Brings Network Analysis to Container Environments",
+    "url": "artigos/devops/analisando-redes-em-containers-a-revolucao-do-subtrace.html",
+    "data": "2025-08-04T05:40:25.170Z",
+    "dataFonte": "2025-07-31T23:45:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2025/07/subtrace-network-analysis/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
