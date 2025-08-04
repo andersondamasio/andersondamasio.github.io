@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "estrutura": "estrtura",
-    "arquitetura": "arquitertura"
-  },
-  {
     "arquitetura": "arquitretura",
     "constante": "constante.",
     "monitoramento": "monitramento"
@@ -90,5 +85,9 @@
     "suporte": "suportte",
     "armazenamento": "armasenamento",
     "simples": "cimples"
+  },
+  {
+    "automatizado": "automatisado",
+    "simples": "simplis"
   }
 ]
