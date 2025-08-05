@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "desafio": "desafiu",
     "funciona": "funciona,",
     "sistema": "sistéma"
@@ -93,5 +89,9 @@
     "simples": "cimples",
     "acesso": "aceso",
     "muito": "muto"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "simples": "simplis"
   }
 ]
