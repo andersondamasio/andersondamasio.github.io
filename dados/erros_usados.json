@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "monitoramento": "monitramento",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "personalizado": "personalizad",
     "tecnologia": "tecnolgia",
     "suporte": "suportte"
@@ -91,5 +86,10 @@
   {
     "desafio": "desaío",
     "estrutura": "estrura"
+  },
+  {
+    "carregamento": "carregamneto",
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnnologia"
   }
 ]
