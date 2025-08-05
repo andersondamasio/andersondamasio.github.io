@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "monitoramento": "monitoramento."
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura",
     "sistema": "cistema"
@@ -92,5 +88,10 @@
   {
     "tecnologia": "tecnolgia",
     "parceria": "parceria."
+  },
+  {
+    "constante": "constante.",
+    "abordagem": "abordagem.",
+    "tecnologia": "tecnoligia"
   }
 ]
