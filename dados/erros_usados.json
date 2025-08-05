@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "recurso": "reccurso",
     "monitoramento": "monitramento",
     "tecnologia": "tecnnologia"
@@ -92,5 +87,9 @@
   {
     "estrutura": "estrtura",
     "arquitetura": "arquitretura"
+  },
+  {
+    "desafio": "desaío",
+    "estrutura": "estrura"
   }
 ]
