@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "sistema": "cistema",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "processo": "processso",
     "arquitetura": "arquitertura",
     "melhor": "melor"
@@ -90,5 +85,10 @@
     "geralmente": "geralmemte",
     "categoria": "categória",
     "dispositivo": "disposotivo"
+  },
+  {
+    "exemplo": "exemplo.",
+    "acesso": "aceso",
+    "funciona": "funsiona"
   }
 ]
