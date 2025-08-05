@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "recurso": "reccurso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "problema": "probrema",
     "abordagem": "abordage"
   },
@@ -90,5 +85,9 @@
     "monitoramento": "monitoramento.",
     "parceria": "parceria.",
     "constante": "constanate"
+  },
+  {
+    "suporte": "suporte.",
+    "abordagem": "abordagem."
   }
 ]
