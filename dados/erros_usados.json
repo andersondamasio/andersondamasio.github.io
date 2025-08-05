@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "parceria": "parceriaa",
-    "prioridade": "prioridade."
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "necessidade": "necessidade."
   },
@@ -91,5 +86,10 @@
     "resultado": "resultadoo",
     "dispositivo": "dispotivo",
     "arquitetura": "arquitertura"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "consistente": "consitente",
+    "carregamento": "carregamneto"
   }
 ]
