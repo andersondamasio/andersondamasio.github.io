@@ -1,10 +1,5 @@
 [
   {
-    "processo": "processso",
-    "arquitetura": "arquitertura",
-    "melhor": "melor"
-  },
-  {
     "arquitetura": "arquitretura",
     "recurso": "reccurso",
     "tecnologia": "tecnoligia"
@@ -90,5 +85,10 @@
     "exemplo": "exemplo.",
     "acesso": "aceso",
     "funciona": "funsiona"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "parceria": "parceria.",
+    "constante": "constanate"
   }
 ]
