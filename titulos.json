@@ -19091,5 +19091,14 @@
     "dataFonte": "2025-08-06T10:40:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.infoq.com/presentations/ai-trends/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A nova onda de ataques: o caso do Google e a vulnerabilidade do Salesforce",
+    "noticiaOriginal": "Google says hackers stole its customers’ data by breaching its Salesforce database",
+    "url": "artigos/seguranca/a-nova-onda-de-ataques-o-caso-do-google-e-a-vulnerabilidade-do-salesforce.html",
+    "data": "2025-08-06T12:44:41.966Z",
+    "dataFonte": "2025-08-06T12:05:25.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://techcrunch.com/2025/08/06/google-says-hackers-stole-its-customers-data-in-a-breach-of-its-salesforce-database/"
   }
 ]
