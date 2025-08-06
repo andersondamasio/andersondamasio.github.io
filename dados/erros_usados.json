@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizdo",
-    "melhor": "melor"
-  },
-  {
     "controle": "controle.",
     "necessidade": "nescessidade",
     "arquitetura": "arquitretura"
@@ -93,5 +89,9 @@
     "monitoramento": "monitoramento.",
     "simples": "simlpes",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "complexidade": "complexidade.",
+    "acesso": "acesso."
   }
 ]
