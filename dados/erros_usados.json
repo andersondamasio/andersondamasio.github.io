@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "necessidade": "nescessidade",
-    "arquitetura": "arquitretura"
-  },
-  {
     "muito": "muiito",
     "funciona": "funciona.",
     "melhor": "melor"
@@ -93,5 +88,10 @@
   {
     "complexidade": "complexidade.",
     "acesso": "acesso."
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "abordagem": "abordagem.",
+    "necessidade": "necissidade"
   }
 ]
