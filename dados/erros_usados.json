@@ -1,9 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "estrutura": "estrura"
-  },
-  {
     "carregamento": "carregamneto",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
@@ -92,5 +88,10 @@
     "dispositivo": "dispotivo",
     "constante": "constate",
     "simples": "cimples"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "computador": "computador.",
+    "muito": "muto"
   }
 ]
