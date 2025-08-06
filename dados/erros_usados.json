@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "acesso": "aceso",
-    "muito": "muto"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "simples": "simplis"
   },
@@ -90,5 +85,10 @@
   {
     "componente": "componente.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquitertura",
+    "funcionalidade": "funcionaliadde"
   }
 ]
