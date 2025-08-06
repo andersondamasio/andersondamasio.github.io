@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrtura",
-    "arquitetura": "arquitretura"
-  },
-  {
     "desafio": "desaío",
     "estrutura": "estrura"
   },
@@ -91,5 +87,10 @@
     "problema": "poblema",
     "arquitetura": "arquiteturra",
     "exemplo": "exenplo"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "constante": "constate",
+    "simples": "cimples"
   }
 ]
