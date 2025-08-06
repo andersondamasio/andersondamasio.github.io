@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "sistema": "sistéma",
-    "processo": "prosseso"
-  },
-  {
     "resultado": "resultadoo",
     "dispositivo": "dispotivo",
     "arquitetura": "arquitertura"
@@ -92,5 +87,10 @@
   {
     "virtual": "virtuaal",
     "internet": "internete"
+  },
+  {
+    "desafio": "desafiu",
+    "tecnologia": "tecnnologia",
+    "melhor": "melhorr"
   }
 ]
