@@ -1,9 +1,5 @@
 [
   {
-    "melhor": "melhorr",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "melhor": "melor",
     "suporte": "suprte"
   },
@@ -91,5 +87,10 @@
   {
     "armazenamento": "armazenamentto",
     "carregamento": "carregamento."
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "utilizado": "utilizado.",
+    "monitoramento": "monitoramento."
   }
 ]
