@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "acesso": "aceso",
-    "utilizado": "utilizdo."
-  },
-  {
     "prioridade": "prioridade.",
     "abordagem": "abordajem",
     "arquitetura": "arquitretura"
@@ -93,5 +88,10 @@
     "computador": "computadorr",
     "constante": "constante.",
     "muito": "muiito"
+  },
+  {
+    "exemplo": "exemplo.",
+    "problema": "probrema",
+    "virtual": "virtual."
   }
 ]
