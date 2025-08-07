@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "constante": "constate",
-    "simples": "cimples"
-  },
-  {
     "armazenamento": "armasenamento",
     "computador": "computador.",
     "muito": "muto"
@@ -93,5 +88,10 @@
     "geralmente": "geralmete",
     "recurso": "recusso",
     "funciona": "funciona,"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "sistema": "cistema",
+    "simples": "cimples"
   }
 ]
