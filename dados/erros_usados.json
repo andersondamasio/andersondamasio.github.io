@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "melhor": "melhorr",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "rotina": "rotna",
     "desafio": "desafío",
     "sistema": "sistma"
@@ -93,5 +88,8 @@
     "problema": "poblema",
     "suporte": "suprte",
     "dispositivo": "dispotivo"
+  },
+  {
+    "arquitetura": "arquitertura"
   }
 ]
