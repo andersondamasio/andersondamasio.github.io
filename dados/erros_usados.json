@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "tecnologia": "tecnnologia",
-    "melhor": "melhorr"
-  },
-  {
     "processo": "prosseso",
     "exemplo": "exenplo",
     "tecnologia": "tecnolgia"
@@ -93,5 +88,10 @@
     "personalizado": "personalisado",
     "desenvolvimento": "desenvolvmento",
     "desafio": "desafiu"
+  },
+  {
+    "carregamento": "carregamento.",
+    "rotina": "rotína",
+    "tecnologia": "tecnnologia"
   }
 ]
