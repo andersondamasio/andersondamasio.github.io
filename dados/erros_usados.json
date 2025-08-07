@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "internet": "internete"
-  },
-  {
     "desafio": "desafiu",
     "tecnologia": "tecnnologia",
     "melhor": "melhorr"
@@ -92,5 +88,10 @@
   {
     "estrutura": "estrututra",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "personalizado": "personalisado",
+    "desenvolvimento": "desenvolvmento",
+    "desafio": "desafiu"
   }
 ]
