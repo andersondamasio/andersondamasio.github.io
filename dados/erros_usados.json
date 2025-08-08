@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "acesso": "acesso.",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "processo": "prosseso",
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolvimente"
@@ -94,5 +89,10 @@
     "componente": "componente.",
     "resultado": "resultadoo",
     "muito": "muto"
+  },
+  {
+    "recurso": "recusso",
+    "funciona": "funciona,",
+    "arquitetura": "arquitretura"
   }
 ]
