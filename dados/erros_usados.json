@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "abordagem": "abordajem",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "geralmente": "geralmemte",
     "funcionalidade": "funcionaliadde",
     "simples": "simlpes"
@@ -94,5 +89,9 @@
     "recurso": "recusso",
     "funciona": "funciona,",
     "arquitetura": "arquitretura"
+  },
+  {
+    "problema": "probrema",
+    "tecnologia": "tecnolgia"
   }
 ]
