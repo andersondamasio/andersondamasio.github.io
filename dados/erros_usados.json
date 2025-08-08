@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "carregamento": "carregamento."
-  },
-  {
     "conhecimento": "conhecimento.",
     "utilizado": "utilizado.",
     "monitoramento": "monitoramento."
@@ -91,5 +87,10 @@
     "exemplo": "exemplo.",
     "suporte": "suprte",
     "simples": "simplis"
+  },
+  {
+    "recurso": "recuro",
+    "monitoramento": "monitorameto",
+    "funcionalidade": "funcionaliade"
   }
 ]
