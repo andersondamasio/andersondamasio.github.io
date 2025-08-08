@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "mensagen",
-    "funciona": "funsiona"
-  },
-  {
     "constante": "constate",
     "tecnologia": "tecnoligia",
     "operacional": "operacionl"
@@ -94,5 +90,9 @@
     "funciona": "funciona.",
     "tecnologia": "tecnoligia",
     "acesso": "acesso."
+  },
+  {
+    "propriedade": "propriadade",
+    "simples": "cimples"
   }
 ]
