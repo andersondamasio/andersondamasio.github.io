@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "personalizado": "personalisado",
     "desenvolvimento": "desenvolvmento",
     "desafio": "desafiu"
@@ -90,5 +86,10 @@
     "geralmente": "geralmemte",
     "funcionalidade": "funcionaliadde",
     "simples": "simlpes"
+  },
+  {
+    "suporte": "suporte.",
+    "necessidade": "nescessidade",
+    "arquitetura": "arquiteturra"
   }
 ]
