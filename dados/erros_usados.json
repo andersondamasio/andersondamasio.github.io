@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "necessidade": "nescessidade",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "estrutura": "estrtura",
     "arquitetura": "arquitertura",
     "funciona": "funciona."
@@ -92,5 +87,10 @@
   {
     "abordagem": "abordajem",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "internet": "internert",
+    "funciona": "funciona,",
+    "simples": "simplis"
   }
 ]
