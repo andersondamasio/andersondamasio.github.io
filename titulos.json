@@ -19685,5 +19685,14 @@
     "dataFonte": "2025-08-09T11:30:17.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/5-ios-26-features-that-made-updating-my-iphone-worthwhile-and-how-to-try-them/"
+  },
+  {
+    "titulo": "A segurança de comunicações: quando a criptografia falha",
+    "noticiaOriginal": "Encryption made for police and military radios may be easily cracked",
+    "url": "artigos/seguranca/a-seguranca-de-comunicacoes-quando-a-criptografia-falha.html",
+    "data": "2025-08-09T13:30:09.602Z",
+    "dataFonte": "2025-08-09T11:18:47.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/08/encryption-made-for-police-and-military-radios-may-be-easily-cracked/"
   }
 ]
