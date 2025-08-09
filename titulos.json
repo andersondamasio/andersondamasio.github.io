@@ -19730,5 +19730,14 @@
     "dataFonte": "2025-08-08T19:41:19.000Z",
     "categoria": "Desenvolvimento de Software",
     "urlFonte": "https://techcrunch.com/2025/08/08/rip-microsoft-lens-a-simple-little-app-thats-getting-replaced-by-ai/"
+  },
+  {
+    "titulo": "Desenvolvendo Aplicações de Alta Performance: O Novo Cliente Rust da Aerospike",
+    "noticiaOriginal": "New Rust Client Enables Building Safe, High-Performance Apps with Aerospike",
+    "url": "artigos/banco-de-dados/desenvolvendo-aplicacoes-de-alta-performance-o-novo-cliente-rust-da-aerospike.html",
+    "data": "2025-08-09T18:28:24.777Z",
+    "dataFonte": "2025-08-09T18:00:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2025/08/aerospike-rust-client/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
