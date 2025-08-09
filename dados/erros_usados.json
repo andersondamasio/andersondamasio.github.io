@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "funciona": "funciona,",
-    "arquitetura": "arquitretura"
-  },
-  {
     "problema": "probrema",
     "tecnologia": "tecnolgia"
   },
@@ -88,5 +83,10 @@
   {
     "executado": "executado.",
     "conhecimento": "conhescimento"
+  },
+  {
+    "suporte": "suportte",
+    "abordagem": "abordajem",
+    "simples": "simplis"
   }
 ]
