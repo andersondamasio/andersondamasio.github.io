@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componente.",
-    "resultado": "resultadoo",
-    "muito": "muto"
-  },
-  {
     "recurso": "recusso",
     "funciona": "funciona,",
     "arquitetura": "arquitretura"
@@ -89,5 +84,9 @@
     "exemplo": "exemplo,",
     "abordagem": "abordajem",
     "suporte": "suporte."
+  },
+  {
+    "executado": "executado.",
+    "conhecimento": "conhescimento"
   }
 ]
