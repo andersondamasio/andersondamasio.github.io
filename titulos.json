@@ -19703,5 +19703,14 @@
     "dataFonte": "2025-08-09T08:30:18.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/i-answered-the-million-dollar-question-about-buying-laptops-heres-the-ultimate-guide/"
+  },
+  {
+    "titulo": "Como a Cloudflare Transformou o Quicksilver: Lições de Arquitetura em Cache",
+    "noticiaOriginal": "How Cloudflare Migrated Quicksilver to Multi-Level Caching While Serving Billions of Requests",
+    "url": "artigos/cloud/como-a-cloudflare-transformou-o-quicksilver-licoes-de-arquitetura-em-cache.html",
+    "data": "2025-08-09T15:19:54.408Z",
+    "dataFonte": "2025-08-09T14:30:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/08/cloudflare-key-value-store/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
