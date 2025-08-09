@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "propriadade",
-    "simples": "cimples"
-  },
-  {
     "complexidade": "complexsidade",
     "tecnologia": "tecnoligia",
     "melhor": "melhorr"
@@ -88,5 +84,10 @@
   {
     "exemplo": "exemplo.",
     "melhor": "melhorr"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "simples": "cimples",
+    "tecnologia": "tecnnologia"
   }
 ]
