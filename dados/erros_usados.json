@@ -1,9 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "abordagem": "abordajem",
     "tecnologia": "tecnnologia"
   },
@@ -88,5 +84,10 @@
     "suporte": "suportte",
     "abordagem": "abordajem",
     "simples": "simplis"
+  },
+  {
+    "recurso": "recuro",
+    "abordagem": "abordage",
+    "dispositivo": "dispotivo"
   }
 ]
