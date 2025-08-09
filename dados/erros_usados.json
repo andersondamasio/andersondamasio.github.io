@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "necessidade": "nescessidade",
-    "controle": "contrle"
-  },
-  {
     "conhecimento": "conhecimeto",
     "rotina": "rotna",
     "sistema": "sistma"
@@ -90,5 +85,10 @@
   {
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitertura"
+  },
+  {
+    "estrutura": "estrura",
+    "prioridade": "prioriade.",
+    "exemplo": "exenplo"
   }
 ]
