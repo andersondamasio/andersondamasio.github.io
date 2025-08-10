@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "simples": "cimples",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "exemplo": "exemplo,",
     "abordagem": "abordajem",
     "suporte": "suporte."
@@ -93,5 +88,9 @@
     "personalizado": "personalisado",
     "prioridade": "prioriade",
     "estrutura": "estrura"
+  },
+  {
+    "complexidade": "complexsidade",
+    "prioridade": "prioridade."
   }
 ]
