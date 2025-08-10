@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "tecnologia": "tecnnologia",
-    "simples": "cimples"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "exemplo": "exemplo,",
     "simples": "simplis"
@@ -89,5 +84,10 @@
     "propriedade": "proprieade",
     "componente": "componete",
     "controle": "controlle"
+  },
+  {
+    "abordagem": "abordage",
+    "suporte": "suprte",
+    "necessidade": "necissidade"
   }
 ]
