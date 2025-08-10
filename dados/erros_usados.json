@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "melhor": "melor"
-  },
-  {
     "armazenamento": "armazanamento",
     "desafio": "desafiu",
     "acesso": "acesso."
@@ -92,5 +88,10 @@
     "controle": "contrle",
     "dispositivo": "disposotivo",
     "funciona": "funciona,"
+  },
+  {
+    "constante": "constanate",
+    "funciona": "funsiona",
+    "desenvolvimento": "desenvolmento"
   }
 ]
