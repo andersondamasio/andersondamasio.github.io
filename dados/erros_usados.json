@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "abordagem": "abordajem",
-    "simples": "simplis"
-  },
-  {
     "recurso": "recuro",
     "abordagem": "abordage",
     "dispositivo": "dispotivo"
@@ -93,5 +88,8 @@
     "conhecimento": "conhescimento",
     "acesso": "acesso.",
     "muito": "muiito"
+  },
+  {
+    "acesso": "aceso"
   }
 ]
