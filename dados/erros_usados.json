@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizado.",
-    "necessidade": "nescessidade"
-  },
-  {
     "exemplo": "exemplo,",
     "melhor": "melor"
   },
@@ -91,5 +87,10 @@
     "operacional": "operacional.",
     "virtual": "virtal",
     "gerenciamento": "gerenciamneto"
+  },
+  {
+    "controle": "contrle",
+    "dispositivo": "disposotivo",
+    "funciona": "funciona,"
   }
 ]
