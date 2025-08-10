@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "abordagem": "abordajem",
-    "suporte": "suporte."
-  },
-  {
     "executado": "executado.",
     "conhecimento": "conhescimento"
   },
@@ -92,5 +87,10 @@
   {
     "complexidade": "complexsidade",
     "prioridade": "prioridade."
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "tecnologia": "tecnolgia",
+    "sistema": "sistéma"
   }
 ]
