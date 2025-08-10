@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "arquitetura": "arquitertura"
-  },
-  {
     "dispositivo": "dispositivo.",
     "suporte": "suporte.",
     "funcionalidade": "funcionaliade"
@@ -91,5 +87,10 @@
     "internet": "internert",
     "geralmente": "geralment",
     "acesso": "aceso"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "controle": "contrle",
+    "melhor": "melor"
   }
 ]
