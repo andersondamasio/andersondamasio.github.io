@@ -1,9 +1,5 @@
 [
   {
-    "executado": "executado.",
-    "conhecimento": "conhescimento"
-  },
-  {
     "suporte": "suportte",
     "abordagem": "abordajem",
     "simples": "simplis"
@@ -92,5 +88,10 @@
     "funcionalidade": "funcionalidade.",
     "tecnologia": "tecnolgia",
     "sistema": "sistéma"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "acesso": "acesso.",
+    "muito": "muiito"
   }
 ]
