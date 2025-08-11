@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "proprieade",
-    "componente": "componete",
-    "controle": "controlle"
-  },
-  {
     "abordagem": "abordage",
     "suporte": "suprte",
     "necessidade": "necissidade"
@@ -89,5 +84,10 @@
   {
     "abordagem": "abordajem",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "simples": "simplis",
+    "sistema": "sistéma"
   }
 ]
