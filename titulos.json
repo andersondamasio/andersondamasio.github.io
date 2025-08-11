@@ -20018,5 +20018,14 @@
     "dataFonte": "2025-08-11T03:50:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.zdnet.com/article/i-tested-gpt-5s-coding-skills-and-it-was-so-bad-that-im-sticking-with-gpt-4o-for-now/"
+  },
+  {
+    "titulo": "A porta de entrada para um pesadelo: vulnerabilidades em portais automotivos",
+    "noticiaOriginal": "Security flaws in a carmaker’s web portal let one hacker remotely unlock cars from anywhere",
+    "url": "artigos/seguranca/a-porta-de-entrada-para-um-pesadelo-vulnerabilidades-em-portais-automotivos.html",
+    "data": "2025-08-11T06:33:40.136Z",
+    "dataFonte": "2025-08-11T00:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://techcrunch.com/2025/08/10/security-flaws-in-a-carmakers-web-portal-let-one-hacker-remotely-unlock-cars-from-anywhere/"
   }
 ]
