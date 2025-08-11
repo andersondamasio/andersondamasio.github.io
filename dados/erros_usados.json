@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura"
-  },
-  {
     "propriedade": "proprieade",
     "componente": "componete",
     "controle": "controlle"
@@ -88,5 +85,9 @@
   {
     "estrutura": "estrura",
     "sistema": "cistema"
+  },
+  {
+    "abordagem": "abordajem",
+    "arquitetura": "arquitertura"
   }
 ]
