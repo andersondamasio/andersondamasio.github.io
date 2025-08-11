@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "exemplo": "exemplo,"
-  },
-  {
     "personalizado": "personalisado",
     "prioridade": "prioriade",
     "estrutura": "estrura"
@@ -87,5 +83,9 @@
     "virtual": "virtuaal",
     "utilizado": "utilizdo.",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "automatizado": "automatizdo",
+    "gerenciamento": "gerenciamente"
   }
 ]
