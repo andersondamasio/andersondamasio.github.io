@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "suporte": "suprte",
-    "necessidade": "necissidade"
-  },
-  {
     "processo": "prosseso",
     "desenvolvimento": "desenvolvimente"
   },
@@ -89,5 +84,10 @@
     "tecnologia": "tecnoligia",
     "simples": "simplis",
     "sistema": "sistéma"
+  },
+  {
+    "operacional": "operacionl",
+    "prioridade": "prioriade.",
+    "exemplo": "exemplo."
   }
 ]
