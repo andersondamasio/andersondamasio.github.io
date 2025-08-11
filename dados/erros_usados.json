@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "dispositivo": "disposotivo",
-    "funciona": "funciona,"
-  },
-  {
     "constante": "constanate",
     "funciona": "funsiona",
     "desenvolvimento": "desenvolmento"
@@ -87,5 +82,10 @@
   {
     "monitoramento": "monitoramento.",
     "utilizado": "utilizdo"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "monitoramento": "monitramento",
+    "sistema": "cistema"
   }
 ]
