@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "conectado": "conetado"
-  },
-  {
     "operacional": "operacional.",
     "virtual": "virtal",
     "gerenciamento": "gerenciamneto"
@@ -87,5 +83,10 @@
     "problema": "poblema",
     "acesso": "acesço",
     "controle": "controlle"
+  },
+  {
+    "desafio": "desafiu",
+    "mensagem": "menssagen",
+    "gerenciamento": "gerenciamneto"
   }
 ]
