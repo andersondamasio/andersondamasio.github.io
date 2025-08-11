@@ -1,8 +1,5 @@
 [
   {
-    "acesso": "aceso"
-  },
-  {
     "arquitetura": "arquitretura"
   },
   {
@@ -87,5 +84,9 @@
     "constante": "constante.",
     "monitoramento": "monitorameto",
     "sistema": "sistéma"
+  },
+  {
+    "estrutura": "estrura",
+    "sistema": "cistema"
   }
 ]
