@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "prioridade": "prioridade."
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "tecnologia": "tecnolgia",
     "sistema": "sistéma"
@@ -87,5 +83,9 @@
     "funciona": "funciona,",
     "melhor": "melor",
     "suporte": "suportte"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exemplo,"
   }
 ]
