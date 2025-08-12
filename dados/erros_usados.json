@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "utilizado": "utilizdo.",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "automatizado": "automatizdo",
     "gerenciamento": "gerenciamente"
   },
@@ -90,5 +85,9 @@
     "desafio": "desafiu",
     "arquitetura": "arquitretura",
     "abordagem": "abordajem"
+  },
+  {
+    "acesso": "aceso",
+    "processo": "proceso"
   }
 ]
