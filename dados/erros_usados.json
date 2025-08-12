@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "abordagem": "abordage"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
   },
@@ -89,5 +85,9 @@
     "necessidade": "necessidade.",
     "tecnologia": "tecnoligia",
     "suporte": "suporte."
+  },
+  {
+    "arquitetura": "arquitertura",
+    "sistema": "sistéma"
   }
 ]
