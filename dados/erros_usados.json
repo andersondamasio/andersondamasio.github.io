@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "utilizado": "utilizdo"
-  },
-  {
     "arquitetura": "arquiteturra",
     "monitoramento": "monitramento",
     "sistema": "cistema"
@@ -89,5 +85,10 @@
   {
     "problema": "poblema",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnolgia",
+    "processo": "proceso"
   }
 ]
