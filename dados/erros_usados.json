@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo."
-  },
-  {
     "problema": "poblema",
     "acesso": "acesço",
     "controle": "controlle"
@@ -89,5 +85,10 @@
   {
     "arquitetura": "arquitertura",
     "sistema": "sistéma"
+  },
+  {
+    "consistente": "consiteente",
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
