@@ -1,10 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "acesso": "acesço",
-    "controle": "controlle"
-  },
-  {
     "desafio": "desafiu",
     "mensagem": "menssagen",
     "gerenciamento": "gerenciamneto"
@@ -90,5 +85,10 @@
     "consistente": "consiteente",
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "exemplo": "exemplo,",
+    "simples": "simlpes"
   }
 ]
