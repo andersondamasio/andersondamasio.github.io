@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "sistéma"
-  },
-  {
     "consistente": "consiteente",
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolmento"
@@ -89,5 +85,10 @@
     "internet": "internete",
     "propriedade": "propriedade.",
     "acesso": "aceso"
+  },
+  {
+    "resultado": "resultao",
+    "processo": "prosseso",
+    "monitoramento": "monitorameto"
   }
 ]
