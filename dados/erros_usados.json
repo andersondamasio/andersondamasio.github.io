@@ -1,9 +1,5 @@
 [
   {
-    "correto": "correto.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "processo": "processso",
     "simples": "cimples",
     "melhor": "melhorr"
@@ -89,5 +85,10 @@
     "muito": "muiito",
     "exemplo": "exemplo.",
     "melhor": "melhorr"
+  },
+  {
+    "constante": "constante.",
+    "prioridade": "prioridade.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
