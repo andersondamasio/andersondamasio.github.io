@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "tecnologia": "tecnoligia",
-    "suporte": "suporte."
-  },
-  {
     "arquitetura": "arquitertura",
     "sistema": "sistéma"
   },
@@ -89,5 +84,10 @@
   {
     "recurso": "reccurso",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "internet": "internete",
+    "propriedade": "propriedade.",
+    "acesso": "aceso"
   }
 ]
