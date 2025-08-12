@@ -1,10 +1,5 @@
 [
   {
-    "consistente": "consiteente",
-    "tecnologia": "tecnoligia",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "arquitetura": "arquiteturra",
     "exemplo": "exemplo,",
     "simples": "simlpes"
@@ -90,5 +85,10 @@
     "resultado": "resultao",
     "processo": "prosseso",
     "monitoramento": "monitorameto"
+  },
+  {
+    "sistema": "sistéma",
+    "componente": "componentte",
+    "arquitetura": "arquitertura"
   }
 ]
