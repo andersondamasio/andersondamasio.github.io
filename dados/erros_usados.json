@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "gerenciamento": "gerenciamente",
     "muito": "muiito",
     "desenvolvimento": "desenvolvmento"
@@ -89,5 +85,9 @@
     "necessidade": "necessidade.",
     "simples": "simplis",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "operacional": "operacionl",
+    "carregamento": "carregamento."
   }
 ]
