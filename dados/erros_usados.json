@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "propriedade": "propriedade.",
-    "acesso": "aceso"
-  },
-  {
     "resultado": "resultao",
     "processo": "prosseso",
     "monitoramento": "monitorameto"
@@ -87,5 +82,10 @@
     "melhor": "melhorr",
     "sistema": "sistma",
     "arquitetura": "arquitertura"
+  },
+  {
+    "muito": "muto",
+    "gerenciamento": "gerenciamnto",
+    "funcionalidade": "funcionalidade."
   }
 ]
