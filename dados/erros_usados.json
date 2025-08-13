@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "processo": "proceso"
-  },
-  {
     "dispositivo": "dispositivo.",
     "funcionalidade": "funcionalidade."
   },
@@ -88,5 +84,10 @@
   {
     "funciona": "funciona,",
     "complexidade": "complezidade"
+  },
+  {
+    "necessidade": "necessidade.",
+    "simples": "simplis",
+    "tecnologia": "tecnolgia"
   }
 ]
