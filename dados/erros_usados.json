@@ -1,9 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "exemplo": "exemplo.",
     "tecnologia": "tecnolgia",
     "processo": "proceso"
@@ -88,5 +84,10 @@
   },
   {
     "tecnologia": "tecnolgia"
+  },
+  {
+    "suporte": "suporte.",
+    "estrutura": "estrtura",
+    "desenvolvimento": "desenvolmento"
   }
 ]
