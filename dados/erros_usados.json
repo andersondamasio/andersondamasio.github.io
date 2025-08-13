@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia"
-  },
-  {
     "suporte": "suporte.",
     "estrutura": "estrtura",
     "desenvolvimento": "desenvolmento"
@@ -85,5 +82,9 @@
   {
     "resultado": "resutlado",
     "exemplo": "exemplo,"
+  },
+  {
+    "constante": "constate",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
