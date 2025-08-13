@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "exemplo": "exemplo,",
-    "simples": "simlpes"
-  },
-  {
     "problema": "poblema",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +85,8 @@
     "sistema": "sistéma",
     "componente": "componentte",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnolgia"
   }
 ]
