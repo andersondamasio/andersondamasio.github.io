@@ -11269,5 +11269,10 @@
     "intro": "A discussão sobre Changing these 4 Android phone settings made the system feel like new again revela muito sobre a maturidade técnica de um time.",
     "introOriginal": "A discussão sobre __TEMATICA__ revela muito sobre a maturidade técnica de um time.",
     "data": "2025-08-13"
+  },
+  "2025-08-13-a-arte-de-manter-a-continuidade-como-agoda-inova-na-resiliencia-do-kafka": {
+    "intro": "Nem sempre damos o devido peso a Agoda Handles Kafka Consumer Failover Across Data Centers with Custom Two-Way Sync, até que tudo quebra em produção.",
+    "introOriginal": "Nem sempre damos o devido peso a __TEMATICA__, até que tudo quebra em produção.",
+    "data": "2025-08-13"
   }
 }

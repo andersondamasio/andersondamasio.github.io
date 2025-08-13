@@ -20459,5 +20459,14 @@
     "dataFonte": "2025-08-13T10:15:14.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/changing-these-4-android-phone-settings-made-the-system-feel-like-new-again/"
+  },
+  {
+    "titulo": "A arte de manter a continuidade: Como Agoda inova na resiliência do Kafka",
+    "noticiaOriginal": "Agoda Handles Kafka Consumer Failover Across Data Centers with Custom Two-Way Sync",
+    "url": "artigos/tecnologia/a-arte-de-manter-a-continuidade-como-agoda-inova-na-resiliencia-do-kafka.html",
+    "data": "2025-08-13T11:17:52.122Z",
+    "dataFonte": "2025-08-13T11:00:00.000Z",
+    "categoria": "Tecnologia",
+    "urlFonte": "https://www.infoq.com/news/2025/08/agoda-kafka-failover/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
