@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "componente": "componentte",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnolgia"
   },
   {
@@ -86,5 +81,9 @@
   {
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "resultado": "resutlado",
+    "exemplo": "exemplo,"
   }
 ]
