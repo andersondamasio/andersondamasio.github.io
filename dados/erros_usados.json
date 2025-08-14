@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "carregamento": "carregamento."
-  },
-  {
     "armazenamento": "armazenamentto",
     "conectado": "conectdo"
   },
@@ -84,5 +80,10 @@
   {
     "complexidade": "complexsidade",
     "propriedade": "propriadade"
+  },
+  {
+    "acesso": "aceso",
+    "conhecimento": "conhescimento",
+    "mensagem": "menssagen"
   }
 ]
