@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "resultado": "resutlado",
     "exemplo": "exemplo,"
   },
@@ -89,5 +85,10 @@
     "gerenciamento": "gerenciamneto",
     "desenvolvimento": "desenvolvimente",
     "dispositivo": "dispositivo."
+  },
+  {
+    "armazenamento": "armasenamento",
+    "funciona": "funciona,",
+    "sistema": "sistma"
   }
 ]
