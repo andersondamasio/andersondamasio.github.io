@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "estrutura": "estrututra"
-  },
-  {
     "dispositivo": "dispotivo",
     "sistema": "cistema"
   },
@@ -85,5 +81,10 @@
   {
     "sistema": "sistéma",
     "arquitetura": "arquitretura"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "muito": "muiito",
+    "simples": "simplis"
   }
 ]
