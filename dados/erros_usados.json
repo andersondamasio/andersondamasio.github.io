@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funciona,",
-    "complexidade": "complezidade"
-  },
-  {
     "necessidade": "necessidade.",
     "simples": "simplis",
     "tecnologia": "tecnolgia"
@@ -85,5 +81,9 @@
     "funciona": "funciona,",
     "constante": "constante.",
     "exemplo": "exemplo."
+  },
+  {
+    "dispositivo": "dispotivo",
+    "sistema": "sistéma"
   }
 ]
