@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "conectado": "conectdo"
-  },
-  {
     "arquitetura": "arquitertura",
     "estrutura": "estrututra"
   },
@@ -85,5 +81,9 @@
     "acesso": "aceso",
     "conhecimento": "conhescimento",
     "mensagem": "menssagen"
+  },
+  {
+    "sistema": "sistéma",
+    "arquitetura": "arquitretura"
   }
 ]
