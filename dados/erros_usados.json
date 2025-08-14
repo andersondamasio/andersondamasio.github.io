@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "abordagem": "abordajem"
-  },
-  {
     "desafio": "desafiu",
     "simples": "simlpes"
   },
@@ -87,5 +83,10 @@
     "exemplo": "exemplo.",
     "controle": "controle.",
     "melhor": "melhorr"
+  },
+  {
+    "operacional": "operacional.",
+    "recurso": "reccurso",
+    "dispositivo": "dispositivo."
   }
 ]
