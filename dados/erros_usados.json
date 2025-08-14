@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "sistema": "cistema"
-  },
-  {
     "abordagem": "abordajem",
     "automatizado": "automatizdo"
   },
@@ -86,5 +82,10 @@
     "desenvolvimento": "desenvolvmento",
     "muito": "muiito",
     "simples": "simplis"
+  },
+  {
+    "necessidade": "necissidade",
+    "carregamento": "carregamneto",
+    "tecnologia": "tecnnologia"
   }
 ]
