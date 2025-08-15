@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "propriedade": "propriadade"
-  },
-  {
     "acesso": "aceso",
     "conhecimento": "conhescimento",
     "mensagem": "menssagen"
@@ -90,5 +86,9 @@
     "problema": "problema.",
     "constante": "constanate",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "funciona": "funciona,"
   }
 ]
