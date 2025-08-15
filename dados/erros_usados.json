@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "recurso": "recuro",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "tecnologia": "tecnolgia",
     "funciona": "funciona."
   },
@@ -89,5 +84,10 @@
   {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "abordagem": "abordagem.",
+    "desenvolvimento": "desenvolvimente",
+    "sistema": "cistema"
   }
 ]
