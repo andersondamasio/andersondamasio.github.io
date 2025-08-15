@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "desenvolvimento": "desenvolvimente",
-    "dispositivo": "dispositivo."
-  },
-  {
     "armazenamento": "armasenamento",
     "funciona": "funciona,",
     "sistema": "sistma"
@@ -89,5 +84,9 @@
     "estrutura": "estrututra",
     "conhecimento": "conhecimeto",
     "arquitetura": "arquitretura"
+  },
+  {
+    "conectado": "conetado",
+    "simples": "cimples"
   }
 ]
