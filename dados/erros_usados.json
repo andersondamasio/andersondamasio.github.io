@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conetado",
-    "desafio": "desafío"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "desenvolvimento": "desenvolvimente",
     "dispositivo": "dispositivo."
@@ -88,5 +84,10 @@
     "muito": "muto",
     "tecnologia": "tecnnologia",
     "internet": "internete"
+  },
+  {
+    "estrutura": "estrututra",
+    "conhecimento": "conhecimeto",
+    "arquitetura": "arquitretura"
   }
 ]
