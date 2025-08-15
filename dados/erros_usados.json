@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "dispositivo": "dispotivo"
-  },
-  {
     "problema": "problema.",
     "constante": "constanate",
     "tecnologia": "tecnolgia"
@@ -89,5 +85,9 @@
   {
     "utilizado": "utilizado.",
     "acesso": "acesço"
+  },
+  {
+    "abordagem": "abordajem",
+    "tecnologia": "tecnolgia"
   }
 ]
