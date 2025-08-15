@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "monitoramento": "monitoramento.",
     "dispositivo": "dispotivo"
   },
@@ -89,5 +85,9 @@
     "controle": "contrle",
     "constante": "constante.",
     "exemplo": "exenplo"
+  },
+  {
+    "utilizado": "utilizado.",
+    "acesso": "acesço"
   }
 ]
