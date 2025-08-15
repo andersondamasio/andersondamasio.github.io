@@ -20810,5 +20810,14 @@
     "dataFonte": "2025-08-14T21:23:50.000Z",
     "categoria": "Desenvolvimento de Software",
     "urlFonte": "https://www.wired.com/story/ai-slop-is-ripping-off-one-of-summers-best-games-fighting-back-is-harder-than-you-think/"
+  },
+  {
+    "titulo": "A nova era da arquitetura de dados: o que aprendemos com a Tudum da Netflix",
+    "noticiaOriginal": "Netflix Revamps Tudum’s CQRS Architecture with RAW Hollow In-Memory Object Store",
+    "url": "artigos/tecnologia/a-nova-era-da-arquitetura-de-dados-o-que-aprendemos-com-a-tudum-da-netflix.html",
+    "data": "2025-08-15T06:31:10.366Z",
+    "dataFonte": "2025-08-15T06:00:00.000Z",
+    "categoria": "Tecnologia",
+    "urlFonte": "https://www.infoq.com/news/2025/08/netflix-tudum-cqrs-raw-hollow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
