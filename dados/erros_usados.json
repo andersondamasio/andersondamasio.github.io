@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "constante": "constanate",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "tecnologia": "tecnoligia",
     "funciona": "funciona,"
   },
@@ -89,5 +84,10 @@
   {
     "abordagem": "abordajem",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "complexidade": "complexidade.",
+    "monitoramento": "monitoramento.",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
