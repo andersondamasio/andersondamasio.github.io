@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "funciona": "funciona,"
-  },
-  {
     "processo": "prosseso",
     "recurso": "recuro",
     "funcionalidade": "funcionalidade."
@@ -89,5 +85,9 @@
     "complexidade": "complexidade.",
     "monitoramento": "monitoramento.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquiteturra"
   }
 ]
