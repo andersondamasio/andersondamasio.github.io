@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "muito": "muiito",
-    "suporte": "suportte"
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura",
     "abordagem": "abordagem."
@@ -89,5 +84,9 @@
     "resultado": "resutlado",
     "melhor": "melhorr",
     "prioridade": "prioriade."
+  },
+  {
+    "operacional": "operacional.",
+    "suporte": "suporte."
   }
 ]
