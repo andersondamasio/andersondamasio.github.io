@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "conhecimento": "conhescimento",
-    "mensagem": "menssagen"
-  },
-  {
     "sistema": "sistéma",
     "arquitetura": "arquitretura"
   },
@@ -90,5 +85,10 @@
   {
     "tecnologia": "tecnoligia",
     "funciona": "funciona,"
+  },
+  {
+    "processo": "prosseso",
+    "recurso": "recuro",
+    "funcionalidade": "funcionalidade."
   }
 ]
