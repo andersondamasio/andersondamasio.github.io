@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "propriadade",
-    "problema": "probrema"
-  },
-  {
     "simples": "simplis",
     "armazenamento": "armazanamento",
     "sistema": "sistma"
@@ -90,5 +86,10 @@
     "tecnologia": "tecnnologia",
     "sistema": "sistma",
     "arquitetura": "arquitretura"
+  },
+  {
+    "processo": "processso",
+    "utilizado": "utilizdo",
+    "sistema": "sistéma"
   }
 ]
