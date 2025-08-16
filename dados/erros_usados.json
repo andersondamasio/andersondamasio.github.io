@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "funciona": "funciona."
-  },
-  {
     "propriedade": "propriadade",
     "problema": "probrema"
   },
@@ -89,5 +85,10 @@
     "abordagem": "abordagem.",
     "desenvolvimento": "desenvolvimente",
     "sistema": "cistema"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "sistema": "sistma",
+    "arquitetura": "arquitretura"
   }
 ]
