@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "dispositivo": "dispositivo."
-  },
-  {
     "controle": "contrle",
     "constante": "constante.",
     "exemplo": "exenplo"
@@ -90,5 +86,10 @@
     "internet": "internete",
     "simples": "simplis",
     "funciona": "funciona,"
+  },
+  {
+    "sistema": "cistema",
+    "tecnologia": "tecnolgia",
+    "melhor": "melhorr"
   }
 ]
