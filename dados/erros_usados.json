@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "abordagem": "abordagem.",
     "desenvolvimento": "desenvolvimente",
     "sistema": "cistema"
@@ -92,5 +88,9 @@
   {
     "gerenciamento": "gerenciamneto",
     "abordagem": "abordage"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desafio": "desafío"
   }
 ]
