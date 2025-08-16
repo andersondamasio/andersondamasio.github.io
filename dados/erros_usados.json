@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizado.",
-    "acesso": "acesço"
-  },
-  {
     "abordagem": "abordajem",
     "tecnologia": "tecnolgia"
   },
@@ -91,5 +87,10 @@
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolmento",
     "monitoramento": "monitorameto"
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "controle": "contrle",
+    "exemplo": "exenplo"
   }
 ]
