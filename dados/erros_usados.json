@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotna",
-    "funcionalidade": "funcionaliade",
-    "exemplo": "exemplo."
-  },
-  {
     "paralelo": "paralelo.",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnoligia"
@@ -91,5 +86,10 @@
   {
     "muito": "muinto",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "mensagem": "mensagen",
+    "arquitetura": "arquitertura",
+    "sistema": "cistema"
   }
 ]
