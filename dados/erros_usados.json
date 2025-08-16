@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "suporte": "suporte."
-  },
-  {
     "rotina": "rotna",
     "funcionalidade": "funcionaliade",
     "exemplo": "exemplo."
@@ -91,5 +87,9 @@
     "funciona": "funciona,",
     "tecnologia": "tecnnologia",
     "sistema": "sistma"
+  },
+  {
+    "muito": "muinto",
+    "funcionalidade": "funcionaliade"
   }
 ]
