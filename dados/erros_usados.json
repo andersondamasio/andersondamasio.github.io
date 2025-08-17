@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "problema": "probrema"
-  },
-  {
     "acesso": "acesso.",
     "processo": "processso",
     "conhecimento": "conhescimento"
@@ -92,5 +88,10 @@
   },
   {
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "tecnologia": "tecnolgia",
+    "simples": "cimples"
   }
 ]
