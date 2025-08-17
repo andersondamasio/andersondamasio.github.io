@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordajem",
-    "desenvolvimento": "desenvolmento",
-    "monitoramento": "monitorameto"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "controle": "contrle",
     "exemplo": "exenplo"
@@ -91,5 +86,10 @@
   {
     "arquitetura": "arquiteturra",
     "processo": "processso"
+  },
+  {
+    "complexidade": "complexidade.",
+    "constante": "constate",
+    "tecnologia": "tecnolgia"
   }
 ]
