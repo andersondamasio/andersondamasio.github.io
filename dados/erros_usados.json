@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "sistema": "sistma",
-    "carregamento": "carregamento."
-  },
-  {
     "desafio": "desaío",
     "arquitetura": "arquitretura",
     "monitoramento": "monitramento"
@@ -92,5 +87,10 @@
     "sistema": "sistéma",
     "funciona": "funciona,",
     "dispositivo": "dispositivo."
+  },
+  {
+    "exemplo": "exenplo",
+    "conhecimento": "conhescimento",
+    "controle": "controle."
   }
 ]
