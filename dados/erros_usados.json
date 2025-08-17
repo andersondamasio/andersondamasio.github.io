@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "arquitetura": "arquitretura",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "necessidade": "necissidade",
     "constante": "constante.",
     "desenvolvimento": "desenvolvmento"
@@ -92,5 +87,10 @@
     "virtual": "virtal",
     "prioridade": "prioriade",
     "abordagem": "abordage"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnoligia"
   }
 ]
