@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "processo": "processso"
-  },
-  {
     "complexidade": "complexidade.",
     "constante": "constate",
     "tecnologia": "tecnolgia"
@@ -92,5 +88,9 @@
   {
     "armazenamento": "armazanamento",
     "muito": "muinto"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "muito": "muto"
   }
 ]
