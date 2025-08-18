@@ -1,8 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "tecnologia": "tecnolgia",
     "simples": "cimples"
@@ -90,5 +87,10 @@
     "acesso": "acesço",
     "monitoramento": "monitorameto",
     "exemplo": "exenplo"
+  },
+  {
+    "controle": "controlle",
+    "complexidade": "complexidade.",
+    "funcionalidade": "funcionalidade."
   }
 ]
