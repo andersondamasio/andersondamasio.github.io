@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "tecnologia": "tecnoligia",
-    "funciona": "funsiona"
-  },
-  {
     "arquitetura": "arquiteturra",
     "processo": "processso"
   },
@@ -93,5 +88,9 @@
     "acesso": "acesço",
     "arquitetura": "arquiteturra",
     "dispositivo": "dispositivo."
+  },
+  {
+    "armazenamento": "armazanamento",
+    "muito": "muinto"
   }
 ]
