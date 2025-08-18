@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "conhecimento": "conhecimento."
-  },
-  {
     "processo": "prosseso",
     "tecnologia": "tecnoligia",
     "funciona": "funsiona"
@@ -92,5 +88,10 @@
     "dispositivo": "dispotivo",
     "melhor": "melhorr",
     "sistema": "sistéma"
+  },
+  {
+    "acesso": "acesço",
+    "arquitetura": "arquiteturra",
+    "dispositivo": "dispositivo."
   }
 ]
