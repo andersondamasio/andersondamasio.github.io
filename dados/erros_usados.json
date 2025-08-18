@@ -1,9 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "desenvolvimento": "desenvolmento",
     "suporte": "suportte"
@@ -90,5 +86,10 @@
     "carregamento": "carregamento.",
     "abordagem": "abordage",
     "prioridade": "prioriade"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "melhor": "melhorr",
+    "necessidade": "necessidade."
   }
 ]
