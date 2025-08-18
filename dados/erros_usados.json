@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "tecnologia": "tecnnologia",
     "desafio": "desaío",
     "arquitetura": "arquitertura"
@@ -91,5 +87,8 @@
   {
     "geralmente": "geralmete",
     "sistema": "cistema"
+  },
+  {
+    "sistema": "sistma"
   }
 ]
