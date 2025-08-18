@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "exemplo": "exenplo",
-    "melhor": "melor"
-  },
-  {
     "desenvolvimento": "desenvolvmento"
   },
   {
@@ -90,5 +85,10 @@
     "gerenciamento": "gerenciamneto",
     "desenvolvimento": "desenvolmento",
     "suporte": "suportte"
+  },
+  {
+    "acesso": "acesço",
+    "monitoramento": "monitorameto",
+    "exemplo": "exenplo"
   }
 ]
