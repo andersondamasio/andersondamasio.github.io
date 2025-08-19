@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "sistema": "cistema",
-    "processo": "proceso"
-  },
-  {
     "rotina": "rotína",
     "desafio": "desafío",
     "arquitetura": "arquitertura"
@@ -89,5 +84,10 @@
   },
   {
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "tecnologia": "tecnolgia",
+    "simples": "simplis"
   }
 ]
