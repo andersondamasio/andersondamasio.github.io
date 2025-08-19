@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotína",
-    "desafio": "desafío",
-    "arquitetura": "arquitertura"
-  },
-  {
     "simples": "simlpes",
     "internet": "internert",
     "muito": "muinto"
@@ -89,5 +84,9 @@
     "conhecimento": "conhescimento",
     "tecnologia": "tecnolgia",
     "simples": "simplis"
+  },
+  {
+    "componente": "componete",
+    "controle": "controlle"
   }
 ]
