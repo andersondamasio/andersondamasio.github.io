@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "melhor": "melhorr",
-    "necessidade": "necessidade."
-  },
-  {
     "funciona": "funciona,",
     "arquitetura": "arquitretura"
   },
@@ -88,5 +83,9 @@
     "dispositivo": "disposotivo",
     "recurso": "recuro",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "suporte": "suporte.",
+    "monitoramento": "monitramento"
   }
 ]
