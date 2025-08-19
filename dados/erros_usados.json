@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "abordagem": "abordage",
-    "prioridade": "prioriade"
-  },
-  {
     "dispositivo": "dispotivo",
     "melhor": "melhorr",
     "necessidade": "necessidade."
@@ -88,5 +83,10 @@
     "consistente": "consistente.",
     "conectado": "conetado",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "recurso": "recuro",
+    "tecnologia": "tecnnologia"
   }
 ]
