@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "arquitetura": "arquitretura",
-    "sistema": "sistma"
-  },
-  {
     "geralmente": "geralmete",
     "sistema": "cistema"
   },
@@ -88,5 +83,10 @@
   {
     "acesso": "acesso.",
     "exemplo": "exemplo,"
+  },
+  {
+    "controle": "controle.",
+    "desenvolvimento": "desenvolvmento",
+    "simples": "cimples"
   }
 ]
