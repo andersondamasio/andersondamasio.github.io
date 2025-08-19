@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "muito": "muinto"
-  },
-  {
     "conhecimento": "conhescimento",
     "muito": "muto"
   },
@@ -88,5 +84,9 @@
     "sistema": "sistma",
     "problema": "problema.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "simples": "simlpes"
   }
 ]
