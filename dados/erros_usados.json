@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "propriadade",
-    "exemplo": "exemplo,",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "dispositivo": "dispotivo",
     "melhor": "melhorr",
     "sistema": "sistéma"
@@ -89,5 +84,9 @@
   {
     "monitoramento": "monitramento",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "processo": "processso"
   }
 ]
