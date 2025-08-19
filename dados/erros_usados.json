@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrtura",
-    "arquitetura": "arquiteturra",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "monitoramento": "monitramento",
     "tecnologia": "tecnnologia"
   },
@@ -89,5 +84,10 @@
     "correto": "coreto",
     "necessidade": "nescessidade",
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquiteturra"
   }
 ]
