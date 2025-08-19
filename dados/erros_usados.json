@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "complexidade": "complexidade.",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "mensagem": "menssagem",
     "necessidade": "necessidade."
   },
@@ -89,5 +84,10 @@
   {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "estrutura": "estrtura",
+    "arquitetura": "arquiteturra",
+    "desenvolvimento": "desenvolmento"
   }
 ]
