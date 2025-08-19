@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "muito": "muto"
-  },
-  {
     "processo": "prosseso",
     "arquitetura": "arquitretura",
     "sistema": "sistma"
@@ -88,5 +84,9 @@
   {
     "desenvolvimento": "desenvolmento",
     "simples": "simlpes"
+  },
+  {
+    "acesso": "acesso.",
+    "exemplo": "exemplo,"
   }
 ]
