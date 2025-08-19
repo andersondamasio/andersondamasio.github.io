@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "menssagem",
-    "necessidade": "necessidade."
-  },
-  {
     "propriedade": "propriadade",
     "exemplo": "exemplo,",
     "tecnologia": "tecnoligia"
@@ -89,5 +85,9 @@
     "estrutura": "estrtura",
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "monitoramento": "monitramento",
+    "tecnologia": "tecnnologia"
   }
 ]
