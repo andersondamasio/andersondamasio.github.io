@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "estrutura": "estrtura",
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolmento"
@@ -88,5 +84,10 @@
     "desenvolvimento": "desenvolvmento",
     "conectado": "conectdo",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "correto": "coreto",
+    "necessidade": "nescessidade",
+    "arquitetura": "arquitretura"
   }
 ]
