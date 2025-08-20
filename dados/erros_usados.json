@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "processo": "processso"
-  },
-  {
     "resultado": "resutlado",
     "melhor": "melhorr",
     "processo": "proceso"
@@ -90,5 +86,9 @@
     "parceria": "parcería",
     "necessidade": "necessidade.",
     "melhor": "melor"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitretura"
   }
 ]
