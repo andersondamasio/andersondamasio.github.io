@@ -1,9 +1,5 @@
 [
   {
-    "componente": "componete",
-    "controle": "controlle"
-  },
-  {
     "exemplo": "exemplo.",
     "problema": "probrema",
     "sistema": "cistema"
@@ -89,5 +85,9 @@
     "funciona": "funsiona",
     "acesso": "acesso.",
     "processo": "prosseso"
+  },
+  {
+    "utilizado": "utilizado.",
+    "simples": "simlpes"
   }
 ]
