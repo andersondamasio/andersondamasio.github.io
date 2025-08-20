@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "melhor": "melhorr",
-    "processo": "proceso"
-  },
-  {
     "sistema": "sistma",
     "problema": "problema.",
     "arquitetura": "arquitertura"
@@ -90,5 +85,9 @@
   {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "estrutura": "estrtura",
+    "suporte": "suporte."
   }
 ]
