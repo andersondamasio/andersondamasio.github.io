@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "estrutura": "estrtura",
     "suporte": "suporte."
   },
@@ -86,5 +82,10 @@
   {
     "complexidade": "complexsidade",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "necessidade": "nescessidade",
+    "tecnologia": "tecnoligia",
+    "sistema": "sistéma"
   }
 ]
