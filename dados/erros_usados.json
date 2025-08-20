@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "exemplo": "exemplo,"
-  },
-  {
     "controle": "controle.",
     "desenvolvimento": "desenvolvmento",
     "simples": "cimples"
@@ -88,5 +84,9 @@
   {
     "muito": "muinto",
     "operacional": "operacionl"
+  },
+  {
+    "exemplo": "exemplo,",
+    "tecnologia": "tecnolgia"
   }
 ]
