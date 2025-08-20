@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "tecnologia": "tecnolgia",
-    "simples": "simplis"
-  },
-  {
     "componente": "componete",
     "controle": "controlle"
   },
@@ -89,5 +84,10 @@
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia",
     "conhecimento": "conhecimento."
+  },
+  {
+    "funciona": "funsiona",
+    "acesso": "acesso.",
+    "processo": "prosseso"
   }
 ]
