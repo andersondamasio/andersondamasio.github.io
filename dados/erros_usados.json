@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "problema": "problema.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "simples": "simlpes"
   },
@@ -89,5 +84,9 @@
   {
     "estrutura": "estrtura",
     "suporte": "suporte."
+  },
+  {
+    "carregamento": "carregameno",
+    "recurso": "recusso"
   }
 ]
