@@ -1,10 +1,5 @@
 [
   {
-    "consistente": "consistente.",
-    "conectado": "conetado",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "dispositivo": "disposotivo",
     "recurso": "recuro",
     "tecnologia": "tecnnologia"
@@ -89,5 +84,10 @@
     "controle": "contrle",
     "simples": "cimples",
     "melhor": "melhorr"
+  },
+  {
+    "recurso": "recuro",
+    "monitoramento": "monitoramento.",
+    "armazenamento": "armazanamento"
   }
 ]
