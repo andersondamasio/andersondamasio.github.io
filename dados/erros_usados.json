@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "necessidade": "necessidade.",
-    "melhor": "melor"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura"
   },
@@ -87,5 +82,9 @@
     "carregamento": "carregamento.",
     "processo": "prosseso",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "complexidade": "complexsidade",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
