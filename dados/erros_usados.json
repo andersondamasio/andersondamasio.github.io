@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "tecnologia": "tecnoligia",
-    "conhecimento": "conhecimento."
-  },
-  {
     "funciona": "funsiona",
     "acesso": "acesso.",
     "processo": "prosseso"
@@ -90,5 +85,10 @@
     "muito": "muinto",
     "controle": "controlle",
     "simples": "simplis"
+  },
+  {
+    "exemplo": "exemplo.",
+    "simples": "simlpes",
+    "complexidade": "complexsidade"
   }
 ]
