@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "desafio": "desaío"
-  },
-  {
     "carregamento": "carregamento.",
     "processo": "prosseso",
     "funcionalidade": "funcionaliadde"
@@ -92,5 +88,10 @@
     "rotina": "rotína",
     "dispositivo": "dispotivo",
     "monitoramento": "monitramento"
+  },
+  {
+    "complexidade": "complezidade",
+    "tecnologia": "tecnoligia",
+    "processo": "proceso"
   }
 ]
