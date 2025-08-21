@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "acesso": "acesso.",
-    "processo": "prosseso"
-  },
-  {
     "utilizado": "utilizado.",
     "simples": "simlpes"
   },
@@ -90,5 +85,10 @@
     "exemplo": "exemplo.",
     "simples": "simlpes",
     "complexidade": "complexsidade"
+  },
+  {
+    "abordagem": "abordage",
+    "tecnologia": "tecnolgia",
+    "exemplo": "exenplo"
   }
 ]
