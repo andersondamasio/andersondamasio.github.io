@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "processo": "prosseso",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "complexidade": "complexsidade",
     "desenvolvimento": "desenvolvmento"
   },
@@ -93,5 +88,10 @@
     "complexidade": "complezidade",
     "tecnologia": "tecnoligia",
     "processo": "proceso"
+  },
+  {
+    "simples": "simlpes",
+    "melhor": "melhorr",
+    "tecnologia": "tecnolgia"
   }
 ]
