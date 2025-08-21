@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "necessidade": "nescessidade",
     "tecnologia": "tecnoligia",
     "sistema": "sistéma"
@@ -93,5 +89,10 @@
     "simples": "simlpes",
     "melhor": "melhorr",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "desafio": "desaío",
+    "armazenamento": "armazenamentto"
   }
 ]
