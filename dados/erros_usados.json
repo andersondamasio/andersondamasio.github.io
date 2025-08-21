@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "dispositivo": "dispositivo.",
     "arquitetura": "arquiteturra",
     "funciona": "funciona."
@@ -91,5 +87,10 @@
   {
     "utilizado": "utilizdo",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "exemplo": "exemplo.",
+    "resultado": "resultao",
+    "muito": "muinto"
   }
 ]
