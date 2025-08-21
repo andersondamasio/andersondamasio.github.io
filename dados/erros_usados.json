@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizado.",
-    "simples": "simlpes"
-  },
-  {
     "controle": "contrle",
     "simples": "cimples",
     "melhor": "melhorr"
@@ -90,5 +86,10 @@
     "abordagem": "abordage",
     "tecnologia": "tecnolgia",
     "exemplo": "exenplo"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "armazenamento": "armazenamentto",
+    "tecnologia": "tecnoligia"
   }
 ]
