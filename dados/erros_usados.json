@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotína",
-    "dispositivo": "dispotivo",
-    "monitoramento": "monitramento"
-  },
-  {
     "complexidade": "complezidade",
     "tecnologia": "tecnoligia",
     "processo": "proceso"
@@ -95,5 +90,10 @@
   {
     "melhor": "melhorr",
     "exemplo": "exemplo,"
+  },
+  {
+    "acesso": "acesço",
+    "prioridade": "prioriade",
+    "tecnologia": "tecnolgia"
   }
 ]
