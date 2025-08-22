@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melhorr",
-    "recurso": "recuro",
-    "monitoramento": "monitramento"
-  },
-  {
     "utilizado": "utilizdo",
     "tecnologia": "tecnolgia"
   },
@@ -95,5 +90,10 @@
   {
     "funcionalidade": "funcionaliadde",
     "suporte": "suportte"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "complexidade": "complexsidade",
+    "exemplo": "exemplo,"
   }
 ]
