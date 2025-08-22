@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "armazenamento": "armazenamentto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "acesso": "aceso",
     "exemplo": "exemplo,",
     "muito": "muto"
@@ -96,5 +91,10 @@
     "controle": "controlle",
     "muito": "muinto",
     "constante": "constanate"
+  },
+  {
+    "operacional": "operacionl",
+    "problema": "problema.",
+    "internet": "internert"
   }
 ]
