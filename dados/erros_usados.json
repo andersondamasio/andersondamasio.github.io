@@ -1,10 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "abordagem": "abordajem",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "sistema": "sistma",
     "necessidade": "necissidade",
     "suporte": "suportte"
@@ -93,5 +88,10 @@
   {
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "sistema": "sistéma",
+    "constante": "constate",
+    "exemplo": "exenplo"
   }
 ]
