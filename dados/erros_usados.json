@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muto",
-    "exemplo": "exemplo.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "problema": "probrema",
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolmento"
@@ -94,5 +89,9 @@
   {
     "rotina": "rotina.",
     "processo": "processso"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "desenvolvimento": "desenvolmento"
   }
 ]
