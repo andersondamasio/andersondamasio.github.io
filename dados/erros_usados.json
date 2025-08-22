@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "resultado": "resultao",
-    "muito": "muto"
-  },
-  {
     "estrutura": "estrtura",
     "melhor": "melhorr",
     "abordagem": "abordage"
@@ -95,5 +90,10 @@
     "funciona": "funciona.",
     "monitoramento": "monitoramento.",
     "necessidade": "necessidade."
+  },
+  {
+    "virtual": "virtual.",
+    "recurso": "recuro",
+    "arquitetura": "arquiteturra"
   }
 ]
