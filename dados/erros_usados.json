@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "prioridade": "prioriade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "problema": "problema.",
     "melhor": "melhorr",
     "processo": "processso"
@@ -93,5 +88,10 @@
   {
     "muito": "muinto",
     "gerenciamento": "gerenciamneto"
+  },
+  {
+    "problema": "poblema",
+    "muito": "muiito",
+    "dispositivo": "dispotivo"
   }
 ]
