@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "sistema": "sistéma",
     "constante": "constate",
     "exemplo": "exenplo"
@@ -92,5 +88,10 @@
   {
     "parceria": "parceria.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "muito": "muinto",
+    "gerenciamento": "gerenciamnto",
+    "necessidade": "nescessidade"
   }
 ]
