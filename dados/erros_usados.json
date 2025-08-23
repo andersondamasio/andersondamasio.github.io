@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "complexidade": "complexsidade",
-    "exemplo": "exemplo,"
-  },
-  {
     "sistema": "sistéma",
     "suporte": "suportte",
     "necessidade": "necissidade"
@@ -93,5 +88,10 @@
     "carregamento": "carregamento.",
     "muito": "muiito",
     "recurso": "recusso"
+  },
+  {
+    "necessidade": "necessidade.",
+    "tecnologia": "tecnolgia",
+    "prioridade": "prioridade."
   }
 ]
