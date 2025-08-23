@@ -22466,5 +22466,14 @@
     "dataFonte": "2025-08-23T13:15:18.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/is-lenovos-new-steamos-handheld-worth-the-hype-i-tested-it-heres-my-verdict/"
+  },
+  {
+    "titulo": "A revolução do deploy: como o AWS Lambda e GitHub Actions podem facilitar sua vida",
+    "noticiaOriginal": "AWS Lambda Adds Support for GitHub Actions",
+    "url": "artigos/cloud/a-revolucao-do-deploy-como-o-aws-lambda-e-github-actions-podem-facilitar-sua-vida.html",
+    "data": "2025-08-23T14:16:54.046Z",
+    "dataFonte": "2025-08-23T14:01:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/08/aws-lambda-github-actions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
