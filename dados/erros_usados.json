@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "parceria": "parceria."
-  },
-  {
     "dispositivo": "dispotivo",
     "desafio": "desaío",
     "sistema": "cistema"
@@ -92,5 +88,10 @@
   {
     "melhor": "melhorr",
     "acesso": "acesço"
+  },
+  {
+    "funciona": "funciona,",
+    "exemplo": "exenplo",
+    "suporte": "suporte."
   }
 ]
