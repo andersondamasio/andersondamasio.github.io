@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constate",
-    "estrutura": "estrututra"
-  },
-  {
     "paralelo": "paralélo",
     "conectado": "conetado",
     "carregamento": "carregamento."
@@ -92,5 +88,10 @@
     "complexidade": "complexsidade",
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "resultado": "resultadoo",
+    "controle": "contrle",
+    "arquitetura": "arquitretura"
   }
 ]
