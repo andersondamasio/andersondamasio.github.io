@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "muito": "muto",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "constante": "constate",
     "estrutura": "estrututra"
   },
@@ -92,5 +87,10 @@
     "dispositivo": "dispotivo",
     "desafio": "desaío",
     "sistema": "cistema"
+  },
+  {
+    "complexidade": "complexsidade",
+    "exemplo": "exenplo",
+    "desenvolvimento": "desenvolmento"
   }
 ]
