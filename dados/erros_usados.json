@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordagem.",
-    "tecnologia": "tecnolgia",
-    "desafio": "desafiu"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnoligia"
@@ -93,5 +88,9 @@
     "funciona": "funciona,",
     "processo": "processso",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "parceria": "parceria."
   }
 ]
