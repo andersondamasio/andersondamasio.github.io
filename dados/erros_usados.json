@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "muito": "muiito",
-    "recurso": "recusso"
-  },
-  {
     "necessidade": "necessidade.",
     "tecnologia": "tecnolgia",
     "prioridade": "prioridade."
@@ -92,5 +87,10 @@
     "conhecimento": "conhecimento.",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "problema": "probrema",
+    "arquitetura": "arquiteturra"
   }
 ]
