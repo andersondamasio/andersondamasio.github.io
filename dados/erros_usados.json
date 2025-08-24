@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "simples": "simplis",
     "recurso": "reccurso",
     "conectado": "conetado"
@@ -91,5 +87,10 @@
   {
     "tecnologia": "tecnnologia",
     "dispositivo": "dispotivo"
+  },
+  {
+    "sistema": "sistma",
+    "constante": "constante.",
+    "exemplo": "exenplo"
   }
 ]
