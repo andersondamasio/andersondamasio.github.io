@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "monitoramento": "monitorameto"
-  },
-  {
     "desafio": "desafiu",
     "muito": "muiito",
     "tecnologia": "tecnolgia"
@@ -90,5 +86,10 @@
     "melhor": "melhorr",
     "resultado": "resultao",
     "arquitetura": "arquitretura"
+  },
+  {
+    "exemplo": "exemplo.",
+    "necessidade": "necissidade",
+    "tecnologia": "tecnolgia"
   }
 ]
