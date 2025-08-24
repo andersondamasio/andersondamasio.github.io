@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "exemplo": "exenplo",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "resultado": "resultadoo",
     "controle": "contrle",
     "arquitetura": "arquitretura"
@@ -93,5 +88,9 @@
     "processo": "proceso",
     "carregamento": "carregameno",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "monitoramento": "monitorameto"
   }
 ]
