@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "carregamento": "carregameno",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "monitoramento": "monitorameto"
   },
@@ -90,5 +85,10 @@
   {
     "acesso": "acesço",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "melhor": "melhorr",
+    "resultado": "resultao",
+    "arquitetura": "arquitretura"
   }
 ]
