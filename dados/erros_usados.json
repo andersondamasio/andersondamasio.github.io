@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muinto",
-    "gerenciamento": "gerenciamneto"
-  },
-  {
     "problema": "poblema",
     "muito": "muiito",
     "dispositivo": "dispotivo"
@@ -91,5 +87,9 @@
     "simples": "simlpes",
     "operacional": "operaciona",
     "sistema": "sistéma"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "exemplo": "exemplo."
   }
 ]
