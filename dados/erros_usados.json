@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "exemplo": "exenplo",
-    "arquitetura": "arquitertura"
-  },
-  {
     "desafio": "desafiu",
     "muito": "muinto",
     "dispositivo": "dispotivo"
@@ -90,5 +85,10 @@
     "acesso": "acesso.",
     "simples": "cimples",
     "muito": "muto"
+  },
+  {
+    "complexidade": "complexidade.",
+    "prioridade": "prioridade.",
+    "monitoramento": "monitoramento."
   }
 ]
