@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "constante": "constante.",
-    "exemplo": "exenplo"
-  },
-  {
     "conhecimento": "conhecimento.",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
@@ -92,5 +87,9 @@
     "desafio": "desafiu",
     "muito": "muinto",
     "dispositivo": "dispotivo"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "necessidade": "nescessidade"
   }
 ]
