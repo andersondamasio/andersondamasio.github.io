@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "dispositivo": "dispositivo."
-  },
-  {
     "prioridade": "prioridade.",
     "constante": "constanate",
     "arquitetura": "arquiteturra"
@@ -92,5 +88,10 @@
     "desenvolvimento": "desenvolvimente",
     "dispositivo": "dispotivo",
     "arquitetura": "arquitertura"
+  },
+  {
+    "abordagem": "abordage",
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
