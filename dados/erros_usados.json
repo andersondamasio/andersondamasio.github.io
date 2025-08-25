@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "necessidade": "necissidade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "exemplo": "exenplo",
     "arquitetura": "arquitertura"
@@ -90,5 +85,10 @@
   },
   {
     "armazenamento": "armazanamento"
+  },
+  {
+    "acesso": "acesso.",
+    "simples": "cimples",
+    "muito": "muto"
   }
 ]
