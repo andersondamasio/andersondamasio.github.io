@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "muito": "muinto",
-    "dispositivo": "dispotivo"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "necessidade": "nescessidade"
   },
@@ -90,5 +85,10 @@
     "complexidade": "complexidade.",
     "prioridade": "prioridade.",
     "monitoramento": "monitoramento."
+  },
+  {
+    "parceria": "parcería",
+    "tecnologia": "tecnnologia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
