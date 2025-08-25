@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "exemplo": "exemplo."
-  },
-  {
     "arquitetura": "arquitertura",
     "melhor": "melhorr"
   },
@@ -90,5 +86,9 @@
   {
     "problema": "probrema",
     "processo": "prosseso"
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "dispositivo": "dispositivo."
   }
 ]
