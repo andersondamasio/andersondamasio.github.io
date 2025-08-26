@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "carregamento": "carregameno"
-  },
-  {
     "armazenamento": "armazanamento"
   },
   {
@@ -88,5 +84,9 @@
     "resultado": "resultadoo",
     "estrutura": "estrtura",
     "melhor": "melhorr"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "suporte": "suprte"
   }
 ]
