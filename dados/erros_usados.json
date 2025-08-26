@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "dispositivo": "dispositivo."
-  },
-  {
     "recurso": "recuro",
     "sistema": "sistma",
     "tecnologia": "tecnolgia"
@@ -89,5 +85,10 @@
     "consistente": "consistente.",
     "exemplo": "exenplo",
     "necessidade": "necessidade."
+  },
+  {
+    "problema": "poblema",
+    "tecnologia": "tecnolgia",
+    "processo": "proceso"
   }
 ]
