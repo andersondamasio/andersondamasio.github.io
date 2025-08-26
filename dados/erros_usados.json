@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "tecnologia": "tecnnologia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra"
   },
@@ -90,5 +85,9 @@
     "desafio": "desafiu",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "acesso": "acesço",
+    "constante": "constate"
   }
 ]
