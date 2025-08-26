@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "simples": "cimples",
-    "muito": "muto"
-  },
-  {
     "complexidade": "complexidade.",
     "prioridade": "prioridade.",
     "monitoramento": "monitoramento."
@@ -90,5 +85,10 @@
     "tecnologia": "tecnoligia",
     "muito": "muinto",
     "exemplo": "exenplo"
+  },
+  {
+    "constante": "constanate",
+    "sistema": "sistma",
+    "melhor": "melor"
   }
 ]
