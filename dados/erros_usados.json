@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "conhecimento": "conhecimento.",
-    "muito": "muinto"
-  },
-  {
     "funciona": "funciona,",
     "parceria": "parceria.",
     "controle": "controle."
@@ -90,5 +85,10 @@
     "suporte": "suprte",
     "controle": "controle.",
     "desafio": "desafiu"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "tecnologia": "tecnolgia",
+    "exemplo": "exemplo,"
   }
 ]
