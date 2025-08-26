@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "necessidade": "nescessidade",
-    "dispositivo": "dispotivo"
-  },
-  {
     "arquitetura": "arquiteturra",
     "suporte": "suprte",
     "desenvolvimento": "desenvolmento"
@@ -90,5 +85,10 @@
     "exemplo": "exemplo,",
     "suporte": "suportte",
     "conhecimento": "conhecimento."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolvmento",
+    "dispositivo": "disposotivo"
   }
 ]
