@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "suporte": "suprte",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "desafio": "desafiu",
     "conhecimento": "conhecimento.",
     "muito": "muinto"
@@ -90,5 +85,10 @@
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvmento",
     "dispositivo": "disposotivo"
+  },
+  {
+    "suporte": "suprte",
+    "controle": "controle.",
+    "desafio": "desafiu"
   }
 ]
