@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "constante": "constate"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "carregamento": "carregameno"
   },
@@ -87,5 +83,10 @@
     "conectado": "conectado.",
     "funciona": "funsiona",
     "recurso": "recuro"
+  },
+  {
+    "resultado": "resultadoo",
+    "estrutura": "estrtura",
+    "melhor": "melhorr"
   }
 ]
