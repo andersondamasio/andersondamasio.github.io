@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "prioridade": "prioridade.",
-    "monitoramento": "monitoramento."
-  },
-  {
     "parceria": "parcería",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento"
@@ -90,5 +85,10 @@
     "constante": "constanate",
     "sistema": "sistma",
     "melhor": "melor"
+  },
+  {
+    "desafio": "desafiu",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia"
   }
 ]
