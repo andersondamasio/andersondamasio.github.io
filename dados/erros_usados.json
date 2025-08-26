@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "sistema": "cistema",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "arquitetura": "arquiteturra"
   },
@@ -90,5 +85,9 @@
   {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "sistema": "sistma",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
