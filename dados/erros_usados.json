@@ -1,8 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento"
-  },
-  {
     "acesso": "acesso.",
     "simples": "cimples",
     "muito": "muto"
@@ -88,5 +85,10 @@
   {
     "arquitetura": "arquitertura",
     "suporte": "suprte"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "muito": "muinto",
+    "exemplo": "exenplo"
   }
 ]
