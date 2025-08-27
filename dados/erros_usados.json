@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnolgia",
-    "melhor": "melor"
-  },
-  {
     "desafio": "desaío",
     "tecnologia": "tecnnologia",
     "sistema": "sistéma"
@@ -90,5 +85,9 @@
     "acesso": "acesso.",
     "suporte": "suprte",
     "muito": "muiito"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "sistema": "sistma"
   }
 ]
