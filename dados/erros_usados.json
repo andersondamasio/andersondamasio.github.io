@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internert",
-    "abordagem": "abordagem.",
-    "arquitetura": "arquitretura"
-  },
-  {
     "monitoramento": "monitorameto",
     "exemplo": "exenplo"
   },
@@ -89,5 +84,10 @@
     "suporte": "suporte.",
     "problema": "poblema",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "conhecimento": "conhecimento.",
+    "necessidade": "necissidade"
   }
 ]
