@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "dispositivo": "dispositivo."
-  },
-  {
     "conectado": "conectado.",
     "funciona": "funsiona",
     "recurso": "recuro"
@@ -91,5 +87,10 @@
     "rotina": "rotina.",
     "exemplo": "exenplo",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "rotina": "rotína",
+    "muito": "muto"
   }
 ]
