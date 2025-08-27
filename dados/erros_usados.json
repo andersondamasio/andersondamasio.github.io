@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "exemplo": "exenplo"
-  },
-  {
     "prioridade": "prioriade",
     "abordagem": "abordage"
   },
@@ -89,5 +85,9 @@
     "desenvolvimento": "desenvolvmento",
     "conhecimento": "conhecimento.",
     "necessidade": "necissidade"
+  },
+  {
+    "exemplo": "exemplo,",
+    "armazenamento": "armazenamentto"
   }
 ]
