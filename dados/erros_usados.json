@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "exemplo": "exemplo,",
-    "sistema": "sistéma"
-  },
-  {
     "operacional": "operacional.",
     "processo": "prosseso",
     "sistema": "cistema"
@@ -87,5 +82,10 @@
   {
     "recurso": "recuro",
     "arquitetura": "arquitertura"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "exemplo": "exenplo",
+    "acesso": "acesço"
   }
 ]
