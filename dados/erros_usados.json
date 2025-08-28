@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "processo": "prosseso",
-    "sistema": "cistema"
-  },
-  {
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolmento"
   },
@@ -87,5 +82,9 @@
     "arquitetura": "arquitretura",
     "exemplo": "exenplo",
     "acesso": "acesço"
+  },
+  {
+    "controle": "controlle",
+    "tecnologia": "tecnoligia"
   }
 ]
