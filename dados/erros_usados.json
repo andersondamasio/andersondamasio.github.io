@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "arquitetura": "arquitertura"
-  },
-  {
     "arquitetura": "arquitretura",
     "exemplo": "exenplo",
     "acesso": "acesço"
@@ -89,5 +85,9 @@
     "conhecimento": "conhescimento",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "problema": "probrema",
+    "arquitetura": "arquitretura"
   }
 ]
