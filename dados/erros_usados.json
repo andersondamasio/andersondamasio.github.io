@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotina.",
-    "exemplo": "exenplo",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "tecnologia": "tecnoligia",
     "rotina": "rotína",
     "muito": "muto"
@@ -87,5 +82,9 @@
     "dispositivo": "disposotivo",
     "operacional": "operacional.",
     "melhor": "melor"
+  },
+  {
+    "funciona": "funsiona",
+    "sistema": "cistema"
   }
 ]
