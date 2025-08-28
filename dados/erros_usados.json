@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "desafio": "desafío"
-  },
-  {
     "recurso": "recuro",
     "arquitetura": "arquitertura"
   },
@@ -88,5 +84,10 @@
   {
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnolgia"
   }
 ]
