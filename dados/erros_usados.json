@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "problema": "poblema",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "conhecimento": "conhecimento.",
     "necessidade": "necissidade"
@@ -88,5 +83,9 @@
     "melhor": "melhorr",
     "tecnologia": "tecnoligia",
     "funciona": "funciona,"
+  },
+  {
+    "exemplo": "exenplo",
+    "arquitetura": "arquiteturra"
   }
 ]
