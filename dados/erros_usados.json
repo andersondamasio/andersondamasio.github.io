@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "sistma"
-  },
-  {
     "acesso": "acesso.",
     "rotina": "rotina.",
     "muito": "muinto"
@@ -88,5 +84,10 @@
     "necessidade": "nescessidade",
     "complexidade": "complexsidade",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "muito": "muto",
+    "dispositivo": "disposotivo",
+    "arquitetura": "arquitertura"
   }
 ]
