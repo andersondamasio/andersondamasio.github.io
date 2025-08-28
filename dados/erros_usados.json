@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "personalizado": "personalizdo",
     "armazenamento": "armasenamento"
   },
@@ -86,5 +82,9 @@
   {
     "controle": "controlle",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "abordagem": "abordage",
+    "processo": "proceso"
   }
 ]
