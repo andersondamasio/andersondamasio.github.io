@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "exemplo": "exemplo,",
-    "muito": "muiito"
-  },
-  {
     "estrutura": "estrtura",
     "desenvolvimento": "desenvolvimente"
   },
@@ -86,5 +81,10 @@
     "desafio": "desafiu",
     "armazenamento": "armazanamento",
     "controle": "controlle"
+  },
+  {
+    "sistema": "sistéma",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnolgia"
   }
 ]
