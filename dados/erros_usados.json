@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "necessidade": "nescessidade",
     "exemplo": "exemplo,",
     "muito": "muiito"
@@ -85,5 +81,10 @@
     "prioridade": "prioridade.",
     "resultado": "resultao",
     "exemplo": "exenplo"
+  },
+  {
+    "desafio": "desafiu",
+    "armazenamento": "armazanamento",
+    "controle": "controlle"
   }
 ]
