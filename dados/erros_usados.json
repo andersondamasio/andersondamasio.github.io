@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "rotina": "rotína",
-    "muito": "muto"
-  },
-  {
     "conhecimento": "conhecimeto",
     "processo": "processso",
     "desenvolvimento": "desenvolvimente"
@@ -86,5 +81,9 @@
   {
     "funciona": "funsiona",
     "sistema": "cistema"
+  },
+  {
+    "monitoramento": "monitramento",
+    "arquitetura": "arquitretura"
   }
 ]
