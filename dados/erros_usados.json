@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "conhecimento": "conhescimento",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia"
@@ -91,5 +87,10 @@
     "gerenciamento": "gerenciamneto",
     "dispositivo": "dispotivo",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "constante": "constanate",
+    "prioridade": "prioriade.",
+    "sistema": "sistma"
   }
 ]
