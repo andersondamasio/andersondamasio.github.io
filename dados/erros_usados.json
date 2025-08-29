@@ -1,9 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "arquitetura": "arquitretura"
-  },
-  {
     "exemplo": "exenplo",
     "suporte": "suporte."
   },
@@ -92,5 +88,9 @@
     "conectado": "conectado.",
     "funciona": "funsiona",
     "dispositivo": "dispositivo."
+  },
+  {
+    "internet": "internert",
+    "desenvolvimento": "desenvolmento"
   }
 ]
