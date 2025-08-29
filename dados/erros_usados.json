@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "operacional": "operacional.",
-    "melhor": "melor"
-  },
-  {
     "funciona": "funsiona",
     "sistema": "cistema"
   },
@@ -89,5 +84,10 @@
     "acesso": "acesço",
     "tecnologia": "tecnoligia",
     "constante": "constanate"
+  },
+  {
+    "processo": "proceso",
+    "arquitetura": "arquitretura",
+    "monitoramento": "monitorameto"
   }
 ]
