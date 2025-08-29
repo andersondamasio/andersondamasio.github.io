@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "problema": "probrema",
     "arquitetura": "arquitretura"
   },
@@ -92,5 +87,10 @@
     "constante": "constanate",
     "prioridade": "prioriade.",
     "sistema": "sistma"
+  },
+  {
+    "conectado": "conectado.",
+    "funciona": "funsiona",
+    "dispositivo": "dispositivo."
   }
 ]
