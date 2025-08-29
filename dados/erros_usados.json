@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "abordagem": "abordage",
     "processo": "proceso"
   },
@@ -88,5 +84,9 @@
   {
     "exemplo": "exenplo",
     "suporte": "suporte."
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnolgia"
   }
 ]
