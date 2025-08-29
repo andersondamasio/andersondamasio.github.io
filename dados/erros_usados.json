@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "armazenamento": "armazanamento",
-    "controle": "controlle"
-  },
-  {
     "sistema": "sistéma",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnolgia"
@@ -91,5 +86,10 @@
   {
     "funcionalidade": "funcionaliade",
     "acesso": "acesço"
+  },
+  {
+    "recurso": "recusso",
+    "simples": "cimples",
+    "funcionalidade": "funcionaliadde"
   }
 ]
