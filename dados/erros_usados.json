@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "tecnologia": "tecnnologia",
-    "suporte": "suprte"
-  },
-  {
     "prioridade": "prioriade.",
     "constante": "constate",
     "necessidade": "necessidade."
@@ -92,5 +87,10 @@
   {
     "sistema": "sistma",
     "monitoramento": "monitoramento."
+  },
+  {
+    "melhor": "melhorr",
+    "simples": "cimples",
+    "prioridade": "prioriade"
   }
 ]
