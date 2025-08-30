@@ -1,9 +1,5 @@
 [
   {
-    "rotina": "rotína",
-    "controle": "controle."
-  },
-  {
     "utilizado": "utilizdo",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvmento"
@@ -93,5 +89,10 @@
     "recurso": "reccurso",
     "exemplo": "exemplo,",
     "simples": "simlpes"
+  },
+  {
+    "consistente": "consitente",
+    "sistema": "cistema",
+    "gerenciamento": "gerenciamneto"
   }
 ]
