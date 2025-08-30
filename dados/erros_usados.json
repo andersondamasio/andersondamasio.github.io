@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralmemte",
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "dispositivo": "dispotivo",
     "tecnologia": "tecnnologia",
     "suporte": "suprte"
@@ -93,5 +88,9 @@
   {
     "exemplo": "exemplo,",
     "suporte": "suportte"
+  },
+  {
+    "sistema": "sistma",
+    "monitoramento": "monitoramento."
   }
 ]
