@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "sistema": "cistema"
-  },
-  {
     "rotina": "rotína",
     "controle": "controle."
   },
@@ -92,5 +88,10 @@
     "virtual": "virtal",
     "prioridade": "prioridade.",
     "dispositivo": "disposotivo"
+  },
+  {
+    "recurso": "reccurso",
+    "exemplo": "exemplo,",
+    "simples": "simlpes"
   }
 ]
