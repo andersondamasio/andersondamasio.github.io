@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "arquitetura": "arquitretura",
-    "monitoramento": "monitorameto"
-  },
-  {
     "arquitetura": "arquiteturra",
     "suporte": "suporte.",
     "desafio": "desafío"
@@ -93,5 +88,10 @@
     "problema": "problema.",
     "estrutura": "estrura",
     "arquitetura": "arquitertura"
+  },
+  {
+    "componente": "componente.",
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnolgia"
   }
 ]
