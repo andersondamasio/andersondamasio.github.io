@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "problema": "problema.",
     "estrutura": "estrura",
     "arquitetura": "arquitertura"
@@ -90,5 +86,10 @@
   {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "acesso": "acesço",
+    "tecnologia": "tecnoligia",
+    "exemplo": "exemplo."
   }
 ]
