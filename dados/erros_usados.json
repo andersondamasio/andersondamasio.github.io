@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componente.",
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "parceria": "parceriaa",
     "monitoramento": "monitoramento.",
     "arquitetura": "arquitertura"
@@ -91,5 +86,9 @@
     "geralmente": "geralment",
     "arquitetura": "arquitertura",
     "acesso": "acesso."
+  },
+  {
+    "constante": "constanate",
+    "tecnologia": "tecnnologia"
   }
 ]
