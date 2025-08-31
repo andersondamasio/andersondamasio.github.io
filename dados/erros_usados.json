@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo."
-  },
-  {
     "geralmente": "geralment",
     "arquitetura": "arquitertura",
     "acesso": "acesso."
@@ -92,5 +87,10 @@
     "mensagem": "menssagem",
     "tecnologia": "tecnolgia",
     "abordagem": "abordagem."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "abordagem": "abordajem",
+    "monitoramento": "monitoramento."
   }
 ]
