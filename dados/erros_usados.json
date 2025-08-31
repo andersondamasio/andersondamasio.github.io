@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "muito": "muinto",
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnnologia"
@@ -92,5 +88,9 @@
     "complexidade": "complexidade.",
     "funciona": "funciona,",
     "exemplo": "exemplo,"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "suporte": "suporte."
   }
 ]
