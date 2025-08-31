@@ -24131,5 +24131,14 @@
     "dataFonte": "2025-08-31T19:18:49.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/08/31/director-jim-jarmusch-disappointed-and-disconcerted-by-mubis-funding-from-sequoia/"
+  },
+  {
+    "titulo": "Reduzindo Custos na Nuvem: Como Autoscaling Avançado Pode Transformar Sua Infraestrutura",
+    "noticiaOriginal": "Advanced Autoscaling Helps Companies Reduce AWS Costs by 70%",
+    "url": "artigos/cloud/reduzindo-custos-na-nuvem-como-autoscaling-avancado-pode-transformar-sua-infraestrutura.html",
+    "data": "2025-08-31T22:17:49.998Z",
+    "dataFonte": "2025-08-31T22:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/08/autoscaling-karpenter-automode/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
