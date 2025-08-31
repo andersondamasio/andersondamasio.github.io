@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "tecnologia": "tecnolgia",
-    "sistema": "sistéma"
-  },
-  {
     "rotina": "rotna",
     "melhor": "melhorr",
     "exemplo": "exenplo"
@@ -92,5 +87,10 @@
     "problema": "problema.",
     "dispositivo": "dispotivo",
     "sistema": "cistema"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "sistema": "sistéma",
+    "arquitetura": "arquitertura"
   }
 ]
