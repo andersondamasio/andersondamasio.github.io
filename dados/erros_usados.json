@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "geralmente": "geralmemte"
-  },
-  {
     "sistema": "sistma",
     "exemplo": "exenplo",
     "monitoramento": "monitorameto"
@@ -89,5 +85,9 @@
   {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "dispositivo": "disposotivo"
   }
 ]
