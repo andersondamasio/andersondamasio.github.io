@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "suporte": "suporte."
-  },
-  {
     "internet": "internat",
     "geralmente": "geralmemte"
   },
@@ -89,5 +85,9 @@
   {
     "tecnologia": "tecnnologia",
     "simples": "simlpes"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitertura"
   }
 ]
