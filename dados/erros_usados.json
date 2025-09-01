@@ -1,8 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento."
-  },
-  {
     "muito": "muto",
     "tecnologia": "tecnolgia",
     "necessidade": "necissidade"
@@ -88,5 +85,10 @@
     "problema": "probrema",
     "necessidade": "necissidade",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "estrutura": "estrtura",
+    "simples": "cimples"
   }
 ]
