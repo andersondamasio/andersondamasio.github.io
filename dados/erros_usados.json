@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "exemplo": "exenplo",
-    "monitoramento": "monitorameto"
-  },
-  {
     "sistema": "cistema"
   },
   {
@@ -89,5 +84,9 @@
   {
     "monitoramento": "monitoramento.",
     "dispositivo": "disposotivo"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnolgia"
   }
 ]
