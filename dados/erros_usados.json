@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "funciona": "funciona,",
-    "exemplo": "exemplo,"
-  },
-  {
     "arquitetura": "arquitertura",
     "suporte": "suporte."
   },
@@ -90,5 +85,9 @@
     "acesso": "acesso.",
     "processo": "prosseso",
     "muito": "muto"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "simples": "simlpes"
   }
 ]
