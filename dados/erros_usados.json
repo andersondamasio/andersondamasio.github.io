@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "carregamento": "carregamneto"
-  },
-  {
     "mensagem": "menssagem",
     "tecnologia": "tecnolgia",
     "abordagem": "abordagem."
@@ -88,5 +84,10 @@
   {
     "muito": "muinto",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "suporte": "suporte.",
+    "sistema": "cistema",
+    "arquitetura": "arquitertura"
   }
 ]
