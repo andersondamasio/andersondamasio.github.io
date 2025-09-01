@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muto",
-    "tecnologia": "tecnolgia",
-    "necessidade": "necissidade"
-  },
-  {
     "dispositivo": "dispositivo.",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia"
@@ -90,5 +85,9 @@
     "funcionalidade": "funcionaliadde",
     "estrutura": "estrtura",
     "simples": "cimples"
+  },
+  {
+    "sistema": "sistéma",
+    "arquitetura": "arquitertura"
   }
 ]
