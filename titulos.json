@@ -24302,5 +24302,14 @@
     "dataFonte": "2025-09-01T17:30:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/you-can-buy-an-iphone-16-pro-for-250-off-on-amazon-right-now-how-the-deal-works/"
+  },
+  {
+    "titulo": "Desmistificando Testes em Sistemas Distribuídos: Como Conquistar a Confiabilidade sem Sofrer",
+    "noticiaOriginal": "Presentation: Test Smarter, Not Harder: Achieving Confidence in Complex Distributed Systems",
+    "url": "artigos/programacao/desmistificando-testes-em-sistemas-distribuidos-como-conquistar-a-confiabilidade-sem-sofrer.html",
+    "data": "2025-09-01T19:16:08.638Z",
+    "dataFonte": "2025-09-01T11:40:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/presentations/testing-distributed-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
