@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "recurso": "recusso",
     "operacional": "operacional.",
     "gerenciamento": "gerenciamneto"
@@ -91,5 +87,8 @@
     "sistema": "sistma",
     "exemplo": "exenplo",
     "monitoramento": "monitorameto"
+  },
+  {
+    "sistema": "cistema"
   }
 ]
