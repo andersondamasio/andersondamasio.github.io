@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "operacional": "operacional.",
-    "gerenciamento": "gerenciamneto"
-  },
-  {
     "dispositivo": "dispositivo.",
     "rotina": "rotina.",
     "muito": "muiito"
@@ -90,5 +85,10 @@
   },
   {
     "sistema": "cistema"
+  },
+  {
+    "processo": "processso",
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnolgia"
   }
 ]
