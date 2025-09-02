@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "processo": "prosseso",
-    "muito": "muto"
-  },
-  {
     "tecnologia": "tecnnologia",
     "simples": "simlpes"
   },
@@ -87,5 +82,9 @@
     "constante": "constanate",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "exemplo": "exemplo."
   }
 ]
