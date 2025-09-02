@@ -1,10 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "necessidade": "necissidade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "estrutura": "estrtura",
     "simples": "cimples"
@@ -89,5 +84,10 @@
   {
     "complexidade": "complezidade",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "abordagem": "abordagem.",
+    "constante": "constante.",
+    "melhor": "melhorr"
   }
 ]
