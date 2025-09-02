@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "desafio": "desaío"
-  },
-  {
     "muito": "muiito",
     "arquitetura": "arquitertura",
     "melhor": "melhorr"
@@ -89,5 +85,9 @@
     "tecnologia": "tecnoligia",
     "sistema": "sistéma",
     "arquitetura": "arquitertura"
+  },
+  {
+    "constante": "constanate",
+    "arquitetura": "arquitretura"
   }
 ]
