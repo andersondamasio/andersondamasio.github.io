@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "simples": "simlpes"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
   },
@@ -86,5 +82,9 @@
   {
     "funcionalidade": "funcionaliade",
     "exemplo": "exemplo."
+  },
+  {
+    "processo": "prosseso",
+    "arquitetura": "arquiteturra"
   }
 ]
