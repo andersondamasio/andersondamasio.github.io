@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "sistema": "sistéma",
-    "arquitetura": "arquitertura"
-  },
-  {
     "constante": "constanate",
     "arquitetura": "arquitretura"
   },
@@ -89,5 +84,10 @@
     "prioridade": "prioriade",
     "tecnologia": "tecnnologia",
     "necessidade": "necissidade"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "desenvolvimento": "desenvolvmento",
+    "necessidade": "necessidade."
   }
 ]
