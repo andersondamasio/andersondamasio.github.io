@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "sistema": "sistma"
-  },
-  {
     "tecnologia": "tecnoligia",
     "sistema": "sistéma",
     "arquitetura": "arquitertura"
@@ -88,5 +84,10 @@
   {
     "acesso": "acesso.",
     "controle": "contrle"
+  },
+  {
+    "prioridade": "prioriade",
+    "tecnologia": "tecnnologia",
+    "necessidade": "necissidade"
   }
 ]
