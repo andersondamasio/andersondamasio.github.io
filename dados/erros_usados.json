@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "suporte": "suprte",
-    "abordagem": "abordagem."
-  },
-  {
     "problema": "probrema",
     "necessidade": "necissidade",
     "tecnologia": "tecnolgia"
@@ -90,5 +85,9 @@
     "tecnologia": "tecnoligia",
     "sistema": "sistma",
     "arquitetura": "arquitretura"
+  },
+  {
+    "complexidade": "complezidade",
+    "tecnologia": "tecnnologia"
   }
 ]
