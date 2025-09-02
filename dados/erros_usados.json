@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "armazenamento": "armazenamentto",
     "sistema": "sistma"
   },
@@ -88,5 +84,9 @@
     "problema": "poblema",
     "arquitetura": "arquitretura",
     "melhor": "melhorr"
+  },
+  {
+    "acesso": "acesso.",
+    "controle": "contrle"
   }
 ]
