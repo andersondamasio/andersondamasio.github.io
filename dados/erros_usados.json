@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "monitoramento": "monitoramento.",
     "dispositivo": "disposotivo"
   },
@@ -86,5 +82,10 @@
   {
     "processo": "prosseso",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "muito": "muto",
+    "exemplo": "exenplo",
+    "simples": "cimples"
   }
 ]
