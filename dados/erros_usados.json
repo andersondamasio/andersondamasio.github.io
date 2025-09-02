@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "abordagem": "abordage"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "suporte": "suprte",
     "abordagem": "abordagem."
@@ -89,5 +85,10 @@
     "operacional": "operaciona",
     "exemplo": "exemplo,",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "sistema": "sistma",
+    "arquitetura": "arquitretura"
   }
 ]
