@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "arquitetura": "arquitretura"
-  },
-  {
     "operacional": "operaciona",
     "exemplo": "exemplo,",
     "arquitetura": "arquitertura"
@@ -89,5 +85,10 @@
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvmento",
     "necessidade": "necessidade."
+  },
+  {
+    "necessidade": "necissidade",
+    "tecnologia": "tecnoligia",
+    "exemplo": "exenplo"
   }
 ]
