@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "exemplo": "exemplo."
   },
@@ -92,5 +87,10 @@
     "processo": "proceso",
     "simples": "simlpes",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "rotina": "rotina.",
+    "carregamento": "carregamneto",
+    "acesso": "aceso"
   }
 ]
