@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muto",
-    "exemplo": "exenplo",
-    "simples": "cimples"
-  },
-  {
     "problema": "poblema",
     "arquitetura": "arquitretura",
     "melhor": "melhorr"
@@ -93,5 +88,10 @@
   {
     "funciona": "funciona.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "componente": "componente.",
+    "monitoramento": "monitorameto",
+    "exemplo": "exenplo"
   }
 ]
