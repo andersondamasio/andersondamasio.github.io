@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "exemplo": "exemplo."
-  },
-  {
     "processo": "prosseso",
     "arquitetura": "arquiteturra"
   },
@@ -92,5 +88,10 @@
     "rotina": "rotina.",
     "carregamento": "carregamneto",
     "acesso": "aceso"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "sistema": "cistema",
+    "processo": "proceso"
   }
 ]
