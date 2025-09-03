@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "controle": "contrle"
-  },
-  {
     "prioridade": "prioriade",
     "tecnologia": "tecnnologia",
     "necessidade": "necissidade"
@@ -92,5 +88,9 @@
   {
     "funcionalidade": "funcionaliadde",
     "exemplo": "exemplo."
+  },
+  {
+    "controle": "controlle",
+    "tecnologia": "tecnnologia"
   }
 ]
