@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "tecnologia": "tecnnologia",
-    "necessidade": "necissidade"
-  },
-  {
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvmento",
     "necessidade": "necessidade."
@@ -92,5 +87,10 @@
   {
     "controle": "controlle",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "computador": "computador.",
+    "problema": "probrema",
+    "sistema": "sistma"
   }
 ]
