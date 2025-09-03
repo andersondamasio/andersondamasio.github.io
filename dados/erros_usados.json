@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "sistema": "sistma",
-    "arquitetura": "arquitretura"
-  },
-  {
     "complexidade": "complezidade",
     "tecnologia": "tecnnologia"
   },
@@ -90,5 +85,10 @@
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "resultado": "resutlado",
+    "monitoramento": "monitorameto",
+    "exemplo": "exemplo."
   }
 ]
