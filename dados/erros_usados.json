@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "monitoramento": "monitorameto",
-    "exemplo": "exemplo."
-  },
-  {
     "desafio": "desaío",
     "sistema": "cistema",
     "tecnologia": "tecnolgia"
@@ -89,5 +84,10 @@
   },
   {
     "arquitetura": "arquitretura"
+  },
+  {
+    "estrutura": "estrututra",
+    "prioridade": "prioriade",
+    "complexidade": "complexidade."
   }
 ]
