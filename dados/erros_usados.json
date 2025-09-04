@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "tecnologia": "tecnnologia",
-    "muito": "muto"
-  },
-  {
     "constante": "constate",
     "recurso": "reccurso"
   },
@@ -84,5 +79,9 @@
   {
     "funciona": "funciona.",
     "abordagem": "abordage"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "resultado": "resutlado"
   }
 ]
