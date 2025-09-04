@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "sistema": "cistema",
-    "processo": "proceso"
-  },
-  {
     "funciona": "funciona.",
     "tecnologia": "tecnnologia"
   },
@@ -86,5 +81,10 @@
     "abordagem": "abordage",
     "melhor": "melhorr",
     "muito": "muto"
+  },
+  {
+    "simples": "simlpes",
+    "virtual": "virtuaal",
+    "estrutura": "estrtura"
   }
 ]
