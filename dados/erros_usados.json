@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "sistema": "cistema",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitertura"
@@ -89,5 +84,9 @@
     "estrutura": "estrututra",
     "prioridade": "prioriade",
     "complexidade": "complexidade."
+  },
+  {
+    "operacional": "operacionl",
+    "sistema": "sistéma"
   }
 ]
