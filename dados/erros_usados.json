@@ -1,8 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "necessidade": "nescessidade",
     "desenvolvimento": "desenvolvmento"
   },
@@ -86,5 +83,10 @@
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma",
     "muito": "muinto"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "sistema": "sistma",
+    "abordagem": "abordagem."
   }
 ]
