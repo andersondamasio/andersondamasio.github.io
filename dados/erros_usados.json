@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotina.",
-    "carregamento": "carregamneto",
-    "acesso": "aceso"
-  },
-  {
     "dispositivo": "dispositivo.",
     "sistema": "cistema",
     "processo": "proceso"
@@ -86,5 +81,10 @@
     "suporte": "suporte.",
     "conhecimento": "conhescimento",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "abordagem": "abordage",
+    "melhor": "melhorr",
+    "muito": "muto"
   }
 ]
