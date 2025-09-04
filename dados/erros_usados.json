@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componente.",
-    "monitoramento": "monitorameto",
-    "exemplo": "exenplo"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "exemplo": "exemplo."
   },
@@ -86,5 +81,10 @@
   {
     "rotina": "rotína",
     "muito": "muiito"
+  },
+  {
+    "exemplo": "exenplo",
+    "suporte": "suporte.",
+    "simples": "simplis"
   }
 ]
