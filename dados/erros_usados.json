@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "componente": "componente.",
     "monitoramento": "monitorameto",
     "exemplo": "exenplo"
@@ -86,5 +82,9 @@
     "simples": "simlpes",
     "virtual": "virtuaal",
     "estrutura": "estrtura"
+  },
+  {
+    "rotina": "rotína",
+    "muito": "muiito"
   }
 ]
