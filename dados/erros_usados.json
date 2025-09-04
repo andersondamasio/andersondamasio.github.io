@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "sistema": "sistéma"
-  },
-  {
     "virtual": "virtuaal",
     "controle": "contrle"
   },
@@ -85,5 +81,9 @@
     "arquitetura": "arquiteturra",
     "abordagem": "abordage",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "prioridade": "prioriade",
+    "sistema": "cistema"
   }
 ]
