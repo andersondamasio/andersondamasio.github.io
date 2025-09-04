@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "computador": "computador.",
     "problema": "probrema",
     "sistema": "sistma"
@@ -86,5 +82,8 @@
   {
     "processo": "proceso",
     "dispositivo": "dispotivo"
+  },
+  {
+    "arquitetura": "arquitertura"
   }
 ]
