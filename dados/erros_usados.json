@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "simples": "simlpes",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "rotina": "rotina.",
     "carregamento": "carregamneto",
     "acesso": "aceso"
@@ -86,5 +81,10 @@
     "desafio": "desafío",
     "recurso": "recuro",
     "controle": "controle."
+  },
+  {
+    "suporte": "suporte.",
+    "conhecimento": "conhescimento",
+    "funcionalidade": "funcionalidade."
   }
 ]
