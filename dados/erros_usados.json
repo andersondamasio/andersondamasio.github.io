@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquitertura"
-  },
-  {
     "conhecimento": "conhecimento.",
     "processo": "prosseso",
     "muito": "muto"
@@ -88,5 +83,9 @@
   {
     "operacional": "operacionl",
     "sistema": "sistéma"
+  },
+  {
+    "virtual": "virtuaal",
+    "controle": "contrle"
   }
 ]
