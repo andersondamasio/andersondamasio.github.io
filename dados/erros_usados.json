@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura"
-  },
-  {
     "estrutura": "estrututra",
     "prioridade": "prioriade",
     "complexidade": "complexidade."
@@ -83,5 +80,10 @@
   {
     "exemplo": "exemplo,",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "suporte": "suprte",
+    "sistema": "cistema"
   }
 ]
