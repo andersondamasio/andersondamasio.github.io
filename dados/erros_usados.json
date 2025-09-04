@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliadde",
-    "exemplo": "exemplo."
-  },
-  {
     "controle": "controlle",
     "tecnologia": "tecnnologia"
   },
@@ -86,5 +82,9 @@
     "exemplo": "exenplo",
     "suporte": "suporte.",
     "simples": "simplis"
+  },
+  {
+    "processo": "proceso",
+    "dispositivo": "dispotivo"
   }
 ]
