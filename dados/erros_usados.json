@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "controle": "contrle"
-  },
-  {
     "funcionalidade": "funcionalidade."
   },
   {
@@ -85,5 +81,10 @@
   {
     "prioridade": "prioriade",
     "sistema": "cistema"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "sistema": "sistéma",
+    "muito": "muinto"
   }
 ]
