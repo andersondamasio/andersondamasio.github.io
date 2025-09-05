@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "resultado": "resutlado"
-  },
-  {
     "exemplo": "exemplo,",
     "funcionalidade": "funcionaliade"
   },
@@ -88,5 +84,9 @@
   {
     "tecnologia": "tecnolgia",
     "suporte": "suprte"
+  },
+  {
+    "problema": "problema.",
+    "muito": "muto"
   }
 ]
