@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "exemplo": "exemplo,"
-  },
-  {
     "desafio": "desafío",
     "recurso": "recuro",
     "controle": "controle."
@@ -88,5 +84,10 @@
     "carregamento": "carregamneto",
     "necessidade": "necessidade.",
     "exemplo": "exemplo."
+  },
+  {
+    "abordagem": "abordagem.",
+    "arquitetura": "arquitertura",
+    "constante": "constante."
   }
 ]
