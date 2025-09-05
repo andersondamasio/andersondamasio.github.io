@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "suporte": "suporte.",
-    "simples": "simplis"
-  },
-  {
     "processo": "proceso",
     "dispositivo": "dispotivo"
   },
@@ -88,5 +83,9 @@
     "acesso": "acesso.",
     "dispositivo": "disposotivo",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "internet": "internat",
+    "virtual": "virtual."
   }
 ]
