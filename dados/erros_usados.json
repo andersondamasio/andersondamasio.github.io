@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "necessidade": "necessidade.",
-    "exemplo": "exemplo."
-  },
-  {
     "abordagem": "abordagem.",
     "arquitetura": "arquitertura",
     "constante": "constante."
@@ -89,5 +84,8 @@
     "tecnologia": "tecnolgia",
     "abordagem": "abordage",
     "acesso": "acesço"
+  },
+  {
+    "tecnologia": "tecnnologia"
   }
 ]
