@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "proprieade",
-    "sistema": "sistma",
-    "acesso": "aceso"
-  },
-  {
     "controle": "contrle",
     "exemplo": "exemplo,"
   },
@@ -88,5 +83,10 @@
   {
     "mensagem": "menssagen",
     "muito": "muiito"
+  },
+  {
+    "carregamento": "carregamneto",
+    "necessidade": "necessidade.",
+    "exemplo": "exemplo."
   }
 ]
