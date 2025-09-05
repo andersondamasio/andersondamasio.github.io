@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "abordagem": "abordage",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "prioridade": "prioriade",
     "sistema": "cistema"
   },
@@ -88,5 +83,10 @@
     "funciona": "funciona,",
     "simples": "simlpes",
     "exemplo": "exemplo."
+  },
+  {
+    "funciona": "funciona.",
+    "necessidade": "nescessidade",
+    "constante": "constate"
   }
 ]
