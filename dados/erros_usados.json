@@ -1,10 +1,5 @@
 [
   {
-    "automatizado": "automatizdo.",
-    "controle": "contrle",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "propriedade": "proprieade",
     "sistema": "sistma",
     "acesso": "aceso"
@@ -89,5 +84,9 @@
     "utilizado": "utilizdo.",
     "operacional": "operaciona",
     "constante": "constanate"
+  },
+  {
+    "mensagem": "menssagen",
+    "muito": "muiito"
   }
 ]
