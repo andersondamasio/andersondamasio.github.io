@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "suporte": "suprte",
-    "sistema": "cistema"
-  },
-  {
     "arquitetura": "arquiteturra",
     "abordagem": "abordage",
     "tecnologia": "tecnnologia"
@@ -88,5 +83,10 @@
   {
     "simples": "cimples",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "funciona": "funciona,",
+    "simples": "simlpes",
+    "exemplo": "exemplo."
   }
 ]
