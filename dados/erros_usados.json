@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "menssagen",
-    "muito": "muiito"
-  },
-  {
     "carregamento": "carregamneto",
     "necessidade": "necessidade.",
     "exemplo": "exemplo."
@@ -88,5 +84,10 @@
   {
     "propriedade": "propriedade.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "abordagem": "abordage",
+    "acesso": "acesço"
   }
 ]
