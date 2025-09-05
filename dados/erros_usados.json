@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura"
-  },
-  {
     "funciona": "funciona.",
     "abordagem": "abordage"
   },
@@ -88,5 +85,8 @@
     "estrutura": "estrura",
     "abordagem": "abordajem",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "arquitetura": "arquitertura"
   }
 ]
