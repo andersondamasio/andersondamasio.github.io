@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "tecnologia": "tecnoligia",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "propriedade": "propriedade.",
     "desenvolvimento": "desenvolvimente"
   },
@@ -87,5 +82,9 @@
     "sistema": "cistema",
     "exemplo": "exemplo.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "exemplo": "exenplo",
+    "arquitetura": "arquitretura"
   }
 ]
