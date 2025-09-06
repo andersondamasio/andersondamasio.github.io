@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "virtual": "virtual."
-  },
-  {
     "estrutura": "estrura",
     "abordagem": "abordajem",
     "funcionalidade": "funcionaliadde"
@@ -85,5 +81,9 @@
     "melhor": "melor",
     "processo": "prosseso",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "desenvolvimento": "desenvolmento"
   }
 ]
