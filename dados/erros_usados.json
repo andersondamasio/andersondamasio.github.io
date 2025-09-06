@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "gerenciamento": "gerenciamnto",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "controle": "controlle",
     "funcionalidade": "funcionaliadde"
   },
@@ -85,5 +80,10 @@
   {
     "rotina": "rotna",
     "suporte": "suprte"
+  },
+  {
+    "componente": "componentte",
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquitertura"
   }
 ]
