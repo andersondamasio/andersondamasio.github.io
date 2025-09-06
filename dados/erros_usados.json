@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnolgia",
     "suporte": "suprte"
   },
@@ -85,5 +82,10 @@
     "necessidade": "necessidade.",
     "estrutura": "estrtura",
     "arquitetura": "arquitretura"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquiteturra"
   }
 ]
