@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia"
-  },
-  {
     "necessidade": "necissidade",
     "desenvolvimento": "desenvolmento"
   },
@@ -86,5 +83,9 @@
   {
     "necessidade": "necissidade",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "muito": "muto",
+    "dispositivo": "dispositivo."
   }
 ]
