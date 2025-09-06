@@ -1,9 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "acesso": "acesso.",
     "dispositivo": "disposotivo",
     "tecnologia": "tecnolgia"
@@ -85,5 +81,9 @@
   {
     "resultado": "resutlado",
     "funciona": "funsiona"
+  },
+  {
+    "controle": "controle.",
+    "monitoramento": "monitoramento."
   }
 ]
