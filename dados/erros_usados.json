@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "parceria": "parceria.",
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionalidade."
@@ -87,5 +82,10 @@
   {
     "funciona": "funciona.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "sistema": "cistema",
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnolgia"
   }
 ]
