@@ -1,10 +1,5 @@
 [
   {
-    "processo": "processso",
-    "desenvolvimento": "desenvolmento",
-    "necessidade": "necissidade"
-  },
-  {
     "recurso": "recusso",
     "gerenciamento": "gerenciamnto",
     "desenvolvimento": "desenvolvmento"
@@ -86,5 +81,9 @@
   {
     "necessidade": "necissidade",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "rotina": "rotna",
+    "suporte": "suprte"
   }
 ]
