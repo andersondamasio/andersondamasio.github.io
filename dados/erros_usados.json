@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "suporte": "suprte"
-  },
-  {
     "problema": "problema.",
     "muito": "muto"
   },
@@ -87,5 +83,10 @@
     "dispositivo": "disposotivo",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "operacional": "operacional.",
+    "recurso": "reccurso",
+    "funcionalidade": "funcionaliadde"
   }
 ]
