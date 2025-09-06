@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordagem.",
-    "arquitetura": "arquitertura",
-    "constante": "constante."
-  },
-  {
     "processo": "processso",
     "desenvolvimento": "desenvolmento",
     "necessidade": "necissidade"
@@ -87,5 +82,9 @@
   },
   {
     "tecnologia": "tecnnologia"
+  },
+  {
+    "necessidade": "necissidade",
+    "desenvolvimento": "desenvolmento"
   }
 ]
