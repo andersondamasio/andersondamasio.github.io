@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "exemplo": "exenplo",
     "arquitetura": "arquitretura"
   },
@@ -90,5 +85,10 @@
     "recurso": "recusso",
     "desenvolvimento": "desenvolvimente",
     "abordagem": "abordajem"
+  },
+  {
+    "suporte": "suprte",
+    "exemplo": "exenplo",
+    "dispositivo": "disposotivo"
   }
 ]
