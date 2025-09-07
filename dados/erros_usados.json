@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "arquitetura": "arquitretura"
-  },
-  {
     "tecnologia": "tecnolgia",
     "exemplo": "exemplo.",
     "acesso": "aceso"
@@ -90,5 +86,10 @@
     "suporte": "suprte",
     "exemplo": "exenplo",
     "dispositivo": "disposotivo"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "sistema": "sistma",
+    "arquitetura": "arquitertura"
   }
 ]
