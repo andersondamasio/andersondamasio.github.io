@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "recurso": "reccurso",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnoligia"
   },
@@ -89,5 +84,10 @@
   {
     "mensagem": "menssagen",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "acesso": "acesço",
+    "simples": "cimples",
+    "suporte": "suporte."
   }
 ]
