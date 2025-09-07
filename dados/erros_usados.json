@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "simples": "simlpes"
-  },
-  {
     "desafio": "desafiu",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnolgia"
@@ -89,5 +85,10 @@
   {
     "sistema": "sistma",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "controle": "controlle",
+    "arquitetura": "arquitretura"
   }
 ]
