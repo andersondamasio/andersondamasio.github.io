@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "gerenciamento": "gerenciamneto",
-    "suporte": "suporte."
-  },
-  {
     "conhecimento": "conhecimeto",
     "simples": "simlpes"
   },
@@ -90,5 +85,9 @@
     "exemplo": "exenplo",
     "dispositivo": "disposotivo",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "sistema": "sistma",
+    "tecnologia": "tecnnologia"
   }
 ]
