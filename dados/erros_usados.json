@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "operacional": "operacional.",
     "recurso": "reccurso",
     "funcionalidade": "funcionaliadde"
@@ -90,5 +85,9 @@
   {
     "processo": "processso",
     "necessidade": "necissidade"
+  },
+  {
+    "mensagem": "menssagen",
+    "tecnologia": "tecnnologia"
   }
 ]
