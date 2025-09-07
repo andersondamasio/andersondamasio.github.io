@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "armazenamento": "armazenamentto",
     "gerenciamento": "gerenciamneto",
     "suporte": "suporte."
@@ -89,5 +85,10 @@
     "acesso": "acesço",
     "simples": "cimples",
     "suporte": "suporte."
+  },
+  {
+    "exemplo": "exenplo",
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnolgia"
   }
 ]
