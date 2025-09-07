@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceriaa",
-    "propriedade": "propriadade",
-    "exemplo": "exemplo."
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra"
@@ -92,5 +87,10 @@
     "muito": "muinto",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "desafio": "desafiu",
+    "abordagem": "abordajem",
+    "exemplo": "exemplo,"
   }
 ]
