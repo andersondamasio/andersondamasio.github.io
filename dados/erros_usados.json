@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "operacional": "operaciona",
     "sistema": "cistema",
     "desafio": "desafío"
@@ -92,5 +87,9 @@
     "desafio": "desafiu",
     "abordagem": "abordajem",
     "exemplo": "exemplo,"
+  },
+  {
+    "desafio": "desaío",
+    "problema": "poblema"
   }
 ]
