@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "controle": "controlle",
     "arquitetura": "arquitretura"
@@ -91,5 +87,10 @@
     "constante": "constanate",
     "funciona": "funciona.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "mensagem": "mensagen",
+    "funciona": "funciona,",
+    "exemplo": "exemplo."
   }
 ]
