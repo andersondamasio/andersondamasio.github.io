@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "dispositivo": "disposotivo",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "sistema": "sistma",
     "tecnologia": "tecnnologia"
   },
@@ -91,5 +86,10 @@
     "dispositivo": "dispositivo.",
     "recurso": "recusso",
     "arquitetura": "arquitretura"
+  },
+  {
+    "constante": "constanate",
+    "funciona": "funciona.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
