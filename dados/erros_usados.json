@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "problema": "poblema",
-    "monitoramento": "monitramento"
-  },
-  {
     "acesso": "aceso",
     "melhor": "melor",
     "dispositivo": "dispotivo"
@@ -90,5 +85,9 @@
   {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "exemplo": "exenplo"
   }
 ]
