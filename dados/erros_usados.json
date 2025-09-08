@@ -1,9 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "problema": "poblema"
-  },
-  {
     "componente": "componete",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra"
@@ -89,5 +85,9 @@
     "estrutura": "estrura",
     "tecnologia": "tecnnologia",
     "sistema": "sistéma"
+  },
+  {
+    "exemplo": "exemplo.",
+    "monitoramento": "monitorameto"
   }
 ]
