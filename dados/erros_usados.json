@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "necessidade": "nescessidade"
-  },
-  {
     "muito": "muinto",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolmento"
@@ -89,5 +85,10 @@
     "funcionalidade": "funcionaliadde",
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "acesso": "acesço",
+    "sistema": "sistéma"
   }
 ]
