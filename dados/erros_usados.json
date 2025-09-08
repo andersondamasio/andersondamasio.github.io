@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "melhor": "melor",
-    "dispositivo": "dispotivo"
-  },
-  {
     "arquitetura": "arquitretura",
     "necessidade": "nescessidade"
   },
@@ -89,5 +84,10 @@
   {
     "arquitetura": "arquiteturra",
     "exemplo": "exenplo"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "arquitetura": "arquitretura",
+    "desenvolvimento": "desenvolmento"
   }
 ]
