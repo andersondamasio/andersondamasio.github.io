@@ -1,9 +1,5 @@
 [
   {
-    "processo": "processso",
-    "necessidade": "necissidade"
-  },
-  {
     "mensagem": "menssagen",
     "tecnologia": "tecnnologia"
   },
@@ -90,5 +86,10 @@
   {
     "sistema": "sistéma",
     "arquitetura": "arquitretura"
+  },
+  {
+    "operacional": "operacionl",
+    "funcionalidade": "funcionaliade",
+    "dispositivo": "dispotivo"
   }
 ]
