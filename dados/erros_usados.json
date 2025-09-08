@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "exemplo": "exenplo",
-    "dispositivo": "disposotivo"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "sistema": "sistma",
     "arquitetura": "arquitertura"
@@ -92,5 +87,9 @@
     "complexidade": "complezidade",
     "funcionalidade": "funcionaliade",
     "melhor": "melhorr"
+  },
+  {
+    "internet": "internert",
+    "sistema": "sistma"
   }
 ]
