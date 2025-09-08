@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componete",
-    "desenvolvimento": "desenvolvmento",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "conhecimento": "conhecimeto",
     "prioridade": "prioriade"
   },
@@ -89,5 +84,10 @@
   {
     "exemplo": "exemplo.",
     "monitoramento": "monitorameto"
+  },
+  {
+    "exemplo": "exenplo",
+    "arquitetura": "arquitretura",
+    "sistema": "sistma"
   }
 ]
