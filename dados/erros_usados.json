@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "sistema": "sistéma"
-  },
-  {
     "recurso": "recusso",
     "desenvolvimento": "desenvolvimente",
     "abordagem": "abordajem"
@@ -92,5 +88,9 @@
     "suporte": "suporte.",
     "muito": "muto",
     "dispositivo": "dispotivo"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
