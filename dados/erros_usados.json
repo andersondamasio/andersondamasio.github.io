@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "muito": "muto",
-    "dispositivo": "dispotivo"
-  },
-  {
     "armazenamento": "armasenamento",
     "desenvolvimento": "desenvolvimente"
   },
@@ -90,5 +85,10 @@
     "constante": "constanate",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "funcionalidade": "funcionaliade",
+    "exemplo": "exenplo"
   }
 ]
