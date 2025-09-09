@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "armazenamento": "armasenamento"
-  },
-  {
     "sistema": "sistma",
     "arquitetura": "arquiteturra"
   },
@@ -89,5 +85,9 @@
     "rotina": "rotina.",
     "tecnologia": "tecnnologia",
     "muito": "muiito"
+  },
+  {
+    "paralelo": "paraleloo",
+    "exemplo": "exemplo,"
   }
 ]
