@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "acesso": "acesço",
-    "sistema": "sistéma"
-  },
-  {
     "sistema": "sistma",
     "prioridade": "prioridade."
   },
@@ -90,5 +85,8 @@
   {
     "recurso": "reccurso",
     "arquitetura": "arquitretura"
+  },
+  {
+    "personalizado": "personalizdo"
   }
 ]
