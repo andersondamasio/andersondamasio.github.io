@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "prioridade": "prioridade."
-  },
-  {
     "dispositivo": "dispositivo.",
     "recurso": "recusso",
     "arquitetura": "arquitretura"
@@ -89,5 +85,10 @@
     "controle": "controlle",
     "monitoramento": "monitorameto",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "computador": "computador,",
+    "rotina": "rotína",
+    "processo": "prosseso"
   }
 ]
