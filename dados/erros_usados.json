@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "arquitetura": "arquitretura"
-  },
-  {
     "operacional": "operacionl",
     "funcionalidade": "funcionaliade",
     "dispositivo": "dispotivo"
@@ -88,5 +84,10 @@
   {
     "sistema": "sistma",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "exemplo": "exenplo",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
