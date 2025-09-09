@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "monitoramento": "monitorameto",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "computador": "computador,",
     "rotina": "rotína",
     "processo": "prosseso"
@@ -90,5 +85,10 @@
     "muito": "muiito",
     "tecnologia": "tecnnologia",
     "necessidade": "necessidade."
+  },
+  {
+    "estrutura": "estrtura",
+    "arquitetura": "arquitertura",
+    "exemplo": "exenplo"
   }
 ]
