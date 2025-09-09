@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "funciona": "funciona.",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "mensagem": "mensagen",
     "funciona": "funciona,",
     "exemplo": "exemplo."
@@ -90,5 +85,10 @@
     "abordagem": "abordage",
     "controle": "controle.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "simples": "simlpes",
+    "problema": "probrema",
+    "conectado": "conectdo"
   }
 ]
