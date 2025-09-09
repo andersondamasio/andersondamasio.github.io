@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internert",
-    "sistema": "sistma"
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura"
   },
@@ -90,5 +86,9 @@
     "muito": "muto",
     "necessidade": "necissidade",
     "armazenamento": "armazenamentto"
+  },
+  {
+    "suporte": "suporte.",
+    "funciona": "funsiona"
   }
 ]
