@@ -1,10 +1,5 @@
 [
   {
-    "mensagem": "mensagen",
-    "funciona": "funciona,",
-    "exemplo": "exemplo."
-  },
-  {
     "suporte": "suporte.",
     "muito": "muto",
     "dispositivo": "dispotivo"
@@ -90,5 +85,10 @@
     "simples": "simlpes",
     "problema": "probrema",
     "conectado": "conectdo"
+  },
+  {
+    "constante": "constanate",
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnolgia"
   }
 ]
