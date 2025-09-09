@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "complexidade": "complezidade",
     "funcionalidade": "funcionaliade",
     "melhor": "melhorr"
@@ -90,5 +86,9 @@
     "armazenamento": "armasenamento",
     "funcionalidade": "funcionaliade",
     "exemplo": "exenplo"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "arquitetura": "arquitertura"
   }
 ]
