@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "arquitetura": "arquitretura",
-    "sistema": "sistma"
-  },
-  {
     "dispositivo": "dispotivo",
     "armazenamento": "armasenamento"
   },
@@ -89,5 +84,10 @@
   {
     "monitoramento": "monitramento",
     "simples": "simplis"
+  },
+  {
+    "rotina": "rotina.",
+    "tecnologia": "tecnnologia",
+    "muito": "muiito"
   }
 ]
