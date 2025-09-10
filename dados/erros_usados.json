@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "dispositivo": "dispotivo",
-    "necessidade": "necissidade"
-  },
-  {
     "muito": "muiito",
     "tecnologia": "tecnnologia",
     "necessidade": "necessidade."
@@ -95,5 +90,10 @@
     "sistema": "cistema",
     "abordagem": "abordage",
     "desafio": "desafío"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "prioridade": "prioriade.",
+    "arquitetura": "arquiteturra"
   }
 ]
