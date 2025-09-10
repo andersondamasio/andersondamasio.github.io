@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "desenvolvimento": "desenvolvmento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "armazenamento": "armasenamento",
     "funcionalidade": "funcionaliade",
     "exemplo": "exenplo"
@@ -90,5 +85,10 @@
     "virtual": "virtal",
     "sistema": "sistma",
     "computador": "computador,"
+  },
+  {
+    "carregamento": "carregamneto",
+    "tecnologia": "tecnolgia",
+    "funcionalidade": "funcionaliadde"
   }
 ]
