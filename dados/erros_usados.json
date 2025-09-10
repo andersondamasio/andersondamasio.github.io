@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "problema": "probrema",
-    "conectado": "conectdo"
-  },
-  {
     "constante": "constanate",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnolgia"
@@ -90,5 +85,10 @@
     "funcionalidade": "funcionaliadde",
     "suporte": "suporte.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "virtual": "virtal",
+    "sistema": "sistma",
+    "computador": "computador,"
   }
 ]
