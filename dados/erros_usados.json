@@ -1,9 +1,5 @@
 [
   {
-    "paralelo": "paraleloo",
-    "exemplo": "exemplo,"
-  },
-  {
     "suporte": "suportte",
     "dispositivo": "dispotivo",
     "necessidade": "necissidade"
@@ -94,5 +90,10 @@
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "sistema": "cistema",
+    "abordagem": "abordage",
+    "desafio": "desafío"
   }
 ]
