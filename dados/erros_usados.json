@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "arquitetura": "arquitertura"
-  },
-  {
     "muito": "muto",
     "necessidade": "necissidade",
     "armazenamento": "armazenamentto"
@@ -90,5 +86,9 @@
     "conhecimento": "conhecimento.",
     "abordagem": "abordage",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "controle": "contrle"
   }
 ]
