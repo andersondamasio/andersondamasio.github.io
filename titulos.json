@@ -26039,5 +26039,14 @@
     "dataFonte": "2025-09-10T08:00:19.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/need-linux-help-my-favorite-forums-groups-and-mailing-lists-when-i-need-support/"
+  },
+  {
+    "titulo": "A nova era dos bancos de dados: InfluxDB 3 e suas promessas revolucionárias",
+    "noticiaOriginal": "Article: Engineering a Time Series Database Using Open Source: Rebuilding InfluxDB 3 in Apache Arrow and Rust",
+    "url": "artigos/banco-de-dados/a-nova-era-dos-bancos-de-dados-influxdb-3-e-suas-promessas-revolucionarias.html",
+    "data": "2025-09-10T09:21:06.767Z",
+    "dataFonte": "2025-09-10T09:00:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/articles/timeseries-db-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

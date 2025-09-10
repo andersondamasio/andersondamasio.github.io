@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muiito",
-    "suporte": "suportte"
-  },
-  {
     "recurso": "reccurso",
     "arquitetura": "arquitretura"
   },
@@ -91,5 +87,10 @@
     "problema": "poblema",
     "geralmente": "geralmemte",
     "conhecimento": "conhecimento."
+  },
+  {
+    "armazenamento": "armasenamento",
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnoligia"
   }
 ]
