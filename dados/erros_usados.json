@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "controle": "controle.",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "simples": "simlpes",
     "problema": "probrema",
     "conectado": "conectdo"
@@ -90,5 +85,10 @@
     "internet": "internat",
     "prioridade": "prioriade",
     "exemplo": "exemplo."
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "suporte": "suporte.",
+    "arquitetura": "arquitertura"
   }
 ]
