@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "funciona": "funsiona"
-  },
-  {
     "muito": "muinto",
     "tecnologia": "tecnnologia",
     "simples": "simlpes"
@@ -90,5 +86,10 @@
     "processo": "proceso",
     "constante": "constanate",
     "conhecimento": "conhecimeto"
+  },
+  {
+    "simples": "simlpes",
+    "exemplo": "exemplo,",
+    "muito": "muto"
   }
 ]
