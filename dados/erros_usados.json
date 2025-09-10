@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "utilizado": "utilizado.",
-    "armazenamento": "armazenamentto"
-  },
-  {
     "monitoramento": "monitramento",
     "simples": "simplis"
   },
@@ -93,5 +88,10 @@
   {
     "desafio": "desafío",
     "muito": "muto"
+  },
+  {
+    "acesso": "aceso",
+    "sistema": "sistma",
+    "monitoramento": "monitramento"
   }
 ]
