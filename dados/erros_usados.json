@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "sistema": "sistma",
-    "computador": "computador,"
-  },
-  {
     "carregamento": "carregamneto",
     "tecnologia": "tecnolgia",
     "funcionalidade": "funcionaliadde"
@@ -94,5 +89,9 @@
     "simples": "simlpes",
     "problema": "poblema",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "abordagem": "abordajem",
+    "controle": "contrle"
   }
 ]
