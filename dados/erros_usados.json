@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "tecnologia": "tecnolgia",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "conhecimento": "conhecimento.",
     "abordagem": "abordage",
     "arquitetura": "arquiteturra"
@@ -93,5 +88,10 @@
   {
     "abordagem": "abordajem",
     "controle": "contrle"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "acesso": "aceso",
+    "problema": "probrema"
   }
 ]

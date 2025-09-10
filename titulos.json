@@ -26165,5 +26165,14 @@
     "dataFonte": "2025-09-10T21:30:11.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://techcrunch.com/2025/09/10/thinking-machines-lab-wants-to-make-ai-models-more-consistent/"
+  },
+  {
+    "titulo": "Senador critica Microsoft por deixar Windows vulnerável a ataques",
+    "noticiaOriginal": "Senator blasts Microsoft for making default Windows vulnerable to “Kerberoasting”",
+    "url": "artigos/seguranca/senador-critica-microsoft-por-deixar-windows-vulneravel-a-ataques.html",
+    "data": "2025-09-10T23:17:36.224Z",
+    "dataFonte": "2025-09-10T19:38:13.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/09/senator-blasts-microsoft-for-making-default-windows-vulnerable-to-kerberoasting/"
   }
 ]
