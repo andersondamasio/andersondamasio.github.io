@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "funcionalidade": "funcionaliade",
-    "exemplo": "exenplo"
-  },
-  {
     "dispositivo": "dispotivo",
     "arquitetura": "arquitertura"
   },
@@ -90,5 +85,10 @@
     "carregamento": "carregamneto",
     "tecnologia": "tecnolgia",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "abordagem": "abordage",
+    "arquitetura": "arquiteturra"
   }
 ]
