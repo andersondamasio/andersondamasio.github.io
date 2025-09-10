@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "arquitetura": "arquitretura"
-  },
-  {
     "personalizado": "personalizdo"
   },
   {
@@ -92,5 +88,10 @@
     "armazenamento": "armasenamento",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "constante": "constante.",
+    "necessidade": "nescessidade",
+    "dispositivo": "disposotivo"
   }
 ]
