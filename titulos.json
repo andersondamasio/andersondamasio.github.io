@@ -26282,5 +26282,14 @@
     "dataFonte": "2025-09-11T12:08:00.000Z",
     "categoria": "Categoria",
     "urlFonte": "https://www.infoq.com/presentations/architecture-best-practices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Gerando Diagrama de Mermaid: Visualizando Arquitetura com Copilot no Visual Studio",
+    "noticiaOriginal": "Generating and Viewing Mermaid Diagrams with Copilot",
+    "url": "artigos/desenvolvimento-de-software/gerando-diagrama-de-mermaid-visualizando-arquitetura-com-copilot-no-visual-studio.html",
+    "data": "2025-09-11T13:24:39.571Z",
+    "dataFonte": "2025-09-11T13:00:58.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://devblogs.microsoft.com/visualstudio/generating-and-viewing-mermaid-diagrams-with-copilot/"
   }
 ]
