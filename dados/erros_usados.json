@@ -1,9 +1,5 @@
 [
   {
-    "desafio": "desafío",
-    "muito": "muto"
-  },
-  {
     "acesso": "aceso",
     "sistema": "sistma",
     "monitoramento": "monitramento"
@@ -92,5 +88,10 @@
     "necessidade": "nescessidade",
     "muito": "muto",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "internet": "internat",
+    "virtual": "virtuaal",
+    "arquitetura": "arquiteturra"
   }
 ]
