@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "controle": "contrle"
-  },
-  {
     "processo": "proceso",
     "constante": "constanate",
     "conhecimento": "conhecimeto"
@@ -93,5 +89,10 @@
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "dispositivo": "dispotivo",
+    "necessidade": "necissidade"
   }
 ]
