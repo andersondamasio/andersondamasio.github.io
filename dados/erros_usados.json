@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "monitoramento": "monitorameto",
-    "sistema": "cistema"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
@@ -92,5 +87,9 @@
   {
     "gerenciamento": "gerenciamnto",
     "funciona": "funsiona"
+  },
+  {
+    "desafio": "desaío",
+    "melhor": "melor"
   }
 ]
