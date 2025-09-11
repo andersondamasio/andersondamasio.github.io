@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "prioridade": "prioriade.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "sistema": "sistma",
     "desenvolvimento": "desenvolvmento"
   },
@@ -91,5 +86,10 @@
     "recurso": "recusso",
     "funciona": "funciona.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "constante": "constanate",
+    "exemplo": "exemplo,",
+    "tecnologia": "tecnnologia"
   }
 ]
