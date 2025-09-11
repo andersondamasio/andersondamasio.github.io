@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "melhor": "melhorr",
-    "dispositivo": "dispositivo."
-  },
-  {
     "sistema": "cistema",
     "arquitetura": "arquiteturra"
   },
@@ -90,5 +85,10 @@
   {
     "controle": "contrle",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "complexidade": "complexsidade",
+    "constante": "constate"
   }
 ]
