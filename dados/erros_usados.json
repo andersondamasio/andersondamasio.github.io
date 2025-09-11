@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "abordagem": "abordage",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "controle": "contrle"
   },
@@ -93,5 +88,10 @@
     "monitoramento": "monitorameto",
     "acesso": "aceso",
     "problema": "probrema"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquiteturra"
   }
 ]
