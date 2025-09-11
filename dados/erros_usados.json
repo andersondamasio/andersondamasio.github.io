@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "arquitetura": "arquitertura",
     "dispositivo": "dispotivo",
     "necessidade": "necissidade"
@@ -92,5 +87,9 @@
     "desenvolvimento": "desenvolvimente",
     "acesso": "aceso",
     "sistema": "cistema"
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "personalizado": "personalisado"
   }
 ]
