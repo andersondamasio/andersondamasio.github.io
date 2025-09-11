@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "acesso": "aceso",
-    "problema": "probrema"
-  },
-  {
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra"
@@ -92,5 +87,10 @@
     "simples": "simplis",
     "tecnologia": "tecnnologia",
     "monitoramento": "monitramento"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "acesso": "aceso",
+    "sistema": "cistema"
   }
 ]
