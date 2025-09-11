@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "sistema": "sistma",
-    "monitoramento": "monitramento"
-  },
-  {
     "operacional": "operaciona",
     "monitoramento": "monitorameto",
     "sistema": "cistema"
@@ -93,5 +88,9 @@
     "internet": "internat",
     "virtual": "virtuaal",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "funciona": "funsiona"
   }
 ]
