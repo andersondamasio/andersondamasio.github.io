@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "necessidade": "nescessidade",
     "muito": "muto",
     "desenvolvimento": "desenvolvmento"
@@ -92,5 +88,10 @@
     "operacional": "operaciona",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitertura"
+  },
+  {
+    "necessidade": "necissidade",
+    "funcionalidade": "funcionaliade",
+    "funciona": "funciona."
   }
 ]
