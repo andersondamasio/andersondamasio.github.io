@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "complexidade": "complexsidade",
     "constante": "constate"
@@ -90,5 +86,10 @@
   {
     "conectado": "conetado",
     "funciona": "funciona,"
+  },
+  {
+    "propriedade": "proprieade",
+    "acesso": "acesso.",
+    "sistema": "sistma"
   }
 ]
