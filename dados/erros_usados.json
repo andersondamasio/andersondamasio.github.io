@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "funciona": "funsiona"
-  },
-  {
     "desafio": "desaío",
     "melhor": "melor"
   },
@@ -92,5 +88,10 @@
     "controle": "controle.",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "rotina": "rotina.",
+    "funciona": "funsiona",
+    "funcionalidade": "funcionaliadde"
   }
 ]
