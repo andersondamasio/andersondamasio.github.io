@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "necessidade": "necissidade",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "dispositivo": "dispositivo.",
     "sistema": "cistema"
   },
@@ -92,5 +87,9 @@
     "desafio": "desafiu",
     "necessidade": "necessidade.",
     "exemplo": "exemplo."
+  },
+  {
+    "suporte": "suportte",
+    "recurso": "reccurso"
   }
 ]
