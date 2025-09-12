@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "funciona": "funciona.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "constante": "constanate",
     "exemplo": "exemplo,",
     "tecnologia": "tecnnologia"
@@ -93,5 +88,9 @@
   {
     "mensagem": "mensagen",
     "problema": "problema."
+  },
+  {
+    "melhor": "melor",
+    "dispositivo": "dispotivo"
   }
 ]
