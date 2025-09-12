@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "acesso": "aceso",
-    "sistema": "cistema"
-  },
-  {
     "armazenamento": "armazenamentto",
     "personalizado": "personalisado"
   },
@@ -90,5 +85,10 @@
   {
     "recurso": "reccurso",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "monitoramento": "monitramento",
+    "automatizado": "automatizdo",
+    "processo": "proceso"
   }
 ]
