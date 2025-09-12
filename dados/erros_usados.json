@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "desenvolvimento": "desenvolvmento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "necessidade": "necissidade",
     "funcionalidade": "funcionaliade",
     "funciona": "funciona."
@@ -90,5 +85,9 @@
     "recurso": "recuro",
     "simples": "simlpes",
     "acesso": "acesço"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitretura"
   }
 ]
