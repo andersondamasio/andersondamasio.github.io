@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "conhecimento": "conhescimento",
-    "constante": "constante."
-  },
-  {
     "processo": "prosseso",
     "necessidade": "necissidade",
     "funcionalidade": "funcionaliadde"
@@ -92,5 +87,10 @@
     "rotina": "rotna",
     "muito": "muto",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "desafio": "desafiu",
+    "necessidade": "necessidade.",
+    "exemplo": "exemplo."
   }
 ]
