@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "muito": "muto",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "internet": "internat",
     "virtual": "virtuaal",
     "arquitetura": "arquiteturra"
@@ -93,5 +88,9 @@
     "necessidade": "necissidade",
     "funcionalidade": "funcionaliade",
     "funciona": "funciona."
+  },
+  {
+    "abordagem": "abordagem.",
+    "prioridade": "prioriade"
   }
 ]
