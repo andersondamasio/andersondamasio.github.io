@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "personalizado": "personalisado"
-  },
-  {
     "controle": "contrle",
     "desenvolvimento": "desenvolvmento"
   },
@@ -90,5 +86,9 @@
     "monitoramento": "monitramento",
     "automatizado": "automatizdo",
     "processo": "proceso"
+  },
+  {
+    "conectado": "conetado",
+    "funciona": "funciona,"
   }
 ]
