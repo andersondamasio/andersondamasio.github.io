@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "virtual": "virtuaal",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "funciona": "funsiona"
   },
@@ -92,5 +87,10 @@
   {
     "abordagem": "abordagem.",
     "prioridade": "prioriade"
+  },
+  {
+    "controle": "controle.",
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnolgia"
   }
 ]
