@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "recurso": "reccurso"
-  },
-  {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolmento"
   },
@@ -88,5 +84,9 @@
     "complexidade": "complexsidade",
     "prioridade": "prioriade.",
     "necessidade": "necissidade"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "funciona": "funsiona"
   }
 ]
