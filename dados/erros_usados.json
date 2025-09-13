@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "funciona": "funciona.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "sistema": "cistema",
     "arquitetura": "arquitretura",
     "controle": "contrle"
@@ -92,5 +87,9 @@
     "sistema": "sistéma",
     "suporte": "suportte",
     "melhor": "melhorr"
+  },
+  {
+    "sistema": "sistma",
+    "tecnologia": "tecnnologia"
   }
 ]
