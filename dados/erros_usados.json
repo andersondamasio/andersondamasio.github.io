@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "recurso": "recuro",
     "simples": "simlpes",
     "acesso": "acesço"
@@ -90,5 +86,10 @@
   {
     "sistema": "sistma",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "utilizado": "utilizdo",
+    "arquitetura": "arquitretura"
   }
 ]
