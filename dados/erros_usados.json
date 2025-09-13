@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "simples": "simlpes",
-    "acesso": "acesço"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitretura"
   },
@@ -91,5 +86,10 @@
     "desenvolvimento": "desenvolvmento",
     "utilizado": "utilizdo",
     "arquitetura": "arquitretura"
+  },
+  {
+    "melhor": "melor",
+    "desenvolvimento": "desenvolmento",
+    "acesso": "acesso."
   }
 ]
