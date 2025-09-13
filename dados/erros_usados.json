@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "mensagen",
-    "problema": "problema."
-  },
-  {
     "melhor": "melor",
     "dispositivo": "dispotivo"
   },
@@ -87,5 +83,10 @@
   },
   {
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "exemplo": "exemplo.",
+    "arquitetura": "arquitertura"
   }
 ]
