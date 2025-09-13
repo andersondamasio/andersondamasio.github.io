@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Como a Cloudflare Está Transformando a Segurança de AI com Pontuações Automatizadas – Artigo Técnico por Anderson Damasio</title>
+<meta name="description" content="Cloudflare lança pontuação automatizada para avaliar segurança de AI em empresas, ajudando a mitigar riscos de Shadow AI.&lt;/p&gt;">
+<link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como a Cloudflare Está Transformando a Segurança de AI com Pontuações Automatizadas">
+<meta property="og:description" content="Cloudflare lança pontuação automatizada para avaliar segurança de AI em empresas, ajudando a mitigar riscos de Shadow AI.&lt;/p&gt;">
+<meta property="og:url" content="https://www.andersondamasio.com.br/seguranca/como-a-cloudflare-esta-transformando-a-seguranca-de-ai-com-pontuacoes-automatizadas.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Como a Cloudflare Está Transformando a Segurança de AI com Pontuações Automatizadas">
+<meta name="twitter:description" content="Cloudflare lança pontuação automatizada para avaliar segurança de AI em empresas, ajudando a mitigar riscos de Shadow AI.&lt;/p&gt;">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Como a Cloudflare Está Transformando a Segurança de AI com Pontuações Automatizadas",
+  "description": "Cloudflare lança pontuação automatizada para avaliar segurança de AI em empresas, ajudando a mitigar riscos de Shadow AI.</p>",
+  "datePublished": "2025-09-13T12:35:00.749Z",
+  "author": {
+    "@type": "Person",
+    "name": "Anderson Damasio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anderson Damasio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/favicon.ico"
+    }
+  }
+}
+</script>
+
+<!-- Schema.org: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://www.andersondamasio.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://www.andersondamasio.com.br/artigos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Segurança",
+      "item": "https://www.andersondamasio.com.br/artigos/seguranca"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Como a Cloudflare Está Transformando a Segurança de AI com Pontuações Automatizadas",
+      "item": "https://www.andersondamasio.com.br/seguranca/como-a-cloudflare-esta-transformando-a-seguranca-de-ai-com-pontuacoes-automatizadas.html"
+    }
+  ]
+}
+</script>
+
+
+ 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+
+<!-- Script principal da Ezoic (Standalone) no <head> -->
+<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+  window.ezstandalone = window.ezstandalone || {};
+  ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+
+<style>
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --main-bg: #fff;
+  --link: #0a66c2;
+  --link-hover: #084e91;
+  --footer: #666;
+  --meta: #777;
+  --pre-bg: #272822;
+  --pre-color: #f8f8f2;
+  --copy-bg: #0a66c2;
+  --copy-color: #fff;
+  --copy-bg-hover: #084e91;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body.dark-theme {
+  --bg: #181b1f;
+  --text: #ddd;
+  --main-bg: #23262d;
+  --link: #67aaff;
+  --link-hover: #f1c40f;
+  --footer: #b3b3b3;
+  --meta: #b3b3b3;
+  --pre-bg: #22262b;
+  --pre-color: #e0e7ef;
+  --copy-bg: #67aaff;
+  --copy-color: #11131a;
+  --copy-bg-hover: #f1c40f;
+  --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+h1 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--link); }
+a { color: var(--link); text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: var(--link-hover);}
+.article-meta { color: var(--meta); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: var(--copy-bg-hover); color: var(--main-bg); }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: var(--link); font-size: 1.05rem; border: 1px solid var(--link); padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: var(--link); color: var(--main-bg); }
+main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+</style>
+
+</head>
+<body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../../artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
+    <a href="../../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+  </nav>
+</header>
+<main>
+<h1>Como a Cloudflare Está Transformando a Segurança de AI com Pontuações Automatizadas</h1>
+
+<p class="article-meta">Publicado em: 13/09/2025 09:35</p>
+
+<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
+<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
+<script>
+  ezstandalone.cmd.push(function() {
+    ezstandalone.showAds(115);
+  });
+</script>
+
+<div class="article-body"><p>Nos últimos tempos, o uso de ferramentas de inteligência artificial tem crescido de forma exponencial dentro das empresas. Isso é ótimo, mas, ao mesmo tempo, trouxe à tona uma série de riscos e desafios relacionados à segurança e à privacidade. Recentemente, a Cloudflare lançou uma iniciativa interessante: o <strong>Application Confidence Score</strong>, uma forma automática de avaliar a segurança e a confiabilidade de aplicações de AI de terceiros. Mas será que essa nova abordage realmente vai ajudar as organizações a lidarem com o que chamamos de <em>Shadow AI</em>?</p>
+<h2>O que é o Application Confidence Score?</h2>
+<p>A proposta da Cloudflare é criar um sistéma de pontuação que ajude as empresas a avaliarem, em larga escala, a segurança de ferramentas de AI que seus colaboradores usam. Isso é especialmente relevante no contexto atual, em que é comum ver funcionários utilizando ferramentas de AI não aprovadas, o que pode expor dados sensíveis a riscos de segurança.</p>
+<p>O <strong>Application Confidence Score</strong> utiliza uma escala de 1 a 5 para pontuar duas dimensões diferentes: a confiabilidade geral da aplicação e os riscos específicos associados à AI generativa. Essa abordagem é bastante técnica e, segundo os responsáveis, evita julgamentos subjetivos, já que as pontuações são baseadas em um <em>rubric</em> objetivo, o que garante uma avaliação mais precisa.</p>
+<h2>Critérios e Metodologia</h2>
+<p>De acordo com o que foi divulgado, a pontuação se baseia em dados publicamente disponíveis, como políticas de privacidade, certificações de conformidade, documentação de segurança e até relatórios de incidentes. Isso significa que, se uma ferramenta não tem informações disponíveis, ela não ganha pontos. É uma forma interessante de garantir que somente as aplicações que realmente se comprometem com a segurança e a conformidade sejam consideradas.</p>
+<p>Os critérios para a avaliação incluem:</p>
+<ul>
+    <li>Conformidade com regulamentações como SOC 2, GDPR e ISO 27001;</li>
+    <li>Práticas de gestão de dados;</li>
+    <li>Controles de segurança;</li>
+    <li>Estabilidade financeira da empresa responsável pela aplicação.</li>
+</ul>
+<h3>O que é o Gen-AI Confidence Score?</h3>
+<p>Além do Application Confidence Score, também existe o <strong>Gen-AI Confidence Score</strong>, que foca em riscos específicos da AI generativa. Ele considera aspectos como o modelo de segurança da implementação, a disponibilidade de <em>model cards</em> e o treinamento em prompts de usuários. Essa dupla avaliação pode ser um diferencial significativo para as equipes de segurança na hora de definir políticas de acesso. e uso de AI nas empresas.</p>
+<h2>Dicas para Implementação e Acompanhamento</h2>
+<p>Se você está pensando em como implementar essa nova pontuação na sua empresa, aqui vão algumas dicas avançadas que podem ajudar:</p>
+<ul>
+    <li><strong>Monitore as Ferramentas Usadas:</strong> Utilize dashboards para acompanhar quais ferramentas de AI seus colaboradores estão usando. Isso pode ajudar a identificar riscos de forma proativa.</li>
+    <li><strong>Educação e Treinamento:</strong> Ensine sua equipe sobre os riscos associados ao uso de AI e como usar ferramentas aprovadas de forma segura.</li>
+    <li><strong>Feedback Contínuo:</strong> Participe da comunidade e dê feedback sobre a pontuação da Cloudflare. Sua experiência pode ajudar a moldar as futuras atualizações do sistema.</li>
+    <li><strong>Integração com Políticas de Segurança:</strong> Alinhe as pontuações com as políticas de segurança existentes, garantindo que as aplicações com baixa pontuação sejam reavaliadas ou banidas.</li>
+</ul>
+<h2>Reflexões Finais</h2>
+<p>O <strong>Application Confidence Score</strong> da Cloudflare representa um passo interessante em direção a uma gestão de riscos mais eficaz no uso de AI nas empresas. Embora ainda esteja em fase de feedback e implementação, a ideia de ter uma abordagem baseada em dados e critérios objetivos pode realmente transformar a maneira como lidamos com a segurança da informação em um mundo cada vez mais dominado pela tecnologia. É imperativo que as organizações fiquem atentas a isso e considerem integrar essa nova abordagem em suas estratégias de segurança.</p>
+<p>Em resumo, a inovação é bem-vinda, mas a cautela deve ser uma constante. Como profissionais de tecnologia, precisamos estar sempre um passo à frente, avaliando e reavaliando as ferramentas que usamos no dia a dia.</p>
+<p>
+<p></p></div>
+<p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="../sobre.html">Sobre</a> |
+    <a href="../contato.html">Contato</a> |
+    <a href="../termos.html">Termos de Uso</a> |
+    <a href="../politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+
+
+</body>
+</html>

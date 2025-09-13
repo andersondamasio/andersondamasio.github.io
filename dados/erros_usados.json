@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo."
-  },
-  {
     "recurso": "reccurso",
     "tecnologia": "tecnnologia"
   },
@@ -89,5 +84,10 @@
     "abordagem": "abordajem",
     "estrutura": "estrura",
     "muito": "muiito"
+  },
+  {
+    "abordagem": "abordage",
+    "sistema": "sistéma",
+    "acesso": "acesso."
   }
 ]
