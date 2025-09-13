@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "rotina": "rotina.",
     "funciona": "funsiona",
     "funcionalidade": "funcionaliadde"
@@ -89,5 +84,10 @@
     "internet": "internat",
     "funciona": "funciona.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "sistema": "cistema",
+    "arquitetura": "arquitretura",
+    "controle": "contrle"
   }
 ]
