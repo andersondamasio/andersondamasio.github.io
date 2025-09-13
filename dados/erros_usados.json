@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "funciona": "funsiona",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
@@ -88,5 +84,10 @@
   {
     "tecnologia": "tecnoligia",
     "funciona": "funsiona"
+  },
+  {
+    "abordagem": "abordajem",
+    "estrutura": "estrura",
+    "muito": "muiito"
   }
 ]
