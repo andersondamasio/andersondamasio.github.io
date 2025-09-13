@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "necessidade": "necessidade.",
-    "exemplo": "exemplo."
-  },
-  {
     "suporte": "suportte",
     "recurso": "reccurso"
   },
@@ -88,5 +83,10 @@
     "dispositivo": "disposotivo",
     "personalizado": "personalisado",
     "melhor": "melhorr"
+  },
+  {
+    "complexidade": "complexsidade",
+    "prioridade": "prioriade.",
+    "necessidade": "necissidade"
   }
 ]
