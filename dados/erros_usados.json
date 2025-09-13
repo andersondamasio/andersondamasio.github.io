@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "automatizado": "automatizdo",
-    "processo": "proceso"
-  },
-  {
     "conectado": "conetado",
     "funciona": "funciona,"
   },
@@ -90,5 +85,10 @@
     "simples": "simplis",
     "dispositivo": "disposotivo",
     "monitoramento": "monitorameto"
+  },
+  {
+    "constante": "constante.",
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquiteturra"
   }
 ]
