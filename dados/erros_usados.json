@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "monitoramento": "monitramento",
     "automatizado": "automatizdo",
     "processo": "proceso"
@@ -89,5 +85,10 @@
     "abordagem": "abordage",
     "sistema": "sistéma",
     "acesso": "acesso."
+  },
+  {
+    "simples": "simplis",
+    "dispositivo": "disposotivo",
+    "monitoramento": "monitorameto"
   }
 ]
