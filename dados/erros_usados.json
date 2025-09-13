@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conetado",
-    "funciona": "funciona,"
-  },
-  {
     "propriedade": "proprieade",
     "acesso": "acesso.",
     "sistema": "sistma"
@@ -90,5 +86,10 @@
     "constante": "constante.",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "utilizado": "utilizdo",
+    "processo": "prosseso",
+    "abordagem": "abordagem."
   }
 ]
