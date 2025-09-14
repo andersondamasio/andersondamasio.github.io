@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "suporte": "suportte",
-    "melhor": "melhorr"
-  },
-  {
     "sistema": "sistma",
     "tecnologia": "tecnnologia"
   },
@@ -86,5 +81,9 @@
     "funcionalidade": "funcionalidade.",
     "necessidade": "necissidade",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "conhecimento": "conhecimento."
   }
 ]
