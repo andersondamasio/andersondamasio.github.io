@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "sistema": "sistéma",
-    "acesso": "acesso."
-  },
-  {
     "simples": "simplis",
     "dispositivo": "disposotivo",
     "monitoramento": "monitorameto"
@@ -89,5 +84,8 @@
   {
     "resultado": "resultao",
     "exemplo": "exemplo,"
+  },
+  {
+    "tecnologia": "tecnolgia"
   }
 ]
