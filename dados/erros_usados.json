@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "funciona": "funsiona"
-  },
-  {
     "abordagem": "abordajem",
     "estrutura": "estrura",
     "muito": "muiito"
@@ -89,5 +85,10 @@
     "geralmente": "geralment",
     "exemplo": "exemplo.",
     "desafio": "desafiu"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "necessidade": "nescessidade",
+    "arquitetura": "arquiteturra"
   }
 ]
