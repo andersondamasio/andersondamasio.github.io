@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "utilizado": "utilizdo",
     "arquitetura": "arquitretura"
@@ -84,5 +80,10 @@
   {
     "exemplo": "exenplo",
     "monitoramento": "monitorameto"
+  },
+  {
+    "constante": "constante.",
+    "abordagem": "abordagem.",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
