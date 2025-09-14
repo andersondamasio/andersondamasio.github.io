@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "melhor": "melor",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "armazenamento": "armasenamento"
   },
   {
@@ -86,5 +81,10 @@
     "internet": "internert",
     "funciona": "funciona,",
     "melhor": "melhorr"
+  },
+  {
+    "processo": "prosseso",
+    "mensagem": "menssagen",
+    "sistema": "cistema"
   }
 ]
