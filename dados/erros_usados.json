@@ -1,9 +1,5 @@
 [
   {
-    "paralelo": "paraleloo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "sistema": "sistéma",
     "suporte": "suportte",
     "melhor": "melhorr"
@@ -85,5 +81,10 @@
     "sistema": "cistema",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "necessidade": "necissidade",
+    "arquitetura": "arquiteturra"
   }
 ]
