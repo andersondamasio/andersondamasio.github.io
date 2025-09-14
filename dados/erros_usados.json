@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "personalizado": "personalisado",
-    "melhor": "melhorr"
-  },
-  {
     "complexidade": "complexsidade",
     "prioridade": "prioriade.",
     "necessidade": "necissidade"
@@ -90,5 +85,9 @@
   {
     "conhecimento": "conhecimento.",
     "melhor": "melor"
+  },
+  {
+    "problema": "problema.",
+    "arquitetura": "arquitretura"
   }
 ]
