@@ -1,9 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "arquitetura": "arquitretura"
-  },
-  {
     "geralmente": "geralment",
     "exemplo": "exemplo.",
     "desafio": "desafiu"
@@ -86,5 +82,10 @@
     "exemplo": "exenplo",
     "sistema": "sistma",
     "muito": "muinto"
+  },
+  {
+    "constante": "constante.",
+    "monitoramento": "monitramento",
+    "necessidade": "nescessidade"
   }
 ]
