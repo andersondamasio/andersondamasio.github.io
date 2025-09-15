@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceriaa",
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "sistema": "cistema",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnolgia"
@@ -91,5 +86,9 @@
     "estrutura": "estrtura",
     "complexidade": "complexsidade",
     "monitoramento": "monitoramento."
+  },
+  {
+    "rotina": "rotína",
+    "arquitetura": "arquiteturra"
   }
 ]
