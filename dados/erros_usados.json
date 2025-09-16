@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "sistema": "cistema",
-    "muito": "muto"
-  },
-  {
     "estrutura": "estrtura",
     "complexidade": "complexsidade",
     "monitoramento": "monitoramento."
@@ -93,5 +88,10 @@
     "sistema": "sistéma",
     "resultado": "resutlado",
     "problema": "probrema"
+  },
+  {
+    "sistema": "sistma",
+    "funciona": "funsiona",
+    "muito": "muinto"
   }
 ]
