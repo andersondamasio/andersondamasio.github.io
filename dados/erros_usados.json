@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "desenvolvimento": "desenvolmento",
-    "exemplo": "exemplo,"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "simples": "simplis"
   },
@@ -93,5 +88,10 @@
   {
     "necessidade": "nescessidade",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "abordagem": "abordagem.",
+    "tecnologia": "tecnolgia"
   }
 ]
