@@ -1,10 +1,5 @@
 [
   {
-    "personalizado": "personalizad",
-    "geralmente": "geralment",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "conhecimento": "conhescimento",
     "desenvolvimento": "desenvolvimente"
   },
@@ -93,5 +88,10 @@
     "acesso": "aceso",
     "desafio": "desafío",
     "estrutura": "estrura"
+  },
+  {
+    "suporte": "suporte.",
+    "funcionalidade": "funcionaliade",
+    "necessidade": "necissidade"
   }
 ]
