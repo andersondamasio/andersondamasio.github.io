@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "necessidade": "necissidade",
-    "acesso": "aceso"
-  },
-  {
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra"
   },
@@ -92,5 +87,10 @@
     "constante": "constanate",
     "arquitetura": "arquiteturra",
     "sistema": "cistema"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "abordagem": "abordagem.",
+    "tecnologia": "tecnnologia"
   }
 ]
