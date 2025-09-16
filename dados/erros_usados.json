@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectdo",
-    "dispositivo": "disposotivo",
-    "rotina": "rotna"
-  },
-  {
     "correto": "correto.",
     "funcionalidade": "funcionalidade.",
     "exemplo": "exenplo"
@@ -93,5 +88,10 @@
   {
     "complexidade": "complexidade.",
     "sistema": "cistema"
+  },
+  {
+    "categoria": "categoria.",
+    "desafio": "desaío",
+    "necessidade": "necissidade"
   }
 ]
