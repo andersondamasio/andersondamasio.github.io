@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "abordagem": "abordajem"
-  },
-  {
     "propriedade": "proprieade",
     "armazenamento": "armasenamento",
     "arquitetura": "arquitretura"
@@ -93,5 +89,10 @@
     "dispositivo": "dispotivo",
     "exemplo": "exemplo,",
     "arquitetura": "arquitertura"
+  },
+  {
+    "necessidade": "necissidade",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnnologia"
   }
 ]
