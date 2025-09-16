@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolmento",
     "exemplo": "exemplo,"
@@ -93,5 +89,9 @@
     "suporte": "suporte.",
     "funcionalidade": "funcionaliade",
     "necessidade": "necissidade"
+  },
+  {
+    "necessidade": "nescessidade",
+    "tecnologia": "tecnoligia"
   }
 ]
