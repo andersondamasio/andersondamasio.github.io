@@ -27263,5 +27263,14 @@
     "dataFonte": "2025-09-16T09:00:25.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/this-new-ai-voice-trainer-can-help-you-learn-a-new-language/"
+  },
+  {
+    "titulo": "Desvendando os Riscos do io_uring: Como um Rootkit Pode Bypassar a Segurança do Linux",
+    "noticiaOriginal": "Linux Security Tools Bypassed by io_uring Rootkit Technique, ARMO Research Reveals",
+    "url": "artigos/seguranca/desvendando-os-riscos-do-io-uring-como-um-rootkit-pode-bypassar-a-seguranca-do-linux.html",
+    "data": "2025-09-16T10:21:24.563Z",
+    "dataFonte": "2025-09-16T10:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2025/09/linux-security-rootkit/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
