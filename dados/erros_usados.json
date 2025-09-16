@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "monitoramento": "monitorameto",
-    "acesso": "acesço"
-  },
-  {
     "componente": "componete",
     "funcionalidade": "funcionaliade",
     "desenvolvimento": "desenvolvimente"
@@ -93,5 +88,10 @@
   {
     "automatizado": "automatizdo.",
     "necessidade": "necessidade."
+  },
+  {
+    "recurso": "recusso",
+    "processo": "processso",
+    "simples": "cimples"
   }
 ]
