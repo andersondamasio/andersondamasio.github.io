@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "funcionalidade": "funcionaliade",
-    "necessidade": "necissidade"
-  },
-  {
     "necessidade": "nescessidade",
     "tecnologia": "tecnoligia"
   },
@@ -94,5 +89,10 @@
     "muito": "muinto",
     "tecnologia": "tecnnologia",
     "melhor": "melhorr"
+  },
+  {
+    "controle": "controle.",
+    "arquitetura": "arquitretura",
+    "necessidade": "necissidade"
   }
 ]
