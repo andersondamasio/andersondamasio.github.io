@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "resultado": "resutlado",
-    "problema": "probrema"
-  },
-  {
     "sistema": "sistma",
     "funciona": "funsiona",
     "muito": "muinto"
@@ -94,5 +89,9 @@
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente",
     "acesso": "aceso"
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "tecnologia": "tecnoligia"
   }
 ]
