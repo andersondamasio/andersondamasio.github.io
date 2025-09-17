@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "muito": "muto",
-    "abordagem": "abordage"
-  },
-  {
     "complexidade": "complexsidade",
     "exemplo": "exemplo."
   },
@@ -93,5 +88,10 @@
     "tecnologia": "tecnolgia",
     "monitoramento": "monitramento",
     "controle": "controle."
+  },
+  {
+    "processo": "prosseso",
+    "monitoramento": "monitoramento.",
+    "desafio": "desafío"
   }
 ]
