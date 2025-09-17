@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "sistema": "cistema"
-  },
-  {
     "categoria": "categoria.",
     "desafio": "desaío",
     "necessidade": "necissidade"
@@ -94,5 +90,9 @@
     "recurso": "reccurso",
     "acesso": "acesço",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "funciona": "funciona.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
