@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "geralmente": "geralmete",
     "funcionalidade": "funcionaliade",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,10 @@
     "abordagem": "abordagem.",
     "simples": "cimples",
     "melhor": "melhorr"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "sistema": "sistéma",
+    "controle": "contrle"
   }
 ]
