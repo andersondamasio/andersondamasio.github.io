@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "exemplo": "exemplo."
-  },
-  {
     "complexidade": "complexidade.",
     "sistema": "cistema"
   },
@@ -93,5 +89,10 @@
     "processo": "prosseso",
     "monitoramento": "monitoramento.",
     "desafio": "desafío"
+  },
+  {
+    "recurso": "reccurso",
+    "acesso": "acesço",
+    "tecnologia": "tecnnologia"
   }
 ]
