@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "processo": "processso",
-    "simples": "cimples"
-  },
-  {
     "acesso": "aceso",
     "desafio": "desafío",
     "estrutura": "estrura"
@@ -94,5 +89,10 @@
     "prioridade": "prioriade",
     "melhor": "melhorr",
     "sistema": "sistéma"
+  },
+  {
+    "consistente": "consiteente",
+    "constante": "constante.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
