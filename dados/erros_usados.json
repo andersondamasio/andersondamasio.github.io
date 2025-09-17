@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "problema": "poblema",
-    "sistema": "cistema"
-  },
-  {
     "sistema": "sistéma",
     "resultado": "resutlado",
     "problema": "probrema"
@@ -94,5 +89,10 @@
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnnologia",
     "melhor": "melhorr"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvimente",
+    "acesso": "aceso"
   }
 ]
