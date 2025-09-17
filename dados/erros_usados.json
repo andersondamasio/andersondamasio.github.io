@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "abordagem": "abordagem.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "prioridade": "prioridade.",
     "muito": "muto",
     "abordagem": "abordage"
@@ -93,5 +88,10 @@
   },
   {
     "parceria": "parceria."
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "monitoramento": "monitramento",
+    "controle": "controle."
   }
 ]
