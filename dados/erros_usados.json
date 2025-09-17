@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "abordagem": "abordagem.",
     "tecnologia": "tecnolgia"
@@ -94,5 +90,8 @@
     "controle": "controle.",
     "arquitetura": "arquitretura",
     "necessidade": "necissidade"
+  },
+  {
+    "parceria": "parceria."
   }
 ]
