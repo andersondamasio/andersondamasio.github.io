@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "proprieade",
-    "armazenamento": "armasenamento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "constante": "constanate",
     "arquitetura": "arquiteturra",
     "sistema": "cistema"
@@ -94,5 +89,10 @@
     "necessidade": "necissidade",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "desenvolvimento": "desenvolvimente",
+    "arquitetura": "arquiteturra"
   }
 ]
