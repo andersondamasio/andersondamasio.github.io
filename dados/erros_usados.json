@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "monitoramento": "monitramento",
-    "conhecimento": "conhescimento"
-  },
-  {
     "simples": "simplis",
     "melhor": "melor",
     "exemplo": "exemplo,"
@@ -93,5 +88,10 @@
     "monitoramento": "monitoramento.",
     "muito": "muiito",
     "dispositivo": "dispotivo"
+  },
+  {
+    "sistema": "sistéma",
+    "exemplo": "exemplo,",
+    "tecnologia": "tecnnologia"
   }
 ]
