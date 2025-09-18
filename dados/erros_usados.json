@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "monitoramento": "monitoramento.",
     "muito": "muiito",
     "dispositivo": "dispotivo"
@@ -92,5 +88,10 @@
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "muito": "muiito",
+    "monitoramento": "monitorameto",
+    "tecnologia": "tecnolgia"
   }
 ]
