@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "problema": "problema.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "prioridade": "prioriade",
     "melhor": "melhorr",
     "sistema": "sistéma"
@@ -93,5 +88,9 @@
     "geralmente": "geralmete",
     "simples": "cimples",
     "exemplo": "exenplo"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "exemplo": "exemplo."
   }
 ]
