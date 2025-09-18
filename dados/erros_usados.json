@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "acesso": "acesso.",
-    "sistema": "sistma"
-  },
-  {
     "dispositivo": "disposotivo"
   },
   {
@@ -90,5 +85,9 @@
   {
     "tecnologia": "tecnnologia",
     "acesso": "acesço"
+  },
+  {
+    "conectado": "conetado",
+    "controle": "controle."
   }
 ]
