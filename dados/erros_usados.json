@@ -1,8 +1,5 @@
 [
   {
-    "parceria": "parceria."
-  },
-  {
     "tecnologia": "tecnolgia",
     "monitoramento": "monitramento",
     "controle": "controle."
@@ -91,5 +88,10 @@
     "resultado": "resultao",
     "propriedade": "propriadade",
     "processo": "processso"
+  },
+  {
+    "suporte": "suporte.",
+    "muito": "muiito",
+    "dispositivo": "dispositivo."
   }
 ]
