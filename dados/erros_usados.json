@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "sistema": "sistéma",
-    "controle": "contrle"
-  },
-  {
     "estrutura": "estrututra",
     "necessidade": "necessidade.",
     "arquitetura": "arquitertura"
@@ -89,5 +84,10 @@
   {
     "recurso": "reccurso",
     "muito": "muto"
+  },
+  {
+    "constante": "constante.",
+    "suporte": "suportte",
+    "tecnologia": "tecnoligia"
   }
 ]
