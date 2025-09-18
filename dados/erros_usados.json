@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "monitoramento": "monitramento",
-    "controle": "controle."
-  },
-  {
     "processo": "prosseso",
     "monitoramento": "monitoramento.",
     "desafio": "desafío"
@@ -93,5 +88,9 @@
     "suporte": "suporte.",
     "muito": "muiito",
     "dispositivo": "dispositivo."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "dispositivo": "dispotivo"
   }
 ]
