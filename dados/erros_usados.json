@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "monitoramento": "monitoramento.",
-    "desafio": "desafío"
-  },
-  {
     "recurso": "reccurso",
     "acesso": "acesço",
     "tecnologia": "tecnnologia"
@@ -92,5 +87,9 @@
   {
     "tecnologia": "tecnoligia",
     "dispositivo": "dispotivo"
+  },
+  {
+    "carregamento": "carregamneto",
+    "arquitetura": "arquitertura"
   }
 ]
