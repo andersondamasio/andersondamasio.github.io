@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "muito": "muiito",
-    "dispositivo": "dispotivo"
-  },
-  {
     "sistema": "sistéma",
     "exemplo": "exemplo,",
     "tecnologia": "tecnnologia"
@@ -93,5 +88,10 @@
     "muito": "muiito",
     "monitoramento": "monitorameto",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "exemplo": "exemplo,",
+    "prioridade": "prioriade"
   }
 ]
