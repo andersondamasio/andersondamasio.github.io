@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvimente",
-    "acesso": "aceso"
-  },
-  {
     "armazenamento": "armazenamentto",
     "tecnologia": "tecnoligia"
   },
@@ -92,5 +87,10 @@
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia",
     "monitoramento": "monitramento"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquiteturra"
   }
 ]
