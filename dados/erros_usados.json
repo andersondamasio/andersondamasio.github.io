@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "muito": "muto"
-  },
-  {
     "constante": "constante.",
     "suporte": "suportte",
     "tecnologia": "tecnoligia"
@@ -91,5 +87,10 @@
     "melhor": "melhorr",
     "desafio": "desafiu",
     "armazenamento": "armasenamento"
+  },
+  {
+    "componente": "componentte",
+    "melhor": "melor",
+    "simples": "simlpes"
   }
 ]
