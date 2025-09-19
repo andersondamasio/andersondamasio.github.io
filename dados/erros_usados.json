@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "abordagem": "abordajem",
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra"
@@ -88,5 +84,9 @@
     "simples": "cimples",
     "processo": "proceso",
     "sistema": "sistéma"
+  },
+  {
+    "controle": "contrle",
+    "acesso": "aceso"
   }
 ]
