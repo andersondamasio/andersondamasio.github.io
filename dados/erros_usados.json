@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "dispositivo": "dispotivo"
-  },
-  {
     "carregamento": "carregamneto",
     "arquitetura": "arquitertura"
   },
@@ -88,5 +84,9 @@
     "gerenciamento": "gerenciamente",
     "desafio": "desafiu",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "melhor": "melhorr"
   }
 ]
