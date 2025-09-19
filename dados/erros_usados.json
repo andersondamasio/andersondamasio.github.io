@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquitertura",
     "monitoramento": "monitramento",
     "melhor": "melhorr"
@@ -93,5 +89,10 @@
     "tecnologia": "tecnoligia",
     "melhor": "melor",
     "muito": "muiito"
+  },
+  {
+    "constante": "constanate",
+    "internet": "internat",
+    "funciona": "funsiona"
   }
 ]
