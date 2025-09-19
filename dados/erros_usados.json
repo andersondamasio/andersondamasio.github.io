@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "propriedade": "propriadade",
-    "processo": "processso"
-  },
-  {
     "suporte": "suporte.",
     "muito": "muiito",
     "dispositivo": "dispositivo."
@@ -88,5 +83,10 @@
     "muito": "muiito",
     "processo": "prosseso",
     "estrutura": "estrura"
+  },
+  {
+    "abordagem": "abordajem",
+    "armazenamento": "armazanamento",
+    "personalizado": "personalizdo"
   }
 ]
