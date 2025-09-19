@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conetado",
-    "controle": "controle."
-  },
-  {
     "funciona": "funsiona",
     "tecnologia": "tecnnologia"
   },
@@ -91,5 +87,8 @@
     "parceria": "parceriaa",
     "funciona": "funsiona",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "armazenamento": "armazanamento"
   }
 ]
