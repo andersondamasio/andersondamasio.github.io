@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralmete",
-    "simples": "cimples",
-    "exemplo": "exenplo"
-  },
-  {
     "tecnologia": "tecnolgia",
     "exemplo": "exemplo."
   },
@@ -87,5 +82,10 @@
     "necessidade": "necissidade",
     "operacional": "operaciona",
     "internet": "internat"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "arquitetura": "arquiteturra",
+    "monitoramento": "monitoramento."
   }
 ]
