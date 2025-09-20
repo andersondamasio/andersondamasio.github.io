@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "muito": "muinto",
-    "recurso": "recusso"
-  },
-  {
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvimente",
     "parceria": "parceria."
@@ -90,5 +85,10 @@
     "acesso": "acesso.",
     "sistema": "cistema",
     "processo": "proceso"
+  },
+  {
+    "muito": "muinto",
+    "sistema": "sistéma",
+    "funciona": "funciona,"
   }
 ]

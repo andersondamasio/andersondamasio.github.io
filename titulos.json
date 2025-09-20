@@ -28154,5 +28154,14 @@
     "dataFonte": "2025-09-20T16:00:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/09/20/how-phoebe-gates-and-sophia-kianni-used-gen-z-methods-to-raise-8m-for-phia/"
+  },
+  {
+    "titulo": "A revolução do Node.js nas bordas da nuvem",
+    "noticiaOriginal": "Cloudflare Adds Node.js HTTP Servers to Cloudflare Workers",
+    "url": "artigos/programacao/a-revolucao-do-node-js-nas-bordas-da-nuvem.html",
+    "data": "2025-09-20T17:14:40.112Z",
+    "dataFonte": "2025-09-20T14:26:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/09/cloudflare-node-http-workers/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
