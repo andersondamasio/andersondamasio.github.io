@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "simples": "cimples",
-    "internet": "internert"
-  },
-  {
     "simples": "simplis",
     "muito": "muinto",
     "recurso": "recusso"
@@ -90,5 +85,10 @@
     "virtual": "virtal",
     "sistema": "sistéma",
     "suporte": "suporte."
+  },
+  {
+    "acesso": "acesso.",
+    "sistema": "cistema",
+    "processo": "proceso"
   }
 ]
