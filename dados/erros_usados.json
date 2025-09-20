@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componentte",
-    "melhor": "melor",
-    "simples": "simlpes"
-  },
-  {
     "dispositivo": "dispotivo",
     "processo": "proceso",
     "arquitetura": "arquitertura"
@@ -92,5 +87,10 @@
     "abordagem": "abordage",
     "exemplo": "exemplo,",
     "melhor": "melhorr"
+  },
+  {
+    "resultado": "resutlado",
+    "desenvolvimento": "desenvolvmento",
+    "dispositivo": "dispotivo"
   }
 ]
