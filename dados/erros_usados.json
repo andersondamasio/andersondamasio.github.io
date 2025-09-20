@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "proprieade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "funciona": "funciona.",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia"
@@ -90,5 +86,10 @@
     "desafio": "desafío",
     "sistema": "sistma",
     "arquitetura": "arquitertura"
+  },
+  {
+    "simples": "simlpes",
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquiteturra"
   }
 ]
