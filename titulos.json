@@ -28019,5 +28019,14 @@
     "dataFonte": "2025-09-20T00:34:04.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.bbc.com/news/articles/c4g7l7yl832o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "A vulnerabilidade dos passkeys: como proteger sua autenticação",
+    "noticiaOriginal": "Your passkeys could be vulnerable to attack, and everyone - including you - must act",
+    "url": "artigos/seguranca/a-vulnerabilidade-dos-passkeys-como-proteger-sua-autenticacao.html",
+    "data": "2025-09-20T02:54:12.984Z",
+    "dataFonte": "2025-09-20T02:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.zdnet.com/article/your-passkeys-could-be-vulnerable-to-attack-and-everyone-including-you-must-act/"
   }
 ]
