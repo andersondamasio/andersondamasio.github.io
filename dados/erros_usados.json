@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "sistema": "sistma"
-  },
-  {
     "propriedade": "proprieade",
     "tecnologia": "tecnolgia"
   },
@@ -89,5 +85,10 @@
   {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "desafio": "desafío",
+    "sistema": "sistma",
+    "arquitetura": "arquitertura"
   }
 ]
