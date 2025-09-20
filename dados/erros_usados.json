@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "desafio": "desafiu",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "melhor": "melhorr"
   },
@@ -92,5 +87,10 @@
   {
     "processo": "proceso",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "propriedade": "propriadade",
+    "arquitetura": "arquitretura",
+    "controle": "contrle"
   }
 ]
