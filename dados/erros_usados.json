@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "funciona": "funciona,",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "armazenamento": "armasenamento",
     "simples": "cimples",
     "internet": "internert"
@@ -90,5 +85,10 @@
   {
     "sistema": "cistema",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "virtual": "virtal",
+    "sistema": "sistéma",
+    "suporte": "suporte."
   }
 ]
