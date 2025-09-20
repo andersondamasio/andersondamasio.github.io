@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "desenvolvimento": "desenvolvimente",
-    "parceria": "parceria."
-  },
-  {
     "exemplo": "exemplo.",
     "necessidade": "necissidade",
     "arquitetura": "arquitretura"
@@ -90,5 +85,10 @@
     "muito": "muinto",
     "sistema": "sistéma",
     "funciona": "funciona,"
+  },
+  {
+    "constante": "constate",
+    "utilizado": "utilizdo",
+    "virtual": "virtal"
   }
 ]
