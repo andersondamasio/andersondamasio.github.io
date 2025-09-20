@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "processo": "proceso",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnoligia",
     "melhor": "melor",
     "muito": "muiito"
@@ -92,5 +87,10 @@
     "resultado": "resutlado",
     "desenvolvimento": "desenvolvmento",
     "dispositivo": "dispotivo"
+  },
+  {
+    "muito": "muto",
+    "exemplo": "exenplo",
+    "sistema": "cistema"
   }
 ]
