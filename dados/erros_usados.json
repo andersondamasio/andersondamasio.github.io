@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "funcionalidade": "funcionaliadde",
-    "suporte": "suprte"
-  },
-  {
     "abordagem": "abordage",
     "exemplo": "exemplo,",
     "melhor": "melhorr"
@@ -92,5 +87,10 @@
   {
     "carregamento": "carregamento.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "problema": "problema.",
+    "utilizado": "utilizdo.",
+    "acesso": "acesso."
   }
 ]
