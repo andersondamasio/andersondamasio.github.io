@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "prioridade": "prioriade",
-    "geralmente": "geralment"
-  },
-  {
     "constante": "constate",
     "desenvolvimento": "desenvolvimente",
     "exemplo": "exemplo."
@@ -93,5 +88,10 @@
     "estrutura": "estrura",
     "muito": "muto",
     "monitoramento": "monitramento"
+  },
+  {
+    "funciona": "funsiona",
+    "complexidade": "complezidade",
+    "simples": "simlpes"
   }
 ]
