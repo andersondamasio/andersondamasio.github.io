@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "carregamento": "carregamento.",
-    "monitoramento": "monitoramento."
-  },
-  {
     "problema": "poblema",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +85,10 @@
     "constante": "constate",
     "desenvolvimento": "desenvolvimente",
     "exemplo": "exemplo."
+  },
+  {
+    "abordagem": "abordajem",
+    "exemplo": "exenplo",
+    "monitoramento": "monitramento"
   }
 ]
