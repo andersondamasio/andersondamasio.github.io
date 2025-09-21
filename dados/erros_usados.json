@@ -1,9 +1,5 @@
 [
   {
-    "computador": "computador.",
-    "suporte": "suportte"
-  },
-  {
     "dispositivo": "disposotivo",
     "funcionalidade": "funcionaliadde",
     "suporte": "suprte"
@@ -92,5 +88,9 @@
     "sistema": "cistema",
     "tecnologia": "tecnoligia",
     "processo": "prosseso"
+  },
+  {
+    "carregamento": "carregamento.",
+    "tecnologia": "tecnnologia"
   }
 ]
