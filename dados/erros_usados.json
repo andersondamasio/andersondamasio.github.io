@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "sistema": "sistéma",
-    "suporte": "suporte."
-  },
-  {
     "acesso": "acesso.",
     "sistema": "cistema",
     "processo": "proceso"
@@ -93,5 +88,9 @@
   {
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
+  },
+  {
+    "necessidade": "necissidade",
+    "dispositivo": "disposotivo"
   }
 ]
