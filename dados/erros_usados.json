@@ -1,8 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento"
-  },
-  {
     "internet": "internete",
     "prioridade": "prioriade",
     "geralmente": "geralment"
@@ -91,5 +88,10 @@
     "suporte": "suporte.",
     "controle": "controlle",
     "arquitetura": "arquitretura"
+  },
+  {
+    "estrutura": "estrura",
+    "muito": "muto",
+    "monitoramento": "monitramento"
   }
 ]
