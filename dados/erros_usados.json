@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "desenvolvimento": "desenvolvmento",
-    "dispositivo": "dispotivo"
-  },
-  {
     "muito": "muto",
     "exemplo": "exenplo",
     "sistema": "cistema"
@@ -92,5 +87,10 @@
     "funcionalidade": "funcionaliade",
     "acesso": "acesço",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "melhor": "melor",
+    "monitoramento": "monitorameto"
   }
 ]
