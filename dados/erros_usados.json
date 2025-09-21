@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "propriadade",
-    "arquitetura": "arquitretura",
-    "controle": "contrle"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "carregamento": "carregamento.",
     "monitoramento": "monitoramento."
@@ -90,5 +85,10 @@
     "internet": "internete",
     "prioridade": "prioriade",
     "geralmente": "geralment"
+  },
+  {
+    "constante": "constate",
+    "desenvolvimento": "desenvolvimente",
+    "exemplo": "exemplo."
   }
 ]
