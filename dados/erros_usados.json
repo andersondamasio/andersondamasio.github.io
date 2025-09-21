@@ -1,9 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "conectado": "conetado",
     "funcionalidade": "funcionaliadde"
   },
@@ -90,5 +86,10 @@
     "abordagem": "abordajem",
     "exemplo": "exenplo",
     "monitoramento": "monitramento"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "sistema": "sistéma",
+    "monitoramento": "monitorameto"
   }
 ]
