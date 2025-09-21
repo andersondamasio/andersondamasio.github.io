@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conetado",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "computador": "computador.",
     "suporte": "suportte"
   },
@@ -91,5 +87,10 @@
     "armazenamento": "armasenamento",
     "sistema": "sistéma",
     "monitoramento": "monitorameto"
+  },
+  {
+    "sistema": "cistema",
+    "tecnologia": "tecnoligia",
+    "processo": "prosseso"
   }
 ]
