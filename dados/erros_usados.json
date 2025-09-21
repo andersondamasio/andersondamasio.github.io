@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "virtual": "virtal",
     "sistema": "sistéma",
     "suporte": "suporte."
@@ -93,5 +89,9 @@
     "tecnologia": "tecnolgia",
     "constante": "constate",
     "muito": "muiito"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exenplo"
   }
 ]
