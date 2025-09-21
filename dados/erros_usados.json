@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "sistema": "cistema",
-    "processo": "proceso"
-  },
-  {
     "muito": "muinto",
     "sistema": "sistéma",
     "funciona": "funciona,"
@@ -92,5 +87,10 @@
   {
     "necessidade": "necissidade",
     "dispositivo": "disposotivo"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "abordagem": "abordage",
+    "tecnologia": "tecnoligia"
   }
 ]
