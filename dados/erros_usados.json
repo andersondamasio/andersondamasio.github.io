@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "monitoramento": "monitramento",
-    "prioridade": "prioriade."
-  },
-  {
     "parceria": "parcería",
     "desafio": "desafiu"
   },
@@ -90,5 +85,10 @@
   {
     "sistema": "sistéma",
     "acesso": "acesso."
+  },
+  {
+    "exemplo": "exemplo.",
+    "abordagem": "abordajem",
+    "tecnologia": "tecnolgia"
   }
 ]
