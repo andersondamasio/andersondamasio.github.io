@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "sistema": "sistéma",
-    "monitoramento": "monitorameto"
-  },
-  {
     "sistema": "cistema",
     "tecnologia": "tecnoligia",
     "processo": "prosseso"
@@ -92,5 +87,9 @@
     "conhecimento": "conhescimento",
     "funciona": "funciona,",
     "necessidade": "nescessidade"
+  },
+  {
+    "sistema": "sistma",
+    "arquitetura": "arquitertura"
   }
 ]
