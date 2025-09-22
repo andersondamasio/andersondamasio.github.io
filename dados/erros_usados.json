@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "problema": "problema.",
     "utilizado": "utilizdo.",
     "acesso": "acesso."
@@ -91,5 +87,10 @@
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "processo": "proceso",
+    "tecnologia": "tecnoligia",
+    "acesso": "acesço"
   }
 ]
