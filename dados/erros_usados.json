@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotina.",
-    "sistema": "sistéma",
-    "melhor": "melhorr"
-  },
-  {
     "tecnologia": "tecnolgia",
     "constante": "constate",
     "muito": "muiito"
@@ -92,5 +87,10 @@
     "arquitetura": "arquitertura",
     "sistema": "sistéma",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "melhor": "melhorr",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnnologia"
   }
 ]
