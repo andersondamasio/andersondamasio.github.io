@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "utilizado": "utilizdo.",
-    "acesso": "acesso."
-  },
-  {
     "funcionalidade": "funcionaliade",
     "acesso": "acesço",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,10 @@
     "processo": "proceso",
     "tecnologia": "tecnoligia",
     "acesso": "acesço"
+  },
+  {
+    "simples": "simlpes",
+    "necessidade": "necissidade",
+    "processo": "processso"
   }
 ]
