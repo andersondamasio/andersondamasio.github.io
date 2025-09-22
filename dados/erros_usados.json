@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "controle": "controlle",
-    "arquitetura": "arquitretura"
-  },
-  {
     "estrutura": "estrura",
     "muito": "muto",
     "monitoramento": "monitramento"
@@ -92,5 +87,9 @@
     "constante": "constate",
     "sistema": "cistema",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "abordagem": "abordage",
+    "sistema": "sistéma"
   }
 ]
