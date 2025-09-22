@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "constante": "constate",
-    "muito": "muiito"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
   },
@@ -92,5 +87,9 @@
     "melhor": "melhorr",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "simples": "simlpes"
   }
 ]
