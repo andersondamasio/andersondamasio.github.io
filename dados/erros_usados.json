@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "dispositivo": "disposotivo"
-  },
-  {
     "arquitetura": "arquiteturra",
     "abordagem": "abordage",
     "tecnologia": "tecnoligia"
@@ -92,5 +88,8 @@
     "consistente": "consistente.",
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "dispositivo": "disposotivo"
   }
 ]
