@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "virtual": "virtual.",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "paralelo": "paraleloo",
     "muito": "muto"
   },
@@ -89,5 +84,9 @@
   {
     "armazenamento": "armazenamentto",
     "virtual": "virtuaal"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "arquitetura": "arquiteturra"
   }
 ]
