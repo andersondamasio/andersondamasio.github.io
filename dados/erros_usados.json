@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "funcionalidade": "funcionaliadde",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "constante": "constate",
     "sistema": "cistema",
     "tecnologia": "tecnnologia"
@@ -90,5 +85,10 @@
     "arquitetura": "arquiteturra",
     "abordagem": "abordagem.",
     "sistema": "cistema"
+  },
+  {
+    "desafio": "desafiu",
+    "processo": "prosseso",
+    "tecnologia": "tecnoligia"
   }
 ]
