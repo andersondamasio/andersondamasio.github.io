@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "sistéma",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "melhor": "melhorr",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia"
@@ -90,5 +85,9 @@
     "rotina": "rotina.",
     "funcionalidade": "funcionaliadde",
     "sistema": "sistma"
+  },
+  {
+    "recurso": "reccurso",
+    "monitoramento": "monitorameto"
   }
 ]
