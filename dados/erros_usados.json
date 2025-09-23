@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internert",
-    "arquitetura": "arquitretura"
-  },
-  {
     "arquitetura": "arquitertura",
     "abordagem": "abordage",
     "tecnologia": "tecnnologia"
@@ -88,5 +84,10 @@
     "dispositivo": "dispositivo.",
     "muito": "muinto",
     "arquitetura": "arquitretura"
+  },
+  {
+    "suporte": "suportte",
+    "complexidade": "complexidade.",
+    "arquitetura": "arquitertura"
   }
 ]
