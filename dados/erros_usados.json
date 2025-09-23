@@ -1,8 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo"
-  },
-  {
     "sistema": "sistéma",
     "acesso": "acesso."
   },
@@ -89,5 +86,9 @@
     "necessidade": "nescessidade",
     "conhecimento": "conhecimento.",
     "resultado": "resultadoo"
+  },
+  {
+    "personalizado": "personalizad",
+    "controle": "controle."
   }
 ]
