@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "abordagem": "abordage",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquiteturra",
     "funcionalidade": "funcionalidade."
   },
@@ -89,5 +84,9 @@
     "suporte": "suportte",
     "complexidade": "complexidade.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquiteturra"
   }
 ]
