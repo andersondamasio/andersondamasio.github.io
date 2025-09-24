@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "exemplo": "exenplo"
-  },
-  {
     "armazenamento": "armazenamentto",
     "virtual": "virtuaal"
   },
@@ -90,5 +86,9 @@
   {
     "suporte": "suprte",
     "sistema": "sistéma"
+  },
+  {
+    "componente": "componentte",
+    "tecnologia": "tecnolgia"
   }
 ]
