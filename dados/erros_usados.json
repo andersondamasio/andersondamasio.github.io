@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "utilizado": "utilizdo",
     "constante": "constate",
     "tecnologia": "tecnnologia"
@@ -91,5 +87,10 @@
     "monitoramento": "monitoramento.",
     "desenvolvimento": "desenvolvimente",
     "funciona": "funciona,"
+  },
+  {
+    "resultado": "resultao",
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquitretura"
   }
 ]
