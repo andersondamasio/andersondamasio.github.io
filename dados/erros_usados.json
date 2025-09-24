@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "virtual": "virtuaal"
-  },
-  {
     "dispositivo": "dispotivo",
     "arquitetura": "arquiteturra"
   },
@@ -90,5 +86,10 @@
   {
     "componente": "componentte",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "desenvolvimento": "desenvolvimente",
+    "funciona": "funciona,"
   }
 ]
