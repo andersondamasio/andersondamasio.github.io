@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrura",
-    "arquitetura": "arquitertura"
-  },
-  {
     "necessidade": "nescessidade",
     "conhecimento": "conhecimento.",
     "resultado": "resultadoo"
@@ -89,5 +85,10 @@
     "recurso": "reccurso",
     "funcionalidade": "funcionaliadde",
     "mensagem": "mensagen"
+  },
+  {
+    "controle": "controle.",
+    "suporte": "suportte",
+    "tecnologia": "tecnoligia"
   }
 ]
