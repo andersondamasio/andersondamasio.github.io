@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralmete",
-    "processo": "processso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "estrutura": "estrura",
     "arquitetura": "arquitertura"
   },
@@ -89,5 +84,10 @@
     "sistema": "cistema",
     "tecnologia": "tecnolgia",
     "monitoramento": "monitoramento."
+  },
+  {
+    "recurso": "reccurso",
+    "funcionalidade": "funcionaliadde",
+    "mensagem": "mensagen"
   }
 ]
