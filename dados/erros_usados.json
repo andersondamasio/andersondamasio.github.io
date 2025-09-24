@@ -1,9 +1,5 @@
 [
   {
-    "personalizado": "personalizad",
-    "controle": "controle."
-  },
-  {
     "dispositivo": "dispositivo.",
     "simples": "simlpes"
   },
@@ -90,5 +86,9 @@
     "funciona": "funciona.",
     "tecnologia": "tecnnologia",
     "suporte": "suporte."
+  },
+  {
+    "necessidade": "necessidade.",
+    "simples": "simplis"
   }
 ]
