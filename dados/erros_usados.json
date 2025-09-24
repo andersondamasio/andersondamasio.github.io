@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "monitoramento": "monitorameto"
-  },
-  {
     "geralmente": "geralmete",
     "processo": "processso",
     "tecnologia": "tecnoligia"
@@ -88,5 +84,10 @@
   {
     "exemplo": "exenplo",
     "arquitetura": "arquitretura"
+  },
+  {
+    "sistema": "cistema",
+    "tecnologia": "tecnolgia",
+    "monitoramento": "monitoramento."
   }
 ]
