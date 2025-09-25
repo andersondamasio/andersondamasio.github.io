@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "conhecimento": "conhescimento",
     "abordagem": "abordajem"
   },
@@ -89,5 +85,10 @@
   {
     "virtual": "virtuaal",
     "utilizado": "utilizdo"
+  },
+  {
+    "exemplo": "exemplo,",
+    "melhor": "melhorr",
+    "funciona": "funsiona"
   }
 ]
