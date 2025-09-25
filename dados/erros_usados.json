@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "acesso": "acesço"
-  },
-  {
     "carregamento": "carregamento.",
     "internet": "internete",
     "utilizado": "utilizdo"
@@ -89,5 +85,10 @@
     "simples": "simplis",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "constante": "constate",
+    "sistema": "sistma",
+    "acesso": "acesso."
   }
 ]
