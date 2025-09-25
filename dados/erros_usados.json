@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "abordagem": "abordajem"
-  },
-  {
     "conhecimento": "conhecimento.",
     "problema": "problema.",
     "suporte": "suprte"
@@ -90,5 +86,9 @@
     "exemplo": "exemplo,",
     "melhor": "melhorr",
     "funciona": "funsiona"
+  },
+  {
+    "monitoramento": "monitramento",
+    "arquitetura": "arquitertura"
   }
 ]
