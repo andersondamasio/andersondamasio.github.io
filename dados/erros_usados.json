@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "internet": "internete",
-    "utilizado": "utilizdo"
-  },
-  {
     "controle": "controlle",
     "desenvolvimento": "desenvolvmento",
     "resultado": "resultadoo"
@@ -90,5 +85,9 @@
     "constante": "constate",
     "sistema": "sistma",
     "acesso": "acesso."
+  },
+  {
+    "funciona": "funciona.",
+    "simples": "simplis"
   }
 ]
