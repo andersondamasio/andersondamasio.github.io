@@ -29162,5 +29162,14 @@
     "dataFonte": "2025-09-25T17:00:38.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.bbc.com/news/articles/c62ldyvpwv9o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "A privacidade na era da IA: VaultGemma e a nova fronteira",
+    "noticiaOriginal": "Google Introduces VaultGemma: An Experimental Differentially Private LLM",
+    "url": "artigos/inteligencia-artificial/a-privacidade-na-era-da-ia-vaultgemma-e-a-nova-fronteira.html",
+    "data": "2025-09-25T18:29:36.853Z",
+    "dataFonte": "2025-09-25T18:00:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://www.infoq.com/news/2025/09/google-differential-privacy-llm/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
