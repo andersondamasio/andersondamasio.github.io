@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "sistema": "sistéma"
-  },
-  {
     "componente": "componentte",
     "tecnologia": "tecnolgia"
   },
@@ -87,5 +83,10 @@
   {
     "recurso": "recuro",
     "complexidade": "complexidade."
+  },
+  {
+    "sistema": "sistéma",
+    "arquitetura": "arquitretura",
+    "desenvolvimento": "desenvolmento"
   }
 ]
