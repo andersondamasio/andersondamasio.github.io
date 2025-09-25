@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "geralmente": "geralment",
-    "estrutura": "estrtura"
-  },
-  {
     "dispositivo": "dispotivo",
     "arquitetura": "arquiteturra"
   },
@@ -90,5 +85,9 @@
     "geralmente": "geralmemte",
     "controle": "controlle",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "virtual": "virtuaal",
+    "utilizado": "utilizdo"
   }
 ]
