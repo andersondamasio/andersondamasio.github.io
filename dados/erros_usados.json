@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "simples": "simplis"
-  },
-  {
     "problema": "probrema",
     "tecnologia": "tecnolgia",
     "abordagem": "abordagem."
@@ -90,5 +86,8 @@
     "controle": "controlle",
     "desenvolvimento": "desenvolvmento",
     "resultado": "resultadoo"
+  },
+  {
+    "armazenamento": "armazanamento"
   }
 ]
