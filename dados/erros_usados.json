@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "suporte": "suportte",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funciona": "funciona.",
     "tecnologia": "tecnnologia",
     "suporte": "suporte."
@@ -90,5 +85,10 @@
   {
     "exemplo": "exemplo,",
     "acesso": "acesço"
+  },
+  {
+    "carregamento": "carregamento.",
+    "internet": "internete",
+    "utilizado": "utilizdo"
   }
 ]
