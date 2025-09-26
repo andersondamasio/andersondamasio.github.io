@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "problema": "probrema",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "monitoramento": "monitramento",
     "prioridade": "prioridade.",
     "arquitetura": "arquitertura"
@@ -93,5 +88,9 @@
   {
     "constante": "constanate",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "simples": "cimples",
+    "gerenciamento": "gerenciamente"
   }
 ]
