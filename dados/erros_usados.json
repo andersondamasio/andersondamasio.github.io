@@ -1,8 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento"
-  },
-  {
     "sistema": "sistéma",
     "simples": "simlpes"
   },
@@ -89,5 +86,10 @@
     "processo": "prosseso",
     "abordagem": "abordage",
     "constante": "constanate"
+  },
+  {
+    "desafio": "desafiu",
+    "problema": "probrema",
+    "tecnologia": "tecnnologia"
   }
 ]
