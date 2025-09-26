@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "simples": "simlpes"
-  },
-  {
     "muito": "muto",
     "acesso": "aceso",
     "tecnologia": "tecnnologia"
@@ -91,5 +87,10 @@
     "desafio": "desafiu",
     "problema": "probrema",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "monitoramento": "monitramento",
+    "prioridade": "prioridade.",
+    "arquitetura": "arquitertura"
   }
 ]
