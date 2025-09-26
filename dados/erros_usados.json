@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "complexidade": "complexidade."
-  },
-  {
     "sistema": "sistéma",
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolmento"
@@ -92,5 +88,9 @@
     "necessidade": "nescessidade",
     "tecnologia": "tecnnologia",
     "prioridade": "prioriade"
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "exemplo": "exemplo,"
   }
 ]
