@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "sistema": "sistma",
-    "acesso": "acesso."
-  },
-  {
     "funciona": "funciona.",
     "simples": "simplis"
   },
@@ -94,5 +89,9 @@
     "simples": "cimples",
     "sistema": "sistma",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "exemplo": "exemplo.",
+    "armazenamento": "armazanamento"
   }
 ]
