@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "arquitetura": "arquitretura",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "suporte": "suportte",
     "exemplo": "exenplo"
@@ -92,5 +87,10 @@
   {
     "conhecimento": "conhecimeto",
     "exemplo": "exemplo,"
+  },
+  {
+    "operacional": "operacionl",
+    "gerenciamento": "gerenciamnto",
+    "dispositivo": "dispotivo"
   }
 ]
