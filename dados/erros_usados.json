@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muto",
-    "acesso": "aceso",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "recurso": "recuro",
     "complexidade": "complexidade."
   },
@@ -92,5 +87,10 @@
     "monitoramento": "monitramento",
     "prioridade": "prioridade.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "necessidade": "nescessidade",
+    "tecnologia": "tecnnologia",
+    "prioridade": "prioriade"
   }
 ]
