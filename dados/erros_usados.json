@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "abordagem": "abordagem.",
     "tecnologia": "tecnoligia"
   },
@@ -93,5 +89,10 @@
     "virtual": "virtuaal",
     "funcionalidade": "funcionalidade.",
     "exemplo": "exemplo,"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "arquitetura": "arquitretura",
+    "conhecimento": "conhescimento"
   }
 ]
