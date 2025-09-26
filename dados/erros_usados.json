@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralmemte",
-    "controle": "controlle",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "virtual": "virtuaal",
     "utilizado": "utilizdo"
   },
@@ -92,5 +87,10 @@
     "arquitetura": "arquitertura",
     "processo": "prosseso",
     "melhor": "melor"
+  },
+  {
+    "abordagem": "abordage",
+    "arquitetura": "arquiteturra",
+    "funcionalidade": "funcionalidade."
   }
 ]
