@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolmento",
-    "melhor": "melor"
-  },
-  {
     "funciona": "funciona.",
     "prioridade": "prioriade.",
     "sistema": "sistma"
@@ -92,5 +87,10 @@
     "carregamento": "carregameno",
     "suporte": "suportte",
     "sistema": "cistema"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolvmento",
+    "funciona": "funsiona"
   }
 ]
