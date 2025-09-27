@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "sistema": "sistma",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "exemplo": "exemplo.",
     "armazenamento": "armazanamento"
   },
@@ -85,5 +80,10 @@
     "processo": "prosseso",
     "funcionalidade": "funcionaliade",
     "acesso": "acesso."
+  },
+  {
+    "abordagem": "abordagem.",
+    "controle": "controlle",
+    "exemplo": "exemplo,"
   }
 ]
