@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "arquitetura": "arquiteturra",
-    "monitoramento": "monitoramento."
-  },
-  {
     "constante": "constanate",
     "desenvolvimento": "desenvolmento"
   },
@@ -86,5 +81,10 @@
     "monitoramento": "monitoramento.",
     "necessidade": "necissidade",
     "exemplo": "exenplo"
+  },
+  {
+    "exemplo": "exemplo.",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia"
   }
 ]
