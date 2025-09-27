@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "simples": "cimples",
     "gerenciamento": "gerenciamente"
   },
@@ -86,5 +82,10 @@
     "exemplo": "exemplo.",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "recurso": "reccurso",
+    "tecnologia": "tecnnologia",
+    "funcionalidade": "funcionaliadde"
   }
 ]
