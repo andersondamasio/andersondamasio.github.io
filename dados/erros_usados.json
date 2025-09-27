@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "processo": "proceso",
-    "melhor": "melhorr"
-  },
-  {
     "arquitetura": "arquitertura",
     "processo": "prosseso",
     "melhor": "melor"
@@ -87,5 +82,10 @@
   {
     "dispositivo": "dispositivo.",
     "melhor": "melhorr"
+  },
+  {
+    "parceria": "parcería",
+    "desafio": "desafiu",
+    "tecnologia": "tecnoligia"
   }
 ]
