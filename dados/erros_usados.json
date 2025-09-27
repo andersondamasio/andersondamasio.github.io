@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "funcionalidade": "funcionalidade.",
-    "exemplo": "exemplo,"
-  },
-  {
     "armazenamento": "armazanamento",
     "arquitetura": "arquitretura",
     "conhecimento": "conhescimento"
@@ -85,5 +80,10 @@
     "rotina": "rotna",
     "computador": "computador,",
     "componente": "componete"
+  },
+  {
+    "suporte": "suporte.",
+    "controle": "contrle",
+    "melhor": "melor"
   }
 ]
