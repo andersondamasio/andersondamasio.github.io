@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "gerenciamento": "gerenciamnto",
-    "dispositivo": "dispotivo"
-  },
-  {
     "muito": "muinto",
     "prioridade": "prioriade",
     "rotina": "rotína"
@@ -92,5 +87,9 @@
     "controle": "controle.",
     "internet": "internete",
     "muito": "muinto"
+  },
+  {
+    "recurso": "recuro",
+    "tecnologia": "tecnoligia"
   }
 ]
