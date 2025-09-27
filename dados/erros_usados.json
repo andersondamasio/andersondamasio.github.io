@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "virtual": "virtuaal",
     "funcionalidade": "funcionalidade.",
     "exemplo": "exemplo,"
@@ -85,5 +80,10 @@
   {
     "funciona": "funciona.",
     "dispositivo": "dispotivo"
+  },
+  {
+    "rotina": "rotna",
+    "computador": "computador,",
+    "componente": "componete"
   }
 ]
