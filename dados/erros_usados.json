@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "arquitetura": "arquitretura",
-    "conhecimento": "conhescimento"
-  },
-  {
     "melhor": "melor",
     "monitoramento": "monitoramento."
   },
@@ -85,5 +80,9 @@
     "suporte": "suporte.",
     "controle": "contrle",
     "melhor": "melor"
+  },
+  {
+    "operacional": "operacional.",
+    "gerenciamento": "gerenciamente"
   }
 ]
