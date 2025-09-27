@@ -1,9 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "gerenciamento": "gerenciamente"
-  },
-  {
     "muito": "muto",
     "exemplo": "exenplo"
   },
@@ -87,5 +83,10 @@
     "recurso": "reccurso",
     "tecnologia": "tecnnologia",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "constante": "constante.",
+    "mensagem": "menssagen",
+    "tecnologia": "tecnolgia"
   }
 ]
