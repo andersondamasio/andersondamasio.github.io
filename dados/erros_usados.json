@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "processo": "prosseso",
-    "melhor": "melor"
-  },
-  {
     "abordagem": "abordage",
     "arquitetura": "arquiteturra",
     "funcionalidade": "funcionalidade."
@@ -87,5 +82,9 @@
     "parceria": "parcería",
     "desafio": "desafiu",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "complexidade": "complezidade",
+    "muito": "muto"
   }
 ]
