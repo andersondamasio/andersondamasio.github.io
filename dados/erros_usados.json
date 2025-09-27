@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "suporte": "suportte",
-    "sistema": "cistema"
-  },
-  {
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvmento",
     "funciona": "funsiona"
@@ -89,5 +84,9 @@
   },
   {
     "tecnologia": "tecnnologia"
+  },
+  {
+    "necessidade": "necissidade",
+    "muito": "muto"
   }
 ]
