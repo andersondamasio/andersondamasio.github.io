@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "recurso": "reccurso",
     "tecnologia": "tecnnologia",
     "funcionalidade": "funcionaliadde"
@@ -91,5 +86,9 @@
     "controle": "controlle",
     "gerenciamento": "gerenciamneto",
     "muito": "muinto"
+  },
+  {
+    "monitoramento": "monitramento",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
