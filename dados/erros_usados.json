@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "desafio": "desafiu",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "complexidade": "complezidade",
     "muito": "muto"
   },
@@ -92,5 +87,10 @@
     "funciona": "funsiona",
     "suporte": "suportte",
     "problema": "probrema"
+  },
+  {
+    "resultado": "resultadoo",
+    "simples": "simlpes",
+    "melhor": "melhorr"
   }
 ]
