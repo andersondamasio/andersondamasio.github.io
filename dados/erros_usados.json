@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "exemplo": "exemplo,"
-  },
-  {
     "processo": "prosseso",
     "funcionalidade": "funcionaliade",
     "acesso": "acesso."
@@ -92,5 +88,9 @@
     "rotina": "rotna",
     "simples": "simlpes",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "necessidade": "nescessidade"
   }
 ]
