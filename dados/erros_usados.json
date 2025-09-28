@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "tecnologia": "tecnnologia",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "constante": "constante.",
     "mensagem": "menssagen",
     "tecnologia": "tecnolgia"
@@ -90,5 +85,9 @@
   {
     "monitoramento": "monitramento",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "simples": "simlpes",
+    "tecnologia": "tecnnologia"
   }
 ]
