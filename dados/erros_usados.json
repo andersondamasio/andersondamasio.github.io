@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "dispositivo": "dispotivo"
-  },
-  {
     "rotina": "rotna",
     "computador": "computador,",
     "componente": "componete"
@@ -92,5 +88,10 @@
   {
     "prioridade": "prioridade.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "muito": "muinto",
+    "sistema": "sistéma"
   }
 ]
