@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordagem.",
-    "controle": "controlle",
-    "exemplo": "exemplo,"
-  },
-  {
     "monitoramento": "monitoramento.",
     "necessidade": "necissidade",
     "exemplo": "exenplo"
@@ -91,5 +86,10 @@
   {
     "dispositivo": "dispotivo",
     "arquitetura": "arquitretura"
+  },
+  {
+    "abordagem": "abordagem.",
+    "necessidade": "nescessidade",
+    "dispositivo": "disposotivo"
   }
 ]
