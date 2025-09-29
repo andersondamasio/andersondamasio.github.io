@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrtura",
-    "problema": "poblema",
-    "arquitetura": "arquitertura"
-  },
-  {
     "virtual": "virtuaal",
     "funcionalidade": "funcionaliade",
     "sistema": "sistéma"
@@ -91,5 +86,9 @@
     "controle": "controle.",
     "virtual": "virtual.",
     "acesso": "acesço"
+  },
+  {
+    "abordagem": "abordajem",
+    "arquitetura": "arquiteturra"
   }
 ]
