@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquitertura",
     "muito": "muinto",
     "sistema": "sistéma"
@@ -91,5 +87,9 @@
     "tecnologia": "tecnolgia",
     "muito": "muto",
     "problema": "poblema"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "funcionalidade": "funcionaliadde"
   }
 ]
