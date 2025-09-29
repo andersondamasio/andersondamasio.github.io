@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "gerenciamento": "gerenciamneto",
-    "muito": "muinto"
-  },
-  {
     "monitoramento": "monitramento",
     "desenvolvimento": "desenvolvimente"
   },
@@ -94,5 +89,10 @@
     "problema": "problema.",
     "sistema": "sistéma",
     "complexidade": "complexsidade"
+  },
+  {
+    "necessidade": "nescessidade",
+    "virtual": "virtal",
+    "parceria": "parceria."
   }
 ]
