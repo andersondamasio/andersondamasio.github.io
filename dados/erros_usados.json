@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "arquitetura": "arquitretura"
-  },
-  {
     "abordagem": "abordagem.",
     "necessidade": "nescessidade",
     "dispositivo": "disposotivo"
@@ -93,5 +89,10 @@
     "internet": "internert",
     "melhor": "melhorr",
     "simples": "simlpes"
+  },
+  {
+    "internet": "internete",
+    "melhor": "melor",
+    "simples": "simplis"
   }
 ]
