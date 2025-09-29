@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "funcionalidade": "funcionaliade",
-    "sistema": "sistéma"
-  },
-  {
     "tecnologia": "tecnolgia",
     "muito": "muto",
     "problema": "poblema"
@@ -90,5 +85,9 @@
   {
     "abordagem": "abordajem",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
