@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "melhor": "melor",
     "funciona": "funsiona",
     "muito": "muinto"
@@ -88,5 +84,10 @@
   {
     "tecnologia": "tecnnologia",
     "sistema": "sistéma"
+  },
+  {
+    "processo": "processso",
+    "gerenciamento": "gerenciamneto",
+    "desenvolvimento": "desenvolmento"
   }
 ]
