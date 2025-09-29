@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotna",
-    "simples": "simlpes",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "necessidade": "nescessidade"
   },
@@ -92,5 +87,10 @@
   {
     "prioridade": "prioriade.",
     "acesso": "acesço"
+  },
+  {
+    "suporte": "suporte.",
+    "funcionalidade": "funcionaliade",
+    "arquitetura": "arquitertura"
   }
 ]
