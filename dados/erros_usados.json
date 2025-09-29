@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "controle": "controle.",
-    "muito": "muiito"
-  },
-  {
     "arquitetura": "arquitretura",
     "exemplo": "exenplo",
     "tecnologia": "tecnnologia"
@@ -93,5 +88,10 @@
   {
     "exemplo": "exemplo.",
     "acesso": "aceso"
+  },
+  {
+    "mensagem": "mensagen",
+    "operacional": "operacionl",
+    "arquitetura": "arquitretura"
   }
 ]
