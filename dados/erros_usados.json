@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotína",
-    "dispositivo": "dispotivo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "controle": "controle.",
     "virtual": "virtual.",
     "acesso": "acesço"
@@ -87,5 +82,9 @@
   {
     "necessidade": "necessidade.",
     "desafio": "desaío"
+  },
+  {
+    "simples": "simplis",
+    "arquitetura": "arquitretura"
   }
 ]
