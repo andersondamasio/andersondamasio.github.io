@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordajem",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvmento"
   },
@@ -85,5 +81,10 @@
   {
     "utilizado": "utilizdo.",
     "sistema": "cistema"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnnologia",
+    "abordagem": "abordajem"
   }
 ]
