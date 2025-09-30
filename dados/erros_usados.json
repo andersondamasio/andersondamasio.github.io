@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "rotina": "rotína",
     "dispositivo": "dispotivo",
     "tecnologia": "tecnoligia"
@@ -87,5 +83,9 @@
   {
     "parceria": "parcería",
     "muito": "muto"
+  },
+  {
+    "necessidade": "necessidade.",
+    "desafio": "desaío"
   }
 ]
