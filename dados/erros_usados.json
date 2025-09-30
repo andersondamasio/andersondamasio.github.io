@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "conhecimento": "conhecimeto"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitretura",
     "simples": "simlpes"
@@ -86,5 +82,9 @@
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
+  },
+  {
+    "prioridade": "prioriade",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
