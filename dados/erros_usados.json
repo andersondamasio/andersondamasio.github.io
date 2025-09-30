@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "melhor": "melor",
-    "simples": "simplis"
-  },
-  {
     "problema": "problema.",
     "sistema": "sistéma",
     "complexidade": "complexsidade"
@@ -88,5 +83,10 @@
     "estrutura": "estrura",
     "internet": "internat",
     "sistema": "sistéma"
+  },
+  {
+    "suporte": "suprte",
+    "funcionalidade": "funcionaliade",
+    "dispositivo": "dispositivo."
   }
 ]
