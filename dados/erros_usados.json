@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "sistema": "sistéma",
-    "complexidade": "complexsidade"
-  },
-  {
     "necessidade": "nescessidade",
     "virtual": "virtal",
     "parceria": "parceria."
@@ -88,5 +83,10 @@
     "suporte": "suprte",
     "funcionalidade": "funcionaliade",
     "dispositivo": "dispositivo."
+  },
+  {
+    "muito": "muiito",
+    "computador": "computadorr",
+    "funciona": "funsiona"
   }
 ]
