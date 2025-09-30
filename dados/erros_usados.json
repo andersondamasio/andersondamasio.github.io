@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "acesso": "aceso"
-  },
-  {
     "mensagem": "mensagen",
     "operacional": "operacionl",
     "arquitetura": "arquitretura"
@@ -88,5 +84,9 @@
   {
     "sistema": "cistema",
     "muito": "muinto"
+  },
+  {
+    "personalizado": "personalisado",
+    "exemplo": "exemplo."
   }
 ]
