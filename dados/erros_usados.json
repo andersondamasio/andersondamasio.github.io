@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnoligia",
-    "exemplo": "exenplo"
-  },
-  {
     "prioridade": "prioriade",
     "desenvolvimento": "desenvolvmento"
   },
@@ -93,5 +88,10 @@
   {
     "tecnologia": "tecnolgia",
     "dispositivo": "dispositivo."
+  },
+  {
+    "armazenamento": "armasenamento",
+    "funciona": "funsiona",
+    "sistema": "cistema"
   }
 ]
