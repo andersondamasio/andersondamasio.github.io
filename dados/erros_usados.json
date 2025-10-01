@@ -1,9 +1,5 @@
 [
   {
-    "geralmente": "geralmete",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
@@ -93,5 +89,9 @@
     "mensagem": "menssagem",
     "melhor": "melor",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "dispositivo": "dispositivo."
   }
 ]
