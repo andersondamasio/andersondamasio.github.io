@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrura",
-    "internet": "internat",
-    "sistema": "sistéma"
-  },
-  {
     "suporte": "suprte",
     "funcionalidade": "funcionaliade",
     "dispositivo": "dispositivo."
@@ -86,5 +81,9 @@
   {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
