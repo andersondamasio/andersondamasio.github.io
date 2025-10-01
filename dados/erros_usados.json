@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "desafio": "desafiu",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "muito": "muto",
     "melhor": "melor"
   },
@@ -85,5 +80,10 @@
     "internet": "internete",
     "estrutura": "estrtura",
     "muito": "muiito"
+  },
+  {
+    "acesso": "aceso",
+    "tecnologia": "tecnnologia",
+    "sistema": "sistéma"
   }
 ]
