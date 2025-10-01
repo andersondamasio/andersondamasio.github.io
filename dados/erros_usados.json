@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizdo.",
-    "sistema": "cistema"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia",
     "abordagem": "abordajem"
@@ -91,5 +87,10 @@
     "melhor": "melhorr",
     "sistema": "sistéma",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "acesso": "acesço",
+    "sistema": "sistma",
+    "arquitetura": "arquitretura"
   }
 ]
