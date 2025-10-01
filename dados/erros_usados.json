@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "muito": "muinto"
-  },
-  {
     "personalizado": "personalisado",
     "exemplo": "exemplo."
   },
@@ -86,5 +82,10 @@
     "funcionalidade": "funcionaliade",
     "executado": "execudado",
     "constante": "constate"
+  },
+  {
+    "componente": "componente.",
+    "conectado": "conetado",
+    "dispositivo": "dispositivo."
   }
 ]
