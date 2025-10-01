@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
   },
@@ -94,5 +90,10 @@
     "complexidade": "complezidade",
     "tecnologia": "tecnolgia",
     "prioridade": "prioriade"
+  },
+  {
+    "operacional": "operacionl",
+    "complexidade": "complexidade.",
+    "tecnologia": "tecnnologia"
   }
 ]
