@@ -1,9 +1,5 @@
 [
   {
-    "personalizado": "personalisado",
-    "exemplo": "exemplo."
-  },
-  {
     "resultado": "resultao",
     "funciona": "funciona."
   },
@@ -87,5 +83,9 @@
     "componente": "componente.",
     "conectado": "conetado",
     "dispositivo": "dispositivo."
+  },
+  {
+    "suporte": "suportte",
+    "sistema": "sistma"
   }
 ]
