@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "controle": "controlle",
     "abordagem": "abordage",
     "muito": "muto"
@@ -95,5 +91,9 @@
     "operacional": "operacionl",
     "complexidade": "complexidade.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "monitoramento": "monitramento",
+    "necessidade": "necissidade"
   }
 ]
