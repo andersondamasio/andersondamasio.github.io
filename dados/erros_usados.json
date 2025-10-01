@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "arquitetura": "arquitretura",
-    "melhor": "melor"
-  },
-  {
     "estrutura": "estrura",
     "internet": "internat",
     "sistema": "sistéma"
@@ -87,5 +82,9 @@
     "operacional": "operaciona",
     "monitoramento": "monitramento",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]
