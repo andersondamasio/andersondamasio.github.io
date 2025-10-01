@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "monitoramento": "monitramento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
   },
@@ -94,5 +89,10 @@
     "geralmente": "geralmete",
     "prioridade": "prioridade.",
     "armazenamento": "armazenamentto"
+  },
+  {
+    "complexidade": "complezidade",
+    "tecnologia": "tecnolgia",
+    "prioridade": "prioriade"
   }
 ]
