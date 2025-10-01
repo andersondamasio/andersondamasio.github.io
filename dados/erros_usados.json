@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "geralmente": "geralmete",
     "tecnologia": "tecnnologia"
   },
@@ -92,5 +88,10 @@
     "sistema": "cistema",
     "controle": "controlle",
     "processo": "processso"
+  },
+  {
+    "mensagem": "menssagem",
+    "melhor": "melor",
+    "funcionalidade": "funcionaliade"
   }
 ]
