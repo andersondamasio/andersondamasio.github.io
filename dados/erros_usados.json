@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnnologia",
-    "abordagem": "abordajem"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra"
   },
@@ -92,5 +87,10 @@
     "acesso": "acesço",
     "sistema": "sistma",
     "arquitetura": "arquitretura"
+  },
+  {
+    "sistema": "cistema",
+    "controle": "controlle",
+    "processo": "processso"
   }
 ]
