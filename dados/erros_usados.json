@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "processo": "prosseso",
     "conhecimento": "conhescimento",
     "desafio": "desafío"
@@ -93,5 +89,10 @@
     "armazenamento": "armasenamento",
     "funciona": "funsiona",
     "sistema": "cistema"
+  },
+  {
+    "propriedade": "propriadade",
+    "problema": "problema.",
+    "sistema": "sistéma"
   }
 ]
