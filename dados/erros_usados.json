@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "simples": "simplis",
-    "controle": "controlle"
-  },
-  {
     "conhecimento": "conhecimeto",
     "arquitetura": "arquitretura",
     "processo": "processso"
@@ -93,5 +88,10 @@
     "muito": "muinto",
     "melhor": "melor",
     "acesso": "acesso."
+  },
+  {
+    "exemplo": "exemplo.",
+    "virtual": "virtal",
+    "prioridade": "prioriade."
   }
 ]
