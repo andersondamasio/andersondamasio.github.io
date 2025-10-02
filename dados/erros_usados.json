@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "sistema": "sistma",
-    "arquitetura": "arquitretura"
-  },
-  {
     "sistema": "cistema",
     "controle": "controlle",
     "processo": "processso"
@@ -95,5 +90,8 @@
   {
     "suporte": "suporte.",
     "acesso": "acesço"
+  },
+  {
+    "tecnologia": "tecnolgia"
   }
 ]
