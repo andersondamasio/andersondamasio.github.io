@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componente.",
-    "conectado": "conetado",
-    "dispositivo": "dispositivo."
-  },
-  {
     "suporte": "suportte",
     "sistema": "sistma"
   },
@@ -95,5 +90,10 @@
     "conhecimento": "conhecimeto",
     "arquitetura": "arquitretura",
     "processo": "processso"
+  },
+  {
+    "muito": "muiito",
+    "recurso": "recuro",
+    "funcionalidade": "funcionalidade."
   }
 ]
