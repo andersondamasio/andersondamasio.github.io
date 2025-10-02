@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "funciona": "funsiona",
-    "sistema": "cistema"
-  },
-  {
     "propriedade": "propriadade",
     "problema": "problema.",
     "sistema": "sistéma"
@@ -94,5 +89,9 @@
     "melhor": "melhorr",
     "controle": "controle.",
     "muito": "muiito"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura"
   }
 ]
