@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "executado": "execudado",
-    "constante": "constate"
-  },
-  {
     "componente": "componente.",
     "conectado": "conetado",
     "dispositivo": "dispositivo."
@@ -95,5 +90,10 @@
     "operacional": "operacional.",
     "simples": "simplis",
     "controle": "controlle"
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "arquitetura": "arquitretura",
+    "processo": "processso"
   }
 ]
