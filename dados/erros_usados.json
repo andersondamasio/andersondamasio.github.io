@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "tecnologia": "tecnolgia",
-    "prioridade": "prioriade"
-  },
-  {
     "operacional": "operacionl",
     "complexidade": "complexidade.",
     "tecnologia": "tecnnologia"
@@ -93,5 +88,10 @@
     "muito": "muiito",
     "tecnologia": "tecnolgia",
     "conhecimento": "conhecimeto"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "sistema": "cistema",
+    "arquitetura": "arquiteturra"
   }
 ]
