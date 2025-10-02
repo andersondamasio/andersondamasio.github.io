@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "tecnologia": "tecnnologia",
-    "sistema": "sistéma"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "executado": "execudado",
     "constante": "constate"
@@ -95,5 +90,10 @@
     "desenvolvimento": "desenvolvimente",
     "rotina": "rotina.",
     "controle": "controle."
+  },
+  {
+    "operacional": "operacional.",
+    "simples": "simplis",
+    "controle": "controlle"
   }
 ]
