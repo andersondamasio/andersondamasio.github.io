@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "sistema": "sistma"
-  },
-  {
     "exemplo": "exemplo,",
     "tecnologia": "tecnolgia",
     "controle": "controlle"
@@ -95,5 +91,10 @@
     "muito": "muiito",
     "recurso": "recuro",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "abordagem": "abordagem.",
+    "estrutura": "estrututra",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
