@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "controle": "controlle",
-    "processo": "processso"
-  },
-  {
     "mensagem": "menssagem",
     "melhor": "melor",
     "funcionalidade": "funcionaliade"
@@ -93,5 +88,10 @@
   },
   {
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desafio": "desaío",
+    "abordagem": "abordajem",
+    "sistema": "sistéma"
   }
 ]
