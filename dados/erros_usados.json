@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "conhecimento": "conhescimento",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "rotina": "rotina.",
     "problema": "problema.",
     "desenvolvimento": "desenvolmento"
@@ -90,5 +85,10 @@
     "simples": "cimples",
     "funciona": "funciona,",
     "necessidade": "necissidade"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "exemplo": "exemplo.",
+    "arquitetura": "arquitretura"
   }
 ]
