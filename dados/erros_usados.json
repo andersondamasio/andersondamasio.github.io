@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "virtual": "virtal",
-    "prioridade": "prioriade."
-  },
-  {
     "necessidade": "nescessidade",
     "conhecimento": "conhescimento",
     "funcionalidade": "funcionaliade"
@@ -90,5 +85,10 @@
     "internet": "internat",
     "controle": "controlle",
     "sistema": "sistéma"
+  },
+  {
+    "simples": "cimples",
+    "funciona": "funciona,",
+    "necessidade": "necissidade"
   }
 ]
