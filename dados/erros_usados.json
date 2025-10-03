@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "controle": "contrle",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "suporte": "suporte.",
     "acesso": "acesço"
   },
@@ -92,5 +87,10 @@
     "arquitetura": "arquitertura",
     "constante": "constante.",
     "sistema": "sistma"
+  },
+  {
+    "personalizado": "personalizdo",
+    "desenvolvimento": "desenvolvmento",
+    "sistema": "sistéma"
   }
 ]
