@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "acesso": "acesço"
-  },
-  {
     "tecnologia": "tecnolgia"
   },
   {
@@ -92,5 +88,9 @@
     "personalizado": "personalizdo",
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "controle": "contrle"
   }
 ]
