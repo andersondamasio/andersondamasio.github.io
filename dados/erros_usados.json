@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "funciona": "funciona.",
     "monitoramento": "monitorameto",
     "constante": "constante."
@@ -93,5 +89,9 @@
     "melhor": "melor",
     "suporte": "suporte.",
     "exemplo": "exemplo."
+  },
+  {
+    "acesso": "aceso",
+    "exemplo": "exemplo,"
   }
 ]
