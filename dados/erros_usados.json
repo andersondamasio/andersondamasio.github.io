@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "desenvolvimento": "desenvolvmento",
-    "suporte": "suportte"
-  },
-  {
     "melhor": "melhorr",
     "controle": "controle.",
     "muito": "muiito"
@@ -93,5 +88,10 @@
     "propriedade": "propriadade",
     "abordagem": "abordagem.",
     "estrutura": "estrura"
+  },
+  {
+    "complexidade": "complexidade.",
+    "componente": "componente.",
+    "arquitetura": "arquiteturra"
   }
 ]
