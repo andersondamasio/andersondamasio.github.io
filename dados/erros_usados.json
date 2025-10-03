@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "tecnologia": "tecnolgia",
-    "muito": "muinto"
-  },
-  {
     "conhecimento": "conhecimento.",
     "controle": "contrle",
     "desenvolvimento": "desenvolvmento"
@@ -92,5 +87,10 @@
   {
     "arquitetura": "arquitretura",
     "conectado": "conetado"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "constante": "constante.",
+    "sistema": "sistma"
   }
 ]
