@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conetado",
-    "prioridade": "prioridade."
-  },
-  {
     "internet": "internat",
     "muito": "muiito",
     "estrutura": "estrututra"
@@ -90,5 +86,9 @@
   {
     "funciona": "funciona,",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "acesso": "acesço"
   }
 ]
