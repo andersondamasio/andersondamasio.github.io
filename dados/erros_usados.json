@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "desenvolvimento": "desenvolvmento",
-    "conhecimento": "conhescimento"
-  },
-  {
     "internet": "internat",
     "controle": "controlle",
     "sistema": "sistéma"
@@ -90,5 +85,10 @@
     "processo": "prosseso",
     "estrutura": "estrura",
     "resultado": "resutlado"
+  },
+  {
+    "abordagem": "abordagem.",
+    "desafio": "desaío",
+    "monitoramento": "monitoramento."
   }
 ]
