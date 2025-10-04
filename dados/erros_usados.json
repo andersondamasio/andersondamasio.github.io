@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "conectado": "conetado"
-  },
-  {
     "arquitetura": "arquitertura",
     "constante": "constante.",
     "sistema": "sistma"
@@ -89,5 +85,10 @@
   {
     "tecnologia": "tecnoligia",
     "necessidade": "necissidade"
+  },
+  {
+    "sistema": "cistema",
+    "suporte": "suportte",
+    "arquitetura": "arquiteturra"
   }
 ]
