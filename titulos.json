@@ -30980,5 +30980,14 @@
     "dataFonte": "2025-10-04T13:21:55.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://arstechnica.com/security/2025/10/ice-wants-to-build-a-24-7-social-media-surveillance-team/"
+  },
+  {
+    "titulo": "A vulnerabilidade de dados que você não pode ignorar: o caso da Partiful",
+    "noticiaOriginal": "Event startup Partiful wasn’t stripping GPS locations from user-uploaded photos",
+    "url": "artigos/seguranca/a-vulnerabilidade-de-dados-que-voce-nao-pode-ignorar-o-caso-da-partiful.html",
+    "data": "2025-10-04T16:22:48.204Z",
+    "dataFonte": "2025-10-04T15:50:07.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://techcrunch.com/2025/10/04/event-startup-partiful-wasnt-stripping-gps-locations-from-user-uploaded-photos/"
   }
 ]
