@@ -1,10 +1,5 @@
 [
   {
-    "personalizado": "personalizdo",
-    "desenvolvimento": "desenvolvmento",
-    "sistema": "sistéma"
-  },
-  {
     "dispositivo": "disposotivo",
     "controle": "contrle"
   },
@@ -89,5 +84,8 @@
   {
     "prioridade": "prioridade.",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "tecnologia": "tecnolgia"
   }
 ]
