@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "funciona": "funciona,",
-    "necessidade": "necissidade"
-  },
-  {
     "armazenamento": "armasenamento",
     "exemplo": "exemplo.",
     "arquitetura": "arquitretura"
@@ -90,5 +85,10 @@
     "desenvolvimento": "desenvolvimente",
     "prioridade": "prioridade.",
     "processo": "processso"
+  },
+  {
+    "sistema": "sistéma",
+    "funciona": "funciona,",
+    "desenvolvimento": "desenvolmento"
   }
 ]
