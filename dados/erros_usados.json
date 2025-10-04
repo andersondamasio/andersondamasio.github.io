@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "suporte": "suporte.",
-    "exemplo": "exemplo."
-  },
-  {
     "acesso": "aceso",
     "exemplo": "exemplo,"
   },
@@ -89,5 +84,9 @@
     "problema": "problema.",
     "exemplo": "exemplo.",
     "necessidade": "nescessidade"
+  },
+  {
+    "carregamento": "carregameno",
+    "sistema": "sistéma"
   }
 ]
