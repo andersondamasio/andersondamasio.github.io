@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "constante": "constante.",
-    "sistema": "sistma"
-  },
-  {
     "personalizado": "personalizdo",
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma"
@@ -90,5 +85,9 @@
     "sistema": "cistema",
     "suporte": "suportte",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "prioridade": "prioridade.",
+    "funcionalidade": "funcionaliade"
   }
 ]
