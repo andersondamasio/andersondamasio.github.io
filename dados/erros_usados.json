@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "acesso": "acesço"
-  },
-  {
     "constante": "constanate",
     "desenvolvimento": "desenvolvmento",
     "conhecimento": "conhescimento"
@@ -89,5 +85,10 @@
     "paralelo": "paraleloo",
     "muito": "muiito",
     "armazenamento": "armazenamentto"
+  },
+  {
+    "processo": "prosseso",
+    "estrutura": "estrura",
+    "resultado": "resutlado"
   }
 ]
