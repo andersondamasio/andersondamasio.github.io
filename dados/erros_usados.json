@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "propriadade",
-    "abordagem": "abordagem.",
-    "estrutura": "estrura"
-  },
-  {
     "complexidade": "complexidade.",
     "componente": "componente.",
     "arquitetura": "arquiteturra"
@@ -89,5 +84,10 @@
     "dispositivo": "dispositivo.",
     "acesso": "acesço",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "funcionalidade": "funcionalidade.",
+    "controle": "controle."
   }
 ]
