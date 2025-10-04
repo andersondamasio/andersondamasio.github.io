@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "necessidade": "necissidade"
-  },
-  {
     "sistema": "cistema",
     "suporte": "suportte",
     "arquitetura": "arquiteturra"
@@ -89,5 +85,10 @@
     "desenvolvimento": "desenvolvimente",
     "exemplo": "exemplo.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "funciona": "funciona.",
+    "tecnologia": "tecnnologia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
