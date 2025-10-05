@@ -1,9 +1,5 @@
 [
   {
-    "melhor": "melhorr",
-    "controle": "contrle"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "tecnologia": "tecnnologia"
   },
@@ -91,5 +87,9 @@
     "problema": "problema.",
     "necessidade": "necessidade.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "acesso": "aceso"
   }
 ]
