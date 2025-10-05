@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "dispositivo": "dispositivo.",
     "acesso": "acesço",
     "tecnologia": "tecnolgia"
@@ -92,5 +87,10 @@
     "utilizado": "utilizdo.",
     "sistema": "sistma",
     "controle": "controlle"
+  },
+  {
+    "acesso": "aceso",
+    "sistema": "sistéma",
+    "prioridade": "prioriade."
   }
 ]
