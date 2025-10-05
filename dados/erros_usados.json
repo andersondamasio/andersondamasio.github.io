@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "exemplo": "exemplo.",
-    "necessidade": "nescessidade"
-  },
-  {
     "carregamento": "carregameno",
     "sistema": "sistéma"
   },
@@ -90,5 +85,10 @@
   {
     "constante": "constante.",
     "sistema": "sistéma"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "armazenamento": "armazanamento",
+    "processo": "processso"
   }
 ]
