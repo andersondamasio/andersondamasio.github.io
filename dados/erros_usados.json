@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "propriedade": "propriedade.",
-    "funciona": "funciona,"
-  },
-  {
     "utilizado": "utilizdo.",
     "sistema": "sistma",
     "controle": "controlle"
@@ -90,5 +85,9 @@
     "muito": "muto",
     "tecnologia": "tecnolgia",
     "acesso": "acesso."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exemplo."
   }
 ]
