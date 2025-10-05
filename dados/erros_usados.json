@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "constante": "constante.",
     "sistema": "sistéma"
   },
@@ -87,5 +83,10 @@
   {
     "carregamento": "carregamneto",
     "internet": "internete"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnnologia"
   }
 ]
