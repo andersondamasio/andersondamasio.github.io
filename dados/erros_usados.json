@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "sistema": "sistéma"
-  },
-  {
     "melhor": "melhorr",
     "controle": "contrle"
   },
@@ -90,5 +86,10 @@
     "dispositivo": "dispotivo",
     "armazenamento": "armazanamento",
     "processo": "processso"
+  },
+  {
+    "problema": "problema.",
+    "necessidade": "necessidade.",
+    "arquitetura": "arquitertura"
   }
 ]
