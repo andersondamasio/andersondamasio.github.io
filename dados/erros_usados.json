@@ -1,10 +1,5 @@
 [
   {
-    "utilizado": "utilizdo.",
-    "sistema": "sistma",
-    "controle": "controlle"
-  },
-  {
     "acesso": "aceso",
     "sistema": "sistéma",
     "prioridade": "prioriade."
@@ -89,5 +84,9 @@
   {
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
+  },
+  {
+    "complexidade": "complezidade",
+    "funciona": "funciona,"
   }
 ]
