@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "controle": "contrle"
-  },
-  {
     "internet": "internete",
     "propriedade": "propriedade.",
     "funciona": "funciona,"
@@ -89,5 +85,10 @@
     "resultado": "resutlado",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "muito": "muto",
+    "tecnologia": "tecnolgia",
+    "acesso": "acesso."
   }
 ]
