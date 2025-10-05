@@ -31151,5 +31151,14 @@
     "dataFonte": "2025-10-05T11:00:31.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/best-network-attached-storage/"
+  },
+  {
+    "titulo": "Novas Armadilhas: Como o DNS Armor Pode Proteger Seus Projetos na Nuvem",
+    "noticiaOriginal": "New DNS Armor Service Helps Google Cloud Workloads Preemptively Block Cyber Threats",
+    "url": "artigos/seguranca/novas-armadilhas-como-o-dns-armor-pode-proteger-seus-projetos-na-nuvem.html",
+    "data": "2025-10-05T13:21:39.255Z",
+    "dataFonte": "2025-10-05T10:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2025/10/dns-armor-infoblox-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
