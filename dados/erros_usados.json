@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralment",
-    "dispositivo": "dispositivo.",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "muito": "muinto",
     "melhor": "melor"
   },
@@ -92,5 +87,10 @@
     "mensagem": "menssagen",
     "tecnologia": "tecnolgia",
     "melhor": "melor"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura",
+    "necessidade": "necessidade."
   }
 ]
