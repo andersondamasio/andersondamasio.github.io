@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "armazenamento": "armazanamento",
-    "processo": "processso"
-  },
-  {
     "problema": "problema.",
     "necessidade": "necessidade.",
     "arquitetura": "arquitertura"
@@ -89,5 +84,10 @@
     "conectado": "conectdo",
     "gerenciamento": "gerenciamneto",
     "muito": "muinto"
+  },
+  {
+    "muito": "muiito",
+    "monitoramento": "monitoramento.",
+    "funciona": "funsiona"
   }
 ]
