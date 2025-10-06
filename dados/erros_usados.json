@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "sistema": "sistéma"
-  },
-  {
     "dispositivo": "dispotivo",
     "armazenamento": "armazanamento",
     "processo": "processso"
@@ -88,5 +84,10 @@
     "monitoramento": "monitorameto",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "conectado": "conectdo",
+    "gerenciamento": "gerenciamneto",
+    "muito": "muinto"
   }
 ]
