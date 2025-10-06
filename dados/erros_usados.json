@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "internet": "internete"
-  },
-  {
     "monitoramento": "monitorameto",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
@@ -94,5 +90,10 @@
     "tecnologia": "tecnolgia",
     "recurso": "recuro",
     "muito": "muiito"
+  },
+  {
+    "exemplo": "exemplo.",
+    "sistema": "sistéma",
+    "arquitetura": "arquitretura"
   }
 ]
