@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "suporte": "suprte"
-  },
-  {
     "resultado": "resutlado",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
@@ -92,5 +88,10 @@
   {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "problema": "poblema",
+    "tecnologia": "tecnolgia"
   }
 ]
