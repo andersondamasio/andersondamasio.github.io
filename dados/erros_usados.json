@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "necessidade": "necessidade.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "acesso": "aceso"
   },
@@ -89,5 +84,10 @@
     "muito": "muiito",
     "monitoramento": "monitoramento.",
     "funciona": "funsiona"
+  },
+  {
+    "abordagem": "abordage",
+    "virtual": "virtuaal",
+    "rotina": "rotina."
   }
 ]
