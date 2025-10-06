@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectdo",
-    "gerenciamento": "gerenciamneto",
-    "muito": "muinto"
-  },
-  {
     "muito": "muiito",
     "monitoramento": "monitoramento.",
     "funciona": "funsiona"
@@ -95,5 +90,10 @@
     "suporte": "suporte.",
     "sistema": "sistma",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
