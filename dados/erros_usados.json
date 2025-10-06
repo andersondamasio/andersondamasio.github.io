@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "computador": "computador.",
-    "armazenamento": "armazanamento"
-  },
-  {
     "parceria": "parceriaa",
     "conhecimento": "conhecimeto"
   },
@@ -92,5 +87,10 @@
     "dispositivo": "disposotivo",
     "componente": "componente.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "estrutura": "estrura",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquiteturra"
   }
 ]
