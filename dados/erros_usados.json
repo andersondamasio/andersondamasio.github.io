@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo."
-  },
-  {
     "complexidade": "complezidade",
     "funciona": "funciona,"
   },
@@ -93,5 +89,9 @@
     "arquitetura": "arquitretura",
     "exemplo": "exemplo.",
     "estrutura": "estrututra"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquiteturra"
   }
 ]
