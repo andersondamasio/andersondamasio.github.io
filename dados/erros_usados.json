@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "conectado": "conectdo",
     "gerenciamento": "gerenciamneto",
     "muito": "muinto"
@@ -95,5 +90,10 @@
     "exemplo": "exemplo.",
     "sistema": "sistéma",
     "arquitetura": "arquitretura"
+  },
+  {
+    "suporte": "suporte.",
+    "sistema": "sistma",
+    "arquitetura": "arquiteturra"
   }
 ]
