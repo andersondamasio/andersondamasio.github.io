@@ -1,10 +1,5 @@
 [
   {
-    "mensagem": "menssagen",
-    "tecnologia": "tecnolgia",
-    "melhor": "melor"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura",
     "necessidade": "necessidade."
@@ -90,5 +85,10 @@
     "sistema": "sistéma",
     "problema": "poblema",
     "monitoramento": "monitorameto"
+  },
+  {
+    "constante": "constante.",
+    "desafio": "desafiu",
+    "desenvolvimento": "desenvolmento"
   }
 ]
