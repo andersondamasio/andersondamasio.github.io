@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "muito": "muto",
     "tecnologia": "tecnolgia",
     "acesso": "acesso."
@@ -93,5 +88,10 @@
     "funcionalidade": "funcionaliade",
     "problema": "poblema",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "suporte": "suprte",
+    "prioridade": "prioriade.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
