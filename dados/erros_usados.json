@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "componente": "componente.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "estrutura": "estrura",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra"
@@ -93,5 +88,10 @@
   {
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "acesso": "aceso",
+    "controle": "contrle",
+    "tecnologia": "tecnnologia"
   }
 ]
