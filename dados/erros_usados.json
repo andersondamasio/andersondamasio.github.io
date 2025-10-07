@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "problema": "poblema",
     "tecnologia": "tecnolgia"
@@ -94,5 +90,10 @@
     "propriedade": "propriadade",
     "constante": "constanate",
     "arquitetura": "arquitertura"
+  },
+  {
+    "geralmente": "geralmete",
+    "acesso": "acesço",
+    "tecnologia": "tecnoligia"
   }
 ]
