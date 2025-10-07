@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "processo": "processso",
     "utilizado": "utilizado.",
     "simples": "simlpes"
@@ -93,5 +89,10 @@
     "sistema": "sistéma",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo,"
+  },
+  {
+    "resultado": "resultao",
+    "virtual": "virtal",
+    "tecnologia": "tecnnologia"
   }
 ]
