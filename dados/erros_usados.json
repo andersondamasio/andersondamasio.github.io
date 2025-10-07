@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "arquitetura": "arquitretura",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "dispositivo": "disposotivo",
     "componente": "componente.",
     "tecnologia": "tecnoligia"
@@ -94,5 +89,9 @@
     "melhor": "melhorr",
     "dispositivo": "dispotivo",
     "muito": "muiito"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
