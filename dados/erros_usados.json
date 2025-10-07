@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "arquitetura": "arquitretura",
     "sistema": "sistma",
     "suporte": "suporte."
@@ -95,5 +90,10 @@
     "conhecimento": "conhescimento",
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitertura"
+  },
+  {
+    "prioridade": "prioriade.",
+    "problema": "problema.",
+    "dispositivo": "dispotivo"
   }
 ]
