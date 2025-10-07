@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "sistema": "sistma",
-    "simples": "simlpes"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "sistema": "cistema",
     "dispositivo": "disposotivo"
@@ -96,5 +91,10 @@
     "funciona": "funciona.",
     "sistema": "sistma",
     "dispositivo": "dispositivo."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "acesso": "aceso",
+    "arquitetura": "arquiteturra"
   }
 ]
