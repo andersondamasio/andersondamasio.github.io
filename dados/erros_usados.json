@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "problema": "poblema",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "suporte": "suprte",
     "prioridade": "prioriade.",
     "desenvolvimento": "desenvolvmento"
@@ -95,5 +90,10 @@
     "geralmente": "geralmete",
     "acesso": "acesço",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "processo": "prosseso",
+    "estrutura": "estrura",
+    "arquitetura": "arquitretura"
   }
 ]
