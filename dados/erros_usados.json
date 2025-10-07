@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "sistema": "sistma",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "monitoramento": "monitorameto",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
@@ -95,5 +90,10 @@
     "rotina": "rotína",
     "muito": "muiito",
     "processo": "prosseso"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "desenvolvimento": "desenvolvimente",
+    "arquitetura": "arquitertura"
   }
 ]
