@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "prioridade": "prioriade.",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "arquitetura": "arquitretura",
     "exemplo": "exemplo.",
     "estrutura": "estrututra"
@@ -95,5 +90,9 @@
     "processo": "prosseso",
     "estrutura": "estrura",
     "arquitetura": "arquitretura"
+  },
+  {
+    "computador": "computador,",
+    "simples": "cimples"
   }
 ]
