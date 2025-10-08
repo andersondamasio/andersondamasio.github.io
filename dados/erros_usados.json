@@ -1,9 +1,5 @@
 [
   {
-    "computador": "computador,",
-    "simples": "cimples"
-  },
-  {
     "problema": "probrema",
     "funciona": "funciona.",
     "dispositivo": "disposotivo"
@@ -93,5 +89,9 @@
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "dispositivo": "disposotivo"
   }
 ]
