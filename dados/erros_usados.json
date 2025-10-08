@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo,"
-  },
-  {
     "resultado": "resultao",
     "virtual": "virtal",
     "tecnologia": "tecnnologia"
@@ -95,5 +90,9 @@
     "paralelo": "paralélo",
     "sistema": "sistéma",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
