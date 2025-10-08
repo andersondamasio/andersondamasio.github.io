@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "sistema": "sistma",
-    "dispositivo": "dispositivo."
-  },
-  {
     "tecnologia": "tecnnologia",
     "acesso": "aceso",
     "arquitetura": "arquiteturra"
@@ -90,5 +85,10 @@
   },
   {
     "tecnologia": "tecnolgia"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exenplo",
+    "simples": "cimples"
   }
 ]
