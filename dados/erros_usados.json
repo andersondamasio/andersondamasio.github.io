@@ -1,10 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "funciona": "funciona.",
-    "dispositivo": "disposotivo"
-  },
-  {
     "parceria": "parceria.",
     "tecnologia": "tecnolgia",
     "melhor": "melor"
@@ -93,5 +88,9 @@
   {
     "tecnologia": "tecnnologia",
     "dispositivo": "disposotivo"
+  },
+  {
+    "mensagem": "menssagem",
+    "simples": "cimples"
   }
 ]
