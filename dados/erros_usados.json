@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralmete",
-    "acesso": "acesço",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "processo": "prosseso",
     "estrutura": "estrura",
     "arquitetura": "arquitretura"
@@ -93,5 +88,10 @@
     "necessidade": "necissidade",
     "componente": "componente.",
     "carregamento": "carregameno"
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "muito": "muto",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
