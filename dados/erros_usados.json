@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "estrutura": "estrura",
-    "arquitetura": "arquitretura"
-  },
-  {
     "computador": "computador,",
     "simples": "cimples"
   },
@@ -93,5 +88,10 @@
     "gerenciamento": "gerenciamente",
     "muito": "muto",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
