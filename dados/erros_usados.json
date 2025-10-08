@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "acesso": "aceso",
     "controle": "contrle",
     "tecnologia": "tecnnologia"
@@ -95,5 +91,9 @@
     "constante": "constanate",
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "muito": "muto"
   }
 ]
