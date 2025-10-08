@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotína",
-    "muito": "muiito",
-    "processo": "prosseso"
-  },
-  {
     "conhecimento": "conhescimento",
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitertura"
@@ -92,5 +87,10 @@
     "melhor": "melhorr",
     "sistema": "cistema",
     "arquitetura": "arquitretura"
+  },
+  {
+    "muito": "muto",
+    "sistema": "sistma",
+    "tecnologia": "tecnnologia"
   }
 ]
