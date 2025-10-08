@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquitertura"
-  },
-  {
     "prioridade": "prioriade.",
     "problema": "problema.",
     "dispositivo": "dispotivo"
@@ -92,5 +87,10 @@
     "muito": "muto",
     "sistema": "sistma",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "estrutura": "estrtura",
+    "sistema": "sistéma",
+    "desafio": "desafío"
   }
 ]
