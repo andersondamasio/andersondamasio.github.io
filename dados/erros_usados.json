@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "sistema": "cistema",
-    "dispositivo": "disposotivo"
-  },
-  {
     "melhor": "melhorr",
     "dispositivo": "dispotivo",
     "muito": "muiito"
@@ -96,5 +91,9 @@
     "tecnologia": "tecnnologia",
     "acesso": "aceso",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "sistema": "sistma"
   }
 ]
