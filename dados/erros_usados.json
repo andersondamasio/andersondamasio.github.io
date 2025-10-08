@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "controle": "contrle",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "sistema": "sistéma",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo,"
@@ -95,5 +90,10 @@
   {
     "tecnologia": "tecnoligia",
     "muito": "muto"
+  },
+  {
+    "paralelo": "paralélo",
+    "sistema": "sistéma",
+    "tecnologia": "tecnolgia"
   }
 ]
