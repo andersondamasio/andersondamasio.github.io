@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "virtual": "virtal",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "funciona": "funsiona",
     "complexidade": "complexsidade",
     "necessidade": "nescessidade"
@@ -94,5 +89,10 @@
   {
     "monitoramento": "monitoramento.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "abordagem": "abordajem",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]
