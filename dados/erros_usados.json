@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "problema": "problema.",
-    "dispositivo": "dispotivo"
-  },
-  {
     "desafio": "desafiu",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
@@ -92,5 +87,10 @@
     "estrutura": "estrtura",
     "sistema": "sistéma",
     "desafio": "desafío"
+  },
+  {
+    "sistema": "sistma",
+    "funciona": "funciona,",
+    "arquitetura": "arquitretura"
   }
 ]
