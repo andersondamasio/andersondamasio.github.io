@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "muito": "muinto"
-  },
-  {
     "necessidade": "necissidade",
     "componente": "componente.",
     "carregamento": "carregameno"
@@ -91,5 +87,10 @@
     "controle": "contrle",
     "arquitetura": "arquitertura",
     "melhor": "melor"
+  },
+  {
+    "sistema": "sistéma",
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquitretura"
   }
 ]
