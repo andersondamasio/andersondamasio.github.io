@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "tecnologia": "tecnnologia",
     "dispositivo": "disposotivo"
   },
@@ -92,5 +87,9 @@
     "sistema": "sistéma",
     "desafio": "desafiu",
     "arquitetura": "arquitretura"
+  },
+  {
+    "monitoramento": "monitramento",
+    "arquitetura": "arquiteturra"
   }
 ]
