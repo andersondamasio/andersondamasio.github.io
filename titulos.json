@@ -32042,5 +32042,14 @@
     "dataFonte": "2025-10-09T21:08:37.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/amazon-prime-day-best-buy-deals-10-9-2025/"
+  },
+  {
+    "titulo": "Desvendando os Backdoors em Modelos de IA: Um Desafio para a Segurança Digital",
+    "noticiaOriginal": "AI models can acquire backdoors from surprisingly few malicious documents",
+    "url": "artigos/seguranca/desvendando-os-backdoors-em-modelos-de-ia-um-desafio-para-a-seguranca-digital.html",
+    "data": "2025-10-09T22:20:03.441Z",
+    "dataFonte": "2025-10-09T22:03:21.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/ai/2025/10/ai-models-can-acquire-backdoors-from-surprisingly-few-malicious-documents/"
   }
 ]
