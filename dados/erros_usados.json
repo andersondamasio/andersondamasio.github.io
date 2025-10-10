@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "arquitetura": "arquiteturra",
-    "dispositivo": "disposotivo"
-  },
-  {
     "estrutura": "estrututra",
     "arquitetura": "arquitertura",
     "sistema": "cistema"
@@ -90,5 +85,9 @@
   {
     "resultado": "resultao",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "operacional": "operacional.",
+    "sistema": "cistema"
   }
 ]
