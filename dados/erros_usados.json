@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "complexidade": "complezidade"
-  },
-  {
     "funciona": "funciona,",
     "melhor": "melor",
     "desenvolvimento": "desenvolmento"
@@ -90,5 +86,9 @@
     "funcionalidade": "funcionaliadde",
     "tecnologia": "tecnnologia",
     "exemplo": "exenplo"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "tecnologia": "tecnoligia"
   }
 ]
