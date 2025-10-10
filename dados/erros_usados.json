@@ -1,9 +1,5 @@
 [
   {
-    "consistente": "consiteente",
-    "abordagem": "abordajem"
-  },
-  {
     "dispositivo": "dispotivo",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +86,9 @@
     "parceria": "parceriaa",
     "necessidade": "nescessidade",
     "arquitetura": "arquitretura"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "abordagem": "abordajem"
   }
 ]
