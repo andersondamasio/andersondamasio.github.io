@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "desenvolvimento": "desenvolvmento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "processo": "processso",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
@@ -90,5 +85,10 @@
     "melhor": "melor",
     "abordagem": "abordajem",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "processo": "processso",
+    "exemplo": "exemplo,",
+    "desenvolvimento": "desenvolmento"
   }
 ]
