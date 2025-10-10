@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "problema": "poblema",
-    "monitoramento": "monitorameto"
-  },
-  {
     "melhor": "melor",
     "abordagem": "abordajem",
     "arquitetura": "arquiteturra"
@@ -88,5 +83,9 @@
   {
     "parceria": "parceriaa",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "funcionalidade": "funcionaliadde"
   }
 ]
