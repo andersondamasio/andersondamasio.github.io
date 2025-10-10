@@ -1,9 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "exemplo": "exenplo"
-  },
-  {
     "simples": "cimples",
     "arquitetura": "arquiteturra",
     "dispositivo": "disposotivo"
@@ -90,5 +86,9 @@
     "suporte": "suprte",
     "abordagem": "abordagem.",
     "prioridade": "prioriade."
+  },
+  {
+    "resultado": "resultao",
+    "arquitetura": "arquiteturra"
   }
 ]
