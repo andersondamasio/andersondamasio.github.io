@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "tecnologia": "tecnolgia",
-    "funciona": "funsiona"
-  },
-  {
     "tecnologia": "tecnoligia",
     "funciona": "funciona,"
   },
@@ -86,5 +81,9 @@
     "recurso": "recusso",
     "problema": "probrema",
     "internet": "internat"
+  },
+  {
+    "funciona": "funciona.",
+    "armazenamento": "armazanamento"
   }
 ]
