@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "desafio": "desafiu",
-    "arquitetura": "arquitretura"
-  },
-  {
     "monitoramento": "monitramento",
     "arquitetura": "arquiteturra"
   },
@@ -90,5 +85,9 @@
     "acesso": "aceso",
     "tecnologia": "tecnolgia",
     "funciona": "funsiona"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "funciona": "funciona,"
   }
 ]
