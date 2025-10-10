@@ -1,10 +1,5 @@
 [
   {
-    "utilizado": "utilizdo.",
-    "desenvolvimento": "desenvolvmento",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "recurso": "reccurso",
     "complexidade": "complezidade"
   },
@@ -90,5 +85,10 @@
   {
     "muito": "muto",
     "acesso": "aceso"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "tecnologia": "tecnnologia",
+    "exemplo": "exenplo"
   }
 ]
