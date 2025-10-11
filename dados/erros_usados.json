@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia"
-  },
-  {
     "arquitetura": "arquitertura",
     "prioridade": "prioridade.",
     "monitoramento": "monitorameto"
@@ -89,5 +86,10 @@
     "resultado": "resutlado",
     "muito": "muinto",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "funciona": "funsiona",
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
