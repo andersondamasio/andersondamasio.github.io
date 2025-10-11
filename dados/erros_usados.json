@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "rotina": "rotna",
-    "conectado": "conetado"
-  },
-  {
     "suporte": "suprte",
     "abordagem": "abordagem.",
     "prioridade": "prioriade."
@@ -85,5 +80,10 @@
   {
     "arquitetura": "arquitertura",
     "sistema": "cistema"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "carregamento": "carregameno",
+    "monitoramento": "monitoramento."
   }
 ]
