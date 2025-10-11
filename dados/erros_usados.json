@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "tecnologia": "tecnnologia",
     "processo": "prosseso",
     "desenvolvimento": "desenvolvmento"
@@ -84,5 +80,9 @@
     "exemplo": "exemplo.",
     "funciona": "funciona.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "tecnologia": "tecnoligia"
   }
 ]
