@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "armazenamento": "armazanamento"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia"
   },
@@ -88,5 +84,9 @@
     "simples": "simlpes",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "muito": "muiito"
   }
 ]
