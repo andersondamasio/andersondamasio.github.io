@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "tecnologia": "tecnoligia"
   },
   {
@@ -88,5 +84,10 @@
   {
     "tecnologia": "tecnnologia",
     "muito": "muiito"
+  },
+  {
+    "resultado": "resutlado",
+    "muito": "muinto",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
