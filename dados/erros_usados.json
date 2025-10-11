@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "abordagem": "abordajem"
-  },
-  {
     "muito": "muto",
     "acesso": "aceso"
   },
@@ -83,5 +79,10 @@
   },
   {
     "tecnologia": "tecnoligia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "prioridade": "prioridade.",
+    "monitoramento": "monitorameto"
   }
 ]
