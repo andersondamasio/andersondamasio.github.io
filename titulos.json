@@ -32366,5 +32366,14 @@
     "dataFonte": "2025-10-11T10:30:31.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/i-compared-5g-network-signals-of-verizon-t-mobile-and-at-t-at-a-baseball-stadium-heres-the-winner/"
+  },
+  {
+    "titulo": "A nova era do Postgres: PlanetScale e o que isso significa para desenvolvedores",
+    "noticiaOriginal": "PlanetScale Extends Database Platform to PostgreSQL",
+    "url": "artigos/banco-de-dados/a-nova-era-do-postgres-planetscale-e-o-que-isso-significa-para-desenvolvedores.html",
+    "data": "2025-10-11T12:36:20.963Z",
+    "dataFonte": "2025-10-11T11:45:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2025/10/planetscale-metal-postgres/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
