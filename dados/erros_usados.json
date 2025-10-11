@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "controle": "controle.",
     "rotina": "rotna",
     "conectado": "conetado"
@@ -85,5 +81,9 @@
     "necessidade": "necissidade",
     "acesso": "aceso",
     "muito": "muiito"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "sistema": "cistema"
   }
 ]
