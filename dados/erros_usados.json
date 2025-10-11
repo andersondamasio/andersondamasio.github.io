@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "conhecimento": "conhescimento"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquiteturra"
   },
@@ -84,5 +80,10 @@
     "computador": "computadorr",
     "muito": "muinto",
     "gerenciamento": "gerenciamente"
+  },
+  {
+    "necessidade": "necissidade",
+    "acesso": "aceso",
+    "muito": "muiito"
   }
 ]
