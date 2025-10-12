@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "tecnologia": "tecnolgia",
-    "abordagem": "abordajem"
-  },
-  {
     "constante": "constate",
     "exemplo": "exemplo.",
     "tecnologia": "tecnoligia"
@@ -88,5 +83,9 @@
     "exemplo": "exemplo.",
     "processo": "processso",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "consistente": "consiteente",
+    "rotina": "rotina."
   }
 ]
