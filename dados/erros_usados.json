@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "acesso": "aceso",
-    "muito": "muiito"
-  },
-  {
     "arquitetura": "arquitertura",
     "sistema": "cistema"
   },
@@ -92,5 +87,10 @@
   {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "melhor": "melor",
+    "desenvolvimento": "desenvolmento",
+    "controle": "controle."
   }
 ]

@@ -32519,5 +32519,14 @@
     "dataFonte": "2025-10-10T16:23:59.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/amazon-prime-day-costco-deals-10-10-2025/"
+  },
+  {
+    "titulo": "O Futuro dos Containers: Como o ECS Managed Instances Pode Transformar Sua Arquitetura",
+    "noticiaOriginal": "AWS Introduces ECS Managed Instances for Containerized Applications",
+    "url": "artigos/cloud/o-futuro-dos-containers-como-o-ecs-managed-instances-pode-transformar-sua-arquitetura.html",
+    "data": "2025-10-12T07:16:55.945Z",
+    "dataFonte": "2025-10-12T06:38:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/10/aws-ecs-managed-instances/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
