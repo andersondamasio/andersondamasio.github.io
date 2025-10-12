@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "arquitetura": "arquitertura",
     "sistema": "cistema",
     "suporte": "suprte"
@@ -92,5 +88,10 @@
     "desafio": "desafiu",
     "tecnologia": "tecnolgia",
     "abordagem": "abordajem"
+  },
+  {
+    "constante": "constate",
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnoligia"
   }
 ]
