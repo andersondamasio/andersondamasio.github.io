@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muinto",
-    "melhor": "melor",
-    "dispositivo": "disposotivo"
-  },
-  {
     "internet": "internert",
     "melhor": "melhorr",
     "funcionalidade": "funcionaliade"
@@ -92,5 +87,9 @@
   {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "sistema": "cistema"
   }
 ]
