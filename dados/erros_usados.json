@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "necessidade": "necissidade",
     "melhor": "melor"
@@ -87,5 +82,10 @@
   {
     "consistente": "consiteente",
     "rotina": "rotina."
+  },
+  {
+    "desafio": "desafiu",
+    "abordagem": "abordajem",
+    "tecnologia": "tecnoligia"
   }
 ]
