@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "carregamento": "carregameno",
-    "monitoramento": "monitoramento."
-  },
-  {
     "sistema": "sistéma",
     "arquitetura": "arquiteturra"
   },
@@ -93,5 +88,9 @@
     "simples": "simlpes",
     "tecnologia": "tecnoligia",
     "rotina": "rotna"
+  },
+  {
+    "suporte": "suprte",
+    "operacional": "operacionl"
   }
 ]
