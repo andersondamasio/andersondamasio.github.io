@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "muito": "muiito"
-  },
-  {
     "resultado": "resutlado",
     "muito": "muinto",
     "desenvolvimento": "desenvolvimente"
@@ -87,5 +83,10 @@
   {
     "monitoramento": "monitoramento.",
     "processo": "prosseso"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "sistema": "cistema",
+    "tecnologia": "tecnnologia"
   }
 ]
