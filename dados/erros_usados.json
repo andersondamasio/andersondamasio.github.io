@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "problema": "problema.",
     "tecnologia": "tecnnologia",
     "acesso": "acesço"
@@ -88,5 +83,10 @@
     "tecnologia": "tecnoligia",
     "simples": "simplis",
     "melhor": "melor"
+  },
+  {
+    "complexidade": "complexsidade",
+    "muito": "muiito",
+    "sistema": "cistema"
   }
 ]
