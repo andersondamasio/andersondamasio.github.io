@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "cistema"
-  },
-  {
     "dispositivo": "disposotivo",
     "carregamento": "carregameno",
     "monitoramento": "monitoramento."
@@ -92,5 +88,10 @@
     "melhor": "melor",
     "desenvolvimento": "desenvolmento",
     "controle": "controle."
+  },
+  {
+    "simples": "simlpes",
+    "tecnologia": "tecnoligia",
+    "rotina": "rotna"
   }
 ]
