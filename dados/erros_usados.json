@@ -1,8 +1,5 @@
 [
   {
-    "carregamento": "carregamneto"
-  },
-  {
     "simples": "simlpes",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura"
@@ -90,5 +87,9 @@
     "executado": "excutado",
     "exemplo": "exemplo,",
     "monitoramento": "monitramento"
+  },
+  {
+    "acesso": "acesso.",
+    "desafio": "desafiu"
   }
 ]
