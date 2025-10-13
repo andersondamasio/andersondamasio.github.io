@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "necessidade": "necessidade."
-  },
-  {
     "constante": "constate",
     "muito": "muto"
   },
@@ -89,5 +85,9 @@
     "tecnologia": "tecnolgia",
     "dispositivo": "disposotivo",
     "sistema": "sistéma"
+  },
+  {
+    "processo": "processso",
+    "exemplo": "exemplo,"
   }
 ]

@@ -32852,5 +32852,14 @@
     "dataFonte": "2025-10-13T21:03:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/i-tried-smart-glasses-with-xmems-speakers-and-active-cooling-and-theyre-full-of-promise/"
+  },
+  {
+    "titulo": "Desvendando o Pixnapping: como hackers podem roubar seus códigos 2FA",
+    "noticiaOriginal": "No fix yet for attack that lets hackers pluck 2FA codes from Android phones",
+    "url": "artigos/seguranca/desvendando-o-pixnapping-como-hackers-podem-roubar-seus-codigos-2fa.html",
+    "data": "2025-10-13T22:18:38.325Z",
+    "dataFonte": "2025-10-13T21:36:35.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/10/no-fix-yet-for-attack-that-lets-hackers-pluck-2fa-codes-from-android-phones/"
   }
 ]
