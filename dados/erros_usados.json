@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "tecnologia": "tecnoligia",
-    "rotina": "rotna"
-  },
-  {
     "suporte": "suprte",
     "operacional": "operacionl"
   },
@@ -87,5 +82,9 @@
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exenplo"
   }
 ]
