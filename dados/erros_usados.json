@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "operacional": "operacionl"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
   },
@@ -86,5 +82,9 @@
   {
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
+  },
+  {
+    "sistema": "cistema",
+    "abordagem": "abordage"
   }
 ]
