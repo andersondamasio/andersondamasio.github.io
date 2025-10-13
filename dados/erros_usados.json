@@ -1,9 +1,5 @@
 [
   {
-    "geralmente": "geralmemte",
-    "sistema": "cistema"
-  },
-  {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia"
   },
@@ -86,5 +82,9 @@
   {
     "estrutura": "estrututra",
     "necessidade": "necessidade."
+  },
+  {
+    "constante": "constate",
+    "muito": "muto"
   }
 ]
