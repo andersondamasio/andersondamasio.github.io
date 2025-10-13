@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "sistema": "cistema"
-  },
-  {
     "funcionalidade": "funcionalidade."
   },
   {
@@ -87,5 +83,10 @@
     "dispositivo": "dispotivo",
     "tecnologia": "tecnolgia",
     "gerenciamento": "gerenciamente"
+  },
+  {
+    "prioridade": "prioriade.",
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitretura"
   }
 ]
