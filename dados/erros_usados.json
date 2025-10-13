@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constate",
-    "muito": "muto"
-  },
-  {
     "problema": "problema.",
     "estrutura": "estrura",
     "funcionalidade": "funcionaliade"
@@ -89,5 +85,10 @@
   {
     "processo": "processso",
     "exemplo": "exemplo,"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "sistema": "sistma",
+    "problema": "probrema"
   }
 ]
