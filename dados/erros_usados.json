@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "melhor": "melor",
     "desenvolvimento": "desenvolmento",
     "controle": "controle."
@@ -86,5 +82,10 @@
   {
     "constante": "constate",
     "muito": "muto"
+  },
+  {
+    "problema": "problema.",
+    "estrutura": "estrura",
+    "funcionalidade": "funcionaliade"
   }
 ]
