@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "abordagem": "abordajem",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funciona": "funciona,",
     "componente": "componete",
     "controle": "controlle"
@@ -89,5 +84,10 @@
   {
     "muito": "muto",
     "simples": "simlpes"
+  },
+  {
+    "muito": "muiito",
+    "estrutura": "estrututra",
+    "dispositivo": "dispotivo"
   }
 ]
