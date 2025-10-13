@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "processo": "prosseso"
-  },
-  {
     "dispositivo": "disposotivo",
     "sistema": "cistema",
     "tecnologia": "tecnnologia"
@@ -91,5 +87,10 @@
     "mensagem": "menssagen",
     "simples": "simlpes",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "acesso": "acesso.",
+    "exemplo": "exenplo"
   }
 ]
