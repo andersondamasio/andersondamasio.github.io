@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "sistema": "cistema"
   },
@@ -86,5 +82,10 @@
   {
     "sistema": "cistema",
     "abordagem": "abordage"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "tecnologia": "tecnolgia",
+    "gerenciamento": "gerenciamente"
   }
 ]
