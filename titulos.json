@@ -32753,5 +32753,14 @@
     "dataFonte": "2025-10-13T09:46:43.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/this-20-gadget-will-change-how-you-interact-with-alexa-and-your-smart-home/"
+  },
+  {
+    "titulo": "Desvendando os Canais do Go: A Magia da Concurrência Segura",
+    "noticiaOriginal": "Article: Go Channels: Understanding Happens-Before for Safe Concurrency",
+    "url": "artigos/programacao/desvendando-os-canais-do-go-a-magia-da-concurrencia-segura.html",
+    "data": "2025-10-13T11:17:21.183Z",
+    "dataFonte": "2025-10-13T11:05:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/articles/go-channels-happens-before-concurrency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "dispositivo": "disposotivo",
-    "computador": "computador,"
-  },
-  {
     "carregamento": "carregamneto"
   },
   {
@@ -90,5 +85,10 @@
     "virtual": "virtual.",
     "simples": "simplis",
     "controle": "controlle"
+  },
+  {
+    "executado": "excutado",
+    "exemplo": "exemplo,",
+    "monitoramento": "monitramento"
   }
 ]
