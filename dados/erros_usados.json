@@ -1,8 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "virtual": "virtuaal",
     "dispositivo": "disposotivo",
     "computador": "computador,"
@@ -88,5 +85,10 @@
     "prioridade": "prioriade.",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "virtual": "virtual.",
+    "simples": "simplis",
+    "controle": "controlle"
   }
 ]
