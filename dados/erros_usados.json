@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "abordagem": "abordage"
-  },
-  {
     "dispositivo": "dispotivo",
     "tecnologia": "tecnolgia",
     "gerenciamento": "gerenciamente"
@@ -90,5 +86,9 @@
     "propriedade": "proprieade",
     "desafio": "desaío",
     "controle": "controlle"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "necessidade": "nescessidade"
   }
 ]
