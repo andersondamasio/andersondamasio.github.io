@@ -1,9 +1,5 @@
 [
   {
-    "processo": "processso",
-    "exemplo": "exemplo,"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "sistema": "sistma",
     "problema": "probrema"
@@ -89,5 +85,9 @@
   {
     "dispositivo": "dispotivo",
     "sistema": "sistéma"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "arquitetura": "arquiteturra"
   }
 ]
