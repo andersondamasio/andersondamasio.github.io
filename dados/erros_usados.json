@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia"
-  },
-  {
     "carregamento": "carregameno",
     "problema": "problema."
   },
@@ -86,5 +83,10 @@
     "computador": "computadorr",
     "problema": "problema.",
     "desafio": "desafío"
+  },
+  {
+    "sistema": "sistma",
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquiteturra"
   }
 ]
