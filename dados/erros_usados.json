@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "desafio": "desafiu"
-  },
-  {
     "mensagem": "menssagen",
     "simples": "simlpes",
     "tecnologia": "tecnnologia"
@@ -87,5 +83,10 @@
   {
     "arquitetura": "arquiteturra",
     "controle": "controle."
+  },
+  {
+    "complexidade": "complezidade",
+    "problema": "probrema",
+    "sistema": "sistma"
   }
 ]
