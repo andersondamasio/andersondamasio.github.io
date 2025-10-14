@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "dispositivo": "disposotivo",
-    "sistema": "sistéma"
-  },
-  {
     "processo": "processso",
     "exemplo": "exemplo,"
   },
@@ -90,5 +85,9 @@
     "simples": "simplis",
     "categoria": "categória",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "sistema": "sistéma"
   }
 ]
