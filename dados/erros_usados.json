@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtual.",
-    "simples": "simplis",
-    "controle": "controlle"
-  },
-  {
     "executado": "excutado",
     "exemplo": "exemplo,",
     "monitoramento": "monitramento"
@@ -88,5 +83,10 @@
   {
     "abordagem": "abordagem.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "controle": "controlle",
+    "carregamento": "carregamneto"
   }
 ]
