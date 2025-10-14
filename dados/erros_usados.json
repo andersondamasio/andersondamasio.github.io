@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "tecnologia": "tecnolgia",
-    "gerenciamento": "gerenciamente"
-  },
-  {
     "prioridade": "prioriade.",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitretura"
@@ -90,5 +85,9 @@
   {
     "tecnologia": "tecnoligia",
     "necessidade": "nescessidade"
+  },
+  {
+    "exemplo": "exemplo,",
+    "funcionalidade": "funcionalidade."
   }
 ]
