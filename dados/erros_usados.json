@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "virtual": "virtual.",
     "simples": "simplis",
     "controle": "controlle"
@@ -89,5 +84,9 @@
   {
     "exemplo": "exemplo,",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "abordagem": "abordagem.",
+    "tecnologia": "tecnoligia"
   }
 ]
