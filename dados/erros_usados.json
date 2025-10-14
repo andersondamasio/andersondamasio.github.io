@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "sistema": "sistéma",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
   },
@@ -89,5 +84,10 @@
   {
     "suporte": "suportte",
     "monitoramento": "monitoramento."
+  },
+  {
+    "recurso": "reccurso",
+    "funcionalidade": "funcionaliadde",
+    "tecnologia": "tecnolgia"
   }
 ]
