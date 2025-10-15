@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "abordagem": "abordagem.",
     "tecnologia": "tecnoligia"
   },
@@ -89,5 +85,10 @@
     "funcionalidade": "funcionaliade",
     "sistema": "sistéma",
     "arquitetura": "arquitertura"
+  },
+  {
+    "automatizado": "automatizdo.",
+    "operacional": "operaciona",
+    "dispositivo": "dispositivo."
   }
 ]
