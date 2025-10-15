@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "monitoramento": "monitorameto",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "melhor": "melhorr",
     "funcionalidade": "funcionaliade",
     "arquitetura": "arquitertura"
@@ -88,5 +83,10 @@
   {
     "suporte": "suprte",
     "gerenciamento": "gerenciamente"
+  },
+  {
+    "controle": "controlle",
+    "sistema": "sistma",
+    "processo": "prosseso"
   }
 ]
