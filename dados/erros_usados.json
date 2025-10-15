@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "parceria": "parcería"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "sistema": "sistéma",
     "arquitetura": "arquitertura"
@@ -88,5 +84,10 @@
     "prioridade": "prioriade",
     "recurso": "recuro",
     "abordagem": "abordajem"
+  },
+  {
+    "geralmente": "geralmete",
+    "acesso": "aceso",
+    "mensagem": "menssagen"
   }
 ]
