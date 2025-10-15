@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "sistema": "sistéma"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "arquitetura": "arquiteturra"
   },
@@ -87,5 +83,10 @@
   {
     "conectado": "conectdo",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "desafio": "desafiu",
+    "constante": "constate",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
