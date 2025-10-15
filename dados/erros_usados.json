@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "categoria": "categória",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "dispositivo": "dispotivo",
     "sistema": "sistéma"
   },
@@ -88,5 +83,9 @@
     "arquitetura": "arquitertura",
     "virtual": "virtual.",
     "exemplo": "exenplo"
+  },
+  {
+    "conectado": "conectdo",
+    "arquitetura": "arquiteturra"
   }
 ]
