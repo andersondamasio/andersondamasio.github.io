@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "utilizado": "utilizdo"
-  },
-  {
     "virtual": "virtuaal",
     "parceria": "parcería"
   },
@@ -87,5 +83,10 @@
   {
     "funciona": "funsiona",
     "dispositivo": "dispositivo."
+  },
+  {
+    "prioridade": "prioriade",
+    "recurso": "recuro",
+    "abordagem": "abordajem"
   }
 ]
