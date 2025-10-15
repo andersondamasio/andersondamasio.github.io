@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "problema": "probrema",
-    "sistema": "sistma"
-  },
-  {
     "internet": "internert",
     "muito": "muto"
   },
@@ -90,5 +85,9 @@
   {
     "tecnologia": "tecnnologia",
     "monitoramento": "monitorameto"
+  },
+  {
+    "carregamento": "carregamento.",
+    "dispositivo": "dispotivo"
   }
 ]
