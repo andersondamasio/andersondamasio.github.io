@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "tecnologia": "tecnolgia",
-    "sistema": "cistema"
-  },
-  {
     "melhor": "melhorr",
     "abordagem": "abordajem",
     "arquitetura": "arquiteturra"
@@ -88,5 +83,10 @@
   {
     "componente": "componete",
     "simples": "simplis"
+  },
+  {
+    "sistema": "sistéma",
+    "tecnologia": "tecnolgia",
+    "melhor": "melhorr"
   }
 ]
