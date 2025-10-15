@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "necessidade": "nescessidade"
-  },
-  {
     "exemplo": "exemplo,",
     "funcionalidade": "funcionalidade."
   },
@@ -88,5 +84,10 @@
   {
     "virtual": "virtuaal",
     "parceria": "parcería"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "sistema": "sistéma",
+    "arquitetura": "arquitertura"
   }
 ]
