@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "controle": "controle."
-  },
-  {
     "complexidade": "complezidade",
     "problema": "probrema",
     "sistema": "sistma"
@@ -90,5 +86,9 @@
   {
     "desenvolvimento": "desenvolvimente",
     "monitoramento": "monitoramento."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "monitoramento": "monitorameto"
   }
 ]
