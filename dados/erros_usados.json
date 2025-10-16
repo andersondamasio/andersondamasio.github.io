@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "abordagem": "abordagem.",
-    "parceria": "parceriaa"
-  },
-  {
     "arquitetura": "arquitertura",
     "virtual": "virtual.",
     "exemplo": "exenplo"
@@ -90,5 +85,10 @@
     "internet": "internat",
     "exemplo": "exemplo.",
     "dispositivo": "disposotivo"
+  },
+  {
+    "abordagem": "abordage",
+    "exemplo": "exemplo,",
+    "prioridade": "prioriade"
   }
 ]
