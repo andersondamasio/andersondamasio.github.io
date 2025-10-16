@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "monitoramento": "monitorameto"
-  },
-  {
     "carregamento": "carregamento.",
     "dispositivo": "dispotivo"
   },
@@ -88,5 +84,9 @@
   {
     "paralelo": "paraleloo",
     "suporte": "suprte"
+  },
+  {
+    "necessidade": "necessidade.",
+    "funciona": "funciona."
   }
 ]
