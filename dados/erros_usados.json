@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "correto": "corretoo",
     "geralmente": "geralmete",
     "exemplo": "exemplo."
@@ -92,5 +88,10 @@
     "arquitetura": "arquitretura",
     "acesso": "acesço",
     "parceria": "parcería"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "tecnologia": "tecnnologia",
+    "sistema": "sistéma"
   }
 ]
