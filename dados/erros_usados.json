@@ -1,9 +1,5 @@
 [
   {
-    "paralelo": "paraleloo",
-    "suporte": "suprte"
-  },
-  {
     "necessidade": "necessidade.",
     "funciona": "funciona."
   },
@@ -93,5 +89,10 @@
     "rotina": "rotna",
     "tecnologia": "tecnoligia",
     "conhecimento": "conhescimento"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "conectado": "conectado.",
+    "carregamento": "carregamneto"
   }
 ]
