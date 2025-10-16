@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "resultado": "resultao"
-  },
-  {
     "estrutura": "estrura",
     "muito": "muinto"
   },
@@ -89,5 +85,10 @@
     "tecnologia": "tecnnologia",
     "mensagem": "mensagen",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "constante": "constate",
+    "abordagem": "abordage",
+    "simples": "cimples"
   }
 ]
