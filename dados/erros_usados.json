@@ -1,10 +1,5 @@
 [
   {
-    "computador": "computador,",
-    "sistema": "sistéma",
-    "recurso": "recusso"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnolgia"
   },
@@ -92,5 +87,10 @@
     "abordagem": "abordage",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "acesso": "acesço",
+    "parceria": "parcería"
   }
 ]
