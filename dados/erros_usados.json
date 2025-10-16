@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "recurso": "recuro",
-    "abordagem": "abordajem"
-  },
-  {
     "geralmente": "geralmete",
     "acesso": "aceso",
     "mensagem": "menssagen"
@@ -92,5 +87,10 @@
     "problema": "poblema",
     "conhecimento": "conhecimeto",
     "sistema": "cistema"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "desenvolvimento": "desenvolvimente",
+    "acesso": "aceso"
   }
 ]
