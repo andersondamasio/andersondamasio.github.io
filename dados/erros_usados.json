@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "dispositivo": "dispotivo"
-  },
-  {
     "complexidade": "complexsidade",
     "resultado": "resultao"
   },
@@ -88,5 +84,10 @@
   {
     "necessidade": "necessidade.",
     "funciona": "funciona."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "mensagem": "mensagen",
+    "arquitetura": "arquiteturra"
   }
 ]
