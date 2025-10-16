@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "constante": "constate",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "componente": "componete",
     "simples": "simplis"
   },
@@ -90,5 +85,10 @@
     "parceria": "parcería",
     "estrutura": "estrura",
     "processo": "proceso"
+  },
+  {
+    "muito": "muiito",
+    "simples": "simlpes",
+    "abordagem": "abordajem"
   }
 ]
