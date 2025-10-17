@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "funciona": "funciona."
-  },
-  {
     "tecnologia": "tecnnologia",
     "mensagem": "mensagen",
     "arquitetura": "arquiteturra"
@@ -94,5 +90,9 @@
     "gerenciamento": "gerenciamneto",
     "conectado": "conectado.",
     "carregamento": "carregamneto"
+  },
+  {
+    "propriedade": "proprieade",
+    "desenvolvimento": "desenvolmento"
   }
 ]
