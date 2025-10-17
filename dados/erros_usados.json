@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "exemplo": "exemplo,",
-    "prioridade": "prioriade"
-  },
-  {
     "suporte": "suportte",
     "desenvolvimento": "desenvolvimente"
   },
@@ -94,5 +89,10 @@
     "necessidade": "nescessidade",
     "dispositivo": "disposotivo",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "tecnologia": "tecnolgia",
+    "necessidade": "necissidade"
   }
 ]
