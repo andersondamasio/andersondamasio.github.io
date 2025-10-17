@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "parceria": "parcería",
     "estrutura": "estrura",
     "processo": "proceso"
@@ -94,5 +90,10 @@
     "conhecimento": "conhecimeto",
     "tecnologia": "tecnolgia",
     "necessidade": "necissidade"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "funcionalidade": "funcionaliadde",
+    "sistema": "sistéma"
   }
 ]
