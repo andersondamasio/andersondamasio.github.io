@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "exemplo": "exemplo,"
-  },
-  {
     "geralmente": "geralmete",
     "suporte": "suportte",
     "melhor": "melhorr"
@@ -94,5 +90,9 @@
     "desafio": "desaío",
     "monitoramento": "monitramento",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "desafio": "desafío",
+    "tecnologia": "tecnolgia"
   }
 ]
