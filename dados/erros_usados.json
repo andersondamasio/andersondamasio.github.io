@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "acesso": "acesço",
-    "parceria": "parcería"
-  },
-  {
     "dispositivo": "dispotivo",
     "tecnologia": "tecnnologia",
     "sistema": "sistéma"
@@ -94,5 +89,10 @@
   {
     "automatizado": "automatisado",
     "suporte": "suporte."
+  },
+  {
+    "problema": "problema.",
+    "conhecimento": "conhecimento.",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
