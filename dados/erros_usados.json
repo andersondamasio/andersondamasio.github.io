@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "tecnologia": "tecnnologia",
-    "sistema": "sistéma"
-  },
-  {
     "rotina": "rotna",
     "tecnologia": "tecnoligia",
     "conhecimento": "conhescimento"
@@ -94,5 +89,10 @@
     "problema": "problema.",
     "conhecimento": "conhecimento.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "sistema": "sistma",
+    "necessidade": "necessidade.",
+    "arquitetura": "arquiteturra"
   }
 ]
