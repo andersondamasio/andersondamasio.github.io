@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "estrutura": "estrura",
-    "processo": "proceso"
-  },
-  {
     "muito": "muiito",
     "simples": "simlpes",
     "abordagem": "abordajem"
@@ -95,5 +90,10 @@
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionaliadde",
     "sistema": "sistéma"
+  },
+  {
+    "mensagem": "menssagen",
+    "desafio": "desafiu",
+    "necessidade": "necessidade."
   }
 ]
