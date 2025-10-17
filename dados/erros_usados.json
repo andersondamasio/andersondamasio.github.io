@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "tecnologia": "tecnnologia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "arquitetura": "arquitretura",
     "acesso": "acesço",
     "parceria": "parcería"
@@ -95,5 +90,9 @@
     "geralmente": "geralment",
     "complexidade": "complexsidade",
     "exemplo": "exenplo"
+  },
+  {
+    "automatizado": "automatisado",
+    "suporte": "suporte."
   }
 ]
