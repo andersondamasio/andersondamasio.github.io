@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotna",
-    "tecnologia": "tecnoligia",
-    "conhecimento": "conhescimento"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "conectado": "conectado.",
     "carregamento": "carregamneto"
@@ -94,5 +89,10 @@
     "sistema": "sistma",
     "necessidade": "necessidade.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "estrutura": "estrtura",
+    "utilizado": "utilizado.",
+    "monitoramento": "monitramento"
   }
 ]
