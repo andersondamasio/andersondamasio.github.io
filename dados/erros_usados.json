@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "exemplo": "exemplo.",
-    "dispositivo": "disposotivo"
-  },
-  {
     "abordagem": "abordage",
     "exemplo": "exemplo,",
     "prioridade": "prioriade"
@@ -94,5 +89,10 @@
     "constante": "constate",
     "acesso": "acesço",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "necessidade": "nescessidade",
+    "dispositivo": "disposotivo",
+    "funcionalidade": "funcionalidade."
   }
 ]
