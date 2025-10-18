@@ -1,10 +1,5 @@
 [
   {
-    "processo": "processso",
-    "tecnologia": "tecnoligia",
-    "acesso": "acesço"
-  },
-  {
     "internet": "internete",
     "simples": "simplis",
     "arquitetura": "arquitretura"
@@ -90,5 +85,9 @@
     "funcionalidade": "funcionaliadde",
     "prioridade": "prioriade.",
     "muito": "muiito"
+  },
+  {
+    "recurso": "recusso",
+    "desafio": "desaío"
   }
 ]
