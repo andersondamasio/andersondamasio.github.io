@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "funcionalidade": "funcionaliadde",
-    "sistema": "sistéma"
-  },
-  {
     "mensagem": "menssagen",
     "desafio": "desafiu",
     "necessidade": "necessidade."
@@ -91,5 +86,9 @@
   {
     "funciona": "funciona.",
     "componente": "componete"
+  },
+  {
+    "prioridade": "prioridade.",
+    "armazenamento": "armazanamento"
   }
 ]
