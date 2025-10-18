@@ -33770,5 +33770,14 @@
     "dataFonte": "2025-10-18T12:00:00.000Z",
     "categoria": "DevOps",
     "urlFonte": "https://www.infoq.com/news/2025/10/flipkart-prometheus-80million/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A Nova Era da Segurança em Nuvem: Entendendo a Atestação de Instâncias EC2 da AWS",
+    "noticiaOriginal": "AWS Introduces EC2 Instance Attestation",
+    "url": "artigos/seguranca/a-nova-era-da-seguranca-em-nuvem-entendendo-a-atestacao-de-instancias-ec2-da-aws.html",
+    "data": "2025-10-18T13:24:49.708Z",
+    "dataFonte": "2025-10-18T13:05:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2025/10/ec2-instance-attestation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

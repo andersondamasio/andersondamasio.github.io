@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "tecnologia": "tecnnologia",
-    "necessidade": "nescessidade"
-  },
-  {
     "geralmente": "geralment",
     "complexidade": "complexsidade",
     "exemplo": "exenplo"
@@ -88,5 +83,9 @@
   {
     "arquitetura": "arquitertura",
     "armazenamento": "armazenamentto"
+  },
+  {
+    "acesso": "acesço",
+    "processo": "prosseso"
   }
 ]
