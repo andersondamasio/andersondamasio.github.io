@@ -33761,5 +33761,14 @@
     "dataFonte": "2025-10-18T11:00:40.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/ive-yet-to-find-a-pair-of-bluetooth-earbuds-that-nails-comfort-audio-and-price-like-this-one/"
+  },
+  {
+    "titulo": "Como a Flipkart Transformou sua Escalabilidade com Prometheus e Federações Hierárquicas",
+    "noticiaOriginal": "Flipkart Scales Prometheus to 80 Million Metrics Using Hierarchical Federation",
+    "url": "artigos/devops/como-a-flipkart-transformou-sua-escalabilidade-com-prometheus-e-federacoes-hierarquicas.html",
+    "data": "2025-10-18T12:36:47.833Z",
+    "dataFonte": "2025-10-18T12:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2025/10/flipkart-prometheus-80million/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
