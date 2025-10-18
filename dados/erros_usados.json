@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "tecnologia": "tecnoligia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "controle": "contrle",
     "gerenciamento": "gerenciamnto"
   },
@@ -86,5 +81,10 @@
   {
     "conhecimento": "conhescimento",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "acesso": "acesço",
+    "sistema": "sistéma"
   }
 ]
