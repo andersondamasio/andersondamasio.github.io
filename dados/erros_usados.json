@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "processo": "prosseso",
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvmento"
@@ -86,5 +82,9 @@
     "exemplo": "exemplo.",
     "tecnologia": "tecnnologia",
     "gerenciamento": "gerenciamnto"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "tecnologia": "tecnolgia"
   }
 ]
