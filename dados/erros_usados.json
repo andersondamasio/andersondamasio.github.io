@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "tecnologia": "tecnolgia",
-    "necessidade": "necissidade"
-  },
-  {
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionaliadde",
     "sistema": "sistéma"
@@ -92,5 +87,9 @@
     "tecnologia": "tecnolgia",
     "controle": "controlle",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "funciona": "funciona.",
+    "componente": "componete"
   }
 ]
