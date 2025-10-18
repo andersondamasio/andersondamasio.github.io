@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "desafio": "desafiu"
-  },
-  {
     "muito": "muiito",
     "dispositivo": "disposotivo"
   },
@@ -86,5 +82,10 @@
   {
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "tecnologia": "tecnolgia",
+    "muito": "muinto"
   }
 ]
