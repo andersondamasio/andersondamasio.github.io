@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "acesso": "acesço",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "necessidade": "nescessidade",
     "dispositivo": "disposotivo",
     "funcionalidade": "funcionalidade."
@@ -92,5 +87,10 @@
   {
     "muito": "muiito",
     "dispositivo": "disposotivo"
+  },
+  {
+    "abordagem": "abordage",
+    "desafio": "desafiu",
+    "gerenciamento": "gerenciamente"
   }
 ]
