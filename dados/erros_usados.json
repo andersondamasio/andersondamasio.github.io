@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "tecnologia": "tecnnologia",
     "necessidade": "necissidade"
   },
@@ -86,5 +82,9 @@
     "arquitetura": "arquitretura",
     "acesso": "acesço",
     "sistema": "sistéma"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "monitoramento": "monitorameto"
   }
 ]
