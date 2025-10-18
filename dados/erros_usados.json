@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "necessidade": "necissidade"
-  },
-  {
     "tecnologia": "tecnoligia",
     "desafio": "desafiu"
   },
@@ -86,5 +82,9 @@
   {
     "desenvolvimento": "desenvolmento",
     "monitoramento": "monitorameto"
+  },
+  {
+    "exemplo": "exenplo",
+    "tecnologia": "tecnoligia"
   }
 ]
