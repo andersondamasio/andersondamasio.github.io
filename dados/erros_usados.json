@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "dispositivo": "disposotivo",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "conhecimento": "conhecimeto",
     "tecnologia": "tecnolgia",
     "necessidade": "necissidade"
@@ -92,5 +87,10 @@
     "abordagem": "abordage",
     "desafio": "desafiu",
     "gerenciamento": "gerenciamente"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "controle": "controlle",
+    "funcionalidade": "funcionaliadde"
   }
 ]
