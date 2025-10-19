@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "monitoramento": "monitorameto"
-  },
-  {
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia"
   },
@@ -91,5 +87,10 @@
     "estrutura": "estrtura",
     "mensagem": "menssagem",
     "desafio": "desafiu"
+  },
+  {
+    "funciona": "funsiona",
+    "arquitetura": "arquitretura",
+    "exemplo": "exemplo,"
   }
 ]
