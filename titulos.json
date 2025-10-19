@@ -33887,5 +33887,14 @@
     "dataFonte": "2025-10-17T18:13:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/slow-internet-at-home-3-things-i-always-inspect-first-to-get-faster-wi-fi-speeds/"
+  },
+  {
+    "titulo": "Talos Linux: A Nova Era da Imutabilidade e Segurança no Kubernetes",
+    "noticiaOriginal": "Talos Linux: Bringing Immutability and Security to Kubernetes Operations",
+    "url": "artigos/devops/talos-linux-a-nova-era-da-imutabilidade-e-seguranca-no-kubernetes.html",
+    "data": "2025-10-19T04:23:18.005Z",
+    "dataFonte": "2025-10-17T17:30:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2025/10/talos-linux-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
