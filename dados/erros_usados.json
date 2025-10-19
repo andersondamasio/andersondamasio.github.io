@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "arquitetura": "arquitretura",
     "acesso": "acesço",
     "sistema": "sistéma"
@@ -90,5 +86,10 @@
   {
     "constante": "constate",
     "arquitetura": "arquitretura"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "desafio": "desafío",
+    "muito": "muinto"
   }
 ]
