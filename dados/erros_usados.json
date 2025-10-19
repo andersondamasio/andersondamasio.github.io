@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "armazenamento": "armazenamentto"
-  },
-  {
     "acesso": "acesço",
     "processo": "prosseso"
   },
@@ -87,5 +83,10 @@
   },
   {
     "dispositivo": "dispotivo"
+  },
+  {
+    "muito": "muto",
+    "arquitetura": "arquitertura",
+    "melhor": "melor"
   }
 ]
