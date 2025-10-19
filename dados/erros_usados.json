@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "componente": "componete"
-  },
-  {
     "prioridade": "prioridade.",
     "armazenamento": "armazanamento"
   },
@@ -88,5 +84,9 @@
     "abordagem": "abordage",
     "necessidade": "necissidade",
     "complexidade": "complexsidade"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "processo": "processso"
   }
 ]
