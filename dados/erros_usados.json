@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "processo": "prosseso"
-  },
-  {
     "constante": "constante.",
     "sistema": "sistma"
   },
@@ -88,5 +84,10 @@
     "muito": "muto",
     "arquitetura": "arquitertura",
     "melhor": "melor"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "dispositivo": "dispotivo",
+    "simples": "simplis"
   }
 ]
