@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "problema": "poblema",
-    "acesso": "aceso"
-  },
-  {
     "abordagem": "abordage",
     "necessidade": "necissidade",
     "complexidade": "complexsidade"
@@ -93,5 +88,10 @@
     "armazenamento": "armasenamento",
     "tecnologia": "tecnnologia",
     "dispositivo": "dispotivo"
+  },
+  {
+    "computador": "computadorr",
+    "sistema": "sistéma",
+    "funciona": "funsiona"
   }
 ]
