@@ -34040,5 +34040,14 @@
     "dataFonte": "2025-10-19T10:30:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.wired.com/story/gemini-in-google-home-keeps-mistaking-my-dog-for-a-cat/"
+  },
+  {
+    "titulo": "A nova onda do BYOK: como o AWS IAM Identity Center eleva a segurança na nuvem",
+    "noticiaOriginal": "Bring Your Own Key (BYOK): AWS IAM Identity Center Adopts CMKs to Meet Enterprise Compliance Needs",
+    "url": "artigos/seguranca/a-nova-onda-do-byok-como-o-aws-iam-identity-center-eleva-a-seguranca-na-nuvem.html",
+    "data": "2025-10-19T21:17:56.829Z",
+    "dataFonte": "2025-10-19T10:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2025/10/aws-identity-cmk-compliance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
