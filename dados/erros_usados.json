@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "armazenamento": "armazanamento"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "prioridade": "prioriade.",
     "muito": "muiito"
@@ -88,5 +84,10 @@
   {
     "funcionalidade": "funcionalidade.",
     "processo": "processso"
+  },
+  {
+    "resultado": "resultao",
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnnologia"
   }
 ]
