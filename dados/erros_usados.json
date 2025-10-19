@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "sistema": "cistema"
-  },
-  {
     "simples": "simplis",
     "rotina": "rotína",
     "virtual": "virtuaal"
@@ -90,5 +86,10 @@
     "suporte": "suprte",
     "desenvolvimento": "desenvolvimente",
     "dispositivo": "disposotivo"
+  },
+  {
+    "operacional": "operaciona",
+    "dispositivo": "dispositivo.",
+    "sistema": "sistéma"
   }
 ]
