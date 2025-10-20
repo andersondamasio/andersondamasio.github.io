@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muto",
-    "arquitetura": "arquitertura",
-    "melhor": "melor"
-  },
-  {
     "tecnologia": "tecnnologia",
     "dispositivo": "dispotivo",
     "simples": "simplis"
@@ -95,5 +90,9 @@
     "funciona": "funciona.",
     "muito": "muto",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "sistema": "cistema"
   }
 ]
