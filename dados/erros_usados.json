@@ -1,8 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo"
-  },
-  {
     "muito": "muto",
     "arquitetura": "arquitertura",
     "melhor": "melor"
@@ -93,5 +90,10 @@
     "conhecimento": "conhescimento",
     "tecnologia": "tecnnologia",
     "exemplo": "exenplo"
+  },
+  {
+    "funciona": "funciona.",
+    "muito": "muto",
+    "tecnologia": "tecnoligia"
   }
 ]
