@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "recurso": "recuro",
-    "melhor": "melhorr"
-  },
-  {
     "dispositivo": "disposotivo",
     "funcionalidade": "funcionaliadde"
   },
@@ -93,5 +88,9 @@
   {
     "abordagem": "abordajem",
     "arquitetura": "arquitertura"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "tecnologia": "tecnoligia"
   }
 ]
