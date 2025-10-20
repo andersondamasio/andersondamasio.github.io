@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "desenvolvimento": "desenvolvimente",
-    "dispositivo": "disposotivo"
-  },
-  {
     "operacional": "operaciona",
     "dispositivo": "dispositivo.",
     "sistema": "sistéma"
@@ -94,5 +89,8 @@
     "controle": "controlle",
     "simples": "cimples",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "funcionalidade": "funcionalidade."
   }
 ]
