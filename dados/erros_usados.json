@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "dispositivo": "dispositivo.",
-    "sistema": "sistéma"
-  },
-  {
     "dispositivo": "disposotivo",
     "resultado": "resultao",
     "sistema": "sistma"
@@ -92,5 +87,10 @@
   },
   {
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "problema": "poblema",
+    "desenvolvimento": "desenvolmento",
+    "abordagem": "abordajem"
   }
 ]
