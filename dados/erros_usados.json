@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constate",
-    "arquitetura": "arquitretura"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "desafio": "desafío",
     "muito": "muinto"
@@ -91,5 +87,10 @@
   {
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "suporte": "suporte.",
+    "muito": "muinto",
+    "sistema": "sistma"
   }
 ]
