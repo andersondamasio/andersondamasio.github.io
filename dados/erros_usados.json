@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "resultado": "resultao",
-    "sistema": "sistma"
-  },
-  {
     "dispositivo": "dispositivo.",
     "melhor": "melor",
     "tecnologia": "tecnolgia"
@@ -92,5 +87,10 @@
     "problema": "poblema",
     "desenvolvimento": "desenvolmento",
     "abordagem": "abordajem"
+  },
+  {
+    "consistente": "consiteente",
+    "controle": "controle.",
+    "desafio": "desafío"
   }
 ]
