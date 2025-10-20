@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "dispositivo": "dispotivo"
   },
   {
@@ -92,5 +88,10 @@
   {
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "tecnologia": "tecnnologia",
+    "exemplo": "exenplo"
   }
 ]
