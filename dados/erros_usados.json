@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "sistema": "sistéma"
-  },
-  {
     "recurso": "reccurso",
     "sistema": "cistema",
     "estrutura": "estrtura"
@@ -91,5 +87,10 @@
   {
     "funciona": "funsiona",
     "sistema": "sistma"
+  },
+  {
+    "mensagem": "menssagen",
+    "suporte": "suprte",
+    "acesso": "acesço"
   }
 ]
