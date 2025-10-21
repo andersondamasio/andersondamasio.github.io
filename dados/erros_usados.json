@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "conhecimento": "conhescimento",
     "tecnologia": "tecnnologia",
     "exemplo": "exenplo"
@@ -90,5 +86,10 @@
   {
     "gerenciamento": "gerenciamnto",
     "virtual": "virtuaal"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "abordagem": "abordagem.",
+    "arquitetura": "arquitertura"
   }
 ]
