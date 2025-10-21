@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "cistema"
-  },
-  {
     "controle": "controlle",
     "simples": "cimples",
     "desenvolvimento": "desenvolvmento"
@@ -90,5 +86,10 @@
   {
     "arquitetura": "arquitretura",
     "problema": "poblema"
+  },
+  {
+    "processo": "prosseso",
+    "exemplo": "exemplo.",
+    "arquitetura": "arquitertura"
   }
 ]
