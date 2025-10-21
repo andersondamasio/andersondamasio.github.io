@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "sistema": "cistema",
-    "estrutura": "estrtura"
-  },
-  {
     "carregamento": "carregameno",
     "armazenamento": "armasenamento",
     "simples": "cimples"
@@ -92,5 +87,10 @@
     "mensagem": "menssagen",
     "suporte": "suprte",
     "acesso": "acesço"
+  },
+  {
+    "problema": "probrema",
+    "tecnologia": "tecnolgia",
+    "sistema": "sistma"
   }
 ]
