@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "virtual": "virtuaal"
-  },
-  {
     "tecnologia": "tecnolgia",
     "abordagem": "abordagem.",
     "arquitetura": "arquitertura"
@@ -92,5 +88,9 @@
     "internet": "internat",
     "abordagem": "abordagem.",
     "acesso": "acesço"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
