@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "exemplo": "exenplo"
-  },
-  {
     "dispositivo": "dispositivo.",
     "simples": "simlpes",
     "computador": "computador."
@@ -92,5 +88,10 @@
     "funcionalidade": "funcionaliadde",
     "internet": "internert",
     "necessidade": "necissidade"
+  },
+  {
+    "desafio": "desafío",
+    "arquitetura": "arquiteturra",
+    "sistema": "sistéma"
   }
 ]
