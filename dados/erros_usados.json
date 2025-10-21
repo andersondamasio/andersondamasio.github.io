@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "simples": "simlpes",
-    "computador": "computador."
-  },
-  {
     "automatizado": "automatisado",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnolgia"
@@ -93,5 +88,10 @@
     "desafio": "desafío",
     "arquitetura": "arquiteturra",
     "sistema": "sistéma"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitretura",
+    "exemplo": "exenplo"
   }
 ]
