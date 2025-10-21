@@ -34382,5 +34382,14 @@
     "dataFonte": "2025-10-21T14:15:14.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.zdnet.com/article/running-windows-11-install-this-emergency-patch-before-you-use-recovery-mode-heres-why/"
+  },
+  {
+    "titulo": "Desmistificando a Relação entre Domínios e Contextos Limitados na Arquitetura de Software",
+    "noticiaOriginal": "Fragments and Links",
+    "url": "artigos/programacao/desmistificando-a-relacao-entre-dominios-e-contextos-limitados-na-arquitetura-de-software.html",
+    "data": "2025-10-21T15:20:44.250Z",
+    "dataFonte": "2025-10-21T15:02:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://martinfowler.com/articles/20251021-frags.html"
   }
 ]

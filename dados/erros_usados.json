@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "armazenamento": "armasenamento",
-    "simples": "cimples"
-  },
-  {
     "componente": "componete",
     "muito": "muiito",
     "tecnologia": "tecnolgia"
@@ -92,5 +87,10 @@
     "problema": "probrema",
     "tecnologia": "tecnolgia",
     "sistema": "sistma"
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "sistema": "sistéma",
+    "simples": "simplis"
   }
 ]
