@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "acesso": "acesso.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "internet": "internat",
     "abordagem": "abordagem.",
     "acesso": "acesço"
@@ -93,5 +88,10 @@
     "recurso": "recusso",
     "prioridade": "prioridade.",
     "abordagem": "abordagem."
+  },
+  {
+    "desafio": "desaío",
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnnologia"
   }
 ]
