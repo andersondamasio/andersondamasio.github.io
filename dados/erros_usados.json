@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "problema": "poblema"
-  },
-  {
     "processo": "prosseso",
     "exemplo": "exemplo.",
     "arquitetura": "arquitertura"
@@ -90,5 +86,9 @@
   {
     "carregamento": "carregamneto",
     "arquitetura": "arquitretura"
+  },
+  {
+    "melhor": "melhorr",
+    "funciona": "funciona,"
   }
 ]
