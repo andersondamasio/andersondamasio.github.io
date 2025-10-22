@@ -1,10 +1,5 @@
 [
   {
-    "mensagem": "menssagen",
-    "suporte": "suprte",
-    "acesso": "acesço"
-  },
-  {
     "problema": "probrema",
     "tecnologia": "tecnolgia",
     "sistema": "sistma"
@@ -93,5 +88,10 @@
     "suporte": "suprte",
     "funciona": "funsiona",
     "internet": "internete"
+  },
+  {
+    "controle": "controlle",
+    "abordagem": "abordage",
+    "exemplo": "exenplo"
   }
 ]
