@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "sistema": "sistéma",
-    "exemplo": "exenplo"
-  },
-  {
     "correto": "correto.",
     "controle": "controle.",
     "geralmente": "geralmemte"
@@ -92,5 +87,10 @@
     "muito": "muinto",
     "acesso": "acesço",
     "sistema": "sistéma"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "sistema": "sistma",
+    "muito": "muto"
   }
 ]
