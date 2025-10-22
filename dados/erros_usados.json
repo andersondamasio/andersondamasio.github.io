@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "sistema": "sistma"
-  },
-  {
     "mensagem": "menssagen",
     "suporte": "suprte",
     "acesso": "acesço"
@@ -92,5 +88,10 @@
     "monitoramento": "monitoramento.",
     "dispositivo": "dispositivo.",
     "operacional": "operacional."
+  },
+  {
+    "suporte": "suprte",
+    "funciona": "funsiona",
+    "internet": "internete"
   }
 ]
