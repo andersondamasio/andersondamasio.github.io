@@ -1,10 +1,5 @@
 [
   {
-    "correto": "correto.",
-    "controle": "controle.",
-    "geralmente": "geralmemte"
-  },
-  {
     "funciona": "funsiona",
     "sistema": "sistma"
   },
@@ -92,5 +87,10 @@
     "tecnologia": "tecnnologia",
     "sistema": "sistma",
     "muito": "muto"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "dispositivo": "dispositivo.",
+    "operacional": "operacional."
   }
 ]
