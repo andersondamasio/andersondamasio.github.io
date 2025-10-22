@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "arquitetura": "arquiteturra",
     "acesso": "acesso.",
     "tecnologia": "tecnnologia"
@@ -92,5 +88,10 @@
   {
     "armazenamento": "armazanamento",
     "sistema": "cistema"
+  },
+  {
+    "recurso": "recusso",
+    "prioridade": "prioridade.",
+    "abordagem": "abordagem."
   }
 ]
