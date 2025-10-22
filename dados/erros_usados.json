@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constate",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "carregamento": "carregamneto",
     "arquitetura": "arquitretura"
   },
@@ -94,5 +90,10 @@
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo,",
     "suporte": "suporte."
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquiteturra"
   }
 ]
