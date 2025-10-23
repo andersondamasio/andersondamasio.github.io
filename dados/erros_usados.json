@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvimente"
   },
@@ -90,5 +85,10 @@
   {
     "monitoramento": "monitorameto",
     "simples": "simlpes"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnolgia",
+    "muito": "muinto"
   }
 ]
