@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "parceria": "parceria.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "virtual": "virtuaal",
     "funcionalidade": "funcionaliade",
     "necessidade": "necissidade"
@@ -95,5 +90,9 @@
   {
     "complexidade": "complezidade",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnolgia"
   }
 ]
