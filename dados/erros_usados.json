@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "arquitetura": "arquiteturra",
-    "abordagem": "abordagem."
-  },
-  {
     "estrutura": "estrututra",
     "acesso": "acesso.",
     "simples": "cimples"
@@ -93,5 +88,9 @@
     "dispositivo": "dispositivo.",
     "gerenciamento": "gerenciamneto",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "gerenciamento": "gerenciamnto"
   }
 ]
