@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "funcionalidade": "funcionaliade",
-    "necessidade": "necissidade"
-  },
-  {
     "operacional": "operacionl",
     "sistema": "cistema",
     "funcionalidade": "funcionaliadde"
@@ -94,5 +89,9 @@
   {
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
