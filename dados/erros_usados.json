@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muinto",
-    "acesso": "acesço",
-    "sistema": "sistéma"
-  },
-  {
     "tecnologia": "tecnnologia",
     "sistema": "sistma",
     "muito": "muto"
@@ -93,5 +88,10 @@
     "necessidade": "necissidade",
     "arquitetura": "arquitertura",
     "abordagem": "abordajem"
+  },
+  {
+    "problema": "probrema",
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitretura"
   }
 ]

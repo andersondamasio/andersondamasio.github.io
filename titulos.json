@@ -34688,5 +34688,14 @@
     "dataFonte": "2025-10-23T03:18:34.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.bbc.com/news/articles/c0rpzrrgqvlo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "Cache envenenado: um novo olhar sobre vulnerabilidades DNS",
+    "noticiaOriginal": "Cache poisoning vulnerabilities found in 2 DNS resolving apps",
+    "url": "artigos/seguranca/cache-envenenado-um-novo-olhar-sobre-vulnerabilidades-dns.html",
+    "data": "2025-10-23T05:22:13.969Z",
+    "dataFonte": "2025-10-22T22:35:41.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/10/bind-warns-of-bugs-that-could-bring-dns-cache-attack-back-from-the-dead/"
   }
 ]
