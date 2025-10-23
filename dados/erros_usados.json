@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "abordagem": "abordage",
-    "exemplo": "exenplo"
-  },
-  {
     "monitoramento": "monitramento",
     "arquitetura": "arquiteturra",
     "abordagem": "abordagem."
@@ -93,5 +88,10 @@
     "muito": "muto",
     "prioridade": "prioriade",
     "suporte": "suportte"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "gerenciamento": "gerenciamneto",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
