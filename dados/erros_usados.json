@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "arquitetura": "arquitertura",
     "suporte": "suporte."
   },
@@ -93,5 +89,10 @@
   {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "computador": "computador,",
+    "desafio": "desafío",
+    "necessidade": "necessidade."
   }
 ]
