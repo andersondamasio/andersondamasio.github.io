@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "simples": "simlpes"
-  },
-  {
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnolgia",
     "muito": "muinto"
@@ -95,5 +91,9 @@
     "prioridade": "prioridade.",
     "constante": "constanate",
     "processo": "proceso"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura"
   }
 ]
