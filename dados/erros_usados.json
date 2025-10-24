@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "conhecimento": "conhecimento.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "abordagem": "abordage",
     "controle": "contrle",
     "acesso": "acesso."
@@ -96,5 +91,10 @@
     "exemplo": "exemplo,",
     "processo": "processso",
     "funciona": "funciona,"
+  },
+  {
+    "suporte": "suporte.",
+    "gerenciamento": "gerenciamneto",
+    "acesso": "acesso."
   }
 ]

@@ -34940,5 +34940,14 @@
     "dataFonte": "2025-10-24T09:00:00.000Z",
     "categoria": "Carreira",
     "urlFonte": "https://www.infoq.com/podcasts/technical-excellence-leadership/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "EBS Volume Clones: Revolução Instantânea em Cópias de Dados na Nuvem",
+    "noticiaOriginal": "AWS Launches EBS Volume Clones for Instant, Crash-Consistent Data Copies",
+    "url": "artigos/cloud/ebs-volume-clones-revolucao-instantanea-em-copias-de-dados-na-nuvem.html",
+    "data": "2025-10-24T10:24:01.059Z",
+    "dataFonte": "2025-10-24T10:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/10/aws-ebs-volume-clones/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
