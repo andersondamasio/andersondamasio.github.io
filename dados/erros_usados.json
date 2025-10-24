@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "acesso": "aceso",
     "conhecimento": "conhecimento.",
     "tecnologia": "tecnoligia"
@@ -95,5 +91,10 @@
     "problema": "poblema",
     "muito": "muiito",
     "suporte": "suprte"
+  },
+  {
+    "exemplo": "exemplo,",
+    "processo": "processso",
+    "funciona": "funciona,"
   }
 ]
