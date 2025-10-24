@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "tecnologia": "tecnnologia",
-    "recurso": "recuro"
-  },
-  {
     "constante": "constate",
     "funciona": "funciona,",
     "melhor": "melhorr"
@@ -96,5 +91,9 @@
     "virtual": "virtual.",
     "processo": "prosseso",
     "exemplo": "exenplo"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "muito": "muto"
   }
 ]
