@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muto",
-    "prioridade": "prioriade",
-    "suporte": "suportte"
-  },
-  {
     "dispositivo": "dispositivo.",
     "gerenciamento": "gerenciamneto",
     "desenvolvimento": "desenvolvmento"
@@ -94,5 +89,10 @@
     "abordagem": "abordagem.",
     "gerenciamento": "gerenciamente",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "problema": "problema.",
+    "arquitetura": "arquitretura",
+    "monitoramento": "monitoramento."
   }
 ]
