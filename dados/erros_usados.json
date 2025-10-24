@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "controle": "contrle",
-    "acesso": "acesso."
-  },
-  {
     "funciona": "funciona.",
     "tecnologia": "tecnnologia",
     "recurso": "recuro"
@@ -96,5 +91,10 @@
     "suporte": "suporte.",
     "gerenciamento": "gerenciamneto",
     "acesso": "acesso."
+  },
+  {
+    "virtual": "virtual.",
+    "processo": "prosseso",
+    "exemplo": "exenplo"
   }
 ]
