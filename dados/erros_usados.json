@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "suporte": "suporte."
-  },
-  {
     "funciona": "funsiona",
     "funcionalidade": "funcionaliadde"
   },
@@ -94,5 +90,10 @@
     "computador": "computador,",
     "desafio": "desafío",
     "necessidade": "necessidade."
+  },
+  {
+    "problema": "poblema",
+    "muito": "muiito",
+    "suporte": "suprte"
   }
 ]
