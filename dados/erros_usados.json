@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtual.",
-    "processo": "prosseso",
-    "exemplo": "exenplo"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "muito": "muto"
   },
@@ -88,5 +83,10 @@
     "sistema": "sistéma",
     "tecnologia": "tecnnologia",
     "abordagem": "abordagem."
+  },
+  {
+    "paralelo": "paralelo.",
+    "controle": "controle.",
+    "monitoramento": "monitorameto"
   }
 ]
