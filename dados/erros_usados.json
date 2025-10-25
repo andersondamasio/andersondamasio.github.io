@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "gerenciamento": "gerenciamneto",
-    "acesso": "acesso."
-  },
-  {
     "virtual": "virtual.",
     "processo": "prosseso",
     "exemplo": "exenplo"
@@ -88,5 +83,10 @@
     "monitoramento": "monitorameto",
     "funcionalidade": "funcionaliade",
     "processo": "proceso"
+  },
+  {
+    "sistema": "sistéma",
+    "tecnologia": "tecnnologia",
+    "abordagem": "abordagem."
   }
 ]
