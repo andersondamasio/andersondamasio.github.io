@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "processo": "processso",
-    "funciona": "funciona,"
-  },
-  {
     "suporte": "suporte.",
     "gerenciamento": "gerenciamneto",
     "acesso": "acesso."
@@ -88,5 +83,10 @@
     "complexidade": "complexidade.",
     "desenvolvimento": "desenvolvimente",
     "recurso": "reccurso"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "funcionalidade": "funcionaliade",
+    "processo": "proceso"
   }
 ]
