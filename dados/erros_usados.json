@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "computador": "computador,",
     "desafio": "desafío",
     "necessidade": "necessidade."
@@ -89,5 +85,9 @@
   {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "carregamento": "carregameno",
+    "tecnologia": "tecnoligia"
   }
 ]
