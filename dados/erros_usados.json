@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "operacional": "operaciona",
     "componente": "componete",
     "armazenamento": "armasenamento"
@@ -88,5 +84,10 @@
     "acesso": "acesço",
     "problema": "probrema",
     "desafio": "desafío"
+  },
+  {
+    "funciona": "funciona.",
+    "tecnologia": "tecnoligia",
+    "exemplo": "exenplo"
   }
 ]
