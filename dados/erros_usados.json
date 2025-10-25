@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "arquitetura": "arquitretura",
-    "monitoramento": "monitoramento."
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura"
   },
@@ -90,5 +85,9 @@
     "melhor": "melor",
     "recurso": "reccurso",
     "exemplo": "exenplo"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]

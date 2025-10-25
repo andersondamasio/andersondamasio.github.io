@@ -35075,5 +35075,14 @@
     "dataFonte": "2025-10-25T00:00:35.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/i-let-edges-copilot-mode-buy-me-a-new-space-heater-heres-how-the-ai-browser-did/"
+  },
+  {
+    "titulo": "A fragilidade da nuvem: o que a queda da AWS nos ensina sobre arquitetura resiliente",
+    "noticiaOriginal": "A single point of failure triggered the Amazon outage affecting millions",
+    "url": "artigos/cloud/a-fragilidade-da-nuvem-o-que-a-queda-da-aws-nos-ensina-sobre-arquitetura-resiliente.html",
+    "data": "2025-10-25T03:03:02.450Z",
+    "dataFonte": "2025-10-24T21:53:20.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://arstechnica.com/gadgets/2025/10/a-single-point-of-failure-triggered-the-amazon-outage-affecting-millions/"
   }
 ]
