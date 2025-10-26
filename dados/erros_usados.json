@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "exemplo": "exemplo,",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "necessidade": "nescessidade",
     "suporte": "suportte",
     "arquitetura": "arquitertura"
@@ -92,5 +87,9 @@
   {
     "problema": "poblema",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "funciona": "funciona."
   }
 ]
