@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "desenvolvimento": "desenvolvimente",
-    "recurso": "reccurso"
-  },
-  {
     "monitoramento": "monitorameto",
     "funcionalidade": "funcionaliade",
     "processo": "proceso"
@@ -92,5 +87,10 @@
     "necessidade": "nescessidade",
     "suporte": "suportte",
     "arquitetura": "arquitertura"
+  },
+  {
+    "simples": "cimples",
+    "desenvolvimento": "desenvolvimente",
+    "acesso": "acesso."
   }
 ]
