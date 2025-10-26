@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultadoo",
-    "sistema": "cistema"
-  },
-  {
     "funciona": "funciona.",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento"
@@ -89,5 +85,10 @@
   {
     "controle": "controle.",
     "monitoramento": "monitoramento."
+  },
+  {
+    "dispositivo": "dispotivo",
+    "arquitetura": "arquitretura",
+    "exemplo": "exenplo"
   }
 ]
