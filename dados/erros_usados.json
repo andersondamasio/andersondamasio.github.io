@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "abordagem": "abordajem",
-    "sistema": "sistma"
-  },
-  {
     "tecnologia": "tecnoligia",
     "sistema": "sistéma",
     "funciona": "funciona."
@@ -90,5 +85,10 @@
     "arquitetura": "arquitertura",
     "sistema": "cistema",
     "funciona": "funsiona"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "melhor": "melor",
+    "exemplo": "exenplo"
   }
 ]
