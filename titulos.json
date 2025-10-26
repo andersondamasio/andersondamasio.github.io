@@ -35273,5 +35273,14 @@
     "dataFonte": "2025-10-25T10:00:29.000Z",
     "categoria": "Desenvolvimento de Software",
     "urlFonte": "https://www.zdnet.com/article/ive-never-been-a-gaming-pc-guy-but-this-laptop-changed-my-perspective-for-the-better/"
+  },
+  {
+    "titulo": "O Poder da Centralização: Amazon EC2 Capacity Manager e a Nova Era da Gestão de Capacidade",
+    "noticiaOriginal": "AWS Launches EC2 Capacity Manager for Centralized, Cross-Account Capacity Optimization",
+    "url": "artigos/cloud/o-poder-da-centralizacao-amazon-ec2-capacity-manager-e-a-nova-era-da-gestao-de-capacidade.html",
+    "data": "2025-10-26T03:13:03.093Z",
+    "dataFonte": "2025-10-25T10:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/10/aws-ec2-capacity-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

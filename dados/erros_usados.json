@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "complexidade": "complexidade.",
     "desenvolvimento": "desenvolvimente",
     "recurso": "reccurso"
@@ -91,5 +87,10 @@
     "sistema": "cistema",
     "exemplo": "exemplo,",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "necessidade": "nescessidade",
+    "suporte": "suportte",
+    "arquitetura": "arquitertura"
   }
 ]
