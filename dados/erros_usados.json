@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "acesso": "acesço",
     "problema": "probrema",
     "desafio": "desafío"
@@ -89,5 +85,10 @@
     "tecnologia": "tecnoligia",
     "funciona": "funsiona",
     "exemplo": "exemplo,"
+  },
+  {
+    "conectado": "conectado.",
+    "estrutura": "estrututra",
+    "operacional": "operaciona"
   }
 ]
