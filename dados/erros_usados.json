@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
   },
@@ -90,5 +86,10 @@
   {
     "melhor": "melor",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "sistema": "cistema",
+    "exemplo": "exemplo,",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
