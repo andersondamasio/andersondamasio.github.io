@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "monitoramento": "monitorameto",
-    "dispositivo": "dispotivo"
-  },
-  {
     "constante": "constanate",
     "internet": "internert"
   },
@@ -90,5 +85,9 @@
     "virtual": "virtal",
     "muito": "muto",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "abordagem": "abordage",
+    "arquitetura": "arquitretura"
   }
 ]
