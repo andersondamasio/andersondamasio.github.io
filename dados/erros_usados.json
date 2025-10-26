@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "sistema": "sistéma",
-    "funciona": "funciona."
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "monitoramento": "monitorameto",
     "dispositivo": "dispotivo"
@@ -90,5 +85,10 @@
     "funcionalidade": "funcionaliade",
     "melhor": "melor",
     "exemplo": "exenplo"
+  },
+  {
+    "virtual": "virtal",
+    "muito": "muto",
+    "tecnologia": "tecnoligia"
   }
 ]
