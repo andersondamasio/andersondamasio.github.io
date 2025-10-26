@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "funcionalidade": "funcionaliade",
-    "processo": "proceso"
-  },
-  {
     "sistema": "sistéma",
     "tecnologia": "tecnnologia",
     "abordagem": "abordagem."
@@ -92,5 +87,9 @@
     "simples": "cimples",
     "desenvolvimento": "desenvolvimente",
     "acesso": "acesso."
+  },
+  {
+    "recurso": "reccurso",
+    "funcionalidade": "funcionaliadde"
   }
 ]
