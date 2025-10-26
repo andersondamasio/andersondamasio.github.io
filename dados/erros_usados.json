@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "problema": "probrema",
-    "desafio": "desafío"
-  },
-  {
     "funciona": "funciona.",
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
@@ -90,5 +85,10 @@
     "conectado": "conectado.",
     "estrutura": "estrututra",
     "operacional": "operaciona"
+  },
+  {
+    "processo": "processso",
+    "computador": "computador,",
+    "armazenamento": "armazanamento"
   }
 ]
