@@ -35543,5 +35543,14 @@
     "dataFonte": "2025-10-27T10:05:38.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/this-25-usb-c-cable-might-be-the-only-one-youll-ever-need-heres-why/"
+  },
+  {
+    "titulo": "Transformando Dados em Melodias: A Revolução das Recomendacões com RAG",
+    "noticiaOriginal": "Article: Building a RAG Application with Spring Boot, Spring AI, MongoDB Atlas Vector Search, and OpenAI",
+    "url": "artigos/inteligencia-artificial/transformando-dados-em-melodias-a-revolucao-das-recomendacoes-com-rag.html",
+    "data": "2025-10-27T11:20:20.731Z",
+    "dataFonte": "2025-10-27T11:00:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://www.infoq.com/articles/rag-with-spring-mongo-open-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
