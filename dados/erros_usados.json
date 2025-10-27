@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "processo": "processso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "carregamento": "carregamento.",
     "tecnologia": "tecnnologia",
     "dispositivo": "disposotivo"
@@ -92,5 +87,10 @@
     "problema": "probrema",
     "desenvolvimento": "desenvolmento",
     "monitoramento": "monitorameto"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "muito": "muto",
+    "processo": "processso"
   }
 ]
