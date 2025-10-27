@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "tecnologia": "tecnoligia",
     "funciona": "funsiona",
     "exemplo": "exemplo,"
@@ -92,5 +88,10 @@
     "muito": "muinto",
     "tecnologia": "tecnolgia",
     "computador": "computador,"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "monitoramento": "monitoramento.",
+    "abordagem": "abordage"
   }
 ]
