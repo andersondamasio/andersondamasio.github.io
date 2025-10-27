@@ -1,9 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnoligia",
     "funciona": "funciona."
   },
@@ -89,5 +85,10 @@
     "constante": "constate",
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo."
+  },
+  {
+    "processo": "proceso",
+    "exemplo": "exemplo,",
+    "abordagem": "abordajem"
   }
 ]
