@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "arquitetura": "arquitretura",
-    "exemplo": "exenplo"
-  },
-  {
     "complexidade": "complexidade.",
     "prioridade": "prioriade",
     "arquitetura": "arquitertura"
@@ -90,5 +85,10 @@
   {
     "resultado": "resutlado",
     "sistema": "cistema"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "dispositivo": "dispositivo.",
+    "sistema": "sistéma"
   }
 ]
