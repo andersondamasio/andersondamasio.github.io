@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "tecnologia": "tecnnologia",
-    "dispositivo": "disposotivo"
-  },
-  {
     "muito": "muinto",
     "tecnologia": "tecnolgia",
     "computador": "computador,"
@@ -92,5 +87,10 @@
     "conhecimento": "conhescimento",
     "muito": "muto",
     "processo": "processso"
+  },
+  {
+    "funciona": "funciona,",
+    "suporte": "suportte",
+    "abordagem": "abordage"
   }
 ]
