@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "estrutura": "estrututra",
-    "operacional": "operaciona"
-  },
-  {
     "processo": "processso",
     "computador": "computador,",
     "armazenamento": "armazanamento"
@@ -93,5 +88,9 @@
     "funcionalidade": "funcionaliadde",
     "virtual": "virtual.",
     "exemplo": "exemplo,"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "arquitetura": "arquitertura"
   }
 ]
