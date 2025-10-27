@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "internet": "internert"
-  },
-  {
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento"
   },
@@ -91,5 +87,10 @@
     "carregamento": "carregamento.",
     "tecnologia": "tecnnologia",
     "dispositivo": "disposotivo"
+  },
+  {
+    "muito": "muinto",
+    "tecnologia": "tecnolgia",
+    "computador": "computador,"
   }
 ]
