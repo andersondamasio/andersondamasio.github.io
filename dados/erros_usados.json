@@ -1,10 +1,5 @@
 [
   {
-    "processo": "processso",
-    "computador": "computador,",
-    "armazenamento": "armazanamento"
-  },
-  {
     "arquitetura": "arquitertura",
     "sistema": "cistema",
     "funciona": "funsiona"
@@ -92,5 +87,9 @@
   {
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitertura"
+  },
+  {
+    "computador": "computador,",
+    "sistema": "sistéma"
   }
 ]
