@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "cistema",
-    "funciona": "funsiona"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "melhor": "melor",
     "exemplo": "exenplo"
@@ -91,5 +86,9 @@
   {
     "computador": "computador,",
     "sistema": "sistéma"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "melhor": "melor"
   }
 ]
