@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "funciona": "funsiona",
-    "exemplo": "exemplo,"
-  },
-  {
     "conectado": "conectado.",
     "estrutura": "estrututra",
     "operacional": "operaciona"
@@ -93,5 +88,10 @@
     "tecnologia": "tecnnologia",
     "monitoramento": "monitoramento.",
     "abordagem": "abordage"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "virtual": "virtual.",
+    "exemplo": "exemplo,"
   }
 ]
