@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "monitoramento": "monitoramento."
-  },
-  {
     "dispositivo": "dispotivo",
     "arquitetura": "arquitretura",
     "exemplo": "exenplo"
@@ -90,5 +86,9 @@
     "funcionalidade": "funcionaliade",
     "tecnologia": "tecnnologia",
     "necessidade": "necessidade."
+  },
+  {
+    "resultado": "resutlado",
+    "sistema": "cistema"
   }
 ]
