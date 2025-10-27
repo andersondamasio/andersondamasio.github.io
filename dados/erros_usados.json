@@ -1,10 +1,5 @@
 [
   {
-    "processo": "processso",
-    "abordagem": "abordajem",
-    "exemplo": "exemplo."
-  },
-  {
     "problema": "poblema",
     "arquitetura": "arquitertura"
   },
@@ -89,5 +84,10 @@
   {
     "geralmente": "geralment",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "constante": "constate",
+    "tecnologia": "tecnnologia",
+    "exemplo": "exemplo."
   }
 ]
