@@ -1,9 +1,5 @@
 [
   {
-    "geralmente": "geralment",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "constante": "constate",
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo."
@@ -91,5 +87,10 @@
   {
     "simples": "simplis",
     "problema": "probrema"
+  },
+  {
+    "controle": "contrle",
+    "funcionalidade": "funcionaliadde",
+    "utilizado": "utilizdo"
   }
 ]
