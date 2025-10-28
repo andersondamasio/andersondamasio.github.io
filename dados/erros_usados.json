@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "processo": "prosseso",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "geralmente": "geralment",
     "tecnologia": "tecnoligia"
   },
@@ -92,5 +87,9 @@
     "geralmente": "geralmemte",
     "muito": "muto",
     "arquitetura": "arquitertura"
+  },
+  {
+    "simples": "simplis",
+    "problema": "probrema"
   }
 ]
