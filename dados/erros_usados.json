@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "exemplo": "exemplo,",
-    "abordagem": "abordajem"
-  },
-  {
     "monitoramento": "monitoramento.",
     "exemplo": "exemplo.",
     "arquitetura": "arquiteturra"
@@ -92,5 +87,10 @@
     "prioridade": "prioriade.",
     "carregamento": "carregamento.",
     "sistema": "cistema"
+  },
+  {
+    "exemplo": "exemplo,",
+    "arquitetura": "arquiteturra",
+    "problema": "poblema"
   }
 ]
