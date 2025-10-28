@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "exemplo": "exemplo.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "problema": "probrema",
     "desenvolvimento": "desenvolmento",
     "monitoramento": "monitorameto"
@@ -92,5 +87,10 @@
     "exemplo": "exemplo,",
     "arquitetura": "arquiteturra",
     "problema": "poblema"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "gerenciamento": "gerenciamnto",
+    "problema": "problema."
   }
 ]
