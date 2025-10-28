@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "tecnologia": "tecnnologia",
-    "exemplo": "exemplo."
-  },
-  {
     "processo": "proceso",
     "exemplo": "exemplo,",
     "abordagem": "abordajem"
@@ -92,5 +87,10 @@
     "controle": "contrle",
     "funcionalidade": "funcionaliadde",
     "utilizado": "utilizdo"
+  },
+  {
+    "prioridade": "prioriade.",
+    "carregamento": "carregamento.",
+    "sistema": "cistema"
   }
 ]
