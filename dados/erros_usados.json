@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "tecnologia": "tecnnologia",
-    "necessidade": "necessidade."
-  },
-  {
     "resultado": "resutlado",
     "sistema": "cistema"
   },
@@ -91,5 +86,10 @@
   {
     "armazenamento": "armazanamento",
     "estrutura": "estrura"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "muito": "muto",
+    "desafio": "desafío"
   }
 ]
