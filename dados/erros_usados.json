@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "muito": "muiito",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra"
   },
@@ -91,5 +86,10 @@
     "parceria": "parcería",
     "sistema": "cistema",
     "arquitetura": "arquitertura"
+  },
+  {
+    "simples": "cimples",
+    "processo": "proceso",
+    "funciona": "funsiona"
   }
 ]
