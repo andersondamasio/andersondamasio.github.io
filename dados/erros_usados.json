@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "sistema": "cistema"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "dispositivo": "dispositivo.",
     "sistema": "sistéma"
@@ -91,5 +87,10 @@
     "arquitetura": "arquitertura",
     "muito": "muto",
     "desafio": "desafío"
+  },
+  {
+    "operacional": "operacionl",
+    "necessidade": "necessidade.",
+    "muito": "muinto"
   }
 ]
