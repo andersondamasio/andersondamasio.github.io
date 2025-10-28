@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "muito": "muiito",
-    "arquitetura": "arquitertura"
-  },
-  {
     "suporte": "suportte",
     "sistema": "sistéma"
   },
@@ -92,5 +87,9 @@
   {
     "simples": "simlpes",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "componente": "componete",
+    "acesso": "acesço"
   }
 ]
