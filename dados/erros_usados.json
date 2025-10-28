@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "sistema": "sistéma"
-  },
-  {
     "estrutura": "estrura",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura"
@@ -91,5 +87,10 @@
   {
     "componente": "componete",
     "acesso": "acesço"
+  },
+  {
+    "melhor": "melhorr",
+    "tecnologia": "tecnoligia",
+    "funciona": "funciona."
   }
 ]
