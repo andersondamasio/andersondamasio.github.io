@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melhorr",
-    "tecnologia": "tecnoligia",
-    "funciona": "funciona."
-  },
-  {
     "armazenamento": "armazanamento",
     "estrutura": "estrura"
   },
@@ -92,5 +87,10 @@
   {
     "conectado": "conetado",
     "sistema": "sistma"
+  },
+  {
+    "suporte": "suprte",
+    "abordagem": "abordagem.",
+    "arquitetura": "arquitertura"
   }
 ]
