@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "processo": "proceso",
-    "funciona": "funsiona"
-  },
-  {
     "arquitetura": "arquitretura",
     "monitoramento": "monitramento",
     "acesso": "acesso."
@@ -92,5 +87,10 @@
   {
     "arquitetura": "arquitretura",
     "sistema": "sistma"
+  },
+  {
+    "resultado": "resutlado",
+    "arquitetura": "arquitertura",
+    "monitoramento": "monitramento"
   }
 ]
