@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "processo": "prosseso",
     "arquitetura": "arquitertura",
     "funciona": "funciona."
@@ -91,5 +87,10 @@
     "simples": "cimples",
     "processo": "proceso",
     "funciona": "funsiona"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "monitoramento": "monitramento",
+    "acesso": "acesso."
   }
 ]
