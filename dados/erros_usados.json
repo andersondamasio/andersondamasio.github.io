@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "cistema"
-  },
-  {
     "monitoramento": "monitorameto",
     "necessidade": "necissidade",
     "arquitetura": "arquitretura"
@@ -92,5 +88,10 @@
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "componente": "componente.",
+    "armazenamento": "armazanamento",
+    "monitoramento": "monitorameto"
   }
 ]
