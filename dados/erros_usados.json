@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "arquitetura": "arquiteturra",
-    "problema": "poblema"
-  },
-  {
     "dispositivo": "disposotivo",
     "gerenciamento": "gerenciamnto",
     "problema": "problema."
@@ -93,5 +88,9 @@
     "virtual": "virtuaal",
     "internet": "internert",
     "problema": "poblema"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "abordagem": "abordajem"
   }
 ]
