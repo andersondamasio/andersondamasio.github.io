@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "necessidade": "necissidade",
-    "arquitetura": "arquitretura"
-  },
-  {
     "parceria": "parcería",
     "sistema": "cistema",
     "arquitetura": "arquitertura"
@@ -93,5 +88,10 @@
     "componente": "componente.",
     "armazenamento": "armazanamento",
     "monitoramento": "monitorameto"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "acesso": "acesço",
+    "melhor": "melhorr"
   }
 ]
