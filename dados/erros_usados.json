@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "muito": "muto",
-    "desafio": "desafío"
-  },
-  {
     "operacional": "operacionl",
     "necessidade": "necessidade.",
     "muito": "muinto"
@@ -93,5 +88,10 @@
     "arquitetura": "arquiteturra",
     "desafio": "desafiu",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "constante": "constate",
+    "arquitetura": "arquitertura",
+    "controle": "contrle"
   }
 ]
