@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "componente": "componete",
     "acesso": "acesço"
   },
@@ -91,5 +87,10 @@
   {
     "recurso": "recuro",
     "rotina": "rotína"
+  },
+  {
+    "complexidade": "complezidade",
+    "necessidade": "necissidade",
+    "arquitetura": "arquitretura"
   }
 ]
