@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolmento",
-    "exemplo": "exemplo."
-  },
-  {
     "recurso": "recuro",
     "rotina": "rotína"
   },
@@ -92,5 +87,9 @@
     "monitoramento": "monitoramento.",
     "arquitetura": "arquiteturra",
     "necessidade": "nescessidade"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "arquitetura": "arquitertura"
   }
 ]
