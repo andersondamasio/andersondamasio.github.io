@@ -36038,5 +36038,14 @@
     "dataFonte": "2025-10-29T19:47:11.000Z",
     "categoria": "Cloud",
     "urlFonte": "https://www.bbc.com/news/articles/c3rj45n4x5eo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "Desafios Nublados: O Que a Queda do Azure Nos Ensina Sobre Resiliência em Arquitetura de Software",
+    "noticiaOriginal": "Massive Azure outage recovery efforts underway - here's the latest",
+    "url": "artigos/cloud/desafios-nublados-o-que-a-queda-do-azure-nos-ensina-sobre-resiliencia-em-arquitetura-de-software.html",
+    "data": "2025-10-29T22:21:09.645Z",
+    "dataFonte": "2025-10-29T22:16:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.zdnet.com/article/massive-azure-outage-recovery-efforts-underway-heres-the-latest/"
   }
 ]
