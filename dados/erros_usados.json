@@ -1,9 +1,5 @@
 [
   {
-    "executado": "execudado",
-    "problema": "poblema"
-  },
-  {
     "monitoramento": "monitramento",
     "exemplo": "exenplo",
     "abordagem": "abordagem."
@@ -93,5 +89,10 @@
     "estrutura": "estrura",
     "desafio": "desafío",
     "constante": "constanate"
+  },
+  {
+    "prioridade": "prioriade.",
+    "necessidade": "nescessidade",
+    "arquitetura": "arquitertura"
   }
 ]
