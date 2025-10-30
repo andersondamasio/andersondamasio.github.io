@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "sistema": "sistma"
-  },
-  {
     "resultado": "resutlado",
     "arquitetura": "arquitertura",
     "monitoramento": "monitramento"
@@ -91,5 +87,10 @@
     "necessidade": "necissidade",
     "muito": "muiito",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "necessidade": "nescessidade",
+    "arquitetura": "arquitretura"
   }
 ]
