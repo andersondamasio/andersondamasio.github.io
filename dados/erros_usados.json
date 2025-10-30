@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "propriadade",
-    "conhecimento": "conhescimento"
-  },
-  {
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra"
@@ -92,5 +88,9 @@
     "simples": "simlpes",
     "abordagem": "abordagem.",
     "funciona": "funciona."
+  },
+  {
+    "funciona": "funsiona",
+    "tecnologia": "tecnoligia"
   }
 ]
