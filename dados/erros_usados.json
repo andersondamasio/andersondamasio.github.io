@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "rotina": "rotína"
-  },
-  {
     "complexidade": "complezidade",
     "necessidade": "necissidade",
     "arquitetura": "arquitretura"
@@ -91,5 +87,9 @@
   {
     "gerenciamento": "gerenciamneto",
     "arquitetura": "arquitertura"
+  },
+  {
+    "executado": "execudado",
+    "problema": "poblema"
   }
 ]
