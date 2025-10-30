@@ -36137,5 +36137,14 @@
     "dataFonte": "2025-10-30T10:11:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.infoq.com/news/2025/10/anthropic-claude-code/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A nova era dos dados temporais: como o InfluxDB 3 pode revolucionar seu projeto",
+    "noticiaOriginal": "Amazon Timestream for InfluxDB Adds Support for InfluxDB 3 Core and Enterprise",
+    "url": "artigos/banco-de-dados/a-nova-era-dos-dados-temporais-como-o-influxdb-3-pode-revolucionar-seu-projeto.html",
+    "data": "2025-10-30T11:19:50.339Z",
+    "dataFonte": "2025-10-30T10:00:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2025/10/amazon-timestream-influxdb3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
