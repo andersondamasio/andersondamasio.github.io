@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componente.",
-    "armazenamento": "armazanamento",
-    "monitoramento": "monitorameto"
-  },
-  {
     "tecnologia": "tecnoligia",
     "acesso": "acesço",
     "melhor": "melhorr"
@@ -92,5 +87,9 @@
     "controle": "contrle",
     "melhor": "melor",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnolgia"
   }
 ]
