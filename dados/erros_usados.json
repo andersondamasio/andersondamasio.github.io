@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "abordagem": "abordajem"
-  },
-  {
     "propriedade": "propriadade",
     "conhecimento": "conhescimento"
   },
@@ -91,5 +87,10 @@
     "consistente": "consistente.",
     "muito": "muiito",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "simples": "simlpes",
+    "abordagem": "abordagem.",
+    "funciona": "funciona."
   }
 ]
