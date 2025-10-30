@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "arquitetura": "arquitertura",
-    "monitoramento": "monitramento"
-  },
-  {
     "monitoramento": "monitoramento.",
     "arquitetura": "arquiteturra",
     "necessidade": "nescessidade"
@@ -92,5 +87,10 @@
     "tecnologia": "tecnolgia",
     "necessidade": "nescessidade",
     "arquitetura": "arquitretura"
+  },
+  {
+    "geralmente": "geralment",
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquitertura"
   }
 ]
