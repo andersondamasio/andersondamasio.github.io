@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "arquitetura": "arquitertura"
-  },
-  {
     "executado": "execudado",
     "problema": "poblema"
   },
@@ -92,5 +88,10 @@
     "armazenamento": "armazenamentto",
     "sistema": "sistéma",
     "funciona": "funsiona"
+  },
+  {
+    "estrutura": "estrura",
+    "desafio": "desafío",
+    "constante": "constanate"
   }
 ]
