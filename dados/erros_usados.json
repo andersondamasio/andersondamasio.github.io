@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "muito": "muiito",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "tecnologia": "tecnolgia",
     "necessidade": "nescessidade",
     "arquitetura": "arquitretura"
@@ -90,5 +85,10 @@
     "complexidade": "complezidade",
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "parceria": "parceria.",
+    "sistema": "sistéma"
   }
 ]
