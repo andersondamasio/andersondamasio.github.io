@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "necessidade": "nescessidade",
-    "arquitetura": "arquitretura"
-  },
-  {
     "geralmente": "geralment",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitertura"
@@ -90,5 +85,10 @@
     "monitoramento": "monitorameto",
     "parceria": "parceria.",
     "sistema": "sistéma"
+  },
+  {
+    "muito": "muto",
+    "computador": "computador,",
+    "funcionalidade": "funcionalidade."
   }
 ]
