@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "internet": "internat",
-    "acesso": "acesço"
-  },
-  {
     "recurso": "reccurso",
     "tecnologia": "tecnoligia"
   },
@@ -92,5 +87,9 @@
   {
     "processo": "processso",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "constante": "constanate"
   }
 ]
