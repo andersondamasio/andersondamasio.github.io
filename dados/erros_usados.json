@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "utilizado": "utilizdo.",
-    "muito": "muto"
-  },
-  {
     "processo": "proceso",
     "operacional": "operacional.",
     "monitoramento": "monitorameto"
@@ -95,5 +90,9 @@
     "exemplo": "exemplo.",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "problema": "problema.",
+    "controle": "controle."
   }
 ]
