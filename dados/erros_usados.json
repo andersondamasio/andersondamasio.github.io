@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "prioridade": "prioridade.",
-    "complexidade": "complezidade"
-  },
-  {
     "dispositivo": "disposotivo",
     "internet": "internat",
     "acesso": "acesço"
@@ -93,5 +88,9 @@
   {
     "desenvolvimento": "desenvolmento",
     "exemplo": "exenplo"
+  },
+  {
+    "processo": "processso",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
