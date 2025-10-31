@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnnologia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "problema": "problema.",
     "controle": "controle."
   },
@@ -89,5 +84,9 @@
     "muito": "muiito",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "problema": "problema.",
+    "sistema": "sistéma"
   }
 ]

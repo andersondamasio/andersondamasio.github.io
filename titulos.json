@@ -36434,5 +36434,14 @@
     "dataFonte": "2025-10-31T20:29:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/best-early-black-friday-phone-deals-2025/"
+  },
+  {
+    "titulo": "Explorando Vunerabilidades: O Que Podemos Aprender com os Recentes Ataques?",
+    "noticiaOriginal": "Two Windows vulnerabilities, one a 0-day, are under active exploitation",
+    "url": "artigos/seguranca/explorando-vunerabilidades-o-que-podemos-aprender-com-os-recentes-ataques.html",
+    "data": "2025-10-31T22:21:19.379Z",
+    "dataFonte": "2025-10-31T21:03:56.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/10/two-windows-vulnerabilities-one-a-0-day-are-under-active-exploitation/"
   }
 ]
