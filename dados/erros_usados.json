@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "exemplo": "exenplo"
-  },
-  {
     "processo": "processso",
     "desenvolvimento": "desenvolvmento"
   },
@@ -89,5 +85,9 @@
     "prioridade": "prioridade.",
     "abordagem": "abordagem.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "exemplo": "exemplo."
   }
 ]
