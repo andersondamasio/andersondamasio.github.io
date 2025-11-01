@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "exemplo": "exemplo."
-  },
-  {
     "sistema": "cistema",
     "operacional": "operacionl",
     "simples": "simlpes"
@@ -88,5 +84,10 @@
     "desenvolvimento": "desenvolmento",
     "sistema": "cistema",
     "melhor": "melhorr"
+  },
+  {
+    "acesso": "acesso.",
+    "consistente": "consitente",
+    "suporte": "suporte."
   }
 ]
