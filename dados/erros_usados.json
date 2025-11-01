@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizdo.",
-    "resultado": "resutlado"
-  },
-  {
     "carregamento": "carregameno",
     "gerenciamento": "gerenciamneto",
     "sistema": "cistema"
@@ -91,5 +87,9 @@
     "virtual": "virtal",
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "funciona": "funsiona"
   }
 ]
