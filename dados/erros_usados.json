@@ -1,9 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "sistema": "sistéma"
-  },
-  {
     "prioridade": "prioridade.",
     "abordagem": "abordagem.",
     "tecnologia": "tecnoligia"
@@ -87,5 +83,10 @@
   {
     "sistema": "cistema",
     "arquitetura": "arquitertura"
+  },
+  {
+    "utilizado": "utilizdo",
+    "estrutura": "estrtura",
+    "arquitetura": "arquiteturra"
   }
 ]
