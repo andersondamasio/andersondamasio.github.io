@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muiito",
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "problema": "problema.",
     "sistema": "sistéma"
   },
@@ -88,5 +83,9 @@
     "recurso": "recusso",
     "funciona": "funciona.",
     "exemplo": "exenplo"
+  },
+  {
+    "sistema": "cistema",
+    "arquitetura": "arquitertura"
   }
 ]
