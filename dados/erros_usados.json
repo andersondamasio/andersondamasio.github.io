@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "monitoramento": "monitorameto"
-  },
-  {
     "resultado": "resultadoo",
     "simples": "cimples"
   },
@@ -95,5 +91,10 @@
     "funcionalidade": "funcionaliadde",
     "muito": "muiito",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "complexidade": "complexidade.",
+    "conhecimento": "conhecimento.",
+    "arquitetura": "arquiteturra"
   }
 ]
