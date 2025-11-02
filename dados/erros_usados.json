@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "funciona": "funciona.",
-    "exemplo": "exenplo"
-  },
-  {
     "sistema": "cistema",
     "arquitetura": "arquitertura"
   },
@@ -97,5 +92,10 @@
     "abordagem": "abordajem",
     "sistema": "sistéma",
     "exemplo": "exenplo"
+  },
+  {
+    "sistema": "sistma",
+    "exemplo": "exemplo,",
+    "tecnologia": "tecnoligia"
   }
 ]
