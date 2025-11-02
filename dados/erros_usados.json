@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "funciona": "funsiona"
-  },
-  {
     "constante": "constate",
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolmento"
@@ -89,5 +85,10 @@
     "muito": "muinto",
     "acesso": "acesço",
     "arquitetura": "arquitertura"
+  },
+  {
+    "necessidade": "necessidade.",
+    "acesso": "acesso.",
+    "exemplo": "exemplo,"
   }
 ]
