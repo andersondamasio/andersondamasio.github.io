@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "consistente": "consitente",
-    "suporte": "suporte."
-  },
-  {
     "funciona": "funciona.",
     "arquitetura": "arquitretura",
     "exemplo": "exenplo"
@@ -96,5 +91,9 @@
   {
     "controle": "controlle",
     "arquitetura": "arquitertura"
+  },
+  {
+    "sistema": "sistéma",
+    "abordagem": "abordage"
   }
 ]
