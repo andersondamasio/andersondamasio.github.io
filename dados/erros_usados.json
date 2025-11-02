@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "carregamento": "carregamento.",
-    "melhor": "melhorr"
-  },
-  {
     "tecnologia": "tecnolgia",
     "funciona": "funciona,"
   },
@@ -92,5 +87,10 @@
     "processo": "proceso",
     "muito": "muinto",
     "recurso": "recuro"
+  },
+  {
+    "constante": "constate",
+    "prioridade": "prioridade.",
+    "monitoramento": "monitramento"
   }
 ]
