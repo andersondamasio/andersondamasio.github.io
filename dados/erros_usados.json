@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultadoo",
-    "simples": "cimples"
-  },
-  {
     "complexidade": "complezidade",
     "conhecimento": "conhecimeto",
     "controle": "contrle"
@@ -96,5 +92,10 @@
     "complexidade": "complexidade.",
     "conhecimento": "conhecimento.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "acesso": "acesso.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
