@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "conhecimento": "conhecimeto",
-    "controle": "contrle"
-  },
-  {
     "recurso": "recusso",
     "funciona": "funciona.",
     "exemplo": "exenplo"
@@ -97,5 +92,10 @@
     "tecnologia": "tecnoligia",
     "acesso": "acesso.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "abordagem": "abordajem",
+    "sistema": "sistéma",
+    "exemplo": "exenplo"
   }
 ]
