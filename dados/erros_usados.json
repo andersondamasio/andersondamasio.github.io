@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "arquitetura": "arquitertura"
-  },
-  {
     "utilizado": "utilizdo",
     "estrutura": "estrtura",
     "arquitetura": "arquiteturra"
@@ -97,5 +93,9 @@
     "sistema": "sistma",
     "exemplo": "exemplo,",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "resultado": "resutlado",
+    "monitoramento": "monitramento"
   }
 ]
