@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "conhecimento": "conhecimento.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "tecnologia": "tecnoligia",
     "acesso": "acesso.",
     "desenvolvimento": "desenvolvmento"
@@ -90,5 +85,9 @@
   {
     "processo": "proceso",
     "propriedade": "propriadade"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnoligia"
   }
 ]
