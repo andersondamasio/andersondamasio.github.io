@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "arquitetura": "arquitertura"
-  },
-  {
     "sistema": "sistéma",
     "abordagem": "abordage"
   },
@@ -86,5 +82,8 @@
   {
     "recurso": "recuro",
     "armazenamento": "armasenamento"
+  },
+  {
+    "parceria": "parcería"
   }
 ]
