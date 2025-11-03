@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "acesso": "acesso.",
-    "exemplo": "exemplo,"
-  },
-  {
     "monitoramento": "monitoramento.",
     "simples": "simplis",
     "tecnologia": "tecnoligia"
@@ -95,5 +90,10 @@
     "suporte": "suportte",
     "funciona": "funsiona",
     "problema": "poblema"
+  },
+  {
+    "controle": "controle.",
+    "funciona": "funciona.",
+    "necessidade": "nescessidade"
   }
 ]
