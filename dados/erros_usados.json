@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "funciona": "funsiona",
-    "problema": "poblema"
-  },
-  {
     "controle": "controle.",
     "funciona": "funciona.",
     "necessidade": "nescessidade"
@@ -86,5 +81,10 @@
     "monitoramento": "monitorameto",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "computador": "computador.",
+    "funcionalidade": "funcionaliade",
+    "acesso": "aceso"
   }
 ]
