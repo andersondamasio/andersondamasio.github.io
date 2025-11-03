@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtual.",
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "suporte": "suportte",
     "funciona": "funsiona",
     "problema": "poblema"
@@ -86,5 +81,10 @@
     "desenvolvimento": "desenvolvimente",
     "muito": "muinto",
     "sistema": "sistma"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnoligia"
   }
 ]
