@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "monitoramento": "monitramento"
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra",
     "exemplo": "exemplo,"
@@ -87,5 +83,9 @@
     "armazenamento": "armazanamento",
     "acesso": "aceso",
     "desafio": "desaío"
+  },
+  {
+    "carregamento": "carregamento.",
+    "arquitetura": "arquitretura"
   }
 ]
