@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "funciona": "funciona.",
-    "necessidade": "nescessidade"
-  },
-  {
     "mensagem": "menssagem",
     "melhor": "melhorr",
     "exemplo": "exemplo,"
@@ -86,5 +81,8 @@
     "computador": "computador.",
     "funcionalidade": "funcionaliade",
     "acesso": "aceso"
+  },
+  {
+    "constante": "constante."
   }
 ]
