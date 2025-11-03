@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "recurso": "reccurso",
-    "muito": "muinto"
-  },
-  {
     "carregamento": "carregamneto",
     "melhor": "melhorr",
     "muito": "muto"
@@ -92,5 +87,9 @@
     "geralmente": "geralmete",
     "tecnologia": "tecnolgia",
     "sistema": "cistema"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "exemplo": "exemplo."
   }
 ]
