@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "exemplo": "exemplo,",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "resultado": "resutlado",
     "monitoramento": "monitramento"
   },
@@ -87,5 +82,10 @@
   {
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "acesso": "aceso",
+    "desafio": "desaío"
   }
 ]
