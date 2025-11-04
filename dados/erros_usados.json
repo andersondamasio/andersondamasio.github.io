@@ -1,8 +1,5 @@
 [
   {
-    "constante": "constante."
-  },
-  {
     "conhecimento": "conhecimeto",
     "complexidade": "complexsidade",
     "desenvolvimento": "desenvolvmento"
@@ -84,5 +81,8 @@
   {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnoligia"
   }
 ]
