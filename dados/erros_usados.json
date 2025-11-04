@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "funciona": "funciona,"
-  },
-  {
     "internet": "internat",
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra"
@@ -84,5 +80,9 @@
   {
     "abordagem": "abordagem.",
     "armazenamento": "armasenamento"
+  },
+  {
+    "exemplo": "exemplo.",
+    "sistema": "cistema"
   }
 ]
