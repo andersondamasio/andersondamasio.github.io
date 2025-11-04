@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muiito",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "dispositivo": "dispotivo",
     "funciona": "funciona,"
   },
@@ -84,5 +80,9 @@
     "conhecimento": "conhecimeto",
     "complexidade": "complexsidade",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "abordagem": "abordagem.",
+    "armazenamento": "armasenamento"
   }
 ]
