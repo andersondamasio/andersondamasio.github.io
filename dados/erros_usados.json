@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "acesso": "aceso",
-    "desafio": "desaío"
-  },
-  {
     "carregamento": "carregamento.",
     "arquitetura": "arquitretura"
   },
@@ -83,5 +78,10 @@
   {
     "suporte": "suporte.",
     "gerenciamento": "gerenciamnto"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "parceria": "parcería",
+    "arquitetura": "arquitretura"
   }
 ]
