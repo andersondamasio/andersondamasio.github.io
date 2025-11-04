@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "conectado": "conetado",
     "simples": "simlpes"
   },
@@ -83,5 +79,9 @@
   {
     "virtual": "virtal",
     "resultado": "resultadoo"
+  },
+  {
+    "processo": "prosseso",
+    "tecnologia": "tecnoligia"
   }
 ]
