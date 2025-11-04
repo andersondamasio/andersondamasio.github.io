@@ -1,10 +1,5 @@
 [
   {
-    "computador": "computador.",
-    "funcionalidade": "funcionaliade",
-    "acesso": "aceso"
-  },
-  {
     "constante": "constante."
   },
   {
@@ -85,5 +80,9 @@
     "armazenamento": "armazenamentto",
     "muito": "muiito",
     "constante": "constante."
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]
