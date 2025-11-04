@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "complexidade": "complexsidade",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "abordagem": "abordagem.",
     "armazenamento": "armasenamento"
   },
@@ -84,5 +79,9 @@
   },
   {
     "tecnologia": "tecnoligia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "exemplo": "exenplo"
   }
 ]
