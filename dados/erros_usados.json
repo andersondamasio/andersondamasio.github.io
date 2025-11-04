@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "exemplo": "exenplo",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "estrutura": "estrura",
     "suporte": "suportte"
   },
@@ -84,5 +79,9 @@
   {
     "exemplo": "exemplo.",
     "sistema": "cistema"
+  },
+  {
+    "sistema": "sistma",
+    "arquitetura": "arquitretura"
   }
 ]
