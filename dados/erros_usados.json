@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "arquitetura": "arquitretura"
-  },
-  {
     "controle": "contrle",
     "simples": "simlpes"
   },
@@ -84,5 +80,10 @@
     "necessidade": "necessidade.",
     "sistema": "sistma",
     "constante": "constante."
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "simples": "simlpes",
+    "melhor": "melor"
   }
 ]
