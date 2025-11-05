@@ -1,9 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "funcionalidade": "funcionaliade"
   },
@@ -88,5 +84,8 @@
     "desafio": "desafiu",
     "complexidade": "complexsidade",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "arquitetura": "arquitertura"
   }
 ]
