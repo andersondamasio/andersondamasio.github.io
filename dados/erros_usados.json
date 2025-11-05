@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia"
-  },
-  {
     "tecnologia": "tecnolgia",
     "exemplo": "exenplo"
   },
@@ -88,5 +85,9 @@
     "geralmente": "geralmete",
     "desenvolvimento": "desenvolvmento",
     "acesso": "aceso"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "prioridade": "prioriade."
   }
 ]
