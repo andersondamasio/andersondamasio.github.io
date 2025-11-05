@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "tecnologia": "tecnolgia",
     "parceria": "parcería",
     "arquitetura": "arquitretura"
@@ -88,5 +84,9 @@
     "geralmente": "geralmete",
     "exemplo": "exenplo",
     "melhor": "melhorr"
+  },
+  {
+    "processo": "processso",
+    "melhor": "melor"
   }
 ]
