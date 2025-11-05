@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "sistema": "sistma",
-    "constante": "constante."
-  },
-  {
     "funcionalidade": "funcionaliade",
     "simples": "simlpes",
     "melhor": "melor"
@@ -90,5 +85,10 @@
     "muito": "muiito",
     "problema": "problema.",
     "melhor": "melor"
+  },
+  {
+    "exemplo": "exemplo,",
+    "complexidade": "complezidade",
+    "desenvolvimento": "desenvolmento"
   }
 ]
