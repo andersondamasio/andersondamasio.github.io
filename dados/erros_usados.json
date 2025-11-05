@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "arquitetura": "arquitretura"
-  },
-  {
     "funciona": "funciona,",
     "tecnologia": "tecnolgia"
   },
@@ -86,5 +82,10 @@
   {
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitertura"
+  },
+  {
+    "resultado": "resutlado",
+    "tecnologia": "tecnolgia",
+    "melhor": "melor"
   }
 ]
