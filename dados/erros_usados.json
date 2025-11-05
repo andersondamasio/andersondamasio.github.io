@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "resultado": "resultadoo"
-  },
-  {
     "processo": "prosseso",
     "tecnologia": "tecnoligia"
   },
@@ -87,5 +83,10 @@
     "abordagem": "abordagem.",
     "simples": "cimples",
     "funciona": "funciona,"
+  },
+  {
+    "desafio": "desafiu",
+    "complexidade": "complexsidade",
+    "tecnologia": "tecnolgia"
   }
 ]
