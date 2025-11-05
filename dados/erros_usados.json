@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muiito",
-    "simples": "simlpes",
-    "exemplo": "exenplo"
-  },
-  {
     "paralelo": "paraleloo",
     "prioridade": "prioridade.",
     "funcionalidade": "funcionaliadde"
@@ -88,5 +83,9 @@
     "dispositivo": "disposotivo",
     "internet": "internat",
     "suporte": "suporte."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "dispositivo": "dispositivo."
   }
 ]
