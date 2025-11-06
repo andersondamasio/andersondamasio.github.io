@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "internet": "internat",
-    "suporte": "suporte."
-  },
-  {
     "tecnologia": "tecnoligia",
     "dispositivo": "dispositivo."
   },
@@ -92,5 +87,10 @@
     "geralmente": "geralmete",
     "monitoramento": "monitramento",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "controle": "controlle",
+    "muito": "muinto"
   }
 ]
