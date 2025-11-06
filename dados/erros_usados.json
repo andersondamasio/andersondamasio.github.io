@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "simples": "simlpes",
-    "melhor": "melor"
-  },
-  {
     "acesso": "aceso",
     "necessidade": "necessidade.",
     "conhecimento": "conhecimeto"
@@ -90,5 +85,9 @@
     "exemplo": "exemplo,",
     "complexidade": "complezidade",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "muito": "muto"
   }
 ]
