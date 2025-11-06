@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "geralmente": "geralmete",
     "desenvolvimento": "desenvolvmento",
     "acesso": "aceso"
@@ -94,5 +90,9 @@
     "sistema": "sistma",
     "desenvolvimento": "desenvolvimente",
     "operacional": "operacionl"
+  },
+  {
+    "sistema": "sistéma",
+    "dispositivo": "dispositivo."
   }
 ]
