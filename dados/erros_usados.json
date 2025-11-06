@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "muito": "muto"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "operacional": "operacional.",
     "armazenamento": "armazanamento"
@@ -93,5 +89,10 @@
     "componente": "componente.",
     "suporte": "suprte",
     "acesso": "acesço"
+  },
+  {
+    "constante": "constanate",
+    "arquitetura": "arquitretura",
+    "exemplo": "exemplo,"
   }
 ]
