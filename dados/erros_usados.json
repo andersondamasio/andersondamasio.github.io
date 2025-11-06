@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "complexidade": "complexsidade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "arquitetura": "arquitertura"
   },
   {
@@ -89,5 +84,10 @@
     "recurso": "recuro",
     "exemplo": "exenplo",
     "dispositivo": "disposotivo"
+  },
+  {
+    "simples": "simlpes",
+    "dispositivo": "dispotivo",
+    "tecnologia": "tecnoligia"
   }
 ]
