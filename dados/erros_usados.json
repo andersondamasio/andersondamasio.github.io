@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "complexidade": "complezidade",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "muito": "muto"
   },
@@ -93,5 +88,10 @@
   {
     "acesso": "aceso",
     "suporte": "suporte."
+  },
+  {
+    "componente": "componente.",
+    "suporte": "suprte",
+    "acesso": "acesço"
   }
 ]
