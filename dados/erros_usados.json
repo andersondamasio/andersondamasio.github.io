@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "tecnologia": "tecnolgia",
-    "melhor": "melor"
-  },
-  {
     "problema": "problema.",
     "sistema": "sistma",
     "funciona": "funciona,"
@@ -94,5 +89,10 @@
     "resultado": "resutlado",
     "abordagem": "abordagem.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "arquitetura": "arquiteturra",
+    "sistema": "sistéma"
   }
 ]
