@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "abordagem": "abordagem.",
-    "exemplo": "exenplo"
-  },
-  {
     "acesso": "aceso",
     "suporte": "suporte."
   },
@@ -93,5 +88,10 @@
     "armazenamento": "armazanamento",
     "muito": "muiito",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "virtual": "virtuaal",
+    "arquitetura": "arquitertura"
   }
 ]
