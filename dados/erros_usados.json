@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "sistema": "cistema"
-  },
-  {
     "problema": "probrema",
     "processo": "prosseso",
     "arquitetura": "arquiteturra"
@@ -92,5 +88,10 @@
     "constante": "constate",
     "exemplo": "exemplo.",
     "resultado": "resultadoo"
+  },
+  {
+    "desafio": "desafiu",
+    "arquitetura": "arquitretura",
+    "acesso": "acesço"
   }
 ]
