@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "suporte": "suporte."
-  },
-  {
     "componente": "componente.",
     "suporte": "suprte",
     "acesso": "acesço"
@@ -93,5 +89,10 @@
     "funcionalidade": "funcionaliade",
     "virtual": "virtuaal",
     "arquitetura": "arquitertura"
+  },
+  {
+    "simples": "simlpes",
+    "computador": "computador,",
+    "armazenamento": "armasenamento"
   }
 ]
