@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralmete",
-    "monitoramento": "monitramento",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "controle": "controlle",
     "muito": "muinto"
@@ -93,5 +88,10 @@
     "recurso": "recusso",
     "melhor": "melor",
     "simples": "cimples"
+  },
+  {
+    "funciona": "funciona,",
+    "carregamento": "carregameno",
+    "componente": "componentte"
   }
 ]
