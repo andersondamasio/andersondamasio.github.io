@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "necessidade": "necessidade.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "recurso": "recuro",
     "exemplo": "exenplo",
     "dispositivo": "disposotivo"
@@ -93,5 +88,10 @@
   {
     "prioridade": "prioriade.",
     "sistema": "cistema"
+  },
+  {
+    "problema": "probrema",
+    "processo": "prosseso",
+    "arquitetura": "arquiteturra"
   }
 ]
