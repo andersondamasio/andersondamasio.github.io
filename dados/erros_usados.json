@@ -1,10 +1,5 @@
 [
   {
-    "mensagem": "menssagen",
-    "monitoramento": "monitorameto",
-    "acesso": "acesso."
-  },
-  {
     "sistema": "cistema",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnolgia"
@@ -90,5 +85,10 @@
     "necessidade": "necissidade",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
+  },
+  {
+    "carregamento": "carregamento.",
+    "simples": "simlpes",
+    "necessidade": "necessidade."
   }
 ]
