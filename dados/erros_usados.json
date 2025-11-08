@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "complexidade": "complezidade",
     "desenvolvimento": "desenvolvmento"
   },
@@ -92,5 +88,9 @@
     "sistema": "sistma",
     "resultado": "resutlado",
     "abordagem": "abordage"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquitretura"
   }
 ]
