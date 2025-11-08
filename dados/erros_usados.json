@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "desenvolvimento": "desenvolvmento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "melhor": "melor",
     "muito": "muto"
   },
@@ -90,5 +85,9 @@
     "carregamento": "carregamento.",
     "simples": "simlpes",
     "necessidade": "necessidade."
+  },
+  {
+    "exemplo": "exenplo",
+    "tecnologia": "tecnnologia"
   }
 ]
