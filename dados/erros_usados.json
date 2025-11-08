@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "virtual": "virtuaal",
-    "arquitetura": "arquitertura"
-  },
-  {
     "simples": "simlpes",
     "computador": "computador,",
     "armazenamento": "armasenamento"
@@ -91,5 +86,10 @@
     "geralmente": "geralmemte",
     "muito": "muinto",
     "estrutura": "estrura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "carregamento": "carregamneto",
+    "muito": "muto"
   }
 ]
