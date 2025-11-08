@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "mensagem": "menssagen",
     "monitoramento": "monitorameto",
     "acesso": "acesso."
@@ -89,5 +85,10 @@
   {
     "funciona": "funciona.",
     "acesso": "acesso."
+  },
+  {
+    "necessidade": "necissidade",
+    "tecnologia": "tecnoligia",
+    "exemplo": "exemplo."
   }
 ]
