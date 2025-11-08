@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "melhor": "melor",
-    "simples": "cimples"
-  },
-  {
     "funciona": "funciona,",
     "carregamento": "carregameno",
     "componente": "componentte"
@@ -90,5 +85,10 @@
   {
     "controle": "controle.",
     "conhecimento": "conhecimento."
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "arquitetura": "arquitertura",
+    "monitoramento": "monitramento"
   }
 ]
