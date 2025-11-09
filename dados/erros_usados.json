@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "carregamento": "carregamneto",
-    "muito": "muto"
-  },
-  {
     "personalizado": "personalisado",
     "computador": "computadorr",
     "melhor": "melhorr"
@@ -95,5 +90,10 @@
     "recurso": "reccurso",
     "armazenamento": "armazenamentto",
     "carregamento": "carregameno"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "sistema": "sistma",
+    "muito": "muinto"
   }
 ]
