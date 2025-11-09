@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "componente": "componente.",
-    "recurso": "recusso"
-  },
-  {
     "arquitetura": "arquitertura",
     "controle": "controle.",
     "tecnologia": "tecnnologia"
@@ -95,5 +90,10 @@
     "conhecimento": "conhescimento",
     "constante": "constante.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "acesso": "acesço",
+    "monitoramento": "monitoramento.",
+    "exemplo": "exemplo."
   }
 ]
