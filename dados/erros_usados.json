@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "arquitetura": "arquitertura",
-    "monitoramento": "monitramento"
-  },
-  {
     "recurso": "recuro",
     "utilizado": "utilizado.",
     "tecnologia": "tecnnologia"
@@ -94,5 +89,10 @@
     "acesso": "acesço",
     "controle": "contrle",
     "exemplo": "exemplo,"
+  },
+  {
+    "processo": "proceso",
+    "tecnologia": "tecnnologia",
+    "funcionalidade": "funcionaliade"
   }
 ]
