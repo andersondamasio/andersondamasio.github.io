@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "prioridade": "prioriade.",
-    "funciona": "funsiona"
-  },
-  {
     "tecnologia": "tecnoligia",
     "monitoramento": "monitramento",
     "arquitetura": "arquiteturra"
@@ -95,5 +90,10 @@
     "exemplo": "exemplo.",
     "melhor": "melor",
     "resultado": "resultao"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "abordagem": "abordage",
+    "tecnologia": "tecnoligia"
   }
 ]
