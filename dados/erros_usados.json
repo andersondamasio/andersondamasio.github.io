@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "conhecimento": "conhecimento."
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "arquitetura": "arquitertura",
     "monitoramento": "monitramento"
@@ -93,5 +89,10 @@
     "muito": "muinto",
     "suporte": "suporte.",
     "exemplo": "exemplo."
+  },
+  {
+    "acesso": "acesço",
+    "controle": "contrle",
+    "exemplo": "exemplo,"
   }
 ]
