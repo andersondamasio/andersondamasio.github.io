@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "dispositivo": "disposotivo",
-    "problema": "problema."
-  },
-  {
     "estrutura": "estrututra",
     "componente": "componente.",
     "recurso": "recusso"
@@ -95,5 +90,10 @@
     "problema": "problema.",
     "monitoramento": "monitorameto",
     "abordagem": "abordagem."
+  },
+  {
+    "conhecimento": "conhescimento",
+    "constante": "constante.",
+    "tecnologia": "tecnoligia"
   }
 ]
