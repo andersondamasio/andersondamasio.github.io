@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "resultado": "resutlado",
-    "abordagem": "abordage"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
   },
@@ -96,5 +91,10 @@
     "processo": "prosseso",
     "suporte": "suporte.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "exemplo": "exenplo",
+    "tecnologia": "tecnnologia",
+    "monitoramento": "monitramento"
   }
 ]
