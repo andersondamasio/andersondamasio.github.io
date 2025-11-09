@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "utilizado": "utilizado.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "funciona": "funciona.",
     "acesso": "acesso."
   },
@@ -94,5 +89,10 @@
     "processo": "proceso",
     "tecnologia": "tecnnologia",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "dispositivo": "disposotivo",
+    "simples": "cimples"
   }
 ]
