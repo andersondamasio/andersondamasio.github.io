@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "controle": "contrle",
-    "exemplo": "exemplo,"
-  },
-  {
     "processo": "proceso",
     "tecnologia": "tecnnologia",
     "funcionalidade": "funcionaliade"
@@ -96,5 +91,9 @@
     "tecnologia": "tecnnologia",
     "muito": "muinto",
     "recurso": "recuro"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]
