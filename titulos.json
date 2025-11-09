@@ -38036,5 +38036,14 @@
     "dataFonte": "2025-11-08T18:49:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/is-this-minimalist-timepiece-a-viable-alternative-to-smartwatches-my-verdict-after-a-week/"
+  },
+  {
+    "titulo": "Explorando a Vulnerabilidade Crítica do Redis: O que Você Precisa Saber",
+    "noticiaOriginal": "Redis Critical Remote Code Execution Vulnerability Discovered After 13 Years",
+    "url": "artigos/seguranca/explorando-a-vulnerabilidade-critica-do-redis-o-que-voce-precisa-saber.html",
+    "data": "2025-11-09T05:19:28.752Z",
+    "dataFonte": "2025-11-08T10:21:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2025/11/redis-vulnerability-redishell/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

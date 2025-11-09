@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "acesso": "acesso."
-  },
-  {
     "necessidade": "necissidade",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
@@ -94,5 +90,10 @@
     "funcionalidade": "funcionalidade.",
     "dispositivo": "disposotivo",
     "simples": "cimples"
+  },
+  {
+    "executado": "execudado",
+    "sistema": "cistema",
+    "monitoramento": "monitorameto"
   }
 ]
