@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "suporte": "suportte",
     "dispositivo": "disposotivo",
     "problema": "problema."
@@ -94,5 +90,10 @@
     "desenvolvimento": "desenvolvimente",
     "abordagem": "abordage",
     "necessidade": "necessidade."
+  },
+  {
+    "problema": "problema.",
+    "monitoramento": "monitorameto",
+    "abordagem": "abordagem."
   }
 ]
