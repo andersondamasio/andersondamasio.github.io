@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "sistema": "sistma",
-    "muito": "muinto"
-  },
-  {
     "exemplo": "exemplo.",
     "melhor": "melor",
     "resultado": "resultao"
@@ -92,5 +87,10 @@
     "simples": "simplis",
     "exemplo": "exemplo,",
     "melhor": "melhorr"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "funciona": "funsiona",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
