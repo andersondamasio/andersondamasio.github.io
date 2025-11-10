@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "armazenamento": "armazenamentto",
-    "carregamento": "carregameno"
-  },
-  {
     "dispositivo": "dispotivo",
     "sistema": "sistma",
     "muito": "muinto"
@@ -92,5 +87,10 @@
     "muito": "muto",
     "necessidade": "nescessidade",
     "acesso": "acesço"
+  },
+  {
+    "simples": "simplis",
+    "exemplo": "exemplo,",
+    "melhor": "melhorr"
   }
 ]
