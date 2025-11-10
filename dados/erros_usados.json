@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "monitoramento": "monitorameto",
-    "abordagem": "abordagem."
-  },
-  {
     "conhecimento": "conhescimento",
     "constante": "constante.",
     "tecnologia": "tecnoligia"
@@ -93,5 +88,10 @@
     "controle": "contrle",
     "monitoramento": "monitramento",
     "exemplo": "exemplo,"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "monitoramento": "monitoramento.",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
