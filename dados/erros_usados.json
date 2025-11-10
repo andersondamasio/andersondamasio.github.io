@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "tecnologia": "tecnnologia",
-    "monitoramento": "monitramento"
-  },
-  {
     "estrutura": "estrututra",
     "desenvolvimento": "desenvolvimente"
   },
@@ -90,5 +85,10 @@
   {
     "mensagem": "menssagen",
     "problema": "poblema"
+  },
+  {
+    "processo": "proceso",
+    "suporte": "suprte",
+    "tecnologia": "tecnolgia"
   }
 ]
