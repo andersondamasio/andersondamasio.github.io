@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "necessidade": "nescessidade"
-  },
-  {
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolvmento",
     "dispositivo": "disposotivo"
@@ -86,5 +82,10 @@
     "rotina": "rotina.",
     "computador": "computador,",
     "melhor": "melor"
+  },
+  {
+    "acesso": "acesço",
+    "exemplo": "exemplo,",
+    "dispositivo": "disposotivo"
   }
 ]
