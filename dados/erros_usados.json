@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtual.",
-    "conhecimento": "conhecimeto",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "prioridade": "prioriade.",
     "sistema": "sistma"
   },
@@ -87,5 +82,10 @@
   {
     "desafio": "desafiu",
     "necessidade": "nescessidade"
+  },
+  {
+    "recurso": "reccurso",
+    "acesso": "acesço",
+    "funcionalidade": "funcionaliadde"
   }
 ]
