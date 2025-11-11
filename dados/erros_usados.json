@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "necessidade": "necissidade",
-    "exemplo": "exemplo."
-  },
-  {
     "operacional": "operacionl",
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolmento"
@@ -88,5 +83,8 @@
     "arquitetura": "arquiteturra",
     "exemplo": "exemplo,",
     "recurso": "reccurso"
+  },
+  {
+    "tecnologia": "tecnoligia"
   }
 ]
