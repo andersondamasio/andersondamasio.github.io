@@ -38468,5 +38468,14 @@
     "dataFonte": "2025-11-11T08:20:33.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/i-tried-this-3-in-1-bedside-charger-for-a-week-and-apple-users-will-love-it/"
+  },
+  {
+    "titulo": "Merkle Tree Certificates: O Futuro da Segurança em TLS na Era Quântica",
+    "noticiaOriginal": "Cloudflare Proposes Merkle Tree Certificates to Solve Post-Quantum TLS Performance Issue",
+    "url": "artigos/seguranca/merkle-tree-certificates-o-futuro-da-seguranca-em-tls-na-era-quantica.html",
+    "data": "2025-11-11T10:23:39.768Z",
+    "dataFonte": "2025-11-11T10:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2025/11/cloudflare-merkle-tree-certifica/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
