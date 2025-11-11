@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "suporte": "suprte",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "personalizado": "personalizad",
     "simples": "cimples",
     "tecnologia": "tecnoligia"
@@ -88,5 +83,9 @@
     "melhor": "melhorr",
     "muito": "muiito",
     "processo": "proceso"
+  },
+  {
+    "prioridade": "prioriade",
+    "sistema": "cistema"
   }
 ]
