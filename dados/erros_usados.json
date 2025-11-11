@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordajem",
-    "desenvolvimento": "desenvolvmento",
-    "dispositivo": "disposotivo"
-  },
-  {
     "resultado": "resultao",
     "dispositivo": "dispositivo."
   },
@@ -87,5 +82,9 @@
     "acesso": "acesço",
     "exemplo": "exemplo,",
     "dispositivo": "disposotivo"
+  },
+  {
+    "muito": "muto",
+    "funcionalidade": "funcionaliade"
   }
 ]
