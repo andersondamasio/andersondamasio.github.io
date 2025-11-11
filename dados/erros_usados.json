@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "monitoramento": "monitoramento.",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "paralelo": "paralelo.",
     "resultado": "resultao",
     "tecnologia": "tecnolgia"
@@ -92,5 +87,9 @@
   {
     "resultado": "resultao",
     "dispositivo": "dispositivo."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitretura"
   }
 ]
