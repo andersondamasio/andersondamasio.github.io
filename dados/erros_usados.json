@@ -1,10 +1,5 @@
 [
   {
-    "personalizado": "personalizad",
-    "simples": "cimples",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "exemplo": "exemplo,",
     "muito": "muiito"
   },
@@ -87,5 +82,10 @@
   {
     "prioridade": "prioriade",
     "sistema": "cistema"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "abordagem": "abordagem.",
+    "funciona": "funciona,"
   }
 ]
