@@ -38504,5 +38504,14 @@
     "dataFonte": "2025-11-11T13:16:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/should-you-buy-a-100-android-tablet-from-amazon-i-tried-one-and-heres-what-you-actually-get/"
+  },
+  {
+    "titulo": "A ameaça silenciosa: como ataques de envenenamento podem comprometer LLMs",
+    "noticiaOriginal": "Anthropic Finds LLMs Can Be Poisoned Using Small Number of Documents",
+    "url": "artigos/seguranca/a-ameaca-silenciosa-como-ataques-de-envenenamento-podem-comprometer-llms.html",
+    "data": "2025-11-11T14:22:17.096Z",
+    "dataFonte": "2025-11-11T14:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2025/11/anthropic-poison-attack/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
