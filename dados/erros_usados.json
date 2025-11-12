@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "sistema": "cistema"
-  },
-  {
     "tecnologia": "tecnoligia",
     "abordagem": "abordagem.",
     "funciona": "funciona,"
@@ -87,5 +83,10 @@
   {
     "parceria": "parcería",
     "conectado": "conectado."
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "simples": "simlpes",
+    "conectado": "conectdo"
   }
 ]
