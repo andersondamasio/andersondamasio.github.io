@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "internet": "internat",
     "tecnologia": "tecnoligia"
   },
@@ -87,5 +83,9 @@
     "recurso": "reccurso",
     "processo": "proceso",
     "melhor": "melhorr"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "funcionalidade": "funcionalidade."
   }
 ]
