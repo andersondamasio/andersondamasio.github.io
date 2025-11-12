@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "virtual": "virtual.",
-    "sistema": "sistéma"
-  },
-  {
     "monitoramento": "monitramento",
     "funciona": "funciona."
   },
@@ -87,5 +82,10 @@
   {
     "complexidade": "complezidade",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "necessidade": "necessidade.",
+    "exemplo": "exenplo",
+    "tecnologia": "tecnolgia"
   }
 ]
