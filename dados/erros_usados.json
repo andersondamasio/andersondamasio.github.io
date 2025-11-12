@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "exemplo": "exemplo,",
-    "dispositivo": "disposotivo"
-  },
-  {
     "muito": "muto",
     "funcionalidade": "funcionaliade"
   },
@@ -90,5 +85,10 @@
     "suporte": "suporte.",
     "simples": "simlpes",
     "exemplo": "exenplo"
+  },
+  {
+    "prioridade": "prioriade",
+    "tecnologia": "tecnnologia",
+    "muito": "muinto"
   }
 ]
