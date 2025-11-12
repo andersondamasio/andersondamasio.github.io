@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo,"
   },
@@ -86,5 +82,9 @@
   {
     "arquitetura": "arquitretura",
     "internet": "internete"
+  },
+  {
+    "estrutura": "estrtura",
+    "carregamento": "carregamneto"
   }
 ]
