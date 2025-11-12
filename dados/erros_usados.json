@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "dispositivo": "dispositivo."
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura"
   },
@@ -86,5 +82,9 @@
   {
     "muito": "muto",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "internet": "internete"
   }
 ]
