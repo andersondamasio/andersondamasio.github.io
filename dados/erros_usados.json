@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotina.",
-    "computador": "computador,",
-    "melhor": "melor"
-  },
-  {
     "acesso": "acesço",
     "exemplo": "exemplo,",
     "dispositivo": "disposotivo"
@@ -90,5 +85,10 @@
     "melhor": "melor",
     "problema": "problema.",
     "recurso": "recuro"
+  },
+  {
+    "suporte": "suporte.",
+    "simples": "simlpes",
+    "exemplo": "exenplo"
   }
 ]
