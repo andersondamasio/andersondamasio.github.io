@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "carregamento": "carregameno",
     "tecnologia": "tecnolgia"
   },
@@ -87,5 +83,9 @@
   {
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
