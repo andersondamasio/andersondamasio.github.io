@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desafio": "desafiu",
     "necessidade": "nescessidade"
   },
@@ -87,5 +83,9 @@
   {
     "gerenciamento": "gerenciamneto",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "desenvolvimento": "desenvolmento"
   }
 ]
