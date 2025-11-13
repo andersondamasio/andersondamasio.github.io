@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "conectado": "conectado."
-  },
-  {
     "tecnologia": "tecnolgia",
     "simples": "simlpes",
     "conectado": "conectdo"
@@ -96,5 +92,10 @@
     "computador": "computador,",
     "virtual": "virtal",
     "internet": "internert"
+  },
+  {
+    "acesso": "aceso",
+    "internet": "internat",
+    "necessidade": "nescessidade"
   }
 ]
