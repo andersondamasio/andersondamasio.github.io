@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "abordagem": "abordajem",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "simples": "simlpes",
     "desafio": "desafío",
     "conectado": "conectado."
@@ -96,5 +91,10 @@
     "simples": "simplis",
     "muito": "muinto",
     "melhor": "melor"
+  },
+  {
+    "operacional": "operaciona",
+    "sistema": "sistma",
+    "abordagem": "abordajem"
   }
 ]
