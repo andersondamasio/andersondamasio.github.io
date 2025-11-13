@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "problema": "problema.",
-    "recurso": "recuro"
-  },
-  {
     "suporte": "suporte.",
     "simples": "simlpes",
     "exemplo": "exenplo"
@@ -95,5 +90,9 @@
   {
     "dispositivo": "disposotivo",
     "controle": "controle."
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "acesso": "acesso."
   }
 ]
