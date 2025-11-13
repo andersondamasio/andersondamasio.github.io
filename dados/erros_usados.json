@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "necessidade": "nescessidade",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "monitoramento": "monitoramento.",
     "sistema": "sistma",
     "desafio": "desafío"
@@ -93,5 +88,10 @@
     "recurso": "recuro",
     "armazenamento": "armazenamentto",
     "dispositivo": "disposotivo"
+  },
+  {
+    "sistema": "sistma",
+    "simples": "simlpes",
+    "desafio": "desaío"
   }
 ]
