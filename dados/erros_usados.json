@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "simples": "simlpes",
-    "exemplo": "exenplo"
-  },
-  {
     "prioridade": "prioriade",
     "tecnologia": "tecnnologia",
     "muito": "muinto"
@@ -94,5 +89,9 @@
   {
     "armazenamento": "armazenamentto",
     "acesso": "acesso."
+  },
+  {
+    "melhor": "melor",
+    "exemplo": "exemplo,"
   }
 ]
