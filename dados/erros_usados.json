@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "necessidade": "necessidade.",
     "exemplo": "exenplo",
     "tecnologia": "tecnolgia"
@@ -96,5 +92,10 @@
     "gerenciamento": "gerenciamnto",
     "suporte": "suportte",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "categoria": "categoria.",
+    "funcionalidade": "funcionalidade.",
+    "sistema": "sistma"
   }
 ]
