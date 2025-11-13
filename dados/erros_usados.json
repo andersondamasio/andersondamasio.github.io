@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "processo": "proceso",
-    "melhor": "melhorr"
-  },
-  {
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionalidade."
   },
@@ -93,5 +88,10 @@
     "monitoramento": "monitoramento.",
     "sistema": "sistma",
     "desafio": "desafío"
+  },
+  {
+    "constante": "constanate",
+    "resultado": "resutlado",
+    "desenvolvimento": "desenvolmento"
   }
 ]
