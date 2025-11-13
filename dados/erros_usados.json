@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "desafio": "desafío",
-    "conectado": "conectado."
-  },
-  {
     "complexidade": "complezidade",
     "desenvolvimento": "desenvolvmento"
   },
@@ -96,5 +91,10 @@
     "operacional": "operaciona",
     "sistema": "sistma",
     "abordagem": "abordajem"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "suporte": "suportte",
+    "tecnologia": "tecnnologia"
   }
 ]

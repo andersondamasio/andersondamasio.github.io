@@ -38837,5 +38837,14 @@
     "dataFonte": "2025-11-13T06:00:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.infoq.com/news/2025/11/java-on-ios/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A revolução do Kubernetes: Crossplane se torna solução madura para controle de nuvem",
+    "noticiaOriginal": "Crossplane Reaches Production Maturity by Graduating CNCF",
+    "url": "artigos/cloud/a-revolucao-do-kubernetes-crossplane-se-torna-solucao-madura-para-controle-de-nuvem.html",
+    "data": "2025-11-13T07:20:48.138Z",
+    "dataFonte": "2025-11-13T07:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/11/crossplane-grad/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
