@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melhorr",
-    "sistema": "cistema",
-    "controle": "controlle"
-  },
-  {
     "recurso": "recuro",
     "armazenamento": "armazenamentto",
     "dispositivo": "disposotivo"
@@ -93,5 +88,10 @@
     "prioridade": "prioriade",
     "abordagem": "abordajem",
     "exemplo": "exenplo"
+  },
+  {
+    "monitoramento": "monitramento",
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura"
   }
 ]
