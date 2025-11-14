@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "simples": "simlpes",
-    "desafio": "desaío"
-  },
-  {
     "sistema": "sistéma",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolmento"
@@ -93,5 +88,10 @@
     "simples": "cimples",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "estrutura": "estrtura",
+    "sistema": "sistma",
+    "exemplo": "exenplo"
   }
 ]
