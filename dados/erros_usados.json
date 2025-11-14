@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "exemplo": "exemplo.",
-    "recurso": "reccurso"
-  },
-  {
     "arquitetura": "arquitretura",
     "simples": "cimples"
   },
@@ -90,5 +85,10 @@
   {
     "tecnologia": "tecnolgia",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "problema": "problema.",
+    "internet": "internert",
+    "melhor": "melhorr"
   }
 ]
