@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "controle": "controle."
-  },
-  {
     "armazenamento": "armazenamentto",
     "acesso": "acesso."
   },
@@ -91,5 +87,9 @@
     "tecnologia": "tecnolgia",
     "funciona": "funciona.",
     "sistema": "sistma"
+  },
+  {
+    "rotina": "rotína",
+    "complexidade": "complexsidade"
   }
 ]
