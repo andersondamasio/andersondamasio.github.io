@@ -39053,5 +39053,14 @@
     "dataFonte": "2025-11-14T08:00:32.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.zdnet.com/article/going-passwordless-what-is-a-passkey-authenticator-and-why-is-it-so-essential/"
+  },
+  {
+    "titulo": "Reduzindo Falsos Positivos em Geração Aumentada: O Desafio do Cache Semântico no Setor Bancário",
+    "noticiaOriginal": "Article: Reducing False Positives in Retrieval-Augmented Generation (RAG) Semantic Caching: A Banking Case Study",
+    "url": "artigos/inteligencia-artificial/reduzindo-falsos-positivos-em-geracao-aumentada-o-desafio-do-cache-semantico-no-setor-bancario.html",
+    "data": "2025-11-14T09:22:51.143Z",
+    "dataFonte": "2025-11-14T09:00:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://www.infoq.com/articles/reducing-false-positives-retrieval-augmented-generation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
