@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "sistema": "sistma",
-    "abordagem": "abordajem"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "suporte": "suportte",
     "tecnologia": "tecnnologia"
@@ -92,5 +87,10 @@
     "constante": "constante.",
     "desafio": "desaío",
     "necessidade": "necessidade."
+  },
+  {
+    "processo": "processso",
+    "complexidade": "complexidade.",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
