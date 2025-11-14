@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "exemplo": "exenplo",
-    "necessidade": "nescessidade"
-  },
-  {
     "constante": "constante.",
     "desafio": "desaío",
     "necessidade": "necessidade."
@@ -93,5 +88,8 @@
     "gerenciamento": "gerenciamente",
     "muito": "muinto",
     "problema": "poblema"
+  },
+  {
+    "arquitetura": "arquitertura"
   }
 ]
