@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "suporte": "suportte",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "categoria": "categoria.",
     "funcionalidade": "funcionalidade.",
     "sistema": "sistma"
@@ -92,5 +87,10 @@
     "processo": "processso",
     "complexidade": "complexidade.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "parceria": "parceria.",
+    "dispositivo": "disposotivo",
+    "arquitetura": "arquitertura"
   }
 ]
