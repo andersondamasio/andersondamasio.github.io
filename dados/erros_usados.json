@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "simples": "cimples"
-  },
-  {
     "dispositivo": "disposotivo",
     "controle": "controle."
   },
@@ -90,5 +86,10 @@
     "problema": "problema.",
     "internet": "internert",
     "melhor": "melhorr"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "funciona": "funciona.",
+    "sistema": "sistma"
   }
 ]
