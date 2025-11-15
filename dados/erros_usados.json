@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "muito": "muinto",
-    "problema": "poblema"
-  },
-  {
     "arquitetura": "arquitertura"
   },
   {
@@ -91,5 +86,10 @@
     "mensagem": "menssagem",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "controle": "contrle",
+    "complexidade": "complexsidade",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
