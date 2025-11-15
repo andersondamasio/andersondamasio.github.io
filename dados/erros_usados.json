@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "consistente": "consiteente",
-    "controle": "controle."
-  },
-  {
     "prioridade": "prioriade",
     "abordagem": "abordajem",
     "exemplo": "exenplo"
@@ -92,5 +87,10 @@
     "melhor": "melhorr",
     "recurso": "recusso",
     "suporte": "suportte"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "virtual": "virtuaal",
+    "sistema": "sistma"
   }
 ]
