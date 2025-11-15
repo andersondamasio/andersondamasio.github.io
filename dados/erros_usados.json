@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "exemplo": "exemplo,"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "muito": "muinto",
     "problema": "poblema"
@@ -90,5 +86,10 @@
   {
     "tecnologia": "tecnolgia",
     "funciona": "funsiona"
+  },
+  {
+    "mensagem": "menssagem",
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitretura"
   }
 ]
