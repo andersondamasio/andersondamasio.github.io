@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "abordagem": "abordajem",
-    "exemplo": "exenplo"
-  },
-  {
     "monitoramento": "monitramento",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
@@ -92,5 +87,9 @@
     "armazenamento": "armazanamento",
     "virtual": "virtuaal",
     "sistema": "sistma"
+  },
+  {
+    "processo": "prosseso",
+    "exemplo": "exenplo"
   }
 ]
