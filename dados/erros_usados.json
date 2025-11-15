@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "dispositivo": "disposotivo",
-    "arquitetura": "arquitertura"
-  },
-  {
     "funciona": "funsiona",
     "funcionalidade": "funcionaliadde"
   },
@@ -90,5 +85,10 @@
     "parceria": "parceriaa",
     "arquitetura": "arquitretura",
     "muito": "muto"
+  },
+  {
+    "virtual": "virtual.",
+    "acesso": "acesso.",
+    "dispositivo": "dispositivo."
   }
 ]
