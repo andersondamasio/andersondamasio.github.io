@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "virtual": "virtuaal",
-    "sistema": "sistma"
-  },
-  {
     "processo": "prosseso",
     "exemplo": "exenplo"
   },
@@ -90,5 +85,10 @@
   {
     "funcionalidade": "funcionaliade",
     "dispositivo": "dispositivo."
+  },
+  {
+    "conhecimento": "conhescimento",
+    "armazenamento": "armazenamentto",
+    "dispositivo": "dispotivo"
   }
 ]
