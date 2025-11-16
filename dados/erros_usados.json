@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "monitoramento": "monitramento",
-    "muito": "muiito"
-  },
-  {
     "suporte": "suprte",
     "acesso": "acesso.",
     "arquitetura": "arquitertura"
@@ -92,5 +87,10 @@
     "melhor": "melor",
     "muito": "muiito",
     "arquitetura": "arquitertura"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "acesso": "acesço",
+    "tecnologia": "tecnoligia"
   }
 ]
