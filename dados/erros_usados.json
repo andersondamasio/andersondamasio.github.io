@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "sistema": "sistma"
-  },
-  {
     "tecnologia": "tecnolgia",
     "processo": "prosseso"
   },
@@ -89,5 +85,9 @@
   {
     "internet": "internert",
     "monitoramento": "monitramento"
+  },
+  {
+    "controle": "controlle",
+    "melhor": "melhorr"
   }
 ]
