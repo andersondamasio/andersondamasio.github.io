@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "propriedade.",
-    "prioridade": "prioriade"
-  },
-  {
     "tecnologia": "tecnoligia",
     "sistema": "sistma"
   },
@@ -89,5 +85,9 @@
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitretura",
     "exemplo": "exemplo,"
+  },
+  {
+    "internet": "internert",
+    "monitoramento": "monitramento"
   }
 ]
