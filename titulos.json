@@ -39467,5 +39467,14 @@
     "dataFonte": "2025-11-15T11:00:00.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.zdnet.com/article/apple-microsoft-or-google-whose-platform-authenticator-rules-our-passkey-future/"
+  },
+  {
+    "titulo": "Race Condition e a Queda do AWS: Lições para Arquitetura de Software",
+    "noticiaOriginal": "Race Condition in DynamoDB DNS System: Analyzing the AWS US-EAST-1 Outage",
+    "url": "artigos/cloud/race-condition-e-a-queda-do-aws-licoes-para-arquitetura-de-software.html",
+    "data": "2025-11-16T11:16:13.122Z",
+    "dataFonte": "2025-11-15T10:46:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/11/aws-dynamodb-outage-postmortem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
