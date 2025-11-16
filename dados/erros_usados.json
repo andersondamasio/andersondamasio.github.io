@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "exemplo": "exemplo,",
-    "monitoramento": "monitramento"
-  },
-  {
     "desafio": "desaío",
     "necessidade": "necissidade"
   },
@@ -92,5 +87,9 @@
     "gerenciamento": "gerenciamneto",
     "computador": "computadorr",
     "suporte": "suprte"
+  },
+  {
+    "carregamento": "carregamneto",
+    "gerenciamento": "gerenciamente"
   }
 ]
