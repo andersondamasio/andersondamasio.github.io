@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "muito": "muto",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "computador": "computadorr",
     "suporte": "suprte"
@@ -89,5 +84,9 @@
     "complexidade": "complezidade",
     "sistema": "cistema",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnolgia"
   }
 ]
