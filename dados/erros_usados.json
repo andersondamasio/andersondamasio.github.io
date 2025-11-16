@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "processo": "prosseso"
-  },
-  {
     "dispositivo": "disposotivo",
     "muito": "muinto",
     "arquitetura": "arquitertura"
@@ -89,5 +85,9 @@
   {
     "controle": "controlle",
     "melhor": "melhorr"
+  },
+  {
+    "acesso": "acesso.",
+    "tecnologia": "tecnolgia"
   }
 ]
