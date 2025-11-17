@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internert",
-    "monitoramento": "monitramento"
-  },
-  {
     "controle": "controlle",
     "melhor": "melhorr"
   },
@@ -88,5 +84,9 @@
     "dispositivo": "dispotivo",
     "acesso": "acesso.",
     "muito": "muinto"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "sistema": "cistema"
   }
 ]
