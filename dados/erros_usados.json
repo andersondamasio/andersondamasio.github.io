@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "funciona": "funciona.",
     "arquitetura": "arquitretura",
     "sistema": "sistéma"
@@ -89,5 +85,9 @@
   {
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
+  },
+  {
+    "internet": "internete",
+    "tecnologia": "tecnolgia"
   }
 ]
