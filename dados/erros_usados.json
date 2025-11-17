@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "arquitetura": "arquitretura"
-  },
-  {
     "arquitetura": "arquiteturra",
     "sistema": "sistéma"
   },
@@ -86,5 +82,10 @@
     "mensagem": "menssagem",
     "prioridade": "prioridade.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "sistema": "sistma",
+    "tecnologia": "tecnoligia"
   }
 ]
