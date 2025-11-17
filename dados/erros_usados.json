@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "muito": "muiito",
-    "arquitetura": "arquitertura"
-  },
-  {
     "dispositivo": "disposotivo",
     "acesso": "acesço",
     "tecnologia": "tecnoligia"
@@ -89,5 +84,9 @@
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra",
     "gerenciamento": "gerenciamneto"
+  },
+  {
+    "constante": "constante.",
+    "recurso": "recuro"
   }
 ]
