@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "sistema": "cistema",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia"
   },
@@ -90,5 +85,9 @@
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra",
     "muito": "muto"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exenplo"
   }
 ]
