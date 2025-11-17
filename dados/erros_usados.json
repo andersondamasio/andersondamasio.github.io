@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "complexidade": "complezidade",
     "sistema": "cistema",
     "tecnologia": "tecnnologia"
@@ -89,5 +85,10 @@
     "rotina": "rotína",
     "monitoramento": "monitoramento.",
     "sistema": "sistéma"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquiteturra",
+    "muito": "muto"
   }
 ]
