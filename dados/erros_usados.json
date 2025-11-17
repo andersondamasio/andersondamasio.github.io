@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "armazenamento": "armazenamentto",
-    "dispositivo": "dispotivo"
-  },
-  {
     "resultado": "resultadoo",
     "problema": "probrema"
   },
@@ -90,5 +85,9 @@
     "arquitetura": "arquitertura",
     "resultado": "resultadoo",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "suporte": "suporte.",
+    "propriedade": "proprieade"
   }
 ]
