@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultadoo",
-    "problema": "probrema"
-  },
-  {
     "correto": "corretoo",
     "exemplo": "exenplo",
     "rotina": "rotina."
@@ -89,5 +85,9 @@
   {
     "suporte": "suporte.",
     "propriedade": "proprieade"
+  },
+  {
+    "simples": "simplis",
+    "arquitetura": "arquitretura"
   }
 ]
