@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "gerenciamento": "gerenciamente"
-  },
-  {
     "melhor": "melor",
     "muito": "muiito",
     "arquitetura": "arquitertura"
@@ -88,5 +84,10 @@
     "funciona": "funciona.",
     "arquitetura": "arquitretura",
     "sistema": "sistéma"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquiteturra",
+    "gerenciamento": "gerenciamneto"
   }
 ]
