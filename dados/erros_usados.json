@@ -1,10 +1,5 @@
 [
   {
-    "correto": "corretoo",
-    "exemplo": "exenplo",
-    "rotina": "rotina."
-  },
-  {
     "simples": "simplis",
     "dispositivo": "dispotivo",
     "melhor": "melor"
@@ -89,5 +84,8 @@
   {
     "simples": "simplis",
     "arquitetura": "arquitretura"
+  },
+  {
+    "melhor": "melor"
   }
 ]
