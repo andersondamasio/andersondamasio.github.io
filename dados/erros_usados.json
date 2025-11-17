@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "dispositivo": "dispositivo."
-  },
-  {
     "conhecimento": "conhescimento",
     "armazenamento": "armazenamentto",
     "dispositivo": "dispotivo"
@@ -89,5 +85,10 @@
     "operacional": "operacional.",
     "exemplo": "exemplo.",
     "abordagem": "abordage"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "resultado": "resultadoo",
+    "tecnologia": "tecnnologia"
   }
 ]
