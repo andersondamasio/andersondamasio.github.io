@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "dispositivo": "dispotivo",
-    "melhor": "melor"
-  },
-  {
     "tecnologia": "tecnnologia",
     "melhor": "melhorr",
     "arquitetura": "arquitertura"
@@ -87,5 +82,9 @@
   },
   {
     "melhor": "melor"
+  },
+  {
+    "desafio": "desafío",
+    "suporte": "suportte"
   }
 ]
