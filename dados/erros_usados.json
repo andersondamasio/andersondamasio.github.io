@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "funciona": "funciona.",
-    "muito": "muto"
-  },
-  {
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvmento"
   },
@@ -93,5 +88,9 @@
   {
     "mensagem": "mensagen",
     "conhecimento": "conhecimento."
+  },
+  {
+    "armazenamento": "armazanamento",
+    "arquitetura": "arquitertura"
   }
 ]
