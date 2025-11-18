@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquiteturra",
-    "gerenciamento": "gerenciamneto"
-  },
-  {
     "constante": "constante.",
     "recurso": "recuro"
   },
@@ -89,5 +84,9 @@
     "controle": "controle.",
     "funciona": "funciona.",
     "muito": "muto"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
