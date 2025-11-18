@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "exemplo": "exenplo"
-  },
-  {
     "internet": "internete",
     "tecnologia": "tecnolgia"
   },
@@ -92,5 +88,10 @@
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia",
     "monitoramento": "monitorameto"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnnologia",
+    "prioridade": "prioriade"
   }
 ]
