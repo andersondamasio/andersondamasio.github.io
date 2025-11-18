@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "recurso": "recuro"
-  },
-  {
     "processo": "prosseso",
     "muito": "muiito",
     "sistema": "sistma"
@@ -88,5 +84,10 @@
   {
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "estrutura": "estrtura",
+    "necessidade": "nescessidade",
+    "utilizado": "utilizado."
   }
 ]
