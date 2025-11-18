@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "sistema": "cistema"
-  },
-  {
     "rotina": "rotína",
     "monitoramento": "monitoramento.",
     "sistema": "sistéma"
@@ -91,5 +87,10 @@
     "prioridade": "prioriade",
     "suporte": "suportte",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "conectado": "conectado.",
+    "sistema": "cistema",
+    "suporte": "suprte"
   }
 ]
