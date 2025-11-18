@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "propriedade": "proprieade"
-  },
-  {
     "simples": "simplis",
     "arquitetura": "arquitretura"
   },
@@ -89,5 +85,9 @@
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura",
     "controle": "contrle"
+  },
+  {
+    "abordagem": "abordajem",
+    "sistema": "sistma"
   }
 ]
