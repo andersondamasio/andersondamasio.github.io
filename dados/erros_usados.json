@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "sistema": "sistma",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "melhor": "melhorr",
     "sistema": "sistéma"
@@ -92,5 +87,10 @@
     "constante": "constanate",
     "arquitetura": "arquitretura",
     "internet": "internete"
+  },
+  {
+    "problema": "problema.",
+    "arquitetura": "arquitertura",
+    "monitoramento": "monitoramento."
   }
 ]
