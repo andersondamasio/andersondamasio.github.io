@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquiteturra",
-    "muito": "muto"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
   },
@@ -92,5 +87,10 @@
     "simples": "simplis",
     "exemplo": "exemplo,",
     "abordagem": "abordagem."
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnoligia",
+    "monitoramento": "monitorameto"
   }
 ]
