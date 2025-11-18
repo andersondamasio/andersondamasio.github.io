@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "resultado": "resultadoo",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "suporte": "suporte.",
     "propriedade": "proprieade"
   },
@@ -89,5 +84,10 @@
     "processo": "prosseso",
     "constante": "constante.",
     "desafio": "desaío"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura",
+    "controle": "contrle"
   }
 ]
