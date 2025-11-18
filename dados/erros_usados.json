@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internete",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "controle": "controle.",
     "funciona": "funciona.",
     "muito": "muto"
@@ -93,5 +89,9 @@
     "dispositivo": "disposotivo",
     "tecnologia": "tecnnologia",
     "prioridade": "prioriade"
+  },
+  {
+    "mensagem": "mensagen",
+    "conhecimento": "conhecimento."
   }
 ]
