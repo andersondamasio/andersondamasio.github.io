@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "estrutura": "estrtura",
     "necessidade": "nescessidade",
     "utilizado": "utilizado."
@@ -92,5 +88,10 @@
   {
     "armazenamento": "armazanamento",
     "arquitetura": "arquitertura"
+  },
+  {
+    "acesso": "aceso",
+    "gerenciamento": "gerenciamnto",
+    "sistema": "cistema"
   }
 ]
