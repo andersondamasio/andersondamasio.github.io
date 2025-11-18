@@ -1,10 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "virtual": "virtual.",
-    "funciona": "funsiona"
-  },
-  {
     "mensagem": "menssagem",
     "prioridade": "prioridade.",
     "tecnologia": "tecnolgia"
@@ -92,5 +87,10 @@
     "automatizado": "automatizdo",
     "estrutura": "estrura",
     "utilizado": "utilizdo."
+  },
+  {
+    "exemplo": "exemplo.",
+    "muito": "muto",
+    "melhor": "melhorr"
   }
 ]
