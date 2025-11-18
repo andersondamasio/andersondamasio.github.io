@@ -1,10 +1,5 @@
 [
   {
-    "mensagem": "menssagem",
-    "prioridade": "prioridade.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "arquitetura": "arquiteturra",
     "sistema": "sistma",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,10 @@
     "exemplo": "exemplo.",
     "muito": "muto",
     "melhor": "melhorr"
+  },
+  {
+    "constante": "constanate",
+    "arquitetura": "arquitretura",
+    "internet": "internete"
   }
 ]
