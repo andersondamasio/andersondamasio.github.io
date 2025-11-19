@@ -40016,5 +40016,14 @@
     "dataFonte": "2025-11-19T08:00:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.infoq.com/news/2025/11/fsharp-10-performance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Construindo Arquiteturas de Eventos em Nuvens Múltiplas: O Desafio da Modernização",
+    "noticiaOriginal": "Article: Building Distributed Event-Driven Architectures Across Multi-Cloud Boundaries",
+    "url": "artigos/cloud/construindo-arquiteturas-de-eventos-em-nuvens-multiplas-o-desafio-da-modernizacao.html",
+    "data": "2025-11-19T09:24:00.948Z",
+    "dataFonte": "2025-11-19T09:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/articles/multi-cloud-event-driven-architectures/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
