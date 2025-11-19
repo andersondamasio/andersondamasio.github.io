@@ -1,9 +1,5 @@
 [
   {
-    "geralmente": "geralmete",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "automatizado": "automatizdo",
     "estrutura": "estrura",
     "utilizado": "utilizdo."
@@ -93,5 +89,10 @@
     "desenvolvimento": "desenvolmento",
     "armazenamento": "armasenamento",
     "prioridade": "prioridade."
+  },
+  {
+    "necessidade": "nescessidade",
+    "recurso": "reccurso",
+    "abordagem": "abordagem."
   }
 ]
