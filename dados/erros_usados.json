@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "monitoramento": "monitoramento.",
-    "sistema": "sistma"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "recurso": "recusso",
     "funciona": "funciona,"
@@ -95,5 +90,10 @@
     "dispositivo": "dispotivo",
     "operacional": "operacional.",
     "sistema": "sistma"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "arquitetura": "arquitretura",
+    "desafio": "desaío"
   }
 ]
