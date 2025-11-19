@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "acesso": "aceso",
     "gerenciamento": "gerenciamnto",
     "sistema": "cistema"
@@ -94,5 +90,10 @@
     "simples": "simplis",
     "abordagem": "abordagem.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "exemplo": "exemplo.",
+    "sistema": "cistema",
+    "muito": "muiito"
   }
 ]
