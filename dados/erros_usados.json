@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "mensagen",
-    "conhecimento": "conhecimento."
-  },
-  {
     "armazenamento": "armazanamento",
     "arquitetura": "arquitertura"
   },
@@ -93,5 +89,10 @@
     "processo": "processso",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "simples": "simplis",
+    "abordagem": "abordagem.",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
