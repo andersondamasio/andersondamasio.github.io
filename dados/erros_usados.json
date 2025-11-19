@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "tecnologia": "tecnnologia",
-    "prioridade": "prioriade"
-  },
-  {
     "mensagem": "mensagen",
     "conhecimento": "conhecimento."
   },
@@ -93,5 +88,10 @@
     "resultado": "resultadoo",
     "abordagem": "abordage",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "processo": "processso",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnnologia"
   }
 ]
