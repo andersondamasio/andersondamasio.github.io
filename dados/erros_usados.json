@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "gerenciamento": "gerenciamnto",
-    "sistema": "cistema"
-  },
-  {
     "tecnologia": "tecnolgia",
     "monitoramento": "monitoramento.",
     "sistema": "sistma"
@@ -95,5 +90,10 @@
     "exemplo": "exemplo.",
     "sistema": "cistema",
     "muito": "muiito"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "operacional": "operacional.",
+    "sistema": "sistma"
   }
 ]
