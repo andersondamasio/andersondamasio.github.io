@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "recurso": "recusso",
-    "funciona": "funciona,"
-  },
-  {
     "tecnologia": "tecnnologia",
     "gerenciamento": "gerenciamneto"
   },
@@ -95,5 +90,9 @@
     "conhecimento": "conhecimento.",
     "arquitetura": "arquitretura",
     "desafio": "desaío"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquitertura"
   }
 ]
