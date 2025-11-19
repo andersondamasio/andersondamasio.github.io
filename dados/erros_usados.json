@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "suporte": "suportte",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "conectado": "conectado.",
     "sistema": "cistema",
     "suporte": "suprte"
@@ -94,5 +89,9 @@
     "geralmente": "geralment",
     "utilizado": "utilizado.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "estrutura": "estrututra",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
