@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordajem",
-    "sistema": "sistma"
-  },
-  {
     "propriedade": "propriedade.",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
@@ -92,5 +88,10 @@
     "controle": "controle.",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
+  },
+  {
+    "processo": "prosseso",
+    "gerenciamento": "gerenciamnto",
+    "arquitetura": "arquitretura"
   }
 ]
