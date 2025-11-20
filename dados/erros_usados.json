@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo."
-  },
-  {
     "processo": "prosseso",
     "gerenciamento": "gerenciamnto",
     "arquitetura": "arquitretura"
@@ -95,5 +90,10 @@
     "dispositivo": "dispotivo",
     "exemplo": "exemplo,",
     "armazenamento": "armazanamento"
+  },
+  {
+    "melhor": "melhorr",
+    "simples": "simplis",
+    "funciona": "funciona."
   }
 ]
