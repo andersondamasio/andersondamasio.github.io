@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "sistema": "cistema",
-    "muito": "muiito"
-  },
-  {
     "dispositivo": "dispotivo",
     "operacional": "operacional.",
     "sistema": "sistma"
@@ -92,5 +87,10 @@
     "monitoramento": "monitoramento.",
     "tecnologia": "tecnnologia",
     "sistema": "sistéma"
+  },
+  {
+    "constante": "constate",
+    "prioridade": "prioridade.",
+    "simples": "simplis"
   }
 ]
