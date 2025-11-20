@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultadoo",
-    "abordagem": "abordage",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "processo": "processso",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia"
@@ -93,5 +88,9 @@
     "propriedade": "proprieade",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "carregamento": "carregamento."
   }
 ]
