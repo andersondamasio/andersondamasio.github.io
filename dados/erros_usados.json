@@ -1,10 +1,5 @@
 [
   {
-    "processo": "processso",
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "simples": "simplis",
     "abordagem": "abordagem.",
     "desenvolvimento": "desenvolvimente"
@@ -92,5 +87,10 @@
   {
     "funcionalidade": "funcionalidade.",
     "carregamento": "carregamento."
+  },
+  {
+    "prioridade": "prioriade.",
+    "processo": "processso",
+    "simples": "cimples"
   }
 ]
