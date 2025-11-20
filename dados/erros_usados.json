@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "recurso": "reccurso",
-    "abordagem": "abordagem."
-  },
-  {
     "complexidade": "complexsidade",
     "desafio": "desafiu",
     "melhor": "melor"
@@ -93,5 +88,9 @@
   {
     "funciona": "funsiona",
     "melhor": "melhorr"
+  },
+  {
+    "componente": "componete",
+    "sistema": "sistéma"
   }
 ]
