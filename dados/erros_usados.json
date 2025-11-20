@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "melhor": "melhorr",
-    "suporte": "suprte"
-  },
-  {
     "constante": "constanate",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnolgia"
@@ -92,5 +87,10 @@
   {
     "arquitetura": "arquitretura",
     "monitoramento": "monitorameto"
+  },
+  {
+    "necessidade": "nescessidade",
+    "dispositivo": "dispotivo",
+    "exemplo": "exenplo"
   }
 ]
