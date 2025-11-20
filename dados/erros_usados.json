@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "gerenciamento": "gerenciamneto"
-  },
-  {
     "controle": "controle.",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
@@ -94,5 +90,10 @@
   {
     "monitoramento": "monitorameto",
     "arquitetura": "arquitertura"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "exemplo": "exemplo,",
+    "armazenamento": "armazanamento"
   }
 ]
