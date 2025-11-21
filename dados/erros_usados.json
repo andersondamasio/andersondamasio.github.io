@@ -1,9 +1,5 @@
 [
   {
-    "componente": "componete",
-    "sistema": "sistéma"
-  },
-  {
     "recurso": "recuro",
     "internet": "internert",
     "simples": "simplis"
@@ -93,5 +89,10 @@
     "geralmente": "geralment",
     "desafio": "desaío",
     "funciona": "funsiona"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exemplo.",
+    "desenvolvimento": "desenvolmento"
   }
 ]
