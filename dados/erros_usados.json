@@ -1,10 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "utilizado": "utilizdo",
-    "sistema": "sistéma"
-  },
-  {
     "propriedade": "proprieade",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnolgia"
@@ -91,5 +86,9 @@
   {
     "conhecimento": "conhecimeto",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolmento"
   }
 ]
