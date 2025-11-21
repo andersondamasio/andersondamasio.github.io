@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "sistema": "cistema",
-    "recurso": "reccurso"
-  },
-  {
     "geralmente": "geralment",
     "desafio": "desaío",
     "funciona": "funsiona"
@@ -90,5 +85,10 @@
     "armazenamento": "armazenamentto",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "carregamento": "carregamneto",
+    "acesso": "acesso.",
+    "sistema": "sistéma"
   }
 ]
