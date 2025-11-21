@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralment",
-    "desafio": "desaío",
-    "funciona": "funsiona"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo.",
     "desenvolvimento": "desenvolmento"
@@ -90,5 +85,10 @@
     "carregamento": "carregamneto",
     "acesso": "acesso.",
     "sistema": "sistéma"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnoligia",
+    "geralmente": "geralment"
   }
 ]
