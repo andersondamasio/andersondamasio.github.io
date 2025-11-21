@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "dispositivo": "dispotivo",
-    "exemplo": "exenplo"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "computador": "computador,",
     "suporte": "suporte."
@@ -93,5 +88,10 @@
   {
     "resultado": "resultao",
     "personalizado": "personalizad"
+  },
+  {
+    "muito": "muinto",
+    "processo": "proceso",
+    "dispositivo": "dispositivo."
   }
 ]
