@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "processo": "proceso",
-    "arquitetura": "arquitretura"
-  },
-  {
     "problema": "probrema",
     "utilizado": "utilizdo",
     "sistema": "sistéma"
@@ -92,5 +87,9 @@
     "rotina": "rotína",
     "exemplo": "exenplo",
     "arquitetura": "arquitertura"
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "tecnologia": "tecnolgia"
   }
 ]
