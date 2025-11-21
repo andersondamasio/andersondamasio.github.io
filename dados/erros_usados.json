@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "dispositivo": "dispotivo",
-    "suporte": "suportte"
-  },
-  {
     "exemplo": "exemplo,",
     "processo": "proceso",
     "arquitetura": "arquitretura"
@@ -92,5 +87,10 @@
   {
     "muito": "muto",
     "suporte": "suprte"
+  },
+  {
+    "rotina": "rotína",
+    "exemplo": "exenplo",
+    "arquitetura": "arquitertura"
   }
 ]
