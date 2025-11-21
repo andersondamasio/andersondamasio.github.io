@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "prioridade": "prioridade.",
-    "simples": "simplis"
-  },
-  {
     "acesso": "acesço",
     "arquitetura": "arquitertura"
   },
@@ -90,5 +85,10 @@
   {
     "desenvolvimento": "desenvolvimente",
     "sistema": "sistma"
+  },
+  {
+    "controle": "contrle",
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnnologia"
   }
 ]
