@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "computador": "computador,",
-    "suporte": "suporte."
-  },
-  {
     "controle": "controlle",
     "dispositivo": "dispotivo",
     "suporte": "suportte"
@@ -93,5 +88,9 @@
     "muito": "muinto",
     "processo": "proceso",
     "dispositivo": "dispositivo."
+  },
+  {
+    "muito": "muto",
+    "suporte": "suprte"
   }
 ]
