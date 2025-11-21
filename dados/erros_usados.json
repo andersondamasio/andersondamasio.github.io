@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "proprieade",
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "carregamento": "carregamento."
   },
@@ -90,5 +85,10 @@
   {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "operacional": "operaciona",
+    "problema": "poblema",
+    "sistema": "cistema"
   }
 ]
