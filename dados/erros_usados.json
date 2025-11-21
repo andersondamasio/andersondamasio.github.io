@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "monitoramento": "monitorameto"
-  },
-  {
     "necessidade": "nescessidade",
     "dispositivo": "dispotivo",
     "exemplo": "exenplo"
@@ -93,5 +89,9 @@
   {
     "virtual": "virtal",
     "abordagem": "abordajem"
+  },
+  {
+    "resultado": "resultao",
+    "personalizado": "personalizad"
   }
 ]
