@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "operacional": "operaciona",
     "problema": "poblema",
     "sistema": "cistema"
@@ -93,5 +89,9 @@
     "recurso": "reccurso",
     "sistema": "cistema",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "simples": "cimples"
   }
 ]
