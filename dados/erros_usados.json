@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotína",
-    "exemplo": "exenplo",
-    "arquitetura": "arquitertura"
-  },
-  {
     "conhecimento": "conhecimeto",
     "tecnologia": "tecnolgia"
   },
@@ -92,5 +87,10 @@
   {
     "arquitetura": "arquiteturra",
     "melhor": "melor"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "funcionalidade": "funcionalidade.",
+    "virtual": "virtuaal"
   }
 ]
