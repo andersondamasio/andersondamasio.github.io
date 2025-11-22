@@ -40556,5 +40556,14 @@
     "dataFonte": "2025-11-22T01:08:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/best-black-friday-tv-deals-live-2025/"
+  },
+  {
+    "titulo": "Valkey 9.0: O Futuro das Estruturas de Dados em Clusters",
+    "noticiaOriginal": "Valkey 9.0 Introduces Multi-Database Clustering, Atomic Slot Migration, and Major Performance Gains",
+    "url": "artigos/banco-de-dados/valkey-9-0-o-futuro-das-estruturas-de-dados-em-clusters.html",
+    "data": "2025-11-22T03:06:21.400Z",
+    "dataFonte": "2025-11-22T03:05:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2025/11/valkey-9-atomic-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
