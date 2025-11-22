@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "personalizado": "personalizad"
-  },
-  {
     "muito": "muinto",
     "processo": "proceso",
     "dispositivo": "dispositivo."
@@ -91,5 +87,10 @@
     "consistente": "consiteente",
     "propriedade": "propriedade.",
     "gerenciamento": "gerenciamnto"
+  },
+  {
+    "estrutura": "estrututra",
+    "abordagem": "abordage",
+    "arquitetura": "arquitertura"
   }
 ]
