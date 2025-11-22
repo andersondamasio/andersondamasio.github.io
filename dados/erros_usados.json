@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolmento"
   },
@@ -92,5 +88,10 @@
     "dispositivo": "dispotivo",
     "funcionalidade": "funcionalidade.",
     "virtual": "virtuaal"
+  },
+  {
+    "recurso": "reccurso",
+    "sistema": "cistema",
+    "funcionalidade": "funcionaliadde"
   }
 ]
