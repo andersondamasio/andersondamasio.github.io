@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "monitoramento": "monitramento"
-  },
-  {
     "simples": "simlpes",
     "exemplo": "exemplo.",
     "arquitetura": "arquitretura"
@@ -92,5 +88,9 @@
   {
     "internet": "internete",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "controle": "controlle",
+    "arquitetura": "arquitertura"
   }
 ]
