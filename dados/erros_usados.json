@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "armazenamento": "armazenamentto",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvmento"
@@ -92,5 +88,10 @@
     "processo": "processso",
     "desenvolvimento": "desenvolmento",
     "abordagem": "abordage"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "abordagem": "abordajem",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
