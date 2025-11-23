@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "funcionalidade": "funcionalidade.",
-    "virtual": "virtuaal"
-  },
-  {
     "recurso": "reccurso",
     "sistema": "cistema",
     "funcionalidade": "funcionaliadde"
@@ -93,5 +88,10 @@
     "carregamento": "carregameno",
     "dispositivo": "dispositivo.",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "melhor": "melor",
+    "processo": "proceso",
+    "arquitetura": "arquitertura"
   }
 ]
