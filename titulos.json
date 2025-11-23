@@ -40808,5 +40808,14 @@
     "dataFonte": "2025-11-22T02:41:11.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/best-gps-trackers-and-devices-for-kids/"
+  },
+  {
+    "titulo": "Uma chave perdida e a confiança em sistemas de votação",
+    "noticiaOriginal": "Oops. Cryptographers cancel election results after losing decryption key.",
+    "url": "artigos/seguranca/uma-chave-perdida-e-a-confianca-em-sistemas-de-votacao.html",
+    "data": "2025-11-23T09:20:24.853Z",
+    "dataFonte": "2025-11-22T00:16:25.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2025/11/cryptography-group-cancels-election-results-after-official-loses-secret-key/"
   }
 ]
