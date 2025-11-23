@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "acesso": "acesso.",
-    "resultado": "resutlado"
-  },
-  {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia",
     "sistema": "sistéma"
@@ -89,5 +84,10 @@
     "desenvolvimento": "desenvolvmento",
     "processo": "prosseso",
     "complexidade": "complexsidade"
+  },
+  {
+    "acesso": "acesso.",
+    "melhor": "melhorr",
+    "armazenamento": "armazenamentto"
   }
 ]
