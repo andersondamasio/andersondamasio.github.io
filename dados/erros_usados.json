@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "melhor": "melor"
-  },
-  {
     "dispositivo": "dispotivo",
     "funcionalidade": "funcionalidade.",
     "virtual": "virtuaal"
@@ -92,5 +88,10 @@
   {
     "estrutura": "estrututra",
     "melhor": "melor"
+  },
+  {
+    "carregamento": "carregameno",
+    "dispositivo": "dispositivo.",
+    "funcionalidade": "funcionalidade."
   }
 ]
