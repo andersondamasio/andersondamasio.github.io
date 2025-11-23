@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "recurso": "reccurso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "complexidade": "complexidade.",
     "processo": "processso"
   },
@@ -90,5 +85,10 @@
   },
   {
     "monitoramento": "monitorameto"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "sistema": "cistema",
+    "arquitetura": "arquitertura"
   }
 ]
