@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "simples": "simlpes",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "simples": "cimples",
     "recurso": "reccurso",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,8 @@
     "tecnologia": "tecnnologia",
     "constante": "constanate",
     "abordagem": "abordage"
+  },
+  {
+    "monitoramento": "monitorameto"
   }
 ]
