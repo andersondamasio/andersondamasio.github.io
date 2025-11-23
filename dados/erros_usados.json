@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "simples": "cimples"
-  },
-  {
     "necessidade": "nescessidade",
     "simples": "simlpes",
     "carregamento": "carregamento."
@@ -93,5 +89,9 @@
     "funciona": "funsiona",
     "prioridade": "prioridade.",
     "rotina": "rotina."
+  },
+  {
+    "muito": "muto",
+    "tecnologia": "tecnnologia"
   }
 ]
