@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnnologia",
-    "prioridade": "prioriade"
-  },
-  {
     "necessidade": "necissidade",
     "estrutura": "estrura",
     "sistema": "sistéma"
@@ -92,5 +87,8 @@
     "processo": "prosseso",
     "desafio": "desaío",
     "prioridade": "prioriade"
+  },
+  {
+    "problema": "probrema"
   }
 ]
