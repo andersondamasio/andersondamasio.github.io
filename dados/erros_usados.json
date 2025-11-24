@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muto",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "tecnologia": "tecnolgia",
     "dispositivo": "disposotivo"
   },
@@ -86,5 +82,10 @@
     "sistema": "cistema",
     "simples": "cimples",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "controle": "controle.",
+    "resultado": "resutlado",
+    "exemplo": "exemplo,"
   }
 ]
