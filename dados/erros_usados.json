@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "rotina": "rotína"
-  },
-  {
     "complexidade": "complexsidade",
     "desafio": "desaío"
   },
@@ -88,5 +84,10 @@
     "funciona": "funciona,",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
+  },
+  {
+    "constante": "constate",
+    "muito": "muinto",
+    "virtual": "virtuaal"
   }
 ]
