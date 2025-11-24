@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "melhor": "melhorr",
-    "processo": "prosseso"
-  },
-  {
     "desafio": "desafiu",
     "suporte": "suprte",
     "sistema": "sistéma"
@@ -88,5 +83,10 @@
   {
     "funcionalidade": "funcionalidade.",
     "computador": "computador,"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia"
   }
 ]
