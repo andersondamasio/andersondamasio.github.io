@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "processo": "prosseso",
     "complexidade": "complexsidade"
@@ -88,5 +85,10 @@
     "utilizado": "utilizdo",
     "monitoramento": "monitoramento.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "suporte": "suportte",
+    "carregamento": "carregameno",
+    "dispositivo": "dispotivo"
   }
 ]
