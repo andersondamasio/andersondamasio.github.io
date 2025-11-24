@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "processo": "proceso",
-    "arquitetura": "arquitertura"
-  },
-  {
     "funciona": "funsiona",
     "prioridade": "prioridade.",
     "rotina": "rotina."
@@ -86,5 +81,10 @@
     "exemplo": "exemplo.",
     "tecnologia": "tecnnologia",
     "prioridade": "prioriade"
+  },
+  {
+    "necessidade": "necissidade",
+    "estrutura": "estrura",
+    "sistema": "sistéma"
   }
 ]
