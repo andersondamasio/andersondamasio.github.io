@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "dispositivo": "dispositivo.",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "melhor": "melor",
     "processo": "proceso",
     "arquitetura": "arquitertura"
@@ -86,5 +81,10 @@
   {
     "problema": "poblema",
     "internet": "internert"
+  },
+  {
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnnologia",
+    "prioridade": "prioriade"
   }
 ]
