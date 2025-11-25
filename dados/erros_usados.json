@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "sistema": "sistéma"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "computador": "computador,"
   },
@@ -91,5 +87,10 @@
     "funciona": "funciona.",
     "abordagem": "abordajem",
     "necessidade": "necessidade."
+  },
+  {
+    "constante": "constanate",
+    "funciona": "funciona,",
+    "tecnologia": "tecnolgia"
   }
 ]
