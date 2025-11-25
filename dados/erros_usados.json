@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "acesso": "aceso",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "processo": "prosseso",
     "desafio": "desaío",
     "prioridade": "prioriade"
@@ -90,5 +85,9 @@
   {
     "armazenamento": "armasenamento",
     "computador": "computador."
+  },
+  {
+    "simples": "cimples",
+    "exemplo": "exemplo,"
   }
 ]
