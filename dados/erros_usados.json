@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "resultado": "resutlado",
-    "exemplo": "exemplo,"
-  },
-  {
     "paralelo": "paralelo.",
     "abordagem": "abordage"
   },
@@ -90,5 +85,10 @@
     "parceria": "parceria.",
     "conhecimento": "conhescimento",
     "estrutura": "estrura"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "utilizado": "utilizado.",
+    "melhor": "melhorr"
   }
 ]
