@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "desafio": "desaío",
-    "prioridade": "prioriade"
-  },
-  {
     "problema": "probrema"
   },
   {
@@ -89,5 +84,10 @@
   {
     "simples": "cimples",
     "exemplo": "exemplo,"
+  },
+  {
+    "virtual": "virtuaal",
+    "personalizado": "personalizad",
+    "tecnologia": "tecnolgia"
   }
 ]
