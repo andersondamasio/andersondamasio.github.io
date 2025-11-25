@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "conhecimento": "conhescimento",
-    "estrutura": "estrura"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "utilizado": "utilizado.",
     "melhor": "melhorr"
@@ -90,5 +85,9 @@
     "desafio": "desaío",
     "dispositivo": "dispositivo.",
     "suporte": "suprte"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "acesso": "aceso"
   }
 ]
