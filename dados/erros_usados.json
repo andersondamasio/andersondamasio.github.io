@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "sistema": "cistema",
-    "melhor": "melhorr"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "acesso": "aceso",
     "funcionalidade": "funcionaliadde"
@@ -91,5 +86,9 @@
     "melhor": "melhorr",
     "monitoramento": "monitorameto",
     "sistema": "sistma"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "computador": "computador."
   }
 ]
