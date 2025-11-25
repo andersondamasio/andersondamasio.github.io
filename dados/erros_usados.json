@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "acesso": "aceso",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "parceria": "parceria.",
     "conhecimento": "conhescimento",
     "estrutura": "estrura"
@@ -90,5 +85,10 @@
   {
     "processo": "prosseso",
     "arquitetura": "arquitertura"
+  },
+  {
+    "desafio": "desaío",
+    "dispositivo": "dispositivo.",
+    "suporte": "suprte"
   }
 ]
