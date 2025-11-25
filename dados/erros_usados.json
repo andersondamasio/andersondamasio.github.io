@@ -1,8 +1,5 @@
 [
   {
-    "problema": "probrema"
-  },
-  {
     "arquitetura": "arquiteturra",
     "acesso": "aceso",
     "desenvolvimento": "desenvolvimente"
@@ -89,5 +86,9 @@
     "virtual": "virtuaal",
     "personalizado": "personalizad",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "processo": "prosseso",
+    "arquitetura": "arquitertura"
   }
 ]
