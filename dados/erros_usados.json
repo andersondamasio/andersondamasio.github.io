@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "computador": "computador."
-  },
-  {
     "simples": "cimples",
     "exemplo": "exemplo,"
   },
@@ -92,5 +88,9 @@
   {
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "monitoramento": "monitramento",
+    "carregamento": "carregameno"
   }
 ]
