@@ -41420,5 +41420,14 @@
     "dataFonte": "2025-11-26T10:00:44.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/t-mobile-will-give-you-a-free-iphone-17-ipad-and-apple-watch-right-now-how-the-deal-works/"
+  },
+  {
+    "titulo": "A revolução do teste de regressão com Apache Spark: uma nova abordagem para grandes dados",
+    "noticiaOriginal": "Podcast: How to Use Apache Spark to Craft a Multi-Year Data Regression Testing and Simulations Framework",
+    "url": "artigos/desenvolvimento-de-software/a-revolucao-do-teste-de-regressao-com-apache-spark-uma-nova-abordagem-para-grandes-dados.html",
+    "data": "2025-11-26T11:19:57.154Z",
+    "dataFonte": "2025-11-26T11:00:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://www.infoq.com/podcasts/data-regression-testing-simulations-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
