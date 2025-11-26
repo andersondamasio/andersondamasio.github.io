@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "personalizado": "personalizad",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "processo": "prosseso",
     "arquitetura": "arquitertura"
   },
@@ -93,5 +88,10 @@
     "prioridade": "prioridade.",
     "geralmente": "geralmemte",
     "internet": "internete"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnnologia"
   }
 ]
