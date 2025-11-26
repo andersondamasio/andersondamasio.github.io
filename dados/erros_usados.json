@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia"
-  },
-  {
     "suporte": "suporte.",
     "melhor": "melor",
     "resultado": "resultadoo"
@@ -91,5 +88,10 @@
     "funciona": "funciona,",
     "abordagem": "abordage",
     "utilizado": "utilizado."
+  },
+  {
+    "constante": "constante.",
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolmento"
   }
 ]
