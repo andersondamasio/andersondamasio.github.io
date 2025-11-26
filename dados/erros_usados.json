@@ -1,9 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "arquitetura": "arquitertura"
-  },
-  {
     "desafio": "desaío",
     "dispositivo": "dispositivo.",
     "suporte": "suprte"
@@ -93,5 +89,10 @@
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "melhor": "melhorr",
+    "dispositivo": "disposotivo"
   }
 ]
