@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "acesso": "aceso"
-  },
-  {
     "dispositivo": "disposotivo",
     "armazenamento": "armazanamento",
     "muito": "muiito"
@@ -94,5 +90,10 @@
     "problema": "problema.",
     "acesso": "aceso",
     "geralmente": "geralmete"
+  },
+  {
+    "controle": "contrle",
+    "tecnologia": "tecnnologia",
+    "suporte": "suprte"
   }
 ]
