@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvmento",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "melhor": "melhorr",
     "dispositivo": "disposotivo"
@@ -93,5 +88,9 @@
   {
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo,"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "monitoramento": "monitorameto"
   }
 ]
