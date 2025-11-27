@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "carregamento": "carregameno"
-  },
-  {
     "prioridade": "prioridade.",
     "geralmente": "geralmemte",
     "internet": "internete"
@@ -93,5 +89,10 @@
     "estrutura": "estrtura",
     "processo": "proceso",
     "exemplo": "exemplo."
+  },
+  {
+    "funciona": "funsiona",
+    "simples": "simlpes",
+    "arquitetura": "arquiteturra"
   }
 ]
