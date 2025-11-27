@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "monitoramento": "monitramento",
     "carregamento": "carregameno"
   },
@@ -92,5 +88,10 @@
     "muito": "muto",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "estrutura": "estrtura",
+    "processo": "proceso",
+    "exemplo": "exemplo."
   }
 ]
