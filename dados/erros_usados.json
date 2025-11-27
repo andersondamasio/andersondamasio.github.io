@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "tecnologia": "tecnnologia",
-    "suporte": "suprte"
-  },
-  {
     "simples": "simlpes",
     "sistema": "sistéma"
   },
@@ -90,5 +85,10 @@
   {
     "gerenciamento": "gerenciamnto",
     "carregamento": "carregameno"
+  },
+  {
+    "mensagem": "menssagem",
+    "conectado": "conectado.",
+    "complexidade": "complexsidade"
   }
 ]
