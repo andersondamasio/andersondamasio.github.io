@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "melhor": "melor",
-    "arquitetura": "arquitretura"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "parceria": "parceriaa",
     "complexidade": "complexidade."
@@ -94,5 +89,9 @@
     "exemplo": "exemplo,",
     "desenvolvimento": "desenvolvmento",
     "dispositivo": "disposotivo"
+  },
+  {
+    "melhor": "melor",
+    "exemplo": "exenplo"
   }
 ]
