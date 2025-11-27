@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "resultado": "resultadoo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnnologia"
   },
@@ -92,5 +87,10 @@
     "abordagem": "abordage",
     "melhor": "melor",
     "controle": "controlle"
+  },
+  {
+    "muito": "muto",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitertura"
   }
 ]
