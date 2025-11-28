@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "exemplo": "exemplo,"
-  },
-  {
     "conhecimento": "conhescimento",
     "monitoramento": "monitorameto"
   },
@@ -85,5 +81,10 @@
   {
     "arquitetura": "arquitertura",
     "exemplo": "exemplo,"
+  },
+  {
+    "resultado": "resutlado",
+    "processo": "proceso",
+    "abordagem": "abordajem"
   }
 ]
