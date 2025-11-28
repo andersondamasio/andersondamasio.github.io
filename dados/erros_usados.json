@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "tecnologia": "tecnnologia",
-    "muito": "muto"
-  },
-  {
     "tecnologia": "tecnolgia",
     "suporte": "suporte.",
     "exemplo": "exemplo."
@@ -87,5 +82,10 @@
     "tecnologia": "tecnoligia",
     "muito": "muto",
     "abordagem": "abordage"
+  },
+  {
+    "estrutura": "estrututra",
+    "sistema": "sistéma",
+    "suporte": "suporte."
   }
 ]
