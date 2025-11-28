@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "tecnologia": "tecnolgia"
   },
@@ -85,5 +81,9 @@
   {
     "mensagem": "mensagen",
     "categoria": "categória"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "dispositivo": "dispositivo."
   }
 ]
