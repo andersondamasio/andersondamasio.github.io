@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "carregamento": "carregameno"
-  },
-  {
     "mensagem": "menssagem",
     "conectado": "conectado.",
     "complexidade": "complexsidade"
@@ -86,5 +82,9 @@
   {
     "componente": "componentte",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "muito": "muiito",
+    "melhor": "melor"
   }
 ]
