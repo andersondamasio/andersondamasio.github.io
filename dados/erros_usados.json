@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "carregamento": "carregameno"
   },
@@ -86,5 +82,9 @@
   {
     "controle": "contrle",
     "sistema": "sistéma"
+  },
+  {
+    "componente": "componentte",
+    "tecnologia": "tecnolgia"
   }
 ]
