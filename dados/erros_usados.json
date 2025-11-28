@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "acesso": "acesso.",
     "tecnologia": "tecnnologia",
     "muito": "muto"
@@ -86,5 +82,10 @@
     "monitoramento": "monitramento",
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo,"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "muito": "muto",
+    "abordagem": "abordage"
   }
 ]
