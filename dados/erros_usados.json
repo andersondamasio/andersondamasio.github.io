@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "monitoramento": "monitorameto"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnolgia"
   },
@@ -86,5 +82,9 @@
     "resultado": "resutlado",
     "processo": "proceso",
     "abordagem": "abordajem"
+  },
+  {
+    "controle": "contrle",
+    "sistema": "sistéma"
   }
 ]
