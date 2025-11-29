@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "acesso": "aceso"
-  },
-  {
     "desafio": "desafiu",
     "funcionalidade": "funcionalidade.",
     "arquitetura": "arquitertura"
@@ -86,5 +82,9 @@
     "operacional": "operacional.",
     "armazenamento": "armazanamento",
     "necessidade": "necessidade."
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "muito": "muiito"
   }
 ]
