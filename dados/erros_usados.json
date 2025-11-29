@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "dispositivo": "dispositivo."
-  },
-  {
     "mensagem": "mensagen",
     "categoria": "categória"
   },
@@ -89,5 +85,9 @@
     "muito": "muto",
     "arquitetura": "arquitertura",
     "conhecimento": "conhecimento."
+  },
+  {
+    "muito": "muinto",
+    "melhor": "melor"
   }
 ]
