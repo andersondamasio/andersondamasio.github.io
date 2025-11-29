@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "processo": "proceso",
-    "abordagem": "abordajem"
-  },
-  {
     "controle": "contrle",
     "sistema": "sistéma"
   },
@@ -87,5 +82,10 @@
     "rotina": "rotina.",
     "dispositivo": "dispositivo.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "desafio": "desafío",
+    "arquitetura": "arquiteturra",
+    "processo": "processso"
   }
 ]

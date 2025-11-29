@@ -42005,5 +42005,14 @@
     "dataFonte": "2025-11-29T09:00:28.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/the-10-products-our-readers-bought-most-ahead-of-black-friday-no-1-will-stop-your-doomscrolling/"
+  },
+  {
+    "titulo": "A aposentadoria do Ingress NGINX: O que isso significa para a comunidade Kubernetes?",
+    "noticiaOriginal": "Kubernetes Community Retires Popular Ingress NGINX Controller",
+    "url": "artigos/devops/a-aposentadoria-do-ingress-nginx-o-que-isso-significa-para-a-comunidade-kubernetes.html",
+    "data": "2025-11-29T10:20:57.851Z",
+    "dataFonte": "2025-11-29T09:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2025/11/kubernetes-ingress-nginx/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
