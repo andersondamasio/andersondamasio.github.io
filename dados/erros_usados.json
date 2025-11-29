@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "funcionalidade": "funcionalidade.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "prioridade": "prioridade.",
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolmento"
@@ -86,5 +81,9 @@
   {
     "tecnologia": "tecnolgia",
     "muito": "muiito"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnnologia"
   }
 ]
