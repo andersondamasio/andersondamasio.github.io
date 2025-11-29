@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "sistema": "sistéma"
-  },
-  {
     "componente": "componentte",
     "tecnologia": "tecnolgia"
   },
@@ -87,5 +83,9 @@
     "desafio": "desafío",
     "arquitetura": "arquiteturra",
     "processo": "processso"
+  },
+  {
+    "constante": "constante.",
+    "utilizado": "utilizdo."
   }
 ]
