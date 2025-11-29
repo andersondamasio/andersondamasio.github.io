@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "exemplo": "exemplo,"
-  },
-  {
     "resultado": "resutlado",
     "processo": "proceso",
     "abordagem": "abordajem"
@@ -86,5 +82,10 @@
     "simples": "simlpes",
     "desenvolvimento": "desenvolmento",
     "abordagem": "abordage"
+  },
+  {
+    "rotina": "rotina.",
+    "dispositivo": "dispositivo.",
+    "arquitetura": "arquitertura"
   }
 ]
