@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "armazenamento": "armazanamento",
-    "necessidade": "necessidade."
-  },
-  {
     "tecnologia": "tecnolgia",
     "muito": "muiito"
   },
@@ -90,5 +85,9 @@
   {
     "mensagem": "menssagen",
     "monitoramento": "monitoramento."
+  },
+  {
+    "recurso": "recuro",
+    "arquitetura": "arquitretura"
   }
 ]
