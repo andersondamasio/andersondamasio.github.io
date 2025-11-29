@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "sistema": "sistéma",
-    "suporte": "suporte."
-  },
-  {
     "tecnologia": "tecnnologia",
     "dispositivo": "dispositivo."
   },
@@ -89,5 +84,10 @@
     "suporte": "suporte.",
     "sistema": "cistema",
     "necessidade": "nescessidade"
+  },
+  {
+    "muito": "muto",
+    "arquitetura": "arquitertura",
+    "conhecimento": "conhecimento."
   }
 ]
