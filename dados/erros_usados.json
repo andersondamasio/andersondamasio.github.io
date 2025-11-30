@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "carregamento": "carregamneto",
     "acesso": "aceso",
     "arquitetura": "arquiteturra"
@@ -93,5 +89,10 @@
     "operacional": "operacional.",
     "armazenamento": "armazenamentto",
     "computador": "computador."
+  },
+  {
+    "estrutura": "estrura",
+    "arquitetura": "arquiteturra",
+    "sistema": "sistma"
   }
 ]
