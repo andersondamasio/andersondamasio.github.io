@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muinto",
-    "melhor": "melor"
-  },
-  {
     "muito": "muto",
     "tecnologia": "tecnoligia",
     "melhor": "melhorr"
@@ -90,5 +86,10 @@
   {
     "componente": "componete",
     "controle": "contrle"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "sistema": "sistma",
+    "armazenamento": "armasenamento"
   }
 ]
