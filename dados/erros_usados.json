@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "arquitetura": "arquitertura",
-    "simples": "simplis"
-  },
-  {
     "operacional": "operacional.",
     "armazenamento": "armazenamentto",
     "computador": "computador."
@@ -92,5 +87,10 @@
     "suporte": "suprte",
     "dispositivo": "disposotivo",
     "muito": "muiito"
+  },
+  {
+    "muito": "muto",
+    "geralmente": "geralment",
+    "dispositivo": "dispotivo"
   }
 ]
