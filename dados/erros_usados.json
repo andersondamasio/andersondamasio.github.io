@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "acesso": "aceso",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "simples": "simlpes",
     "desenvolvimento": "desenvolmento",
     "abordagem": "abordage"
@@ -94,5 +89,9 @@
     "estrutura": "estrura",
     "arquitetura": "arquiteturra",
     "sistema": "sistma"
+  },
+  {
+    "personalizado": "personalizdo",
+    "muito": "muiito"
   }
 ]
