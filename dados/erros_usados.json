@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "arquitetura": "arquitretura"
-  },
-  {
     "melhor": "melhorr",
     "tecnologia": "tecnnologia",
     "sistema": "sistma"
@@ -91,5 +87,10 @@
     "tecnologia": "tecnolgia",
     "melhor": "melhorr",
     "arquitetura": "arquitretura"
+  },
+  {
+    "necessidade": "necissidade",
+    "conhecimento": "conhecimeto",
+    "melhor": "melor"
   }
 ]
