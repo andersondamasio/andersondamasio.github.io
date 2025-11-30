@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "utilizado": "utilizdo."
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "controle": "contrle",
     "processo": "prosseso"
@@ -92,5 +88,10 @@
   {
     "problema": "poblema",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "recurso": "reccurso",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnnologia"
   }
 ]
