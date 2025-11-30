@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "sistema": "cistema",
-    "necessidade": "nescessidade"
-  },
-  {
     "muito": "muto",
     "arquitetura": "arquitertura",
     "conhecimento": "conhecimento."
@@ -92,5 +87,9 @@
   {
     "melhor": "melhorr",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "sistema": "sistéma"
   }
 ]
