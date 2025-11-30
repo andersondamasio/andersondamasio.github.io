@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafío",
-    "arquitetura": "arquiteturra",
-    "processo": "processso"
-  },
-  {
     "constante": "constante.",
     "utilizado": "utilizdo."
   },
@@ -93,5 +88,9 @@
     "abordagem": "abordage",
     "executado": "executado.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "problema": "poblema",
+    "tecnologia": "tecnoligia"
   }
 ]
