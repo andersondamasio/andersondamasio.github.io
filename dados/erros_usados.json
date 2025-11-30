@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "melhor": "melhorr"
-  },
-  {
     "parceria": "parcería",
     "desenvolvimento": "desenvolvmento"
   },
@@ -92,5 +88,10 @@
     "suporte": "suporte.",
     "arquitetura": "arquitertura",
     "simples": "simplis"
+  },
+  {
+    "operacional": "operacional.",
+    "armazenamento": "armazenamentto",
+    "computador": "computador."
   }
 ]
