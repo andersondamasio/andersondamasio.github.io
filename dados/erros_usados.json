@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "sistema": "sistéma"
-  },
-  {
     "componente": "componete",
     "controle": "contrle"
   },
@@ -91,5 +87,9 @@
     "carregamento": "carregamento.",
     "computador": "computadorr",
     "armazenamento": "armasenamento"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "muito": "muiito"
   }
 ]
