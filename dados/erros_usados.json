@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "conhecimento": "conhecimeto",
-    "melhor": "melor"
-  },
-  {
     "acesso": "aceso",
     "geralmente": "geralment",
     "melhor": "melhorr"
@@ -93,5 +88,10 @@
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra",
     "exemplo": "exenplo"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "funciona": "funciona,",
+    "sistema": "sistma"
   }
 ]
