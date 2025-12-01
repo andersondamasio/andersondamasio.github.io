@@ -1,9 +1,5 @@
 [
   {
-    "componente": "componete",
-    "controle": "contrle"
-  },
-  {
     "tecnologia": "tecnolgia",
     "sistema": "sistma",
     "armazenamento": "armasenamento"
@@ -91,5 +87,10 @@
   {
     "monitoramento": "monitorameto",
     "muito": "muiito"
+  },
+  {
+    "complexidade": "complexsidade",
+    "problema": "probrema",
+    "suporte": "suportte"
   }
 ]
