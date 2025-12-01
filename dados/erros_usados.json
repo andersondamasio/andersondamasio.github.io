@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "armazenamento": "armazenamentto",
-    "internet": "internete"
-  },
-  {
     "constante": "constate",
     "funciona": "funciona,",
     "gerenciamento": "gerenciamneto"
@@ -93,5 +88,10 @@
     "desafio": "desafiu",
     "acesso": "aceso",
     "problema": "probrema"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "rotina": "rotna",
+    "tecnologia": "tecnolgia"
   }
 ]
