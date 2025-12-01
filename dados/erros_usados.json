@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "carregamento": "carregamento.",
     "internet": "internete",
     "arquitetura": "arquiteturra"
@@ -92,5 +87,8 @@
   {
     "arquitetura": "arquitertura",
     "exemplo": "exemplo."
+  },
+  {
+    "arquitetura": "arquiteturra"
   }
 ]
