@@ -1,9 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "exemplo": "exenplo"
-  },
-  {
     "tecnologia": "tecnolgia",
     "melhor": "melhorr",
     "arquitetura": "arquitretura"
@@ -92,5 +88,10 @@
     "estrutura": "estrututra",
     "utilizado": "utilizdo.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnoligia",
+    "exemplo": "exemplo,"
   }
 ]
