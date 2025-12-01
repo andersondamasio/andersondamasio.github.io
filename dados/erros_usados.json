@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muto",
-    "geralmente": "geralment",
-    "dispositivo": "dispotivo"
-  },
-  {
     "simples": "simlpes",
     "armazenamento": "armazenamentto",
     "internet": "internete"
@@ -93,5 +88,10 @@
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "desafio": "desafiu",
+    "acesso": "aceso",
+    "problema": "probrema"
   }
 ]
