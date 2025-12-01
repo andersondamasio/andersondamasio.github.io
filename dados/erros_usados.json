@@ -1,9 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "recurso": "reccurso",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnnologia"
@@ -92,5 +88,9 @@
     "prioridade": "prioriade.",
     "arquitetura": "arquiteturra",
     "sistema": "sistma"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "exemplo": "exemplo."
   }
 ]
