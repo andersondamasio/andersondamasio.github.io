@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "dispositivo": "dispotivo",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "abordagem": "abordage",
     "executado": "executado.",
     "desenvolvimento": "desenvolmento"
@@ -92,5 +87,10 @@
   {
     "melhor": "melhorr",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "sistema": "cistema",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitertura"
   }
 ]
