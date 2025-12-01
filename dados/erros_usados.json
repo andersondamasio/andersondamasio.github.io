@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "geralmente": "geralment",
-    "melhor": "melhorr"
-  },
-  {
     "suporte": "suprte",
     "dispositivo": "disposotivo",
     "muito": "muiito"
@@ -93,5 +88,10 @@
     "arquitetura": "arquitretura",
     "funciona": "funciona,",
     "sistema": "sistma"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnoligia"
   }
 ]
