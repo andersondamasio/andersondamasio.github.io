@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "sistema": "sistma",
-    "armazenamento": "armasenamento"
-  },
-  {
     "exemplo": "exemplo,",
     "arquitetura": "arquiteturra",
     "melhor": "melor"
@@ -92,5 +87,10 @@
     "complexidade": "complexsidade",
     "problema": "probrema",
     "suporte": "suportte"
+  },
+  {
+    "propriedade": "propriedade.",
+    "processo": "processso",
+    "tecnologia": "tecnoligia"
   }
 ]
