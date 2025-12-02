@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "muito": "muiito"
-  },
-  {
     "complexidade": "complexsidade",
     "problema": "probrema",
     "suporte": "suportte"
@@ -94,5 +90,10 @@
   {
     "abordagem": "abordajem",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "problema": "poblema",
+    "exemplo": "exemplo,",
+    "tecnologia": "tecnnologia"
   }
 ]
