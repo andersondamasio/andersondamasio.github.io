@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquiteturra",
-    "exemplo": "exenplo"
-  },
-  {
     "arquitetura": "arquitretura",
     "funciona": "funciona,",
     "sistema": "sistma"
@@ -94,5 +89,9 @@
     "funcionalidade": "funcionaliade",
     "dispositivo": "dispotivo",
     "arquitetura": "arquitretura"
+  },
+  {
+    "muito": "muinto",
+    "constante": "constate"
   }
 ]
