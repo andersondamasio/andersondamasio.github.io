@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "arquitetura": "arquiteturra",
-    "sistema": "sistma"
-  },
-  {
     "arquitetura": "arquitertura",
     "exemplo": "exemplo."
   },
@@ -94,5 +89,10 @@
     "conhecimento": "conhecimento.",
     "simples": "simplis",
     "melhor": "melhorr"
+  },
+  {
+    "virtual": "virtal",
+    "carregamento": "carregamento.",
+    "sistema": "cistema"
   }
 ]
