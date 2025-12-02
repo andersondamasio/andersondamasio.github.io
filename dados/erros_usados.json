@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo,"
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra",
     "exemplo": "exenplo"
@@ -94,5 +89,10 @@
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolmento",
     "sistema": "sistma"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "dispositivo": "dispotivo",
+    "arquitetura": "arquitretura"
   }
 ]
