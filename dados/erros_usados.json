@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "acesso": "aceso",
-    "problema": "probrema"
-  },
-  {
     "armazenamento": "armasenamento",
     "rotina": "rotna",
     "tecnologia": "tecnolgia"
@@ -93,5 +88,9 @@
     "computador": "computador.",
     "geralmente": "geralment",
     "armazenamento": "armazanamento"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "arquitetura": "arquiteturra"
   }
 ]
