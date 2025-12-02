@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra"
-  },
-  {
     "rotina": "rotína",
     "arquitetura": "arquitretura",
     "exemplo": "exemplo,"
@@ -94,5 +91,10 @@
   {
     "necessidade": "necissidade",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnolgia",
+    "exemplo": "exemplo."
   }
 ]
