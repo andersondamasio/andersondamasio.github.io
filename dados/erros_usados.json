@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "componente": "componentte",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "conhecimento": "conhecimento.",
     "simples": "simplis",
     "melhor": "melhorr"
@@ -92,5 +87,9 @@
     "operacional": "operacionl",
     "complexidade": "complexsidade",
     "sistema": "cistema"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "melhor": "melhorr"
   }
 ]
