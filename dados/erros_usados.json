@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "exemplo": "exemplo.",
-    "sistema": "sistma"
-  },
-  {
     "resultado": "resutlado",
     "componente": "componentte",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,10 @@
     "suporte": "suporte.",
     "internet": "internete",
     "simples": "simlpes"
+  },
+  {
+    "operacional": "operacionl",
+    "complexidade": "complexsidade",
+    "sistema": "cistema"
   }
 ]
