@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "rotina": "rotna",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "arquitetura": "arquiteturra",
     "exemplo": "exemplo.",
     "sistema": "sistma"
@@ -92,5 +87,10 @@
   {
     "funcionalidade": "funcionaliade",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "suporte": "suporte.",
+    "internet": "internete",
+    "simples": "simlpes"
   }
 ]
