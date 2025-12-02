@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "utilizado": "utilizdo.",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo,"
@@ -94,5 +89,10 @@
   {
     "prioridade": "prioridade.",
     "problema": "poblema"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolmento",
+    "sistema": "sistma"
   }
 ]
