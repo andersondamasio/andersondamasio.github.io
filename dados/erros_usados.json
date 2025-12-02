@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "prioridade": "prioriade.",
     "arquitetura": "arquiteturra",
     "sistema": "sistma"
@@ -94,5 +89,10 @@
     "resultado": "resutlado",
     "componente": "componentte",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "simples": "simplis",
+    "melhor": "melhorr"
   }
 ]
