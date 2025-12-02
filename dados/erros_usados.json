@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "problema": "probrema",
-    "suporte": "suportte"
-  },
-  {
     "propriedade": "propriedade.",
     "processo": "processso",
     "tecnologia": "tecnoligia"
@@ -95,5 +90,10 @@
     "problema": "poblema",
     "exemplo": "exemplo,",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "controle": "controlle",
+    "constante": "constanate",
+    "problema": "problema."
   }
 ]
