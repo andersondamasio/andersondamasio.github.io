@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "computador": "computadorr",
-    "armazenamento": "armasenamento"
-  },
-  {
     "monitoramento": "monitorameto",
     "muito": "muiito"
   },
@@ -95,5 +90,9 @@
     "geralmente": "geralment",
     "funciona": "funciona.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "abordagem": "abordajem",
+    "tecnologia": "tecnoligia"
   }
 ]
