@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "dispositivo": "dispotivo",
-    "arquitetura": "arquitretura"
-  },
-  {
     "muito": "muinto",
     "constante": "constate"
   },
@@ -93,5 +88,9 @@
     "estrutura": "estrututra",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "necessidade": "necissidade",
+    "prioridade": "prioriade"
   }
 ]
