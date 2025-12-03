@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolmento",
-    "sistema": "sistma"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "dispositivo": "dispotivo",
     "arquitetura": "arquitretura"
@@ -93,5 +88,10 @@
     "monitoramento": "monitramento",
     "exemplo": "exemplo,",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "estrutura": "estrututra",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnnologia"
   }
 ]
