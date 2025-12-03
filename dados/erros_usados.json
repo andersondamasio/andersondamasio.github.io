@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "dispositivo": "disposotivo",
     "tecnologia": "tecnolgia",
     "exemplo": "exemplo."
@@ -91,5 +87,10 @@
     "melhor": "melhorr",
     "geralmente": "geralment",
     "muito": "muinto"
+  },
+  {
+    "conectado": "conectdo",
+    "computador": "computador,",
+    "melhor": "melor"
   }
 ]
