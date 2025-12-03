@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "problema": "poblema"
-  },
-  {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolmento",
     "sistema": "sistma"
@@ -92,5 +88,10 @@
     "executado": "excutado",
     "processo": "proceso",
     "desafio": "desafío"
+  },
+  {
+    "monitoramento": "monitramento",
+    "exemplo": "exemplo,",
+    "tecnologia": "tecnoligia"
   }
 ]
