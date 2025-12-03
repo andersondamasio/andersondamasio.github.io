@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "tecnologia": "tecnolgia",
-    "exemplo": "exemplo."
-  },
-  {
     "acesso": "acesço",
     "arquitetura": "arquiteturra"
   },
@@ -92,5 +87,9 @@
     "conectado": "conectdo",
     "computador": "computador,",
     "melhor": "melor"
+  },
+  {
+    "acesso": "acesço",
+    "exemplo": "exenplo"
   }
 ]
