@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "constante": "constanate",
-    "problema": "problema."
-  },
-  {
     "prioridade": "prioridade.",
     "problema": "poblema"
   },
@@ -92,5 +87,10 @@
   {
     "abordagem": "abordagem.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "executado": "excutado",
+    "processo": "proceso",
+    "desafio": "desafío"
   }
 ]
