@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "internet": "internete",
-    "simples": "simlpes"
-  },
-  {
     "operacional": "operacionl",
     "complexidade": "complexsidade",
     "sistema": "cistema"
@@ -93,5 +88,10 @@
     "desenvolvimento": "desenvolvmento",
     "necessidade": "necissidade",
     "melhor": "melhorr"
+  },
+  {
+    "constante": "constante.",
+    "controle": "contrle",
+    "tecnologia": "tecnnologia"
   }
 ]
