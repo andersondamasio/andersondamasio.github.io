@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "geralmente": "geralment",
     "funciona": "funciona.",
     "arquitetura": "arquitertura"
@@ -91,5 +87,10 @@
   {
     "acesso": "acesço",
     "exemplo": "exenplo"
+  },
+  {
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquiteturra"
   }
 ]
