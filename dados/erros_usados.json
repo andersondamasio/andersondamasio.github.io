@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "acesso": "aceso",
-    "processo": "processso"
-  },
-  {
     "tecnologia": "tecnolgia",
     "exemplo": "exenplo",
     "abordagem": "abordage"
@@ -88,5 +83,10 @@
     "prioridade": "prioridade.",
     "monitoramento": "monitorameto",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "computador": "computador.",
+    "sistema": "sistma",
+    "problema": "poblema"
   }
 ]
