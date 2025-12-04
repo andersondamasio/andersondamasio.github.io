@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "exemplo": "exenplo",
-    "abordagem": "abordage"
-  },
-  {
     "problema": "poblema",
     "simples": "simlpes",
     "dispositivo": "dispotivo"
@@ -88,5 +83,10 @@
     "computador": "computador.",
     "sistema": "sistma",
     "problema": "poblema"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnnologia"
   }
 ]
