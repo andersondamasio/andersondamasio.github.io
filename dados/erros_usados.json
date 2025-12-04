@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "paralelo": "paralélo"
-  },
-  {
     "sistema": "sistéma",
     "abordagem": "abordajem",
     "suporte": "suporte."
@@ -88,5 +84,10 @@
     "monitoramento": "monitoramento.",
     "controle": "controle.",
     "simples": "simlpes"
+  },
+  {
+    "simples": "simplis",
+    "monitoramento": "monitramento",
+    "abordagem": "abordage"
   }
 ]
