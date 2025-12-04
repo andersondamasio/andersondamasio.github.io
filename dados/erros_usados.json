@@ -1,10 +1,5 @@
 [
   {
-    "executado": "excutado",
-    "processo": "proceso",
-    "desafio": "desafío"
-  },
-  {
     "monitoramento": "monitramento",
     "exemplo": "exemplo,",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,8 @@
   {
     "carregamento": "carregameno",
     "muito": "muinto"
+  },
+  {
+    "tecnologia": "tecnolgia"
   }
 ]
