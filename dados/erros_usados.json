@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "necessidade": "nescessidade",
-    "sistema": "sistma"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "paralelo": "paralélo"
   },
@@ -88,5 +83,10 @@
     "arquitetura": "arquitretura",
     "abordagem": "abordagem.",
     "melhor": "melhorr"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "controle": "controle.",
+    "simples": "simlpes"
   }
 ]
