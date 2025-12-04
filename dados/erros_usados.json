@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "prioridade": "prioriade"
-  },
-  {
     "conhecimento": "conhescimento",
     "sistema": "sistéma",
     "internet": "internete"
@@ -89,5 +85,9 @@
     "virtual": "virtuaal",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "componente": "componentte",
+    "sistema": "sistéma"
   }
 ]
