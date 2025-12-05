@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "controle": "controle.",
-    "simples": "simlpes"
-  },
-  {
     "simples": "simplis",
     "monitoramento": "monitramento",
     "abordagem": "abordage"
@@ -94,5 +89,9 @@
     "dispositivo": "dispotivo",
     "parceria": "parcería",
     "funciona": "funciona."
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "sistema": "sistma"
   }
 ]
