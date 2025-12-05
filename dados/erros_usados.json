@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia"
-  },
-  {
     "controle": "contrle",
     "gerenciamento": "gerenciamnto"
   },
@@ -89,5 +86,9 @@
   {
     "recurso": "recuro",
     "arquitetura": "arquitertura"
+  },
+  {
+    "suporte": "suprte",
+    "muito": "muto"
   }
 ]
