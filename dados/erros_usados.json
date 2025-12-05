@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "arquitetura": "arquitertura"
-  },
-  {
     "suporte": "suprte",
     "muito": "muto"
   },
@@ -93,5 +89,10 @@
     "problema": "problema.",
     "desenvolvimento": "desenvolvmento",
     "simples": "cimples"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "constante": "constante.",
+    "tecnologia": "tecnoligia"
   }
 ]
