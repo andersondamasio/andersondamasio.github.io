@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "virtual": "virtuaal",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnoligia"
@@ -90,5 +86,10 @@
   {
     "suporte": "suprte",
     "muito": "muto"
+  },
+  {
+    "desafio": "desafiu",
+    "mensagem": "mensagen",
+    "estrutura": "estrtura"
   }
 ]
