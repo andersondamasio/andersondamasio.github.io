@@ -1,10 +1,5 @@
 [
   {
-    "computador": "computador.",
-    "sistema": "sistma",
-    "problema": "poblema"
-  },
-  {
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia"
@@ -94,5 +89,10 @@
     "complexidade": "complexsidade",
     "sistema": "sistéma",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "problema": "probrema",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnolgia"
   }
 ]
