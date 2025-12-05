@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "monitoramento": "monitorameto",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "computador": "computador.",
     "sistema": "sistma",
     "problema": "poblema"
@@ -94,5 +89,10 @@
     "problema": "probrema",
     "arquitetura": "arquitertura",
     "simples": "cimples"
+  },
+  {
+    "complexidade": "complexsidade",
+    "sistema": "sistéma",
+    "tecnologia": "tecnoligia"
   }
 ]
