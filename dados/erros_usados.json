@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "muito": "muinto"
-  },
-  {
     "tecnologia": "tecnolgia"
   },
   {
@@ -89,5 +85,9 @@
     "propriedade": "propriedade.",
     "necessidade": "necissidade",
     "constante": "constate"
+  },
+  {
+    "recurso": "recuro",
+    "arquitetura": "arquitertura"
   }
 ]
