@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "propriedade.",
-    "necessidade": "necissidade",
-    "constante": "constate"
-  },
-  {
     "recurso": "recuro",
     "arquitetura": "arquitertura"
   },
@@ -93,5 +88,10 @@
     "constante": "constate",
     "desafio": "desaío",
     "dispositivo": "disposotivo"
+  },
+  {
+    "problema": "problema.",
+    "desenvolvimento": "desenvolvmento",
+    "simples": "cimples"
   }
 ]
