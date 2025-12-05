@@ -1,9 +1,5 @@
 [
   {
-    "componente": "componentte",
-    "sistema": "sistéma"
-  },
-  {
     "sistema": "cistema",
     "processo": "processso",
     "acesso": "acesço"
@@ -90,5 +86,10 @@
   {
     "arquitetura": "arquiteturra",
     "sistema": "cistema"
+  },
+  {
+    "necessidade": "necissidade",
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitretura"
   }
 ]
