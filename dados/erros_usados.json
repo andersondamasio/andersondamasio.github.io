@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "muito": "muto"
-  },
-  {
     "desafio": "desafiu",
     "mensagem": "mensagen",
     "estrutura": "estrtura"
@@ -94,5 +90,10 @@
     "desenvolvimento": "desenvolvimente",
     "constante": "constante.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "abordagem": "abordajem",
+    "monitoramento": "monitorameto"
   }
 ]
