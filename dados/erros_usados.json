@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "mensagem": "mensagen",
-    "estrutura": "estrtura"
-  },
-  {
     "arquitetura": "arquiteturra",
     "sistema": "cistema"
   },
@@ -95,5 +90,9 @@
     "armazenamento": "armazanamento",
     "abordagem": "abordajem",
     "monitoramento": "monitorameto"
+  },
+  {
+    "processo": "proceso",
+    "arquitetura": "arquitretura"
   }
 ]
