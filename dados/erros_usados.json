@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "sistema": "sistma"
-  },
-  {
     "constante": "constate",
     "desafio": "desaío",
     "dispositivo": "disposotivo"
@@ -93,5 +89,10 @@
     "abordagem": "abordagem.",
     "funcionalidade": "funcionaliade",
     "arquitetura": "arquitretura"
+  },
+  {
+    "computador": "computador.",
+    "tecnologia": "tecnnologia",
+    "dispositivo": "dispositivo."
   }
 ]
