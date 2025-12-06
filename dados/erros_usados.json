@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "parceria": "parcería",
-    "funciona": "funciona."
-  },
-  {
     "arquitetura": "arquiteturra",
     "sistema": "sistma"
   },
@@ -93,5 +88,10 @@
     "melhor": "melhorr",
     "funciona": "funsiona",
     "dispositivo": "disposotivo"
+  },
+  {
+    "abordagem": "abordagem.",
+    "funcionalidade": "funcionaliade",
+    "arquitetura": "arquitretura"
   }
 ]
