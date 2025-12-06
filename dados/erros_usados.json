@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvmento",
     "funciona": "funciona,"
@@ -95,5 +90,9 @@
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra",
     "sistema": "cistema"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnoligia"
   }
 ]
