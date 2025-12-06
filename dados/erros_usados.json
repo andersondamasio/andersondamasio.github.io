@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "problema": "probrema",
     "sistema": "sistma",
     "exemplo": "exenplo"
@@ -95,5 +90,10 @@
     "gerenciamento": "gerenciamnto",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "controle": "contrle",
+    "sistema": "sistma",
+    "muito": "muinto"
   }
 ]
