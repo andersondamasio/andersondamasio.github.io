@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "sistema": "sistéma",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "problema": "probrema",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia"
@@ -94,5 +89,10 @@
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "acesso": "acesso.",
+    "recurso": "reccurso",
+    "internet": "internete"
   }
 ]
