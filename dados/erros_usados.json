@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "desafio": "desaío",
-    "dispositivo": "disposotivo"
-  },
-  {
     "problema": "problema.",
     "desenvolvimento": "desenvolvmento",
     "simples": "cimples"
@@ -94,5 +89,10 @@
     "computador": "computador.",
     "tecnologia": "tecnnologia",
     "dispositivo": "dispositivo."
+  },
+  {
+    "operacional": "operaciona",
+    "arquitetura": "arquiteturra",
+    "monitoramento": "monitorameto"
   }
 ]
