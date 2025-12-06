@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "sistema": "cistema"
-  },
-  {
     "necessidade": "necissidade",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura"
@@ -94,5 +90,10 @@
   {
     "processo": "proceso",
     "arquitetura": "arquitretura"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura"
   }
 ]
