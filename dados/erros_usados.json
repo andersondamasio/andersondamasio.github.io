@@ -1,9 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "arquitetura": "arquitretura"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
@@ -94,5 +90,9 @@
     "constante": "constate",
     "prioridade": "prioriade",
     "virtual": "virtual."
+  },
+  {
+    "geralmente": "geralment",
+    "dispositivo": "disposotivo"
   }
 ]
