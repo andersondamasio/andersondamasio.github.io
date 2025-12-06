@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "abordagem": "abordajem",
-    "monitoramento": "monitorameto"
-  },
-  {
     "processo": "proceso",
     "arquitetura": "arquitretura"
   },
@@ -94,5 +89,10 @@
     "rotina": "rotína",
     "consistente": "consistente.",
     "muito": "muiito"
+  },
+  {
+    "constante": "constate",
+    "prioridade": "prioriade",
+    "virtual": "virtual."
   }
 ]
