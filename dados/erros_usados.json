@@ -1,9 +1,5 @@
 [
   {
-    "paralelo": "paralelo.",
-    "necessidade": "necissidade"
-  },
-  {
     "melhor": "melhorr",
     "funciona": "funsiona",
     "dispositivo": "disposotivo"
@@ -91,5 +87,10 @@
     "resultado": "resultao",
     "gerenciamento": "gerenciamnto",
     "dispositivo": "disposotivo"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "simples": "cimples",
+    "sistema": "sistéma"
   }
 ]
