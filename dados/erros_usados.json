@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "sistema": "cistema",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "paralelo": "paralelo.",
     "necessidade": "necissidade"
   },
@@ -91,5 +86,10 @@
   {
     "gerenciamento": "gerenciamneto",
     "acesso": "acesço"
+  },
+  {
+    "resultado": "resultao",
+    "gerenciamento": "gerenciamnto",
+    "dispositivo": "disposotivo"
   }
 ]
