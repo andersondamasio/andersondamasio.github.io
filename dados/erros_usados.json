@@ -1,10 +1,5 @@
 [
   {
-    "personalizado": "personalizdo",
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra",
     "sistema": "cistema"
@@ -93,5 +88,9 @@
     "carregamento": "carregamento.",
     "tecnologia": "tecnolgia",
     "muito": "muto"
+  },
+  {
+    "problema": "probrema",
+    "dispositivo": "dispositivo."
   }
 ]
