@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "tecnologia": "tecnolgia",
-    "muito": "muto"
-  },
-  {
     "problema": "probrema",
     "dispositivo": "dispositivo."
   },
@@ -90,5 +85,10 @@
     "computador": "computador.",
     "melhor": "melor",
     "muito": "muto"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitretura"
   }
 ]
