@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "suporte": "suporte.",
     "abordagem": "abordagem.",
     "arquitetura": "arquiteturra"
@@ -92,5 +88,9 @@
     "controle": "controle.",
     "muito": "muiito",
     "monitoramento": "monitorameto"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "complexidade": "complezidade"
   }
 ]
