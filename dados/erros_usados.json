@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "controle": "contrle",
     "sistema": "sistma",
     "muito": "muinto"
@@ -94,5 +89,9 @@
   {
     "geralmente": "geralment",
     "dispositivo": "disposotivo"
+  },
+  {
+    "simples": "simplis",
+    "arquitetura": "arquitertura"
   }
 ]
