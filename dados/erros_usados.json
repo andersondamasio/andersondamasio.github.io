@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "sistema": "sistma",
-    "muito": "muinto"
-  },
-  {
     "personalizado": "personalizdo",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura"
@@ -93,5 +88,10 @@
   {
     "simples": "simplis",
     "arquitetura": "arquitertura"
+  },
+  {
+    "carregamento": "carregamento.",
+    "tecnologia": "tecnolgia",
+    "muito": "muto"
   }
 ]
