@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "abordagem": "abordagem.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "processo": "processso",
     "exemplo": "exemplo.",
     "funciona": "funciona,"
@@ -92,5 +87,9 @@
   {
     "conhecimento": "conhescimento",
     "complexidade": "complezidade"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "simples": "simplis"
   }
 ]
