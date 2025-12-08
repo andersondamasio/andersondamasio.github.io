@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "simples": "cimples",
-    "sistema": "sistéma"
-  },
-  {
     "exemplo": "exemplo,",
     "desenvolvimento": "desenvolmento"
   },
@@ -90,5 +85,9 @@
     "constante": "constante.",
     "necessidade": "nescessidade",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "desafio": "desafío",
+    "arquitetura": "arquiteturra"
   }
 ]
