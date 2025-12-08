@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "acesso": "acesço"
-  },
-  {
     "resultado": "resultao",
     "gerenciamento": "gerenciamnto",
     "dispositivo": "disposotivo"
@@ -89,5 +85,10 @@
   },
   {
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "necessidade": "necessidade.",
+    "operacional": "operacional.",
+    "sistema": "sistma"
   }
 ]
