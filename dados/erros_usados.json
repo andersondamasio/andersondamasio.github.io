@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "gerenciamento": "gerenciamnto",
-    "dispositivo": "disposotivo"
-  },
-  {
     "dispositivo": "dispotivo",
     "simples": "cimples",
     "sistema": "sistéma"
@@ -90,5 +85,10 @@
     "necessidade": "necessidade.",
     "operacional": "operacional.",
     "sistema": "sistma"
+  },
+  {
+    "constante": "constante.",
+    "necessidade": "nescessidade",
+    "tecnologia": "tecnnologia"
   }
 ]
