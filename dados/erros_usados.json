@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "constante": "constanate"
-  },
-  {
     "necessidade": "nescessidade",
     "sistema": "sistéma",
     "desenvolvimento": "desenvolvmento"
@@ -90,5 +86,9 @@
     "componente": "componete",
     "processo": "processso",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "virtual": "virtual.",
+    "funciona": "funciona."
   }
 ]
