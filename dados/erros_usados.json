@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "armazenamento": "armasenamento"
-  },
-  {
     "necessidade": "necessidade.",
     "sistema": "sistéma",
     "monitoramento": "monitoramento."
@@ -91,5 +87,10 @@
     "sistema": "sistéma",
     "acesso": "acesso.",
     "desafio": "desafío"
+  },
+  {
+    "exemplo": "exemplo,",
+    "acesso": "aceso",
+    "funciona": "funciona,"
   }
 ]
