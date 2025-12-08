@@ -1,9 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "dispositivo": "dispositivo."
-  },
-  {
     "controle": "controle.",
     "muito": "muiito",
     "monitoramento": "monitorameto"
@@ -90,5 +86,10 @@
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "sistema": "sistéma",
+    "gerenciamento": "gerenciamente",
+    "monitoramento": "monitoramento."
   }
 ]
