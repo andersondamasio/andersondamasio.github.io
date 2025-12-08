@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "simples": "simplis"
-  },
-  {
     "acesso": "acesço",
     "simples": "simlpes",
     "arquitetura": "arquiteturra"
@@ -91,5 +87,10 @@
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnolgia",
     "monitoramento": "monitoramento."
+  },
+  {
+    "prioridade": "prioriade.",
+    "sistema": "sistéma",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
