@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "complexidade": "complezidade"
-  },
-  {
     "tecnologia": "tecnoligia",
     "simples": "simplis"
   },
@@ -90,5 +86,10 @@
   {
     "muito": "muinto",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnolgia",
+    "monitoramento": "monitoramento."
   }
 ]
