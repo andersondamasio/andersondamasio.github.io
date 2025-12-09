@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "acesso": "aceso",
-    "funciona": "funciona,"
-  },
-  {
     "correto": "corretoo",
     "melhor": "melhorr",
     "desenvolvimento": "desenvolvmento"
@@ -90,5 +85,10 @@
   {
     "geralmente": "geralmete",
     "muito": "muto"
+  },
+  {
+    "computador": "computador,",
+    "armazenamento": "armazenamentto",
+    "internet": "internat"
   }
 ]
