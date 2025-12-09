@@ -1,8 +1,5 @@
 [
   {
-    "sistema": "sistéma"
-  },
-  {
     "conhecimento": "conhescimento",
     "funcionalidade": "funcionaliadde"
   },
@@ -90,5 +87,10 @@
   {
     "conectado": "conectdo",
     "recurso": "recusso"
+  },
+  {
+    "abordagem": "abordage",
+    "controle": "contrle",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
