@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "constante": "constanate",
     "processo": "proceso",
     "desafio": "desafío"
@@ -92,5 +88,9 @@
     "abordagem": "abordage",
     "controle": "contrle",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "tecnologia": "tecnolgia"
   }
 ]
