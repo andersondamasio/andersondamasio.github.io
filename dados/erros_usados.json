@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "processo": "proceso",
-    "desafio": "desafío"
-  },
-  {
     "virtual": "virtual.",
     "exemplo": "exemplo.",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,10 @@
   {
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "acesso": "acesço",
+    "estrutura": "estrututra",
+    "desafio": "desafío"
   }
 ]
