@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "necessidade": "nescessidade",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "desafio": "desafío",
     "arquitetura": "arquiteturra"
   },
@@ -89,5 +84,10 @@
     "gerenciamento": "gerenciamneto",
     "dispositivo": "dispotivo",
     "sistema": "cistema"
+  },
+  {
+    "complexidade": "complexsidade",
+    "consistente": "consitente",
+    "prioridade": "prioridade."
   }
 ]

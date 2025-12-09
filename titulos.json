@@ -43958,5 +43958,14 @@
     "dataFonte": "2025-12-09T08:30:34.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/x-plus-storm-10-laptop-review/"
+  },
+  {
+    "titulo": "A proteção contra sobrecarga: o que falta na engenharia de plataformas?",
+    "noticiaOriginal": "Article: Overload Protection: The Missing Pillar of Platform Engineering",
+    "url": "artigos/devops/a-protecao-contra-sobrecarga-o-que-falta-na-engenharia-de-plataformas.html",
+    "data": "2025-12-09T09:25:35.385Z",
+    "dataFonte": "2025-12-09T09:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/articles/overload-protection-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
