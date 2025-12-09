@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrura",
-    "desafio": "desaío",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "acesso": "acesço",
     "simples": "simplis",
     "suporte": "suporte."
@@ -91,5 +86,10 @@
     "funciona": "funciona,",
     "processo": "processso",
     "arquitetura": "arquitertura"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "funciona": "funsiona",
+    "operacional": "operacionl"
   }
 ]
