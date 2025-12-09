@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "operacional": "operacional.",
-    "sistema": "sistma"
-  },
-  {
     "constante": "constante.",
     "necessidade": "nescessidade",
     "tecnologia": "tecnnologia"
@@ -89,5 +84,10 @@
   {
     "utilizado": "utilizdo.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "dispositivo": "dispotivo",
+    "sistema": "cistema"
   }
 ]
