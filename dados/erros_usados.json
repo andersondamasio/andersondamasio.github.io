@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "exemplo": "exemplo.",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "recurso": "recuro",
     "funciona": "funciona.",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,10 @@
     "sistema": "sistéma",
     "melhor": "melhorr",
     "funciona": "funsiona"
+  },
+  {
+    "necessidade": "necissidade",
+    "controle": "contrle",
+    "exemplo": "exemplo."
   }
 ]
