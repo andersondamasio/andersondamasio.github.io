@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona,",
-    "processo": "processso",
-    "arquitetura": "arquitertura"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "funciona": "funsiona",
     "operacional": "operacionl"
@@ -92,5 +87,10 @@
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura",
     "exemplo": "exemplo,"
+  },
+  {
+    "necessidade": "necissidade",
+    "exemplo": "exemplo.",
+    "processo": "prosseso"
   }
 ]
