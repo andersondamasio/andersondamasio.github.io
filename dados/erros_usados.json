@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conectdo",
-    "recurso": "recusso"
-  },
-  {
     "abordagem": "abordage",
     "controle": "contrle",
     "desenvolvimento": "desenvolvimente"
@@ -92,5 +88,10 @@
     "controle": "controle.",
     "sistema": "cistema",
     "dispositivo": "dispositivo."
+  },
+  {
+    "resultado": "resultadoo",
+    "correto": "correto.",
+    "arquitetura": "arquitretura"
   }
 ]
