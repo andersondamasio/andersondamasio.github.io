@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "acesso": "acesço",
     "estrutura": "estrututra",
     "desafio": "desafío"
@@ -93,5 +89,10 @@
     "necessidade": "necessidade.",
     "abordagem": "abordajem",
     "sistema": "sistma"
+  },
+  {
+    "suporte": "suporte.",
+    "sistema": "sistéma",
+    "desenvolvimento": "desenvolmento"
   }
 ]
