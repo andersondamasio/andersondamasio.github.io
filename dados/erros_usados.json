@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "dispositivo": "dispotivo",
-    "sistema": "cistema"
-  },
-  {
     "complexidade": "complexsidade",
     "consistente": "consitente",
     "prioridade": "prioridade."
@@ -93,5 +88,10 @@
     "constante": "constanate",
     "rotina": "rotna",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "utilizado": "utilizdo.",
+    "monitoramento": "monitoramento.",
+    "funciona": "funciona,"
   }
 ]
