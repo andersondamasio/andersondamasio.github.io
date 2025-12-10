@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>A nova tomada inteligente da Shelly: privacidade e automação na palma da mão – Artigo Técnico por Anderson Damasio</title>
+<meta name="description" content="A Shelly Plug Gen4 oferece automação com foco em privacidade, compatível com vários sistemas. &lt;/p&gt;">
+<link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="A nova tomada inteligente da Shelly: privacidade e automação na palma da mão">
+<meta property="og:description" content="A Shelly Plug Gen4 oferece automação com foco em privacidade, compatível com vários sistemas. &lt;/p&gt;">
+<meta property="og:url" content="https://www.andersondamasio.com.br/tecnologia/a-nova-tomada-inteligente-da-shelly-privacidade-e-automacao-na-palma-da-mao.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A nova tomada inteligente da Shelly: privacidade e automação na palma da mão">
+<meta name="twitter:description" content="A Shelly Plug Gen4 oferece automação com foco em privacidade, compatível com vários sistemas. &lt;/p&gt;">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "A nova tomada inteligente da Shelly: privacidade e automação na palma da mão",
+  "description": "A Shelly Plug Gen4 oferece automação com foco em privacidade, compatível com vários sistemas. </p>",
+  "datePublished": "2025-12-10T14:24:19.673Z",
+  "author": {
+    "@type": "Person",
+    "name": "Anderson Damasio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anderson Damasio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/favicon.ico"
+    }
+  }
+}
+</script>
+
+<!-- Schema.org: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://www.andersondamasio.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://www.andersondamasio.com.br/artigos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tecnologia",
+      "item": "https://www.andersondamasio.com.br/artigos/tecnologia"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "A nova tomada inteligente da Shelly: privacidade e automação na palma da mão",
+      "item": "https://www.andersondamasio.com.br/tecnologia/a-nova-tomada-inteligente-da-shelly-privacidade-e-automacao-na-palma-da-mao.html"
+    }
+  ]
+}
+</script>
+
+
+ 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+
+<!-- Script principal da Ezoic (Standalone) no <head> -->
+<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+  window.ezstandalone = window.ezstandalone || {};
+  ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+
+<style>
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --main-bg: #fff;
+  --link: #0a66c2;
+  --link-hover: #084e91;
+  --footer: #666;
+  --meta: #777;
+  --pre-bg: #272822;
+  --pre-color: #f8f8f2;
+  --copy-bg: #0a66c2;
+  --copy-color: #fff;
+  --copy-bg-hover: #084e91;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body.dark-theme {
+  --bg: #181b1f;
+  --text: #ddd;
+  --main-bg: #23262d;
+  --link: #67aaff;
+  --link-hover: #f1c40f;
+  --footer: #b3b3b3;
+  --meta: #b3b3b3;
+  --pre-bg: #22262b;
+  --pre-color: #e0e7ef;
+  --copy-bg: #67aaff;
+  --copy-color: #11131a;
+  --copy-bg-hover: #f1c40f;
+  --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+h1 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--link); }
+a { color: var(--link); text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: var(--link-hover);}
+.article-meta { color: var(--meta); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: var(--copy-bg-hover); color: var(--main-bg); }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: var(--link); font-size: 1.05rem; border: 1px solid var(--link); padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: var(--link); color: var(--main-bg); }
+main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+</style>
+
+</head>
+<body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../../artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
+    <a href="../../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+  </nav>
+</header>
+<main>
+<h1>A nova tomada inteligente da Shelly: privacidade e automação na palma da mão</h1>
+
+<p class="article-meta">Publicado em: 10/12/2025 11:24</p>
+
+<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
+<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
+<script>
+  ezstandalone.cmd.push(function() {
+    ezstandalone.showAds(115);
+  });
+</script>
+
+<div class="article-body"><p>Recentemente, a Shelly lançou sua nova <strong>tomada inteligente</strong>, a Shelly Plug Gen4, e, para quem é fã de tecnologia, isso é uma ótima notícia. Com um preço acessível de apenas 20 dólares, essa novidade promete trazer uma série de funcionalidades que não só facilitam a vida do usuário, mas também respeitam a sua privacidade. Vamos explorar um pouco mais sobre o que essa tomada tem a oferecer.</p>
+<h2>Introdução</h2>
+<p>A cada dia, mais dispositivos inteligentes entram no mercado, mas muitos deles falham em oferecer a privacidade necessária. A Shelly, no entanto, parece ter encontrado um equilíbrio. A Plug Gen4 não é apenas mais uma tomada na prateleira; ela é uma ferramenta que se integra perfeitamente a diferentes sistemas de automação, como Google Home, Alexa e SmartThings. E o melhorr de tudo: funciona localmente, sem depender da internet. Isso é um avanço e tanto, considerando a preocupação crescente com a segurança dos dados pessoais.</p>
+<h2>Características técnicas da Shelly Plug Gen4</h2>
+<p>Para quem gosta de entender a parte técnica, a Shelly Plug Gen4 é compatível com os protocolos <strong>Matter</strong>, <strong>Wi-Fi</strong> e <strong>Zigbee</strong>. Essa compatibilidade multi-protocolo é uma jogada inteligente, pois permite que o dispositivo se conecte a uma ampla gama de outros aparelhos, promovendo uma verdadeira rede de automação em casa. O que isso significa na prática?</p>
+<p>Com a Plug Gen4, você pode:</p>
+<ul>
+    <li><strong>Controlar aparelhos</strong> de até 1.800W e 15A;</li>
+    <li>Monitorar o consumo de energia em tempo real;</li>
+    <li>Configurar automações e agendamentos de forma prática;</li>
+    <li>Executar scripts personalizados em JavaScript através da Shelly Script Library.</li>
+</ul>
+<p>Essas funcionalidades permitem um nível de personalização que muitos dispositivos não oferecem. Imagine poder reiniciar automaticamente seus dispositivos em caso de queda de energia! É uma mão na roda, especialmente em ambientes de trabalho ou setups audiovisuais, onde a continuidade é essencial.</p>
+<h2>Dicas avançadas para aproveitar ao máximo a Shelly Plug Gen4</h2>
+<p>Agora, se você já é um usuário experiente e quer ir além do básico, aqui vão algumas dicas:</p>
+<h3>1. Automação baseada em luz</h3>
+<p>Utilize o sensor de lux embutido para criar automações que respondem a mudanças na iluminação do ambiente. Por exemplo, programe a tomada para desligar a luz quando a luminosidade natural for suficiente.</p>
+<h3>2. Scripting avançado</h3>
+<p>Explore a biblioteca de scripts da Shelly para criar automações complexas. Você pode, por exemplo, construir um script que interage com outros dispositivos em sua casa, como acender uma lâmpada quando a tomada é ativada.</p>
+<h3>3. Integração com sistemas de monitoramento</h3>
+<p>Se você já possui um sistema de monitoramento, como o Home Assistant, integre a Plug Gen4 para coletar dados de consumo e gerar relatórios de uso, ajudando a otimizar o consumo de energia.</p>
+<h2>Conclusão</h2>
+<p>A Shelly Plug Gen4 é mais do que uma simples tomada inteligente; ela representa um avanço na forma como interagimos com a tecnologia em nossos lares. O foco na privacidade e a capacidade de operar localmente são diferenciais que merecem ser destacados. Se você está em busca de um dispositivo que não só facilite a automação da sua casa, mas que também respeite sua segurança, essa é com certeza uma opção a se considerar. E, cá entre nós, a possibilidade de programar tudo do seu jeito é um convite a explorar ainda mais o mundo da tecnologia.</p>
+<p>Então, que tal dar uma chance à nova Shelly Plug Gen4 e descobrir como ela pode transformar sua rotina? O que você está esperando?</p>
+<p></div>
+<p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="../sobre.html">Sobre</a> |
+    <a href="../contato.html">Contato</a> |
+    <a href="../termos.html">Termos de Uso</a> |
+    <a href="../politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+
+
+</body>
+</html>
