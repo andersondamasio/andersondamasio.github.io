@@ -1,9 +1,5 @@
 [
   {
-    "personalizado": "personalizad",
-    "necessidade": "nescessidade"
-  },
-  {
     "muito": "muto",
     "simples": "simplis"
   },
@@ -93,5 +89,9 @@
     "estrutura": "estrura",
     "arquitetura": "arquitretura",
     "suporte": "suporte."
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "controle": "controle."
   }
 ]
