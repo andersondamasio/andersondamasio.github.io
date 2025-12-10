@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizdo.",
-    "arquitetura": "arquitretura"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "dispositivo": "dispotivo",
     "sistema": "cistema"
@@ -92,5 +88,10 @@
   {
     "muito": "muto",
     "simples": "simplis"
+  },
+  {
+    "constante": "constanate",
+    "rotina": "rotna",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
