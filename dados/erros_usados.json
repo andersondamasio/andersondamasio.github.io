@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melhorr",
-    "tecnologia": "tecnolgia",
-    "sistema": "sistéma"
-  },
-  {
     "geralmente": "geralmete",
     "muito": "muto"
   },
@@ -91,5 +86,10 @@
   {
     "dispositivo": "dispositivo.",
     "monitoramento": "monitramento"
+  },
+  {
+    "necessidade": "necessidade.",
+    "acesso": "acesso.",
+    "tecnologia": "tecnolgia"
   }
 ]
