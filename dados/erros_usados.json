@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "computador": "computador.",
-    "desafio": "desafío"
-  },
-  {
     "personalizado": "personalizad",
     "necessidade": "nescessidade"
   },
@@ -93,5 +88,10 @@
   {
     "problema": "poblema",
     "sistema": "sistéma"
+  },
+  {
+    "estrutura": "estrura",
+    "arquitetura": "arquitretura",
+    "suporte": "suporte."
   }
 ]
