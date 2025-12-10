@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "desenvolvimento": "desenvolmento",
-    "processo": "processso"
-  },
-  {
     "melhor": "melhorr",
     "exemplo": "exemplo,",
     "simples": "cimples"
@@ -93,5 +88,9 @@
     "desafio": "desaío",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "controle": "contrle"
   }
 ]
