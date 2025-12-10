@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "estrutura": "estrututra",
-    "desafio": "desafío"
-  },
-  {
     "melhor": "melor",
     "arquitetura": "arquitertura",
     "processo": "proceso"
@@ -94,5 +89,10 @@
     "suporte": "suporte.",
     "sistema": "sistéma",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitretura",
+    "funcionalidade": "funcionaliadde"
   }
 ]
