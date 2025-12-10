@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "funciona": "funciona.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "conectado": "conectdo",
     "recurso": "recusso"
   },
@@ -92,5 +87,10 @@
     "necessidade": "necissidade",
     "controle": "contrle",
     "exemplo": "exemplo."
+  },
+  {
+    "controle": "controle.",
+    "sistema": "cistema",
+    "dispositivo": "dispositivo."
   }
 ]
