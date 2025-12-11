@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "controle": "contrle",
-    "exemplo": "exemplo."
-  },
-  {
     "controle": "controle.",
     "sistema": "cistema",
     "dispositivo": "dispositivo."
@@ -92,5 +87,10 @@
   {
     "processo": "processso",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "problema": "problema.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]

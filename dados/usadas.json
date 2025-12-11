@@ -24579,5 +24579,10 @@
     "intro": "Essa leitura me lembrou da importância de revisitar nossas práticas sobre Learnings from Cultivating Machine Learning Engineers as a Team Manager regularmente.",
     "introOriginal": "Essa leitura me lembrou da importância de revisitar nossas práticas sobre __TEMATICA__ regularmente.",
     "data": "2025-12-11"
+  },
+  "2025-12-11-a-seguranca-em-apps-de-mensagens-o-caso-do-freedom-chat-e-suas-falhas": {
+    "intro": "A discussão sobre Security flaws in Freedom Chat app exposed users’ phone numbers and PINs revela muito sobre a maturidade técnica de um time.",
+    "introOriginal": "A discussão sobre __TEMATICA__ revela muito sobre a maturidade técnica de um time.",
+    "data": "2025-12-11"
   }
 }
