@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "sistema": "sistéma",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura",
     "funcionalidade": "funcionaliadde"
@@ -92,5 +87,10 @@
     "armazenamento": "armazenamentto",
     "funciona": "funciona,",
     "muito": "muinto"
+  },
+  {
+    "abordagem": "abordagem.",
+    "computador": "computador,",
+    "personalizado": "personalisado"
   }
 ]
