@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "acesso": "acesso.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "necessidade": "nescessidade",
     "acesso": "aceso",
     "tecnologia": "tecnnologia"
@@ -95,5 +90,9 @@
     "geralmente": "geralmemte",
     "prioridade": "prioriade",
     "dispositivo": "disposotivo"
+  },
+  {
+    "suporte": "suporte.",
+    "tecnologia": "tecnoligia"
   }
 ]
