@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "controle": "controle."
-  },
-  {
     "parceria": "parceriaa",
     "arquitetura": "arquitretura",
     "necessidade": "nescessidade"
@@ -90,5 +86,10 @@
   {
     "processo": "processso",
     "arquitetura": "arquitertura"
+  },
+  {
+    "exemplo": "exenplo",
+    "muito": "muiito",
+    "abordagem": "abordagem."
   }
 ]
