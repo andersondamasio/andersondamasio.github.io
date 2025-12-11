@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "monitoramento": "monitramento"
-  },
-  {
     "necessidade": "necessidade.",
     "acesso": "acesso.",
     "tecnologia": "tecnolgia"
@@ -94,5 +90,10 @@
     "conectado": "conetado",
     "acesso": "acesço",
     "simples": "simlpes"
+  },
+  {
+    "geralmente": "geralmemte",
+    "prioridade": "prioriade",
+    "dispositivo": "disposotivo"
   }
 ]
