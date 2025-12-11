@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "sistema": "cistema",
-    "dispositivo": "dispositivo."
-  },
-  {
     "resultado": "resultadoo",
     "correto": "correto.",
     "arquitetura": "arquitretura"
@@ -92,5 +87,10 @@
     "arquitetura": "arquitretura",
     "problema": "problema.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "exemplo": "exemplo,",
+    "monitoramento": "monitoramento.",
+    "utilizado": "utilizado."
   }
 ]
