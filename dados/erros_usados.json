@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "conhecimento": "conhecimeto",
-    "suporte": "suportte"
-  },
-  {
     "conectado": "conetado",
     "acesso": "acesço",
     "simples": "simlpes"
@@ -89,5 +84,10 @@
   {
     "melhor": "melor",
     "exemplo": "exemplo,"
+  },
+  {
+    "sistema": "sistma",
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnnologia"
   }
 ]
