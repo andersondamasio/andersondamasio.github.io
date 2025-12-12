@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componete",
-    "dispositivo": "disposotivo",
-    "prioridade": "prioriade"
-  },
-  {
     "necessidade": "nescessidade",
     "abordagem": "abordagem."
   },
@@ -89,5 +84,9 @@
   {
     "rotina": "rotína",
     "melhor": "melor"
+  },
+  {
+    "abordagem": "abordagem.",
+    "complexidade": "complexidade."
   }
 ]
