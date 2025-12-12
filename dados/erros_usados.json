@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "complexidade": "complexsidade",
     "conhecimento": "conhecimeto",
     "suporte": "suportte"
@@ -89,5 +85,9 @@
     "exemplo": "exenplo",
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "melhor": "melor",
+    "exemplo": "exemplo,"
   }
 ]
