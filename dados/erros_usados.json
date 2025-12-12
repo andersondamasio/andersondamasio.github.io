@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "suporte": "suportte",
     "muito": "muiito"
   },
@@ -89,5 +85,9 @@
     "gerenciamento": "gerenciamente",
     "operacional": "operacionl",
     "sistema": "sistma"
+  },
+  {
+    "simples": "cimples",
+    "tecnologia": "tecnoligia"
   }
 ]
