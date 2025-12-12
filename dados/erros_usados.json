@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "problema": "problema.",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "exemplo": "exemplo,",
     "monitoramento": "monitoramento.",
     "utilizado": "utilizado."
@@ -90,5 +85,8 @@
     "processo": "prosseso",
     "melhor": "melor",
     "muito": "muiito"
+  },
+  {
+    "suporte": "suporte."
   }
 ]
