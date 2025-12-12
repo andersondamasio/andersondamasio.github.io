@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "propriedade": "propriadade",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "armazenamento": "armazenamentto",
     "funciona": "funciona,",
     "muito": "muinto"
@@ -88,5 +83,10 @@
     "funciona": "funsiona",
     "muito": "muiito",
     "suporte": "suprte"
+  },
+  {
+    "acesso": "aceso",
+    "tecnologia": "tecnnologia",
+    "simples": "cimples"
   }
 ]
