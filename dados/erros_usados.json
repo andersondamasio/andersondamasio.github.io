@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conetado",
-    "acesso": "acesço",
-    "simples": "simlpes"
-  },
-  {
     "geralmente": "geralmemte",
     "prioridade": "prioriade",
     "dispositivo": "disposotivo"
@@ -89,5 +84,10 @@
     "sistema": "sistma",
     "exemplo": "exemplo.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "complexidade": "complexidade.",
+    "virtual": "virtual.",
+    "melhor": "melhorr"
   }
 ]
