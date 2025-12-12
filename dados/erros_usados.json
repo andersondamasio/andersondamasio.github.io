@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "abordagem": "abordagem."
-  },
-  {
     "exemplo": "exenplo",
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolvmento"
@@ -88,5 +84,10 @@
   {
     "abordagem": "abordagem.",
     "complexidade": "complexidade."
+  },
+  {
+    "prioridade": "prioriade",
+    "arquitetura": "arquitertura",
+    "necessidade": "nescessidade"
   }
 ]
