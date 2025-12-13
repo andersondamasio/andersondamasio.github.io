@@ -44678,5 +44678,14 @@
     "dataFonte": "2025-12-12T22:25:18.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.bbc.com/news/articles/cp34442z25ko?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "A Revolução do Código: Como a IA Está Transformando o Desenvolvimento de Software",
+    "noticiaOriginal": "OpenAI built an AI coding agent and uses it to improve the agent itself",
+    "url": "artigos/inteligencia-artificial/a-revolucao-do-codigo-como-a-ia-esta-transformando-o-desenvolvimento-de-software.html",
+    "data": "2025-12-13T01:28:28.326Z",
+    "dataFonte": "2025-12-12T22:16:42.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://arstechnica.com/ai/2025/12/how-openai-is-using-gpt-5-codex-to-improve-the-ai-tool-itself/"
   }
 ]
