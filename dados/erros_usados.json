@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "arquitetura": "arquitertura",
-    "necessidade": "nescessidade"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "desenvolvimento": "desenvolvimente"
   },
@@ -89,5 +84,10 @@
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "sistema": "cistema",
+    "monitoramento": "monitramento",
+    "tecnologia": "tecnoligia"
   }
 ]
