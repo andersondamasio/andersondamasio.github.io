@@ -1,8 +1,5 @@
 [
   {
-    "suporte": "suporte."
-  },
-  {
     "funciona": "funsiona",
     "muito": "muiito",
     "suporte": "suprte"
@@ -87,5 +84,9 @@
   {
     "tecnologia": "tecnoligia",
     "dispositivo": "disposotivo"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "funcionalidade": "funcionaliade"
   }
 ]
