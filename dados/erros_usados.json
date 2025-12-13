@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "operacional": "operacionl",
-    "sistema": "sistma"
-  },
-  {
     "simples": "cimples",
     "tecnologia": "tecnoligia"
   },
@@ -88,5 +83,9 @@
     "estrutura": "estrtura",
     "controle": "contrle",
     "constante": "constante."
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "tecnologia": "tecnoligia"
   }
 ]
