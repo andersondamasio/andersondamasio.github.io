@@ -44795,5 +44795,14 @@
     "dataFonte": "2025-12-13T12:01:25.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/how-to-use-ai-to-bring-art-to-life/"
+  },
+  {
+    "titulo": "Otimização de Logs em Nuvem: O Caso do Yelp e Suas Lições Valiosas",
+    "noticiaOriginal": "Yelp Publishes Blueprint for Managing S3 Server-Access Logs at Massive Scale",
+    "url": "artigos/cloud/otimizacao-de-logs-em-nuvem-o-caso-do-yelp-e-suas-licoes-valiosas.html",
+    "data": "2025-12-13T15:20:49.877Z",
+    "dataFonte": "2025-12-13T12:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/12/yelp-s3-server-access-logs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
