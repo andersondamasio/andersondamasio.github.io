@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "melhor": "melor",
-    "muito": "muiito"
-  },
-  {
     "suporte": "suporte."
   },
   {
@@ -88,5 +83,9 @@
     "sistema": "sistma",
     "controle": "controlle",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "dispositivo": "disposotivo"
   }
 ]
