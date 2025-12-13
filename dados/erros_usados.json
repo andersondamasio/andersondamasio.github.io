@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "suporte": "suporte."
-  },
-  {
     "suporte": "suprte",
     "exemplo": "exenplo",
     "gerenciamento": "gerenciamneto"
@@ -89,5 +85,10 @@
   {
     "arquitetura": "arquitretura",
     "simples": "simplis"
+  },
+  {
+    "necessidade": "necessidade.",
+    "melhor": "melhorr",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
