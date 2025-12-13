@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "tecnologia": "tecnoligia",
     "suporte": "suporte."
   },
@@ -89,5 +85,9 @@
     "sistema": "cistema",
     "monitoramento": "monitramento",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "simples": "simplis"
   }
 ]
