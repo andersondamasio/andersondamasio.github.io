@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrtura",
-    "controle": "contrle",
-    "constante": "constante."
-  },
-  {
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +85,10 @@
     "resultado": "resultao",
     "conhecimento": "conhecimeto",
     "abordagem": "abordajem"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "arquitetura": "arquitretura",
+    "melhor": "melor"
   }
 ]
