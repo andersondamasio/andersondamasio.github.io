@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "internet": "internete",
     "tecnologia": "tecnnologia"
   },
@@ -90,5 +86,10 @@
     "dispositivo": "disposotivo",
     "arquitetura": "arquitretura",
     "melhor": "melor"
+  },
+  {
+    "simples": "simlpes",
+    "desenvolvimento": "desenvolvmento",
+    "monitoramento": "monitoramento."
   }
 ]
