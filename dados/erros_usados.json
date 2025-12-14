@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "controle": "controlle",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "tecnologia": "tecnoligia",
     "dispositivo": "disposotivo"
   },
@@ -92,5 +87,10 @@
     "exemplo": "exemplo.",
     "componente": "componentte",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "geralmente": "geralmete",
+    "estrutura": "estrututra",
+    "melhor": "melhorr"
   }
 ]
