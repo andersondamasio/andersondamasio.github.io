@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "dispositivo": "disposotivo"
-  },
-  {
     "armazenamento": "armazanamento",
     "funcionalidade": "funcionaliade"
   },
@@ -92,5 +88,10 @@
     "geralmente": "geralmete",
     "estrutura": "estrututra",
     "melhor": "melhorr"
+  },
+  {
+    "suporte": "suportte",
+    "estrutura": "estrura",
+    "desafio": "desafío"
   }
 ]
