@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "simples": "simplis",
-    "muito": "muinto"
-  },
-  {
     "processo": "processso",
     "desafio": "desafío",
     "abordagem": "abordagem."
@@ -95,5 +90,9 @@
     "recurso": "reccurso",
     "tecnologia": "tecnolgia",
     "funciona": "funciona."
+  },
+  {
+    "complexidade": "complexidade.",
+    "tecnologia": "tecnoligia"
   }
 ]
