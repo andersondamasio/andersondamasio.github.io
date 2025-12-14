@@ -44975,5 +44975,14 @@
     "dataFonte": "2025-12-14T10:30:46.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.zdnet.com/article/why-you-shouldnt-use-your-router-usb-port/"
+  },
+  {
+    "titulo": "A segurança em código: lições da gafe da Home Depot",
+    "noticiaOriginal": "Home Depot exposed access to internal systems for a year, says researcher",
+    "url": "artigos/seguranca/a-seguranca-em-codigo-licoes-da-gafe-da-home-depot.html",
+    "data": "2025-12-14T13:29:17.261Z",
+    "dataFonte": "2025-12-12T16:42:57.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://techcrunch.com/2025/12/12/home-depot-exposed-access-to-internal-systems-for-a-year-says-researcher/"
   }
 ]
