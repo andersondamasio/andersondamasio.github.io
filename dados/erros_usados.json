@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "conhecimento": "conhecimeto",
-    "abordagem": "abordajem"
-  },
-  {
     "dispositivo": "disposotivo",
     "arquitetura": "arquitretura",
     "melhor": "melor"
@@ -92,5 +87,10 @@
     "computador": "computadorr",
     "muito": "muiito",
     "dispositivo": "dispotivo"
+  },
+  {
+    "propriedade": "propriedade.",
+    "funciona": "funciona,",
+    "melhor": "melor"
   }
 ]
