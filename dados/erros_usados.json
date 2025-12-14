@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internete",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "sistema": "sistma",
     "controle": "controlle",
     "funcionalidade": "funcionalidade."
@@ -91,5 +87,10 @@
     "simples": "simlpes",
     "desenvolvimento": "desenvolvmento",
     "monitoramento": "monitoramento."
+  },
+  {
+    "exemplo": "exemplo.",
+    "componente": "componentte",
+    "arquitetura": "arquiteturra"
   }
 ]
