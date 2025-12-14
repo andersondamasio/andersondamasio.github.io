@@ -1,10 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "constante": "constanate",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "funciona": "funsiona",
     "dispositivo": "disposotivo",
     "muito": "muiito"
@@ -94,5 +89,10 @@
     "sistema": "sistma",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "funciona": "funciona.",
+    "monitoramento": "monitorameto",
+    "exemplo": "exemplo."
   }
 ]
