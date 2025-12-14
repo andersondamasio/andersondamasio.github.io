@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "gerenciamento": "gerenciamente",
-    "rotina": "rotína"
-  },
-  {
     "operacional": "operaciona",
     "simples": "simplis",
     "muito": "muinto"
@@ -95,5 +90,10 @@
     "internet": "internete",
     "muito": "muiito",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "recurso": "reccurso",
+    "tecnologia": "tecnolgia",
+    "funciona": "funciona."
   }
 ]
