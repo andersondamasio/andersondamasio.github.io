@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "dispositivo": "dispositivo."
-  },
-  {
     "sistema": "sistma",
     "arquitetura": "arquitretura",
     "constante": "constanate"
@@ -92,5 +88,10 @@
     "suporte": "suportte",
     "propriedade": "propriadade",
     "necessidade": "necessidade."
+  },
+  {
+    "muito": "muiito",
+    "exemplo": "exemplo,",
+    "controle": "controlle"
   }
 ]
