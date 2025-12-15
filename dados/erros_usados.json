@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "tecnologia": "tecnolgia",
-    "funciona": "funciona."
-  },
-  {
     "complexidade": "complexidade.",
     "tecnologia": "tecnoligia"
   },
@@ -89,5 +84,10 @@
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnolgia",
+    "parceria": "parcería"
   }
 ]
