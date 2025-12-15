@@ -45137,5 +45137,14 @@
     "dataFonte": "2025-12-12T11:46:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.bbc.com/news/articles/c5ydp1gdqwqo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "A nova era da otimização em React: como o compilador da Meta pode transformar seu projeto",
+    "noticiaOriginal": "Meta's React Compiler 1.0 Brings Automatic Memoization to Production",
+    "url": "artigos/programacao/a-nova-era-da-otimizacao-em-react-como-o-compilador-da-meta-pode-transformar-seu-projeto.html",
+    "data": "2025-12-15T09:33:24.917Z",
+    "dataFonte": "2025-12-15T09:00:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/12/react-compiler-meta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

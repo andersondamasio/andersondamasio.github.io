@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "armazenamento": "armazanamento",
     "suporte": "suprte",
     "tecnologia": "tecnnologia"
@@ -89,5 +85,9 @@
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia",
     "parceria": "parcería"
+  },
+  {
+    "necessidade": "necissidade",
+    "abordagem": "abordajem"
   }
 ]
