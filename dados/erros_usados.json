@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "prioridade": "prioriade"
-  },
-  {
     "sistema": "sistma",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
@@ -89,5 +85,9 @@
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnolgia",
     "problema": "probrema"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "tecnologia": "tecnoligia"
   }
 ]
