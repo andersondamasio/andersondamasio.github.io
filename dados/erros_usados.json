@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constate",
-    "acesso": "acesço"
-  },
-  {
     "computador": "computadorr",
     "muito": "muiito",
     "dispositivo": "dispotivo"
@@ -91,5 +87,10 @@
     "rotina": "rotna",
     "melhor": "melhorr",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "conectado": "conectado.",
+    "controle": "contrle",
+    "sistema": "cistema"
   }
 ]
