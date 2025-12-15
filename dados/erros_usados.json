@@ -1,9 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "constante": "constate"
-  },
-  {
     "mensagem": "menssagen",
     "processo": "processso",
     "monitoramento": "monitoramento."
@@ -91,5 +87,10 @@
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra",
     "monitoramento": "monitorameto"
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "complexidade": "complexsidade",
+    "tecnologia": "tecnolgia"
   }
 ]
