@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "correto": "corretoo",
     "arquitetura": "arquitertura"
   },
@@ -88,5 +84,10 @@
     "exemplo": "exenplo",
     "dispositivo": "dispositivo.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "desafio": "desafiu",
+    "prioridade": "prioriade",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
