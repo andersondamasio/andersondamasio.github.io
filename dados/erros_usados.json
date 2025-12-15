@@ -1,9 +1,5 @@
 [
   {
-    "correto": "corretoo",
-    "arquitetura": "arquitertura"
-  },
-  {
     "controle": "contrle",
     "funcionalidade": "funcionaliadde"
   },
@@ -89,5 +85,10 @@
     "desafio": "desafiu",
     "prioridade": "prioriade",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "simples": "simplis",
+    "sistema": "sistma"
   }
 ]
