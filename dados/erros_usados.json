@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "complexidade": "complexsidade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "suporte": "suportte",
     "propriedade": "propriadade",
     "necessidade": "necessidade."
@@ -93,5 +88,10 @@
   {
     "desafio": "desaío",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "recurso": "recuro",
+    "simples": "simlpes",
+    "muito": "muto"
   }
 ]
