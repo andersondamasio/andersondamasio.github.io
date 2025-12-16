@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "processo": "processso"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra",
     "monitoramento": "monitorameto"
@@ -93,5 +89,10 @@
     "monitoramento": "monitoramento.",
     "necessidade": "necissidade",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "desafio": "desafío",
+    "problema": "poblema"
   }
 ]
