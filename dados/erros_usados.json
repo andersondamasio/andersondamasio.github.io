@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "controle": "contrle",
-    "sistema": "cistema"
-  },
-  {
     "arquitetura": "arquitretura",
     "processo": "processso"
   },
@@ -93,5 +88,10 @@
   {
     "exemplo": "exenplo",
     "melhor": "melor"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "necessidade": "necissidade",
+    "tecnologia": "tecnolgia"
   }
 ]
