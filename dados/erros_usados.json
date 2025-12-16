@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "arquitetura": "arquiteturra",
-    "monitoramento": "monitorameto"
-  },
-  {
     "armazenamento": "armazenamentto",
     "complexidade": "complexsidade",
     "tecnologia": "tecnolgia"
@@ -94,5 +89,9 @@
     "gerenciamento": "gerenciamnto",
     "desafio": "desafío",
     "problema": "poblema"
+  },
+  {
+    "desafio": "desaío",
+    "funcionalidade": "funcionalidade."
   }
 ]
