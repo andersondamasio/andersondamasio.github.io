@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "prioridade": "prioriade",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "simples": "simplis",
     "sistema": "sistma"
@@ -95,5 +90,10 @@
     "resultado": "resutlado",
     "abordagem": "abordajem",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "resultado": "resultadoo",
+    "funciona": "funciona."
   }
 ]
