@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "propriedade": "propriadade",
-    "necessidade": "necessidade."
-  },
-  {
     "muito": "muiito",
     "exemplo": "exemplo,",
     "controle": "controlle"
@@ -93,5 +88,10 @@
     "recurso": "recuro",
     "simples": "simlpes",
     "muito": "muto"
+  },
+  {
+    "constante": "constante.",
+    "sistema": "sistma",
+    "processo": "proceso"
   }
 ]
