@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "resultado": "resutlado",
     "sistema": "sistma",
     "problema": "poblema"
@@ -93,5 +89,10 @@
     "computador": "computadorr",
     "funciona": "funciona,",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "acesso": "acesço",
+    "sistema": "sistéma",
+    "exemplo": "exemplo."
   }
 ]
