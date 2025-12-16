@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnolgia",
-    "parceria": "parcería"
-  },
-  {
     "necessidade": "necissidade",
     "abordagem": "abordajem"
   },
@@ -94,5 +89,10 @@
     "constante": "constate",
     "mensagem": "menssagen",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "exemplo": "exemplo,",
+    "desenvolvimento": "desenvolmento"
   }
 ]
