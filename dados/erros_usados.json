@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "dispositivo": "dispotivo"
-  },
-  {
     "exemplo": "exenplo",
     "dispositivo": "dispositivo.",
     "desenvolvimento": "desenvolmento"
@@ -94,5 +90,10 @@
     "conhecimento": "conhescimento",
     "necessidade": "nescessidade",
     "processo": "prosseso"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "muito": "muiito",
+    "exemplo": "exemplo,"
   }
 ]
