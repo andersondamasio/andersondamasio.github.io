@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "arquitetura": "arquitretura",
-    "constante": "constanate"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "monitoramento": "monitoramento."
   },
@@ -93,5 +88,10 @@
     "muito": "muiito",
     "exemplo": "exemplo,",
     "controle": "controlle"
+  },
+  {
+    "abordagem": "abordagem.",
+    "muito": "muto",
+    "tecnologia": "tecnoligia"
   }
 ]
