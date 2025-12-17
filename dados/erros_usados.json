@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "necessidade": "necissidade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "desafio": "desafío",
     "problema": "poblema"
@@ -91,5 +86,9 @@
     "funcionalidade": "funcionalidade.",
     "dispositivo": "dispositivo.",
     "sistema": "sistma"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "melhor": "melor"
   }
 ]
