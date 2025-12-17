@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "sistema": "sistéma",
-    "exemplo": "exemplo."
-  },
-  {
     "conhecimento": "conhescimento",
     "necessidade": "nescessidade",
     "processo": "prosseso"
@@ -94,5 +89,8 @@
     "virtual": "virtuaal",
     "complexidade": "complexsidade",
     "melhor": "melor"
+  },
+  {
+    "acesso": "acesso."
   }
 ]
