@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "suporte": "suportte",
     "arquitetura": "arquitertura",
     "exemplo": "exenplo"
@@ -89,5 +84,9 @@
     "personalizado": "personalizad",
     "gerenciamento": "gerenciamneto",
     "conhecimento": "conhescimento"
+  },
+  {
+    "simples": "cimples",
+    "dispositivo": "dispositivo."
   }
 ]
