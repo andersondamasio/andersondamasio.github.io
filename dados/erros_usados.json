@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "mensagem": "menssagen",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo,",
     "desenvolvimento": "desenvolmento"
@@ -92,5 +87,10 @@
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "suporte": "suportte",
+    "arquitetura": "arquitertura",
+    "exemplo": "exenplo"
   }
 ]
