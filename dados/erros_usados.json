@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "resultado": "resultadoo",
-    "funciona": "funciona."
-  },
-  {
     "acesso": "acesço",
     "dispositivo": "disposotivo"
   },
@@ -90,5 +85,10 @@
     "armazenamento": "armasenamento",
     "exemplo": "exemplo.",
     "internet": "internert"
+  },
+  {
+    "utilizado": "utilizdo.",
+    "computador": "computador,",
+    "dispositivo": "disposotivo"
   }
 ]
