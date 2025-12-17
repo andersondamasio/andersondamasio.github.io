@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "sistema": "sistma",
-    "processo": "proceso"
-  },
-  {
     "propriedade": "propriadade",
     "prioridade": "prioriade",
     "estrutura": "estrututra"
@@ -90,5 +85,9 @@
   {
     "gerenciamento": "gerenciamneto",
     "desafio": "desafío"
+  },
+  {
+    "parceria": "parceria.",
+    "necessidade": "necessidade."
   }
 ]
