@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "arquitetura": "arquitertura",
-    "exemplo": "exenplo"
-  },
-  {
     "geralmente": "geralmemte",
     "constante": "constate",
     "tecnologia": "tecnoligia"
@@ -88,5 +83,10 @@
   {
     "simples": "cimples",
     "dispositivo": "dispositivo."
+  },
+  {
+    "resultado": "resutlado",
+    "exemplo": "exenplo",
+    "abordagem": "abordajem"
   }
 ]
