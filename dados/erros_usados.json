@@ -1,10 +1,5 @@
 [
   {
-    "personalizado": "personalisado",
-    "dispositivo": "dispositivo.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "constante": "constate",
     "mensagem": "menssagen",
     "arquitetura": "arquitertura"
@@ -92,5 +87,10 @@
     "controle": "controlle",
     "arquitetura": "arquiteturra",
     "sistema": "sistéma"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "desenvolvimento": "desenvolmento",
+    "tecnologia": "tecnoligia"
   }
 ]
