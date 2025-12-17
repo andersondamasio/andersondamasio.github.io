@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "necessidade": "nescessidade",
-    "processo": "prosseso"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "muito": "muiito",
     "exemplo": "exemplo,"
@@ -92,5 +87,9 @@
   },
   {
     "acesso": "acesso."
+  },
+  {
+    "correto": "correto.",
+    "arquitetura": "arquitertura"
   }
 ]
