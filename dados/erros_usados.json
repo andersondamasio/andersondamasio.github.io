@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "abordagem": "abordajem",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "resultado": "resultadoo",
     "funciona": "funciona."
@@ -90,5 +85,10 @@
   {
     "conhecimento": "conhescimento",
     "acesso": "acesço"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "exemplo": "exemplo.",
+    "internet": "internert"
   }
 ]
