@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "exemplo": "exemplo.",
-    "internet": "internert"
-  },
-  {
     "utilizado": "utilizdo.",
     "computador": "computador,",
     "dispositivo": "disposotivo"
@@ -88,5 +83,9 @@
   {
     "estrutura": "estrututra",
     "dispositivo": "dispotivo"
+  },
+  {
+    "internet": "internat",
+    "arquitetura": "arquitretura"
   }
 ]
