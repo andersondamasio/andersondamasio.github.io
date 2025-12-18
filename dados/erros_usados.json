@@ -1,10 +1,5 @@
 [
   {
-    "utilizado": "utilizdo.",
-    "computador": "computador,",
-    "dispositivo": "disposotivo"
-  },
-  {
     "carregamento": "carregamneto",
     "sistema": "cistema"
   },
@@ -87,5 +82,10 @@
   {
     "internet": "internat",
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "exemplo": "exemplo.",
+    "arquitetura": "arquitertura"
   }
 ]
