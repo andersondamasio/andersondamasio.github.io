@@ -1,10 +1,5 @@
 [
   {
-    "mensagem": "mensagen",
-    "recurso": "reccurso",
-    "melhor": "melhorr"
-  },
-  {
     "virtual": "virtuaal",
     "complexidade": "complexsidade",
     "melhor": "melor"
@@ -87,5 +82,9 @@
   {
     "conectado": "conectado.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "suporte": "suprte",
+    "rotina": "rotina."
   }
 ]
