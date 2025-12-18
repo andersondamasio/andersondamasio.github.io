@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "rotina": "rotina."
-  },
-  {
     "constante": "constante.",
     "processo": "prosseso",
     "automatizado": "automatisado"
@@ -90,5 +86,9 @@
   {
     "exemplo": "exemplo,",
     "simples": "simplis"
+  },
+  {
+    "abordagem": "abordajem",
+    "exemplo": "exemplo."
   }
 ]
