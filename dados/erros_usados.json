@@ -1,10 +1,5 @@
 [
   {
-    "personalizado": "personalizad",
-    "gerenciamento": "gerenciamneto",
-    "conhecimento": "conhescimento"
-  },
-  {
     "simples": "cimples",
     "dispositivo": "dispositivo."
   },
@@ -90,5 +85,10 @@
     "acesso": "acesço",
     "dispositivo": "dispotivo",
     "simples": "cimples"
+  },
+  {
+    "sistema": "cistema",
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquiteturra"
   }
 ]
