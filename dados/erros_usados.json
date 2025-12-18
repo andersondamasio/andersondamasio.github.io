@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "necessidade": "necessidade."
-  },
-  {
     "funciona": "funciona,",
     "problema": "probrema",
     "internet": "internert"
@@ -88,5 +84,10 @@
     "melhor": "melhorr",
     "funcionalidade": "funcionaliade",
     "controle": "contrle"
+  },
+  {
+    "complexidade": "complexidade.",
+    "sistema": "cistema",
+    "necessidade": "nescessidade"
   }
 ]
