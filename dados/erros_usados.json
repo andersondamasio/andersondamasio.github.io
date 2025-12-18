@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "sistema": "cistema"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "dispositivo": "dispositivo.",
     "sistema": "sistma"
@@ -87,5 +83,10 @@
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "consistente": "consiteente",
+    "acesso": "acesço",
+    "utilizado": "utilizado."
   }
 ]
