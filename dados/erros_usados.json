@@ -1,9 +1,5 @@
 [
   {
-    "correto": "correto.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "conhecimento": "conhescimento",
     "acesso": "acesço"
   },
@@ -88,5 +84,9 @@
     "tecnologia": "tecnolgia",
     "monitoramento": "monitramento",
     "problema": "probrema"
+  },
+  {
+    "muito": "muiito",
+    "sistema": "sistéma"
   }
 ]
