@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "complexidade": "complexsidade",
-    "melhor": "melor"
-  },
-  {
     "acesso": "acesso."
   },
   {
@@ -86,5 +81,10 @@
   {
     "suporte": "suprte",
     "rotina": "rotina."
+  },
+  {
+    "constante": "constante.",
+    "processo": "prosseso",
+    "automatizado": "automatisado"
   }
 ]
