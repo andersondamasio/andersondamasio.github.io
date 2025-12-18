@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "exemplo": "exenplo",
-    "abordagem": "abordajem"
-  },
-  {
     "conectado": "conectado.",
     "arquitetura": "arquitretura"
   },
@@ -90,5 +85,10 @@
   {
     "funciona": "funsiona",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "recurso": "recusso",
+    "arquitetura": "arquitertura",
+    "problema": "probrema"
   }
 ]
