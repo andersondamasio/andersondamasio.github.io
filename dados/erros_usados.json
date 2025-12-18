@@ -1,9 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "dispositivo": "dispositivo."
-  },
-  {
     "resultado": "resutlado",
     "exemplo": "exenplo",
     "abordagem": "abordajem"
@@ -90,5 +86,9 @@
     "sistema": "cistema",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "funciona": "funsiona",
+    "tecnologia": "tecnolgia"
   }
 ]
