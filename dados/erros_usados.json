@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "arquitetura": "arquitretura"
-  },
-  {
     "suporte": "suprte",
     "rotina": "rotina."
   },
@@ -90,5 +86,9 @@
     "recurso": "recusso",
     "arquitetura": "arquitertura",
     "problema": "probrema"
+  },
+  {
+    "exemplo": "exemplo,",
+    "simples": "simplis"
   }
 ]
