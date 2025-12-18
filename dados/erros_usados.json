@@ -1,8 +1,5 @@
 [
   {
-    "acesso": "acesso."
-  },
-  {
     "correto": "correto.",
     "arquitetura": "arquitertura"
   },
@@ -86,5 +83,10 @@
     "constante": "constante.",
     "processo": "prosseso",
     "automatizado": "automatisado"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "monitoramento": "monitramento",
+    "problema": "probrema"
   }
 ]
