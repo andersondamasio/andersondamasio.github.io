@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "monitoramento": "monitramento",
-    "problema": "probrema"
-  },
-  {
     "muito": "muiito",
     "sistema": "sistéma"
   },
@@ -90,5 +85,10 @@
     "exemplo": "exemplo,",
     "desenvolvimento": "desenvolvmento",
     "monitoramento": "monitorameto"
+  },
+  {
+    "processo": "proceso",
+    "desenvolvimento": "desenvolmento",
+    "exemplo": "exemplo."
   }
 ]
