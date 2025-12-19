@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "processo": "prosseso",
-    "automatizado": "automatisado"
-  },
-  {
     "tecnologia": "tecnolgia",
     "monitoramento": "monitramento",
     "problema": "probrema"
@@ -90,5 +85,10 @@
   {
     "abordagem": "abordajem",
     "exemplo": "exemplo."
+  },
+  {
+    "exemplo": "exemplo,",
+    "desenvolvimento": "desenvolvmento",
+    "monitoramento": "monitorameto"
   }
 ]
