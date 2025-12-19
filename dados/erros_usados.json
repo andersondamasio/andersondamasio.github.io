@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "arquitetura": "arquitretura"
-  },
-  {
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo.",
     "arquitetura": "arquitertura"
@@ -91,5 +87,10 @@
     "propriedade": "propriedade.",
     "controle": "controle.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "recurso": "recusso",
+    "sistema": "sistéma",
+    "problema": "probrema"
   }
 ]
