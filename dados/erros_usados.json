@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralmete",
-    "conhecimento": "conhecimeto",
-    "acesso": "aceso"
-  },
-  {
     "acesso": "acesço",
     "dispositivo": "dispotivo",
     "simples": "cimples"
@@ -91,5 +86,10 @@
     "utilizado": "utilizado.",
     "abordagem": "abordajem",
     "necessidade": "nescessidade"
+  },
+  {
+    "complexidade": "complexsidade",
+    "operacional": "operacionl",
+    "abordagem": "abordage"
   }
 ]
