@@ -46010,5 +46010,14 @@
     "dataFonte": "2025-12-19T17:00:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.infoq.com/news/2025/12/aws-expands-well-architected/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Trabalhando com Vulnerabilidades: Como Conectar Alertas e Tarefas no DevOps",
+    "noticiaOriginal": "Work item linking for Advanced Security alerts now available",
+    "url": "artigos/seguranca/trabalhando-com-vulnerabilidades-como-conectar-alertas-e-tarefas-no-devops.html",
+    "data": "2025-12-19T18:31:39.139Z",
+    "dataFonte": "2025-12-19T18:24:14.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://devblogs.microsoft.com/devops/work-item-linking-for-advanced-security-alerts-now-available/"
   }
 ]
