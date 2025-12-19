@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnolgia"
   },
@@ -89,5 +85,10 @@
     "conhecimento": "conhescimento",
     "abordagem": "abordagem.",
     "sistema": "sistma"
+  },
+  {
+    "muito": "muto",
+    "sistema": "cistema",
+    "exemplo": "exemplo."
   }
 ]
