@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muiito",
-    "sistema": "sistéma"
-  },
-  {
     "estrutura": "estrututra",
     "dispositivo": "dispotivo"
   },
@@ -90,5 +86,9 @@
     "processo": "proceso",
     "desenvolvimento": "desenvolmento",
     "exemplo": "exemplo."
+  },
+  {
+    "constante": "constate",
+    "computador": "computador,"
   }
 ]
