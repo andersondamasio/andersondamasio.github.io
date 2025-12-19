@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "funciona": "funsiona",
     "tecnologia": "tecnolgia"
   },
@@ -90,5 +85,9 @@
   {
     "internet": "internat",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "operacional": "operacionl"
   }
 ]
