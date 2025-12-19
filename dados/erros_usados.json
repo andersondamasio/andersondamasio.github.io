@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "desenvolvimento": "desenvolvmento",
-    "monitoramento": "monitorameto"
-  },
-  {
     "processo": "proceso",
     "desenvolvimento": "desenvolmento",
     "exemplo": "exemplo."
@@ -92,5 +87,9 @@
     "acesso": "acesso.",
     "dispositivo": "dispositivo.",
     "simples": "simplis"
+  },
+  {
+    "sistema": "sistma",
+    "arquitetura": "arquitretura"
   }
 ]
