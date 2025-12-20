@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "propriedade.",
-    "controle": "controle.",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "recurso": "recusso",
     "sistema": "sistéma",
     "problema": "probrema"
@@ -91,5 +86,10 @@
   {
     "funciona": "funsiona",
     "monitoramento": "monitramento"
+  },
+  {
+    "constante": "constante.",
+    "desenvolvimento": "desenvolmento",
+    "tecnologia": "tecnolgia"
   }
 ]
