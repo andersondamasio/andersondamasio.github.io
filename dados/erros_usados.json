@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitretura"
@@ -93,5 +88,9 @@
   {
     "constante": "constanate",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "processo": "proceso"
   }
 ]
