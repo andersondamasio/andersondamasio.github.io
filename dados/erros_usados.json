@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "processo": "processso"
-  },
-  {
     "conhecimento": "conhescimento",
     "abordagem": "abordagem.",
     "sistema": "sistma"
@@ -93,5 +89,10 @@
     "recurso": "reccurso",
     "componente": "componentte",
     "exemplo": "exenplo"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "necessidade": "nescessidade",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
