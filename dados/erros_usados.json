@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "dispositivo": "dispositivo.",
-    "simples": "simplis"
-  },
-  {
     "sistema": "sistma",
     "arquitetura": "arquitretura"
   },
@@ -95,5 +90,8 @@
     "abordagem": "abordajem",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "tecnologia": "tecnnologia"
   }
 ]
