@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "resultado": "resultadoo",
-    "desafio": "desafiu"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "sistema": "cistema",
     "monitoramento": "monitorameto"
@@ -95,5 +90,10 @@
     "melhor": "melor",
     "problema": "problema.",
     "muito": "muto"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnnologia",
+    "sistema": "cistema"
   }
 ]
