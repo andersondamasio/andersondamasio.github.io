@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "operacional": "operacionl",
-    "abordagem": "abordage"
-  },
-  {
     "internet": "internat",
     "funcionalidade": "funcionaliade"
   },
@@ -93,5 +88,10 @@
     "muito": "muto",
     "processo": "processso",
     "suporte": "suporte."
+  },
+  {
+    "sistema": "cistema",
+    "operacional": "operacional.",
+    "arquitetura": "arquiteturra"
   }
 ]
