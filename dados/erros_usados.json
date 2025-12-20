@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "sistema": "sistéma"
-  },
-  {
     "conhecimento": "conhecimeto",
     "processo": "processso"
   },
@@ -92,5 +88,10 @@
     "armazenamento": "armazenamentto",
     "arquitetura": "arquitertura",
     "monitoramento": "monitramento"
+  },
+  {
+    "recurso": "reccurso",
+    "componente": "componentte",
+    "exemplo": "exenplo"
   }
 ]
