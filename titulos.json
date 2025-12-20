@@ -46145,5 +46145,14 @@
     "dataFonte": "2025-12-20T09:30:40.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/verizon-free-nintendo-switch-deal/"
+  },
+  {
+    "titulo": "Transformando Dados: Como a Decathlon Redefiniu Suas Estruturas com Polars",
+    "noticiaOriginal": "Decathlon Switches to Polars to Optimize Data Pipelines and Infrastructure Costs",
+    "url": "artigos/programacao/transformando-dados-como-a-decathlon-redefiniu-suas-estruturas-com-polars.html",
+    "data": "2025-12-20T11:18:22.887Z",
+    "dataFonte": "2025-12-20T11:04:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/12/decathlon-spark-polars/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
