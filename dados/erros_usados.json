@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "arquitetura": "arquitretura"
-  },
-  {
     "suporte": "suporte.",
     "componente": "componete",
     "desenvolvimento": "desenvolvimente"
@@ -93,5 +89,9 @@
   },
   {
     "tecnologia": "tecnnologia"
+  },
+  {
+    "resultado": "resultao",
+    "tecnologia": "tecnolgia"
   }
 ]
