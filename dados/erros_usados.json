@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "arquitetura": "arquitretura",
     "operacional": "operacionl"
   },
@@ -93,5 +89,10 @@
     "sistema": "cistema",
     "operacional": "operacional.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "virtual": "virtuaal",
+    "problema": "problema.",
+    "controle": "controlle"
   }
 ]

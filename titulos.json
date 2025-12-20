@@ -46172,5 +46172,14 @@
     "dataFonte": "2025-12-20T12:00:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/ai-success-strategies-business-lenovo/"
+  },
+  {
+    "titulo": "NAT Gateway Regional: Uma Nova Era para a Alta Disponibilidade na Nuvem",
+    "noticiaOriginal": "AWS Introduces Regional Availability for NAT Gateway",
+    "url": "artigos/cloud/nat-gateway-regional-uma-nova-era-para-a-alta-disponibilidade-na-nuvem.html",
+    "data": "2025-12-20T14:20:01.528Z",
+    "dataFonte": "2025-12-20T13:40:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/12/aws-regional-nat-gateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
