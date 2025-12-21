@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "operacional": "operacional.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "virtual": "virtuaal",
     "problema": "problema.",
     "controle": "controlle"
@@ -90,5 +85,10 @@
     "sistema": "sistma",
     "desenvolvimento": "desenvolvmento",
     "monitoramento": "monitoramento."
+  },
+  {
+    "acesso": "aceso",
+    "conhecimento": "conhescimento",
+    "arquitetura": "arquitretura"
   }
 ]
