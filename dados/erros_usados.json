@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "problema": "problema.",
-    "controle": "controlle"
-  },
-  {
     "paralelo": "paralelo.",
     "arquitetura": "arquitretura",
     "exemplo": "exenplo"
@@ -90,5 +85,10 @@
     "acesso": "aceso",
     "conhecimento": "conhescimento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "operacional": "operaciona",
+    "exemplo": "exemplo,",
+    "sistema": "sistma"
   }
 ]
