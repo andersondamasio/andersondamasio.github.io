@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnnologia",
-    "sistema": "cistema"
-  },
-  {
     "abordagem": "abordajem",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnoligia"
@@ -90,5 +85,9 @@
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "carregamento": "carregameno",
+    "gerenciamento": "gerenciamnto"
   }
 ]
