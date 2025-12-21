@@ -1,10 +1,5 @@
 [
   {
-    "paralelo": "paralelo.",
-    "arquitetura": "arquitretura",
-    "exemplo": "exenplo"
-  },
-  {
     "melhor": "melor",
     "problema": "problema.",
     "muito": "muto"
@@ -90,5 +85,10 @@
     "operacional": "operaciona",
     "exemplo": "exemplo,",
     "sistema": "sistma"
+  },
+  {
+    "automatizado": "automatizdo.",
+    "simples": "simlpes",
+    "monitoramento": "monitramento"
   }
 ]
