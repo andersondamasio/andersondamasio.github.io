@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "processo": "proceso"
-  },
-  {
     "muito": "muiito",
     "tecnologia": "tecnnologia"
   },
@@ -92,5 +88,10 @@
   {
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "simples": "simplis",
+    "desenvolvimento": "desenvolmento"
   }
 ]
