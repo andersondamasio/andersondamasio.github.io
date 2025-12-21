@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "necessidade": "nescessidade",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "estrutura": "estrututra",
     "constante": "constante.",
     "arquitetura": "arquiteturra"
@@ -91,5 +86,10 @@
     "exemplo": "exemplo,",
     "monitoramento": "monitramento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "funciona": "funsiona",
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnoligia"
   }
 ]
