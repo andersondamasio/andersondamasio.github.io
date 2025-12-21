@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muto",
-    "problema": "probrema",
-    "processo": "prosseso"
-  },
-  {
     "exemplo": "exemplo,",
     "monitoramento": "monitramento",
     "arquitetura": "arquitretura"
@@ -94,5 +89,9 @@
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "constante": "constante."
   }
 ]
