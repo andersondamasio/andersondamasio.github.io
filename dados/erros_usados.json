@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parceriaa",
-    "dispositivo": "dispositivo."
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra",
     "internet": "internat"
@@ -90,5 +86,9 @@
   {
     "funciona": "funciona.",
     "constante": "constante."
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "armazenamento": "armazanamento"
   }
 ]
