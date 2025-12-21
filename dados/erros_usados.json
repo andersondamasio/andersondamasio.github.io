@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia"
-  },
-  {
     "resultado": "resultao",
     "tecnologia": "tecnolgia"
   },
@@ -89,5 +86,10 @@
     "arquitetura": "arquitretura",
     "sistema": "sistéma",
     "exemplo": "exenplo"
+  },
+  {
+    "abordagem": "abordajem",
+    "arquitetura": "arquiteturra",
+    "estrutura": "estrututra"
   }
 ]
