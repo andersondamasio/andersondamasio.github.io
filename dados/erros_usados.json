@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "tecnologia": "tecnoligia",
     "processo": "proceso"
   },
@@ -92,5 +88,9 @@
     "sistema": "cistema",
     "arquitetura": "arquitertura",
     "muito": "muto"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
