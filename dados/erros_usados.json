@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "arquitetura": "arquitertura",
-    "muito": "muto"
-  },
-  {
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvimente"
   },
@@ -89,5 +84,9 @@
     "sistema": "cistema",
     "prioridade": "prioriade.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "processo": "prosseso"
   }
 ]
