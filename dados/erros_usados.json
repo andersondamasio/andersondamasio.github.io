@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funciona": "funciona.",
     "constante": "constante."
   },
@@ -93,5 +88,9 @@
     "controle": "controle.",
     "recurso": "recuro",
     "personalizado": "personalizad"
+  },
+  {
+    "sistema": "sistma",
+    "arquitetura": "arquitretura"
   }
 ]
