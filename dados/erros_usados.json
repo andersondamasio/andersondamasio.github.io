@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "armazenamento": "armazanamento"
-  },
-  {
     "parceria": "parceriaa",
     "desafio": "desafío",
     "necessidade": "nescessidade"
@@ -91,5 +87,10 @@
   },
   {
     "suporte": "suprte"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "problema": "probrema",
+    "simples": "simplis"
   }
 ]
