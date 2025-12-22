@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "conhecimento": "conhescimento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "operacional": "operaciona",
     "exemplo": "exemplo,",
     "sistema": "sistma"
@@ -90,5 +85,10 @@
     "consistente": "consiteente",
     "resultado": "resultao",
     "processo": "proceso"
+  },
+  {
+    "automatizado": "automatizdo",
+    "simples": "simplis",
+    "melhor": "melhorr"
   }
 ]
