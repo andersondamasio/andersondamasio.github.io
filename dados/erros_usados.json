@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceriaa",
-    "desafio": "desafío",
-    "necessidade": "nescessidade"
-  },
-  {
     "prioridade": "prioridade.",
     "desenvolvimento": "desenvolvimente",
     "suporte": "suportte"
@@ -92,5 +87,8 @@
     "dispositivo": "dispotivo",
     "problema": "probrema",
     "simples": "simplis"
+  },
+  {
+    "tecnologia": "tecnnologia"
   }
 ]
