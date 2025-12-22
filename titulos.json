@@ -46514,5 +46514,14 @@
     "dataFonte": "2025-12-19T13:45:50.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.bbc.com/news/articles/clydp2ygrveo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "Reduzindo os Tempos de Build no Android: Lições do Pinterest para Otimização de CI",
+    "noticiaOriginal": "Pinterest Engineering Reduces Android CI Build Times by 36% with Runtime-Aware Sharding",
+    "url": "artigos/devops/reduzindo-os-tempos-de-build-no-android-licoes-do-pinterest-para-otimizacao-de-ci.html",
+    "data": "2025-12-22T08:32:41.779Z",
+    "dataFonte": "2025-12-19T12:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2025/12/pinterest-ci-build-reduction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
