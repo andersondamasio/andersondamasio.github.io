@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo.",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "tecnologia": "tecnolgia",
     "constante": "constante."
   },
@@ -88,5 +83,9 @@
   {
     "funcionalidade": "funcionalidade.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "funciona": "funciona,",
+    "suporte": "suporte."
   }
 ]
