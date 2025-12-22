@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "arquitetura": "arquitretura"
-  },
-  {
     "suporte": "suprte"
   },
   {
@@ -87,5 +83,10 @@
   {
     "mensagem": "mensagen",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "constante": "constate",
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnnologia"
   }
 ]
