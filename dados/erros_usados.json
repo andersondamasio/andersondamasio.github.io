@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "arquitetura": "arquitretura",
     "sistema": "sistéma",
     "exemplo": "exenplo"
@@ -90,5 +86,9 @@
     "armazenamento": "armazanamento",
     "muito": "muiito",
     "arquitetura": "arquitertura"
+  },
+  {
+    "prioridade": "prioridade.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]

@@ -46559,5 +46559,14 @@
     "dataFonte": "2025-12-22T12:30:43.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/5-phone-fix-dongle-review/"
+  },
+  {
+    "titulo": "Transformando Testes em Ações: O Novo Test Run Hub do Azure",
+    "noticiaOriginal": "The New Test Run Hub is Going Generally Available!",
+    "url": "artigos/devops/transformando-testes-em-acoes-o-novo-test-run-hub-do-azure.html",
+    "data": "2025-12-22T13:36:33.413Z",
+    "dataFonte": "2025-12-22T13:06:01.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://devblogs.microsoft.com/devops/the-new-test-run-hub-is-going-generally-available/"
   }
 ]
