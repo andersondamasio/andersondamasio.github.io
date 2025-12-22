@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "exemplo": "exenplo",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "carregamento": "carregameno",
     "gerenciamento": "gerenciamnto"
   },
@@ -90,5 +85,10 @@
     "necessidade": "necessidade.",
     "acesso": "acesço",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "muito": "muiito",
+    "arquitetura": "arquitertura"
   }
 ]
