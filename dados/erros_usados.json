@@ -1,10 +1,5 @@
 [
   {
-    "automatizado": "automatizdo.",
-    "simples": "simlpes",
-    "monitoramento": "monitramento"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra"
@@ -90,5 +85,10 @@
     "conhecimento": "conhecimento.",
     "complexidade": "complexidade.",
     "muito": "muiito"
+  },
+  {
+    "necessidade": "necessidade.",
+    "acesso": "acesço",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
