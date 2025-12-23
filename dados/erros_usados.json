@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquiteturra",
-    "prioridade": "prioriade"
-  },
-  {
     "mensagem": "mensagen",
     "funcionalidade": "funcionalidade."
   },
@@ -92,5 +87,10 @@
   {
     "dispositivo": "disposotivo",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "abordagem": "abordage",
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitretura"
   }
 ]
