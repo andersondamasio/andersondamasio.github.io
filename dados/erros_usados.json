@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "problema": "probrema",
-    "simples": "simplis"
-  },
-  {
     "tecnologia": "tecnnologia"
   },
   {
@@ -90,5 +85,10 @@
     "recurso": "reccurso",
     "parceria": "parcería",
     "sistema": "sistéma"
+  },
+  {
+    "conectado": "conetado",
+    "geralmente": "geralmete",
+    "internet": "internete"
   }
 ]
