@@ -1,9 +1,5 @@
 [
   {
-    "paralelo": "paralélo",
-    "exemplo": "exemplo."
-  },
-  {
     "sistema": "cistema",
     "prioridade": "prioriade.",
     "tecnologia": "tecnnologia"
@@ -91,5 +87,10 @@
     "consistente": "consitente",
     "funciona": "funciona.",
     "constante": "constante."
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "mensagem": "menssagem",
+    "funciona": "funciona,"
   }
 ]
