@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funciona,",
-    "suporte": "suporte."
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra",
     "prioridade": "prioriade"
@@ -92,5 +88,9 @@
   {
     "desenvolvimento": "desenvolvmento",
     "prioridade": "prioriade."
+  },
+  {
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnoligia"
   }
 ]
