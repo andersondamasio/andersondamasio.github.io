@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "complexidade": "complexidade.",
-    "muito": "muiito"
-  },
-  {
     "necessidade": "necessidade.",
     "acesso": "acesço",
     "desenvolvimento": "desenvolvmento"
@@ -92,5 +87,10 @@
     "funcionalidade": "funcionaliade",
     "mensagem": "mensagen",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "simples": "simplis",
+    "tecnologia": "tecnnologia",
+    "necessidade": "necissidade"
   }
 ]
