@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "recurso": "reccurso",
     "parceria": "parcería",
     "sistema": "sistéma"
@@ -92,5 +87,10 @@
   {
     "tecnologia": "tecnolgia",
     "simples": "cimples"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desafio": "desafiu",
+    "conhecimento": "conhecimento."
   }
 ]
