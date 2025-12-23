@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "processo": "prosseso"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "estrutura": "estrura",
     "abordagem": "abordajem"
@@ -92,5 +88,10 @@
     "exemplo": "exenplo",
     "necessidade": "necessidade.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "exemplo": "exemplo.",
+    "muito": "muto"
   }
 ]
