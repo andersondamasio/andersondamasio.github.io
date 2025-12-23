@@ -46748,5 +46748,14 @@
     "dataFonte": "2025-12-23T11:00:40.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.zdnet.com/article/best-linux-vpns/"
+  },
+  {
+    "titulo": "A nova era das consultas: Pinecone e a inovação dos Nós de Leitura Dedicados",
+    "noticiaOriginal": "Pinecone Introduces Dedicated Read Nodes in Public Preview for Predictable Vector Workloads",
+    "url": "artigos/banco-de-dados/a-nova-era-das-consultas-pinecone-e-a-inovacao-dos-nos-de-leitura-dedicados.html",
+    "data": "2025-12-23T12:45:19.987Z",
+    "dataFonte": "2025-12-23T12:00:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2025/12/pinecone-drn-vector-workloads/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
