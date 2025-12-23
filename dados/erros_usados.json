@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "muito": "muiito",
-    "arquitetura": "arquitertura"
-  },
-  {
     "prioridade": "prioridade.",
     "desenvolvimento": "desenvolvmento"
   },
@@ -92,5 +87,9 @@
     "controle": "contrle",
     "melhor": "melhorr",
     "muito": "muiito"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
