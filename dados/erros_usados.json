@@ -1,10 +1,5 @@
 [
   {
-    "consistente": "consiteente",
-    "resultado": "resultao",
-    "processo": "proceso"
-  },
-  {
     "automatizado": "automatizdo",
     "simples": "simplis",
     "melhor": "melhorr"
@@ -92,5 +87,10 @@
     "problema": "poblema",
     "monitoramento": "monitoramento.",
     "desafio": "desafiu"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "problema": "problema.",
+    "simples": "simlpes"
   }
 ]
