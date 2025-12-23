@@ -1,8 +1,5 @@
 [
   {
-    "suporte": "suprte"
-  },
-  {
     "dispositivo": "dispotivo",
     "problema": "probrema",
     "simples": "simplis"
@@ -88,5 +85,10 @@
     "constante": "constate",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "recurso": "reccurso",
+    "parceria": "parcería",
+    "sistema": "sistéma"
   }
 ]
