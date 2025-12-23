@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "mensagen",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "constante": "constate",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
@@ -92,5 +88,9 @@
     "abordagem": "abordage",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "simples": "cimples"
   }
 ]
