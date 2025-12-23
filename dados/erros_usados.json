@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "parceria": "parcería",
-    "sistema": "sistéma"
-  },
-  {
     "conectado": "conetado",
     "geralmente": "geralmete",
     "internet": "internete"
@@ -92,5 +87,10 @@
     "tecnologia": "tecnoligia",
     "desafio": "desafiu",
     "conhecimento": "conhecimento."
+  },
+  {
+    "controle": "controlle",
+    "arquitetura": "arquitretura",
+    "conhecimento": "conhescimento"
   }
 ]
