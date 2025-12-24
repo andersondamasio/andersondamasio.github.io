@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "conhecimento": "conhecimeto",
     "acesso": "aceso"
   },
@@ -88,5 +84,10 @@
     "sistema": "sistma",
     "problema": "probrema",
     "estrutura": "estrututra"
+  },
+  {
+    "melhor": "melor",
+    "abordagem": "abordagem.",
+    "suporte": "suprte"
   }
 ]
