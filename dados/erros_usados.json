@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "mensagem": "menssagem",
-    "funciona": "funciona,"
-  },
-  {
     "exemplo": "exenplo",
     "necessidade": "necessidade.",
     "tecnologia": "tecnnologia"
@@ -90,5 +85,10 @@
     "operacional": "operacionl",
     "acesso": "aceso",
     "sistema": "sistéma"
+  },
+  {
+    "monitoramento": "monitramento",
+    "sistema": "sistma",
+    "arquitetura": "arquitretura"
   }
 ]
