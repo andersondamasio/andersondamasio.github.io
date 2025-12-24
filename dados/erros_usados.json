@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "simples": "cimples"
-  },
-  {
     "tecnologia": "tecnoligia",
     "desafio": "desafiu",
     "conhecimento": "conhecimento."
@@ -89,5 +85,9 @@
   },
   {
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "carregamento": "carregamento."
   }
 ]
