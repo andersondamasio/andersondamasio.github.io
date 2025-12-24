@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "exemplo": "exemplo.",
-    "muito": "muto"
-  },
-  {
     "tecnologia": "tecnolgia",
     "gerenciamento": "gerenciamente"
   },
@@ -90,5 +85,10 @@
     "funcionalidade": "funcionaliadde",
     "funciona": "funciona,",
     "acesso": "acesso."
+  },
+  {
+    "virtual": "virtual.",
+    "funcionalidade": "funcionaliade",
+    "controle": "controle."
   }
 ]
