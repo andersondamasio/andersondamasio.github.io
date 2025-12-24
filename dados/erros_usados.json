@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "desafio": "desafiu",
-    "conhecimento": "conhecimento."
-  },
-  {
     "controle": "controlle",
     "arquitetura": "arquitretura",
     "conhecimento": "conhescimento"
@@ -89,5 +84,9 @@
   {
     "armazenamento": "armazenamentto",
     "carregamento": "carregamento."
+  },
+  {
+    "suporte": "suprte",
+    "tecnologia": "tecnolgia"
   }
 ]
