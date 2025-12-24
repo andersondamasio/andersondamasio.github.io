@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "mensagem": "mensagen",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "simples": "simplis",
     "tecnologia": "tecnnologia",
     "necessidade": "necissidade"
@@ -89,5 +84,10 @@
   {
     "personalizado": "personalizdo",
     "simples": "simplis"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]
