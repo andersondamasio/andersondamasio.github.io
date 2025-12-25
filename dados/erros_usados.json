@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "exemplo": "exemplo,"
-  },
-  {
     "prioridade": "prioridade.",
     "tecnologia": "tecnolgia"
   },
@@ -86,5 +82,10 @@
   {
     "operacional": "operacionl",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "processo": "proceso",
+    "abordagem": "abordagem.",
+    "sistema": "cistema"
   }
 ]
