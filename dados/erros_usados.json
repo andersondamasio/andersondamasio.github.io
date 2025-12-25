@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "acesso": "aceso",
-    "sistema": "sistéma"
-  },
-  {
     "monitoramento": "monitramento",
     "sistema": "sistma",
     "arquitetura": "arquitretura"
@@ -89,5 +84,10 @@
     "dispositivo": "disposotivo",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "resultado": "resultadoo",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnnologia"
   }
 ]
