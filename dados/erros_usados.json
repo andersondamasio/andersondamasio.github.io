@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "carregamento": "carregamento."
-  },
-  {
     "suporte": "suprte",
     "tecnologia": "tecnolgia"
   },
@@ -90,5 +86,9 @@
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolvmento",
     "melhor": "melor"
+  },
+  {
+    "rotina": "rotina.",
+    "acesso": "aceso"
   }
 ]
