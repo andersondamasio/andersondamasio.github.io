@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desenvolvimento": "desenvolmento"
   },
   {
@@ -87,5 +83,10 @@
     "processo": "proceso",
     "abordagem": "abordagem.",
     "sistema": "cistema"
+  },
+  {
+    "acesso": "aceso",
+    "mensagem": "menssagem",
+    "controle": "contrle"
   }
 ]
