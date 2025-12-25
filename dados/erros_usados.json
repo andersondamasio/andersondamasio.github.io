@@ -1,9 +1,5 @@
 [
   {
-    "personalizado": "personalizdo",
-    "simples": "simplis"
-  },
-  {
     "dispositivo": "disposotivo",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
@@ -89,5 +85,9 @@
   {
     "resultado": "resultadoo",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "funciona": "funsiona"
   }
 ]
