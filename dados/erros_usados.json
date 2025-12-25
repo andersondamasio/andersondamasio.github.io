@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "abordagem": "abordagem.",
-    "suporte": "suprte"
-  },
-  {
     "necessidade": "nescessidade",
     "abordagem": "abordage",
     "desenvolvimento": "desenvolvimente"
@@ -90,5 +85,9 @@
     "dispositivo": "dispositivo.",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "simples": "cimples",
+    "complexidade": "complexsidade"
   }
 ]
