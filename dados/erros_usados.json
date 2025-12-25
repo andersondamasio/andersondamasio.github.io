@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultadoo",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "tecnologia": "tecnoligia",
     "funciona": "funsiona"
   },
@@ -91,5 +87,10 @@
     "processo": "processso",
     "desenvolvimento": "desenvolvimente",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "desenvolvimento": "desenvolvmento",
+    "exemplo": "exemplo."
   }
 ]
