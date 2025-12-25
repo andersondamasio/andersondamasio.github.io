@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "abordagem": "abordage",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "operacional": "operacionl",
     "acesso": "aceso",
     "sistema": "sistéma"
@@ -89,5 +84,10 @@
   {
     "simples": "cimples",
     "complexidade": "complexsidade"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnoligia"
   }
 ]
