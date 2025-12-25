@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "funciona": "funsiona"
-  },
-  {
     "exemplo": "exemplo.",
     "problema": "probrema",
     "desenvolvimento": "desenvolvmento"
@@ -92,5 +88,10 @@
     "monitoramento": "monitorameto",
     "desenvolvimento": "desenvolvmento",
     "exemplo": "exemplo."
+  },
+  {
+    "recurso": "reccurso",
+    "dispositivo": "dispotivo",
+    "tecnologia": "tecnolgia"
   }
 ]
