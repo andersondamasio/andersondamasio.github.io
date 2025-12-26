@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "problema": "probrema",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "abordagem": "abordagem.",
     "virtual": "virtal",
     "tecnologia": "tecnnologia"
@@ -93,5 +88,10 @@
     "recurso": "reccurso",
     "dispositivo": "dispotivo",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "necessidade": "necessidade.",
+    "arquitetura": "arquitertura"
   }
 ]
