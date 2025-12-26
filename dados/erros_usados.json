@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "desenvolvimento": "desenvolvmento",
-    "exemplo": "exemplo."
-  },
-  {
     "recurso": "reccurso",
     "dispositivo": "dispotivo",
     "tecnologia": "tecnolgia"
@@ -88,5 +83,10 @@
     "tecnologia": "tecnoligia",
     "sistema": "sistéma",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "suporte": "suportte",
+    "arquitetura": "arquitertura",
+    "processo": "prosseso"
   }
 ]
