@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "simples": "simlpes",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desafio": "desafío",
     "sistema": "sistma",
     "controle": "controlle"
@@ -89,5 +84,9 @@
     "armazenamento": "armasenamento",
     "recurso": "reccurso",
     "processo": "prosseso"
+  },
+  {
+    "sistema": "cistema",
+    "muito": "muinto"
   }
 ]
