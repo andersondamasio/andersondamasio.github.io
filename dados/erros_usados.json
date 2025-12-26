@@ -1,9 +1,5 @@
 [
   {
-    "rotina": "rotina.",
-    "acesso": "aceso"
-  },
-  {
     "desafio": "desafiu",
     "simples": "simlpes",
     "tecnologia": "tecnolgia"
@@ -88,5 +84,10 @@
     "constante": "constante.",
     "acesso": "aceso",
     "arquitetura": "arquitretura"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "recurso": "reccurso",
+    "processo": "prosseso"
   }
 ]
