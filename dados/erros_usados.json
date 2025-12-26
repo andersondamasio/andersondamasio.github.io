@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "dispositivo": "dispotivo"
-  },
-  {
     "parceria": "parceria.",
     "arquitetura": "arquitretura"
   },
@@ -88,5 +84,10 @@
     "muito": "muinto",
     "exemplo": "exemplo,",
     "desafio": "desaío"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "complexidade": "complezidade",
+    "arquitetura": "arquitertura"
   }
 ]
