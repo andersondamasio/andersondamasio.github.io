@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "dispositivo": "dispotivo",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "necessidade": "necessidade.",
     "arquitetura": "arquitertura"
@@ -88,5 +83,10 @@
     "suporte": "suportte",
     "arquitetura": "arquitertura",
     "processo": "prosseso"
+  },
+  {
+    "exemplo": "exemplo.",
+    "rotina": "rotna",
+    "dispositivo": "disposotivo"
   }
 ]
