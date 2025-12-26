@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "necessidade": "necessidade.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "dispositivo": "dispotivo"
   },
@@ -88,5 +83,10 @@
     "exemplo": "exemplo.",
     "rotina": "rotna",
     "dispositivo": "disposotivo"
+  },
+  {
+    "muito": "muinto",
+    "exemplo": "exemplo,",
+    "desafio": "desaío"
   }
 ]
