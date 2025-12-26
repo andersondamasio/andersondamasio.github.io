@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "desenvolvimento": "desenvolvmento",
-    "melhor": "melor"
-  },
-  {
     "rotina": "rotina.",
     "acesso": "aceso"
   },
@@ -88,5 +83,10 @@
     "paralelo": "paralelo.",
     "problema": "poblema",
     "monitoramento": "monitoramento."
+  },
+  {
+    "constante": "constante.",
+    "acesso": "aceso",
+    "arquitetura": "arquitretura"
   }
 ]
