@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "mensagem": "menssagem",
-    "controle": "contrle"
-  },
-  {
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolvmento",
     "melhor": "melor"
@@ -88,5 +83,10 @@
     "dispositivo": "dispositivo.",
     "computador": "computador.",
     "armazenamento": "armazanamento"
+  },
+  {
+    "paralelo": "paralelo.",
+    "problema": "poblema",
+    "monitoramento": "monitoramento."
   }
 ]
