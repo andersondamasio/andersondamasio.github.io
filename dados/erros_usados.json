@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultadoo",
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "constante": "constanate",
     "necessidade": "nescessidade"
   },
@@ -90,5 +85,9 @@
   {
     "acesso": "aceso",
     "arquitetura": "arquitertura"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "sistema": "sistéma"
   }
 ]
