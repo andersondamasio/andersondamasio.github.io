@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "muito": "muto"
-  },
-  {
     "operacional": "operacionl",
     "funcionalidade": "funcionalidade."
   },
@@ -89,5 +85,9 @@
     "internet": "internat",
     "conhecimento": "conhecimento.",
     "virtual": "virtuaal"
+  },
+  {
+    "controle": "contrle",
+    "sistema": "sistéma"
   }
 ]
