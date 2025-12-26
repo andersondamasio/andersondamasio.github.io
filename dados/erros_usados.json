@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "simples": "cimples",
     "complexidade": "complexsidade"
   },
@@ -92,5 +87,9 @@
   {
     "gerenciamento": "gerenciamneto",
     "dispositivo": "dispotivo"
+  },
+  {
+    "parceria": "parceria.",
+    "arquitetura": "arquitretura"
   }
 ]
