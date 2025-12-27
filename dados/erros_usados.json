@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "recurso": "reccurso",
-    "processo": "prosseso"
-  },
-  {
     "sistema": "cistema",
     "muito": "muinto"
   },
@@ -93,5 +88,9 @@
     "problema": "poblema",
     "melhor": "melhorr",
     "constante": "constante."
+  },
+  {
+    "acesso": "aceso",
+    "arquitetura": "arquitretura"
   }
 ]
