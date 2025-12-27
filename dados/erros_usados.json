@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "sistema": "sistéma",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "suporte": "suportte",
     "arquitetura": "arquitertura",
     "processo": "prosseso"
@@ -93,5 +88,10 @@
     "resultado": "resutlado",
     "sistema": "cistema",
     "abordagem": "abordage"
+  },
+  {
+    "mensagem": "menssagen",
+    "estrutura": "estrtura",
+    "tecnologia": "tecnnologia"
   }
 ]
