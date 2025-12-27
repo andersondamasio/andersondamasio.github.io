@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "conhecimento": "conhecimento.",
-    "virtual": "virtuaal"
-  },
-  {
     "controle": "contrle",
     "sistema": "sistéma"
   },
@@ -90,5 +85,10 @@
     "conhecimento": "conhecimeto",
     "controle": "controlle",
     "abordagem": "abordage"
+  },
+  {
+    "suporte": "suportte",
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitertura"
   }
 ]
