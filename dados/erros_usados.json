@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "tecnologia": "tecnoligia",
-    "controle": "contrle"
-  },
-  {
     "desafio": "desaío",
     "sistema": "cistema",
     "abordagem": "abordage"
@@ -93,5 +88,10 @@
     "internet": "internat",
     "tecnologia": "tecnoligia",
     "sistema": "cistema"
+  },
+  {
+    "necessidade": "nescessidade",
+    "arquitetura": "arquitretura",
+    "sistema": "sistma"
   }
 ]
