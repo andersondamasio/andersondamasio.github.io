@@ -47495,5 +47495,14 @@
     "dataFonte": "2025-12-26T08:30:50.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/tcl-qm8k-series-tv-review/"
+  },
+  {
+    "titulo": "Descomplicando QUIC: A Revolução do tokio-quiche para Aplicações em Rust",
+    "noticiaOriginal": "Cloudflare Open Sources tokio‑quiche, Promising Easier QUIC and HTTP/3 in Rust",
+    "url": "artigos/programacao/descomplicando-quic-a-revolucao-do-tokio-quiche-para-aplicacoes-em-rust.html",
+    "data": "2025-12-27T08:28:33.874Z",
+    "dataFonte": "2025-12-27T08:08:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/12/quic-http3-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
