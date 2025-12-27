@@ -47513,5 +47513,14 @@
     "dataFonte": "2025-12-24T10:30:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.wired.com/story/pinterst-ai-slop-content/"
+  },
+  {
+    "titulo": "A nova proposta da AWS para segurança de Egress: Menos complicação, mais proteção",
+    "noticiaOriginal": "AWS Launches Network Firewall Proxy in Preview to Simplify Managed Egress Security",
+    "url": "artigos/seguranca/a-nova-proposta-da-aws-para-seguranca-de-egress-menos-complicacao-mais-protecao.html",
+    "data": "2025-12-27T10:22:41.869Z",
+    "dataFonte": "2025-12-27T10:16:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2025/12/aws-network-firewall-proxy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

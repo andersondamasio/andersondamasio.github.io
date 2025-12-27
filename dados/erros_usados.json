@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "computador": "computador.",
-    "armazenamento": "armazanamento"
-  },
-  {
     "paralelo": "paralelo.",
     "problema": "poblema",
     "monitoramento": "monitoramento."
@@ -93,5 +88,10 @@
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia",
     "funciona": "funsiona"
+  },
+  {
+    "abordagem": "abordage",
+    "gerenciamento": "gerenciamnto",
+    "processo": "processso"
   }
 ]
