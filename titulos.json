@@ -47621,5 +47621,14 @@
     "dataFonte": "2025-12-27T20:39:07.000Z",
     "categoria": "Carreira",
     "urlFonte": "https://techcrunch.com/2025/12/27/faze-clans-future-is-uncertain-after-influencers-depart/"
+  },
+  {
+    "titulo": "Python em Alta: Como Cloudflare Revolucionou o Desempenho com Workers e WebAssembly",
+    "noticiaOriginal": "Python Workers Redux: Wasm Snapshots and Native uv Tooling",
+    "url": "artigos/programacao/python-em-alta-como-cloudflare-revolucionou-o-desempenho-com-workers-e-webassembly.html",
+    "data": "2025-12-27T22:21:30.111Z",
+    "dataFonte": "2025-12-24T10:00:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2025/12/cloudflare-wasm-python-snapshot/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
