@@ -1,10 +1,5 @@
 [
   {
-    "paralelo": "paralelo.",
-    "problema": "poblema",
-    "monitoramento": "monitoramento."
-  },
-  {
     "constante": "constante.",
     "acesso": "aceso",
     "arquitetura": "arquitretura"
@@ -93,5 +88,10 @@
     "abordagem": "abordage",
     "gerenciamento": "gerenciamnto",
     "processo": "processso"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "dispositivo": "dispositivo.",
+    "controle": "controle."
   }
 ]
