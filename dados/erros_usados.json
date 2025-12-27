@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "suporte": "suportte",
-    "problema": "problema."
-  },
-  {
     "prioridade": "prioriade.",
     "arquitetura": "arquitertura"
   },
@@ -90,5 +85,9 @@
   {
     "exemplo": "exemplo.",
     "abordagem": "abordagem."
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "sistema": "sistma"
   }
 ]
