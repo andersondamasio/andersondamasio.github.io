@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "acesso": "aceso",
-    "arquitetura": "arquitretura"
-  },
-  {
     "armazenamento": "armasenamento",
     "recurso": "reccurso",
     "processo": "prosseso"
@@ -93,5 +88,10 @@
     "funcionalidade": "funcionalidade.",
     "dispositivo": "dispositivo.",
     "controle": "controle."
+  },
+  {
+    "problema": "poblema",
+    "melhor": "melhorr",
+    "constante": "constante."
   }
 ]
