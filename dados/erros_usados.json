@@ -1,8 +1,5 @@
 [
   {
-    "melhor": "melhorr"
-  },
-  {
     "dispositivo": "dispositivo.",
     "computador": "computador.",
     "armazenamento": "armazanamento"
@@ -91,5 +88,10 @@
     "utilizado": "utilizdo",
     "gerenciamento": "gerenciamnto",
     "simples": "simlpes"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnolgia",
+    "funciona": "funsiona"
   }
 ]
