@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "muito": "muinto"
-  },
-  {
     "sistema": "sistéma",
     "tecnologia": "tecnoligia",
     "controle": "contrle"
@@ -92,5 +88,10 @@
   {
     "acesso": "aceso",
     "arquitetura": "arquitretura"
+  },
+  {
+    "internet": "internat",
+    "tecnologia": "tecnoligia",
+    "sistema": "cistema"
   }
 ]
