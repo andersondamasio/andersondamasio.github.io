@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "arquitetura": "arquitertura",
-    "processo": "prosseso"
-  },
-  {
     "exemplo": "exemplo.",
     "rotina": "rotna",
     "dispositivo": "disposotivo"
@@ -93,5 +88,10 @@
     "mensagem": "menssagen",
     "estrutura": "estrtura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "tecnologia": "tecnolgia",
+    "controle": "controle."
   }
 ]
