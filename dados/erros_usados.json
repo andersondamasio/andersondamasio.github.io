@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "sistema": "cistema",
-    "abordagem": "abordage"
-  },
-  {
     "tecnologia": "tecnoligia",
     "sistema": "sistéma",
     "arquitetura": "arquiteturra"
@@ -93,5 +88,10 @@
     "necessidade": "nescessidade",
     "arquitetura": "arquitretura",
     "sistema": "sistma"
+  },
+  {
+    "resultado": "resutlado",
+    "sistema": "cistema",
+    "abordagem": "abordage"
   }
 ]
