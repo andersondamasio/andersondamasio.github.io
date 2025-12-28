@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "utilizado": "utilizdo",
     "gerenciamento": "gerenciamnto",
     "simples": "simlpes"
@@ -90,5 +85,10 @@
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia",
     "processo": "prosseso"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "recurso": "reccurso",
+    "controle": "contrle"
   }
 ]
