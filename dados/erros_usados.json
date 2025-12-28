@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "gerenciamento": "gerenciamnto",
-    "processo": "processso"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "dispositivo": "dispositivo.",
     "controle": "controle."
@@ -88,5 +83,10 @@
   {
     "suporte": "suprte",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquitretura"
   }
 ]
