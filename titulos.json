@@ -47720,5 +47720,14 @@
     "dataFonte": "2025-12-22T16:32:20.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.wired.com/story/openai-child-safety-reports-ncmec/"
+  },
+  {
+    "titulo": "Como a Resiliência na Arquitetura de Software Pode Salvar seu Negócio em Crises",
+    "noticiaOriginal": "How Authress Designed for Resilience and Survived a Major AWS Outage",
+    "url": "artigos/cloud/como-a-resiliencia-na-arquitetura-de-software-pode-salvar-seu-negocio-em-crises.html",
+    "data": "2025-12-28T11:19:34.277Z",
+    "dataFonte": "2025-12-28T11:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/12/infrastructure-resilience-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
