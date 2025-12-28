@@ -47792,5 +47792,14 @@
     "dataFonte": "2025-12-28T18:00:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/12/28/why-wetransfer-co-founder-is-building-another-file-transfer-service/"
+  },
+  {
+    "titulo": "A revolução das imagens seguras: Docker democratiza a segurança em containers",
+    "noticiaOriginal": "Docker Makes Hardened Images Free in Container Security Shift",
+    "url": "artigos/seguranca/a-revolucao-das-imagens-seguras-docker-democratiza-a-seguranca-em-containers.html",
+    "data": "2025-12-28T19:17:59.780Z",
+    "dataFonte": "2025-12-28T19:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2025/12/docker-hardened-images/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
