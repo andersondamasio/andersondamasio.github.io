@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "funciona": "funsiona"
   },
   {
@@ -89,5 +85,9 @@
   {
     "armazenamento": "armazenamentto",
     "sistema": "sistma"
+  },
+  {
+    "controle": "contrle",
+    "tecnologia": "tecnnologia"
   }
 ]
