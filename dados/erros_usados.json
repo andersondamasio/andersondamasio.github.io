@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "acesso": "aceso",
     "melhor": "melor"
   },
@@ -89,5 +85,10 @@
     "exemplo": "exenplo",
     "simples": "simplis",
     "arquitetura": "arquitretura"
+  },
+  {
+    "abordagem": "abordage",
+    "conectado": "conectado.",
+    "sistema": "sistéma"
   }
 ]
