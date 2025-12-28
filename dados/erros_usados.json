@@ -1,10 +1,5 @@
 [
   {
-    "utilizado": "utilizdo",
-    "gerenciamento": "gerenciamnto",
-    "simples": "simlpes"
-  },
-  {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia",
     "funciona": "funsiona"
@@ -90,5 +85,9 @@
     "desenvolvimento": "desenvolmento",
     "recurso": "reccurso",
     "controle": "contrle"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "tecnologia": "tecnoligia"
   }
 ]
