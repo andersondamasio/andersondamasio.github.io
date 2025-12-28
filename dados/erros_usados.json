@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnolgia",
-    "funciona": "funsiona"
-  },
-  {
     "abordagem": "abordage",
     "gerenciamento": "gerenciamnto",
     "processo": "processso"
@@ -89,5 +84,9 @@
   {
     "monitoramento": "monitorameto",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "suporte": "suprte",
+    "tecnologia": "tecnolgia"
   }
 ]
