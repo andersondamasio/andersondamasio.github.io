@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "sistema": "sistma"
-  },
-  {
     "controle": "contrle",
     "tecnologia": "tecnnologia"
   },
@@ -88,5 +84,10 @@
     "dispositivo": "disposotivo",
     "muito": "muinto",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "exemplo": "exenplo",
+    "simples": "simplis",
+    "arquitetura": "arquitretura"
   }
 ]
