@@ -1,10 +1,5 @@
 [
   {
-    "mensagem": "menssagen",
-    "estrutura": "estrtura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "conhecimento": "conhecimeto",
     "tecnologia": "tecnolgia",
     "controle": "controle."
@@ -88,5 +83,9 @@
     "funcionalidade": "funcionaliade",
     "exemplo": "exenplo",
     "muito": "muinto"
+  },
+  {
+    "necessidade": "necessidade.",
+    "armazenamento": "armasenamento"
   }
 ]

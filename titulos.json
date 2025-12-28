@@ -47756,5 +47756,14 @@
     "dataFonte": "2025-12-28T14:00:44.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/samsung-connectivity-labs-settings/"
+  },
+  {
+    "titulo": "A era do MinIO acabou? Um olhar sobre o futuro do armazenamento S3 open source",
+    "noticiaOriginal": "MinIO GitHub Repository in Maintenance Mode: What's Next for the Open Source Object Storage?",
+    "url": "artigos/cloud/a-era-do-minio-acabou-um-olhar-sobre-o-futuro-do-armazenamento-s3-open-source.html",
+    "data": "2025-12-28T15:21:54.333Z",
+    "dataFonte": "2025-12-28T15:15:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/12/minio-s3-api-alternatives/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
