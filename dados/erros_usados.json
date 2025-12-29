@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "monitoramento": "monitramento"
-  },
-  {
     "tecnologia": "tecnnologia",
     "suporte": "suprte"
   },
@@ -89,5 +85,10 @@
     "muito": "muinto",
     "tecnologia": "tecnnologia",
     "problema": "probrema"
+  },
+  {
+    "acesso": "aceso",
+    "melhor": "melhorr",
+    "abordagem": "abordage"
   }
 ]
