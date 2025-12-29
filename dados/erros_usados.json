@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "muito": "muinto",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "exemplo": "exenplo",
     "simples": "simplis",
     "arquitetura": "arquitretura"
@@ -90,5 +85,9 @@
     "desenvolvimento": "desenvolmento",
     "funcionalidade": "funcionaliade",
     "prioridade": "prioriade"
+  },
+  {
+    "virtual": "virtual.",
+    "suporte": "suprte"
   }
 ]
