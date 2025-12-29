@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "armazenamento": "armasenamento"
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
   },
@@ -86,5 +82,10 @@
     "problema": "probrema",
     "resultado": "resultao",
     "processo": "proceso"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "dispositivo": "dispositivo.",
+    "funcionalidade": "funcionaliade"
   }
 ]
