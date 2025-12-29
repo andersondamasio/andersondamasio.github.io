@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "constante": "constate",
     "desafio": "desaío",
     "funciona": "funciona."
@@ -87,5 +83,10 @@
     "arquitetura": "arquiteturra",
     "dispositivo": "dispositivo.",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "recurso": "reccurso",
+    "prioridade": "prioriade.",
+    "simples": "cimples"
   }
 ]
