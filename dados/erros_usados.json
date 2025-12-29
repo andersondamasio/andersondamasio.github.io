@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "computador": "computadorr",
-    "exemplo": "exemplo,"
-  },
-  {
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
   },
@@ -88,5 +83,10 @@
     "correto": "correto.",
     "controle": "controle.",
     "abordagem": "abordajem"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquiteturra",
+    "sistema": "sistéma"
   }
 ]
