@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "suporte": "suprte",
     "tecnologia": "tecnolgia"
   },
@@ -88,5 +84,9 @@
   {
     "gerenciamento": "gerenciamnto",
     "monitoramento": "monitramento"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "suporte": "suprte"
   }
 ]
