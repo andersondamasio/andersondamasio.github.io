@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnnologia",
-    "processo": "prosseso"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "recurso": "reccurso",
     "controle": "contrle"
@@ -90,5 +85,9 @@
   {
     "desafio": "desafiu",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "componente": "componete"
   }
 ]
