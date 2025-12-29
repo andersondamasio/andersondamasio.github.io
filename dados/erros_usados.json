@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "componente": "componete"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "monitoramento": "monitramento"
   },
@@ -88,5 +84,10 @@
     "exemplo": "exemplo,",
     "conectado": "conectdo",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "muito": "muinto",
+    "tecnologia": "tecnnologia",
+    "problema": "probrema"
   }
 ]
