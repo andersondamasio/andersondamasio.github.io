@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "dispositivo": "disposotivo",
     "muito": "muinto",
     "arquitetura": "arquiteturra"
@@ -89,5 +85,10 @@
     "dispositivo": "dispositivo.",
     "sistema": "sistma",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "funcionalidade": "funcionaliade",
+    "prioridade": "prioriade"
   }
 ]
