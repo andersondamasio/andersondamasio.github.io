@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "prioridade": "prioriade.",
     "arquitetura": "arquitretura",
     "simples": "simlpes"
@@ -88,5 +84,9 @@
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra",
     "sistema": "sistéma"
+  },
+  {
+    "abordagem": "abordage",
+    "desenvolvimento": "desenvolmento"
   }
 ]
