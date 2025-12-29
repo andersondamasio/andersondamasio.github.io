@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "monitoramento": "monitorameto",
-    "arquitetura": "arquitretura"
-  },
-  {
     "simples": "simplis",
     "computador": "computadorr",
     "exemplo": "exemplo,"
@@ -88,5 +83,10 @@
   {
     "carregamento": "carregameno",
     "melhor": "melhorr"
+  },
+  {
+    "correto": "correto.",
+    "controle": "controle.",
+    "abordagem": "abordajem"
   }
 ]
