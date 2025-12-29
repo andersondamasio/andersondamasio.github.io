@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "tecnologia": "tecnoligia",
     "monitoramento": "monitorameto",
     "arquitetura": "arquitretura"
@@ -88,5 +84,9 @@
   {
     "tecnologia": "tecnnologia",
     "suporte": "suprte"
+  },
+  {
+    "carregamento": "carregameno",
+    "melhor": "melhorr"
   }
 ]
