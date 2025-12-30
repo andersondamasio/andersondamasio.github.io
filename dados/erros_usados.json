@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "melhor": "melhorr"
-  },
-  {
     "correto": "correto.",
     "controle": "controle.",
     "abordagem": "abordajem"
@@ -91,5 +87,10 @@
     "desenvolvimento": "desenvolvmento",
     "abordagem": "abordajem",
     "arquitetura": "arquitretura"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquitertura",
+    "sistema": "sistma"
   }
 ]
