@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "abordagem": "abordajem",
-    "arquitetura": "arquitretura"
-  },
-  {
     "monitoramento": "monitorameto",
     "arquitetura": "arquitertura",
     "sistema": "sistma"
@@ -93,5 +88,10 @@
     "problema": "poblema",
     "carregamento": "carregameno",
     "internet": "internert"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "sistema": "sistma",
+    "melhor": "melhorr"
   }
 ]
