@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "funcionalidade": "funcionaliade",
-    "prioridade": "prioriade"
-  },
-  {
     "virtual": "virtual.",
     "suporte": "suprte"
   },
@@ -92,5 +87,9 @@
     "estrutura": "estrura",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "resultado": "resutlado",
+    "simples": "simplis"
   }
 ]
