@@ -48116,5 +48116,14 @@
     "dataFonte": "2025-12-30T09:00:00.000Z",
     "categoria": "Cloud",
     "urlFonte": "https://www.zdnet.com/article/ai-kills-cloud-first-hybrid-computing-comeback/"
+  },
+  {
+    "titulo": "A Nova Fronteira da Segurança em AI: O Sandbox que Pode Salvar seu Cluster",
+    "noticiaOriginal": "Open-Source Agent Sandbox Enables Secure Deployment of AI Agents on Kubernetes",
+    "url": "artigos/seguranca/a-nova-fronteira-da-seguranca-em-ai-o-sandbox-que-pode-salvar-seu-cluster.html",
+    "data": "2025-12-30T11:21:45.405Z",
+    "dataFonte": "2025-12-30T11:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2025/12/agent-sandbox-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

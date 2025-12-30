@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "dispositivo": "dispositivo.",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "recurso": "reccurso",
     "prioridade": "prioriade.",
     "simples": "cimples"
@@ -92,5 +87,10 @@
   {
     "conhecimento": "conhescimento",
     "melhor": "melhorr"
+  },
+  {
+    "executado": "executado.",
+    "armazenamento": "armazanamento",
+    "operacional": "operacionl"
   }
 ]
