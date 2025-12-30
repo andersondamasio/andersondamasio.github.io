@@ -1,10 +1,5 @@
 [
   {
-    "processo": "processso",
-    "arquitetura": "arquiteturra",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "problema": "probrema",
     "resultado": "resultao",
     "processo": "proceso"
@@ -94,5 +89,9 @@
     "melhor": "melhorr",
     "processo": "processso",
     "necessidade": "necessidade."
+  },
+  {
+    "consistente": "consistente.",
+    "monitoramento": "monitramento"
   }
 ]
