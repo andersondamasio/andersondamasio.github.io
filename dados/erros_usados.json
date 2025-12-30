@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "suporte": "suprte"
-  },
-  {
     "carregamento": "carregameno",
     "melhor": "melhorr"
   },
@@ -90,5 +86,10 @@
     "acesso": "aceso",
     "melhor": "melhorr",
     "abordagem": "abordage"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "abordagem": "abordajem",
+    "arquitetura": "arquitretura"
   }
 ]
