@@ -1,10 +1,5 @@
 [
   {
-    "correto": "correto.",
-    "controle": "controle.",
-    "abordagem": "abordajem"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra",
     "sistema": "sistéma"
@@ -92,5 +87,10 @@
     "monitoramento": "monitorameto",
     "arquitetura": "arquitertura",
     "sistema": "sistma"
+  },
+  {
+    "desafio": "desafiu",
+    "necessidade": "necissidade",
+    "arquitetura": "arquiteturra"
   }
 ]
