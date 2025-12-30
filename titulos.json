@@ -48125,5 +48125,14 @@
     "dataFonte": "2025-12-30T11:00:00.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.infoq.com/news/2025/12/agent-sandbox-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Descomplicando a Orquestração de Workloads com Amazon EKS",
+    "noticiaOriginal": "AWS Announces New Amazon EKS Capabilities to Simplify Workload Orchestration",
+    "url": "artigos/cloud/descomplicando-a-orquestracao-de-workloads-com-amazon-eks.html",
+    "data": "2025-12-30T12:45:02.546Z",
+    "dataFonte": "2025-12-30T12:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/12/aws-eks-workload-orchestration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

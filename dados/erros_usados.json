@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "prioridade": "prioriade.",
-    "simples": "cimples"
-  },
-  {
     "melhor": "melhorr",
     "recurso": "recuro",
     "funcionalidade": "funcionalidade."
@@ -92,5 +87,10 @@
     "executado": "executado.",
     "armazenamento": "armazanamento",
     "operacional": "operacionl"
+  },
+  {
+    "complexidade": "complezidade",
+    "componente": "componete",
+    "necessidade": "necessidade."
   }
 ]
