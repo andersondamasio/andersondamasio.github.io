@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "arquitetura": "arquitertura"
-  },
-  {
     "operacional": "operacional.",
     "tecnologia": "tecnoligia"
   },
@@ -92,5 +88,10 @@
   {
     "constante": "constanate",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "controle": "controle.",
+    "tecnologia": "tecnoligia",
+    "monitoramento": "monitorameto"
   }
 ]
