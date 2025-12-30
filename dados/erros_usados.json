@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "sistema": "sistma",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "funcionalidade": "funcionaliade",
     "prioridade": "prioriade"
@@ -92,5 +87,10 @@
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra",
     "constante": "constante."
+  },
+  {
+    "estrutura": "estrura",
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitretura"
   }
 ]
