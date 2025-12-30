@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquiteturra",
-    "sistema": "sistéma"
-  },
-  {
     "abordagem": "abordage",
     "desenvolvimento": "desenvolmento"
   },
@@ -92,5 +87,10 @@
     "desafio": "desafiu",
     "necessidade": "necissidade",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "desafio": "desaío",
+    "tecnologia": "tecnoligia",
+    "prioridade": "prioriade."
   }
 ]
