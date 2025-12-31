@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "funcionalidade": "funcionaliadde",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "desenvolvimento": "desenvolvimente",
     "suporte": "suporte."
@@ -90,5 +85,10 @@
     "rotina": "rotína",
     "internet": "internert",
     "dispositivo": "disposotivo"
+  },
+  {
+    "constante": "constante.",
+    "simples": "simlpes",
+    "exemplo": "exemplo,"
   }
 ]
