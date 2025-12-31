@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtual.",
-    "dispositivo": "disposotivo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "suporte": "suportte",
     "funcionalidade": "funcionaliadde",
     "tecnologia": "tecnnologia"
@@ -90,5 +85,10 @@
     "acesso": "aceso",
     "muito": "muto",
     "melhor": "melhorr"
+  },
+  {
+    "rotina": "rotína",
+    "internet": "internert",
+    "dispositivo": "disposotivo"
   }
 ]
