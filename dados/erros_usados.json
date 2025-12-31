@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muto",
-    "sistema": "cistema"
-  },
-  {
     "tecnologia": "tecnnologia",
     "funcionalidade": "funcionaliadde"
   },
@@ -88,5 +84,10 @@
     "estrutura": "estrura",
     "consistente": "consiteente",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "problema": "probrema",
+    "arquitetura": "arquitertura",
+    "sistema": "sistéma"
   }
 ]
