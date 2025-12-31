@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "desenvolvimento": "desenvolvimente",
-    "suporte": "suporte."
-  },
-  {
     "problema": "poblema",
     "carregamento": "carregameno",
     "internet": "internert"
@@ -90,5 +85,9 @@
     "constante": "constante.",
     "simples": "simlpes",
     "exemplo": "exemplo,"
+  },
+  {
+    "virtual": "virtual.",
+    "muito": "muiito"
   }
 ]
