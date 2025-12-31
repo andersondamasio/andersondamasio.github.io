@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "suporte": "suportte"
   },
   {
@@ -89,5 +85,9 @@
     "problema": "probrema",
     "arquitetura": "arquitertura",
     "sistema": "sistéma"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "constante": "constanate"
   }
 ]
