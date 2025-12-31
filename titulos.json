@@ -48305,5 +48305,14 @@
     "dataFonte": "2025-12-31T09:00:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.infoq.com/news/2025/12/rescript-12-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Kubernetes 1.35: A Revolução na Escalabilidade e na Agilidade dos Pods",
+    "noticiaOriginal": "Kubernetes 1.35 Released with In-Place Pod Resize and AI-Optimized Scheduling",
+    "url": "artigos/cloud/kubernetes-1-35-a-revolucao-na-escalabilidade-e-na-agilidade-dos-pods.html",
+    "data": "2025-12-31T10:25:33.127Z",
+    "dataFonte": "2025-12-31T10:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2025/12/kubernetes-1-35/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
