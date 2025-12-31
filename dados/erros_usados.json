@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrura",
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "resultado": "resutlado",
     "simples": "simplis"
   },
@@ -91,5 +86,9 @@
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente",
     "controle": "controle."
+  },
+  {
+    "armazenamento": "armazanamento",
+    "exemplo": "exemplo,"
   }
 ]
