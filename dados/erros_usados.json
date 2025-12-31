@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "controle": "controle.",
     "tecnologia": "tecnoligia",
     "monitoramento": "monitorameto"
@@ -89,5 +85,10 @@
   },
   {
     "suporte": "suportte"
+  },
+  {
+    "acesso": "acesço",
+    "tecnologia": "tecnolgia",
+    "controle": "controlle"
   }
 ]
