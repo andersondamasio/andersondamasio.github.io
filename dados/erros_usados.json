@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvimente",
-    "controle": "controle."
-  },
-  {
     "armazenamento": "armazanamento",
     "exemplo": "exemplo,"
   },
@@ -88,5 +83,9 @@
   {
     "exemplo": "exemplo,",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "resultado": "resultao",
+    "tecnologia": "tecnoligia"
   }
 ]
