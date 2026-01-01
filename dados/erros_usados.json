@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotína",
-    "internet": "internert",
-    "dispositivo": "disposotivo"
-  },
-  {
     "constante": "constante.",
     "simples": "simlpes",
     "exemplo": "exemplo,"
@@ -88,5 +83,10 @@
   {
     "monitoramento": "monitoramento.",
     "necessidade": "necessidade."
+  },
+  {
+    "controle": "controle.",
+    "sistema": "sistma",
+    "simples": "simplis"
   }
 ]
