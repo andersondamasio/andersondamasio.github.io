@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "simples": "simlpes",
-    "exemplo": "exemplo,"
-  },
-  {
     "virtual": "virtual.",
     "muito": "muiito"
   },
@@ -88,5 +83,10 @@
     "controle": "controle.",
     "sistema": "sistma",
     "simples": "simplis"
+  },
+  {
+    "propriedade": "propriedade.",
+    "tecnologia": "tecnoligia",
+    "funciona": "funciona,"
   }
 ]
