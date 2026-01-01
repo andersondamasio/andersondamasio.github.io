@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "controle": "controlle"
-  },
-  {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvmento",
     "funciona": "funsiona"
@@ -89,5 +85,10 @@
     "internet": "internat",
     "exemplo": "exenplo",
     "muito": "muinto"
+  },
+  {
+    "constante": "constate",
+    "melhor": "melhorr",
+    "exemplo": "exemplo."
   }
 ]
