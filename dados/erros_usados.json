@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "necessidade": "necessidade.",
-    "muito": "muto"
-  },
-  {
     "processo": "processso",
     "recurso": "reccurso",
     "necessidade": "nescessidade"
@@ -90,5 +85,9 @@
   {
     "suporte": "suportte",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "recurso": "recuro",
+    "dispositivo": "dispositivo."
   }
 ]
