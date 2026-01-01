@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "desafio": "desaío",
-    "complexidade": "complexsidade"
-  },
-  {
     "mensagem": "menssagem",
     "tecnologia": "tecnnologia",
     "necessidade": "nescessidade"
@@ -90,5 +85,10 @@
   {
     "funciona": "funciona.",
     "controle": "controlle"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvmento",
+    "funciona": "funsiona"
   }
 ]
