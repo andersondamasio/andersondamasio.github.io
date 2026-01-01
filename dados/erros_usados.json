@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "desafio": "desafío"
-  },
-  {
     "simples": "simplis",
     "processo": "proceso"
   },
@@ -87,5 +83,10 @@
   {
     "gerenciamento": "gerenciamente",
     "melhor": "melor"
+  },
+  {
+    "sistema": "sistéma",
+    "exemplo": "exenplo",
+    "funcionalidade": "funcionaliade"
   }
 ]
