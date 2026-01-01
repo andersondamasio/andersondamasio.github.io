@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "arquitetura": "arquiteturra",
-    "conhecimento": "conhecimeto"
-  },
-  {
     "monitoramento": "monitoramento.",
     "abordagem": "abordagem."
   },
@@ -90,5 +85,10 @@
     "funcionalidade": "funcionalidade.",
     "utilizado": "utilizdo",
     "muito": "muiito"
+  },
+  {
+    "paralelo": "paralélo",
+    "componente": "componete",
+    "processo": "processso"
   }
 ]
