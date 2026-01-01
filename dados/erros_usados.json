@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "processo": "proceso"
-  },
-  {
     "acesso": "aceso",
     "muito": "muto",
     "melhor": "melhorr"
@@ -88,5 +84,10 @@
     "sistema": "sistéma",
     "exemplo": "exenplo",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "complexidade": "complexsidade",
+    "desafio": "desafiu",
+    "exemplo": "exemplo."
   }
 ]
