@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "constante": "constanate"
-  },
-  {
     "abordagem": "abordajem",
     "necessidade": "nescessidade",
     "acesso": "acesso."
@@ -89,5 +85,9 @@
     "componente": "componete",
     "desenvolvimento": "desenvolvmento",
     "acesso": "acesso."
+  },
+  {
+    "problema": "probrema",
+    "executado": "executado."
   }
 ]

@@ -48593,5 +48593,14 @@
     "dataFonte": "2026-01-01T09:52:20.000Z",
     "categoria": "Blockchain",
     "urlFonte": "https://www.bbc.com/news/articles/ckgl2je65klo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "Aceleração na Compilação: Como o Google Está Revolucionando o Android",
+    "noticiaOriginal": "Google Boosts  ART Compile Times by 18% Without Compromising Code Quality",
+    "url": "artigos/desenvolvimento-de-software/aceleracao-na-compilacao-como-o-google-esta-revolucionando-o-android.html",
+    "data": "2026-01-01T20:25:52.686Z",
+    "dataFonte": "2025-12-30T23:45:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://www.infoq.com/news/2025/12/android-art-jit-aot-improvement/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
