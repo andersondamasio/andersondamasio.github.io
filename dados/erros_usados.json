@@ -1,10 +1,5 @@
 [
   {
-    "paralelo": "paralélo",
-    "componente": "componete",
-    "processo": "processso"
-  },
-  {
     "suporte": "suportte",
     "tecnologia": "tecnnologia"
   },
@@ -90,5 +85,9 @@
     "carregamento": "carregamento.",
     "dispositivo": "dispositivo.",
     "exemplo": "exenplo"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnolgia"
   }
 ]
