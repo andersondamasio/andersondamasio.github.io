@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "exemplo": "exenplo",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "complexidade": "complexsidade",
     "desafio": "desafiu",
     "exemplo": "exemplo."
@@ -91,5 +86,8 @@
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura",
     "necessidade": "necissidade"
+  },
+  {
+    "processo": "prosseso"
   }
 ]

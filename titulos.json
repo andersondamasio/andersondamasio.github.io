@@ -48692,5 +48692,14 @@
     "dataFonte": "2026-01-02T00:53:13.000Z",
     "categoria": "Carreira",
     "urlFonte": "https://www.bbc.com/news/articles/clyd1lpp1lyo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "Como a Observabilidade Pode Transformar Fluxos de Trabalho em Mídia",
+    "noticiaOriginal": "Presentation: From Confusion to Clarity: Advanced Observability Strategies for Media Workflows at Netflix",
+    "url": "artigos/desenvolvimento-de-software/como-a-observabilidade-pode-transformar-fluxos-de-trabalho-em-midia.html",
+    "data": "2026-01-02T09:27:22.732Z",
+    "dataFonte": "2026-01-02T09:02:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://www.infoq.com/presentations/stream-pipeline-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
