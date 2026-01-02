@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "dispositivo": "dispositivo.",
-    "exemplo": "exenplo"
-  },
-  {
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnolgia"
   },
@@ -90,5 +85,10 @@
     "abordagem": "abordage",
     "monitoramento": "monitorameto",
     "arquitetura": "arquitertura"
+  },
+  {
+    "conectado": "conectdo",
+    "computador": "computador,",
+    "internet": "internat"
   }
 ]
