@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "componente": "componete",
     "desenvolvimento": "desenvolvmento",
     "acesso": "acesso."
@@ -89,5 +85,9 @@
     "resultado": "resultadoo",
     "sistema": "sistéma",
     "simples": "simplis"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "tecnologia": "tecnnologia"
   }
 ]
