@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "muito": "muinto",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "virtual": "virtuaal",
     "tecnologia": "tecnoligia",
     "melhor": "melhorr"
@@ -89,5 +84,10 @@
     "simples": "simplis",
     "utilizado": "utilizado.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "muito": "muinto",
+    "dispositivo": "disposotivo"
   }
 ]
