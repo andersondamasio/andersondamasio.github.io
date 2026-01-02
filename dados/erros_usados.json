@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "desafio": "desafiu",
-    "exemplo": "exemplo."
-  },
-  {
     "monitoramento": "monitoramento.",
     "necessidade": "necessidade."
   },
@@ -89,5 +84,10 @@
   },
   {
     "processo": "prosseso"
+  },
+  {
+    "suporte": "suporte.",
+    "estrutura": "estrututra",
+    "armazenamento": "armazenamentto"
   }
 ]

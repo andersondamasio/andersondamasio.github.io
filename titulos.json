@@ -48701,5 +48701,14 @@
     "dataFonte": "2026-01-02T09:02:00.000Z",
     "categoria": "Desenvolvimento de Software",
     "urlFonte": "https://www.infoq.com/presentations/stream-pipeline-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A revolução do armazenamento: S3 Vectors e o futuro da busca vetorial",
+    "noticiaOriginal": "Amazon S3 Vectors Reaches GA, Introducing \"Storage-First\" Architecture for RAG",
+    "url": "artigos/cloud/a-revolucao-do-armazenamento-s3-vectors-e-o-futuro-da-busca-vetorial.html",
+    "data": "2026-01-02T10:24:15.631Z",
+    "dataFonte": "2026-01-02T10:17:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/01/aws-s3-vectors-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
