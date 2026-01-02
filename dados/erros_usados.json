@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componete",
-    "desenvolvimento": "desenvolvmento",
-    "acesso": "acesso."
-  },
-  {
     "problema": "probrema",
     "executado": "executado."
   },
@@ -89,5 +84,10 @@
   {
     "monitoramento": "monitoramento.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "controle": "controlle",
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquitretura"
   }
 ]
