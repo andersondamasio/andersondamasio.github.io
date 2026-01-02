@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "exemplo": "exenplo",
-    "muito": "muinto"
-  },
-  {
     "constante": "constate",
     "melhor": "melhorr",
     "exemplo": "exemplo."
@@ -90,5 +85,10 @@
     "problema": "poblema",
     "simples": "cimples",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "funciona": "funciona,",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]
