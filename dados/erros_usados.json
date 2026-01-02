@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "utilizado": "utilizdo",
-    "muito": "muiito"
-  },
-  {
     "paralelo": "paralélo",
     "componente": "componete",
     "processo": "processso"
@@ -90,5 +85,10 @@
     "abordagem": "abordagem.",
     "desenvolvimento": "desenvolvmento",
     "complexidade": "complezidade"
+  },
+  {
+    "carregamento": "carregamento.",
+    "dispositivo": "dispositivo.",
+    "exemplo": "exenplo"
   }
 ]
