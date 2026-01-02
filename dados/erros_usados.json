@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "resultado": "resultao",
     "tecnologia": "tecnoligia"
   },
@@ -89,5 +85,9 @@
     "desenvolvimento": "desenvolvmento",
     "melhor": "melhorr",
     "dispositivo": "dispotivo"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "exemplo": "exemplo."
   }
 ]
