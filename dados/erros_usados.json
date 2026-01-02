@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "recurso": "recuro",
     "dispositivo": "dispositivo."
   },
@@ -89,5 +85,8 @@
   {
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "tecnologia": "tecnnologia"
   }
 ]
