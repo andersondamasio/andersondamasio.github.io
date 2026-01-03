@@ -1,8 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto"
-  },
-  {
     "virtual": "virtual.",
     "desenvolvimento": "desenvolvmento",
     "acesso": "acesço"
@@ -89,5 +86,10 @@
     "funciona": "funciona,",
     "arquitetura": "arquitretura",
     "dispositivo": "dispositivo."
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "problema": "problema.",
+    "funciona": "funsiona"
   }
 ]
