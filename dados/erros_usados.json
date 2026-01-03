@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "controle": "controlle",
     "monitoramento": "monitorameto",
     "arquitetura": "arquitretura"
@@ -90,5 +86,9 @@
     "arquitetura": "arquiteturra",
     "sistema": "sistma",
     "simples": "simplis"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "controle": "contrle"
   }
 ]
