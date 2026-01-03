@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "rotina": "rotna"
-  },
-  {
     "desafio": "desafío",
     "arquitetura": "arquitretura",
     "muito": "muto"
@@ -90,5 +86,10 @@
   {
     "operacional": "operaciona",
     "dispositivo": "dispotivo"
+  },
+  {
+    "estrutura": "estrututra",
+    "mensagem": "menssagem",
+    "necessidade": "necissidade"
   }
 ]
