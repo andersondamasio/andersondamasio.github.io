@@ -48872,5 +48872,14 @@
     "dataFonte": "2026-01-02T22:14:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/ces-2026-live-updates/"
+  },
+  {
+    "titulo": "Desbravando o Futuro: O Impacto do Graviton5 na Arquitetura de Software",
+    "noticiaOriginal": "AWS Introduces Fifth-Generation Graviton Processor with M9g Instances",
+    "url": "artigos/cloud/desbravando-o-futuro-o-impacto-do-graviton5-na-arquitetura-de-software.html",
+    "data": "2026-01-03T07:22:09.629Z",
+    "dataFonte": "2026-01-03T06:38:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/01/aws-graviton-m9g/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

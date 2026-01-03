@@ -1,8 +1,5 @@
 [
   {
-    "processo": "prosseso"
-  },
-  {
     "suporte": "suporte.",
     "estrutura": "estrututra",
     "armazenamento": "armazenamentto"
@@ -90,5 +87,9 @@
     "dispositivo": "dispotivo",
     "tecnologia": "tecnnologia",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitertura"
   }
 ]
