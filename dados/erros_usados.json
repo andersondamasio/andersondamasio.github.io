@@ -1,10 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "simples": "cimples",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funciona": "funciona,",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
@@ -89,5 +84,10 @@
   {
     "necessidade": "necessidade.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "processo": "prosseso",
+    "tecnologia": "tecnoligia",
+    "desafio": "desafiu"
   }
 ]
