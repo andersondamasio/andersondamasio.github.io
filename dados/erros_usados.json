@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura",
-    "necessidade": "necissidade"
-  },
-  {
     "processo": "prosseso"
   },
   {
@@ -90,5 +85,10 @@
   {
     "arquitetura": "arquitertura",
     "melhor": "melor"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "tecnologia": "tecnnologia",
+    "funcionalidade": "funcionaliadde"
   }
 ]
