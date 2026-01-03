@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "dispositivo": "dispotivo"
-  },
-  {
     "sistema": "cistema",
     "exemplo": "exemplo.",
     "melhor": "melor"
@@ -89,5 +85,9 @@
     "acesso": "acesso.",
     "prioridade": "prioriade",
     "conhecimento": "conhescimento"
+  },
+  {
+    "conectado": "conectado.",
+    "muito": "muto"
   }
 ]
