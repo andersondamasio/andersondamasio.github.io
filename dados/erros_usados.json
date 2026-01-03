@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectdo",
-    "computador": "computador,",
-    "internet": "internat"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "dispositivo": "dispotivo"
   },
@@ -89,5 +84,10 @@
     "suporte": "suporte.",
     "controle": "contrle",
     "exemplo": "exenplo"
+  },
+  {
+    "acesso": "acesso.",
+    "prioridade": "prioriade",
+    "conhecimento": "conhescimento"
   }
 ]
