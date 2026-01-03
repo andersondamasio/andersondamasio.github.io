@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "monitoramento": "monitorameto",
-    "arquitetura": "arquitretura"
-  },
-  {
     "problema": "poblema",
     "simples": "cimples",
     "tecnologia": "tecnoligia"
@@ -90,5 +85,9 @@
   {
     "tecnologia": "tecnolgia",
     "controle": "contrle"
+  },
+  {
+    "necessidade": "necessidade.",
+    "tecnologia": "tecnnologia"
   }
 ]
