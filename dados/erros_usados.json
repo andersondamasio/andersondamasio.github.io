@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona,",
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "tecnologia": "tecnnologia",
     "armazenamento": "armazanamento",
     "muito": "muto"
@@ -89,5 +84,10 @@
     "processo": "prosseso",
     "tecnologia": "tecnoligia",
     "desafio": "desafiu"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnnologia"
   }
 ]
