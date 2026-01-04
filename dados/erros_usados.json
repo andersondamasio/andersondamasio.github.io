@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "operacional": "operaciona",
     "dispositivo": "dispotivo"
   },
@@ -90,5 +86,10 @@
   {
     "exemplo": "exemplo.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "carregamento": "carregameno",
+    "exemplo": "exemplo,",
+    "dispositivo": "dispotivo"
   }
 ]
