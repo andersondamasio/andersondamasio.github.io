@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "constante": "constate",
     "abordagem": "abordagem.",
     "arquitetura": "arquitretura"
@@ -89,5 +84,9 @@
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo.",
     "funciona": "funsiona"
+  },
+  {
+    "necessidade": "necessidade.",
+    "arquitetura": "arquitertura"
   }
 ]
