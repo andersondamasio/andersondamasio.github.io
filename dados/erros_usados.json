@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "processo": "prosseso",
     "tecnologia": "tecnoligia",
     "desafio": "desafiu"
@@ -88,5 +84,10 @@
     "componente": "componentte",
     "sistema": "sistma",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "acesso": "aceso",
+    "melhor": "melhorr"
   }
 ]

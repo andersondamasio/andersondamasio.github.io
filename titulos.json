@@ -49124,5 +49124,14 @@
     "dataFonte": "2026-01-04T12:00:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://techcrunch.com/2026/01/04/subtle-releases-ear-buds-with-its-noise-cancelation-models/"
+  },
+  {
+    "titulo": "A revolução dos dados: como o DuckDB traz o Iceberg para o navegador",
+    "noticiaOriginal": "DuckDB's WebAssembly Client Allows Querying Iceberg Datasets in the Browser",
+    "url": "artigos/banco-de-dados/a-revolucao-dos-dados-como-o-duckdb-traz-o-iceberg-para-o-navegador.html",
+    "data": "2026-01-04T13:34:25.736Z",
+    "dataFonte": "2026-01-04T13:00:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/01/duckdb-iceberg-browser-s3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
