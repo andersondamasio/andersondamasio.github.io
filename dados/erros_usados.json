@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "controle": "contrle",
-    "exemplo": "exenplo"
-  },
-  {
     "acesso": "acesso.",
     "prioridade": "prioriade",
     "conhecimento": "conhescimento"
@@ -88,5 +83,9 @@
     "exemplo": "exemplo.",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnolgia"
   }
 ]
