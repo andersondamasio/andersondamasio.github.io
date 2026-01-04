@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "tecnologia": "tecnnologia",
-    "melhor": "melor"
-  },
-  {
     "prioridade": "prioridade.",
     "desafio": "desafiu"
   },
@@ -90,5 +85,9 @@
   {
     "armazenamento": "armazenamentto",
     "sistema": "sistéma"
+  },
+  {
+    "sistema": "sistma",
+    "tecnologia": "tecnoligia"
   }
 ]
