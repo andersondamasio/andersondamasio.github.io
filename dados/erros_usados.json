@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "muito": "muto"
-  },
-  {
     "funciona": "funciona,",
     "arquitetura": "arquitretura",
     "dispositivo": "dispositivo."
@@ -87,5 +83,9 @@
     "parceria": "parceria.",
     "controle": "controlle",
     "arquitetura": "arquitertura"
+  },
+  {
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnolgia"
   }
 ]
