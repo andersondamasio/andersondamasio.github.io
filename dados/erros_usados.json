@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "prioridade": "prioriade",
-    "conhecimento": "conhescimento"
-  },
-  {
     "conectado": "conectado.",
     "muito": "muto"
   },
@@ -87,5 +82,10 @@
   {
     "dispositivo": "disposotivo",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "parceria": "parceria.",
+    "controle": "controlle",
+    "arquitetura": "arquitertura"
   }
 ]
