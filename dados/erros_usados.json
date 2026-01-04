@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "dispositivo": "dispotivo"
-  },
-  {
     "estrutura": "estrututra",
     "mensagem": "menssagem",
     "necessidade": "necissidade"
@@ -91,5 +87,9 @@
     "carregamento": "carregameno",
     "exemplo": "exemplo,",
     "dispositivo": "dispotivo"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "sistema": "sistma"
   }
 ]
