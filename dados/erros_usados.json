@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "controle": "contrle"
-  },
-  {
     "necessidade": "necessidade.",
     "tecnologia": "tecnnologia"
   },
@@ -87,5 +83,10 @@
   {
     "muito": "muto",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "componente": "componentte",
+    "sistema": "sistma",
+    "tecnologia": "tecnnologia"
   }
 ]
