@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "exemplo": "exemplo,",
-    "dispositivo": "dispotivo"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "sistema": "sistma"
   },
@@ -86,5 +81,9 @@
     "computador": "computador.",
     "simples": "cimples",
     "problema": "problema."
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "exemplo": "exenplo"
   }
 ]
