@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "carregamento": "carregameno",
     "exemplo": "exemplo,",
     "dispositivo": "dispotivo"
@@ -85,5 +81,10 @@
     "constante": "constanate",
     "abordagem": "abordage",
     "arquitetura": "arquitretura"
+  },
+  {
+    "computador": "computador.",
+    "simples": "cimples",
+    "problema": "problema."
   }
 ]
