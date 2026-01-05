@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "sistema": "sistéma",
     "dispositivo": "dispotivo"
   },
@@ -87,5 +83,9 @@
     "operacional": "operacionl",
     "exemplo": "exemplo,",
     "necessidade": "necessidade."
+  },
+  {
+    "controle": "controle.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
