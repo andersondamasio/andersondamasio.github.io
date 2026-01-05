@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "dispositivo": "disposotivo",
     "tecnologia": "tecnolgia"
   },
@@ -87,5 +82,9 @@
   },
   {
     "tecnologia": "tecnolgia"
+  },
+  {
+    "complexidade": "complexidade.",
+    "problema": "problema."
   }
 ]
