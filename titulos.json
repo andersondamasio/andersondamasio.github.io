@@ -49340,5 +49340,14 @@
     "dataFonte": "2026-01-05T14:20:00.000Z",
     "categoria": "Cloud",
     "urlFonte": "https://www.infoq.com/presentations/solving-cloud-infrastructure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "O futuro da concorrência em Java: uma nova era com JEP 525",
+    "noticiaOriginal": "JEP 525 Brings Timeout Handling and Joiner Refinements to Java’s Structured Concurrency",
+    "url": "artigos/programacao/o-futuro-da-concorrencia-em-java-uma-nova-era-com-jep-525.html",
+    "data": "2026-01-05T15:27:06.748Z",
+    "dataFonte": "2026-01-05T15:10:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2026/01/timeout-joiner-refinements/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

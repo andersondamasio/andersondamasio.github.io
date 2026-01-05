@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "parceria": "parceria.",
     "controle": "controlle",
     "arquitetura": "arquitertura"
@@ -86,5 +82,10 @@
   {
     "complexidade": "complexidade.",
     "problema": "problema."
+  },
+  {
+    "virtual": "virtal",
+    "exemplo": "exenplo",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
