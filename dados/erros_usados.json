@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "sistema": "sistéma"
-  },
-  {
     "sistema": "sistma",
     "tecnologia": "tecnoligia"
   },
@@ -86,5 +82,9 @@
     "sistema": "sistéma",
     "melhor": "melhorr",
     "funciona": "funsiona"
+  },
+  {
+    "mensagem": "menssagen",
+    "tecnologia": "tecnoligia"
   }
 ]
