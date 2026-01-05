@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "exemplo": "exemplo.",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnoligia"
@@ -88,5 +84,8 @@
     "necessidade": "necessidade.",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "tecnologia": "tecnolgia"
   }
 ]
