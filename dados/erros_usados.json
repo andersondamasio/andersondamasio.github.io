@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "melhor": "melor"
   },
   {
@@ -86,5 +82,10 @@
   {
     "mensagem": "menssagen",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "conectado": "conectado.",
+    "funcionalidade": "funcionaliadde",
+    "dispositivo": "dispositivo."
   }
 ]
