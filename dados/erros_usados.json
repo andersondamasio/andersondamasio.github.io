@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "controle": "controlle",
-    "arquitetura": "arquitertura"
-  },
-  {
     "exemplo": "exemplo.",
     "tecnologia": "tecnolgia"
   },
@@ -87,5 +82,10 @@
     "virtual": "virtal",
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "operacional": "operacionl",
+    "exemplo": "exemplo,",
+    "necessidade": "necessidade."
   }
 ]
