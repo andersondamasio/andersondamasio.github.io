@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muinto",
-    "dispositivo": "dispotivo"
-  },
-  {
     "necessidade": "necessidade.",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnoligia"
@@ -89,5 +85,9 @@
     "constante": "constate",
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "complexidade": "complexidade."
   }
 ]
