@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "melhor": "melhorr",
-    "exemplo": "exemplo."
-  },
-  {
     "tecnologia": "tecnoligia",
     "problema": "problema."
   },
@@ -89,5 +84,10 @@
     "necessidade": "nescessidade",
     "gerenciamento": "gerenciamnto",
     "abordagem": "abordajem"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "exemplo": "exemplo,",
+    "funciona": "funciona,"
   }
 ]
