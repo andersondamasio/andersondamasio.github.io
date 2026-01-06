@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "gerenciamento": "gerenciamneto"
-  },
-  {
     "muito": "muinto",
     "dispositivo": "dispotivo"
   },
@@ -88,5 +84,10 @@
   {
     "abordagem": "abordajem",
     "recurso": "recusso"
+  },
+  {
+    "constante": "constate",
+    "exemplo": "exenplo",
+    "desenvolvimento": "desenvolmento"
   }
 ]
