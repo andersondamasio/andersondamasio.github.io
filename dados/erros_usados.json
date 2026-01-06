@@ -1,10 +1,5 @@
 [
   {
-    "paralelo": "paraleloo",
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "funciona": "funciona.",
     "exemplo": "exemplo."
   },
@@ -90,5 +85,10 @@
   {
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "sistema": "sistéma",
+    "arquitetura": "arquitertura"
   }
 ]
