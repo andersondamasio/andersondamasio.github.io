@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "prioridade": "prioriade",
-    "suporte": "suporte."
-  },
-  {
     "dispositivo": "dispositivo.",
     "arquitetura": "arquiteturra"
   },
@@ -90,5 +85,10 @@
     "internet": "internete",
     "tecnologia": "tecnoligia",
     "muito": "muinto"
+  },
+  {
+    "sistema": "cistema",
+    "controle": "contrle",
+    "simples": "cimples"
   }
 ]
