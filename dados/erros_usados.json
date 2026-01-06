@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "problema": "problema."
-  },
-  {
     "virtual": "virtal",
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolvmento"
@@ -89,5 +85,9 @@
   {
     "monitoramento": "monitoramento.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "armazenamento": "armazenamentto"
   }
 ]
