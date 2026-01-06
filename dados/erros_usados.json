@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "funcionalidade": "funcionaliadde",
-    "dispositivo": "dispositivo."
-  },
-  {
     "recurso": "recuro",
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolmento"
@@ -90,5 +85,9 @@
     "paralelo": "paraleloo",
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "funciona": "funciona.",
+    "exemplo": "exemplo."
   }
 ]
