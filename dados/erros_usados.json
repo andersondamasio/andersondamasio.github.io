@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "menssagen",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "conectado": "conectado.",
     "funcionalidade": "funcionaliadde",
     "dispositivo": "dispositivo."
@@ -89,5 +85,10 @@
   {
     "dispositivo": "dispositivo.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "paralelo": "paraleloo",
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
