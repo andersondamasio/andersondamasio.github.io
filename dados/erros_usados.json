@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "paralelo": "paraleloo",
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvmento"
@@ -90,5 +86,9 @@
     "sistema": "cistema",
     "controle": "contrle",
     "simples": "cimples"
+  },
+  {
+    "exemplo": "exenplo",
+    "tecnologia": "tecnoligia"
   }
 ]
