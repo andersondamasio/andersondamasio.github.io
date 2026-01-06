@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "tecnologia": "tecnolgia"
   },
   {
@@ -89,5 +84,9 @@
   {
     "arquitetura": "arquitretura",
     "complexidade": "complexidade."
+  },
+  {
+    "estrutura": "estrura",
+    "arquitetura": "arquiteturra"
   }
 ]
