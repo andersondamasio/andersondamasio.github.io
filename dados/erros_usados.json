@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "melhor": "melhorr",
-    "funciona": "funsiona"
-  },
-  {
     "mensagem": "menssagen",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +85,9 @@
     "processo": "proceso",
     "prioridade": "prioriade",
     "suporte": "suporte."
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "arquitetura": "arquiteturra"
   }
 ]
