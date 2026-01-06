@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia"
-  },
-  {
     "complexidade": "complexidade.",
     "problema": "problema."
   },
@@ -88,5 +85,9 @@
   {
     "estrutura": "estrura",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "tecnologia": "tecnoligia"
   }
 ]
