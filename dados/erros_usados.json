@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "suporte": "suporte."
-  },
-  {
     "virtual": "virtuaal",
     "tecnologia": "tecnolgia",
     "muito": "muinto"
@@ -92,5 +88,10 @@
   {
     "computador": "computador.",
     "acesso": "acesso."
+  },
+  {
+    "estrutura": "estrututra",
+    "dispositivo": "dispositivo.",
+    "desenvolvimento": "desenvolmento"
   }
 ]
