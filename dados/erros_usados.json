@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "sistema": "sistma",
-    "simples": "simplis"
-  },
-  {
     "rotina": "rotna",
     "arquitetura": "arquitretura"
   },
@@ -89,5 +84,9 @@
   {
     "acesso": "acesço",
     "exemplo": "exemplo,"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "problema": "poblema"
   }
 ]
