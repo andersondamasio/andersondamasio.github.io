@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrura",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "monitoramento": "monitoramento.",
     "tecnologia": "tecnoligia"
   },
@@ -91,5 +87,9 @@
     "recurso": "reccurso",
     "muito": "muinto",
     "dispositivo": "dispotivo"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
