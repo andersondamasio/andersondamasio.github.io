@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "sistema": "sistéma",
-    "arquitetura": "arquitertura"
-  },
-  {
     "dispositivo": "dispotivo",
     "sistema": "sistma",
     "simples": "simplis"
@@ -90,5 +85,9 @@
   },
   {
     "arquitetura": "arquitertura"
+  },
+  {
+    "acesso": "acesço",
+    "exemplo": "exemplo,"
   }
 ]
