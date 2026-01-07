@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "tecnologia": "tecnolgia",
-    "muito": "muinto"
-  },
-  {
     "desafio": "desafío",
     "acesso": "aceso",
     "simples": "simlpes"
@@ -93,5 +88,10 @@
     "estrutura": "estrututra",
     "dispositivo": "dispositivo.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnoligia",
+    "necessidade": "necessidade."
   }
 ]
