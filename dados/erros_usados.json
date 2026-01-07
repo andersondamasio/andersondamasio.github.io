@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "tecnologia": "tecnoligia",
-    "muito": "muinto"
-  },
-  {
     "sistema": "cistema",
     "controle": "contrle",
     "simples": "cimples"
@@ -92,5 +87,10 @@
   {
     "problema": "poblema",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "carregamento": "carregamento.",
+    "rotina": "rotna",
+    "funcionalidade": "funcionalidade."
   }
 ]
