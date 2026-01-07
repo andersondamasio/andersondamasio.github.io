@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "armazenamento": "armazenamentto"
   },
@@ -91,5 +87,10 @@
   {
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "acesso": "aceso",
+    "dispositivo": "disposotivo"
   }
 ]
