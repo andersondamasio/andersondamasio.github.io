@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "tecnologia": "tecnolgia",
-    "muito": "muto"
-  },
-  {
     "recurso": "reccurso",
     "controle": "contrle",
     "exemplo": "exemplo."
@@ -91,5 +86,9 @@
     "dispositivo": "dispotivo",
     "sistema": "sistma",
     "simples": "simplis"
+  },
+  {
+    "rotina": "rotna",
+    "arquitetura": "arquitretura"
   }
 ]
