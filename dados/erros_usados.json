@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "conhecimento": "conhecimento.",
     "sistema": "sistéma",
     "arquitetura": "arquitertura"
@@ -91,5 +87,8 @@
   {
     "monitoramento": "monitorameto",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "arquitetura": "arquitertura"
   }
 ]
