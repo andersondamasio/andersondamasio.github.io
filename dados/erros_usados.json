@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliadde",
-    "exemplo": "exemplo,",
-    "funciona": "funciona,"
-  },
-  {
     "parceria": "parceriaa",
     "conhecimento": "conhescimento",
     "processo": "proceso"
@@ -93,5 +88,10 @@
     "acesso": "aceso",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desafio": "desafío",
+    "abordagem": "abordagem.",
+    "funcionalidade": "funcionalidade."
   }
 ]
