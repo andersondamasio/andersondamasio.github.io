@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliadde",
-    "armazenamento": "armazenamentto"
-  },
-  {
     "carregamento": "carregameno",
     "suporte": "suporte."
   },
@@ -92,5 +88,9 @@
     "tecnologia": "tecnolgia",
     "acesso": "aceso",
     "dispositivo": "disposotivo"
+  },
+  {
+    "computador": "computador.",
+    "acesso": "acesso."
   }
 ]
