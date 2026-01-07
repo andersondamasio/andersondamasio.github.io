@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "controle": "contrle",
-    "simples": "cimples"
-  },
-  {
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia"
   },
@@ -92,5 +87,9 @@
     "carregamento": "carregamento.",
     "rotina": "rotna",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "monitoramento": "monitorameto",
+    "tecnologia": "tecnnologia"
   }
 ]
