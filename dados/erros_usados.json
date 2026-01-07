@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "exemplo": "exenplo",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "arquitetura": "arquitretura",
     "complexidade": "complexidade."
   },
@@ -90,5 +85,10 @@
   {
     "processo": "processso",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
