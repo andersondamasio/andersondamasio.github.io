@@ -1,9 +1,5 @@
 [
   {
-    "computador": "computador.",
-    "acesso": "acesso."
-  },
-  {
     "estrutura": "estrututra",
     "dispositivo": "dispositivo.",
     "desenvolvimento": "desenvolmento"
@@ -91,5 +87,10 @@
     "conhecimento": "conhescimento",
     "necessidade": "nescessidade",
     "funciona": "funciona."
+  },
+  {
+    "exemplo": "exenplo",
+    "desenvolvimento": "desenvolvmento",
+    "computador": "computador."
   }
 ]
