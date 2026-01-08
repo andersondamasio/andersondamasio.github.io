@@ -1,9 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "carregamento": "carregamento.",
     "rotina": "rotna",
     "funcionalidade": "funcionalidade."
@@ -90,5 +86,10 @@
   {
     "parceria": "parceria.",
     "armazenamento": "armasenamento"
+  },
+  {
+    "paralelo": "paraleloo",
+    "exemplo": "exenplo",
+    "tecnologia": "tecnolgia"
   }
 ]
