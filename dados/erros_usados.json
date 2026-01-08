@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "muito": "muinto",
-    "dispositivo": "dispotivo"
-  },
-  {
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvimente"
   },
@@ -90,5 +85,10 @@
     "tecnologia": "tecnoligia",
     "dispositivo": "dispotivo",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "correto": "correto.",
+    "geralmente": "geralmemte",
+    "controle": "controlle"
   }
 ]
