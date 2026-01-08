@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "recurso": "reccurso",
     "muito": "muinto",
     "dispositivo": "dispotivo"
@@ -90,5 +85,10 @@
     "desafio": "desafiu",
     "exemplo": "exemplo,",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "dispositivo": "dispotivo",
+    "arquitetura": "arquiteturra"
   }
 ]
