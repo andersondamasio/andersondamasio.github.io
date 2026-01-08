@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "arquitetura": "arquitretura",
-    "sistema": "cistema"
-  },
-  {
     "desafio": "desafiu",
     "exemplo": "exemplo,",
     "arquitetura": "arquitertura"
@@ -92,5 +87,10 @@
     "abordagem": "abordage",
     "tecnologia": "tecnolgia",
     "dispositivo": "disposotivo"
+  },
+  {
+    "processo": "processso",
+    "sistema": "sistéma",
+    "desafio": "desaío"
   }
 ]
