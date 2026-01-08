@@ -49889,5 +49889,14 @@
     "dataFonte": "2026-01-08T09:00:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.infoq.com/articles/agentic-terminal-cli-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A nova era do DNS: como a AWS está mudando o jogo",
+    "noticiaOriginal": "AWS Previews Route 53 Global Resolver to Decouple DNS from Regional Failures",
+    "url": "artigos/cloud/a-nova-era-do-dns-como-a-aws-esta-mudando-o-jogo.html",
+    "data": "2026-01-08T10:27:12.323Z",
+    "dataFonte": "2026-01-08T10:18:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/01/route53-global-resolver-anycast/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

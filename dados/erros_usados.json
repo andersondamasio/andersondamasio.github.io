@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnoligia",
-    "necessidade": "necessidade."
-  },
-  {
     "suporte": "suportte",
     "carregamento": "carregamneto",
     "funciona": "funsiona"
@@ -92,5 +87,10 @@
     "processo": "processso",
     "arquitetura": "arquitertura",
     "melhor": "melor"
+  },
+  {
+    "internet": "internat",
+    "operacional": "operacional.",
+    "complexidade": "complezidade"
   }
 ]
