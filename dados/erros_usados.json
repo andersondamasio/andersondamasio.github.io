@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquitertura"
   },
   {
@@ -90,5 +86,10 @@
   {
     "recurso": "recusso",
     "simples": "cimples"
+  },
+  {
+    "abordagem": "abordagem.",
+    "funcionalidade": "funcionaliade",
+    "exemplo": "exemplo,"
   }
 ]
