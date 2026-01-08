@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "carregamento": "carregamneto",
-    "funciona": "funsiona"
-  },
-  {
     "acesso": "aceso",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,10 @@
     "internet": "internat",
     "operacional": "operacional.",
     "complexidade": "complezidade"
+  },
+  {
+    "estrutura": "estrututra",
+    "simples": "simplis",
+    "sistema": "sistéma"
   }
 ]
