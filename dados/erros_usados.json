@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desafio": "desafío",
     "abordagem": "abordagem.",
     "funcionalidade": "funcionalidade."
@@ -92,5 +87,10 @@
     "estrutura": "estrututra",
     "simples": "simplis",
     "sistema": "sistéma"
+  },
+  {
+    "consistente": "consistente.",
+    "resultado": "resultao",
+    "monitoramento": "monitorameto"
   }
 ]
