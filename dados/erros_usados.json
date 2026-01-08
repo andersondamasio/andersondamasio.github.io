@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "exemplo": "exemplo,",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnoligia",
     "dispositivo": "dispotivo",
     "arquitetura": "arquiteturra"
@@ -92,5 +87,10 @@
     "processo": "processso",
     "sistema": "sistéma",
     "desafio": "desaío"
+  },
+  {
+    "carregamento": "carregamneto",
+    "sistema": "sistma",
+    "dispositivo": "dispotivo"
   }
 ]
