@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "necessidade": "nescessidade",
-    "funciona": "funciona."
-  },
-  {
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolvmento",
     "computador": "computador."
@@ -91,5 +86,9 @@
   {
     "sistema": "sistma",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "constante": "constanate",
+    "tecnologia": "tecnnologia"
   }
 ]
