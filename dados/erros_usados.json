@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordagem.",
-    "funcionalidade": "funcionaliade",
-    "exemplo": "exemplo,"
-  },
-  {
     "simples": "cimples",
     "tecnologia": "tecnnologia"
   },
@@ -90,5 +85,8 @@
     "monitoramento": "monitoramento.",
     "arquitetura": "arquitertura",
     "necessidade": "necissidade"
+  },
+  {
+    "problema": "poblema"
   }
 ]
