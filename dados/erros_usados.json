@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "sistema": "sistma"
-  },
-  {
     "abordagem": "abordage",
     "tecnologia": "tecnolgia",
     "dispositivo": "disposotivo"
@@ -88,5 +84,10 @@
     "controle": "contrle",
     "arquitetura": "arquitretura",
     "acesso": "aceso"
+  },
+  {
+    "resultado": "resultadoo",
+    "carregamento": "carregameno",
+    "tecnologia": "tecnolgia"
   }
 ]
