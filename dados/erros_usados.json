@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizado.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "suporte": "suprte",
     "sistema": "sistma"
   },
@@ -87,5 +83,10 @@
   },
   {
     "suporte": "suprte"
+  },
+  {
+    "controle": "contrle",
+    "arquitetura": "arquitretura",
+    "acesso": "aceso"
   }
 ]
