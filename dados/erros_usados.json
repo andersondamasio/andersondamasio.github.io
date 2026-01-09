@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muiito",
-    "dispositivo": "dispotivo",
-    "melhor": "melhorr"
-  },
-  {
     "sistema": "sistma",
     "tecnologia": "tecnoligia"
   },
@@ -86,5 +81,9 @@
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo",
     "muito": "muiito"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "dispositivo": "dispositivo."
   }
 ]
