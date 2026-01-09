@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "operacional": "operacional.",
-    "complexidade": "complezidade"
-  },
-  {
     "estrutura": "estrututra",
     "simples": "simplis",
     "sistema": "sistéma"
@@ -89,5 +84,10 @@
     "dispositivo": "disposotivo",
     "muito": "muto",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "conectado": "conectado.",
+    "rotina": "rotna",
+    "dispositivo": "dispositivo."
   }
 ]
