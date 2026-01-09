@@ -1,10 +1,5 @@
 [
   {
-    "processo": "processso",
-    "sistema": "sistéma",
-    "desafio": "desaío"
-  },
-  {
     "carregamento": "carregamneto",
     "sistema": "sistma",
     "dispositivo": "dispotivo"
@@ -88,5 +83,9 @@
   {
     "funciona": "funsiona",
     "virtual": "virtual."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "funcionalidade": "funcionaliade"
   }
 ]
