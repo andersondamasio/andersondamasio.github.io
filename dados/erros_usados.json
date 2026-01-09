@@ -1,10 +1,5 @@
 [
   {
-    "paralelo": "paraleloo",
-    "exemplo": "exenplo",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "recurso": "recusso",
     "simples": "cimples"
   },
@@ -89,5 +84,10 @@
   {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "prioridade": "prioriade",
+    "desafio": "desafío",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
