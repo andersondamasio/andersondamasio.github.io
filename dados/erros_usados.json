@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "exemplo": "exemplo,"
-  },
-  {
     "parceria": "parceria.",
     "armazenamento": "armasenamento"
   },
@@ -88,5 +84,10 @@
     "acesso": "aceso",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "muito": "muiito",
+    "dispositivo": "dispotivo",
+    "exemplo": "exemplo."
   }
 ]
