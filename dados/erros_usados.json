@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "armazenamento": "armasenamento"
-  },
-  {
     "paralelo": "paraleloo",
     "exemplo": "exenplo",
     "tecnologia": "tecnolgia"
@@ -89,5 +85,9 @@
     "muito": "muiito",
     "dispositivo": "dispotivo",
     "exemplo": "exemplo."
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolmento"
   }
 ]
