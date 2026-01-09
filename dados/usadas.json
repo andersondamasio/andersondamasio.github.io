@@ -27764,5 +27764,10 @@
     "intro": "A falta de domínio em RingConn Gen 3 debuts at CES 2026 - with two big features Oura doesn't have costuma ser um dos maiores gargalos de performance.",
     "introOriginal": "A falta de domínio em __TEMATICA__ costuma ser um dos maiores gargalos de performance.",
     "data": "2026-01-09"
+  },
+  "2026-01-09-a-nova-era-da-consistencia-eventual-desmistificando-corrosion-no-fly-io": {
+    "intro": "Não dá pra falar de sistemas robustos sem esbarrar em Presentation: Fast Eventual Consistency: Inside Corrosion, the Distributed System Powering Fly.io em algum momento.",
+    "introOriginal": "Não dá pra falar de sistemas robustos sem esbarrar em __TEMATICA__ em algum momento.",
+    "data": "2026-01-09"
   }
 }

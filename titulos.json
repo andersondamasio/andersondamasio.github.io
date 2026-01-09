@@ -50123,5 +50123,14 @@
     "dataFonte": "2026-01-09T13:32:01.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/ringconn-gen-3-smart-ring-ces-2026/"
+  },
+  {
+    "titulo": "A nova era da consistência eventual: desmistificando Corrosion no Fly.io",
+    "noticiaOriginal": "Presentation: Fast Eventual Consistency: Inside Corrosion, the Distributed System Powering Fly.io",
+    "url": "artigos/banco-de-dados/a-nova-era-da-consistencia-eventual-desmistificando-corrosion-no-fly-io.html",
+    "data": "2026-01-09T14:27:12.557Z",
+    "dataFonte": "2026-01-09T14:10:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/presentations/corrosion/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

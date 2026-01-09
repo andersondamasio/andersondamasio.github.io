@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "simples": "cimples"
-  },
-  {
     "abordagem": "abordagem.",
     "funcionalidade": "funcionaliade",
     "exemplo": "exemplo,"
@@ -89,5 +85,10 @@
     "prioridade": "prioriade",
     "desafio": "desafío",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "arquitetura": "arquitertura",
+    "necessidade": "necissidade"
   }
 ]
