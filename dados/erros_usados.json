@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "sistema": "sistma",
-    "dispositivo": "dispotivo"
-  },
-  {
     "prioridade": "prioriade.",
     "exemplo": "exemplo.",
     "parceria": "parceria."
@@ -87,5 +82,9 @@
   {
     "tecnologia": "tecnnologia",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "abordagem": "abordajem",
+    "desenvolvimento": "desenvolmento"
   }
 ]
