@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "dispositivo": "dispotivo",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "correto": "correto.",
     "geralmente": "geralmemte",
     "controle": "controlle"
@@ -92,5 +87,10 @@
     "carregamento": "carregamneto",
     "sistema": "sistma",
     "dispositivo": "dispotivo"
+  },
+  {
+    "prioridade": "prioriade.",
+    "exemplo": "exemplo.",
+    "parceria": "parceria."
   }
 ]
