@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "desafio": "desafío",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "monitoramento": "monitoramento.",
     "arquitetura": "arquitertura",
     "necessidade": "necissidade"
@@ -86,5 +81,10 @@
   {
     "arquitetura": "arquitertura",
     "abordagem": "abordagem."
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "funciona": "funciona.",
+    "monitoramento": "monitoramento."
   }
 ]
