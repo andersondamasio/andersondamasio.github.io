@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "prioridade": "prioriade",
     "desafio": "desafío",
     "desenvolvimento": "desenvolvmento"
@@ -86,5 +82,9 @@
     "rotina": "rotína",
     "tecnologia": "tecnolgia",
     "melhor": "melor"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "abordagem": "abordagem."
   }
 ]
