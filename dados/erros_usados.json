@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "muito": "muto",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "conectado": "conectado.",
     "rotina": "rotna",
     "dispositivo": "dispositivo."
@@ -86,5 +81,10 @@
   {
     "estrutura": "estrututra",
     "arquitetura": "arquitertura"
+  },
+  {
+    "processo": "proceso",
+    "simples": "simlpes",
+    "arquitetura": "arquitretura"
   }
 ]
