@@ -50267,5 +50267,14 @@
     "dataFonte": "2026-01-09T18:52:52.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/peri-perimenopause-tracker-ces-womens-health/"
+  },
+  {
+    "titulo": "A vulnerabilidade MongoBleed: um alerta para os desenvolvedores de banco de dados",
+    "noticiaOriginal": "MongoBleed Vulnerability Allows Attackers to Read Data From MongoDB's Heap Memory",
+    "url": "artigos/seguranca/a-vulnerabilidade-mongobleed-um-alerta-para-os-desenvolvedores-de-banco-de-dados.html",
+    "data": "2026-01-10T08:29:05.922Z",
+    "dataFonte": "2026-01-10T07:36:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/01/mongodb-mongobleed-vulnerability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

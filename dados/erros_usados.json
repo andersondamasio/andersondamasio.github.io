@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "muito": "muiito",
     "dispositivo": "dispotivo",
     "exemplo": "exemplo."
@@ -87,5 +82,9 @@
     "consistente": "consiteente",
     "necessidade": "necessidade.",
     "melhor": "melor"
+  },
+  {
+    "complexidade": "complezidade",
+    "internet": "internete"
   }
 ]
