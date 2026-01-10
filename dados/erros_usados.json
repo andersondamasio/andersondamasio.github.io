@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "arquitetura": "arquitretura",
-    "acesso": "aceso"
-  },
-  {
     "resultado": "resultadoo",
     "carregamento": "carregameno",
     "tecnologia": "tecnolgia"
@@ -88,5 +83,9 @@
   {
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "constante": "constanate",
+    "desenvolvimento": "desenvolmento"
   }
 ]
