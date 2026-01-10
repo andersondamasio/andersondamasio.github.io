@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "arquitetura": "arquitretura"
-  },
-  {
     "dispositivo": "disposotivo",
     "muito": "muto",
     "funcionalidade": "funcionaliade"
@@ -86,5 +82,9 @@
     "simples": "simlpes",
     "desenvolvimento": "desenvolvimente",
     "sistema": "sistma"
+  },
+  {
+    "estrutura": "estrututra",
+    "arquitetura": "arquitertura"
   }
 ]
