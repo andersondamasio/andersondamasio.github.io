@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordajem",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo",
     "muito": "muiito"
@@ -88,5 +84,10 @@
   {
     "dispositivo": "dispotivo",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquiteturra",
+    "abordagem": "abordagem."
   }
 ]
