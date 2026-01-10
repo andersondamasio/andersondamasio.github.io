@@ -1,8 +1,5 @@
 [
   {
-    "suporte": "suprte"
-  },
-  {
     "controle": "contrle",
     "arquitetura": "arquitretura",
     "acesso": "aceso"
@@ -87,5 +84,9 @@
   {
     "prioridade": "prioriade.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "tecnologia": "tecnnologia"
   }
 ]
