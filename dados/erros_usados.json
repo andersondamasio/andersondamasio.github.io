@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "constante": "constanate",
     "desenvolvimento": "desenvolmento"
   },
@@ -89,5 +85,10 @@
   {
     "suporte": "suporte.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "tecnologia": "tecnoligia",
+    "funcionalidade": "funcionaliade"
   }
 ]
