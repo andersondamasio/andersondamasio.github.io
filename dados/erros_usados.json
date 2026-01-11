@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "parceria": "parcería",
     "funciona": "funciona,"
   },
@@ -89,5 +85,10 @@
     "complexidade": "complexidade.",
     "operacional": "operacionl",
     "monitoramento": "monitoramento."
+  },
+  {
+    "arquitetura": "arquitertura",
+    "necessidade": "necissidade",
+    "prioridade": "prioriade"
   }
 ]
