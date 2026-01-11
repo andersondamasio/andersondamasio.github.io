@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "internet": "internete"
-  },
-  {
     "rotina": "rotína",
     "tecnologia": "tecnolgia",
     "melhor": "melor"
@@ -89,5 +85,10 @@
   {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "resultado": "resultao",
+    "melhor": "melor",
+    "internet": "internete"
   }
 ]
