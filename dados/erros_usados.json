@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "controle": "contrle",
     "recurso": "recusso",
     "abordagem": "abordagem."
@@ -90,5 +86,10 @@
     "dispositivo": "dispotivo",
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "operacional": "operacional.",
+    "funcionalidade": "funcionalidade.",
+    "rotina": "rotna"
   }
 ]
