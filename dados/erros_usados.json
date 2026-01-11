@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "sistema": "sistma",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "prioridade": "prioriade.",
     "tecnologia": "tecnolgia"
   },
@@ -89,5 +84,10 @@
     "processo": "prosseso",
     "desafio": "desaío",
     "complexidade": "complexsidade"
+  },
+  {
+    "necessidade": "nescessidade",
+    "abordagem": "abordajem",
+    "sistema": "sistma"
   }
 ]
