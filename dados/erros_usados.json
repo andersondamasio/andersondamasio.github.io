@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnnologia"
   },
@@ -89,5 +85,9 @@
     "necessidade": "nescessidade",
     "abordagem": "abordajem",
     "sistema": "sistma"
+  },
+  {
+    "suporte": "suporte.",
+    "arquitetura": "arquitretura"
   }
 ]
