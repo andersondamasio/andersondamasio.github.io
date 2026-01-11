@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "funciona": "funciona.",
-    "monitoramento": "monitoramento."
-  },
-  {
     "conhecimento": "conhecimento.",
     "sistema": "sistma",
     "tecnologia": "tecnoligia"
@@ -89,5 +84,10 @@
   {
     "arquitetura": "arquitertura",
     "sistema": "sistéma"
+  },
+  {
+    "processo": "prosseso",
+    "desafio": "desaío",
+    "complexidade": "complexsidade"
   }
 ]
