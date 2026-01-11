@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra",
     "abordagem": "abordagem."
@@ -91,5 +87,10 @@
     "prioridade": "prioriade",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura"
   }
 ]
