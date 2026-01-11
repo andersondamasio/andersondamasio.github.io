@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "abordagem": "abordagem."
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "funciona": "funciona.",
     "monitoramento": "monitoramento."
@@ -89,5 +85,9 @@
   {
     "complexidade": "complexsidade",
     "categoria": "categória"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "sistema": "sistéma"
   }
 ]
