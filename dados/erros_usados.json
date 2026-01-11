@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "funciona": "funciona,"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "acesso": "acesço",
     "tecnologia": "tecnnologia"
@@ -90,5 +86,9 @@
     "arquitetura": "arquitertura",
     "necessidade": "necissidade",
     "prioridade": "prioriade"
+  },
+  {
+    "estrutura": "estrtura",
+    "tecnologia": "tecnolgia"
   }
 ]
