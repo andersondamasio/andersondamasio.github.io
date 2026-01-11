@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquiteturra",
-    "abordagem": "abordagem."
-  },
-  {
     "acesso": "aceso",
     "problema": "poblema",
     "desenvolvimento": "desenvolvimente"
@@ -92,5 +87,9 @@
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "controle": "contrle",
+    "monitoramento": "monitoramento."
   }
 ]
