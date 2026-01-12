@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "arquitetura": "arquitretura"
-  },
-  {
     "dispositivo": "dispotivo",
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionaliade"
@@ -93,5 +89,9 @@
     "tecnologia": "tecnnologia",
     "abordagem": "abordagem.",
     "desafio": "desafiu"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitertura"
   }
 ]
