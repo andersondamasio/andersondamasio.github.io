@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "categoria": "categória"
-  },
-  {
     "arquitetura": "arquitertura",
     "sistema": "sistéma"
   },
@@ -91,5 +87,10 @@
     "muito": "muinto",
     "funcionalidade": "funcionaliadde",
     "suporte": "suportte"
+  },
+  {
+    "funciona": "funsiona",
+    "simples": "cimples",
+    "prioridade": "prioriade."
   }
 ]
