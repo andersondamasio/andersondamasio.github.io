@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo."
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
@@ -93,5 +88,10 @@
     "processo": "processso",
     "arquitetura": "arquiteturra",
     "sistema": "cistema"
+  },
+  {
+    "internet": "internat",
+    "melhor": "melhorr",
+    "dispositivo": "dispositivo."
   }
 ]
