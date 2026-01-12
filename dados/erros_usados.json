@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "necessidade": "necissidade",
-    "prioridade": "prioriade"
-  },
-  {
     "estrutura": "estrtura",
     "tecnologia": "tecnolgia"
   },
@@ -93,5 +88,9 @@
   {
     "desafio": "desafiu",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "funcionalidade": "funcionalidade."
   }
 ]
