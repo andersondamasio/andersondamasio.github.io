@@ -28074,5 +28074,10 @@
     "intro": "É curioso como I tried Lumus' AR waveguide prototype at CES, and saw where AR glasses go next sempre volta nas conversas mais sérias sobre arquitetura de software.",
     "introOriginal": "É curioso como __TEMATICA__ sempre volta nas conversas mais sérias sobre arquitetura de software.",
     "data": "2026-01-12"
+  },
+  "2026-01-12-a-nova-era-do-cloudwatch-unificando-logs-e-simplificando-a-observabilidade": {
+    "intro": "Vejo muitos projetos falharem por negligenciarem detalhes cruciais de AWS CloudWatch Evolves into Unified Observability Platform with Apache Iceberg Support.",
+    "introOriginal": "Vejo muitos projetos falharem por negligenciarem detalhes cruciais de __TEMATICA__.",
+    "data": "2026-01-12"
   }
 }

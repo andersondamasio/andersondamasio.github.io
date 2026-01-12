@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "tecnologia": "tecnoligia",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "operacional": "operacional.",
     "funcionalidade": "funcionalidade.",
     "rotina": "rotna"
@@ -93,5 +88,10 @@
   {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "acesso": "acesso.",
+    "necessidade": "necissidade"
   }
 ]
