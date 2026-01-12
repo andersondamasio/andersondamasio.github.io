@@ -1,9 +1,5 @@
 [
   {
-    "personalizado": "personalizdo",
-    "utilizado": "utilizdo."
-  },
-  {
     "complexidade": "complexidade.",
     "operacional": "operacionl",
     "monitoramento": "monitoramento."
@@ -94,5 +90,9 @@
     "monitoramento": "monitorameto",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura"
   }
 ]
