@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "acesso": "acesço",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +85,10 @@
   {
     "estrutura": "estrtura",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "constante": "constate",
+    "abordagem": "abordagem.",
+    "arquitetura": "arquiteturra"
   }
 ]
