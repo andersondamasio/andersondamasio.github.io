@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "sistéma"
-  },
-  {
     "processo": "prosseso",
     "desafio": "desaío",
     "complexidade": "complexsidade"
@@ -92,5 +88,10 @@
     "funciona": "funsiona",
     "simples": "cimples",
     "prioridade": "prioriade."
+  },
+  {
+    "acesso": "acesso.",
+    "problema": "problema.",
+    "geralmente": "geralmemte"
   }
 ]
