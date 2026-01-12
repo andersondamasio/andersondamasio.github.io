@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "monitoramento": "monitoramento."
-  },
-  {
     "tecnologia": "tecnolgia",
     "sistema": "sistéma"
   },
@@ -93,5 +89,9 @@
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvmento",
     "melhor": "melor"
+  },
+  {
+    "exemplo": "exemplo.",
+    "componente": "componentte"
   }
 ]
