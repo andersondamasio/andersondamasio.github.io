@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "sistema": "sistéma"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "monitoramento": "monitramento",
     "desafio": "desaío"
@@ -93,5 +89,10 @@
   {
     "exemplo": "exemplo.",
     "componente": "componentte"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
