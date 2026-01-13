@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "acesso": "acesso.",
     "necessidade": "necissidade"
@@ -87,5 +83,10 @@
   {
     "muito": "muinto",
     "prioridade": "prioridade."
+  },
+  {
+    "resultado": "resutlado",
+    "arquitetura": "arquitertura",
+    "funcionalidade": "funcionaliade"
   }
 ]
