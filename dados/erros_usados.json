@@ -1,9 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "conhecimento": "conhecimeto",
     "funcionalidade": "funcionalidade."
   },
@@ -88,5 +84,10 @@
     "sistema": "sistéma",
     "exemplo": "exemplo.",
     "complexidade": "complexidade."
+  },
+  {
+    "processo": "proceso",
+    "simples": "simlpes",
+    "controle": "controle."
   }
 ]
