@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "monitoramento": "monitorameto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "processo": "processso",
     "arquitetura": "arquiteturra",
     "sistema": "cistema"
@@ -88,5 +83,9 @@
     "simples": "simlpes",
     "dispositivo": "disposotivo",
     "muito": "muiito"
+  },
+  {
+    "necessidade": "nescessidade",
+    "geralmente": "geralmete"
   }
 ]
