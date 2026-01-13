@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "exemplo": "exenplo",
-    "desafio": "desaío"
-  },
-  {
     "abordagem": "abordagem.",
     "arquitetura": "arquitretura"
   },
@@ -90,5 +85,10 @@
     "rotina": "rotna",
     "monitoramento": "monitorameto",
     "dispositivo": "disposotivo"
+  },
+  {
+    "geralmente": "geralmemte",
+    "dispositivo": "dispositivo.",
+    "sistema": "sistma"
   }
 ]
