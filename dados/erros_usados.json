@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "simples": "cimples",
-    "prioridade": "prioriade."
-  },
-  {
     "acesso": "acesso.",
     "problema": "problema.",
     "geralmente": "geralmemte"
@@ -91,5 +86,9 @@
     "constante": "constante.",
     "complexidade": "complexsidade",
     "exemplo": "exemplo."
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "funciona": "funciona."
   }
 ]
