@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "desenvolvimento": "desenvolvmento",
-    "melhor": "melor"
-  },
-  {
     "exemplo": "exemplo.",
     "componente": "componentte"
   },
@@ -87,5 +82,10 @@
     "internet": "internete",
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
+  },
+  {
+    "sistema": "sistma",
+    "arquitetura": "arquitertura",
+    "funciona": "funsiona"
   }
 ]
