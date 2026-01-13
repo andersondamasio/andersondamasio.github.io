@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralmete",
-    "tecnologia": "tecnnologia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "muito": "muinto",
     "funcionalidade": "funcionaliadde",
     "suporte": "suportte"
@@ -92,5 +87,9 @@
     "problema": "problema.",
     "exemplo": "exenplo",
     "desafio": "desaío"
+  },
+  {
+    "abordagem": "abordagem.",
+    "arquitetura": "arquitretura"
   }
 ]
