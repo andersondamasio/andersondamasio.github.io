@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "problema": "problema.",
     "exemplo": "exenplo",
     "desafio": "desaío"
@@ -89,5 +85,10 @@
   {
     "desenvolvimento": "desenvolmento",
     "exemplo": "exenplo"
+  },
+  {
+    "rotina": "rotna",
+    "monitoramento": "monitorameto",
+    "dispositivo": "disposotivo"
   }
 ]
