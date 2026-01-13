@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "problema": "problema.",
-    "geralmente": "geralmemte"
-  },
-  {
     "necessidade": "nescessidade",
     "desenvolvimento": "desenvolvimente",
     "sistema": "sistma"
@@ -90,5 +85,9 @@
   {
     "tecnologia": "tecnolgia",
     "funciona": "funciona."
+  },
+  {
+    "suporte": "suprte",
+    "controle": "controle."
   }
 ]
