@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "desafio": "desafiu",
     "tecnologia": "tecnoligia"
   },
@@ -87,5 +83,10 @@
     "carregamento": "carregamento.",
     "tecnologia": "tecnolgia",
     "necessidade": "nescessidade"
+  },
+  {
+    "sistema": "sistéma",
+    "exemplo": "exemplo.",
+    "complexidade": "complexidade."
   }
 ]
