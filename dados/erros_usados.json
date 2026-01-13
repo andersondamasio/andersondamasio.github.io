@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura"
   },
@@ -87,5 +82,10 @@
     "recurso": "reccurso",
     "gerenciamento": "gerenciamneto",
     "exemplo": "exenplo"
+  },
+  {
+    "carregamento": "carregamento.",
+    "tecnologia": "tecnolgia",
+    "necessidade": "nescessidade"
   }
 ]
