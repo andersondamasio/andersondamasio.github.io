@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "simples": "simlpes",
-    "controle": "controle."
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "exemplo": "exenplo"
   },
@@ -93,5 +88,10 @@
   {
     "dispositivo": "dispositivo.",
     "simples": "simlpes"
+  },
+  {
+    "recurso": "recusso",
+    "muito": "muto",
+    "virtual": "virtuaal"
   }
 ]
