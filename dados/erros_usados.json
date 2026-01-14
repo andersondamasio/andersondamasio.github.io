@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordajem",
-    "arquitetura": "arquitretura"
-  },
-  {
     "muito": "muinto",
     "prioridade": "prioridade."
   },
@@ -93,5 +89,10 @@
     "acesso": "acesso.",
     "computador": "computador.",
     "virtual": "virtual."
+  },
+  {
+    "sistema": "sistéma",
+    "dispositivo": "dispositivo.",
+    "muito": "muinto"
   }
 ]
