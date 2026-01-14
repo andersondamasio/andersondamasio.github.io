@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "monitoramento": "monitoramento.",
-    "constante": "constante."
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra",
     "exemplo": "exenplo"
@@ -93,5 +88,9 @@
     "resultado": "resultadoo",
     "simples": "cimples",
     "melhor": "melor"
+  },
+  {
+    "funciona": "funciona.",
+    "simples": "simlpes"
   }
 ]
