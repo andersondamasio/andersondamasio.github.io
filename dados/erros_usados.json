@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "computador": "computador.",
-    "virtual": "virtual."
-  },
-  {
     "sistema": "sistéma",
     "dispositivo": "dispositivo.",
     "muito": "muinto"
@@ -90,5 +85,10 @@
   {
     "parceria": "parceria.",
     "necessidade": "nescessidade"
+  },
+  {
+    "desafio": "desafiu",
+    "desenvolvimento": "desenvolvmento",
+    "necessidade": "necessidade."
   }
 ]
