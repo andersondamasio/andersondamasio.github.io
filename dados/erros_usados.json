@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "exemplo": "exenplo"
-  },
-  {
     "rotina": "rotna",
     "monitoramento": "monitorameto",
     "dispositivo": "disposotivo"
@@ -93,5 +89,10 @@
     "recurso": "recusso",
     "muito": "muto",
     "virtual": "virtuaal"
+  },
+  {
+    "processo": "prosseso",
+    "tecnologia": "tecnnologia",
+    "constante": "constanate"
   }
 ]
