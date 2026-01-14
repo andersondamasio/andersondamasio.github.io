@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "funciona": "funciona."
-  },
-  {
     "suporte": "suprte",
     "controle": "controle."
   },
@@ -91,5 +87,10 @@
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra",
     "exemplo": "exenplo"
+  },
+  {
+    "desafio": "desaío",
+    "sistema": "cistema",
+    "tecnologia": "tecnolgia"
   }
 ]
