@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "tecnologia": "tecnolgia",
-    "necessidade": "nescessidade"
-  },
-  {
     "sistema": "sistéma",
     "exemplo": "exemplo.",
     "complexidade": "complexidade."
@@ -95,5 +90,9 @@
     "utilizado": "utilizdo",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "dispositivo": "disposotivo"
   }
 ]
