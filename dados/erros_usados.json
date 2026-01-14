@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquiteturra",
-    "exemplo": "exenplo"
-  },
-  {
     "desafio": "desaío",
     "sistema": "cistema",
     "tecnologia": "tecnolgia"
@@ -92,5 +87,9 @@
   {
     "funciona": "funciona.",
     "simples": "simlpes"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "exemplo": "exemplo,"
   }
 ]
