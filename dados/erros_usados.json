@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "geralmente": "geralmete"
-  },
-  {
     "armazenamento": "armazenamentto",
     "arquitetura": "arquitretura",
     "sistema": "sistéma"
@@ -95,5 +91,9 @@
     "funciona": "funciona.",
     "melhor": "melor",
     "muito": "muto"
+  },
+  {
+    "exemplo": "exemplo.",
+    "arquitetura": "arquitertura"
   }
 ]
