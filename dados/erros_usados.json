@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "gerenciamento": "gerenciamneto",
-    "exemplo": "exenplo"
-  },
-  {
     "carregamento": "carregamento.",
     "tecnologia": "tecnolgia",
     "necessidade": "nescessidade"
@@ -95,5 +90,10 @@
   {
     "muito": "muinto",
     "suporte": "suportte"
+  },
+  {
+    "utilizado": "utilizdo",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnolgia"
   }
 ]
