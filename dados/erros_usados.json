@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "exemplo": "exemplo.",
-    "complexidade": "complexidade."
-  },
-  {
     "processo": "proceso",
     "simples": "simlpes",
     "controle": "controle."
@@ -94,5 +89,9 @@
   {
     "tecnologia": "tecnnologia",
     "dispositivo": "disposotivo"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "simples": "simlpes"
   }
 ]
