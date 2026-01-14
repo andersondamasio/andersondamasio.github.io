@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "arquitetura": "arquitertura",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "simples": "simlpes",
     "dispositivo": "disposotivo",
     "muito": "muiito"
@@ -95,5 +90,10 @@
     "abordagem": "abordage",
     "necessidade": "necessidade.",
     "melhor": "melhorr"
+  },
+  {
+    "prioridade": "prioridade.",
+    "suporte": "suprte",
+    "problema": "probrema"
   }
 ]
