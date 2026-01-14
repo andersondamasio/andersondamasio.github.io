@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "controle": "controle."
-  },
-  {
     "abordagem": "abordajem",
     "arquitetura": "arquitretura"
   },
@@ -92,5 +88,10 @@
     "desafio": "desaío",
     "sistema": "cistema",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "acesso": "acesso.",
+    "computador": "computador.",
+    "virtual": "virtual."
   }
 ]
