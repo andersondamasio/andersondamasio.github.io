@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "arquitetura": "arquitretura",
-    "sistema": "sistéma"
-  },
-  {
     "internet": "internete",
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
@@ -95,5 +90,10 @@
   {
     "exemplo": "exemplo.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "consistente": "consiteente",
+    "conhecimento": "conhecimeto",
+    "exemplo": "exenplo"
   }
 ]
