@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "tecnologia": "tecnoligia",
-    "exemplo": "exenplo"
-  },
-  {
     "sistema": "sistma",
     "arquitetura": "arquitertura",
     "funciona": "funsiona"
@@ -95,5 +90,10 @@
     "consistente": "consiteente",
     "conhecimento": "conhecimeto",
     "exemplo": "exenplo"
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "acesso": "acesso.",
+    "sistema": "cistema"
   }
 ]
