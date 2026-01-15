@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "necessidade": "nescessidade"
-  },
-  {
     "desafio": "desafiu",
     "desenvolvimento": "desenvolvmento",
     "necessidade": "necessidade."
@@ -88,5 +84,10 @@
     "funciona": "funciona.",
     "funcionalidade": "funcionalidade.",
     "gerenciamento": "gerenciamente"
+  },
+  {
+    "controle": "controle.",
+    "problema": "probrema",
+    "dispositivo": "disposotivo"
   }
 ]
