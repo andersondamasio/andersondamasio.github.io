@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "arquitetura": "arquitretura"
-  },
-  {
     "armazenamento": "armazenamentto",
     "muito": "muiito",
     "dispositivo": "dispotivo"
@@ -89,5 +85,10 @@
     "prioridade": "prioridade.",
     "conhecimento": "conhecimento.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "resultado": "resultao",
+    "arquitetura": "arquitretura",
+    "sistema": "cistema"
   }
 ]
