@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "exemplo": "exemplo,"
-  },
-  {
     "parceria": "parceria.",
     "necessidade": "nescessidade"
   },
@@ -87,5 +83,10 @@
     "conhecimento": "conhecimento.",
     "componente": "componete",
     "exemplo": "exemplo."
+  },
+  {
+    "funciona": "funciona.",
+    "funcionalidade": "funcionalidade.",
+    "gerenciamento": "gerenciamente"
   }
 ]
