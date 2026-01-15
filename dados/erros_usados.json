@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "muito": "muiito",
-    "dispositivo": "dispotivo"
-  },
-  {
     "controle": "controle.",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +85,10 @@
     "resultado": "resultao",
     "arquitetura": "arquitretura",
     "sistema": "cistema"
+  },
+  {
+    "necessidade": "nescessidade",
+    "desenvolvimento": "desenvolmento",
+    "constante": "constante."
   }
 ]
