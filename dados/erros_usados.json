@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "dispositivo": "disposotivo"
-  },
-  {
     "dispositivo": "dispositivo.",
     "simples": "simlpes"
   },
@@ -84,5 +80,10 @@
   {
     "complexidade": "complexidade.",
     "processo": "proceso"
+  },
+  {
+    "sistema": "cistema",
+    "abordagem": "abordajem",
+    "constante": "constante."
   }
 ]
