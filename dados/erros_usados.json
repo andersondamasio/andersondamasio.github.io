@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "acesso": "acesso.",
-    "sistema": "cistema"
-  },
-  {
     "estrutura": "estrtura",
     "funciona": "funciona.",
     "sistema": "sistéma"
@@ -85,5 +80,9 @@
   },
   {
     "tecnologia": "tecnoligia"
+  },
+  {
+    "rotina": "rotína",
+    "problema": "problema."
   }
 ]
