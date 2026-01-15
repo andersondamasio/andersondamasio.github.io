@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "suporte": "suprte",
-    "problema": "probrema"
-  },
-  {
     "funciona": "funciona.",
     "melhor": "melor",
     "muito": "muto"
@@ -89,5 +84,9 @@
     "armazenamento": "armazenamentto",
     "muito": "muiito",
     "dispositivo": "dispotivo"
+  },
+  {
+    "controle": "controle.",
+    "tecnologia": "tecnoligia"
   }
 ]
