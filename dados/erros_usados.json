@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "simples": "simlpes"
-  },
-  {
     "recurso": "recusso",
     "muito": "muto",
     "virtual": "virtuaal"
@@ -85,5 +81,10 @@
     "sistema": "cistema",
     "abordagem": "abordajem",
     "constante": "constante."
+  },
+  {
+    "suporte": "suporte.",
+    "estrutura": "estrura",
+    "funciona": "funciona,"
   }
 ]
