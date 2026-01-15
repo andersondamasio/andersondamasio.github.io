@@ -1,10 +1,5 @@
 [
   {
-    "utilizado": "utilizdo",
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "tecnologia": "tecnnologia",
     "dispositivo": "disposotivo"
   },
@@ -85,5 +80,9 @@
     "estrutura": "estrututra",
     "acesso": "aceso",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "complexidade": "complexidade.",
+    "processo": "proceso"
   }
 ]
