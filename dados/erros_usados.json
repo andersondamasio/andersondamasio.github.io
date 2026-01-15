@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "desenvolvimento": "desenvolvmento",
-    "necessidade": "necessidade."
-  },
-  {
     "monitoramento": "monitorameto",
     "arquitetura": "arquitretura"
   },
@@ -89,5 +84,10 @@
     "controle": "controle.",
     "problema": "probrema",
     "dispositivo": "disposotivo"
+  },
+  {
+    "prioridade": "prioridade.",
+    "conhecimento": "conhecimento.",
+    "desenvolvimento": "desenvolmento"
   }
 ]
