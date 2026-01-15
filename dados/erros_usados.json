@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "muito": "muto",
-    "virtual": "virtuaal"
-  },
-  {
     "processo": "prosseso",
     "tecnologia": "tecnnologia",
     "constante": "constanate"
@@ -86,5 +81,10 @@
     "suporte": "suporte.",
     "estrutura": "estrura",
     "funciona": "funciona,"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "consistente": "consistente.",
+    "tecnologia": "tecnoligia"
   }
 ]
