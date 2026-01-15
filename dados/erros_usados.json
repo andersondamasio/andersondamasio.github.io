@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "simples": "simlpes"
-  },
-  {
     "arquitetura": "arquitertura",
     "exemplo": "exemplo,"
   },
@@ -86,5 +82,10 @@
     "conectado": "conetado",
     "gerenciamento": "gerenciamneto",
     "constante": "constate"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "componente": "componete",
+    "exemplo": "exemplo."
   }
 ]
