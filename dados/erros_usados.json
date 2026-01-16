@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "conhecimento": "conhecimento.",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "resultado": "resultao",
     "arquitetura": "arquitretura",
     "sistema": "cistema"
@@ -94,5 +89,10 @@
     "exemplo": "exemplo,",
     "armazenamento": "armazanamento",
     "problema": "problema."
+  },
+  {
+    "controle": "controle.",
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnnologia"
   }
 ]
