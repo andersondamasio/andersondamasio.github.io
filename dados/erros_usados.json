@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "acesso": "aceso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "complexidade": "complexidade.",
     "processo": "proceso"
   },
@@ -96,5 +91,9 @@
     "tecnologia": "tecnolgia",
     "sistema": "cistema",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "internet": "internat",
+    "desafio": "desafío"
   }
 ]
