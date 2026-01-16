@@ -1,9 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "internet": "internat"
-  },
-  {
     "tecnologia": "tecnoligia"
   },
   {
@@ -92,5 +88,10 @@
     "muito": "muinto",
     "conhecimento": "conhecimento.",
     "controle": "contrle"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolmento",
+    "necessidade": "necessidade."
   }
 ]
