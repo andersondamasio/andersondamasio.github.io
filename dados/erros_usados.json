@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "componente": "componete",
-    "exemplo": "exemplo."
-  },
-  {
     "funciona": "funciona.",
     "funcionalidade": "funcionalidade.",
     "gerenciamento": "gerenciamente"
@@ -95,5 +90,9 @@
   {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "muito": "muiito"
   }
 ]
