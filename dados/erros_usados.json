@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conetado",
-    "gerenciamento": "gerenciamneto",
-    "constante": "constate"
-  },
-  {
     "conhecimento": "conhecimento.",
     "componente": "componete",
     "exemplo": "exemplo."
@@ -96,5 +91,9 @@
     "acesso": "acesço",
     "simples": "cimples",
     "abordagem": "abordajem"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnolgia"
   }
 ]
