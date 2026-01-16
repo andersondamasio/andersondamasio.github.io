@@ -1,9 +1,5 @@
 [
   {
-    "rotina": "rotína",
-    "problema": "problema."
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura",
     "monitoramento": "monitoramento."
@@ -95,5 +91,10 @@
     "problema": "problema.",
     "sistema": "sistéma",
     "simples": "cimples"
+  },
+  {
+    "simples": "simplis",
+    "controle": "contrle",
+    "muito": "muinto"
   }
 ]
