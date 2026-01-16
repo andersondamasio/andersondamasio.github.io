@@ -51563,5 +51563,14 @@
     "dataFonte": "2026-01-16T21:12:34.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/naya-connect-keyboard-hands-on/"
+  },
+  {
+    "titulo": "A nova onda dos bancos de dados: ClickHouse e a revolução na análise de dados",
+    "noticiaOriginal": "Snowflake, Databricks challenger ClickHouse hits $15B valuation",
+    "url": "artigos/banco-de-dados/a-nova-onda-dos-bancos-de-dados-clickhouse-e-a-revolucao-na-analise-de-dados.html",
+    "data": "2026-01-16T22:23:48.700Z",
+    "dataFonte": "2026-01-16T22:05:08.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://techcrunch.com/2026/01/16/snowflake-databricks-challenger-clickhouse-hits-15b-valuation/"
   }
 ]

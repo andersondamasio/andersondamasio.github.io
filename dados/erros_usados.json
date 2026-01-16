@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melhorr",
-    "recurso": "recusso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "muito": "muinto",
     "conhecimento": "conhecimento.",
     "controle": "contrle"
@@ -94,5 +89,9 @@
     "funciona": "funsiona",
     "funcionalidade": "funcionaliade",
     "estrutura": "estrura"
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "monitoramento": "monitramento"
   }
 ]
