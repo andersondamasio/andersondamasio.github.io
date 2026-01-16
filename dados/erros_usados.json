@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia"
-  },
-  {
     "rotina": "rotína",
     "problema": "problema."
   },
@@ -93,5 +90,10 @@
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolmento",
     "necessidade": "necessidade."
+  },
+  {
+    "problema": "problema.",
+    "sistema": "sistéma",
+    "simples": "cimples"
   }
 ]
