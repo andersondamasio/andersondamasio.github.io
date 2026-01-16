@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "estrutura": "estrura",
-    "funciona": "funciona,"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "consistente": "consistente.",
     "tecnologia": "tecnoligia"
@@ -96,5 +91,9 @@
     "armazenamento": "armazenamentto",
     "geralmente": "geralmemte",
     "acesso": "acesço"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "sistema": "sistéma"
   }
 ]
