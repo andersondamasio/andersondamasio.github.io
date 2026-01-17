@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "armazenamento": "armazanamento",
-    "problema": "problema."
-  },
-  {
     "controle": "controle.",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
@@ -96,5 +91,10 @@
     "sistema": "cistema",
     "gerenciamento": "gerenciamente",
     "abordagem": "abordajem"
+  },
+  {
+    "desafio": "desafiu",
+    "desenvolvimento": "desenvolmento",
+    "necessidade": "necessidade."
   }
 ]
