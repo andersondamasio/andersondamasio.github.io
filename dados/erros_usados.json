@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "muito": "muiito"
-  },
-  {
     "carregamento": "carregameno",
     "executado": "executado.",
     "tecnologia": "tecnnologia"
@@ -95,5 +91,10 @@
     "componente": "componentte",
     "conectado": "conectado.",
     "exemplo": "exemplo."
+  },
+  {
+    "conectado": "conectdo",
+    "dispositivo": "dispositivo.",
+    "tecnologia": "tecnnologia"
   }
 ]
