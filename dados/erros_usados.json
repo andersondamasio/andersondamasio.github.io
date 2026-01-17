@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "desafio": "desafío"
-  },
-  {
     "sistema": "cistema",
     "prioridade": "prioriade.",
     "muito": "muinto"
@@ -92,5 +88,10 @@
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnnologia",
     "exemplo": "exenplo"
+  },
+  {
+    "necessidade": "necissidade",
+    "complexidade": "complexsidade",
+    "simples": "cimples"
   }
 ]
