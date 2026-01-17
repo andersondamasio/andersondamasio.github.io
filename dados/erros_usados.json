@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "computador": "computadorr",
     "parceria": "parceriaa",
     "abordagem": "abordage"
@@ -96,5 +91,9 @@
     "desafio": "desafiu",
     "desenvolvimento": "desenvolmento",
     "necessidade": "necessidade."
+  },
+  {
+    "monitoramento": "monitorameto",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
