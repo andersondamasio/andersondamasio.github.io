@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "simples": "simlpes",
-    "resultado": "resultao"
-  },
-  {
     "acesso": "acesço",
     "simples": "cimples",
     "abordagem": "abordajem"
@@ -94,5 +89,10 @@
     "operacional": "operacionl",
     "desenvolvimento": "desenvolmento",
     "sistema": "cistema"
+  },
+  {
+    "simples": "simplis",
+    "muito": "muto",
+    "exemplo": "exemplo."
   }
 ]
