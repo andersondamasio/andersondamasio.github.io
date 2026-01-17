@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "dispositivo": "dispositivo.",
     "muito": "muiito"
   },
@@ -94,5 +90,10 @@
     "constante": "constate",
     "funcionalidade": "funcionalidade.",
     "armazenamento": "armazenamentto"
+  },
+  {
+    "componente": "componentte",
+    "conectado": "conectado.",
+    "exemplo": "exemplo."
   }
 ]
