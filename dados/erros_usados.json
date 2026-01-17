@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "executado": "executado.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "exemplo": "exemplo,",
     "armazenamento": "armazanamento",
     "problema": "problema."
@@ -96,5 +91,10 @@
     "conectado": "conectdo",
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "sistema": "cistema",
+    "gerenciamento": "gerenciamente",
+    "abordagem": "abordajem"
   }
 ]

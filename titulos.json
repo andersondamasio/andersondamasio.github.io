@@ -51698,5 +51698,14 @@
     "dataFonte": "2026-01-17T10:00:45.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/how-to-add-backup-carrier-on-phone-for-free-cheap/"
+  },
+  {
+    "titulo": "Gerenciando Configurações em Nuvem: O Desafio do Grão de Areia",
+    "noticiaOriginal": "Cloudflare Automates Salt Configuration Management Debugging, Reducing Release Delays",
+    "url": "artigos/devops/gerenciando-configuracoes-em-nuvem-o-desafio-do-grao-de-areia.html",
+    "data": "2026-01-17T15:22:30.659Z",
+    "dataFonte": "2026-01-17T09:30:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2026/01/cloudflare-salt-configuration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
