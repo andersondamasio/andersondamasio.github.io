@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "sistema": "sistéma",
-    "simples": "cimples"
-  },
-  {
     "simples": "simplis",
     "controle": "contrle",
     "muito": "muinto"
@@ -92,5 +87,10 @@
     "recurso": "recusso",
     "muito": "muinto",
     "dispositivo": "dispositivo."
+  },
+  {
+    "conectado": "conectado.",
+    "funciona": "funciona,",
+    "funcionalidade": "funcionaliade"
   }
 ]
