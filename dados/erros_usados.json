@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "prioridade": "prioriade.",
-    "muito": "muinto"
-  },
-  {
     "armazenamento": "armazenamentto",
     "geralmente": "geralmemte",
     "acesso": "acesço"
@@ -93,5 +88,10 @@
     "necessidade": "necissidade",
     "complexidade": "complexsidade",
     "simples": "cimples"
+  },
+  {
+    "problema": "problema.",
+    "processo": "prosseso",
+    "dispositivo": "dispositivo."
   }
 ]

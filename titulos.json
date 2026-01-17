@@ -51626,5 +51626,14 @@
     "dataFonte": "2026-01-17T06:13:00.000Z",
     "categoria": "Cloud",
     "urlFonte": "https://www.infoq.com/news/2026/01/cloudflare-r2-sql-aggregations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Earpods em xeque: a vulnerabilidade do WhisperPair e o que fazer para se proteger",
+    "noticiaOriginal": "A new earbud security flaw may expose you to remote eavesdropping - here's how to fix it",
+    "url": "artigos/seguranca/earpods-em-xeque-a-vulnerabilidade-do-whisperpair-e-o-que-fazer-para-se-proteger.html",
+    "data": "2026-01-17T07:22:27.765Z",
+    "dataFonte": "2026-01-17T01:15:45.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.zdnet.com/article/whisperpair-google-fast-pair-bluetooth-headphones-attack/"
   }
 ]
