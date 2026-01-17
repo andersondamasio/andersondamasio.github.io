@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "monitoramento": "monitramento"
-  },
-  {
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia"
   },
@@ -93,5 +89,9 @@
   {
     "internet": "internete",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "simples": "simlpes"
   }
 ]
