@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "geralmente": "geralmemte",
-    "acesso": "acesço"
-  },
-  {
     "arquitetura": "arquitertura",
     "sistema": "sistéma"
   },
@@ -93,5 +88,10 @@
     "problema": "problema.",
     "processo": "prosseso",
     "dispositivo": "dispositivo."
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura"
   }
 ]
