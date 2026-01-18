@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "propriedade": "propriadade",
-    "abordagem": "abordajem"
-  },
-  {
     "controle": "contrle",
     "estrutura": "estrututra"
   },
@@ -92,5 +87,10 @@
     "simples": "simplis",
     "prioridade": "prioriade.",
     "monitoramento": "monitorameto"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "prioridade": "prioriade",
+    "necessidade": "nescessidade"
   }
 ]
