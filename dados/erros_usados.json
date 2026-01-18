@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "internet": "internete",
     "arquitetura": "arquitertura"
   },
@@ -90,5 +86,9 @@
     "funcionalidade": "funcionalidade.",
     "exemplo": "exemplo,",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "problema": "probrema",
+    "necessidade": "nescessidade"
   }
 ]
