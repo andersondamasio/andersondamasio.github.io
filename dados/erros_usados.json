@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "processo": "prosseso",
-    "dispositivo": "dispositivo."
-  },
-  {
     "conhecimento": "conhecimento.",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
@@ -93,5 +88,9 @@
     "melhor": "melhorr",
     "computador": "computadorr",
     "controle": "contrle"
+  },
+  {
+    "acesso": "acesço",
+    "arquitetura": "arquiteturra"
   }
 ]
