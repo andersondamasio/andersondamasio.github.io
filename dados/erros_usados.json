@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internete",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnolgia",
     "simples": "simlpes"
   },
@@ -90,5 +86,10 @@
   {
     "problema": "probrema",
     "necessidade": "nescessidade"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "prioridade": "prioriade.",
+    "tecnologia": "tecnolgia"
   }
 ]
