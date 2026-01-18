@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "tecnologia": "tecnnologia",
-    "exemplo": "exenplo"
-  },
-  {
     "necessidade": "necissidade",
     "complexidade": "complexsidade",
     "simples": "cimples"
@@ -93,5 +88,10 @@
   {
     "controle": "contrle",
     "estrutura": "estrututra"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "controle": "controlle",
+    "exemplo": "exenplo"
   }
 ]
