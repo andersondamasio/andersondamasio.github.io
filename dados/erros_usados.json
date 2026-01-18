@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "controle": "controlle",
-    "exemplo": "exenplo"
-  },
-  {
     "melhor": "melhorr",
     "computador": "computadorr",
     "controle": "contrle"
@@ -92,5 +87,10 @@
   {
     "conhecimento": "conhescimento",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "monitoramento": "monitorameto",
+    "necessidade": "necessidade."
   }
 ]
