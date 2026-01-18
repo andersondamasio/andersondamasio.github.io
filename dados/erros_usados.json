@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componentte",
-    "conectado": "conectado.",
-    "exemplo": "exemplo."
-  },
-  {
     "conectado": "conectdo",
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnnologia"
@@ -92,5 +87,9 @@
     "acesso": "acesso.",
     "desafio": "desafiu",
     "monitoramento": "monitramento"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "monitoramento": "monitoramento."
   }
 ]
