@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "muito": "muto",
-    "exemplo": "exemplo."
-  },
-  {
     "constante": "constate",
     "funcionalidade": "funcionalidade.",
     "armazenamento": "armazenamentto"
@@ -92,5 +87,10 @@
     "suporte": "suprte",
     "acesso": "acesço",
     "sistema": "sistéma"
+  },
+  {
+    "processo": "proceso",
+    "acesso": "aceso",
+    "controle": "controle."
   }
 ]
