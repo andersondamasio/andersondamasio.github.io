@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "estrutura": "estrututra"
-  },
-  {
     "dispositivo": "disposotivo",
     "controle": "controlle",
     "exemplo": "exenplo"
@@ -92,5 +88,9 @@
     "arquitetura": "arquitertura",
     "prioridade": "prioriade",
     "necessidade": "nescessidade"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "tecnologia": "tecnoligia"
   }
 ]
