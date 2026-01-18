@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "gerenciamento": "gerenciamente",
-    "abordagem": "abordajem"
-  },
-  {
     "desafio": "desafiu",
     "desenvolvimento": "desenvolmento",
     "necessidade": "necessidade."
@@ -90,5 +85,10 @@
   {
     "muito": "muinto",
     "necessidade": "necissidade"
+  },
+  {
+    "operacional": "operaciona",
+    "executado": "excutado",
+    "sistema": "cistema"
   }
 ]
