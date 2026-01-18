@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "simples": "simplis",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "desafio": "desaío",
     "exemplo": "exenplo",
     "arquitetura": "arquitretura"
@@ -92,5 +87,10 @@
     "constante": "constanate",
     "sistema": "sistéma",
     "exemplo": "exenplo"
+  },
+  {
+    "estrutura": "estrututra",
+    "sistema": "sistma",
+    "funciona": "funciona,"
   }
 ]
