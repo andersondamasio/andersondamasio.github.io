@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "simples": "simplis",
     "funcionalidade": "funcionaliadde"
   },
@@ -89,5 +85,10 @@
   {
     "sistema": "sistéma",
     "muito": "muiito"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "exemplo": "exemplo,",
+    "desenvolvimento": "desenvolmento"
   }
 ]
