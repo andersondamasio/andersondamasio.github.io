@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "simples": "simlpes"
-  },
-  {
     "tecnologia": "tecnnologia",
     "simples": "simplis",
     "desenvolvimento": "desenvolvmento"
@@ -91,5 +87,10 @@
     "armazenamento": "armazanamento",
     "prioridade": "prioriade.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "constante": "constanate",
+    "sistema": "sistéma",
+    "exemplo": "exenplo"
   }
 ]
