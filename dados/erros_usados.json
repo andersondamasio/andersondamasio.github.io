@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "melhor": "melhorr",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnnologia",
     "exemplo": "exenplo"
@@ -94,5 +89,9 @@
     "acesso": "acesço",
     "propriedade": "propriadade",
     "abordagem": "abordajem"
+  },
+  {
+    "controle": "contrle",
+    "estrutura": "estrututra"
   }
 ]
