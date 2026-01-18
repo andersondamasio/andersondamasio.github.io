@@ -51851,5 +51851,14 @@
     "dataFonte": "2026-01-18T09:00:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.infoq.com/news/2026/01/opsworker-ai-sre/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Como a Inércia Pode Causar Falhas de Segurança: O Caso do NTLMv1",
+    "noticiaOriginal": "Mandiant releases rainbow table that cracks weak admin password in 12 hours",
+    "url": "artigos/seguranca/como-a-inercia-pode-causar-falhas-de-seguranca-o-caso-do-ntlmv1.html",
+    "data": "2026-01-18T10:24:05.220Z",
+    "dataFonte": "2026-01-16T21:05:37.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2026/01/mandiant-releases-rainbow-table-that-cracks-weak-admin-password-in-12-hours/"
   }
 ]

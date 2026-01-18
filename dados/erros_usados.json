@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "funcionalidade": "funcionalidade.",
-    "armazenamento": "armazenamentto"
-  },
-  {
     "componente": "componentte",
     "conectado": "conectado.",
     "exemplo": "exemplo."
@@ -92,5 +87,10 @@
     "processo": "proceso",
     "acesso": "aceso",
     "controle": "controle."
+  },
+  {
+    "acesso": "acesso.",
+    "desafio": "desafiu",
+    "monitoramento": "monitramento"
   }
 ]
