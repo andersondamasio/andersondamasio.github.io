@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "acesso": "aceso",
-    "controle": "controle."
-  },
-  {
     "acesso": "acesso.",
     "desafio": "desafiu",
     "monitoramento": "monitramento"
@@ -92,5 +87,9 @@
     "simples": "simplis",
     "exemplo": "exemplo.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "abordagem": "abordage",
+    "resultado": "resultadoo"
   }
 ]

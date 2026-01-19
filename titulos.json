@@ -52022,5 +52022,14 @@
     "dataFonte": "2026-01-19T02:30:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.infoq.com/news/2026/01/java-news-roundup-jan12-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Docker: O Novo Caminho para Testes Determinísticos em Sistemas de IA",
+    "noticiaOriginal": "Docker’s Cagent Brings Deterministic Testing to AI Agents",
+    "url": "artigos/inteligencia-artificial/docker-o-novo-caminho-para-testes-deterministicos-em-sistemas-de-ia.html",
+    "data": "2026-01-19T07:31:45.754Z",
+    "dataFonte": "2026-01-19T07:00:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://www.infoq.com/news/2026/01/cagent-testing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
