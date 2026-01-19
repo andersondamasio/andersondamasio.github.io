@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "monitoramento": "monitorameto",
-    "necessidade": "necessidade."
-  },
-  {
     "dispositivo": "dispositivo.",
     "internet": "internat"
   },
@@ -92,5 +87,9 @@
     "prioridade": "prioriade",
     "muito": "muiito",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "constante": "constante.",
+    "sistema": "cistema"
   }
 ]
