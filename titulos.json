@@ -52076,5 +52076,14 @@
     "dataFonte": "2026-01-19T12:00:58.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/beginner-vibe-coding-apps-cursor-replit-hands-on/"
+  },
+  {
+    "titulo": "Como a ClassPass Transforma Testes com uma Só Infraestrutura",
+    "noticiaOriginal": "Presentation: No QA Environment? No Problem: How Classpass Enables Testing on a Single Environment in ECS",
+    "url": "artigos/devops/como-a-classpass-transforma-testes-com-uma-so-infraestrutura.html",
+    "data": "2026-01-19T13:48:12.391Z",
+    "dataFonte": "2026-01-19T13:21:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/presentations/one-testing-environment/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
