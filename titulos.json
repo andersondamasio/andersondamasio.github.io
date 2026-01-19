@@ -52139,5 +52139,14 @@
     "dataFonte": "2026-01-19T17:52:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/how-to-use-chatgpt-translate-vs-google-translate-alternative/"
+  },
+  {
+    "titulo": "Nova Faceta do Azure Boards: Filtros de Campo Adicionais para Potencializar sua Gestão",
+    "noticiaOriginal": "Azure Boards additional field filters (private preview)",
+    "url": "artigos/devops/nova-faceta-do-azure-boards-filtros-de-campo-adicionais-para-potencializar-sua-gestao.html",
+    "data": "2026-01-19T20:27:08.622Z",
+    "dataFonte": "2026-01-19T20:22:53.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://devblogs.microsoft.com/devops/azure-boards-additional-field-filters-private-preview/"
   }
 ]
