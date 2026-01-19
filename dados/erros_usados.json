@@ -1,9 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "necessidade": "nescessidade"
-  },
-  {
     "armazenamento": "armazanamento",
     "prioridade": "prioriade.",
     "tecnologia": "tecnolgia"
@@ -94,5 +90,9 @@
     "necessidade": "necessidade.",
     "simples": "simlpes",
     "abordagem": "abordajem"
+  },
+  {
+    "acesso": "acesso.",
+    "desenvolvimento": "desenvolmento"
   }
 ]
