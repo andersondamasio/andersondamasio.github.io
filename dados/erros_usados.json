@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "executado": "excutado",
-    "sistema": "cistema"
-  },
-  {
     "sistema": "sistéma",
     "muito": "muiito"
   },
@@ -93,5 +88,10 @@
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolvmento",
     "conhecimento": "conhecimento."
+  },
+  {
+    "monitoramento": "monitorameto",
+    "abordagem": "abordajem",
+    "problema": "poblema"
   }
 ]
