@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muinto",
-    "necessidade": "necissidade"
-  },
-  {
     "operacional": "operaciona",
     "executado": "excutado",
     "sistema": "cistema"
@@ -92,5 +88,10 @@
     "recurso": "recusso",
     "suporte": "suportte",
     "processo": "proceso"
+  },
+  {
+    "exemplo": "exenplo",
+    "desenvolvimento": "desenvolvmento",
+    "conhecimento": "conhecimento."
   }
 ]
