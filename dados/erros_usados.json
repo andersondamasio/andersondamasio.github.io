@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "monitoramento": "monitoramento."
-  },
-  {
     "muito": "muinto",
     "necessidade": "necissidade"
   },
@@ -91,5 +87,10 @@
     "conhecimento": "conhecimento.",
     "desenvolvimento": "desenvolvimente",
     "muito": "muto"
+  },
+  {
+    "recurso": "recusso",
+    "suporte": "suportte",
+    "processo": "proceso"
   }
 ]
