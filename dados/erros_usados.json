@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "muito": "muiito"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "exemplo": "exemplo,",
     "desenvolvimento": "desenvolmento"
@@ -93,5 +89,10 @@
     "monitoramento": "monitorameto",
     "abordagem": "abordajem",
     "problema": "poblema"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "muito": "muinto",
+    "simples": "cimples"
   }
 ]
