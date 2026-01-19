@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "prioridade": "prioriade.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "constante": "constanate",
     "sistema": "sistéma",
     "exemplo": "exenplo"
@@ -94,5 +89,9 @@
   {
     "acesso": "acesso.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "acesso": "aceso"
   }
 ]
