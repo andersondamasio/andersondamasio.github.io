@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "prioridade": "prioriade",
-    "necessidade": "nescessidade"
-  },
-  {
     "conhecimento": "conhescimento",
     "tecnologia": "tecnoligia"
   },
@@ -91,5 +86,10 @@
   {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "controle": "contrle",
+    "simples": "simplis"
   }
 ]
