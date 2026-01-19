@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "acesso": "acesço",
-    "sistema": "sistéma"
-  },
-  {
     "processo": "proceso",
     "acesso": "aceso",
     "controle": "controle."
@@ -92,5 +87,10 @@
     "funcionalidade": "funcionalidade.",
     "controle": "controle.",
     "dispositivo": "disposotivo"
+  },
+  {
+    "simples": "simplis",
+    "exemplo": "exemplo.",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
