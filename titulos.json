@@ -52229,5 +52229,14 @@
     "dataFonte": "2026-01-20T00:00:11.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.bbc.com/news/articles/c78e4l3rm22o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "Prisma 7: A Revolução Que Deixou o Rust para Trás",
+    "noticiaOriginal": "Prisma 7: Rust-Free Architecture and Performance Gains",
+    "url": "artigos/banco-de-dados/prisma-7-a-revolucao-que-deixou-o-rust-para-tras.html",
+    "data": "2026-01-20T08:35:10.198Z",
+    "dataFonte": "2026-01-20T08:00:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/01/prisma-7-performance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

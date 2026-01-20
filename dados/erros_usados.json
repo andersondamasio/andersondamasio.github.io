@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "desenvolvimento": "desenvolvmento",
-    "conhecimento": "conhecimento."
-  },
-  {
     "monitoramento": "monitorameto",
     "abordagem": "abordajem",
     "problema": "poblema"
@@ -90,5 +85,8 @@
   {
     "necessidade": "nescessidade",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "processo": "proceso"
   }
 ]
