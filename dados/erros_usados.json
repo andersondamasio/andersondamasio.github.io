@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliadde",
-    "controle": "contrle",
-    "simples": "simplis"
-  },
-  {
     "prioridade": "prioriade",
     "muito": "muiito",
     "tecnologia": "tecnolgia"
@@ -89,5 +84,10 @@
     "desenvolvimento": "desenvolvimente",
     "complexidade": "complexidade.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "simples": "simplis",
+    "melhor": "melor",
+    "muito": "muto"
   }
 ]
