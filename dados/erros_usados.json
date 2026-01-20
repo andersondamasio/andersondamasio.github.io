@@ -1,9 +1,5 @@
 [
   {
-    "personalizado": "personalizad",
-    "gerenciamento": "gerenciamneto"
-  },
-  {
     "armazenamento": "armasenamento",
     "muito": "muto",
     "simples": "simlpes"
@@ -88,5 +84,10 @@
     "arquitetura": "arquiteturra",
     "sistema": "sistéma",
     "desafio": "desaío"
+  },
+  {
+    "complexidade": "complexsidade",
+    "monitoramento": "monitramento",
+    "funcionalidade": "funcionalidade."
   }
 ]
