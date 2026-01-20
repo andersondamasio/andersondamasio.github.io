@@ -52328,5 +52328,14 @@
     "dataFonte": "2026-01-20T18:01:48.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2026/01/20/ice-becomes-one-of-the-most-blocked-accounts-on-bluesky-after-its-verification/"
+  },
+  {
+    "titulo": "Como a Arquitetura de Software Pode Blindar Agentes de IA Contra Instruções Maliciosas",
+    "noticiaOriginal": "How CyberArk Protects AI Agents with Instruction Detectors and History-Aware Validation",
+    "url": "artigos/seguranca/como-a-arquitetura-de-software-pode-blindar-agentes-de-ia-contra-instrucoes-maliciosas.html",
+    "data": "2026-01-20T20:14:30.188Z",
+    "dataFonte": "2026-01-20T20:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/01/cyberark-agents-defenses/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
