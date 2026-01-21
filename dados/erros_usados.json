@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "sistema": "sistéma",
-    "desafio": "desaío"
-  },
-  {
     "complexidade": "complexsidade",
     "monitoramento": "monitramento",
     "funcionalidade": "funcionalidade."
@@ -90,5 +85,10 @@
     "carregamento": "carregamneto",
     "rotina": "rotína",
     "muito": "muto"
+  },
+  {
+    "exemplo": "exemplo.",
+    "complexidade": "complezidade",
+    "funcionalidade": "funcionalidade."
   }
 ]
