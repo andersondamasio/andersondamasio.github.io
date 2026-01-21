@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "monitoramento": "monitramento",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "tecnologia": "tecnolgia",
     "problema": "problema.",
     "recurso": "recusso"
@@ -90,5 +85,8 @@
     "exemplo": "exemplo.",
     "complexidade": "complezidade",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "tecnologia": "tecnoligia"
   }
 ]
