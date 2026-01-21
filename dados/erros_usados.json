@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "muito": "muto",
-    "simples": "simlpes"
-  },
-  {
     "desafio": "desafiu",
     "melhor": "melhorr",
     "internet": "internert"
@@ -89,5 +84,10 @@
     "complexidade": "complexsidade",
     "monitoramento": "monitramento",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "problema": "problema.",
+    "recurso": "recusso"
   }
 ]
