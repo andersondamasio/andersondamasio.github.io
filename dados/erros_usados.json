@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "processo": "proceso"
   },
   {
@@ -88,5 +84,10 @@
     "tecnologia": "tecnolgia",
     "exemplo": "exenplo",
     "necessidade": "nescessidade"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia"
   }
 ]
