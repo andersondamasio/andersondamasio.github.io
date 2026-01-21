@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo."
-  },
-  {
     "prioridade": "prioriade.",
     "problema": "probrema"
   },
@@ -89,5 +85,9 @@
   {
     "exemplo": "exenplo",
     "internet": "internete"
+  },
+  {
+    "melhor": "melor",
+    "arquitetura": "arquitertura"
   }
 ]
