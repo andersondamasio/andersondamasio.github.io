@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "simples": "simplis"
-  },
-  {
     "dispositivo": "dispotivo",
     "simples": "cimples",
     "funcionalidade": "funcionalidade."
@@ -88,5 +84,9 @@
     "desafio": "desafío",
     "funciona": "funsiona",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "constante": "constante."
   }
 ]
