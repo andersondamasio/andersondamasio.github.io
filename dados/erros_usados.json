@@ -1,8 +1,5 @@
 [
   {
-    "processo": "proceso"
-  },
-  {
     "funciona": "funsiona",
     "estrutura": "estrututra"
   },
@@ -89,5 +86,9 @@
     "funcionalidade": "funcionaliade",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnolgia"
   }
 ]
