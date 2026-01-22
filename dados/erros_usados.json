@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "suporte": "suporte.",
     "funciona": "funciona,"
@@ -86,5 +82,9 @@
   {
     "armazenamento": "armazanamento",
     "simples": "simplis"
+  },
+  {
+    "controle": "contrle",
+    "sistema": "sistma"
   }
 ]
