@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internert",
-    "suporte": "suprte"
-  },
-  {
     "dispositivo": "dispotivo",
     "suporte": "suporte."
   },
@@ -86,5 +82,10 @@
     "computador": "computadorr",
     "sistema": "sistéma",
     "exemplo": "exenplo"
+  },
+  {
+    "acesso": "acesço",
+    "mensagem": "menssagem",
+    "melhor": "melor"
   }
 ]
