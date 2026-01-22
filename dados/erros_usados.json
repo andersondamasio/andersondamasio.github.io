@@ -1,9 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "arquitetura": "arquitertura"
-  },
-  {
     "carregamento": "carregamneto",
     "rotina": "rotína",
     "muito": "muto"
@@ -87,5 +83,10 @@
     "prioridade": "prioriade.",
     "problema": "problema.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "necessidade": "necissidade",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
