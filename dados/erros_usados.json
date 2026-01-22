@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "funciona": "funciona,",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "processo": "prosseso",
     "simples": "cimples",
     "tecnologia": "tecnoligia"
@@ -87,5 +82,10 @@
   {
     "estrutura": "estrtura",
     "processo": "prosseso"
+  },
+  {
+    "necessidade": "necissidade",
+    "paralelo": "paralelo.",
+    "monitoramento": "monitorameto"
   }
 ]
