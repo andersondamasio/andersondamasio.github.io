@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "suporte": "suporte."
-  },
-  {
     "controle": "controlle",
     "funciona": "funciona,",
     "arquitetura": "arquiteturra"
@@ -87,5 +83,9 @@
     "acesso": "acesço",
     "mensagem": "menssagem",
     "melhor": "melor"
+  },
+  {
+    "estrutura": "estrtura",
+    "processo": "prosseso"
   }
 ]
