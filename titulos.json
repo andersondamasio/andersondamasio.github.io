@@ -52679,5 +52679,14 @@
     "dataFonte": "2026-01-22T14:30:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://martinfowler.com/fragments/2026-01-22.html"
+  },
+  {
+    "titulo": "A vulnerabilidade dos dados: lições do caso Under Armour",
+    "noticiaOriginal": "Under Armour says it’s ‘aware’ of data breach claims after 72M customer records were posted online",
+    "url": "artigos/seguranca/a-vulnerabilidade-dos-dados-licoes-do-caso-under-armour.html",
+    "data": "2026-01-22T15:34:04.811Z",
+    "dataFonte": "2026-01-22T15:28:50.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://techcrunch.com/2026/01/22/under-armour-says-its-aware-of-data-breach-claims-after-72m-customer-records-were-posted-online/"
   }
 ]
