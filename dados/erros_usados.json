@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desafio": "desafío",
     "funciona": "funsiona",
     "tecnologia": "tecnnologia"
@@ -87,5 +84,10 @@
     "sistema": "cistema",
     "exemplo": "exemplo,",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "constante": "constante.",
+    "tecnologia": "tecnnologia",
+    "abordagem": "abordajem"
   }
 ]
