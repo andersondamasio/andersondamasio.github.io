@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "parceria": "parceriaa"
-  },
-  {
     "funciona": "funciona.",
     "tecnologia": "tecnnologia"
   },
@@ -86,5 +82,9 @@
   {
     "operacional": "operacionl",
     "virtual": "virtal"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "simples": "simplis"
   }
 ]
