@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "exemplo": "exenplo",
-    "necessidade": "nescessidade"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
@@ -88,5 +83,9 @@
     "problema": "probrema",
     "geralmente": "geralment",
     "melhor": "melhorr"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "muito": "muto"
   }
 ]
