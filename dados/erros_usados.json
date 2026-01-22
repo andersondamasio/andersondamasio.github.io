@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "constante": "constante."
-  },
-  {
     "problema": "probrema",
     "geralmente": "geralment",
     "melhor": "melhorr"
@@ -89,5 +85,10 @@
     "componente": "componentte",
     "resultado": "resultadoo",
     "exemplo": "exemplo."
+  },
+  {
+    "desafio": "desafío",
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnolgia"
   }
 ]
