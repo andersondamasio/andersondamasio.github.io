@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquitretura"
-  },
-  {
     "dispositivo": "disposotivo",
     "tecnologia": "tecnolgia",
     "funciona": "funciona."
@@ -90,5 +86,10 @@
   {
     "abordagem": "abordage",
     "melhor": "melor"
+  },
+  {
+    "suporte": "suprte",
+    "exemplo": "exenplo",
+    "simples": "simplis"
   }
 ]
