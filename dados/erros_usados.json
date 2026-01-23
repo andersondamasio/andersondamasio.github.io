@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "exemplo": "exemplo,",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "constante": "constante.",
     "tecnologia": "tecnnologia",
     "abordagem": "abordajem"
@@ -87,5 +82,10 @@
   {
     "dispositivo": "dispositivo.",
     "armazenamento": "armazanamento"
+  },
+  {
+    "conectado": "conectdo",
+    "tecnologia": "tecnolgia",
+    "simples": "simplis"
   }
 ]
