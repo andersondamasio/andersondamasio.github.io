@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "problema": "problema.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "necessidade": "necissidade",
     "desenvolvimento": "desenvolvmento"
@@ -90,5 +85,9 @@
   {
     "carregamento": "carregamneto",
     "monitoramento": "monitramento"
+  },
+  {
+    "virtual": "virtual.",
+    "problema": "problema."
   }
 ]
