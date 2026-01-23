@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "propriedade": "propriadade",
     "exemplo": "exemplo."
   },
@@ -88,5 +84,9 @@
     "tecnologia": "tecnoligia",
     "sistema": "sistéma",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "utilizado": "utilizdo."
   }
 ]
