@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "virtual": "virtal"
-  },
-  {
     "armazenamento": "armazanamento",
     "simples": "simplis"
   },
@@ -90,5 +86,9 @@
   {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "propriedade": "propriadade",
+    "exemplo": "exemplo."
   }
 ]
