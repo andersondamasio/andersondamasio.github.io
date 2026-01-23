@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "simples": "cimples",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "arquitetura": "arquitretura"
   },
@@ -87,5 +82,10 @@
     "operacional": "operaciona",
     "sistema": "cistema",
     "virtual": "virtal"
+  },
+  {
+    "constante": "constate",
+    "geralmente": "geralmete",
+    "arquitetura": "arquitretura"
   }
 ]
