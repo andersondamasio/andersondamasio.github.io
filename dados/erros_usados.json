@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "necessidade": "necissidade",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "internet": "internete",
     "desenvolvimento": "desenvolvimente"
   },
@@ -89,5 +84,8 @@
   {
     "virtual": "virtual.",
     "problema": "problema."
+  },
+  {
+    "arquitetura": "arquitertura"
   }
 ]
