@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componentte",
-    "resultado": "resultadoo",
-    "exemplo": "exemplo."
-  },
-  {
     "desafio": "desafío",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnolgia"
@@ -87,5 +82,10 @@
     "rotina": "rotína",
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "monitoramento": "monitramento",
+    "dispositivo": "disposotivo",
+    "exemplo": "exemplo,"
   }
 ]
