@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internete",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "sistema": "cistema",
     "exemplo": "exemplo,",
     "tecnologia": "tecnolgia"
@@ -87,5 +83,9 @@
   },
   {
     "arquitetura": "arquitertura"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "armazenamento": "armazanamento"
   }
 ]
