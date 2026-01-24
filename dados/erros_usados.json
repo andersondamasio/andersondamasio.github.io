@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "dispositivo": "disposotivo",
-    "exemplo": "exemplo,"
-  },
-  {
     "operacional": "operaciona",
     "sistema": "cistema",
     "virtual": "virtal"
@@ -89,5 +84,10 @@
   {
     "arquitetura": "arquitertura",
     "monitoramento": "monitorameto"
+  },
+  {
+    "problema": "probrema",
+    "acesso": "acesso.",
+    "simples": "simplis"
   }
 ]
