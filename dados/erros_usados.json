@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "armazenamento": "armazanamento"
-  },
-  {
     "conectado": "conectdo",
     "tecnologia": "tecnolgia",
     "simples": "simplis"
@@ -90,5 +86,10 @@
   {
     "resultado": "resutlado",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "funciona": "funciona.",
+    "monitoramento": "monitramento",
+    "utilizado": "utilizado."
   }
 ]
