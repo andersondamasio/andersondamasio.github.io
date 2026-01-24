@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "internet": "internat",
     "suporte": "suporte."
   },
@@ -88,5 +84,9 @@
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo",
     "arquitetura": "arquitretura"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "necessidade": "necissidade"
   }
 ]
