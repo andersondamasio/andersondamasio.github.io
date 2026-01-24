@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "sistema": "sistéma",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "conhecimento": "conhescimento",
     "utilizado": "utilizdo."
   },
@@ -88,5 +83,9 @@
     "arquitetura": "arquitretura",
     "tecnologia": "tecnolgia",
     "desafio": "desafío"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "acesso": "aceso"
   }
 ]
