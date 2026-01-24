@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "monitoramento": "monitramento"
-  },
-  {
     "virtual": "virtual.",
     "problema": "problema."
   },
@@ -88,5 +84,10 @@
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnnologia",
     "melhor": "melhorr"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquiteturra"
   }
 ]
