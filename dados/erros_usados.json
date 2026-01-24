@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "suporte": "suporte."
-  },
-  {
     "consistente": "consistente.",
     "correto": "correto.",
     "muito": "muto"
@@ -88,5 +84,10 @@
   {
     "gerenciamento": "gerenciamnto",
     "necessidade": "necissidade"
+  },
+  {
+    "operacional": "operacional.",
+    "dispositivo": "dispotivo",
+    "simples": "simlpes"
   }
 ]
