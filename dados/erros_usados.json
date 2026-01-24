@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "utilizado": "utilizdo."
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnoligia"
   },
@@ -87,5 +83,10 @@
   {
     "desenvolvimento": "desenvolmento",
     "acesso": "aceso"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exenplo",
+    "arquitetura": "arquitretura"
   }
 ]
