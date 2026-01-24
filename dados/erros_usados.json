@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectdo",
-    "tecnologia": "tecnolgia",
-    "simples": "simplis"
-  },
-  {
     "rotina": "rotína",
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionaliade"
@@ -91,5 +86,9 @@
     "funciona": "funciona.",
     "monitoramento": "monitramento",
     "utilizado": "utilizado."
+  },
+  {
+    "carregamento": "carregameno",
+    "desafio": "desafío"
   }
 ]
