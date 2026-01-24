@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "resultado": "resultadoo"
-  },
-  {
     "tecnologia": "tecnoligia",
     "sistema": "sistéma",
     "desenvolvimento": "desenvolvmento"
@@ -88,5 +84,10 @@
     "consistente": "consistente.",
     "correto": "correto.",
     "muito": "muto"
+  },
+  {
+    "necessidade": "nescessidade",
+    "processo": "proceso",
+    "propriedade": "propriedade."
   }
 ]
