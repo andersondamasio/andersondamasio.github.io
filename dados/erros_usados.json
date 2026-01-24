@@ -1,10 +1,5 @@
 [
   {
-    "consistente": "consistente.",
-    "correto": "correto.",
-    "muito": "muto"
-  },
-  {
     "necessidade": "nescessidade",
     "processo": "proceso",
     "propriedade": "propriedade."
@@ -89,5 +84,10 @@
     "operacional": "operacional.",
     "dispositivo": "dispotivo",
     "simples": "simlpes"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnolgia",
+    "sistema": "cistema"
   }
 ]
