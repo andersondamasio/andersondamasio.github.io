@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotína",
-    "tecnologia": "tecnoligia",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "monitoramento": "monitramento",
     "dispositivo": "disposotivo",
     "exemplo": "exemplo,"
@@ -90,5 +85,9 @@
   {
     "carregamento": "carregameno",
     "desafio": "desafío"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "monitoramento": "monitorameto"
   }
 ]
