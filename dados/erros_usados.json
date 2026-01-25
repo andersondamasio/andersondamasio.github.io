@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "desafio": "desafío"
-  },
-  {
     "arquitetura": "arquitertura",
     "monitoramento": "monitorameto"
   },
@@ -92,5 +88,9 @@
     "acesso": "aceso",
     "arquitetura": "arquitretura",
     "exemplo": "exemplo,"
+  },
+  {
+    "virtual": "virtual.",
+    "sistema": "cistema"
   }
 ]
