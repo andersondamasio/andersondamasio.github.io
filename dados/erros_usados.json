@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "tecnologia": "tecnnologia",
-    "melhor": "melhorr"
-  },
-  {
     "dispositivo": "disposotivo",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra"
@@ -91,5 +86,9 @@
     "processo": "prosseso",
     "prioridade": "prioriade",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "sistema": "sistéma"
   }
 ]
