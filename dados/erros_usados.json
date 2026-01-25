@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "monitoramento": "monitramento",
-    "utilizado": "utilizado."
-  },
-  {
     "carregamento": "carregameno",
     "desafio": "desafío"
   },
@@ -92,5 +87,10 @@
     "complexidade": "complexidade.",
     "abordagem": "abordage",
     "necessidade": "necissidade"
+  },
+  {
+    "acesso": "aceso",
+    "arquitetura": "arquitretura",
+    "exemplo": "exemplo,"
   }
 ]
