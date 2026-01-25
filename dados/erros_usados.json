@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "dispositivo": "dispotivo",
-    "simples": "simlpes"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnolgia",
     "sistema": "cistema"
@@ -92,5 +87,9 @@
     "arquitetura": "arquiteturra",
     "melhor": "melhorr",
     "muito": "muiito"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolmento"
   }
 ]
