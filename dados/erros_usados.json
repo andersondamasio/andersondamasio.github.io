@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "funciona": "funciona.",
     "monitoramento": "monitramento",
     "utilizado": "utilizado."
@@ -91,5 +87,10 @@
     "conectado": "conectado.",
     "suporte": "suportte",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "complexidade": "complexidade.",
+    "abordagem": "abordage",
+    "necessidade": "necissidade"
   }
 ]
