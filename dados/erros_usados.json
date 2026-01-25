@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muiito",
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "muito": "muto",
     "exemplo": "exemplo,",
     "controle": "controle."
@@ -89,5 +84,10 @@
   {
     "desafio": "desafiu",
     "sistema": "sistéma"
+  },
+  {
+    "exemplo": "exemplo,",
+    "arquitetura": "arquitretura",
+    "abordagem": "abordagem."
   }
 ]
