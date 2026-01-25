@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "melhor": "melhorr",
     "exemplo": "exemplo."
   },
@@ -90,5 +85,10 @@
   {
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma"
+  },
+  {
+    "exemplo": "exemplo,",
+    "acesso": "acesço",
+    "problema": "problema."
   }
 ]

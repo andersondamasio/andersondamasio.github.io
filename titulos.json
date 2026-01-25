@@ -53210,5 +53210,14 @@
     "dataFonte": "2026-01-23T21:50:47.000Z",
     "categoria": "Tecnologia Automotiva",
     "urlFonte": "https://techcrunch.com/2026/01/23/waymo-probed-by-national-transportation-safety-board-over-illegal-school-bus-behavior/"
+  },
+  {
+    "titulo": "Como um Regex Malfeito Pode Comprometer a Segurança de Repositórios na Nuvem",
+    "noticiaOriginal": "Two Missing Characters: How a Regex Flaw Exposed AWS GitHub Repos to Supply-Chain Risk",
+    "url": "artigos/seguranca/como-um-regex-malfeito-pode-comprometer-a-seguranca-de-repositorios-na-nuvem.html",
+    "data": "2026-01-25T08:30:46.237Z",
+    "dataFonte": "2026-01-25T07:28:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/01/aws-github-vulnerability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
