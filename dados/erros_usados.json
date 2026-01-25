@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "prioridade": "prioriade",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra"
@@ -89,5 +85,10 @@
     "constante": "constanate",
     "paralelo": "paralélo",
     "arquitetura": "arquitertura"
+  },
+  {
+    "muito": "muiito",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]
