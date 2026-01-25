@@ -53255,5 +53255,14 @@
     "dataFonte": "2026-01-25T12:01:16.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/linux-2026-best-distros/"
+  },
+  {
+    "titulo": "Melhorando Testes A/B com Bandits: Uma Nova Abordagem para Experimentação",
+    "noticiaOriginal": "Enhancing A/B Testing at DoorDash with Multi-Armed Bandits",
+    "url": "artigos/inteligencia-artificial/melhorando-testes-a-b-com-bandits-uma-nova-abordagem-para-experimentacao.html",
+    "data": "2026-01-25T13:35:40.552Z",
+    "dataFonte": "2026-01-25T13:00:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://www.infoq.com/news/2026/01/multi-armed-bandits-doordash/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
