@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnolgia",
-    "desafio": "desafío"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "acesso": "aceso"
   },
@@ -92,5 +87,9 @@
   {
     "geralmente": "geralment",
     "melhor": "melor"
+  },
+  {
+    "exemplo": "exenplo",
+    "abordagem": "abordagem."
   }
 ]
