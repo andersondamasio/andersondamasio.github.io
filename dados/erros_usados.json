@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "processo": "proceso",
-    "propriedade": "propriedade."
-  },
-  {
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvimente"
   },
@@ -89,5 +84,10 @@
     "arquitetura": "arquitretura",
     "tecnologia": "tecnolgia",
     "sistema": "cistema"
+  },
+  {
+    "constante": "constanate",
+    "paralelo": "paralélo",
+    "arquitetura": "arquitertura"
   }
 ]
