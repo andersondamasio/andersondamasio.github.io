@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "acesso": "acesço",
-    "problema": "problema."
-  },
-  {
     "conectado": "conectado.",
     "suporte": "suportte",
     "funcionalidade": "funcionalidade."
@@ -90,5 +85,9 @@
     "simples": "simlpes",
     "monitoramento": "monitoramento.",
     "controle": "controlle"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "sistema": "sistma"
   }
 ]
