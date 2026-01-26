@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "sistema": "sistéma",
-    "muito": "muinto"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
@@ -93,5 +88,9 @@
     "geralmente": "geralmete",
     "funcionalidade": "funcionalidade.",
     "melhor": "melhorr"
+  },
+  {
+    "sistema": "sistéma",
+    "gerenciamento": "gerenciamnto"
   }
 ]
