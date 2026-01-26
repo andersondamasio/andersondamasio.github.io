@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parceriaa",
-    "prioridade": "prioriade"
-  },
-  {
     "desafio": "desafiu",
     "sistema": "sistéma"
   },
@@ -91,5 +87,10 @@
     "categoria": "categória",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "simples": "cimples",
+    "problema": "problema."
   }
 ]
