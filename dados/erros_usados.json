@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "melhor": "melhorr",
-    "muito": "muiito"
-  },
-  {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolmento"
   },
@@ -90,5 +85,10 @@
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
+  },
+  {
+    "personalizado": "personalisado",
+    "problema": "poblema",
+    "carregamento": "carregamento."
   }
 ]
