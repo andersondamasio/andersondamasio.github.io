@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtual.",
-    "sistema": "cistema"
-  },
-  {
     "melhor": "melhorr",
     "funciona": "funsiona",
     "utilizado": "utilizdo"
@@ -88,5 +84,10 @@
     "simples": "simplis",
     "gerenciamento": "gerenciamente",
     "exemplo": "exenplo"
+  },
+  {
+    "necessidade": "necessidade.",
+    "propriedade": "propriadade",
+    "complexidade": "complexidade."
   }
 ]
