@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "parceria": "parceriaa",
     "prioridade": "prioriade"
   },
@@ -90,5 +86,10 @@
     "personalizado": "personalisado",
     "problema": "poblema",
     "carregamento": "carregamento."
+  },
+  {
+    "categoria": "categória",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnnologia"
   }
 ]
