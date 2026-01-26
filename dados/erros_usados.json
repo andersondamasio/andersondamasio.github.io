@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "recurso": "recusso"
-  },
-  {
     "suporte": "suprte",
     "sistema": "sistéma",
     "exemplo": "exemplo,"
@@ -90,5 +86,9 @@
     "dispositivo": "disposotivo",
     "muito": "muinto",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "resultado": "resultao",
+    "acesso": "acesso."
   }
 ]
