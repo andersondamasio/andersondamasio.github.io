@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "sistema": "sistma",
-    "simples": "simplis"
-  },
-  {
     "processo": "prosseso",
     "prioridade": "prioriade",
     "desenvolvimento": "desenvolmento"
@@ -89,5 +84,10 @@
     "internet": "internat",
     "tecnologia": "tecnoligia",
     "dispositivo": "dispotivo"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "sistema": "sistéma",
+    "muito": "muinto"
   }
 ]
