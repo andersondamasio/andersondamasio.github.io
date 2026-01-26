@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melhorr",
-    "funciona": "funsiona",
-    "utilizado": "utilizdo"
-  },
-  {
     "resultado": "resultao",
     "dispositivo": "disposotivo"
   },
@@ -89,5 +84,10 @@
     "necessidade": "necessidade.",
     "propriedade": "propriadade",
     "complexidade": "complexidade."
+  },
+  {
+    "constante": "constante.",
+    "conhecimento": "conhescimento",
+    "arquitetura": "arquitertura"
   }
 ]
