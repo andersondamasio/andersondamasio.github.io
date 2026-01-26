@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "tecnologia": "tecnoligia",
-    "dispositivo": "dispotivo"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma",
     "muito": "muinto"
@@ -93,5 +88,10 @@
     "melhor": "melor",
     "geralmente": "geralment",
     "suporte": "suporte."
+  },
+  {
+    "geralmente": "geralmete",
+    "funcionalidade": "funcionalidade.",
+    "melhor": "melhorr"
   }
 ]
