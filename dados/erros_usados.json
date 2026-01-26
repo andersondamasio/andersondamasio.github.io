@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "prioridade": "prioriade",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma"
   },
@@ -89,5 +84,10 @@
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma",
     "muito": "muinto"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura"
   }
 ]
