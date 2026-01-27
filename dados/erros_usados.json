@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "sistema": "cistema"
-  },
-  {
     "recurso": "recusso",
     "virtual": "virtuaal",
     "dispositivo": "disposotivo"
@@ -92,5 +88,10 @@
   {
     "efetivo": "efetívo",
     "monitoramento": "monitramento"
+  },
+  {
+    "prioridade": "prioridade.",
+    "monitoramento": "monitoramento.",
+    "estrutura": "estrututra"
   }
 ]
