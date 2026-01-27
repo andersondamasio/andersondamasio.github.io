@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "simples": "cimples",
-    "problema": "problema."
-  },
-  {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnnologia",
     "dispositivo": "disposotivo"
@@ -89,5 +84,9 @@
     "arquitetura": "arquiteturra",
     "sistema": "cistema",
     "suporte": "suportte"
+  },
+  {
+    "acesso": "acesso.",
+    "tecnologia": "tecnolgia"
   }
 ]
