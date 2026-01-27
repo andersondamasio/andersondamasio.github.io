@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotina.",
-    "controle": "controlle",
-    "simples": "simlpes"
-  },
-  {
     "desafio": "desafío",
     "computador": "computador,",
     "problema": "problema."
@@ -89,5 +84,9 @@
     "funcionalidade": "funcionalidade.",
     "monitoramento": "monitorameto",
     "necessidade": "necessidade."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "suporte": "suporte."
   }
 ]
