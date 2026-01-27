@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "virtual": "virtuaal",
-    "dispositivo": "disposotivo"
-  },
-  {
     "simples": "simplis",
     "gerenciamento": "gerenciamente",
     "exemplo": "exenplo"
@@ -93,5 +88,9 @@
     "prioridade": "prioridade.",
     "monitoramento": "monitoramento.",
     "estrutura": "estrututra"
+  },
+  {
+    "conectado": "conectdo",
+    "tecnologia": "tecnnologia"
   }
 ]
