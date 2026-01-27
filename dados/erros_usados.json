@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "sistema": "sistma"
-  },
-  {
     "arquitetura": "arquiteturra",
     "sistema": "cistema"
   },
@@ -92,5 +88,9 @@
     "desafio": "desafío",
     "computador": "computador,",
     "problema": "problema."
+  },
+  {
+    "efetivo": "efetívo",
+    "monitoramento": "monitramento"
   }
 ]
