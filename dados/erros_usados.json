@@ -1,10 +1,5 @@
 [
   {
-    "categoria": "categória",
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquiteturra",
     "simples": "cimples",
     "problema": "problema."
@@ -89,5 +84,10 @@
   },
   {
     "mensagem": "mensagen"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "sistema": "cistema",
+    "suporte": "suportte"
   }
 ]
