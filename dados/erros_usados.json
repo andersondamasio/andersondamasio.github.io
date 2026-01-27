@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "muito": "muinto",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "resultado": "resultao",
     "acesso": "acesso."
   },
@@ -92,5 +87,9 @@
   {
     "funciona": "funciona.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "virtual": "virtual.",
+    "constante": "constante."
   }
 ]
