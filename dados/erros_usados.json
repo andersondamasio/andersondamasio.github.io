@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "rotina": "rotina.",
     "controle": "controlle",
     "simples": "simlpes"
@@ -88,5 +84,10 @@
     "necessidade": "necissidade",
     "consistente": "consistente.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "monitoramento": "monitorameto",
+    "necessidade": "necessidade."
   }
 ]

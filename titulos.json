@@ -53723,5 +53723,14 @@
     "dataFonte": "2026-01-27T21:16:10.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://techcrunch.com/2026/01/27/anthropic-reportedly-upped-its-latest-raise-to-20b/"
+  },
+  {
+    "titulo": "Gerenciando Máquinas Virtuais no Linux: Uma Abordagem Simples e Eficaz",
+    "noticiaOriginal": "Need to manage virtual machines on Linux? I found an easier way",
+    "url": "artigos/devops/gerenciando-maquinas-virtuais-no-linux-uma-abordagem-simples-e-eficaz.html",
+    "data": "2026-01-27T22:26:01.367Z",
+    "dataFonte": "2026-01-27T22:15:37.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.zdnet.com/article/using-cockpit-as-a-virtual-machine-manager-on-linux/"
   }
 ]
