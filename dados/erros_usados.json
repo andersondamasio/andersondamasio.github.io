@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia",
-    "exemplo": "exemplo."
-  },
-  {
     "personalizado": "personalisado",
     "problema": "poblema",
     "carregamento": "carregamento."
@@ -92,5 +87,9 @@
     "abordagem": "abordajem",
     "sistema": "cistema",
     "estrutura": "estrututra"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "tecnologia": "tecnoligia"
   }
 ]
