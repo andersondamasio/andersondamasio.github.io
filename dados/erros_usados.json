@@ -1,10 +1,5 @@
 [
   {
-    "personalizado": "personalisado",
-    "problema": "poblema",
-    "carregamento": "carregamento."
-  },
-  {
     "categoria": "categória",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnnologia"
@@ -91,5 +86,8 @@
   {
     "conhecimento": "conhecimento.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "mensagem": "mensagen"
   }
 ]
