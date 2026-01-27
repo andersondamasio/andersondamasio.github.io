@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "monitoramento": "monitoramento.",
-    "controle": "controlle"
-  },
-  {
     "armazenamento": "armasenamento",
     "sistema": "sistma"
   },
@@ -92,5 +87,10 @@
     "rotina": "rotina.",
     "controle": "controlle",
     "simples": "simlpes"
+  },
+  {
+    "desafio": "desafío",
+    "computador": "computador,",
+    "problema": "problema."
   }
 ]
