@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "acesso": "acesso."
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
@@ -91,5 +87,10 @@
   {
     "virtual": "virtual.",
     "constante": "constante."
+  },
+  {
+    "abordagem": "abordajem",
+    "sistema": "cistema",
+    "estrutura": "estrututra"
   }
 ]
