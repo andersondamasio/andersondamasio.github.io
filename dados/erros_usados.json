@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrtura",
-    "suporte": "suportte"
-  },
-  {
     "dispositivo": "disposotivo",
     "muito": "muinto",
     "desenvolvimento": "desenvolvimente"
@@ -92,5 +88,9 @@
     "abordagem": "abordage",
     "controle": "contrle",
     "arquitetura": "arquitertura"
+  },
+  {
+    "funciona": "funciona.",
+    "tecnologia": "tecnolgia"
   }
 ]
