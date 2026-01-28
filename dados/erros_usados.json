@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "monitoramento": "monitorameto",
-    "processo": "prosseso"
-  },
-  {
     "necessidade": "necissidade",
     "consistente": "consistente.",
     "desenvolvimento": "desenvolmento"
@@ -92,5 +87,10 @@
     "recurso": "reccurso",
     "sistema": "cistema",
     "exemplo": "exenplo"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "dispositivo": "dispotivo",
+    "problema": "problema."
   }
 ]
