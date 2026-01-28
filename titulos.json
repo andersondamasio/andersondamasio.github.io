@@ -53804,5 +53804,14 @@
     "dataFonte": "2026-01-28T08:00:00.000Z",
     "categoria": "Front-end",
     "urlFonte": "https://www.infoq.com/news/2026/01/html-invoker-commands/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Uma Abordagem Inovadora para Caching: Unindo Respostas e Requisições em Ambientes Distribuídos",
+    "noticiaOriginal": "Article: One Cache to Rule Them All: Handling Responses and In-Flight Requests with Durable Objects",
+    "url": "artigos/desenvolvimento-de-software/uma-abordagem-inovadora-para-caching-unindo-respostas-e-requisicoes-em-ambientes-distribuidos.html",
+    "data": "2026-01-28T09:40:22.935Z",
+    "dataFonte": "2026-01-28T09:00:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
