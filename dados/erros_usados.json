@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtual.",
-    "constante": "constante."
-  },
-  {
     "abordagem": "abordajem",
     "sistema": "cistema",
     "estrutura": "estrututra"
@@ -88,5 +84,10 @@
   {
     "utilizado": "utilizado.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "desafio": "desafío",
+    "arquitetura": "arquitertura"
   }
 ]
