@@ -1,0 +1,126 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Categoria: Logística</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg: #f0f2f5;
+      --text: #333;
+      --main-bg: #fff;
+      --link: #0a66c2;
+      --link-hover: #084e91;
+      --footer: #666;
+      --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    body.dark-theme {
+      --bg: #181b1f;
+      --text: #ddd;
+      --main-bg: #23262d;
+      --link: #67aaff;
+      --link-hover: #f1c40f;
+      --footer: #b3b3b3;
+      --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0; padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+    main {
+      max-width: 800px; margin: 2rem auto;
+      background-color: var(--main-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: var(--box-shadow);
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--link);
+    }
+    ul { padding-left: 1.5rem; line-height: 1.8; }
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: var(--link);
+    }
+    a:hover { text-decoration: underline; color: var(--link-hover);}
+    footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      padding: 8px 16px;
+      margin-top: 2rem;
+      justify-content: flex-start;
+      scroll-padding-left: 16px;
+      gap: 12px;
+    }
+    .scroll-container a {
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--link);
+      border: 1px solid var(--link);
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .scroll-container a:hover, .scroll-container a.active {
+      background-color: var(--link);
+      color: var(--main-bg);
+    }
+  </style>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+</head>
+<body>
+<!-- NOVO: Botão de tema escuro/claro -->
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+  
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
+    <a href="../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+  </nav>
+</header>
+  <main>
+    <h1>Categoria: Logística</h1>
+    <ul>
+      <li><a href="../artigos/logistica/a-dependencia-dos-gigantes-licoes-da-estreia-da-shadowfax.html">A dependência dos gigantes: lições da estreia da Shadowfax</a></li>
+    </ul>
+    
+  </main>
+  
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="../index.html">Início</a> |
+    <a href="../artigos/index.html">Artigos</a> |
+    <a href="../sobre.html">Sobre</a> |
+    <a href="../contato.html">Contato</a> |
+    <a href="../termos.html">Termos</a> |
+    <a href="../politica.html">Privacidade</a> |
+    <a href="../politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+
+</body>

@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "internet": "internat",
-    "suporte": "suporte."
-  },
-  {
     "complexidade": "complexidade.",
     "arquitetura": "arquiteturra",
     "melhor": "melhorr"
@@ -89,5 +84,10 @@
   {
     "resultado": "resultadoo",
     "recurso": "recuro"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvmento",
+    "sistema": "sistma"
   }
 ]
