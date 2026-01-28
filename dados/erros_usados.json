@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "sistema": "cistema",
-    "suporte": "suportte"
-  },
-  {
     "acesso": "acesso.",
     "tecnologia": "tecnolgia"
   },
@@ -92,5 +87,10 @@
     "carregamento": "carregamneto",
     "sistema": "cistema",
     "operacional": "operacionl"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "muito": "muiito",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
