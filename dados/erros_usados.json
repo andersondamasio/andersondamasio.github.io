@@ -1,9 +1,5 @@
 [
   {
-    "efetivo": "efetívo",
-    "monitoramento": "monitramento"
-  },
-  {
     "prioridade": "prioridade.",
     "monitoramento": "monitoramento.",
     "estrutura": "estrututra"
@@ -88,5 +84,10 @@
     "geralmente": "geralmete",
     "simples": "simplis",
     "acesso": "aceso"
+  },
+  {
+    "parceria": "parcería",
+    "exemplo": "exenplo",
+    "propriedade": "propriedade."
   }
 ]
