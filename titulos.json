@@ -53831,5 +53831,14 @@
     "dataFonte": "2026-01-28T11:21:38.000Z",
     "categoria": "Desenvolvimento de Software",
     "urlFonte": "https://www.bbc.com/news/articles/cx2ywzxlxnlo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "A Arte da Observabilidade: Como Logs, Métricas e Alertas Podem Salvar Seu Sistema",
+    "noticiaOriginal": "Railway Highlights the Importance of Logs, Metrics, Traces, and Alerts for Diagnosing System Failure",
+    "url": "artigos/devops/a-arte-da-observabilidade-como-logs-metricas-e-alertas-podem-salvar-seu-sistema.html",
+    "data": "2026-01-28T12:54:08.989Z",
+    "dataFonte": "2026-01-28T12:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2026/01/railway-diagnosing-failure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordajem",
-    "sistema": "cistema",
-    "estrutura": "estrututra"
-  },
-  {
     "conhecimento": "conhecimento.",
     "tecnologia": "tecnoligia"
   },
@@ -89,5 +84,10 @@
     "gerenciamento": "gerenciamnto",
     "desafio": "desafío",
     "arquitetura": "arquitertura"
+  },
+  {
+    "problema": "poblema",
+    "sistema": "sistéma",
+    "funcionalidade": "funcionaliade"
   }
 ]
