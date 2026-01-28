@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "muito": "muto",
     "sistema": "sistma",
     "armazenamento": "armasenamento"
@@ -92,5 +88,9 @@
     "arquitetura": "arquitretura",
     "muito": "muiito",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "funciona": "funciona,",
+    "dispositivo": "dispositivo."
   }
 ]
