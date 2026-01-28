@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "exemplo": "exenplo",
-    "propriedade": "propriedade."
-  },
-  {
     "operacional": "operacionl",
     "exemplo": "exemplo.",
     "necessidade": "necissidade"
@@ -93,5 +88,9 @@
     "suporte": "suporte.",
     "simples": "simlpes",
     "funciona": "funciona."
+  },
+  {
+    "computador": "computador.",
+    "constante": "constanate"
   }
 ]
