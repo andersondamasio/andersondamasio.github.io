@@ -1,9 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "suporte": "suportte"
-  },
-  {
     "armazenamento": "armazenamentto",
     "internet": "internat",
     "suporte": "suporte."
@@ -89,5 +85,9 @@
   {
     "acesso": "acesço",
     "melhor": "melhorr"
+  },
+  {
+    "resultado": "resultadoo",
+    "recurso": "recuro"
   }
 ]
