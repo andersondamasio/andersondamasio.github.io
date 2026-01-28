@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "mensagem": "mensagen"
   },
   {
@@ -89,5 +85,10 @@
     "problema": "poblema",
     "sistema": "sistéma",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "prioridade": "prioriade",
+    "dispositivo": "dispositivo.",
+    "problema": "problema."
   }
 ]
