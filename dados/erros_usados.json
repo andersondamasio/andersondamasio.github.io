@@ -1,9 +1,5 @@
 [
   {
-    "computador": "computador.",
-    "constante": "constanate"
-  },
-  {
     "tecnologia": "tecnnologia",
     "simples": "cimples"
   },
@@ -89,5 +85,9 @@
     "componente": "componente.",
     "paralelo": "paralelo.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "mensagem": "menssagem",
+    "tecnologia": "tecnoligia"
   }
 ]
