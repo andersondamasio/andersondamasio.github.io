@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "desafio": "desafío",
-    "arquitetura": "arquitertura"
-  },
-  {
     "problema": "poblema",
     "sistema": "sistéma",
     "funcionalidade": "funcionaliade"
@@ -92,5 +87,10 @@
   {
     "resultado": "resultao",
     "exemplo": "exemplo,"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "internet": "internete",
+    "exemplo": "exenplo"
   }
 ]
