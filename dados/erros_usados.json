@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizado.",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "desafio": "desafío",
     "arquitetura": "arquitertura"
@@ -92,5 +88,9 @@
     "processo": "processso",
     "tecnologia": "tecnnologia",
     "sistema": "sistma"
+  },
+  {
+    "resultado": "resultao",
+    "exemplo": "exemplo,"
   }
 ]
