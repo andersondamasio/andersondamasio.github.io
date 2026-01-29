@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "simples": "simlpes",
-    "funciona": "funciona."
-  },
-  {
     "computador": "computador.",
     "constante": "constanate"
   },
@@ -89,5 +84,10 @@
     "monitoramento": "monitramento",
     "prioridade": "prioriade.",
     "abordagem": "abordagem."
+  },
+  {
+    "componente": "componente.",
+    "paralelo": "paralelo.",
+    "arquitetura": "arquitertura"
   }
 ]
