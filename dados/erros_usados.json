@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internert",
-    "tecnologia": "tecnnologia",
-    "processo": "processso"
-  },
-  {
     "suporte": "suporte.",
     "simples": "simlpes",
     "funciona": "funciona."
@@ -89,5 +84,10 @@
     "desafio": "desafiu",
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "monitoramento": "monitramento",
+    "prioridade": "prioriade.",
+    "abordagem": "abordagem."
   }
 ]
