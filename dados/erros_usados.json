@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultadoo",
-    "recurso": "recuro"
-  },
-  {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistma"
@@ -91,5 +87,9 @@
   {
     "controle": "controlle",
     "abordagem": "abordage"
+  },
+  {
+    "rotina": "rotina.",
+    "tecnologia": "tecnnologia"
   }
 ]
