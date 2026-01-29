@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "dispositivo": "dispositivo.",
-    "problema": "problema."
-  },
-  {
     "carregamento": "carregamneto",
     "sistema": "cistema",
     "operacional": "operacionl"
@@ -92,5 +87,9 @@
     "acesso": "aceso",
     "funciona": "funciona,",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "sistema": "sistéma"
   }
 ]
