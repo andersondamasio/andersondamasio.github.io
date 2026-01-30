@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "internet": "internete",
-    "exemplo": "exenplo"
-  },
-  {
     "acesso": "aceso",
     "funciona": "funciona,",
     "tecnologia": "tecnoligia"
@@ -90,5 +85,9 @@
   },
   {
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "executado": "excutado",
+    "tecnologia": "tecnoligia"
   }
 ]

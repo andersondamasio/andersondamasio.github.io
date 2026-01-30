@@ -54182,5 +54182,14 @@
     "dataFonte": "2026-01-30T08:00:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.infoq.com/news/2026/01/copilot-agents-csharp-winforms/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Como o WASM Pode Transformar a Arquitetura de Funções em Nuvem",
+    "noticiaOriginal": "Presentation: WASM Components are a FaaS' Best Friend",
+    "url": "artigos/cloud/como-o-wasm-pode-transformar-a-arquitetura-de-funcoes-em-nuvem.html",
+    "data": "2026-01-30T09:41:00.037Z",
+    "dataFonte": "2026-01-30T09:30:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/presentations/wasm-components-faas/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
