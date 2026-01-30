@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "funciona": "funciona,",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "tecnologia": "tecnolgia",
     "sistema": "sistéma"
   },
@@ -89,5 +84,10 @@
   {
     "executado": "excutado",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "automatizado": "automatisado",
+    "conectado": "conetado",
+    "sistema": "cistema"
   }
 ]
