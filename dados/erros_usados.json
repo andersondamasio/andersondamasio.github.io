@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "prioridade": "prioriade.",
-    "abordagem": "abordagem."
-  },
-  {
     "componente": "componente.",
     "paralelo": "paralelo.",
     "arquitetura": "arquitertura"
@@ -93,5 +88,9 @@
     "sistema": "sistéma",
     "desafio": "desafiu",
     "suporte": "suportte"
+  },
+  {
+    "sistema": "sistma",
+    "tecnologia": "tecnnologia"
   }
 ]
