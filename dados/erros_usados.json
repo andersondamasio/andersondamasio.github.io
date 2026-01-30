@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "sistema": "sistéma"
-  },
-  {
     "controle": "contrle",
     "resultado": "resutlado",
     "simples": "simplis"
@@ -89,5 +85,10 @@
     "automatizado": "automatisado",
     "conectado": "conetado",
     "sistema": "cistema"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "sistema": "sistéma",
+    "arquitetura": "arquitertura"
   }
 ]
