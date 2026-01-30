@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "constante": "constanate",
-    "parceria": "parceriaa"
-  },
-  {
     "armazenamento": "armazenamentto",
     "computador": "computadorr",
     "dispositivo": "disposotivo"
@@ -93,5 +88,10 @@
     "sistema": "cistema",
     "tecnologia": "tecnoligia",
     "gerenciamento": "gerenciamnto"
+  },
+  {
+    "processo": "prosseso",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquiteturra"
   }
 ]
