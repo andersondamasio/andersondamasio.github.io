@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componente.",
-    "paralelo": "paralelo.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "mensagem": "menssagem",
     "tecnologia": "tecnoligia"
   },
@@ -92,5 +87,10 @@
   {
     "sistema": "sistma",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "complexidade": "complexsidade",
+    "abordagem": "abordagem.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
