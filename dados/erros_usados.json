@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "resultado": "resutlado",
-    "simples": "simplis"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "muito": "muto",
     "recurso": "recusso"
@@ -90,5 +85,10 @@
     "desenvolvimento": "desenvolmento",
     "sistema": "sistéma",
     "arquitetura": "arquitertura"
+  },
+  {
+    "carregamento": "carregameno",
+    "acesso": "acesso.",
+    "virtual": "virtual."
   }
 ]
