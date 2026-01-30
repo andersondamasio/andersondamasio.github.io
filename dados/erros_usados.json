@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "prioridade": "prioridade."
-  },
-  {
     "desafio": "desafiu",
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolvimente"
@@ -92,5 +88,10 @@
     "desenvolvimento": "desenvolmento",
     "sistema": "cistema",
     "computador": "computador,"
+  },
+  {
+    "problema": "probrema",
+    "monitoramento": "monitoramento.",
+    "arquitetura": "arquitertura"
   }
 ]
