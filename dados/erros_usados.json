@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "processo": "prosseso",
-    "sistema": "cistema"
-  },
-  {
     "conhecimento": "conhecimeto",
     "prioridade": "prioridade."
   },
@@ -92,5 +87,10 @@
     "simples": "simplis",
     "funcionalidade": "funcionaliadde",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "sistema": "cistema",
+    "computador": "computador,"
   }
 ]
