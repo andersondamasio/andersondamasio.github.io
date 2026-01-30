@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "menssagem",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "necessidade": "necessidade.",
     "constante": "constanate",
     "parceria": "parceriaa"
@@ -92,5 +88,10 @@
     "complexidade": "complexsidade",
     "abordagem": "abordagem.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "sistema": "cistema",
+    "tecnologia": "tecnoligia",
+    "gerenciamento": "gerenciamnto"
   }
 ]
