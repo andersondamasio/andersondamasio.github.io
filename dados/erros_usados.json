@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "tecnologia": "tecnoligia",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "processo": "prosseso",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquiteturra"
@@ -90,5 +85,9 @@
     "abordagem": "abordajem",
     "gerenciamento": "gerenciamnto",
     "prioridade": "prioriade"
+  },
+  {
+    "suporte": "suportte",
+    "gerenciamento": "gerenciamneto"
   }
 ]
