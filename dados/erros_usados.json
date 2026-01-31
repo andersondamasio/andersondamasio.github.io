@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "complexidade": "complexsidade",
     "abordagem": "abordagem.",
     "desenvolvimento": "desenvolvmento"
@@ -89,5 +85,10 @@
     "conhecimento": "conhescimento",
     "resultado": "resultao",
     "controle": "controle."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquiteturra",
+    "funciona": "funciona."
   }
 ]
