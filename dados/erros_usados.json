@@ -1,9 +1,5 @@
 [
   {
-    "executado": "excutado",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "automatizado": "automatisado",
     "conectado": "conetado",
     "sistema": "cistema"
@@ -94,5 +90,8 @@
   {
     "dispositivo": "dispotivo",
     "suporte": "suporte."
+  },
+  {
+    "simples": "cimples"
   }
 ]
