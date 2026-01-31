@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "acesso": "acesso.",
-    "virtual": "virtual."
-  },
-  {
     "simples": "simlpes",
     "necessidade": "necessidade.",
     "problema": "poblema"
@@ -92,5 +87,10 @@
   {
     "funciona": "funciona.",
     "problema": "poblema"
+  },
+  {
+    "rotina": "rotna",
+    "simples": "simplis",
+    "necessidade": "nescessidade"
   }
 ]
