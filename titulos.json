@@ -54461,5 +54461,14 @@
     "dataFonte": "2026-01-31T17:54:12.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://techcrunch.com/2026/01/31/nvidia-ceo-pushes-back-against-report-that-his-companys-100b-openai-investment-has-stalled/"
+  },
+  {
+    "titulo": "Os riscos escondidos nas imagens de contêiner: por que você deve olhar além do óbvio",
+    "noticiaOriginal": "Chainguard Finds 98% of Container CVEs Lurking Outside the Top 20 Images",
+    "url": "artigos/seguranca/os-riscos-escondidos-nas-imagens-de-conteiner-por-que-voce-deve-olhar-alem-do-obvio.html",
+    "data": "2026-01-31T19:24:00.357Z",
+    "dataFonte": "2026-01-31T19:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/01/chainguard-opensource-vulns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
