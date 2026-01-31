@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internert",
-    "muito": "muto",
-    "simples": "cimples"
-  },
-  {
     "prioridade": "prioriade",
     "estrutura": "estrura",
     "acesso": "acesço"
@@ -89,5 +84,10 @@
     "necessidade": "necessidade.",
     "suporte": "suporte.",
     "conhecimento": "conhecimento."
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "complexidade": "complezidade",
+    "arquitetura": "arquiteturra"
   }
 ]
