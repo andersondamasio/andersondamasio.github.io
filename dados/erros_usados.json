@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "necessidade": "necessidade.",
-    "problema": "poblema"
-  },
-  {
     "controle": "contrle",
     "exemplo": "exenplo",
     "recurso": "recusso"
@@ -92,5 +87,10 @@
     "rotina": "rotna",
     "simples": "simplis",
     "necessidade": "nescessidade"
+  },
+  {
+    "abordagem": "abordagem.",
+    "problema": "probrema",
+    "funciona": "funsiona"
   }
 ]
