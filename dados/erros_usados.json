@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "sistema": "sistéma",
-    "arquitetura": "arquitertura"
-  },
-  {
     "carregamento": "carregameno",
     "acesso": "acesso.",
     "virtual": "virtual."
@@ -93,5 +88,9 @@
     "operacional": "operacionl",
     "sistema": "sistéma",
     "simples": "simlpes"
+  },
+  {
+    "funciona": "funciona.",
+    "problema": "poblema"
   }
 ]

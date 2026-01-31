@@ -54380,5 +54380,14 @@
     "dataFonte": "2026-01-31T09:00:50.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/best-presidents-day-phone-deals-2026/"
+  },
+  {
+    "titulo": "Gerenciando Conexões: A Nova Facilidade do AlloyDB no Google Cloud",
+    "noticiaOriginal": "Google Introduces Managed Connection Pooling for AlloyDB",
+    "url": "artigos/banco-de-dados/gerenciando-conexoes-a-nova-facilidade-do-alloydb-no-google-cloud.html",
+    "data": "2026-01-31T10:27:26.023Z",
+    "dataFonte": "2026-01-31T10:18:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/01/alloydb-managed-connection-pool/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
