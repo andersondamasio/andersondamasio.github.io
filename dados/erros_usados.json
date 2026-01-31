@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "desafio": "desafiu",
-    "suporte": "suportte"
-  },
-  {
     "sistema": "sistma",
     "tecnologia": "tecnnologia"
   },
@@ -89,5 +84,10 @@
   {
     "exemplo": "exemplo,",
     "necessidade": "necissidade"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "resultado": "resultao",
+    "controle": "controle."
   }
 ]
