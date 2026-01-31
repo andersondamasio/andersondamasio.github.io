@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "exemplo": "exenplo",
-    "recurso": "recusso"
-  },
-  {
     "simples": "simplis",
     "funcionalidade": "funcionaliadde",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,10 @@
     "abordagem": "abordagem.",
     "problema": "probrema",
     "funciona": "funsiona"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "muito": "muiito",
+    "tecnologia": "tecnoligia"
   }
 ]
