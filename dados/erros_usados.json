@@ -1,10 +1,5 @@
 [
   {
-    "automatizado": "automatisado",
-    "conectado": "conetado",
-    "sistema": "cistema"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "sistema": "sistéma",
     "arquitetura": "arquitertura"
@@ -93,5 +88,10 @@
   },
   {
     "simples": "cimples"
+  },
+  {
+    "operacional": "operacionl",
+    "sistema": "sistéma",
+    "simples": "simlpes"
   }
 ]
