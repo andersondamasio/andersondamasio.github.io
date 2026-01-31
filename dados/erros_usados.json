@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "estrutura": "estrura",
-    "acesso": "acesço"
-  },
-  {
     "acesso": "acesso.",
     "sistema": "sistéma",
     "exemplo": "exemplo."
@@ -89,5 +84,9 @@
     "desenvolvimento": "desenvolmento",
     "complexidade": "complezidade",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
