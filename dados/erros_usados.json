@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "internet": "internert",
     "muito": "muto",
     "simples": "cimples"
@@ -89,5 +84,10 @@
   {
     "suporte": "suportte",
     "gerenciamento": "gerenciamneto"
+  },
+  {
+    "necessidade": "necessidade.",
+    "suporte": "suporte.",
+    "conhecimento": "conhecimento."
   }
 ]
