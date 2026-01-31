@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "gerenciamento": "gerenciamnto",
-    "suporte": "suportte"
-  },
-  {
     "problema": "problema.",
     "geralmente": "geralmete"
   },
@@ -93,5 +88,10 @@
     "acesso": "acesso.",
     "sistema": "sistéma",
     "exemplo": "exemplo."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "monitoramento": "monitorameto",
+    "necessidade": "necissidade"
   }
 ]
