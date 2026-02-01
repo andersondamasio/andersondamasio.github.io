@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquiteturra",
-    "funciona": "funciona."
-  },
-  {
     "abordagem": "abordajem",
     "gerenciamento": "gerenciamnto",
     "prioridade": "prioriade"
@@ -88,5 +83,10 @@
     "funcionalidade": "funcionalidade.",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "desafio": "desaío",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
