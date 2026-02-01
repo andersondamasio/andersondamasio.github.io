@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "suporte": "suporte."
-  },
-  {
     "simples": "cimples"
   },
   {
@@ -88,5 +84,8 @@
     "virtual": "virtal",
     "monitoramento": "monitoramento.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "arquitetura": "arquitertura"
   }
 ]
