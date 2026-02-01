@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "suporte": "suporte.",
-    "conhecimento": "conhecimento."
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "complexidade": "complezidade",
     "arquitetura": "arquiteturra"
@@ -88,5 +83,10 @@
     "componente": "componete",
     "sistema": "cistema",
     "arquitetura": "arquitertura"
+  },
+  {
+    "abordagem": "abordajem",
+    "desenvolvimento": "desenvolvimente",
+    "arquitetura": "arquitretura"
   }
 ]
