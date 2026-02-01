@@ -1,8 +1,5 @@
 [
   {
-    "carregamento": "carregameno"
-  },
-  {
     "exemplo": "exemplo,",
     "necessidade": "necissidade"
   },
@@ -86,5 +83,10 @@
   {
     "internet": "internat",
     "muito": "muto"
+  },
+  {
+    "processo": "proceso",
+    "controle": "contrle",
+    "funciona": "funciona."
   }
 ]
