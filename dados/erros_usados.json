@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "armazenamento": "armazanamento",
     "acesso": "acesço",
     "conhecimento": "conhecimento."
@@ -88,5 +84,10 @@
     "necessidade": "necissidade",
     "tecnologia": "tecnoligia",
     "muito": "muiito"
+  },
+  {
+    "sistema": "sistéma",
+    "tecnologia": "tecnnologia",
+    "acesso": "aceso"
   }
 ]
