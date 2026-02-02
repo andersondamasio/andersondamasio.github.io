@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muiito",
-    "resultado": "resultao"
-  },
-  {
     "recurso": "recuro",
     "dispositivo": "dispositivo.",
     "prioridade": "prioriade."
@@ -91,5 +87,10 @@
     "arquitetura": "arquitretura",
     "sistema": "sistma",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "constante": "constante.",
+    "gerenciamento": "gerenciamnto",
+    "sistema": "cistema"
   }
 ]
