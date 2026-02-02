@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
@@ -94,5 +90,10 @@
     "resultado": "resultadoo",
     "abordagem": "abordajem",
     "arquitetura": "arquitretura"
+  },
+  {
+    "simples": "simlpes",
+    "arquitetura": "arquitertura",
+    "exemplo": "exenplo"
   }
 ]
