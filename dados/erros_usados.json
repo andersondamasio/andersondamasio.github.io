@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura"
-  },
-  {
     "desafio": "desafiu",
     "sistema": "cistema"
   },
@@ -89,5 +86,10 @@
     "conhecimento": "conhescimento",
     "controle": "controlle",
     "simples": "cimples"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "exemplo": "exemplo,",
+    "necessidade": "necissidade"
   }
 ]
