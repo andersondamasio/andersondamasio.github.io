@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "dispositivo": "dispositivo.",
-    "prioridade": "prioriade."
-  },
-  {
     "computador": "computador.",
     "simples": "simlpes",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,10 @@
     "constante": "constante.",
     "gerenciamento": "gerenciamnto",
     "sistema": "cistema"
+  },
+  {
+    "geralmente": "geralmemte",
+    "abordagem": "abordage",
+    "funciona": "funciona."
   }
 ]
