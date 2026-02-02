@@ -1,9 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "sistema": "cistema"
-  },
-  {
     "constante": "constanate",
     "automatizado": "automatizdo.",
     "suporte": "suprte"
@@ -91,5 +87,9 @@
     "monitoramento": "monitoramento.",
     "exemplo": "exemplo,",
     "necessidade": "necissidade"
+  },
+  {
+    "problema": "probrema",
+    "tecnologia": "tecnnologia"
   }
 ]
