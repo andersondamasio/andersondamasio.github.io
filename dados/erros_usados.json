@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "acesso": "acesço",
-    "conhecimento": "conhecimento."
-  },
-  {
     "sistema": "cistema",
     "exemplo": "exemplo,"
   },
@@ -89,5 +84,9 @@
     "sistema": "sistéma",
     "tecnologia": "tecnnologia",
     "acesso": "aceso"
+  },
+  {
+    "exemplo": "exemplo.",
+    "simples": "cimples"
   }
 ]
