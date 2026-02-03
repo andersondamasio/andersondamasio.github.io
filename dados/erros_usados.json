@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "acesso": "acesso."
-  },
-  {
     "componente": "componete",
     "sistema": "cistema",
     "arquitetura": "arquitertura"
@@ -94,5 +90,9 @@
   {
     "recurso": "reccurso",
     "exemplo": "exenplo"
+  },
+  {
+    "operacional": "operacionl",
+    "melhor": "melhorr"
   }
 ]
