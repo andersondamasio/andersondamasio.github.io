@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrtura",
-    "necessidade": "nescessidade",
-    "exemplo": "exemplo,"
-  },
-  {
     "recurso": "reccurso",
     "exemplo": "exenplo"
   },
@@ -90,5 +85,10 @@
     "prioridade": "prioriade.",
     "virtual": "virtual.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "parceria": "parcería",
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitretura"
   }
 ]
