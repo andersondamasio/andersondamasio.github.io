@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "sistema": "sistma",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "constante": "constante.",
     "gerenciamento": "gerenciamnto",
     "sistema": "cistema"
@@ -94,5 +89,10 @@
     "conectado": "conectdo",
     "melhor": "melor",
     "funciona": "funsiona"
+  },
+  {
+    "funciona": "funciona,",
+    "exemplo": "exenplo",
+    "tecnologia": "tecnoligia"
   }
 ]
