@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "exemplo": "exemplo,",
-    "necessidade": "necissidade"
-  },
-  {
     "problema": "probrema",
     "tecnologia": "tecnnologia"
   },
@@ -94,5 +89,9 @@
     "processo": "prosseso",
     "complexidade": "complexsidade",
     "abordagem": "abordagem."
+  },
+  {
+    "utilizado": "utilizdo",
+    "simples": "simplis"
   }
 ]
