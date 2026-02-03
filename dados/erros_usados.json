@@ -1,9 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquitretura",
     "sistema": "sistma",
     "tecnologia": "tecnolgia"
@@ -93,5 +89,10 @@
   {
     "utilizado": "utilizdo",
     "simples": "simplis"
+  },
+  {
+    "conectado": "conectdo",
+    "melhor": "melor",
+    "funciona": "funsiona"
   }
 ]
