@@ -54830,5 +54830,14 @@
     "dataFonte": "2026-02-03T02:30:43.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/asus-expertbook-ultra-b9-review/"
+  },
+  {
+    "titulo": "MongoDB Revoluciona o Cenário com API de Embedding e Reranking",
+    "noticiaOriginal": "MongoDB Introduces Embedding and Reranking API on Atlas",
+    "url": "artigos/banco-de-dados/mongodb-revoluciona-o-cenario-com-api-de-embedding-e-reranking.html",
+    "data": "2026-02-03T05:54:08.427Z",
+    "dataFonte": "2026-02-03T04:53:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/02/mongodb-embedding-reranking-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
