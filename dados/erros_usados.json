@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "arquitetura": "arquitertura",
-    "exemplo": "exenplo"
-  },
-  {
     "estrutura": "estrtura",
     "necessidade": "nescessidade",
     "exemplo": "exemplo,"
@@ -90,5 +85,10 @@
   },
   {
     "tecnologia": "tecnoligia"
+  },
+  {
+    "prioridade": "prioriade.",
+    "virtual": "virtual.",
+    "desenvolvimento": "desenvolmento"
   }
 ]
