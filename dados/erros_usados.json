@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "acesso": "acesso.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "tecnologia": "tecnnologia",
     "sistema": "cistema"
@@ -92,5 +87,10 @@
   {
     "constante": "constate",
     "arquitetura": "arquitertura"
+  },
+  {
+    "simples": "simplis",
+    "problema": "problema.",
+    "sistema": "sistma"
   }
 ]
