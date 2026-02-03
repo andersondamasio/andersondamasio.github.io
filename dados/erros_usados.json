@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "controle": "controlle",
-    "simples": "cimples"
-  },
-  {
     "monitoramento": "monitoramento.",
     "exemplo": "exemplo,",
     "necessidade": "necissidade"
@@ -94,5 +89,10 @@
     "exemplo": "exemplo.",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "processo": "prosseso",
+    "complexidade": "complexsidade",
+    "abordagem": "abordagem."
   }
 ]
