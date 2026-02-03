@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordajem",
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquitretura"
-  },
-  {
     "necessidade": "necissidade",
     "tecnologia": "tecnoligia",
     "muito": "muiito"
@@ -94,5 +89,9 @@
     "desenvolvimento": "desenvolvmento",
     "necessidade": "necissidade",
     "melhor": "melor"
+  },
+  {
+    "rotina": "rotina.",
+    "carregamento": "carregamento."
   }
 ]
