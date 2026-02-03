@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultadoo",
-    "abordagem": "abordajem",
-    "arquitetura": "arquitretura"
-  },
-  {
     "simples": "simlpes",
     "arquitetura": "arquitertura",
     "exemplo": "exenplo"
@@ -92,5 +87,8 @@
     "controle": "controle.",
     "problema": "poblema",
     "recurso": "recuro"
+  },
+  {
+    "tecnologia": "tecnoligia"
   }
 ]
