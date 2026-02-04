@@ -1,9 +1,5 @@
 [
   {
-    "rotina": "rotina.",
-    "carregamento": "carregamento."
-  },
-  {
     "muito": "muto",
     "sistema": "sistma",
     "melhor": "melor"
@@ -92,5 +88,10 @@
     "tecnologia": "tecnoligia",
     "suporte": "suportte",
     "acesso": "acesço"
+  },
+  {
+    "processo": "prosseso",
+    "desenvolvimento": "desenvolvmento",
+    "acesso": "aceso"
   }
 ]
