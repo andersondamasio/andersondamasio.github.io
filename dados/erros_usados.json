@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectdo",
-    "melhor": "melor",
-    "funciona": "funsiona"
-  },
-  {
     "funciona": "funciona,",
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia"
@@ -91,5 +86,10 @@
     "paralelo": "paralelo.",
     "necessidade": "nescessidade",
     "abordagem": "abordagem."
+  },
+  {
+    "muito": "muto",
+    "controle": "contrle",
+    "acesso": "acesso."
   }
 ]
