@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia"
-  },
-  {
     "prioridade": "prioriade.",
     "virtual": "virtual.",
     "desenvolvimento": "desenvolmento"
@@ -88,5 +85,9 @@
   {
     "conhecimento": "conhescimento",
     "funciona": "funciona."
+  },
+  {
+    "virtual": "virtuaal",
+    "desenvolvimento": "desenvolmento"
   }
 ]
