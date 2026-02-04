@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "problema": "problema.",
-    "sistema": "sistma"
-  },
-  {
     "controle": "controle.",
     "problema": "poblema",
     "recurso": "recuro"
@@ -90,5 +85,9 @@
   {
     "componente": "componete",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "propriedade": "propriedade.",
+    "suporte": "suporte."
   }
 ]
