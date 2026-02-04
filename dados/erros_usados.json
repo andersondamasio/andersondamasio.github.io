@@ -1,10 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "desafio": "desafiu",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desafio": "desafío",
     "arquitetura": "arquitretura"
   },
@@ -91,5 +86,9 @@
     "controle": "controle.",
     "tecnologia": "tecnnologia",
     "virtual": "virtual."
+  },
+  {
+    "funciona": "funciona,",
+    "tecnologia": "tecnoligia"
   }
 ]
