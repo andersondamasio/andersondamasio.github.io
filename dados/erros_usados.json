@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "funciona": "funciona."
-  },
-  {
     "virtual": "virtuaal",
     "desenvolvimento": "desenvolmento"
   },
@@ -87,5 +83,8 @@
     "desenvolvimento": "desenvolmento",
     "suporte": "suporte.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "tecnologia": "tecnnologia"
   }
 ]
