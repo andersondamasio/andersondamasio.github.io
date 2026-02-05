@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "processo": "prosseso",
-    "simples": "simplis"
-  },
-  {
     "tecnologia": "tecnoligia",
     "suporte": "suportte",
     "acesso": "acesço"
@@ -88,5 +83,9 @@
   {
     "utilizado": "utilizdo.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "muito": "muinto"
   }
 ]
