@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "tecnologia": "tecnnologia",
-    "virtual": "virtual."
-  },
-  {
     "funciona": "funciona,",
     "tecnologia": "tecnoligia"
   },
@@ -84,5 +79,10 @@
   {
     "acesso": "acesço",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desafio": "desaío",
+    "resultado": "resultao",
+    "complexidade": "complexidade."
   }
 ]
