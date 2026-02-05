@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "virtual": "virtual.",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "parceria": "parcería",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitretura"
@@ -89,5 +84,10 @@
   {
     "virtual": "virtuaal",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "sistema": "sistéma",
+    "tecnologia": "tecnnologia",
+    "exemplo": "exemplo."
   }
 ]
