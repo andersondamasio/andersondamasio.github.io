@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "suporte": "suportte",
-    "acesso": "acesço"
-  },
-  {
     "processo": "prosseso",
     "desenvolvimento": "desenvolvmento",
     "acesso": "aceso"
@@ -87,5 +82,9 @@
   {
     "funcionalidade": "funcionalidade.",
     "muito": "muinto"
+  },
+  {
+    "computador": "computador,",
+    "melhor": "melor"
   }
 ]
