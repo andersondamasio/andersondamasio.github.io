@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "propriedade.",
-    "suporte": "suporte."
-  },
-  {
     "conhecimento": "conhescimento",
     "funciona": "funciona."
   },
@@ -86,5 +82,10 @@
     "necessidade": "nescessidade",
     "sistema": "sistéma",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "suporte": "suporte.",
+    "arquitetura": "arquiteturra"
   }
 ]
