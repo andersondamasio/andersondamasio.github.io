@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "melhor": "melhorr"
-  },
-  {
     "componente": "componete",
     "desenvolvimento": "desenvolvimente"
   },
@@ -84,5 +80,10 @@
   {
     "desenvolvimento": "desenvolvimente",
     "exemplo": "exemplo,"
+  },
+  {
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnoligia",
+    "melhor": "melhorr"
   }
 ]
