@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "computador": "computadorr",
     "funcionalidade": "funcionaliadde",
     "melhor": "melor"
@@ -89,5 +84,10 @@
     "sistema": "sistéma",
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo."
+  },
+  {
+    "constante": "constate",
+    "abordagem": "abordagem.",
+    "exemplo": "exemplo,"
   }
 ]
