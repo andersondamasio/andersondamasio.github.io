@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muto",
-    "controle": "contrle",
-    "acesso": "acesso."
-  },
-  {
     "controle": "controle.",
     "tecnologia": "tecnnologia",
     "virtual": "virtual."
@@ -85,5 +80,9 @@
     "problema": "probrema",
     "internet": "internete",
     "sistema": "cistema"
+  },
+  {
+    "acesso": "acesço",
+    "tecnologia": "tecnolgia"
   }
 ]
