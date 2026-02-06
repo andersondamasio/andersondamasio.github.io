@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desafio": "desaío",
     "resultado": "resultao",
     "complexidade": "complexidade."
@@ -91,5 +87,10 @@
     "prioridade": "prioriade",
     "arquitetura": "arquitretura",
     "necessidade": "necissidade"
+  },
+  {
+    "simples": "simlpes",
+    "muito": "muinto",
+    "tecnologia": "tecnnologia"
   }
 ]
