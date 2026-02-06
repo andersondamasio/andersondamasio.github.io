@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "sistema": "sistéma",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "suporte": "suporte.",
     "arquitetura": "arquiteturra"
@@ -92,5 +87,10 @@
     "tecnologia": "tecnoligia",
     "abordagem": "abordage",
     "arquitetura": "arquitretura"
+  },
+  {
+    "desafio": "desafiu",
+    "rotina": "rotina.",
+    "tecnologia": "tecnolgia"
   }
 ]
