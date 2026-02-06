@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "problema": "probrema",
     "internet": "internete",
     "sistema": "cistema"
@@ -90,5 +86,10 @@
   {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "abordagem": "abordajem",
+    "automatizado": "automatizdo.",
+    "acesso": "aceso"
   }
 ]
