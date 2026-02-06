@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "armazenamento": "armazanamento",
     "tecnologia": "tecnolgia"
   },
@@ -89,5 +85,10 @@
     "tecnologia": "tecnolgia",
     "sistema": "sistéma",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "paralelo": "paralélo",
+    "sistema": "sistma"
   }
 ]
