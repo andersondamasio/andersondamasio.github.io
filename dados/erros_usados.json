@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "tecnologia": "tecnnologia",
-    "exemplo": "exemplo."
-  },
-  {
     "constante": "constate",
     "abordagem": "abordagem.",
     "exemplo": "exemplo,"
@@ -87,5 +82,10 @@
     "geralmente": "geralment",
     "necessidade": "necissidade",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "muito": "muinto",
+    "acesso": "acesço",
+    "sistema": "sistéma"
   }
 ]
