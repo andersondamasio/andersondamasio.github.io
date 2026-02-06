@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "prioridade": "prioridade.",
     "tecnologia": "tecnnologia"
   },
@@ -90,5 +86,9 @@
     "monitoramento": "monitorameto",
     "paralelo": "paralélo",
     "sistema": "sistma"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]
