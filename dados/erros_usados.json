@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnoligia",
-    "melhor": "melhorr"
-  },
-  {
     "necessidade": "nescessidade",
     "sistema": "sistéma",
     "tecnologia": "tecnolgia"
@@ -92,5 +87,10 @@
     "estrutura": "estrututra",
     "desenvolvimento": "desenvolvimente",
     "abordagem": "abordajem"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "abordagem": "abordage",
+    "arquitetura": "arquitretura"
   }
 ]
