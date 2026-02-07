@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "suporte": "suprte"
-  },
-  {
     "tecnologia": "tecnolgia",
     "sistema": "sistéma",
     "desenvolvimento": "desenvolmento"
@@ -92,5 +88,10 @@
     "dispositivo": "dispotivo",
     "recurso": "recusso",
     "exemplo": "exemplo."
+  },
+  {
+    "processo": "proceso",
+    "armazenamento": "armazenamentto",
+    "exemplo": "exemplo,"
   }
 ]
