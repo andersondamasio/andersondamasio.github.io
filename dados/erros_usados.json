@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "funciona": "funciona."
-  },
-  {
     "sistema": "sistma",
     "funcionalidade": "funcionalidade.",
     "exemplo": "exenplo"
@@ -93,5 +89,9 @@
     "constante": "constante.",
     "parceria": "parceriaa",
     "arquitetura": "arquitertura"
+  },
+  {
+    "complexidade": "complexidade.",
+    "muito": "muiito"
   }
 ]
