@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "desenvolvimento": "desenvolvimente",
-    "abordagem": "abordajem"
-  },
-  {
     "tecnologia": "tecnoligia",
     "abordagem": "abordage",
     "arquitetura": "arquitretura"
@@ -90,5 +85,10 @@
   {
     "problema": "problema.",
     "sistema": "sistma"
+  },
+  {
+    "processo": "processso",
+    "problema": "poblema",
+    "exemplo": "exemplo,"
   }
 ]
