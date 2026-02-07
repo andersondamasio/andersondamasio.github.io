@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "melhor": "melor",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnoligia",
     "suporte": "suprte"
   },
@@ -92,5 +87,10 @@
   {
     "armazenamento": "armazenamentto",
     "resultado": "resultao"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "recurso": "recusso",
+    "exemplo": "exemplo."
   }
 ]
