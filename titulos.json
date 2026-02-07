@@ -55631,5 +55631,14 @@
     "dataFonte": "2026-02-07T14:30:41.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/lg-gram-17-review/"
+  },
+  {
+    "titulo": "Como a Ordem de CNAME Pode Quebrar Um Serviço: Lições do Caso Cloudflare",
+    "noticiaOriginal": "How CNAME Ordering in RFC Specs Caused Cloudflare 1.1.1.1 Outage",
+    "url": "artigos/tecnologia/como-a-ordem-de-cname-pode-quebrar-um-servico-licoes-do-caso-cloudflare.html",
+    "data": "2026-02-07T16:33:25.325Z",
+    "dataFonte": "2026-02-07T11:32:00.000Z",
+    "categoria": "Tecnologia",
+    "urlFonte": "https://www.infoq.com/news/2026/02/cname-rfc-cloudflare-outage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

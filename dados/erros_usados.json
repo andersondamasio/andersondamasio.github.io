@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "estrutura": "estrututra",
     "desenvolvimento": "desenvolvimente",
     "abordagem": "abordajem"
@@ -90,5 +86,9 @@
     "monitoramento": "monitorameto",
     "melhor": "melor",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "problema": "problema.",
+    "sistema": "sistma"
   }
 ]
