@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "dispositivo": "disposotivo",
-    "sistema": "sistma"
-  },
-  {
     "processo": "proceso",
     "sistema": "sistéma",
     "arquitetura": "arquitretura"
@@ -93,5 +88,10 @@
   {
     "geralmente": "geralment",
     "internet": "internete"
+  },
+  {
+    "sistema": "sistma",
+    "funciona": "funciona,",
+    "suporte": "suportte"
   }
 ]
