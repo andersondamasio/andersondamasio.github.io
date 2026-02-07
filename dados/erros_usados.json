@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "arquitetura": "arquitretura",
-    "necessidade": "necissidade"
-  },
-  {
     "simples": "simlpes",
     "muito": "muinto",
     "tecnologia": "tecnnologia"
@@ -92,5 +87,8 @@
     "melhor": "melhorr",
     "complexidade": "complexsidade",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "virtual": "virtual."
   }
 ]
