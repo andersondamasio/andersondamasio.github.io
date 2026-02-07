@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "abordagem": "abordage",
-    "arquitetura": "arquitretura"
-  },
-  {
     "desafio": "desafiu",
     "rotina": "rotina.",
     "tecnologia": "tecnolgia"
@@ -90,5 +85,10 @@
     "processo": "processso",
     "problema": "poblema",
     "exemplo": "exemplo,"
+  },
+  {
+    "abordagem": "abordagem.",
+    "sistema": "sistéma",
+    "muito": "muinto"
   }
 ]
