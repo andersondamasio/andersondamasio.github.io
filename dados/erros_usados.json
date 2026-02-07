@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "paralelo": "paralélo",
-    "sistema": "sistma"
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
   },
@@ -93,5 +88,10 @@
     "necessidade": "nescessidade",
     "arquitetura": "arquiteturra",
     "sistema": "cistema"
+  },
+  {
+    "acesso": "acesso.",
+    "abordagem": "abordajem",
+    "exemplo": "exemplo."
   }
 ]
