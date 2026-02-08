@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "simples": "cimples",
     "geralmente": "geralmete",
     "recurso": "recuro"
@@ -89,5 +84,10 @@
     "armazenamento": "armazenamentto",
     "simples": "cimples",
     "abordagem": "abordajem"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "constante": "constanate",
+    "arquitetura": "arquitretura"
   }
 ]
