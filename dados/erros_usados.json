@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "resultado": "resultadoo"
   },
@@ -89,5 +84,9 @@
   {
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "problema": "probrema"
   }
 ]
