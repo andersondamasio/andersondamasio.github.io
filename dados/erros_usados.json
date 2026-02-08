@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "dispositivo": "dispotivo"
-  },
-  {
     "arquitetura": "arquitertura",
     "exemplo": "exemplo.",
     "tecnologia": "tecnnologia"
@@ -89,5 +85,9 @@
   {
     "problema": "probrema",
     "utilizado": "utilizdo"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
