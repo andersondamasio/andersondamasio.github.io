@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "muito": "muiito"
-  },
-  {
     "armazenamento": "armazenamentto",
     "resultado": "resultao"
   },
@@ -88,5 +84,10 @@
     "complexidade": "complexidade.",
     "arquitetura": "arquitertura",
     "abordagem": "abordagem."
+  },
+  {
+    "acesso": "aceso",
+    "dispositivo": "disposotivo",
+    "muito": "muto"
   }
 ]
