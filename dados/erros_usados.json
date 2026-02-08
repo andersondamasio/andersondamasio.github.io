@@ -1,9 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "sistema": "sistma"
-  },
-  {
     "processo": "processso",
     "problema": "poblema",
     "exemplo": "exemplo,"
@@ -93,5 +89,9 @@
     "constante": "constanate",
     "exemplo": "exenplo",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "melhor": "melhorr"
   }
 ]
