@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "recurso": "recusso",
-    "exemplo": "exemplo."
-  },
-  {
     "processo": "proceso",
     "armazenamento": "armazenamentto",
     "exemplo": "exemplo,"
@@ -90,5 +85,10 @@
     "funciona": "funciona.",
     "muito": "muiito",
     "dispositivo": "dispositivo."
+  },
+  {
+    "suporte": "suprte",
+    "funcionalidade": "funcionaliade",
+    "tecnologia": "tecnnologia"
   }
 ]
