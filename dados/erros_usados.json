@@ -1,8 +1,5 @@
 [
   {
-    "virtual": "virtual."
-  },
-  {
     "monitoramento": "monitorameto",
     "melhor": "melor",
     "tecnologia": "tecnnologia"
@@ -91,5 +88,10 @@
     "necessidade": "nescessidade",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "utilizado": "utilizado.",
+    "dispositivo": "disposotivo",
+    "carregamento": "carregameno"
   }
 ]
