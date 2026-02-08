@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "resultado": "resultao"
-  },
-  {
     "dispositivo": "dispotivo",
     "recurso": "recusso",
     "exemplo": "exemplo."
@@ -89,5 +85,10 @@
     "acesso": "aceso",
     "dispositivo": "disposotivo",
     "muito": "muto"
+  },
+  {
+    "funciona": "funciona.",
+    "muito": "muiito",
+    "dispositivo": "dispositivo."
   }
 ]
