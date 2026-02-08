@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "sistema": "sistma"
-  },
-  {
     "carregamento": "carregamento.",
     "dispositivo": "dispotivo"
   },
@@ -89,5 +85,9 @@
   },
   {
     "tecnologia": "tecnoligia"
+  },
+  {
+    "problema": "probrema",
+    "utilizado": "utilizdo"
   }
 ]
