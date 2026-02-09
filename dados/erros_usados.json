@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "suporte": "suprte",
-    "muito": "muinto"
-  },
-  {
     "necessidade": "nescessidade",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura"
@@ -87,5 +82,9 @@
     "funcionalidade": "funcionalidade.",
     "melhor": "melor",
     "abordagem": "abordajem"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "sistema": "sistma"
   }
 ]
