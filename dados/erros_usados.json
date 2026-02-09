@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "arquitetura": "arquitertura",
-    "abordagem": "abordagem."
-  },
-  {
     "acesso": "aceso",
     "dispositivo": "disposotivo",
     "muito": "muto"
@@ -88,5 +83,9 @@
   {
     "controle": "contrle",
     "mensagem": "menssagen"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "tecnologia": "tecnnologia"
   }
 ]
