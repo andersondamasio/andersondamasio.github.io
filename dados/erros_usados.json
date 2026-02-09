@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "dispositivo": "disposotivo",
-    "muito": "muto"
-  },
-  {
     "funciona": "funciona.",
     "muito": "muiito",
     "dispositivo": "dispositivo."
@@ -87,5 +82,10 @@
   {
     "gerenciamento": "gerenciamnto",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "muito": "muiito",
+    "sistema": "sistma",
+    "funciona": "funciona,"
   }
 ]
