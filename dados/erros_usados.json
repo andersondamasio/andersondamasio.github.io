@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "utilizado": "utilizado.",
     "dispositivo": "disposotivo",
     "carregamento": "carregameno"
@@ -86,5 +81,9 @@
   {
     "armazenamento": "armasenamento",
     "sistema": "sistma"
+  },
+  {
+    "sistema": "cistema",
+    "arquitetura": "arquitertura"
   }
 ]
