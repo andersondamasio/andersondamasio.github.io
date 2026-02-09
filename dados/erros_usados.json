@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "virtual": "virtuaal",
-    "muito": "muinto"
-  },
-  {
     "armazenamento": "armazenamentto",
     "tecnologia": "tecnnologia"
   },
@@ -86,5 +81,10 @@
     "acesso": "acesço",
     "recurso": "reccurso",
     "processo": "prosseso"
+  },
+  {
+    "internet": "internete",
+    "processo": "proceso",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
