@@ -1,8 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento."
-  },
-  {
     "tecnologia": "tecnoligia"
   },
   {
@@ -86,5 +83,10 @@
     "prioridade": "prioridade.",
     "exemplo": "exemplo,",
     "conhecimento": "conhecimento."
+  },
+  {
+    "resultado": "resutlado",
+    "recurso": "recuro",
+    "simples": "simlpes"
   }
 ]
