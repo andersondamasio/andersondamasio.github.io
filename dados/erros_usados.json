@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia"
-  },
-  {
     "problema": "probrema",
     "utilizado": "utilizdo"
   },
@@ -88,5 +85,10 @@
     "resultado": "resutlado",
     "recurso": "recuro",
     "simples": "simlpes"
+  },
+  {
+    "parceria": "parcería",
+    "conhecimento": "conhescimento",
+    "arquitetura": "arquitertura"
   }
 ]
