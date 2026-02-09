@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "exemplo": "exenplo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "tecnologia": "tecnolgia",
     "melhor": "melhorr"
   },
@@ -85,5 +80,10 @@
     "computador": "computador,",
     "rotina": "rotna",
     "suporte": "suporte."
+  },
+  {
+    "desafio": "desaío",
+    "dispositivo": "dispotivo",
+    "complexidade": "complezidade"
   }
 ]
