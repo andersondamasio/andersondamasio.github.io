@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "geralmente": "geralmete",
-    "recurso": "recuro"
-  },
-  {
     "complexidade": "complexidade.",
     "arquitetura": "arquitertura",
     "abordagem": "abordagem."
@@ -89,5 +84,9 @@
     "tecnologia": "tecnnologia",
     "constante": "constanate",
     "arquitetura": "arquitretura"
+  },
+  {
+    "controle": "contrle",
+    "mensagem": "menssagen"
   }
 ]
