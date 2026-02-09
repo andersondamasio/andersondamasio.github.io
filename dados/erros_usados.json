@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "melhor": "melhorr"
-  },
-  {
     "monitoramento": "monitoramento."
   },
   {
@@ -85,5 +81,10 @@
     "desafio": "desaío",
     "dispositivo": "dispotivo",
     "complexidade": "complezidade"
+  },
+  {
+    "prioridade": "prioridade.",
+    "exemplo": "exemplo,",
+    "conhecimento": "conhecimento."
   }
 ]
