@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "muito": "muiito",
     "sistema": "sistma",
     "funciona": "funciona,"
@@ -93,5 +89,10 @@
     "controle": "controle.",
     "armazenamento": "armazanamento",
     "processo": "proceso"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "sistema": "sistma",
+    "complexidade": "complexsidade"
   }
 ]
