@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "arquitetura": "arquitertura"
-  },
-  {
     "computador": "computador,",
     "rotina": "rotna",
     "suporte": "suporte."
@@ -94,5 +90,10 @@
   {
     "tecnologia": "tecnolgia",
     "funciona": "funsiona"
+  },
+  {
+    "desafio": "desaío",
+    "controle": "controlle",
+    "arquitetura": "arquiteturra"
   }
 ]
