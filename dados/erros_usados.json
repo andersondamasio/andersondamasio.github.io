@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "mensagem": "menssagen"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "tecnologia": "tecnnologia"
   },
@@ -92,5 +88,10 @@
     "necessidade": "necessidade.",
     "funciona": "funciona.",
     "sistema": "sistma"
+  },
+  {
+    "controle": "controle.",
+    "armazenamento": "armazanamento",
+    "processo": "proceso"
   }
 ]
