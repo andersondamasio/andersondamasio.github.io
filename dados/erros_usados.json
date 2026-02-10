@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "problema": "probrema"
-  },
-  {
     "armazenamento": "armazenamentto",
     "simples": "cimples",
     "abordagem": "abordajem"
@@ -92,5 +88,9 @@
     "conectado": "conetado",
     "simples": "cimples",
     "melhor": "melhorr"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "gerenciamento": "gerenciamneto"
   }
 ]
