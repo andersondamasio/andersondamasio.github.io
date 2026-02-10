@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "simples": "cimples",
-    "abordagem": "abordajem"
-  },
-  {
     "tecnologia": "tecnnologia",
     "constante": "constanate",
     "arquitetura": "arquitretura"
@@ -92,5 +87,10 @@
   {
     "tecnologia": "tecnoligia",
     "gerenciamento": "gerenciamneto"
+  },
+  {
+    "simples": "simlpes",
+    "desenvolvimento": "desenvolmento",
+    "processo": "proceso"
   }
 ]
