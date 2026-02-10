@@ -1,9 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "utilizado": "utilizdo"
-  },
-  {
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolmento"
   },
@@ -90,5 +86,10 @@
     "parceria": "parcería",
     "conhecimento": "conhescimento",
     "arquitetura": "arquitertura"
+  },
+  {
+    "muito": "muiito",
+    "operacional": "operaciona",
+    "simples": "simlpes"
   }
 ]
