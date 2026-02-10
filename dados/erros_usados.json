@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "tecnologia": "tecnolgia",
     "problema": "probrema"
   },
@@ -91,5 +87,10 @@
     "muito": "muiito",
     "operacional": "operaciona",
     "simples": "simlpes"
+  },
+  {
+    "conectado": "conetado",
+    "simples": "cimples",
+    "melhor": "melhorr"
   }
 ]
