@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "sistema": "sistma",
-    "complexidade": "complexsidade"
-  },
-  {
     "arquitetura": "arquiteturra",
     "operacional": "operaciona",
     "gerenciamento": "gerenciamneto"
@@ -95,5 +90,9 @@
     "problema": "poblema",
     "suporte": "suprte",
     "exemplo": "exenplo"
+  },
+  {
+    "abordagem": "abordajem",
+    "tecnologia": "tecnoligia"
   }
 ]
