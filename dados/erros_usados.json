@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "exemplo": "exemplo,",
-    "conhecimento": "conhecimento."
-  },
-  {
     "resultado": "resutlado",
     "recurso": "recuro",
     "simples": "simlpes"
@@ -95,5 +90,10 @@
     "rotina": "rotina.",
     "simples": "simplis",
     "melhor": "melor"
+  },
+  {
+    "constante": "constate",
+    "abordagem": "abordage",
+    "arquitetura": "arquitertura"
   }
 ]
