@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "recurso": "recuro",
-    "simples": "simlpes"
-  },
-  {
     "parceria": "parcería",
     "conhecimento": "conhescimento",
     "arquitetura": "arquitertura"
@@ -95,5 +90,10 @@
     "constante": "constate",
     "abordagem": "abordage",
     "arquitetura": "arquitertura"
+  },
+  {
+    "efetivo": "efetívo",
+    "gerenciamento": "gerenciamneto",
+    "desafio": "desaío"
   }
 ]
