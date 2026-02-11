@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "funciona": "funciona.",
-    "sistema": "sistma"
-  },
-  {
     "controle": "controle.",
     "armazenamento": "armazanamento",
     "processo": "proceso"
@@ -95,5 +90,10 @@
     "abordagem": "abordage",
     "sistema": "sistma",
     "operacional": "operaciona"
+  },
+  {
+    "constante": "constante.",
+    "necessidade": "necessidade.",
+    "simples": "simplis"
   }
 ]
