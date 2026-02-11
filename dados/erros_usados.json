@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "conhecimento": "conhescimento",
-    "arquitetura": "arquitertura"
-  },
-  {
     "muito": "muiito",
     "operacional": "operaciona",
     "simples": "simlpes"
@@ -95,5 +90,10 @@
     "efetivo": "efetívo",
     "gerenciamento": "gerenciamneto",
     "desafio": "desaío"
+  },
+  {
+    "exemplo": "exemplo,",
+    "abordagem": "abordagem.",
+    "consistente": "consitente"
   }
 ]
