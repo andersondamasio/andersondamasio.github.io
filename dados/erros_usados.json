@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "tecnologia": "tecnoligia",
-    "processo": "processso"
-  },
-  {
     "melhor": "melor",
     "acesso": "acesso.",
     "muito": "muiito"
@@ -94,5 +89,10 @@
     "melhor": "melhorr",
     "problema": "problema.",
     "muito": "muto"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "funciona": "funciona.",
+    "arquitetura": "arquitretura"
   }
 ]
