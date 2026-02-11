@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conetado",
-    "simples": "cimples",
-    "melhor": "melhorr"
-  },
-  {
     "tecnologia": "tecnoligia",
     "gerenciamento": "gerenciamneto"
   },
@@ -95,5 +90,9 @@
     "computador": "computador,",
     "internet": "internat",
     "melhor": "melhorr"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "abordagem": "abordagem."
   }
 ]
