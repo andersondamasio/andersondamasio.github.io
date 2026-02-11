@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "dispositivo": "dispotivo",
-    "complexidade": "complezidade"
-  },
-  {
     "prioridade": "prioridade.",
     "exemplo": "exemplo,",
     "conhecimento": "conhecimento."
@@ -95,5 +90,10 @@
     "geralmente": "geralment",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "rotina": "rotina.",
+    "simples": "simplis",
+    "melhor": "melor"
   }
 ]
