@@ -1,10 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "suporte": "suprte",
-    "exemplo": "exenplo"
-  },
-  {
     "abordagem": "abordajem",
     "tecnologia": "tecnoligia"
   },
@@ -87,5 +82,10 @@
     "internet": "internat",
     "melhor": "melor",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "processo": "prosseso",
+    "necessidade": "necessidade.",
+    "complexidade": "complexidade."
   }
 ]
