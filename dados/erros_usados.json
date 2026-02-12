@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "melhor": "melor",
-    "exemplo": "exenplo"
-  },
-  {
     "abordagem": "abordage",
     "sistema": "sistma",
     "operacional": "operaciona"
@@ -88,5 +83,10 @@
   {
     "carregamento": "carregamneto",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "sistema": "sistma",
+    "arquitetura": "arquiteturra",
+    "desenvolvimento": "desenvolmento"
   }
 ]
