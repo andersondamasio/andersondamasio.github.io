@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotina.",
-    "simples": "simplis",
-    "melhor": "melor"
-  },
-  {
     "constante": "constate",
     "abordagem": "abordage",
     "arquitetura": "arquitertura"
@@ -92,5 +87,9 @@
   {
     "personalizado": "personalizdo",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "resultado": "resutlado",
+    "controle": "contrle"
   }
 ]
