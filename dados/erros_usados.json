@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "sistema": "sistma",
-    "operacional": "operaciona"
-  },
-  {
     "constante": "constante.",
     "necessidade": "necessidade.",
     "simples": "simplis"
@@ -88,5 +83,9 @@
     "sistema": "sistma",
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
