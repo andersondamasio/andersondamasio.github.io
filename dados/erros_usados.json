@@ -1,9 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "processo": "prosseso"
-  },
-  {
     "melhor": "melhorr",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
@@ -92,5 +88,10 @@
   {
     "armazenamento": "armasenamento",
     "sistema": "cistema"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "melhor": "melor",
+    "simples": "simplis"
   }
 ]
