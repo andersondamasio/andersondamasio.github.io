@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melhorr",
-    "problema": "problema.",
-    "muito": "muto"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "funciona": "funciona.",
     "arquitetura": "arquitretura"
@@ -87,5 +82,10 @@
   {
     "constante": "constante.",
     "complexidade": "complezidade"
+  },
+  {
+    "melhor": "melhorr",
+    "exemplo": "exenplo",
+    "acesso": "aceso"
   }
 ]
