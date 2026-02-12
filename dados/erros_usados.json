@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "funciona": "funsiona"
-  },
-  {
     "desafio": "desaío",
     "controle": "controlle",
     "arquitetura": "arquiteturra"
@@ -92,5 +88,10 @@
   {
     "monitoramento": "monitramento",
     "sistema": "cistema"
+  },
+  {
+    "recurso": "recuro",
+    "acesso": "acesço",
+    "funcionalidade": "funcionaliade"
   }
 ]
