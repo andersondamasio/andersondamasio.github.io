@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "funciona": "funciona.",
-    "arquitetura": "arquitretura"
-  },
-  {
     "dispositivo": "dispotivo",
     "simples": "simlpes"
   },
@@ -87,5 +82,10 @@
     "melhor": "melhorr",
     "exemplo": "exenplo",
     "acesso": "aceso"
+  },
+  {
+    "necessidade": "necissidade",
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquitretura"
   }
 ]
