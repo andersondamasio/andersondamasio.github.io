@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordajem",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "melhor": "melhorr",
     "problema": "problema.",
     "muito": "muto"
@@ -87,5 +83,9 @@
     "processo": "prosseso",
     "necessidade": "necessidade.",
     "complexidade": "complexidade."
+  },
+  {
+    "constante": "constante.",
+    "complexidade": "complezidade"
   }
 ]
