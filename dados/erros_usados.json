@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "sistema": "sistma",
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolmento"
@@ -92,5 +88,10 @@
     "melhor": "melor",
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "prioridade": "prioriade.",
+    "acesso": "acesso.",
+    "parceria": "parceriaa"
   }
 ]
