@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "sistema": "cistema"
-  },
-  {
     "recurso": "recuro",
     "acesso": "acesço",
     "funcionalidade": "funcionaliade"
@@ -89,5 +85,10 @@
     "prioridade": "prioriade.",
     "funcionalidade": "funcionaliadde",
     "abordagem": "abordagem."
+  },
+  {
+    "suporte": "suprte",
+    "funciona": "funsiona",
+    "simples": "simlpes"
   }
 ]
