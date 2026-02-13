@@ -1,10 +1,5 @@
 [
   {
-    "mensagem": "mensagen",
-    "exemplo": "exemplo.",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "complexidade": "complezidade",
     "desenvolvimento": "desenvolvmento"
   },
@@ -90,5 +85,9 @@
     "estrutura": "estrura",
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistma"
+  },
+  {
+    "desafio": "desafío",
+    "tecnologia": "tecnolgia"
   }
 ]
