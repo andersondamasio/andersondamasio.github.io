@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "internet": "internat",
     "melhor": "melor",
     "tecnologia": "tecnoligia"
@@ -93,5 +89,10 @@
     "controle": "contrle",
     "muito": "muinto",
     "dispositivo": "dispotivo"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "dispositivo": "dispositivo.",
+    "suporte": "suportte"
   }
 ]
