@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "arquitetura": "arquiteturra",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvmento"
   },
@@ -93,5 +88,10 @@
     "prioridade": "prioriade.",
     "acesso": "acesso.",
     "parceria": "parceriaa"
+  },
+  {
+    "controle": "contrle",
+    "muito": "muinto",
+    "dispositivo": "dispotivo"
   }
 ]
