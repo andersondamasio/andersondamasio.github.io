@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "melhor": "melor",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "processo": "prosseso",
     "necessidade": "necessidade.",
     "complexidade": "complexidade."
@@ -94,5 +89,10 @@
     "desenvolvimento": "desenvolmento",
     "dispositivo": "dispositivo.",
     "suporte": "suportte"
+  },
+  {
+    "recurso": "recusso",
+    "muito": "muiito",
+    "geralmente": "geralmete"
   }
 ]
