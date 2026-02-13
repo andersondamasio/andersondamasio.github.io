@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "melhor": "melor",
-    "simples": "simplis"
-  },
-  {
     "monitoramento": "monitramento",
     "sistema": "cistema"
   },
@@ -89,5 +84,10 @@
     "abordagem": "abordage",
     "parceria": "parceria.",
     "problema": "poblema"
+  },
+  {
+    "prioridade": "prioriade.",
+    "funcionalidade": "funcionaliadde",
+    "abordagem": "abordagem."
   }
 ]
