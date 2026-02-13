@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "necessidade": "necessidade.",
-    "complexidade": "complexidade."
-  },
-  {
     "constante": "constante.",
     "complexidade": "complezidade"
   },
@@ -94,5 +89,10 @@
     "recurso": "recusso",
     "muito": "muiito",
     "geralmente": "geralmete"
+  },
+  {
+    "conectado": "conectado.",
+    "exemplo": "exemplo.",
+    "acesso": "acesso."
   }
 ]
