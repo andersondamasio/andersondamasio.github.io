@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "simples": "simlpes"
-  },
-  {
     "armazenamento": "armasenamento",
     "sistema": "cistema"
   },
@@ -87,5 +83,10 @@
     "necessidade": "necissidade",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "arquitetura": "arquiteturra",
+    "exemplo": "exemplo."
   }
 ]
