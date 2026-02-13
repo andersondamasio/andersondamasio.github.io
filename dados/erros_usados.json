@@ -1,9 +1,5 @@
 [
   {
-    "personalizado": "personalizdo",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "resultado": "resutlado",
     "controle": "contrle"
   },
@@ -89,5 +85,10 @@
     "desafio": "desafío",
     "tecnologia": "tecnnologia",
     "constante": "constate"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "problema": "problema.",
+    "internet": "internert"
   }
 ]
