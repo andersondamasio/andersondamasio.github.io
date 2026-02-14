@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "personalizado": "personalizad",
-    "simples": "simplis"
-  },
-  {
     "monitoramento": "monitramento",
     "sistema": "sistéma",
     "arquitetura": "arquitertura"
@@ -88,5 +83,9 @@
     "sistema": "sistma",
     "arquitetura": "arquitretura",
     "monitoramento": "monitramento"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnnologia"
   }
 ]
