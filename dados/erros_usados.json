@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "muito": "muiito",
-    "geralmente": "geralmete"
-  },
-  {
     "conectado": "conectado.",
     "exemplo": "exemplo.",
     "acesso": "acesso."
@@ -90,5 +85,9 @@
   {
     "propriedade": "propriedade.",
     "virtual": "virtal"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia"
   }
 ]
