@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafío",
-    "tecnologia": "tecnnologia",
-    "constante": "constate"
-  },
-  {
     "dispositivo": "disposotivo",
     "problema": "problema.",
     "internet": "internert"
@@ -95,5 +90,9 @@
     "simples": "cimples",
     "muito": "muiito",
     "melhor": "melor"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "funciona": "funsiona"
   }
 ]
