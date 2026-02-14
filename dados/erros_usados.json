@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "arquitetura": "arquiteturra",
-    "exemplo": "exemplo."
-  },
-  {
     "abordagem": "abordage",
     "parceria": "parceria.",
     "problema": "poblema"
@@ -95,5 +90,10 @@
     "resultado": "resutlado",
     "personalizado": "personalizad",
     "simples": "simplis"
+  },
+  {
+    "monitoramento": "monitramento",
+    "sistema": "sistéma",
+    "arquitetura": "arquitertura"
   }
 ]
