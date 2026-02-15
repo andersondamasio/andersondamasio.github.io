@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "propriedade.",
-    "virtual": "virtal"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
   },
@@ -82,5 +78,9 @@
   {
     "computador": "computadorr",
     "suporte": "suportte"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnnologia"
   }
 ]
