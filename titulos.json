@@ -56855,5 +56855,14 @@
     "dataFonte": "2026-02-15T00:01:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/asus-vivobook-s15-snapdragon-presidents-day-deal/"
+  },
+  {
+    "titulo": "LocalStack: O Fim de uma Era ou Apenas uma Nova Fase?",
+    "noticiaOriginal": "LocalStack for AWS Drops Community Edition Raising Developer Concerns",
+    "url": "artigos/devops/localstack-o-fim-de-uma-era-ou-apenas-uma-nova-fase.html",
+    "data": "2026-02-15T07:41:59.674Z",
+    "dataFonte": "2026-02-15T07:30:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/news/2026/02/localstack-aws-community/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
