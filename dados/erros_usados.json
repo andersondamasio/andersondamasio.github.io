@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
@@ -82,5 +78,10 @@
   },
   {
     "tecnologia": "tecnoligia"
+  },
+  {
+    "constante": "constate",
+    "tecnologia": "tecnolgia",
+    "controle": "controlle"
   }
 ]
