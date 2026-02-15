@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "armazenamento": "armazenamentto",
-    "dispositivo": "dispositivo."
-  },
-  {
     "paralelo": "paralélo",
     "processo": "proceso",
     "constante": "constanate"
@@ -85,5 +80,10 @@
     "funciona": "funciona.",
     "tecnologia": "tecnoligia",
     "dispositivo": "disposotivo"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "acesso": "acesço",
+    "estrutura": "estrtura"
   }
 ]
