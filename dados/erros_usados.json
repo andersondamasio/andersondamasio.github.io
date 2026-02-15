@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "funciona": "funsiona"
-  },
-  {
     "necessidade": "nescessidade",
     "abordagem": "abordagem."
   },
@@ -84,5 +80,8 @@
   {
     "complexidade": "complezidade",
     "operacional": "operaciona"
+  },
+  {
+    "controle": "contrle"
   }
 ]
