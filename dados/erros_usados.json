@@ -1,10 +1,5 @@
 [
   {
-    "paralelo": "paralélo",
-    "processo": "proceso",
-    "constante": "constanate"
-  },
-  {
     "problema": "problema.",
     "gerenciamento": "gerenciamnto"
   },
@@ -85,5 +80,8 @@
     "funcionalidade": "funcionaliadde",
     "acesso": "acesço",
     "estrutura": "estrtura"
+  },
+  {
+    "suporte": "suprte"
   }
 ]
