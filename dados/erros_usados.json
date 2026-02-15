@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "arquitetura": "arquitretura",
-    "monitoramento": "monitramento"
-  },
-  {
     "dispositivo": "disposotivo",
     "tecnologia": "tecnnologia"
   },
@@ -81,5 +76,9 @@
   {
     "desenvolvimento": "desenvolvmento",
     "monitoramento": "monitramento"
+  },
+  {
+    "processo": "prosseso",
+    "tecnologia": "tecnnologia"
   }
 ]
