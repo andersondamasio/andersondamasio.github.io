@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desafio": "desafiu",
     "componente": "componete",
     "tecnologia": "tecnolgia"
@@ -82,5 +78,9 @@
   {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "abordagem": "abordage"
   }
 ]
