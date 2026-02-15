@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "melhor": "melhorr",
     "exemplo": "exemplo.",
     "tecnologia": "tecnolgia"
@@ -80,5 +76,9 @@
   {
     "processo": "prosseso",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitertura"
   }
 ]
