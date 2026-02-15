@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "processo": "processso",
-    "arquitetura": "arquitretura"
-  },
-  {
     "rotina": "rotína",
     "exemplo": "exenplo"
   },
@@ -86,5 +81,9 @@
   {
     "recurso": "recuro",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "geralmente": "geralment",
+    "dispositivo": "dispotivo"
   }
 ]
