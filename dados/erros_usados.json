@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "abordagem": "abordage"
-  },
-  {
     "acesso": "aceso",
     "sistema": "sistma"
   },
@@ -86,5 +82,10 @@
     "conectado": "conectado.",
     "rotina": "rotina.",
     "simples": "simlpes"
+  },
+  {
+    "muito": "muto",
+    "dispositivo": "dispotivo",
+    "operacional": "operacionl"
   }
 ]
