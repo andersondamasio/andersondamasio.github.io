@@ -1,9 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura"
   },
@@ -89,5 +85,10 @@
     "recurso": "reccurso",
     "melhor": "melor",
     "gerenciamento": "gerenciamneto"
+  },
+  {
+    "sistema": "sistma",
+    "muito": "muiito",
+    "arquitetura": "arquitretura"
   }
 ]
