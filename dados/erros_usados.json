@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "operacional": "operaciona"
-  },
-  {
     "controle": "contrle"
   },
   {
@@ -82,5 +78,10 @@
   {
     "problema": "poblema",
     "necessidade": "necissidade"
+  },
+  {
+    "exemplo": "exenplo",
+    "monitoramento": "monitramento",
+    "necessidade": "necessidade."
   }
 ]
