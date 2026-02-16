@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia"
-  },
-  {
     "constante": "constate",
     "tecnologia": "tecnolgia",
     "controle": "controlle"
@@ -85,5 +82,9 @@
     "geralmente": "geralment",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "sistema": "cistema",
+    "tecnologia": "tecnolgia"
   }
 ]
