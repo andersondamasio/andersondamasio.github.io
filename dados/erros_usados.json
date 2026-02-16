@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "sistema": "sistma"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "monitoramento": "monitramento"
   },
@@ -87,5 +83,10 @@
     "muito": "muto",
     "dispositivo": "dispotivo",
     "operacional": "operacionl"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "tecnologia": "tecnolgia",
+    "dispositivo": "disposotivo"
   }
 ]
