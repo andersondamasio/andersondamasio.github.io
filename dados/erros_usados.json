@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "monitoramento": "monitramento"
-  },
-  {
     "processo": "prosseso",
     "tecnologia": "tecnnologia"
   },
@@ -88,5 +84,10 @@
     "funcionalidade": "funcionaliade",
     "tecnologia": "tecnolgia",
     "dispositivo": "disposotivo"
+  },
+  {
+    "recurso": "reccurso",
+    "melhor": "melor",
+    "gerenciamento": "gerenciamneto"
   }
 ]
