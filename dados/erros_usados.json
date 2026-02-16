@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "tecnologia": "tecnoligia",
-    "dispositivo": "disposotivo"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "acesso": "acesço",
     "estrutura": "estrtura"
@@ -83,5 +78,10 @@
   {
     "propriedade": "proprieade",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "acesso": "aceso",
+    "necessidade": "necessidade.",
+    "tecnologia": "tecnoligia"
   }
 ]
