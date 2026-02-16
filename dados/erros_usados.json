@@ -1,8 +1,5 @@
 [
   {
-    "controle": "contrle"
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura"
   },
@@ -83,5 +80,9 @@
     "exemplo": "exenplo",
     "monitoramento": "monitramento",
     "necessidade": "necessidade."
+  },
+  {
+    "prioridade": "prioriade",
+    "arquitetura": "arquiteturra"
   }
 ]
