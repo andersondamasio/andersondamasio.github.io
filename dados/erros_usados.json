@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "necessidade": "necissidade",
-    "simples": "cimples"
-  },
-  {
     "funciona": "funciona.",
     "tecnologia": "tecnoligia",
     "dispositivo": "disposotivo"
@@ -84,5 +79,9 @@
   {
     "necessidade": "nescessidade",
     "arquitetura": "arquitretura"
+  },
+  {
+    "propriedade": "proprieade",
+    "desenvolvimento": "desenvolmento"
   }
 ]
