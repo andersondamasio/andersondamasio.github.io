@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "tecnologia": "tecnolgia",
     "abordagem": "abordage"
   },
@@ -85,5 +81,10 @@
     "funciona": "funsiona",
     "conhecimento": "conhescimento",
     "simples": "cimples"
+  },
+  {
+    "conectado": "conectado.",
+    "rotina": "rotina.",
+    "simples": "simlpes"
   }
 ]
