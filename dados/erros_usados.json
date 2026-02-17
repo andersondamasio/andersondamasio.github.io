@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra"
-  },
-  {
     "funciona": "funsiona",
     "conhecimento": "conhescimento",
     "simples": "cimples"
@@ -90,5 +87,10 @@
     "componente": "componete",
     "exemplo": "exemplo.",
     "problema": "probrema"
+  },
+  {
+    "computador": "computador.",
+    "processo": "proceso",
+    "simples": "cimples"
   }
 ]
