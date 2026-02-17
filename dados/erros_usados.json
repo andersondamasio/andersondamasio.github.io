@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "arquitetura": "arquitretura"
-  },
-  {
     "propriedade": "proprieade",
     "desenvolvimento": "desenvolmento"
   },
@@ -88,5 +84,9 @@
   {
     "problema": "probrema",
     "personalizado": "personalizdo"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "exemplo": "exenplo"
   }
 ]
