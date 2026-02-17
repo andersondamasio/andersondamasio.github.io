@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "necessidade": "necessidade.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "complexidade": "complezidade",
     "tecnologia": "tecnnologia",
     "necessidade": "nescessidade"
@@ -89,5 +84,10 @@
     "constante": "constate",
     "acesso": "acesço",
     "abordagem": "abordage"
+  },
+  {
+    "estrutura": "estrtura",
+    "monitoramento": "monitorameto",
+    "necessidade": "nescessidade"
   }
 ]
