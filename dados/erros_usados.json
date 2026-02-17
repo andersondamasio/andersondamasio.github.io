@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamento.",
-    "controle": "controle.",
-    "sistema": "sistma"
-  },
-  {
     "desafio": "desafío",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
@@ -90,5 +85,9 @@
   {
     "resultado": "resutlado",
     "exemplo": "exemplo."
+  },
+  {
+    "suporte": "suprte",
+    "abordagem": "abordage"
   }
 ]
