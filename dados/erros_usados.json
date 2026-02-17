@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "monitoramento": "monitramento",
-    "necessidade": "necessidade."
-  },
-  {
     "prioridade": "prioriade",
     "arquitetura": "arquiteturra"
   },
@@ -88,5 +83,10 @@
   {
     "desafio": "desafiu",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "exemplo": "exenplo",
+    "monitoramento": "monitramento",
+    "simples": "simlpes"
   }
 ]
