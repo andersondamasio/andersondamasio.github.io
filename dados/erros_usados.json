@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "proprieade",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "acesso": "aceso",
     "necessidade": "necessidade.",
     "tecnologia": "tecnoligia"
@@ -88,5 +84,10 @@
   {
     "desenvolvimento": "desenvolvmento",
     "exemplo": "exenplo"
+  },
+  {
+    "constante": "constate",
+    "acesso": "acesço",
+    "abordagem": "abordage"
   }
 ]
