@@ -57224,5 +57224,14 @@
     "dataFonte": "2026-02-17T08:00:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.infoq.com/news/2026/02/chrome-temporal-date-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A Revolução do Autoscaling: Como o Edge Computing Desafia o Kubernetes",
+    "noticiaOriginal": "Article: Proactive Autoscaling for Edge Applications in Kubernetes",
+    "url": "artigos/devops/a-revolucao-do-autoscaling-como-o-edge-computing-desafia-o-kubernetes.html",
+    "data": "2026-02-17T09:52:55.296Z",
+    "dataFonte": "2026-02-17T09:00:00.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.infoq.com/articles/proactive-autoscaling-edge-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

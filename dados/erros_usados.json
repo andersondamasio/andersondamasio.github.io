@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "necessidade": "nescessidade",
     "arquitetura": "arquitretura"
   },
@@ -88,5 +84,9 @@
     "exemplo": "exenplo",
     "monitoramento": "monitramento",
     "simples": "simlpes"
+  },
+  {
+    "problema": "probrema",
+    "personalizado": "personalizdo"
   }
 ]
