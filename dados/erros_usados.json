@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "rotina": "rotina.",
-    "simples": "simlpes"
-  },
-  {
     "muito": "muto",
     "dispositivo": "dispotivo",
     "operacional": "operacionl"
@@ -92,5 +87,10 @@
     "tecnologia": "tecnnologia",
     "resultado": "resultao",
     "arquitetura": "arquitertura"
+  },
+  {
+    "estrutura": "estrututra",
+    "sistema": "sistéma",
+    "melhor": "melor"
   }
 ]
