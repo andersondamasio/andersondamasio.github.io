@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "arquitetura": "arquiteturra"
   },
   {
@@ -89,5 +85,10 @@
     "arquitetura": "arquitretura",
     "abordagem": "abordajem",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "componente": "componete",
+    "exemplo": "exemplo.",
+    "problema": "probrema"
   }
 ]
