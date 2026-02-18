@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "exemplo": "exenplo"
-  },
-  {
     "constante": "constate",
     "acesso": "acesço",
     "abordagem": "abordage"
@@ -89,5 +85,9 @@
   {
     "propriedade": "propriedade.",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "estrutura": "estrura"
   }
 ]
