@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceriaa",
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "controle": "controle.",
     "melhor": "melhorr"
   },
@@ -87,5 +82,9 @@
     "suporte": "suprte",
     "monitoramento": "monitorameto",
     "exemplo": "exemplo,"
+  },
+  {
+    "processo": "proceso",
+    "tecnologia": "tecnoligia"
   }
 ]
