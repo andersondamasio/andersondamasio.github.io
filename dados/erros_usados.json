@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componete",
-    "exemplo": "exemplo.",
-    "problema": "probrema"
-  },
-  {
     "computador": "computador.",
     "processo": "proceso",
     "simples": "cimples"
@@ -88,5 +83,10 @@
     "gerenciamento": "gerenciamente",
     "operacional": "operacionl",
     "arquitetura": "arquitretura"
+  },
+  {
+    "recurso": "recusso",
+    "tecnologia": "tecnolgia",
+    "sistema": "sistma"
   }
 ]
