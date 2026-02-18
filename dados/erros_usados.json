@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "suporte": "suporte.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "arquitetura": "arquitretura",
     "abordagem": "abordajem",
     "tecnologia": "tecnnologia"
@@ -88,5 +83,10 @@
     "constante": "constanate",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "categoria": "categria",
+    "constante": "constante."
   }
 ]
