@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "acesso": "acesço",
-    "abordagem": "abordage"
-  },
-  {
     "estrutura": "estrtura",
     "monitoramento": "monitorameto",
     "necessidade": "nescessidade"
@@ -89,5 +84,9 @@
   {
     "tecnologia": "tecnolgia",
     "estrutura": "estrura"
+  },
+  {
+    "conectado": "conectado.",
+    "necessidade": "necessidade."
   }
 ]
