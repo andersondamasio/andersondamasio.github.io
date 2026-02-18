@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "gerenciamento": "gerenciamnto",
-    "dispositivo": "dispotivo"
-  },
-  {
     "resultado": "resutlado",
     "exemplo": "exemplo."
   },
@@ -90,5 +85,10 @@
   {
     "geralmente": "geralmemte",
     "abordagem": "abordage"
+  },
+  {
+    "recurso": "recusso",
+    "muito": "muiito",
+    "funcionalidade": "funcionalidade."
   }
 ]
