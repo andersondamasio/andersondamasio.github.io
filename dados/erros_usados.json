@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "abordagem": "abordajem",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "componente": "componete",
     "exemplo": "exemplo.",
     "problema": "probrema"
@@ -88,5 +83,10 @@
     "desenvolvimento": "desenvolmento",
     "categoria": "categria",
     "constante": "constante."
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "operacional": "operacionl",
+    "arquitetura": "arquitretura"
   }
 ]
