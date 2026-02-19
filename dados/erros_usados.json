@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "sistema": "cistema"
-  },
-  {
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo,"
   },
@@ -90,5 +86,10 @@
     "problema": "problema.",
     "muito": "muiito",
     "gerenciamento": "gerenciamnto"
+  },
+  {
+    "abordagem": "abordagem.",
+    "processo": "proceso",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
