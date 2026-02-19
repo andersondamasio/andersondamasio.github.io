@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "tecnologia": "tecnolgia",
-    "sistema": "sistma"
-  },
-  {
     "muito": "muinto",
     "tecnologia": "tecnoligia"
   },
@@ -94,5 +89,9 @@
     "tecnologia": "tecnnologia",
     "sistema": "sistma",
     "exemplo": "exemplo,"
+  },
+  {
+    "controle": "contrle",
+    "funcionalidade": "funcionalidade."
   }
 ]
