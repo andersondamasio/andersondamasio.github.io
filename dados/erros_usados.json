@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "monitoramento": "monitorameto",
-    "exemplo": "exemplo,"
-  },
-  {
     "processo": "proceso",
     "tecnologia": "tecnoligia"
   },
@@ -93,5 +88,9 @@
   {
     "operacional": "operacionl",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "exemplo": "exemplo,"
   }
 ]
