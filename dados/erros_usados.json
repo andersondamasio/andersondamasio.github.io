@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "categoria": "categria",
-    "constante": "constante."
-  },
-  {
     "gerenciamento": "gerenciamente",
     "operacional": "operacionl",
     "arquitetura": "arquitretura"
@@ -94,5 +89,10 @@
     "dispositivo": "dispositivo.",
     "melhor": "melhorr",
     "muito": "muinto"
+  },
+  {
+    "exemplo": "exenplo",
+    "acesso": "acesço",
+    "necessidade": "necessidade."
   }
 ]
