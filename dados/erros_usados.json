@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "necessidade": "necessidade."
-  },
-  {
     "constante": "constanate",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
@@ -94,5 +90,9 @@
     "recurso": "reccurso",
     "sistema": "sistéma",
     "exemplo": "exemplo,"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "necessidade": "necissidade"
   }
 ]
