@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muinto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desafio": "desafiu",
     "prioridade": "prioriade",
     "funciona": "funciona,"
@@ -93,5 +89,10 @@
   {
     "controle": "contrle",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "abordagem": "abordage",
+    "controle": "controle."
   }
 ]
