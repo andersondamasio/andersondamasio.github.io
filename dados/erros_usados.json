@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "sistema": "sistéma",
-    "exemplo": "exemplo,"
-  },
-  {
     "tecnologia": "tecnolgia",
     "necessidade": "necissidade"
   },
@@ -90,5 +85,10 @@
     "monitoramento": "monitramento",
     "arquitetura": "arquitretura",
     "abordagem": "abordage"
+  },
+  {
+    "funciona": "funciona,",
+    "constante": "constate",
+    "tecnologia": "tecnnologia"
   }
 ]
