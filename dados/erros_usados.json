@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "monitoramento": "monitorameto"
-  },
-  {
     "acesso": "acesso.",
     "processo": "processso",
     "sistema": "cistema"
@@ -90,5 +86,9 @@
     "prioridade": "prioriade",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "suporte": "suporte.",
+    "acesso": "acesço"
   }
 ]
