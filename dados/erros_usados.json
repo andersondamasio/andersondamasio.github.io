@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "tecnologia": "tecnolgia",
-    "parceria": "parceria."
-  },
-  {
     "problema": "problema.",
     "muito": "muiito",
     "gerenciamento": "gerenciamnto"
@@ -90,5 +85,10 @@
     "conhecimento": "conhecimento.",
     "estrutura": "estrura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "suporte": "suporte.",
+    "acesso": "aceso"
   }
 ]
