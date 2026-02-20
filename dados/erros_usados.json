@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordagem.",
-    "processo": "proceso",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "arquitetura": "arquitertura",
     "monitoramento": "monitorameto"
   },
@@ -90,5 +85,10 @@
     "complexidade": "complezidade",
     "problema": "poblema",
     "arquitetura": "arquitertura"
+  },
+  {
+    "prioridade": "prioriade",
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquitretura"
   }
 ]
