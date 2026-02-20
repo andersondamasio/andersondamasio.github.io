@@ -1,9 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "simples": "cimples",
     "tecnologia": "tecnnologia",
     "necessidade": "necissidade"
@@ -92,5 +88,9 @@
   {
     "tecnologia": "tecnnologia",
     "exemplo": "exemplo,"
+  },
+  {
+    "suporte": "suprte",
+    "processo": "prosseso"
   }
 ]
