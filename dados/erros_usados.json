@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "processo": "processso",
-    "sistema": "cistema"
-  },
-  {
     "muito": "muinto",
     "funcionalidade": "funcionaliadde",
     "simples": "simlpes"
@@ -90,5 +85,10 @@
   {
     "suporte": "suporte.",
     "acesso": "acesço"
+  },
+  {
+    "desafio": "desafío",
+    "propriedade": "propriadade",
+    "desenvolvimento": "desenvolmento"
   }
 ]
