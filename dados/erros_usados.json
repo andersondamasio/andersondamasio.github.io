@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "muito": "muiito",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "abordagem": "abordagem.",
     "processo": "proceso",
     "desenvolvimento": "desenvolvmento"
@@ -90,5 +85,10 @@
     "tecnologia": "tecnolgia",
     "suporte": "suporte.",
     "acesso": "aceso"
+  },
+  {
+    "complexidade": "complezidade",
+    "problema": "poblema",
+    "arquitetura": "arquitertura"
   }
 ]
