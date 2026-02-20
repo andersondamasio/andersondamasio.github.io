@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "melhor": "melor",
-    "armazenamento": "armasenamento"
-  },
-  {
     "parceria": "parcería",
     "muito": "muinto",
     "tecnologia": "tecnoligia"
@@ -90,5 +85,10 @@
   {
     "dispositivo": "disposotivo",
     "gerenciamento": "gerenciamnto"
+  },
+  {
+    "constante": "constante.",
+    "tecnologia": "tecnolgia",
+    "internet": "internat"
   }
 ]
