@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "acesso": "acesço"
-  },
-  {
     "desafio": "desafío",
     "propriedade": "propriadade",
     "desenvolvimento": "desenvolmento"
@@ -92,5 +88,9 @@
     "funciona": "funciona,",
     "armazenamento": "armazenamentto",
     "melhor": "melhorr"
+  },
+  {
+    "computador": "computadorr",
+    "acesso": "aceso"
   }
 ]
