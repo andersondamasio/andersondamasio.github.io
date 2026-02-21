@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafío",
-    "propriedade": "propriadade",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "monitoramento": "monitramento",
     "arquitetura": "arquitretura",
     "abordagem": "abordage"
@@ -92,5 +87,9 @@
   {
     "computador": "computadorr",
     "acesso": "aceso"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "dispositivo": "dispotivo"
   }
 ]
