@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "constante": "constante.",
     "tecnologia": "tecnolgia",
     "internet": "internat"
@@ -92,5 +88,10 @@
     "recurso": "recuro",
     "exemplo": "exenplo",
     "complexidade": "complezidade"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "simples": "simlpes",
+    "tecnologia": "tecnoligia"
   }
 ]
