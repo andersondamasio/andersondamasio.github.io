@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "simples": "cimples",
-    "funciona": "funsiona"
-  },
-  {
     "necessidade": "nescessidade",
     "processo": "prosseso"
   },
@@ -90,5 +85,9 @@
   {
     "desafio": "desafío",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura"
   }
 ]
