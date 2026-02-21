@@ -57890,5 +57890,14 @@
     "dataFonte": "2026-02-21T07:30:32.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.bbc.com/news/articles/cn4gq352w89o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "Local Uploads: A Revolução Silenciosa na Upload de Dados na Nuvem",
+    "noticiaOriginal": "Cloudflare Introduces Local Uploads for R2 to Cut Cross-Region Write Latency by 75%",
+    "url": "artigos/cloud/local-uploads-a-revolucao-silenciosa-na-upload-de-dados-na-nuvem.html",
+    "data": "2026-02-21T08:34:50.706Z",
+    "dataFonte": "2026-02-21T06:57:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/02/cloudflare-local-uploads/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

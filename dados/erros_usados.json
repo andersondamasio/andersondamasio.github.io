@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "estrutura": "estrura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "tecnologia": "tecnolgia",
     "suporte": "suporte.",
     "acesso": "aceso"
@@ -93,5 +88,9 @@
     "complexidade": "complexsidade",
     "sistema": "sistma",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "resultado": "resultadoo",
+    "armazenamento": "armazanamento"
   }
 ]
