@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "utilizado": "utilizdo"
-  },
-  {
     "dispositivo": "disposotivo",
     "gerenciamento": "gerenciamnto"
   },
@@ -91,5 +87,10 @@
     "geralmente": "geralmemte",
     "categoria": "categoria.",
     "sistema": "sistéma"
+  },
+  {
+    "recurso": "recuro",
+    "exemplo": "exenplo",
+    "complexidade": "complezidade"
   }
 ]
