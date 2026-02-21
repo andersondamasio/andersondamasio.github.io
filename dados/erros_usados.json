@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "processo": "prosseso"
-  },
-  {
     "internet": "internat",
     "utilizado": "utilizdo"
   },
@@ -90,5 +86,10 @@
     "muito": "muiito",
     "sistema": "cistema",
     "dispositivo": "disposotivo"
+  },
+  {
+    "geralmente": "geralmemte",
+    "categoria": "categoria.",
+    "sistema": "sistéma"
   }
 ]
