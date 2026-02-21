@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "arquitetura": "arquitretura",
-    "abordagem": "abordage"
-  },
-  {
     "funciona": "funciona,",
     "constante": "constate",
     "tecnologia": "tecnnologia"
@@ -91,5 +86,9 @@
   {
     "desenvolvimento": "desenvolmento",
     "dispositivo": "dispotivo"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitretura"
   }
 ]
