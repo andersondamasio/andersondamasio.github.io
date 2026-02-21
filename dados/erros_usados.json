@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "problema": "poblema",
-    "arquitetura": "arquitertura"
-  },
-  {
     "prioridade": "prioriade",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
@@ -92,5 +87,10 @@
     "processo": "prosseso",
     "complexidade": "complexidade.",
     "funciona": "funciona,"
+  },
+  {
+    "suporte": "suportte",
+    "prioridade": "prioriade.",
+    "armazenamento": "armasenamento"
   }
 ]
