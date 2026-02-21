@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "suporte": "suporte.",
-    "acesso": "aceso"
-  },
-  {
     "complexidade": "complezidade",
     "problema": "poblema",
     "arquitetura": "arquitertura"
@@ -92,5 +87,10 @@
   {
     "resultado": "resultadoo",
     "armazenamento": "armazanamento"
+  },
+  {
+    "processo": "prosseso",
+    "complexidade": "complexidade.",
+    "funciona": "funciona,"
   }
 ]
