@@ -57917,5 +57917,14 @@
     "dataFonte": "2026-02-21T10:00:53.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/best-wordpress-hosting/"
+  },
+  {
+    "titulo": "Novas Fronteiras na Arquitetura: Funções Lambda da AWS e Eventos do RDS SQL Server",
+    "noticiaOriginal": "AWS Enables Lambda Function Triggers from RDS for SQL Server Database Events",
+    "url": "artigos/banco-de-dados/novas-fronteiras-na-arquitetura-funcoes-lambda-da-aws-e-eventos-do-rds-sql-server.html",
+    "data": "2026-02-21T11:26:09.273Z",
+    "dataFonte": "2026-02-21T10:33:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/02/aws-lambda-rds-trigger-events/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
