@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "simples": "simlpes",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "complexidade": "complexsidade",
     "sistema": "sistma",
     "tecnologia": "tecnolgia"
@@ -89,5 +84,9 @@
   {
     "muito": "muto",
     "controle": "controle."
+  },
+  {
+    "internet": "internert",
+    "carregamento": "carregameno"
   }
 ]
