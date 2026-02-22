@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralmemte",
-    "categoria": "categoria.",
-    "sistema": "sistéma"
-  },
-  {
     "recurso": "recuro",
     "exemplo": "exenplo",
     "complexidade": "complezidade"
@@ -90,5 +85,10 @@
   {
     "arquitetura": "arquitretura",
     "sistema": "sistéma"
+  },
+  {
+    "constante": "constate",
+    "problema": "probrema",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
