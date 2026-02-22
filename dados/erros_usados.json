@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "exemplo": "exenplo",
-    "complexidade": "complezidade"
-  },
-  {
     "arquitetura": "arquiteturra",
     "simples": "simlpes",
     "tecnologia": "tecnoligia"
@@ -90,5 +85,9 @@
     "constante": "constate",
     "problema": "probrema",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "muito": "muto",
+    "controle": "controle."
   }
 ]
