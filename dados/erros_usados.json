@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "dispositivo": "dispotivo"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitretura"
   },
@@ -88,5 +84,10 @@
   {
     "melhor": "melhorr",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "necessidade": "necessidade.",
+    "gerenciamento": "gerenciamneto",
+    "dispositivo": "dispotivo"
   }
 ]
