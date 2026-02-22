@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "arquitetura": "arquitretura",
     "sistema": "sistéma"
   },
@@ -89,5 +85,10 @@
     "melhor": "melhorr",
     "gerenciamento": "gerenciamente",
     "muito": "muinto"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "exemplo": "exenplo",
+    "tecnologia": "tecnnologia"
   }
 ]
