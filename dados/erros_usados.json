@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "monitoramento": "monitoramento.",
     "exemplo": "exenplo",
     "sistema": "sistma"
@@ -89,5 +85,10 @@
     "necessidade": "necessidade.",
     "gerenciamento": "gerenciamneto",
     "dispositivo": "dispotivo"
+  },
+  {
+    "simples": "simlpes",
+    "necessidade": "necissidade",
+    "gerenciamento": "gerenciamnto"
   }
 ]
