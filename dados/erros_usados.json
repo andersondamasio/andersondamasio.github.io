@@ -1,10 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "suporte": "suprte",
     "simples": "simplis",
     "tecnologia": "tecnoligia"
@@ -90,5 +85,9 @@
     "complexidade": "complexsidade",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "constante": "constanate"
   }
 ]
