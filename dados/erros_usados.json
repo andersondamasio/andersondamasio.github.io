@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "complexidade": "complexidade.",
-    "funciona": "funciona,"
-  },
-  {
     "suporte": "suportte",
     "prioridade": "prioriade.",
     "armazenamento": "armasenamento"
@@ -89,5 +84,9 @@
     "operacional": "operaciona",
     "recurso": "recusso",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "sistema": "sistéma",
+    "arquitetura": "arquitretura"
   }
 ]
