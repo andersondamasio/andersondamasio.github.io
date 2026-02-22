@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "estrutura": "estrtura",
     "melhor": "melor",
     "desenvolvimento": "desenvolvmento"
@@ -89,5 +85,10 @@
   {
     "suporte": "suportte",
     "arquitetura": "arquitertura"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
