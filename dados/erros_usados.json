@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "arquitetura": "arquiteturra",
-    "exemplo": "exemplo,"
-  },
-  {
     "armazenamento": "armazenamentto",
     "acesso": "aceso",
     "tecnologia": "tecnoligia"
@@ -92,5 +87,9 @@
     "arquitetura": "arquitretura",
     "simples": "simlpes",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "sistema": "sistéma",
+    "arquitetura": "arquitertura"
   }
 ]
