@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "gerenciamento": "gerenciamneto",
-    "dispositivo": "dispotivo"
-  },
-  {
     "simples": "simlpes",
     "necessidade": "necissidade",
     "gerenciamento": "gerenciamnto"
@@ -92,5 +87,10 @@
     "problema": "probrema",
     "processo": "processso",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "paralelo": "paraleloo",
+    "tecnologia": "tecnnologia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
