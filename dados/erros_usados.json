@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "complexidade": "complexsidade",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
@@ -92,5 +87,9 @@
     "dispositivo": "dispositivo.",
     "melhor": "melhorr",
     "rotina": "rotna"
+  },
+  {
+    "propriedade": "proprieade",
+    "processo": "processso"
   }
 ]
