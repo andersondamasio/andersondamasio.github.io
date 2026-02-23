@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "exemplo": "exenplo",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "desafio": "desafiu",
     "acesso": "aceso",
     "tecnologia": "tecnolgia"
@@ -92,5 +87,10 @@
     "conectado": "conectado.",
     "simples": "cimples",
     "rotina": "rotína"
+  },
+  {
+    "computador": "computadorr",
+    "virtual": "virtual.",
+    "controle": "controlle"
   }
 ]
