@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "desenvolvimento": "desenvolvmento",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "arquitetura": "arquitretura",
     "simples": "simlpes",
     "tecnologia": "tecnoligia"
@@ -93,5 +88,8 @@
     "utilizado": "utilizdo.",
     "sistema": "sistma",
     "conhecimento": "conhecimento."
+  },
+  {
+    "desenvolvimento": "desenvolvmento"
   }
 ]
