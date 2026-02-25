@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "necessidade": "necissidade",
-    "suporte": "suportte"
-  },
-  {
     "conectado": "conectado.",
     "simples": "cimples",
     "rotina": "rotína"
@@ -89,5 +84,10 @@
   {
     "muito": "muinto",
     "problema": "problema."
+  },
+  {
+    "acesso": "acesso.",
+    "desenvolvimento": "desenvolvimente",
+    "tecnologia": "tecnoligia"
   }
 ]
