@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "simples": "cimples",
-    "rotina": "rotína"
-  },
-  {
     "computador": "computadorr",
     "virtual": "virtual.",
     "controle": "controlle"
@@ -89,5 +84,9 @@
     "acesso": "acesso.",
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "arquitetura": "arquitretura"
   }
 ]
