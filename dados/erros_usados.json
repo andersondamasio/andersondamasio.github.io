@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "gerenciamento": "gerenciamnto",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "simples": "simplis",
     "sistema": "sistma"
   },
@@ -87,5 +82,9 @@
   {
     "arquitetura": "arquiteturra",
     "desafio": "desafiu"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]
