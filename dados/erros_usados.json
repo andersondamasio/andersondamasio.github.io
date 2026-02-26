@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "controle": "controle.",
-    "muito": "muiito"
-  },
-  {
     "computador": "computadorr",
     "sistema": "cistema",
     "controle": "contrle"
@@ -86,5 +81,10 @@
   {
     "muito": "muiito",
     "arquitetura": "arquitertura"
+  },
+  {
+    "desafio": "desaío",
+    "funcionalidade": "funcionalidade.",
+    "dispositivo": "dispotivo"
   }
 ]
