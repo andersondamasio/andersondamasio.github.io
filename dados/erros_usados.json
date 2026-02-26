@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "dispositivo": "disposotivo",
-    "controle": "controlle"
-  },
-  {
     "arquitetura": "arquiteturra",
     "desafio": "desafiu"
   },
@@ -88,5 +83,9 @@
     "gerenciamento": "gerenciamente",
     "parceria": "parceria.",
     "armazenamento": "armazanamento"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "problema": "problema."
   }
 ]
