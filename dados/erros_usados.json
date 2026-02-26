@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "melhor": "melhorr",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "sistema": "sistéma",
     "gerenciamento": "gerenciamnto",
     "acesso": "aceso"
@@ -86,5 +81,10 @@
   {
     "suporte": "suprte",
     "abordagem": "abordagem."
+  },
+  {
+    "melhor": "melhorr",
+    "abordagem": "abordage",
+    "muito": "muto"
   }
 ]
