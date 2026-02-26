@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "desafio": "desafiu",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "monitoramento": "monitorameto",
     "exemplo": "exenplo"
   },
@@ -89,5 +84,8 @@
     "estrutura": "estrura",
     "abordagem": "abordage",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "arquitetura": "arquitretura"
   }
 ]
