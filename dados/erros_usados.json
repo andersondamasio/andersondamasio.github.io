@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "suporte": "suprte"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "internet": "internert"
   },
@@ -86,5 +82,10 @@
     "conhecimento": "conhecimento.",
     "rotina": "rotina.",
     "internet": "internert"
+  },
+  {
+    "conectado": "conectdo",
+    "categoria": "categoria.",
+    "acesso": "acesso."
   }
 ]
