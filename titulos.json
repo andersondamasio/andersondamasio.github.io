@@ -58826,5 +58826,14 @@
     "dataFonte": "2026-02-26T19:43:51.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2026/02/26/memory-shortage-could-cause-the-biggest-smartphone-shipments-dip-in-over-a-decade/"
+  },
+  {
+    "titulo": "A nova era da autenticação no Linux: um passo além da PGP",
+    "noticiaOriginal": "Linux explores new way of authenticating developers and their code - here's how it works",
+    "url": "artigos/seguranca/a-nova-era-da-autenticacao-no-linux-um-passo-alem-da-pgp.html",
+    "data": "2026-02-26T20:41:37.665Z",
+    "dataFonte": "2026-02-26T20:24:44.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.zdnet.com/article/linux-kernel-maintainers-new-way-of-authenticating-developers-and-code/"
   }
 ]
