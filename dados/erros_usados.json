@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "suporte": "suporte.",
     "controle": "controle.",
     "muito": "muiito"
@@ -86,5 +82,9 @@
     "utilizado": "utilizdo.",
     "consistente": "consiteente",
     "exemplo": "exemplo,"
+  },
+  {
+    "muito": "muiito",
+    "arquitetura": "arquitertura"
   }
 ]
