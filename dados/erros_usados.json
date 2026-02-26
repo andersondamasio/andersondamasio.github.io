@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "desenvolvimento": "desenvolvimente",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
   },
@@ -87,5 +82,8 @@
     "abordagem": "abordage",
     "virtual": "virtual.",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "muito": "muinto"
   }
 ]
