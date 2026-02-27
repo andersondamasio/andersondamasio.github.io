@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "tecnologia": "tecnoligia",
-    "sistema": "cistema"
-  },
-  {
     "complexidade": "complexidade.",
     "necessidade": "necissidade",
     "sistema": "sistéma"
@@ -90,5 +85,10 @@
     "tecnologia": "tecnolgia",
     "controle": "contrle",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "funciona": "funciona,",
+    "recurso": "recusso",
+    "tecnologia": "tecnoligia"
   }
 ]
