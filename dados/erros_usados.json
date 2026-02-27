@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "processo": "proceso"
-  },
-  {
     "suporte": "suprte",
     "abordagem": "abordagem."
   },
@@ -89,5 +85,10 @@
     "sistema": "cistema",
     "dispositivo": "disposotivo",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "mensagem": "mensagen",
+    "monitoramento": "monitorameto",
+    "exemplo": "exenplo"
   }
 ]
