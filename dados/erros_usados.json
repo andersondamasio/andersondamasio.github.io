@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "necessidade": "necissidade",
-    "sistema": "sistéma"
-  },
-  {
     "estrutura": "estrura",
     "abordagem": "abordage",
     "arquitetura": "arquiteturra"
@@ -90,5 +85,9 @@
     "funciona": "funciona,",
     "recurso": "recusso",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "abordagem": "abordage"
   }
 ]
