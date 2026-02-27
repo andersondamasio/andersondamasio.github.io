@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "mensagem": "menssagen"
-  },
-  {
     "operacional": "operacionl",
     "sistema": "sistma"
   },
@@ -87,5 +83,10 @@
   {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "abordagem": "abordage",
+    "desafio": "desaío"
   }
 ]
