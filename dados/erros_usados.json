@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "exemplo": "exenplo"
-  },
-  {
     "funciona": "funsiona",
     "mensagem": "menssagen"
   },
@@ -87,5 +83,9 @@
   },
   {
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura"
   }
 ]
