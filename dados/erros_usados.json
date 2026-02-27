@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectdo",
-    "categoria": "categoria.",
-    "acesso": "acesso."
-  },
-  {
     "gerenciamento": "gerenciamente",
     "parceria": "parceria.",
     "armazenamento": "armazanamento"
@@ -90,5 +85,9 @@
     "acesso": "acesço",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "internet": "internete",
+    "desenvolvimento": "desenvolmento"
   }
 ]
