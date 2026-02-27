@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura"
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
   },
@@ -88,5 +85,10 @@
   {
     "acesso": "acesso.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "problema": "probrema",
+    "resultado": "resultadoo"
   }
 ]
