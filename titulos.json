@@ -59087,5 +59087,14 @@
     "dataFonte": "2026-02-28T00:01:19.000Z",
     "categoria": "Desenvolvimento de Software",
     "urlFonte": "https://www.bbc.com/news/articles/cewzngve9reo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "Melhorias nas Restrições de Chaves Estrangeiras no MySQL 9.6: O Que Isso Significa para Nós?",
+    "noticiaOriginal": "MySQL 9.6 Changes Foreign Key Constraints and Cascade Handling",
+    "url": "artigos/banco-de-dados/melhorias-nas-restricoes-de-chaves-estrangeiras-no-mysql-9-6-o-que-isso-significa-para-nos.html",
+    "data": "2026-02-28T09:30:44.293Z",
+    "dataFonte": "2026-02-28T08:34:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/02/mysql-foreign-keys/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
