@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona,",
-    "recurso": "recusso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "tecnologia": "tecnnologia",
     "abordagem": "abordage"
   },
@@ -92,5 +87,9 @@
     "conectado": "conectdo",
     "monitoramento": "monitramento",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "computador": "computador,"
   }
 ]
