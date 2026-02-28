@@ -1,9 +1,5 @@
 [
   {
-    "computador": "computador.",
-    "melhor": "melor"
-  },
-  {
     "sistema": "cistema",
     "dispositivo": "disposotivo",
     "arquitetura": "arquiteturra"
@@ -91,5 +87,10 @@
     "sistema": "sistma",
     "desafio": "desafío",
     "constante": "constante."
+  },
+  {
+    "virtual": "virtal",
+    "gerenciamento": "gerenciamente",
+    "tecnologia": "tecnolgia"
   }
 ]
