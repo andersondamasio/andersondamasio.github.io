@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "dispositivo": "disposotivo",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "mensagem": "mensagen",
     "monitoramento": "monitorameto",
     "exemplo": "exenplo"
@@ -92,5 +87,9 @@
     "virtual": "virtal",
     "gerenciamento": "gerenciamente",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "suporte": "suportte",
+    "tecnologia": "tecnnologia"
   }
 ]
