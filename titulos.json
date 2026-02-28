@@ -59042,5 +59042,14 @@
     "dataFonte": "2026-02-27T23:00:54.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://techcrunch.com/2026/02/27/openai-fires-employee-for-using-confidential-info-on-prediction-markets/"
+  },
+  {
+    "titulo": "A nova fronteira da segurança: como o Google está preparando a internet para a era quântica",
+    "noticiaOriginal": "Google quantum-proofs HTTPS by squeezing 2.5kB of data into 64-byte space",
+    "url": "artigos/seguranca/a-nova-fronteira-da-seguranca-como-o-google-esta-preparando-a-internet-para-a-era-quantica.html",
+    "data": "2026-02-28T01:55:13.354Z",
+    "dataFonte": "2026-02-28T01:26:41.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2026/02/google-is-using-clever-math-to-quantum-proof-https-certificates/"
   }
 ]

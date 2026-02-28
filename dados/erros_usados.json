@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "dispositivo": "dispotivo",
     "abordagem": "abordage",
     "desafio": "desaío"
@@ -90,5 +86,9 @@
     "conhecimento": "conhecimento.",
     "problema": "probrema",
     "resultado": "resultadoo"
+  },
+  {
+    "necessidade": "necissidade",
+    "tecnologia": "tecnnologia"
   }
 ]
