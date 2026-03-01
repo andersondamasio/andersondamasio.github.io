@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internert",
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "conectado": "conectdo",
     "monitoramento": "monitramento",
     "funcionalidade": "funcionaliadde"
@@ -90,5 +85,10 @@
     "acesso": "aceso",
     "controle": "controle.",
     "sistema": "cistema"
+  },
+  {
+    "propriedade": "propriadade",
+    "problema": "problema.",
+    "exemplo": "exenplo"
   }
 ]
