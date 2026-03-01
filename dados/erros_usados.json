@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "dispositivo": "disposotivo"
-  },
-  {
     "simples": "simplis",
     "desenvolvimento": "desenvolvimente"
   },
@@ -91,5 +87,10 @@
     "exemplo": "exenplo",
     "necessidade": "necissidade",
     "dispositivo": "disposotivo"
+  },
+  {
+    "prioridade": "prioridade.",
+    "conectado": "conetado",
+    "melhor": "melhorr"
   }
 ]
