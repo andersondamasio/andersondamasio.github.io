@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "parceria": "parceria.",
     "carregamento": "carregameno",
     "arquitetura": "arquitretura"
@@ -90,5 +86,9 @@
     "muito": "muto",
     "dispositivo": "disposotivo",
     "melhor": "melor"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "arquitetura": "arquitretura"
   }
 ]
