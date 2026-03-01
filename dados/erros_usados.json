@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desafio": "desafío",
     "exemplo": "exemplo.",
     "abordagem": "abordage"
@@ -90,5 +86,10 @@
     "muito": "muiito",
     "exemplo": "exemplo,",
     "simples": "simlpes"
+  },
+  {
+    "estrutura": "estrura",
+    "sistema": "sistma",
+    "tecnologia": "tecnolgia"
   }
 ]
