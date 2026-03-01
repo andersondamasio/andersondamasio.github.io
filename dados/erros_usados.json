@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "computador": "computador,"
-  },
-  {
     "prioridade": "prioridade.",
     "arquitetura": "arquitretura"
   },
@@ -90,5 +86,10 @@
     "melhor": "melor",
     "carregamento": "carregamneto",
     "funciona": "funciona."
+  },
+  {
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnolgia"
   }
 ]
