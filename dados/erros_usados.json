@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "controle": "controlle",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +85,10 @@
   {
     "necessidade": "necissidade",
     "complexidade": "complezidade"
+  },
+  {
+    "muito": "muiito",
+    "exemplo": "exemplo,",
+    "simples": "simlpes"
   }
 ]
