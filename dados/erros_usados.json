@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "conhecimento": "conhecimeto",
     "controle": "controlle"
   },
@@ -89,5 +84,10 @@
     "correto": "corretoo",
     "sistema": "sistéma",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "acesso": "aceso",
+    "desenvolvimento": "desenvolvmento",
+    "necessidade": "necessidade."
   }
 ]
