@@ -1,10 +1,5 @@
 [
   {
-    "propriedade": "propriadade",
-    "problema": "problema.",
-    "exemplo": "exenplo"
-  },
-  {
     "melhor": "melor",
     "carregamento": "carregamneto",
     "funciona": "funciona."
@@ -89,5 +84,10 @@
   {
     "estrutura": "estrtura",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "operacional": "operacional.",
+    "desenvolvimento": "desenvolmento",
+    "sistema": "cistema"
   }
 ]
