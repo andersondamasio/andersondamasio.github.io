@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "controle": "controlle"
-  },
-  {
     "exemplo": "exenplo",
     "necessidade": "necissidade",
     "dispositivo": "disposotivo"
@@ -89,5 +85,9 @@
     "acesso": "aceso",
     "desenvolvimento": "desenvolvmento",
     "necessidade": "necessidade."
+  },
+  {
+    "funciona": "funciona.",
+    "exemplo": "exemplo,"
   }
 ]
