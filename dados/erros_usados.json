@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "necessidade": "necissidade",
-    "dispositivo": "disposotivo"
-  },
-  {
     "prioridade": "prioridade.",
     "conectado": "conetado",
     "melhor": "melhorr"
@@ -89,5 +84,10 @@
   {
     "funciona": "funciona.",
     "exemplo": "exemplo,"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura",
+    "sistema": "sistéma"
   }
 ]
