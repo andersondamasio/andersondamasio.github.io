@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "controle": "controle.",
-    "sistema": "cistema"
-  },
-  {
     "propriedade": "propriadade",
     "problema": "problema.",
     "exemplo": "exenplo"
@@ -90,5 +85,9 @@
   {
     "suporte": "suportte",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "estrutura": "estrtura",
+    "arquitetura": "arquiteturra"
   }
 ]
