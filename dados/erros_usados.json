@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "complexidade": "complezidade"
-  },
-  {
     "muito": "muiito",
     "exemplo": "exemplo,",
     "simples": "simlpes"
@@ -93,5 +89,10 @@
     "controle": "controlle",
     "arquitetura": "arquitertura",
     "exemplo": "exenplo"
+  },
+  {
+    "muito": "muinto",
+    "armazenamento": "armazanamento",
+    "problema": "problema."
   }
 ]
