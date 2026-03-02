@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrura",
-    "sistema": "sistma",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "desafio": "desafiu",
     "melhor": "melhorr"
@@ -94,5 +89,10 @@
     "simples": "simlpes",
     "necessidade": "necessidade.",
     "abordagem": "abordage"
+  },
+  {
+    "constante": "constante.",
+    "dispositivo": "dispotivo",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
