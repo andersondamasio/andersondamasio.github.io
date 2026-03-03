@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "dispositivo": "dispotivo",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "muito": "muinto",
     "tecnologia": "tecnoligia"
   },
@@ -86,5 +81,10 @@
   {
     "processo": "prosseso",
     "exemplo": "exemplo,"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "monitoramento": "monitramento",
+    "arquitetura": "arquitertura"
   }
 ]
