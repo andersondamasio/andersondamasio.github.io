@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "desenvolvimento": "desenvolvmento",
-    "necessidade": "necessidade."
-  },
-  {
     "funciona": "funciona.",
     "exemplo": "exemplo,"
   },
@@ -89,5 +84,10 @@
     "melhor": "melhorr",
     "processo": "proceso",
     "acesso": "aceso"
+  },
+  {
+    "desafio": "desafiu",
+    "complexidade": "complexidade.",
+    "sistema": "cistema"
   }
 ]
