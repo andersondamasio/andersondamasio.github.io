@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "dispositivo": "disposotivo"
-  },
-  {
     "componente": "componente.",
     "simples": "simplis"
   },
@@ -87,5 +83,9 @@
   {
     "controle": "controle.",
     "muito": "muinto"
+  },
+  {
+    "problema": "poblema",
+    "estrutura": "estrura"
   }
 ]
