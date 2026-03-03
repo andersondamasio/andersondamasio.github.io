@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitretura",
-    "sistema": "sistéma"
-  },
-  {
     "arquitetura": "arquiteturra",
     "simples": "cimples"
   },
@@ -89,5 +84,10 @@
   {
     "suporte": "suportte",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "controle": "controlle",
+    "arquitetura": "arquitretura"
   }
 ]
