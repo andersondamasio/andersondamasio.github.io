@@ -59690,5 +59690,14 @@
     "dataFonte": "2026-03-03T14:49:03.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2026/03/03/apples-new-studio-displays-come-with-thunderbolt-5/"
+  },
+  {
+    "titulo": "Acelere seu Linux: Como descobrir o que está emperrando seu boot",
+    "noticiaOriginal": "Linux PC booting slowly? This handy tool shows why in seconds - here's how",
+    "url": "artigos/devops/acelere-seu-linux-como-descobrir-o-que-esta-emperrando-seu-boot.html",
+    "data": "2026-03-03T15:57:11.470Z",
+    "dataFonte": "2026-03-03T15:52:27.000Z",
+    "categoria": "DevOps",
+    "urlFonte": "https://www.zdnet.com/article/linux-boot-time-systemd-analyze/"
   }
 ]

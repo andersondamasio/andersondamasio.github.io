@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "estrutura": "estrtura",
     "arquitetura": "arquiteturra"
   },
@@ -88,5 +84,10 @@
     "recurso": "reccurso",
     "virtual": "virtal",
     "armazenamento": "armasenamento"
+  },
+  {
+    "processo": "proceso",
+    "sistema": "cistema",
+    "exemplo": "exenplo"
   }
 ]
