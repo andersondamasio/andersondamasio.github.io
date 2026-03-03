@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "simples": "cimples",
     "sistema": "sistma"
@@ -87,5 +83,9 @@
   {
     "prioridade": "prioridade.",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "paralelo": "paralélo",
+    "dispositivo": "dispotivo"
   }
 ]
