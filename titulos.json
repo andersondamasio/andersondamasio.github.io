@@ -59663,5 +59663,14 @@
     "dataFonte": "2026-03-03T01:06:01.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.wired.com/story/joe-gebbia-mystery-metallic-device/"
+  },
+  {
+    "titulo": "Desvendando o Anonimato: Como LLMs Estão Transformando a Segurança Digital",
+    "noticiaOriginal": "LLMs can unmask pseudonymous users at scale with surprising accuracy",
+    "url": "artigos/seguranca/desvendando-o-anonimato-como-llms-estao-transformando-a-seguranca-digital.html",
+    "data": "2026-03-03T13:01:37.217Z",
+    "dataFonte": "2026-03-03T12:30:24.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2026/03/llms-can-unmask-pseudonymous-users-at-scale-with-surprising-accuracy/"
   }
 ]
