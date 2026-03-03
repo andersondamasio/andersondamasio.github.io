@@ -1,9 +1,5 @@
 [
   {
-    "componente": "componente.",
-    "simples": "simplis"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia"
   },
@@ -87,5 +83,9 @@
   {
     "problema": "poblema",
     "estrutura": "estrura"
+  },
+  {
+    "prioridade": "prioridade.",
+    "desenvolvimento": "desenvolmento"
   }
 ]
