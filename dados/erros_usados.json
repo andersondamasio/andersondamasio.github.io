@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muinto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "desafio": "desafiu"
   },
@@ -86,5 +82,10 @@
     "tecnologia": "tecnoligia",
     "monitoramento": "monitramento",
     "arquitetura": "arquitertura"
+  },
+  {
+    "sistema": "sistma",
+    "exemplo": "exenplo",
+    "tecnologia": "tecnolgia"
   }
 ]
