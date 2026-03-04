@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "dispositivo": "dispotivo",
-    "necessidade": "necissidade"
-  },
-  {
     "simples": "simlpes",
     "exemplo": "exemplo.",
     "acesso": "aceso"
@@ -88,5 +83,9 @@
     "armazenamento": "armazenamentto",
     "arquitetura": "arquitertura",
     "melhor": "melor"
+  },
+  {
+    "sistema": "sistéma",
+    "tecnologia": "tecnnologia"
   }
 ]
