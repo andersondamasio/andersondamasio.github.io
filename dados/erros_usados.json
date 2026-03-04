@@ -1,9 +1,5 @@
 [
   {
-    "paralelo": "paralélo",
-    "dispositivo": "dispotivo"
-  },
-  {
     "resultado": "resultao",
     "automatizado": "automatizdo.",
     "monitoramento": "monitramento"
@@ -92,5 +88,8 @@
   {
     "processo": "prosseso",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "internet": "internat"
   }
 ]
