@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioridade.",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "paralelo": "paralélo",
     "dispositivo": "dispotivo"
   },
@@ -92,5 +88,9 @@
     "carregamento": "carregamneto",
     "gerenciamento": "gerenciamneto",
     "estrutura": "estrututra"
+  },
+  {
+    "processo": "prosseso",
+    "tecnologia": "tecnnologia"
   }
 ]
