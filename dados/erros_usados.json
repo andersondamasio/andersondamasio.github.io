@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "armazenamento": "armasenamento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "necessidade": "necessidade.",
     "desenvolvimento": "desenvolvimente"
   },
@@ -89,5 +84,10 @@
   {
     "dispositivo": "dispositivo.",
     "acesso": "acesço"
+  },
+  {
+    "constante": "constate",
+    "arquitetura": "arquitretura",
+    "prioridade": "prioridade."
   }
 ]
