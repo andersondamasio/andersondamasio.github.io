@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "sistema": "cistema",
-    "exemplo": "exenplo"
-  },
-  {
     "exemplo": "exemplo.",
     "armazenamento": "armasenamento",
     "arquitetura": "arquitretura"
@@ -90,5 +85,9 @@
     "geralmente": "geralment",
     "funciona": "funciona,",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "acesso": "acesço"
   }
 ]
