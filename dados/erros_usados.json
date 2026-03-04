@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "tecnologia": "tecnoligia",
     "controle": "controlle",
     "arquitetura": "arquitretura"
@@ -87,5 +83,10 @@
   {
     "desenvolvimento": "desenvolmento",
     "muito": "muinto"
+  },
+  {
+    "prioridade": "prioriade.",
+    "muito": "muiito",
+    "processo": "processso"
   }
 ]
