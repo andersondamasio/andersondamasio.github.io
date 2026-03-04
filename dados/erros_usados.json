@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "virtual": "virtal",
-    "armazenamento": "armasenamento"
-  },
-  {
     "processo": "proceso",
     "sistema": "cistema",
     "exemplo": "exenplo"
@@ -90,5 +85,10 @@
     "problema": "poblema",
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "geralmente": "geralment",
+    "funciona": "funciona,",
+    "tecnologia": "tecnolgia"
   }
 ]
