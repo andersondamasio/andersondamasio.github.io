@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "muito": "muiito",
-    "processo": "processso"
-  },
-  {
     "armazenamento": "armazenamentto",
     "arquitetura": "arquitertura",
     "melhor": "melor"
@@ -92,5 +87,8 @@
     "muito": "muinto",
     "carregamento": "carregamento.",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "arquitetura": "arquitertura"
   }
 ]
