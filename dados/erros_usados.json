@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "muito": "muto",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "exemplo": "exenplo",
     "abordagem": "abordage",
     "processo": "processso"
@@ -89,5 +84,9 @@
     "controle": "controle.",
     "arquitetura": "arquiteturra",
     "simples": "simlpes"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "tecnologia": "tecnolgia"
   }
 ]
