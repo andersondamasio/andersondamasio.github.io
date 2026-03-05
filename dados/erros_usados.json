@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "abordagem": "abordage",
-    "processo": "processso"
-  },
-  {
     "carregamento": "carregamneto",
     "gerenciamento": "gerenciamneto",
     "estrutura": "estrututra"
@@ -88,5 +83,10 @@
   {
     "conhecimento": "conhescimento",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "utilizado": "utilizado.",
+    "simples": "cimples",
+    "exemplo": "exenplo"
   }
 ]
