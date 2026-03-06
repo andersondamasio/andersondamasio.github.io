@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "processo": "processso",
     "funcionalidade": "funcionaliade",
     "tecnologia": "tecnoligia"
@@ -90,5 +86,9 @@
     "estrutura": "estrtura",
     "constante": "constanate",
     "abordagem": "abordage"
+  },
+  {
+    "necessidade": "necessidade.",
+    "prioridade": "prioriade."
   }
 ]
