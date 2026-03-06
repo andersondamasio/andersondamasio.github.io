@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "utilizado": "utilizado.",
     "simples": "cimples",
     "exemplo": "exenplo"
@@ -88,5 +84,10 @@
   {
     "armazenamento": "armazanamento",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "parceria": "parcería",
+    "abordagem": "abordage",
+    "tecnologia": "tecnoligia"
   }
 ]
