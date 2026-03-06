@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "conhecimento": "conhecimento."
-  },
-  {
     "carregamento": "carregameno",
     "geralmente": "geralmete",
     "monitoramento": "monitramento"
@@ -87,5 +83,10 @@
     "controle": "controlle",
     "prioridade": "prioriade",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "estrutura": "estrtura",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
