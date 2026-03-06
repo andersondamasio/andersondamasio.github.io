@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "geralmente": "geralmete",
-    "monitoramento": "monitramento"
-  },
-  {
     "muito": "muinto",
     "carregamento": "carregamento.",
     "desenvolvimento": "desenvolvmento"
@@ -88,5 +83,9 @@
     "funcionalidade": "funcionaliade",
     "estrutura": "estrtura",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "constante": "constanate"
   }
 ]
