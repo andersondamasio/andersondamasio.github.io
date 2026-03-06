@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "suporte": "suprte",
-    "sistema": "cistema"
-  },
-  {
     "simples": "simplis",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia"
@@ -90,5 +85,10 @@
     "propriedade": "propriedade.",
     "acesso": "acesço",
     "constante": "constanate"
+  },
+  {
+    "controle": "contrle",
+    "acesso": "aceso",
+    "arquitetura": "arquitertura"
   }
 ]
