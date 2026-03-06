@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "prioridade": "prioriade."
-  },
-  {
     "propriedade": "propriedade.",
     "acesso": "acesço",
     "constante": "constanate"
@@ -87,5 +83,10 @@
     "desenvolvimento": "desenvolvimente",
     "sistema": "sistma",
     "suporte": "suporte."
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "constante": "constate",
+    "exemplo": "exemplo,"
   }
 ]
