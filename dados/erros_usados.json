@@ -1,8 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento."
-  },
-  {
     "recurso": "reccurso",
     "muito": "muinto",
     "exemplo": "exemplo,"
@@ -87,5 +84,9 @@
   {
     "prioridade": "prioriade",
     "complexidade": "complexsidade"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "abordagem": "abordagem."
   }
 ]
