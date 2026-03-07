@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "acesso": "aceso",
-    "arquitetura": "arquitertura"
-  },
-  {
     "suporte": "suportte",
     "geralmente": "geralmete"
   },
@@ -87,5 +82,10 @@
   {
     "personalizado": "personalizdo",
     "dispositivo": "dispotivo"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "arquitetura": "arquiteturra",
+    "exemplo": "exemplo."
   }
 ]
