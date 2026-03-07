@@ -60365,5 +60365,14 @@
     "dataFonte": "2026-03-07T10:45:00.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.infoq.com/news/2026/03/cloudflare-post-quantum-ipsec/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Nova Era na Nuvem: A Revolução da Virtualização Aninhada no AWS EC2",
+    "noticiaOriginal": "AWS Introduces Nested Virtualization on EC2 Instances",
+    "url": "artigos/cloud/nova-era-na-nuvem-a-revolucao-da-virtualizacao-aninhada-no-aws-ec2.html",
+    "data": "2026-03-07T12:52:19.346Z",
+    "dataFonte": "2026-03-07T12:34:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/03/aws-ec2-nested-virtualization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
