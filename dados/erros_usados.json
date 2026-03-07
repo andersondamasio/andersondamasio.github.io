@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "geralmente": "geralmete"
-  },
-  {
     "armazenamento": "armazanamento",
     "desenvolvimento": "desenvolvmento"
   },
@@ -87,5 +83,8 @@
     "funcionalidade": "funcionaliadde",
     "arquitetura": "arquiteturra",
     "exemplo": "exemplo."
+  },
+  {
+    "acesso": "aceso"
   }
 ]
