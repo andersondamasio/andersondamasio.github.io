@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "desafio": "desafiu",
-    "suporte": "suprte"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "mensagem": "menssagem",
     "controle": "controle."
@@ -88,5 +83,10 @@
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitertura",
     "exemplo": "exenplo"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnolgia"
   }
 ]
