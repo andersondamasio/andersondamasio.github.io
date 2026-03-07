@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "prioridade": "prioriade",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "estrutura": "estrtura",
     "desenvolvimento": "desenvolvimente"
@@ -88,5 +83,9 @@
     "computador": "computadorr",
     "melhor": "melhorr",
     "suporte": "suporte."
+  },
+  {
+    "abordagem": "abordagem.",
+    "processo": "prosseso"
   }
 ]
