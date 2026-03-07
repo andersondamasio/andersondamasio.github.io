@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "constante": "constanate"
-  },
-  {
     "monitoramento": "monitoramento."
   },
   {
@@ -87,5 +83,9 @@
     "funciona": "funciona.",
     "simples": "cimples",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "prioridade": "prioriade",
+    "complexidade": "complexsidade"
   }
 ]
