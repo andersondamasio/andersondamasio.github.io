@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "parceria": "parcería",
     "abordagem": "abordage",
     "tecnologia": "tecnoligia"
@@ -86,5 +82,9 @@
   },
   {
     "acesso": "aceso"
+  },
+  {
+    "simples": "cimples",
+    "sistema": "sistma"
   }
 ]
