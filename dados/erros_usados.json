@@ -1,9 +1,5 @@
 [
   {
-    "rotina": "rotína",
-    "exemplo": "exemplo,"
-  },
-  {
     "computador": "computador,",
     "conhecimento": "conhescimento"
   },
@@ -88,5 +84,9 @@
     "virtual": "virtuaal",
     "executado": "executado.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "melhor": "melor"
   }
 ]
