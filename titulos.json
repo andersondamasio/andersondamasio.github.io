@@ -60356,5 +60356,14 @@
     "dataFonte": "2026-03-07T10:01:00.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.zdnet.com/article/best-antivirus-2026/"
+  },
+  {
+    "titulo": "Post-Quantum: A Nova Era da Segurança em Redes",
+    "noticiaOriginal": "Standardizing Post-Quantum IPsec: Cloudflare Adopts Hybrid ML-KEM to Replace Ciphersuite Bloat",
+    "url": "artigos/seguranca/post-quantum-a-nova-era-da-seguranca-em-redes.html",
+    "data": "2026-03-07T11:24:06.424Z",
+    "dataFonte": "2026-03-07T10:45:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/03/cloudflare-post-quantum-ipsec/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

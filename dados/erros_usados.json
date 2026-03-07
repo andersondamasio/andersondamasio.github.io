@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "parceria": "parceria."
-  },
-  {
     "simples": "simplis",
     "melhor": "melor"
   },
@@ -87,5 +83,9 @@
     "necessidade": "nescessidade",
     "componente": "componete",
     "muito": "muto"
+  },
+  {
+    "paralelo": "paralélo",
+    "constante": "constate"
   }
 ]
