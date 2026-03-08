@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "consistente": "consitente"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitertura",
     "exemplo": "exenplo"
@@ -87,5 +83,9 @@
     "monitoramento": "monitorameto",
     "funcionalidade": "funcionaliadde",
     "melhor": "melor"
+  },
+  {
+    "recurso": "recusso",
+    "tecnologia": "tecnnologia"
   }
 ]
