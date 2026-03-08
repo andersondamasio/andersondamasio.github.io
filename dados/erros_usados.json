@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "tecnologia": "tecnnologia",
-    "processo": "proceso"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "sistema": "sistma"
   },
@@ -88,5 +83,9 @@
     "melhor": "melhorr",
     "exemplo": "exenplo",
     "sistema": "cistema"
+  },
+  {
+    "simples": "simlpes",
+    "arquitetura": "arquitretura"
   }
 ]
