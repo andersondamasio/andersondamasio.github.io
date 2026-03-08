@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "sistema": "sistma"
-  },
-  {
     "dispositivo": "disposotivo",
     "necessidade": "necessidade.",
     "abordagem": "abordajem"
@@ -87,5 +83,10 @@
   {
     "simples": "simlpes",
     "arquitetura": "arquitretura"
+  },
+  {
+    "estrutura": "estrura",
+    "constante": "constante.",
+    "sistema": "sistma"
   }
 ]
