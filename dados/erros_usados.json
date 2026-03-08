@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliadde",
-    "constante": "constate",
-    "exemplo": "exemplo,"
-  },
-  {
     "personalizado": "personalizdo",
     "dispositivo": "dispotivo"
   },
@@ -88,5 +83,9 @@
     "estrutura": "estrututra",
     "tecnologia": "tecnnologia",
     "processo": "proceso"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "sistema": "sistma"
   }
 ]
