@@ -1,9 +1,5 @@
 [
   {
-    "paralelo": "paralélo",
-    "constante": "constate"
-  },
-  {
     "virtual": "virtuaal",
     "executado": "executado.",
     "arquitetura": "arquitertura"
@@ -87,5 +83,8 @@
   {
     "conectado": "conetado",
     "acesso": "acesso."
+  },
+  {
+    "funcionalidade": "funcionaliadde"
   }
 ]

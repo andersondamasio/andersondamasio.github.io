@@ -60536,5 +60536,14 @@
     "dataFonte": "2026-03-08T09:00:13.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.zdnet.com/article/best-travel-vpn/"
+  },
+  {
+    "titulo": "Como Consultar Dados Distribuídos sem Estresse: A Nova Funcionalidade do BigQuery",
+    "noticiaOriginal": "Google BigQuery Previews Cross-Region SQL Queries for Distributed Data",
+    "url": "artigos/banco-de-dados/como-consultar-dados-distribuidos-sem-estresse-a-nova-funcionalidade-do-bigquery.html",
+    "data": "2026-03-08T10:29:23.101Z",
+    "dataFonte": "2026-03-08T10:11:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/03/google-bigquery-cross-region-sql/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
