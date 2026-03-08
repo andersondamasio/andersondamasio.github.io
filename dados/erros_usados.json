@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "melhor": "melor"
-  },
-  {
     "armazenamento": "armazanamento",
     "consistente": "consitente"
   },
@@ -86,5 +82,10 @@
     "muito": "muto",
     "sistema": "sistéma",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "funcionalidade": "funcionaliadde",
+    "melhor": "melor"
   }
 ]
