@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "simples": "cimples",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "prioridade": "prioriade",
     "complexidade": "complexsidade"
   },
@@ -87,5 +82,9 @@
     "desafio": "desafío",
     "suporte": "suportte",
     "arquitetura": "arquitertura"
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "internet": "internete"
   }
 ]
