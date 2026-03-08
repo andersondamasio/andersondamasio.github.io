@@ -1,10 +1,5 @@
 [
   {
-    "computador": "computadorr",
-    "melhor": "melhorr",
-    "suporte": "suporte."
-  },
-  {
     "abordagem": "abordagem.",
     "processo": "prosseso"
   },
@@ -86,5 +81,10 @@
     "virtual": "virtuaal",
     "utilizado": "utilizdo",
     "consistente": "consiteente"
+  },
+  {
+    "sistema": "cistema",
+    "tecnologia": "tecnolgia",
+    "monitoramento": "monitorameto"
   }
 ]
