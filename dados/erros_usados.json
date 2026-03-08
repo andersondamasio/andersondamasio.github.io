@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "arquitetura": "arquitertura",
-    "exemplo": "exenplo"
-  },
-  {
     "dispositivo": "dispositivo.",
     "exemplo": "exemplo.",
     "tecnologia": "tecnolgia"
@@ -87,5 +82,9 @@
   {
     "recurso": "recusso",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "internet": "internat",
+    "funciona": "funciona,"
   }
 ]
