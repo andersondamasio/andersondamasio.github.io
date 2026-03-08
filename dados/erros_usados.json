@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "computador": "computadorr",
     "melhor": "melhorr",
     "suporte": "suporte."
@@ -86,5 +81,10 @@
   {
     "internet": "internat",
     "funciona": "funciona,"
+  },
+  {
+    "virtual": "virtuaal",
+    "utilizado": "utilizdo",
+    "consistente": "consiteente"
   }
 ]
