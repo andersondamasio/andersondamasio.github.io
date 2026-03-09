@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "internet": "internete"
-  },
-  {
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnolgia"
@@ -90,5 +86,10 @@
     "funciona": "funciona,",
     "paralelo": "paralelo.",
     "muito": "muto"
+  },
+  {
+    "sistema": "sistéma",
+    "armazenamento": "armazenamentto",
+    "gerenciamento": "gerenciamnto"
   }
 ]
