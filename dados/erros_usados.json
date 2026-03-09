@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "sistema": "sistéma"
-  },
-  {
     "conectado": "conetado",
     "acesso": "acesso."
   },
@@ -88,5 +84,9 @@
   {
     "abordagem": "abordage",
     "utilizado": "utilizdo"
+  },
+  {
+    "processo": "prosseso",
+    "problema": "probrema"
   }
 ]
