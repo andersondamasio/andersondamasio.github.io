@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conetado",
-    "acesso": "acesso."
-  },
-  {
     "funcionalidade": "funcionaliadde"
   },
   {
@@ -88,5 +84,9 @@
   {
     "processo": "prosseso",
     "problema": "probrema"
+  },
+  {
+    "constante": "constanate",
+    "virtual": "virtual."
   }
 ]
