@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "tecnologia": "tecnolgia",
-    "monitoramento": "monitorameto"
-  },
-  {
     "desafio": "desafío",
     "suporte": "suportte",
     "arquitetura": "arquitertura"
@@ -91,5 +86,9 @@
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma",
     "exemplo": "exemplo,"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "sistema": "sistma"
   }
 ]
