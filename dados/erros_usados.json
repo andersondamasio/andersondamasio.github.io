@@ -1,9 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "exemplo": "exenplo"
-  },
-  {
     "controle": "controlle",
     "arquitetura": "arquitretura",
     "prioridade": "prioriade"
@@ -88,5 +84,9 @@
     "sistema": "sistéma",
     "simples": "simlpes",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "simples": "cimples",
+    "tecnologia": "tecnnologia"
   }
 ]
