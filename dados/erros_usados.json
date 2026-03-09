@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "utilizado": "utilizdo",
-    "consistente": "consiteente"
-  },
-  {
     "sistema": "cistema",
     "tecnologia": "tecnolgia",
     "monitoramento": "monitorameto"
@@ -91,5 +86,10 @@
     "operacional": "operacional.",
     "dispositivo": "disposotivo",
     "recurso": "recuro"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "sistema": "sistéma",
+    "exemplo": "exemplo,"
   }
 ]
