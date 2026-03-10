@@ -1,9 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "problema": "probrema"
-  },
-  {
     "constante": "constanate",
     "virtual": "virtual."
   },
@@ -92,5 +88,10 @@
     "armazenamento": "armasenamento",
     "muito": "muinto",
     "dispositivo": "dispositivo."
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "muito": "muto",
+    "exemplo": "exemplo."
   }
 ]
