@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "conhecimento": "conhecimeto",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "acesso": "aceso",
     "tecnologia": "tecnoligia"
   },
@@ -93,5 +88,10 @@
   {
     "recurso": "reccurso",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "dispositivo": "disposotivo",
+    "funcionalidade": "funcionaliadde",
+    "acesso": "acesço"
   }
 ]
