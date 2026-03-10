@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "arquitetura": "arquitretura"
-  },
-  {
     "estrutura": "estrura",
     "constante": "constante.",
     "sistema": "sistma"
@@ -90,5 +86,10 @@
     "exemplo": "exenplo",
     "muito": "muiito",
     "arquitetura": "arquitretura"
+  },
+  {
+    "complexidade": "complexsidade",
+    "componente": "componete",
+    "exemplo": "exemplo,"
   }
 ]
