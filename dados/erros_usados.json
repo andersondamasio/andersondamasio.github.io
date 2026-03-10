@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "simples": "simlpes",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "simples": "cimples",
     "tecnologia": "tecnnologia"
   },
@@ -91,5 +86,10 @@
     "sistema": "sistéma",
     "desenvolvimento": "desenvolvimente",
     "necessidade": "necissidade"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "suporte": "suportte",
+    "desenvolvimento": "desenvolmento"
   }
 ]
