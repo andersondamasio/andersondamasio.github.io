@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "dispositivo": "disposotivo",
-    "recurso": "recuro"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma",
     "exemplo": "exemplo,"
@@ -93,5 +88,9 @@
     "computador": "computador,",
     "muito": "muinto",
     "sistema": "sistma"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "sistema": "sistéma"
   }
 ]
