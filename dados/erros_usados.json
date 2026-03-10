@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralmete",
-    "muito": "muinto",
-    "abordagem": "abordajem"
-  },
-  {
     "operacional": "operacional.",
     "dispositivo": "disposotivo",
     "recurso": "recuro"
@@ -93,5 +88,10 @@
     "exemplo": "exemplo,",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "computador": "computador,",
+    "muito": "muinto",
+    "sistema": "sistma"
   }
 ]
