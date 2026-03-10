@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "necessidade": "nescessidade",
     "muito": "muiito"
@@ -93,5 +89,9 @@
     "dispositivo": "disposotivo",
     "funcionalidade": "funcionaliadde",
     "acesso": "acesço"
+  },
+  {
+    "constante": "constanate",
+    "tecnologia": "tecnoligia"
   }
 ]
