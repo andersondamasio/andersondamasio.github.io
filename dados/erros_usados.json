@@ -1,9 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "exemplo": "exemplo.",
     "arquitetura": "arquitretura",
     "armazenamento": "armasenamento"
@@ -91,5 +87,9 @@
     "armazenamento": "armasenamento",
     "suporte": "suportte",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "suporte": "suporte."
   }
 ]
