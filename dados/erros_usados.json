@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "virtual": "virtual."
-  },
-  {
     "prioridade": "prioriade",
     "conhecimento": "conhecimeto",
     "tecnologia": "tecnolgia"
@@ -93,5 +89,9 @@
     "funcionalidade": "funcionaliade",
     "muito": "muto",
     "exemplo": "exemplo."
+  },
+  {
+    "recurso": "reccurso",
+    "funcionalidade": "funcionalidade."
   }
 ]
