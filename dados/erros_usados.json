@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "desenvolvimento": "desenvolvimente",
-    "necessidade": "necissidade"
-  },
-  {
     "armazenamento": "armasenamento",
     "suporte": "suportte",
     "desenvolvimento": "desenvolmento"
@@ -92,5 +87,9 @@
     "prioridade": "prioriade",
     "executado": "executado.",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "muito": "muto",
+    "acesso": "aceso"
   }
 ]
