@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "sistema": "sistéma"
-  },
-  {
     "desafio": "desafiu",
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra"
@@ -89,5 +85,10 @@
   {
     "parceria": "parceriaa",
     "necessidade": "nescessidade"
+  },
+  {
+    "necessidade": "necissidade",
+    "sistema": "sistma",
+    "monitoramento": "monitoramento."
   }
 ]
