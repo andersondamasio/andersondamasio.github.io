@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "componente": "componete",
-    "exemplo": "exemplo,"
-  },
-  {
     "sistema": "sistéma",
     "desenvolvimento": "desenvolvimente",
     "necessidade": "necissidade"
@@ -92,5 +87,10 @@
     "abordagem": "abordage",
     "suporte": "suporte.",
     "processo": "proceso"
+  },
+  {
+    "prioridade": "prioriade",
+    "executado": "executado.",
+    "desenvolvimento": "desenvolvimente"
   }
 ]

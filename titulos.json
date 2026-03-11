@@ -61004,5 +61004,14 @@
     "dataFonte": "2026-03-11T08:40:00.000Z",
     "categoria": "Desenvolvimento de Software",
     "urlFonte": "https://www.infoq.com/news/2026/03/uno-platform-6-5-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A revolução dos bots: como a segurança em CI/CD pode ser comprometida",
+    "noticiaOriginal": "AI-Powered Bot Compromises GitHub Actions Workflows Across Microsoft, DataDog, and CNCF Projects",
+    "url": "artigos/seguranca/a-revolucao-dos-bots-como-a-seguranca-em-ci-cd-pode-ser-comprometida.html",
+    "data": "2026-03-11T09:46:35.862Z",
+    "dataFonte": "2026-03-11T09:34:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/03/ai-bot-github-actions-exploit/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
