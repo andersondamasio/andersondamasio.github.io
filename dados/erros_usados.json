@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "muito": "muto",
-    "exemplo": "exemplo."
-  },
-  {
     "recurso": "reccurso",
     "funcionalidade": "funcionalidade."
   },
@@ -91,5 +86,10 @@
     "resultado": "resutlado",
     "constante": "constanate",
     "acesso": "acesso."
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnoligia"
   }
 ]
