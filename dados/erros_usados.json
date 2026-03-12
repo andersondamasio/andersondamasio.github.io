@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "executado": "executado.",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "muito": "muto",
     "acesso": "aceso"
   },
@@ -90,5 +85,10 @@
     "funciona": "funsiona",
     "melhor": "melor",
     "problema": "poblema"
+  },
+  {
+    "conectado": "conectado.",
+    "funciona": "funciona,",
+    "recurso": "recuro"
   }
 ]
