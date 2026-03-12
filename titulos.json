@@ -61157,5 +61157,14 @@
     "dataFonte": "2026-03-12T00:01:42.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.bbc.com/news/articles/cn48n18pg1eo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "Construindo Segurança: Como Adaptar Suas Automação com Identidades de Serviço",
+    "noticiaOriginal": "Temporary rollback: build identities can access Advanced Security: read alerts again",
+    "url": "artigos/seguranca/construindo-seguranca-como-adaptar-suas-automacao-com-identidades-de-servico.html",
+    "data": "2026-03-12T07:51:10.251Z",
+    "dataFonte": "2026-03-11T23:46:28.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://devblogs.microsoft.com/devops/temporary-rollback-build-identities-can-access-advanced-security-read-alerts-again/"
   }
 ]
