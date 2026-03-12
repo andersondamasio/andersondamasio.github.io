@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotína",
-    "tecnologia": "tecnnologia",
-    "desafio": "desaío"
-  },
-  {
     "internet": "internert",
     "acesso": "aceso",
     "muito": "muto"
@@ -92,5 +87,10 @@
     "armazenamento": "armazanamento",
     "dispositivo": "dispotivo",
     "sistema": "sistma"
+  },
+  {
+    "processo": "processso",
+    "tecnologia": "tecnolgia",
+    "necessidade": "necissidade"
   }
 ]
