@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "exemplo": "exenplo",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "simples": "cimples",
     "arquitetura": "arquitertura",
     "sistema": "cistema"
@@ -90,5 +85,9 @@
     "necessidade": "necissidade",
     "sistema": "sistma",
     "monitoramento": "monitoramento."
+  },
+  {
+    "computador": "computador.",
+    "virtual": "virtal"
   }
 ]
