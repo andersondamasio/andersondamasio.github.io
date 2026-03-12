@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internert",
-    "acesso": "aceso",
-    "muito": "muto"
-  },
-  {
     "resultado": "resutlado",
     "constante": "constanate",
     "acesso": "acesso."
@@ -92,5 +87,10 @@
     "processo": "processso",
     "tecnologia": "tecnolgia",
     "necessidade": "necissidade"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "tecnologia": "tecnnologia",
+    "simples": "simplis"
   }
 ]
