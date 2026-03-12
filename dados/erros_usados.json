@@ -1,9 +1,5 @@
 [
   {
-    "geralmente": "geralmemte",
-    "processo": "proceso"
-  },
-  {
     "rotina": "rotína",
     "tecnologia": "tecnnologia",
     "desafio": "desaío"
@@ -91,5 +87,10 @@
     "abordagem": "abordage",
     "tecnologia": "tecnnologia",
     "resultado": "resultadoo"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "dispositivo": "dispotivo",
+    "sistema": "sistma"
   }
 ]
