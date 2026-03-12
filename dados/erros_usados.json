@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "monitoramento": "monitramento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "abordagem": "abordage",
     "suporte": "suporte.",
     "processo": "proceso"
@@ -90,5 +85,10 @@
     "problema": "poblema",
     "desenvolvimento": "desenvolvimente",
     "acesso": "aceso"
+  },
+  {
+    "virtual": "virtual.",
+    "tecnologia": "tecnolgia",
+    "sistema": "sistéma"
   }
 ]
