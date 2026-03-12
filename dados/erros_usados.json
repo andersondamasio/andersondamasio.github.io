@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "simples": "simlpes"
-  },
-  {
     "dispositivo": "dispositivo.",
     "gerenciamento": "gerenciamnto",
     "acesso": "aceso"
@@ -92,5 +88,9 @@
     "conhecimento": "conhescimento",
     "constante": "constanate",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "processo": "prosseso",
+    "arquitetura": "arquitretura"
   }
 ]
