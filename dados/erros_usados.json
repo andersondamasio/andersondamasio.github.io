@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "necessidade": "necissidade",
-    "computador": "computador,"
-  },
-  {
     "componente": "componente.",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia"
@@ -93,5 +88,9 @@
     "muito": "muinto",
     "controle": "contrle",
     "suporte": "suportte"
+  },
+  {
+    "internet": "internert",
+    "constante": "constanate"
   }
 ]
