@@ -1,9 +1,5 @@
 [
   {
-    "computador": "computador.",
-    "virtual": "virtal"
-  },
-  {
     "tecnologia": "tecnolgia",
     "necessidade": "necissidade",
     "computador": "computador,"
@@ -92,5 +88,10 @@
     "desafio": "desafío",
     "acesso": "aceso",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "muito": "muinto",
+    "controle": "contrle",
+    "suporte": "suportte"
   }
 ]
