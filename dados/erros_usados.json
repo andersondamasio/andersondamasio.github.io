@@ -1,9 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "arquitetura": "arquitretura"
-  },
-  {
     "exemplo": "exenplo",
     "tecnologia": "tecnnologia"
   },
@@ -89,5 +85,9 @@
   {
     "arquitetura": "arquiteturra",
     "monitoramento": "monitramento"
+  },
+  {
+    "constante": "constante.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
