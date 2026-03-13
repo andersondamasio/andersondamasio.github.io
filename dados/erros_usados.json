@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "funciona": "funciona,",
-    "recurso": "recuro"
-  },
-  {
     "abordagem": "abordage",
     "tecnologia": "tecnnologia",
     "resultado": "resultadoo"
@@ -92,5 +87,8 @@
   {
     "desenvolvimento": "desenvolvmento",
     "virtual": "virtuaal"
+  },
+  {
+    "monitoramento": "monitramento"
   }
 ]
