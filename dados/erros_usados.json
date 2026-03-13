@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "sistema": "sistma",
-    "monitoramento": "monitoramento."
-  },
-  {
     "computador": "computador.",
     "virtual": "virtal"
   },
@@ -92,5 +87,10 @@
     "suporte": "suprte",
     "funcionalidade": "funcionaliadde",
     "necessidade": "necessidade."
+  },
+  {
+    "desafio": "desafío",
+    "acesso": "aceso",
+    "tecnologia": "tecnoligia"
   }
 ]
