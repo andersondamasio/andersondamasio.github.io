@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "controle": "controle.",
     "arquitetura": "arquiteturra"
   },
@@ -90,5 +85,10 @@
     "suporte": "suporte.",
     "abordagem": "abordajem",
     "necessidade": "nescessidade"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "sistema": "cistema",
+    "exemplo": "exemplo."
   }
 ]
