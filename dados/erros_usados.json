@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "tecnologia": "tecnnologia",
-    "resultado": "resultadoo"
-  },
-  {
     "armazenamento": "armazanamento",
     "dispositivo": "dispotivo",
     "sistema": "sistma"
@@ -90,5 +85,9 @@
   },
   {
     "monitoramento": "monitramento"
+  },
+  {
+    "simples": "simlpes",
+    "sistema": "sistma"
   }
 ]
