@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "gerenciamento": "gerenciamnto",
-    "acesso": "aceso"
-  },
-  {
     "parceria": "parceriaa",
     "necessidade": "nescessidade"
   },
@@ -92,5 +87,9 @@
   {
     "processo": "prosseso",
     "arquitetura": "arquitretura"
+  },
+  {
+    "exemplo": "exenplo",
+    "tecnologia": "tecnnologia"
   }
 ]
