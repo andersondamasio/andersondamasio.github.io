@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhescimento",
-    "constante": "constanate",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "processo": "prosseso",
     "arquitetura": "arquitretura"
   },
@@ -90,5 +85,9 @@
   {
     "funciona": "funciona.",
     "sistema": "sistma"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "monitoramento": "monitramento"
   }
 ]
