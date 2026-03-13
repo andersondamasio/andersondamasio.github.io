@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "dispositivo": "dispotivo",
-    "sistema": "sistma"
-  },
-  {
     "processo": "processso",
     "tecnologia": "tecnolgia",
     "necessidade": "necissidade"
@@ -89,5 +84,10 @@
   {
     "simples": "simlpes",
     "sistema": "sistma"
+  },
+  {
+    "abordagem": "abordajem",
+    "simples": "simplis",
+    "sistema": "sistéma"
   }
 ]
