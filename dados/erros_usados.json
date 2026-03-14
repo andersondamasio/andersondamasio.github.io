@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "necessidade": "necessidade.",
-    "simples": "simlpes"
-  },
-  {
     "muito": "muiito",
     "processo": "prosseso",
     "sistema": "cistema"
@@ -87,5 +82,8 @@
   {
     "sistema": "cistema",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "internet": "internat"
   }
 ]
