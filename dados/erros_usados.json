@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafío",
-    "acesso": "aceso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "muito": "muinto",
     "controle": "contrle",
     "suporte": "suportte"
@@ -88,5 +83,10 @@
   {
     "parceria": "parcería",
     "complexidade": "complexidade."
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "desafio": "desafío",
+    "problema": "probrema"
   }
 ]
