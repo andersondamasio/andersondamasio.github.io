@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "funcionalidade": "funcionaliadde",
-    "necessidade": "necessidade."
-  },
-  {
     "desafio": "desafío",
     "acesso": "aceso",
     "tecnologia": "tecnoligia"
@@ -89,5 +84,9 @@
   {
     "estrutura": "estrtura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "parceria": "parcería",
+    "complexidade": "complexidade."
   }
 ]
