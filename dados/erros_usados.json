@@ -1,8 +1,5 @@
 [
   {
-    "monitoramento": "monitramento"
-  },
-  {
     "simples": "simlpes",
     "sistema": "sistma"
   },
@@ -85,5 +82,9 @@
   {
     "suporte": "suportte",
     "arquitetura": "arquitertura"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "processo": "proceso"
   }
 ]
