@@ -61607,5 +61607,14 @@
     "dataFonte": "2026-03-13T20:18:08.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/"
+  },
+  {
+    "titulo": "Como a Grab Revolucionou o Cache de Imagens em Android com TLRU",
+    "noticiaOriginal": "How Grab Optimizes Image Caching on Android with Time-Aware LRU",
+    "url": "artigos/desenvolvimento-de-software/como-a-grab-revolucionou-o-cache-de-imagens-em-android-com-tlru.html",
+    "data": "2026-03-14T20:32:50.158Z",
+    "dataFonte": "2026-03-14T20:00:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://www.infoq.com/news/2026/03/grab-tlru-image-cache/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
