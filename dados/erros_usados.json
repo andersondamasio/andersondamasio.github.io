@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "sistema": "cistema",
-    "exemplo": "exemplo."
-  },
-  {
     "funciona": "funciona.",
     "sistema": "sistma"
   },
@@ -84,5 +79,9 @@
   {
     "personalizado": "personalisado",
     "suporte": "suportte"
+  },
+  {
+    "simples": "simplis",
+    "exemplo": "exenplo"
   }
 ]

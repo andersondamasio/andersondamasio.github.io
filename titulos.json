@@ -61598,5 +61598,14 @@
     "dataFonte": "2026-03-13T20:40:37.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/netflix-premium-vs-netflix-standard/"
+  },
+  {
+    "titulo": "A nova era dos ataques invisíveis: como a arquitetura de software pode nos proteger",
+    "noticiaOriginal": "Supply-chain attack using invisible code hits GitHub and other repositories",
+    "url": "artigos/seguranca/a-nova-era-dos-ataques-invisiveis-como-a-arquitetura-de-software-pode-nos-proteger.html",
+    "data": "2026-03-14T19:31:35.882Z",
+    "dataFonte": "2026-03-13T20:18:08.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://arstechnica.com/security/2026/03/supply-chain-attack-using-invisible-code-hits-github-and-other-repositories/"
   }
 ]
