@@ -1,8 +1,5 @@
 [
   {
-    "internet": "internat"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "arquitetura": "arquitertura",
     "sistema": "cistema"
@@ -85,5 +82,10 @@
     "armazenamento": "armazanamento",
     "acesso": "aceso",
     "dispositivo": "dispotivo"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "operacional": "operaciona",
+    "complexidade": "complexsidade"
   }
 ]
