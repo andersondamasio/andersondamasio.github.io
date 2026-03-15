@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "arquitetura": "arquitertura",
-    "sistema": "cistema"
-  },
-  {
     "acesso": "acesso.",
     "sistema": "sistéma",
     "tecnologia": "tecnnologia"
@@ -87,5 +82,10 @@
     "monitoramento": "monitorameto",
     "operacional": "operaciona",
     "complexidade": "complexsidade"
+  },
+  {
+    "internet": "internert",
+    "exemplo": "exenplo",
+    "arquitetura": "arquiteturra"
   }
 ]
