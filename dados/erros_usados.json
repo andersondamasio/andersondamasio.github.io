@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "arquitetura": "arquitertura"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "processo": "proceso"
   },
@@ -87,5 +83,10 @@
     "muito": "muinto",
     "necessidade": "nescessidade",
     "sistema": "sistma"
+  },
+  {
+    "consistente": "consistente.",
+    "rotina": "rotina.",
+    "tecnologia": "tecnoligia"
   }
 ]
