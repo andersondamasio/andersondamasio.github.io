@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "processo": "proceso"
-  },
-  {
     "exemplo": "exemplo,",
     "muito": "muinto",
     "desenvolvimento": "desenvolvmento"
@@ -88,5 +84,10 @@
     "consistente": "consistente.",
     "rotina": "rotina.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "recurso": "reccurso",
+    "constante": "constante.",
+    "prioridade": "prioriade"
   }
 ]
