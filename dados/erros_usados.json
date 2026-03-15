@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "sistema": "sistéma",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "muito": "muiito",
     "computador": "computador,",
     "exemplo": "exemplo."
@@ -87,5 +82,10 @@
     "internet": "internert",
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "necessidade": "necissidade",
+    "problema": "probrema",
+    "monitoramento": "monitramento"
   }
 ]

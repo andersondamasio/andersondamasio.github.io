@@ -61697,5 +61697,14 @@
     "dataFonte": "2026-03-15T09:01:58.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/best-external-hard-drive/"
+  },
+  {
+    "titulo": "Gerenciando o Futuro: OpenClaw e os Desafios de Segurança na Nuvem",
+    "noticiaOriginal": "AWS Launches Managed Openclaw on Lightsail Amid Critical Security Vulnerabilities",
+    "url": "artigos/seguranca/gerenciando-o-futuro-openclaw-e-os-desafios-de-seguranca-na-nuvem.html",
+    "data": "2026-03-15T10:34:15.343Z",
+    "dataFonte": "2026-03-15T10:08:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/03/aws-lightsail-openclaw-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
