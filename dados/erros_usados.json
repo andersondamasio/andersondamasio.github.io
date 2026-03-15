@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "sistema": "cistema"
-  },
-  {
     "necessidade": "nescessidade",
     "dispositivo": "dispositivo."
   },
@@ -92,5 +88,10 @@
     "internet": "internert",
     "muito": "muinto",
     "necessidade": "necissidade"
+  },
+  {
+    "componente": "componentte",
+    "tecnologia": "tecnnologia",
+    "exemplo": "exemplo,"
   }
 ]
