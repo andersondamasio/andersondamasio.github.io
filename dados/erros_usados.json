@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "sistéma",
-    "exemplo": "exenplo"
-  },
-  {
     "processo": "processso",
     "exemplo": "exemplo,",
     "arquitetura": "arquitretura"
@@ -95,5 +90,9 @@
     "complexidade": "complexsidade",
     "simples": "cimples",
     "sistema": "sistéma"
+  },
+  {
+    "desafio": "desafiu",
+    "necessidade": "necessidade."
   }
 ]
