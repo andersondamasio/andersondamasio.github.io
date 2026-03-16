@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "acesso": "aceso",
-    "dispositivo": "dispotivo"
-  },
-  {
     "monitoramento": "monitorameto",
     "operacional": "operaciona",
     "complexidade": "complexsidade"
@@ -96,5 +91,10 @@
     "desenvolvimento": "desenvolvmento",
     "constante": "constate",
     "suporte": "suportte"
+  },
+  {
+    "estrutura": "estrututra",
+    "arquitetura": "arquitertura",
+    "sistema": "cistema"
   }
 ]
