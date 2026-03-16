@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "operacional": "operaciona",
-    "complexidade": "complexsidade"
-  },
-  {
     "internet": "internert",
     "exemplo": "exenplo",
     "arquitetura": "arquiteturra"
@@ -96,5 +91,9 @@
     "estrutura": "estrututra",
     "arquitetura": "arquitertura",
     "sistema": "cistema"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "tecnologia": "tecnnologia"
   }
 ]
