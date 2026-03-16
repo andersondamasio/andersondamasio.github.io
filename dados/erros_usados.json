@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "arquitetura": "arquitertura",
     "sistema": "sistéma",
     "exemplo": "exenplo"
@@ -94,5 +90,10 @@
     "geralmente": "geralmete",
     "sistema": "cistema",
     "internet": "internete"
+  },
+  {
+    "complexidade": "complexsidade",
+    "simples": "cimples",
+    "sistema": "sistéma"
   }
 ]
