@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "controle": "controlle",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "armazenamento": "armazanamento",
     "acesso": "aceso",
     "dispositivo": "dispotivo"
@@ -96,5 +91,10 @@
   {
     "tecnologia": "tecnolgia",
     "exemplo": "exenplo"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "constante": "constate",
+    "suporte": "suportte"
   }
 ]
