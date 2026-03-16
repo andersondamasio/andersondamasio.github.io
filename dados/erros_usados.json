@@ -1,10 +1,5 @@
 [
   {
-    "consistente": "consistente.",
-    "rotina": "rotina.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "recurso": "reccurso",
     "constante": "constante.",
     "prioridade": "prioriade"
@@ -95,5 +90,10 @@
     "mensagem": "menssagen",
     "conectado": "conectado.",
     "computador": "computador."
+  },
+  {
+    "funciona": "funciona.",
+    "internet": "internert",
+    "controle": "controlle"
   }
 ]
