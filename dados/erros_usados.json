@@ -1,10 +1,5 @@
 [
   {
-    "geralmente": "geralmete",
-    "sistema": "cistema",
-    "internet": "internete"
-  },
-  {
     "complexidade": "complexsidade",
     "simples": "cimples",
     "sistema": "sistéma"
@@ -87,5 +82,9 @@
     "estrutura": "estrututra",
     "exemplo": "exemplo.",
     "funciona": "funsiona"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "melhor": "melor"
   }
 ]
