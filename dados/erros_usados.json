@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "internet": "internert",
-    "controle": "controlle"
-  },
-  {
     "utilizado": "utilizdo",
     "abordagem": "abordage"
   },
@@ -88,5 +83,8 @@
     "conhecimento": "conhecimento.",
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "arquitetura": "arquitertura"
   }
 ]
