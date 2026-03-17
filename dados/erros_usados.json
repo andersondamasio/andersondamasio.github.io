@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "arquitetura": "arquitertura",
-    "sistema": "cistema"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "tecnologia": "tecnnologia"
   },
@@ -89,5 +84,9 @@
   {
     "muito": "muto",
     "geralmente": "geralmemte"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "funcionalidade": "funcionaliade"
   }
 ]
