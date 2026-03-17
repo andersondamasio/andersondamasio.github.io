@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "monitoramento": "monitorameto",
-    "acesso": "acesso."
-  },
-  {
     "internet": "internert",
     "muito": "muinto",
     "necessidade": "necissidade"
@@ -93,5 +88,9 @@
   {
     "recurso": "recusso",
     "problema": "probrema"
+  },
+  {
+    "resultado": "resultao",
+    "tecnologia": "tecnoligia"
   }
 ]
