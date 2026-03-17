@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "exemplo": "exenplo"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "constante": "constate",
     "suporte": "suportte"
@@ -89,5 +85,10 @@
   {
     "sistema": "sistma",
     "exemplo": "exemplo."
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desafio": "desafiu",
+    "funciona": "funciona."
   }
 ]
