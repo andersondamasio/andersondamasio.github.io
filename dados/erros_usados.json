@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componentte",
-    "tecnologia": "tecnnologia",
-    "exemplo": "exemplo,"
-  },
-  {
     "virtual": "virtual.",
     "propriedade": "propriedade.",
     "melhor": "melor"
@@ -91,5 +86,10 @@
   {
     "acesso": "aceso",
     "simples": "cimples"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "complexidade": "complexidade.",
+    "arquitetura": "arquiteturra"
   }
 ]
