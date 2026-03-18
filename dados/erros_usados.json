@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "arquitetura": "arquitretura"
-  },
-  {
     "monitoramento": "monitoramento.",
     "arquitetura": "arquiteturra",
     "complexidade": "complezidade"
@@ -86,5 +82,10 @@
   {
     "muito": "muiito",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "processo": "proceso",
+    "desenvolvimento": "desenvolmento"
   }
 ]
