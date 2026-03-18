@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "exemplo": "exemplo."
-  },
-  {
     "tecnologia": "tecnoligia",
     "desafio": "desafiu",
     "funciona": "funciona."
@@ -86,5 +82,10 @@
   },
   {
     "controle": "controlle"
+  },
+  {
+    "acesso": "acesço",
+    "sistema": "sistma",
+    "monitoramento": "monitorameto"
   }
 ]
