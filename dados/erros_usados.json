@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muto",
-    "geralmente": "geralmemte"
-  },
-  {
     "arquitetura": "arquitertura",
     "funcionalidade": "funcionaliade"
   },
@@ -87,5 +83,10 @@
     "sistema": "cistema",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "mensagem": "menssagen",
+    "sistema": "sistéma",
+    "recurso": "recusso"
   }
 ]
