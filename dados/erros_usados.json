@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "complexidade": "complexidade.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "processo": "processso",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnoligia"
@@ -88,5 +83,9 @@
     "abordagem": "abordage",
     "simples": "cimples",
     "sistema": "sistéma"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "exemplo": "exemplo."
   }
 ]
