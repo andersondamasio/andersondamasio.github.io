@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "acesso": "aceso",
     "simples": "cimples"
   },
@@ -86,5 +82,10 @@
   {
     "desenvolvimento": "desenvolvmento",
     "gerenciamento": "gerenciamnto"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura",
+    "sistema": "sistma"
   }
 ]
