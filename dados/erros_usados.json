@@ -1,10 +1,5 @@
 [
   {
-    "processo": "processso",
-    "desenvolvimento": "desenvolvmento",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "propriedade": "propriadade",
     "operacional": "operaciona",
     "prioridade": "prioriade."
@@ -87,5 +82,10 @@
   {
     "funcionalidade": "funcionaliade",
     "exemplo": "exemplo."
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "desafio": "desafiu",
+    "simples": "cimples"
   }
 ]
