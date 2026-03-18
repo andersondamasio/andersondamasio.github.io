@@ -1,9 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "necessidade": "necessidade."
-  },
-  {
     "recurso": "recusso",
     "problema": "probrema"
   },
@@ -86,5 +82,9 @@
     "abordagem": "abordage",
     "operacional": "operacional.",
     "conhecimento": "conhecimeto"
+  },
+  {
+    "constante": "constanate",
+    "tecnologia": "tecnnologia"
   }
 ]
