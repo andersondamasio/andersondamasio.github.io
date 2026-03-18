@@ -62138,5 +62138,14 @@
     "dataFonte": "2026-03-18T09:00:51.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/best-early-amazon-spring-sale-2026-deals-under-25/"
+  },
+  {
+    "titulo": "Desvendando Lifetimes em Rust: Uma Nova Perspectiva",
+    "noticiaOriginal": "QCon London 2026: Use<’lifetimes> For<’what>",
+    "url": "artigos/programacao/desvendando-lifetimes-em-rust-uma-nova-perspectiva.html",
+    "data": "2026-03-18T10:59:45.107Z",
+    "dataFonte": "2026-03-18T10:11:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/news/2026/03/rust-lifetimes-loans-polonius/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
