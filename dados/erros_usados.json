@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "problema": "probrema"
-  },
-  {
     "resultado": "resultao",
     "tecnologia": "tecnoligia"
   },
@@ -86,5 +82,9 @@
   {
     "constante": "constanate",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "gerenciamento": "gerenciamnto"
   }
 ]
