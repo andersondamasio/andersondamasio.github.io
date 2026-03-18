@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "suporte": "suporte.",
     "melhor": "melhorr",
     "recurso": "reccurso"
@@ -88,5 +84,8 @@
     "mensagem": "menssagen",
     "sistema": "sistéma",
     "recurso": "recusso"
+  },
+  {
+    "arquitetura": "arquitertura"
   }
 ]
