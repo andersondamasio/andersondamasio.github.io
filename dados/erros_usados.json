@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura",
-    "sistema": "sistma"
-  },
-  {
     "abordagem": "abordage",
     "simples": "cimples",
     "sistema": "sistéma"
@@ -90,5 +85,10 @@
   {
     "armazenamento": "armazenamentto",
     "acesso": "aceso"
+  },
+  {
+    "funciona": "funciona,",
+    "suporte": "suportte",
+    "arquitetura": "arquitretura"
   }
 ]
