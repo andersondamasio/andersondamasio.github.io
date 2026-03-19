@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "simples": "cimples",
-    "sistema": "sistéma"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "exemplo": "exemplo."
   },
@@ -90,5 +85,10 @@
     "funciona": "funciona,",
     "suporte": "suportte",
     "arquitetura": "arquitretura"
+  },
+  {
+    "componente": "componente.",
+    "computador": "computadorr",
+    "prioridade": "prioriade."
   }
 ]
