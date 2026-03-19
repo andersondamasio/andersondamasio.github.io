@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura"
-  },
-  {
     "estrutura": "estrututra",
     "exemplo": "exemplo.",
     "funciona": "funsiona"
@@ -87,5 +84,10 @@
     "internet": "internete",
     "monitoramento": "monitramento",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "suporte": "suprte",
+    "simples": "cimples",
+    "funciona": "funciona."
   }
 ]
