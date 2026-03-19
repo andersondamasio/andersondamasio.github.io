@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "sistema": "sistma",
-    "monitoramento": "monitorameto"
-  },
-  {
     "sistema": "cistema",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
@@ -90,5 +85,10 @@
   {
     "constante": "constate",
     "muito": "muinto"
+  },
+  {
+    "parceria": "parceria.",
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]
