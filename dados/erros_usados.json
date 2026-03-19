@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "desenvolvimento": "desenvolvmento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "mensagem": "menssagen",
     "sistema": "sistéma",
     "recurso": "recusso"
@@ -90,5 +85,10 @@
     "parceria": "parceria.",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "necessidade": "necissidade",
+    "desafio": "desafío",
+    "internet": "internat"
   }
 ]
