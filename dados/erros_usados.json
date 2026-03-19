@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "arquitetura": "arquiteturra",
-    "complexidade": "complezidade"
-  },
-  {
     "conhecimento": "conhecimento.",
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvimente"
@@ -87,5 +82,10 @@
     "tecnologia": "tecnolgia",
     "processo": "proceso",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "problema": "probrema",
+    "controle": "controlle",
+    "exemplo": "exenplo"
   }
 ]
