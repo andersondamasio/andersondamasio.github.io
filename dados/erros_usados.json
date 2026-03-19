@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura",
     "sistema": "sistma"
@@ -90,5 +86,9 @@
     "conhecimento": "conhecimeto",
     "exemplo": "exemplo.",
     "funciona": "funsiona"
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "acesso": "aceso"
   }
 ]
