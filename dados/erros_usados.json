@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "armazenamento": "armazanamento"
-  },
-  {
     "constante": "constate",
     "muito": "muinto"
   },
@@ -89,5 +85,9 @@
   {
     "abordagem": "abordagem.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "simples": "simlpes",
+    "tecnologia": "tecnoligia"
   }
 ]
