@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "simples": "cimples",
-    "funciona": "funciona."
-  },
-  {
     "funciona": "funsiona",
     "conhecimento": "conhecimeto",
     "sistema": "sistéma"
@@ -92,5 +87,10 @@
     "processo": "processso",
     "recurso": "reccurso",
     "sistema": "sistéma"
+  },
+  {
+    "mensagem": "mensagen",
+    "desenvolvimento": "desenvolmento",
+    "complexidade": "complexidade."
   }
 ]
