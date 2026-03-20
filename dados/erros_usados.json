@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "necessidade": "necissidade",
     "desafio": "desafío",
     "internet": "internat"
@@ -90,5 +85,9 @@
     "suporte": "suprte",
     "monitoramento": "monitorameto",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "constante": "constanate",
+    "componente": "componete"
   }
 ]
