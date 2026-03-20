@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constate",
-    "muito": "muinto"
-  },
-  {
     "parceria": "parceria.",
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
@@ -89,5 +85,10 @@
   {
     "simples": "simlpes",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "suporte": "suprte",
+    "monitoramento": "monitorameto",
+    "desenvolvimento": "desenvolmento"
   }
 ]
