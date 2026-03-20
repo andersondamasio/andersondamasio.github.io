@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "processo": "proceso",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "problema": "probrema",
     "controle": "controlle",
     "exemplo": "exenplo"
@@ -92,5 +87,10 @@
     "controle": "controle.",
     "arquitetura": "arquitertura",
     "sistema": "cistema"
+  },
+  {
+    "complexidade": "complezidade",
+    "simples": "cimples",
+    "internet": "internert"
   }
 ]
