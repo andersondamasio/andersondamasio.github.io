@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "conhecimento": "conhecimeto",
-    "sistema": "sistéma"
-  },
-  {
     "dispositivo": "dispotivo",
     "tecnologia": "tecnolgia",
     "gerenciamento": "gerenciamente"
@@ -92,5 +87,10 @@
     "mensagem": "mensagen",
     "desenvolvimento": "desenvolmento",
     "complexidade": "complexidade."
+  },
+  {
+    "funciona": "funsiona",
+    "sistema": "sistma",
+    "tecnologia": "tecnnologia"
   }
 ]
