@@ -1,10 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "controle": "controlle",
-    "exemplo": "exenplo"
-  },
-  {
     "internet": "internete",
     "monitoramento": "monitramento",
     "tecnologia": "tecnolgia"
@@ -92,5 +87,10 @@
     "complexidade": "complezidade",
     "simples": "cimples",
     "internet": "internert"
+  },
+  {
+    "operacional": "operacionl",
+    "problema": "poblema",
+    "sistema": "sistma"
   }
 ]
