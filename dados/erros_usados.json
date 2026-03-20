@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "sistema": "sistma"
-  },
-  {
     "carregamento": "carregameno",
     "armazenamento": "armazanamento"
   },
@@ -89,5 +85,9 @@
   },
   {
     "tecnologia": "tecnnologia"
+  },
+  {
+    "abordagem": "abordagem.",
+    "arquitetura": "arquitretura"
   }
 ]
