@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "virtual": "virtal",
     "acesso": "acesso."
   },
@@ -89,5 +85,10 @@
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia",
     "acesso": "acesço"
+  },
+  {
+    "necessidade": "nescessidade",
+    "monitoramento": "monitorameto",
+    "arquitetura": "arquitertura"
   }
 ]
