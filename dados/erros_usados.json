@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "acesso": "acesso."
-  },
-  {
     "melhor": "melhorr",
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnolgia"
@@ -90,5 +86,9 @@
     "necessidade": "nescessidade",
     "monitoramento": "monitorameto",
     "arquitetura": "arquitertura"
+  },
+  {
+    "processo": "processso",
+    "arquitetura": "arquitretura"
   }
 ]
