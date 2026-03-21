@@ -1,10 +1,5 @@
 [
   {
-    "processo": "processso",
-    "recurso": "reccurso",
-    "sistema": "sistéma"
-  },
-  {
     "mensagem": "mensagen",
     "desenvolvimento": "desenvolmento",
     "complexidade": "complexidade."
@@ -89,5 +84,10 @@
     "melhor": "melhorr",
     "armazenamento": "armazenamentto",
     "necessidade": "necissidade"
+  },
+  {
+    "necessidade": "necessidade.",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnoligia"
   }
 ]
