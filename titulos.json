@@ -62597,5 +62597,14 @@
     "dataFonte": "2026-03-21T09:00:44.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/smart-home-on-a-budget-2026/"
+  },
+  {
+    "titulo": "Repensando a Mensageria: Tansu.io e o Futuro dos Brokers Sem Estado",
+    "noticiaOriginal": "QCon London 2026: Introducing Tansu.io -- Rethinking Kafka for Lean Operations",
+    "url": "artigos/arquitetura/repensando-a-mensageria-tansu-io-e-o-futuro-dos-brokers-sem-estado.html",
+    "data": "2026-03-21T10:31:28.111Z",
+    "dataFonte": "2026-03-21T10:01:00.000Z",
+    "categoria": "Arquitetura",
+    "urlFonte": "https://www.infoq.com/news/2026/03/tansu-stateless-kafka-compatible/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
