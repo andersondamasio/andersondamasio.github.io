@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "exemplo": "exenplo"
-  },
-  {
     "muito": "muinto",
     "carregamento": "carregamneto",
     "gerenciamento": "gerenciamnto"
@@ -94,5 +90,10 @@
     "desafio": "desafío",
     "suporte": "suprte",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "problema": "poblema",
+    "conhecimento": "conhecimeto",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
