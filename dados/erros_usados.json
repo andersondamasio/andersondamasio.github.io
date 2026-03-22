@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "nescessidade",
-    "monitoramento": "monitorameto",
-    "arquitetura": "arquitertura"
-  },
-  {
     "processo": "processso",
     "arquitetura": "arquitretura"
   },
@@ -92,5 +87,9 @@
   {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "componente": "componentte",
+    "necessidade": "necissidade"
   }
 ]
