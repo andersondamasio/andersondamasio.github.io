@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnnologia",
-    "funciona": "funciona,"
-  },
-  {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnoligia",
     "acesso": "acesço"
@@ -94,5 +89,9 @@
   {
     "tecnologia": "tecnnologia",
     "processo": "proceso"
+  },
+  {
+    "muito": "muinto",
+    "problema": "probrema"
   }
 ]
