@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conetado",
-    "recurso": "recusso",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "processo": "prosseso",
     "sistema": "cistema",
     "tecnologia": "tecnnologia"
@@ -92,5 +87,10 @@
     "controle": "contrle",
     "melhor": "melhorr",
     "armazenamento": "armazanamento"
+  },
+  {
+    "funciona": "funsiona",
+    "dispositivo": "dispotivo",
+    "simples": "cimples"
   }
 ]
