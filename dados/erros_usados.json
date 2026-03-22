@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "suporte": "suprte",
     "monitoramento": "monitorameto",
     "desenvolvimento": "desenvolmento"
@@ -94,5 +90,9 @@
     "conhecimento": "conhecimeto",
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "complexidade": "complezidade",
+    "acesso": "acesso."
   }
 ]
