@@ -1,9 +1,5 @@
 [
   {
-    "processo": "processso",
-    "arquitetura": "arquitretura"
-  },
-  {
     "conectado": "conetado",
     "recurso": "recusso",
     "funcionalidade": "funcionalidade."
@@ -91,5 +87,10 @@
   {
     "componente": "componentte",
     "necessidade": "necissidade"
+  },
+  {
+    "controle": "contrle",
+    "melhor": "melhorr",
+    "armazenamento": "armazanamento"
   }
 ]
