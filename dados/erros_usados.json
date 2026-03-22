@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "monitoramento": "monitorameto",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "constante": "constanate",
     "componente": "componete"
   },
@@ -94,5 +89,10 @@
   {
     "complexidade": "complezidade",
     "acesso": "acesso."
+  },
+  {
+    "internet": "internert",
+    "simples": "simlpes",
+    "processo": "prosseso"
   }
 ]
