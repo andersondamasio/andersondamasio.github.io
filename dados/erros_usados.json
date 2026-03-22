@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia",
-    "acesso": "acesço"
-  },
-  {
     "necessidade": "nescessidade",
     "monitoramento": "monitorameto",
     "arquitetura": "arquitertura"
@@ -93,5 +88,9 @@
   {
     "muito": "muinto",
     "problema": "probrema"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnoligia"
   }
 ]
