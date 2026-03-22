@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "exemplo": "exemplo.",
     "tecnologia": "tecnnologia",
     "funciona": "funciona,"
@@ -95,5 +90,9 @@
     "parceria": "parceria.",
     "tecnologia": "tecnoligia",
     "constante": "constate"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "processo": "proceso"
   }
 ]
