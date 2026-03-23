@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "problema": "poblema",
-    "processo": "proceso"
-  },
-  {
     "parceria": "parceria.",
     "tecnologia": "tecnoligia",
     "constante": "constate"
@@ -89,5 +84,9 @@
     "internet": "internat",
     "recurso": "reccurso",
     "funciona": "funsiona"
+  },
+  {
+    "exemplo": "exemplo,",
+    "desafio": "desaío"
   }
 ]
