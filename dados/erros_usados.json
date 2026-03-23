@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "sistema": "cistema",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "dispositivo": "disposotivo",
     "resultado": "resultao",
     "desenvolvimento": "desenvolvmento"
@@ -92,5 +87,9 @@
     "funciona": "funsiona",
     "dispositivo": "dispotivo",
     "simples": "cimples"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "melhor": "melor"
   }
 ]
