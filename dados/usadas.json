@@ -34854,5 +34854,10 @@
     "intro": "Vejo muitos projetos falharem por negligenciarem detalhes cruciais de This Linux desktop runs like an app on your current desktop - and it's amazing.",
     "introOriginal": "Vejo muitos projetos falharem por negligenciarem detalhes cruciais de __TEMATICA__.",
     "data": "2026-03-23"
+  },
+  "2026-03-23-desbravando-a-escalabilidade-um-milhao-de-sandboxes-em-um-so-servidor": {
+    "intro": "Essa leitura me lembrou da importância de revisitar nossas práticas sobre QCon London 2026: Fixing the AI Infra Scale Problem by Stuffing 1M Sandboxes in a Single Server regularmente.",
+    "introOriginal": "Essa leitura me lembrou da importância de revisitar nossas práticas sobre __TEMATICA__ regularmente.",
+    "data": "2026-03-23"
   }
 }

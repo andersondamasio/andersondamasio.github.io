@@ -62876,5 +62876,14 @@
     "dataFonte": "2026-03-23T02:04:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/orbitiny-portable-modular-unique-linux-desktop/"
+  },
+  {
+    "titulo": "Desbravando a Escalabilidade: Um Milhão de Sandboxes em um Só Servidor",
+    "noticiaOriginal": "QCon London 2026: Fixing the AI Infra Scale Problem by Stuffing 1M Sandboxes in a Single Server",
+    "url": "artigos/cloud/desbravando-a-escalabilidade-um-milhao-de-sandboxes-em-um-so-servidor.html",
+    "data": "2026-03-23T10:07:36.562Z",
+    "dataFonte": "2026-03-23T10:02:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/03/qcon-million-sandboxes-server/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
