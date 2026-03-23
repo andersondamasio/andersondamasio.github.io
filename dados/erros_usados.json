@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "necessidade": "nescessidade",
-    "exemplo": "exemplo,"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "problema": "poblema",
     "processo": "proceso"
@@ -89,5 +84,10 @@
     "complexidade": "complexidade.",
     "muito": "muinto",
     "arquitetura": "arquitertura"
+  },
+  {
+    "internet": "internat",
+    "recurso": "reccurso",
+    "funciona": "funsiona"
   }
 ]
