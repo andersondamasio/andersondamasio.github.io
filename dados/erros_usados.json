@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "tecnologia": "tecnoligia",
-    "constante": "constate"
-  },
-  {
     "tecnologia": "tecnnologia",
     "processo": "proceso"
   },
@@ -88,5 +83,10 @@
   {
     "exemplo": "exemplo,",
     "desafio": "desaío"
+  },
+  {
+    "exemplo": "exemplo.",
+    "suporte": "suprte",
+    "tecnologia": "tecnnologia"
   }
 ]
