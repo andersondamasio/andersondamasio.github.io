@@ -1,9 +1,5 @@
 [
   {
-    "geralmente": "geralmete",
-    "monitoramento": "monitramento"
-  },
-  {
     "estrutura": "estrura",
     "arquitetura": "arquitretura",
     "processo": "prosseso"
@@ -89,5 +85,10 @@
   {
     "sistema": "sistéma",
     "arquitetura": "arquitertura"
+  },
+  {
+    "armazenamento": "armasenamento",
+    "abordagem": "abordage",
+    "controle": "controle."
   }
 ]
