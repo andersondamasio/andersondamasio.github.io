@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "acesso": "acesço",
-    "sistema": "cistema"
-  },
-  {
     "geralmente": "geralmete",
     "monitoramento": "monitramento"
   },
@@ -90,5 +85,9 @@
   {
     "componente": "componentte",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "sistema": "sistéma",
+    "arquitetura": "arquitertura"
   }
 ]
