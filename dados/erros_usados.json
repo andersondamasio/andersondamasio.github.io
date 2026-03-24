@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtual.",
-    "mensagem": "mensagen",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "abordagem": "abordage",
     "propriedade": "propriedade."
   },
@@ -90,5 +85,10 @@
   {
     "dispositivo": "disposotivo",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "sistema": "sistma",
+    "arquitetura": "arquitretura"
   }
 ]
