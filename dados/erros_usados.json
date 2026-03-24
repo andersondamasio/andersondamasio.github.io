@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internat",
-    "recurso": "reccurso",
-    "funciona": "funsiona"
-  },
-  {
     "exemplo": "exemplo,",
     "desafio": "desaío"
   },
@@ -89,5 +84,10 @@
     "personalizado": "personalizad",
     "rotina": "rotína",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "geralmente": "geralment",
+    "monitoramento": "monitramento",
+    "arquitetura": "arquitertura"
   }
 ]
