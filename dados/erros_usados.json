@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "desafio": "desaío"
-  },
-  {
     "exemplo": "exemplo.",
     "suporte": "suprte",
     "tecnologia": "tecnnologia"
@@ -89,5 +85,10 @@
     "geralmente": "geralment",
     "monitoramento": "monitramento",
     "arquitetura": "arquitertura"
+  },
+  {
+    "sistema": "sistéma",
+    "arquitetura": "arquitretura",
+    "exemplo": "exemplo."
   }
 ]
