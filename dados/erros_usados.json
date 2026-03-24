@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "componente": "componentte",
     "necessidade": "necissidade"
   },
@@ -89,5 +85,10 @@
     "arquitetura": "arquiteturra",
     "sistema": "sistma",
     "necessidade": "necissidade"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "muito": "muinto",
+    "recurso": "recuro"
   }
 ]
