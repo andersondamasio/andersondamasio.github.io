@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "sistema": "sistma",
-    "arquitetura": "arquitretura"
-  },
-  {
     "constante": "constanate",
     "gerenciamento": "gerenciamnto",
     "exemplo": "exemplo."
@@ -92,5 +87,9 @@
   {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "conhecimento": "conhecimento.",
+    "acesso": "acesso."
   }
 ]
