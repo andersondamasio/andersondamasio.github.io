@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "arquitetura": "arquitertura"
-  },
-  {
     "armazenamento": "armasenamento",
     "abordagem": "abordage",
     "controle": "controle."
@@ -92,5 +88,9 @@
     "dispositivo": "dispositivo.",
     "monitoramento": "monitoramento.",
     "recurso": "recusso"
+  },
+  {
+    "simples": "cimples",
+    "tecnologia": "tecnnologia"
   }
 ]
