@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "arquitetura": "arquiteturra",
     "sistema": "sistma",
     "necessidade": "necissidade"
@@ -90,5 +86,10 @@
     "resultado": "resultadoo",
     "desafio": "desafiu",
     "categoria": "categria"
+  },
+  {
+    "parceria": "parceriaa",
+    "arquitetura": "arquiteturra",
+    "sistema": "sistma"
   }
 ]
