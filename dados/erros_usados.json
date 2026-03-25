@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "muito": "muinto",
-    "recurso": "recuro"
-  },
-  {
     "acesso": "aceso",
     "tecnologia": "tecnolgia",
     "necessidade": "nescessidade"
@@ -91,5 +86,10 @@
     "conhecimento": "conhescimento",
     "funciona": "funciona.",
     "complexidade": "complexidade."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "acesso": "acesço",
+    "arquitetura": "arquiteturra"
   }
 ]
