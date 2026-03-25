@@ -1,9 +1,5 @@
 [
   {
-    "componente": "componentte",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "sistema": "sistéma",
     "arquitetura": "arquitertura"
   },
@@ -91,5 +87,10 @@
     "desafio": "desafiu",
     "funciona": "funciona,",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "monitoramento": "monitoramento.",
+    "recurso": "recusso"
   }
 ]
