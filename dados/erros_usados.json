@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "estrutura": "estrututra",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "sistema": "sistma",
     "suporte": "suportte"
   },
@@ -91,5 +86,9 @@
     "processo": "prosseso",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "recurso": "recusso",
+    "exemplo": "exemplo,"
   }
 ]

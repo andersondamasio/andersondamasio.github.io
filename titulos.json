@@ -63191,5 +63191,14 @@
     "dataFonte": "2026-03-25T09:04:00.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.infoq.com/presentations/security-challenges/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A Revolução do Balanceamento de Carga: O Que a Nova API do Kubernetes Significa para Você",
+    "noticiaOriginal": "AWS Load Balancer Controller Reaches GA with Kubernetes Gateway API Support",
+    "url": "artigos/cloud/a-revolucao-do-balanceamento-de-carga-o-que-a-nova-api-do-kubernetes-significa-para-voce.html",
+    "data": "2026-03-25T10:54:12.645Z",
+    "dataFonte": "2026-03-25T10:36:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/03/aws-gateway-api-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
