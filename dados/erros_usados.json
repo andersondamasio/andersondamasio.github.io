@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "sistema": "sistma",
     "arquitetura": "arquitretura"
@@ -92,5 +88,9 @@
     "operacional": "operaciona",
     "mensagem": "mensagen",
     "suporte": "suprte"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnnologia"
   }
 ]
