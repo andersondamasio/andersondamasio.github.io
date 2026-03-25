@@ -63173,5 +63173,14 @@
     "dataFonte": "2026-03-25T02:55:12.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.bbc.com/news/articles/cy513rvg91ro?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "Arquitetura de Resiliência: Como Defender seu Sistema de Picos de Tráfego",
+    "noticiaOriginal": "QCon London 2026: Shielding the Core: Architecting Resilience with Multi-Layer Defenses",
+    "url": "artigos/arquitetura/arquitetura-de-resiliencia-como-defender-seu-sistema-de-picos-de-trafego.html",
+    "data": "2026-03-25T08:57:13.044Z",
+    "dataFonte": "2026-03-25T02:30:00.000Z",
+    "categoria": "Arquitetura",
+    "urlFonte": "https://www.infoq.com/news/2026/03/shielding-the-core-parra/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

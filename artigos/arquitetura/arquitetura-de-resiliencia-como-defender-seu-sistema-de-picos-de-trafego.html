@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Arquitetura de Resiliência: Como Defender seu Sistema de Picos de Tráfego – Artigo Técnico por Anderson Damasio</title>
+<meta name="description" content="Arquitetura de resiliência é essencial para lidar com picos de tráfego e evitar colapsos em sistemas.&lt;/p&gt;">
+<link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Arquitetura de Resiliência: Como Defender seu Sistema de Picos de Tráfego">
+<meta property="og:description" content="Arquitetura de resiliência é essencial para lidar com picos de tráfego e evitar colapsos em sistemas.&lt;/p&gt;">
+<meta property="og:url" content="https://www.andersondamasio.com.br/arquitetura/arquitetura-de-resiliencia-como-defender-seu-sistema-de-picos-de-trafego.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Arquitetura de Resiliência: Como Defender seu Sistema de Picos de Tráfego">
+<meta name="twitter:description" content="Arquitetura de resiliência é essencial para lidar com picos de tráfego e evitar colapsos em sistemas.&lt;/p&gt;">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+
+
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Arquitetura de Resiliência: Como Defender seu Sistema de Picos de Tráfego",
+  "description": "Arquitetura de resiliência é essencial para lidar com picos de tráfego e evitar colapsos em sistemas.</p>",
+  "datePublished": "2026-03-25T08:57:13.044Z",
+  "author": {
+    "@type": "Person",
+    "name": "Anderson Damasio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Anderson Damasio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/favicon.ico"
+    }
+  }
+}
+</script>
+
+<!-- Schema.org: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://www.andersondamasio.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://www.andersondamasio.com.br/artigos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Arquitetura",
+      "item": "https://www.andersondamasio.com.br/artigos/arquitetura"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Arquitetura de Resiliência: Como Defender seu Sistema de Picos de Tráfego",
+      "item": "https://www.andersondamasio.com.br/arquitetura/arquitetura-de-resiliencia-como-defender-seu-sistema-de-picos-de-trafego.html"
+    }
+  ]
+}
+</script>
+
+
+ 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+
+
+<!-- Script principal da Ezoic (Standalone) no <head> -->
+<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+  window.ezstandalone = window.ezstandalone || {};
+  ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+
+<style>
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --main-bg: #fff;
+  --link: #0a66c2;
+  --link-hover: #084e91;
+  --footer: #666;
+  --meta: #777;
+  --pre-bg: #272822;
+  --pre-color: #f8f8f2;
+  --copy-bg: #0a66c2;
+  --copy-color: #fff;
+  --copy-bg-hover: #084e91;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body.dark-theme {
+  --bg: #181b1f;
+  --text: #ddd;
+  --main-bg: #23262d;
+  --link: #67aaff;
+  --link-hover: #f1c40f;
+  --footer: #b3b3b3;
+  --meta: #b3b3b3;
+  --pre-bg: #22262b;
+  --pre-color: #e0e7ef;
+  --copy-bg: #67aaff;
+  --copy-color: #11131a;
+  --copy-bg-hover: #f1c40f;
+  --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+h1 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--link); }
+a { color: var(--link); text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: var(--link-hover);}
+.article-meta { color: var(--meta); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: var(--copy-bg-hover); color: var(--main-bg); }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: var(--link); font-size: 1.05rem; border: 1px solid var(--link); padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: var(--link); color: var(--main-bg); }
+main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+</style>
+
+</head>
+<body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../../artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
+    <a href="../../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+  </nav>
+</header>
+<main>
+<h1>Arquitetura de Resiliência: Como Defender seu Sistema de Picos de Tráfego</h1>
+
+<p class="article-meta">Publicado em: 25/03/2026 05:57</p>
+
+<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
+<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
+<script>
+  ezstandalone.cmd.push(function() {
+    ezstandalone.showAds(115);
+  });
+</script>
+
+<div class="article-body"><p>Quando falamos em sistemas escaláveis, a resiliência é um aspecto crucial que não pode ser deixado de lado. Recentemente, tive a oportunidade de ler uma apresentação do Anderson Parra, engenheiro de software na SeatGeek, que me fez refletir sobre o tema. Ele apresentou uma abordagem interessante sobre como arquiterar resiliência em sistemas que enfrentam picos de tráfego, especialmente em situações que podem ser descritas como "stampedes de tráfego".</p>
+<h2>Introdução</h2>
+<p>A realidade é que, em um mundo digital cada vez mais acelerado, a capacidade de um sistema de lidar com picos repentinos de acesso é vital. Quando o tráfego chega mais rápido do que o sistema pode se adaptar, o resultado pode ser desastroso. Por isso, entender as estratégias para "blindar o núcleo" se torna essencial para qualquer arquiteto de software ou desenvolvedor que deseja garantir a estabilidade e a performance de suas aplicações.</p>
+<h2>A Estrutura de Defesa de Múltiplas Camadas</h2>
+<p>O conceito de <strong>multi-layer defenses</strong> apresentado por Parra é fascinante. Ele divide a defesa em três camadas principais: Edge Shield, Gateway Shield e Platform Shield. Cada uma dessas camadas tem suas responsabilidades específicas e juntas formam uma rede de proteção sólida.</p>
+<h3>Edge Shield</h3>
+<p>A primeira camada, o <strong>Edge Shield</strong>, foca em absorver o tráfego antes que ele chegue ao núcleo do sistema. Entre suas funções, podemos destacar:</p>
+<ul>
+    <li><strong>Cache:</strong> Armazena respostas para requisições comuns, evitando sobrecarga no servidor de origem.</li>
+    <li><strong>Queue:</strong> Ajuda a gerenciar picos de tráfego, armazenando requisições temporariamente.</li>
+    <li><strong>Filter:</strong> Identifica e bloqueia tráfegos inválidos e bots maliciosos.</li>
+</ul>
+<p>Utilizar um cache de forma eficaz pode ser o divisor de águas. Imagine que você está em uma loja durante uma liquidação. Se a loja está bem organizada, os clientes são atendidos rapidamente. Agora, se o vendedor não tem como atender a todos, o caos se instala. O mesmo vale para sistemas: um cache bem configurado evita que o servidor principal seja sobrecarregado.</p>
+<h3>Gateway Shield</h3>
+<p>Já o <strong>Gateway Shield</strong> é responsável por controlar o fluxo de requisições. Aqui, a implementação de <strong>rate limiting</strong> é fundamental. Isso significa que, durante períodos de alta demanda, o sistema pode recusar requisições excessivas, garantindo que usuários legítimos não sejam prejudicados. Essa camada também protege contra bots que tentam bombardear a aplicação.</p>
+<p>A política de acesso justo da SeatGeek é um exemplo excelente. Eles aplicam limites de requisições por usuário e por chave de API, com limites adicionais por endereço IP. Isso garante que mesmo em situações extremas, a experiência do usuário permaneça estável.</p>
+<h3>Platform Shield</h3>
+<p>Por fim, temos o <strong>Platform Shield</strong>, que garante a estabilidade dos serviços críticos durante os picos. Ele se ocupa de:</p>
+<ul>
+    <li><strong>Resource Isolation:</strong> Limita o uso de CPU e previne que um "vizinhos barulhento" degrade o desempenho de outros serviços.</li>
+    <li><strong>Prioritization:</strong> Protege os caminhos críticos, garantindo que serviços essenciais mantenham sua performance.</li>
+    <li><strong>Observability Signals:</strong> Utiliza sinais de observabilidade para monitorar a saúde do sistema e acionar escalonamentos quando necessário.</li>
+</ul>
+<p>Ao isolar recursos, mesmo que um serviço enfrente um aumento significativo na carga, os outros serviços conseguem operar sem grandes problemas. Isso me lembra muinto do conceito de "diversificação" em investimentos: quanto mais você diversifica, menor é o risco de perda total.</p>
+<h2>Dicas Avançadas para Resiliência</h2>
+<p>Agora que já entendemos a estrutura básica, vamos a algumas dicas avançadas que podem fazer toda a diferença:</p>
+<ul>
+    <li><strong>Implementação de Circuit Breakers:</strong> Isso permite que o sistema "desligue" certas funcionalidades temporariamente, preservando a saúde geral do sistema.</li>
+    <li><strong>Testes de Carga e Stress:</strong> Realizar testes regulares para simular picos de tráfego pode ajudar a identificar gargalos antes que eles se tornem problemas reais.</li>
+    <li><strong>Monitoramento Contínuo:</strong> Invista em ferramentas de monitoramento que forneçam alertas em tempo real sobre a saúde do sistema.</li>
+</ul>
+<h2>Conclusão</h2>
+<p>Construir sistemas resilientes não é uma tarefa fácil, mas é essencial. As estratégias discutidas por Parra oferecem um caminho claro para enfrentar os desafios do tráfego intenso. A mensagem que fica é: <strong>stampedes de internet são inevitáveis, mas o colapso do sistema não precisa ser.</strong> Para nós, arquitetos e desenvolvedores, isso deve ser um mantra a ser seguido. Portanto, sempre que possível, invista em resiliência.</p>
+<p>Resumindo, a arquitetura de resiliência é uma habilidade crítica que devemos dominar. E lembrem-se, a prevenção é sempre melhor que a cura!</p>
+<p>
+<p></p></div>
+<p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="../sobre.html">Sobre</a> |
+    <a href="../contato.html">Contato</a> |
+    <a href="../termos.html">Termos de Uso</a> |
+    <a href="../politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+
+
+</body>
+</html>
