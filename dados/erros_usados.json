@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "suporte": "suprte",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquitretura",
     "desenvolvimento": "desenvolvimente"
   },
@@ -90,5 +85,10 @@
     "sistema": "sistéma",
     "arquitetura": "arquitretura",
     "exemplo": "exemplo."
+  },
+  {
+    "resultado": "resultadoo",
+    "desafio": "desafiu",
+    "categoria": "categria"
   }
 ]
