@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceriaa",
-    "arquitetura": "arquiteturra",
-    "sistema": "sistma"
-  },
-  {
     "conhecimento": "conhescimento",
     "funciona": "funciona.",
     "complexidade": "complexidade."
@@ -90,5 +85,9 @@
     "abordagem": "abordajem",
     "muito": "muinto",
     "funcionalidade": "funcionaliadde"
+  },
+  {
+    "necessidade": "necessidade.",
+    "tecnologia": "tecnolgia"
   }
 ]
