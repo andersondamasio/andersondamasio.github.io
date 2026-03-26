@@ -63317,5 +63317,14 @@
     "dataFonte": "2026-03-26T08:15:00.000Z",
     "categoria": "Robótica",
     "urlFonte": "https://techcrunch.com/2026/03/26/a-little-known-croatian-startup-is-coming-for-the-robotaxi-market-with-help-from-uber/"
+  },
+  {
+    "titulo": "Gerenciando Nomes de Bucket no S3: O Fim das Colisões e a Era da Previsibilidade",
+    "noticiaOriginal": "AWS S3 Introduces Account-Regional Namespaces, Ending 18 Years of Global Bucket Name Collisions",
+    "url": "artigos/cloud/gerenciando-nomes-de-bucket-no-s3-o-fim-das-colisoes-e-a-era-da-previsibilidade.html",
+    "data": "2026-03-26T10:06:19.339Z",
+    "dataFonte": "2026-03-26T10:04:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/03/s3-account-regional-namespaces/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
