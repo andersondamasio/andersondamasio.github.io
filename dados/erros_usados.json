@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "arquitetura": "arquitretura",
-    "exemplo": "exemplo."
-  },
-  {
     "resultado": "resultadoo",
     "desafio": "desafiu",
     "categoria": "categria"
@@ -90,5 +85,10 @@
     "abordagem": "abordajem",
     "operacional": "operacional.",
     "controle": "controlle"
+  },
+  {
+    "constante": "constate",
+    "sistema": "sistma",
+    "tecnologia": "tecnnologia"
   }
 ]
