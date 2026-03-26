@@ -1,9 +1,5 @@
 [
   {
-    "muito": "muinto",
-    "sistema": "sistma"
-  },
-  {
     "processo": "prosseso",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolmento"
@@ -89,5 +85,9 @@
     "personalizado": "personalizad",
     "componente": "componentte",
     "necessidade": "nescessidade"
+  },
+  {
+    "estrutura": "estrura",
+    "tecnologia": "tecnnologia"
   }
 ]
