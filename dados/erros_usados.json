@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "recurso": "recusso",
     "exemplo": "exemplo,"
   },
@@ -89,5 +84,10 @@
   {
     "estrutura": "estrura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "desafio": "desafío",
+    "suporte": "suprte"
   }
 ]
