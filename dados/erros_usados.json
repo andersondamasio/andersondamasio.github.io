@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "acesso": "acesso."
-  },
-  {
     "desafio": "desafiu",
     "funciona": "funciona,",
     "tecnologia": "tecnolgia"
@@ -88,5 +84,10 @@
   {
     "acesso": "acesço",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "constante": "constanate",
+    "abordagem": "abordagem."
   }
 ]
