@@ -1,10 +1,5 @@
 [
   {
-    "personalizado": "personalizad",
-    "componente": "componentte",
-    "necessidade": "nescessidade"
-  },
-  {
     "estrutura": "estrura",
     "tecnologia": "tecnnologia"
   },
@@ -87,5 +82,10 @@
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo,",
     "suporte": "suprte"
+  },
+  {
+    "carregamento": "carregamneto",
+    "recurso": "recuro",
+    "muito": "muinto"
   }
 ]
