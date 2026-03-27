@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "controle": "controle.",
     "arquitetura": "arquitretura",
     "abordagem": "abordajem"
@@ -87,5 +83,9 @@
     "suporte": "suprte",
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitretura"
+  },
+  {
+    "virtual": "virtuaal",
+    "muito": "muiito"
   }
 ]
