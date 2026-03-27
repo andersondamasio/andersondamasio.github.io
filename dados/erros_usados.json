@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "controle": "controle.",
     "tecnologia": "tecnoligia"
   },
@@ -88,5 +84,10 @@
     "conectado": "conectado.",
     "geralmente": "geralmete",
     "utilizado": "utilizado."
+  },
+  {
+    "armazenamento": "armasenamento",
+    "computador": "computadorr",
+    "melhor": "melhorr"
   }
 ]
