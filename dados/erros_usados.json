@@ -1,9 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquitertura",
     "funciona": "funciona."
   },
@@ -87,5 +83,9 @@
   {
     "sistema": "cistema",
     "arquitetura": "arquitertura"
+  },
+  {
+    "resultado": "resultadoo",
+    "exemplo": "exemplo,"
   }
 ]
