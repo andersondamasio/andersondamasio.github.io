@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "sistema": "sistéma"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "prioridade": "prioriade.",
     "arquitetura": "arquitretura"
@@ -87,5 +83,10 @@
   {
     "necessidade": "necissidade",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "monitoramento": "monitramento",
+    "dispositivo": "disposotivo",
+    "arquitetura": "arquitretura"
   }
 ]
