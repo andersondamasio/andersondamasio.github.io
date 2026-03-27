@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "funciona": "funciona."
-  },
-  {
     "exemplo": "exenplo",
     "tecnologia": "tecnnologia"
   },
@@ -87,5 +83,10 @@
   {
     "resultado": "resultadoo",
     "exemplo": "exemplo,"
+  },
+  {
+    "conectado": "conectado.",
+    "geralmente": "geralmete",
+    "utilizado": "utilizado."
   }
 ]
