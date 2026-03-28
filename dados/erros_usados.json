@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "sistema": "cistema",
     "arquitetura": "arquitertura"
   },
@@ -88,5 +84,9 @@
     "correto": "correto.",
     "exemplo": "exenplo",
     "controle": "controlle"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
