@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "muito": "muiito",
-    "arquitetura": "arquitretura"
-  },
-  {
     "acesso": "acesço",
     "tecnologia": "tecnoligia"
   },
@@ -88,5 +83,10 @@
     "conhecimento": "conhescimento",
     "melhor": "melhorr",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "prioridade": "prioriade",
+    "monitoramento": "monitramento",
+    "arquitetura": "arquitretura"
   }
 ]
