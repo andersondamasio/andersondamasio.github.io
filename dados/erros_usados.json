@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "acesso": "acesço",
-    "sistema": "cistema"
-  },
-  {
     "necessidade": "necissidade",
     "arquitetura": "arquiteturra"
   },
@@ -91,5 +86,9 @@
   {
     "tecnologia": "tecnnologia",
     "funciona": "funciona."
+  },
+  {
+    "sistema": "sistma",
+    "arquitetura": "arquitertura"
   }
 ]
