@@ -63632,5 +63632,14 @@
     "dataFonte": "2026-03-28T10:13:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.infoq.com/news/2026/03/discord-elixir-actor-tracing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Como a Nova Versão do HashiCorp Vault Pode Revolucionar sua Arquitetura de Segurança",
+    "noticiaOriginal": "HashiCorp Vault 1.21 Brings SPIFFE Authentication, Granular Secret Recovery, and More",
+    "url": "artigos/seguranca/como-a-nova-versao-do-hashicorp-vault-pode-revolucionar-sua-arquitetura-de-seguranca.html",
+    "data": "2026-03-28T11:33:06.203Z",
+    "dataFonte": "2026-03-28T10:05:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/03/hashicorp-vault-1-21/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
