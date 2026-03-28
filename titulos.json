@@ -63623,5 +63623,14 @@
     "dataFonte": "2026-03-27T22:00:49.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/rayneo-air-4-pro-glasses-amazon-spring-sale-2026/"
+  },
+  {
+    "titulo": "Como o Discord Conquistou a Visibilidade em Sistemas de Mensagens com Traços Distribuídos",
+    "noticiaOriginal": "Discord Engineers Add Distributed Tracing to Elixir's Actor Model Without Performance Penalty",
+    "url": "artigos/tecnologia/como-o-discord-conquistou-a-visibilidade-em-sistemas-de-mensagens-com-tracos-distribuidos.html",
+    "data": "2026-03-28T10:37:22.017Z",
+    "dataFonte": "2026-03-28T10:13:00.000Z",
+    "categoria": "Tecnologia",
+    "urlFonte": "https://www.infoq.com/news/2026/03/discord-elixir-actor-tracing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
