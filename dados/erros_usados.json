@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "monitoramento": "monitramento",
     "dispositivo": "disposotivo",
     "arquitetura": "arquitretura"
@@ -90,5 +86,9 @@
   {
     "sistema": "sistma",
     "arquitetura": "arquitertura"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "abordagem": "abordage"
   }
 ]
