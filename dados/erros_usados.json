@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "dispositivo": "disposotivo",
-    "arquitetura": "arquitretura"
-  },
-  {
     "processo": "prosseso",
     "funciona": "funsiona"
   },
@@ -90,5 +85,9 @@
   {
     "arquitetura": "arquiteturra",
     "abordagem": "abordage"
+  },
+  {
+    "acesso": "aceso",
+    "necessidade": "nescessidade"
   }
 ]
