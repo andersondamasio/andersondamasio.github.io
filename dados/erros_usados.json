@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "arquitetura": "arquitretura",
     "constante": "constanate",
     "abordagem": "abordagem."
@@ -88,5 +84,9 @@
     "prioridade": "prioriade",
     "monitoramento": "monitramento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "controle": "controle.",
+    "muito": "muinto"
   }
 ]
