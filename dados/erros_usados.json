@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "muito": "muiito"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo,",
     "suporte": "suprte"
@@ -91,5 +87,10 @@
     "complexidade": "complexidade.",
     "tecnologia": "tecnnologia",
     "funcionalidade": "funcionalidade."
+  },
+  {
+    "dispositivo": "dispotivo",
+    "sistema": "sistma",
+    "funciona": "funciona,"
   }
 ]
