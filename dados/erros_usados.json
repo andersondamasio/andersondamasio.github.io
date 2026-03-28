@@ -1,9 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "funciona": "funsiona"
-  },
-  {
     "conhecimento": "conhescimento",
     "melhor": "melhorr",
     "tecnologia": "tecnoligia"
@@ -89,5 +85,9 @@
   {
     "acesso": "aceso",
     "necessidade": "nescessidade"
+  },
+  {
+    "personalizado": "personalisado",
+    "arquitetura": "arquiteturra"
   }
 ]
