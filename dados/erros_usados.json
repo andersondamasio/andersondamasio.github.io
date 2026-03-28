@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "arquitetura": "arquitertura"
-  },
-  {
     "resultado": "resultadoo",
     "exemplo": "exemplo,"
   },
@@ -88,5 +84,10 @@
   {
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "desafio": "desaío",
+    "muito": "muiito",
+    "tecnologia": "tecnnologia"
   }
 ]
