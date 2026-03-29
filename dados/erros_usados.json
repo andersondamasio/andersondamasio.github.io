@@ -1,9 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "arquitetura": "arquitertura"
-  },
-  {
     "complexidade": "complexidade.",
     "tecnologia": "tecnnologia",
     "funcionalidade": "funcionalidade."
@@ -88,5 +84,10 @@
     "exemplo": "exenplo",
     "recurso": "recusso",
     "melhor": "melhorr"
+  },
+  {
+    "propriedade": "proprieade",
+    "componente": "componente.",
+    "melhor": "melor"
   }
 ]
