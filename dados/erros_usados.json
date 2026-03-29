@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "tecnologia": "tecnnologia",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "dispositivo": "dispotivo",
     "sistema": "sistma",
     "funciona": "funciona,"
@@ -89,5 +84,9 @@
     "propriedade": "proprieade",
     "componente": "componente.",
     "melhor": "melor"
+  },
+  {
+    "monitoramento": "monitramento",
+    "sistema": "sistéma"
   }
 ]
