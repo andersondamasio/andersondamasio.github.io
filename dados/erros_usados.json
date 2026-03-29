@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "abordagem": "abordage"
-  },
-  {
     "acesso": "aceso",
     "necessidade": "nescessidade"
   },
@@ -89,5 +85,10 @@
     "dispositivo": "disposotivo",
     "funcionalidade": "funcionaliadde",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura",
+    "melhor": "melhorr"
   }
 ]
