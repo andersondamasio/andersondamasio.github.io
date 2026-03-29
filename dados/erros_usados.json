@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "funciona": "funciona."
-  },
-  {
     "sistema": "sistma",
     "arquitetura": "arquitertura"
   },
@@ -88,5 +84,9 @@
     "constante": "constanate",
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "sistema": "cistema"
   }
 ]
