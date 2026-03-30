@@ -1,9 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "rotina": "rotína"
-  },
-  {
     "controle": "controlle",
     "desenvolvimento": "desenvolvmento",
     "processo": "processso"
@@ -92,5 +88,10 @@
     "gerenciamento": "gerenciamente",
     "complexidade": "complexsidade",
     "utilizado": "utilizdo"
+  },
+  {
+    "categoria": "categria",
+    "sistema": "sistéma",
+    "simples": "cimples"
   }
 ]
