@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "desenvolvimento": "desenvolvmento",
-    "processo": "processso"
-  },
-  {
     "conectado": "conetado",
     "estrutura": "estrura",
     "funcionalidade": "funcionaliade"
@@ -93,5 +88,9 @@
     "categoria": "categria",
     "sistema": "sistéma",
     "simples": "cimples"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura"
   }
 ]
