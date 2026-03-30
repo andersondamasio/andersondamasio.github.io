@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "desenvolvimento": "desenvolmento",
-    "estrutura": "estrtura"
-  },
-  {
     "desafio": "desafío",
     "arquitetura": "arquitertura"
   },
@@ -92,5 +87,10 @@
     "controle": "contrle",
     "problema": "poblema",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "estrutura": "estrura",
+    "problema": "problema.",
+    "arquitetura": "arquitertura"
   }
 ]
