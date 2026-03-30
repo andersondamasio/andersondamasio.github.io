@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "arquitetura": "arquitretura"
-  },
-  {
     "arquitetura": "arquiteturra",
     "desenvolvimento": "desenvolmento",
     "estrutura": "estrtura"
@@ -91,5 +87,10 @@
   {
     "suporte": "suporte.",
     "virtual": "virtual."
+  },
+  {
+    "controle": "contrle",
+    "problema": "poblema",
+    "funcionalidade": "funcionaliade"
   }
 ]
