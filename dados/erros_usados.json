@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "sistema": "cistema",
-    "exemplo": "exemplo."
-  },
-  {
     "constante": "constanate",
     "desenvolvimento": "desenvolvmento",
     "sistema": "sistéma"
@@ -92,5 +87,9 @@
   {
     "exemplo": "exemplo,",
     "muito": "muinto"
+  },
+  {
+    "prioridade": "prioridade.",
+    "monitoramento": "monitorameto"
   }
 ]
