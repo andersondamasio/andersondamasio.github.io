@@ -1,9 +1,5 @@
 [
   {
-    "desafio": "desafío",
-    "arquitetura": "arquitertura"
-  },
-  {
     "exemplo": "exenplo",
     "recurso": "recusso",
     "melhor": "melhorr"
@@ -92,5 +88,10 @@
     "estrutura": "estrura",
     "problema": "problema.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "funciona": "funciona.",
+    "resultado": "resutlado"
   }
 ]
