@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "sistema": "sistéma"
-  },
-  {
     "operacional": "operaciona",
     "sistema": "cistema",
     "exemplo": "exemplo."
@@ -92,5 +88,9 @@
     "muito": "muto",
     "virtual": "virtual.",
     "melhor": "melor"
+  },
+  {
+    "exemplo": "exemplo,",
+    "muito": "muinto"
   }
 ]
