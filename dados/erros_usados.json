@@ -1,9 +1,5 @@
 [
   {
-    "personalizado": "personalisado",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "simples": "simlpes",
     "muito": "muto",
     "processo": "prosseso"
@@ -91,5 +87,10 @@
     "abordagem": "abordagem.",
     "acesso": "aceso",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "necessidade": "necessidade.",
+    "constante": "constante.",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
