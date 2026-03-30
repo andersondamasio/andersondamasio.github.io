@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "recurso": "recusso",
-    "melhor": "melhorr"
-  },
-  {
     "propriedade": "proprieade",
     "componente": "componente.",
     "melhor": "melor"
@@ -93,5 +88,9 @@
     "armazenamento": "armazanamento",
     "funciona": "funciona.",
     "resultado": "resutlado"
+  },
+  {
+    "desafio": "desaío",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
