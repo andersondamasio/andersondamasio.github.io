@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "virtual": "virtual."
-  },
-  {
     "controle": "contrle",
     "problema": "poblema",
     "funcionalidade": "funcionaliade"
@@ -90,5 +86,10 @@
     "acesso": "aceso",
     "arquitetura": "arquiteturra",
     "sistema": "sistma"
+  },
+  {
+    "sistema": "cistema",
+    "simples": "simlpes",
+    "armazenamento": "armasenamento"
   }
 ]
