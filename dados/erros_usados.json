@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "problema": "poblema",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "estrutura": "estrura",
     "problema": "problema.",
     "arquitetura": "arquitertura"
@@ -91,5 +86,10 @@
     "sistema": "cistema",
     "simples": "simlpes",
     "armazenamento": "armasenamento"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "virtual": "virtual.",
+    "tecnologia": "tecnolgia"
   }
 ]
