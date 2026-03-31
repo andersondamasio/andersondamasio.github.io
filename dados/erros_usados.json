@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "suporte": "suporte.",
     "virtual": "virtual."
   },
@@ -89,5 +85,10 @@
   {
     "processo": "processso",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "acesso": "aceso",
+    "arquitetura": "arquiteturra",
+    "sistema": "sistma"
   }
 ]

@@ -64154,5 +64154,14 @@
     "dataFonte": "2026-03-31T20:30:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.infoq.com/news/2026/03/agentic-engineering-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "A falta de transparência nos robotaxis: um desafio para a Arquitetura de Software",
+    "noticiaOriginal": "Robotaxi companies refuse to say how often their AVs need remote help",
+    "url": "artigos/arquitetura/a-falta-de-transparencia-nos-robotaxis-um-desafio-para-a-arquitetura-de-software.html",
+    "data": "2026-03-31T21:44:04.144Z",
+    "dataFonte": "2026-03-31T21:35:51.000Z",
+    "categoria": "Arquitetura",
+    "urlFonte": "https://techcrunch.com/2026/03/31/robotaxi-companies-refuse-to-say-how-often-their-avs-need-remote-help/"
   }
 ]
