@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrura",
-    "problema": "problema.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "armazenamento": "armazanamento",
     "funciona": "funciona.",
     "resultado": "resutlado"
@@ -91,5 +86,9 @@
     "monitoramento": "monitorameto",
     "virtual": "virtual.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "controle": "contrle",
+    "muito": "muto"
   }
 ]
