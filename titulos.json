@@ -64208,5 +64208,14 @@
     "dataFonte": "2026-04-01T07:09:46.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.bbc.com/news/articles/cm296jzzl9yo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "Como a Fragilidade do Código Aberto Pode Afetar Sua Segurança",
+    "noticiaOriginal": "Mercor says it was hit by cyberattack tied to compromise of open-source LiteLLM project",
+    "url": "artigos/seguranca/como-a-fragilidade-do-codigo-aberto-pode-afetar-sua-seguranca.html",
+    "data": "2026-04-01T09:09:13.219Z",
+    "dataFonte": "2026-04-01T01:42:59.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://techcrunch.com/2026/03/31/mercor-says-it-was-hit-by-cyberattack-tied-to-compromise-of-open-source-litellm-project/"
   }
 ]
