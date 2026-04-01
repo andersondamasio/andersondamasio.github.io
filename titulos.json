@@ -64280,5 +64280,14 @@
     "dataFonte": "2026-04-01T21:23:47.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2026/04/01/the-reputation-of-troubled-yc-startup-delve-has-gotten-even-worse/"
+  },
+  {
+    "titulo": "A tempestade perfeita: o dilema do código-fonte vazado",
+    "noticiaOriginal": "Anthropic took down thousands of GitHub repos trying to yank its leaked source code — a move the company says was an accident",
+    "url": "artigos/seguranca/a-tempestade-perfeita-o-dilema-do-codigo-fonte-vazado.html",
+    "data": "2026-04-01T22:42:17.597Z",
+    "dataFonte": "2026-04-01T22:12:13.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/"
   }
 ]
