@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "melhor": "melor"
-  },
-  {
     "exemplo": "exemplo.",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnoligia"
@@ -90,5 +86,9 @@
     "gerenciamento": "gerenciamente",
     "abordagem": "abordajem",
     "acesso": "acesço"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "funcionalidade": "funcionaliade"
   }
 ]
