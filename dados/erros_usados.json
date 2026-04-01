@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internert",
-    "abordagem": "abordajem",
-    "funciona": "funciona."
-  },
-  {
     "carregamento": "carregamneto",
     "dispositivo": "dispotivo"
   },
@@ -90,5 +85,10 @@
   {
     "sistema": "cistema",
     "operacional": "operacional."
+  },
+  {
+    "estrutura": "estrututra",
+    "constante": "constante.",
+    "sistema": "sistéma"
   }
 ]
