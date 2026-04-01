@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "muito": "muinto"
-  },
-  {
     "prioridade": "prioridade.",
     "monitoramento": "monitorameto"
   },
@@ -91,5 +87,9 @@
     "categoria": "categória",
     "simples": "simlpes",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "componente": "componentte",
+    "arquitetura": "arquitretura"
   }
 ]
