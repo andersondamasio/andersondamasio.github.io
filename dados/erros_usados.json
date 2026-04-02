@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquitretura"
-  },
-  {
     "suporte": "suprte",
     "funcionalidade": "funcionaliade"
   },
@@ -90,5 +86,9 @@
     "complexidade": "complezidade",
     "conhecimento": "conhecimeto",
     "processo": "prosseso"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "suporte": "suporte."
   }
 ]
