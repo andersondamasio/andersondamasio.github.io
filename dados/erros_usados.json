@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "desafio": "desafiu",
-    "arquitetura": "arquitertura"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitretura"
   },
@@ -90,5 +85,10 @@
     "estrutura": "estrtura",
     "desenvolvimento": "desenvolvmento",
     "exemplo": "exemplo."
+  },
+  {
+    "complexidade": "complezidade",
+    "conhecimento": "conhecimeto",
+    "processo": "prosseso"
   }
 ]
