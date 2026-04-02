@@ -64325,5 +64325,14 @@
     "dataFonte": "2026-04-02T07:05:05.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.bbc.com/news/articles/c2k35lg92dpo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+    "titulo": "A Nova Fronteira da IA: Contexto é Rei na Arquitetura de Sistemas",
+    "noticiaOriginal": "Article: Beyond RAG: Architecting Context-Aware AI Systems with Spring Boot",
+    "url": "artigos/inteligencia-artificial/a-nova-fronteira-da-ia-contexto-e-rei-na-arquitetura-de-sistemas.html",
+    "data": "2026-04-02T09:02:11.013Z",
+    "dataFonte": "2026-04-02T09:00:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://www.infoq.com/articles/beyond-rag-context-aware/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
