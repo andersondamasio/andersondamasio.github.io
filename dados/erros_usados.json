@@ -1,9 +1,5 @@
 [
   {
-    "componente": "componentte",
-    "arquitetura": "arquitretura"
-  },
-  {
     "conectado": "conectado.",
     "desafio": "desafiu",
     "arquitetura": "arquitertura"
@@ -89,5 +85,10 @@
     "funciona": "funsiona",
     "resultado": "resultao",
     "arquitetura": "arquitretura"
+  },
+  {
+    "estrutura": "estrtura",
+    "desenvolvimento": "desenvolvmento",
+    "exemplo": "exemplo."
   }
 ]
