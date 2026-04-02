@@ -1,10 +1,5 @@
 [
   {
-    "categoria": "categória",
-    "simples": "simlpes",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "componente": "componentte",
     "arquitetura": "arquitretura"
   },
@@ -89,5 +84,10 @@
     "prioridade": "prioriade.",
     "dispositivo": "dispotivo",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "funciona": "funsiona",
+    "resultado": "resultao",
+    "arquitetura": "arquitretura"
   }
 ]
