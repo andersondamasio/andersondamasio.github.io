@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "simples": "simplis",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "categoria": "categória",
     "simples": "simlpes",
     "desenvolvimento": "desenvolvmento"
@@ -89,5 +84,10 @@
     "recurso": "reccurso",
     "melhor": "melor",
     "utilizado": "utilizdo"
+  },
+  {
+    "prioridade": "prioriade.",
+    "dispositivo": "dispotivo",
+    "tecnologia": "tecnolgia"
   }
 ]
