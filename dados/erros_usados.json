@@ -1,9 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "melhor": "melhorr",
     "necessidade": "nescessidade",
     "funciona": "funsiona"
@@ -96,5 +92,10 @@
     "acesso": "aceso",
     "funcionalidade": "funcionalidade.",
     "problema": "probrema"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "arquitetura": "arquiteturra",
+    "acesso": "acesso."
   }
 ]
