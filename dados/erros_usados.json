@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "monitoramento": "monitorameto"
-  },
-  {
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolvmento"
   },
@@ -94,5 +90,10 @@
     "muito": "muiito",
     "dispositivo": "disposotivo",
     "problema": "problema."
+  },
+  {
+    "consistente": "consitente",
+    "carregamento": "carregamneto",
+    "suporte": "suportte"
   }
 ]
