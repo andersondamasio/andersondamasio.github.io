@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exenplo",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "operacional": "operaciona",
     "arquitetura": "arquiteturra"
   },
@@ -95,5 +91,10 @@
     "consistente": "consitente",
     "carregamento": "carregamneto",
     "suporte": "suportte"
+  },
+  {
+    "acesso": "aceso",
+    "funcionalidade": "funcionalidade.",
+    "problema": "probrema"
   }
 ]
