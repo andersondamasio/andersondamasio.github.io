@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "arquitetura": "arquitretura",
     "monitoramento": "monitorameto"
   },
@@ -93,5 +89,10 @@
     "exemplo": "exenplo",
     "conhecimento": "conhecimeto",
     "sistema": "cistema"
+  },
+  {
+    "muito": "muiito",
+    "dispositivo": "disposotivo",
+    "problema": "problema."
   }
 ]
