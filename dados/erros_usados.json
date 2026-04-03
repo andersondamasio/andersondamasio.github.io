@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "melhor": "melor",
-    "utilizado": "utilizdo"
-  },
-  {
     "prioridade": "prioriade.",
     "dispositivo": "dispotivo",
     "tecnologia": "tecnolgia"
@@ -96,5 +91,10 @@
     "necessidade": "necissidade",
     "arquitetura": "arquitretura",
     "constante": "constante."
+  },
+  {
+    "melhor": "melhorr",
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnnologia"
   }
 ]
