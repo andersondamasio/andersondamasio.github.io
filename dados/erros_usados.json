@@ -1,10 +1,5 @@
 [
   {
-    "automatizado": "automatizdo.",
-    "problema": "probrema",
-    "sistema": "sistma"
-  },
-  {
     "recurso": "reccurso",
     "melhor": "melor",
     "utilizado": "utilizdo"
@@ -96,5 +91,10 @@
     "simples": "simplis",
     "melhor": "melor",
     "exemplo": "exemplo,"
+  },
+  {
+    "necessidade": "necissidade",
+    "arquitetura": "arquitretura",
+    "constante": "constante."
   }
 ]
