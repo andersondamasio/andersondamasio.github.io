@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "constante": "constante.",
-    "sistema": "sistéma"
-  },
-  {
     "propriedade": "propriedade.",
     "utilizado": "utilizdo"
   },
@@ -92,5 +87,10 @@
     "desafio": "desafío",
     "sistema": "sistéma",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "constante": "constate",
+    "desafio": "desafiu",
+    "exemplo": "exemplo,"
   }
 ]
