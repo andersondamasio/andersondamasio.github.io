@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "resultado": "resultao",
-    "arquitetura": "arquitretura"
-  },
-  {
     "estrutura": "estrtura",
     "desenvolvimento": "desenvolvmento",
     "exemplo": "exemplo."
@@ -96,5 +91,9 @@
     "armazenamento": "armazenamentto",
     "virtual": "virtuaal",
     "computador": "computador,"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "sistema": "sistma"
   }
 ]
