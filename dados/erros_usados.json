@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "desafio": "desafiu",
-    "exemplo": "exemplo,"
-  },
-  {
     "prioridade": "prioridade.",
     "melhor": "melor",
     "estrutura": "estrura"
@@ -95,5 +90,9 @@
     "problema": "problema.",
     "muito": "muto",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "internet": "internert"
   }
 ]
