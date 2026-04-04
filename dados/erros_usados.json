@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "conhecimento": "conhecimeto",
-    "processo": "prosseso"
-  },
-  {
     "arquitetura": "arquitretura",
     "suporte": "suporte."
   },
@@ -94,5 +89,10 @@
   {
     "monitoramento": "monitoramento.",
     "problema": "poblema"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "suporte": "suporte.",
+    "muito": "muiito"
   }
 ]
