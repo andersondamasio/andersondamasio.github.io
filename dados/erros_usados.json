@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "simples": "simplis"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "gerenciamento": "gerenciamnto",
     "suporte": "suportte"
@@ -91,5 +87,9 @@
   {
     "arquitetura": "arquitertura",
     "monitoramento": "monitoramento."
+  },
+  {
+    "abordagem": "abordage",
+    "sistema": "sistma"
   }
 ]
