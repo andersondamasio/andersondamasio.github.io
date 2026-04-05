@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "muito": "muto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "arquitetura": "arquitertura",
     "internet": "internert"
   },
@@ -87,5 +82,9 @@
   {
     "complexidade": "complezidade",
     "necessidade": "nescessidade"
+  },
+  {
+    "prioridade": "prioriade",
+    "muito": "muto"
   }
 ]
