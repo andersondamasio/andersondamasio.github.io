@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "internet": "internert"
-  },
-  {
     "estrutura": "estrura",
     "desenvolvimento": "desenvolvimente",
     "muito": "muiito"
@@ -86,5 +82,10 @@
   {
     "prioridade": "prioriade",
     "muito": "muto"
+  },
+  {
+    "funciona": "funsiona",
+    "desenvolvimento": "desenvolmento",
+    "tecnologia": "tecnolgia"
   }
 ]
