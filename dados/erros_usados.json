@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "melhor": "melor",
-    "exemplo": "exemplo,"
-  },
-  {
     "necessidade": "necissidade",
     "arquitetura": "arquitretura",
     "constante": "constante."
@@ -90,5 +85,10 @@
   {
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "exemplo": "exemplo,",
+    "carregamento": "carregamento.",
+    "armazenamento": "armasenamento"
   }
 ]
