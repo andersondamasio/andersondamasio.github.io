@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "virtual": "virtuaal",
-    "computador": "computador,"
-  },
-  {
     "arquitetura": "arquitertura",
     "sistema": "sistma"
   },
@@ -88,5 +83,9 @@
   {
     "problema": "probrema",
     "acesso": "acesço"
+  },
+  {
+    "simples": "cimples",
+    "arquitetura": "arquitertura"
   }
 ]
