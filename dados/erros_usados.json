@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "exemplo": "exemplo,",
     "carregamento": "carregamento.",
     "armazenamento": "armasenamento"
@@ -89,5 +85,10 @@
     "monitoramento": "monitorameto",
     "tecnologia": "tecnnologia",
     "acesso": "aceso"
+  },
+  {
+    "problema": "problema.",
+    "abordagem": "abordagem.",
+    "muito": "muiito"
   }
 ]

@@ -64883,5 +64883,14 @@
     "dataFonte": "2026-04-06T13:03:04.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://techcrunch.com/2026/04/06/convicted-spyware-maker-bryan-fleming-avoids-jail-at-sentencing/"
+  },
+  {
+    "titulo": "Reduzindo Falhas de Memória em Sistemas: Lições do Pinterest para o Desenvolvimento de Software",
+    "noticiaOriginal": "Pinterest Reduces Spark OOM Failures by 96% Through Auto Memory Retries",
+    "url": "artigos/desenvolvimento-de-software/reduzindo-falhas-de-memoria-em-sistemas-licoes-do-pinterest-para-o-desenvolvimento-de-software.html",
+    "data": "2026-04-06T14:51:22.043Z",
+    "dataFonte": "2026-04-06T14:32:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://www.infoq.com/news/2026/04/pinterest-spark-oom-reduction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
