@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "proprieade",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquitertura",
     "monitoramento": "monitoramento."
   },
@@ -86,5 +82,10 @@
     "parceria": "parcería",
     "controle": "controlle",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "problema": "poblema",
+    "abordagem": "abordage"
   }
 ]
