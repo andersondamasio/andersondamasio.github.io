@@ -1,9 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "necessidade": "nescessidade"
-  },
-  {
     "prioridade": "prioriade",
     "muito": "muto"
   },
@@ -93,5 +89,10 @@
     "conhecimento": "conhecimento.",
     "tecnologia": "tecnoligia",
     "muito": "muiito"
+  },
+  {
+    "armazenamento": "armazenamentto",
+    "desenvolvimento": "desenvolvimente",
+    "sistema": "sistma"
   }
 ]
