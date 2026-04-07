@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "tecnologia": "tecnolgia",
-    "funcionalidade": "funcionalidade."
-  },
-  {
     "suporte": "suprte",
     "desenvolvimento": "desenvolmento",
     "dispositivo": "dispotivo"
@@ -93,5 +88,10 @@
     "desafio": "desaío",
     "tecnologia": "tecnoligia",
     "melhor": "melhorr"
+  },
+  {
+    "acesso": "acesso.",
+    "muito": "muto",
+    "internet": "internete"
   }
 ]
