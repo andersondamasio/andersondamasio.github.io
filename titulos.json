@@ -65009,5 +65009,14 @@
     "dataFonte": "2026-04-07T09:00:00.000Z",
     "categoria": "Programação",
     "urlFonte": "https://www.infoq.com/articles/bloom-filters-practice-go-recommender/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Exposição de Código: Um Alerta para a Segurança no Desenvolvimento de Software",
+    "noticiaOriginal": "Anthropic Accidentally Exposes Claude Code Source via npm Source Map File",
+    "url": "artigos/seguranca/exposicao-de-codigo-um-alerta-para-a-seguranca-no-desenvolvimento-de-software.html",
+    "data": "2026-04-07T10:59:46.155Z",
+    "dataFonte": "2026-04-07T08:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/04/claude-code-source-leak/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]

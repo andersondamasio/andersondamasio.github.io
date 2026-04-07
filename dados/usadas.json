@@ -36039,5 +36039,10 @@
     "intro": "Não dá pra falar de sistemas robustos sem esbarrar em Article: Bloom Filters: Theory, Engineering Trade‑offs, and Implementation in Go em algum momento.",
     "introOriginal": "Não dá pra falar de sistemas robustos sem esbarrar em __TEMATICA__ em algum momento.",
     "data": "2026-04-07"
+  },
+  "2026-04-07-exposicao-de-codigo-um-alerta-para-a-seguranca-no-desenvolvimento-de-software": {
+    "intro": "É impressionante como Anthropic Accidentally Exposes Claude Code Source via npm Source Map File ainda gera tanto ruído em times experientes.",
+    "introOriginal": "É impressionante como __TEMATICA__ ainda gera tanto ruído em times experientes.",
+    "data": "2026-04-07"
   }
 }
