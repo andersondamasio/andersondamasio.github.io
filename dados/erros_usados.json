@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "tecnologia": "tecnoligia",
-    "sistema": "sistéma"
-  },
-  {
     "exemplo": "exemplo.",
     "tecnologia": "tecnolgia"
   },
@@ -94,5 +89,10 @@
   {
     "acesso": "acesso.",
     "funciona": "funciona,"
+  },
+  {
+    "necessidade": "nescessidade",
+    "processo": "proceso",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
