@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "tecnologia": "tecnnologia",
-    "acesso": "aceso"
-  },
-  {
     "problema": "problema.",
     "abordagem": "abordagem.",
     "muito": "muiito"
@@ -93,5 +88,10 @@
     "monitoramento": "monitramento",
     "funcionalidade": "funcionalidade.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "constante": "constanate",
+    "sistema": "sistéma",
+    "necessidade": "necessidade."
   }
 ]
