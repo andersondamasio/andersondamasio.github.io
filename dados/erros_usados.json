@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "controle": "controlle",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "problema": "poblema",
     "abordagem": "abordage"
@@ -94,5 +89,9 @@
   {
     "simples": "simplis",
     "processo": "proceso"
+  },
+  {
+    "rotina": "rotna",
+    "exemplo": "exenplo"
   }
 ]
