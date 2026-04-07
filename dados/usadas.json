@@ -36034,5 +36034,10 @@
     "intro": "É curioso como AI startup Rocket offers vibe McKinsey-style reports at a fraction of the cost sempre volta nas conversas mais sérias sobre arquitetura de software.",
     "introOriginal": "É curioso como __TEMATICA__ sempre volta nas conversas mais sérias sobre arquitetura de software.",
     "data": "2026-04-07"
+  },
+  "2026-04-07-o-poder-dos-bloom-filters-na-arquitetura-de-sistemas-otimizando-consultas-em-cargas-pesadas": {
+    "intro": "Não dá pra falar de sistemas robustos sem esbarrar em Article: Bloom Filters: Theory, Engineering Trade‑offs, and Implementation in Go em algum momento.",
+    "introOriginal": "Não dá pra falar de sistemas robustos sem esbarrar em __TEMATICA__ em algum momento.",
+    "data": "2026-04-07"
   }
 }

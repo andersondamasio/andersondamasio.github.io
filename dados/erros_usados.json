@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "exemplo": "exemplo,",
     "utilizado": "utilizado.",
     "simples": "simlpes"
@@ -94,5 +90,10 @@
     "necessidade": "nescessidade",
     "processo": "proceso",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "simples": "simlpes",
+    "muito": "muinto",
+    "monitoramento": "monitoramento."
   }
 ]

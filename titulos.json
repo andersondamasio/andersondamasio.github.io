@@ -65000,5 +65000,14 @@
     "dataFonte": "2026-04-07T05:30:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://techcrunch.com/2026/04/06/indian-startup-rocket-wants-its-ai-to-do-mckinsey-style-consulting-at-a-fraction-of-the-cost/"
+  },
+  {
+    "titulo": "O poder dos Bloom Filters na Arquitetura de Sistemas: Otimizando Consultas em Cargas Pesadas",
+    "noticiaOriginal": "Article: Bloom Filters: Theory, Engineering Trade‑offs, and Implementation in Go",
+    "url": "artigos/programacao/o-poder-dos-bloom-filters-na-arquitetura-de-sistemas-otimizando-consultas-em-cargas-pesadas.html",
+    "data": "2026-04-07T09:07:13.065Z",
+    "dataFonte": "2026-04-07T09:00:00.000Z",
+    "categoria": "Programação",
+    "urlFonte": "https://www.infoq.com/articles/bloom-filters-practice-go-recommender/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
