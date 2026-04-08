@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "funciona": "funciona,"
-  },
-  {
     "necessidade": "nescessidade",
     "processo": "proceso",
     "desenvolvimento": "desenvolvimente"
@@ -92,5 +88,10 @@
     "problema": "poblema",
     "desenvolvimento": "desenvolvmento",
     "muito": "muinto"
+  },
+  {
+    "abordagem": "abordage",
+    "simples": "simplis",
+    "melhor": "melhorr"
   }
 ]
