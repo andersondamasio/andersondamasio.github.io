@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "desenvolvimento": "desenvolmento",
-    "dispositivo": "dispotivo"
-  },
-  {
     "melhor": "melor",
     "sistema": "cistema",
     "acesso": "acesso."
@@ -93,5 +88,10 @@
     "acesso": "acesso.",
     "muito": "muto",
     "internet": "internete"
+  },
+  {
+    "constante": "constante.",
+    "dispositivo": "dispositivo.",
+    "exemplo": "exenplo"
   }
 ]
