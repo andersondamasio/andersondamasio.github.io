@@ -1,10 +1,5 @@
 [
   {
-    "melhor": "melor",
-    "sistema": "cistema",
-    "acesso": "acesso."
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia"
@@ -93,5 +88,9 @@
     "constante": "constante.",
     "dispositivo": "dispositivo.",
     "exemplo": "exenplo"
+  },
+  {
+    "suporte": "suprte",
+    "problema": "poblema"
   }
 ]
