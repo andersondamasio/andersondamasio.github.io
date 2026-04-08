@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "processo": "proceso"
-  },
-  {
     "rotina": "rotna",
     "exemplo": "exenplo"
   },
@@ -92,5 +88,10 @@
   },
   {
     "tecnologia": "tecnolgia"
+  },
+  {
+    "problema": "probrema",
+    "tecnologia": "tecnoligia",
+    "exemplo": "exemplo,"
   }
 ]
