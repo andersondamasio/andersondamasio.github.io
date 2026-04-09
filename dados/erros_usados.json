@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexidade.",
-    "problema": "problema.",
-    "melhor": "melor"
-  },
-  {
     "problema": "poblema",
     "desenvolvimento": "desenvolvmento",
     "muito": "muinto"
@@ -90,5 +85,10 @@
   },
   {
     "tecnologia": "tecnnologia"
+  },
+  {
+    "estrutura": "estrura",
+    "arquitetura": "arquitretura",
+    "sistema": "sistéma"
   }
 ]
