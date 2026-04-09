@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "muito": "muto",
-    "internet": "internete"
-  },
-  {
     "constante": "constante.",
     "dispositivo": "dispositivo.",
     "exemplo": "exenplo"
@@ -92,5 +87,10 @@
     "monitoramento": "monitramento",
     "processo": "proceso",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "desenvolvimento": "desenvolvimente",
+    "dispositivo": "dispositivo."
   }
 ]
