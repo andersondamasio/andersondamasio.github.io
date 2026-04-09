@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "desenvolvimento": "desenvolvmento",
-    "acesso": "acesço"
-  },
-  {
     "complexidade": "complexidade.",
     "problema": "problema.",
     "melhor": "melor"
@@ -92,5 +87,8 @@
     "funciona": "funciona.",
     "constante": "constante.",
     "exemplo": "exenplo"
+  },
+  {
+    "tecnologia": "tecnnologia"
   }
 ]
