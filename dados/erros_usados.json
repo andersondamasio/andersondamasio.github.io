@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "funcionalidade": "funcionalidade.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "constante": "constanate",
     "sistema": "sistéma",
     "necessidade": "necessidade."
@@ -93,5 +88,10 @@
   {
     "operacional": "operaciona",
     "processo": "processso"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "funcionalidade": "funcionaliadde",
+    "abordagem": "abordagem."
   }
 ]
