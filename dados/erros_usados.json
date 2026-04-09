@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "exemplo": "exemplo.",
-    "simples": "simlpes"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "desenvolvimento": "desenvolvmento",
     "acesso": "acesço"
@@ -92,5 +87,10 @@
   {
     "acesso": "acesso.",
     "abordagem": "abordagem."
+  },
+  {
+    "funciona": "funciona.",
+    "constante": "constante.",
+    "exemplo": "exenplo"
   }
 ]
