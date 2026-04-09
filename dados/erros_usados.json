@@ -1,9 +1,5 @@
 [
   {
-    "rotina": "rotna",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funciona": "funciona.",
     "simples": "cimples",
     "exemplo": "exemplo,"
@@ -91,5 +87,10 @@
   {
     "simples": "cimples",
     "computador": "computador,"
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "constante": "constante.",
+    "exemplo": "exemplo,"
   }
 ]
