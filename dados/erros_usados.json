@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "tecnologia": "tecnoligia",
-    "melhor": "melhorr"
-  },
-  {
     "acesso": "acesso.",
     "muito": "muto",
     "internet": "internete"
@@ -92,5 +87,10 @@
     "sistema": "cistema",
     "necessidade": "nescessidade",
     "monitoramento": "monitorameto"
+  },
+  {
+    "monitoramento": "monitramento",
+    "processo": "proceso",
+    "tecnologia": "tecnoligia"
   }
 ]
