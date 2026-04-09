@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "problema": "poblema"
-  },
-  {
     "funciona": "funsiona",
     "exemplo": "exemplo.",
     "simples": "simlpes"
@@ -92,5 +88,9 @@
     "componente": "componete",
     "funciona": "funciona.",
     "simples": "simplis"
+  },
+  {
+    "acesso": "acesso.",
+    "abordagem": "abordagem."
   }
 ]
