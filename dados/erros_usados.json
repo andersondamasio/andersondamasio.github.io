@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "abordagem": "abordajem"
-  },
-  {
     "simples": "cimples",
     "computador": "computador,"
   },
@@ -89,5 +85,9 @@
     "desenvolvimento": "desenvolmento",
     "necessidade": "necessidade.",
     "sistema": "sistma"
+  },
+  {
+    "estrutura": "estrura",
+    "controle": "contrle"
   }
 ]
