@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "necessidade": "nescessidade",
-    "monitoramento": "monitorameto"
-  },
-  {
     "monitoramento": "monitramento",
     "processo": "proceso",
     "tecnologia": "tecnoligia"
@@ -90,5 +85,9 @@
     "desenvolvimento": "desenvolvimente",
     "exemplo": "exenplo",
     "parceria": "parceria."
+  },
+  {
+    "sistema": "sistéma",
+    "exemplo": "exemplo."
   }
 ]
