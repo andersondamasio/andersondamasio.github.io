@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "processo": "proceso",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "funcionalidade": "funcionalidade.",
     "desenvolvimento": "desenvolvimente",
     "dispositivo": "dispositivo."
@@ -89,5 +84,10 @@
   {
     "sistema": "sistéma",
     "exemplo": "exemplo."
+  },
+  {
+    "estrutura": "estrura",
+    "controle": "contrle",
+    "arquitetura": "arquiteturra"
   }
 ]
