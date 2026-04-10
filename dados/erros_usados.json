@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia"
-  },
-  {
     "problema": "probrema",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo,"
@@ -88,5 +85,10 @@
     "melhor": "melhorr",
     "complexidade": "complexsidade",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "parceria": "parceria.",
+    "desafio": "desaío",
+    "arquitetura": "arquitretura"
   }
 ]
