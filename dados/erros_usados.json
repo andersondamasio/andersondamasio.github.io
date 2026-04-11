@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "exemplo": "exemplo."
-  },
-  {
     "muito": "muiito",
     "suporte": "suprte",
     "conectado": "conectdo"
@@ -89,5 +85,9 @@
     "exemplo": "exemplo,",
     "monitoramento": "monitramento",
     "acesso": "aceso"
+  },
+  {
+    "abordagem": "abordagem.",
+    "tecnologia": "tecnolgia"
   }
 ]

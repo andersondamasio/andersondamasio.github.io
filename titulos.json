@@ -65522,5 +65522,14 @@
     "dataFonte": "2026-04-11T12:00:42.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/olight-ostation-2-aa-battery-charger-review/"
+  },
+  {
+    "titulo": "A genialidade de Turing: lições para a Arquitetura de Software",
+    "noticiaOriginal": "Alan Turing play in Cambridge MA",
+    "url": "artigos/arquitetura/a-genialidade-de-turing-licoes-para-a-arquitetura-de-software.html",
+    "data": "2026-04-11T14:03:05.460Z",
+    "dataFonte": "2026-04-11T13:01:00.000Z",
+    "categoria": "Arquitetura",
+    "urlFonte": "https://martinfowler.com/articles/202604-turing.html"
   }
 ]
