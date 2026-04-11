@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "abordagem": "abordagem."
-  },
-  {
     "funciona": "funciona.",
     "constante": "constante.",
     "exemplo": "exenplo"
@@ -88,5 +84,10 @@
   {
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "arquitetura": "arquitertura",
+    "necessidade": "necessidade."
   }
 ]
