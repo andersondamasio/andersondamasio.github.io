@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona.",
-    "constante": "constante.",
-    "exemplo": "exenplo"
-  },
-  {
     "tecnologia": "tecnnologia"
   },
   {
@@ -89,5 +84,9 @@
     "monitoramento": "monitoramento.",
     "arquitetura": "arquitertura",
     "necessidade": "necessidade."
+  },
+  {
+    "processo": "processso",
+    "constante": "constante."
   }
 ]
