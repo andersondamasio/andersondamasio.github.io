@@ -65504,5 +65504,14 @@
     "dataFonte": "2026-04-10T19:00:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/jabra-evolve3-75-review/"
+  },
+  {
+    "titulo": "A Revolução do Sharding: Como o Etsy Transformou sua Arquitetura de Dados com Vitess",
+    "noticiaOriginal": "Etsy Migrates 1000-Shard, 425 TB MySQL Sharding Architecture to Vitess",
+    "url": "artigos/banco-de-dados/a-revolucao-do-sharding-como-o-etsy-transformou-sua-arquitetura-de-dados-com-vitess.html",
+    "data": "2026-04-11T08:47:44.873Z",
+    "dataFonte": "2026-04-11T07:13:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/04/etsy-vitess-sharding-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
