@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "desafio": "desaío",
-    "arquitetura": "arquitretura"
-  },
-  {
     "recurso": "reccurso",
     "funcionalidade": "funcionalidade."
   },
@@ -88,5 +83,10 @@
     "exemplo": "exemplo.",
     "tecnologia": "tecnnologia",
     "abordagem": "abordage"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "abordagem": "abordajem",
+    "sistema": "sistéma"
   }
 ]
