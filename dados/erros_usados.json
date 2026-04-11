@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "sistema": "sistma"
-  },
-  {
     "acesso": "aceso",
     "exemplo": "exemplo."
   },
@@ -88,5 +84,10 @@
   {
     "funciona": "funciona.",
     "sistema": "cistema"
+  },
+  {
+    "exemplo": "exemplo,",
+    "monitoramento": "monitramento",
+    "acesso": "aceso"
   }
 ]
