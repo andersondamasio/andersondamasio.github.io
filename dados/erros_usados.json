@@ -1,8 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia"
-  },
-  {
     "estrutura": "estrura",
     "arquitetura": "arquitretura",
     "sistema": "sistéma"
@@ -88,5 +85,9 @@
   {
     "processo": "processso",
     "constante": "constante."
+  },
+  {
+    "dispositivo": "disposotivo",
+    "computador": "computador,"
   }
 ]
