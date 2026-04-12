@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrura",
-    "controle": "contrle",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "carregamento": "carregamneto",
     "simples": "cimples",
     "sistema": "cistema"
@@ -90,5 +85,10 @@
     "paralelo": "paraleloo",
     "arquitetura": "arquiteturra",
     "controle": "controle."
+  },
+  {
+    "constante": "constate",
+    "abordagem": "abordagem.",
+    "sistema": "cistema"
   }
 ]
