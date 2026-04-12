@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "exemplo": "exemplo."
-  },
-  {
     "estrutura": "estrura",
     "controle": "contrle",
     "arquitetura": "arquiteturra"
@@ -89,5 +85,10 @@
   {
     "controle": "controlle",
     "sistema": "cistema"
+  },
+  {
+    "paralelo": "paraleloo",
+    "arquitetura": "arquiteturra",
+    "controle": "controle."
   }
 ]
