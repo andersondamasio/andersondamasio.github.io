@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordagem.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "suporte": "suporte.",
     "tecnologia": "tecnoligia"
   },
@@ -93,5 +89,10 @@
     "conhecimento": "conhescimento",
     "exemplo": "exenplo",
     "muito": "muto"
+  },
+  {
+    "problema": "problema.",
+    "monitoramento": "monitorameto",
+    "acesso": "acesço"
   }
 ]
