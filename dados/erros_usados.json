@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "exemplo": "exemplo.",
     "tecnologia": "tecnnologia",
     "abordagem": "abordage"
@@ -94,5 +90,10 @@
     "problema": "problema.",
     "monitoramento": "monitorameto",
     "acesso": "acesço"
+  },
+  {
+    "dispositivo": "disposotivo",
+    "melhor": "melhorr",
+    "tecnologia": "tecnnologia"
   }
 ]
