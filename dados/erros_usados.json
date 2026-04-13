@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internert",
-    "dispositivo": "dispotivo",
-    "armazenamento": "armazanamento"
-  },
-  {
     "funcionalidade": "funcionaliade",
     "controle": "controlle",
     "desenvolvimento": "desenvolvmento"
@@ -93,5 +88,9 @@
   {
     "computador": "computador.",
     "sistema": "sistma"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "conhecimento": "conhecimeto"
   }
 ]
