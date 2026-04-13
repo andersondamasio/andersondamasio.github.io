@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "abordagem": "abordajem",
-    "sistema": "sistéma"
-  },
-  {
     "exemplo": "exemplo.",
     "tecnologia": "tecnolgia"
   },
@@ -95,5 +90,10 @@
     "componente": "componentte",
     "abordagem": "abordagem.",
     "sistema": "sistéma"
+  },
+  {
+    "suporte": "suprte",
+    "acesso": "aceso",
+    "monitoramento": "monitramento"
   }
 ]
