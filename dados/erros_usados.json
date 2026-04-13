@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "desafio": "desafío",
     "melhor": "melor"
@@ -95,5 +91,9 @@
     "suporte": "suprte",
     "acesso": "aceso",
     "monitoramento": "monitramento"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
