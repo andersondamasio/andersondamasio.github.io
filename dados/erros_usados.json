@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacionl",
-    "tecnologia": "tecnoligia",
-    "sistema": "cistema"
-  },
-  {
     "internet": "internert",
     "dispositivo": "dispotivo",
     "armazenamento": "armazanamento"
@@ -94,5 +89,9 @@
   {
     "constante": "constanate",
     "arquitetura": "arquitertura"
+  },
+  {
+    "computador": "computador.",
+    "sistema": "sistma"
   }
 ]
