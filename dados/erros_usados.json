@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "disposotivo",
-    "computador": "computador,"
-  },
-  {
     "funciona": "funciona.",
     "sistema": "cistema"
   },
@@ -91,5 +87,10 @@
     "tecnologia": "tecnolgia",
     "abordagem": "abordagem.",
     "arquitetura": "arquitretura"
+  },
+  {
+    "processo": "processso",
+    "simples": "simplis",
+    "necessidade": "necissidade"
   }
 ]
