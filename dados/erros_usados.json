@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "sistema": "cistema"
-  },
-  {
     "paralelo": "paraleloo",
     "arquitetura": "arquiteturra",
     "controle": "controle."
@@ -92,5 +88,9 @@
     "melhor": "melor",
     "abordagem": "abordage",
     "muito": "muinto"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "sistema": "sistma"
   }
 ]
