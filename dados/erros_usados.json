@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "monitoramento": "monitorameto",
-    "acesso": "acesço"
-  },
-  {
     "dispositivo": "disposotivo",
     "melhor": "melhorr",
     "tecnologia": "tecnnologia"
@@ -89,5 +84,10 @@
     "geralmente": "geralment",
     "conectado": "conetado",
     "muito": "muinto"
+  },
+  {
+    "propriedade": "propriedade.",
+    "problema": "poblema",
+    "controle": "controlle"
   }
 ]
