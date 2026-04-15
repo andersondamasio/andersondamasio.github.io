@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "conhecimento": "conhecimeto"
-  },
-  {
     "recurso": "reccurso",
     "resultado": "resultao",
     "funcionalidade": "funcionalidade."
@@ -91,5 +87,10 @@
     "necessidade": "necissidade",
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "processo": "proceso",
+    "exemplo": "exemplo.",
+    "desafio": "desafiu"
   }
 ]
