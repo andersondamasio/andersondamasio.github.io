@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "sistma"
-  },
-  {
     "desafio": "desafío",
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolvimente"
@@ -91,5 +87,9 @@
     "recurso": "recuro",
     "constante": "constante.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "personalizado": "personalizad",
+    "abordagem": "abordage"
   }
 ]
