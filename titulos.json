@@ -65918,5 +65918,14 @@
     "dataFonte": "2026-04-15T07:00:43.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/gemini-for-home-google-update-april-2026/"
+  },
+  {
+    "titulo": "Descomplicando o Flushing de Telemetria com AWS Lambda: Uma Nova Abordagem",
+    "noticiaOriginal": "Article: Using AWS Lambda Extensions to Run Post-Response Telemetry Flush",
+    "url": "artigos/cloud/descomplicando-o-flushing-de-telemetria-com-aws-lambda-uma-nova-abordagem.html",
+    "data": "2026-04-15T09:24:08.705Z",
+    "dataFonte": "2026-04-15T09:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/articles/lambda-extension-deferred-flush/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
