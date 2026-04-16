@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "carregamento": "carregameno",
     "dispositivo": "disposotivo",
     "rotina": "rotina."
@@ -92,5 +88,9 @@
     "sistema": "sistéma",
     "monitoramento": "monitramento",
     "problema": "probrema"
+  },
+  {
+    "paralelo": "paralélo",
+    "funcionalidade": "funcionaliade"
   }
 ]
