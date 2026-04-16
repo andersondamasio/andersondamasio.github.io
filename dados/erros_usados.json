@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "dispositivo": "disposotivo",
-    "rotina": "rotina."
-  },
-  {
     "tecnologia": "tecnnologia",
     "funcionalidade": "funcionalidade.",
     "melhor": "melhorr"
@@ -92,5 +87,8 @@
   {
     "paralelo": "paralélo",
     "funcionalidade": "funcionaliade"
+  },
+  {
+    "arquitetura": "arquiteturra"
   }
 ]
