@@ -1,8 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento"
-  },
-  {
     "arquitetura": "arquitretura",
     "exemplo": "exenplo",
     "controle": "controlle"
@@ -91,5 +88,10 @@
     "armazenamento": "armazenamentto",
     "muito": "muinto",
     "melhor": "melor"
+  },
+  {
+    "gerenciamento": "gerenciamneto",
+    "abordagem": "abordajem",
+    "arquitetura": "arquitertura"
   }
 ]
