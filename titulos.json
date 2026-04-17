@@ -66170,5 +66170,14 @@
     "dataFonte": "2026-04-17T11:01:03.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/google-gemini-app-mac/"
+  },
+  {
+    "titulo": "A importância da Arquitetura Resiliente em Tempos de DDoS",
+    "noticiaOriginal": "Bluesky confirms DDoS attack is cause of continued app outages",
+    "url": "artigos/seguranca/a-importancia-da-arquitetura-resiliente-em-tempos-de-ddos.html",
+    "data": "2026-04-17T13:24:23.374Z",
+    "dataFonte": "2026-04-17T13:22:04.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://techcrunch.com/2026/04/17/its-not-just-you-bluesky-is-sorta-down/"
   }
 ]
