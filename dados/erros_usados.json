@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "recurso": "recuro",
     "constante": "constante.",
     "tecnologia": "tecnolgia"
@@ -89,5 +85,10 @@
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "acesso": "aceso",
+    "processo": "prosseso"
   }
 ]
