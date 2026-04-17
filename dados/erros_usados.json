@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "monitoramento": "monitramento",
-    "problema": "probrema"
-  },
-  {
     "paralelo": "paralélo",
     "funcionalidade": "funcionaliade"
   },
@@ -93,5 +88,9 @@
     "desafio": "desafío",
     "dispositivo": "disposotivo",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "monitoramento": "monitoramento.",
+    "arquitetura": "arquitertura"
   }
 ]
