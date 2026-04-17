@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "melhor": "melhorr",
-    "arquitetura": "arquitertura"
-  },
-  {
     "sistema": "sistéma",
     "monitoramento": "monitramento",
     "problema": "probrema"
@@ -93,5 +88,10 @@
     "constante": "constanate",
     "conhecimento": "conhecimeto",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desafio": "desafío",
+    "dispositivo": "disposotivo",
+    "tecnologia": "tecnnologia"
   }
 ]
