@@ -1,9 +1,5 @@
 [
   {
-    "personalizado": "personalizad",
-    "abordagem": "abordage"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnolgia"
@@ -90,5 +86,10 @@
     "geralmente": "geralmemte",
     "tecnologia": "tecnnologia",
     "suporte": "suportte"
+  },
+  {
+    "complexidade": "complexsidade",
+    "tecnologia": "tecnoligia",
+    "sistema": "cistema"
   }
 ]
