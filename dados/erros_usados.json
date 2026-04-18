@@ -1,9 +1,5 @@
 [
   {
-    "paralelo": "paralélo",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "arquitetura": "arquiteturra"
   },
   {
@@ -92,5 +88,10 @@
   {
     "monitoramento": "monitoramento.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "controle": "contrle",
+    "rotina": "rotna",
+    "carregamento": "carregamneto"
   }
 ]
