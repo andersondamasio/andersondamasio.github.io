@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "necessidade": "nescessidade",
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolmento"
@@ -92,5 +88,9 @@
     "monitoramento": "monitoramento.",
     "sistema": "cistema",
     "arquitetura": "arquitretura"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitertura"
   }
 ]
