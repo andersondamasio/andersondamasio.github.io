@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "controle": "contrle",
     "rotina": "rotna",
     "carregamento": "carregamneto"
@@ -89,5 +85,10 @@
   {
     "tecnologia": "tecnolgia",
     "exemplo": "exenplo"
+  },
+  {
+    "componente": "componete",
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
