@@ -36849,5 +36849,10 @@
     "intro": "Não dá pra falar de sistemas robustos sem esbarrar em The 12-month window em algum momento.",
     "introOriginal": "Não dá pra falar de sistemas robustos sem esbarrar em __TEMATICA__ em algum momento.",
     "data": "2026-04-19"
+  },
+  "2026-04-19-desafios-no-espaco-o-impacto-de-erros-em-lancamentos-de-satelites-e-o-papel-da-arquitetura-de-software": {
+    "intro": "Sempre que releio algo sobre Blue Origin’s New Glenn put a customer satellite in the wrong orbit during its third launch, percebo o quanto já evoluí nessa parte do desenvolvimento.",
+    "introOriginal": "Sempre que releio algo sobre __TEMATICA__, percebo o quanto já evoluí nessa parte do desenvolvimento.",
+    "data": "2026-04-19"
   }
 }

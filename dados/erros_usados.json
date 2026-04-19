@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitretura",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "processo": "proceso"
   },
@@ -90,5 +85,9 @@
     "tecnologia": "tecnnologia",
     "sistema": "sistéma",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitertura"
   }
 ]
