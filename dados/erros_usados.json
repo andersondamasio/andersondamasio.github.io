@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "rotina": "rotna",
-    "carregamento": "carregamneto"
-  },
-  {
     "arquitetura": "arquitertura",
     "necessidade": "nescessidade",
     "sistema": "cistema"
@@ -90,5 +85,10 @@
     "componente": "componete",
     "tecnologia": "tecnoligia",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquitertura",
+    "sistema": "sistma"
   }
 ]
