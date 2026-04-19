@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constanate",
-    "conhecimento": "conhecimeto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desafio": "desafío",
     "dispositivo": "disposotivo",
     "tecnologia": "tecnnologia"
@@ -90,5 +85,10 @@
   {
     "funcionalidade": "funcionaliade",
     "sistema": "cistema"
+  },
+  {
+    "conectado": "conectdo",
+    "suporte": "suprte",
+    "recurso": "recusso"
   }
 ]
