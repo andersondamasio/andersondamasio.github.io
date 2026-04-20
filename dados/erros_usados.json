@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "tecnologia": "tecnnologia",
-    "sistema": "sistéma"
-  },
-  {
     "exemplo": "exenplo",
     "dispositivo": "dispositivo.",
     "melhor": "melhorr"
@@ -90,5 +85,10 @@
   {
     "simples": "simplis",
     "controle": "controle."
+  },
+  {
+    "constante": "constate",
+    "simples": "simlpes",
+    "recurso": "recusso"
   }
 ]
