@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "sistema": "cistema"
-  },
-  {
     "conectado": "conectdo",
     "suporte": "suprte",
     "recurso": "recusso"
@@ -90,5 +86,10 @@
     "constante": "constante.",
     "tecnologia": "tecnnologia",
     "abordagem": "abordagem."
+  },
+  {
+    "abordagem": "abordajem",
+    "desenvolvimento": "desenvolvimente",
+    "exemplo": "exemplo."
   }
 ]
