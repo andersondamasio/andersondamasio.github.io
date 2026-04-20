@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "sistema": "cistema",
-    "arquitetura": "arquitretura"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitertura"
   },
@@ -90,5 +85,10 @@
     "acesso": "acesso.",
     "abordagem": "abordajem",
     "arquitetura": "arquitretura"
+  },
+  {
+    "processo": "prosseso",
+    "funciona": "funsiona",
+    "arquitetura": "arquitertura"
   }
 ]
