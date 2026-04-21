@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "propriedade": "propriadade",
-    "gerenciamento": "gerenciamnto"
-  },
-  {
     "controle": "contrle",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +85,9 @@
   {
     "tecnologia": "tecnolgia",
     "necessidade": "nescessidade"
+  },
+  {
+    "suporte": "suprte",
+    "sistema": "sistma"
   }
 ]
