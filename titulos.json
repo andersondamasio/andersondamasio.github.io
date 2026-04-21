@@ -66629,5 +66629,14 @@
     "dataFonte": "2026-04-21T09:00:47.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/best-mini-gaming-pcs/"
+  },
+  {
+    "titulo": "Descomplicando a Criptografia de Arquivos em Android com OpenKeyChain",
+    "noticiaOriginal": "I found the easiest way to encrypt files on an Android phone - and it's free to do",
+    "url": "artigos/seguranca/descomplicando-a-criptografia-de-arquivos-em-android-com-openkeychain.html",
+    "data": "2026-04-21T11:12:20.609Z",
+    "dataFonte": "2026-04-21T11:00:51.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.zdnet.com/article/how-to-easily-encrypt-files-on-android-with-openkeychain/"
   }
 ]

@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "tecnologia": "tecnnologia",
     "sistema": "sistéma",
     "arquitetura": "arquiteturra"
@@ -89,5 +85,10 @@
   {
     "suporte": "suprte",
     "sistema": "sistma"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "acesso": "acesço",
+    "sistema": "sistéma"
   }
 ]
