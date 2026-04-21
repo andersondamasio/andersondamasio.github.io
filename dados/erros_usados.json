@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "sistema": "sistéma",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
   },
@@ -90,5 +85,10 @@
     "dispositivo": "dispositivo.",
     "acesso": "acesço",
     "sistema": "sistéma"
+  },
+  {
+    "componente": "componete",
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolmento"
   }
 ]
