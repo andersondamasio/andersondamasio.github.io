@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "funciona": "funsiona",
-    "arquitetura": "arquitertura"
-  },
-  {
     "resultado": "resultadoo",
     "conhecimento": "conhecimeto"
   },
@@ -92,5 +87,10 @@
     "resultado": "resultadoo",
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "constante": "constate",
+    "acesso": "aceso",
+    "sistema": "sistéma"
   }
 ]
