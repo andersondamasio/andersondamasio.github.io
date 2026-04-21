@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "necessidade": "necissidade",
     "arquitetura": "arquitretura"
   },
@@ -90,5 +86,9 @@
     "componente": "componete",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "problema": "probrema",
+    "tecnologia": "tecnolgia"
   }
 ]
