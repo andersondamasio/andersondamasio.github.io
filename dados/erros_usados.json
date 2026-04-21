@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "arquitetura": "arquitretura"
-  },
-  {
     "armazenamento": "armazanamento",
     "computador": "computadorr",
     "internet": "internat"
@@ -90,5 +86,10 @@
   {
     "problema": "probrema",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desafio": "desafío",
+    "tecnologia": "tecnoligia",
+    "internet": "internat"
   }
 ]
