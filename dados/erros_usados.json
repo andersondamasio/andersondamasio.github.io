@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "exemplo": "exemplo,",
-    "armazenamento": "armazenamentto"
-  },
-  {
     "tecnologia": "tecnolgia",
     "necessidade": "nescessidade"
   },
@@ -92,5 +87,10 @@
   {
     "funcionalidade": "funcionaliadde",
     "arquitetura": "arquitretura"
+  },
+  {
+    "operacional": "operaciona",
+    "sistema": "sistma",
+    "tecnologia": "tecnolgia"
   }
 ]
