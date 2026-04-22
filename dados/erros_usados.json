@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "sistema": "sistma"
-  },
-  {
     "dispositivo": "dispositivo.",
     "acesso": "acesço",
     "sistema": "sistéma"
@@ -92,5 +88,10 @@
   {
     "exemplo": "exemplo.",
     "monitoramento": "monitorameto"
+  },
+  {
+    "exemplo": "exemplo,",
+    "muito": "muinto",
+    "arquitetura": "arquitertura"
   }
 ]
