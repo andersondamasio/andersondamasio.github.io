@@ -1,9 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "controle": "controle."
-  },
-  {
     "constante": "constate",
     "simples": "simlpes",
     "recurso": "recusso"
@@ -93,5 +89,10 @@
     "utilizado": "utilizdo",
     "desenvolvimento": "desenvolvmento",
     "correto": "correto."
+  },
+  {
+    "complexidade": "complexsidade",
+    "arquitetura": "arquiteturra",
+    "tecnologia": "tecnnologia"
   }
 ]
