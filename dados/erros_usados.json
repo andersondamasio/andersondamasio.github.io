@@ -1,10 +1,5 @@
 [
   {
-    "constante": "constate",
-    "simples": "simlpes",
-    "recurso": "recusso"
-  },
-  {
     "constante": "constante.",
     "tecnologia": "tecnnologia",
     "abordagem": "abordagem."
@@ -94,5 +89,10 @@
     "complexidade": "complexsidade",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "controle": "controle.",
+    "sistema": "cistema",
+    "exemplo": "exemplo."
   }
 ]
