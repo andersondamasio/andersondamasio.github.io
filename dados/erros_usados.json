@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componete",
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "problema": "probrema",
     "tecnologia": "tecnolgia"
   },
@@ -93,5 +88,9 @@
     "funciona": "funciona,",
     "recurso": "reccurso",
     "melhor": "melor"
+  },
+  {
+    "automatizado": "automatizdo",
+    "conhecimento": "conhecimeto"
   }
 ]
