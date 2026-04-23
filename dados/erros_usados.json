@@ -1,9 +1,5 @@
 [
   {
-    "rotina": "rotina.",
-    "controle": "contrle"
-  },
-  {
     "necessidade": "necissidade",
     "melhor": "melor",
     "parceria": "parceriaa"
@@ -91,5 +87,10 @@
     "operacional": "operacional.",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "constante": "constate",
+    "estrutura": "estrura",
+    "arquitetura": "arquiteturra"
   }
 ]
