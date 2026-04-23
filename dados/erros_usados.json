@@ -1,9 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desafio": "desafío",
     "tecnologia": "tecnoligia",
     "internet": "internat"
@@ -92,5 +88,9 @@
   {
     "automatizado": "automatizdo",
     "conhecimento": "conhecimeto"
+  },
+  {
+    "carregamento": "carregameno",
+    "muito": "muto"
   }
 ]
