@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "suporte": "suportte",
-    "melhor": "melhorr"
-  },
-  {
     "consistente": "consistente.",
     "desafio": "desaío",
     "sistema": "sistéma"
@@ -97,5 +92,10 @@
     "desafio": "desafiu",
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "componente": "componente.",
+    "processo": "prosseso",
+    "controle": "contrle"
   }
 ]
