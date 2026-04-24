@@ -1,10 +1,5 @@
 [
   {
-    "funciona": "funciona,",
-    "recurso": "reccurso",
-    "melhor": "melor"
-  },
-  {
     "automatizado": "automatizdo",
     "conhecimento": "conhecimeto"
   },
@@ -94,5 +89,10 @@
     "monitoramento": "monitorameto",
     "problema": "probrema",
     "processo": "processso"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "conhecimento": "conhecimento.",
+    "arquitetura": "arquitretura"
   }
 ]
