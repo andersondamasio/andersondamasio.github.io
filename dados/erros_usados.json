@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "simples": "simlpes"
-  },
-  {
     "dispositivo": "dispotivo",
     "suporte": "suportte",
     "melhor": "melhorr"
@@ -96,5 +92,10 @@
     "rotina": "rotna",
     "muito": "muto",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desafio": "desafiu",
+    "dispositivo": "dispositivo.",
+    "tecnologia": "tecnolgia"
   }
 ]
