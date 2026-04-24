@@ -66980,5 +66980,14 @@
     "dataFonte": "2026-04-24T10:00:55.000Z",
     "categoria": "Logística",
     "urlFonte": "https://www.zdnet.com/article/best-inventory-management-software/"
+  },
+  {
+    "titulo": "Yelp e a Revolução do Upgrade Sem Downtime: Lições para Arquitetos de Software",
+    "noticiaOriginal": "Yelp Achieves Zero-Downtime Upgrade of Over 1,000 Cassandra Nodes",
+    "url": "artigos/banco-de-dados/yelp-e-a-revolucao-do-upgrade-sem-downtime-licoes-para-arquitetos-de-software.html",
+    "data": "2026-04-24T12:02:19.835Z",
+    "dataFonte": "2026-04-24T12:00:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/04/yelp-cassandra-upgrade/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
