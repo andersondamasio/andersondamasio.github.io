@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "arquitetura": "arquitretura"
   },
@@ -92,5 +88,10 @@
     "resultado": "resultadoo",
     "arquitetura": "arquitertura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "gerenciamento": "gerenciamnto",
+    "dispositivo": "dispositivo.",
+    "estrutura": "estrura"
   }
 ]
