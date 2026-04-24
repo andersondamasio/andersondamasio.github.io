@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "prioridade": "prioridade.",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "melhor": "melhorr",
     "necessidade": "necissidade",
     "funcionalidade": "funcionaliadde"
@@ -97,5 +92,10 @@
     "utilizado": "utilizdo",
     "parceria": "parceriaa",
     "categoria": "categria"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "conhecimento": "conhecimento.",
+    "constante": "constante."
   }
 ]
