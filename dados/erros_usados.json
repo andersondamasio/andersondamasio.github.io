@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "geralmente": "geralmete",
-    "funciona": "funsiona"
-  },
-  {
     "abordagem": "abordage",
     "arquitetura": "arquitertura",
     "necessidade": "necessidade."
@@ -96,5 +91,10 @@
   {
     "suporte": "suprte",
     "exemplo": "exenplo"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitretura"
   }
 ]
