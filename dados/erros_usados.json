@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desafiu",
-    "dispositivo": "dispositivo.",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "componente": "componente.",
     "processo": "prosseso",
     "controle": "contrle"
@@ -92,5 +87,9 @@
   {
     "prioridade": "prioriade.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "automatizado": "automatisado",
+    "melhor": "melhorr"
   }
 ]
