@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "operacional": "operacional.",
     "necessidade": "nescessidade"
@@ -93,5 +89,10 @@
     "armazenamento": "armazenamentto",
     "exemplo": "exemplo,",
     "muito": "muinto"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitertura",
+    "componente": "componete"
   }
 ]
