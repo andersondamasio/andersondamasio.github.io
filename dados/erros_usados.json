@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotna",
-    "muito": "muto",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desafio": "desafiu",
     "dispositivo": "dispositivo.",
     "tecnologia": "tecnolgia"
@@ -93,5 +88,9 @@
     "muito": "muiito",
     "desafio": "desaío",
     "rotina": "rotína"
+  },
+  {
+    "prioridade": "prioriade.",
+    "tecnologia": "tecnoligia"
   }
 ]
