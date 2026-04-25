@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvmento",
-    "operacional": "operacional.",
-    "necessidade": "nescessidade"
-  },
-  {
     "monitoramento": "monitorameto",
     "problema": "probrema",
     "processo": "processso"
@@ -94,5 +89,10 @@
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura",
     "componente": "componete"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolmento",
+    "monitoramento": "monitorameto"
   }
 ]
