@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazenamentto",
-    "exemplo": "exemplo,",
-    "muito": "muinto"
-  },
-  {
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura",
     "componente": "componete"
@@ -91,5 +86,10 @@
     "resultado": "resutlado",
     "muito": "muiito",
     "exemplo": "exemplo,"
+  },
+  {
+    "operacional": "operaciona",
+    "conectado": "conectado.",
+    "funcionalidade": "funcionaliadde"
   }
 ]
