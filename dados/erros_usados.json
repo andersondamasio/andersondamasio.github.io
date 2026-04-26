@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "arquitetura": "arquitertura"
-  },
-  {
     "personalizado": "personalizad",
     "operacional": "operacionl",
     "funcionalidade": "funcionaliade"
@@ -91,5 +87,9 @@
     "sistema": "cistema",
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "acesso": "acesso.",
+    "dispositivo": "disposotivo"
   }
 ]
