@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "desenvolvimento": "desenvolvmento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "acesso": "acesso.",
     "dispositivo": "disposotivo"
   },
@@ -95,5 +90,10 @@
     "arquitetura": "arquitertura",
     "sistema": "cistema",
     "muito": "muiito"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "exemplo": "exemplo,",
+    "simples": "cimples"
   }
 ]
