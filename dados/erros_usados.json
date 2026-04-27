@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "dispositivo": "dispositivo.",
-    "controle": "controlle"
-  },
-  {
     "abordagem": "abordage",
     "desenvolvimento": "desenvolvimente"
   },
@@ -93,5 +88,10 @@
     "rotina": "rotina.",
     "dispositivo": "dispositivo.",
     "conectado": "conectado."
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "necessidade": "necessidade.",
+    "tecnologia": "tecnoligia"
   }
 ]
