@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "arquitetura": "arquitertura",
-    "processo": "prosseso"
-  },
-  {
     "utilizado": "utilizdo.",
     "problema": "problema.",
     "arquitetura": "arquitretura"
@@ -95,5 +90,10 @@
     "simples": "cimples",
     "arquitetura": "arquitretura",
     "processo": "proceso"
+  },
+  {
+    "processo": "prosseso",
+    "exemplo": "exenplo",
+    "sistema": "sistéma"
   }
 ]
