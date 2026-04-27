@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade.",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "automatizado": "automatisado",
     "melhor": "melhorr"
   },
@@ -91,5 +87,10 @@
     "complexidade": "complexsidade",
     "gerenciamento": "gerenciamnto",
     "sistema": "cistema"
+  },
+  {
+    "desafio": "desafío",
+    "exemplo": "exemplo.",
+    "constante": "constanate"
   }
 ]
