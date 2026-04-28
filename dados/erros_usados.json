@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "dispositivo": "dispositivo.",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "categoria": "categria",
     "arquitetura": "arquitretura",
     "necessidade": "nescessidade"
@@ -95,5 +90,9 @@
     "suporte": "suportte",
     "resultado": "resutlado",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "prioridade": "prioriade.",
+    "tecnologia": "tecnoligia"
   }
 ]
