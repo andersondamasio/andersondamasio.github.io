@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operaciona",
-    "conectado": "conectado.",
-    "funcionalidade": "funcionaliadde"
-  },
-  {
     "sistema": "cistema",
     "dispositivo": "dispositivo.",
     "desenvolvimento": "desenvolvmento"
@@ -95,5 +90,10 @@
   {
     "conhecimento": "conhecimeto",
     "sistema": "sistéma"
+  },
+  {
+    "suporte": "suportte",
+    "resultado": "resutlado",
+    "tecnologia": "tecnolgia"
   }
 ]
