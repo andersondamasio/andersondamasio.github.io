@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "resultado": "resutlado",
     "muito": "muiito",
     "exemplo": "exemplo,"
@@ -96,5 +91,10 @@
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo,",
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "desafio": "desaío",
+    "controle": "controlle"
   }
 ]
