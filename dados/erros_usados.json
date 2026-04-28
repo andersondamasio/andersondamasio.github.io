@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "propriadade",
-    "geralmente": "geralmete"
-  },
-  {
     "necessidade": "necissidade",
     "desenvolvimento": "desenvolmento",
     "tecnologia": "tecnolgia"
@@ -95,5 +91,10 @@
   {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exemplo,",
+    "arquitetura": "arquitretura"
   }
 ]
