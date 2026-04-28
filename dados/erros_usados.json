@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "dispositivo": "disposotivo"
-  },
-  {
     "propriedade": "propriadade",
     "geralmente": "geralmete"
   },
@@ -95,5 +91,9 @@
     "desenvolvimento": "desenvolmento",
     "exemplo": "exemplo,",
     "simples": "cimples"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
