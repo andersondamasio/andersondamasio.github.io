@@ -1,10 +1,5 @@
 [
   {
-    "categoria": "categria",
-    "arquitetura": "arquitretura",
-    "necessidade": "nescessidade"
-  },
-  {
     "tecnologia": "tecnoligia",
     "abordagem": "abordagem.",
     "arquitetura": "arquitertura"
@@ -94,5 +89,10 @@
   {
     "prioridade": "prioriade.",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "parceria": "parcería",
+    "desenvolvimento": "desenvolmento",
+    "tecnologia": "tecnolgia"
   }
 ]
