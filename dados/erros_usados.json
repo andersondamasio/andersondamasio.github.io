@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complexsidade",
-    "gerenciamento": "gerenciamnto",
-    "sistema": "cistema"
-  },
-  {
     "desafio": "desafío",
     "exemplo": "exemplo.",
     "constante": "constanate"
@@ -95,5 +90,10 @@
     "abordagem": "abordage",
     "tecnologia": "tecnoligia",
     "sistema": "sistéma"
+  },
+  {
+    "problema": "poblema",
+    "processo": "proceso",
+    "sistema": "cistema"
   }
 ]
