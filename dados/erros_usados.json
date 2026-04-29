@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitoramento.",
-    "sistema": "cistema",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "simples": "cimples",
     "arquitetura": "arquitretura",
     "processo": "proceso"
@@ -93,5 +88,10 @@
     "internet": "internete",
     "virtual": "virtal",
     "mensagem": "menssagen"
+  },
+  {
+    "carregamento": "carregamento.",
+    "constante": "constanate",
+    "dispositivo": "disposotivo"
   }
 ]
