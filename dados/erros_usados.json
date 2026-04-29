@@ -1,10 +1,5 @@
 [
   {
-    "simples": "cimples",
-    "arquitetura": "arquitretura",
-    "processo": "proceso"
-  },
-  {
     "processo": "prosseso",
     "exemplo": "exenplo",
     "sistema": "sistéma"
@@ -93,5 +88,8 @@
     "carregamento": "carregamento.",
     "constante": "constanate",
     "dispositivo": "disposotivo"
+  },
+  {
+    "monitoramento": "monitorameto"
   }
 ]
