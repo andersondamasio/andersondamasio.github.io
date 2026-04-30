@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "acesso": "aceso",
     "sistema": "cistema",
     "desenvolvimento": "desenvolvmento"
@@ -90,5 +85,10 @@
     "sistema": "sistma",
     "controle": "controlle",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "processo": "processso",
+    "sistema": "sistéma"
   }
 ]
