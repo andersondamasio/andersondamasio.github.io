@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "resultado": "resutlado",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "prioridade": "prioriade.",
     "tecnologia": "tecnoligia"
   },
@@ -90,5 +85,9 @@
     "acesso": "acesso.",
     "sistema": "sistma",
     "abordagem": "abordajem"
+  },
+  {
+    "funciona": "funciona,",
+    "funcionalidade": "funcionaliade"
   }
 ]
