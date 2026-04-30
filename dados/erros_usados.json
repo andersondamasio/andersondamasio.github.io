@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "sistema": "sistéma"
-  },
-  {
     "suporte": "suportte",
     "resultado": "resutlado",
     "tecnologia": "tecnolgia"
@@ -89,5 +85,10 @@
   {
     "componente": "componentte",
     "suporte": "suprte"
+  },
+  {
+    "acesso": "acesso.",
+    "sistema": "sistma",
+    "abordagem": "abordajem"
   }
 ]
