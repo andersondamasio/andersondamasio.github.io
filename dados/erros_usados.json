@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "estrutura": "estrututra"
-  },
-  {
     "internet": "internete",
     "virtual": "virtal",
     "mensagem": "menssagen"
@@ -88,5 +84,10 @@
   {
     "armazenamento": "armazanamento",
     "exemplo": "exemplo,"
+  },
+  {
+    "parceria": "parcería",
+    "tecnologia": "tecnoligia",
+    "arquitetura": "arquitertura"
   }
 ]
