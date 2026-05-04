@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internete",
-    "virtual": "virtal",
-    "mensagem": "menssagen"
-  },
-  {
     "carregamento": "carregamento.",
     "constante": "constanate",
     "dispositivo": "disposotivo"
@@ -89,5 +84,9 @@
     "parceria": "parcería",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "sistema": "cistema"
   }
 ]
