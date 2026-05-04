@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordage",
-    "tecnologia": "tecnoligia",
-    "sistema": "sistéma"
-  },
-  {
     "problema": "poblema",
     "processo": "proceso",
     "sistema": "cistema"
@@ -90,5 +85,10 @@
     "geralmente": "geralment",
     "muito": "muto",
     "abordagem": "abordajem"
+  },
+  {
+    "conhecimento": "conhescimento",
+    "melhor": "melor",
+    "tecnologia": "tecnolgia"
   }
 ]
