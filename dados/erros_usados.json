@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "sistema": "sistma",
-    "abordagem": "abordajem"
-  },
-  {
     "funciona": "funciona,",
     "funcionalidade": "funcionaliade"
   },
@@ -90,5 +85,9 @@
   {
     "recurso": "reccurso",
     "melhor": "melor"
+  },
+  {
+    "problema": "problema.",
+    "constante": "constante."
   }
 ]
