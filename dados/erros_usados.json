@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "gerenciamento": "gerenciamnto",
-    "problema": "poblema"
-  },
-  {
     "arquitetura": "arquitretura"
   },
   {
@@ -90,5 +85,10 @@
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "complexidade": "complexsidade",
+    "operacional": "operacionl",
+    "arquitetura": "arquitertura"
   }
 ]

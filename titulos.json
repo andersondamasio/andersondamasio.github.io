@@ -67790,5 +67790,14 @@
     "dataFonte": "2026-05-05T03:31:54.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://techcrunch.com/2026/05/04/as-workers-worry-about-ai-nvidias-jensen-huang-says-ai-is-creating-an-enormous-number-of-jobs/"
+  },
+  {
+    "titulo": "A revolução do proxy: como a Figma transformou sua arquitetura de caching",
+    "noticiaOriginal": "Figma Builds In-House Redis Proxy to Hit Six Nines Uptime",
+    "url": "artigos/banco-de-dados/a-revolucao-do-proxy-como-a-figma-transformou-sua-arquitetura-de-caching.html",
+    "data": "2026-05-05T08:14:38.450Z",
+    "dataFonte": "2026-05-05T07:00:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/05/figma-redis-figcache/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   }
 ]
