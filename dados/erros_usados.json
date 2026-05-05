@@ -1,8 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto"
-  },
-  {
     "arquitetura": "arquitertura",
     "gerenciamento": "gerenciamnto",
     "problema": "poblema"
@@ -88,5 +85,10 @@
     "sistema": "sistéma",
     "simples": "simlpes",
     "necessidade": "necissidade"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnnologia",
+    "arquitetura": "arquiteturra"
   }
 ]
