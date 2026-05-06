@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "acesso": "aceso",
     "abordagem": "abordage"
   },
@@ -87,5 +83,9 @@
   {
     "abordagem": "abordajem",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "acesso": "acesso.",
+    "tecnologia": "tecnoligia"
   }
 ]
