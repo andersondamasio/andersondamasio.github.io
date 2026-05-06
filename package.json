@@ -4,7 +4,12 @@
   "description": "Perfil e Artigos",
   "main": "gerar-conteudo.js",
   "scripts": {
-    "start": "node gerar-conteudo.js"
+    "start": "node gerar-conteudo.js",
+    "seo:rebuild": "node gerar-conteudo.js --rebuild-seo",
+    "seo:backfill": "node scripts/seo-backfill-articles.js",
+    "seo:backfill:static": "node scripts/seo-backfill-static.js",
+    "seo:audit": "node scripts/seo-audit.js",
+    "seo:audit:strict": "node scripts/seo-audit.js --strict"
   },
   "dependencies": {
     "axios": "^1.9.0",

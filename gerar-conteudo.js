@@ -11,7 +11,6 @@ marked.setOptions({
 });
 
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
-const { buscarImagemCapa } = require('./scripts/buscarImagemCapa_unsplash');
 const { extrairResumoDaNoticia, extrairResumoDaNoticiaReadability } = require('./scripts/extrairResumoDaNoticia');
 const { errorsMaps } = require('./dados/selecionar-errorsMaps');
 const errosUsadosPath = './dados/erros_usados.json';
@@ -300,10 +299,44 @@ function gerarPaginasPorCategoria(titulos) {
 </div>`
         : '';
 
-      const html = `<head>
+      const pagePath = `artigos/${slugCat}${i === 0 ? '' : (i + 1)}.html`;
+      const pageTitle = i === 0
+        ? `Categoria: ${categoria} | ${siteName}`
+        : `Categoria: ${categoria} - Página ${i + 1} | ${siteName}`;
+      const pageDescription = i === 0
+        ? `Artigos sobre ${categoria} escritos por Anderson Damasio, com análises sobre arquitetura de software, tecnologia e desenvolvimento.`
+        : `Página ${i + 1} dos artigos sobre ${categoria} escritos por Anderson Damasio.`;
+      const categoryUrl = absoluteUrl(pagePath);
+
+      const html = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
   <meta charset="UTF-8">
-  <title>Categoria: ${categoria}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  ${gerarSeoHead({
+    title: pageTitle,
+    description: pageDescription,
+    canonicalPath: pagePath,
+    structuredData: [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": pageTitle,
+        "description": pageDescription,
+        "url": categoryUrl,
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": siteName,
+          "url": siteUrl
+        }
+      },
+      criarBreadcrumbJsonLd([
+        { name: "Início", url: "/" },
+        { name: "Artigos", url: "artigos/index.html" },
+        { name: categoria, url: pagePath }
+      ])
+    ]
+  })}
   <style>
     :root {
       --bg: #f0f2f5;
@@ -397,6 +430,7 @@ function gerarPaginasPorCategoria(titulos) {
 <script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
 
 </body>
+</html>
 `;
 
       const filename = `artigos/${slugCat}${i === 0 ? '' : (i + 1)}.html`;
@@ -426,12 +460,38 @@ function gerarIndiceCategorias(agrupados) {
     return `<li><a href="${slug}.html">${categoria}</a> (${artigos.length})</li>`;
   }).join("\n");
 
+  const pagePath = "artigos/index.html";
+  const pageTitle = `Artigos por categoria | ${siteName}`;
+  const pageDescription = "Índice de categorias dos artigos de Anderson Damasio sobre arquitetura de software, tecnologia, desenvolvimento e carreira.";
+
   const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Artigos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  ${gerarSeoHead({
+    title: pageTitle,
+    description: pageDescription,
+    canonicalPath: pagePath,
+    structuredData: [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": pageTitle,
+        "description": pageDescription,
+        "url": absoluteUrl(pagePath),
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": siteName,
+          "url": siteUrl
+        }
+      },
+      criarBreadcrumbJsonLd([
+        { name: "Início", url: "/" },
+        { name: "Artigos", url: pagePath }
+      ])
+    ]
+  })}
  <style>
   :root {
     --bg: #f0f2f5;
@@ -503,9 +563,158 @@ ${gerarFooterNavegacao("..")}
 
 
 const siteUrl = "https://www.andersondamasio.com.br";
+const siteName = "Anderson Damasio";
+const authorName = "Anderson Damasio";
+const defaultSeoImage = `${siteUrl}/images/capa_anderson-damasio.png`;
 const apiKey = process.env.OPENAI_API_KEY;
 const twitterBearer = process.env.TWITTER_BEARER_TOKEN;
 const artigosPorPagina = 10;
+
+function escapeAttribute(value) {
+  return String(value || "")
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+function escapeXml(value) {
+  return String(value || "")
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+function normalizarUrlLocal(url) {
+  if (!url) return "/";
+  let caminho = String(url).trim().replace(/\\/g, "/");
+
+  if (/^https?:\/\//i.test(caminho)) {
+    try {
+      caminho = new URL(caminho).pathname;
+    } catch {
+      return null;
+    }
+  }
+
+  caminho = caminho.replace(/^\/+/, "");
+  if (!caminho || caminho === "index.html") return "/";
+  return caminho;
+}
+
+function absoluteUrl(url) {
+  if (!url) return `${siteUrl}/`;
+  if (/^https?:\/\//i.test(url)) return url;
+
+  const local = normalizarUrlLocal(url);
+  if (!local || local === "/") return `${siteUrl}/`;
+  return `${siteUrl}/${local}`;
+}
+
+function urlLocalParaArquivo(url) {
+  const local = normalizarUrlLocal(url);
+  if (!local || local === "/") return "index.html";
+  return local;
+}
+
+function limparTextoSeo(texto) {
+  return String(texto || "")
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/<pre[\s\S]*?<\/pre>/gi, " ")
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/^[-*#>\s]+/gm, " ")
+    .replace(/\b(t[ií]tulo|resumo|introdu[cç][aã]o)\s*:/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function limitarTextoSeo(texto, max = 160) {
+  const limpo = String(texto || "").replace(/\s+/g, " ").trim();
+  if (limpo.length <= max) return limpo;
+
+  const corte = limpo.slice(0, max - 3);
+  const ultimoEspaco = corte.lastIndexOf(" ");
+  return `${corte.slice(0, ultimoEspaco > 90 ? ultimoEspaco : corte.length).trim()}...`;
+}
+
+function gerarDescricaoSeo(texto, tituloFallback = "") {
+  const textoLimpo = limparTextoSeo(texto);
+  const descricaoInvalida =
+    !textoLimpo ||
+    textoLimpo.length < 70 ||
+    /^[-–—]+$/.test(textoLimpo) ||
+    /^introdu[cç][aã]o:?$/i.test(textoLimpo);
+
+  const descricao = descricaoInvalida
+    ? `Artigo de Anderson Damasio sobre ${limparTextoSeo(tituloFallback)}, com reflexões práticas para arquitetura de software, tecnologia e desenvolvimento.`
+    : textoLimpo;
+
+  return limitarTextoSeo(descricao, 160);
+}
+
+function jsonLdScript(data) {
+  return `<script type="application/ld+json">\n${JSON.stringify(data, null, 2).replace(/<\/script/gi, '<\\/script')}\n</script>`;
+}
+
+function criarBreadcrumbJsonLd(items) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": items.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.name,
+      "item": absoluteUrl(item.url)
+    }))
+  };
+}
+
+function gerarSeoHead({
+  title,
+  description,
+  canonicalPath,
+  type = "website",
+  image = defaultSeoImage,
+  robots = "index, follow",
+  publishedTime = null,
+  modifiedTime = null,
+  structuredData = []
+}) {
+  const canonicalUrl = absoluteUrl(canonicalPath);
+  const imageUrl = absoluteUrl(image);
+  const descricao = gerarDescricaoSeo(description, title);
+  const titulo = limitarTextoSeo(title, 70);
+  const dados = Array.isArray(structuredData) ? structuredData : [structuredData];
+
+  return `<title>${escapeHTML(titulo)}</title>
+<meta name="description" content="${escapeAttribute(descricao)}">
+<meta name="author" content="${escapeAttribute(authorName)}">
+<meta name="robots" content="${escapeAttribute(robots)}">
+<link rel="canonical" href="${escapeAttribute(canonicalUrl)}">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="${escapeAttribute(siteName)}">
+<meta property="og:type" content="${escapeAttribute(type)}">
+<meta property="og:title" content="${escapeAttribute(titulo)}">
+<meta property="og:description" content="${escapeAttribute(descricao)}">
+<meta property="og:url" content="${escapeAttribute(canonicalUrl)}">
+<meta property="og:image" content="${escapeAttribute(imageUrl)}">
+${publishedTime ? `<meta property="article:published_time" content="${escapeAttribute(publishedTime)}">` : ""}
+${modifiedTime ? `<meta property="${type === "article" ? "article:modified_time" : "og:updated_time"}" content="${escapeAttribute(modifiedTime)}">` : ""}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@andersondamasio">
+<meta name="twitter:title" content="${escapeAttribute(titulo)}">
+<meta name="twitter:description" content="${escapeAttribute(descricao)}">
+<meta name="twitter:image" content="${escapeAttribute(imageUrl)}">
+${dados.filter(Boolean).map(jsonLdScript).join("\n")}`;
+}
 
 const hackerNewsUrl = "https://hacker-news.firebaseio.com/v0/topstories.json";
 const devBlogsFeeds = [
@@ -519,6 +728,15 @@ const devBlogsFeeds = [
   "https://techcrunch.com/feed/",
   "https://www.zdnet.com/topic/artificial-intelligence/rss.xml"
 ];
+
+function arquivoIndexavel(arquivo) {
+  try {
+    const stats = fs.statSync(arquivo);
+    return stats.isFile() && stats.size > 100;
+  } catch {
+    return false;
+  }
+}
 
 async function verificarTweetOriginalViaApi(tweetUrl) {
   const match = tweetUrl.match(/status\/(\d+)/);
@@ -934,18 +1152,19 @@ const categoriaSlug = slugify(categoria);
 const pastaCategoria = `artigos/${categoriaSlug}`;
 if (!fs.existsSync(pastaCategoria)) fs.mkdirSync(pastaCategoria, { recursive: true });
 const filename = `${pastaCategoria}/${slug}.html`;
+const urlLocal = `artigos/${categoriaSlug}/${slug}.html`;
 
-    let resumo = corpoArtigo.split("\n").slice(0, 2).join(" ").substring(0, 160).replace(/\s+/g, ' ').trim();
     const matchResumo = corpoArtigo.match(/Resumo:\s*(.+)/i);
+    let resumo = gerarDescricaoSeo(matchResumo ? matchResumo[1] : corpoArtigo, titulo);
     if (matchResumo) {
-        resumo = matchResumo[1].substring(0, 160).trim();
         corpoArtigo = corpoArtigo.replace(/Resumo:\s*.+/i, '').trim(); // remove do corpo
        }
 
     const dataHoraFormatada = formatDateTime(now);
     const dataISO = new Date(now).toISOString();
     const imagemCapaUrl = null;//await buscarImagemCapa(titulo, slug);
-    const escapeJson = str => (str || "").replace(/"/g, '\\"');
+    const articleUrl = absoluteUrl(urlLocal);
+    const articleImage = imagemCapaUrl || defaultSeoImage;
 
     
 
@@ -954,81 +1173,53 @@ const html = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>${escapeHTML(titulo)} – Artigo Técnico por Anderson Damasio</title>
-<meta name="description" content="${escapeHTML(resumo)}">
-<link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
-
-<!-- Open Graph -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="${escapeHTML(titulo)}">
-<meta property="og:description" content="${escapeHTML(resumo)}">
-<meta property="og:url" content="https://www.andersondamasio.com.br/${categoriaSlug}/${slug}.html">
-<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${escapeHTML(titulo)}">
-<meta name="twitter:description" content="${escapeHTML(resumo)}">
-<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
-
-
-
-<!-- Schema.org -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "${escapeJson(titulo)}",
-  "description": "${escapeJson(resumo)}",
-  "datePublished": "${dataISO}",
-  "author": {
-    "@type": "Person",
-    "name": "Anderson Damasio"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Anderson Damasio",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.andersondamasio.com.br/favicon.ico"
-    }
-  }
-}
-</script>
-
-<!-- Schema.org: BreadcrumbList -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+${gerarSeoHead({
+  title: `${titulo} | ${siteName}`,
+  description: resumo,
+  canonicalPath: urlLocal,
+  type: "article",
+  image: articleImage,
+  publishedTime: dataISO,
+  modifiedTime: dataISO,
+  structuredData: [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Início",
-      "item": "https://www.andersondamasio.com.br/"
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": titulo,
+      "description": resumo,
+      "image": [absoluteUrl(articleImage)],
+      "url": articleUrl,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": articleUrl
+      },
+      "datePublished": dataISO,
+      "dateModified": dataISO,
+      "articleSection": categoria,
+      "inLanguage": "pt-BR",
+      "author": {
+        "@type": "Person",
+        "name": authorName,
+        "url": siteUrl
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": siteName,
+        "logo": {
+          "@type": "ImageObject",
+          "url": defaultSeoImage
+        }
+      }
     },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Artigos",
-      "item": "https://www.andersondamasio.com.br/artigos/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "${categoria}",
-      "item": "https://www.andersondamasio.com.br/artigos/${categoriaSlug}"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "${escapeJson(titulo)}",
-      "item": "https://www.andersondamasio.com.br/${categoriaSlug}/${slug}.html"
-    }
+    criarBreadcrumbJsonLd([
+      { name: "Início", url: "/" },
+      { name: "Artigos", url: "artigos/index.html" },
+      { name: categoria, url: `artigos/${categoriaSlug}.html` },
+      { name: titulo, url: urlLocal }
+    ])
   ]
-}
-</script>
+})}
+<link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
 
 
  ${gerarGoogleAnalyticsTag()}
@@ -1197,8 +1388,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
    
 // Verifica se o título já existe no titulosGerados
-const urlLocal = `artigos/${categoriaSlug}/${slug}.html`;
-
 const existe = titulosGerados.some(t => normalizarTexto(t.titulo) === normalizarTexto(titulo));
 if (!existe) {
   titulosGerados.push({
@@ -1216,8 +1405,8 @@ if (!existe) {
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
     gerarIndicesPaginados(titulosGerados);
+    gerarPaginasPorCategoria(titulosGerados);
     gerarSitemap(titulosGerados);
-gerarPaginasPorCategoria(titulosGerados);
 
    // Registrar introdução usada
     const usadasPath = './dados/usadas.json';
@@ -1263,35 +1452,57 @@ function gerarIndicesPaginados(titulos) {
 ` : '';
 
  const updated_time = new Date().toISOString();
+    const pagePath = i === 0 ? "/" : `index${i + 1}.html`;
+    const pageTitle = i === 0
+      ? `${siteName} - Arquiteto de Software e Desenvolvedor`
+      : `Artigos de ${siteName} - Página ${i + 1}`;
+    const pageDescription = i === 0
+      ? "Anderson Damasio, arquiteto de software com mais de 19 anos de experiência em soluções modernas, escaláveis e artigos técnicos."
+      : `Página ${i + 1} da lista de artigos técnicos de Anderson Damasio sobre arquitetura de software, tecnologia e desenvolvimento.`;
     
 const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Anderson Damasio – Arquiteto de Software e Desenvolvedor</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
-<meta name="description" content="Anderson Damasio – Arquiteto de Software com mais de 19 anos de experiência em soluções modernas e escaláveis.">
-<meta name="keywords" content="Anderson Damasio, arquiteto de software, artigos de tecnologia, desenvolvimento, sistemas escaláveis">
-<meta name="author" content="Anderson Damasio">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.andersondamasio.com.br/">
-
-<!-- Open Graph (Facebook, LinkedIn, etc.) -->
-<meta property="og:title" content="Anderson Damasio – Arquiteto de Software">
-<meta property="og:description" content="Artigos técnicos e insights sobre desenvolvimento de software moderno, arquitetura escalável e boas práticas.">
-<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
-<meta property="og:url" content="https://www.andersondamasio.com.br/">
-<meta property="og:type" content="website">
-<meta property="og:updated_time" content="${updated_time}" />
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@andersondamasio">
-<meta name="twitter:title" content="Anderson Damasio – Arquiteto de Software">
-<meta name="twitter:description" content="Mais de 19 anos de experiência em desenvolvimento de sistemas, arquitetura moderna e artigos técnicos.">
-<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
+${gerarSeoHead({
+  title: pageTitle,
+  description: pageDescription,
+  canonicalPath: pagePath,
+  modifiedTime: updated_time,
+  structuredData: [
+    {
+      "@context": "https://schema.org",
+      "@type": i === 0 ? "ProfilePage" : "CollectionPage",
+      "name": pageTitle,
+      "description": pageDescription,
+      "url": absoluteUrl(pagePath),
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": siteName,
+        "url": siteUrl
+      },
+      "about": {
+        "@type": "Person",
+        "name": authorName,
+        "url": siteUrl,
+        "jobTitle": "Arquiteto de Software",
+        "sameAs": [
+          "https://www.linkedin.com/in/andersondamasio/"
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": siteName,
+      "url": siteUrl,
+      "inLanguage": "pt-BR"
+    }
+  ]
+})}
 
  ${gerarGoogleAnalyticsTag()}
 
@@ -1302,16 +1513,6 @@ const html = `<!DOCTYPE html>
 <script>
   window.ezstandalone = window.ezstandalone || {};
   ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
-
-<!-- Schema.org -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Anderson Damasio",
-  "url": "https://www.andersondamasio.com.br"
-}
 </script>
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -1508,14 +1709,73 @@ ${paginacao}
 }
 
 function gerarSitemap(titulos) {
-  const sitemapLinks = [
-    `<url><loc>${siteUrl}/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
-    ...titulos.map(t => {
-      const slug = slugify(t.titulo);
-      const urlFinal = t.url || `artigos/${slug}.html`;
-      return `<url><loc>${siteUrl}/${urlFinal}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
-    })
-  ].join("\n");
+  const entradas = new Map();
+
+  const adicionar = (url, data = null, exigirArquivo = true) => {
+    const local = normalizarUrlLocal(url);
+    if (!local) return;
+
+    const arquivo = urlLocalParaArquivo(local);
+    if (exigirArquivo && !arquivoIndexavel(arquivo)) return;
+
+    const loc = absoluteUrl(local);
+    const dataValida = data ? new Date(data) : null;
+    const lastmod = dataValida && !Number.isNaN(dataValida.getTime())
+      ? dataValida.toISOString()
+      : null;
+
+    const atual = entradas.get(loc);
+    if (!atual || (lastmod && (!atual.lastmod || lastmod > atual.lastmod))) {
+      entradas.set(loc, { loc, lastmod });
+    }
+  };
+
+  const datasValidas = titulos
+    .map(t => t.data ? new Date(t.data) : null)
+    .filter(d => d && !Number.isNaN(d.getTime()));
+  const ultimaData = datasValidas.length
+    ? new Date(Math.max(...datasValidas.map(d => d.getTime()))).toISOString()
+    : null;
+
+  adicionar("/", ultimaData, false);
+  ["artigos/index.html", "sobre.html", "contato.html", "termos.html", "politica.html"].forEach(url => {
+    adicionar(url, ultimaData);
+  });
+
+  const agrupados = {};
+  titulos.forEach(t => {
+    const urlFinal = t.url || `artigos/${slugify(t.titulo)}.html`;
+    adicionar(urlFinal, t.data);
+
+    const categoria = t.categoria || "Outros";
+    if (!agrupados[categoria]) agrupados[categoria] = [];
+    agrupados[categoria].push(t);
+  });
+
+  Object.entries(agrupados).forEach(([categoria, artigos]) => {
+    const slugCat = slugify(categoria);
+    const paginas = Math.ceil(artigos.length / artigosPorPagina);
+
+    for (let i = 0; i < paginas; i++) {
+      const artigosPagina = artigos.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
+      const dataMaisRecente = artigosPagina
+        .map(t => t.data ? new Date(t.data) : null)
+        .filter(d => d && !Number.isNaN(d.getTime()))
+        .sort((a, b) => b - a)[0];
+
+      adicionar(`artigos/${slugCat}${i === 0 ? "" : (i + 1)}.html`, dataMaisRecente);
+    }
+  });
+
+  const sitemapLinks = [...entradas.values()]
+    .sort((a, b) => a.loc.localeCompare(b.loc))
+    .map(({ loc, lastmod }) => [
+      "<url>",
+      `<loc>${escapeXml(loc)}</loc>`,
+      lastmod ? `<lastmod>${escapeXml(lastmod)}</lastmod>` : "",
+      "</url>"
+    ].filter(Boolean).join(""))
+    .join("\n");
 
   const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -1525,5 +1785,28 @@ ${sitemapLinks}
   fs.writeFileSync("sitemap.xml", sitemapContent);
 }
 
+function carregarTitulosGerados() {
+  const titulosPath = "titulos.json";
+  if (!fs.existsSync(titulosPath)) return [];
 
-gerar();
+  try {
+    const titulos = JSON.parse(fs.readFileSync(titulosPath, "utf-8"));
+    return Array.isArray(titulos) ? titulos : [];
+  } catch {
+    return [];
+  }
+}
+
+function reconstruirPaginasSeo() {
+  const titulosGerados = carregarTitulosGerados();
+  gerarIndicesPaginados(titulosGerados);
+  gerarPaginasPorCategoria(titulosGerados);
+  gerarSitemap(titulosGerados);
+  console.log(`SEO reconstruído para ${titulosGerados.length} artigos cadastrados.`);
+}
+
+if (process.argv.includes("--rebuild-seo")) {
+  reconstruirPaginasSeo();
+} else {
+  gerar();
+}
