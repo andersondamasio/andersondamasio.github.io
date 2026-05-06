@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "sistema": "cistema"
-  },
-  {
     "sistema": "sistéma",
     "simples": "simlpes",
     "necessidade": "necissidade"
@@ -88,5 +84,10 @@
     "operacional": "operacional.",
     "desafio": "desaío",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnolgia",
+    "processo": "prosseso"
   }
 ]
