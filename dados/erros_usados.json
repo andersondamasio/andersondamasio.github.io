@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "tecnologia": "tecnoligia",
-    "arquitetura": "arquitertura"
-  },
-  {
     "monitoramento": "monitorameto",
     "sistema": "cistema"
   },
@@ -88,5 +83,10 @@
   {
     "controle": "controlle",
     "necessidade": "necessidade."
+  },
+  {
+    "operacional": "operacional.",
+    "desafio": "desaío",
+    "tecnologia": "tecnnologia"
   }
 ]
