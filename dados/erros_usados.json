@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "exemplo": "exemplo,"
-  },
-  {
     "parceria": "parcería",
     "tecnologia": "tecnoligia",
     "arquitetura": "arquitertura"
@@ -88,5 +84,9 @@
     "processo": "proceso",
     "prioridade": "prioriade.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "controle": "controlle",
+    "necessidade": "necessidade."
   }
 ]
