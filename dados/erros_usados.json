@@ -1,10 +1,5 @@
 [
   {
-    "automatizado": "automatizdo",
-    "desenvolvimento": "desenvolvmento",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "dispositivo": "dispotivo",
     "armazenamento": "armazenamentto",
     "muito": "muto"
@@ -89,5 +84,9 @@
   {
     "rotina": "rotína",
     "monitoramento": "monitramento"
+  },
+  {
+    "sistema": "sistma",
+    "arquitetura": "arquitretura"
   }
 ]
