@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistéma",
-    "simples": "simlpes",
-    "necessidade": "necissidade"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquiteturra"
@@ -89,5 +84,9 @@
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia",
     "processo": "prosseso"
+  },
+  {
+    "carregamento": "carregamneto",
+    "dispositivo": "disposotivo"
   }
 ]
