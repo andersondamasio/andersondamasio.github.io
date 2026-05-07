@@ -1,9 +1,5 @@
 [
   {
-    "recurso": "reccurso",
-    "melhor": "melor"
-  },
-  {
     "problema": "problema.",
     "constante": "constante."
   },
@@ -88,5 +84,9 @@
     "conhecimento": "conhescimento",
     "desenvolvimento": "desenvolvimente",
     "monitoramento": "monitoramento."
+  },
+  {
+    "suporte": "suprte",
+    "arquitetura": "arquitretura"
   }
 ]
