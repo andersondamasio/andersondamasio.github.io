@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "funciona": "funciona,",
     "muito": "muinto",
     "simples": "simlpes"
@@ -89,5 +85,10 @@
     "complexidade": "complezidade",
     "arquitetura": "arquitertura",
     "necessidade": "necessidade."
+  },
+  {
+    "armazenamento": "armasenamento",
+    "conhecimento": "conhescimento",
+    "processo": "proceso"
   }
 ]
