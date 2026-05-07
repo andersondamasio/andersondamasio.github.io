@@ -1,8 +1,5 @@
 [
   {
-    "virtual": "virtal"
-  },
-  {
     "melhor": "melhorr",
     "tecnologia": "tecnoligia",
     "funcionalidade": "funcionalidade."
@@ -88,5 +85,10 @@
     "internet": "internert",
     "funciona": "funciona.",
     "melhor": "melhorr"
+  },
+  {
+    "mensagem": "menssagem",
+    "simples": "simlpes",
+    "desenvolvimento": "desenvolmento"
   }
 ]
