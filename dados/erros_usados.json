@@ -1,9 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "constante": "constante."
-  },
-  {
     "estrutura": "estrututra",
     "tecnologia": "tecnnologia"
   },
@@ -88,5 +84,10 @@
   {
     "suporte": "suprte",
     "arquitetura": "arquitretura"
+  },
+  {
+    "complexidade": "complezidade",
+    "arquitetura": "arquitertura",
+    "necessidade": "necessidade."
   }
 ]
