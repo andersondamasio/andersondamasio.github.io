@@ -1,9 +1,5 @@
 [
   {
-    "controle": "controlle",
-    "necessidade": "necessidade."
-  },
-  {
     "operacional": "operacional.",
     "desafio": "desaío",
     "tecnologia": "tecnnologia"
@@ -91,5 +87,9 @@
     "abordagem": "abordage",
     "recurso": "reccurso",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "processo": "proceso",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
