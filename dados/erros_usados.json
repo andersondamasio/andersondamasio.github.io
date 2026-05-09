@@ -1,10 +1,5 @@
 [
   {
-    "complexidade": "complezidade",
-    "arquitetura": "arquitertura",
-    "necessidade": "necessidade."
-  },
-  {
     "armazenamento": "armasenamento",
     "conhecimento": "conhescimento",
     "processo": "proceso"
@@ -93,5 +88,10 @@
     "exemplo": "exemplo,",
     "desenvolvimento": "desenvolvimente",
     "monitoramento": "monitorameto"
+  },
+  {
+    "necessidade": "necessidade.",
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnnologia"
   }
 ]
