@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "dispositivo": "disposotivo"
-  },
-  {
     "sistema": "sistéma",
     "tecnologia": "tecnnologia",
     "arquitetura": "arquitertura"
@@ -91,5 +87,10 @@
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento",
     "acesso": "aceso"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "tecnologia": "tecnoligia",
+    "monitoramento": "monitramento"
   }
 ]
