@@ -1,10 +1,5 @@
 [
   {
-    "operacional": "operacional.",
-    "desafio": "desaío",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnolgia",
     "processo": "prosseso"
@@ -91,5 +86,10 @@
   {
     "processo": "proceso",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "acesso": "acesço",
+    "tecnologia": "tecnolgia",
+    "desenvolvimento": "desenvolmento"
   }
 ]
