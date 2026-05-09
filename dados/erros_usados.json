@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "arquitetura": "arquitretura"
-  },
-  {
     "complexidade": "complezidade",
     "arquitetura": "arquitertura",
     "necessidade": "necessidade."
@@ -92,5 +88,10 @@
     "conectado": "conectado.",
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "exemplo": "exemplo,",
+    "desenvolvimento": "desenvolvimente",
+    "monitoramento": "monitorameto"
   }
 ]
