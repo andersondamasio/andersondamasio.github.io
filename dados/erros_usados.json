@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "tecnologia": "tecnolgia",
-    "desenvolvimento": "desenvolmento"
-  },
-  {
     "tecnologia": "tecnnologia",
     "desenvolvimento": "desenvolvmento",
     "acesso": "aceso"
@@ -92,5 +87,10 @@
     "constante": "constante.",
     "exemplo": "exemplo.",
     "parceria": "parcería"
+  },
+  {
+    "processo": "prosseso",
+    "suporte": "suporte.",
+    "resultado": "resultadoo"
   }
 ]
