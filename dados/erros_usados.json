@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armasenamento",
-    "conhecimento": "conhescimento",
-    "processo": "proceso"
-  },
-  {
     "constante": "constante.",
     "problema": "poblema",
     "sistema": "cistema"
@@ -93,5 +88,9 @@
     "necessidade": "necessidade.",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "complexidade": "complexidade.",
+    "internet": "internert"
   }
 ]
