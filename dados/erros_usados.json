@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnnologia",
-    "desenvolvimento": "desenvolvmento",
-    "acesso": "aceso"
-  },
-  {
     "arquitetura": "arquitertura",
     "tecnologia": "tecnoligia",
     "monitoramento": "monitramento"
@@ -92,5 +87,10 @@
     "processo": "prosseso",
     "suporte": "suporte.",
     "resultado": "resultadoo"
+  },
+  {
+    "desafio": "desaío",
+    "arquitetura": "arquitertura",
+    "suporte": "suprte"
   }
 ]
