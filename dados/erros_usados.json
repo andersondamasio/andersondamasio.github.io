@@ -1,10 +1,5 @@
 [
   {
-    "necessidade": "necessidade.",
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "complexidade": "complexidade.",
     "internet": "internert"
   },
@@ -92,5 +87,10 @@
   {
     "estrutura": "estrtura",
     "sistema": "sistma"
+  },
+  {
+    "recurso": "reccurso",
+    "funciona": "funciona,",
+    "abordagem": "abordagem."
   }
 ]
