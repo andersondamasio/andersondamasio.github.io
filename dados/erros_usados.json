@@ -1,10 +1,5 @@
 [
   {
-    "conectado": "conectado.",
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "exemplo": "exemplo,",
     "desenvolvimento": "desenvolvimente",
     "monitoramento": "monitorameto"
@@ -93,5 +88,10 @@
     "componente": "componente.",
     "problema": "probrema",
     "acesso": "acesso."
+  },
+  {
+    "sistema": "sistéma",
+    "abordagem": "abordagem.",
+    "arquitetura": "arquiteturra"
   }
 ]
