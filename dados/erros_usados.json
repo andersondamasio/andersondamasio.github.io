@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "suporte": "suporte.",
-    "resultado": "resultadoo"
-  },
-  {
     "desafio": "desaío",
     "arquitetura": "arquitertura",
     "suporte": "suprte"
@@ -93,5 +88,10 @@
     "melhor": "melhorr",
     "monitoramento": "monitoramento.",
     "prioridade": "prioriade."
+  },
+  {
+    "complexidade": "complexsidade",
+    "exemplo": "exemplo,",
+    "constante": "constate"
   }
 ]
