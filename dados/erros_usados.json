@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "arquitetura": "arquitertura",
-    "suporte": "suprte"
-  },
-  {
     "tecnologia": "tecnnologia",
     "sistema": "sistéma",
     "internet": "internete"
@@ -93,5 +88,10 @@
     "complexidade": "complexsidade",
     "exemplo": "exemplo,",
     "constante": "constate"
+  },
+  {
+    "geralmente": "geralmemte",
+    "controle": "controlle",
+    "exemplo": "exemplo."
   }
 ]
