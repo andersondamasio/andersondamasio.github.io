@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parceria.",
-    "desenvolvimento": "desenvolmento",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "constante": "constante.",
     "exemplo": "exemplo.",
     "parceria": "parcería"
@@ -94,5 +89,9 @@
     "controle": "controle.",
     "simples": "simlpes",
     "recurso": "recuro"
+  },
+  {
+    "monitoramento": "monitorameto",
+    "automatizado": "automatizdo"
   }
 ]
