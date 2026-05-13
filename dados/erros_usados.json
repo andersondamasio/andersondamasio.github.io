@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "arquitetura": "arquitretura",
-    "sistema": "cistema"
-  },
-  {
     "componente": "componente.",
     "problema": "probrema",
     "acesso": "acesso."
@@ -92,5 +87,9 @@
     "armazenamento": "armazenamentto",
     "necessidade": "necissidade",
     "simples": "cimples"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "exemplo": "exemplo,"
   }
 ]
