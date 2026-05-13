@@ -1,9 +1,5 @@
 [
   {
-    "estrutura": "estrtura",
-    "sistema": "sistma"
-  },
-  {
     "recurso": "reccurso",
     "funciona": "funciona,",
     "abordagem": "abordagem."
@@ -90,5 +86,9 @@
   {
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "simples": "cimples"
   }
 ]
