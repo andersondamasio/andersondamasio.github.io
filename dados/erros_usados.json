@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "mensagen",
-    "muito": "muinto"
-  },
-  {
     "constante": "constante.",
     "processo": "prosseso",
     "arquitetura": "arquitertura"
@@ -88,5 +84,10 @@
   {
     "estrutura": "estrututra",
     "exemplo": "exenplo"
+  },
+  {
+    "desafio": "desaío",
+    "necessidade": "necissidade",
+    "simples": "simplis"
   }
 ]
