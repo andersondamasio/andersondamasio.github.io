@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "dispositivo": "dispositivo.",
     "problema": "probrema"
   },
@@ -92,5 +87,9 @@
     "sistema": "sistéma",
     "abordagem": "abordage",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "constante": "constante.",
+    "arquitetura": "arquitertura"
   }
 ]
