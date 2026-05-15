@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "muito": "muto"
-  },
-  {
     "armazenamento": "armazenamentto",
     "necessidade": "necissidade",
     "simples": "cimples"
@@ -88,5 +84,10 @@
   {
     "arquitetura": "arquitretura",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "sistema": "cistema",
+    "estrutura": "estrtura",
+    "dispositivo": "disposotivo"
   }
 ]
