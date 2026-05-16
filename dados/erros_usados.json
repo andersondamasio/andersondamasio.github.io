@@ -1,10 +1,5 @@
 [
   {
-    "sistema": "sistma",
-    "exemplo": "exemplo,",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "complexidade": "complezidade",
     "sistema": "sistéma",
     "processo": "proceso"
@@ -95,5 +90,9 @@
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra",
     "melhor": "melhorr"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "tecnologia": "tecnnologia"
   }
 ]
