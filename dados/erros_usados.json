@@ -1,9 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "problema": "probrema"
-  },
-  {
     "estrutura": "estrututra",
     "exemplo": "exenplo"
   },
@@ -91,5 +87,9 @@
   {
     "constante": "constante.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "abordagem": "abordajem"
   }
 ]
