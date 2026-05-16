@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "sistema": "cistema",
     "estrutura": "estrtura",
     "dispositivo": "disposotivo"
@@ -93,5 +89,10 @@
     "automatizado": "automatizdo.",
     "necessidade": "nescessidade",
     "arquitetura": "arquitretura"
+  },
+  {
+    "exemplo": "exemplo.",
+    "desenvolvimento": "desenvolmento",
+    "sistema": "cistema"
   }
 ]
