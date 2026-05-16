@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesço",
-    "processo": "prosseso",
-    "suporte": "suporte."
-  },
-  {
     "utilizado": "utilizado.",
     "monitoramento": "monitorameto"
   },
@@ -94,5 +89,10 @@
     "controle": "controle.",
     "conectado": "conectado.",
     "sistema": "sistma"
+  },
+  {
+    "problema": "poblema",
+    "complexidade": "complezidade",
+    "simples": "simlpes"
   }
 ]
