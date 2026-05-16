@@ -1,9 +1,5 @@
 [
   {
-    "mensagem": "menssagen",
-    "virtual": "virtal"
-  },
-  {
     "acesso": "acesço",
     "processo": "prosseso",
     "suporte": "suporte."
@@ -93,5 +89,10 @@
     "tecnologia": "tecnoligia",
     "acesso": "acesso.",
     "rotina": "rotna"
+  },
+  {
+    "controle": "controle.",
+    "conectado": "conectado.",
+    "sistema": "sistma"
   }
 ]
