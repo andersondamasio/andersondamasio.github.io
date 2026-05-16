@@ -1,9 +1,5 @@
 [
   {
-    "utilizado": "utilizado.",
-    "monitoramento": "monitorameto"
-  },
-  {
     "simples": "simlpes",
     "tecnologia": "tecnoligia",
     "acesso": "acesço"
@@ -94,5 +90,10 @@
     "problema": "poblema",
     "complexidade": "complezidade",
     "simples": "simlpes"
+  },
+  {
+    "recurso": "reccurso",
+    "funciona": "funciona.",
+    "simples": "cimples"
   }
 ]
