@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simlpes",
-    "tecnologia": "tecnoligia",
-    "acesso": "acesço"
-  },
-  {
     "conhecimento": "conhecimento.",
     "necessidade": "nescessidade",
     "arquitetura": "arquitretura"
@@ -95,5 +90,10 @@
     "recurso": "reccurso",
     "funciona": "funciona.",
     "simples": "cimples"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "sistema": "cistema",
+    "tecnologia": "tecnolgia"
   }
 ]
