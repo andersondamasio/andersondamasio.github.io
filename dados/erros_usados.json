@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "sistema": "sistéma",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "muito": "muiito",
     "suporte": "suprte",
     "tecnologia": "tecnolgia"
@@ -93,5 +88,10 @@
     "processo": "proceso",
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "armazenamento": "armazanamento",
+    "abordagem": "abordajem",
+    "arquitetura": "arquitertura"
   }
 ]
