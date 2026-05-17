@@ -1,10 +1,5 @@
 [
   {
-    "muito": "muiito",
-    "suporte": "suprte",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "tecnologia": "tecnoligia",
     "acesso": "acesso.",
     "rotina": "rotna"
@@ -93,5 +88,9 @@
     "armazenamento": "armazanamento",
     "abordagem": "abordajem",
     "arquitetura": "arquitertura"
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "processo": "processso"
   }
 ]
