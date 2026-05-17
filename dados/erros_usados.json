@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "abordagem": "abordajem"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "sistema": "sistéma",
     "tecnologia": "tecnnologia"
@@ -92,5 +88,10 @@
   {
     "tecnologia": "tecnolgia",
     "sistema": "sistma"
+  },
+  {
+    "processo": "proceso",
+    "desenvolvimento": "desenvolvimente",
+    "tecnologia": "tecnoligia"
   }
 ]
