@@ -1,9 +1,5 @@
 [
   {
-    "constante": "constante.",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnoligia",
     "abordagem": "abordajem"
   },
@@ -92,5 +88,9 @@
     "geralmente": "geralmemte",
     "funcionalidade": "funcionaliadde",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "sistema": "sistma"
   }
 ]
