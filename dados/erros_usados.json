@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "melhor": "melhorr",
-    "dispositivo": "dispotivo"
-  },
-  {
     "sistema": "sistéma",
     "abordagem": "abordage",
     "tecnologia": "tecnnologia"
@@ -92,5 +87,10 @@
     "resultado": "resultao",
     "suporte": "suportte",
     "melhor": "melhorr"
+  },
+  {
+    "abordagem": "abordajem",
+    "arquitetura": "arquiteturra",
+    "desenvolvimento": "desenvolmento"
   }
 ]
