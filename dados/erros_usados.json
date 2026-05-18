@@ -1,10 +1,5 @@
 [
   {
-    "controle": "controle.",
-    "conectado": "conectado.",
-    "sistema": "sistma"
-  },
-  {
     "problema": "poblema",
     "complexidade": "complezidade",
     "simples": "simlpes"
@@ -92,5 +87,10 @@
     "arquitetura": "arquiteturra",
     "tecnologia": "tecnolgia",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "constante": "constante.",
+    "tecnologia": "tecnoligia",
+    "abordagem": "abordajem"
   }
 ]
