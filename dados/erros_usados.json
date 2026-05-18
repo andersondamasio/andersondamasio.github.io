@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "controle": "contrle",
     "sistema": "sistma"
   },
@@ -89,5 +85,10 @@
     "desenvolvimento": "desenvolmento",
     "desafio": "desafío",
     "processo": "proceso"
+  },
+  {
+    "abordagem": "abordagem.",
+    "arquitetura": "arquitretura",
+    "exemplo": "exemplo."
   }
 ]
