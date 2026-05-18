@@ -1,9 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "sistema": "sistma"
-  },
-  {
     "automatizado": "automatizdo.",
     "necessidade": "nescessidade",
     "arquitetura": "arquitretura"
@@ -90,5 +86,9 @@
     "abordagem": "abordagem.",
     "arquitetura": "arquitretura",
     "exemplo": "exemplo."
+  },
+  {
+    "problema": "probrema",
+    "acesso": "acesço"
   }
 ]
