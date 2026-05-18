@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "sistema": "cistema",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra",
     "melhor": "melhorr"
@@ -90,5 +85,9 @@
   {
     "muito": "muto",
     "suporte": "suportte"
+  },
+  {
+    "acesso": "aceso",
+    "arquitetura": "arquitertura"
   }
 ]
