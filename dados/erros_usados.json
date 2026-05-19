@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "sistema": "sistma"
-  },
-  {
     "processo": "proceso",
     "desenvolvimento": "desenvolvimente",
     "tecnologia": "tecnoligia"
@@ -91,5 +87,10 @@
     "tecnologia": "tecnoligia",
     "estrutura": "estrtura",
     "melhor": "melhorr"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "exemplo": "exemplo.",
+    "funciona": "funciona."
   }
 ]
