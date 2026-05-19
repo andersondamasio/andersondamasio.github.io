@@ -1,9 +1,5 @@
 [
   {
-    "processo": "processso",
-    "controle": "controlle"
-  },
-  {
     "monitoramento": "monitramento",
     "prioridade": "prioriade."
   },
@@ -89,5 +85,10 @@
   {
     "arquitetura": "arquitretura",
     "desafio": "desafiu"
+  },
+  {
+    "complexidade": "complexidade.",
+    "necessidade": "necessidade.",
+    "arquitetura": "arquitertura"
   }
 ]
