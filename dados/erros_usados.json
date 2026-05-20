@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "desenvolvimento": "desenvolvimente",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "armazenamento": "armazanamento",
     "abordagem": "abordajem",
     "arquitetura": "arquitertura"
@@ -92,5 +87,10 @@
     "arquitetura": "arquiteturra",
     "exemplo": "exemplo.",
     "funciona": "funciona."
+  },
+  {
+    "constante": "constante.",
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
