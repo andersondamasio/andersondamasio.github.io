@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "simples": "simplis"
-  },
-  {
     "muito": "muto",
     "suporte": "suportte"
   },
@@ -91,5 +87,10 @@
     "desenvolvimento": "desenvolvimente",
     "necessidade": "necessidade.",
     "problema": "problema."
+  },
+  {
+    "operacional": "operacional.",
+    "monitoramento": "monitoramento.",
+    "processo": "proceso"
   }
 ]
