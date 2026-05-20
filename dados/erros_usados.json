@@ -1,10 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "abordagem": "abordajem",
-    "arquitetura": "arquitertura"
-  },
-  {
     "gerenciamento": "gerenciamente",
     "processo": "processso"
   },
@@ -92,5 +87,8 @@
     "constante": "constante.",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "dispositivo": "dispositivo."
   }
 ]
