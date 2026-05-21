@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "arquitetura": "arquitertura"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "desafio": "desafío",
     "processo": "proceso"
@@ -93,5 +89,10 @@
     "internet": "internete",
     "arquitetura": "arquitretura",
     "funciona": "funsiona"
+  },
+  {
+    "simples": "simplis",
+    "rotina": "rotna",
+    "muito": "muto"
   }
 ]
