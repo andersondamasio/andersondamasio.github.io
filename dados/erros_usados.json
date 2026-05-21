@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "desafio": "desafiu"
-  },
-  {
     "complexidade": "complexidade.",
     "necessidade": "necessidade.",
     "arquitetura": "arquitertura"
@@ -94,5 +90,9 @@
     "abordagem": "abordagem.",
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "simples": "simplis"
   }
 ]
