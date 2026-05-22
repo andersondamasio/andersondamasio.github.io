@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "exemplo": "exemplo.",
-    "funciona": "funciona."
-  },
-  {
     "constante": "constante.",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
@@ -93,5 +88,8 @@
     "complexidade": "complexidade.",
     "monitoramento": "monitoramento.",
     "sistema": "sistéma"
+  },
+  {
+    "arquitetura": "arquiteturra"
   }
 ]
