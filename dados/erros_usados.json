@@ -1,10 +1,5 @@
 [
   {
-    "estrutura": "estrututra",
-    "arquitetura": "arquitretura",
-    "sistema": "sistma"
-  },
-  {
     "funciona": "funsiona",
     "geralmente": "geralmete",
     "desenvolvimento": "desenvolvmento"
@@ -93,5 +88,10 @@
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra",
     "sistema": "sistéma"
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "arquitetura": "arquitertura",
+    "exemplo": "exemplo."
   }
 ]
