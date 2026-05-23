@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "acesso": "acesso."
-  },
-  {
     "desafio": "desafiu",
     "tecnologia": "tecnolgia",
     "necessidade": "necissidade"
@@ -93,5 +89,10 @@
     "internet": "internert",
     "arquitetura": "arquitertura",
     "exemplo": "exemplo."
+  },
+  {
+    "controle": "controlle",
+    "arquitetura": "arquitretura",
+    "sistema": "sistéma"
   }
 ]
