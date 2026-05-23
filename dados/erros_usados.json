@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "exemplo": "exemplo.",
-    "funcionalidade": "funcionaliade"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "necessidade": "necessidade.",
     "problema": "problema."
@@ -92,5 +87,10 @@
     "desenvolvimento": "desenvolmento",
     "problema": "probrema",
     "acesso": "acesso."
+  },
+  {
+    "prioridade": "prioriade",
+    "utilizado": "utilizdo",
+    "exemplo": "exenplo"
   }
 ]
