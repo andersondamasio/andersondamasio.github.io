@@ -1,10 +1,5 @@
 [
   {
-    "simples": "simplis",
-    "rotina": "rotna",
-    "muito": "muto"
-  },
-  {
     "resultado": "resutlado",
     "tecnologia": "tecnoligia",
     "simples": "cimples"
@@ -91,5 +86,10 @@
     "suporte": "suprte",
     "estrutura": "estrtura",
     "operacional": "operacionl"
+  },
+  {
+    "virtual": "virtal",
+    "sistema": "sistéma",
+    "tecnologia": "tecnoligia"
   }
 ]
