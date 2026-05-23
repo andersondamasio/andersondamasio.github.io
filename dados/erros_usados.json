@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "necessidade": "necessidade.",
-    "problema": "problema."
-  },
-  {
     "operacional": "operacional.",
     "monitoramento": "monitoramento.",
     "processo": "proceso"
@@ -92,5 +87,9 @@
     "prioridade": "prioriade",
     "utilizado": "utilizdo",
     "exemplo": "exenplo"
+  },
+  {
+    "carregamento": "carregameno",
+    "simples": "cimples"
   }
 ]
