@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "utilizado": "utilizdo",
-    "exemplo": "exenplo"
-  },
-  {
     "carregamento": "carregameno",
     "simples": "cimples"
   },
@@ -97,5 +92,9 @@
     "melhor": "melor",
     "sistema": "sistma",
     "processo": "prosseso"
+  },
+  {
+    "monitoramento": "monitramento",
+    "funciona": "funsiona"
   }
 ]
