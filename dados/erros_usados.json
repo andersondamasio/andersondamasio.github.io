@@ -1,8 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra"
-  },
-  {
     "armazenamento": "armazanamento",
     "sistema": "cistema"
   },
@@ -94,5 +91,10 @@
     "recurso": "recusso",
     "necessidade": "necessidade.",
     "acesso": "acesço"
+  },
+  {
+    "exemplo": "exemplo,",
+    "suporte": "suporte.",
+    "arquitetura": "arquitertura"
   }
 ]
