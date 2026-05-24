@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suprte",
-    "estrutura": "estrtura",
-    "operacional": "operacionl"
-  },
-  {
     "virtual": "virtal",
     "sistema": "sistéma",
     "tecnologia": "tecnoligia"
@@ -96,5 +91,10 @@
     "consistente": "consitente",
     "complexidade": "complexidade.",
     "abordagem": "abordajem"
+  },
+  {
+    "monitoramento": "monitramento",
+    "tecnologia": "tecnnologia",
+    "exemplo": "exemplo."
   }
 ]
