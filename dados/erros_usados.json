@@ -1,9 +1,5 @@
 [
   {
-    "armazenamento": "armazanamento",
-    "sistema": "cistema"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquiteturra"
@@ -96,5 +92,10 @@
     "exemplo": "exemplo,",
     "suporte": "suporte.",
     "arquitetura": "arquitertura"
+  },
+  {
+    "rotina": "rotna",
+    "funciona": "funciona,",
+    "tecnologia": "tecnoligia"
   }
 ]
