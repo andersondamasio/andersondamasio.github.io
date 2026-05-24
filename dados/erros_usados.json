@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquiteturra",
-    "sistema": "sistéma"
-  },
-  {
     "dispositivo": "dispositivo.",
     "arquitetura": "arquitertura",
     "exemplo": "exemplo."
@@ -94,5 +89,10 @@
     "parceria": "parcería",
     "tecnologia": "tecnoligia",
     "resultado": "resultadoo"
+  },
+  {
+    "exemplo": "exemplo.",
+    "desenvolvimento": "desenvolvimente",
+    "arquitetura": "arquiteturra"
   }
 ]
