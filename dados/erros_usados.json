@@ -1,9 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "simples": "cimples"
-  },
-  {
     "constante": "constante.",
     "funciona": "funciona.",
     "acesso": "aceso"
@@ -96,5 +92,9 @@
   {
     "monitoramento": "monitramento",
     "funciona": "funsiona"
+  },
+  {
+    "desafio": "desaío",
+    "sistema": "sistma"
   }
 ]
