@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispositivo.",
-    "arquitetura": "arquitertura",
-    "exemplo": "exemplo."
-  },
-  {
     "arquitetura": "arquiteturra",
     "necessidade": "nescessidade",
     "desenvolvimento": "desenvolvmento"
@@ -94,5 +89,10 @@
     "exemplo": "exemplo.",
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "dispositivo": "dispotivo",
+    "tecnologia": "tecnolgia",
+    "suporte": "suporte."
   }
 ]
