@@ -1,10 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliadde",
-    "gerenciamento": "gerenciamneto",
-    "arquitetura": "arquitretura"
-  },
-  {
     "tecnologia": "tecnoligia",
     "prioridade": "prioridade.",
     "desenvolvimento": "desenvolvmento"
@@ -96,5 +91,8 @@
     "carregamento": "carregameno",
     "armazenamento": "armazanamento",
     "operacional": "operacional."
+  },
+  {
+    "computador": "computador."
   }
 ]
