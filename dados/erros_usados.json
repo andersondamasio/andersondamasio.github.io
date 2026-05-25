@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "prioridade": "prioridade.",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "tecnologia": "tecnnologia",
     "dispositivo": "dispotivo",
     "funcionalidade": "funcionaliadde"
@@ -94,5 +89,10 @@
   },
   {
     "computador": "computador."
+  },
+  {
+    "muito": "muinto",
+    "controle": "controlle",
+    "recurso": "recusso"
   }
 ]
