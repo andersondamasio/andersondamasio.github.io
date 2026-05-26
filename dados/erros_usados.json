@@ -1,10 +1,5 @@
 [
   {
-    "dispositivo": "dispotivo",
-    "tecnologia": "tecnolgia",
-    "suporte": "suporte."
-  },
-  {
     "muito": "muiito",
     "exemplo": "exemplo.",
     "melhor": "melhorr"
@@ -90,5 +85,10 @@
   {
     "funcionalidade": "funcionaliade",
     "suporte": "suportte"
+  },
+  {
+    "desenvolvimento": "desenvolvmento",
+    "problema": "probrema",
+    "acesso": "aceso"
   }
 ]
