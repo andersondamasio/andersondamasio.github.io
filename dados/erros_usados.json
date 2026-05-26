@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recusso",
-    "necessidade": "necessidade.",
-    "acesso": "acesço"
-  },
-  {
     "exemplo": "exemplo,",
     "suporte": "suporte.",
     "arquitetura": "arquitertura"
@@ -90,5 +85,9 @@
     "utilizado": "utilizado.",
     "resultado": "resutlado",
     "internet": "internat"
+  },
+  {
+    "simples": "simlpes",
+    "tecnologia": "tecnoligia"
   }
 ]
