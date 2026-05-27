@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "funciona": "funsiona"
-  },
-  {
     "desafio": "desaío",
     "sistema": "sistma"
   },
@@ -88,5 +84,10 @@
     "gerenciamento": "gerenciamneto",
     "funcionalidade": "funcionalidade.",
     "muito": "muiito"
+  },
+  {
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnolgia",
+    "necessidade": "nescessidade"
   }
 ]
