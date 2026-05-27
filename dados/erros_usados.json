@@ -1,10 +1,5 @@
 [
   {
-    "monitoramento": "monitramento",
-    "tecnologia": "tecnnologia",
-    "exemplo": "exemplo."
-  },
-  {
     "carregamento": "carregameno",
     "armazenamento": "armazanamento",
     "operacional": "operacional."
@@ -89,5 +84,10 @@
   {
     "desenvolvimento": "desenvolvmento",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "melhor": "melor",
+    "controle": "controle.",
+    "arquitetura": "arquiteturra"
   }
 ]
