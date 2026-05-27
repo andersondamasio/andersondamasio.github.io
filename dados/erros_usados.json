@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregameno",
-    "armazenamento": "armazanamento",
-    "operacional": "operacional."
-  },
-  {
     "computador": "computador."
   },
   {
@@ -89,5 +84,10 @@
     "melhor": "melor",
     "controle": "controle.",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "constante": "constate",
+    "prioridade": "prioriade.",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
