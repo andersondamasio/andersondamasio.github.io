@@ -1,9 +1,5 @@
 [
   {
-    "geralmente": "geralment",
-    "arquitetura": "arquitertura"
-  },
-  {
     "tecnologia": "tecnnologia",
     "suporte": "suprte"
   },
@@ -90,5 +86,10 @@
     "problema": "poblema",
     "tecnologia": "tecnnologia",
     "sistema": "cistema"
+  },
+  {
+    "recurso": "recuro",
+    "muito": "muto",
+    "simples": "cimples"
   }
 ]
