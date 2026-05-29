@@ -1,9 +1,5 @@
 [
   {
-    "processo": "processso",
-    "sistema": "cistema"
-  },
-  {
     "gerenciamento": "gerenciamneto",
     "funcionalidade": "funcionalidade.",
     "muito": "muiito"
@@ -91,5 +87,9 @@
   {
     "exemplo": "exemplo,",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquitretura"
   }
 ]
