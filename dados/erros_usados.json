@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "tecnologia": "tecnolgia",
-    "necessidade": "nescessidade"
-  },
-  {
     "tecnologia": "tecnoligia",
     "exemplo": "exenplo",
     "melhor": "melhorr"
@@ -91,5 +86,10 @@
     "desafio": "desaío",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "paralelo": "paralelo.",
+    "operacional": "operaciona",
+    "sistema": "cistema"
   }
 ]
