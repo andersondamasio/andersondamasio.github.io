@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamneto",
-    "funcionalidade": "funcionalidade.",
-    "muito": "muiito"
-  },
-  {
     "exemplo": "exemplo.",
     "tecnologia": "tecnolgia",
     "necessidade": "nescessidade"
@@ -91,5 +86,10 @@
   {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitretura"
+  },
+  {
+    "desafio": "desaío",
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvimente"
   }
 ]
