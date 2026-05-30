@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "proprieade",
-    "dispositivo": "dispositivo."
-  },
-  {
     "problema": "poblema",
     "tecnologia": "tecnnologia",
     "sistema": "cistema"
@@ -88,5 +84,9 @@
     "estrutura": "estrtura",
     "exemplo": "exenplo",
     "desenvolvimento": "desenvolmento"
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
