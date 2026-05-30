@@ -1,10 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "tecnologia": "tecnnologia",
-    "sistema": "cistema"
-  },
-  {
     "recurso": "recuro",
     "muito": "muto",
     "simples": "cimples"
@@ -88,5 +83,9 @@
   {
     "conhecimento": "conhecimeto",
     "desenvolvimento": "desenvolvmento"
+  },
+  {
+    "gerenciamento": "gerenciamente",
+    "arquitetura": "arquitretura"
   }
 ]
