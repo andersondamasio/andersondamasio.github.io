@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquitretura"
   },
@@ -85,5 +81,9 @@
     "desenvolvimento": "desenvolmento",
     "exemplo": "exemplo,",
     "abordagem": "abordajem"
+  },
+  {
+    "propriedade": "proprieade",
+    "tecnologia": "tecnoligia"
   }
 ]
