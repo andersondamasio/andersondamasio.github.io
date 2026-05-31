@@ -1,9 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolmento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "desafio": "desaío",
     "arquitetura": "arquitertura",
     "desenvolvimento": "desenvolvimente"
@@ -85,5 +81,10 @@
   {
     "propriedade": "proprieade",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "desenvolvimento": "desenvolvimente",
+    "acesso": "acesso.",
+    "exemplo": "exemplo."
   }
 ]
