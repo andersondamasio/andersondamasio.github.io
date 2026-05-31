@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "melhor": "melor",
     "exemplo": "exemplo,"
   },
@@ -87,5 +83,9 @@
     "processo": "proceso",
     "conectado": "conetado",
     "suporte": "suprte"
+  },
+  {
+    "necessidade": "necissidade",
+    "processo": "processso"
   }
 ]
