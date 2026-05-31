@@ -1,10 +1,5 @@
 [
   {
-    "recurso": "recuro",
-    "muito": "muto",
-    "simples": "cimples"
-  },
-  {
     "sistema": "cistema",
     "tecnologia": "tecnoligia"
   },
@@ -87,5 +82,10 @@
   {
     "gerenciamento": "gerenciamente",
     "arquitetura": "arquitretura"
+  },
+  {
+    "processo": "proceso",
+    "conectado": "conetado",
+    "suporte": "suprte"
   }
 ]
