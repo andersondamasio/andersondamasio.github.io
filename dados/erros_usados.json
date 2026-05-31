@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "paralelo": "paralelo.",
     "operacional": "operaciona",
     "sistema": "cistema"
@@ -86,5 +81,9 @@
     "desenvolvimento": "desenvolvimente",
     "acesso": "acesso.",
     "exemplo": "exemplo."
+  },
+  {
+    "dispositivo": "dispositivo.",
+    "armazenamento": "armasenamento"
   }
 ]
