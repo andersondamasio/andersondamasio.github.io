@@ -1,10 +1,5 @@
 [
   {
-    "resultado": "resultao",
-    "componente": "componete",
-    "complexidade": "complezidade"
-  },
-  {
     "simples": "simplis",
     "abordagem": "abordajem",
     "muito": "muiito"
@@ -83,5 +78,10 @@
   {
     "problema": "poblema",
     "melhor": "melhorr"
+  },
+  {
+    "desafio": "desafiu",
+    "processo": "processso",
+    "tecnologia": "tecnnologia"
   }
 ]
