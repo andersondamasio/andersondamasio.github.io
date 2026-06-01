@@ -1,9 +1,4 @@
 [
-  {
-    "simples": "simplis",
-    "abordagem": "abordajem",
-    "muito": "muiito"
-  },
   {},
   {
     "arquitetura": "arquiteturra",
@@ -83,5 +78,10 @@
     "desafio": "desafiu",
     "processo": "processso",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "abordagem": "abordagem.",
+    "desenvolvimento": "desenvolvmento",
+    "tecnologia": "tecnolgia"
   }
 ]
