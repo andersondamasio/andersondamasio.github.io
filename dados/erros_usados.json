@@ -1,9 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamente",
-    "arquitetura": "arquitretura"
-  },
-  {
     "processo": "proceso",
     "conectado": "conetado",
     "suporte": "suprte"
@@ -88,5 +84,10 @@
     "muito": "muto",
     "melhor": "melhorr",
     "desafio": "desafío"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "efetivo": "efetivo.",
+    "melhor": "melor"
   }
 ]
