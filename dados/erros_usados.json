@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "processo": "processso"
-  },
-  {
     "acesso": "aceso",
     "processo": "proceso"
   },
@@ -89,5 +85,9 @@
     "personalizado": "personalisado",
     "tecnologia": "tecnoligia",
     "exemplo": "exemplo."
+  },
+  {
+    "arquitetura": "arquitretura",
+    "abordagem": "abordagem."
   }
 ]
