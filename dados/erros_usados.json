@@ -1,9 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto",
-    "acesso": "acesso."
-  },
-  {
     "mensagem": "mensagen",
     "constante": "constante.",
     "necessidade": "nescessidade"
@@ -90,5 +86,10 @@
     "acesso": "acesso.",
     "sistema": "cistema",
     "problema": "probrema"
+  },
+  {
+    "controle": "controle.",
+    "exemplo": "exemplo.",
+    "mensagem": "menssagen"
   }
 ]
