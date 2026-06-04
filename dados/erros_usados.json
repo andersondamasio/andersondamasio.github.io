@@ -1,9 +1,5 @@
 [
   {
-    "propriedade": "proprieade",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "acesso": "acesso.",
     "exemplo": "exemplo."
@@ -91,5 +87,9 @@
     "processo": "prosseso",
     "muito": "muiito",
     "dispositivo": "disposotivo"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitertura"
   }
 ]
