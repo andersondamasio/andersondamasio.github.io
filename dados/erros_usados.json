@@ -1,10 +1,5 @@
 [
   {
-    "abordagem": "abordagem.",
-    "desenvolvimento": "desenvolvmento",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "acesso": "aceso",
     "processo": "proceso"
   },
@@ -93,5 +88,10 @@
     "funciona": "funsiona",
     "recurso": "recusso",
     "muito": "muto"
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "abordagem": "abordagem.",
+    "necessidade": "nescessidade"
   }
 ]
