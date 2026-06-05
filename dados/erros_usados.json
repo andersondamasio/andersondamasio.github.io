@@ -1,10 +1,5 @@
 [
   {
-    "acesso": "acesso.",
-    "sistema": "cistema",
-    "problema": "probrema"
-  },
-  {
     "controle": "controle.",
     "exemplo": "exemplo.",
     "mensagem": "menssagen"
@@ -90,5 +85,8 @@
     "prioridade": "prioriade",
     "acesso": "acesço",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "desenvolvimento": "desenvolvimente"
   }
 ]
