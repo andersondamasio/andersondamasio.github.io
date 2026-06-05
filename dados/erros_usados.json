@@ -1,10 +1,5 @@
 [
   {
-    "internet": "internert",
-    "dispositivo": "disposotivo",
-    "sistema": "cistema"
-  },
-  {
     "simples": "simlpes",
     "utilizado": "utilizdo.",
     "exemplo": "exenplo"
@@ -93,5 +88,10 @@
   {
     "virtual": "virtuaal",
     "arquitetura": "arquitretura"
+  },
+  {
+    "tecnologia": "tecnoligia",
+    "sistema": "cistema",
+    "arquitetura": "arquitertura"
   }
 ]
