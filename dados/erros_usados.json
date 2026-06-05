@@ -1,9 +1,5 @@
 [
   {
-    "acesso": "aceso",
-    "processo": "proceso"
-  },
-  {
     "internet": "internert",
     "dispositivo": "disposotivo",
     "sistema": "cistema"
@@ -93,5 +89,9 @@
     "tecnologia": "tecnnologia",
     "abordagem": "abordagem.",
     "necessidade": "nescessidade"
+  },
+  {
+    "virtual": "virtuaal",
+    "arquitetura": "arquitretura"
   }
 ]
