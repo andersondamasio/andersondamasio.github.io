@@ -1,10 +1,5 @@
 [
   {
-    "processo": "prosseso",
-    "muito": "muiito",
-    "dispositivo": "disposotivo"
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitertura"
   },
@@ -87,5 +82,10 @@
     "computador": "computadorr",
     "conectado": "conectado.",
     "dispositivo": "dispositivo."
+  },
+  {
+    "rotina": "rotina.",
+    "virtual": "virtuaal",
+    "dispositivo": "disposotivo"
   }
 ]
