@@ -39004,5 +39004,10 @@
     "intro": "Se você já enfrentou produção, sabe que Founders share VC horror stories, and some are naming names não é apenas um detalhe técnico.",
     "introOriginal": "Se você já enfrentou produção, sabe que __TEMATICA__ não é apenas um detalhe técnico.",
     "data": "2026-06-06"
+  },
+  "2026-06-06-desvendando-gargalos-em-sistemas-o-caso-cloudflare-e-clickhouse": {
+    "intro": "Vejo muitos projetos falharem por negligenciarem detalhes cruciais de Cloudflare Identifies Query Planning Bottleneck in ClickHouse.",
+    "introOriginal": "Vejo muitos projetos falharem por negligenciarem detalhes cruciais de __TEMATICA__.",
+    "data": "2026-06-06"
   }
 }

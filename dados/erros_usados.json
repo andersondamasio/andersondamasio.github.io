@@ -1,10 +1,5 @@
 [
   {
-    "processo": "processso",
-    "desenvolvimento": "desenvolmento",
-    "acesso": "acesso."
-  },
-  {
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquiteturra"
   },
@@ -87,5 +82,9 @@
   {
     "arquitetura": "arquitertura",
     "exemplo": "exenplo"
+  },
+  {
+    "problema": "poblema",
+    "monitoramento": "monitoramento."
   }
 ]
