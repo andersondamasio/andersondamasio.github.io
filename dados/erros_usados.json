@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "arquitetura": "arquitretura"
-  },
-  {
     "tecnologia": "tecnoligia",
     "sistema": "cistema",
     "arquitetura": "arquitertura"
@@ -86,5 +82,10 @@
   {
     "funciona": "funsiona",
     "arquitetura": "arquitertura"
+  },
+  {
+    "estrutura": "estrtura",
+    "armazenamento": "armazenamentto",
+    "abordagem": "abordage"
   }
 ]
