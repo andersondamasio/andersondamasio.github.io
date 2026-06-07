@@ -1,10 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "acesso": "acesço",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "desenvolvimento": "desenvolvimente"
   },
   {
@@ -90,5 +85,10 @@
     "exemplo": "exemplo.",
     "acesso": "aceso",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "carregamento": "carregameno",
+    "armazenamento": "armasenamento",
+    "melhor": "melhorr"
   }
 ]
