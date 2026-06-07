@@ -1,8 +1,5 @@
 [
   {
-    "monitoramento": "monitorameto"
-  },
-  {
     "simples": "cimples",
     "gerenciamento": "gerenciamnto",
     "tecnologia": "tecnnologia"
@@ -87,5 +84,9 @@
     "muito": "muinto",
     "desafio": "desaío",
     "dispositivo": "dispotivo"
+  },
+  {
+    "suporte": "suporte.",
+    "dispositivo": "disposotivo"
   }
 ]
