@@ -1,10 +1,5 @@
 [
   {
-    "tecnologia": "tecnoligia",
-    "sistema": "cistema",
-    "arquitetura": "arquitertura"
-  },
-  {
     "monitoramento": "monitorameto"
   },
   {
@@ -87,5 +82,10 @@
     "estrutura": "estrtura",
     "armazenamento": "armazenamentto",
     "abordagem": "abordage"
+  },
+  {
+    "muito": "muinto",
+    "desafio": "desaío",
+    "dispositivo": "dispotivo"
   }
 ]
