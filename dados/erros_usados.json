@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "desenvolvimento": "desenvolvimente"
-  },
-  {
     "parceria": "parceriaa",
     "constante": "constanate"
   },
@@ -88,5 +84,10 @@
     "conhecimento": "conhecimento.",
     "necessidade": "nescessidade",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "complexidade": "complexsidade",
+    "necessidade": "necissidade",
+    "arquitetura": "arquiteturra"
   }
 ]
