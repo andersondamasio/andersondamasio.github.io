@@ -1,10 +1,5 @@
 [
   {
-    "computador": "computadorr",
-    "conectado": "conectado.",
-    "dispositivo": "dispositivo."
-  },
-  {
     "rotina": "rotina.",
     "virtual": "virtuaal",
     "dispositivo": "disposotivo"
@@ -93,5 +88,9 @@
   {
     "resultado": "resutlado",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "desafio": "desafío",
+    "sistema": "cistema"
   }
 ]
