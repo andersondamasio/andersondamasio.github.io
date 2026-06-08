@@ -1,9 +1,5 @@
 [
   {
-    "problema": "poblema",
-    "monitoramento": "monitoramento."
-  },
-  {
     "computador": "computadorr",
     "conectado": "conectado.",
     "dispositivo": "dispositivo."
@@ -93,5 +89,9 @@
     "arquitetura": "arquiteturra",
     "sistema": "sistma",
     "dispositivo": "dispotivo"
+  },
+  {
+    "resultado": "resutlado",
+    "tecnologia": "tecnolgia"
   }
 ]
