@@ -1,10 +1,5 @@
 [
   {
-    "exemplo": "exemplo.",
-    "melhor": "melhorr",
-    "sistema": "cistema"
-  },
-  {
     "desenvolvimento": "desenvolvimente",
     "arquitetura": "arquitertura"
   },
@@ -92,5 +87,9 @@
     "gerenciamento": "gerenciamnto",
     "acesso": "aceso",
     "suporte": "suportte"
+  },
+  {
+    "prioridade": "prioriade",
+    "monitoramento": "monitorameto"
   }
 ]
