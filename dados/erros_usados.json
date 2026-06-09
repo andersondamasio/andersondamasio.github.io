@@ -1,10 +1,5 @@
 [
   {
-    "desenvolvimento": "desenvolvimente",
-    "arquitetura": "arquiteturra",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "funciona": "funsiona",
     "arquitetura": "arquitertura"
   },
@@ -90,5 +85,10 @@
   {
     "abordagem": "abordagem.",
     "controle": "contrle"
+  },
+  {
+    "problema": "problema.",
+    "monitoramento": "monitramento",
+    "suporte": "suporte."
   }
 ]
