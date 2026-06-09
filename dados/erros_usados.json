@@ -1,9 +1,5 @@
 [
   {
-    "funciona": "funsiona",
-    "arquitetura": "arquitertura"
-  },
-  {
     "estrutura": "estrtura",
     "armazenamento": "armazenamentto",
     "abordagem": "abordage"
@@ -90,5 +86,10 @@
     "problema": "problema.",
     "monitoramento": "monitramento",
     "suporte": "suporte."
+  },
+  {
+    "funcionalidade": "funcionaliadde",
+    "componente": "componentte",
+    "dispositivo": "dispositivo."
   }
 ]
