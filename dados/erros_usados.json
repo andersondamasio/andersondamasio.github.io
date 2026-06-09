@@ -1,9 +1,5 @@
 [
   {
-    "suporte": "suporte.",
-    "dispositivo": "disposotivo"
-  },
-  {
     "processo": "proceso",
     "acesso": "aceso",
     "arquitetura": "arquiteturra"
@@ -90,5 +86,10 @@
     "parceria": "parcería",
     "desenvolvimento": "desenvolvimente",
     "processo": "prosseso"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "resultado": "resultao",
+    "problema": "problema."
   }
 ]
