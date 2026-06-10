@@ -1,10 +1,5 @@
 [
   {
-    "conhecimento": "conhecimento.",
-    "necessidade": "nescessidade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "complexidade": "complexsidade",
     "necessidade": "necissidade",
     "arquitetura": "arquiteturra"
@@ -91,5 +86,9 @@
     "paralelo": "paraleloo",
     "estrutura": "estrura",
     "funciona": "funsiona"
+  },
+  {
+    "sistema": "sistma",
+    "arquitetura": "arquitretura"
   }
 ]
