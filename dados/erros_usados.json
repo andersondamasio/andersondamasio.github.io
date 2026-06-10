@@ -1,10 +1,5 @@
 [
   {
-    "processo": "proceso",
-    "acesso": "aceso",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "conhecimento": "conhecimento.",
     "necessidade": "nescessidade",
     "tecnologia": "tecnolgia"
@@ -91,5 +86,10 @@
     "arquitetura": "arquitretura",
     "resultado": "resultao",
     "problema": "problema."
+  },
+  {
+    "paralelo": "paraleloo",
+    "estrutura": "estrura",
+    "funciona": "funsiona"
   }
 ]
