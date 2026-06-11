@@ -1,9 +1,5 @@
 [
   {
-    "resultado": "resutlado",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "desafio": "desafío",
     "sistema": "cistema"
   },
@@ -89,5 +85,9 @@
     "resultado": "resultao",
     "desafio": "desafío",
     "controle": "controlle"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "resultado": "resultadoo"
   }
 ]
