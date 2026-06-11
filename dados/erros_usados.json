@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "monitoramento": "monitorameto"
-  },
-  {
     "arquitetura": "arquitretura",
     "monitoramento": "monitramento"
   },
@@ -90,5 +86,9 @@
     "muito": "muto",
     "tecnologia": "tecnnologia",
     "sistema": "sistéma"
+  },
+  {
+    "exemplo": "exemplo,",
+    "suporte": "suprte"
   }
 ]
