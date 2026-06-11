@@ -1,9 +1,5 @@
 [
   {
-    "sistema": "cistema",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "operacional": "operacional.",
     "constante": "constanate",
     "tecnologia": "tecnnologia"
@@ -90,5 +86,9 @@
   {
     "necessidade": "necissidade",
     "prioridade": "prioridade."
+  },
+  {
+    "processo": "prosseso",
+    "tecnologia": "tecnnologia"
   }
 ]
