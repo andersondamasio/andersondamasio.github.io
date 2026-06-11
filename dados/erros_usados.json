@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "acesso": "aceso",
-    "suporte": "suportte"
-  },
-  {
     "prioridade": "prioriade",
     "monitoramento": "monitorameto"
   },
@@ -90,5 +85,10 @@
     "melhor": "melhorr",
     "geralmente": "geralmete",
     "exemplo": "exemplo."
+  },
+  {
+    "muito": "muto",
+    "tecnologia": "tecnnologia",
+    "sistema": "sistéma"
   }
 ]
