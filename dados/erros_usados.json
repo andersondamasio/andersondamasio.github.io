@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "sistema": "sistma",
-    "dispositivo": "dispotivo"
-  },
-  {
     "resultado": "resutlado",
     "tecnologia": "tecnolgia"
   },
@@ -89,5 +84,10 @@
     "abordagem": "abordage",
     "simples": "simlpes",
     "acesso": "aceso"
+  },
+  {
+    "resultado": "resultao",
+    "desafio": "desafío",
+    "controle": "controlle"
   }
 ]
