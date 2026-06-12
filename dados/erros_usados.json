@@ -1,9 +1,5 @@
 [
   {
-    "abordagem": "abordagem.",
-    "controle": "contrle"
-  },
-  {
     "problema": "problema.",
     "monitoramento": "monitramento",
     "suporte": "suporte."
@@ -90,5 +86,10 @@
     "complexidade": "complezidade",
     "sistema": "sistéma",
     "constante": "constante."
+  },
+  {
+    "propriedade": "propriadade",
+    "sistema": "sistma",
+    "tecnologia": "tecnoligia"
   }
 ]
