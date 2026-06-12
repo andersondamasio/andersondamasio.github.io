@@ -1,10 +1,5 @@
 [
   {
-    "arquitetura": "arquitretura",
-    "resultado": "resultao",
-    "problema": "problema."
-  },
-  {
     "paralelo": "paraleloo",
     "estrutura": "estrura",
     "funciona": "funsiona"
@@ -89,5 +84,10 @@
   {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
+  },
+  {
+    "monitoramento": "monitramento",
+    "arquitetura": "arquiteturra",
+    "abordagem": "abordagem."
   }
 ]
