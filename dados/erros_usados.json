@@ -1,10 +1,5 @@
 [
   {
-    "problema": "problema.",
-    "monitoramento": "monitramento",
-    "suporte": "suporte."
-  },
-  {
     "funcionalidade": "funcionaliadde",
     "componente": "componentte",
     "dispositivo": "dispositivo."
@@ -91,5 +86,9 @@
     "propriedade": "propriadade",
     "sistema": "sistma",
     "tecnologia": "tecnoligia"
+  },
+  {
+    "conhecimento": "conhecimeto",
+    "funciona": "funciona,"
   }
 ]
