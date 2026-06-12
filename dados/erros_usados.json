@@ -1,9 +1,5 @@
 [
   {
-    "virtual": "virtuaal",
-    "acesso": "aceso"
-  },
-  {
     "parceria": "parcería",
     "desenvolvimento": "desenvolvimente",
     "processo": "prosseso"
@@ -90,5 +86,9 @@
     "conhecimento": "conhecimento.",
     "necessidade": "nescessidade",
     "desenvolvimento": "desenvolvimente"
+  },
+  {
+    "funcionalidade": "funcionalidade.",
+    "recurso": "recuro"
   }
 ]
