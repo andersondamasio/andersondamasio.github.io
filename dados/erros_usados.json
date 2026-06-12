@@ -1,10 +1,5 @@
 [
   {
-    "parceria": "parcería",
-    "desenvolvimento": "desenvolvimente",
-    "processo": "prosseso"
-  },
-  {
     "arquitetura": "arquitretura",
     "resultado": "resultao",
     "problema": "problema."
@@ -90,5 +85,9 @@
   {
     "funcionalidade": "funcionalidade.",
     "recurso": "recuro"
+  },
+  {
+    "tecnologia": "tecnolgia",
+    "arquitetura": "arquitretura"
   }
 ]
