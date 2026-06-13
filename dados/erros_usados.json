@@ -1,10 +1,5 @@
 [
   {
-    "efetivo": "efetívo",
-    "desenvolvimento": "desenvolvmento",
-    "arquitetura": "arquitretura"
-  },
-  {
     "abordagem": "abordage",
     "simples": "simlpes",
     "acesso": "aceso"
@@ -90,5 +85,10 @@
     "tecnologia": "tecnnologia",
     "monitoramento": "monitoramento.",
     "dispositivo": "disposotivo"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "controle": "controlle",
+    "melhor": "melhorr"
   }
 ]
