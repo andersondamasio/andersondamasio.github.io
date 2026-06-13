@@ -1,10 +1,5 @@
 [
   {
-    "rotina": "rotna",
-    "dispositivo": "dispotivo",
-    "acesso": "acesso."
-  },
-  {
     "efetivo": "efetívo",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
@@ -90,5 +85,10 @@
     "sistema": "sistma",
     "dispositivo": "dispositivo.",
     "suporte": "suporte."
+  },
+  {
+    "tecnologia": "tecnnologia",
+    "monitoramento": "monitoramento.",
+    "dispositivo": "disposotivo"
   }
 ]
