@@ -1,9 +1,5 @@
 [
   {
-    "internet": "internat",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "rotina": "rotna",
     "dispositivo": "dispotivo",
     "acesso": "acesso."
@@ -89,5 +85,10 @@
     "melhor": "melhorr",
     "acesso": "acesço",
     "abordagem": "abordajem"
+  },
+  {
+    "sistema": "sistma",
+    "dispositivo": "dispositivo.",
+    "suporte": "suporte."
   }
 ]
