@@ -1,9 +1,5 @@
 [
   {
-    "exemplo": "exemplo,",
-    "suporte": "suprte"
-  },
-  {
     "necessidade": "necissidade",
     "prioridade": "prioridade."
   },
@@ -91,5 +87,10 @@
     "componente": "componentte",
     "arquitetura": "arquiteturra",
     "monitoramento": "monitoramento."
+  },
+  {
+    "muito": "muto",
+    "gerenciamento": "gerenciamente",
+    "armazenamento": "armazenamentto"
   }
 ]
