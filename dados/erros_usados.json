@@ -1,9 +1,5 @@
 [
   {
-    "necessidade": "necissidade",
-    "prioridade": "prioridade."
-  },
-  {
     "processo": "prosseso",
     "tecnologia": "tecnnologia"
   },
@@ -92,5 +88,10 @@
     "muito": "muto",
     "gerenciamento": "gerenciamente",
     "armazenamento": "armazenamentto"
+  },
+  {
+    "parceria": "parcería",
+    "tecnologia": "tecnolgia",
+    "necessidade": "nescessidade"
   }
 ]
