@@ -1,9 +1,5 @@
 [
   {
-    "conhecimento": "conhecimeto",
-    "funciona": "funciona,"
-  },
-  {
     "conhecimento": "conhecimento.",
     "necessidade": "nescessidade",
     "desenvolvimento": "desenvolvimente"
@@ -93,5 +89,9 @@
     "constante": "constante.",
     "tecnologia": "tecnoligia",
     "simples": "simlpes"
+  },
+  {
+    "arquitetura": "arquitertura",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
