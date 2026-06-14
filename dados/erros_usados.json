@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionalidade.",
-    "recurso": "recuro"
-  },
-  {
     "tecnologia": "tecnolgia",
     "arquitetura": "arquitretura"
   },
@@ -93,5 +89,10 @@
     "desafio": "desaío",
     "estrutura": "estrura",
     "monitoramento": "monitorameto"
+  },
+  {
+    "monitoramento": "monitramento",
+    "desenvolvimento": "desenvolmento",
+    "arquitetura": "arquiteturra"
   }
 ]
