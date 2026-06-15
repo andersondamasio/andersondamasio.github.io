@@ -1,9 +1,5 @@
 [
   {
-    "tecnologia": "tecnolgia",
-    "arquitetura": "arquitretura"
-  },
-  {
     "monitoramento": "monitramento",
     "arquitetura": "arquiteturra",
     "abordagem": "abordagem."
@@ -94,5 +90,8 @@
     "monitoramento": "monitramento",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra"
+  },
+  {
+    "tecnologia": "tecnnologia"
   }
 ]
