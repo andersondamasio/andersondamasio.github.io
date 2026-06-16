@@ -1,10 +1,5 @@
 [
   {
-    "problema": "probrema",
-    "dispositivo": "disposotivo",
-    "funciona": "funciona,"
-  },
-  {
     "exemplo": "exenplo",
     "arquitetura": "arquitretura",
     "tecnologia": "tecnnologia"
@@ -89,5 +84,10 @@
   },
   {
     "rotina": "rotna"
+  },
+  {
+    "abordagem": "abordage",
+    "tecnologia": "tecnoligia",
+    "funcionalidade": "funcionaliade"
   }
 ]
