@@ -1,9 +1,5 @@
 [
   {
-    "prioridade": "prioriade",
-    "internet": "internat"
-  },
-  {
     "muito": "muiito",
     "funciona": "funsiona",
     "melhor": "melor"
@@ -88,5 +84,10 @@
     "dispositivo": "dispositivo.",
     "controle": "controlle",
     "arquitetura": "arquitretura"
+  },
+  {
+    "constante": "constante.",
+    "muito": "muinto",
+    "tecnologia": "tecnolgia"
   }
 ]
