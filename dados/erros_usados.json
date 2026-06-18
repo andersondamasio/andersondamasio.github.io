@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquitertura",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "desafio": "desaío",
     "estrutura": "estrura",
     "monitoramento": "monitorameto"
@@ -89,5 +85,9 @@
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra",
     "melhor": "melhorr"
+  },
+  {
+    "funcionalidade": "funcionaliade",
+    "tecnologia": "tecnolgia"
   }
 ]
