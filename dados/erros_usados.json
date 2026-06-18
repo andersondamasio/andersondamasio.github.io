@@ -1,10 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "estrutura": "estrura",
-    "monitoramento": "monitorameto"
-  },
-  {
     "monitoramento": "monitramento",
     "desenvolvimento": "desenvolmento",
     "arquitetura": "arquiteturra"
@@ -89,5 +84,9 @@
   {
     "funcionalidade": "funcionaliade",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "funciona": "funsiona",
+    "desenvolvimento": "desenvolmento"
   }
 ]
