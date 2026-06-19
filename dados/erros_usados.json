@@ -1,10 +1,5 @@
 [
   {
-    "controle": "contrle",
-    "desenvolvimento": "desenvolvmento",
-    "sistema": "sistéma"
-  },
-  {
     "efetivo": "efetivo.",
     "acesso": "acesso.",
     "arquitetura": "arquiteturra"
@@ -93,5 +88,10 @@
     "componente": "componente.",
     "parceria": "parcería",
     "paralelo": "paraleloo"
+  },
+  {
+    "necessidade": "nescessidade",
+    "acesso": "acesço",
+    "arquitetura": "arquitertura"
   }
 ]
