@@ -1,10 +1,5 @@
 [
   {
-    "efetivo": "efetivo.",
-    "acesso": "acesso.",
-    "arquitetura": "arquiteturra"
-  },
-  {
     "processo": "processso",
     "desenvolvimento": "desenvolvmento",
     "arquitetura": "arquitretura"
@@ -93,5 +88,9 @@
     "necessidade": "nescessidade",
     "acesso": "acesço",
     "arquitetura": "arquitertura"
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "desenvolvimento": "desenvolvmento"
   }
 ]
