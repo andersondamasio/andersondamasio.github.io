@@ -1,9 +1,5 @@
 [
   {
-    "funcionalidade": "funcionaliade",
-    "tecnologia": "tecnolgia"
-  },
-  {
     "funciona": "funsiona",
     "desenvolvimento": "desenvolmento"
   },
@@ -92,5 +88,9 @@
     "exemplo": "exemplo,",
     "constante": "constate",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "exemplo": "exemplo.",
+    "tecnologia": "tecnnologia"
   }
 ]
