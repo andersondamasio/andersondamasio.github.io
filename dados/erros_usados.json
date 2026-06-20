@@ -1,9 +1,5 @@
 [
   {
-    "conectado": "conetado",
-    "tecnologia": "tecnnologia"
-  },
-  {
     "dispositivo": "dispositivo.",
     "controle": "controlle",
     "arquitetura": "arquitretura"
@@ -92,5 +88,10 @@
     "sistema": "sistéma",
     "muito": "muinto",
     "tecnologia": "tecnolgia"
+  },
+  {
+    "processo": "proceso",
+    "suporte": "suportte",
+    "recurso": "recuro"
   }
 ]
