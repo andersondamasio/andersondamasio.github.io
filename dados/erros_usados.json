@@ -1,10 +1,5 @@
 [
   {
-    "suporte": "suportte",
-    "operacional": "operacionl",
-    "sistema": "cistema"
-  },
-  {
     "conectado": "conetado",
     "tecnologia": "tecnnologia"
   },
@@ -92,5 +87,10 @@
   {
     "armazenamento": "armazenamentto",
     "internet": "internete"
+  },
+  {
+    "sistema": "sistéma",
+    "muito": "muinto",
+    "tecnologia": "tecnolgia"
   }
 ]
