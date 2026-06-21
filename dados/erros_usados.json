@@ -1,10 +1,5 @@
 [
   {
-    "virtual": "virtal",
-    "mensagem": "mensagen",
-    "complexidade": "complexsidade"
-  },
-  {
     "necessidade": "necissidade",
     "estrutura": "estrututra",
     "arquitetura": "arquitertura"
@@ -92,5 +87,10 @@
   {
     "automatizado": "automatizdo.",
     "acesso": "acesço"
+  },
+  {
+    "rotina": "rotina.",
+    "funciona": "funciona.",
+    "tecnologia": "tecnolgia"
   }
 ]
