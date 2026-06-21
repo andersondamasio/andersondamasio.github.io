@@ -1,9 +1,5 @@
 [
   {
-    "arquitetura": "arquiteturra",
-    "desenvolvimento": "desenvolvmento"
-  },
-  {
     "gerenciamento": "gerenciamnto",
     "propriedade": "propriadade",
     "resultado": "resutlado"
@@ -89,5 +85,10 @@
   {
     "constante": "constante.",
     "tecnologia": "tecnnologia"
+  },
+  {
+    "estrutura": "estrututra",
+    "arquitetura": "arquiteturra",
+    "exemplo": "exenplo"
   }
 ]
