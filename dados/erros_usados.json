@@ -1,10 +1,5 @@
 [
   {
-    "componente": "componente.",
-    "parceria": "parcería",
-    "paralelo": "paraleloo"
-  },
-  {
     "necessidade": "nescessidade",
     "acesso": "acesço",
     "arquitetura": "arquitertura"
@@ -90,5 +85,10 @@
   {
     "controle": "controle.",
     "dispositivo": "dispositivo."
+  },
+  {
+    "necessidade": "necessidade.",
+    "sistema": "sistéma",
+    "tecnologia": "tecnolgia"
   }
 ]
