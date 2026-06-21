@@ -1,10 +1,5 @@
 [
   {
-    "gerenciamento": "gerenciamnto",
-    "propriedade": "propriadade",
-    "resultado": "resutlado"
-  },
-  {
     "prioridade": "prioriade",
     "melhor": "melhorr",
     "sistema": "sistéma"
@@ -90,5 +85,9 @@
     "estrutura": "estrututra",
     "arquitetura": "arquiteturra",
     "exemplo": "exenplo"
+  },
+  {
+    "arquitetura": "arquitretura",
+    "sistema": "sistma"
   }
 ]
