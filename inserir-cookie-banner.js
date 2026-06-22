@@ -3,6 +3,10 @@ const path = require('path');
 
 const diretorios = ['.', './artigos'];
 
+function normalizarConteudoTexto(conteudo) {
+  return String(conteudo).replace(/[ \t]+$/gm, "");
+}
+
 const scriptHTML = `
 <!-- Aviso de Cookies -->
 <div id="cookie-banner" style="
@@ -21,8 +25,8 @@ const scriptHTML = `
   box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
 ">
   <span>
-    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa 
-    <a href="/politica-de-privacidade.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
   </span>
   <button onclick="aceitarCookies()" style="
     background: #f1c40f;
@@ -42,8 +46,13 @@ const scriptHTML = `
 function processarHTML(arquivo) {
   const conteudo = fs.readFileSync(arquivo, 'utf8');
   if (!conteudo.includes('cookie-banner')) {
+    if (!conteudo.includes('</body>')) {
+      console.log(`⚠️ Sem </body>, ignorado: ${arquivo}`);
+      return;
+    }
+
     const novoConteudo = conteudo.replace('</body>', scriptHTML + '\n</body>');
-    fs.writeFileSync(arquivo, novoConteudo, 'utf8');
+    fs.writeFileSync(arquivo, normalizarConteudoTexto(novoConteudo), 'utf8');
     console.log(`✅ Banner inserido: ${arquivo}`);
   } else {
     console.log(`ℹ️ Já possui banner: ${arquivo}`);

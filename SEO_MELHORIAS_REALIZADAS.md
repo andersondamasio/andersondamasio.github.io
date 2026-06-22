@@ -359,6 +359,8 @@ Este passa a ser o fluxo recomendado antes de publicar alteracoes de SEO ou novo
 
 O workflow `.github/workflows/gerar-html.yml` tambem foi atualizado para executar `npm run seo:maintain` antes de commitar artigos novos. Assim, se alguma regra de SEO quebrar, a automacao falha antes de publicar.
 
+O workflow legado `.github/workflows/inserir-cookies.yml` foi limitado para execucao manual, porque ele fazia commits automaticos apos cada push em HTML e podia deixar a publicacao final diferente do resultado auditado pelo pipeline de SEO. O script manual `inserir-cookie-banner.js` tambem foi atualizado para usar `/politica.html` e remover espacos finais.
+
 ### Resultado da validacao final
 
 Em 22/06/2026, o comando abaixo foi executado com sucesso:

@@ -1,12 +1,7 @@
 name: Inserir Cookie Banner
 
 on:
-  workflow_dispatch:  # permite execução manual
-  push:
-    paths:
-      - '**/*.html'
-      - 'scripts/cookies-banner.js'
-      - 'inserir-cookie-banner.js'
+  workflow_dispatch:  # execucao manual; o pipeline principal ja gera os banners
 
 jobs:
   inserir-cookie-banner:
