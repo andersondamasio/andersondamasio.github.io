@@ -5,12 +5,15 @@ const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
 const siteName = "Anderson Damasio";
 const defaultSeoImage = `${siteUrl}/images/capa_anderson-damasio.png`;
+const anoInicioExperiencia = 2005;
+const anosExperiencia = new Date().getFullYear() - anoInicioExperiencia;
+const textoAnosExperiencia = `mais de ${anosExperiencia} anos`;
 
 const pages = [
   {
     file: "sobre.html",
     title: "Sobre Anderson Damasio | Anderson Damasio",
-    description: "Conheça Anderson Damasio, arquiteto de software com mais de 19 anos de experiência em sistemas escaláveis e tecnologia.",
+    description: `Conheça Anderson Damasio, arquiteto de software com ${textoAnosExperiencia} de experiência em sistemas escaláveis e tecnologia.`,
     robots: "index, follow"
   },
   {

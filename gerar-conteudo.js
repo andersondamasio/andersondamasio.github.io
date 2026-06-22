@@ -566,6 +566,9 @@ const siteUrl = "https://www.andersondamasio.com.br";
 const siteName = "Anderson Damasio";
 const authorName = "Anderson Damasio";
 const defaultSeoImage = `${siteUrl}/images/capa_anderson-damasio.png`;
+const anoInicioExperiencia = 2005;
+const anosExperiencia = new Date().getFullYear() - anoInicioExperiencia;
+const textoAnosExperiencia = `mais de ${anosExperiencia} anos`;
 const apiKey = process.env.OPENAI_API_KEY;
 const twitterBearer = process.env.TWITTER_BEARER_TOKEN;
 const artigosPorPagina = 10;
@@ -1014,7 +1017,7 @@ const textoCategoriasExistentes = categoriasExistentes.length
   : "";
 
 const prompt = `
-Você é Anderson Damasio, um Arquiteto de Software com mais de 19 anos de experiência prática em sistemas escaláveis.
+Você é Anderson Damasio, um Arquiteto de Software com ${textoAnosExperiencia} de experiência prática em sistemas escaláveis.
 Você acaba de ler uma notícia técnica internacional sobre: "${noticia.titulo}". 
 Resumo da notícia original: "${textoPrincipal}"
 
@@ -1457,7 +1460,7 @@ function gerarIndicesPaginados(titulos) {
       ? `${siteName} - Arquiteto de Software e Desenvolvedor`
       : `Artigos de ${siteName} - Página ${i + 1}`;
     const pageDescription = i === 0
-      ? "Anderson Damasio, arquiteto de software com mais de 19 anos de experiência em soluções modernas, escaláveis e artigos técnicos."
+      ? `Anderson Damasio, arquiteto de software com ${textoAnosExperiencia} de experiência em soluções modernas, escaláveis e artigos técnicos.`
       : `Página ${i + 1} da lista de artigos técnicos de Anderson Damasio sobre arquitetura de software, tecnologia e desenvolvimento.`;
     
 const html = `<!DOCTYPE html>
@@ -1626,7 +1629,7 @@ ${gerarHeaderNavegacao(".")}
 <!-- Sobre Mim -->
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
 <h2>Sobre Mim</h2>
-<p>Arquiteto de Software com mais de 19 anos de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna.</p>
+<p>Arquiteto de Software com ${textoAnosExperiencia} de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna.</p>
 
 <h3>Contato</h3>
 <p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
