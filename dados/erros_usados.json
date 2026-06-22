@@ -1,9 +1,5 @@
 [
   {
-    "desafio": "desaío",
-    "tecnologia": "tecnoligia"
-  },
-  {
     "armazenamento": "armazenamentto",
     "internet": "internete"
   },
@@ -88,5 +84,10 @@
   {
     "suporte": "suportte",
     "prioridade": "prioridade."
+  },
+  {
+    "arquitetura": "arquiteturra",
+    "acesso": "aceso",
+    "armazenamento": "armasenamento"
   }
 ]
