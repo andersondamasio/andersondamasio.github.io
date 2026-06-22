@@ -16,8 +16,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Instalar dependências (se necessário)
-        run: npm install
+      - name: Instalar dependências
+        run: npm ci
 
       - name: Executar script de inserção do cookie banner
         run: node inserir-cookie-banner.js
@@ -29,6 +29,10 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add .
-          git diff --cached --quiet || git commit -m "Inserção automática de cookie banner"
-          git push
+          git add -A -- . ':(exclude)node_modules/**'
+          if git diff --cached --quiet; then
+            echo "Nada para commitar"
+          else
+            git commit -m "Inserção automática de cookie banner"
+            git push
+          fi

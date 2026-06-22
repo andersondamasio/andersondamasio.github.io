@@ -388,10 +388,12 @@ Foi criado o workflow `.github/workflows/seo-integrity.yml`, que executa em push
 ```bash
 npm ci
 npm run seo:maintain
-git diff --exit-code
+git diff --exit-code -- . ':(exclude)node_modules/**'
 ```
 
 Assim, alem de auditar, o CI tambem detecta quando o SEO gerado nao foi commitado.
+
+A comparacao e os commits automaticos ignoram `node_modules`, porque a instalacao de dependencias no runner pode alterar arquivos versionados de pacotes sem relacao com o SEO publicado.
 
 ### Resultado da validacao final
 

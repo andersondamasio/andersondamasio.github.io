@@ -32,4 +32,4 @@ jobs:
         run: npm run seo:maintain
 
       - name: Garantir que o SEO gerado foi commitado
-        run: git diff --exit-code
+        run: git diff --exit-code -- . ':(exclude)node_modules/**'
