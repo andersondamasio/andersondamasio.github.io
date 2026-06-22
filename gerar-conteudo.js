@@ -991,8 +991,12 @@ function gerarPaginasCompatibilidadeLegadas(titulos) {
 
   prepararArtigosPublicaveis(titulos).forEach(artigo => {
     const match = artigo.url.match(/^artigos\/([^/]+)\/([^/]+\.html)$/i);
-    if (!match) return;
-    adicionarAlias(`${match[1]}/${match[2]}`, artigo.url, artigo.titulo);
+    if (match) {
+      adicionarAlias(`${match[1]}/${match[2]}`, artigo.url, artigo.titulo);
+    }
+
+    const aliasesDoArtigo = Array.isArray(artigo.aliasesLegados) ? artigo.aliasesLegados : [];
+    aliasesDoArtigo.forEach(alias => adicionarAlias(alias, artigo.url, artigo.titulo));
   });
 
   let alterados = 0;

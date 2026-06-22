@@ -6,8 +6,10 @@ const {
   defaultArticleImages
 } = require("./seo-assets");
 const {
+  categoriasCanonicas,
   minArtigosCategoriaIndexavel,
-  categoriaInvalida
+  categoriaInvalida,
+  normalizarCategoria
 } = require("./seo-categories");
 
 const root = process.cwd();
@@ -161,6 +163,41 @@ function isInvalidCategoryName(name) {
   return categoriaInvalida(clean, clean);
 }
 
+function slugifyCategory(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function decodeUrlPath(value) {
+  return String(value || "").split("/").map(part => {
+    try {
+      return decodeURIComponent(part);
+    } catch {
+      return part;
+    }
+  }).join("/");
+}
+
+function nonCanonicalArticleCategoryPath(fileRel, title = "") {
+  const local = decodeUrlPath(normalizeLocalUrl(fileRel) || "");
+  const match = local.match(/^artigos\/([^/]+)\/[^/]+\.html$/i);
+  if (!match) return null;
+
+  const categorySlug = match[1];
+  const expectedSlug = slugifyCategory(normalizarCategoria(categorySlug, title));
+  const knownSlug = categoriasCanonicas.some(categoria => slugifyCategory(categoria) === expectedSlug);
+
+  if (!knownSlug || categorySlug !== expectedSlug) {
+    return { categorySlug, expectedSlug };
+  }
+
+  return null;
+}
+
 function cleanPageTitleForAudit(title) {
   return String(title || "")
     .replace(/\s*\|\s*.*$/i, "")
@@ -253,6 +290,8 @@ const stats = {
   thinCategoryPagesIndexable: [],
   weakArticleTitles: [],
   weakSourceTitles: [],
+  nonCanonicalArticleCategoryPaths: [],
+  nonCanonicalSourceArticleUrls: [],
   generatorQualityPromptIssues: []
 };
 
@@ -285,6 +324,10 @@ if (fs.existsSync(sourceTitlesPath)) {
     sourceTitles.forEach((item, index) => {
       if (isWeakArticleTitle(item?.titulo)) {
         pushExample(stats.weakSourceTitles, `${index}: ${item?.url || item?.noticiaOriginal || "(sem referencia)"} -> ${item?.titulo || "(sem titulo)"}`);
+      }
+      const nonCanonicalPath = nonCanonicalArticleCategoryPath(item?.url, item?.titulo);
+      if (nonCanonicalPath) {
+        pushExample(stats.nonCanonicalSourceArticleUrls, `${index}: ${item?.url} -> ${nonCanonicalPath.expectedSlug}`);
       }
     });
   }
@@ -364,6 +407,10 @@ for (const file of walk(root)) {
     const articleTitle = $("h1").first().text().trim() || cleanPageTitleForAudit(title);
     if (isWeakArticleTitle(articleTitle)) {
       pushExample(stats.weakArticleTitles, `${fileRel}: ${articleTitle || "(sem titulo)"}`);
+    }
+    const nonCanonicalPath = nonCanonicalArticleCategoryPath(fileRel, articleTitle);
+    if (nonCanonicalPath) {
+      pushExample(stats.nonCanonicalArticleCategoryPaths, `${fileRel}: ${nonCanonicalPath.categorySlug} -> ${nonCanonicalPath.expectedSlug}`);
     }
   }
   if (!noindex && isCategoryPage && isInvalidCategoryName(categoryName)) {
@@ -559,6 +606,8 @@ const report = {
     thinCategoryPagesIndexable: stats.thinCategoryPagesIndexable,
     weakArticleTitles: stats.weakArticleTitles,
     weakSourceTitles: stats.weakSourceTitles,
+    nonCanonicalArticleCategoryPaths: stats.nonCanonicalArticleCategoryPaths,
+    nonCanonicalSourceArticleUrls: stats.nonCanonicalSourceArticleUrls,
     generatorQualityPromptIssues: stats.generatorQualityPromptIssues
   },
   duplicates: {

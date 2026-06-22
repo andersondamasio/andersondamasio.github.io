@@ -458,6 +458,29 @@ A auditoria estrita agora possui duas protecoes novas:
 - `weakSourceTitles`, para impedir que a base dos artigos automaticos volte a receber titulos fracos.
 - `weakArticleTitles`, para impedir que uma pagina indexavel seja publicada com `h1` fraco.
 
+### Caminhos canonicos de categorias
+
+Foi feita uma varredura do sitemap publicado para encontrar artigos indexaveis dentro de pastas fora da taxonomia canonica.
+
+Foram migrados 37 artigos que estavam em caminhos como:
+
+- `artigos/categoria/...`
+- `artigos/rdf-type/...`
+- `artigos/seguranca-online/...`
+- `artigos/seguranca-cibernetica/...`
+- `artigos/tecnologia-domestica/...`
+- `artigos/tecnologia-e-desenvolvimento/...`
+- `artigos/inteligencia-artificial` com slug acentuado no caminho.
+
+As paginas canonicas foram recriadas nas categorias corretas, como `artigos/seguranca/...`, `artigos/tecnologia/...`, `artigos/observabilidade/...` e `artigos/desenvolvimento-de-software/...`.
+
+As URLs antigas foram preservadas como paginas de compatibilidade ou obsoletas com `noindex, follow` e canonical para o destino correto, evitando quebra de acesso enquanto remove esses caminhos ruins do sitemap.
+
+A auditoria estrita agora tambem falha se:
+
+- Um artigo indexavel estiver em uma pasta de categoria fora do slug canonico.
+- Um registro de `titulos.json` apontar para uma URL de artigo com pasta de categoria nao canonica.
+
 ### Resultado da validacao final
 
 Em 22/06/2026, o comando abaixo foi executado com sucesso:
@@ -486,6 +509,8 @@ Resultado:
 - Nenhuma categoria fina indexavel.
 - Nenhum titulo fraco em `titulos.json`.
 - Nenhum `h1` fraco em artigo indexavel.
+- Nenhum artigo indexavel em caminho de categoria nao canonico.
+- Nenhuma URL fonte em `titulos.json` com pasta de categoria nao canonica.
 - Nenhuma instrucao ativa no gerador pedindo erros ortograficos propositais.
 - Nenhum erro restante de `ProfilePage` sem `mainEntity`.
 - `git diff --check` sem problemas de whitespace apos o rebuild completo.
