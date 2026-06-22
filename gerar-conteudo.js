@@ -61,10 +61,13 @@ function escapeHTML(code) {
 }
 
 function limparTitulo(raw) {
-  return raw
+  return String(raw || "")
     .replace(/<br\s*\/?>/gi, ' ')
     .replace(/<[^>]*>/g, '')
     .replace(/&[^;]+;/g, '')
+    .replace(/^\s*(?:novo\s+)?t[ií]tulo(?:\s+provocativo)?\s*[:：*-]*/i, '')
+    .replace(/^\s*conte[uú]do\s+editorial\s*[:：-]*/i, '')
+    .replace(/^["'“”]+|["'“”]+$/g, '')
     .replace(/^\*{1,2}(.+?)\*{1,2}$/, '$1')
     .trim();
 }
@@ -1413,10 +1416,13 @@ function gerarHeaderNavegacao(base = ".") {
 }
 
 function limparTitulo(raw) {
-  return raw
+  return String(raw || "")
     .replace(/<br\s*\/?>/gi, ' ')
     .replace(/<[^>]*>/g, '')
     .replace(/&[^;]+;/g, '')
+    .replace(/^\s*(?:novo\s+)?t[ií]tulo(?:\s+provocativo)?\s*[:：*-]*/i, '')
+    .replace(/^\s*conte[uú]do\s+editorial\s*[:：-]*/i, '')
+    .replace(/^["'“”]+|["'“”]+$/g, '')
     .replace(/^\*{1,2}(.+?)\*{1,2}$/, '$1')
     .trim();
 }
@@ -1424,8 +1430,9 @@ function limparTitulo(raw) {
 function processarArtigoComCodigo(content) {
   const linhas = content.trim().split('\n');
 
-  const tituloRaw = linhas.find(l => !/^t[ií]tulo[:：]/i.test(l) && l.trim().length > 10);
-  const titulo = limparTitulo(tituloRaw || "");
+  const titulo = linhas
+    .map(limparTitulo)
+    .find(linha => linha.length > 10 && !/^resumo\s*[:：]/i.test(linha)) || "";
 
   let tituloRemovido = false;
 

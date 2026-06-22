@@ -161,6 +161,28 @@ function isInvalidCategoryName(name) {
   return categoriaInvalida(clean, clean);
 }
 
+function cleanPageTitleForAudit(title) {
+  return String(title || "")
+    .replace(/\s*\|\s*.*$/i, "")
+    .replace(/\s*[–-]\s*Artigo Técnico por Anderson Damasio$/i, "")
+    .trim();
+}
+
+function isWeakArticleTitle(title) {
+  const clean = String(title || "").replace(/\s+/g, " ").trim();
+  const normalized = clean
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+
+  return !clean ||
+    /^(novo\s+)?titulo(\s+provocativo)?\s*[:：*-]/i.test(clean) ||
+    /^conteudo editorial\s*[:：-]?$/i.test(normalized) ||
+    /^voltar ao topo$/i.test(normalized) ||
+    /^e fascinante como/i.test(normalized) ||
+    /evoluiu nos ultimos anos, mas os erros continuam parecidos/i.test(normalized);
+}
+
 function findProfilePageWithoutMainEntity(value, out = []) {
   if (!value || typeof value !== "object") return out;
 
@@ -229,6 +251,8 @@ const stats = {
   deepPaginationIndexable: [],
   invalidCategoryPages: [],
   thinCategoryPagesIndexable: [],
+  weakArticleTitles: [],
+  weakSourceTitles: [],
   generatorQualityPromptIssues: []
 };
 
@@ -251,6 +275,18 @@ if (fs.existsSync(generatorPath)) {
     if (item.pattern.test(generatorSource)) {
       pushExample(stats.generatorQualityPromptIssues, item.label);
     }
+  }
+}
+
+const sourceTitlesPath = path.join(root, "titulos.json");
+if (fs.existsSync(sourceTitlesPath)) {
+  const sourceTitles = JSON.parse(fs.readFileSync(sourceTitlesPath, "utf8"));
+  if (Array.isArray(sourceTitles)) {
+    sourceTitles.forEach((item, index) => {
+      if (isWeakArticleTitle(item?.titulo)) {
+        pushExample(stats.weakSourceTitles, `${index}: ${item?.url || item?.noticiaOriginal || "(sem referencia)"} -> ${item?.titulo || "(sem titulo)"}`);
+      }
+    });
   }
 }
 
@@ -323,6 +359,12 @@ for (const file of walk(root)) {
   }
   if (!noindex && isArticleContentPage && relatedLinks < 2) {
     pushExample(stats.missingRelatedArticles, fileRel);
+  }
+  if (!noindex && isArticleContentPage) {
+    const articleTitle = $("h1").first().text().trim() || cleanPageTitleForAudit(title);
+    if (isWeakArticleTitle(articleTitle)) {
+      pushExample(stats.weakArticleTitles, `${fileRel}: ${articleTitle || "(sem titulo)"}`);
+    }
   }
   if (!noindex && isCategoryPage && isInvalidCategoryName(categoryName)) {
     pushExample(stats.invalidCategoryPages, `${fileRel}: ${categoryName || "(sem categoria)"}`);
@@ -515,6 +557,8 @@ const report = {
     deepPaginationIndexable: stats.deepPaginationIndexable,
     invalidCategoryPages: stats.invalidCategoryPages,
     thinCategoryPagesIndexable: stats.thinCategoryPagesIndexable,
+    weakArticleTitles: stats.weakArticleTitles,
+    weakSourceTitles: stats.weakSourceTitles,
     generatorQualityPromptIssues: stats.generatorQualityPromptIssues
   },
   duplicates: {

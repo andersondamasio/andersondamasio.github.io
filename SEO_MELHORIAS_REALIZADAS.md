@@ -439,6 +439,25 @@ Tambem foram removidos os arquivos antigos usados para inserir erros artificiais
 
 A auditoria estrita agora falha se o gerador voltar a pedir erros ortograficos ou importar o modulo antigo de erros. Isso protege os proximos artigos automaticos contra um padrao que poderia reduzir confianca, legibilidade e qualidade percebida.
 
+### Qualidade de titulos indexaveis
+
+Foi adicionada uma verificacao para bloquear titulos fracos na fonte `titulos.json` e nos `h1` de artigos indexaveis.
+
+A regra cobre casos como:
+
+- Titulo vazio.
+- `Titulo:` ou `Novo Titulo:` como prefixo publicado.
+- `Conteudo Editorial:` sem titulo real.
+- `Voltar ao topo` como titulo de artigo.
+- Padroes gerados de baixa qualidade como `E fascinante como ... evoluiu nos ultimos anos...`.
+
+Tambem foram corrigidos 19 registros antigos em `titulos.json`, incluindo 9 paginas indexaveis que ainda tinham `h1` fraco. As URLs publicadas foram preservadas para nao quebrar links ja conhecidos pelo Google; o ajuste foi feito em titulo, `h1`, metadados e listagens geradas.
+
+A auditoria estrita agora possui duas protecoes novas:
+
+- `weakSourceTitles`, para impedir que a base dos artigos automaticos volte a receber titulos fracos.
+- `weakArticleTitles`, para impedir que uma pagina indexavel seja publicada com `h1` fraco.
+
 ### Resultado da validacao final
 
 Em 22/06/2026, o comando abaixo foi executado com sucesso:
@@ -465,6 +484,8 @@ Resultado:
 - Nenhuma paginacao profunda indexavel.
 - Nenhuma categoria invalida indexavel.
 - Nenhuma categoria fina indexavel.
+- Nenhum titulo fraco em `titulos.json`.
+- Nenhum `h1` fraco em artigo indexavel.
 - Nenhuma instrucao ativa no gerador pedindo erros ortograficos propositais.
 - Nenhum erro restante de `ProfilePage` sem `mainEntity`.
 - `git diff --check` sem problemas de whitespace apos o rebuild completo.
