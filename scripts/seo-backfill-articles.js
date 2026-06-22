@@ -22,6 +22,10 @@ const {
 } = require("./seo-identity");
 const { gerarResourceHints } = require("./seo-resource-hints");
 const { normalizarRobotsMeta } = require("./seo-robots");
+const {
+  criarFonteSchema,
+  normalizarFonteUrl
+} = require("./seo-source-citation");
 
 const root = process.cwd();
 const rssUrl = `${siteUrl}/rss.xml`;
@@ -185,6 +189,65 @@ function jsonLdScript(data) {
   return `<script type="application/ld+json">\n${JSON.stringify(data, null, 2).replace(/<\/script/gi, "<\\/script")}\n</script>`;
 }
 
+function sourceHtml(sourceUrl, sourceTitle) {
+  const url = normalizarFonteUrl(sourceUrl);
+  if (!url) return "";
+
+  const title = String(sourceTitle || "").replace(/\s+/g, " ").trim() || "fonte original";
+  return `<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="${escapeAttribute(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>.</p>
+</section>`;
+}
+
+function ensureSourceStyles(html) {
+  if (/\.article-source\s*\{/i.test(html)) return html;
+
+  const css = `.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0; }
+.article-source a { font-weight: 700; }
+`;
+
+  return html.replace(/<\/style>/i, `${css}</style>`);
+}
+
+function normalizarHtmlArtigoMalformado(html) {
+  const normalizado = String(html || "")
+    .replace(/<p>\s*<\/div>/gi, "</div>")
+    .replace(/<\/div>\s*<\/p>/gi, "</div>");
+
+  return normalizado.replace(
+    /(<div\s+class=["'][^"']*\barticle-body\b[^"']*["'][^>]*>)([\s\S]*?)(<\/div>)/i,
+    (_, open, body, close) => `${open}${String(body || "")
+      .replace(/<script\b/gi, "&lt;script")
+      .replace(/<\/script>/gi, "&lt;/script&gt;")}${close}`
+  );
+}
+
+function inserirFonteEditorial(html, sourceUrl, sourceTitle) {
+  const fonte = sourceHtml(sourceUrl, sourceTitle);
+  if (!fonte) return html;
+
+  const htmlNormalizado = normalizarHtmlArtigoMalformado(html);
+  const semFonteAnterior = htmlNormalizado.replace(/\n?<section\s+class=["']article-source["'][\s\S]*?<\/section>\s*/gi, "\n");
+  const comEstilos = ensureSourceStyles(semFonteAnterior);
+
+  const comFonteNoCorpo = comEstilos.replace(
+    /(<div\s+class=["'][^"']*\barticle-body\b[^"']*["'][^>]*>[\s\S]*?<\/div>)/i,
+    (_, articleBody) => `${articleBody}\n${fonte}`
+  );
+  if (comFonteNoCorpo !== comEstilos) return comFonteNoCorpo;
+
+  const antesDoVoltar = comEstilos.replace(
+    /(<p\s+class=["'][^"']*\bback-link\b[^"']*["'][^>]*>)/i,
+    (_, backLink) => `${fonte}\n${backLink}`
+  );
+  if (antesDoVoltar !== comEstilos) return antesDoVoltar;
+
+  return comEstilos.replace(/(<\/main>)/i, (_, mainClose) => `${fonte}\n${mainClose}`);
+}
+
 function breadcrumb(items) {
   return {
     "@context": "https://schema.org",
@@ -198,7 +261,7 @@ function breadcrumb(items) {
   };
 }
 
-function buildSeoHead({ title, description, url, category, published, articleText }) {
+function buildSeoHead({ title, description, url, category, published, articleText, sourceUrl, sourceTitle }) {
   const pageTitle = buildPageTitle(title, category);
   const pageDescription = buildDescription(description, title);
   const pageUrl = absoluteUrl(url);
@@ -213,6 +276,7 @@ function buildSeoHead({ title, description, url, category, published, articleTex
     articleText,
     publishedDate: dateIso
   });
+  const sourceCitation = criarFonteSchema({ sourceUrl, sourceTitle });
   const keywordsContent = keywordsMetaContent(articleMetadata.keywords);
 
   const structuredData = [
@@ -232,6 +296,10 @@ function buildSeoHead({ title, description, url, category, published, articleTex
       "articleSection": category,
       "inLanguage": "pt-BR",
       ...articleMetadata,
+      ...(sourceCitation ? {
+        "isBasedOn": sourceCitation,
+        "citation": sourceCitation.url
+      } : {}),
       "author": criarPessoaSchema(),
       "copyrightHolder": criarPessoaSchema(),
       "publisher": criarOrganizacaoSchema()
@@ -413,6 +481,8 @@ for (const file of walk(root)) {
   const metaByTitle = byTitle.get(normalizeText(inferredTitle));
   const title = metaByUrl?.titulo || inferredTitle;
   const category = inferCategory(fileRel, metaByUrl);
+  const sourceUrl = metaByUrl?.urlFonte || metaByTitle?.urlFonte;
+  const sourceTitle = metaByUrl?.noticiaOriginal || metaByTitle?.noticiaOriginal || title;
   const articleText = $(".article-body").text() || $("main").text() || $("body").text();
   const currentDescription = $('meta[name="description" i]').attr("content") || "";
   const descriptionSource = cleanText(articleText).length >= 70 ? articleText : currentDescription || title;
@@ -422,11 +492,15 @@ for (const file of walk(root)) {
     url: fileRel,
     category,
     published: metaByUrl?.data || metaByTitle?.data,
-    articleText
+    articleText,
+    sourceUrl,
+    sourceTitle
   });
 
   const htmlComImagensOtimizadas = otimizarImagensArtigo(html, title, fileRel);
-  const updatedHtml = htmlComImagensOtimizadas
+  const htmlNormalizado = normalizarHtmlArtigoMalformado(htmlComImagensOtimizadas);
+  const htmlComFonteEditorial = inserirFonteEditorial(htmlNormalizado, sourceUrl, sourceTitle);
+  const updatedHtml = htmlComFonteEditorial
     .replace(/<html(?![^>]*\blang=)([^>]*)>/i, '<html lang="pt-BR"$1>')
     .replace(/(<head[\s\S]*?>)([\s\S]*?)(<\/head>)/i, (_, open, head, close) => {
       return `${open}${rebuildHead(head, seo)}${close}`;

@@ -39,6 +39,10 @@ const {
   siteName,
   siteUrl
 } = require('./scripts/seo-identity');
+const {
+  criarFonteSchema,
+  normalizarFonteUrl
+} = require('./scripts/seo-source-citation');
 const { gerarResourceHints } = require('./scripts/seo-resource-hints');
 const { normalizarRobotsMeta } = require('./scripts/seo-robots');
 
@@ -562,6 +566,10 @@ function gerarDescricaoSeo(texto, tituloFallback = "") {
 
 function normalizarHeadingsCorpoArtigo(html) {
   return String(html || "")
+    .replace(/<p>\s*<\/div>/gi, "</div>")
+    .replace(/<\/div>\s*<\/p>/gi, "</div>")
+    .replace(/<script\b/gi, "&lt;script")
+    .replace(/<\/script>/gi, "&lt;/script&gt;")
     .replace(/<h1(\s[^>]*)?>/gi, "<h2$1>")
     .replace(/<\/h1>/gi, "</h2>");
 }
@@ -741,6 +749,17 @@ ${modifiedTime ? `<meta property="${type === "article" ? "article:modified_time"
 <meta name="twitter:image" content="${escapeAttribute(imageUrl)}">
 ${imageAltText ? `<meta name="twitter:image:alt" content="${escapeAttribute(imageAltText)}">` : ""}
 ${dados.filter(Boolean).map(jsonLdScript).join("\n")}`;
+}
+
+function gerarFonteArtigoHtml(sourceUrl, sourceTitle) {
+  const url = normalizarFonteUrl(sourceUrl);
+  if (!url) return "";
+
+  const title = String(sourceTitle || "").replace(/\s+/g, " ").trim() || "fonte original";
+  return `<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="${escapeAttribute(url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(title)}</a>.</p>
+</section>`;
 }
 
 const hackerNewsUrl = "https://hacker-news.firebaseio.com/v0/topstories.json";
@@ -1665,6 +1684,10 @@ const urlLocal = `artigos/${categoriaSlug}/${slug}.html`;
       articleText,
       publishedDate: dataISO
     });
+    const sourceCitation = criarFonteSchema({
+      sourceUrl: noticia.url,
+      sourceTitle: noticia.titulo
+    });
 
 
 
@@ -1699,6 +1722,10 @@ ${gerarSeoHead({
       "articleSection": categoria,
       "inLanguage": "pt-BR",
       ...articleMetadata,
+      ...(sourceCitation ? {
+        "isBasedOn": sourceCitation,
+        "citation": sourceCitation.url
+      } : {}),
       "author": criarPessoaSchema(),
       "copyrightHolder": criarPessoaSchema(),
       "publisher": criarOrganizacaoSchema()
@@ -1767,6 +1794,10 @@ a { color: var(--link); text-decoration: none; font-weight: bold; }
 a:hover { text-decoration: underline; color: var(--link-hover);}
 .article-meta { color: var(--meta); font-size: 0.95rem; margin-bottom: 1.5rem; }
 .article-body { font-size: 1.05rem; line-height: 1.7; }
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0; }
+.article-source a { font-weight: 700; }
 pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
 code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
 .copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
@@ -1801,6 +1832,7 @@ ${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="${escapeAttribute(titulo)}" 
 </script>
 
 <div class="article-body">${normalizarHeadingsCorpoArtigo(marked.parse(corpoArtigo))}</div>
+${gerarFonteArtigoHtml(noticia.url, noticia.titulo)}
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

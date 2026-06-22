@@ -6,7 +6,7 @@
 <title>Inovações no DOM: Como Svelte Attachments Transformam a Interatividade das Aplicações Web</title>
 <meta name="description" content="Quando falamos em desenvolvimento web, a interatividade e a reatividade são essenciais para criar experiências envolventes. É por isso que a nova...">
 <meta name="author" content="Anderson Damasio">
-<meta name="keywords" content="Programação, attachments, svelte, aplicacoes, codigo, gsap, interatividade, inovacoes, transformam, comportamentos">
+<meta name="keywords" content="Programação, attachments, svelte, aplicacoes, codigo, interatividade, inovacoes, transformam, comportamentos, reatividade">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/programacao/inovacoes-no-dom-como-svelte-attachments-transformam-a-interatividade-das-aplicacoes-web.html">
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
@@ -62,13 +62,13 @@
     "svelte",
     "aplicacoes",
     "codigo",
-    "gsap",
     "interatividade",
     "inovacoes",
     "transformam",
-    "comportamentos"
+    "comportamentos",
+    "reatividade"
   ],
-  "wordCount": 527,
+  "wordCount": 510,
   "about": {
     "@type": "Thing",
     "name": "Programação"
@@ -92,15 +92,21 @@
     },
     {
       "@type": "Thing",
-      "name": "gsap"
+      "name": "interatividade"
     },
     {
       "@type": "Thing",
-      "name": "interatividade"
+      "name": "inovacoes"
     }
   ],
   "isAccessibleForFree": true,
   "copyrightYear": 2025,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "Svelte Releases Attachments to Enhance DOM with Interactive and Reactive Features",
+    "url": "https://www.infoq.com/news/2025/06/svelte-releases-attachments/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  "citation": "https://www.infoq.com/news/2025/06/svelte-releases-attachments/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -227,6 +233,10 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0; }
+.article-source a { font-weight: 700; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -281,7 +291,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 <h3>Exemplo Prático</h3>
 <p>Vamos considerar um exemplo onde usamos a biblioteca GSAP para animação. Abaixo, temos um código que utiliza o <strong>ScrambleTextPlugin</strong> para embaralhar um texto:</p>
 <pre>
-<script>
+&lt;script>
   import { gsap } from 'gsap'
   import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin'
   gsap.registerPlugin(ScrambleTextPlugin)
@@ -296,10 +306,14 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
     }
   }
   let text = $state('Svelte')
-</script>
+&lt;/script&gt;
 <!-- tracking context -->
 <input type="text" bind:value={text} />
 <div {@attach scramble(text)}></div>
+<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/news/2025/06/svelte-releases-attachments/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Svelte Releases Attachments to Enhance DOM with Interactive and Reactive Features</a>.</p>
+</section>
 </pre>
 <p>Com esse código, quando a página é carregada, o texto "Svelte" será embaralhado. E o melhor: se o usuário mudar o valor no input, o texto será embaralhado novamente. Isso demonstra a reatividade em ação, algo que pode ser muito poderoso em aplicações interativas.</p>
 <h2>Dicas Avançadas</h2>

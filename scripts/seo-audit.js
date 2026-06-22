@@ -19,6 +19,10 @@ const {
 const { arquivoLocalImagem } = require("./seo-image-dimensions");
 const { authorId, authorSameAs } = require("./seo-identity");
 const { robotsTemPreviewAmplo } = require("./seo-robots");
+const {
+  artigoTemFonteEditorial,
+  normalizarFonteUrl
+} = require("./seo-source-citation");
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
@@ -293,6 +297,10 @@ const stats = {
   articleJsonLdMissingImageVariants: [],
   articleAuthorMissingLinkedIdentity: [],
   articleJsonLdMissingRelevanceMetadata: [],
+  articleMissingSourceCitation: [],
+  articleMalformedSourceCitation: [],
+  malformedArticleHtml: [],
+  articleBodyUnsafeHtml: [],
   imagesWithoutAlt: [],
   imagesWithoutAsyncDecoding: [],
   imagesWithoutDimensions: [],
@@ -328,6 +336,7 @@ const descriptions = new Map();
 const canonicals = new Map();
 const robotsByFile = new Map();
 const indexableCanonicalByFile = new Map();
+const sourceByFile = new Map();
 
 const generatorPath = path.join(root, "gerar-conteudo.js");
 if (fs.existsSync(generatorPath)) {
@@ -356,6 +365,14 @@ if (fs.existsSync(sourceTitlesPath)) {
       const nonCanonicalPath = nonCanonicalArticleCategoryPath(item?.url, item?.titulo);
       if (nonCanonicalPath) {
         pushExample(stats.nonCanonicalSourceArticleUrls, `${index}: ${item?.url} -> ${nonCanonicalPath.expectedSlug}`);
+      }
+      const sourceUrl = normalizarFonteUrl(item?.urlFonte);
+      const local = normalizeLocalUrl(item?.url);
+      if (sourceUrl && local) {
+        sourceByFile.set(local, {
+          sourceUrl,
+          sourceTitle: item?.noticiaOriginal || item?.titulo || "Fonte original"
+        });
       }
     });
   }
@@ -446,7 +463,27 @@ for (const file of walk(root)) {
   if (!noindex && isArticleContentPage && relatedLinks < 2) {
     pushExample(stats.missingRelatedArticles, fileRel);
   }
+  const expectedSource = sourceByFile.get(fileRel);
+  if (!noindex && expectedSource) {
+    const sourceAnchors = $(".article-source a[href]").toArray();
+    if (sourceAnchors.some(link => $(link).children().length > 0)) {
+      pushExample(stats.articleMalformedSourceCitation, `${fileRel}: link de fonte contem HTML interno`);
+    }
+    const hasVisibleSource = $("a[href]").toArray().some(link => {
+      return normalizarFonteUrl($(link).attr("href")) === expectedSource.sourceUrl;
+    });
+    if (!hasVisibleSource) {
+      pushExample(stats.articleMissingSourceCitation, `${fileRel}: link visivel ausente`);
+    }
+  }
   if (!noindex && isArticleContentPage) {
+    if (/<p>\s*<\/div>|<\/div>\s*<\/p>/i.test(html)) {
+      pushExample(stats.malformedArticleHtml, fileRel);
+    }
+    const articleBodyHtml = html.match(/<div\s+class=["'][^"']*\barticle-body\b[^"']*["'][^>]*>([\s\S]*?)<\/div>/i)?.[1] || "";
+    if (/<\/?script\b/i.test(articleBodyHtml)) {
+      pushExample(stats.articleBodyUnsafeHtml, fileRel);
+    }
     const articleTitle = $("h1").first().text().trim() || cleanPageTitleForAudit(title);
     if (isWeakArticleTitle(articleTitle)) {
       pushExample(stats.weakArticleTitles, `${fileRel}: ${articleTitle || "(sem titulo)"}`);
@@ -512,6 +549,10 @@ for (const file of walk(root)) {
         }
         if (!artigoTemMetadadosDeRelevancia(item)) {
           pushExample(stats.articleJsonLdMissingRelevanceMetadata, fileRel);
+        }
+        const expectedSource = sourceByFile.get(fileRel);
+        if (expectedSource && !artigoTemFonteEditorial(item, expectedSource.sourceUrl)) {
+          pushExample(stats.articleMissingSourceCitation, `${fileRel}: JSON-LD sem fonte`);
         }
       }
     }
@@ -661,6 +702,10 @@ const report = {
     articleJsonLdMissingImageVariants: stats.articleJsonLdMissingImageVariants,
     articleAuthorMissingLinkedIdentity: stats.articleAuthorMissingLinkedIdentity,
     articleJsonLdMissingRelevanceMetadata: stats.articleJsonLdMissingRelevanceMetadata,
+    articleMissingSourceCitation: stats.articleMissingSourceCitation,
+    articleMalformedSourceCitation: stats.articleMalformedSourceCitation,
+    malformedArticleHtml: stats.malformedArticleHtml,
+    articleBodyUnsafeHtml: stats.articleBodyUnsafeHtml,
     imagesWithoutAlt: stats.imagesWithoutAlt,
     imagesWithoutAsyncDecoding: stats.imagesWithoutAsyncDecoding,
     imagesWithoutDimensions: stats.imagesWithoutDimensions,

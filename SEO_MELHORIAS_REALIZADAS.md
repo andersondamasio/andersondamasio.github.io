@@ -574,6 +574,47 @@ O `BlogPosting` tambem passou a receber `copyrightHolder` com a mesma entidade c
 
 A auditoria estrita agora falha se um artigo indexavel perder esses metadados de relevancia no JSON-LD. O gerador tambem foi reforcado para limpar titulos que venham com Markdown (`##`) ou prefixo `Introdução:`, evitando que novos artigos saiam com titulo fraco ou artificial.
 
+### Fontes editoriais dos artigos
+
+Foi criado o helper `scripts/seo-source-citation.js` para centralizar o tratamento das fontes originais usadas pelos artigos gerados automaticamente.
+
+Quando um item em `titulos.json` possui `urlFonte`, o pipeline agora:
+
+- Normaliza a URL da fonte.
+- Inclui uma secao visivel `Fonte consultada` no fim do artigo.
+- Usa o titulo original (`noticiaOriginal`) como texto do link quando disponivel.
+- Adiciona `rel="noopener noreferrer"` nos links externos de fonte.
+- Enriquece o `BlogPosting` com `isBasedOn` e `citation`.
+- Faz o backfill das fontes nos artigos antigos.
+
+A auditoria estrita passou a falhar quando um artigo indexavel tem `urlFonte` em `titulos.json`, mas nao possui a fonte visivel no HTML, a referencia estruturada no JSON-LD ou quando o link de fonte contem HTML interno indevido.
+
+### Saneamento do HTML dos artigos
+
+Durante a validacao das fontes, foram encontrados artigos com HTML tolerado pelo navegador, mas ruim para parsers de SEO:
+
+- Fechamentos invalidos como `<p></div>` e `</div></p>`.
+- Exemplos de codigo contendo `<script>` cru dentro de `.article-body`.
+
+O gerador e o backfill agora normalizam esses casos automaticamente:
+
+- Corrigem fechamentos invalidos no corpo do artigo.
+- Neutralizam `<script>` e `</script>` dentro de `.article-body`, mantendo o texto visivel como exemplo de codigo e evitando que o restante da pagina seja interpretado como JavaScript.
+- Mantem os scripts reais do layout, Analytics e Ezoic fora dessa neutralizacao.
+
+A auditoria estrita tambem ganhou as verificacoes `malformedArticleHtml` e `articleBodyUnsafeHtml`, para impedir que esse tipo de HTML volte a ser publicado sem ser detectado.
+
+### Recursos externos no Google Search Console
+
+Os erros mostrados no Search Console em `Recursos da pagina` ainda podem aparecer enquanto o site carregar Ezoic e Google Analytics.
+
+Na verificacao de 22/06/2026, o HTML publicado ainda continha:
+
+- Google tag/Analytics (`G-T15623VZYE`).
+- Scripts do Ezoic/Gatekeeper Consent.
+
+Esses avisos sao de recursos terceiros, como Ezoic, DoubleClick e Google Analytics, e nao indicam por si so que o HTML principal nao foi indexado. Se a prioridade for eliminar esses avisos do Search Console, sera necessario remover, desativar ou condicionar o carregamento de Ezoic/Analytics; se a prioridade for manter monetizacao e medicao, eles podem continuar aparecendo como falhas externas eventuais.
+
 ### Workflow automatico dos proximos artigos
 
 O workflow horario `.github/workflows/gerar-html.yml`, responsavel por gerar e commitar novos artigos, foi ajustado para reduzir risco de travamento e garantir que os proximos conteudos passem pelo mesmo pipeline de SEO.
@@ -597,6 +638,13 @@ Em 22/06/2026, o comando abaixo foi executado com sucesso:
 npm run seo:maintain
 ```
 
+Tambem foram executados com sucesso apos os ajustes de fonte e saneamento do HTML:
+
+```bash
+npm run seo:rebuild
+npm run seo:audit:strict
+```
+
 Resultado:
 
 - 17.521 arquivos HTML auditados.
@@ -615,6 +663,9 @@ Resultado:
 - Nenhuma imagem adicional de artigo sem `loading="lazy"`.
 - Nenhum `BlogPosting` sem identidade canônica do autor (`@id` + `sameAs`).
 - Nenhum `BlogPosting` sem `keywords`, `wordCount`, `about`, `mentions`, `isAccessibleForFree`, `copyrightYear` e `copyrightHolder`.
+- Nenhum artigo indexavel com `urlFonte` sem fonte visivel ou sem `isBasedOn`/`citation` no JSON-LD.
+- Nenhum artigo indexavel com HTML malformado no fechamento do corpo.
+- Nenhum artigo indexavel com `<script>` cru dentro de `.article-body`.
 - Nenhum artigo indexavel com titulo iniciando por `##` ou `Introdução:`.
 - Nenhum link interno quebrado.
 - Nenhuma URL `noindex` no sitemap.
