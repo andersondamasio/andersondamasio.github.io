@@ -3,12 +3,15 @@ const path = require("path");
 const cheerio = require("cheerio");
 const {
   defaultSeoImage,
-  defaultPublisherLogo,
   defaultSeoImageAlt,
   defaultSeoImageWidth,
   defaultSeoImageHeight,
   getArticleStructuredImages
 } = require("./seo-assets");
+const {
+  criarMetadadosArtigo,
+  keywordsMetaContent
+} = require("./seo-article-metadata");
 const { lerDimensoesImagemLocal } = require("./seo-image-dimensions");
 const {
   authorName,
@@ -195,7 +198,7 @@ function breadcrumb(items) {
   };
 }
 
-function buildSeoHead({ title, description, url, category, published }) {
+function buildSeoHead({ title, description, url, category, published, articleText }) {
   const pageTitle = buildPageTitle(title, category);
   const pageDescription = buildDescription(description, title);
   const pageUrl = absoluteUrl(url);
@@ -204,6 +207,13 @@ function buildSeoHead({ title, description, url, category, published }) {
   const dateIso = publishedDate && !Number.isNaN(publishedDate.getTime())
     ? publishedDate.toISOString()
     : null;
+  const articleMetadata = criarMetadadosArtigo({
+    title,
+    category,
+    articleText,
+    publishedDate: dateIso
+  });
+  const keywordsContent = keywordsMetaContent(articleMetadata.keywords);
 
   const structuredData = [
     {
@@ -221,7 +231,9 @@ function buildSeoHead({ title, description, url, category, published }) {
       "dateModified": dateIso,
       "articleSection": category,
       "inLanguage": "pt-BR",
+      ...articleMetadata,
       "author": criarPessoaSchema(),
+      "copyrightHolder": criarPessoaSchema(),
       "publisher": criarOrganizacaoSchema()
     },
     breadcrumb([
@@ -235,6 +247,7 @@ function buildSeoHead({ title, description, url, category, published }) {
   return `<title>${escapeHtml(pageTitle)}</title>
 <meta name="description" content="${escapeAttribute(pageDescription)}">
 <meta name="author" content="${escapeAttribute(authorName)}">
+${keywordsContent ? `<meta name="keywords" content="${escapeAttribute(keywordsContent)}">` : ""}
 <meta name="robots" content="${escapeAttribute(robotsMeta)}">
 <link rel="canonical" href="${escapeAttribute(pageUrl)}">
 <link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
@@ -408,7 +421,8 @@ for (const file of walk(root)) {
     description: descriptionSource,
     url: fileRel,
     category,
-    published: metaByUrl?.data || metaByTitle?.data
+    published: metaByUrl?.data || metaByTitle?.data,
+    articleText
   });
 
   const htmlComImagensOtimizadas = otimizarImagensArtigo(html, title, fileRel);

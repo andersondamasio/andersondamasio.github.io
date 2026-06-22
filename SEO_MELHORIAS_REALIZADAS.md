@@ -557,6 +557,23 @@ Os artigos (`BlogPosting`) agora usam essa entidade canônica no campo `author`,
 
 A auditoria estrita agora falha se um `BlogPosting` indexavel nao tiver o autor conectado ao `@id` canonico e ao `sameAs` esperado.
 
+### Relevancia estruturada dos artigos
+
+Foi criado o helper `scripts/seo-article-metadata.js` para enriquecer automaticamente os artigos sem depender de preenchimento manual.
+
+Esse helper gera, a partir do titulo, categoria e corpo do artigo:
+
+- `keywords` limitadas e derivadas do conteudo.
+- `wordCount` real do texto do artigo.
+- `about` com a categoria canonica.
+- `mentions` com entidades/termos relevantes.
+- `isAccessibleForFree`.
+- `copyrightYear`.
+
+O `BlogPosting` tambem passou a receber `copyrightHolder` com a mesma entidade canonica do autor, e o `head` dos artigos passou a receber `meta name="keywords"` gerado pelo mesmo helper.
+
+A auditoria estrita agora falha se um artigo indexavel perder esses metadados de relevancia no JSON-LD. O gerador tambem foi reforcado para limpar titulos que venham com Markdown (`##`) ou prefixo `Introdução:`, evitando que novos artigos saiam com titulo fraco ou artificial.
+
 ### Workflow automatico dos proximos artigos
 
 O workflow horario `.github/workflows/gerar-html.yml`, responsavel por gerar e commitar novos artigos, foi ajustado para reduzir risco de travamento e garantir que os proximos conteudos passem pelo mesmo pipeline de SEO.
@@ -597,6 +614,8 @@ Resultado:
 - Nenhuma primeira imagem de artigo sem `fetchpriority="high"`.
 - Nenhuma imagem adicional de artigo sem `loading="lazy"`.
 - Nenhum `BlogPosting` sem identidade canônica do autor (`@id` + `sameAs`).
+- Nenhum `BlogPosting` sem `keywords`, `wordCount`, `about`, `mentions`, `isAccessibleForFree`, `copyrightYear` e `copyrightHolder`.
+- Nenhum artigo indexavel com titulo iniciando por `##` ou `Introdução:`.
 - Nenhum link interno quebrado.
 - Nenhuma URL `noindex` no sitemap.
 - Nenhum problema em `robots.txt`.

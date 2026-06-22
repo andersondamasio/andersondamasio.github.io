@@ -5,6 +5,7 @@ const {
   defaultSeoImage,
   defaultArticleImages
 } = require("./seo-assets");
+const { artigoTemMetadadosDeRelevancia } = require("./seo-article-metadata");
 const {
   categoriasCanonicas,
   minArtigosCategoriaIndexavel,
@@ -220,7 +221,9 @@ function isWeakArticleTitle(title) {
     .replace(/[\u0300-\u036f]/g, "");
 
   return !clean ||
+    /^#{1,6}\s+/.test(clean) ||
     /^(novo\s+)?titulo(\s+provocativo)?\s*[:：*-]/i.test(clean) ||
+    /^introducao\s*[:：-]/i.test(normalized) ||
     /^conteudo editorial\s*[:：-]?$/i.test(normalized) ||
     /^voltar ao topo$/i.test(normalized) ||
     /^e fascinante como/i.test(normalized) ||
@@ -289,6 +292,7 @@ const stats = {
   missingJsonLd: [],
   articleJsonLdMissingImageVariants: [],
   articleAuthorMissingLinkedIdentity: [],
+  articleJsonLdMissingRelevanceMetadata: [],
   imagesWithoutAlt: [],
   imagesWithoutAsyncDecoding: [],
   imagesWithoutDimensions: [],
@@ -506,6 +510,9 @@ for (const file of walk(root)) {
         if (!authorHasLinkedIdentity(item.author)) {
           pushExample(stats.articleAuthorMissingLinkedIdentity, fileRel);
         }
+        if (!artigoTemMetadadosDeRelevancia(item)) {
+          pushExample(stats.articleJsonLdMissingRelevanceMetadata, fileRel);
+        }
       }
     }
   });
@@ -653,6 +660,7 @@ const report = {
     missingJsonLd: stats.missingJsonLd,
     articleJsonLdMissingImageVariants: stats.articleJsonLdMissingImageVariants,
     articleAuthorMissingLinkedIdentity: stats.articleAuthorMissingLinkedIdentity,
+    articleJsonLdMissingRelevanceMetadata: stats.articleJsonLdMissingRelevanceMetadata,
     imagesWithoutAlt: stats.imagesWithoutAlt,
     imagesWithoutAsyncDecoding: stats.imagesWithoutAsyncDecoding,
     imagesWithoutDimensions: stats.imagesWithoutDimensions,

@@ -15,12 +15,16 @@ const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { extrairResumoDaNoticia, extrairResumoDaNoticiaReadability } = require('./scripts/extrairResumoDaNoticia');
 const {
   defaultSeoImage,
-  defaultPublisherLogo,
   defaultSeoImageAlt,
   defaultSeoImageWidth,
   defaultSeoImageHeight,
   getArticleStructuredImages
 } = require('./scripts/seo-assets');
+const {
+  criarMetadadosArtigo,
+  keywordsMetaContent,
+  limparTextoArtigo
+} = require('./scripts/seo-article-metadata');
 const {
   categoriasCanonicas,
   minArtigosCategoriaIndexavel,
@@ -76,8 +80,10 @@ function limparTitulo(raw) {
     .replace(/<br\s*\/?>/gi, ' ')
     .replace(/<[^>]*>/g, '')
     .replace(/&[^;]+;/g, '')
+    .replace(/^\s{0,3}#{1,6}\s+/, '')
     .replace(/^\s*(?:novo\s+)?t[ií]tulo(?:\s+provocativo)?\s*[:：*-]*/i, '')
     .replace(/^\s*conte[uú]do\s+editorial\s*[:：-]*/i, '')
+    .replace(/^\s*introdu[cç][aã]o\s*[:：-]\s*/i, '')
     .replace(/^["'“”]+|["'“”]+$/g, '')
     .replace(/^\*{1,2}(.+?)\*{1,2}$/, '$1')
     .trim();
@@ -693,6 +699,7 @@ function gerarSeoHead({
   robots = "index, follow",
   publishedTime = null,
   modifiedTime = null,
+  keywords = [],
   structuredData = []
 }) {
   const canonicalUrl = absoluteUrl(canonicalPath);
@@ -704,11 +711,13 @@ function gerarSeoHead({
   const descricao = gerarDescricaoSeo(description, title);
   const titulo = limitarTituloSeo(title, 100);
   const robotsMeta = normalizarRobotsMeta(robots);
+  const keywordsContent = keywordsMetaContent(keywords);
   const dados = Array.isArray(structuredData) ? structuredData : [structuredData];
 
   return `<title>${escapeHTML(titulo)}</title>
 <meta name="description" content="${escapeAttribute(descricao)}">
 <meta name="author" content="${escapeAttribute(authorName)}">
+${keywordsContent ? `<meta name="keywords" content="${escapeAttribute(keywordsContent)}">` : ""}
 <meta name="robots" content="${escapeAttribute(robotsMeta)}">
 <link rel="canonical" href="${escapeAttribute(canonicalUrl)}">
 <link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
@@ -1649,6 +1658,13 @@ const urlLocal = `artigos/${categoriaSlug}/${slug}.html`;
       : "";
     const articleUrl = absoluteUrl(urlLocal);
     const articleImage = imagemCapaUrl || defaultSeoImage;
+    const articleText = limparTextoArtigo(corpoArtigo);
+    const articleMetadata = criarMetadadosArtigo({
+      title: titulo,
+      category: categoria,
+      articleText,
+      publishedDate: dataISO
+    });
 
 
 
@@ -1665,6 +1681,7 @@ ${gerarSeoHead({
   image: articleImage,
   publishedTime: dataISO,
   modifiedTime: dataISO,
+  keywords: articleMetadata.keywords,
   structuredData: [
     {
       "@context": "https://schema.org",
@@ -1681,7 +1698,9 @@ ${gerarSeoHead({
       "dateModified": dataISO,
       "articleSection": categoria,
       "inLanguage": "pt-BR",
+      ...articleMetadata,
       "author": criarPessoaSchema(),
+      "copyrightHolder": criarPessoaSchema(),
       "publisher": criarOrganizacaoSchema()
     },
     criarBreadcrumbJsonLd([
