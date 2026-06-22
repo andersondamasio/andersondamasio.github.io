@@ -537,6 +537,21 @@ A auditoria estrita agora falha se encontrar:
 - Imagens seguintes de artigo sem `loading="lazy"`.
 - Scripts de terceiros conhecidos sem `preconnect`/`dns-prefetch`.
 
+### Workflow automatico dos proximos artigos
+
+O workflow horario `.github/workflows/gerar-html.yml`, responsavel por gerar e commitar novos artigos, foi ajustado para reduzir risco de travamento e garantir que os proximos conteudos passem pelo mesmo pipeline de SEO.
+
+Mudancas aplicadas:
+
+- Troca do `git clone` manual com `GH_PAT` por `actions/checkout@v4`.
+- Uso de `GITHUB_TOKEN` com `permissions: contents: write` para permitir commit/push pelo workflow.
+- Atualizacao para `actions/setup-node@v4` com Node.js 20 e cache npm nativo.
+- Inclusao de `concurrency` para cancelar execucoes horarias antigas ainda em andamento.
+- Inclusao de `timeout-minutes: 45` para evitar execucoes presas indefinidamente.
+- Manutencao do passo `npm run seo:maintain` antes do commit.
+
+Isso evita que uma falha de segredo ou autenticacao no clone interrompa a geracao automatica, e mantem a regra de que todo artigo novo precisa passar por rebuild e auditoria SEO antes de ser publicado.
+
 ### Resultado da validacao final
 
 Em 22/06/2026, o comando abaixo foi executado com sucesso:

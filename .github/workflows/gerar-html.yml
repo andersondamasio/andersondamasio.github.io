@@ -3,30 +3,29 @@ name: gerar-e-commitar
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: '0 * * * *'
+    - cron: "0 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gerar-e-commitar
+  cancel-in-progress: true
 
 jobs:
   gerar-e-commitar:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
 
     steps:
-      - name: Clonar repositório com autenticação
-        run: |
-          git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }} .
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
 
       - name: Configurar Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
-
-      - name: Cache do npm
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
+          node-version: "20"
+          cache: npm
 
       - name: Instalar dependências do sistema para o Sharp
         run: sudo apt-get update && sudo apt-get install -y libvips-dev
@@ -36,7 +35,6 @@ jobs:
 
       - name: Instalar Chromium para Puppeteer
         run: npx puppeteer browsers install chrome
-
 
       - name: Gerar conteúdo com ChatGPT
         run: node gerar-conteudo.js
@@ -48,18 +46,14 @@ jobs:
       - name: Rebuild e auditoria SEO
         run: npm run seo:maintain
 
-      - name: Ajustar remote com token
-        run: |
-          git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }} 
-
       - name: Commitar alterações
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add -A -- . ':(exclude)node_modules/**'
           if git diff --cached --quiet; then
-            echo "⚠️ Nada para commitar, encerrando."
+            echo "Nada para commitar, encerrando."
           else
-            git commit -m "📝 Novo artigo com estilo refinado"
+            git commit -m "Novo artigo com SEO validado"
             git push origin HEAD:main
           fi
