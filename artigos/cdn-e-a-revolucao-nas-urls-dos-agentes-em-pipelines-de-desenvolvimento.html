@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Você já parou para pensar no impacto real de CDN Domain URL change for Agents in Pipelines nos sistemas modernos? A mudança nos URLs dos agentes em pipelines de desenvolvimento pode parecer um detalhe técnico, mas tem o potencial de revolucionar a forma como lidamos com conteúdo estático e dinâmico em aplicações web.<br>Para aqueles que não estão familiarizados, CDN (Content Delivery Network) é uma rede de servidores distribuídos geograficamente que armazena cópias de conteúdo estático, como imagens, scripts e folhas de estilo, com o objetivo de acelerar o carregamento de páginas web. Ao utilizar uma CDN, o conteúdo é servido a partir do servidor mais próximo do usuário, reduzindo a latência e melhorando a experiência do usuário.<br>A mudança nas URLs dos agentes em pipelines de desenvolvimento está diretamente relacionada à forma como os recursos da CDN são acessados e utilizados em um projeto. Anteriormente, era comum configurar manualmente o endereço da CDN em cada chamada de recurso estático no código-fonte da aplicação. Com a evolução das práticas de desenvolvimento e a automação de pipelines, essa abordagem se mostrou ineficiente e propensa a erros.<br>Para lidar com essa questão, muitas ferramentas de automação de pipelines passaram a oferecer integração nativa com CDNs, permitindo que as URLs dos agentes sejam configuradas de forma dinâmica, de acordo com o ambiente de execução da aplicação. Isso significa que, ao migrar um projeto para um novo ambiente, como produção ou homologação, as URLs dos agentes são atualizadas automaticamente, sem a necessidade de intervenção manual.<br><pre><code class="language-csharp">public class CDNService<br>{<br>private readonly string _cdnUrl;<br>public CDNService(string cdnUrl)<br>{<br>_cdnUrl = cdnUrl;<br>}<br>public string GetResourceUrl(string resourcePath)<br>{<br>return $"{_cdnUrl}/{resourcePath}";<br>}<br>}<br></code></pre><br>Essa abordagem traz uma série de benefícios, como a redução de erros de configuração, a simplificação do processo de deploy e a melhoria na escalabilidade da aplicação. Além disso, ao utilizar URLs dinâmicas para os agentes em pipelines de desenvolvimento, é possível facilitar a implementação de práticas como A/B testing, cache invalidation e versionamento de recursos.<br>Em resumo, a mudança nas URLs dos agentes em pipelines de desenvolvimento é um reflexo da constante evolução das práticas de desenvolvimento de software. Ao adotar essa abordagem, as equipes de desenvolvimento podem otimizar o desempenho das aplicações, reduzir a complexidade operacional e oferecer uma experiência mais consistente aos usuários finais. Portanto, vale a pena investir tempo e recursos na implementação de CDN Domain URL change for Agents in Pipelines em seus projetos.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/engajamento-nas-redes-sociais-em-2025-desafios-e-oportunidades.html">Engajamento nas Redes Sociais em 2025: Desafios e Oportunidades</a><span>Outros</span></li>
+<li><a href="/artigos/tfvc-policies-storage-updates-a-revolucao-silenciosa-nos-sistemas-de-controle-de-versao.html">TFVC Policies Storage Updates: A Revolução Silenciosa nos Sistemas de Controle de Versão</a><span>Outros</span></li>
+<li><a href="/artigos/integrando-boards-com-github-enterprise-cloud-desafios-e-oportunidades.html">Integrando Boards com GitHub Enterprise Cloud: Desafios e Oportunidades</a><span>Outros</span></li>
+<li><a href="/artigos/o-sequestro-de-robert-caro-uma-licao-sobre-seguranca-em-sistemas.html">O Sequestro de Robert Caro: Uma Lição Sobre Segurança em Sistemas</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

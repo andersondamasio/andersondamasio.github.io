@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Você já parou para pensar no impacto real de Show HN: Free, in-browser PDF editor nos sistemas modernos? A possibilidade de editar arquivos PDF diretamente no navegador, sem a necessidade de instalar qualquer software adicional, traz uma nova camada de praticidade e eficiência para o nosso dia a dia. Mas, para os arquitetos de software como nós, essa novidade vai muito além da simples conveniência.<br><br>Agora, podemos integrar essa funcionalidade em nossas aplicações web, agregando valor aos nossos produtos e serviços. Imagine um sistema de gerenciamento de documentos que permita aos usuários editar seus PDFs sem sair da plataforma, simplificando o fluxo de trabalho e melhorando a experiência do usuário final. Com algumas linhas de código e a integração certa, podemos transformar a maneira como lidamos com documentos digitais.<br><br>Do ponto de vista técnico, a implementação de um editor de PDF no navegador envolve o uso de tecnologias como HTML5, CSS e JavaScript. É fundamental compreender como funcionam as APIs relacionadas à manipulação de arquivos PDF, como a PDF.js, que nos permite visualizar e interagir com o conteúdo de forma programática. Além disso, é importante considerar questões de segurança, garantindo que a integridade dos documentos seja preservada durante o processo de edição.<br><br>Para ilustrar essa ideia, vamos dar uma olhada em um trecho de código em JavaScript que demonstra como podemos inicializar um editor de PDF no navegador:<br><br><pre><code>const pdfDocument = PDFJS.getDocument('meu_documento.pdf');<br><br>pdfDocument.promise.then(function(pdf) {<br>  // Lógica de edição do PDF aqui<br>});<br></code></pre><br><br>Nesse exemplo simplificado, estamos carregando um documento PDF e preparando-o para edição. A partir daí, podemos adicionar funcionalidades de edição, como adicionar texto, desenhar formas ou inserir imagens, conforme a necessidade do nosso aplicativo.<br><br>Além disso, ao explorar recursos avançados, podemos integrar o editor de PDF com outras ferramentas, como sistemas de autenticação, armazenamento na nuvem e até mesmo inteligência artificial para análise de conteúdo. Essa abordagem inovadora nos permite criar soluções personalizadas e adaptadas às demandas específicas dos nossos clientes.<br><br>Em conclusão, a chegada do editor de PDF no navegador abre novas possibilidades para a arquitetura de software moderna. Com criatividade, conhecimento técnico e um olhar voltado para o futuro, podemos aproveitar ao máximo essa ferramenta e transformar a maneira como interagimos com documentos digitais. A era da edição de PDF direto no navegador está apenas começando, e cabe a nós explorar todo o seu potencial.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/de-volta-as-origens-o-renascimento-de-ruby-on-rails-no-mundo-da-programacao-web.html">De Volta às Origens: O Renascimento de Ruby on Rails no Mundo da Programação Web</a><span>Outros</span></li>
+<li><a href="/artigos/desbravando-o-duckdb-a-revolucao-geoespacial-da-ultima-decada.html">"Desbravando o DuckDB: A revolução geoespacial da última década"</a><span>Outros</span></li>
+<li><a href="/artigos/desvendando-os-segredos-da-algebra-linear-numerica-na-julia-tum.html">Desvendando os Segredos da Álgebra Linear Numérica na Julia TUM</a><span>Outros</span></li>
+<li><a href="/artigos/parasita-deadly-screwworm-volta-ameacando-o-gado-do-texas-e-o-suprimento-de-carne-dos-eua.html">Parasita Deadly Screwworm volta ameaçando o gado do Texas e o suprimento de carne dos EUA</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

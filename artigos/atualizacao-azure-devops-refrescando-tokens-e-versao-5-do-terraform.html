@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Tenho visto muita gente tratando a atualização "Introducing Azure DevOps ID Token Refresh and Terraform Task Version 5" como algo simples - mas a realidade é bem diferente. A verdade é que essas novidades trazem consigo uma série de melhorias e possibilidades que podem impactar significativamente o desenvolvimento de software em larga escala.<br><br>Em termos práticos, a introdução do Azure DevOps ID Token Refresh permite uma forma mais eficiente de lidar com autenticação e autorização em pipelines de CI/CD. Agora, os tokens de acesso podem ser automaticamente renovados, garantindo maior segurança e eliminando a necessidade de intervenção manual. Isso não só simplifica o processo, como também melhora a experiência do desenvolvedor e reduz possíveis falhas de segurança.<br><br>Além disso, a versão 5 do Terraform Task traz consigo atualizações significativas, incluindo melhorias de desempenho, suporte a novas funcionalidades e correções de bugs. Com essa nova versão, os usuários podem esperar uma experiência mais fluida e eficiente ao gerenciar sua infraestrutura como código, permitindo uma maior automatização e escalabilidade em seus projetos.<br><br>Para ilustrar de forma prática, vamos analisar um trecho de código em C# que demonstra como utilizar o Azure DevOps ID Token Refresh em um pipeline de CI/CD:<br><br><pre><code>// Código de exemplo em C# utilizando Azure DevOps ID Token Refresh<br>public async Task<string> GetAccessToken()<br>{<br>    var tokenProvider = new TokenProvider("AzureDevOps");<br>    var token = await tokenProvider.GetToken();<br>    <br>    return token;<br>}<br></code></pre><br><br>Neste exemplo, utilizamos um TokenProvider para obter o token de acesso do Azure DevOps de forma segura e automatizada. Com a introdução do ID Token Refresh, esse processo se torna ainda mais simplificado e seguro, garantindo uma integração mais robusta e eficiente em nossos pipelines.<br><br>Para os usuários mais avançados, recomendo explorar as possibilidades de integração entre o Azure DevOps ID Token Refresh e o Terraform Task Version 5. Combinar essas ferramentas pode abrir portas para uma automação mais sofisticada e escalável em seus projetos, permitindo uma gestão de infraestrutura mais eficiente e segura.<br><br>Em suma, as atualizações recentes no Azure DevOps e no Terraform trazem consigo um potencial transformador para o desenvolvimento de software em larga escala. Ao explorar e aproveitar ao máximo essas novas funcionalidades, os desenvolvedores podem elevar a qualidade, segurança e eficiência de seus projetos, impulsionando assim a inovação e o crescimento contínuo em suas equipes.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/fundamentos-da-arquitetura-de-software-desvendando-os-segredos-por-tras-de-lucasrbsouza.html">Fundamentos da Arquitetura de Software: Desvendando os Segredos por Trás de @LucasrbSouza</a><span>Outros</span></li>
+<li><a href="/artigos/github-copilot-a-revolucao-da-codificacao-colaborativa-no-visual-studio-17-14-preview-3.html">GitHub Copilot: A revolução da codificação colaborativa no Visual Studio 17.14 Preview 3</a><span>Outros</span></li>
+<li><a href="/artigos/arquitetura-de-software-decifrando-os-40min-de-estudo-que-parecem-grego.html">Arquitetura de Software: Decifrando os 40min de Estudo que Parecem Grego</a><span>Outros</span></li>
+<li><a href="/artigos/net-aspire-e-a-integracao-com-azure-functions-desvendando-a-potencia-dessa-dupla.html">.NET Aspire e a Integração com Azure Functions: Desvendando a Potência dessa Dupla!</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

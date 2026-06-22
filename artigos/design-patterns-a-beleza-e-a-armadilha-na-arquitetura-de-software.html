@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Existe uma armadilha técnica que muitos ignoram quando falamos de design patterns. Como disse @unclebobmartin, a crítica não é que eles são complicados. Alguns padrões de design são até aceitáveis como um vocabulário abstrato. No entanto, eles se tornam rapidamente problemáticos quando implementados literalmente. E se tornam imediatamente desastrosos quando tratados como as unidades atômicas da arquitetura de software.<br>Essa reflexão nos leva a questionar: como podemos aproveitar a beleza dos design patterns sem cair na armadilha de torná-los a base de toda nossa arquitetura?<br>Vamos analisar mais de perto essa questão.<br>Quando utilizados corretamente, os design patterns podem trazer uma estrutura sólida e reutilizável para nossos sistemas. Eles nos permitem resolver problemas comuns de maneira elegante e eficiente. No entanto, o perigo surge quando os aplicamos de forma rígida, sem considerar o contexto específico de cada projeto.<br>Por exemplo, o famoso padrão Singleton pode ser extremamente útil para garantir que uma classe tenha apenas uma instância em todo o sistema. No entanto, se o utilizarmos indiscriminadamente em todas as classes, podemos acabar criando dependências ocultas e tornando nosso código difícil de dar manutenção.<br>É importante lembrar que os design patterns devem ser ferramentas em nossa caixa, não a caixa inteira. Devemos usá-los com sabedoria, adaptando-os às necessidades de cada projeto e evitando a tentação de aplicá-los de forma dogmática.<br>A flexibilidade e a compreensão do contexto são essenciais para o sucesso na arquitetura de software. Em vez de seguir cegamente os padrões estabelecidos, devemos avaliar cada situação de forma crítica e buscar soluções que façam sentido para o nosso problema específico.<br>Ao equilibrar a beleza dos design patterns com a conscientização dos seus potenciais perigos, podemos criar sistemas mais robustos, flexíveis e fáceis de dar manutenção.<br>E você, como tem lidado com os design patterns em sua arquitetura de software? Compartilhe suas experiências e insights nos comentários abaixo. Juntos, podemos aprender e evoluir na busca pela excelência técnica.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/design-patterns-mais-do-que-um-vocabulario-uma-filosofia-de-desenvolvimento.html">Design Patterns: Mais do que um Vocabulário, uma Filosofia de Desenvolvimento</a><span>Outros</span></li>
+<li><a href="/artigos/desvendando-o-poder-das-chamadas-de-funcao-com-llms.html">Desvendando o Poder das Chamadas de Função com LLMs</a><span>Outros</span></li>
+<li><a href="/artigos/codemods-a-revolucao-da-refatoracao-de-codigo.html">Codemods: A revolução da refatoração de código</a><span>Outros</span></li>
+<li><a href="/artigos/padroes-de-design-o-segredo-por-tras-dos-frameworks.html">Padrões de Design: o segredo por trás dos frameworks</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

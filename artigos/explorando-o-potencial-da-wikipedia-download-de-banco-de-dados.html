@@ -102,6 +102,15 @@ h1 { font-size: 1.8rem; margin-bottom: 1rem; }
 }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -130,6 +139,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>**Explorando o Potencial da Wikipedia: Download de Banco de Dados**</h1>
 <p class="article-meta">Publicado em: 27/04/2025 13:47</p>
 <div class="article-body">**Explorando o Potencial da Wikipedia: Download de Banco de Dados**<br><br>Introdução:<br>A Wikipedia é uma fonte de informações vasta e acessível, e muitas vezes podemos nos deparar com a necessidade de acessar seu banco de dados para diferentes finalidades. Neste artigo, exploraremos como realizar o download do banco de dados da Wikipedia e como isso pode ser relevante para práticas modernas de arquitetura de software e desenvolvimento de sistemas.<br><br>Exemplo de Código:<br>Abaixo, apresentamos um exemplo simples em Python de como realizar o download do banco de dados da Wikipedia utilizando a API disponível:<br><br>```python<br>import requests<br><br>url = "https://dumps.wikimedia.org/ptwiki/latest/ptwiki-latest-pages-articles.xml.bz2"<br>response = requests.get(url)<br><br>with open("ptwiki-latest-pages-articles.xml.bz2", "wb") as file:<br>    file.write(response.content)<br>```<br><br>Explicação Técnica:<br>Realizar o download do banco de dados da Wikipedia pode ser útil para diversos fins, como análise de dados, desenvolvimento de ferramentas de busca personalizadas e muito mais. Ao ter acesso aos dados brutos da Wikipedia, podemos extrair insights valiosos e criar soluções inovadoras.<br><br>Dicas Avançadas:<br>- Utilize ferramentas de processamento de dados em larga escala, como o Apache Spark, para lidar com grandes volumes de dados da Wikipedia.<br>- Explore técnicas de NLP (Processamento de Linguagem Natural) para extrair informações relevantes dos textos da Wikipedia.<br>- Considere utilizar bancos de dados NoSQL para armazenar e consultar os dados da Wikipedia de forma eficiente.<br><br>Conclusão:<br>O download do banco de dados da Wikipedia pode abrir portas para inúmeras possibilidades no mundo da arquitetura de software e desenvolvimento de sistemas. Ao explorar e analisar esses dados, podemos impulsionar a inovação e criar soluções cada vez mais inteligentes e eficazes.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/how-nasa-is-using-graph-technology-and-llms-to-build-a-people-knowledge-graph.html">How NASA Is Using Graph Technology and LLMs to Build a People Knowledge Graph</a><span>Outros</span></li>
+<li><a href="/artigos/o-5g-acabou-com-o-imsi-catcher-descubra-como-proteger-seus-dados-em-ambientes-moveis.html">"O 5G acabou com o IMSI Catcher? Descubra como proteger seus dados em ambientes móveis!"</a><span>Outros</span></li>
+<li><a href="/artigos/show-hn-a-common-lisp-implementation-in-development-supports-asdf.html">Show HN: A Common Lisp implementation in development, supports ASDF</a><span>Outros</span></li>
+<li><a href="/artigos/we-re-building-a-dystopia-just-to-make-people-click-on-ads-video.html">We're building a dystopia just to make people click on ads [video]</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 

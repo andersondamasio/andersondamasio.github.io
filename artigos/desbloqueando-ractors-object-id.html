@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -130,6 +139,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Desbloqueando Ractors: Object_id</h1>
 <p class="article-meta">Publicado em: 27/04/2025 14:55</p>
 <div class="article-body">Com o avanço das tecnologias de programação e arquitetura de software, surgem novos desafios e oportunidades para os desenvolvedores. Uma dessas novidades é o conceito de Ractors, que traz uma abordagem mais segura e eficiente para lidar com concorrência em Ruby.<br><br>Os Ractors são uma nova forma de isolamento em Ruby, permitindo que partes do código sejam executadas de forma paralela sem riscos de race conditions ou vazamento de memória. Um dos recursos mais interessantes dos Ractors é o Object_id, que permite identificar de forma única cada Ractor em execução.<br><br>Vamos ver um exemplo prático de como utilizar o Object_id em um cenário de concorrência:<br><br><pre><code>ractor1 = Ractor.new do<br>  puts "Ractor 1: Object_id #{Ractor.current.object_id}"<br>end<br><br>ractor2 = Ractor.new do<br>  puts "Ractor 2: Object_id #{Ractor.current.object_id}"<br>end<br><br>ractor1.take<br>ractor2.take<br></code></pre><br><br>Neste exemplo, criamos dois Ractors e exibimos o Object_id de cada um deles. Ao executar o código, podemos observar que cada Ractor possui um Object_id único, o que facilita a identificação e o controle de cada processo em paralelo.<br><br>Além disso, podemos utilizar o Object_id para compartilhar informações entre os Ractors de forma segura, garantindo que cada instância seja única e isolada.<br><br>Para otimizar o uso do Object_id, é importante ter em mente algumas dicas avançadas:<br>- Evite compartilhar objetos mutáveis entre Ractors, para garantir a integridade dos dados.<br>- Utilize o Object_id como uma forma de identificar e comunicar-se entre os Ractors de forma eficiente.<br>- Esteja atento aos possíveis conflitos de concorrência ao lidar com múltiplos Ractors em paralelo.<br><br>Em resumo, o uso do Object_id em Ractors traz uma nova camada de segurança e eficiência para o desenvolvimento de sistemas concorrentes em Ruby. Ao compreender e aplicar corretamente esse recurso, os desenvolvedores podem criar aplicações mais robustas e escaláveis, aproveitando ao máximo o potencial da programação paralela.<br><br>Experimente utilizar o Object_id em seus projetos e explore as possibilidades que os Ractors oferecem para aprimorar a arquitetura de software e a performance de suas aplicações.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/desenvolvendo-sistemas-eficientes-com-a-tecnica-de-paul-morphy.html">Desenvolvendo sistemas eficientes com a técnica de Paul Morphy</a><span>Outros</span></li>
+<li><a href="/artigos/assistente-de-terminal-inteligente-potencializando-a-produtividade-dos-desenvolvedores.html">Assistente de Terminal Inteligente: Potencializando a Produtividade dos Desenvolvedores</a><span>Outros</span></li>
+<li><a href="/artigos/desafio-da-cadeia-de-suprimentos-de-conhecimento-no-trabalho.html">Desafio da Cadeia de Suprimentos de Conhecimento no Trabalho</a><span>Outros</span></li>
+<li><a href="/artigos/obituarios-automatizados.html">Obituários Automatizados</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 

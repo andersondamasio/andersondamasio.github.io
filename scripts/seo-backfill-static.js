@@ -12,6 +12,12 @@ const textoAnosExperiencia = `mais de ${anosExperiencia} anos`;
 
 const pages = [
   {
+    file: "artigo.html",
+    title: "Modelo de Artigo | Anderson Damasio",
+    description: "Modelo interno de artigo do site Anderson Damasio, mantido fora da indexação pública.",
+    robots: "noindex, follow"
+  },
+  {
     file: "sobre.html",
     title: "Sobre Anderson Damasio | Anderson Damasio",
     description: `Conheça Anderson Damasio, arquiteto de software com ${textoAnosExperiencia} de experiência em sistemas escaláveis e tecnologia.`,

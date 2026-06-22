@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Tenho visto muita gente tratando Bloom Filters como algo simples — mas a realidade é bem diferente. Essas estruturas de dados compactas e eficientes têm muito mais a oferecer do que imaginamos à primeira vista. Vamos explorar juntos o verdadeiro potencial dos Bloom Filters e como podemos aproveitá-los ao máximo em nossos sistemas escaláveis.<br><br>Para começar, é importante entender que um Bloom Filter não é uma estrutura de dados convencional, como uma lista ou uma árvore. Em vez disso, ele é uma representação probabilística de um conjunto, otimizado para consultas de pertinência com baixo consumo de memória. Isso significa que, embora ele possa dizer se um elemento provavelmente está no conjunto, ele também pode ocasionalmente apresentar falsos positivos.<br><br>A magia dos Bloom Filters reside na sua simplicidade e eficiência. Ao contrário de outras estruturas de dados que exigem armazenamento direto dos elementos, um Bloom Filter usa uma série de funções hash para mapear os elementos para um vetor de bits. Isso permite que ele seja extremamente compacto, mesmo para conjuntos de tamanho considerável.<br><br>Vamos ver um exemplo prático em C# para ilustrar como podemos implementar um Bloom Filter simples:<br><br><pre><code class="language-csharp">public class BloomFilter<br>{<br>    private BitArray _bits;<br><br>    public BloomFilter(int size)<br>    {<br>        _bits = new BitArray(size);<br>    }<br><br>    public void Add(string item)<br>    {<br>        // Aplicar funções hash e definir os bits correspondentes<br>    }<br><br>    public bool Contains(string item)<br>    {<br>        // Verificar se todos os bits correspondentes estão definidos<br>        return true; // Falso positivo possível<br>    }<br>}<br></code></pre><br><br>Além da implementação básica, existem diversas maneiras de otimizar e aprimorar o desempenho de um Bloom Filter. Por exemplo, podemos ajustar o número de funções hash e o tamanho do vetor de bits para equilibrar a taxa de falsos positivos e o consumo de memória. Também podemos considerar técnicas como a filtragem de bits múltiplos para reduzir a probabilidade de colisões.<br><br>Em conclusão, os Bloom Filters são ferramentas poderosas que merecem nossa atenção e cuidado. Ao compreender suas nuances e explorar suas possibilidades, podemos utilizá-los de forma eficaz em uma variedade de cenários, desde cache de dados até verificação de duplicatas. Portanto, não subestime o potencial dos Bloom Filters e esteja preparado para incorporá-los em suas soluções de software de maneira inteligente e estratégica. Afinal, o segredo está em ir além do óbvio e descobrir as verdadeiras vantagens que eles podem oferecer.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/rustassistant-desvendando-os-segredos-da-correcao-de-erros-de-compilacao-em-rust.html">RustAssistant: Desvendando os Segredos da Correção de Erros de Compilação em Rust</a><span>Outros</span></li>
+<li><a href="/artigos/explorando-os-segredos-de-jj-licoes-para-arquitetos-de-software.html">Explorando os Segredos de JJ: Lições para Arquitetos de Software</a><span>Outros</span></li>
+<li><a href="/artigos/irish-privacy-watchdog-pune-tiktok-em-meio-bilhao-de-euros-por-transferencia-de-dados-para-a-china-e-agora.html">Irish privacy watchdog pune TikTok em meio bilhão de euros por transferência de dados para a China: e agora?</a><span>Outros</span></li>
+<li><a href="/artigos/liverpool-a-vitoria-do-titulo-e-a-sequencia-misteriosa-de-fibonacci.html">Liverpool: A Vitória do Título e a Sequência Misteriosa de Fibonacci</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

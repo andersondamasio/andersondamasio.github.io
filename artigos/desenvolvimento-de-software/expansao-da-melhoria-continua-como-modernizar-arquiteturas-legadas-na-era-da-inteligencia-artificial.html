@@ -112,6 +112,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -201,6 +210,15 @@ var pipeline = context.Transforms.Concatenate("Features", "Property1", "Property
 <p>Portanto, ao se deparar com sistemas legados, lembre-se: a transformação é um processo contínuo e cada pequena mudança pode levar a grandes resultados.</p>
 <p>
 <p></p></div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/desenvolvimento-de-software/a-revolucao-do-google-i-o-o-impacto-da-arquitetura-de-software-nas-inovacoes-tecnologicas.html">A Revolução do Google I/O: O Impacto da Arquitetura de Software nas Inovações Tecnológicas</a><span>Desenvolvimento de Software</span></li>
+<li><a href="/artigos/desenvolvimento-de-software/youtube-a-revolucao-do-entretenimento-com-a-arquitetura-de-software.html">YouTube: A Revolução do Entretenimento com a Arquitetura de Software</a><span>Desenvolvimento de Software</span></li>
+<li><a href="/artigos/desenvolvimento-de-software/oportunidades-de-investimento-em-startups-o-que-os-arquitetos-de-software-precisam-saber.html">Oportunidades de Investimento em Startups: O Que os Arquitetos de Software Precisam Saber</a><span>Desenvolvimento de Software</span></li>
+<li><a href="/artigos/desenvolvimento-de-software/a-nova-era-das-startups-oportunidades-e-desafios-na-arquitetura-de-software.html">A nova era das startups: oportunidades e desafios na arquitetura de software</a><span>Desenvolvimento de Software</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

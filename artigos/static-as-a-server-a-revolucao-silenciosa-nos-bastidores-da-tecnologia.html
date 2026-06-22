@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Em qualquer roda de devs, é só falar Static as a Server que surgem 5 opiniões diferentes. Alguns defendem com unhas e dentes, enquanto outros ainda estão céticos em relação a essa abordagem. Mas afinal, o que é Static as a Server e por que tem gerado tantas discussões acaloradas?<br>Static as a Server é uma maneira inovadora de hospedar e distribuir conteúdo estático na web, sem a necessidade de um servidor tradicional. Ao invés de depender de um servidor dinâmico para processar requisições e gerar conteúdo personalizado, o Static as a Server utiliza CDNs (Content Delivery Networks) para armazenar e servir arquivos estáticos, como HTML, CSS, JavaScript e imagens.<br>Essa abordagem traz inúmeros benefícios, como uma maior velocidade de carregamento das páginas, redução de custos de infraestrutura e uma maior segurança contra ataques cibernéticos. Além disso, o Static as a Server permite a escalabilidade automática, garantindo que o seu site permaneça no ar mesmo em momentos de pico de tráfego.<br>Para implementar o Static as a Server, você pode utilizar ferramentas como o AWS S3, Netlify, Vercel ou GitHub Pages. Essas plataformas oferecem integração contínua, suporte a HTTPS e um fácil gerenciamento de cache, tornando a transição para o Static as a Server mais simples do que nunca.<br>Vamos dar uma olhada em um exemplo prático de como implementar o Static as a Server em um site estático utilizando o AWS S3:<br><pre><code class="language-csharp">using Amazon.S3;<br>using Amazon.S3.Model;<br>public class S3Helper<br>{<br>public async Task UploadFileAsync(string bucketName, string filePath, string key)<br>{<br>using var client = new AmazonS3Client();<br>var request = new PutObjectRequest<br>{<br>BucketName = bucketName,<br>FilePath = filePath,<br>Key = key<br>};<br>var response = await client.PutObjectAsync(request);<br>Console.WriteLine($"File uploaded with status code: {response.HttpStatusCode}");<br>}<br>}<br></code></pre><br>Neste exemplo, estamos utilizando a biblioteca Amazon S3 SDK para fazer o upload de um arquivo para um bucket no AWS S3. Com essa abordagem simples, podemos hospedar todo o nosso conteúdo estático de forma eficiente e segura.<br>Para aproveitar ao máximo o Static as a Server, é importante manter uma estratégia eficaz de cache e otimização de recursos. Utilize ferramentas como o Cloudflare ou o Google PageSpeed Insights para identificar possíveis melhorias de desempenho e garantir uma experiência de usuário impecável.<br>Em conclusão, o Static as a Server veio para revolucionar a maneira como pensamos sobre hospedagem de conteúdo na web. Com suas vantagens de velocidade, segurança e escalabilidade, essa abordagem está se tornando cada vez mais popular entre desenvolvedores e empresas de tecnologia. Não fique para trás e experimente o Static as a Server em seu próximo projeto - os resultados podem te surpreender!</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/o-codigo-escondido-por-tras-do-elogio-de-steve-jobs.html">O código escondido por trás do elogio de Steve Jobs</a><span>Outros</span></li>
+<li><a href="/artigos/explorando-os-segredos-do-reservoir-sampling.html">Explorando os Segredos do Reservoir Sampling</a><span>Outros</span></li>
+<li><a href="/artigos/stabilidade-a-chave-para-sistemas-robustos.html">Stabilidade: a chave para sistemas robustos</a><span>Outros</span></li>
+<li><a href="/artigos/doacao-de-riqueza-um-desafio-de-escala-para-o-mundo-da-tecnologia.html">Doação de Riqueza: Um Desafio de Escala para o Mundo da Tecnologia</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

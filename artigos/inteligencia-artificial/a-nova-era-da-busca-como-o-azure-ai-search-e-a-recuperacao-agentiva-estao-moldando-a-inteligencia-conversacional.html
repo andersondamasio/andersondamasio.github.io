@@ -140,6 +140,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a:hover { background-color: var(--link); color: var(--main-bg); }
 main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -227,6 +236,15 @@ await foreach (var result in response.Value.GetResultsAsync())
 <p>Recomendo que você comece a experimentar com a API do Azure e explore suas capacidades. A integração da recuperação agentiva pode ser o diferencial que sua aplicação precisa para se destacar no mercado.</p>
 <p>
 <p></p></div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/inteligencia-artificial/desvendando-o-futuro-da-ia-como-a-arquitetura-de-software-pode-impulsionar-a-revolucao.html">Desvendando o Futuro da IA: Como a Arquitetura de Software Pode Impulsionar a Revolução</a><span>Inteligência Artificial</span></li>
+<li><a href="/artigos/inteligencia-artificial/a-nova-era-da-avaliacao-de-modelos-de-linguagem-como-o-lmeval-pode-transformar-o-desenvolvimento-de-software.html">A nova era da avaliação de modelos de linguagem: Como o LMEval pode transformar o desenvolvimento de software</a><span>Inteligência Artificial</span></li>
+<li><a href="/artigos/inteligencia-artificial/transformando-a-inteligencia-artificial-em-aliada-como-perplexity-labs-esta-mudando-o-jogo.html">Transformando a Inteligência Artificial em Aliada: Como Perplexity Labs Está Mudando o Jogo</a><span>Inteligência Artificial</span></li>
+<li><a href="/artigos/inteligencia-artificial/automatizacao-do-risco-como-a-ia-esta-transformando-avaliacoes-em-aplicativos.html">Automatização do Risco: Como a IA Está Transformando Avaliações em Aplicativos</a><span>Inteligência Artificial</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

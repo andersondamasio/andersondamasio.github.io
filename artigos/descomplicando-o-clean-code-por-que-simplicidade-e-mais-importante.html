@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Tenho visto muita gente tratando o conceito de "clean code" como algo simples — mas a realidade é bem diferente. Recentemente, um debate surgiu nas redes sociais a respeito da importância do "clean code" em comparação com a simplicidade do código. Os argumentos levantados no vídeo mencionado destacam que muitos programadores são ensinados a utilizarem "design patterns" e "software architecture", porém acabam deixando de lado a performance e a simplicidade.<br>É inegável que o "clean code" tem sua importância, afinal, um código limpo e bem organizado facilita a manutenção, o entendimento e a colaboração entre desenvolvedores. No entanto, a busca pela perfeição nesse aspecto pode levar a um código complexo, difícil de ser compreendido e, consequentemente, mais propenso a erros.<br>A simplicidade, por sua vez, é muitas vezes subestimada. Um código simples é aquele que é fácil de entender, direto ao ponto e sem excesso de complexidade desnecessária. Priorizar a simplicidade não significa negligenciar a qualidade do código, mas sim focar no que realmente importa: entregar um software funcional, eficiente e de fácil manutenção.<br>Na prática, isso significa buscar soluções simples e diretas, sem se prender excessivamente a padrões de projeto ou arquiteturas complexas. É importante encontrar um equilíbrio entre a organização do código e a sua simplicidade, garantindo que a solução atenda aos requisitos de performance e usabilidade sem tornar-se excessivamente complicada.<br>Para exemplificar, vamos analisar um trecho de código em C# que ilustra a diferença entre um código complexo e um código simples:<br><pre><code class="language-csharp">// Código complexo<br>public void CalculateTotalPrice(List<Product> products)<br>{<br>decimal totalPrice = 0;<br>foreach (var product in products)<br>{<br>if (product.Category == "Eletronics" && product.Price > 1000)<br>{<br>totalPrice += product.Price * 0.9;<br>}<br>else<br>{<br>totalPrice += product.Price;<br>}<br>}<br>Console.WriteLine($"Total Price: {totalPrice}");<br>}<br>// Código simples<br>public void CalculateTotalPrice(List<Product> products)<br>{<br>decimal totalPrice = products.Sum(p => p.Price);<br>Console.WriteLine($"Total Price: {totalPrice}");<br>}<br></code></pre><br>No exemplo acima, o segundo trecho de código é muito mais simples, direto e fácil de entender do que o primeiro. Apesar de ambos realizarem a mesma tarefa, a simplicidade do segundo torna-o mais eficiente e menos propenso a erros.<br>Portanto, ao desenvolver software, lembre-se de que a simplicidade muitas vezes é a chave para um código eficiente e de qualidade. Não se prenda apenas ao "clean code", mas busque também a simplicidade em suas soluções. Isso não apenas facilitará a manutenção e a evolução do software, mas também tornará a experiência de desenvolvimento mais prazerosa e produtiva.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/arquitetura-de-software-acelerando-o-desenvolvimento-com-design-patterns.html">Arquitetura de Software: Acelerando o Desenvolvimento com Design Patterns</a><span>Outros</span></li>
+<li><a href="/artigos/desvendando-os-segredos-do-deepseek-uma-visao-tecnica-profunda.html">"Desvendando os Segredos do Deepseek: Uma Visão Técnica Profunda"</a><span>Outros</span></li>
+<li><a href="/artigos/azure-boards-github-a-combinacao-perfeita-para-aprimorar-a-colaboracao-em-seus-projetos.html">Azure Boards + GitHub: A combinação perfeita para aprimorar a colaboração em seus projetos</a><span>Outros</span></li>
+<li><a href="/artigos/titulo-revolucionando-sua-arquitetura-de-software-com-padroes-de-design-distribuido.html">Título:** Revolucionando sua arquitetura de software com padrões de design distribuído</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

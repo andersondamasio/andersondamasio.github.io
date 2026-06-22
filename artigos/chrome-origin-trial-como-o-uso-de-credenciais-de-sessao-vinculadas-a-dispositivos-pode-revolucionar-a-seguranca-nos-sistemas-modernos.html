@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Você já parou para pensar no impacto real de Chrome Origin Trial: Device Bound Session Credentials nos sistemas modernos? Essa nova abordagem de autenticação pode representar uma mudança significativa na forma como lidamos com a segurança em nossas aplicações web. Vamos explorar mais a fundo esse conceito e como ele pode impactar o desenvolvimento de software.<br><br>A ideia por trás das credenciais de sessão vinculadas a dispositivos é simples, mas extremamente poderosa. Ao invés de depender exclusivamente de tokens de sessão que podem ser interceptados e utilizados por terceiros mal intencionados, as credenciais de sessão são atreladas ao próprio dispositivo do usuário. Isso significa que mesmo que um token seja capturado, ele não poderá ser utilizado em outro dispositivo, tornando a autenticação muito mais segura.<br><br>Para implementar esse tipo de autenticação em nossas aplicações, podemos utilizar APIs específicas fornecidas pelos navegadores, como no caso do Chrome Origin Trial. Vamos ver um exemplo prático de como isso poderia ser feito em uma aplicação web utilizando C#:<br><br><pre><code class="language-csharp">// Verificação da credencial de sessão vinculada ao dispositivo<br>if (Request.Headers["Device-Bound-Credential"] == "meu_token_dispositivo")<br>{<br>    // Autenticação bem sucedida<br>    // Continuar com o fluxo da aplicação<br>}<br>else<br>{<br>    // Credencial inválida, redirecionar para página de login<br>    Response.Redirect("/login");<br>}<br></code></pre><br><br>Além disso, é importante considerar que a segurança não se resume apenas à autenticação, mas também à autorização e criptografia dos dados. Ao combinar as credenciais de sessão vinculadas a dispositivos com práticas robustas de segurança, podemos criar sistemas mais resilientes e menos suscetíveis a ataques.<br><br>Em conclusão, o uso de credenciais de sessão vinculadas a dispositivos representa uma evolução significativa na forma como lidamos com a segurança em nossas aplicações web. Ao adotar essa abordagem e implementá-la de forma adequada, podemos garantir um nível mais elevado de proteção para os nossos usuários e dados sensíveis. Fique atento às novas tecnologias e práticas de segurança, e esteja sempre um passo à frente na proteção das suas aplicações.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/quebec-na-contramao-da-tecnologia-lion-electric-fora-dos-planos-de-investimento.html">Quebec na contramão da tecnologia: Lion Electric fora dos planos de investimento</a><span>Outros</span></li>
+<li><a href="/artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html">Protegendo nossos websites: como Anúbis nos salvou de um ataque DDoS</a><span>Outros</span></li>
+<li><a href="/artigos/liverpool-a-vitoria-do-titulo-e-a-sequencia-misteriosa-de-fibonacci.html">Liverpool: A Vitória do Título e a Sequência Misteriosa de Fibonacci</a><span>Outros</span></li>
+<li><a href="/artigos/cookies-de-terceiros-a-hora-de-dizer-adeus.html">Cookies de Terceiros: A Hora de Dizer Adeus</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

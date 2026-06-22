@@ -112,6 +112,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -152,6 +161,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">O **NetBSD 10.x Kernel Math_emulation** é uma funcionalidade crucial para garantir a compatibilidade de programas que dependem de instruções matemáticas específicas em sistemas operacionais NetBSD. Essa emulação de funções matemáticas é essencial para garantir que softwares legados continuem funcionando corretamente em ambientes modernos.<br>### Como funciona o NetBSD 10.x Kernel Math_emulation<br>O **NetBSD 10.x Kernel Math_emulation** utiliza um conjunto de rotinas e bibliotecas para emular as instruções matemáticas ausentes no kernel do sistema operacional. Essas funções emuladas são acionadas sempre que um programa tenta executar uma instrução matemática não suportada nativamente pelo sistema.<br><pre><code>#include <stdio.h><br>#include <math.h><br>int main() {<br>double x = 2.0;<br>double raiz_quadrada = sqrt(x);<br>printf("A raiz quadrada de %f é %f\n", x, raiz_quadrada);<br>return 0;<br>}<br></code></pre><br>### Dicas avançadas e insights práticos<br>- Verifique regularmente se as configurações de emulação estão corretas para evitar problemas de compatibilidade.<br>- Utilize ferramentas de análise de desempenho para identificar possíveis gargalos causados pela emulação de funções matemáticas.<br>- Considere a possibilidade de reescrever partes críticas do código para evitar a dependência de instruções matemáticas específicas.<br>### Conclusão<br>O **NetBSD 10.x Kernel Math_emulation** é uma ferramenta poderosa para garantir a compatibilidade de softwares legados em ambientes modernos. Ao entender seu funcionamento e aplicação, os desenvolvedores podem otimizar a performance e estabilidade de seus sistemas.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/programacao/titulo-a-evolucao-e-o-legado-do-visual-basic-uma-analise-profunda.html">Título:** A Evolução e o Legado do Visual Basic: Uma Análise Profunda</a><span>Programação</span></li>
+<li><a href="/artigos/programacao/introducao-a-discussao-sobre-fan-service-revela-muito-sobre-a-maturidade-tecnica-de-um-time-vamos-explorar-como-essa-pratica-pode-impactar-positivamente-a-escalabilidade-e-desempenho-de-sistemas-complexos.html">Introdução: A discussão sobre Fan Service revela muito sobre a maturidade técnica de um time. Vamos explorar como essa prática pode impactar positivamente a escalabilidade e desempenho de sistemas complexos.</a><span>Programação</span></li>
+<li><a href="/artigos/programacao/e-curioso-como-egypt-s-nawy-the-largest-proptech-in-africa-lands-a-52m-series-a-to-take-on-mena-sempre-volta-nas-conversas-mais-serias-sobre-arquitetura-de-software.html">É curioso como Egypt’s Nawy, the largest proptech in Africa, lands a $52M Series A to take on MENA sempre volta nas conversas mais sérias sobre arquitetura de software.</a><span>Programação</span></li>
+<li><a href="/artigos/programacao/titulo-o-renascimento-grego-que-voce-nao-esta-acompanhando-mas-provavelmente-deveria.html">Título:** O renascimento grego que você não está acompanhando (mas provavelmente deveria)</a><span>Programação</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

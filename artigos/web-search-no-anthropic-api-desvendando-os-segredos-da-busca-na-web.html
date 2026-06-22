@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Longe de ser novidade, o tema da notícia me trouxe à memória um erro clássico que vejo em consultorias: a falta de compreensão profunda sobre como funciona a busca na web e como podemos otimizá-la para obter resultados mais eficazes. Com a introdução do Web Search no Anthropic API, surge uma nova oportunidade para explorarmos e aprimorarmos nossas habilidades nesse campo tão crucial para o sucesso de aplicações online.<br>Para aqueles que não estão familiarizados, o Anthropic API é uma poderosa ferramenta que permite aos desenvolvedores integrar funcionalidades avançadas em seus projetos, com um foco especial em inteligência artificial e machine learning. Com a adição do Web Search, agora podemos incorporar capacidades de busca na web diretamente em nossas aplicações, tornando-as mais dinâmicas e interativas para os usuários.<br>A implementação do Web Search no Anthropic API é surpreendentemente simples, graças à sua documentação abrangente e exemplos práticos. Com apenas algumas linhas de código em Python, podemos realizar consultas de busca na web, filtrar os resultados e exibi-los de forma amigável para os usuários. Veja um exemplo básico abaixo:<br><pre><code>from anthropic import WebSearch<br>search = WebSearch(api_key="sua_chave_api")<br>results = search.query("termo_de_busca")<br>for result in results:<br>print(result.title)<br>print(result.url)<br>print(result.snippet)<br>print("-----")<br></code></pre><br>Além disso, o Anthropic API oferece várias opções de personalização, como a definição de filtros de segurança, a ordenação dos resultados e a inclusão de metadados adicionais. Essas funcionalidades avançadas nos permitem criar experiências de busca sob medida para as necessidades específicas de nossos usuários, aumentando assim a relevância e a usabilidade de nossas aplicações.<br>Para os desenvolvedores mais experientes, recomendo explorar ainda mais as possibilidades do Web Search no Anthropic API, experimentando técnicas avançadas de processamento de linguagem natural, aprendizado de máquina e otimização de consultas. Essas estratégias podem não apenas melhorar a precisão dos resultados de busca, mas também abrir novas oportunidades de inovação e diferenciação no mercado.<br>Em conclusão, a introdução do Web Search no Anthropic API representa um marco significativo no desenvolvimento de aplicações web mais inteligentes e interativas. Ao dominar essa tecnologia e aplicá-la de forma criativa em nossos projetos, podemos oferecer experiências de busca verdadeiramente excepcionais aos nossos usuários, impulsionando assim o sucesso e a relevância de nossas aplicações no cenário digital atual.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/decolando-para-o-futuro-goveagle-yc-w23-esta-contratando.html">"Decolando para o Futuro: GovEagle (YC W23) está contratando"</a><span>Outros</span></li>
+<li><a href="/artigos/analytics-livre-o-futuro-da-analise-de-dados-na-web.html">"Analytics Livre: O Futuro da Análise de Dados na Web"</a><span>Outros</span></li>
+<li><a href="/artigos/tres-capitulos-na-cloudflare-de-programador-a-cto-a-membro-do-conselho.html">Três Capítulos na Cloudflare: De Programador a CTO a Membro do Conselho</a><span>Outros</span></li>
+<li><a href="/artigos/reinventando-fronteiras-o-impacto-da-openai-para-paises-na-era-da-tecnologia.html">"Reinventando Fronteiras: O Impacto da OpenAI para Países na Era da Tecnologia"</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

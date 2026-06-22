@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -131,6 +140,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Subversão Digital: Táticas da Stasi na Era Moderna (2021)</h1>
 <p class="article-meta">Publicado em: 28/04/2025 03:32</p>
 <div class="article-body">A subversão digital é um conceito que remonta às táticas utilizadas pela Stasi na Alemanha Oriental, conhecidas como Zersetzung. Essas estratégias eram empregadas para desestabilizar opositores e dissidentes, minando sua credibilidade e prejudicando seu trabalho.<br><br>No contexto moderno da arquitetura de software e desenvolvimento de sistemas, a subversão digital pode ser aplicada de diversas formas. Por exemplo, um atacante mal-intencionado pode utilizar técnicas de engenharia social para manipular usuários e obter acesso não autorizado a sistemas críticos.<br><br>Para mitigar os riscos associados à subversão digital, é fundamental implementar práticas de segurança robustas em todas as camadas de um sistema. Isso inclui a utilização de criptografia forte, autenticação multifator e monitoramento contínuo de atividades suspeitas.<br><br>Um exemplo prático de aplicação dessas medidas de segurança pode ser visto no seguinte trecho de código em C#:<br><br><pre><code class="language-csharp">using System;<br><br>public class Program<br>{<br>    public static void Main()<br>    {<br>        string senha = "minhaSenha123";<br>        <br>        // Aplicando criptografia à senha<br>        byte[] senhaCriptografada = CriptografarSenha(senha);<br>        <br>        Console.WriteLine("Senha criptografada: " + Convert.ToBase64String(senhaCriptografada));<br>    }<br>    <br>    public static byte[] CriptografarSenha(string senha)<br>    {<br>        byte[] senhaBytes = System.Text.Encoding.UTF8.GetBytes(senha);<br>        return System.Security.Cryptography.SHA256.Create().ComputeHash(senhaBytes);<br>    }<br>}<br></code></pre><br><br>Neste exemplo, a função `CriptografarSenha` utiliza o algoritmo de hash SHA256 para criptografar a senha do usuário antes de armazená-la no sistema. Isso ajuda a proteger as informações sensíveis contra ataques de subversão digital.<br><br>Além disso, é importante estar atento a possíveis vulnerabilidades em bibliotecas e frameworks utilizados no desenvolvimento de software. Manter essas dependências atualizadas e realizar testes de segurança regulares são práticas essenciais para evitar brechas que possam ser exploradas por agentes maliciosos.<br><br>Em conclusão, a subversão digital representa uma ameaça significativa para a segurança da informação na era moderna. Ao adotar medidas proativas e implementar práticas de segurança robustas, é possível mitigar os riscos associados a essas táticas, protegendo assim os sistemas e dados sensíveis contra potenciais ataques.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/desvendando-a-causa-do-alzheimer-e-identificando-um-candidato-terapeutico-com-inteligencia-artificial.html">Desvendando a Causa do Alzheimer e Identificando um Candidato Terapêutico com Inteligência Artificial</a><span>Outros</span></li>
+<li><a href="/artigos/otimizacao-consciente-de-inferencia-para-melhor-selecao-de-amostragem-em-grandes-modelos-de-linguagem.html">Otimização Consciente de Inferência para Melhor Seleção de Amostragem em Grandes Modelos de Linguagem</a><span>Outros</span></li>
+<li><a href="/artigos/cuidando-do-medo-da-morte-a-importancia-da-abordagem-holistica-na-saude.html">Cuidando do Medo da Morte: A Importância da Abordagem Holística na Saúde</a><span>Outros</span></li>
+<li><a href="/artigos/desenvolvendo-com-paixao-o-futuro-da-codificacao-2023.html">Desenvolvendo com Paixão: O Futuro da Codificação (2023)</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 

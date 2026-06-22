@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Às vezes parece que GenAI Patterns: Fine Tuning é o tipo de assunto que só vira prioridade quando dá problema. No entanto, entender e dominar o processo de fine tuning pode ser a chave para o sucesso de projetos de inteligência artificial e machine learning.<br>Fine tuning, ou ajuste fino, refere-se ao processo de ajustar os hiperparâmetros de um modelo de machine learning para melhorar seu desempenho em um conjunto de dados específico. Esses hiperparâmetros controlam o comportamento do algoritmo de aprendizado e, quando ajustados corretamente, podem fazer toda a diferença nos resultados obtidos.<br>Uma das abordagens mais eficazes para realizar o fine tuning é através do uso de GenAI Patterns. Esses padrões genéticos permitem uma busca inteligente e automatizada dos melhores hiperparâmetros para um determinado modelo, otimizando o processo de ajuste fino de forma eficiente.<br>Para ilustrar esse conceito, vamos considerar um exemplo prático em Python utilizando a biblioteca scikit-learn:<br><pre><code>from sklearn.model_selection import GridSearchCV<br>from sklearn.ensemble import RandomForestClassifier<br># Definindo os hiperparâmetros a serem testados<br>param_grid = {<br>'n_estimators': [50, 100, 200],<br>'max_depth': [None, 10, 20],<br>'min_samples_split': [2, 5, 10]<br>}<br># Inicializando o classificador<br>rf = RandomForestClassifier()<br># Realizando a busca dos melhores hiperparâmetros<br>grid_search = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5)<br>grid_search.fit(X_train, y_train)<br># Avaliando o desempenho do modelo<br>best_params = grid_search.best_params_<br></code></pre><br>Neste exemplo, estamos utilizando o GridSearchCV do scikit-learn para encontrar os melhores hiperparâmetros para um modelo de Random Forest. Ao final do processo, teremos os hiperparâmetros que maximizam o desempenho do modelo em um conjunto de dados específico.<br>Além disso, é importante ressaltar a importância de realizar uma validação cruzada durante o processo de fine tuning, a fim de garantir que os resultados obtidos sejam generalizáveis e não apenas específicos para um conjunto de dados de treinamento.<br>Em conclusão, dominar o processo de fine tuning com o auxílio de GenAI Patterns pode elevar a qualidade e eficiência dos modelos de machine learning, resultando em aplicações mais precisas e robustas. Portanto, dedicar tempo e atenção a esse aspecto pode ser o diferencial entre um projeto mediano e um verdadeiramente excepcional.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/genai-patterns-guardrails-e-a-visao-rag-desvendando-os-segredos-da-inteligencia-artificial.html">GenAI Patterns: Guardrails e a Visão RAG - Desvendando os Segredos da Inteligência Artificial</a><span>Outros</span></li>
+<li><a href="/artigos/como-remover-x-dos-passaportes-dos-eua-uma-abordagem-tecnica.html">Como remover "X" dos passaportes dos EUA: uma abordagem técnica</a><span>Outros</span></li>
+<li><a href="/artigos/explorando-o-suporte-a-java-js-e-python-nos-planos-de-teste.html">Explorando o Suporte a Java, JS e Python nos Planos de Teste</a><span>Outros</span></li>
+<li><a href="/artigos/visual-studio-hub-a-revolucao-na-integracao-de-desenvolvimento.html">Visual Studio Hub: A Revolução na Integração de Desenvolvimento</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

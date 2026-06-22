@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Você já parou para pensar no impacto real de Boards Integration with GitHub Enterprise Cloud and Data Residency (Public Preview) nos sistemas modernos? A integração de Boards com o GitHub Enterprise Cloud traz consigo uma série de desafios e oportunidades para os arquitetos de software e desenvolvedores que buscam otimizar seus processos de desenvolvimento.<br>Essa novidade permite uma integração mais eficiente entre os Boards do GitHub e o GitHub Enterprise Cloud, facilitando a gestão de projetos e o acompanhamento de tarefas em equipes distribuídas. Além disso, a possibilidade de definir a residência dos dados torna o processo mais seguro e em conformidade com as regulamentações de proteção de dados em diferentes países.<br>Do ponto de vista técnico, a integração de Boards com o GitHub Enterprise Cloud requer um entendimento sólido das APIs disponíveis e das melhores práticas de desenvolvimento. Para demonstrar isso na prática, vamos considerar um exemplo em C#:<br><pre><code class="language-csharp">using System;<br>using Octokit;<br>public class GitHubIntegration<br>{<br>private GitHubClient _client;<br>public GitHubIntegration(string token)<br>{<br>_client = new GitHubClient(new ProductHeaderValue("MyApp"));<br>_client.Credentials = new Credentials(token);<br>}<br>public async Task CreateIssue(string repository, string title, string body)<br>{<br>var newIssue = new NewIssue(title)<br>{<br>Body = body<br>};<br>await _client.Issue.Create("owner", repository, newIssue);<br>}<br>}<br></code></pre><br>Neste trecho de código, exemplificamos a criação de uma issue no GitHub a partir de uma aplicação em C#. Essa é apenas uma das muitas possibilidades que a integração de Boards com o GitHub Enterprise Cloud pode oferecer.<br>Para aqueles que desejam ir além do básico, é fundamental explorar as funcionalidades avançadas disponíveis, como a automação de processos, a integração com ferramentas de CI/CD e a personalização de workflows para atender às necessidades específicas de cada equipe.<br>Em conclusão, a integração de Boards com o GitHub Enterprise Cloud representa uma evolução significativa no gerenciamento de projetos e no desenvolvimento de software em equipes distribuídas. Ao aproveitar ao máximo essa integração, os arquitetos de software e desenvolvedores podem otimizar seus processos, aumentar a produtividade e garantir a qualidade de seus produtos.<br>E você, está pronto para integrar Boards com o GitHub Enterprise Cloud e aproveitar todas as vantagens que essa novidade tem a oferecer? Aproveite para explorar as possibilidades, experimentar novas funcionalidades e elevar o nível dos seus projetos de software.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/engajamento-nas-redes-sociais-em-2025-desafios-e-oportunidades.html">Engajamento nas Redes Sociais em 2025: Desafios e Oportunidades</a><span>Outros</span></li>
+<li><a href="/artigos/atualizacao-de-posts-antigos-como-aumentar-o-engajamento-nas-redes-sociais.html">Atualização de Posts Antigos: Como Aumentar o Engajamento nas Redes Sociais</a><span>Outros</span></li>
+<li><a href="/artigos/cdn-e-a-revolucao-nas-urls-dos-agentes-em-pipelines-de-desenvolvimento.html">CDN e a Revolução nas URLs dos Agentes em Pipelines de Desenvolvimento</a><span>Outros</span></li>
+<li><a href="/artigos/atualizacao-de-abril-para-azure-devops-server-e-team-foundation-server-o-que-voce-precisa-saber.html">Atualização de Abril para Azure DevOps Server e Team Foundation Server: O que você precisa saber</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

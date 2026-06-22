@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Se você acha que Open source Google Analytics replacement é algo resolvido, talvez essa notícia te faça repensar. A chegada de uma alternativa de código aberto ao Google Analytics promete revolucionar a forma como as empresas analisam o comportamento dos usuários em seus sites.<br>A possibilidade de ter total controle sobre os dados coletados, sem depender de uma empresa terceira, é um grande avanço para a privacidade e segurança das informações. Além disso, a flexibilidade de customização e integração com outras ferramentas torna essa solução uma opção atraente para desenvolvedores e arquitetos de software.<br>Do ponto de vista técnico, a implementação de um sistema de análise de dados open source requer um entendimento profundo de como os dados são coletados, processados e armazenados. É importante garantir a escalabilidade da solução, para lidar com grandes volumes de dados de forma eficiente e sem comprometer a performance do sistema.<br>Para exemplificar, vamos analisar um trecho de código em C# que demonstra como coletar e enviar dados de eventos para o sistema de análise de dados:<br><pre><code class="language-csharp">public void TrackEvent(string eventName, Dictionary<string, string> eventProperties)<br>{<br>var eventData = new Dictionary<string, string>();<br>eventData.Add("event_name", eventName);<br>foreach(var property in eventProperties)<br>{<br>eventData.Add(property.Key, property.Value);<br>}<br>AnalyticsService.SendEvent(eventData);<br>}<br></code></pre><br>Além disso, é fundamental explorar as APIs disponíveis para enriquecer os dados coletados e extrair insights relevantes. A integração com ferramentas de machine learning, por exemplo, pode potencializar a análise de dados e gerar recomendações personalizadas para os usuários.<br>Em conclusão, a chegada de uma alternativa open source ao Google Analytics representa uma oportunidade única para inovar e aprimorar a forma como as empresas analisam o comportamento dos usuários na web. O futuro da análise de dados está nas mãos dos desenvolvedores e arquitetos de software que buscam soluções mais seguras, flexíveis e eficientes. Chegou a hora de explorar todo o potencial do analytics livre e transformar a maneira como entendemos o comportamento online.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/tres-capitulos-na-cloudflare-de-programador-a-cto-a-membro-do-conselho.html">Três Capítulos na Cloudflare: De Programador a CTO a Membro do Conselho</a><span>Outros</span></li>
+<li><a href="/artigos/web-search-no-anthropic-api-desvendando-os-segredos-da-busca-na-web.html">Web Search no Anthropic API: Desvendando os Segredos da Busca na Web</a><span>Outros</span></li>
+<li><a href="/artigos/o-poder-da-contratacao-de-engenheiros-senior-uma-analise-pratica.html">O poder da contratação de Engenheiros Sênior: uma análise prática</a><span>Outros</span></li>
+<li><a href="/artigos/decolando-para-o-futuro-goveagle-yc-w23-esta-contratando.html">"Decolando para o Futuro: GovEagle (YC W23) está contratando"</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

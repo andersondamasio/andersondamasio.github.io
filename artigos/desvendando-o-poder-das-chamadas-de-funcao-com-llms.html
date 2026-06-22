@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Essa notícia me fez refletir sobre como o mercado ainda lida mal com Function calling using LLMs. Para muitos desenvolvedores, a utilização de Load Linked/Store Conditional (LLM) instructions pode parecer um território desconhecido e complexo. No entanto, dominar essa técnica pode trazer benefícios significativos, especialmente em sistemas escaláveis e de alto desempenho.<br>Em termos simples, as instruções LLM permitem que uma função seja chamada de forma atômica, garantindo que nenhuma outra operação interfira nesse processo. Isso é especialmente útil em ambientes concorrentes, onde múltiplos threads podem tentar acessar a mesma função simultaneamente. Com as LLMs, podemos garantir a consistência dos dados e evitar race conditions.<br>Vamos dar uma olhada em um exemplo prático em C# para ilustrar melhor o conceito:<br><pre><code class="language-csharp">public class AtomicCounter<br>{<br>private long _value = 0;<br>public void Increment()<br>{<br>Interlocked.Add(ref _value, 1);<br>}<br>public long GetValue()<br>{<br>return Interlocked.Read(ref _value);<br>}<br>}<br></code></pre><br>Neste exemplo, a classe `AtomicCounter` utiliza a função `Interlocked.Add` para garantir que a operação de incremento seja realizada de forma atômica, evitando problemas de concorrência.<br>Além disso, podemos explorar outras APIs e técnicas avançadas para otimizar o uso de LLMs em nossos sistemas. Por exemplo, podemos utilizar instruções SIMD (Single Instruction, Multiple Data) para processamento paralelo de dados, melhorando ainda mais o desempenho de nossas aplicações.<br>Em conclusão, dominar o uso de Function calling com LLMs pode ser um diferencial importante para desenvolvedores que buscam construir sistemas escaláveis e eficientes. Aprofundar-se nesse tema pode abrir novas possibilidades e melhorar significativamente o desempenho de suas aplicações. Então, que tal se aventurar nesse universo e explorar todo o potencial das instruções LLM? Os resultados podem surpreender!</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/padroes-de-design-o-segredo-por-tras-dos-frameworks.html">Padrões de Design: o segredo por trás dos frameworks</a><span>Outros</span></li>
+<li><a href="/artigos/design-patterns-a-beleza-e-a-armadilha-na-arquitetura-de-software.html">Design Patterns: A Beleza e a Armadilha na Arquitetura de Software</a><span>Outros</span></li>
+<li><a href="/artigos/podcast-com-luca-rossi-o-futuro-da-comunicacao-online.html">Podcast com Luca Rossi: O Futuro da Comunicação Online</a><span>Outros</span></li>
+<li><a href="/artigos/design-patterns-mais-do-que-um-vocabulario-uma-filosofia-de-desenvolvimento.html">Design Patterns: Mais do que um Vocabulário, uma Filosofia de Desenvolvimento</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

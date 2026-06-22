@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Você já parou para pensar no impacto real de potencializar o seu JetBrains AI Assistant com a API LLM de terceiros? A integração de terceiros tem se tornado cada vez mais comum no desenvolvimento de software, permitindo que os desenvolvedores ampliem as capacidades das suas ferramentas favoritas de forma personalizada e eficiente.<br><br>A utilização da API LLM (Large Language Models) em conjunto com o JetBrains AI Assistant pode trazer inúmeras vantagens para o seu fluxo de trabalho. Essa integração possibilita uma maior capacidade de compreensão de linguagem natural, facilitando a interação com o assistente virtual e tornando as tarefas do dia a dia mais ágeis e intuitivas.<br><br>Para implementar essa integração, é necessário realizar a conexão entre a API LLM de terceiros e o JetBrains AI Assistant, configurando os parâmetros necessários e garantindo a segurança dos dados. Com isso, você poderá aproveitar todo o potencial da inteligência artificial em suas atividades de desenvolvimento de software.<br><br>Aqui está um exemplo simples de como você pode utilizar a API LLM em conjunto com o JetBrains AI Assistant em um projeto C#:<br><br><pre><code class="language-csharp">using System;<br>using ThirdPartyLLMApi;<br><br>class Program<br>{<br>    static void Main()<br>    {<br>        var assistant = new JetBrainsAIAssistant();<br>        var llmApi = new ThirdPartyLLMApi();<br><br>        string userInput = Console.ReadLine();<br>        string response = assistant.GetResponse(userInput);<br><br>        if (response.Contains("LLM"))<br>        {<br>            string llmResponse = llmApi.GetResponse(response);<br>            Console.WriteLine(llmResponse);<br>        }<br>        else<br>        {<br>            Console.WriteLine(response);<br>        }<br>    }<br>}<br></code></pre><br><br>Além disso, é importante explorar as possibilidades avançadas que essa integração pode oferecer. Você pode desenvolver funcionalidades personalizadas, como sugestões de código mais inteligentes, correção automática de erros e até mesmo assistência na geração de documentação técnica.<br><br>Em conclusão, a utilização da API LLM de terceiros no JetBrains AI Assistant pode revolucionar a forma como você interage com suas ferramentas de desenvolvimento. Aproveite todo o potencial da inteligência artificial para otimizar o seu fluxo de trabalho e elevar a qualidade das suas entregas. Experimente essa integração e descubra um novo mundo de possibilidades no desenvolvimento de software.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/desbravando-os-limites-tecnicos-de-speedrunning-e-modding-em-the-incredibles-rise-of-the-underminer.html">Desbravando os Limites Técnicos de Speedrunning e Modding em The Incredibles: Rise of the Underminer</a><span>Outros</span></li>
+<li><a href="/artigos/desafios-da-inteligencia-artificial-o-tempo-economizado-e-realmente-compensado-pelo-novo-trabalho-gerado.html">Desafios da Inteligência Artificial: O Tempo Economizado é Realmente Compensado pelo Novo Trabalho Gerado?</a><span>Outros</span></li>
+<li><a href="/artigos/automatizando-fluxos-de-trabalho-com-n8n-a-revolucao-da-automacao-inteligente.html">Automatizando fluxos de trabalho com N8n: A revolução da automação inteligente</a><span>Outros</span></li>
+<li><a href="/artigos/the-language-brain-o-poder-das-palavras-na-programacao.html">The Language Brain: O Poder das Palavras na Programação</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

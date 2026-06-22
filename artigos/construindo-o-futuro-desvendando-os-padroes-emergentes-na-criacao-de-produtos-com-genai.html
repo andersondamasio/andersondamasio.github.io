@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Se você acha que a criação de produtos com inteligência artificial genérica já é algo do passado, pense novamente. A notícia sobre os padrões emergentes na construção desses produtos está revolucionando o cenário tecnológico e promete trazer novas possibilidades e desafios para os arquitetos de software.<br>Para compreender melhor esse fenômeno, é essencial mergulhar nos detalhes técnicos que permeiam essa nova tendência. A integração de algoritmos de machine learning, processamento de linguagem natural e redes neurais profundas é apenas o ponto de partida. A verdadeira inovação está na forma como esses elementos são combinados e aplicados de maneira eficiente e escalável.<br>Em termos práticos, a construção de produtos com GenAI requer um profundo entendimento das APIs e frameworks disponíveis no mercado. A utilização de linguagens como C# pode facilitar o desenvolvimento e tornar o processo mais eficiente. Vamos explorar um trecho de código que exemplifica como integrar um modelo de machine learning em um sistema de recomendação:<br><pre><code class="language-csharp">using Microsoft.ML;<br>using System;<br>public class RecommendationSystem<br>{<br>public void TrainModel()<br>{<br>// Carregar dados<br>var mlContext = new MLContext();<br>var dataView = mlContext.Data.LoadFromTextFile<RecommendationData>("recommendationData.csv", hasHeader: true);<br>// Definir pipeline de treinamento<br>var pipeline = mlContext.Transforms.Conversion.MapValueToKey(outputColumnName: "UserIdEncoded", inputColumnName: "UserId")<br>.Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName: "ProductIdEncoded", inputColumnName: "ProductId"))<br>.Append(mlContext.Recommendation().Trainers.MatrixFactorization("UserIdEncoded", "ProductIdEncoded", labelColumnName: "Rating"));<br>// Treinar modelo<br>var model = pipeline.Fit(dataView);<br>}<br>}<br></code></pre><br>Além disso, é fundamental considerar dicas avançadas para otimizar a performance e a precisão dos modelos de GenAI. A utilização de técnicas de otimização, como o ajuste fino de hiperparâmetros e a validação cruzada, pode elevar a qualidade das previsões e tornar o produto final mais robusto e confiável.<br>Diante desse cenário, é essencial refletir sobre o impacto dessas inovações no mercado e nas práticas de desenvolvimento de software. A capacidade de construir produtos com inteligência artificial genérica não apenas amplia as possibilidades de negócio, mas também desafia os profissionais a repensarem suas abordagens e a adotarem uma mentalidade inovadora e adaptativa.<br>Em suma, os padrões emergentes na criação de produtos com GenAI representam um novo horizonte para a tecnologia e a inovação. Aqueles que souberem aproveitar essa oportunidade e dominar as técnicas e ferramentas necessárias estarão na vanguarda do desenvolvimento de software e prontos para construir o futuro.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/desvendando-os-segredos-dos-embeddings-em-produtos-genai.html">Desvendando os Segredos dos Embeddings em Produtos GenAI</a><span>Outros</span></li>
+<li><a href="/artigos/podcast-com-luca-rossi-o-futuro-da-comunicacao-online.html">Podcast com Luca Rossi: O Futuro da Comunicação Online</a><span>Outros</span></li>
+<li><a href="/artigos/floresta-e-deserto-onde-a-arquitetura-de-software-encontra-a-natureza.html">Floresta e Deserto: Onde a arquitetura de software encontra a natureza</a><span>Outros</span></li>
+<li><a href="/artigos/padroes-de-design-o-segredo-por-tras-dos-frameworks.html">Padrões de Design: o segredo por trás dos frameworks</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

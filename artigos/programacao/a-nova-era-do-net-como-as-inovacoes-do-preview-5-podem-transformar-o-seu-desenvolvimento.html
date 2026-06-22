@@ -140,6 +140,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a:hover { background-color: var(--link); color: var(--main-bg); }
 main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -228,6 +237,15 @@ builder.Services.ConfigureOpenTelemetryMeterProvider(meterProvider =&gt; {
 <h2>Conclusão</h2>
 <p>Essas atualizações do .NET 10 Preview 5 são um verdadeiro presente para os desenvolvedores. Com novas funcionalidades que aumentam a produtividade e melhoram a observabilidade, é hora de ficarmos atentos a essas mudanças e adaptarmos nossas práticas. Minha recomendação é que você experimente essas novidades em seus projetos e veja como elas podem impactar positivamente seu fluxo de trabalho. E, claro, mantenha-se sempre atualizando seus conhecimentos! A tecnologia não para, e nós também não devemos parar.</p>
 <p></div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/programacao/a-nova-era-do-c-reflexao-contratos-e-execucao-assincrona.html">A nova era do C++: Reflexão, Contratos e Execução Assíncrona</a><span>Programação</span></li>
+<li><a href="/artigos/programacao/a-revolucao-do-pair-programming-como-aumentar-a-qualidade-e-a-agilidade-na-entrega-de-software.html">A Revolução do Pair Programming: Como Aumentar a Qualidade e a Agilidade na Entrega de Software</a><span>Programação</span></li>
+<li><a href="/artigos/programacao/java-em-alta-o-que-a-nova-jakarta-ee-11-e-outras-novidades-significam-para-nos.html">Java em Alta: O que a Nova Jakarta EE 11 e Outras Novidades Significam para Nós?</a><span>Programação</span></li>
+<li><a href="/artigos/programacao/desvendando-o-impacto-do-opentelemetry-na-performance-de-aplicacoes-go.html">Desvendando o Impacto do OpenTelemetry na Performance de Aplicações Go</a><span>Programação</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

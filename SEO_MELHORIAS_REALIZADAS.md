@@ -268,6 +268,7 @@ O arquivo `gerar-conteudo.js` passou a centralizar uma etapa de publicacao SEO:
 - Converte `h1` dentro do corpo do artigo em `h2`, mantendo apenas um `h1` por pagina.
 - Ajusta `ProfilePage` da home para incluir `mainEntity`.
 - Diferencia titulos SEO longos usando mais contexto e categoria, evitando duplicidade.
+- Centraliza a escrita dos arquivos gerados para remover espacos finais de linha e evitar sujeira recorrente apos rebuilds.
 
 ### Ajustes nos scripts
 
@@ -287,6 +288,8 @@ O `scripts/seo-audit.js` agora tambem verifica:
 - Existencia de `robots.txt` apontando para o sitemap.
 - Existencia de `rss.xml`, itens do feed e links validos/indexaveis.
 - Link `<link rel="alternate" type="application/rss+xml">` em paginas indexaveis.
+- Paginas indexaveis que ficaram fora do sitemap.
+- Artigos indexaveis sem bloco de artigos relacionados.
 - `ProfilePage` sem `mainEntity`.
 - Paginacoes profundas que continuam indexaveis.
 - Duplicidades apenas em paginas indexaveis, ignorando aliases e noindex.
@@ -309,6 +312,31 @@ As paginas geradas e os backfills de artigos/estaticas tambem passaram a incluir
 ```html
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 ```
+
+### Links internos de relevancia
+
+Foi adicionada uma etapa automatica de artigos relacionados em paginas de artigo indexaveis.
+
+O gerador agora:
+
+- Seleciona relacionados por categoria, palavras do titulo e proximidade temporal.
+- Usa fallback para artigos recentes quando ha poucos candidatos do mesmo tema.
+- Insere ate 4 links contextuais por artigo.
+- Mantem os relacionados fora de aliases e paginas `noindex`.
+- Faz a auditoria falhar caso um artigo indexavel fique sem relacionados.
+
+Isso reduz paginas isoladas, melhora distribuicao de links internos e ajuda o Google a entender clusters tematicos.
+
+### Cobertura de sitemap
+
+A auditoria tambem passou a falhar quando uma pagina HTML indexavel tem canonical valido, mas nao aparece no `sitemap.xml`.
+
+Com isso:
+
+- `index2.html` e `index3.html` entram no sitemap, pois ainda sao indexaveis.
+- `beijaoupassa/politica-de-privacidade.html` entra no sitemap.
+- Artigos antigos top-level em `artigos/*.html` podem ser resolvidos por slug mesmo quando entradas antigas do `titulos.json` nao tinham URL.
+- Artigos obsoletos, templates e duplicatas fora do conjunto publicavel sao marcados como `noindex, follow`.
 
 ### Comando de manutencao
 
@@ -341,18 +369,21 @@ npm run seo:maintain
 
 Resultado:
 
-- 17.421 arquivos HTML auditados.
-- 7.794 artigos considerados publicaveis/indexaveis.
-- 7.856 URLs no sitemap.
+- 17.423 arquivos HTML auditados.
+- 8.054 artigos considerados publicaveis/indexaveis.
+- 8.119 URLs no sitemap.
 - 100 artigos recentes no `rss.xml`.
 - Nenhum `title`, `description`, `canonical`, `h1`, Open Graph, Twitter Card ou JSON-LD ausente.
 - Nenhum link interno quebrado.
 - Nenhuma URL `noindex` no sitemap.
 - Nenhum problema em `robots.txt`.
 - Nenhum problema no `rss.xml`.
+- Nenhuma pagina indexavel fora do sitemap.
+- Nenhum artigo indexavel sem artigos relacionados.
 - Nenhuma duplicidade de `title`, `description` ou `canonical` em paginas indexaveis.
 - Nenhuma paginacao profunda indexavel.
 - Nenhum erro restante de `ProfilePage` sem `mainEntity`.
+- `git diff --check` sem problemas de whitespace apos o rebuild completo.
 
 ### Observacao importante
 

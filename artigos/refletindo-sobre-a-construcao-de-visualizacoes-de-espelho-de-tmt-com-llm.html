@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">**Refletindo sobre a Construção de Visualizações de Espelho de TMT com LLM**<br>Em um projeto antigo, enfrentei um problema parecido com o que essa notícia levanta. A construção de visualizações de espelho é uma tarefa complexa que exige atenção aos detalhes e um profundo entendimento das tecnologias envolvidas. Por isso, ao deparar-me com a possibilidade de utilizar LLM para esse fim, fiquei intrigado com as possibilidades que essa abordagem poderia oferecer.<br>Para quem não está familiarizado, LLM (Large Language Models) é uma técnica avançada de processamento de linguagem natural que tem revolucionado a forma como interagimos com dados textuais. Nesse contexto, a utilização de LLM na construção de visualizações de espelho para o TMT (Thirty Meter Telescope) pode representar um avanço significativo na maneira como exploramos e interpretamos os dados captados por esse equipamento.<br>Do ponto de vista técnico, a integração de LLM em um projeto de visualização de espelho exige uma abordagem cuidadosa e meticulosa. É fundamental garantir que o modelo seja treinado com um volume significativo de dados relevantes para o contexto do TMT, de modo a garantir a precisão e a relevância das informações geradas. Além disso, a escolha das APIs e bibliotecas corretas para a implementação do modelo também desempenha um papel crucial no sucesso do projeto.<br>Um trecho de código em Python para ilustrar a integração de LLM em um projeto de visualização de espelho para o TMT:<br><pre><code>from transformers import GPT2LMHeadModel, GPT2Tokenizer<br>model = GPT2LMHeadModel.from_pretrained('gpt2')<br>tokenizer = GPT2Tokenizer.from_pretrained('gpt2')<br>text = "A imagem captada pelo TMT mostra..."<br>input_ids = tokenizer.encode(text, return_tensors='pt')<br>output = model.generate(input_ids, max_length=100, num_return_sequences=3, no_repeat_ngram_size=2)<br>for sequence in output:<br>generated_text = tokenizer.decode(sequence, skip_special_tokens=True)<br>print(generated_text)<br></code></pre><br>Além disso, é importante considerar a escalabilidade do sistema e a eficiência computacional ao implementar um modelo de LLM em um projeto de grande porte como o TMT. O uso de técnicas de otimização de código e paralelismo pode ser essencial para garantir o desempenho adequado do sistema.<br>Em conclusão, a construção de visualizações de espelho para o TMT com o uso de LLM é um desafio empolgante que abre novas possibilidades para a exploração e interpretação dos dados astronômicos. Com o domínio das técnicas e ferramentas necessárias, podemos criar soluções inovadoras que contribuem significativamente para o avanço da astronomia e da ciência como um todo.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/explorando-as-entranhas-da-arquitetura-de-software-livros-essenciais-para-desenvolvedores-com-interesse-em-temas-arquiteturais.html">Explorando as entranhas da Arquitetura de Software: Livros essenciais para desenvolvedores com interesse em temas arquiteturais</a><span>Outros</span></li>
+<li><a href="/artigos/dominando-os-padroes-de-design-5-cursos-imperdiveis-para-evoluir-como-desenvolvedor.html">Dominando os Padrões de Design: 5 cursos imperdíveis para evoluir como desenvolvedor</a><span>Outros</span></li>
+<li><a href="/artigos/repositorios-do-github-uma-paixao-ou-uma-obsessao.html">Repositórios do GitHub: uma paixão ou uma obsessão?</a><span>Outros</span></li>
+<li><a href="/artigos/desvendando-os-segredos-da-amostragem-llm-na-era-moderna.html">Desvendando os Segredos da Amostragem LLM na Era Moderna</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

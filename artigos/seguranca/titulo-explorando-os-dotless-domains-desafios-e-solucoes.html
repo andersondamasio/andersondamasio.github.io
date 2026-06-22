@@ -112,6 +112,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -152,6 +161,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">A maioria das falhas críticas que vi tinham ligação direta com má compreensão de Dotless Domains. Esses domínios, que não possuem o ponto final no final do nome, podem causar diversos problemas de segurança e funcionamento nos sistemas web. Neste artigo, vamos explorar mais a fundo esse conceito e discutir maneiras de lidar com ele de forma eficaz.<br>### O que são Dotless Domains<br>Dotless Domains, como o próprio nome sugere, são domínios que não possuem o ponto final no final do nome. Por exemplo, em vez de "meuwebsite.com", teríamos "meuwebsitecom". Isso pode levar a confusões e vulnerabilidades nos sistemas, já que o ponto final é essencial para a correta resolução de nomes de domínio.<br>### Por que são problemáticos<br>A ausência do ponto final em Dotless Domains pode levar a interpretações erradas por parte dos navegadores e servidores DNS. Isso pode resultar em redirecionamentos incorretos, phishing e até mesmo ataques de spoofing. É essencial que os desenvolvedores estejam cientes dessas questões e saibam como mitigar os possíveis riscos.<br><pre><code class="language-csharp">// Exemplo de código em C# para lidar com Dotless Domains de forma segura<br>string url = "http://meuwebsitecom";<br>Uri uri = new Uri(url, UriKind.Absolute);<br>Console.WriteLine(uri.Host);<br></code></pre><br>### Dicas e insights práticos<br>- Sempre verifique se os domínios estão corretamente formatados, com o ponto final no local apropriado.<br>- Utilize ferramentas de validação de URL para garantir a integridade dos links em seu sistema.<br>- Esteja atento a possíveis vulnerabilidades relacionadas a Dotless Domains em bibliotecas e frameworks utilizados em seu projeto.<br>### Conclusão<br>Em um mundo cada vez mais conectado, a segurança dos sistemas web é crucial. Compreender e lidar adequadamente com conceitos como Dotless Domains é essencial para garantir a integridade e a confiabilidade de nossas aplicações online. Esteja sempre atento a essas questões e busque manter-se atualizado sobre as melhores práticas de segurança na web.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/seguranca/e-fascinante-como-23andme-customers-notified-of-bankruptcy-and-potential-claims-deadline-to-file-is-july-14-evoluiu-nos-ultimos-anos-mas-os-erros-continuam-parecidos.html">É fascinante como 23andMe customers notified of bankruptcy and potential claims — deadline to file is July 14 evoluiu nos últimos anos, mas os erros continuam parecidos.</a><span>Segurança</span></li>
+<li><a href="/artigos/seguranca/google-vai-pagar-us-1-4-bilhao-para-encerrar-processos-de-privacidade-o-que-isso-significa-para-a-arquitetura-de-software.html">Google vai pagar US$ 1,4 bilhão para encerrar processos de privacidade: o que isso significa para a arquitetura de software?</a><span>Segurança</span></li>
+<li><a href="/artigos/seguranca/desmistificando-a-privacidade-como-gerenciar-seus-dados-ao-usar-ia-generativa.html">Desmistificando a Privacidade: Como Gerenciar seus Dados ao Usar IA Generativa</a><span>Segurança</span></li>
+<li><a href="/artigos/seguranca/como-proteger-sua-privacidade-ao-usar-chatgpt-dicas-praticas-para-desenvolvedores.html">Como Proteger sua Privacidade ao Usar ChatGPT: Dicas Práticas para Desenvolvedores</a><span>Segurança</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

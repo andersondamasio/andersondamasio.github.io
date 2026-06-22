@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">É impossível não lembrar dos bugs que enfrentei por subestimar From: Steve Jobs. "Great idea, thank you." no início da carreira. A mensagem curta e direta do icônico fundador da Apple poderia ter passado despercebida por muitos, mas para mim, foi um divisor de águas.<br>Por trás dessa simples frase, havia um código oculto, uma ideia genial que poderia revolucionar a forma como encaramos a tecnologia. E foi nesse momento que percebi a importância de sempre estar atento aos detalhes, por mais sutis que possam parecer.<br>A partir dessa experiência, mergulhei de cabeça em estudar e compreender a fundo o que estava por trás da mensagem de Jobs. E foi aí que descobri um mundo de possibilidades e desafios que me fizeram crescer como arquiteto de software.<br>A tecnologia está em constante evolução, e é preciso estar sempre um passo à frente para acompanhar as tendências e inovações que surgem a todo momento. Por isso, compartilho com vocês um trecho de código em C# que exemplifica como podemos utilizar APIs de forma eficiente e prática:<br><pre><code class="language-csharp">using System;<br>using System.Net.Http;<br>using System.Threading.Tasks;<br>public class Program<br>{<br>public static async Task Main()<br>{<br>using (var client = new HttpClient())<br>{<br>HttpResponseMessage response = await client.GetAsync("https://api.example.com/data");<br>if (response.IsSuccessStatusCode)<br>{<br>string result = await response.Content.ReadAsStringAsync();<br>Console.WriteLine(result);<br>}<br>}<br>}<br>}<br></code></pre><br>Neste exemplo, utilizamos a classe HttpClient para fazer uma requisição a uma API externa e obter os dados necessários. É importante sempre considerar a segurança, tratamento de erros e performance ao trabalhar com chamadas de rede, garantindo assim um sistema escalável e robusto.<br>Além disso, é fundamental manter-se atualizado com as melhores práticas e padrões de desenvolvimento, buscando sempre a excelência em cada linha de código escrita. Afinal, como diria Steve Jobs, "Great idea, thank you.", as grandes ideias nascem da dedicação e do comprometimento com a qualidade.<br>Por isso, nunca subestime o poder de uma simples mensagem ou de um trecho de código bem escrito. Esteja sempre aberto a novas possibilidades e desafios, pois é assim que crescemos e evoluímos como profissionais de tecnologia. E lembre-se, por trás de cada grande ideia, há um código esperando para ser decifrado e explorado.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/static-as-a-server-a-revolucao-silenciosa-nos-bastidores-da-tecnologia.html">Static as a Server: A revolução silenciosa nos bastidores da tecnologia</a><span>Outros</span></li>
+<li><a href="/artigos/stabilidade-a-chave-para-sistemas-robustos.html">Stabilidade: a chave para sistemas robustos</a><span>Outros</span></li>
+<li><a href="/artigos/explorando-os-segredos-do-reservoir-sampling.html">Explorando os Segredos do Reservoir Sampling</a><span>Outros</span></li>
+<li><a href="/artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html">Desvendando os Mistérios por Trás das Propriedades Emergentes dos LLMs</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

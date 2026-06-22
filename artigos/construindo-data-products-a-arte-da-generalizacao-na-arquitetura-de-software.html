@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Se existe um tema que separa teoria e prática no desenvolvimento, esse tema é Generalizing the design of data products. A capacidade de generalizar o design de produtos de dados é uma habilidade fundamental para arquitetos de software que desejam criar sistemas escaláveis e flexíveis. Neste artigo, vamos explorar como essa prática pode revolucionar a forma como pensamos e desenvolvemos software.<br>A generalização no design de data products envolve a criação de estruturas e padrões reutilizáveis que podem ser aplicados a diferentes conjuntos de dados e cenários. Em vez de criar soluções específicas para cada problema, os arquitetos de software buscam identificar padrões comuns e abstrair essas soluções em componentes genéricos. Isso não só acelera o desenvolvimento, mas também facilita a manutenção e evolução do sistema ao longo do tempo.<br>Para ilustrar esse conceito, vamos considerar um exemplo prático em C#. Digamos que estamos desenvolvendo um sistema de análise de dados que precisa lidar com diferentes tipos de fontes de dados, como bancos de dados, APIs e arquivos CSV. Em vez de criar lógica específica para cada tipo de fonte de dados, podemos generalizar o processo de leitura e processamento, criando interfaces e classes abstratas que encapsulam a lógica comum.<br><pre><code class="language-csharp">public interface IDataSource<br>{<br>void ReadData();<br>void ProcessData();<br>}<br>public class Database : IDataSource<br>{<br>public void ReadData()<br>{<br>// Lógica para ler dados do banco de dados<br>}<br>public void ProcessData()<br>{<br>// Lógica para processar dados do banco de dados<br>}<br>}<br>public class Api : IDataSource<br>{<br>public void ReadData()<br>{<br>// Lógica para ler dados da API<br>}<br>public void ProcessData()<br>{<br>// Lógica para processar dados da API<br>}<br>}<br></code></pre><br>Ao adotar essa abordagem, podemos facilmente adicionar suporte para novos tipos de fontes de dados no futuro, sem a necessidade de alterar a lógica existente. Isso torna o sistema mais flexível e adaptável às mudanças de requisitos.<br>Além disso, ao generalizar o design de data products, podemos criar pipelines de processamento de dados altamente escaláveis e modulares. Podemos combinar diferentes componentes de forma flexível para atender a diferentes necessidades de negócio, sem a necessidade de reescrever o código do zero.<br>Em conclusão, a generalização no design de data products é uma prática essencial para arquitetos de software que desejam criar sistemas robustos e flexíveis. Ao identificar padrões comuns e abstrair soluções em componentes reutilizáveis, podemos acelerar o desenvolvimento, facilitar a manutenção e garantir a escalabilidade do sistema ao longo do tempo. Experimente aplicar esses conceitos em seus projetos e veja como eles podem transformar a forma como você pensa e desenvolve software.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/desenvolvendo-produtos-de-dados-o-proximo-passo.html">Desenvolvendo Produtos de Dados: O Próximo Passo</a><span>Outros</span></li>
+<li><a href="/artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html">Design Tokens: A Arquitetura Secreta por Trás de Interfaces de Usuário Incríveis</a><span>Outros</span></li>
+<li><a href="/artigos/automatizando-mudancas-em-apis-com-codemods-o-poder-do-refactoring.html">Automatizando Mudanças em APIs com Codemods: O Poder do Refactoring</a><span>Outros</span></li>
+<li><a href="/artigos/transformando-seu-codigo-com-maestria-explorando-um-codemod-mais-complexo.html">Transformando seu código com maestria: explorando um codemod mais complexo</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

@@ -140,6 +140,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a:hover { background-color: var(--link); color: var(--main-bg); }
 main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -203,6 +212,15 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 <p>O Flux 2.6 não é apenas uma atualização; é uma revolução na forma como encaramos o gerenciamento de infraestrutura. A segurança foi colocada em primeiro lugar, e a flexibilidade do novo modelo pode ajudar equipes a implementarem soluções mais robustas e menos propensas a falhas. Se você ainda não testou as novas funcionalidades, tá na hora de dar uma olhada. Essa pode ser a chave para otimizar e modernizar sua stack de DevOps.</p>
 <p>Em um mundo onde as ameaças cibernéticas estão em constante evolução, adotar práticas de segurança como as apresentadas no Flux 2.6 se torna imperativo. E você, já está preparado para essa nova fase do GitOps?</p>
 <p></div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/devops/como-o-espelho-do-trafego-pode-salvar-seu-microservico-de-bugs.html">Como o Espelho do Tráfego Pode Salvar Seu Microserviço de Bugs</a><span>DevOps</span></li>
+<li><a href="/artigos/devops/a-importancia-das-atualizacoes-no-azure-devops-server-fique-de-olho.html">A importância das atualizações no Azure DevOps Server: fique de olho!</a><span>DevOps</span></li>
+<li><a href="/artigos/devops/como-apiops-e-iac-estao-mudando-o-jogo-da-gestao-de-apis.html">Como APIOps e IaC Estão Mudando o Jogo da Gestão de APIs</a><span>DevOps</span></li>
+<li><a href="/artigos/devops/acelerando-o-desenvolvimento-como-o-novo-docker-server-da-aws-pode-transformar-seus-pipelines.html">Acelerando o Desenvolvimento: Como o Novo Docker Server da AWS Pode Transformar Seus Pipelines</a><span>DevOps</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

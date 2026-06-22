@@ -102,7 +102,16 @@
     }
     .back-link a:hover { background-color: #0a66c2; color: white; }
     main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-  </style>
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
+</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -130,7 +139,16 @@
     <h1>Arquitetura Hexagonal: uma abordagem eficiente para o desenvolvimento de software</h1>
     <p class="article-meta">Publicado em: 25/04/2025 20:42</p>
     <div class="article-body">Título: Arquitetura Hexagonal: uma abordagem eficiente para o desenvolvimento de software<br><br>Introdução:<br><br>A arquitetura de software é um aspecto fundamental no desenvolvimento de sistemas de software de qualidade. Dentre as diversas abordagens arquiteturais existentes, a Arquitetura Hexagonal tem ganhado destaque por oferecer uma estrutura flexível e modular, que facilita a manutenção, testabilidade e evolução do software. Neste artigo, iremos explorar os princípios e benefícios da Arquitetura Hexagonal, bem como sua aplicação prática no desenvolvimento de sistemas de software.<br><br>Princípios da Arquitetura Hexagonal:<br><br>A Arquitetura Hexagonal, também conhecida como Ports and Adapters ou Clean Architecture, é baseada em alguns princípios fundamentais que visam separar as preocupações e facilitar a evolução do software. Um dos principais princípios dessa arquitetura é a separação clara das camadas de negócio, infraestrutura e interface do usuário. Isso significa que o núcleo da aplicação, que contém a lógica de negócio, não deve depender de detalhes de implementação da infraestrutura ou da interface do usuário.<br><br>Benefícios da Arquitetura Hexagonal:<br><br>A Arquitetura Hexagonal oferece uma série de benefícios para o desenvolvimento de software, tais como:<br><br>- Facilidade de testes: A separação das camadas facilita a escrita de testes automatizados, uma vez que é possível testar o núcleo da aplicação sem depender da infraestrutura ou da interface do usuário.<br>- Flexibilidade: A arquitetura hexagonal permite que diferentes tecnologias e frameworks sejam facilmente substituídos sem afetar o núcleo da aplicação.<br>- Manutenção facilitada: A separação das camadas torna mais fácil identificar e corrigir problemas no software, além de facilitar a adição de novas funcionalidades.<br>- Evolução contínua: A arquitetura hexagonal permite que o software evolua de forma mais fácil e rápida, sem comprometer a estabilidade ou a integridade da aplicação.<br><br>Aplicação prática da Arquitetura Hexagonal:<br><br>Para aplicar a Arquitetura Hexagonal no desenvolvimento de um software, é necessário identificar e separar claramente as responsabilidades de cada camada. O núcleo da aplicação deve conter a lógica de negócio, enquanto as camadas de infraestrutura e interface do usuário devem ser responsáveis por lidar com questões de persistência de dados e interação com o usuário, respectivamente.<br><br>Além disso, é importante utilizar padrões de projeto como Injeção de Dependências e Interfaces para garantir a flexibilidade e a testabilidade do software. Dessa forma, é possível construir sistemas mais robustos, escaláveis e fáceis de dar manutenção.<br><br>Conclusão:<br><br>A Arquitetura Hexagonal é uma abordagem eficiente e flexível para o desenvolvimento de software, que oferece uma série de benefícios para os desenvolvedores e usuários. Ao separar claramente as camadas de negócio, infraestrutura e interface do usuário, é possível construir sistemas mais testáveis, flexíveis e fáceis de manter. Portanto, a adoção da Arquitetura Hexagonal pode ser uma excelente escolha para projetos de software que buscam qualidade, escalabilidade e evolução contínua.</div>
-    <p class="back-link">
+    <section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/arquitetura-de-software-baseada-em-eventos-uma-abordagem-eficiente-para-sistemas-distribuidos.html">Arquitetura de Software Baseada em Eventos: Uma Abordagem Eficiente para Sistemas Distribuídos</a><span>Outros</span></li>
+<li><a href="/artigos/arquitetura-serverless-uma-abordagem-inovadora-para-o-desenvolvimento-de-software.html">Arquitetura Serverless: uma abordagem inovadora para o desenvolvimento de software</a><span>Outros</span></li>
+<li><a href="/artigos/escalabilidade-horizontal-em-arquitetura-de-software.html">Escalabilidade Horizontal em Arquitetura de Software</a><span>Outros</span></li>
+<li><a href="/artigos/arquitetura-de-software-distribuida-desafios-e-solucoes.html">Arquitetura de Software Distribuída: Desafios e Soluções</a><span>Outros</span></li>
+</ul>
+</section>
+<p class="back-link">
       <a href="../index.html">← Voltar para a página inicial</a>
     </p>
   </main>

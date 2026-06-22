@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -130,6 +139,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Desvendando o Mundo da Derivação Automática Esparsa</h1>
 <p class="article-meta">Publicado em: 29/04/2025 22:57</p>
 <div class="article-body">A discussão sobre An illustrated guide to automatic sparse differentiation voltou à tona, e acredito que precisamos falar sobre isso com mais seriedade.<br><br>Recentemente, tenho me deparado com diversas discussões sobre a derivação automática esparsa e como ela pode revolucionar a forma como lidamos com cálculos diferenciais em sistemas complexos. Para aqueles que não estão familiarizados com o termo, a derivação automática esparsa é uma técnica que permite calcular derivadas de funções de forma automática e eficiente, especialmente em casos onde as matrizes envolvidas são esparsas, ou seja, possuem muitos elementos zero.<br><br>Essa técnica tem se mostrado extremamente útil em diversas áreas, desde a otimização de código em computação de alto desempenho até a resolução de problemas em física e engenharia. A ideia por trás da derivação automática esparsa é utilizar estruturas de dados especiais que representam as funções e suas derivadas de forma eficiente, permitindo calcular as derivadas de forma precisa e rápida.<br><br>Para ilustrar melhor como a derivação automática esparsa funciona na prática, vamos analisar um exemplo simples em C#:<br><br><pre><code class="language-csharp">using System;<br>using MathNet.Numerics;<br><br>class Program<br>{<br>    static void Main()<br>    {<br>        Func<double, double> func = x => x * x; // Função f(x) = x^2<br>        var ad = new SparseGradientValue<double>(func, 3); // Calcula a derivada de f(x) em x = 3<br><br>        Console.WriteLine($"f(3) = {ad.Value}"); // Imprime o valor da função em x = 3<br>        Console.WriteLine($"f'(3) = {ad.Gradient[0]}"); // Imprime o valor da derivada em x = 3<br>    }<br>}<br></code></pre><br><br>Neste exemplo, estamos calculando a derivada da função \(f(x) = x^2\) em \(x = 3\) utilizando a biblioteca MathNet.Numerics para lidar com cálculos numéricos. A classe `SparseGradientValue` nos permite representar a função e sua derivada de forma eficiente, facilitando a computação da derivada em um ponto específico.<br><br>Além disso, é importante mencionar que a derivação automática esparsa não se limita apenas a funções simples como a do nosso exemplo. Ela pode ser aplicada em problemas mais complexos, envolvendo múltiplas variáveis e funções não lineares, proporcionando uma maneira elegante e eficiente de lidar com cálculos diferenciais em sistemas escaláveis.<br><br>Em conclusão, a derivação automática esparsa é uma ferramenta poderosa que pode trazer benefícios significativos para aqueles que lidam com cálculos diferenciais em seus projetos. Se você ainda não explorou essa técnica, recomendo que dedique um tempo para estudá-la e entender como ela pode ser aplicada no seu contexto específico. Afinal, o conhecimento e a prática são as chaves para o sucesso na área da computação.<br><br>Espero que este artigo tenha sido útil e inspirador para você. Até a próxima!</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/chatgpt-a-revolucao-na-busca-de-informacoes-online.html">ChatGPT: A revolução na busca de informações online</a><span>Outros</span></li>
+<li><a href="/artigos/o-renascimento-dos-mortos-como-a-tecnologia-esta-transformando-o-conceito-de-zumbi.html">"O Renascimento dos Mortos: Como a Tecnologia está Transformando o Conceito de 'Zumbi'"</a><span>Outros</span></li>
+<li><a href="/artigos/performance-em-sistemas-desafios-e-estrategias-para-otimizacao.html">Performance em sistemas: desafios e estratégias para otimização</a><span>Outros</span></li>
+<li><a href="/artigos/linux-por-que-o-caminho-nem-sempre-e-real.html">Linux: Por que o caminho nem sempre é real?</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

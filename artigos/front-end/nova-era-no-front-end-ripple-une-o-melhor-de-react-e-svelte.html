@@ -140,6 +140,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a:hover { background-color: var(--link); color: var(--main-bg); }
 main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -221,6 +230,15 @@ export component TodoList({ todos, addTodo }: Props) {
 <p>Ripple é uma adição empolgante ao ecossistema de frameworks de front-end. Ele não só promete melhorar a experiência do desenvolvedor, mas também a performance das aplicações. Pessoalmente, acredito que essa abordagem mais direta e menos abstrata pode ser um divisor de águas, especialmente para projetos que exigem alta interatividade. Se você está buscando uma solução que combine simplicidade com poder, vale a pena dar uma chance ao Ripple.</p>
 <p>Em um mundo onde a tecnologia avança rapidamente, é sempre bom manter-se atualizado e aberto a novas ferramentas e metodologias. Quem sabe o Ripple não pode ser a solução que você estava procurando?</p>
 <p></div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/front-end/a-nova-era-dos-botoes-como-o-html-invoker-commands-pode-transformar-seu-desenvolvimento.html">A Nova Era dos Botões: Como o HTML Invoker Commands Pode Transformar Seu Desenvolvimento</a><span>Front-end</span></li>
+<li><a href="/artigos/front-end/novo-builder-visual-da-shadcn-o-futuro-da-criacao-de-projetos-ui.html">Novo Builder Visual da Shadcn: O Futuro da Criação de Projetos UI</a><span>Front-end</span></li>
+<li><a href="/artigos/tecnologia/a-nova-dell-16-premium-um-poderosissimo-aliado-para-designers-e-desenvolvedores.html">A nova Dell 16 Premium: um poderosíssimo aliado para designers e desenvolvedores</a><span>Tecnologia</span></li>
+<li><a href="/artigos/robotica/robos-com-bracos-o-futuro-das-limpezas-em-casa.html">Robôs com Braços: O Futuro das Limpezas em Casa</a><span>Robótica</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

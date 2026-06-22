@@ -140,6 +140,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a:hover { background-color: var(--link); color: var(--main-bg); }
 main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -223,6 +232,15 @@ if (searchResponse.IsValid)
 <p>O OpenSearch 3.0 não é apenas uma atualização, mas uma verdadeira <strong>revolução</strong> na forma como trabalhamos com dados. Com suas melhorias em velocidade e escalabilidade, ele se destaca como uma solução confiável para desenvolvedores que buscam integrar capacidades de busca avançadas em suas aplicações. À medida que avançamos em um mundo cada vez mais orientado por dados, soluções como o OpenSearch se tornam essenciais. Portanto, é hora de explorar essas novas possibilidades e adaptar nossas arquiteturas para tirar o máximo proveito dessas inovações.</p>
 <p>
 <p></p></div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/banco-de-dados/a-nova-onda-de-aquisicoes-snowflake-e-a-busca-pela-excelencia-em-dados.html">A nova onda de aquisições: Snowflake e a busca pela excelência em dados</a><span>Banco de Dados</span></li>
+<li><a href="/artigos/banco-de-dados/desbravando-o-futuro-com-amazon-aurora-dsql-a-revolucao-do-banco-de-dados-serverless.html">Desbravando o Futuro com Amazon Aurora DSQL: A Revolução do Banco de Dados Serverless</a><span>Banco de Dados</span></li>
+<li><a href="/artigos/banco-de-dados/redis-o-retorno-ao-codigo-aberto-e-as-implicacoes-para-arquitetura-de-software.html">Redis: O Retorno ao Código Aberto e as Implicações para Arquitetura de Software</a><span>Banco de Dados</span></li>
+<li><a href="/artigos/banco-de-dados/a-nova-era-dos-bancos-digitais-como-a-arquitetura-de-software-pode-ajudar-na-transicao-de-startups-para-grandes-instituicoes-financeiras.html">A nova era dos bancos digitais: como a Arquitetura de Software pode ajudar na transição de startups para grandes instituições financeiras</a><span>Banco de Dados</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

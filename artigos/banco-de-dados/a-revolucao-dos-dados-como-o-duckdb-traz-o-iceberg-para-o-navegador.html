@@ -140,6 +140,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a:hover { background-color: var(--link); color: var(--main-bg); }
 main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -201,6 +210,15 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 <p>A nova funcionalidade do DuckDB é um grande passo para a democratização do aceso a dados complexos. A possibilidade de interagir com dados do Iceberg diretamente do navegador, sem necessidade de configuração de infraestrutura, é uma mudança que pode facilitar o trabalho de muitos profissionais na área. É claro que ainda há espaço para melhorias, como o suporte a outros provedores de nuvem, mas a recepção da comunidade tem sido bastante positiva. Para quem trabalha com dados, essa inovação é uma oportunidade de explorar novas formas de manipulação e análise. Vale a pena ficar de olho nas próximas atualizações!</p>
 <p>
 <p></p></div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/banco-de-dados/a-nova-era-da-consistencia-eventual-desmistificando-corrosion-no-fly-io.html">A nova era da consistência eventual: desmistificando Corrosion no Fly.io</a><span>Banco de Dados</span></li>
+<li><a href="/artigos/banco-de-dados/a-nova-era-das-consultas-pinecone-e-a-inovacao-dos-nos-de-leitura-dedicados.html">A nova era das consultas: Pinecone e a inovação dos Nós de Leitura Dedicados</a><span>Banco de Dados</span></li>
+<li><a href="/artigos/banco-de-dados/a-nova-onda-dos-bancos-de-dados-clickhouse-e-a-revolucao-na-analise-de-dados.html">A nova onda dos bancos de dados: ClickHouse e a revolução na análise de dados</a><span>Banco de Dados</span></li>
+<li><a href="/artigos/banco-de-dados/prisma-7-a-revolucao-que-deixou-o-rust-para-tras.html">Prisma 7: A Revolução Que Deixou o Rust para Trás</a><span>Banco de Dados</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

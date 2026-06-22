@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -131,6 +140,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>WebStudio: Uma alternativa gratuita baseada na web para Screen Studio</h1>
 <p class="article-meta">Publicado em: 28/04/2025 00:08</p>
 <div class="article-body">Com a crescente demanda por ferramentas de produção de conteúdo visual de alta qualidade, o desenvolvimento de alternativas acessíveis e eficientes se torna essencial. Nesse contexto, a notícia sobre a criação do WebStudio, uma alternativa gratuita baseada na web para o Screen Studio, ganha destaque.<br><br>A relevância dessa novidade para práticas modernas de arquitetura de software e desenvolvimento de sistemas está na possibilidade de oferecer uma solução flexível e de fácil acesso para a criação de conteúdo visual. Com o uso de tecnologias web, como HTML5, CSS3 e JavaScript, o WebStudio permite aos usuários produzir vídeos e transmissões ao vivo de forma intuitiva e sem a necessidade de instalação de softwares específicos.<br><br>Para exemplificar a aplicação prática do WebStudio, podemos considerar a criação de uma interface de usuário personalizada para adicionar filtros em tempo real a uma transmissão ao vivo. Veja um trecho de código em JavaScript que demonstra como isso pode ser implementado:<br><br><pre><code>// Captura o vídeo da câmera<br>navigator.mediaDevices.getUserMedia({ video: true })<br>  .then(stream => {<br>    const videoElement = document.createElement('video');<br>    videoElement.srcObject = stream;<br>    document.body.appendChild(videoElement);<br>  });<br><br>// Aplica filtro em tempo real<br>videoElement.addEventListener('play', () => {<br>  const canvasElement = document.createElement('canvas');<br>  const context = canvasElement.getContext('2d');<br>  setInterval(() => {<br>    context.drawImage(videoElement, 0, 0, videoElement.width, videoElement.height);<br>    // Aplicar filtro aqui<br>  }, 16);<br>});<br></code></pre><br><br>Nesse exemplo, é possível integrar o WebStudio com APIs de processamento de imagem para adicionar filtros em tempo real à transmissão ao vivo, proporcionando uma experiência mais dinâmica e interativa para os espectadores.<br><br>Além disso, uma dica avançada para os desenvolvedores que desejam explorar ao máximo as funcionalidades do WebStudio é a integração com serviços de armazenamento em nuvem, como Amazon S3 ou Google Cloud Storage, para o gerenciamento eficiente de arquivos de mídia e a escalabilidade da aplicação.<br><br>Em conclusão, o WebStudio representa uma alternativa inovadora e acessível para a produção de conteúdo visual, oferecendo aos usuários a oportunidade de criar vídeos e transmissões ao vivo de forma simples e eficiente diretamente do navegador. Com a combinação de tecnologias web e APIs externas, é possível explorar todo o potencial dessa ferramenta e proporcionar experiências visualmente ricas e envolventes para o público.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/cuidando-do-medo-da-morte-a-importancia-da-abordagem-holistica-na-saude.html">Cuidando do Medo da Morte: A Importância da Abordagem Holística na Saúde</a><span>Outros</span></li>
+<li><a href="/artigos/reforco-de-cobre-a-revolucao-da-resistencia-em-materiais.html">Reforço de cobre: a revolução da resistência em materiais</a><span>Outros</span></li>
+<li><a href="/artigos/desvendando-a-causa-do-alzheimer-e-identificando-um-candidato-terapeutico-com-inteligencia-artificial.html">Desvendando a Causa do Alzheimer e Identificando um Candidato Terapêutico com Inteligência Artificial</a><span>Outros</span></li>
+<li><a href="/artigos/subversao-digital-taticas-da-stasi-na-era-moderna-2021.html">Subversão Digital: Táticas da Stasi na Era Moderna (2021)</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 

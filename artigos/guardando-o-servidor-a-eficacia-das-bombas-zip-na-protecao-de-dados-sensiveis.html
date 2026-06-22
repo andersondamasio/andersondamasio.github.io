@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -130,6 +139,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Guardando o servidor: a eficácia das bombas zip na proteção de dados sensíveis</h1>
 <p class="article-meta">Publicado em: 29/04/2025 20:10</p>
 <div class="article-body">---<br><br>Com o avanço da tecnologia e a crescente preocupação com a segurança de dados, a utilização de zip bombs para proteger servidores tem se tornado uma prática cada vez mais comum no mundo da arquitetura de software e desenvolvimento de sistemas. Mas afinal, o que são zip bombs e como elas podem ser aplicadas de forma eficaz?<br><br>As zip bombs são arquivos compactados que, quando descompactados, liberam uma quantidade massiva de dados, consumindo recursos do sistema e dificultando ou até mesmo impossibilitando o acesso não autorizado às informações contidas no servidor. Essa técnica se baseia na compressão extrema de arquivos, resultando em um arquivo zip aparentemente inofensivo, mas que na verdade contém uma grande quantidade de dados.<br><br>Um exemplo prático de aplicação das zip bombs é a proteção de arquivos sensíveis em um servidor. Ao utilizar uma zip bomb para compactar tais arquivos, é possível dificultar significativamente o acesso não autorizado, uma vez que a descompactação demandará uma quantidade exorbitante de recursos do sistema, tornando o processo inviável para um possível invasor.<br><br>Veja um exemplo simples de como criar e descompactar uma zip bomb em C#:<br><br><pre><code class="language-csharp">using System;<br>using System.IO;<br>using System.IO.Compression;<br><br>public class ZipBombExample<br>{<br>    public static void CreateZipBomb(string filePath)<br>    {<br>        using (FileStream fs = new FileStream(filePath, FileMode.Create))<br>        {<br>            using (ZipArchive archive = new ZipArchive(fs, ZipArchiveMode.Create))<br>            {<br>                for (int i = 0; i < 1000000; i++)<br>                {<br>                    ZipArchiveEntry entry = archive.CreateEntry($"file_{i}.txt");<br>                    using (StreamWriter writer = new StreamWriter(entry.Open()))<br>                    {<br>                        writer.WriteLine("Lorem ipsum dolor sit amet, consectetur adipiscing elit...");<br>                    }<br>                }<br>            }<br>        }<br>    }<br><br>    public static void ExtractZipBomb(string filePath)<br>    {<br>        using (ZipArchive archive = ZipFile.OpenRead(filePath))<br>        {<br>            foreach (ZipArchiveEntry entry in archive.Entries)<br>            {<br>                using (StreamReader reader = new StreamReader(entry.Open()))<br>                {<br>                    string contents = reader.ReadToEnd();<br>                    // Processar os dados conforme necessário<br>                }<br>            }<br>        }<br>    }<br>}<br></code></pre><br><br>Ao implementar adequadamente a utilização de zip bombs em seu servidor, é possível adicionar uma camada extra de segurança aos seus dados sensíveis. No entanto, é importante ressaltar que essa técnica deve ser empregada com cautela, uma vez que a descompactação de uma zip bomb consome recursos significativos e pode impactar o desempenho do sistema.<br><br>Em resumo, as zip bombs são uma ferramenta poderosa na proteção de servidores e dados sensíveis, mas é essencial compreender seu funcionamento e aplicação correta para garantir a eficácia e segurança do seu sistema. Experimente implementar essa técnica em seus projetos e fortaleça a proteção dos seus dados contra possíveis ataques cibernéticos.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/atualizacao-do-amazon-rds-postgresql-novidades-e-beneficios-para-desenvolvedores.html">Atualização do Amazon RDS PostgreSQL: Novidades e benefícios para desenvolvedores</a><span>Outros</span></li>
+<li><a href="/artigos/parceria-entre-waymo-e-toyota-para-trazer-direcao-autonoma-para-veiculos-pessoais.html">Parceria entre Waymo e Toyota para trazer direção autônoma para veículos pessoais</a><span>Outros</span></li>
+<li><a href="/artigos/desenvolvimento-de-sistemas-o-crescimento-dos-testes-clinicos-na-china.html">Desenvolvimento de Sistemas: O Crescimento dos Testes Clínicos na China</a><span>Outros</span></li>
+<li><a href="/artigos/hackeando-um-kindle-antigo-aventuras-na-escola-dos-nerds.html">Hackeando um Kindle antigo: Aventuras na Escola dos Nerds</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 

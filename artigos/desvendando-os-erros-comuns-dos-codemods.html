@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Se existe um tema que separa teoria e prática no desenvolvimento, esse tema é Fixing Common Pitfalls of Codemods. Quando falamos sobre codemods, estamos lidando com uma ferramenta poderosa para automatizar a refatoração de código. No entanto, como em qualquer ferramenta complexa, existem armadilhas comuns que os desenvolvedores podem cair ao utilizá-la.<br>Uma das armadilhas mais comuns é não considerar todos os cenários possíveis ao criar um codemod. Muitas vezes, os desenvolvedores se concentram em casos simples e acabam deixando de lado situações mais complexas que podem surgir no código. Isso pode levar a erros inesperados e até mesmo a quebras no sistema.<br>Outro erro comum é não testar adequadamente o codemod antes de aplicá-lo em produção. É essencial criar testes abrangentes que cubram todos os possíveis cenários de uso do codemod, garantindo assim que ele funcione corretamente em qualquer situação.<br>Para evitar esses e outros erros comuns, é importante seguir algumas boas práticas ao criar e utilizar codemods. Uma delas é sempre manter a documentação atualizada e clara, para que outros desenvolvedores possam entender facilmente como o codemod funciona e como utilizá-lo corretamente.<br>Além disso, é fundamental revisar constantemente o código do codemod e buscar por possíveis melhorias. Às vezes, pequenas alterações podem tornar o codemod mais eficiente e seguro, evitando assim possíveis problemas no futuro.<br>Para exemplificar, vamos analisar um trecho de código em C# que utiliza um codemod para refatorar um método de uma classe:<br><pre><code class="language-csharp">public class MinhaClasse<br>{<br>public void MetodoAntigo()<br>{<br>// Código antigo aqui<br>}<br>}<br></code></pre><br>Após aplicarmos o codemod, o método `MetodoAntigo` é refatorado para:<br><pre><code class="language-csharp">public class MinhaClasse<br>{<br>public void MetodoNovo()<br>{<br>// Código novo aqui<br>}<br>}<br></code></pre><br>Neste exemplo simples, podemos ver como um codemod pode facilitar a refatoração de código de forma automática, poupando tempo e evitando possíveis erros humanos.<br>Em conclusão, os codemods são uma ferramenta poderosa no arsenal de um desenvolvedor, mas é essencial utilizá-los com cautela e seguir boas práticas para evitar erros comuns. Com atenção aos detalhes e testes adequados, é possível aproveitar ao máximo o potencial dos codemods e tornar o processo de refatoração de código mais eficiente e seguro.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/descobertas-musicais-de-2024-como-a-tecnologia-esta-transformando-a-forma-como-encontramos-novas-musicas.html">Descobertas musicais de 2024: como a tecnologia está transformando a forma como encontramos novas músicas</a><span>Outros</span></li>
+<li><a href="/artigos/codemods-a-revolucao-da-refatoracao-de-codigo.html">Codemods: A revolução da refatoração de código</a><span>Outros</span></li>
+<li><a href="/artigos/transformando-seu-codigo-com-maestria-explorando-um-codemod-mais-complexo.html">Transformando seu código com maestria: explorando um codemod mais complexo</a><span>Outros</span></li>
+<li><a href="/artigos/design-patterns-mais-do-que-um-vocabulario-uma-filosofia-de-desenvolvimento.html">Design Patterns: Mais do que um Vocabulário, uma Filosofia de Desenvolvimento</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

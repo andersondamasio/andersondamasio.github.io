@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Se existe um tema que separa teoria e prática no desenvolvimento, esse tema é Refactoring with Codemods to Automate API Changes. Imagine a seguinte situação: você precisa atualizar a versão de uma API em um sistema complexo, com milhares de chamadas espalhadas por todo o código. Fazer isso manualmente seria uma tarefa árdua e propensa a erros, certo? É aí que entra o refactoring automatizado com codemods.<br>Os codemods são scripts que automatizam a refatoração de código-fonte. Eles permitem fazer alterações em larga escala de forma segura e rápida, seguindo padrões pré-definidos. No contexto de APIs, essa técnica se torna ainda mais poderosa, pois permite atualizar todas as chamadas de forma consistente e sem dor de cabeça.<br>Vamos imaginar um exemplo prático: digamos que uma determinada API que você utiliza mudou a nomenclatura de um método de "GetUser" para "FetchUser". Em vez de buscar manualmente todas as ocorrências desse método no código e fazer a alteração, você pode criar um codemod que percorra todos os arquivos do seu projeto e faça essa substituição de forma automática. Isso não apenas poupa tempo, mas também reduz o risco de introduzir bugs durante a atualização.<br>Para quem trabalha com linguagens como JavaScript, TypeScript ou Python, existem ferramentas como jscodeshift e Lebab que facilitam a criação e execução de codemods. No caso de linguagens como C#, onde essas ferramentas são menos comuns, é possível criar seus próprios scripts de refatoração usando ferramentas de análise estática de código e manipulação de AST (Abstract Syntax Tree).<br>Além de automatizar a atualização de APIs, os codemods podem ser utilizados para padronizar o código, corrigir más práticas, otimizar a performance e muito mais. Com um pouco de criatividade e conhecimento técnico, as possibilidades são praticamente infinitas.<br>Portanto, se você ainda não explorou o potencial do refactoring com codemods para automatizar mudanças em APIs, está na hora de começar a considerar essa abordagem em seus projetos. Afinal, a automação é a chave para aumentar a eficiência, reduzir erros e manter o código saudável e sustentável a longo prazo. E lembre-se: na era da transformação digital, quem não se adapta, fica para trás.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/transformando-seu-codigo-com-maestria-explorando-um-codemod-mais-complexo.html">Transformando seu código com maestria: explorando um codemod mais complexo</a><span>Outros</span></li>
+<li><a href="/artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html">Design Tokens: A Arquitetura Secreta por Trás de Interfaces de Usuário Incríveis</a><span>Outros</span></li>
+<li><a href="/artigos/desenvolvendo-produtos-de-dados-o-proximo-passo.html">Desenvolvendo Produtos de Dados: O Próximo Passo</a><span>Outros</span></li>
+<li><a href="/artigos/descobertas-musicais-de-2024-como-a-tecnologia-esta-transformando-a-forma-como-encontramos-novas-musicas.html">Descobertas musicais de 2024: como a tecnologia está transformando a forma como encontramos novas músicas</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

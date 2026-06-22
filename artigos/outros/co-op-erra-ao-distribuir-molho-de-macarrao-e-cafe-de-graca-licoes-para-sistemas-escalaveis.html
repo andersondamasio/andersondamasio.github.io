@@ -106,6 +106,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -150,6 +159,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Não dá pra falar de sistemas robustos sem esbarrar em situações inesperadas como a da Co-op gives away free pasta sauce and coffee by mistake. A notícia pode parecer engraçada à primeira vista, mas nos leva a refletir sobre a importância de se ter processos bem definidos e sistemas escaláveis, mesmo nos momentos mais simples.<br>Imagine a situação: um erro simples na configuração de um sistema de promoções resulta na distribuição gratuita de produtos que não deveriam ser oferecidos de graça. O prejuízo financeiro pode ser grande, mas o impacto na reputação da empresa pode ser ainda maior. Isso nos leva a pensar: como evitar que algo assim aconteça em nossos próprios sistemas?<br>Uma das chaves para evitar esse tipo de situação é investir em testes automatizados e em processos de deploy bem definidos. Garantir que cada alteração no código seja testada exaustivamente antes de ser colocada em produção é fundamental para evitar surpresas desagradáveis. Além disso, manter um histórico detalhado de todas as alterações realizadas no sistema pode facilitar a identificação e correção de possíveis problemas.<br>Vamos exemplificar com um trecho de código em C# que simula a validação de uma promoção antes de ser aplicada no sistema:<br><pre><code class="language-csharp">public class PromotionService<br>{<br>public bool ValidatePromotion(Promotion promotion)<br>{<br>// Lógica de validação da promoção<br>if (promotion.StartDate < DateTime.Now && promotion.EndDate > DateTime.Now)<br>{<br>return true;<br>}<br>return false;<br>}<br>}<br></code></pre><br>Neste exemplo, a função `ValidatePromotion` verifica se uma promoção está dentro do período válido antes de ser aplicada. Testes automatizados poderiam garantir que essa validação está funcionando corretamente e evitar que promoções inválidas sejam ativadas por engano.<br>Além disso, é importante ter um sistema de monitoramento em tempo real que possa identificar rapidamente qualquer anomalia no sistema. Ferramentas como o Application Insights da Microsoft podem ajudar a detectar problemas de desempenho ou falhas de forma proativa, antes que impactem os usuários finais.<br>Em um mundo cada vez mais digital e interconectado, a segurança e a confiabilidade dos sistemas são fundamentais para o sucesso de qualquer negócio. A história da Co-op nos lembra que até mesmo os erros mais simples podem ter consequências sérias, mas também nos mostra que com planejamento e investimento em boas práticas de desenvolvimento, é possível evitar grandes problemas.<br>E você, o que achou da história da Co-op? Já passou por alguma situação semelhante em seus projetos? Compartilhe sua experiência nos comentários e vamos juntos aprender com os erros alheios para construir sistemas cada vez mais robustos e escaláveis.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/outros/armazenamento-rapido-na-nuvem-a-revolucao-dos-milissegundos.html">Armazenamento Rápido na Nuvem: A Revolução dos Milissegundos</a><span>Outros</span></li>
+<li><a href="/artigos/outros/iphones-nos-eua-a-mudanca-por-tras-dos-bastidores.html">iPhones nos EUA: a mudança por trás dos bastidores</a><span>Outros</span></li>
+<li><a href="/artigos/outros/cyber-attack-na-harrods-licoes-aprendidas-e-medidas-de-seguranca.html">Cyber Attack na Harrods: Lições Aprendidas e Medidas de Segurança</a><span>Outros</span></li>
+<li><a href="/artigos/outros/o-aumento-dos-precos-do-xbox-em-todo-o-mundo-devido-a-incerteza-das-tarifas.html">O aumento dos preços do Xbox em todo o mundo devido à incerteza das tarifas</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

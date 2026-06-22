@@ -106,6 +106,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -149,6 +158,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">A notícia me fez lembrar de quando subestimei os problemas de instabilidade em sistemas bancários durante o dia do pagamento e acabei passando uma madrugada em claro para corrigir os erros. Os bancos revelaram que 1.2 milhão de pessoas foram afetadas por quedas nos sistemas, o que nos mostra a importância de termos uma infraestrutura robusta e confiável para lidar com picos de acesso.<br>Quando se trata de sistemas escaláveis, é fundamental pensar não apenas na capacidade de processamento e armazenamento, mas também na resiliência do sistema. Afinal, não adianta ter uma aplicação que suporte milhares de usuários se ela não consegue manter a disponibilidade quando mais é necessário.<br>Para evitar que seu sistema desabe no dia do pagamento, é crucial adotar boas práticas de desenvolvimento e arquitetura de software. Utilizar padrões de projeto como o Circuit Breaker e implementar estratégias de cache distribuído pode ajudar a reduzir a carga nos servidores e manter a estabilidade da aplicação.<br>Além disso, é importante estar atento à monitoração do sistema. Utilizar ferramentas de monitoramento em tempo real, como o Prometheus, pode ajudar a identificar gargalos de desempenho e antecipar possíveis problemas antes que eles afetem os usuários.<br>Em termos de código, é fundamental otimizar consultas ao banco de dados e reduzir o tempo de resposta das APIs. Um exemplo em C# de como implementar cache em memória utilizando a biblioteca MemoryCache:<br><pre><code class="language-csharp">using System;<br>using System.Runtime.Caching;<br>public class CacheManager<br>{<br>private static MemoryCache _cache = new MemoryCache("MyCache");<br>public static T Get<T>(string key)<br>{<br>return (T) _cache.Get(key);<br>}<br>public static void Set<T>(string key, T value, TimeSpan expiration)<br>{<br>_cache.Set(key, value, DateTimeOffset.Now.Add(expiration));<br>}<br>}<br></code></pre><br>Implementar estratégias de cache como essa pode ajudar a reduzir a carga nos servidores e melhorar o desempenho da sua aplicação.<br>Em conclusão, a notícia dos problemas nos sistemas bancários durante o dia do pagamento serve como um lembrete da importância de termos uma infraestrutura sólida e preparada para lidar com momentos de pico. Investir em boas práticas de desenvolvimento, arquitetura e monitoramento é essencial para garantir a estabilidade e disponibilidade do seu sistema, evitando que seus usuários sejam prejudicados por falhas inesperadas. A prevenção é sempre o melhor remédio quando se trata de sistemas críticos como os bancários.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/apple-x-juiz-dos-eua-a-batalha-dos-gigantes.html">Apple X Juiz dos EUA: A Batalha dos Gigantes</a><span>Outros</span></li>
+<li><a href="/artigos/guardando-os-tesouros-como-garantir-a-seguranca-dos-backups-no-artico.html">Guardando os Tesouros: Como garantir a segurança dos backups no Ártico</a><span>Outros</span></li>
+<li><a href="/artigos/investigacao-de-dois-sites-pornograficos-por-possiveis-falhas-na-verificacao-de-idade.html">Investigação de dois sites pornográficos por possíveis falhas na verificação de idade</a><span>Outros</span></li>
+<li><a href="/artigos/transformando-a-industria-automobilistica-a-apple-entra-no-mercado-de-carros-eletricos.html">Transformando a Indústria Automobilística: A Apple entra no mercado de carros elétricos</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

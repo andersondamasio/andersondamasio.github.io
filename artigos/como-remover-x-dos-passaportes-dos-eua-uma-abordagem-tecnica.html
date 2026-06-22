@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Essa é daquelas notícias que a gente lê e pensa: 'já vivi isso em produção, infelizmente'. A discussão sobre a remoção de um elemento específico dos passaportes dos EUA levanta questões interessantes sobre design de sistemas e manutenção de dados sensíveis. Vamos explorar um pouco mais a fundo esse tema e como poderíamos lidar com essa situação na prática.<br>Quando se trata de lidar com dados sensíveis, como informações presentes em passaportes, a segurança e a integridade dos dados são de extrema importância. A remoção de um elemento dos passaportes pode parecer simples à primeira vista, mas envolve uma série de considerações técnicas que precisam ser levadas em conta.<br>Uma abordagem comum para lidar com alterações em documentos oficiais, como passaportes, é através de um sistema de versionamento dos dados. Isso permite que diferentes versões dos documentos sejam mantidas e acessadas conforme necessário. No entanto, é crucial garantir que as alterações sejam feitas de forma segura e que não comprometam a integridade dos dados.<br>Vamos dar uma olhada em um exemplo prático de como poderíamos lidar com a remoção de um elemento dos passaportes usando C# e APIs úteis.<br><pre><code>public class Passport<br>{<br>public string Number { get; set; }<br>public string Name { get; set; }<br>// Outros elementos do passaporte<br>public void RemoveElement(string element)<br>{<br>// Lógica para remover o elemento do passaporte<br>}<br>}<br>public class PassportService<br>{<br>public void UpdatePassport(Passport passport)<br>{<br>// Lógica para atualizar o passaporte no sistema<br>}<br>}<br></code></pre><br>Ao lidar com dados sensíveis como passaportes, é fundamental implementar práticas de segurança robustas, como criptografia e controle de acesso, para proteger as informações contra acessos não autorizados.<br>Em conclusão, a remoção de elementos dos passaportes dos EUA é um lembrete importante sobre a importância de projetar sistemas de forma flexível e segura para lidar com alterações nos dados. Ao adotar boas práticas de design e segurança, podemos garantir a integridade e a confiabilidade dos dados sensíveis que manipulamos em nossos sistemas.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/explorando-o-suporte-a-java-js-e-python-nos-planos-de-teste.html">Explorando o Suporte a Java, JS e Python nos Planos de Teste</a><span>Outros</span></li>
+<li><a href="/artigos/genai-patterns-desvendando-os-segredos-do-fine-tuning.html">GenAI Patterns: Desvendando os Segredos do Fine Tuning</a><span>Outros</span></li>
+<li><a href="/artigos/genai-patterns-guardrails-e-a-visao-rag-desvendando-os-segredos-da-inteligencia-artificial.html">GenAI Patterns: Guardrails e a Visão RAG - Desvendando os Segredos da Inteligência Artificial</a><span>Outros</span></li>
+<li><a href="/artigos/visual-studio-hub-a-revolucao-na-integracao-de-desenvolvimento.html">Visual Studio Hub: A Revolução na Integração de Desenvolvimento</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

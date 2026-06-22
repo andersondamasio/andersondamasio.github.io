@@ -140,6 +140,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a:hover { background-color: var(--link); color: var(--main-bg); }
 main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -229,6 +238,15 @@ private string SanitizeInput(string input)
 <p>Refletir sobre o caso Careto é um convite para revisitar nossas próprias práticas e garantir que estamos à altura dos desafios que o futuro pode trazer. A segurança não é apenas uma responsabilidade do departamento de TI, mas de toda a organização.</p>
 <p>
 <p></p></div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/seguranca/a-nova-era-da-verificacao-como-bluesky-redefine-a-autenticidade-nas-redes-sociais.html">A nova era da verificação: como Bluesky redefine a autenticidade nas redes sociais</a><span>Segurança</span></li>
+<li><a href="/artigos/seguranca/vulnerabilidades-na-cadeia-de-suprimentos-o-caso-tcs-e-m-s.html">Vulnerabilidades na Cadeia de Suprimentos: O Caso TCS e M&amp;S</a><span>Segurança</span></li>
+<li><a href="/artigos/seguranca/veteranos-e-a-ciberseguranca-uma-conexao-surpreendente-com-a-arquitetura-de-software.html">Veteranos e a Cibersegurança: Uma Conexão Surpreendente com a Arquitetura de Software</a><span>Segurança</span></li>
+<li><a href="/artigos/seguranca/naukri-e-a-exposicao-de-dados-o-que-podemos-aprender-sobre-seguranca-de-apis.html">Naukri e a Exposição de Dados: O Que Podemos Aprender Sobre Segurança de APIs</a><span>Segurança</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -130,6 +139,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Atualização do Amazon RDS PostgreSQL: Novidades e benefícios para desenvolvedores</h1>
 <p class="article-meta">Publicado em: 29/04/2025 20:04</p>
 <div class="article-body">O Amazon RDS PostgreSQL é uma opção popular para empresas que buscam um banco de dados relacional gerenciado na nuvem. Com a atualização para a versão 17.4, novas funcionalidades e melhorias foram introduzidas, trazendo benefícios significativos para desenvolvedores e arquitetos de software.<br><br>Uma das principais vantagens da nova versão é aprimoramentos de desempenho, permitindo que os aplicativos rodando no Amazon RDS PostgreSQL executem mais rapidamente e de forma mais eficiente. Além disso, a atualização inclui correções de bugs e aprimoramentos de segurança, garantindo a integridade dos dados e a confiabilidade do sistema.<br><br>Para ilustrar as melhorias trazidas pela atualização do Amazon RDS PostgreSQL 17.4, vamos considerar um exemplo prático de aplicação. Suponha que você esteja desenvolvendo um aplicativo de comércio eletrônico que utiliza o Amazon RDS PostgreSQL como banco de dados. Com as melhorias de desempenho da nova versão, você pode esperar tempos de resposta mais rápidos e uma experiência geral mais fluida para os usuários finais.<br><br>Veja um trecho de código que demonstra como conectar-se ao Amazon RDS PostgreSQL utilizando a linguagem de programação Python:<br><br><pre><code>import psycopg2<br><br>conn = psycopg2.connect(<br>    host="nome-do-host",<br>    database="nome-do-banco-de-dados",<br>    user="nome-do-usuario",<br>    password="senha-do-usuario"<br>)<br></code></pre><br><br>Neste exemplo, a conexão com o banco de dados é estabelecida de forma simples e direta, graças à integração do Amazon RDS PostgreSQL com bibliotecas de acesso a banco de dados populares.<br><br>Além disso, é importante destacar que a atualização do Amazon RDS PostgreSQL 17.4 também traz novas opções de configuração e personalização, permitindo que os desenvolvedores ajustem o banco de dados de acordo com as necessidades específicas de seus aplicativos.<br><br>Em resumo, a atualização do Amazon RDS PostgreSQL para a versão 17.4 oferece benefícios significativos para desenvolvedores que buscam um banco de dados relacional gerenciado e eficiente. Com melhorias de desempenho, segurança aprimorada e opções de configuração flexíveis, esta atualização é uma escolha sólida para projetos de software modernos.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/guardando-o-servidor-a-eficacia-das-bombas-zip-na-protecao-de-dados-sensiveis.html">Guardando o servidor: a eficácia das bombas zip na proteção de dados sensíveis</a><span>Outros</span></li>
+<li><a href="/artigos/parceria-entre-waymo-e-toyota-para-trazer-direcao-autonoma-para-veiculos-pessoais.html">Parceria entre Waymo e Toyota para trazer direção autônoma para veículos pessoais</a><span>Outros</span></li>
+<li><a href="/artigos/desenvolvimento-de-sistemas-o-crescimento-dos-testes-clinicos-na-china.html">Desenvolvimento de Sistemas: O Crescimento dos Testes Clínicos na China</a><span>Outros</span></li>
+<li><a href="/artigos/hackeando-um-kindle-antigo-aventuras-na-escola-dos-nerds.html">Hackeando um Kindle antigo: Aventuras na Escola dos Nerds</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 

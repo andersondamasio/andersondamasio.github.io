@@ -106,6 +106,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -149,6 +158,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Nem sempre damos o devido peso à notícia de que a Pulumi anunciou a melhoria dos componentes para simplificar a infraestrutura como código, até que tudo quebrar em produção. A verdade é que a automação da infraestrutura é essencial para garantir a escalabilidade e confiabilidade dos sistemas modernos. E a Pulumi, com sua abordagem inovadora, está revolucionando a maneira como lidamos com a criação e gerenciamento da infraestrutura.<br>Para quem não está familiarizado, a Pulumi é uma ferramenta de código aberto que permite aos desenvolvedores definir e gerenciar a infraestrutura usando linguagens de programação populares, como Python, JavaScript e Go. Com a nova funcionalidade de Componentes Aprimorados, a Pulumi facilita ainda mais a criação de infraestrutura reutilizável e modular, simplificando o processo de desenvolvimento e manutenção.<br>Essa nova feature permite definir componentes personalizados que encapsulam recursos de infraestrutura comuns, como instâncias de máquinas virtuais, bancos de dados e redes, em um único bloco de código. Isso não apenas torna o código mais limpo e legível, mas também facilita a reutilização e compartilhamento de componentes entre diferentes projetos e equipes.<br>Vamos dar uma olhada em um exemplo prático de como podemos usar os Componentes Aprimorados da Pulumi para criar uma infraestrutura de nuvem simples, porém eficaz, em C#:<br><pre><code class="language-csharp">using Pulumi;<br>using Pulumi.Azure.Core;<br>class MyStack : Stack<br>{<br>public MyStack()<br>{<br>var resourceGroup = new ResourceGroup("myResourceGroup");<br>var storageAccount = new StorageAccount("myStorageAccount", new StorageAccountArgs<br>{<br>ResourceGroupName = resourceGroup.Name,<br>AccountReplicationType = "LRS",<br>AccountTier = "Standard"<br>});<br>}<br>}<br>class Program<br>{<br>static Task<int> Main(string[] args)<br>{<br>return Deployment.RunAsync<MyStack>();<br>}<br>}<br></code></pre><br>Neste exemplo, estamos criando um grupo de recursos e uma conta de armazenamento no Azure usando os Componentes Aprimorados da Pulumi. Com apenas algumas linhas de código, podemos definir toda a infraestrutura necessária de forma declarativa e reutilizável.<br>Além de simplificar a criação da infraestrutura como código, a Pulumi também oferece recursos avançados, como a capacidade de gerenciar o estado da infraestrutura, implantar alterações de forma incremental e monitorar o ambiente em tempo real. Essas funcionalidades são essenciais para garantir a integridade e segurança da infraestrutura em um ambiente de produção.<br>Em conclusão, a Pulumi Announces Improved Components Feature to Simplify Infrastructure as Code é uma notícia empolgante para os arquitetos de software e engenheiros de infraestrutura. Com essa nova funcionalidade, estamos mais perto do sonho de ter uma infraestrutura totalmente automatizada e escalável, sem sacrificar a flexibilidade e controle. Portanto, não perca tempo e comece a explorar os benefícios da Pulumi hoje mesmo!</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/cultivando-a-robustez-construindo-para-durar-na-cultura-da-resiliencia.html">Cultivando a Robustez: Construindo para Durar na Cultura da Resiliência</a><span>Outros</span></li>
+<li><a href="/artigos/windows-community-toolkit-8-2-a-revolucao-da-compilacao-aot-no-universo-windows.html">Windows Community Toolkit 8.2: A revolução da compilação AOT no universo Windows</a><span>Outros</span></li>
+<li><a href="/artigos/visibilidade-na-seguranca-em-nuvem-desvendando-as-configuracoes-dos-nossos-ambientes-na-nuvem.html">Visibilidade na Segurança em Nuvem: Desvendando as Configurações dos Nossos Ambientes na Nuvem</a><span>Outros</span></li>
+<li><a href="/artigos/patchs-de-seguranca-a-nova-fronteira-da-meta-e-sua-ferramenta-revolucionaria.html">Patchs de Segurança: A Nova Fronteira da Meta e sua Ferramenta Revolucionária</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

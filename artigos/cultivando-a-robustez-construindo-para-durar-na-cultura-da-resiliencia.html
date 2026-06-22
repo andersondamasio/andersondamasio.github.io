@@ -106,6 +106,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -149,6 +158,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Já passei por situações em que a construção de sistemas robustos e resilientes foi crucial para o sucesso de um projeto. A notícia sobre "Presentation: Built to Outlast: Cultivating a Culture of Resilience" ressoa com a importância de criar aplicações que consigam resistir aos desafios do mundo real, mantendo-se funcionais e eficientes mesmo diante de adversidades.<br>Para construir sistemas que resistam ao teste do tempo e das circunstâncias, é fundamental adotar práticas e tecnologias que promovam a resiliência. Uma abordagem interessante é a utilização de arquiteturas distribuídas, como o modelo de microserviços, que permitem a construção de sistemas modulares e independentes, facilitando a escalabilidade e a manutenção.<br>Além disso, o uso de técnicas de monitoramento e recuperação automatizada, como o emprego de ferramentas de observabilidade e a implementação de estratégias de resiliência, como o circuit breaker e o fallback, são essenciais para garantir a disponibilidade e a confiabilidade dos sistemas em cenários adversos.<br>No âmbito do desenvolvimento de software, a adoção de práticas como o design orientado a testes (TDD) e a integração contínua (CI/CD) contribuem para a construção de aplicações mais robustas e estáveis, permitindo identificar e corrigir falhas de forma ágil e eficiente.<br>Em termos de código, podemos destacar a importância de escrever códigos limpos, legíveis e bem estruturados, seguindo os princípios do SOLID e utilizando padrões de projeto que favoreçam a manutenibilidade e a extensibilidade do sistema.<br>Para ilustrar, vamos considerar um exemplo em C# de como implementar um mecanismo de circuit breaker para lidar com falhas em chamadas de serviços externos:<br><pre><code class="language-csharp">public async Task<string> CallExternalService()<br>{<br>var circuitBreaker = new CircuitBreaker();<br>string result;<br>try<br>{<br>result = await circuitBreaker.ExecuteAsync(async () =><br>{<br>var response = await _httpClient.GetAsync("https://api.externa.com/resource");<br>response.EnsureSuccessStatusCode();<br>return await response.Content.ReadAsStringAsync();<br>});<br>}<br>catch (CircuitBreakerOpenException ex)<br>{<br>result = "Fallback response";<br>}<br>return result;<br>}<br></code></pre><br>Neste trecho de código, o circuit breaker é responsável por monitorar e controlar o fluxo de chamadas ao serviço externo, evitando sobrecargas e falhas em cascata.<br>Em suma, cultivar uma cultura de resiliência no desenvolvimento de software é fundamental para garantir a qualidade e a durabilidade dos sistemas. Investir em práticas, tecnologias e padrões que promovam a robustez e a adaptabilidade dos sistemas é essencial para enfrentar os desafios do mercado e as demandas dos usuários.<br>Portanto, lembre-se: construa para durar, cultive a resiliência e esteja preparado para os desafios que virão. Afinal, a verdadeira qualidade de um sistema se revela na sua capacidade de resistir e se adaptar às mudanças.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/automatizando-a-infraestrutura-com-estilo-a-revolucao-da-pulumi-nos-componentes-de-codigo.html">Automatizando a Infraestrutura com Estilo: A Revolução da Pulumi nos Componentes de Código</a><span>Outros</span></li>
+<li><a href="/artigos/construindo-sistemas-de-conhecimento-empresarial-precisos-atraves-da-propriedade-distribuida.html">Construindo Sistemas de Conhecimento Empresarial Precisos Através da Propriedade Distribuída</a><span>Outros</span></li>
+<li><a href="/artigos/explorando-as-novidades-do-universo-java-updates-no-openjdk-spring-ai-quarkus-langchain4j-jreleaser-e-wildfly.html">Explorando as Novidades do Universo Java: Updates no OpenJDK, Spring AI, Quarkus, LangChain4j, JReleaser e WildFly</a><span>Outros</span></li>
+<li><a href="/artigos/windows-community-toolkit-8-2-a-revolucao-da-compilacao-aot-no-universo-windows.html">Windows Community Toolkit 8.2: A revolução da compilação AOT no universo Windows</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

@@ -106,6 +106,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -149,6 +158,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">É fascinante como Windows Community Toolkit 8.2 Supports Native AOT Compilation evoluiu nos últimos anos, trazendo uma nova era de possibilidades para desenvolvedores que buscam otimizar o desempenho de suas aplicações. A compilação Ahead-Of-Time (AOT) é uma técnica poderosa que permite gerar código nativo antes da execução do programa, resultando em melhor desempenho e menor tempo de inicialização. Com o suporte nativo para AOT no Windows Community Toolkit 8.2, os desenvolvedores agora têm mais uma ferramenta em seu arsenal para criar aplicativos mais rápidos e eficientes.<br>Para quem não está familiarizado, a compilação AOT difere da compilação Just-In-Time (JIT) tradicional, onde o código é compilado durante a execução do programa. Com a compilação AOT, o código é compilado antes da execução, o que elimina a sobrecarga de compilação durante a execução e resulta em um desempenho mais consistente. Além disso, a compilação AOT também permite a detecção de erros de compilação em tempo de compilação, o que pode ajudar a evitar problemas de última hora durante a execução do programa.<br>Uma das principais vantagens do suporte nativo para AOT no Windows Community Toolkit 8.2 é a capacidade de melhorar o desempenho de aplicativos UWP (Universal Windows Platform) e WinUI. Com a compilação AOT, os desenvolvedores podem reduzir o tempo de inicialização de seus aplicativos, melhorar a responsividade e a fluidez da interface do usuário e otimizar o consumo de recursos do sistema. Isso é especialmente importante em dispositivos com recursos limitados, como smartphones e tablets, onde cada milissegundo conta.<br>Vejamos um exemplo prático de como usar a compilação AOT no Windows Community Toolkit 8.2 para melhorar o desempenho de um aplicativo UWP. Suponha que você tenha um aplicativo de lista de tarefas simples que carrega uma grande quantidade de dados do armazenamento local. Com a compilação AOT, você pode pré-compilar o código responsável por carregar os dados da lista de tarefas, reduzindo significativamente o tempo de inicialização do aplicativo. Aqui está um trecho de código que demonstra como isso pode ser feito:<br><pre><code class="language-csharp">using Windows.ApplicationModel;<br>namespace MyApp<br>{<br>public class TaskList<br>{<br>public void LoadTasks()<br>{<br>// Carregar tarefas da lista<br>}<br>}<br>public static void Main(string[] args)<br>{<br>TaskList taskList = new TaskList();<br>// Pré-compilar o método LoadTasks<br>taskList.LoadTasks();<br>Application.Start();<br>}<br>}<br></code></pre><br>Além disso, é importante lembrar que o suporte nativo para AOT no Windows Community Toolkit 8.2 é apenas o começo. Com o avanço da tecnologia e a crescente demanda por aplicativos mais rápidos e eficientes, é provável que vejamos mais inovações nessa área nos próximos anos. Portanto, é essencial estar sempre atualizado e disposto a experimentar novas técnicas e ferramentas para se manter à frente no mundo do desenvolvimento de software.<br>Em conclusão, o suporte nativo para compilação AOT no Windows Community Toolkit 8.2 é uma adição bem-vinda ao arsenal de ferramentas dos desenvolvedores que buscam otimizar o desempenho de seus aplicativos. Com a capacidade de pré-compilar o código antes da execução, os desenvolvedores podem criar aplicativos mais rápidos, responsivos e eficientes, proporcionando uma experiência de usuário superior. Portanto, não deixe de explorar todas as possibilidades que a compilação AOT tem a oferecer e leve seus aplicativos para o próximo nível de desempenho.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/visibilidade-na-seguranca-em-nuvem-desvendando-as-configuracoes-dos-nossos-ambientes-na-nuvem.html">Visibilidade na Segurança em Nuvem: Desvendando as Configurações dos Nossos Ambientes na Nuvem</a><span>Outros</span></li>
+<li><a href="/artigos/patchs-de-seguranca-a-nova-fronteira-da-meta-e-sua-ferramenta-revolucionaria.html">Patchs de Segurança: A Nova Fronteira da Meta e sua Ferramenta Revolucionária</a><span>Outros</span></li>
+<li><a href="/artigos/dev-proxy-v0-27-desvendando-as-novas-possibilidades-da-modelagem-de-api-integracao-de-ia-e-recursos-de-configuracao-aprimorados.html">Dev Proxy v0.27: Desvendando as Novas Possibilidades da Modelagem de API, Integração de IA e Recursos de Configuração Aprimorados</a><span>Outros</span></li>
+<li><a href="/artigos/desbravando-o-protocolo-de-contexto-de-modelo-no-ecossistema-java.html">Desbravando o Protocolo de Contexto de Modelo no Ecossistema Java</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -131,6 +140,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Otimização Consciente de Inferência para Melhor Seleção de Amostragem em Grandes Modelos de Linguagem</h1>
 <p class="article-meta">Publicado em: 28/04/2025 04:42</p>
 <div class="article-body">---<br><br>Nos últimos anos, os grandes modelos de linguagem têm se mostrado extremamente eficazes em uma diversidade de tarefas, como tradução automática, sumarização de texto, geração de texto, entre outros. No entanto, o processo de fine-tuning desses modelos para atingir o melhor desempenho possível pode ser desafiador, especialmente quando se trata de seleção de amostragem.<br><br>A técnica de "Inference-Aware Fine-Tuning for Best-of-N Sampling" visa otimizar esse processo, levando em consideração não apenas o desempenho do modelo, mas também a eficiência computacional. Isso significa que, ao realizar o fine-tuning, é importante considerar não apenas a precisão da inferência, mas também o custo computacional envolvido em cada etapa do processo.<br><br>Para aplicar essa técnica na prática, é fundamental ter um bom entendimento do funcionamento do modelo de linguagem em questão e das métricas de avaliação relevantes para a tarefa em mãos. Além disso, é importante utilizar bibliotecas e frameworks de machine learning que ofereçam suporte a esse tipo de otimização.<br><br>Abaixo, um exemplo simplificado de como essa técnica pode ser implementada em um modelo de linguagem utilizando a biblioteca TensorFlow em Python:<br><br><pre><code>import tensorflow as tf<br><br># Carregar o modelo de linguagem pré-treinado<br>modelo = tf.keras.applications.BERT()<br><br># Definir a função de perda e otimizador<br>loss_fn = tf.keras.losses.SparseCategoricalCrossentropy()<br>optimizer = tf.keras.optimizers.Adam()<br><br># Fine-tuning do modelo com inferência-aware<br>for batch in dataset:<br>    with tf.GradientTape() as tape:<br>        logits = modelo(batch['input'])<br>        loss = loss_fn(batch['target'], logits)<br>    <br>    gradients = tape.gradient(loss, modelo.trainable_variables)<br>    optimizer.apply_gradients(zip(gradients, modelo.trainable_variables))<br></code></pre><br><br>Neste exemplo, estamos fine-tuning um modelo de linguagem utilizando a técnica de "Inference-Aware Fine-Tuning for Best-of-N Sampling", levando em consideração tanto a precisão da inferência quanto a eficiência computacional.<br><br>Em resumo, a otimização consciente de inferência é essencial para alcançar o melhor desempenho possível em grandes modelos de linguagem, garantindo que o processo de fine-tuning seja não apenas preciso, mas também eficiente. Ao aplicar essa técnica de forma adequada, é possível obter resultados superiores em uma variedade de tarefas de processamento de linguagem natural.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/subversao-digital-taticas-da-stasi-na-era-moderna-2021.html">Subversão Digital: Táticas da Stasi na Era Moderna (2021)</a><span>Outros</span></li>
+<li><a href="/artigos/desenvolvendo-com-paixao-o-futuro-da-codificacao-2023.html">Desenvolvendo com Paixão: O Futuro da Codificação (2023)</a><span>Outros</span></li>
+<li><a href="/artigos/desvendando-a-causa-do-alzheimer-e-identificando-um-candidato-terapeutico-com-inteligencia-artificial.html">Desvendando a Causa do Alzheimer e Identificando um Candidato Terapêutico com Inteligência Artificial</a><span>Outros</span></li>
+<li><a href="/artigos/cuidando-do-medo-da-morte-a-importancia-da-abordagem-holistica-na-saude.html">Cuidando do Medo da Morte: A Importância da Abordagem Holística na Saúde</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 

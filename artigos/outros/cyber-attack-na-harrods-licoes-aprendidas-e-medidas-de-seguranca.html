@@ -112,6 +112,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -156,6 +165,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">A maioria das falhas críticas que vi tinham ligação direta com má compreensão de como as empresas estão vulneráveis a ataques cibernéticos, como o recente incidente na Harrods.<br>Empresas de renome mundial, como a Harrods, não estão imunes a cyber attacks. A notícia de que a Harrods foi atingida por um ataque cibernético serve como um alerta para todas as empresas, independentemente do seu tamanho ou setor de atuação.<br>É fundamental que as empresas invistam em medidas de segurança cibernética robustas para proteger seus dados e informações sensíveis. Uma abordagem proativa na implementação de firewalls, sistemas de detecção de intrusos, criptografia de dados e políticas de segurança rigorosas pode ajudar a reduzir o risco de ataques cibernéticos bem-sucedidos.<br>Além disso, a conscientização dos funcionários sobre práticas seguras de navegação na internet e o uso de senhas fortes e exclusivas também desempenham um papel crucial na prevenção de ataques cibernéticos.<br>Para ilustrar de forma prática como as empresas podem fortalecer sua segurança cibernética, vou compartilhar um trecho de código em C# que demonstra a implementação de uma camada adicional de autenticação de dois fatores em um sistema web:<br><pre><code class="language-csharp">using System;<br>using Twilio;<br>using Twilio.Rest.Api.V2010.Account;<br>using Twilio.Types;<br>class Program<br>{<br>static void Main()<br>{<br>const string accountSid = "YOUR_ACCOUNT_SID";<br>const string authToken = "YOUR_AUTH_TOKEN";<br>TwilioClient.Init(accountSid, authToken);<br>var message = MessageResource.Create(<br>body: "Seu código de verificação é: 123456",<br>from: new PhoneNumber("YOUR_TWILIO_NUMBER"),<br>to: new PhoneNumber("RECIPIENT_NUMBER")<br>);<br>Console.WriteLine(message.Sid);<br>}<br>}<br></code></pre><br>Neste exemplo, estamos utilizando a API da Twilio para enviar um código de verificação via SMS como parte do processo de autenticação de dois fatores. Implementar medidas como essa pode dificultar significativamente a vida dos cibercriminosos.<br>Em conclusão, a segurança cibernética deve ser uma prioridade para todas as empresas, independentemente do seu porte. A Harrods latest retailer to be hit by cyber attack serve como um lembrete do quão vulneráveis estamos no mundo digital atual. Invista em medidas de segurança robustas, esteja sempre atualizado com as melhores práticas e esteja preparado para enfrentar os desafios que os cibercriminosos podem apresentar.<br>Proteja seus dados, proteja sua empresa. A segurança cibernética é responsabilidade de todos.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/outros/o-aumento-dos-precos-do-xbox-em-todo-o-mundo-devido-a-incerteza-das-tarifas.html">O aumento dos preços do Xbox em todo o mundo devido à incerteza das tarifas</a><span>Outros</span></li>
+<li><a href="/artigos/outros/iphones-nos-eua-a-mudanca-por-tras-dos-bastidores.html">iPhones nos EUA: a mudança por trás dos bastidores</a><span>Outros</span></li>
+<li><a href="/artigos/outros/armazenamento-rapido-na-nuvem-a-revolucao-dos-milissegundos.html">Armazenamento Rápido na Nuvem: A Revolução dos Milissegundos</a><span>Outros</span></li>
+<li><a href="/artigos/outros/desafios-da-meta-para-os-usuarios-europeus-o-que-esperar.html">Desafios da Meta para os usuários europeus: o que esperar?</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Longe de ser novidade, o tema da notícia me trouxe à memória um erro clássico que vejo em consultorias. Muitas empresas subestimam a importância de contratar engenheiros seniores, preferindo focar em profissionais mais baratos e menos experientes. No entanto, a equipe da Motion (YC W20) está mostrando que a contratação de engenheiros sênior pode ser um diferencial e tanto.<br>Ao contratar engenheiros sênior, uma empresa não está apenas investindo em conhecimento técnico, mas também em experiência prática e capacidade de liderança. Engenheiros sênior possuem um olhar mais crítico sobre a arquitetura de software, são capazes de identificar problemas antes mesmo de surgirem e têm a habilidade de guiar e mentorar os membros mais junior da equipe.<br>Além disso, engenheiros sênior costumam trazer consigo uma bagagem de projetos anteriores, o que pode enriquecer a equipe com novas ideias e soluções inovadoras. Eles também são capazes de tomar decisões mais rapidamente, baseadas em sua vasta experiência no campo.<br>Para ilustrar a importância da contratação de engenheiros sênior, vamos analisar um trecho de código em C# que exemplifica a diferença entre um código escrito por um engenheiro junior e um código escrito por um engenheiro sênior.<br>Código escrito por um engenheiro junior:<br><pre><code class="language-csharp">public class JuniorEngineer<br>{<br>public void DoSomething()<br>{<br>// Implementação do método<br>}<br>}<br></code></pre><br>Código escrito por um engenheiro sênior:<br><pre><code class="language-csharp">public class SeniorEngineer<br>{<br>private readonly ILogger _logger;<br>public SeniorEngineer(ILogger logger)<br>{<br>_logger = logger;<br>}<br>public void DoSomething()<br>{<br>try<br>{<br>// Implementação do método<br>}<br>catch (Exception ex)<br>{<br>_logger.LogError("Ocorreu um erro ao executar o método DoSomething", ex);<br>}<br>}<br>}<br></code></pre><br>Como podemos ver, o código escrito pelo engenheiro sênior é mais robusto, considerando situações de erro e implementando boas práticas de logging.<br>Portanto, fica claro que a contratação de engenheiros sênior pode trazer inúmeros benefícios para uma equipe de desenvolvimento. Se você está pensando em expandir sua equipe, considere investir em profissionais com experiência e conhecimento sólidos. A Motion (YC W20) está no caminho certo ao valorizar a contratação de engenheiros sênior, e sua empresa também pode se beneficiar dessa estratégia.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/lancamentos-musicais-e-distribuicao-online-em-1996-os-segredos-revelados-por-bowie.html">Lançamentos musicais e distribuição online em 1996: os segredos revelados por Bowie</a><span>Outros</span></li>
+<li><a href="/artigos/tres-capitulos-na-cloudflare-de-programador-a-cto-a-membro-do-conselho.html">Três Capítulos na Cloudflare: De Programador a CTO a Membro do Conselho</a><span>Outros</span></li>
+<li><a href="/artigos/analytics-livre-o-futuro-da-analise-de-dados-na-web.html">"Analytics Livre: O Futuro da Análise de Dados na Web"</a><span>Outros</span></li>
+<li><a href="/artigos/unity-o-que-esta-por-tras-da-polemica-com-o-vlc.html">Unity: O que está por trás da polêmica com o VLC?</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

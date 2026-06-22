@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Longe de ser novidade, o tema dos "codemods in other languages" me fe fez refletir sobre a constante evolução das práticas de desenvolvimento de software. A capacidade de automatizar tarefas repetitivas e tediosas é essencial para garantir a eficiência e qualidade do nosso trabalho, e os codemods representam um passo importante nesse sentido.<br>Para quem não está familiarizado, os codemods são ferramentas que permitem fazer refatorações automatizadas em código-fonte. Imagine poder renomear uma variável em milhares de arquivos de uma só vez, ou atualizar uma API obsoleta em toda a sua base de código com apenas alguns comandos. Isso não só acelera o processo de desenvolvimento, como também ajuda a manter a consistência e a qualidade do código.<br>Em termos práticos, os codemods são scripts que percorrem o código-fonte em busca de padrões específicos e aplicam transformações de acordo com regras predefinidas. Eles são especialmente úteis em grandes projetos, onde pequenas mudanças podem ter um impacto significativo no tempo e esforço necessários para manter o código.<br>Vamos ver um exemplo simples em C#:<br><pre><code class="language-csharp">using System;<br>class Program<br>{<br>static void Main()<br>{<br>Console.WriteLine("Hello, World!");<br>}<br>}<br></code></pre><br>Suponha que precisamos atualizar todos os métodos `WriteLine` para `WriteLineAsync`. Com um codemod, isso poderia ser feito com facilidade em toda a solução, garantindo que todas as chamadas sejam atualizadas de forma consistente.<br>Além disso, os codemods podem ser personalizados de acordo com as necessidades do projeto, permitindo que desenvolvedores criem suas próprias transformações e reutilizem em diferentes contextos. Isso abre um mundo de possibilidades para a automação de tarefas rotineiras e a melhoria contínua do código.<br>Como em qualquer ferramenta poderosa, é importante ter cuidado ao usar os codemods, pois uma mudança mal aplicada pode causar mais problemas do que soluções. Sempre faça testes e revise as transformações antes de aplicá-las em larga escala.<br>Em resumo, os codemods representam uma revolução na forma como lidamos com a refatoração de código, tornando-a mais eficiente, consistente e escalável. Ao incorporar essa prática em nosso dia a dia, podemos melhorar a qualidade do nosso código e aumentar nossa produtividade como desenvolvedores. Experimente e descubra o potencial transformador dos codemods em sua jornada de desenvolvimento de software.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/design-patterns-mais-do-que-um-vocabulario-uma-filosofia-de-desenvolvimento.html">Design Patterns: Mais do que um Vocabulário, uma Filosofia de Desenvolvimento</a><span>Outros</span></li>
+<li><a href="/artigos/desvendando-os-erros-comuns-dos-codemods.html">Desvendando os Erros Comuns dos Codemods</a><span>Outros</span></li>
+<li><a href="/artigos/design-patterns-a-beleza-e-a-armadilha-na-arquitetura-de-software.html">Design Patterns: A Beleza e a Armadilha na Arquitetura de Software</a><span>Outros</span></li>
+<li><a href="/artigos/descobertas-musicais-de-2024-como-a-tecnologia-esta-transformando-a-forma-como-encontramos-novas-musicas.html">Descobertas musicais de 2024: como a tecnologia está transformando a forma como encontramos novas músicas</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

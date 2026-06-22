@@ -106,6 +106,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -149,6 +158,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Não importa a stack: Temporal on AWS Aims to Ease Building Resilient Distributed Systems sempre encontra um jeito de te cobrar atenção.<br>Recentemente, uma notícia técnica internacional chamou a atenção da comunidade de desenvolvimento de software: Temporal on AWS está chegando para facilitar a construção de sistemas distribuídos resilientes. Para aqueles que estão familiarizados com os desafios de desenvolver e manter sistemas distribuídos de alta disponibilidade, essa novidade promete revolucionar a forma como lidamos com a complexidade dessas arquiteturas.<br>Mas afinal, o que é Temporal e como ele pode ajudar os desenvolvedores a construir sistemas distribuídos mais robustos e confiáveis na AWS?<br>Temporal é uma plataforma de orquestração de tarefas distribuídas que oferece uma abordagem única para lidar com a complexidade inerente aos sistemas distribuídos. Com Temporal, os desenvolvedores podem escrever código que descreve a lógica de negócios de forma simples e direta, sem se preocupar com os detalhes de implementação da infraestrutura subjacente. Isso permite que as equipes de desenvolvimento foquem no que realmente importa: resolver os problemas de negócio de forma eficiente e escalável.<br>Uma das principais vantagens de usar Temporal on AWS é a facilidade de integração com os serviços nativos da AWS, como o Amazon DynamoDB, Amazon S3 e Amazon SQS. Isso significa que os desenvolvedores podem construir sistemas distribuídos resilientes sem se preocupar com a complexidade de gerenciar a infraestrutura subjacente, aproveitando a escalabilidade e confiabilidade dos serviços da AWS.<br>Além disso, Temporal oferece uma série de recursos avançados que facilitam o desenvolvimento de sistemas distribuídos, como o controle de fluxo de execução, o gerenciamento de retries e a capacidade de lidar com falhas de forma transparente. Com esses recursos, os desenvolvedores podem construir sistemas distribuídos mais robustos e confiáveis, garantindo a disponibilidade e a escalabilidade das aplicações em ambientes de produção.<br>Para demonstrar na prática como Temporal on AWS pode facilitar a construção de sistemas distribuídos resilientes, vamos mostrar um exemplo simples de como implementar um workflow básico utilizando a plataforma. Vamos utilizar a linguagem de programação C# e a API do Temporal para criar um workflow que realiza o processamento de dados de forma assíncrona e escalável.<br><pre><code class="language-csharp">using System;<br>using Temporal;<br>class Program<br>{<br>static void Main()<br>{<br>var workflow = new Workflow();<br>workflow.StartNewWorkflow("ProcessamentoDeDados", () =><br>{<br>// Lógica de negócio para processamento de dados<br>Console.WriteLine("Processando dados...");<br>});<br>}<br>}<br></code></pre><br>Neste exemplo, estamos criando um workflow chamado "ProcessamentoDeDados" que realiza o processamento de dados de forma assíncrona. Com Temporal, podemos garantir que o workflow seja executado de forma confiável, mesmo em caso de falhas ou interrupções na execução.<br>Em conclusão, Temporal on AWS representa uma evolução significativa na forma como desenvolvemos sistemas distribuídos resilientes. Com sua abordagem simplificada e seus recursos avançados, a plataforma facilita a construção de aplicações escaláveis e confiáveis na AWS. Para os desenvolvedores que buscam uma solução eficiente para lidar com a complexidade dos sistemas distribuídos, Temporal é, sem dúvidas, uma ferramenta indispensável.<br>E você, já experimentou utilizar Temporal on AWS em seus projetos? Compartilhe sua experiência nos comentários e vamos juntos explorar as possibilidades dessa incrível plataforma!</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/construindo-sistemas-de-ia-ml-eficientes-em-energia-desafios-e-solucoes.html">Construindo Sistemas de IA/ML Eficientes em Energia: Desafios e Soluções</a><span>Outros</span></li>
+<li><a href="/artigos/desvendando-as-tendencias-de-cultura-e-metodos-para-2025.html">Desvendando as Tendências de Cultura e Métodos para 2025</a><span>Outros</span></li>
+<li><a href="/artigos/o-poder-dos-instance-main-methods-no-jdk-25-a-evolucao-da-arquitetura-de-software.html">O Poder dos Instance Main Methods no JDK 25: A Evolução da Arquitetura de Software</a><span>Outros</span></li>
+<li><a href="/artigos/explorando-as-novidades-do-universo-java-updates-no-openjdk-spring-ai-quarkus-langchain4j-jreleaser-e-wildfly.html">Explorando as Novidades do Universo Java: Updates no OpenJDK, Spring AI, Quarkus, LangChain4j, JReleaser e WildFly</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

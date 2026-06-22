@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Longe de ser novidade, a notícia de que o Server Name Indication (SNI) agora é obrigatório para o Azure DevOps Services me fez lembrar de tantas discussões que tive ao longo dos anos sobre segurança em sistemas escaláveis. Afinal, a segurança sempre foi e continuará sendo uma das maiores preocupações para arquitetos de software e desenvolvedores.<br>Para quem não está familiarizado, o SNI é uma extensão do protocolo de segurança TLS (Transport Layer Security) que permite que um servidor web hospede vários certificados SSL em um único endereço IP. Esse recurso é fundamental para a segurança das comunicações na internet, garantindo que os dados sejam criptografados e transmitidos de forma segura.<br>No contexto do Azure DevOps Services, a obrigatoriedade do SNI traz consigo uma série de benefícios e desafios. Por um lado, a segurança das informações dos usuários e dos dados sensíveis das empresas é reforçada, garantindo a integridade e a confidencialidade das comunicações. Por outro lado, a implementação e a manutenção do SNI podem exigir um esforço adicional por parte dos desenvolvedores e arquitetos.<br>Para quem trabalha com sistemas escaláveis, é essencial dominar não apenas as ferramentas e tecnologias disponíveis, mas também entender os princípios fundamentais da segurança na nuvem. Por isso, é importante estar sempre atualizado e disposto a aprender e se adaptar às novas exigências do mercado.<br>Nesse sentido, compartilho algumas dicas avançadas para quem deseja se aprofundar no tema da segurança no Azure DevOps Services:<br>1. Utilize certificados SSL válidos e atualizados para garantir a autenticidade dos seus servidores.<br>2. Implemente políticas de acesso e controle de permissões para proteger os dados sensíveis dos usuários.<br>3. Faça uso de ferramentas de monitoramento e auditoria para identificar e corrigir possíveis vulnerabilidades.<br>Em resumo, a obrigatoriedade do SNI no Azure DevOps Services é mais um passo rumo a um ambiente digital mais seguro e confiável. Como arquiteto de software, é fundamental estar sempre atento às novas tendências e exigências do mercado, buscando aprimorar constantemente as suas habilidades e conhecimentos. A segurança não é um luxo, mas sim uma necessidade básica em um mundo cada vez mais conectado e dependente da tecnologia.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/segredos-sobrepostos-desvendando-os-desafios-do-azure-devops-oauth.html">Segredos Sobrepostos: Desvendando os Desafios do Azure DevOps OAuth</a><span>Outros</span></li>
+<li><a href="/artigos/debugging-com-o-visualizador-ai-powered-para-ienumerable-muito-mais-do-que-parece.html">Debugging com o Visualizador AI-powered para IEnumerable: muito mais do que parece</a><span>Outros</span></li>
+<li><a href="/artigos/o-sequestro-de-robert-caro-uma-licao-sobre-seguranca-em-sistemas.html">O Sequestro de Robert Caro: Uma Lição Sobre Segurança em Sistemas</a><span>Outros</span></li>
+<li><a href="/artigos/desenvolvimento-de-software-o-poder-das-habilidades-do-desenvolvedor-na-codificacao-agente.html">Desenvolvimento de Software: O Poder das Habilidades do Desenvolvedor na Codificação Agente</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

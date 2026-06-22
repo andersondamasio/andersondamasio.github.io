@@ -140,6 +140,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a:hover { background-color: var(--link); color: var(--main-bg); }
 main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -212,6 +221,15 @@ export default defineConfig({
 <p>O Rspress 2.0 não é apenas uma atualização; é uma verdadeira revolução na forma como abordamos a documentação. Com suas novas funcionalidades e melhorias de performance, ele se destaca em um mercado já saturado. Como arquiteto de software, acredito que devemos adotar ferramentas que não apenas atendem às nossas necessidades, mas que também facilitam a adaptação às novas exigências do mercado. Então, se você ainda não experimentou o Rspress, está na hora de dar uma olhada e ver como ele pode transformar sua forma de documentação.</p>
 <p>Em um cenário onde a tecnologia e a inteligência artificial caminham lado a lado, ferramentas como o Rspress 2.0 podem ser exatamente o que precisamos para acelerar nosso desenvolvimento e melhorar a experiência do usuário.</p>
 <p></div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/tecnologia/uma-nova-era-como-a-construcao-de-man-camps-pode-moldar-o-futuro-da-infraestrutura-de-dados.html">Uma nova era: como a construção de "man camps" pode moldar o futuro da infraestrutura de dados</a><span>Tecnologia</span></li>
+<li><a href="/artigos/tecnologia/a-nova-era-do-som-sony-wh-1000xm6-e-a-interseccao-da-tecnologia-e-do-conforto.html">A nova era do som: Sony WH-1000XM6 e a intersecção da tecnologia e do conforto</a><span>Tecnologia</span></li>
+<li><a href="/artigos/tecnologia/a-corrida-eletrica-rivian-e-os-desafios-do-lancamento-do-r2.html">A corrida elétrica: Rivian e os desafios do lançamento do R2</a><span>Tecnologia</span></li>
+<li><a href="/artigos/tecnologia/a-revolucao-dos-fones-apple-airpods-pro-3-e-a-nova-era-da-imersao-sonora.html">A revolução dos fones: Apple AirPods Pro 3 e a nova era da imersão sonora</a><span>Tecnologia</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

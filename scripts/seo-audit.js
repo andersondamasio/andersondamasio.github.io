@@ -161,6 +161,7 @@ const stats = {
   sitemapMissingFiles: [],
   sitemapDuplicateLocs: [],
   sitemapNoindexUrls: [],
+  indexableMissingFromSitemap: [],
   sitemapTooLarge: [],
   missingRobotsTxt: [],
   robotsMissingSitemap: [],
@@ -168,6 +169,7 @@ const stats = {
   rssMissingItems: [],
   rssBrokenLinks: [],
   missingRssAlternate: [],
+  missingRelatedArticles: [],
   brokenInternalLinks: [],
   legacyPrivacyLinks: [],
   profilePageMissingMainEntity: [],
@@ -178,6 +180,7 @@ const titles = new Map();
 const descriptions = new Map();
 const canonicals = new Map();
 const robotsByFile = new Map();
+const indexableCanonicalByFile = new Map();
 
 for (const file of walk(root)) {
   if (isVerificationFile(file)) continue;
@@ -195,6 +198,12 @@ for (const file of walk(root)) {
   const h1Count = $("h1").length;
   const lang = ($("html").attr("lang") || "").trim();
   const hasRssAlternate = $('link[rel="alternate" i][type="application/rss+xml" i]').length > 0;
+  const relatedLinks = (html.match(/<section\s+class=["'][^"']*\brelated-articles\b[\s\S]*?<\/section>/i)?.[0].match(/<a\s+[^>]*href=/gi) || []).length;
+  const isArticleContentPage = fileRel.startsWith("artigos/") &&
+    fileRel !== "artigos/index.html" &&
+    !/^Categoria:/i.test($("h1").first().text().trim()) &&
+    !/^Categoria:/i.test(title) &&
+    !/^Artigos por categoria/i.test(title);
   robotsByFile.set(fileRel, robots);
 
   if (!lang) pushExample(stats.missingLang, fileRel);
@@ -229,6 +238,9 @@ for (const file of walk(root)) {
   }
   if (!noindex && !hasRssAlternate) {
     pushExample(stats.missingRssAlternate, fileRel);
+  }
+  if (!noindex && isArticleContentPage && relatedLinks < 2) {
+    pushExample(stats.missingRelatedArticles, fileRel);
   }
 
   $("img").each((_, img) => {
@@ -285,13 +297,16 @@ for (const file of walk(root)) {
   if (canonical && !noindex) {
     if (!canonicals.has(canonical)) canonicals.set(canonical, []);
     canonicals.get(canonical).push(fileRel);
+    indexableCanonicalByFile.set(fileRel, canonical);
   }
 }
 
 const sitemapPath = path.join(root, "sitemap.xml");
+let sitemapLocs = new Set();
 if (fs.existsSync(sitemapPath)) {
   const xml = fs.readFileSync(sitemapPath, "utf8");
   const locs = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => match[1]);
+  sitemapLocs = new Set(locs);
   const seen = new Map();
 
   if (locs.length > 50000 || Buffer.byteLength(xml, "utf8") > 50 * 1024 * 1024) {
@@ -317,6 +332,14 @@ if (fs.existsSync(sitemapPath)) {
   }
 } else {
   pushExample(stats.sitemapMissingFiles, "sitemap.xml");
+}
+
+if (sitemapLocs.size) {
+  for (const [fileRel, canonical] of indexableCanonicalByFile.entries()) {
+    if (!sitemapLocs.has(canonical)) {
+      pushExample(stats.indexableMissingFromSitemap, `${fileRel}: ${canonical}`);
+    }
+  }
 }
 
 const robotsPath = path.join(root, "robots.txt");
@@ -376,6 +399,7 @@ const report = {
     sitemapMissingFiles: stats.sitemapMissingFiles,
     sitemapDuplicateLocs: stats.sitemapDuplicateLocs,
     sitemapNoindexUrls: stats.sitemapNoindexUrls,
+    indexableMissingFromSitemap: stats.indexableMissingFromSitemap,
     sitemapTooLarge: stats.sitemapTooLarge,
     missingRobotsTxt: stats.missingRobotsTxt,
     robotsMissingSitemap: stats.robotsMissingSitemap,
@@ -383,6 +407,7 @@ const report = {
     rssMissingItems: stats.rssMissingItems,
     rssBrokenLinks: stats.rssBrokenLinks,
     missingRssAlternate: stats.missingRssAlternate,
+    missingRelatedArticles: stats.missingRelatedArticles,
     brokenInternalLinks: stats.brokenInternalLinks,
     legacyPrivacyLinks: stats.legacyPrivacyLinks,
     profilePageMissingMainEntity: stats.profilePageMissingMainEntity,

@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Sempre que vejo discussões sobre a notícia de que o ESP32-C5 da Espressif está agora em produção em massa, me lembro de uma situação real em produção que exemplifica como a tecnologia está sempre evoluindo e trazendo novas possibilidades para o mundo da eletrônica embarcada.<br><br>Para quem não está familiarizado, o ESP32-C5 é o mais recente microcontrolador da Espressif, empresa conhecida por suas soluções de conectividade Wi-Fi e Bluetooth de baixo custo e alto desempenho. Com a produção em massa do ESP32-C5, podemos esperar avanços significativos em termos de eficiência energética, desempenho e segurança para uma variedade de aplicações, desde dispositivos IoT até produtos de consumo.<br><br>Do ponto de vista técnico, o ESP32-C5 traz consigo uma série de melhorias em relação aos seus antecessores. Com um núcleo Xtensa LX7 de 32 bits, clock de até 160 MHz e suporte a Wi-Fi 802.11 b/g/n, o microcontrolador promete um desempenho superior e uma conectividade mais estável. Além disso, a inclusão de recursos de segurança aprimorados, como criptografia AES de 128 bits e suporte a TLS 1.2, tornam o ESP32-C5 uma escolha ainda mais atraente para aplicações que exigem proteção de dados sensíveis.<br><br>Para demonstrar o potencial do ESP32-C5, vamos considerar um exemplo prático de uso em um sistema de monitoramento remoto de temperatura e umidade. Com o suporte integrado ao protocolo MQTT e à criptografia TLS, podemos garantir a transmissão segura dos dados coletados para um servidor na nuvem, permitindo o acesso remoto em tempo real e a análise dos dados coletados.<br><br><pre><code>#include <WiFi.h><br>#include <MQTT.h><br><br>const char* ssid = "nomedarede";<br>const char* password = "senhadarede";<br>const char* mqtt_server = "mqtt.exemplo.com";<br>const int mqtt_port = 1883;<br><br>WiFiClient espClient;<br>MQTTClient client;<br><br>void setup() {<br>  WiFi.begin(ssid, password);<br>  <br>  while (WiFi.status() != WL_CONNECTED) {<br>    delay(1000);<br>  }<br>  <br>  client.begin(mqtt_server, mqtt_port, espClient);<br>  <br>  while (!client.connect("ESP32-C5")) {<br>    delay(1000);<br>  }<br>  <br>  client.publish("temperatura", "25");<br>}<br><br>void loop() {<br>  client.loop();<br>}<br></code></pre><br><br>Além disso, é importante destacar que o ESP32-C5 oferece suporte a interfaces SPI, I2C e UART, ampliando ainda mais suas possibilidades de integração com uma variedade de sensores e dispositivos externos.<br><br>Em conclusão, o ESP32-C5 da Espressif representa mais do que apenas mais um lançamento de um microcontrolador. Com seu desempenho aprimorado, recursos de segurança avançados e suporte a interfaces de comunicação populares, ele abre novas portas para a criação de soluções inovadoras e escaláveis no mundo da eletrônica embarcada. Portanto, fique de olho nessa revolução silenciosa que está por vir e comece a explorar o potencial do ESP32-C5 em seus projetos futuros.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/web-browsers-a-crise-financeira-por-tras-dos-favoritos-dos-internautas.html">Web Browsers: A Crise Financeira por Trás dos Favoritos dos Internautas</a><span>Outros</span></li>
+<li><a href="/artigos/dropbox-e-o-suporte-ao-app-indicator-no-linux-rumo-a-integracao-perfeita.html">Dropbox e o suporte ao App Indicator no Linux: Rumo à integração perfeita</a><span>Outros</span></li>
+<li><a href="/artigos/a-revolucao-dos-108-bilhoes-de-pixels-desvendando-os-segredos-de-johannes-vermeer.html">A Revolução dos 108 Bilhões de Pixels: Desvendando os Segredos de Johannes Vermeer</a><span>Outros</span></li>
+<li><a href="/artigos/mercury-desvendando-o-futuro-da-linguagem-de-modelagem-em-escala-comercial.html">Mercury: Desvendando o futuro da linguagem de modelagem em escala comercial</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

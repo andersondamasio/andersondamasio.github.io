@@ -140,6 +140,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a:hover { background-color: var(--link); color: var(--main-bg); }
 main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -238,6 +247,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 <p>As atualizações do Spring não apenas trazem novas ferramentas, mas também uma nova forma de pensar sobre segurança e estruturação de aplicações. Ao explorar essas novidades, desenvolvedores têm a oportunidade de criar sistemas mais seguros, escaláveis e de fácil manutenção. Portanto, não deixe de experimentar essas novas funcionalidades e integrar as melhores práticas de segurança e arquitetura em seus projetos. O futuro do desenvolvimento com Spring parece promissor, e estamos apenas começando a arranhar a superfície do que é possível.</p>
 <p>
 <p></p></div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/programacao/desvendando-pontos-de-virada-na-produtividade-de-engenharia-licoes-da-amazon.html">Desvendando Pontos de Virada na Produtividade de Engenharia: Lições da Amazon</a><span>Programação</span></li>
+<li><a href="/artigos/programacao/a-revolucao-das-startups-como-a-arquitetura-de-software-impulsiona-inovacoes.html">A revolução das startups: como a arquitetura de software impulsiona inovações</a><span>Programação</span></li>
+<li><a href="/artigos/programacao/a-batalha-das-startups-como-a-arquitetura-de-software-pode-ser-sua-aliada.html">A batalha das startups: como a Arquitetura de Software pode ser sua aliada</a><span>Programação</span></li>
+<li><a href="/artigos/programacao/fraude-e-tecnologia-licoes-do-escandalo-da-volkswagen-para-arquitetos-de-software.html">Fraude e Tecnologia: Lições do Escândalo da Volkswagen para Arquitetos de Software</a><span>Programação</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

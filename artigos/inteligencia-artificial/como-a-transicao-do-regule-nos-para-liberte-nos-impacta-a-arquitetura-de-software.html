@@ -140,6 +140,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a:hover { background-color: var(--link); color: var(--main-bg); }
 main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
 footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -237,6 +246,15 @@ namespace MeuProjeto.Controllers
 <p>Refletindo sobre tudo isso, pergunto: estamos prontos para a liberdade que pedimos? A liberdade sem responsabilidade pode ser tão perigosa quanto a regulamentação excessiva. Vamos avançar com sabedoria.</p>
 <p>
 <p></p></div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/inteligencia-artificial/como-a-nova-ferramenta-perplexity-labs-pode-revolucionar-seu-processo-de-desenvolvimento.html">Como a Nova Ferramenta Perplexity Labs Pode Revolucionar Seu Processo de Desenvolvimento</a><span>Inteligência Artificial</span></li>
+<li><a href="/artigos/inteligencia-artificial/revolucao-no-codigo-o-impacto-do-copilot-chat-open-source-na-arquitetura-de-software.html">Revolução no Código: O Impacto do Copilot Chat Open Source na Arquitetura de Software</a><span>Inteligência Artificial</span></li>
+<li><a href="/artigos/inteligencia-artificial/o-futuro-da-comunicacao-como-resumos-automaticos-do-gmail-podem-transformar-nossas-interacoes.html">O Futuro da Comunicação: Como Resumos Automáticos do Gmail Podem Transformar Nossas Interações</a><span>Inteligência Artificial</span></li>
+<li><a href="/artigos/inteligencia-artificial/a-inteligencia-artificial-como-aliada-nao-inimiga-o-futuro-do-trabalho.html">A inteligência artificial como aliada, não inimiga: o futuro do trabalho</a><span>Inteligência Artificial</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

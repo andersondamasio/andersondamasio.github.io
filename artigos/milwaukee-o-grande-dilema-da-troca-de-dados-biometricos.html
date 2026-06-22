@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -130,6 +139,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Milwaukee: O Grande Dilema da Troca de Dados Biométricos</h1>
 <p class="article-meta">Publicado em: 01/05/2025 01:23</p>
 <div class="article-body">Existe uma armadilha técnica que muitos ignoram quando falamos da recente notícia sobre a polícia de Milwaukee trocando 2,5 milhões de registros de fotos de prisão por acesso gratuito ao reconhecimento facial. A discussão sobre privacidade, segurança e ética ganha ainda mais destaque quando vemos a facilidade com que dados biométricos sensíveis estão sendo compartilhados e utilizados de forma tão abrangente.<br><br>Para entender melhor o impacto dessa prática, é importante mergulhar um pouco mais na parte técnica do reconhecimento facial. A tecnologia por trás desse processo envolve a captura de características faciais únicas de um indivíduo e a comparação desses dados com um banco de dados para identificação. No entanto, a precisão desse método pode ser questionável, especialmente quando consideramos a diversidade de raças, etnias e características individuais que podem influenciar os resultados.<br><br>No código abaixo, podemos ver um exemplo simples de como uma função de reconhecimento facial básica poderia ser implementada em C#:<br><br><pre><code class="language-csharp">using System;<br>using System.Drawing;<br>using Emgu.CV;<br>using Emgu.CV.CvEnum;<br>using Emgu.CV.Structure;<br><br>public class FacialRecognition<br>{<br>    public void RecognizeFace(Image<Gray, byte> inputImage, Image<Gray, byte> databaseImage)<br>    {<br>        // Implementação do algoritmo de comparação de características faciais<br>    }<br>}<br></code></pre><br><br>Para garantir a segurança e a privacidade dos dados biométricos dos cidadãos, é crucial que haja regulamentações claras e rigorosas sobre o uso do reconhecimento facial. Além disso, investir em algoritmos mais avançados e precisos, que levem em consideração a diversidade da população, é essencial para evitar viés e erros de identificação.<br><br>Como profissionais de tecnologia, temos a responsabilidade de questionar e refletir sobre o impacto ético e social de nossas criações. O uso indiscriminado de dados biométricos, como no caso da troca de mugshots por acesso gratuito ao reconhecimento facial, nos lembra da importância de agirmos com ética e responsabilidade em um mundo cada vez mais digital e conectado.<br><br>Em um cenário onde a tecnologia avança em ritmo acelerado, é fundamental que estejamos sempre atentos e engajados em garantir que a inovação seja utilizada para o bem da sociedade, respeitando os direitos e a privacidade de cada indivíduo. Afinal, a tecnologia deve ser uma aliada na construção de um mundo mais justo e igualitário.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/mercury-desvendando-o-futuro-da-linguagem-de-modelagem-em-escala-comercial.html">Mercury: Desvendando o futuro da linguagem de modelagem em escala comercial</a><span>Outros</span></li>
+<li><a href="/artigos/a-revolucao-dos-108-bilhoes-de-pixels-desvendando-os-segredos-de-johannes-vermeer.html">A Revolução dos 108 Bilhões de Pixels: Desvendando os Segredos de Johannes Vermeer</a><span>Outros</span></li>
+<li><a href="/artigos/explorando-as-vulnerabilidades-do-navegador-ladybird.html">Explorando as Vulnerabilidades do Navegador Ladybird</a><span>Outros</span></li>
+<li><a href="/artigos/web-browsers-a-crise-financeira-por-tras-dos-favoritos-dos-internautas.html">Web Browsers: A Crise Financeira por Trás dos Favoritos dos Internautas</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

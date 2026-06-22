@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">A discussão sobre Embeddings in GenAI Products voltou à tona, e acredito que precisamos falar sobre isso com mais seriedade.<br>Para os não iniciados, os embeddings são representações numéricas de palavras, frases, ou até mesmo objetos, em um espaço vetorial de alta dimensão. Em produtos de inteligência artificial como os GenAI, os embeddings desempenham um papel crucial na codificação de informações e na compreensão de contextos semânticos complexos.<br>Essas representações densas e contínuas possibilitam a captura de relações semânticas entre entidades, tornando-se essenciais em tarefas de processamento de linguagem natural, recomendação de conteúdo e muito mais.<br>Vamos agora mergulhar um pouco mais fundo nesse universo fascinante dos embeddings e como eles são aplicados em produtos GenAI.<br>Em termos práticos, ao implementar embeddings em um sistema de recomendação de filmes, por exemplo, podemos utilizar uma abordagem baseada em aprendizado profundo para treinar um modelo capaz de prever as preferências do usuário. Vejamos um exemplo simples em Python utilizando a biblioteca TensorFlow:<br><pre><code>import tensorflow as tf<br># Definindo os embeddings<br>embedding_layer = tf.keras.layers.Embedding(input_dim=1000, output_dim=128)<br># Utilizando os embeddings em uma camada LSTM<br>model = tf.keras.Sequential([<br>embedding_layer,<br>tf.keras.layers.LSTM(128),<br>tf.keras.layers.Dense(1, activation='sigmoid')<br>])<br></code></pre><br>Nesse trecho de código, criamos uma camada de embeddings com 1000 itens de vocabulário e uma dimensão de 128. Essa camada é então utilizada em uma rede neural recorrente do tipo LSTM para prever a probabilidade de um usuário gostar de um determinado filme.<br>Além disso, vale ressaltar a importância de técnicas como word2vec, GloVe e BERT na geração de embeddings de alta qualidade, que capturam nuances semânticas e melhoram significativamente o desempenho de modelos de inteligência artificial.<br>Em conclusão, os embeddings desempenham um papel fundamental no sucesso de produtos de inteligência artificial como os GenAI. Dominar o seu uso e entender suas aplicações pode ser a chave para o desenvolvimento de soluções mais eficientes e precisas.<br>E você, já explorou os embeddings em seus projetos de IA? Compartilhe suas experiências e insights nos comentários!</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/construindo-o-futuro-desvendando-os-padroes-emergentes-na-criacao-de-produtos-com-genai.html">Construindo o Futuro: Desvendando os Padrões Emergentes na Criação de Produtos com GenAI</a><span>Outros</span></li>
+<li><a href="/artigos/floresta-e-deserto-onde-a-arquitetura-de-software-encontra-a-natureza.html">Floresta e Deserto: Onde a arquitetura de software encontra a natureza</a><span>Outros</span></li>
+<li><a href="/artigos/podcast-com-luca-rossi-o-futuro-da-comunicacao-online.html">Podcast com Luca Rossi: O Futuro da Comunicação Online</a><span>Outros</span></li>
+<li><a href="/artigos/o-futuro-da-engenharia-de-software-insights-do-panel-no-goto-copenhagen.html">O Futuro da Engenharia de Software: Insights do Panel no goto Copenhagen</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

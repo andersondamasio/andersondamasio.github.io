@@ -102,6 +102,15 @@ h1 { font-size: 1.8rem; margin-bottom: 1rem; }
 }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -130,6 +139,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>We're building a dystopia just to make people click on ads [video]</h1>
 <p class="article-meta">Publicado em: 27/04/2025 13:30</p>
 <div class="article-body">**Título: Utilizando técnicas de personalização em sistemas para aumentar a eficácia de anúncios**<br><br>**Introdução:**<br>Com o avanço da tecnologia e a coleta massiva de dados, empresas têm utilizado cada vez mais técnicas de personalização em seus sistemas para direcionar anúncios de forma mais eficaz. No entanto, como apontado na notícia, esse uso indiscriminado pode levar à construção de uma distopia, onde a privacidade e a ética são comprometidas em prol do lucro. Neste artigo, exploraremos como desenvolvedores podem utilizar essas técnicas de forma responsável e eficaz.<br><br>**Exemplo de código:**<br>```csharp<br>public class AnuncioPersonalizado<br>{<br>    public string ExibirAnuncio(Usuario usuario)<br>    {<br>        if (usuario.Idade >= 18 && usuario.Interesses.Contains("tecnologia"))<br>        {<br>            return "Confira as últimas novidades em tecnologia!";<br>        }<br>        else<br>        {<br>            return "Veja as promoções da semana!";<br>        }<br>    }<br>}<br><br>public class Usuario<br>{<br>    public int Idade { get; set; }<br>    public List<string> Interesses { get; set; }<br>}<br>```<br><br>**Explicação técnica:**<br>No exemplo de código acima, temos uma classe `AnuncioPersonalizado` que recebe um objeto `Usuario` e exibe um anúncio personalizado com base na idade e interesses do usuário. Ao utilizar informações como idade e interesses, é possível direcionar anúncios de forma mais relevante para o usuário, aumentando a chance de cliques e conversões. No entanto, é importante respeitar a privacidade do usuário e obter seu consentimento para utilizar essas informações.<br><br>**Dicas avançadas:**<br>- Utilize algoritmos de machine learning para prever os interesses do usuário com base em seu comportamento online.<br>- Implemente um sistema de permissões granulares para que o usuário possa controlar quais informações são utilizadas para personalizar os anúncios.<br>- Monitore constantemente o desempenho dos anúncios personalizados e faça ajustes conforme necessário para melhorar a eficácia.<br><br>**Conclusão:**<br>O uso de técnicas de personalização em sistemas pode ser uma ferramenta poderosa para aumentar a eficácia de anúncios, mas é essencial utilizá-las de forma ética e responsável. Ao respeitar a privacidade do usuário e obter seu consentimento para utilizar suas informações, é possível criar uma experiência mais relevante e agradável para o usuário, ao mesmo tempo em que se alcança os objetivos de negócio da empresa. Este equilíbrio entre personalização e privacidade é fundamental para o desenvolvimento de sistemas modernos e sustentáveis.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/show-hn-a-common-lisp-implementation-in-development-supports-asdf.html">Show HN: A Common Lisp implementation in development, supports ASDF</a><span>Outros</span></li>
+<li><a href="/artigos/how-nasa-is-using-graph-technology-and-llms-to-build-a-people-knowledge-graph.html">How NASA Is Using Graph Technology and LLMs to Build a People Knowledge Graph</a><span>Outros</span></li>
+<li><a href="/artigos/explorando-o-potencial-da-wikipedia-download-de-banco-de-dados.html">Explorando o Potencial da Wikipedia: Download de Banco de Dados</a><span>Outros</span></li>
+<li><a href="/artigos/o-5g-acabou-com-o-imsi-catcher-descubra-como-proteger-seus-dados-em-ambientes-moveis.html">"O 5G acabou com o IMSI Catcher? Descubra como proteger seus dados em ambientes móveis!"</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 

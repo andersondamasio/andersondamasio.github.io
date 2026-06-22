@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -130,6 +139,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Explorando a Aleatoriedade nos LLMs: Desvendando um Mistério Técnico</h1>
 <p class="article-meta">Publicado em: 30/04/2025 06:19</p>
 <div class="article-body">Tenho visto muita gente tratando Can LLMs do randomness? como algo simples — mas a realidade é bem diferente. A aleatoriedade sempre foi um desafio fascinante na computação, e com o avanço da tecnologia, novas questões surgem, como a capacidade dos LLMs (Large Language Models) lidarem com a aleatoriedade.<br><br>Os LLMs são modelos de linguagem de grande escala que utilizam aprendizado de máquina para processar e gerar texto. Eles têm sido cada vez mais utilizados em diversas aplicações, desde assistentes virtuais até tradução automática. Porém, quando se trata de lidar com a aleatoriedade, a história pode ser um pouco mais complicada.<br><br>A aleatoriedade é essencial em muitas aplicações, como jogos, simulações e criptografia. Portanto, a capacidade dos LLMs de lidarem com a aleatoriedade pode ter um impacto significativo em sua eficácia em diversas áreas. <br><br>Na prática, a aleatoriedade pode ser introduzida em um LLM de diversas maneiras, como por meio da utilização de funções de geração de números aleatórios ou da introdução de ruído nos dados de entrada. É importante considerar como esses elementos podem afetar o desempenho e a capacidade preditiva do modelo.<br><br>Para ilustrar, vamos analisar um trecho de código em Python que utiliza um LLM para gerar texto com base em uma sequência de entrada aleatória:<br><br><pre><code>import torch<br>from transformers import GPT2LMHeadModel, GPT2Tokenizer<br><br>tokenizer = GPT2Tokenizer.from_pretrained('gpt2')<br>model = GPT2LMHeadModel.from_pretrained('gpt2')<br><br>input_text = "The quick brown fox jumps over the lazy dog."<br>input_ids = tokenizer.encode(input_text, return_tensors='pt')<br><br>output = model.generate(input_ids, max_length=100, num_return_sequences=3, temperature=0.7)<br>decoded_output = tokenizer.decode(output[0], skip_special_tokens=True)<br><br>print(decoded_output)<br></code></pre><br><br>Neste exemplo, estamos utilizando a biblioteca `transformers` da Hugging Face para trabalhar com um modelo GPT-2 e gerar texto com base em uma entrada aleatória. A utilização de parâmetros como `temperature` pode influenciar a aleatoriedade do texto gerado.<br><br>Além disso, ao trabalhar com aleatoriedade em LLMs, é importante considerar a interpretação e validação dos resultados. A aleatoriedade pode tornar a análise e o debugging mais complexos, exigindo abordagens específicas para garantir a qualidade e a confiabilidade dos modelos.<br><br>Em conclusão, a questão de se os LLMs podem lidar com a aleatoriedade é um desafio interessante que requer uma compreensão aprofundada de como esses modelos funcionam e como a aleatoriedade pode impactar seu desempenho. Explorar e compreender esse aspecto pode abrir novas possibilidades e insights no desenvolvimento de aplicações baseadas em LLMs. É um campo fascinante que continua a evoluir e nos desafiar a pensar de forma criativa e inovadora.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/o-dilema-das-gemeas-do-meu-fermento-natural.html">"O dilema das gêmeas do meu fermento natural"</a><span>Outros</span></li>
+<li><a href="/artigos/a-revolucao-da-inteligencia-artificial-os-principais-eventos-no-campo.html">A Revolução da Inteligência Artificial: Os Principais Eventos no Campo</a><span>Outros</span></li>
+<li><a href="/artigos/desvendando-o-modelo-de-raciocinio-de-ia-de-codigo-aberto-da-xiaomi.html">Desvendando o Modelo de Raciocínio de IA de Código Aberto da Xiaomi</a><span>Outros</span></li>
+<li><a href="/artigos/linux-e-excel-a-combinacao-que-vai-revolucionar-sua-produtividade.html">Linux e Excel: A combinação que vai revolucionar sua produtividade</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Já perdi as contas de quantas vezes vi desenvolvedores tropeçarem em GenAI Patterns: RAG Limitations and Hybrid Retriever, sem compreender completamente as nuances por trás desses conceitos. Por isso, decidi dedicar este artigo a desvendar os segredos por trás do GenAI, explorando as limitações do RAG e a inovação trazida pelo Retriever Híbrido.<br>Para começar, é importante entender que o GenAI Patterns é uma ferramenta poderosa que utiliza inteligência artificial para gerar padrões de código de forma automatizada. No entanto, as limitações do RAG (Rapid Automatic Generation) podem impactar diretamente a qualidade e eficiência do código gerado.<br>A principal questão com o RAG é a sua tendência a produzir padrões genéricos e repetitivos, que nem sempre se adequam às necessidades específicas de um projeto. Para contornar essa limitação, surge o conceito do Retriever Híbrido, que combina a geração automática de código com a intervenção humana para garantir um resultado mais personalizado e eficaz.<br>Vamos agora mergulhar um pouco mais fundo na parte técnica. Considere o seguinte trecho de código em C#:<br><pre><code class="language-csharp">public class GenAIExample<br>{<br>private readonly ILogger _logger;<br>public GenAIExample(ILogger logger)<br>{<br>_logger = logger;<br>}<br>public void Execute()<br>{<br>_logger.LogInformation("Executing GenAIExample...");<br>// Lógica de execução aqui<br>}<br>}<br></code></pre><br>Neste exemplo, utilizamos a injeção de dependência para garantir a flexibilidade e testabilidade do código gerado pelo GenAI. Essa é apenas uma das muitas técnicas que podem ser aplicadas para melhorar a qualidade do código produzido automaticamente.<br>Além disso, ao incorporar o conceito do Retriever Híbrido, podemos adicionar camadas de validação e otimização ao código gerado, garantindo que ele atenda aos requisitos específicos do projeto.<br>Em conclusão, é essencial compreender as limitações do RAG e explorar alternativas inovadoras, como o Retriever Híbrido, para maximizar o potencial do GenAI Patterns. A combinação da inteligência artificial com a intervenção humana pode ser a chave para alcançar um código de alta qualidade e adaptado às necessidades de cada projeto. Não se contente com o básico, ouse explorar novas possibilidades e elevar o seu desenvolvimento de software a um novo nível.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/o-futuro-da-engenharia-de-software-insights-do-panel-no-goto-copenhagen.html">O Futuro da Engenharia de Software: Insights do Panel no goto Copenhagen</a><span>Outros</span></li>
+<li><a href="/artigos/explorando-o-poder-do-deepseek-uma-analise-tecnica-profunda.html">Explorando o Poder do DeepSeek: Uma Análise Técnica Profunda</a><span>Outros</span></li>
+<li><a href="/artigos/genai-patterns-repensando-suas-queries.html">GenAI Patterns: Repensando suas Queries</a><span>Outros</span></li>
+<li><a href="/artigos/floresta-e-deserto-onde-a-arquitetura-de-software-encontra-a-natureza.html">Floresta e Deserto: Onde a arquitetura de software encontra a natureza</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

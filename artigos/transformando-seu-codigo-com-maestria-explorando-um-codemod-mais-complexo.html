@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -146,6 +155,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 </script>
 
 <div class="article-body">Me chamou atenção como a notícia trouxe uma visão diferente sobre A more complex codemod que ainda não tinha considerado. A ideia de lidar com transformações mais complexas no código fonte sempre traz consigo desafios e oportunidades únicas para os desenvolvedores.<br>Quando falamos de um codemod mais complexo, estamos nos referindo a uma ferramenta ou técnica que permite realizar alterações automatizadas em larga escala no código, indo além das simples substituições de strings. Essa abordagem é especialmente útil em projetos grandes, onde pequenas mudanças manuais podem se tornar trabalhosas e propensas a erros.<br>Para ilustrar melhor, vamos considerar um exemplo em C# onde queremos modificar todas as chamadas de um método para utilizar uma nova API mais eficiente. Utilizando um codemod simples, poderíamos fazer algo como:<br><pre><code class="language-csharp">foreach (var methodCall in syntaxTree.DescendantNodes().OfType<InvocationExpressionSyntax>())<br>{<br>if (methodCall.Expression is IdentifierNameSyntax identifierName && identifierName.Identifier.Text == "OldMethod")<br>{<br>var newMethod = SyntaxFactory.IdentifierName("NewMethod");<br>var newMethodCall = methodCall.WithExpression(newMethod);<br>syntaxTree = syntaxTree.ReplaceNode(methodCall, newMethodCall);<br>}<br>}<br></code></pre><br>No entanto, em cenários mais complexos, pode ser necessário lidar com múltiplos arquivos, considerar diferentes contextos e até mesmo interagir com outras partes do sistema. Nesses casos, é fundamental ter uma abordagem mais sofisticada e robusta.<br>Uma dica avançada nesse sentido é utilizar ferramentas de análise estática para entender melhor a estrutura do código e suas dependências. Isso pode ajudar a criar transformações mais seguras e precisas, evitando efeitos colaterais indesejados.<br>Ao trabalhar com codemods mais complexos, também é importante testar exaustivamente as transformações em diferentes cenários e garantir que o código resultante esteja de acordo com as expectativas. A automação não deve ser um substituto para a revisão manual, mas sim uma aliada na busca por maior eficiência e qualidade.<br>Em conclusão, a abordagem de um codemod mais complexo pode ser uma poderosa ferramenta no arsenal do desenvolvedor, permitindo realizar mudanças significativas de forma ágil e segura. Com a combinação certa de técnicas e ferramentas, é possível transformar seu código com maestria, mantendo a integridade e a evolução do seu sistema.<br>E você, já experimentou trabalhar com codemods mais complexos em seus projetos? Compartilhe suas experiências e insights nos comentários!</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/automatizando-mudancas-em-apis-com-codemods-o-poder-do-refactoring.html">Automatizando Mudanças em APIs com Codemods: O Poder do Refactoring</a><span>Outros</span></li>
+<li><a href="/artigos/descobertas-musicais-de-2024-como-a-tecnologia-esta-transformando-a-forma-como-encontramos-novas-musicas.html">Descobertas musicais de 2024: como a tecnologia está transformando a forma como encontramos novas músicas</a><span>Outros</span></li>
+<li><a href="/artigos/desvendando-os-erros-comuns-dos-codemods.html">Desvendando os Erros Comuns dos Codemods</a><span>Outros</span></li>
+<li><a href="/artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html">Design Tokens: A Arquitetura Secreta por Trás de Interfaces de Usuário Incríveis</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">

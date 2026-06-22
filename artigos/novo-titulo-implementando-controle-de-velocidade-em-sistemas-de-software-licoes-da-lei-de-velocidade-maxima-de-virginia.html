@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -130,6 +139,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Novo Título: "Implementando Controle de Velocidade em Sistemas de Software: Lições da Lei de Velocidade Máxima de Virginia"</h1>
 <p class="article-meta">Publicado em: 27/04/2025 14:15</p>
 <div class="article-body">Introdução:<br>Recentemente, o estado da Virginia aprovou uma lei para impor limites de velocidade máxima para motoristas que repetidamente excedem os limites de velocidade. Essa medida visa aumentar a segurança nas estradas e garantir o cumprimento das leis de trânsito. Mas o que podemos aprender dessa iniciativa para aplicar em práticas modernas de arquitetura de software e desenvolvimento de sistemas?<br><br>Relevância para práticas modernas de arquitetura de software e desenvolvimento de sistemas:<br>Assim como a lei de velocidade máxima de Virginia visa controlar o comportamento dos motoristas nas estradas, em sistemas de software é essencial implementar mecanismos de controle de velocidade para garantir a estabilidade, segurança e eficiência do sistema. Neste artigo, vamos explorar como podemos aplicar os princípios por trás dessa lei no desenvolvimento de software.<br><br>Exemplo de código em C#:<br><pre><code class="language-csharp">public class SpeedController<br>{<br>    private int maxSpeed = 100; // Velocidade máxima permitida<br>    private int currentSpeed = 0; // Velocidade atual do veículo<br><br>    public void SetSpeed(int speed)<br>    {<br>        if (speed <= maxSpeed)<br>        {<br>            currentSpeed = speed;<br>        }<br>        else<br>        {<br>            currentSpeed = maxSpeed;<br>        }<br>    }<br>}<br></code></pre><br><br>Explicação técnica:<br>No exemplo de código acima, criamos uma classe SpeedController que controla a velocidade de um veículo. Ao chamar o método SetSpeed, o sistema verifica se a velocidade inserida está dentro do limite máximo permitido. Caso contrário, a velocidade é ajustada para o limite máximo. Essa abordagem garante que o veículo não ultrapasse a velocidade estabelecida, sem comprometer o funcionamento do sistema.<br><br>Dicas avançadas:<br>- Implemente um mecanismo de notificação para alertar os usuários quando a velocidade máxima for atingida.<br>- Utilize padrões de design como o Strategy Pattern para permitir diferentes estratégias de controle de velocidade.<br>- Realize testes de unidade para garantir que o controle de velocidade funcione corretamente em diferentes cenários.<br><br>Conclusão:<br>A lei de velocidade máxima de Virginia nos ensina a importância de controlar o comportamento dos usuários para garantir a segurança e eficiência de um sistema. Ao aplicarmos os princípios por trás dessa lei no desenvolvimento de software, podemos criar sistemas mais robustos e confiáveis. Implemente mecanismos de controle de velocidade em seus sistemas e garanta uma experiência segura para os usuários.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/obituarios-automatizados.html">Obituários Automatizados</a><span>Outros</span></li>
+<li><a href="/artigos/capturando-nos-do-dom-como-imagens-em-alta-velocidade-introducao-ao-snapdom.html">Capturando nós do DOM como imagens em alta velocidade: Introdução ao snapDOM</a><span>Outros</span></li>
+<li><a href="/artigos/titulo-contratacao-de-engenheiros-para-construcao-de-processamento-de-documentos-llm-na-extend-yc-w23.html">Título: "Contratação de Engenheiros para Construção de Processamento de Documentos LLM na Extend (YC W23)"</a><span>Outros</span></li>
+<li><a href="/artigos/artigo-libogc-descoberta-de-codigo-roubado-do-rtems-e-suas-implicacoes-na-arquitetura-de-software.html">Artigo: Libogc: Descoberta de código roubado do RTEMS e suas implicações na arquitetura de software</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 

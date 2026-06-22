@@ -102,6 +102,15 @@ code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0
 .back-link a { font-weight: bold; color: #0a66c2; font-size: 1.05rem; border: 1px solid #0a66c2; padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
 .back-link a:hover { background-color: #0a66c2; color: white; }
 main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -130,6 +139,15 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Obituários Automatizados</h1>
 <p class="article-meta">Publicado em: 27/04/2025 14:20</p>
 <div class="article-body">Com a constante evolução da tecnologia e a busca por eficiência no desenvolvimento de software, a automação de tarefas rotineiras tem se tornado cada vez mais relevante. Neste contexto, a prática de ler obituários pode ser automatizada para trazer benefícios significativos para arquitetura de software e desenvolvimento de sistemas.<br><br>Imagine um sistema que necessita verificar diariamente informações sobre obituários para atualizar dados em um banco de dados. Em vez de ter um funcionário dedicado a essa tarefa, podemos criar um script automatizado que busca os obituários em um site específico e atualiza as informações necessárias no sistema.<br><br>Vamos exemplificar em C# como essa automação poderia ser implementada:<br><br><pre><code class="language-csharp">using System;<br>using System.Net;<br><br>class ObituariosAutomatizados<br>{<br>    static void Main()<br>    {<br>        WebClient client = new WebClient();<br>        string obituarios = client.DownloadString("http://site.com/obituarios");<br><br>        // Processar os obituários e atualizar o banco de dados<br>        // Código para atualização do banco de dados aqui<br>    }<br>}<br></code></pre><br><br>Neste exemplo, utilizamos a classe `WebClient` para baixar a página de obituários de um site fictício. Em seguida, o código poderia processar as informações obtidas e atualizar o banco de dados conforme necessário.<br><br>Além disso, é importante ressaltar que a automação de obituários pode ser aplicada em diversos cenários, como notificação de eventos, processamento de dados externos e atualização de informações em tempo real.<br><br>Em conclusão, a automação de tarefas como a leitura de obituários pode trazer ganhos significativos em termos de eficiência e precisão para arquitetura de software e desenvolvimento de sistemas. Ao explorar essa prática, os desenvolvedores podem otimizar processos e dedicar mais tempo a atividades estratégicas.</div>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/novo-titulo-implementando-controle-de-velocidade-em-sistemas-de-software-licoes-da-lei-de-velocidade-maxima-de-virginia.html">Novo Título: "Implementando Controle de Velocidade em Sistemas de Software: Lições da Lei de Velocidade Máxima de Virginia"</a><span>Outros</span></li>
+<li><a href="/artigos/capturando-nos-do-dom-como-imagens-em-alta-velocidade-introducao-ao-snapdom.html">Capturando nós do DOM como imagens em alta velocidade: Introdução ao snapDOM</a><span>Outros</span></li>
+<li><a href="/artigos/titulo-contratacao-de-engenheiros-para-construcao-de-processamento-de-documentos-llm-na-extend-yc-w23.html">Título: "Contratação de Engenheiros para Construção de Processamento de Documentos LLM na Extend (YC W23)"</a><span>Outros</span></li>
+<li><a href="/artigos/artigo-libogc-descoberta-de-codigo-roubado-do-rtems-e-suas-implicacoes-na-arquitetura-de-software.html">Artigo: Libogc: Descoberta de código roubado do RTEMS e suas implicações na arquitetura de software</a><span>Outros</span></li>
+</ul>
+</section>
 <p class="back-link"><a href="../index.html">← Voltar para a página inicial</a></p>
 </main>
 
