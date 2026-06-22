@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Instalar dependências
+        run: npm ci
+
       - name: Criar script de atualização
         run: |
           echo "const fs = require('fs');" > atualizar-analytics.js
@@ -47,10 +50,17 @@ jobs:
       - name: Executar script de atualização
         run: node atualizar-analytics.js
 
+      - name: Rebuild e auditoria SEO
+        run: npm run seo:maintain
+
       - name: Commitar mudanças
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "github-actions"
-          git add artigos/*.html || echo "Nenhum artigo alterado"
-          git commit -m "Atualizar Google Analytics nos artigos" || echo "Nada para commitar"
-          git push
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nada para commitar"
+          else
+            git commit -m "Atualizar Google Analytics nos artigos"
+            git push
+          fi

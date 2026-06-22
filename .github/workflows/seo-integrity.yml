@@ -1,0 +1,35 @@
+name: SEO Integrity
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: seo-integrity-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  seo-integrity:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Rebuild e auditoria SEO
+        run: npm run seo:maintain
+
+      - name: Garantir que o SEO gerado foi commitado
+        run: git diff --exit-code

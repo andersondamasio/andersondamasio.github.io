@@ -361,6 +361,38 @@ O workflow `.github/workflows/gerar-html.yml` tambem foi atualizado para executa
 
 O workflow legado `.github/workflows/inserir-cookies.yml` foi limitado para execucao manual, porque ele fazia commits automaticos apos cada push em HTML e podia deixar a publicacao final diferente do resultado auditado pelo pipeline de SEO. O script manual `inserir-cookie-banner.js` tambem foi atualizado para usar `/politica.html` e remover espacos finais.
 
+### Imagens, dados estruturados e integridade continua
+
+Foi adicionada uma configuracao central de assets SEO em `scripts/seo-assets.js`.
+
+Com isso:
+
+- A imagem padrao de SEO passou a usar uma versao 16:9 otimizada.
+- Foram geradas variacoes 16:9, 4:3 e 1:1 para dados estruturados de artigos.
+- `BlogPosting` passou a expor as tres proporcoes recomendadas para artigos.
+- Open Graph passou a incluir largura, altura e texto alternativo da imagem.
+- Twitter Card passou a incluir texto alternativo da imagem.
+- A auditoria estrita passou a falhar caso um artigo indexavel nao tenha as variacoes de imagem do `BlogPosting`.
+- A auditoria estrita passou a falhar caso a imagem padrao do Open Graph nao tenha dimensoes e texto alternativo.
+
+Tambem foi removido o uso de horario dinamico em metadados de listagens durante o rebuild. Agora a data de atualizacao das listagens vem da data mais recente dos artigos daquela pagina, tornando `npm run seo:maintain` reproduzivel.
+
+Os workflows manuais que podem alterar HTML tambem passaram a rodar `npm run seo:maintain` antes de commitar:
+
+- `.github/workflows/atualizar-analytics.yml`
+- `.github/workflows/inserir-amp-ads.yml`
+- `.github/workflows/inserir-cookies.yml`
+
+Foi criado o workflow `.github/workflows/seo-integrity.yml`, que executa em push, pull request e manualmente:
+
+```bash
+npm ci
+npm run seo:maintain
+git diff --exit-code
+```
+
+Assim, alem de auditar, o CI tambem detecta quando o SEO gerado nao foi commitado.
+
 ### Resultado da validacao final
 
 Em 22/06/2026, o comando abaixo foi executado com sucesso:

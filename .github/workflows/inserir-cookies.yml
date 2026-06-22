@@ -22,6 +22,9 @@ jobs:
       - name: Executar script de inserção do cookie banner
         run: node inserir-cookie-banner.js
 
+      - name: Rebuild e auditoria SEO
+        run: npm run seo:maintain
+
       - name: Commitar alterações (se houver)
         run: |
           git config user.name "github-actions"

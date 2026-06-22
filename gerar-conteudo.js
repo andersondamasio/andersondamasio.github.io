@@ -2091,6 +2091,16 @@ function gerarIndicesPaginados(titulos) {
   const paginas = Math.ceil(ordenados.length / artigosPorPagina);
   const paginasGeradas = new Set();
 
+  function dataMaisRecenteIso(artigos) {
+    const timestamps = artigos
+      .map(artigo => new Date(artigo.data).getTime())
+      .filter(timestamp => Number.isFinite(timestamp));
+
+    return timestamps.length
+      ? new Date(Math.max(...timestamps)).toISOString()
+      : null;
+  }
+
   for (let i = 0; i < paginas; i++) {
     const artigosPagina = ordenados.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
     const links = artigosPagina.map(t => {
@@ -2104,7 +2114,7 @@ function gerarIndicesPaginados(titulos) {
       idx => idx === 0 ? "index.html" : `index${idx + 1}.html`
     );
 
- const updated_time = new Date().toISOString();
+    const updated_time = dataMaisRecenteIso(artigosPagina);
     const pagePath = i === 0 ? "/" : `index${i + 1}.html`;
     const pageTitle = i === 0
       ? `${siteName} - Arquiteto de Software e Desenvolvedor`
