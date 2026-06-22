@@ -1,10 +1,5 @@
 [
   {
-    "carregamento": "carregamneto",
-    "problema": "probrema",
-    "melhor": "melor"
-  },
-  {
     "desafio": "desaío",
     "tecnologia": "tecnoligia"
   },
@@ -89,5 +84,9 @@
     "prioridade": "prioriade",
     "desenvolvimento": "desenvolvimente",
     "muito": "muto"
+  },
+  {
+    "suporte": "suportte",
+    "prioridade": "prioridade."
   }
 ]
