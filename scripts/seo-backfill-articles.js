@@ -10,13 +10,17 @@ const {
   getArticleStructuredImages
 } = require("./seo-assets");
 const { lerDimensoesImagemLocal } = require("./seo-image-dimensions");
+const {
+  authorName,
+  criarOrganizacaoSchema,
+  criarPessoaSchema,
+  siteName,
+  siteUrl
+} = require("./seo-identity");
 const { gerarResourceHints } = require("./seo-resource-hints");
 const { normalizarRobotsMeta } = require("./seo-robots");
 
 const root = process.cwd();
-const siteUrl = "https://www.andersondamasio.com.br";
-const siteName = "Anderson Damasio";
-const authorName = "Anderson Damasio";
 const rssUrl = `${siteUrl}/rss.xml`;
 
 function walk(dir, out = []) {
@@ -217,19 +221,8 @@ function buildSeoHead({ title, description, url, category, published }) {
       "dateModified": dateIso,
       "articleSection": category,
       "inLanguage": "pt-BR",
-      "author": {
-        "@type": "Person",
-        "name": authorName,
-        "url": siteUrl
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": siteName,
-        "logo": {
-          "@type": "ImageObject",
-          "url": defaultPublisherLogo
-        }
-      }
+      "author": criarPessoaSchema(),
+      "publisher": criarOrganizacaoSchema()
     },
     breadcrumb([
       { name: "Início", url: "/" },

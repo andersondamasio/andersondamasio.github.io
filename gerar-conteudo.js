@@ -27,6 +27,14 @@ const {
   normalizarCategoria
 } = require('./scripts/seo-categories');
 const { lerDimensoesImagemLocal } = require('./scripts/seo-image-dimensions');
+const {
+  authorName,
+  criarOrganizacaoSchema,
+  criarPessoaSchema,
+  criarWebSiteSchema,
+  siteName,
+  siteUrl
+} = require('./scripts/seo-identity');
 const { gerarResourceHints } = require('./scripts/seo-resource-hints');
 const { normalizarRobotsMeta } = require('./scripts/seo-robots');
 
@@ -175,11 +183,7 @@ function gerarPaginasPorCategoria(titulos) {
         "name": pageTitle,
         "description": pageDescription,
         "url": categoryUrl,
-        "isPartOf": {
-          "@type": "WebSite",
-          "name": siteName,
-          "url": siteUrl
-        }
+        "isPartOf": criarWebSiteSchema()
       },
       criarBreadcrumbJsonLd([
         { name: "Início", url: "/" },
@@ -335,11 +339,7 @@ function gerarIndiceCategorias(agrupados) {
         "name": pageTitle,
         "description": pageDescription,
         "url": absoluteUrl(pagePath),
-        "isPartOf": {
-          "@type": "WebSite",
-          "name": siteName,
-          "url": siteUrl
-        }
+        "isPartOf": criarWebSiteSchema()
       },
       criarBreadcrumbJsonLd([
         { name: "Início", url: "/" },
@@ -417,9 +417,6 @@ ${gerarFooterNavegacao("..")}
 }
 
 
-const siteUrl = "https://www.andersondamasio.com.br";
-const siteName = "Anderson Damasio";
-const authorName = "Anderson Damasio";
 const rssUrl = `${siteUrl}/rss.xml`;
 const anoInicioExperiencia = 2005;
 const anosExperiencia = new Date().getFullYear() - anoInicioExperiencia;
@@ -963,11 +960,7 @@ ${gerarSeoHead({
     "name": tituloPagina,
     "description": descricao,
     "url": absoluteUrl(origem),
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": siteName,
-      "url": siteUrl
-    }
+    "isPartOf": criarWebSiteSchema()
   }
 })}
 <meta http-equiv="refresh" content="0; url=${escapeAttribute(destinoUrl)}">
@@ -1077,11 +1070,7 @@ ${gerarSeoHead({
     "name": tituloFinal,
     "description": descricao,
     "url": absoluteUrl(local),
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": siteName,
-      "url": siteUrl
-    }
+    "isPartOf": criarWebSiteSchema()
   }
 })}
 </head>
@@ -1194,11 +1183,7 @@ ${gerarSeoHead({
     "name": titulo,
     "description": descricao,
     "url": absoluteUrl(local),
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": siteName,
-      "url": siteUrl
-    }
+    "isPartOf": criarWebSiteSchema()
   }
 })}
 </head>
@@ -1696,19 +1681,8 @@ ${gerarSeoHead({
       "dateModified": dataISO,
       "articleSection": categoria,
       "inLanguage": "pt-BR",
-      "author": {
-        "@type": "Person",
-        "name": authorName,
-        "url": siteUrl
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": siteName,
-        "logo": {
-          "@type": "ImageObject",
-          "url": defaultPublisherLogo
-        }
-      }
+      "author": criarPessoaSchema(),
+      "publisher": criarOrganizacaoSchema()
     },
     criarBreadcrumbJsonLd([
       { name: "Início", url: "/" },
@@ -1961,15 +1935,7 @@ function gerarIndicesPaginados(titulos) {
     const pageDescription = i === 0
       ? `Anderson Damasio, arquiteto de software com ${textoAnosExperiencia} de experiência em soluções modernas, escaláveis e artigos técnicos.`
       : `Página ${i + 1} da lista de artigos técnicos de Anderson Damasio sobre arquitetura de software, tecnologia e desenvolvimento.`;
-    const pessoaSchema = {
-      "@type": "Person",
-      "name": authorName,
-      "url": siteUrl,
-      "jobTitle": "Arquiteto de Software",
-      "sameAs": [
-        "https://www.linkedin.com/in/andersondamasio/"
-      ]
-    };
+    const pessoaSchema = criarPessoaSchema();
     const paginaSchema = i === 0
       ? {
           "@context": "https://schema.org",
@@ -1977,11 +1943,7 @@ function gerarIndicesPaginados(titulos) {
           "name": pageTitle,
           "description": pageDescription,
           "url": absoluteUrl(pagePath),
-          "isPartOf": {
-            "@type": "WebSite",
-            "name": siteName,
-            "url": siteUrl
-          },
+          "isPartOf": criarWebSiteSchema(),
           "mainEntity": pessoaSchema
         }
       : {
@@ -1990,11 +1952,7 @@ function gerarIndicesPaginados(titulos) {
           "name": pageTitle,
           "description": pageDescription,
           "url": absoluteUrl(pagePath),
-          "isPartOf": {
-            "@type": "WebSite",
-            "name": siteName,
-            "url": siteUrl
-          },
+          "isPartOf": criarWebSiteSchema(),
           "about": pessoaSchema
         };
 
@@ -2015,10 +1973,7 @@ ${gerarSeoHead({
     paginaSchema,
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": siteName,
-      "url": siteUrl,
-      "inLanguage": "pt-BR"
+      ...criarWebSiteSchema()
     }
   ]
 })}

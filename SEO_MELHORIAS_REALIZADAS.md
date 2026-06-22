@@ -541,6 +541,22 @@ A auditoria estrita agora falha se encontrar:
 - Imagens seguintes de artigo sem `loading="lazy"`.
 - Scripts de terceiros conhecidos sem `preconnect`/`dns-prefetch`.
 
+### Entidade do autor e E-E-A-T tecnico
+
+Foi criada a centralizacao de identidade em `scripts/seo-identity.js`.
+
+Esse helper define, em um unico lugar:
+
+- `Person` canonico do Anderson Damasio com `@id`.
+- URL do perfil interno em `/sobre.html`.
+- `sameAs` apontando para o LinkedIn ja publicado no site.
+- `Organization` do site com `@id`, URL e logo.
+- `WebSite` com `@id`, idioma e publisher.
+
+Os artigos (`BlogPosting`) agora usam essa entidade canônica no campo `author`, e o publisher tambem passou a ser gerado pelo helper. A home, listagens, paginas estaticas e paginas de compatibilidade tambem passaram a reutilizar o mesmo `WebSite`/`Organization`.
+
+A auditoria estrita agora falha se um `BlogPosting` indexavel nao tiver o autor conectado ao `@id` canonico e ao `sameAs` esperado.
+
 ### Workflow automatico dos proximos artigos
 
 O workflow horario `.github/workflows/gerar-html.yml`, responsavel por gerar e commitar novos artigos, foi ajustado para reduzir risco de travamento e garantir que os proximos conteudos passem pelo mesmo pipeline de SEO.
@@ -580,6 +596,7 @@ Resultado:
 - Nenhuma imagem local sem `width` e `height`.
 - Nenhuma primeira imagem de artigo sem `fetchpriority="high"`.
 - Nenhuma imagem adicional de artigo sem `loading="lazy"`.
+- Nenhum `BlogPosting` sem identidade canônica do autor (`@id` + `sameAs`).
 - Nenhum link interno quebrado.
 - Nenhuma URL `noindex` no sitemap.
 - Nenhum problema em `robots.txt`.

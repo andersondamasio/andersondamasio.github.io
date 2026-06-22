@@ -16,6 +16,7 @@ const {
   normalizarHostResourceHint
 } = require("./seo-resource-hints");
 const { arquivoLocalImagem } = require("./seo-image-dimensions");
+const { authorId, authorSameAs } = require("./seo-identity");
 const { robotsTemPreviewAmplo } = require("./seo-robots");
 
 const root = process.cwd();
@@ -244,6 +245,15 @@ function findProfilePageWithoutMainEntity(value, out = []) {
   return out;
 }
 
+function authorHasLinkedIdentity(author) {
+  const authors = Array.isArray(author) ? author : [author];
+  return authors.some(item => {
+    if (!item || typeof item !== "object") return false;
+    const sameAs = Array.isArray(item.sameAs) ? item.sameAs : [];
+    return item["@id"] === authorId && authorSameAs.every(url => sameAs.includes(url));
+  });
+}
+
 function pushExample(bucket, value) {
   if (bucket.length < maxExamples) bucket.push(value);
 }
@@ -278,6 +288,7 @@ const stats = {
   missingResourceHints: [],
   missingJsonLd: [],
   articleJsonLdMissingImageVariants: [],
+  articleAuthorMissingLinkedIdentity: [],
   imagesWithoutAlt: [],
   imagesWithoutAsyncDecoding: [],
   imagesWithoutDimensions: [],
@@ -492,6 +503,9 @@ for (const file of walk(root)) {
         if (!hasAllDefaultVariants) {
           pushExample(stats.articleJsonLdMissingImageVariants, fileRel);
         }
+        if (!authorHasLinkedIdentity(item.author)) {
+          pushExample(stats.articleAuthorMissingLinkedIdentity, fileRel);
+        }
       }
     }
   });
@@ -638,6 +652,7 @@ const report = {
     missingResourceHints: stats.missingResourceHints,
     missingJsonLd: stats.missingJsonLd,
     articleJsonLdMissingImageVariants: stats.articleJsonLdMissingImageVariants,
+    articleAuthorMissingLinkedIdentity: stats.articleAuthorMissingLinkedIdentity,
     imagesWithoutAlt: stats.imagesWithoutAlt,
     imagesWithoutAsyncDecoding: stats.imagesWithoutAsyncDecoding,
     imagesWithoutDimensions: stats.imagesWithoutDimensions,

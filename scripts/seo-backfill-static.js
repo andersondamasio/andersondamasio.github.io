@@ -7,11 +7,16 @@ const {
   defaultSeoImageHeight
 } = require("./seo-assets");
 const { gerarResourceHints } = require("./seo-resource-hints");
+const {
+  criarOrganizacaoSchema,
+  criarPessoaSchema,
+  criarWebSiteSchema,
+  siteName,
+  siteUrl
+} = require("./seo-identity");
 const { normalizarRobotsMeta } = require("./seo-robots");
 
 const root = process.cwd();
-const siteUrl = "https://www.andersondamasio.com.br";
-const siteName = "Anderson Damasio";
 const rssUrl = `${siteUrl}/rss.xml`;
 const anoInicioExperiencia = 2005;
 const anosExperiencia = new Date().getFullYear() - anoInicioExperiencia;
@@ -116,11 +121,9 @@ function buildSeo(page) {
     "name": page.title,
     "description": page.description,
     "url": url,
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": siteName,
-      "url": siteUrl
-    }
+    "isPartOf": criarWebSiteSchema(),
+    "publisher": criarOrganizacaoSchema(),
+    ...(page.file === "sobre.html" ? { "about": criarPessoaSchema() } : {})
   };
 
   return `<title>${escapeHtml(page.title)}</title>
