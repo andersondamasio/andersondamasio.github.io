@@ -305,6 +305,7 @@ O `scripts/seo-audit.js` agora tambem verifica:
 - Duplicidades apenas em paginas indexaveis, ignorando aliases e noindex.
 - Paginas de categoria indexaveis com nome invalido, como `Categoria`, `rdf:type` ou conteudo com HTML.
 - Categorias pequenas indexaveis com menos de 3 artigos.
+- Instrucoes no gerador que pecam erros ortograficos propositais ou reativem o modulo antigo de erros.
 
 Tambem foi criado o `scripts/normalize-title-categories.js`, que corrige o campo `categoria` em `titulos.json` usando a mesma taxonomia do gerador.
 
@@ -427,6 +428,17 @@ Com isso:
 
 Essa regra evita que os artigos gerados automaticamente criem novas categorias soltas ou paginas finas sem relevancia suficiente para busca.
 
+### Qualidade editorial do gerador
+
+O prompt do gerador foi revisado para pedir texto natural, autoral e tecnicamente confiavel, sem erros ortograficos propositais.
+
+Tambem foram removidos os arquivos antigos usados para inserir erros artificiais:
+
+- `dados/selecionar-errorsMaps.js`
+- `dados/erros_usados.json`
+
+A auditoria estrita agora falha se o gerador voltar a pedir erros ortograficos ou importar o modulo antigo de erros. Isso protege os proximos artigos automaticos contra um padrao que poderia reduzir confianca, legibilidade e qualidade percebida.
+
 ### Resultado da validacao final
 
 Em 22/06/2026, o comando abaixo foi executado com sucesso:
@@ -453,6 +465,7 @@ Resultado:
 - Nenhuma paginacao profunda indexavel.
 - Nenhuma categoria invalida indexavel.
 - Nenhuma categoria fina indexavel.
+- Nenhuma instrucao ativa no gerador pedindo erros ortograficos propositais.
 - Nenhum erro restante de `ProfilePage` sem `mainEntity`.
 - `git diff --check` sem problemas de whitespace apos o rebuild completo.
 

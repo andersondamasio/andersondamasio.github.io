@@ -13,7 +13,6 @@ marked.setOptions({
 
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { extrairResumoDaNoticia, extrairResumoDaNoticiaReadability } = require('./scripts/extrairResumoDaNoticia');
-const { errorsMaps } = require('./dados/selecionar-errorsMaps');
 const {
   defaultSeoImage,
   defaultPublisherLogo,
@@ -27,7 +26,6 @@ const {
   minArtigosCategoriaIndexavel,
   normalizarCategoria
 } = require('./scripts/seo-categories');
-const errosUsadosPath = './dados/erros_usados.json';
 
 const parser = new Parser({
   requestOptions: {
@@ -45,119 +43,6 @@ function normalizarConteudoTexto(conteudo) {
 function escreverArquivoTexto(arquivo, conteudo) {
   fs.writeFileSync(arquivo, normalizarConteudoTexto(conteudo));
 }
-
-const ERROS_HISTORICO_MAX = 20;
-
-function lerErrosUsados() {
-  if (!fs.existsSync(errosUsadosPath)) return [];
-  try {
-    const arr = JSON.parse(fs.readFileSync(errosUsadosPath, "utf-8"));
-    return Array.isArray(arr) ? arr : [];
-  } catch {
-    return [];
-  }
-}
-function salvarErrosUsados(novosErros) {
-  // Lê o histórico, adiciona o novo, mantém no máximo 20
-  let historico = lerErrosUsados();
-  historico.push(novosErros);
-  if (historico.length > ERROS_HISTORICO_MAX) {
-    historico = historico.slice(-ERROS_HISTORICO_MAX);
-  }
-  escreverArquivoTexto(errosUsadosPath, JSON.stringify(historico, null, 2));
-}
-
-function inserirErrosOrtograficosSutis(texto) {
-  const errosMap = errorsMaps;
-
-  let blocos = texto.split(/(<[^>]+>)/g);
-  let textoIdxs = blocos
-    .map((t, i) => (t.startsWith('<') ? null : i))
-    .filter(i => i !== null);
-
-  let todasPalavras = [];
-  textoIdxs.forEach(idx => {
-    const palavras = blocos[idx]
-      .split(/\b/)
-      .filter(p => /^[a-zA-Zãõáéíóúàâêôçü-]{4,}$/.test(p.normalize("NFD").replace(/[\u0300-\u036f]/g, "")));
-    todasPalavras.push(...palavras);
-  });
-  if (todasPalavras.length < 6) return texto;
-
-  const meio = todasPalavras.slice(Math.floor(todasPalavras.length * 0.15), Math.floor(todasPalavras.length * 0.85));
-  let candidatos = meio.filter(p => errosMap[p.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()]);
-  if (candidatos.length < 3) {
-    candidatos = todasPalavras.filter(p => errosMap[p.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()]);
-  }
-
-  // Evita repetir palavras do último artigo
-let errosHistorico = lerErrosUsados();
-let palavrasJaUsadas = [];
-errosHistorico.forEach(obj => {
-  palavrasJaUsadas.push(...Object.keys(obj));
-});
-palavrasJaUsadas = [...new Set(palavrasJaUsadas)];
-
-  let candidatosFiltrados = candidatos.filter(p =>
-    !palavrasJaUsadas.includes(p.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase())
-  );
-
-  let escolhidas = [];
-  while (escolhidas.length < 3 && candidatosFiltrados.length) {
-    let idx = Math.floor(Math.random() * candidatosFiltrados.length);
-    if (!escolhidas.includes(candidatosFiltrados[idx])) {
-      escolhidas.push(candidatosFiltrados[idx]);
-    }
-    candidatosFiltrados.splice(idx, 1);
-  }
-
-  if (escolhidas.length < 3) {
-    let faltam = 3 - escolhidas.length;
-    while (faltam-- && candidatos.length) {
-      let idx = Math.floor(Math.random() * candidatos.length);
-      if (!escolhidas.includes(candidatos[idx])) {
-        escolhidas.push(candidatos[idx]);
-      }
-      candidatos.splice(idx, 1);
-    }
-  }
-
-  let usadasEsteArtigo = {};
-  escolhidas.forEach(word => {
-    const base = word.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-    const erroOpcoes = errosMap[base];
-    let erro;
-// Pega o último artigo do histórico (pode ser undefined se vazio)
-let ultimoErros = errosHistorico.length ? errosHistorico[errosHistorico.length - 1] : {};
-
-if (ultimoErros[base]) {
-  const restantes = erroOpcoes.filter(e => e !== ultimoErros[base]);
-  erro = restantes.length > 0
-    ? restantes[Math.floor(Math.random() * restantes.length)]
-    : erroOpcoes[Math.floor(Math.random() * erroOpcoes.length)];
-} else {
-  erro = erroOpcoes[Math.floor(Math.random() * erroOpcoes.length)];
-}
-
-    usadasEsteArtigo[base] = erro;
-   let erroSubstituido = false;
-   blocos = blocos.map((bl, i) => {
-  if (!textoIdxs.includes(i)) return bl;
-  if (erroSubstituido) return bl;
-  // Substitui só a primeira ocorrência no bloco
-  if (bl.includes(word)) {
-    erroSubstituido = true;
-    return bl.replace(new RegExp("\\b" + word + "\\b"), erro);
-  }
-  return bl;
-});
-
-  });
-
-  salvarErrosUsados(usadasEsteArtigo);
-  return blocos.join('');
-}
-
 
 function slugify(str) {
   if (!str || typeof str !== "string") return "artigo";
@@ -1624,11 +1509,6 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 
 **O que você deve produzir:**
 
-IMPORTANTE:
-- Só escreva o conteúdo se conseguir inserir erros ortográficos leves e naturais.
-LEMBRE-SE: Se não conseguir inserir erros ortográficos, NÃO produza o texto.
-
-
 1. Um **título original e criativo**, em português, inspirado na notícia, mas:
    - Sem tradução literal, use palavras diferentes sem distorcer a original.
    - Com estilo natural para o público brasileiro de tecnologia.
@@ -1639,7 +1519,7 @@ LEMBRE-SE: Se não conseguir inserir erros ortográficos, NÃO produza o texto.
    - Uma explicação técnica clara e aprofundada sobre o tema.
    - Dicas avançadas que mostrem domínio prático, indo além do básico.
    - Uma conclusão com reflexões ou recomendações suas.
-   - Escreva com alguns erros de ortografia sutis.
+   - Texto revisado, claro e sem erros ortográficos propositais.
 
 3. Ao longo do artigo, use marcações HTML semânticas para melhorar o SEO:
 - Use <h2> apenas para títulos principais de seções (ex: Introdução, Conclusão, Dicas, etc).
@@ -1664,18 +1544,17 @@ Exemplo de categoria: |Segurança|
 
 *Regras importantes a seguir no conteúdo*
 - **Evite qualquer estrutura repetitiva, previsível ou padrão de respostas típicas de IA**.
-- Utilize *erros ou gírias leves*, frases de efeito ou construções que soem autênticas e pessoais, incluindo observações subjetivas e experiências reais quando cabível.
+- Utilize linguagem natural, frases de efeito moderadas ou construções que soem autênticas e pessoais, incluindo observações subjetivas e experiências reais quando cabível.
 - Intercale períodos curtos e longos, utilize pausas com reticências, perguntas retóricas e comentários próprios.
-- Evite frases perfeitas demais; permita pequenas quebras de estilo, repetições naturais e uso espontâneo de conectivos.
+- Evite tom genérico ou perfeito demais; permita variação de ritmo, repetições naturais e uso espontâneo de conectivos, mas preserve correção gramatical.
 - Evite iniciar frases como "Nos últimos anos".
 - Ao trazer exemplos, busque analogias práticas, histórias rápidas, curiosidades ou opiniões pessoais, mesmo que breves.
 - Sempre insira pelo menos uma frase que traga uma visão ou comentário seu, como se estivesse realmente opinando sobre o tema.
 - Não inicie com “Título:” ou similares. Apenas escreva o título direto na primeira linha.
 - Pule uma linha e inicie o artigo.
-- O conteúdo deve parecer escrito por um humano experiente, com estilo natural, fluente e levemente opinativo, porém pode eventuamente cometer erros sutis de ortografia.
+- O conteúdo deve parecer escrito por um humano experiente, com estilo natural, fluente, levemente opinativo e tecnicamente confiável.
 - O conteúdo deve ser retornado já com **HTML semântico completo**, sem usar **asteriscos** ou sintaxe de Markdown.
-
-- **IMPORTANTE:** é obrigatório que o texto possua erros ortográficos leves e naturais.`;
+`;
 
  console.error("DEBUG: PROMPT:", prompt);
  console.error("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");

@@ -228,7 +228,8 @@ const stats = {
   profilePageMissingMainEntity: [],
   deepPaginationIndexable: [],
   invalidCategoryPages: [],
-  thinCategoryPagesIndexable: []
+  thinCategoryPagesIndexable: [],
+  generatorQualityPromptIssues: []
 };
 
 const titles = new Map();
@@ -236,6 +237,22 @@ const descriptions = new Map();
 const canonicals = new Map();
 const robotsByFile = new Map();
 const indexableCanonicalByFile = new Map();
+
+const generatorPath = path.join(root, "gerar-conteudo.js");
+if (fs.existsSync(generatorPath)) {
+  const generatorSource = fs.readFileSync(generatorPath, "utf8");
+  const qualityPromptPatterns = [
+    { label: "prompt pede erros ortográficos", pattern: /(?:inserir|possua|cometer|escreva\s+com)[\s\S]{0,80}erros?\s+(?:ortogr[aá]ficos?|de\s+ortografia)/i },
+    { label: "prompt exige erros como condição", pattern: /se\s+n[aã]o\s+conseguir[\s\S]{0,80}erros?\s+(?:ortogr[aá]ficos?|de\s+ortografia)/i },
+    { label: "módulo antigo de erros ortográficos importado", pattern: /selecionar-errorsMaps|inserirErrosOrtograficos|errosUsadosPath/i }
+  ];
+
+  for (const item of qualityPromptPatterns) {
+    if (item.pattern.test(generatorSource)) {
+      pushExample(stats.generatorQualityPromptIssues, item.label);
+    }
+  }
+}
 
 for (const file of walk(root)) {
   if (isVerificationFile(file)) continue;
@@ -497,7 +514,8 @@ const report = {
     profilePageMissingMainEntity: stats.profilePageMissingMainEntity,
     deepPaginationIndexable: stats.deepPaginationIndexable,
     invalidCategoryPages: stats.invalidCategoryPages,
-    thinCategoryPagesIndexable: stats.thinCategoryPagesIndexable
+    thinCategoryPagesIndexable: stats.thinCategoryPagesIndexable,
+    generatorQualityPromptIssues: stats.generatorQualityPromptIssues
   },
   duplicates: {
     titles: summarizeDuplicates(titles),
