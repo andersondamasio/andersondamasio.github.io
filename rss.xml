@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 22 Jun 2026 10:43:17 GMT</lastBuildDate>
+<lastBuildDate>Mon, 22 Jun 2026 15:56:59 GMT</lastBuildDate>
+<item>
+<title>A nova joia da Apple: MacBook Air M3 e suas vantagens para desenvolvedores</title>
+<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-joia-da-apple-macbook-air-m3-e-suas-vantagens-para-desenvolvedores.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-joia-da-apple-macbook-air-m3-e-suas-vantagens-para-desenvolvedores.html</guid>
+<pubDate>Mon, 22 Jun 2026 15:56:59 GMT</pubDate>
+<category>Tecnologia</category>
+<description>Com a chegada do MacBook Air M3, as coisas ficaram bem interessantes para quem trabalha com tecnologia. Recentemente, li que ele está em promoção, e a...</description>
+</item>
 <item>
 <title>Aproveitando as Ofertas de Verão: Como a Arquitetura de Software Pode Potencializar Suas Compras</title>
 <link>https://www.andersondamasio.com.br/artigos/tecnologia/aproveitando-as-ofertas-de-verao-como-a-arquitetura-de-software-pode-potencializar-suas-compras.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Mon, 08 Jun 2026 18:17:12 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Estamos em um momento empolgante no universo da tecnologia, principalmente para os usuários de iPhone. A Apple anunciou o lançamento do iOS 27 durante a...</description>
-</item>
-<item>
-<title>A arte de descomplicar URLs: como o Pinterest otimiza a deduplicação de conteúdo</title>
-<link>https://www.andersondamasio.com.br/artigos/programacao/a-arte-de-descomplicar-urls-como-o-pinterest-otimiza-a-deduplicacao-de-conteudo.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/programacao/a-arte-de-descomplicar-urls-como-o-pinterest-otimiza-a-deduplicacao-de-conteudo.html</guid>
-<pubDate>Mon, 08 Jun 2026 14:54:59 GMT</pubDate>
-<category>Programação</category>
-<description>Recentemente, li uma notícia bem interessante sobre como o Pinterest está lidando com um problema que, a princípio, pode parecer simples, mas que se torna...</description>
 </item>
 </channel>
 </rss>
