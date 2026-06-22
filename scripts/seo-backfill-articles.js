@@ -7,6 +7,7 @@ const siteUrl = "https://www.andersondamasio.com.br";
 const siteName = "Anderson Damasio";
 const authorName = "Anderson Damasio";
 const defaultSeoImage = `${siteUrl}/images/capa_anderson-damasio.png`;
+const rssUrl = `${siteUrl}/rss.xml`;
 
 function walk(dir, out = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -86,6 +87,45 @@ function trimSeo(value, max = 160) {
   return `${cut.slice(0, lastSpace > 90 ? lastSpace : cut.length).trim()}...`;
 }
 
+function trimSeoTitlePart(value, max = 70) {
+  const text = String(value || "").replace(/\s+/g, " ").trim();
+  if (text.length <= max) return text;
+  if (max < 24) return trimSeo(text, max);
+
+  const tailSize = Math.min(24, Math.max(14, Math.floor(max * 0.38)));
+  const headSize = max - tailSize - 4;
+  const head = text.slice(0, headSize).replace(/\s+\S*$/, "").trim();
+  const tail = text.slice(-tailSize).replace(/^\S+\s+/, "").trim();
+  const title = `${head}... ${tail}`.trim();
+
+  return title.length <= max ? title : trimSeo(text, max);
+}
+
+function trimSeoTitle(value, max = 70) {
+  const text = String(value || "").replace(/\s+/g, " ").trim();
+  if (text.length <= max) return text;
+
+  const parts = text.split(/\s+\|\s+/);
+  if (parts.length > 1) {
+    const suffix = ` | ${parts.slice(1).join(" | ")}`;
+    const titleMax = max - suffix.length;
+    if (titleMax >= 24) {
+      return `${trimSeoTitlePart(parts[0], titleMax)}${suffix}`;
+    }
+  }
+
+  return trimSeoTitlePart(text, max);
+}
+
+function isPlaceholderTitle(value) {
+  return /^t[ií]tulo:?$/i.test(String(value || "").trim());
+}
+
+function buildPageTitle(title, category) {
+  const categoryPart = category && !/^artigos$/i.test(category) ? `${category} | ` : "";
+  return trimSeoTitle(`${title} | ${categoryPart}${siteName}`, 140);
+}
+
 function buildDescription(text, title) {
   const clean = cleanText(text);
   const invalid =
@@ -143,7 +183,7 @@ function breadcrumb(items) {
 }
 
 function buildSeoHead({ title, description, url, category, published }) {
-  const pageTitle = trimSeo(`${title} | ${siteName}`, 70);
+  const pageTitle = buildPageTitle(title, category);
   const pageDescription = buildDescription(description, title);
   const pageUrl = absoluteUrl(url);
   const publishedDate = published ? new Date(published) : null;
@@ -194,6 +234,7 @@ function buildSeoHead({ title, description, url, category, published }) {
 <meta name="author" content="${escapeAttribute(authorName)}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="${escapeAttribute(pageUrl)}">
+<link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="${escapeAttribute(siteName)}">
 <meta property="og:type" content="article">
@@ -222,6 +263,7 @@ function collectHeadAssets(head) {
     for (const match of head.matchAll(pattern)) {
       const value = match[0];
       if (/rel=["']canonical["']/i.test(value)) continue;
+      if (/rel=["']alternate["']/i.test(value) && /application\/rss\+xml/i.test(value)) continue;
       if (/application\/ld\+json/i.test(value)) continue;
       assets.push(value.trim());
     }
@@ -288,14 +330,19 @@ for (const file of walk(root)) {
   }
 
   const $ = cheerio.load(html);
+  const robots = ($('meta[name="robots" i]').attr("content") || "").trim();
+  if (/noindex/i.test(robots) || $('meta[http-equiv="refresh" i]').length) continue;
   if (isCollectionPage($, fileRel)) continue;
 
   const h1 = $("h1").first().text().trim();
   const currentTitle = $("title").first().text().replace(/\s*\|\s*Anderson Damasio$/i, "").replace(/\s*[–-]\s*Artigo Técnico por Anderson Damasio$/i, "").trim();
+  if (isPlaceholderTitle(h1) || isPlaceholderTitle(currentTitle)) continue;
+
   const inferredTitle = h1 || currentTitle || slugToTitle(path.basename(fileRel));
-  const meta = byUrl.get(normalizeLocalUrl(fileRel)) || byTitle.get(normalizeText(inferredTitle));
-  const title = meta?.titulo || inferredTitle;
-  const category = inferCategory(fileRel, meta);
+  const metaByUrl = byUrl.get(normalizeLocalUrl(fileRel));
+  const metaByTitle = byTitle.get(normalizeText(inferredTitle));
+  const title = metaByUrl?.titulo || inferredTitle;
+  const category = inferCategory(fileRel, metaByUrl);
   const articleText = $(".article-body").text() || $("main").text() || $("body").text();
   const currentDescription = $('meta[name="description" i]').attr("content") || "";
   const descriptionSource = cleanText(articleText).length >= 70 ? articleText : currentDescription || title;
@@ -304,7 +351,7 @@ for (const file of walk(root)) {
     description: descriptionSource,
     url: fileRel,
     category,
-    published: meta?.data
+    published: metaByUrl?.data || metaByTitle?.data
   });
 
   const updatedHtml = html

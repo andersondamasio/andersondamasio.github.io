@@ -5,6 +5,7 @@ const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
 const siteName = "Anderson Damasio";
 const defaultSeoImage = `${siteUrl}/images/capa_anderson-damasio.png`;
+const rssUrl = `${siteUrl}/rss.xml`;
 const anoInicioExperiencia = 2005;
 const anosExperiencia = new Date().getFullYear() - anoInicioExperiencia;
 const textoAnosExperiencia = `mais de ${anosExperiencia} anos`;
@@ -83,6 +84,7 @@ function collectHeadAssets(head) {
     for (const match of head.matchAll(pattern)) {
       const value = match[0];
       if (/rel=["']canonical["']/i.test(value)) continue;
+      if (/rel=["']alternate["']/i.test(value) && /application\/rss\+xml/i.test(value)) continue;
       if (/application\/ld\+json/i.test(value)) continue;
       assets.push(value.trim());
     }
@@ -111,6 +113,7 @@ function buildSeo(page) {
 <meta name="author" content="${escapeAttribute(siteName)}">
 <meta name="robots" content="${escapeAttribute(page.robots)}">
 <link rel="canonical" href="${escapeAttribute(url)}">
+<link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="${escapeAttribute(siteName)}">
 <meta property="og:type" content="website">

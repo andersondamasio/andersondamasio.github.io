@@ -2,6 +2,8 @@
 
 Data: 06/05/2026
 
+Ultima atualizacao: 22/06/2026
+
 Este documento resume o processo de melhoria, rebuild e aplicacao de SEO feito no projeto do site/blog Anderson Damasio.
 
 ## Objetivo
@@ -232,3 +234,126 @@ npm run seo:audit
 ```
 
 Assim o projeto mantem um padrao unico de SEO, reduz trabalho manual e evita que novas paginas sejam publicadas sem os metadados essenciais.
+
+---
+
+## Atualizacao de 22/06/2026
+
+Depois da analise no Google Search Console, foram feitos ajustes adicionais para resolver problemas de indexacao em escala, considerando que os artigos sao gerados automaticamente.
+
+### Dados considerados do Search Console
+
+- 1 clique e 258 impressoes nos ultimos 3 meses.
+- CTR de 0,4% e posicao media de 17,2.
+- 1.971 paginas indexadas.
+- 8.688 paginas nao indexadas.
+- 1.306 URLs com 404, principalmente caminhos antigos sem `/artigos/`.
+- 4.528 URLs rastreadas, mas nao indexadas.
+- 2.846 URLs descobertas, mas ainda nao rastreadas.
+- Sitemap processado em 22/06/2026.
+- Erro de dado estruturado `ProfilePage` sem `mainEntity` na home.
+
+### Ajustes novos no gerador
+
+O arquivo `gerar-conteudo.js` passou a centralizar uma etapa de publicacao SEO:
+
+- Gera apenas listagens indexaveis para as primeiras paginas de home/categorias.
+- Marca paginacoes profundas como `noindex, follow`.
+- Remove paginacoes profundas do `sitemap.xml`.
+- Cria paginas de compatibilidade para URLs antigas, com `noindex, follow`, canonical para a URL correta e meta refresh.
+- Cria pagina de compatibilidade para `politica-de-privacidade.html`, apontando para `politica.html`.
+- Corrige links internos antigos para politica de privacidade.
+- Impede que arquivos invalidos, vazios, noindex ou com titulo placeholder entrem no sitemap.
+- Remove a insercao intencional de erros ortograficos nos artigos novos.
+- Converte `h1` dentro do corpo do artigo em `h2`, mantendo apenas um `h1` por pagina.
+- Ajusta `ProfilePage` da home para incluir `mainEntity`.
+- Diferencia titulos SEO longos usando mais contexto e categoria, evitando duplicidade.
+
+### Ajustes nos scripts
+
+O `scripts/seo-backfill-articles.js` agora:
+
+- Ignora paginas `noindex` e aliases com meta refresh.
+- Ignora artigos com titulo placeholder como `Titulo:`.
+- Usa a categoria do caminho do arquivo quando o `titulos.json` tem artigos com o mesmo titulo.
+- Reconstroi os titulos SEO antigos com mais contexto para evitar duplicidade.
+
+O `scripts/seo-audit.js` agora tambem verifica:
+
+- Links internos quebrados.
+- Links legados para `politica-de-privacidade.html`.
+- URLs `noindex` dentro do sitemap.
+- Limite maximo de tamanho/quantidade de URLs do sitemap.
+- Existencia de `robots.txt` apontando para o sitemap.
+- Existencia de `rss.xml`, itens do feed e links validos/indexaveis.
+- Link `<link rel="alternate" type="application/rss+xml">` em paginas indexaveis.
+- `ProfilePage` sem `mainEntity`.
+- Paginacoes profundas que continuam indexaveis.
+- Duplicidades apenas em paginas indexaveis, ignorando aliases e noindex.
+
+### RSS e descoberta de conteudo
+
+Foi adicionada a geracao automatica de `rss.xml` com os 100 artigos publicaveis mais recentes.
+
+O feed inclui:
+
+- Titulo do artigo.
+- Link canonico.
+- GUID canonico.
+- Data de publicacao.
+- Categoria.
+- Descricao baseada na meta description do artigo.
+
+As paginas geradas e os backfills de artigos/estaticas tambem passaram a incluir:
+
+```html
+<link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
+```
+
+### Comando de manutencao
+
+Foi adicionado o comando unico:
+
+```bash
+npm run seo:maintain
+```
+
+Ele executa:
+
+```bash
+npm run seo:backfill
+npm run seo:backfill:static
+npm run seo:rebuild
+npm run seo:audit:strict
+```
+
+Este passa a ser o fluxo recomendado antes de publicar alteracoes de SEO ou novos lotes de artigos.
+
+O workflow `.github/workflows/gerar-html.yml` tambem foi atualizado para executar `npm run seo:maintain` antes de commitar artigos novos. Assim, se alguma regra de SEO quebrar, a automacao falha antes de publicar.
+
+### Resultado da validacao final
+
+Em 22/06/2026, o comando abaixo foi executado com sucesso:
+
+```bash
+npm run seo:maintain
+```
+
+Resultado:
+
+- 17.421 arquivos HTML auditados.
+- 7.794 artigos considerados publicaveis/indexaveis.
+- 7.856 URLs no sitemap.
+- 100 artigos recentes no `rss.xml`.
+- Nenhum `title`, `description`, `canonical`, `h1`, Open Graph, Twitter Card ou JSON-LD ausente.
+- Nenhum link interno quebrado.
+- Nenhuma URL `noindex` no sitemap.
+- Nenhum problema em `robots.txt`.
+- Nenhum problema no `rss.xml`.
+- Nenhuma duplicidade de `title`, `description` ou `canonical` em paginas indexaveis.
+- Nenhuma paginacao profunda indexavel.
+- Nenhum erro restante de `ProfilePage` sem `mainEntity`.
+
+### Observacao importante
+
+Como o site e estatico, as URLs antigas foram tratadas com paginas de compatibilidade `noindex` em vez de redirects 301 reais. Se a hospedagem permitir regras de redirect, o proximo passo tecnico ideal e trocar esses aliases por redirects 301 no servidor/CDN.

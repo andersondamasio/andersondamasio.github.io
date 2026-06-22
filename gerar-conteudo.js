@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const axios = require('axios');
 const Parser = require('rss-parser');
 const { marked } = require('marked'); // Conversão de markdown para HTML
@@ -263,10 +264,10 @@ function gerarGoogleAnalyticsTag(gaId = 'G-T15623VZYE') {
 }
 
 function gerarPaginasPorCategoria(titulos) {
-  const artigosPorPagina = 10;
   const agrupados = {};
+  const paginasGeradas = new Set();
 
-  for (const artigo of titulos) {
+  for (const artigo of prepararArtigosPublicaveis(titulos)) {
     const cat = artigo.categoria || "Outros";
     if (!agrupados[cat]) agrupados[cat] = [];
     agrupados[cat].push(artigo);
@@ -283,21 +284,14 @@ function gerarPaginasPorCategoria(titulos) {
       const paginaArtigos = artigos.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
 
       const links = paginaArtigos.map(t => {
-        const slug = slugify(t.titulo);
-        const url = t.url || `artigos/${slug}.html`;
-        return `<li><a href="../${url}">${t.titulo}</a></li>`;
+        return `<li><a href="../${t.url}">${escapeHTML(t.titulo)}</a></li>`;
       }).join("\n");
 
-      const paginacao = paginas > 1
-        ? `
-<div class="scroll-container">
-  ${Array.from({ length: paginas }).map((_, idx) => {
-    const nomePagina = idx === 0 ? `${slugCat}.html` : `${slugCat}${idx + 1}.html`;
-    const ativa = idx === i ? 'active' : '';
-    return `<a href="${nomePagina}" class="${ativa}">Página ${idx + 1}</a>`;
-  }).join('')}
-</div>`
-        : '';
+      const paginacao = criarPaginacaoCompacta(
+        paginas,
+        i,
+        idx => idx === 0 ? `${slugCat}.html` : `${slugCat}${idx + 1}.html`
+      );
 
       const pagePath = `artigos/${slugCat}${i === 0 ? '' : (i + 1)}.html`;
       const pageTitle = i === 0
@@ -317,6 +311,7 @@ function gerarPaginasPorCategoria(titulos) {
     title: pageTitle,
     description: pageDescription,
     canonicalPath: pagePath,
+    robots: paginaListagemIndexavel(i) ? "index, follow" : "noindex, follow",
     structuredData: [
       {
         "@context": "https://schema.org",
@@ -406,6 +401,7 @@ function gerarPaginasPorCategoria(titulos) {
       background-color: var(--link);
       color: var(--main-bg);
     }
+    .pagination-gap { color: var(--footer); padding: 6px 2px; }
   </style>
   ${gerarGoogleAnalyticsTag()}
 </head>
@@ -435,10 +431,13 @@ function gerarPaginasPorCategoria(titulos) {
 
       const filename = `artigos/${slugCat}${i === 0 ? '' : (i + 1)}.html`;
       fs.writeFileSync(filename, html);
+      paginasGeradas.add(filename.replace(/\\/g, "/"));
     }
   }
 
   gerarIndiceCategorias(agrupados);
+  paginasGeradas.add("artigos/index.html");
+  return paginasGeradas;
 }
 
 
@@ -566,12 +565,22 @@ const siteUrl = "https://www.andersondamasio.com.br";
 const siteName = "Anderson Damasio";
 const authorName = "Anderson Damasio";
 const defaultSeoImage = `${siteUrl}/images/capa_anderson-damasio.png`;
+const rssUrl = `${siteUrl}/rss.xml`;
 const anoInicioExperiencia = 2005;
 const anosExperiencia = new Date().getFullYear() - anoInicioExperiencia;
 const textoAnosExperiencia = `mais de ${anosExperiencia} anos`;
 const apiKey = process.env.OPENAI_API_KEY;
 const twitterBearer = process.env.TWITTER_BEARER_TOKEN;
 const artigosPorPagina = 10;
+const paginasListagemIndexaveis = 3;
+const paginasListagemNoSitemap = 3;
+const gerarAliasesLegados = true;
+const aliasesEstaticosLegados = [
+  { origem: "politica-de-privacidade.html", destino: "politica.html", titulo: "Política de Privacidade" },
+  { origem: "artigos/artigos.html", destino: "artigos/index.html", titulo: "Artigos" },
+  { origem: "categoria/index.html", destino: "artigos/index.html", titulo: "Artigos" },
+  { origem: "artigos/categoria/index.html", destino: "artigos/index.html", titulo: "Artigos" }
+];
 
 function escapeAttribute(value) {
   return String(value || "")
@@ -648,6 +657,36 @@ function limitarTextoSeo(texto, max = 160) {
   return `${corte.slice(0, ultimoEspaco > 90 ? ultimoEspaco : corte.length).trim()}...`;
 }
 
+function limitarTrechoTituloSeo(texto, max = 70) {
+  const limpo = String(texto || "").replace(/\s+/g, " ").trim();
+  if (limpo.length <= max) return limpo;
+  if (max < 24) return limitarTextoSeo(limpo, max);
+
+  const tamanhoFinal = Math.min(24, Math.max(14, Math.floor(max * 0.38)));
+  const tamanhoInicio = max - tamanhoFinal - 4;
+  const inicio = limpo.slice(0, tamanhoInicio).replace(/\s+\S*$/, "").trim();
+  const fim = limpo.slice(-tamanhoFinal).replace(/^\S+\s+/, "").trim();
+  const titulo = `${inicio}... ${fim}`.trim();
+
+  return titulo.length <= max ? titulo : limitarTextoSeo(limpo, max);
+}
+
+function limitarTituloSeo(texto, max = 70) {
+  const limpo = String(texto || "").replace(/\s+/g, " ").trim();
+  if (limpo.length <= max) return limpo;
+
+  const partes = limpo.split(/\s+\|\s+/);
+  if (partes.length > 1) {
+    const sufixo = ` | ${partes.slice(1).join(" | ")}`;
+    const maxPrincipal = max - sufixo.length;
+    if (maxPrincipal >= 24) {
+      return `${limitarTrechoTituloSeo(partes[0], maxPrincipal)}${sufixo}`;
+    }
+  }
+
+  return limitarTrechoTituloSeo(limpo, max);
+}
+
 function gerarDescricaoSeo(texto, tituloFallback = "") {
   const textoLimpo = limparTextoSeo(texto);
   const descricaoInvalida =
@@ -661,6 +700,25 @@ function gerarDescricaoSeo(texto, tituloFallback = "") {
     : textoLimpo;
 
   return limitarTextoSeo(descricao, 160);
+}
+
+function normalizarHeadingsCorpoArtigo(html) {
+  return String(html || "")
+    .replace(/<h1(\s[^>]*)?>/gi, "<h2$1>")
+    .replace(/<\/h1>/gi, "</h2>");
+}
+
+function extrairTextoTag(html, tag) {
+  const match = String(html || "").match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i"));
+  return match
+    ? match[1].replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim()
+    : "";
+}
+
+function tituloPlaceholderInvalido(conteudo) {
+  const titulo = extrairTextoTag(conteudo, "title").replace(/\s*\|\s*Anderson Damasio$/i, "").trim();
+  const h1 = extrairTextoTag(conteudo, "h1");
+  return /^t[ií]tulo:?$/i.test(titulo) || /^t[ií]tulo:?$/i.test(h1);
 }
 
 function jsonLdScript(data) {
@@ -694,7 +752,7 @@ function gerarSeoHead({
   const canonicalUrl = absoluteUrl(canonicalPath);
   const imageUrl = absoluteUrl(image);
   const descricao = gerarDescricaoSeo(description, title);
-  const titulo = limitarTextoSeo(title, 70);
+  const titulo = limitarTituloSeo(title, 140);
   const dados = Array.isArray(structuredData) ? structuredData : [structuredData];
 
   return `<title>${escapeHTML(titulo)}</title>
@@ -702,6 +760,7 @@ function gerarSeoHead({
 <meta name="author" content="${escapeAttribute(authorName)}">
 <meta name="robots" content="${escapeAttribute(robots)}">
 <link rel="canonical" href="${escapeAttribute(canonicalUrl)}">
+<link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="${escapeAttribute(siteName)}">
 <meta property="og:type" content="${escapeAttribute(type)}">
@@ -735,10 +794,384 @@ const devBlogsFeeds = [
 function arquivoIndexavel(arquivo) {
   try {
     const stats = fs.statSync(arquivo);
-    return stats.isFile() && stats.size > 100;
+    if (!stats.isFile() || stats.size <= 100) return false;
+
+    const conteudo = fs.readFileSync(arquivo, "utf8");
+    if (!/<html[\s>]/i.test(conteudo)) return false;
+    if (/<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(conteudo)) return false;
+    if (tituloPlaceholderInvalido(conteudo)) return false;
+    return true;
   } catch {
     return false;
   }
+}
+
+let cacheArquivosArtigosPorSlug = null;
+
+function listarArquivosHtml(dir, saida = []) {
+  if (!fs.existsSync(dir)) return saida;
+
+  for (const entrada of fs.readdirSync(dir, { withFileTypes: true })) {
+    const completo = path.join(dir, entrada.name);
+    if (entrada.isDirectory()) {
+      listarArquivosHtml(completo, saida);
+    } else if (entrada.isFile() && entrada.name.toLowerCase().endsWith(".html")) {
+      saida.push(completo.replace(/\\/g, "/"));
+    }
+  }
+
+  return saida;
+}
+
+function arquivosArtigosPorSlug() {
+  if (cacheArquivosArtigosPorSlug) return cacheArquivosArtigosPorSlug;
+
+  cacheArquivosArtigosPorSlug = new Map();
+  for (const arquivo of listarArquivosHtml("artigos")) {
+    const local = arquivo.replace(/^\.\//, "");
+    const partes = local.split("/");
+    if (partes.length < 3) continue;
+    if (/^index\d*\.html$/i.test(path.basename(local))) continue;
+
+    const slug = path.basename(local, ".html");
+    if (!cacheArquivosArtigosPorSlug.has(slug)) cacheArquivosArtigosPorSlug.set(slug, []);
+    cacheArquivosArtigosPorSlug.get(slug).push(local);
+  }
+
+  return cacheArquivosArtigosPorSlug;
+}
+
+function categoriaDaUrlArtigo(url) {
+  const local = normalizarUrlLocal(url);
+  const match = local && local.match(/^artigos\/([^/]+)\//i);
+  return match ? match[1] : null;
+}
+
+function nomeCategoriaDaUrl(url) {
+  const slug = categoriaDaUrlArtigo(url);
+  if (!slug) return null;
+  return slug
+    .split("-")
+    .filter(Boolean)
+    .map(parte => parte.charAt(0).toUpperCase() + parte.slice(1))
+    .join(" ");
+}
+
+function resolverArtigoPublicavel(artigo) {
+  if (!artigo || !artigo.titulo) return null;
+
+  const slug = slugify(artigo.titulo);
+  const candidatos = [];
+  const adicionarCandidato = (url) => {
+    const local = normalizarUrlLocal(url);
+    if (local && !candidatos.includes(local)) candidatos.push(local);
+  };
+
+  if (artigo.url) adicionarCandidato(artigo.url);
+  if (artigo.categoria) adicionarCandidato(`artigos/${slugify(artigo.categoria)}/${slug}.html`);
+  for (const arquivo of arquivosArtigosPorSlug().get(slug) || []) {
+    adicionarCandidato(arquivo);
+  }
+
+  const url = candidatos.find(candidato => arquivoIndexavel(urlLocalParaArquivo(candidato)));
+  if (!url) return null;
+
+  return {
+    ...artigo,
+    url,
+    categoria: artigo.categoria || nomeCategoriaDaUrl(url) || "Outros"
+  };
+}
+
+function prepararArtigosPublicaveis(titulos) {
+  const vistos = new Set();
+  return (Array.isArray(titulos) ? titulos : [])
+    .map(resolverArtigoPublicavel)
+    .filter(Boolean)
+    .filter(artigo => {
+      if (vistos.has(artigo.url)) return false;
+      vistos.add(artigo.url);
+      return true;
+    });
+}
+
+function paginaListagemIndexavel(indice) {
+  return indice < paginasListagemIndexaveis;
+}
+
+function paginaListagemNoSitemapPermitida(indice) {
+  return indice < paginasListagemNoSitemap;
+}
+
+function criarPaginacaoCompacta(totalPaginas, paginaAtual, nomePagina) {
+  if (totalPaginas <= 1) return "";
+
+  const indices = new Set([0, totalPaginas - 1, paginaAtual]);
+  for (let i = paginaAtual - 2; i <= paginaAtual + 2; i++) {
+    if (i >= 0 && i < totalPaginas) indices.add(i);
+  }
+
+  const ordenados = [...indices].sort((a, b) => a - b);
+  const links = [];
+
+  if (paginaAtual > 0) {
+    links.push(`<a href="${nomePagina(paginaAtual - 1)}" rel="prev">Anterior</a>`);
+  }
+
+  ordenados.forEach((idx, pos) => {
+    if (pos > 0 && idx - ordenados[pos - 1] > 1) {
+      links.push(`<span class="pagination-gap">...</span>`);
+    }
+
+    const ativa = idx === paginaAtual ? "active" : "";
+    links.push(`<a href="${nomePagina(idx)}" class="${ativa}">Página ${idx + 1}</a>`);
+  });
+
+  if (paginaAtual < totalPaginas - 1) {
+    links.push(`<a href="${nomePagina(paginaAtual + 1)}" rel="next">Próxima</a>`);
+  }
+
+  return `
+<nav class="scroll-container" aria-label="Paginação">
+  ${links.join("")}
+</nav>
+`;
+}
+
+function listarHtmlSite(dir = ".", saida = []) {
+  if (!fs.existsSync(dir)) return saida;
+
+  for (const entrada of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entrada.name === ".git" || entrada.name === "node_modules") continue;
+
+    const completo = path.join(dir, entrada.name);
+    if (entrada.isDirectory()) {
+      listarHtmlSite(completo, saida);
+    } else if (entrada.isFile() && entrada.name.toLowerCase().endsWith(".html")) {
+      saida.push(completo);
+    }
+  }
+
+  return saida;
+}
+
+function escreverSeMudou(arquivo, conteudo) {
+  const atual = fs.existsSync(arquivo) ? fs.readFileSync(arquivo, "utf8") : null;
+  if (atual === conteudo) return false;
+
+  fs.mkdirSync(path.dirname(arquivo), { recursive: true });
+  fs.writeFileSync(arquivo, conteudo);
+  return true;
+}
+
+function gerarHtmlAliasLegado({ origem, destino, titulo }) {
+  const destinoUrl = absoluteUrl(destino);
+  const tituloPagina = `${titulo || "Página movida"} | ${siteName}`;
+  const descricao = `Esta página foi movida para ${destinoUrl}. Acesse a versão canônica no site Anderson Damasio.`;
+
+  return `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+${gerarSeoHead({
+  title: tituloPagina,
+  description: descricao,
+  canonicalPath: destino,
+  robots: "noindex, follow",
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": tituloPagina,
+    "description": descricao,
+    "url": absoluteUrl(origem),
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": siteName,
+      "url": siteUrl
+    }
+  }
+})}
+<meta http-equiv="refresh" content="0; url=${escapeAttribute(destinoUrl)}">
+</head>
+<body>
+<main>
+  <h1>Página movida</h1>
+  <p>Este conteúdo agora está disponível em <a href="${escapeAttribute(destinoUrl)}">${escapeHTML(destinoUrl)}</a>.</p>
+</main>
+</body>
+</html>`;
+}
+
+function gerarPaginasCompatibilidadeLegadas(titulos) {
+  if (!gerarAliasesLegados) return 0;
+
+  const aliases = new Map();
+  const adicionarAlias = (origem, destino, titulo) => {
+    const origemLocal = normalizarUrlLocal(origem);
+    const destinoLocal = normalizarUrlLocal(destino);
+    if (!origemLocal || !destinoLocal || origemLocal === destinoLocal) return;
+    aliases.set(origemLocal, { origem: origemLocal, destino: destinoLocal, titulo });
+  };
+
+  aliasesEstaticosLegados.forEach(alias => adicionarAlias(alias.origem, alias.destino, alias.titulo));
+
+  prepararArtigosPublicaveis(titulos).forEach(artigo => {
+    const match = artigo.url.match(/^artigos\/([^/]+)\/([^/]+\.html)$/i);
+    if (!match) return;
+    adicionarAlias(`${match[1]}/${match[2]}`, artigo.url, artigo.titulo);
+  });
+
+  let alterados = 0;
+  for (const alias of aliases.values()) {
+    const arquivo = urlLocalParaArquivo(alias.origem);
+    const html = gerarHtmlAliasLegado(alias);
+    if (escreverSeMudou(arquivo, html)) alterados += 1;
+  }
+
+  return alterados;
+}
+
+function gerarPaginasListagemObsoletas(paginasValidas) {
+  const validas = new Set([...paginasValidas].map(p => p.replace(/\\/g, "/")));
+  let alterados = 0;
+
+  for (const arquivo of listarHtmlSite(".")) {
+    const local = arquivo.replace(/\\/g, "/").replace(/^\.\//, "");
+    let destino = null;
+    let titulo = "Página de listagem";
+
+    if (/^index\d+\.html$/i.test(local) && !validas.has(local)) {
+      destino = "/";
+      titulo = "Artigos recentes";
+    } else {
+      const matchCategoria = local.match(/^artigos\/([^/]+?)(\d+)\.html$/i);
+      if (matchCategoria && !validas.has(local)) {
+        const html = fs.readFileSync(arquivo, "utf8");
+        if (/Categoria:/i.test(html)) {
+          destino = `artigos/${matchCategoria[1]}.html`;
+          titulo = `Categoria ${matchCategoria[1].replace(/-/g, " ")}`;
+        }
+      }
+    }
+
+    if (!destino) continue;
+
+    const html = gerarHtmlAliasLegado({ origem: local, destino, titulo });
+    if (escreverSeMudou(local, html)) alterados += 1;
+  }
+
+  return alterados;
+}
+
+function gerarPaginasArtigosIndisponiveis(titulos) {
+  let alterados = 0;
+  const processados = new Set();
+
+  const gerarIndisponivel = ({ local, titulo, categoria }) => {
+    if (!local || processados.has(local)) return 0;
+    processados.add(local);
+
+    const arquivo = urlLocalParaArquivo(local);
+    const destino = categoria && fs.existsSync(`artigos/${slugify(categoria)}.html`)
+      ? `artigos/${slugify(categoria)}.html`
+      : "artigos/index.html";
+    const tituloFinal = titulo || "Artigo indisponível";
+    const destinoUrl = absoluteUrl(destino);
+    const descricao = `Este artigo não está disponível para indexação. Acesse a listagem canônica em ${destinoUrl}.`;
+    const html = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+${gerarSeoHead({
+  title: `${tituloFinal} | ${siteName}`,
+  description: descricao,
+  canonicalPath: destino,
+  robots: "noindex, follow",
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": tituloFinal,
+    "description": descricao,
+    "url": absoluteUrl(local),
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": siteName,
+      "url": siteUrl
+    }
+  }
+})}
+</head>
+<body>
+<main>
+  <h1>Artigo indisponível</h1>
+  <p>Este conteúdo foi removido da indexação. Acesse <a href="${escapeAttribute(destinoUrl)}">${escapeHTML(destinoUrl)}</a>.</p>
+</main>
+</body>
+</html>`;
+
+    return escreverSeMudou(arquivo, html) ? 1 : 0;
+  };
+
+  for (const artigo of Array.isArray(titulos) ? titulos : []) {
+    if (!artigo?.url) continue;
+
+    const local = normalizarUrlLocal(artigo.url);
+    const arquivo = local && urlLocalParaArquivo(local);
+    if (!arquivo || arquivoIndexavel(arquivo)) continue;
+
+    alterados += gerarIndisponivel({
+      local,
+      titulo: artigo.titulo,
+      categoria: artigo.categoria || nomeCategoriaDaUrl(local) || "Artigos"
+    });
+  }
+
+  for (const arquivo of listarArquivosHtml("artigos")) {
+    const local = arquivo.replace(/\\/g, "/").replace(/^\.\//, "");
+    if (arquivoIndexavel(local)) continue;
+
+    const atual = fs.existsSync(local) ? fs.readFileSync(local, "utf8") : "";
+    if (/<meta[^>]+name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(atual)) continue;
+
+    alterados += gerarIndisponivel({
+      local,
+      titulo: "Artigo indisponível",
+      categoria: nomeCategoriaDaUrl(local) || "Artigos"
+    });
+  }
+
+  return alterados;
+}
+
+function corrigirLinksLegadosHtml() {
+  let alterados = 0;
+
+  for (const arquivo of listarHtmlSite(".")) {
+    let html = fs.readFileSync(arquivo, "utf8");
+    const original = html;
+    const rel = arquivo.replace(/\\/g, "/").replace(/^\.\//, "");
+
+    html = html
+      .replace(/href=["']\/?politica-de-privacidade\.html["']/gi, 'href="/politica.html"')
+      .replace(/href=["']\.\.?\/politica-de-privacidade\.html["']/gi, 'href="/politica.html"');
+
+    if (/^artigos\/[^/]+\/[^/]+\.html$/i.test(rel)) {
+      html = html
+        .replace(/href=["']\.\.\/sobre\.html["']/gi, 'href="/sobre.html"')
+        .replace(/href=["']\.\.\/contato\.html["']/gi, 'href="/contato.html"')
+        .replace(/href=["']\.\.\/termos\.html["']/gi, 'href="/termos.html"')
+        .replace(/href=["']\.\.\/politica\.html["']/gi, 'href="/politica.html"');
+    }
+
+    if (html !== original) {
+      fs.writeFileSync(arquivo, html);
+      alterados += 1;
+    }
+  }
+
+  return alterados;
 }
 
 async function verificarTweetOriginalViaApi(tweetUrl) {
@@ -1140,7 +1573,6 @@ let corpoArtigo = linhas.filter(l => {
 
 const { categoriaFinal: categoria, conteudoLimpo } = extrairCategoriaDoConteudo(corpoArtigo, titulo);
 corpoArtigo = conteudoLimpo;
-corpoArtigo = inserirErrosOrtograficosSutis(corpoArtigo);   
 corpoArtigo = corpoArtigo
   .split('\n')
   .filter(l => {
@@ -1177,7 +1609,7 @@ const html = `<!DOCTYPE html>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 ${gerarSeoHead({
-  title: `${titulo} | ${siteName}`,
+  title: `${titulo} | ${categoria} | ${siteName}`,
   description: resumo,
   canonicalPath: urlLocal,
   type: "article",
@@ -1311,15 +1743,15 @@ ${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="Imagem relacionada" style="w
   });
 </script>
 
-<div class="article-body">${marked.parse(corpoArtigo)}</div>
+<div class="article-body">${normalizarHeadingsCorpoArtigo(marked.parse(corpoArtigo))}</div>
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
 <footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
   <nav style="margin-bottom: 1rem;">
-    <a href="../sobre.html">Sobre</a> |
-    <a href="../contato.html">Contato</a> |
-    <a href="../termos.html">Termos de Uso</a> |
-    <a href="../politica.html">Política de Privacidade</a>
+    <a href="/sobre.html">Sobre</a> |
+    <a href="/contato.html">Contato</a> |
+    <a href="/termos.html">Termos de Uso</a> |
+    <a href="/politica.html">Política de Privacidade</a>
   </nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
@@ -1407,9 +1839,7 @@ if (!existe) {
 
     fs.writeFileSync(titulosPath, JSON.stringify(titulosGerados, null, 2));
 
-    gerarIndicesPaginados(titulosGerados);
-    gerarPaginasPorCategoria(titulosGerados);
-    gerarSitemap(titulosGerados);
+    atualizarPublicacaoSeo(titulosGerados);
 
    // Registrar introdução usada
     const usadasPath = './dados/usadas.json';
@@ -1432,27 +1862,22 @@ if (!existe) {
 
 
 function gerarIndicesPaginados(titulos) {
-  const ordenados = titulos.slice().sort((a, b) => new Date(b.data) - new Date(a.data));
+  const ordenados = prepararArtigosPublicaveis(titulos).sort((a, b) => new Date(b.data) - new Date(a.data));
   const paginas = Math.ceil(ordenados.length / artigosPorPagina);
+  const paginasGeradas = new Set();
 
   for (let i = 0; i < paginas; i++) {
     const artigosPagina = ordenados.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
     const links = artigosPagina.map(t => {
-      const slug = slugify(t.titulo);
       const data = formatDateTime(new Date(t.data));
-      return `<li><a href="${t.url}">${t.titulo}</a> <span style="color:#777;">(${data})</span></li>`;
+      return `<li><a href="${t.url}">${escapeHTML(t.titulo)}</a> <span style="color:#777;">(${data})</span></li>`;
     }).join("\n");
 
-    const paginacao = paginas > 1 ? `
-<div class="scroll-container">
-  ${Array.from({ length: paginas }).map((_, idx) => {
-    const pageName = idx === 0 ? "index.html" : `index${idx + 1}.html`;
-    const paginaLabel = `Página ${idx + 1}`;
-    const isActive = i === idx;
-    return `<a href="${pageName}" class="${isActive ? 'active' : ''}">${paginaLabel}</a>`;
-  }).join("")}
-</div>
-` : '';
+    const paginacao = criarPaginacaoCompacta(
+      paginas,
+      i,
+      idx => idx === 0 ? "index.html" : `index${idx + 1}.html`
+    );
 
  const updated_time = new Date().toISOString();
     const pagePath = i === 0 ? "/" : `index${i + 1}.html`;
@@ -1462,6 +1887,42 @@ function gerarIndicesPaginados(titulos) {
     const pageDescription = i === 0
       ? `Anderson Damasio, arquiteto de software com ${textoAnosExperiencia} de experiência em soluções modernas, escaláveis e artigos técnicos.`
       : `Página ${i + 1} da lista de artigos técnicos de Anderson Damasio sobre arquitetura de software, tecnologia e desenvolvimento.`;
+    const pessoaSchema = {
+      "@type": "Person",
+      "name": authorName,
+      "url": siteUrl,
+      "jobTitle": "Arquiteto de Software",
+      "sameAs": [
+        "https://www.linkedin.com/in/andersondamasio/"
+      ]
+    };
+    const paginaSchema = i === 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "name": pageTitle,
+          "description": pageDescription,
+          "url": absoluteUrl(pagePath),
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": siteName,
+            "url": siteUrl
+          },
+          "mainEntity": pessoaSchema
+        }
+      : {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": pageTitle,
+          "description": pageDescription,
+          "url": absoluteUrl(pagePath),
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": siteName,
+            "url": siteUrl
+          },
+          "about": pessoaSchema
+        };
     
 const html = `<!DOCTYPE html>
 <html lang="pt-BR">
@@ -1474,29 +1935,10 @@ ${gerarSeoHead({
   title: pageTitle,
   description: pageDescription,
   canonicalPath: pagePath,
+  robots: paginaListagemIndexavel(i) ? "index, follow" : "noindex, follow",
   modifiedTime: updated_time,
   structuredData: [
-    {
-      "@context": "https://schema.org",
-      "@type": i === 0 ? "ProfilePage" : "CollectionPage",
-      "name": pageTitle,
-      "description": pageDescription,
-      "url": absoluteUrl(pagePath),
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": siteName,
-        "url": siteUrl
-      },
-      "about": {
-        "@type": "Person",
-        "name": authorName,
-        "url": siteUrl,
-        "jobTitle": "Arquiteto de Software",
-        "sameAs": [
-          "https://www.linkedin.com/in/andersondamasio/"
-        ]
-      }
-    },
+    paginaSchema,
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
@@ -1604,6 +2046,7 @@ a:hover {
   background-color: var(--link);
   color: var(--main-bg);
 }
+.pagination-gap { color: var(--footer); padding: 6px 2px; }
 </style>
 
 </head>
@@ -1708,11 +2151,15 @@ ${paginacao}
 
     const nome = i === 0 ? "index.html" : `index${i + 1}.html`;
     fs.writeFileSync(nome, html);
+    paginasGeradas.add(nome);
   }
+
+  return paginasGeradas;
 }
 
 function gerarSitemap(titulos) {
   const entradas = new Map();
+  const artigosPublicaveis = prepararArtigosPublicaveis(titulos);
 
   const adicionar = (url, data = null, exigirArquivo = true) => {
     const local = normalizarUrlLocal(url);
@@ -1733,7 +2180,7 @@ function gerarSitemap(titulos) {
     }
   };
 
-  const datasValidas = titulos
+  const datasValidas = artigosPublicaveis
     .map(t => t.data ? new Date(t.data) : null)
     .filter(d => d && !Number.isNaN(d.getTime()));
   const ultimaData = datasValidas.length
@@ -1746,9 +2193,8 @@ function gerarSitemap(titulos) {
   });
 
   const agrupados = {};
-  titulos.forEach(t => {
-    const urlFinal = t.url || `artigos/${slugify(t.titulo)}.html`;
-    adicionar(urlFinal, t.data);
+  artigosPublicaveis.forEach(t => {
+    adicionar(t.url, t.data);
 
     const categoria = t.categoria || "Outros";
     if (!agrupados[categoria]) agrupados[categoria] = [];
@@ -1759,7 +2205,7 @@ function gerarSitemap(titulos) {
     const slugCat = slugify(categoria);
     const paginas = Math.ceil(artigos.length / artigosPorPagina);
 
-    for (let i = 0; i < paginas; i++) {
+    for (let i = 0; i < paginas && paginaListagemNoSitemapPermitida(i); i++) {
       const artigosPagina = artigos.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
       const dataMaisRecente = artigosPagina
         .map(t => t.data ? new Date(t.data) : null)
@@ -1788,6 +2234,68 @@ ${sitemapLinks}
   fs.writeFileSync("sitemap.xml", sitemapContent);
 }
 
+function descricaoRssArtigo(artigo) {
+  const arquivo = urlLocalParaArquivo(artigo.url);
+
+  try {
+    const html = fs.readFileSync(arquivo, "utf8");
+    const match = html.match(/<meta\s+name=["']description["'][^>]*content=["']([^"']+)["'][^>]*>/i);
+    if (match?.[1]) {
+      return match[1]
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&amp;/g, "&")
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">");
+    }
+  } catch {
+    // Usa fallback abaixo quando o arquivo ainda nao tem meta description.
+  }
+
+  return gerarDescricaoSeo(artigo.noticiaOriginal || artigo.titulo, artigo.titulo);
+}
+
+function gerarRss(titulos) {
+  const artigosPublicaveis = prepararArtigosPublicaveis(titulos)
+    .map(artigo => ({
+      ...artigo,
+      dataObj: artigo.data ? new Date(artigo.data) : null
+    }))
+    .filter(artigo => artigo.dataObj && !Number.isNaN(artigo.dataObj.getTime()))
+    .sort((a, b) => b.dataObj - a.dataObj)
+    .slice(0, 100);
+
+  const ultimaData = artigosPublicaveis[0]?.dataObj || new Date();
+  const itens = artigosPublicaveis.map(artigo => {
+    const link = absoluteUrl(artigo.url);
+    return [
+      "<item>",
+      `<title>${escapeXml(artigo.titulo)}</title>`,
+      `<link>${escapeXml(link)}</link>`,
+      `<guid isPermaLink="true">${escapeXml(link)}</guid>`,
+      `<pubDate>${artigo.dataObj.toUTCString()}</pubDate>`,
+      artigo.categoria ? `<category>${escapeXml(artigo.categoria)}</category>` : "",
+      `<description>${escapeXml(descricaoRssArtigo(artigo))}</description>`,
+      "</item>"
+    ].filter(Boolean).join("\n");
+  }).join("\n");
+
+  const rssContent = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>${escapeXml(siteName)} - Artigos</title>
+<link>${escapeXml(siteUrl)}/</link>
+<atom:link href="${escapeXml(rssUrl)}" rel="self" type="application/rss+xml" />
+<description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
+<language>pt-BR</language>
+<lastBuildDate>${ultimaData.toUTCString()}</lastBuildDate>
+${itens}
+</channel>
+</rss>`;
+
+  fs.writeFileSync("rss.xml", rssContent);
+}
+
 function carregarTitulosGerados() {
   const titulosPath = "titulos.json";
   if (!fs.existsSync(titulosPath)) return [];
@@ -1800,12 +2308,26 @@ function carregarTitulosGerados() {
   }
 }
 
+function atualizarPublicacaoSeo(titulosGerados) {
+  cacheArquivosArtigosPorSlug = null;
+  const indisponiveisAlterados = gerarPaginasArtigosIndisponiveis(titulosGerados);
+  const artigosPublicaveis = prepararArtigosPublicaveis(titulosGerados);
+  const paginasValidas = new Set([
+    ...gerarIndicesPaginados(artigosPublicaveis),
+    ...gerarPaginasPorCategoria(artigosPublicaveis)
+  ]);
+  const listagensObsoletas = gerarPaginasListagemObsoletas(paginasValidas);
+  const aliasesAlterados = gerarPaginasCompatibilidadeLegadas(artigosPublicaveis);
+  gerarSitemap(artigosPublicaveis);
+  gerarRss(artigosPublicaveis);
+  const linksCorrigidos = corrigirLinksLegadosHtml();
+  return { artigosPublicaveis: artigosPublicaveis.length, aliasesAlterados, listagensObsoletas, indisponiveisAlterados, linksCorrigidos };
+}
+
 function reconstruirPaginasSeo() {
   const titulosGerados = carregarTitulosGerados();
-  gerarIndicesPaginados(titulosGerados);
-  gerarPaginasPorCategoria(titulosGerados);
-  gerarSitemap(titulosGerados);
-  console.log(`SEO reconstruído para ${titulosGerados.length} artigos cadastrados.`);
+  const resultado = atualizarPublicacaoSeo(titulosGerados);
+  console.log(`SEO reconstruído para ${resultado.artigosPublicaveis} artigos publicáveis. Aliases atualizados: ${resultado.aliasesAlterados}. Listagens obsoletas: ${resultado.listagensObsoletas}. Artigos indisponíveis: ${resultado.indisponiveisAlterados}. HTMLs com links corrigidos: ${resultado.linksCorrigidos}.`);
 }
 
 if (process.argv.includes("--rebuild-seo")) {
