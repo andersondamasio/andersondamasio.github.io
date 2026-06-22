@@ -1,10 +1,15 @@
 const fs = require("fs");
 const path = require("path");
+const {
+  defaultSeoImage,
+  defaultSeoImageAlt,
+  defaultSeoImageWidth,
+  defaultSeoImageHeight
+} = require("./seo-assets");
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
 const siteName = "Anderson Damasio";
-const defaultSeoImage = `${siteUrl}/images/capa_anderson-damasio.png`;
 const rssUrl = `${siteUrl}/rss.xml`;
 const anoInicioExperiencia = 2005;
 const anosExperiencia = new Date().getFullYear() - anoInicioExperiencia;
@@ -127,11 +132,15 @@ function buildSeo(page) {
 <meta property="og:description" content="${escapeAttribute(page.description)}">
 <meta property="og:url" content="${escapeAttribute(url)}">
 <meta property="og:image" content="${escapeAttribute(defaultSeoImage)}">
+<meta property="og:image:width" content="${escapeAttribute(defaultSeoImageWidth)}">
+<meta property="og:image:height" content="${escapeAttribute(defaultSeoImageHeight)}">
+<meta property="og:image:alt" content="${escapeAttribute(defaultSeoImageAlt)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content="${escapeAttribute(page.title)}">
 <meta name="twitter:description" content="${escapeAttribute(page.description)}">
 <meta name="twitter:image" content="${escapeAttribute(defaultSeoImage)}">
+<meta name="twitter:image:alt" content="${escapeAttribute(defaultSeoImageAlt)}">
 ${jsonLdScript(data)}`;
 }
 

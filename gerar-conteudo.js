@@ -14,6 +14,14 @@ marked.setOptions({
 const { escolherIntroducao } = require('./dados/selecionar-introducao');
 const { extrairResumoDaNoticia, extrairResumoDaNoticiaReadability } = require('./scripts/extrairResumoDaNoticia');
 const { errorsMaps } = require('./dados/selecionar-errorsMaps');
+const {
+  defaultSeoImage,
+  defaultPublisherLogo,
+  defaultSeoImageAlt,
+  defaultSeoImageWidth,
+  defaultSeoImageHeight,
+  getArticleStructuredImages
+} = require('./scripts/seo-assets');
 const errosUsadosPath = './dados/erros_usados.json';
 
 const parser = new Parser({
@@ -572,7 +580,6 @@ ${gerarFooterNavegacao("..")}
 const siteUrl = "https://www.andersondamasio.com.br";
 const siteName = "Anderson Damasio";
 const authorName = "Anderson Damasio";
-const defaultSeoImage = `${siteUrl}/images/capa_anderson-damasio.png`;
 const rssUrl = `${siteUrl}/rss.xml`;
 const anoInicioExperiencia = 2005;
 const anosExperiencia = new Date().getFullYear() - anoInicioExperiencia;
@@ -843,6 +850,9 @@ function gerarSeoHead({
   canonicalPath,
   type = "website",
   image = defaultSeoImage,
+  imageAlt = null,
+  imageWidth = null,
+  imageHeight = null,
   robots = "index, follow",
   publishedTime = null,
   modifiedTime = null,
@@ -850,6 +860,10 @@ function gerarSeoHead({
 }) {
   const canonicalUrl = absoluteUrl(canonicalPath);
   const imageUrl = absoluteUrl(image);
+  const isDefaultImage = imageUrl === defaultSeoImage;
+  const imageAltText = imageAlt || (isDefaultImage ? defaultSeoImageAlt : title);
+  const imageWidthValue = imageWidth || (isDefaultImage ? defaultSeoImageWidth : null);
+  const imageHeightValue = imageHeight || (isDefaultImage ? defaultSeoImageHeight : null);
   const descricao = gerarDescricaoSeo(description, title);
   const titulo = limitarTituloSeo(title, 140);
   const dados = Array.isArray(structuredData) ? structuredData : [structuredData];
@@ -867,6 +881,9 @@ function gerarSeoHead({
 <meta property="og:description" content="${escapeAttribute(descricao)}">
 <meta property="og:url" content="${escapeAttribute(canonicalUrl)}">
 <meta property="og:image" content="${escapeAttribute(imageUrl)}">
+${imageWidthValue ? `<meta property="og:image:width" content="${escapeAttribute(imageWidthValue)}">` : ""}
+${imageHeightValue ? `<meta property="og:image:height" content="${escapeAttribute(imageHeightValue)}">` : ""}
+${imageAltText ? `<meta property="og:image:alt" content="${escapeAttribute(imageAltText)}">` : ""}
 ${publishedTime ? `<meta property="article:published_time" content="${escapeAttribute(publishedTime)}">` : ""}
 ${modifiedTime ? `<meta property="${type === "article" ? "article:modified_time" : "og:updated_time"}" content="${escapeAttribute(modifiedTime)}">` : ""}
 <meta name="twitter:card" content="summary_large_image">
@@ -874,6 +891,7 @@ ${modifiedTime ? `<meta property="${type === "article" ? "article:modified_time"
 <meta name="twitter:title" content="${escapeAttribute(titulo)}">
 <meta name="twitter:description" content="${escapeAttribute(descricao)}">
 <meta name="twitter:image" content="${escapeAttribute(imageUrl)}">
+${imageAltText ? `<meta name="twitter:image:alt" content="${escapeAttribute(imageAltText)}">` : ""}
 ${dados.filter(Boolean).map(jsonLdScript).join("\n")}`;
 }
 
@@ -1829,7 +1847,7 @@ ${gerarSeoHead({
       "@type": "BlogPosting",
       "headline": titulo,
       "description": resumo,
-      "image": [absoluteUrl(articleImage)],
+      "image": getArticleStructuredImages(articleImage, absoluteUrl),
       "url": articleUrl,
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -1849,7 +1867,7 @@ ${gerarSeoHead({
         "name": siteName,
         "logo": {
           "@type": "ImageObject",
-          "url": defaultSeoImage
+          "url": defaultPublisherLogo
         }
       }
     },

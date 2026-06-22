@@ -1,12 +1,19 @@
 const fs = require("fs");
 const path = require("path");
 const cheerio = require("cheerio");
+const {
+  defaultSeoImage,
+  defaultPublisherLogo,
+  defaultSeoImageAlt,
+  defaultSeoImageWidth,
+  defaultSeoImageHeight,
+  getArticleStructuredImages
+} = require("./seo-assets");
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
 const siteName = "Anderson Damasio";
 const authorName = "Anderson Damasio";
-const defaultSeoImage = `${siteUrl}/images/capa_anderson-damasio.png`;
 const rssUrl = `${siteUrl}/rss.xml`;
 
 function walk(dir, out = []) {
@@ -197,7 +204,7 @@ function buildSeoHead({ title, description, url, category, published }) {
       "@type": "BlogPosting",
       "headline": title,
       "description": pageDescription,
-      "image": [defaultSeoImage],
+      "image": getArticleStructuredImages(defaultSeoImage, absoluteUrl),
       "url": pageUrl,
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -217,7 +224,7 @@ function buildSeoHead({ title, description, url, category, published }) {
         "name": siteName,
         "logo": {
           "@type": "ImageObject",
-          "url": defaultSeoImage
+          "url": defaultPublisherLogo
         }
       }
     },
@@ -242,12 +249,16 @@ function buildSeoHead({ title, description, url, category, published }) {
 <meta property="og:description" content="${escapeAttribute(pageDescription)}">
 <meta property="og:url" content="${escapeAttribute(pageUrl)}">
 <meta property="og:image" content="${escapeAttribute(defaultSeoImage)}">
+<meta property="og:image:width" content="${escapeAttribute(defaultSeoImageWidth)}">
+<meta property="og:image:height" content="${escapeAttribute(defaultSeoImageHeight)}">
+<meta property="og:image:alt" content="${escapeAttribute(defaultSeoImageAlt)}">
 ${dateIso ? `<meta property="article:published_time" content="${escapeAttribute(dateIso)}">\n<meta property="article:modified_time" content="${escapeAttribute(dateIso)}">` : ""}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content="${escapeAttribute(pageTitle)}">
 <meta name="twitter:description" content="${escapeAttribute(pageDescription)}">
 <meta name="twitter:image" content="${escapeAttribute(defaultSeoImage)}">
+<meta name="twitter:image:alt" content="${escapeAttribute(defaultSeoImageAlt)}">
 ${structuredData.map(jsonLdScript).join("\n")}`;
 }
 

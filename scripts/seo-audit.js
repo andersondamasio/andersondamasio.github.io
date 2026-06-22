@@ -1,6 +1,10 @@
 const fs = require("fs");
 const path = require("path");
 const cheerio = require("cheerio");
+const {
+  defaultSeoImage,
+  defaultArticleImages
+} = require("./seo-assets");
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
@@ -110,6 +114,27 @@ function jsonLdTypeIncludes(value, type) {
   return Array.isArray(current) ? current.includes(type) : current === type;
 }
 
+function collectJsonLdImageUrls(value, out = []) {
+  if (!value) return out;
+
+  if (typeof value === "string") {
+    out.push(value);
+    return out;
+  }
+
+  if (Array.isArray(value)) {
+    value.forEach(item => collectJsonLdImageUrls(item, out));
+    return out;
+  }
+
+  if (typeof value === "object") {
+    collectJsonLdImageUrls(value.url, out);
+    collectJsonLdImageUrls(value.contentUrl, out);
+  }
+
+  return out;
+}
+
 function findProfilePageWithoutMainEntity(value, out = []) {
   if (!value || typeof value !== "object") return out;
 
@@ -155,8 +180,10 @@ const stats = {
   missingH1: [],
   multipleH1: [],
   missingOg: [],
+  missingOgImageDetails: [],
   missingTwitter: [],
   missingJsonLd: [],
+  articleJsonLdMissingImageVariants: [],
   imagesWithoutAlt: [],
   sitemapMissingFiles: [],
   sitemapDuplicateLocs: [],
@@ -197,6 +224,12 @@ for (const file of walk(root)) {
   const noindex = /noindex/i.test(robots);
   const h1Count = $("h1").length;
   const lang = ($("html").attr("lang") || "").trim();
+  const ogImage = ($('meta[property="og:image" i]').attr("content") || "").trim();
+  const ogImageWidth = ($('meta[property="og:image:width" i]').attr("content") || "").trim();
+  const ogImageHeight = ($('meta[property="og:image:height" i]').attr("content") || "").trim();
+  const ogImageAlt = ($('meta[property="og:image:alt" i]').attr("content") || "").trim();
+  const twitterImage = ($('meta[name="twitter:image" i]').attr("content") || "").trim();
+  const twitterImageAlt = ($('meta[name="twitter:image:alt" i]').attr("content") || "").trim();
   const hasRssAlternate = $('link[rel="alternate" i][type="application/rss+xml" i]').length > 0;
   const relatedLinks = (html.match(/<section\s+class=["'][^"']*\brelated-articles\b[\s\S]*?<\/section>/i)?.[0].match(/<a\s+[^>]*href=/gi) || []).length;
   const isArticleContentPage = fileRel.startsWith("artigos/") &&
@@ -227,10 +260,13 @@ for (const file of walk(root)) {
   }
   if (h1Count === 0) pushExample(stats.missingH1, fileRel);
   if (h1Count > 1) pushExample(stats.multipleH1, `${fileRel}: ${h1Count}`);
-  if (!$('meta[property="og:title" i]').attr("content") || !$('meta[property="og:description" i]').attr("content")) {
+  if (!$('meta[property="og:title" i]').attr("content") || !$('meta[property="og:description" i]').attr("content") || !ogImage) {
     pushExample(stats.missingOg, fileRel);
   }
-  if (!$('meta[name="twitter:card" i]').attr("content")) {
+  if (!noindex && ogImage === defaultSeoImage && (!ogImageWidth || !ogImageHeight || !ogImageAlt || !twitterImageAlt)) {
+    pushExample(stats.missingOgImageDetails, fileRel);
+  }
+  if (!$('meta[name="twitter:card" i]').attr("content") || !twitterImage) {
     pushExample(stats.missingTwitter, fileRel);
   }
   if (fileRel.startsWith("artigos/") && !$('script[type="application/ld+json" i]').length) {
@@ -254,6 +290,14 @@ for (const file of walk(root)) {
     for (const item of getJsonLdObjects(json)) {
       if (findProfilePageWithoutMainEntity(item).length) {
         pushExample(stats.profilePageMissingMainEntity, fileRel);
+      }
+
+      if (!noindex && jsonLdTypeIncludes(item, "BlogPosting")) {
+        const imageUrls = collectJsonLdImageUrls(item.image);
+        const hasAllDefaultVariants = defaultArticleImages.every(image => imageUrls.includes(image));
+        if (!hasAllDefaultVariants) {
+          pushExample(stats.articleJsonLdMissingImageVariants, fileRel);
+        }
       }
     }
   });
@@ -393,8 +437,10 @@ const report = {
     missingH1: stats.missingH1,
     multipleH1: stats.multipleH1,
     missingOg: stats.missingOg,
+    missingOgImageDetails: stats.missingOgImageDetails,
     missingTwitter: stats.missingTwitter,
     missingJsonLd: stats.missingJsonLd,
+    articleJsonLdMissingImageVariants: stats.articleJsonLdMissingImageVariants,
     imagesWithoutAlt: stats.imagesWithoutAlt,
     sitemapMissingFiles: stats.sitemapMissingFiles,
     sitemapDuplicateLocs: stats.sitemapDuplicateLocs,
