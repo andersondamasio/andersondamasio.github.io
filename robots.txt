@@ -1,3 +1,4 @@
 User-agent: *
+Disallow: /node_modules/
 Allow: /
 Sitemap: https://www.andersondamasio.com.br/sitemap.xml

@@ -395,6 +395,8 @@ Assim, alem de auditar, o CI tambem detecta quando o SEO gerado nao foi commitad
 
 A comparacao e os commits automaticos ignoram `node_modules`, porque a instalacao de dependencias no runner pode alterar arquivos versionados de pacotes sem relacao com o SEO publicado.
 
+Tambem foi adicionada uma regra de `.gitignore` para `node_modules/` e um bloqueio em `robots.txt` para `/node_modules/`, com a pasta removida do controle de versao. Nenhuma pagina HTML referencia `/node_modules`, entao a remocao reduz superficie publicada sem afetar navegacao do site.
+
 ### Resultado da validacao final
 
 Em 22/06/2026, o comando abaixo foi executado com sucesso:
