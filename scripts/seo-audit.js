@@ -11,6 +11,7 @@ const {
   categoriaInvalida,
   normalizarCategoria
 } = require("./seo-categories");
+const { robotsTemPreviewAmplo } = require("./seo-robots");
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
@@ -258,6 +259,7 @@ const stats = {
   htmlFiles: 0,
   missingLang: [],
   missingTitle: [],
+  overlongTitle: [],
   missingDescription: [],
   weakDescription: [],
   missingCanonical: [],
@@ -267,6 +269,7 @@ const stats = {
   missingOg: [],
   missingOgImageDetails: [],
   missingTwitter: [],
+  robotsMissingPreviewDirectives: [],
   missingJsonLd: [],
   articleJsonLdMissingImageVariants: [],
   imagesWithoutAlt: [],
@@ -366,6 +369,7 @@ for (const file of walk(root)) {
 
   if (!lang) pushExample(stats.missingLang, fileRel);
   if (!title) pushExample(stats.missingTitle, fileRel);
+  if (!noindex && title.length > 100) pushExample(stats.overlongTitle, `${fileRel}: ${title.length} caracteres`);
   if (!description) pushExample(stats.missingDescription, fileRel);
   if (description && (description.length < 70 || /^[-–—]+$/.test(description) || /^introdu[cç][aã]o:?$/i.test(description))) {
     pushExample(stats.weakDescription, `${fileRel}: ${description}`);
@@ -393,6 +397,9 @@ for (const file of walk(root)) {
   }
   if (!$('meta[name="twitter:card" i]').attr("content") || !twitterImage) {
     pushExample(stats.missingTwitter, fileRel);
+  }
+  if (!noindex && !robotsTemPreviewAmplo(robots)) {
+    pushExample(stats.robotsMissingPreviewDirectives, `${fileRel}: ${robots || "(sem robots)"}`);
   }
   if (fileRel.startsWith("artigos/") && !$('script[type="application/ld+json" i]').length) {
     pushExample(stats.missingJsonLd, fileRel);
@@ -574,6 +581,7 @@ const report = {
   issues: {
     missingLang: stats.missingLang,
     missingTitle: stats.missingTitle,
+    overlongTitle: stats.overlongTitle,
     missingDescription: stats.missingDescription,
     weakDescription: stats.weakDescription,
     missingCanonical: stats.missingCanonical,
@@ -583,6 +591,7 @@ const report = {
     missingOg: stats.missingOg,
     missingOgImageDetails: stats.missingOgImageDetails,
     missingTwitter: stats.missingTwitter,
+    robotsMissingPreviewDirectives: stats.robotsMissingPreviewDirectives,
     missingJsonLd: stats.missingJsonLd,
     articleJsonLdMissingImageVariants: stats.articleJsonLdMissingImageVariants,
     imagesWithoutAlt: stats.imagesWithoutAlt,

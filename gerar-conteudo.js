@@ -26,6 +26,7 @@ const {
   minArtigosCategoriaIndexavel,
   normalizarCategoria
 } = require('./scripts/seo-categories');
+const { normalizarRobotsMeta } = require('./scripts/seo-robots');
 
 const parser = new Parser({
   requestOptions: {
@@ -702,13 +703,14 @@ function gerarSeoHead({
   const imageWidthValue = imageWidth || (isDefaultImage ? defaultSeoImageWidth : null);
   const imageHeightValue = imageHeight || (isDefaultImage ? defaultSeoImageHeight : null);
   const descricao = gerarDescricaoSeo(description, title);
-  const titulo = limitarTituloSeo(title, 140);
+  const titulo = limitarTituloSeo(title, 100);
+  const robotsMeta = normalizarRobotsMeta(robots);
   const dados = Array.isArray(structuredData) ? structuredData : [structuredData];
 
   return `<title>${escapeHTML(titulo)}</title>
 <meta name="description" content="${escapeAttribute(descricao)}">
 <meta name="author" content="${escapeAttribute(authorName)}">
-<meta name="robots" content="${escapeAttribute(robots)}">
+<meta name="robots" content="${escapeAttribute(robotsMeta)}">
 <link rel="canonical" href="${escapeAttribute(canonicalUrl)}">
 <link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
 <meta property="og:locale" content="pt_BR">
@@ -1664,7 +1666,7 @@ const html = `<!DOCTYPE html>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 ${gerarSeoHead({
-  title: `${titulo} | ${categoria} | ${siteName}`,
+  title: titulo,
   description: resumo,
   canonicalPath: urlLocal,
   type: "article",

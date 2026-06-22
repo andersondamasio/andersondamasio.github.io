@@ -6,6 +6,7 @@ const {
   defaultSeoImageWidth,
   defaultSeoImageHeight
 } = require("./seo-assets");
+const { normalizarRobotsMeta } = require("./seo-robots");
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
@@ -106,6 +107,7 @@ function collectHeadAssets(head) {
 
 function buildSeo(page) {
   const url = absoluteUrl(page.file);
+  const robotsMeta = normalizarRobotsMeta(page.robots);
   const data = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -122,7 +124,7 @@ function buildSeo(page) {
   return `<title>${escapeHtml(page.title)}</title>
 <meta name="description" content="${escapeAttribute(page.description)}">
 <meta name="author" content="${escapeAttribute(siteName)}">
-<meta name="robots" content="${escapeAttribute(page.robots)}">
+<meta name="robots" content="${escapeAttribute(robotsMeta)}">
 <link rel="canonical" href="${escapeAttribute(url)}">
 <link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
 <meta property="og:locale" content="pt_BR">

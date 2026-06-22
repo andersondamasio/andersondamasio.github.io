@@ -9,6 +9,7 @@ const {
   defaultSeoImageHeight,
   getArticleStructuredImages
 } = require("./seo-assets");
+const { normalizarRobotsMeta } = require("./seo-robots");
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
@@ -129,8 +130,7 @@ function isPlaceholderTitle(value) {
 }
 
 function buildPageTitle(title, category) {
-  const categoryPart = category && !/^artigos$/i.test(category) ? `${category} | ` : "";
-  return trimSeoTitle(`${title} | ${categoryPart}${siteName}`, 140);
+  return trimSeoTitle(title, 100);
 }
 
 function buildDescription(text, title) {
@@ -193,6 +193,7 @@ function buildSeoHead({ title, description, url, category, published }) {
   const pageTitle = buildPageTitle(title, category);
   const pageDescription = buildDescription(description, title);
   const pageUrl = absoluteUrl(url);
+  const robotsMeta = normalizarRobotsMeta("index, follow");
   const publishedDate = published ? new Date(published) : null;
   const dateIso = publishedDate && !Number.isNaN(publishedDate.getTime())
     ? publishedDate.toISOString()
@@ -239,7 +240,7 @@ function buildSeoHead({ title, description, url, category, published }) {
   return `<title>${escapeHtml(pageTitle)}</title>
 <meta name="description" content="${escapeAttribute(pageDescription)}">
 <meta name="author" content="${escapeAttribute(authorName)}">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="${escapeAttribute(robotsMeta)}">
 <link rel="canonical" href="${escapeAttribute(pageUrl)}">
 <link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
 <meta property="og:locale" content="pt_BR">

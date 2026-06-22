@@ -481,6 +481,30 @@ A auditoria estrita agora tambem falha se:
 - Um artigo indexavel estiver em uma pasta de categoria fora do slug canonico.
 - Um registro de `titulos.json` apontar para uma URL de artigo com pasta de categoria nao canonica.
 
+### Titulos SEO e diretivas de preview
+
+Foi ajustada a estrategia de `<title>` dos artigos para priorizar o assunto real do conteudo.
+
+Antes, muitos artigos automaticos usavam o padrao `Titulo | Categoria | Anderson Damasio` e podiam chegar a 140 caracteres. Isso fazia o Google receber titulos muito longos, com risco de corte agressivo e perda de relevancia no trecho mais importante.
+
+Agora:
+
+- Artigos usam o proprio titulo do conteudo como `<title>`, limitado a 100 caracteres.
+- Categoria e autoria continuam presentes em breadcrumb, JSON-LD, author, canonical, Open Graph e listagens.
+- Paginas estaticas e listagens continuam com titulos contextuais do site.
+- O auditor estrito falha se uma pagina indexavel passar de 100 caracteres no `<title>`.
+- O auditor estrito tambem falha se uma pagina indexavel nao tiver as diretivas de preview amplas para Google.
+
+Tambem foi criado o helper `scripts/seo-robots.js` para centralizar as diretivas de robots.
+
+As paginas indexaveis agora usam:
+
+```html
+index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
+```
+
+Isso permite snippets mais completos, imagens maiores nos resultados e melhor aproveitamento de previews quando o Google considerar apropriado.
+
 ### Resultado da validacao final
 
 Em 22/06/2026, o comando abaixo foi executado com sucesso:
@@ -491,12 +515,14 @@ npm run seo:maintain
 
 Resultado:
 
-- 17.447 arquivos HTML auditados.
+- 17.521 arquivos HTML auditados.
 - 8.054 artigos considerados publicaveis/indexaveis.
 - 8.112 URLs no sitemap.
 - 100 artigos recentes no `rss.xml`.
 - 0 categorias invalidas restantes em `titulos.json`.
 - Nenhum `title`, `description`, `canonical`, `h1`, Open Graph, Twitter Card ou JSON-LD ausente.
+- Nenhum `<title>` indexavel acima de 100 caracteres.
+- Nenhuma pagina indexavel sem `max-snippet:-1`, `max-image-preview:large` e `max-video-preview:-1`.
 - Nenhum link interno quebrado.
 - Nenhuma URL `noindex` no sitemap.
 - Nenhum problema em `robots.txt`.
