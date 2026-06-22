@@ -113,6 +113,7 @@ Foram adicionados os seguintes comandos no `package.json`:
 
 ```bash
 npm run seo:rebuild
+npm run seo:normalize-categories
 npm run seo:backfill
 npm run seo:backfill:static
 npm run seo:audit
@@ -125,6 +126,12 @@ Para reconstruir SEO das paginas geradas:
 
 ```bash
 npm run seo:rebuild
+```
+
+Para normalizar categorias do `titulos.json`:
+
+```bash
+npm run seo:normalize-categories
 ```
 
 Para reaplicar SEO nos artigos antigos:
@@ -269,6 +276,9 @@ O arquivo `gerar-conteudo.js` passou a centralizar uma etapa de publicacao SEO:
 - Ajusta `ProfilePage` da home para incluir `mainEntity`.
 - Diferencia titulos SEO longos usando mais contexto e categoria, evitando duplicidade.
 - Centraliza a escrita dos arquivos gerados para remover espacos finais de linha e evitar sujeira recorrente apos rebuilds.
+- Usa uma taxonomia canonica compartilhada para categorias, evitando categorias vazias, genericas ou com HTML.
+- Normaliza categorias vindas dos artigos automaticos antes de gerar listagens, breadcrumbs e sitemap.
+- Mantem categorias com menos de 3 artigos como navegaveis, mas com `noindex, follow` e fora do sitemap.
 
 ### Ajustes nos scripts
 
@@ -293,6 +303,10 @@ O `scripts/seo-audit.js` agora tambem verifica:
 - `ProfilePage` sem `mainEntity`.
 - Paginacoes profundas que continuam indexaveis.
 - Duplicidades apenas em paginas indexaveis, ignorando aliases e noindex.
+- Paginas de categoria indexaveis com nome invalido, como `Categoria`, `rdf:type` ou conteudo com HTML.
+- Categorias pequenas indexaveis com menos de 3 artigos.
+
+Tambem foi criado o `scripts/normalize-title-categories.js`, que corrige o campo `categoria` em `titulos.json` usando a mesma taxonomia do gerador.
 
 ### RSS e descoberta de conteudo
 
@@ -349,6 +363,7 @@ npm run seo:maintain
 Ele executa:
 
 ```bash
+npm run seo:normalize-categories
 npm run seo:backfill
 npm run seo:backfill:static
 npm run seo:rebuild
@@ -397,6 +412,21 @@ A comparacao e os commits automaticos ignoram `node_modules`, porque a instalaca
 
 Tambem foi adicionada uma regra de `.gitignore` para `node_modules/` e um bloqueio em `robots.txt` para `/node_modules/`, com a pasta removida do controle de versao. Nenhuma pagina HTML referencia `/node_modules`, entao a remocao reduz superficie publicada sem afetar navegacao do site.
 
+### Taxonomia e categorias
+
+Foi criado o arquivo `scripts/seo-categories.js` como fonte unica para categorias permitidas, aliases e regras de inferencia.
+
+Com isso:
+
+- 278 entradas antigas de `titulos.json` tiveram a categoria normalizada.
+- Categorias vazias passaram a ser inferidas pelo titulo do artigo.
+- Categorias equivalentes foram consolidadas, como `Seguranca Online` e `Seguranca Cibernetica` em `Seguranca`.
+- Categorias invalidas como `Categoria`, `rdf:type` e uma categoria com HTML foram removidas da fonte de dados.
+- Paginas antigas dessas categorias invalidas viraram paginas de compatibilidade `noindex, follow`, com canonical para `artigos/index.html`.
+- Categorias legitimas, mas com baixo volume, como `Educacao`, `Saude`, `Back-end`, `Negocios` e `Produtividade`, continuam acessiveis, mas nao entram no indice nem no sitemap ate terem pelo menos 3 artigos.
+
+Essa regra evita que os artigos gerados automaticamente criem novas categorias soltas ou paginas finas sem relevancia suficiente para busca.
+
 ### Resultado da validacao final
 
 Em 22/06/2026, o comando abaixo foi executado com sucesso:
@@ -407,10 +437,11 @@ npm run seo:maintain
 
 Resultado:
 
-- 17.423 arquivos HTML auditados.
+- 17.447 arquivos HTML auditados.
 - 8.054 artigos considerados publicaveis/indexaveis.
-- 8.119 URLs no sitemap.
+- 8.112 URLs no sitemap.
 - 100 artigos recentes no `rss.xml`.
+- 0 categorias invalidas restantes em `titulos.json`.
 - Nenhum `title`, `description`, `canonical`, `h1`, Open Graph, Twitter Card ou JSON-LD ausente.
 - Nenhum link interno quebrado.
 - Nenhuma URL `noindex` no sitemap.
@@ -420,6 +451,8 @@ Resultado:
 - Nenhum artigo indexavel sem artigos relacionados.
 - Nenhuma duplicidade de `title`, `description` ou `canonical` em paginas indexaveis.
 - Nenhuma paginacao profunda indexavel.
+- Nenhuma categoria invalida indexavel.
+- Nenhuma categoria fina indexavel.
 - Nenhum erro restante de `ProfilePage` sem `mainEntity`.
 - `git diff --check` sem problemas de whitespace apos o rebuild completo.
 

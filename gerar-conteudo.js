@@ -22,6 +22,11 @@ const {
   defaultSeoImageHeight,
   getArticleStructuredImages
 } = require('./scripts/seo-assets');
+const {
+  categoriasCanonicas,
+  minArtigosCategoriaIndexavel,
+  normalizarCategoria
+} = require('./scripts/seo-categories');
 const errosUsadosPath = './dados/erros_usados.json';
 
 const parser = new Parser({
@@ -186,66 +191,9 @@ const categoriaSugerida = match ? match[1].trim() : null;
 
 const conteudoLimpo = conteudo.replace(/\|([^|]+)\|/, '').trim();
 
-  // Carrega categorias já utilizadas
-  const titulosPath = "titulos.json";
-  let categoriasExistentes = [];
-
-  if (fs.existsSync(titulosPath)) {
-    const titulosGerados = JSON.parse(fs.readFileSync(titulosPath, "utf-8"));
-    categoriasExistentes = [...new Set(titulosGerados.map(t => t.categoria).filter(Boolean))];
-  }
-
-  let categoriaFinal;
-
-  if (categoriasExistentes.length >= 30) {
-    // Limita a categorias já existentes
-    const candidata = descobrirCategoria(tituloFallback, categoriasExistentes);
-    categoriaFinal = categoriasExistentes.includes(categoriaSugerida) ? categoriaSugerida : candidata;
-  } else {
-    // Ainda pode criar novas categorias
-    categoriaFinal = categoriaSugerida || descobrirCategoria(tituloFallback);
-  }
+  const categoriaFinal = normalizarCategoria(categoriaSugerida, tituloFallback);
 
   return { categoriaFinal, conteudoLimpo };
-}
-
-function descobrirCategoria(titulo, categoriasPermitidas = null) {
-  const texto = normalizarTexto(titulo);
-
-  const categorias = [
-    { padrao: /csharp|dotnet|maui|aspnet|blazor/, nome: "Programação" },
-    { padrao: /docker|kubernetes|devops|ci\/cd|terraform|ansible/, nome: "DevOps" },
-    { padrao: /chatgpt|openai|ia|inteligenciaartificial|llm|machinelearning|deeplearning/, nome: "Inteligência Artificial" },
-    { padrao: /seguranca|ciberseguranca|lgpd|jwt|criptografia|privacidade|ciberataque|cyber|vazamento|hacker/, nome: "Segurança" },
-    { padrao: /carreira|techlead|vaga|curriculo|entrevista|softskills|mentoria/, nome: "Carreira" },
-    { padrao: /frontend|html|css|javascript|react|vue|angular/, nome: "Front-end" },
-    { padrao: /backend|api|rest|graphql|microservico[s]?|webapi/, nome: "Back-end" },
-    { padrao: /banco[s]?dedados|postgres|mysql|sqlite|nosql|mongodb/, nome: "Banco de Dados" },
-    { padrao: /cloud|aws|azure|gcp|nuvem/, nome: "Cloud" },
-    { padrao: /blockchain|ethereum|bitcoin|cripto|nft|web3/, nome: "Blockchain" },
-    { padrao: /empreendedorismo|startup|pitch|investidor/, nome: "Empreendedorismo" },
-    { padrao: /negocio|gestao|okrs|kpis|estrategia/, nome: "Negócios" },
-    { padrao: /ci[êe]ncia|pesquisa|universidade|academic[oa]?/, nome: "Ciência" },
-    { padrao: /robot|robotica|arduino|automacao/, nome: "Robótica" },
-    { padrao: /veiculoeletrico|carroautonomo|automovel|tesla/, nome: "Tecnologia Automotiva" },
-    { padrao: /wearable|oculosinteligente|smartwatch|vestivel/, nome: "Tecnologia Vestível" },
-    { padrao: /visualizacao|grafico|dashboard|powerbi|dataviz/, nome: "Visualização de Dados" },
-    { padrao: /etica|moral|filosofia|bias|preconceitoalgoritmico/, nome: "Ética e Tecnologia" },
-    { padrao: /educacao|ensino|ead|plataformaeducacional|mooc/, nome: "Educação" },
-    { padrao: /automation|automacao\s?de\s?processos|rpa/, nome: "Automação" },
-    { padrao: /excel|planilha|vba|spreadsheet/, nome: "Produtividade" },
-    { padrao: /tarifa[s]?|preço[s]?|mercado|economia|imposto[s]?|taxa[s]?|aumento|vendas|comercial/, nome: "Economia e Mercado" }
-  ];
-
-  for (const item of categorias) {
-    if (item.padrao.test(texto)) {
-      if (!categoriasPermitidas || categoriasPermitidas.includes(item.nome)) {
-        return item.nome;
-      }
-    }
-  }
-
-  return categoriasPermitidas?.includes("Outros") ? "Outros" : (categoriasPermitidas ? categoriasPermitidas[0] : "Outros");
 }
 
 
@@ -284,7 +232,7 @@ function gerarPaginasPorCategoria(titulos) {
   const paginasGeradas = new Set();
 
   for (const artigo of prepararArtigosPublicaveis(titulos)) {
-    const cat = artigo.categoria || "Outros";
+    const cat = normalizarCategoria(artigo.categoria, artigo.titulo);
     if (!agrupados[cat]) agrupados[cat] = [];
     agrupados[cat].push(artigo);
   }
@@ -317,6 +265,7 @@ function gerarPaginasPorCategoria(titulos) {
         ? `Artigos sobre ${categoria} escritos por Anderson Damasio, com análises sobre arquitetura de software, tecnologia e desenvolvimento.`
         : `Página ${i + 1} dos artigos sobre ${categoria} escritos por Anderson Damasio.`;
       const categoryUrl = absoluteUrl(pagePath);
+      const categoriaIndexavel = artigos.length >= minArtigosCategoriaIndexavel && paginaListagemIndexavel(i);
 
       const html = `<!DOCTYPE html>
 <html lang="pt-BR">
@@ -327,7 +276,7 @@ function gerarPaginasPorCategoria(titulos) {
     title: pageTitle,
     description: pageDescription,
     canonicalPath: pagePath,
-    robots: paginaListagemIndexavel(i) ? "index, follow" : "noindex, follow",
+    robots: categoriaIndexavel ? "index, follow" : "noindex, follow",
     structuredData: [
       {
         "@context": "https://schema.org",
@@ -1014,7 +963,7 @@ function resolverArtigoPublicavel(artigo) {
   return {
     ...artigo,
     url,
-    categoria: artigo.categoria || nomeCategoriaDaUrl(url) || "Outros"
+    categoria: normalizarCategoria(artigo.categoria || nomeCategoriaDaUrl(url) || "Outros", artigo.titulo)
   };
 }
 
@@ -1181,11 +1130,11 @@ function gerarPaginasListagemObsoletas(paginasValidas) {
       destino = "/";
       titulo = "Artigos recentes";
     } else {
-      const matchCategoria = local.match(/^artigos\/([^/]+?)(\d+)\.html$/i);
+      const matchCategoria = local.match(/^artigos\/([^/]+?)(\d*)\.html$/i);
       if (matchCategoria && !validas.has(local)) {
         const html = fs.readFileSync(arquivo, "utf8");
         if (/Categoria:/i.test(html)) {
-          destino = `artigos/${matchCategoria[1]}.html`;
+          destino = matchCategoria[2] ? `artigos/${matchCategoria[1]}.html` : "artigos/index.html";
           titulo = `Categoria ${matchCategoria[1].replace(/-/g, " ")}`;
         }
       }
@@ -1652,11 +1601,7 @@ if (!noticia || !noticia.titulo) {
     }
 
 
-const categoriasExistentes = [...new Set(
-  titulosGerados
-    .map(t => t.categoria)
-    .filter(c => c && c !== "Outros")
-)];
+const textoCategoriasPermitidas = categoriasCanonicas.join(", ");
 
 console.error("ORIGEM",noticia);
 
@@ -1669,10 +1614,6 @@ if(textoPrincipal == ''){
   console.error("resumoFonte",textoPrincipal);
   return;
    }
-
-const textoCategoriasExistentes = categoriasExistentes.length
-  ? `As categorias já usadas até agora no site são: ${categoriasExistentes.join(", ")}. Dê preferência a reutilizar uma delas.`
-  : "";
 
 const prompt = `
 Você é Anderson Damasio, um Arquiteto de Software com ${textoAnosExperiencia} de experiência prática em sistemas escaláveis.
@@ -1714,9 +1655,8 @@ LEMBRE-SE: Se não conseguir inserir erros ortográficos, NÃO produza o texto.
    - A categoria mais adequada entre barras verticais, no formato: |Categoria|
 
 Nunca escreva \'|Categoria|\'
-Use exatamente uma destas categorias (sem criar novas):
-Programação, Segurança, Inteligência Artificial, Banco de Dados, DevOps, Blockchain, Carreira, Front-end, Back-end, Robótica, Cloud, Tecnologia,
-${textoCategoriasExistentes}
+Use exatamente uma destas categorias, sem criar novas e sem misturar com texto ou HTML:
+${textoCategoriasPermitidas}
 
 Exemplo de categoria: |Segurança|
 
@@ -2442,12 +2382,14 @@ function gerarSitemap(titulos) {
   artigosPublicaveis.forEach(t => {
     adicionar(t.url, t.data);
 
-    const categoria = t.categoria || "Outros";
+    const categoria = normalizarCategoria(t.categoria, t.titulo);
     if (!agrupados[categoria]) agrupados[categoria] = [];
     agrupados[categoria].push(t);
   });
 
   Object.entries(agrupados).forEach(([categoria, artigos]) => {
+    if (artigos.length < minArtigosCategoriaIndexavel) return;
+
     const slugCat = slugify(categoria);
     const paginas = Math.ceil(artigos.length / artigosPorPagina);
 

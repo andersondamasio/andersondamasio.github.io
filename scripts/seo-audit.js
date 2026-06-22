@@ -5,6 +5,10 @@ const {
   defaultSeoImage,
   defaultArticleImages
 } = require("./seo-assets");
+const {
+  minArtigosCategoriaIndexavel,
+  categoriaInvalida
+} = require("./seo-categories");
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
@@ -135,6 +139,28 @@ function collectJsonLdImageUrls(value, out = []) {
   return out;
 }
 
+function getCategoryNameFromPage($, title) {
+  const h1 = $("h1").first().text().trim();
+  const source = /^Categoria:/i.test(h1)
+    ? h1
+    : /^Categoria:/i.test(title)
+      ? title
+      : "";
+
+  if (!source) return null;
+
+  return source
+    .replace(/^Categoria:\s*/i, "")
+    .replace(/\s+-\s+P[aá]gina\s+\d+.*$/i, "")
+    .replace(/\s*\|\s*.*$/i, "")
+    .trim();
+}
+
+function isInvalidCategoryName(name) {
+  const clean = String(name || "").trim();
+  return categoriaInvalida(clean, clean);
+}
+
 function findProfilePageWithoutMainEntity(value, out = []) {
   if (!value || typeof value !== "object") return out;
 
@@ -200,7 +226,9 @@ const stats = {
   brokenInternalLinks: [],
   legacyPrivacyLinks: [],
   profilePageMissingMainEntity: [],
-  deepPaginationIndexable: []
+  deepPaginationIndexable: [],
+  invalidCategoryPages: [],
+  thinCategoryPagesIndexable: []
 };
 
 const titles = new Map();
@@ -232,10 +260,11 @@ for (const file of walk(root)) {
   const twitterImageAlt = ($('meta[name="twitter:image:alt" i]').attr("content") || "").trim();
   const hasRssAlternate = $('link[rel="alternate" i][type="application/rss+xml" i]').length > 0;
   const relatedLinks = (html.match(/<section\s+class=["'][^"']*\brelated-articles\b[\s\S]*?<\/section>/i)?.[0].match(/<a\s+[^>]*href=/gi) || []).length;
+  const categoryName = getCategoryNameFromPage($, title);
+  const isCategoryPage = Boolean(categoryName);
   const isArticleContentPage = fileRel.startsWith("artigos/") &&
     fileRel !== "artigos/index.html" &&
-    !/^Categoria:/i.test($("h1").first().text().trim()) &&
-    !/^Categoria:/i.test(title) &&
+    !isCategoryPage &&
     !/^Artigos por categoria/i.test(title);
   robotsByFile.set(fileRel, robots);
 
@@ -278,6 +307,15 @@ for (const file of walk(root)) {
   if (!noindex && isArticleContentPage && relatedLinks < 2) {
     pushExample(stats.missingRelatedArticles, fileRel);
   }
+  if (!noindex && isCategoryPage && isInvalidCategoryName(categoryName)) {
+    pushExample(stats.invalidCategoryPages, `${fileRel}: ${categoryName || "(sem categoria)"}`);
+  }
+  if (!noindex && isCategoryPage && /^artigos\/[^/]+\.html$/i.test(fileRel)) {
+    const articleLinks = $("main li a[href]").length;
+    if (articleLinks < minArtigosCategoriaIndexavel) {
+      pushExample(stats.thinCategoryPagesIndexable, `${fileRel}: ${articleLinks} links`);
+    }
+  }
 
   $("img").each((_, img) => {
     const src = ($(img).attr("src") || "").trim();
@@ -317,7 +355,7 @@ for (const file of walk(root)) {
   });
 
   const rootPagination = fileRel.match(/^index(\d+)\.html$/i);
-  const categoryPagination = /^Categoria:/i.test($("h1").first().text().trim()) || /^Categoria:/i.test(title)
+  const categoryPagination = isCategoryPage
     ? fileRel.match(/^artigos\/[^/]+(\d+)\.html$/i)
     : null;
   const pageNumber = rootPagination
@@ -457,7 +495,9 @@ const report = {
     brokenInternalLinks: stats.brokenInternalLinks,
     legacyPrivacyLinks: stats.legacyPrivacyLinks,
     profilePageMissingMainEntity: stats.profilePageMissingMainEntity,
-    deepPaginationIndexable: stats.deepPaginationIndexable
+    deepPaginationIndexable: stats.deepPaginationIndexable,
+    invalidCategoryPages: stats.invalidCategoryPages,
+    thinCategoryPagesIndexable: stats.thinCategoryPagesIndexable
   },
   duplicates: {
     titles: summarizeDuplicates(titles),
