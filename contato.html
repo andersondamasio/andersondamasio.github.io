@@ -79,6 +79,9 @@ input, textarea {
   width: 100%;
   box-sizing: border-box;
 }
+.form-honeypot {
+  display: none !important;
+}
 button {
   padding: 0.75rem;
   background-color: #0a66c2;
@@ -118,9 +121,9 @@ button:hover {
   <p>Ou conecte-se comigo pelo <a href="https://www.linkedin.com/in/andersondamasio/" target="_blank">LinkedIn</a>.</p>
 
   <h2>Ou envie uma mensagem diretamente pelo formulário:</h2>
-  <form action="https://formsubmit.co/anderson@andersondamasio.com.br" method="POST">
-    <input type="hidden" name="_captcha" value="false">
+  <form id="contact-form" action="https://formsubmit.co/anderson@andersondamasio.com.br" method="POST">
     <input type="hidden" name="_next" value="https://www.andersondamasio.com.br/obrigado.html">
+    <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required>
@@ -129,7 +132,7 @@ button:hover {
     <input type="email" id="email" name="email" required>
 
     <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    <textarea id="mensagem" name="mensagem" rows="5" minlength="10" required></textarea>
 
     <button type="submit">Enviar</button>
   </form>
@@ -182,6 +185,32 @@ button:hover {
 </div>
 
 <script src="/scripts/cookies-banner.js"></script>
+<script>
+  const contactForm = document.getElementById('contact-form');
+  const messageField = document.getElementById('mensagem');
+
+  if (contactForm && messageField) {
+    messageField.addEventListener('input', () => {
+      messageField.setCustomValidity('');
+    });
+
+    contactForm.addEventListener('submit', (event) => {
+      const honeypot = contactForm.querySelector('input[name="_honey"]');
+      const message = messageField.value.trim();
+
+      if (honeypot && honeypot.value.trim() !== '') {
+        event.preventDefault();
+        return;
+      }
+
+      if (message.length < 10) {
+        event.preventDefault();
+        messageField.setCustomValidity('Digite uma mensagem com pelo menos 10 caracteres.');
+        messageField.reportValidity();
+      }
+    });
+  }
+</script>
 
 </body>
 </html>
