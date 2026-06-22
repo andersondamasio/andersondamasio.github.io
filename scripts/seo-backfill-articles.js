@@ -9,6 +9,7 @@ const {
   defaultSeoImageHeight,
   getArticleStructuredImages
 } = require("./seo-assets");
+const { lerDimensoesImagemLocal } = require("./seo-image-dimensions");
 const { gerarResourceHints } = require("./seo-resource-hints");
 const { normalizarRobotsMeta } = require("./seo-robots");
 
@@ -297,7 +298,7 @@ ${assets}
 `.replace(/[ \t]+$/gm, "");
 }
 
-function otimizarImagemHtml(tag, { title, isFirstImage }) {
+function otimizarImagemHtml(tag, { title, isFirstImage, fileRel }) {
   const $fragment = cheerio.load(tag, { decodeEntities: false }, false);
   const img = $fragment("img").first();
   const src = (img.attr("src") || "").trim();
@@ -311,6 +312,12 @@ function otimizarImagemHtml(tag, { title, isFirstImage }) {
 
   img.attr("decoding", "async");
 
+  const dimensions = lerDimensoesImagemLocal(src, { root, fileRel });
+  if (dimensions) {
+    img.attr("width", String(dimensions.width));
+    img.attr("height", String(dimensions.height));
+  }
+
   if (isFirstImage) {
     img.attr("fetchpriority", "high");
     img.removeAttr("loading");
@@ -322,12 +329,12 @@ function otimizarImagemHtml(tag, { title, isFirstImage }) {
   return $fragment.html("img");
 }
 
-function otimizarImagensArtigo(html, title) {
+function otimizarImagensArtigo(html, title, fileRel) {
   let encontrouPrimeiraImagem = false;
 
   return html.replace(/<img\b[^>]*>/gi, tag => {
     const isFirstImage = !encontrouPrimeiraImagem;
-    const updated = otimizarImagemHtml(tag, { title, isFirstImage });
+    const updated = otimizarImagemHtml(tag, { title, isFirstImage, fileRel });
 
     if (updated !== tag) {
       encontrouPrimeiraImagem = true;
@@ -411,7 +418,7 @@ for (const file of walk(root)) {
     published: metaByUrl?.data || metaByTitle?.data
   });
 
-  const htmlComImagensOtimizadas = otimizarImagensArtigo(html, title);
+  const htmlComImagensOtimizadas = otimizarImagensArtigo(html, title, fileRel);
   const updatedHtml = htmlComImagensOtimizadas
     .replace(/<html(?![^>]*\blang=)([^>]*)>/i, '<html lang="pt-BR"$1>')
     .replace(/(<head[\s\S]*?>)([\s\S]*?)(<\/head>)/i, (_, open, head, close) => {

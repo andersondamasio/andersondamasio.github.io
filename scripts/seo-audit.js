@@ -15,6 +15,7 @@ const {
   hostPrecisaDeResourceHint,
   normalizarHostResourceHint
 } = require("./seo-resource-hints");
+const { arquivoLocalImagem } = require("./seo-image-dimensions");
 const { robotsTemPreviewAmplo } = require("./seo-robots");
 
 const root = process.cwd();
@@ -279,6 +280,7 @@ const stats = {
   articleJsonLdMissingImageVariants: [],
   imagesWithoutAlt: [],
   imagesWithoutAsyncDecoding: [],
+  imagesWithoutDimensions: [],
   articleFirstImageWithoutHighPriority: [],
   articleImagesWithoutLazyLoading: [],
   sitemapMissingFiles: [],
@@ -453,9 +455,14 @@ for (const file of walk(root)) {
   pageImages.forEach((img, index) => {
     const src = ($(img).attr("src") || "").trim();
     const alt = ($(img).attr("alt") || "").trim();
+    const width = ($(img).attr("width") || "").trim();
+    const height = ($(img).attr("height") || "").trim();
     if (src && !alt) pushExample(stats.imagesWithoutAlt, `${fileRel}: ${src}`);
     if (src && ($(img).attr("decoding") || "").trim().toLowerCase() !== "async") {
       pushExample(stats.imagesWithoutAsyncDecoding, `${fileRel}: ${src}`);
+    }
+    if (src && arquivoLocalImagem(src, { root, fileRel }) && (!width || !height)) {
+      pushExample(stats.imagesWithoutDimensions, `${fileRel}: ${src}`);
     }
 
     if (!noindex && isArticleContentPage) {
@@ -633,6 +640,7 @@ const report = {
     articleJsonLdMissingImageVariants: stats.articleJsonLdMissingImageVariants,
     imagesWithoutAlt: stats.imagesWithoutAlt,
     imagesWithoutAsyncDecoding: stats.imagesWithoutAsyncDecoding,
+    imagesWithoutDimensions: stats.imagesWithoutDimensions,
     articleFirstImageWithoutHighPriority: stats.articleFirstImageWithoutHighPriority,
     articleImagesWithoutLazyLoading: stats.articleImagesWithoutLazyLoading,
     sitemapMissingFiles: stats.sitemapMissingFiles,

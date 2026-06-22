@@ -525,14 +525,18 @@ Dominios cobertos:
 Tambem foi padronizada a otimizacao de imagens em artigos:
 
 - Novas imagens de capa geradas pelo `gerar-conteudo.js` recebem `decoding="async"` e `fetchpriority="high"`.
+- Imagens locais de artigos recebem `width` e `height` reais para reduzir risco de deslocamento visual durante o carregamento.
 - O `alt` da imagem de capa passa a usar o titulo do artigo quando disponivel.
-- O backfill retroativo corrige imagens antigas, incluindo `decoding="async"` e prioridade alta na primeira imagem do artigo.
+- O backfill retroativo corrige imagens antigas, incluindo `decoding="async"`, dimensoes reais e prioridade alta na primeira imagem do artigo.
 - Imagens adicionais do artigo passam a receber `loading="lazy"`.
+
+Foi criado o helper `scripts/seo-image-dimensions.js` para ler dimensoes de imagens locais sem depender do `sharp` no ambiente Windows. Ele suporta JPEG, PNG e GIF e e usado pelo gerador, pelo backfill e pela auditoria.
 
 A auditoria estrita agora falha se encontrar:
 
 - Imagem sem `alt`.
 - Imagem sem `decoding="async"`.
+- Imagem local sem `width` e `height`.
 - Primeira imagem de artigo sem `fetchpriority="high"`.
 - Imagens seguintes de artigo sem `loading="lazy"`.
 - Scripts de terceiros conhecidos sem `preconnect`/`dns-prefetch`.
@@ -573,6 +577,7 @@ Resultado:
 - Nenhuma pagina com script terceiro conhecido sem resource hints.
 - Nenhuma imagem sem `alt`.
 - Nenhuma imagem sem `decoding="async"`.
+- Nenhuma imagem local sem `width` e `height`.
 - Nenhuma primeira imagem de artigo sem `fetchpriority="high"`.
 - Nenhuma imagem adicional de artigo sem `loading="lazy"`.
 - Nenhum link interno quebrado.

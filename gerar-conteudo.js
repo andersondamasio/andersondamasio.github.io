@@ -26,6 +26,7 @@ const {
   minArtigosCategoriaIndexavel,
   normalizarCategoria
 } = require('./scripts/seo-categories');
+const { lerDimensoesImagemLocal } = require('./scripts/seo-image-dimensions');
 const { gerarResourceHints } = require('./scripts/seo-resource-hints');
 const { normalizarRobotsMeta } = require('./scripts/seo-robots');
 
@@ -1657,6 +1658,10 @@ const urlLocal = `artigos/${categoriaSlug}/${slug}.html`;
     const dataHoraFormatada = formatDateTime(now);
     const dataISO = new Date(now).toISOString();
     const imagemCapaUrl = null;//await buscarImagemCapa(titulo, slug);
+    const imagemCapaDimensoes = lerDimensoesImagemLocal(imagemCapaUrl);
+    const imagemCapaDimensoesHtml = imagemCapaDimensoes
+      ? ` width="${imagemCapaDimensoes.width}" height="${imagemCapaDimensoes.height}"`
+      : "";
     const articleUrl = absoluteUrl(urlLocal);
     const articleImage = imagemCapaUrl || defaultSeoImage;
 
@@ -1791,7 +1796,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 ${gerarHeaderNavegacao("../..")}
 <main>
 <h1>${titulo}</h1>
-${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="${escapeAttribute(titulo)}" decoding="async" fetchpriority="high" style="width:100%; max-width:600px; border-radius:8px; margin: 0 auto 1.5rem; display:block;" />` : ''}
+${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="${escapeAttribute(titulo)}" decoding="async" fetchpriority="high"${imagemCapaDimensoesHtml} style="width:100%; max-width:600px; border-radius:8px; margin: 0 auto 1.5rem; display:block;" />` : ''}
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
 
 <!-- Ezoic Placeholder: incontent_5 (ID 115) -->
