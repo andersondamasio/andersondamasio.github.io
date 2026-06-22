@@ -11,6 +11,10 @@ const {
   categoriaInvalida,
   normalizarCategoria
 } = require("./seo-categories");
+const {
+  hostPrecisaDeResourceHint,
+  normalizarHostResourceHint
+} = require("./seo-resource-hints");
 const { robotsTemPreviewAmplo } = require("./seo-robots");
 
 const root = process.cwd();
@@ -270,9 +274,13 @@ const stats = {
   missingOgImageDetails: [],
   missingTwitter: [],
   robotsMissingPreviewDirectives: [],
+  missingResourceHints: [],
   missingJsonLd: [],
   articleJsonLdMissingImageVariants: [],
   imagesWithoutAlt: [],
+  imagesWithoutAsyncDecoding: [],
+  articleFirstImageWithoutHighPriority: [],
+  articleImagesWithoutLazyLoading: [],
   sitemapMissingFiles: [],
   sitemapDuplicateLocs: [],
   sitemapNoindexUrls: [],
@@ -358,6 +366,11 @@ for (const file of walk(root)) {
   const twitterImage = ($('meta[name="twitter:image" i]').attr("content") || "").trim();
   const twitterImageAlt = ($('meta[name="twitter:image:alt" i]').attr("content") || "").trim();
   const hasRssAlternate = $('link[rel="alternate" i][type="application/rss+xml" i]').length > 0;
+  const hintedHosts = new Set();
+  $('link[rel="preconnect" i], link[rel="dns-prefetch" i]').each((_, link) => {
+    const host = normalizarHostResourceHint(($(link).attr("href") || "").trim());
+    if (host) hintedHosts.add(host);
+  });
   const relatedLinks = (html.match(/<section\s+class=["'][^"']*\brelated-articles\b[\s\S]*?<\/section>/i)?.[0].match(/<a\s+[^>]*href=/gi) || []).length;
   const categoryName = getCategoryNameFromPage($, title);
   const isCategoryPage = Boolean(categoryName);
@@ -401,6 +414,12 @@ for (const file of walk(root)) {
   if (!noindex && !robotsTemPreviewAmplo(robots)) {
     pushExample(stats.robotsMissingPreviewDirectives, `${fileRel}: ${robots || "(sem robots)"}`);
   }
+  $("script[src]").each((_, script) => {
+    const host = normalizarHostResourceHint(($(script).attr("src") || "").trim());
+    if (hostPrecisaDeResourceHint(host) && !hintedHosts.has(host)) {
+      pushExample(stats.missingResourceHints, `${fileRel}: ${host}`);
+    }
+  });
   if (fileRel.startsWith("artigos/") && !$('script[type="application/ld+json" i]').length) {
     pushExample(stats.missingJsonLd, fileRel);
   }
@@ -430,10 +449,27 @@ for (const file of walk(root)) {
     }
   }
 
-  $("img").each((_, img) => {
+  const pageImages = $("img[src]").toArray();
+  pageImages.forEach((img, index) => {
     const src = ($(img).attr("src") || "").trim();
     const alt = ($(img).attr("alt") || "").trim();
     if (src && !alt) pushExample(stats.imagesWithoutAlt, `${fileRel}: ${src}`);
+    if (src && ($(img).attr("decoding") || "").trim().toLowerCase() !== "async") {
+      pushExample(stats.imagesWithoutAsyncDecoding, `${fileRel}: ${src}`);
+    }
+
+    if (!noindex && isArticleContentPage) {
+      const fetchPriority = ($(img).attr("fetchpriority") || "").trim().toLowerCase();
+      const loading = ($(img).attr("loading") || "").trim().toLowerCase();
+
+      if (index === 0 && fetchPriority !== "high") {
+        pushExample(stats.articleFirstImageWithoutHighPriority, `${fileRel}: ${src}`);
+      }
+
+      if (index > 0 && loading !== "lazy") {
+        pushExample(stats.articleImagesWithoutLazyLoading, `${fileRel}: ${src}`);
+      }
+    }
   });
 
   $('script[type="application/ld+json" i]').each((_, script) => {
@@ -592,9 +628,13 @@ const report = {
     missingOgImageDetails: stats.missingOgImageDetails,
     missingTwitter: stats.missingTwitter,
     robotsMissingPreviewDirectives: stats.robotsMissingPreviewDirectives,
+    missingResourceHints: stats.missingResourceHints,
     missingJsonLd: stats.missingJsonLd,
     articleJsonLdMissingImageVariants: stats.articleJsonLdMissingImageVariants,
     imagesWithoutAlt: stats.imagesWithoutAlt,
+    imagesWithoutAsyncDecoding: stats.imagesWithoutAsyncDecoding,
+    articleFirstImageWithoutHighPriority: stats.articleFirstImageWithoutHighPriority,
+    articleImagesWithoutLazyLoading: stats.articleImagesWithoutLazyLoading,
     sitemapMissingFiles: stats.sitemapMissingFiles,
     sitemapDuplicateLocs: stats.sitemapDuplicateLocs,
     sitemapNoindexUrls: stats.sitemapNoindexUrls,

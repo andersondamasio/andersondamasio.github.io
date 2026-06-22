@@ -9,6 +9,7 @@ const {
   defaultSeoImageHeight,
   getArticleStructuredImages
 } = require("./seo-assets");
+const { gerarResourceHints } = require("./seo-resource-hints");
 const { normalizarRobotsMeta } = require("./seo-robots");
 
 const root = process.cwd();
@@ -243,6 +244,7 @@ function buildSeoHead({ title, description, url, category, published }) {
 <meta name="robots" content="${escapeAttribute(robotsMeta)}">
 <link rel="canonical" href="${escapeAttribute(pageUrl)}">
 <link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
+${gerarResourceHints()}
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="${escapeAttribute(siteName)}">
 <meta property="og:type" content="article">
@@ -276,6 +278,7 @@ function collectHeadAssets(head) {
       const value = match[0];
       if (/rel=["']canonical["']/i.test(value)) continue;
       if (/rel=["']alternate["']/i.test(value) && /application\/rss\+xml/i.test(value)) continue;
+      if (/rel=["'](?:preconnect|dns-prefetch)["']/i.test(value)) continue;
       if (/application\/ld\+json/i.test(value)) continue;
       assets.push(value.trim());
     }
@@ -292,6 +295,48 @@ function rebuildHead(head, seo) {
 ${seo}
 ${assets}
 `.replace(/[ \t]+$/gm, "");
+}
+
+function otimizarImagemHtml(tag, { title, isFirstImage }) {
+  const $fragment = cheerio.load(tag, { decodeEntities: false }, false);
+  const img = $fragment("img").first();
+  const src = (img.attr("src") || "").trim();
+
+  if (!src) return tag;
+
+  const alt = (img.attr("alt") || "").trim();
+  if (!alt || /^imagem relacionada$/i.test(alt)) {
+    img.attr("alt", title || defaultSeoImageAlt);
+  }
+
+  img.attr("decoding", "async");
+
+  if (isFirstImage) {
+    img.attr("fetchpriority", "high");
+    img.removeAttr("loading");
+  } else {
+    img.attr("loading", "lazy");
+    img.removeAttr("fetchpriority");
+  }
+
+  return $fragment.html("img");
+}
+
+function otimizarImagensArtigo(html, title) {
+  let encontrouPrimeiraImagem = false;
+
+  return html.replace(/<img\b[^>]*>/gi, tag => {
+    const isFirstImage = !encontrouPrimeiraImagem;
+    const updated = otimizarImagemHtml(tag, { title, isFirstImage });
+
+    if (updated !== tag) {
+      encontrouPrimeiraImagem = true;
+    } else if (/<img\b/i.test(tag) && /\bsrc\s*=/i.test(tag)) {
+      encontrouPrimeiraImagem = true;
+    }
+
+    return updated;
+  });
 }
 
 function isCollectionPage($, fileRel) {
@@ -366,7 +411,8 @@ for (const file of walk(root)) {
     published: metaByUrl?.data || metaByTitle?.data
   });
 
-  const updatedHtml = html
+  const htmlComImagensOtimizadas = otimizarImagensArtigo(html, title);
+  const updatedHtml = htmlComImagensOtimizadas
     .replace(/<html(?![^>]*\blang=)([^>]*)>/i, '<html lang="pt-BR"$1>')
     .replace(/(<head[\s\S]*?>)([\s\S]*?)(<\/head>)/i, (_, open, head, close) => {
       return `${open}${rebuildHead(head, seo)}${close}`;

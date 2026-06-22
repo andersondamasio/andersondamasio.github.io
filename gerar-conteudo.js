@@ -26,6 +26,7 @@ const {
   minArtigosCategoriaIndexavel,
   normalizarCategoria
 } = require('./scripts/seo-categories');
+const { gerarResourceHints } = require('./scripts/seo-resource-hints');
 const { normalizarRobotsMeta } = require('./scripts/seo-robots');
 
 const parser = new Parser({
@@ -713,6 +714,7 @@ function gerarSeoHead({
 <meta name="robots" content="${escapeAttribute(robotsMeta)}">
 <link rel="canonical" href="${escapeAttribute(canonicalUrl)}">
 <link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
+${gerarResourceHints()}
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="${escapeAttribute(siteName)}">
 <meta property="og:type" content="${escapeAttribute(type)}">
@@ -1789,7 +1791,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 ${gerarHeaderNavegacao("../..")}
 <main>
 <h1>${titulo}</h1>
-${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="Imagem relacionada" style="width:100%; max-width:600px; border-radius:8px; margin: 0 auto 1.5rem; display:block;" />` : ''}
+${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="${escapeAttribute(titulo)}" decoding="async" fetchpriority="high" style="width:100%; max-width:600px; border-radius:8px; margin: 0 auto 1.5rem; display:block;" />` : ''}
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
 
 <!-- Ezoic Placeholder: incontent_5 (ID 115) -->

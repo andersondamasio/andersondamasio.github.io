@@ -6,6 +6,7 @@ const {
   defaultSeoImageWidth,
   defaultSeoImageHeight
 } = require("./seo-assets");
+const { gerarResourceHints } = require("./seo-resource-hints");
 const { normalizarRobotsMeta } = require("./seo-robots");
 
 const root = process.cwd();
@@ -97,6 +98,7 @@ function collectHeadAssets(head) {
       const value = match[0];
       if (/rel=["']canonical["']/i.test(value)) continue;
       if (/rel=["']alternate["']/i.test(value) && /application\/rss\+xml/i.test(value)) continue;
+      if (/rel=["'](?:preconnect|dns-prefetch)["']/i.test(value)) continue;
       if (/application\/ld\+json/i.test(value)) continue;
       assets.push(value.trim());
     }
@@ -127,6 +129,7 @@ function buildSeo(page) {
 <meta name="robots" content="${escapeAttribute(robotsMeta)}">
 <link rel="canonical" href="${escapeAttribute(url)}">
 <link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
+${gerarResourceHints()}
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="${escapeAttribute(siteName)}">
 <meta property="og:type" content="website">

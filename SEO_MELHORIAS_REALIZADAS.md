@@ -505,6 +505,38 @@ index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
 
 Isso permite snippets mais completos, imagens maiores nos resultados e melhor aproveitamento de previews quando o Google considerar apropriado.
 
+### Core Web Vitals, terceiros e imagens
+
+Foi adicionada uma camada de otimizacao de carregamento sem alterar a ordem dos scripts de consentimento/anuncios, para reduzir risco de quebra.
+
+Foi criado o helper `scripts/seo-resource-hints.js`, usado pelo gerador e pelos backfills para incluir:
+
+- `preconnect` para dominios criticos de terceiros.
+- `dns-prefetch` para os mesmos dominios.
+- Auditoria para impedir que paginas com scripts desses terceiros sejam publicadas sem os resource hints correspondentes.
+
+Dominios cobertos:
+
+- `www.googletagmanager.com`
+- `cmp.gatekeeperconsent.com`
+- `the.gatekeeperconsent.com`
+- `www.ezojs.com`
+
+Tambem foi padronizada a otimizacao de imagens em artigos:
+
+- Novas imagens de capa geradas pelo `gerar-conteudo.js` recebem `decoding="async"` e `fetchpriority="high"`.
+- O `alt` da imagem de capa passa a usar o titulo do artigo quando disponivel.
+- O backfill retroativo corrige imagens antigas, incluindo `decoding="async"` e prioridade alta na primeira imagem do artigo.
+- Imagens adicionais do artigo passam a receber `loading="lazy"`.
+
+A auditoria estrita agora falha se encontrar:
+
+- Imagem sem `alt`.
+- Imagem sem `decoding="async"`.
+- Primeira imagem de artigo sem `fetchpriority="high"`.
+- Imagens seguintes de artigo sem `loading="lazy"`.
+- Scripts de terceiros conhecidos sem `preconnect`/`dns-prefetch`.
+
 ### Resultado da validacao final
 
 Em 22/06/2026, o comando abaixo foi executado com sucesso:
@@ -523,6 +555,11 @@ Resultado:
 - Nenhum `title`, `description`, `canonical`, `h1`, Open Graph, Twitter Card ou JSON-LD ausente.
 - Nenhum `<title>` indexavel acima de 100 caracteres.
 - Nenhuma pagina indexavel sem `max-snippet:-1`, `max-image-preview:large` e `max-video-preview:-1`.
+- Nenhuma pagina com script terceiro conhecido sem resource hints.
+- Nenhuma imagem sem `alt`.
+- Nenhuma imagem sem `decoding="async"`.
+- Nenhuma primeira imagem de artigo sem `fetchpriority="high"`.
+- Nenhuma imagem adicional de artigo sem `loading="lazy"`.
 - Nenhum link interno quebrado.
 - Nenhuma URL `noindex` no sitemap.
 - Nenhum problema em `robots.txt`.
