@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 25 Jun 2026 18:09:09 GMT</lastBuildDate>
+<lastBuildDate>Thu, 25 Jun 2026 20:56:06 GMT</lastBuildDate>
+<item>
+<title>Descontos que Fazem a Diferença: O Que os Arquitetos de Software Podem Aprender com o Prime Day</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/descontos-que-fazem-a-diferenca-o-que-os-arquitetos-de-software-podem-aprender-com-o-prime-day.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/descontos-que-fazem-a-diferenca-o-que-os-arquitetos-de-software-podem-aprender-com-o-prime-day.html</guid>
+<pubDate>Thu, 25 Jun 2026 20:56:06 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>O Amazon Prime Day, evento que já se tornou uma tradição no calendário de promoções, trouxe uma avalanche de ofertas em tecnologia. Ao longo de três dias,...</description>
+</item>
 <item>
 <title>Aumentos de Preços da Apple: Como a Arquitetura de Software Pode Ajudar na Tomada de Decisões</title>
 <link>https://www.andersondamasio.com.br/artigos/tecnologia/aumentos-de-precos-da-apple-como-a-arquitetura-de-software-pode-ajudar-na-tomada-de-decisoes.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 09 Jun 2026 05:11:51 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Nos últimos tempos, temos visto uma verdadeira corrida no setor de quick-commerce, especialmente na Índia, onde startups como a Zepto estão desbravando um...</description>
-</item>
-<item>
-<title>Como a Nova Era do MacOS Pode Revolucionar seu Fluxo de Trabalho</title>
-<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/como-a-nova-era-do-macos-pode-revolucionar-seu-fluxo-de-trabalho.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/como-a-nova-era-do-macos-pode-revolucionar-seu-fluxo-de-trabalho.html</guid>
-<pubDate>Tue, 09 Jun 2026 00:12:35 GMT</pubDate>
-<category>Desenvolvimento de Software</category>
-<description>Recentemente, a Apple apresentou o MacOS 27, carinhosamente chamado de &quot;Golden Gate&quot;, durante a WWDC 2026. Para quem trabalha com tecnologia, esse...</description>
 </item>
 </channel>
 </rss>
