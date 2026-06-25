@@ -776,6 +776,63 @@ const devBlogsFeeds = [
   "https://www.zdnet.com/topic/artificial-intelligence/rss.xml"
 ];
 
+const xRecentSearchQueries = [
+  {
+    nome: "contas-tecnicas",
+    query: "(from:OpenAI OR from:AnthropicAI OR from:github OR from:GoogleCloudTech OR from:awscloud OR from:CloudflareDev OR from:Microsoft) has:links -is:retweet -is:reply"
+  },
+  {
+    nome: "topicos-tecnicos-en",
+    query: '("software architecture" OR "developer tools" OR "cloud native" OR cybersecurity OR vulnerability OR PostgreSQL OR Kubernetes OR "AI agents" OR LLM OR DevOps OR observability) has:links -is:retweet -is:reply lang:en'
+  },
+  {
+    nome: "topicos-tecnicos-pt",
+    query: '("arquitetura de software" OR "segurança" OR "inteligência artificial" OR devops OR cloud OR PostgreSQL OR Kubernetes) has:links -is:retweet -is:reply lang:pt'
+  }
+];
+
+const fonteDominioScores = [
+  ["martinfowler.com", 36],
+  ["infoq.com", 30],
+  ["devblogs.microsoft.com", 28],
+  ["arstechnica.com", 20],
+  ["wired.com", 16],
+  ["techcrunch.com", 14],
+  ["bbc.com", 12],
+  ["zdnet.com", 6]
+];
+
+const dominiosSociaisOuIntermediarios = [
+  "x.com",
+  "twitter.com",
+  "t.co",
+  "facebook.com",
+  "linkedin.com",
+  "instagram.com",
+  "threads.net",
+  "youtube.com",
+  "youtu.be"
+];
+
+const termosTecnicosFonte = [
+  [/arquitetura de software|software architecture|system design|distributed systems?|sistemas distribuidos/i, 24],
+  [/developer tools?|ferramentas de desenvolvimento|programa[cç][aã]o|coding|code review|api\b|sdk\b/i, 18],
+  [/\bcloud\b|cloud native|aws\b|azure\b|google cloud|kubernetes|docker|serverless|infraestrutura/i, 18],
+  [/seguran[cç]a|security|cybersecurity|vulnerability|ransomware|malware|privacy|privacidade|breach|cve\b/i, 22],
+  [/intelig[eê]ncia artificial|\bai\b|artificial intelligence|llm|agentic|agentes?|machine learning|deep learning|openai|anthropic/i, 20],
+  [/banco de dados|database|postgresql|postgres|mysql|redis|sqlite|mongodb|data engineering|pipeline/i, 18],
+  [/observability|observabilidade|reliability|resili[eê]ncia|incident|outage|latency|performance|escala|scaling/i, 16],
+  [/open source|c[oó]digo aberto|linux|github|rust|typescript|\.net|java\b|python/i, 12],
+  [/startup|funding|venture|produto|platform|plataforma|regulation|regula[cç][aã]o/i, 8]
+];
+
+const termosPromocionaisOuReview = [
+  /\bdeal(s)?\b|discount|sale|prime day|black friday|cyber monday|bundle savings/i,
+  /\bbest\b.*\b(phone|tablet|tv|laptop|watch|headphones|earbuds|monitor|camera|router|mouse|keyboard|microsd|ssd)\b/i,
+  /\breview\b|\btested\b|hands[- ]on|vs\.?|versus|upgrade|off select|for only \$|save \$|under \$|coupon/i,
+  /oferta|promo[cç][aã]o|desconto|vale a pena|melhor (celular|tablet|tv|fone|notebook|laptop|monitor|mouse)/i
+];
+
 function arquivoIndexavel(arquivo) {
   try {
     const stats = fs.statSync(arquivo);
@@ -1259,20 +1316,48 @@ function corrigirLinksLegadosHtml() {
   return alterados;
 }
 
+async function buscarXApi(pathname, { params = {}, descricao = "X API" } = {}) {
+  if (!twitterBearer) {
+    throw new Error("TWITTER_BEARER_TOKEN não configurado");
+  }
+
+  const bases = ["https://api.x.com/2", "https://api.twitter.com/2"];
+  let ultimoErro = null;
+
+  for (const base of bases) {
+    try {
+      return await axios.get(`${base}${pathname}`, {
+        params,
+        headers: { Authorization: `Bearer ${twitterBearer}` },
+        timeout: 15000
+      });
+    } catch (erro) {
+      ultimoErro = erro;
+      const status = erro.response?.status;
+      if (status && ![401, 403, 404, 410].includes(status)) break;
+    }
+  }
+
+  throw ultimoErro || new Error(`Falha ao consultar ${descricao}`);
+}
+
 async function verificarTweetOriginalViaApi(tweetUrl) {
   const match = tweetUrl.match(/status\/(\d+)/);
   if (!match) return null;
+  if (!twitterBearer) return null;
 
   const tweetId = match[1];
-  const apiUrl = `https://api.twitter.com/2/tweets/${tweetId}?tweet.fields=referenced_tweets`;
 
   try {
-    const res = await axios.get(apiUrl, {
-      headers: { Authorization: `Bearer ${twitterBearer}` }
+    const res = await buscarXApi(`/tweets/${tweetId}`, {
+      params: {
+        "tweet.fields": "referenced_tweets"
+      },
+      descricao: `tweet ${tweetId}`
     });
 
     const referenced = res.data.data?.referenced_tweets?.find(t => t.type === 'replied_to');
-    return referenced?.id ? `https://twitter.com/i/web/status/${referenced.id}` : null;
+    return referenced?.id ? `https://x.com/i/web/status/${referenced.id}` : null;
 
   } catch (e) {
     console.warn(`⚠️ Erro na API do Twitter: ${e.message}`);
@@ -1294,17 +1379,176 @@ function normalizarTexto(str) {
     .replace(/[^a-z0-9]/g, '') || "";
 }
 
+function normalizarUrlComparacaoFonte(url) {
+  const normalizada = normalizarFonteUrl(url);
+  if (!normalizada) return null;
+
+  try {
+    const parsed = new URL(normalizada);
+    [...parsed.searchParams.keys()].forEach(key => {
+      if (/^(utm_|fbclid$|gclid$|mc_cid$|mc_eid$|at_|cmpid$|guccounter$)/i.test(key)) {
+        parsed.searchParams.delete(key);
+      }
+    });
+    parsed.hash = "";
+    return parsed.href.replace(/\/$/, "");
+  } catch {
+    return normalizada.replace(/\/$/, "");
+  }
+}
+
+function dominioFonte(url) {
+  const normalizada = normalizarFonteUrl(url);
+  if (!normalizada) return "";
+
+  try {
+    return new URL(normalizada).hostname.replace(/^www\./i, "").toLowerCase();
+  } catch {
+    return "";
+  }
+}
+
+function dominioCombina(dominio, esperado) {
+  return dominio === esperado || dominio.endsWith(`.${esperado}`);
+}
+
+function dominioSocialOuIntermediario(url) {
+  const dominio = dominioFonte(url);
+  return !dominio || dominiosSociaisOuIntermediarios.some(item => dominioCombina(dominio, item));
+}
+
+function scoreDominioFonte(url) {
+  const dominio = dominioFonte(url);
+  const match = fonteDominioScores.find(([item]) => dominioCombina(dominio, item));
+  return match ? match[1] : 8;
+}
+
+function limparTextoTweet(texto) {
+  return String(texto || "")
+    .replace(/https?:\/\/\S+/gi, " ")
+    .replace(/@\w+/g, " ")
+    .replace(/#[\wÀ-ÿ-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function scoreRecencia(data, agora = Date.now()) {
+  const timestamp = Number(data) || 0;
+  if (!timestamp) return 0;
+
+  const idadeHoras = Math.max(0, (agora - timestamp) / 36e5);
+  if (idadeHoras <= 3) return 44;
+  if (idadeHoras <= 12) return 38;
+  if (idadeHoras <= 24) return 30;
+  if (idadeHoras <= 48) return 22;
+  if (idadeHoras <= 72) return 14;
+  if (idadeHoras <= 168) return 4;
+  return -60;
+}
+
+function scoreRelevanciaTecnica(texto) {
+  return termosTecnicosFonte.reduce((total, [regex, pontos]) => {
+    return total + (regex.test(texto) ? pontos : 0);
+  }, 0);
+}
+
+function penalidadeConteudoPromocional(texto, url) {
+  const dominio = dominioFonte(url);
+  const penalidadeBase = termosPromocionaisOuReview.reduce((total, regex) => {
+    return total + (regex.test(texto) ? 22 : 0);
+  }, 0);
+
+  if (!penalidadeBase) return 0;
+  if (dominioCombina(dominio, "zdnet.com")) return penalidadeBase + 20;
+  if (dominioCombina(dominio, "techcrunch.com")) return penalidadeBase + 8;
+  return penalidadeBase;
+}
+
+function scoreAutorX(user) {
+  if (!user) return 0;
+
+  const seguidores = Number(user.public_metrics?.followers_count || 0);
+  const scoreSeguidores = seguidores > 0 ? Math.min(18, Math.round(Math.log10(seguidores + 1) * 4)) : 0;
+  const scoreVerificado = user.verified ? 6 : 0;
+  return scoreSeguidores + scoreVerificado;
+}
+
+function scoreEngajamentoX(metrics) {
+  if (!metrics) return 0;
+
+  const total =
+    Number(metrics.like_count || 0) +
+    Number(metrics.reply_count || 0) +
+    Number(metrics.retweet_count || 0) * 2 +
+    Number(metrics.quote_count || 0) * 2;
+
+  return total > 0 ? Math.min(22, Math.round(Math.log10(total + 1) * 8)) : 0;
+}
+
+function avaliarNoticiaParaGeracao(noticia, agora = Date.now()) {
+  const texto = [
+    noticia.titulo,
+    noticia.resumo,
+    noticia.contextoDescoberta,
+    noticia.url
+  ].filter(Boolean).join(" ");
+
+  const urlNormalizada = normalizarFonteUrl(noticia.url);
+  if (!urlNormalizada || dominioSocialOuIntermediario(urlNormalizada)) {
+    return { aceita: false, score: -999, motivo: "fonte-final-invalida" };
+  }
+
+  const recencia = scoreRecencia(noticia.data, agora);
+  const relevancia = scoreRelevanciaTecnica(texto);
+  const dominio = scoreDominioFonte(urlNormalizada);
+  const autorX = scoreAutorX(noticia.autorX);
+  const engajamentoX = scoreEngajamentoX(noticia.metricasX);
+  const penalidade = penalidadeConteudoPromocional(texto, urlNormalizada);
+  const descobertaX = noticia.origem === "x" ? 8 : 0;
+  const sinalEditorial = relevancia + dominio + Math.min(autorX, 12);
+  const score = recencia + relevancia + dominio + autorX + engajamentoX + descobertaX - penalidade;
+
+  if (recencia < 0) {
+    return { aceita: false, score, motivo: "noticia-antiga", recencia, relevancia, dominio, penalidade };
+  }
+
+  if (sinalEditorial < 18) {
+    return { aceita: false, score, motivo: "baixo-sinal-editorial", recencia, relevancia, dominio, penalidade };
+  }
+
+  if (score < 35) {
+    return { aceita: false, score, motivo: "score-baixo", recencia, relevancia, dominio, penalidade };
+  }
+
+  return { aceita: true, score, motivo: "ok", recencia, relevancia, dominio, autorX, engajamentoX, penalidade };
+}
+
+function escolherUrlFonteDoTweet(tweet) {
+  const urls = tweet.entities?.urls || [];
+
+  return urls
+    .map(item => ({
+      url: normalizarFonteUrl(item.unwound_url || item.expanded_url || item.url),
+      titulo: item.title || "",
+      descricao: item.description || ""
+    }))
+    .find(item => item.url && !dominioSocialOuIntermediario(item.url));
+}
+
 async function buscarNoticia() {
-const titulosPath = "titulos.json";
-let titulosGerados = fs.existsSync(titulosPath)
-  ? JSON.parse(fs.readFileSync(titulosPath, "utf-8"))
-  : [];
+  const titulosPath = "titulos.json";
+  let titulosGerados = fs.existsSync(titulosPath)
+    ? JSON.parse(fs.readFileSync(titulosPath, "utf-8"))
+    : [];
 
-  const noticiasAntigas = titulosGerados.map(t =>
+  const noticiasAntigas = new Set(titulosGerados.map(t =>
     normalizarTexto(t.noticiaOriginal)
-  );
+  ));
+  const fontesAntigas = new Set(titulosGerados
+    .map(t => normalizarUrlComparacaoFonte(t.urlFonte))
+    .filter(Boolean));
 
-  const fontes = [buscarNoticiaDevBlogs,buscarNoticiaX];
+  const fontes = [buscarNoticiaX, buscarNoticiaDevBlogs];
   let todasNoticias = [];
 
   for (const fonte of fontes) {
@@ -1317,46 +1561,102 @@ let titulosGerados = fs.existsSync(titulosPath)
     }
   }
 
-  // Ordena pela data, da mais recente para a mais antiga
-  todasNoticias.sort((a, b) => b.data - a.data);
+  const avaliadas = todasNoticias
+    .map(noticia => ({
+      noticia,
+      tituloNormalizado: normalizarTexto(noticia.titulo),
+      fonteNormalizada: normalizarUrlComparacaoFonte(noticia.url),
+      avaliacao: avaliarNoticiaParaGeracao(noticia)
+    }))
+    .filter(item => item.tituloNormalizado && !noticiasAntigas.has(item.tituloNormalizado))
+    .filter(item => !item.fonteNormalizada || !fontesAntigas.has(item.fonteNormalizada));
 
-  for (const noticia of todasNoticias) {
-    const normalizada = normalizarTexto(noticia.titulo);
-    if (!noticiasAntigas.includes(normalizada)) {
-      console.log(`🔍 Notícias encontradas (filtradas):`, todasNoticias.length);
-      return noticia;
-    }
-  }
+  const candidatas = avaliadas
+    .filter(item => item.avaliacao.aceita)
+    .sort((a, b) => b.avaliacao.score - a.avaliacao.score || b.noticia.data - a.noticia.data);
+
+  console.log(`🔍 Notícias encontradas: ${todasNoticias.length}. Candidatas aprovadas: ${candidatas.length}.`);
+
+  candidatas.slice(0, 5).forEach((item, index) => {
+    console.log(`🏅 ${index + 1}. score=${item.avaliacao.score} origem=${item.noticia.origem || "rss"} domínio=${dominioFonte(item.noticia.url)} título="${item.noticia.titulo}"`);
+  });
+
+  if (candidatas.length > 0) return candidatas[0].noticia;
+
+  avaliadas
+    .sort((a, b) => b.avaliacao.score - a.avaliacao.score)
+    .slice(0, 5)
+    .forEach((item, index) => {
+      console.log(`🚫 Rejeitada ${index + 1}: score=${item.avaliacao.score} motivo=${item.avaliacao.motivo} título="${item.noticia.titulo}"`);
+    });
 
   return null;
 }
 
 async function buscarNoticiaX() {
-  const query = encodeURIComponent("arquitetura de software OR .NET OR PostgreSQL OR  lang:pt -is:retweet");
-  const url = `https://api.twitter.com/2/tweets/search/recent?query=${query}&tweet.fields=created_at,author_id&expansions=author_id&user.fields=username`;
-
-  try {
-    const res = await axios.get(url, {
-      headers: { Authorization: `Bearer ${twitterBearer}` }
-    });
-
-    const tweets = res.data.data || [];
-    const users = res.data.includes?.users || [];
-
-    const lista = tweets.map(tweet => {
-      const user = users.find(u => u.id === tweet.author_id);
-      return {
-        titulo: tweet.text.slice(0, 80).replace(/\n/g, ' ') + '...',
-        url: `https://twitter.com/${user?.username}/status/${tweet.id}`,
-        data: new Date(tweet.created_at).getTime()
-      };
-    });
-
-    return lista;
-  } catch (e) {
-    console.warn(`⚠️ Erro ao buscar tweets do X: ${e.message}`);
+  if (!twitterBearer) {
+    console.warn("⚠️ TWITTER_BEARER_TOKEN não configurado. Pulando radar do X.");
     return [];
   }
+
+  const lista = [];
+  const urlsVistas = new Set();
+
+  for (const config of xRecentSearchQueries) {
+    try {
+      const res = await buscarXApi("/tweets/search/recent", {
+        params: {
+          query: config.query,
+          max_results: 50,
+          "tweet.fields": "created_at,author_id,entities,public_metrics,referenced_tweets,lang",
+          expansions: "author_id",
+          "user.fields": "username,name,verified,public_metrics"
+        },
+        descricao: `recent search ${config.nome}`
+      });
+
+      const tweets = res.data.data || [];
+      const users = res.data.includes?.users || [];
+      const usersById = new Map(users.map(user => [user.id, user]));
+
+      for (const tweet of tweets) {
+        if (tweet.referenced_tweets?.some(ref => ref.type === "retweeted" || ref.type === "replied_to")) {
+          continue;
+        }
+
+        const fonte = escolherUrlFonteDoTweet(tweet);
+        if (!fonte?.url) continue;
+
+        const fonteComparacao = normalizarUrlComparacaoFonte(fonte.url);
+        if (!fonteComparacao || urlsVistas.has(fonteComparacao)) continue;
+        urlsVistas.add(fonteComparacao);
+
+        const user = usersById.get(tweet.author_id);
+        const textoTweet = limparTextoTweet(tweet.text);
+        const titulo = limparTitulo(fonte.titulo || textoTweet).slice(0, 180);
+
+        if (!titulo || titulo.length < 20) continue;
+
+        lista.push({
+          titulo,
+          url: fonte.url,
+          data: new Date(tweet.created_at).getTime(),
+          origem: "x",
+          origemBusca: config.nome,
+          contextoDescoberta: textoTweet,
+          resumo: fonte.descricao || textoTweet,
+          urlDescoberta: user?.username ? `https://x.com/${user.username}/status/${tweet.id}` : `https://x.com/i/web/status/${tweet.id}`,
+          autorX: user,
+          metricasX: tweet.public_metrics
+        });
+      }
+    } catch (e) {
+      const status = e.response?.status ? ` (${e.response.status})` : "";
+      console.warn(`⚠️ Erro ao buscar X/${config.nome}${status}: ${e.message}`);
+    }
+  }
+
+  return lista;
 }
 
 
@@ -1413,7 +1713,10 @@ async function buscarNoticiaDevBlogs() {
           lista.push({
             titulo: item.title,
             url: finalLink,
-            data: new Date(item.pubDate || item.isoDate || Date.now()).getTime()
+            data: new Date(item.pubDate || item.isoDate || Date.now()).getTime(),
+            origem: "rss",
+            feedUrl: url,
+            resumo: item.contentSnippet || item.summary || item.description || item.content || ""
           });
         }
       }

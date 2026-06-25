@@ -645,6 +645,22 @@ Mudancas aplicadas:
 
 Isso evita que uma falha de segredo ou autenticacao no clone interrompa a geracao automatica, e mantem a regra de que todo artigo novo precisa passar por rebuild e auditoria SEO antes de ser publicado.
 
+### Curadoria de fontes recentes com X
+
+O gerador passou a usar o X como radar de descoberta de noticias recentes, sem transformar o post social na fonte final do artigo.
+
+Mudancas aplicadas:
+
+- Criacao de buscas recentes no X para contas tecnicas e temas como arquitetura de software, IA, seguranca, cloud, DevOps, bancos de dados, observabilidade e ferramentas de desenvolvimento.
+- Uso de `TWITTER_BEARER_TOKEN` para consultar a API recente do X quando o segredo estiver configurado.
+- Fallback automatico entre `api.x.com` e `api.twitter.com`.
+- Extracao da URL original compartilhada no post, ignorando links sociais ou intermediarios como `x.com`, `twitter.com`, `t.co`, `linkedin.com`, `youtube.com` e similares.
+- Deduplicacao por URL normalizada, removendo parametros de campanha.
+- Score de selecao combinando recencia, relevancia tecnica, confiabilidade do dominio, autor/verificacao/engajamento no X e penalidade para conteudo promocional ou comparativos de compra.
+- Manutencao dos feeds RSS tecnicos como segunda camada de fonte, com a mesma avaliacao de score.
+
+Com isso, os proximos artigos tendem a nascer de assuntos mais recentes, mas ainda apontando para uma fonte editorial verificavel. Se o token do X nao estiver disponivel ou a API falhar, o gerador continua funcionando pelos RSS ja existentes.
+
 ### Resultado da validacao final
 
 Em 25/06/2026, o comando abaixo foi executado com sucesso:
