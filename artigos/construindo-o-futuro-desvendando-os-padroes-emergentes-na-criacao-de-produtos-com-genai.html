@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>Construindo o Futuro: Desvendando os Padrões Emergentes na Criação de Produtos com GenAI</h1>
 <p class="article-meta">Publicado em: 06/05/2025 08:15</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Se você acha que a criação de produtos com inteligência artificial genérica já é algo do passado, pense novamente. A notícia sobre os padrões emergentes na construção desses produtos está revolucionando o cenário tecnológico e promete trazer novas possibilidades e desafios para os arquitetos de software.<br>Para compreender melhor esse fenômeno, é essencial mergulhar nos detalhes técnicos que permeiam essa nova tendência. A integração de algoritmos de machine learning, processamento de linguagem natural e redes neurais profundas é apenas o ponto de partida. A verdadeira inovação está na forma como esses elementos são combinados e aplicados de maneira eficiente e escalável.<br>Em termos práticos, a construção de produtos com GenAI requer um profundo entendimento das APIs e frameworks disponíveis no mercado. A utilização de linguagens como C# pode facilitar o desenvolvimento e tornar o processo mais eficiente. Vamos explorar um trecho de código que exemplifica como integrar um modelo de machine learning em um sistema de recomendação:<br><pre><code class="language-csharp">using Microsoft.ML;<br>using System;<br>public class RecommendationSystem<br>{<br>public void TrainModel()<br>{<br>// Carregar dados<br>var mlContext = new MLContext();<br>var dataView = mlContext.Data.LoadFromTextFile<RecommendationData>("recommendationData.csv", hasHeader: true);<br>// Definir pipeline de treinamento<br>var pipeline = mlContext.Transforms.Conversion.MapValueToKey(outputColumnName: "UserIdEncoded", inputColumnName: "UserId")<br>.Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName: "ProductIdEncoded", inputColumnName: "ProductId"))<br>.Append(mlContext.Recommendation().Trainers.MatrixFactorization("UserIdEncoded", "ProductIdEncoded", labelColumnName: "Rating"));<br>// Treinar modelo<br>var model = pipeline.Fit(dataView);<br>}<br>}<br></code></pre><br>Além disso, é fundamental considerar dicas avançadas para otimizar a performance e a precisão dos modelos de GenAI. A utilização de técnicas de otimização, como o ajuste fino de hiperparâmetros e a validação cruzada, pode elevar a qualidade das previsões e tornar o produto final mais robusto e confiável.<br>Diante desse cenário, é essencial refletir sobre o impacto dessas inovações no mercado e nas práticas de desenvolvimento de software. A capacidade de construir produtos com inteligência artificial genérica não apenas amplia as possibilidades de negócio, mas também desafia os profissionais a repensarem suas abordagens e a adotarem uma mentalidade inovadora e adaptativa.<br>Em suma, os padrões emergentes na criação de produtos com GenAI representam um novo horizonte para a tecnologia e a inovação. Aqueles que souberem aproveitar essa oportunidade e dominar as técnicas e ferramentas necessárias estarão na vanguarda do desenvolvimento de software e prontos para construir o futuro.</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

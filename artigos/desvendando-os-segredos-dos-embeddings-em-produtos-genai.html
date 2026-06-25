@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>Desvendando os Segredos dos Embeddings em Produtos GenAI</h1>
 <p class="article-meta">Publicado em: 06/05/2025 07:19</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">A discussão sobre Embeddings in GenAI Products voltou à tona, e acredito que precisamos falar sobre isso com mais seriedade.<br>Para os não iniciados, os embeddings são representações numéricas de palavras, frases, ou até mesmo objetos, em um espaço vetorial de alta dimensão. Em produtos de inteligência artificial como os GenAI, os embeddings desempenham um papel crucial na codificação de informações e na compreensão de contextos semânticos complexos.<br>Essas representações densas e contínuas possibilitam a captura de relações semânticas entre entidades, tornando-se essenciais em tarefas de processamento de linguagem natural, recomendação de conteúdo e muito mais.<br>Vamos agora mergulhar um pouco mais fundo nesse universo fascinante dos embeddings e como eles são aplicados em produtos GenAI.<br>Em termos práticos, ao implementar embeddings em um sistema de recomendação de filmes, por exemplo, podemos utilizar uma abordagem baseada em aprendizado profundo para treinar um modelo capaz de prever as preferências do usuário. Vejamos um exemplo simples em Python utilizando a biblioteca TensorFlow:<br><pre><code>import tensorflow as tf<br># Definindo os embeddings<br>embedding_layer = tf.keras.layers.Embedding(input_dim=1000, output_dim=128)<br># Utilizando os embeddings em uma camada LSTM<br>model = tf.keras.Sequential([<br>embedding_layer,<br>tf.keras.layers.LSTM(128),<br>tf.keras.layers.Dense(1, activation='sigmoid')<br>])<br></code></pre><br>Nesse trecho de código, criamos uma camada de embeddings com 1000 itens de vocabulário e uma dimensão de 128. Essa camada é então utilizada em uma rede neural recorrente do tipo LSTM para prever a probabilidade de um usuário gostar de um determinado filme.<br>Além disso, vale ressaltar a importância de técnicas como word2vec, GloVe e BERT na geração de embeddings de alta qualidade, que capturam nuances semânticas e melhoram significativamente o desempenho de modelos de inteligência artificial.<br>Em conclusão, os embeddings desempenham um papel fundamental no sucesso de produtos de inteligência artificial como os GenAI. Dominar o seu uso e entender suas aplicações pode ser a chave para o desenvolvimento de soluções mais eficientes e precisas.<br>E você, já explorou os embeddings em seus projetos de IA? Compartilhe suas experiências e insights nos comentários!</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

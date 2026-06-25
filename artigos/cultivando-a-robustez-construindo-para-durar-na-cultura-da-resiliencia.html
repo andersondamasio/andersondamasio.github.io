@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -201,13 +195,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -226,14 +213,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Cultivando a Robustez: Construindo para Durar na Cultura da Resiliência</h1>
 
 <p class="article-meta">Publicado em: 09/05/2025 02:18</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Já passei por situações em que a construção de sistemas robustos e resilientes foi crucial para o sucesso de um projeto. A notícia sobre "Presentation: Built to Outlast: Cultivating a Culture of Resilience" ressoa com a importância de criar aplicações que consigam resistir aos desafios do mundo real, mantendo-se funcionais e eficientes mesmo diante de adversidades.<br>Para construir sistemas que resistam ao teste do tempo e das circunstâncias, é fundamental adotar práticas e tecnologias que promovam a resiliência. Uma abordagem interessante é a utilização de arquiteturas distribuídas, como o modelo de microserviços, que permitem a construção de sistemas modulares e independentes, facilitando a escalabilidade e a manutenção.<br>Além disso, o uso de técnicas de monitoramento e recuperação automatizada, como o emprego de ferramentas de observabilidade e a implementação de estratégias de resiliência, como o circuit breaker e o fallback, são essenciais para garantir a disponibilidade e a confiabilidade dos sistemas em cenários adversos.<br>No âmbito do desenvolvimento de software, a adoção de práticas como o design orientado a testes (TDD) e a integração contínua (CI/CD) contribuem para a construção de aplicações mais robustas e estáveis, permitindo identificar e corrigir falhas de forma ágil e eficiente.<br>Em termos de código, podemos destacar a importância de escrever códigos limpos, legíveis e bem estruturados, seguindo os princípios do SOLID e utilizando padrões de projeto que favoreçam a manutenibilidade e a extensibilidade do sistema.<br>Para ilustrar, vamos considerar um exemplo em C# de como implementar um mecanismo de circuit breaker para lidar com falhas em chamadas de serviços externos:<br><pre><code class="language-csharp">public async Task<string> CallExternalService()<br>{<br>var circuitBreaker = new CircuitBreaker();<br>string result;<br>try<br>{<br>result = await circuitBreaker.ExecuteAsync(async () =><br>{<br>var response = await _httpClient.GetAsync("https://api.externa.com/resource");<br>response.EnsureSuccessStatusCode();<br>return await response.Content.ReadAsStringAsync();<br>});<br>}<br>catch (CircuitBreakerOpenException ex)<br>{<br>result = "Fallback response";<br>}<br>return result;<br>}<br></code></pre><br>Neste trecho de código, o circuit breaker é responsável por monitorar e controlar o fluxo de chamadas ao serviço externo, evitando sobrecargas e falhas em cascata.<br>Em suma, cultivar uma cultura de resiliência no desenvolvimento de software é fundamental para garantir a qualidade e a durabilidade dos sistemas. Investir em práticas, tecnologias e padrões que promovam a robustez e a adaptabilidade dos sistemas é essencial para enfrentar os desafios do mercado e as demandas dos usuários.<br>Portanto, lembre-se: construa para durar, cultive a resiliência e esteja preparado para os desafios que virão. Afinal, a verdadeira qualidade de um sistema se revela na sua capacidade de resistir e se adaptar às mudanças.</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

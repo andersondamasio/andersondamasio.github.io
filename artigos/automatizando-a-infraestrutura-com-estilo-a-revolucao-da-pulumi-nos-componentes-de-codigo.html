@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -201,13 +195,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -226,14 +213,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Automatizando a Infraestrutura com Estilo: A Revolução da Pulumi nos Componentes de Código</h1>
 
 <p class="article-meta">Publicado em: 09/05/2025 01:22</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Nem sempre damos o devido peso à notícia de que a Pulumi anunciou a melhoria dos componentes para simplificar a infraestrutura como código, até que tudo quebrar em produção. A verdade é que a automação da infraestrutura é essencial para garantir a escalabilidade e confiabilidade dos sistemas modernos. E a Pulumi, com sua abordagem inovadora, está revolucionando a maneira como lidamos com a criação e gerenciamento da infraestrutura.<br>Para quem não está familiarizado, a Pulumi é uma ferramenta de código aberto que permite aos desenvolvedores definir e gerenciar a infraestrutura usando linguagens de programação populares, como Python, JavaScript e Go. Com a nova funcionalidade de Componentes Aprimorados, a Pulumi facilita ainda mais a criação de infraestrutura reutilizável e modular, simplificando o processo de desenvolvimento e manutenção.<br>Essa nova feature permite definir componentes personalizados que encapsulam recursos de infraestrutura comuns, como instâncias de máquinas virtuais, bancos de dados e redes, em um único bloco de código. Isso não apenas torna o código mais limpo e legível, mas também facilita a reutilização e compartilhamento de componentes entre diferentes projetos e equipes.<br>Vamos dar uma olhada em um exemplo prático de como podemos usar os Componentes Aprimorados da Pulumi para criar uma infraestrutura de nuvem simples, porém eficaz, em C#:<br><pre><code class="language-csharp">using Pulumi;<br>using Pulumi.Azure.Core;<br>class MyStack : Stack<br>{<br>public MyStack()<br>{<br>var resourceGroup = new ResourceGroup("myResourceGroup");<br>var storageAccount = new StorageAccount("myStorageAccount", new StorageAccountArgs<br>{<br>ResourceGroupName = resourceGroup.Name,<br>AccountReplicationType = "LRS",<br>AccountTier = "Standard"<br>});<br>}<br>}<br>class Program<br>{<br>static Task<int> Main(string[] args)<br>{<br>return Deployment.RunAsync<MyStack>();<br>}<br>}<br></code></pre><br>Neste exemplo, estamos criando um grupo de recursos e uma conta de armazenamento no Azure usando os Componentes Aprimorados da Pulumi. Com apenas algumas linhas de código, podemos definir toda a infraestrutura necessária de forma declarativa e reutilizável.<br>Além de simplificar a criação da infraestrutura como código, a Pulumi também oferece recursos avançados, como a capacidade de gerenciar o estado da infraestrutura, implantar alterações de forma incremental e monitorar o ambiente em tempo real. Essas funcionalidades são essenciais para garantir a integridade e segurança da infraestrutura em um ambiente de produção.<br>Em conclusão, a Pulumi Announces Improved Components Feature to Simplify Infrastructure as Code é uma notícia empolgante para os arquitetos de software e engenheiros de infraestrutura. Com essa nova funcionalidade, estamos mais perto do sonho de ter uma infraestrutura totalmente automatizada e escalável, sem sacrificar a flexibilidade e controle. Portanto, não perca tempo e comece a explorar os benefícios da Pulumi hoje mesmo!</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

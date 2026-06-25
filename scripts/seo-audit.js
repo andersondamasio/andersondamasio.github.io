@@ -48,10 +48,6 @@ function rel(file) {
   return path.relative(root, file).replace(/\\/g, "/");
 }
 
-function isVerificationFile(file) {
-  return /^ezoic-[^.]+\.html$/i.test(path.basename(file));
-}
-
 function normalizeLocalUrl(url) {
   if (!url) return "/";
 
@@ -379,8 +375,6 @@ if (fs.existsSync(sourceTitlesPath)) {
 }
 
 for (const file of walk(root)) {
-  if (isVerificationFile(file)) continue;
-
   const html = fs.readFileSync(file, "utf8");
   const $ = cheerio.load(html);
   const fileRel = rel(file);

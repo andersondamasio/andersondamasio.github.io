@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>Arquitetura de Software: Dos Trade-offs à Visão Holística</h1>
 <p class="article-meta">Publicado em: 04/05/2025 16:14</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Tenho visto muita gente tratando a arquitetura de software como algo simples — mas a realidade é bem diferente. Afinal, como equilibrar necessidades técnicas e de negócios, considerando a estrutura, características como escalabilidade e as decisões tomadas ao longo do processo? É sobre isso que quero falar hoje.<br>Em um mundo onde a complexidade dos sistemas cresce exponencialmente, é fundamental ter uma visão holística da arquitetura de software. Não basta apenas criar uma estrutura robusta, é preciso considerar como as decisões tomadas irão impactar o negócio e se as características do sistema estão alinhadas com as necessidades reais.<br>Os trade-offs são inevitáveis na arquitetura de software. Toda decisão tomada implica em abrir mão de algo, seja performance, segurança, facilidade de manutenção ou qualquer outra característica. É preciso estar ciente desses trade-offs e escolher sabiamente o que é mais importante para o projeto em questão.<br>Para exemplificar, vamos considerar o seguinte trecho de código em C#:<br><pre><code class="language-csharp">public class ProductService<br>{<br>private readonly ILogger _logger;<br>public ProductService(ILogger logger)<br>{<br>_logger = logger;<br>}<br>public void AddProduct(Product product)<br>{<br>try<br>{<br>// Lógica de adicionar um produto<br>}<br>catch (Exception ex)<br>{<br>_logger.LogError(ex, "Erro ao adicionar produto");<br>}<br>}<br>}<br></code></pre><br>Neste exemplo, o trade-off está presente na decisão de como lidar com exceções. Optamos por logar o erro e prosseguir com a execução, sacrificando a robustez do sistema em prol da continuidade das operações.<br>Para ir além do básico, é importante considerar também aspectos como a modularidade, a escalabilidade e a manutenibilidade do sistema. A arquitetura de software deve ser pensada não apenas para o momento presente, mas também levando em conta possíveis evoluções e mudanças futuras.<br>Em conclusão, a arquitetura de software é muito mais do que apenas a estrutura do sistema. É um equilíbrio delicado entre necessidades técnicas e de negócios, trade-offs bem ponderados e uma visão holística que considere o sistema como um todo. Apenas assim é possível criar sistemas escaláveis, robustos e alinhados com as necessidades reais do negócio.<br>Espero que este artigo tenha te ajudado a enxergar a arquitetura de software sob uma nova perspectiva e que você possa aplicar esses conceitos em seus próprios projetos. Afinal, a excelência técnica está nos detalhes e na capacidade de tomar as decisões certas no momento certo.</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

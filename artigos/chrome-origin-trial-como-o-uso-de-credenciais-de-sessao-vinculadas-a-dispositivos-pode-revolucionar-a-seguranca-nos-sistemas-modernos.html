@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>Chrome Origin Trial: Como o uso de credenciais de sessão vinculadas a dispositivos pode revolucionar a segurança nos sistemas modernos</h1>
 <p class="article-meta">Publicado em: 02/05/2025 02:17</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Você já parou para pensar no impacto real de Chrome Origin Trial: Device Bound Session Credentials nos sistemas modernos? Essa nova abordagem de autenticação pode representar uma mudança significativa na forma como lidamos com a segurança em nossas aplicações web. Vamos explorar mais a fundo esse conceito e como ele pode impactar o desenvolvimento de software.<br><br>A ideia por trás das credenciais de sessão vinculadas a dispositivos é simples, mas extremamente poderosa. Ao invés de depender exclusivamente de tokens de sessão que podem ser interceptados e utilizados por terceiros mal intencionados, as credenciais de sessão são atreladas ao próprio dispositivo do usuário. Isso significa que mesmo que um token seja capturado, ele não poderá ser utilizado em outro dispositivo, tornando a autenticação muito mais segura.<br><br>Para implementar esse tipo de autenticação em nossas aplicações, podemos utilizar APIs específicas fornecidas pelos navegadores, como no caso do Chrome Origin Trial. Vamos ver um exemplo prático de como isso poderia ser feito em uma aplicação web utilizando C#:<br><br><pre><code class="language-csharp">// Verificação da credencial de sessão vinculada ao dispositivo<br>if (Request.Headers["Device-Bound-Credential"] == "meu_token_dispositivo")<br>{<br>    // Autenticação bem sucedida<br>    // Continuar com o fluxo da aplicação<br>}<br>else<br>{<br>    // Credencial inválida, redirecionar para página de login<br>    Response.Redirect("/login");<br>}<br></code></pre><br><br>Além disso, é importante considerar que a segurança não se resume apenas à autenticação, mas também à autorização e criptografia dos dados. Ao combinar as credenciais de sessão vinculadas a dispositivos com práticas robustas de segurança, podemos criar sistemas mais resilientes e menos suscetíveis a ataques.<br><br>Em conclusão, o uso de credenciais de sessão vinculadas a dispositivos representa uma evolução significativa na forma como lidamos com a segurança em nossas aplicações web. Ao adotar essa abordagem e implementá-la de forma adequada, podemos garantir um nível mais elevado de proteção para os nossos usuários e dados sensíveis. Fique atento às novas tecnologias e práticas de segurança, e esteja sempre um passo à frente na proteção das suas aplicações.</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

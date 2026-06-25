@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>GenAI Patterns: Repensando suas Queries</h1>
 <p class="article-meta">Publicado em: 06/05/2025 01:21</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Em qualquer roda de devs, é só falar GenAI Patterns: Query Rewriting que surgem 5 opiniões diferentes. Alguns enxergam como uma revolução na forma como lidamos com consultas em bancos de dados, enquanto outros ainda têm dúvidas sobre sua eficácia e aplicabilidade em projetos reais. Mas afinal, o que são esses padrões de inteligência artificial aplicados à reescrita de consultas e como podemos utilizá-los de forma eficiente em nossas aplicações?<br>Para entender melhor, vamos mergulhar um pouco mais fundo nesse tema tão atual e promissor. Os GenAI Patterns consistem em técnicas que combinam o poder da inteligência artificial com a capacidade de reescrita de consultas em tempo de execução. Isso significa que, ao invés de simplesmente enviar uma consulta ao banco de dados e receber um conjunto de resultados, podemos agora utilizar modelos de IA para otimizar e melhorar nossas consultas, resultando em um desempenho superior e uma experiência mais fluida para o usuário final.<br>Imagine que você tenha uma aplicação que realiza consultas complexas em um banco de dados relacional. Com os GenAI Patterns, é possível criar modelos de IA que analisam o comportamento das consultas, identificam padrões de uso e sugerem otimizações em tempo real. Isso pode incluir desde a reescrita de partes da consulta até a sugestão de índices adicionais para melhorar a performance.<br>Vamos ilustrar isso com um exemplo prático em C#:<br><pre><code class="language-csharp">using System;<br>using System.Data.SqlClient;<br>class Program<br>{<br>static void Main()<br>{<br>string queryString = "SELECT * FROM Products WHERE CategoryId = @CategoryId";<br>using (SqlConnection connection = new SqlConnection(connectionString))<br>{<br>SqlCommand command = new SqlCommand(queryString, connection);<br>command.Parameters.AddWithValue("@CategoryId", 1);<br>connection.Open();<br>SqlDataReader reader = command.ExecuteReader();<br>while (reader.Read())<br>{<br>Console.WriteLine(String.Format("{0}, {1}", reader["ProductName"], reader["Price"]));<br>}<br>}<br>}<br>}<br></code></pre><br>Agora, imagine que podemos aplicar os GenAI Patterns a essa consulta, identificando oportunidades de otimização e sugestões de reescrita baseadas em padrões de uso. Isso poderia resultar em consultas mais eficientes, menor tempo de resposta e uma melhor experiência para o usuário.<br>Para quem está começando a explorar os GenAI Patterns, uma dica valiosa é investir tempo na compreensão dos modelos de IA utilizados e na coleta de dados relevantes para treiná-los. Além disso, é importante testar e validar as otimizações propostas antes de aplicá-las em produção, garantindo que não haja impactos negativos na performance geral do sistema.<br>Em conclusão, os GenAI Patterns representam uma nova fronteira no desenvolvimento de aplicações escaláveis e eficientes. Ao combinar inteligência artificial com a reescrita de consultas, somos capazes de alcançar níveis de desempenho e otimização que antes eram inimagináveis. Portanto, vale a pena explorar e experimentar essas técnicas em seus projetos, buscando sempre a excelência e a inovação.<br>E você, já experimentou os GenAI Patterns em seus projetos? Compartilhe sua experiência nos comentários!</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

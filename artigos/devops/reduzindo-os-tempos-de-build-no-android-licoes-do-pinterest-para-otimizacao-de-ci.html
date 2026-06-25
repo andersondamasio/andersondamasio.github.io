@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -245,13 +239,6 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 </head>
 <body>
 <button id="theme-toggle" aria-label="Alternar tema"
@@ -273,14 +260,6 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 <h1>Reduzindo os Tempos de Build no Android: Lições do Pinterest para Otimização de CI</h1>
 
 <p class="article-meta">Publicado em: 22/12/2025 05:32</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body"><p>Você já parou para pensar em quão frustrante pode ser esperar por builds no seu pipeline de integração contínua (CI)? É como esperar por um ônibus que nunca chega... O Pinterest, em sua recente experiência, demonstrou como uma reestruturação na forma como os testes são executados pode transformar essa dor de cabeça em algo mais suportável. Com um enfoque técnico que vale a pena explorar, a equipe de engenharia da plataforma conseguiu reduzir os tempos de build do Android em mais de 36% ao implementar uma estratégia de <strong>sharding</strong> ciente do tempo de execução.</p>
 <h2>Entendendo o Problema</h2>

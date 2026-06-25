@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>Desvendando o Poder das Chamadas de Função com LLMs</h1>
 <p class="article-meta">Publicado em: 06/05/2025 11:18</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Essa notícia me fez refletir sobre como o mercado ainda lida mal com Function calling using LLMs. Para muitos desenvolvedores, a utilização de Load Linked/Store Conditional (LLM) instructions pode parecer um território desconhecido e complexo. No entanto, dominar essa técnica pode trazer benefícios significativos, especialmente em sistemas escaláveis e de alto desempenho.<br>Em termos simples, as instruções LLM permitem que uma função seja chamada de forma atômica, garantindo que nenhuma outra operação interfira nesse processo. Isso é especialmente útil em ambientes concorrentes, onde múltiplos threads podem tentar acessar a mesma função simultaneamente. Com as LLMs, podemos garantir a consistência dos dados e evitar race conditions.<br>Vamos dar uma olhada em um exemplo prático em C# para ilustrar melhor o conceito:<br><pre><code class="language-csharp">public class AtomicCounter<br>{<br>private long _value = 0;<br>public void Increment()<br>{<br>Interlocked.Add(ref _value, 1);<br>}<br>public long GetValue()<br>{<br>return Interlocked.Read(ref _value);<br>}<br>}<br></code></pre><br>Neste exemplo, a classe `AtomicCounter` utiliza a função `Interlocked.Add` para garantir que a operação de incremento seja realizada de forma atômica, evitando problemas de concorrência.<br>Além disso, podemos explorar outras APIs e técnicas avançadas para otimizar o uso de LLMs em nossos sistemas. Por exemplo, podemos utilizar instruções SIMD (Single Instruction, Multiple Data) para processamento paralelo de dados, melhorando ainda mais o desempenho de nossas aplicações.<br>Em conclusão, dominar o uso de Function calling com LLMs pode ser um diferencial importante para desenvolvedores que buscam construir sistemas escaláveis e eficientes. Aprofundar-se nesse tema pode abrir novas possibilidades e melhorar significativamente o desempenho de suas aplicações. Então, que tal se aventurar nesse universo e explorar todo o potencial das instruções LLM? Os resultados podem surpreender!</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

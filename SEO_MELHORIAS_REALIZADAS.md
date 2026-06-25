@@ -518,9 +518,6 @@ Foi criado o helper `scripts/seo-resource-hints.js`, usado pelo gerador e pelos 
 Dominios cobertos:
 
 - `www.googletagmanager.com`
-- `cmp.gatekeeperconsent.com`
-- `the.gatekeeperconsent.com`
-- `www.ezojs.com`
 
 Tambem foi padronizada a otimizacao de imagens em artigos:
 
@@ -600,20 +597,16 @@ O gerador e o backfill agora normalizam esses casos automaticamente:
 
 - Corrigem fechamentos invalidos no corpo do artigo.
 - Neutralizam `<script>` e `</script>` dentro de `.article-body`, mantendo o texto visivel como exemplo de codigo e evitando que o restante da pagina seja interpretado como JavaScript.
-- Mantem os scripts reais do layout, Analytics e Ezoic fora dessa neutralizacao.
 
 A auditoria estrita tambem ganhou as verificacoes `malformedArticleHtml` e `articleBodyUnsafeHtml`, para impedir que esse tipo de HTML volte a ser publicado sem ser detectado.
 
 ### Recursos externos no Google Search Console
 
-Os erros mostrados no Search Console em `Recursos da pagina` ainda podem aparecer enquanto o site carregar Ezoic e Google Analytics.
-
-Na verificacao de 22/06/2026, o HTML publicado ainda continha:
+Apos a limpeza de monetizacao, o HTML publicado deve manter apenas recursos Google conhecidos:
 
 - Google tag/Analytics (`G-T15623VZYE`).
-- Scripts do Ezoic/Gatekeeper Consent.
 
-Esses avisos sao de recursos terceiros, como Ezoic, DoubleClick e Google Analytics, e nao indicam por si so que o HTML principal nao foi indexado. Se a prioridade for eliminar esses avisos do Search Console, sera necessario remover, desativar ou condicionar o carregamento de Ezoic/Analytics; se a prioridade for manter monetizacao e medicao, eles podem continuar aparecendo como falhas externas eventuais.
+O `ads.txt` tambem fica restrito ao publisher autorizado do Google AdSense, evitando linhas de parceiros antigos ou redes intermediarias.
 
 ### Workflow automatico dos proximos artigos
 

@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>Explorando os Segredos do Reservoir Sampling</h1>
 <p class="article-meta">Publicado em: 08/05/2025 14:15</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Mais importante do que simplesmente entender o conceito de Reservoir Sampling, é compreender como essa técnica pode impactar diretamente o nosso trabalho como desenvolvedores. Neste artigo, vamos explorar a fundo os segredos por trás do Reservoir Sampling e como podemos utilizá-lo de forma eficiente em nossos projetos.<br>Para começar, é essencial compreender que o Reservoir Sampling é uma técnica usada para amostragem aleatória de dados de um fluxo contínuo. Em termos simplificados, imagine que você tem um grande conjunto de dados que não pode ser armazenado completamente na memória, e precisa selecionar aleatoriamente uma amostra desse conjunto. É aí que entra o Reservoir Sampling.<br>A ideia por trás do Reservoir Sampling é bastante interessante. Em vez de armazenar todos os dados e depois selecionar uma amostra, o algoritmo do Reservoir Sampling permite que você selecione aleatoriamente os elementos à medida que eles chegam, mantendo uma amostra representativa sem a necessidade de armazenar todos os dados.<br>Vamos ver como isso funciona na prática, utilizando um exemplo simples em C#:<br><pre><code class="language-csharp">public List<int> ReservoirSampling(int[] stream, int k)<br>{<br>List<int> reservoir = new List<int>();<br>for (int i = 0; i < k; i++)<br>{<br>reservoir.Add(stream[i]);<br>}<br>Random rand = new Random();<br>for (int i = k; i < stream.Length; i++)<br>{<br>int j = rand.Next(0, i + 1);<br>if (j < k)<br>{<br>reservoir[j] = stream[i];<br>}<br>}<br>return reservoir;<br>}<br></code></pre><br>Neste trecho de código, estamos simulando a amostragem de um fluxo de dados representado por um array `stream`, onde `k` é o tamanho da amostra que queremos selecionar. O algoritmo do Reservoir Sampling nos permite manter a amostra representativa sem precisar armazenar todos os elementos do fluxo de dados.<br>Para tornar nosso código ainda mais eficiente, podemos utilizar APIs específicas de linguagens como C# para otimizar o processo de seleção aleatória dos elementos.<br>Além disso, é importante ressaltar que o Reservoir Sampling pode ser extremamente útil em situações onde lidamos com grandes volumes de dados e precisamos extrair amostras de forma eficiente e representativa.<br>Em conclusão, o Reservoir Sampling é uma técnica poderosa que pode facilitar o nosso trabalho como desenvolvedores, permitindo a seleção de amostras aleatórias de dados de forma eficiente e representativa. Ao dominar essa técnica e aplicá-la de forma inteligente em nossos projetos, podemos melhorar significativamente o desempenho e a eficácia das nossas soluções.</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>Gmail vai parar de suportar 3DES para SMTP: o que isso significa para os desenvolvedores?</h1>
 <p class="article-meta">Publicado em: 08/05/2025 05:24</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Mais importante do que a notícia em si, é o impacto prático de Gmail will soon stop support for the 3DES encryption cipher for incoming SMTP no nosso dia a dia como devs.<br>Para quem trabalha com desenvolvimento de software, especialmente com comunicação via email, a segurança dos dados é uma preocupação constante. A criptografia desempenha um papel fundamental nesse sentido, garantindo que as informações sensíveis não sejam interceptadas por terceiros mal-intencionados. E é por isso que a decisão do Gmail de interromper o suporte ao algoritmo de criptografia 3DES para o protocolo SMTP tem gerado discussões e levantado questionamentos sobre as práticas de segurança adotadas pelas empresas.<br>O 3DES, ou Triple Data Encryption Standard, é um algoritmo de criptografia simétrica amplamente utilizado em sistemas de segurança de rede. No entanto, devido ao avanço da tecnologia e ao surgimento de algoritmos mais seguros e eficientes, como o AES (Advanced Encryption Standard), o 3DES tem sido gradualmente substituído em diversos contextos. E a decisão do Gmail de descontinuar o suporte a esse algoritmo para o SMTP é mais um passo nessa direção.<br>Para os desenvolvedores, isso significa que será necessário revisar e, eventualmente, atualizar as configurações de segurança dos sistemas que utilizam o Gmail como provedor de email. Caso contrário, corre-se o risco de ter mensagens não entregues ou até mesmo expostas a possíveis ataques cibernéticos.<br>Para exemplificar, vamos considerar um cenário em que um sistema de envio de emails automatizado é configurado para utilizar o Gmail como servidor SMTP. Nesse caso, é fundamental garantir que as configurações de criptografia estejam alinhadas com as diretrizes de segurança mais recentes. Abaixo, um trecho de código em C# que ilustra como configurar a criptografia TLS para o envio de emails via SMTP:<br><pre><code class="language-csharp">using System.Net;<br>using System.Net.Mail;<br>SmtpClient client = new SmtpClient("smtp.gmail.com");<br>client.Port = 587;<br>client.Credentials = new NetworkCredential("seuemail@gmail.com", "suasenha");<br>client.EnableSsl = true; // Habilita criptografia TLS<br></code></pre><br>Além disso, é importante estar atento às recomendações de segurança do Gmail e manter-se atualizado sobre as melhores práticas de criptografia e proteção de dados. Afinal, a segurança da informação é uma responsabilidade compartilhada entre os provedores de serviços e os desenvolvedores que utilizam esses serviços em seus sistemas.<br>Em conclusão, a decisão do Gmail de encerrar o suporte ao 3DES para o SMTP é mais um lembrete da importância da segurança da informação no desenvolvimento de software. É essencial estar sempre atento às atualizações e recomendações dos provedores de serviços, bem como buscar constantemente aprimorar as práticas de segurança em nossos sistemas. Afinal, a proteção dos dados dos usuários é uma prioridade que não pode ser negligenciada.</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

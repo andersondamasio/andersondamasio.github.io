@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>CDN e a Revolução nas URLs dos Agentes em Pipelines de Desenvolvimento</h1>
 <p class="article-meta">Publicado em: 05/05/2025 11:18</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Você já parou para pensar no impacto real de CDN Domain URL change for Agents in Pipelines nos sistemas modernos? A mudança nos URLs dos agentes em pipelines de desenvolvimento pode parecer um detalhe técnico, mas tem o potencial de revolucionar a forma como lidamos com conteúdo estático e dinâmico em aplicações web.<br>Para aqueles que não estão familiarizados, CDN (Content Delivery Network) é uma rede de servidores distribuídos geograficamente que armazena cópias de conteúdo estático, como imagens, scripts e folhas de estilo, com o objetivo de acelerar o carregamento de páginas web. Ao utilizar uma CDN, o conteúdo é servido a partir do servidor mais próximo do usuário, reduzindo a latência e melhorando a experiência do usuário.<br>A mudança nas URLs dos agentes em pipelines de desenvolvimento está diretamente relacionada à forma como os recursos da CDN são acessados e utilizados em um projeto. Anteriormente, era comum configurar manualmente o endereço da CDN em cada chamada de recurso estático no código-fonte da aplicação. Com a evolução das práticas de desenvolvimento e a automação de pipelines, essa abordagem se mostrou ineficiente e propensa a erros.<br>Para lidar com essa questão, muitas ferramentas de automação de pipelines passaram a oferecer integração nativa com CDNs, permitindo que as URLs dos agentes sejam configuradas de forma dinâmica, de acordo com o ambiente de execução da aplicação. Isso significa que, ao migrar um projeto para um novo ambiente, como produção ou homologação, as URLs dos agentes são atualizadas automaticamente, sem a necessidade de intervenção manual.<br><pre><code class="language-csharp">public class CDNService<br>{<br>private readonly string _cdnUrl;<br>public CDNService(string cdnUrl)<br>{<br>_cdnUrl = cdnUrl;<br>}<br>public string GetResourceUrl(string resourcePath)<br>{<br>return $"{_cdnUrl}/{resourcePath}";<br>}<br>}<br></code></pre><br>Essa abordagem traz uma série de benefícios, como a redução de erros de configuração, a simplificação do processo de deploy e a melhoria na escalabilidade da aplicação. Além disso, ao utilizar URLs dinâmicas para os agentes em pipelines de desenvolvimento, é possível facilitar a implementação de práticas como A/B testing, cache invalidation e versionamento de recursos.<br>Em resumo, a mudança nas URLs dos agentes em pipelines de desenvolvimento é um reflexo da constante evolução das práticas de desenvolvimento de software. Ao adotar essa abordagem, as equipes de desenvolvimento podem otimizar o desempenho das aplicações, reduzir a complexidade operacional e oferecer uma experiência mais consistente aos usuários finais. Portanto, vale a pena investir tempo e recursos na implementação de CDN Domain URL change for Agents in Pipelines em seus projetos.</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

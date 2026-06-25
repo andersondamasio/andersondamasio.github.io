@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -201,13 +195,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -226,14 +213,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Desbravando o Protocolo de Contexto de Modelo no Ecossistema Java</h1>
 <img src="/images/artigos/desbravando-o-protocolo-de-contexto-de-modelo-no-ecossistema-java.jpg" alt="Imagem relacionada ao tema" style="width:100%; border-radius:8px; margin:1rem 0;" decoding="async" fetchpriority="high" width="1080" height="1620">
 <p class="article-meta">Publicado em: 08/05/2025 23:31</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">A maioria das falhas críticas que vi tinham ligação direta com má compreensão do Protocolo de Contexto de Modelo no Ecossistema Java. Essa é uma área fundamental que muitos desenvolvedores ainda não exploraram completamente, mas que pode trazer benefícios significativos para a arquitetura de software.<br>O Protocolo de Contexto de Modelo, ou Model Context Protocol (MCP), é uma especificação que define como as classes devem interagir em um sistema orientado a objetos. Ele fornece um conjunto de diretrizes e padrões para garantir uma comunicação eficiente e consistente entre os diferentes componentes de um sistema.<br>Uma das principais vantagens do MCP é a clareza na definição de responsabilidades de cada classe, facilitando a manutenção e a evolução do sistema ao longo do tempo. Além disso, ele promove a reutilização de código e a modularidade, tornando o sistema mais flexível e escalável.<br>Para implementar o MCP em um projeto Java, é importante seguir as boas práticas de design de software, como a separação de preocupações, o princípio da responsabilidade única e a injeção de dependências. Isso garantirá que o sistema seja coeso, flexível e de fácil manutenção.<br>A seguir, um exemplo prático de como implementar o MCP em Java:<br><pre><code>public interface ModelContext {<br>void setAttribute(String key, Object value);<br>Object getAttribute(String key);<br>}<br>public class UserModel implements ModelContext {<br>private Map<String, Object> attributes = new HashMap<>();<br>@Override<br>public void setAttribute(String key, Object value) {<br>attributes.put(key, value);<br>}<br>@Override<br>public Object getAttribute(String key) {<br>return attributes.get(key);<br>}<br>}<br>public class Main {<br>public static void main(String[] args) {<br>ModelContext context = new UserModel();<br>context.setAttribute("name", "John Doe");<br>String name = (String) context.getAttribute("name");<br>System.out.println("Name: " + name);<br>}<br>}<br></code></pre><br>Neste exemplo, a interface `ModelContext` define os métodos para manipulação de atributos, enquanto a classe `UserModel` implementa esses métodos de acordo com as necessidades do usuário.<br>Ao adotar o Protocolo de Contexto de Modelo no Ecossistema Java, os desenvolvedores podem criar sistemas mais robustos, coesos e flexíveis, preparados para enfrentar os desafios do mundo real. Portanto, é essencial explorar essa poderosa ferramenta e utilizá-la de forma inteligente em seus projetos.<br>Lembre-se sempre de manter-se atualizado com as melhores práticas de design de software e de buscar constantemente aprimorar suas habilidades técnicas. A adoção do MCP é apenas o começo de uma jornada rumo à excelência na arquitetura de software.</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

@@ -1743,15 +1743,6 @@ ${gerarSeoHead({
 
  ${gerarGoogleAnalyticsTag()}
 
-<!-- Script principal da Ezoic (Standalone) no <head> -->
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
-
 <style>
 :root {
   --bg: #f0f2f5;
@@ -1822,14 +1813,6 @@ ${gerarHeaderNavegacao("../..")}
 <h1>${titulo}</h1>
 ${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="${escapeAttribute(titulo)}" decoding="async" fetchpriority="high"${imagemCapaDimensoesHtml} style="width:100%; max-width:600px; border-radius:8px; margin: 0 auto 1.5rem; display:block;" />` : ''}
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">${normalizarHeadingsCorpoArtigo(marked.parse(corpoArtigo))}</div>
 ${gerarFonteArtigoHtml(noticia.url, noticia.titulo)}
@@ -2031,15 +2014,6 @@ ${gerarSeoHead({
 
  ${gerarGoogleAnalyticsTag()}
 
-<!-- Ezoic Standalone -->
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
-
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <style>
 :root {
@@ -2157,14 +2131,6 @@ ${gerarHeaderNavegacao(".")}
 <h3>Contato</h3>
 <p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
 </div>
-
-<!-- Ezoic Ad Placeholder (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <!-- Artigos -->
 <div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">

@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>Descomplicando o "Clean Code": Por que simplicidade é mais importante</h1>
 <p class="article-meta">Publicado em: 05/05/2025 01:21</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Tenho visto muita gente tratando o conceito de "clean code" como algo simples — mas a realidade é bem diferente. Recentemente, um debate surgiu nas redes sociais a respeito da importância do "clean code" em comparação com a simplicidade do código. Os argumentos levantados no vídeo mencionado destacam que muitos programadores são ensinados a utilizarem "design patterns" e "software architecture", porém acabam deixando de lado a performance e a simplicidade.<br>É inegável que o "clean code" tem sua importância, afinal, um código limpo e bem organizado facilita a manutenção, o entendimento e a colaboração entre desenvolvedores. No entanto, a busca pela perfeição nesse aspecto pode levar a um código complexo, difícil de ser compreendido e, consequentemente, mais propenso a erros.<br>A simplicidade, por sua vez, é muitas vezes subestimada. Um código simples é aquele que é fácil de entender, direto ao ponto e sem excesso de complexidade desnecessária. Priorizar a simplicidade não significa negligenciar a qualidade do código, mas sim focar no que realmente importa: entregar um software funcional, eficiente e de fácil manutenção.<br>Na prática, isso significa buscar soluções simples e diretas, sem se prender excessivamente a padrões de projeto ou arquiteturas complexas. É importante encontrar um equilíbrio entre a organização do código e a sua simplicidade, garantindo que a solução atenda aos requisitos de performance e usabilidade sem tornar-se excessivamente complicada.<br>Para exemplificar, vamos analisar um trecho de código em C# que ilustra a diferença entre um código complexo e um código simples:<br><pre><code class="language-csharp">// Código complexo<br>public void CalculateTotalPrice(List<Product> products)<br>{<br>decimal totalPrice = 0;<br>foreach (var product in products)<br>{<br>if (product.Category == "Eletronics" && product.Price > 1000)<br>{<br>totalPrice += product.Price * 0.9;<br>}<br>else<br>{<br>totalPrice += product.Price;<br>}<br>}<br>Console.WriteLine($"Total Price: {totalPrice}");<br>}<br>// Código simples<br>public void CalculateTotalPrice(List<Product> products)<br>{<br>decimal totalPrice = products.Sum(p => p.Price);<br>Console.WriteLine($"Total Price: {totalPrice}");<br>}<br></code></pre><br>No exemplo acima, o segundo trecho de código é muito mais simples, direto e fácil de entender do que o primeiro. Apesar de ambos realizarem a mesma tarefa, a simplicidade do segundo torna-o mais eficiente e menos propenso a erros.<br>Portanto, ao desenvolver software, lembre-se de que a simplicidade muitas vezes é a chave para um código eficiente e de qualidade. Não se prenda apenas ao "clean code", mas busque também a simplicidade em suas soluções. Isso não apenas facilitará a manutenção e a evolução do software, mas também tornará a experiência de desenvolvimento mais prazerosa e produtiva.</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

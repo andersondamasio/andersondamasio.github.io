@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>"ESP32-C5 da Espressif: A revolução silenciosa que está por vir"</h1>
 <p class="article-meta">Publicado em: 01/05/2025 04:18</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Sempre que vejo discussões sobre a notícia de que o ESP32-C5 da Espressif está agora em produção em massa, me lembro de uma situação real em produção que exemplifica como a tecnologia está sempre evoluindo e trazendo novas possibilidades para o mundo da eletrônica embarcada.<br><br>Para quem não está familiarizado, o ESP32-C5 é o mais recente microcontrolador da Espressif, empresa conhecida por suas soluções de conectividade Wi-Fi e Bluetooth de baixo custo e alto desempenho. Com a produção em massa do ESP32-C5, podemos esperar avanços significativos em termos de eficiência energética, desempenho e segurança para uma variedade de aplicações, desde dispositivos IoT até produtos de consumo.<br><br>Do ponto de vista técnico, o ESP32-C5 traz consigo uma série de melhorias em relação aos seus antecessores. Com um núcleo Xtensa LX7 de 32 bits, clock de até 160 MHz e suporte a Wi-Fi 802.11 b/g/n, o microcontrolador promete um desempenho superior e uma conectividade mais estável. Além disso, a inclusão de recursos de segurança aprimorados, como criptografia AES de 128 bits e suporte a TLS 1.2, tornam o ESP32-C5 uma escolha ainda mais atraente para aplicações que exigem proteção de dados sensíveis.<br><br>Para demonstrar o potencial do ESP32-C5, vamos considerar um exemplo prático de uso em um sistema de monitoramento remoto de temperatura e umidade. Com o suporte integrado ao protocolo MQTT e à criptografia TLS, podemos garantir a transmissão segura dos dados coletados para um servidor na nuvem, permitindo o acesso remoto em tempo real e a análise dos dados coletados.<br><br><pre><code>#include <WiFi.h><br>#include <MQTT.h><br><br>const char* ssid = "nomedarede";<br>const char* password = "senhadarede";<br>const char* mqtt_server = "mqtt.exemplo.com";<br>const int mqtt_port = 1883;<br><br>WiFiClient espClient;<br>MQTTClient client;<br><br>void setup() {<br>  WiFi.begin(ssid, password);<br>  <br>  while (WiFi.status() != WL_CONNECTED) {<br>    delay(1000);<br>  }<br>  <br>  client.begin(mqtt_server, mqtt_port, espClient);<br>  <br>  while (!client.connect("ESP32-C5")) {<br>    delay(1000);<br>  }<br>  <br>  client.publish("temperatura", "25");<br>}<br><br>void loop() {<br>  client.loop();<br>}<br></code></pre><br><br>Além disso, é importante destacar que o ESP32-C5 oferece suporte a interfaces SPI, I2C e UART, ampliando ainda mais suas possibilidades de integração com uma variedade de sensores e dispositivos externos.<br><br>Em conclusão, o ESP32-C5 da Espressif representa mais do que apenas mais um lançamento de um microcontrolador. Com seu desempenho aprimorado, recursos de segurança avançados e suporte a interfaces de comunicação populares, ele abre novas portas para a criação de soluções inovadoras e escaláveis no mundo da eletrônica embarcada. Portanto, fique de olho nessa revolução silenciosa que está por vir e comece a explorar o potencial do ESP32-C5 em seus projetos futuros.</div>
 <section class="related-articles" aria-labelledby="related-articles-title">

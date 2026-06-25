@@ -1,8 +1,5 @@
 const resourceHintOrigins = [
-  "https://www.googletagmanager.com",
-  "https://cmp.gatekeeperconsent.com",
-  "https://the.gatekeeperconsent.com",
-  "https://www.ezojs.com"
+  "https://www.googletagmanager.com"
 ];
 
 function gerarResourceHints() {

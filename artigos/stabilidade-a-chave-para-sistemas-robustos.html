@@ -12,12 +12,6 @@
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
-<link rel="preconnect" href="https://cmp.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//cmp.gatekeeperconsent.com">
-<link rel="preconnect" href="https://the.gatekeeperconsent.com">
-<link rel="dns-prefetch" href="//the.gatekeeperconsent.com">
-<link rel="preconnect" href="https://www.ezojs.com">
-<link rel="dns-prefetch" href="//www.ezojs.com">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
@@ -197,13 +191,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
   gtag('js', new Date());
   gtag('config', 'G-T15623VZYE');
 </script>
-<script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-<script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-<script>
-  window.ezstandalone = window.ezstandalone || {};
-  ezstandalone.cmd = ezstandalone.cmd || [];
-</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 </head>
@@ -223,14 +210,6 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <main>
 <h1>Stabilidade: a chave para sistemas robustos</h1>
 <p class="article-meta">Publicado em: 08/05/2025 17:19</p>
-
-<!-- Ezoic Placeholder: incontent_5 (ID 115) -->
-<div id="ezoic-pub-ad-placeholder-115" style="margin: 2rem 0;"></div>
-<script>
-  ezstandalone.cmd.push(function() {
-    ezstandalone.showAds(115);
-  });
-</script>
 
 <div class="article-body">Essa é daquelas notícias que a gente lê e pensa: 'já vivi isso em produção, infelizmente'. A importância da estabilidade em sistemas de software é algo que todo arquiteto ou desenvolvedor já enfrentou, seja lidando com picos de tráfego inesperados, bugs inesperados ou mudanças de requisitos de última hora. E é aí que entra o conceito de "Stability by Design".<br>Quando falamos em "Stability by Design", estamos nos referindo à prática de projetar e desenvolver sistemas de software com a estabilidade como um dos principais pilares. Isso significa pensar não apenas na funcionalidade do sistema, mas também em como ele se comportará em situações adversas, como sobrecarga de tráfego, falhas de hardware ou software, entre outros cenários.<br>Uma das maneiras de garantir a estabilidade de um sistema é através da implementação de técnicas de resiliência, como circuit breakers, retries automáticos e fallbacks. Vamos ver um exemplo prático em C#:<br><pre><code class="language-csharp">public async Task<string> GetResource(string url)<br>{<br>try<br>{<br>var response = await _httpClient.GetAsync(url);<br>if (response.IsSuccessStatusCode)<br>{<br>return await response.Content.ReadAsStringAsync();<br>}<br>else<br>{<br>// Implementar fallback ou outro tratamento<br>return "Erro ao obter o recurso";<br>}<br>}<br>catch (Exception ex)<br>{<br>// Implementar circuit breaker ou retry<br>return "Erro ao obter o recurso";<br>}<br>}<br></code></pre><br>Além disso, é fundamental pensar em aspectos como monitoramento, logs detalhados, testes de carga e escalabilidade desde o início do desenvolvimento de um sistema. Dessa forma, é possível identificar potenciais problemas antes mesmo deles impactarem os usuários finais.<br>Em suma, investir em estabilidade desde o design de um sistema é essencial para garantir a confiabilidade e o bom funcionamento em produção. Afinal, como diz o ditado, é melhor prevenir do que remediar. E no mundo dos sistemas de software, a estabilidade é a chave para o sucesso a longo prazo.</div>
 <section class="related-articles" aria-labelledby="related-articles-title">
