@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 25 Jun 2026 15:42:17 GMT</lastBuildDate>
+<lastBuildDate>Thu, 25 Jun 2026 18:09:09 GMT</lastBuildDate>
+<item>
+<title>Aumentos de Preços da Apple: Como a Arquitetura de Software Pode Ajudar na Tomada de Decisões</title>
+<link>https://www.andersondamasio.com.br/artigos/tecnologia/aumentos-de-precos-da-apple-como-a-arquitetura-de-software-pode-ajudar-na-tomada-de-decisoes.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/aumentos-de-precos-da-apple-como-a-arquitetura-de-software-pode-ajudar-na-tomada-de-decisoes.html</guid>
+<pubDate>Thu, 25 Jun 2026 18:09:09 GMT</pubDate>
+<category>Tecnologia</category>
+<description>Recentemente, a Apple anunciou um aumento de preços em toda a sua linha de MacBooks e iPads, refletindo o aumento dos custos de componentes. No entanto,...</description>
+</item>
 <item>
 <title>A era do controle na web: o impacto do Manifest V3 no uso de adblockers</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/a-era-do-controle-na-web-o-impacto-do-manifest-v3-no-uso-de-adblockers.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 09 Jun 2026 00:12:35 GMT</pubDate>
 <category>Desenvolvimento de Software</category>
 <description>Recentemente, a Apple apresentou o MacOS 27, carinhosamente chamado de &quot;Golden Gate&quot;, durante a WWDC 2026. Para quem trabalha com tecnologia, esse...</description>
-</item>
-<item>
-<title>Novos Rumos: OpenAI e Anthropic Rumo à Bolsa de Valores</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/novos-rumos-openai-e-anthropic-rumo-a-bolsa-de-valores.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/novos-rumos-openai-e-anthropic-rumo-a-bolsa-de-valores.html</guid>
-<pubDate>Mon, 08 Jun 2026 22:32:26 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Nos últimos dias, a cena da inteligência artificial tem agitado o mercado, e não é pra menos. A OpenAI, a criadora do famoso ChatGPT, anunciou seus planos...</description>
 </item>
 </channel>
 </rss>
