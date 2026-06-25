@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 25 Jun 2026 12:37:41 GMT</lastBuildDate>
+<lastBuildDate>Thu, 25 Jun 2026 15:42:17 GMT</lastBuildDate>
+<item>
+<title>A era do controle na web: o impacto do Manifest V3 no uso de adblockers</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/a-era-do-controle-na-web-o-impacto-do-manifest-v3-no-uso-de-adblockers.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/a-era-do-controle-na-web-o-impacto-do-manifest-v3-no-uso-de-adblockers.html</guid>
+<pubDate>Thu, 25 Jun 2026 15:42:17 GMT</pubDate>
+<category>Segurança</category>
+<description>Recentemente, a comunidade tecnológica começou a discutir as mudanças drásticas que o Google Chrome está prestes a implementar com o novo Manifest V3....</description>
+</item>
 <item>
 <title>A Revolução dos Pen Drives: Como a Tecnologia de Armazenamento Evoluiu e o Que Isso Significa Para Você</title>
 <link>https://www.andersondamasio.com.br/artigos/tecnologia/a-revolucao-dos-pen-drives-como-a-tecnologia-de-armazenamento-evoluiu-e-o-que-isso-significa-para-voce.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Mon, 08 Jun 2026 22:32:26 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>Nos últimos dias, a cena da inteligência artificial tem agitado o mercado, e não é pra menos. A OpenAI, a criadora do famoso ChatGPT, anunciou seus planos...</description>
-</item>
-<item>
-<title>A vulnerabilidade dos gigantes: o hack que abalou os projetos de código aberto da Microsoft</title>
-<link>https://www.andersondamasio.com.br/artigos/seguranca/a-vulnerabilidade-dos-gigantes-o-hack-que-abalou-os-projetos-de-codigo-aberto-da-microsoft.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/a-vulnerabilidade-dos-gigantes-o-hack-que-abalou-os-projetos-de-codigo-aberto-da-microsoft.html</guid>
-<pubDate>Mon, 08 Jun 2026 20:20:20 GMT</pubDate>
-<category>Segurança</category>
-<description>Recentemente, a comunidade de tecnologia foi abalada por uma notícia alarmante sobre a Microsoft. A gigante da tecnologia teve que desativar diversos de...</description>
 </item>
 </channel>
 </rss>
