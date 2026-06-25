@@ -385,7 +385,7 @@ const html = `<!DOCTYPE html>
 </script>
 
 <!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1824544776589069"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 
 <style>
@@ -583,7 +583,7 @@ const html = `<!DOCTYPE html>
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio.png">
 
 <!-- Verificação Google AdSense -->
-<meta name="google-adsense-account" content="ca-pub-1824544776589069">
+<meta name="google-adsense-account" content="ca-pub-3323198858252165">
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
@@ -615,7 +615,7 @@ const html = `<!DOCTYPE html>
 
 
 <!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-1824544776589069"
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-3323198858252165"
      crossorigin="anonymous"></script>
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
