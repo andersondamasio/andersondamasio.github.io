@@ -183,6 +183,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link, #0a66c2); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -211,6 +215,23 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Obituários Automatizados</h1>
 <p class="article-meta">Publicado em: 27/04/2025 14:20</p>
 <div class="article-body">Com a constante evolução da tecnologia e a busca por eficiência no desenvolvimento de software, a automação de tarefas rotineiras tem se tornado cada vez mais relevante. Neste contexto, a prática de ler obituários pode ser automatizada para trazer benefícios significativos para arquitetura de software e desenvolvimento de sistemas.<br><br>Imagine um sistema que necessita verificar diariamente informações sobre obituários para atualizar dados em um banco de dados. Em vez de ter um funcionário dedicado a essa tarefa, podemos criar um script automatizado que busca os obituários em um site específico e atualiza as informações necessárias no sistema.<br><br>Vamos exemplificar em C# como essa automação poderia ser implementada:<br><br><pre><code class="language-csharp">using System;<br>using System.Net;<br><br>class ObituariosAutomatizados<br>{<br>    static void Main()<br>    {<br>        WebClient client = new WebClient();<br>        string obituarios = client.DownloadString("http://site.com/obituarios");<br><br>        // Processar os obituários e atualizar o banco de dados<br>        // Código para atualização do banco de dados aqui<br>    }<br>}<br></code></pre><br><br>Neste exemplo, utilizamos a classe `WebClient` para baixar a página de obituários de um site fictício. Em seguida, o código poderia processar as informações obtidas e atualizar o banco de dados conforme necessário.<br><br>Além disso, é importante ressaltar que a automação de obituários pode ser aplicada em diversos cenários, como notificação de eventos, processamento de dados externos e atualização de informações em tempo real.<br><br>Em conclusão, a automação de tarefas como a leitura de obituários pode trazer ganhos significativos em termos de eficiência e precisão para arquitetura de software e desenvolvimento de sistemas. Ao explorar essa prática, os desenvolvedores podem otimizar processos e dedicar mais tempo a atividades estratégicas.</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
+<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 27/04/2025.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Obituários Automatizados" à categoria <strong>Artigos</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

@@ -183,6 +183,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link, #0a66c2); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -212,6 +216,23 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 05/05/2025 01:21</p>
 
 <div class="article-body">Tenho visto muita gente tratando o conceito de "clean code" como algo simples — mas a realidade é bem diferente. Recentemente, um debate surgiu nas redes sociais a respeito da importância do "clean code" em comparação com a simplicidade do código. Os argumentos levantados no vídeo mencionado destacam que muitos programadores são ensinados a utilizarem "design patterns" e "software architecture", porém acabam deixando de lado a performance e a simplicidade.<br>É inegável que o "clean code" tem sua importância, afinal, um código limpo e bem organizado facilita a manutenção, o entendimento e a colaboração entre desenvolvedores. No entanto, a busca pela perfeição nesse aspecto pode levar a um código complexo, difícil de ser compreendido e, consequentemente, mais propenso a erros.<br>A simplicidade, por sua vez, é muitas vezes subestimada. Um código simples é aquele que é fácil de entender, direto ao ponto e sem excesso de complexidade desnecessária. Priorizar a simplicidade não significa negligenciar a qualidade do código, mas sim focar no que realmente importa: entregar um software funcional, eficiente e de fácil manutenção.<br>Na prática, isso significa buscar soluções simples e diretas, sem se prender excessivamente a padrões de projeto ou arquiteturas complexas. É importante encontrar um equilíbrio entre a organização do código e a sua simplicidade, garantindo que a solução atenda aos requisitos de performance e usabilidade sem tornar-se excessivamente complicada.<br>Para exemplificar, vamos analisar um trecho de código em C# que ilustra a diferença entre um código complexo e um código simples:<br><pre><code class="language-csharp">// Código complexo<br>public void CalculateTotalPrice(List<Product> products)<br>{<br>decimal totalPrice = 0;<br>foreach (var product in products)<br>{<br>if (product.Category == "Eletronics" && product.Price > 1000)<br>{<br>totalPrice += product.Price * 0.9;<br>}<br>else<br>{<br>totalPrice += product.Price;<br>}<br>}<br>Console.WriteLine($"Total Price: {totalPrice}");<br>}<br>// Código simples<br>public void CalculateTotalPrice(List<Product> products)<br>{<br>decimal totalPrice = products.Sum(p => p.Price);<br>Console.WriteLine($"Total Price: {totalPrice}");<br>}<br></code></pre><br>No exemplo acima, o segundo trecho de código é muito mais simples, direto e fácil de entender do que o primeiro. Apesar de ambos realizarem a mesma tarefa, a simplicidade do segundo torna-o mais eficiente e menos propenso a erros.<br>Portanto, ao desenvolver software, lembre-se de que a simplicidade muitas vezes é a chave para um código eficiente e de qualidade. Não se prenda apenas ao "clean code", mas busque também a simplicidade em suas soluções. Isso não apenas facilitará a manutenção e a evolução do software, mas também tornará a experiência de desenvolvimento mais prazerosa e produtiva.</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
+<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 20/04/2025.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Descomplicando o "Clean Code": Por que simplicidade é mais importante" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

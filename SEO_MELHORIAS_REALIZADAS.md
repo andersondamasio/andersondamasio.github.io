@@ -2,7 +2,7 @@
 
 Data: 06/05/2026
 
-Ultima atualizacao: 22/06/2026
+Ultima atualizacao: 25/06/2026
 
 Este documento resume o processo de melhoria, rebuild e aplicacao de SEO feito no projeto do site/blog Anderson Damasio.
 
@@ -586,6 +586,28 @@ Quando um item em `titulos.json` possui `urlFonte`, o pipeline agora:
 
 A auditoria estrita passou a falhar quando um artigo indexavel tem `urlFonte` em `titulos.json`, mas nao possui a fonte visivel no HTML, a referencia estruturada no JSON-LD ou quando o link de fonte contem HTML interno indevido.
 
+### Trilha de conteudo util e verificavel
+
+Foi criada uma nova trilha para que os artigos gerados automaticamente fiquem mais validaveis, mais uteis para leitores e menos dependentes de texto generico.
+
+O helper `scripts/seo-helpful-content.js` passou a centralizar essa regra. Ele gera e valida duas secoes visiveis em cada artigo:
+
+- `O que foi verificado`, com fonte principal, data considerada, recorte editorial e limites da analise.
+- `Como aplicar essa leitura`, com acoes praticas adaptadas a categoria do artigo.
+
+O gerador `gerar-conteudo.js` tambem teve o prompt reforcado para exigir:
+
+- Resumo executivo curto.
+- Separacao entre fato reportado, interpretacao tecnica e limites do que ainda nao pode ser afirmado.
+- Aplicacao pratica para arquitetos, desenvolvedores ou lideres tecnicos.
+- Riscos e cuidados sem sensacionalismo.
+- Proibicao explicita de inventar dados, numeros, datas, nomes ou conclusoes nao sustentadas pela fonte.
+- Valor adicional alem da noticia, com impacto, trade-offs, riscos, decisoes praticas e sinais observaveis por um time.
+
+O backfill `scripts/seo-backfill-articles.js` aplica as mesmas secoes nos artigos antigos. Quando ha `urlFonte`, a secao aponta para a fonte original normalizada; quando nao ha fonte externa cadastrada, o artigo declara essa limitacao de forma transparente.
+
+A auditoria estrita agora falha se um artigo indexavel nao possuir as secoes `article-validation` e `article-usefulness`. Assim, os proximos artigos e os artigos antigos precisam manter a camada de verificacao e utilidade antes de serem publicados.
+
 ### Saneamento do HTML dos artigos
 
 Durante a validacao das fontes, foram encontrados artigos com HTML tolerado pelo navegador, mas ruim para parsers de SEO:
@@ -625,13 +647,13 @@ Isso evita que uma falha de segredo ou autenticacao no clone interrompa a geraca
 
 ### Resultado da validacao final
 
-Em 22/06/2026, o comando abaixo foi executado com sucesso:
+Em 25/06/2026, o comando abaixo foi executado com sucesso:
 
 ```bash
 npm run seo:maintain
 ```
 
-Tambem foram executados com sucesso apos os ajustes de fonte e saneamento do HTML:
+Tambem foram executados com sucesso apos os ajustes de fonte, saneamento do HTML e trilha de conteudo util:
 
 ```bash
 npm run seo:rebuild
@@ -640,9 +662,9 @@ npm run seo:audit:strict
 
 Resultado:
 
-- 17.521 arquivos HTML auditados.
-- 8.054 artigos considerados publicaveis/indexaveis.
-- 8.112 URLs no sitemap.
+- 17.527 arquivos HTML auditados.
+- 8.057 artigos considerados publicaveis/indexaveis.
+- 8.115 URLs no sitemap.
 - 100 artigos recentes no `rss.xml`.
 - 0 categorias invalidas restantes em `titulos.json`.
 - Nenhum `title`, `description`, `canonical`, `h1`, Open Graph, Twitter Card ou JSON-LD ausente.
@@ -657,6 +679,8 @@ Resultado:
 - Nenhum `BlogPosting` sem identidade canônica do autor (`@id` + `sameAs`).
 - Nenhum `BlogPosting` sem `keywords`, `wordCount`, `about`, `mentions`, `isAccessibleForFree`, `copyrightYear` e `copyrightHolder`.
 - Nenhum artigo indexavel com `urlFonte` sem fonte visivel ou sem `isBasedOn`/`citation` no JSON-LD.
+- Nenhum artigo indexavel sem a secao `O que foi verificado`.
+- Nenhum artigo indexavel sem a secao `Como aplicar essa leitura`.
 - Nenhum artigo indexavel com HTML malformado no fechamento do corpo.
 - Nenhum artigo indexavel com `<script>` cru dentro de `.article-body`.
 - Nenhum artigo indexavel com titulo iniciando por `##` ou `Introdução:`.

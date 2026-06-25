@@ -183,6 +183,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link, #0a66c2); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -212,6 +216,23 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 06/05/2025 01:21</p>
 
 <div class="article-body">Em qualquer roda de devs, é só falar GenAI Patterns: Query Rewriting que surgem 5 opiniões diferentes. Alguns enxergam como uma revolução na forma como lidamos com consultas em bancos de dados, enquanto outros ainda têm dúvidas sobre sua eficácia e aplicabilidade em projetos reais. Mas afinal, o que são esses padrões de inteligência artificial aplicados à reescrita de consultas e como podemos utilizá-los de forma eficiente em nossas aplicações?<br>Para entender melhor, vamos mergulhar um pouco mais fundo nesse tema tão atual e promissor. Os GenAI Patterns consistem em técnicas que combinam o poder da inteligência artificial com a capacidade de reescrita de consultas em tempo de execução. Isso significa que, ao invés de simplesmente enviar uma consulta ao banco de dados e receber um conjunto de resultados, podemos agora utilizar modelos de IA para otimizar e melhorar nossas consultas, resultando em um desempenho superior e uma experiência mais fluida para o usuário final.<br>Imagine que você tenha uma aplicação que realiza consultas complexas em um banco de dados relacional. Com os GenAI Patterns, é possível criar modelos de IA que analisam o comportamento das consultas, identificam padrões de uso e sugerem otimizações em tempo real. Isso pode incluir desde a reescrita de partes da consulta até a sugestão de índices adicionais para melhorar a performance.<br>Vamos ilustrar isso com um exemplo prático em C#:<br><pre><code class="language-csharp">using System;<br>using System.Data.SqlClient;<br>class Program<br>{<br>static void Main()<br>{<br>string queryString = "SELECT * FROM Products WHERE CategoryId = @CategoryId";<br>using (SqlConnection connection = new SqlConnection(connectionString))<br>{<br>SqlCommand command = new SqlCommand(queryString, connection);<br>command.Parameters.AddWithValue("@CategoryId", 1);<br>connection.Open();<br>SqlDataReader reader = command.ExecuteReader();<br>while (reader.Read())<br>{<br>Console.WriteLine(String.Format("{0}, {1}", reader["ProductName"], reader["Price"]));<br>}<br>}<br>}<br>}<br></code></pre><br>Agora, imagine que podemos aplicar os GenAI Patterns a essa consulta, identificando oportunidades de otimização e sugestões de reescrita baseadas em padrões de uso. Isso poderia resultar em consultas mais eficientes, menor tempo de resposta e uma melhor experiência para o usuário.<br>Para quem está começando a explorar os GenAI Patterns, uma dica valiosa é investir tempo na compreensão dos modelos de IA utilizados e na coleta de dados relevantes para treiná-los. Além disso, é importante testar e validar as otimizações propostas antes de aplicá-las em produção, garantindo que não haja impactos negativos na performance geral do sistema.<br>Em conclusão, os GenAI Patterns representam uma nova fronteira no desenvolvimento de aplicações escaláveis e eficientes. Ao combinar inteligência artificial com a reescrita de consultas, somos capazes de alcançar níveis de desempenho e otimização que antes eram inimagináveis. Portanto, vale a pena explorar e experimentar essas técnicas em seus projetos, buscando sempre a excelência e a inovação.<br>E você, já experimentou os GenAI Patterns em seus projetos? Compartilhe sua experiência nos comentários!</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
+<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 11/02/2025.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "GenAI Patterns: Repensando suas Queries" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

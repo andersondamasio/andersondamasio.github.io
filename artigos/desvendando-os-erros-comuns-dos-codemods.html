@@ -183,6 +183,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link, #0a66c2); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -212,6 +216,23 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 06/05/2025 15:25</p>
 
 <div class="article-body">Se existe um tema que separa teoria e prática no desenvolvimento, esse tema é Fixing Common Pitfalls of Codemods. Quando falamos sobre codemods, estamos lidando com uma ferramenta poderosa para automatizar a refatoração de código. No entanto, como em qualquer ferramenta complexa, existem armadilhas comuns que os desenvolvedores podem cair ao utilizá-la.<br>Uma das armadilhas mais comuns é não considerar todos os cenários possíveis ao criar um codemod. Muitas vezes, os desenvolvedores se concentram em casos simples e acabam deixando de lado situações mais complexas que podem surgir no código. Isso pode levar a erros inesperados e até mesmo a quebras no sistema.<br>Outro erro comum é não testar adequadamente o codemod antes de aplicá-lo em produção. É essencial criar testes abrangentes que cubram todos os possíveis cenários de uso do codemod, garantindo assim que ele funcione corretamente em qualquer situação.<br>Para evitar esses e outros erros comuns, é importante seguir algumas boas práticas ao criar e utilizar codemods. Uma delas é sempre manter a documentação atualizada e clara, para que outros desenvolvedores possam entender facilmente como o codemod funciona e como utilizá-lo corretamente.<br>Além disso, é fundamental revisar constantemente o código do codemod e buscar por possíveis melhorias. Às vezes, pequenas alterações podem tornar o codemod mais eficiente e seguro, evitando assim possíveis problemas no futuro.<br>Para exemplificar, vamos analisar um trecho de código em C# que utiliza um codemod para refatorar um método de uma classe:<br><pre><code class="language-csharp">public class MinhaClasse<br>{<br>public void MetodoAntigo()<br>{<br>// Código antigo aqui<br>}<br>}<br></code></pre><br>Após aplicarmos o codemod, o método `MetodoAntigo` é refatorado para:<br><pre><code class="language-csharp">public class MinhaClasse<br>{<br>public void MetodoNovo()<br>{<br>// Código novo aqui<br>}<br>}<br></code></pre><br>Neste exemplo simples, podemos ver como um codemod pode facilitar a refatoração de código de forma automática, poupando tempo e evitando possíveis erros humanos.<br>Em conclusão, os codemods são uma ferramenta poderosa no arsenal de um desenvolvedor, mas é essencial utilizá-los com cautela e seguir boas práticas para evitar erros comuns. Com atenção aos detalhes e testes adequados, é possível aproveitar ao máximo o potencial dos codemods e tornar o processo de refatoração de código mais eficiente e seguro.</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
+<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 15/01/2025.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Desvendando os Erros Comuns dos Codemods" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

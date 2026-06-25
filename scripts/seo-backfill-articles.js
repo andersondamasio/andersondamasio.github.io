@@ -26,6 +26,7 @@ const {
   criarFonteSchema,
   normalizarFonteUrl
 } = require("./seo-source-citation");
+const { inserirSecoesConteudoUtil } = require("./seo-helpful-content");
 
 const root = process.cwd();
 const rssUrl = `${siteUrl}/rss.xml`;
@@ -483,6 +484,7 @@ for (const file of walk(root)) {
   const category = inferCategory(fileRel, metaByUrl);
   const sourceUrl = metaByUrl?.urlFonte || metaByTitle?.urlFonte;
   const sourceTitle = metaByUrl?.noticiaOriginal || metaByTitle?.noticiaOriginal || title;
+  const sourceDate = metaByUrl?.dataFonte || metaByUrl?.data || metaByTitle?.dataFonte || metaByTitle?.data;
   const articleText = $(".article-body").text() || $("main").text() || $("body").text();
   const currentDescription = $('meta[name="description" i]').attr("content") || "";
   const descriptionSource = cleanText(articleText).length >= 70 ? articleText : currentDescription || title;
@@ -500,7 +502,14 @@ for (const file of walk(root)) {
   const htmlComImagensOtimizadas = otimizarImagensArtigo(html, title, fileRel);
   const htmlNormalizado = normalizarHtmlArtigoMalformado(htmlComImagensOtimizadas);
   const htmlComFonteEditorial = inserirFonteEditorial(htmlNormalizado, sourceUrl, sourceTitle);
-  const updatedHtml = htmlComFonteEditorial
+  const htmlComConteudoUtil = inserirSecoesConteudoUtil(htmlComFonteEditorial, {
+    title,
+    category,
+    sourceUrl,
+    sourceTitle,
+    sourceDate
+  });
+  const updatedHtml = htmlComConteudoUtil
     .replace(/<html(?![^>]*\blang=)([^>]*)>/i, '<html lang="pt-BR"$1>')
     .replace(/(<head[\s\S]*?>)([\s\S]*?)(<\/head>)/i, (_, open, head, close) => {
       return `${open}${rebuildHead(head, seo)}${close}`;

@@ -231,6 +231,10 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 .article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
 .article-source p { margin: 0; }
 .article-source a { font-weight: 700; }
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link, #0a66c2); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -284,6 +288,23 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 <p>A reconstrução do InfluxDB 3 é uma clara demonstração de como a tecnoligia pode evoluir para atender a demandas crescentes. A mudança para uma arquitetura sem estado e baseada em objetos é uma tendência que pode ser vista em outros projetos também, refletindo uma necessidade de escalabilidade e flexibilidade no mundo moderno. Se você ainda não deu uma chance ao InfluxDB 3, talvez seja hora de experimentar. Quem sabe você não descobre uma nova ferramenta favorita para suas aplicações de dados?</p>
 <p>Resumindo, o futuro dos bancos de dados parece promissor com essas novas abordagens. E, como sempre, a tecnologia continua a nos surpreender. Vamos acompanhar de perto como essa jornada se desenrola!</p>
 </div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> o ponto de partida foi <a href="https://www.infoq.com/articles/timeseries-db-rust/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Article: Engineering a Time Series Database Using Open Source: Rebuilding InfluxDB 3 in Apache Arrow and Rust</a>.</li>
+<li><strong>Data considerada:</strong> a fonte externa ou data original registrada é 10/09/2025.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "A nova era dos bancos de dados: InfluxDB 3 e suas promessas revolucionárias" à categoria <strong>Banco de Dados</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Confira impacto em consistência, latência, custo de armazenamento e estratégia de recuperação.</li>
+<li>Teste o comportamento com volume realista antes de assumir ganhos de desempenho.</li>
+<li>Documente trade-offs de índice, particionamento, replicação e governança de dados.</li>
+</ul>
+</section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
 <p>Este artigo foi inspirado em: <a href="https://www.infoq.com/articles/timeseries-db-rust/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Article: Engineering a Time Series Database Using Open Source: Rebuilding InfluxDB 3 in Apache Arrow and Rust</a>.</p>

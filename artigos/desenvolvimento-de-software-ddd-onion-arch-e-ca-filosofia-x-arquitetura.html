@@ -183,6 +183,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link, #0a66c2); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -212,6 +216,23 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 04/05/2025 20:16</p>
 
 <div class="article-body">Mais importante do que a notícia em si, é o impacto prático de @pokerdev7 Basicamente DDD é uma abordagem de desenvolvimento, tá mais pra um tipo de filosofia que aplica princípios. Onion Arch e CA são padrões arquiteturais, arquitetura de software mesmo. Ou seja, você pode ter DDD sendo aplicado em qualquer arquitetura que quiser utilizar na sua app. no nosso dia a dia como devs.<br>Quando falamos de desenvolvimento de software, é comum nos depararmos com diversos termos e conceitos que podem gerar confusão. DDD, Onion Arch e CA são três desses termos que muitas vezes podem ser mal interpretados.<br>DDD, ou Domain-Driven Design, é mais do que apenas uma abordagem de desenvolvimento, é uma filosofia que visa alinhar o código com o domínio do negócio, tornando-o mais compreensível e fácil de dar manutenção. Por outro lado, Onion Architecture e Clean Architecture são padrões arquiteturais que definem a estrutura do software, separando as camadas de forma clara e coesa.<br>É importante ressaltar que DDD pode ser aplicado em qualquer arquitetura, seja ela baseada em Onion Arch, CA ou qualquer outra. O mais importante é entender os princípios por trás do DDD e como aplicá-los de forma eficiente no contexto do seu projeto.<br><pre><code class="language-csharp">public class ProductService<br>{<br>private readonly IProductRepository _repository;<br>public ProductService(IProductRepository repository)<br>{<br>_repository = repository;<br>}<br>public Product GetProductById(int id)<br>{<br>return _repository.GetById(id);<br>}<br>}<br></code></pre><br>Ao trabalhar com DDD, é fundamental ter um bom entendimento do domínio do negócio, identificando as entidades, agregados e valorizando a linguagem ubíqua. Além disso, a separação clara das responsabilidades entre as camadas do software é essencial para garantir a manutenibilidade e escalabilidade do sistema.<br>Em resumo, DDD, Onion Arch e CA são ferramentas poderosas que, quando combinadas de forma adequada, podem resultar em um software robusto e de alta qualidade. O segredo está em entender as nuances de cada conceito e aplicá-los de acordo com as necessidades do projeto.<br>E você, já teve experiência com DDD, Onion Arch ou CA? Compartilhe conosco nos comentários suas impressões e desafios ao aplicar esses conceitos em seus projetos!</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
+<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 23/04/2025.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Desenvolvimento de Software: DDD, Onion Arch e CA - Filosofia x Arquitetura" à categoria <strong>Artigos</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

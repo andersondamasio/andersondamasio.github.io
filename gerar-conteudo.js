@@ -43,6 +43,7 @@ const {
   criarFonteSchema,
   normalizarFonteUrl
 } = require('./scripts/seo-source-citation');
+const { gerarSecoesConteudoUtil } = require('./scripts/seo-helpful-content');
 const { gerarResourceHints } = require('./scripts/seo-resource-hints');
 const { normalizarRobotsMeta } = require('./scripts/seo-robots');
 
@@ -1545,8 +1546,12 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
 
 2. Em seguida, **um artigo completo**, com:
    - Uma introdução natural e humanizada.
+   - Um resumo executivo curto explicando o que aconteceu e por que isso importa.
+   - Uma separação clara entre fato reportado, interpretação técnica e limites do que ainda não dá para afirmar.
    - Uma explicação técnica clara e aprofundada sobre o tema.
    - Dicas avançadas que mostrem domínio prático, indo além do básico.
+   - Uma seção de aplicação prática com ações concretas para arquitetos, desenvolvedores ou líderes técnicos.
+   - Uma seção de riscos e cuidados, sem sensacionalismo.
    - Uma conclusão com reflexões ou recomendações suas.
    - Texto revisado, claro e sem erros ortográficos propositais.
 
@@ -1577,6 +1582,8 @@ Exemplo de categoria: |Segurança|
 - Intercale períodos curtos e longos, utilize pausas com reticências, perguntas retóricas e comentários próprios.
 - Evite tom genérico ou perfeito demais; permita variação de ritmo, repetições naturais e uso espontâneo de conectivos, mas preserve correção gramatical.
 - Evite iniciar frases como "Nos últimos anos".
+- Não invente dados, números, datas, nomes de empresas ou conclusões que não estejam sustentadas pela fonte. Quando algo for uma inferência, deixe claro que é uma leitura técnica.
+- O artigo precisa agregar valor além da notícia: explique impacto, trade-offs, riscos, decisões práticas e sinais que um time poderia observar.
 - Ao trazer exemplos, busque analogias práticas, histórias rápidas, curiosidades ou opiniões pessoais, mesmo que breves.
 - Sempre insira pelo menos uma frase que traga uma visão ou comentário seu, como se estivesse realmente opinando sobre o tema.
 - Não inicie com “Título:” ou similares. Apenas escreva o título direto na primeira linha.
@@ -1688,6 +1695,14 @@ const urlLocal = `artigos/${categoriaSlug}/${slug}.html`;
       sourceUrl: noticia.url,
       sourceTitle: noticia.titulo
     });
+    const sourceDate = noticia.data ? new Date(noticia.data).toISOString() : null;
+    const secoesConteudoUtil = gerarSecoesConteudoUtil({
+      title: titulo,
+      category: categoria,
+      sourceUrl: noticia.url,
+      sourceTitle: noticia.titulo,
+      sourceDate
+    });
 
 
 
@@ -1785,6 +1800,10 @@ a { color: var(--link); text-decoration: none; font-weight: bold; }
 a:hover { text-decoration: underline; color: var(--link-hover);}
 .article-meta { color: var(--meta); font-size: 0.95rem; margin-bottom: 1.5rem; }
 .article-body { font-size: 1.05rem; line-height: 1.7; }
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 .article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
 .article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
 .article-source p { margin: 0; }
@@ -1815,6 +1834,7 @@ ${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="${escapeAttribute(titulo)}" 
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
 
 <div class="article-body">${normalizarHeadingsCorpoArtigo(marked.parse(corpoArtigo))}</div>
+${secoesConteudoUtil}
 ${gerarFonteArtigoHtml(noticia.url, noticia.titulo)}
 <p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
 
@@ -1902,7 +1922,7 @@ if (!existe) {
     noticiaOriginal: noticia.titulo,
     url: urlLocal,
     data: now.toISOString(),
-    dataFonte: noticia.data ? new Date(noticia.data).toISOString() : null,
+    dataFonte: sourceDate,
     categoria,
     urlFonte: noticia.url
   });

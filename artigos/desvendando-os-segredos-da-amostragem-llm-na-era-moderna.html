@@ -183,6 +183,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link, #0a66c2); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -212,6 +216,23 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 04/05/2025 14:31</p>
 
 <div class="article-body">A discussão sobre Dummy's Guide to Modern LLM Sampling voltou à tona, e acredito que precisamos falar sobre isso com mais seriedade. A amostragem LLM (Large Language Models) tem se tornado cada vez mais relevante no contexto da inteligência artificial e do processamento de linguagem natural. Com a crescente popularidade de modelos como o GPT-3 da OpenAI, entender como funciona a amostragem LLM é essencial para desenvolvedores e pesquisadores que desejam explorar todo o potencial dessas tecnologias.<br><br>A amostragem LLM consiste em gerar texto a partir de um modelo de linguagem treinado em um grande volume de dados. Essa técnica é fundamental para a geração de texto coerente e semântico, permitindo que os modelos de linguagem produzam respostas mais próximas do que seriam geradas por seres humanos.<br><br>Para ilustrar melhor esse conceito, vamos analisar um trecho de código em Python utilizando a biblioteca Hugging Face Transformers, que simplifica a implementação de modelos LLM de última geração:<br><br><pre><code>from transformers import GPT2LMHeadModel, GPT2Tokenizer<br><br>model = GPT2LMHeadModel.from_pretrained("gpt2")<br>tokenizer = GPT2Tokenizer.from_pretrained("gpt2")<br><br>input_text = "Once upon a time"<br><br>input_ids = tokenizer.encode(input_text, return_tensors="pt")<br>output = model.generate(input_ids, max_length=100, num_return_sequences=3, pad_token_id=tokenizer.eos_token_id)<br><br>for sequence in output:<br>    generated_text = tokenizer.decode(sequence, skip_special_tokens=True)<br>    print(generated_text)<br></code></pre><br><br>Neste exemplo, utilizamos o modelo GPT-2 da biblioteca Transformers para gerar três sequências de texto a partir da frase "Once upon a time". Esse é apenas um pequeno vislumbre do poder da amostragem LLM na prática.<br><br>Além disso, é importante considerar estratégias avançadas de amostragem, como a temperatura e o top-k sampling, que permitem controlar a diversidade e a qualidade das respostas geradas pelos modelos LLM.<br><br>Em conclusão, a amostragem LLM na era moderna representa um campo fascinante e em constante evolução. Dominar essa técnica pode abrir portas para aplicações inovadoras em áreas como assistentes virtuais, geração de texto e muito mais. Portanto, mergulhe de cabeça nesse universo e explore todo o potencial que a amostragem LLM tem a oferecer.</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
+<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 04/05/2025.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Desvendando os Segredos da Amostragem LLM na Era Moderna" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

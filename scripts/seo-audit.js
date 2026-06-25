@@ -23,6 +23,7 @@ const {
   artigoTemFonteEditorial,
   normalizarFonteUrl
 } = require("./seo-source-citation");
+const { avaliarSecoesConteudoUtil } = require("./seo-helpful-content");
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
@@ -295,6 +296,8 @@ const stats = {
   articleJsonLdMissingRelevanceMetadata: [],
   articleMissingSourceCitation: [],
   articleMalformedSourceCitation: [],
+  articleMissingValidationSection: [],
+  articleMissingUsefulnessSection: [],
   malformedArticleHtml: [],
   articleBodyUnsafeHtml: [],
   imagesWithoutAlt: [],
@@ -481,6 +484,13 @@ for (const file of walk(root)) {
     const articleTitle = $("h1").first().text().trim() || cleanPageTitleForAudit(title);
     if (isWeakArticleTitle(articleTitle)) {
       pushExample(stats.weakArticleTitles, `${fileRel}: ${articleTitle || "(sem titulo)"}`);
+    }
+    const helpfulContent = avaliarSecoesConteudoUtil($);
+    if (!helpfulContent.validationOk) {
+      pushExample(stats.articleMissingValidationSection, fileRel);
+    }
+    if (!helpfulContent.usefulnessOk) {
+      pushExample(stats.articleMissingUsefulnessSection, fileRel);
     }
     const nonCanonicalPath = nonCanonicalArticleCategoryPath(fileRel, articleTitle);
     if (nonCanonicalPath) {
@@ -698,6 +708,8 @@ const report = {
     articleJsonLdMissingRelevanceMetadata: stats.articleJsonLdMissingRelevanceMetadata,
     articleMissingSourceCitation: stats.articleMissingSourceCitation,
     articleMalformedSourceCitation: stats.articleMalformedSourceCitation,
+    articleMissingValidationSection: stats.articleMissingValidationSection,
+    articleMissingUsefulnessSection: stats.articleMissingUsefulnessSection,
     malformedArticleHtml: stats.malformedArticleHtml,
     articleBodyUnsafeHtml: stats.articleBodyUnsafeHtml,
     imagesWithoutAlt: stats.imagesWithoutAlt,

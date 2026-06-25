@@ -183,6 +183,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link, #0a66c2); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -212,6 +216,23 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 06/05/2025 18:17</p>
 
 <div class="article-body">Se existe um tema que separa teoria e prática no desenvolvimento, esse tema é Refactoring with Codemods to Automate API Changes. Imagine a seguinte situação: você precisa atualizar a versão de uma API em um sistema complexo, com milhares de chamadas espalhadas por todo o código. Fazer isso manualmente seria uma tarefa árdua e propensa a erros, certo? É aí que entra o refactoring automatizado com codemods.<br>Os codemods são scripts que automatizam a refatoração de código-fonte. Eles permitem fazer alterações em larga escala de forma segura e rápida, seguindo padrões pré-definidos. No contexto de APIs, essa técnica se torna ainda mais poderosa, pois permite atualizar todas as chamadas de forma consistente e sem dor de cabeça.<br>Vamos imaginar um exemplo prático: digamos que uma determinada API que você utiliza mudou a nomenclatura de um método de "GetUser" para "FetchUser". Em vez de buscar manualmente todas as ocorrências desse método no código e fazer a alteração, você pode criar um codemod que percorra todos os arquivos do seu projeto e faça essa substituição de forma automática. Isso não apenas poupa tempo, mas também reduz o risco de introduzir bugs durante a atualização.<br>Para quem trabalha com linguagens como JavaScript, TypeScript ou Python, existem ferramentas como jscodeshift e Lebab que facilitam a criação e execução de codemods. No caso de linguagens como C#, onde essas ferramentas são menos comuns, é possível criar seus próprios scripts de refatoração usando ferramentas de análise estática de código e manipulação de AST (Abstract Syntax Tree).<br>Além de automatizar a atualização de APIs, os codemods podem ser utilizados para padronizar o código, corrigir más práticas, otimizar a performance e muito mais. Com um pouco de criatividade e conhecimento técnico, as possibilidades são praticamente infinitas.<br>Portanto, se você ainda não explorou o potencial do refactoring com codemods para automatizar mudanças em APIs, está na hora de começar a considerar essa abordagem em seus projetos. Afinal, a automação é a chave para aumentar a eficiência, reduzir erros e manter o código saudável e sustentável a longo prazo. E lembre-se: na era da transformação digital, quem não se adapta, fica para trás.</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
+<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 07/01/2025.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Automatizando Mudanças em APIs com Codemods: O Poder do Refactoring" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

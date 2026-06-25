@@ -181,6 +181,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link, #0a66c2); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 </style>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -208,6 +212,23 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Controle de velocidade por software: lições da nova lei da Virgínia</h1>
 <p class="article-meta">Publicado em: 27/04/2025 14:15</p>
 <div class="article-body">Introdução:<br>Recentemente, o estado da Virginia aprovou uma lei para impor limites de velocidade máxima para motoristas que repetidamente excedem os limites de velocidade. Essa medida visa aumentar a segurança nas estradas e garantir o cumprimento das leis de trânsito. Mas o que podemos aprender dessa iniciativa para aplicar em práticas modernas de arquitetura de software e desenvolvimento de sistemas?<br><br>Relevância para práticas modernas de arquitetura de software e desenvolvimento de sistemas:<br>Assim como a lei de velocidade máxima de Virginia visa controlar o comportamento dos motoristas nas estradas, em sistemas de software é essencial implementar mecanismos de controle de velocidade para garantir a estabilidade, segurança e eficiência do sistema. Neste artigo, vamos explorar como podemos aplicar os princípios por trás dessa lei no desenvolvimento de software.<br><br>Exemplo de código em C#:<br><pre><code class="language-csharp">public class SpeedController<br>{<br>    private int maxSpeed = 100; // Velocidade máxima permitida<br>    private int currentSpeed = 0; // Velocidade atual do veículo<br><br>    public void SetSpeed(int speed)<br>    {<br>        if (speed &lt;= maxSpeed)<br>        {<br>            currentSpeed = speed;<br>        }<br>        else<br>        {<br>            currentSpeed = maxSpeed;<br>        }<br>    }<br>}<br></code></pre><br><br>Explicação técnica:<br>No exemplo de código acima, criamos uma classe SpeedController que controla a velocidade de um veículo. Ao chamar o método SetSpeed, o sistema verifica se a velocidade inserida está dentro do limite máximo permitido. Caso contrário, a velocidade é ajustada para o limite máximo. Essa abordagem garante que o veículo não ultrapasse a velocidade estabelecida, sem comprometer o funcionamento do sistema.<br><br>Dicas avançadas:<br>- Implemente um mecanismo de notificação para alertar os usuários quando a velocidade máxima for atingida.<br>- Utilize padrões de design como o Strategy Pattern para permitir diferentes estratégias de controle de velocidade.<br>- Realize testes de unidade para garantir que o controle de velocidade funcione corretamente em diferentes cenários.<br><br>Conclusão:<br>A lei de velocidade máxima de Virginia nos ensina a importância de controlar o comportamento dos usuários para garantir a segurança e eficiência de um sistema. Ao aplicarmos os princípios por trás dessa lei no desenvolvimento de software, podemos criar sistemas mais robustos e confiáveis. Implemente mecanismos de controle de velocidade em seus sistemas e garanta uma experiência segura para os usuários.</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
+<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 27/04/2025.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Controle de velocidade por software: lições da nova lei da Virgínia" à categoria <strong>Inteligência Artificial</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Avalie qualidade dos dados, critérios de teste e limites do modelo antes de levar a ideia para produção.</li>
+<li>Separe claramente automação, apoio à decisão e decisão autônoma para reduzir risco operacional.</li>
+<li>Inclua métricas de custo, latência, acurácia e revisão humana no desenho da solução.</li>
+</ul>
+</section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

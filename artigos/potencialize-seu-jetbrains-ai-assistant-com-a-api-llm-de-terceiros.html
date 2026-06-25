@@ -183,6 +183,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link, #0a66c2); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -212,6 +216,23 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 03/05/2025 10:23</p>
 
 <div class="article-body">Você já parou para pensar no impacto real de potencializar o seu JetBrains AI Assistant com a API LLM de terceiros? A integração de terceiros tem se tornado cada vez mais comum no desenvolvimento de software, permitindo que os desenvolvedores ampliem as capacidades das suas ferramentas favoritas de forma personalizada e eficiente.<br><br>A utilização da API LLM (Large Language Models) em conjunto com o JetBrains AI Assistant pode trazer inúmeras vantagens para o seu fluxo de trabalho. Essa integração possibilita uma maior capacidade de compreensão de linguagem natural, facilitando a interação com o assistente virtual e tornando as tarefas do dia a dia mais ágeis e intuitivas.<br><br>Para implementar essa integração, é necessário realizar a conexão entre a API LLM de terceiros e o JetBrains AI Assistant, configurando os parâmetros necessários e garantindo a segurança dos dados. Com isso, você poderá aproveitar todo o potencial da inteligência artificial em suas atividades de desenvolvimento de software.<br><br>Aqui está um exemplo simples de como você pode utilizar a API LLM em conjunto com o JetBrains AI Assistant em um projeto C#:<br><br><pre><code class="language-csharp">using System;<br>using ThirdPartyLLMApi;<br><br>class Program<br>{<br>    static void Main()<br>    {<br>        var assistant = new JetBrainsAIAssistant();<br>        var llmApi = new ThirdPartyLLMApi();<br><br>        string userInput = Console.ReadLine();<br>        string response = assistant.GetResponse(userInput);<br><br>        if (response.Contains("LLM"))<br>        {<br>            string llmResponse = llmApi.GetResponse(response);<br>            Console.WriteLine(llmResponse);<br>        }<br>        else<br>        {<br>            Console.WriteLine(response);<br>        }<br>    }<br>}<br></code></pre><br><br>Além disso, é importante explorar as possibilidades avançadas que essa integração pode oferecer. Você pode desenvolver funcionalidades personalizadas, como sugestões de código mais inteligentes, correção automática de erros e até mesmo assistência na geração de documentação técnica.<br><br>Em conclusão, a utilização da API LLM de terceiros no JetBrains AI Assistant pode revolucionar a forma como você interage com suas ferramentas de desenvolvimento. Aproveite todo o potencial da inteligência artificial para otimizar o seu fluxo de trabalho e elevar a qualidade das suas entregas. Experimente essa integração e descubra um novo mundo de possibilidades no desenvolvimento de software.</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
+<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 03/05/2025.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema ""Potencialize seu JetBrains AI Assistant com a API LLM de Terceiros"" à categoria <strong>Artigos</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

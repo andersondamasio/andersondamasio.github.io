@@ -193,6 +193,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link, #0a66c2); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -222,6 +226,23 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 10/05/2025 04:16</p>
 
 <div class="article-body">A maioria das falhas críticas que vi tinham ligação direta com má compreensão de como as empresas estão vulneráveis a ataques cibernéticos, como o recente incidente na Harrods.<br>Empresas de renome mundial, como a Harrods, não estão imunes a cyber attacks. A notícia de que a Harrods foi atingida por um ataque cibernético serve como um alerta para todas as empresas, independentemente do seu tamanho ou setor de atuação.<br>É fundamental que as empresas invistam em medidas de segurança cibernética robustas para proteger seus dados e informações sensíveis. Uma abordagem proativa na implementação de firewalls, sistemas de detecção de intrusos, criptografia de dados e políticas de segurança rigorosas pode ajudar a reduzir o risco de ataques cibernéticos bem-sucedidos.<br>Além disso, a conscientização dos funcionários sobre práticas seguras de navegação na internet e o uso de senhas fortes e exclusivas também desempenham um papel crucial na prevenção de ataques cibernéticos.<br>Para ilustrar de forma prática como as empresas podem fortalecer sua segurança cibernética, vou compartilhar um trecho de código em C# que demonstra a implementação de uma camada adicional de autenticação de dois fatores em um sistema web:<br><pre><code class="language-csharp">using System;<br>using Twilio;<br>using Twilio.Rest.Api.V2010.Account;<br>using Twilio.Types;<br>class Program<br>{<br>static void Main()<br>{<br>const string accountSid = "YOUR_ACCOUNT_SID";<br>const string authToken = "YOUR_AUTH_TOKEN";<br>TwilioClient.Init(accountSid, authToken);<br>var message = MessageResource.Create(<br>body: "Seu código de verificação é: 123456",<br>from: new PhoneNumber("YOUR_TWILIO_NUMBER"),<br>to: new PhoneNumber("RECIPIENT_NUMBER")<br>);<br>Console.WriteLine(message.Sid);<br>}<br>}<br></code></pre><br>Neste exemplo, estamos utilizando a API da Twilio para enviar um código de verificação via SMS como parte do processo de autenticação de dois fatores. Implementar medidas como essa pode dificultar significativamente a vida dos cibercriminosos.<br>Em conclusão, a segurança cibernética deve ser uma prioridade para todas as empresas, independentemente do seu porte. A Harrods latest retailer to be hit by cyber attack serve como um lembrete do quão vulneráveis estamos no mundo digital atual. Invista em medidas de segurança robustas, esteja sempre atualizado com as melhores práticas e esteja preparado para enfrentar os desafios que os cibercriminosos podem apresentar.<br>Proteja seus dados, proteja sua empresa. A segurança cibernética é responsabilidade de todos.</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
+<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 01/05/2025.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Cyber Attack na Harrods: Lições Aprendidas e Medidas de Segurança" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>
