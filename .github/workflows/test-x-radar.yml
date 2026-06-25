@@ -1,0 +1,37 @@
+name: Test X Radar
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "gerar-conteudo.js"
+      - "scripts/test-x-radar.js"
+      - ".github/workflows/test-x-radar.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test-x-radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout do repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Testar radar do X
+        run: node scripts/test-x-radar.js
+        env:
+          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
