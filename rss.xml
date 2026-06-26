@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 25 Jun 2026 20:56:06 GMT</lastBuildDate>
+<lastBuildDate>Fri, 26 Jun 2026 00:08:40 GMT</lastBuildDate>
+<item>
+<title>A Revolução da Segurança em Agentes Autônomos: O Caso da Plataforma Palana da Grab</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/a-revolucao-da-seguranca-em-agentes-autonomos-o-caso-da-plataforma-palana-da-grab.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/a-revolucao-da-seguranca-em-agentes-autonomos-o-caso-da-plataforma-palana-da-grab.html</guid>
+<pubDate>Fri, 26 Jun 2026 00:08:40 GMT</pubDate>
+<category>Segurança</category>
+<description>Recentemente, um avanço significativo na segurança de aplicações de inteligência artificial autônoma foi divulgado com o lançamento da Palana, uma...</description>
+</item>
 <item>
 <title>Descontos que Fazem a Diferença: O Que os Arquitetos de Software Podem Aprender com o Prime Day</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/descontos-que-fazem-a-diferenca-o-que-os-arquitetos-de-software-podem-aprender-com-o-prime-day.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 09 Jun 2026 09:48:23 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Gerir o orçamento de uma empresa, ah, que desafio, não é mesmo? Se você, assim como eu, já passou horas tentando entender onde o dinheiro está indo, sabe do...</description>
-</item>
-<item>
-<title>Impulsionando a Entrega Rápida: O Desafio do Crescimento Sustentável na Era do IPO</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/impulsionando-a-entrega-rapida-o-desafio-do-crescimento-sustentavel-na-era-do-ipo.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/impulsionando-a-entrega-rapida-o-desafio-do-crescimento-sustentavel-na-era-do-ipo.html</guid>
-<pubDate>Tue, 09 Jun 2026 05:11:51 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Nos últimos tempos, temos visto uma verdadeira corrida no setor de quick-commerce, especialmente na Índia, onde startups como a Zepto estão desbravando um...</description>
 </item>
 </channel>
 </rss>
