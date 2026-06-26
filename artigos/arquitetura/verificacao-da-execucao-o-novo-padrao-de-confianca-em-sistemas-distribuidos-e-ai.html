@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Verificação da Execução: O Novo Padrão de Confiança em Sistemas Distribuídos e AI</title>
+<meta name="description" content="Recentemente, a Diagrid anunciou o lançamento do Dapr 1.18, uma atualização que promete transformar a forma como concebemos a confiança em aplicações...">
+<meta name="author" content="Anderson Damasio">
+<meta name="keywords" content="Arquitetura, inteligência artificial, segurança, execucao, confianca, sistemas, padrao, verificacao, distribuidos, workflow">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.andersondamasio.com.br/artigos/arquitetura/verificacao-da-execucao-o-novo-padrao-de-confianca-em-sistemas-distribuidos-e-ai.html">
+<link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Anderson Damasio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Verificação da Execução: O Novo Padrão de Confiança em Sistemas Distribuídos e AI">
+<meta property="og:description" content="Recentemente, a Diagrid anunciou o lançamento do Dapr 1.18, uma atualização que promete transformar a forma como concebemos a confiança em aplicações...">
+<meta property="og:url" content="https://www.andersondamasio.com.br/artigos/arquitetura/verificacao-da-execucao-o-novo-padrao-de-confianca-em-sistemas-distribuidos-e-ai.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
+<meta property="article:published_time" content="2026-06-26T12:10:16.950Z">
+<meta property="article:modified_time" content="2026-06-26T12:10:16.950Z">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@andersondamasio">
+<meta name="twitter:title" content="Verificação da Execução: O Novo Padrão de Confiança em Sistemas Distribuídos e AI">
+<meta name="twitter:description" content="Recentemente, a Diagrid anunciou o lançamento do Dapr 1.18, uma atualização que promete transformar a forma como concebemos a confiança em aplicações...">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
+<meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Verificação da Execução: O Novo Padrão de Confiança em Sistemas Distribuídos e AI",
+  "description": "Recentemente, a Diagrid anunciou o lançamento do Dapr 1.18, uma atualização que promete transformar a forma como concebemos a confiança em aplicações...",
+  "image": [
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
+  ],
+  "url": "https://www.andersondamasio.com.br/artigos/arquitetura/verificacao-da-execucao-o-novo-padrao-de-confianca-em-sistemas-distribuidos-e-ai.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.andersondamasio.com.br/artigos/arquitetura/verificacao-da-execucao-o-novo-padrao-de-confianca-em-sistemas-distribuidos-e-ai.html"
+  },
+  "datePublished": "2026-06-26T12:10:16.950Z",
+  "dateModified": "2026-06-26T12:10:16.950Z",
+  "articleSection": "Arquitetura",
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "Arquitetura",
+    "inteligência artificial",
+    "segurança",
+    "execucao",
+    "confianca",
+    "sistemas",
+    "padrao",
+    "verificacao",
+    "distribuidos",
+    "workflow"
+  ],
+  "wordCount": 812,
+  "about": {
+    "@type": "Thing",
+    "name": "Arquitetura"
+  },
+  "mentions": [
+    {
+      "@type": "Thing",
+      "name": "inteligência artificial"
+    },
+    {
+      "@type": "Thing",
+      "name": "segurança"
+    },
+    {
+      "@type": "Thing",
+      "name": "execucao"
+    },
+    {
+      "@type": "Thing",
+      "name": "confianca"
+    },
+    {
+      "@type": "Thing",
+      "name": "sistemas"
+    },
+    {
+      "@type": "Thing",
+      "name": "padrao"
+    }
+  ],
+  "isAccessibleForFree": true,
+  "copyrightYear": 2026,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows",
+    "url": "https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  "citation": "https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
+  },
+  "copyrightHolder": {
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.andersondamasio.com.br/#organization",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
+      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://www.andersondamasio.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://www.andersondamasio.com.br/artigos/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Arquitetura",
+      "item": "https://www.andersondamasio.com.br/artigos/arquitetura.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Verificação da Execução: O Novo Padrão de Confiança em Sistemas Distribuídos e AI",
+      "item": "https://www.andersondamasio.com.br/artigos/arquitetura/verificacao-da-execucao-o-novo-padrao-de-confianca-em-sistemas-distribuidos-e-ai.html"
+    }
+  ]
+}
+</script>
+<link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
+<style>
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --main-bg: #fff;
+  --link: #0a66c2;
+  --link-hover: #084e91;
+  --footer: #666;
+  --meta: #777;
+  --pre-bg: #272822;
+  --pre-color: #f8f8f2;
+  --copy-bg: #0a66c2;
+  --copy-color: #fff;
+  --copy-bg-hover: #084e91;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body.dark-theme {
+  --bg: #181b1f;
+  --text: #ddd;
+  --main-bg: #23262d;
+  --link: #67aaff;
+  --link-hover: #f1c40f;
+  --footer: #b3b3b3;
+  --meta: #b3b3b3;
+  --pre-bg: #22262b;
+  --pre-color: #e0e7ef;
+  --copy-bg: #67aaff;
+  --copy-color: #11131a;
+  --copy-bg-hover: #f1c40f;
+  --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+h1 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--link); }
+a { color: var(--link); text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: var(--link-hover);}
+.article-meta { color: var(--meta); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0; }
+.article-source a { font-weight: 700; }
+pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: var(--copy-bg-hover); color: var(--main-bg); }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: var(--link); font-size: 1.05rem; border: 1px solid var(--link); padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: var(--link); color: var(--main-bg); }
+main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+</head>
+<body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../../artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
+    <a href="../../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+  </nav>
+</header>
+<main>
+<h1>Verificação da Execução: O Novo Padrão de Confiança em Sistemas Distribuídos e AI</h1>
+
+<p class="article-meta">Publicado em: 26/06/2026 09:10</p>
+
+<div class="article-body"><p>Recentemente, a Diagrid anunciou o lançamento do Dapr 1.18, uma atualização que promete transformar a forma como concebemos a confiança em aplicações distribuídas e agentes de inteligência artificial. Este movimento pode ser visto como um ponto de inflexão, especialmente em um cenário onde a responsabilidade e a transparência se tornaram conceitos fundamentais na era digital.</p>
+<p>O Dapr 1.18 introduz o conceito de <strong>Execução Verificável</strong>, um conjunto de funcionalidades que traz confiança criptográfica, proveniência e registros de execução à prova de adulterações. Com isso, organizações poderão não apenas executar workflows complexos, mas também validar como esses workflows foram realizados, quem tomou as ações e se a integridade das informações foi mantida. Essa atualização é especialmente relevante em setores onde decisões automatizadas têm um impacto significativo, como finanças e saúde.</p>
+<h2>O que aconteceu e por que isso importa</h2>
+<p>A atualização do Dapr 1.18 é uma resposta a um desafio crescente no campo da inteligência artificial: a necessidade de <strong>confiança</strong>. Embora os sistemas distribuídos tenham evoluído em termos de resiliência, a verificação da execução de tarefas complexas ainda apresentava desafios. Com a introdução de funcionalidades como <em>Workflow History Signing</em>, <em>Workflow History Propagation</em> e <em>Workflow Attestation</em>, agora é possível criar um registro verificável de execução que pode ser validado de forma independente.</p>
+<h2>Fato reportado</h2>
+<p>O Dapr 1.18 destaca três inovações principais:</p>
+<ul>
+    <li><strong>Workflow History Signing</strong>: permite que os históricos de execução dos workflows sejam assinados criptograficamente, criando registros à prova de adulterações.</li>
+    <li><strong>Workflow History Propagation</strong>: estende a origem da execução através de serviços e aplicações, facilitando a rastreabilidade das ações realizadas.</li>
+    <li><strong>Workflow Attestation</strong>: oferece um contexto de execução confiável, permitindo que políticas e auditorias sejam baseadas em informações verificáveis.</li>
+</ul>
+<h2>Interpretação técnica</h2>
+<p>Essas inovações não apenas aumentam a segurança e a confiança nas operações, mas também introduzem um novo padrão para a documentação e auditoria de processos automatizados. A necessidade de provar como uma decisão de AI foi tomada, especialmente em contextos regulados, se torna tão importante quanto a decisão em si. Isso é um reflexo direto das crescentes exigências de conformidade e explicabilidade no uso de tecnologias autônomas.</p>
+<p>O uso de identidades baseadas no padrão aberto <em>SPIFFE</em> para assinar os históricos de execução é um passo significativo para garantir que as ações possam ser atribuídas a entidades verificáveis. Isso não só aumenta a responsabilidade, mas também fortalece a interoperabilidade entre sistemas distintos.</p>
+<h2>Limites do que ainda não dá para afirmar</h2>
+<p>Embora a implementação dessas funcionalidades seja promissora, ainda existem aspectos que precisam ser explorados. A dependência de infraestrutura de rede segura, o gerenciamento de chaves criptográficas e a integração com sistemas legados são apenas alguns dos desafios que as organizações enfrentarão ao adotar essas novas características. Além disso, a adoção em larga escala requer uma mudança cultural e organizacional significativa, que pode levar tempo.</p>
+<h2>Dicas avançadas para implementação</h2>
+<p>Aqui estão algumas dicas práticas para arquitetos e desenvolvedores que desejam explorar o Dapr 1.18:</p>
+<ul>
+    <li><strong>Planeje a integração do SPIFFE</strong>: Certifique-se de que sua arquitetura está preparada para suportar a autenticação baseada em identidades, garantindo que todos os componentes do sistema possam interagir de forma segura.</li>
+    <li><strong>Teste a resiliência dos workflows</strong>: Realize simulações para verificar como os novos recursos de verificação se comportam em cenários de falhas e como as informações são preservadas.</li>
+    <li><strong>Treine as equipes sobre conformidade</strong>: A compreensão dos novos requisitos de auditoria e documentação é essencial para garantir que todos estejam alinhados com as novas práticas.</li>
+</ul>
+<h2>Aplicação prática</h2>
+<p>Para equipes que lidam com sistemas críticos, é vital implementar um ciclo de feedback que considere a verificação da execução. Considere criar um <strong>centro de excelência</strong> em sua organização para explorar as melhores práticas e desafios associados à nova atualização do Dapr. Isso permitirá que a equipe não apenas se adapte às mudanças, mas também que se torne um agente de transformação dentro da empresa.</p>
+<h2>Riscos e cuidados</h2>
+<p>Embora as novas funcionalidades do Dapr 1.18 ofereçam vantagens significativas, é necessário estar ciente de alguns riscos. A complexidade da implementação pode levar a erros se não for gerenciada corretamente. Além disso, a segurança das chaves criptográficas e a integridade dos dados devem ser priorizadas para evitar vulnerabilidades. A comunicação clara entre as equipes de desenvolvimento e operações é crucial para mitigar esses riscos.</p>
+<h2>Conclusão</h2>
+<p>O Dapr 1.18 e suas inovações representam um avanço significativo na direção da confiança e da responsabilidade em sistemas distribuídos e AI. À medida que avançamos para um futuro onde a automação e a inteligência artificial desempenham papéis cada vez mais centrais, é imperativo que abordemos a questão da verificação com seriedade. As organizações que adotarem essas práticas não apenas estarão na vanguarda da tecnologia, mas também estarão construindo um futuro mais transparente e confiável.</p>
+<p>Como arquitetos de software, devemos nos preparar para essa nova realidade, investindo em conhecimento e práticas que garantam que a execução dos nossos sistemas não seja apenas durável, mas também verificável e confiável.</p>
+<p>
+<p></p></div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> o ponto de partida foi <a href="https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows</a>.</li>
+<li><strong>Data considerada:</strong> a fonte externa ou data original registrada é 26/06/2026.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Verificação da Execução: O Novo Padrão de Confiança em Sistemas Distribuídos e AI" à categoria <strong>Arquitetura</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
+<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows</a>.</p>
+</section>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/arquitetura/a-desintegracao-da-aquisicao-da-manus-o-que-isso-nos-ensina-sobre-seguranca-e-arquitetura-de-software.html">A desintegração da aquisição da Manus: O que isso nos ensina sobre segurança e arquitetura de software</a><span>Arquitetura</span></li>
+<li><a href="/artigos/arquitetura/desvendando-o-futuro-o-que-esperar-da-arquitetura-de-software-em-2026.html">Desvendando o Futuro: O Que Esperar da Arquitetura de Software em 2026</a><span>Arquitetura</span></li>
+<li><a href="/artigos/arquitetura/uma-nova-era-na-observabilidade-como-a-arquitetura-pode-transformar-o-uso-do-docker.html">Uma nova era na observabilidade: como a arquitetura pode transformar o uso do Docker</a><span>Arquitetura</span></li>
+<li><a href="/artigos/arquitetura/a-genialidade-de-turing-licoes-para-a-arquitetura-de-software.html">A genialidade de Turing: lições para a Arquitetura de Software</a><span>Arquitetura</span></li>
+</ul>
+</section>
+<p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="/sobre.html">Sobre</a> |
+    <a href="/contato.html">Contato</a> |
+    <a href="/termos.html">Termos de Uso</a> |
+    <a href="/politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+
+
+</body>
+</html>

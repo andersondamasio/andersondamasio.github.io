@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 26 Jun 2026 05:07:54 GMT</lastBuildDate>
+<lastBuildDate>Fri, 26 Jun 2026 12:10:16 GMT</lastBuildDate>
+<item>
+<title>Verificação da Execução: O Novo Padrão de Confiança em Sistemas Distribuídos e AI</title>
+<link>https://www.andersondamasio.com.br/artigos/arquitetura/verificacao-da-execucao-o-novo-padrao-de-confianca-em-sistemas-distribuidos-e-ai.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/arquitetura/verificacao-da-execucao-o-novo-padrao-de-confianca-em-sistemas-distribuidos-e-ai.html</guid>
+<pubDate>Fri, 26 Jun 2026 12:10:16 GMT</pubDate>
+<category>Arquitetura</category>
+<description>Recentemente, a Diagrid anunciou o lançamento do Dapr 1.18, uma atualização que promete transformar a forma como concebemos a confiança em aplicações...</description>
+</item>
 <item>
 <title>Descomplicando o Aprendizado: OpenRL e a Nova Era do Afinamento de Modelos de Linguagem</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/descomplicando-o-aprendizado-openrl-e-a-nova-era-do-afinamento-de-modelos-de-linguagem.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 09 Jun 2026 15:59:29 GMT</pubDate>
 <category>Segurança</category>
 <description>Recentemente, uma onda de debates surgiu em torno de uma funcionaliadde discreta do Android chamada SafetyCore. Essa novidade, que chegou sem muitos avisos,...</description>
-</item>
-<item>
-<title>A energia que você não vê: como um simples interruptor pode salvar seu bolso</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-energia-que-voce-nao-ve-como-um-simples-interruptor-pode-salvar-seu-bolso.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-energia-que-voce-nao-ve-como-um-simples-interruptor-pode-salvar-seu-bolso.html</guid>
-<pubDate>Tue, 09 Jun 2026 12:43:00 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Quem nunca se esqueceu de apagar uma luz ou deixou um aparelho em stand by achando que não estava consumindo energia? É, meus amigos, essa é uma realidade...</description>
 </item>
 </channel>
 </rss>
