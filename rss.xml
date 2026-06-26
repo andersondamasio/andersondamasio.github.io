@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 26 Jun 2026 12:10:16 GMT</lastBuildDate>
+<lastBuildDate>Fri, 26 Jun 2026 15:22:55 GMT</lastBuildDate>
+<item>
+<title>Como a Integração de IA Está Transformando o Ciclo de Vida do Desenvolvimento de Software</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/como-a-integracao-de-ia-esta-transformando-o-ciclo-de-vida-do-desenvolvimento-de-software.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/como-a-integracao-de-ia-esta-transformando-o-ciclo-de-vida-do-desenvolvimento-de-software.html</guid>
+<pubDate>Fri, 26 Jun 2026 15:22:55 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>Um tema que vem ganhando destaque nas discussões sobre desenvolvimento de software é a crescente influência da inteligência artificial (IA) nas práticas de...</description>
+</item>
 <item>
 <title>Verificação da Execução: O Novo Padrão de Confiança em Sistemas Distribuídos e AI</title>
 <link>https://www.andersondamasio.com.br/artigos/arquitetura/verificacao-da-execucao-o-novo-padrao-de-confianca-em-sistemas-distribuidos-e-ai.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 09 Jun 2026 18:11:11 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>O evento WWDC 2026 da Apple acabou de rolar, e como sempre, trouxe uma série de novidades que prometem agitar o mercado. Mas, será que a gigante de...</description>
-</item>
-<item>
-<title>A nova sombra do Android: Segurança ou invasão silenciosa?</title>
-<link>https://www.andersondamasio.com.br/artigos/seguranca/a-nova-sombra-do-android-seguranca-ou-invasao-silenciosa.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/a-nova-sombra-do-android-seguranca-ou-invasao-silenciosa.html</guid>
-<pubDate>Tue, 09 Jun 2026 15:59:29 GMT</pubDate>
-<category>Segurança</category>
-<description>Recentemente, uma onda de debates surgiu em torno de uma funcionaliadde discreta do Android chamada SafetyCore. Essa novidade, que chegou sem muitos avisos,...</description>
 </item>
 </channel>
 </rss>
