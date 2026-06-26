@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 26 Jun 2026 15:22:55 GMT</lastBuildDate>
+<lastBuildDate>Fri, 26 Jun 2026 17:47:16 GMT</lastBuildDate>
+<item>
+<title>Rumo à Resiliência: A Evolução da Arquitetura de IA da Slack em um Mundo Multi-Cloud</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/rumo-a-resiliencia-a-evolucao-da-arquitetura-de-ia-da-slack-em-um-mundo-multi-cloud.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/rumo-a-resiliencia-a-evolucao-da-arquitetura-de-ia-da-slack-em-um-mundo-multi-cloud.html</guid>
+<pubDate>Fri, 26 Jun 2026 17:47:16 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Nos últimos anos, temos acompanhado uma revolução na forma como as empresas utilizam inteligência artificial. O recente movimento da Slack em direção a uma...</description>
+</item>
 <item>
 <title>Como a Integração de IA Está Transformando o Ciclo de Vida do Desenvolvimento de Software</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/como-a-integracao-de-ia-esta-transformando-o-ciclo-de-vida-do-desenvolvimento-de-software.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 09 Jun 2026 21:03:08 GMT</pubDate>
 <category>Tecnologia</category>
 <description>A corrida por soluções energéticas para data centers que suportam a crescente demanda da Inteligência Artificial (IA) ganhou um novo contorno, especialmente...</description>
-</item>
-<item>
-<title>Como a Apple Está Tentando Reencontrar Seu Espaço no Mundo da IA</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/como-a-apple-esta-tentando-reencontrar-seu-espaco-no-mundo-da-ia.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/como-a-apple-esta-tentando-reencontrar-seu-espaco-no-mundo-da-ia.html</guid>
-<pubDate>Tue, 09 Jun 2026 18:11:11 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>O evento WWDC 2026 da Apple acabou de rolar, e como sempre, trouxe uma série de novidades que prometem agitar o mercado. Mas, será que a gigante de...</description>
 </item>
 </channel>
 </rss>
