@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 26 Jun 2026 00:08:40 GMT</lastBuildDate>
+<lastBuildDate>Fri, 26 Jun 2026 05:07:54 GMT</lastBuildDate>
+<item>
+<title>Descomplicando o Aprendizado: OpenRL e a Nova Era do Afinamento de Modelos de Linguagem</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/descomplicando-o-aprendizado-openrl-e-a-nova-era-do-afinamento-de-modelos-de-linguagem.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/descomplicando-o-aprendizado-openrl-e-a-nova-era-do-afinamento-de-modelos-de-linguagem.html</guid>
+<pubDate>Fri, 26 Jun 2026 05:07:54 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Recentemente, a Google anunciou o OpenRL, um projeto open-source que promete revolucionar o processo de afinamento pós-treinamento de Modelos de Linguagem...</description>
+</item>
 <item>
 <title>A Revolução da Segurança em Agentes Autônomos: O Caso da Plataforma Palana da Grab</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/a-revolucao-da-seguranca-em-agentes-autonomos-o-caso-da-plataforma-palana-da-grab.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 09 Jun 2026 12:43:00 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Quem nunca se esqueceu de apagar uma luz ou deixou um aparelho em stand by achando que não estava consumindo energia? É, meus amigos, essa é uma realidade...</description>
-</item>
-<item>
-<title>A nova era das ferramentas de orçamentação: como escolher a melhor para sua empresa</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-era-das-ferramentas-de-orcamentacao-como-escolher-a-melhor-para-sua-empresa.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-era-das-ferramentas-de-orcamentacao-como-escolher-a-melhor-para-sua-empresa.html</guid>
-<pubDate>Tue, 09 Jun 2026 09:48:23 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Gerir o orçamento de uma empresa, ah, que desafio, não é mesmo? Se você, assim como eu, já passou horas tentando entender onde o dinheiro está indo, sabe do...</description>
 </item>
 </channel>
 </rss>
