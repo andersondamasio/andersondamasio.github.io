@@ -351,6 +351,19 @@ if (fs.existsSync(generatorPath)) {
       pushExample(stats.generatorQualityPromptIssues, item.label);
     }
   }
+
+  const requiredQualityGatePatterns = [
+    { label: "gerador sem limite de cadência editorial", pattern: /MAX_ARTIGOS_POR_DIA|avaliarJanelaPublicacao/i },
+    { label: "gerador sem validação de fonte rastreável", pattern: /avaliarFonteExtraidaParaGeracao|MIN_PALAVRAS_FONTE_ARTIGO/i },
+    { label: "gerador sem validação de qualidade pós-geração", pattern: /avaliarQualidadeArtigoGerado|MIN_PALAVRAS_ARTIGO_GERADO/i },
+    { label: "gerador sem controle de similaridade com a fonte", pattern: /similaridadeFonte|MAX_SIMILARIDADE_FONTE_ARTIGO/i }
+  ];
+
+  for (const item of requiredQualityGatePatterns) {
+    if (!item.pattern.test(generatorSource)) {
+      pushExample(stats.generatorQualityPromptIssues, item.label);
+    }
+  }
 }
 
 const sourceTitlesPath = path.join(root, "titulos.json");

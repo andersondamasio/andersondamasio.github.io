@@ -21,6 +21,7 @@ const {
   getArticleStructuredImages
 } = require('./scripts/seo-assets');
 const {
+  contarPalavras,
   criarMetadadosArtigo,
   keywordsMetaContent,
   limparTextoArtigo
@@ -436,6 +437,14 @@ const apiKey = process.env.OPENAI_API_KEY;
 const twitterBearer = process.env.TWITTER_BEARER_TOKEN;
 const openAiMaxRetries = numeroAmbiente("OPENAI_MAX_RETRIES", 4, 0);
 const openAiBaseRetryMs = numeroAmbiente("OPENAI_RETRY_BASE_MS", 15000, 1000);
+const maxArtigosPorDia = numeroAmbiente("MAX_ARTIGOS_POR_DIA", 3, 1);
+const intervaloMinimoPublicacaoHoras = numeroAmbiente("INTERVALO_MINIMO_PUBLICACAO_HORAS", 6, 0);
+const minScoreNoticiaArtigo = numeroAmbiente("MIN_SCORE_NOTICIA_ARTIGO", 45, 20);
+const minSinalEditorialNoticia = numeroAmbiente("MIN_SINAL_EDITORIAL_NOTICIA", 24, 10);
+const minPalavrasFonteArtigo = numeroAmbiente("MIN_PALAVRAS_FONTE_ARTIGO", 350, 120);
+const minPalavrasArtigoGerado = numeroAmbiente("MIN_PALAVRAS_ARTIGO_GERADO", 850, 450);
+const minSecoesArtigoGerado = numeroAmbiente("MIN_SECOES_ARTIGO_GERADO", 5, 3);
+const maxSimilaridadeFonteArtigo = numeroDecimalAmbiente("MAX_SIMILARIDADE_FONTE_ARTIGO", 0.12, 0.02);
 const artigosPorPagina = 10;
 const paginasListagemIndexaveis = 3;
 const paginasListagemNoSitemap = 3;
@@ -762,6 +771,7 @@ function gerarFonteArtigoHtml(sourceUrl, sourceTitle) {
   return `<section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
 <p>Este artigo foi inspirado em: <a href="${escapeAttribute(url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(title)}</a>.</p>
+<p class="article-source-note">Critério editorial: a publicação depende de fonte rastreável, recência, relevância técnica e uma camada de análise própria; fatos e interpretações são separados no texto.</p>
 </section>`;
 }
 
@@ -834,6 +844,184 @@ const termosPromocionaisOuReview = [
   /\breview\b|\btested\b|hands[- ]on|vs\.?|versus|upgrade|off select|for only \$|save \$|under \$|coupon/i,
   /oferta|promo[cç][aã]o|desconto|vale a pena|melhor (celular|tablet|tv|fone|notebook|laptop|monitor|mouse)/i
 ];
+
+const palavrasVaziasQualidade = new Set([
+  ...palavrasVaziasRelacionamento,
+  "and", "are", "but", "for", "from", "has", "have", "into", "its", "not", "that", "the", "their",
+  "they", "this", "was", "were", "what", "when", "where", "which", "with", "your"
+]);
+
+function chaveDataSaoPaulo(value) {
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return null;
+
+  const partes = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Sao_Paulo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).formatToParts(date);
+
+  const mapa = Object.fromEntries(partes.map(parte => [parte.type, parte.value]));
+  return `${mapa.year}-${mapa.month}-${mapa.day}`;
+}
+
+function datasPublicacaoValidas(titulos) {
+  return (Array.isArray(titulos) ? titulos : [])
+    .map(item => new Date(item?.data))
+    .filter(date => !Number.isNaN(date.getTime()))
+    .sort((a, b) => b.getTime() - a.getTime());
+}
+
+function avaliarJanelaPublicacao(titulos, agora = new Date()) {
+  const publicacoes = datasPublicacaoValidas(titulos);
+  const hoje = chaveDataSaoPaulo(agora);
+  const publicacoesHoje = publicacoes.filter(date => chaveDataSaoPaulo(date) === hoje);
+
+  if (maxArtigosPorDia > 0 && publicacoesHoje.length >= maxArtigosPorDia) {
+    return {
+      aceita: false,
+      motivo: `limite-diario-${publicacoesHoje.length}/${maxArtigosPorDia}`,
+      publicacoesHoje: publicacoesHoje.length
+    };
+  }
+
+  const ultimaPublicacao = publicacoes[0];
+  if (ultimaPublicacao && intervaloMinimoPublicacaoHoras > 0) {
+    const horasDesdeUltima = (agora.getTime() - ultimaPublicacao.getTime()) / 36e5;
+    if (horasDesdeUltima < intervaloMinimoPublicacaoHoras) {
+      return {
+        aceita: false,
+        motivo: `intervalo-minimo-${horasDesdeUltima.toFixed(1)}h/${intervaloMinimoPublicacaoHoras}h`,
+        horasDesdeUltima
+      };
+    }
+  }
+
+  return {
+    aceita: true,
+    motivo: "ok",
+    publicacoesHoje: publicacoesHoje.length
+  };
+}
+
+function normalizarTextoQualidade(value) {
+  return limparTextoArtigo(value)
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function palavrasQualidade(value) {
+  return normalizarTextoQualidade(value)
+    .split(/\s+/)
+    .map(word => word.replace(/^-+|-+$/g, ""))
+    .filter(word =>
+      word.length >= 4 &&
+      word.length <= 32 &&
+      !/^\d+$/.test(word) &&
+      !palavrasVaziasQualidade.has(word)
+    );
+}
+
+function nGramsQualidade(value, tamanho = 5) {
+  const palavras = palavrasQualidade(value);
+  const grams = new Set();
+  for (let i = 0; i <= palavras.length - tamanho; i += 1) {
+    grams.add(palavras.slice(i, i + tamanho).join(" "));
+  }
+  return grams;
+}
+
+function similaridadeNGrams(textoFonte, textoArtigo) {
+  const fonte = nGramsQualidade(textoFonte);
+  const artigo = nGramsQualidade(textoArtigo);
+  if (!fonte.size || !artigo.size) return 0;
+
+  let intersecao = 0;
+  for (const gram of fonte) {
+    if (artigo.has(gram)) intersecao += 1;
+  }
+
+  return intersecao / Math.min(fonte.size, artigo.size);
+}
+
+function avaliarFonteExtraidaParaGeracao(textoFonte, noticia) {
+  const palavras = contarPalavras(textoFonte);
+  const motivos = [];
+
+  if (palavras < minPalavrasFonteArtigo) {
+    motivos.push(`fonte-curta-${palavras}/${minPalavrasFonteArtigo}-palavras`);
+  }
+
+  if (!normalizarFonteUrl(noticia?.url) || dominioSocialOuIntermediario(noticia?.url)) {
+    motivos.push("fonte-nao-rastreavel");
+  }
+
+  return {
+    aceita: motivos.length === 0,
+    motivos,
+    palavras
+  };
+}
+
+function avaliarQualidadeArtigoGerado({ titulo, corpoArtigo, textoFonte }) {
+  const texto = limparTextoArtigo(corpoArtigo);
+  const textoNormalizado = normalizarTextoQualidade(texto);
+  const palavras = contarPalavras(texto);
+  const secoes = (String(corpoArtigo || "").match(/<h2\b|^##\s+/gim) || []).length;
+  const listas = (String(corpoArtigo || "").match(/<(?:ul|ol)\b|^\s*[-*]\s+/gim) || []).length;
+  const similaridadeFonte = similaridadeNGrams(textoFonte, texto);
+  const motivos = [];
+
+  if (palavras < minPalavrasArtigoGerado) {
+    motivos.push(`artigo-curto-${palavras}/${minPalavrasArtigoGerado}-palavras`);
+  }
+
+  if (secoes < minSecoesArtigoGerado) {
+    motivos.push(`poucas-secoes-${secoes}/${minSecoesArtigoGerado}`);
+  }
+
+  if (listas < 1) {
+    motivos.push("sem-lista-pratica");
+  }
+
+  if (!/(fato|confirmad|reportad|fonte|noticia original|o que aconteceu)/i.test(textoNormalizado)) {
+    motivos.push("sem-separacao-de-fatos");
+  }
+
+  if (!/(interpretacao|interpreta|leitura tecnica|limite|nao da para afirmar|ainda nao da)/i.test(textoNormalizado)) {
+    motivos.push("sem-limites-da-analise");
+  }
+
+  if (!/(aplicar|aplicacao pratica|acao concreta|time|arquitet|desenvolvedor|lider tecnico|decisao tecnica)/i.test(textoNormalizado)) {
+    motivos.push("sem-utilidade-pratica");
+  }
+
+  if (similaridadeFonte > maxSimilaridadeFonteArtigo) {
+    motivos.push(`muito-proximo-da-fonte-${similaridadeFonte.toFixed(2)}/${maxSimilaridadeFonteArtigo}`);
+  }
+
+  if (/^(arquitetura de software|inteligencia artificial|seguranca|devops|microservices)\b:?$/i.test(normalizarTextoQualidade(titulo))) {
+    motivos.push("titulo-generico");
+  }
+
+  if (/\b(do futuro|abordagem inovadora|desafios e solucoes|guia completo)\b/i.test(titulo)) {
+    motivos.push("titulo-com-cliche-seo");
+  }
+
+  return {
+    aceita: motivos.length === 0,
+    motivos,
+    palavras,
+    secoes,
+    listas,
+    similaridadeFonte
+  };
+}
 
 function arquivoIndexavel(arquivo) {
   try {
@@ -1372,6 +1560,11 @@ function numeroAmbiente(nome, padrao, minimo = 0) {
   return Number.isFinite(valor) && valor >= minimo ? valor : padrao;
 }
 
+function numeroDecimalAmbiente(nome, padrao, minimo = 0) {
+  const valor = Number.parseFloat(process.env[nome] || "");
+  return Number.isFinite(valor) && valor >= minimo ? valor : padrao;
+}
+
 function dormir(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -1598,15 +1791,15 @@ function avaliarNoticiaParaGeracao(noticia, agora = Date.now()) {
     return { aceita: false, score, motivo: "noticia-antiga", recencia, relevancia, dominio, penalidade };
   }
 
-  if (sinalEditorial < 18) {
-    return { aceita: false, score, motivo: "baixo-sinal-editorial", recencia, relevancia, dominio, penalidade };
+  if (sinalEditorial < minSinalEditorialNoticia) {
+    return { aceita: false, score, motivo: "baixo-sinal-editorial", recencia, relevancia, dominio, sinalEditorial, penalidade };
   }
 
-  if (score < 35) {
-    return { aceita: false, score, motivo: "score-baixo", recencia, relevancia, dominio, penalidade };
+  if (score < minScoreNoticiaArtigo) {
+    return { aceita: false, score, motivo: "score-baixo", recencia, relevancia, dominio, sinalEditorial, penalidade };
   }
 
-  return { aceita: true, score, motivo: "ok", recencia, relevancia, dominio, autorX, engajamentoX, penalidade };
+  return { aceita: true, score, motivo: "ok", recencia, relevancia, dominio, sinalEditorial, autorX, engajamentoX, penalidade };
 }
 
 function escolherUrlFonteDoTweet(tweet) {
@@ -1667,7 +1860,12 @@ async function buscarNoticia() {
     console.log(`🏅 ${index + 1}. score=${item.avaliacao.score} origem=${item.noticia.origem || "rss"} domínio=${dominioFonte(item.noticia.url)} título="${item.noticia.titulo}"`);
   });
 
-  if (candidatas.length > 0) return candidatas[0].noticia;
+  if (candidatas.length > 0) {
+    return {
+      ...candidatas[0].noticia,
+      avaliacaoEditorial: candidatas[0].avaliacao
+    };
+  }
 
   avaliadas
     .sort((a, b) => b.avaliacao.score - a.avaliacao.score)
@@ -1889,6 +2087,12 @@ async function gerar() {
     const titulosPath = "titulos.json";
     let titulosGerados = fs.existsSync(titulosPath) ? JSON.parse(fs.readFileSync(titulosPath, "utf-8")) : [];
 
+const janelaPublicacao = avaliarJanelaPublicacao(titulosGerados, now);
+if (!janelaPublicacao.aceita) {
+  console.log(`⏸️ Publicação pausada por política editorial anti-spam: ${janelaPublicacao.motivo}.`);
+  return;
+}
+
 const noticia = await buscarNoticia();
 if (!noticia || !noticia.titulo) {
   console.log("⚠️ Nenhuma notícia válida encontrada. Abortando com segurança.");
@@ -1919,6 +2123,12 @@ if(textoPrincipal == ''){
   return;
    }
 
+const qualidadeFonte = avaliarFonteExtraidaParaGeracao(textoPrincipal, noticia);
+if (!qualidadeFonte.aceita) {
+  console.log(`⏸️ Fonte rejeitada por política editorial: ${qualidadeFonte.motivos.join(", ")}.`);
+  return;
+}
+
 const prompt = `
 Você é Anderson Damasio, um Arquiteto de Software com ${textoAnosExperiencia} de experiência prática em sistemas escaláveis.
 Você acaba de ler uma notícia técnica internacional sobre: "${noticia.titulo}".
@@ -1943,6 +2153,7 @@ Seu objetivo é criar um conteúdo editorial **com aparência 100% humana e auto
    - Uma seção de riscos e cuidados, sem sensacionalismo.
    - Uma conclusão com reflexões ou recomendações suas.
    - Texto revisado, claro e sem erros ortográficos propositais.
+   - Uma análise de fôlego, com pelo menos ${minPalavrasArtigoGerado} palavras quando a fonte permitir.
 
 3. Ao longo do artigo, use marcações HTML semânticas para melhorar o SEO:
 - Use <h2> apenas para títulos principais de seções (ex: Introdução, Conclusão, Dicas, etc).
@@ -1973,6 +2184,7 @@ Exemplo de categoria: |Segurança|
 - Evite iniciar frases como "Nos últimos anos".
 - Não invente dados, números, datas, nomes de empresas ou conclusões que não estejam sustentadas pela fonte. Quando algo for uma inferência, deixe claro que é uma leitura técnica.
 - O artigo precisa agregar valor além da notícia: explique impacto, trade-offs, riscos, decisões práticas e sinais que um time poderia observar.
+- Não faça apenas resumo/paráfrase da fonte; separe claramente "o que é fato", "o que é interpretação técnica" e "como aplicar".
 - Ao trazer exemplos, busque analogias práticas, histórias rápidas, curiosidades ou opiniões pessoais, mesmo que breves.
 - Sempre insira pelo menos uma frase que traga uma visão ou comentário seu, como se estivesse realmente opinando sobre o tema.
 - Não inicie com “Título:” ou similares. Apenas escreva o título direto na primeira linha.
@@ -2057,6 +2269,17 @@ const urlLocal = `artigos/${categoriaSlug}/${slug}.html`;
         corpoArtigo = corpoArtigo.replace(/Resumo:\s*.+/i, '').trim(); // remove do corpo
        }
 
+    const qualidadeArtigo = avaliarQualidadeArtigoGerado({
+      titulo,
+      corpoArtigo,
+      textoFonte: textoPrincipal
+    });
+    if (!qualidadeArtigo.aceita) {
+      console.log(`⏸️ Artigo rejeitado por política editorial: ${qualidadeArtigo.motivos.join(", ")}.`);
+      return;
+    }
+    console.log(`✅ Qualidade editorial aprovada: ${qualidadeArtigo.palavras} palavras, ${qualidadeArtigo.secoes} seções, similaridade ${qualidadeArtigo.similaridadeFonte.toFixed(2)}.`);
+
     const dataHoraFormatada = formatDateTime(now);
     const dataISO = new Date(now).toISOString();
     const imagemCapaUrl = null;//await buscarImagemCapa(titulo, slug);
@@ -2117,6 +2340,7 @@ ${gerarSeoHead({
       "datePublished": dataISO,
       "dateModified": dataISO,
       "articleSection": categoria,
+      "genre": "Análise técnica",
       "inLanguage": "pt-BR",
       ...articleMetadata,
       ...(sourceCitation ? {
@@ -2188,8 +2412,9 @@ a:hover { text-decoration: underline; color: var(--link-hover);}
 .article-validation li, .article-usefulness li { margin: 0.5rem 0; }
 .article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
 .article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
-.article-source p { margin: 0; }
+.article-source p { margin: 0.35rem 0 0; }
 .article-source a { font-weight: 700; }
+.article-source-note { font-size: 0.9rem; }
 pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
 code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
 .copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
@@ -2306,7 +2531,16 @@ if (!existe) {
     data: now.toISOString(),
     dataFonte: sourceDate,
     categoria,
-    urlFonte: noticia.url
+    urlFonte: noticia.url,
+    qualidadeEditorial: {
+      politica: "fonte-rastreavel-recente-com-analise-propria",
+      scoreFonte: noticia.avaliacaoEditorial?.score ?? null,
+      sinalEditorial: noticia.avaliacaoEditorial?.sinalEditorial ?? null,
+      palavrasFonte: qualidadeFonte.palavras,
+      palavrasArtigo: qualidadeArtigo.palavras,
+      secoesArtigo: qualidadeArtigo.secoes,
+      similaridadeFonte: Number(qualidadeArtigo.similaridadeFonte.toFixed(4))
+    }
   });
 }
 
