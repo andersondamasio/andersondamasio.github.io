@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 26 Jun 2026 17:47:16 GMT</lastBuildDate>
+<lastBuildDate>Wed, 01 Jul 2026 23:14:39 GMT</lastBuildDate>
+<item>
+<title>Inteligência Artificial e Segurança: A Revolução do Copilot Autofix no Azure DevOps</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/inteligencia-artificial-e-seguranca-a-revolucao-do-copilot-autofix-no-azure-devops.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/inteligencia-artificial-e-seguranca-a-revolucao-do-copilot-autofix-no-azure-devops.html</guid>
+<pubDate>Wed, 01 Jul 2026 23:14:39 GMT</pubDate>
+<category>Segurança</category>
+<description>Recentemente, a Microsoft deu mais um passo importante na interseção entre inteligência artificial e segurança de software. Com o lançamento do Copilot...</description>
+</item>
 <item>
 <title>Rumo à Resiliência: A Evolução da Arquitetura de IA da Slack em um Mundo Multi-Cloud</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/rumo-a-resiliencia-a-evolucao-da-arquitetura-de-ia-da-slack-em-um-mundo-multi-cloud.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 09 Jun 2026 22:33:13 GMT</pubDate>
 <category>Segurança</category>
 <description>Recentemente, deparei com uma notícia que me fez refletir sobre um tema que, embora não seja novo, está ganhando cada vez mais destaque: a relação entre...</description>
-</item>
-<item>
-<title>Revolução Energética: Como a GM Está Transformando Baterias para Data Centers</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/revolucao-energetica-como-a-gm-esta-transformando-baterias-para-data-centers.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/revolucao-energetica-como-a-gm-esta-transformando-baterias-para-data-centers.html</guid>
-<pubDate>Tue, 09 Jun 2026 21:03:08 GMT</pubDate>
-<category>Tecnologia</category>
-<description>A corrida por soluções energéticas para data centers que suportam a crescente demanda da Inteligência Artificial (IA) ganhou um novo contorno, especialmente...</description>
 </item>
 </channel>
 </rss>
