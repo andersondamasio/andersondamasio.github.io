@@ -434,6 +434,8 @@ const anosExperiencia = new Date().getFullYear() - anoInicioExperiencia;
 const textoAnosExperiencia = `mais de ${anosExperiencia} anos`;
 const apiKey = process.env.OPENAI_API_KEY;
 const twitterBearer = process.env.TWITTER_BEARER_TOKEN;
+const openAiMaxRetries = numeroAmbiente("OPENAI_MAX_RETRIES", 4, 0);
+const openAiBaseRetryMs = numeroAmbiente("OPENAI_RETRY_BASE_MS", 15000, 1000);
 const artigosPorPagina = 10;
 const paginasListagemIndexaveis = 3;
 const paginasListagemNoSitemap = 3;
@@ -1365,6 +1367,90 @@ async function verificarTweetOriginalViaApi(tweetUrl) {
   }
 }
 
+function numeroAmbiente(nome, padrao, minimo = 0) {
+  const valor = Number.parseInt(process.env[nome] || "", 10);
+  return Number.isFinite(valor) && valor >= minimo ? valor : padrao;
+}
+
+function dormir(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function resumirErroApi(erro) {
+  const status = erro.response?.status ? ` status=${erro.response.status}` : "";
+  const data = erro.response?.data;
+  const body = data ? ` body=${JSON.stringify(data).slice(0, 800)}` : "";
+  return `${erro.message}${status}${body}`;
+}
+
+function retryAfterMs(headers = {}) {
+  const retryAfter = headers["retry-after"];
+  if (!retryAfter) return null;
+
+  const segundos = Number(retryAfter);
+  if (Number.isFinite(segundos)) return Math.max(0, segundos * 1000);
+
+  const data = Date.parse(retryAfter);
+  if (Number.isFinite(data)) return Math.max(0, data - Date.now());
+
+  return null;
+}
+
+function erroOpenAiSemRetry(erro) {
+  const data = erro.response?.data;
+  const texto = [
+    data?.error?.code,
+    data?.error?.type,
+    data?.error?.message,
+    erro.message
+  ].filter(Boolean).join(" ");
+
+  return /insufficient_quota|billing|hard_limit|quota_exceeded/i.test(texto);
+}
+
+async function chamarOpenAiChatCompletion(payload) {
+  if (!apiKey) {
+    throw new Error("OPENAI_API_KEY nao configurado.");
+  }
+
+  for (let tentativa = 0; tentativa <= openAiMaxRetries; tentativa += 1) {
+    try {
+      return await axios.post(
+        "https://api.openai.com/v1/chat/completions",
+        payload,
+        {
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            "Content-Type": "application/json"
+          },
+          timeout: 120000
+        }
+      );
+    } catch (erro) {
+      const status = erro.response?.status;
+      const retryable = !status || status === 429 || [500, 502, 503, 504].includes(status);
+      const semRetry = status === 429 && erroOpenAiSemRetry(erro);
+      const ultimaTentativa = tentativa >= openAiMaxRetries;
+
+      console.warn(`⚠️ Erro na OpenAI (tentativa ${tentativa + 1}/${openAiMaxRetries + 1}): ${resumirErroApi(erro)}`);
+
+      if (!retryable || semRetry || ultimaTentativa) {
+        throw erro;
+      }
+
+      const retryAfter = retryAfterMs(erro.response?.headers);
+      const backoff = Math.min(openAiBaseRetryMs * Math.pow(2, tentativa), 120000);
+      const jitter = Math.floor(Math.random() * 1500);
+      const espera = retryAfter ?? (backoff + jitter);
+
+      console.warn(`⏳ Aguardando ${Math.round(espera / 1000)}s antes de tentar novamente a OpenAI.`);
+      await dormir(espera);
+    }
+  }
+
+  throw new Error("Falha inesperada ao chamar OpenAI.");
+}
+
 function formatDateTime(date) {
   const brasiliaDate = new Date(date.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
 
@@ -1895,23 +1981,16 @@ Exemplo de categoria: |Segurança|
 - O conteúdo deve ser retornado já com **HTML semântico completo**, sem usar **asteriscos** ou sintaxe de Markdown.
 `;
 
- console.error("DEBUG: PROMPT:", prompt);
+ console.error(`DEBUG: prompt pronto com ${prompt.length} caracteres.`);
  console.error("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
  console.error("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 
 
-    const response = await axios.post(
-      'https://api.openai.com/v1/chat/completions',
+    const response = await chamarOpenAiChatCompletion(
       {
         model: "gpt-4o-mini",
         messages: [{ role: "user", content: prompt }],
         temperature: 0.7
-      },
-      {
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-          'Content-Type': 'application/json'
-        }
       }
     );
 
