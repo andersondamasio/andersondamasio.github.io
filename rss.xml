@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 02 Jul 2026 10:38:39 GMT</lastBuildDate>
+<lastBuildDate>Thu, 02 Jul 2026 17:46:52 GMT</lastBuildDate>
+<item>
+<title>Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real</title>
+<link>https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html</guid>
+<pubDate>Thu, 02 Jul 2026 17:46:52 GMT</pubDate>
+<category>Arquitetura</category>
+<description>Ao longo de minha trajetória como arquiteto de software, sempre estive em busca de soluções que alavanquem a escalabilidade e a eficiência de sistemas...</description>
+</item>
 <item>
 <title>Desafios de Infraestrutura na Era da Inteligência Artificial: Como Navegar em um Novo Cenário</title>
 <link>https://www.andersondamasio.com.br/artigos/arquitetura/desafios-de-infraestrutura-na-era-da-inteligencia-artificial-como-navegar-em-um-novo-cenario.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Wed, 10 Jun 2026 05:24:05 GMT</pubDate>
 <category>Tecnologia Automotiva</category>
 <description>A recente saída de Emad Dlala, um executivo de alto escalão da Lucid Motors, levanta questões importantes sobre a dinâmica interna das empresas de...</description>
-</item>
-<item>
-<title>Investindo em Startups: Como a Arquitetura de Software Pode Potencializar Novos Modelos de Financiamento</title>
-<link>https://www.andersondamasio.com.br/artigos/carreira/investindo-em-startups-como-a-arquitetura-de-software-pode-potencializar-novos-modelos-de-financiamento.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/carreira/investindo-em-startups-como-a-arquitetura-de-software-pode-potencializar-novos-modelos-de-financiamento.html</guid>
-<pubDate>Wed, 10 Jun 2026 00:19:49 GMT</pubDate>
-<category>Carreira</category>
-<description>Nos últimos tempos, o cenário de investimentos em startups tem passado por transformações significativas. A cada dia, novas abordagens surgem e mudam a...</description>
 </item>
 </channel>
 </rss>

@@ -71909,5 +71909,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real",
+    "noticiaOriginal": "Article: Scaling Java-Based Real-Time Systems: The Hidden Tradeoffs of Event-Driven Design",
+    "url": "artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html",
+    "data": "2026-07-02T17:46:52.661Z",
+    "dataFonte": "2026-06-30T09:00:00.000Z",
+    "categoria": "Arquitetura",
+    "urlFonte": "https://www.infoq.com/articles/tradeoffs-event-driven-design/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 98,
+      "sinalEditorial": 84,
+      "palavrasFonte": 4056,
+      "palavrasArtigo": 893,
+      "secoesArtigo": 8,
+      "similaridadeFonte": 0
+    }
   }
 ]
