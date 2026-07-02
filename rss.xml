@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Wed, 01 Jul 2026 23:14:39 GMT</lastBuildDate>
+<lastBuildDate>Thu, 02 Jul 2026 10:38:39 GMT</lastBuildDate>
+<item>
+<title>Desafios de Infraestrutura na Era da Inteligência Artificial: Como Navegar em um Novo Cenário</title>
+<link>https://www.andersondamasio.com.br/artigos/arquitetura/desafios-de-infraestrutura-na-era-da-inteligencia-artificial-como-navegar-em-um-novo-cenario.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/arquitetura/desafios-de-infraestrutura-na-era-da-inteligencia-artificial-como-navegar-em-um-novo-cenario.html</guid>
+<pubDate>Thu, 02 Jul 2026 10:38:39 GMT</pubDate>
+<category>Arquitetura</category>
+<description>Nos últimos anos, a Inteligência Artificial (IA) evoluiu de um campo experimental para um elemento central nas operações empresariais. Contudo, as promessas...</description>
+</item>
 <item>
 <title>Inteligência Artificial e Segurança: A Revolução do Copilot Autofix no Azure DevOps</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/inteligencia-artificial-e-seguranca-a-revolucao-do-copilot-autofix-no-azure-devops.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Wed, 10 Jun 2026 00:19:49 GMT</pubDate>
 <category>Carreira</category>
 <description>Nos últimos tempos, o cenário de investimentos em startups tem passado por transformações significativas. A cada dia, novas abordagens surgem e mudam a...</description>
-</item>
-<item>
-<title>A nova era das apostas: como a tecnologia pode combater a fraude</title>
-<link>https://www.andersondamasio.com.br/artigos/seguranca/a-nova-era-das-apostas-como-a-tecnologia-pode-combater-a-fraude.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/a-nova-era-das-apostas-como-a-tecnologia-pode-combater-a-fraude.html</guid>
-<pubDate>Tue, 09 Jun 2026 22:33:13 GMT</pubDate>
-<category>Segurança</category>
-<description>Recentemente, deparei com uma notícia que me fez refletir sobre um tema que, embora não seja novo, está ganhando cada vez mais destaque: a relação entre...</description>
 </item>
 </channel>
 </rss>

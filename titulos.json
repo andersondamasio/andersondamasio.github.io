@@ -71891,5 +71891,23 @@
     "dataFonte": "2026-06-30T12:00:00.000Z",
     "categoria": "Segurança",
     "urlFonte": "https://www.infoq.com/news/2026/06/azuredevops-copilot-autofix/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  {
+    "titulo": "Desafios de Infraestrutura na Era da Inteligência Artificial: Como Navegar em um Novo Cenário",
+    "noticiaOriginal": "Presentation: The Infrastructure Challenge Behind Production AI",
+    "url": "artigos/arquitetura/desafios-de-infraestrutura-na-era-da-inteligencia-artificial-como-navegar-em-um-novo-cenario.html",
+    "data": "2026-07-02T10:38:39.528Z",
+    "dataFonte": "2026-07-01T11:00:00.000Z",
+    "categoria": "Arquitetura",
+    "urlFonte": "https://www.infoq.com/presentations/ai-infrastructure-scaling-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 114,
+      "sinalEditorial": 84,
+      "palavrasFonte": 7701,
+      "palavrasArtigo": 929,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]
