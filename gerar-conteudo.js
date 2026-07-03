@@ -451,6 +451,8 @@ const paginasListagemNoSitemap = 3;
 const gerarAliasesLegados = true;
 const aliasesEstaticosLegados = [
   { origem: "politica-de-privacidade.html", destino: "politica.html", titulo: "Política de Privacidade" },
+  { origem: "artigos/politica.html", destino: "politica.html", titulo: "Política de Privacidade" },
+  { origem: "artigos/termos.html", destino: "termos.html", titulo: "Termos de Uso" },
   { origem: "artigos/artigos.html", destino: "artigos/index.html", titulo: "Artigos" },
   { origem: "categoria/index.html", destino: "artigos/index.html", titulo: "Artigos" },
   { origem: "artigos/categoria/index.html", destino: "artigos/index.html", titulo: "Artigos" }
