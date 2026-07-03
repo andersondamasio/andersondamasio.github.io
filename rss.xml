@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 02 Jul 2026 17:46:52 GMT</lastBuildDate>
+<lastBuildDate>Fri, 03 Jul 2026 02:53:15 GMT</lastBuildDate>
+<item>
+<title>Desenvolvimento de Plataformas: Da Mentalidade de Projetos para a Abordagem de Produtos</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desenvolvimento-de-plataformas-da-mentalidade-de-projetos-para-a-abordagem-de-produtos.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desenvolvimento-de-plataformas-da-mentalidade-de-projetos-para-a-abordagem-de-produtos.html</guid>
+<pubDate>Fri, 03 Jul 2026 02:53:15 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>Nos últimos tempos, a maneira como encaramos o desenvolvimento de software tem passado por uma transformação significativa. A discussão sobre a transição do...</description>
+</item>
 <item>
 <title>Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real</title>
 <link>https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Wed, 10 Jun 2026 10:04:50 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Com a proximidade da Copa do Mundo de 2026, que promete ser um evento grandioso, não é só o futebol que está em alta, mas também as tecnologias que...</description>
-</item>
-<item>
-<title>Novas Direções: A Transformação da Lucid Motors e o Papel da Arquitetura de Software</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia-automotiva/novas-direcoes-a-transformacao-da-lucid-motors-e-o-papel-da-arquitetura-de-software.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia-automotiva/novas-direcoes-a-transformacao-da-lucid-motors-e-o-papel-da-arquitetura-de-software.html</guid>
-<pubDate>Wed, 10 Jun 2026 05:24:05 GMT</pubDate>
-<category>Tecnologia Automotiva</category>
-<description>A recente saída de Emad Dlala, um executivo de alto escalão da Lucid Motors, levanta questões importantes sobre a dinâmica interna das empresas de...</description>
 </item>
 </channel>
 </rss>
