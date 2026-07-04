@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sat, 04 Jul 2026 09:22:19 GMT</lastBuildDate>
+<lastBuildDate>Sat, 04 Jul 2026 17:04:05 GMT</lastBuildDate>
+<item>
+<title>Desbravando Hardwood: A Revolução do Processamento de Apache Parquet na JVM</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desbravando-hardwood-a-revolucao-do-processamento-de-apache-parquet-na-jvm.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desbravando-hardwood-a-revolucao-do-processamento-de-apache-parquet-na-jvm.html</guid>
+<pubDate>Sat, 04 Jul 2026 17:04:05 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>A tecnologia avança a passos largos, especialmente no que diz respeito ao processamento de dados. Recentemente, um novo projeto chamado Hardwood ganhou...</description>
+</item>
 <item>
 <title>A Revolução da Arquitetura de Software: O Futuro com IA Agente</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-da-arquitetura-de-software-o-futuro-com-ia-agente.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Thu, 11 Jun 2026 00:22:15 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Se você já se aventurou pelo mundo das distribuições Linux, provavelmente já ouviu falar do Alpine Linux. Essa distribuição, que a princípio parece um tanto...</description>
-</item>
-<item>
-<title>A nova onda de ataques cibernéticos: o que aprendemos com a brecha do Oracle PeopleSoft</title>
-<link>https://www.andersondamasio.com.br/artigos/seguranca/a-nova-onda-de-ataques-ciberneticos-o-que-aprendemos-com-a-brecha-do-oracle-peoplesoft.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/a-nova-onda-de-ataques-ciberneticos-o-que-aprendemos-com-a-brecha-do-oracle-peoplesoft.html</guid>
-<pubDate>Wed, 10 Jun 2026 22:07:53 GMT</pubDate>
-<category>Segurança</category>
-<description>Recentemente, a notícia de que o grupo de cibercriminosos ShinyHunters conseguiu invadir os servidores do Oracle PeopleSoft em mais de 100 organizações,...</description>
 </item>
 </channel>
 </rss>

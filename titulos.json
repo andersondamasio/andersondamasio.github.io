@@ -71999,5 +71999,23 @@
       "secoesArtigo": 8,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Desbravando Hardwood: A Revolução do Processamento de Apache Parquet na JVM",
+    "noticiaOriginal": "Hardwood Promises High-Speed JVM Apache Parquet Processing with Zero Mandatory Dependencies",
+    "url": "artigos/desenvolvimento-de-software/desbravando-hardwood-a-revolucao-do-processamento-de-apache-parquet-na-jvm.html",
+    "data": "2026-07-04T17:04:05.355Z",
+    "dataFonte": "2026-07-03T12:12:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://www.infoq.com/news/2026/07/hardwood-java-parquet/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 82,
+      "sinalEditorial": 60,
+      "palavrasFonte": 732,
+      "palavrasArtigo": 892,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]

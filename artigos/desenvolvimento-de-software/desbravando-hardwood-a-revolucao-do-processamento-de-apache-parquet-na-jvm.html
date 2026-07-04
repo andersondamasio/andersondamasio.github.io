@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Desbravando Hardwood: A Revolução do Processamento de Apache Parquet na JVM</title>
+<meta name="description" content="A tecnologia avança a passos largos, especialmente no que diz respeito ao processamento de dados. Recentemente, um novo projeto chamado Hardwood ganhou...">
+<meta name="author" content="Anderson Damasio">
+<meta name="keywords" content="Desenvolvimento de Software, segurança, hardwood, parquet, processamento, apache, leitura, dados, dependencias, biblioteca">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desbravando-hardwood-a-revolucao-do-processamento-de-apache-parquet-na-jvm.html">
+<link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Anderson Damasio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Desbravando Hardwood: A Revolução do Processamento de Apache Parquet na JVM">
+<meta property="og:description" content="A tecnologia avança a passos largos, especialmente no que diz respeito ao processamento de dados. Recentemente, um novo projeto chamado Hardwood ganhou...">
+<meta property="og:url" content="https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desbravando-hardwood-a-revolucao-do-processamento-de-apache-parquet-na-jvm.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
+<meta property="article:published_time" content="2026-07-04T17:04:05.355Z">
+<meta property="article:modified_time" content="2026-07-04T17:04:05.355Z">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@andersondamasio">
+<meta name="twitter:title" content="Desbravando Hardwood: A Revolução do Processamento de Apache Parquet na JVM">
+<meta name="twitter:description" content="A tecnologia avança a passos largos, especialmente no que diz respeito ao processamento de dados. Recentemente, um novo projeto chamado Hardwood ganhou...">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
+<meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Desbravando Hardwood: A Revolução do Processamento de Apache Parquet na JVM",
+  "description": "A tecnologia avança a passos largos, especialmente no que diz respeito ao processamento de dados. Recentemente, um novo projeto chamado Hardwood ganhou...",
+  "image": [
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
+  ],
+  "url": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desbravando-hardwood-a-revolucao-do-processamento-de-apache-parquet-na-jvm.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desbravando-hardwood-a-revolucao-do-processamento-de-apache-parquet-na-jvm.html"
+  },
+  "datePublished": "2026-07-04T17:04:05.355Z",
+  "dateModified": "2026-07-04T17:04:05.355Z",
+  "articleSection": "Desenvolvimento de Software",
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "Desenvolvimento de Software",
+    "segurança",
+    "hardwood",
+    "parquet",
+    "processamento",
+    "apache",
+    "leitura",
+    "dados",
+    "dependencias",
+    "biblioteca"
+  ],
+  "wordCount": 892,
+  "about": {
+    "@type": "Thing",
+    "name": "Desenvolvimento de Software"
+  },
+  "mentions": [
+    {
+      "@type": "Thing",
+      "name": "segurança"
+    },
+    {
+      "@type": "Thing",
+      "name": "hardwood"
+    },
+    {
+      "@type": "Thing",
+      "name": "parquet"
+    },
+    {
+      "@type": "Thing",
+      "name": "processamento"
+    },
+    {
+      "@type": "Thing",
+      "name": "apache"
+    },
+    {
+      "@type": "Thing",
+      "name": "leitura"
+    }
+  ],
+  "isAccessibleForFree": true,
+  "copyrightYear": 2026,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "Hardwood Promises High-Speed JVM Apache Parquet Processing with Zero Mandatory Dependencies",
+    "url": "https://www.infoq.com/news/2026/07/hardwood-java-parquet/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  "citation": "https://www.infoq.com/news/2026/07/hardwood-java-parquet/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
+  },
+  "copyrightHolder": {
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.andersondamasio.com.br/#organization",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
+      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://www.andersondamasio.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://www.andersondamasio.com.br/artigos/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Desenvolvimento de Software",
+      "item": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Desbravando Hardwood: A Revolução do Processamento de Apache Parquet na JVM",
+      "item": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desbravando-hardwood-a-revolucao-do-processamento-de-apache-parquet-na-jvm.html"
+    }
+  ]
+}
+</script>
+<link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
+<style>
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --main-bg: #fff;
+  --link: #0a66c2;
+  --link-hover: #084e91;
+  --footer: #666;
+  --meta: #777;
+  --pre-bg: #272822;
+  --pre-color: #f8f8f2;
+  --copy-bg: #0a66c2;
+  --copy-color: #fff;
+  --copy-bg-hover: #084e91;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body.dark-theme {
+  --bg: #181b1f;
+  --text: #ddd;
+  --main-bg: #23262d;
+  --link: #67aaff;
+  --link-hover: #f1c40f;
+  --footer: #b3b3b3;
+  --meta: #b3b3b3;
+  --pre-bg: #22262b;
+  --pre-color: #e0e7ef;
+  --copy-bg: #67aaff;
+  --copy-color: #11131a;
+  --copy-bg-hover: #f1c40f;
+  --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+h1 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--link); }
+a { color: var(--link); text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: var(--link-hover);}
+.article-meta { color: var(--meta); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0.35rem 0 0; }
+.article-source a { font-weight: 700; }
+.article-source-note { font-size: 0.9rem; }
+pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: var(--copy-bg-hover); color: var(--main-bg); }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: var(--link); font-size: 1.05rem; border: 1px solid var(--link); padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: var(--link); color: var(--main-bg); }
+main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+</head>
+<body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../../artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
+    <a href="../../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+  </nav>
+</header>
+<main>
+<h1>Desbravando Hardwood: A Revolução do Processamento de Apache Parquet na JVM</h1>
+
+<p class="article-meta">Publicado em: 04/07/2026 14:04</p>
+
+<div class="article-body"><p>A tecnologia avança a passos largos, especialmente no que diz respeito ao processamento de dados. Recentemente, um novo projeto chamado <strong>Hardwood</strong> ganhou destaque, prometendo transformar a forma como lidamos com arquivos Apache Parquet em ambientes JVM. Vamos explorar essa inovação que promete acelerar a leitura de dados, simplificar a gestão de dependências e otimizar o uso de recursos computacionais.</p>
+<h2>Resumo Executivo</h2>
+<p>Hardwood é uma biblioteca open-source que visa otimizar a leitura de arquivos Apache Parquet, oferecendo uma alternativa mais rápida e leve à implementação tradicional em Java. Criada por Gunnar Morling, a biblioteca alcançou sua versão 1.0 em apenas cinco meses, implementando leitura multi-threaded e um design modular que busca maximizar a utilização da CPU. Com sua abordagem de zero dependências obrigatórias, Hardwood se destaca na minimização de riscos associados a conflitos de classe e ataques à cadeia de suprimentos. O suporte para escrita de dados está previsto para futuras versões, ampliando ainda mais sua relevância.</p>
+<h2>Fatos Reportados</h2>
+<p>Hardwood foi desenvolvido para lidar com os desafios que a implementação padrão do Apache Parquet enfrenta, como a sobrecarga de dependências e o desempenho limitado por leitor de thread único. A biblioteca oferece dois tipos de APIs: uma voltada para a leitura de linhas, ideal para acessos gerais, e outra focada em colunas, voltada para cargas analíticas de alto desempenho. O processamento multi-threaded reduz a latência, tornando a leitura significativamente mais rápida, especialmente em ambientes com múltiplos núcleos de CPU.</p>
+<h2>Interpretação Técnica</h2>
+<p>A escolha de uma arquitetura de zero dependências obrigatórias é um movimento inteligente. Isso não apenas reduz a complexidade da gestão de dependências, mas também diminui vulnerabilidades de segurança. A implementação de uma interface de linha de comando (CLI) com uma interface do usuário baseada em texto facilita a inspeção dos esquemas e metadados dos arquivos Parquet, oferecendo uma ferramenta prática para desenvolvedores e engenheiros de dados.</p>
+<p>Além disso, a otimização na avaliação de predicados, utilizando uma abordagem sem ramificações, é um ponto crucial. Isso evita previsões incorretas do CPU, um fator que pode impactar significativamente o desempenho em processamento de dados analíticos. O resultado é um throughput que pode chegar a 16,5 milhões de linhas por segundo em configurações de 8 vCPUs, um avanço notável em relação a implementações tradicionais.</p>
+<h2>Limites e Oportunidades</h2>
+<p>Embora Hardwood tenha apresentado resultados impressionantes, ainda há aspectos a serem considerados. A biblioteca atualmente suporta apenas leitura, com a escrita em Parquet prometida para versões futuras. Além disso, a dependência de configurações de hardware adequadas para maximizar seu desempenho pode limitar a adoção em ambientes com recursos restritos.</p>
+<h2>Explicação Técnica Aprofundada</h2>
+<p>A arquitetura do Hardwood se destaca pelo seu processamento multi-threaded. Em vez de decodificar as páginas de forma sequencial, a biblioteca divide essa tarefa entre todos os núcleos disponíveis, aproveitando ao máximo a capacidade de I/O e a largura de banda do CPU. Este modelo é especialmente eficaz em cenários onde grandes volumes de dados são processados rapidamente.</p>
+<p>Outro ponto a ser destacado é o uso da abstração de registro mínimo do Java 9. Isso permite que desenvolvedores evitem a inclusão de bibliotecas externas de log, minimizando ainda mais o risco de conflitos de dependências. O suporte opcional para algoritmos de compressão como LZ4 e GZip e serviços de armazenamento de objetos como S3 também demonstra uma visão modular que pode ser adaptada às necessidades específicas de cada projeto.</p>
+<h2>Dicas Avançadas</h2>
+<ul>
+    <li><strong>Aproveite o processamento multi-threaded:</strong> Para cenários de leitura intensiva, configure seu ambiente para utilizar o máximo de núcleos disponíveis.</li>
+    <li><strong>Teste a integração com serviços de armazenamento:</strong> Explore a compatibilidade com S3 para eficientizar o armazenamento e a recuperação de dados.</li>
+    <li><strong>Monitore a latência:</strong> Utilize ferramentas de monitoramento para entender o desempenho da leitura e ajuste conforme necessário.</li>
+</ul>
+<h2>Aplicação Prática</h2>
+<p>Para arquitetos e desenvolvedores, a implementação do Hardwood pode ser um divisor de águas. Aqui estão algumas ações concretas que você pode considerar:</p>
+<ul>
+    <li>Integre Hardwood em projetos que exigem processamento de grandes volumes de dados, especialmente em ambientes analíticos.</li>
+    <li>Participe da comunidade de desenvolvedores de Hardwood, contribuindo com feedback e melhorias que podem beneficiar a todos.</li>
+    <li>Explore o uso da CLI para verificar a integridade dos seus arquivos Parquet durante o ciclo de desenvolvimento.</li>
+</ul>
+<h2>Riscos e Cuidados</h2>
+<p>Como qualquer nova tecnologia, Hardwood apresenta riscos. A dependência de configurações de hardware específicas pode criar barreiras para sua adoção em ambientes de menor capacidade. Além disso, o suporte limitado a operações de escrita pode restringir sua aplicabilidade em projetos que exigem um ciclo completo de leitura e escrita. É essencial realizar testes rigorosos antes de adotar a biblioteca em produção.</p>
+<h2>Conclusão</h2>
+<p>Hardwood representa uma nova era no processamento de dados em ambientes JVM, oferecendo uma solução leve e rápida para trabalhar com arquivos Parquet. Sua abordagem modular, aliada a uma performance impressionante, coloca a biblioteca em uma posição de destaque no ecossistema de ferramentas de dados. Como profissionais de tecnologia, devemos estar atentos a essas inovações, pois elas não apenas otimizam nossos fluxos de trabalho, mas também aumentam a eficiência em projetos de grande escala. Fiquemos de olho nas próximas versões, especialmente no suporte à escrita, que promete ampliar ainda mais o potencial desta ferramenta.</p>
+<p>Resumindo, Hardwood não é apenas uma nova biblioteca; é uma promessa de transformação no cenário de processamento de dados. A adoção dessa ferramenta pode ser um passo significativo para arquitetos e desenvolvedores que buscam maximizar a eficiência em suas operações.</p>
+</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> o ponto de partida foi <a href="https://www.infoq.com/news/2026/07/hardwood-java-parquet/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Hardwood Promises High-Speed JVM Apache Parquet Processing with Zero Mandatory Dependencies</a>.</li>
+<li><strong>Data considerada:</strong> a fonte externa ou data original registrada é 03/07/2026.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Desbravando Hardwood: A Revolução do Processamento de Apache Parquet na JVM" à categoria <strong>Desenvolvimento de Software</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
+<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/news/2026/07/hardwood-java-parquet/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Hardwood Promises High-Speed JVM Apache Parquet Processing with Zero Mandatory Dependencies</a>.</p>
+</section>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/desenvolvimento-de-software/desbravando-fronteiras-a-revolucao-da-interface-generativa-com-a2ui.html">Desbravando Fronteiras: A Revolução da Interface Generativa com A2UI</a><span>Desenvolvimento de Software</span></li>
+<li><a href="/artigos/desenvolvimento-de-software/desenvolvimento-de-plataformas-da-mentalidade-de-projetos-para-a-abordagem-de-produtos.html">Desenvolvimento de Plataformas: Da Mentalidade de Projetos para a Abordagem de Produtos</a><span>Desenvolvimento de Software</span></li>
+<li><a href="/artigos/desenvolvimento-de-software/como-a-integracao-de-ia-esta-transformando-o-ciclo-de-vida-do-desenvolvimento-de-software.html">Como a Integração de IA Está Transformando o Ciclo de Vida do Desenvolvimento de Software</a><span>Desenvolvimento de Software</span></li>
+<li><a href="/artigos/desenvolvimento-de-software/descontos-que-fazem-a-diferenca-o-que-os-arquitetos-de-software-podem-aprender-com-o-prime-day.html">Descontos que Fazem a Diferença: O Que os Arquitetos de Software Podem Aprender com o Prime Day</a><span>Desenvolvimento de Software</span></li>
+</ul>
+</section>
+<p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="/sobre.html">Sobre</a> |
+    <a href="/contato.html">Contato</a> |
+    <a href="/termos.html">Termos de Uso</a> |
+    <a href="/politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+
+
+</body>
+</html>
