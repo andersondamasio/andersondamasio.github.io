@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 03 Jul 2026 21:05:02 GMT</lastBuildDate>
+<lastBuildDate>Sat, 04 Jul 2026 09:22:19 GMT</lastBuildDate>
+<item>
+<title>A Revolução da Arquitetura de Software: O Futuro com IA Agente</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-da-arquitetura-de-software-o-futuro-com-ia-agente.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-da-arquitetura-de-software-o-futuro-com-ia-agente.html</guid>
+<pubDate>Sat, 04 Jul 2026 09:22:19 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>A tecnologia está em constante evolução e, com a chegada da inteligência artificial, assistimos a uma transformação significativa no modo como arquitetamos...</description>
+</item>
 <item>
 <title>Desmistificando a Arquitetura de Dados: A Revolução do Cloudflare com Town Lake</title>
 <link>https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-arquitetura-de-dados-a-revolucao-do-cloudflare-com-town-lake.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Wed, 10 Jun 2026 22:07:53 GMT</pubDate>
 <category>Segurança</category>
 <description>Recentemente, a notícia de que o grupo de cibercriminosos ShinyHunters conseguiu invadir os servidores do Oracle PeopleSoft em mais de 100 organizações,...</description>
-</item>
-<item>
-<title>A revolução do Siri: o que a WWDC 2026 nos ensina sobre Arquitetura de Software</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-do-siri-o-que-a-wwdc-2026-nos-ensina-sobre-arquitetura-de-software.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-do-siri-o-que-a-wwdc-2026-nos-ensina-sobre-arquitetura-de-software.html</guid>
-<pubDate>Wed, 10 Jun 2026 19:50:16 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Recentemente, a Apple apresentou novidades quentes na sua WWDC 2026, e, como arquiteto de software, não pude deixar de me impressionar com as inovações que...</description>
 </item>
 </channel>
 </rss>
