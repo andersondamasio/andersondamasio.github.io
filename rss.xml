@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sat, 04 Jul 2026 17:04:05 GMT</lastBuildDate>
+<lastBuildDate>Sat, 04 Jul 2026 23:05:33 GMT</lastBuildDate>
+<item>
+<title>Aprendizado por Reforço: O Novo Horizonte da Eficiência em Agentes Inteligentes</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/aprendizado-por-reforco-o-novo-horizonte-da-eficiencia-em-agentes-inteligentes.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/aprendizado-por-reforco-o-novo-horizonte-da-eficiencia-em-agentes-inteligentes.html</guid>
+<pubDate>Sat, 04 Jul 2026 23:05:33 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Recentemente, a OpenAI apresentou o Agent RFT, uma plataforma inovadora que promete revolucionar como os agentes de software são afinados para desempenhar...</description>
+</item>
 <item>
 <title>Desbravando Hardwood: A Revolução do Processamento de Apache Parquet na JVM</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desbravando-hardwood-a-revolucao-do-processamento-de-apache-parquet-na-jvm.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Thu, 11 Jun 2026 05:34:18 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Nos últimos 20 anos, as redes sociais transformaram a forma como nos comunicamos e interagimos. No entanto, essa revolução digital trouxe à tona uma série...</description>
-</item>
-<item>
-<title>Alpine Linux: A Revolução Silenciosa do Desktop para os Aventureiros</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/alpine-linux-a-revolucao-silenciosa-do-desktop-para-os-aventureiros.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/alpine-linux-a-revolucao-silenciosa-do-desktop-para-os-aventureiros.html</guid>
-<pubDate>Thu, 11 Jun 2026 00:22:15 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Se você já se aventurou pelo mundo das distribuições Linux, provavelmente já ouviu falar do Alpine Linux. Essa distribuição, que a princípio parece um tanto...</description>
 </item>
 </channel>
 </rss>
