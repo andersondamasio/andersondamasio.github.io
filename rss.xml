@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sun, 05 Jul 2026 14:42:31 GMT</lastBuildDate>
+<lastBuildDate>Sun, 05 Jul 2026 22:00:52 GMT</lastBuildDate>
+<item>
+<title>A Dificuldade das Empresas Europeias na Adoção de Modelos de IA: O Caso Claude e a Questão da Localização dos Dados</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-dificuldade-das-empresas-europeias-na-adocao-de-modelos-de-ia-o-caso-claude-e-a-questao-da-localizacao-dos-dados.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-dificuldade-das-empresas-europeias-na-adocao-de-modelos-de-ia-o-caso-claude-e-a-questao-da-localizacao-dos-dados.html</guid>
+<pubDate>Sun, 05 Jul 2026 22:00:52 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Recentemente, a colaboração entre a Anthropic e a Microsoft trouxe à tona novos desafios para as empresas europeias que buscam adotar soluções de...</description>
+</item>
 <item>
 <title>Amazon S3 Annotations: A Revolução na Gestão de Metadados e Contexto para Armazenamento de Dados</title>
 <link>https://www.andersondamasio.com.br/artigos/cloud/amazon-s3-annotations-a-revolucao-na-gestao-de-metadados-e-contexto-para-armazenamento-de-dados.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Thu, 11 Jun 2026 18:18:13 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Quando o assunto é o mundo da tecnologia, principalmente em tempos de promoções como a Prime Day da Amazon, é fácil se perder em meio a tantas ofertas. No...</description>
-</item>
-<item>
-<title>Novas Fronteiras na Entrega: Como o Chatbot da DoorDash Pode Transformar a Experiência de Pedido</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/novas-fronteiras-na-entrega-como-o-chatbot-da-doordash-pode-transformar-a-experiencia-de-pedido.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/novas-fronteiras-na-entrega-como-o-chatbot-da-doordash-pode-transformar-a-experiencia-de-pedido.html</guid>
-<pubDate>Thu, 11 Jun 2026 14:41:12 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Recentemente, a DoorDash anunciou o lançamento do seu chatbot de IA, o “Ask DoorDash”. Essa novidade promete revolucionar a forma como fazemos pedidos de...</description>
 </item>
 </channel>
 </rss>
