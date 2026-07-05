@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sat, 04 Jul 2026 23:05:33 GMT</lastBuildDate>
+<lastBuildDate>Sun, 05 Jul 2026 07:24:48 GMT</lastBuildDate>
+<item>
+<title>Reflexões sobre a Independência: O que um Anúncio do Google Revela sobre Colaboração e Tecnologia</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/reflexoes-sobre-a-independencia-o-que-um-anuncio-do-google-revela-sobre-colaboracao-e-tecnologia.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/reflexoes-sobre-a-independencia-o-que-um-anuncio-do-google-revela-sobre-colaboracao-e-tecnologia.html</guid>
+<pubDate>Sun, 05 Jul 2026 07:24:48 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Recentemente, um comercial do Google provocou uma série de discussões ao imaginar como teria sido a redação da Declaração de Independência se os Pais...</description>
+</item>
 <item>
 <title>Aprendizado por Reforço: O Novo Horizonte da Eficiência em Agentes Inteligentes</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/aprendizado-por-reforco-o-novo-horizonte-da-eficiencia-em-agentes-inteligentes.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Thu, 11 Jun 2026 10:28:51 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Decidir qual laptop levar pra facul pode ser um desafio e tanto, né? A gente sabe que o mercado tá cheio de opções e muitas vezes o jargão técnico deixa a...</description>
-</item>
-<item>
-<title>Desafios Legais nas Redes Sociais: O Futuro da Conexão em Jogo</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/desafios-legais-nas-redes-sociais-o-futuro-da-conexao-em-jogo.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/desafios-legais-nas-redes-sociais-o-futuro-da-conexao-em-jogo.html</guid>
-<pubDate>Thu, 11 Jun 2026 05:34:18 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Nos últimos 20 anos, as redes sociais transformaram a forma como nos comunicamos e interagimos. No entanto, essa revolução digital trouxe à tona uma série...</description>
 </item>
 </channel>
 </rss>
