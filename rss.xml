@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sun, 05 Jul 2026 07:24:48 GMT</lastBuildDate>
+<lastBuildDate>Sun, 05 Jul 2026 14:42:31 GMT</lastBuildDate>
+<item>
+<title>Amazon S3 Annotations: A Revolução na Gestão de Metadados e Contexto para Armazenamento de Dados</title>
+<link>https://www.andersondamasio.com.br/artigos/cloud/amazon-s3-annotations-a-revolucao-na-gestao-de-metadados-e-contexto-para-armazenamento-de-dados.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/cloud/amazon-s3-annotations-a-revolucao-na-gestao-de-metadados-e-contexto-para-armazenamento-de-dados.html</guid>
+<pubDate>Sun, 05 Jul 2026 14:42:31 GMT</pubDate>
+<category>Cloud</category>
+<description>Recentemente, a AWS anunciou uma nova funcionalidade que promete transformar a forma como gerenciamos metadados em objetos armazenados no Amazon S3. A...</description>
+</item>
 <item>
 <title>Reflexões sobre a Independência: O que um Anúncio do Google Revela sobre Colaboração e Tecnologia</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/reflexoes-sobre-a-independencia-o-que-um-anuncio-do-google-revela-sobre-colaboracao-e-tecnologia.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Thu, 11 Jun 2026 14:41:12 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>Recentemente, a DoorDash anunciou o lançamento do seu chatbot de IA, o “Ask DoorDash”. Essa novidade promete revolucionar a forma como fazemos pedidos de...</description>
-</item>
-<item>
-<title>Como Escolher o Laptop Perfeito para a Facul: Dicas e Sacadas de um Arquiteto de Software</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/como-escolher-o-laptop-perfeito-para-a-facul-dicas-e-sacadas-de-um-arquiteto-de-software.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/como-escolher-o-laptop-perfeito-para-a-facul-dicas-e-sacadas-de-um-arquiteto-de-software.html</guid>
-<pubDate>Thu, 11 Jun 2026 10:28:51 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Decidir qual laptop levar pra facul pode ser um desafio e tanto, né? A gente sabe que o mercado tá cheio de opções e muitas vezes o jargão técnico deixa a...</description>
 </item>
 </channel>
 </rss>

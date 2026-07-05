@@ -72053,5 +72053,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Amazon S3 Annotations: A Revolução na Gestão de Metadados e Contexto para Armazenamento de Dados",
+    "noticiaOriginal": "AWS Introduces Amazon S3 Annotations",
+    "url": "artigos/cloud/amazon-s3-annotations-a-revolucao-na-gestao-de-metadados-e-contexto-para-armazenamento-de-dados.html",
+    "data": "2026-07-05T14:42:31.238Z",
+    "dataFonte": "2026-07-05T08:55:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/07/aws-s3-annotations/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 106,
+      "sinalEditorial": 68,
+      "palavrasFonte": 587,
+      "palavrasArtigo": 913,
+      "secoesArtigo": 8,
+      "similaridadeFonte": 0
+    }
   }
 ]
