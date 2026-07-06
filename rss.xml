@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 06 Jul 2026 05:10:39 GMT</lastBuildDate>
+<lastBuildDate>Mon, 06 Jul 2026 17:42:20 GMT</lastBuildDate>
+<item>
+<title>Desafiando a Abstração: A Nova Era da Segurança em Nuvem na Era da IA</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/desafiando-a-abstracao-a-nova-era-da-seguranca-em-nuvem-na-era-da-ia.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/desafiando-a-abstracao-a-nova-era-da-seguranca-em-nuvem-na-era-da-ia.html</guid>
+<pubDate>Mon, 06 Jul 2026 17:42:20 GMT</pubDate>
+<category>Segurança</category>
+<description>Na interseção entre inovação e segurança, emerge um conceito provocador que promete transformar a forma como construímos e protegemos sistemas na nuvem....</description>
+</item>
 <item>
 <title>O Ano das Unicórnios: Como a Revolução da IA Está Transformando o Cenário das Startups</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/o-ano-das-unicornios-como-a-revolucao-da-ia-esta-transformando-o-cenario-das-startups.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Thu, 11 Jun 2026 23:27:14 GMT</pubDate>
 <category>Tecnologia</category>
 <description>A história das bebidas no Brasil sempre foi marcada por tradições, mas parece que uma nova onda está prestes a surgir. Recentemente, a Índia descobriu o...</description>
-</item>
-<item>
-<title>Transformando ChatGPT: O Futuro dos Agentes Inteligentes</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/transformando-chatgpt-o-futuro-dos-agentes-inteligentes.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/transformando-chatgpt-o-futuro-dos-agentes-inteligentes.html</guid>
-<pubDate>Thu, 11 Jun 2026 21:26:30 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Nos últimos tempos, a inteligência artificial tem ganhado um espaço cada vez maior nas nossas vidas. E, com a recente transformação do ChatGPT, conduzida...</description>
 </item>
 </channel>
 </rss>
