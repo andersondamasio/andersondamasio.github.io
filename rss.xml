@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 06 Jul 2026 17:42:20 GMT</lastBuildDate>
+<lastBuildDate>Tue, 07 Jul 2026 10:54:24 GMT</lastBuildDate>
+<item>
+<title>Desenvolvendo Sistemas de IA Confiáveis: O Equilíbrio Entre Ferramentas e Agentes de Descoberta</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/desenvolvendo-sistemas-de-ia-confiaveis-o-equilibrio-entre-ferramentas-e-agentes-de-descoberta.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/desenvolvendo-sistemas-de-ia-confiaveis-o-equilibrio-entre-ferramentas-e-agentes-de-descoberta.html</guid>
+<pubDate>Tue, 07 Jul 2026 10:54:24 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Nos últimos tempos, a inteligência artificial tem se tornado um tema central nas discussões sobre tecnologia e inovação. A apresentação de Aaron Erickson,...</description>
+</item>
 <item>
 <title>Desafiando a Abstração: A Nova Era da Segurança em Nuvem na Era da IA</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/desafiando-a-abstracao-a-nova-era-da-seguranca-em-nuvem-na-era-da-ia.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 12 Jun 2026 04:01:06 GMT</pubDate>
 <category>Robótica</category>
 <description>Nos últimos tempos, temos visto um crescimento incrível de startups focadas em robótica, especialmente em um cenário onde a mão de obra escassa pressiona a...</description>
-</item>
-<item>
-<title>A revolução do &quot;ouro azul&quot;: como a agave pode transformar o mercado de bebidas no Brasil</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-revolucao-do-ouro-azul-como-a-agave-pode-transformar-o-mercado-de-bebidas-no-brasil.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-revolucao-do-ouro-azul-como-a-agave-pode-transformar-o-mercado-de-bebidas-no-brasil.html</guid>
-<pubDate>Thu, 11 Jun 2026 23:27:14 GMT</pubDate>
-<category>Tecnologia</category>
-<description>A história das bebidas no Brasil sempre foi marcada por tradições, mas parece que uma nova onda está prestes a surgir. Recentemente, a Índia descobriu o...</description>
 </item>
 </channel>
 </rss>
