@@ -72143,5 +72143,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0.0057
     }
+  },
+  {
+    "titulo": "Migrando do Tradicional para o Inovador: O Caso Momentic e a Revolução do ClickHouse",
+    "noticiaOriginal": "Switching from PostgreSQL to ClickHouse for Improved Performance and Scalability",
+    "url": "artigos/banco-de-dados/migrando-do-tradicional-para-o-inovador-o-caso-momentic-e-a-revolucao-do-clickhouse.html",
+    "data": "2026-07-07T21:23:16.053Z",
+    "dataFonte": "2026-07-07T20:00:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/07/momentic-postgres-clickhouse/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 136,
+      "sinalEditorial": 92,
+      "palavrasFonte": 608,
+      "palavrasArtigo": 993,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]

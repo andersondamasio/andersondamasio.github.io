@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Tue, 07 Jul 2026 10:54:24 GMT</lastBuildDate>
+<lastBuildDate>Tue, 07 Jul 2026 21:23:16 GMT</lastBuildDate>
+<item>
+<title>Migrando do Tradicional para o Inovador: O Caso Momentic e a Revolução do ClickHouse</title>
+<link>https://www.andersondamasio.com.br/artigos/banco-de-dados/migrando-do-tradicional-para-o-inovador-o-caso-momentic-e-a-revolucao-do-clickhouse.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/banco-de-dados/migrando-do-tradicional-para-o-inovador-o-caso-momentic-e-a-revolucao-do-clickhouse.html</guid>
+<pubDate>Tue, 07 Jul 2026 21:23:16 GMT</pubDate>
+<category>Banco de Dados</category>
+<description>Recentemente, a transformação digital tem sido um tema recorrente nas discussões da comunidade de tecnologia. Cada vez mais, empresas buscam não apenas...</description>
+</item>
 <item>
 <title>Desenvolvendo Sistemas de IA Confiáveis: O Equilíbrio Entre Ferramentas e Agentes de Descoberta</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/desenvolvendo-sistemas-de-ia-confiaveis-o-equilibrio-entre-ferramentas-e-agentes-de-descoberta.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 12 Jun 2026 08:31:49 GMT</pubDate>
 <category>Programação</category>
 <description>Nos últimos tempos, o mundo da tecnoligia tem visto um aumento no uso de inteligência artificial, especialmente em projetos de código aberto. Recentemente,...</description>
-</item>
-<item>
-<title>A revolução dos robôs versáteis: como a Arquitetura de Software pode moldar o futuro da automação</title>
-<link>https://www.andersondamasio.com.br/artigos/robotica/a-revolucao-dos-robos-versateis-como-a-arquitetura-de-software-pode-moldar-o-futuro-da-automacao.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/robotica/a-revolucao-dos-robos-versateis-como-a-arquitetura-de-software-pode-moldar-o-futuro-da-automacao.html</guid>
-<pubDate>Fri, 12 Jun 2026 04:01:06 GMT</pubDate>
-<category>Robótica</category>
-<description>Nos últimos tempos, temos visto um crescimento incrível de startups focadas em robótica, especialmente em um cenário onde a mão de obra escassa pressiona a...</description>
 </item>
 </channel>
 </rss>
