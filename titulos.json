@@ -72179,5 +72179,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Desmistificando a Configuração Dinâmica: Inspirações da Arquitetura do Sitar-Agent do Airbnb",
+    "noticiaOriginal": "Airbnb Shares Architecture Behind Sitar-Agent Dynamic Configuration Sidecar for Kubernetes Services",
+    "url": "artigos/arquitetura/desmistificando-a-configuracao-dinamica-inspiracoes-da-arquitetura-do-sitar-agent-do-airbnb.html",
+    "data": "2026-07-08T15:21:13.395Z",
+    "dataFonte": "2026-07-08T14:25:00.000Z",
+    "categoria": "Arquitetura",
+    "urlFonte": "https://www.infoq.com/news/2026/07/sitar-agent-sidecar-config/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 146,
+      "sinalEditorial": 102,
+      "palavrasFonte": 584,
+      "palavrasArtigo": 859,
+      "secoesArtigo": 8,
+      "similaridadeFonte": 0
+    }
   }
 ]

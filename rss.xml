@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Wed, 08 Jul 2026 04:13:49 GMT</lastBuildDate>
+<lastBuildDate>Wed, 08 Jul 2026 15:21:13 GMT</lastBuildDate>
+<item>
+<title>Desmistificando a Configuração Dinâmica: Inspirações da Arquitetura do Sitar-Agent do Airbnb</title>
+<link>https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-configuracao-dinamica-inspiracoes-da-arquitetura-do-sitar-agent-do-airbnb.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-configuracao-dinamica-inspiracoes-da-arquitetura-do-sitar-agent-do-airbnb.html</guid>
+<pubDate>Wed, 08 Jul 2026 15:21:13 GMT</pubDate>
+<category>Arquitetura</category>
+<description>No dinâmico mundo da tecnologia, onde a escalabilidade e a resiliência são essenciais, a forma como gerenciamos e aplicamos configurações em sistemas...</description>
+</item>
 <item>
 <title>Segurança e Privacidade em IA: O Novo Desafio dos Arquitetos de Software</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/seguranca-e-privacidade-em-ia-o-novo-desafio-dos-arquitetos-de-software.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 12 Jun 2026 16:23:20 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>A implementação de agentes de Inteligência Artificial nas empresas é um desafio que pode se tornar um verdadeiro campo de batalha. Recentemente, li uma...</description>
-</item>
-<item>
-<title>A Nova Era dos Agentes de IA: Como a Integração com OneLake Pode Revolucionar os Negócios</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-nova-era-dos-agentes-de-ia-como-a-integracao-com-onelake-pode-revolucionar-os-negocios.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-nova-era-dos-agentes-de-ia-como-a-integracao-com-onelake-pode-revolucionar-os-negocios.html</guid>
-<pubDate>Fri, 12 Jun 2026 12:25:22 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Nos últimos tempos, a integração de tecnologias tem se mostrado um caminho promissor para a transformação digital das empresas. Um exemplo recente disso é a...</description>
 </item>
 </channel>
 </rss>
