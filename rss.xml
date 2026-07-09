@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 09 Jul 2026 13:49:39 GMT</lastBuildDate>
+<lastBuildDate>Thu, 09 Jul 2026 20:46:31 GMT</lastBuildDate>
+<item>
+<title>Inteligência Artificial e Segurança: O Novo Jogo do Gato e Rato no Windows</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/inteligencia-artificial-e-seguranca-o-novo-jogo-do-gato-e-rato-no-windows.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/inteligencia-artificial-e-seguranca-o-novo-jogo-do-gato-e-rato-no-windows.html</guid>
+<pubDate>Thu, 09 Jul 2026 20:46:31 GMT</pubDate>
+<category>Segurança</category>
+<description>Recentemente, a Microsoft anunciou uma estratégia ousada que combina inteligência artificial com a segurança do Windows, um movimento que promete mudar o...</description>
+</item>
 <item>
 <title>Desvendando Crashes: Lições de Depuração e a Engenharia de Dados</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desvendando-crashes-licoes-de-depuracao-e-a-engenharia-de-dados.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 12 Jun 2026 23:22:48 GMT</pubDate>
 <category>Tecnologia</category>
 <description>A recente IPO da SpaceX não só capturou a atenção do mundo financeiro, mas também nos traz lições valiosas sobre escalabilidade e inovação, temas...</description>
-</item>
-<item>
-<title>A tempestade perfeita da ciência de dados: como o caos pode impulsionar a inovação</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-tempestade-perfeita-da-ciencia-de-dados-como-o-caos-pode-impulsionar-a-inovacao.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-tempestade-perfeita-da-ciencia-de-dados-como-o-caos-pode-impulsionar-a-inovacao.html</guid>
-<pubDate>Fri, 12 Jun 2026 21:49:49 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Recentemente, um incidente um tanto inusitado na Meta trouxe à tona a tensão que permeia as equipes de inteligência artificial dentro da empresa. A...</description>
 </item>
 </channel>
 </rss>
