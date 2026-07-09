@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Wed, 08 Jul 2026 15:21:13 GMT</lastBuildDate>
+<lastBuildDate>Thu, 09 Jul 2026 02:54:30 GMT</lastBuildDate>
+<item>
+<title>Desbravando o Futuro do Código: A Era dos Modelos Locais e Seus Desafios</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desbravando-o-futuro-do-codigo-a-era-dos-modelos-locais-e-seus-desafios.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desbravando-o-futuro-do-codigo-a-era-dos-modelos-locais-e-seus-desafios.html</guid>
+<pubDate>Thu, 09 Jul 2026 02:54:30 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>Nos últimos meses, uma nova onda de inovação tem se espalhado pelo mundo do desenvolvimento de software: o uso de modelos de inteligência artificial rodando...</description>
+</item>
 <item>
 <title>Desmistificando a Configuração Dinâmica: Inspirações da Arquitetura do Sitar-Agent do Airbnb</title>
 <link>https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-configuracao-dinamica-inspiracoes-da-arquitetura-do-sitar-agent-do-airbnb.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 12 Jun 2026 19:10:49 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Você já imaginou como seria ter a interface do seu Android parecida com a do Windows 11? Pois é, essa é a proposta do HyperDroid, um launcher que promete...</description>
-</item>
-<item>
-<title>A chave do sucesso com agentes de IA: lições práticas para não fracassar</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-chave-do-sucesso-com-agentes-de-ia-licoes-praticas-para-nao-fracassar.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-chave-do-sucesso-com-agentes-de-ia-licoes-praticas-para-nao-fracassar.html</guid>
-<pubDate>Fri, 12 Jun 2026 16:23:20 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>A implementação de agentes de Inteligência Artificial nas empresas é um desafio que pode se tornar um verdadeiro campo de batalha. Recentemente, li uma...</description>
 </item>
 </channel>
 </rss>

@@ -72197,5 +72197,23 @@
       "secoesArtigo": 8,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Desbravando o Futuro do Código: A Era dos Modelos Locais e Seus Desafios",
+    "noticiaOriginal": "Experiences with local models for coding",
+    "url": "artigos/desenvolvimento-de-software/desbravando-o-futuro-do-codigo-a-era-dos-modelos-locais-e-seus-desafios.html",
+    "data": "2026-07-09T02:54:30.345Z",
+    "dataFonte": "2026-07-08T11:57:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://martinfowler.com/articles/exploring-gen-ai/local-models-for-coding-experiences.html",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 104,
+      "sinalEditorial": 74,
+      "palavrasFonte": 2349,
+      "palavrasArtigo": 891,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]
