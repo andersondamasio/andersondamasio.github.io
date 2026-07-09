@@ -72215,5 +72215,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Desvendando Crashes: Lições de Depuração e a Engenharia de Dados",
+    "noticiaOriginal": "OpenAI Fixes 18-Year-Old GNU libunwind Bug by Treating Crash Debugging Like Epidemiology",
+    "url": "artigos/desenvolvimento-de-software/desvendando-crashes-licoes-de-depuracao-e-a-engenharia-de-dados.html",
+    "data": "2026-07-09T13:49:39.200Z",
+    "dataFonte": "2026-07-09T10:15:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://www.infoq.com/news/2026/07/openai-libunwind-core-dumps/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 128,
+      "sinalEditorial": 90,
+      "palavrasFonte": 785,
+      "palavrasArtigo": 912,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]

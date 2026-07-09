@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 09 Jul 2026 02:54:30 GMT</lastBuildDate>
+<lastBuildDate>Thu, 09 Jul 2026 13:49:39 GMT</lastBuildDate>
+<item>
+<title>Desvendando Crashes: Lições de Depuração e a Engenharia de Dados</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desvendando-crashes-licoes-de-depuracao-e-a-engenharia-de-dados.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desvendando-crashes-licoes-de-depuracao-e-a-engenharia-de-dados.html</guid>
+<pubDate>Thu, 09 Jul 2026 13:49:39 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>Recentemente, a equipe da OpenAI fez uma descoberta surpreendente ao lidar com falhas misteriosas no Rockset, um serviço de infraestrutura de dados em C++...</description>
+</item>
 <item>
 <title>Desbravando o Futuro do Código: A Era dos Modelos Locais e Seus Desafios</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desbravando-o-futuro-do-codigo-a-era-dos-modelos-locais-e-seus-desafios.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 12 Jun 2026 21:49:49 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Recentemente, um incidente um tanto inusitado na Meta trouxe à tona a tensão que permeia as equipes de inteligência artificial dentro da empresa. A...</description>
-</item>
-<item>
-<title>Transforme Seu Android em um Desktop com HyperDroid: A Revolução da Interface</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/transforme-seu-android-em-um-desktop-com-hyperdroid-a-revolucao-da-interface.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/transforme-seu-android-em-um-desktop-com-hyperdroid-a-revolucao-da-interface.html</guid>
-<pubDate>Fri, 12 Jun 2026 19:10:49 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Você já imaginou como seria ter a interface do seu Android parecida com a do Windows 11? Pois é, essa é a proposta do HyperDroid, um launcher que promete...</description>
 </item>
 </channel>
 </rss>
