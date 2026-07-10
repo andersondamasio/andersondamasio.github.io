@@ -72251,5 +72251,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "AlloyDB: O Futuro da Integração entre Banco de Dados e Modelos de Linguagem",
+    "noticiaOriginal": "AlloyDB Ships Proxy Models That Replace LLM Calls with Local Inference inside the Database",
+    "url": "artigos/banco-de-dados/alloydb-o-futuro-da-integracao-entre-banco-de-dados-e-modelos-de-linguagem.html",
+    "data": "2026-07-10T04:51:22.916Z",
+    "dataFonte": "2026-07-09T08:00:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/07/alloydb-ai-proxy-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 98,
+      "sinalEditorial": 68,
+      "palavrasFonte": 833,
+      "palavrasArtigo": 900,
+      "secoesArtigo": 8,
+      "similaridadeFonte": 0
+    }
   }
 ]

@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 09 Jul 2026 20:46:31 GMT</lastBuildDate>
+<lastBuildDate>Fri, 10 Jul 2026 04:51:22 GMT</lastBuildDate>
+<item>
+<title>AlloyDB: O Futuro da Integração entre Banco de Dados e Modelos de Linguagem</title>
+<link>https://www.andersondamasio.com.br/artigos/banco-de-dados/alloydb-o-futuro-da-integracao-entre-banco-de-dados-e-modelos-de-linguagem.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/banco-de-dados/alloydb-o-futuro-da-integracao-entre-banco-de-dados-e-modelos-de-linguagem.html</guid>
+<pubDate>Fri, 10 Jul 2026 04:51:22 GMT</pubDate>
+<category>Banco de Dados</category>
+<description>Recentemente, o Google lançou uma novidade significativa no mundo dos bancos de dados: o AlloyDB, agora com funções de Inteligência Artificial (IA) que...</description>
+</item>
 <item>
 <title>Inteligência Artificial e Segurança: O Novo Jogo do Gato e Rato no Windows</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/inteligencia-artificial-e-seguranca-o-novo-jogo-do-gato-e-rato-no-windows.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sat, 13 Jun 2026 03:45:18 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>Recentemente, a Google anunciou uma novidade que promete transformar a forma como interagimos com a web. O WebMCP, que está entrando em fase de testes no...</description>
-</item>
-<item>
-<title>O que a IPO da SpaceX ensina sobre escalabilidade em sistemas</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/o-que-a-ipo-da-spacex-ensina-sobre-escalabilidade-em-sistemas.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/o-que-a-ipo-da-spacex-ensina-sobre-escalabilidade-em-sistemas.html</guid>
-<pubDate>Fri, 12 Jun 2026 23:22:48 GMT</pubDate>
-<category>Tecnologia</category>
-<description>A recente IPO da SpaceX não só capturou a atenção do mundo financeiro, mas também nos traz lições valiosas sobre escalabilidade e inovação, temas...</description>
 </item>
 </channel>
 </rss>
