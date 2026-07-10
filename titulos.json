@@ -72269,5 +72269,23 @@
       "secoesArtigo": 8,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Transformação Ágil: A Revolução do Datadog com AI e Testes na Migração de Sistemas",
+    "noticiaOriginal": "How Datadog Used Claude and Cursor for Test-Driven Production Migration",
+    "url": "artigos/arquitetura/transformacao-agil-a-revolucao-do-datadog-com-ai-e-testes-na-migracao-de-sistemas.html",
+    "data": "2026-07-10T11:51:20.282Z",
+    "dataFonte": "2026-07-10T08:00:00.000Z",
+    "categoria": "Arquitetura",
+    "urlFonte": "https://www.infoq.com/news/2026/07/datadog-ai-production-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 104,
+      "sinalEditorial": 66,
+      "palavrasFonte": 712,
+      "palavrasArtigo": 934,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]

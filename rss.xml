@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 10 Jul 2026 04:51:22 GMT</lastBuildDate>
+<lastBuildDate>Fri, 10 Jul 2026 11:51:20 GMT</lastBuildDate>
+<item>
+<title>Transformação Ágil: A Revolução do Datadog com AI e Testes na Migração de Sistemas</title>
+<link>https://www.andersondamasio.com.br/artigos/arquitetura/transformacao-agil-a-revolucao-do-datadog-com-ai-e-testes-na-migracao-de-sistemas.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/arquitetura/transformacao-agil-a-revolucao-do-datadog-com-ai-e-testes-na-migracao-de-sistemas.html</guid>
+<pubDate>Fri, 10 Jul 2026 11:51:20 GMT</pubDate>
+<category>Arquitetura</category>
+<description>A tecnologia avança a passos largos, e o mundo da Arquitetura de Software não fica para trás. Recentemente, um artigo escrito pelo engenheiro da Datadog,...</description>
+</item>
 <item>
 <title>AlloyDB: O Futuro da Integração entre Banco de Dados e Modelos de Linguagem</title>
 <link>https://www.andersondamasio.com.br/artigos/banco-de-dados/alloydb-o-futuro-da-integracao-entre-banco-de-dados-e-modelos-de-linguagem.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sat, 13 Jun 2026 07:52:48 GMT</pubDate>
 <category>Cloud</category>
 <description>A tecnologia nunca para e, quando achamos que estamos acompanhando tudo, vem uma novidade que nos faz repensar nosso jeito de trabalhar. Recentemente, a AWS...</description>
-</item>
-<item>
-<title>WebMCP: A Nova Fronteira para Ações de IA na Web</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/webmcp-a-nova-fronteira-para-acoes-de-ia-na-web.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/webmcp-a-nova-fronteira-para-acoes-de-ia-na-web.html</guid>
-<pubDate>Sat, 13 Jun 2026 03:45:18 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Recentemente, a Google anunciou uma novidade que promete transformar a forma como interagimos com a web. O WebMCP, que está entrando em fase de testes no...</description>
 </item>
 </channel>
 </rss>
