@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sat, 11 Jul 2026 05:40:35 GMT</lastBuildDate>
+<lastBuildDate>Sat, 11 Jul 2026 15:55:19 GMT</lastBuildDate>
+<item>
+<title>Desmistificando a Engenharia do Caos em Clusters de GPU: O Futuro da Infraestrutura de IA</title>
+<link>https://www.andersondamasio.com.br/artigos/tecnologia/desmistificando-a-engenharia-do-caos-em-clusters-de-gpu-o-futuro-da-infraestrutura-de-ia.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/desmistificando-a-engenharia-do-caos-em-clusters-de-gpu-o-futuro-da-infraestrutura-de-ia.html</guid>
+<pubDate>Sat, 11 Jul 2026 15:55:19 GMT</pubDate>
+<category>Tecnologia</category>
+<description>Nos últimos anos, a infraestrutura de inteligência artificial (IA) tem avançado a passos largos, impulsionada pela necessidade de processar enormes volumes...</description>
+</item>
 <item>
 <title>Construindo Resiliência: Lições da Crise de Segurança da CISA</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/construindo-resiliencia-licoes-da-crise-de-seguranca-da-cisa.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sat, 13 Jun 2026 15:06:55 GMT</pubDate>
 <category>Segurança</category>
 <description>No mundo atual, a facilidade de acessar informações sobre nossa saúde e genética é inegável. Os testes de DNA e saúde em casa estão bombando, oferecendo...</description>
-</item>
-<item>
-<title>A nova era dos rastreadores de saúde: invisibilidade e integração</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-era-dos-rastreadores-de-saude-invisibilidade-e-integracao.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-era-dos-rastreadores-de-saude-invisibilidade-e-integracao.html</guid>
-<pubDate>Sat, 13 Jun 2026 12:31:26 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Nos últimos tempos, temos visto uma verdadeira revolução no campo dos dispositivos de rastreamento de saúde. Longe de serem meros acessórios chamativos,...</description>
 </item>
 </channel>
 </rss>

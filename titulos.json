@@ -72323,5 +72323,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Desmistificando a Engenharia do Caos em Clusters de GPU: O Futuro da Infraestrutura de IA",
+    "noticiaOriginal": "Presentation: Chaos Engineering GPU Clusters",
+    "url": "artigos/tecnologia/desmistificando-a-engenharia-do-caos-em-clusters-de-gpu-o-futuro-da-infraestrutura-de-ia.html",
+    "data": "2026-07-11T15:55:19.296Z",
+    "dataFonte": "2026-07-10T13:42:00.000Z",
+    "categoria": "Tecnologia",
+    "urlFonte": "https://www.infoq.com/presentations/chaos-engineering-gpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 88,
+      "sinalEditorial": 66,
+      "palavrasFonte": 7617,
+      "palavrasArtigo": 988,
+      "secoesArtigo": 8,
+      "similaridadeFonte": 0.0018
+    }
   }
 ]
