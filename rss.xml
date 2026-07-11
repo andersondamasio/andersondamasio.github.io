@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 10 Jul 2026 18:22:17 GMT</lastBuildDate>
+<lastBuildDate>Sat, 11 Jul 2026 05:40:35 GMT</lastBuildDate>
+<item>
+<title>Construindo Resiliência: Lições da Crise de Segurança da CISA</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/construindo-resiliencia-licoes-da-crise-de-seguranca-da-cisa.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/construindo-resiliencia-licoes-da-crise-de-seguranca-da-cisa.html</guid>
+<pubDate>Sat, 11 Jul 2026 05:40:35 GMT</pubDate>
+<category>Segurança</category>
+<description>A recente crise de segurança envolvendo a agência de cibersegurança dos EUA, CISA, nos faz refletir sobre como a falta de planejamento pode custar caro em...</description>
+</item>
 <item>
 <title>A Revolução do Teste: Como a Inteligência Artificial Está Transformando a Automação de Testes de UI</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sat, 13 Jun 2026 12:31:26 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Nos últimos tempos, temos visto uma verdadeira revolução no campo dos dispositivos de rastreamento de saúde. Longe de serem meros acessórios chamativos,...</description>
-</item>
-<item>
-<title>Manter Conectividade: A Importância das Estações de Energia em Casa</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/manter-conectividade-a-importancia-das-estacoes-de-energia-em-casa.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/manter-conectividade-a-importancia-das-estacoes-de-energia-em-casa.html</guid>
-<pubDate>Sat, 13 Jun 2026 10:34:30 GMT</pubDate>
-<category>Tecnologia</category>
-<description>A conectividade é uma necessidade quase vital nos dias de hoje, não é mesmo? Enquanto muitos de nós estamos sempre ligados, seja para trabalhar, estudar ou...</description>
 </item>
 </channel>
 </rss>

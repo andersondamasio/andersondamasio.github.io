@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Construindo Resiliência: Lições da Crise de Segurança da CISA</title>
+<meta name="description" content="A recente crise de segurança envolvendo a agência de cibersegurança dos EUA, CISA, nos faz refletir sobre como a falta de planejamento pode custar caro em...">
+<meta name="author" content="Anderson Damasio">
+<meta name="keywords" content="Segurança, arquitetura de software, desenvolvimento de software, cisa, incidente, resposta, incidentes, crise, licoes, resiliencia">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.andersondamasio.com.br/artigos/seguranca/construindo-resiliencia-licoes-da-crise-de-seguranca-da-cisa.html">
+<link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Anderson Damasio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Construindo Resiliência: Lições da Crise de Segurança da CISA">
+<meta property="og:description" content="A recente crise de segurança envolvendo a agência de cibersegurança dos EUA, CISA, nos faz refletir sobre como a falta de planejamento pode custar caro em...">
+<meta property="og:url" content="https://www.andersondamasio.com.br/artigos/seguranca/construindo-resiliencia-licoes-da-crise-de-seguranca-da-cisa.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
+<meta property="article:published_time" content="2026-07-11T05:40:35.574Z">
+<meta property="article:modified_time" content="2026-07-11T05:40:35.574Z">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@andersondamasio">
+<meta name="twitter:title" content="Construindo Resiliência: Lições da Crise de Segurança da CISA">
+<meta name="twitter:description" content="A recente crise de segurança envolvendo a agência de cibersegurança dos EUA, CISA, nos faz refletir sobre como a falta de planejamento pode custar caro em...">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
+<meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Construindo Resiliência: Lições da Crise de Segurança da CISA",
+  "description": "A recente crise de segurança envolvendo a agência de cibersegurança dos EUA, CISA, nos faz refletir sobre como a falta de planejamento pode custar caro em...",
+  "image": [
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
+  ],
+  "url": "https://www.andersondamasio.com.br/artigos/seguranca/construindo-resiliencia-licoes-da-crise-de-seguranca-da-cisa.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.andersondamasio.com.br/artigos/seguranca/construindo-resiliencia-licoes-da-crise-de-seguranca-da-cisa.html"
+  },
+  "datePublished": "2026-07-11T05:40:35.574Z",
+  "dateModified": "2026-07-11T05:40:35.574Z",
+  "articleSection": "Segurança",
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "Segurança",
+    "arquitetura de software",
+    "desenvolvimento de software",
+    "cisa",
+    "incidente",
+    "resposta",
+    "incidentes",
+    "crise",
+    "licoes",
+    "resiliencia"
+  ],
+  "wordCount": 894,
+  "about": {
+    "@type": "Thing",
+    "name": "Segurança"
+  },
+  "mentions": [
+    {
+      "@type": "Thing",
+      "name": "arquitetura de software"
+    },
+    {
+      "@type": "Thing",
+      "name": "desenvolvimento de software"
+    },
+    {
+      "@type": "Thing",
+      "name": "cisa"
+    },
+    {
+      "@type": "Thing",
+      "name": "incidente"
+    },
+    {
+      "@type": "Thing",
+      "name": "resposta"
+    },
+    {
+      "@type": "Thing",
+      "name": "incidentes"
+    }
+  ],
+  "isAccessibleForFree": true,
+  "copyrightYear": 2026,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "US cybersecurity agency CISA had to build its incident playbook during the incident, agency reveals",
+    "url": "https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/"
+  },
+  "citation": "https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/",
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
+  },
+  "copyrightHolder": {
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.andersondamasio.com.br/#organization",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
+      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://www.andersondamasio.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://www.andersondamasio.com.br/artigos/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Segurança",
+      "item": "https://www.andersondamasio.com.br/artigos/seguranca.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Construindo Resiliência: Lições da Crise de Segurança da CISA",
+      "item": "https://www.andersondamasio.com.br/artigos/seguranca/construindo-resiliencia-licoes-da-crise-de-seguranca-da-cisa.html"
+    }
+  ]
+}
+</script>
+<link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
+<style>
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --main-bg: #fff;
+  --link: #0a66c2;
+  --link-hover: #084e91;
+  --footer: #666;
+  --meta: #777;
+  --pre-bg: #272822;
+  --pre-color: #f8f8f2;
+  --copy-bg: #0a66c2;
+  --copy-color: #fff;
+  --copy-bg-hover: #084e91;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body.dark-theme {
+  --bg: #181b1f;
+  --text: #ddd;
+  --main-bg: #23262d;
+  --link: #67aaff;
+  --link-hover: #f1c40f;
+  --footer: #b3b3b3;
+  --meta: #b3b3b3;
+  --pre-bg: #22262b;
+  --pre-color: #e0e7ef;
+  --copy-bg: #67aaff;
+  --copy-color: #11131a;
+  --copy-bg-hover: #f1c40f;
+  --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+h1 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--link); }
+a { color: var(--link); text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: var(--link-hover);}
+.article-meta { color: var(--meta); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0.35rem 0 0; }
+.article-source a { font-weight: 700; }
+.article-source-note { font-size: 0.9rem; }
+pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: var(--copy-bg-hover); color: var(--main-bg); }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: var(--link); font-size: 1.05rem; border: 1px solid var(--link); padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: var(--link); color: var(--main-bg); }
+main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+</head>
+<body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../../artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
+    <a href="../../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+  </nav>
+</header>
+<main>
+<h1>Construindo Resiliência: Lições da Crise de Segurança da CISA</h1>
+
+<p class="article-meta">Publicado em: 11/07/2026 02:40</p>
+
+<div class="article-body"><p>A recente crise de segurança envolvendo a agência de cibersegurança dos EUA, CISA, nos faz refletir sobre como a falta de planejamento pode custar caro em momentos críticos. Em um mundo cada vez mais conectado e vulnerável, a preparação é a chave para evitar desastres maiores. Neste artigo, vamos explorar as lições que podemos tirar desse incidente e como arquitetos de software e líderes técnicos podem se preparar adequadamente para incidentes de segurança.</p>
+<h2>Resumo Executivo</h2>
+<p>Em maio de 2026, a CISA revelou que não possuía um plano de resposta preparado para um incidente crítico, onde credenciais sensíveis foram expostas publicamente. O evento destacou a necessidade urgente de ter playbooks de incidentes bem definidos e a importância de uma comunicação clara com pesquisadores de segurança. Embora a CISA tenha contornado a situação sem exposição de dados críticos, a falta de um plano estruturado atrasou a resposta inicial e poderia ter levado a consequências mais sérias.</p>
+<h2>Fato Reportado</h2>
+<p>O incidente começou quando um pesquisador de segurança alertou um jornalista sobre senhas expostas em um repositório do GitHub, que pertenciam a um contratado da CISA. A agência, responsável por defender redes federais e proteger a infraestrutura crítica, teve que desenvolver um playbook de resposta durante o próprio incidente, o que demonstra uma falta de preparação para situações emergenciais. Apesar de não haver dados de clientes expostos, a situação ilustra a fragilidade de processos e a necessidade de revisão nas práticas de segurança.</p>
+<h2>Interpretação Técnica</h2>
+<p>Na prática, construir um playbook eficaz é essencial. Ele deve incluir não apenas os passos para responder a incidentes, mas também um canal de comunicação claro para que pesquisadores e outras partes interessadas possam reportar vulnerabilidades. A ausência de um plano prévio não só atrasou a resposta, como também expôs a CISA a críticas sobre sua eficácia e prontidão.</p>
+<p>Além disso, a situação revela um ponto crítico: a comunicação com a comunidade de segurança deve ser um pilar central na estratégia de cibersegurança de qualquer organização. Isso envolve não apenas a criação de canais de comunicação, mas também o estabelecimento de parcerias e confiança com a comunidade.</p>
+<h2>Limites do que ainda não dá para afirmar</h2>
+<p>Embora a CISA tenha tomado medidas corretivas, como a revogação e substituição das credenciais expostas, ainda não está claro quanto tempo a falta de um playbook atrasou a resposta inicial. Também não se sabe quais foram as repercussões a longo prazo para a organização e para as entidades que dependem dos serviços da CISA. Assim, é fundamental continuar monitorando o impacto desse incidente e as ações tomadas para prevenir ocorrências semelhantes no futuro.</p>
+<h2>Explicação Técnica</h2>
+<p>Um playbook de incidentes é um conjunto de diretrizes e procedimentos que uma organização deve seguir em resposta a um incidente de segurança. Ele deve ser abrangente, cobrindo diferentes tipos de incidentes e suas respectivas respostas. Aqui estão alguns componentes essenciais:</p>
+<ul>
+    <li><strong>Identificação do Incidente:</strong> Como detectar e classificar rapidamente um incidente.</li>
+    <li><strong>Análise de Impacto:</strong> Avaliar a gravidade do incidente e quais sistemas ou dados foram afetados.</li>
+    <li><strong>Resposta:</strong> Ações imediatas que devem ser tomadas, como isolamento de sistemas afetados e comunicação com stakeholders.</li>
+    <li><strong>Recuperação:</strong> Estratégias para restaurar sistemas e dados afetados e validar a integridade dos mesmos.</li>
+    <li><strong>Revisão Pós-Incidente:</strong> Análise do que funcionou e do que não funcionou durante a resposta, para melhorar processos futuros.</li>
+</ul>
+<h2>Dicas Avançadas</h2>
+<p>Aqui estão algumas dicas práticas para arquitetos de software e líderes técnicos que desejam aprimorar a resiliência de suas organizações:</p>
+<ul>
+    <li><strong>Simulações de Incidentes:</strong> Realize exercícios de simulação de incidentes regulares para testar a eficácia do seu playbook e a capacidade de resposta da equipe.</li>
+    <li><strong>Feedback Contínuo:</strong> Estabeleça um ciclo de feedback contínuo com a equipe de segurança da informação e a comunidade para aprimorar os processos.</li>
+    <li><strong>Documentação Clara:</strong> Mantenha toda a documentação atualizada e acessível. Isso inclui não só o playbook, mas também a documentação de sistemas e arquitetura de software.</li>
+    <li><strong>Treinamento Contínuo:</strong> Invista em treinamento e capacitação da equipe para que todos estejam cientes das melhores práticas e procedimentos de resposta a incidentes.</li>
+</ul>
+<h2>Aplicação Prática</h2>
+<p>Para arquitetos e desenvolvedores, algumas ações concretas incluem:</p>
+<ul>
+    <li><strong>Avaliação de Risco:</strong> Realize uma avaliação de risco para identificar vulnerabilidades em sistemas e processos.</li>
+    <li><strong>Integração de Segurança:</strong> Incorporar práticas de segurança desde o início do ciclo de desenvolvimento de software (DevSecOps).</li>
+    <li><strong>Monitoramento Contínuo:</strong> Implemente soluções de monitoramento que possam detectar atividades suspeitas em tempo real.</li>
+</ul>
+<h2>Riscos e Cuidados</h2>
+<p>Embora a implementação de um playbook de incidentes seja fundamental, é importante estar ciente de alguns riscos associados:</p>
+<ul>
+    <li>O playbook pode se tornar obsoleto se não for revisado periodicamente.</li>
+    <li>A falta de treinamento da equipe pode levar a uma resposta inadequada em situações críticas.</li>
+    <li>A dependência excessiva de automação sem supervisão humana pode resultar em falhas na identificação de incidentes complexos.</li>
+</ul>
+<h2>Conclusão</h2>
+<p>A situação da CISA serve como um lembrete poderoso de que a preparação é essencial em um cenário de cibersegurança. Ter um playbook de incidentes bem estruturado não é apenas uma boa prática, mas uma necessidade para proteger não só a integridade de sistemas, mas também a confiança pública nas instituições. Reavaliar constantemente os processos, promover uma cultura de segurança e manter canais abertos com a comunidade são passos cruciais para garantir que estejamos sempre um passo à frente das ameaças.</p>
+<p>Em um mundo onde as ameaças estão em constante evolução, não podemos nos dar ao luxo de esperar que o próximo incidente aconteça para agir. A construção de resiliência começa agora.</p>
+</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> o ponto de partida foi <a href="https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/" target="_blank" rel="noopener noreferrer">US cybersecurity agency CISA had to build its incident playbook during the incident, agency reveals</a>.</li>
+<li><strong>Data considerada:</strong> a fonte externa ou data original registrada é 10/07/2026.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Construindo Resiliência: Lições da Crise de Segurança da CISA" à categoria <strong>Segurança</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Revise o modelo de ameaças antes de transformar a novidade em decisão de arquitetura.</li>
+<li>Valide autenticação, autorização, auditoria e exposição de dados nos pontos afetados.</li>
+<li>Defina sinais observáveis para perceber abuso, falha de integração ou regressão de segurança.</li>
+</ul>
+</section>
+<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/" target="_blank" rel="noopener noreferrer">US cybersecurity agency CISA had to build its incident playbook during the incident, agency reveals</a>.</p>
+</section>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/seguranca/inteligencia-artificial-e-seguranca-o-novo-jogo-do-gato-e-rato-no-windows.html">Inteligência Artificial e Segurança: O Novo Jogo do Gato e Rato no Windows</a><span>Segurança</span></li>
+<li><a href="/artigos/seguranca/seguranca-e-privacidade-em-ia-o-novo-desafio-dos-arquitetos-de-software.html">Segurança e Privacidade em IA: O Novo Desafio dos Arquitetos de Software</a><span>Segurança</span></li>
+<li><a href="/artigos/seguranca/desafiando-a-abstracao-a-nova-era-da-seguranca-em-nuvem-na-era-da-ia.html">Desafiando a Abstração: A Nova Era da Segurança em Nuvem na Era da IA</a><span>Segurança</span></li>
+<li><a href="/artigos/seguranca/inteligencia-artificial-e-seguranca-a-revolucao-do-copilot-autofix-no-azure-devops.html">Inteligência Artificial e Segurança: A Revolução do Copilot Autofix no Azure DevOps</a><span>Segurança</span></li>
+</ul>
+</section>
+<p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="/sobre.html">Sobre</a> |
+    <a href="/contato.html">Contato</a> |
+    <a href="/termos.html">Termos de Uso</a> |
+    <a href="/politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+
+
+</body>
+</html>
