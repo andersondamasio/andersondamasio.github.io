@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sun, 12 Jul 2026 02:40:31 GMT</lastBuildDate>
+<lastBuildDate>Mon, 13 Jul 2026 13:22:24 GMT</lastBuildDate>
+<item>
+<title>Governança em Tempos de IA: O Papel da Arquitetura de Software na Evolução da Tecnologia</title>
+<link>https://www.andersondamasio.com.br/artigos/arquitetura/governanca-em-tempos-de-ia-o-papel-da-arquitetura-de-software-na-evolucao-da-tecnologia.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/arquitetura/governanca-em-tempos-de-ia-o-papel-da-arquitetura-de-software-na-evolucao-da-tecnologia.html</guid>
+<pubDate>Mon, 13 Jul 2026 13:22:24 GMT</pubDate>
+<category>Arquitetura</category>
+<description>Nos últimos anos, temos assistido a uma rápida transformação na forma como as empresas utilizam a tecnologia. A inteligência artificial (IA) está se...</description>
+</item>
 <item>
 <title>Revolucionando a Oncologia: Como a Tecnologia e a Inovação Podem Transformar o Tratamento do Câncer</title>
 <link>https://www.andersondamasio.com.br/artigos/saude/revolucionando-a-oncologia-como-a-tecnologia-e-a-inovacao-podem-transformar-o-tratamento-do-cancer.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sat, 13 Jun 2026 18:12:36 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>Nos últimos dias, uma notícia agitou o ecossistema de tecnnologia: uma coalizão de procuradores gerais de estado decidiu abrir uma investigação contra a...</description>
-</item>
-<item>
-<title>Sonhos Sonoros: O Futuro do Relaxamento com Tecnologia de Condução Óssea</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/sonhos-sonoros-o-futuro-do-relaxamento-com-tecnologia-de-conducao-ossea.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/sonhos-sonoros-o-futuro-do-relaxamento-com-tecnologia-de-conducao-ossea.html</guid>
-<pubDate>Sat, 13 Jun 2026 16:29:50 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Quem nunca teve aquela noite em que o sono simplesmente não vem? A insônia é uma companheira indesejada de muitos, e, para aqueles que têm a mente inquieta,...</description>
 </item>
 </channel>
 </rss>
