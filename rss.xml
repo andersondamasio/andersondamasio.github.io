@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 13 Jul 2026 13:22:24 GMT</lastBuildDate>
+<lastBuildDate>Mon, 13 Jul 2026 20:14:10 GMT</lastBuildDate>
+<item>
+<title>Modelos Autônomos e a Revolução da Arquitetura de Software</title>
+<link>https://www.andersondamasio.com.br/artigos/arquitetura/modelos-autonomos-e-a-revolucao-da-arquitetura-de-software.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/arquitetura/modelos-autonomos-e-a-revolucao-da-arquitetura-de-software.html</guid>
+<pubDate>Mon, 13 Jul 2026 20:14:10 GMT</pubDate>
+<category>Arquitetura</category>
+<description>Nos últimos tempos, temos assistido a uma mudança de paradigma no desenvolvimento de software que, sem dúvida, impactará a forma como arquitetamos soluções...</description>
+</item>
 <item>
 <title>Governança em Tempos de IA: O Papel da Arquitetura de Software na Evolução da Tecnologia</title>
 <link>https://www.andersondamasio.com.br/artigos/arquitetura/governanca-em-tempos-de-ia-o-papel-da-arquitetura-de-software-na-evolucao-da-tecnologia.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sat, 13 Jun 2026 20:25:06 GMT</pubDate>
 <category>DevOps</category>
 <description>Nos últimos tempos, a automação tem sido uma palavra-chave no mundo da tecnologia. E agora, com o lançamento do Terraform MCP Server pela HashiCorp, as...</description>
-</item>
-<item>
-<title>A crise de confiança: OpenAI sob investigação e o futuro da IA</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-crise-de-confianca-openai-sob-investigacao-e-o-futuro-da-ia.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-crise-de-confianca-openai-sob-investigacao-e-o-futuro-da-ia.html</guid>
-<pubDate>Sat, 13 Jun 2026 18:12:36 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Nos últimos dias, uma notícia agitou o ecossistema de tecnnologia: uma coalizão de procuradores gerais de estado decidiu abrir uma investigação contra a...</description>
 </item>
 </channel>
 </rss>
