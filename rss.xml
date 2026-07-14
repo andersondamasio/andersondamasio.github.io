@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 13 Jul 2026 20:14:10 GMT</lastBuildDate>
+<lastBuildDate>Tue, 14 Jul 2026 08:02:34 GMT</lastBuildDate>
+<item>
+<title>Descomplicando a Autenticação em APIs: O Impacto da Transição para o SigV4a</title>
+<link>https://www.andersondamasio.com.br/artigos/cloud/descomplicando-a-autenticacao-em-apis-o-impacto-da-transicao-para-o-sigv4a.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/cloud/descomplicando-a-autenticacao-em-apis-o-impacto-da-transicao-para-o-sigv4a.html</guid>
+<pubDate>Tue, 14 Jul 2026 08:02:34 GMT</pubDate>
+<category>Cloud</category>
+<description>Nos últimos anos, a arquitetura de software tem evoluído de maneira acelerada, especialmente quando falamos de serviços em nuvem. Um dos desafios mais...</description>
+</item>
 <item>
 <title>Modelos Autônomos e a Revolução da Arquitetura de Software</title>
 <link>https://www.andersondamasio.com.br/artigos/arquitetura/modelos-autonomos-e-a-revolucao-da-arquitetura-de-software.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sat, 13 Jun 2026 22:09:21 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>Nos últimos tempos, temos visto uma proliferação de relatórios e estudos que utilizam Inteligência Artificial como ferramenta central. No entanto, o recente...</description>
-</item>
-<item>
-<title>A revolução nas infraestruturas: Como o Terraform MCP Server está transformando a automação</title>
-<link>https://www.andersondamasio.com.br/artigos/devops/a-revolucao-nas-infraestruturas-como-o-terraform-mcp-server-esta-transformando-a-automacao.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/devops/a-revolucao-nas-infraestruturas-como-o-terraform-mcp-server-esta-transformando-a-automacao.html</guid>
-<pubDate>Sat, 13 Jun 2026 20:25:06 GMT</pubDate>
-<category>DevOps</category>
-<description>Nos últimos tempos, a automação tem sido uma palavra-chave no mundo da tecnologia. E agora, com o lançamento do Terraform MCP Server pela HashiCorp, as...</description>
 </item>
 </channel>
 </rss>

@@ -72395,5 +72395,23 @@
       "secoesArtigo": 8,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Descomplicando a Autenticação em APIs: O Impacto da Transição para o SigV4a",
+    "noticiaOriginal": "Article: Removing a Hidden Round Trip from a Multi-Region AWS API",
+    "url": "artigos/cloud/descomplicando-a-autenticacao-em-apis-o-impacto-da-transicao-para-o-sigv4a.html",
+    "data": "2026-07-14T08:02:34.131Z",
+    "dataFonte": "2026-07-13T11:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/articles/aws-multi-region-signing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 112,
+      "sinalEditorial": 82,
+      "palavrasFonte": 2444,
+      "palavrasArtigo": 980,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]
