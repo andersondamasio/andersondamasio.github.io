@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Tue, 14 Jul 2026 08:02:34 GMT</lastBuildDate>
+<lastBuildDate>Tue, 14 Jul 2026 16:13:40 GMT</lastBuildDate>
+<item>
+<title>A Revolução na Descoberta de Recursos para Agentes de IA</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-na-descoberta-de-recursos-para-agentes-de-ia.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-na-descoberta-de-recursos-para-agentes-de-ia.html</guid>
+<pubDate>Tue, 14 Jul 2026 16:13:40 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Recentemente, uma notícia chamou a atenção da comunidade técnica: Google e parceiros da indústria anunciaram a especificação Agentic Resource Discovery...</description>
+</item>
 <item>
 <title>Descomplicando a Autenticação em APIs: O Impacto da Transição para o SigV4a</title>
 <link>https://www.andersondamasio.com.br/artigos/cloud/descomplicando-a-autenticacao-em-apis-o-impacto-da-transicao-para-o-sigv4a.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sun, 14 Jun 2026 00:13:15 GMT</pubDate>
 <category>Arquitetura</category>
 <description>Recentemente, a Meta decidiu desfazer sua aquisição de US$ 2 bilhões da startup Manus, uma decisão que reflete não apenas os caprichos das políticas...</description>
-</item>
-<item>
-<title>A crise das palavras: a fragilidade da AI nas mãos de humanos</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-crise-das-palavras-a-fragilidade-da-ai-nas-maos-de-humanos.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-crise-das-palavras-a-fragilidade-da-ai-nas-maos-de-humanos.html</guid>
-<pubDate>Sat, 13 Jun 2026 22:09:21 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Nos últimos tempos, temos visto uma proliferação de relatórios e estudos que utilizam Inteligência Artificial como ferramenta central. No entanto, o recente...</description>
 </item>
 </channel>
 </rss>
