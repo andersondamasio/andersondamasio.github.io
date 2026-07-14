@@ -72431,5 +72431,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "DSLs: O Caminho para uma Interação Eficiente com LLMs na Arquitetura de Software",
+    "noticiaOriginal": "DSLs Enable Reliable Use of LLMs",
+    "url": "artigos/desenvolvimento-de-software/dsls-o-caminho-para-uma-interacao-eficiente-com-llms-na-arquitetura-de-software.html",
+    "data": "2026-07-14T22:57:39.160Z",
+    "dataFonte": "2026-07-14T12:51:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://martinfowler.com/articles/llm-and-dsls.html",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 118,
+      "sinalEditorial": 80,
+      "palavrasFonte": 3574,
+      "palavrasArtigo": 1006,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]

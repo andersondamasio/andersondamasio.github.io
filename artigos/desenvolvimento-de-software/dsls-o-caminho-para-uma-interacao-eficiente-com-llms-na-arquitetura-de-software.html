@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DSLs: O Caminho para uma Interação Eficiente com LLMs na Arquitetura de Software</title>
+<meta name="description" content="Nos dias atuais, a forma como desenvolvemos software está mudando rapidamente, especialmente com a ascensão dos Modelos de Linguagem de Grande Escala...">
+<meta name="author" content="Anderson Damasio">
+<meta name="keywords" content="Desenvolvimento de Software, arquitetura de software, dsls, llms, codigo, eficiente, geracao, interacao, caminho, linguagem">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/dsls-o-caminho-para-uma-interacao-eficiente-com-llms-na-arquitetura-de-software.html">
+<link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Anderson Damasio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DSLs: O Caminho para uma Interação Eficiente com LLMs na Arquitetura de Software">
+<meta property="og:description" content="Nos dias atuais, a forma como desenvolvemos software está mudando rapidamente, especialmente com a ascensão dos Modelos de Linguagem de Grande Escala...">
+<meta property="og:url" content="https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/dsls-o-caminho-para-uma-interacao-eficiente-com-llms-na-arquitetura-de-software.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
+<meta property="article:published_time" content="2026-07-14T22:57:39.160Z">
+<meta property="article:modified_time" content="2026-07-14T22:57:39.160Z">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@andersondamasio">
+<meta name="twitter:title" content="DSLs: O Caminho para uma Interação Eficiente com LLMs na Arquitetura de Software">
+<meta name="twitter:description" content="Nos dias atuais, a forma como desenvolvemos software está mudando rapidamente, especialmente com a ascensão dos Modelos de Linguagem de Grande Escala...">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
+<meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "DSLs: O Caminho para uma Interação Eficiente com LLMs na Arquitetura de Software",
+  "description": "Nos dias atuais, a forma como desenvolvemos software está mudando rapidamente, especialmente com a ascensão dos Modelos de Linguagem de Grande Escala...",
+  "image": [
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
+  ],
+  "url": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/dsls-o-caminho-para-uma-interacao-eficiente-com-llms-na-arquitetura-de-software.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/dsls-o-caminho-para-uma-interacao-eficiente-com-llms-na-arquitetura-de-software.html"
+  },
+  "datePublished": "2026-07-14T22:57:39.160Z",
+  "dateModified": "2026-07-14T22:57:39.160Z",
+  "articleSection": "Desenvolvimento de Software",
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "Desenvolvimento de Software",
+    "arquitetura de software",
+    "dsls",
+    "llms",
+    "codigo",
+    "eficiente",
+    "geracao",
+    "interacao",
+    "caminho",
+    "linguagem"
+  ],
+  "wordCount": 1006,
+  "about": {
+    "@type": "Thing",
+    "name": "Desenvolvimento de Software"
+  },
+  "mentions": [
+    {
+      "@type": "Thing",
+      "name": "arquitetura de software"
+    },
+    {
+      "@type": "Thing",
+      "name": "dsls"
+    },
+    {
+      "@type": "Thing",
+      "name": "llms"
+    },
+    {
+      "@type": "Thing",
+      "name": "codigo"
+    },
+    {
+      "@type": "Thing",
+      "name": "eficiente"
+    },
+    {
+      "@type": "Thing",
+      "name": "geracao"
+    }
+  ],
+  "isAccessibleForFree": true,
+  "copyrightYear": 2026,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "DSLs Enable Reliable Use of LLMs",
+    "url": "https://martinfowler.com/articles/llm-and-dsls.html"
+  },
+  "citation": "https://martinfowler.com/articles/llm-and-dsls.html",
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
+  },
+  "copyrightHolder": {
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.andersondamasio.com.br/#organization",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
+      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://www.andersondamasio.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://www.andersondamasio.com.br/artigos/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Desenvolvimento de Software",
+      "item": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "DSLs: O Caminho para uma Interação Eficiente com LLMs na Arquitetura de Software",
+      "item": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/dsls-o-caminho-para-uma-interacao-eficiente-com-llms-na-arquitetura-de-software.html"
+    }
+  ]
+}
+</script>
+<link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
+<style>
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --main-bg: #fff;
+  --link: #0a66c2;
+  --link-hover: #084e91;
+  --footer: #666;
+  --meta: #777;
+  --pre-bg: #272822;
+  --pre-color: #f8f8f2;
+  --copy-bg: #0a66c2;
+  --copy-color: #fff;
+  --copy-bg-hover: #084e91;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body.dark-theme {
+  --bg: #181b1f;
+  --text: #ddd;
+  --main-bg: #23262d;
+  --link: #67aaff;
+  --link-hover: #f1c40f;
+  --footer: #b3b3b3;
+  --meta: #b3b3b3;
+  --pre-bg: #22262b;
+  --pre-color: #e0e7ef;
+  --copy-bg: #67aaff;
+  --copy-color: #11131a;
+  --copy-bg-hover: #f1c40f;
+  --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+h1 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--link); }
+a { color: var(--link); text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: var(--link-hover);}
+.article-meta { color: var(--meta); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0.35rem 0 0; }
+.article-source a { font-weight: 700; }
+.article-source-note { font-size: 0.9rem; }
+pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: var(--copy-bg-hover); color: var(--main-bg); }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: var(--link); font-size: 1.05rem; border: 1px solid var(--link); padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: var(--link); color: var(--main-bg); }
+main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+</head>
+<body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../../artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
+    <a href="../../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+  </nav>
+</header>
+<main>
+<h1>DSLs: O Caminho para uma Interação Eficiente com LLMs na Arquitetura de Software</h1>
+
+<p class="article-meta">Publicado em: 14/07/2026 19:57</p>
+
+<div class="article-body"><p>Nos dias atuais, a forma como desenvolvemos software está mudando rapidamente, especialmente com a ascensão dos Modelos de Linguagem de Grande Escala (LLMs). O que antes parecia ficção científica agora é uma realidade palpável: gerar código e até sistemas inteiros a partir de descrições em linguagem natural. Mas essa evolução traz desafios e oportunidades que devemos explorar em profundidade. Como arquiteto de software, é fundamental entender como as Linguagens Específicas de Domínio (DSLs) podem ser aliadas nessa jornada.</p>
+<h2>Resumo Executivo</h2>
+<p>Recentemente, foi discutido como as DSLs podem facilitar a interação com LLMs, permitindo um uso mais confiável dessas tecnologias. A ideia central é que, ao utilizar DSLs, conseguimos especificar intenções de forma mais clara e, assim, obter resultados mais precisos e relevantes. Essa abordagem não só melhora a geração de código, mas também nos ajuda a explorar melhor o espaço de design. Neste artigo, iremos explorar o que isso significa na prática e como podemos aplicar esses conhecimentos no dia a dia.</p>
+<h2>Fato Reportado</h2>
+<p>Os LLMs têm demonstrado uma capacidade impressionante de gerar código a partir de descrições em linguagem natural. Entretanto, uma das limitações dessa abordagem é a necessidade de uma especificação bem articulada. As DSLs entram em cena como uma forma de criar um vocabulário constrangido que permite a expressão de conceitos e operações de maneira mais eficaz. Isso se traduz em uma geração de código mais precisa e de fácil verificação.</p>
+<h2>Interpretação Técnica</h2>
+<p>A geração de código a partir de LLMs, embora promissora, enfrenta o desafio das especificações inadequadas. Quando falamos sobre a complexidade de sistemas, percebemos que muitos detalhes só se revelam durante o processo de implementação. As DSLs ajudam a mitigar essa questão, pois oferecem um vocabulário específico que restringe as possibilidades, tornando a comunicação entre o desenvolvedor e a máquina mais eficiente. Assim, ao fornecer exemplos em contexto, as DSLs aumentam a confiabilidade na geração de código pelos LLMs.</p>
+<p>Além disso, a interação com LLMs pode ser vista em duas fases distintas: a primeira envolve a criação da DSL, onde o LLM atua como um parceiro de brainstorming, ajudando a moldar abstrações. A segunda fase se inicia quando a DSL está estabelecida, transformando o LLM em uma interface de linguagem natural que traduz solicitações em especificações válidas.</p>
+<h2>Limites do que ainda não dá para afirmar</h2>
+<p>É importante destacar que a utilização de DSLs não é uma solução mágica. A eficácia delas depende de quão bem projetadas e implementadas estão. Se a linguagem for muito complexa ou se não houver um suporte robusto para validação, os benefícios podem ser limitados. Além disso, enquanto LLMs se tornam mais competentes em gerar código a partir de DSLs conhecidas, eles ainda podem apresentar dificuldades com DSLs novas ou excessivamente restritivas. Portanto, é essencial manter um equilíbrio entre a expressividade e a complexidade da DSL.</p>
+<h2>Explicação Técnica Aprofundada</h2>
+<p>As DSLs são projetadas para um domínio específico e, por isso, têm uma sintaxe e semântica limitadas, o que facilita a geração de código a partir de exemplos. Por exemplo, linguagens como SQL ou PlantUML são DSLs que oferecem uma maneira eficiente de expressar intenções em seus respectivos contextos — consulta de dados e modelagem visual, respectivamente.</p>
+<p>Quando um LLM é exposto a uma DSL, ele se torna mais confiável na geração de código, pois a variação na expressão de intenções é reduzida. Isso permite que o modelo produza código que não apenas funciona, mas também é semanticamente correto em relação ao domínio. Além disso, o uso de validadores, como parsers ou esquemas de JSON, pode ser implementado para garantir que o código gerado esteja em conformidade com as regras da DSL, permitindo que um agente LLM trabalhe em um ciclo de geração e validação sem intervenção humana.</p>
+<h2>Dicas Avançadas</h2>
+<p>Para arquitetos e desenvolvedores que desejam se aprofundar no uso de DSLs com LLMs, aqui estão algumas dicas:</p>
+<ul>
+    <li><strong>Prototipagem Rápida:</strong> Utilize ferramentas de prototipagem para testar suas DSLs antes de implementá-las em larga escala. Isso ajuda a identificar pontos fracos e permite ajustes rápidos.</li>
+    <li><strong>Validação Estrutural:</strong> Incorpore validadores automáticos que verifiquem a conformidade do código gerado. Isso não apenas melhora a qualidade do código, mas também reduz a necessidade de revisões manuais extensivas.</li>
+    <li><strong>Iteração Contínua:</strong> Mantenha um ciclo de feedback onde a equipe pode discutir e refinar a DSL. Isso garante que a linguagem evolua com as necessidades do projeto.</li>
+</ul>
+<h2>Aplicação Prática</h2>
+<p>Para aplicar essas ideias, uma abordagem prática seria:</p>
+<ul>
+    <li><strong>Definir um Domínio:</strong> Escolha um domínio específico onde uma DSL faria sentido e comece a esboçar os principais conceitos e operações.</li>
+    <li><strong>Desenvolver a DSL:</strong> Crie a DSL com uma sintaxe que seja fácil de entender e utilizar, focando em um conjunto restrito de operações.</li>
+    <li><strong>Integrar com LLMs:</strong> Implemente um pipeline que permita que o LLM utilize a DSL para gerar código a partir de descrições em linguagem natural. Teste essa integração com casos de uso reais.</li>
+</ul>
+<h2>Riscos e Cuidados</h2>
+<p>Embora a integração de DSLs e LLMs possa ser bastante benéfica, alguns riscos precisam ser considerados:</p>
+<ul>
+    <li><strong>Complexidade Excessiva:</strong> Uma DSL mal projetada pode adicionar complexidade ao sistema, dificultando a compreensão e manutenção.</li>
+    <li><strong>Dependência do Modelo:</strong> A dependência excessiva de LLMs para gerar código pode levar a uma falta de entendimento das operações subjacentes, resultando em soluções frágeis.</li>
+    <li><strong>Risco de Hallucinação:</strong> Os LLMs podem gerar resultados inesperados ou incorretos, principalmente se não houver uma validação robusta em vigor.</li>
+</ul>
+<h2>Conclusão</h2>
+<p>O futuro da arquitetura de software está sendo moldado pela interação entre DSLs e LLMs. À medida que continuamos a explorar essa interseção, fica claro que as DSLs não apenas ajudam a clarificar a intenção de desenvolvimento, mas também proporcionam uma base sólida para a geração de código eficiente e confiável. No entanto, é crucial permanecer atento aos limites e riscos associados a essa prática. Com um planejamento cuidadoso e uma abordagem iterativa, podemos aproveitar ao máximo o potencial dessa tecnologia inovadora.</p>
+<p>Portanto, convido você, leitor, a refletir: como você pode aplicar esses conceitos em seus projetos diários? E quais desafios você antecipa ao implementar DSLs em sua equipe? O caminho pode ser desafiador, mas as recompensas certamente valem o esforço.</p>
+</div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> o ponto de partida foi <a href="https://martinfowler.com/articles/llm-and-dsls.html" target="_blank" rel="noopener noreferrer">DSLs Enable Reliable Use of LLMs</a>.</li>
+<li><strong>Data considerada:</strong> a fonte externa ou data original registrada é 14/07/2026.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "DSLs: O Caminho para uma Interação Eficiente com LLMs na Arquitetura de Software" à categoria <strong>Desenvolvimento de Software</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
+<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
+<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
+</ul>
+</section>
+<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="https://martinfowler.com/articles/llm-and-dsls.html" target="_blank" rel="noopener noreferrer">DSLs Enable Reliable Use of LLMs</a>.</p>
+</section>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html">A Revolução do Teste: Como a Inteligência Artificial Está Transformando a Automação de Testes de UI</a><span>Desenvolvimento de Software</span></li>
+<li><a href="/artigos/desenvolvimento-de-software/desvendando-crashes-licoes-de-depuracao-e-a-engenharia-de-dados.html">Desvendando Crashes: Lições de Depuração e a Engenharia de Dados</a><span>Desenvolvimento de Software</span></li>
+<li><a href="/artigos/desenvolvimento-de-software/desbravando-o-futuro-do-codigo-a-era-dos-modelos-locais-e-seus-desafios.html">Desbravando o Futuro do Código: A Era dos Modelos Locais e Seus Desafios</a><span>Desenvolvimento de Software</span></li>
+<li><a href="/artigos/desenvolvimento-de-software/desbravando-hardwood-a-revolucao-do-processamento-de-apache-parquet-na-jvm.html">Desbravando Hardwood: A Revolução do Processamento de Apache Parquet na JVM</a><span>Desenvolvimento de Software</span></li>
+</ul>
+</section>
+<p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="/sobre.html">Sobre</a> |
+    <a href="/contato.html">Contato</a> |
+    <a href="/termos.html">Termos de Uso</a> |
+    <a href="/politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+
+
+</body>
+</html>

@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Tue, 14 Jul 2026 16:13:40 GMT</lastBuildDate>
+<lastBuildDate>Tue, 14 Jul 2026 22:57:39 GMT</lastBuildDate>
+<item>
+<title>DSLs: O Caminho para uma Interação Eficiente com LLMs na Arquitetura de Software</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/dsls-o-caminho-para-uma-interacao-eficiente-com-llms-na-arquitetura-de-software.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/dsls-o-caminho-para-uma-interacao-eficiente-com-llms-na-arquitetura-de-software.html</guid>
+<pubDate>Tue, 14 Jul 2026 22:57:39 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>Nos dias atuais, a forma como desenvolvemos software está mudando rapidamente, especialmente com a ascensão dos Modelos de Linguagem de Grande Escala...</description>
+</item>
 <item>
 <title>A Revolução na Descoberta de Recursos para Agentes de IA</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-na-descoberta-de-recursos-para-agentes-de-ia.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sun, 14 Jun 2026 05:55:02 GMT</pubDate>
 <category>Cloud</category>
 <description>Recentemente, a AWS trouxe uma inovação que pode mudar a forma como lidamos com o armazenamentto de dados em aplicações: a opção de durabilidade para o...</description>
-</item>
-<item>
-<title>A desintegração da aquisição da Manus: O que isso nos ensina sobre segurança e arquitetura de software</title>
-<link>https://www.andersondamasio.com.br/artigos/arquitetura/a-desintegracao-da-aquisicao-da-manus-o-que-isso-nos-ensina-sobre-seguranca-e-arquitetura-de-software.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/arquitetura/a-desintegracao-da-aquisicao-da-manus-o-que-isso-nos-ensina-sobre-seguranca-e-arquitetura-de-software.html</guid>
-<pubDate>Sun, 14 Jun 2026 00:13:15 GMT</pubDate>
-<category>Arquitetura</category>
-<description>Recentemente, a Meta decidiu desfazer sua aquisição de US$ 2 bilhões da startup Manus, uma decisão que reflete não apenas os caprichos das políticas...</description>
 </item>
 </channel>
 </rss>
