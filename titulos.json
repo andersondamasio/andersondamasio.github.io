@@ -72485,5 +72485,23 @@
       "secoesArtigo": 7,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "A Revolução do Controle de Acesso em Ferramentas de IA: O Que Traz o Gateway de Apps Claude da AWS",
+    "noticiaOriginal": "AWS Ships Claude Apps Gateway as Self-Hosted Control Plane for Claude Code and Claude Desktop",
+    "url": "artigos/cloud/a-revolucao-do-controle-de-acesso-em-ferramentas-de-ia-o-que-traz-o-gateway-de-apps-claude-da-aws.html",
+    "data": "2026-07-15T23:05:07.519Z",
+    "dataFonte": "2026-07-15T11:04:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/07/claude-apps-gateway-aws/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 106,
+      "sinalEditorial": 76,
+      "palavrasFonte": 939,
+      "palavrasArtigo": 945,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0.0019
+    }
   }
 ]

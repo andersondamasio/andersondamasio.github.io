@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Wed, 15 Jul 2026 14:49:36 GMT</lastBuildDate>
+<lastBuildDate>Wed, 15 Jul 2026 23:05:07 GMT</lastBuildDate>
+<item>
+<title>A Revolução do Controle de Acesso em Ferramentas de IA: O Que Traz o Gateway de Apps Claude da AWS</title>
+<link>https://www.andersondamasio.com.br/artigos/cloud/a-revolucao-do-controle-de-acesso-em-ferramentas-de-ia-o-que-traz-o-gateway-de-apps-claude-da-aws.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/cloud/a-revolucao-do-controle-de-acesso-em-ferramentas-de-ia-o-que-traz-o-gateway-de-apps-claude-da-aws.html</guid>
+<pubDate>Wed, 15 Jul 2026 23:05:07 GMT</pubDate>
+<category>Cloud</category>
+<description>Recentemente, o mundo da tecnologia recebeu uma novidade que pode mudar a forma como gerenciamos ferramentas de inteligência artificial nas empresas. A AWS...</description>
+</item>
 <item>
 <title>PostgreSQL: A Base Sólida para Impulsionar a Inteligência Artificial nas Empresas</title>
 <link>https://www.andersondamasio.com.br/artigos/banco-de-dados/postgresql-a-base-solida-para-impulsionar-a-inteligencia-artificial-nas-empresas.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sun, 14 Jun 2026 14:16:18 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Trabalhando em casa, a gente acaba se acostumando com o som dos fones de ouvido ou AirPods, mas sempre rolou aquela vontade de ter uma caixa de som que não...</description>
-</item>
-<item>
-<title>Como Saber se Alguém Está Usando Seu Wi-Fi Sem Permissão</title>
-<link>https://www.andersondamasio.com.br/artigos/seguranca/como-saber-se-alguem-esta-usando-seu-wi-fi-sem-permissao.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/como-saber-se-alguem-esta-usando-seu-wi-fi-sem-permissao.html</guid>
-<pubDate>Sun, 14 Jun 2026 12:03:50 GMT</pubDate>
-<category>Segurança</category>
-<description>Quem nunca se sentiu incomodado ao perceber que a internert está mais lenta do que o normal? Para muitos, isso pode ser apenas um desconforto, mas para os...</description>
 </item>
 </channel>
 </rss>
