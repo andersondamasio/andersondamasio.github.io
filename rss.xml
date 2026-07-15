@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Tue, 14 Jul 2026 22:57:39 GMT</lastBuildDate>
+<lastBuildDate>Wed, 15 Jul 2026 05:30:35 GMT</lastBuildDate>
+<item>
+<title>Agilidade no Desenvolvimento: Como as Novas Habilidades dos Agentes do Visual Studio Podem Revolucionar Sua Rotina</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/agilidade-no-desenvolvimento-como-as-novas-habilidades-dos-agentes-do-visual-studio-podem-revolucionar-sua-rotina.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/agilidade-no-desenvolvimento-como-as-novas-habilidades-dos-agentes-do-visual-studio-podem-revolucionar-sua-rotina.html</guid>
+<pubDate>Wed, 15 Jul 2026 05:30:35 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>Nos últimos anos, a tecnologia tem avançado a passos largos, e a forma como desenvolvemos software precisa acompanhar essa evolução. A recente atualização...</description>
+</item>
 <item>
 <title>DSLs: O Caminho para uma Interação Eficiente com LLMs na Arquitetura de Software</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/dsls-o-caminho-para-uma-interacao-eficiente-com-llms-na-arquitetura-de-software.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sun, 14 Jun 2026 09:39:41 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>A recente decisão da Anthropic de suspender o acesso aos seus novos modelos de IA acendeu um sinal de alerta não só nos Estados Unidos, mas também em...</description>
-</item>
-<item>
-<title>A nova era do ElastiCache: armazenamento durável para aplicações reais</title>
-<link>https://www.andersondamasio.com.br/artigos/cloud/a-nova-era-do-elasticache-armazenamento-duravel-para-aplicacoes-reais.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/cloud/a-nova-era-do-elasticache-armazenamento-duravel-para-aplicacoes-reais.html</guid>
-<pubDate>Sun, 14 Jun 2026 05:55:02 GMT</pubDate>
-<category>Cloud</category>
-<description>Recentemente, a AWS trouxe uma inovação que pode mudar a forma como lidamos com o armazenamentto de dados em aplicações: a opção de durabilidade para o...</description>
 </item>
 </channel>
 </rss>
