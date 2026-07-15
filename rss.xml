@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Wed, 15 Jul 2026 05:30:35 GMT</lastBuildDate>
+<lastBuildDate>Wed, 15 Jul 2026 14:49:36 GMT</lastBuildDate>
+<item>
+<title>PostgreSQL: A Base Sólida para Impulsionar a Inteligência Artificial nas Empresas</title>
+<link>https://www.andersondamasio.com.br/artigos/banco-de-dados/postgresql-a-base-solida-para-impulsionar-a-inteligencia-artificial-nas-empresas.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/banco-de-dados/postgresql-a-base-solida-para-impulsionar-a-inteligencia-artificial-nas-empresas.html</guid>
+<pubDate>Wed, 15 Jul 2026 14:49:36 GMT</pubDate>
+<category>Banco de Dados</category>
+<description>Nos últimos anos, o cenário tecnológico tem se transformado rapidamente, especialmente com o surgimento e a popularização da Inteligência Artificial (IA)....</description>
+</item>
 <item>
 <title>Agilidade no Desenvolvimento: Como as Novas Habilidades dos Agentes do Visual Studio Podem Revolucionar Sua Rotina</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/agilidade-no-desenvolvimento-como-as-novas-habilidades-dos-agentes-do-visual-studio-podem-revolucionar-sua-rotina.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sun, 14 Jun 2026 12:03:50 GMT</pubDate>
 <category>Segurança</category>
 <description>Quem nunca se sentiu incomodado ao perceber que a internert está mais lenta do que o normal? Para muitos, isso pode ser apenas um desconforto, mas para os...</description>
-</item>
-<item>
-<title>Desafios da IA: O Que a Suspensão da Anthropic Pode Significar Para o Futuro da Tecnologia na Índia</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/desafios-da-ia-o-que-a-suspensao-da-anthropic-pode-significar-para-o-futuro-da-tecnologia-na-india.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/desafios-da-ia-o-que-a-suspensao-da-anthropic-pode-significar-para-o-futuro-da-tecnologia-na-india.html</guid>
-<pubDate>Sun, 14 Jun 2026 09:39:41 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>A recente decisão da Anthropic de suspender o acesso aos seus novos modelos de IA acendeu um sinal de alerta não só nos Estados Unidos, mas também em...</description>
 </item>
 </channel>
 </rss>
