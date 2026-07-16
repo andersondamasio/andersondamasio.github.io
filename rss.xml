@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 16 Jul 2026 12:24:52 GMT</lastBuildDate>
+<lastBuildDate>Thu, 16 Jul 2026 19:08:41 GMT</lastBuildDate>
+<item>
+<title>Segurança de Código: Como o AWS Continuum Promete Transformar a Proteção das Aplicações Empresariais</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/seguranca-de-codigo-como-o-aws-continuum-promete-transformar-a-protecao-das-aplicacoes-empresariais.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/seguranca-de-codigo-como-o-aws-continuum-promete-transformar-a-protecao-das-aplicacoes-empresariais.html</guid>
+<pubDate>Thu, 16 Jul 2026 19:08:41 GMT</pubDate>
+<category>Segurança</category>
+<description>A crescente complexidade dos sistemas e a interconexão entre aplicações exigem soluções robustas para garantir a segurança de dados e processos....</description>
+</item>
 <item>
 <title>Quando a Autonomia Encontra o Caos: Lições de Segurança em Serviços de Nuvem</title>
 <link>https://www.andersondamasio.com.br/artigos/cloud/quando-a-autonomia-encontra-o-caos-licoes-de-seguranca-em-servicos-de-nuvem.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sun, 14 Jun 2026 20:23:23 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Recentemente, uma notícia chamou atenção no cenário internacional, especialmente entre os profissionais de tecnologia e arquitetura de software. O...</description>
-</item>
-<item>
-<title>A corrida das IA: o que as IPOs podem ensinar sobre a Arquitetura e o Desenvolvimento de Software</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-corrida-das-ia-o-que-as-ipos-podem-ensinar-sobre-a-arquitetura-e-o-desenvolvimento-de-software.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-corrida-das-ia-o-que-as-ipos-podem-ensinar-sobre-a-arquitetura-e-o-desenvolvimento-de-software.html</guid>
-<pubDate>Sun, 14 Jun 2026 18:18:58 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Nos últimos meses, temos visto uma verdadeira revolução no mercado de IPOs, especialmente com o grande destaque para empresas de inteligência artificial. A...</description>
 </item>
 </channel>
 </rss>
