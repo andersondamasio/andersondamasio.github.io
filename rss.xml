@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Wed, 15 Jul 2026 23:05:07 GMT</lastBuildDate>
+<lastBuildDate>Thu, 16 Jul 2026 05:39:51 GMT</lastBuildDate>
+<item>
+<title>OpenAI e o Futuro do Desenvolvimento: A Revolução do Hardware para Programadores</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/openai-e-o-futuro-do-desenvolvimento-a-revolucao-do-hardware-para-programadores.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/openai-e-o-futuro-do-desenvolvimento-a-revolucao-do-hardware-para-programadores.html</guid>
+<pubDate>Thu, 16 Jul 2026 05:39:51 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>A recente movimentação da OpenAI no mercado de hardware com o lançamento do teclado Codex Micro, um dispositivo de $230 projetado para interagir com seu...</description>
+</item>
 <item>
 <title>A Revolução do Controle de Acesso em Ferramentas de IA: O Que Traz o Gateway de Apps Claude da AWS</title>
 <link>https://www.andersondamasio.com.br/artigos/cloud/a-revolucao-do-controle-de-acesso-em-ferramentas-de-ia-o-que-traz-o-gateway-de-apps-claude-da-aws.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sun, 14 Jun 2026 16:27:21 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Recentemente, acompanhamos um marco surpreendente no mundo da tecnoligia e transporte: a SpaceX, a empresa de exploração espacial fundada por Elon Musk,...</description>
-</item>
-<item>
-<title>A nova caixa de som Sonos Play: um aliado inesperado para o home office</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-caixa-de-som-sonos-play-um-aliado-inesperado-para-o-home-office.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-caixa-de-som-sonos-play-um-aliado-inesperado-para-o-home-office.html</guid>
-<pubDate>Sun, 14 Jun 2026 14:16:18 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Trabalhando em casa, a gente acaba se acostumando com o som dos fones de ouvido ou AirPods, mas sempre rolou aquela vontade de ter uma caixa de som que não...</description>
 </item>
 </channel>
 </rss>
