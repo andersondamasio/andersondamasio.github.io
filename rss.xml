@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 16 Jul 2026 05:39:51 GMT</lastBuildDate>
+<lastBuildDate>Thu, 16 Jul 2026 12:24:52 GMT</lastBuildDate>
+<item>
+<title>Quando a Autonomia Encontra o Caos: Lições de Segurança em Serviços de Nuvem</title>
+<link>https://www.andersondamasio.com.br/artigos/cloud/quando-a-autonomia-encontra-o-caos-licoes-de-seguranca-em-servicos-de-nuvem.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/cloud/quando-a-autonomia-encontra-o-caos-licoes-de-seguranca-em-servicos-de-nuvem.html</guid>
+<pubDate>Thu, 16 Jul 2026 12:24:52 GMT</pubDate>
+<category>Cloud</category>
+<description>Recentemente, uma série de incidentes envolvendo agentes de IA com credenciais de nuvem chamou a atenção da comunidade tecnológica. Os relatos revelam como...</description>
+</item>
 <item>
 <title>OpenAI e o Futuro do Desenvolvimento: A Revolução do Hardware para Programadores</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/openai-e-o-futuro-do-desenvolvimento-a-revolucao-do-hardware-para-programadores.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sun, 14 Jun 2026 18:18:58 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>Nos últimos meses, temos visto uma verdadeira revolução no mercado de IPOs, especialmente com o grande destaque para empresas de inteligência artificial. A...</description>
-</item>
-<item>
-<title>O futuro do transporte: SpaceX ultrapassa Tesla e a revolução da tecnologia no setor</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/o-futuro-do-transporte-spacex-ultrapassa-tesla-e-a-revolucao-da-tecnologia-no-setor.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/o-futuro-do-transporte-spacex-ultrapassa-tesla-e-a-revolucao-da-tecnologia-no-setor.html</guid>
-<pubDate>Sun, 14 Jun 2026 16:27:21 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Recentemente, acompanhamos um marco surpreendente no mundo da tecnoligia e transporte: a SpaceX, a empresa de exploração espacial fundada por Elon Musk,...</description>
 </item>
 </channel>
 </rss>
