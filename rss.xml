@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 16 Jul 2026 19:08:41 GMT</lastBuildDate>
+<lastBuildDate>Fri, 17 Jul 2026 03:18:06 GMT</lastBuildDate>
+<item>
+<title>Desenterrando o Passado: Como a Arquitetura de Software Pode Transformar Legados em Oportunidades</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desenterrando-o-passado-como-a-arquitetura-de-software-pode-transformar-legados-em-oportunidades.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desenterrando-o-passado-como-a-arquitetura-de-software-pode-transformar-legados-em-oportunidades.html</guid>
+<pubDate>Fri, 17 Jul 2026 03:18:06 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>Em um mundo onde a tecnologia avança a passos largos, o legado de sistemas antigos muitas vezes se torna um fardo. No entanto, a prática de “restaurar”...</description>
+</item>
 <item>
 <title>Segurança de Código: Como o AWS Continuum Promete Transformar a Proteção das Aplicações Empresariais</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/seguranca-de-codigo-como-o-aws-continuum-promete-transformar-a-protecao-das-aplicacoes-empresariais.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sun, 14 Jun 2026 22:15:32 GMT</pubDate>
 <category>Tecnologia</category>
 <description>A história de Charlie Javice, fundadora da startup Frank, nos traz à tona uma questão que permeia o ecossistema de tecnologia e inovação: até onde podemos...</description>
-</item>
-<item>
-<title>A nova era das redes sociais: o dilema da segurança infantil</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-era-das-redes-sociais-o-dilema-da-seguranca-infantil.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-era-das-redes-sociais-o-dilema-da-seguranca-infantil.html</guid>
-<pubDate>Sun, 14 Jun 2026 20:23:23 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Recentemente, uma notícia chamou atenção no cenário internacional, especialmente entre os profissionais de tecnologia e arquitetura de software. O...</description>
 </item>
 </channel>
 </rss>
