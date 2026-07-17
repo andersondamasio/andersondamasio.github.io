@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 17 Jul 2026 11:20:40 GMT</lastBuildDate>
+<lastBuildDate>Fri, 17 Jul 2026 19:06:24 GMT</lastBuildDate>
+<item>
+<title>Infraestrutura Nativa em Nuvem: O Alicerce da Inteligência Artificial Autônoma</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/infraestrutura-nativa-em-nuvem-o-alicerce-da-inteligencia-artificial-autonoma.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/infraestrutura-nativa-em-nuvem-o-alicerce-da-inteligencia-artificial-autonoma.html</guid>
+<pubDate>Fri, 17 Jul 2026 19:06:24 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Nos dias de hoje, a tecnologia avança em um ritmo alucinante, especialmente quando falamos sobre Inteligência Artificial (IA). Recentemente, uma análise...</description>
+</item>
 <item>
 <title>Infraestrutura de Inteligência Artificial: Do Brilho das Agentes à Solidez da Plataforma</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/infraestrutura-de-inteligencia-artificial-do-brilho-das-agentes-a-solidez-da-plataforma.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Mon, 15 Jun 2026 06:29:45 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>Recentemente, o lançamento do Claude Fable 5 pela Anthropic trouxe à tona um debate quente sobre a autonomia e a segurança em sistemas de inteligência...</description>
-</item>
-<item>
-<title>Startup, Justiça e Tecnologia: O Que Podemos Aprender com o Caso de Charlie Javice</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/startup-justica-e-tecnologia-o-que-podemos-aprender-com-o-caso-de-charlie-javice.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/startup-justica-e-tecnologia-o-que-podemos-aprender-com-o-caso-de-charlie-javice.html</guid>
-<pubDate>Mon, 15 Jun 2026 00:14:26 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Hoje, vamos falar sobre um assunto que, à primeira vista, pode parecer distante do nosso cotidiano na área de tecnolgia, mas que traz lições valiosas para...</description>
 </item>
 </channel>
 </rss>

@@ -72593,5 +72593,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Infraestrutura Nativa em Nuvem: O Alicerce da Inteligência Artificial Autônoma",
+    "noticiaOriginal": "Cloud Native Infrastructure Emerges as the Foundation for Trustworthy Agentic AI",
+    "url": "artigos/inteligencia-artificial/infraestrutura-nativa-em-nuvem-o-alicerce-da-inteligencia-artificial-autonoma.html",
+    "data": "2026-07-17T19:06:24.513Z",
+    "dataFonte": "2026-07-17T12:00:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://www.infoq.com/news/2026/07/cncf-trustworthy-agentic-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 118,
+      "sinalEditorial": 80,
+      "palavrasFonte": 680,
+      "palavrasArtigo": 940,
+      "secoesArtigo": 8,
+      "similaridadeFonte": 0.0022
+    }
   }
 ]
