@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 17 Jul 2026 03:18:06 GMT</lastBuildDate>
+<lastBuildDate>Fri, 17 Jul 2026 11:20:40 GMT</lastBuildDate>
+<item>
+<title>Infraestrutura de Inteligência Artificial: Do Brilho das Agentes à Solidez da Plataforma</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/infraestrutura-de-inteligencia-artificial-do-brilho-das-agentes-a-solidez-da-plataforma.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/infraestrutura-de-inteligencia-artificial-do-brilho-das-agentes-a-solidez-da-plataforma.html</guid>
+<pubDate>Fri, 17 Jul 2026 11:20:40 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>A recente conferência QCon AI Boston 2026 trouxe à tona uma discussão essencial sobre como as tecnologias de inteligência artificial estão evoluindo além da...</description>
+</item>
 <item>
 <title>Desenterrando o Passado: Como a Arquitetura de Software Pode Transformar Legados em Oportunidades</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/desenterrando-o-passado-como-a-arquitetura-de-software-pode-transformar-legados-em-oportunidades.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Mon, 15 Jun 2026 00:14:26 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Hoje, vamos falar sobre um assunto que, à primeira vista, pode parecer distante do nosso cotidiano na área de tecnolgia, mas que traz lições valiosas para...</description>
-</item>
-<item>
-<title>O dilema das startups: quando a inovação esbarra na ética</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/o-dilema-das-startups-quando-a-inovacao-esbarra-na-etica.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/o-dilema-das-startups-quando-a-inovacao-esbarra-na-etica.html</guid>
-<pubDate>Sun, 14 Jun 2026 22:15:32 GMT</pubDate>
-<category>Tecnologia</category>
-<description>A história de Charlie Javice, fundadora da startup Frank, nos traz à tona uma questão que permeia o ecossistema de tecnologia e inovação: até onde podemos...</description>
 </item>
 </channel>
 </rss>
