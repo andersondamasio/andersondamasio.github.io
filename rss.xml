@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sat, 18 Jul 2026 14:51:50 GMT</lastBuildDate>
+<lastBuildDate>Sat, 18 Jul 2026 22:48:57 GMT</lastBuildDate>
+<item>
+<title>A Revolução do Conhecimento Empresarial: Pinecone Nexus e o Futuro dos Agentes de IA</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-do-conhecimento-empresarial-pinecone-nexus-e-o-futuro-dos-agentes-de-ia.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-do-conhecimento-empresarial-pinecone-nexus-e-o-futuro-dos-agentes-de-ia.html</guid>
+<pubDate>Sat, 18 Jul 2026 22:48:57 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Nos últimos anos, a inteligência artificial tem se tornado uma das áreas de maior destaque no desenvolvimento de software. No entanto, ainda enfrentamos...</description>
+</item>
 <item>
 <title>O Futuro da Riqueza Tecnológica: Redistribuição ou Autossuficiência?</title>
 <link>https://www.andersondamasio.com.br/artigos/tecnologia/o-futuro-da-riqueza-tecnologica-redistribuicao-ou-autossuficiencia.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Mon, 15 Jun 2026 23:50:03 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>A recente decisão do governo dos EUA de forçar a Anthropic a retirar seus modelos de IA do ar levanta questões importantes sobre a relação entre tecnologia...</description>
-</item>
-<item>
-<title>O céu não é o limite: o impacto da SpaceX no desenvolvimento de software</title>
-<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/o-ceu-nao-e-o-limite-o-impacto-da-spacex-no-desenvolvimento-de-software.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/o-ceu-nao-e-o-limite-o-impacto-da-spacex-no-desenvolvimento-de-software.html</guid>
-<pubDate>Mon, 15 Jun 2026 18:31:12 GMT</pubDate>
-<category>Desenvolvimento de Software</category>
-<description>A recente abertura de capital da SpaceX, que se tornou a maior da história, não só capturou a atenção do público, mas também acendeu discussões sobre como...</description>
 </item>
 </channel>
 </rss>
