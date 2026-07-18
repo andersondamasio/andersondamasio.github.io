@@ -72611,5 +72611,23 @@
       "secoesArtigo": 8,
       "similaridadeFonte": 0.0022
     }
+  },
+  {
+    "titulo": "Dolt 2.0: A Revolução do Controle de Versões em Bancos de Dados SQL",
+    "noticiaOriginal": "Version Controlled SQL Database Dolt Releases 2.0 with Automatic Storage Cleanup and Compression",
+    "url": "artigos/banco-de-dados/dolt-2-0-a-revolucao-do-controle-de-versoes-em-bancos-de-dados-sql.html",
+    "data": "2026-07-18T07:47:38.175Z",
+    "dataFonte": "2026-07-18T07:28:00.000Z",
+    "categoria": "Banco de Dados",
+    "urlFonte": "https://www.infoq.com/news/2026/07/dolt-version-control/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 104,
+      "sinalEditorial": 60,
+      "palavrasFonte": 545,
+      "palavrasArtigo": 1025,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]

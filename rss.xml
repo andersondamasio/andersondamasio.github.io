@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 17 Jul 2026 19:06:24 GMT</lastBuildDate>
+<lastBuildDate>Sat, 18 Jul 2026 07:47:38 GMT</lastBuildDate>
+<item>
+<title>Dolt 2.0: A Revolução do Controle de Versões em Bancos de Dados SQL</title>
+<link>https://www.andersondamasio.com.br/artigos/banco-de-dados/dolt-2-0-a-revolucao-do-controle-de-versoes-em-bancos-de-dados-sql.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/banco-de-dados/dolt-2-0-a-revolucao-do-controle-de-versoes-em-bancos-de-dados-sql.html</guid>
+<pubDate>Sat, 18 Jul 2026 07:47:38 GMT</pubDate>
+<category>Banco de Dados</category>
+<description>A recente atualização do Dolt 2.0 trouxe à tona uma série de inovações que podem transformar a maneira como lidamos com dados em sistemas escaláveis. Esta...</description>
+</item>
 <item>
 <title>Infraestrutura Nativa em Nuvem: O Alicerce da Inteligência Artificial Autônoma</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/infraestrutura-nativa-em-nuvem-o-alicerce-da-inteligencia-artificial-autonoma.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Mon, 15 Jun 2026 13:19:14 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Nos dias de hoje, ter um bom aplicativo de navegação é quase tão crucial quanto ter um smartphone. A disputa entre Google Maps e Waze tem gerado debates e...</description>
-</item>
-<item>
-<title>A revolução do software: Claude Fable 5 e o futuro da autonomia digital</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-do-software-claude-fable-5-e-o-futuro-da-autonomia-digital.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-do-software-claude-fable-5-e-o-futuro-da-autonomia-digital.html</guid>
-<pubDate>Mon, 15 Jun 2026 06:29:45 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Recentemente, o lançamento do Claude Fable 5 pela Anthropic trouxe à tona um debate quente sobre a autonomia e a segurança em sistemas de inteligência...</description>
 </item>
 </channel>
 </rss>
