@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sat, 18 Jul 2026 07:47:38 GMT</lastBuildDate>
+<lastBuildDate>Sat, 18 Jul 2026 14:51:50 GMT</lastBuildDate>
+<item>
+<title>O Futuro da Riqueza Tecnológica: Redistribuição ou Autossuficiência?</title>
+<link>https://www.andersondamasio.com.br/artigos/tecnologia/o-futuro-da-riqueza-tecnologica-redistribuicao-ou-autossuficiencia.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/o-futuro-da-riqueza-tecnologica-redistribuicao-ou-autossuficiencia.html</guid>
+<pubDate>Sat, 18 Jul 2026 14:51:50 GMT</pubDate>
+<category>Tecnologia</category>
+<description>Recentemente, a discussão sobre a concentração de riqueza na era da inteligência artificial (IA) ganhou novos contornos, especialmente após as declarações...</description>
+</item>
 <item>
 <title>Dolt 2.0: A Revolução do Controle de Versões em Bancos de Dados SQL</title>
 <link>https://www.andersondamasio.com.br/artigos/banco-de-dados/dolt-2-0-a-revolucao-do-controle-de-versoes-em-bancos-de-dados-sql.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Mon, 15 Jun 2026 18:31:12 GMT</pubDate>
 <category>Desenvolvimento de Software</category>
 <description>A recente abertura de capital da SpaceX, que se tornou a maior da história, não só capturou a atenção do público, mas também acendeu discussões sobre como...</description>
-</item>
-<item>
-<title>Navegação Inteligente: Google Maps vs. Waze na Era da Mobilidade Conectada</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/navegacao-inteligente-google-maps-vs-waze-na-era-da-mobilidade-conectada.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/navegacao-inteligente-google-maps-vs-waze-na-era-da-mobilidade-conectada.html</guid>
-<pubDate>Mon, 15 Jun 2026 13:19:14 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Nos dias de hoje, ter um bom aplicativo de navegação é quase tão crucial quanto ter um smartphone. A disputa entre Google Maps e Waze tem gerado debates e...</description>
 </item>
 </channel>
 </rss>
