@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sun, 19 Jul 2026 08:15:05 GMT</lastBuildDate>
+<lastBuildDate>Sun, 19 Jul 2026 20:07:28 GMT</lastBuildDate>
+<item>
+<title>Revolução nas Homepages: Como a Netflix Transformou a Personalização com GenPage</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/revolucao-nas-homepages-como-a-netflix-transformou-a-personalizacao-com-genpage.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/revolucao-nas-homepages-como-a-netflix-transformou-a-personalizacao-com-genpage.html</guid>
+<pubDate>Sun, 19 Jul 2026 20:07:28 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Recentemente, a Netflix fez ondas no mundo da tecnologia ao anunciar o GenPage, um sistema de inteligência artificial generativa que promete revolucionar a...</description>
+</item>
 <item>
 <title>A Revolução na Infraestrutura: Como o CloudFormation Express Mode Pode Transformar Seus Deployments</title>
 <link>https://www.andersondamasio.com.br/artigos/cloud/a-revolucao-na-infraestrutura-como-o-cloudformation-express-mode-pode-transformar-seus-deployments.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 16 Jun 2026 10:12:18 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Recentemente, ao me deparar com uma oferta fantástica do Audible, não pude deixar de refletir sobre como essa plataforma pode transformar a maneira como...</description>
-</item>
-<item>
-<title>A batalha entre inovação e regulamentação: o caso xAI</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-batalha-entre-inovacao-e-regulamentacao-o-caso-xai.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-batalha-entre-inovacao-e-regulamentacao-o-caso-xai.html</guid>
-<pubDate>Tue, 16 Jun 2026 04:09:19 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Recentemente, a disputa em torno da xAI e suas turbinas a gás em Mississippi trouxe à tona um debate intenso sobre a relação entre tecnologia, segurança...</description>
 </item>
 </channel>
 </rss>
