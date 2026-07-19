@@ -72665,5 +72665,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "A Revolução na Infraestrutura: Como o CloudFormation Express Mode Pode Transformar Seus Deployments",
+    "noticiaOriginal": "AWS Introduces CloudFormation Express Mode for Faster Infrastructure Deployments",
+    "url": "artigos/cloud/a-revolucao-na-infraestrutura-como-o-cloudformation-express-mode-pode-transformar-seus-deployments.html",
+    "data": "2026-07-19T08:15:05.927Z",
+    "dataFonte": "2026-07-19T05:59:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/07/cloudformation-express-mode/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 92,
+      "sinalEditorial": 48,
+      "palavrasFonte": 585,
+      "palavrasArtigo": 949,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]

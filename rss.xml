@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sat, 18 Jul 2026 22:48:57 GMT</lastBuildDate>
+<lastBuildDate>Sun, 19 Jul 2026 08:15:05 GMT</lastBuildDate>
+<item>
+<title>A Revolução na Infraestrutura: Como o CloudFormation Express Mode Pode Transformar Seus Deployments</title>
+<link>https://www.andersondamasio.com.br/artigos/cloud/a-revolucao-na-infraestrutura-como-o-cloudformation-express-mode-pode-transformar-seus-deployments.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/cloud/a-revolucao-na-infraestrutura-como-o-cloudformation-express-mode-pode-transformar-seus-deployments.html</guid>
+<pubDate>Sun, 19 Jul 2026 08:15:05 GMT</pubDate>
+<category>Cloud</category>
+<description>A Amazon Web Services (AWS) sempre teve um papel fundamental na evolução da tecnologia em nuvem, e a recente introdução do CloudFormation Express Mode...</description>
+</item>
 <item>
 <title>A Revolução do Conhecimento Empresarial: Pinecone Nexus e o Futuro dos Agentes de IA</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-revolucao-do-conhecimento-empresarial-pinecone-nexus-e-o-futuro-dos-agentes-de-ia.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 16 Jun 2026 04:09:19 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>Recentemente, a disputa em torno da xAI e suas turbinas a gás em Mississippi trouxe à tona um debate intenso sobre a relação entre tecnologia, segurança...</description>
-</item>
-<item>
-<title>A interferência do governo na IA: um alerta para o setor tecnológico</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-interferencia-do-governo-na-ia-um-alerta-para-o-setor-tecnologico.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-interferencia-do-governo-na-ia-um-alerta-para-o-setor-tecnologico.html</guid>
-<pubDate>Mon, 15 Jun 2026 23:50:03 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>A recente decisão do governo dos EUA de forçar a Anthropic a retirar seus modelos de IA do ar levanta questões importantes sobre a relação entre tecnologia...</description>
 </item>
 </channel>
 </rss>
