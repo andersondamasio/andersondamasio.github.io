@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 20 Jul 2026 15:49:04 GMT</lastBuildDate>
+<lastBuildDate>Mon, 20 Jul 2026 21:58:55 GMT</lastBuildDate>
+<item>
+<title>Novidades no Java: Impacto das Value Objects e Inovações em Ferramentas de Desenvolvimento</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/novidades-no-java-impacto-das-value-objects-e-inovacoes-em-ferramentas-de-desenvolvimento.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/novidades-no-java-impacto-das-value-objects-e-inovacoes-em-ferramentas-de-desenvolvimento.html</guid>
+<pubDate>Mon, 20 Jul 2026 21:58:55 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>O mundo do desenvolvimento em Java continua a evoluir com uma série de novidades que prometem impactar significativamente a forma como arquitetos e...</description>
+</item>
 <item>
 <title>Revolucionando a Construção de Agentes com a Abordagem Model-Driven</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/revolucionando-a-construcao-de-agentes-com-a-abordagem-model-driven.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 16 Jun 2026 19:41:33 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Nos dias de hoje, a automação residencial parece estar ao alcance de todos, e um exenplo disso é o uso dos plugs inteligentes. Recentemente, li uma matéria...</description>
-</item>
-<item>
-<title>A crise da fraude nos exames: como a tecnologia pode ser uma aliada</title>
-<link>https://www.andersondamasio.com.br/artigos/seguranca/a-crise-da-fraude-nos-exames-como-a-tecnologia-pode-ser-uma-aliada.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/a-crise-da-fraude-nos-exames-como-a-tecnologia-pode-ser-uma-aliada.html</guid>
-<pubDate>Tue, 16 Jun 2026 15:58:34 GMT</pubDate>
-<category>Segurança</category>
-<description>Recentemente, a Índia decidiu banir temporariamente o Telegram, um aplicativo de mensagens muito popular, devido a preocupações com fraudes em exames. Essa...</description>
 </item>
 </channel>
 </rss>
