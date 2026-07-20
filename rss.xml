@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sun, 19 Jul 2026 20:07:28 GMT</lastBuildDate>
+<lastBuildDate>Mon, 20 Jul 2026 15:49:04 GMT</lastBuildDate>
+<item>
+<title>Revolucionando a Construção de Agentes com a Abordagem Model-Driven</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/revolucionando-a-construcao-de-agentes-com-a-abordagem-model-driven.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/revolucionando-a-construcao-de-agentes-com-a-abordagem-model-driven.html</guid>
+<pubDate>Mon, 20 Jul 2026 15:49:04 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>A tecnologia avança em um ritmo alucinante, e o que antes parecia ficção científica, hoje se torna uma realidade palpável nas mãos de desenvolvedores e...</description>
+</item>
 <item>
 <title>Revolução nas Homepages: Como a Netflix Transformou a Personalização com GenPage</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/revolucao-nas-homepages-como-a-netflix-transformou-a-personalizacao-com-genpage.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 16 Jun 2026 15:58:34 GMT</pubDate>
 <category>Segurança</category>
 <description>Recentemente, a Índia decidiu banir temporariamente o Telegram, um aplicativo de mensagens muito popular, devido a preocupações com fraudes em exames. Essa...</description>
-</item>
-<item>
-<title>Aproveite o Audible: Uma Oportunidade de Audiolivros Grátis e Como Isso Pode Impactar Sua Rotina</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/aproveite-o-audible-uma-oportunidade-de-audiolivros-gratis-e-como-isso-pode-impactar-sua-rotina.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/aproveite-o-audible-uma-oportunidade-de-audiolivros-gratis-e-como-isso-pode-impactar-sua-rotina.html</guid>
-<pubDate>Tue, 16 Jun 2026 10:12:18 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Recentemente, ao me deparar com uma oferta fantástica do Audible, não pude deixar de refletir sobre como essa plataforma pode transformar a maneira como...</description>
 </item>
 </channel>
 </rss>
