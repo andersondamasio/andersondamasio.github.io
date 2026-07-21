@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 20 Jul 2026 21:58:55 GMT</lastBuildDate>
+<lastBuildDate>Tue, 21 Jul 2026 08:26:22 GMT</lastBuildDate>
+<item>
+<title>GitLab 19.2: Revolucionando a Segurança com Automação Inteligente</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/gitlab-19-2-revolucionando-a-seguranca-com-automacao-inteligente.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/gitlab-19-2-revolucionando-a-seguranca-com-automacao-inteligente.html</guid>
+<pubDate>Tue, 21 Jul 2026 08:26:22 GMT</pubDate>
+<category>Segurança</category>
+<description>O lançamento da versão 19.2 do GitLab trouxe à tona uma transformação significativa na forma como lidamos com a segurança em projetos de software. Ao...</description>
+</item>
 <item>
 <title>Novidades no Java: Impacto das Value Objects e Inovações em Ferramentas de Desenvolvimento</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/novidades-no-java-impacto-das-value-objects-e-inovacoes-em-ferramentas-de-desenvolvimento.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Tue, 16 Jun 2026 22:17:33 GMT</pubDate>
 <category>Segurança</category>
 <description>A privacidade na internet é um tema que gera muita discussão, e com razão. Recentemente, a Apple anunciou uma alteração em sua funcionalidade. &quot;Hide My...</description>
-</item>
-<item>
-<title>A revolução dos plugs inteligentes: como a tecnologia pode transformar seu lar</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-revolucao-dos-plugs-inteligentes-como-a-tecnologia-pode-transformar-seu-lar.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-revolucao-dos-plugs-inteligentes-como-a-tecnologia-pode-transformar-seu-lar.html</guid>
-<pubDate>Tue, 16 Jun 2026 19:41:33 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Nos dias de hoje, a automação residencial parece estar ao alcance de todos, e um exenplo disso é o uso dos plugs inteligentes. Recentemente, li uma matéria...</description>
 </item>
 </channel>
 </rss>
