@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Wed, 22 Jul 2026 15:41:06 GMT</lastBuildDate>
+<lastBuildDate>Wed, 22 Jul 2026 23:02:13 GMT</lastBuildDate>
+<item>
+<title>O Enigma das Faturas Fictícias: Lições do Incidente da AWS</title>
+<link>https://www.andersondamasio.com.br/artigos/cloud/o-enigma-das-faturas-ficticias-licoes-do-incidente-da-aws.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/cloud/o-enigma-das-faturas-ficticias-licoes-do-incidente-da-aws.html</guid>
+<pubDate>Wed, 22 Jul 2026 23:02:13 GMT</pubDate>
+<category>Cloud</category>
+<description>No dia 17 de julho, algo inusitado ocorreu com os clientes da AWS que acessaram suas contas: faturas estimadas atingiram números absurdos, variando de...</description>
+</item>
 <item>
 <title>Glow: A Revolução na Segurança de Endpoint na Era da Inteligência Artificial</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/glow-a-revolucao-na-seguranca-de-endpoint-na-era-da-inteligencia-artificial.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Wed, 17 Jun 2026 11:53:13 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Recentemente, a Snap Inc. apresentou suas novas óculos inteligentes, os Specs, numa conferência de tecnnologia na Califórnia. Após uma tentativa frustrada...</description>
-</item>
-<item>
-<title>KDE Plasma 6.7: Um Salto na Experiência do Usuário e no Desenvolvimento de Software</title>
-<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/kde-plasma-6-7-um-salto-na-experiencia-do-usuario-e-no-desenvolvimento-de-software.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/kde-plasma-6-7-um-salto-na-experiencia-do-usuario-e-no-desenvolvimento-de-software.html</guid>
-<pubDate>Wed, 17 Jun 2026 06:17:09 GMT</pubDate>
-<category>Desenvolvimento de Software</category>
-<description>Recentemente, tive a oportunidade de conferir as novidades que a versão 6.7 do KDE Plasma trouxe para o mundo Linux. Pode parecer apenas mais uma...</description>
 </item>
 </channel>
 </rss>

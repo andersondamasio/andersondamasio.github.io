@@ -72791,5 +72791,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "O Enigma das Faturas Fictícias: Lições do Incidente da AWS",
+    "noticiaOriginal": "AWS Billing Bug Shows Customers Trillion-Dollar Estimates While Its Own Cost Alarms Fail to Act",
+    "url": "artigos/cloud/o-enigma-das-faturas-ficticias-licoes-do-incidente-da-aws.html",
+    "data": "2026-07-22T23:02:13.938Z",
+    "dataFonte": "2026-07-22T10:19:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/07/aws-billing-estimates-incident/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 102,
+      "sinalEditorial": 72,
+      "palavrasFonte": 1212,
+      "palavrasArtigo": 924,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]
