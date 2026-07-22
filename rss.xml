@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Wed, 22 Jul 2026 08:27:12 GMT</lastBuildDate>
+<lastBuildDate>Wed, 22 Jul 2026 15:41:06 GMT</lastBuildDate>
+<item>
+<title>Glow: A Revolução na Segurança de Endpoint na Era da Inteligência Artificial</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/glow-a-revolucao-na-seguranca-de-endpoint-na-era-da-inteligencia-artificial.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/glow-a-revolucao-na-seguranca-de-endpoint-na-era-da-inteligencia-artificial.html</guid>
+<pubDate>Wed, 22 Jul 2026 15:41:06 GMT</pubDate>
+<category>Segurança</category>
+<description>A recente saída da Glow do modo stealth com uma avaliação de $1,2 bilhões é um sinal claro de que o setor de cibersegurança está em transformação. Com a...</description>
+</item>
 <item>
 <title>A Nova Era da Segurança em AI: Como Proteger Seus Workloads no GKE</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/a-nova-era-da-seguranca-em-ai-como-proteger-seus-workloads-no-gke.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Wed, 17 Jun 2026 06:17:09 GMT</pubDate>
 <category>Desenvolvimento de Software</category>
 <description>Recentemente, tive a oportunidade de conferir as novidades que a versão 6.7 do KDE Plasma trouxe para o mundo Linux. Pode parecer apenas mais uma...</description>
-</item>
-<item>
-<title>A Revolução dos TVs: Como a Tecnologia QLED Está Mudando Nossa Experiência de Entretenimento</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-revolucao-dos-tvs-como-a-tecnologia-qled-esta-mudando-nossa-experiencia-de-entretenimento.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-revolucao-dos-tvs-como-a-tecnologia-qled-esta-mudando-nossa-experiencia-de-entretenimento.html</guid>
-<pubDate>Wed, 17 Jun 2026 00:22:33 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Nos últimos meses, a tecnologia de TVs deu um verdadeiro salto quântico. Um exemplo recente que chamou atenção foi o modelo de 55 polegadas da série Omni...</description>
 </item>
 </channel>
 </rss>
