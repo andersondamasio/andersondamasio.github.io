@@ -72755,5 +72755,23 @@
       "secoesArtigo": 8,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "A Nova Era da Segurança em AI: Como Proteger Seus Workloads no GKE",
+    "noticiaOriginal": "GKE Security Blueprint Joins Growing List of Cloud AI Frameworks",
+    "url": "artigos/seguranca/a-nova-era-da-seguranca-em-ai-como-proteger-seus-workloads-no-gke.html",
+    "data": "2026-07-22T08:27:12.935Z",
+    "dataFonte": "2026-07-22T08:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/07/google-gke-ai-security-blueprint/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 134,
+      "sinalEditorial": 90,
+      "palavrasFonte": 839,
+      "palavrasArtigo": 919,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]

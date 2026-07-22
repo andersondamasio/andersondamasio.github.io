@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Tue, 21 Jul 2026 08:26:22 GMT</lastBuildDate>
+<lastBuildDate>Wed, 22 Jul 2026 08:27:12 GMT</lastBuildDate>
+<item>
+<title>A Nova Era da Segurança em AI: Como Proteger Seus Workloads no GKE</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/a-nova-era-da-seguranca-em-ai-como-proteger-seus-workloads-no-gke.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/a-nova-era-da-seguranca-em-ai-como-proteger-seus-workloads-no-gke.html</guid>
+<pubDate>Wed, 22 Jul 2026 08:27:12 GMT</pubDate>
+<category>Segurança</category>
+<description>Recentemente, a Google Cloud lançou um blueprint inovador que promete transformar a forma como gerenciamos a segurança de workloads de inteligência...</description>
+</item>
 <item>
 <title>GitLab 19.2: Revolucionando a Segurança com Automação Inteligente</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/gitlab-19-2-revolucionando-a-seguranca-com-automacao-inteligente.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Wed, 17 Jun 2026 00:22:33 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Nos últimos meses, a tecnologia de TVs deu um verdadeiro salto quântico. Um exemplo recente que chamou atenção foi o modelo de 55 polegadas da série Omni...</description>
-</item>
-<item>
-<title>Mudança no &quot;Hide My Email&quot;: O Impacto da Privacidade na Era Digital</title>
-<link>https://www.andersondamasio.com.br/artigos/seguranca/mudanca-no-hide-my-email-o-impacto-da-privacidade-na-era-digital.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/mudanca-no-hide-my-email-o-impacto-da-privacidade-na-era-digital.html</guid>
-<pubDate>Tue, 16 Jun 2026 22:17:33 GMT</pubDate>
-<category>Segurança</category>
-<description>A privacidade na internet é um tema que gera muita discussão, e com razão. Recentemente, a Apple anunciou uma alteração em sua funcionalidade. &quot;Hide My...</description>
 </item>
 </channel>
 </rss>
