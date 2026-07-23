@@ -72809,5 +72809,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "React e Rust: Uma Revolução na Compilação de Interfaces",
+    "noticiaOriginal": "Meta Ports React Compiler to Rust for Faster Builds and Tighter Toolchain Integration",
+    "url": "artigos/desenvolvimento-de-software/react-e-rust-uma-revolucao-na-compilacao-de-interfaces.html",
+    "data": "2026-07-23T08:28:08.576Z",
+    "dataFonte": "2026-07-23T06:07:00.000Z",
+    "categoria": "Desenvolvimento de Software",
+    "urlFonte": "https://www.infoq.com/news/2026/07/meta-react-compiler-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 98,
+      "sinalEditorial": 76,
+      "palavrasFonte": 661,
+      "palavrasArtigo": 854,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]
