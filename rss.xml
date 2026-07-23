@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 23 Jul 2026 08:28:08 GMT</lastBuildDate>
+<lastBuildDate>Thu, 23 Jul 2026 15:55:15 GMT</lastBuildDate>
+<item>
+<title>Inteligência Artificial e Observabilidade: O Futuro da Resolução de Incidentes na Expedia</title>
+<link>https://www.andersondamasio.com.br/artigos/observabilidade/inteligencia-artificial-e-observabilidade-o-futuro-da-resolucao-de-incidentes-na-expedia.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/observabilidade/inteligencia-artificial-e-observabilidade-o-futuro-da-resolucao-de-incidentes-na-expedia.html</guid>
+<pubDate>Thu, 23 Jul 2026 15:55:15 GMT</pubDate>
+<category>Observabilidade</category>
+<description>A cada dia que passa, a tecnologia avança em um ritmo alucinante, e as empresas precisam se adaptar a essa nova realidade. Recentemente, a Expedia Group...</description>
+</item>
 <item>
 <title>React e Rust: Uma Revolução na Compilação de Interfaces</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/react-e-rust-uma-revolucao-na-compilacao-de-interfaces.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Wed, 17 Jun 2026 18:22:50 GMT</pubDate>
 <category>Segurança</category>
 <description>Recentemente, uma onda de ataques cibernéticos tem colocado em evidência a importância da segurança das senhas, especialmente para dispositivos críticos...</description>
-</item>
-<item>
-<title>A corrida das funcionalidades: iOS 27 e o que o Android já trouxe</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-corrida-das-funcionalidades-ios-27-e-o-que-o-android-ja-trouxe.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-corrida-das-funcionalidades-ios-27-e-o-que-o-android-ja-trouxe.html</guid>
-<pubDate>Wed, 17 Jun 2026 15:40:10 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Recentemente, li uma matéria que me fez refletir sobre a eterna disputa entre iOS e Android. A nova versão do sistema da Apple, o iOS 27, apresentou...</description>
 </item>
 </channel>
 </rss>
