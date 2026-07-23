@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 23 Jul 2026 15:55:15 GMT</lastBuildDate>
+<lastBuildDate>Thu, 23 Jul 2026 22:55:15 GMT</lastBuildDate>
+<item>
+<title>Inovação nas Arquiteturas de Workflow: Como Transformar Fluxos de Trabalho em Dados Duráveis</title>
+<link>https://www.andersondamasio.com.br/artigos/banco-de-dados/inovacao-nas-arquiteturas-de-workflow-como-transformar-fluxos-de-trabalho-em-dados-duraveis.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/banco-de-dados/inovacao-nas-arquiteturas-de-workflow-como-transformar-fluxos-de-trabalho-em-dados-duraveis.html</guid>
+<pubDate>Thu, 23 Jul 2026 22:55:15 GMT</pubDate>
+<category>Banco de Dados</category>
+<description>Nos últimos anos, as arquiteturas de software têm passado por transformações significativas, impulsionadas pela necessidade de garantir maior confiabilidade...</description>
+</item>
 <item>
 <title>Inteligência Artificial e Observabilidade: O Futuro da Resolução de Incidentes na Expedia</title>
 <link>https://www.andersondamasio.com.br/artigos/observabilidade/inteligencia-artificial-e-observabilidade-o-futuro-da-resolucao-de-incidentes-na-expedia.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Wed, 17 Jun 2026 21:11:48 GMT</pubDate>
 <category>Tecnologia</category>
 <description>A recente notícia da entrada de Roelof Botha no conselho da SpaceX é um verdadeiro marco. O ex-sócio da Sequoia Capital, que tem uma bagagem incrível em...</description>
-</item>
-<item>
-<title>Fortinet em xeque: A vulnerabilidade das senhas e a cibersegurança das empresas</title>
-<link>https://www.andersondamasio.com.br/artigos/seguranca/fortinet-em-xeque-a-vulnerabilidade-das-senhas-e-a-ciberseguranca-das-empresas.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/fortinet-em-xeque-a-vulnerabilidade-das-senhas-e-a-ciberseguranca-das-empresas.html</guid>
-<pubDate>Wed, 17 Jun 2026 18:22:50 GMT</pubDate>
-<category>Segurança</category>
-<description>Recentemente, uma onda de ataques cibernéticos tem colocado em evidência a importância da segurança das senhas, especialmente para dispositivos críticos...</description>
 </item>
 </channel>
 </rss>
