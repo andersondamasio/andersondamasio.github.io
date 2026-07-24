@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 24 Jul 2026 06:28:36 GMT</lastBuildDate>
+<lastBuildDate>Fri, 24 Jul 2026 13:42:44 GMT</lastBuildDate>
+<item>
+<title>Dados Autônomos: A Nova Fronteira da Arquitetura para a Era da Inteligência Artificial</title>
+<link>https://www.andersondamasio.com.br/artigos/arquitetura/dados-autonomos-a-nova-fronteira-da-arquitetura-para-a-era-da-inteligencia-artificial.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/arquitetura/dados-autonomos-a-nova-fronteira-da-arquitetura-para-a-era-da-inteligencia-artificial.html</guid>
+<pubDate>Fri, 24 Jul 2026 13:42:44 GMT</pubDate>
+<category>Arquitetura</category>
+<description>Nos últimos anos, o cenário tecnológico tem se transformado rapidamente, especialmente com o crescimento exponencial da inteligência artificial generativa...</description>
+</item>
 <item>
 <title>Vazamentos Indesejados: O Desafio da Injeção Indireta em AI no GitHub</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/vazamentos-indesejados-o-desafio-da-injecao-indireta-em-ai-no-github.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Thu, 18 Jun 2026 04:07:53 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Se tem uma coisa que a gente não pode viver sem hoje em dia é o Google Maps. Ele não é apenas uma ferramenta de navegação, mas um verdadeiro canivete suíço...</description>
-</item>
-<item>
-<title>A alta dos preços da Apple: o impacto da demanda por memória e a estratégia em IA</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-alta-dos-precos-da-apple-o-impacto-da-demanda-por-memoria-e-a-estrategia-em-ia.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-alta-dos-precos-da-apple-o-impacto-da-demanda-por-memoria-e-a-estrategia-em-ia.html</guid>
-<pubDate>Wed, 17 Jun 2026 23:30:19 GMT</pubDate>
-<category>Tecnologia</category>
-<description>A recente declaração de Tim Cook sobre os possíveis aumentos nos preços dos produtos da Apple, devido à escassez de chips de memória, acendeu um alerta não...</description>
 </item>
 </channel>
 </rss>
