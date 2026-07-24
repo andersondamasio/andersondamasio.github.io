@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 23 Jul 2026 22:55:15 GMT</lastBuildDate>
+<lastBuildDate>Fri, 24 Jul 2026 06:28:36 GMT</lastBuildDate>
+<item>
+<title>Vazamentos Indesejados: O Desafio da Injeção Indireta em AI no GitHub</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/vazamentos-indesejados-o-desafio-da-injecao-indireta-em-ai-no-github.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/vazamentos-indesejados-o-desafio-da-injecao-indireta-em-ai-no-github.html</guid>
+<pubDate>Fri, 24 Jul 2026 06:28:36 GMT</pubDate>
+<category>Segurança</category>
+<description>Recentemente, um alerta importante ressoou na comunidade de tecnologia: a descoberta de um exploit conhecido como GitLost, que pode fazer com que dados...</description>
+</item>
 <item>
 <title>Inovação nas Arquiteturas de Workflow: Como Transformar Fluxos de Trabalho em Dados Duráveis</title>
 <link>https://www.andersondamasio.com.br/artigos/banco-de-dados/inovacao-nas-arquiteturas-de-workflow-como-transformar-fluxos-de-trabalho-em-dados-duraveis.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Wed, 17 Jun 2026 23:30:19 GMT</pubDate>
 <category>Tecnologia</category>
 <description>A recente declaração de Tim Cook sobre os possíveis aumentos nos preços dos produtos da Apple, devido à escassez de chips de memória, acendeu um alerta não...</description>
-</item>
-<item>
-<title>A chegada de Roelof Botha à SpaceX: O que isso significa para a Arquitetura de Software</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-chegada-de-roelof-botha-a-spacex-o-que-isso-significa-para-a-arquitetura-de-software.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-chegada-de-roelof-botha-a-spacex-o-que-isso-significa-para-a-arquitetura-de-software.html</guid>
-<pubDate>Wed, 17 Jun 2026 21:11:48 GMT</pubDate>
-<category>Tecnologia</category>
-<description>A recente notícia da entrada de Roelof Botha no conselho da SpaceX é um verdadeiro marco. O ex-sócio da Sequoia Capital, que tem uma bagagem incrível em...</description>
 </item>
 </channel>
 </rss>

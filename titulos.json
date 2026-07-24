@@ -72863,5 +72863,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Vazamentos Indesejados: O Desafio da Injeção Indireta em AI no GitHub",
+    "noticiaOriginal": "Indirect Prompt Injection Exploits GitHub's AI Agent to Leak Private Repository Data",
+    "url": "artigos/seguranca/vazamentos-indesejados-o-desafio-da-injecao-indireta-em-ai-no-github.html",
+    "data": "2026-07-24T06:28:36.295Z",
+    "dataFonte": "2026-07-23T20:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/07/gitlost-github-prompt-injection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 122,
+      "sinalEditorial": 84,
+      "palavrasFonte": 610,
+      "palavrasArtigo": 908,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]

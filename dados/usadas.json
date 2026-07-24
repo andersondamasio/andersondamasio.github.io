@@ -39934,5 +39934,10 @@
     "intro": "A maioria das falhas críticas que vi tinham ligação direta com má compreensão de Presentation: Compiling Workflows into Databases: The Architecture That Shouldn't Work (But Does).",
     "introOriginal": "A maioria das falhas críticas que vi tinham ligação direta com má compreensão de __TEMATICA__.",
     "data": "2026-07-23"
+  },
+  "2026-07-24-vazamentos-indesejados-o-desafio-da-injecao-indireta-em-ai-no-github": {
+    "intro": "Essa leitura me lembrou da importância de revisitar nossas práticas sobre Indirect Prompt Injection Exploits GitHub's AI Agent to Leak Private Repository Data regularmente.",
+    "introOriginal": "Essa leitura me lembrou da importância de revisitar nossas práticas sobre __TEMATICA__ regularmente.",
+    "data": "2026-07-24"
   }
 }
