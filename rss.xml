@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Fri, 24 Jul 2026 13:42:44 GMT</lastBuildDate>
+<lastBuildDate>Fri, 24 Jul 2026 21:02:28 GMT</lastBuildDate>
+<item>
+<title>Agentes Autônomos: A Nova Fronteira da Codificação com LangChain4j</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/agentes-autonomos-a-nova-fronteira-da-codificacao-com-langchain4j.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/agentes-autonomos-a-nova-fronteira-da-codificacao-com-langchain4j.html</guid>
+<pubDate>Fri, 24 Jul 2026 21:02:28 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>Recentemente, uma experiência inovadora trouxe à luz o potencial dos modelos de linguagem (LLMs) na criação de sistemas de codificação autônomos. Ao...</description>
+</item>
 <item>
 <title>Dados Autônomos: A Nova Fronteira da Arquitetura para a Era da Inteligência Artificial</title>
 <link>https://www.andersondamasio.com.br/artigos/arquitetura/dados-autonomos-a-nova-fronteira-da-arquitetura-para-a-era-da-inteligencia-artificial.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Thu, 18 Jun 2026 08:53:27 GMT</pubDate>
 <category>Segurança</category>
 <description>A recente iniciativa da Chainguard, chamada Athena, traz um sopro de esperança para o mundo da segurança de software. Em tempos onde as ameaças cibernéticas...</description>
-</item>
-<item>
-<title>Aproveite ao Máximo o Google Maps: 40 Dicas que Vão Facilitar sua Vida</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/aproveite-ao-maximo-o-google-maps-40-dicas-que-vao-facilitar-sua-vida.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/aproveite-ao-maximo-o-google-maps-40-dicas-que-vao-facilitar-sua-vida.html</guid>
-<pubDate>Thu, 18 Jun 2026 04:07:53 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Se tem uma coisa que a gente não pode viver sem hoje em dia é o Google Maps. Ele não é apenas uma ferramenta de navegação, mas um verdadeiro canivete suíço...</description>
 </item>
 </channel>
 </rss>
