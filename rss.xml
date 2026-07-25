@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sat, 25 Jul 2026 07:14:53 GMT</lastBuildDate>
+<lastBuildDate>Sat, 25 Jul 2026 13:23:41 GMT</lastBuildDate>
+<item>
+<title>Análise de Causas Raiz em IA: O Novo Foco em Engenharia de Contexto</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/analise-de-causas-raiz-em-ia-o-novo-foco-em-engenharia-de-contexto.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/analise-de-causas-raiz-em-ia-o-novo-foco-em-engenharia-de-contexto.html</guid>
+<pubDate>Sat, 25 Jul 2026 13:23:41 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Nos últimos anos, a evolução da inteligência artificial (IA) tem trazido à tona novas abordagens para resolver problemas complexos, especialmente quando se...</description>
+</item>
 <item>
 <title>Como a Zalando Revolucionou o Balanceamento de Carga: Lições para Arquitetos de Software</title>
 <link>https://www.andersondamasio.com.br/artigos/arquitetura/como-a-zalando-revolucionou-o-balanceamento-de-carga-licoes-para-arquitetos-de-software.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Thu, 18 Jun 2026 16:44:21 GMT</pubDate>
 <category>Desenvolvimento de Software</category>
 <description>Nos últimos meses, o mundo da tecnologia tem visto uma movimentação intensa, especialmente no que diz respeito aos preços dos produtos da Apple. Tim Cook, o...</description>
-</item>
-<item>
-<title>A nova era das mensagens: realidade aumentada interativa que transforma conversas</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-era-das-mensagens-realidade-aumentada-interativa-que-transforma-conversas.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/a-nova-era-das-mensagens-realidade-aumentada-interativa-que-transforma-conversas.html</guid>
-<pubDate>Thu, 18 Jun 2026 12:31:49 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Recentemente, uma startup chamada Pixi lançou um app que promete revolucionar a forma como nos comunicamos. Ao invés de apenas enviar mensagens de texto ou...</description>
 </item>
 </channel>
 </rss>
