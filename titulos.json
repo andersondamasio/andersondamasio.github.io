@@ -72917,5 +72917,23 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Como a Zalando Revolucionou o Balanceamento de Carga: Lições para Arquitetos de Software",
+    "noticiaOriginal": "How Zalando Built an In-Process Client-Side Load Balancer for One Million Requests per Second",
+    "url": "artigos/arquitetura/como-a-zalando-revolucionou-o-balanceamento-de-carga-licoes-para-arquitetos-de-software.html",
+    "data": "2026-07-25T07:14:53.614Z",
+    "dataFonte": "2026-07-25T06:43:00.000Z",
+    "categoria": "Arquitetura",
+    "urlFonte": "https://www.infoq.com/news/2026/07/client-side-load-balancer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 108,
+      "sinalEditorial": 64,
+      "palavrasFonte": 744,
+      "palavrasArtigo": 914,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0
+    }
   }
 ]
