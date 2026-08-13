@@ -3,8 +3,8 @@ name: gerar-e-commitar
 on:
   workflow_dispatch: {}
   schedule:
-    # GitHub Actions usa UTC; 12:00 UTC equivale a 09:00 em Sao Paulo.
-    - cron: "0 12 1 * *"
+    # GitHub Actions usa UTC; toda segunda as 12:00 UTC equivale a 09:00 em Sao Paulo.
+    - cron: "0 12 * * 1"
 
 permissions:
   contents: write
