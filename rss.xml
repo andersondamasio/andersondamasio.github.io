@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Sat, 25 Jul 2026 13:23:41 GMT</lastBuildDate>
+<lastBuildDate>Mon, 17 Aug 2026 12:55:37 GMT</lastBuildDate>
+<item>
+<title>Integração de Inteligência Artificial e Observabilidade: O Futuro do Desenvolvimento de Software</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/integracao-de-inteligencia-artificial-e-observabilidade-o-futuro-do-desenvolvimento-de-software.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/integracao-de-inteligencia-artificial-e-observabilidade-o-futuro-do-desenvolvimento-de-software.html</guid>
+<pubDate>Mon, 17 Aug 2026 12:55:37 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>Nos dias de hoje, a convergência entre Inteligência Artificial (IA) e práticas de desenvolvimento de software está moldando um novo paradigma na forma como...</description>
+</item>
 <item>
 <title>Análise de Causas Raiz em IA: O Novo Foco em Engenharia de Contexto</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/analise-de-causas-raiz-em-ia-o-novo-foco-em-engenharia-de-contexto.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Thu, 18 Jun 2026 19:54:36 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>O ecossistema de startups está em constante evolução, e o recente Demo Day do Y Combinator trouxe à tona algumas inovações que, sem dúvida, vão moldar o...</description>
-</item>
-<item>
-<title>Aumentos de Preço na Apple: O Que Isso Tem a Ver com Arquitetura de Software?</title>
-<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/aumentos-de-preco-na-apple-o-que-isso-tem-a-ver-com-arquitetura-de-software.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/aumentos-de-preco-na-apple-o-que-isso-tem-a-ver-com-arquitetura-de-software.html</guid>
-<pubDate>Thu, 18 Jun 2026 16:44:21 GMT</pubDate>
-<category>Desenvolvimento de Software</category>
-<description>Nos últimos meses, o mundo da tecnologia tem visto uma movimentação intensa, especialmente no que diz respeito aos preços dos produtos da Apple. Tim Cook, o...</description>
 </item>
 </channel>
 </rss>
