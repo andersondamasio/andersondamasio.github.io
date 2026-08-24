@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 17 Aug 2026 12:55:37 GMT</lastBuildDate>
+<lastBuildDate>Mon, 24 Aug 2026 13:01:38 GMT</lastBuildDate>
+<item>
+<title>O Futuro da Engenharia de Software: Criando Valor na Era da Automação</title>
+<link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/o-futuro-da-engenharia-de-software-criando-valor-na-era-da-automacao.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/o-futuro-da-engenharia-de-software-criando-valor-na-era-da-automacao.html</guid>
+<pubDate>Mon, 24 Aug 2026 13:01:38 GMT</pubDate>
+<category>Desenvolvimento de Software</category>
+<description>Nos últimos anos, temos assistido a uma transformação impressionante no cenário da tecnologia. O surgimento de ferramentas de inteligência artificial que...</description>
+</item>
 <item>
 <title>Integração de Inteligência Artificial e Observabilidade: O Futuro do Desenvolvimento de Software</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/integracao-de-inteligencia-artificial-e-observabilidade-o-futuro-do-desenvolvimento-de-software.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 19 Jun 2026 00:32:34 GMT</pubDate>
 <category>Tecnologia</category>
 <description>A natureza tem um jeito curioso de nos surpreender. Enquanto muitos de nós enfrentamos questões cotidianas como a falta de água ou a escassez de recursos,...</description>
-</item>
-<item>
-<title>Inovações em IA: O que as Startups do YC podem nos ensinar sobre o futuro do desenvolvimento de software</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/inovacoes-em-ia-o-que-as-startups-do-yc-podem-nos-ensinar-sobre-o-futuro-do-desenvolvimento-de-software.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/inovacoes-em-ia-o-que-as-startups-do-yc-podem-nos-ensinar-sobre-o-futuro-do-desenvolvimento-de-software.html</guid>
-<pubDate>Thu, 18 Jun 2026 19:54:36 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>O ecossistema de startups está em constante evolução, e o recente Demo Day do Y Combinator trouxe à tona algumas inovações que, sem dúvida, vão moldar o...</description>
 </item>
 </channel>
 </rss>
