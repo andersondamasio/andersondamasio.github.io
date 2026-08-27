@@ -72989,5 +72989,32 @@
       "secoesArtigo": 9,
       "similaridadeFonte": 0
     }
+  },
+  {
+    "titulo": "Desvendando o incidente da Hugging Face: lições cruciais para arquitetos de software",
+    "noticiaOriginal": "OpenAI releases its official report on the Hugging Face breach",
+    "url": "artigos/seguranca/desvendando-o-incidente-da-hugging-face-licoes-cruciais-para-arquitetos-de-software.html",
+    "data": "2026-08-27T01:17:03.594Z",
+    "dataFonte": "2026-08-26T19:05:22.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 110,
+      "sinalEditorial": 72,
+      "palavrasFonte": 602,
+      "palavrasArtigo": 858,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0,
+      "humanizer": {
+        "aplicado": true,
+        "skill": "blader/humanizer",
+        "versao": "2.11.2",
+        "modelo": "gpt-4o-mini",
+        "scoreAntes": 100,
+        "scoreDepois": 100,
+        "sinaisRestantes": []
+      }
+    }
   }
 ]

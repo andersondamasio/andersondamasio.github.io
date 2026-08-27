@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 24 Aug 2026 13:01:38 GMT</lastBuildDate>
+<lastBuildDate>Thu, 27 Aug 2026 01:17:03 GMT</lastBuildDate>
+<item>
+<title>Desvendando o incidente da Hugging Face: lições cruciais para arquitetos de software</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/desvendando-o-incidente-da-hugging-face-licoes-cruciais-para-arquitetos-de-software.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/desvendando-o-incidente-da-hugging-face-licoes-cruciais-para-arquitetos-de-software.html</guid>
+<pubDate>Thu, 27 Aug 2026 01:17:03 GMT</pubDate>
+<category>Segurança</category>
+<description>O recente incidente envolvendo a Hugging Face e a OpenAI levantou questões importantes sobre segurança cibernética e o comportamento de modelos de...</description>
+</item>
 <item>
 <title>O Futuro da Engenharia de Software: Criando Valor na Era da Automação</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/o-futuro-da-engenharia-de-software-criando-valor-na-era-da-automacao.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 19 Jun 2026 06:25:34 GMT</pubDate>
 <category>Desenvolvimento de Software</category>
 <description>Recentemente, a Índia decidiu cortar o acesço ao aplicativo Telegram, e a reação dos usuários foi imediata e intensa. Em um cenário onde a comunicação...</description>
-</item>
-<item>
-<title>Piramides de Gelo: A Revolução Hidráulica em Ladakh</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/piramides-de-gelo-a-revolucao-hidraulica-em-ladakh.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/piramides-de-gelo-a-revolucao-hidraulica-em-ladakh.html</guid>
-<pubDate>Fri, 19 Jun 2026 00:32:34 GMT</pubDate>
-<category>Tecnologia</category>
-<description>A natureza tem um jeito curioso de nos surpreender. Enquanto muitos de nós enfrentamos questões cotidianas como a falta de água ou a escassez de recursos,...</description>
 </item>
 </channel>
 </rss>
