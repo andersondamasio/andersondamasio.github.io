@@ -34,6 +34,9 @@ jobs:
       - name: Instalar dependências
         run: npm ci
 
+      - name: Validar regras Humanizer
+        run: npm run test:humanizer
+
       - name: Instalar Chromium para Puppeteer
         run: npx puppeteer browsers install chrome
 

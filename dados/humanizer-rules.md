@@ -30,6 +30,13 @@ incertezas e conclusoes sustentadas pela fonte.
   "relatorios indicam" quando nenhuma fonte nomeada sustenta a frase.
 - Cliches de IA, como "papel crucial", "cenario em constante evolucao",
   "divisor de aguas", "o futuro parece promissor" e "vamos mergulhar".
+- Titulos de caca-clique ou formulaicos iniciados por "Desvendando",
+  "Descubra", "Explorando" ou "Revolucao", assim como "licoes cruciais",
+  "nova era", "o futuro de" e "guia completo".
+- Frases prontas como "levantou questoes importantes", "a medida que as
+  tecnologias avancam", "neste artigo exploraremos", "ressalta a importancia",
+  "destaca a necessidade", "detalhes valiosos", "e vital", "e fundamental",
+  "mais critico do que nunca" e "somente assim poderemos".
 - Construcoes repetidas do tipo "nao apenas X, mas tambem Y", grupos forcados de
   tres itens e frases que anunciam o proximo ponto.
 - Secoes formulaicas de desafios, perspectivas futuras ou conclusoes otimistas
@@ -42,6 +49,8 @@ incertezas e conclusoes sustentadas pela fonte.
   limite de conhecimento.
 - Excesso de voz passiva, qualificadores, frases de preenchimento, negrito e
   subtitulos em formato de titulo publicitario.
+- Listas em que cada item comeca com um rotulo generico em negrito seguido de
+  dois-pontos.
 
 ## Forma e estrutura
 
@@ -49,6 +58,9 @@ incertezas e conclusoes sustentadas pela fonte.
 - Alterne naturalmente frases curtas e longas sem criar fragmentos teatrais.
 - Nao use travessao, meia-risca ou dois hifens como travessao.
 - Use maiusculas apenas no inicio dos titulos e em nomes proprios.
+- Escreva titulos e subtitulos especificos para o assunto. Evite rotulos
+  genericos como "Explicacao tecnica aprofundada", "Dicas avancadas" e
+  "Conclusao" quando um titulo concreto puder dizer o que a secao entrega.
 - Preserve o HTML semantico e retorne somente tags permitidas no rascunho.
 - Preserve integralmente blocos `pre` e `code`, URLs e todos os valores
   numericos.

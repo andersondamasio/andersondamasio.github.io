@@ -92,13 +92,26 @@ function adicionarSinal(sinais, id, ocorrencias, pesoUnitario, limite) {
 function avaliarSinaisHumanizer({ titulo, corpoArtigo }) {
   const bruto = `${titulo || ""}\n${corpoArtigo || ""}`;
   const normalizado = textoNormalizado(bruto);
+  const tituloNormalizado = textoNormalizado(titulo);
   const sinais = [];
   let penalidade = 0;
+
+  const titulosFormulaicos = contarOcorrencias(
+    tituloNormalizado,
+    /(?:^(?:desvendando|descubra|explorando|navegando)\b|\b(?:licoes cruciais|papel crucial|nova era|a revolucao|o futuro (?:de|da|do)|guia completo|tudo o que voce precisa saber|mudanca de paradigma)\b)/gi
+  );
+  penalidade += adicionarSinal(sinais, "titulo-formulaico", titulosFormulaicos, 24, 3);
 
   for (const item of padroesPontuados) {
     const ocorrencias = contarOcorrencias(normalizado, item.pattern);
     penalidade += adicionarSinal(sinais, item.id, ocorrencias, item.peso, item.limite);
   }
+
+  const frasesFormulaicas = contarOcorrencias(
+    normalizado,
+    /\b(?:levantou questoes importantes|a medida que (?:as )?tecnologias avancam|torna-se cada vez mais|neste artigo (?:exploraremos|veremos|vamos)|ressalta a importancia|destaca a necessidade|detalhes valiosos|mudancas significativas|e vital que|e fundamental que|mais critic[oa] do que nunca|cenario dinamico|somente assim poderemos|um lembrete da complexidade|explorar o potencial|prioridade em todas as fases)\b/gi
+  );
+  penalidade += adicionarSinal(sinais, "frase-formulaica", frasesFormulaicas, 5, 8);
 
   const travessoes = contarOcorrencias(bruto, /[\u2013\u2014]|\s--\s/g);
   penalidade += adicionarSinal(sinais, "travessao", travessoes, 4, 4);
@@ -108,11 +121,14 @@ function avaliarSinaisHumanizer({ titulo, corpoArtigo }) {
     penalidade += adicionarSinal(sinais, "negrito-em-excesso", strongTags - 8, 2, 5);
   }
 
+  const listasComRotuloEmNegrito = contarOcorrencias(bruto, /<li\b[^>]*>\s*<strong\b[^>]*>[^<]+:\s*<\/strong>/gi);
+  penalidade += adicionarSinal(sinais, "lista-com-rotulos-em-negrito", listasComRotuloEmNegrito, 4, 4);
+
   const headingsFormulaicos = contarOcorrencias(
     normalizado,
-    /\b(?:perspectivas futuras|olhando para o futuro|conclusao: um futuro|o futuro e agora)\b/gi
+    /\b(?:perspectivas futuras|olhando para o futuro|conclusao: um futuro|o futuro e agora|explicacao tecnica aprofundada|dicas avancadas para|aplicacao pratica para|riscos e cuidados)\b/gi
   );
-  penalidade += adicionarSinal(sinais, "encerramento-formulaico", headingsFormulaicos, 8, 2);
+  penalidade += adicionarSinal(sinais, "secao-formulaica", headingsFormulaicos, 4, 4);
 
   const trechoFinal = normalizado.slice(-650);
   const finaisGenericos = contarOcorrencias(

@@ -452,6 +452,7 @@ const minPalavrasArtigoGerado = numeroAmbiente("MIN_PALAVRAS_ARTIGO_GERADO", 850
 const minSecoesArtigoGerado = numeroAmbiente("MIN_SECOES_ARTIGO_GERADO", 5, 3);
 const maxSimilaridadeFonteArtigo = numeroDecimalAmbiente("MAX_SIMILARIDADE_FONTE_ARTIGO", 0.12, 0.02);
 const minScoreHumanizer = numeroAmbiente("MIN_SCORE_HUMANIZER", 75, 50);
+const humanizerMaxTentativas = numeroAmbiente("HUMANIZER_MAX_TENTATIVAS", 2, 1);
 const humanizerModel = process.env.OPENAI_HUMANIZER_MODEL || "gpt-4o-mini";
 const artigosPorPagina = 10;
 const paginasListagemIndexaveis = 3;
@@ -1658,82 +1659,117 @@ async function humanizarArtigoGerado({ titulo, corpoArtigo, noticia, textoFonte 
   const regras = carregarRegrasHumanizer();
   const avaliacaoAntes = avaliarSinaisHumanizer({ titulo, corpoArtigo });
   const original = { titulo, corpoArtigo };
-  const contexto = {
-    fonte: {
-      titulo: noticia.titulo,
-      url: noticia.url,
-      texto: textoFonte
-    },
-    rascunho: {
-      titulo,
-      corpo: corpoArtigo
-    }
+  let feedback = null;
+  let ultimoResultado = {
+    aceita: false,
+    motivos: ["humanizer-sem-resultado"],
+    avaliacaoAntes,
+    avaliacaoDepois: { score: 0, penalidade: 100, sinais: [] },
+    tentativas: 0
   };
 
-  const response = await chamarOpenAiChatCompletion({
-    model: humanizerModel,
-    response_format: { type: "json_object" },
-    messages: [
-      {
-        role: "system",
-        content: [
-          "Voce e a etapa editorial obrigatoria Humanizer de um gerador de artigos tecnicos.",
-          "Reescreva somente a forma do rascunho. Preserve integralmente o significado, os fatos e o HTML semantico.",
-          "Nao invente experiencia pessoal. Nao altere numeros, URLs ou blocos de codigo.",
-          "Responda somente com JSON valido no formato {\"titulo\":\"...\",\"corpo\":\"...\"}.",
-          "",
-          regras
-        ].join("\n")
+  for (let tentativa = 1; tentativa <= humanizerMaxTentativas; tentativa += 1) {
+    const contexto = {
+      fonte: {
+        titulo: noticia.titulo,
+        url: noticia.url,
+        texto: textoFonte
       },
-      {
-        role: "user",
-        content: JSON.stringify(contexto)
-      }
-    ],
-    temperature: 0.2
-  });
+      rascunho: {
+        titulo,
+        corpo: corpoArtigo
+      },
+      auditoria: {
+        score: avaliacaoAntes.score,
+        minimo: minScoreHumanizer,
+        sinais: avaliacaoAntes.sinais.map(item => item.id)
+      },
+      tentativa,
+      feedbackDaTentativaAnterior: feedback
+    };
 
-  const raw = response.data?.choices?.[0]?.message?.content;
-  let revisado;
-  try {
-    revisado = JSON.parse(String(raw || ""));
-  } catch {
-    return {
-      aceita: false,
-      motivos: ["resposta-humanizer-invalida"],
+    const response = await chamarOpenAiChatCompletion({
+      model: humanizerModel,
+      response_format: { type: "json_object" },
+      messages: [
+        {
+          role: "system",
+          content: [
+            "Voce e a etapa editorial obrigatoria Humanizer de um gerador de artigos tecnicos.",
+            "O rascunho deve ser editado de verdade quando a auditoria apontar sinais. Nao devolva o mesmo texto.",
+            "Reescreva titulo, subtitulos e paragrafos formulaicos de forma especifica para o assunto.",
+            "Preserve integralmente o significado, os fatos e o HTML semantico.",
+            "Nao invente experiencia pessoal. Nao altere numeros, URLs ou blocos de codigo.",
+            "Responda somente com JSON valido no formato {\"titulo\":\"...\",\"corpo\":\"...\"}.",
+            "",
+            regras
+          ].join("\n")
+        },
+        {
+          role: "user",
+          content: JSON.stringify(contexto)
+        }
+      ],
+      temperature: 0.25
+    });
+
+    const raw = response.data?.choices?.[0]?.message?.content;
+    let revisado;
+    try {
+      revisado = JSON.parse(String(raw || ""));
+    } catch {
+      feedback = { motivos: ["resposta-humanizer-invalida"] };
+      ultimoResultado = {
+        aceita: false,
+        motivos: feedback.motivos,
+        avaliacaoAntes,
+        avaliacaoDepois: { score: 0, penalidade: 100, sinais: [] },
+        tentativas: tentativa
+      };
+      continue;
+    }
+
+    const tituloRevisado = limparTitulo(revisado.titulo);
+    const corpoRevisado = String(revisado.corpo || "").trim();
+    const preservacao = validarPreservacaoHumanizer(original, {
+      titulo: tituloRevisado,
+      corpoArtigo: corpoRevisado
+    });
+    const avaliacaoDepois = avaliarSinaisHumanizer({
+      titulo: tituloRevisado,
+      corpoArtigo: corpoRevisado
+    });
+    const motivos = [...preservacao.motivos];
+
+    if (avaliacaoDepois.score < minScoreHumanizer) {
+      motivos.push(`score-humanizer-${avaliacaoDepois.score}/${minScoreHumanizer}`);
+    }
+
+    if (avaliacaoAntes.score < minScoreHumanizer && avaliacaoDepois.score <= avaliacaoAntes.score) {
+      motivos.push(`humanizer-sem-melhoria-${avaliacaoAntes.score}/${avaliacaoDepois.score}`);
+    }
+
+    ultimoResultado = {
+      aceita: motivos.length === 0,
+      motivos,
+      titulo: tituloRevisado,
+      corpoArtigo: corpoRevisado,
       avaliacaoAntes,
-      avaliacaoDepois: { score: 0, penalidade: 100, sinais: [] }
+      avaliacaoDepois,
+      tentativas: tentativa
+    };
+
+    console.log(`Humanizer tentativa ${tentativa}/${humanizerMaxTentativas}: score ${avaliacaoAntes.score} → ${avaliacaoDepois.score}.`);
+    if (ultimoResultado.aceita) return ultimoResultado;
+
+    feedback = {
+      motivos,
+      scoreObtido: avaliacaoDepois.score,
+      sinaisRestantes: avaliacaoDepois.sinais.map(item => item.id)
     };
   }
 
-  const tituloRevisado = limparTitulo(revisado.titulo);
-  const corpoRevisado = String(revisado.corpo || "").trim();
-  const preservacao = validarPreservacaoHumanizer(original, {
-    titulo: tituloRevisado,
-    corpoArtigo: corpoRevisado
-  });
-  const avaliacaoDepois = avaliarSinaisHumanizer({
-    titulo: tituloRevisado,
-    corpoArtigo: corpoRevisado
-  });
-  const motivos = [...preservacao.motivos];
-
-  if (avaliacaoDepois.score < minScoreHumanizer) {
-    motivos.push(`score-humanizer-${avaliacaoDepois.score}/${minScoreHumanizer}`);
-  }
-
-  if (avaliacaoDepois.score < avaliacaoAntes.score) {
-    motivos.push(`humanizer-piorou-score-${avaliacaoAntes.score}/${avaliacaoDepois.score}`);
-  }
-
-  return {
-    aceita: motivos.length === 0,
-    motivos,
-    titulo: tituloRevisado,
-    corpoArtigo: corpoRevisado,
-    avaliacaoAntes,
-    avaliacaoDepois
-  };
+  return ultimoResultado;
 }
 
 function formatDateTime(date) {
@@ -2233,10 +2269,11 @@ Seu objetivo é criar um rascunho editorial original, útil e tecnicamente verif
 
 **O que você deve produzir:**
 
-1. Um **título original e criativo**, em português, inspirado na notícia, mas:
+1. Um **título específico, sóbrio e informativo**, em português, inspirado na notícia, mas:
    - Sem tradução literal, use palavras diferentes sem distorcer a original.
    - Com estilo natural para o público brasileiro de tecnologia.
-   - Que traga um olhar técnico, provocativo ou prático, e como a Arquitetura e Desenvolvimento de Software pode colaborar com isso, como se fosse você mesmo escrevendo.
+   - Que identifique o fato ou decisão técnica central e deixe claro o benefício da leitura.
+   - Sem fórmulas de caça-clique como "Desvendando", "Descubra", "Revolução", "Nova era", "O futuro de", "lições cruciais" ou "guia completo".
 
 2. Em seguida, **um artigo completo**, com:
    - Uma introdução natural e humanizada.
@@ -2251,13 +2288,15 @@ Seu objetivo é criar um rascunho editorial original, útil e tecnicamente verif
    - Uma análise de fôlego, com pelo menos ${minPalavrasArtigoGerado} palavras quando a fonte permitir.
 
 3. Ao longo do artigo, use marcações HTML semânticas para melhorar o SEO:
-- Use <h2> apenas para títulos principais de seções (ex: Introdução, Conclusão, Dicas, etc).
+- Use <h2> apenas para títulos principais de seções e faça cada título antecipar o conteúdo concreto da seção.
 - Use <h3> para subtítulos dentro de seções.
 - Nunca inclua mais de uma frase ou parágrafo dentro de uma única tag <h2>.
 - Nunca coloque parágrafos, blocos de código ou listas dentro de <h2> ou <h3>.
 - Use <p> para conteúdo descritivo e <h2>/<h3> apenas para títulos curtos.
 - Use listas com <ul> ou <ol> sempre que houver itens.
-- Destaque palavras com <strong> ou <em>.
+- Use <strong> ou <em> com moderação, apenas quando o destaque ajudar a leitura.
+- Prefira títulos de seção específicos para o assunto. Evite rótulos genéricos como "Explicação técnica aprofundada", "Dicas avançadas" e "Conclusão".
+- Não use negrito como rótulo repetitivo no início de cada item de uma lista.
 
 4. Ao final do artigo, inclua:
    - Um resumo objetivo com até 150 caracteres, começando com: Resumo:
@@ -2663,6 +2702,7 @@ if (!existe) {
         modelo: humanizerModel,
         scoreAntes: humanizacao.avaliacaoAntes.score,
         scoreDepois: humanizacao.avaliacaoDepois.score,
+        tentativas: humanizacao.tentativas,
         sinaisRestantes: humanizacao.avaliacaoDepois.sinais.map(item => item.id)
       }
     }
