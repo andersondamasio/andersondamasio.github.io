@@ -632,14 +632,14 @@ O `ads.txt` tambem fica restrito ao publisher autorizado do Google AdSense, evit
 
 ### Workflow automatico dos proximos artigos
 
-O workflow horario `.github/workflows/gerar-html.yml`, responsavel por gerar e commitar novos artigos, foi ajustado para reduzir risco de travamento e garantir que os proximos conteudos passem pelo mesmo pipeline de SEO.
+O workflow semanal `.github/workflows/gerar-html.yml`, responsavel por gerar e commitar novos artigos, foi ajustado para reduzir risco de travamento e garantir que os proximos conteudos passem pelo mesmo pipeline de SEO.
 
 Mudancas aplicadas:
 
 - Troca do `git clone` manual com `GH_PAT` por `actions/checkout@v4`.
 - Uso de `GITHUB_TOKEN` com `permissions: contents: write` para permitir commit/push pelo workflow.
 - Atualizacao para `actions/setup-node@v4` com Node.js 20 e cache npm nativo.
-- Inclusao de `concurrency` para cancelar execucoes horarias antigas ainda em andamento.
+- Inclusao de `concurrency` para cancelar uma execucao anterior ainda em andamento.
 - Inclusao de `timeout-minutes: 45` para evitar execucoes presas indefinidamente.
 - Manutencao do passo `npm run seo:maintain` antes do commit.
 
@@ -660,6 +660,19 @@ Mudancas aplicadas:
 - Manutencao dos feeds RSS tecnicos como segunda camada de fonte, com a mesma avaliacao de score.
 
 Com isso, os proximos artigos tendem a nascer de assuntos mais recentes, mas ainda apontando para uma fonte editorial verificavel. Se o token do X nao estiver disponivel ou a API falhar, o gerador continua funcionando pelos RSS ja existentes.
+
+### Modelo de IA para geracao e revisao
+
+Em 03/09/2026, as duas etapas editoriais foram migradas de `gpt-4o-mini` para `gpt-5.6-terra`:
+
+- O rascunho usa `OPENAI_DRAFT_MODEL=gpt-5.6-terra` com `OPENAI_DRAFT_REASONING_EFFORT=medium`.
+- A revisao Humanizer usa `OPENAI_HUMANIZER_MODEL=gpt-5.6-terra` com `OPENAI_HUMANIZER_REASONING_EFFORT=low`.
+- `OPENAI_MODEL` continua disponivel como padrao comum para execucoes locais, enquanto as variaveis especificas permitem ajustar cada etapa separadamente.
+- As temperaturas fixas do modelo anterior foram removidas para permitir raciocinio ativo sem conflito de parametros.
+- As instrucoes principais passaram do papel `system` para `developer`, apropriado aos modelos atuais na API de Chat Completions.
+- Cada artigo novo registra em `qualidadeEditorial` o modelo e o nivel de raciocinio usados no rascunho e na revisao.
+
+O endpoint permanece em `/v1/chat/completions`, que e suportado pelo modelo. Assim, a troca fica isolada da futura migracao opcional para a Responses API.
 
 ### Resultado da validacao final
 
