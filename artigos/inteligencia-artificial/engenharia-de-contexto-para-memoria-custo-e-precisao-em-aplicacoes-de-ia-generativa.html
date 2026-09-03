@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Engenharia de contexto para memória, custo e precisão em aplicações de IA generativa</title>
+<meta name="description" content="Aplicações baseadas em modelos de linguagem raramente falham só porque o prompt foi mal escrito. Em produção, os problemas mais difíceis costumam estar no...">
+<meta name="author" content="Anderson Damasio">
+<meta name="keywords" content="Inteligência Artificial, segurança, contexto, memoria, custo, aplicacoes, engenharia, generativa, historico, modelo">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.andersondamasio.com.br/artigos/inteligencia-artificial/engenharia-de-contexto-para-memoria-custo-e-precisao-em-aplicacoes-de-ia-generativa.html">
+<link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Anderson Damasio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Engenharia de contexto para memória, custo e precisão em aplicações de IA generativa">
+<meta property="og:description" content="Aplicações baseadas em modelos de linguagem raramente falham só porque o prompt foi mal escrito. Em produção, os problemas mais difíceis costumam estar no...">
+<meta property="og:url" content="https://www.andersondamasio.com.br/artigos/inteligencia-artificial/engenharia-de-contexto-para-memoria-custo-e-precisao-em-aplicacoes-de-ia-generativa.html">
+<meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
+<meta property="article:published_time" content="2026-09-03T16:26:42.098Z">
+<meta property="article:modified_time" content="2026-09-03T16:26:42.098Z">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@andersondamasio">
+<meta name="twitter:title" content="Engenharia de contexto para memória, custo e precisão em aplicações de IA generativa">
+<meta name="twitter:description" content="Aplicações baseadas em modelos de linguagem raramente falham só porque o prompt foi mal escrito. Em produção, os problemas mais difíceis costumam estar no...">
+<meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
+<meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Engenharia de contexto para memória, custo e precisão em aplicações de IA generativa",
+  "description": "Aplicações baseadas em modelos de linguagem raramente falham só porque o prompt foi mal escrito. Em produção, os problemas mais difíceis costumam estar no...",
+  "image": [
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
+    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
+  ],
+  "url": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/engenharia-de-contexto-para-memoria-custo-e-precisao-em-aplicacoes-de-ia-generativa.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/engenharia-de-contexto-para-memoria-custo-e-precisao-em-aplicacoes-de-ia-generativa.html"
+  },
+  "datePublished": "2026-09-03T16:26:42.098Z",
+  "dateModified": "2026-09-03T16:26:42.098Z",
+  "articleSection": "Inteligência Artificial",
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "Inteligência Artificial",
+    "segurança",
+    "contexto",
+    "memoria",
+    "custo",
+    "aplicacoes",
+    "engenharia",
+    "generativa",
+    "historico",
+    "modelo"
+  ],
+  "wordCount": 1880,
+  "about": {
+    "@type": "Thing",
+    "name": "Inteligência Artificial"
+  },
+  "mentions": [
+    {
+      "@type": "Thing",
+      "name": "segurança"
+    },
+    {
+      "@type": "Thing",
+      "name": "contexto"
+    },
+    {
+      "@type": "Thing",
+      "name": "memoria"
+    },
+    {
+      "@type": "Thing",
+      "name": "custo"
+    },
+    {
+      "@type": "Thing",
+      "name": "aplicacoes"
+    },
+    {
+      "@type": "Thing",
+      "name": "engenharia"
+    }
+  ],
+  "isAccessibleForFree": true,
+  "copyrightYear": 2026,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "Presentation: Beyond Prompting: Context Engineering for Production-Grade AI",
+    "url": "https://www.infoq.com/presentations/context-engineering-redis-llm-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+  },
+  "citation": "https://www.infoq.com/presentations/context-engineering-redis-llm-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
+  },
+  "copyrightHolder": {
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.andersondamasio.com.br/#organization",
+    "name": "Anderson Damasio",
+    "url": "https://www.andersondamasio.com.br",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
+      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://www.andersondamasio.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://www.andersondamasio.com.br/artigos/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Inteligência Artificial",
+      "item": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Engenharia de contexto para memória, custo e precisão em aplicações de IA generativa",
+      "item": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/engenharia-de-contexto-para-memoria-custo-e-precisao-em-aplicacoes-de-ia-generativa.html"
+    }
+  ]
+}
+</script>
+<link rel="icon" href="https://www.andersondamasio.com.br/favicon.ico" type="image/x-icon" />
+<style>
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --main-bg: #fff;
+  --link: #0a66c2;
+  --link-hover: #084e91;
+  --footer: #666;
+  --meta: #777;
+  --pre-bg: #272822;
+  --pre-color: #f8f8f2;
+  --copy-bg: #0a66c2;
+  --copy-color: #fff;
+  --copy-bg-hover: #084e91;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+body.dark-theme {
+  --bg: #181b1f;
+  --text: #ddd;
+  --main-bg: #23262d;
+  --link: #67aaff;
+  --link-hover: #f1c40f;
+  --footer: #b3b3b3;
+  --meta: #b3b3b3;
+  --pre-bg: #22262b;
+  --pre-color: #e0e7ef;
+  --copy-bg: #67aaff;
+  --copy-color: #11131a;
+  --copy-bg-hover: #f1c40f;
+  --box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+h1 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--link); }
+a { color: var(--link); text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; color: var(--link-hover);}
+.article-meta { color: var(--meta); font-size: 0.95rem; margin-bottom: 1.5rem; }
+.article-body { font-size: 1.05rem; line-height: 1.7; }
+.article-validation, .article-usefulness { margin-top: 2rem; padding: 1rem 1.1rem; border-left: 4px solid var(--link); background: rgba(10,102,194,0.06); border-radius: 8px; }
+.article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text); }
+.article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
+.article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0.35rem 0 0; }
+.article-source a { font-weight: 700; }
+.article-source-note { font-size: 0.9rem; }
+pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+.copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
+.copy-button:hover { opacity: 1; background-color: var(--copy-bg-hover); color: var(--main-bg); }
+.back-link { text-align: center; margin-top: 2rem; }
+.back-link a { font-weight: bold; color: var(--link); font-size: 1.05rem; border: 1px solid var(--link); padding: 0.4rem 1rem; border-radius: 6px; display: inline-block; text-decoration: none; }
+.back-link a:hover { background-color: var(--link); color: var(--main-bg); }
+main { max-width: 800px; margin: 2rem auto; background: var(--main-bg); padding: 2rem; border-radius: 12px; box-shadow: var(--box-shadow); }
+footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--footer); }
+
+.related-articles { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.12); }
+.related-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.related-articles ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; }
+.related-articles li { margin: 0; }
+.related-articles a { font-weight: 700; color: var(--link); text-decoration: none; }
+.related-articles a:hover { text-decoration: underline; }
+.related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
+
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T15623VZYE');
+</script>
+</head>
+<body>
+<button id="theme-toggle" aria-label="Alternar tema"
+  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
+         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
+         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
+  🌙 Escuro
+</button>
+
+<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="../../index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
+    <a href="../../artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
+    <a href="../../sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
+    <a href="../../contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
+  </nav>
+</header>
+<main>
+<h1>Engenharia de contexto para memória, custo e precisão em aplicações de IA generativa</h1>
+
+<p class="article-meta">Publicado em: 03/09/2026 13:26</p>
+
+<div class="article-body"><article>
+  <p>Aplicações baseadas em modelos de linguagem raramente falham só porque o prompt foi mal escrito. Em produção, os problemas mais difíceis costumam estar no que acompanha a pergunta: histórico da conversa, dados do usuário, documentos corporativos, data e hora, permissões, resultados de ferramentas e limites de custo. É nesse ponto que engenharia de contexto deixa de ser um rótulo e passa a orientar decisões de arquitetura.</p>
+  <p>Em uma apresentação no QCon AI, Ricardo Ferreira descreveu a construção de uma habilidade para Alexa apoiada por um LLM, memória em Redis e componentes do ecossistema Java. O relato mostra por que ampliar a janela de contexto ou trocar por um modelo maior não resolve, por si só, continuidade conversacional, recuperação de conhecimento e objetividade nas respostas.</p>
+  <h2>Contexto como fluxo de arquitetura</h2>
+  <p>O caso apresentado combinou memória de curto e longo prazo, busca vetorial, filtros por usuário, reescrita de consultas, reranking, sumarização e cache semântico para tornar a operação mais consistente. A conclusão prática não depende tanto das bibliotecas usadas: <strong>contexto é um recurso finito, mutável, caro e sujeito a falhas de qualidade</strong>.</p>
+  <p>Para equipes que projetam assistentes, agentes e interfaces de linguagem natural, o prompt é apenas uma etapa de uma cadeia maior. Antes da chamada ao modelo, a aplicação precisa selecionar, transformar, validar e observar as informações que vão compor o contexto.</p>
+  <h2>A implementação relatada por Ricardo Ferreira</h2>
+  <p>Ferreira relatou a implementação de uma skill chamada My Jarvis, integrada a dispositivos Alexa. A arquitetura utiliza uma função AWS Lambda como backend, LangChain4j para orquestração em Java, modelos da OpenAI e uma camada de memória construída sobre Redis, incluindo o projeto open source Redis Agent Memory Server.</p>
+  <p>O caso tinha uma restrição concreta: as interações da Alexa precisavam retornar dentro de oito segundos. Isso muda o desenho do sistema. Não basta gerar uma resposta plausível; é necessário recuperar dados, eventualmente acionar ferramentas, montar o contexto, invocar modelos e responder dentro de um orçamento rígido de latência.</p>
+  <p>Ao evoluir a solução, Ferreira relatou o uso dos seguintes mecanismos:</p>
+  <ul>
+    <li>ferramentas para informar data e hora atuais ao modelo;</li>
+    <li>memória de sessão para preservar interações recentes;</li>
+    <li>memória de longo prazo recuperada por busca semântica;</li>
+    <li>separação de usuários com metadados e pós-filtragem dos resultados vetoriais;</li>
+    <li>bases de conhecimento separadas das memórias pessoais;</li>
+    <li>transformação de consultas para resolver referências como “ele” ou “onde ele mora”;</li>
+    <li>few-shot prompting para reduzir respostas excessivamente amplas;</li>
+    <li>reranking para priorizar trechos mais relevantes entre os resultados recuperados;</li>
+    <li>janela de tokens e sumarização para conter o crescimento do histórico;</li>
+    <li>cache semântico para evitar chamadas repetidas ao LLM.</li>
+  </ul>
+  <p>O histórico de mensagens sem limite elevava o custo de forma não linear. A mitigação relatada foi resumir o conteúdo relevante à medida que o contexto se aproximava do limite de tokens, em vez de simplesmente descartar as mensagens mais antigas.</p>
+  <h2>O impacto no desenho de sistemas</h2>
+  <p>Na minha leitura, uma aplicação de IA generativa madura precisa de um <em>pipeline de contexto</em>, não de um único prompt extenso. Esse pipeline define quais informações entram na chamada, em que ordem, com qual prioridade, para qual usuário e sob quais regras de atualização.</p>
+  <p>Modelos de linguagem são stateless do ponto de vista da chamada de API: cada requisição precisa carregar tudo o que o modelo deve considerar. A memória, portanto, não fica “dentro” do modelo. A aplicação a constrói e a injeta seletivamente na requisição atual.</p>
+  <h3>Histórico de sessão e memória persistente atendem a problemas distintos</h3>
+  <p>O histórico recente ajuda a manter o fio da conversa. Ele é útil para referências locais, como interpretar “ele” depois que uma pessoa foi mencionada na frase anterior. Manter toda a sessão indefinidamente, porém, é caro e frágil: aumenta o número de tokens, acumula saídas de ferramentas e inclui dados antigos que podem não ter relação com a pergunta atual.</p>
+  <p>A memória de longo prazo atende a outra necessidade. Ela registra fatos, preferências, eventos ou informações persistentes e permite recuperá-los depois por similaridade semântica. Uma preferência como “o usuário prefere respostas em português” tem natureza diferente de uma troca temporária sobre uma tarefa em andamento.</p>
+  <p>Colocar tudo na mesma estrutura tende a produzir dois efeitos: custo maior e recuperação menos precisa. A separação entre memória de sessão, memória persistente e base de conhecimento, apresentada no caso, é uma decisão arquitetural sólida independentemente do banco vetorial ou framework adotado.</p>
+  <h3>Busca vetorial encontra candidatos, não a resposta definitiva</h3>
+  <p>Um erro recorrente em implementações de RAG é tratar o resultado de uma busca vetorial como resposta pronta. A busca por embeddings encontra conteúdos semanticamente próximos; não garante que o trecho seja o mais importante, o mais atual, o mais autorizado ou o mais específico.</p>
+  <p>No exemplo, uma pergunta sobre cor favorita também recuperou informação sobre linguagem de programação favorita. Isso é esperado quando palavras e conceitos semelhantes aparecem no conjunto recuperado. O modelo respondeu além do necessário porque as duas informações faziam parte do contexto enviado.</p>
+  <p>O reranking preenche essa lacuna. Depois de recuperar um conjunto inicial de candidatos, um segundo modelo ou algoritmo atribui uma pontuação mais precisa à relação entre pergunta e conteúdo. Com isso, o sistema pode reduzir o contexto final e aumentar a relevância dos itens enviados ao LLM principal.</p>
+  <h2>Calibração de reranking, filtros e sumarização</h2>
+  <p>O relato traz um ponto operacional importante: limiares de relevância não são universais. A pontuação de 0,80 em um reranker pode se comportar de maneira muito diferente em outro modelo, idioma, domínio ou depois de uma mudança no método de embeddings.</p>
+  <p>Da mesma forma, filtros de tenant, usuário, departamento ou classificação de acesso não devem ser vistos como refinamento opcional. Em aplicações multiusuário, eles compõem o isolamento de dados. Recuperar um documento semanticamente relevante, mas pertencente a outra pessoa ou organização, é uma falha de segurança e privacidade, não apenas uma resposta de baixa qualidade.</p>
+  <h3>Sumarização controla tokens, mas transforma o histórico</h3>
+  <p>A sumarização é mais criteriosa do que cortar cegamente mensagens antigas. Ela preserva fatos, decisões, preferências e compromissos, removendo detalhes redundantes. Ao mesmo tempo, transforma o contexto original em uma interpretação produzida por outro modelo.</p>
+  <p>Por isso, resumos podem omitir nuances, consolidar afirmações que deveriam permanecer separadas ou manter dados que perderam validade. Em sistemas com implicações legais, financeiras, médicas ou de segurança, o resumo não deve substituir o registro original auditável. Ele deve ser um artefato de otimização, vinculado à sua fonte, versão e momento de geração.</p>
+  <h2>Limites do que o relato permite afirmar</h2>
+  <p>A apresentação descreve um caso prático útil, mas não traz uma avaliação comparativa controlada entre estratégias, modelos ou fornecedores. Não há métricas publicadas de precisão, taxa de alucinação, latência por estágio, taxa de acerto de cache ou qualidade do reranking antes e depois da adoção das técnicas.</p>
+  <p>Também não é possível estender os custos citados a outros produtos ou workloads. O custo de uma aplicação com IA depende do modelo, do tamanho dos prompts, do volume de chamadas, do idioma, da frequência de ferramentas, da taxa de cache, da política de retenção e do preço vigente de cada provedor.</p>
+  <p>Outro limite é que uma arquitetura para assistente doméstico não se transfere automaticamente para ambientes corporativos. Um sistema empresarial pode exigir controle de acesso baseado em atributos, trilha de auditoria, retenção regulatória, criptografia por tenant, avaliação de respostas e mecanismos de aprovação humana.</p>
+  <h2>Decisões práticas para equipes que operam IA generativa</h2>
+  <p>Antes de levar uma prova de conceito para produção, arquitetos e líderes técnicos podem tornar a engenharia de contexto uma sequência explícita de decisões.</p>
+  <ol>
+    <li>Mapear as classes de contexto, distinguindo instruções do sistema, dados da sessão, memória persistente, documentos corporativos, resultados de ferramentas e dados temporais.</li>
+    <li>Definir proprietários e tempo de vida: para cada informação, registrar origem, usuário ou tenant, data de criação, validade, política de atualização e tempo de retenção.</li>
+    <li>Aplicar autorização antes da recuperação: filtros de acesso devem restringir a consulta antes que o conteúdo entre no prompt ou seja exibido ao usuário.</li>
+    <li>Usar recuperação em duas etapas: recuperar mais candidatos inicialmente e reduzir o conjunto com reranking, regras de negócio, atualidade e nível de confiança.</li>
+    <li>Limitar tokens por orçamento, com tetos distintos para instruções, histórico, documentos recuperados, saída do modelo e chamadas auxiliares.</li>
+    <li>Sumarizar com rastreabilidade: manter referência para as mensagens originais que fundamentaram cada resumo e prever reprocessamento quando regras ou modelos mudarem.</li>
+    <li>Instrumentar o cache semântico, medindo hits, misses, respostas incorretas reaproveitadas e diferenças entre similaridade calculada e intenção real do usuário.</li>
+    <li>Construir uma suíte de avaliação com perguntas ambíguas, referências pronominais, mudanças temporais, dados de múltiplos usuários e consultas com documentos parecidos.</li>
+  </ol>
+  <h3>Fluxo de contexto em um assistente interno</h3>
+  <p>Em um cenário hipotético de assistente interno, o fluxo pode começar com autenticação e resolução de identidade. Depois, a aplicação classifica a intenção, reescreve referências dependentes da conversa, consulta fontes permitidas, aplica filtros de acesso e atualidade, executa reranking e monta um pacote de contexto dentro de um orçamento de tokens.</p>
+  <p>Após a resposta, o sistema pode registrar telemetria, avaliar se houve chamada de ferramenta, decidir se algum fato merece promoção para memória persistente e verificar se pergunta e resposta podem alimentar o cache semântico. Esse desenho evidencia que o LLM é um componente essencial, mas não é o sistema inteiro.</p>
+  <h2>Riscos operacionais além da qualidade da resposta</h2>
+  <p>O risco mais evidente é o vazamento de contexto entre usuários. A pós-filtragem mencionada na apresentação pode funcionar conforme a tecnologia de recuperação, mas exige validação cuidadosa: conteúdos não autorizados não podem chegar à etapa de geração nem aparecer em logs, métricas ou caches compartilhados.</p>
+  <p>Há também o risco de <em>context rot</em>, expressão usada para a degradação da utilidade do contexto à medida que ele cresce. Mais informação não significa necessariamente uma resposta melhor. Contexto em excesso pode distrair o modelo, introduzir contradições e diluir instruções importantes.</p>
+  <ul>
+    <li>Cache semântico pode devolver conteúdo desatualizado ou semanticamente parecido, mas incorreto para a intenção atual.</li>
+    <li>Rerankers podem favorecer textos com maior sobreposição lexical e deixar de lado documentos mais recentes ou normativamente superiores.</li>
+    <li>Chamadas auxiliares a LLMs para resumo, roteamento e transformação de consulta aumentam custo, latência e pontos de falha.</li>
+    <li>Ferramentas expostas ao agente exigem contratos estritos, validação de parâmetros, idempotência e limites de execução.</li>
+    <li>Memórias persistentes podem registrar preferências ou fatos errados sem mecanismos de correção, expiração e revisão.</li>
+  </ul>
+  <p>A recomendação não é evitar essas técnicas, mas tratá-las como componentes de produção: versionados, monitorados, testados e sujeitos a rollback. Sem observabilidade, uma cadeia de contexto é difícil de depurar, porque a resposta final não mostra quais dados foram recuperados, descartados, resumidos ou reutilizados do cache.</p>
+  <h2>Contexto não é acúmulo de mensagens</h2>
+  <p>O valor central do caso está em desfazer uma expectativa comum: a de que um modelo mais novo, uma janela maior ou um prompt mais extenso resolverão os problemas de uma aplicação conversacional. Essas escolhas podem melhorar partes do resultado, mas não substituem decisões sobre memória, recuperação, segurança, custo e latência.</p>
+  <p>Considero que a engenharia de contexto deve aparecer cedo na arquitetura, ao lado de APIs, bancos de dados, observabilidade e controle de acesso. A equipe precisa saber quais dados o modelo recebe, por que os recebe, quanto custam, de onde vieram e quando deixam de ser confiáveis.</p>
+  <p>Com esse desenho explícito, o comportamento do sistema tende a ser mais previsível. Em IA aplicada a produtos reais, essa previsibilidade costuma valer mais do que uma resposta ocasionalmente brilhante produzida por um contexto mal governado.</p>
+</article></div>
+<section class="article-validation" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">O que foi verificado</h2>
+<ul>
+<li><strong>Fonte principal:</strong> o ponto de partida foi <a href="https://www.infoq.com/presentations/context-engineering-redis-llm-architecture/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Presentation: Beyond Prompting: Context Engineering for Production-Grade AI</a>.</li>
+<li><strong>Data considerada:</strong> a fonte externa ou data original registrada é 02/09/2026.</li>
+<li><strong>Recorte editorial:</strong> a análise conecta o tema "Engenharia de contexto para memória, custo e precisão em aplicações de IA generativa" à categoria <strong>Inteligência Artificial</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
+<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
+</ul>
+</section>
+<section class="article-usefulness" aria-labelledby="article-usefulness-title">
+<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
+<ul>
+<li>Avalie qualidade dos dados, critérios de teste e limites do modelo antes de levar a ideia para produção.</li>
+<li>Separe claramente automação, apoio à decisão e decisão autônoma para reduzir risco operacional.</li>
+<li>Inclua métricas de custo, latência, acurácia e revisão humana no desenho da solução.</li>
+</ul>
+</section>
+<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/presentations/context-engineering-redis-llm-architecture/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Presentation: Beyond Prompting: Context Engineering for Production-Grade AI</a>.</p>
+</section>
+<section class="related-articles" aria-labelledby="related-articles-title">
+<h2 id="related-articles-title">Artigos relacionados</h2>
+<ul>
+<li><a href="/artigos/inteligencia-artificial/analise-de-causas-raiz-em-ia-o-novo-foco-em-engenharia-de-contexto.html">Análise de Causas Raiz em IA: O Novo Foco em Engenharia de Contexto</a><span>Inteligência Artificial</span></li>
+<li><a href="/artigos/inteligencia-artificial/revolucionando-a-construcao-de-agentes-com-a-abordagem-model-driven.html">Revolucionando a Construção de Agentes com a Abordagem Model-Driven</a><span>Inteligência Artificial</span></li>
+<li><a href="/artigos/inteligencia-artificial/revolucao-nas-homepages-como-a-netflix-transformou-a-personalizacao-com-genpage.html">Revolução nas Homepages: Como a Netflix Transformou a Personalização com GenPage</a><span>Inteligência Artificial</span></li>
+<li><a href="/artigos/inteligencia-artificial/a-revolucao-do-conhecimento-empresarial-pinecone-nexus-e-o-futuro-dos-agentes-de-ia.html">A Revolução do Conhecimento Empresarial: Pinecone Nexus e o Futuro dos Agentes de IA</a><span>Inteligência Artificial</span></li>
+</ul>
+</section>
+<p class="back-link"><a href="/index.html">← Voltar para a página inicial</a></p>
+
+<footer style="text-align: center; margin-top: 3rem; font-size: 0.95rem; color: #666;">
+  <nav style="margin-bottom: 1rem;">
+    <a href="/sobre.html">Sobre</a> |
+    <a href="/contato.html">Contato</a> |
+    <a href="/termos.html">Termos de Uso</a> |
+    <a href="/politica.html">Política de Privacidade</a>
+  </nav>
+  &copy; 2025 Anderson Damasio – Todos os direitos reservados
+</footer>
+</main>
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+">
+  <span>
+    Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa
+    <a href="/politica.html" style="color: #f1c40f; text-decoration: underline;">Política de Privacidade</a>.
+  </span>
+  <button onclick="aceitarCookies()" style="
+    background: #f1c40f;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    margin-left: 15px;
+  ">Aceitar</button>
+</div>
+
+<script src="/scripts/cookies-banner.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.innerText = 'Copiar';
+    button.className = 'copy-button';
+    button.addEventListener('click', () => {
+      const code = pre.querySelector('code').innerText;
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copiado!';
+      setTimeout(() => button.innerText = 'Copiar', 2000);
+    });
+    pre.appendChild(button);
+  });
+});
+</script>
+
+
+<script src="https://www.andersondamasio.com.br/scripts/theme-toggle.js"></script>
+
+
+</body>
+</html>

@@ -73016,5 +73016,38 @@
         "sinaisRestantes": []
       }
     }
+  },
+  {
+    "titulo": "Engenharia de contexto para memória, custo e precisão em aplicações de IA generativa",
+    "noticiaOriginal": "Presentation: Beyond Prompting: Context Engineering for Production-Grade AI",
+    "url": "artigos/inteligencia-artificial/engenharia-de-contexto-para-memoria-custo-e-precisao-em-aplicacoes-de-ia-generativa.html",
+    "data": "2026-09-03T16:26:42.098Z",
+    "dataFonte": "2026-09-02T11:00:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://www.infoq.com/presentations/context-engineering-redis-llm-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 124,
+      "sinalEditorial": 102,
+      "palavrasFonte": 7102,
+      "palavrasArtigo": 1880,
+      "secoesArtigo": 8,
+      "similaridadeFonte": 0,
+      "geracao": {
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "medium"
+      },
+      "humanizer": {
+        "aplicado": true,
+        "skill": "blader/humanizer",
+        "versao": "2.11.2",
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "low",
+        "scoreAntes": 100,
+        "scoreDepois": 100,
+        "tentativas": 1,
+        "sinaisRestantes": []
+      }
+    }
   }
 ]
