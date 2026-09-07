@@ -73049,5 +73049,38 @@
         "sinaisRestantes": []
       }
     }
+  },
+  {
+    "titulo": "Testes por simulação para validar agentes de IA antes da produção",
+    "noticiaOriginal": "Presentation: From AI Agent Demo to Production: Automated Testing and Evaluation",
+    "url": "artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html",
+    "data": "2026-09-07T17:38:23.165Z",
+    "dataFonte": "2026-09-07T11:00:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://www.infoq.com/presentations/ai-agent-testing-evaluation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 122,
+      "sinalEditorial": 84,
+      "palavrasFonte": 7660,
+      "palavrasArtigo": 1989,
+      "secoesArtigo": 8,
+      "similaridadeFonte": 0,
+      "geracao": {
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "medium"
+      },
+      "humanizer": {
+        "aplicado": true,
+        "skill": "blader/humanizer",
+        "versao": "2.11.2",
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "low",
+        "scoreAntes": 96,
+        "scoreDepois": 100,
+        "tentativas": 1,
+        "sinaisRestantes": []
+      }
+    }
   }
 ]

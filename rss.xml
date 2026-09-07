@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Thu, 03 Sep 2026 16:26:42 GMT</lastBuildDate>
+<lastBuildDate>Mon, 07 Sep 2026 17:38:23 GMT</lastBuildDate>
+<item>
+<title>Testes por simulação para validar agentes de IA antes da produção</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html</guid>
+<pubDate>Mon, 07 Sep 2026 17:38:23 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Agentes de IA conversacionais funcionam bem em demonstrações: respondem em múltiplos turnos, consultam ferramentas, recuperam dados, sugerem produtos e, em...</description>
+</item>
 <item>
 <title>Engenharia de contexto para memória, custo e precisão em aplicações de IA generativa</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/engenharia-de-contexto-para-memoria-custo-e-precisao-em-aplicacoes-de-ia-generativa.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 19 Jun 2026 15:20:46 GMT</pubDate>
 <category>Desenvolvimento de Software</category>
 <description>Recentemente, li uma matéria fascinante sobre a transição da Block, Inc. de uma arquitetura de polyrepo para um monorepo, e não pude deixar de refletir...</description>
-</item>
-<item>
-<title>GTA 6: O Que a Arquitetura de Software Pode Nos Ensinar Sobre Lançamentos de Jogos</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/gta-6-o-que-a-arquitetura-de-software-pode-nos-ensinar-sobre-lancamentos-de-jogos.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/gta-6-o-que-a-arquitetura-de-software-pode-nos-ensinar-sobre-lancamentos-de-jogos.html</guid>
-<pubDate>Fri, 19 Jun 2026 11:28:37 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Recentemente, a expectativa em torno do lançamento do aguardado GTA 6 tem gerado um burburinho danado, especialmente entre os fãs e desenvolvedores. A...</description>
 </item>
 </channel>
 </rss>
