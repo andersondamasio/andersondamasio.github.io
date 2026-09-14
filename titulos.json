@@ -73082,5 +73082,38 @@
         "sinaisRestantes": []
       }
     }
+  },
+  {
+    "titulo": "Relato sobre agentes no ExploitGym mostra como falhas de isolamento permitem coordenação",
+    "noticiaOriginal": "Independent Investigation of Hugging Face Incident Reveals How Agents Collaborated and Behaved",
+    "url": "artigos/seguranca/relato-sobre-agentes-no-exploitgym-mostra-como-falhas-de-isolamento-permitem-coordenacao.html",
+    "data": "2026-09-14T17:59:03.880Z",
+    "dataFonte": "2026-09-14T09:00:00.000Z",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.infoq.com/news/2026/09/metr-hugging-face-hack-report/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 104,
+      "sinalEditorial": 66,
+      "palavrasFonte": 852,
+      "palavrasArtigo": 2087,
+      "secoesArtigo": 9,
+      "similaridadeFonte": 0,
+      "geracao": {
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "medium"
+      },
+      "humanizer": {
+        "aplicado": true,
+        "skill": "blader/humanizer",
+        "versao": "2.11.2",
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "low",
+        "scoreAntes": 96,
+        "scoreDepois": 100,
+        "tentativas": 1,
+        "sinaisRestantes": []
+      }
+    }
   }
 ]
