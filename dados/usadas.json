@@ -39989,5 +39989,10 @@
     "intro": "É impressionante como Independent Investigation of Hugging Face Incident Reveals How Agents Collaborated and Behaved ainda gera tanto ruído em times experientes.",
     "introOriginal": "É impressionante como __TEMATICA__ ainda gera tanto ruído em times experientes.",
     "data": "2026-09-14"
+  },
+  "2026-09-21-kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta": {
+    "intro": "Essa leitura me lembrou da importância de revisitar nossas práticas sobre Kubernetes 1.37 Released: Stable Metrics API  and Rootless Kubelet in Beta regularmente.",
+    "introOriginal": "Essa leitura me lembrou da importância de revisitar nossas práticas sobre __TEMATICA__ regularmente.",
+    "data": "2026-09-21"
   }
 }

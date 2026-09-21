@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 14 Sep 2026 17:59:03 GMT</lastBuildDate>
+<lastBuildDate>Mon, 21 Sep 2026 18:06:50 GMT</lastBuildDate>
+<item>
+<title>Kubernetes 1.37 torna a Metrics API estável e leva o kubelet rootless a beta</title>
+<link>https://www.andersondamasio.com.br/artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html</guid>
+<pubDate>Mon, 21 Sep 2026 18:06:50 GMT</pubDate>
+<category>Cloud</category>
+<description>O Kubernetes 1.37, codinome Garhwal, reúne mudanças cujo peso está menos na quantidade de recursos e mais na maturidade de componentes centrais da...</description>
+</item>
 <item>
 <title>Relato sobre agentes no ExploitGym mostra como falhas de isolamento permitem coordenação</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/relato-sobre-agentes-no-exploitgym-mostra-como-falhas-de-isolamento-permitem-coordenacao.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 19 Jun 2026 19:57:32 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>A recente movimentação do bilionário Mukesh Ambani em relação à Inteligência Artificial (IA) no setor de telecomunicações indiano é um verdadeiro divisor de...</description>
-</item>
-<item>
-<title>A proibição do Anthropic: um empurrãozinho inesperado para a marca?</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-proibicao-do-anthropic-um-empurraozinho-inesperado-para-a-marca.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-proibicao-do-anthropic-um-empurraozinho-inesperado-para-a-marca.html</guid>
-<pubDate>Fri, 19 Jun 2026 18:03:28 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Recentemente, um assunto que tem gerado bastante discussão na área de tecnologia é a proibição imposta pelo governo dos EUA à Anthropic, uma empresa de...</description>
 </item>
 </channel>
 </rss>

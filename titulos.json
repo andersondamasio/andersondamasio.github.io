@@ -73115,5 +73115,38 @@
         "sinaisRestantes": []
       }
     }
+  },
+  {
+    "titulo": "Kubernetes 1.37 torna a Metrics API estável e leva o kubelet rootless a beta",
+    "noticiaOriginal": "Kubernetes 1.37 Released: Stable Metrics API  and Rootless Kubelet in Beta",
+    "url": "artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html",
+    "data": "2026-09-21T18:06:50.397Z",
+    "dataFonte": "2026-09-21T01:00:00.000Z",
+    "categoria": "Cloud",
+    "urlFonte": "https://www.infoq.com/news/2026/09/kubernetes-1-37/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 138,
+      "sinalEditorial": 108,
+      "palavrasFonte": 594,
+      "palavrasArtigo": 1738,
+      "secoesArtigo": 8,
+      "similaridadeFonte": 0,
+      "geracao": {
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "medium"
+      },
+      "humanizer": {
+        "aplicado": true,
+        "skill": "blader/humanizer",
+        "versao": "2.11.2",
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "low",
+        "scoreAntes": 100,
+        "scoreDepois": 100,
+        "tentativas": 1,
+        "sinaisRestantes": []
+      }
+    }
   }
 ]
