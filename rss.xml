@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 21 Sep 2026 18:06:50 GMT</lastBuildDate>
+<lastBuildDate>Mon, 28 Sep 2026 19:31:38 GMT</lastBuildDate>
+<item>
+<title>Agentes de IA na arquitetura de software: velocidade com critérios técnicos</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html</guid>
+<pubDate>Mon, 28 Sep 2026 19:31:38 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>Agentes de programação baseados em IA já ultrapassaram o papel de autocomplete ou de geradores de trechos isolados. Com contexto suficiente, eles analisam...</description>
+</item>
 <item>
 <title>Kubernetes 1.37 torna a Metrics API estável e leva o kubelet rootless a beta</title>
 <link>https://www.andersondamasio.com.br/artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 19 Jun 2026 21:16:20 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Hoje em dia, quem nunca se pegou pensando sobre a efemeridade das imagens digitais? Com a nova moldura Aura Ink, que utiliza tecnologia de e-ink, essa...</description>
-</item>
-<item>
-<title>Billionário Ambani e a Revolução da IA: O Futuro das Chamadas e Aplicativos</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/billionario-ambani-e-a-revolucao-da-ia-o-futuro-das-chamadas-e-aplicativos.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/billionario-ambani-e-a-revolucao-da-ia-o-futuro-das-chamadas-e-aplicativos.html</guid>
-<pubDate>Fri, 19 Jun 2026 19:57:32 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>A recente movimentação do bilionário Mukesh Ambani em relação à Inteligência Artificial (IA) no setor de telecomunicações indiano é um verdadeiro divisor de...</description>
 </item>
 </channel>
 </rss>

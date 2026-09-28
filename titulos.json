@@ -73148,5 +73148,38 @@
         "sinaisRestantes": []
       }
     }
+  },
+  {
+    "titulo": "Agentes de IA na arquitetura de software: velocidade com critérios técnicos",
+    "noticiaOriginal": "Article: Five Ways To Use AI Coding Agents to Improve Your Software Architecture",
+    "url": "artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html",
+    "data": "2026-09-28T19:31:38.377Z",
+    "dataFonte": "2026-09-28T11:00:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://www.infoq.com/articles/ai-agents-improve-software-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 130,
+      "sinalEditorial": 92,
+      "palavrasFonte": 2605,
+      "palavrasArtigo": 2187,
+      "secoesArtigo": 11,
+      "similaridadeFonte": 0,
+      "geracao": {
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "medium"
+      },
+      "humanizer": {
+        "aplicado": true,
+        "skill": "blader/humanizer",
+        "versao": "2.11.2",
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "low",
+        "scoreAntes": 96,
+        "scoreDepois": 100,
+        "tentativas": 1,
+        "sinaisRestantes": []
+      }
+    }
   }
 ]
