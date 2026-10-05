@@ -73181,5 +73181,38 @@
         "sinaisRestantes": []
       }
     }
+  },
+  {
+    "titulo": "Agentes de IA e o código como representação do modelo de domínio",
+    "noticiaOriginal": "Fragments: October  4",
+    "url": "artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html",
+    "data": "2026-10-05T20:38:26.475Z",
+    "dataFonte": "2026-10-05T04:28:00.000Z",
+    "categoria": "Inteligência Artificial",
+    "urlFonte": "https://martinfowler.com/fragments/2026-10-04.html",
+    "qualidadeEditorial": {
+      "politica": "fonte-rastreavel-recente-com-analise-propria",
+      "scoreFonte": 138,
+      "sinalEditorial": 108,
+      "palavrasFonte": 1604,
+      "palavrasArtigo": 1729,
+      "secoesArtigo": 8,
+      "similaridadeFonte": 0,
+      "geracao": {
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "medium"
+      },
+      "humanizer": {
+        "aplicado": true,
+        "skill": "blader/humanizer",
+        "versao": "2.11.2",
+        "modelo": "gpt-5.6-terra",
+        "reasoningEffort": "low",
+        "scoreAntes": 96,
+        "scoreDepois": 100,
+        "tentativas": 1,
+        "sinaisRestantes": []
+      }
+    }
   }
 ]

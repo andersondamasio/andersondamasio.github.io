@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 28 Sep 2026 19:31:38 GMT</lastBuildDate>
+<lastBuildDate>Mon, 05 Oct 2026 20:38:26 GMT</lastBuildDate>
+<item>
+<title>Agentes de IA e o código como representação do modelo de domínio</title>
+<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html</guid>
+<pubDate>Mon, 05 Oct 2026 20:38:26 GMT</pubDate>
+<category>Inteligência Artificial</category>
+<description>O debate sobre agentes de inteligência artificial costuma cair em dois extremos pouco produtivos: a previsão de que programadores deixarão de escrever e ler...</description>
+</item>
 <item>
 <title>Agentes de IA na arquitetura de software: velocidade com critérios técnicos</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Fri, 19 Jun 2026 23:03:07 GMT</pubDate>
 <category>Inteligência Artificial</category>
 <description>Nos últimos tempos, a discussão sobre controle de exportação de tecnologias de inteligência artificial (IA) tem ganhado força, especialmente após a recente...</description>
-</item>
-<item>
-<title>Digital ou Analógico? O Que a Nova Moldura de E-Ink da Aura Revela Sobre Nossas Preferências</title>
-<link>https://www.andersondamasio.com.br/artigos/tecnologia/digital-ou-analogico-o-que-a-nova-moldura-de-e-ink-da-aura-revela-sobre-nossas-preferencias.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/tecnologia/digital-ou-analogico-o-que-a-nova-moldura-de-e-ink-da-aura-revela-sobre-nossas-preferencias.html</guid>
-<pubDate>Fri, 19 Jun 2026 21:16:20 GMT</pubDate>
-<category>Tecnologia</category>
-<description>Hoje em dia, quem nunca se pegou pensando sobre a efemeridade das imagens digitais? Com a nova moldura Aura Ink, que utiliza tecnologia de e-ink, essa...</description>
 </item>
 </channel>
 </rss>
