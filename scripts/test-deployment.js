@@ -27,6 +27,16 @@ test("publicacao deve corresponder a revisao e as superficies de descoberta", as
   assert.equal(resultado.aceita, true);
   assert.equal(resultado.revisaoEsperada, "a".repeat(40));
 });
+
+test("verificacao escolhe artigos indexaveis, respeitando curadoria do mais recente", () => {
+  const novo = "artigos/arquitetura/retido.html";
+  const extras = { ...arquivos, "titulos.json": JSON.stringify([
+    { url: novo, dataISO: "2026-10-09T12:00:00Z" },
+    { url: artigo, dataISO: "2026-10-05T12:00:00Z" }
+  ]), [novo]: html(`/${novo}`).replace("</head>", '<meta name="robots" content="noindex,follow"></head>') };
+  const result = prepararVerificacao({ ler: f => extras[f], revisao: "a".repeat(40) });
+  assert.deepEqual(result.recentes, [artigo]);
+});
 test("falha explicitamente quando artigo novo esta ausente ou o conteudo esta antigo", async () => {
   for (const alteracoes of [{ [artigo]: null }, { [artigo]: html(`/${artigo}`, "versao antiga") }, { "sitemap.xml": "<urlset/>" }, { "rss.xml": "<rss/>" }, { "index.html": html("/") }]) {
     assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(alteracoes), tentativas: 1 })).aceita, false);

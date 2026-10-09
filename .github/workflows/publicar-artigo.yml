@@ -60,3 +60,18 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
+      - name: Confirmar build e conteudo publicado
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          export EXPECTED_REVISION="$(git rev-parse HEAD)"
+          node scripts/wait-for-pages.js
+          node scripts/verify-deployment.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verificacao-publica-${{ github.run_id }}
+          path: .editorial/deploy-verification.json
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 30

@@ -12,9 +12,16 @@ function digest(text) {
 function prepararVerificacao({ ler, revisao }) {
   if (!/^[a-f0-9]{40}$/.test(revisao)) throw new Error("Informe a revisao Git completa esperada.");
   const registros = JSON.parse(ler("titulos.json"));
-  const recentes = registros.filter(item => /^artigos\/[a-z0-9/-]+\.html$/.test(item.url || ""))
+  const recentes = registros.filter(item => item.localizacao?.estado !== "pendente" && /^artigos\/[a-z0-9/-]+\.html$/.test(item.url || ""))
     .sort((a, b) => String(b.dataISO || b.data || "").localeCompare(String(a.dataISO || a.data || "")))
-    .slice(0, 3).map(item => item.url);
+    .map(item => item.url);
+  const selecionados = [];
+  for (const arquivo of recentes) {
+    const $ = cheerio.load(ler(arquivo));
+    if (!/\bnoindex\b/i.test($("meta[name='robots']").attr("content") || "") && !$("meta[http-equiv='refresh']").length) selecionados.push(arquivo);
+    if (selecionados.length === 3) break;
+  }
+  recentes.splice(0, recentes.length, ...selecionados);
   if (!recentes.length) throw new Error("Nenhum artigo recente com URL explicita para verificar.");
   const home = cheerio.load(ler("index.html"));
   let arquivosNavegacao = [];

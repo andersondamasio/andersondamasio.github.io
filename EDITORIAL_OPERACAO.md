@@ -42,6 +42,14 @@ Nao ha exigencia de esticar o artigo para um numero fixo de palavras ou secoes. 
 
 ## Aprovar a versao revisada
 
+Para ler o artigo em uma pagina local, sem publica-lo nem consumir API:
+
+```powershell
+npm run article:preview -- ".editorial/rascunhos/ARQUIVO.json"
+```
+
+A previa fica em `.editorial/previas/`, com o hash da versao e as evidencias. Nao inclui analytics nem carrega recursos externos. Nao substitui a conferencia na fonte. Depois de qualquer reescrita, inclusive pelo Humanizer, reconcilie os trechos do dossie com o corpo final; nao copie uma aprovacao anterior.
+
 Depois de conferir o artigo integralmente, o revisor deve executar em um terminal interativo:
 
 ```powershell
@@ -57,6 +65,8 @@ O hash vincula a aprovacao ao texto, titulo, resumo, fontes, pauta, evidencias e
 Commitado o pacote aprovado em `main`, execute o workflow **Publicar artigo revisado** e informe seu caminho completo no repositorio. Ele confere a aprovacao novamente, impede colisao de URL e repeticao de pacote, respeita o intervalo semanal, reconstrui o site e executa a auditoria antes de commitar e solicitar o build do Pages. Nenhuma chamada de IA ocorre nessa etapa.
 
 Alternativamente, prepare os arquivos locais com `npm run article:review -- publicar "dados/editorial/aprovados/HASH.json"`, execute `npm run seo:maintain` e confira o diff antes do commit e push. O retorno local nao confirma deploy online. O workflow de verificacao publica deve comparar as paginas servidas com a revisao esperada depois do Pages.
+
+O verificador e disparado no push em `main`, espera o build Pages com o mesmo SHA e compara o HTML publico. O publicador executa a mesma conferencia diretamente depois de solicitar o Pages: commits feitos com `GITHUB_TOKEN` nao devem depender de disparar outro workflow por push. Timeout, build falho ou conteudo antigo sao falhas, nao publicacao confirmada.
 
 Se a preparacao local falhar, o journal restaura os arquivos modificados e remove os arquivos criados nessa tentativa. Se o processo for interrompido abruptamente, novas publicacoes ficam bloqueadas. Confirme que o processo anterior terminou antes de executar `npm run article:review -- recuperar --processo-anterior-encerrado`, depois confira o diff. Essa recuperacao nao desfaz commits nem deployments.
 
