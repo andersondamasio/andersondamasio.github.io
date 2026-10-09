@@ -14,3 +14,4 @@ exclude:
   - '**/*.md'
   - exemplos/reservoir-sampling/bin/
   - exemplos/reservoir-sampling/obj/
+  - dados/editorial/arquivados/

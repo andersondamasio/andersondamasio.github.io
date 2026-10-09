@@ -50,6 +50,17 @@ test("verificacao escolhe artigos indexaveis, respeitando curadoria do mais rece
   const result = prepararVerificacao({ ler: f => extras[f], revisao: "a".repeat(40) });
   assert.deepEqual(result.recentes, [artigo]);
 });
+
+test("deploy exige 404/410 para retiradas e nao publica copias arquivadas", async () => {
+  const removido = "artigos/arquitetura/retirado.html";
+  const extras = { "dados/indexacao.json": JSON.stringify({ decisoes: [{ url: removido, acao: "retirar", arquivoHash: "d".repeat(64), aliases: [{ url: "arquitetura/retirado.html" }] }] }) };
+  const esperado = prepararVerificacao({ ler: f => extras[f] || arquivos[f], revisao: "d".repeat(40) });
+  assert.equal(esperado.ausentes.length, 3);
+  assert.ok(esperado.ausentes.includes(removido));
+  const ausentes = Object.fromEntries(esperado.ausentes.map(f => [f, null]));
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(ausentes), tentativas: 1 })).aceita, true);
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...ausentes, [removido]: html(`/${removido}`, "Indisponivel") }), tentativas: 1 })).aceita, false);
+});
 test("falha explicitamente quando artigo novo esta ausente ou o conteudo esta antigo", async () => {
   for (const alteracoes of [{ [artigo]: null }, { [artigo]: html(`/${artigo}`, "versao antiga") }, { "sitemap.xml": "<urlset/>" }, { "rss.xml": "<rss/>" }, { "index.html": html("/") }]) {
     assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(alteracoes), tentativas: 1 })).aceita, false);
