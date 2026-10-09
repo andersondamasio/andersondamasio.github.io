@@ -2221,20 +2221,17 @@ Seu objetivo é criar um rascunho editorial útil para desenvolvedores e arquite
 **O que você deve produzir:**
 
 1. Um **título específico, sóbrio e informativo**, em português, inspirado na notícia, mas:
-   - Sem tradução literal, use palavras diferentes sem distorcer a original.
+   - Preserve nomes e termos tecnicos. Escolha uma formulacao clara para a pergunta abordada, sem trocar palavras apenas para simular originalidade.
    - Com estilo natural para o público brasileiro de tecnologia.
    - Que identifique o fato ou decisão técnica central e deixe claro o benefício da leitura.
    - Sem fórmulas de caça-clique como "Desvendando", "Descubra", "Revolução", "Nova era", "O futuro de", "lições cruciais" ou "guia completo".
 
 2. Em seguida, **um artigo completo**, com:
-   - Uma introdução natural e humanizada.
-   - Um resumo executivo curto explicando o que aconteceu e por que isso importa.
+   - Uma abertura autossuficiente explicando o fato ou a pergunta concreta, sem responder ao prompt oculto.
    - Uma separação clara entre fato reportado, interpretação técnica e limites do que ainda não dá para afirmar.
    - Uma explicação técnica clara e aprofundada sobre o tema.
-   - Dicas avançadas que mostrem domínio prático, indo além do básico.
-   - Uma seção de aplicação prática com ações concretas para arquitetos, desenvolvedores ou líderes técnicos.
-   - Uma seção de riscos e cuidados, sem sensacionalismo.
-   - Uma conclusão com implicações e recomendações sustentadas pela análise, sem atribuí-las pessoalmente ao autor.
+   - Uma contribuicao especifica, como criterio de decisao, comparacao sustentada ou exemplo hipotetico delimitado, quando as fontes permitirem.
+   - Acoes concretas e limites proporcionais ao assunto. Nao force dicas, lista, aplicacao pratica ou conclusao quando apenas repetiriam o texto.
    - Texto revisado, claro e sem erros ortográficos propositais.
    - A extensao necessaria para responder a pauta. Nao alongue uma noticia curta para cumprir contagem de palavras nem repita secoes sem necessidade.
    - Links para as evidencias fornecidas, junto das afirmacoes que sustentam. Nao invente URLs ou fontes adicionais.

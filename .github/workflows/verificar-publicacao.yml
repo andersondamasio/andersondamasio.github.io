@@ -1,33 +1,27 @@
 name: verificar-publicacao
 
 on:
-  workflow_run:
-    workflows: [pages build and deployment]
-    types: [completed]
+  push:
     branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
+  pages: read
+
+concurrency:
+  group: verificacao-publica-main
+  cancel-in-progress: true
 
 jobs:
   verificar:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.head_repository.full_name == github.repository
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Exigir deploy concluido com sucesso
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          CONCLUSION: ${{ github.event.workflow_run.conclusion }}
-        run: |
-          if [ "$EVENT_NAME" != "workflow_dispatch" ] && [ "$CONCLUSION" != "success" ]; then
-            echo "Deploy nao concluido: $CONCLUSION. Geracao/commit nao equivalem a publicacao."
-            exit 1
-          fi
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          ref: ${{ github.sha }}
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
@@ -36,10 +30,15 @@ jobs:
       - run: npm ci
         env:
           PUPPETEER_SKIP_DOWNLOAD: 'true'
+      - name: Aguardar Pages da mesma revisao (limite de tentativas)
+        run: node scripts/wait-for-pages.js
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_REVISION: ${{ github.sha }}
       - name: Conferir HTML, canonical, RSS, sitemap e revisao esperada
         run: node scripts/verify-deployment.js
         env:
-          EXPECTED_REVISION: ${{ github.event.workflow_run.head_sha || github.sha }}
+          EXPECTED_REVISION: ${{ github.sha }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
