@@ -33,7 +33,9 @@ jobs:
         env:
           PUPPETEER_SKIP_DOWNLOAD: 'true'
       - name: Validar protecoes editoriais
-        run: npm run test:editorial
+        run: |
+          npm run test:editorial
+          npm run test:seo:templates
       - name: Conferir pacote e preparar artigo sem chamadas de IA
         env:
           PACOTE: ${{ inputs.pacote }}

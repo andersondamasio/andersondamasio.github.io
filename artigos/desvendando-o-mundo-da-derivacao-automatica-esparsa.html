@@ -6,7 +6,7 @@
 <title>Desvendando o Mundo da Derivação Automática Esparsa</title>
 <meta name="description" content="A discussão sobre An illustrated guide to automatic sparse differentiation voltou à tona, e acredito que precisamos falar sobre isso com mais...">
 <meta name="author" content="Anderson Damasio">
-<meta name="keywords" content="Artigos, automatica, derivacao, esparsa, derivada, desvendando, forma, mundo, calculos, eficiente">
+<meta name="keywords" content="Outros, automatica, derivacao, esparsa, derivada, desvendando, forma, mundo, calculos, eficiente">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/desvendando-o-mundo-da-derivacao-automatica-esparsa.html">
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
@@ -25,7 +25,6 @@
 <meta property="article:published_time" content="2025-04-30T01:57:48.386Z">
 <meta property="article:modified_time" content="2025-04-30T01:57:48.386Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content="Desvendando o Mundo da Derivação Automática Esparsa">
 <meta name="twitter:description" content="A discussão sobre An illustrated guide to automatic sparse differentiation voltou à tona, e acredito que precisamos falar sobre isso com mais...">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
@@ -36,11 +35,6 @@
   "@type": "BlogPosting",
   "headline": "Desvendando o Mundo da Derivação Automática Esparsa",
   "description": "A discussão sobre An illustrated guide to automatic sparse differentiation voltou à tona, e acredito que precisamos falar sobre isso com mais...",
-  "image": [
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
-  ],
   "url": "https://www.andersondamasio.com.br/artigos/desvendando-o-mundo-da-derivacao-automatica-esparsa.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -48,10 +42,10 @@
   },
   "datePublished": "2025-04-30T01:57:48.386Z",
   "dateModified": "2025-04-30T01:57:48.386Z",
-  "articleSection": "Artigos",
+  "articleSection": "Outros",
   "inLanguage": "pt-BR",
   "keywords": [
-    "Artigos",
+    "Outros",
     "automatica",
     "derivacao",
     "esparsa",
@@ -65,7 +59,7 @@
   "wordCount": 415,
   "about": {
     "@type": "Thing",
-    "name": "Artigos"
+    "name": "Outros"
   },
   "mentions": [
     {
@@ -116,15 +110,14 @@
     ]
   },
   "publisher": {
-    "@type": "Organization",
-    "@id": "https://www.andersondamasio.com.br/#organization",
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
     "name": "Anderson Damasio",
-    "url": "https://www.andersondamasio.com.br",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
-    }
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
   }
 }
 </script>
@@ -148,8 +141,8 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Artigos",
-      "item": "https://www.andersondamasio.com.br/artigos/artigos.html"
+      "name": "Outros",
+      "item": "https://www.andersondamasio.com.br/artigos/outros.html"
     },
     {
       "@type": "ListItem",
@@ -215,22 +208,12 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <h1>Desvendando o Mundo da Derivação Automática Esparsa</h1>
 <p class="article-meta">Publicado em: 29/04/2025 22:57</p>
 <div class="article-body">A discussão sobre An illustrated guide to automatic sparse differentiation voltou à tona, e acredito que precisamos falar sobre isso com mais seriedade.<br><br>Recentemente, tenho me deparado com diversas discussões sobre a derivação automática esparsa e como ela pode revolucionar a forma como lidamos com cálculos diferenciais em sistemas complexos. Para aqueles que não estão familiarizados com o termo, a derivação automática esparsa é uma técnica que permite calcular derivadas de funções de forma automática e eficiente, especialmente em casos onde as matrizes envolvidas são esparsas, ou seja, possuem muitos elementos zero.<br><br>Essa técnica tem se mostrado extremamente útil em diversas áreas, desde a otimização de código em computação de alto desempenho até a resolução de problemas em física e engenharia. A ideia por trás da derivação automática esparsa é utilizar estruturas de dados especiais que representam as funções e suas derivadas de forma eficiente, permitindo calcular as derivadas de forma precisa e rápida.<br><br>Para ilustrar melhor como a derivação automática esparsa funciona na prática, vamos analisar um exemplo simples em C#:<br><br><pre><code class="language-csharp">using System;<br>using MathNet.Numerics;<br><br>class Program<br>{<br>    static void Main()<br>    {<br>        Func<double, double> func = x => x * x; // Função f(x) = x^2<br>        var ad = new SparseGradientValue<double>(func, 3); // Calcula a derivada de f(x) em x = 3<br><br>        Console.WriteLine($"f(3) = {ad.Value}"); // Imprime o valor da função em x = 3<br>        Console.WriteLine($"f'(3) = {ad.Gradient[0]}"); // Imprime o valor da derivada em x = 3<br>    }<br>}<br></code></pre><br><br>Neste exemplo, estamos calculando a derivada da função \(f(x) = x^2\) em \(x = 3\) utilizando a biblioteca MathNet.Numerics para lidar com cálculos numéricos. A classe `SparseGradientValue` nos permite representar a função e sua derivada de forma eficiente, facilitando a computação da derivada em um ponto específico.<br><br>Além disso, é importante mencionar que a derivação automática esparsa não se limita apenas a funções simples como a do nosso exemplo. Ela pode ser aplicada em problemas mais complexos, envolvendo múltiplas variáveis e funções não lineares, proporcionando uma maneira elegante e eficiente de lidar com cálculos diferenciais em sistemas escaláveis.<br><br>Em conclusão, a derivação automática esparsa é uma ferramenta poderosa que pode trazer benefícios significativos para aqueles que lidam com cálculos diferenciais em seus projetos. Se você ainda não explorou essa técnica, recomendo que dedique um tempo para estudá-la e entender como ela pode ser aplicada no seu contexto específico. Afinal, o conhecimento e a prática são as chaves para o sucesso na área da computação.<br><br>Espero que este artigo tenha sido útil e inspirador para você. Até a próxima!</div>
-<section class="article-validation" aria-labelledby="article-validation-title">
-<h2 id="article-validation-title">O que foi verificado</h2>
-<ul>
-<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
-<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 29/04/2025.</li>
-<li><strong>Recorte editorial:</strong> a análise conecta o tema "Desvendando o Mundo da Derivação Automática Esparsa" à categoria <strong>Artigos</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
-<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
-</ul>
-</section>
-<section class="article-usefulness" aria-labelledby="article-usefulness-title">
-<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
-<ul>
-<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
-<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
-<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
-</ul>
+<section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
+<p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
+<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo.</p>
+<p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
+<p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>

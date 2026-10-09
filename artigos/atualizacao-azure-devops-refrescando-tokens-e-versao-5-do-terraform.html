@@ -25,7 +25,6 @@
 <meta property="article:published_time" content="2025-05-04T16:20:12.572Z">
 <meta property="article:modified_time" content="2025-05-04T16:20:12.572Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content="Atualização Azure DevOps: Refrescando Tokens e Versão 5 do Terraform">
 <meta name="twitter:description" content="Tenho visto muita gente tratando a atualização &quot;Introducing Azure DevOps ID Token Refresh and Terraform Task Version 5&quot; como algo simples - mas a realidade...">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
@@ -36,11 +35,6 @@
   "@type": "BlogPosting",
   "headline": "Atualização Azure DevOps: Refrescando Tokens e Versão 5 do Terraform",
   "description": "Tenho visto muita gente tratando a atualização \"Introducing Azure DevOps ID Token Refresh and Terraform Task Version 5\" como algo simples - mas a realidade...",
-  "image": [
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
-  ],
   "url": "https://www.andersondamasio.com.br/artigos/atualizacao-azure-devops-refrescando-tokens-e-versao-5-do-terraform.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -116,15 +110,14 @@
     ]
   },
   "publisher": {
-    "@type": "Organization",
-    "@id": "https://www.andersondamasio.com.br/#organization",
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
     "name": "Anderson Damasio",
-    "url": "https://www.andersondamasio.com.br",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
-    }
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
   }
 }
 </script>
@@ -216,22 +209,12 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 04/05/2025 13:20</p>
 
 <div class="article-body">Tenho visto muita gente tratando a atualização "Introducing Azure DevOps ID Token Refresh and Terraform Task Version 5" como algo simples - mas a realidade é bem diferente. A verdade é que essas novidades trazem consigo uma série de melhorias e possibilidades que podem impactar significativamente o desenvolvimento de software em larga escala.<br><br>Em termos práticos, a introdução do Azure DevOps ID Token Refresh permite uma forma mais eficiente de lidar com autenticação e autorização em pipelines de CI/CD. Agora, os tokens de acesso podem ser automaticamente renovados, garantindo maior segurança e eliminando a necessidade de intervenção manual. Isso não só simplifica o processo, como também melhora a experiência do desenvolvedor e reduz possíveis falhas de segurança.<br><br>Além disso, a versão 5 do Terraform Task traz consigo atualizações significativas, incluindo melhorias de desempenho, suporte a novas funcionalidades e correções de bugs. Com essa nova versão, os usuários podem esperar uma experiência mais fluida e eficiente ao gerenciar sua infraestrutura como código, permitindo uma maior automatização e escalabilidade em seus projetos.<br><br>Para ilustrar de forma prática, vamos analisar um trecho de código em C# que demonstra como utilizar o Azure DevOps ID Token Refresh em um pipeline de CI/CD:<br><br><pre><code>// Código de exemplo em C# utilizando Azure DevOps ID Token Refresh<br>public async Task<string> GetAccessToken()<br>{<br>    var tokenProvider = new TokenProvider("AzureDevOps");<br>    var token = await tokenProvider.GetToken();<br>    <br>    return token;<br>}<br></code></pre><br><br>Neste exemplo, utilizamos um TokenProvider para obter o token de acesso do Azure DevOps de forma segura e automatizada. Com a introdução do ID Token Refresh, esse processo se torna ainda mais simplificado e seguro, garantindo uma integração mais robusta e eficiente em nossos pipelines.<br><br>Para os usuários mais avançados, recomendo explorar as possibilidades de integração entre o Azure DevOps ID Token Refresh e o Terraform Task Version 5. Combinar essas ferramentas pode abrir portas para uma automação mais sofisticada e escalável em seus projetos, permitindo uma gestão de infraestrutura mais eficiente e segura.<br><br>Em suma, as atualizações recentes no Azure DevOps e no Terraform trazem consigo um potencial transformador para o desenvolvimento de software em larga escala. Ao explorar e aproveitar ao máximo essas novas funcionalidades, os desenvolvedores podem elevar a qualidade, segurança e eficiência de seus projetos, impulsionando assim a inovação e o crescimento contínuo em suas equipes.</div>
-<section class="article-validation" aria-labelledby="article-validation-title">
-<h2 id="article-validation-title">O que foi verificado</h2>
-<ul>
-<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
-<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 02/05/2025.</li>
-<li><strong>Recorte editorial:</strong> a análise conecta o tema "Atualização Azure DevOps: Refrescando Tokens e Versão 5 do Terraform" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
-<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
-</ul>
-</section>
-<section class="article-usefulness" aria-labelledby="article-usefulness-title">
-<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
-<ul>
-<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
-<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
-<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
-</ul>
+<section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
+<p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
+<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo. Data da fonte registrada: 02/05/2025.</p>
+<p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
+<p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>

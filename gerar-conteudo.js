@@ -33,7 +33,7 @@ const {
 const { lerDimensoesImagemLocal } = require('./scripts/seo-image-dimensions');
 const {
   authorName,
-  criarOrganizacaoSchema,
+  criarPublicadorSchema,
   criarPessoaSchema,
   criarWebSiteSchema,
   siteName,
@@ -43,7 +43,8 @@ const {
   criarFonteSchema,
   normalizarFonteUrl
 } = require('./scripts/seo-source-citation');
-const { gerarSecoesConteudoUtil } = require('./scripts/seo-helpful-content');
+const { gerarSecoesConteudoUtil, hashCorpoEditorial } = require('./scripts/seo-helpful-content');
+const { descricaoPerfil, gerarApresentacaoPerfil, estilosPerfil } = require('./scripts/seo-profile');
 const { gerarResourceHints } = require('./scripts/seo-resource-hints');
 const { normalizarRobotsMeta } = require('./scripts/seo-robots');
 const {
@@ -442,9 +443,6 @@ ${gerarFooterNavegacao("..")}
 
 
 const rssUrl = `${siteUrl}/rss.xml`;
-const anoInicioExperiencia = 2005;
-const anosExperiencia = new Date().getFullYear() - anoInicioExperiencia;
-const textoAnosExperiencia = `mais de ${anosExperiencia} anos`;
 const apiKey = process.env.OPENAI_API_KEY;
 const twitterBearer = process.env.TWITTER_BEARER_TOKEN;
 const openAiMaxRetries = numeroAmbiente("OPENAI_MAX_RETRIES", 4, 0);
@@ -780,7 +778,6 @@ ${imageAltText ? `<meta property="og:image:alt" content="${escapeAttribute(image
 ${publishedTime ? `<meta property="article:published_time" content="${escapeAttribute(publishedTime)}">` : ""}
 ${modifiedTime ? `<meta property="${type === "article" ? "article:modified_time" : "og:updated_time"}" content="${escapeAttribute(modifiedTime)}">` : ""}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content="${escapeAttribute(titulo)}">
 <meta name="twitter:description" content="${escapeAttribute(descricao)}">
 <meta name="twitter:image" content="${escapeAttribute(imageUrl)}">
@@ -2432,12 +2429,23 @@ function publicarRascunhoAprovado(rascunho, { agora = new Date() } = {}) {
       sourceTitle: noticia.titulo
     });
     const sourceDate = noticia.data ? new Date(noticia.data).toISOString() : null;
+    const editorial = {
+      hash: rascunho.revisaoHumana.hash,
+      conteudoHash: hashCorpoEditorial(corpoArtigo),
+      politica: rascunho.politica,
+      revisaoHumana: rascunho.revisaoHumana,
+      dossie: rascunho.dossie,
+      geracao: rascunho.geracao || null,
+      humanizer: rascunho.humanizer || null
+    };
     const secoesConteudoUtil = gerarSecoesConteudoUtil({
       title: titulo,
       category: categoria,
       sourceUrl: noticia.url,
       sourceTitle: noticia.titulo,
-      sourceDate
+      sourceDate,
+      editorial,
+      corpoArtigo
     });
 
 
@@ -2480,7 +2488,7 @@ ${gerarSeoHead({
       } : {}),
       "author": criarPessoaSchema(),
       "copyrightHolder": criarPessoaSchema(),
-      "publisher": criarOrganizacaoSchema()
+      "publisher": criarPublicadorSchema()
     },
     criarBreadcrumbJsonLd([
       { name: "Início", url: "/" },
@@ -2660,14 +2668,8 @@ document.addEventListener("DOMContentLoaded", function() {
     dataFonte: sourceDate,
     categoria,
     urlFonte: noticia.url,
-    editorial: {
-      hash: rascunho.revisaoHumana.hash,
-      politica: rascunho.politica,
-      revisaoHumana: rascunho.revisaoHumana,
-      dossie: rascunho.dossie,
-      geracao: rascunho.geracao || null,
-      humanizer: rascunho.humanizer || null
-    }
+    seo: { description: resumo, modifiedAt: dataISO },
+    editorial
   });
 
 
@@ -2701,7 +2703,7 @@ function gerarIndicesPaginados(titulos) {
     const artigosPagina = ordenados.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
     const links = artigosPagina.map(t => {
       const data = formatDateTime(new Date(t.data));
-      return `<li><a href="${t.url}">${escapeHTML(t.titulo)}</a> <span style="color:#777;">(${data})</span></li>`;
+      return `<li><a href="${t.url}">${escapeHTML(t.titulo)}</a><time datetime="${escapeAttribute(t.data)}">${data}</time></li>`;
     }).join("\n");
 
     const paginacao = criarPaginacaoCompacta(
@@ -2716,7 +2718,7 @@ function gerarIndicesPaginados(titulos) {
       ? `${siteName} - Arquiteto de Software e Desenvolvedor`
       : `Artigos de ${siteName} - Página ${i + 1}`;
     const pageDescription = i === 0
-      ? `Anderson Damasio, arquiteto de software com ${textoAnosExperiencia} de experiência em soluções modernas, escaláveis e artigos técnicos.`
+      ? descricaoPerfil
       : `Página ${i + 1} da lista de artigos técnicos de Anderson Damasio sobre arquitetura de software, tecnologia e desenvolvimento.`;
     const pessoaSchema = criarPessoaSchema();
     const paginaSchema = i === 0
@@ -2850,6 +2852,7 @@ a:hover {
   color: var(--main-bg);
 }
 .pagination-gap { color: var(--footer); padding: 6px 2px; }
+${estilosPerfil}
 </style>
 
 </head>
@@ -2864,32 +2867,14 @@ a:hover {
 ${gerarHeaderNavegacao(".")}
 
 <main>
-<section>
-<div style="text-align: center; margin: 2rem auto 1rem;">
-  <h1 style="font-size: 2rem; margin-bottom: 0.2rem;">Anderson Damasio</h1>
-  <p style="font-size: 1.1rem; color: #444; margin-bottom: 0.5rem;">Arquiteto de Software</p>
-  <p><a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener" style="color: #0a66c2; font-weight: bold;">Acesse o perfil no LinkedIn</a></p>
-</div>
-
-
-<!-- Sobre Mim -->
-<div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
-<h2>Sobre Mim</h2>
-<p>Arquiteto de Software com ${textoAnosExperiencia} de experiência em desenvolvimento de sistemas, soluções escaláveis e arquitetura moderna.</p>
-
-<h3>Contato</h3>
-<p>E-mail: <a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
-</div>
-
-<!-- Artigos -->
-<div style="background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:2rem; margin-bottom:2rem;">
-<h2>📚 Artigos</h2>
-<ul>
+${i === 0 ? gerarApresentacaoPerfil() : `<h1>Artigos de Anderson Damasio: p&aacute;gina ${i + 1}</h1>`}
+<section aria-labelledby="articles-title">
+<h2 id="articles-title">${i === 0 ? "Artigos recentes" : "Arquivo de artigos"}</h2>
+<p><a href="/artigos/index.html">Todos os assuntos</a></p>
+<ul class="article-index">
 ${links}
 </ul>
 ${paginacao}
-</div>
-
 </section>
 </main>
 
@@ -2984,7 +2969,7 @@ function gerarSitemap(titulos) {
 
   adicionar("/", ultimaData, false);
   ["artigos/index.html", "sobre.html", "contato.html", "termos.html", "politica.html", "beijaoupassa/politica-de-privacidade.html"].forEach(url => {
-    adicionar(url, ultimaData);
+    adicionar(url);
   });
 
   const paginasRaiz = Math.ceil(artigosPublicaveis.length / artigosPorPagina);
@@ -3000,7 +2985,7 @@ function gerarSitemap(titulos) {
 
   const agrupados = {};
   artigosPublicaveis.forEach(t => {
-    adicionar(t.url, t.data);
+    adicionar(t.url, t.seo?.modifiedAt || t.data);
 
     const categoria = normalizarCategoria(t.categoria, t.titulo);
     if (!agrupados[categoria]) agrupados[categoria] = [];

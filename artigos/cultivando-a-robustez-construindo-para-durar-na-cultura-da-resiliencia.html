@@ -25,7 +25,6 @@
 <meta property="article:published_time" content="2025-05-09T05:18:35.003Z">
 <meta property="article:modified_time" content="2025-05-09T05:18:35.003Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content="Cultivando a Robustez: Construindo para Durar na Cultura da Resiliência">
 <meta name="twitter:description" content="Já passei por situações em que a construção de sistemas robustos e resilientes foi crucial para o sucesso de um projeto. A notícia sobre &quot;Presentation:...">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
@@ -36,11 +35,6 @@
   "@type": "BlogPosting",
   "headline": "Cultivando a Robustez: Construindo para Durar na Cultura da Resiliência",
   "description": "Já passei por situações em que a construção de sistemas robustos e resilientes foi crucial para o sucesso de um projeto. A notícia sobre \"Presentation:...",
-  "image": [
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
-  ],
   "url": "https://www.andersondamasio.com.br/artigos/cultivando-a-robustez-construindo-para-durar-na-cultura-da-resiliencia.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -116,15 +110,14 @@
     ]
   },
   "publisher": {
-    "@type": "Organization",
-    "@id": "https://www.andersondamasio.com.br/#organization",
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
     "name": "Anderson Damasio",
-    "url": "https://www.andersondamasio.com.br",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
-    }
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
   }
 }
 </script>
@@ -219,22 +212,12 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 09/05/2025 02:18</p>
 
 <div class="article-body">Já passei por situações em que a construção de sistemas robustos e resilientes foi crucial para o sucesso de um projeto. A notícia sobre "Presentation: Built to Outlast: Cultivating a Culture of Resilience" ressoa com a importância de criar aplicações que consigam resistir aos desafios do mundo real, mantendo-se funcionais e eficientes mesmo diante de adversidades.<br>Para construir sistemas que resistam ao teste do tempo e das circunstâncias, é fundamental adotar práticas e tecnologias que promovam a resiliência. Uma abordagem interessante é a utilização de arquiteturas distribuídas, como o modelo de microserviços, que permitem a construção de sistemas modulares e independentes, facilitando a escalabilidade e a manutenção.<br>Além disso, o uso de técnicas de monitoramento e recuperação automatizada, como o emprego de ferramentas de observabilidade e a implementação de estratégias de resiliência, como o circuit breaker e o fallback, são essenciais para garantir a disponibilidade e a confiabilidade dos sistemas em cenários adversos.<br>No âmbito do desenvolvimento de software, a adoção de práticas como o design orientado a testes (TDD) e a integração contínua (CI/CD) contribuem para a construção de aplicações mais robustas e estáveis, permitindo identificar e corrigir falhas de forma ágil e eficiente.<br>Em termos de código, podemos destacar a importância de escrever códigos limpos, legíveis e bem estruturados, seguindo os princípios do SOLID e utilizando padrões de projeto que favoreçam a manutenibilidade e a extensibilidade do sistema.<br>Para ilustrar, vamos considerar um exemplo em C# de como implementar um mecanismo de circuit breaker para lidar com falhas em chamadas de serviços externos:<br><pre><code class="language-csharp">public async Task<string> CallExternalService()<br>{<br>var circuitBreaker = new CircuitBreaker();<br>string result;<br>try<br>{<br>result = await circuitBreaker.ExecuteAsync(async () =><br>{<br>var response = await _httpClient.GetAsync("https://api.externa.com/resource");<br>response.EnsureSuccessStatusCode();<br>return await response.Content.ReadAsStringAsync();<br>});<br>}<br>catch (CircuitBreakerOpenException ex)<br>{<br>result = "Fallback response";<br>}<br>return result;<br>}<br></code></pre><br>Neste trecho de código, o circuit breaker é responsável por monitorar e controlar o fluxo de chamadas ao serviço externo, evitando sobrecargas e falhas em cascata.<br>Em suma, cultivar uma cultura de resiliência no desenvolvimento de software é fundamental para garantir a qualidade e a durabilidade dos sistemas. Investir em práticas, tecnologias e padrões que promovam a robustez e a adaptabilidade dos sistemas é essencial para enfrentar os desafios do mercado e as demandas dos usuários.<br>Portanto, lembre-se: construa para durar, cultive a resiliência e esteja preparado para os desafios que virão. Afinal, a verdadeira qualidade de um sistema se revela na sua capacidade de resistir e se adaptar às mudanças.</div>
-<section class="article-validation" aria-labelledby="article-validation-title">
-<h2 id="article-validation-title">O que foi verificado</h2>
-<ul>
-<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
-<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 06/05/2025.</li>
-<li><strong>Recorte editorial:</strong> a análise conecta o tema "Cultivando a Robustez: Construindo para Durar na Cultura da Resiliência" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
-<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
-</ul>
-</section>
-<section class="article-usefulness" aria-labelledby="article-usefulness-title">
-<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
-<ul>
-<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
-<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
-<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
-</ul>
+<section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
+<p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
+<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo. Data da fonte registrada: 06/05/2025.</p>
+<p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
+<p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>

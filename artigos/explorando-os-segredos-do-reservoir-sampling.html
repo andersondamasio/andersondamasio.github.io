@@ -25,7 +25,6 @@
 <meta property="article:published_time" content="2025-05-08T17:15:43.194Z">
 <meta property="article:modified_time" content="2025-05-08T17:15:43.194Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content="Explorando os Segredos do Reservoir Sampling">
 <meta name="twitter:description" content="Mais importante do que simplesmente entender o conceito de Reservoir Sampling, é compreender como essa técnica pode impactar diretamente o nosso trabalho...">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
@@ -36,11 +35,6 @@
   "@type": "BlogPosting",
   "headline": "Explorando os Segredos do Reservoir Sampling",
   "description": "Mais importante do que simplesmente entender o conceito de Reservoir Sampling, é compreender como essa técnica pode impactar diretamente o nosso trabalho...",
-  "image": [
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
-  ],
   "url": "https://www.andersondamasio.com.br/artigos/explorando-os-segredos-do-reservoir-sampling.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -116,15 +110,14 @@
     ]
   },
   "publisher": {
-    "@type": "Organization",
-    "@id": "https://www.andersondamasio.com.br/#organization",
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
     "name": "Anderson Damasio",
-    "url": "https://www.andersondamasio.com.br",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
-    }
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
   }
 }
 </script>
@@ -216,22 +209,12 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 08/05/2025 14:15</p>
 
 <div class="article-body">Mais importante do que simplesmente entender o conceito de Reservoir Sampling, é compreender como essa técnica pode impactar diretamente o nosso trabalho como desenvolvedores. Neste artigo, vamos explorar a fundo os segredos por trás do Reservoir Sampling e como podemos utilizá-lo de forma eficiente em nossos projetos.<br>Para começar, é essencial compreender que o Reservoir Sampling é uma técnica usada para amostragem aleatória de dados de um fluxo contínuo. Em termos simplificados, imagine que você tem um grande conjunto de dados que não pode ser armazenado completamente na memória, e precisa selecionar aleatoriamente uma amostra desse conjunto. É aí que entra o Reservoir Sampling.<br>A ideia por trás do Reservoir Sampling é bastante interessante. Em vez de armazenar todos os dados e depois selecionar uma amostra, o algoritmo do Reservoir Sampling permite que você selecione aleatoriamente os elementos à medida que eles chegam, mantendo uma amostra representativa sem a necessidade de armazenar todos os dados.<br>Vamos ver como isso funciona na prática, utilizando um exemplo simples em C#:<br><pre><code class="language-csharp">public List<int> ReservoirSampling(int[] stream, int k)<br>{<br>List<int> reservoir = new List<int>();<br>for (int i = 0; i < k; i++)<br>{<br>reservoir.Add(stream[i]);<br>}<br>Random rand = new Random();<br>for (int i = k; i < stream.Length; i++)<br>{<br>int j = rand.Next(0, i + 1);<br>if (j < k)<br>{<br>reservoir[j] = stream[i];<br>}<br>}<br>return reservoir;<br>}<br></code></pre><br>Neste trecho de código, estamos simulando a amostragem de um fluxo de dados representado por um array `stream`, onde `k` é o tamanho da amostra que queremos selecionar. O algoritmo do Reservoir Sampling nos permite manter a amostra representativa sem precisar armazenar todos os elementos do fluxo de dados.<br>Para tornar nosso código ainda mais eficiente, podemos utilizar APIs específicas de linguagens como C# para otimizar o processo de seleção aleatória dos elementos.<br>Além disso, é importante ressaltar que o Reservoir Sampling pode ser extremamente útil em situações onde lidamos com grandes volumes de dados e precisamos extrair amostras de forma eficiente e representativa.<br>Em conclusão, o Reservoir Sampling é uma técnica poderosa que pode facilitar o nosso trabalho como desenvolvedores, permitindo a seleção de amostras aleatórias de dados de forma eficiente e representativa. Ao dominar essa técnica e aplicá-la de forma inteligente em nossos projetos, podemos melhorar significativamente o desempenho e a eficácia das nossas soluções.</div>
-<section class="article-validation" aria-labelledby="article-validation-title">
-<h2 id="article-validation-title">O que foi verificado</h2>
-<ul>
-<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
-<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 08/05/2025.</li>
-<li><strong>Recorte editorial:</strong> a análise conecta o tema "Explorando os Segredos do Reservoir Sampling" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
-<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
-</ul>
-</section>
-<section class="article-usefulness" aria-labelledby="article-usefulness-title">
-<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
-<ul>
-<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
-<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
-<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
-</ul>
+<section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
+<p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
+<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo. Data da fonte registrada: 08/05/2025.</p>
+<p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
+<p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>

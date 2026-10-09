@@ -67,6 +67,19 @@ npm run test:editorial
 npm run test:humanizer
 npm run test:seo:recovery
 npm run test:model:budget
+npm run test:seo:templates
 ```
 
 Esses testes usam fontes e modelos simulados. A publicacao de teste ocorre em diretorio temporario e nao cria artigo real. `npm run test:rebuild:site` faz dois rebuilds locais completos, compara as saidas e confere preservacao dos corpos existentes; seu relatorio fica em `.editorial/validacao-rebuild.json`.
+
+## Perfil, templates e metadados
+
+`scripts/seo-profile.js` e a fonte do texto da home e da pagina Sobre. A home e reconstruida pelo gerador; Sobre e atualizada por `seo:backfill:static`. Nao editar apenas os HTML resultantes. O perfil usa os dados confirmados e o LinkedIn oficial; projetos, resultados e outros perfis so devem ser incluidos depois de confirmados.
+
+Nos artigos novos, `titulos.json` guarda `seo.description`, `seo.modifiedAt` e o registro editorial. Uma atualizacao substancial deve preservar `data` e `url`, registrar a nova descricao quando necessario e alterar `seo.modifiedAt` para a data real da revisao. O backfill conserva esses campos; sitemap e dados estruturados usam as mesmas datas. Executar um rebuild nao deve tornar o artigo artificialmente recente.
+
+O bloco de responsabilidade editorial nao equivale a verificacao factual automatica. Artigos antigos sem registro individual aparecem com esse limite explicito. Nos novos artigos, a revisao visivel exige registro de aprovacao e correspondencia do corpo publicado. Alteracoes do texto invalidam essa correspondencia; ajustes de carregamento de imagens nao mudam o conteudo aprovado. A imagem generica da marca pode aparecer no compartilhamento social, mas nao e declarada como imagem especifica de cada artigo.
+
+Antes de uma migracao ampla de templates, `node scripts/verify-editorial-migration.js --capture` registra uma linha de base local e recusa sobrescreve-la. Depois, o mesmo comando sem `--capture` compara corpos editoriais, H1, URL canonica, robots e datas. Nao substituir essa linha de base para ocultar diferencas: investigar e documentar alteracoes intencionais separadamente.
+
+`node scripts/qa-seo-templates.js` valida as paginas principais em tres larguras, com servidor temporario e navegador isolado. Defina `CHROME_PATH` para um Chrome local quando o Chromium do Puppeteer nao estiver disponivel. Os relatorios e capturas ficam em `.editorial/`, fora do repositorio publico. Esse QA nao acessa a sessao pessoal do navegador e nao demonstra indexacao nem Core Web Vitals de usuarios reais.
