@@ -29,6 +29,7 @@ const {
 const { inserirSecoesConteudoUtil } = require("./seo-helpful-content");
 
 const root = process.cwd();
+require("./indexation-policy").exigirManifestoAplicado(root);
 const rssUrl = `${siteUrl}/rss.xml`;
 
 function walk(dir, out = []) {

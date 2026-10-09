@@ -38,6 +38,7 @@ jobs:
           npm run test:seo:recovery
           npm run test:seo:templates
           npm run test:seo:navigation
+          npm run test:seo:indexation
           npm run seo:navigation
           npm run test:model:budget
 

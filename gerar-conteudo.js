@@ -638,7 +638,15 @@ function palavrasRelacionamento(titulo) {
     .filter(palavra => palavra.length >= 4 && !palavrasVaziasRelacionamento.has(palavra));
 }
 
-function selecionarArtigosRelacionados(artigo, artigos, limite = 4) {
+function prepararIndiceRelacionados(artigos) {
+  return new Map(artigos.map(artigo => [artigo, {
+    palavras: palavrasRelacionamento(artigo.titulo),
+    categoria: normalizarTexto(artigo.categoria || ""),
+    data: artigo.data ? new Date(artigo.data).getTime() : 0
+  }]));
+}
+
+function selecionarArtigosRelacionados(artigo, artigos, limite = 4, indice = prepararIndiceRelacionados(artigos)) {
   const palavrasBase = new Set(palavrasRelacionamento(artigo.titulo));
   const categoriaBase = normalizarTexto(artigo.categoria || "");
   const dataBase = artigo.data ? new Date(artigo.data).getTime() : 0;
@@ -646,10 +654,11 @@ function selecionarArtigosRelacionados(artigo, artigos, limite = 4) {
   const candidatos = artigos
     .filter(candidato => candidato.url !== artigo.url)
     .map(candidato => {
-      const palavrasCandidato = palavrasRelacionamento(candidato.titulo);
+      const metadados = indice.get(candidato);
+      const palavrasCandidato = metadados.palavras;
       const palavrasComuns = palavrasCandidato.filter(palavra => palavrasBase.has(palavra)).length;
-      const mesmaCategoria = categoriaBase && normalizarTexto(candidato.categoria || "") === categoriaBase;
-      const dataCandidato = candidato.data ? new Date(candidato.data).getTime() : 0;
+      const mesmaCategoria = categoriaBase && metadados.categoria === categoriaBase;
+      const dataCandidato = metadados.data;
       const proximidadeTemporal = dataBase && dataCandidato
         ? Math.max(0, 1 - Math.abs(dataBase - dataCandidato) / (1000 * 60 * 60 * 24 * 365))
         : 0;
@@ -660,7 +669,7 @@ function selecionarArtigosRelacionados(artigo, artigos, limite = 4) {
       };
     })
     .filter(item => item.score > 0)
-    .sort((a, b) => b.score - a.score || new Date(b.candidato.data || 0) - new Date(a.candidato.data || 0))
+    .sort((a, b) => b.score - a.score || indice.get(b.candidato).data - indice.get(a.candidato).data)
     .map(item => item.candidato);
 
   if (candidatos.length >= limite) return candidatos.slice(0, limite);
@@ -682,8 +691,8 @@ function selecionarArtigosRelacionados(artigo, artigos, limite = 4) {
   return [...parciais, ...recentesGerais].slice(0, limite);
 }
 
-function gerarHtmlArtigosRelacionados(artigo, artigos) {
-  const relacionados = selecionarArtigosRelacionados(artigo, artigos);
+function gerarHtmlArtigosRelacionados(artigo, artigos, indice) {
+  const relacionados = selecionarArtigosRelacionados(artigo, artigos, 4, indice);
   if (!relacionados.length) return "";
 
   const links = relacionados.map(relacionado => {
@@ -1344,6 +1353,7 @@ ${gerarSeoHead({
 function atualizarArtigosRelacionados(artigos) {
   let alterados = 0;
   const artigosPublicaveis = Array.isArray(artigos) ? artigos : [];
+  const indice = prepararIndiceRelacionados(artigosPublicaveis);
 
   for (const artigo of artigosPublicaveis) {
     const local = normalizarUrlLocal(artigo.url);
@@ -1351,7 +1361,7 @@ function atualizarArtigosRelacionados(artigos) {
     if (!arquivo || !arquivoIndexavel(arquivo)) continue;
 
     const htmlOriginal = fs.readFileSync(arquivo, "utf8");
-    const relacionados = gerarHtmlArtigosRelacionados(artigo, artigosPublicaveis);
+    const relacionados = gerarHtmlArtigosRelacionados(artigo, artigosPublicaveis, indice);
 
     let html = htmlOriginal.replace(/<section class="related-articles"[\s\S]*?<\/section>\s*/i, "");
     if (relacionados) html = garantirEstilosArtigosRelacionados(html);
@@ -3134,6 +3144,7 @@ function carregarTitulosGerados() {
 }
 
 function atualizarPublicacaoSeo(titulosGerados) {
+  require('./scripts/indexation-policy').exigirManifestoAplicado();
   cacheArquivosArtigosPorSlug = null;
   const artigosPublicaveis = prepararArtigosPublicaveis(titulosGerados);
   const urlsConhecidas = new Set(artigosPublicaveis.map(artigo => artigo.url));
