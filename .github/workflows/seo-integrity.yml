@@ -12,6 +12,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  reservoir-example:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: exemplos/reservoir-sampling/global.json
+      - name: Compilar e verificar exemplo CSharp
+        working-directory: exemplos/reservoir-sampling
+        run: dotnet run --configuration Release --verbosity minimal
+
   seo-integrity:
     runs-on: ubuntu-latest
 

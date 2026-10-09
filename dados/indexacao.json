@@ -223,13 +223,13 @@
     {
       "url": "artigos/explorando-os-segredos-do-reservoir-sampling.html",
       "acao": "atualizar",
-      "motivo": "Guia tecnico deve corrigir exemplo e explicitar o contrato de entrada.",
-      "evidencia": "Corpo usa array inteiro como fluxo, nao trata k maior que o array, e a renderizacao do C# perde genericos por markup. Nossos projetos e falso positivo de vivencia. Manter URL e preparar validacao executavel, sem alegar que codigo foi testado.",
+      "motivo": "Corrigir limites e HTML do exemplo C#, com codigo executavel e fontes primarias.",
+      "evidencia": "Algorithm R conferido na secao 2 de Vitter. Exemplo .NET 10 executado: 13 verificacoes aprovadas, incluindo reproducao do erro legado k > N e enumeracao de todos os caminhos para N=4, k=2. Sem certificacao estatistica geral.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida e testes automatizados)",
+        "em": "2026-10-09T23:09:12.865Z"
       },
-      "conteudoHash": "dcc8a970f05079c1c04376a37dcea701f548ba70170e06c35f898b8ebde630a3"
+      "conteudoHash": "5983ee2ea3e4773ff768178fb51caf1e8f91f7ea11bbeeb8b28ab900c8eed604"
     }
   ]
 }

@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Explorando os Segredos do Reservoir Sampling</title>
-<meta name="description" content="Mais importante do que simplesmente entender o conceito de Reservoir Sampling, é compreender como essa técnica pode impactar diretamente o nosso trabalho...">
+<title>Reservoir Sampling em C#: implementação e testes</title>
+<meta name="description" content="Reservoir Sampling em C# com entrada enumerável, limites explícitos e 13 testes executáveis. Código e fontes para reproduzir a seleção de amostras.">
 <meta name="author" content="Anderson Damasio">
-<meta name="keywords" content="Outros, reservoir, sampling, dados, segredos, amostra, explorando, stream, eficiente, forma">
+<meta name="keywords" content="Outros, entrada, amostra, implementacao, reservoir, testes, sample, seen, random, sampling">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/explorando-os-segredos-do-reservoir-sampling.html">
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
@@ -15,48 +15,48 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Explorando os Segredos do Reservoir Sampling">
-<meta property="og:description" content="Mais importante do que simplesmente entender o conceito de Reservoir Sampling, é compreender como essa técnica pode impactar diretamente o nosso trabalho...">
+<meta property="og:title" content="Reservoir Sampling em C#: implementação e testes">
+<meta property="og:description" content="Reservoir Sampling em C# com entrada enumerável, limites explícitos e 13 testes executáveis. Código e fontes para reproduzir a seleção de amostras.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/explorando-os-segredos-do-reservoir-sampling.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2025-05-08T17:15:43.194Z">
-<meta property="article:modified_time" content="2025-05-08T17:15:43.194Z">
+<meta property="article:modified_time" content="2026-10-09T23:09:12.865Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Explorando os Segredos do Reservoir Sampling">
-<meta name="twitter:description" content="Mais importante do que simplesmente entender o conceito de Reservoir Sampling, é compreender como essa técnica pode impactar diretamente o nosso trabalho...">
+<meta name="twitter:title" content="Reservoir Sampling em C#: implementação e testes">
+<meta name="twitter:description" content="Reservoir Sampling em C# com entrada enumerável, limites explícitos e 13 testes executáveis. Código e fontes para reproduzir a seleção de amostras.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Explorando os Segredos do Reservoir Sampling",
-  "description": "Mais importante do que simplesmente entender o conceito de Reservoir Sampling, é compreender como essa técnica pode impactar diretamente o nosso trabalho...",
+  "headline": "Reservoir Sampling em C#: implementação e testes",
+  "description": "Reservoir Sampling em C# com entrada enumerável, limites explícitos e 13 testes executáveis. Código e fontes para reproduzir a seleção de amostras.",
   "url": "https://www.andersondamasio.com.br/artigos/explorando-os-segredos-do-reservoir-sampling.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/explorando-os-segredos-do-reservoir-sampling.html"
   },
   "datePublished": "2025-05-08T17:15:43.194Z",
-  "dateModified": "2025-05-08T17:15:43.194Z",
+  "dateModified": "2026-10-09T23:09:12.865Z",
   "articleSection": "Outros",
   "inLanguage": "pt-BR",
   "keywords": [
     "Outros",
-    "reservoir",
-    "sampling",
-    "dados",
-    "segredos",
+    "entrada",
     "amostra",
-    "explorando",
-    "stream",
-    "eficiente",
-    "forma"
+    "implementacao",
+    "reservoir",
+    "testes",
+    "sample",
+    "seen",
+    "random",
+    "sampling"
   ],
-  "wordCount": 375,
+  "wordCount": 522,
   "about": {
     "@type": "Thing",
     "name": "Outros"
@@ -64,19 +64,7 @@
   "mentions": [
     {
       "@type": "Thing",
-      "name": "reservoir"
-    },
-    {
-      "@type": "Thing",
-      "name": "sampling"
-    },
-    {
-      "@type": "Thing",
-      "name": "dados"
-    },
-    {
-      "@type": "Thing",
-      "name": "segredos"
+      "name": "entrada"
     },
     {
       "@type": "Thing",
@@ -84,11 +72,29 @@
     },
     {
       "@type": "Thing",
-      "name": "explorando"
+      "name": "implementacao"
+    },
+    {
+      "@type": "Thing",
+      "name": "reservoir"
+    },
+    {
+      "@type": "Thing",
+      "name": "testes"
+    },
+    {
+      "@type": "Thing",
+      "name": "sample"
     }
   ],
   "isAccessibleForFree": true,
   "copyrightYear": 2025,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "Random Sampling with a Reservoir - Jeffrey Scott Vitter",
+    "url": "https://www.cs.umd.edu/~samir/498/vitter.pdf"
+  },
+  "citation": "https://www.cs.umd.edu/~samir/498/vitter.pdf",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -147,7 +153,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Explorando os Segredos do Reservoir Sampling",
+      "name": "Reservoir Sampling em C#: implementação e testes",
       "item": "https://www.andersondamasio.com.br/artigos/explorando-os-segredos-do-reservoir-sampling.html"
     }
   ]
@@ -159,7 +165,7 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background-co
 h1 { font-size: 1.8rem; margin-bottom: 1rem; }
 .article-meta { color: #777; font-size: 0.95rem; margin-bottom: 1.5rem; }
 .article-body { font-size: 1.05rem; line-height: 1.7; }
-pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+pre { background: #272822; color: #f8f8f2; padding: 3rem 1rem 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
 code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
 .copy-button { position: absolute; top: 8px; right: 8px; background: #0a66c2; color: white; border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
 .copy-button:hover { opacity: 1; background-color: #084e91; }
@@ -180,6 +186,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
 .article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
 .article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0; }
+.article-source a { font-weight: 700; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -205,17 +215,71 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 
 
 <main>
-<h1>Explorando os Segredos do Reservoir Sampling</h1>
+<h1>Reservoir Sampling em C#: implementação e testes</h1>
 <p class="article-meta">Publicado em: 08/05/2025 14:15</p>
 
-<div class="article-body">Mais importante do que simplesmente entender o conceito de Reservoir Sampling, é compreender como essa técnica pode impactar diretamente o nosso trabalho como desenvolvedores. Neste artigo, vamos explorar a fundo os segredos por trás do Reservoir Sampling e como podemos utilizá-lo de forma eficiente em nossos projetos.<br>Para começar, é essencial compreender que o Reservoir Sampling é uma técnica usada para amostragem aleatória de dados de um fluxo contínuo. Em termos simplificados, imagine que você tem um grande conjunto de dados que não pode ser armazenado completamente na memória, e precisa selecionar aleatoriamente uma amostra desse conjunto. É aí que entra o Reservoir Sampling.<br>A ideia por trás do Reservoir Sampling é bastante interessante. Em vez de armazenar todos os dados e depois selecionar uma amostra, o algoritmo do Reservoir Sampling permite que você selecione aleatoriamente os elementos à medida que eles chegam, mantendo uma amostra representativa sem a necessidade de armazenar todos os dados.<br>Vamos ver como isso funciona na prática, utilizando um exemplo simples em C#:<br><pre><code class="language-csharp">public List<int> ReservoirSampling(int[] stream, int k)<br>{<br>List<int> reservoir = new List<int>();<br>for (int i = 0; i < k; i++)<br>{<br>reservoir.Add(stream[i]);<br>}<br>Random rand = new Random();<br>for (int i = k; i < stream.Length; i++)<br>{<br>int j = rand.Next(0, i + 1);<br>if (j < k)<br>{<br>reservoir[j] = stream[i];<br>}<br>}<br>return reservoir;<br>}<br></code></pre><br>Neste trecho de código, estamos simulando a amostragem de um fluxo de dados representado por um array `stream`, onde `k` é o tamanho da amostra que queremos selecionar. O algoritmo do Reservoir Sampling nos permite manter a amostra representativa sem precisar armazenar todos os elementos do fluxo de dados.<br>Para tornar nosso código ainda mais eficiente, podemos utilizar APIs específicas de linguagens como C# para otimizar o processo de seleção aleatória dos elementos.<br>Além disso, é importante ressaltar que o Reservoir Sampling pode ser extremamente útil em situações onde lidamos com grandes volumes de dados e precisamos extrair amostras de forma eficiente e representativa.<br>Em conclusão, o Reservoir Sampling é uma técnica poderosa que pode facilitar o nosso trabalho como desenvolvedores, permitindo a seleção de amostras aleatórias de dados de forma eficiente e representativa. Ao dominar essa técnica e aplicá-la de forma inteligente em nossos projetos, podemos melhorar significativamente o desempenho e a eficácia das nossas soluções.</div>
+<div class="article-body"><p>Para selecionar uma amostra aleatória sem carregar todos os registros na memória, é possível manter apenas um reservatório de tamanho limitado enquanto a entrada é percorrida. A implementação abaixo usa <code>IEnumerable&lt;T&gt;</code>, trata entradas menores que a amostra e vem acompanhada de testes executáveis em C#.</p>
+<h2>Qual problema o reservatório resolve</h2>
+<p>O Algorithm R mantém até <code>k</code> elementos. Depois dos primeiros <code>k</code>, cada item disputa uma posição sorteada entre todos os itens já vistos, não apenas entre as posições do reservatório. Essa regra mantém uma amostra uniforme das posições da entrada, assumindo sorteios uniformes. A descrição e a análise estão na seção 2 de <a href="https://www.cs.umd.edu/~samir/498/vitter.pdf">Random Sampling with a Reservoir, de Jeffrey Scott Vitter</a>.</p>
+<p>Isso não garante que toda categoria apareça em uma amostra particular. Se essa for a exigência, a estratégia de seleção precisa considerar os grupos explicitamente.</p>
+<h2>Implementação para uma entrada enumerável</h2>
+<pre><code class="language-csharp">public static class Reservoir
+{
+    public static List&lt;T&gt; Sample&lt;T&gt;(IEnumerable&lt;T&gt; source, int size, Random? random = null)
+    {
+        ArgumentNullException.ThrowIfNull(source);
+        ArgumentOutOfRangeException.ThrowIfNegative(size);
+        var sample = new List&lt;T&gt;();
+        if (size == 0) return sample;
+
+        random ??= Random.Shared;
+        long seen = 0;
+        foreach (var item in source)
+        {
+            seen = checked(seen + 1);
+            if (sample.Count &lt; size)
+            {
+                sample.Add(item);
+                continue;
+            }
+
+            // Algorithm R: select a position among all items seen, not only the reservoir.
+            long position = random.NextInt64(seen);
+            if (position &lt; size) sample[(int)position] = item;
+        }
+        return sample;
+    }
+}
+</code></pre>
+<p><code>NextInt64(seen)</code> inclui zero e exclui <code>seen</code>, conforme a <a href="https://learn.microsoft.com/en-us/dotnet/api/system.random.nextint64?view=net-10.0">documentação do .NET</a>. Se a posição sorteada não pertencer ao reservatório, o novo item não entra na amostra.</p>
+<h2>Comportamento nos limites</h2>
+<ul>
+<li>Entrada nula ou tamanho negativo: exceção explícita.</li>
+<li>Tamanho zero: lista vazia, sem consumir a entrada.</li>
+<li>Entrada menor que a amostra: todos os elementos encontrados.</li>
+<li>Valores iguais em posições diferentes: podem aparecer juntos; o algoritmo não elimina valores duplicados.</li>
+</ul>
+<p>A função lê a entrada uma vez e só retorna quando a enumeração termina. Para uma sequência infinita, seria necessário outro contrato, como uma operação que exponha a amostra corrente. Este exemplo não implementa esse comportamento nem utiliza aleatoriedade criptográfica.</p>
+<h2>Como reproduzir os testes</h2>
+<p>O pacote contém <a href="/exemplos/reservoir-sampling/Reservoir.cs">a implementação</a>, <a href="/exemplos/reservoir-sampling/Program.cs">o verificador</a>, <a href="/exemplos/reservoir-sampling/ReservoirSampling.csproj">o projeto</a> e <a href="/exemplos/reservoir-sampling/global.json">a seleção do SDK</a>. No diretório do projeto, com .NET 10 instalado, execute:</p>
+<pre><code class="language-powershell">dotnet run --configuration Release</code></pre>
+<p>Em 9 de outubro de 2026, uma execução isolada assistida pelo Codex, com SDK 10.0.401 e runtime 10.0.12, passou nas 13 verificações. O teste do caso pequeno percorre os 12 caminhos de sorteio possíveis para quatro entradas distintas e amostra de duas; cada um dos seis subconjuntos aparece duas vezes. Também foram testados tamanho zero, entrada vazia, tamanho maior que a entrada, sorteios de limite e enumeração única.</p>
+<p>Esses testes verificam o comportamento descrito, mas não são benchmark nem certificação estatística do gerador pseudoaleatório. Não demonstram ganho de desempenho em um sistema real.</p>
+<h2>Correção do exemplo anterior</h2>
+<p>A versão anterior recebia um array já materializado e acessava posições inexistentes quando <code>k</code> excedia seu comprimento. Esse erro foi reproduzido no verificador. O HTML também não escapava os tipos genéricos, prejudicando a leitura e a cópia do código. A atualização preserva a URL e a data original do artigo; não representa um teste pessoal de Anderson Damasio em produção.</p>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo. Data da fonte registrada: 08/05/2025.</p>
+<p><strong>Fonte principal:</strong> <a href="https://www.cs.umd.edu/~samir/498/vitter.pdf" rel="noopener noreferrer">Random Sampling with a Reservoir - Jeffrey Scott Vitter</a></p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
+<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="https://www.cs.umd.edu/~samir/498/vitter.pdf" target="_blank" rel="noopener noreferrer">Random Sampling with a Reservoir - Jeffrey Scott Vitter</a>.</p>
+</section>
+
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

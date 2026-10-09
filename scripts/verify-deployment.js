@@ -32,7 +32,11 @@ function prepararVerificacao({ ler, revisao }) {
     arquivosNavegacao = [...new Set(["artigos/index.html", "arquivo/index.html", meses[0].slice(1), meses.at(-1).slice(1)])];
   }
   const arquivos = ["index.html", "sobre.html", "sitemap.xml", "rss.xml", "robots.txt", "ads.txt", ...recentes, ...arquivosNavegacao];
-  return { revisao, recentes, arquivosNavegacao, arquivos: arquivos.map(arquivo => ({ arquivo, hash: digest(ler(arquivo)) })) };
+  let controlaDocumentos = false;
+  try { controlaDocumentos = Boolean(ler("_config.yml")); } catch { /* Older revisions predate the Pages publication policy. */ }
+  const ausentes = controlaDocumentos ? ["EDITORIAL_OPERACAO", "SEO_MELHORIAS_REALIZADAS", "dados/humanizer-rules", "exemplos/reservoir-sampling/README"]
+    .flatMap(nome => [`${nome}.md`, `${nome}.html`]) : [];
+  return { revisao, recentes, arquivosNavegacao, ausentes, arquivos: arquivos.map(arquivo => ({ arquivo, hash: digest(ler(arquivo)) })) };
 }
 
 async function verificarPublicacao({ esperado, fetchImpl = fetch, baseUrl = siteUrl, tentativas = 4, intervaloMs = 15000, esperar = ms => new Promise(resolve => setTimeout(resolve, ms)) }) {
@@ -49,6 +53,15 @@ async function verificarPublicacao({ esperado, fetchImpl = fetch, baseUrl = site
         paginas.set(arquivo, texto);
         const hashAtual = digest(texto);
         verificacoes.push({ arquivo, url, status: resposta.status, hashEsperado: hash, hashAtual, aceita: resposta.status === 200 && hash === hashAtual });
+      } catch (error) {
+        verificacoes.push({ arquivo, url, aceita: false, erro: error.message });
+      }
+    }
+    for (const arquivo of esperado.ausentes || []) {
+      const url = new URL(`/${arquivo}`, baseUrl).href;
+      try {
+        const resposta = await fetchImpl(url, { method: "HEAD", signal: AbortSignal.timeout(20000), headers: { "Cache-Control": "no-cache" }, redirect: "manual" });
+        verificacoes.push({ arquivo, url, status: resposta.status, esperado: "nao publicado no site", aceita: [404, 410].includes(resposta.status) });
       } catch (error) {
         verificacoes.push({ arquivo, url, aceita: false, erro: error.message });
       }

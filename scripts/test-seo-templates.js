@@ -85,6 +85,20 @@ test("identidade liga site e pessoa somente ao perfil social confirmado", () => 
   assert.equal(criarWebSiteSchema().publisher["@type"], "Person");
 });
 
+test("exemplo executavel de Reservoir Sampling corresponde ao codigo publicado", () => {
+  const root = path.join(__dirname, "..");
+  const url = "artigos/explorando-os-segredos-do-reservoir-sampling.html";
+  const html = cheerio.load(fs.readFileSync(path.join(root, url), "utf8"));
+  const codigo = fs.readFileSync(path.join(root, "exemplos/reservoir-sampling/Reservoir.cs"), "utf8").replace(/\r\n/g, "\n");
+  assert.equal(html(".article-body code.language-csharp").text(), codigo);
+  assert.equal(html(".article-body code.language-csharp").children().length, 0);
+  assert.equal(html("link[rel=canonical]").attr("href"), `https://www.andersondamasio.com.br/${url}`);
+  const registro = JSON.parse(fs.readFileSync(path.join(root, "titulos.json"), "utf8")).find(x => x.url === url);
+  assert.equal(html("h1").text(), registro.titulo);
+  assert.equal(html('meta[name="description"]').attr("content"), registro.seo.description);
+  assert.equal(hashCorpoEditorial(html(".article-body").html()), registro.correcaoEditorial.hashDepois);
+});
+
 test("home e pagina dois possuem finalidade e H1 diferentes, sem repetir biografia", () => workspace(root => {
   process.chdir(root);
   fs.mkdirSync("artigos/arquitetura", { recursive: true });
