@@ -1,0 +1,905 @@
+{
+  "versao": 1,
+  "revisadoEm": "2026-10-09T23:34:16.913Z",
+  "revisaoGit": "7f60a26d94aa09a523a37cd40e7bdc0675d7298d",
+  "decisao": "Arquivar os nove registros; retirar sete avisos sem corpo, sem redirecionamento para categorias. Preservar versoes em Git e snapshots dos avisos. Nao remover artigos com corpo.",
+  "semUrl": "Registro sem URL foi arquivado, sem fabricar endereco. Sua noticiaOriginal corresponde ao assunto historico de titulo.html antes de sobrescritas.",
+  "registros": [
+    {
+      "titulo": "Arquitetura sem monotonia: quando software cruza física, elétrica e design",
+      "noticiaOriginal": "A arquitetura não tem monotonia NUNCA, do nada surge um cálculo de física, uma lei aqui, história ali, elétrica lá, software pra todo lado e no meio disso tudo a paleta de cores e mood board.\n\nO bom é que sai pronto até pra sentar tijolo",
+      "data": "2025-05-04T15:18:37.007Z",
+      "categoria": "Outros",
+      "localizacao": {
+        "estado": "pendente",
+        "motivo": "arquivo-nao-localizado",
+        "tituloConsultado": "Arquitetura sem monotonia: quando software cruza física, elétrica e design"
+      }
+    },
+    {
+      "titulo": "RAG na prática: padrões de GenAI para recuperação aumentada",
+      "noticiaOriginal": "Where should authorization live in your software architecture? Should it be inside the domain model if you're using Domain-Driven Design (DDD)? Or should authorization always stay in the application layer?",
+      "url": "artigos/titulo.html",
+      "data": "2025-05-04T17:54:40.890Z",
+      "dataFonte": "2025-04-30T17:57:50.000Z",
+      "categoria": "Outros",
+      "localizacao": {
+        "estado": "pendente",
+        "motivo": "arquivo-nao-localizado",
+        "tituloConsultado": "RAG na prática: padrões de GenAI para recuperação aumentada"
+      }
+    },
+    {
+      "titulo": "RAG na prática: padrões de GenAI para recuperação aumentada",
+      "noticiaOriginal": "GenAI Patterns: Retrieval Augmented Generation (RAG)",
+      "url": "artigos/titulo.html",
+      "data": "2025-05-06T08:24:36.275Z",
+      "dataFonte": "2025-02-04T14:57:00.000Z",
+      "categoria": "Outros",
+      "localizacao": {
+        "estado": "pendente",
+        "motivo": "arquivo-nao-localizado",
+        "tituloConsultado": "RAG na prática: padrões de GenAI para recuperação aumentada"
+      }
+    },
+    {
+      "titulo": "iPhone de vidro curvo: impactos de hardware em experiência e software",
+      "noticiaOriginal": "Apple may release a ‘mostly glass, curved iPhone’ in 2027",
+      "url": "artigos/tecnologia/artigo.html",
+      "data": "2025-05-11T20:18:26.116Z",
+      "dataFonte": "2025-05-11T20:03:55.000Z",
+      "categoria": "Tecnologia",
+      "urlFonte": "https://www.theverge.com/news/664776/apple-curved-glass-iphone-2027",
+      "localizacao": {
+        "estado": "pendente",
+        "motivo": "arquivo-nao-localizado",
+        "tituloConsultado": "iPhone de vidro curvo: impactos de hardware em experiência e software"
+      }
+    },
+    {
+      "titulo": "A inteligência artificial como aliado ou inimigo: o dilema da reputação profissional",
+      "noticiaOriginal": "AI use damages professional reputation, study suggests",
+      "url": "artigos/inteligencia-artificial/a-inteligencia-artificial-como-aliado-ou-inimigo-o-dilema-da-reputacao-profissional.html",
+      "data": "2025-05-12T04:21:32.568Z",
+      "dataFonte": "2025-05-08T20:23:21.000Z",
+      "categoria": "Inteligência Artificial",
+      "urlFonte": "https://arstechnica.com/ai/2025/05/ai-use-damages-professional-reputation-study-suggests/",
+      "localizacao": {
+        "estado": "pendente",
+        "motivo": "arquivo-nao-localizado",
+        "tituloConsultado": "A inteligência artificial como aliado ou inimigo: o dilema da reputação profissional"
+      }
+    },
+    {
+      "titulo": "A vulnerabilidade das credenciais: lições do ataque a um engenheiro de software",
+      "noticiaOriginal": "DOGE software engineer’s computer infected by info-stealing malware",
+      "url": "artigos/seguranca/a-vulnerabilidade-das-credenciais-licoes-do-ataque-a-um-engenheiro-de-software.html",
+      "data": "2025-05-12T06:28:19.596Z",
+      "dataFonte": "2025-05-08T18:27:52.000Z",
+      "categoria": "Segurança",
+      "urlFonte": "https://arstechnica.com/security/2025/05/doge-software-engineers-computer-infected-by-info-stealing-malware/",
+      "localizacao": {
+        "estado": "pendente",
+        "motivo": "arquivo-nao-localizado",
+        "tituloConsultado": "A vulnerabilidade das credenciais: lições do ataque a um engenheiro de software"
+      }
+    },
+    {
+      "titulo": "Aumentos de Preço e a Arquitetura de Software: Como a Tecnologia Pode Suportar Novas Demandas",
+      "noticiaOriginal": "Apple reportedly plans to hike prices of upcoming iPhones",
+      "url": "artigos/tecnologia/aumentos-de-preco-e-a-arquitetura-de-software-como-a-tecnologia-pode-suportar-novas-demandas.html",
+      "data": "2025-05-12T11:16:11.720Z",
+      "dataFonte": "2025-05-12T11:08:58.000Z",
+      "categoria": "Tecnologia",
+      "urlFonte": "https://techcrunch.com/2025/05/12/apple-reportedly-plans-to-hike-prices-of-upcoming-iphones/",
+      "localizacao": {
+        "estado": "pendente",
+        "motivo": "arquivo-nao-localizado",
+        "tituloConsultado": "Aumentos de Preço e a Arquitetura de Software: Como a Tecnologia Pode Suportar Novas Demandas"
+      }
+    },
+    {
+      "titulo": "Transformando Relatórios: Como a IA Está Redefinindo a Tomada de Decisão Empresarial",
+      "noticiaOriginal": "The death of spreadsheets: 6 reasons why AI will soon be the dominant business reporting tool",
+      "url": "artigos/inteligencia-artificial/transformando-relatorios-como-a-ia-esta-redefinindo-a-tomada-de-decisao-empresarial.html",
+      "data": "2025-05-12T12:10:47.371Z",
+      "dataFonte": "2025-05-12T11:55:43.000Z",
+      "categoria": "Inteligência Artificial",
+      "urlFonte": "https://www.zdnet.com/article/the-death-of-spreadsheets-6-reasons-why-ai-will-be-the-dominant-business-reporting-tool/",
+      "localizacao": {
+        "estado": "pendente",
+        "motivo": "arquivo-nao-localizado",
+        "tituloConsultado": "Transformando Relatórios: Como a IA Está Redefinindo a Tomada de Decisão Empresarial"
+      }
+    },
+    {
+      "titulo": "A nova fronteira do investimento: tecnologia de defesa na Europa",
+      "noticiaOriginal": "This American VC is betting on European defense tech; that’s still very unusual",
+      "url": "artigos/tecnologia/a-nova-fronteira-do-investimento-tecnologia-de-defesa-na-europa.html",
+      "data": "2025-05-12T12:21:03.793Z",
+      "dataFonte": "2025-05-12T11:35:02.000Z",
+      "categoria": "Tecnologia",
+      "urlFonte": "https://techcrunch.com/2025/05/12/this-american-vc-is-betting-on-european-defense-tech-thats-still-very-unusual/",
+      "localizacao": {
+        "estado": "pendente",
+        "motivo": "arquivo-nao-localizado",
+        "tituloConsultado": "A nova fronteira do investimento: tecnologia de defesa na Europa"
+      }
+    }
+  ],
+  "historico": [
+    {
+      "url": "artigos/titulo.html",
+      "versoes": [
+        {
+          "revisao": "6766801de040146c334afe733d1bc006054a0c92",
+          "arquivoHash": "51593c4a24d335706b63ca55e98b831f669075c4fdcd4e90deb0e683609ce538",
+          "bytes": 3479,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "d614d2c5e9bb57622b8534c69d109ec89f04f302",
+          "arquivoHash": "015a299202249c8eb63618fa3f326a2c4dcc5eb991989b5e684e5c66a6a851b3",
+          "bytes": 3623,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "57f3f4c95d75a72ac5b81b014b9f46edab6e2c58",
+          "arquivoHash": "0f74bacc504291e9f159cafb23f2f76436867489285dea54294734ca1898138e",
+          "bytes": 3977,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "21bece575d0331b344ff1adbe42b4d00988e94c4",
+          "arquivoHash": "465d9b9e0a02131ed0cbb285160955395cd8b8075beeb1f59b40552dd9057f92",
+          "bytes": 3976,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "f050b11638470fd7d66b296f67b9c42efac00024",
+          "arquivoHash": "fd5d318511a7cef349ff71f182d6efefd4521f2fd09e0727c2ce600ebd3df684",
+          "bytes": 3461,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "34e9b43996ee000f0d37a0b6b7bcf2a69fb26984",
+          "arquivoHash": "1078f2cf3f061abcb1413b2a855d48ea6ae5b2505bfb8257aef67db052035aa9",
+          "bytes": 2983,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "70c4fa7a36388e14b07abd23349a04953b87d8f7",
+          "arquivoHash": "5777c63bf1d5ba90e63d4c0be55cc3bea50304a66834f3dab33c6c55dbe19fec",
+          "bytes": 2763,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "054808ad8f6fd2849e603f79cbc015fa08fedffc",
+          "arquivoHash": "64f346acdced39474a0df2232da773fd6ef02ef841a3a76dd3f49e6845c2cddc",
+          "bytes": 2462,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "15cdc9d8c9a2b3455c51d2b61499e6d5f2d86ef2",
+          "arquivoHash": "9aa5522ad0c2d6192119e7f1bfbd6cfee31be8aeaddf0e79609bd693b4d68181",
+          "bytes": 3353,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "7aa71082b7a33fce4a27f50859b56c48dcabdf39",
+          "arquivoHash": "64f346acdced39474a0df2232da773fd6ef02ef841a3a76dd3f49e6845c2cddc",
+          "bytes": 2462,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "678077a482cead3e388b0021a7f45acfb1cf8bf2",
+          "arquivoHash": "9aa5522ad0c2d6192119e7f1bfbd6cfee31be8aeaddf0e79609bd693b4d68181",
+          "bytes": 3353,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "34cb6765dc1e3e85bb92e05be9168168dbc05fd3",
+          "arquivoHash": "64f346acdced39474a0df2232da773fd6ef02ef841a3a76dd3f49e6845c2cddc",
+          "bytes": 2462,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "252ea3fefea3b08b649986a99b5571dae5c42018",
+          "arquivoHash": "9aa5522ad0c2d6192119e7f1bfbd6cfee31be8aeaddf0e79609bd693b4d68181",
+          "bytes": 3353,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "5c052653e6bab4aa7132465d53e2476be78f963c",
+          "arquivoHash": "64f346acdced39474a0df2232da773fd6ef02ef841a3a76dd3f49e6845c2cddc",
+          "bytes": 2462,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "d8c20fabb1b57e5a8bafc0210b6fccf00a219c5a",
+          "arquivoHash": "8ce0953a6f063acbf10e2d837c0b5e074b0fe254b97c57625f7c287df2bd2658",
+          "bytes": 11542,
+          "possuiCorpo": true,
+          "h1": "Título:"
+        },
+        {
+          "revisao": "5a84b819c71e2d20c788da530fc4c5c5d6094bb4",
+          "arquivoHash": "d766bc91da2840bde6e58e5761f7081e6eb50ab894f5fb83a338dbb40768c304",
+          "bytes": 10029,
+          "possuiCorpo": true,
+          "h1": "Título:"
+        },
+        {
+          "revisao": "c2b70313073c758cd3df65c92dfd1622049b959c",
+          "arquivoHash": "e75718f291098d4253ec6a817687e834d38509d1462f74165b1176d6958605c3",
+          "bytes": 9365,
+          "possuiCorpo": true,
+          "h1": "Título:"
+        },
+        {
+          "revisao": "39096f4cbe1de25f7bd2631763b30455d55c4469",
+          "arquivoHash": "85a169174c0d80c3d580102a4af15cc6373cc2964d8a0b3263b3566616af02d7",
+          "bytes": 10373,
+          "possuiCorpo": true,
+          "h1": "Título:"
+        },
+        {
+          "revisao": "66f94d8654a5c3a0326dbe64df7f8b4421e35abf",
+          "arquivoHash": "ac01e19945e6895c32ca0420bfbb830a2dd04c31a413eddf0890844a3de412be",
+          "bytes": 8921,
+          "possuiCorpo": true,
+          "h1": "Título:"
+        }
+      ]
+    },
+    {
+      "url": "artigos/tecnologia/artigo.html",
+      "versoes": [
+        {
+          "revisao": "6766801de040146c334afe733d1bc006054a0c92",
+          "arquivoHash": "7b92d64e9d52213329ed6c6f1c4e7ef236a867b25fed280e8522ba2f560c1a52",
+          "bytes": 3550,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "d614d2c5e9bb57622b8534c69d109ec89f04f302",
+          "arquivoHash": "95c6905436e18a5d19b2add78b39e17042015f6548961c833875a9da0fac795b",
+          "bytes": 3694,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "57f3f4c95d75a72ac5b81b014b9f46edab6e2c58",
+          "arquivoHash": "f0745ae7c3d9fa73132987c8c051868ec3d0e7578b55b1cb002f568a3a8ee5e7",
+          "bytes": 4048,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "21bece575d0331b344ff1adbe42b4d00988e94c4",
+          "arquivoHash": "785963d8f8e706abba4e680ebea5ddd3677a0af0b7680534b4719951451d5534",
+          "bytes": 4047,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "f050b11638470fd7d66b296f67b9c42efac00024",
+          "arquivoHash": "b5742bf5816a555de50183dfe2f35f3b75c0128dc8d24556334540dd1076c822",
+          "bytes": 3532,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "34e9b43996ee000f0d37a0b6b7bcf2a69fb26984",
+          "arquivoHash": "d8c318d3fda42b3564f05c1d86cc4c7c3d6d909f92fb2463b06aa8a986ed4ae3",
+          "bytes": 3054,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "70c4fa7a36388e14b07abd23349a04953b87d8f7",
+          "arquivoHash": "afd1d424b45863d6bb26fe008ef544534364667c80a2769c2640ea94d7649847",
+          "bytes": 2854,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "054808ad8f6fd2849e603f79cbc015fa08fedffc",
+          "arquivoHash": "409e935e92c1ead48933efd77d534d7fb87066a6f86fc2abf1eac9c83d7f4988",
+          "bytes": 2553,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "15cdc9d8c9a2b3455c51d2b61499e6d5f2d86ef2",
+          "arquivoHash": "952a88ce416449719b08a386122729dea0e8b34f2ad62deabce8ddd84a0338a1",
+          "bytes": 3444,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "7aa71082b7a33fce4a27f50859b56c48dcabdf39",
+          "arquivoHash": "409e935e92c1ead48933efd77d534d7fb87066a6f86fc2abf1eac9c83d7f4988",
+          "bytes": 2553,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "34cb6765dc1e3e85bb92e05be9168168dbc05fd3",
+          "arquivoHash": "2a771f622df969b237c35d597f9893582bbf27be9e9e8c249d72097a61664b68",
+          "bytes": 11571,
+          "possuiCorpo": true,
+          "h1": ""
+        },
+        {
+          "revisao": "5c052653e6bab4aa7132465d53e2476be78f963c",
+          "arquivoHash": "d2730add0ffa2938292fd8ea0c85b100f4718646d389905d258d8044f870829d",
+          "bytes": 11506,
+          "possuiCorpo": true,
+          "h1": ""
+        },
+        {
+          "revisao": "d8c20fabb1b57e5a8bafc0210b6fccf00a219c5a",
+          "arquivoHash": "d6dd778f74e5ee35cf906f40eb0874dfd4e36b5a592a0335a2c1070a004d0192",
+          "bytes": 11155,
+          "possuiCorpo": true,
+          "h1": ""
+        },
+        {
+          "revisao": "02f63f425d4c727f8924159918a9d6e2537e727b",
+          "arquivoHash": "f4308cddd287ab2e2913d80024e0cd4a422934404acec76c5469740522010d41",
+          "bytes": 10284,
+          "possuiCorpo": true,
+          "h1": ""
+        }
+      ]
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-inteligencia-artificial-como-aliado-ou-inimigo-o-dilema-da-reputacao-profissional.html",
+      "versoes": [
+        {
+          "revisao": "6766801de040146c334afe733d1bc006054a0c92",
+          "arquivoHash": "ee9648b60e43ea5040d406c28ce4e105d7e4556d44d9b579b119bf967c0293d8",
+          "bytes": 3791,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "d614d2c5e9bb57622b8534c69d109ec89f04f302",
+          "arquivoHash": "af46a3659800d21625020d3cd2153a957a8641635bbc8acbca55216c4be92b26",
+          "bytes": 3935,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "57f3f4c95d75a72ac5b81b014b9f46edab6e2c58",
+          "arquivoHash": "9f75f3493e342bd0b14ed218529ecb1e5eedc42703467adec77fc2b91741a2ff",
+          "bytes": 4289,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "21bece575d0331b344ff1adbe42b4d00988e94c4",
+          "arquivoHash": "5559dba80586e0107171deec4b33ce0b4befc3cccbab45c45ce6157ee455e51e",
+          "bytes": 4288,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "f050b11638470fd7d66b296f67b9c42efac00024",
+          "arquivoHash": "ea2201e4c1d93ec7adbf9dc7cfbeabb997f223d2ee877145d3194a37f983b132",
+          "bytes": 3773,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "46ab8916219dfbc226e2889785117fcaebb7d7ee",
+          "arquivoHash": "2f24178c17b554185fba7f6fb5791a7730fff3c93f93d3894756563917143319",
+          "bytes": 3295,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "70c4fa7a36388e14b07abd23349a04953b87d8f7",
+          "arquivoHash": "100c3ad12a20efed134ea81711b74c9b15b411173013f9cfae57fbffb833732a",
+          "bytes": 3316,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "054808ad8f6fd2849e603f79cbc015fa08fedffc",
+          "arquivoHash": "9f717ffc86ab5791da43a9fe1613b4b594b552df68b3a10d8483f63880722b48",
+          "bytes": 3015,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "15cdc9d8c9a2b3455c51d2b61499e6d5f2d86ef2",
+          "arquivoHash": "dbf8ae196e5cf9a4776bfe8e7166e2194630e04c8ec6cc8ed0bd8c9850852df9",
+          "bytes": 3906,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "7aa71082b7a33fce4a27f50859b56c48dcabdf39",
+          "arquivoHash": "9f717ffc86ab5791da43a9fe1613b4b594b552df68b3a10d8483f63880722b48",
+          "bytes": 3015,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "678077a482cead3e388b0021a7f45acfb1cf8bf2",
+          "arquivoHash": "dbf8ae196e5cf9a4776bfe8e7166e2194630e04c8ec6cc8ed0bd8c9850852df9",
+          "bytes": 3906,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "34cb6765dc1e3e85bb92e05be9168168dbc05fd3",
+          "arquivoHash": "9f717ffc86ab5791da43a9fe1613b4b594b552df68b3a10d8483f63880722b48",
+          "bytes": 3015,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "252ea3fefea3b08b649986a99b5571dae5c42018",
+          "arquivoHash": "dbf8ae196e5cf9a4776bfe8e7166e2194630e04c8ec6cc8ed0bd8c9850852df9",
+          "bytes": 3906,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "5c052653e6bab4aa7132465d53e2476be78f963c",
+          "arquivoHash": "9f717ffc86ab5791da43a9fe1613b4b594b552df68b3a10d8483f63880722b48",
+          "bytes": 3015,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "ebf5df56107ae955b352a236f8d9cf87a2bf522e",
+          "arquivoHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "possuiCorpo": false,
+          "h1": ""
+        }
+      ]
+    },
+    {
+      "url": "artigos/seguranca/a-vulnerabilidade-das-credenciais-licoes-do-ataque-a-um-engenheiro-de-software.html",
+      "versoes": [
+        {
+          "revisao": "6766801de040146c334afe733d1bc006054a0c92",
+          "arquivoHash": "3068485d044fb378bd518be13ce2bb0a3d7f55bbfbff5d945a999f289afab667",
+          "bytes": 3657,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "d614d2c5e9bb57622b8534c69d109ec89f04f302",
+          "arquivoHash": "5707e01ca7b8487ca9dfc4a2f6db9b5b19bce4cf7903087be11996d58667899f",
+          "bytes": 3801,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "57f3f4c95d75a72ac5b81b014b9f46edab6e2c58",
+          "arquivoHash": "cba9adfc4fb9f1509a678beebb58cf9d9edcd49c6b26a985629076093399c93e",
+          "bytes": 4155,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "21bece575d0331b344ff1adbe42b4d00988e94c4",
+          "arquivoHash": "27ecf303d78a12d28205cd50795b2aed693a666884bca54df9297d718d484f60",
+          "bytes": 4154,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "f050b11638470fd7d66b296f67b9c42efac00024",
+          "arquivoHash": "189ec4cde28885953378cc8d8fa945546b5dd3b3d7e70836312e7e747f8d54fe",
+          "bytes": 3639,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "70c4fa7a36388e14b07abd23349a04953b87d8f7",
+          "arquivoHash": "f11e18e6b02a56fbd02835b0b7a559050b796b3a476a48a8ef70385b7c9a5c96",
+          "bytes": 3161,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "054808ad8f6fd2849e603f79cbc015fa08fedffc",
+          "arquivoHash": "d8497de4c6d60a2b004e0c280b1a382370267f932d23508089bbbdc77396ea1e",
+          "bytes": 2860,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "15cdc9d8c9a2b3455c51d2b61499e6d5f2d86ef2",
+          "arquivoHash": "1382774bec0dbedc9cd5724d7de719dcc73513e36caca6e08021e5a41489c9fa",
+          "bytes": 3751,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "7aa71082b7a33fce4a27f50859b56c48dcabdf39",
+          "arquivoHash": "d8497de4c6d60a2b004e0c280b1a382370267f932d23508089bbbdc77396ea1e",
+          "bytes": 2860,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "678077a482cead3e388b0021a7f45acfb1cf8bf2",
+          "arquivoHash": "1382774bec0dbedc9cd5724d7de719dcc73513e36caca6e08021e5a41489c9fa",
+          "bytes": 3751,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "34cb6765dc1e3e85bb92e05be9168168dbc05fd3",
+          "arquivoHash": "d8497de4c6d60a2b004e0c280b1a382370267f932d23508089bbbdc77396ea1e",
+          "bytes": 2860,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "252ea3fefea3b08b649986a99b5571dae5c42018",
+          "arquivoHash": "1382774bec0dbedc9cd5724d7de719dcc73513e36caca6e08021e5a41489c9fa",
+          "bytes": 3751,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "5c052653e6bab4aa7132465d53e2476be78f963c",
+          "arquivoHash": "d8497de4c6d60a2b004e0c280b1a382370267f932d23508089bbbdc77396ea1e",
+          "bytes": 2860,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "26a112bdeecbcaad4c0b3eeb9dac3724436b36bc",
+          "arquivoHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "possuiCorpo": false,
+          "h1": ""
+        }
+      ]
+    },
+    {
+      "url": "artigos/tecnologia/aumentos-de-preco-e-a-arquitetura-de-software-como-a-tecnologia-pode-suportar-novas-demandas.html",
+      "versoes": [
+        {
+          "revisao": "6766801de040146c334afe733d1bc006054a0c92",
+          "arquivoHash": "83f462307c75e3066ba30534ca57a0790475588f2cca81c0405edaef9f08c147",
+          "bytes": 3687,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "d614d2c5e9bb57622b8534c69d109ec89f04f302",
+          "arquivoHash": "9bc0b3f2284283f6c6bdd88bacd6d8f365a3351bee301f1cf30fb789d3f55283",
+          "bytes": 3831,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "57f3f4c95d75a72ac5b81b014b9f46edab6e2c58",
+          "arquivoHash": "4b4fb8b74fcff41c0c7c0c199ec0ce329edf8fb762630edd1967ba20f69939d3",
+          "bytes": 4185,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "21bece575d0331b344ff1adbe42b4d00988e94c4",
+          "arquivoHash": "5cd1a5053432d6c6ddc5cdbf04163ac19b5964ae2f2c47c2ce3ee888e897b0b4",
+          "bytes": 4184,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "f050b11638470fd7d66b296f67b9c42efac00024",
+          "arquivoHash": "6bec73f9298bb7b60c9a2e030380fa05fed94d80035785c744ded58821f1b020",
+          "bytes": 3669,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "46ab8916219dfbc226e2889785117fcaebb7d7ee",
+          "arquivoHash": "3cc3ffaf403643574f692359206702db4ce77186cb83c85d0758015c93761291",
+          "bytes": 3191,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "70c4fa7a36388e14b07abd23349a04953b87d8f7",
+          "arquivoHash": "7d2b0308e7bfb810abed3477d81804aa1cfdbf0461d12b273baa141f2d0de6ee",
+          "bytes": 3236,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "054808ad8f6fd2849e603f79cbc015fa08fedffc",
+          "arquivoHash": "d9fc713c9e669b8113bd1b643df91656912317ffd4d2bf541719dc475662f9c5",
+          "bytes": 2935,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "15cdc9d8c9a2b3455c51d2b61499e6d5f2d86ef2",
+          "arquivoHash": "e7ebeb49cab6f3b33a1d637dda0ffc4b8420c3b8eae8f588bc00f451cdb915cd",
+          "bytes": 3826,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "7aa71082b7a33fce4a27f50859b56c48dcabdf39",
+          "arquivoHash": "d9fc713c9e669b8113bd1b643df91656912317ffd4d2bf541719dc475662f9c5",
+          "bytes": 2935,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "678077a482cead3e388b0021a7f45acfb1cf8bf2",
+          "arquivoHash": "e7ebeb49cab6f3b33a1d637dda0ffc4b8420c3b8eae8f588bc00f451cdb915cd",
+          "bytes": 3826,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "34cb6765dc1e3e85bb92e05be9168168dbc05fd3",
+          "arquivoHash": "d9fc713c9e669b8113bd1b643df91656912317ffd4d2bf541719dc475662f9c5",
+          "bytes": 2935,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "252ea3fefea3b08b649986a99b5571dae5c42018",
+          "arquivoHash": "e7ebeb49cab6f3b33a1d637dda0ffc4b8420c3b8eae8f588bc00f451cdb915cd",
+          "bytes": 3826,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "5c052653e6bab4aa7132465d53e2476be78f963c",
+          "arquivoHash": "d9fc713c9e669b8113bd1b643df91656912317ffd4d2bf541719dc475662f9c5",
+          "bytes": 2935,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "f672ef64f58643551af07dc8416c62dacf6b68be",
+          "arquivoHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "possuiCorpo": false,
+          "h1": ""
+        }
+      ]
+    },
+    {
+      "url": "artigos/inteligencia-artificial/transformando-relatorios-como-a-ia-esta-redefinindo-a-tomada-de-decisao-empresarial.html",
+      "versoes": [
+        {
+          "revisao": "6766801de040146c334afe733d1bc006054a0c92",
+          "arquivoHash": "fa51a3830cc2c93ff3592bedda3080413596208c2a21aa46c254ec7341eabde7",
+          "bytes": 3794,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "d614d2c5e9bb57622b8534c69d109ec89f04f302",
+          "arquivoHash": "8371ea48b49bb4c1e98baaef538a2adc0116f7ba1e5e77b44c5cd7fb90e6b3b0",
+          "bytes": 3938,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "57f3f4c95d75a72ac5b81b014b9f46edab6e2c58",
+          "arquivoHash": "2a5de58b9c027858609fd0f4a73bdbb3be9e8b75e35e2e85db0e1aadd43045d7",
+          "bytes": 4292,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "21bece575d0331b344ff1adbe42b4d00988e94c4",
+          "arquivoHash": "fc366e39eaae37d02eb9b36903ccdefad5545921d9ce2a9e5b7490a0112f486b",
+          "bytes": 4291,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "f050b11638470fd7d66b296f67b9c42efac00024",
+          "arquivoHash": "56bb0f592492a0d51bdb8307ce7a6f5bf788791f189758ec02c19aaaaac9f223",
+          "bytes": 3776,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "46ab8916219dfbc226e2889785117fcaebb7d7ee",
+          "arquivoHash": "ecf53f46ccc4e56c23584f4d757e089dd01c07316a60b35ab626db7f3747d336",
+          "bytes": 3298,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "70c4fa7a36388e14b07abd23349a04953b87d8f7",
+          "arquivoHash": "be475d42647febe5debd0af494724900d8656c3478d8fed13d4c9f6f7cc7c7a2",
+          "bytes": 3316,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "054808ad8f6fd2849e603f79cbc015fa08fedffc",
+          "arquivoHash": "34ac172799bcd7af7e587ae4ba1945eb56fa8d13f32d7aa131052109dba0751f",
+          "bytes": 3015,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "15cdc9d8c9a2b3455c51d2b61499e6d5f2d86ef2",
+          "arquivoHash": "034d7f5366b1be5acc8647b29e8f03968b930e729905ada8bd425afca2ad8d16",
+          "bytes": 3906,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "7aa71082b7a33fce4a27f50859b56c48dcabdf39",
+          "arquivoHash": "34ac172799bcd7af7e587ae4ba1945eb56fa8d13f32d7aa131052109dba0751f",
+          "bytes": 3015,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "678077a482cead3e388b0021a7f45acfb1cf8bf2",
+          "arquivoHash": "034d7f5366b1be5acc8647b29e8f03968b930e729905ada8bd425afca2ad8d16",
+          "bytes": 3906,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "34cb6765dc1e3e85bb92e05be9168168dbc05fd3",
+          "arquivoHash": "34ac172799bcd7af7e587ae4ba1945eb56fa8d13f32d7aa131052109dba0751f",
+          "bytes": 3015,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "252ea3fefea3b08b649986a99b5571dae5c42018",
+          "arquivoHash": "034d7f5366b1be5acc8647b29e8f03968b930e729905ada8bd425afca2ad8d16",
+          "bytes": 3906,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "5c052653e6bab4aa7132465d53e2476be78f963c",
+          "arquivoHash": "34ac172799bcd7af7e587ae4ba1945eb56fa8d13f32d7aa131052109dba0751f",
+          "bytes": 3015,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        }
+      ]
+    },
+    {
+      "url": "artigos/tecnologia/a-nova-fronteira-do-investimento-tecnologia-de-defesa-na-europa.html",
+      "versoes": [
+        {
+          "revisao": "6766801de040146c334afe733d1bc006054a0c92",
+          "arquivoHash": "4ecec68c355eec566b9d37ffbcdb9a91a46c694052aed30f131a8e3e0840f564",
+          "bytes": 3583,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "d614d2c5e9bb57622b8534c69d109ec89f04f302",
+          "arquivoHash": "26fc83c4a99e542a78577600f7fb0f408df0688f68806d55b7615c120ff5826c",
+          "bytes": 3727,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "57f3f4c95d75a72ac5b81b014b9f46edab6e2c58",
+          "arquivoHash": "ef11eace0a914b50852855c7c53f71518a2750effb3b0a472f4bd65f12e6970f",
+          "bytes": 4081,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "21bece575d0331b344ff1adbe42b4d00988e94c4",
+          "arquivoHash": "deb597fe751e1daca389aee7945c6b16f6e43853a39e98092f9c9f862b1bdfbe",
+          "bytes": 4080,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "f050b11638470fd7d66b296f67b9c42efac00024",
+          "arquivoHash": "2bd6481c58b14934238746ae18ba8cc3a0d20550101b92593b37a2eb4c07e49b",
+          "bytes": 3565,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "70c4fa7a36388e14b07abd23349a04953b87d8f7",
+          "arquivoHash": "a8cb5f17ff6ffef1030d250507d32e4661f7922753134b940d9612e7b4e13a5f",
+          "bytes": 3087,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "054808ad8f6fd2849e603f79cbc015fa08fedffc",
+          "arquivoHash": "3bcc10b601923812982d7d5d031611acecfd21121fb325f481a4b8025407b16f",
+          "bytes": 2786,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "15cdc9d8c9a2b3455c51d2b61499e6d5f2d86ef2",
+          "arquivoHash": "b6495b32d9ff523a942dc7e14397e0079055591b7a3af1da11f864223de7193a",
+          "bytes": 3677,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "7aa71082b7a33fce4a27f50859b56c48dcabdf39",
+          "arquivoHash": "3bcc10b601923812982d7d5d031611acecfd21121fb325f481a4b8025407b16f",
+          "bytes": 2786,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "678077a482cead3e388b0021a7f45acfb1cf8bf2",
+          "arquivoHash": "b6495b32d9ff523a942dc7e14397e0079055591b7a3af1da11f864223de7193a",
+          "bytes": 3677,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "34cb6765dc1e3e85bb92e05be9168168dbc05fd3",
+          "arquivoHash": "3bcc10b601923812982d7d5d031611acecfd21121fb325f481a4b8025407b16f",
+          "bytes": 2786,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "252ea3fefea3b08b649986a99b5571dae5c42018",
+          "arquivoHash": "b6495b32d9ff523a942dc7e14397e0079055591b7a3af1da11f864223de7193a",
+          "bytes": 3677,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "5c052653e6bab4aa7132465d53e2476be78f963c",
+          "arquivoHash": "3bcc10b601923812982d7d5d031611acecfd21121fb325f481a4b8025407b16f",
+          "bytes": 2786,
+          "possuiCorpo": false,
+          "h1": "Artigo indisponível"
+        },
+        {
+          "revisao": "f39e5e15a6cd9ecf6973ea7852913b1e5300536d",
+          "arquivoHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "possuiCorpo": false,
+          "h1": ""
+        }
+      ]
+    }
+  ],
+  "referencias": [],
+  "aliases": [],
+  "criterio": "Evidencia individual de ausencia/ambiguidade; nao idade, volume, tamanho ou ausencia de trafego."
+}

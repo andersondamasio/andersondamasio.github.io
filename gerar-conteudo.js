@@ -3184,4 +3184,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { gerar, publicarRascunhoAprovado, humanizarArtigoGerado, reconstruirPaginasSeo, prepararArtigosPublicaveis, gerarArquivoCronologico };
+module.exports = { gerar, publicarRascunhoAprovado, humanizarArtigoGerado, reconstruirPaginasSeo, prepararArtigosPublicaveis, gerarArquivoCronologico, gerarHtmlAliasLegado };

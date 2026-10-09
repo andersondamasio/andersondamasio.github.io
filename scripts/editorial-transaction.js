@@ -25,8 +25,8 @@ function gravarAtomico(destino, conteudo) {
   fs.renameSync(temporario, destino);
 }
 
-function escreverPublicacao(arquivo, conteudo) {
-  if (!transacao) return fs.writeFileSync(arquivo, conteudo);
+function registrarAlteracao(arquivo) {
+  if (!transacao) throw new Error("Alteracao destrutiva exige transacao de publicacao.");
   const destino = destinoSeguro(transacao.root, arquivo);
   if (!transacao.registros.some(r => r.destino === destino)) {
     const backup = `${transacao.registros.length}.bak`;
@@ -35,7 +35,17 @@ function escreverPublicacao(arquivo, conteudo) {
     transacao.registros.push({ destino, backup, existia });
     gravarAtomico(path.join(transacao.pasta, "journal.json"), JSON.stringify(transacao.registros));
   }
-  gravarAtomico(destino, conteudo);
+  return destino;
+}
+
+function escreverPublicacao(arquivo, conteudo) {
+  if (!transacao) return fs.writeFileSync(arquivo, conteudo);
+  gravarAtomico(registrarAlteracao(arquivo), conteudo);
+}
+
+function removerPublicacao(arquivo) {
+  const destino = registrarAlteracao(arquivo);
+  if (fs.existsSync(destino)) fs.unlinkSync(destino);
 }
 
 function reverter(root, pasta, registros) {
@@ -94,4 +104,4 @@ function recuperarPublicacaoInterrompida(root = process.cwd()) {
   limparJournal(root, pasta);
 }
 
-module.exports = { executarPublicacao, escreverPublicacao, recuperarPublicacaoInterrompida };
+module.exports = { executarPublicacao, escreverPublicacao, removerPublicacao, recuperarPublicacaoInterrompida };

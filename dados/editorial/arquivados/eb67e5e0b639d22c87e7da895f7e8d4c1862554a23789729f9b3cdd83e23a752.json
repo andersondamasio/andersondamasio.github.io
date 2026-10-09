@@ -1,0 +1,26 @@
+{
+  "versao": 1,
+  "url": "artigos/tecnologia/artigo.html",
+  "registros": [
+    {
+      "titulo": "iPhone de vidro curvo: impactos de hardware em experiência e software",
+      "noticiaOriginal": "Apple may release a ‘mostly glass, curved iPhone’ in 2027",
+      "url": "artigos/tecnologia/artigo.html",
+      "data": "2025-05-11T20:18:26.116Z",
+      "dataFonte": "2025-05-11T20:03:55.000Z",
+      "categoria": "Tecnologia",
+      "urlFonte": "https://www.theverge.com/news/664776/apple-curved-glass-iphone-2027",
+      "localizacao": {
+        "estado": "pendente",
+        "motivo": "arquivo-nao-localizado",
+        "tituloConsultado": "iPhone de vidro curvo: impactos de hardware em experiência e software"
+      }
+    }
+  ],
+  "arquivos": [
+    {
+      "url": "artigos/tecnologia/artigo.html",
+      "html": "<!DOCTYPE html>\n<html lang=\"pt-BR\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>iPhone de vidro curvo: impactos de hardware em experiência e software | Anderson Damasio</title>\n<meta name=\"description\" content=\"Este artigo não está disponível para indexação. Acesse a listagem canônica em https://www.andersondamasio.com.br/artigos/tecnologia.html.\">\n<meta name=\"author\" content=\"Anderson Damasio\">\n\n<meta name=\"robots\" content=\"noindex, follow\">\n<link rel=\"canonical\" href=\"https://www.andersondamasio.com.br/artigos/tecnologia.html\">\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Anderson Damasio\" href=\"https://www.andersondamasio.com.br/rss.xml\">\n<link rel=\"preconnect\" href=\"https://www.googletagmanager.com\">\n<link rel=\"dns-prefetch\" href=\"//www.googletagmanager.com\">\n<meta property=\"og:locale\" content=\"pt_BR\">\n<meta property=\"og:site_name\" content=\"Anderson Damasio\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:title\" content=\"iPhone de vidro curvo: impactos de hardware em experiência e software | Anderson Damasio\">\n<meta property=\"og:description\" content=\"Este artigo não está disponível para indexação. Acesse a listagem canônica em https://www.andersondamasio.com.br/artigos/tecnologia.html.\">\n<meta property=\"og:url\" content=\"https://www.andersondamasio.com.br/artigos/tecnologia.html\">\n<meta property=\"og:image\" content=\"https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg\">\n<meta property=\"og:image:width\" content=\"1200\">\n<meta property=\"og:image:height\" content=\"675\">\n<meta property=\"og:image:alt\" content=\"Anderson Damasio - arquitetura de software e tecnologia\">\n\n\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"iPhone de vidro curvo: impactos de hardware em experiência e software | Anderson Damasio\">\n<meta name=\"twitter:description\" content=\"Este artigo não está disponível para indexação. Acesse a listagem canônica em https://www.andersondamasio.com.br/artigos/tecnologia.html.\">\n<meta name=\"twitter:image\" content=\"https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg\">\n<meta name=\"twitter:image:alt\" content=\"Anderson Damasio - arquitetura de software e tecnologia\">\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"WebPage\",\n  \"name\": \"iPhone de vidro curvo: impactos de hardware em experiência e software\",\n  \"description\": \"Este artigo não está disponível para indexação. Acesse a listagem canônica em https://www.andersondamasio.com.br/artigos/tecnologia.html.\",\n  \"url\": \"https://www.andersondamasio.com.br/artigos/tecnologia/artigo.html\",\n  \"isPartOf\": {\n    \"@type\": \"WebSite\",\n    \"@id\": \"https://www.andersondamasio.com.br/#website\",\n    \"name\": \"Anderson Damasio\",\n    \"url\": \"https://www.andersondamasio.com.br\",\n    \"inLanguage\": \"pt-BR\",\n    \"publisher\": {\n      \"@type\": \"Person\",\n      \"@id\": \"https://www.andersondamasio.com.br/#anderson-damasio\",\n      \"name\": \"Anderson Damasio\",\n      \"url\": \"https://www.andersondamasio.com.br/sobre.html\",\n      \"jobTitle\": \"Arquiteto de Software\",\n      \"sameAs\": [\n        \"https://www.linkedin.com/in/andersondamasio/\"\n      ]\n    }\n  }\n}\n</script>\n</head>\n<body>\n<main>\n  <h1>Artigo indisponível</h1>\n  <p>Este conteúdo foi removido da indexação. Acesse <a href=\"https://www.andersondamasio.com.br/artigos/tecnologia.html\">https://www.andersondamasio.com.br/artigos/tecnologia.html</a>.</p>\n</main>\n</body>\n</html>"
+    }
+  ]
+}

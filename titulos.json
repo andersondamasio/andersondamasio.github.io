@@ -1631,17 +1631,6 @@
     "url": "artigos/desenvolvimento-de-software-e-arquitetura-o-impacto-nos-sistemas-modernos.html"
   },
   {
-    "titulo": "Arquitetura sem monotonia: quando software cruza física, elétrica e design",
-    "noticiaOriginal": "A arquitetura não tem monotonia NUNCA, do nada surge um cálculo de física, uma lei aqui, história ali, elétrica lá, software pra todo lado e no meio disso tudo a paleta de cores e mood board.\n\nO bom é que sai pronto até pra sentar tijolo",
-    "data": "2025-05-04T15:18:37.007Z",
-    "categoria": "Outros",
-    "localizacao": {
-      "estado": "pendente",
-      "motivo": "arquivo-nao-localizado",
-      "tituloConsultado": "Arquitetura sem monotonia: quando software cruza física, elétrica e design"
-    }
-  },
-  {
     "titulo": "Desvendando os Segredos da Codificação de Arquivos Padrão",
     "noticiaOriginal": "Set the default file encoding",
     "data": "2025-05-04T15:22:43.636Z",
@@ -1756,19 +1745,6 @@
     "data": "2025-05-04T17:37:34.628Z",
     "dataFonte": "2025-05-04T08:38:16.000Z",
     "categoria": "Outros"
-  },
-  {
-    "titulo": "RAG na prática: padrões de GenAI para recuperação aumentada",
-    "noticiaOriginal": "Where should authorization live in your software architecture? Should it be inside the domain model if you're using Domain-Driven Design (DDD)? Or should authorization always stay in the application layer?",
-    "url": "artigos/titulo.html",
-    "data": "2025-05-04T17:54:40.890Z",
-    "dataFonte": "2025-04-30T17:57:50.000Z",
-    "categoria": "Outros",
-    "localizacao": {
-      "estado": "pendente",
-      "motivo": "arquivo-nao-localizado",
-      "tituloConsultado": "RAG na prática: padrões de GenAI para recuperação aumentada"
-    }
   },
   {
     "titulo": "Refletindo sobre a Construção de Visualizações de Espelho de TMT com LLM",
@@ -2115,19 +2091,6 @@
     "aliasesLegados": [
       "artigos/inteligencia-artificial/o-futuro-da-engenharia-de-software-insights-do-panel-no-goto-copenhagen.html"
     ]
-  },
-  {
-    "titulo": "RAG na prática: padrões de GenAI para recuperação aumentada",
-    "noticiaOriginal": "GenAI Patterns: Retrieval Augmented Generation (RAG)",
-    "url": "artigos/titulo.html",
-    "data": "2025-05-06T08:24:36.275Z",
-    "dataFonte": "2025-02-04T14:57:00.000Z",
-    "categoria": "Outros",
-    "localizacao": {
-      "estado": "pendente",
-      "motivo": "arquivo-nao-localizado",
-      "tituloConsultado": "RAG na prática: padrões de GenAI para recuperação aumentada"
-    }
   },
   {
     "titulo": "Floresta e Deserto: Onde a arquitetura de software encontra a natureza",
@@ -3329,20 +3292,6 @@
     "urlFonte": "https://techcrunch.com/2025/05/11/fitness-tracker-whoop-faces-unhappy-customers-over-upgrade-policy/"
   },
   {
-    "titulo": "iPhone de vidro curvo: impactos de hardware em experiência e software",
-    "noticiaOriginal": "Apple may release a ‘mostly glass, curved iPhone’ in 2027",
-    "url": "artigos/tecnologia/artigo.html",
-    "data": "2025-05-11T20:18:26.116Z",
-    "dataFonte": "2025-05-11T20:03:55.000Z",
-    "categoria": "Tecnologia",
-    "urlFonte": "https://www.theverge.com/news/664776/apple-curved-glass-iphone-2027",
-    "localizacao": {
-      "estado": "pendente",
-      "motivo": "arquivo-nao-localizado",
-      "tituloConsultado": "iPhone de vidro curvo: impactos de hardware em experiência e software"
-    }
-  },
-  {
     "titulo": "23andMe em falência: dados genéticos, prazos e riscos para clientes",
     "noticiaOriginal": "23andMe customers notified of bankruptcy and potential claims — deadline to file is July 14",
     "url": "artigos/seguranca/e-fascinante-como-23andme-customers-notified-of-bankruptcy-and-potential-claims-deadline-to-file-is-july-14-evoluiu-nos-ultimos-anos-mas-os-erros-continuam-parecidos.html",
@@ -3559,20 +3508,6 @@
     "urlFonte": "https://www.zdnet.com/article/why-smart-businesses-use-ai-to-offload-tasks-and-supercharge-their-teams/"
   },
   {
-    "titulo": "A inteligência artificial como aliado ou inimigo: o dilema da reputação profissional",
-    "noticiaOriginal": "AI use damages professional reputation, study suggests",
-    "url": "artigos/inteligencia-artificial/a-inteligencia-artificial-como-aliado-ou-inimigo-o-dilema-da-reputacao-profissional.html",
-    "data": "2025-05-12T04:21:32.568Z",
-    "dataFonte": "2025-05-08T20:23:21.000Z",
-    "categoria": "Inteligência Artificial",
-    "urlFonte": "https://arstechnica.com/ai/2025/05/ai-use-damages-professional-reputation-study-suggests/",
-    "localizacao": {
-      "estado": "pendente",
-      "motivo": "arquivo-nao-localizado",
-      "tituloConsultado": "A inteligência artificial como aliado ou inimigo: o dilema da reputação profissional"
-    }
-  },
-  {
     "titulo": "Fidji Simo à frente da OpenAI: Um novo capítulo para aplicações de IA",
     "noticiaOriginal": "Fidji Simo joins OpenAI as new CEO of Applications",
     "url": "artigos/inteligencia-artificial/fidji-simo-a-frente-da-openai-um-novo-capitulo-para-aplicacoes-de-ia.html",
@@ -3589,20 +3524,6 @@
     "dataFonte": "2025-05-12T05:03:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/05/11/egypts-nawy-lands-a-52m-series-a-to-take-on-mena/"
-  },
-  {
-    "titulo": "A vulnerabilidade das credenciais: lições do ataque a um engenheiro de software",
-    "noticiaOriginal": "DOGE software engineer’s computer infected by info-stealing malware",
-    "url": "artigos/seguranca/a-vulnerabilidade-das-credenciais-licoes-do-ataque-a-um-engenheiro-de-software.html",
-    "data": "2025-05-12T06:28:19.596Z",
-    "dataFonte": "2025-05-08T18:27:52.000Z",
-    "categoria": "Segurança",
-    "urlFonte": "https://arstechnica.com/security/2025/05/doge-software-engineers-computer-infected-by-info-stealing-malware/",
-    "localizacao": {
-      "estado": "pendente",
-      "motivo": "arquivo-nao-localizado",
-      "tituloConsultado": "A vulnerabilidade das credenciais: lições do ataque a um engenheiro de software"
-    }
   },
   {
     "titulo": "Como a Integração de IA no Google Sheets Está Revolucionando a Gestão de Dados",
@@ -3639,48 +3560,6 @@
     "dataFonte": "2025-05-12T09:41:51.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/05/12/tech-stocks-look-set-to-jump-as-u-s-and-china-pause-reciprocal-tariffs/"
-  },
-  {
-    "titulo": "Aumentos de Preço e a Arquitetura de Software: Como a Tecnologia Pode Suportar Novas Demandas",
-    "noticiaOriginal": "Apple reportedly plans to hike prices of upcoming iPhones",
-    "url": "artigos/tecnologia/aumentos-de-preco-e-a-arquitetura-de-software-como-a-tecnologia-pode-suportar-novas-demandas.html",
-    "data": "2025-05-12T11:16:11.720Z",
-    "dataFonte": "2025-05-12T11:08:58.000Z",
-    "categoria": "Tecnologia",
-    "urlFonte": "https://techcrunch.com/2025/05/12/apple-reportedly-plans-to-hike-prices-of-upcoming-iphones/",
-    "localizacao": {
-      "estado": "pendente",
-      "motivo": "arquivo-nao-localizado",
-      "tituloConsultado": "Aumentos de Preço e a Arquitetura de Software: Como a Tecnologia Pode Suportar Novas Demandas"
-    }
-  },
-  {
-    "titulo": "Transformando Relatórios: Como a IA Está Redefinindo a Tomada de Decisão Empresarial",
-    "noticiaOriginal": "The death of spreadsheets: 6 reasons why AI will soon be the dominant business reporting tool",
-    "url": "artigos/inteligencia-artificial/transformando-relatorios-como-a-ia-esta-redefinindo-a-tomada-de-decisao-empresarial.html",
-    "data": "2025-05-12T12:10:47.371Z",
-    "dataFonte": "2025-05-12T11:55:43.000Z",
-    "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/the-death-of-spreadsheets-6-reasons-why-ai-will-be-the-dominant-business-reporting-tool/",
-    "localizacao": {
-      "estado": "pendente",
-      "motivo": "arquivo-nao-localizado",
-      "tituloConsultado": "Transformando Relatórios: Como a IA Está Redefinindo a Tomada de Decisão Empresarial"
-    }
-  },
-  {
-    "titulo": "A nova fronteira do investimento: tecnologia de defesa na Europa",
-    "noticiaOriginal": "This American VC is betting on European defense tech; that’s still very unusual",
-    "url": "artigos/tecnologia/a-nova-fronteira-do-investimento-tecnologia-de-defesa-na-europa.html",
-    "data": "2025-05-12T12:21:03.793Z",
-    "dataFonte": "2025-05-12T11:35:02.000Z",
-    "categoria": "Tecnologia",
-    "urlFonte": "https://techcrunch.com/2025/05/12/this-american-vc-is-betting-on-european-defense-tech-thats-still-very-unusual/",
-    "localizacao": {
-      "estado": "pendente",
-      "motivo": "arquivo-nao-localizado",
-      "tituloConsultado": "A nova fronteira do investimento: tecnologia de defesa na Europa"
-    }
   },
   {
     "titulo": "Desbravando a Inovação: Arquitetura de Software em Cenários de Escassez",

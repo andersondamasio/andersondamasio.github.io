@@ -230,6 +230,97 @@
         "em": "2026-10-09T23:09:12.865Z"
       },
       "conteudoHash": "5983ee2ea3e4773ff768178fb51caf1e8f91f7ea11bbeeb8b28ab900c8eed604"
+    },
+    {
+      "url": "artigos/titulo.html",
+      "acao": "retirar",
+      "motivo": "Aviso sem artigo atual em URL generica; as versoes antigas sao ambiguas ou incompletas, sem equivalente seguro para redirecionar.",
+      "evidencia": "HTML atual sem article-body; historia preservada em historicos-2026-10.json. titulo.html teve arquitetura, autorizacao e RAG sobrescritos; artigo.html tinha H1 vazio e especulacao de iPhone com codigo sem implementacao. Nao republicar essas versoes como artigo revisado.",
+      "revisao": {
+        "responsavel": "Codex - curadoria assistida do acervo, sem aprovacao humana de novo artigo",
+        "em": "2026-10-09T23:34:16.913Z"
+      },
+      "arquivoHash": "51593c4a24d335706b63ca55e98b831f669075c4fdcd4e90deb0e683609ce538",
+      "registrosHash": "aa865b3f48ab36407fdb229eb8b535742aeec9b279a70f4b9790f86181714a57",
+      "aliases": []
+    },
+    {
+      "url": "artigos/tecnologia/artigo.html",
+      "acao": "retirar",
+      "motivo": "Aviso sem artigo atual em URL generica; as versoes antigas sao ambiguas ou incompletas, sem equivalente seguro para redirecionar.",
+      "evidencia": "HTML atual sem article-body; historia preservada em historicos-2026-10.json. titulo.html teve arquitetura, autorizacao e RAG sobrescritos; artigo.html tinha H1 vazio e especulacao de iPhone com codigo sem implementacao. Nao republicar essas versoes como artigo revisado.",
+      "revisao": {
+        "responsavel": "Codex - curadoria assistida do acervo, sem aprovacao humana de novo artigo",
+        "em": "2026-10-09T23:34:16.913Z"
+      },
+      "arquivoHash": "7b92d64e9d52213329ed6c6f1c4e7ef236a867b25fed280e8522ba2f560c1a52",
+      "registrosHash": "cd9d73f199f0de6ae3a586324cbcb00a31f884d9562ee51a534f371dd390732c",
+      "aliases": []
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-inteligencia-artificial-como-aliado-ou-inimigo-o-dilema-da-reputacao-profissional.html",
+      "acao": "retirar",
+      "motivo": "Aviso de indisponibilidade sem artigo recuperavel nas revisoes consultadas e sem substituto equivalente comprovado.",
+      "evidencia": "HTML atual sem article-body; todas as revisoes Git consultadas constam em historicos-2026-10.json. Nenhuma dessas revisoes contem article-body; origem vazia ou aviso. Nao reconstruir um texto inexistente.",
+      "revisao": {
+        "responsavel": "Codex - curadoria assistida do acervo, sem aprovacao humana de novo artigo",
+        "em": "2026-10-09T23:34:16.913Z"
+      },
+      "arquivoHash": "ee9648b60e43ea5040d406c28ce4e105d7e4556d44d9b579b119bf967c0293d8",
+      "registrosHash": "d690fecede72044a3adea127977d82e3dafb2e73c074d27131a8ff17fc7415ec",
+      "aliases": []
+    },
+    {
+      "url": "artigos/seguranca/a-vulnerabilidade-das-credenciais-licoes-do-ataque-a-um-engenheiro-de-software.html",
+      "acao": "retirar",
+      "motivo": "Aviso de indisponibilidade sem artigo recuperavel nas revisoes consultadas e sem substituto equivalente comprovado.",
+      "evidencia": "HTML atual sem article-body; todas as revisoes Git consultadas constam em historicos-2026-10.json. Nenhuma dessas revisoes contem article-body; origem vazia ou aviso. Nao reconstruir um texto inexistente.",
+      "revisao": {
+        "responsavel": "Codex - curadoria assistida do acervo, sem aprovacao humana de novo artigo",
+        "em": "2026-10-09T23:34:16.913Z"
+      },
+      "arquivoHash": "3068485d044fb378bd518be13ce2bb0a3d7f55bbfbff5d945a999f289afab667",
+      "registrosHash": "5cb54abf199ac602c57b74ffa236e52af94c62cbbbb35aa80f200290cb347e1a",
+      "aliases": []
+    },
+    {
+      "url": "artigos/tecnologia/aumentos-de-preco-e-a-arquitetura-de-software-como-a-tecnologia-pode-suportar-novas-demandas.html",
+      "acao": "retirar",
+      "motivo": "Aviso de indisponibilidade sem artigo recuperavel nas revisoes consultadas e sem substituto equivalente comprovado.",
+      "evidencia": "HTML atual sem article-body; todas as revisoes Git consultadas constam em historicos-2026-10.json. Nenhuma dessas revisoes contem article-body; origem vazia ou aviso. Nao reconstruir um texto inexistente.",
+      "revisao": {
+        "responsavel": "Codex - curadoria assistida do acervo, sem aprovacao humana de novo artigo",
+        "em": "2026-10-09T23:34:16.913Z"
+      },
+      "arquivoHash": "83f462307c75e3066ba30534ca57a0790475588f2cca81c0405edaef9f08c147",
+      "registrosHash": "e39cc3653112c2a1d64e0a3ff4f3da0d77c727cadd2cb38d56e114c66ac27483",
+      "aliases": []
+    },
+    {
+      "url": "artigos/inteligencia-artificial/transformando-relatorios-como-a-ia-esta-redefinindo-a-tomada-de-decisao-empresarial.html",
+      "acao": "retirar",
+      "motivo": "Aviso de indisponibilidade sem artigo recuperavel nas revisoes consultadas e sem substituto equivalente comprovado.",
+      "evidencia": "HTML atual sem article-body; todas as revisoes Git consultadas constam em historicos-2026-10.json. Nenhuma dessas revisoes contem article-body; origem vazia ou aviso. Nao reconstruir um texto inexistente.",
+      "revisao": {
+        "responsavel": "Codex - curadoria assistida do acervo, sem aprovacao humana de novo artigo",
+        "em": "2026-10-09T23:34:16.913Z"
+      },
+      "arquivoHash": "fa51a3830cc2c93ff3592bedda3080413596208c2a21aa46c254ec7341eabde7",
+      "registrosHash": "6d9aecd1c1a1d474e328f6c879c9f6b2fe20a2612417d36e6b194bffca1b26a5",
+      "aliases": []
+    },
+    {
+      "url": "artigos/tecnologia/a-nova-fronteira-do-investimento-tecnologia-de-defesa-na-europa.html",
+      "acao": "retirar",
+      "motivo": "Aviso de indisponibilidade sem artigo recuperavel nas revisoes consultadas e sem substituto equivalente comprovado.",
+      "evidencia": "HTML atual sem article-body; todas as revisoes Git consultadas constam em historicos-2026-10.json. Nenhuma dessas revisoes contem article-body; origem vazia ou aviso. Nao reconstruir um texto inexistente.",
+      "revisao": {
+        "responsavel": "Codex - curadoria assistida do acervo, sem aprovacao humana de novo artigo",
+        "em": "2026-10-09T23:34:16.913Z"
+      },
+      "arquivoHash": "4ecec68c355eec566b9d37ffbcdb9a91a46c694052aed30f131a8e3e0840f564",
+      "registrosHash": "a7aab1624fa3ed89aea7a654505a35fd2ddf85845056fdac5a517e46e6192ee1",
+      "aliases": []
     }
   ]
 }

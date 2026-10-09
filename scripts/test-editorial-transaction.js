@@ -3,7 +3,7 @@ const os = require("node:os");
 const path = require("node:path");
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { executarPublicacao, escreverPublicacao, recuperarPublicacaoInterrompida } = require("./editorial-transaction");
+const { executarPublicacao, escreverPublicacao, removerPublicacao, recuperarPublicacaoInterrompida } = require("./editorial-transaction");
 
 function workspace(executar) {
   const base = fs.realpathSync(os.tmpdir());
@@ -49,6 +49,22 @@ test("transacao bloqueia concorrencia e caminhos fora do site", () => workspace(
   const lock = path.join(root, ".editorial", "publicacao-em-andamento");
   fs.mkdirSync(lock);
   assert.throws(() => executarPublicacao(() => {}, root), /EEXIST/);
+}));
+
+test("retirada exige transacao, preserva bytes e reverte exclusao seguida de escrita", () => workspace(root => {
+  const arquivo = path.join(root, "artigo.html");
+  const bytes = Buffer.from([0xef, 0xbb, 0xbf, 0x61, 0x0d, 0x0a]);
+  fs.writeFileSync(arquivo, bytes);
+  assert.throws(() => removerPublicacao(arquivo), /exige transacao/);
+  assert.throws(() => executarPublicacao(() => {
+    removerPublicacao(arquivo);
+    assert.equal(fs.existsSync(arquivo), false);
+    escreverPublicacao(arquivo, "substituto");
+    throw new Error("falha simulada");
+  }, root), /falha simulada/);
+  assert.deepEqual(fs.readFileSync(arquivo), bytes);
+  executarPublicacao(() => removerPublicacao(arquivo), root);
+  assert.equal(fs.existsSync(arquivo), false);
 }));
 
 test("recuperacao explicita restaura journal de processo interrompido", () => workspace(root => {

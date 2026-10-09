@@ -4,6 +4,7 @@ const { execFileSync } = require("node:child_process");
 const { createHash } = require("node:crypto");
 const cheerio = require("cheerio");
 const { siteUrl } = require("./seo-identity");
+const { hashArquivo } = require("./article-lifecycle");
 
 function digest(text) {
   return createHash("sha256").update(String(text).replace(/\r\n/g, "\n")).digest("hex");
@@ -36,7 +37,19 @@ function prepararVerificacao({ ler, revisao }) {
   try { controlaDocumentos = Boolean(ler("_config.yml")); } catch { /* Older revisions predate the Pages publication policy. */ }
   const ausentes = controlaDocumentos ? ["EDITORIAL_OPERACAO", "SEO_MELHORIAS_REALIZADAS", "dados/humanizer-rules", "exemplos/reservoir-sampling/README"]
     .flatMap(nome => [`${nome}.md`, `${nome}.html`]) : [];
-  return { revisao, recentes, arquivosNavegacao, ausentes, arquivos: arquivos.map(arquivo => ({ arquivo, hash: digest(ler(arquivo)) })) };
+  let manifestoTexto;
+  try { manifestoTexto = ler("dados/indexacao.json"); } catch { /* Revisions before the indexation manifest are still verifiable. */ }
+  if (manifestoTexto) {
+    const manifesto = JSON.parse(manifestoTexto);
+    for (const d of manifesto.decisoes.filter(d => ["retirar", "consolidar"].includes(d.acao))) {
+      const origens = [d.url, ...(d.aliases || []).map(a => a.url)];
+      if (d.acao === "retirar") ausentes.push(...origens);
+      else arquivos.push(...origens, d.destino);
+      ausentes.push(`dados/editorial/arquivados/${hashArquivo(`${d.url}\n${d.arquivoHash}`)}.json`);
+    }
+  }
+  if (controlaDocumentos && /dados\/editorial\/arquivados/.test(ler("_config.yml"))) ausentes.push("dados/editorial/arquivados/historicos-2026-10.json");
+  return { revisao, recentes, arquivosNavegacao, ausentes: [...new Set(ausentes)], arquivos: [...new Set(arquivos)].map(arquivo => ({ arquivo, hash: digest(ler(arquivo)) })) };
 }
 
 async function verificarPublicacao({ esperado, fetchImpl = fetch, baseUrl = siteUrl, tentativas = 4, intervaloMs = 15000, esperar = ms => new Promise(resolve => setTimeout(resolve, ms)) }) {
