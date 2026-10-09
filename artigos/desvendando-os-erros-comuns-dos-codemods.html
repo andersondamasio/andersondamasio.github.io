@@ -25,7 +25,6 @@
 <meta property="article:published_time" content="2025-05-06T18:25:22.325Z">
 <meta property="article:modified_time" content="2025-05-06T18:25:22.325Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content="Desvendando os Erros Comuns dos Codemods">
 <meta name="twitter:description" content="Se existe um tema que separa teoria e prática no desenvolvimento, esse tema é Fixing Common Pitfalls of Codemods. Quando falamos sobre codemods, estamos...">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
@@ -36,11 +35,6 @@
   "@type": "BlogPosting",
   "headline": "Desvendando os Erros Comuns dos Codemods",
   "description": "Se existe um tema que separa teoria e prática no desenvolvimento, esse tema é Fixing Common Pitfalls of Codemods. Quando falamos sobre codemods, estamos...",
-  "image": [
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
-  ],
   "url": "https://www.andersondamasio.com.br/artigos/desvendando-os-erros-comuns-dos-codemods.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -116,15 +110,14 @@
     ]
   },
   "publisher": {
-    "@type": "Organization",
-    "@id": "https://www.andersondamasio.com.br/#organization",
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
     "name": "Anderson Damasio",
-    "url": "https://www.andersondamasio.com.br",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
-    }
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
   }
 }
 </script>
@@ -216,22 +209,12 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 06/05/2025 15:25</p>
 
 <div class="article-body">Se existe um tema que separa teoria e prática no desenvolvimento, esse tema é Fixing Common Pitfalls of Codemods. Quando falamos sobre codemods, estamos lidando com uma ferramenta poderosa para automatizar a refatoração de código. No entanto, como em qualquer ferramenta complexa, existem armadilhas comuns que os desenvolvedores podem cair ao utilizá-la.<br>Uma das armadilhas mais comuns é não considerar todos os cenários possíveis ao criar um codemod. Muitas vezes, os desenvolvedores se concentram em casos simples e acabam deixando de lado situações mais complexas que podem surgir no código. Isso pode levar a erros inesperados e até mesmo a quebras no sistema.<br>Outro erro comum é não testar adequadamente o codemod antes de aplicá-lo em produção. É essencial criar testes abrangentes que cubram todos os possíveis cenários de uso do codemod, garantindo assim que ele funcione corretamente em qualquer situação.<br>Para evitar esses e outros erros comuns, é importante seguir algumas boas práticas ao criar e utilizar codemods. Uma delas é sempre manter a documentação atualizada e clara, para que outros desenvolvedores possam entender facilmente como o codemod funciona e como utilizá-lo corretamente.<br>Além disso, é fundamental revisar constantemente o código do codemod e buscar por possíveis melhorias. Às vezes, pequenas alterações podem tornar o codemod mais eficiente e seguro, evitando assim possíveis problemas no futuro.<br>Para exemplificar, vamos analisar um trecho de código em C# que utiliza um codemod para refatorar um método de uma classe:<br><pre><code class="language-csharp">public class MinhaClasse<br>{<br>public void MetodoAntigo()<br>{<br>// Código antigo aqui<br>}<br>}<br></code></pre><br>Após aplicarmos o codemod, o método `MetodoAntigo` é refatorado para:<br><pre><code class="language-csharp">public class MinhaClasse<br>{<br>public void MetodoNovo()<br>{<br>// Código novo aqui<br>}<br>}<br></code></pre><br>Neste exemplo simples, podemos ver como um codemod pode facilitar a refatoração de código de forma automática, poupando tempo e evitando possíveis erros humanos.<br>Em conclusão, os codemods são uma ferramenta poderosa no arsenal de um desenvolvedor, mas é essencial utilizá-los com cautela e seguir boas práticas para evitar erros comuns. Com atenção aos detalhes e testes adequados, é possível aproveitar ao máximo o potencial dos codemods e tornar o processo de refatoração de código mais eficiente e seguro.</div>
-<section class="article-validation" aria-labelledby="article-validation-title">
-<h2 id="article-validation-title">O que foi verificado</h2>
-<ul>
-<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
-<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 15/01/2025.</li>
-<li><strong>Recorte editorial:</strong> a análise conecta o tema "Desvendando os Erros Comuns dos Codemods" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
-<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
-</ul>
-</section>
-<section class="article-usefulness" aria-labelledby="article-usefulness-title">
-<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
-<ul>
-<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
-<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
-<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
-</ul>
+<section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
+<p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
+<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo. Data da fonte registrada: 15/01/2025.</p>
+<p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
+<p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>

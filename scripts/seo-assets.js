@@ -13,12 +13,14 @@ const defaultArticleImages = [
 ];
 
 function getArticleStructuredImages(image, toAbsoluteUrl = value => value) {
-  const resolved = toAbsoluteUrl(image || defaultSeoImage);
-  if (resolved === defaultSeoImage || resolved === legacySeoImage) {
-    return defaultArticleImages;
-  }
-
+  if (!image) return undefined;
+  const resolved = toAbsoluteUrl(image);
+  if (isBrandImage(resolved) || !/^https?:\/\//i.test(resolved)) return undefined;
   return [resolved];
+}
+
+function isBrandImage(image) {
+  return image === legacySeoImage || defaultArticleImages.includes(image);
 }
 
 module.exports = {
@@ -28,5 +30,6 @@ module.exports = {
   defaultSeoImageWidth,
   defaultSeoImageHeight,
   defaultArticleImages,
+  isBrandImage,
   getArticleStructuredImages
 };

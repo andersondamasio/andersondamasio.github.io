@@ -1,14 +1,8 @@
-const {
-  defaultPublisherLogo,
-  defaultSeoImageAlt
-} = require("./seo-assets");
-
 const siteUrl = "https://www.andersondamasio.com.br";
 const siteName = "Anderson Damasio";
 const authorName = "Anderson Damasio";
 const authorUrl = `${siteUrl}/sobre.html`;
 const authorId = `${siteUrl}/#anderson-damasio`;
-const organizationId = `${siteUrl}/#organization`;
 const websiteId = `${siteUrl}/#website`;
 const authorSameAs = [
   "https://www.linkedin.com/in/andersondamasio/"
@@ -26,19 +20,8 @@ function criarPessoaSchema(extra = {}) {
   };
 }
 
-function criarOrganizacaoSchema(extra = {}) {
-  return {
-    "@type": "Organization",
-    "@id": organizationId,
-    "name": siteName,
-    "url": siteUrl,
-    "logo": {
-      "@type": "ImageObject",
-      "url": defaultPublisherLogo,
-      "caption": defaultSeoImageAlt
-    },
-    ...extra
-  };
+function criarPublicadorSchema(extra = {}) {
+  return criarPessoaSchema(extra);
 }
 
 function criarWebSiteSchema(extra = {}) {
@@ -48,7 +31,7 @@ function criarWebSiteSchema(extra = {}) {
     "name": siteName,
     "url": siteUrl,
     "inLanguage": "pt-BR",
-    "publisher": criarOrganizacaoSchema(),
+    "publisher": criarPublicadorSchema(),
     ...extra
   };
 }
@@ -58,10 +41,9 @@ module.exports = {
   authorName,
   authorSameAs,
   authorUrl,
-  criarOrganizacaoSchema,
+  criarPublicadorSchema,
   criarPessoaSchema,
   criarWebSiteSchema,
-  organizationId,
   siteName,
   siteUrl,
   websiteId

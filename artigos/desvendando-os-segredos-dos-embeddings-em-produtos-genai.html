@@ -25,7 +25,6 @@
 <meta property="article:published_time" content="2025-05-06T10:19:23.185Z">
 <meta property="article:modified_time" content="2025-05-06T10:19:23.185Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content="Desvendando os Segredos dos Embeddings em Produtos GenAI">
 <meta name="twitter:description" content="A discussão sobre Embeddings in GenAI Products voltou à tona, e acredito que precisamos falar sobre isso com mais seriedade.Para os não iniciados, os...">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
@@ -36,11 +35,6 @@
   "@type": "BlogPosting",
   "headline": "Desvendando os Segredos dos Embeddings em Produtos GenAI",
   "description": "A discussão sobre Embeddings in GenAI Products voltou à tona, e acredito que precisamos falar sobre isso com mais seriedade.Para os não iniciados, os...",
-  "image": [
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
-  ],
   "url": "https://www.andersondamasio.com.br/artigos/desvendando-os-segredos-dos-embeddings-em-produtos-genai.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -116,15 +110,14 @@
     ]
   },
   "publisher": {
-    "@type": "Organization",
-    "@id": "https://www.andersondamasio.com.br/#organization",
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
     "name": "Anderson Damasio",
-    "url": "https://www.andersondamasio.com.br",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
-    }
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
   }
 }
 </script>
@@ -216,22 +209,12 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 06/05/2025 07:19</p>
 
 <div class="article-body">A discussão sobre Embeddings in GenAI Products voltou à tona, e acredito que precisamos falar sobre isso com mais seriedade.<br>Para os não iniciados, os embeddings são representações numéricas de palavras, frases, ou até mesmo objetos, em um espaço vetorial de alta dimensão. Em produtos de inteligência artificial como os GenAI, os embeddings desempenham um papel crucial na codificação de informações e na compreensão de contextos semânticos complexos.<br>Essas representações densas e contínuas possibilitam a captura de relações semânticas entre entidades, tornando-se essenciais em tarefas de processamento de linguagem natural, recomendação de conteúdo e muito mais.<br>Vamos agora mergulhar um pouco mais fundo nesse universo fascinante dos embeddings e como eles são aplicados em produtos GenAI.<br>Em termos práticos, ao implementar embeddings em um sistema de recomendação de filmes, por exemplo, podemos utilizar uma abordagem baseada em aprendizado profundo para treinar um modelo capaz de prever as preferências do usuário. Vejamos um exemplo simples em Python utilizando a biblioteca TensorFlow:<br><pre><code>import tensorflow as tf<br># Definindo os embeddings<br>embedding_layer = tf.keras.layers.Embedding(input_dim=1000, output_dim=128)<br># Utilizando os embeddings em uma camada LSTM<br>model = tf.keras.Sequential([<br>embedding_layer,<br>tf.keras.layers.LSTM(128),<br>tf.keras.layers.Dense(1, activation='sigmoid')<br>])<br></code></pre><br>Nesse trecho de código, criamos uma camada de embeddings com 1000 itens de vocabulário e uma dimensão de 128. Essa camada é então utilizada em uma rede neural recorrente do tipo LSTM para prever a probabilidade de um usuário gostar de um determinado filme.<br>Além disso, vale ressaltar a importância de técnicas como word2vec, GloVe e BERT na geração de embeddings de alta qualidade, que capturam nuances semânticas e melhoram significativamente o desempenho de modelos de inteligência artificial.<br>Em conclusão, os embeddings desempenham um papel fundamental no sucesso de produtos de inteligência artificial como os GenAI. Dominar o seu uso e entender suas aplicações pode ser a chave para o desenvolvimento de soluções mais eficientes e precisas.<br>E você, já explorou os embeddings em seus projetos de IA? Compartilhe suas experiências e insights nos comentários!</div>
-<section class="article-validation" aria-labelledby="article-validation-title">
-<h2 id="article-validation-title">O que foi verificado</h2>
-<ul>
-<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
-<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 29/01/2025.</li>
-<li><strong>Recorte editorial:</strong> a análise conecta o tema "Desvendando os Segredos dos Embeddings em Produtos GenAI" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
-<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
-</ul>
-</section>
-<section class="article-usefulness" aria-labelledby="article-usefulness-title">
-<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
-<ul>
-<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
-<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
-<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
-</ul>
+<section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
+<p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
+<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo. Data da fonte registrada: 29/01/2025.</p>
+<p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
+<p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>

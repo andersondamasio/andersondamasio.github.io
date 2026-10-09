@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { avaliarGeneroEditorial, extrairCitacoes } = require("./editorial-policy");
 
 const humanizerSkill = Object.freeze({
   name: "blader/humanizer",
@@ -13,12 +14,6 @@ const padroesPontuados = [
     peso: 30,
     limite: 1,
     pattern: /\b(?:espero que (?:isso )?ajude|claro[!,]|certamente[!,]|deixe-me saber|gostaria que eu|vamos mergulhar|vamos explorar|aqui esta o que voce precisa saber)\b/gi
-  },
-  {
-    id: "experiencia-pessoal-nao-verificavel",
-    peso: 30,
-    limite: 2,
-    pattern: /\b(?:em meus? (?:projetos?|clientes?|times?)|com meus? clientes?|na minha carreira|na minha experiencia|eu (?:implementei|liderei|participei|presenciei|vivenciei)|ja (?:passei|vivi|enfrentei|implementei))\b/gi
   },
   {
     id: "fonte-vaga",
@@ -89,12 +84,14 @@ function adicionarSinal(sinais, id, ocorrencias, pesoUnitario, limite) {
   return penalidade;
 }
 
-function avaliarSinaisHumanizer({ titulo, corpoArtigo }) {
+function avaliarSinaisHumanizer({ titulo, corpoArtigo, fontes = [] }) {
   const bruto = `${titulo || ""}\n${corpoArtigo || ""}`;
   const normalizado = textoNormalizado(bruto);
   const tituloNormalizado = textoNormalizado(titulo);
   const sinais = [];
   let penalidade = 0;
+  const genero = avaliarGeneroEditorial({ titulo, corpoArtigo, fontes });
+  penalidade += adicionarSinal(sinais, "experiencia-pessoal-nao-verificavel", genero.sinais.length, 30, 2);
 
   const titulosFormulaicos = contarOcorrencias(
     tituloNormalizado,
@@ -164,7 +161,7 @@ function extrairBlocosCodigo(value) {
   return String(value || "").match(/<pre\b[\s\S]*?<\/pre>/gi) || [];
 }
 
-function validarPreservacaoHumanizer(original, revisado) {
+function validarPreservacaoHumanizer(original, revisado, fontes = []) {
   const originalCompleto = `${original?.titulo || ""}\n${original?.corpoArtigo || ""}`;
   const revisadoCompleto = `${revisado?.titulo || ""}\n${revisado?.corpoArtigo || ""}`;
   const motivos = [];
@@ -183,6 +180,14 @@ function validarPreservacaoHumanizer(original, revisado) {
   if (!mesmosValores(extrairBlocosCodigo(originalCompleto), extrairBlocosCodigo(revisadoCompleto))) {
     motivos.push("blocos-de-codigo-alterados");
   }
+
+  if (JSON.stringify(extrairCitacoes(originalCompleto)) !== JSON.stringify(extrairCitacoes(revisadoCompleto))) {
+    motivos.push("citacoes-alteradas");
+  }
+
+  motivos.push(...avaliarGeneroEditorial({
+    titulo: revisado?.titulo, corpoArtigo: revisado?.corpoArtigo, fontes
+  }).motivos);
 
   if (/<(?:script|style|iframe)\b/i.test(String(revisado?.corpoArtigo || ""))) {
     motivos.push("html-nao-permitido");

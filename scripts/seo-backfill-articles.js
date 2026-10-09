@@ -15,7 +15,7 @@ const {
 const { lerDimensoesImagemLocal } = require("./seo-image-dimensions");
 const {
   authorName,
-  criarOrganizacaoSchema,
+  criarPublicadorSchema,
   criarPessoaSchema,
   siteName,
   siteUrl
@@ -33,7 +33,7 @@ const rssUrl = `${siteUrl}/rss.xml`;
 
 function walk(dir, out = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    if (entry.name === ".git" || entry.name === "node_modules") continue;
+    if (entry.name.startsWith(".") || entry.name === "node_modules") continue;
 
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
@@ -231,14 +231,12 @@ function inserirFonteEditorial(html, sourceUrl, sourceTitle) {
   if (!fonte) return html;
 
   const htmlNormalizado = normalizarHtmlArtigoMalformado(html);
-  const semFonteAnterior = htmlNormalizado.replace(/\n?<section\s+class=["']article-source["'][\s\S]*?<\/section>\s*/gi, "\n");
-  const comEstilos = ensureSourceStyles(semFonteAnterior);
-
-  const comFonteNoCorpo = comEstilos.replace(
-    /(<div\s+class=["'][^"']*\barticle-body\b[^"']*["'][^>]*>[\s\S]*?<\/div>)/i,
-    (_, articleBody) => `${articleBody}\n${fonte}`
-  );
-  if (comFonteNoCorpo !== comEstilos) return comFonteNoCorpo;
+  const fonteAnterior = /<section\s+class=["']article-source["'][\s\S]*?<\/section>/i;
+  if (fonteAnterior.test(htmlNormalizado)) return ensureSourceStyles(htmlNormalizado.replace(fonteAnterior, fonte));
+  const comEstilos = ensureSourceStyles(htmlNormalizado);
+  const $ = cheerio.load(comEstilos, { sourceCodeLocationInfo: true });
+  const local = $(".article-body").first()[0]?.sourceCodeLocation;
+  if (local?.endTag) return `${comEstilos.slice(0, local.endOffset)}\n${fonte}${comEstilos.slice(local.endOffset)}`;
 
   const antesDoVoltar = comEstilos.replace(
     /(<p\s+class=["'][^"']*\bback-link\b[^"']*["'][^>]*>)/i,
@@ -262,7 +260,7 @@ function breadcrumb(items) {
   };
 }
 
-function buildSeoHead({ title, description, url, category, published, articleText, sourceUrl, sourceTitle }) {
+function buildSeoHead({ title, description, url, category, published, modified, articleText, sourceUrl, sourceTitle, articleImage }) {
   const pageTitle = buildPageTitle(title, category);
   const pageDescription = buildDescription(description, title);
   const pageUrl = absoluteUrl(url);
@@ -271,6 +269,7 @@ function buildSeoHead({ title, description, url, category, published, articleTex
   const dateIso = publishedDate && !Number.isNaN(publishedDate.getTime())
     ? publishedDate.toISOString()
     : null;
+  const modifiedIso = modified && Number.isFinite(Date.parse(modified)) ? new Date(modified).toISOString() : dateIso;
   const articleMetadata = criarMetadadosArtigo({
     title,
     category,
@@ -286,14 +285,14 @@ function buildSeoHead({ title, description, url, category, published, articleTex
       "@type": "BlogPosting",
       "headline": title,
       "description": pageDescription,
-      "image": getArticleStructuredImages(defaultSeoImage, absoluteUrl),
+      "image": getArticleStructuredImages(articleImage, absoluteUrl),
       "url": pageUrl,
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": pageUrl
       },
       "datePublished": dateIso,
-      "dateModified": dateIso,
+      "dateModified": modifiedIso,
       "articleSection": category,
       "inLanguage": "pt-BR",
       ...articleMetadata,
@@ -303,7 +302,7 @@ function buildSeoHead({ title, description, url, category, published, articleTex
       } : {}),
       "author": criarPessoaSchema(),
       "copyrightHolder": criarPessoaSchema(),
-      "publisher": criarOrganizacaoSchema()
+      "publisher": criarPublicadorSchema()
     },
     breadcrumb([
       { name: "Início", url: "/" },
@@ -331,9 +330,8 @@ ${gerarResourceHints()}
 <meta property="og:image:width" content="${escapeAttribute(defaultSeoImageWidth)}">
 <meta property="og:image:height" content="${escapeAttribute(defaultSeoImageHeight)}">
 <meta property="og:image:alt" content="${escapeAttribute(defaultSeoImageAlt)}">
-${dateIso ? `<meta property="article:published_time" content="${escapeAttribute(dateIso)}">\n<meta property="article:modified_time" content="${escapeAttribute(dateIso)}">` : ""}
+${dateIso ? `<meta property="article:published_time" content="${escapeAttribute(dateIso)}">\n<meta property="article:modified_time" content="${escapeAttribute(modifiedIso)}">` : ""}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content="${escapeAttribute(pageTitle)}">
 <meta name="twitter:description" content="${escapeAttribute(pageDescription)}">
 <meta name="twitter:image" content="${escapeAttribute(defaultSeoImage)}">
@@ -484,19 +482,22 @@ for (const file of walk(root)) {
   const category = inferCategory(fileRel, metaByUrl);
   const sourceUrl = metaByUrl?.urlFonte || metaByTitle?.urlFonte;
   const sourceTitle = metaByUrl?.noticiaOriginal || metaByTitle?.noticiaOriginal || title;
-  const sourceDate = metaByUrl?.dataFonte || metaByUrl?.data || metaByTitle?.dataFonte || metaByTitle?.data;
+  const sourceDate = metaByUrl?.dataFonte || metaByTitle?.dataFonte;
   const articleText = $(".article-body").text() || $("main").text() || $("body").text();
   const currentDescription = $('meta[name="description" i]').attr("content") || "";
-  const descriptionSource = cleanText(articleText).length >= 70 ? articleText : currentDescription || title;
+  const descriptionSource = metaByUrl?.seo?.description || (cleanText(articleText).length >= 70 ? articleText : currentDescription || title);
   const seo = buildSeoHead({
     title,
     description: descriptionSource,
     url: fileRel,
     category,
     published: metaByUrl?.data || metaByTitle?.data,
+    modified: metaByUrl?.seo?.modifiedAt,
     articleText,
     sourceUrl,
-    sourceTitle
+    sourceTitle,
+    articleImage: $(".article-body img[src]").first().attr("src")
+      ? new URL($(".article-body img[src]").first().attr("src"), `${siteUrl}/${fileRel}`).href : undefined
   });
 
   const htmlComImagensOtimizadas = otimizarImagensArtigo(html, title, fileRel);
@@ -507,7 +508,8 @@ for (const file of walk(root)) {
     category,
     sourceUrl,
     sourceTitle,
-    sourceDate
+    sourceDate,
+    editorial: metaByUrl?.editorial
   });
   const updatedHtml = htmlComConteudoUtil
     .replace(/<html(?![^>]*\blang=)([^>]*)>/i, '<html lang="pt-BR"$1>')

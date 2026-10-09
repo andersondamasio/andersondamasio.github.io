@@ -3,367 +3,428 @@
     "titulo": "Microservices: uma abordagem para arquitetura de software",
     "data": "2025-04-25T19:00:00.000Z",
     "noticiaOriginal": "microservicesumaabordagemparaarquiteturadesoftware",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/microservices-uma-abordagem-para-arquitetura-de-software.html"
   },
   {
     "titulo": "Microservices: a arquitetura de software do futuro",
     "data": "2025-04-25T19:27:21.570Z",
     "noticiaOriginal": "microservicesaarquiteturadesoftwaredofuturo",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/microservices-a-arquitetura-de-software-do-futuro.html"
   },
   {
     "titulo": "A Importância da Arquitetura de Software Orientada a Serviços",
     "data": "2025-04-25T19:45:00.000Z",
     "noticiaOriginal": "aimportanciadaarquiteturadesoftwareorientadaaservicos",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-importancia-da-arquitetura-de-software-orientada-a-servicos.html"
   },
   {
     "titulo": "Escalabilidade Horizontal em Arquitetura de Software",
     "data": "2025-04-25T20:32:15.423Z",
     "noticiaOriginal": "escalabilidadehorizontalemarquiteturadesoftware",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/escalabilidade-horizontal-em-arquitetura-de-software.html"
   },
   {
     "titulo": "Arquitetura Hexagonal: uma abordagem eficiente para o desenvolvimento de software",
     "data": "2025-04-25T20:42:52.701Z",
     "noticiaOriginal": "arquiteturahexagonalumaabordagemeficienteparaodesenvolvimentodesoftware",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/arquitetura-hexagonal-uma-abordagem-eficiente-para-o-desenvolvimento-de-software.html"
   },
   {
     "titulo": "Arquitetura de Software Baseada em Eventos: Uma Abordagem Eficiente para Sistemas Distribuídos",
     "data": "2025-04-25T20:47:46.750Z",
     "noticiaOriginal": "arquiteturadesoftwarebaseadaemeventosumaabordagemeficienteparasistemasdistribuidos",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/arquitetura-de-software-baseada-em-eventos-uma-abordagem-eficiente-para-sistemas-distribuidos.html"
   },
   {
     "titulo": "Arquitetura Serverless: uma abordagem inovadora para o desenvolvimento de software",
     "data": "2025-04-25T20:52:00.125Z",
     "noticiaOriginal": "arquiteturaserverlessumaabordageminovadoraparaodesenvolvimentodesoftware",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/arquitetura-serverless-uma-abordagem-inovadora-para-o-desenvolvimento-de-software.html"
   },
   {
     "titulo": "Arquitetura de Software Distribuída: Desafios e Soluções",
     "data": "2025-04-25T21:13:39.147Z",
     "noticiaOriginal": "arquiteturadesoftwaredistribuidadesafiosesolucoes",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/arquitetura-de-software-distribuida-desafios-e-solucoes.html"
   },
   {
     "titulo": "Lossless LLM compression for efficient GPU inference via dynamic-length float",
     "data": "2025-04-25T21:49:42.836Z",
     "noticiaOriginal": "losslessllmcompressionforefficientgpuinferenceviadynamiclengthfloat",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/lossless-llm-compression-for-efficient-gpu-inference-via-dynamic-length-float.html"
   },
   {
     "titulo": "Construindo Aplicações iOS em Tempo Real com SignalR: Introdução do Cliente Swift Oficial (Prévia Pública)",
     "data": "2025-04-25T22:19:07.959Z",
     "noticiaOriginal": "Building Real‑Time iOS Apps with SignalR: Introducing the Official Swift Client (Public Preview)",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/construindo-aplicacoes-ios-em-tempo-real-com-signalr-introducao-do-cliente-swift-oficial-previa-publica.html"
   },
   {
     "titulo": "Desenhando PCBs com Código: Uma Abordagem Moderna na Arquitetura de Software",
     "noticiaOriginal": "I Designed My LED Matrix PCB with Code Instead of Traditional EDA Tools",
     "data": "2025-04-25T23:06:20.282Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/desenhando-pcbs-com-codigo-uma-abordagem-moderna-na-arquitetura-de-software.html"
   },
   {
     "titulo": "Integrando Python em planilhas modernas: uma abordagem arquitetural",
     "noticiaOriginal": "Show HN: A modern spreadsheet with Python integration",
     "data": "2025-04-25T23:15:20.403Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/integrando-python-em-planilhas-modernas-uma-abordagem-arquitetural.html"
   },
   {
     "titulo": "Formalizando Principia Mathematica com Lean: Uma abordagem moderna de arquitetura de software",
     "noticiaOriginal": "Show HN: Formalizing Principia Mathematica using Lean",
     "data": "2025-04-25T23:16:14.554Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/formalizando-principia-mathematica-com-lean-uma-abordagem-moderna-de-arquitetura-de-software.html"
   },
   {
     "titulo": "Emulação Mundial através de Redes Neurais Profundas (DNN): uma abordagem inovadora na arquitetura de software",
     "noticiaOriginal": "World Emulation via DNN",
     "data": "2025-04-25T23:20:46.601Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/emulacao-mundial-atraves-de-redes-neurais-profundas-dnn-uma-abordagem-inovadora-na-arquitetura-de-software.html"
   },
   {
     "titulo": "Integração entre hardware e software: uma nova tendência na arquitetura de sistemas",
     "noticiaOriginal": "I designed my LED matrix PCB with code",
     "data": "2025-04-26T00:46:55.381Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/integracao-entre-hardware-e-software-uma-nova-tendencia-na-arquitetura-de-sistemas.html"
   },
   {
     "titulo": "A Utilização de Redes Neurais na Emulação de Ambientes Virtuais",
     "noticiaOriginal": "World Emulation via Neural Network",
     "data": "2025-04-26T01:00:28.057Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/a-utilizacao-de-redes-neurais-na-emulacao-de-ambientes-virtuais.html"
   },
   {
     "titulo": "A conexão entre \"Crap Towns\" e arquitetura de software moderna",
     "noticiaOriginal": "I wrote a book called \"Crap Towns\". It seemed funny at the time",
     "data": "2025-04-26T01:20:11.934Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-conexao-entre-crap-towns-e-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "A conexão entre o Berkeley Humanoid Lite e a arquitetura de software moderna",
     "noticiaOriginal": "Berkeley Humanoid Lite – open-source robot",
     "data": "2025-04-26T02:58:14.532Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-conexao-entre-o-berkeley-humanoid-lite-e-a-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "Utilizando APIs de IA para personalização de serviços: Uma abordagem moderna em arquitetura de software",
     "noticiaOriginal": "Show HN: I used OpenAI's new image API for a personalized coloring book service",
     "data": "2025-04-26T03:34:39.414Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/utilizando-apis-de-ia-para-personalizacao-de-servicos-uma-abordagem-moderna-em-arquitetura-de-software.html"
   },
   {
     "titulo": "O questionamento do status sem fins lucrativos da Wikipedia e sua conexão com práticas modernas de arquitetura de software",
     "noticiaOriginal": "Wikipedia’s nonprofit status questioned by D.C. U.S. attorney",
     "data": "2025-04-26T04:20:13.134Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/o-questionamento-do-status-sem-fins-lucrativos-da-wikipedia-e-sua-conexao-com-praticas-modernas-de-arquitetura-de-software.html"
   },
   {
     "titulo": "O futuro da configuração de software: a era do Parallel ./configure",
     "noticiaOriginal": "Parallel ./configure",
     "data": "2025-04-26T05:16:02.518Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/o-futuro-da-configuracao-de-software-a-era-do-parallel-configure.html"
   },
   {
     "titulo": "A tendência do Cloth na arquitetura de software moderna",
     "noticiaOriginal": "Cloth",
     "data": "2025-04-26T06:22:58.685Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-tendencia-do-cloth-na-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "A Importância da Arquitetura de Software na Contratação de um Engenheiro de Back End/Plataforma pela MobileBoost",
     "noticiaOriginal": "MobileBoost (YC S21) Is Hiring a Founding Back End/Platform Engineer (Remote)",
     "data": "2025-04-26T07:15:26.112Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-importancia-da-arquitetura-de-software-na-contratacao-de-um-engenheiro-de-back-end-plataforma-pela-mobileboost.html"
   },
   {
     "titulo": "A conexão entre a ordem de materiais radioativos na Austrália e arquitetura de software moderna",
     "noticiaOriginal": "Australian who ordered radioactive materials walks away from court",
     "data": "2025-04-26T08:20:47.186Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-conexao-entre-a-ordem-de-materiais-radioativos-na-australia-e-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "O impacto do arquivo \"/etc/hosts\" na arquitetura de software moderna",
     "noticiaOriginal": "Writing \"/etc/hosts\" breaks the Substack editor",
     "data": "2025-04-26T09:16:49.030Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/o-impacto-do-arquivo-etc-hosts-na-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "O fim de todos os problemas de próstata? Uma análise técnica sobre a conexão entre essa tendência e práticas modernas de arquitetura de software",
     "noticiaOriginal": "An end to all this prostate trouble?",
     "data": "2025-04-26T10:16:50.389Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/o-fim-de-todos-os-problemas-de-prostata-uma-analise-tecnica-sobre-a-conexao-entre-essa-tendencia-e-praticas-modernas-de-arquitetura-de-software.html"
   },
   {
     "titulo": "Implicações da perda de Mark Zuckerberg no caso antitruste do Facebook para a arquitetura de software moderna",
     "noticiaOriginal": "Mark Zuckerberg personally lost the Facebook antitrust case",
     "data": "2025-04-26T11:13:14.200Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/implicacoes-da-perda-de-mark-zuckerberg-no-caso-antitruste-do-facebook-para-a-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "The Friendship Recession: The Lost Art of Connecting",
     "noticiaOriginal": "The Friendship Recession: The Lost Art of Connecting",
     "data": "2025-04-26T12:31:45.891Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/the-friendship-recession-the-lost-art-of-connecting.html"
   },
   {
     "titulo": "Desafios da Arquitetura de Software em meio a perdas financeiras e ações judiciais",
     "noticiaOriginal": "Backblaze: Mounting Losses, Lawsuits, Sham Accounting, Insider Selling",
     "data": "2025-04-26T13:22:13.273Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/desafios-da-arquitetura-de-software-em-meio-a-perdas-financeiras-e-acoes-judiciais.html"
   },
   {
     "titulo": "A integração da inteligência artificial na arquitetura de software: o papel dos Large Language Models",
     "noticiaOriginal": "LLMs can see and hear without any training",
     "data": "2025-04-26T14:14:31.971Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-integracao-da-inteligencia-artificial-na-arquitetura-de-software-o-papel-dos-large-language-models.html"
   },
   {
     "titulo": "Adivinhação de locais em fotos: uma nova abordagem surreal e distópica na arquitetura de software",
     "noticiaOriginal": "Watching o3 guess a photo's location is surreal, dystopian and entertaining",
     "data": "2025-04-26T15:15:55.911Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/adivinhacao-de-locais-em-fotos-uma-nova-abordagem-surreal-e-distopica-na-arquitetura-de-software.html"
   },
   {
     "titulo": "A importância da criação de sistemas operacionais como hobby na arquitetura de software moderna",
     "noticiaOriginal": "Show HN: My self-written hobby OS is finally running on my vintage IBM ThinkPad",
     "data": "2025-04-26T16:19:50.781Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-importancia-da-criacao-de-sistemas-operacionais-como-hobby-na-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "Como a tendência \"Stuffed-Na(a)N\" se conecta à arquitetura de software moderna",
     "noticiaOriginal": "Stuffed-Na(a)N: stuff your NaNs",
     "data": "2025-04-26T17:13:15.149Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "A importância da flexibilidade e adaptabilidade na arquitetura de software: lições aprendidas com \"Thank you for holding my duck\"",
     "noticiaOriginal": "Thank you for holding my duck (2021)",
     "data": "2025-04-26T18:21:40.334Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-importancia-da-flexibilidade-e-adaptabilidade-na-arquitetura-de-software-licoes-aprendidas-com-thank-you-for-holding-my-duck.html"
   },
   {
     "titulo": "Barlow's Principles of Adult Behaviour",
     "noticiaOriginal": "Barlow's Principles of Adult Behaviour",
     "data": "2025-04-26T19:13:01.178Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/barlow-s-principles-of-adult-behaviour.html"
   },
   {
     "titulo": "A incerteza dos economistas e a importância da flexibilidade na arquitetura de software",
     "noticiaOriginal": "Economists don't know what's going on",
     "data": "2025-04-26T20:17:33.410Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-incerteza-dos-economistas-e-a-importancia-da-flexibilidade-na-arquitetura-de-software.html"
   },
   {
     "titulo": "A influência dos Easter Eggs de Bill Gates na arquitetura de software moderna",
     "noticiaOriginal": "Bill Gates's Personal Easter Eggs in 8 Bit BASIC (2008)",
     "data": "2025-04-26T21:15:10.579Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-influencia-dos-easter-eggs-de-bill-gates-na-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "A tendência do Bare Metal printf e sua influência na arquitetura de software moderna",
     "noticiaOriginal": "Bare metal printf – C standard library without OS",
     "data": "2025-04-26T22:15:21.815Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-tendencia-do-bare-metal-printf-e-sua-influencia-na-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "Integração de dispositivos IoT na arquitetura de software: uma análise do Dad and the Egg Controller (2018)",
     "noticiaOriginal": "Dad and the Egg Controller (2018)",
     "data": "2025-04-26T23:15:43.576Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/integracao-de-dispositivos-iot-na-arquitetura-de-software-uma-analise-do-dad-and-the-egg-controller-2018.html"
   },
   {
     "titulo": "A Revolução dos Jogos no Windows em Mac: Uma Análise da Integração de Plataformas na Arquitetura de Software",
     "noticiaOriginal": "I Tried Windows Gaming on a Mac and It's Amazing",
     "data": "2025-04-27T01:17:48.509Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-revolucao-dos-jogos-no-windows-em-mac-uma-analise-da-integracao-de-plataformas-na-arquitetura-de-software.html"
   },
   {
     "titulo": "A importância do Path na arquitetura de software moderna",
     "noticiaOriginal": "Path is a utility for working with paths",
     "data": "2025-04-27T01:27:40.705Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-importancia-do-path-na-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "Integração de sistemas: como a Amazon aproveita eventos para impulsionar vendas",
     "noticiaOriginal": "Amazon Just Happens to Hold Book Sale During Independent Bookstore Day",
     "data": "2025-04-27T03:07:27.447Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/integracao-de-sistemas-como-a-amazon-aproveita-eventos-para-impulsionar-vendas.html"
   },
   {
     "titulo": "Tendência de tutoriais interativos em C no navegador: como isso se relaciona com a arquitetura de software moderna",
     "noticiaOriginal": "Open-source interactive C tutorial in the browser",
     "data": "2025-04-27T04:19:58.785Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/tendencia-de-tutoriais-interativos-em-c-no-navegador-como-isso-se-relaciona-com-a-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "Integração de Humor e Inteligência Artificial na Arquitetura de Software",
     "noticiaOriginal": "Sigbovik Conference Proceedings 2025 [pdf]",
     "data": "2025-04-27T05:17:04.806Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/integracao-de-humor-e-inteligencia-artificial-na-arquitetura-de-software.html"
   },
   {
     "titulo": "CSS Zen Garden",
     "noticiaOriginal": "CSS Zen Garden",
     "data": "2025-04-27T06:23:19.518Z",
-    "categoria": "Front-end"
+    "categoria": "Front-end",
+    "url": "artigos/css-zen-garden.html"
   },
   {
     "titulo": "A importância da modelagem de bancos de dados na arquitetura de software moderna",
     "noticiaOriginal": "Found a simple tool for database modeling: dbdiagram.io",
     "data": "2025-04-27T07:15:20.938Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-importancia-da-modelagem-de-bancos-de-dados-na-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "A integração da Internet das Coisas na arquitetura de software: o caso do controle remoto da lâmpada Deathstar da IKEA",
     "noticiaOriginal": "Show HN: Remote-Controlled IKEA Deathstar Lamp",
     "data": "2025-04-27T08:20:19.244Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-integracao-da-internet-das-coisas-na-arquitetura-de-software-o-caso-do-controle-remoto-da-lampada-deathstar-da-ikea.html"
   },
   {
     "titulo": "Desenvolvendo um jogo de aventura de texto em C: conexões com a arquitetura de software moderna",
     "noticiaOriginal": "How to program a text adventure in C",
     "data": "2025-04-27T09:16:59.870Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/desenvolvendo-um-jogo-de-aventura-de-texto-em-c-conexoes-com-a-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "Ética, privacidade e intenção na arquitetura de software: reflexões a partir do projeto de dados sobre autismo nos EUA",
     "noticiaOriginal": "U.S. autism data project sparks uproar over ethics, privacy and intent",
     "data": "2025-04-27T10:18:05.554Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/etica-privacidade-e-intencao-na-arquitetura-de-software-reflexoes-a-partir-do-projeto-de-dados-sobre-autismo-nos-eua.html"
   },
   {
     "titulo": "A Integração da Inteligência Artificial em Companheiros Digitais e sua Relação com a Arquitetura de Software",
     "noticiaOriginal": "Meta's 'Digital Companions' Will Talk Sex with Users–Even Children",
     "data": "2025-04-27T11:13:05.821Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-integracao-da-inteligencia-artificial-em-companheiros-digitais-e-sua-relacao-com-a-arquitetura-de-software.html"
   },
   {
     "titulo": "CSS Zen Garden (2003–)",
     "noticiaOriginal": "CSS Zen Garden (2003–)",
     "data": "2025-04-27T12:31:54.087Z",
-    "categoria": "Front-end"
+    "categoria": "Front-end",
+    "url": "artigos/css-zen-garden-2003.html"
   },
   {
     "titulo": "Shardines: Banco de Dados SQLite3 por Inquilino com ActiveRecord",
     "noticiaOriginal": "Shardines: SQLite3 Database-per-Tenant with ActiveRecord",
     "data": "2025-04-27T13:22:25.367Z",
-    "categoria": "Banco de Dados"
+    "categoria": "Banco de Dados",
+    "url": "artigos/shardines-banco-de-dados-sqlite3-por-inquilino-com-activerecord.html"
   },
   {
     "titulo": "A influência das padrões geométricos japoneses na arquitetura de software moderna",
     "noticiaOriginal": "Mesmerizing Interlocking Geometric Patterns Produced with Japanese Woodworking",
     "data": "2025-04-27T14:14:43.903Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-influencia-das-padroes-geometricos-japoneses-na-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "A complexidade do Reverse Geocoding e sua relevância na arquitetura de software moderna",
     "noticiaOriginal": "Reverse Geocoding Is Hard",
     "data": "2025-04-27T15:17:06.652Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-complexidade-do-reverse-geocoding-e-sua-relevancia-na-arquitetura-de-software-moderna.html"
   },
   {
     "titulo": "We're building a dystopia just to make people click on ads [video]",
     "noticiaOriginal": "We're building a dystopia just to make people click on ads [video]",
     "data": "2025-04-27T16:30:21.263Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/we-re-building-a-dystopia-just-to-make-people-click-on-ads-video.html"
   },
   {
     "titulo": "Show HN: A Common Lisp implementation in development, supports ASDF",
     "noticiaOriginal": "Show HN: A Common Lisp implementation in development, supports ASDF",
     "data": "2025-04-27T16:36:25.764Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/show-hn-a-common-lisp-implementation-in-development-supports-asdf.html"
   },
   {
     "titulo": "How NASA Is Using Graph Technology and LLMs to Build a People Knowledge Graph",
     "noticiaOriginal": "How NASA Is Using Graph Technology and LLMs to Build a People Knowledge Graph",
     "data": "2025-04-27T16:40:32.658Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/how-nasa-is-using-graph-technology-and-llms-to-build-a-people-knowledge-graph.html"
   },
   {
     "titulo": "Explorando o Potencial da Wikipedia: Download de Banco de Dados",
     "noticiaOriginal": "Wikipedia: Database Download",
     "data": "2025-04-27T16:47:26.024Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/explorando-o-potencial-da-wikipedia-download-de-banco-de-dados.html"
   },
   {
     "titulo": "\"O 5G acabou com o IMSI Catcher? Descubra como proteger seus dados em ambientes móveis!\"",
     "noticiaOriginal": "Did 5G Kill the IMSI Catcher?",
     "data": "2025-04-27T16:55:12.276Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/o-5g-acabou-com-o-imsi-catcher-descubra-como-proteger-seus-dados-em-ambientes-moveis.html"
   },
   {
     "titulo": "O Segredo da Criatividade: Aprenda a Ler os Obituários",
     "noticiaOriginal": "The Creativity Hack No One Told You About: Read the Obits",
     "data": "2025-04-27T17:05:06.254Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/o-segredo-da-criatividade-aprenda-a-ler-os-obituarios.html"
   },
   {
     "titulo": "Artigo: Libogc: Descoberta de código roubado do RTEMS e suas implicações na arquitetura de software",
     "noticiaOriginal": "Libogc (Wii homebrew library) discovered to contain code stolen from RTEMS",
     "data": "2025-04-27T17:08:13.856Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/artigo-libogc-descoberta-de-codigo-roubado-do-rtems-e-suas-implicacoes-na-arquitetura-de-software.html"
   },
   {
     "titulo": "Processamento de documentos com LLM: o desafio técnico da Extend",
@@ -376,7 +437,8 @@
     "titulo": "Capturando nós do DOM como imagens em alta velocidade: Introdução ao snapDOM",
     "noticiaOriginal": "Show HN: I created snapDOM to capture DOM nodes as images with exceptional speed",
     "data": "2025-04-27T17:10:02.286Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/capturando-nos-do-dom-como-imagens-em-alta-velocidade-introducao-ao-snapdom.html"
   },
   {
     "titulo": "Controle de velocidade por software: lições da nova lei da Virgínia",
@@ -389,829 +451,967 @@
     "titulo": "Obituários Automatizados",
     "noticiaOriginal": "Read the Obits",
     "data": "2025-04-27T17:20:22.834Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/obituarios-automatizados.html"
   },
   {
     "titulo": "Desenvolvendo sistemas eficientes com a técnica de Paul Morphy",
     "noticiaOriginal": "Watching 03 Model Sweat over a Paul Morphy Mate-in-2",
     "data": "2025-04-27T17:51:15.002Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desenvolvendo-sistemas-eficientes-com-a-tecnica-de-paul-morphy.html"
   },
   {
     "titulo": "Desbloqueando Ractors: Object_id",
     "noticiaOriginal": "Unlocking Ractors: Object_id",
     "data": "2025-04-27T17:55:34.347Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desbloqueando-ractors-object-id.html"
   },
   {
     "titulo": "Assistente de Terminal Inteligente: Potencializando a Produtividade dos Desenvolvedores",
     "noticiaOriginal": "TmuxAI: AI-Powered, Non-Intrusive Terminal Assistant",
     "data": "2025-04-27T18:03:26.753Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/assistente-de-terminal-inteligente-potencializando-a-produtividade-dos-desenvolvedores.html"
   },
   {
     "titulo": "Desafio da Cadeia de Suprimentos de Conhecimento no Trabalho",
     "noticiaOriginal": "The Coming Knowledge-Work Supply-Chain Crisis",
     "data": "2025-04-27T18:21:54.201Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desafio-da-cadeia-de-suprimentos-de-conhecimento-no-trabalho.html"
   },
   {
     "titulo": "Problema de Colapso de Contexto em Calibrações",
     "noticiaOriginal": "Calibrations Have a Context-Collapse Problem",
     "data": "2025-04-27T18:34:21.681Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/problema-de-colapso-de-contexto-em-calibracoes.html"
   },
   {
     "titulo": "Desbloqueando Diariamente: Engenheiro de Palavras no Wordle",
     "noticiaOriginal": "Show HN: Daily Jailbreak – Prompt Engineer's Wordle",
     "data": "2025-04-27T19:13:57.721Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desbloqueando-diariamente-engenheiro-de-palavras-no-wordle.html"
   },
   {
     "titulo": "Walmart planeja rede de carregamento de veículos elétricos que cobrirá os EUA em poucos anos",
     "noticiaOriginal": "Walmart plans EV Charging network which will blanket the US within a few years",
     "data": "2025-04-27T20:18:04.155Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/walmart-planeja-rede-de-carregamento-de-veiculos-eletricos-que-cobrira-os-eua-em-poucos-anos.html"
   },
   {
     "titulo": "Desmistificando o Valor dos Co-fundadores de Startups de Tecnologia",
     "noticiaOriginal": "Business co-founders in tech startups are less valuable than they think",
     "data": "2025-04-27T21:14:56.343Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desmistificando-o-valor-dos-co-fundadores-de-startups-de-tecnologia.html"
   },
   {
     "titulo": "Caixa de Internet: Uma Solução Inovadora para Desenvolvimento de Sistemas",
     "noticiaOriginal": "Internet in a Box",
     "data": "2025-04-27T21:42:27.510Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/caixa-de-internet-uma-solucao-inovadora-para-desenvolvimento-de-sistemas.html"
   },
   {
     "titulo": "Perigo em uma Linha de Código: Como um simples erro pode inutilizar seu iPhone",
     "noticiaOriginal": "How a Single Line Of Code Could Brick Your iPhone",
     "data": "2025-04-27T21:49:45.189Z",
-    "categoria": "Programação"
+    "categoria": "Programação",
+    "url": "artigos/perigo-em-uma-linha-de-codigo-como-um-simples-erro-pode-inutilizar-seu-iphone.html"
   },
   {
     "titulo": "Assistentes de IA na codificação: a importância do pensamento do programador",
     "noticiaOriginal": "AI Coding assistants provide little value because a programmer's job is to think",
     "data": "2025-04-27T22:15:56.878Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/assistentes-de-ia-na-codificacao-a-importancia-do-pensamento-do-programador.html"
   },
   {
     "titulo": "Emulação de Unidade de Ponto Flutuante em Software: Uma Solução Inovadora para NetBSD 10 em Processadores 486SX",
     "noticiaOriginal": "Show HN: I486SX_soft_FPU – Software FPU Emulator for NetBSD 10 on 486SX",
     "data": "2025-04-27T23:17:47.529Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/emulacao-de-unidade-de-ponto-flutuante-em-software-uma-solucao-inovadora-para-netbsd-10-em-processadores-486sx.html"
   },
   {
     "titulo": "Reforço de cobre: a revolução da resistência em materiais",
     "noticiaOriginal": "New material gives copper superalloy-like strength",
     "data": "2025-04-28T01:25:14.679Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/reforco-de-cobre-a-revolucao-da-resistencia-em-materiais.html"
   },
   {
     "titulo": "WebStudio: Uma alternativa gratuita baseada na web para Screen Studio",
     "noticiaOriginal": "Show HN: I made a web-based, free alternative to Screen Studio",
     "data": "2025-04-28T03:08:48.792Z",
-    "categoria": "Educação"
+    "categoria": "Educação",
+    "url": "artigos/webstudio-uma-alternativa-gratuita-baseada-na-web-para-screen-studio.html"
   },
   {
     "titulo": "Cuidando do Medo da Morte: A Importância da Abordagem Holística na Saúde",
     "noticiaOriginal": "The hospital where staff treat fear of death as well as physical pain",
     "data": "2025-04-28T04:21:26.848Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/cuidando-do-medo-da-morte-a-importancia-da-abordagem-holistica-na-saude.html"
   },
   {
     "titulo": "Desvendando a Causa do Alzheimer e Identificando um Candidato Terapêutico com Inteligência Artificial",
     "noticiaOriginal": "AI helps unravel a cause of Alzheimer’s and identify a therapeutic candidate",
     "data": "2025-04-28T05:24:18.641Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desvendando-a-causa-do-alzheimer-e-identificando-um-candidato-terapeutico-com-inteligencia-artificial.html"
   },
   {
     "titulo": "Subversão Digital: Táticas da Stasi na Era Moderna (2021)",
     "noticiaOriginal": "East German Stasi Tactics – Zersetzung (2021)",
     "data": "2025-04-28T06:32:40.682Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/subversao-digital-taticas-da-stasi-na-era-moderna-2021.html"
   },
   {
     "titulo": "Otimização Consciente de Inferência para Melhor Seleção de Amostragem em Grandes Modelos de Linguagem",
     "noticiaOriginal": "Inference-Aware Fine-Tuning for Best-of-N Sampling in Large Language Models",
     "data": "2025-04-28T07:42:26.240Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/otimizacao-consciente-de-inferencia-para-melhor-selecao-de-amostragem-em-grandes-modelos-de-linguagem.html"
   },
   {
     "titulo": "Desenvolvendo com Paixão: O Futuro da Codificação (2023)",
     "noticiaOriginal": "I just want to code (2023)",
     "data": "2025-04-28T09:03:11.508Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desenvolvendo-com-paixao-o-futuro-da-codificacao-2023.html"
   },
   {
     "titulo": "Desenvolvendo Projetos: Compartilhe suas Ideias! (Abril 2025)",
     "noticiaOriginal": "Ask HN: What are you working on? (April 2025)",
     "data": "2025-04-28T11:04:32.709Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desenvolvendo-projetos-compartilhe-suas-ideias-abril-2025.html"
   },
   {
     "titulo": "Desvendando a Estratégia dos Jogos Antigos: Como os jogos de DOS se protegiam através da impossibilidade de vencer",
     "noticiaOriginal": "Deep dive into how DOS games do copy protection by making themselves unwinnable",
     "data": "2025-04-28T12:37:57.486Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desvendando-a-estrategia-dos-jogos-antigos-como-os-jogos-de-dos-se-protegiam-atraves-da-impossibilidade-de-vencer.html"
   },
   {
     "titulo": "Processador de Hardware otimizado para Python: Uma revolução na arquitetura de sistemas",
     "noticiaOriginal": "I built a hardware processor that runs Python",
     "data": "2025-04-28T13:38:28.790Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/processador-de-hardware-otimizado-para-python-uma-revolucao-na-arquitetura-de-sistemas.html"
   },
   {
     "titulo": "Apagão total de energia elétrica na Espanha e Portugal",
     "noticiaOriginal": "Full power outage in Spain and Portugal",
     "data": "2025-04-28T14:20:06.221Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/apagao-total-de-energia-eletrica-na-espanha-e-portugal.html"
   },
   {
     "titulo": "Python em Hardware: Desenvolvendo um Processador Customizado",
     "noticiaOriginal": "Show HN: I built a hardware processor that runs Python",
     "data": "2025-04-28T15:19:33.504Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/python-em-hardware-desenvolvendo-um-processador-customizado.html"
   },
   {
     "titulo": "Apagão elétrico na Península Ibérica: Impactos e Soluções",
     "noticiaOriginal": "Reports of widespread power cuts in Spain and Portugal",
     "data": "2025-04-28T16:21:17.445Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/apagao-eletrico-na-peninsula-iberica-impactos-e-solucoes.html"
   },
   {
     "titulo": "Web-eval-agent: O Agente de Debugging que se Autoanálisa",
     "noticiaOriginal": "Show HN: Web-eval-agent – Let the coding agent debug itself",
     "data": "2025-04-28T17:15:26.944Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/web-eval-agent-o-agente-de-debugging-que-se-autoanalisa.html"
   },
   {
     "titulo": "Explorando os Desafios do Meu Primeiro Startup",
     "noticiaOriginal": "How I Got Exploited at My First Startup",
     "data": "2025-04-28T18:25:45.624Z",
-    "categoria": "Empreendedorismo"
+    "categoria": "Empreendedorismo",
+    "url": "artigos/explorando-os-desafios-do-meu-primeiro-startup.html"
   },
   {
     "titulo": "Revolução da Ferrovia de Alta Velocidade na Califórnia",
     "noticiaOriginal": "Reports of the death of California High-Speed Rail have been greatly exaggerated",
     "data": "2025-04-28T19:14:22.028Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/revolucao-da-ferrovia-de-alta-velocidade-na-california.html"
   },
   {
     "titulo": "Reimaginando a Transição do Rust",
     "noticiaOriginal": "Migrating Away from Rust",
     "data": "2025-04-28T20:19:36.470Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/reimaginando-a-transicao-do-rust.html"
   },
   {
     "titulo": "Apagão em larga escala na Península Ibérica: impactos e soluções para a arquitetura de sistemas",
     "noticiaOriginal": "Widespread power outage in Spain and Portugal",
     "data": "2025-04-28T21:15:37.188Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/apagao-em-larga-escala-na-peninsula-iberica-impactos-e-solucoes-para-a-arquitetura-de-sistemas.html"
   },
   {
     "titulo": "Desperte sua Criatividade: Profundidade de Pensamento e Agilidade de Ação",
     "noticiaOriginal": "Qwen3: Think deeper, act faster",
     "data": "2025-04-28T22:17:14.422Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desperte-sua-criatividade-profundidade-de-pensamento-e-agilidade-de-acao.html"
   },
   {
     "titulo": "Clojure na Web com GraalVM: Desenvolvendo aplicações web de alto desempenho",
     "noticiaOriginal": "Running Clojure in WASM with GraalVM",
     "data": "2025-04-28T23:16:36.357Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/clojure-na-web-com-graalvm-desenvolvendo-aplicacoes-web-de-alto-desempenho.html"
   },
   {
     "titulo": "Arco-Íris em 12 bits: A Revolução das Cores na Programação",
     "noticiaOriginal": "The 12-bit rainbow palette",
     "data": "2025-04-29T01:23:20.373Z",
-    "categoria": "Programação"
+    "categoria": "Programação",
+    "url": "artigos/arco-iris-em-12-bits-a-revolucao-das-cores-na-programacao.html"
   },
   {
     "titulo": "Tabuleiros de Xadrez em Escala Global: Um Milhão de Possibilidades",
     "noticiaOriginal": "One Million Chessboards",
     "data": "2025-04-29T03:04:48.092Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/tabuleiros-de-xadrez-em-escala-global-um-milhao-de-possibilidades.html"
   },
   {
     "titulo": "Windows 7: Por que o logon ficava mais lento por meses com um plano de fundo de cor sólida?",
     "noticiaOriginal": "Why did Windows 7 log on slower for months if you had a solid color background?",
     "data": "2025-04-29T04:20:18.095Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/windows-7-por-que-o-logon-ficava-mais-lento-por-meses-com-um-plano-de-fundo-de-cor-solida.html"
   },
   {
     "titulo": "Framework Individual na Prática",
     "noticiaOriginal": "The One-Person Framework in Practice",
     "data": "2025-04-29T05:17:56.683Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/framework-individual-na-pratica.html"
   },
   {
     "titulo": "Custo de desenvolvimento: o impacto de uma única linha de código",
     "noticiaOriginal": "A single line of code cost $8000",
     "data": "2025-04-29T06:26:24.449Z",
-    "categoria": "Programação"
+    "categoria": "Programação",
+    "url": "artigos/custo-de-desenvolvimento-o-impacto-de-uma-unica-linha-de-codigo.html"
   },
   {
     "titulo": "LibreLingo: A Nova Era do Aprendizado de Idiomas",
     "noticiaOriginal": "LibreLingo – FOSS Alternative to Duolingo",
     "data": "2025-04-29T07:18:33.563Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/librelingo-a-nova-era-do-aprendizado-de-idiomas.html"
   },
   {
     "titulo": "Desenvolvimento de Software: Repositório do Homebrew Channel Arquivado",
     "noticiaOriginal": "The Homebrew Channel repository is archived (Apr 28, 2025)",
     "data": "2025-04-29T08:25:20.231Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desenvolvimento-de-software-repositorio-do-homebrew-channel-arquivado.html"
   },
   {
     "titulo": "Mensagem para os Pesquisadores de Segurança",
     "noticiaOriginal": "Dear \"Security Researchers\"",
     "data": "2025-04-29T09:19:38.281Z",
-    "categoria": "Segurança"
+    "categoria": "Segurança",
+    "url": "artigos/mensagem-para-os-pesquisadores-de-seguranca.html"
   },
   {
     "titulo": "Flowcode: A revolução da programação visual Turing-completa",
     "noticiaOriginal": "Show HN: Flowcode – Turing-complete visual programming platform",
     "data": "2025-04-29T10:19:59.515Z",
-    "categoria": "Programação"
+    "categoria": "Programação",
+    "url": "artigos/flowcode-a-revolucao-da-programacao-visual-turing-completa.html"
   },
   {
     "titulo": "IA Generativa: O Papel da Economia na Substituição de Empregos e Impacto nos Salários",
     "noticiaOriginal": "Generative AI is not replacing jobs or hurting wages at all, say economists",
     "data": "2025-04-29T11:15:07.090Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/ia-generativa-o-papel-da-economia-na-substituicao-de-empregos-e-impacto-nos-salarios.html"
   },
   {
     "titulo": "Auto-negar cookies não essenciais: a revolução da privacidade no Chrome",
     "noticiaOriginal": "Show HN: A Chrome extension that will auto-reject non-essential cookies",
     "data": "2025-04-29T12:38:06.187Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/auto-negar-cookies-nao-essenciais-a-revolucao-da-privacidade-no-chrome.html"
   },
   {
     "titulo": "Painel solar revolucionário: Japão apresenta nova tecnologia inovadora",
     "noticiaOriginal": "Japan unveils first solar super-panel",
     "data": "2025-04-29T13:31:53.126Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/painel-solar-revolucionario-japao-apresenta-nova-tecnologia-inovadora.html"
   },
   {
     "titulo": "Memex: Uma Alternativa Inovadora para Desenvolvimento de Software em Rust+Tauri",
     "noticiaOriginal": "Show HN: Memex is a Claude Code alternative built on Rust+Tauri for vibe coding",
     "data": "2025-04-29T14:18:07.214Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/memex-uma-alternativa-inovadora-para-desenvolvimento-de-software-em-rust-tauri.html"
   },
   {
     "titulo": "ArkFlow: A revolução da engenharia de processamento de stream em Rust",
     "noticiaOriginal": "ArkFlow: High-performance Rust stream processing engine",
     "data": "2025-04-29T15:19:19.401Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/arkflow-a-revolucao-da-engenharia-de-processamento-de-stream-em-rust.html"
   },
   {
     "titulo": "Desafios da otimização de desempenho em desenvolvimento de software",
     "noticiaOriginal": "Why performance optimization is hard work",
     "data": "2025-04-29T16:22:02.891Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desafios-da-otimizacao-de-desempenho-em-desenvolvimento-de-software.html"
   },
   {
     "titulo": "Desafio: O3 Supera um Jogador de GeoGuessr de Nível Mestre - Mesmo com Dados EXIF Falsos",
     "noticiaOriginal": "O3 Beats a Master-Level GeoGuessr Player–Even with Fake EXIF Data",
     "data": "2025-04-29T17:16:18.242Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desafio-o3-supera-um-jogador-de-geoguessr-de-nivel-mestre-mesmo-com-dados-exif-falsos.html"
   },
   {
     "titulo": "Desenvolvendo Inteligências Artificiais mais assertivas através de autoconfrontação",
     "noticiaOriginal": "I made my AI think harder by making it argue with itself. It works stupidly well",
     "data": "2025-04-29T18:24:10.682Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desenvolvendo-inteligencias-artificiais-mais-assertivas-atraves-de-autoconfrontacao.html"
   },
   {
     "titulo": "Bamba: Uma nova abordagem de arquitetura de software inspirada em transformers e SSMs",
     "noticiaOriginal": "Bamba: An open-source LLM that crosses a transformer with an SSM",
     "data": "2025-04-29T19:14:25.615Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/bamba-uma-nova-abordagem-de-arquitetura-de-software-inspirada-em-transformers-e-ssms.html"
   },
   {
     "titulo": "Desafiando a Inteligência Artificial: Como fazer seu sistema argumentar consigo mesmo",
     "noticiaOriginal": "I made my AI think harder by making it argue with itself",
     "data": "2025-04-29T20:19:39.689Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desafiando-a-inteligencia-artificial-como-fazer-seu-sistema-argumentar-consigo-mesmo.html"
   },
   {
     "titulo": "Desafio da Mente Artificial: Potencializando a Inteligência através do Debate Interno",
     "noticiaOriginal": "Chain of Recursive Thoughts: Make AI think harder by making it argue with itself",
     "data": "2025-04-29T21:16:37.720Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desafio-da-mente-artificial-potencializando-a-inteligencia-atraves-do-debate-interno.html"
   },
   {
     "titulo": "Amazon RDS para PostgreSQL: Novidades da Versão 17.4",
     "noticiaOriginal": "Amazon RDS for PostgreSQL 17.4",
     "data": "2025-04-29T22:05:14.824Z",
-    "categoria": "Banco de Dados"
+    "categoria": "Banco de Dados",
+    "url": "artigos/amazon-rds-para-postgresql-novidades-da-versao-17-4.html"
   },
   {
     "titulo": "Desbravando as Novidades da LlamaCon",
     "noticiaOriginal": "Everything we announced at our first LlamaCon",
     "data": "2025-04-29T22:14:55.862Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desbravando-as-novidades-da-llamacon.html"
   },
   {
     "titulo": "Regras de Conteúdo Doméstico: A Exclusão de Tarifas para Teslas e sua Relevância para o Desenvolvimento de Sistemas",
     "noticiaOriginal": "Only Teslas Exempt from New Auto Tariffs Thanks to 85% Domestic Content Rule",
     "data": "2025-04-29T22:16:41.252Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/regras-de-conteudo-domestico-a-exclusao-de-tarifas-para-teslas-e-sua-relevancia-para-o-desenvolvimento-de-sistemas.html"
   },
   {
     "titulo": "Atualização do Amazon RDS PostgreSQL: Novidades e benefícios para desenvolvedores",
     "noticiaOriginal": "Jepsen: Amazon RDS for PostgreSQL 17.4",
     "data": "2025-04-29T23:04:03.625Z",
-    "categoria": "Banco de Dados"
+    "categoria": "Banco de Dados",
+    "url": "artigos/atualizacao-do-amazon-rds-postgresql-novidades-e-beneficios-para-desenvolvedores.html"
   },
   {
     "titulo": "Guardando o servidor: a eficácia das bombas zip na proteção de dados sensíveis",
     "noticiaOriginal": "I use zip bombs to protect my server",
     "data": "2025-04-29T23:10:07.937Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/guardando-o-servidor-a-eficacia-das-bombas-zip-na-protecao-de-dados-sensiveis.html"
   },
   {
     "titulo": "Parceria entre Waymo e Toyota para trazer direção autônoma para veículos pessoais",
     "noticiaOriginal": "Waymo partners with Toyota to bring autonomous driving to personal vehicles",
     "data": "2025-04-29T23:16:16.183Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/parceria-entre-waymo-e-toyota-para-trazer-direcao-autonoma-para-veiculos-pessoais.html"
   },
   {
     "titulo": "Desenvolvimento de Sistemas: O Crescimento dos Testes Clínicos na China",
     "noticiaOriginal": "China's Clinical Trial Boom",
     "data": "2025-04-29T23:21:44.911Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desenvolvimento-de-sistemas-o-crescimento-dos-testes-clinicos-na-china.html"
   },
   {
     "titulo": "Hackeando um Kindle antigo: Aventuras na Escola dos Nerds",
     "noticiaOriginal": "It's School time: Adventures in hacking an old Kindle",
     "data": "2025-04-29T23:51:10.255Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/hackeando-um-kindle-antigo-aventuras-na-escola-dos-nerds.html"
   },
   {
     "titulo": "Linux: Por que o caminho nem sempre é real?",
     "noticiaOriginal": "Path Isn't Real on Linux",
     "data": "2025-04-30T00:07:23.588Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/linux-por-que-o-caminho-nem-sempre-e-real.html"
   },
   {
     "titulo": "\"O Renascimento dos Mortos: Como a Tecnologia está Transformando o Conceito de 'Zumbi'\"",
     "noticiaOriginal": "Not a Zombie",
     "data": "2025-04-30T01:23:36.131Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/o-renascimento-dos-mortos-como-a-tecnologia-esta-transformando-o-conceito-de-zumbi.html"
   },
   {
     "titulo": "Desvendando o Mundo da Derivação Automática Esparsa",
     "noticiaOriginal": "An illustrated guide to automatic sparse differentiation",
     "data": "2025-04-30T01:57:48.386Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desvendando-o-mundo-da-derivacao-automatica-esparsa.html"
   },
   {
     "titulo": "ChatGPT: A revolução na busca de informações online",
     "noticiaOriginal": "I've largely replaced Google with ChatGPT for looking things up",
     "data": "2025-04-30T02:06:00.137Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/chatgpt-a-revolucao-na-busca-de-informacoes-online.html"
   },
   {
     "titulo": "Performance em sistemas: desafios e estratégias para otimização",
     "noticiaOriginal": "Performance optimization is hard because it's fundamentally a brute-force task",
     "data": "2025-04-30T03:04:42.415Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/performance-em-sistemas-desafios-e-estrategias-para-otimizacao.html"
   },
   {
     "titulo": "O Poder Oculto da Sycophancy no Universo do GPT-4o",
     "noticiaOriginal": "Sycophancy in GPT-4o",
     "data": "2025-04-30T04:21:01.848Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/o-poder-oculto-da-sycophancy-no-universo-do-gpt-4o.html"
   },
   {
     "titulo": "Defendendo uma Empresa de Segurança Cibernética: Desafios e Estratégias na Prática",
     "noticiaOriginal": "What It Takes to Defend a Cybersecurity Company from Today's Adversaries",
     "data": "2025-04-30T05:17:39.185Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/defendendo-uma-empresa-de-seguranca-cibernetica-desafios-e-estrategias-na-pratica.html"
   },
   {
     "titulo": "Hackeando a Hacker News: Desvendando os Segredos dos Sistemas Modernos",
     "noticiaOriginal": "You Wouldn't Download a Hacker News",
     "data": "2025-04-30T06:26:09.469Z",
-    "categoria": "Segurança"
+    "categoria": "Segurança",
+    "url": "artigos/hackeando-a-hacker-news-desvendando-os-segredos-dos-sistemas-modernos.html"
   },
   {
     "titulo": "Linux e Excel: A combinação que vai revolucionar sua produtividade",
     "noticiaOriginal": "Linux in Excel",
     "data": "2025-04-30T07:17:13.686Z",
-    "categoria": "Produtividade"
+    "categoria": "Produtividade",
+    "url": "artigos/linux-e-excel-a-combinacao-que-vai-revolucionar-sua-produtividade.html"
   },
   {
     "titulo": "\"O dilema das gêmeas do meu fermento natural\"",
     "noticiaOriginal": "My sourdough starter has twins",
     "data": "2025-04-30T08:24:01.094Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/o-dilema-das-gemeas-do-meu-fermento-natural.html"
   },
   {
     "titulo": "Explorando a Aleatoriedade nos LLMs: Desvendando um Mistério Técnico",
     "noticiaOriginal": "Can LLMs do randomness?",
     "data": "2025-04-30T09:19:05.468Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/explorando-a-aleatoriedade-nos-llms-desvendando-um-misterio-tecnico.html"
   },
   {
     "titulo": "A Revolução da Inteligência Artificial: Os Principais Eventos no Campo",
     "noticiaOriginal": "AI TIMLINE – All prominent events in the field",
     "data": "2025-04-30T10:18:54.587Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/a-revolucao-da-inteligencia-artificial-os-principais-eventos-no-campo.html"
   },
   {
     "titulo": "Desvendando o Modelo de Raciocínio de IA de Código Aberto da Xiaomi",
     "noticiaOriginal": "Xiaomi unveils open-source AI reasoning model MiMo",
     "data": "2025-04-30T11:14:43.818Z",
-    "categoria": "Programação"
+    "categoria": "Programação",
+    "url": "artigos/desvendando-o-modelo-de-raciocinio-de-ia-de-codigo-aberto-da-xiaomi.html"
   },
   {
     "titulo": "Desvendando os Segredos do Xiaomi MiMo Reasoning Model",
     "noticiaOriginal": "Xiaomi MiMo Reasoning Model",
     "data": "2025-04-30T12:35:28.416Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desvendando-os-segredos-do-xiaomi-mimo-reasoning-model.html"
   },
   {
     "titulo": "Desaceleração Econômica nos EUA: Oportunidades e Desafios para Desenvolvedores",
     "noticiaOriginal": "U.S. Economy Contracts at 0.3% Rate in First Quarter",
     "data": "2025-04-30T13:27:31.097Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desaceleracao-economica-nos-eua-oportunidades-e-desafios-para-desenvolvedores.html"
   },
   {
     "titulo": "Desafios da Logística: Como a redução de 35% no volume de transporte afeta o Port of Los Angeles",
     "noticiaOriginal": "Port of Los Angeles says shipping volume will plummet 35% next week",
     "data": "2025-04-30T14:17:28.262Z",
-    "categoria": "Logística"
+    "categoria": "Logística",
+    "url": "artigos/desafios-da-logistica-como-a-reducao-de-35-no-volume-de-transporte-afeta-o-port-of-los-angeles.html"
   },
   {
     "titulo": "Sun Microsystems: 40 anos de inovação e legado na tecnologia",
     "noticiaOriginal": "Joining Sun Microsystems – 40 years ago (2022)",
     "data": "2025-04-30T15:19:01.019Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/sun-microsystems-40-anos-de-inovacao-e-legado-na-tecnologia.html"
   },
   {
     "titulo": "YouTube à vista: A Necessidade de Óculos de Alguém!",
     "noticiaOriginal": "Someone at YouTube Needs Glasses",
     "data": "2025-04-30T16:15:47.768Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/youtube-a-vista-a-necessidade-de-oculos-de-alguem.html"
   },
   {
     "titulo": "Wikipedia e Inteligência Artificial: Uma Parceria de Sucesso",
     "noticiaOriginal": "Wikipedia says it will use AI, but not to replace human volunteers",
     "data": "2025-04-30T16:22:21.339Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/wikipedia-e-inteligencia-artificial-uma-parceria-de-sucesso.html"
   },
   {
     "titulo": "Como eu criei o Wiki Perfeito e alcancei $250 mil em receita anual sem investidores",
     "noticiaOriginal": "I created Perfect Wiki and reached $250k in annual revenue without investors",
     "data": "2025-04-30T16:23:40.517Z",
-    "categoria": "Empreendedorismo"
+    "categoria": "Empreendedorismo",
+    "url": "artigos/como-eu-criei-o-wiki-perfeito-e-alcancei-250-mil-em-receita-anual-sem-investidores.html"
   },
   {
     "titulo": "O Poder Oculto de DeepSeek-Prover-V2 nos Sistemas Modernos",
     "noticiaOriginal": "DeepSeek-Prover-V2",
     "data": "2025-04-30T17:15:37.339Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/o-poder-oculto-de-deepseek-prover-v2-nos-sistemas-modernos.html"
   },
   {
     "titulo": "NotebookLM: A Revolução da Áudio Descrição em mais de 50 idiomas",
     "noticiaOriginal": "NotebookLM Audio Overviews are now available in over 50 languages",
     "data": "2025-04-30T18:25:06.659Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/notebooklm-a-revolucao-da-audio-descricao-em-mais-de-50-idiomas.html"
   },
   {
     "titulo": "Revolução na Computação: Desvendando os Segredos dos Links e Pivôs Mecânicos",
     "noticiaOriginal": "Reversible computing with mechanical links and pivots",
     "data": "2025-04-30T19:14:21.267Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/revolucao-na-computacao-desvendando-os-segredos-dos-links-e-pivos-mecanicos.html"
   },
   {
     "titulo": "Criando seu próprio modelo de IA refinado com Google Sheets: revolucione seus sistemas modernos",
     "noticiaOriginal": "Show HN: Create your own finetuned AI model using Google Sheets",
     "data": "2025-04-30T20:19:19.482Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/criando-seu-proprio-modelo-de-ia-refinado-com-google-sheets-revolucione-seus-sistemas-modernos.html"
   },
   {
     "titulo": "Explorando as entranhas do Linux: Uma análise profunda da CVE-2025-21756",
     "noticiaOriginal": "Linux Kernel Exploitation: CVE-2025-21756",
     "data": "2025-04-30T21:16:28.393Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/explorando-as-entranhas-do-linux-uma-analise-profunda-da-cve-2025-21756.html"
   },
   {
     "titulo": "Ataque Vsock: Desvendando os Segredos do Linux Kernel",
     "noticiaOriginal": "Linux Kernel Exploitation: Attack of the Vsock",
     "data": "2025-04-30T22:16:42.939Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/ataque-vsock-desvendando-os-segredos-do-linux-kernel.html"
   },
   {
     "titulo": "Mercury: A Revolução dos Modelos de Linguagem Escaláveis",
     "noticiaOriginal": "Mercury, the first commercial-scale diffusion language model",
     "data": "2025-04-30T23:16:44.799Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/mercury-a-revolucao-dos-modelos-de-linguagem-escalaveis.html"
   },
   {
     "titulo": "Apple Condenada por Violação Antitruste: O Impacto nos Desenvolvedores e Consumidores",
     "noticiaOriginal": "Apple Violated Antitrust Ruling, Judge Finds",
     "data": "2025-05-01T01:39:00.015Z",
-    "categoria": "Tecnologia"
+    "categoria": "Tecnologia",
+    "url": "artigos/apple-condenada-por-violacao-antitruste-o-impacto-nos-desenvolvedores-e-consumidores.html"
   },
   {
     "titulo": "Explorando as Vulnerabilidades do Navegador Ladybird",
     "noticiaOriginal": "Pwning the Ladybird Browser",
     "data": "2025-05-01T03:15:12.660Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/explorando-as-vulnerabilidades-do-navegador-ladybird.html"
   },
   {
     "titulo": "Milwaukee: O Grande Dilema da Troca de Dados Biométricos",
     "noticiaOriginal": "Milwaukee police trade: 2.5M mugshots for free facial recognition access",
     "data": "2025-05-01T04:23:08.918Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/milwaukee-o-grande-dilema-da-troca-de-dados-biometricos.html"
   },
   {
     "titulo": "Mercury: Desvendando o futuro da linguagem de modelagem em escala comercial",
     "noticiaOriginal": "Mercury: Commercial-scale diffusion language model",
     "data": "2025-05-01T05:18:16.139Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/mercury-desvendando-o-futuro-da-linguagem-de-modelagem-em-escala-comercial.html"
   },
   {
     "titulo": "A Revolução dos 108 Bilhões de Pixels: Desvendando os Segredos de Johannes Vermeer",
     "noticiaOriginal": "108B Pixel Scan of Johannes Vermeer's Girl with a Pearl Earring",
     "data": "2025-05-01T05:27:37.733Z",
-    "categoria": "Fintech"
+    "categoria": "Fintech",
+    "url": "artigos/a-revolucao-dos-108-bilhoes-de-pixels-desvendando-os-segredos-de-johannes-vermeer.html"
   },
   {
     "titulo": "Web Browsers: A Crise Financeira por Trás dos Favoritos dos Internautas",
     "noticiaOriginal": "All four major web browsers are about to lose 80% of their funding",
     "data": "2025-05-01T06:26:36.746Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/web-browsers-a-crise-financeira-por-tras-dos-favoritos-dos-internautas.html"
   },
   {
     "titulo": "\"ESP32-C5 da Espressif: A revolução silenciosa que está por vir\"",
     "noticiaOriginal": "Espressif's ESP32-C5 Is Now in Mass Production",
     "data": "2025-05-01T07:18:10.454Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/esp32-c5-da-espressif-a-revolucao-silenciosa-que-esta-por-vir.html"
   },
   {
     "titulo": "Dropbox e o suporte ao App Indicator no Linux: Rumo à integração perfeita",
     "noticiaOriginal": "Dropbox will require App Indicator support on Linux",
     "data": "2025-05-01T08:23:33.643Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/dropbox-e-o-suporte-ao-app-indicator-no-linux-rumo-a-integracao-perfeita.html"
   },
   {
     "titulo": "Desafio: Como a Microsoft está transformando o Office para carregar mais rápido no Windows startup",
     "noticiaOriginal": "Office is too slow, so Microsoft is making it load at Windows startup",
     "data": "2025-05-01T09:19:02.617Z",
-    "categoria": "Back-end"
+    "categoria": "Back-end",
+    "url": "artigos/desafio-como-a-microsoft-esta-transformando-o-office-para-carregar-mais-rapido-no-windows-startup.html"
   },
   {
     "titulo": "Hackeando a Comunicação: Como o Secretário de Defesa dos EUA dribla equipamentos oficiais do DoD",
     "noticiaOriginal": "How the US defense secretary circumvents official DoD communications equipment",
     "data": "2025-05-01T10:19:26.560Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/hackeando-a-comunicacao-como-o-secretario-de-defesa-dos-eua-dribla-equipamentos-oficiais-do-dod.html"
   },
   {
     "titulo": "Independência Tecnológica na Europa: Despertando o Gigante Adormecido da Inovação",
     "noticiaOriginal": "Microsoft gets twitchy over talk of Europe's tech independence",
     "data": "2025-05-01T11:14:44.864Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/independencia-tecnologica-na-europa-despertando-o-gigante-adormecido-da-inovacao.html"
   },
   {
     "titulo": "A Revolução da Copia de Bancos de Dados SQLite",
     "noticiaOriginal": "A faster way to copy SQLite databases between computers",
     "data": "2025-05-01T12:35:03.871Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/a-revolucao-da-copia-de-bancos-de-dados-sqlite.html"
   },
   {
     "titulo": "O Dia do Trabalho: Uma Breve História e suas Lições para a Tecnologia Moderna",
     "noticiaOriginal": "The Brief Origins of May Day",
     "data": "2025-05-01T13:26:04.091Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/o-dia-do-trabalho-uma-breve-historia-e-suas-licoes-para-a-tecnologia-moderna.html"
   },
   {
     "titulo": "Desvendando os Segredos do Qwen3: Como Rodar Gratuitamente no seu Mac com MLX",
     "noticiaOriginal": "How to vibe code for free: Running Qwen3 on your Mac, using MLX",
     "data": "2025-05-01T14:16:20.470Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desvendando-os-segredos-do-qwen3-como-rodar-gratuitamente-no-seu-mac-com-mlx.html"
   },
   {
     "titulo": "Luz sobre a carta do CEO da Vanguard no 50º aniversário: reflexões para arquitetos de software",
     "noticiaOriginal": "Vanguard 50-year anniversary CEO letter",
     "data": "2025-05-01T15:18:10.038Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/luz-sobre-a-carta-do-ceo-da-vanguard-no-50-aniversario-reflexoes-para-arquitetos-de-software.html"
   },
   {
     "titulo": "Redis está de volta ao mundo open source: o que isso significa para os desenvolvedores?",
     "noticiaOriginal": "Redis is open source again",
     "data": "2025-05-01T16:22:22.743Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/redis-esta-de-volta-ao-mundo-open-source-o-que-isso-significa-para-os-desenvolvedores.html"
   },
   {
     "titulo": "Hacker da Coreia do Norte tenta conseguir emprego na Kraken: O que isso nos ensina sobre segurança cibernética?",
     "noticiaOriginal": "We identified a North Korean hacker who tried to get a job at Kraken",
     "data": "2025-05-01T17:15:57.731Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/hacker-da-coreia-do-norte-tenta-conseguir-emprego-na-kraken-o-que-isso-nos-ensina-sobre-seguranca-cibernetica.html"
   },
   {
     "titulo": "A Gangue enfrenta a Crise da Meia-Idade: Uma Reflexão Técnica",
     "noticiaOriginal": "The Gang Has a Mid-Life Crisis",
     "data": "2025-05-01T18:24:51.812Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/a-gangue-enfrenta-a-crise-da-meia-idade-uma-reflexao-tecnica.html"
   },
   {
     "titulo": "A armadilha técnica por trás das integrações com Claude",
     "noticiaOriginal": "Claude Integrations",
     "data": "2025-05-01T19:14:03.791Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/a-armadilha-tecnica-por-tras-das-integracoes-com-claude.html"
   },
   {
     "titulo": "Desvendando o modelo de compensação da Oxide: e aí, como está?",
     "noticiaOriginal": "Oxide's compensation model: how's it going?",
     "data": "2025-05-01T20:18:05.775Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desvendando-o-modelo-de-compensacao-da-oxide-e-ai-como-esta.html"
   },
   {
     "titulo": "Kubetail: A revolução dos logs em tempo real no Kubernetes",
     "noticiaOriginal": "Show HN: Kubetail – Real-time log search for Kubernetes",
     "data": "2025-05-01T21:16:58.200Z",
-    "categoria": "DevOps"
+    "categoria": "DevOps",
+    "url": "artigos/kubetail-a-revolucao-dos-logs-em-tempo-real-no-kubernetes.html"
   },
   {
     "titulo": "O futuro do recrutamento: Quem está contratando? (Maio 2025)",
     "noticiaOriginal": "Ask HN: Who is hiring? (May 2025)",
     "data": "2025-05-01T22:16:52.361Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/o-futuro-do-recrutamento-quem-esta-contratando-maio-2025.html"
   },
   {
     "titulo": "Anubis: O Guardião Inesperado contra Ataques DDoS",
     "noticiaOriginal": "The Day Anubis Saved Our Websites from a DDoS Attack",
     "data": "2025-05-01T23:16:52.965Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/anubis-o-guardiao-inesperado-contra-ataques-ddos.html"
   },
   {
     "titulo": "Rumo às Estrelas: Como as LLMs estão Transformando o Design de Foguetes de Alta Potência",
     "noticiaOriginal": "LLMs for Engineering: Teaching Models to Design High Powered Rockets",
     "data": "2025-05-02T01:23:50.871Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/rumo-as-estrelas-como-as-llms-estao-transformando-o-design-de-foguetes-de-alta-potencia.html"
   },
   {
     "titulo": "Cookies de Terceiros: A Hora de Dizer Adeus",
     "noticiaOriginal": "Third Party Cookies Must Be Removed",
     "data": "2025-05-02T03:06:32.177Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/cookies-de-terceiros-a-hora-de-dizer-adeus.html"
   },
   {
     "titulo": "Quebec na contramão da tecnologia: Lion Electric fora dos planos de investimento",
     "noticiaOriginal": "Quebec refuses to reinvest in Lion Electric (busses); US factory auction",
     "data": "2025-05-02T04:20:26.081Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/quebec-na-contramao-da-tecnologia-lion-electric-fora-dos-planos-de-investimento.html"
   },
   {
     "titulo": "Chrome Origin Trial: Como o uso de credenciais de sessão vinculadas a dispositivos pode revolucionar a segurança nos sistemas modernos",
     "noticiaOriginal": "Chrome Origin Trial: Device Bound Session Credentials",
     "data": "2025-05-02T05:17:49.736Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/chrome-origin-trial-como-o-uso-de-credenciais-de-sessao-vinculadas-a-dispositivos-pode-revolucionar-a-seguranca-nos-sistemas-modernos.html"
   },
   {
     "titulo": "Protegendo nossos websites: como Anúbis nos salvou de um ataque DDoS",
     "noticiaOriginal": "Anubis saved our websites from a DDoS attack",
     "data": "2025-05-02T06:25:44.258Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html"
   },
   {
     "titulo": "Liverpool: A Vitória do Título e a Sequência Misteriosa de Fibonacci",
     "noticiaOriginal": "Liverpool's title win has completed a mysterious Fibonacci sequence",
     "data": "2025-05-02T07:17:38.073Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/liverpool-a-vitoria-do-titulo-e-a-sequencia-misteriosa-de-fibonacci.html"
   },
   {
     "titulo": "RustAssistant: Desvendando os Segredos da Correção de Erros de Compilação em Rust",
     "noticiaOriginal": "RustAssistant: Using LLMs to Fix Compilation Errors in Rust Code",
     "data": "2025-05-02T08:23:16.125Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/rustassistant-desvendando-os-segredos-da-correcao-de-erros-de-compilacao-em-rust.html"
   },
   {
     "titulo": "Explorando o Poder dos Filtros de Bloom: Além do Óbvio",
     "noticiaOriginal": "Bloom Filters",
     "data": "2025-05-02T09:18:39.442Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/explorando-o-poder-dos-filtros-de-bloom-alem-do-obvio.html"
   },
   {
     "titulo": "Explorando os Segredos de JJ: Lições para Arquitetos de Software",
     "noticiaOriginal": "What I've Learned from JJ",
     "data": "2025-05-02T10:18:38.173Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/explorando-os-segredos-de-jj-licoes-para-arquitetos-de-software.html"
   },
   {
     "titulo": "Irish privacy watchdog pune TikTok em meio bilhão de euros por transferência de dados para a China: e agora?",
     "noticiaOriginal": "Irish privacy watchdog hits TikTok with Є530M fine over data transfers to China",
     "data": "2025-05-02T11:14:49.150Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/irish-privacy-watchdog-pune-tiktok-em-meio-bilhao-de-euros-por-transferencia-de-dados-para-a-china-e-agora.html"
   },
   {
     "titulo": "Altair aos 50: Desvendando o Primeiro Computador Pessoal",
     "noticiaOriginal": "Altair at 50: Remembering the first Personal Computer",
     "data": "2025-05-02T12:35:16.748Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/altair-aos-50-desvendando-o-primeiro-computador-pessoal.html"
   },
   {
     "titulo": "Liberação de Pagamentos Externos na App Store: A Revolução para Desenvolvedores",
     "noticiaOriginal": "Apple App Store guidelines remove ban on encouraging external payments in US",
     "data": "2025-05-02T13:27:22.932Z",
-    "categoria": "Fintech"
+    "categoria": "Fintech",
+    "url": "artigos/liberacao-de-pagamentos-externos-na-app-store-a-revolucao-para-desenvolvedores.html"
   },
   {
     "titulo": "Desafios e Oportunidades: A Influência do Executivo na Radiodifusão Pública",
     "noticiaOriginal": "Corporation for Public Broadcasting Statement Regarding Executive Order",
     "data": "2025-05-02T14:16:54.939Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desafios-e-oportunidades-a-influencia-do-executivo-na-radiodifusao-publica.html"
   },
   {
     "titulo": "Vivendo uma Vida Intelectualmente Rica: O Desafio do Arquiteto de Software",
     "noticiaOriginal": "How to live an intellectually rich life",
     "data": "2025-05-02T15:18:16.773Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/vivendo-uma-vida-intelectualmente-rica-o-desafio-do-arquiteto-de-software.html"
   },
   {
     "titulo": "Desenvolvendo Habilidades: Por que o cérebro da linguagem é mais importante para aprender programação do que o cérebro da matemática",
     "noticiaOriginal": "The language brain matters more for learning programming than the math brain",
     "data": "2025-05-02T16:22:09.830Z",
-    "categoria": "Programação"
+    "categoria": "Programação",
+    "url": "artigos/desenvolvendo-habilidades-por-que-o-cerebro-da-linguagem-e-mais-importante-para-aprender-programacao-do-que-o-cerebro-da-matematica.html"
   },
   {
     "titulo": "Desvendando o Blast: A engine poderosa para agentes de AI navegarem na web",
     "noticiaOriginal": "Show HN: Blast – Fast, multi-threaded serving engine for web browsing AI agents",
     "data": "2025-05-02T18:24:34.482Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desvendando-o-blast-a-engine-poderosa-para-agentes-de-ai-navegarem-na-web.html"
   },
   {
     "titulo": "Sons em 3D: A Sinfonia da Física no Mundo da Tecnologia",
     "noticiaOriginal": "Show HN: I built a synthesizer based on 3D physics",
     "data": "2025-05-02T19:14:20.674Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/sons-em-3d-a-sinfonia-da-fisica-no-mundo-da-tecnologia.html"
   },
   {
     "titulo": "Quando o Paraquedas Falha: Lições da Queda do Módulo Soviético em Vênus",
     "noticiaOriginal": "Images of Soviet Venus lander falling to Earth suggest its parachute may be out",
     "data": "2025-05-02T20:19:39.890Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/quando-o-paraquedas-falha-licoes-da-queda-do-modulo-sovietico-em-venus.html"
   },
   {
     "titulo": "O Segredo por Trás da Diversão em Beat Saber: Desvendando o VR Design",
     "noticiaOriginal": "VR Design Unpacked: The Secret to Beat Saber's Fun Isn't What You Think",
     "data": "2025-05-02T21:16:26.159Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/o-segredo-por-tras-da-diversao-em-beat-saber-desvendando-o-vr-design.html"
   },
   {
     "titulo": "Explorando o Poder dos Shaders: GPT-2 em Destaque",
     "noticiaOriginal": "Show HN: GPT-2 implemented using graphics shaders",
     "data": "2025-05-02T22:16:50.668Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/explorando-o-poder-dos-shaders-gpt-2-em-destaque.html"
   },
   {
     "titulo": "Reentrada na Terra: Aproximação do Antigo Veículo de Descida Soviético de Vênus",
     "noticiaOriginal": "Old Soviet Venus descent craft nearing Earth reentry",
     "data": "2025-05-02T23:16:13.950Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/reentrada-na-terra-aproximacao-do-antigo-veiculo-de-descida-sovietico-de-venus.html"
   },
   {
     "titulo": "GitDroid: simplificando a gestão de aplicativos Android através do GitHub",
     "noticiaOriginal": "GitDroid: A third party Android app manager for apps uploaded to GitHub releases",
     "data": "2025-05-03T01:21:51.227Z",
-    "categoria": "Negócios"
+    "categoria": "Negócios",
+    "url": "artigos/gitdroid-simplificando-a-gestao-de-aplicativos-android-atraves-do-github.html"
   },
   {
     "titulo": "Escolher o Otimismo: A Chave para o Sucesso como Desenvolvedor",
     "noticiaOriginal": "You could just choose optimism",
     "data": "2025-05-03T03:02:32.467Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/escolher-o-otimismo-a-chave-para-o-sucesso-como-desenvolvedor.html"
   },
   {
     "titulo": "Desbloqueando o Potencial da Emulação Cycle Exact do C64 com Connomore64",
     "noticiaOriginal": "Connomore64: Cycle exact emulation of the C64 using parallel microcontrollers",
     "data": "2025-05-03T04:20:35.104Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desbloqueando-o-potencial-da-emulacao-cycle-exact-do-c64-com-connomore64.html"
   },
   {
     "titulo": "Bluey: Os Desafios por Trás da Direção de Arte",
     "noticiaOriginal": "Creating Bluey: Tales from the Art Director",
     "data": "2025-05-03T05:17:58.993Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/bluey-os-desafios-por-tras-da-direcao-de-arte.html"
   },
   {
     "titulo": "Revolução na Medicina: O Impacto do Fim dos Medicamentos GLP-1 Compostos na Vida dos Pacientes",
     "noticiaOriginal": "The end of compounded GLP-1 drugs leaves many patients in a 'lose-lose' position",
     "data": "2025-05-03T06:23:30.628Z",
-    "categoria": "Saúde"
+    "categoria": "Saúde",
+    "url": "artigos/revolucao-na-medicina-o-impacto-do-fim-dos-medicamentos-glp-1-compostos-na-vida-dos-pacientes.html"
   },
   {
     "titulo": "Investimento de $20M em Arte: Qual é o Valor Real por Trás?",
     "noticiaOriginal": "London's National Gallery purchases a painting by an unknown artist for $20M",
     "data": "2025-05-03T07:16:01.046Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/investimento-de-20m-em-arte-qual-e-o-valor-real-por-tras.html"
   },
   {
     "titulo": "Accountability Sinks: quando a responsabilidade desaparece no processo",
@@ -1224,211 +1424,250 @@
     "titulo": "O Boom dos Novos Apartamentos: Como a Tecnologia Pode Encarar a Desaceleração",
     "noticiaOriginal": "The number of new apartments is at a 50-year high, but states expect a slowdown",
     "data": "2025-05-03T09:16:50.225Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/o-boom-dos-novos-apartamentos-como-a-tecnologia-pode-encarar-a-desaceleracao.html"
   },
   {
     "titulo": "Construindo um Blog de Sucesso: A Arte do Minimum Viable Blog",
     "noticiaOriginal": "Minimum Viable Blog",
     "data": "2025-05-03T10:17:05.990Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/construindo-um-blog-de-sucesso-a-arte-do-minimum-viable-blog.html"
   },
   {
     "titulo": "The Language Brain: O Poder das Palavras na Programação",
     "noticiaOriginal": "The language brain matters more for programming than the math brain? (2020)",
     "data": "2025-05-03T11:13:35.363Z",
-    "categoria": "Programação"
+    "categoria": "Programação",
+    "url": "artigos/the-language-brain-o-poder-das-palavras-na-programacao.html"
   },
   {
     "titulo": "Desbravando os Limites Técnicos de Speedrunning e Modding em The Incredibles: Rise of the Underminer",
     "noticiaOriginal": "Speedrunning and Modding the Incredibles: Rise of the Underminer",
     "data": "2025-05-03T12:32:37.774Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desbravando-os-limites-tecnicos-de-speedrunning-e-modding-em-the-incredibles-rise-of-the-underminer.html"
   },
   {
     "titulo": "\"Potencialize seu JetBrains AI Assistant com a API LLM de Terceiros\"",
     "noticiaOriginal": "Show HN: Use Third Party LLM API in JetBrains AI Assistant",
     "data": "2025-05-03T13:23:16.473Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/potencialize-seu-jetbrains-ai-assistant-com-a-api-llm-de-terceiros.html"
   },
   {
     "titulo": "Desafios da Inteligência Artificial: O Tempo Economizado é Realmente Compensado pelo Novo Trabalho Gerado?",
     "noticiaOriginal": "Time saved by AI offset by new work created, study suggests",
     "data": "2025-05-03T14:15:33.837Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desafios-da-inteligencia-artificial-o-tempo-economizado-e-realmente-compensado-pelo-novo-trabalho-gerado.html"
   },
   {
     "titulo": "Automatizando fluxos de trabalho com N8n: A revolução da automação inteligente",
     "noticiaOriginal": "N8n – Flexible AI workflow automation for technical teams",
     "data": "2025-05-03T15:16:36.528Z",
-    "categoria": "Robótica"
+    "categoria": "Robótica",
+    "url": "artigos/automatizando-fluxos-de-trabalho-com-n8n-a-revolucao-da-automacao-inteligente.html"
   },
   {
     "titulo": "O Futuro da Ciência da Computação: Quais os Rumos Que Estamos Tomando?",
     "noticiaOriginal": "Where Do Scientists Think This Is All Going?",
     "data": "2025-05-03T16:20:04.892Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/o-futuro-da-ciencia-da-computacao-quais-os-rumos-que-estamos-tomando.html"
   },
   {
     "titulo": "Desvendando o Poder da Execução de LLMs na Apple Neural Engine",
     "noticiaOriginal": "Run LLMs on Apple Neural Engine (ANE)",
     "data": "2025-05-03T17:14:10.826Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desvendando-o-poder-da-execucao-de-llms-na-apple-neural-engine.html"
   },
   {
     "titulo": "Desbloqueando o Potencial do QModem 4.51 Source Code: Uma Jornada Técnica",
     "noticiaOriginal": "QModem 4.51 Source Code",
     "data": "2025-05-03T18:22:40.041Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desbloqueando-o-potencial-do-qmodem-4-51-source-code-uma-jornada-tecnica.html"
   },
   {
     "titulo": "Parasita Deadly Screwworm volta ameaçando o gado do Texas e o suprimento de carne dos EUA",
     "noticiaOriginal": "Deadly Screwworm Parasite's Comeback Threatens Texas Cattle, US Beef Supply",
     "data": "2025-05-03T19:13:13.567Z",
-    "categoria": "Educação"
+    "categoria": "Educação",
+    "url": "artigos/parasita-deadly-screwworm-volta-ameacando-o-gado-do-texas-e-o-suprimento-de-carne-dos-eua.html"
   },
   {
     "titulo": "De Volta às Origens: O Renascimento de Ruby on Rails no Mundo da Programação Web",
     "noticiaOriginal": "We Fell Out of Love with Next.js and Back in Love with Ruby on Rails",
     "data": "2025-05-03T20:17:58.442Z",
-    "categoria": "Programação"
+    "categoria": "Programação",
+    "url": "artigos/de-volta-as-origens-o-renascimento-de-ruby-on-rails-no-mundo-da-programacao-web.html"
   },
   {
     "titulo": "Desbloqueando o Potencial: Edição de PDFs direto no navegador",
     "noticiaOriginal": "Show HN: Free, in-browser PDF editor",
     "data": "2025-05-03T21:15:31.553Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desbloqueando-o-potencial-edicao-de-pdfs-direto-no-navegador.html"
   },
   {
     "titulo": "\"Desbravando o DuckDB: A revolução geoespacial da última década\"",
     "noticiaOriginal": "DuckDB is probably the most important geospatial software of the last decade",
     "data": "2025-05-03T22:15:54.161Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desbravando-o-duckdb-a-revolucao-geoespacial-da-ultima-decada.html"
   },
   {
     "titulo": "Desvendando os Segredos da Álgebra Linear Numérica na Julia TUM",
     "noticiaOriginal": "Numerical Linear Algebra Class in Julia TUM",
     "data": "2025-05-03T23:16:03.062Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desvendando-os-segredos-da-algebra-linear-numerica-na-julia-tum.html"
   },
   {
     "titulo": "Grubando com Estilo: A Revolução dos Temas na Inicialização",
     "noticiaOriginal": "Gorgeous-GRUB: collection of decent community-made GRUB themes",
     "data": "2025-05-04T01:39:21.755Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/grubando-com-estilo-a-revolucao-dos-temas-na-inicializacao.html"
   },
   {
     "titulo": "Wi-Fi USB: O que deu errado e como evitar problemas",
     "noticiaOriginal": "What went wrong with wireless USB",
     "data": "2025-05-04T03:15:29.025Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/wi-fi-usb-o-que-deu-errado-e-como-evitar-problemas.html"
   },
   {
     "titulo": "Desvendando os Segredos do AMIBIOS: Guia para Desenvolvedores (1993)",
     "noticiaOriginal": "Programmers Guide to the AMIBIOS (1993) [pdf]",
     "data": "2025-05-04T04:21:25.086Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desvendando-os-segredos-do-amibios-guia-para-desenvolvedores-1993.html"
   },
   {
     "titulo": "Protocolos de Agentes de IA: Desvendando o Futuro dos Sistemas Inteligentes",
     "noticiaOriginal": "A Survey of AI Agent Protocols",
     "data": "2025-05-04T05:17:12.583Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/protocolos-de-agentes-de-ia-desvendando-o-futuro-dos-sistemas-inteligentes.html"
   },
   {
     "titulo": "A Teoria de Brian Eno sobre Democracia na Era da Tecnologia",
     "noticiaOriginal": "Brian Eno's Theory of Democracy",
     "data": "2025-05-04T06:24:22.329Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/a-teoria-de-brian-eno-sobre-democracia-na-era-da-tecnologia.html"
   },
   {
     "titulo": "Desenvolvendo um Editor de Pixel Art após Jogar Octopath Traveler II",
     "noticiaOriginal": "I built a pixel art editor after playing Octopath Traveler II",
     "data": "2025-05-04T07:15:56.574Z",
-    "categoria": "Fintech"
+    "categoria": "Fintech",
+    "url": "artigos/desenvolvendo-um-editor-de-pixel-art-apos-jogar-octopath-traveler-ii.html"
   },
   {
     "titulo": "Pascal para Máquinas Pequenas: O Renascimento da Velha Guarda",
     "noticiaOriginal": "Pascal for Small Machines",
     "data": "2025-05-04T08:20:42.507Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/pascal-para-maquinas-pequenas-o-renascimento-da-velha-guarda.html"
   },
   {
     "titulo": "Desvendando os Segredos do Switch Bouncing: Como Isso Impacta os Sistemas Modernos",
     "noticiaOriginal": "Switch bouncing reference traces for a variety of different switches",
     "data": "2025-05-04T09:16:58.866Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desvendando-os-segredos-do-switch-bouncing-como-isso-impacta-os-sistemas-modernos.html"
   },
   {
     "titulo": "Inteligência Artificial com a Bola Toda: Ensinando AI a Comentar Pong em Tempo Real",
     "noticiaOriginal": "Show HN: I taught AI to commentate Pong in real time",
     "data": "2025-05-04T10:17:12.729Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/inteligencia-artificial-com-a-bola-toda-ensinando-ai-a-comentar-pong-em-tempo-real.html"
   },
   {
     "titulo": "Oberon Pi: A revolução silenciosa no mundo da computação embarcada",
     "noticiaOriginal": "Oberon Pi",
     "data": "2025-05-04T11:13:31.177Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/oberon-pi-a-revolucao-silenciosa-no-mundo-da-computacao-embarcada.html"
   },
   {
     "titulo": "O Mistério da Linha Fixa de Alabama que Não Para de Tocar",
     "noticiaOriginal": "The Alabama Landline That Keeps Ringing",
     "data": "2025-05-04T12:33:15.375Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/o-misterio-da-linha-fixa-de-alabama-que-nao-para-de-tocar.html"
   },
   {
     "titulo": "Lilith and Modula-2: A Revolução Silenciosa dos Sistemas Modernos",
     "noticiaOriginal": "Lilith and Modula-2",
     "data": "2025-05-04T13:23:41.795Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/lilith-and-modula-2-a-revolucao-silenciosa-dos-sistemas-modernos.html"
   },
   {
     "titulo": "Construindo um Império de Êxtase: Lições de um Texano na Tecnologia",
     "noticiaOriginal": "The Texan Who Built an Empire of Ecstasy",
     "data": "2025-05-04T14:15:15.072Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/construindo-um-imperio-de-extase-licoes-de-um-texano-na-tecnologia.html"
   },
   {
     "titulo": "Desvendando os Mistérios do DDD e da Arquitetura de Software: Mais do que Apenas Pastinhas e Value Objects",
     "noticiaOriginal": "@gudamascodev @AzureCruzader Pior que aconteceu comigo quando comecei a ver DDD + arquitetura de software, eu achava que havia entendido e que era algo bem simples. E aí, quando fui ver, o que eu 'sabia' mesmo era só como dar nome às pastinhas e criar value-object 🤣",
     "data": "2025-05-04T15:11:36.097Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/desvendando-os-misterios-do-ddd-e-da-arquitetura-de-software-mais-do-que-apenas-pastinhas-e-value-objects.html"
   },
   {
     "titulo": "Desenvolvimento de Software e Arquitetura: O Impacto nos Sistemas Modernos",
     "noticiaOriginal": "@jacaroncio @Moykhaile @AesyrKorkov @deleuzecitou Desenvolvimento de software, design em geral, produção audiovisual, boa parte de arquitetura e engenharia",
     "data": "2025-05-04T15:16:56.529Z",
-    "categoria": "Arquitetura"
+    "categoria": "Arquitetura",
+    "url": "artigos/desenvolvimento-de-software-e-arquitetura-o-impacto-nos-sistemas-modernos.html"
   },
   {
     "titulo": "Arquitetura sem monotonia: quando software cruza física, elétrica e design",
     "noticiaOriginal": "A arquitetura não tem monotonia NUNCA, do nada surge um cálculo de física, uma lei aqui, história ali, elétrica lá, software pra todo lado e no meio disso tudo a paleta de cores e mood board.\n\nO bom é que sai pronto até pra sentar tijolo",
     "data": "2025-05-04T15:18:37.007Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "localizacao": {
+      "estado": "pendente",
+      "motivo": "arquivo-nao-localizado",
+      "tituloConsultado": "Arquitetura sem monotonia: quando software cruza física, elétrica e design"
+    }
   },
   {
     "titulo": "Desvendando os Segredos da Codificação de Arquivos Padrão",
     "noticiaOriginal": "Set the default file encoding",
     "data": "2025-05-04T15:22:43.636Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/desvendando-os-segredos-da-codificacao-de-arquivos-padrao.html"
   },
   {
     "titulo": "O segredo por trás do ajuste fácil com uma pasta adaptativa",
     "noticiaOriginal": "Effortless adjustments with an adaptive paste",
     "data": "2025-05-04T15:25:00.397Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/o-segredo-por-tras-do-ajuste-facil-com-uma-pasta-adaptativa.html"
   },
   {
     "titulo": "Desbloqueando o Potencial do Designer Out-of-Process do Windows Forms com Suporte à Toolbox para Referências Explícitas de Assembly",
     "noticiaOriginal": "Toolbox Support for Explicit Assembly References in Windows Forms Out-of-Process Designer",
     "data": "2025-05-04T15:30:18.292Z",
-    "categoria": "Inteligência Artificial"
+    "categoria": "Inteligência Artificial",
+    "url": "artigos/desbloqueando-o-potencial-do-designer-out-of-process-do-windows-forms-com-suporte-a-toolbox-para-referencias-explicitas-de-assembly.html"
   },
   {
     "titulo": "Propriedade Intelectual: O Poder da Inovação e Proteção no Mundo Tecnológico",
     "noticiaOriginal": "propriedade intelectual, nas áreas de propaganda, arquitetura, mercados de arte e antiguidades, turismo, artesanato, design, moda, filme e vídeo, softwares e jogos eletrônicos de lazer e entretenimento, música, artes performativas, editorial, serviços de computação e software, +",
     "data": "2025-05-04T15:36:55.417Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "url": "artigos/propriedade-intelectual-o-poder-da-inovacao-e-protecao-no-mundo-tecnologico.html"
   },
   {
     "titulo": "Arquitetura de Software: Decifrando os 40min de Estudo que Parecem Grego",
@@ -1524,7 +1763,12 @@
     "url": "artigos/titulo.html",
     "data": "2025-05-04T17:54:40.890Z",
     "dataFonte": "2025-04-30T17:57:50.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "localizacao": {
+      "estado": "pendente",
+      "motivo": "arquivo-nao-localizado",
+      "tituloConsultado": "RAG na prática: padrões de GenAI para recuperação aumentada"
+    }
   },
   {
     "titulo": "Refletindo sobre a Construção de Visualizações de Espelho de TMT com LLM",
@@ -1537,10 +1781,13 @@
   {
     "titulo": "Explorando as entranhas da Arquitetura de Software: Livros essenciais para desenvolvedores com interesse em temas arquiteturais",
     "noticiaOriginal": "Mimari konulara ilgisi olan yazılımcıların okuması gereken kitaplar:\n\n- Software Architecture: The Hard Parts\n- Designing Data Intensive Applications\n- Domain Driven Design Distilled",
-    "url": "artigos/inteligencia-artificial/explorando-as-entranhas-da-arquitetura-de-software-livros-essenciais-para-desenvolvedores-com-interesse-em-temas-arquiteturais.html",
+    "url": "artigos/explorando-as-entranhas-da-arquitetura-de-software-livros-essenciais-para-desenvolvedores-com-interesse-em-temas-arquiteturais.html",
     "data": "2025-05-04T18:12:20.871Z",
     "dataFonte": "2025-04-29T08:50:52.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/explorando-as-entranhas-da-arquitetura-de-software-livros-essenciais-para-desenvolvedores-com-interesse-em-temas-arquiteturais.html"
+    ]
   },
   {
     "titulo": "Repositórios do GitHub: uma paixão ou uma obsessão?",
@@ -1585,10 +1832,13 @@
   {
     "titulo": "Desenvolvimento de Software: DDD, Onion Arch e CA - Filosofia x Arquitetura",
     "noticiaOriginal": "@pokerdev7 Basicamente DDD é uma abordagem de desenvolvimento, tá mais pra um tipo de filosofia que aplica princípios. Onion Arch e CA são padrões arquiteturais, arquitetura de software mesmo. Ou seja, você pode ter DDD sendo aplicado em qualquer arquitetura que quiser utilizar na sua app.",
-    "url": "artigos/inteligencia-artificial/desenvolvimento-de-software-ddd-onion-arch-e-ca-filosofia-x-arquitetura.html",
+    "url": "artigos/desenvolvimento-de-software-ddd-onion-arch-e-ca-filosofia-x-arquitetura.html",
     "data": "2025-05-04T23:16:15.686Z",
     "dataFonte": "2025-04-23T16:01:19.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/desenvolvimento-de-software-ddd-onion-arch-e-ca-filosofia-x-arquitetura.html"
+    ]
   },
   {
     "titulo": "Padrões distribuídos: como transformar a arquitetura de software",
@@ -1641,18 +1891,24 @@
   {
     "titulo": "O Pássaro que Ensina: Desvendando o Pattern Pigeon no DialogflowCX",
     "noticiaOriginal": "Introducing 🐦 Pattern Pigeon: A conversational assistant built with @googlecloud #DialogflowCX to teach software architecture design patterns! This was a lot of fun to create, and for a (probably) limited time you can even call it!\n\n🔗 \n📞 (361) 360-5763",
-    "url": "artigos/inteligencia-artificial/o-passaro-que-ensina-desvendando-o-pattern-pigeon-no-dialogflowcx.html",
+    "url": "artigos/o-passaro-que-ensina-desvendando-o-pattern-pigeon-no-dialogflowcx.html",
     "data": "2025-05-05T08:25:29.845Z",
     "dataFonte": "2025-04-17T15:42:16.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/o-passaro-que-ensina-desvendando-o-pattern-pigeon-no-dialogflowcx.html"
+    ]
   },
   {
     "titulo": "Desbravando o Terreno do ByteBuffer em Java: Como Guiar seu LLM para um Código Robusto",
     "noticiaOriginal": "Guiding an LLM for Robust Java ByteBuffer Code",
-    "url": "artigos/inteligencia-artificial/desbravando-o-terreno-do-bytebuffer-em-java-como-guiar-seu-llm-para-um-codigo-robusto.html",
+    "url": "artigos/desbravando-o-terreno-do-bytebuffer-em-java-como-guiar-seu-llm-para-um-codigo-robusto.html",
     "data": "2025-05-05T09:19:25.133Z",
     "dataFonte": "2025-04-17T13:39:00.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/desbravando-o-terreno-do-bytebuffer-em-java-como-guiar-seu-llm-para-um-codigo-robusto.html"
+    ]
   },
   {
     "titulo": "Atualização de Abril para Azure DevOps Server e Team Foundation Server: O que você precisa saber",
@@ -1665,10 +1921,13 @@
   {
     "titulo": "Atualização de Posts Antigos: Como Aumentar o Engajamento nas Redes Sociais",
     "noticiaOriginal": "Updating yesterday's post on social media engagement",
-    "url": "artigos/inteligencia-artificial/atualizacao-de-posts-antigos-como-aumentar-o-engajamento-nas-redes-sociais.html",
+    "url": "artigos/atualizacao-de-posts-antigos-como-aumentar-o-engajamento-nas-redes-sociais.html",
     "data": "2025-05-05T11:15:04.915Z",
     "dataFonte": "2025-04-04T18:32:00.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/atualizacao-de-posts-antigos-como-aumentar-o-engajamento-nas-redes-sociais.html"
+    ]
   },
   {
     "titulo": "Integrando Boards com GitHub Enterprise Cloud: Desafios e Oportunidades",
@@ -1681,10 +1940,13 @@
   {
     "titulo": "Engajamento nas Redes Sociais em 2025: Desafios e Oportunidades",
     "noticiaOriginal": "Social Media Engagement in Early 2025",
-    "url": "artigos/inteligencia-artificial/engajamento-nas-redes-sociais-em-2025-desafios-e-oportunidades.html",
+    "url": "artigos/engajamento-nas-redes-sociais-em-2025-desafios-e-oportunidades.html",
     "data": "2025-05-05T13:28:30.505Z",
     "dataFonte": "2025-04-03T13:41:00.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/engajamento-nas-redes-sociais-em-2025-desafios-e-oportunidades.html"
+    ]
   },
   {
     "titulo": "CDN e a Revolução nas URLs dos Agentes em Pipelines de Desenvolvimento",
@@ -1777,10 +2039,13 @@
   {
     "titulo": "GenAI Patterns: Guardrails e a Visão RAG - Desvendando os Segredos da Inteligência Artificial",
     "noticiaOriginal": "GenAI Patterns: Guardrails and RAG overview",
-    "url": "artigos/inteligencia-artificial/genai-patterns-guardrails-e-a-visao-rag-desvendando-os-segredos-da-inteligencia-artificial.html",
+    "url": "artigos/genai-patterns-guardrails-e-a-visao-rag-desvendando-os-segredos-da-inteligencia-artificial.html",
     "data": "2025-05-05T23:16:34.281Z",
     "dataFonte": "2025-02-19T00:02:00.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/genai-patterns-guardrails-e-a-visao-rag-desvendando-os-segredos-da-inteligencia-artificial.html"
+    ]
   },
   {
     "titulo": "Desvendando o Poder do LLM Reasoning para Tarefas de Software",
@@ -1825,10 +2090,13 @@
   {
     "titulo": "O Futuro da Engenharia de Software: Insights do Panel no goto Copenhagen",
     "noticiaOriginal": "Panel at goto Copenhagen: \"Where is SW development Going",
-    "url": "artigos/inteligencia-artificial/o-futuro-da-engenharia-de-software-insights-do-panel-no-goto-copenhagen.html",
+    "url": "artigos/o-futuro-da-engenharia-de-software-insights-do-panel-no-goto-copenhagen.html",
     "data": "2025-05-06T07:17:58.586Z",
     "dataFonte": "2025-02-04T15:23:00.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/o-futuro-da-engenharia-de-software-insights-do-panel-no-goto-copenhagen.html"
+    ]
   },
   {
     "titulo": "RAG na prática: padrões de GenAI para recuperação aumentada",
@@ -1836,7 +2104,12 @@
     "url": "artigos/titulo.html",
     "data": "2025-05-06T08:24:36.275Z",
     "dataFonte": "2025-02-04T14:57:00.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "localizacao": {
+      "estado": "pendente",
+      "motivo": "arquivo-nao-localizado",
+      "tituloConsultado": "RAG na prática: padrões de GenAI para recuperação aumentada"
+    }
   },
   {
     "titulo": "Floresta e Deserto: Onde a arquitetura de software encontra a natureza",
@@ -1857,10 +2130,13 @@
   {
     "titulo": "Construindo o Futuro: Desvendando os Padrões Emergentes na Criação de Produtos com GenAI",
     "noticiaOriginal": "Emerging Patterns in Building GenAI Products",
-    "url": "artigos/inteligencia-artificial/construindo-o-futuro-desvendando-os-padroes-emergentes-na-criacao-de-produtos-com-genai.html",
+    "url": "artigos/construindo-o-futuro-desvendando-os-padroes-emergentes-na-criacao-de-produtos-com-genai.html",
     "data": "2025-05-06T11:15:18.789Z",
     "dataFonte": "2025-01-28T12:43:00.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/construindo-o-futuro-desvendando-os-padroes-emergentes-na-criacao-de-produtos-com-genai.html"
+    ]
   },
   {
     "titulo": "Podcast com Luca Rossi: O Futuro da Comunicação Online",
@@ -1897,10 +2173,13 @@
   {
     "titulo": "Design Patterns: Mais do que um Vocabulário, uma Filosofia de Desenvolvimento",
     "noticiaOriginal": "Design patterns are fine as a vocabulary to talk about certain approaches abstractly. But they quickly become problematic when they are implemented literally. And they immediately become disastrous when they are treated as the atomic units of software architecture.",
-    "url": "artigos/inteligencia-artificial/design-patterns-mais-do-que-um-vocabulario-uma-filosofia-de-desenvolvimento.html",
+    "url": "artigos/design-patterns-mais-do-que-um-vocabulario-uma-filosofia-de-desenvolvimento.html",
     "data": "2025-05-06T16:21:17.771Z",
     "dataFonte": "2025-05-06T13:46:48.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/design-patterns-mais-do-que-um-vocabulario-uma-filosofia-de-desenvolvimento.html"
+    ]
   },
   {
     "titulo": "Codemods: A revolução da refatoração de código",
@@ -1921,18 +2200,24 @@
   {
     "titulo": "Descobertas musicais de 2024: como a tecnologia está transformando a forma como encontramos novas músicas",
     "noticiaOriginal": "My favorite musical discoveries of 2024",
-    "url": "artigos/inteligencia-artificial/descobertas-musicais-de-2024-como-a-tecnologia-esta-transformando-a-forma-como-encontramos-novas-musicas.html",
+    "url": "artigos/descobertas-musicais-de-2024-como-a-tecnologia-esta-transformando-a-forma-como-encontramos-novas-musicas.html",
     "data": "2025-05-06T19:12:45.993Z",
     "dataFonte": "2025-01-09T14:49:00.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/descobertas-musicais-de-2024-como-a-tecnologia-esta-transformando-a-forma-como-encontramos-novas-musicas.html"
+    ]
   },
   {
     "titulo": "Transformando seu código com maestria: explorando um codemod mais complexo",
     "noticiaOriginal": "A more complex codemod",
-    "url": "artigos/inteligencia-artificial/transformando-seu-codigo-com-maestria-explorando-um-codemod-mais-complexo.html",
+    "url": "artigos/transformando-seu-codigo-com-maestria-explorando-um-codemod-mais-complexo.html",
     "data": "2025-05-06T20:19:59.778Z",
     "dataFonte": "2025-01-08T14:44:00.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/transformando-seu-codigo-com-maestria-explorando-um-codemod-mais-complexo.html"
+    ]
   },
   {
     "titulo": "Automatizando Mudanças em APIs com Codemods: O Poder do Refactoring",
@@ -2025,10 +2310,13 @@
   {
     "titulo": "\"Reinventando Fronteiras: O Impacto da OpenAI para Países na Era da Tecnologia\"",
     "noticiaOriginal": "OpenAI for Countries",
-    "url": "artigos/inteligencia-artificial/reinventando-fronteiras-o-impacto-da-openai-para-paises-na-era-da-tecnologia.html",
+    "url": "artigos/reinventando-fronteiras-o-impacto-da-openai-para-paises-na-era-da-tecnologia.html",
     "data": "2025-05-07T22:17:34.630Z",
     "dataFonte": "2025-05-07T21:05:36.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/reinventando-fronteiras-o-impacto-da-openai-para-paises-na-era-da-tecnologia.html"
+    ]
   },
   {
     "titulo": "\"Desafios e Lições: Como a Pakistani Firm Enviou Fentanil Analógico e Golpes para os EUA\"",
@@ -2049,10 +2337,13 @@
   {
     "titulo": "Explorando o Potencial do Parametric Modeling com Grasshopper",
     "noticiaOriginal": "Parametric Modeling with Grasshopper",
-    "url": "artigos/inteligencia-artificial/explorando-o-potencial-do-parametric-modeling-com-grasshopper.html",
+    "url": "artigos/explorando-o-potencial-do-parametric-modeling-com-grasshopper.html",
     "data": "2025-05-08T03:09:51.551Z",
     "dataFonte": "2025-05-07T23:57:12.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/explorando-o-potencial-do-parametric-modeling-com-grasshopper.html"
+    ]
   },
   {
     "titulo": "Desbravando os Caminhos: Biblioteca Python para Roteamento Local Rápido nos Estados Unidos",
@@ -2065,7 +2356,7 @@
   {
     "titulo": "Inteligência Artificial e Desenvolvimento de Software: A Revolução dos IDEs",
     "noticiaOriginal": "Ask HN: How much better are AI IDEs vs. copy pasting into chat apps?",
-    "url": "",
+    "url": "artigos/inteligencia-artificial-e-desenvolvimento-de-software-a-revolucao-dos-ides.html",
     "data": "2025-05-08T05:18:26.514Z",
     "dataFonte": "2025-05-08T03:18:10.000Z",
     "categoria": "Inteligência Artificial"
@@ -2073,18 +2364,24 @@
   {
     "titulo": "Conectando o Futuro: Desvendando os Segredos da Rede Mycoria",
     "noticiaOriginal": "Mycoria is an open and secure overlay network that connects all participants",
-    "url": "artigos/inteligencia-artificial/conectando-o-futuro-desvendando-os-segredos-da-rede-mycoria.html",
+    "url": "artigos/conectando-o-futuro-desvendando-os-segredos-da-rede-mycoria.html",
     "data": "2025-05-08T06:27:02.010Z",
     "dataFonte": "2025-05-08T05:40:52.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/conectando-o-futuro-desvendando-os-segredos-da-rede-mycoria.html"
+    ]
   },
   {
     "titulo": "Desenvolvendo Sistemas de Baixa Latência com C++: Desafios e Oportunidades",
     "noticiaOriginal": "Thunder Compute (YC S24) Is Hiring a C++ Low-Latency Systems Developer",
-    "url": "artigos/inteligencia-artificial/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html",
+    "url": "artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html",
     "data": "2025-05-08T07:17:55.986Z",
     "dataFonte": "2025-05-08T07:01:08.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html"
+    ]
   },
   {
     "titulo": "Gmail vai parar de suportar 3DES para SMTP: o que isso significa para os desenvolvedores?",
@@ -2113,10 +2410,13 @@
   {
     "titulo": "Satélite SMAP da NASA: Detectando Interferência na Faixa L com Maestria",
     "noticiaOriginal": "Using NASA’s SMAP satellite to detect L-band interference",
-    "url": "artigos/inteligencia-artificial/satelite-smap-da-nasa-detectando-interferencia-na-faixa-l-com-maestria.html",
+    "url": "artigos/satelite-smap-da-nasa-detectando-interferencia-na-faixa-l-com-maestria.html",
     "data": "2025-05-08T11:15:26.344Z",
     "dataFonte": "2025-05-08T08:52:56.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/satelite-smap-da-nasa-detectando-interferencia-na-faixa-l-com-maestria.html"
+    ]
   },
   {
     "titulo": "CoreWCF: A revolução que você precisava conhecer",
@@ -2129,18 +2429,24 @@
   {
     "titulo": "Globalização não esvaziou a classe média americana: uma análise técnica",
     "noticiaOriginal": "Globalization did not hollow out the American middle class",
-    "url": "artigos/inteligencia-artificial/globalizacao-nao-esvaziou-a-classe-media-americana-uma-analise-tecnica.html",
+    "url": "artigos/globalizacao-nao-esvaziou-a-classe-media-americana-uma-analise-tecnica.html",
     "data": "2025-05-08T13:29:17.472Z",
     "dataFonte": "2025-05-08T13:25:25.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/globalizacao-nao-esvaziou-a-classe-media-americana-uma-analise-tecnica.html"
+    ]
   },
   {
     "titulo": "Google e a Revolução Nuclear: O Futuro da Energia está Chegando!",
     "noticiaOriginal": "Google to Back Three New Advanced Nuclear Projects",
-    "url": "artigos/inteligencia-artificial/google-e-a-revolucao-nuclear-o-futuro-da-energia-esta-chegando.html",
+    "url": "artigos/google-e-a-revolucao-nuclear-o-futuro-da-energia-esta-chegando.html",
     "data": "2025-05-08T14:16:24.504Z",
     "dataFonte": "2025-05-08T13:36:09.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/google-e-a-revolucao-nuclear-o-futuro-da-energia-esta-chegando.html"
+    ]
   },
   {
     "titulo": "Huawei inova com laptop rodando HarmonyOS enquanto licença do Windows expira",
@@ -2153,10 +2459,13 @@
   {
     "titulo": "Doação de Riqueza: Um Desafio de Escala para o Mundo da Tecnologia",
     "noticiaOriginal": "20 years to give away virtually all my wealth",
-    "url": "artigos/inteligencia-artificial/doacao-de-riqueza-um-desafio-de-escala-para-o-mundo-da-tecnologia.html",
+    "url": "artigos/doacao-de-riqueza-um-desafio-de-escala-para-o-mundo-da-tecnologia.html",
     "data": "2025-05-08T16:23:18.229Z",
     "dataFonte": "2025-05-08T13:59:49.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/doacao-de-riqueza-um-desafio-de-escala-para-o-mundo-da-tecnologia.html"
+    ]
   },
   {
     "titulo": "Explorando os Segredos do Reservoir Sampling",
@@ -2169,10 +2478,13 @@
   {
     "titulo": "Static as a Server: A revolução silenciosa nos bastidores da tecnologia",
     "noticiaOriginal": "Static as a Server",
-    "url": "artigos/inteligencia-artificial/static-as-a-server-a-revolucao-silenciosa-nos-bastidores-da-tecnologia.html",
+    "url": "artigos/static-as-a-server-a-revolucao-silenciosa-nos-bastidores-da-tecnologia.html",
     "data": "2025-05-08T18:25:26.133Z",
     "dataFonte": "2025-05-08T17:49:02.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "aliasesLegados": [
+      "artigos/inteligencia-artificial/static-as-a-server-a-revolucao-silenciosa-nos-bastidores-da-tecnologia.html"
+    ]
   },
   {
     "titulo": "O código escondido por trás do elogio de Steve Jobs",
@@ -2986,7 +3298,12 @@
     "data": "2025-05-11T20:18:26.116Z",
     "dataFonte": "2025-05-11T20:03:55.000Z",
     "categoria": "Tecnologia",
-    "urlFonte": "https://www.theverge.com/news/664776/apple-curved-glass-iphone-2027"
+    "urlFonte": "https://www.theverge.com/news/664776/apple-curved-glass-iphone-2027",
+    "localizacao": {
+      "estado": "pendente",
+      "motivo": "arquivo-nao-localizado",
+      "tituloConsultado": "iPhone de vidro curvo: impactos de hardware em experiência e software"
+    }
   },
   {
     "titulo": "23andMe em falência: dados genéticos, prazos e riscos para clientes",
@@ -3211,7 +3528,12 @@
     "data": "2025-05-12T04:21:32.568Z",
     "dataFonte": "2025-05-08T20:23:21.000Z",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://arstechnica.com/ai/2025/05/ai-use-damages-professional-reputation-study-suggests/"
+    "urlFonte": "https://arstechnica.com/ai/2025/05/ai-use-damages-professional-reputation-study-suggests/",
+    "localizacao": {
+      "estado": "pendente",
+      "motivo": "arquivo-nao-localizado",
+      "tituloConsultado": "A inteligência artificial como aliado ou inimigo: o dilema da reputação profissional"
+    }
   },
   {
     "titulo": "Fidji Simo à frente da OpenAI: Um novo capítulo para aplicações de IA",
@@ -3238,7 +3560,12 @@
     "data": "2025-05-12T06:28:19.596Z",
     "dataFonte": "2025-05-08T18:27:52.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://arstechnica.com/security/2025/05/doge-software-engineers-computer-infected-by-info-stealing-malware/"
+    "urlFonte": "https://arstechnica.com/security/2025/05/doge-software-engineers-computer-infected-by-info-stealing-malware/",
+    "localizacao": {
+      "estado": "pendente",
+      "motivo": "arquivo-nao-localizado",
+      "tituloConsultado": "A vulnerabilidade das credenciais: lições do ataque a um engenheiro de software"
+    }
   },
   {
     "titulo": "Como a Integração de IA no Google Sheets Está Revolucionando a Gestão de Dados",
@@ -3283,7 +3610,12 @@
     "data": "2025-05-12T11:16:11.720Z",
     "dataFonte": "2025-05-12T11:08:58.000Z",
     "categoria": "Tecnologia",
-    "urlFonte": "https://techcrunch.com/2025/05/12/apple-reportedly-plans-to-hike-prices-of-upcoming-iphones/"
+    "urlFonte": "https://techcrunch.com/2025/05/12/apple-reportedly-plans-to-hike-prices-of-upcoming-iphones/",
+    "localizacao": {
+      "estado": "pendente",
+      "motivo": "arquivo-nao-localizado",
+      "tituloConsultado": "Aumentos de Preço e a Arquitetura de Software: Como a Tecnologia Pode Suportar Novas Demandas"
+    }
   },
   {
     "titulo": "Transformando Relatórios: Como a IA Está Redefinindo a Tomada de Decisão Empresarial",
@@ -3292,7 +3624,12 @@
     "data": "2025-05-12T12:10:47.371Z",
     "dataFonte": "2025-05-12T11:55:43.000Z",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/the-death-of-spreadsheets-6-reasons-why-ai-will-be-the-dominant-business-reporting-tool/"
+    "urlFonte": "https://www.zdnet.com/article/the-death-of-spreadsheets-6-reasons-why-ai-will-be-the-dominant-business-reporting-tool/",
+    "localizacao": {
+      "estado": "pendente",
+      "motivo": "arquivo-nao-localizado",
+      "tituloConsultado": "Transformando Relatórios: Como a IA Está Redefinindo a Tomada de Decisão Empresarial"
+    }
   },
   {
     "titulo": "A nova fronteira do investimento: tecnologia de defesa na Europa",
@@ -3301,7 +3638,12 @@
     "data": "2025-05-12T12:21:03.793Z",
     "dataFonte": "2025-05-12T11:35:02.000Z",
     "categoria": "Tecnologia",
-    "urlFonte": "https://techcrunch.com/2025/05/12/this-american-vc-is-betting-on-european-defense-tech-thats-still-very-unusual/"
+    "urlFonte": "https://techcrunch.com/2025/05/12/this-american-vc-is-betting-on-european-defense-tech-thats-still-very-unusual/",
+    "localizacao": {
+      "estado": "pendente",
+      "motivo": "arquivo-nao-localizado",
+      "tituloConsultado": "A nova fronteira do investimento: tecnologia de defesa na Europa"
+    }
   },
   {
     "titulo": "Desbravando a Inovação: Arquitetura de Software em Cenários de Escassez",

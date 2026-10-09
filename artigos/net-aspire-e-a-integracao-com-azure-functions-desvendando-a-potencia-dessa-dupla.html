@@ -25,7 +25,6 @@
 <meta property="article:published_time" content="2025-05-04T17:02:01.689Z">
 <meta property="article:modified_time" content="2025-05-04T17:02:01.689Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content=".NET Aspire e a Integração com Azure Functions: Desvendando a Potência dessa Dupla!">
 <meta name="twitter:description" content="Tenho visto muita gente tratando .NET Aspire and Azure Functions integration preview como algo simples — mas a realidade é bem diferente. A integração entre...">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
@@ -36,11 +35,6 @@
   "@type": "BlogPosting",
   "headline": ".NET Aspire e a Integração com Azure Functions: Desvendando a Potência dessa Dupla!",
   "description": "Tenho visto muita gente tratando .NET Aspire and Azure Functions integration preview como algo simples — mas a realidade é bem diferente. A integração entre...",
-  "image": [
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-4x3.jpg",
-    "https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg"
-  ],
   "url": "https://www.andersondamasio.com.br/artigos/net-aspire-e-a-integracao-com-azure-functions-desvendando-a-potencia-dessa-dupla.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -116,15 +110,14 @@
     ]
   },
   "publisher": {
-    "@type": "Organization",
-    "@id": "https://www.andersondamasio.com.br/#organization",
+    "@type": "Person",
+    "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
     "name": "Anderson Damasio",
-    "url": "https://www.andersondamasio.com.br",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.andersondamasio.com.br/images/capa_anderson-damasio-1x1.jpg",
-      "caption": "Anderson Damasio - arquitetura de software e tecnologia"
-    }
+    "url": "https://www.andersondamasio.com.br/sobre.html",
+    "jobTitle": "Arquiteto de Software",
+    "sameAs": [
+      "https://www.linkedin.com/in/andersondamasio/"
+    ]
   }
 }
 </script>
@@ -216,22 +209,12 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 <p class="article-meta">Publicado em: 04/05/2025 14:02</p>
 
 <div class="article-body">Tenho visto muita gente tratando .NET Aspire and Azure Functions integration preview como algo simples — mas a realidade é bem diferente. A integração entre o .NET Aspire e o Azure Functions é uma combinação poderosa que pode revolucionar a forma como desenvolvemos e escalamos nossos sistemas.<br><br>Para aqueles que não estão familiarizados, o .NET Aspire é uma evolução do .NET Framework, trazendo melhorias significativas em termos de desempenho, escalabilidade e facilidade de desenvolvimento. Por outro lado, o Azure Functions é uma solução serverless da Microsoft que permite executar código de forma escalável e sem a necessidade de gerenciar infraestrutura.<br><br>Quando combinamos essas duas tecnologias, abrimos um leque de possibilidades incríveis. Podemos criar aplicações altamente escaláveis, com uma arquitetura moderna e eficiente. Além disso, podemos tirar proveito de recursos como autoescala, pagando apenas pelo que utilizamos, e integração nativa com outros serviços da plataforma Azure.<br><br>Para demonstrar o potencial dessa integração, vamos ver um exemplo prático de como podemos criar uma função serverless em C# utilizando o .NET Aspire e o Azure Functions. Vamos imaginar que queremos criar uma função que recebe um pedido de compra e o processa, enviando uma notificação para o cliente.<br><br><pre><code class="language-csharp">using System;<br>using Microsoft.Azure.WebJobs;<br>using Microsoft.Azure.WebJobs.Host;<br>using Microsoft.Extensions.Logging;<br><br>public static class ProcessarPedido<br>{<br>    [FunctionName("ProcessarPedido")]<br>    public static void Run([QueueTrigger("pedidos", Connection = "AzureWebJobsStorage")] string pedido, ILogger log)<br>    {<br>        log.LogInformation($"Pedido recebido: {pedido}");<br>        // Processar o pedido e enviar a notificação para o cliente<br>    }<br>}<br></code></pre><br><br>Neste exemplo, utilizamos o Azure Functions para criar uma função que é acionada sempre que um novo pedido é inserido em uma fila. Com o .NET Aspire, podemos desenvolver essa função de forma mais eficiente e com melhor desempenho, aproveitando as novas funcionalidades da plataforma.<br><br>Além disso, podemos explorar recursos avançados, como integração com outros serviços do Azure, implementação de padrões de arquitetura modernos e monitoramento avançado do sistema. Com um bom domínio dessas tecnologias, podemos criar soluções realmente inovadoras e robustas.<br><br>Em resumo, a integração entre o .NET Aspire e o Azure Functions é uma combinação poderosa que pode levar nossos sistemas a um novo nível de escalabilidade e eficiência. Aproveite ao máximo essas tecnologias e explore todas as possibilidades que elas oferecem. O futuro da computação em nuvem está aqui, e cabe a nós aproveitá-lo da melhor forma possível.</div>
-<section class="article-validation" aria-labelledby="article-validation-title">
-<h2 id="article-validation-title">O que foi verificado</h2>
-<ul>
-<li><strong>Fonte principal:</strong> este conteúdo não possui URL externa cadastrada no histórico; a validação fica limitada ao texto publicado e aos metadados do próprio site.</li>
-<li><strong>Data considerada:</strong> a data editorial registrada para este artigo é 09/04/2025.</li>
-<li><strong>Recorte editorial:</strong> a análise conecta o tema ".NET Aspire e a Integração com Azure Functions: Desvendando a Potência dessa Dupla!" à categoria <strong>Outros</strong> e ao impacto para arquitetura, times e decisões técnicas.</li>
-<li><strong>Limites da análise:</strong> projeções e recomendações são tratadas como interpretação técnica, não como fato confirmado pela fonte.</li>
-</ul>
-</section>
-<section class="article-usefulness" aria-labelledby="article-usefulness-title">
-<h2 id="article-usefulness-title">Como aplicar essa leitura</h2>
-<ul>
-<li>Use o caso como gatilho para revisar decisões técnicas, dependências e premissas do seu contexto.</li>
-<li>Compare o impacto prometido com custo, risco, manutenção e experiência de quem usa o sistema.</li>
-<li>Crie um experimento pequeno antes de transformar a tendência em padrão de arquitetura.</li>
-</ul>
+<section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
+<h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
+<p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
+<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo. Data da fonte registrada: 09/04/2025.</p>
+<p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
+<p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>

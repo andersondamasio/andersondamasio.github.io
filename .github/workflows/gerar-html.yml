@@ -1,17 +1,17 @@
 name: gerar-e-commitar
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
   schedule:
     # GitHub Actions usa UTC; toda segunda as 12:00 UTC equivale a 09:00 em Sao Paulo.
     - cron: "0 12 * * 1"
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: gerar-e-commitar
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   gerar-e-commitar:
@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
@@ -37,11 +39,17 @@ jobs:
       - name: Validar regras Humanizer
         run: npm run test:humanizer
 
+      - name: Validar protecoes editoriais e modo rascunho
+        run: npm run test:editorial
+
+      - name: Validar URLs estaveis e verificacao publica
+        run: npm run test:seo:recovery
+
       - name: Instalar Chromium para Puppeteer
         run: npx puppeteer browsers install chrome
 
       - name: Gerar conteúdo com ChatGPT
-        run: node gerar-conteudo.js
+        run: npm run article:draft
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_DRAFT_MODEL: gpt-5.6-terra
@@ -51,17 +59,15 @@ jobs:
           TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
 
-      - name: Rebuild e auditoria SEO
-        run: npm run seo:maintain
+      - name: Preservar rascunhos retidos para revisao
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rascunhos-editoriais-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .editorial/rascunhos/*.json
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 14
 
-      - name: Commitar alterações
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add -A .
-          if git diff --cached --quiet; then
-            echo "Nada para commitar, encerrando."
-          else
-            git commit -m "Novo artigo com SEO validado"
-            git push origin HEAD:main
-          fi
+      - name: Confirmar que a geracao nao alterou arquivos versionados
+        run: git diff --exit-code

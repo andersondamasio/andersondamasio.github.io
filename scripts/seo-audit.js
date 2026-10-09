@@ -3,7 +3,7 @@ const path = require("path");
 const cheerio = require("cheerio");
 const {
   defaultSeoImage,
-  defaultArticleImages
+  isBrandImage
 } = require("./seo-assets");
 const { artigoTemMetadadosDeRelevancia } = require("./seo-article-metadata");
 const {
@@ -291,13 +291,13 @@ const stats = {
   robotsMissingPreviewDirectives: [],
   missingResourceHints: [],
   missingJsonLd: [],
-  articleJsonLdMissingImageVariants: [],
+  articleJsonLdMisleadingImages: [],
   articleAuthorMissingLinkedIdentity: [],
   articleJsonLdMissingRelevanceMetadata: [],
   articleMissingSourceCitation: [],
   articleMalformedSourceCitation: [],
   articleMissingValidationSection: [],
-  articleMissingUsefulnessSection: [],
+  articleGenericUsefulnessBoilerplate: [],
   malformedArticleHtml: [],
   articleBodyUnsafeHtml: [],
   imagesWithoutAlt: [],
@@ -320,7 +320,7 @@ const stats = {
   brokenInternalLinks: [],
   legacyPrivacyLinks: [],
   profilePageMissingMainEntity: [],
-  deepPaginationIndexable: [],
+  alternativeListingIndexable: [],
   invalidCategoryPages: [],
   thinCategoryPagesIndexable: [],
   weakArticleTitles: [],
@@ -353,9 +353,10 @@ if (fs.existsSync(generatorPath)) {
   }
 
   const requiredQualityGatePatterns = [
-    { label: "gerador sem limite de cadência editorial", pattern: /MAX_ARTIGOS_POR_DIA|avaliarJanelaPublicacao/i },
+    { label: "publicador sem limite de cadencia semanal", pattern: /avaliarCadenciaSemanal/i },
+    { label: "publicador sem aprovacao editorial versionada", pattern: /validarAprovacao/i },
     { label: "gerador sem validação de fonte rastreável", pattern: /avaliarFonteExtraidaParaGeracao|MIN_PALAVRAS_FONTE_ARTIGO/i },
-    { label: "gerador sem validação de qualidade pós-geração", pattern: /avaliarQualidadeArtigoGerado|MIN_PALAVRAS_ARTIGO_GERADO/i },
+    { label: "gerador sem diagnostico de qualidade pos-geracao", pattern: /avaliarQualidadeArtigoGerado/i },
     { label: "gerador sem controle de similaridade com a fonte", pattern: /similaridadeFonte|MAX_SIMILARIDADE_FONTE_ARTIGO/i },
     { label: "gerador sem revisão Humanizer obrigatória", pattern: /humanizarArtigoGerado|MIN_SCORE_HUMANIZER/i }
   ];
@@ -504,7 +505,7 @@ for (const file of walk(root)) {
       pushExample(stats.articleMissingValidationSection, fileRel);
     }
     if (!helpfulContent.usefulnessOk) {
-      pushExample(stats.articleMissingUsefulnessSection, fileRel);
+      pushExample(stats.articleGenericUsefulnessBoilerplate, fileRel);
     }
     const nonCanonicalPath = nonCanonicalArticleCategoryPath(fileRel, articleTitle);
     if (nonCanonicalPath) {
@@ -558,9 +559,11 @@ for (const file of walk(root)) {
 
       if (!noindex && jsonLdTypeIncludes(item, "BlogPosting")) {
         const imageUrls = collectJsonLdImageUrls(item.image);
-        const hasAllDefaultVariants = defaultArticleImages.every(image => imageUrls.includes(image));
-        if (!hasAllDefaultVariants) {
-          pushExample(stats.articleJsonLdMissingImageVariants, fileRel);
+        const imagensVisiveis = $("main img[src]").map((_, img) => {
+          try { return new URL($(img).attr("src"), `${siteUrl}/${fileRel}`).href; } catch { return ""; }
+        }).get();
+        if (imageUrls.some(image => isBrandImage(image) || !imagensVisiveis.includes(image))) {
+          pushExample(stats.articleJsonLdMisleadingImages, fileRel);
         }
         if (!authorHasLinkedIdentity(item.author)) {
           pushExample(stats.articleAuthorMissingLinkedIdentity, fileRel);
@@ -600,8 +603,8 @@ for (const file of walk(root)) {
       ? Number(categoryPagination[1])
       : null;
 
-  if (pageNumber && pageNumber > 3 && !noindex) {
-    pushExample(stats.deepPaginationIndexable, fileRel);
+  if (pageNumber && pageNumber > 1 && !noindex) {
+    pushExample(stats.alternativeListingIndexable, fileRel);
   }
 
   if (title && !noindex) {
@@ -717,13 +720,13 @@ const report = {
     robotsMissingPreviewDirectives: stats.robotsMissingPreviewDirectives,
     missingResourceHints: stats.missingResourceHints,
     missingJsonLd: stats.missingJsonLd,
-    articleJsonLdMissingImageVariants: stats.articleJsonLdMissingImageVariants,
+    articleJsonLdMisleadingImages: stats.articleJsonLdMisleadingImages,
     articleAuthorMissingLinkedIdentity: stats.articleAuthorMissingLinkedIdentity,
     articleJsonLdMissingRelevanceMetadata: stats.articleJsonLdMissingRelevanceMetadata,
     articleMissingSourceCitation: stats.articleMissingSourceCitation,
     articleMalformedSourceCitation: stats.articleMalformedSourceCitation,
     articleMissingValidationSection: stats.articleMissingValidationSection,
-    articleMissingUsefulnessSection: stats.articleMissingUsefulnessSection,
+    articleGenericUsefulnessBoilerplate: stats.articleGenericUsefulnessBoilerplate,
     malformedArticleHtml: stats.malformedArticleHtml,
     articleBodyUnsafeHtml: stats.articleBodyUnsafeHtml,
     imagesWithoutAlt: stats.imagesWithoutAlt,
@@ -746,7 +749,7 @@ const report = {
     brokenInternalLinks: stats.brokenInternalLinks,
     legacyPrivacyLinks: stats.legacyPrivacyLinks,
     profilePageMissingMainEntity: stats.profilePageMissingMainEntity,
-    deepPaginationIndexable: stats.deepPaginationIndexable,
+    alternativeListingIndexable: stats.alternativeListingIndexable,
     invalidCategoryPages: stats.invalidCategoryPages,
     thinCategoryPagesIndexable: stats.thinCategoryPagesIndexable,
     weakArticleTitles: stats.weakArticleTitles,

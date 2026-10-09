@@ -14,13 +14,17 @@ incertezas e conclusoes sustentadas pela fonte.
 ## Voz do autor
 
 - Escreva em portugues brasileiro, com clareza e ritmo variado.
-- Mantenha o tom de um arquiteto de software experiente, pragmatico e levemente
-  opinativo.
+- Mantenha uma voz editorial tecnica, clara e fundamentada nas fontes.
+- Nao personifique Anderson Damasio. Estes artigos nao sao relatos de vivencia
+  pessoal nem uma declaracao das opinioes particulares do autor.
 - Opinioes devem ser apresentadas como leitura tecnica, nao como fatos.
 - Nao invente clientes, projetos, resultados, conversas, incidentes ou
   experiencias pessoais do autor.
-- Use primeira pessoa apenas para uma opiniao que nao acrescente alegacoes
-  factuais, como "na minha leitura" ou "considero".
+- Apresente interpretacoes como analise tecnica, sem acrescentar primeira pessoa.
+- Preserve citacoes reais de terceiros, com atribuicao, e exemplos hipoteticos
+  explicitamente identificados. Nao altere citacoes para reduzir a nota de estilo.
+- Nao converta vivencias inventadas em alegacoes impessoais de testes ou pesquisas.
+  Sinalize falta de evidencia; o texto nao pode ser aprovado apenas pela linguagem.
 
 ## Padroes a remover
 

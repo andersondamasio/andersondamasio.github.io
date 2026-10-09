@@ -8,19 +8,17 @@ const {
 } = require("./seo-assets");
 const { gerarResourceHints } = require("./seo-resource-hints");
 const {
-  criarOrganizacaoSchema,
+  criarPublicadorSchema,
   criarPessoaSchema,
   criarWebSiteSchema,
   siteName,
   siteUrl
 } = require("./seo-identity");
 const { normalizarRobotsMeta } = require("./seo-robots");
+const { gerarSobrePerfil, estilosPerfil } = require("./seo-profile");
 
 const root = process.cwd();
 const rssUrl = `${siteUrl}/rss.xml`;
-const anoInicioExperiencia = 2005;
-const anosExperiencia = new Date().getFullYear() - anoInicioExperiencia;
-const textoAnosExperiencia = `mais de ${anosExperiencia} anos`;
 
 const pages = [
   {
@@ -31,8 +29,8 @@ const pages = [
   },
   {
     file: "sobre.html",
-    title: "Sobre Anderson Damasio | Anderson Damasio",
-    description: `Conheça Anderson Damasio, arquiteto de software com ${textoAnosExperiencia} de experiência em sistemas escaláveis e tecnologia.`,
+    title: "Anderson Damasio: perfil e critérios editoriais",
+    description: "Perfil profissional de Anderson Damasio: arquitetura de software, desenvolvimento de sistemas desde 2005, critérios editoriais e contato.",
     robots: "index, follow"
   },
   {
@@ -117,13 +115,13 @@ function buildSeo(page) {
   const robotsMeta = normalizarRobotsMeta(page.robots);
   const data = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": page.file === "sobre.html" ? "ProfilePage" : "WebPage",
     "name": page.title,
     "description": page.description,
     "url": url,
     "isPartOf": criarWebSiteSchema(),
-    "publisher": criarOrganizacaoSchema(),
-    ...(page.file === "sobre.html" ? { "about": criarPessoaSchema() } : {})
+    "publisher": criarPublicadorSchema(),
+    ...(page.file === "sobre.html" ? { "mainEntity": criarPessoaSchema() } : {})
   };
 
   return `<title>${escapeHtml(page.title)}</title>
@@ -144,7 +142,6 @@ ${gerarResourceHints()}
 <meta property="og:image:height" content="${escapeAttribute(defaultSeoImageHeight)}">
 <meta property="og:image:alt" content="${escapeAttribute(defaultSeoImageAlt)}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@andersondamasio">
 <meta name="twitter:title" content="${escapeAttribute(page.title)}">
 <meta name="twitter:description" content="${escapeAttribute(page.description)}">
 <meta name="twitter:image" content="${escapeAttribute(defaultSeoImage)}">
@@ -172,13 +169,19 @@ for (const page of pages) {
   if (!/<head[\s\S]*?>[\s\S]*?<\/head>/i.test(html)) continue;
 
   const seo = buildSeo(page);
-  const updated = html
+  let updated = html
     .replace(/<html(?![^>]*\blang=)([^>]*)>/i, '<html lang="pt-BR"$1>')
     .replace(/<html([^>]*)lang=["']pt-br["']([^>]*)>/i, '<html$1lang="pt-BR"$2>')
     .replace(/(<head[\s\S]*?>)([\s\S]*?)(<\/head>)/i, (_, open, head, close) => {
       return `${open}${rebuildHead(head, seo)}${close}`;
     })
     .replace(/[ \t]+$/gm, "");
+
+  if (page.file === "sobre.html") {
+    updated = updated.replace(/<main\b[^>]*>[\s\S]*?<\/main>/i, `<main>\n${gerarSobrePerfil()}\n</main>`)
+      .replace(/<style id="profile-styles">[\s\S]*?<\/style>\s*/i, "")
+      .replace(/<\/head>/i, `<style id="profile-styles">${estilosPerfil}</style>\n</head>`);
+  }
 
   if (updated !== html) {
     fs.writeFileSync(file, updated);
