@@ -28,6 +28,19 @@ test("publicacao deve corresponder a revisao e as superficies de descoberta", as
   assert.equal(resultado.revisaoEsperada, "a".repeat(40));
 });
 
+test("documentos do repositorio nao podem virar paginas ou downloads publicos", async () => {
+  const esperado = prepararVerificacao({ ler: f => f === "_config.yml" ? "exclude: ['*.md', '**/*.md']" : arquivos[f], revisao: "c".repeat(40) });
+  assert.equal(esperado.ausentes.length, 8);
+  const ausentes = Object.fromEntries(esperado.ausentes.map(f => [f, null]));
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(ausentes), tentativas: 1 })).aceita, true);
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...ausentes, "EDITORIAL_OPERACAO.html": html("/EDITORIAL_OPERACAO.html") }), tentativas: 1 })).aceita, false);
+  for (const status of [301, 403, 500]) {
+    const original = mockFetch(ausentes);
+    const fetchImpl = (url, options) => url.endsWith("EDITORIAL_OPERACAO.md") ? { status } : original(url, options);
+    assert.equal((await verificarPublicacao({ esperado, fetchImpl, tentativas: 1 })).aceita, false);
+  }
+});
+
 test("verificacao escolhe artigos indexaveis, respeitando curadoria do mais recente", () => {
   const novo = "artigos/arquitetura/retido.html";
   const extras = { ...arquivos, "titulos.json": JSON.stringify([

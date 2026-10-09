@@ -140,3 +140,15 @@ O rebuild preserva o corpo existente de artigos noindex, em vez de os transforma
 O primeiro piloto esta registrado em `dados/editorial/curadoria-piloto-2026-10.json`: leitura assistida de 20 corpos, oito correcoes de texto e cinco decisoes reversiveis de noindex. O registro distingue correcao pontual, reescrita, fontes consultadas e pendencias; nao declara revisao humana nem certificacao factual do acervo inteiro. As datas originais e URLs foram preservadas. O noindex foi escolhido por promessa comercial nao atendida e baixa contribuicao concreta dos textos, nao apenas por idade, trafego ou numero de palavras.
 
 A auditoria ignora `.editorial/`, que contem previas e fragmentos privados nao publicados. Isso nao dispensa a auditoria dos HTML publicos. Para ampliar o QA visual, acrescente caminhos `artigos/...html` ao comando `node scripts/qa-seo-templates.js`.
+
+## Exemplos tecnicos reproduziveis
+
+`exemplos/reservoir-sampling/` acompanha a correcao do guia existente, mantendo sua URL. O projeto .NET 10 inclui implementacao, contrato e 13 verificacoes executaveis, sem pacotes externos. O CI compila e executa os testes; a suite de templates compara o codigo do HTML com o arquivo C#, evitando que um trecho divergente seja publicado. Rodar a partir do diretorio do exemplo para respeitar `global.json`.
+
+O resultado representa testes automatizados em ambiente isolado, nao vivencia profissional do autor, revisao humana ou benchmark de desempenho. A atualizacao posterior ao piloto esta em `dados/editorial/correcao-reservoir-2026-10.json`; o primeiro registro de curadoria permanece como historico, sem sobrescrever os hashes do que foi revisado naquela etapa.
+
+## Documentacao fora do site
+
+O build legado do Pages convertia documentos Markdown do repositorio em paginas HTML que nao passavam pela auditoria do gerador. `_config.yml` exclui esses documentos da publicacao, preservando os arquivos no Git e os HTML do site. Os arquivos C#, projeto e selecao do SDK continuam acessiveis pelo guia; README, relatorios de manutencao e regras internas nao sao paginas para o leitor do site.
+
+O verificador pos-deploy confere oito enderecos de documentos, em Markdown e HTML, exigindo HTTP 404 ou 410. Uma pagina 200, redirecionamento, falha de acesso ou erro de servidor nao conta como exclusao confirmada. Essa verificacao complementa a auditoria dos HTML locais.
