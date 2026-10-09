@@ -37,6 +37,8 @@ jobs:
           npm run test:editorial
           npm run test:seo:recovery
           npm run test:seo:templates
+          npm run test:seo:navigation
+          npm run seo:navigation
           npm run test:model:budget
 
       - name: Garantir que o SEO gerado foi commitado

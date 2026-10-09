@@ -15,6 +15,8 @@
     "test:humanizer": "node scripts/test-humanizer-editorial.js",
     "test:editorial": "node --test scripts/test-editorial-policy.js scripts/test-editorial-review.js scripts/test-editorial-transaction.js",
     "test:seo:templates": "node --test scripts/test-seo-templates.js",
+    "test:seo:navigation": "node --test scripts/test-seo-archive.js scripts/test-seo-navigation-integration.js",
+    "seo:navigation": "node scripts/seo-navigation.js --strict",
     "article:review": "node scripts/editorial-cli.js",
     "editorial:inventory": "node scripts/editorial-inventory.js",
     "article:draft": "node gerar-conteudo.js --draft-only",

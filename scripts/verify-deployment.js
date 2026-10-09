@@ -16,8 +16,16 @@ function prepararVerificacao({ ler, revisao }) {
     .sort((a, b) => String(b.dataISO || b.data || "").localeCompare(String(a.dataISO || a.data || "")))
     .slice(0, 3).map(item => item.url);
   if (!recentes.length) throw new Error("Nenhum artigo recente com URL explicita para verificar.");
-  const arquivos = ["index.html", "sobre.html", "sitemap.xml", "rss.xml", "robots.txt", "ads.txt", ...recentes];
-  return { revisao, recentes, arquivos: arquivos.map(arquivo => ({ arquivo, hash: digest(ler(arquivo)) })) };
+  const home = cheerio.load(ler("index.html"));
+  let arquivosNavegacao = [];
+  if (home('a[href="/arquivo/index.html"]').length) {
+    const arquivo = cheerio.load(ler("arquivo/index.html"));
+    const meses = arquivo('a[href]').map((_, el) => arquivo(el).attr("href")).get().filter(href => /^\/arquivo\/\d{4}-\d{2}\.html$/.test(href));
+    if (!meses.length) throw new Error("Arquivo cronologico sem meses para verificar.");
+    arquivosNavegacao = [...new Set(["artigos/index.html", "arquivo/index.html", meses[0].slice(1), meses.at(-1).slice(1)])];
+  }
+  const arquivos = ["index.html", "sobre.html", "sitemap.xml", "rss.xml", "robots.txt", "ads.txt", ...recentes, ...arquivosNavegacao];
+  return { revisao, recentes, arquivosNavegacao, arquivos: arquivos.map(arquivo => ({ arquivo, hash: digest(ler(arquivo)) })) };
 }
 
 async function verificarPublicacao({ esperado, fetchImpl = fetch, baseUrl = siteUrl, tentativas = 4, intervaloMs = 15000, esperar = ms => new Promise(resolve => setTimeout(resolve, ms)) }) {
@@ -53,12 +61,13 @@ async function verificarPublicacao({ esperado, fetchImpl = fetch, baseUrl = site
       if (!itens.includes(url)) problemas.push(`Artigo ausente do RSS: ${arquivo}`);
       if (!linksHome.includes(url)) problemas.push(`Artigo ausente da home: ${arquivo}`);
     }
-    for (const arquivo of ["index.html", "sobre.html", ...esperado.recentes]) {
+    for (const arquivo of ["index.html", "sobre.html", ...esperado.recentes, ...(esperado.arquivosNavegacao || [])]) {
       const $ = cheerio.load(paginas.get(arquivo) || "");
       const canonical = new URL(arquivo === "index.html" ? "/" : `/${arquivo}`, baseUrl).href;
       if ($("link[rel='canonical']").attr("href") !== canonical) problemas.push(`Canonical incorreto: ${arquivo}`);
       if (!$('title').text().trim() || !$('h1').text().trim()) problemas.push(`Titulo/H1 ausente: ${arquivo}`);
       if (/noindex/i.test($("meta[name='robots']").attr("content") || "")) problemas.push(`Noindex inesperado: ${arquivo}`);
+      if (esperado.arquivosNavegacao?.includes(arquivo) && !locais.includes(canonical)) problemas.push(`Arquivo ausente do sitemap: ${arquivo}`);
     }
     resultado = { revisaoEsperada: esperado.revisao, verificadoEm: new Date().toISOString(), tentativa, aceita: verificacoes.every(item => item.aceita) && !problemas.length, verificacoes, problemas };
     if (resultado.aceita) return resultado;

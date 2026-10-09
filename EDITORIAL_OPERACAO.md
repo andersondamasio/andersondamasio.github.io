@@ -83,3 +83,13 @@ O bloco de responsabilidade editorial nao equivale a verificacao factual automat
 Antes de uma migracao ampla de templates, `node scripts/verify-editorial-migration.js --capture` registra uma linha de base local e recusa sobrescreve-la. Depois, o mesmo comando sem `--capture` compara corpos editoriais, H1, URL canonica, robots e datas. Nao substituir essa linha de base para ocultar diferencas: investigar e documentar alteracoes intencionais separadamente.
 
 `node scripts/qa-seo-templates.js` valida as paginas principais em tres larguras, com servidor temporario e navegador isolado. Defina `CHROME_PATH` para um Chrome local quando o Chromium do Puppeteer nao estiver disponivel. Os relatorios e capturas ficam em `.editorial/`, fora do repositorio publico. Esse QA nao acessa a sessao pessoal do navegador e nao demonstra indexacao nem Core Web Vitals de usuarios reais.
+
+## Arquivo e descoberta
+
+O rebuild cria `arquivo/index.html` e uma pagina por mes, agrupando publicacoes no fuso de Sao Paulo. Todos os artigos do mes recebem links HTML diretos; o seletor de dias e apenas um atalho dentro da pagina e nao esconde os artigos. As URLs anteriores e a navegacao sequencial continuam disponiveis.
+
+A politica local distingue as paginas de entrada (perfil, categorias elegiveis e arquivo cronologico) das continuacoes de listas. As continuacoes mantem canonical proprio e `noindex, follow`, ficando fora do sitemap; os artigos nao recebem noindex por causa da paginacao. Nao se trata de uma exigencia do Google: e a escolha do site para separar suas portas de entrada das listagens alternativas. A regra anterior de indexar somente as tres primeiras paginas foi removida. O criterio legado de pelo menos tres artigos para uma categoria permanece; ele nao e requisito de qualidade do Google e nao deve ser atendido gerando conteudo artificial.
+
+`npm run seo:navigation` mede caminhos no HTML local e falha se artigos indexaveis ficarem sem pagina, orfaos, dependentes apenas de paginas noindex ou a mais de cinco links da home. O relatorio nao e uma medicao do Googlebot. Para registrar uma comparacao inicial, use `node scripts/seo-navigation.js --baseline`; a linha de base nao e sobrescrita. `npm run test:seo:navigation` cobre datas, URLs, caminhos, sitemap, paginas obsoletas e dois rebuilds em fixtures.
+
+O verificador de deploy inclui os novos arquivos quando a revisao esperada os anuncia na home. Uma home atualizada com paginas mensais ausentes ou antigas nao passa como publicacao concluida.

@@ -320,7 +320,7 @@ const stats = {
   brokenInternalLinks: [],
   legacyPrivacyLinks: [],
   profilePageMissingMainEntity: [],
-  deepPaginationIndexable: [],
+  alternativeListingIndexable: [],
   invalidCategoryPages: [],
   thinCategoryPagesIndexable: [],
   weakArticleTitles: [],
@@ -603,8 +603,8 @@ for (const file of walk(root)) {
       ? Number(categoryPagination[1])
       : null;
 
-  if (pageNumber && pageNumber > 3 && !noindex) {
-    pushExample(stats.deepPaginationIndexable, fileRel);
+  if (pageNumber && pageNumber > 1 && !noindex) {
+    pushExample(stats.alternativeListingIndexable, fileRel);
   }
 
   if (title && !noindex) {
@@ -749,7 +749,7 @@ const report = {
     brokenInternalLinks: stats.brokenInternalLinks,
     legacyPrivacyLinks: stats.legacyPrivacyLinks,
     profilePageMissingMainEntity: stats.profilePageMissingMainEntity,
-    deepPaginationIndexable: stats.deepPaginationIndexable,
+    alternativeListingIndexable: stats.alternativeListingIndexable,
     invalidCategoryPages: stats.invalidCategoryPages,
     thinCategoryPagesIndexable: stats.thinCategoryPagesIndexable,
     weakArticleTitles: stats.weakArticleTitles,

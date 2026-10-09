@@ -45,6 +45,7 @@ const {
 } = require('./scripts/seo-source-citation');
 const { gerarSecoesConteudoUtil, hashCorpoEditorial } = require('./scripts/seo-helpful-content');
 const { descricaoPerfil, gerarApresentacaoPerfil, estilosPerfil } = require('./scripts/seo-profile');
+const { agruparArquivo, indiceMeses, conteudoMes, politicaListagem, estilosArquivo } = require('./scripts/seo-archive');
 const { gerarResourceHints } = require('./scripts/seo-resource-hints');
 const { normalizarRobotsMeta } = require('./scripts/seo-robots');
 const {
@@ -189,7 +190,7 @@ function gerarPaginasPorCategoria(titulos) {
         ? `Artigos sobre ${categoria} escritos por Anderson Damasio, com análises sobre arquitetura de software, tecnologia e desenvolvimento.`
         : `Página ${i + 1} dos artigos sobre ${categoria} escritos por Anderson Damasio.`;
       const categoryUrl = absoluteUrl(pagePath);
-      const categoriaIndexavel = artigos.length >= minArtigosCategoriaIndexavel && paginaListagemIndexavel(i);
+      const politica = politicaListagem({ papel: "categoria", indice: i, categoriaElegivel: artigos.length >= minArtigosCategoriaIndexavel });
 
       const html = `<!DOCTYPE html>
 <html lang="pt-BR">
@@ -200,7 +201,7 @@ function gerarPaginasPorCategoria(titulos) {
     title: pageTitle,
     description: pageDescription,
     canonicalPath: pagePath,
-    robots: categoriaIndexavel ? "index, follow" : "noindex, follow",
+    robots: politica.robots,
     structuredData: [
       {
         "@context": "https://schema.org",
@@ -305,6 +306,7 @@ function gerarPaginasPorCategoria(titulos) {
       ${links}
     </ul>
     ${paginacao}
+    <p><a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
   </main>
   ${gerarFooterNavegacao("..")}
 
@@ -343,6 +345,7 @@ function gerarIndiceCategorias(agrupados) {
     const slug = slugify(categoria);
     return `<li><a href="${slug}.html">${categoria}</a> (${artigos.length})</li>`;
   }).join("\n");
+  const arquivo = agruparArquivo(Object.values(agrupados).flat());
 
   const pagePath = "artigos/index.html";
   const pageTitle = `Artigos por categoria | ${siteName}`;
@@ -412,6 +415,7 @@ function gerarIndiceCategorias(agrupados) {
     text-decoration: underline;
     color: var(--link-hover);
   }
+  ${estilosArquivo}
 </style>
 
   ${gerarGoogleAnalyticsTag()}
@@ -430,6 +434,7 @@ ${gerarHeaderNavegacao("..")}
   <ul>
     ${links}
   </ul>
+  ${indiceMeses(arquivo)}
 </main>
 ${gerarFooterNavegacao("..")}
 
@@ -467,8 +472,6 @@ const humanizerReasoningEffort = opcaoAmbiente(
   ["none", "low", "medium", "high", "xhigh", "max"]
 );
 const artigosPorPagina = 10;
-const paginasListagemIndexaveis = 3;
-const paginasListagemNoSitemap = 3;
 const gerarAliasesLegados = true;
 const aliasesEstaticosLegados = [
   { origem: "politica-de-privacidade.html", destino: "politica.html", titulo: "Política de Privacidade" },
@@ -1094,14 +1097,6 @@ function prepararArtigosPublicaveis(titulos) {
     });
 }
 
-function paginaListagemIndexavel(indice) {
-  return indice < paginasListagemIndexaveis;
-}
-
-function paginaListagemNoSitemapPermitida(indice) {
-  return indice < paginasListagemNoSitemap;
-}
-
 function criarPaginacaoCompacta(totalPaginas, paginaAtual, nomePagina) {
   if (totalPaginas <= 1) return "";
 
@@ -1141,7 +1136,7 @@ function listarHtmlSite(dir = ".", saida = []) {
   if (!fs.existsSync(dir)) return saida;
 
   for (const entrada of fs.readdirSync(dir, { withFileTypes: true })) {
-    if (entrada.name === ".git" || entrada.name === "node_modules") continue;
+    if (entrada.name.startsWith(".") || entrada.name === "node_modules") continue;
 
     const completo = path.join(dir, entrada.name);
     if (entrada.isDirectory()) {
@@ -1244,6 +1239,9 @@ function gerarPaginasListagemObsoletas(paginasValidas) {
     if (/^index\d+\.html$/i.test(local) && !validas.has(local)) {
       destino = "/";
       titulo = "Artigos recentes";
+    } else if (/^arquivo\/\d{4}-\d{2}\.html$/i.test(local) && !validas.has(local)) {
+      destino = "arquivo/index.html";
+      titulo = "Arquivo de artigos";
     } else {
       const matchCategoria = local.match(/^artigos\/([^/]+?)(\d*)\.html$/i);
       if (matchCategoria && !validas.has(local)) {
@@ -2752,7 +2750,7 @@ ${gerarSeoHead({
   title: pageTitle,
   description: pageDescription,
   canonicalPath: pagePath,
-  robots: paginaListagemIndexavel(i) ? "index, follow" : "noindex, follow",
+  robots: politicaListagem({ papel: "perfil", indice: i }).robots,
   modifiedTime: updated_time,
   structuredData: [
     paginaSchema,
@@ -2870,7 +2868,7 @@ ${gerarHeaderNavegacao(".")}
 ${i === 0 ? gerarApresentacaoPerfil() : `<h1>Artigos de Anderson Damasio: p&aacute;gina ${i + 1}</h1>`}
 <section aria-labelledby="articles-title">
 <h2 id="articles-title">${i === 0 ? "Artigos recentes" : "Arquivo de artigos"}</h2>
-<p><a href="/artigos/index.html">Todos os assuntos</a></p>
+<p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
 ${links}
 </ul>
@@ -2937,6 +2935,49 @@ ${paginacao}
   return paginasGeradas;
 }
 
+function gerarArquivoCronologico(titulos) {
+  const grupos = agruparArquivo(titulos);
+  const paginas = new Set();
+  const documentos = [
+    { url: "arquivo/index.html", titulo: "Arquivo de artigos", descricao: "Arquivo cronol\u00f3gico dos artigos de Anderson Damasio, organizado por m\u00eas de publica\u00e7\u00e3o e com acesso aos textos do acervo.", corpo: indiceMeses(grupos) },
+    ...grupos.map((grupo, indice) => ({
+      url: grupo.url,
+      titulo: `Artigos de ${grupo.nome}`,
+      descricao: `Artigos publicados em ${grupo.nome} no site Anderson Damasio. Consulte os t\u00edtulos por dia e acesse o conte\u00fado com suas fontes e datas originais.`,
+      corpo: `<p>${grupo.artigos.length} ${grupo.artigos.length === 1 ? "artigo publicado" : "artigos publicados"}.</p>${conteudoMes(grupo)}<nav class="archive-navigation" aria-label="Meses do arquivo">${[grupos[indice - 1], grupos[indice + 1]].filter(Boolean).map(g => `<a href="/${g.url}">${escapeHTML(g.nome)}</a>`).join("\n")}<a href="/arquivo/index.html">Todos os meses</a></nav>`
+    }))
+  ];
+  for (const documento of documentos) {
+    const html = `<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+${gerarSeoHead({
+  title: `${documento.titulo} | ${siteName}`,
+  description: documento.descricao,
+  canonicalPath: documento.url,
+  robots: grupos.length ? politicaListagem({ papel: "arquivo" }).robots : "noindex, follow",
+  structuredData: [{ "@context": "https://schema.org", "@type": "CollectionPage", name: documento.titulo,
+    description: documento.descricao, url: absoluteUrl(documento.url), isPartOf: criarWebSiteSchema() },
+    criarBreadcrumbJsonLd([{ name: "In\u00edcio", url: "/" }, { name: "Artigos", url: "artigos/index.html" },
+      ...(documento.url !== "arquivo/index.html" ? [{ name: "Arquivo", url: "arquivo/index.html" }] : []),
+      { name: documento.titulo, url: documento.url }])]
+})}
+<style>
+:root { --bg: #f4f6f7; --text: #252a2e; --link: #0a66c2; --footer: #58616b; }
+${estilosPerfil}
+${estilosArquivo}
+a { color: var(--link); text-decoration: none; } a:hover { text-decoration: underline; }
+</style></head><body>
+${gerarHeaderNavegacao("..")}
+<main class="archive-content"><img src="/favicon.ico" alt="Marca de Anderson Damasio" width="48" height="48" decoding="async">
+<h1>${escapeHTML(documento.titulo)}</h1><p><a href="/artigos/index.html">Artigos por assunto</a></p>${documento.corpo}</main>
+${gerarFooterNavegacao("..")}
+</body></html>`;
+    escreverSeMudou(documento.url, html);
+    paginas.add(documento.url);
+  }
+  return paginas;
+}
+
 function gerarSitemap(titulos) {
   const entradas = new Map();
   const artigosPublicaveis = prepararArtigosPublicaveis(titulos);
@@ -2972,16 +3013,8 @@ function gerarSitemap(titulos) {
     adicionar(url);
   });
 
-  const paginasRaiz = Math.ceil(artigosPublicaveis.length / artigosPorPagina);
-  for (let i = 1; i < paginasRaiz && paginaListagemNoSitemapPermitida(i); i++) {
-    const artigosPagina = artigosPublicaveis.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
-    const dataMaisRecente = artigosPagina
-      .map(t => t.data ? new Date(t.data) : null)
-      .filter(d => d && !Number.isNaN(d.getTime()))
-      .sort((a, b) => b - a)[0];
-
-    adicionar(`index${i + 1}.html`, dataMaisRecente);
-  }
+  adicionar("arquivo/index.html");
+  for (const grupo of agruparArquivo(artigosPublicaveis)) adicionar(grupo.url);
 
   const agrupados = {};
   artigosPublicaveis.forEach(t => {
@@ -2996,16 +3029,14 @@ function gerarSitemap(titulos) {
     if (artigos.length < minArtigosCategoriaIndexavel) return;
 
     const slugCat = slugify(categoria);
-    const paginas = Math.ceil(artigos.length / artigosPorPagina);
-
-    for (let i = 0; i < paginas && paginaListagemNoSitemapPermitida(i); i++) {
-      const artigosPagina = artigos.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
-      const dataMaisRecente = artigosPagina
+    const politica = politicaListagem({ papel: "categoria", categoriaElegivel: artigos.length >= minArtigosCategoriaIndexavel });
+    if (politica.sitemap) {
+      const dataMaisRecente = artigos
         .map(t => t.data ? new Date(t.data) : null)
         .filter(d => d && !Number.isNaN(d.getTime()))
         .sort((a, b) => b - a)[0];
 
-      adicionar(`artigos/${slugCat}${i === 0 ? "" : (i + 1)}.html`, dataMaisRecente);
+      adicionar(`artigos/${slugCat}.html`, dataMaisRecente);
     }
   });
 
@@ -3110,10 +3141,12 @@ function atualizarPublicacaoSeo(titulosGerados) {
   if (semRegistro.length) {
     throw new Error(`Rebuild interrompido: ${semRegistro.length} artigos sem vinculo no cadastro. Nenhum conteudo sera removido automaticamente. Exemplos: ${semRegistro.slice(0, 5).join(", ")}`);
   }
+  agruparArquivo(artigosPublicaveis);
   const indisponiveisAlterados = gerarPaginasArtigosIndisponiveis(titulosGerados);
   const paginasValidas = new Set([
     ...gerarIndicesPaginados(artigosPublicaveis),
-    ...gerarPaginasPorCategoria(artigosPublicaveis)
+    ...gerarPaginasPorCategoria(artigosPublicaveis),
+    ...gerarArquivoCronologico(artigosPublicaveis)
   ]);
   const listagensObsoletas = gerarPaginasListagemObsoletas(paginasValidas);
   const aliasesAlterados = gerarPaginasCompatibilidadeLegadas(artigosPublicaveis);
@@ -3142,4 +3175,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { gerar, publicarRascunhoAprovado, humanizarArtigoGerado, reconstruirPaginasSeo, prepararArtigosPublicaveis };
+module.exports = { gerar, publicarRascunhoAprovado, humanizarArtigoGerado, reconstruirPaginasSeo, prepararArtigosPublicaveis, gerarArquivoCronologico };

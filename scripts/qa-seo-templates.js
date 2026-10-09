@@ -2,6 +2,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const http = require("node:http");
 const puppeteer = require("puppeteer");
+const { agruparArquivo } = require("./seo-archive");
 
 async function main() {
   const root = process.cwd();
@@ -25,6 +26,9 @@ async function main() {
     browser = await puppeteer.launch({ headless: true, executablePath: process.env.CHROME_PATH || puppeteer.executablePath() });
     const registros = JSON.parse(fs.readFileSync("titulos.json", "utf8"));
     const recente = registros.filter(r => r.url && r.localizacao?.estado !== "pendente").sort((a, b) => String(b.data).localeCompare(String(a.data)))[0].url;
+    const meses = agruparArquivo(registros.filter(r => r.url && r.localizacao?.estado !== "pendente"));
+    const mesMaior = [...meses].sort((a, b) => b.artigos.length - a.artigos.length)[0]?.url;
+    const arquivos = ["index.html", "sobre.html", "index2.html", recente, "artigos/index.html", "arquivo/index.html", mesMaior].filter(Boolean);
     const resultados = [];
     for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 844 }, { width: 320, height: 720 }]) {
       const contexto = await browser.createBrowserContext();
@@ -39,7 +43,7 @@ async function main() {
         if (url.hostname === "www.andersondamasio.com.br") return req.continue({ url: `${origem}${url.pathname}${url.search}` });
         return req.abort();
       });
-      for (const arquivo of ["index.html", "sobre.html", "index2.html", recente]) {
+      for (const arquivo of arquivos) {
         erros.length = 0;
         const resposta = await pagina.goto(`${origem}/${arquivo}`, { waitUntil: "networkidle0" });
         if (resposta.status() !== 200) throw new Error(`HTTP ${resposta.status()} para ${arquivo}`);
@@ -57,7 +61,7 @@ async function main() {
             const r = el.getBoundingClientRect(); return r.width > 0 && (r.left < -1 || r.right > innerWidth + 1) && !el.closest(".scroll-container");
           }).map(el => el.textContent.trim().slice(0, 80))
         }));
-        const nome = `${arquivo === recente ? "artigo" : path.basename(arquivo, ".html")}-${viewport.width}.png`;
+        const nome = `${arquivo === recente ? "artigo" : arquivo.replace(/\.html$/, "").replace(/\//g, "-")}-${viewport.width}.png`;
         await pagina.screenshot({ path: path.join(diretorio, nome), fullPage: false });
         if (arquivo === recente) {
           const bloco = await pagina.$(".article-validation");
@@ -68,6 +72,19 @@ async function main() {
       await pagina.goto(`${origem}/index.html`, { waitUntil: "networkidle0" });
       await Promise.all([pagina.waitForNavigation({ waitUntil: "networkidle0" }), pagina.click('.profile-links a[href="/sobre.html"]')]);
       if (!pagina.url().endsWith("/sobre.html")) throw new Error("Navegacao do perfil falhou.");
+      await pagina.goto(`${origem}/arquivo/index.html`, { waitUntil: "networkidle0" });
+      await Promise.all([pagina.waitForNavigation({ waitUntil: "networkidle0" }), pagina.click(`a[href="/${mesMaior}"]`)]);
+      if (!pagina.url().endsWith(`/${mesMaior}`)) throw new Error("Navegacao para o mes falhou.");
+      await pagina.click(".archive-date-selector summary");
+      await pagina.click(".archive-days a:last-child");
+      const diaVisivel = await pagina.evaluate(() => {
+        const alvo = document.querySelector(location.hash);
+        return alvo && alvo.getBoundingClientRect().top >= document.querySelector("header").getBoundingClientRect().bottom;
+      });
+      if (!diaVisivel) throw new Error("Cabecalho encobre o dia selecionado.");
+      const destino = await pagina.$eval(".article-index a", el => el.getAttribute("href"));
+      await Promise.all([pagina.waitForNavigation({ waitUntil: "networkidle0" }), pagina.click(".article-index a")]);
+      if (!pagina.url().endsWith(destino) || !(await pagina.$(".article-body"))) throw new Error("Navegacao do arquivo para artigo falhou.");
       await contexto.close();
     }
     const aceita = resultados.every(r => r.h1 === 1 && !r.overflow && !r.imagensQuebradas.length && !r.textoForaDaTela.length && !r.erros.length);

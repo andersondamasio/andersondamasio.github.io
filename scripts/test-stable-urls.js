@@ -66,7 +66,7 @@ test("nao aceita canonical divergente", () => fixture(({ root, url, html }) => {
 
 test("cadastro com endereco obsoleto e resolvido pelo HTML comprovado e preserva alias", () => fixture(({ root, url }) => {
   const anterior = "artigos/outros/titulo-antigo.html";
-  fs.writeFileSync("titulos.json", JSON.stringify([{ titulo: "Titulo antigo", url: anterior }]));
+  fs.writeFileSync("titulos.json", JSON.stringify([{ titulo: "Titulo antigo", url: anterior, data: "2026-10-01T12:00:00Z" }]));
   const plano = planejarEstabilizacao(root);
   assert.equal(plano.registros[0].url, url);
   assert.deepEqual(plano.registros[0].aliasesLegados, [anterior]);

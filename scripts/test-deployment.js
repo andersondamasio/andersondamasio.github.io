@@ -47,3 +47,17 @@ test("falha de rede nao equivale a publicacao e CRLF nao causa falso erro", asyn
   assert.equal(falha.aceita, false);
   assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch({ "robots.txt": arquivos['robots.txt'].replace(/\n/g, '\r\n') }), tentativas: 1 })).aceita, true);
 });
+
+test("novo arquivo cronologico e conferido no deploy e nao apenas na home", async () => {
+  const extras = {
+    "index.html": html("/", `<a href="/${artigo}">Artigo</a><a href="/arquivo/index.html">Arquivo</a>`),
+    "artigos/index.html": html("/artigos/index.html"),
+    "arquivo/index.html": html("/arquivo/index.html", '<a href="/arquivo/2026-10.html">Outubro de 2026</a>'),
+    "arquivo/2026-10.html": html("/arquivo/2026-10.html", `<a href="/${artigo}">Artigo</a>`),
+    "sitemap.xml": `<urlset>${[artigo, "artigos/index.html", "arquivo/index.html", "arquivo/2026-10.html"].map(p => `<url><loc>${baseUrl}/${p}</loc></url>`).join("")}</urlset>`
+  };
+  const esperado = prepararVerificacao({ ler: file => extras[file] || arquivos[file], revisao: "b".repeat(40) });
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(extras), tentativas: 1 })).aceita, true);
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...extras, "arquivo/2026-10.html": null }), tentativas: 1 })).aceita, false);
+  assert.ok(esperado.arquivosNavegacao.includes("arquivo/2026-10.html"));
+});

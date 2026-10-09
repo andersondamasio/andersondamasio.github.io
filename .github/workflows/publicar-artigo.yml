@@ -36,6 +36,7 @@ jobs:
         run: |
           npm run test:editorial
           npm run test:seo:templates
+          npm run test:seo:navigation
       - name: Conferir pacote e preparar artigo sem chamadas de IA
         env:
           PACOTE: ${{ inputs.pacote }}
