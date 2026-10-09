@@ -3134,6 +3134,7 @@ function carregarTitulosGerados() {
 }
 
 function atualizarPublicacaoSeo(titulosGerados) {
+  require('./scripts/indexation-policy').exigirManifestoAplicado();
   cacheArquivosArtigosPorSlug = null;
   const artigosPublicaveis = prepararArtigosPublicaveis(titulosGerados);
   const urlsConhecidas = new Set(artigosPublicaveis.map(artigo => artigo.url));

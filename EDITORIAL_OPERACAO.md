@@ -111,3 +111,14 @@ A disponibilidade dos dois modelos e conferida por consultas de leitura antes da
 HTTP, canonical, robots e correspondencia com o Git sao observados separadamente dos dados do Google. Ultimo rastreamento, indexacao, impressoes, cliques, CTR, posicao e consultas ficam `null` ate haver observacao real do Search Console, com fonte e periodo. Captura HTTP nao mede penalizacao nem visibilidade. Uma versao publica antiga impede confirmar o deploy. Depois da confirmacao, o relatorio propoe comparacoes em duas, quatro e oito semanas; isso nao cria um lembrete automatico nem garante que o Google ja tenha rastreado a revisao.
 
 O rebuild preserva o corpo existente de artigos noindex, em vez de os transformar em avisos de indisponibilidade. Eles ficam fora das superficies de promocao geradas e do sitemap/RSS; links contextuais deliberados no corpo nao sao removidos automaticamente. A decisao de noindex ainda exige curadoria individual e nao decorre apenas de um sinal de linguagem.
+
+## Decisoes por URL
+
+`dados/indexacao.json` registra as decisoes `manter`, `atualizar` e `noindex`, sempre com URL resolvida, motivo, evidencia, responsavel, data e hash do corpo revisado. O manifesto inicial nao altera nenhuma pagina. As URLs do perfil sao protegidas; adicionar URLs com valor comprovado a `protegidas` antes de preparar um lote. Ausencia de dado do Search Console nao significa ausencia de valor.
+
+1. Conferir o conteudo e registrar a decisao. O hash vem de `hashCorpoEditorial` aplicado ao HTML interno de `.article-body`; nao e uma nota automatica de qualidade.
+2. Executar `npm run seo:indexation:plan`. O dry-run mostra exatamente as URLs e mudancas, sem escrever.
+3. Aplicar com `node scripts/indexation-policy.js --apply HASH_CONFERIDO`. HTML alterado desde o dry-run invalida o hash. A aplicacao e o rebuild sao transacionais; falhas restauram os arquivos.
+4. Executar auditoria, testes e comparacao de dois rebuilds antes do commit/deploy. `seo:maintain`, backfill e rebuild recusam divergencia entre manifesto e HTML.
+
+`atualizar` registra uma decisao editorial, nao reescreve o corpo sozinho. A remocao de uma decisao do manifesto tambem nao recoloca uma pagina no indice: reindexacao exige decisao explicita e conteudo conferido. Canonical e URL sao preservados. A versao atual recusa `consolidar` e `retirar`, pois elas exigem revisao de equivalencia, links e comportamento HTTP em um fluxo separado; nao substitui artigos por redirecionamento generico para categoria.
