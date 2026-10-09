@@ -93,3 +93,11 @@ A politica local distingue as paginas de entrada (perfil, categorias elegiveis e
 `npm run seo:navigation` mede caminhos no HTML local e falha se artigos indexaveis ficarem sem pagina, orfaos, dependentes apenas de paginas noindex ou a mais de cinco links da home. O relatorio nao e uma medicao do Googlebot. Para registrar uma comparacao inicial, use `node scripts/seo-navigation.js --baseline`; a linha de base nao e sobrescrita. `npm run test:seo:navigation` cobre datas, URLs, caminhos, sitemap, paginas obsoletas e dois rebuilds em fixtures.
 
 O verificador de deploy inclui os novos arquivos quando a revisao esperada os anuncia na home. Uma home atualizada com paginas mensais ausentes ou antigas nao passa como publicacao concluida.
+
+## Avaliacao de modelos com orcamento fechado
+
+`npm run model:evaluation:plan` apenas mostra a matriz, sem acessar a API. Sao cinco pautas versionadas e tres variantes com o mesmo prompt: Terra medium, Terra high e Sol medium. A avaliacao estrutural e os sinais Humanizer nao verificam fatos nem escolhem um vencedor. Ler os textos contra as fontes e registrar fidelidade, utilidade especifica, limites e naturalidade separadamente.
+
+O workflow manual `avaliar-modelos.yml` usa o segredo OpenAI existente e uma unica autorizacao acumulada de US$ 2. Antes de qualquer chamada paga, cria atomicamente a tag `editorial-eval-usd2-2026-10`; outra execucao ou reexecucao e bloqueada, inclusive se a primeira falhar. Nao apagar essa tag para tentar novamente. Em caso de falha, conferir o ledger e o uso real antes de solicitar uma nova autorizacao. O ledger reserva o custo maximo antes do envio e conserva a reserva em timeout ou consumo desconhecido. Nao ha retry automatico.
+
+Resultados, uso, prompts e rascunho ficam em artefatos por 30 dias, sem modificar o catalogo nem publicar. O candidato RabbitMQ/Terra medium recebe uma segunda passagem Humanizer, quando a geracao estiver completa. O dossie preenchido por IA continua exigindo conferencia de fatos, trechos e duplicidade; nunca recebe aprovacao humana automatica. A falta de um candidato completo e um resultado da avaliacao, nao motivo para uma chamada paga extra silenciosa.

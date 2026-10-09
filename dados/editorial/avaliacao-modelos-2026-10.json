@@ -1,0 +1,87 @@
+{
+  "versao": 1,
+  "consultadaEm": "2026-10-09",
+  "origem": "Pesquisa assistida no Codex; notas em palavras proprias, nao copias integrais das fontes nem aprovacao humana dos futuros textos.",
+  "casos": [
+    {
+      "id": "postgres19-calendario",
+      "categoria": "Banco de Dados",
+      "genero": "noticia",
+      "pergunta": "O calendario anunciado do PostgreSQL 19 ja permite tratar a versao como lancada?",
+      "fonte": {
+        "url": "https://www.postgresql.org/message-id/915517c4-d0ee-49f9-bbeb-c683ef2b9d3f@postgresql.org",
+        "titulo": "PostgreSQL 19 RC1 and GA release dates",
+        "data": "2026-09-28T16:24:55Z",
+        "localizacao": "Mensagem de Jonathan S. Katz, primeiro paragrafo",
+        "resumoEvidencia": "O comunicado agenda RC1 para 15/10/2026 e GA para 29/10/2026, condicionada a ausencia de problemas significativos no periodo de release candidate. A consulta foi feita em 09/10/2026."
+      },
+      "naoConcluir": ["Nao dizer que RC1 ou GA ja foram lancados.", "Nao transformar o calendario condicionado em garantia.", "Nao inventar novas funcionalidades ou resultados de benchmark."],
+      "contribuicaoEsperada": "Propor uma pequena sequencia de preparacao de homologacao, explicitamente como recomendacao e sem fingir testes executados.",
+      "limiteEsperado": "A noticia sustenta um calendario anunciado, nao compatibilidade de uma aplicacao concreta nem prontidao para producao."
+    },
+    {
+      "id": "rabbitmq-confirmacao",
+      "categoria": "Arquitetura",
+      "genero": "guia-baseado-em-fontes",
+      "pergunta": "Um publisher confirm prova que o consumidor concluiu a operacao de negocio?",
+      "fonte": {
+        "url": "https://www.rabbitmq.com/docs/confirms",
+        "titulo": "Consumer Acknowledgements and Publisher Confirms",
+        "data": null,
+        "localizacao": "Secao Are Publisher Confirms Related to Consumer Delivery Acknowledgements?",
+        "resumoEvidencia": "Publisher confirms tratam da comunicacao entre produtor e broker; consumer acknowledgements tratam da entrega ao consumidor. Os mecanismos sao independentes e nao conhecem o estado um do outro."
+      },
+      "naoConcluir": ["Nao prometer exactly-once ou transacao distribuida.", "Nao dizer que um confirm significa pedido pago ou negocio concluido."],
+      "contribuicaoEsperada": "Criar exemplo hipotetico curto de um pedido, distinguindo recebimento pelo broker e conclusao do negocio.",
+      "limiteEsperado": "O exemplo nao foi executado; o protocolo descrito nao prova o resultado de negocio."
+    },
+    {
+      "id": "dotnet10-avaliacao",
+      "categoria": "Desenvolvimento de Software",
+      "genero": "analise-baseada-em-fontes",
+      "pergunta": "O que a documentacao do .NET 10 permite afirmar antes de testar uma migracao?",
+      "fonte": {
+        "url": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-10/overview",
+        "titulo": "What's new in .NET 10",
+        "data": null,
+        "localizacao": "Introducao e secoes .NET runtime e .NET SDK",
+        "resumoEvidencia": ".NET 10 e uma versao LTS com tres anos de suporte. A documentacao lista melhorias no runtime e suporte a Microsoft.Testing.Platform no comando dotnet test. Ela nao demonstra o desempenho ou a compatibilidade de uma aplicacao do leitor."
+      },
+      "naoConcluir": ["Nao inventar percentuais de ganho, dependencias compativeis ou migracao sem alteracoes.", "Nao confundir recurso documentado com teste executado pelo autor."],
+      "contribuicaoEsperada": "Propor criterios de aceite de uma migracao, deixando testes e medicoes como trabalho a realizar.",
+      "limiteEsperado": "Nao foram executados benchmarks nem validada uma aplicacao real nesta analise."
+    },
+    {
+      "id": "http-retry-idempotencia",
+      "categoria": "Back-end",
+      "genero": "guia-baseado-em-fontes",
+      "pergunta": "Idempotencia HTTP exige respostas identicas em toda repeticao?",
+      "fonte": {
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2",
+        "titulo": "RFC 9110: HTTP Semantics",
+        "data": null,
+        "localizacao": "Secao 9.2.2, Idempotent Methods",
+        "resumoEvidencia": "Idempotencia diz respeito ao efeito pretendido no servidor ao repetir requisicoes identicas, nao a respostas identicas. PUT, DELETE e metodos seguros sao idempotentes pela semantica definida. Repetir automaticamente metodos nao idempotentes exige conhecimento adicional sobre sua semantica ou aplicacao anterior."
+      },
+      "naoConcluir": ["Nao afirmar que idempotencia exige o mesmo codigo de resposta.", "Nao recomendar retry irrestrito de POST nem inventar garantias de uma API concreta."],
+      "contribuicaoEsperada": "Dar um exemplo hipotetico de timeout e uma decisao pratica entre repetir e reconciliar o estado.",
+      "limiteEsperado": "A semantica HTTP nao comprova que uma implementacao real respeita o contrato."
+    },
+    {
+      "id": "rag-integridade-autorizacao",
+      "categoria": "Inteligência Artificial",
+      "genero": "analise-baseada-em-fontes",
+      "pergunta": "Um hash correto e a permissao no documento original bastam para proteger um RAG?",
+      "fonte": {
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/RAG_Security_Cheat_Sheet.html",
+        "titulo": "RAG Security Cheat Sheet",
+        "data": null,
+        "localizacao": "Secoes 1 (Document Poisoning) e 4 (Access Control Inheritance)",
+        "resumoEvidencia": "Um digest correspondente comprova consistencia com a base aprovada, nao ausencia de prompt injection. A OWASP recomenda proteger o manifesto separadamente, conservar metadados de acesso nos chunks e verificar autorizacao na recuperacao, antes de o conteudo chegar ao modelo."
+      },
+      "naoConcluir": ["Nao prometer eliminacao de prompt injection por hash.", "Nao delegar ao modelo a decisao de acesso.", "Nao inventar auditoria de seguranca realizada."],
+      "contribuicaoEsperada": "Separar integridade, autorizacao e interpretacao em um pequeno exemplo hipotetico com dois departamentos.",
+      "limiteEsperado": "Os controles citados reduzem riscos distintos e nao constituem prova de seguranca de um sistema."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+name: Avaliacao editorial unica (teto US$ 2)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: editorial-eval-usd2-2026-10
+  cancel-in-progress: false
+
+jobs:
+  avaliar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+      - name: Testar custo, isolamento e protecao contra repeticao
+        run: npm run test:model:budget
+      - name: Comparar as cinco pautas e preservar rascunho sem publicar
+        run: node scripts/model-evaluation.js --execute
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      - name: Preservar uso e resultados mesmo em caso de erro
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: avaliacao-editorial-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .editorial/avaliacao-modelos/
+            .editorial/rascunhos/
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Garantir que nenhum artigo foi publicado
+        run: git diff --exit-code

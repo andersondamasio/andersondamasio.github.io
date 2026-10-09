@@ -25,7 +25,8 @@
     "seo:verify:deployment": "node scripts/verify-deployment.js",
     "test:seo:recovery": "node --test scripts/test-deployment.js scripts/test-stable-urls.js",
     "test:rebuild:site": "node scripts/test-rebuild-site.js",
-    "test:model:budget": "node --test scripts/test-model-evaluation-budget.js"
+    "test:model:budget": "node --test scripts/test-model-evaluation-budget.js scripts/test-model-evaluation.js",
+    "model:evaluation:plan": "node scripts/model-evaluation.js"
   },
   "dependencies": {
     "axios": "^1.9.0",

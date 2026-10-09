@@ -166,4 +166,4 @@ function avaliarCadenciaSemanal(titulos, agora = new Date()) {
 }
 
 module.exports = { hashRascunho, criarDossie, validarDossie, aprovarRascunho, validarAprovacao,
-  avaliarHtmlEditorial, avaliarCadenciaSemanal, candidatosDuplicidade, checklistObrigatorio };
+  avaliarHtmlEditorial, avaliarCadenciaSemanal, candidatosDuplicidade, checklistObrigatorio, textoHtml };
