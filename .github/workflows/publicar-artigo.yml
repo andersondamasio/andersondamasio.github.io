@@ -1,0 +1,58 @@
+name: Publicar artigo revisado
+
+on:
+  workflow_dispatch:
+    inputs:
+      pacote:
+        description: Caminho do JSON aprovado e commitado em dados/editorial/aprovados
+        type: string
+        required: true
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: publicacao-editorial-main
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
+      - name: Validar protecoes editoriais
+        run: npm run test:editorial
+      - name: Conferir pacote e preparar artigo sem chamadas de IA
+        env:
+          PACOTE: ${{ inputs.pacote }}
+        run: |
+          [[ "$PACOTE" =~ ^dados/editorial/aprovados/[a-f0-9]{64}\.json$ ]] || exit 1
+          git ls-files --error-unmatch -- "$PACOTE"
+          npm run article:review -- conferir "$PACOTE"
+          npm run article:review -- publicar "$PACOTE"
+      - name: Rebuild e auditoria antes do commit
+        run: npm run seo:maintain
+      - name: Commitar publicacao validada
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A .
+          git diff --cached --check
+          git commit -m "Publica artigo com revisao editorial registrada"
+          git push origin HEAD:main
+      - name: Solicitar build do GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

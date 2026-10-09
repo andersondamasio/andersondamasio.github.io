@@ -2,21 +2,16 @@ name: gerar-e-commitar
 
 on:
   workflow_dispatch:
-    inputs:
-      somente_rascunho:
-        description: Gerar rascunho para revisao, sem publicar nem alterar o site
-        type: boolean
-        default: true
   schedule:
     # GitHub Actions usa UTC; toda segunda as 12:00 UTC equivale a 09:00 em Sao Paulo.
     - cron: "0 12 * * 1"
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: gerar-e-commitar
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   gerar-e-commitar:
@@ -26,6 +21,8 @@ jobs:
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
@@ -52,14 +49,8 @@ jobs:
         run: npx puppeteer browsers install chrome
 
       - name: Gerar conteúdo com ChatGPT
-        run: |
-          if [ "$DRAFT_ONLY" = "true" ]; then
-            npm run article:draft
-          else
-            node gerar-conteudo.js
-          fi
+        run: npm run article:draft
         env:
-          DRAFT_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.somente_rascunho }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_DRAFT_MODEL: gpt-5.6-terra
           OPENAI_DRAFT_REASONING_EFFORT: medium
@@ -78,19 +69,5 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
-      - name: Rebuild e auditoria SEO
-        if: github.event_name != 'workflow_dispatch' || !inputs.somente_rascunho
-        run: npm run seo:maintain
-
-      - name: Commitar alterações
-        if: github.event_name != 'workflow_dispatch' || !inputs.somente_rascunho
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add -A .
-          if git diff --cached --quiet; then
-            echo "Nada para commitar, encerrando."
-          else
-            git commit -m "Novo artigo com SEO validado"
-            git push origin HEAD:main
-          fi
+      - name: Confirmar que a geracao nao alterou arquivos versionados
+        run: git diff --exit-code

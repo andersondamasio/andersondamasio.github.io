@@ -7,7 +7,8 @@ const { avaliarGeneroEditorial, revisarComPoliticaEditorial } = require("./edito
 const { avaliarSinaisHumanizer, validarPreservacaoHumanizer } = require("./humanizer-editorial");
 const { salvarRascunhoEditorial } = require("./editorial-draft");
 const { inventariarAcervo } = require("./editorial-inventory");
-const { gerar, reconstruirPaginasSeo } = require("../gerar-conteudo");
+const { gerar, publicarRascunhoAprovado, reconstruirPaginasSeo } = require("../gerar-conteudo");
+const { aprovacaoFixture } = require("./fixtures/editorial-review");
 
 const fonteUrl = "https://example.org/documentacao";
 const citacao = "Eu testei o sistema em um ambiente isolado e documentei os limites.";
@@ -119,12 +120,11 @@ const corpoFixture = Array.from({ length: 5 }, (_, indice) =>
   `<h2>Decisao tecnica ${indice + 1}</h2><p>${"A noticia reporta um fato da fonte e esta interpretacao possui limites para a aplicacao pratica pela equipe de arquitetura. ".repeat(10)}</p>`
 ).join("") + "<ul><li>Confira os contratos entre servicos.</li></ul>";
 
-async function testarGerador(root, { corpo = corpoFixture, corpoRevisado = corpo, somenteRascunho = true, publicarEsperado = false } = {}) {
+async function testarGerador(root, { corpo = corpoFixture, corpoRevisado = corpo, somenteRascunho = true } = {}) {
   fs.writeFileSync(path.join(root, "titulos.json"), "[]\n");
   fs.writeFileSync(path.join(root, "index.html"), "home protegida");
   fs.writeFileSync(path.join(root, "sitemap.xml"), "sitemap protegido");
   fs.writeFileSync(path.join(root, "rss.xml"), "feed protegido");
-  if (publicarEsperado) fs.mkdirSync(path.join(root, "dados"));
   const antes = snapshot(root);
   process.chdir(root);
   let geracoes = 0;
@@ -148,10 +148,6 @@ async function testarGerador(root, { corpo = corpoFixture, corpoRevisado = corpo
     }
   });
   assert.equal(geracoes, 1);
-  if (publicarEsperado) {
-    assert.equal(resultado.publicado, true);
-    return { resultado, humanizacoes };
-  }
   assert.equal(resultado.publicado, false);
   assert.equal(resultado.estado, "revisao_pendente");
   assert.deepEqual(snapshot(root), antes);
@@ -180,19 +176,24 @@ test("gerador integrado: nao publica vivencia reintroduzida pelo Humanizer", asy
   assert.ok(pacote.pendencias.includes("vivencia-atribuida-ao-autor"));
 }));
 
-test("gerador integrado: rascunho reprovado na estrutura ainda e salvo para revisao", async () => comWorkspace(async root => {
+test("gerador integrado: noticia curta nao exige extensao artificial e ainda requer revisao", async () => comWorkspace(async root => {
   const { pacote } = await testarGerador(root, { corpo: "<p>Uma explicacao curta baseada na fonte.</p>" });
-  assert.equal(pacote.qualidadeArtigo.aceita, false);
-  assert.ok(pacote.pendencias.some(motivo => motivo.startsWith("artigo-curto")));
+  assert.equal(pacote.qualidadeArtigo.aceita, true);
+  assert.ok(pacote.pendencias.includes("revisao-humana"));
+  assert.equal(pacote.revisaoHumana, null);
 }));
 
 test("publicacao em fixture isolada preserva artigo e politica apos dois rebuilds", async () => comWorkspace(async root => {
-  const { resultado } = await testarGerador(root, { somenteRascunho: false, publicarEsperado: true });
+  fs.writeFileSync(path.join(root, "titulos.json"), "[]");
+  process.chdir(root);
+  const resultado = publicarRascunhoAprovado(aprovacaoFixture());
+  assert.equal(resultado.publicado, true);
+  assert.equal(resultado.onlineVerificado, false);
   const registros = JSON.parse(fs.readFileSync(path.join(root, "titulos.json"), "utf8"));
   assert.equal(registros.length, 1);
   assert.equal(registros[0].url, resultado.url);
-  assert.equal(registros[0].qualidadeEditorial.triagemGenero.aceita, true);
-  assert.equal(registros[0].qualidadeEditorial.verificacaoFactualHumana, false);
+  assert.ok(registros[0].editorial.hash);
+  assert.equal(registros[0].editorial.revisaoHumana.responsavel, "Revisor sintetico de teste offline");
   const artigo = fs.readFileSync(path.join(root, resultado.url), "utf8");
   reconstruirPaginasSeo();
   const primeiro = snapshot(root);
@@ -201,6 +202,37 @@ test("publicacao em fixture isolada preserva artigo e politica apos dois rebuild
   assert.equal(fs.readFileSync(path.join(root, resultado.url), "utf8"), artigo);
   assert.ok(fs.readFileSync(path.join(root, "sitemap.xml"), "utf8").includes(resultado.url));
   assert.ok(fs.readFileSync(path.join(root, "rss.xml"), "utf8").includes(resultado.url));
+}));
+
+test("gerador integrado: parametro legado false nao permite publicacao automatica", async () => comWorkspace(async root => {
+  const { pacote } = await testarGerador(root, { somenteRascunho: false });
+  assert.equal(pacote.estado, "revisao_pendente");
+}));
+
+test("publicador integrado bloqueia pendencia, repeticao e colisao sem alterar arquivos", async () => comWorkspace(root => {
+  fs.writeFileSync(path.join(root, "titulos.json"), "[]");
+  process.chdir(root);
+  const aprovado = aprovacaoFixture();
+  const antes = snapshot(root);
+  assert.throws(() => publicarRascunhoAprovado({ ...aprovado, revisaoHumana: null }), /aprovacao/);
+  assert.deepEqual(snapshot(root), antes);
+  const resultado = publicarRascunhoAprovado(aprovado);
+  const depois = snapshot(root);
+  assert.throws(() => publicarRascunhoAprovado(aprovado), /ja-publicado/);
+  assert.deepEqual(snapshot(root), depois);
+  fs.writeFileSync(path.join(root, "titulos.json"), "[]");
+  assert.throws(() => publicarRascunhoAprovado(aprovado), /existente/);
+  assert.equal(fs.readFileSync(path.join(root, resultado.url), "utf8"), Buffer.from(depois[resultado.url.replaceAll("/", path.sep)], "base64").toString());
+}));
+
+test("publicador integrado reverte artigo e catalogo se rebuild detectar perda de cobertura", async () => comWorkspace(root => {
+  fs.writeFileSync(path.join(root, "titulos.json"), "[]");
+  fs.mkdirSync(path.join(root, "artigos", "arquitetura"), { recursive: true });
+  fs.writeFileSync(path.join(root, "artigos", "arquitetura", "fora-do-cadastro.html"), '<html><head><title>Artigo real sem registro no catalogo</title></head><body><h1>Artigo real sem registro no catalogo</h1><div class="article-body"><p>Conteudo que nao pode desaparecer da navegacao.</p></div></body></html>');
+  const antes = snapshot(root);
+  process.chdir(root);
+  assert.throws(() => publicarRascunhoAprovado(aprovacaoFixture()), /cobertura|cadastro|registro/i);
+  assert.deepEqual(snapshot(root), antes);
 }));
 
 test("inventario e somente leitura e nunca resolve silenciosamente URLs ambiguas", async () => comWorkspace(root => {

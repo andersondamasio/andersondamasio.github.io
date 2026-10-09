@@ -2,12 +2,14 @@ const fs = require("fs");
 const path = require("path");
 const { randomUUID } = require("crypto");
 const { versaoPoliticaEditorial } = require("./editorial-policy");
+const { criarDossie } = require("./editorial-review");
 
-function salvarRascunhoEditorial(dados, root = process.cwd()) {
+function salvarRascunhoEditorial(dados, root = process.cwd(), titulos = []) {
   const diretorio = path.join(root, ".editorial", "rascunhos");
   const pacote = {
     ...dados,
-    versao: 1,
+    versao: 2,
+    dossie: criarDossie(dados, titulos),
     politica: versaoPoliticaEditorial,
     estado: "revisao_pendente",
     revisaoHumana: null,
