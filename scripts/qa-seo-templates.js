@@ -28,7 +28,9 @@ async function main() {
     const recente = registros.filter(r => r.url && r.localizacao?.estado !== "pendente").sort((a, b) => String(b.data).localeCompare(String(a.data)))[0].url;
     const meses = agruparArquivo(registros.filter(r => r.url && r.localizacao?.estado !== "pendente"));
     const mesMaior = [...meses].sort((a, b) => b.artigos.length - a.artigos.length)[0]?.url;
-    const arquivos = ["index.html", "sobre.html", "index2.html", recente, "artigos/index.html", "arquivo/index.html", mesMaior].filter(Boolean);
+    const extras = process.argv.slice(2);
+    if (extras.some(arquivo => !/^artigos\/[a-z0-9/-]+\.html$/.test(arquivo))) throw new Error("QA adicional exige caminho local de artigo.");
+    const arquivos = [...new Set(["index.html", "sobre.html", "index2.html", recente, "artigos/index.html", "arquivo/index.html", mesMaior, ...extras].filter(Boolean))];
     const resultados = [];
     for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 844 }, { width: 320, height: 720 }]) {
       const contexto = await browser.createBrowserContext();

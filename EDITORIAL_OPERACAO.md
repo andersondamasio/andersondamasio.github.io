@@ -62,7 +62,11 @@ O hash vincula a aprovacao ao texto, titulo, resumo, fontes, pauta, evidencias e
 
 ## Publicar e verificar
 
-Commitado o pacote aprovado em `main`, execute o workflow **Publicar artigo revisado** e informe seu caminho completo no repositorio. Ele confere a aprovacao novamente, impede colisao de URL e repeticao de pacote, respeita o intervalo semanal, reconstrui o site e executa a auditoria antes de commitar e solicitar o build do Pages. Nenhuma chamada de IA ocorre nessa etapa.
+Commitado o pacote aprovado em `main`, inclua seu caminho em `pacotes` no arquivo `dados/editorial/fila.json`. A fila respeita essa ordem e nunca busca rascunhos privados. O workflow **Publicar artigo revisado** consulta a fila nas segundas-feiras, as 09h20 de Sao Paulo (12h20 UTC). O GitHub pode atrasar o horario agendado. Fila vazia, inteiramente publicada ou intervalo semanal ainda nao cumprido encerram sem publicacao; nao ha aprovacao automatica nem promessa de um artigo semanal sem revisao humana.
+
+Para antecipar a consulta, execute o mesmo workflow manualmente, deixando `pacote` vazio para usar a fila ou informando o caminho de um pacote aprovado. Ele confere a aprovacao novamente contra o acervo atual, impede colisao de URL e repeticao de pacote, respeita o intervalo de sete dias, reconstrui o site e executa a auditoria antes de commitar e solicitar o build do Pages. Pacote alterado, invalido ou sem arquivo interrompe a execucao para correcao, em vez de ser pulado silenciosamente. Nenhuma chamada de IA ocorre nessa etapa.
+
+`npm run article:queue` permite testar a selecao local sem escrever no artigo, aprovar, consumir API ou publicar. O JSON inicial da fila esta vazio. Aprovacoes anteriores continuam exigindo uma versao identica e podem precisar de nova revisao de sobreposicao se o acervo mudou.
 
 Alternativamente, prepare os arquivos locais com `npm run article:review -- publicar "dados/editorial/aprovados/HASH.json"`, execute `npm run seo:maintain` e confira o diff antes do commit e push. O retorno local nao confirma deploy online. O workflow de verificacao publica deve comparar as paginas servidas com a revisao esperada depois do Pages.
 
@@ -132,3 +136,7 @@ O rebuild preserva o corpo existente de artigos noindex, em vez de os transforma
 4. Executar auditoria, testes e comparacao de dois rebuilds antes do commit/deploy. `seo:maintain`, backfill e rebuild recusam divergencia entre manifesto e HTML.
 
 `atualizar` registra uma decisao editorial, nao reescreve o corpo sozinho. A remocao de uma decisao do manifesto tambem nao recoloca uma pagina no indice: reindexacao exige decisao explicita e conteudo conferido. Canonical e URL sao preservados. A versao atual recusa `consolidar` e `retirar`, pois elas exigem revisao de equivalencia, links e comportamento HTTP em um fluxo separado; nao substitui artigos por redirecionamento generico para categoria.
+
+O primeiro piloto esta registrado em `dados/editorial/curadoria-piloto-2026-10.json`: leitura assistida de 20 corpos, oito correcoes de texto e cinco decisoes reversiveis de noindex. O registro distingue correcao pontual, reescrita, fontes consultadas e pendencias; nao declara revisao humana nem certificacao factual do acervo inteiro. As datas originais e URLs foram preservadas. O noindex foi escolhido por promessa comercial nao atendida e baixa contribuicao concreta dos textos, nao apenas por idade, trafego ou numero de palavras.
+
+A auditoria ignora `.editorial/`, que contem previas e fragmentos privados nao publicados. Isso nao dispensa a auditoria dos HTML publicos. Para ampliar o QA visual, acrescente caminhos `artigos/...html` ao comando `node scripts/qa-seo-templates.js`.

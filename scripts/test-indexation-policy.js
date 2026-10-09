@@ -69,6 +69,17 @@ test("mudanca de corpo ou HTML invalida a decisao ou o dry-run", () => fixture((
   assert.throws(planejarIndexacao, /Corpo divergiu/);
 }));
 
+test("CLI aplica o hash e reconstrui sem depender da ordem de require", () => fixture(({ cadastro, corpo }) => {
+  const comando = path.join(__dirname, "indexation-policy.js");
+  const plano = JSON.parse(execFileSync(process.execPath, [comando], { encoding: "utf8" }));
+  const saida = execFileSync(process.execPath, [comando, "--apply", plano.hash], { encoding: "utf8" });
+  assert.match(saida, /"noindex": 1/);
+  const $ = cheerio.load(fs.readFileSync(cadastro[0].url, "utf8"));
+  assert.equal($(".article-body").html(), corpo);
+  assert.match($("meta[name=robots]").attr("content"), /noindex/);
+  assert.equal(JSON.parse(execFileSync(process.execPath, [comando, "--check"], { encoding: "utf8" })).alteracoes, 0);
+}));
+
 test("rejeita URL protegida, sem evidencia, ambigua e operacao destrutiva", () => fixture(({ manifesto, salvar }) => {
   const original = structuredClone(manifesto);
   for (const alterar of [
