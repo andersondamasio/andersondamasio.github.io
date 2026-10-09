@@ -31,5 +31,12 @@ jobs:
       - name: Rebuild e auditoria SEO
         run: npm run seo:maintain
 
+      - name: Validar regressao editorial, URLs e verificacao publica
+        run: |
+          npm run test:humanizer
+          npm run test:editorial
+          npm run test:seo:recovery
+          npm run test:model:budget
+
       - name: Garantir que o SEO gerado foi commitado
         run: git diff --exit-code -- . ':(exclude)node_modules/**'

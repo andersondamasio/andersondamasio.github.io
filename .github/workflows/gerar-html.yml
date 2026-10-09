@@ -1,7 +1,12 @@
 name: gerar-e-commitar
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      somente_rascunho:
+        description: Gerar rascunho para revisao, sem publicar nem alterar o site
+        type: boolean
+        default: true
   schedule:
     # GitHub Actions usa UTC; toda segunda as 12:00 UTC equivale a 09:00 em Sao Paulo.
     - cron: "0 12 * * 1"
@@ -37,12 +42,24 @@ jobs:
       - name: Validar regras Humanizer
         run: npm run test:humanizer
 
+      - name: Validar protecoes editoriais e modo rascunho
+        run: npm run test:editorial
+
+      - name: Validar URLs estaveis e verificacao publica
+        run: npm run test:seo:recovery
+
       - name: Instalar Chromium para Puppeteer
         run: npx puppeteer browsers install chrome
 
       - name: Gerar conteúdo com ChatGPT
-        run: node gerar-conteudo.js
+        run: |
+          if [ "$DRAFT_ONLY" = "true" ]; then
+            npm run article:draft
+          else
+            node gerar-conteudo.js
+          fi
         env:
+          DRAFT_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.somente_rascunho }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_DRAFT_MODEL: gpt-5.6-terra
           OPENAI_DRAFT_REASONING_EFFORT: medium
@@ -51,10 +68,22 @@ jobs:
           TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
 
+      - name: Preservar rascunhos retidos para revisao
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rascunhos-editoriais-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .editorial/rascunhos/*.json
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 14
+
       - name: Rebuild e auditoria SEO
+        if: github.event_name != 'workflow_dispatch' || !inputs.somente_rascunho
         run: npm run seo:maintain
 
       - name: Commitar alterações
+        if: github.event_name != 'workflow_dispatch' || !inputs.somente_rascunho
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
