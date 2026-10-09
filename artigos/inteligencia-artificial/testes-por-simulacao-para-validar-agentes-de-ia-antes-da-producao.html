@@ -23,7 +23,7 @@
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-09-07T17:38:23.165Z">
-<meta property="article:modified_time" content="2026-09-07T17:38:23.165Z">
+<meta property="article:modified_time" content="2026-10-09T22:51:19.065Z">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Testes por simulação para validar agentes de IA antes da produção">
 <meta name="twitter:description" content="Agentes de IA conversacionais funcionam bem em demonstrações: respondem em múltiplos turnos, consultam ferramentas, recuperam dados, sugerem produtos e, em...">
@@ -41,7 +41,7 @@
     "@id": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html"
   },
   "datePublished": "2026-09-07T17:38:23.165Z",
-  "dateModified": "2026-09-07T17:38:23.165Z",
+  "dateModified": "2026-10-09T22:51:19.065Z",
   "articleSection": "Inteligência Artificial",
   "inLanguage": "pt-BR",
   "keywords": [
@@ -278,7 +278,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </ul>
   <p>Um agente pode dizer que cancelou um pedido, por exemplo, mas a validação relevante é verificar se o pedido de fato passou ao estado cancelado, se o cancelamento era permitido e se o usuário recebeu a comunicação adequada. A resposta textual é apenas parte do contrato.</p>
   <h2>Agentes precisam de testes de trajetória e de estado</h2>
-  <p>Na minha leitura, o ponto técnico central é que agentes não devem ser avaliados apenas como modelos de linguagem. Em produção, eles operam como sistemas distribuídos com uma interface probabilística. A decisão envolve modelos, prompts, memória, recuperação de contexto, políticas de autorização, serviços externos, filas, bancos de dados e interfaces humanas.</p>
+  <p>A interpretação técnica proposta aqui é que agentes não devem ser avaliados apenas como modelos de linguagem. Em produção, eles operam como sistemas distribuídos com uma interface probabilística. A decisão envolve modelos, prompts, memória, recuperação de contexto, políticas de autorização, serviços externos, filas, bancos de dados e interfaces humanas.</p>
   <p>Por isso, o objeto do teste deixa de ser uma resposta isolada e passa a ser uma <strong>trajetória</strong>: uma sequência de entradas, decisões, chamadas de ferramentas, alterações de estado e respostas ao usuário. Essa mudança redefine a arquitetura de qualidade.</p>
   <h3>Personas, objetivos e contexto definem os cenários</h3>
   <p>Na abordagem apresentada, cada cenário de simulação combina três elementos:</p>
@@ -341,7 +341,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   <p>Em crédito, saúde e seguros, dados de produção não devem ser tratados como material livre para testes. A síntese de documentos e perfis pode reduzir a exposição, mas requer controles próprios: isolamento de ambientes, minimização de dados, revisão jurídica, rastreabilidade de acesso e proibição de reidentificação. Dados sintéticos também precisam ser avaliados para não vazarem atributos de pessoas reais.</p>
   <h2>O foco deve estar no sistema, não só no modelo</h2>
   <p>A contribuição central dessa abordagem é deslocar a discussão de “qual modelo responde melhor?” para “qual sistema se comporta de forma verificável diante de situações reais?”. Esse é o nível de análise apropriado para agentes que chamam APIs, manipulam processos e atendem pessoas.</p>
-  <p>Minha recomendação é tratar a simulação como parte de uma estratégia mais ampla de engenharia de confiabilidade para IA. Ela deve coexistir com contratos de API, políticas determinísticas, validação de autorização, observabilidade, revisão humana em decisões sensíveis e monitoramento de produção. A simulação acelera a descoberta de falhas; a governança orienta a prioridade com que elas serão tratadas.</p>
+  <p>A recomendação desta análise é tratar a simulação como parte de uma estratégia mais ampla de engenharia de confiabilidade para IA. Ela deve coexistir com contratos de API, políticas determinísticas, validação de autorização, observabilidade, revisão humana em decisões sensíveis e monitoramento de produção. A simulação acelera a descoberta de falhas; a governança orienta a prioridade com que elas serão tratadas.</p>
   <p>Demonstrar que um agente funciona é relativamente simples. Operá-lo com segurança exige evidências contínuas de que ele entende o contexto, usa as ferramentas corretas, respeita limites e falha de modo controlado. Testes de trajetória e cenários sintéticos respondem diretamente a essa exigência de engenharia.</p>
   <p>
 </article></div>

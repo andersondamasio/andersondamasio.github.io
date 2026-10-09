@@ -24,6 +24,18 @@ function workspace(run) {
   }
 }
 
+test("auditoria publica ignora previas privadas sem ignorar HTML publico invalido", () => workspace(root => {
+  const audit = () => JSON.parse(execFileSync(process.execPath, [path.join(__dirname, "seo-audit.js")], { cwd: root, encoding: "utf8" }));
+  fs.writeFileSync(path.join(root, "publico.html"), "<p>Fragmento publico invalido</p>");
+  const antes = audit();
+  fs.mkdirSync(path.join(root, ".editorial", "previas"), { recursive: true });
+  fs.writeFileSync(path.join(root, ".editorial", "previas", "rascunho.html"), "<p>Previa privada</p>");
+  const depois = audit();
+  assert.deepEqual(depois, antes);
+  assert.equal(depois.htmlFiles, 1);
+  assert.deepEqual(depois.issues.missingTitle, ["publico.html"]);
+}));
+
 test("bloco legado nao declara revisao e nao injeta checklist generico", () => {
   const html = gerarSecoesConteudoUtil(fonte);
   const $ = cheerio.load(html);

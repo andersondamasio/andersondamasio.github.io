@@ -77,6 +77,8 @@ function aplicarIndexacao({ hashConferido, rebuild, root = process.cwd() }) {
   return plano.resumo;
 }
 
+module.exports = { lerManifesto, planejarIndexacao, exigirManifestoAplicado, aplicarIndexacao };
+
 if (require.main === module) {
   try {
     if (process.argv.includes("--check")) {
@@ -90,5 +92,3 @@ if (require.main === module) {
     }
   } catch (error) { console.error(error.message); process.exitCode = 1; }
 }
-
-module.exports = { lerManifesto, planejarIndexacao, exigirManifestoAplicado, aplicarIndexacao };

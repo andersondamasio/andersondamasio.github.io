@@ -1985,8 +1985,26 @@
     "noticiaOriginal": "New Overlapping Secrets on Azure DevOps OAuth",
     "url": "artigos/segredos-sobrepostos-desvendando-os-desafios-do-azure-devops-oauth.html",
     "data": "2025-05-05T17:41:42.667Z",
-    "dataFonte": "2025-03-26T16:19:22.000Z",
-    "categoria": "Outros"
+    "categoria": "Outros",
+    "seo": {
+      "modifiedAt": "2026-10-09T22:51:19.065Z",
+      "description": "Segredos sobrepostos no Azure DevOps OAuth: o que a rotação permite e por que ela não substitui a migração para Microsoft Entra ID."
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-09T22:51:19.065Z",
+      "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+      "motivo": "Corrigir experiencia profissional inventada e interpretacao incorreta de overlapping secrets.",
+      "hashAntes": "62c5634abc6a6607b344683489a53de3d06a6eb308f8d5ef18967c1c1c4ae0a9",
+      "hashDepois": "717b6b86ae809de1e3330cda131cacbfe2ea67c463e19f80df8e7a7845117f62",
+      "revisaoHumana": false,
+      "escopo": "Reescrita assistida baseada nas fontes citadas",
+      "fonteAnterior": {
+        "url": null,
+        "titulo": "New Overlapping Secrets on Azure DevOps OAuth",
+        "data": "2025-03-26T16:19:22.000Z"
+      }
+    },
+    "urlFonte": "https://devblogs.microsoft.com/devops/new-overlapping-secrets-on-azure-devops-oauth/"
   },
   {
     "titulo": "Debugging com o Visualizador AI-powered para IEnumerable: muito mais do que parece",
@@ -11995,7 +12013,19 @@
     "data": "2025-06-23T04:34:15.061Z",
     "dataFonte": "2025-06-18T18:19:12.000Z",
     "categoria": "Tecnologia",
-    "urlFonte": "https://www.zdnet.com/article/best-early-prime-day-robot-vacuum-deals-2025/"
+    "urlFonte": "https://www.zdnet.com/article/best-early-prime-day-robot-vacuum-deals-2025/",
+    "seo": {
+      "modifiedAt": "2026-10-09T22:51:19.065Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-09T22:51:19.065Z",
+      "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+      "motivo": "Promessa de ofertas nao cumprida e baixa contribuicao para o foco tecnico do site.",
+      "hashAntes": "9a3d820bbbf3ad9f3d30e5ae00108c39450f5bb53b2c2e2aff0bc9444a5807ac",
+      "hashDepois": "89faa70360b032a4512d49e3643539b2f2f22b983c28efc3db5cc1affff25d9e",
+      "revisaoHumana": false,
+      "escopo": "Correcao pontual; nao verificacao integral"
+    }
   },
   {
     "titulo": "A nova era dos modelos de IA: como a arquitetura de software pode transformar a experiência do usuário",
@@ -19580,12 +19610,29 @@
   },
   {
     "titulo": "Refurbished: Oportunidade ou Armadilha? Um olhar técnico sobre MacBooks recondicionados",
-    "noticiaOriginal": "Is a refurbished MacBook worth it? I did the math, and here's my buying advice",
+    "noticiaOriginal": "Why Refurbished - Apple",
     "url": "artigos/tecnologia/refurbished-oportunidade-ou-armadilha-um-olhar-tecnico-sobre-macbooks-recondicionados.html",
     "data": "2025-08-05T18:33:49.176Z",
-    "dataFonte": "2025-08-05T18:31:00.000Z",
     "categoria": "Tecnologia",
-    "urlFonte": "https://www.zdnet.com/article/is-a-refurbished-macbook-worth-it-i-did-the-math-and-heres-my-buying-advice/"
+    "urlFonte": "https://www.apple.com/shop/refurbished/about",
+    "seo": {
+      "modifiedAt": "2026-10-09T22:51:19.065Z",
+      "description": "Critérios para avaliar um MacBook recondicionado: configuração, bateria, garantia e limites das condições oferecidas por cada vendedor."
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-09T22:51:19.065Z",
+      "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+      "motivo": "Remover compra, teste, percentuais de bateria e benchmarks indevidamente atribuidos ao autor.",
+      "hashAntes": "7c88ea513247f61d94810b184640476f413c858926966c0da060483a4c7c8976",
+      "hashDepois": "53009d7a88dbc0a41d491d54b62303ebfaac767a8424f9f865758456e966e3ee",
+      "revisaoHumana": false,
+      "escopo": "Reescrita assistida baseada nas fontes citadas",
+      "fonteAnterior": {
+        "url": "https://www.zdnet.com/article/is-a-refurbished-macbook-worth-it-i-did-the-math-and-heres-my-buying-advice/",
+        "titulo": "Is a refurbished MacBook worth it? I did the math, and here's my buying advice",
+        "data": "2025-08-05T18:31:00.000Z"
+      }
+    }
   },
   {
     "titulo": "Aumente sua Experiência na Netflix: Descubra os Códigos Secretos que Ninguém Fala",
@@ -69334,7 +69381,19 @@
     "data": "2026-05-14T17:21:22.532Z",
     "dataFonte": "2026-05-14T17:18:24.000Z",
     "categoria": "DevOps",
-    "urlFonte": "https://devblogs.microsoft.com/devops/may-patches-for-azure-devops-server-3/"
+    "urlFonte": "https://devblogs.microsoft.com/devops/may-patches-for-azure-devops-server-3/",
+    "seo": {
+      "modifiedAt": "2026-10-09T22:51:19.065Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-09T22:51:19.065Z",
+      "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+      "motivo": "Retirar atualidade artificial de uma noticia de maio e preparar instrucoes por versao.",
+      "hashAntes": "f586fff148d15e322e89a45eb3e5a67f1be081067379340980f46c5daff4cdc3",
+      "hashDepois": "2da94eede2927d63ae45bd614a8b1532dca2182f01d58f2e35ff362555106cb7",
+      "revisaoHumana": false,
+      "escopo": "Correcao pontual; nao verificacao integral"
+    }
   },
   {
     "titulo": "Clawdmeter: Como um Dashboard Físico Pode Aumentar Sua Produtividade com Claude Code",
@@ -70819,7 +70878,19 @@
     "data": "2026-06-02T17:27:56.127Z",
     "dataFonte": "2026-06-02T17:10:39.000Z",
     "categoria": "Tecnologia",
-    "urlFonte": "https://devblogs.microsoft.com/visualstudio/whats-coming-next-in-visual-studio-our-microsoft-build-2026-announcements/"
+    "urlFonte": "https://devblogs.microsoft.com/visualstudio/whats-coming-next-in-visual-studio-our-microsoft-build-2026-announcements/",
+    "seo": {
+      "modifiedAt": "2026-10-09T22:51:19.065Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-09T22:51:19.065Z",
+      "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+      "motivo": "Remover relato pessoal inventado e promessa de ganho sem teste.",
+      "hashAntes": "b3886d5ab80a16c7e513b52a9c89fa5976c4100c2f836aea734beeb1a4dfdb94",
+      "hashDepois": "c385ca8d2923692052145c896160c467595199983ba0afbfb406b8c97cf32b7c",
+      "revisaoHumana": false,
+      "escopo": "Correcao pontual; nao verificacao integral"
+    }
   },
   {
     "titulo": "A revolução dos Cyberdecks: tecnologia, feminilidade e resistência",
@@ -73423,6 +73494,18 @@
         "tentativas": 1,
         "sinaisRestantes": []
       }
+    },
+    "seo": {
+      "modifiedAt": "2026-10-09T22:51:19.065Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-09T22:51:19.065Z",
+      "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+      "motivo": "Preservar guia relevante e separar recomendacao editorial de voz pessoal do autor.",
+      "hashAntes": "c7202f32301d1c6d79a3b60bb554dd513fb3f7e52bd1ecf1f8ccec7e5260ce11",
+      "hashDepois": "6ccf7d298dc72539066896da9f4f1a1c7ea6ac04ca096fb5e5f12cd8acca1978",
+      "revisaoHumana": false,
+      "escopo": "Correcao pontual; nao verificacao integral"
     }
   },
   {
@@ -73489,6 +73572,18 @@
         "tentativas": 1,
         "sinaisRestantes": []
       }
+    },
+    "seo": {
+      "modifiedAt": "2026-10-09T22:51:19.065Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-09T22:51:19.065Z",
+      "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+      "motivo": "Precisar a graduacao do watch cache e ligar a afirmacao ao anuncio oficial.",
+      "hashAntes": "011238e0daefbc1a601681cf90abfb0501955e002388bd3792f8ec613bc7d0cb",
+      "hashDepois": "989ef0f3f68d34bcba1b4a557a0105111a6fed4b36a370a2ce9b6233544a6ff1",
+      "revisaoHumana": false,
+      "escopo": "Correcao pontual; nao verificacao integral"
     }
   },
   {
@@ -73522,6 +73617,18 @@
         "tentativas": 1,
         "sinaisRestantes": []
       }
+    },
+    "seo": {
+      "modifiedAt": "2026-10-09T22:51:19.065Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-09T22:51:19.065Z",
+      "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+      "motivo": "Preservar criterios de arquitetura e representar recomendacoes como analise editorial.",
+      "hashAntes": "ddd5d3a4944c1814d03882c57816b737251b3c38615ab89ccba124e981476be2",
+      "hashDepois": "3092ad25184d32887a09a3ea9cbd53a59f1335d9f6ab9f2120ba9ac63d710fa4",
+      "revisaoHumana": false,
+      "escopo": "Correcao pontual; nao verificacao integral"
     }
   },
   {

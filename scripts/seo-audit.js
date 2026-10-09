@@ -32,7 +32,7 @@ const maxExamples = 8;
 
 function walk(dir, out = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-    if (entry.name === ".git" || entry.name === "node_modules") continue;
+    if ([".git", "node_modules", ".editorial"].includes(entry.name)) continue;
 
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
