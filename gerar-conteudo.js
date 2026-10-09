@@ -1314,6 +1314,8 @@ ${gerarSeoHead({
     const local = normalizarUrlLocal(artigo.url);
     const arquivo = local && urlLocalParaArquivo(local);
     if (!arquivo || arquivoIndexavel(arquivo)) continue;
+    // Indexing policy is not absence of content. Preserve an existing article body.
+    if (fs.existsSync(arquivo) && /class=["'][^"']*\barticle-body\b/i.test(fs.readFileSync(arquivo, "utf8"))) continue;
 
     alterados += gerarIndisponivel({
       local,
@@ -1350,14 +1352,13 @@ function atualizarArtigosRelacionados(artigos) {
 
     const htmlOriginal = fs.readFileSync(arquivo, "utf8");
     const relacionados = gerarHtmlArtigosRelacionados(artigo, artigosPublicaveis);
-    if (!relacionados) continue;
 
     let html = htmlOriginal.replace(/<section class="related-articles"[\s\S]*?<\/section>\s*/i, "");
-    html = garantirEstilosArtigosRelacionados(html);
+    if (relacionados) html = garantirEstilosArtigosRelacionados(html);
 
-    if (/<p class="back-link">/i.test(html)) {
+    if (relacionados && /<p class="back-link">/i.test(html)) {
       html = html.replace(/<p class="back-link">/i, `${relacionados}\n<p class="back-link">`);
-    } else {
+    } else if (relacionados) {
       html = /<\/main>/i.test(html)
         ? html.replace(/<\/main>/i, `${relacionados}\n</main>`)
         : html.replace(/<\/body>/i, `${relacionados}\n</body>`);

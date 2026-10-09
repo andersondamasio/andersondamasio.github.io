@@ -98,3 +98,22 @@ test("rebuild interrompe antes de remover artigo que perdeu vinculo no cadastro"
   assert.equal(fs.existsSync("index.html"), false);
   assert.equal(fs.existsSync("sitemap.xml"), false);
 }));
+
+test("noindex preserva corpo, URL e cadastro em dois rebuilds sem ser divulgado", () => fixture(({ url, html }) => {
+  const noindex = html.replace("</head>", '<meta name="robots" content="noindex, follow"></head>');
+  fs.writeFileSync(url, noindex);
+  const outro = "artigos/arquitetura/outro-contrato.html";
+  const antigoRelacionado = `<section class="related-articles"><a href="/${url}">Anterior</a></section>`;
+  fs.writeFileSync(outro, html.replaceAll(url, outro).replace("</body>", `${antigoRelacionado}</body>`));
+  const cadastro = [{ titulo: "Titulo antigo", categoria: "Arquitetura", data: "2026-10-05T12:00:00Z", url },
+    { titulo: "Outro contrato", categoria: "Arquitetura", data: "2026-10-06T12:00:00Z", url: outro }];
+  fs.writeFileSync("titulos.json", JSON.stringify(cadastro));
+  for (let i = 0; i < 2; i++) {
+    reconstruirPaginasSeo();
+    assert.equal(fs.readFileSync(url, "utf8"), noindex);
+    assert.deepEqual(JSON.parse(fs.readFileSync("titulos.json", "utf8")), cadastro);
+    for (const file of ["index.html", "sitemap.xml", "rss.xml", "arquivo/2026-10.html", outro]) {
+      assert.ok(!fs.readFileSync(file, "utf8").includes(url), `${file} nao deve promover o artigo noindex`);
+    }
+  }
+}));

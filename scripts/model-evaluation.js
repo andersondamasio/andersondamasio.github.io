@@ -84,6 +84,16 @@ async function enviarOpenAI(payload, { apiKey = process.env.OPENAI_API_KEY, fetc
   return resposta.json();
 }
 
+async function conferirAcessoModelos({ apiKey = process.env.OPENAI_API_KEY, fetchImpl = fetch } = {}) {
+  if (!apiKey) throw new Error("Chave OpenAI ausente; nenhuma reserva paga sera aberta.");
+  for (const modelo of new Set(variantes.map(v => v.model))) {
+    const resposta = await fetchImpl(`https://api.openai.com/v1/models/${modelo}`, {
+      headers: { Authorization: `Bearer ${apiKey}` }, signal: AbortSignal.timeout(30000)
+    });
+    if (!resposta.ok || (await resposta.json()).id !== modelo) throw new Error(`Acesso ao modelo ${modelo} nao confirmado; nenhuma chamada de geracao sera feita.`);
+  }
+}
+
 async function executarAvaliacao({ plano, root = process.cwd(), reservar, enviar = enviarOpenAI }) {
   const diretorio = path.join(root, ".editorial", "avaliacao-modelos");
   if (fs.existsSync(diretorio)) throw new Error("Diretorio de avaliacao ja existe; preservar resultados e consumo, sem reiniciar.");
@@ -150,9 +160,10 @@ async function main() {
       reservaMatrizUsd: plano.reservaMatrizUsd, reservaRevisaoMaximaUsd: 0.25, tetoAcumuladoUsd: 2, chamadasPagas: 0 }, null, 2));
     return;
   }
+  await conferirAcessoModelos();
   const resultado = await executarAvaliacao({ plano, reservar: () => reservarExecucaoRemota({ plano }) });
   console.log(JSON.stringify(resultado, null, 2));
 }
 
 if (require.main === module) main().catch(error => { console.error(error.message); process.exitCode = 1; });
-module.exports = { prepararPlano, avaliarResposta, reservarExecucaoRemota, enviarOpenAI, executarAvaliacao };
+module.exports = { prepararPlano, avaliarResposta, reservarExecucaoRemota, enviarOpenAI, conferirAcessoModelos, executarAvaliacao };

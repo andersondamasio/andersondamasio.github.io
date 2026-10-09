@@ -3,7 +3,7 @@ const os = require("node:os");
 const path = require("node:path");
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { prepararPlano, avaliarResposta, reservarExecucaoRemota, enviarOpenAI, executarAvaliacao } = require("./model-evaluation");
+const { prepararPlano, avaliarResposta, reservarExecucaoRemota, enviarOpenAI, conferirAcessoModelos, executarAvaliacao } = require("./model-evaluation");
 const plano = prepararPlano();
 const env = { GITHUB_ACTIONS: "true", GITHUB_EVENT_NAME: "workflow_dispatch", GITHUB_RUN_ATTEMPT: "1", GITHUB_RUN_ID: "123",
   GITHUB_SHA: "a".repeat(40), GITHUB_REPOSITORY: "andersondamasio/andersondamasio.github.io", GITHUB_TOKEN: "fixture-token", OPENAI_API_KEY: "fixture-key" };
@@ -101,6 +101,19 @@ test("API rejeitada nao vaza corpo/credencial nem tenta novamente", async () => 
     return { ok: false, status: 429, text: async () => "segredo-fixture" };
   }}), error => /HTTP 429/.test(error.message) && !error.message.includes("segredo-fixture"));
   assert.equal(chamadas, 1);
+});
+
+test("confere acesso exato aos modelos sem requisicao de geracao", async () => {
+  const consultas = [];
+  await conferirAcessoModelos({ apiKey: "fixture", fetchImpl: async (url, options) => {
+    consultas.push(url);
+    assert.equal(options.body, undefined);
+    return { ok: true, json: async () => ({ id: url.split("/").at(-1) }) };
+  }});
+  assert.equal(consultas.length, 2);
+  assert.ok(consultas.every(u => u.includes("/v1/models/gpt-5.6-")));
+  await assert.rejects(conferirAcessoModelos({ apiKey: "fixture", fetchImpl: async () => ({ ok: false, status: 404 }) }), /Acesso ao modelo/);
+  await assert.rejects(conferirAcessoModelos({ apiKey: "" }), /Chave OpenAI ausente/);
 });
 
 test("matriz e revisao geram rascunho pendente sem modificar catalogo", async () => fixture(async root => {

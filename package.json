@@ -23,7 +23,8 @@
     "seo:urls:plan": "node scripts/stabilize-article-urls.js",
     "seo:urls:apply": "node scripts/stabilize-article-urls.js --apply",
     "seo:verify:deployment": "node scripts/verify-deployment.js",
-    "test:seo:recovery": "node --test scripts/test-deployment.js scripts/test-stable-urls.js",
+    "test:seo:recovery": "node --test scripts/test-deployment.js scripts/test-stable-urls.js scripts/test-seo-measurement.js",
+    "seo:measurement": "node scripts/seo-measurement.js --capture",
     "test:rebuild:site": "node scripts/test-rebuild-site.js",
     "test:model:budget": "node --test scripts/test-model-evaluation-budget.js scripts/test-model-evaluation.js",
     "model:evaluation:plan": "node scripts/model-evaluation.js"

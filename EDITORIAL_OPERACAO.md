@@ -101,3 +101,13 @@ O verificador de deploy inclui os novos arquivos quando a revisao esperada os an
 O workflow manual `avaliar-modelos.yml` usa o segredo OpenAI existente e uma unica autorizacao acumulada de US$ 2. Antes de qualquer chamada paga, cria atomicamente a tag `editorial-eval-usd2-2026-10`; outra execucao ou reexecucao e bloqueada, inclusive se a primeira falhar. Nao apagar essa tag para tentar novamente. Em caso de falha, conferir o ledger e o uso real antes de solicitar uma nova autorizacao. O ledger reserva o custo maximo antes do envio e conserva a reserva em timeout ou consumo desconhecido. Nao ha retry automatico.
 
 Resultados, uso, prompts e rascunho ficam em artefatos por 30 dias, sem modificar o catalogo nem publicar. O candidato RabbitMQ/Terra medium recebe uma segunda passagem Humanizer, quando a geracao estiver completa. O dossie preenchido por IA continua exigindo conferencia de fatos, trechos e duplicidade; nunca recebe aprovacao humana automatica. A falta de um candidato completo e um resultado da avaliacao, nao motivo para uma chamada paga extra silenciosa.
+
+A disponibilidade dos dois modelos e conferida por consultas de leitura antes da reserva remota. Falta de acesso interrompe o teste sem enviar uma geracao. A confirmacao de acesso nao garante que uma chamada posterior tera sucesso; o ledger continua protegendo o teto em caso de falha.
+
+## Medicao depois do deploy
+
+`npm run seo:measurement` captura home, Sobre e tres artigos recentes, comparando o HTML publico com a revisao Git em `EXPECTED_REVISION` (padrao HEAD). `node scripts/seo-measurement.js --capture caminho/urls.json` recebe uma lista de ate 60 URLs do site para um piloto. Cada captura tem arquivo proprio em `.editorial/medicoes/` e nao sobrescreve a anterior.
+
+HTTP, canonical, robots e correspondencia com o Git sao observados separadamente dos dados do Google. Ultimo rastreamento, indexacao, impressoes, cliques, CTR, posicao e consultas ficam `null` ate haver observacao real do Search Console, com fonte e periodo. Captura HTTP nao mede penalizacao nem visibilidade. Uma versao publica antiga impede confirmar o deploy. Depois da confirmacao, o relatorio propoe comparacoes em duas, quatro e oito semanas; isso nao cria um lembrete automatico nem garante que o Google ja tenha rastreado a revisao.
+
+O rebuild preserva o corpo existente de artigos noindex, em vez de os transformar em avisos de indisponibilidade. Eles ficam fora das superficies de promocao geradas e do sitemap/RSS; links contextuais deliberados no corpo nao sao removidos automaticamente. A decisao de noindex ainda exige curadoria individual e nao decorre apenas de um sinal de linguagem.
