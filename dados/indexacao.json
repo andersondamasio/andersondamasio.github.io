@@ -481,6 +481,72 @@
         "em": "2026-10-10T02:04:10.178Z"
       },
       "conteudoHash": "067b9072a5ce0b4b24b4fe944860c486d3bb0d777ab54471443c71b133967db9"
+    },
+    {
+      "url": "artigos/cloud/a-arte-de-escalar-estrategias-para-aplicacoes-em-nuvem-e-distribuidas.html",
+      "acao": "atualizar",
+      "motivo": "Atribuir o caso a Durai Arasan, retirar vivencia inventada e metas universais, propor ensaio com hipotese e limites.",
+      "evidencia": "Fontes, limites e trechos rastreados em dados/editorial/correcoes-contextuais-02-2026-10.json. Exercicios propostos; testes de codigo separados de revisao humana.",
+      "revisao": {
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T03:43:59.634Z"
+      },
+      "conteudoHash": "9ccd51a6d97da0d564faf882edbe2b295f13a7f8a1acd3c29cc411db47a9722e"
+    },
+    {
+      "url": "artigos/desenvolvimento-de-software/a-arquitetura-descentralizada-autonomia-sem-anarquia.html",
+      "acao": "atualizar",
+      "motivo": "Atribuir o relato a Lindsey Tibbitts, nao a Anderson ou ao autor do livro; propor ADR verificavel sem alegar aplicacao real.",
+      "evidencia": "Fontes, limites e trechos rastreados em dados/editorial/correcoes-contextuais-02-2026-10.json. Exercicios propostos; testes de codigo separados de revisao humana.",
+      "revisao": {
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T03:43:59.634Z"
+      },
+      "conteudoHash": "35ca7edf724d36aab12a681f3e6e6ff1c2d75730071188d2badd2b12e0f5119c"
+    },
+    {
+      "url": "artigos/devops/localstack-o-fim-de-uma-era-ou-apenas-uma-nova-fase.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir regra de creditos CI superada, distinguir uso gratuito nao comercial e autenticacao; retirar opinioes e vivencia pessoal inventadas.",
+      "evidencia": "Fontes, limites e trechos rastreados em dados/editorial/correcoes-contextuais-02-2026-10.json. Exercicios propostos; testes de codigo separados de revisao humana.",
+      "revisao": {
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T03:43:59.634Z"
+      },
+      "conteudoHash": "8afcc26f5a42a3ab90ace9ba1014bf9279316066cd6bbc6fa411fbec3dc073b7"
+    },
+    {
+      "url": "artigos/carreira/como-se-tornar-indispensavel-nas-conversas-estrategicas-da-sua-empresa.html",
+      "acao": "atualizar",
+      "motivo": "Atribuir vivencias e orientacoes a Mark Allen; substituir promessa de indispensabilidade por ficha de decisao proposta e delimitada.",
+      "evidencia": "Fontes, limites e trechos rastreados em dados/editorial/correcoes-contextuais-02-2026-10.json. Exercicios propostos; testes de codigo separados de revisao humana.",
+      "revisao": {
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T03:43:59.634Z"
+      },
+      "conteudoHash": "65128833ccc7af4a0dfa704994700dd7ce8b5762e1e5e8b9ff52dc8c4232cb3f"
+    },
+    {
+      "url": "artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html",
+      "acao": "atualizar",
+      "motivo": "Retirar projeto pessoal inventado e completar traducao JSON para CSS com exemplo testavel e contrato explicito, sem alegar conformidade DTCG.",
+      "evidencia": "Fontes, limites e trechos rastreados em dados/editorial/correcoes-contextuais-02-2026-10.json. Exercicios propostos; testes de codigo separados de revisao humana.",
+      "revisao": {
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T03:43:59.634Z"
+      },
+      "conteudoHash": "dfa5884bf1d73e21179a4a82bbd49fa2b141d859fa6be323c33032a6a05c0319"
+    },
+    {
+      "url": "artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html",
+      "acao": "atualizar",
+      "motivo": "Retirar projeto pessoal inventado, corrigir codigo HTML quebrado e exemplo sem main funcional; fornecer testes sem alegar baixa latencia.",
+      "evidencia": "Fontes, limites e trechos rastreados em dados/editorial/correcoes-contextuais-02-2026-10.json. Exercicios propostos; testes de codigo separados de revisao humana.",
+      "revisao": {
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T03:43:59.634Z"
+      },
+      "conteudoHash": "0cecdb7cb497a39d53a86388490f16039462b9e111560232cfaae1d21e5239d4"
     }
   ]
 }

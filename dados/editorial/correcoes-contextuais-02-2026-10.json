@@ -1,0 +1,245 @@
+{
+  "em": "2026-10-10T03:43:59.634Z",
+  "responsavel": "Codex (correcao assistida)",
+  "revisaoHumana": false,
+  "escopo": "Seis artigos existentes. Exercicios organizacionais propostos, nao executados. Codigo verificavel por testes separados; nao comprova desempenho, resultados profissionais ou indexacao. Nenhuma aprovacao de rascunho.",
+  "artigos": [
+    {
+      "url": "artigos/cloud/a-arte-de-escalar-estrategias-para-aplicacoes-em-nuvem-e-distribuidas.html",
+      "antes": {
+        "titulo": "A arte de escalar: estratégias para aplicações em nuvem e distribuídas",
+        "data": "2025-12-04T09:26:28.906Z",
+        "corpoHash": "054eebde8d5755da60488d7e55884c4768a1c414c0f3bc3bf0768046855ac66c",
+        "fonte": {
+          "url": "https://www.infoq.com/articles/scaling-cloud-distributed-applications/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Article: Scaling Cloud and Distributed Applications: Lessons and Strategies",
+          "data": "2025-12-04T09:00:00.000Z"
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Escalabilidade na nuvem: distinguir carga e dependências lentas",
+        "descricao": "O caso de Durai Arasan e um experimento proposto para separar aumento de demanda, espera por dependências e capacidade adicional, sem garantias universais.",
+        "corpoHash": "9ccd51a6d97da0d564faf882edbe2b295f13a7f8a1acd3c29cc411db47a9722e",
+        "fonte": {
+          "url": "https://www.infoq.com/articles/scaling-cloud-distributed-applications/",
+          "titulo": "Scaling Cloud and Distributed Applications: Lessons and Strategies",
+          "data": "2025-12-04"
+        }
+      },
+      "motivo": "Atribuir o caso a Durai Arasan, retirar vivencia inventada e metas universais, propor ensaio com hipotese e limites.",
+      "sobreposicao": "Caso de migracao Chase.com e diagnostico de escala versus dependencia lenta; fonte unica no catalogo apos remover parametros. Nao certifica todo o acervo.",
+      "evidencias": [
+        {
+          "seletor": ".fato-cloud",
+          "fonte": "https://www.infoq.com/articles/scaling-cloud-distributed-applications/",
+          "secao": "Autor, data, key takeaways e Scaling Safely",
+          "consultadoEm": "2026-10-10T03:43:59.634Z",
+          "textoHash": "847d571cac57a40200b216efec72b92f1e372b59f9068647fde7f9598663cc75"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/desenvolvimento-de-software/a-arquitetura-descentralizada-autonomia-sem-anarquia.html",
+      "antes": {
+        "titulo": "A arquitetura descentralizada: autonomia sem anarquia",
+        "data": "2025-06-19T09:20:49.700Z",
+        "corpoHash": "fe51c6dac82643b0c9db826014a9e7816a72a0a274a39d4d1f517100455a0b7b",
+        "fonte": {
+          "url": "https://www.infoq.com/articles/decentralized-architecture-advice-process/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Article: Decentralized Architecture Needs More Than Autonomy",
+          "data": "2025-06-19T09:00:00.000Z"
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Arquitetura descentralizada: conselho, autoridade e decisões",
+        "descricao": "A abordagem apresentada por Lindsey Tibbitts e um ADR hipotético para registrar conselhos, objeções e limites de autoridade ao mudar um contrato entre equipes.",
+        "corpoHash": "35ca7edf724d36aab12a681f3e6e6ff1c2d75730071188d2badd2b12e0f5119c",
+        "fonte": {
+          "url": "https://www.infoq.com/articles/decentralized-architecture-advice-process/",
+          "titulo": "Decentralized Architecture Needs More Than Autonomy",
+          "data": "2025-06-19"
+        }
+      },
+      "motivo": "Atribuir o relato a Lindsey Tibbitts, nao a Anderson ou ao autor do livro; propor ADR verificavel sem alegar aplicacao real.",
+      "sobreposicao": "Foco no registro de conselho e autoridade sobre contratos entre equipes. Fonte unica no catalogo normalizado; nao equivale ao guia de divisao de responsabilidades.",
+      "evidencias": [
+        {
+          "seletor": ".fato-conselho",
+          "fonte": "https://www.infoq.com/articles/decentralized-architecture-advice-process/",
+          "secao": "Autoria, contexto das aquisicoes e interpretacao do advice process de Harmel-Law",
+          "consultadoEm": "2026-10-10T03:43:59.634Z",
+          "textoHash": "79fe8b4e35cc9c3651a095b55efa253307bedf6e814bfbe2655b988d0d1cdabf"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/devops/localstack-o-fim-de-uma-era-ou-apenas-uma-nova-fase.html",
+      "antes": {
+        "titulo": "LocalStack: O Fim de uma Era ou Apenas uma Nova Fase?",
+        "data": "2026-02-15T07:41:59.674Z",
+        "corpoHash": "0c0174b929d41ad77df8cf7155b48f66a755dab398f8975fddbe6c6126f1700e",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/02/localstack-aws-community/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "LocalStack for AWS Drops Community Edition Raising Developer Concerns",
+          "data": "2026-02-15T07:30:00.000Z"
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "LocalStack em 2026: autenticação, CI e revisão da migração",
+        "descricao": "As alterações posteriores ao anúncio do LocalStack, incluindo a retirada dos limites por créditos de CI, e um roteiro proposto para conferir a migração.",
+        "corpoHash": "8afcc26f5a42a3ab90ace9ba1014bf9279316066cd6bbc6fa411fbec3dc073b7",
+        "fonte": {
+          "url": "https://blog.localstack.cloud/2026-upcoming-pricing-changes/",
+          "titulo": "Important Updates to Pricing & Packaging for LocalStack for AWS",
+          "data": "2026-02-27"
+        }
+      },
+      "motivo": "Corrigir regra de creditos CI superada, distinguir uso gratuito nao comercial e autenticacao; retirar opinioes e vivencia pessoal inventadas.",
+      "sobreposicao": "Atualizacao do proprio anuncio existente, nao nova noticia duplicada. Fonte InfoQ original unica no catalogo normalizado.",
+      "limitacaoFonte": "Comunicado publicado 27/02/2026 e atualizado 24/07/2026, posterior ao artigo original de 15/02/2026. Nao houve teste de conta ou de servicos AWS.",
+      "evidencias": [
+        {
+          "seletor": ".fato-localstack",
+          "fonte": "https://blog.localstack.cloud/2026-upcoming-pricing-changes/",
+          "secao": "Data de publicacao/atualizacao, 23/03, CI ilimitado sujeito a fair use e plano nao comercial",
+          "consultadoEm": "2026-10-10T03:43:59.634Z",
+          "textoHash": "22054acaf82fd1e07937f46f7f4ebd0edb6cc5d878de9c25a33a641eb61a1ee8"
+        },
+        {
+          "seletor": ".fato-token",
+          "fonte": "https://docs.localstack.cloud/aws/getting-started/auth-token/",
+          "secao": "Token types, usage, CI e troubleshooting de ativacao",
+          "consultadoEm": "2026-10-10T03:43:59.634Z",
+          "textoHash": "a6eaabb63bf8be99d3c22a465cb9ff0932923b683f80688ebd27eb82e4db204d"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/carreira/como-se-tornar-indispensavel-nas-conversas-estrategicas-da-sua-empresa.html",
+      "antes": {
+        "titulo": "Como se Tornar Indispensável nas Conversas Estratégicas da Sua Empresa",
+        "data": "2025-10-20T06:32:15.360Z",
+        "corpoHash": "96aace3934d7a6ce4ca0b3e5a5808cdd8c27294aa06fde278606d25703080d12",
+        "fonte": {
+          "url": "https://www.infoq.com/presentations/strategic-discussions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Presentation: How to Always Get Invited to Big Strategic Conversations",
+          "data": "2025-10-17T09:50:00.000Z"
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Conversas estratégicas: preparar uma decisão técnica",
+        "descricao": "A apresentação de Mark Allen e um documento hipotético para relacionar decisões técnicas, evidências e prioridades, sem promessas de influência ou promoção.",
+        "corpoHash": "65128833ccc7af4a0dfa704994700dd7ce8b5762e1e5e8b9ff52dc8c4232cb3f",
+        "fonte": {
+          "url": "https://www.infoq.com/presentations/strategic-discussions/",
+          "titulo": "How to Always Get Invited to Big Strategic Conversations",
+          "data": "2025-10-17T09:50:00.000Z"
+        }
+      },
+      "motivo": "Atribuir vivencias e orientacoes a Mark Allen; substituir promessa de indispensabilidade por ficha de decisao proposta e delimitada.",
+      "sobreposicao": "Escolha organizacional ainda em aberto, distinta de registro de contribuicoes individuais para carreira. Artigo relacionado ligado explicitamente.",
+      "limitacaoFonte": "Data da fonte mantida do cadastro historico; nao apresentada como data reconfirmada na transcricao.",
+      "evidencias": [
+        {
+          "seletor": ".fato-estrategia",
+          "fonte": "https://www.infoq.com/presentations/strategic-discussions/",
+          "secao": "Transcricao e tres prioridades: negocio, relacoes e marca interna; conversas assincronas",
+          "consultadoEm": "2026-10-10T03:43:59.634Z",
+          "textoHash": "cc6c0d430788d161958ca11b25ea1dd02cfd7feb1649086017d7412e6392e9e1"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html",
+      "antes": {
+        "titulo": "Design Tokens: A Arquitetura Secreta por Trás de Interfaces de Usuário Incríveis",
+        "data": "2025-05-06T22:17:15.566Z",
+        "corpoHash": "d9705e40abffc868065be9afe131ea23bf2d6ac8127f40948212215c00397c0e",
+        "fonte": {
+          "titulo": "Design Token-Based UI Architecture",
+          "data": "2024-12-12T09:36:00.000Z"
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Design tokens: converter um JSON local em variáveis CSS",
+        "descricao": "Um conversor Node.js com validação e testes para cores e espaçamentos, distinguindo seu formato didático das propriedades CSS e da especificação DTCG.",
+        "corpoHash": "dfa5884bf1d73e21179a4a82bbd49fa2b141d859fa6be323c33032a6a05c0319",
+        "fonte": {
+          "url": "https://www.designtokens.org/tr/2025.10/format/",
+          "titulo": "Design Tokens Format Module 2025.10",
+          "data": "2025-10-28"
+        }
+      },
+      "motivo": "Retirar projeto pessoal inventado e completar traducao JSON para CSS com exemplo testavel e contrato explicito, sem alegar conformidade DTCG.",
+      "sobreposicao": "Busca de titulos de design tokens nao encontrou outro equivalente no catalogo. Exemplo de transformacao especifico; nao certifica unicidade do acervo.",
+      "limitacaoFonte": "Cadastro anterior nao guardava URL da fonte. DTCG 2025.10 e posterior a publicacao original e identificado como referencia desta atualizacao.",
+      "evidencias": [
+        {
+          "seletor": ".fato-dtcg",
+          "fonte": "https://www.designtokens.org/tr/2025.10/format/",
+          "secao": "Data 28/10/2025, status Community Group, nao padrao W3C, $type e $value",
+          "consultadoEm": "2026-10-10T03:43:59.634Z",
+          "textoHash": "d27f578ea2be6205c3089e991ede13a88605f516b564d95273d1360bf645e47a"
+        },
+        {
+          "seletor": ".fato-css",
+          "fonte": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties",
+          "secao": "Declaracao, :root, cascata e var()",
+          "consultadoEm": "2026-10-10T03:43:59.634Z",
+          "textoHash": "292c21a998266f41696f77d1d76d5d02a7c6c92d220a842d28849b96588a6f11"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html",
+      "antes": {
+        "titulo": "Desenvolvendo Sistemas de Baixa Latência com C++: Desafios e Oportunidades",
+        "data": "2025-05-08T07:17:55.986Z",
+        "corpoHash": "6351a2380ae42520d13add628252c5b8ace3040e7710cf1f817421c9dc28f0ab",
+        "fonte": {
+          "titulo": "Thunder Compute (YC S24) Is Hiring a C++ Low-Latency Systems Developer",
+          "data": "2025-05-08T07:01:08.000Z"
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Fila em C++: sincronização e encerramento com condition_variable",
+        "descricao": "Um exemplo completo de fila C++17 com predicado de espera, fechamento e testes de entrega, sem confundir sincronização com garantia de baixa latência.",
+        "corpoHash": "0cecdb7cb497a39d53a86388490f16039462b9e111560232cfaae1d21e5239d4",
+        "fonte": {
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines",
+          "titulo": "C++ Core Guidelines"
+        }
+      },
+      "motivo": "Retirar projeto pessoal inventado, corrigir codigo HTML quebrado e exemplo sem main funcional; fornecer testes sem alegar baixa latencia.",
+      "sobreposicao": "Busca de titulos de baixa latencia C++ nao encontrou equivalente; mantida URL e alias existentes. Nao e artigo sobre a vaga de emprego citada anteriormente.",
+      "limitacaoFonte": "Fonte anterior era vaga sem URL recuperavel. Guidelines substituem a referencia; sem data de publicacao conhecida e sem herdar a data da vaga.",
+      "evidencias": [
+        {
+          "seletor": ".fato-cpp",
+          "fonte": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines",
+          "secao": "CP.42, CP.43 e Per.6",
+          "consultadoEm": "2026-10-10T03:43:59.634Z",
+          "textoHash": "d3eabb8315855843dde33ac78d93b31dd733b516064d7c4fa276a7fff75b3cfb"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    }
+  ]
+}

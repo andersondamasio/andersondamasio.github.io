@@ -12,6 +12,21 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  cpp-example:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compilar e testar fila C++17
+        working-directory: exemplos/fila-cpp
+        run: |
+          g++ --version
+          g++ -std=c++17 -Wall -Wextra -Werror -pedantic -pthread main.cpp -o "$RUNNER_TEMP/fila-exemplo"
+          g++ -std=c++17 -Wall -Wextra -Werror -pedantic -pthread test.cpp -o "$RUNNER_TEMP/fila-testes"
+          timeout 10s "$RUNNER_TEMP/fila-exemplo" > "$RUNNER_TEMP/fila-saida.txt"
+          printf '1\n2\n3\n' | diff - "$RUNNER_TEMP/fila-saida.txt"
+          for rodada in {1..20}; do timeout 10s "$RUNNER_TEMP/fila-testes"; done
+
   reservoir-example:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -49,6 +64,7 @@ jobs:
           npm run test:editorial
           npm run test:seo:recovery
           npm run test:seo:templates
+          npm run test:examples
           npm run test:seo:navigation
           npm run test:seo:indexation
           npm run seo:navigation
