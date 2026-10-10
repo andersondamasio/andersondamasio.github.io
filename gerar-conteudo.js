@@ -52,6 +52,7 @@ const { urlLeituras, carregarLeituras, gerarResumoLeituras, gerarConteudoLeitura
 const { agruparArquivo, indiceMeses, conteudoMes, politicaListagem, estilosArquivo } = require('./scripts/seo-archive');
 const { gerarResourceHints } = require('./scripts/seo-resource-hints');
 const { normalizarRobotsMeta } = require('./scripts/seo-robots');
+const { descricaoSeoUtilizavel } = require('./scripts/seo-description');
 const {
   avaliarSinaisHumanizer,
   carregarRegrasHumanizer,
@@ -592,17 +593,13 @@ function limitarTituloSeo(texto, max = 70) {
   return limitarTrechoTituloSeo(limpo, max);
 }
 
-function gerarDescricaoSeo(texto, tituloFallback = "") {
+function gerarDescricaoSeo(texto, tituloFallback = "", tipo = "article") {
   const textoLimpo = limparTextoSeo(texto);
-  const descricaoInvalida =
-    !textoLimpo ||
-    textoLimpo.length < 70 ||
-    /^[-–—]+$/.test(textoLimpo) ||
-    /^introdu[cç][aã]o:?$/i.test(textoLimpo);
-
-  const descricao = descricaoInvalida
-    ? `Artigo de Anderson Damasio sobre ${limparTextoSeo(tituloFallback)}, com reflexões práticas para arquitetura de software, tecnologia e desenvolvimento.`
-    : textoLimpo;
+  const tituloLimpo = limparTextoSeo(tituloFallback);
+  const alternativa = tipo === "article"
+    ? `Artigo de Anderson Damasio sobre ${tituloLimpo}, com reflexões práticas para arquitetura de software, tecnologia e desenvolvimento.`
+    : descricaoSeoUtilizavel(tituloLimpo) ? tituloLimpo : `Conteúdo do site ${siteName}.`;
+  const descricao = descricaoSeoUtilizavel(textoLimpo) ? textoLimpo : alternativa;
 
   return limitarTextoSeo(descricao, 160);
 }
@@ -768,7 +765,7 @@ function gerarSeoHead({
   const imageAltText = imageAlt || (isDefaultImage ? defaultSeoImageAlt : title);
   const imageWidthValue = imageWidth || (isDefaultImage ? defaultSeoImageWidth : null);
   const imageHeightValue = imageHeight || (isDefaultImage ? defaultSeoImageHeight : null);
-  const descricao = gerarDescricaoSeo(description, title);
+  const descricao = gerarDescricaoSeo(description, title, type);
   const titulo = limitarTituloSeo(title, 100);
   const robotsMeta = normalizarRobotsMeta(robots);
   const keywordsContent = keywordsMetaContent(keywords);
@@ -3188,7 +3185,7 @@ function reconstruirPaginasSeo() {
   console.log(`SEO reconstruído para ${resultado.artigosPublicaveis} artigos publicáveis. Aliases atualizados: ${resultado.aliasesAlterados}. Listagens obsoletas: ${resultado.listagensObsoletas}. Artigos indisponíveis: ${resultado.indisponiveisAlterados}. Artigos obsoletos: ${resultado.artigosObsoletos}. Relacionados atualizados: ${resultado.relacionadosAlterados}. HTMLs com links corrigidos: ${resultado.linksCorrigidos}.`);
 }
 
-module.exports = { gerar, publicarRascunhoAprovado, humanizarArtigoGerado, reconstruirPaginasSeo, prepararArtigosPublicaveis, gerarArquivoCronologico, gerarHtmlAliasLegado };
+module.exports = { gerar, publicarRascunhoAprovado, humanizarArtigoGerado, reconstruirPaginasSeo, prepararArtigosPublicaveis, gerarArquivoCronologico, gerarHtmlAliasLegado, gerarSeoHead, gerarDescricaoSeo };
 
 if (require.main === module) {
   if (process.argv.includes("--rebuild-seo") && process.argv.includes("--draft-only")) {
