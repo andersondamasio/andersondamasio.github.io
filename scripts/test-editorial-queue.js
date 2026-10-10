@@ -63,6 +63,15 @@ test("nova sobreposicao no acervo exige revisao antes de selecionar", () => fixt
   assert.throws(selecionar, /sobreposicao-a-revisar/);
 }));
 
+test('fila automatica e selecao manual retem mesma fonte com rastreamento diferente', () => fixture(({ root, gravar, aprovado, arquivo, selecionar }) => {
+  gravar('titulos.json', [{ titulo: 'Outro recorte sem palavras em comum', url: 'artigos/existente.html',
+    urlFonte: aprovado.fonte.url + '?utm_source=feed#secao', data: '2026-09-01T00:00:00Z' }]);
+  const antes = fs.readFileSync(path.join(root, arquivo), 'utf8');
+  assert.throws(selecionar, /sobreposicao-a-revisar/);
+  assert.throws(() => selecionar({ pacote: arquivo }), /sobreposicao-a-revisar/);
+  assert.equal(fs.readFileSync(path.join(root, arquivo), 'utf8'), antes);
+}));
+
 test("pacote alterado, sem aprovacao ou com revisao futura nao e selecionado", () => fixture(({ gravar, aprovado, arquivo, selecionar }) => {
   gravar(arquivo, { ...aprovado, corpoArtigo: aprovado.corpoArtigo + "<p>Texto diferente.</p>" });
   assert.throws(selecionar, /Hash divergente/);

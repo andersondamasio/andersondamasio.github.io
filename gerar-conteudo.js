@@ -41,7 +41,8 @@ const {
 } = require('./scripts/seo-identity');
 const {
   criarFonteSchema,
-  normalizarFonteUrl
+  normalizarFonteUrl,
+  normalizarUrlComparacaoFonte
 } = require('./scripts/seo-source-citation');
 const { gerarSecoesConteudoUtil, hashCorpoEditorial } = require('./scripts/seo-helpful-content');
 const { estilosCodigoInline, paddingBlocoCodigo } = require('./scripts/seo-code-styles');
@@ -1743,24 +1744,6 @@ function normalizarTexto(str) {
   return str?.toLowerCase()
     .normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]/g, '') || "";
-}
-
-function normalizarUrlComparacaoFonte(url) {
-  const normalizada = normalizarFonteUrl(url);
-  if (!normalizada) return null;
-
-  try {
-    const parsed = new URL(normalizada);
-    [...parsed.searchParams.keys()].forEach(key => {
-      if (/^(utm_|fbclid$|gclid$|mc_cid$|mc_eid$|at_|cmpid$|guccounter$)/i.test(key)) {
-        parsed.searchParams.delete(key);
-      }
-    });
-    parsed.hash = "";
-    return parsed.href.replace(/\/$/, "");
-  } catch {
-    return normalizada.replace(/\/$/, "");
-  }
 }
 
 function dominioFonte(url) {

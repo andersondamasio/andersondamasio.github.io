@@ -38,6 +38,10 @@ npm run article:review -- conferir ".editorial/rascunhos/ARQUIVO.json"
 
 Esse teste confere preenchimento, correspondencia dos trechos, URLs, HTML e sobreposicao heuristica. Nao consulta nem comprova a veracidade das fontes. Detectores de linguagem pessoal, contagem de palavras, notas de estilo e similaridade lexical tambem nao sao verificacao factual nem prova de utilidade.
 
+A selecao de noticias, o inventario e a revisao usam a mesma chave de comparacao de fontes. Ela ignora fragmentos e parametros conhecidos de rastreamento, como `utm_*`, sem substituir a URL citada no artigo ou alterar o cadastro. Parametros de conteudo, como `id`, `lang`, `version`, `page` e parametros desconhecidos, permanecem. `at_medium` e `at_campaign` sao reconhecidos; outros nomes `at_*` nao sao removidos indiscriminadamente. A chave nao verifica redirecionamentos nem prova equivalencia entre sites, protocolos ou conteudos.
+
+Uma fonte repetida exige conferencia do recorte e justificativa, mesmo quando o titulo mudou. Nao e uma ordem para excluir, consolidar ou aplicar noindex. A fila e o publicador reavaliam os candidatos no acervo atual: um pacote antes aprovado pode ficar retido por uma sobreposicao ainda nao conferida, inclusive quando a diferenca na fonte e apenas rastreamento. A retencao nao modifica nem renova a aprovacao existente.
+
 Nao ha exigencia de esticar o artigo para um numero fixo de palavras ou secoes. A documentacao do [Google sobre conteudo util](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) orienta a avaliar originalidade, clareza de autoria, confiabilidade e valor para o leitor, sem uma contagem preferida de palavras. A [orientacao sobre IA generativa](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content) nao transforma conteudo automatizado em problema por definicao; qualidade e finalidade continuam relevantes. Nenhum desses ajustes garante indexacao ou posicao.
 
 ## Aprovar a versao revisada

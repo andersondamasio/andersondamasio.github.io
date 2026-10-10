@@ -1,6 +1,7 @@
 const { createHash } = require("node:crypto");
 const cheerio = require("cheerio");
 const { avaliarGeneroEditorial, versaoPoliticaEditorial } = require("./editorial-policy");
+const { normalizarUrlComparacaoFonte } = require("./seo-source-citation");
 
 const checklistObrigatorio = [
   "liTextoIntegral", "conferiFatosNasFontes", "distinguiInferencias",
@@ -62,13 +63,15 @@ function candidatosDuplicidade(rascunho, titulos = []) {
   const tokens = titulo => new Set(String(titulo || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .toLowerCase().split(/[^a-z0-9]+/).filter(t => t.length >= 4));
   const pauta = tokens(rascunho.titulo);
+  const fonte = normalizarUrlComparacaoFonte(rascunho.fonte?.url);
+  const mesmaFonte = item => Boolean(fonte && normalizarUrlComparacaoFonte(item.urlFonte) === fonte);
   return titulos.filter(item => {
     if (item.localizacao?.estado === "pendente" || !item.url) return false;
-    if (item.urlFonte && item.urlFonte === rascunho.fonte?.url) return true;
+    if (mesmaFonte(item)) return true;
     const anterior = tokens(item.titulo);
     const comuns = [...pauta].filter(t => anterior.has(t)).length;
     return comuns >= 3 && comuns / Math.max(1, Math.min(pauta.size, anterior.size)) >= 0.6;
-  }).map(item => ({ url: item.url, titulo: item.titulo, mesmaFonte: item.urlFonte === rascunho.fonte?.url }));
+  }).map(item => ({ url: item.url, titulo: item.titulo, mesmaFonte: mesmaFonte(item) }));
 }
 
 function criarDossie(rascunho, titulos = []) {
