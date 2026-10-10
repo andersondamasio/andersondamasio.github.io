@@ -59,6 +59,14 @@ async function main() {
         const avaliacao = await pagina.evaluate(() => ({
           titulo: document.querySelector("h1")?.textContent.trim(),
           h1: document.querySelectorAll("h1").length,
+          autoriaVisivel: !document.querySelector('.article-body') || (() => {
+            const linha = document.querySelector('main > h1 + .article-byline');
+            if (!linha) return false;
+            const r = linha.getBoundingClientRect();
+            return r.width > 0 && r.height > 0 && getComputedStyle(linha).visibility !== 'hidden' &&
+              r.top >= document.querySelector('main > h1').getBoundingClientRect().bottom &&
+              r.bottom <= document.querySelector('.article-body').getBoundingClientRect().top;
+          })(),
           overflow: document.documentElement.scrollWidth > innerWidth + 1,
           botoesSobreCodigo: [...document.querySelectorAll('.article-body pre')].filter(pre => {
             const botao = pre.querySelector('.copy-button');
@@ -114,7 +122,7 @@ async function main() {
       }
       await contexto.close();
     }
-    const aceita = resultados.every(r => r.h1 === 1 && !r.overflow && !r.botoesSobreCodigo && !r.imagensQuebradas.length && !r.textoForaDaTela.length && !r.erros.length);
+    const aceita = resultados.every(r => r.h1 === 1 && r.autoriaVisivel && !r.overflow && !r.botoesSobreCodigo && !r.imagensQuebradas.length && !r.textoForaDaTela.length && !r.erros.length);
     const relatorio = { verificadoEm: new Date().toISOString(), aceita, observacao: "Servidor local temporario; analytics e dominios externos bloqueados durante QA.", resultados, fluxosLeituras };
     fs.writeFileSync(path.join(diretorio, "resultado.json"), JSON.stringify(relatorio, null, 2));
     console.log(JSON.stringify(relatorio, null, 2));

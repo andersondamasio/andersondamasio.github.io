@@ -15,3 +15,4 @@ exclude:
   - exemplos/reservoir-sampling/bin/
   - exemplos/reservoir-sampling/obj/
   - dados/editorial/arquivados/
+  - _assets/

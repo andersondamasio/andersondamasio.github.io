@@ -46,6 +46,7 @@ const {
 const { gerarSecoesConteudoUtil, hashCorpoEditorial } = require('./scripts/seo-helpful-content');
 const { estilosCodigoInline, paddingBlocoCodigo } = require('./scripts/seo-code-styles');
 const { descricaoPerfil, gerarApresentacaoPerfil, estilosPerfil } = require('./scripts/seo-profile');
+const { gerarAutoriaVisivel } = require('./scripts/seo-article-byline');
 const { urlLeituras, carregarLeituras, gerarResumoLeituras, gerarConteudoLeituras, criarSchemaLeituras, estilosLeituras } = require('./scripts/seo-selected-readings');
 const { agruparArquivo, indiceMeses, conteudoMes, politicaListagem, estilosArquivo } = require('./scripts/seo-archive');
 const { gerarResourceHints } = require('./scripts/seo-resource-hints');
@@ -2583,6 +2584,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 ${gerarHeaderNavegacao("../..")}
 <main>
 <h1>${escapeHTML(titulo)}</h1>
+${gerarAutoriaVisivel()}
 ${imagemCapaUrl ? `<img src="${imagemCapaUrl}" alt="${escapeAttribute(titulo)}" decoding="async" fetchpriority="high"${imagemCapaDimensoesHtml} style="width:100%; max-width:600px; border-radius:8px; margin: 0 auto 1.5rem; display:block;" />` : ''}
 <p class="article-meta">Publicado em: ${dataHoraFormatada}</p>
 

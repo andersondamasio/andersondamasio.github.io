@@ -7,6 +7,7 @@ const { execFileSync } = require("node:child_process");
 const cheerio = require("cheerio");
 const { inserirSecoesConteudoUtil, avaliarSecoesConteudoUtil, gerarSecoesConteudoUtil, hashCorpoEditorial } = require("./seo-helpful-content");
 const { criarPessoaSchema, criarWebSiteSchema } = require("./seo-identity");
+const { gerarAutoriaVisivel, inserirAutoriaVisivel, avaliarAutoriaVisivel } = require("./seo-article-byline");
 const { estilosCodigoInline, aplicarEstilosCodigoInline, paddingBlocoCodigo, aplicarEspacoBotaoCopiar } = require("./seo-code-styles");
 const { defaultSeoImage, defaultArticleImages, getArticleStructuredImages } = require("./seo-assets");
 const { aprovacaoFixture } = require("./fixtures/editorial-review");
@@ -46,6 +47,37 @@ test("bloco legado nao declara revisao e nao injeta checklist generico", () => {
   assert.doesNotMatch($.text(), /O que foi verificado|Como aplicar essa leitura/);
   assert.equal($("a[rel=author]").text(), "Anderson Damasio");
 });
+
+test("autoria perto do titulo e fiel, idempotente e preserva corpo e datas", () => {
+  const corpo = '<p>Exemplo &amp; limites.</p><div><code>teste</code></div>';
+  const html = `<html><head></head><body><main><h1>Contrato</h1><p class="article-meta">Publicado em: 01/01/2025</p><div class="article-body">${corpo}</div></main></body></html>`;
+  const novo = inserirAutoriaVisivel(html);
+  assert.equal(inserirAutoriaVisivel(novo), novo);
+  assert.equal(novo.replace('\n' + gerarAutoriaVisivel(), ''), html);
+  const crlf = html.replace('</h1>', '</h1>\r\n');
+  const novoCrlf = inserirAutoriaVisivel(crlf);
+  assert.equal(novoCrlf.replace('\r\n' + gerarAutoriaVisivel(), ''), crlf);
+  assert.equal(inserirAutoriaVisivel(novoCrlf), novoCrlf);
+  const $ = cheerio.load(novo);
+  assert.equal(avaliarAutoriaVisivel($), true);
+  assert.equal($(".article-body").html(), corpo);
+  assert.equal($(".article-meta").text(), 'Publicado em: 01/01/2025');
+  assert.doesNotMatch($(".article-byline").text(), /revisado|experi[eê]ncia|testei/i);
+  for (const errado of [novo.replace('/sobre.html" rel="author"', '/outro.html" rel="author"'),
+    novo.replace('Respons&aacute;vel pelo site:', 'Revisado por:'), novo.replace('class="article-byline"', 'hidden class="article-byline"'),
+    novo.replace(gerarAutoriaVisivel(), '')]) assert.equal(avaliarAutoriaVisivel(cheerio.load(errado)), false);
+  assert.throws(() => inserirAutoriaVisivel(html.replace('<h1>Contrato</h1>', '')), /titulo unico/);
+  assert.throws(() => inserirAutoriaVisivel(html.replace(corpo, gerarAutoriaVisivel() + corpo)), /fora do local/);
+});
+
+test("auditoria acusa ausencia e falsa revisao na linha junto ao titulo", () => workspace(root => {
+  fs.mkdirSync(path.join(root, 'artigos'));
+  const correto = `<html><head><title>Contrato</title></head><body><main><h1>Contrato</h1>${gerarAutoriaVisivel()}<div class="article-body"><p>Uma regra.</p></div></main></body></html>`;
+  for (const [nome, html] of Object.entries({ correto, ausente: correto.replace(gerarAutoriaVisivel(), ''),
+    falso: correto.replace('Respons&aacute;vel pelo site:', 'Revisado por:') })) fs.writeFileSync(path.join(root, `artigos/${nome}.html`), html);
+  const r = JSON.parse(execFileSync(process.execPath, [path.join(__dirname, 'seo-audit.js')], { cwd: root, encoding: 'utf8' }));
+  assert.deepEqual(r.issues.articleMissingVisibleByline.sort(), ['artigos/ausente.html', 'artigos/falso.html']);
+}));
 
 test("auditoria confere metadados contra corpo e cadastro sem minimo de palavras", () => workspace(root => {
   const corpo = '<p>Fila duravel.</p><pre><code>codigo nao e prosa</code></pre>';
@@ -287,6 +319,7 @@ test("publicacao revisada preserva aprovacao, descricao e data em dois backfills
   const aprovado = aprovacaoFixture();
   const { url } = publicarRascunhoAprovado(aprovado, { agora: new Date("2026-10-02T12:00:00Z") });
   const publicado = cheerio.load(fs.readFileSync(url, "utf8"));
+  assert.equal(avaliarAutoriaVisivel(publicado), true);
   const schemaPublicado = JSON.parse(publicado("script[type='application/ld+json']").first().text());
   assert.equal(schemaPublicado.wordCount, contarPalavrasProsa(aprovado.corpoArtigo));
   assert.equal(schemaPublicado.keywords, undefined);
@@ -303,6 +336,7 @@ test("publicacao revisada preserva aprovacao, descricao e data em dois backfills
   assert.equal(fs.readFileSync(url, "utf8"), primeiro);
   const $ = cheerio.load(primeiro);
   assert.equal($(".article-validation").attr("data-editorial-status"), "revisado");
+  assert.equal(avaliarAutoriaVisivel($), true);
   assert.equal($("meta[name=description]").attr("content"), aprovado.resumo);
   assert.equal($("meta[property='article:published_time']").attr("content"), "2026-10-02T12:00:00.000Z");
   assert.equal($("meta[property='article:modified_time']").attr("content"), "2026-10-03T12:00:00.000Z");

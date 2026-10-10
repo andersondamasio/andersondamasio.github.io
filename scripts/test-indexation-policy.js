@@ -7,6 +7,7 @@ const cheerio = require("cheerio");
 const { execFileSync } = require("node:child_process");
 const { planejarIndexacao, exigirManifestoAplicado, aplicarIndexacao } = require("./indexation-policy");
 const { hashCorpoEditorial } = require("./seo-helpful-content");
+const { avaliarAutoriaVisivel } = require("./seo-article-byline");
 const { reconstruirPaginasSeo } = require("../gerar-conteudo");
 const { hashArquivo, hashRegistros } = require("./article-lifecycle");
 
@@ -30,7 +31,7 @@ function fixture(run) {
     fs.mkdirSync("artigos/arquitetura", { recursive: true });
     const cadastro = ["revisar", "preservar"].map(nome => ({ url: `artigos/arquitetura/${nome}.html`, titulo: `Contratos para ${nome}`, categoria: "Arquitetura", data: "2026-10-01T12:00:00Z" }));
     const corpo = "<p>Exemplo de conteudo cujo valor precisa de revisao individual.</p>";
-    for (const a of cadastro) fs.writeFileSync(a.url, `<html><head><title>${a.titulo}</title><link rel="canonical" href="https://www.andersondamasio.com.br/${a.url}"><meta name="robots" content="index, follow"></head><body><h1>${a.titulo}</h1><div class="article-body">${corpo}</div></body></html>`);
+    for (const a of cadastro) fs.writeFileSync(a.url, `<html><head><title>${a.titulo}</title><link rel="canonical" href="https://www.andersondamasio.com.br/${a.url}"><meta name="robots" content="index, follow"></head><body><main><h1>${a.titulo}</h1><div class="article-body">${corpo}</div></main></body></html>`);
     fs.writeFileSync("titulos.json", JSON.stringify(cadastro));
     const manifesto = { versao: 1, protegidas: ["index.html", "sobre.html", "contato.html"], decisoes: [{
       url: cadastro[0].url, acao: "noindex", motivo: "Conteudo retido para revisao editorial especifica, sem conclusao sobre penalizacao.",
@@ -60,6 +61,8 @@ test("dry-run nao escreve; aplicacao transacional mantem texto e decisoes em doi
   const aplicado = fs.readFileSync(url, "utf8");
   execFileSync(process.execPath, [path.join(__dirname, "seo-backfill-articles.js")], { stdio: "pipe" });
   assert.equal(fs.readFileSync(url, "utf8"), aplicado);
+  assert.equal(cheerio.load(aplicado)(".article-byline").length, 0);
+  assert.equal(avaliarAutoriaVisivel(cheerio.load(fs.readFileSync(cadastro[1].url, "utf8"))), true);
   for (let i = 0; i < 2; i++) {
     reconstruirPaginasSeo();
     const $ = cheerio.load(fs.readFileSync(url, "utf8"));

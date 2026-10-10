@@ -24,6 +24,7 @@ const {
   normalizarFonteUrl
 } = require("./seo-source-citation");
 const { inserirSecoesConteudoUtil } = require("./seo-helpful-content");
+const { inserirAutoriaVisivel } = require("./seo-article-byline");
 const { aplicarEstilosCodigoInline, aplicarEspacoBotaoCopiar } = require("./seo-code-styles");
 
 const root = process.cwd();
@@ -507,7 +508,7 @@ for (const file of walk(root)) {
     sourceDate,
     editorial: metaByUrl?.editorial
   });
-  const updatedHtml = aplicarEspacoBotaoCopiar(aplicarEstilosCodigoInline(htmlComConteudoUtil))
+  const updatedHtml = aplicarEspacoBotaoCopiar(aplicarEstilosCodigoInline(inserirAutoriaVisivel(htmlComConteudoUtil)))
     .replace(/<html(?![^>]*\blang=)([^>]*)>/i, '<html lang="pt-BR"$1>')
     .replace(/(<head[\s\S]*?>)([\s\S]*?)(<\/head>)/i, (_, open, head, close) => {
       return `${open}${rebuildHead(head, seo)}${close}`;
