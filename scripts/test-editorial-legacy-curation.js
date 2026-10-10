@@ -12,6 +12,56 @@ const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.js
 const manifesto = JSON.parse(ler('dados/indexacao.json'));
 const cadastro = JSON.parse(ler('titulos.json'));
 
+test('curadoria de dispositivos preserva snapshots e corrige acesso sem simular testes pessoais', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-dispositivos-2026-10.json'));
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.metricasGoogle, null);
+  assert.equal(lote.linksExternosConhecidos, null);
+  assert.equal(lote.experimentosExecutados, false);
+  assert.equal(lote.artigos.length, 9);
+  assert.equal(lote.artigos.filter(a => a.acao === 'retirar').length, 8);
+  for (const a of lote.artigos) {
+    const d = manifesto.decisoes.find(d => d.url === a.url);
+    assert.equal(d.acao, a.acao);
+    assert.ok(a.motivo && a.evidencia && a.alternativas);
+    if (a.acao === 'atualizar') {
+      const r = cadastro.find(r => r.url === a.url), q = cheerio.load(ler(a.url));
+      assert.equal(r.data, a.antes.data);
+      assert.equal(q('meta[property="article:published_time"]').attr('content'), a.antes.data);
+      assert.equal(r.correcaoEditorial.revisaoHumana, false);
+      assert.equal(r.titulo, a.depois.titulo);
+      assert.equal(q('h1').text(), a.depois.titulo);
+      assert.equal(q('meta[name=description]').attr('content'), a.depois.descricao);
+      assert.equal(q('link[rel=canonical]').attr('href'), 'https://www.andersondamasio.com.br/' + a.url);
+      assert.doesNotMatch(q('meta[name=robots]').attr('content'), /noindex/);
+      assert.equal(hashCorpoEditorial(q('.article-body').html()), a.depois.corpoHash);
+      assert.equal(d.conteudoHash, a.depois.corpoHash);
+      for (const e of a.evidencias) {
+        assert.equal(q(e.seletor + ' a').attr('href'), e.fonte);
+        assert.equal(hashCorpoEditorial(q(e.seletor).html()), e.textoHash);
+      }
+      assert.match(q('.fato-autenticacao').text(), /não exige conectar um repositório do GitHub/);
+      assert.match(q('.fato-permissoes').text(), /não é uma garantia de isolamento/);
+      assert.match(q('.limites-editoriais').text(), /Não houve instalação, login, execução de comandos/);
+      assert.match(q('.contribuicao-editorial').text(), /comando de teste do próprio projeto/);
+      assert.doesNotMatch(q('.article-body').text(), /R\$ 17|tive a oportunidade de testar|como instalei/);
+    } else {
+      const copia = JSON.parse(ler(a.arquivoRecuperavel));
+      assert.equal(a.destinoEquivalente, null);
+      assert.equal(d.destino, undefined);
+      assert.equal(cadastro.some(r => r.url === a.url), false);
+      assert.equal(hashRegistros(copia.registros), d.registrosHash);
+      assert.equal(hashArquivo(copia.arquivos[0].html), d.arquivoHash);
+      assert.equal(copia.registros[0].data, a.antes.data);
+      assert.equal(copia.registros[0].titulo, a.antes.titulo);
+      assert.equal(hashCorpoEditorial(cheerio.load(copia.arquivos[0].html)('.article-body').html()), a.antes.corpoHash);
+      assert.deepEqual(copia.arquivos.map(f => f.url), [a.url, ...a.aliases]);
+      for (const p of copia.arquivos) assert.equal(fs.existsSync(path.join(root, p.url)), false);
+      for (const alias of d.aliases) assert.equal(hashArquivo(copia.arquivos.find(f => f.url === alias.url).html), alias.arquivoHash);
+    }
+  }
+});
+
 test('curadoria de uso preserva evidencias, datas e snapshots sem atestar testes pessoais', () => {
   const lote = JSON.parse(ler('dados/editorial/curadoria-uso-2026-10.json'));
   assert.equal(lote.revisaoHumana, false);

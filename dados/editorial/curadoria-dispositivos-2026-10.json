@@ -1,0 +1,257 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T11:04:15.692Z",
+  "base": "ff4be6cc148825955c2182a69e5bca4732dccdc2",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": false,
+  "escopo": "Uma correcao documental de Claude Code e oito retiradas recuperaveis de relatos pessoais nao confirmados. Sem novo noindex, teste de dispositivo, instalacao de Claude Code, API paga ou aprovacao de rascunho.",
+  "limitacaoFontes": "Fontes ZDNet consultadas nao puderam ser abertas. Nao se afirma falsidade das reportagens, leitura dessas fontes ou ausencia de trafego. Retiradas se baseiam nos corpos locais lidos integralmente e na confirmacao do usuario de que nao sao vivencias pessoais. Correcao sustentada em quatro documentos oficiais.",
+  "comparacoesSemAlteracao": [
+    {
+      "url": "artigos/tecnologia-automotiva/melhorando-sua-experiencia-automotiva-aawireless-two-plus-e-a-conexao-sem-fio.html",
+      "estado": "revisao_pendente",
+      "motivo": "Leitura integral: outro modelo e promessa promocional de cumprir expectativas, sem ensaio independente. Nao tratado como equivalente ao teste pessoal retirado."
+    },
+    {
+      "url": "artigos/tecnologia/novas-fronteiras-da-conexao-por-que-o-roteador-5g-e-a-revolucao-que-voce-nao-sabia-que-precisava.html",
+      "estado": "revisao_pendente",
+      "motivo": "Leitura integral: noticia da mesma fonte M6E, com superioridade generalizada sem metodo comparativo. Nao tratada como destino validado para o relato pessoal."
+    }
+  ],
+  "artigos": [
+    {
+      "url": "artigos/programacao/como-otimizar-seu-fluxo-de-trabalho-com-claude-code-um-guia-pratico.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Como otimizar seu fluxo de trabalho com Claude Code: um guia prático",
+        "data": "2025-12-13T13:29:13.446Z",
+        "corpoHash": "c1d8adff86750ef5df4c286bb304fcde8fed4422b19ee9cf7b548bfbdc5e18db",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/how-to-install-configure-claude-code-ai-pricing-developers/",
+          "titulo": "How to install and configure Claude Code, step by step",
+          "data": "2025-12-13T13:00:41.000Z"
+        }
+      },
+      "motivo": "Corrigir obrigatoriedade de conectar GitHub, preco em reais sem sustentacao, falsa instalacao pessoal e confusao entre diretorio de trabalho e isolamento.",
+      "evidencia": "Corpo local lido integralmente. Documentacoes oficiais de setup, autenticacao, permissoes e memoria consultadas. Fonte ZDNet original nao acessivel; detalhes nao reafirmados. Nenhuma instalacao ou chamada de IA executada.",
+      "alternativas": "Preservar a pergunta sobre primeira configuracao com documentacao primaria e ficha de verificacao proposta; remover preco e promessa de produtividade nao medidos.",
+      "aliases": [
+        "programacao/como-otimizar-seu-fluxo-de-trabalho-com-claude-code-um-guia-pratico.html"
+      ],
+      "depois": {
+        "titulo": "Claude Code: instalação, conta e permissões na primeira sessão",
+        "descricao": "Como separar instalação, autenticação e permissões no Claude Code, com uma ficha proposta para conferir a primeira tarefa e seus limites.",
+        "corpoHash": "a9528bca5c2fb8f50d510a282262b72675667fab01ac04580201e516a951f9e2"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-instalacao",
+          "fonte": "https://code.claude.com/docs/en/setup",
+          "consultadoEm": "2026-10-10T11:04:15.692Z",
+          "textoHash": "789ab718e494d88137f193d92a26df8cd0a46664e9e4742aa2a81044a9370aa9"
+        },
+        {
+          "seletor": ".fato-autenticacao",
+          "fonte": "https://code.claude.com/docs/en/authentication",
+          "consultadoEm": "2026-10-10T11:04:15.692Z",
+          "textoHash": "eaab7e2d41d92d39b198842b4de7e1a6bcc908681340cee18e9415d5d870bb5e"
+        },
+        {
+          "seletor": ".fato-permissoes",
+          "fonte": "https://code.claude.com/docs/en/permissions",
+          "consultadoEm": "2026-10-10T11:04:15.692Z",
+          "textoHash": "f2c9f72e2e20fd881244e2df0e920a837f77a7a1daec5fa1844fefec493ebeec"
+        },
+        {
+          "seletor": ".fato-memoria",
+          "fonte": "https://code.claude.com/docs/en/memory",
+          "consultadoEm": "2026-10-10T11:04:15.692Z",
+          "textoHash": "5980cde3343318f5baaceca9aff4c6e4510032d6a6ad707802c2aa88a2f812d2"
+        }
+      ],
+      "pergunta": "O que conferir entre instalar o Claude Code e aceitar sua primeira alteracao no projeto?",
+      "sobreposicao": "Cadastro pesquisado por Claude e instalacao/configuracao/fluxo, sem outra URL com esse recorte encontrada. Isso nao demonstra ausencia de toda sobreposicao tematica.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/tecnologia/um-laptop-linux-que-une-potencia-e-portabilidade-a-revolucao-da-infinitybook-pro-14.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "Um laptop Linux que une potência e portabilidade: a revolução da InfinityBook Pro 14",
+        "data": "2026-01-03T13:31:33.192Z",
+        "corpoHash": "329c4cdf36d40575e3a0365c1b52d80fb5760eae96ca3e87816fd5085bdd8481",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/tuxedo-computers-infinitybook-14-pro-laptop-review/",
+          "titulo": "The Linux laptop I keep coming back to nails performance and portability",
+          "data": "2026-01-02T17:25:00.000Z"
+        }
+      },
+      "motivo": "Retirar teste de IA, personalizacao do laptop e medicao de bateria atribuidos ao autor sem execucao confirmada.",
+      "evidencia": "Leitura integral: alega gerar codigo em segundos, trocar tema, comparar com MacBook pessoal e medir seis a oito horas de bateria. Nao apresenta ambiente, modelo, protocolo ou arquivos. Usuario confirmou que artigos nao sao vivencias pessoais.",
+      "alternativas": "Comparado o outro texto InfinityBook do acervo: tambem reivindica teste pessoal sem protocolo. Nao ha destino de comparacao independente validada; trocar pronomes ou fundir relatos nao cria evidencia. Preservar copias integrais.",
+      "aliases": [
+        "tecnologia/um-laptop-linux-que-une-potencia-e-portabilidade-a-revolucao-da-infinitybook-pro-14.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/b571f3af0015976d540177c441faa5560aee08d2ca9a7fd614cda75fee29d16e.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/tecnologia/desbravando-o-mundo-linux-o-desempenho-do-infinitybook-pro-14-em-comparacao-com-o-macbook.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "Desbravando o Mundo Linux: O Desempenho do InfinityBook Pro 14 em Comparação com o MacBook",
+        "data": "2025-12-30T15:24:20.102Z",
+        "corpoHash": "ff13e3ef2b32580672703c6814e85e1dbb1f248fbfce056fbff58eee17e79908",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/tuxedo-computers-infinitybook-14-pro-review/",
+          "titulo": "Ready for a Linux laptop? I found one that competes with my MacBook Pro",
+          "data": "2025-12-30T15:17:00.000Z"
+        }
+      },
+      "motivo": "Retirar comparacao de desempenho baseada em teste pessoal de laptop e modelo de IA nao confirmado.",
+      "evidencia": "Leitura integral: reivindica testar Gen 10 e gerar script instantaneamente, sem modelo, carga, configuracao ou resultados comparaveis de MacBook. O titulo promete comparacao que o corpo nao demonstra.",
+      "alternativas": "O outro InfinityBook lido possui a mesma falta de protocolo e vivencia nao confirmada. Nao consolidar dois relatos como se formassem um benchmark; um ensaio independente exigiria dados e equipamento nao disponiveis.",
+      "aliases": [
+        "tecnologia/desbravando-o-mundo-linux-o-desempenho-do-infinitybook-pro-14-em-comparacao-com-o-macbook.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/a267cd4db21a70537a44f330beadf2408991ba10cf7bf23ea0b0f4fcc415922e.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/tecnologia/a-batalha-dos-wearables-apple-watch-ou-anel-inteligente.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "A Batalha dos Wearables: Apple Watch ou Anel Inteligente?",
+        "data": "2025-08-27T23:18:05.808Z",
+        "corpoHash": "6f3687be92154a3277133ce8e2f922bd43c08c42423699e6bdbfa33ef912626a",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/i-still-prefer-apple-watch-over-oura-ring-for-3-key-reasons-but-there-is-one-big-drawback/",
+          "titulo": "I still prefer Apple Watch over Oura Ring for 3 key reasons - but there is one big drawback",
+          "data": "2025-08-27T22:43:02.000Z"
+        }
+      },
+      "motivo": "Retirar comparacao de conforto e efeitos pessoais de estresse baseada em semanas de uso nao confirmadas.",
+      "evidencia": "Leitura integral: atribui ao autor sono com Apple Watch, testes de Oura e Samsung e reducao de estresse ao parar de usar anel. Nao fornece protocolo, dados ou validacao desses efeitos; mistura preferencia e alegacao de saude.",
+      "alternativas": "Um comparativo documentado de recursos nao equivale ao relato de conforto e estresse prometido. Remover experiencias deixaria dicas genericas sem resolver a comparacao. Nao inferir eficacia ou transferir relato a terceiro nao verificado.",
+      "aliases": [
+        "tecnologia/a-batalha-dos-wearables-apple-watch-ou-anel-inteligente.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/24d4627961e6385aab682979d9ebf7c729f7b338cb213c3437de3ff07f83e94b.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/tecnologia/a-revolucao-dos-adaptadores-aawireless-two-e-suas-promessas.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "A revolução dos adaptadores: AAWireless Two e suas promessas",
+        "data": "2025-11-11T16:27:02.677Z",
+        "corpoHash": "f63e9c7c06192dca0b04174d80ddb482ae28e7f0fe8491b4da489e2fff28bf1d",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/this-android-auto-adapter-solved-almost-every-issue-ive-had-and-its-price-just-got-better/",
+          "titulo": "This Android Auto adapter solved almost every issue I've had - and it's price just got better",
+          "data": "2025-11-11T16:24:00.000Z"
+        }
+      },
+      "motivo": "Retirar recomendacao de melhor adaptador sustentada em testes e uso familiar nao confirmados.",
+      "evidencia": "Leitura integral: compara falhas e superaquecimento de Motorola MA1 com estabilidade de AAWireless Two, alega compartilhar carro com esposa e ausencia de lags. Nao identifica carro, firmware, telefone ou protocolo de teste.",
+      "alternativas": "Artigo relacionado Two Plus lido integralmente: noticia de outro modelo, sem teste verificavel equivalente. Nao redirecionar uma avaliacao pessoal para recomendacao promocional de outro produto; guardar snapshot para eventual reescrita com evidencia.",
+      "aliases": [
+        "tecnologia/a-revolucao-dos-adaptadores-aawireless-two-e-suas-promessas.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/497de96dbb07fabe1f086e8ecebb1a5e46830e248e6182a2b229caba2b79d097.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/tecnologia/a-revolucao-dos-hotspots-portateis-conectividade-na-palma-da-mao.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "A revolução dos hotspots portáteis: conectividade na palma da mão",
+        "data": "2025-09-27T08:21:53.809Z",
+        "corpoHash": "893347310f6780e2cfc8164af253677bbc5d25eaa0ea830df09cab34d811571f",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/why-this-portable-hotspot-may-be-my-favorite-travel-gadget-of-the-year/",
+          "titulo": "Why this portable hotspot may be my favorite travel gadget of the year",
+          "data": "2025-09-27T07:45:29.000Z"
+        }
+      },
+      "motivo": "Retirar medicao e relato pessoal de conectividade JourneyGo sem ambiente ou execucao confirmados.",
+      "evidencia": "Leitura integral: declara download de 2,3 Mbps, quedas em cruzamentos, streaming e jogos executados pelo autor, sem local, operadora, horario ou protocolo. Recomenda plano ilimitado e liga genericamente o produto a arquitetura.",
+      "alternativas": "Um guia de escolha de conectividade exigiria requisitos e verificacao dos planos, nao reaproveitamento de medicao sem origem. Nenhum ensaio equivalente identificado no recorte conferido; nao redirecionar para outro hotspot.",
+      "aliases": [
+        "tecnologia/a-revolucao-dos-hotspots-portateis-conectividade-na-palma-da-mao.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/d383030c416ac4e9feba095fb1b30530f6f9980cd9bb34dda328d2d491b396bf.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/tecnologia/a-revolucao-nos-hotspots-por-que-me-despedi-do-iphone-e-abracei-o-5g.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "A revolução nos hotspots: por que me despedi do iPhone e abracei o 5G",
+        "data": "2026-04-19T22:41:03.619Z",
+        "corpoHash": "06968a18190ed18eff670621ec2cdadfc3b2b55874e47d5c5e60f2cfa45053ce",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/acer-connect-m6e-mobile-hotspot-review/",
+          "titulo": "I stopped using my iPhone's hotspot after testing this 5G router - and that won't change",
+          "data": "2026-04-19T16:00:49.000Z"
+        }
+      },
+      "motivo": "Retirar troca pessoal de hotspot e superioridade de estabilidade e velocidade sem teste confirmado.",
+      "evidencia": "Leitura integral: afirma testar Acer M6E por bom tempo e mudar a forma de trabalhar, com desempenho incomparavel ao iPhone. Nao identifica modelo de iPhone, rede, condicoes nem resultados medidos.",
+      "alternativas": "A outra pagina da mesma fonte foi lida: noticia promocional, sem ensaio comparativo independente. Nao serve de destino equivalente validado para a vivencia pessoal. Fonte compartilhada so motivou comparacao, nao a decisao.",
+      "aliases": [
+        "tecnologia/a-revolucao-nos-hotspots-por-que-me-despedi-do-iphone-e-abracei-o-5g.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/97f273ac4a522a49a810d1a07c6cfdb97bf64dc27ddec439173a125fa3c33e45.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/tecnologia/por-que-troquei-meu-kindle-por-um-ipad-mini-e-nunca-mais-quero-voltar.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "Por que troquei meu Kindle por um iPad Mini e nunca mais quero voltar",
+        "data": "2025-11-10T16:29:30.538Z",
+        "corpoHash": "e7807de8bdbd3d8ba443f649673545d4f7e2b3d49eccc0acd9f0ce47343631e4",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/why-i-replaced-my-kindle-with-an-ipad-mini-for-reading-ebooks-and-cant-go-back/",
+          "titulo": "Why I replaced my Kindle with an iPad Mini for reading ebooks - and can't go back",
+          "data": "2025-11-10T16:27:00.000Z"
+        }
+      },
+      "motivo": "Retirar troca de aparelho e rotina pessoal de leitura nao confirmadas, usadas como fundamento de recomendacao.",
+      "evidencia": "Leitura integral: titulo e conclusao atribuem ao autor abandonar Kindle por iPad, ler antes de dormir e incorporar aparelho a rotina. Comparacao nao identifica versoes equivalentes nem protocolo; preco e conforto visual nao possuem sustentacao independente.",
+      "alternativas": "Outro texto Kindle/iPad lido integralmente repete a preferencia pessoal e tambem nao demonstra teste. Consolidar os dois nao valida a experiencia; nao converter em recomendacao universal.",
+      "aliases": [
+        "tecnologia/por-que-troquei-meu-kindle-por-um-ipad-mini-e-nunca-mais-quero-voltar.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/12d40c04b66f0376a6a4f4299e180f066fff906dd4527139a6a711c1c470adc1.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/tecnologia/a-batalha-dos-e-readers-por-que-minha-escolha-e-o-ipad-mini-ao-inves-do-kindle.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "A batalha dos e-readers: Por que minha escolha é o iPad Mini ao invés do Kindle",
+        "data": "2025-08-06T14:25:22.557Z",
+        "corpoHash": "428aeafa1dc491dc0e83bafe41fa1e15e8c97b7a76bdf8269d4cd51c21713b4b",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/8-reasons-why-i-replaced-my-kindle-with-an-ipad-mini-for-reading-ebooks/",
+          "titulo": "8 reasons why I replaced my Kindle with an iPad Mini for reading ebooks",
+          "data": "2025-08-06T14:22:00.000Z"
+        }
+      },
+      "motivo": "Retirar teste declarado de e-readers e preferencia pessoal de uso noturno sem confirmacao.",
+      "evidencia": "Leitura integral: afirma testar ambos e compartilhar experiencia; compara resolucao e controles sem especificar Kindle ou demonstrar metodo. As dicas finais nao sustentam a preferencia autobiografica do titulo.",
+      "alternativas": "Comparado outro artigo da mesma pergunta: tambem depende de troca pessoal inventada. Um comparativo por requisitos seria outra pesquisa; manter snapshots dos dois sem redirecionamento para uma pagina sem evidencia equivalente.",
+      "aliases": [
+        "tecnologia/a-batalha-dos-e-readers-por-que-minha-escolha-e-o-ipad-mini-ao-inves-do-kindle.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/4bb4157418edaff10c84d4174744bd89490726b83111a681e4c0c2d70df7410e.json",
+      "destinoEquivalente": null
+    }
+  ]
+}
