@@ -19,6 +19,7 @@ const {
 } = require("./seo-identity");
 const { gerarResourceHints } = require("./seo-resource-hints");
 const { normalizarRobotsMeta } = require("./seo-robots");
+const { descricaoSeoUtilizavel } = require("./seo-description");
 const {
   criarFonteSchema,
   normalizarFonteUrl
@@ -149,13 +150,7 @@ function buildPageTitle(title, category) {
 
 function buildDescription(text, title) {
   const clean = cleanText(text);
-  const invalid =
-    !clean ||
-    clean.length < 70 ||
-    /^[-–—]+$/.test(clean) ||
-    /^introdu[cç][aã]o:?$/i.test(clean);
-
-  if (invalid) {
+  if (!descricaoSeoUtilizavel(clean)) {
     return trimSeo(`Artigo de Anderson Damasio sobre ${cleanText(title)}, com reflexões práticas para arquitetura de software, tecnologia e desenvolvimento.`);
   }
 
@@ -482,7 +477,8 @@ for (const file of walk(root)) {
   const sourceDate = metaByUrl?.dataFonte || metaByTitle?.dataFonte;
   const articleText = $(".article-body").text() || $("main").text() || $("body").text();
   const currentDescription = $('meta[name="description" i]').attr("content") || "";
-  const descriptionSource = metaByUrl?.seo?.description || (cleanText(articleText).length >= 70 ? articleText : currentDescription || title);
+  const descriptionSource = [metaByUrl?.seo?.description, articleText, currentDescription, title]
+    .find(value => descricaoSeoUtilizavel(cleanText(value)));
   const seo = buildSeoHead({
     title,
     description: descriptionSource,

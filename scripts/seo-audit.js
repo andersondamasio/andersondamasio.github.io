@@ -25,6 +25,7 @@ const {
 } = require("./seo-source-citation");
 const { avaliarSecoesConteudoUtil } = require("./seo-helpful-content");
 const { avaliarAutoriaVisivel } = require("./seo-article-byline");
+const { descricaoSeoUtilizavel } = require("./seo-description");
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
@@ -434,7 +435,7 @@ for (const file of walk(root)) {
   if (!title) pushExample(stats.missingTitle, fileRel);
   if (!noindex && title.length > 100) pushExample(stats.overlongTitle, `${fileRel}: ${title.length} caracteres`);
   if (!description) pushExample(stats.missingDescription, fileRel);
-  if (description && (description.length < 70 || /^[-–—]+$/.test(description) || /^introdu[cç][aã]o:?$/i.test(description))) {
+  if (description && !descricaoSeoUtilizavel(description)) {
     pushExample(stats.weakDescription, `${fileRel}: ${description}`);
   }
   if (!canonical) {
@@ -558,6 +559,9 @@ for (const file of walk(root)) {
   $('script[type="application/ld+json" i]').each((_, script) => {
     const json = $(script).contents().text();
     for (const item of getJsonLdObjects(json)) {
+      if (jsonLdTypeIncludes(item, "CollectionPage") && /^Artigo de Anderson Damasio sobre\b/i.test(description)) {
+        pushExample(stats.weakDescription, `${fileRel}: descricao de artigo em listagem`);
+      }
       if (findProfilePageWithoutMainEntity(item).length) {
         pushExample(stats.profilePageMissingMainEntity, fileRel);
       }
