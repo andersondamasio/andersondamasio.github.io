@@ -10,7 +10,12 @@ function digest(text) {
   return createHash("sha256").update(String(text).replace(/\r\n/g, "\n")).digest("hex");
 }
 
-function prepararVerificacao({ ler, revisao }) {
+function digestBinario(bytes) {
+  if (!Buffer.isBuffer(bytes)) throw new Error('Verificacao de binario exige Buffer, sem decodificar como texto.');
+  return createHash('sha256').update(bytes).digest('hex');
+}
+
+function prepararVerificacao({ ler, lerBinario, revisao }) {
   if (!/^[a-f0-9]{40}$/.test(revisao)) throw new Error("Informe a revisao Git completa esperada.");
   const registros = JSON.parse(ler("titulos.json"));
   const recentes = registros.filter(item => item.localizacao?.estado !== "pendente" && /^artigos\/[a-z0-9/-]+\.html$/.test(item.url || ""))
@@ -56,7 +61,13 @@ function prepararVerificacao({ ler, revisao }) {
     }
   }
   if (controlaDocumentos && /dados\/editorial\/arquivados/.test(ler("_config.yml"))) ausentes.push("dados/editorial/arquivados/historicos-2026-10.json");
-  return { revisao, recentes, arquivosNavegacao, arquivosLeituras, ausentes: [...new Set(ausentes)], arquivos: [...new Set(arquivos)].map(arquivo => ({ arquivo, hash: digest(ler(arquivo)) })) };
+  const verificaveis = [...new Set(arquivos)].map(arquivo => ({ arquivo, hash: digest(ler(arquivo)) }));
+  if (controlaDocumentos && /^\s*-\s*_assets\/\s*$/m.test(ler('_config.yml'))) {
+    if (!lerBinario) throw new Error('Leitor binario obrigatorio para verificar favicon.');
+    verificaveis.push({ arquivo: 'favicon.ico', hash: digestBinario(lerBinario('favicon.ico')), binario: true });
+    ausentes.push('_assets/brand-ad.png');
+  }
+  return { revisao, recentes, arquivosNavegacao, arquivosLeituras, ausentes: [...new Set(ausentes)], arquivos: verificaveis };
 }
 
 async function verificarPublicacao({ esperado, fetchImpl = fetch, baseUrl = siteUrl, tentativas = 4, intervaloMs = 15000, esperar = ms => new Promise(resolve => setTimeout(resolve, ms)) }) {
@@ -65,13 +76,13 @@ async function verificarPublicacao({ esperado, fetchImpl = fetch, baseUrl = site
   for (let tentativa = 1; tentativa <= tentativas; tentativa++) {
     const paginas = new Map();
     const verificacoes = [];
-    for (const { arquivo, hash } of esperado.arquivos) {
+    for (const { arquivo, hash, binario } of esperado.arquivos) {
       const url = new URL(arquivo === "index.html" ? "/" : `/${arquivo}`, baseUrl).href;
       try {
         const resposta = await fetchImpl(url, { signal: AbortSignal.timeout(20000), headers: { "Cache-Control": "no-cache" }, redirect: "follow" });
-        const texto = await resposta.text();
-        paginas.set(arquivo, texto);
-        const hashAtual = digest(texto);
+        const conteudo = binario ? Buffer.from(await resposta.arrayBuffer()) : await resposta.text();
+        if (!binario) paginas.set(arquivo, conteudo);
+        const hashAtual = binario ? digestBinario(conteudo) : digest(conteudo);
         verificacoes.push({ arquivo, url, status: resposta.status, hashEsperado: hash, hashAtual, aceita: resposta.status === 200 && hash === hashAtual });
       } catch (error) {
         verificacoes.push({ arquivo, url, aceita: false, erro: error.message });
@@ -121,7 +132,8 @@ if (require.main === module) {
   (async () => {
     const revisao = process.env.EXPECTED_REVISION || execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
     const ler = arquivo => execFileSync("git", ["show", `${revisao}:${arquivo}`], { encoding: "utf8", maxBuffer: 20 * 1024 * 1024 });
-    const esperado = prepararVerificacao({ ler, revisao });
+    const lerBinario = arquivo => execFileSync('git', ['show', `${revisao}:${arquivo}`], { maxBuffer: 20 * 1024 * 1024 });
+    const esperado = prepararVerificacao({ ler, lerBinario, revisao });
     const resultado = await verificarPublicacao({ esperado });
     fs.mkdirSync(".editorial", { recursive: true });
     fs.writeFileSync(path.join(".editorial", "deploy-verification.json"), `${JSON.stringify(resultado, null, 2)}\n`);
@@ -130,4 +142,4 @@ if (require.main === module) {
   })().catch(error => { console.error(error.message); process.exitCode = 1; });
 }
 
-module.exports = { digest, prepararVerificacao, verificarPublicacao };
+module.exports = { digest, digestBinario, prepararVerificacao, verificarPublicacao };

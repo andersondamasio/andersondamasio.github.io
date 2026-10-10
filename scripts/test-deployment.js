@@ -1,6 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { prepararVerificacao, verificarPublicacao } = require("./verify-deployment");
+const { prepararVerificacao, verificarPublicacao, digestBinario } = require("./verify-deployment");
 const baseUrl = "https://www.andersondamasio.com.br";
 const artigo = "artigos/arquitetura/exemplo.html";
 const html = (url, body = "") => `<html><head><title>Exemplo</title><link rel="canonical" href="${baseUrl}${url}"></head><body><h1>Exemplo</h1>${body}</body></html>`;
@@ -19,13 +19,27 @@ function mockFetch(alteracoes = {}) {
   return async url => {
     const file = new URL(url).pathname.slice(1) || "index.html";
     const value = Object.hasOwn(alteracoes, file) ? alteracoes[file] : arquivos[file];
-    return { status: value === null ? 404 : 200, text: async () => value || "Not found" };
+    return { status: value === null ? 404 : 200, text: async () => value || "Not found", arrayBuffer: async () => Buffer.from(value || 'Not found') };
   };
 }
 test("publicacao deve corresponder a revisao e as superficies de descoberta", async () => {
   const resultado = await verificarPublicacao({ esperado, fetchImpl: mockFetch(), tentativas: 1 });
   assert.equal(resultado.aceita, true);
   assert.equal(resultado.revisaoEsperada, "a".repeat(40));
+});
+
+test('deploy confere bytes do icone e mantem a fonte original fora do Pages', async () => {
+  const icone = Buffer.from([0, 0, 1, 0, 13, 10, 255, 128]);
+  const ler = f => f === '_config.yml' ? 'exclude:\n  - _assets/\n' : arquivos[f];
+  assert.throws(() => prepararVerificacao({ ler, revisao: 'a'.repeat(40) }), /Leitor binario/);
+  assert.throws(() => digestBinario(icone.toString()), /Buffer/);
+  const esperado = prepararVerificacao({ ler, lerBinario: () => icone, revisao: 'a'.repeat(40) });
+  const ausentes = Object.fromEntries(esperado.ausentes.map(f => [f, null]));
+  const conferir = alteracoes => verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...ausentes, 'favicon.ico': icone, ...alteracoes }), tentativas: 1 });
+  assert.equal((await conferir({})).aceita, true);
+  assert.equal((await conferir({ 'favicon.ico': Buffer.from([0, 0, 1, 0, 10, 255, 128]) })).aceita, false);
+  assert.equal((await conferir({ 'favicon.ico': null })).aceita, false);
+  assert.equal((await conferir({ '_assets/brand-ad.png': icone })).aceita, false);
 });
 
 test("deploy confere colecao selecionada e artigos antigos sem exigi-los no RSS", async () => {

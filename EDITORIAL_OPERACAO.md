@@ -126,6 +126,18 @@ HTTP, canonical, robots e correspondencia com o Git sao observados separadamente
 
 O rebuild preserva o corpo existente de artigos noindex, em vez de os transformar em avisos de indisponibilidade. Eles ficam fora das superficies de promocao geradas e do sitemap/RSS; links contextuais deliberados no corpo nao sao removidos automaticamente. A decisao de noindex ainda exige curadoria individual e nao decorre apenas de um sinal de linguagem.
 
+## Identificacao e desempenho
+
+O gerador e o backfill usam `scripts/seo-article-byline.js` para identificar, logo apos o H1, o responsavel pelo site, o apoio de IA e os criterios editoriais. A linha nao afirma revisao humana nem experiencia pessoal. O registro de revisao, quando houver, continua vinculado ao corpo e apresentado no bloco de fontes. A auditoria verifica nome, links, posicao e texto; o QA verifica visibilidade e sobreposicao em tres larguras. A migracao nao muda datas nem conteudo para aparentar novidade e preserva os cinco artigos noindex fora do backfill.
+
+`npm run seo:performance:lab` faz 24 carregamentos publicos sequenciais: home, categoria de IA, engenharia de contexto e Reservoir Sampling, tres amostras por URL em cada perfil desktop/celular. Exige Chrome local (`CHROME_PATH` quando necessario); nao instala dependencias nem e executado pelo CI. `EXPECTED_REVISION` recebe o SHA completo esperado (padrao HEAD), e cada HTML precisa corresponder a essa revisao. Nao executar junto de rebuild ou outra carga pesada para evitar interferencia na CPU.
+
+Cada amostra usa um contexto novo, cache desativado e condicoes explicitas de rede/CPU. Apos load, aguarda 500 ms de rede ociosa (limite de 20 segundos) e observa por mais tres segundos. Terceiros e requisicoes nao GET ficam bloqueados para nao gerar anuncios nem poluir analytics. O relatorio privado em `.editorial/desempenho/` conserva dados brutos, bloqueios, recursos pendentes/falhos, versao do Chrome, mediana e intervalo. Valores ausentes permanecem desconhecidos. `coletaCompleta` exige recursos concluidos e APIs disponiveis; significa coleta valida, nao aprovacao de desempenho.
+
+LCP candidato e janela de layout shifts sao diagnosticos do documento principal nesse periodo, nao a visita completa ou uma nota Lighthouse. Nao ha INP sem interacao real, nem dados de campo, percentil 75 de usuarios ou medicao do impacto de anuncios. Resultados nao comprovam melhoria de ranking. Referencias: [Web Vitals](https://web.dev/articles/vitals), [limites da API de LCP](https://web.dev/articles/lcp) e [janelas de layout shifts](https://web.dev/articles/cls).
+
+`npm run seo:icons`, incluido em `seo:maintain`, deriva o `favicon.ico` da fonte preservada `_assets/brand-ad.png` usando o Sharp ja declarado no lockfile. O ICO contem PNGs de 16, 32, 48 e 96 pixels, sem redesenhar a marca. O limite de 32 KiB e um guardrail local de transferencia, nao regra de ranking. Os testes conferem formato, tamanhos, pixels e geracao repetivel; o verificador publico compara os bytes do ICO e exige 404/410 para a fonte original, excluida do Pages. A URL do favicon e as referencias existentes sao mantidas.
+
 ## Leituras selecionadas
 
 `dados/leituras-selecionadas.json` e a fonte editorial de `guias.html` e da selecao na home. Cada grupo registra uma pergunta, contexto e resumos especificos dos artigos existentes. O titulo do link vem do catalogo; o resumo e o tipo de material sao curados explicitamente, nao escolhidos por recencia ou score. Os tipos distinguem exemplo executavel, exercicio proposto e analise de fontes. A selecao nao representa aprovacao humana nem atribui os experimentos de terceiros ao autor do site.

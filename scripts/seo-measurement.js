@@ -63,7 +63,8 @@ if (require.main === module) (async () => {
   const revisao = process.env.EXPECTED_REVISION || execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
   const lerEsperado = arquivo => execFileSync("git", ["show", `${revisao}:${arquivo}`], { encoding: "utf8", maxBuffer: 20e6 });
   const lista = process.argv.slice(2).find(a => !a.startsWith("--"));
-  const urls = lista ? JSON.parse(fs.readFileSync(lista, "utf8")) : ["/", "/sobre.html", ...prepararVerificacao({ ler: lerEsperado, revisao }).recentes];
+  const lerBinario = arquivo => execFileSync('git', ['show', `${revisao}:${arquivo}`], { maxBuffer: 20e6 });
+  const urls = lista ? JSON.parse(fs.readFileSync(lista, "utf8")) : ["/", "/sobre.html", ...prepararVerificacao({ ler: lerEsperado, lerBinario, revisao }).recentes];
   const resultado = await capturarMedicao({ urls, revisao, lerEsperado });
   const pasta = path.join(process.cwd(), ".editorial", "medicoes");
   fs.mkdirSync(pasta, { recursive: true });

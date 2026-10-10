@@ -24,6 +24,7 @@ const {
   normalizarFonteUrl
 } = require("./seo-source-citation");
 const { avaliarSecoesConteudoUtil } = require("./seo-helpful-content");
+const { avaliarAutoriaVisivel } = require("./seo-article-byline");
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
@@ -297,6 +298,7 @@ const stats = {
   articleMissingSourceCitation: [],
   articleMalformedSourceCitation: [],
   articleMissingValidationSection: [],
+  articleMissingVisibleByline: [],
   articleGenericUsefulnessBoilerplate: [],
   malformedArticleHtml: [],
   articleBodyUnsafeHtml: [],
@@ -503,6 +505,7 @@ for (const file of walk(root)) {
       pushExample(stats.weakArticleTitles, `${fileRel}: ${articleTitle || "(sem titulo)"}`);
     }
     const helpfulContent = avaliarSecoesConteudoUtil($);
+    if (!avaliarAutoriaVisivel($)) pushExample(stats.articleMissingVisibleByline, fileRel);
     if (!helpfulContent.validationOk) {
       pushExample(stats.articleMissingValidationSection, fileRel);
     }
@@ -733,6 +736,7 @@ const report = {
     articleMissingSourceCitation: stats.articleMissingSourceCitation,
     articleMalformedSourceCitation: stats.articleMalformedSourceCitation,
     articleMissingValidationSection: stats.articleMissingValidationSection,
+    articleMissingVisibleByline: stats.articleMissingVisibleByline,
     articleGenericUsefulnessBoilerplate: stats.articleGenericUsefulnessBoilerplate,
     malformedArticleHtml: stats.malformedArticleHtml,
     articleBodyUnsafeHtml: stats.articleBodyUnsafeHtml,
