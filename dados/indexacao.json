@@ -1688,6 +1688,39 @@
         "em": "2026-10-10T11:31:39.835Z"
       },
       "conteudoHash": "8ebc60e1d68972318807aea033bf3be2d6298d1bafe355658049cc6e527fb12a"
+    },
+    {
+      "url": "artigos/programacao/ja-passei-por-situacoes-em-que-plain-vanilla-web-guide-for-de-frameworking-yourself-foi-o-divisor-entre-sucesso-e-retrabalho.html",
+      "acao": "atualizar",
+      "motivo": "Remover vivência não confirmada e corrigir a confusão entre cliente HTTP em C# e API de servidor; demonstrar um recurso nativo pertinente ao front-end.",
+      "evidencia": "Leitura integral do texto anterior e das fontes Plain Vanilla e MDN; fragmento details executado no Chrome com JavaScript da página desativado.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:08:05.767Z"
+      },
+      "conteudoHash": "3e7bd150e81891241d2e4d0d73cf80e16d3e75393bb7940f968b973ada24906e"
+    },
+    {
+      "url": "artigos/programacao/a-nova-era-do-tempo-como-a-temporal-api-pode-revolucionar-o-desenvolvimento-web.html",
+      "acao": "atualizar",
+      "motivo": "Retirar experiência pessoal inventada e generalizações de compatibilidade; demonstrar aritmética de calendário, duração e rejeição de ambiguidades.",
+      "evidencia": "Tipos e operações confrontados com TC39, suporte contextualizado pelas notas oficiais do Chrome 144; casos sintéticos executados na implementação nativa do Chrome instalado.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:08:05.767Z"
+      },
+      "conteudoHash": "93448f163f112e2b78540b64f9058932bcc0463caecad82c2e9f8c260b432a32"
+    },
+    {
+      "url": "artigos/devops/gerenciando-maquinas-virtuais-no-linux-uma-abordagem-simples-e-eficaz.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir orientação de aceitar alerta de certificado, instalação genérica e alegação de API sem contrato; remover migração pessoal não confirmada.",
+      "evidencia": "Texto integral confrontado com documentação oficial de execução, aplicativos, tecnologias do cockpit-machines e TLS. Nenhuma VM, instalação ou migração executada.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:08:05.767Z"
+      },
+      "conteudoHash": "f039713716088ccef64a00759eab1c32c9156f178286eff548bf737d142228fb"
     }
   ]
 }

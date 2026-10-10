@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>A nova era do tempo: Como a Temporal API pode revolucionar o desenvolvimento web</title>
-<meta name="description" content="Recentemente, uma notícia bombástica agitou a comunidade de desenvolvedores: o Chrome 144 trouxe a Temporal API para o jogo. Para quem não está ligado, essa...">
+<title>Temporal: um dia de calendário e 24 horas são contratos diferentes</title>
+<meta name="description" content="Exemplo executado com Temporal compara um dia e 24 horas, rejeita horários ambíguos e explica os limites de suporte e persistência.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/programacao/a-nova-era-do-tempo-como-a-temporal-api-pode-revolucionar-o-desenvolvimento-web.html">
@@ -14,36 +14,36 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="A nova era do tempo: Como a Temporal API pode revolucionar o desenvolvimento web">
-<meta property="og:description" content="Recentemente, uma notícia bombástica agitou a comunidade de desenvolvedores: o Chrome 144 trouxe a Temporal API para o jogo. Para quem não está ligado, essa...">
+<meta property="og:title" content="Temporal: um dia de calendário e 24 horas são contratos diferentes">
+<meta property="og:description" content="Exemplo executado com Temporal compara um dia e 24 horas, rejeita horários ambíguos e explica os limites de suporte e persistência.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/programacao/a-nova-era-do-tempo-como-a-temporal-api-pode-revolucionar-o-desenvolvimento-web.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-02-17T08:48:35.667Z">
-<meta property="article:modified_time" content="2026-02-17T08:48:35.667Z">
+<meta property="article:modified_time" content="2026-10-10T12:08:05.767Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A nova era do tempo: Como a Temporal API pode revolucionar o desenvolvimento web">
-<meta name="twitter:description" content="Recentemente, uma notícia bombástica agitou a comunidade de desenvolvedores: o Chrome 144 trouxe a Temporal API para o jogo. Para quem não está ligado, essa...">
+<meta name="twitter:title" content="Temporal: um dia de calendário e 24 horas são contratos diferentes">
+<meta name="twitter:description" content="Exemplo executado com Temporal compara um dia e 24 horas, rejeita horários ambíguos e explica os limites de suporte e persistência.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "A nova era do tempo: Como a Temporal API pode revolucionar o desenvolvimento web",
-  "description": "Recentemente, uma notícia bombástica agitou a comunidade de desenvolvedores: o Chrome 144 trouxe a Temporal API para o jogo. Para quem não está ligado, essa...",
+  "headline": "Temporal: um dia de calendário e 24 horas são contratos diferentes",
+  "description": "Exemplo executado com Temporal compara um dia e 24 horas, rejeita horários ambíguos e explica os limites de suporte e persistência.",
   "url": "https://www.andersondamasio.com.br/artigos/programacao/a-nova-era-do-tempo-como-a-temporal-api-pode-revolucionar-o-desenvolvimento-web.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/programacao/a-nova-era-do-tempo-como-a-temporal-api-pode-revolucionar-o-desenvolvimento-web.html"
   },
   "datePublished": "2026-02-17T08:48:35.667Z",
-  "dateModified": "2026-02-17T08:48:35.667Z",
+  "dateModified": "2026-10-10T12:08:05.767Z",
   "articleSection": "Programação",
   "inLanguage": "pt-BR",
-  "wordCount": 536,
+  "wordCount": 566,
   "about": {
     "@type": "Thing",
     "name": "Programação"
@@ -52,10 +52,10 @@
   "copyrightYear": 2026,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "Chrome 144 Ships Temporal API: Advancing JavaScript Date/Time Standardisation",
-    "url": "https://www.infoq.com/news/2026/02/chrome-temporal-date-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "name": "Temporal documentation",
+    "url": "https://tc39.es/proposal-temporal/docs/"
   },
-  "citation": "https://www.infoq.com/news/2026/02/chrome-temporal-date-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "citation": "https://tc39.es/proposal-temporal/docs/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -114,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "A nova era do tempo: Como a Temporal API pode revolucionar o desenvolvimento web",
+      "name": "Temporal: um dia de calendário e 24 horas são contratos diferentes",
       "item": "https://www.andersondamasio.com.br/artigos/programacao/a-nova-era-do-tempo-como-a-temporal-api-pode-revolucionar-o-desenvolvimento-web.html"
     }
   ]
@@ -189,6 +189,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 .article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
 .article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
 .article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-body code { overflow-wrap: anywhere; } .article-body pre code { overflow-wrap: normal; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -215,46 +216,87 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>A nova era do tempo: Como a Temporal API pode revolucionar o desenvolvimento web</h1>
+<h1>Temporal: um dia de calendário e 24 horas são contratos diferentes</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 
 <p class="article-meta">Publicado em: 17/02/2026 05:48</p>
 
-<div class="article-body"><p>Recentemente, uma notícia bombástica agitou a comunidade de desenvolvedores: o Chrome 144 trouxe a <strong>Temporal API</strong> para o jogo. Para quem não está ligado, essa nova API tem o potencial de transformar a maneira como lidamos com datas e horas em aplicações JavaScript. Finalmente, podemos nos despedir das limitações do antigo objeto <strong>Date</strong>, que sempre foi alvo de críticas por suas inconsistências e complexidades.</p>
-<h2>Introdução</h2>
-<p>Com mais de 19 anos de experiência em <strong>arquitetura de software</strong>, eu sempre percebi o quanto o manuseio de datas pode ser complicado. E tudo isso se intensifica quando começamos a considerar fuso horários e diferentes calendários. A chegada da Temporal API promete simplificar essa tarefa, trazendo um conjunto robusto de tipos e funcionalidades que devemos explorar. Mas será que essa é a solução que tanto esperávamos?</p>
-<h2>O que é a Temporal API?</h2>
-<p>A <strong>Temporal API</strong> foi desenvolvida pela comissão TC39, que é a responsável pelos padrões ECMAScript. Ela introduz um novo namespace global chamado <strong>Temporal</strong>, que oferece uma série de tipos específicos para manipulação de datas e horas. Ao contrário do antigo <strong>Date</strong>, que muitas vezes trazia comportamentos inesperados, a Temporal API se destaca por ser <em>imutável</em>. Isso significa que, em vez de modificar valores existentes, ela retorna novos valores, o que, convenhamos, é uma mudança bem-vinda.</p>
-<h3>Como funciona na prática?</h3>
-<p>Um dos maiores avanços práticos que a Temporal API traz é a capacidade de trabalhar com datas sem carregar junto um fuso horário ou um horário específico. Por exenplo:</p>
-<pre><code>const start = Temporal.PlainDate.from('2026-02-13');
-const end = start.add({ days: 7 });</code></pre>
-<p>simlpes, não é? E quando os fusos horários são importantes, a API torna isso explícito. Em vez de esperar que uma data seja formatada corretamente, você pode usar <strong>ZonedDateTime</strong> para garantir que o fuso horário faça parte do valor:</p>
-<pre><code>const now = Temporal.Now.zonedDateTimeISO('Europe/London');
-const later = now.add({ hours: 2 });</code></pre>
-<h2>Dicas Avançadas para Adoção da Temporal API</h2>
-<p>Para quem está pensando em adotar a Temporal API, aqui vão algumas dicas:</p>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T12:08:05.767Z">10/10/2026</time>: requisitos e conclusões revistos com fontes oficiais. A data da publicação original foi preservada.</p>
+<p>Uma data de vencimento sem horário, um instante registrado em UTC e uma reunião em um fuso específico representam informações diferentes. Antes de escolher a operação de soma, é preciso decidir qual dessas informações a aplicação está modelando. Temporal torna essa distinção explícita, mas não escolhe a regra de negócio por você.</p>
+<p class="fato-tipos">A documentação do TC39 distingue <code>PlainDate</code>, para uma data de calendário sem horário ou fuso, <code>Instant</code>, para um ponto na linha do tempo, e <code>ZonedDateTime</code>, que associa data e horário a um fuso. Objetos com prefixo <code>Plain</code> não carregam um fuso implícito. <a href="https://tc39.es/proposal-temporal/docs/">Fonte: tipos de Temporal</a>.</p>
+<p class="fato-suporte">As notas do Chrome 144 registram a chegada da API ao navegador. Isso não comprova suporte em todos os navegadores, WebViews ou ambientes Node.js usados por uma aplicação. <a href="https://developer.chrome.com/blog/new-in-chrome-144">Fonte: notas do Chrome 144</a>.</p>
+<h2>Um dia de calendário não é sempre 24 horas</h2>
+<p class="fato-fuso">A documentação de <code>ZonedDateTime</code> diferencia aritmética de calendário da soma de unidades de tempo. Também oferece <code>disambiguation</code> para resolver ou rejeitar horários locais repetidos ou inexistentes nas transições de fuso. A opção <code>reject</code> permite tornar essas ambiguidades um erro explícito. <a href="https://tc39.es/proposal-temporal/docs/zoneddatetime.html">Fonte: aritmética e desambiguação de ZonedDateTime</a>.</p>
+<div class="contribuicao-editorial">
+<p>O exemplo sintético abaixo compara as duas operações e rejeita horários ambíguos. Ele usa a implementação nativa do navegador; não implementa regras de fuso por conta própria.</p>
+<pre><code class="language-javascript">'use strict';
+
+function compararDatas(temporal = globalThis.Temporal) {
+  if (!temporal?.PlainDate || !temporal?.ZonedDateTime) {
+    throw new Error('Temporal indisponivel neste ambiente.');
+  }
+  const inicio = temporal.PlainDate.from('2026-02-13');
+  const seteDiasDepois = inicio.add({ days: 7 });
+  const partida = temporal.ZonedDateTime.from('2026-03-07T12:00[America/New_York]');
+  const diaSeguinte = partida.add({ days: 1 });
+  const rejeitaHorario = texto =&gt; {
+    try {
+      temporal.ZonedDateTime.from(texto, { disambiguation: 'reject' });
+      return false;
+    } catch (erro) {
+      if (!(erro instanceof RangeError)) throw erro;
+      return true;
+    }
+  };
+  return {
+    dataOriginal: inicio.toString(),
+    seteDiasDepois: seteDiasDepois.toString(),
+    partida: partida.toString(),
+    diaSeguinte: diaSeguinte.toString(),
+    horasTranscorridas: diaSeguinte.since(partida, { largestUnit: 'hours' }).hours,
+    apos24Horas: partida.add({ hours: 24 }).toString(),
+    horarioInexistenteRejeitado: rejeitaHorario('2026-03-08T02:30[America/New_York]'),
+    horarioRepetidoRejeitado: rejeitaHorario('2026-11-01T01:30[America/New_York]')
+  };
+}
+
+if (typeof module !== 'undefined') module.exports = { compararDatas };
+</code></pre>
+<p><a href="/exemplos/temporal/comparar.js">Código completo de comparação</a>. Carregado como script em um ambiente com Temporal, execute <code>compararDatas()</code>. Sem suporte à API, a função informa o erro; não converte silenciosamente os valores para <code>Date</code>.</p>
+<p class="resultado-executado">Codex executou o código no Chrome 154.0.8037.99, sem requisições externas. O resultado foi:</p>
+<pre><code class="language-json">{
+  "dataOriginal": "2026-02-13",
+  "seteDiasDepois": "2026-02-20",
+  "partida": "2026-03-07T12:00:00-05:00[America/New_York]",
+  "diaSeguinte": "2026-03-08T12:00:00-04:00[America/New_York]",
+  "horasTranscorridas": 23,
+  "apos24Horas": "2026-03-08T13:00:00-04:00[America/New_York]",
+  "horarioInexistenteRejeitado": true,
+  "horarioRepetidoRejeitado": true
+}</code></pre>
+<p>O avanço de um dia manteve o horário local ao atravessar a transição representada pelas regras de Nova York e correspondeu a 23 horas transcorridas. A soma de 24 horas chegou às 13h. O valor original de <code>PlainDate</code> permaneceu inalterado depois da soma de sete dias. O ensaio também conferiu a rejeição de uma data inválida com <code>overflow: 'reject'</code> e a falha explícita quando Temporal está ausente.</p>
+<h2>Traduza o resultado para o contrato da aplicação</h2>
 <ul>
-    <li><strong>Estudo gradual:</strong> Comece explorando a documentação oficial da proposta. A própria documentação é bem detalhada e pode ser um bom ponto de partida.</li>
-    <li><strong>Use em projetos novos:</strong> Se você está começando um novo projeto, considere implementar a Temporal API desde o início. Isso facilita a transição e evita problemas de compatibilidade.</li>
-    <li><strong>monitramento de suporte:</strong> Fique de olho na compatibilidade entre navegadores. Embora o Chrome já tenha adotado a API, o Safari e outros navegadores ainda estão atrasados. Isso pode impactar seu projeto se você não planejar adequadamente.</li>
-    <li><strong>Integração com bibliotecas existentes:</strong> Ferramentas como Luxon e Day.js ainda terão seu espaço, especialmente para quem precisa de suporte cross-browser. Com o tempo, pode ser que elas se especializem em funcionalidades adicionais, enquanto a Temporal API cuida do básico.</li>
+<li>Se o campo é apenas uma data de vencimento, não acrescente um horário UTC só para caber no tipo escolhido.</li>
+<li>Se a regra exige exatamente 24 horas transcorridas, teste esse intervalo. Se exige o mesmo horário local no dia seguinte, teste a operação de calendário e as transições relevantes.</li>
+<li>Para uma entrada local sem offset que possa ser ambígua, defina como pedir esclarecimento ao usuário. Rejeitar a entrada é uma política possível, não uma resposta universal.</li>
+<li>Documente o formato persistido e o significado dos campos. A adoção de um tipo no front-end não migra automaticamente contratos de API, banco de dados ou integrações.</li>
 </ul>
-<h2>Conclusão</h2>
-<p>Em um mundo onde a precisão e a clareza nas manipulações de data e hora são fundamentais, a chegada da Temporal API é, sem dúvida, um marco. Embora haja um caminho a percorrer antes que ela se torne padrão em todos os navegadores, acredito que sua adoção será rápida, especialmente em aplicações que dependem fortemente de agendamentos ou análises de dados. Então, por que não começar a explorar essa nova ferramenta? Afinal, a tecnologia avança, e nós, desenvolvedores, devemos acompanhar essa evolução.</p>
-<p>Espero que você esteja tão animado quanto eu para explorar as possibilidades que a Temporal API oferece. Vamos juntos nessa jornada!</p>
-<p>
-<p></p></div>
+<p>Antes de adotar, confira suporte nos ambientes realmente atendidos. Detectar a existência de Temporal é uma verificação inicial, não uma suíte de compatibilidade. Uma alternativa de biblioteca ou polyfill exige decisão e testes próprios; nenhuma foi adicionada neste exemplo.</p>
+</div>
+<h2>Limites do ensaio</h2>
+<p class="limites-editoriais">São casos sintéticos executados por Codex, não relatos de Anderson em produção. O ensaio usa as regras de fuso disponíveis no navegador informado; não cobre todos os calendários, futuras alterações dessas regras, outros navegadores, recorrência de agenda ou migração de dados. Não houve benchmark. O texto anterior atribuía experiência pessoal ao autor e sugeria adoção em projetos novos como solução para compatibilidade; essas conclusões foram retiradas.</p>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/news/2026/02/chrome-temporal-date-api/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener noreferrer">Chrome 144 Ships Temporal API: Advancing JavaScript Date/Time Standardisation</a> Data da fonte registrada: 17/02/2026.</p>
+<p><strong>Fonte principal:</strong> <a href="https://tc39.es/proposal-temporal/docs/" rel="noopener noreferrer">Temporal documentation</a></p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/news/2026/02/chrome-temporal-date-api/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Chrome 144 Ships Temporal API: Advancing JavaScript Date/Time Standardisation</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://tc39.es/proposal-temporal/docs/" target="_blank" rel="noopener noreferrer">Temporal documentation</a>.</p>
 </section>
 
 

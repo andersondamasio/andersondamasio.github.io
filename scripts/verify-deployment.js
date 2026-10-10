@@ -80,6 +80,14 @@ function prepararVerificacao({ ler, lerBinario, revisao }) {
     }
     if (controlaDocumentos) ausentes.push('exemplos/estado-versionado/README.md', 'exemplos/estado-versionado/README.html');
   }
+  let exemplosNativos;
+  try { exemplosNativos = ler('exemplos/temporal/comparar.js'); } catch { /* Examples absent in older revisions. */ }
+  if (exemplosNativos) {
+    for (const arquivo of ['exemplos/temporal/comparar.js', 'exemplos/web-nativa/detalhes.txt']) {
+      if (!ler(arquivo)?.trim()) throw new Error(`Arquivo do exemplo ausente: ${arquivo}`);
+      arquivos.push(arquivo);
+    }
+  }
   const arquivosNoindex = [];
   try { manifestoTexto = ler("dados/indexacao.json"); } catch { /* Revisions before the indexation manifest are still verifiable. */ }
   if (manifestoTexto) {
