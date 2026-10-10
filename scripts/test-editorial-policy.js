@@ -64,6 +64,48 @@ test("preserva codigo, exemplo hipotetico e texto tecnico sem vivencia", () => {
   assert.equal(avaliarSinaisHumanizer({ corpoArtigo }).sinais.some(s => s.id === "experiencia-pessoal-nao-verificavel"), false);
 });
 
+test("retencao cobre relatos de uso, preferencia e resultados pessoais no titulo ou corpo", () => {
+  const frases = [
+    "Instalei essas aplicacoes em todos os meus sistemas Linux",
+    "Ja utilizei varias distribuicoes em projetos diferentes.",
+    "Recentemente, passei por uma situacao assim.",
+    "Decidi usar a IA e consegui fazer uma analise do plugin.",
+    "Tive a oportunidade de experimentar o Fitbit Premium.",
+    "Quando comecei a usar o Fitbit, percebi a diferenca.",
+    "Como a IA mudou meu jeito de desenvolver",
+    "A IA transformou o meu treino",
+    "Meu top 11 de distribuicoes Linux",
+    "Minhas distribuicoes favoritas",
+    "O Kindle segue sendo meu preferido"
+  ];
+  for (const frase of frases) {
+    for (const entrada of [{ titulo: frase, corpoArtigo: '<p>Texto neutro.</p>' }, { corpoArtigo: `<p>${frase}</p>` }]) {
+      const r = avaliarGeneroEditorial(entrada);
+      assert.equal(r.aceita, false, frase);
+      assert.equal(r.verificacaoFactual, false);
+    }
+  }
+});
+
+test("novos sinais nao atingem orientacao ao leitor, hipotese impessoal ou identificadores", () => {
+  for (const corpoArtigo of [
+    '<p>Instale apenas os aplicativos necessarios. O desenvolvedor instalou o plugin.</p>',
+    '<p>Em um exemplo hipotetico, uma equipe poderia trocar a distribuicao.</p>',
+    '<p>Qual distribuicao seria a escolha da equipe? Um usuario pode salvar favoritos.</p>',
+    '<pre><code>const exemplo = "Instalei o app e mudou minha rotina";</code></pre><p>O campo <code>minha escolha</code> e demonstrativo.</p>'
+  ]) assert.equal(avaliarGeneroEditorial({ corpoArtigo }).aceita, true, corpoArtigo);
+});
+
+test("relato de uso citado exige texto e URL correspondentes, nao basta envolver em aspas", () => {
+  const texto = 'Instalei o aplicativo e ele mudou minha rotina de trabalho.';
+  const corpoArtigo = `<blockquote cite="${fonteUrl}"><p>${texto}</p><cite>Autora da fonte</cite></blockquote>`;
+  const r = avaliarGeneroEditorial({ corpoArtigo, fontes: [{ url: fonteUrl, texto }] });
+  assert.equal(r.aceita, true);
+  assert.equal(r.citacoesRastreaveis, 1);
+  assert.equal(avaliarGeneroEditorial({ corpoArtigo }).aceita, false);
+  assert.equal(avaliarGeneroEditorial({ corpoArtigo, fontes: [{ url: fonteUrl, texto: 'Outro texto sem esse relato.' }] }).aceita, false);
+});
+
 test("citacao so e reconhecida quando texto e URL correspondem a fonte fornecida", () => {
   const resultado = avaliarGeneroEditorial({ corpoArtigo: quoteHtml, fontes });
   assert.equal(resultado.aceita, true);
@@ -175,6 +217,19 @@ test("gerador integrado: nao publica vivencia reintroduzida pelo Humanizer", asy
   const { pacote } = await testarGerador(root, { corpoRevisado: `${corpoFixture}<p>Anderson Damasio testou em producao.</p>`, somenteRascunho: false });
   assert.ok(pacote.pendencias.includes("vivencia-atribuida-ao-autor"));
 }));
+
+test("gerador integrado retem experiencia implicita antes e depois do Humanizer", async () => {
+  await comWorkspace(async root => {
+    const { pacote, humanizacoes } = await testarGerador(root, { corpo: '<p>Tive a oportunidade de experimentar este aplicativo.</p>', somenteRascunho: false });
+    assert.equal(humanizacoes, 0);
+    assert.ok(pacote.pendencias.includes('vivencia-pessoal-implicita'));
+  });
+  await comWorkspace(async root => {
+    const { pacote, humanizacoes } = await testarGerador(root, { corpoRevisado: `${corpoFixture}<p>O aplicativo mudou minha rotina.</p>`, somenteRascunho: false });
+    assert.equal(humanizacoes, 1);
+    assert.ok(pacote.pendencias.includes('vivencia-pessoal-implicita'));
+  });
+});
 
 test("gerador integrado: noticia curta nao exige extensao artificial e ainda requer revisao", async () => comWorkspace(async root => {
   const { pacote } = await testarGerador(root, { corpo: "<p>Uma explicacao curta baseada na fonte.</p>" });

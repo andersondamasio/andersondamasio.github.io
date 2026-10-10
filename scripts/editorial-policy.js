@@ -39,7 +39,11 @@ function extrairCitacoes(html) {
 const padroesVivencia = [
   {
     id: "vivencia-primeira-pessoa",
-    pattern: /\b(?:(?:eu\s+)?(?:testei|implementei|implantei|desenvolvi|liderei|participei|presenciei|vivenciei|comprovei|experimentei|enfrentei)|(?:nos\s+)?(?:testamos|implementamos|implantamos|vivenciamos|comprovamos)|ja\s+(?:vivi|passei|enfrentei|observei)|(?:(?:na|pela|em)\s+)?minha\s+(?:carreira|experiencia)|(?:em|nos|nas|com)\s+(?:os\s+|as\s+)?(?:meus?|minhas?|nossos?|nossas?)\s+(?:projetos?|clientes?|times?|equipes?|testes?|experiencias?))\b/g
+    pattern: /\b(?:(?:eu\s+)?(?:testei|implementei|implantei|desenvolvi|liderei|participei|presenciei|vivenciei|comprovei|experimentei|enfrentei|instalei|utilizei|usei|troquei|migrei|passei|decidi|consegui|percebi)|(?:nos\s+)?(?:testamos|implementamos|implantamos|vivenciamos|comprovamos)|ja\s+(?:vivi|passei|enfrentei|observei)|(?:(?:na|pela|em)\s+)?minha\s+(?:carreira|experiencia)|(?:em|nos|nas|com)\s+(?:os\s+|as\s+)?(?:meus?|minhas?|nossos?|nossas?)\s+(?:projetos?|clientes?|times?|equipes?|testes?|experiencias?))\b/g
+  },
+  {
+    id: "vivencia-pessoal-implicita",
+    pattern: /\b(?:tive\s+(?:a\s+)?oportunidade\s+de\s+(?:usar|utilizar|experimentar|testar)|(?:comecei|passei)\s+a\s+(?:usar|utilizar|experimentar|testar)|(?:mudou|mudaram|transformou|transformaram)\s+(?:o\s+|a\s+)?(?:meus?|minhas?)\s+\w+|meu\s+top\s+\d+|minhas?\s+(?:escolhas?|trajetoria|rotina)|(?:meus?|minhas?)\s+(?:\w+\s+){0,2}(?:favoritos?|favoritas?|preferidos?|preferidas?))\b/g
   },
   {
     id: "vivencia-atribuida-ao-autor",

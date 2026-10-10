@@ -12,6 +12,63 @@ const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.js
 const manifesto = JSON.parse(ler('dados/indexacao.json'));
 const cadastro = JSON.parse(ler('titulos.json'));
 
+test('curadoria de uso preserva evidencias, datas e snapshots sem atestar testes pessoais', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-uso-2026-10.json'));
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.metricasGoogle, null);
+  assert.equal(lote.experimentosExecutados, false);
+  assert.equal(lote.artigos.length, 7);
+  assert.equal(lote.artigos.filter(a => a.acao === 'atualizar').length, 2);
+  assert.equal(lote.artigos.filter(a => a.acao === 'consolidar').length, 1);
+  assert.equal(lote.artigos.filter(a => a.acao === 'retirar').length, 4);
+  for (const a of lote.artigos) {
+    const d = manifesto.decisoes.find(d => d.url === a.url);
+    assert.equal(d.acao, a.acao);
+    if (a.acao === 'atualizar') {
+      const r = cadastro.find(r => r.url === a.url), q = cheerio.load(ler(a.url));
+      assert.equal(r.data, a.antes.data);
+      assert.equal(r.titulo, a.depois.titulo);
+      assert.equal(q('h1').text(), a.depois.titulo);
+      assert.equal(hashCorpoEditorial(q('.article-body').html()), a.depois.corpoHash);
+      assert.equal(d.conteudoHash, a.depois.corpoHash);
+      assert.equal(r.correcaoEditorial.revisaoHumana, false);
+      for (const e of a.evidencias) {
+        assert.equal(q(e.seletor + ' a').attr('href'), e.fonte);
+        assert.equal(hashCorpoEditorial(q(e.seletor).html()), e.textoHash);
+      }
+    } else {
+      const c = JSON.parse(ler(a.arquivoRecuperavel));
+      assert.equal(cadastro.some(r => r.url === a.url), false);
+      assert.equal(hashRegistros(c.registros), d.registrosHash);
+      assert.equal(hashArquivo(c.arquivos[0].html), d.arquivoHash);
+      assert.equal(c.registros[0].data, a.antes.data);
+      assert.deepEqual(c.arquivos.map(f => f.url), [a.url, ...a.aliases]);
+      for (const alias of d.aliases) assert.equal(hashArquivo(c.arquivos.find(f => f.url === alias.url).html), alias.arquivoHash);
+      for (const p of c.arquivos) {
+        if (a.acao === 'retirar') assert.equal(fs.existsSync(path.join(root, p.url)), false);
+        else {
+          const q = cheerio.load(ler(p.url));
+          assert.equal(q('.article-body').length, 0);
+          assert.equal(q('link[rel=canonical]').attr('href'), 'https://www.andersondamasio.com.br/' + a.destinoEquivalente);
+          assert.match(q('meta[http-equiv=refresh]').attr('content'), new RegExp(a.destinoEquivalente.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+        }
+      }
+    }
+  }
+});
+
+test('orientacoes WordPress e Fitbit distinguem controle tecnico de resultados nao executados', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-uso-2026-10.json'));
+  const wp = cheerio.load(ler(lote.artigos.find(a => a.url.includes('plugin-quebrado')).url));
+  assert.match(wp('.fato-nonce').text(), /não substituem autenticação, autorização/);
+  assert.match(wp('.fato-nonce').text(), /current_user_can/);
+  assert.match(wp('.limites-editoriais').text(), /Não houve execução de WordPress/);
+  const fitbit = cheerio.load(ler(lote.artigos.find(a => a.url.includes('a-nova-era-do-fitness')).url));
+  assert.match(fitbit('.fato-previa').text(), /27 de outubro de 2025/);
+  assert.match(fitbit('.fato-limite').text(), /não substitui a consulta/);
+  assert.match(fitbit('.limites-editoriais').text(), /Não houve uso do aplicativo/);
+});
+
 test('retiradas de noticias preservam copias integrais sem substituir intencoes ou inventar metricas', () => {
   const lote = JSON.parse(ler('dados/editorial/curadoria-noticias-2026-10.json'));
   assert.equal(lote.revisaoHumana, false);

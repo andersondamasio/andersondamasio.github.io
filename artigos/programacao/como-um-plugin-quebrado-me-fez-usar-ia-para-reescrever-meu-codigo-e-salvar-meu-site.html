@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Como um Plugin Quebrado Me Fez Usar IA Para Reescrever Meu Código e Salvar Meu Site</title>
-<meta name="description" content="Todo mundo que trabalha com desenvolvimento de software sabe o quanto é frustrante quando um componente essencial do seu sistema começa a apresentar...">
+<title>Plugin WordPress com IA: o que revisar antes de substituir</title>
+<meta name="description" content="Validação, permissões, nonces e escape de saída: uma ficha proposta para revisar a substituição de um plugin, sem prometer segurança automática.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html">
@@ -14,36 +14,36 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Como um Plugin Quebrado Me Fez Usar IA Para Reescrever Meu Código e Salvar Meu Site">
-<meta property="og:description" content="Todo mundo que trabalha com desenvolvimento de software sabe o quanto é frustrante quando um componente essencial do seu sistema começa a apresentar...">
+<meta property="og:title" content="Plugin WordPress com IA: o que revisar antes de substituir">
+<meta property="og:description" content="Validação, permissões, nonces e escape de saída: uma ficha proposta para revisar a substituição de um plugin, sem prometer segurança automática.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2025-07-08T10:21:02.010Z">
-<meta property="article:modified_time" content="2025-07-08T10:21:02.010Z">
+<meta property="article:modified_time" content="2026-10-10T09:45:06.260Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Como um Plugin Quebrado Me Fez Usar IA Para Reescrever Meu Código e Salvar Meu Site">
-<meta name="twitter:description" content="Todo mundo que trabalha com desenvolvimento de software sabe o quanto é frustrante quando um componente essencial do seu sistema começa a apresentar...">
+<meta name="twitter:title" content="Plugin WordPress com IA: o que revisar antes de substituir">
+<meta name="twitter:description" content="Validação, permissões, nonces e escape de saída: uma ficha proposta para revisar a substituição de um plugin, sem prometer segurança automática.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Como um Plugin Quebrado Me Fez Usar IA Para Reescrever Meu Código e Salvar Meu Site",
-  "description": "Todo mundo que trabalha com desenvolvimento de software sabe o quanto é frustrante quando um componente essencial do seu sistema começa a apresentar...",
+  "headline": "Plugin WordPress com IA: o que revisar antes de substituir",
+  "description": "Validação, permissões, nonces e escape de saída: uma ficha proposta para revisar a substituição de um plugin, sem prometer segurança automática.",
   "url": "https://www.andersondamasio.com.br/artigos/programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html"
   },
   "datePublished": "2025-07-08T10:21:02.010Z",
-  "dateModified": "2025-07-08T10:21:02.010Z",
+  "dateModified": "2026-10-10T09:45:06.260Z",
   "articleSection": "Programação",
   "inLanguage": "pt-BR",
-  "wordCount": 539,
+  "wordCount": 589,
   "about": {
     "@type": "Thing",
     "name": "Programação"
@@ -52,10 +52,10 @@
   "copyrightYear": 2025,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "How I used ChatGPT to analyze, debug, and rewrite a broken plugin from scratch - in an hour",
-    "url": "https://www.zdnet.com/article/how-i-used-chatgpt-to-analyze-debug-and-rewrite-a-broken-plugin-from-scratch-in-an-hour/"
+    "name": "WordPress: Nonces",
+    "url": "https://developer.wordpress.org/apis/security/nonces/"
   },
-  "citation": "https://www.zdnet.com/article/how-i-used-chatgpt-to-analyze-debug-and-rewrite-a-broken-plugin-from-scratch-in-an-hour/",
+  "citation": "https://developer.wordpress.org/apis/security/nonces/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -114,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Como um Plugin Quebrado Me Fez Usar IA Para Reescrever Meu Código e Salvar Meu Site",
+      "name": "Plugin WordPress com IA: o que revisar antes de substituir",
       "item": "https://www.andersondamasio.com.br/artigos/programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html"
     }
   ]
@@ -189,6 +189,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 .article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
 .article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
 .article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-body code { overflow-wrap: anywhere; } .article-body pre code { overflow-wrap: normal; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -215,40 +216,45 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>Como um Plugin Quebrado Me Fez Usar IA Para Reescrever Meu Código e Salvar Meu Site</h1>
+<h1>Plugin WordPress com IA: o que revisar antes de substituir</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 
 <p class="article-meta">Publicado em: 08/07/2025 07:21</p>
 
-<div class="article-body"><p>Todo mundo que trabalha com desenvolvimento de software sabe o quanto é frustrante quando um componente essencial do seu sistema começa a apresentar problemas. Recentemente, passei por uma situação assim. Um dos plugins que utilizo para proteger meu site de spam de registro foi desativado devido a vulnerabilidades de segurança. A sensação de desespero é real, principalmente quando você depende desse plugin para manter as coisas funcionando. Mas, em vez de entrar em pânico, decidi usar a inteligência artificial para resolver o poblema.</p>
-<h2>Desvendando o problema.</h2>
-<p>O plugin em questão tinha um papel crucial: ele barrava o registro de contas falsas que só serviam para criar dor de cabeça. Assim que o plugin foi desativado, a quantidade de notificações de novos registros começou a aumentar de forma alarmante. O que fazer? Pesquisei alternativas, mas a maioria dos plugins anti-spam disponíveis não atendia à minha necessidade específica. Foi aí que tive a ideia de usar uma ferramenta de IA para me ajudar a entender o que estava errado e como corrigir.</p>
-<h3>A Mágica da Open Source</h3>
-<p>Uma das vantagens do ecossistema WordPress é que todos os plugins são open source, ou seja, você tem acesso ao código-fonte. Isso me permitiu analisar o plugin que estava causando os problemas. Com a ajuda do <strong>ChatGPT</strong>, consegui fazer uma análise forense do código. A IA conseguiu identificar rapidamente as vulnerabilidades que estavam presentes, como *cross-site scripting* e *CSRF*.</p>
-<p>Esse proceso levou apenas 20 minutos! A IA gerou um relatório detalhado que não só listava os problemas, mas também oferecia um guia para criar um novo plugin que replicasse as funcionalidades do antigo, mas sem as falhas de segurança. Incrível, não é?</p>
-<h2>Construindo um Novo Plugin</h2>
-<p>A partir das informações que recebi, decidi que queria um plugin mais minimalista. O original tinha muitas funcionalidades que não eram necessárias para mim. Então, pedi para a IA criar uma nova especificação, focada apenas no bloqueio de spam de registro. E, para minha surpresa, a IA não só fez isso, como também seguiu as melhores práticas de segurança do WordPress.</p>
-<h3>Melhores Práticas no Código</h3>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T09:45:06.260Z">10/10/2026</time>: atribuições, limites e orientações corrigidos com fontes; a data da publicação original foi preservada.</p>
+<p>Reescrever um plugin WordPress com ajuda de IA exige verificar tanto a função original quanto os controles de segurança. Um relatório gerado pelo modelo pode orientar a investigação, mas não demonstra que uma vulnerabilidade foi eliminada. Este guia trata da revisão de uma substituição; não relata uma intervenção no site de Anderson Damasio.</p>
+<h2>O que precisa ser preservado</h2>
+<p>Antes de pedir código, descreva quais ações o plugin permite, quais dados grava e quem pode executar cada operação. Em um bloqueador de registros, impedir spam e permitir cadastros legítimos são requisitos distintos. Um filtro que rejeita todos os pedidos pode aparentar sucesso enquanto interrompe o serviço.</p>
+<p>Registre também o que ficará fora da substituição. Retirar uma tela de configuração é diferente de abandonar os dados já armazenados por ela. A decisão sobre atualização, substituição ou correção depende desse levantamento e das informações do mantenedor, não da velocidade com que a IA produz um arquivo.</p>
+<h2>Controles que não são intercambiáveis</h2>
+<p class="fato-validacao">A <a href="https://developer.wordpress.org/apis/security/data-validation/">documentação de validação do WordPress</a> trata da conferência de valores antes do uso. Para um campo de escolha fechada, defina os valores permitidos e o comportamento quando a entrada estiver fora desse conjunto.</p>
+<p class="fato-sanitizacao">A <a href="https://developer.wordpress.org/apis/security/sanitizing/">documentação de sanitização</a> distingue essa filtragem da validação mais específica. Limpar uma string não comprova que ela representa uma opção válida para a operação.</p>
+<p class="fato-nonce">Segundo a <a href="https://developer.wordpress.org/apis/security/nonces/">documentação de nonces</a>, esses tokens ajudam na proteção contra CSRF, mas não substituem autenticação, autorização ou controle de acesso. O WordPress orienta verificar permissões com <code>current_user_can()</code>. Um nonce válido não deve, sozinho, autorizar uma alteração administrativa.</p>
+<p class="fato-saida">A <a href="https://developer.wordpress.org/apis/security/escaping/">documentação de escape de saída</a> recomenda escolher a função conforme o contexto e aplicá-la ao exibir o dado: <code>esc_html()</code> para texto em HTML, <code>esc_attr()</code> para atributos apropriados e <code>esc_url()</code> para URLs. Sanitização de entrada e escape de saída atendem a necessidades diferentes.</p>
+<div class="contribuicao-editorial">
+<h2>Uma ficha de aceite para a substituição</h2>
+<p>O roteiro abaixo é uma proposta para um ambiente isolado com dados sintéticos. Não foi executado em um plugin real. Para cada cenário, registre a versão examinada, a entrada, o resultado observado e o requisito atendido.</p>
 <ul>
-    <li><strong>Validação de entrada:</strong> Sempre sanitize os dados do usuário.</li>
-    <li><strong>Uso de Honeypots:</strong> Um campo oculto que, se preenchido, indica que um bot está tentando registrar.</li>
-    <li><strong>Verificações de domínio:</strong> Checar se o domínio está ativo antes de permitir o registro.</li>
+<li>Cadastro legítimo: preencher o fluxo com dados de teste aceitos pela regra. Conferir a criação esperada e as mensagens ao usuário, sem usar a queda do volume de registros como única medida.</li>
+<li>Configuração administrativa: tentar alterar uma opção sem a permissão exigida, mesmo com um token válido para aquela sessão. O aceite exige recusa e nenhuma gravação indevida.</li>
+<li>Valor fora do contrato: enviar uma opção que o formulário não oferece. Conferir se o servidor aplica a regra definida, sem confiar apenas na interface.</li>
+<li>Exibição de conteúdo: verificar caracteres especiais em cada contexto de saída. Confirmar que o texto não se torna marcação executável e que a informação legítima continua legível.</li>
+<li>Reversão: restaurar a versão anterior no ambiente de teste e conferir compatibilidade com as configurações gravadas pela substituição. Registrar qualquer migração de dados necessária antes de decidir pela implantação.</li>
 </ul>
-<p>Essas práticas não só garantem a funcionalidade, mas também ajudam a evitar vulnerabilidades comuns que podem ser exploradas por atacantes. O mais interessante é que a IA gerou o código em apenas 21 segundos! O resultado? Um novo plugin que funcionou perfeitamente, reduzindo drasticamente o spam de registro.</p>
-<h2>Reflexões Finais</h2>
-<p>Essa experiência me fez refletir sobre o potencial da IA na resolução de problemas de programação. É um verdadeiro divisor de águas. O que antes parecia um pesadelo se transformou em uma oportunidade de aprendizado e inovação. A combinação de open source com a inteligência artificial é, sem dúvida, uma ferramenta poderosa para desenvolvedores.</p>
-<p>Portanto, se você ainda não experimentou usar IA para ajudar em seus projetos, recomendo que dê uma chance. A tecnologia está aqui para facilitar nossas vidas, e, se usada corretamente, pode economizar horas de trabalho e frustração. E quem sabe, talvez você também consiga transformar um obstáculo em uma oportunidade.</p>
+<p>Se um controle não tiver evidência, mantenha a substituição fora de produção até resolver essa pendência. Pedir uma segunda opinião ao mesmo modelo não substitui a inspeção do código e a observação dos testes.</p>
+</div>
+<p class="limites-editoriais">Não houve execução de WordPress, exploração de vulnerabilidade ou auditoria de plugin nesta análise. Os cenários são um recorte de revisão, não uma certificação de segurança. A documentação deve ser conferida para a versão e as APIs usadas pelo projeto; nenhum ganho de tempo ou redução de spam foi medido.</p>
 </div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.zdnet.com/article/how-i-used-chatgpt-to-analyze-debug-and-rewrite-a-broken-plugin-from-scratch-in-an-hour/" rel="noopener noreferrer">How I used ChatGPT to analyze, debug, and rewrite a broken plugin from scratch - in an hour</a> Data da fonte registrada: 07/07/2025.</p>
+<p><strong>Fonte principal:</strong> <a href="https://developer.wordpress.org/apis/security/nonces/" rel="noopener noreferrer">WordPress: Nonces</a></p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.zdnet.com/article/how-i-used-chatgpt-to-analyze-debug-and-rewrite-a-broken-plugin-from-scratch-in-an-hour/" target="_blank" rel="noopener noreferrer">How I used ChatGPT to analyze, debug, and rewrite a broken plugin from scratch - in an hour</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://developer.wordpress.org/apis/security/nonces/" target="_blank" rel="noopener noreferrer">WordPress: Nonces</a>.</p>
 </section>
 
 

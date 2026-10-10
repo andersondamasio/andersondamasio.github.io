@@ -36,6 +36,17 @@ test("hash cobre texto, pauta, resumo, fontes, modelos e imagem, independentemen
   assert.equal(hashRascunho(JSON.parse(JSON.stringify(aprovado))), hashRascunho(aprovado));
 });
 
+test("aprovacao antiga sintetica nao dispensa a triagem atual de uso pessoal", () => {
+  const r = aprovacaoFixture();
+  r.corpoArtigo += '<p>O aplicativo mudou minha rotina.</p>';
+  // Simula um pacote antigo com hash consistente, somente nesta fixture isolada.
+  r.revisaoHumana.hash = hashRascunho(r);
+  const resultado = validarAprovacao(r);
+  assert.equal(resultado.aceita, false);
+  assert.ok(resultado.motivos.includes('vivencia-pessoal-implicita'));
+  assert.equal(resultado.motivos.includes('aprovacao-humana-ausente-ou-desatualizada'), false);
+});
+
 test("afirmacoes, fontes, contribuicao e limites precisam corresponder ao artigo", () => {
   const alteracoes = [
     r => { r.dossie.afirmacoes = []; }, r => { r.dossie.afirmacoes[0].trecho = "Um fato ausente do artigo de exemplo."; },

@@ -1,0 +1,233 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T09:45:06.260Z",
+  "base": "fb46bb1c72f30a8efc84e5a4798e788d5cc0309f",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": false,
+  "escopo": "Sete leituras: duas correcoes, uma consolidacao equivalente e quatro retiradas recuperaveis. Sem novo noindex, teste de produto, avaliacao clinica, API paga ou aprovacao de rascunho.",
+  "limitacaoFontes": "Cinco URLs ZDNet nao puderam ser abertas; busca posterior nao recuperou evidencia util. Nao se afirma leitura integral dessas fontes, falsidade das noticias ou ausencia de trafego. Correcoes sustentadas nas documentacoes primarias citadas; retiradas fundadas no conteudo local e na confirmacao do usuario de que nao sao vivencias pessoais.",
+  "triagem": "Cobertura ampliada de uso, preferencia e posse na politica existente. Mesmo contrato editorial; validarDossie e validarAprovacao reavaliam os sinais atuais, sem alterar ou aprovar pacotes anteriores. Sinais novos nao decidem indexacao.",
+  "artigos": [
+    {
+      "url": "artigos/programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Como um Plugin Quebrado Me Fez Usar IA Para Reescrever Meu Código e Salvar Meu Site",
+        "data": "2025-07-08T10:21:02.010Z",
+        "corpoHash": "7f8e8970af85c2df64c6ca3fafc4a8c29d2b520e4f00bab32e8ee66e5035f71b",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/how-i-used-chatgpt-to-analyze-debug-and-rewrite-a-broken-plugin-from-scratch-in-an-hour/",
+          "titulo": "How I used ChatGPT to analyze, debug, and rewrite a broken plugin from scratch - in an hour",
+          "data": "2025-07-08T02:00:00.000Z"
+        }
+      },
+      "motivo": "Remover incidente e resultados pessoais nao confirmados, equivalencia entre sanitizacao e validacao e garantia de seguranca por geracao de codigo.",
+      "evidencia": "Leitura integral local: plugin anti-spam, 20 minutos, 21 segundos e reducao de spam atribuidos ao autor sem evidencia. Documentacao primaria WordPress diferencia validacao, sanitizacao, autorizacao e escape. Fontes ZDNet originais nao puderam ser abertas; nao se atribui o incidente a um jornalista por suposicao.",
+      "alternativas": "Manter a pergunta sobre substituicao do plugin com fontes primarias e criterios de aceite propostos; retirar tempos e resultados nao verificados.",
+      "aliases": [
+        "programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html"
+      ],
+      "depois": {
+        "titulo": "Plugin WordPress com IA: o que revisar antes de substituir",
+        "descricao": "Validação, permissões, nonces e escape de saída: uma ficha proposta para revisar a substituição de um plugin, sem prometer segurança automática.",
+        "corpoHash": "2bf59c5d72ac5def4f41543f2deea141da90aa77968dffc36fbb781b607f965d"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-validacao",
+          "fonte": "https://developer.wordpress.org/apis/security/data-validation/",
+          "consultadoEm": "2026-10-10T09:45:06.260Z",
+          "textoHash": "3b19d20eaec313d539f4df89fd9dadb4519632a4fb33def6288e56fb12104e2a"
+        },
+        {
+          "seletor": ".fato-sanitizacao",
+          "fonte": "https://developer.wordpress.org/apis/security/sanitizing/",
+          "consultadoEm": "2026-10-10T09:45:06.260Z",
+          "textoHash": "c52756c5ba78b63b9ac2514b574efb619de0e15220d7c7e9f49fccc7b5afbe7e"
+        },
+        {
+          "seletor": ".fato-nonce",
+          "fonte": "https://developer.wordpress.org/apis/security/nonces/",
+          "consultadoEm": "2026-10-10T09:45:06.260Z",
+          "textoHash": "33abe591c7971b5a2eac4f413d4894f5b08885300313f56b79ff5af178c412b8"
+        },
+        {
+          "seletor": ".fato-saida",
+          "fonte": "https://developer.wordpress.org/apis/security/escaping/",
+          "consultadoEm": "2026-10-10T09:45:06.260Z",
+          "textoHash": "bc068bb45e7d7e2248f58d135fb0d89f48889b71f21c5da7fda39dfb66098691"
+        }
+      ],
+      "pergunta": "O que verificar antes de substituir um plugin WordPress com codigo produzido por IA?",
+      "sobreposicao": "Os dois textos WordPress lidos integralmente tratam de plugin anti-spam desativado, analise por IA e substituicao. A segunda URL nao oferece avaliacao independente; consolidada neste destino, preservando a mesma intencao.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-nova-era-do-fitness-o-coach-da-fitbit-e-a-revolucao-da-saude-digital.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A nova era do fitness: o Coach da Fitbit e a revolução da saúde digital",
+        "data": "2025-10-27T19:18:43.402Z",
+        "corpoHash": "8bb401d606504743433a8a00cbc5292cd0c91739bd4abea478fc375dcc359382",
+        "fonte": {
+          "url": "https://techcrunch.com/2025/10/27/fitbits-revamped-app-with-gemini-powered-health-coach-rolls-out-to-premium-users/",
+          "titulo": "Fitbit’s revamped app, with Gemini-powered health coach, rolls out to Premium users",
+          "data": "2025-10-27T19:11:50.000Z"
+        }
+      },
+      "motivo": "Distinguir anuncio historico e disponibilidade atual, retirando a inferencia de que adaptar treino apos lesao prova adequacao clinica.",
+      "evidencia": "Leitura integral local e anuncio oficial de 27/10/2025: previa para usuarios elegiveis nos EUA. Anuncio Google Health identifica mudanca de nome e ajuda oficial delimita uso informativo, sem substituir avaliacao profissional. Nao foi testado o produto nem avaliada eficacia.",
+      "alternativas": "Conservar a explicacao do anuncio com contexto, limites e leitura critica; nao converter o relato pessoal retirado em evidencia de eficacia.",
+      "aliases": [
+        "inteligencia-artificial/a-nova-era-do-fitness-o-coach-da-fitbit-e-a-revolucao-da-saude-digital.html"
+      ],
+      "depois": {
+        "titulo": "Coach da Fitbit: personalização não é avaliação médica",
+        "descricao": "O anúncio da prévia de 2025, a mudança para Google Health e os limites do coach, com uma ficha proposta para separar dados e recomendações.",
+        "corpoHash": "6bbdd28dd2790b14a4693135dd75bf448823240a1724a55d84f9fdeddbd581ea"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-previa",
+          "fonte": "https://blog.google/products-and-platforms/devices/fitbit/personal-health-coach-public-preview/",
+          "consultadoEm": "2026-10-10T09:45:06.260Z",
+          "textoHash": "fb1a914bec40e038d803319ba089a676e0525897021deb654f1d66edd392f8dd"
+        },
+        {
+          "seletor": ".fato-nome",
+          "fonte": "https://blog.google/products-and-platforms/products/google-health/google-health-fitbit/",
+          "consultadoEm": "2026-10-10T09:45:06.260Z",
+          "textoHash": "c7e5c77479a3816f7177ba4d839afc4ef2c61c3a7cab556119546eb9accdee3e"
+        },
+        {
+          "seletor": ".fato-limite",
+          "fonte": "https://support.google.com/googlehealth/answer/17053789?hl=en",
+          "consultadoEm": "2026-10-10T09:45:06.260Z",
+          "textoHash": "4861a82ff974b3f6f2160aa42f173664a6f46e01109eec33291b36ed00d04def"
+        }
+      ],
+      "pergunta": "O que a personalizacao do coach permite concluir, e onde falta evidencia clinica?",
+      "sobreposicao": "Comparado o relato pessoal Fitbit: anuncio/documentacao e experiencia de um mes nao tem intencao equivalente. O relato e retirado sem redirecionar para esta noticia.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/como-a-ia-pode-salvar-seu-site-uma-abordagem-pratica-para-problemas-de-plugins.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "Como a IA Pode Salvar Seu Site: Uma Abordagem Prática para Problemas de Plugins",
+        "data": "2025-07-07T16:25:58.059Z",
+        "corpoHash": "21dd5d1c6ea11b62fee6b193ac4d7628b231b79f10bb1d319f18e784a55f6fa7",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/how-i-used-chatgpt-to-quickly-fix-a-critical-plugin-without-touching-a-line-of-code/",
+          "titulo": "How I used ChatGPT to quickly fix a critical plugin - without touching a line of code",
+          "data": "2025-07-07T16:03:00.000Z"
+        }
+      },
+      "motivo": "Consolidar a segunda narrativa de substituicao de plugin anti-spam no guia de revisao com documentacao primaria.",
+      "evidencia": "Leitura integral de origem/destino: mesmo recorte de analise e reescrita de plugin anti-spam por IA, inclusive mesmo tempo de analise alegado. A origem atribui o caso a terceiro, mas extrapola seguranca e recomenda comecar do zero sem criterios. Fontes ZDNet nao acessiveis; detalhes do incidente nao reafirmados.",
+      "alternativas": "Consolidacao de intencao equivalente, nao apenas de assunto ou palavra-chave; manter snapshot e dois enderecos de origem com destino direto.",
+      "aliases": [
+        "inteligencia-artificial/como-a-ia-pode-salvar-seu-site-uma-abordagem-pratica-para-problemas-de-plugins.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/9d6a32bc888763956745971373159bb03c68f9080ee6e293c22f7d8b5deaa3a7.json",
+      "destinoEquivalente": "artigos/programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/quatro-dias-quatro-add-ons-como-a-ia-mudou-meu-jeito-de-desenvolver.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "Quatro Dias, Quatro Add-ons: Como a IA Mudou Meu Jeito de Desenvolver",
+        "data": "2025-09-19T07:22:54.615Z",
+        "corpoHash": "646ed3a6ced06a3bdab2e19e6443730dff5c7b2cdce60cee58a84658aece2a4e",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/i-got-4-years-of-product-development-done-in-4-days-for-200-and-im-still-stunned/",
+          "titulo": "I got 4 years of product development done in 4 days for $200, and I'm still stunned",
+          "data": "2025-09-19T07:00:00.000Z"
+        }
+      },
+      "motivo": "Retirar autoria de quatro add-ons e vitoria pessoal nao confirmadas, sem resultado ou recurso proprio verificavel.",
+      "evidencia": "Leitura integral: abertura e conclusao reivindicam desenvolvimento pessoal em quatro dias, enquanto o corpo menciona uma materia de terceiro. As dicas de uso de IA sao genericas e nao documentam os add-ons. Consulta da fonte original falhou; isso nao prova que a fonte seja falsa.",
+      "alternativas": "Atribuir o caso a terceiro exigiria verificar detalhes indisponiveis nesta consulta; remover a narrativa deixa dicas genericas. Nao redirecionar para um guia de revisao de codigo com outra pergunta.",
+      "aliases": [
+        "inteligencia-artificial/quatro-dias-quatro-add-ons-como-a-ia-mudou-meu-jeito-de-desenvolver.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/5b2734bfd2bff898e58d1ba088d027f80ab98625706ed928b41f809a9ea50197.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/desenvolvimento-de-software/a-revolucao-das-distribuicoes-linux-meu-top-11-que-moldaram-a-jornada.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "A revolução das distribuições Linux: meu top 11 que moldaram a jornada",
+        "data": "2025-12-26T16:26:17.864Z",
+        "corpoHash": "309eec14c0194f9cfd0e0a6b3ac36a25a789dfc6c98a7d194113a7c5ec5a6012",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/my-11-favorite-linux-distributions-of-all-time-ranked/",
+          "titulo": "My 11 favorite Linux distributions of all time, ranked",
+          "data": "2025-12-26T16:11:00.000Z"
+        }
+      },
+      "motivo": "Retirar ranking autobiografico de distribuicoes e uso em projetos nao confirmados.",
+      "evidencia": "Leitura integral: relato de primeira experiencia com Caldera, preferencia por Pop!_OS e uso profissional sao apresentados como biografia do autor. Nao ha protocolo de comparacao ou medicao que sustente o ranking. Fonte original nao acessivel; nenhuma afirmacao de falsidade sobre a fonte.",
+      "alternativas": "Trocar pronomes nao transforma uma trajetoria pessoal em comparacao tecnica. Um guia de selecao por requisitos exige pesquisa propria; nenhuma pagina equivalente identificada para este ranking autobiografico.",
+      "aliases": [
+        "desenvolvimento-de-software/a-revolucao-das-distribuicoes-linux-meu-top-11-que-moldaram-a-jornada.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/e23418aa016f379bf4859cdafcd5bb2a556c624a625cd906b540630442c5f69d.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/tecnologia/instalei-essas-11-aplicacoes-em-todos-os-meus-sistemas-linux-e-voce-tambem-deveria.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "Instalei essas 11 aplicações em todos os meus sistemas Linux e você também deveria",
+        "data": "2025-09-29T16:23:47.499Z",
+        "corpoHash": "853896bc127f0f77444016fdfd85b2e73b009eb4bfedcb308bc6fd90041956a5",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/i-install-these-11-apps-on-every-new-linux-system-and-you-should-too-heres-why/",
+          "titulo": "I install these 11 apps on every new Linux system, and you should, too - here's why",
+          "data": "2025-09-29T16:22:42.000Z"
+        }
+      },
+      "motivo": "Retirar rotina de instalacao nao confirmada e recomendacao universal de aplicativos sem requisitos ou avaliacao propria.",
+      "evidencia": "Leitura integral: titulo reivindica instalacoes pessoais, texto impoe conjunto universal e associacoes simplificadas de seguranca/compatibilidade sem teste. A lista nao distingue necessidades, ambiente nem criterios de escolha. Falha de acesso a fonte nao e o criterio de retirada.",
+      "alternativas": "Uma selecao por tarefas, compatibilidade e manutencao precisaria de nova pesquisa das ferramentas. Nao inventar ensaio, preferencia pessoal ou custo-beneficio para conservar a URL.",
+      "aliases": [
+        "tecnologia/instalei-essas-11-aplicacoes-em-todos-os-meus-sistemas-linux-e-voce-tambem-deveria.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/8ad9b6d871ca7606188f495341d48a19081e89c815d234434c91d160c535d204.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-do-bem-estar-como-a-ia-do-fitbit-premium-transformou-meu-treino.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "A revolução do bem-estar: como a IA do Fitbit Premium transformou meu treino",
+        "data": "2025-12-06T21:18:55.471Z",
+        "corpoHash": "82906e3da5388cd1607af4d89a877fd8553167514f86e22328666bafce54ddf3",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/a-month-with-fitbit-premium-on-my-pixel-watch-changed-how-i-see-ai-health-coaching/",
+          "titulo": "A month with Fitbit Premium on my Pixel Watch changed how I see AI health coaching",
+          "data": "2025-12-05T18:28:00.000Z"
+        }
+      },
+      "motivo": "Retirar teste de um mes e efeitos pessoais de saude/treino nao confirmados, com recomendacao de assinatura baseada nessa vivencia.",
+      "evidencia": "Leitura integral: uso de Pixel Watch, intensidade de treino, motivacao e beneficios sao atribuidos ao autor sem confirmacao. Orienta perguntar sobre sintomas e dieta sem delimitar uso informativo. A ajuda Google Health foi conferida; a reportagem ZDNet original nao foi acessivel.",
+      "alternativas": "Nao substituir uma avaliacao pessoal por anuncio de produto como se fossem evidencias equivalentes. A noticia historica relacionada e corrigida separadamente, sem redirecionamento deste relato.",
+      "aliases": [
+        "inteligencia-artificial/a-revolucao-do-bem-estar-como-a-ia-do-fitbit-premium-transformou-meu-treino.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/3c28bdd3c30d32ff22c732b56fe73bfaf440fc81f9cf7c39bc10dc27fb3c8a21.json",
+      "destinoEquivalente": null,
+      "fonteCorrecao": {
+        "url": "https://support.google.com/googlehealth/answer/17053789?hl=en",
+        "consultadaEm": "2026-10-10T09:45:06.260Z"
+      }
+    }
+  ]
+}
