@@ -2209,12 +2209,26 @@
     "categoria": "Outros"
   },
   {
-    "titulo": "Design Tokens: A Arquitetura Secreta por Trás de Interfaces de Usuário Incríveis",
-    "noticiaOriginal": "Design Token-Based UI Architecture",
+    "titulo": "Design tokens: converter um JSON local em variáveis CSS",
+    "noticiaOriginal": "Design Tokens Format Module 2025.10",
     "url": "artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html",
     "data": "2025-05-06T22:17:15.566Z",
-    "dataFonte": "2024-12-12T09:36:00.000Z",
-    "categoria": "Outros"
+    "dataFonte": "2025-10-28",
+    "categoria": "Outros",
+    "urlFonte": "https://www.designtokens.org/tr/2025.10/format/",
+    "seo": {
+      "description": "Um conversor Node.js com validação e testes para cores e espaçamentos, distinguindo seu formato didático das propriedades CSS e da especificação DTCG.",
+      "modifiedAt": "2026-10-10T03:43:59.634Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T03:43:59.634Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Retirar projeto pessoal inventado e completar traducao JSON para CSS com exemplo testavel e contrato explicito, sem alegar conformidade DTCG.",
+      "hashAntes": "d9705e40abffc868065be9afe131ea23bf2d6ac8127f40948212215c00397c0e",
+      "hashDepois": "dfa5884bf1d73e21179a4a82bbd49fa2b141d859fa6be323c33032a6a05c0319",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/correcoes-contextuais-02-2026-10.json"
+    }
   },
   {
     "titulo": "Desenvolvendo Produtos de Dados: O Próximo Passo",
@@ -2354,15 +2368,28 @@
     ]
   },
   {
-    "titulo": "Desenvolvendo Sistemas de Baixa Latência com C++: Desafios e Oportunidades",
-    "noticiaOriginal": "Thunder Compute (YC S24) Is Hiring a C++ Low-Latency Systems Developer",
+    "titulo": "Fila em C++: sincronização e encerramento com condition_variable",
+    "noticiaOriginal": "C++ Core Guidelines",
     "url": "artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html",
     "data": "2025-05-08T07:17:55.986Z",
-    "dataFonte": "2025-05-08T07:01:08.000Z",
     "categoria": "Outros",
     "aliasesLegados": [
       "artigos/inteligencia-artificial/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html"
-    ]
+    ],
+    "urlFonte": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines",
+    "seo": {
+      "description": "Um exemplo completo de fila C++17 com predicado de espera, fechamento e testes de entrega, sem confundir sincronização com garantia de baixa latência.",
+      "modifiedAt": "2026-10-10T03:43:59.634Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T03:43:59.634Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Retirar projeto pessoal inventado, corrigir codigo HTML quebrado e exemplo sem main funcional; fornecer testes sem alegar baixa latencia.",
+      "hashAntes": "6351a2380ae42520d13add628252c5b8ace3040e7710cf1f817421c9dc28f0ab",
+      "hashDepois": "0cecdb7cb497a39d53a86388490f16039462b9e111560232cfaae1d21e5239d4",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/correcoes-contextuais-02-2026-10.json"
+    }
   },
   {
     "titulo": "Gmail vai parar de suportar 3DES para SMTP: o que isso significa para os desenvolvedores?",
@@ -11171,13 +11198,26 @@
     "urlFonte": "https://www.infoq.com/news/2025/06/teams-toolkit-agents-copilot/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   },
   {
-    "titulo": "A arquitetura descentralizada: autonomia sem anarquia",
-    "noticiaOriginal": "Article: Decentralized Architecture Needs More Than Autonomy",
+    "titulo": "Arquitetura descentralizada: conselho, autoridade e decisões",
+    "noticiaOriginal": "Decentralized Architecture Needs More Than Autonomy",
     "url": "artigos/desenvolvimento-de-software/a-arquitetura-descentralizada-autonomia-sem-anarquia.html",
     "data": "2025-06-19T09:20:49.700Z",
-    "dataFonte": "2025-06-19T09:00:00.000Z",
+    "dataFonte": "2025-06-19",
     "categoria": "Desenvolvimento de Software",
-    "urlFonte": "https://www.infoq.com/articles/decentralized-architecture-advice-process/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://www.infoq.com/articles/decentralized-architecture-advice-process/",
+    "seo": {
+      "description": "A abordagem apresentada por Lindsey Tibbitts e um ADR hipotético para registrar conselhos, objeções e limites de autoridade ao mudar um contrato entre equipes.",
+      "modifiedAt": "2026-10-10T03:43:59.634Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T03:43:59.634Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Atribuir o relato a Lindsey Tibbitts, nao a Anderson ou ao autor do livro; propor ADR verificavel sem alegar aplicacao real.",
+      "hashAntes": "fe51c6dac82643b0c9db826014a9e7816a72a0a274a39d4d1f517100455a0b7b",
+      "hashDepois": "35ca7edf724d36aab12a681f3e6e6ff1c2d75730071188d2badd2b12e0f5119c",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/correcoes-contextuais-02-2026-10.json"
+    }
   },
   {
     "titulo": "Impulsionando o Futuro: Como as Investidas da Nvidia Estão Moldando o Cenário da IA",
@@ -34704,13 +34744,26 @@
     "urlFonte": "https://www.bbc.com/news/articles/c5y0g79xevxo?at_medium=RSS&at_campaign=rss"
   },
   {
-    "titulo": "Como se Tornar Indispensável nas Conversas Estratégicas da Sua Empresa",
-    "noticiaOriginal": "Presentation: How to Always Get Invited to Big Strategic Conversations",
+    "titulo": "Conversas estratégicas: preparar uma decisão técnica",
+    "noticiaOriginal": "How to Always Get Invited to Big Strategic Conversations",
     "url": "artigos/carreira/como-se-tornar-indispensavel-nas-conversas-estrategicas-da-sua-empresa.html",
     "data": "2025-10-20T06:32:15.360Z",
     "dataFonte": "2025-10-17T09:50:00.000Z",
     "categoria": "Carreira",
-    "urlFonte": "https://www.infoq.com/presentations/strategic-discussions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://www.infoq.com/presentations/strategic-discussions/",
+    "seo": {
+      "description": "A apresentação de Mark Allen e um documento hipotético para relacionar decisões técnicas, evidências e prioridades, sem promessas de influência ou promoção.",
+      "modifiedAt": "2026-10-10T03:43:59.634Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T03:43:59.634Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Atribuir vivencias e orientacoes a Mark Allen; substituir promessa de indispensabilidade por ficha de decisao proposta e delimitada.",
+      "hashAntes": "96aace3934d7a6ce4ca0b3e5a5808cdd8c27294aa06fde278606d25703080d12",
+      "hashDepois": "65128833ccc7af4a0dfa704994700dd7ce8b5762e1e5e8b9ff52dc8c4232cb3f",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/correcoes-contextuais-02-2026-10.json"
+    }
   },
   {
     "titulo": "A nova era dos chatbots: ByteDance e a expansão global do Cici",
@@ -43593,13 +43646,26 @@
     "urlFonte": "https://techcrunch.com/2025/12/04/gemini-was-googles-top-trending-search-term-in-2025/"
   },
   {
-    "titulo": "A arte de escalar: estratégias para aplicações em nuvem e distribuídas",
-    "noticiaOriginal": "Article: Scaling Cloud and Distributed Applications: Lessons and Strategies",
+    "titulo": "Escalabilidade na nuvem: distinguir carga e dependências lentas",
+    "noticiaOriginal": "Scaling Cloud and Distributed Applications: Lessons and Strategies",
     "url": "artigos/cloud/a-arte-de-escalar-estrategias-para-aplicacoes-em-nuvem-e-distribuidas.html",
     "data": "2025-12-04T09:26:28.906Z",
-    "dataFonte": "2025-12-04T09:00:00.000Z",
+    "dataFonte": "2025-12-04",
     "categoria": "Cloud",
-    "urlFonte": "https://www.infoq.com/articles/scaling-cloud-distributed-applications/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://www.infoq.com/articles/scaling-cloud-distributed-applications/",
+    "seo": {
+      "description": "O caso de Durai Arasan e um experimento proposto para separar aumento de demanda, espera por dependências e capacidade adicional, sem garantias universais.",
+      "modifiedAt": "2026-10-10T03:43:59.634Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T03:43:59.634Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Atribuir o caso a Durai Arasan, retirar vivencia inventada e metas universais, propor ensaio com hipotese e limites.",
+      "hashAntes": "054eebde8d5755da60488d7e55884c4768a1c414c0f3bc3bf0768046855ac66c",
+      "hashDepois": "9ccd51a6d97da0d564faf882edbe2b295f13a7f8a1acd3c29cc411db47a9722e",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/correcoes-contextuais-02-2026-10.json"
+    }
   },
   {
     "titulo": "A era da segurança online: o que podemos aprender com a multa imposta a empresas de conteúdo adulto",
@@ -57502,13 +57568,26 @@
     "urlFonte": "https://www.zdnet.com/article/asus-vivobook-s15-snapdragon-presidents-day-deal/"
   },
   {
-    "titulo": "LocalStack: O Fim de uma Era ou Apenas uma Nova Fase?",
-    "noticiaOriginal": "LocalStack for AWS Drops Community Edition Raising Developer Concerns",
+    "titulo": "LocalStack em 2026: autenticação, CI e revisão da migração",
+    "noticiaOriginal": "Important Updates to Pricing & Packaging for LocalStack for AWS",
     "url": "artigos/devops/localstack-o-fim-de-uma-era-ou-apenas-uma-nova-fase.html",
     "data": "2026-02-15T07:41:59.674Z",
-    "dataFonte": "2026-02-15T07:30:00.000Z",
+    "dataFonte": "2026-02-27",
     "categoria": "DevOps",
-    "urlFonte": "https://www.infoq.com/news/2026/02/localstack-aws-community/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://blog.localstack.cloud/2026-upcoming-pricing-changes/",
+    "seo": {
+      "description": "As alterações posteriores ao anúncio do LocalStack, incluindo a retirada dos limites por créditos de CI, e um roteiro proposto para conferir a migração.",
+      "modifiedAt": "2026-10-10T03:43:59.634Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T03:43:59.634Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Corrigir regra de creditos CI superada, distinguir uso gratuito nao comercial e autenticacao; retirar opinioes e vivencia pessoal inventadas.",
+      "hashAntes": "0c0174b929d41ad77df8cf7155b48f66a755dab398f8975fddbe6c6126f1700e",
+      "hashDepois": "8afcc26f5a42a3ab90ace9ba1014bf9279316066cd6bbc6fa411fbec3dc073b7",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/correcoes-contextuais-02-2026-10.json"
+    }
   },
   {
     "titulo": "O novo Echo Hub da Amazon: a revolução no controle da casa inteligente",

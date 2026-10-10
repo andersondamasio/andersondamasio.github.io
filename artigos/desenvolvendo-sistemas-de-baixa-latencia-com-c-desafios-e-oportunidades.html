@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Desenvolvendo Sistemas de Baixa Latência com C++: Desafios e Oportunidades</title>
-<meta name="description" content="Em um projeto antigo, enfrentei um problema parecido com o que a notícia sobre a Thunder Compute levanta: a necessidade de desenvolver sistemas de baixa...">
+<title>Fila em C++: sincronização e encerramento com condition_variable</title>
+<meta name="description" content="Um exemplo completo de fila C++17 com predicado de espera, fechamento e testes de entrega, sem confundir sincronização com garantia de baixa latência.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html">
@@ -14,42 +14,48 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Desenvolvendo Sistemas de Baixa Latência com C++: Desafios e Oportunidades">
-<meta property="og:description" content="Em um projeto antigo, enfrentei um problema parecido com o que a notícia sobre a Thunder Compute levanta: a necessidade de desenvolver sistemas de baixa...">
+<meta property="og:title" content="Fila em C++: sincronização e encerramento com condition_variable">
+<meta property="og:description" content="Um exemplo completo de fila C++17 com predicado de espera, fechamento e testes de entrega, sem confundir sincronização com garantia de baixa latência.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2025-05-08T07:17:55.986Z">
-<meta property="article:modified_time" content="2025-05-08T07:17:55.986Z">
+<meta property="article:modified_time" content="2026-10-10T03:43:59.634Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Desenvolvendo Sistemas de Baixa Latência com C++: Desafios e Oportunidades">
-<meta name="twitter:description" content="Em um projeto antigo, enfrentei um problema parecido com o que a notícia sobre a Thunder Compute levanta: a necessidade de desenvolver sistemas de baixa...">
+<meta name="twitter:title" content="Fila em C++: sincronização e encerramento com condition_variable">
+<meta name="twitter:description" content="Um exemplo completo de fila C++17 com predicado de espera, fechamento e testes de entrega, sem confundir sincronização com garantia de baixa latência.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Desenvolvendo Sistemas de Baixa Latência com C++: Desafios e Oportunidades",
-  "description": "Em um projeto antigo, enfrentei um problema parecido com o que a notícia sobre a Thunder Compute levanta: a necessidade de desenvolver sistemas de baixa...",
+  "headline": "Fila em C++: sincronização e encerramento com condition_variable",
+  "description": "Um exemplo completo de fila C++17 com predicado de espera, fechamento e testes de entrega, sem confundir sincronização com garantia de baixa latência.",
   "url": "https://www.andersondamasio.com.br/artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html"
   },
   "datePublished": "2025-05-08T07:17:55.986Z",
-  "dateModified": "2025-05-08T07:17:55.986Z",
+  "dateModified": "2026-10-10T03:43:59.634Z",
   "articleSection": "Outros",
   "inLanguage": "pt-BR",
-  "wordCount": 403,
+  "wordCount": 414,
   "about": {
     "@type": "Thing",
     "name": "Outros"
   },
   "isAccessibleForFree": true,
   "copyrightYear": 2025,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "C++ Core Guidelines",
+    "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+  },
+  "citation": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -108,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Desenvolvendo Sistemas de Baixa Latência com C++: Desafios e Oportunidades",
+      "name": "Fila em C++: sincronização e encerramento com condition_variable",
       "item": "https://www.andersondamasio.com.br/artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html"
     }
   ]
@@ -141,6 +147,11 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
 .article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
 .article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0; }
+.article-source a { font-weight: 700; }
+.article-body code { overflow-wrap: anywhere; } .article-body pre code { overflow-wrap: normal; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -166,18 +177,104 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 
 
 <main>
-<h1>Desenvolvendo Sistemas de Baixa Latência com C++: Desafios e Oportunidades</h1>
+<h1>Fila em C++: sincronização e encerramento com condition_variable</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 <p class="article-meta">Publicado em: 08/05/2025 04:17</p>
 
-<div class="article-body">Em um projeto antigo, enfrentei um problema parecido com o que a notícia sobre a Thunder Compute levanta: a necessidade de desenvolver sistemas de baixa latência para lidar com grandes volumes de dados em tempo real. Essa é uma demanda cada vez mais comum no mundo da tecnologia, especialmente em áreas como fintech, telecomunicações e jogos online.<br>A linguagem C++ é amplamente reconhecida por sua eficiência e desempenho, sendo uma escolha natural para projetos que exigem baixa latência. No entanto, trabalhar com sistemas de baixa latência apresenta desafios únicos, que vão desde a otimização de código até a gestão de recursos do sistema.<br>Uma das principais preocupações ao desenvolver sistemas de baixa latência é minimizar o tempo de execução do código. Isso significa evitar operações desnecessárias, como alocações de memória dinâmica, e otimizar algoritmos para reduzir a complexidade computacional. Além disso, é essencial utilizar estruturas de dados eficientes, como árvores balanceadas e filas de prioridade, para garantir um desempenho consistente.<br>Outro aspecto importante ao trabalhar com sistemas de baixa latência é a gestão de concorrência. Em ambientes de alto desempenho, é comum lidar com múltiplas threads de execução, o que pode levar a problemas como condições de corrida e deadlocks. Nesses casos, é fundamental utilizar mecanismos de sincronização, como mutexes e semáforos, para garantir a integridade dos dados e a consistência do sistema.<br>Para ilustrar esses conceitos na prática, vamos analisar um trecho de código em C++ que implementa um sistema de fila de mensagens de baixa latência:<br><pre><code>#include <iostream><br>#include <queue><br>#include <mutex><br>#include <condition_variable><br>std::queue<int> messages;<br>std::mutex mutex;<br>std::condition_variable cv;<br>void producer(int message) {<br>std::lock_guard<std::mutex> lock(mutex);<br>messages.push(message);<br>cv.notify_one();<br>}<br>void consumer() {<br>std::unique_lock<std::mutex> lock(mutex);<br>cv.wait(lock, []{ return !messages.empty(); });<br>int message = messages.front();<br>messages.pop();<br>std::cout << "Mensagem recebida: " << message << std::endl;<br>}<br>int main() {<br>// Código de exemplo para demonstrar o uso da fila de mensagens<br>return 0;<br>}<br></code></pre><br>Neste exemplo, a função `producer` insere mensagens na fila de forma segura, utilizando um mutex para evitar condições de corrida. Já a função `consumer` aguarda a disponibilidade de mensagens na fila e as consome de maneira eficiente.<br>Ao desenvolver sistemas de baixa latência, é essencial compreender não apenas os aspectos teóricos, mas também as práticas recomendadas e as melhores técnicas de otimização. A experiência prática e o domínio dos conceitos fundamentais são fundamentais para garantir o sucesso nesse tipo de projeto.<br>Em conclusão, a demanda por sistemas de baixa latência está em constante crescimento, impulsionada pela necessidade de processar grandes volumes de dados em tempo real. Dominar a linguagem C++ e as melhores práticas de desenvolvimento de software é essencial para enfrentar os desafios e aproveitar as oportunidades que esse cenário apresenta. Esteja preparado para os desafios e mantenha-se atualizado com as tendências do mercado para se destacar como desenvolvedor de sistemas de baixa latência.</div>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T03:43:59.634Z">10/10/2026</time>: fontes e exemplos revistos; a data da publicação original foi preservada.</p>
+<p>Uma fila com <code>mutex</code> e <code>condition_variable</code> é um exemplo de coordenação entre threads, não evidência de baixa latência. Antes de discutir desempenho, o programa precisa definir o que acontece quando não há itens e como os consumidores terminam.</p>
+<h2>As regras de sincronização relevantes</h2>
+<p class="fato-cpp">As <a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines">C++ Core Guidelines</a> recomendam esperar por uma condição verificável (CP.42), limitar a duração de seções críticas (CP.43) e não sustentar afirmações de desempenho sem medições (Per.6). No exemplo abaixo, a condição é haver um item ou a fila ter sido fechada. O processamento do item fica fora do bloqueio da fila.</p>
+<h2>Fila finita no uso, com encerramento explícito</h2>
+<div class="contribuicao-editorial">
+<p>A classe didática aceita inteiros. <code>enviar</code> retorna falso depois do fechamento. <code>receber</code> aguarda quando a fila está vazia e aberta; depois de fechada, entrega os itens restantes e só então retorna <code>std::nullopt</code>. Fechar novamente é permitido. O arquivo <a href="/exemplos/fila-cpp/fila.hpp">fila.hpp</a> contém a implementação completa:</p>
+<pre><code class="language-cpp">#pragma once
+#include &lt;condition_variable&gt;
+#include &lt;mutex&gt;
+#include &lt;optional&gt;
+#include &lt;queue&gt;
+
+class Fila {
+    std::mutex mutex_;
+    std::condition_variable pronta_;
+    std::queue&lt;int&gt; itens_;
+    bool fechada_ = false;
+
+public:
+    bool enviar(int valor) {
+        {
+            std::lock_guard&lt;std::mutex&gt; trava(mutex_);
+            if (fechada_) return false;
+            itens_.push(valor);
+        }
+        pronta_.notify_one();
+        return true;
+    }
+
+    std::optional&lt;int&gt; receber() {
+        std::unique_lock&lt;std::mutex&gt; trava(mutex_);
+        pronta_.wait(trava, [this] { return fechada_ || !itens_.empty(); });
+        if (itens_.empty()) return std::nullopt;
+        const int valor = itens_.front();
+        itens_.pop();
+        return valor;
+    }
+
+    void fechar() {
+        {
+            std::lock_guard&lt;std::mutex&gt; trava(mutex_);
+            fechada_ = true;
+        }
+        pronta_.notify_all();
+    }
+};
+</code></pre>
+<p>O consumidor consulta o estado sob o mesmo mutex que protege a inserção e o fechamento. A notificação não é tratada como um item: ao acordar, a condição é conferida novamente. <code>notify_all</code> no fechamento permite que mais de um consumidor observe o encerramento.</p>
+<p>O programa <a href="/exemplos/fila-cpp/main.cpp">main.cpp</a> envia três valores, fecha a fila e aguarda a thread antes de destruir os objetos compartilhados. A impressão ocorre depois que <code>receber</code> libera sua trava:</p>
+<pre><code class="language-cpp">#include "fila.hpp"
+#include &lt;iostream&gt;
+#include &lt;thread&gt;
+
+int main() {
+    Fila fila;
+    std::thread consumidor([&amp;] {
+        while (auto valor = fila.receber()) {
+            std::cout &lt;&lt; *valor &lt;&lt; '\n';
+        }
+    });
+    try {
+        for (int valor = 1; valor &lt;= 3; ++valor) fila.enviar(valor);
+    } catch (...) {
+        fila.fechar();
+        consumidor.join();
+        throw;
+    }
+    fila.fechar();
+    consumidor.join();
+}
+</code></pre>
+<p>Em um ambiente com GCC e suporte a C++17, salve os arquivos no mesmo diretório e compile a partir dele:</p>
+<pre><code class="language-bash">g++ -std=c++17 -Wall -Wextra -Werror -pedantic -pthread main.cpp -o fila
+./fila
+g++ -std=c++17 -Wall -Wextra -Werror -pedantic -pthread test.cpp -o teste
+./teste</code></pre>
+<p>A saída do programa é <code>1</code>, <code>2</code> e <code>3</code>, uma linha por valor. O arquivo <a href="/exemplos/fila-cpp/test.cpp">test.cpp</a> verifica ordem FIFO, drenagem após fechar, rejeição de novos envios, fim de consumidores e entrega de 10.000 inteiros sem perda ou duplicação usando dois consumidores. O job <code>cpp-example</code> compila o programa e repete os testes no CI. Isso verifica comportamento funcional nos cenários executados, não todas as possíveis intercalações de threads.</p>
+</div>
+<h2>Por que o exemplo não comprova baixa latência</h2>
+<p class="limites-editoriais">Não há benchmark de latência ou garantia de tempo real. A fila não limita memória, não oferece cancelamento nem controle de pressão e deve existir até todos os usuários terminarem. Não há promessa de justiça entre consumidores. A referência anterior era uma vaga de emprego sem URL recuperável; ela não sustentava uma experiência pessoal ou resultados de desempenho. A revisão substitui essa narrativa por um exemplo funcional limitado, sem atribuir testes profissionais a Anderson Damasio.</p>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo. Data da fonte registrada: 08/05/2025.</p>
+<p><strong>Fonte principal:</strong> <a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines" rel="noopener noreferrer">C++ Core Guidelines</a></p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
+<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines" target="_blank" rel="noopener noreferrer">C++ Core Guidelines</a>.</p>
+</section>
+
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

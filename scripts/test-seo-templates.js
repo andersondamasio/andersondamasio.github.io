@@ -200,7 +200,8 @@ test("exemplo executavel de Reservoir Sampling corresponde ao codigo publicado",
 [
   ["correcoes-fontes-primarias-2026-10.json", 5],
   ["correcoes-piloto-agentes-2026-10.json", 7],
-  ["correcoes-contextuais-01-2026-10.json", 4]
+  ["correcoes-contextuais-01-2026-10.json", 4],
+  ["correcoes-contextuais-02-2026-10.json", 6]
 ].forEach(([arquivo, quantidade]) => test(`correcoes preservam rastreabilidade sem aprovacao humana: ${arquivo}`, () => {
   const root = path.join(__dirname, "..");
   const cadastro = JSON.parse(fs.readFileSync(path.join(root, "titulos.json"), "utf8"));

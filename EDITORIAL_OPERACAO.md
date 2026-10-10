@@ -203,6 +203,12 @@ Referencias: [Article no Google](https://developers.google.com/search/docs/appea
 
 ## Exemplos tecnicos reproduziveis
 
+O lote `dados/editorial/correcoes-contextuais-02-2026-10.json` corrige seis textos existentes: escalabilidade, arquitetura descentralizada, LocalStack, conversas estrategicas, design tokens e fila C++. Preserva URLs e datas originais e registra fontes/trechos/hashes, sem criar aprovacao humana. As referencias posteriores de LocalStack e DTCG aparecem como atualizacoes datadas. A retirada dos limites por creditos de CI e atribuida ao comunicado posterior do fornecedor, sem confundir gratuidade nao comercial com gratuidade geral.
+
+`exemplos/design-tokens/` contem um conversor JSON para CSS e testes com Node 20+. O formato e local e deliberadamente limitado, nao uma implementacao DTCG. `npm run test:examples` verifica esse contrato e compara os blocos publicados com os arquivos executaveis. Alterar o codigo exige reconferir e atualizar explicitamente o artigo, o relatorio da correcao e o manifesto; nao atualizar hashes automaticamente para aceitar texto divergente.
+
+`exemplos/fila-cpp/` contem fila de inteiros com fechamento explicito, programa finito e testes de ordem, drenagem, rejeicao de envios apos fechar e entrega concorrente. O job `cpp-example` compila com GCC/C++17, warnings como erros, confere a saida do programa e executa 20 rodadas sob timeout. Os testes funcionais nao medem latencia, nao provam ausencia de todas as corridas e nao tornam a fila adequada a tempo real ou producao. A fila nao possui limite de memoria, cancelamento ou garantia de justica entre consumidores. Nao e necessario instalar compilador global no Windows para validar o restante do site; registrar separadamente o resultado real do CI C++.
+
 `exemplos/reservoir-sampling/` acompanha a correcao do guia existente, mantendo sua URL. O projeto .NET 10 inclui implementacao, contrato e 13 verificacoes executaveis, sem pacotes externos. O CI compila e executa os testes; a suite de templates compara o codigo do HTML com o arquivo C#, evitando que um trecho divergente seja publicado. Rodar a partir do diretorio do exemplo para respeitar `global.json`.
 
 O resultado representa testes automatizados em ambiente isolado, nao vivencia profissional do autor, revisao humana ou benchmark de desempenho. A atualizacao posterior ao piloto esta em `dados/editorial/correcao-reservoir-2026-10.json`; o primeiro registro de curadoria permanece como historico, sem sobrescrever os hashes do que foi revisado naquela etapa.

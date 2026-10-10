@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>LocalStack: O Fim de uma Era ou Apenas uma Nova Fase?</title>
-<meta name="description" content="A recente mudança na LocalStack, que decidiu descontinuar a sua Community Edition, trouxe à tona uma série de discussões entre os desenvolvedores. Para quem...">
+<title>LocalStack em 2026: autenticação, CI e revisão da migração</title>
+<meta name="description" content="As alterações posteriores ao anúncio do LocalStack, incluindo a retirada dos limites por créditos de CI, e um roteiro proposto para conferir a migração.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/devops/localstack-o-fim-de-uma-era-ou-apenas-uma-nova-fase.html">
@@ -14,36 +14,36 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LocalStack: O Fim de uma Era ou Apenas uma Nova Fase?">
-<meta property="og:description" content="A recente mudança na LocalStack, que decidiu descontinuar a sua Community Edition, trouxe à tona uma série de discussões entre os desenvolvedores. Para quem...">
+<meta property="og:title" content="LocalStack em 2026: autenticação, CI e revisão da migração">
+<meta property="og:description" content="As alterações posteriores ao anúncio do LocalStack, incluindo a retirada dos limites por créditos de CI, e um roteiro proposto para conferir a migração.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/devops/localstack-o-fim-de-uma-era-ou-apenas-uma-nova-fase.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-02-15T07:41:59.674Z">
-<meta property="article:modified_time" content="2026-02-15T07:41:59.674Z">
+<meta property="article:modified_time" content="2026-10-10T03:43:59.634Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="LocalStack: O Fim de uma Era ou Apenas uma Nova Fase?">
-<meta name="twitter:description" content="A recente mudança na LocalStack, que decidiu descontinuar a sua Community Edition, trouxe à tona uma série de discussões entre os desenvolvedores. Para quem...">
+<meta name="twitter:title" content="LocalStack em 2026: autenticação, CI e revisão da migração">
+<meta name="twitter:description" content="As alterações posteriores ao anúncio do LocalStack, incluindo a retirada dos limites por créditos de CI, e um roteiro proposto para conferir a migração.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "LocalStack: O Fim de uma Era ou Apenas uma Nova Fase?",
-  "description": "A recente mudança na LocalStack, que decidiu descontinuar a sua Community Edition, trouxe à tona uma série de discussões entre os desenvolvedores. Para quem...",
+  "headline": "LocalStack em 2026: autenticação, CI e revisão da migração",
+  "description": "As alterações posteriores ao anúncio do LocalStack, incluindo a retirada dos limites por créditos de CI, e um roteiro proposto para conferir a migração.",
   "url": "https://www.andersondamasio.com.br/artigos/devops/localstack-o-fim-de-uma-era-ou-apenas-uma-nova-fase.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/devops/localstack-o-fim-de-uma-era-ou-apenas-uma-nova-fase.html"
   },
   "datePublished": "2026-02-15T07:41:59.674Z",
-  "dateModified": "2026-02-15T07:41:59.674Z",
+  "dateModified": "2026-10-10T03:43:59.634Z",
   "articleSection": "DevOps",
   "inLanguage": "pt-BR",
-  "wordCount": 547,
+  "wordCount": 504,
   "about": {
     "@type": "Thing",
     "name": "DevOps"
@@ -52,10 +52,10 @@
   "copyrightYear": 2026,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "LocalStack for AWS Drops Community Edition Raising Developer Concerns",
-    "url": "https://www.infoq.com/news/2026/02/localstack-aws-community/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "name": "Important Updates to Pricing & Packaging for LocalStack for AWS",
+    "url": "https://blog.localstack.cloud/2026-upcoming-pricing-changes/"
   },
-  "citation": "https://www.infoq.com/news/2026/02/localstack-aws-community/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "citation": "https://blog.localstack.cloud/2026-upcoming-pricing-changes/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -114,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "LocalStack: O Fim de uma Era ou Apenas uma Nova Fase?",
+      "name": "LocalStack em 2026: autenticação, CI e revisão da migração",
       "item": "https://www.andersondamasio.com.br/artigos/devops/localstack-o-fim-de-uma-era-ou-apenas-uma-nova-fase.html"
     }
   ]
@@ -189,6 +189,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 .article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
 .article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
 .article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-body code { overflow-wrap: anywhere; } .article-body pre code { overflow-wrap: normal; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -215,40 +216,41 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>LocalStack: O Fim de uma Era ou Apenas uma Nova Fase?</h1>
+<h1>LocalStack em 2026: autenticação, CI e revisão da migração</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 
 <p class="article-meta">Publicado em: 15/02/2026 04:41</p>
 
-<div class="article-body"><p>A recente mudança na LocalStack, que decidiu descontinuar a sua Community Edition, trouxe à tona uma série de discussões entre os desenvolvedores. Para quem não tá por dentro, a LocalStack é uma ferramenta que simula serviços da AWS, permitindo que a galera desenvolva e teste aplicações localmente, sem a necessidade de conexão com a nuvem da Amazon. Essa mudança pode parecer um pequeno detalhe, mas, como arquiteto de software e alguém que já navegou por diversas ferramentas em minha carreira, eu vejo isso como um ponto crucial que pode afetar muitos projetos e equipes.</p>
-<h2>As Novas Diretrizes da LocalStack</h2>
-<p>A LocalStack agora vai operar com uma única imagem que requer registro, deixando de lado a versão open-source que muitos desenvolvedores conheciam e amavam. A nova estratégia, segundo os co-fundadores Waldemar Hummer e Gerta Sheganaku, é uma tentativa de alinhar a operação da ferramenta com as demandas crescentes em termos de segurança e complezidade operaciona. Eles afirmam que, para manter a alta fidelidade da emulação da AWS, é necessário um modelo de distribuição que permita um maior engajamento com os usuários.</p>
-<h3>O Impacto nas Equipes de Desenvolvimento</h3>
-<p>Para muitos, a descontinuação da Community Edition pode ser um balde de água fria. Isso significa que equipes que dependem da versão gratuita terão que se adaptar rapidamente. O que me preocupa, e que eu gostaria de dividir com vocês, é como essa mudança pode impactar o fluxo de trabalho de diversas equipes. Quem já utilizava a versão antiga precisa repensar suas integrações e workflows.</p>
-<p>Além disso, a nova distribuição também introduz um sistema de créditos para uso em CI, o que não agradou muito a comunidade. Para quem trabalha com integração contínua, isso pode ser um desafio e tanto, especialmente pra quem faz uso intensivo da ferramenta.</p>
-<h2>Dicas Avançadas para Contornar a Situação</h2>
-<p>Se você faz parte da comunidade que se beneficiava da Community Edition, aqui vão algumas dicas:</p>
-<ul>
-    <li><strong>Explore Alternativas:</strong> Considere ferramentas como o Moto ou o Vera AWS. Elas oferecem funcionalidades similares e podem ser uma boa saída temporária.</li>
-    <li><strong>Automatize seus Workflows:</strong> Se você ainda não está usando automação, agora pode ser um ótimo momento para implementar. Ferramentas de CI/CD podem ajudar a minimizar os impactos dessa mudança.</li>
-    <li><strong>Participe da Comunidade:</strong> Mantenha-se ativo em fóruns e discussões, como as do Reddit. Trocar ideias e experiências pode abrir novas possibilidades e soluções.</li>
-    <li><strong>Fique de Olho nas Atualizações:</strong> A LocalStack prometeu que revisará o sistema de créditos. Estar informado sobre as novidades pode ajudar na hora de decidir o que fazer com a ferramenta.</li>
-</ul>
-<h2>Reflexões Finais</h2>
-<p>Eu entendo o lado da LocalStack em querer evoluir e se adaptar, mas a verdade é que essa mudança deixa um gosto amargo na boca de muitos desenvolvedores. A comunidade foi fundamental para o sucesso da ferramenta, e ver essa transição de um modelo open-source para um que exige registro e pagamento é, no mínimo, preocupante. O que resta é se adaptar e buscar alternativas, enquanto esperamos que a LocalStack ouça a sua base de usuários e encontre um equilíbrio que beneficie a todos.</p>
-<p>Em um mundo tão dinâmico como o da tecnologia, é importante lembrar que mudanças são inevitáveis, mas isso não significa que devemos aceitá-las sem questionar. Vamos continuar a debater e a buscar o melhor para nossas práticas de desenvolvimento.</p>
-<p><strong>
-<p></p></div>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T03:43:59.634Z">10/10/2026</time>: fontes e exemplos revistos; a data da publicação original foi preservada.</p>
+<p>O anúncio de mudanças no LocalStack exige revisar tanto a licença aplicável quanto a inicialização dos testes. Também exige distinguir o anúncio inicial das alterações posteriores: a informação sobre créditos limitados de CI não deve ser apresentada como a regra vigente.</p>
+<h2>O que mudou após a publicação original</h2>
+<p class="fato-localstack">O <a href="https://blog.localstack.cloud/2026-upcoming-pricing-changes/">comunicado de preços e empacotamento do LocalStack</a>, publicado em 27/02/2026 e atualizado em 24/07/2026, informa o fim do suporte à Community Edition em 23/03/2026, a imagem unificada com conta e token de autenticação e a permanência de uma opção gratuita para uso não comercial. O comunicado também retira os limites por créditos de CI, sujeitos às condições de uso justo. Essas informações são posteriores à publicação original deste artigo, em 15/02/2026. Não significam que todo uso passou a exigir pagamento, nem que qualquer uso comercial pode adotar o plano gratuito.</p>
+<p class="fato-token">A <a href="https://docs.localstack.cloud/aws/getting-started/auth-token/">documentação de autenticação</a> distingue tokens de desenvolvedor e de CI. Para pipelines, recomenda um token de CI guardado no gerenciador de segredos. O token é fornecido por <code>LOCALSTACK_AUTH_TOKEN</code>; não deve ser incluído no repositório ou nos logs. Falhas na ativação podem encerrar o contêiner antes de os testes começarem.</p>
+<h2>Roteiro proposto para conferir uma migração</h2>
+<div class="contribuicao-editorial">
+<ol>
+<li><strong>Inventariar o que existe:</strong> registre a referência exata da imagem, os serviços simulados, as operações de API utilizadas e o tempo de inicialização atual. Não infira cobertura apenas pelo nome do serviço.</li>
+<li><strong>Confirmar o uso contratado:</strong> confira com o responsável pela conta qual plano atende ao ambiente local e ao CI. Registre a referência e a data dessa conferência; não incorpore suposições sobre gratuidade ao script de build.</li>
+<li><strong>Preparar autenticação isoladamente:</strong> armazene o token como segredo e limite quais jobs podem recebê-lo. A execução de código não confiável de uma contribuição externa não deve ganhar acesso ao segredo só para manter o teste verde.</li>
+<li><strong>Separar prontidão de sucesso:</strong> diferencie falha de download, ativação, inicialização do serviço e asserção do teste. Um job que não executou as asserções não conta como teste aprovado.</li>
+<li><strong>Repetir operações necessárias:</strong> para cada operação usada pela aplicação, execute criação, leitura, comportamento de erro e limpeza dos recursos de teste. Compare os resultados com a versão anterior usando o mesmo conjunto de dados.</li>
+<li><strong>Registrar a decisão:</strong> documente divergências, limitações aceitas e como restaurar a configuração anterior. Fixar uma imagem antiga pode reproduzir um ambiente, mas não cria manutenção ou correções de segurança para ela.</li>
+</ol>
+<p>A evidência útil é uma lista de operações realmente exercitadas e seus resultados, não apenas a indicação “LocalStack iniciado”. Se outra ferramenta for avaliada, repita essa lista antes de tratá-la como substituta equivalente.</p>
+</div>
+<h2>Limites da atualização</h2>
+<p class="limites-editoriais">Nenhum contêiner, credencial, serviço AWS ou plano comercial foi testado para este artigo. O roteiro é proposto e não comprova equivalência integral com a AWS. As condições comerciais podem mudar; consulte os documentos do fornecedor antes da adoção. Foram retiradas opiniões pessoais não verificadas atribuídas ao responsável pelo site.</p>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/news/2026/02/localstack-aws-community/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener noreferrer">LocalStack for AWS Drops Community Edition Raising Developer Concerns</a> Data da fonte registrada: 15/02/2026.</p>
+<p><strong>Fonte principal:</strong> <a href="https://blog.localstack.cloud/2026-upcoming-pricing-changes/" rel="noopener noreferrer">Important Updates to Pricing &amp; Packaging for LocalStack for AWS</a> Data da fonte registrada: 27/02/2026.</p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/news/2026/02/localstack-aws-community/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">LocalStack for AWS Drops Community Edition Raising Developer Concerns</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://blog.localstack.cloud/2026-upcoming-pricing-changes/" target="_blank" rel="noopener noreferrer">Important Updates to Pricing &amp; Packaging for LocalStack for AWS</a>.</p>
 </section>
 
 
