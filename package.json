@@ -18,7 +18,7 @@
     "test:humanizer": "node scripts/test-humanizer-editorial.js",
     "test:editorial": "node --test scripts/test-editorial-policy.js scripts/test-editorial-review.js scripts/test-editorial-transaction.js scripts/test-editorial-preview.js scripts/test-editorial-queue.js",
     "test:seo:templates": "node --test scripts/test-seo-templates.js scripts/test-seo-article-metadata.js",
-    "test:seo:navigation": "node --test scripts/test-seo-archive.js scripts/test-seo-navigation-integration.js",
+    "test:seo:navigation": "node --test scripts/test-seo-archive.js scripts/test-seo-navigation-integration.js scripts/test-seo-selected-readings.js",
     "seo:navigation": "node scripts/seo-navigation.js --strict",
     "article:review": "node scripts/editorial-cli.js",
     "article:preview": "node scripts/editorial-preview.js",

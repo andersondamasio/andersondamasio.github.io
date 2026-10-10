@@ -25,7 +25,7 @@
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 
-<meta property="og:updated_time" content="2026-10-05T20:38:26.475Z">
+<meta property="og:updated_time" content="2026-10-10T02:26:34.000Z">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Anderson Damasio - Arquiteto de Software e Desenvolvedor">
 <meta name="twitter:description" content="Anderson Damasio, arquiteto de software com atuação em desenvolvimento de sistemas desde 2005. Perfil, contato e artigos sobre arquitetura e tecnologia.">
@@ -205,6 +205,19 @@ main p, main li { line-height: 1.65; overflow-wrap: anywhere; }
 body.dark-theme .profile-role { color: #79d7c5; }
 @media (max-width: 540px) { main { padding: 1rem; } .profile-intro h1 { font-size: 1.9rem; } }
 
+
+.selected-readings > ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; list-style: none; padding: 0; margin: 0; }
+.selected-readings h3, .reading-list h3 { font-size: 1.1rem; line-height: 1.4; margin: 0 0 .5rem; }
+.selected-readings p { margin: 0; }
+.selected-readings a, .reading-list a { overflow-wrap: anywhere; }
+.reading-topics { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; padding: 1rem 0; }
+.reading-group { scroll-margin-top: 8rem; }
+.reading-list { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+.reading-list li { padding: 1rem 0; border-top: 1px solid #b9c6ce; }
+.reading-list p { margin: .5rem 0 0; }
+.reading-list .reading-kind { color: var(--footer, #56636b); font-size: .85rem; margin: 0 0 .35rem; }
+@media (max-width: 640px) { .selected-readings > ul { grid-template-columns: 1fr; gap: 1rem; } }
+
 </style>
 
 </head>
@@ -233,6 +246,12 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <p class="profile-role">Arquiteto de Software</p>
 <p>Atuo com desenvolvimento de sistemas desde 2005. Este &eacute; meu site pessoal, com perfil profissional e artigos sobre arquitetura de software e tecnologia.</p>
 <nav class="profile-links" aria-label="Perfil e contato"><a href="/sobre.html">Sobre Anderson Damasio</a><a href="https://www.linkedin.com/in/andersondamasio/" rel="me noopener noreferrer">LinkedIn</a><a href="/contato.html">Contato</a></nav>
+</section>
+<section class="selected-readings" aria-labelledby="selected-readings-title">
+<h2 id="selected-readings-title"><a href="/guias.html">Guias e exemplos técnicos</a></h2>
+<ul><li><h3><a href="/guias.html#decisoes-de-arquitetura">Decisões de arquitetura</a></h3><p>Qual alternativa atende ao requisito que precisa ser preservado?</p></li>
+<li><h3><a href="/guias.html#codigo-e-contratos">Código e contratos</a></h3><p>O código preserva o comportamento esperado nos casos de limite?</p></li>
+<li><h3><a href="/guias.html#avaliacao-de-agentes">Avaliação de agentes de IA</a></h3><p>O estado final corresponde à tarefa e à autorização recebidas?</p></li></ul>
 </section>
 <section aria-labelledby="articles-title">
 <h2 id="articles-title">Artigos recentes</h2>

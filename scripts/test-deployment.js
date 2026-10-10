@@ -28,6 +28,24 @@ test("publicacao deve corresponder a revisao e as superficies de descoberta", as
   assert.equal(resultado.revisaoEsperada, "a".repeat(40));
 });
 
+test("deploy confere colecao selecionada e artigos antigos sem exigi-los no RSS", async () => {
+  const antigo = 'artigos/arquitetura/antigo.html';
+  const extras = {
+    'index.html': html('/', `<a href="/${artigo}">Recente</a><a href="/guias.html">Guias</a>`),
+    'guias.html': html('/guias.html', `<ul class="reading-list"><li><a href="/${antigo}">Antigo</a></li></ul>`),
+    [antigo]: html(`/${antigo}`, 'Conteudo selecionado'),
+    'sitemap.xml': `<urlset>${[artigo, antigo, 'guias.html'].map(p => `<url><loc>${baseUrl}/${p}</loc></url>`).join('')}</urlset>`
+  };
+  const esperado = prepararVerificacao({ ler: f => extras[f] || arquivos[f], revisao: 'f'.repeat(40) });
+  assert.deepEqual(esperado.arquivosLeituras, ['guias.html', antigo]);
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(extras), tentativas: 1 })).aceita, true);
+  for (const alteracoes of [{ 'guias.html': null }, { [antigo]: null }, { [antigo]: html(`/${antigo}`, 'Antigo desatualizado') },
+    { 'sitemap.xml': arquivos['sitemap.xml'] }]) {
+    assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...extras, ...alteracoes }), tentativas: 1 })).aceita, false);
+  }
+  assert.throws(() => prepararVerificacao({ ler: f => f === 'guias.html' ? html('/guias.html') : extras[f] || arquivos[f], revisao: 'f'.repeat(40) }), /sem destinos validos/);
+});
+
 test("documentos do repositorio nao podem virar paginas ou downloads publicos", async () => {
   const esperado = prepararVerificacao({ ler: f => f === "_config.yml" ? "exclude: ['*.md', '**/*.md']" : arquivos[f], revisao: "c".repeat(40) });
   assert.equal(esperado.ausentes.length, 8);
