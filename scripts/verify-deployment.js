@@ -47,7 +47,7 @@ function prepararVerificacao({ ler, lerBinario, revisao }) {
   const arquivos = ["index.html", "sobre.html", "sitemap.xml", "rss.xml", "robots.txt", "ads.txt", ...recentes, ...arquivosNavegacao, ...arquivosLeituras];
   let controlaDocumentos = false;
   try { controlaDocumentos = Boolean(ler("_config.yml")); } catch { /* Older revisions predate the Pages publication policy. */ }
-  const ausentes = controlaDocumentos ? ["EDITORIAL_OPERACAO", "SEO_MELHORIAS_REALIZADAS", "dados/humanizer-rules", "exemplos/reservoir-sampling/README"]
+  const ausentes = controlaDocumentos ? ["EDITORIAL_OPERACAO", "SEO_MELHORIAS_REALIZADAS", "dados/humanizer-rules", "exemplos/reservoir-sampling/README", "exemplos/design-tokens/README", "exemplos/fila-cpp/README"]
     .flatMap(nome => [`${nome}.md`, `${nome}.html`]) : [];
   let manifestoTexto;
   try { manifestoTexto = ler("dados/indexacao.json"); } catch { /* Revisions before the indexation manifest are still verifiable. */ }
