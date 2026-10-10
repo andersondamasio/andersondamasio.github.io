@@ -1,0 +1,169 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T08:53:53.149Z",
+  "base": "3f0d0ed9b7dc2ed7fbdc48263a41f39a3e0700b9",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "experimentosExecutados": false,
+  "escopo": "Quatro correcoes de atribuicao e escopo factual nas URLs existentes. Fontes primarias conferidas; propostas e exemplos nao executados. Sem retirada, consolidacao, novo noindex, chamada paga ou aprovacao de rascunho.",
+  "resolvePendenciaDe": ".editorial/revisao/fontes-atribuicoes-pendentes-2026-10-10.json",
+  "artigos": [
+    {
+      "url": "artigos/inteligencia-artificial/o-futuro-do-desenvolvimento-entre-a-agilidade-e-a-ia.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "O futuro do desenvolvimento: entre a agilidade e a IA",
+        "data": "2026-02-18T15:55:38.428Z",
+        "corpoHash": "59be79aaa454d408a343543bbb2ec0ddde169b0919c4ea967aad905b961f5edd",
+        "fonte": {
+          "url": "https://martinfowler.com/fragments/2026-02-18.html",
+          "titulo": "Fragments: February 18",
+          "data": "2026-02-18T15:53:00.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "IA no desenvolvimento: como revisar uma alteração antes de aceitá-la",
+        "descricao": "Uma leitura das notas de Martin Fowler e uma ficha proposta de revisão: requisitos, riscos e evidências, sem transformar TDD em garantia.",
+        "corpoHash": "83acc670418a43d101682f42663225d902d635c52d522202154bf0e17af8bf78"
+      },
+      "motivo": "Remover participacao pessoal nao confirmada em retiro e garantias de TDD; atribuir discussoes e limites a Fowler.",
+      "evidencia": "Leitura integral e fonte primaria: Fowler relata o encontro, vincula ideias coletivas e alerta sobre vies de confirmacao no relato de TDD. Numeros do estudo de saude do codigo nao foram reproduzidos sem leitura da metodologia.",
+      "evidencias": [
+        {
+          "seletor": ".fato-retiro",
+          "fonte": "https://martinfowler.com/fragments/2026-02-18.html",
+          "consultadoEm": "2026-10-10T08:53:53.149Z",
+          "textoHash": "5bc30b83689c6b3e4dfb762d5de00cb7feacc9d2966dbdafea716d2dd0f5ad52"
+        },
+        {
+          "seletor": ".fato-tdd",
+          "fonte": "https://martinfowler.com/fragments/2026-02-18.html",
+          "consultadoEm": "2026-10-10T08:53:53.149Z",
+          "textoHash": "8be810485f5ae739889beed011f4e7724f4eb5ee76b1d1ce394fa9fb12393a2d"
+        }
+      ],
+      "pergunta": "Qual evidencia permite aceitar uma alteracao produzida com assistencia de IA?",
+      "sobreposicao": "Uma entrada da fonte no cadastro. Comparados os guias DORA e generalistas: este recorte e a decisao sobre uma mudanca, os outros tratam fluxo de entrega e divisao de responsabilidades; links complementares, sem consolidacao por mera afinidade tematica.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/transformando-o-atendimento-como-a-ai-esta-mudando-o-jogo-na-industria-de-servicos.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Transformando o Atendimento: Como a AI Está Mudando o Jogo na Indústria de Serviços",
+        "data": "2026-02-13T22:37:03.991Z",
+        "corpoHash": "b9f941e4e60e2a5bc8733968cefc64626a6014dad7808e204c273a9cb5c4f36e",
+        "fonte": {
+          "url": "https://techcrunch.com/2026/02/13/airbnb-says-a-third-of-its-customer-support-is-now-handled-by-ai-in-the-u-s-and-canada/",
+          "titulo": "Airbnb says a third of its customer support is now handled by AI in the US and Canada",
+          "data": "2026-02-13T22:12:26.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "Atendimento com IA: o que a taxa anunciada pelo Airbnb mede",
+        "descricao": "O denominador do anúncio do Airbnb de fevereiro de 2026 e um roteiro proposto para avaliar resolução, reabertura e transferência para atendentes.",
+        "corpoHash": "164e862e8e886b0a2f566b768fde4b08b7a9da80bcf8c96a3065fb2335920eef"
+      },
+      "motivo": "Corrigir denominador, geografia e tempo da taxa; remover vivencia e arquitetura interna sem evidencia.",
+      "evidencia": "Carta pagina 4: usuarios que enviam mensagens ao assistente, idiomas ingles/frances/espanhol, EUA/Canada/Mexico. Comunicado oficial fixa emissao em 12/02/2026. A expressao so far this year nao permite tratar a taxa como medida integral de Q4 ou de todo o suporte. Resultado autodeclarado, nao auditado.",
+      "evidencias": [
+        {
+          "seletor": ".fato-data",
+          "fonte": "https://news.airbnb.com/airbnb-q4-2025-financial-results",
+          "consultadoEm": "2026-10-10T08:53:53.149Z",
+          "textoHash": "4c2f74a074a5fa2ce1c942488ed96813e806d29ef9b823a93b45e978313e90a6"
+        },
+        {
+          "seletor": ".fato-denominador",
+          "fonte": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526048670/d58192dex991.htm",
+          "consultadoEm": "2026-10-10T08:53:53.149Z",
+          "textoHash": "c16f22195bcaa0fd9f61ac4011e424ce54505d0f7cb2f58d52604268a603ed5c"
+        }
+      ],
+      "pergunta": "Como interpretar e acompanhar resolucao automatica sem esconder reabertura e transferencia?",
+      "sobreposicao": "Uma entrada da fonte original no cadastro. O recorte e uma taxa historica de atendimento e sua interpretacao, nao uma recomendacao generica de stack ou de produto. Busca de titulos afins nao demonstra ausencia de toda sobreposicao no acervo.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-receita-do-sucesso-em-projetos-de-ia-5-passos-para-nao-errar.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A receita do sucesso em projetos de IA: 5 passos para não errar",
+        "data": "2025-12-12T08:32:30.745Z",
+        "corpoHash": "7890686fc6ebf61c0cf5b36dee9ea5547a316a6387a8e2e8f8946fffa0c55c0c",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/ai-project-success-data-foundation-storytelling-artificial-intelligence/",
+          "titulo": "This company's AI success was built on 5 essential steps - see how they work for you",
+          "data": "2025-12-12T02:00:40.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "Dados para projetos de IA: o que conferir antes de um piloto",
+        "descricao": "Uma iniciativa do TPR como contexto para conferir origem, significado, atualização e acesso aos dados, com um exemplo hipotético de atendimento.",
+        "corpoHash": "0d2a406d73c550362db81b2e07571d9619c6a0cdc5fcc784d4deeeaf7b424eca"
+      },
+      "motivo": "Retirar experiencias de empresa e grupo de trabalho nao confirmadas, recomendacao de produto e promessa de cinco passos sem erro.",
+      "evidencia": "Relato primario de Paul Neville descreve grupo, objetivos e proximas pesquisas, nao ROI verificado ou participacao de Anderson. Exemplo de prazo em chamado e proposta hipotetica, sem recomendacao previdenciaria ou financeira.",
+      "evidencias": [
+        {
+          "seletor": ".fato-grupo",
+          "fonte": "https://www.thepensionsregulator.gov.uk/media-hub/blogs/2025-blogs/shaping-the-future-how-we-are-driving-digital-transformation-with-the-pensions-industry",
+          "consultadoEm": "2026-10-10T08:53:53.149Z",
+          "textoHash": "a8262ad803f744ec2e1efb07bb0d261cd74d0588219ffd8e0c228e8e6be2f02f"
+        },
+        {
+          "seletor": ".fato-objetivos",
+          "fonte": "https://www.thepensionsregulator.gov.uk/media-hub/blogs/2025-blogs/shaping-the-future-how-we-are-driving-digital-transformation-with-the-pensions-industry",
+          "consultadoEm": "2026-10-10T08:53:53.149Z",
+          "textoHash": "20fb6f8aecde50fdcb4d907d7acefca6b98aa42604bf8c59f18503e1db3ae10d"
+        }
+      ],
+      "pergunta": "Quais dependencias do dado precisam ser resolvidas antes de automatizar uma resposta?",
+      "sobreposicao": "Uma entrada da fonte original no cadastro. Recorte explicito de prontidao do dado para resposta, distinto de aquisicoes de empresas de dados, escolha de banco e medicao de produtividade.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/tecnologia/construindo-equipes-no-novo-mundo-a-transformacao-da-cultura-de-engenharia-de-software.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Construindo Equipes no Novo Mundo: A Transformação da Cultura de Engenharia de Software",
+        "data": "2025-08-04T04:58:13.137Z",
+        "corpoHash": "9fe613572c051fa8ed1b8dfba932bf0ce112be5da72b0b16edac90d32c1940d8",
+        "fonte": {
+          "url": "https://www.infoq.com/podcasts/transforming-software-engineering-culture-leadership/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Podcast: Team Building in the Brave New World: Transforming Software Engineering Culture and Leadership",
+          "data": "2025-08-01T09:00:00.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "Adoção de IA na equipe: como acompanhar o esforço de aprendizagem",
+        "descricao": "A perspectiva de Duncan Grazier e um roteiro proposto para separar aprendizagem, revisão e dúvidas de requisito, sem prever ganhos de carreira.",
+        "corpoHash": "d659e91b9fa2a185486088c98eb604788a77432ed7b2cdb21eea60b7891514e2"
+      },
+      "motivo": "Atribuir percepcoes e previsoes ao entrevistado, sem tratar fala sobre carga cognitiva como resultado universal.",
+      "evidencia": "Leitura integral: minha carreira aparece em pergunta hipotetica, falso positivo para vivencia. Transcricao 03:10 e 11:32 atribui recorte incremental e expectativas a Grazier. Descartar esse sinal nao valida outras generalizacoes do artigo.",
+      "evidencias": [
+        {
+          "seletor": ".fato-entrevista",
+          "fonte": "https://www.infoq.com/podcasts/transforming-software-engineering-culture-leadership/",
+          "consultadoEm": "2026-10-10T08:53:53.149Z",
+          "textoHash": "112d28393509142d482646593a02d222215b5ce7b5959ef46b376adb60e914f6"
+        },
+        {
+          "seletor": ".fato-carga",
+          "fonte": "https://www.infoq.com/podcasts/transforming-software-engineering-culture-leadership/",
+          "consultadoEm": "2026-10-10T08:53:53.149Z",
+          "textoHash": "425b2e4caaebf4da60cda9e8b3f825ef8e8c624326a1d6225a71e774765743f4"
+        }
+      ],
+      "pergunta": "Onde a equipe esta gastando esforco ao aprender a trabalhar com IA?",
+      "sobreposicao": "Uma entrada da fonte, ignorados parametros de rastreamento. Comparado DORA: este artigo trata da experiencia de aprendizagem, nao de medir o tempo total de entrega; leitura complementar vinculada.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    }
+  ]
+}

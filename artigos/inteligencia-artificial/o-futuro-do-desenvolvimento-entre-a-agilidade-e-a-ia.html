@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>O futuro do desenvolvimento: entre a agilidade e a IA</title>
-<meta name="description" content="Nos últimos tempos, temos visto uma mudança significativa na forma como o desenvolmento de software é conduzido. A integração da Inteligência Artificial...">
+<title>IA no desenvolvimento: como revisar uma alteração antes de aceitá-la</title>
+<meta name="description" content="Uma leitura das notas de Martin Fowler e uma ficha proposta de revisão: requisitos, riscos e evidências, sem transformar TDD em garantia.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/inteligencia-artificial/o-futuro-do-desenvolvimento-entre-a-agilidade-e-a-ia.html">
@@ -14,36 +14,36 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="O futuro do desenvolvimento: entre a agilidade e a IA">
-<meta property="og:description" content="Nos últimos tempos, temos visto uma mudança significativa na forma como o desenvolmento de software é conduzido. A integração da Inteligência Artificial...">
+<meta property="og:title" content="IA no desenvolvimento: como revisar uma alteração antes de aceitá-la">
+<meta property="og:description" content="Uma leitura das notas de Martin Fowler e uma ficha proposta de revisão: requisitos, riscos e evidências, sem transformar TDD em garantia.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/inteligencia-artificial/o-futuro-do-desenvolvimento-entre-a-agilidade-e-a-ia.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-02-18T15:55:38.428Z">
-<meta property="article:modified_time" content="2026-02-18T15:55:38.428Z">
+<meta property="article:modified_time" content="2026-10-10T08:53:53.149Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="O futuro do desenvolvimento: entre a agilidade e a IA">
-<meta name="twitter:description" content="Nos últimos tempos, temos visto uma mudança significativa na forma como o desenvolmento de software é conduzido. A integração da Inteligência Artificial...">
+<meta name="twitter:title" content="IA no desenvolvimento: como revisar uma alteração antes de aceitá-la">
+<meta name="twitter:description" content="Uma leitura das notas de Martin Fowler e uma ficha proposta de revisão: requisitos, riscos e evidências, sem transformar TDD em garantia.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "O futuro do desenvolvimento: entre a agilidade e a IA",
-  "description": "Nos últimos tempos, temos visto uma mudança significativa na forma como o desenvolmento de software é conduzido. A integração da Inteligência Artificial...",
+  "headline": "IA no desenvolvimento: como revisar uma alteração antes de aceitá-la",
+  "description": "Uma leitura das notas de Martin Fowler e uma ficha proposta de revisão: requisitos, riscos e evidências, sem transformar TDD em garantia.",
   "url": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/o-futuro-do-desenvolvimento-entre-a-agilidade-e-a-ia.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/o-futuro-do-desenvolvimento-entre-a-agilidade-e-a-ia.html"
   },
   "datePublished": "2026-02-18T15:55:38.428Z",
-  "dateModified": "2026-02-18T15:55:38.428Z",
+  "dateModified": "2026-10-10T08:53:53.149Z",
   "articleSection": "Inteligência Artificial",
   "inLanguage": "pt-BR",
-  "wordCount": 553,
+  "wordCount": 580,
   "about": {
     "@type": "Thing",
     "name": "Inteligência Artificial"
@@ -114,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "O futuro do desenvolvimento: entre a agilidade e a IA",
+      "name": "IA no desenvolvimento: como revisar uma alteração antes de aceitá-la",
       "item": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/o-futuro-do-desenvolvimento-entre-a-agilidade-e-a-ia.html"
     }
   ]
@@ -215,28 +215,36 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>O futuro do desenvolvimento: entre a agilidade e a IA</h1>
+<h1>IA no desenvolvimento: como revisar uma alteração antes de aceitá-la</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 
 <p class="article-meta">Publicado em: 18/02/2026 12:55</p>
 
-<div class="article-body"><p>Nos últimos tempos, temos visto uma mudança significativa na forma como o desenvolmento de software é conduzido. A integração da Inteligência Artificial (IA) com as práticas de desenvolvimento não é apenas uma tendência passageira, mas sim uma realidade que está moldando o futuro da nossa profissão. Recentemente, participei de um retiro promovido pela Thoughtworks, onde discutimos os impactos da IA no desenvolvimento de software e como as arquiteturas e práticas tradicionais estão se adaptando a essa nova era.</p>
-<h2>Mudanças no Paradigma do Desenvolvimento</h2>
-<p>O que se percebeu no retiro é que as estruturas e ferramentas que antes eram voltadas exclusivamente para o desenvolvimento humano estão se revelando ineficazes no contexto da IA. Existe um padrão emergente: as práticas que funcionavam bem quando apenas humanos estavam no comando estão se tornando obsoletas. Ao invés de criar um novo manifesto, como foi feito com o Manifesto Ágil, o que temos são discussões profundas sobre como a IA pode servir como um amplificador das nossas habilidades. Isso nos leva a refletir: será que estamos prontos para essa transição?</p>
-<h3>A Nova Engenharia de Supervisão</h3>
-<p>Um dos conceitos que ganhou destaque foi o da engenharia de supervisão, que pode ser vista como um "loop do meio". Essa abordagem sugere que os desenvolvedores não estão mais apenas escrevendo código, mas também supervisionando e gerenciando a interação entre humanos e máquinas. É preciso um novo conjunto de habilidades, e isso abre espaço para uma nova categria de trabalho no desenvolvimento.</p>
-<h3>Qualidade do Código e a IA</h3>
-<p>Outra questão crucial levantada foi sobre a qualidade do código. As <strong>LLMs</strong> (Modelos de Linguagem de Grande Escala) têm demonstrado ser mais eficazes em bases de código saudáveis. Isso nos faz pensar: o quanto a qualidade do nosso código pode ser um fator decisivo na adoção bem-sucedida de ferramentas de IA? A pesquisa mostrou que a probabilidade de defeitos aumenta em código menos saudável. Portanto, é fundamental que as equipes adotem práticas como <em>Test-Driven Development</em> (TDD), que têm se mostrado essenciais para aproveitar ao máximo as capacidades da IA.</p>
-<h2>Dicas para Navegar Nesse Novo Cenário</h2>
-<p>Se você está se perguntando como se adaptar a essas mudanças, aqui vão algumas dicas avançadas que podem ajudar:</p>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T08:53:53.149Z">10/10/2026</time>: atribuições, alcance das fontes e orientações corrigidos; a data da publicação original foi preservada.</p>
+<p>Usar um assistente para produzir código deixa uma pergunta para quem aceita a mudança: qual evidência permite integrá-la ao sistema? As discussões reunidas por Martin Fowler em fevereiro de 2026 ajudam a formular essa pergunta, mas não oferecem uma receita comprovada de produtividade.</p>
+<h2>O que Fowler relatou</h2>
+<p class="fato-retiro">Em 18 de fevereiro de 2026, Fowler publicou notas sobre o retiro Future of Software Development da Thoughtworks. Ele vinculou um resumo coletivo que propõe discutir supervisão do trabalho assistido por IA, classificação de riscos e TDD. São ideias de participantes do encontro, não conclusões de um experimento controlado nem um novo manifesto. <a href="https://martinfowler.com/fragments/2026-02-18.html">Fonte: Fragments: February 18, abertura e resumo do retiro</a>.</p>
+<p class="fato-tdd">Ao comentar relatos favoráveis ao TDD no uso de agentes, Fowler explicitou sua preocupação com viés de confirmação. Também defendeu o valor de entregar pequenas partes de uma funcionalidade. O texto não autoriza concluir que todas as práticas anteriores ficaram obsoletas ou que testes garantem qualquer alteração gerada por IA. <a href="https://martinfowler.com/fragments/2026-02-18.html">Fonte: comentários sobre entregas incrementais e TDD</a>.</p>
+<div class="contribuicao-editorial">
+<h2>Uma ficha de decisão para aceitar uma alteração</h2>
+<p>A proposta abaixo traduz a discussão sobre supervisão em um registro de revisão. Não foi executada em uma equipe. Considere um exemplo hipotético: um assistente altera a regra de frete grátis de uma loja.</p>
+<h3>Descreva o comportamento antes de olhar a implementação</h3>
+<p>O pedido de mudança precisa esclarecer se o limite usa o valor antes ou depois de descontos, quais regiões participam e como arredondar centavos. Registrar apenas “corrigir o frete” deixa decisões de negócio escondidas no código. O responsável pelo produto deve resolver essas dúvidas; o assistente não tem autorização para inventar a regra.</p>
+<h3>Ligue cada risco a uma evidência</h3>
 <ul>
-    <li><strong>Invista em educação contínua:</strong> Nunca paramos de aprender. Cursos e workshops sobre IA e suas aplicações no desenvolvimento podem ser úteis.</li>
-    <li><strong>Foque na qualidade do código:</strong> Adote métricas de saúde do código e implemente práticas de TDD para garantir que a IA possa interagir eficientemente com seu código.</li>
-    <li><strong>Colabore com Expert Generalists:</strong> Estes profissionais podem navegar entre silos e trazer uma visão holística que é essencial para a integração de sistemas complexos.</li>
-    <li><strong>Teste e meça:</strong> Utilize a IA para automatizar testes, mas não esqueça de medir o impacto real dessas ferramentas na produtividade e na qualidade do trabalho.</li>
+<li><strong>Limite monetário:</strong> conferir valores imediatamente abaixo, no limite e acima dele, conforme a regra acordada.</li>
+<li><strong>Integração:</strong> verificar se carrinho e fechamento do pedido calculam a mesma condição usando as mesmas entradas.</li>
+<li><strong>Mudança fora do pedido:</strong> revisar dependências, arquivos de configuração e alterações sem relação com frete.</li>
+<li><strong>Comportamento desconhecido:</strong> registrar a dúvida e impedir a integração quando faltar uma decisão necessária.</li>
 </ul>
-<h2>Reflexões Finais</h2>
-<p>O que ficou claro durante o retiro é que não temos todas as respostas. A incerteza é uma constante., e isso pode ser até confortante. Estamos todos tentando descobrir como a IA pode ser uma aliada em vez de uma adversária. A chave está em sermos proativos, adaptando nossas práticas e estruturas organizacionais para tirar o melhor proveito dessa tecnologia. E, mais importante, precisamos lembrar que o desenvolvimento de software sempre foi, e sempre será, sobre as pessoas. Afinal, a tecnologia deve servir para nos capacitar, não para nos substituir.</p>
+<p>São verificações sugeridas, não uma suíte pronta. Um teste que repete a suposição errada do código pode passar; por isso, o resultado esperado deve vir do requisito e ser conferido por quem entende o domínio.</p>
+<h3>Registre a decisão e o que ficou sem cobertura</h3>
+<p>Uma revisão pode registrar: requisito confirmado, arquivos afetados, comandos executados, resultados observados, responsável por aceitar a mudança e condições para desfazê-la. Quando algum comando não puder ser executado, escreva “não executado” com o motivo. Não transforme a ausência de erro visível em validação de uma integração que ninguém exercitou.</p>
+<p>Para uma mudança no fluxo de pagamento, essa ficha precisaria de critérios próprios e revisão mais ampla. O exemplo de frete não demonstra segurança de pagamentos nem serve como justificativa para reduzir controles existentes.</p>
+</div>
+<h2>Escopos complementares</h2>
+<p>Esta página trata da decisão sobre uma alteração. Para observar efeitos no trabalho de uma equipe, consulte o <a href="/artigos/inteligencia-artificial/a-inteligencia-artificial-como-espelho-revelando-forcas-e-fraquezas-das-equipes.html">protocolo de avaliação do fluxo de entrega</a>. A discussão sobre <a href="/artigos/carreira/expert-generalistas-o-poder-da-curiosidade-na-arquitetura-de-software.html">generalistas e especialistas</a> aborda a divisão de responsabilidades, sem substituir conhecimento especializado.</p>
+<div class="limites-editoriais"><h2>Limites da análise</h2><p>O retiro foi relatado por Fowler; não é uma vivência de Anderson Damasio. A ficha e o exemplo de frete são propostas não executadas. Esta leitura não verifica o estudo de saúde de código mencionado no texto de Fowler, não reproduz seus números e não demonstra ganho de produtividade ou redução de defeitos.</p></div>
 </div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
