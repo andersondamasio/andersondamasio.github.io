@@ -1,0 +1,99 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T11:31:39.835Z",
+  "base": "3abda329fa45da297819836df44503355454dedf",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": false,
+  "escopo": "Duas correcoes documentais com protocolos propostos. Preservar URLs e datas originais; sem novas retiradas, noindex, redirecionamentos ou ensaio de aparelho. Nao constitui aprovacao humana nem revisao de rascunho.",
+  "artigos": [
+    {
+      "url": "artigos/tecnologia-automotiva/melhorando-sua-experiencia-automotiva-aawireless-two-plus-e-a-conexao-sem-fio.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Melhorando sua experiência automotiva: AAWireless Two Plus e a conexão sem fio",
+        "data": "2025-11-13T12:44:02.147Z",
+        "corpoHash": "2fb347915486dc4c733a888c95fa63bf260b44d7ed21df019d0d62cfecec6eaf",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/my-search-for-the-best-android-auto-wireless-adapter-is-over-this-one-checks-all-the-boxes-including-price/",
+          "titulo": "My search for the best Android Auto wireless adapter is over - this one checks all the boxes (including price)",
+          "data": "2025-11-13T12:21:00.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "AAWireless TWO+: compatibilidade antes de eliminar o cabo",
+        "descricao": "Requisitos do AAWireless TWO+ e um roteiro proposto para conferir pareamento, partida e alternância de telefones, sem alegar teste do produto.",
+        "corpoHash": "7aa2e4b492405d50be54817c5bdcd3207884daa87a1b71aa12ca640b5ab1faf9"
+      },
+      "motivo": "Explicitar compatibilidade por cabo e retirar tempo universal de conexao, superioridade e intencao pessoal de compra nao comprovados.",
+      "evidencia": "Corpo local lido integralmente e confrontado com a pagina oficial de produto e FAQ em 10/10/2026. Requisitos documentados nao equivalem a teste independente. Nao foram aferidos aparelhos, firmware ou tempo de partida.",
+      "resolvePendenciaDe": "dados/editorial/curadoria-dispositivos-2026-10.json",
+      "aliases": [
+        "tecnologia-automotiva/melhorando-sua-experiencia-automotiva-aawireless-two-plus-e-a-conexao-sem-fio.html"
+      ],
+      "evidencias": [
+        {
+          "seletor": ".fato-compatibilidade",
+          "fonte": "https://www.aawireless.io/en/products/aawireless-two-plus?locale=en-US",
+          "consultadoEm": "2026-10-10T11:31:39.835Z",
+          "textoHash": "a95a78f19c7f973f7adf90ac4719177634933e632d28b56d6ccfad6750e49079"
+        },
+        {
+          "seletor": ".fato-conexao",
+          "fonte": "https://www.aawireless.io/en/products/aawireless-two-plus?locale=en-US",
+          "consultadoEm": "2026-10-10T11:31:39.835Z",
+          "textoHash": "500ad86a5b8992f2a01b7de50b458e21838f4e08d0a464c0fe8d676c5eb8a83a"
+        }
+      ],
+      "pergunta": "Como conferir se a combinacao de central e telefone atende ao TWO+ e registrar problemas sem prometer desempenho?",
+      "sobreposicao": "Cadastro pesquisado por AAWireless e URLs de fonte; apenas esta pagina ativa encontrada. O relato pessoal de outro modelo TWO retirado na curadoria anterior nao e benchmark nem destino equivalente. Comparacao limitada a esse recorte, nao prova semantica de todo acervo.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/tecnologia/novas-fronteiras-da-conexao-por-que-o-roteador-5g-e-a-revolucao-que-voce-nao-sabia-que-precisava.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Novas Fronteiras da Conexão: Por Que o Roteador 5G é a Revolução que Você Não Sabia que Precisava",
+        "data": "2026-04-17T16:05:59.663Z",
+        "corpoHash": "eece3c616c1ddb0c5e4626299366bce88f2426969d5ea3fdb3521dc3b2593094",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/acer-connect-m6e-mobile-hotspot-review/",
+          "titulo": "I ditched my iPhone's hotspot for this 5G travel router - and I'm never going back",
+          "data": "2026-04-17T15:47:00.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "Acer Connect M6E: como avaliar a conexão para trabalho remoto",
+        "descricao": "Separe os recursos documentados do Acer Connect M6E de resultados medidos e planeje uma comparação com o hotspot atual, registrando condições e falhas.",
+        "corpoHash": "8ebc60e1d68972318807aea033bf3be2d6298d1bafe355658049cc6e527fb12a"
+      },
+      "motivo": "Corrigir autonomia, separar rede local de acesso celular e retirar superioridade generalizada sobre smartphones sem medicao.",
+      "evidencia": "Corpo local lido integralmente e confrontado com ficha FF.G2VTA.001 e apresentacao oficial com notas de rodape em 10/10/2026. Acer anuncia ate 28 horas sob condicoes, nao as 36 horas de navegacao do artigo. Nao foi realizado benchmark ou compra de plano.",
+      "resolvePendenciaDe": "dados/editorial/curadoria-dispositivos-2026-10.json",
+      "aliases": [
+        "tecnologia/novas-fronteiras-da-conexao-por-que-o-roteador-5g-e-a-revolucao-que-voce-nao-sabia-que-precisava.html"
+      ],
+      "evidencias": [
+        {
+          "seletor": ".fato-especificacao",
+          "fonte": "https://www.acer.com/us-en/networking/5g/acer-connect-m6e-5g-mobile-wifi/pdp/FF.G2VTA.001",
+          "consultadoEm": "2026-10-10T11:31:39.835Z",
+          "textoHash": "bdca4fc1eb125374451ba2446f474741b0c77c9cbaf1ae53cf4b0e106a5a7469"
+        },
+        {
+          "seletor": ".fato-autonomia",
+          "fonte": "https://www.acer.com/us-en/networking/5g/acer-connect-m6e-5g-mobile-wifi",
+          "consultadoEm": "2026-10-10T11:31:39.835Z",
+          "textoHash": "07efab09e39a3f0b93d4ee3fd6da1c83fb1b19a19aea431b6de8f6f29fc0b8a4"
+        }
+      ],
+      "pergunta": "Que condicoes e resultados registrar para avaliar o M6E frente ao hotspot atual no trabalho remoto?",
+      "sobreposicao": "Cadastro pesquisado por Connect M6E, roteador 5G e fonte original, sem outra pagina ativa nesse recorte. Relato pessoal retirado na curadoria anterior nao e evidencia de comparacao. Nao se afirma ausencia de toda sobreposicao tematica.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    }
+  ]
+}

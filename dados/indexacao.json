@@ -1666,6 +1666,28 @@
           "arquivoHash": "99fea6174045d6f4fbde7874ffd436d55b2872861e6939e28eb0743c514eb804"
         }
       ]
+    },
+    {
+      "url": "artigos/tecnologia-automotiva/melhorando-sua-experiencia-automotiva-aawireless-two-plus-e-a-conexao-sem-fio.html",
+      "acao": "atualizar",
+      "motivo": "Explicitar compatibilidade por cabo e retirar tempo universal de conexao, superioridade e intencao pessoal de compra nao comprovados.",
+      "evidencia": "Corpo local lido integralmente e confrontado com a pagina oficial de produto e FAQ em 10/10/2026. Requisitos documentados nao equivalem a teste independente. Nao foram aferidos aparelhos, firmware ou tempo de partida.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T11:31:39.835Z"
+      },
+      "conteudoHash": "7aa2e4b492405d50be54817c5bdcd3207884daa87a1b71aa12ca640b5ab1faf9"
+    },
+    {
+      "url": "artigos/tecnologia/novas-fronteiras-da-conexao-por-que-o-roteador-5g-e-a-revolucao-que-voce-nao-sabia-que-precisava.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir autonomia, separar rede local de acesso celular e retirar superioridade generalizada sobre smartphones sem medicao.",
+      "evidencia": "Corpo local lido integralmente e confrontado com ficha FF.G2VTA.001 e apresentacao oficial com notas de rodape em 10/10/2026. Acer anuncia ate 28 horas sob condicoes, nao as 36 horas de navegacao do artigo. Nao foi realizado benchmark ou compra de plano.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T11:31:39.835Z"
+      },
+      "conteudoHash": "8ebc60e1d68972318807aea033bf3be2d6298d1bafe355658049cc6e527fb12a"
     }
   ]
 }

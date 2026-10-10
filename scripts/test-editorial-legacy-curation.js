@@ -12,6 +12,52 @@ const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.js
 const manifesto = JSON.parse(ler('dados/indexacao.json'));
 const cadastro = JSON.parse(ler('titulos.json'));
 
+test('conectividade resolve duas pendencias sem transformar especificacoes em testes', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-conectividade-2026-10.json'));
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.metricasGoogle, null);
+  assert.equal(lote.linksExternosConhecidos, null);
+  assert.equal(lote.experimentosExecutados, false);
+  assert.equal(lote.artigos.length, 2);
+  for (const a of lote.artigos) {
+    const q = cheerio.load(ler(a.url)), r = cadastro.find(r => r.url === a.url);
+    const d = manifesto.decisoes.find(d => d.url === a.url);
+    assert.equal(a.acao, 'atualizar'); assert.equal(d.acao, 'atualizar');
+    assert.equal(r.data, a.antes.data); assert.equal(r.seo.modifiedAt, lote.em);
+    assert.equal(r.correcaoEditorial.revisaoHumana, false);
+    assert.equal(r.correcaoEditorial.relatorio, 'dados/editorial/curadoria-conectividade-2026-10.json');
+    assert.equal(r.dataFonte, undefined);
+    assert.equal(q('h1').text(), a.depois.titulo);
+    assert.equal(q('meta[name=description]').attr('content'), a.depois.descricao);
+    assert.equal(q('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    assert.doesNotMatch(q('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(hashCorpoEditorial(q('.article-body').html()), a.depois.corpoHash);
+    assert.equal(d.conteudoHash, a.depois.corpoHash);
+    for (const e of a.evidencias) {
+      assert.equal(q(e.seletor).length, 1);
+      assert.equal(hashCorpoEditorial(q(e.seletor).html()), e.textoHash);
+      assert.equal(q(e.seletor).find('a').attr('href'), e.fonte);
+    }
+    assert.ok(JSON.parse(ler(a.resolvePendenciaDe)).comparacoesSemAlteracao.some(p => p.url === a.url));
+    assert.equal(q('.contribuicao-editorial pre code').length, 1);
+    assert.match(q('.contribuicao-editorial').text(), /propost[oa]/);
+    assert.match(q('.limites-editoriais').text(), /Não houve teste físico/);
+    for (const alias of a.aliases) {
+      const redirecionamento = cheerio.load(ler(alias));
+      assert.equal(redirecionamento('.article-body').length, 0);
+      assert.equal(redirecionamento('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    }
+  }
+  const aa = cheerio.load(ler(lote.artigos[0].url));
+  assert.match(aa('.fato-compatibilidade').text(), /exclusivamente por cabo/);
+  assert.equal(aa('.contribuicao-editorial ol > li').length, 5);
+  const acer = cheerio.load(ler(lote.artigos[1].url));
+  assert.match(acer('.fato-autonomia').text(), /até 28 horas/);
+  assert.match(acer('.fato-autonomia').text(), /um dispositivo conectado/);
+  assert.match(acer('.contribuicao-editorial').text(), /comparação inconclusiva/);
+});
+
 test('curadoria de dispositivos preserva snapshots e corrige acesso sem simular testes pessoais', () => {
   const lote = JSON.parse(ler('dados/editorial/curadoria-dispositivos-2026-10.json'));
   assert.equal(lote.revisaoHumana, false);

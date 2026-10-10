@@ -39686,13 +39686,25 @@
     "urlFonte": "https://www.wired.com/story/open-ai-artificial-intelligence-open-weight-model/"
   },
   {
-    "titulo": "Melhorando sua experiência automotiva: AAWireless Two Plus e a conexão sem fio",
-    "noticiaOriginal": "My search for the best Android Auto wireless adapter is over - this one checks all the boxes (including price)",
+    "titulo": "AAWireless TWO+: compatibilidade antes de eliminar o cabo",
+    "noticiaOriginal": "AAWireless TWO+: compatibilidade e perguntas frequentes",
     "url": "artigos/tecnologia-automotiva/melhorando-sua-experiencia-automotiva-aawireless-two-plus-e-a-conexao-sem-fio.html",
     "data": "2025-11-13T12:44:02.147Z",
-    "dataFonte": "2025-11-13T12:21:00.000Z",
     "categoria": "Tecnologia Automotiva",
-    "urlFonte": "https://www.zdnet.com/article/my-search-for-the-best-android-auto-wireless-adapter-is-over-this-one-checks-all-the-boxes-including-price/"
+    "urlFonte": "https://www.aawireless.io/en/products/aawireless-two-plus?locale=en-US",
+    "seo": {
+      "description": "Requisitos do AAWireless TWO+ e um roteiro proposto para conferir pareamento, partida e alternância de telefones, sem alegar teste do produto.",
+      "modifiedAt": "2026-10-10T11:31:39.835Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T11:31:39.835Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Explicitar compatibilidade por cabo e retirar tempo universal de conexao, superioridade e intencao pessoal de compra nao comprovados.",
+      "hashAntes": "2fb347915486dc4c733a888c95fa63bf260b44d7ed21df019d0d62cfecec6eaf",
+      "hashDepois": "7aa2e4b492405d50be54817c5bdcd3207884daa87a1b71aa12ca640b5ab1faf9",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-conectividade-2026-10.json"
+    }
   },
   {
     "titulo": "Novas abordagens de shuffle e recaps: Como a tecnologia molda a experiência do usuário no Spotify",
@@ -67157,13 +67169,25 @@
     "urlFonte": "https://www.infoq.com/news/2026/04/cpp-26-reflection-safety-async/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   },
   {
-    "titulo": "Novas Fronteiras da Conexão: Por Que o Roteador 5G é a Revolução que Você Não Sabia que Precisava",
-    "noticiaOriginal": "I ditched my iPhone's hotspot for this 5G travel router - and I'm never going back",
+    "titulo": "Acer Connect M6E: como avaliar a conexão para trabalho remoto",
+    "noticiaOriginal": "Acer Connect M6E FF.G2VTA.001: especificacoes tecnicas",
     "url": "artigos/tecnologia/novas-fronteiras-da-conexao-por-que-o-roteador-5g-e-a-revolucao-que-voce-nao-sabia-que-precisava.html",
     "data": "2026-04-17T16:05:59.663Z",
-    "dataFonte": "2026-04-17T15:47:00.000Z",
     "categoria": "Tecnologia",
-    "urlFonte": "https://www.zdnet.com/article/acer-connect-m6e-mobile-hotspot-review/"
+    "urlFonte": "https://www.acer.com/us-en/networking/5g/acer-connect-m6e-5g-mobile-wifi/pdp/FF.G2VTA.001",
+    "seo": {
+      "description": "Separe os recursos documentados do Acer Connect M6E de resultados medidos e planeje uma comparação com o hotspot atual, registrando condições e falhas.",
+      "modifiedAt": "2026-10-10T11:31:39.835Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T11:31:39.835Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir autonomia, separar rede local de acesso celular e retirar superioridade generalizada sobre smartphones sem medicao.",
+      "hashAntes": "eece3c616c1ddb0c5e4626299366bce88f2426969d5ea3fdb3521dc3b2593094",
+      "hashDepois": "8ebc60e1d68972318807aea033bf3be2d6298d1bafe355658049cc6e527fb12a",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-conectividade-2026-10.json"
+    }
   },
   {
     "titulo": "A evolução dos notebooks: o que esperar para os próximos anos?",
