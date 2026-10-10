@@ -2003,6 +2003,112 @@
       ],
       "destino": "artigos/cloud/a-nuvem-que-vem-como-escolher-o-servico-de-hospedagem-ideal-pra-2025.html",
       "destinoConteudoHash": "eb9dd96be65598e8e473d4080a45469aaf3efc490c8a3da0515b0fe831fa2ce1"
+    },
+    {
+      "url": "artigos/cloud/race-condition-e-a-queda-do-aws-licoes-para-arquitetura-de-software.html",
+      "acao": "atualizar",
+      "motivo": "Datar o incidente e substituir conselhos genericos por criterios explicitos de validade de escritas concorrentes.",
+      "evidencia": "Leitura integral: texto anterior definia race condition, mas recomendava apenas carga, redundancia e monitoramento, sem examinar o intervalo entre leitura e escrita.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:44:32.403Z"
+      },
+      "conteudoHash": "6547748db70ba942e400bcdfc119c2191fa90bd61d729a8981a0c762889a20c5"
+    },
+    {
+      "url": "artigos/cloud/a-nuvem-soberana-da-aws-um-passo-a-frente-ou-so-um-truque.html",
+      "acao": "atualizar",
+      "motivo": "Remover insinuacoes sem evidencia e distinguir capacidade tecnica de conclusao juridica.",
+      "evidencia": "Leitura integral: texto insinuava mecanismos ocultos de acesso e conclusoes legais gerais. Revisao usa documentos primarios e nao decide um caso juridico.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:44:32.403Z"
+      },
+      "conteudoHash": "135a9fe3c2cc0fec9815f9b6543bc28e76b6aaae6eebe6d2b4e8464e5c2826f1"
+    },
+    {
+      "url": "artigos/cloud/a-fragilidade-da-nuvem-licoes-do-apagao-da-aws.html",
+      "acao": "consolidar",
+      "motivo": "Unificar orientacoes equivalentes sobre dependencias e recuperacao apos o mesmo incidente.",
+      "evidencia": "Origem e destino lidos integralmente. Origem lista redundancia, monitoramento, recuperacao e documentacao sem ensaio proprio; destino responde a mesma decisao com mapa verificavel. Numero de usuarios sem prova nao e transferido.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:44:32.403Z"
+      },
+      "conteudoHash": "7c012a79ac85a48ca4125f7cbeda0e6a1ce6184ffd3090d26a8ce98326eea90c",
+      "arquivoHash": "4819aec9a491b822bb67ed561c0ab0cff731e25da1448c15ef1fdc1cf099e3fd",
+      "registrosHash": "c95d530f51eeadae8715d559f1704cc88c6cfddccd8e64705bba43aa4a03d1ec",
+      "aliases": [
+        {
+          "url": "cloud/a-fragilidade-da-nuvem-licoes-do-apagao-da-aws.html",
+          "arquivoHash": "d85c43c2830e4a269a837fc919458754ef366feeed673006241024162dd9dc60"
+        }
+      ],
+      "destino": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html",
+      "destinoConteudoHash": "fd6c31e584e86b293bb46ea87fc056cb5c145f8f69679ea87e9dee7ea00b54b2"
+    },
+    {
+      "url": "artigos/cloud/a-fragilidade-das-nuvens-licoes-da-queda-da-amazon.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar recomendacoes repetidas de diversificacao de dependencias.",
+      "evidencia": "Leitura integral: mesma pergunta de preparacao arquitetural, listas de redundancia, testes e alertas. Mesma fonte da outra origem e apenas evidencia auxiliar; equivalencia foi avaliada pelo corpo. Destino nao repete garantia universal de failover.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:44:32.403Z"
+      },
+      "conteudoHash": "5d136dfa10a7abe9ecc33e56150d54261f667af7bddbaa7d68570d88c4c65955",
+      "arquivoHash": "26b3a23270b5878301c6d7de8a261e6ccd96b0ffd4002809aafcb7785df6f555",
+      "registrosHash": "5ee72dfcf585267c67c06e16e4fc97d832bde85f355488028df0a39e43c692b4",
+      "aliases": [
+        {
+          "url": "cloud/a-fragilidade-das-nuvens-licoes-da-queda-da-amazon.html",
+          "arquivoHash": "849af5a7dc19f1167f22dee1592be088afb81bc799db735495979705cf86bf7f"
+        }
+      ],
+      "destino": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html",
+      "destinoConteudoHash": "fd6c31e584e86b293bb46ea87fc056cb5c145f8f69679ea87e9dee7ea00b54b2"
+    },
+    {
+      "url": "artigos/cloud/a-grande-queda-da-aws-licoes-e-reflexoes-para-a-arquitetura-de-sistemas.html",
+      "acao": "consolidar",
+      "motivo": "Substituir outra lista generica de resiliencia pelo guia equivalente fundamentado.",
+      "evidencia": "Leitura integral: distribuicao geografica, monitoramento, testes e documentacao sem caso ou experimento proprio. Destino preserva a pergunta sobre preparacao e explicita limites da diversificacao.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:44:32.403Z"
+      },
+      "conteudoHash": "0d011a5440a2dbc7bfe064555ba22224551c49aabc2e24b8a65498af0500869c",
+      "arquivoHash": "6944989eb0da1cc7e59b4eac0778070ddfbe6a592754b658ac09de59514ddf86",
+      "registrosHash": "d5e2cf7e1c8fa3a9681ede1b7da8d1e3dbdee0bd56317b543a69ca769d09d5f1",
+      "aliases": [
+        {
+          "url": "cloud/a-grande-queda-da-aws-licoes-e-reflexoes-para-a-arquitetura-de-sistemas.html",
+          "arquivoHash": "c329f875d2eea4221d8cbd5ab98418634cc4b433b405382e02457565cd337c9e"
+        }
+      ],
+      "destino": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html",
+      "destinoConteudoHash": "fd6c31e584e86b293bb46ea87fc056cb5c145f8f69679ea87e9dee7ea00b54b2"
+    },
+    {
+      "url": "artigos/cloud/a-fragilidade-da-nuvem-o-que-a-queda-da-aws-nos-ensina-sobre-arquitetura-resiliente.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar mesma pergunta de resiliencia e evitar cronologia causal imprecisa.",
+      "evidencia": "Leitura integral: recomenda multirregiao, provedores e prontidao sem experimento. Trata efeito na rede como gatilho e sugere aplicacoes sem relacao com AWS, sem comprovar. Guia equivalente mantem contexto com fonte primaria.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:44:32.403Z"
+      },
+      "conteudoHash": "0ce2c62d95bbc4560e2b24e21885b9fcf11a9fa3e39dd904e0c8b4e795579a57",
+      "arquivoHash": "ac08a08513a2cbdaa70ada66bfd8f231c562eab3d7c72844436346c860556912",
+      "registrosHash": "607c4ccea6fc00574934edd2675b32dce76e605f78c9c74941284638a2219b57",
+      "aliases": [
+        {
+          "url": "cloud/a-fragilidade-da-nuvem-o-que-a-queda-da-aws-nos-ensina-sobre-arquitetura-resiliente.html",
+          "arquivoHash": "4acc59a17adb4f4c10b8dc39190b40ea714765c0f976e553b1446c0159e2da79"
+        }
+      ],
+      "destino": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html",
+      "destinoConteudoHash": "fd6c31e584e86b293bb46ea87fc056cb5c145f8f69679ea87e9dee7ea00b54b2"
     }
   ]
 }

@@ -12,6 +12,81 @@ const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.js
 const manifesto = JSON.parse(ler('dados/indexacao.json'));
 const cadastro = JSON.parse(ler('titulos.json'));
 
+test('incidentes mantem perguntas distintas e documentam duas correcoes sem revisao humana', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-incidentes-2026-10.json'));
+  assert.equal(lote.artigos.length, 6);
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.experimentosExecutados, false);
+  assert.equal(lote.metricasGoogle, null);
+  assert.equal(lote.linksExternosConhecidos, null);
+  const corrigidos = lote.artigos.filter(a => a.acao === 'atualizar');
+  assert.equal(corrigidos.length, 2);
+  for (const a of corrigidos) {
+    const q = cheerio.load(ler(a.url)), r = cadastro.find(r => r.url === a.url);
+    assert.equal(r.data, a.antes.data);
+    assert.equal(r.correcaoEditorial.revisaoHumana, false);
+    assert.equal(r.correcaoEditorial.relatorio, 'dados/editorial/curadoria-incidentes-2026-10.json');
+    assert.equal(r.seo.modifiedAt, lote.em);
+    assert.equal(q('h1').text(), a.depois.titulo);
+    assert.equal(q('meta[name=description]').attr('content'), a.depois.descricao);
+    assert.equal(q('meta[property="article:published_time"]').attr('content'), a.antes.data);
+    assert.equal(q('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    assert.doesNotMatch(q('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(hashCorpoEditorial(q('.article-body').html()), a.depois.corpoHash);
+    assert.equal(manifesto.decisoes.find(d => d.url === a.url).conteudoHash, a.depois.corpoHash);
+    assert.equal(q('.contribuicao-editorial').length, 1);
+    assert.equal(q('.limites-editoriais').length, 1);
+    assert.ok(a.pergunta && a.sobreposicao);
+    for (const e of a.evidencias) {
+      assert.ok(['aws.amazon.com', 'www.edpb.europa.eu'].includes(new URL(e.fonte).hostname));
+      assert.equal(q(e.seletor).length, 1);
+      assert.equal(q(e.seletor).find('a').attr('href'), e.fonte);
+      assert.equal(hashCorpoEditorial(q(e.seletor).html()), e.textoHash);
+    }
+  }
+  const race = cheerio.load(ler(corrigidos.find(a => a.url.includes('race-condition')).url));
+  assert.match(race('.contribuicao-editorial').text(), /não.*teste executado/i);
+  assert.match(race('.contribuicao-editorial').text(), /timeout significa ausência de escrita/);
+  const soberania = cheerio.load(ler(corrigidos.find(a => a.url.includes('soberana')).url));
+  assert.match(soberania('.fato-edpb').text(), /pedido direto|pedidos diretos/);
+  assert.match(soberania('.fato-edpb').text(), /matriz fora da UE/);
+  assert.match(soberania('.limites-editoriais').text(), /Não é parecer jurídico/);
+  assert.doesNotMatch(soberania('.article-body').text(), /comandos obscuros|garras do Patriot/);
+  assert.equal(lote.referenciasPreservadas.length, 2);
+  for (const a of lote.referenciasPreservadas) {
+    assert.equal(hashCorpoEditorial(cheerio.load(ler(a.url))('.article-body').html()), a.corpoHash);
+    assert.equal(cadastro.find(r => r.url === a.url).correcaoEditorial.relatorio, 'dados/editorial/curadoria-nuvem-2026-10.json');
+  }
+});
+
+test('quatro relatos equivalentes de AWS preservam snapshots e oito encaminhamentos diretos', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-incidentes-2026-10.json'));
+  const artigos = lote.artigos.filter(a => a.acao === 'consolidar');
+  assert.equal(artigos.length, 4);
+  const sitemap = cheerio.load(ler('sitemap.xml'), { xmlMode: true });
+  const urls = sitemap('loc').map((_, e) => sitemap(e).text()).get();
+  for (const a of artigos) {
+    assert.ok(a.alternativas && a.evidencia);
+    const d = manifesto.decisoes.find(d => d.url === a.url), copia = JSON.parse(ler(a.arquivoRecuperavel));
+    assert.equal(hashRegistros(copia.registros), d.registrosHash);
+    assert.equal(hashArquivo(copia.arquivos[0].html), d.arquivoHash);
+    assert.equal(copia.arquivos.length, 2);
+    assert.equal(cadastro.some(r => r.url === a.url), false);
+    const destino = cheerio.load(ler(a.destinoEquivalente));
+    assert.equal(hashCorpoEditorial(destino('.article-body').html()), d.destinoConteudoHash);
+    assert.doesNotMatch(destino('meta[name=robots]').attr('content'), /noindex/);
+    for (const p of [a.url, ...a.aliases]) {
+      const q = cheerio.load(ler(p));
+      assert.equal(q('.article-body').length, 0);
+      assert.match(q('meta[name=robots]').attr('content'), /noindex/);
+      assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.destinoEquivalente}`);
+      assert.equal(q('meta[http-equiv=refresh]').attr('content'), `0; url=https://www.andersondamasio.com.br/${a.destinoEquivalente}`);
+      assert.ok(!urls.includes(`https://www.andersondamasio.com.br/${p}`));
+    }
+  }
+});
+
 test('protecao digital corrige oito guias sem aprovar rascunhos ou renovar a data original', () => {
   const lote = JSON.parse(ler('dados/editorial/curadoria-protecao-digital-2026-10.json'));
   assert.equal(lote.artigos.length, 11);

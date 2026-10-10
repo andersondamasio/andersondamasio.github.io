@@ -1,0 +1,194 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T13:44:32.403Z",
+  "base": "35f316d01235942017c0395944613e238495c14b",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": false,
+  "escopo": "Duas correcoes documentais e quatro consolidacoes de guias equivalentes do incidente AWS. Dois artigos de referencia preservados, sem novo noindex de artigo mantido, ensaio de infraestrutura ou chamada paga. Nao aprova rascunhos.",
+  "limitacaoFontes": "Corpos locais lidos integralmente e afirmacoes corrigidas com fontes primarias. Fontes jornalisticas anteriores permanecem no historico; nao se afirma nova verificacao integral dessas reportagens.",
+  "referenciasPreservadas": [
+    {
+      "url": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html",
+      "corpoHash": "fd6c31e584e86b293bb46ea87fc056cb5c145f8f69679ea87e9dee7ea00b54b2"
+    },
+    {
+      "url": "artigos/cloud/a-revolucao-da-nuvem-soberana-aws-e-a-autonomia-digital-da-europa.html",
+      "corpoHash": "26d64904ef7285d4b05f5c704e5da05677847238c9ef17299c799208f51e807a"
+    }
+  ],
+  "artigos": [
+    {
+      "url": "artigos/cloud/race-condition-e-a-queda-do-aws-licoes-para-arquitetura-de-software.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Race Condition e a Queda do AWS: Lições para Arquitetura de Software",
+        "data": "2025-11-16T11:16:13.122Z",
+        "corpoHash": "411db2975cf4b132c9a2cbe03408d3061509bf0c0c096be479a11f47be40135c",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2025/11/aws-dynamodb-outage-postmortem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Race Condition in DynamoDB DNS System: Analyzing the AWS US-EAST-1 Outage",
+          "data": "2025-11-15T10:46:00.000Z"
+        }
+      },
+      "motivo": "Datar o incidente e substituir conselhos genericos por criterios explicitos de validade de escritas concorrentes.",
+      "evidencia": "Leitura integral: texto anterior definia race condition, mas recomendava apenas carga, redundancia e monitoramento, sem examinar o intervalo entre leitura e escrita.",
+      "aliases": [
+        "cloud/race-condition-e-a-queda-do-aws-licoes-para-arquitetura-de-software.html"
+      ],
+      "depois": {
+        "titulo": "Race condition no DNS do DynamoDB: como revisar escritas atrasadas",
+        "descricao": "O incidente de 2025 e um roteiro proposto para revisar publicação, limpeza e repetição de configurações versionadas, sem simular a AWS.",
+        "corpoHash": "6547748db70ba942e400bcdfc119c2191fa90bd61d729a8981a0c762889a20c5"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-race",
+          "fonte": "https://aws.amazon.com/message/101925/",
+          "consultadoEm": "2026-10-10T13:44:32.403Z",
+          "textoHash": "42b3909ba7125c6916757e5ca91c1231bee8d67feea44ed7f6a2d602ddd26d08"
+        }
+      ],
+      "pergunta": "Como revisar um escritor atrasado e sua concorrencia com a limpeza de configuracoes?",
+      "sobreposicao": "Mantido separado do guia de dependencias: o mesmo relatorio sustenta perguntas distintas, concorrencia local do protocolo e escolha de arquitetura multicloud. Ambos os corpos foram lidos integralmente.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/a-nuvem-soberana-da-aws-um-passo-a-frente-ou-so-um-truque.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A nuvem soberana da AWS: um passo à frente ou só um truque?",
+        "data": "2026-01-22T10:30:18.100Z",
+        "corpoHash": "5fc0debcd072bf52e8e5f849073d5c0509eeaae979511fa02cceb3e06caef110",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/01/aws-european-sovereign-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "AWS Launches European Sovereign Cloud Amid Questions About U.S. Legal Jurisdiction",
+          "data": "2026-01-22T10:19:00.000Z"
+        }
+      },
+      "motivo": "Remover insinuacoes sem evidencia e distinguir capacidade tecnica de conclusao juridica.",
+      "evidencia": "Leitura integral: texto insinuava mecanismos ocultos de acesso e conclusoes legais gerais. Revisao usa documentos primarios e nao decide um caso juridico.",
+      "aliases": [
+        "cloud/a-nuvem-soberana-da-aws-um-passo-a-frente-ou-so-um-truque.html"
+      ],
+      "depois": {
+        "titulo": "Nuvem soberana da AWS: evidências para avaliar acesso a dados",
+        "descricao": "Separe declarações do fornecedor, controles e análise jurídica ao avaliar acesso a dados na AWS European Sovereign Cloud.",
+        "corpoHash": "135a9fe3c2cc0fec9815f9b6543bc28e76b6aaae6eebe6d2b4e8464e5c2826f1"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-fornecedor",
+          "fonte": "https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/",
+          "consultadoEm": "2026-10-10T13:44:32.403Z",
+          "textoHash": "d867aae60acf8fe8a13f89dd39f3f478195c336f254f8749830985791296b48b"
+        },
+        {
+          "seletor": ".fato-edpb",
+          "fonte": "https://www.edpb.europa.eu/system/files/documents/2025-06/edpb_guidelines_202402_article48_v2_en.pdf",
+          "consultadoEm": "2026-10-10T13:44:32.403Z",
+          "textoHash": "fe0c397c66a1494c7ed42ca8f37b20150f914054425de41f0bce996d03c64531"
+        }
+      ],
+      "pergunta": "Que evidencias organizar antes de concluir sobre acesso a dados em uma nuvem soberana?",
+      "sobreposicao": "O guia anterior de integracao foi lido integralmente e preservado. Este responde a preocupacao de acesso e prova documental, enquanto o outro trata da preparacao tecnica da migracao. Nao consolidar por produto em comum.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/a-fragilidade-da-nuvem-licoes-do-apagao-da-aws.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "A fragilidade da nuvem: lições do apagão da AWS",
+        "data": "2025-10-20T22:20:00.137Z",
+        "corpoHash": "7c012a79ac85a48ca4125f7cbeda0e6a1ce6184ffd3090d26a8ce98326eea90c",
+        "fonte": {
+          "url": "https://www.bbc.com/news/articles/c20pgp3nx07o?at_medium=RSS&at_campaign=rss",
+          "titulo": "Amazon services 'recovering' as Snapchat and banks among sites hit by outage",
+          "data": "2025-10-20T22:01:01.000Z"
+        }
+      },
+      "motivo": "Unificar orientacoes equivalentes sobre dependencias e recuperacao apos o mesmo incidente.",
+      "evidencia": "Origem e destino lidos integralmente. Origem lista redundancia, monitoramento, recuperacao e documentacao sem ensaio proprio; destino responde a mesma decisao com mapa verificavel. Numero de usuarios sem prova nao e transferido.",
+      "alternativas": "Uma nova reescrita manteria a mesma pergunta sem evidencia distinta. Preservar snapshot e acesso ao guia; nao se presume ausencia de trafego nem penalidade.",
+      "aliases": [
+        "cloud/a-fragilidade-da-nuvem-licoes-do-apagao-da-aws.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/ffb8caa82de8674eb6b2330679f936c7cd5dae63efac5ac23caa8ba238f30ab4.json",
+      "destinoEquivalente": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html"
+    },
+    {
+      "url": "artigos/cloud/a-fragilidade-das-nuvens-licoes-da-queda-da-amazon.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "A fragilidade das nuvens: lições da queda da Amazon",
+        "data": "2025-10-21T05:20:16.934Z",
+        "corpoHash": "5d136dfa10a7abe9ecc33e56150d54261f667af7bddbaa7d68570d88c4c65955",
+        "fonte": {
+          "url": "https://www.bbc.com/news/articles/c20pgp3nx07o?at_medium=RSS&at_campaign=rss",
+          "titulo": "Amazon outage 'resolved' as Snapchat and banks among sites impacted",
+          "data": "2025-10-21T03:30:02.000Z"
+        }
+      },
+      "motivo": "Consolidar recomendacoes repetidas de diversificacao de dependencias.",
+      "evidencia": "Leitura integral: mesma pergunta de preparacao arquitetural, listas de redundancia, testes e alertas. Mesma fonte da outra origem e apenas evidencia auxiliar; equivalencia foi avaliada pelo corpo. Destino nao repete garantia universal de failover.",
+      "alternativas": "Manter separado exigiria pergunta ou evidencia propria, ausentes no texto. Encaminhar ao guia equivalente com copia recuperavel, sem estimar perdas de trafego.",
+      "aliases": [
+        "cloud/a-fragilidade-das-nuvens-licoes-da-queda-da-amazon.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/f23103fe6d0d0db82cd39e6260b69c4693606a7d31949ae6b047392f7efba9c0.json",
+      "destinoEquivalente": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html"
+    },
+    {
+      "url": "artigos/cloud/a-grande-queda-da-aws-licoes-e-reflexoes-para-a-arquitetura-de-sistemas.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "A grande queda da AWS: lições e reflexões para a arquitetura de sistemas",
+        "data": "2025-10-21T12:42:27.932Z",
+        "corpoHash": "0d011a5440a2dbc7bfe064555ba22224551c49aabc2e24b8a65498af0500869c",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/the-massive-aws-outage-that-broke-half-the-internet-is-finally-over-heres-what-happened/",
+          "titulo": "The massive AWS outage that broke half the internet is finally over - here's what happened",
+          "data": "2025-10-21T12:22:00.000Z"
+        }
+      },
+      "motivo": "Substituir outra lista generica de resiliencia pelo guia equivalente fundamentado.",
+      "evidencia": "Leitura integral: distribuicao geografica, monitoramento, testes e documentacao sem caso ou experimento proprio. Destino preserva a pergunta sobre preparacao e explicita limites da diversificacao.",
+      "alternativas": "Sem evidencia distinta para duas paginas da mesma decisao. Nao tratar opiniao em primeira pessoa como vivencia comprovada; arquivar integralmente e encaminhar.",
+      "aliases": [
+        "cloud/a-grande-queda-da-aws-licoes-e-reflexoes-para-a-arquitetura-de-sistemas.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/febc43a81fa830160cd063c2801a5aa13e65230f9df6fffbdad014021af28301.json",
+      "destinoEquivalente": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html"
+    },
+    {
+      "url": "artigos/cloud/a-fragilidade-da-nuvem-o-que-a-queda-da-aws-nos-ensina-sobre-arquitetura-resiliente.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "A fragilidade da nuvem: o que a queda da AWS nos ensina sobre arquitetura resiliente",
+        "data": "2025-10-25T03:03:02.450Z",
+        "corpoHash": "0ce2c62d95bbc4560e2b24e21885b9fcf11a9fa3e39dd904e0c8b4e795579a57",
+        "fonte": {
+          "url": "https://arstechnica.com/gadgets/2025/10/a-single-point-of-failure-triggered-the-amazon-outage-affecting-millions/",
+          "titulo": "A single point of failure triggered the Amazon outage affecting millions",
+          "data": "2025-10-24T21:53:20.000Z"
+        }
+      },
+      "motivo": "Consolidar mesma pergunta de resiliencia e evitar cronologia causal imprecisa.",
+      "evidencia": "Leitura integral: recomenda multirregiao, provedores e prontidao sem experimento. Trata efeito na rede como gatilho e sugere aplicacoes sem relacao com AWS, sem comprovar. Guia equivalente mantem contexto com fonte primaria.",
+      "alternativas": "Atualizacao isolada repetiria o guia de dependencias. Preservar copia e destino relevante; manter separada a analise especifica de concorrencia, cuja pergunta e diferente.",
+      "aliases": [
+        "cloud/a-fragilidade-da-nuvem-o-que-a-queda-da-aws-nos-ensina-sobre-arquitetura-resiliente.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/2807d34c728542459fdd9da4cc3866833e784ad0e12171ed28a77c259ccda20f.json",
+      "destinoEquivalente": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html",
+      "fonteCorrecao": {
+        "url": "https://aws.amazon.com/message/101925/",
+        "consultadaEm": "2026-10-10T13:44:32.403Z"
+      }
+    }
+  ]
+}

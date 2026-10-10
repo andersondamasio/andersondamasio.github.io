@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Race Condition e a Queda do AWS: Lições para Arquitetura de Software</title>
-<meta name="description" content="Nos últimos dias, uma notícia agitou a comunidade de tecnologia: a queda do AWS, especificamente do DynamoDB, que afetou uma série de serviços na região...">
+<title>Race condition no DNS do DynamoDB: como revisar escritas atrasadas</title>
+<meta name="description" content="O incidente de 2025 e um roteiro proposto para revisar publicação, limpeza e repetição de configurações versionadas, sem simular a AWS.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/cloud/race-condition-e-a-queda-do-aws-licoes-para-arquitetura-de-software.html">
@@ -14,36 +14,36 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Race Condition e a Queda do AWS: Lições para Arquitetura de Software">
-<meta property="og:description" content="Nos últimos dias, uma notícia agitou a comunidade de tecnologia: a queda do AWS, especificamente do DynamoDB, que afetou uma série de serviços na região...">
+<meta property="og:title" content="Race condition no DNS do DynamoDB: como revisar escritas atrasadas">
+<meta property="og:description" content="O incidente de 2025 e um roteiro proposto para revisar publicação, limpeza e repetição de configurações versionadas, sem simular a AWS.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/cloud/race-condition-e-a-queda-do-aws-licoes-para-arquitetura-de-software.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2025-11-16T11:16:13.122Z">
-<meta property="article:modified_time" content="2025-11-16T11:16:13.122Z">
+<meta property="article:modified_time" content="2026-10-10T13:44:32.403Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Race Condition e a Queda do AWS: Lições para Arquitetura de Software">
-<meta name="twitter:description" content="Nos últimos dias, uma notícia agitou a comunidade de tecnologia: a queda do AWS, especificamente do DynamoDB, que afetou uma série de serviços na região...">
+<meta name="twitter:title" content="Race condition no DNS do DynamoDB: como revisar escritas atrasadas">
+<meta name="twitter:description" content="O incidente de 2025 e um roteiro proposto para revisar publicação, limpeza e repetição de configurações versionadas, sem simular a AWS.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Race Condition e a Queda do AWS: Lições para Arquitetura de Software",
-  "description": "Nos últimos dias, uma notícia agitou a comunidade de tecnologia: a queda do AWS, especificamente do DynamoDB, que afetou uma série de serviços na região...",
+  "headline": "Race condition no DNS do DynamoDB: como revisar escritas atrasadas",
+  "description": "O incidente de 2025 e um roteiro proposto para revisar publicação, limpeza e repetição de configurações versionadas, sem simular a AWS.",
   "url": "https://www.andersondamasio.com.br/artigos/cloud/race-condition-e-a-queda-do-aws-licoes-para-arquitetura-de-software.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/cloud/race-condition-e-a-queda-do-aws-licoes-para-arquitetura-de-software.html"
   },
   "datePublished": "2025-11-16T11:16:13.122Z",
-  "dateModified": "2025-11-16T11:16:13.122Z",
+  "dateModified": "2026-10-10T13:44:32.403Z",
   "articleSection": "Cloud",
   "inLanguage": "pt-BR",
-  "wordCount": 457,
+  "wordCount": 553,
   "about": {
     "@type": "Thing",
     "name": "Cloud"
@@ -52,10 +52,10 @@
   "copyrightYear": 2025,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "Race Condition in DynamoDB DNS System: Analyzing the AWS US-EAST-1 Outage",
-    "url": "https://www.infoq.com/news/2025/11/aws-dynamodb-outage-postmortem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "name": "Summary of the Amazon DynamoDB Service Disruption in the Northern Virginia (US-EAST-1) Region",
+    "url": "https://aws.amazon.com/message/101925/"
   },
-  "citation": "https://www.infoq.com/news/2025/11/aws-dynamodb-outage-postmortem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "citation": "https://aws.amazon.com/message/101925/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -114,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Race Condition e a Queda do AWS: Lições para Arquitetura de Software",
+      "name": "Race condition no DNS do DynamoDB: como revisar escritas atrasadas",
       "item": "https://www.andersondamasio.com.br/artigos/cloud/race-condition-e-a-queda-do-aws-licoes-para-arquitetura-de-software.html"
     }
   ]
@@ -215,38 +215,47 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>Race Condition e a Queda do AWS: Lições para Arquitetura de Software</h1>
+<h1>Race condition no DNS do DynamoDB: como revisar escritas atrasadas</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 
 <p class="article-meta">Publicado em: 16/11/2025 08:16</p>
 
-<div class="article-body"><p>Nos últimos dias, uma notícia agitou a comunidade de tecnologia: a queda do AWS, especificamente do DynamoDB, que afetou uma série de serviços na região mais popular da Amazon, a US-EAST-1. O que se destacou foi um fenômeno conhecido como <strong>race condition</strong>, que evidenciou fragilidades em um sistema que muitos consideram robusto. Para nós, arquitetos de software, isso levanta questões cruciais sobre a construção de sistemas resilientes e a importância de uma arquitetura bem planejada.</p>
-<h2>Entendendo a Race Condition no DynamoDB</h2>
-<p>O que exatamente aconteceu? De acordo com o relatório pós-morte, uma condição de corrida latente no sistema de gerenciamento de DNS do DynamoDB fez com que um registro DNS vazio fosse gerado. Isso resultou em falhas na resolução de endpoints, ou seja, as requisições feitas pelos desenvolvedores simplesmente não chegavam ao destino. Um probrema que, à primeira vista, pode parecer trivial, mas que teve um efeito dominó, afetando não apenas o DynamoDB, mas também serviços como EC2 e Lambda.</p>
-<p>O conceito de <strong>race condition</strong> é bastante técnico, mas em termos simples, é quando dois ou mais processos tentam acessar dados compartilhados simultaneamente, e o resultadoo final depende da ordem em que esses processos são executados. No caso do AWS, isso significava que o sistema falhou ao corrigir um problema que já estava presente, levando a uma queda que durou horas para muitos usuários.</p>
-<h2>Dicas Avançadas para Evitar Problemas Semelhantes</h2>
-<p>Como evitar que isso aconteça nos nossos próprios sistemas? Aqui vão algumas dicas que podem ajudar:</p>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T13:44:32.403Z">10/10/2026</time>: atribuições, limites e orientações corrigidos com fontes; a data da publicação original foi preservada.</p>
+<p>Uma verificação pode estar correta quando é feita e já estar vencida quando a escrita acontece. Esse intervalo importa ao revisar processos que publicam configurações compartilhadas. O incidente do DynamoDB de outubro de 2025 oferece um caso documentado para examinar essa diferença.</p>
+<h2>O que o relatório descreve</h2>
+<p class="fato-race">Segundo o <a href="https://aws.amazon.com/message/101925/">relatório da AWS sobre 19 e 20 de outubro de 2025</a>, um executor de planos DNS sofreu atrasos depois de verificar a idade do plano. Outro executor publicou uma versão mais nova e iniciou a limpeza de versões antigas. O executor atrasado então sobrescreveu o plano novo com o antigo; a limpeza removeu esse plano agora ativo. O endpoint regional do DynamoDB ficou sem endereços IP e a automação não conseguiu reparar o estado, exigindo intervenção manual. O relato descreve a automação de DNS em us-east-1, não uma corrupção geral dos dados das tabelas.</p>
+<div class="contribuicao-editorial">
+<h2>Roteiro de revisão: quem ainda pode escrever?</h2>
+<p>A proposta abaixo serve para uma aplicação que publica configurações versionadas. Não é uma reprodução do sistema da AWS nem um teste executado.</p>
+<ol>
+<li><strong>Declare a regra de validade:</strong> por exemplo, uma publicação aceita não pode ser substituída por uma geração anterior. Defina também se reaplicar a mesma geração é permitido e se o conteúdo precisa ser idêntico.</li>
+<li><strong>Localize a decisão efetiva:</strong> onde a gravação é aceita ou recusada? Uma comparação feita antes de uma chamada de rede precisa ser confrontada com o estado existente no momento da alteração.</li>
+<li><strong>Examine a limpeza:</strong> quais referências impedem a exclusão de uma versão? Revise a publicação e a remoção como operações concorrentes; verificar uma referência e apagá-la depois também pode deixar um intervalo de disputa.</li>
+<li><strong>Defina a recuperação:</strong> se uma operação foi aceita, mas sua resposta se perdeu, como o cliente descobre o resultado? A repetição precisa respeitar a regra de validade, sem assumir que timeout significa ausência de escrita.</li>
+</ol>
+<h2>Casos para um ensaio determinístico</h2>
+<p>Em vez de depender apenas de muitas requisições, proponha pausas controladas entre etapas em um ambiente de teste autorizado. Registre a sequência e o estado final esperado:</p>
 <ul>
-    <li><strong>Testes de Carga:</strong> Realize testes de carga para simular situações de alta demanda. Isso pode revelar pontos fracos na sua arquitetura.</li>
-    <li><strong>Redundância e Failover:</strong> Sempre implemente um plano de failover. Sistemas redundantes podem salvar sua operação em caso de falhas.</li>
-    <li><strong>Monitoramento Contínuo:</strong> Monitore não só a performance, mas também as interações entre microserviços. Uma análise contínua pode identificar problemas antes que eles se agravem.</li>
-    <li><strong>Documentação e Comunicação:</strong> Mantenha uma boa documentação e promova a comunicação entre as equipes de desenvolvimento e operações. Isso pode ajudar a identificar padrões de erro e prevenir falhas.</li>
+<li><strong>Escritor atrasado:</strong> pause A depois da leitura; deixe B publicar uma geração posterior; retome A. Pelo contrato proposto, a geração posterior deve continuar ativa.</li>
+<li><strong>Publicação contra limpeza:</strong> intercale seleção de candidatos à exclusão, ativação e remoção. Uma versão referenciada não deve desaparecer por uma decisão tomada antes da ativação.</li>
+<li><strong>Resposta perdida:</strong> conclua a escrita, oculte a resposta e repita a operação. Verifique o comportamento definido para a mesma geração.</li>
+<li><strong>Estado sem referência válida:</strong> prepare essa situação deliberadamente apenas no teste e confira como interromper alterações e restaurar uma versão válida, sem depender do componente indisponível.</li>
 </ul>
-<h2>Reflexões Finais</h2>
-<p>Esse incidente com o AWS nos lembra que, por mais que a tecnologia avance, vulnerabilidades sempre estarão presentes. Devemos aprender com os erros dos outros e aplicar esses aprendizados em nossos próprios projetos. A arquitetura de software não é apenas sobre a construção de sistemas, mas também sobre a capacidade de se adaptar e evoluir com os desafios que surgem. Afinal, quem nunca enfrentou um problema inesperado em produção, não é mesmo?</p>
-<p>Por fim, enquanto a AWS promete melhorias e monitoramento, cabe a nós, desenvolvedores, estar sempre atentos e prontos para implementar as melhores práticas em nossos sistemas. Isso não só aumenta a confiabilidade, mas também nos prepara para as surpresas que o futuro pode trazer.</p>
-<p>
-<p></p></div>
+<p>Para cada caso, guarde a evidência da ordem real das operações. Um teste que apenas verifica a resposta HTTP pode deixar de conferir a configuração que permaneceu ativa.</p>
+</div>
+<p>Para avaliar impacto entre serviços, use também o <a href="/artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html">roteiro de dependências antes de adotar multicloud</a>. Essa é uma decisão de arquitetura distinta da validade de uma escrita concorrente.</p>
+<p class="limites-editoriais">Análise documental com roteiro proposto, sem participação no incidente ou execução desses ensaios. Não apresenta correção para a infraestrutura da AWS nem implementação distribuída validada. A escolha de transações, controle de versão e recuperação depende do contrato e das garantias reais do armazenamento utilizado.</p>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/news/2025/11/aws-dynamodb-outage-postmortem/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener noreferrer">Race Condition in DynamoDB DNS System: Analyzing the AWS US-EAST-1 Outage</a> Data da fonte registrada: 15/11/2025.</p>
+<p><strong>Fonte principal:</strong> <a href="https://aws.amazon.com/message/101925/" rel="noopener noreferrer">Summary of the Amazon DynamoDB Service Disruption in the Northern Virginia (US-EAST-1) Region</a></p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/news/2025/11/aws-dynamodb-outage-postmortem/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Race Condition in DynamoDB DNS System: Analyzing the AWS US-EAST-1 Outage</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://aws.amazon.com/message/101925/" target="_blank" rel="noopener noreferrer">Summary of the Amazon DynamoDB Service Disruption in the Northern Virginia (US-EAST-1) Region</a>.</p>
 </section>
 
 <section class="related-articles" aria-labelledby="related-articles-title">
