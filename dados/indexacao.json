@@ -730,6 +730,130 @@
         "em": "2026-10-10T05:20:15.394Z"
       },
       "conteudoHash": "059e39e5009e3f587145149d521d0170d47833aa0422a65728c189dc55a29a8c"
+    },
+    {
+      "url": "artigos/arquitetura/a-revolucao-verde-na-tecnologia-licoes-que-todo-arquiteto-de-software-deve-aprender.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir atribuicao da experiencia da Lunii a Anderson e recomendacoes universais de arquitetura sem medicao.",
+      "evidencia": "Leitura integral: minha equipe e minha jornada sem confirmacao; transcricao primaria identifica Ludi Akue. SCI 1.1.0 define comparabilidade, sem validar percentuais da palestra.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T05:43:26.665Z"
+      },
+      "conteudoHash": "47c338d38ec73d0a75d1bba07c31e6c7e9eafaf8a7662afad8c45a6600bdad36"
+    },
+    {
+      "url": "artigos/como-eu-criei-o-wiki-perfeito-e-alcancei-250-mil-em-receita-anual-sem-investidores.html",
+      "acao": "atualizar",
+      "motivo": "Retirar falsa autoria do negocio, receita atribuida a Anderson e causalidade nao sustentada entre microservicos e sucesso comercial.",
+      "evidencia": "Leitura integral do texto e relato primario recuperado no site de Ilia Pirozhenko. Receita e afirmacao do fundador; nao ha auditoria independente ou vivencia de Anderson.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T05:43:26.665Z"
+      },
+      "conteudoHash": "df85346f74281b1302d4c4c48b28eb185cee42f3df0aba571e436ab6bd47915e"
+    },
+    {
+      "url": "artigos/chatgpt-a-revolucao-na-busca-de-informacoes-online.html",
+      "acao": "atualizar",
+      "motivo": "Retirar vivencia inventada, vinculo desatualizado a GPT-3, promessa de precisao e exemplo C# sem SDK verificavel.",
+      "evidencia": "Leitura integral identificou OpenAIApi/GetAnswer sem pacote ou versao e relato de projeto nao confirmado. Documentacao oficial de busca e revisao fundamenta a correcao.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T05:43:26.665Z"
+      },
+      "conteudoHash": "b180805dde48ffa1d169bd6c6e39ad167e5917e589e602b82c4f06c50c38a94b"
+    },
+    {
+      "url": "artigos/cloud/como-escolher-o-servico-de-armazenamento-em-nuvem-ideal-em-2025-uma-analise-tecnica.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir preferencias pessoais, comparacao de planos sem sustentacao, confusao 100TB/100GB e garantias de seguranca.",
+      "evidencia": "Leitura dos tres textos de nuvem e dos dois guias de backup corrigidos. Pagina mantida cobre escolha de plano; fontes oficiais ilustram condicoes, sem ranking ou preco atual.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T05:43:26.665Z"
+      },
+      "conteudoHash": "5cdea5e3e203532db2884b16a2e8dfde0caa957a70654705b9e24bb29df4e34e"
+    },
+    {
+      "url": "artigos/cloud/a-importancia-do-armazenamento-em-nuvem-em-2025-como-nao-perder-seus-dados-nunca-mais.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar orientacao de protecao/backup repetida e garantia indevida de nunca perder dados em guia de recuperacao verificavel.",
+      "evidencia": "Leitura integral da origem e do destino. Ambos atendem a preocupacao de recuperar arquivos; destino corrige a promessa absoluta com ensaio delimitado, fontes e limites, sem reciclar preferencias inventadas.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T05:43:26.665Z"
+      },
+      "conteudoHash": "bcae7222458e0fbd8b4940adf49286e33f65589a840be802e6afec922aad96bf",
+      "arquivoHash": "052f74c2b6f06acfe2d31a371bcb850662355dc97496516335bfc6f5edee7001",
+      "registrosHash": "c5efa5466b00a65efb441ba2eaa1d7b312049436d0add67428633cc02f9f4151",
+      "aliases": [
+        {
+          "url": "cloud/a-importancia-do-armazenamento-em-nuvem-em-2025-como-nao-perder-seus-dados-nunca-mais.html",
+          "arquivoHash": "c7e4befe3ec74974ab4564e50ade61c428c3db05e7d3e949b334b8965d424a13"
+        }
+      ],
+      "destino": "artigos/cloud/a-nuvem-nao-e-so-um-lugar-e-a-salvacao-dos-seus-dados.html",
+      "destinoConteudoHash": "6a32f0fdaeae00f42757aa378f6af360841ec6cb09b6fc467f5eac802925f1ea"
+    },
+    {
+      "url": "artigos/cloud/qual-nuvem-vale-mais-a-pena-em-2025-dicas-para-escolher-o-armazenamento-ideal.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar comparacao superficial de armazenamento, preferencias pessoais e garantias absolutas no guia de escolha corrigido.",
+      "evidencia": "Leitura integral da origem e destino identifica mesma intencao de escolha de armazenamento. Destino cobre custo, acesso, recuperacao e saida sem promover quotas ou precos nao verificados.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T05:43:26.665Z"
+      },
+      "conteudoHash": "b92dbd60c8462f77bc696d073267c086259e9351eaf8172acb10f359cb0f92ae",
+      "arquivoHash": "bc0fff098c53f6c66321556d91e26f03dfb4b08e7751abb2fabf9e05bec522cf",
+      "registrosHash": "8c448ac65586998b33156c8a586819b3f36442cf2143f0df5490ae59ce83fa62",
+      "aliases": [
+        {
+          "url": "cloud/qual-nuvem-vale-mais-a-pena-em-2025-dicas-para-escolher-o-armazenamento-ideal.html",
+          "arquivoHash": "d6f023abe11a5a0cf645b416111e04cfd510e0391395ab37c5d275ab93f059b3"
+        }
+      ],
+      "destino": "artigos/cloud/como-escolher-o-servico-de-armazenamento-em-nuvem-ideal-em-2025-uma-analise-tecnica.html",
+      "destinoConteudoHash": "5cdea5e3e203532db2884b16a2e8dfde0caa957a70654705b9e24bb29df4e34e"
+    },
+    {
+      "url": "artigos/carreira/construindo-resiliencia-licoes-para-alcancar-o-sucesso-na-arquitetura-de-software.html",
+      "acao": "retirar",
+      "motivo": "Retirar relato de carreira/projeto inventado e aconselhamento motivacional generico sem evidencia ou contribuicao tecnica verificavel.",
+      "evidencia": "Leitura integral: ao longo de minha carreira e lembro-me de um projeto nao confirmados; dicas sem caso, metodo verificavel ou atribuicao dos entrevistados. Consulta da URL ZDNet nao forneceu conteudo. Nao se presume ausencia de trafego ou inexistencia da fonte.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T05:43:26.665Z"
+      },
+      "conteudoHash": "d8270b43ab119889d0a20a4e982a38608ecba86dbd8c5adbb7e5f10f058a8a22",
+      "arquivoHash": "293aa6acb56632eefadc14f76a7ec16a7e7afe6a9ec57022153d672ed01f2f92",
+      "registrosHash": "c8d01ec7919d23512fe0fbfd3fa9e736dc931a48b04f720e5017d268859f9cdd",
+      "aliases": [
+        {
+          "url": "carreira/construindo-resiliencia-licoes-para-alcancar-o-sucesso-na-arquitetura-de-software.html",
+          "arquivoHash": "31dd947f16af9dfd89bb3620f64118be3f5a658f7fb57c43b6c07f9808aef1f6"
+        }
+      ]
+    },
+    {
+      "url": "artigos/carreira/o-que-os-fundadores-precisam-saber-sobre-saidas-muito-alem-do-basico.html",
+      "acao": "retirar",
+      "motivo": "Retirar falsa participacao em evento e aconselhamento de saida empresarial apoiado em conversa e experiencia nao confirmadas.",
+      "evidencia": "Leitura integral: participei de uma discussao no TechCrunch Disrupt 2025, licoes da conversa e mudancas regulatorias sem prova. Consulta da fonte nao recuperou conteudo; isso nao prova inexistencia do evento. Nenhum substituto equivalente foi identificado.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T05:43:26.665Z"
+      },
+      "conteudoHash": "21523ca2562d39bf48c51d1b2a4a86cf69fb919ded01549624b49d74d0a485e5",
+      "arquivoHash": "507820342d5b57119d9006c75eea8768096efbfca30f9e15caca6f67e96d4c7c",
+      "registrosHash": "1f7a6a3daf4435ad425a807f73f9f6a2a7ffb781db159d2cfd0321a4a2c78ab1",
+      "aliases": [
+        {
+          "url": "carreira/o-que-os-fundadores-precisam-saber-sobre-saidas-muito-alem-do-basico.html",
+          "arquivoHash": "a6cb7728239e971282839c05118b96d746c3c2b7a7abc7c58aad6b548d047ee0"
+        }
+      ]
     }
   ]
 }
