@@ -62,9 +62,17 @@ test("deploy confere colecao selecionada e artigos antigos sem exigi-los no RSS"
 
 test("documentos do repositorio nao podem virar paginas ou downloads publicos", async () => {
   const esperado = prepararVerificacao({ ler: f => f === "_config.yml" ? "exclude: ['*.md', '**/*.md']" : arquivos[f], revisao: "c".repeat(40) });
-  assert.equal(esperado.ausentes.length, 8);
+  assert.equal(esperado.ausentes.length, 12);
+  for (const nome of ['design-tokens', 'fila-cpp']) {
+    assert.ok(esperado.ausentes.includes(`exemplos/${nome}/README.md`));
+    assert.ok(esperado.ausentes.includes(`exemplos/${nome}/README.html`));
+  }
   const ausentes = Object.fromEntries(esperado.ausentes.map(f => [f, null]));
   assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(ausentes), tentativas: 1 })).aceita, true);
+  for (const nome of ['design-tokens', 'fila-cpp']) for (const extensao of ['md', 'html']) {
+    assert.equal((await verificarPublicacao({ esperado,
+      fetchImpl: mockFetch({ ...ausentes, [`exemplos/${nome}/README.${extensao}`]: 'Documento exposto' }), tentativas: 1 })).aceita, false);
+  }
   assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...ausentes, "EDITORIAL_OPERACAO.html": html("/EDITORIAL_OPERACAO.html") }), tentativas: 1 })).aceita, false);
   for (const status of [301, 403, 500]) {
     const original = mockFetch(ausentes);

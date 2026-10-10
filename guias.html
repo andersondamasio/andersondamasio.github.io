@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Guias e exemplos técnicos | Anderson Damasio</title>
-<meta name="description" content="Leituras sobre decisões de arquitetura, código C# e avaliação de agentes de IA, com fontes, exemplos e limites explícitos no site Anderson Damasio.">
+<meta name="description" content="Leituras sobre arquitetura, exemplos em C#, C++ e Node.js e avaliação de agentes de IA, com fontes, testes e limites explícitos no site Anderson Damasio.">
 <meta name="author" content="Anderson Damasio">
 
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -13,17 +13,17 @@
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Guias e exemplos técnicos | Anderson Damasio">
-<meta property="og:description" content="Leituras sobre decisões de arquitetura, código C# e avaliação de agentes de IA, com fontes, exemplos e limites explícitos no site Anderson Damasio.">
+<meta property="og:description" content="Leituras sobre arquitetura, exemplos em C#, C++ e Node.js e avaliação de agentes de IA, com fontes, testes e limites explícitos no site Anderson Damasio.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/guias.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 
-<meta property="og:updated_time" content="2026-10-10T02:26:34.000Z">
+<meta property="og:updated_time" content="2026-10-10T04:08:03.000Z">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Guias e exemplos técnicos | Anderson Damasio">
-<meta name="twitter:description" content="Leituras sobre decisões de arquitetura, código C# e avaliação de agentes de IA, com fontes, exemplos e limites explícitos no site Anderson Damasio.">
+<meta name="twitter:description" content="Leituras sobre arquitetura, exemplos em C#, C++ e Node.js e avaliação de agentes de IA, com fontes, testes e limites explícitos no site Anderson Damasio.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
@@ -31,9 +31,9 @@
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "Guias e exemplos técnicos",
-  "description": "Leituras sobre decisões de arquitetura, código C# e avaliação de agentes de IA, com fontes, exemplos e limites explícitos no site Anderson Damasio.",
+  "description": "Leituras sobre arquitetura, exemplos em C#, C++ e Node.js e avaliação de agentes de IA, com fontes, testes e limites explícitos no site Anderson Damasio.",
   "url": "https://www.andersondamasio.com.br/guias.html",
-  "dateModified": "2026-10-10T02:26:34.000Z",
+  "dateModified": "2026-10-10T04:08:03.000Z",
   "isPartOf": {
     "@type": "WebSite",
     "@id": "https://www.andersondamasio.com.br/#website",
@@ -75,18 +75,30 @@
       {
         "@type": "ListItem",
         "position": 4,
+        "name": "Design tokens: converter um JSON local em variáveis CSS",
+        "url": "https://www.andersondamasio.com.br/artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Fila em C++: sincronização e encerramento com condition_variable",
+        "url": "https://www.andersondamasio.com.br/artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
         "name": "Código e agentes de IA: preservar o modelo de domínio",
         "url": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html"
       },
       {
         "@type": "ListItem",
-        "position": 5,
+        "position": 7,
         "name": "Testes de agentes por simulação: cenários e critérios",
         "url": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html"
       },
       {
         "@type": "ListItem",
-        "position": 6,
+        "position": 8,
         "name": "Testes E2E com agentes: o experimento do Slack e seus limites",
         "url": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html"
       }
@@ -173,6 +185,8 @@ a { color: var(--link); text-decoration: none; } a:hover { text-decoration: unde
 <section class="reading-group" id="codigo-e-contratos" aria-labelledby="codigo-e-contratos-title">
 <h2 id="codigo-e-contratos-title">Código e contratos</h2><p><strong>O código preserva o comportamento esperado nos casos de limite?</strong></p><p>Um exemplo pequeno permite delimitar entradas, saídas e situações de erro. Quando uma expressão do domínio tem mais de um significado, essa ambiguidade precisa ser resolvida antes de aceitar a implementação. Compilar e verificar uma regra são evidências diferentes.</p>
 <ul class="reading-list"><li><p class="reading-kind">Exemplo executável</p><h3><a href="/artigos/explorando-os-segredos-do-reservoir-sampling.html">Reservoir Sampling em C#: implementação e testes</a></h3><p>Implementação C# para uma entrada enumerável, com código do projeto e 13 verificações executáveis. Os testes cobrem limites e um caso pequeno de sorteios; não são benchmark nem certificação estatística.</p></li>
+<li><p class="reading-kind">Exemplo executável</p><h3><a href="/artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html">Design tokens: converter um JSON local em variáveis CSS</a></h3><p>Conversor Node.js de um JSON local para variáveis CSS, com validação de entrada e testes. O formato é didático e limitado; não implementa a especificação DTCG nem confere contraste.</p></li>
+<li><p class="reading-kind">Exemplo executável</p><h3><a href="/artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html">Fila em C++: sincronização e encerramento com condition_variable</a></h3><p>Fila C++17 com espera por predicado, fechamento e drenagem dos itens. Programa e testes compilados no CI; a verificação funcional não comprova baixa latência ou adequação a tempo real.</p></li>
 <li><p class="reading-kind">Análise de fontes</p><h3><a href="/artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html">Código e agentes de IA: preservar o modelo de domínio</a></h3><p>Discussão das ideias de Unmesh Joshi e Sam Ruby sobre a representação mantida como fonte de verdade. Um exemplo hipotético de empréstimos distingue catálogo, unidade e reserva, sem alegar execução.</p></li></ul>
 </section>
 <section class="reading-group" id="avaliacao-de-agentes" aria-labelledby="avaliacao-de-agentes-title">
