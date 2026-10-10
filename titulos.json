@@ -24052,13 +24052,26 @@
     "urlFonte": "https://www.zdnet.com/article/two-subscription-free-smart-rings-were-just-banned-in-the-us-heres-why/"
   },
   {
-    "titulo": "Como Reduzir Seus Custos com Armazenamento em Nuvem: O Que Aprendi com Decisões Difíceis",
-    "noticiaOriginal": "How I cut my monthly cloud storage bill in half - with 5 tough decisions",
+    "titulo": "Custos de backup: o que avaliar antes de reduzir a frequência",
+    "noticiaOriginal": "Perform testing for recovery from data loss",
     "url": "artigos/cloud/como-reduzir-seus-custos-com-armazenamento-em-nuvem-o-que-aprendi-com-decisoes-dificeis.html",
     "data": "2025-08-28T12:38:32.926Z",
-    "dataFonte": "2025-08-28T12:18:00.000Z",
+    "dataFonte": "2024-12-30",
     "categoria": "Cloud",
-    "urlFonte": "https://www.zdnet.com/article/how-i-cut-my-monthly-cloud-storage-bill-in-half-with-5-tough-decisions/"
+    "urlFonte": "https://docs.cloud.google.com/architecture/framework/reliability/perform-testing-for-recovery-from-data-loss",
+    "seo": {
+      "description": "Critérios para comparar custo, retenção e perda aceitável antes de alterar backups, com cenário hipotético e sem recomendar intervalos genéricos.",
+      "modifiedAt": "2026-10-10T05:20:15.394Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T05:20:15.394Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Retirar experiencia pessoal e economia sem evidencia; corrigir recomendacao de backups mensais ou trimestrais sem RPO e separar custo de capacidade de recuperacao.",
+      "hashAntes": "df98744b74a62de88a7544ae365d238a55e92df16083edb6c0dd72eab0e22876",
+      "hashDepois": "059e39e5009e3f587145149d521d0170d47833aa0422a65728c189dc55a29a8c",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/correcoes-backups-2026-10.json"
+    }
   },
   {
     "titulo": "A nova era dos smartphones: por que o iPhone 17 Air pode revolucionar o mercado",
@@ -29662,13 +29675,25 @@
     "urlFonte": "https://www.zdnet.com/article/the-surprising-ways-ai-helps-strong-dev-teams-and-hurts-weak-ones-according-to-google/"
   },
   {
-    "titulo": "A nuvem não é só um lugar, é a salvação dos seus dados",
-    "noticiaOriginal": "Why a good cloud service is non-negotiable in 2025 - and 7 I actually trust",
+    "titulo": "Backup em nuvem: como verificar se seus dados são recuperáveis",
+    "noticiaOriginal": "REL09-BP04 Perform periodic recovery of the data to verify backup integrity and processes",
     "url": "artigos/cloud/a-nuvem-nao-e-so-um-lugar-e-a-salvacao-dos-seus-dados.html",
     "data": "2025-09-25T03:39:35.449Z",
-    "dataFonte": "2025-09-25T02:00:34.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.zdnet.com/article/why-a-good-cloud-service-is-non-negotiable-in-2025-and-7-i-actually-trust/"
+    "urlFonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/rel_backing_up_data_periodic_recovery_testing_data.html",
+    "seo": {
+      "description": "Um roteiro proposto com arquivos fictícios para conferir versão, acesso e tempo de restauração, sem prometer proteção absoluta nem avaliar provedores.",
+      "modifiedAt": "2026-10-10T05:20:15.394Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T05:20:15.394Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Retirar preferencias e vivencia inventadas, promessas de protecao absoluta e comparacao comercial sem verificacao; orientar um ensaio delimitado de recuperacao.",
+      "hashAntes": "c2c669369dfc4346d8deff702d4972fb283bdd8a7d0ee8713a824ee545fffc2a",
+      "hashDepois": "6a32f0fdaeae00f42757aa378f6af360841ec6cb09b6fc467f5eac802925f1ea",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/correcoes-backups-2026-10.json"
+    }
   },
   {
     "titulo": "Como Proteger Sua Privacidade Além do Tor Browser: Dicas Valiosas",
