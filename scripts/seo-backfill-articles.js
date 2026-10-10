@@ -8,10 +8,7 @@ const {
   defaultSeoImageHeight,
   getArticleStructuredImages
 } = require("./seo-assets");
-const {
-  criarMetadadosArtigo,
-  keywordsMetaContent
-} = require("./seo-article-metadata");
+const { criarMetadadosArtigo } = require("./seo-article-metadata");
 const { lerDimensoesImagemLocal } = require("./seo-image-dimensions");
 const {
   authorName,
@@ -262,7 +259,7 @@ function breadcrumb(items) {
   };
 }
 
-function buildSeoHead({ title, description, url, category, published, modified, articleText, sourceUrl, sourceTitle, articleImage }) {
+function buildSeoHead({ title, description, url, category, published, modified, articleHtml, sourceUrl, sourceTitle, articleImage }) {
   const pageTitle = buildPageTitle(title, category);
   const pageDescription = buildDescription(description, title);
   const pageUrl = absoluteUrl(url);
@@ -273,13 +270,11 @@ function buildSeoHead({ title, description, url, category, published, modified, 
     : null;
   const modifiedIso = modified && Number.isFinite(Date.parse(modified)) ? new Date(modified).toISOString() : dateIso;
   const articleMetadata = criarMetadadosArtigo({
-    title,
     category,
-    articleText,
+    articleHtml,
     publishedDate: dateIso
   });
   const sourceCitation = criarFonteSchema({ sourceUrl, sourceTitle });
-  const keywordsContent = keywordsMetaContent(articleMetadata.keywords);
 
   const structuredData = [
     {
@@ -317,7 +312,6 @@ function buildSeoHead({ title, description, url, category, published, modified, 
   return `<title>${escapeHtml(pageTitle)}</title>
 <meta name="description" content="${escapeAttribute(pageDescription)}">
 <meta name="author" content="${escapeAttribute(authorName)}">
-${keywordsContent ? `<meta name="keywords" content="${escapeAttribute(keywordsContent)}">` : ""}
 <meta name="robots" content="${escapeAttribute(robotsMeta)}">
 <link rel="canonical" href="${escapeAttribute(pageUrl)}">
 <link rel="alternate" type="application/rss+xml" title="${escapeAttribute(siteName)}" href="${escapeAttribute(rssUrl)}">
@@ -495,7 +489,7 @@ for (const file of walk(root)) {
     category,
     published: metaByUrl?.data || metaByTitle?.data,
     modified: metaByUrl?.seo?.modifiedAt,
-    articleText,
+    articleHtml: $(".article-body").first().html() ?? $("main").first().html() ?? $("body").html(),
     sourceUrl,
     sourceTitle,
     articleImage: $(".article-body img[src]").first().attr("src")
