@@ -35161,15 +35161,6 @@
     "urlFonte": "https://techcrunch.com/2025/10/20/top-openai-google-brain-researchers-set-off-a-300m-vc-frenzy-for-their-startup-periodic-labs/"
   },
   {
-    "titulo": "A fragilidade da nuvem: lições do apagão da AWS",
-    "noticiaOriginal": "Amazon services 'recovering' as Snapchat and banks among sites hit by outage",
-    "url": "artigos/cloud/a-fragilidade-da-nuvem-licoes-do-apagao-da-aws.html",
-    "data": "2025-10-20T22:20:00.137Z",
-    "dataFonte": "2025-10-20T22:01:01.000Z",
-    "categoria": "Cloud",
-    "urlFonte": "https://www.bbc.com/news/articles/c20pgp3nx07o?at_medium=RSS&at_campaign=rss"
-  },
-  {
     "titulo": "Como a Arquitetura de Software Pode Ajudar na Luta Contra Drones",
     "noticiaOriginal": "What's the best way to detect and destroy drones?",
     "url": "artigos/seguranca/como-a-arquitetura-de-software-pode-ajudar-na-luta-contra-drones.html",
@@ -35204,15 +35195,6 @@
     "dataFonte": "2025-10-21T04:00:00.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://techcrunch.com/2025/10/20/yc-alum-cercli-an-ai-powered-rippling-for-mena-raises-oversubscribed-12m-series-a/"
-  },
-  {
-    "titulo": "A fragilidade das nuvens: lições da queda da Amazon",
-    "noticiaOriginal": "Amazon outage 'resolved' as Snapchat and banks among sites impacted",
-    "url": "artigos/cloud/a-fragilidade-das-nuvens-licoes-da-queda-da-amazon.html",
-    "data": "2025-10-21T05:20:16.934Z",
-    "dataFonte": "2025-10-21T03:30:02.000Z",
-    "categoria": "Cloud",
-    "urlFonte": "https://www.bbc.com/news/articles/c20pgp3nx07o?at_medium=RSS&at_campaign=rss"
   },
   {
     "titulo": "A Nova Fronteira da Adoção de IA nas Empresas: Como a Arquitetura de Software Pode Ajudar",
@@ -35267,15 +35249,6 @@
     "dataFonte": "2025-10-21T11:00:34.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/best-business-internet/"
-  },
-  {
-    "titulo": "A grande queda da AWS: lições e reflexões para a arquitetura de sistemas",
-    "noticiaOriginal": "The massive AWS outage that broke half the internet is finally over - here's what happened",
-    "url": "artigos/cloud/a-grande-queda-da-aws-licoes-e-reflexoes-para-a-arquitetura-de-sistemas.html",
-    "data": "2025-10-21T12:42:27.932Z",
-    "dataFonte": "2025-10-21T12:22:00.000Z",
-    "categoria": "Cloud",
-    "urlFonte": "https://www.zdnet.com/article/the-massive-aws-outage-that-broke-half-the-internet-is-finally-over-heres-what-happened/"
   },
   {
     "titulo": "O renascimento do WearOS: a revolução que todos esperavam",
@@ -35999,15 +35972,6 @@
     "dataFonte": "2025-10-25T00:00:35.000Z",
     "categoria": "Inteligência Artificial",
     "urlFonte": "https://www.zdnet.com/article/i-let-edges-copilot-mode-buy-me-a-new-space-heater-heres-how-the-ai-browser-did/"
-  },
-  {
-    "titulo": "A fragilidade da nuvem: o que a queda da AWS nos ensina sobre arquitetura resiliente",
-    "noticiaOriginal": "A single point of failure triggered the Amazon outage affecting millions",
-    "url": "artigos/cloud/a-fragilidade-da-nuvem-o-que-a-queda-da-aws-nos-ensina-sobre-arquitetura-resiliente.html",
-    "data": "2025-10-25T03:03:02.450Z",
-    "dataFonte": "2025-10-24T21:53:20.000Z",
-    "categoria": "Cloud",
-    "urlFonte": "https://arstechnica.com/gadgets/2025/10/a-single-point-of-failure-triggered-the-amazon-outage-affecting-millions/"
   },
   {
     "titulo": "Aproveitando as Ofertas: Como a Arquitetura de Software Pode Impulsionar Suas Compras na Black Friday",
@@ -40406,13 +40370,25 @@
     "urlFonte": "https://www.zdnet.com/article/apple-microsoft-or-google-whose-platform-authenticator-rules-our-passkey-future/"
   },
   {
-    "titulo": "Race Condition e a Queda do AWS: Lições para Arquitetura de Software",
-    "noticiaOriginal": "Race Condition in DynamoDB DNS System: Analyzing the AWS US-EAST-1 Outage",
+    "titulo": "Race condition no DNS do DynamoDB: como revisar escritas atrasadas",
+    "noticiaOriginal": "Summary of the Amazon DynamoDB Service Disruption in the Northern Virginia (US-EAST-1) Region",
     "url": "artigos/cloud/race-condition-e-a-queda-do-aws-licoes-para-arquitetura-de-software.html",
     "data": "2025-11-16T11:16:13.122Z",
-    "dataFonte": "2025-11-15T10:46:00.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.infoq.com/news/2025/11/aws-dynamodb-outage-postmortem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://aws.amazon.com/message/101925/",
+    "seo": {
+      "description": "O incidente de 2025 e um roteiro proposto para revisar publicação, limpeza e repetição de configurações versionadas, sem simular a AWS.",
+      "modifiedAt": "2026-10-10T13:44:32.403Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:44:32.403Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Datar o incidente e substituir conselhos genericos por criterios explicitos de validade de escritas concorrentes.",
+      "hashAntes": "411db2975cf4b132c9a2cbe03408d3061509bf0c0c096be479a11f47be40135c",
+      "hashDepois": "6547748db70ba942e400bcdfc119c2191fa90bd61d729a8981a0c762889a20c5",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-incidentes-2026-10.json"
+    }
   },
   {
     "titulo": "Organize sua Vida com a Nova Era da IA: A Revolução do Agendamento Inteligente",
@@ -53608,13 +53584,25 @@
     "urlFonte": "https://www.zdnet.com/article/how-to-stop-iphone-apps-from-tracking-you/"
   },
   {
-    "titulo": "A nuvem soberana da AWS: um passo à frente ou só um truque?",
-    "noticiaOriginal": "AWS Launches European Sovereign Cloud Amid Questions About U.S. Legal Jurisdiction",
+    "titulo": "Nuvem soberana da AWS: evidências para avaliar acesso a dados",
+    "noticiaOriginal": "EDPB Guidelines 02/2024 on Article 48 GDPR - Version 2.1",
     "url": "artigos/cloud/a-nuvem-soberana-da-aws-um-passo-a-frente-ou-so-um-truque.html",
     "data": "2026-01-22T10:30:18.100Z",
-    "dataFonte": "2026-01-22T10:19:00.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.infoq.com/news/2026/01/aws-european-sovereign-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://www.edpb.europa.eu/system/files/documents/2025-06/edpb_guidelines_202402_article48_v2_en.pdf",
+    "seo": {
+      "description": "Separe declarações do fornecedor, controles e análise jurídica ao avaliar acesso a dados na AWS European Sovereign Cloud.",
+      "modifiedAt": "2026-10-10T13:44:32.403Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:44:32.403Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover insinuacoes sem evidencia e distinguir capacidade tecnica de conclusao juridica.",
+      "hashAntes": "5fc0debcd072bf52e8e5f849073d5c0509eeaae979511fa02cceb3e06caef110",
+      "hashDepois": "135a9fe3c2cc0fec9815f9b6543bc28e76b6aaae6eebe6d2b4e8464e5c2826f1",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-incidentes-2026-10.json"
+    }
   },
   {
     "titulo": "A saída de gigantes: O que a IPO da PhonePe revela sobre o ecossistema fintech indiano",
