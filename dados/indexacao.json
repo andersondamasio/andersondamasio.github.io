@@ -1275,6 +1275,82 @@
         "em": "2026-10-10T08:53:53.149Z"
       },
       "conteudoHash": "d659e91b9fa2a185486088c98eb604788a77432ed7b2cdb21eea60b7891514e2"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-nova-era-das-maquinas-pensantes-como-a-arquitetura-de-software-pode-influenciar-o-futuro-da-ia.html",
+      "acao": "retirar",
+      "motivo": "Retirar analogia entre captacao e arquitetura sem demonstracao tecnica, com vivencia de carreira nao confirmada e recomendacoes genericas de stack.",
+      "evidencia": "Apresenta a empresa como caso de arquitetura sem documentacao e insere aprendizado pessoal de carreira. Restante consiste em recomendacoes genericas de stack, networking e prototipacao, sem comparacao ou recurso proprio. Noticia de captacao; nao documenta microservicos, data lakes ou API-first. Leitura integral; fontes e limites registrados individualmente. Sem metricas Google ou prova de penalidade.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T09:15:29.552Z"
+      },
+      "conteudoHash": "927a3718c4db0c0ecf8ad223599ddce212287f4ce8bd1c065353e62d23d5be68",
+      "arquivoHash": "aa8273c7adbf9869a645363a57605f25ca6ee505ab175199ac190a3ce26385c0",
+      "registrosHash": "6b387fa0f9c5cb3e6339f7145e9d007bcb1d43819c382a82cc82619334430b04",
+      "aliases": [
+        {
+          "url": "inteligencia-artificial/a-nova-era-das-maquinas-pensantes-como-a-arquitetura-de-software-pode-influenciar-o-futuro-da-ia.html",
+          "arquivoHash": "13d860fef81c5636233388bcf183e4cd5ed0bb0367a6b6db7305890c180afbac"
+        }
+      ]
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-da-ia-como-novas-ideias-estao-transformando-o-desenvolvimento-de-software.html",
+      "acao": "retirar",
+      "motivo": "Retirar apresentacao promocional convertida em conclusoes de evento e experiencia pessoal de projetos, sem analise independente ou recurso proprio.",
+      "evidencia": "Mistura convite com conclusoes como se o debate ja tivesse ocorrido, alem de experiencia pessoal de projetos que teriam falhado. Recomenda compra de ferramentas e participacao no evento sem avaliacao propria. Anuncio previo de sessoes, nao relato de sessoes realizadas. Leitura integral; fontes e limites registrados individualmente. Sem metricas Google ou prova de penalidade.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T09:15:29.552Z"
+      },
+      "conteudoHash": "0f1c9d25d4dc39bd5f656da74334c0af47c145a90bf5dea7be86a747b554ab1c",
+      "arquivoHash": "c217e660959620f03a80a7f485bbd6f47080c729aefe7c715d9269b9c481780d",
+      "registrosHash": "96abeee6e68dd02ad597a1659fa23f353004ca83244737b100acef4ccfe1bee2",
+      "aliases": [
+        {
+          "url": "inteligencia-artificial/a-revolucao-da-ia-como-novas-ideias-estao-transformando-o-desenvolvimento-de-software.html",
+          "arquivoHash": "099cc08857168a45bfc9f04c8a1cdab5e82d2e250dff2bdcd131f52b1ae556da"
+        }
+      ]
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-danca-das-cadeiras-no-vale-do-silicio-um-alerta-para-startups-de-tecnologia.html",
+      "acao": "retirar",
+      "motivo": "Retirar licoes de arquitetura atribuidas a mudancas de equipe sem evidencia do sistema, acrescidas de vivencia profissional nao confirmada.",
+      "evidencia": "Insere vivencia pessoal e converte movimentacao de pessoas em licoes sobre arquitetura sem evidencia interna. As recomendacoes de documentacao e mentoria nao sao sustentadas por avaliacao do caso. Noticia de mudancas de equipe, nao avaliacao de arquitetura. Leitura integral; fontes e limites registrados individualmente. Sem metricas Google ou prova de penalidade.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T09:15:29.552Z"
+      },
+      "conteudoHash": "c1335137b335fe6c2db77487ba0cf8a314d61d4d5be8a670fb6e73874932a385",
+      "arquivoHash": "cbda26547784452943caca4a0c82d29420fc3fd3245e53ca565367b7a0d8b69f",
+      "registrosHash": "a3b82fb31aa12300153a7bc3da1a97efd830b555a7c4484bd8b0390c6850f22a",
+      "aliases": [
+        {
+          "url": "inteligencia-artificial/a-danca-das-cadeiras-no-vale-do-silicio-um-alerta-para-startups-de-tecnologia.html",
+          "arquivoHash": "6cf6ef76ee3b50ac4c0713713717a3caaa5443cd7a4d6227a5aa19a12dbf61b0"
+        }
+      ]
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-do-capital-o-que-aprender-com-o-boom-da-ia.html",
+      "acao": "retirar",
+      "motivo": "Retirar narrativa de participacao em entrevista de investidores que pertence a outra autora, com previsoes generalizadas e aconselhamento sem analise propria.",
+      "evidencia": "Abertura atribui ao autor conversa com investidores e transforma expectativas em conclusoes gerais, sem analise tecnica independente. Usa linguagem de investimento sem fundamentacao propria. Entrevista conduzida por Connie Loizos; nao participacao de Anderson. Leitura integral; fontes e limites registrados individualmente. Sem metricas Google ou prova de penalidade.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T09:15:29.552Z"
+      },
+      "conteudoHash": "e519283e072e945cf941dd295c2aae87c8443cda14e73373e431e8689ce64497",
+      "arquivoHash": "f6d0756001e6d21ba5782fde557bbf152a2afdcfe4f18bfdd4e77a80427f6b24",
+      "registrosHash": "7b6dee5a957ff6d4449b110c99e288053a6554f7d38a81bcdd25fea28f841e14",
+      "aliases": [
+        {
+          "url": "inteligencia-artificial/a-revolucao-do-capital-o-que-aprender-com-o-boom-da-ia.html",
+          "arquivoHash": "65aace860d29b5018bc68c564b001f85268f2bb04f97a4f78a097ce8e35cca30"
+        }
+      ]
     }
   ]
 }

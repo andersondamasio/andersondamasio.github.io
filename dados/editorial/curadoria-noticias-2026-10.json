@@ -1,0 +1,130 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T09:15:29.552Z",
+  "base": "7748b490e31a8cedaeb5db39650e59a51ccbf9ec",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": false,
+  "escopo": "Quatro retiradas recuperaveis apos leitura integral. Sem consolidacao, novo noindex de artigo ativo, avaliacao financeira, chamada paga ou aprovacao de rascunho.",
+  "criterio": "Conteudo local, atribuicao e utilidade independente. Nao se infere que as noticias fonte sejam falsas, nem ausencia de trafego ou penalidade; nao se decide por idade ou contagem de palavras.",
+  "politicaHttp": {
+    "fonte": "https://developers.google.com/crawling/docs/troubleshooting/http-status-codes",
+    "resultadoEsperado": "404 para paginas retiradas sem substituto; conferir apos deploy. Nao e promessa de prazo de remocao do indice."
+  },
+  "artigos": [
+    {
+      "url": "artigos/inteligencia-artificial/a-nova-era-das-maquinas-pensantes-como-a-arquitetura-de-software-pode-influenciar-o-futuro-da-ia.html",
+      "acao": "retirar",
+      "motivo": "Retirar analogia entre captacao e arquitetura sem demonstracao tecnica, com vivencia de carreira nao confirmada e recomendacoes genericas de stack.",
+      "evidencia": "Apresenta a empresa como caso de arquitetura sem documentacao e insere aprendizado pessoal de carreira. Restante consiste em recomendacoes genericas de stack, networking e prototipacao, sem comparacao ou recurso proprio. Noticia de captacao; nao documenta microservicos, data lakes ou API-first. Leitura integral; fontes e limites registrados individualmente. Sem metricas Google ou prova de penalidade.",
+      "antes": {
+        "titulo": "A nova era das máquinas pensantes: como a arquitetura de software pode influenciar o futuro da IA",
+        "data": "2025-07-15T19:18:43.045Z",
+        "corpoHash": "927a3718c4db0c0ecf8ad223599ddce212287f4ce8bd1c065353e62d23d5be68",
+        "fonte": {
+          "url": "https://techcrunch.com/2025/07/15/mira-muratis-thinking-machines-lab-is-worth-12b-in-seed-round/",
+          "titulo": "Mira Murati’s Thinking Machines Lab is worth $12B in seed round",
+          "data": "2025-07-15T17:59:29.000Z"
+        }
+      },
+      "fonteConferida": {
+        "url": "https://techcrunch.com/2025/07/15/mira-muratis-thinking-machines-lab-is-worth-12b-in-seed-round/",
+        "alcance": "Noticia de captacao; nao documenta microservicos, data lakes ou API-first.",
+        "consultadaEm": "2026-10-10"
+      },
+      "alternativas": "Manter apenas a noticia removeria a tese tecnica do texto; uma analise de arquitetura exigiria outra investigacao e outra pauta. Financiamento e movimentacao de equipe nao sao intencoes equivalentes.",
+      "destinoEquivalente": null,
+      "arquivoRecuperavel": "dados/editorial/arquivados/d4f37c9cf17bc8d04224cd304963aac36df9dfab9791d93ea9162eaa133e5224.json",
+      "aliases": [
+        "inteligencia-artificial/a-nova-era-das-maquinas-pensantes-como-a-arquitetura-de-software-pode-influenciar-o-futuro-da-ia.html"
+      ],
+      "mecanismo": "Dry-run conferido de indexation-policy; registro de decisao nao comprova deploy."
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-da-ia-como-novas-ideias-estao-transformando-o-desenvolvimento-de-software.html",
+      "acao": "retirar",
+      "motivo": "Retirar apresentacao promocional convertida em conclusoes de evento e experiencia pessoal de projetos, sem analise independente ou recurso proprio.",
+      "evidencia": "Mistura convite com conclusoes como se o debate ja tivesse ocorrido, alem de experiencia pessoal de projetos que teriam falhado. Recomenda compra de ferramentas e participacao no evento sem avaliacao propria. Anuncio previo de sessoes, nao relato de sessoes realizadas. Leitura integral; fontes e limites registrados individualmente. Sem metricas Google ou prova de penalidade.",
+      "antes": {
+        "titulo": "A Revolução da IA: Como Novas Ideias Estão Transformando o Desenvolvimento de Software",
+        "data": "2025-08-29T21:18:31.422Z",
+        "corpoHash": "0f1c9d25d4dc39bd5f656da74334c0af47c145a90bf5dea7be86a747b554ab1c",
+        "fonte": {
+          "url": "https://techcrunch.com/2025/08/29/spotlight-on-ai-at-techcrunch-disrupt-dont-miss-these-sessions-backed-by-jetbrains-and-greenfield/",
+          "titulo": "Spotlight on AI at TechCrunch Disrupt: Don’t miss these sessions backed by JetBrains and Greenfield",
+          "data": "2025-08-29T21:05:00.000Z"
+        }
+      },
+      "fonteConferida": {
+        "url": "https://techcrunch.com/2025/08/29/spotlight-on-ai-at-techcrunch-disrupt-dont-miss-these-sessions-backed-by-jetbrains-and-greenfield/",
+        "alcance": "Anuncio previo de sessoes, nao relato de sessoes realizadas.",
+        "consultadaEm": "2026-10-10"
+      },
+      "alternativas": "Remover a vivencia deixaria convite e recomendacoes genericas. Nao ha relato proprio das sessoes ou avaliacao de ferramenta a preservar; nao retirar apenas pela passagem da data.",
+      "destinoEquivalente": null,
+      "arquivoRecuperavel": "dados/editorial/arquivados/7e47a85cc108f6d56a2eebf1e609ad26f30736c1bd4dd30d085359348a027c91.json",
+      "aliases": [
+        "inteligencia-artificial/a-revolucao-da-ia-como-novas-ideias-estao-transformando-o-desenvolvimento-de-software.html"
+      ],
+      "mecanismo": "Dry-run conferido de indexation-policy; registro de decisao nao comprova deploy."
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-danca-das-cadeiras-no-vale-do-silicio-um-alerta-para-startups-de-tecnologia.html",
+      "acao": "retirar",
+      "motivo": "Retirar licoes de arquitetura atribuidas a mudancas de equipe sem evidencia do sistema, acrescidas de vivencia profissional nao confirmada.",
+      "evidencia": "Insere vivencia pessoal e converte movimentacao de pessoas em licoes sobre arquitetura sem evidencia interna. As recomendacoes de documentacao e mentoria nao sao sustentadas por avaliacao do caso. Noticia de mudancas de equipe, nao avaliacao de arquitetura. Leitura integral; fontes e limites registrados individualmente. Sem metricas Google ou prova de penalidade.",
+      "antes": {
+        "titulo": "A dança das cadeiras no Vale do Silício: um alerta para startups de tecnologia",
+        "data": "2026-01-15T05:28:40.344Z",
+        "corpoHash": "c1335137b335fe6c2db77487ba0cf8a314d61d4d5be8a670fb6e73874932a385",
+        "fonte": {
+          "url": "https://techcrunch.com/2026/01/14/mira-muratis-startup-thinking-machines-lab-is-losing-two-of-its-co-founders-to-openai/",
+          "titulo": "Mira Murati’s startup, Thinking Machines Lab, is losing two of its co-founders to OpenAI",
+          "data": "2026-01-15T02:16:37.000Z"
+        }
+      },
+      "fonteConferida": {
+        "url": "https://techcrunch.com/2026/01/14/mira-muratis-startup-thinking-machines-lab-is-losing-two-of-its-co-founders-to-openai/",
+        "alcance": "Noticia de mudancas de equipe, nao avaliacao de arquitetura.",
+        "consultadaEm": "2026-10-10"
+      },
+      "alternativas": "Corrigir nomes nao sustenta efeitos arquiteturais. Um guia novo de sucessao tecnica mudaria a pergunta da noticia; nao redirecionar para um guia generico de equipe.",
+      "destinoEquivalente": null,
+      "arquivoRecuperavel": "dados/editorial/arquivados/574b474189921e5f898860bdae93bf96598cbef977f81a6db7cac876128b6527.json",
+      "aliases": [
+        "inteligencia-artificial/a-danca-das-cadeiras-no-vale-do-silicio-um-alerta-para-startups-de-tecnologia.html"
+      ],
+      "mecanismo": "Dry-run conferido de indexation-policy; registro de decisao nao comprova deploy."
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-do-capital-o-que-aprender-com-o-boom-da-ia.html",
+      "acao": "retirar",
+      "motivo": "Retirar narrativa de participacao em entrevista de investidores que pertence a outra autora, com previsoes generalizadas e aconselhamento sem analise propria.",
+      "evidencia": "Abertura atribui ao autor conversa com investidores e transforma expectativas em conclusoes gerais, sem analise tecnica independente. Usa linguagem de investimento sem fundamentacao propria. Entrevista conduzida por Connie Loizos; nao participacao de Anderson. Leitura integral; fontes e limites registrados individualmente. Sem metricas Google ou prova de penalidade.",
+      "antes": {
+        "titulo": "A Revolução do Capital: O Que Aprender com o Boom da IA?",
+        "data": "2026-05-30T15:12:08.982Z",
+        "corpoHash": "e519283e072e945cf941dd295c2aae87c8443cda14e73373e431e8689ce64497",
+        "fonte": {
+          "url": "https://techcrunch.com/2026/05/30/the-groupthink-boom-what-three-top-vcs-really-think-about-the-ai-frenzy/",
+          "titulo": "The groupthink boom: what three top VCs really think about the AI frenzy",
+          "data": "2026-05-30T14:49:27.000Z"
+        }
+      },
+      "fonteConferida": {
+        "url": "https://techcrunch.com/2026/05/30/the-groupthink-boom-what-three-top-vcs-really-think-about-the-ai-frenzy/",
+        "alcance": "Entrevista conduzida por Connie Loizos; nao participacao de Anderson.",
+        "consultadaEm": "2026-10-10"
+      },
+      "alternativas": "Corrigir a autoria nao transforma a recapitulação em analise independente. Nao inventar estudo financeiro, resultados ou uma nova conversa para conservar a URL.",
+      "destinoEquivalente": null,
+      "arquivoRecuperavel": "dados/editorial/arquivados/4576a5b7a2a70b21eb21322401b90106637834d771c96d4911195d1741b09296.json",
+      "aliases": [
+        "inteligencia-artificial/a-revolucao-do-capital-o-que-aprender-com-o-boom-da-ia.html"
+      ],
+      "mecanismo": "Dry-run conferido de indexation-policy; registro de decisao nao comprova deploy."
+    }
+  ]
+}
