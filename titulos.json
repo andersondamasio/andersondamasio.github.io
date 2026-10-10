@@ -1254,13 +1254,6 @@
     "url": "artigos/o-futuro-do-recrutamento-quem-esta-contratando-maio-2025.html"
   },
   {
-    "titulo": "Anubis: O Guardião Inesperado contra Ataques DDoS",
-    "noticiaOriginal": "The Day Anubis Saved Our Websites from a DDoS Attack",
-    "data": "2025-05-01T23:16:52.965Z",
-    "categoria": "Inteligência Artificial",
-    "url": "artigos/anubis-o-guardiao-inesperado-contra-ataques-ddos.html"
-  },
-  {
     "titulo": "Rumo às Estrelas: Como as LLMs estão Transformando o Design de Foguetes de Alta Potência",
     "noticiaOriginal": "LLMs for Engineering: Teaching Models to Design High Powered Rockets",
     "data": "2025-05-02T01:23:50.871Z",
@@ -1289,11 +1282,26 @@
     "url": "artigos/chrome-origin-trial-como-o-uso-de-credenciais-de-sessao-vinculadas-a-dispositivos-pode-revolucionar-a-seguranca-nos-sistemas-modernos.html"
   },
   {
-    "titulo": "Protegendo nossos websites: como Anúbis nos salvou de um ataque DDoS",
-    "noticiaOriginal": "Anubis saved our websites from a DDoS attack",
+    "titulo": "Anubis no caso ScummVM: o que o relato de mitigação permite concluir",
+    "noticiaOriginal": "The Day Anubis Saved Our Websites From a DDoS Attack",
     "data": "2025-05-02T06:25:44.258Z",
     "categoria": "Outros",
-    "url": "artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html"
+    "url": "artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html",
+    "urlFonte": "https://felsqualle.com/posts/2025/05/anubis-saved-our-websites-from-a-ddos-attack/",
+    "dataFonte": "2025-05-01",
+    "seo": {
+      "description": "O caso ScummVM atribuído à fonte original e uma ficha proposta para distinguir recuperação do serviço, carga e bloqueios indevidos.",
+      "modifiedAt": "2026-10-10T07:48:34.922Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T07:48:34.922Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir autoria do incidente, capacidades de IA e API C# nao documentadas e promessa de protecao universal.",
+      "hashAntes": "34341b1270dfac8e92cfbde91ae920b56341f7f62b42209b3395b37e17b52731",
+      "hashDepois": "1b5cb76a7a37a9397a41ff214c363add9e1db494d8fd27f7335d08a70c95ca07",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-atribuicao-produtos-2026-10.json"
+    }
   },
   {
     "titulo": "Liverpool: A Vitória do Título e a Sequência Misteriosa de Fibonacci",
@@ -1977,14 +1985,6 @@
     "categoria": "Outros"
   },
   {
-    "titulo": "O Sequestro de Robert Caro: Uma Lição Sobre Segurança em Sistemas",
-    "noticiaOriginal": "I've been kidnapped by Robert Caro",
-    "url": "artigos/o-sequestro-de-robert-caro-uma-licao-sobre-seguranca-em-sistemas.html",
-    "data": "2025-05-05T16:23:24.521Z",
-    "dataFonte": "2025-04-01T21:22:00.000Z",
-    "categoria": "Outros"
-  },
-  {
     "titulo": "Azure DevOps Services: O Futuro da Segurança nas Nuvens",
     "noticiaOriginal": "Important Update: Server Name Indication (SNI) Now Mandatory for Azure DevOps Services",
     "url": "artigos/azure-devops-services-o-futuro-da-seguranca-nas-nuvens.html",
@@ -2542,12 +2542,26 @@
     ]
   },
   {
-    "titulo": "O código escondido por trás do elogio de Steve Jobs",
-    "noticiaOriginal": "From: Steve Jobs. \"Great idea, thank you.\"",
+    "titulo": "Steve Hayman, Steve Jobs e o destino de um alias de e-mail",
+    "noticiaOriginal": "From: Steve Jobs. Great idea, thank you.",
     "url": "artigos/o-codigo-escondido-por-tras-do-elogio-de-steve-jobs.html",
     "data": "2025-05-08T19:14:42.544Z",
-    "dataFonte": "2025-05-08T18:40:12.000Z",
-    "categoria": "Outros"
+    "dataFonte": "2025-05-06",
+    "categoria": "Outros",
+    "urlFonte": "https://blog.hayman.net/2025/05/06/from-steve-jobs-great-idea.html",
+    "seo": {
+      "description": "O relato de Steve Hayman na NeXT e uma ficha proposta para conferir destino, autorização e entrega após alterar um alias de e-mail.",
+      "modifiedAt": "2026-10-10T07:48:34.922Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T07:48:34.922Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Restituir autoria e assunto da fonte, removendo vivencia de Anderson, codigo oculto inventado e exemplo HTTP sem relacao.",
+      "hashAntes": "dc4f0f265108a0f88df1a7aeab653b7ef846fa000e75a9edae059aba3bfc71eb",
+      "hashDepois": "b2ef7feabdda9c659f2297eb376e48a7974137c9e1ab1f0b7a4cfc6ef4c24c2c",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-atribuicao-produtos-2026-10.json"
+    }
   },
   {
     "titulo": "Stabilidade: a chave para sistemas robustos",
@@ -7659,13 +7673,25 @@
     "urlFonte": "https://www.zdnet.com/article/hume-unveils-evi-3-its-latest-ai-voice-model/"
   },
   {
-    "titulo": "Segurança e Inovação: A Revolução dos Fechaduras Inteligentes com Reconhecimento de Palma",
-    "noticiaOriginal": "This palm recognition smart lock doubles as a video doorbell (and has no monthly fees)",
+    "titulo": "FamiLock S3 Max: acesso de reserva e limites de integração",
+    "noticiaOriginal": "FamiLock S3 Max: PowerDuo e recursos em nuvem",
     "url": "artigos/seguranca/seguranca-e-inovacao-a-revolucao-dos-fechaduras-inteligentes-com-reconhecimento-de-palma.html",
     "data": "2025-06-01T11:14:31.902Z",
-    "dataFonte": "2025-06-01T11:00:14.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/this-palm-recognition-smart-lock-doubles-as-a-video-doorbell-and-has-no-monthly-fees/"
+    "urlFonte": "https://www.eufy.com/familock-s3-max",
+    "seo": {
+      "description": "Análise documental sobre funções na energia de reserva, dados e integração da FamiLock S3 Max, sem API inventada ou teste de segurança.",
+      "modifiedAt": "2026-10-10T07:48:34.922Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T07:48:34.922Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover endpoint de desbloqueio sem contrato, envio de biometria em exemplo e garantias de seguranca por biometria.",
+      "hashAntes": "4a39b4d39342ad0f42d1f6760a238b21fdc371cab16c65cc479518716ce0f3e2",
+      "hashDepois": "88eda2c2b9a46ba40d6ee2aab3799c99672cf946e76cf76bd49b8e03d912a71a",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-atribuicao-produtos-2026-10.json"
+    }
   },
   {
     "titulo": "Redesign e Inovação: Como o \"Have I Been Pwned 2.0\" Pode Transformar a Segurança Digital",
@@ -16143,15 +16169,6 @@
     "urlFonte": "https://techcrunch.com/2025/07/13/study-warns-of-significant-risks-in-using-ai-therapy-chatbots/"
   },
   {
-    "titulo": "A revolução das fechaduras inteligentes: como a biometria tá mudando o jogo",
-    "noticiaOriginal": "I tested a palm recognition smart lock that doubles as a video doorbell - and it's on sale",
-    "url": "artigos/tecnologia/a-revolucao-das-fechaduras-inteligentes-como-a-biometria-ta-mudando-o-jogo.html",
-    "data": "2025-07-13T21:17:31.715Z",
-    "dataFonte": "2025-07-10T18:14:10.000Z",
-    "categoria": "Tecnologia",
-    "urlFonte": "https://www.zdnet.com/article/i-tested-a-palm-recognition-smart-lock-that-doubles-as-a-video-doorbell-and-its-on-sale/"
-  },
-  {
     "titulo": "A nova voz do Meta: o que a aquisição da Play AI significa para o futuro da tecnologia?",
     "noticiaOriginal": "Meta acquires voice startup Play AI",
     "url": "artigos/inteligencia-artificial/a-nova-voz-do-meta-o-que-a-aquisicao-da-play-ai-significa-para-o-futuro-da-tecnologia.html",
@@ -16206,13 +16223,25 @@
     "urlFonte": "https://arstechnica.com/ai/2025/07/musks-grok-4-launches-one-day-after-chatbot-generated-hitler-praise-on-x/"
   },
   {
-    "titulo": "A batalha contra os bots: como proteger seu site com Anubis",
-    "noticiaOriginal": "Fed up with AI scraping your content? This open-source bot blocker can help - here's how",
+    "titulo": "Anubis: como avaliar bloqueios sem perder acessos necessários",
+    "noticiaOriginal": "Anubis: README e limites de uso",
     "url": "artigos/seguranca/a-batalha-contra-os-bots-como-proteger-seu-site-com-anubis.html",
     "data": "2025-07-14T06:32:00.829Z",
-    "dataFonte": "2025-07-10T15:10:00.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/fed-up-with-ai-scraping-your-content-this-open-source-bot-blocker-can-help-heres-how/"
+    "urlFonte": "https://github.com/TecharoHQ/anubis",
+    "seo": {
+      "description": "Roteiro proposto para avaliar desafios, leitores, feeds e bots úteis antes de alterar o acesso público de um site com Anubis.",
+      "modifiedAt": "2026-10-10T07:48:34.922Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T07:48:34.922Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover promessa de identificar humanos, bloqueio apenas de visitantes maliciosos e recomendacao de configuracao sem verificacao.",
+      "hashAntes": "aeba9c606948d1d869ab8e6e92057d40c146c464768f37f883952f7eb4d83a2a",
+      "hashDepois": "3f1264459cb61fca08c2834bb1f71a9c6c46d74b2b4e1f10c2ffe47f8cfc38d1",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-atribuicao-produtos-2026-10.json"
+    }
   },
   {
     "titulo": "A revolução das ferramentas Gen AI: um olhar da Arquitetura de Software",
@@ -17995,15 +18024,6 @@
     "dataFonte": "2025-07-23T07:00:21.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/my-new-favorite-android-smartwatch-rivals-google-and-garmin-models-in-features-and-design/"
-  },
-  {
-    "titulo": "Um novo olhar sobre a campainha inteligente: a Lorex 2K sem taxas mensais",
-    "noticiaOriginal": "I found a video doorbell that records in 2K - and it comes with zero monthly fees",
-    "url": "artigos/tecnologia/um-novo-olhar-sobre-a-campainha-inteligente-a-lorex-2k-sem-taxas-mensais.html",
-    "data": "2025-07-23T08:30:20.981Z",
-    "dataFonte": "2025-07-23T08:00:16.000Z",
-    "categoria": "Tecnologia",
-    "urlFonte": "https://www.zdnet.com/article/i-found-a-video-doorbell-that-records-in-2k-and-it-comes-with-zero-monthly-fees/"
   },
   {
     "titulo": "A nova onda da Inteligência Artificial: O que a Spring AI 1.0 traz para o desenvolvimento",
@@ -31353,13 +31373,25 @@
     "urlFonte": "https://www.zdnet.com/article/why-your-kindles-new-catch-up-features-are-perfect-for-busy-and-distracted-readers/"
   },
   {
-    "titulo": "Desvendando o Novo Campainha Inteligente: Uma Revolução Sem Taxas Mensais",
-    "noticiaOriginal": "Finally, a 2K video doorbell that rivals Ring but doesn't have the subscription fees",
+    "titulo": "Lorex 2K: diferenças de modelo antes de comparar campainhas",
+    "noticiaOriginal": "Lorex 2K Wired Video Doorbell: Doorbell Comparison Chart",
     "url": "artigos/seguranca/desvendando-o-novo-campainha-inteligente-uma-revolucao-sem-taxas-mensais.html",
     "data": "2025-10-02T19:17:13.274Z",
-    "dataFonte": "2025-10-02T19:10:41.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/finally-a-2k-video-doorbell-that-rivals-ring-but-doesnt-have-the-subscription-fees/"
+    "urlFonte": "https://www.lorex.com/products/2k-wi-fi-video-doorbell-with-person-detection-wired",
+    "seo": {
+      "description": "Distinga as séries B451AJ e B463AJ, acessórios e requisitos de uma avaliação, sem misturar documentação com teste pessoal de instalação.",
+      "modifiedAt": "2026-10-10T07:48:34.922Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T07:48:34.922Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir mistura de modelos, kit de sino, comparacao pessoal inventada e promessa de integracao universal.",
+      "hashAntes": "ed0200f14be06c073c20f697314347bb3c2f6ada7c300f726cf74e5c656e645d",
+      "hashDepois": "e0bb310887aa43d617d7948b81efb6dba827eb841f869077a00f72d18938dd7d",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-atribuicao-produtos-2026-10.json"
+    }
   },
   {
     "titulo": "Transformando a Comunicação: Os Fones de Ouvido que Traduzem em Tempo Real",
@@ -56607,13 +56639,25 @@
     "urlFonte": "https://www.zdnet.com/article/best-ar-and-mr-glasses/"
   },
   {
-    "titulo": "A Revolução das Câmeras de Segurança: Por que a EufyCam S3 Pro Está Mudando o Jogo",
-    "noticiaOriginal": "Forget Ring: I switched to this Eufy security camera, and can't go back to grainy night vision",
+    "titulo": "eufyCam S3 Pro: documentação, integração e limites de uma avaliação",
+    "noticiaOriginal": "eufyCam S3 Pro 4-Cam Kit + HomeBase 3 + 1 TB Hard Drive",
     "url": "artigos/seguranca/a-revolucao-das-cameras-de-seguranca-por-que-a-eufycam-s3-pro-esta-mudando-o-jogo.html",
     "data": "2026-02-08T11:27:08.567Z",
-    "dataFonte": "2026-02-08T11:00:53.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/eufycam-s3-pro-review/"
+    "urlFonte": "https://us.eufy.com/products/bundle-t88941w1-1-t80301d1-85-1",
+    "seo": {
+      "description": "Análise documental do kit S3 Pro com HomeBase 3: resolução por integração e critérios propostos, sem testes de imagem ou autonomia.",
+      "modifiedAt": "2026-10-10T07:48:34.922Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T07:48:34.922Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover teste pessoal de detecao, garantia de energia solar e recomendacao de desempenho em todas as condicoes.",
+      "hashAntes": "28febf0e91d1f1907adaa4e60fb9ce99c9d7497f95c5efff1755796842476e82",
+      "hashDepois": "0d08d520cefb22b5360e57c32454cea05c4ae3e82ac18fc6e1ba0c8d7a1ce8ec",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-atribuicao-produtos-2026-10.json"
+    }
   },
   {
     "titulo": "A Revolução dos Projetores: Xgimi Horizon S Max, o Novo Companheiro da Sua Tela",

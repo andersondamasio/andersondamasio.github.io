@@ -1,0 +1,312 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T07:48:34.922Z",
+  "base": "cb1f4c631a7aa53e18c290177193d79cbdbbd9bc",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": false,
+  "escopo": "Dez leituras contextuais: seis correcoes, tres consolidacoes equivalentes e uma retirada recuperavel. Sem novo noindex de artigo ativo, teste de produto, API paga ou aprovacao de rascunho.",
+  "datasDasFontes": "Relatos ScummVM 01/05/2025 e Hayman 06/05/2025. Documentacao de produtos consultada nesta correcao, sem presumir data original. Ensaio Caro de Fowler em 30/03/2025 nao e noticia de seguranca.",
+  "artigos": [
+    {
+      "url": "artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Protegendo nossos websites: como Anúbis nos salvou de um ataque DDoS",
+        "data": "2025-05-02T06:25:44.258Z",
+        "corpoHash": "34341b1270dfac8e92cfbde91ae920b56341f7f62b42209b3395b37e17b52731",
+        "fonte": {
+          "titulo": "Anubis saved our websites from a DDoS attack"
+        }
+      },
+      "motivo": "Corrigir autoria do incidente, capacidades de IA e API C# nao documentadas e promessa de protecao universal.",
+      "evidencia": "Leitura integral do artigo e relato primario: incidente pertence a infraestrutura ScummVM. README oficial descreve desafios e limita bots uteis; nenhuma execucao propria.",
+      "depois": {
+        "titulo": "Anubis no caso ScummVM: o que o relato de mitigação permite concluir",
+        "descricao": "O caso ScummVM atribuído à fonte original e uma ficha proposta para distinguir recuperação do serviço, carga e bloqueios indevidos.",
+        "corpoHash": "1b5cb76a7a37a9397a41ff214c363add9e1db494d8fd27f7335d08a70c95ca07"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-caso",
+          "fonte": "https://felsqualle.com/posts/2025/05/anubis-saved-our-websites-from-a-ddos-attack/",
+          "consultadoEm": "2026-10-10T07:48:34.922Z",
+          "textoHash": "bb89a67d8bf577936a3a67adb0d9d6e1838640235da87e7ae181e7fcc0bb9c83"
+        },
+        {
+          "seletor": ".fato-projeto",
+          "fonte": "https://github.com/TecharoHQ/anubis",
+          "consultadoEm": "2026-10-10T07:48:34.922Z",
+          "textoHash": "0d55832ba127fe4debce5c93c798e280c5adf3fe761503f10c912f3a9a986d51"
+        }
+      ],
+      "pergunta": "Que evidencias comparar antes de atribuir a recuperacao de um servico a uma defesa?",
+      "publico": "Profissionais avaliando evidencias, configuracoes e limites de sistemas",
+      "sobreposicao": "Tres artigos Anubis lidos integralmente: duas narrativas do mesmo incidente; guia de acesso a bots atende pergunta diferente. Consolidar apenas a outra narrativa.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/a-batalha-contra-os-bots-como-proteger-seu-site-com-anubis.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A batalha contra os bots: como proteger seu site com Anubis",
+        "data": "2025-07-14T06:32:00.829Z",
+        "corpoHash": "aeba9c606948d1d869ab8e6e92057d40c146c464768f37f883952f7eb4d83a2a",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/fed-up-with-ai-scraping-your-content-this-open-source-bot-blocker-can-help-heres-how/",
+          "titulo": "Fed up with AI scraping your content? This open-source bot blocker can help - here's how",
+          "data": "2025-07-10T15:10:00.000Z"
+        }
+      },
+      "motivo": "Remover promessa de identificar humanos, bloqueio apenas de visitantes maliciosos e recomendacao de configuracao sem verificacao.",
+      "evidencia": "Leitura integral encontrou garantia de humanidade, estatistica atribuida indevidamente a scrapers e configuracao dita paranoica. Fontes primarias descrevem desafios e risco para bots uteis.",
+      "depois": {
+        "titulo": "Anubis: como avaliar bloqueios sem perder acessos necessários",
+        "descricao": "Roteiro proposto para avaliar desafios, leitores, feeds e bots úteis antes de alterar o acesso público de um site com Anubis.",
+        "corpoHash": "3f1264459cb61fca08c2834bb1f71a9c6c46d74b2b4e1f10c2ffe47f8cfc38d1"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-politica",
+          "fonte": "https://github.com/TecharoHQ/anubis",
+          "consultadoEm": "2026-10-10T07:48:34.922Z",
+          "textoHash": "f6b643be750f0f855818aed252a4cc1f39eb35aaf872a410ff4d61e4a31fc5c9"
+        },
+        {
+          "seletor": ".fato-desafio",
+          "fonte": "https://felsqualle.com/posts/2025/05/anubis-saved-our-websites-from-a-ddos-attack/",
+          "consultadoEm": "2026-10-10T07:48:34.922Z",
+          "textoHash": "a23e8036c8aca67867b1d2618e1f4aae4a25509a1ffac3aaa85005c0e549d63c"
+        }
+      ],
+      "pergunta": "Como verificar que uma politica contra scrapers preserva clientes necessarios?",
+      "publico": "Profissionais avaliando evidencias, configuracoes e limites de sistemas",
+      "sobreposicao": "Comparado com os dois relatos Anubis: este e um roteiro de requisitos de acesso, complementar a analise de carga do caso ScummVM.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/o-codigo-escondido-por-tras-do-elogio-de-steve-jobs.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "O código escondido por trás do elogio de Steve Jobs",
+        "data": "2025-05-08T19:14:42.544Z",
+        "corpoHash": "dc4f0f265108a0f88df1a7aeab653b7ef846fa000e75a9edae059aba3bfc71eb",
+        "fonte": {
+          "titulo": "From: Steve Jobs. \"Great idea, thank you.\"",
+          "data": "2025-05-08T18:40:12.000Z"
+        }
+      },
+      "motivo": "Restituir autoria e assunto da fonte, removendo vivencia de Anderson, codigo oculto inventado e exemplo HTTP sem relacao.",
+      "evidencia": "Texto completo de Hayman relata alias na NeXT em 1991, publicado em 06/05/2025. Nao trata de um algoritmo ou de experiencia de Anderson.",
+      "depois": {
+        "titulo": "Steve Hayman, Steve Jobs e o destino de um alias de e-mail",
+        "descricao": "O relato de Steve Hayman na NeXT e uma ficha proposta para conferir destino, autorização e entrega após alterar um alias de e-mail.",
+        "corpoHash": "b2ef7feabdda9c659f2297eb376e48a7974137c9e1ab1f0b7a4cfc6ef4c24c2c"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-relato",
+          "fonte": "https://blog.hayman.net/2025/05/06/from-steve-jobs-great-idea.html",
+          "consultadoEm": "2026-10-10T07:48:34.922Z",
+          "textoHash": "ea0f7998275c53cd07b6962016d92ea4bf8947c1c56c93025c143628826c3757"
+        }
+      ],
+      "pergunta": "O que registrar ao alterar o destino de um alias de e-mail?",
+      "publico": "Profissionais avaliando evidencias, configuracoes e limites de sistemas",
+      "sobreposicao": "Busca no cadastro por titulo original e codigo escondido identifica esta pagina; nao certifica unicidade de todo o acervo de e-mail.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/a-revolucao-das-cameras-de-seguranca-por-que-a-eufycam-s3-pro-esta-mudando-o-jogo.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A Revolução das Câmeras de Segurança: Por que a EufyCam S3 Pro Está Mudando o Jogo",
+        "data": "2026-02-08T11:27:08.567Z",
+        "corpoHash": "28febf0e91d1f1907adaa4e60fb9ce99c9d7497f95c5efff1755796842476e82",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/eufycam-s3-pro-review/",
+          "titulo": "Forget Ring: I switched to this Eufy security camera, and can't go back to grainy night vision",
+          "data": "2026-02-08T11:00:53.000Z"
+        }
+      },
+      "motivo": "Remover teste pessoal de detecao, garantia de energia solar e recomendacao de desempenho em todas as condicoes.",
+      "evidencia": "Leitura integral identificou experiencia de ajuste a 200 pes nao confirmada. Pagina do kit distingue 4K/Apple Home 1080p, armazenamento na base e condicoes de luz.",
+      "depois": {
+        "titulo": "eufyCam S3 Pro: documentação, integração e limites de uma avaliação",
+        "descricao": "Análise documental do kit S3 Pro com HomeBase 3: resolução por integração e critérios propostos, sem testes de imagem ou autonomia.",
+        "corpoHash": "0d08d520cefb22b5360e57c32454cea05c4ae3e82ac18fc6e1ba0c8d7a1ce8ec"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-kit",
+          "fonte": "https://us.eufy.com/products/bundle-t88941w1-1-t80301d1-85-1",
+          "consultadoEm": "2026-10-10T07:48:34.922Z",
+          "textoHash": "b433421da0430d9acca0cec8b5ad00cf5d63a42673b9915b8d85808a491eccd2"
+        },
+        {
+          "seletor": ".fato-energia",
+          "fonte": "https://us.eufy.com/products/bundle-t88941w1-1-t80301d1-85-1",
+          "consultadoEm": "2026-10-10T07:48:34.922Z",
+          "textoHash": "90af466904e04c8cba958fea5720a3b67c5e2f719d5024823e6faf63bb907037"
+        }
+      ],
+      "pergunta": "Quais requisitos verificar no caminho entre captura, gravacao e consulta da imagem?",
+      "publico": "Profissionais avaliando evidencias, configuracoes e limites de sistemas",
+      "sobreposicao": "Busca por eufyCam S3 Pro identifica esta pagina. Lorex trata de identificar modelos de campainha; FamiLock trata de acesso fisico e reserva, nao da mesma pergunta.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/desvendando-o-novo-campainha-inteligente-uma-revolucao-sem-taxas-mensais.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Desvendando o Novo Campainha Inteligente: Uma Revolução Sem Taxas Mensais",
+        "data": "2025-10-02T19:17:13.274Z",
+        "corpoHash": "ed0200f14be06c073c20f697314347bb3c2f6ada7c300f726cf74e5c656e645d",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/finally-a-2k-video-doorbell-that-rivals-ring-but-doesnt-have-the-subscription-fees/",
+          "titulo": "Finally, a 2K video doorbell that rivals Ring but doesn't have the subscription fees",
+          "data": "2025-10-02T19:10:41.000Z"
+        }
+      },
+      "motivo": "Corrigir mistura de modelos, kit de sino, comparacao pessoal inventada e promessa de integracao universal.",
+      "evidencia": "Dois artigos Lorex lidos: mesmos recursos e falsa comparacao Eufy, sem SKU. Tabela oficial distingue B451AJD/B451AJDB e B463AJD/B463AJDB. Nao foi inferido o SKU dos reviews antigos.",
+      "depois": {
+        "titulo": "Lorex 2K: diferenças de modelo antes de comparar campainhas",
+        "descricao": "Distinga as séries B451AJ e B463AJ, acessórios e requisitos de uma avaliação, sem misturar documentação com teste pessoal de instalação.",
+        "corpoHash": "e0bb310887aa43d617d7948b81efb6dba827eb841f869077a00f72d18938dd7d"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-modelos",
+          "fonte": "https://www.lorex.com/products/2k-wi-fi-video-doorbell-with-person-detection-wired",
+          "consultadoEm": "2026-10-10T07:48:34.922Z",
+          "textoHash": "8b704103403acb2aba62d8038b682c9e6d0e3847cf796d599f41e8ea3b520b14"
+        }
+      ],
+      "pergunta": "Quais diferencas de modelo precisam ser resolvidas antes de comparar instalacao e custo?",
+      "publico": "Profissionais avaliando evidencias, configuracoes e limites de sistemas",
+      "sobreposicao": "Ambos os textos Lorex respondem a mesma escolha de campainha 2K sem taxas e repetem comparacao/imagem/instalacao; o destino corrige esse recorte com modelos identificados.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/seguranca-e-inovacao-a-revolucao-dos-fechaduras-inteligentes-com-reconhecimento-de-palma.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Segurança e Inovação: A Revolução dos Fechaduras Inteligentes com Reconhecimento de Palma",
+        "data": "2025-06-01T11:14:31.902Z",
+        "corpoHash": "4a39b4d39342ad0f42d1f6760a238b21fdc371cab16c65cc479518716ce0f3e2",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/this-palm-recognition-smart-lock-doubles-as-a-video-doorbell-and-has-no-monthly-fees/",
+          "titulo": "This palm recognition smart lock doubles as a video doorbell (and has no monthly fees)",
+          "data": "2025-06-01T11:00:14.000Z"
+        }
+      },
+      "motivo": "Remover endpoint de desbloqueio sem contrato, envio de biometria em exemplo e garantias de seguranca por biometria.",
+      "evidencia": "Codigo anterior usava api.smartlock.com sem fonte e inferia destravamento de status HTTP; nao foi executado. Fabricante documenta restricoes da alimentacao de reserva e envio opcional de miniaturas.",
+      "depois": {
+        "titulo": "FamiLock S3 Max: acesso de reserva e limites de integração",
+        "descricao": "Análise documental sobre funções na energia de reserva, dados e integração da FamiLock S3 Max, sem API inventada ou teste de segurança.",
+        "corpoHash": "88eda2c2b9a46ba40d6ee2aab3799c99672cf946e76cf76bd49b8e03d912a71a"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-reserva",
+          "fonte": "https://www.eufy.com/familock-s3-max",
+          "consultadoEm": "2026-10-10T07:48:34.922Z",
+          "textoHash": "ec10d1f145a7d9367b13da06c0fde0b3c918b90a19fa2a4d143f5b267f01a379"
+        },
+        {
+          "seletor": ".fato-dados",
+          "fonte": "https://www.eufy.com/familock-s3-max",
+          "consultadoEm": "2026-10-10T07:48:34.922Z",
+          "textoHash": "d667e8f15ddde1903eda41fce25f9c0a1d4042e191225efd19b6d5b0ca4a2de1"
+        }
+      ],
+      "pergunta": "Quais requisitos de acesso e dados verificar quando a alimentacao ou integracao muda?",
+      "publico": "Profissionais avaliando evidencias, configuracoes e limites de sistemas",
+      "sobreposicao": "Leitura dos dois textos FamiLock identifica mesma apresentacao do S3 Max e promessas de biometria; destino conserva explicacao do produto com limites, sem preco antigo ou garantia.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/anubis-o-guardiao-inesperado-contra-ataques-ddos.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "Anubis: O Guardião Inesperado contra Ataques DDoS",
+        "data": "2025-05-01T23:16:52.965Z",
+        "corpoHash": "989621fa02a86ee364908fe13d49d9f3ee2cdc911db7ed96fbc21f0db2a28640",
+        "fonte": {
+          "titulo": "The Day Anubis Saved Our Websites from a DDoS Attack"
+        }
+      },
+      "motivo": "Consolidar a segunda narrativa do mesmo incidente ScummVM no relato com atribuicao corrigida.",
+      "evidencia": "Origem e destino lidos integralmente: mesmo titulo de noticia e intencao de entender Anubis no incidente. Origem confunde software/metafora e inventa experiencia; destino trata do caso, nao de outro assunto.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/f8bc273edc94cb2cc78c3ff08f52c7dc5e2ec4828ee70c8723053fbcb7b220af.json",
+      "destinoEquivalente": "artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html"
+    },
+    {
+      "url": "artigos/tecnologia/um-novo-olhar-sobre-a-campainha-inteligente-a-lorex-2k-sem-taxas-mensais.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "Um novo olhar sobre a campainha inteligente: a Lorex 2K sem taxas mensais",
+        "data": "2025-07-23T08:30:20.981Z",
+        "corpoHash": "35b94cf58f4a3e33105b8296fdcdf78f3b860ddfab7136b31bbeeeee9e70f9d3",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/i-found-a-video-doorbell-that-records-in-2k-and-it-comes-with-zero-monthly-fees/",
+          "titulo": "I found a video doorbell that records in 2K - and it comes with zero monthly fees",
+          "data": "2025-07-23T08:00:16.000Z"
+        }
+      },
+      "motivo": "Consolidar apresentacao repetida da Lorex 2K no guia que distingue modelos e requisitos.",
+      "evidencia": "Leitura integral dos dois textos mostra mesma intencao de escolha, falsas comparacoes com Eufy e instalacao pessoal; nao ha ensaio independente a preservar como evidencia.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/0533e5129361cc781fcde52a293b4fd4defbc67a8e2edff288385d516f877016.json",
+      "destinoEquivalente": "artigos/seguranca/desvendando-o-novo-campainha-inteligente-uma-revolucao-sem-taxas-mensais.html"
+    },
+    {
+      "url": "artigos/tecnologia/a-revolucao-das-fechaduras-inteligentes-como-a-biometria-ta-mudando-o-jogo.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "A revolução das fechaduras inteligentes: como a biometria tá mudando o jogo",
+        "data": "2025-07-13T21:17:31.715Z",
+        "corpoHash": "8bd1c86997c5019ab68060cc039968114636dc0f5c2849968c7bdbd4535553b4",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/i-tested-a-palm-recognition-smart-lock-that-doubles-as-a-video-doorbell-and-its-on-sale/",
+          "titulo": "I tested a palm recognition smart lock that doubles as a video doorbell - and it's on sale",
+          "data": "2025-07-10T18:14:10.000Z"
+        }
+      },
+      "motivo": "Consolidar segunda apresentacao FamiLock S3 Max, corrigindo garantias, preco antigo e confusao com reconhecimento facial.",
+      "evidencia": "Leitura integral de origem/destino: mesmo produto e expectativa de seguranca/acesso; novo destino explica limites relevantes sem inventar teste ou experiencia pessoal.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/0711c29f97459456b918a61c4abecaac2e2579163b06f2c3eef366f4cdb5717b.json",
+      "destinoEquivalente": "artigos/seguranca/seguranca-e-inovacao-a-revolucao-dos-fechaduras-inteligentes-com-reconhecimento-de-palma.html"
+    },
+    {
+      "url": "artigos/o-sequestro-de-robert-caro-uma-licao-sobre-seguranca-em-sistemas.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "O Sequestro de Robert Caro: Uma Lição Sobre Segurança em Sistemas",
+        "data": "2025-05-05T16:23:24.521Z",
+        "corpoHash": "fe2dc03f022d76f4f33fa7c9a2034be1a7b6490aa6f261f540b85bc60a6c1401",
+        "fonte": {
+          "titulo": "I've been kidnapped by Robert Caro",
+          "data": "2025-04-01T21:22:00.000Z"
+        }
+      },
+      "motivo": "Retirar noticia de sequestro por hacker inventada a partir de uma metafora de leitura, sem destino equivalente.",
+      "evidencia": "Fonte primaria de Martin Fowler, https://martinfowler.com/articles/2025-caro.html, datada 30/03/2025, trata da leitura de livros de Robert Caro. Nao relata sequestro cibernetico. Leitura integral do artigo local mostra incidente ficticio apresentado como fato e projeto pessoal sem evidencia; restante e aconselhamento generico.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/725f784ef4b7cb2179e1af94e987a6094dc71fcdaa73bf8fdb832193131a607c.json",
+      "destinoEquivalente": null,
+      "fonteCorrecao": {
+        "url": "https://martinfowler.com/articles/2025-caro.html",
+        "consultadaEm": "2026-10-10T07:48:34.922Z"
+      }
+    }
+  ]
+}
