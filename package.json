@@ -14,7 +14,7 @@
     "seo:maintain": "npm run seo:indexation:check && npm run seo:normalize-categories && npm run seo:backfill && npm run seo:backfill:static && npm run seo:rebuild && npm run seo:audit:strict",
     "seo:indexation:plan": "node scripts/indexation-policy.js",
     "seo:indexation:check": "node scripts/indexation-policy.js --check",
-    "test:seo:indexation": "node --test scripts/test-indexation-policy.js",
+    "test:seo:indexation": "node --test scripts/test-indexation-policy.js scripts/test-seo-consolidation.js",
     "test:humanizer": "node scripts/test-humanizer-editorial.js",
     "test:editorial": "node --test scripts/test-editorial-policy.js scripts/test-editorial-review.js scripts/test-editorial-transaction.js scripts/test-editorial-preview.js scripts/test-editorial-queue.js",
     "test:seo:templates": "node --test scripts/test-seo-templates.js",

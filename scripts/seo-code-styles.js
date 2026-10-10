@@ -1,6 +1,7 @@
 const cheerio = require("cheerio");
 
 const estilosCodigoInline = ".article-body code { overflow-wrap: anywhere; } .article-body pre code { overflow-wrap: normal; }";
+const paddingBlocoCodigo = "3rem 1rem 1rem";
 
 function aplicarEstilosCodigoInline(html) {
   if (html.includes(estilosCodigoInline) || !/<code\b/i.test(html)) return html;
@@ -10,4 +11,19 @@ function aplicarEstilosCodigoInline(html) {
   return html.replace(/<\/style>/i, `${estilosCodigoInline}\n</style>`);
 }
 
-module.exports = { estilosCodigoInline, aplicarEstilosCodigoInline };
+function aplicarEspacoBotaoCopiar(html) {
+  if (!/<pre\b/i.test(html) || !html.includes(".copy-button")) return html;
+  const $ = cheerio.load(html, { sourceCodeLocationInfo: true });
+  if (!$(".article-body pre code").length) return html;
+  for (const style of $("head style").toArray().reverse()) {
+    const local = style.sourceCodeLocation;
+    if (!local?.startTag || !local.endTag) continue;
+    const antes = html.slice(local.startTag.endOffset, local.endTag.startOffset);
+    const depois = antes.replace(/^pre \{[^}\r\n]*\}/gm, regra =>
+      regra.replace(/padding: 1rem;/, `padding: ${paddingBlocoCodigo};`));
+    if (antes !== depois) html = html.slice(0, local.startTag.endOffset) + depois + html.slice(local.endTag.startOffset);
+  }
+  return html;
+}
+
+module.exports = { estilosCodigoInline, aplicarEstilosCodigoInline, paddingBlocoCodigo, aplicarEspacoBotaoCopiar };

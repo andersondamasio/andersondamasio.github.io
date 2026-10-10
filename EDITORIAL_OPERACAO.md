@@ -151,6 +151,10 @@ A auditoria ignora `.editorial/`, que contem previas e fragmentos privados nao p
 
 ## Conferencia factual de artigos do acervo
 
+O lote `dados/editorial/consolidacao-generalistas-2026-10.json` documenta a leitura e consolidacao de seis textos sobre o mesmo conceito. A URL mais antiga permanece como guia, com atribuicao a fonte, exercicio explicitamente hipotetico e data visivel da atualizacao. As cinco outras URLs e seus cinco aliases apontam diretamente para esse guia. Os originais completos e seus registros estao arquivados; nenhuma aprovacao humana foi criada. A escolha nao supoe que a URL mais antiga tenha melhor ranking, nem decorre apenas de fonte ou titulo semelhantes.
+
+`npm run test:seo:indexation` confere os hashes desse lote, as copias recuperaveis, os dez redirecionamentos, as datas e a ausencia de links publicos para as origens consolidadas. Uma futura alteracao do corpo do guia exige nova conferencia editorial e atualizacao explicita de `destinoConteudoHash` nas cinco decisoes dependentes; nao remover o bloqueio para aceitar qualquer destino. Preservar o relatorio historico e registrar a nova revisao e seus testes quando atualizar essas expectativas.
+
 Os lotes posteriores ao piloto ficam em `dados/editorial/correcoes-fontes-primarias-2026-10.json` (cinco artigos) e `dados/editorial/correcoes-piloto-agentes-2026-10.json` (sete artigos). Cada registro guarda o corpo anterior por hash, motivo, nova versao, fontes e seletores dos trechos conferidos. O historico anterior nao e sobrescrito. Scores de geracao e Humanizer referentes ao corpo antigo ficam no historico, nao como avaliacao da versao reescrita.
 
 A conferencia assistida das fontes nao representa revisao humana, reproducao dos experimentos citados ou execucao dos roteiros propostos. Os textos distinguem esses limites. A suite de templates verifica correspondencia entre registro, corpo, fonte, descricao, datas e manifesto; esse teste estrutural nao comprova a veracidade das fontes.
@@ -158,6 +162,8 @@ A conferencia assistida das fontes nao representa revisao humana, reproducao dos
 Quando a fonte fornece apenas uma data civil, guardar `AAAA-MM-DD`, sem inventar horario. O bloco editorial preserva esse dia; timestamps completos continuam sendo apresentados no fuso de Sao Paulo. Mudar a fonte principal requer preservar sua referencia anterior no relatorio de correcao, e nao aproveitar a data da noticia secundaria como se fosse a data do documento primario.
 
 `scripts/seo-code-styles.js` compartilha a regra de quebra de identificadores entre o template de novos artigos e o backfill. No acervo, a regra e inserida apenas em paginas com codigo inline; blocos `pre` conservam sua propria rolagem e o texto copiavel nao e modificado. Conferir telas de 320 px com identificadores longos e uma pagina com bloco de codigo ao alterar essa regra.
+
+O mesmo modulo compartilha o espacamento superior dos blocos copiaveis. O backfill corrige a regra legada `pre` com padding de 1rem apenas quando ha bloco de codigo no corpo e estilo do botao Copiar; o template novo ja reserva 3rem acima do texto. A mudanca fica no CSS, preservando codigo e corpo editorial. O QA deve comparar tambem a base do botao com o inicio do codigo, pois ausencia de overflow nao detecta sobreposicao.
 
 ## Exemplos tecnicos reproduziveis
 
