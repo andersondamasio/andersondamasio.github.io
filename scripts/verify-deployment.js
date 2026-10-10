@@ -47,8 +47,18 @@ function prepararVerificacao({ ler, lerBinario, revisao }) {
   const arquivos = ["index.html", "sobre.html", "sitemap.xml", "rss.xml", "robots.txt", "ads.txt", ...recentes, ...arquivosNavegacao, ...arquivosLeituras];
   let controlaDocumentos = false;
   try { controlaDocumentos = Boolean(ler("_config.yml")); } catch { /* Older revisions predate the Pages publication policy. */ }
-  const ausentes = controlaDocumentos ? ["EDITORIAL_OPERACAO", "SEO_MELHORIAS_REALIZADAS", "dados/humanizer-rules", "exemplos/reservoir-sampling/README", "exemplos/design-tokens/README", "exemplos/fila-cpp/README"]
+  const ausentes = controlaDocumentos ? ["EDITORIAL_OPERACAO", "SEO_MELHORIAS_REALIZADAS", "dados/humanizer-rules", "exemplos/reservoir-sampling/README", "exemplos/design-tokens/README", "exemplos/fila-cpp/README", "exemplos/health-checks/README"]
     .flatMap(nome => [`${nome}.md`, `${nome}.html`]) : [];
+  let exemploHealth;
+  try { exemploHealth = ler('exemplos/health-checks/HealthChecks.csproj'); } catch { /* The example is absent in older revisions. */ }
+  if (exemploHealth) {
+    for (const nome of ['HealthChecks.csproj', 'HealthExample.cs', 'Program.cs', 'global.json']) {
+      const arquivo = `exemplos/health-checks/${nome}`;
+      if (!ler(arquivo)?.trim()) throw new Error(`Arquivo do exemplo ausente: ${arquivo}`);
+      arquivos.push(arquivo);
+    }
+    ausentes.push('exemplos/health-checks/bin/Release/net10.0/HealthChecks.dll', 'exemplos/health-checks/obj/project.assets.json');
+  }
   let manifestoTexto;
   const arquivosNoindex = [];
   try { manifestoTexto = ler("dados/indexacao.json"); } catch { /* Revisions before the indexation manifest are still verifiable. */ }

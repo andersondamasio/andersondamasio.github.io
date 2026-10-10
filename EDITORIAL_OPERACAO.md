@@ -290,3 +290,13 @@ RabbitMQ continua rascunho por decisao do usuario; nenhuma correcao de legado eq
 Cada pagina conserva URL, canonical, permissao de indexacao e publicacao original. As correcoes substantivas recebem data visivel e metadados persistidos. Comunicados sao tratados como recortes historicos; declaracoes do fabricante, palestrante ou organizador nao se tornam testes independentes. Cenarios de API, IA e exportacao sao propostas nao executadas. Nao houve teste de malware, tentativa destrutiva de senha, auditoria de incidente ou recomendacao de compra/curso.
 
 Os testes de curadoria verificam hashes, fontes, limites e invariantes, incluindo as tres situacoes de senha do LP50G2. A prova integral compara o acervo antes/depois e protege fila, rascunho, home, perfil e leituras. O outro texto da Victoria's Secret, com recorte de disponibilidade, permanece registrado como pendencia contextual; nao consolidar temas distintos apenas porque citam a mesma empresa. Nenhum novo noindex, retirada ou publicacao de rascunho faz parte deste lote.
+
+## Compatibilidade de fluxos e health checks
+
+O lote seguinte, `dados/editorial/curadoria-fluxos-2026-10.json`, resolve as duas pendencias registradas acima: o artigo de simplicidade do Lens e o de disponibilidade associado ao incidente da Victoria's Secret. Os relatorios anteriores permanecem como historico; o campo `resolvePendenciaDe` identifica a resolucao posterior.
+
+Lens agora distingue o aviso oficial de encerramento e a recomendacao de OneDrive de uma matriz proposta de requisitos. Nao atribui a decisao ao Copilot/IA nem apresenta comparacao pratica entre produtos. O guia de arquivos existentes continua separado e vinculado por link contextual.
+
+O artigo de disponibilidade inclui `exemplos/health-checks`, com middleware nativo de ASP.NET Core 10 e dependencia simulada. A execucao local conferiu 11 requisicoes HTTP, separando liveness, readiness e operacao de negocio. O exemplo abre somente loopback em porta temporaria e encerra o servidor. A CI executa o projeto, e os testes Node comparam o codigo exibido ao arquivo e os hashes ao registro da execucao. Binarios e intermediarios sao ignorados no Git e excluidos do Pages; os quatro arquivos-fonte vinculados no artigo sao publicos.
+
+Um teste executavel didatico nao e experiencia profissional do autor, teste de produto ou auditoria do incidente. O resultado local tem ambiente e limites registrados, sem revisao humana inventada. URLs, datas de publicacao, canonicals e indexacao permanecem. RabbitMQ continua fora da fila e da publicacao.

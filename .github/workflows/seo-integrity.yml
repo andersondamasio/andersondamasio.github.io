@@ -39,6 +39,10 @@ jobs:
         working-directory: exemplos/reservoir-sampling
         run: dotnet run --configuration Release --verbosity minimal
 
+      - name: Verificar liveness e readiness por HTTP local
+        working-directory: exemplos/health-checks
+        run: dotnet run --configuration Release --verbosity minimal
+
   seo-integrity:
     runs-on: ubuntu-latest
 

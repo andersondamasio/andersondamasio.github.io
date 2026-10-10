@@ -4,3 +4,5 @@ node_modules/
 npm-debug.log*
 .editorial/
 SEO_PLANO_RECUPERACAO_2026-10-09.md
+exemplos/health-checks/bin/
+exemplos/health-checks/obj/

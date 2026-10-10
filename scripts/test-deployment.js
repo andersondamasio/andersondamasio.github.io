@@ -62,14 +62,14 @@ test("deploy confere colecao selecionada e artigos antigos sem exigi-los no RSS"
 
 test("documentos do repositorio nao podem virar paginas ou downloads publicos", async () => {
   const esperado = prepararVerificacao({ ler: f => f === "_config.yml" ? "exclude: ['*.md', '**/*.md']" : arquivos[f], revisao: "c".repeat(40) });
-  assert.equal(esperado.ausentes.length, 12);
-  for (const nome of ['design-tokens', 'fila-cpp']) {
+  assert.equal(esperado.ausentes.length, 14);
+  for (const nome of ['design-tokens', 'fila-cpp', 'health-checks']) {
     assert.ok(esperado.ausentes.includes(`exemplos/${nome}/README.md`));
     assert.ok(esperado.ausentes.includes(`exemplos/${nome}/README.html`));
   }
   const ausentes = Object.fromEntries(esperado.ausentes.map(f => [f, null]));
   assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(ausentes), tentativas: 1 })).aceita, true);
-  for (const nome of ['design-tokens', 'fila-cpp']) for (const extensao of ['md', 'html']) {
+  for (const nome of ['design-tokens', 'fila-cpp', 'health-checks']) for (const extensao of ['md', 'html']) {
     assert.equal((await verificarPublicacao({ esperado,
       fetchImpl: mockFetch({ ...ausentes, [`exemplos/${nome}/README.${extensao}`]: 'Documento exposto' }), tentativas: 1 })).aceita, false);
   }
@@ -79,6 +79,23 @@ test("documentos do repositorio nao podem virar paginas ou downloads publicos", 
     const fetchImpl = (url, options) => url.endsWith("EDITORIAL_OPERACAO.md") ? { status } : original(url, options);
     assert.equal((await verificarPublicacao({ esperado, fetchImpl, tentativas: 1 })).aceita, false);
   }
+});
+
+test('deploy exige os quatro arquivos do exemplo health e nao expoe build intermediario', async () => {
+  const nomes = ['HealthChecks.csproj', 'HealthExample.cs', 'Program.cs', 'global.json'];
+  const fontes = Object.fromEntries(nomes.map(nome => [`exemplos/health-checks/${nome}`, `Conteudo ${nome}`]));
+  const esperado = prepararVerificacao({ ler: f => fontes[f] || arquivos[f], revisao: 'e'.repeat(40) });
+  for (const nome of nomes) assert.ok(esperado.arquivos.some(a => a.arquivo === `exemplos/health-checks/${nome}`));
+  assert.equal(esperado.ausentes.length, 2);
+  const ausentes = Object.fromEntries(esperado.ausentes.map(f => [f, null]));
+  const conferir = alteracoes => verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...fontes, ...ausentes, ...alteracoes }), tentativas: 1 });
+  assert.equal((await conferir({})).aceita, true);
+  for (const nome of nomes) {
+    assert.equal((await conferir({ [`exemplos/health-checks/${nome}`]: null })).aceita, false);
+    assert.equal((await conferir({ [`exemplos/health-checks/${nome}`]: 'Obsoleto' })).aceita, false);
+  }
+  for (const f of esperado.ausentes) assert.equal((await conferir({ [f]: 'Intermediario exposto' })).aceita, false);
+  assert.throws(() => prepararVerificacao({ ler: f => f.endsWith('Program.cs') ? undefined : fontes[f] || arquivos[f], revisao: 'e'.repeat(40) }), /Arquivo do exemplo ausente/);
 });
 
 test("verificacao escolhe artigos indexaveis, respeitando curadoria do mais recente", () => {
