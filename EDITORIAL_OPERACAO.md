@@ -282,3 +282,11 @@ O cronograma e a alternativa do Lens foram atualizados segundo a documentacao co
 Duas paginas repetidas sobre voz foram consolidadas diretamente no guia corrigido, com snapshots recuperaveis, aliases/canonical e redirecionamento estatico imediato. Nao sao respostas HTTP 301. O manifesto impede que o rebuild recrie os artigos consolidados. Os testes conferem fontes, hashes, datas originais, ausencia de alegacoes pessoais, copias e destinos. O artigo de Lens com recorte de simplicidade de produto permanece documentado como pendencia contextual, sem aprovacao implicita.
 
 RabbitMQ continua rascunho por decisao do usuario; nenhuma correcao de legado equivale a aprovar ou colocar esse rascunho na fila. Cadencia semanal, barreira de revisao humana e teto de custos nao foram alterados.
+
+## Correcao de orientacoes de seguranca
+
+`dados/editorial/curadoria-seguranca-2026-10.json` registra sete revisoes individuais com fontes primarias. Os textos corrigem a distincao entre autenticacao e autorizacao, o estado do OWASP AITG, a alegacao divulgada pela Axis Max Life, verificacoes do Windows, atribuicoes de uma palestra, os modos de senha do IronKey LP50G2 e os limites de um anuncio de formacao. Relatos pessoais sem evidencia, promessas de seguranca e o middleware incompleto apresentado como protecao das rotas foram removidos.
+
+Cada pagina conserva URL, canonical, permissao de indexacao e publicacao original. As correcoes substantivas recebem data visivel e metadados persistidos. Comunicados sao tratados como recortes historicos; declaracoes do fabricante, palestrante ou organizador nao se tornam testes independentes. Cenarios de API, IA e exportacao sao propostas nao executadas. Nao houve teste de malware, tentativa destrutiva de senha, auditoria de incidente ou recomendacao de compra/curso.
+
+Os testes de curadoria verificam hashes, fontes, limites e invariantes, incluindo as tres situacoes de senha do LP50G2. A prova integral compara o acervo antes/depois e protege fila, rascunho, home, perfil e leituras. O outro texto da Victoria's Secret, com recorte de disponibilidade, permanece registrado como pendencia contextual; nao consolidar temas distintos apenas porque citam a mesma empresa. Nenhum novo noindex, retirada ou publicacao de rascunho faz parte deste lote.

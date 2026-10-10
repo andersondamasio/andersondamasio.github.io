@@ -7781,13 +7781,26 @@
     "urlFonte": "https://www.infoq.com/presentations/llm-meta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   },
   {
-    "titulo": "Victoria's Secret e o Alerta de Segurança: Lições para Arquitetos de Software",
-    "noticiaOriginal": "Victoria's Secret takes down US website after 'security incident'",
+    "titulo": "Victoria's Secret: incidente e limites de um exemplo de autenticação",
+    "noticiaOriginal": "Victoria's Secret & Co. Provides First Quarter 2025 Preliminary Results and Update on Security Incident",
     "url": "artigos/seguranca/victoria-s-secret-e-o-alerta-de-seguranca-licoes-para-arquitetos-de-software.html",
     "data": "2025-06-02T04:29:51.948Z",
-    "dataFonte": "2025-05-29T10:59:05.000Z",
+    "dataFonte": "2025-06-03",
     "categoria": "Segurança",
-    "urlFonte": "https://www.bbc.com/news/articles/cwy6l5573jyo"
+    "urlFonte": "https://www.sec.gov/Archives/edgar/data/1856437/000185643725000026/ex991vsco632025.htm",
+    "seo": {
+      "description": "O comunicado de 2025 e uma revisão proposta de acesso em ASP.NET Core, sem atribuir causa ao incidente nem tratar um middleware isolado como proteção completa.",
+      "modifiedAt": "2026-10-10T06:44:46.166Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T06:44:46.166Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar middleware incompleto apresentado como garantia de seguranca e relato de projeto nao comprovado; distinguir fatos do incidente e proposta de autorizacao.",
+      "hashAntes": "f189f867e36da16088fe8720a21c39d40719926866984293995db4a78b6127fb",
+      "hashDepois": "a72c65197609f6fa30127cb51ea8c61007aef06552bbb0fa528397c8b6bc807d",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-seguranca-2026-10.json"
+    }
   },
   {
     "titulo": "A Nova Página de Ciclo de Vida da AWS: Como a Arquitetura de Software Pode Navegar por Mudanças",
@@ -13022,13 +13035,25 @@
     "urlFonte": "https://techcrunch.com/2025/06/27/jesse-drapers-halogen-ventures-closes-30m-fund-iii-to-focus-on-future-of-family/"
   },
   {
-    "titulo": "A nova era dos testes de IA: desvendando riscos e segurança",
-    "noticiaOriginal": "OWASP Launches AI Testing Guide to Address Security, Bias, and Risk in AI Systems",
+    "titulo": "OWASP AI Testing Guide: transformar riscos em testes verificáveis",
+    "noticiaOriginal": "OWASP AI Testing Guide",
     "url": "artigos/seguranca/a-nova-era-dos-testes-de-ia-desvendando-riscos-e-seguranca.html",
     "data": "2025-06-28T06:26:40.231Z",
-    "dataFonte": "2025-06-28T05:23:00.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.infoq.com/news/2025/06/ai-testing-guide/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://owasp.org/projects/ai-testing-guide",
+    "seo": {
+      "description": "Conheça o recorte do AITG e um exemplo proposto de teste de acesso entre clientes, com configuração, evidência esperada e limites da conclusão.",
+      "modifiedAt": "2026-10-10T06:44:46.166Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T06:44:46.166Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir estado do guia, retirar experiencia pessoal e promessas de garantia de imparcialidade, privacidade ou robustez.",
+      "hashAntes": "ec947edf259c76c4db942602c9b369c6d5e2e696058859a3de33e2bf12148d7f",
+      "hashDepois": "735062fc568cf56858a6346505f4a851a5f2a60a2f690f13c0abc9da970faa29",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-seguranca-2026-10.json"
+    }
   },
   {
     "titulo": "Explorando as Conversas com AIs: O Que Elas Podem Aprender com o Meu Gato",
@@ -13907,13 +13932,26 @@
     "urlFonte": "https://www.zdnet.com/article/best-prime-day-amazon-echo-deals-2025/"
   },
   {
-    "titulo": "Segurança em Alta: O Caso do Vazamento de Dados da Max Life Insurance e suas Implicações",
-    "noticiaOriginal": "India’s Max Financial says hacker accessed customer data from its insurance unit",
+    "titulo": "Axis Max Life: o que o comunicado de julho de 2025 permite afirmar",
+    "noticiaOriginal": "Reporting Cyber Threat - Axis Max Life",
     "url": "artigos/seguranca/seguranca-em-alta-o-caso-do-vazamento-de-dados-da-max-life-insurance-e-suas-implicacoes.html",
     "data": "2025-07-02T18:29:58.617Z",
-    "dataFonte": "2025-07-02T18:18:39.000Z",
+    "dataFonte": "2025-07-02",
     "categoria": "Segurança",
-    "urlFonte": "https://techcrunch.com/2025/07/02/indias-max-financial-says-hacker-accessed-customer-data-from-its-insurance-unit/"
+    "urlFonte": "https://www.maxfinancialservices.com/static/uploads/stakeholder/sed02072025.pdf",
+    "seo": {
+      "description": "Distinga a alegação de acesso, as medidas divulgadas e o que o comunicado da Max Financial não comprovava sobre dados de clientes.",
+      "modifiedAt": "2026-10-10T06:44:46.166Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T06:44:46.166Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir vazamento tratado como confirmado, inferencias de causa e experiencia pessoal sem evidencia.",
+      "hashAntes": "8a84b4b4ad95e32e39c24342f4c3b80ab971ee405ed16dab2ccb37f4045af07e",
+      "hashDepois": "32926275d59560bdfa5c86a1fde5a92e00633b73d2e8226fada41b93a7c12638",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-seguranca-2026-10.json"
+    }
   },
   {
     "titulo": "A revolução da IA: como o futuro do trabalho pode ser mais interessante",
@@ -43787,13 +43825,25 @@
     "urlFonte": "https://www.zdnet.com/article/one-of-the-best-looking-amplifiers-ive-tested-also-delivers-dynamic-audio-for-virtually-every-genre/"
   },
   {
-    "titulo": "Como Proteger Seu PC de Vírus: Dicas Práticas e Técnicas de Arquitetura de Software",
-    "noticiaOriginal": "How to find and remove viruses on your Windows PC - 12 free methods that I can attest to",
+    "titulo": "Suspeita de malware no Windows: verificações e registro para suporte",
+    "noticiaOriginal": "Virus and Threat Protection in the Windows Security App",
     "url": "artigos/seguranca/como-proteger-seu-pc-de-virus-dicas-praticas-e-tecnicas-de-arquitetura-de-software.html",
     "data": "2025-12-04T17:24:17.860Z",
-    "dataFonte": "2025-12-04T17:22:00.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/how-to-find-and-remove-pc-viruses-for-free/"
+    "urlFonte": "https://support.microsoft.com/en-us/windows/security/threat-malware-protection/virus-and-threat-protection-in-the-windows-security-app",
+    "seo": {
+      "description": "Diferencie verificação completa e offline no Windows 11, registre alertas para o suporte e evite tratar lentidão como diagnóstico de infecção.",
+      "modifiedAt": "2026-10-10T06:44:46.166Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T06:44:46.166Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir fluxo de verificacao, retirar relato pessoal e limpeza/reinstalacao genericas como garantia de protecao.",
+      "hashAntes": "247b2eb6037aae7c6523d1eeb57fc23c28fbb034354cf0515e98dd42613e10b8",
+      "hashDepois": "1f04a6b75b4add57ac4885f1f4c03e893397ac075b9c598af1cf1a547bfcf7b9",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-seguranca-2026-10.json"
+    }
   },
   {
     "titulo": "Espionagem digital: quando os fabricantes de spyware cruzam a linha",
@@ -64259,13 +64309,25 @@
     "urlFonte": "https://www.bbc.com/news/articles/cj37eeyz0epo?at_medium=RSS&at_campaign=rss"
   },
   {
-    "titulo": "Desvendando os Laços Entre Arquitetura e Segurança: Um Caminho para a Resiliência",
-    "noticiaOriginal": "Presentation: Security and Architecture: To Betray One Is To Destroy Both",
+    "titulo": "Arquitetura e segurança: registrar decisões, restrições e evidências",
+    "noticiaOriginal": "Security and Architecture: to Betray One is to Destroy Both",
     "url": "artigos/seguranca/desvendando-os-lacos-entre-arquitetura-e-seguranca-um-caminho-para-a-resiliencia.html",
     "data": "2026-03-27T09:59:41.619Z",
-    "dataFonte": "2026-03-27T09:27:00.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.infoq.com/presentations/security-architecture-systemic-vulnerabilities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://www.infoq.com/presentations/security-architecture-systemic-vulnerabilities/",
+    "seo": {
+      "description": "A discussão de Shana Dacres-Lawrence e um exemplo hipotético de registro de decisão para uma exportação de dados, sem aprovações ou experiências inventadas.",
+      "modifiedAt": "2026-10-10T06:44:46.166Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T06:44:46.166Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Devolver relatos profissionais a palestrante e retirar causalidade especulativa sobre CrowdStrike e garantias de resiliencia.",
+      "hashAntes": "bb8e635f9ec63e14b8d92deedebfd3b918871b73b4d63165b58ae023f3e14353",
+      "hashDepois": "1a0e89afdb96b59c35cc34ba814c251441d2a674396ce05d7cab674b99c7f6e5",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-seguranca-2026-10.json"
+    }
   },
   {
     "titulo": "Aproveitando a Primavera: Como a Tecnologia Pode Transformar Compras de Saúde",
@@ -69244,13 +69306,25 @@
     "urlFonte": "https://www.zdnet.com/article/ubuntu-26-04-vs-fedora-44/"
   },
   {
-    "titulo": "Ferramentas de Segurança: Será que os Drives USB Criptografados São Realmente à Prova de Hackers?",
-    "noticiaOriginal": "Can hackers break encrypted USB drives? I tried to find out",
+    "titulo": "IronKey Locker+ 50 G2: senhas, apagamento e limites da criptografia",
+    "noticiaOriginal": "IronKey Locker+ 50 G2 User Manual",
     "url": "artigos/seguranca/ferramentas-de-seguranca-sera-que-os-drives-usb-criptografados-sao-realmente-a-prova-de-hackers.html",
     "data": "2026-05-11T21:21:58.538Z",
-    "dataFonte": "2026-05-11T20:42:00.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/kingston-ironkey-locker50-g2-review/"
+    "urlFonte": "https://media.kingston.com/support/downloads/iklp50g2-user-guide.pdf",
+    "seo": {
+      "description": "Entenda as diferenças entre Admin, User e User-Only no LP50G2 e os cuidados de uso, sem um teste pessoal ou promessa de imunidade a ataques.",
+      "modifiedAt": "2026-10-10T06:44:46.166Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T06:44:46.166Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar falso teste destrutivo, confusao sobre cifragem do volume, imunidade a malware e regra unica de dez tentativas.",
+      "hashAntes": "cfb6570f636ee1c1196d33d90edd290bf5ef34a334a9a29b0e0f8c08ec8f42f6",
+      "hashDepois": "0c46337ca7e3f0d80edce4e4d2e820bf90204d30c254fccd3362249425076ae9",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-seguranca-2026-10.json"
+    }
   },
   {
     "titulo": "A era da privacidade: mensagens criptografadas entre iPhone e Android",
@@ -72685,21 +72759,25 @@
     }
   },
   {
-    "titulo": "Segurança e Privacidade em IA: O Novo Desafio dos Arquitetos de Software",
+    "titulo": "Formação em segurança de IA: o que avaliar além da grade do curso",
     "noticiaOriginal": "InfoQ Opens AI Security & Privacy Engineering Cohort for Regulated Industries",
     "url": "artigos/seguranca/seguranca-e-privacidade-em-ia-o-novo-desafio-dos-arquitetos-de-software.html",
     "data": "2026-07-08T04:13:49.238Z",
-    "dataFonte": "2026-07-06T12:00:00.000Z",
+    "dataFonte": "2026-07-06",
     "categoria": "Segurança",
-    "urlFonte": "https://www.infoq.com/news/2026/07/online-cohort-ai-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "qualidadeEditorial": {
-      "politica": "fonte-rastreavel-recente-com-analise-propria",
-      "scoreFonte": 110,
-      "sinalEditorial": 88,
-      "palavrasFonte": 493,
-      "palavrasArtigo": 982,
-      "secoesArtigo": 9,
-      "similaridadeFonte": 0
+    "urlFonte": "https://www.infoq.com/news/2026/07/online-cohort-ai-security/",
+    "seo": {
+      "description": "Perguntas para avaliar entregas, feedback e limites de uma formação em segurança de IA, a partir do anúncio histórico da InfoQ e sem recomendar matrícula.",
+      "modifiedAt": "2026-10-10T06:44:46.166Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T06:44:46.166Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar experiencia, promocao, obrigatoriedade de ferramenta e garantias de sandbox/conformidade; delimitar anuncio e avaliacao de aprendizado.",
+      "hashAntes": "aa8e17b90551aa9bbdefa5a46925ab0b44600a7139c67da1574b21ddc84b305d",
+      "hashDepois": "974104493b78e2c0e3fa1f4bab1932931b20995763d1bb5c4b63c57383979adc",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-seguranca-2026-10.json"
     }
   },
   {

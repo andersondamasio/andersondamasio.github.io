@@ -198,6 +198,85 @@ test('guias de backup preservam publicacao e indexacao, sem prometer testes ou v
   }
 });
 
+test('correcoes de seguranca preservam identidade e vinculam afirmacoes a fontes primarias', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-seguranca-2026-10.json'));
+  assert.equal(lote.artigos.length, 7);
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.experimentosExecutados, false);
+  assert.equal(lote.metricasGoogle, null);
+  assert.equal(lote.linksExternosConhecidos, null);
+  const permitidos = new Set(['www.sec.gov', 'learn.microsoft.com', 'support.microsoft.com',
+    'owasp.org', 'www.maxfinancialservices.com', 'media.kingston.com', 'www.infoq.com']);
+  for (const a of lote.artigos) {
+    const q = cheerio.load(ler(a.url));
+    const r = cadastro.find(r => r.url === a.url);
+    const decisao = manifesto.decisoes.find(d => d.url === a.url);
+    assert.equal(a.acao, 'atualizar');
+    assert.equal(r.data, a.antes.data);
+    assert.equal(r.revisaoHumana, undefined);
+    assert.equal(r.correcaoEditorial.revisaoHumana, false);
+    assert.equal(r.seo.modifiedAt, lote.em);
+    assert.equal(q('h1').text(), a.depois.titulo);
+    assert.equal(q('meta[name=description]').attr('content'), a.depois.descricao);
+    assert.equal(q('meta[property="article:published_time"]').attr('content'), a.antes.data);
+    assert.equal(q('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    assert.doesNotMatch(q('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(hashCorpoEditorial(q('.article-body').html()), a.depois.corpoHash);
+    assert.equal(decisao.conteudoHash, a.depois.corpoHash);
+    assert.equal(decisao.motivo, a.motivo);
+    assert.equal(q('.contribuicao-editorial').length, 1);
+    assert.equal(q('.limites-editoriais').length, 1);
+    assert.ok(a.pergunta && a.sobreposicao);
+    assert.equal(r.qualidadeEditorial, undefined);
+    for (const e of a.evidencias) {
+      assert.ok(permitidos.has(new URL(e.fonte).hostname));
+      assert.equal(q(e.seletor).length, 1);
+      assert.equal(hashCorpoEditorial(q(e.seletor).html()), e.textoHash);
+      assert.equal(q(e.seletor).find('a').attr('href'), e.fonte);
+    }
+    assert.doesNotMatch(q('.article-body').text(), /eu testei isso|tive a oportunidade de testar|com base na minha experiência|baseado em minha experiência|lembro-me de um projeto|já passei por isso em um projeto/i);
+  }
+});
+
+test('textos de seguranca nao confundem proposta, autenticacao, alegacao ou teste destrutivo com evidencia', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-seguranca-2026-10.json'));
+  const pagina = trecho => cheerio.load(ler(lote.artigos.find(a => a.url.includes(trecho)).url));
+  const auth = pagina('victoria-s-secret');
+  assert.equal(auth('.article-body pre').length, 0);
+  assert.match(auth('.article-body').text(), /autenticação.*identidade.*autorização.*acesso/s);
+  assert.match(auth('.contribuicao-editorial').text(), /pedido de outro cliente/);
+  assert.match(auth('.fato-incidente').text(), /não identifica uma falha de autenticação/);
+  assert.match(auth('.limites-editoriais').text(), /não foi executado/);
+  const axis = pagina('seguranca-em-alta');
+  assert.doesNotMatch(axis('h1').text(), /vazamento/i);
+  assert.match(axis('.fato-comunicado').text(), /alegando acesso/);
+  assert.match(axis('.article-body').text(), /não afirma que a investigação continua aberta hoje/);
+  const windows = pagina('como-proteger-seu-pc');
+  assert.match(windows('.fato-offline').text(), /Salve o trabalho/);
+  assert.match(windows('.fato-offline').text(), /verificação rápida no ambiente de recuperação/);
+  assert.match(windows('.limites-editoriais').text(), /Nenhuma verificação.*foi executada/);
+  const ironkey = pagina('ferramentas-de-seguranca');
+  assert.equal(ironkey('.fato-manual li').length, 3);
+  assert.match(ironkey('.fato-manual li').eq(0).text(), /bloqueio.*redefinição/);
+  assert.match(ironkey('.fato-manual li').eq(1).text(), /Admin.*apagamento criptográfico/);
+  assert.match(ironkey('.fato-manual li').eq(2).text(), /User-Only.*apagamento criptográfico/);
+  assert.match(ironkey('.article-body').text(), /Não provoque o limite de tentativas/);
+  assert.match(ironkey('.limites-editoriais').text(), /não foi testado/);
+  const arquitetura = pagina('desvendando-os-lacos');
+  assert.match(arquitetura('.fato-palestra').text(), /Shana Dacres-Lawrence/);
+  assert.match(arquitetura('.fato-palestra').text(), /não de Anderson Damasio/);
+  const aitg = pagina('a-nova-era-dos-testes');
+  assert.match(aitg('.fato-aitg').text(), /26 de novembro de 2025/);
+  assert.match(aitg('.contribuicao-editorial').text(), /resultado: não executado/);
+  const curso = pagina('seguranca-e-privacidade');
+  const cursoRegistro = lote.artigos.find(a => a.url.includes('seguranca-e-privacidade'));
+  assert.equal(cursoRegistro.antes.qualidadeEditorialAnterior.palavrasArtigo, 982);
+  assert.match(curso('.article-body').text(), /não recomenda matrícula/);
+  assert.match(curso('.limites-editoriais').text(), /Não houve participação ou avaliação independente/);
+  assert.ok(curso('.article-body a').toArray().some(el => curso(el).attr('href') === `/${lote.artigos.find(a => a.url.includes('a-nova-era-dos-testes')).url}`));
+});
+
 test('curadoria contextual tem decisoes individuais, sem inventar metricas ou aprovacao humana', () => {
   assert.equal(relatorio.revisaoHumana, false);
   assert.equal(relatorio.metricasGoogle, null);
