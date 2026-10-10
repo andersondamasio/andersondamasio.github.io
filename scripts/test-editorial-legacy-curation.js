@@ -12,6 +12,36 @@ const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.js
 const manifesto = JSON.parse(ler('dados/indexacao.json'));
 const cadastro = JSON.parse(ler('titulos.json'));
 
+test('retiradas de noticias preservam copias integrais sem substituir intencoes ou inventar metricas', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-noticias-2026-10.json'));
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.metricasGoogle, null);
+  assert.equal(lote.linksExternosConhecidos, null);
+  assert.equal(lote.experimentosExecutados, false);
+  assert.equal(lote.artigos.length, 4);
+  for (const a of lote.artigos) {
+    const d = manifesto.decisoes.find(d => d.url === a.url);
+    const copia = JSON.parse(ler(a.arquivoRecuperavel));
+    assert.equal(a.acao, 'retirar');
+    assert.equal(d.acao, 'retirar');
+    assert.equal(d.destino, undefined);
+    assert.equal(a.destinoEquivalente, null);
+    assert.ok(a.motivo && a.evidencia && a.alternativas);
+    assert.equal(a.fonteConferida.url, a.antes.fonte.url);
+    assert.equal(cadastro.some(r => r.url === a.url), false);
+    assert.equal(hashRegistros(copia.registros), d.registrosHash);
+    assert.equal(hashArquivo(copia.arquivos[0].html), d.arquivoHash);
+    assert.equal(copia.registros[0].data, a.antes.data);
+    assert.equal(copia.registros[0].titulo, a.antes.titulo);
+    const q = cheerio.load(copia.arquivos[0].html);
+    assert.equal(hashCorpoEditorial(q('.article-body').html()), a.antes.corpoHash);
+    assert.equal(d.conteudoHash, a.antes.corpoHash);
+    assert.deepEqual(copia.arquivos.map(f => f.url), [a.url, ...a.aliases]);
+    for (const arquivo of copia.arquivos) assert.equal(fs.existsSync(path.join(root, arquivo.url)), false);
+    for (const alias of d.aliases) assert.equal(hashArquivo(copia.arquivos.find(f => f.url === alias.url).html), alias.arquivoHash);
+  }
+});
+
 test('correcoes de fatos preservam URLs, datas e evidencias sem aprovar vivencia ou experimento', () => {
   const lote = JSON.parse(ler('dados/editorial/curadoria-fatos-2026-10.json'));
   assert.equal(lote.revisaoHumana, false);
