@@ -11,6 +11,74 @@ const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.js
 const manifesto = JSON.parse(ler('dados/indexacao.json'));
 const cadastro = JSON.parse(ler('titulos.json'));
 
+test('alegacoes de testes de produtos sao substituidas por fontes e propostas explicitamente nao executadas', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-testes-produtos-2026-10.json'));
+  const corrigidos = lote.artigos.filter(a => a.acao === 'atualizar');
+  assert.equal(corrigidos.length, 4);
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.experimentosExecutados, false);
+  assert.equal(lote.metricasGoogle, null);
+  for (const a of corrigidos) {
+    const $ = cheerio.load(ler(a.url));
+    const r = cadastro.find(r => r.url === a.url);
+    assert.equal(r.data, a.antes.data);
+    assert.equal(r.revisaoHumana, undefined);
+    assert.equal(r.correcaoEditorial.revisaoHumana, false);
+    assert.equal(r.seo.modifiedAt, lote.em);
+    assert.equal($('h1').text(), a.depois.titulo);
+    assert.equal($('meta[name=description]').attr('content'), a.depois.descricao);
+    assert.equal($('meta[property="article:published_time"]').attr('content'), a.antes.data);
+    assert.equal($('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.equal($('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    assert.doesNotMatch($('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(hashCorpoEditorial($('.article-body').html()), a.depois.corpoHash);
+    assert.equal(manifesto.decisoes.find(d => d.url === a.url).conteudoHash, a.depois.corpoHash);
+    assert.equal($('.contribuicao-editorial').length, 1);
+    assert.match($('.limites-editoriais').text(), /não foi executado|Nenhum teste.*foi executado/);
+    assert.doesNotMatch($('.article-body').text(), /testei|aprovei|aprendi na prática|garante que seus documentos/);
+    for (const e of a.evidencias) {
+      assert.equal($(e.seletor).length, 1);
+      assert.equal(hashCorpoEditorial($(e.seletor).html()), e.textoHash);
+      assert.ok($(e.seletor).find('a').toArray().some(el => $(el).attr('href') === e.fonte));
+    }
+  }
+  const lens = cheerio.load(ler(corrigidos.find(a => a.url.includes('microsoft-lens')).url));
+  assert.match(lens('.fato-encerramento').text(), /9 de janeiro de 2026/);
+  assert.match(lens('.fato-alternativa').text(), /não salva digitalizações localmente/);
+  const voz = cheerio.load(ler(corrigidos.find(a => a.url.includes('revolucao-da-voz')).url));
+  assert.match(voz('.fato-ditado').text(), /antes do envio/);
+  assert.match(voz('.contribuicao-editorial').text(), /cenário fictício/);
+});
+
+test('consolidacoes de voz preservam copias e levam diretamente ao guia equivalente', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-testes-produtos-2026-10.json'));
+  const ciclos = lote.artigos.filter(a => a.acao === 'consolidar');
+  assert.equal(ciclos.length, 2);
+  const sitemap = cheerio.load(ler('sitemap.xml'), { xmlMode: true });
+  const urls = sitemap('loc').map((_, e) => sitemap(e).text()).get();
+  for (const a of ciclos) {
+    const d = manifesto.decisoes.find(d => d.url === a.url);
+    assert.ok(!cadastro.some(r => r.url === a.url));
+    assert.ok(!urls.includes(`https://www.andersondamasio.com.br/${a.url}`));
+    const copia = JSON.parse(ler(a.arquivoRecuperavel));
+    assert.equal(hashRegistros(copia.registros), d.registrosHash);
+    assert.equal(hashArquivo(copia.arquivos[0].html), d.arquivoHash);
+    assert.equal(hashCorpoEditorial(cheerio.load(copia.arquivos[0].html)('.article-body').html()), a.antes.corpoHash);
+    for (const alias of d.aliases) assert.equal(hashArquivo(copia.arquivos.find(p => p.url === alias.url).html), alias.arquivoHash);
+    for (const p of [a.url, ...d.aliases.map(b => b.url)]) {
+      const $ = cheerio.load(ler(p));
+      assert.equal($('.article-body').length, 0);
+      assert.equal($('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.destinoEquivalente}`);
+      assert.match($('meta[name=robots]').attr('content'), /noindex/);
+      assert.equal($('meta[http-equiv=refresh]').attr('content'), `0; url=https://www.andersondamasio.com.br/${a.destinoEquivalente}`);
+    }
+    const destino = cheerio.load(ler(a.destinoEquivalente));
+    assert.equal(hashCorpoEditorial(destino('.article-body').html()), d.destinoConteudoHash);
+    assert.doesNotMatch(destino('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(destino('meta[http-equiv=refresh]').length, 0);
+  }
+});
+
 test('correcao de atribuicoes preserva publicacao e distingue fontes de propostas nao executadas', () => {
   const lote = JSON.parse(ler('dados/editorial/curadoria-atribuicoes-2026-10.json'));
   assert.equal(lote.artigos.length, 8);

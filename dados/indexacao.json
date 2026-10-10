@@ -854,6 +854,92 @@
           "arquivoHash": "a6cb7728239e971282839c05118b96d746c3c2b7a7abc7c58aad6b548d047ee0"
         }
       ]
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-era-do-microsoft-lens-alternativas-e-o-impacto-da-mudanca.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir cronograma antigo, substituto e recomendacoes baseadas em alegacao de teste pessoal nao comprovado.",
+      "evidencia": "Leitura integral encontrou testei e aprovei, retirada em setembro/novembro/dezembro e recomendacao de Copilot. A fonte primaria atual informa janeiro/fevereiro/marco de 2026, OneDrive e limitacao de gravacao local.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:13:50.811Z"
+      },
+      "conteudoHash": "fdef17a065ba4f2f4171363018096fe1d62bf96551bd771161c3a2f405f6f164"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-da-musica-no-seu-bolso-o-que-a-nova-atualizacao-do-gemini-traz-para-os-fas.html",
+      "acao": "atualizar",
+      "motivo": "Remover falsa experiencia de reconhecimento, garantia de precisao e generalizacao para todos os aparelhos Android.",
+      "evidencia": "Leitura integral encontrou pelo que eu testei, comparacao de canto/reproducao nao executada e disponibilidade universal. Ajuda primaria distingue acessos a pesquisa e recurso de notificacao Pixel.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:13:50.811Z"
+      },
+      "conteudoHash": "7302ea640e759a6331cd0c4114f400c090e043ab89686218be08b0938600d545"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-da-voz-como-o-chatgpt-pode-transformar-sua-produtividade.html",
+      "acao": "atualizar",
+      "motivo": "Remover falso teste pessoal, produtividade prometida e generalizacao de transcricao e disponibilidade; distinguir voz de ditado.",
+      "evidencia": "Leitura de tres textos sobre voz do ChatGPT identificou mesmos usos genericos. Documentacao primaria atual do desktop delimita disponibilidade e distingue ditado revisavel de conversa ao vivo.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:13:50.811Z"
+      },
+      "conteudoHash": "14e8f9c1ad8f0f676d7b18ce965625cb2cc1673815a55265645b528bdcbb01a4"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/copilot-no-outlook-vale-a-pena-ou-e-so-mais-um-brinquedo-de-ia.html",
+      "acao": "atualizar",
+      "motivo": "Remover relato pessoal de teste e orientacao de desativacao nao sustentada; substituir recomendacao por criterios verificaveis.",
+      "evidencia": "Leitura integral encontrou testei o Copilot e avaliacoes pessoais de carta e estilo. Fontes primarias descrevem requisitos, revisao do rascunho e referencias no resumo sem comprovar produtividade.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:13:50.811Z"
+      },
+      "conteudoHash": "4ab117489bb6b0a18e9171dad7ebaf13b2df815991219eca155ca5ac7a765b58"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-da-voz-como-o-novo-chatgpt-voice-pode-transformar-a-interacao-com-ia.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar introducao sobre uso de voz com promessas absolutas de compreensao e disponibilidade no guia documentado equivalente.",
+      "evidencia": "Leitura integral da origem e destino: ambos explicam conversa por voz e usos cotidianos; origem promete entender perfeitamente e nunca interromper, sem ensaio. Destino delimita disponibilidade, fluxo e revisao, sem substituir por tema diferente.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:13:50.811Z"
+      },
+      "conteudoHash": "d127dd01aff635c2e7f44fb9e827dd33e7ddd20ff304c0ea6028006c19b85aee",
+      "arquivoHash": "40a8447a8ab74a35c58ee2fa707ceb993c694e90b3f3a272ae47f8ea8a1f57ec",
+      "registrosHash": "e85f99fe274369b61bb0af07f4e7c55dc1e85031301cde5a484ce0b13d9ae6fa",
+      "aliases": [
+        {
+          "url": "inteligencia-artificial/a-revolucao-da-voz-como-o-novo-chatgpt-voice-pode-transformar-a-interacao-com-ia.html",
+          "arquivoHash": "2063e378f472e51a7a304038ce30e7727db2d72666ca53c2605d5b2422bd6712"
+        }
+      ],
+      "destino": "artigos/inteligencia-artificial/a-revolucao-da-voz-como-o-chatgpt-pode-transformar-sua-produtividade.html",
+      "destinoConteudoHash": "14e8f9c1ad8f0f676d7b18ce965625cb2cc1673815a55265645b528bdcbb01a4"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-da-produtividade-com-o-chatgpt-como-a-voz-pode-ser-sua-aliada.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar orientacoes de voz/produtividade repetidas e comparacoes sem medicao em guia com limites e proposta verificavel.",
+      "evidencia": "Leitura integral: organizacao de ideias, entrevistas, traducao e multitarefa repetem a pagina mantida; alegacoes de feedback superior e transcricao geral nao sustentadas. Destino cobre avaliacao de uso profissional sem prometer ganhos.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:13:50.811Z"
+      },
+      "conteudoHash": "ee8733e8a02c3ccae17e68ab522667db76a4c40bf7138f1844adc9c0d819a658",
+      "arquivoHash": "9c5548dc631f9ccfd4732307a6a10f406e7478af3353387b4e5a6c9519c8ff14",
+      "registrosHash": "79905896194b9dc8d06f503a2c416d64e9554b84160d94fa110ac462a29fdcc7",
+      "aliases": [
+        {
+          "url": "inteligencia-artificial/a-revolucao-da-produtividade-com-o-chatgpt-como-a-voz-pode-ser-sua-aliada.html",
+          "arquivoHash": "bde116727e5f7a7fecf72a3ef27426d3737ca8d569ce060a6e6e22fabb0d0e9d"
+        }
+      ],
+      "destino": "artigos/inteligencia-artificial/a-revolucao-da-voz-como-o-chatgpt-pode-transformar-sua-produtividade.html",
+      "destinoConteudoHash": "14e8f9c1ad8f0f676d7b18ce965625cb2cc1673815a55265645b528bdcbb01a4"
     }
   ]
 }
