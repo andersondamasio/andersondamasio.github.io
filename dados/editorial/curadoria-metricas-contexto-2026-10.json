@@ -1,0 +1,211 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T08:20:54.535Z",
+  "base": "f511c3c2911f8201bfdaf2c3935d462f2e2f81b2",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": true,
+  "escopo": "Quatro leituras integrais: tres correcoes e uma consolidacao equivalente. Exemplo sintetico de metricas executado offline. Sem teste de LLM, equipe, Copilot, chamada paga ou aprovacao de rascunho.",
+  "datasDasFontes": "Wei et al.: versao 2 de 26/10/2022. Schaeffer et al.: versao 2 de 22/05/2023. Paginas DORA 2025 e GitHub consultadas nesta correcao, sem presumir data original.",
+  "artigos": [
+    {
+      "url": "artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Desvendando os Mistérios por Trás das Propriedades Emergentes dos LLMs",
+        "data": "2025-05-08T21:17:10.515Z",
+        "corpoHash": "98d758003c9920e9acb004c20aa566979ed8b7cc0a1cf7b0b4afc96a89c69e45",
+        "fonte": {
+          "titulo": "Why do LLMs have emergent properties?",
+          "data": "2025-05-08T20:07:00.000Z"
+        }
+      },
+      "motivo": "Remover experiencia pessoal inventada e exemplo de GPT3Tokenizer/GPT3Model sem contrato; distinguir variacao de saida, escala e efeito da metrica.",
+      "evidencia": "Corpo integral confrontado com Wei et al. 2022 e Schaeffer et al. 2023. Variacao de respostas isolada nao mede a definicao citada. Novo exemplo sintetico offline testa apenas regras de pontuacao.",
+      "depois": {
+        "titulo": "Capacidades emergentes em LLMs: o efeito da métrica na avaliação",
+        "descricao": "Duas leituras da pesquisa sobre emergência em LLMs e um exemplo executável de correspondência exata e acerto por posição, sem chamar modelos.",
+        "corpoHash": "829bbaff3eedb7954ff31f3ce5b31b3e9f4944f55dbad5a35997990a453b9ac1"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-wei",
+          "fonte": "https://arxiv.org/abs/2206.07682",
+          "consultadoEm": "2026-10-10T08:20:54.535Z",
+          "textoHash": "12888dd045bc9dd034b8fec3f737401709f26c8f69c8978df57209edc81ffa5c"
+        },
+        {
+          "seletor": ".fato-schaeffer",
+          "fonte": "https://arxiv.org/abs/2304.15004",
+          "consultadoEm": "2026-10-10T08:20:54.535Z",
+          "textoHash": "788d7927fd7b7c03aaeb4b6108ae3ff380f4c42ea7864bc4e9ff936fcd38311c"
+        }
+      ],
+      "pergunta": "Como uma regra de pontuacao pode esconder melhora parcial e aparentar um salto?",
+      "publico": "Profissionais avaliando evidencias, configuracoes e limites de sistemas",
+      "sobreposicao": "Busca por titulo original e propriedades emergentes no cadastro identifica esta pagina. O recorte e o efeito da pontuacao; nao certifica inexistencia de todo conteudo relacionado a avaliacao.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais",
+      "experimento": {
+        "resultado": "passed",
+        "em": "2026-10-10T08:20:54.675Z",
+        "runtime": "v22.16.0",
+        "plataforma": "win32",
+        "testes": 5,
+        "chamadaModelo": false,
+        "testeProducao": false,
+        "sintetico": true,
+        "saida": {
+          "origem": "Dados sinteticos criados para esta demonstracao; nenhuma saida de modelo.",
+          "resultados": [
+            {
+              "cenario": "A",
+              "itens": 4,
+              "exatas": 0,
+              "posicoes": 16,
+              "posicoesCorretas": 8,
+              "fracaoExata": 0,
+              "fracaoPorPosicao": 0.5
+            },
+            {
+              "cenario": "B",
+              "itens": 4,
+              "exatas": 0,
+              "posicoes": 16,
+              "posicoesCorretas": 12,
+              "fracaoExata": 0,
+              "fracaoPorPosicao": 0.75
+            },
+            {
+              "cenario": "C",
+              "itens": 4,
+              "exatas": 4,
+              "posicoes": 16,
+              "posicoesCorretas": 16,
+              "fracaoExata": 1,
+              "fracaoPorPosicao": 1
+            }
+          ]
+        },
+        "arquivos": [
+          {
+            "caminho": "exemplos/metricas-exatas/medir.js",
+            "sha256": "1e4c528f81f4c60c61233d14d0149a8c6cd23280cb5cab1a45788313b0c0a92b"
+          },
+          {
+            "caminho": "exemplos/metricas-exatas/dados.json",
+            "sha256": "f74f8983bc3045f1adfaba10d0bcd6edbc3672245f816b90d129b1a3778a9b90"
+          },
+          {
+            "caminho": "exemplos/metricas-exatas/executar.js",
+            "sha256": "fd11dfb0594fc7a6362243bd91537184f566cc53bd92b9c98e6593eec62cbe9e"
+          },
+          {
+            "caminho": "exemplos/metricas-exatas/test.js",
+            "sha256": "9311a659e4fb5b96f4d237c96bc1276cf0761533db7b0eca496015cda39b127f"
+          }
+        ]
+      }
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-inteligencia-artificial-como-espelho-revelando-forcas-e-fraquezas-das-equipes.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A inteligência artificial como espelho: revelando forças e fraquezas das equipes",
+        "data": "2025-09-27T19:15:38.565Z",
+        "corpoHash": "d0a3cecaa9029d2d8fec64b416f912c1ef61266ac7ecba8f72897d5394b251e6",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/ai-magnifies-your-teams-strengths-and-weaknesses-google-report-finds/",
+          "titulo": "AI magnifies your teams strengths - and weaknesses, Google report finds",
+          "data": "2025-09-27T11:00:00.000Z"
+        }
+      },
+      "motivo": "Remover relato pessoal nao confirmado, percentuais sem denominadores claros e promessa generalizada de ganho.",
+      "evidencia": "Leitura integral encontrou 90 a 95%, aumento de 14%, 7% e 60% sem identificacao consistente das medidas. Apresentacao e questionario oficiais sustentam recorte, nao resultado local. PDF completo nao foi obtido; nao se afirma revisao de sua metodologia integral.",
+      "depois": {
+        "titulo": "DORA 2025: como avaliar IA no fluxo de entrega da equipe",
+        "descricao": "Leitura do DORA 2025 com um protocolo proposto para observar implementação, revisão, falhas e entrega, sem prometer produtividade ou causalidade.",
+        "corpoHash": "df768b5a7c1d582c264676dae6744675c0974471b2fae1831beb9d02b61205cd"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-dora",
+          "fonte": "https://dora.dev/research/2025/dora-report/",
+          "consultadoEm": "2026-10-10T08:20:54.535Z",
+          "textoHash": "e31e17452e9f86cdc298a6a6e4da40a300c719279534910be5e7615b8aae0a25"
+        },
+        {
+          "seletor": ".fato-questionario",
+          "fonte": "https://dora.dev/research/2025/questions/",
+          "consultadoEm": "2026-10-10T08:20:54.535Z",
+          "textoHash": "49eadc12281479080f481cb031e1b0a1956afd1593e4908bedf90f3b0282f3e9"
+        }
+      ],
+      "pergunta": "Onde uma mudanca no uso de IA afeta o fluxo completo, inclusive filas e retrabalho?",
+      "publico": "Profissionais avaliando evidencias, configuracoes e limites de sistemas",
+      "sobreposicao": "Nenhuma segunda URL da mesma fonte foi identificada no cadastro. Pergunta distinta de metrica de respostas sinteticas e de instrucoes de repositorio; nao e calculo de ROI financeiro.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-nova-era-da-programacao-como-a-ia-esta-transformando-desenvolvedores-em-mestres.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A nova era da programação: como a IA está transformando desenvolvedores em mestres",
+        "data": "2026-02-23T13:07:25.257Z",
+        "corpoHash": "bc634c55ebcba3bc1552609f37c449a71256232b11d008d797a9ca47dbd2cb89",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/ai-coding-techniques/",
+          "titulo": "7 AI coding techniques that quietly make you elite",
+          "data": "2026-02-23T13:00:00.000Z"
+        }
+      },
+      "motivo": "Corrigir vivencias de programacao e MEMORIA.md nao confirmadas; distinguir instrucoes documentadas de aprendizado permanente e de prova de corretude.",
+      "evidencia": "Dois artigos da mesma fonte lidos integralmente repetem memoria, historico e prescricao de trabalho sequencial, com experiencia do autor sem confirmacao. Documentacao GitHub identifica arquivos e referencia no Chat, nao garante obediencia ou produtividade.",
+      "depois": {
+        "titulo": "Instruções para IA no repositório: contexto, histórico e verificação",
+        "descricao": "Como registrar regras do projeto, conferir contexto e validar alterações de um assistente, sem confundir arquivos de instruções com treinamento.",
+        "corpoHash": "79f5a395aed14e3e94a02991214b2dc1fcc856baf81d503d89bd00e61d26b26f"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-instrucoes",
+          "fonte": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions",
+          "consultadoEm": "2026-10-10T08:20:54.535Z",
+          "textoHash": "73c7cc86c7100302204652fa28f6e5db1dec38be6d9a2c4ae8df7d372f79b742"
+        },
+        {
+          "seletor": ".fato-referencias",
+          "fonte": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions#custom-instructions-in-use",
+          "consultadoEm": "2026-10-10T08:20:54.535Z",
+          "textoHash": "2569e8a38beb1bbcf1dfbc36d2da80f32d419e9bf04c6c3bb98223e76f08d48a"
+        }
+      ],
+      "pergunta": "Como transformar uma regra do projeto em contexto e verificacao, em vez de prometer memoria automatica?",
+      "publico": "Profissionais avaliando evidencias, configuracoes e limites de sistemas",
+      "sobreposicao": "Origem consolidada e destino respondem a mesma pergunta de organizacao do trabalho de programacao com IA. O destino cobre memoria/instrucoes, historico, paralelismo e revisao; exemplos de frete sao hipoteticos e nao executados.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/como-a-inteligencia-artificial-pode-revolucionar-o-desenvolvimento-de-software-dicas-do-dia-a-dia.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "Como a Inteligência Artificial Pode Revolucionar o Desenvolvimento de Software: Dicas do Dia a Dia",
+        "data": "2026-02-28T13:40:41.533Z",
+        "corpoHash": "7ba1cb6750dcfbb3248d243b2b07428c829fd87236ed3cc47cf777b738b2ac1d",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/ai-coding-techniques/",
+          "titulo": "7 AI coding techniques I use to ship real, reliable products - fast",
+          "data": "2026-02-28T13:00:00.000Z"
+        }
+      },
+      "motivo": "Consolidar repeticao de tecnicas de programacao com IA no guia de instrucoes e verificacao, mantendo um destino de intencao equivalente.",
+      "evidencia": "Leitura integral das duas paginas de ai-coding-techniques: mesma intencao, memoria persistente, historico, regras, revisao e trabalho sequencial. Ambas inventam experiencias; origem nao oferece ensaio independente. Destino corrige limites e trata requisitos do projeto, sem preservar garantias infundadas.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/e38304a577594ec35b942f243b4db1c9df3ba253811d8bf56f8ebaf763416d4b.json",
+      "destinoEquivalente": "artigos/inteligencia-artificial/a-nova-era-da-programacao-como-a-ia-esta-transformando-desenvolvedores-em-mestres.html"
+    }
+  ]
+}

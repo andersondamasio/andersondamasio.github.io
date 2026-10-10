@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Desvendando os Mistérios por Trás das Propriedades Emergentes dos LLMs</title>
-<meta name="description" content="Em um projeto antigo, enfrentei um problema parecido com o que essa notícia levanta. Lidar com as propriedades emergentes dos LLMs pode ser desafiador, mas...">
+<title>Capacidades emergentes em LLMs: o efeito da métrica na avaliação</title>
+<meta name="description" content="Duas leituras da pesquisa sobre emergência em LLMs e um exemplo executável de correspondência exata e acerto por posição, sem chamar modelos.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html">
@@ -14,42 +14,48 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Desvendando os Mistérios por Trás das Propriedades Emergentes dos LLMs">
-<meta property="og:description" content="Em um projeto antigo, enfrentei um problema parecido com o que essa notícia levanta. Lidar com as propriedades emergentes dos LLMs pode ser desafiador, mas...">
+<meta property="og:title" content="Capacidades emergentes em LLMs: o efeito da métrica na avaliação">
+<meta property="og:description" content="Duas leituras da pesquisa sobre emergência em LLMs e um exemplo executável de correspondência exata e acerto por posição, sem chamar modelos.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2025-05-08T21:17:10.515Z">
-<meta property="article:modified_time" content="2025-05-08T21:17:10.515Z">
+<meta property="article:modified_time" content="2026-10-10T08:20:54.535Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Desvendando os Mistérios por Trás das Propriedades Emergentes dos LLMs">
-<meta name="twitter:description" content="Em um projeto antigo, enfrentei um problema parecido com o que essa notícia levanta. Lidar com as propriedades emergentes dos LLMs pode ser desafiador, mas...">
+<meta name="twitter:title" content="Capacidades emergentes em LLMs: o efeito da métrica na avaliação">
+<meta name="twitter:description" content="Duas leituras da pesquisa sobre emergência em LLMs e um exemplo executável de correspondência exata e acerto por posição, sem chamar modelos.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Desvendando os Mistérios por Trás das Propriedades Emergentes dos LLMs",
-  "description": "Em um projeto antigo, enfrentei um problema parecido com o que essa notícia levanta. Lidar com as propriedades emergentes dos LLMs pode ser desafiador, mas...",
+  "headline": "Capacidades emergentes em LLMs: o efeito da métrica na avaliação",
+  "description": "Duas leituras da pesquisa sobre emergência em LLMs e um exemplo executável de correspondência exata e acerto por posição, sem chamar modelos.",
   "url": "https://www.andersondamasio.com.br/artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html"
   },
   "datePublished": "2025-05-08T21:17:10.515Z",
-  "dateModified": "2025-05-08T21:17:10.515Z",
+  "dateModified": "2026-10-10T08:20:54.535Z",
   "articleSection": "Outros",
   "inLanguage": "pt-BR",
-  "wordCount": 360,
+  "wordCount": 605,
   "about": {
     "@type": "Thing",
     "name": "Outros"
   },
   "isAccessibleForFree": true,
   "copyrightYear": 2025,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "Emergent Abilities of Large Language Models",
+    "url": "https://arxiv.org/abs/2206.07682"
+  },
+  "citation": "https://arxiv.org/abs/2206.07682",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -108,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Desvendando os Mistérios por Trás das Propriedades Emergentes dos LLMs",
+      "name": "Capacidades emergentes em LLMs: o efeito da métrica na avaliação",
       "item": "https://www.andersondamasio.com.br/artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html"
     }
   ]
@@ -141,6 +147,11 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
 .article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
 .article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0; }
+.article-source a { font-weight: 700; }
+.article-body code { overflow-wrap: anywhere; } .article-body pre code { overflow-wrap: normal; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -166,18 +177,78 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 
 
 <main>
-<h1>Desvendando os Mistérios por Trás das Propriedades Emergentes dos LLMs</h1>
+<h1>Capacidades emergentes em LLMs: o efeito da métrica na avaliação</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 <p class="article-meta">Publicado em: 08/05/2025 18:17</p>
 
-<div class="article-body">Em um projeto antigo, enfrentei um problema parecido com o que essa notícia levanta. Lidar com as propriedades emergentes dos LLMs pode ser desafiador, mas também extremamente fascinante. O que faz com que esses modelos tenham comportamentos imprevistos e resultados surpreendentes? Vamos explorar um pouco mais a fundo.<br>Para começar, é importante entender que os LLMs (Large Language Models) são modelos de linguagem de grande escala, que utilizam inteligência artificial para processar e gerar texto. Eles são treinados em enormes conjuntos de dados para aprender padrões e contextos, o que lhes permite gerar textos coerentes e relevantes.<br>No entanto, o que os torna tão interessantes é a capacidade de gerar resultados que vão além do esperado. Isso ocorre devido à natureza complexa e interconectada dos dados com os quais são treinados. Pequenas mudanças nos dados de entrada podem levar a grandes variações nas saídas, criando assim essas propriedades emergentes.<br>Para ilustrar isso, vamos analisar um trecho de código em Python que utiliza a biblioteca Hugging Face para interagir com um modelo GPT-3, um dos LLMs mais conhecidos atualmente:<br><pre><code>from transformers import GPT3Tokenizer, GPT3Model<br>tokenizer = GPT3Tokenizer.from_pretrained("gpt3")<br>model = GPT3Model.from_pretrained("gpt3")<br>input_text = "Once upon a time"<br>input_ids = tokenizer.encode(input_text, return_tensors="pt")<br>output = model.generate(input_ids, max_length=50, num_return_sequences=3)<br>for i, sample_output in enumerate(output):<br>print(f"Sample {i+1}: {tokenizer.decode(sample_output, skip_special_tokens=True)}")<br></code></pre><br>Nesse exemplo, estamos utilizando o GPT-3 para gerar três sequências de texto com base na frase "Once upon a time". Note como, mesmo com a mesma entrada, as saídas podem ser completamente diferentes, demonstrando as propriedades emergentes do modelo.<br>Para lidar com essas propriedades de forma eficaz, é essencial compreender a arquitetura e o funcionamento interno do LLM que está sendo utilizado. Além disso, ajustes finos nos dados de treinamento e parâmetros do modelo podem ajudar a controlar e explorar essas propriedades de maneira mais consciente.<br>Em conclusão, as propriedades emergentes dos LLMs são um reflexo da complexidade e da riqueza dos dados com os quais são alimentados. Entender e explorar essas propriedades pode abrir novas possibilidades criativas e funcionais para a utilização desses modelos. Afinal, é nesse jogo entre previsibilidade e surpresa que reside parte da magia da inteligência artificial.<br>Espero que este artigo tenha ajudado a esclarecer um pouco mais sobre esse tema intrigante. Se você tiver experiências ou insights para compartilhar, não deixe de comentar abaixo. Juntos, podemos continuar desvendando os mistérios por trás das propriedades emergentes dos LLMs.</div>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T08:20:54.535Z">10/10/2026</time>: atribuições e orientações corrigidas com fontes; a data da publicação original foi preservada.</p>
+<p>Obter respostas diferentes para a mesma pergunta não demonstra, por si só, uma capacidade emergente. Para discutir essa hipótese, é preciso dizer qual tarefa foi avaliada, quais modelos foram comparados e como o resultado foi pontuado. A versão anterior deste artigo confundia variação de saída com emergência e trazia um exemplo de API sem sustentação; esse código foi retirado.</p>
+<h2>Duas leituras da pesquisa</h2>
+<p class="fato-wei">Wei e colaboradores definem capacidades emergentes, no trabalho de 2022, como habilidades ausentes em modelos menores e presentes em modelos maiores, cujo desempenho não se prevê simplesmente extrapolando o dos menores. Esse é um recorte sobre escala e desempenho, não uma definição de qualquer resposta surpreendente. <a href="https://arxiv.org/abs/2206.07682">Pesquisa: Emergent Abilities of Large Language Models</a>.</p>
+<p class="fato-schaeffer">Schaeffer, Miranda e Koyejo apresentam uma explicação alternativa em 2023: mantendo fixas as saídas de uma tarefa e família de modelos, a escolha de métricas não lineares ou descontínuas pode produzir a aparência de uma mudança abrupta. O trabalho investiga o efeito da medição; não autoriza concluir que toda capacidade emergente foi refutada. <a href="https://arxiv.org/abs/2304.15004">Pesquisa: Are Emergent Abilities of Large Language Models a Mirage?</a>.</p>
+<h2>Exemplo reproduzível: duas notas para as mesmas respostas</h2>
+<div class="contribuicao-editorial">
+<p>O exemplo abaixo isola a regra de pontuação. Há quatro alvos sintéticos de quatro letras, como <code>ABCD</code>. No cenário A, a resposta é <code>AB??</code>; no B, <code>ABC?</code>; no C, <code>ABCD</code>. Os demais alvos seguem a mesma construção. A, B e C são conjuntos inventados, não modelos de tamanhos diferentes.</p>
+<p>Correspondência exata conta apenas respostas inteiramente iguais ao alvo. Acerto por posição soma os caracteres corretos e divide pelo total de posições. São caracteres ASCII, não tokens de um LLM nem unidades de significado. O ponto de interrogação representa erro, sem tratamento especial no cálculo.</p>
+<table><thead><tr><th>Cenário sintético</th><th>Posições corretas</th><th>Respostas exatas</th></tr></thead><tbody><tr><td>A</td><td>8/16 = 50%</td><td>0/4 = 0%</td></tr><tr><td>B</td><td>12/16 = 75%</td><td>0/4 = 0%</td></tr><tr><td>C</td><td>16/16 = 100%</td><td>4/4 = 100%</td></tr></tbody></table>
+<p>A melhora parcial de A para B desaparece na coluna de respostas exatas. O salto nessa coluna ocorre quando todas as letras acertam. Isso decorre das respostas construídas e da regra de pontuação, sem precisar supor qualquer mudança em um modelo.</p>
+<p>O programa confere cobertura e identidade dos itens, recusa comprimentos diferentes e não normaliza texto silenciosamente. O núcleo executado é:</p>
+<pre><code class="language-javascript">const assert = require('node:assert/strict');
+
+function medir(alvos, respostas) {
+  assert.ok(Array.isArray(alvos) &amp;&amp; alvos.length &gt; 0, 'Alvos devem ser uma lista nao vazia.');
+  assert.ok(Array.isArray(respostas), 'Respostas devem ser uma lista.');
+  assert.equal(respostas.length, alvos.length, 'Cobertura de respostas incompleta.');
+  const porId = new Map();
+  for (const alvo of alvos) {
+    assert.ok(alvo &amp;&amp; typeof alvo.id === 'string' &amp;&amp; alvo.id.trim(), 'Id invalido.');
+    assert.ok(typeof alvo.texto === 'string' &amp;&amp; /^[A-Z]+$/.test(alvo.texto), 'Alvo exige letras ASCII maiusculas.');
+    assert.ok(!porId.has(alvo.id), 'Id de alvo repetido.');
+    porId.set(alvo.id, alvo.texto);
+  }
+  const vistos = new Set();
+  let exatas = 0, posicoesCorretas = 0, posicoes = 0;
+  for (const resposta of respostas) {
+    assert.ok(resposta &amp;&amp; porId.has(resposta.id), 'Id de resposta desconhecido.');
+    assert.ok(!vistos.has(resposta.id), 'Id de resposta repetido.');
+    vistos.add(resposta.id);
+    const alvo = porId.get(resposta.id);
+    assert.ok(typeof resposta.texto === 'string' &amp;&amp; /^[A-Z?]+$/.test(resposta.texto), 'Resposta invalida.');
+    assert.equal(resposta.texto.length, alvo.length, 'Comprimentos diferentes.');
+    exatas += Number(resposta.texto === alvo);
+    posicoes += alvo.length;
+    for (let i = 0; i &lt; alvo.length; i++) {
+      posicoesCorretas += Number(resposta.texto[i] === alvo[i]);
+    }
+  }
+  return { itens: alvos.length, exatas, posicoes, posicoesCorretas,
+    fracaoExata: exatas / alvos.length, fracaoPorPosicao: posicoesCorretas / posicoes };
+}
+
+module.exports = { medir };
+</code></pre>
+<p>Arquivos completos: <a href="/exemplos/metricas-exatas/medir.js">cálculo</a>, <a href="/exemplos/metricas-exatas/dados.json">dados sintéticos</a>, <a href="/exemplos/metricas-exatas/executar.js">execução</a> e <a href="/exemplos/metricas-exatas/test.js">testes</a>. Na raiz do projeto, os comandos são:</p>
+<pre><code class="language-text">node exemplos/metricas-exatas/executar.js
+node --test exemplos/metricas-exatas/test.js</code></pre>
+<p class="resultado-executado">Na correção editorial, Codex executou o exemplo offline com Node.js: os resultados foram os da tabela e os cinco testes passaram. Os testes cobrem as contas, associação por identificador, preservação das entradas, denominadores e rejeição de dados inválidos. Não houve chamada de modelo ou API paga.</p>
+</div>
+<h2>O que pedir antes de aceitar uma conclusão sobre emergência</h2>
+<p>Como roteiro de leitura, procure as saídas avaliadas, a definição da tarefa, a métrica e o tamanho da amostra. Verifique se a mesma conclusão se mantém com outra pontuação adequada à tarefa. Uma resposta parcialmente correta pode ser útil numa busca, mas inaceitável em um identificador que precisa coincidir por inteiro. Trocar a métrica exige justificar o que ela mede, não escolher a que produz a curva desejada.</p>
+<p>Em uma comparação real, também seria necessário registrar versões, instruções, procedimento de amostragem e incerteza dos resultados. Essa comparação não foi realizada aqui.</p>
+<div class="limites-editoriais"><h2>Limites</h2><p>O exemplo demonstra uma propriedade de duas regras sobre dados artificiais. Não reproduz os experimentos dos artigos científicos, não mede escala, inteligência ou qualidade semântica e não comprova nem refuta emergência em LLMs. Trata-se de análise baseada em fontes e de uma execução didática por Codex, não de experiência pessoal de Anderson Damasio.</p></div>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo. Data da fonte registrada: 08/05/2025.</p>
+<p><strong>Fonte principal:</strong> <a href="https://arxiv.org/abs/2206.07682" rel="noopener noreferrer">Emergent Abilities of Large Language Models</a> Data da fonte registrada: 26/10/2022.</p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
+<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="https://arxiv.org/abs/2206.07682" target="_blank" rel="noopener noreferrer">Emergent Abilities of Large Language Models</a>.</p>
+</section>
+
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

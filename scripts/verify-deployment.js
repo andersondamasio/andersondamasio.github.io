@@ -60,6 +60,16 @@ function prepararVerificacao({ ler, lerBinario, revisao }) {
     ausentes.push('exemplos/health-checks/bin/Release/net10.0/HealthChecks.dll', 'exemplos/health-checks/obj/project.assets.json');
   }
   let manifestoTexto;
+  let exemploMetricas;
+  try { exemploMetricas = ler('exemplos/metricas-exatas/medir.js'); } catch { /* Example absent in older revisions. */ }
+  if (exemploMetricas) {
+    for (const nome of ['medir.js', 'dados.json', 'executar.js', 'test.js']) {
+      const arquivo = `exemplos/metricas-exatas/${nome}`;
+      if (!ler(arquivo)?.trim()) throw new Error(`Arquivo do exemplo ausente: ${arquivo}`);
+      arquivos.push(arquivo);
+    }
+    if (controlaDocumentos) ausentes.push('exemplos/metricas-exatas/README.md', 'exemplos/metricas-exatas/README.html');
+  }
   const arquivosNoindex = [];
   try { manifestoTexto = ler("dados/indexacao.json"); } catch { /* Revisions before the indexation manifest are still verifiable. */ }
   if (manifestoTexto) {

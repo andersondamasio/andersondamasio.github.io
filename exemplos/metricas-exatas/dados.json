@@ -1,0 +1,23 @@
+{
+  "origem": "Dados sinteticos criados para esta demonstracao; nenhuma saida de modelo.",
+  "alvos": [
+    { "id": "1", "texto": "ABCD" },
+    { "id": "2", "texto": "EFGH" },
+    { "id": "3", "texto": "IJKL" },
+    { "id": "4", "texto": "MNOP" }
+  ],
+  "cenarios": [
+    { "nome": "A", "respostas": [
+      { "id": "1", "texto": "AB??" }, { "id": "2", "texto": "EF??" },
+      { "id": "3", "texto": "IJ??" }, { "id": "4", "texto": "MN??" }
+    ] },
+    { "nome": "B", "respostas": [
+      { "id": "1", "texto": "ABC?" }, { "id": "2", "texto": "EFG?" },
+      { "id": "3", "texto": "IJK?" }, { "id": "4", "texto": "MNO?" }
+    ] },
+    { "nome": "C", "respostas": [
+      { "id": "1", "texto": "ABCD" }, { "id": "2", "texto": "EFGH" },
+      { "id": "3", "texto": "IJKL" }, { "id": "4", "texto": "MNOP" }
+    ] }
+  ]
+}

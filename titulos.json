@@ -2572,12 +2572,26 @@
     "categoria": "Outros"
   },
   {
-    "titulo": "Desvendando os Mistérios por Trás das Propriedades Emergentes dos LLMs",
-    "noticiaOriginal": "Why do LLMs have emergent properties?",
+    "titulo": "Capacidades emergentes em LLMs: o efeito da métrica na avaliação",
+    "noticiaOriginal": "Emergent Abilities of Large Language Models",
     "url": "artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html",
     "data": "2025-05-08T21:17:10.515Z",
-    "dataFonte": "2025-05-08T20:07:00.000Z",
-    "categoria": "Outros"
+    "dataFonte": "2022-10-26",
+    "categoria": "Outros",
+    "urlFonte": "https://arxiv.org/abs/2206.07682",
+    "seo": {
+      "description": "Duas leituras da pesquisa sobre emergência em LLMs e um exemplo executável de correspondência exata e acerto por posição, sem chamar modelos.",
+      "modifiedAt": "2026-10-10T08:20:54.535Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T08:20:54.535Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover experiencia pessoal inventada e exemplo de GPT3Tokenizer/GPT3Model sem contrato; distinguir variacao de saida, escala e efeito da metrica.",
+      "hashAntes": "98d758003c9920e9acb004c20aa566979ed8b7cc0a1cf7b0b4afc96a89c69e45",
+      "hashDepois": "829bbaff3eedb7954ff31f3ce5b31b3e9f4944f55dbad5a35997990a453b9ac1",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-metricas-contexto-2026-10.json"
+    }
   },
   {
     "titulo": "A revolução das assinaturas fixas para Claude Code",
@@ -30359,13 +30373,25 @@
     "urlFonte": "https://techcrunch.com/2025/09/27/ai-startup-friend-spent-more-than-1m-on-all-those-subway-ads/"
   },
   {
-    "titulo": "A inteligência artificial como espelho: revelando forças e fraquezas das equipes",
-    "noticiaOriginal": "AI magnifies your teams strengths - and weaknesses, Google report finds",
+    "titulo": "DORA 2025: como avaliar IA no fluxo de entrega da equipe",
+    "noticiaOriginal": "State of AI-assisted Software Development 2025",
     "url": "artigos/inteligencia-artificial/a-inteligencia-artificial-como-espelho-revelando-forcas-e-fraquezas-das-equipes.html",
     "data": "2025-09-27T19:15:38.565Z",
-    "dataFonte": "2025-09-27T11:00:00.000Z",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/ai-magnifies-your-teams-strengths-and-weaknesses-google-report-finds/"
+    "urlFonte": "https://dora.dev/research/2025/dora-report/",
+    "seo": {
+      "description": "Leitura do DORA 2025 com um protocolo proposto para observar implementação, revisão, falhas e entrega, sem prometer produtividade ou causalidade.",
+      "modifiedAt": "2026-10-10T08:20:54.535Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T08:20:54.535Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover relato pessoal nao confirmado, percentuais sem denominadores claros e promessa generalizada de ganho.",
+      "hashAntes": "d0a3cecaa9029d2d8fec64b416f912c1ef61266ac7ecba8f72897d5394b251e6",
+      "hashDepois": "df768b5a7c1d582c264676dae6744675c0974471b2fae1831beb9d02b61205cd",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-metricas-contexto-2026-10.json"
+    }
   },
   {
     "titulo": "A armadilha do ‘workslop’: como evitar o desperdício de tempo em projetos de software",
@@ -59205,13 +59231,25 @@
     ]
   },
   {
-    "titulo": "A nova era da programação: como a IA está transformando desenvolvedores em mestres",
-    "noticiaOriginal": "7 AI coding techniques that quietly make you elite",
+    "titulo": "Instruções para IA no repositório: contexto, histórico e verificação",
+    "noticiaOriginal": "Adding repository custom instructions for GitHub Copilot",
     "url": "artigos/inteligencia-artificial/a-nova-era-da-programacao-como-a-ia-esta-transformando-desenvolvedores-em-mestres.html",
     "data": "2026-02-23T13:07:25.257Z",
-    "dataFonte": "2026-02-23T13:00:00.000Z",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/ai-coding-techniques/"
+    "urlFonte": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions",
+    "seo": {
+      "description": "Como registrar regras do projeto, conferir contexto e validar alterações de um assistente, sem confundir arquivos de instruções com treinamento.",
+      "modifiedAt": "2026-10-10T08:20:54.535Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T08:20:54.535Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir vivencias de programacao e MEMORIA.md nao confirmadas; distinguir instrucoes documentadas de aprendizado permanente e de prova de corretude.",
+      "hashAntes": "bc634c55ebcba3bc1552609f37c449a71256232b11d008d797a9ca47dbd2cb89",
+      "hashDepois": "79f5a395aed14e3e94a02991214b2dc1fcc856baf81d503d89bd00e61d26b26f",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-metricas-contexto-2026-10.json"
+    }
   },
   {
     "titulo": "A era dos robôs: como a inteligência artificial pode desestabilizar a economia",
@@ -60031,15 +60069,6 @@
     "dataFonte": "2026-02-28T12:00:40.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/rayneo-air-4-pro-glasses-review/"
-  },
-  {
-    "titulo": "Como a Inteligência Artificial Pode Revolucionar o Desenvolvimento de Software: Dicas do Dia a Dia",
-    "noticiaOriginal": "7 AI coding techniques I use to ship real, reliable products - fast",
-    "url": "artigos/inteligencia-artificial/como-a-inteligencia-artificial-pode-revolucionar-o-desenvolvimento-de-software-dicas-do-dia-a-dia.html",
-    "data": "2026-02-28T13:40:41.533Z",
-    "dataFonte": "2026-02-28T13:00:00.000Z",
-    "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/ai-coding-techniques/"
   },
   {
     "titulo": "A nova era dos anéis inteligentes: Ultrahuman Ring Pro e suas inovações",

@@ -1177,6 +1177,60 @@
       "arquivoHash": "6feeb721068da41206d3fde2317c9ec9c151e5d794af4c29fca70a453c2127a7",
       "registrosHash": "3081f23c6706c6f91ce87b79b4f4b7734a45abc1479fa1f0aa7b9bf894469b9d",
       "aliases": []
+    },
+    {
+      "url": "artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html",
+      "acao": "atualizar",
+      "motivo": "Remover experiencia pessoal inventada e exemplo de GPT3Tokenizer/GPT3Model sem contrato; distinguir variacao de saida, escala e efeito da metrica.",
+      "evidencia": "Corpo integral confrontado com Wei et al. 2022 e Schaeffer et al. 2023. Variacao de respostas isolada nao mede a definicao citada. Novo exemplo sintetico offline testa apenas regras de pontuacao.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T08:20:54.535Z"
+      },
+      "conteudoHash": "829bbaff3eedb7954ff31f3ce5b31b3e9f4944f55dbad5a35997990a453b9ac1"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-inteligencia-artificial-como-espelho-revelando-forcas-e-fraquezas-das-equipes.html",
+      "acao": "atualizar",
+      "motivo": "Remover relato pessoal nao confirmado, percentuais sem denominadores claros e promessa generalizada de ganho.",
+      "evidencia": "Leitura integral encontrou 90 a 95%, aumento de 14%, 7% e 60% sem identificacao consistente das medidas. Apresentacao e questionario oficiais sustentam recorte, nao resultado local. PDF completo nao foi obtido; nao se afirma revisao de sua metodologia integral.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T08:20:54.535Z"
+      },
+      "conteudoHash": "df768b5a7c1d582c264676dae6744675c0974471b2fae1831beb9d02b61205cd"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-nova-era-da-programacao-como-a-ia-esta-transformando-desenvolvedores-em-mestres.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir vivencias de programacao e MEMORIA.md nao confirmadas; distinguir instrucoes documentadas de aprendizado permanente e de prova de corretude.",
+      "evidencia": "Dois artigos da mesma fonte lidos integralmente repetem memoria, historico e prescricao de trabalho sequencial, com experiencia do autor sem confirmacao. Documentacao GitHub identifica arquivos e referencia no Chat, nao garante obediencia ou produtividade.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T08:20:54.535Z"
+      },
+      "conteudoHash": "79f5a395aed14e3e94a02991214b2dc1fcc856baf81d503d89bd00e61d26b26f"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/como-a-inteligencia-artificial-pode-revolucionar-o-desenvolvimento-de-software-dicas-do-dia-a-dia.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar repeticao de tecnicas de programacao com IA no guia de instrucoes e verificacao, mantendo um destino de intencao equivalente.",
+      "evidencia": "Leitura integral das duas paginas de ai-coding-techniques: mesma intencao, memoria persistente, historico, regras, revisao e trabalho sequencial. Ambas inventam experiencias; origem nao oferece ensaio independente. Destino corrige limites e trata requisitos do projeto, sem preservar garantias infundadas.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T08:20:54.535Z"
+      },
+      "conteudoHash": "7ba1cb6750dcfbb3248d243b2b07428c829fd87236ed3cc47cf777b738b2ac1d",
+      "arquivoHash": "4fd5ba21404d330fa39c7fe29c5110481ab5141dc09f81ca07ad4fb2d0cb2f2e",
+      "registrosHash": "d2ce25357cba60e8327a790395063c9b62631ecf5aea2194d444a95cadb4cabb",
+      "aliases": [
+        {
+          "url": "inteligencia-artificial/como-a-inteligencia-artificial-pode-revolucionar-o-desenvolvimento-de-software-dicas-do-dia-a-dia.html",
+          "arquivoHash": "7215d8b266442c6917d7d4750f1eb038aa57e11eb27e05ea827135129fad27e6"
+        }
+      ],
+      "destino": "artigos/inteligencia-artificial/a-nova-era-da-programacao-como-a-ia-esta-transformando-desenvolvedores-em-mestres.html",
+      "destinoConteudoHash": "79f5a395aed14e3e94a02991214b2dc1fcc856baf81d503d89bd00e61d26b26f"
     }
   ]
 }
