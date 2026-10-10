@@ -17,6 +17,8 @@ test('codigo dos artigos coincide com arquivos executaveis, sem tags espurias', 
       ['code.language-cpp', 'exemplos/fila-cpp/main.cpp']]],
     ['artigos/seguranca/a-importancia-da-resiliencia-em-sistemas-aprendizados-do-incidente-da-victoria-s-secret.html', [
       ['code.language-csharp', 'exemplos/health-checks/HealthExample.cs']]],
+    ['artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html', [
+      ['code.language-javascript', 'exemplos/metricas-exatas/medir.js']]],
     ['artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html', [
       ['code.language-javascript', 'exemplos/nan-json/verificar.js']]]
   ];
@@ -36,6 +38,29 @@ test('exemplo de NaN e JSON executa as assercoes sem dependencias externas', () 
   const saida = require('node:child_process').execFileSync(process.execPath,
     [path.join(root, 'exemplos/nan-json/verificar.js')], { encoding: 'utf8' });
   assert.equal(saida.trim(), 'Contrato JSON verificado.');
+});
+
+test('exemplo de metricas publicado corresponde a saida sintetica executada', () => {
+  const saida = JSON.parse(require('node:child_process').execFileSync(process.execPath,
+    [path.join(root, 'exemplos/metricas-exatas/executar.js')], { encoding: 'utf8' }));
+  const lote = JSON.parse(ler('dados/editorial/curadoria-metricas-contexto-2026-10.json'));
+  const artigo = lote.artigos.find(a => a.experimento);
+  const q = cheerio.load(ler(artigo.url));
+  assert.deepEqual(saida, artigo.experimento.saida);
+  assert.equal(artigo.experimento.chamadaModelo, false);
+  assert.equal(artigo.experimento.sintetico, true);
+  assert.equal(artigo.experimento.testeProducao, false);
+  assert.equal(artigo.experimento.resultado, 'passed');
+  assert.equal(artigo.experimento.testes, 5);
+  for (const arquivo of artigo.experimento.arquivos) {
+    assert.equal(require('node:crypto').createHash('sha256').update(ler(arquivo.caminho)).digest('hex'), arquivo.sha256);
+    assert.ok(q('.article-body a').toArray().some(el => q(el).attr('href') === '/' + arquivo.caminho));
+  }
+  const linhas = q('.contribuicao-editorial tbody tr').toArray().map(el => q(el).find('td').map((_, td) => q(td).text()).get());
+  assert.deepEqual(linhas, [['A', '8/16 = 50%', '0/4 = 0%'], ['B', '12/16 = 75%', '0/4 = 0%'], ['C', '16/16 = 100%', '4/4 = 100%']]);
+  assert.match(q('.limites-editoriais').text(), /não comprova nem refuta emergência/);
+  assert.match(q('.resultado-executado').text(), /Codex executou.*cinco testes passaram/);
+  assert.doesNotMatch(q('.article-body').text(), /GPT3Tokenizer|GPT3Model|enfrentei/);
 });
 
 test('CSS publicado e a saida real do conversor', () => {

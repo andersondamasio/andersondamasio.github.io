@@ -12,6 +12,57 @@ const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.js
 const manifesto = JSON.parse(ler('dados/indexacao.json'));
 const cadastro = JSON.parse(ler('titulos.json'));
 
+test('metricas e contexto preservam fontes, limites e historico sem aprovar experiencia pessoal', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-metricas-contexto-2026-10.json'));
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.metricasGoogle, null);
+  assert.equal(lote.artigos.length, 4);
+  for (const a of lote.artigos.filter(a => a.acao === 'atualizar')) {
+    const q = cheerio.load(ler(a.url)), r = cadastro.find(r => r.url === a.url);
+    assert.equal(r.data, a.antes.data);
+    assert.equal(r.revisaoHumana, undefined);
+    assert.equal(r.correcaoEditorial.revisaoHumana, false);
+    assert.equal(r.correcaoEditorial.relatorio, 'dados/editorial/curadoria-metricas-contexto-2026-10.json');
+    assert.equal(r.seo.modifiedAt, lote.em);
+    assert.equal(r.qualidadeEditorial, undefined);
+    assert.equal(q('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.equal(q('h1').text(), a.depois.titulo);
+    assert.equal(q('meta[name=description]').attr('content'), a.depois.descricao);
+    assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    assert.doesNotMatch(q('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(hashCorpoEditorial(q('.article-body').html()), a.depois.corpoHash);
+    assert.equal(manifesto.decisoes.find(d => d.url === a.url).conteudoHash, a.depois.corpoHash);
+    for (const e of a.evidencias) {
+      assert.equal(q(e.seletor).length, 1);
+      assert.equal(hashCorpoEditorial(q(e.seletor).html()), e.textoHash);
+      assert.equal(q(e.seletor).find('a').attr('href'), e.fonte);
+    }
+    assert.equal(q('.contribuicao-editorial').length, 1);
+    assert.equal(q('.limites-editoriais').length, 1);
+  }
+  const dora = cheerio.load(ler(lote.artigos[1].url));
+  assert.match(dora('.limites-editoriais').text(), /não comprova.*causalidade/);
+  assert.match(dora('.contribuicao-editorial').text(), /não foi aplicado a uma equipe/);
+  assert.equal(dora('.contribuicao-editorial h3').length, 4);
+  assert.equal(dora('.contribuicao-editorial table').length, 0);
+  const instrucoes = cheerio.load(ler(lote.artigos[2].url));
+  assert.match(instrucoes('.fato-instrucoes').text(), /\.github\/copilot-instructions\.md/);
+  assert.match(instrucoes('.limites-editoriais').text(), /roteiro de frete é proposto e não foi executado/);
+  assert.match(instrucoes('.article-body').text(), /não demonstra que a ferramenta o carregou/);
+  const a = lote.artigos.find(a => a.acao === 'consolidar');
+  const d = manifesto.decisoes.find(d => d.url === a.url), copia = JSON.parse(ler(a.arquivoRecuperavel));
+  assert.equal(hashRegistros(copia.registros), d.registrosHash);
+  assert.equal(hashArquivo(copia.arquivos[0].html), d.arquivoHash);
+  assert.equal(cadastro.some(r => r.url === a.url), false);
+  assert.equal(d.destino, lote.artigos[2].url);
+  for (const arquivo of copia.arquivos) {
+    const q = cheerio.load(ler(arquivo.url));
+    assert.equal(q('.article-body').length, 0);
+    assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${d.destino}`);
+    assert.match(q('meta[name=robots]').attr('content'), /noindex/);
+  }
+});
+
 test('atribuicoes e produtos preservam publicacao e distinguem documentacao de testes pessoais', () => {
   const lote = JSON.parse(ler('dados/editorial/curadoria-atribuicao-produtos-2026-10.json'));
   const corrigidos = lote.artigos.filter(a => a.acao === 'atualizar');

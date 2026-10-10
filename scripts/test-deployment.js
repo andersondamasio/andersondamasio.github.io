@@ -98,6 +98,27 @@ test('deploy exige os quatro arquivos do exemplo health e nao expoe build interm
   assert.throws(() => prepararVerificacao({ ler: f => f.endsWith('Program.cs') ? undefined : fontes[f] || arquivos[f], revisao: 'e'.repeat(40) }), /Arquivo do exemplo ausente/);
 });
 
+test('deploy confere fontes do exemplo sintetico e nao publica seu README', async () => {
+  const nomes = ['medir.js', 'dados.json', 'executar.js', 'test.js'];
+  const fontes = Object.fromEntries(nomes.map(n => [`exemplos/metricas-exatas/${n}`, `Conteudo ${n}`]));
+  const ler = f => f === '_config.yml' ? "exclude: ['**/*.md']" : fontes[f] || arquivos[f];
+  const esperado = prepararVerificacao({ ler, revisao: 'e'.repeat(40) });
+  for (const n of nomes) assert.ok(esperado.arquivos.some(a => a.arquivo === `exemplos/metricas-exatas/${n}`));
+  assert.ok(esperado.ausentes.includes('exemplos/metricas-exatas/README.md'));
+  assert.ok(esperado.ausentes.includes('exemplos/metricas-exatas/README.html'));
+  const ausentes = Object.fromEntries(esperado.ausentes.map(f => [f, null]));
+  const conferir = alteracoes => verificarPublicacao({ esperado,
+    fetchImpl: mockFetch({ ...fontes, ...ausentes, ...alteracoes }), tentativas: 1 });
+  assert.equal((await conferir({})).aceita, true);
+  for (const n of nomes) for (const conteudo of [null, 'Obsoleto']) {
+    assert.equal((await conferir({ [`exemplos/metricas-exatas/${n}`]: conteudo })).aceita, false);
+  }
+  for (const extensao of ['md', 'html']) {
+    assert.equal((await conferir({ [`exemplos/metricas-exatas/README.${extensao}`]: 'Exposto' })).aceita, false);
+  }
+  assert.throws(() => prepararVerificacao({ ler: f => f.endsWith('executar.js') ? undefined : ler(f), revisao: 'e'.repeat(40) }), /Arquivo do exemplo ausente/);
+});
+
 test("verificacao escolhe artigos indexaveis, respeitando curadoria do mais recente", () => {
   const novo = "artigos/arquitetura/retido.html";
   const extras = { ...arquivos, "titulos.json": JSON.stringify([
