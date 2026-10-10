@@ -68220,13 +68220,26 @@
     "urlFonte": "https://www.infoq.com/news/2026/04/mistral-ai-workflows/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   },
   {
-    "titulo": "A Nova Era das Extensões: O Que o SDK Estilo Pode Fazer por Você",
+    "titulo": "Extensões VSIX em SDK-style: migração e limites",
     "noticiaOriginal": "SDK-Style Support for Extension Projects",
     "url": "artigos/programacao/a-nova-era-das-extensoes-o-que-o-sdk-estilo-pode-fazer-por-voce.html",
     "data": "2026-04-29T14:01:06.212Z",
     "dataFonte": "2026-04-29T14:00:36.000Z",
     "categoria": "Programação",
-    "urlFonte": "https://devblogs.microsoft.com/visualstudio/sdk-style-support-for-extension-projects/"
+    "urlFonte": "https://devblogs.microsoft.com/visualstudio/sdk-style-support-for-extension-projects/",
+    "seo": {
+      "description": "Escopo do suporte SDK-style para extensões VSSDK, limites do ganho de build relatado pela Microsoft e critérios para comparar pacote e depuração.",
+      "modifiedAt": "2026-10-09T23:58:05.140Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-09T23:58:05.140Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Distinguir VSSDK de VisualStudio.Extensibility e contextualizar benchmark interno, com verificacoes propostas sem alegar execucao.",
+      "hashAntes": "9198bd1c89f862a495330c3505c9e5439de1009b7abbfe0e651d18502d43e93c",
+      "hashDepois": "0185713fc55bd757f3a1a87700934779827a9ed40cf1e3118604bdd53dd189de",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/correcoes-fontes-primarias-2026-10.json"
+    }
   },
   {
     "titulo": "A escolha do VPN certo para pequenas empresas em 2026: um guia prático para não errar",
@@ -69273,7 +69286,7 @@
     "urlFonte": "https://techcrunch.com/2026/05/14/a-spyware-investigator-exposed-russian-government-hackers-trying-to-hijack-signal-accounts/"
   },
   {
-    "titulo": "Atualizações Cruciais: Mantenha seu Azure DevOps Server em Dia!",
+    "titulo": "Azure DevOps Server: patches de maio de 2026",
     "noticiaOriginal": "May Patches for Azure DevOps Server",
     "url": "artigos/devops/atualizacoes-cruciais-mantenha-seu-azure-devops-server-em-dia.html",
     "data": "2026-05-14T17:21:22.532Z",
@@ -69281,16 +69294,17 @@
     "categoria": "DevOps",
     "urlFonte": "https://devblogs.microsoft.com/devops/may-patches-for-azure-devops-server-3/",
     "seo": {
-      "modifiedAt": "2026-10-09T22:51:19.065Z"
+      "modifiedAt": "2026-10-09T23:58:05.140Z",
+      "description": "As quatro linhas cobertas pelos patches de maio de 2026, o alcance do CheckInstall e critérios propostos para validar uma atualização do Azure DevOps Server."
     },
     "correcaoEditorial": {
-      "em": "2026-10-09T22:51:19.065Z",
-      "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-      "motivo": "Retirar atualidade artificial de uma noticia de maio e preparar instrucoes por versao.",
-      "hashAntes": "f586fff148d15e322e89a45eb3e5a67f1be081067379340980f46c5daff4cdc3",
-      "hashDepois": "2da94eede2927d63ae45bd614a8b1532dca2182f01d58f2e35ff362555106cb7",
+      "em": "2026-10-09T23:58:05.140Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Identificar versoes completas, separar correcoes funcionais e de seguranca, delimitar CheckInstall e evitar recomendacao automatica de pacote historico.",
+      "hashAntes": "2da94eede2927d63ae45bd614a8b1532dca2182f01d58f2e35ff362555106cb7",
+      "hashDepois": "75e2d9565ef4407c3c9537cbcbe66b488e375f025169d62ced30f729006f99e4",
       "revisaoHumana": false,
-      "escopo": "Correcao pontual; nao verificacao integral"
+      "relatorio": "dados/editorial/correcoes-fontes-primarias-2026-10.json"
     }
   },
   {
@@ -70770,7 +70784,7 @@
     "urlFonte": "https://www.zdnet.com/article/claude-opus-4-8-honesty-test/"
   },
   {
-    "titulo": "A nova era do Visual Studio: O que a Microsoft nos trouxe?",
+    "titulo": "Visual Studio no Build 2026: anúncio e adoção",
     "noticiaOriginal": "What’s Coming Next in Visual Studio: Our Microsoft Build 2026 Announcements",
     "url": "artigos/tecnologia/a-nova-era-do-visual-studio-o-que-a-microsoft-nos-trouxe.html",
     "data": "2026-06-02T17:27:56.127Z",
@@ -70778,16 +70792,17 @@
     "categoria": "Tecnologia",
     "urlFonte": "https://devblogs.microsoft.com/visualstudio/whats-coming-next-in-visual-studio-our-microsoft-build-2026-announcements/",
     "seo": {
-      "modifiedAt": "2026-10-09T22:51:19.065Z"
+      "modifiedAt": "2026-10-09T23:58:05.140Z",
+      "description": "O que o roteiro do Visual Studio no Build 2026 anunciou e como separar disponibilidade, testes propostos e limites antes de adotar os recursos."
     },
     "correcaoEditorial": {
-      "em": "2026-10-09T22:51:19.065Z",
-      "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-      "motivo": "Remover relato pessoal inventado e promessa de ganho sem teste.",
-      "hashAntes": "b3886d5ab80a16c7e513b52a9c89fa5976c4100c2f836aea734beeb1a4dfdb94",
-      "hashDepois": "c385ca8d2923692052145c896160c467595199983ba0afbfb406b8c97cf32b7c",
+      "em": "2026-10-09T23:58:05.140Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Tratar o anuncio como roadmap, retirar voz de vivencia e distinguir disponibilidade posterior de criterio proposto de adocao.",
+      "hashAntes": "c385ca8d2923692052145c896160c467595199983ba0afbfb406b8c97cf32b7c",
+      "hashDepois": "aa43a6982887a9723ae945566e3f6ba7db95d7f95ede77ed58bb731ee3abf4b5",
       "revisaoHumana": false,
-      "escopo": "Correcao pontual; nao verificacao integral"
+      "relatorio": "dados/editorial/correcoes-fontes-primarias-2026-10.json"
     }
   },
   {
@@ -70836,13 +70851,26 @@
     "urlFonte": "https://www.zdnet.com/article/work-emails-going-to-spam-security-tweaks-to-fix/"
   },
   {
-    "titulo": "Migrando para GitHub: Como a Arquitetura de Software Pode Impulsionar a Inovação",
+    "titulo": "Azure DevOps para GitHub: critérios para uma migração",
     "noticiaOriginal": "How Microsoft is migrating repositories to GitHub",
     "url": "artigos/programacao/migrando-para-github-como-a-arquitetura-de-software-pode-impulsionar-a-inovacao.html",
     "data": "2026-06-03T18:48:48.993Z",
     "dataFonte": "2026-06-03T18:48:27.000Z",
     "categoria": "Programação",
-    "urlFonte": "https://devblogs.microsoft.com/devops/how-microsoft-is-migrating-repositories-to-github/"
+    "urlFonte": "https://devblogs.microsoft.com/devops/how-microsoft-is-migrating-repositories-to-github/",
+    "seo": {
+      "description": "O caso de migração da Microsoft, os limites do GitHub Enterprise Importer e critérios propostos para conferir permissões, pull requests e pipelines.",
+      "modifiedAt": "2026-10-09T23:58:05.140Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-09T23:58:05.140Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Atribuir numeros ao relato parcial da Microsoft, separar motivacao de produtividade medida e acrescentar limites de permissoes e criterios de aceite.",
+      "hashAntes": "6f49ebe7d3b7c04a3d0b9b09fec1a647e59a1d344e8bd03ed620c17aa6075084",
+      "hashDepois": "107988f0c7defbfecd8fddd25268e8f9e4dbaaf6346906fe21af2d1defdf2535",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/correcoes-fontes-primarias-2026-10.json"
+    }
   },
   {
     "titulo": "Desafios e Oportunidades na Indústria de Tecnologia de Defesa: O Que Podemos Aprender?",
@@ -72762,21 +72790,25 @@
     }
   },
   {
-    "titulo": "Agilidade no Desenvolvimento: Como as Novas Habilidades dos Agentes do Visual Studio Podem Revolucionar Sua Rotina",
+    "titulo": "Agent Skills no Visual Studio: requisitos e avaliação",
     "noticiaOriginal": "Built-in Agent Skills Bring .NET and Azure Expertise into Visual Studio",
     "url": "artigos/desenvolvimento-de-software/agilidade-no-desenvolvimento-como-as-novas-habilidades-dos-agentes-do-visual-studio-podem-revolucionar-sua-rotina.html",
     "data": "2026-07-15T05:30:35.273Z",
     "dataFonte": "2026-07-14T17:30:57.000Z",
     "categoria": "Desenvolvimento de Software",
     "urlFonte": "https://devblogs.microsoft.com/visualstudio/built-in-agent-skills-in-visual-studio/",
-    "qualidadeEditorial": {
-      "politica": "fonte-rastreavel-recente-com-analise-propria",
-      "scoreFonte": 116,
-      "sinalEditorial": 78,
-      "palavrasFonte": 937,
-      "palavrasArtigo": 868,
-      "secoesArtigo": 8,
-      "similaridadeFonte": 0
+    "seo": {
+      "description": "Requisitos das skills integradas de .NET e Azure no Visual Studio e um protocolo proposto para avaliar código, permissões e retrabalho.",
+      "modifiedAt": "2026-10-09T23:58:05.140Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-09T23:58:05.140Z",
+      "responsavel": "Codex (correcao assistida)",
+      "motivo": "Distinguir requisitos gerais e integrados, remover garantias de HTTP e desempenho sem evidencia e propor verificacoes independentes.",
+      "hashAntes": "29179a5e5caa16374f82727e37c8588cf31cc7b586cc212f2b8a335abd7e832d",
+      "hashDepois": "ee66b8bb2252765eabd137f8be13d1f85e25291814a128e521fe915cfa0417b3",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/correcoes-fontes-primarias-2026-10.json"
     }
   },
   {

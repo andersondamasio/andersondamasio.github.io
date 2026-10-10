@@ -69,57 +69,57 @@
     {
       "url": "artigos/desenvolvimento-de-software/agilidade-no-desenvolvimento-como-as-novas-habilidades-dos-agentes-do-visual-studio-podem-revolucionar-sua-rotina.html",
       "acao": "atualizar",
-      "motivo": "Tema alinhado, mas artigo mistura funcionalidades e inferencias de desempenho.",
-      "evidencia": "Texto afirma que skills garantem semantica HTTP e geram overhead, sem demonstracao. Fonte oficial identificada, mas acesso atual retornou 403. Nao atestar verificacao factual; preparar revisao especifica quando a fonte puder ser lida.",
+      "motivo": "Distinguir requisitos gerais e integrados, remover garantias de HTTP e desempenho sem evidencia e propor verificacoes independentes.",
+      "evidencia": "Fontes primarias e seletores registrados em dados/editorial/correcoes-fontes-primarias-2026-10.json. Criterios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-09T23:58:05.140Z"
       },
-      "conteudoHash": "29179a5e5caa16374f82727e37c8588cf31cc7b586cc212f2b8a335abd7e832d"
+      "conteudoHash": "ee66b8bb2252765eabd137f8be13d1f85e25291814a128e521fe915cfa0417b3"
     },
     {
       "url": "artigos/programacao/migrando-para-github-como-a-arquitetura-de-software-pode-impulsionar-a-inovacao.html",
       "acao": "atualizar",
-      "motivo": "Preservar noticia com fonte primaria, acrescentando criterios verificaveis de migracao.",
-      "evidencia": "Fonte primaria anteriormente conferida sustenta o caso CAP (1.600 repositorios e 3.100 desenvolvedores em seis meses). O corpo termina com previsoes genericas de produtividade; faltam limites, inventario de dependencias e verificacao de equivalencia.",
+      "motivo": "Atribuir numeros ao relato parcial da Microsoft, separar motivacao de produtividade medida e acrescentar limites de permissoes e criterios de aceite.",
+      "evidencia": "Fontes primarias e seletores registrados em dados/editorial/correcoes-fontes-primarias-2026-10.json. Criterios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-09T23:58:05.140Z"
       },
-      "conteudoHash": "6f49ebe7d3b7c04a3d0b9b09fec1a647e59a1d344e8bd03ed620c17aa6075084"
+      "conteudoHash": "107988f0c7defbfecd8fddd25268e8f9e4dbaaf6346906fe21af2d1defdf2535"
     },
     {
       "url": "artigos/tecnologia/a-nova-era-do-visual-studio-o-que-a-microsoft-nos-trouxe.html",
       "acao": "atualizar",
-      "motivo": "Remover relato pessoal inventado e promessa de ganho sem teste.",
-      "evidencia": "O corpo diz Ja passei por situacoes de build e recomenda adocao imediata com ganho significativo garantido. Correcoes pontuais removem ambas. Conferencia integral dos anuncios permanece pendente por acesso 403 a fonte oficial.",
+      "motivo": "Tratar o anuncio como roadmap, retirar voz de vivencia e distinguir disponibilidade posterior de criterio proposto de adocao.",
+      "evidencia": "Fontes primarias e seletores registrados em dados/editorial/correcoes-fontes-primarias-2026-10.json. Criterios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-09T23:58:05.140Z"
       },
-      "conteudoHash": "c385ca8d2923692052145c896160c467595199983ba0afbfb406b8c97cf32b7c"
+      "conteudoHash": "aa43a6982887a9723ae945566e3f6ba7db95d7f95ede77ed58bb731ee3abf4b5"
     },
     {
       "url": "artigos/devops/atualizacoes-cruciais-mantenha-seu-azure-devops-server-em-dia.html",
       "acao": "atualizar",
-      "motivo": "Retirar atualidade artificial de uma noticia de maio e preparar instrucoes por versao.",
-      "evidencia": "O corpo chama o patch de 14/05/2026 de mais recente, sem referencia temporal fixa. Corrigido para anuncio historico. O comando CheckInstall requer o instalador e versao correspondentes; nao validar um servidor real por este texto.",
+      "motivo": "Identificar versoes completas, separar correcoes funcionais e de seguranca, delimitar CheckInstall e evitar recomendacao automatica de pacote historico.",
+      "evidencia": "Fontes primarias e seletores registrados em dados/editorial/correcoes-fontes-primarias-2026-10.json. Criterios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-09T23:58:05.140Z"
       },
-      "conteudoHash": "2da94eede2927d63ae45bd614a8b1532dca2182f01d58f2e35ff362555106cb7"
+      "conteudoHash": "75e2d9565ef4407c3c9537cbcbe66b488e375f025169d62ced30f729006f99e4"
     },
     {
       "url": "artigos/programacao/a-nova-era-das-extensoes-o-que-o-sdk-estilo-pode-fazer-por-voce.html",
       "acao": "atualizar",
-      "motivo": "Conferir alegacoes quantitativas e exemplo antes de promover o guia.",
-      "evidencia": "Afirma VS 18.5, csproj de 20 linhas e reducao de build de ate 75%, sem condicoes do benchmark no corpo. Fonte identificada retornou 403. Preservada indexacao durante revisao, sem assumir que numeros sao falsos.",
+      "motivo": "Distinguir VSSDK de VisualStudio.Extensibility e contextualizar benchmark interno, com verificacoes propostas sem alegar execucao.",
+      "evidencia": "Fontes primarias e seletores registrados em dados/editorial/correcoes-fontes-primarias-2026-10.json. Criterios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-09T23:58:05.140Z"
       },
-      "conteudoHash": "9198bd1c89f862a495330c3505c9e5439de1009b7abbfe0e651d18502d43e93c"
+      "conteudoHash": "0185713fc55bd757f3a1a87700934779827a9ed40cf1e3118604bdd53dd189de"
     },
     {
       "url": "artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html",

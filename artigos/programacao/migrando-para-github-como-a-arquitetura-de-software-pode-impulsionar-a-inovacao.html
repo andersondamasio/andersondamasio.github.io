@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Migrando para GitHub: Como a Arquitetura de Software Pode Impulsionar a Inovação</title>
-<meta name="description" content="Nos últimos tempos, muito se tem falado sobre a migração de repositórios para o GitHub, especialmente com o movimento que a Microsoft está fazendo nesse...">
+<title>Azure DevOps para GitHub: critérios para uma migração</title>
+<meta name="description" content="O caso de migração da Microsoft, os limites do GitHub Enterprise Importer e critérios propostos para conferir permissões, pull requests e pipelines.">
 <meta name="author" content="Anderson Damasio">
-<meta name="keywords" content="Programação, arquitetura de software, desenvolvimento de software, inteligência artificial, devops, github, migracao, equipes, ferramentas, migrando">
+<meta name="keywords" content="Programação, devops, azure, github, migracao, criterios, repositorios, acesso, deve, pull">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/programacao/migrando-para-github-como-a-arquitetura-de-software-pode-impulsionar-a-inovacao.html">
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
@@ -15,48 +15,48 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Migrando para GitHub: Como a Arquitetura de Software Pode Impulsionar a Inovação">
-<meta property="og:description" content="Nos últimos tempos, muito se tem falado sobre a migração de repositórios para o GitHub, especialmente com o movimento que a Microsoft está fazendo nesse...">
+<meta property="og:title" content="Azure DevOps para GitHub: critérios para uma migração">
+<meta property="og:description" content="O caso de migração da Microsoft, os limites do GitHub Enterprise Importer e critérios propostos para conferir permissões, pull requests e pipelines.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/programacao/migrando-para-github-como-a-arquitetura-de-software-pode-impulsionar-a-inovacao.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-06-03T18:48:48.993Z">
-<meta property="article:modified_time" content="2026-06-03T18:48:48.993Z">
+<meta property="article:modified_time" content="2026-10-09T23:58:05.140Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Migrando para GitHub: Como a Arquitetura de Software Pode Impulsionar a Inovação">
-<meta name="twitter:description" content="Nos últimos tempos, muito se tem falado sobre a migração de repositórios para o GitHub, especialmente com o movimento que a Microsoft está fazendo nesse...">
+<meta name="twitter:title" content="Azure DevOps para GitHub: critérios para uma migração">
+<meta name="twitter:description" content="O caso de migração da Microsoft, os limites do GitHub Enterprise Importer e critérios propostos para conferir permissões, pull requests e pipelines.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Migrando para GitHub: Como a Arquitetura de Software Pode Impulsionar a Inovação",
-  "description": "Nos últimos tempos, muito se tem falado sobre a migração de repositórios para o GitHub, especialmente com o movimento que a Microsoft está fazendo nesse...",
+  "headline": "Azure DevOps para GitHub: critérios para uma migração",
+  "description": "O caso de migração da Microsoft, os limites do GitHub Enterprise Importer e critérios propostos para conferir permissões, pull requests e pipelines.",
   "url": "https://www.andersondamasio.com.br/artigos/programacao/migrando-para-github-como-a-arquitetura-de-software-pode-impulsionar-a-inovacao.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/programacao/migrando-para-github-como-a-arquitetura-de-software-pode-impulsionar-a-inovacao.html"
   },
   "datePublished": "2026-06-03T18:48:48.993Z",
-  "dateModified": "2026-06-03T18:48:48.993Z",
+  "dateModified": "2026-10-09T23:58:05.140Z",
   "articleSection": "Programação",
   "inLanguage": "pt-BR",
   "keywords": [
     "Programação",
-    "arquitetura de software",
-    "desenvolvimento de software",
-    "inteligência artificial",
     "devops",
+    "azure",
     "github",
     "migracao",
-    "equipes",
-    "ferramentas",
-    "migrando"
+    "criterios",
+    "repositorios",
+    "acesso",
+    "deve",
+    "pull"
   ],
-  "wordCount": 533,
+  "wordCount": 511,
   "about": {
     "@type": "Thing",
     "name": "Programação"
@@ -64,19 +64,11 @@
   "mentions": [
     {
       "@type": "Thing",
-      "name": "arquitetura de software"
-    },
-    {
-      "@type": "Thing",
-      "name": "desenvolvimento de software"
-    },
-    {
-      "@type": "Thing",
-      "name": "inteligência artificial"
-    },
-    {
-      "@type": "Thing",
       "name": "devops"
+    },
+    {
+      "@type": "Thing",
+      "name": "azure"
     },
     {
       "@type": "Thing",
@@ -85,6 +77,14 @@
     {
       "@type": "Thing",
       "name": "migracao"
+    },
+    {
+      "@type": "Thing",
+      "name": "criterios"
+    },
+    {
+      "@type": "Thing",
+      "name": "repositorios"
     }
   ],
   "isAccessibleForFree": true,
@@ -153,7 +153,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Migrando para GitHub: Como a Arquitetura de Software Pode Impulsionar a Inovação",
+      "name": "Azure DevOps para GitHub: critérios para uma migração",
       "item": "https://www.andersondamasio.com.br/artigos/programacao/migrando-para-github-como-a-arquitetura-de-software-pode-impulsionar-a-inovacao.html"
     }
   ]
@@ -254,30 +254,31 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>Migrando para GitHub: Como a Arquitetura de Software Pode Impulsionar a Inovação</h1>
+<h1>Azure DevOps para GitHub: critérios para uma migração</h1>
 
 <p class="article-meta">Publicado em: 03/06/2026 15:48</p>
 
-<div class="article-body"><p>Nos últimos tempos, muito se tem falado sobre a migração de repositórios para o GitHub, especialmente com o movimento que a Microsoft está fazendo nesse sentido. E não é por menos! O GitHub, com suas capacidades de integração e ferramentas inovadoras, está se tornando um hub essencial para equipes que desejam aproveitar ao máximo o potencial da <strong>inteligência artificial</strong> em seus fluxos de trabalho. Mas o que isso significa, na prática, para nós, arquitetos de software?</p>
-<h2>O Cenário Atual</h2>
-<p>Tradicionalmente, a Microsoft tem utilizado o Azure DevOps para gerenciar seus projetos, mas, com o avanço da <strong>AI</strong> e as novas demandas do mercado, a localização do código se tornou uma decisão estratégica. As equipes que se aproveitam das capacidades nativas de AI estão percebendo que a migração pode não ser apenas uma questão de mudança de plataforma, mas sim uma oportunidade para reestruturar e otimizar seus processos de desenvolmento.</p>
-<h3>Integração e Migração</h3>
-<p>A equipe de PM da Microsoft tem trabalhado arduamente para integrar Azure DevOps com o GitHub, criando ferramentas de migração como o <em>GitHub Enterprise Importer</em> e o <em>Enterprise Live Migrator</em>. Essas ferramentas não apenas facilitam a transição, mas também tornam o processo mais ágil, permitindo que as equipes mantenham suas operações em andamento durante a migração. Imagine você migrando mais de 1.600 repositórios e 3.100 desenvolvedores para o GitHub em apenas seis meses, como fez a organização CAP! Isso é impressionante, não acha?</p>
-<h3>Por Que Mudar Agora?</h3>
-<p>O que realmente motiva essa mudança é o acesso. antecipado a recursos inovadores, como o <em>GitHub Copilot</em> e outras funcionalidades que transformam a maneira como o código é escrito e mantido. Ao integrar essas ferramentas no dia a dia, as equipes podem criar um verdadeiro ambiente de trabalho digital, onde agentes de AI auxiliam os desenvolvedores nas tarefas cotidianas. Isso não só melhora a produtividade, mas também permite que as equipes se concentrem em desafios mais complexos.</p>
-<h2>Dicas Avançadas para a Migração</h2>
-<p>Agora, se você está pensando em fazer essa migração, algumas dicas podem ajudar:</p>
+<div class="article-body"><p>Migrar repositórios do Azure DevOps para o GitHub exige conferir o fluxo de trabalho completo. Código acessível no destino não basta como aceite: permissões, validações de pull request e integrações também precisam funcionar.</p>
+<h2>O caso relatado pela Microsoft</h2>
+<p class="fato-cap">Em <a href="https://devblogs.microsoft.com/devops/how-microsoft-is-migrating-repositories-to-github/">3 de junho de 2026, a Microsoft relatou</a> que sua organização Copilot, Agents, and Platforms (CAP) havia migrado mais de 1.600 repositórios e 3.100 desenvolvedores nos seis meses anteriores. A migração era parcial: repositórios complexos ainda permaneciam no Azure DevOps.</p>
+<p class="fato-hibrido">O relato descreve um modelo híbrido, com repositórios no GitHub e uso continuado de Azure Boards e Azure Pipelines. Ele cita a integração pelo aplicativo Azure Pipelines e vínculos <code>AB#</code> com work items. Acesso a recursos de IA aparece como motivação da organização, não como medição independente de produtividade nem prazo que outra equipe deva reproduzir.</p>
+<h2>Inventário antes de escolher o lote</h2>
+<p class="fato-inventario">A <a href="https://docs.github.com/en/enterprise-cloud@latest/migrations/ado/prepare-for-your-migration-from-azure-devops-to-github">documentação do GitHub Enterprise Importer</a> recomenda levantar repositórios e pull requests. A quantidade de pull requests pesa no tempo de migração; contar apenas repositórios esconde parte do trabalho. A extensão ADO2GH do GitHub CLI oferece <code>gh ado2gh inventory-report --ado-org YOUR_ADO_ORG</code>, que consulta a organização e gera arquivos CSV. Esse comando requer a extensão e o acesso apropriado; não foi executado para este artigo.</p>
+<p class="fato-permissoes">A mesma documentação informa que o importer não migra as permissões de repositório do Azure DevOps. O mapeamento de acesso precisa ser tratado explicitamente; não suponha que um clone bem-sucedido confirme que todos os usuários receberam a permissão correta.</p>
+<h2>Critérios de aceite para um piloto</h2>
+<div class="contribuicao-editorial">
+<p>A proposta abaixo transforma a migração em uma decisão verificável. Escolha um repositório representativo de um fluxo real, com responsável disponível, sem começar pelo sistema mais crítico.</p>
 <ul>
-    <li><strong>Escolha os repositórios certos para começar:</strong> Foque em repositórios que são ativos e que trarão mais benefícios com a migração.</li>
-    <li><strong>Adote uma abordagem híbrida:</strong> Manter algumas funcionalidades do Azure DevOps, como Azure Boards e Azure Pipelines, pode facilitar a transição e minimizar a frustração da equipe.</li>
-    <li><strong>Capacite sua equipe:</strong> Certifique-se de que todos os desenvolvedores estejam confortáveis com o novo ambiente, promovendo treinamentos e compartilhamento de boas práticas.</li>
-    <li><strong>Mantenha um olhar atento:</strong> Após a migração, continue monitorando a eficácia das novas ferramentas e ajuste os fluxos de trabalho conforme necessário.</li>
+<li>Compare branches e tags esperadas e uma amostra identificada de commits. Registre diferenças e confira arquivos grandes ou submódulos quando existirem.</li>
+<li>Abra uma pull request de teste e verifique revisores, checks obrigatórios e bloqueio de merge sem aprovação. Não use apenas uma conta administradora para o teste.</li>
+<li>Teste uma conta que deve ler, uma que deve contribuir e uma que não deve ter acesso. Guarde o resultado esperado de cada caso antes da mudança.</li>
+<li>Execute um pipeline de homologação com credenciais próprias desse ambiente. Confira gatilhos, variáveis, artefatos e a associação com o work item, quando essa integração fizer parte do processo.</li>
+<li>Combine o período de congelamento de escrita, quem decide a virada e o que acontece com alterações feitas depois dela. A origem deve ser preservada conforme a política de retenção da equipe.</li>
 </ul>
-<h2>Reflexões Finais</h2>
-<p>A migração para o GitHub representa mais do que uma mudança de plataforma; é uma oportunidade para repensar como as equipes trabalham e se adaptam às novas tecnologias. Como arquitetos de software, nosso papel é guiar essa transição de forma que aproveitemos ao máximo as novas ferramentas disponíveis, sem perder de vista as necessidades de nossos desenvolvedores e da empresa. Não subestime o poder de uma boa estratégia de migração!</p>
-<p>Olhando para o futuro, é evidente que a integração entre <strong>AI</strong> e desenvolvimento de software vai continuar a evoluir, e aqueles que estiverem dispostos a se adaptar e inovar estarão sempre à frente no jogo.</p>
-<p>
-<p></p></div>
+<p>Defina um responsável e uma evidência de execução para cada verificação. Enquanto houver uma falha de permissão ou de validação obrigatória sem tratamento, mantenha o próximo lote suspenso. Esses critérios são uma proposta editorial; não relatam uma migração realizada por Anderson Damasio.</p>
+</div>
+<p class="limites-editoriais">O caso CAP mostra uma estratégia possível, não uma obrigação de trocar de plataforma. A decisão depende do problema que a equipe quer resolver e das capacidades efetivamente disponíveis em seu plano e ambiente. Antes de alterar as integrações de autenticação, consulte também os <a href="/artigos/segredos-sobrepostos-desvendando-os-desafios-do-azure-devops-oauth.html">cuidados com a rotação de segredos OAuth no Azure DevOps</a>.</p>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>

@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>A Nova Era das Extensões: O Que o SDK Estilo Pode Fazer por Você</title>
-<meta name="description" content="Recentemente, uma atualização do Visual Studio trouxe uma mudança que promete transformar a forma como desenvolvemos extensões para a plataforma. A partir...">
+<title>Extensões VSIX em SDK-style: migração e limites</title>
+<meta name="description" content="Escopo do suporte SDK-style para extensões VSSDK, limites do ganho de build relatado pela Microsoft e critérios para comparar pacote e depuração.">
 <meta name="author" content="Anderson Damasio">
-<meta name="keywords" content="Programação, estilo, extensoes, fazer, projetos, projeto, suporte, atualizacao, desenvolvedores, studio">
+<meta name="keywords" content="Programação, extensoes, migracao, vsix, extensao, sdk-style, build, limites, projeto, configuracao">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/programacao/a-nova-era-das-extensoes-o-que-o-sdk-estilo-pode-fazer-por-voce.html">
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
@@ -15,48 +15,48 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="A Nova Era das Extensões: O Que o SDK Estilo Pode Fazer por Você">
-<meta property="og:description" content="Recentemente, uma atualização do Visual Studio trouxe uma mudança que promete transformar a forma como desenvolvemos extensões para a plataforma. A partir...">
+<meta property="og:title" content="Extensões VSIX em SDK-style: migração e limites">
+<meta property="og:description" content="Escopo do suporte SDK-style para extensões VSSDK, limites do ganho de build relatado pela Microsoft e critérios para comparar pacote e depuração.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/programacao/a-nova-era-das-extensoes-o-que-o-sdk-estilo-pode-fazer-por-voce.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-04-29T14:01:06.212Z">
-<meta property="article:modified_time" content="2026-04-29T14:01:06.212Z">
+<meta property="article:modified_time" content="2026-10-09T23:58:05.140Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A Nova Era das Extensões: O Que o SDK Estilo Pode Fazer por Você">
-<meta name="twitter:description" content="Recentemente, uma atualização do Visual Studio trouxe uma mudança que promete transformar a forma como desenvolvemos extensões para a plataforma. A partir...">
+<meta name="twitter:title" content="Extensões VSIX em SDK-style: migração e limites">
+<meta name="twitter:description" content="Escopo do suporte SDK-style para extensões VSSDK, limites do ganho de build relatado pela Microsoft e critérios para comparar pacote e depuração.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "A Nova Era das Extensões: O Que o SDK Estilo Pode Fazer por Você",
-  "description": "Recentemente, uma atualização do Visual Studio trouxe uma mudança que promete transformar a forma como desenvolvemos extensões para a plataforma. A partir...",
+  "headline": "Extensões VSIX em SDK-style: migração e limites",
+  "description": "Escopo do suporte SDK-style para extensões VSSDK, limites do ganho de build relatado pela Microsoft e critérios para comparar pacote e depuração.",
   "url": "https://www.andersondamasio.com.br/artigos/programacao/a-nova-era-das-extensoes-o-que-o-sdk-estilo-pode-fazer-por-voce.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/programacao/a-nova-era-das-extensoes-o-que-o-sdk-estilo-pode-fazer-por-voce.html"
   },
   "datePublished": "2026-04-29T14:01:06.212Z",
-  "dateModified": "2026-04-29T14:01:06.212Z",
+  "dateModified": "2026-10-09T23:58:05.140Z",
   "articleSection": "Programação",
   "inLanguage": "pt-BR",
   "keywords": [
     "Programação",
-    "estilo",
     "extensoes",
-    "fazer",
-    "projetos",
+    "migracao",
+    "vsix",
+    "extensao",
+    "sdk-style",
+    "build",
+    "limites",
     "projeto",
-    "suporte",
-    "atualizacao",
-    "desenvolvedores",
-    "studio"
+    "configuracao"
   ],
-  "wordCount": 550,
+  "wordCount": 432,
   "about": {
     "@type": "Thing",
     "name": "Programação"
@@ -64,27 +64,27 @@
   "mentions": [
     {
       "@type": "Thing",
-      "name": "estilo"
-    },
-    {
-      "@type": "Thing",
       "name": "extensoes"
     },
     {
       "@type": "Thing",
-      "name": "fazer"
+      "name": "migracao"
     },
     {
       "@type": "Thing",
-      "name": "projetos"
+      "name": "vsix"
     },
     {
       "@type": "Thing",
-      "name": "projeto"
+      "name": "extensao"
     },
     {
       "@type": "Thing",
-      "name": "suporte"
+      "name": "sdk-style"
+    },
+    {
+      "@type": "Thing",
+      "name": "build"
     }
   ],
   "isAccessibleForFree": true,
@@ -153,7 +153,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "A Nova Era das Extensões: O Que o SDK Estilo Pode Fazer por Você",
+      "name": "Extensões VSIX em SDK-style: migração e limites",
       "item": "https://www.andersondamasio.com.br/artigos/programacao/a-nova-era-das-extensoes-o-que-o-sdk-estilo-pode-fazer-por-voce.html"
     }
   ]
@@ -254,34 +254,25 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>A Nova Era das Extensões: O Que o SDK Estilo Pode Fazer por Você</h1>
+<h1>Extensões VSIX em SDK-style: migração e limites</h1>
 
 <p class="article-meta">Publicado em: 29/04/2026 11:01</p>
 
-<div class="article-body"><p>Recentemente, uma atualização do Visual Studio trouxe uma mudança que promete transformar a forma como desenvolvemos extensões para a plataforma. A partir da versão 18.5, temos suporte. oficial para projetos de extensão no estilo SDK, uma novidade que pode facilitar bastante a vida dos desenvolvedores e arquitetos de software. Mas, o que exatamente isso significa e como podemos tirar proveito dessa novidade?</p>
-<h2>Introdução</h2>
-<p>Quando falamos em extensões do Visual Studio, muitos pensam na complexidade do processo de criação e implementação. Antigamente, criar um <strong>VSIX</strong> poderia ser um verdadeiro desafio, cheio de nuances e detalhes que, muitas vezes, acabavam atrasando o desenvolvimento. Agora, com o suporte a projetos estilo SDK, a situação muda completamente. Mas será que essa é a solução mágica que todos esperávamos?</p>
-<h2>O Que é o suprte a Projetos Estilo SDK?</h2>
-<p>Essencialmente, o suporte a projetos estilo SDK permite que você crie e construa extensões do Visual Studio de uma maneira muito mais moderna e eficiente. O novo formato de projeto resulta em um arquivo <strong>csproj</strong> muito mais compacto e organizado, facilitando a leitura e manutenção. Com apenas 20 linhas de código, você já pode ter uma estrututra básica para sua extensão!</p>
-<p>Um dos grandes destaques dessa atualização é a melhoria no desempenho dos builds. Agora, é possível ter reduções de até <strong>75%</strong> no tempo de compilação, especialmente em soluções grandes. Imagine a praticidade de fazer pequenas alterações e não ter que esperar eternamente pelo build! Isso pode fazer uma diferença enorme no dia a dia dos desenvolvedores.</p>
-<h3>Benefícios Práticos</h3>
-<ul>
-    <li><strong>Incremental Build:</strong> Com o suporte a builds incrementais, apenas as partes alteradas do código são recompiladas, economizando tempo e recursos.</li>
-    <li><strong>Templates Modernos:</strong> Os novos templates já vêm configurados com as melhores práticas, o que facilita a vida de quem está começando.</li>
-    <li><strong>Compatibilidade:</strong> Você não precisa migrar suas extensões existentes, a atualização é opcional e não força conversões desnecessárias.</li>
-</ul>
-<h2>Dicas Avançadas para Aproveitar ao Máximo</h2>
-<p>Agora que você já conhece as vantagens, aqui vão algumas dicas que podem ajudar a otimizar ainda mais seu desenvolvimento:</p>
-<ul>
-    <li><strong>Utilize as Novas Propriedades:</strong> Marque seu projeto como "deployable" no arquivo SLN ou SLNX. Isso garante que ele seja implantado automaticamente ao iniciar o debug.</li>
-    <li><strong>Explore as Referências:</strong> Dê uma olhada nas extensões que já foram convertidas para o novo modelo como o <em>Smart Screen</em> e <em>Whitespace Visualizer</em>. Elas podem servir como ótimos exemplos para seu projeto.</li>
-    <li><strong>Teste a Migração:</strong> Se você tem um projeto antigo, considere migrá-lo para o estilo SDK. A configuração é relativamente tranquila e pode trazer muitos benefícios.</li>
-</ul>
-<h2>Conclusão</h2>
-<p>A introdução do suporte a projetos estilo SDK para extensões do Visual Studio é, sem dúvida, um passo positivo para a comunidade de desenvolvedores. A possibilidade de reduzir drasticamente o tempo de build e simplificar a configuração dos projetos é um avanço que não podemos ignorar. No entanto, vale lembrar que cada projeto é único e a migração deve ser feita com cuidado, respeitando a arquitetura e as necessidades específicas de cada solução.</p>
-<p>Se você ainda não experimentou essa novidade, está na hora de dar uma chance. A atualização pode ser o que faltava para melhorar sua produtividade e eficiência no desenvolvimento. E lembre-se: a tecnologia está em constante evolução, e nós, como desenvolvedores, devemos sempre estar prontos para nos adaptar e tirar o máximo proveito das novidades que surgem.</p>
-<p>
-<p></p></div>
+<div class="article-body"><p>O suporte oficial a projetos VSIX em SDK-style simplifica a configuração de extensões baseadas em VSSDK. A migração, porém, precisa preservar o pacote produzido e o fluxo de depuração; um arquivo de projeto menor não comprova equivalência.</p>
+<h2>Escopo do suporte</h2>
+<p class="fato-suporte">O <a href="https://devblogs.microsoft.com/visualstudio/sdk-style-support-for-extension-projects/">anúncio de 29 de abril de 2026</a> situa o suporte no Visual Studio 18.5, com o workload de desenvolvimento de extensões. Ele se refere a extensões VSSDK: o framework VisualStudio.Extensibility já usava SDK-style. Projetos legados não precisam ser convertidos obrigatoriamente.</p>
+<p class="fato-desempenho">A redução de até 75% no tempo de build é um resultado de adoção interna relatado pela Microsoft para soluções grandes, com mudanças pequenas ou restritas a um subprojeto. Não é uma promessa para qualquer extensão nem uma medição realizada neste site. O exemplo compacto de projeto no post também não define quantas linhas um projeto real deverá ter.</p>
+<h2>O que conferir ao converter</h2>
+<p class="fato-configuracao">Entre os pontos de migração, o post orienta habilitar WPF quando houver XAML e marcar a extensão como implantável na solução SLN ou SLNX para o fluxo F5. Também explica as propriedades <code>VSSDKBuildToolsAutoSetup</code> e <code>VsixDeployOnDebug</code>. Confira o exemplo oficial para o tipo de extensão e a configuração de solução usados.</p>
+<div class="contribuicao-editorial">
+<p>Como critério de aceite proposto, mantenha o projeto anterior em uma branch de comparação e registre o que deve permanecer no VSIX: manifesto, assemblies, recursos, dependências e pontos de entrada da extensão. Após a conversão, compare esse inventário com o pacote novo e investigue ausências ou inclusões inesperadas.</p>
+<p>Faça a primeira validação em uma instância de desenvolvimento apropriada, sem substituir a instalação de trabalho da equipe. Abra a funcionalidade que a extensão acrescenta, confirme carregamento e fechamento e repita o fluxo de depuração. Compilar sem erro e iniciar o IDE são verificações diferentes.</p>
+<h2>Como medir sem confundir os cenários</h2>
+<p>Uma avaliação de desempenho deve separar build limpo, build sem mudanças e build após a mesma pequena alteração de código. Registre SDK, Visual Studio, configuração, hardware e estado de caches. Use o mesmo cenário antes e depois da migração e mantenha os tempos individuais, em vez de divulgar apenas a melhor execução.</p>
+<p>Se o build ficou mais rápido, confira se os dois projetos produziram os artefatos esperados. Um arquivo que deixou de ser empacotado pode reduzir o trabalho realizado e, ao mesmo tempo, tornar a extensão incorreta. Esse controle ajuda a distinguir otimização de perda de funcionalidade.</p>
+</div>
+<p class="limites-editoriais">Não foi compilada nem medida uma extensão VSIX para este artigo. Os passos acima são uma proposta de validação. Use o ganho relatado no anúncio como motivo para investigar seu caso, não como resultado já obtido pela sua equipe.</p>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
