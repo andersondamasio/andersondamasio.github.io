@@ -5,6 +5,7 @@ const path = require('node:path');
 const cheerio = require('cheerio');
 const { hashCorpoEditorial } = require('./seo-helpful-content');
 const { hashArquivo, hashRegistros } = require('./article-lifecycle');
+const { digest } = require('./verify-deployment');
 const root = path.join(__dirname, '..');
 const ler = p => fs.readFileSync(path.join(root, p), 'utf8');
 const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.json'));
@@ -275,6 +276,55 @@ test('textos de seguranca nao confundem proposta, autenticacao, alegacao ou test
   assert.match(curso('.article-body').text(), /não recomenda matrícula/);
   assert.match(curso('.limites-editoriais').text(), /Não houve participação ou avaliação independente/);
   assert.ok(curso('.article-body a').toArray().some(el => curso(el).attr('href') === `/${lote.artigos.find(a => a.url.includes('a-nova-era-dos-testes')).url}`));
+});
+
+test('correcao de fluxos preserva historico e separa teste executado de proposta', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-fluxos-2026-10.json'));
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.metricasGoogle, null);
+  assert.equal(lote.artigos.length, 2);
+  for (const a of lote.artigos) {
+    const q = cheerio.load(ler(a.url));
+    const r = cadastro.find(r => r.url === a.url);
+    assert.equal(r.data, a.antes.data);
+    assert.equal(r.correcaoEditorial.revisaoHumana, false);
+    assert.equal(r.correcaoEditorial.relatorio, 'dados/editorial/curadoria-fluxos-2026-10.json');
+    assert.equal(r.seo.modifiedAt, lote.em);
+    assert.equal(r.qualidadeEditorial, undefined);
+    assert.equal(q('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.equal(q('h1').text(), a.depois.titulo);
+    assert.equal(q('meta[name=description]').attr('content'), a.depois.descricao);
+    assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    assert.doesNotMatch(q('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(hashCorpoEditorial(q('.article-body').html()), a.depois.corpoHash);
+    assert.equal(manifesto.decisoes.find(d => d.url === a.url).conteudoHash, a.depois.corpoHash);
+    for (const e of a.evidencias) {
+      assert.equal(q(e.seletor).length, 1);
+      assert.equal(hashCorpoEditorial(q(e.seletor).html()), e.textoHash);
+      assert.equal(q(e.seletor).find('a').attr('href'), e.fonte);
+    }
+    const anterior = JSON.parse(ler(a.resolvePendenciaDe));
+    assert.ok(anterior.pendentesRelacionadas.some(p => p.url === a.url));
+    assert.equal(q('.contribuicao-editorial').length, 1);
+    assert.equal(q('.limites-editoriais').length, 1);
+  }
+  const lens = lote.artigos.find(a => !a.experimento);
+  const l = cheerio.load(ler(lens.url));
+  assert.match(l('.fato-lens').text(), /alternativa recomendada é o OneDrive/);
+  assert.match(l('.fato-lens').text(), /não apresenta o Copilot/);
+  assert.match(l('.contribuicao-editorial').text(), /não um teste realizado/);
+  const health = lote.artigos.find(a => a.experimento);
+  assert.equal(health.experimento.resultado, 'passed');
+  assert.equal(health.experimento.verificacoes, 11);
+  assert.equal(health.experimento.testeProducao, false);
+  assert.equal(health.experimento.operacaoNegocioValidada, false);
+  for (const arquivo of health.experimento.arquivos) {
+    assert.equal(digest(ler(arquivo.caminho)), arquivo.sha256);
+  }
+  const h = cheerio.load(ler(health.url));
+  assert.match(h('.resultado-executado').text(), /11 verificações HTTP passaram/);
+  assert.match(h('.limites-editoriais').text(), /Nenhuma operação de negócio foi validada/);
+  assert.equal(h('.contribuicao-editorial tbody tr').length, 5);
 });
 
 test('curadoria contextual tem decisoes individuais, sem inventar metricas ou aprovacao humana', () => {

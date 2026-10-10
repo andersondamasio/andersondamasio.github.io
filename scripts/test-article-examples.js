@@ -15,6 +15,8 @@ test('codigo dos artigos coincide com arquivos executaveis, sem tags espurias', 
     ['artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html', [
       ['code.language-cpp', 'exemplos/fila-cpp/fila.hpp'],
       ['code.language-cpp', 'exemplos/fila-cpp/main.cpp']]],
+    ['artigos/seguranca/a-importancia-da-resiliencia-em-sistemas-aprendizados-do-incidente-da-victoria-s-secret.html', [
+      ['code.language-csharp', 'exemplos/health-checks/HealthExample.cs']]],
     ['artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html', [
       ['code.language-javascript', 'exemplos/nan-json/verificar.js']]]
   ];

@@ -1,0 +1,181 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T07:16:10.519Z",
+  "base": "2957725ba9f68ea46e2ff90c2252c16306210323",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "escopo": "Duas correcoes contextuais, mantendo URLs, indexacao e publicacao original. Exemplo didatico local executado; sem teste de produtos, incidente real, aprovacao de rascunho ou chamada paga.",
+  "artigos": [
+    {
+      "url": "artigos/desenvolvimento-de-software/a-despedida-do-microsoft-lens-o-que-a-inteligencia-artificial-nos-ensina-sobre-simplicidade.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A despedida do Microsoft Lens: o que a inteligência artificial nos ensina sobre simplicidade?",
+        "data": "2025-08-09T17:17:28.998Z",
+        "corpoHash": "51ed0648ad3ceeba892d26504a9b0086bac6eddbfd43247ddbde040c28841f8c",
+        "fonte": {
+          "url": "https://techcrunch.com/2025/08/08/rip-microsoft-lens-a-simple-little-app-thats-getting-replaced-by-ai/",
+          "titulo": "RIP, Microsoft Lens, a simple little app that’s getting replaced by AI",
+          "data": "2025-08-08T19:41:19.000Z"
+        }
+      },
+      "motivo": "Corrigir alternativa oficial, cronologia e causa atribuida a IA sem evidencia; trocar opiniao generica por criterios explicitos de compatibilidade.",
+      "evidencia": "Leitura integral encontrou recomendacao de Copilot, motivos comerciais inferidos e convite a continuar digitalizando apos encerramento. Aviso oficial recomenda OneDrive e declara restricao local.",
+      "depois": {
+        "titulo": "Fim do Microsoft Lens: como avaliar a compatibilidade de um novo fluxo",
+        "descricao": "A restrição de armazenamento local no OneDrive e uma matriz proposta para avaliar a troca de ferramentas, sem atribuir a decisão à IA.",
+        "corpoHash": "685643518fcf1044a52946838f82c59607f2928a04636a443ac9671c122e3cbb"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-lens",
+          "fonte": "https://support.microsoft.com/en-us/lens/retirement-of-microsoft-lens",
+          "consultadoEm": "2026-10-10T07:16:10.519Z",
+          "textoHash": "e95f84791ae7b68428bb73b026e93e99504eabf47a5dbc35a41d327a126bef61"
+        }
+      ],
+      "pergunta": "Como avaliar se um novo fluxo preserva a tarefa, alem de ter uma funcao com nome semelhante?",
+      "sobreposicao": "Guia de migracao do Lens ja corrigido tem cuidados com digitalizacoes existentes. Esta pagina mantem intencao distinta de requisitos/compatibilidade e faz link contextual; sem consolidacao pelo produto em comum.",
+      "resolvePendenciaDe": "dados/editorial/curadoria-testes-produtos-2026-10.json",
+      "experimento": null
+    },
+    {
+      "url": "artigos/seguranca/a-importancia-da-resiliencia-em-sistemas-aprendizados-do-incidente-da-victoria-s-secret.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A importância da resiliência em sistemas: aprendizados do incidente da Victoria's Secret",
+        "data": "2025-05-28T20:20:41.875Z",
+        "corpoHash": "9606ed5c24c5293f41a03791887f196477c48ad8edf4bcf52d10d5d213781117",
+        "fonte": {
+          "url": "https://techcrunch.com/2025/05/28/victorias-secret-hit-by-outages-as-it-battles-security-incident/",
+          "titulo": "Victoria’s Secret hit by outages as it battles security incident",
+          "data": "2025-05-28T20:20:22.000Z"
+        }
+      },
+      "motivo": "Retirar garantias genericas de resiliencia e confusao entre sucesso HTTP e operacao; demonstrar probes separados com teste local reproduzivel.",
+      "evidencia": "Leitura integral encontrou IsSuccessStatusCode descrito como funcionamento correto e microservicos apresentados como isolamento automatico. Teste local com dependencia simulada distingue 200/Healthy, 200/Degraded e 503/Unhealthy.",
+      "depois": {
+        "titulo": "Health checks em ASP.NET Core: HTTP 200 não comprova a operação",
+        "descricao": "Exemplo executável de liveness e readiness no ASP.NET Core, com falha e recuperação simuladas, 11 verificações HTTP e limites do que o status comprova.",
+        "corpoHash": "d780acc73453bb9270d41cb0a85b6b7ba3e2642ec7c9767ed412865b7b436031"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-incidente",
+          "fonte": "https://www.sec.gov/Archives/edgar/data/1856437/000185643725000026/ex991vsco632025.htm",
+          "consultadoEm": "2026-10-10T07:16:10.519Z",
+          "textoHash": "ef77ec60578bb692e05207a4318c21734ad20799ac2f24df0385db926372b067"
+        },
+        {
+          "seletor": ".fato-health",
+          "fonte": "https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-10.0",
+          "consultadoEm": "2026-10-10T07:16:10.519Z",
+          "textoHash": "4dd93bd5d9d7f265e28f7b20c37884838d24888013471c4da5f84bc40290b241"
+        }
+      ],
+      "pergunta": "O que liveness e readiness verificam e por que sucesso HTTP nao valida uma operacao de negocio?",
+      "sobreposicao": "Pagina de autenticacao da mesma empresa foi mantida separada por tratar identidade/permissao; incidente e apenas contexto historico, nao evidencia de eficacia do exemplo.",
+      "resolvePendenciaDe": "dados/editorial/curadoria-seguranca-2026-10.json",
+      "experimento": {
+        "tipo": "HTTP local, dependencia simulada",
+        "em": "2026-10-10T07:15:23.772Z",
+        "plataforma": "Windows",
+        "sdk": "10.0.401",
+        "runtime": "10.0.12",
+        "verificacoes": 11,
+        "resultado": "passed",
+        "revisaoHumana": false,
+        "testeProducao": false,
+        "operacaoNegocioValidada": false,
+        "hashFormato": "SHA256 do texto UTF-8 com finais de linha LF",
+        "arquivos": [
+          {
+            "caminho": "exemplos/health-checks/HealthExample.cs",
+            "sha256": "ec027f3b616667fd8871c5ee7baa1cb3d6ba2744f150739980a033640b2c36c6"
+          },
+          {
+            "caminho": "exemplos/health-checks/Program.cs",
+            "sha256": "90007e55dfd4a5c88d6cd9ef43058ef46b0a44e2877e6be10fbc518845f3c4e5"
+          },
+          {
+            "caminho": "exemplos/health-checks/HealthChecks.csproj",
+            "sha256": "25e9385fa7053264d6b20be455942ad1548a587fc006e017350d193d6a1a36b4"
+          },
+          {
+            "caminho": "exemplos/health-checks/global.json",
+            "sha256": "ce61f5ae207d33d00594c77c5999c7f0dc66434e85a85f38090335d588438974"
+          }
+        ],
+        "casos": [
+          {
+            "phase": "initially-unready",
+            "path": "/health/live",
+            "status": 200,
+            "body": "Healthy"
+          },
+          {
+            "phase": "initially-unready",
+            "path": "/health/ready",
+            "status": 503,
+            "body": "Unhealthy"
+          },
+          {
+            "phase": "ready",
+            "path": "/health/live",
+            "status": 200,
+            "body": "Healthy"
+          },
+          {
+            "phase": "ready",
+            "path": "/health/ready",
+            "status": 200,
+            "body": "Healthy"
+          },
+          {
+            "phase": "degraded",
+            "path": "/health/live",
+            "status": 200,
+            "body": "Healthy"
+          },
+          {
+            "phase": "degraded",
+            "path": "/health/ready",
+            "status": 200,
+            "body": "Degraded"
+          },
+          {
+            "phase": "dependency-failed",
+            "path": "/health/live",
+            "status": 200,
+            "body": "Healthy"
+          },
+          {
+            "phase": "dependency-failed",
+            "path": "/health/ready",
+            "status": 503,
+            "body": "Unhealthy"
+          },
+          {
+            "phase": "recovered",
+            "path": "/health/live",
+            "status": 200,
+            "body": "Healthy"
+          },
+          {
+            "phase": "recovered",
+            "path": "/health/ready",
+            "status": 200,
+            "body": "Healthy"
+          },
+          {
+            "phase": "unknown-route",
+            "path": "/not-a-health-route",
+            "status": 404
+          }
+        ]
+      }
+    }
+  ]
+}

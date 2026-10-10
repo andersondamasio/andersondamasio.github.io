@@ -6908,13 +6908,26 @@
     "urlFonte": "https://techcrunch.com/2025/05/28/deepseek-everything-you-need-to-know-about-the-ai-chatbot-app/"
   },
   {
-    "titulo": "A importância da resiliência em sistemas: aprendizados do incidente da Victoria's Secret",
-    "noticiaOriginal": "Victoria’s Secret hit by outages as it battles security incident",
+    "titulo": "Health checks em ASP.NET Core: HTTP 200 não comprova a operação",
+    "noticiaOriginal": "Victoria's Secret & Co. Provides First Quarter 2025 Preliminary Results and Update on Security Incident",
     "url": "artigos/seguranca/a-importancia-da-resiliencia-em-sistemas-aprendizados-do-incidente-da-victoria-s-secret.html",
     "data": "2025-05-28T20:20:41.875Z",
-    "dataFonte": "2025-05-28T20:20:22.000Z",
+    "dataFonte": "2025-06-03",
     "categoria": "Segurança",
-    "urlFonte": "https://techcrunch.com/2025/05/28/victorias-secret-hit-by-outages-as-it-battles-security-incident/"
+    "urlFonte": "https://www.sec.gov/Archives/edgar/data/1856437/000185643725000026/ex991vsco632025.htm",
+    "seo": {
+      "description": "Exemplo executável de liveness e readiness no ASP.NET Core, com falha e recuperação simuladas, 11 verificações HTTP e limites do que o status comprova.",
+      "modifiedAt": "2026-10-10T07:16:10.519Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T07:16:10.519Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar garantias genericas de resiliencia e confusao entre sucesso HTTP e operacao; demonstrar probes separados com teste local reproduzivel.",
+      "hashAntes": "9606ed5c24c5293f41a03791887f196477c48ad8edf4bcf52d10d5d213781117",
+      "hashDepois": "d780acc73453bb9270d41cb0a85b6b7ba3e2642ec7c9767ed412865b7b436031",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-fluxos-2026-10.json"
+    }
   },
   {
     "titulo": "Nvidia e as Restrições de Exportação: O Impacto na Arquitetura de Sistemas e o Futuro da Inteligência Artificial",
@@ -20404,13 +20417,25 @@
     "urlFonte": "https://www.wired.com/story/uncanny-valley-podcast-vibes-based-pricing-pro-ai-software/"
   },
   {
-    "titulo": "A despedida do Microsoft Lens: o que a inteligência artificial nos ensina sobre simplicidade?",
-    "noticiaOriginal": "RIP, Microsoft Lens, a simple little app that’s getting replaced by AI",
+    "titulo": "Fim do Microsoft Lens: como avaliar a compatibilidade de um novo fluxo",
+    "noticiaOriginal": "Retirement of Microsoft Lens",
     "url": "artigos/desenvolvimento-de-software/a-despedida-do-microsoft-lens-o-que-a-inteligencia-artificial-nos-ensina-sobre-simplicidade.html",
     "data": "2025-08-09T17:17:28.998Z",
-    "dataFonte": "2025-08-08T19:41:19.000Z",
     "categoria": "Desenvolvimento de Software",
-    "urlFonte": "https://techcrunch.com/2025/08/08/rip-microsoft-lens-a-simple-little-app-thats-getting-replaced-by-ai/"
+    "urlFonte": "https://support.microsoft.com/en-us/lens/retirement-of-microsoft-lens",
+    "seo": {
+      "description": "A restrição de armazenamento local no OneDrive e uma matriz proposta para avaliar a troca de ferramentas, sem atribuir a decisão à IA.",
+      "modifiedAt": "2026-10-10T07:16:10.519Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T07:16:10.519Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir alternativa oficial, cronologia e causa atribuida a IA sem evidencia; trocar opiniao generica por criterios explicitos de compatibilidade.",
+      "hashAntes": "51ed0648ad3ceeba892d26504a9b0086bac6eddbfd43247ddbde040c28841f8c",
+      "hashDepois": "685643518fcf1044a52946838f82c59607f2928a04636a443ac9671c122e3cbb",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-fluxos-2026-10.json"
+    }
   },
   {
     "titulo": "Desenvolvendo Aplicações de Alta Performance: O Novo Cliente Rust da Aerospike",

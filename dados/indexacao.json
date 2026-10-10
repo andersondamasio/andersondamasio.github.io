@@ -1017,6 +1017,28 @@
         "em": "2026-10-10T06:44:46.166Z"
       },
       "conteudoHash": "974104493b78e2c0e3fa1f4bab1932931b20995763d1bb5c4b63c57383979adc"
+    },
+    {
+      "url": "artigos/desenvolvimento-de-software/a-despedida-do-microsoft-lens-o-que-a-inteligencia-artificial-nos-ensina-sobre-simplicidade.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir alternativa oficial, cronologia e causa atribuida a IA sem evidencia; trocar opiniao generica por criterios explicitos de compatibilidade.",
+      "evidencia": "Leitura integral encontrou recomendacao de Copilot, motivos comerciais inferidos e convite a continuar digitalizando apos encerramento. Aviso oficial recomenda OneDrive e declara restricao local.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:16:10.519Z"
+      },
+      "conteudoHash": "685643518fcf1044a52946838f82c59607f2928a04636a443ac9671c122e3cbb"
+    },
+    {
+      "url": "artigos/seguranca/a-importancia-da-resiliencia-em-sistemas-aprendizados-do-incidente-da-victoria-s-secret.html",
+      "acao": "atualizar",
+      "motivo": "Retirar garantias genericas de resiliencia e confusao entre sucesso HTTP e operacao; demonstrar probes separados com teste local reproduzivel.",
+      "evidencia": "Leitura integral encontrou IsSuccessStatusCode descrito como funcionamento correto e microservicos apresentados como isolamento automatico. Teste local com dependencia simulada distingue 200/Healthy, 200/Degraded e 503/Unhealthy.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:16:10.519Z"
+      },
+      "conteudoHash": "d780acc73453bb9270d41cb0a85b6b7ba3e2642ec7c9767ed412865b7b436031"
     }
   ]
 }

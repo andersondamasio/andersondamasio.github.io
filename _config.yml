@@ -14,5 +14,7 @@ exclude:
   - '**/*.md'
   - exemplos/reservoir-sampling/bin/
   - exemplos/reservoir-sampling/obj/
+  - exemplos/health-checks/bin/
+  - exemplos/health-checks/obj/
   - dados/editorial/arquivados/
   - _assets/
