@@ -14,7 +14,9 @@ test('codigo dos artigos coincide com arquivos executaveis, sem tags espurias', 
       ['code.language-javascript', 'exemplos/design-tokens/converter.js']]],
     ['artigos/desenvolvendo-sistemas-de-baixa-latencia-com-c-desafios-e-oportunidades.html', [
       ['code.language-cpp', 'exemplos/fila-cpp/fila.hpp'],
-      ['code.language-cpp', 'exemplos/fila-cpp/main.cpp']]]
+      ['code.language-cpp', 'exemplos/fila-cpp/main.cpp']]],
+    ['artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html', [
+      ['code.language-javascript', 'exemplos/nan-json/verificar.js']]]
   ];
   for (const [url, arquivos] of casos) {
     const $ = cheerio.load(ler(url));
@@ -26,6 +28,12 @@ test('codigo dos artigos coincide com arquivos executaveis, sem tags espurias', 
     assert.equal($('.article-body pre br').length, 0);
     assert.equal($('.article-body iostream, .article-body condition_variable').length, 0);
   }
+});
+
+test('exemplo de NaN e JSON executa as assercoes sem dependencias externas', () => {
+  const saida = require('node:child_process').execFileSync(process.execPath,
+    [path.join(root, 'exemplos/nan-json/verificar.js')], { encoding: 'utf8' });
+  assert.equal(saida.trim(), 'Contrato JSON verificado.');
 });
 
 test('CSS publicado e a saida real do conversor', () => {

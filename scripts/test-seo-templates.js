@@ -8,7 +8,7 @@ const cheerio = require("cheerio");
 const { inserirSecoesConteudoUtil, avaliarSecoesConteudoUtil, gerarSecoesConteudoUtil, hashCorpoEditorial } = require("./seo-helpful-content");
 const { criarPessoaSchema, criarWebSiteSchema } = require("./seo-identity");
 const { gerarAutoriaVisivel, inserirAutoriaVisivel, avaliarAutoriaVisivel } = require("./seo-article-byline");
-const { estilosCodigoInline, aplicarEstilosCodigoInline, paddingBlocoCodigo, aplicarEspacoBotaoCopiar } = require("./seo-code-styles");
+const { estilosCodigoInline, aplicarEstilosCodigoInline, paddingBlocoCodigo, aplicarEspacoBotaoCopiar, estilosBlocoLegado, aplicarEstilosBlocoLegado } = require("./seo-code-styles");
 const { defaultSeoImage, defaultArticleImages, getArticleStructuredImages } = require("./seo-assets");
 const { aprovacaoFixture } = require("./fixtures/editorial-review");
 const { criarMetadadosArtigo, contarPalavrasProsa } = require("./seo-article-metadata");
@@ -139,6 +139,19 @@ test("insercao respeita divs aninhadas, preserva codigo e e idempotente", () => 
   assert.equal($(".article-body").html(), corpo);
   assert.equal($(".article-body .article-validation").length, 0);
   assert.equal($(".article-validation").length, 1);
+});
+
+test('bloco legado ganha rolagem propria sem alterar corpo ou substituir regra existente', () => {
+  const corpo = '<pre><code>const valor = Number.isNaN(NaN);\n  linhaLonga();</code></pre>';
+  const html = `<html><head><style>${estilosCodigoInline}</style></head><body><div class="article-body">${corpo}</div></body></html>`;
+  const novo = aplicarEstilosBlocoLegado(html);
+  assert.ok(novo.includes(estilosBlocoLegado));
+  assert.equal(aplicarEstilosBlocoLegado(novo), novo);
+  assert.equal(cheerio.load(novo)('.article-body').html(), corpo);
+  const existente = html.replace('</style>', 'pre { overflow-x: auto; padding: 3rem; }</style>');
+  assert.equal(aplicarEstilosBlocoLegado(existente), existente);
+  const inline = html.replace(corpo, '<p>Valor <code>NaN</code>.</p>');
+  assert.equal(aplicarEstilosBlocoLegado(inline), inline);
 });
 
 test("backfill reserva espaco para copiar sem alterar o codigo nem paginas sem blocos", () => {
