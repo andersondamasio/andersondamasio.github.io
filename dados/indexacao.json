@@ -1503,6 +1503,169 @@
         "em": "2026-10-10T10:15:07.040Z"
       },
       "conteudoHash": "ed7e7c654249fe9dde52a531aabe360355995f704710448faa333a97695fe59c"
+    },
+    {
+      "url": "artigos/programacao/como-otimizar-seu-fluxo-de-trabalho-com-claude-code-um-guia-pratico.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir obrigatoriedade de conectar GitHub, preco em reais sem sustentacao, falsa instalacao pessoal e confusao entre diretorio de trabalho e isolamento.",
+      "evidencia": "Corpo local lido integralmente. Documentacoes oficiais de setup, autenticacao, permissoes e memoria consultadas. Fonte ZDNet original nao acessivel; detalhes nao reafirmados. Nenhuma instalacao ou chamada de IA executada.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T11:04:15.692Z"
+      },
+      "conteudoHash": "a9528bca5c2fb8f50d510a282262b72675667fab01ac04580201e516a951f9e2"
+    },
+    {
+      "url": "artigos/tecnologia/um-laptop-linux-que-une-potencia-e-portabilidade-a-revolucao-da-infinitybook-pro-14.html",
+      "acao": "retirar",
+      "motivo": "Retirar teste de IA, personalizacao do laptop e medicao de bateria atribuidos ao autor sem execucao confirmada.",
+      "evidencia": "Leitura integral: alega gerar codigo em segundos, trocar tema, comparar com MacBook pessoal e medir seis a oito horas de bateria. Nao apresenta ambiente, modelo, protocolo ou arquivos. Usuario confirmou que artigos nao sao vivencias pessoais.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T11:04:15.692Z"
+      },
+      "conteudoHash": "329c4cdf36d40575e3a0365c1b52d80fb5760eae96ca3e87816fd5085bdd8481",
+      "arquivoHash": "efee10d4320e0da47b6d126c243252ecfa4b9f72e2b692f9d0b8c57ed0755070",
+      "registrosHash": "11a36dbc8ba43d4c9658d319ff994499b6e84ba73d4073137706e11c340219ac",
+      "aliases": [
+        {
+          "url": "tecnologia/um-laptop-linux-que-une-potencia-e-portabilidade-a-revolucao-da-infinitybook-pro-14.html",
+          "arquivoHash": "a143b38a88a59943b95d67a338d0d8e6191c190364f479027c26ce205936bb01"
+        }
+      ]
+    },
+    {
+      "url": "artigos/tecnologia/desbravando-o-mundo-linux-o-desempenho-do-infinitybook-pro-14-em-comparacao-com-o-macbook.html",
+      "acao": "retirar",
+      "motivo": "Retirar comparacao de desempenho baseada em teste pessoal de laptop e modelo de IA nao confirmado.",
+      "evidencia": "Leitura integral: reivindica testar Gen 10 e gerar script instantaneamente, sem modelo, carga, configuracao ou resultados comparaveis de MacBook. O titulo promete comparacao que o corpo nao demonstra.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T11:04:15.692Z"
+      },
+      "conteudoHash": "ff13e3ef2b32580672703c6814e85e1dbb1f248fbfce056fbff58eee17e79908",
+      "arquivoHash": "8c256b01795317656e6d6ec4bcf873bc690288c30fa2d48294a4686077ed8c04",
+      "registrosHash": "9871748f68418c27905cbc207bd39f3c1f21b9d29c3642ecd263c1937d6a74a6",
+      "aliases": [
+        {
+          "url": "tecnologia/desbravando-o-mundo-linux-o-desempenho-do-infinitybook-pro-14-em-comparacao-com-o-macbook.html",
+          "arquivoHash": "91572b176af818ba7f4edf2f0084be19f8d59cf950d7b3f8a61a8e68d856e4f1"
+        }
+      ]
+    },
+    {
+      "url": "artigos/tecnologia/a-batalha-dos-wearables-apple-watch-ou-anel-inteligente.html",
+      "acao": "retirar",
+      "motivo": "Retirar comparacao de conforto e efeitos pessoais de estresse baseada em semanas de uso nao confirmadas.",
+      "evidencia": "Leitura integral: atribui ao autor sono com Apple Watch, testes de Oura e Samsung e reducao de estresse ao parar de usar anel. Nao fornece protocolo, dados ou validacao desses efeitos; mistura preferencia e alegacao de saude.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T11:04:15.692Z"
+      },
+      "conteudoHash": "6f3687be92154a3277133ce8e2f922bd43c08c42423699e6bdbfa33ef912626a",
+      "arquivoHash": "dac60038c61adbadaa70e96078d43c97f041f3872e10f863d844f672c7deb1ab",
+      "registrosHash": "4e1bc21820544040289174f29566adc2a21a57df495b5782dab6023da7150346",
+      "aliases": [
+        {
+          "url": "tecnologia/a-batalha-dos-wearables-apple-watch-ou-anel-inteligente.html",
+          "arquivoHash": "d2136e09de6f5d3d239f4095fdfa433dada9a31b12d2e2c37894382e2f308c76"
+        }
+      ]
+    },
+    {
+      "url": "artigos/tecnologia/a-revolucao-dos-adaptadores-aawireless-two-e-suas-promessas.html",
+      "acao": "retirar",
+      "motivo": "Retirar recomendacao de melhor adaptador sustentada em testes e uso familiar nao confirmados.",
+      "evidencia": "Leitura integral: compara falhas e superaquecimento de Motorola MA1 com estabilidade de AAWireless Two, alega compartilhar carro com esposa e ausencia de lags. Nao identifica carro, firmware, telefone ou protocolo de teste.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T11:04:15.692Z"
+      },
+      "conteudoHash": "f63e9c7c06192dca0b04174d80ddb482ae28e7f0fe8491b4da489e2fff28bf1d",
+      "arquivoHash": "d7e9e109bfd576d694f8b3454677d7c98cfa13b22576214df35e2482a9c9ef5d",
+      "registrosHash": "cf351873b2c9f5527b5daa9ecf9a7bd84c83108de8f262912710dd61c1a0e445",
+      "aliases": [
+        {
+          "url": "tecnologia/a-revolucao-dos-adaptadores-aawireless-two-e-suas-promessas.html",
+          "arquivoHash": "29d6da4623736c3c81e35be3d775fc765ea265031204bd0b0bc7fb4d3d191826"
+        }
+      ]
+    },
+    {
+      "url": "artigos/tecnologia/a-revolucao-dos-hotspots-portateis-conectividade-na-palma-da-mao.html",
+      "acao": "retirar",
+      "motivo": "Retirar medicao e relato pessoal de conectividade JourneyGo sem ambiente ou execucao confirmados.",
+      "evidencia": "Leitura integral: declara download de 2,3 Mbps, quedas em cruzamentos, streaming e jogos executados pelo autor, sem local, operadora, horario ou protocolo. Recomenda plano ilimitado e liga genericamente o produto a arquitetura.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T11:04:15.692Z"
+      },
+      "conteudoHash": "893347310f6780e2cfc8164af253677bbc5d25eaa0ea830df09cab34d811571f",
+      "arquivoHash": "8f6acce5c1c98933d7c1e289159905e2e4d200a0bdcab8f570c9896d6c283f4a",
+      "registrosHash": "91c32ca8a3ce855d7168864ae1dac67a5ec56dad1488571dbf168d5264f29148",
+      "aliases": [
+        {
+          "url": "tecnologia/a-revolucao-dos-hotspots-portateis-conectividade-na-palma-da-mao.html",
+          "arquivoHash": "a5f3ca0bcde653410c5350036f018c6add78ad21b121ac2b223db81a4c053166"
+        }
+      ]
+    },
+    {
+      "url": "artigos/tecnologia/a-revolucao-nos-hotspots-por-que-me-despedi-do-iphone-e-abracei-o-5g.html",
+      "acao": "retirar",
+      "motivo": "Retirar troca pessoal de hotspot e superioridade de estabilidade e velocidade sem teste confirmado.",
+      "evidencia": "Leitura integral: afirma testar Acer M6E por bom tempo e mudar a forma de trabalhar, com desempenho incomparavel ao iPhone. Nao identifica modelo de iPhone, rede, condicoes nem resultados medidos.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T11:04:15.692Z"
+      },
+      "conteudoHash": "06968a18190ed18eff670621ec2cdadfc3b2b55874e47d5c5e60f2cfa45053ce",
+      "arquivoHash": "1628e55b8038ece8ddd1ad10b48c4d02e4815934625698ce4bb992c3b5fc9485",
+      "registrosHash": "be243012b60627650c148a8580f3851914c47156cc6a02ba1ac87db13ac14ab5",
+      "aliases": [
+        {
+          "url": "tecnologia/a-revolucao-nos-hotspots-por-que-me-despedi-do-iphone-e-abracei-o-5g.html",
+          "arquivoHash": "9408e0f5804ee465c20b550b21b5e7ab3e9cc9f83267a86a6acf98ba7f7da393"
+        }
+      ]
+    },
+    {
+      "url": "artigos/tecnologia/por-que-troquei-meu-kindle-por-um-ipad-mini-e-nunca-mais-quero-voltar.html",
+      "acao": "retirar",
+      "motivo": "Retirar troca de aparelho e rotina pessoal de leitura nao confirmadas, usadas como fundamento de recomendacao.",
+      "evidencia": "Leitura integral: titulo e conclusao atribuem ao autor abandonar Kindle por iPad, ler antes de dormir e incorporar aparelho a rotina. Comparacao nao identifica versoes equivalentes nem protocolo; preco e conforto visual nao possuem sustentacao independente.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T11:04:15.692Z"
+      },
+      "conteudoHash": "e7807de8bdbd3d8ba443f649673545d4f7e2b3d49eccc0acd9f0ce47343631e4",
+      "arquivoHash": "04135fd20410e43ce41feea3ea55a9eafedcc6b3984b773e03e60bab9d281a4e",
+      "registrosHash": "75154d33825ef6eebbab860e990783503f2fa30c13e479c73d8c9e351072cae8",
+      "aliases": [
+        {
+          "url": "tecnologia/por-que-troquei-meu-kindle-por-um-ipad-mini-e-nunca-mais-quero-voltar.html",
+          "arquivoHash": "9fca458196b50ed37cffd00cc0102ef83a52a7ed5f0fbac2ef0b4c30f94fc6b2"
+        }
+      ]
+    },
+    {
+      "url": "artigos/tecnologia/a-batalha-dos-e-readers-por-que-minha-escolha-e-o-ipad-mini-ao-inves-do-kindle.html",
+      "acao": "retirar",
+      "motivo": "Retirar teste declarado de e-readers e preferencia pessoal de uso noturno sem confirmacao.",
+      "evidencia": "Leitura integral: afirma testar ambos e compartilhar experiencia; compara resolucao e controles sem especificar Kindle ou demonstrar metodo. As dicas finais nao sustentam a preferencia autobiografica do titulo.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T11:04:15.692Z"
+      },
+      "conteudoHash": "428aeafa1dc491dc0e83bafe41fa1e15e8c97b7a76bdf8269d4cd51c21713b4b",
+      "arquivoHash": "0f9916ba15d0dbfa044e32c3924b65a87a8e122e26cf26fe7982f341ac96e78b",
+      "registrosHash": "48937bd6b60b02cc80bb3e328a00dab32fb306f2b8accae38ec32b573a6755ef",
+      "aliases": [
+        {
+          "url": "tecnologia/a-batalha-dos-e-readers-por-que-minha-escolha-e-o-ipad-mini-ao-inves-do-kindle.html",
+          "arquivoHash": "99fea6174045d6f4fbde7874ffd436d55b2872861e6939e28eb0743c514eb804"
+        }
+      ]
     }
   ]
 }
