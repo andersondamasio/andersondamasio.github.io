@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>A Revolução do Teste: Como a Inteligência Artificial Está Transformando a Automação de Testes de UI</title>
-<meta name="description" content="Nos últimos anos, temos visto uma crescente demanda por sistemas de software mais resilientes e eficientes, especialmente em ambientes de entrega contínua....">
+<title>Testes E2E com agentes: o experimento do Slack e seus limites</title>
+<meta name="description" content="O experimento do Slack com MCP, CLI e testes Playwright gerados: configurações, falhas, tempo e limites para desenhar uma comparação própria.">
 <meta name="author" content="Anderson Damasio">
-<meta name="keywords" content="Desenvolvimento de Software, inteligência artificial, testes, agentic, artificial, inteligencia, testing, abordagem, ponta, teste">
+<meta name="keywords" content="Desenvolvimento de Software, testes, slack, experimento, limites, agentes, teste, agente, desenvolvimento, estado">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html">
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
@@ -15,48 +15,48 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="A Revolução do Teste: Como a Inteligência Artificial Está Transformando a Automação de Testes de UI">
-<meta property="og:description" content="Nos últimos anos, temos visto uma crescente demanda por sistemas de software mais resilientes e eficientes, especialmente em ambientes de entrega contínua....">
+<meta property="og:title" content="Testes E2E com agentes: o experimento do Slack e seus limites">
+<meta property="og:description" content="O experimento do Slack com MCP, CLI e testes Playwright gerados: configurações, falhas, tempo e limites para desenhar uma comparação própria.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-07-10T18:22:17.114Z">
-<meta property="article:modified_time" content="2026-07-10T18:22:17.114Z">
+<meta property="article:modified_time" content="2026-10-10T00:27:50.094Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A Revolução do Teste: Como a Inteligência Artificial Está Transformando a Automação de Testes de UI">
-<meta name="twitter:description" content="Nos últimos anos, temos visto uma crescente demanda por sistemas de software mais resilientes e eficientes, especialmente em ambientes de entrega contínua....">
+<meta name="twitter:title" content="Testes E2E com agentes: o experimento do Slack e seus limites">
+<meta name="twitter:description" content="O experimento do Slack com MCP, CLI e testes Playwright gerados: configurações, falhas, tempo e limites para desenhar uma comparação própria.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "A Revolução do Teste: Como a Inteligência Artificial Está Transformando a Automação de Testes de UI",
-  "description": "Nos últimos anos, temos visto uma crescente demanda por sistemas de software mais resilientes e eficientes, especialmente em ambientes de entrega contínua....",
+  "headline": "Testes E2E com agentes: o experimento do Slack e seus limites",
+  "description": "O experimento do Slack com MCP, CLI e testes Playwright gerados: configurações, falhas, tempo e limites para desenhar uma comparação própria.",
   "url": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html"
   },
   "datePublished": "2026-07-10T18:22:17.114Z",
-  "dateModified": "2026-07-10T18:22:17.114Z",
+  "dateModified": "2026-10-10T00:27:50.094Z",
   "articleSection": "Desenvolvimento de Software",
   "inLanguage": "pt-BR",
   "keywords": [
     "Desenvolvimento de Software",
-    "inteligência artificial",
     "testes",
-    "agentic",
-    "artificial",
-    "inteligencia",
-    "testing",
-    "abordagem",
-    "ponta",
-    "teste"
+    "slack",
+    "experimento",
+    "limites",
+    "agentes",
+    "teste",
+    "agente",
+    "desenvolvimento",
+    "estado"
   ],
-  "wordCount": 1020,
+  "wordCount": 586,
   "about": {
     "@type": "Thing",
     "name": "Desenvolvimento de Software"
@@ -64,37 +64,37 @@
   "mentions": [
     {
       "@type": "Thing",
-      "name": "inteligência artificial"
-    },
-    {
-      "@type": "Thing",
       "name": "testes"
     },
     {
       "@type": "Thing",
-      "name": "agentic"
+      "name": "slack"
     },
     {
       "@type": "Thing",
-      "name": "artificial"
+      "name": "experimento"
     },
     {
       "@type": "Thing",
-      "name": "inteligencia"
+      "name": "limites"
     },
     {
       "@type": "Thing",
-      "name": "testing"
+      "name": "agentes"
+    },
+    {
+      "@type": "Thing",
+      "name": "teste"
     }
   ],
   "isAccessibleForFree": true,
   "copyrightYear": 2026,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "Slack Introduces Agent Driven End-to-End Testing to Improve Resilience in UI Test Automation",
-    "url": "https://www.infoq.com/news/2026/07/slack-agentic-e2e-testing-ui/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "name": "Agentic Testing: Where Agents Fit in the E2E Testing Stack",
+    "url": "https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/"
   },
-  "citation": "https://www.infoq.com/news/2026/07/slack-agentic-e2e-testing-ui/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "citation": "https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -153,7 +153,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "A Revolução do Teste: Como a Inteligência Artificial Está Transformando a Automação de Testes de UI",
+      "name": "Testes E2E com agentes: o experimento do Slack e seus limites",
       "item": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html"
     }
   ]
@@ -255,60 +255,45 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>A Revolução do Teste: Como a Inteligência Artificial Está Transformando a Automação de Testes de UI</h1>
+<h1>Testes E2E com agentes: o experimento do Slack e seus limites</h1>
 
 <p class="article-meta">Publicado em: 10/07/2026 15:22</p>
 
-<div class="article-body"><p>Nos últimos anos, temos visto uma crescente demanda por sistemas de software mais resilientes e eficientes, especialmente em ambientes de entrega contínua. Um dos grandes desafios enfrentados pelas equipes de engenharia é a flutuação dos testes de ponta a ponta, que frequentemente falham devido a mudanças na interface do usuário ou nos serviços, e não por regressões funcionais reais. O recente anúncio da equipe de engenharia do Slack sobre a introdução do <strong>agente de testes</strong> (ou agentic testing) promete abordar esse desafio de uma forma inovadora. Vamos explorar como essa abordagem pode impactar a forma como testamos nossos sistemas e o que isso significa para arquitetos e desenvolvedores.</p>
-<h2>Resumo Executivo</h2>
-<p>A equipe de engenharia do Slack apresentou uma nova abordagem para testes de ponta a ponta, chamada <strong>agentic testing</strong>. Essa técnica utiliza agentes de inteligência artificial para melhorar a resiliência em sistemas dinâmicos, reduzindo a falha dos testes devido a mudanças superficiais na interface do usuário. Em vez de seguir um fluxo de ações rigidamente definido, os agentes operam com base em intenções, adaptando-se a alterações e explorando diferentes caminhos. Essa inovação é relevante para qualquer equipe que busque otimizar seus processos de teste, especialmente em ambientes de desenvolvimento ágil.</p>
-<h2>Fatos Reportados</h2>
-<p>O Slack implementou o agentic testing como uma solução para um problema comum em ambientes de entrega contínua: a fragilidade dos testes de ponta a ponta. Tradicionalmente, esses testes baseiam-se em passos fixos e fluxos previsíveis, que podem quebrar facilmente com alterações na interface do usuário ou na estrutura dos serviços. Com a abordagem agentic, os testes são expressos como objetivos, permitindo que a inteligência artificial interprete a intenção e interaja com a aplicação de forma mais flexível. Isso é especialmente útil em sistemas que estão em constante evolução, onde mudanças podem ocorrer a qualquer momento.</p>
-<h2>Interpretação Técnica</h2>
-<p>A ideia central por trás do agentic testing é transferir parte da responsabilidade da execução dos testes de scripts estáticos para agentes de inteligência artificial. Em vez de seguir um caminho predefinido, o agente avalia o estado da aplicação em cada etapa e toma decisões dinâmicas sobre como proceder. Isso significa que, ao encontrar mudanças triviais, como a modificação de um elemento da interface, o agente não falha imediatamente, mas tenta encontrar outras maneiras de completar o fluxo de trabalho.</p>
-<p>Embora essa abordagem traga muitas vantagens, é importante destacar que os testes determinísticos ainda desempenham um papel crucial na validação da lógica crítica e na correção de contratos. O agentic testing é apresentado como uma camada complementar, especialmente em cenários onde a sensibilidade a mudanças de UI é uma preocupação constante.</p>
-<h2>Limites do Que Ainda Não Dá Para Afirmar</h2>
-<p>Apesar das promessas do agentic testing, existem limitações. A abordagem ainda não é ideal para execução frequente em pipelines de integração contínua, sendo mais adequada para depuração direcionada e testes exploratórios. Além disso, a complexidade da implementação e os custos associados à adoção dessa tecnologia podem ser barreiras significativas para algumas equipes. É essencial que as organizações avaliem cuidadosamente suas necessidades antes de integrar essa nova abordagem em seus fluxos de trabalho.</p>
-<h2>Explicação Técnica Aprofundada</h2>
-<p>O agentic testing representa uma verdadeira mudança de paradigma no modo como pensamos sobre testes de software. A execução é iniciada com um objetivo que é passado para a camada do agente, que então realiza um planejamento, executa ações, observa resultados e itera até que o objetivo seja alcançado ou uma condição de parada seja atingida. Isso contrasta fortemente com o fluxo tradicional de testes, que se concentra em sequências rígidas de ações, como "clicar", "digitar" e "validar".</p>
-<p>As etapas do agentic testing incluem:</p>
-<ul>
-    <li><strong>Planejamento:</strong> O agente define um caminho para alcançar o objetivo com base na interpretação da intenção.</li>
-    <li><strong>Execução:</strong> O agente interage com a aplicação, tomando decisões em tempo real sobre quais ações realizar.</li>
-    <li><strong>Observação:</strong> O estado da aplicação é monitorado continuamente, permitindo que o agente se adapte a mudanças.</li>
-    <li><strong>Iteração:</strong> O processo é repetido até que o objetivo seja atingido ou um critério de parada seja alcançado.</li>
-</ul>
-<h2>Dicas Avançadas</h2>
-<p>Para arquitetos de software e desenvolvedores que desejam explorar o agentic testing, aqui estão algumas dicas avançadas:</p>
-<ul>
-    <li><strong>Comece com um protótipo:</strong> Implemente um protótipo simples de agentic testing em um ambiente controlado para entender melhor sua funcionalidade e limitações.</li>
-    <li><strong>Defina claramente os objetivos:</strong> Ao trabalhar com agentes, é crucial ter um entendimento claro dos objetivos de teste para garantir que o agente possa operar de forma eficaz.</li>
-    <li><strong>Monitore a performance:</strong> Utilize ferramentas de observabilidade para monitorar o desempenho do agente e registrar interações, ajudando na identificação de falhas.</li>
-    <li><strong>Treinamento contínuo:</strong> Invista em treinamento para a equipe sobre como implementar e utilizar agentes de forma eficaz.</li>
-</ul>
-<h2>Aplicação Prática</h2>
-<p>Para implementar o agentic testing em sua equipe, considere as seguintes ações:</p>
-<ul>
-    <li><strong>Identificar fluxos de trabalho críticos:</strong> Escolha áreas da aplicação onde a flexibilidade dos testes pode trazer benefícios significativos.</li>
-    <li><strong>Integrar a observabilidade:</strong> Garanta que os logs de execução e as interações do agente sejam facilmente acessíveis para análise posterior.</li>
-    <li><strong>Fomentar uma cultura de testes:</strong> Incentive a equipe a ver o agentic testing como uma extensão natural de seus processos de teste, não como uma substituição.</li>
-</ul>
-<h2>Riscos e Cuidados</h2>
-<p>Embora o agentic testing ofereça muitos benefícios, é importante estar ciente dos riscos. A dependência excessiva de agentes pode levar a uma diminuição na cobertura de testes se não for devidamente equilibrada com testes determinísticos. Além disso, os agentes podem apresentar comportamentos inesperados, especialmente em cenários não planejados, o que pode resultar em falhas silenciosas nos testes. Portanto, a implementação deve ser feita com cuidado e supervisão adequada.</p>
-<h2>Conclusão</h2>
-<p>O agentic testing é uma inovação promissora que pode transformar a forma como testamos software em ambientes dinâmicos e em constante mudança. Embora ainda existam desafios a serem superados, como custos e complexidade de implementação, a flexibilidade e a adaptabilidade que essa abordagem oferece são inegáveis. À medida que mais equipes adotam essa tecnologia, será interessante observar como ela influencia a cultura de testes e a qualidade do software. Para arquitetos e desenvolvedores, a chave será encontrar o equilíbrio certo entre metodologias tradicionais e novas abordagens, garantindo que todos os aspectos de qualidade sejam cobertos sem comprometer a agilidade.</p>
-<p>
-<p></p></div>
+<div class="article-body"><p>Há duas maneiras distintas de usar IA em testes de interface: gerar um teste que depois executa instruções fixas ou deixar um agente decidir ações durante cada rodada. O experimento publicado pela engenharia do Slack ajuda a comparar essas opções, desde que seus resultados não sejam tratados como uma regra geral.</p>
+<h2>O que foi medido pelo Slack</h2>
+<p class="fato-experimento">No <a href="https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/">relato de Sergii Gorbachov, de 11 de junho de 2026</a>, o Slack descreve mais de 200 execuções em workspaces de teste com dados não produtivos. Foram avaliados dois fluxos, resposta em thread e descoberta por busca, com Playwright MCP, CLI e testes Playwright gerados. Os agentes MCP e CLI usaram Sonnet 4.5; a geração de testes usou Opus 4.6. Portanto, a comparação não manteve o modelo idêntico em todas as abordagens.</p>
+<p class="fato-resultados">No resumo do experimento, MCP apresentou 0% e aproximadamente 12% de falhas nos dois fluxos; os testes gerados, cerca de 8% e 48%. Os três minutos médios destes últimos incluíam geração amortizada: a execução isolada levou cerca de 32 e 45 segundos. O relato registra US$ 15 a US$ 30 por execução agentiva naquela configuração, não uma cotação universal. O autor propõe complementaridade com testes determinísticos, não sua substituição integral.</p>
+<div class="contribuicao-editorial">
+<h2>Como desenhar uma comparação própria</h2>
+<p>O primeiro cuidado é escolher qual pergunta precisa ser respondida. Para proteger um caminho obrigatório, interessa saber se os passos definidos continuam funcionando. Para explorar uma interface, pode interessar descobrir se existem caminhos alternativos válidos. Misturar essas metas em uma única taxa de sucesso esconderia falhas relevantes.</p>
+<p>Considere um formulário hipotético de solicitação interna. Seu requisito é que o solicitante revise os dados antes do envio. Um agente que consegue criar o registro por outro caminho não passou necessariamente no teste: se pulou a revisão obrigatória, alcançou o estado final errado para aquele contrato.</p>
+<ol>
+<li><strong>Preparar a mesma base:</strong> usar uma versão fixa da aplicação, contas de teste e dados reinicializados entre rodadas. Não compartilhar estado de uma execução com a seguinte por acidente.</li>
+<li><strong>Definir duas tarefas:</strong> uma verificação determinística do fluxo obrigatório e uma exploração com objetivo e restrições explícitos. Identificar cada resultado pela tarefa, sem fundir os denominadores.</li>
+<li><strong>Conferir fora do diálogo:</strong> validar o registro criado, a identidade solicitante e a passagem pela revisão. A declaração de sucesso do agente não é o oráculo.</li>
+<li><strong>Repetir sem selecionar resultados:</strong> registrar todas as tentativas, incluindo falhas de autenticação e infraestrutura, com classificação separada.</li>
+<li><strong>Separar os custos:</strong> medir geração inicial, execução recorrente, diagnóstico e manutenção. Para a rodada agentiva, incluir observações, tentativas extras e limites de tempo.</li>
+</ol>
+<h2>O que fazer com uma falha encontrada</h2>
+<p>Guardar a versão da página, o estado inicial e os passos relevantes permite investigar se existe um defeito reproduzível. Quando uma exploração encontra um caso importante, ele pode virar um teste de regressão revisado. Essa é uma proposta de uso complementar, não uma afirmação de que a conversão será automática ou sempre possível.</p>
+<p>Se o objetivo for comparar ferramentas, manter o modelo e o restante da configuração constantes sempre que possível. Quando isso não for viável, relatar a diferença como limitação: o resultado mede o conjunto utilizado, não isola a causa de cada vantagem.</p>
+</div>
+<div class="limites-editoriais">
+<h2>Limites da comparação</h2>
+<p>O site não reproduziu o experimento do Slack nem executou o roteiro acima. Os percentuais pertencem aos fluxos, modelos e configurações relatados e não comprovam superioridade geral sobre testes escritos e mantidos por pessoas.</p>
+<p>Para avaliar regras e estado de um agente conversacional, consulte o roteiro de <a href="/artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html">testes por simulação</a>. Ele responde a outra pergunta, além da interação com a interface.</p>
+</div>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/news/2026/07/slack-agentic-e2e-testing-ui/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener noreferrer">Slack Introduces Agent Driven End-to-End Testing to Improve Resilience in UI Test Automation</a> Data da fonte registrada: 10/07/2026.</p>
+<p><strong>Fonte principal:</strong> <a href="https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/" rel="noopener noreferrer">Agentic Testing: Where Agents Fit in the E2E Testing Stack</a> Data da fonte registrada: 11/06/2026.</p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/news/2026/07/slack-agentic-e2e-testing-ui/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Slack Introduces Agent Driven End-to-End Testing to Improve Resilience in UI Test Automation</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/" target="_blank" rel="noopener noreferrer">Agentic Testing: Where Agents Fit in the E2E Testing Stack</a>.</p>
 </section>
 
 

@@ -124,68 +124,68 @@
     {
       "url": "artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html",
       "acao": "atualizar",
-      "motivo": "Preservar guia relevante e separar recomendacao editorial de voz pessoal do autor.",
-      "evidencia": "Corpo completo distingue trajetorias, oraculos, exemplos hipoteticos e limites de simulacao. Corrigidas expressoes Na minha leitura e Minha recomendacao; nao eram prova de teste pessoal. Conferencia integral da apresentacao ainda pendente.",
+      "motivo": "Reduzir repeticoes, atribuir a proposta a Zhou Yu e substituir recomendacoes amplas por um cenario hipotetico verificavel, sem afirmar execucao.",
+      "evidencia": "Fontes e trechos rastreados em dados/editorial/correcoes-piloto-agentes-2026-10.json. Ensaios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T00:27:50.094Z"
       },
-      "conteudoHash": "6ccf7d298dc72539066896da9f4f1a1c7ea6ac04ca096fb5e5f12cd8acca1978"
+      "conteudoHash": "a12af9895cae2973ddbdf8d8c914c4e3a1ccd4e2e03287f10972f4c1fad021b4"
     },
     {
       "url": "artigos/seguranca/relato-sobre-agentes-no-exploitgym-mostra-como-falhas-de-isolamento-permitem-coordenacao.html",
       "acao": "atualizar",
-      "motivo": "Manter analise de isolamento, mas conferir os numeros no relato primario.",
-      "evidencia": "Texto reconhece limites e ausencia de validacao independente; numeros de 700 agentes e 70 mil mensagens dependem do relato secundario. Checklist de segregacao e avaliador externo e especifico. Nenhuma vivencia pessoal inventada identificada na leitura.",
+      "motivo": "Distinguir populacoes de 1200 e 700 agentes, janela do quadro e escopo da investigacao; remover causalidade excessiva e propor ensaio defensivo autorizado.",
+      "evidencia": "Fontes e trechos rastreados em dados/editorial/correcoes-piloto-agentes-2026-10.json. Ensaios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T00:27:50.094Z"
       },
-      "conteudoHash": "6a66cc439e182afe069daf8ea7c897f806f053ca5c3985b64456dd7b986d993f"
+      "conteudoHash": "5d4be72eca54b13f7a606839458d040164e3ea9596d7fc0233e5a2c31be82552"
     },
     {
       "url": "artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html",
       "acao": "atualizar",
-      "motivo": "Precisar a graduacao do watch cache e ligar a afirmacao ao anuncio oficial.",
-      "evidencia": "Release oficial distingue ResilientWatchCacheInitialization estavel desde 1.34 de WatchCacheInitializationPostStartHook estavel e travado em 1.37, habilitado por padrao desde 1.36. Corpo anterior omitia essa distincao; correcao especifica aplicada.",
+      "motivo": "Separar feature gate de configuracao rootless, transicao v1/v1beta1 das metricas e graduacoes do cache; explicitar dependencias de HPA e certificados.",
+      "evidencia": "Fontes e trechos rastreados em dados/editorial/correcoes-piloto-agentes-2026-10.json. Ensaios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T00:27:50.094Z"
       },
-      "conteudoHash": "989ef0f3f68d34bcba1b4a557a0105111a6fed4b36a370a2ce9b6233544a6ff1"
+      "conteudoHash": "8cf990b94f5b1cb320d0b1b70e16039bd459ed5bdf15a4cf8c327fbf391256c4"
     },
     {
       "url": "artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html",
       "acao": "atualizar",
-      "motivo": "Preservar criterios de arquitetura e representar recomendacoes como analise editorial.",
-      "evidencia": "Texto traz contratos, MVA, isolamento e limites sem benchmarks inventados. Removida atribuicao pessoal considero e Minha recomendacao. Necessario ligar fatos ao artigo original e separar opinioes gerais da fonte.",
+      "motivo": "Atribuir experiencias aos autores da fonte e diferenciar o artigo de decisao arquitetural do texto sobre vocabulario de dominio.",
+      "evidencia": "Fontes e trechos rastreados em dados/editorial/correcoes-piloto-agentes-2026-10.json. Ensaios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T00:27:50.094Z"
       },
-      "conteudoHash": "3092ad25184d32887a09a3ea9cbd53a59f1335d9f6ab9f2120ba9ac63d710fa4"
+      "conteudoHash": "4d64951ac00ee9561a33c4b136ee73e193bbbfc38b31dd1300f85124cf2f0af1"
     },
     {
       "url": "artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html",
-      "acao": "manter",
-      "motivo": "Preservar artigo de arquitetura com pergunta coerente e limites explicitos.",
-      "evidencia": "Leitura completa mostra distincao entre implementacao e intencao, exemplo hipotetico identificado, criterios de teste e cautela com percentuais sem metodologia. Manter nao significa fatos integralmente verificados nem revisao humana.",
+      "acao": "atualizar",
+      "motivo": "Conferir referencias diretas da coletanea, atribuir autoria a Joshi e delimitar a comparacao de tokens de Ruby; foco em fonte de verdade e regras.",
+      "evidencia": "Fontes e trechos rastreados em dados/editorial/correcoes-piloto-agentes-2026-10.json. Ensaios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T00:27:50.094Z"
       },
-      "conteudoHash": "04eb4e8c33690557bee1a785e537a37539444f082873defc9df80e3687eeb22f"
+      "conteudoHash": "888b760fd5d1065a6f27b525b83a2cdaecd542face8cd7e9d2abdddc9158b62b"
     },
     {
       "url": "artigos/inteligencia-artificial/a-nova-era-da-ia-etica-e-a-constituicao-do-claude.html",
       "acao": "atualizar",
-      "motivo": "Aprimorar fonte e precisao, sem tratar falso positivo lexical como experiencia inventada.",
-      "evidencia": "O sinal nossos projetos descreve recomendacao coletiva, nao relato de teste. O corpo traz quatro parametros e sete restricoes sem mapa para a constituicao primaria, exigindo conferencia antes de ampliar o texto.",
+      "motivo": "Confrontar as quatro prioridades e sete categorias de restricoes com a versao datada, remover linguagem promocional e distinguir intencao de garantia.",
+      "evidencia": "Fontes e trechos rastreados em dados/editorial/correcoes-piloto-agentes-2026-10.json. Ensaios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T00:27:50.094Z"
       },
-      "conteudoHash": "fcfbd6da58dfa12d77892ce4785bccd7d155cd46f98f884f98ae7e20a276e00d"
+      "conteudoHash": "fef582eeb425f9c09b6625dabdadc1ca39b6bac8344bd1d06065b106d2ea241e"
     },
     {
       "url": "artigos/segredos-sobrepostos-desvendando-os-desafios-do-azure-devops-oauth.html",
@@ -212,13 +212,13 @@
     {
       "url": "artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html",
       "acao": "atualizar",
-      "motivo": "Preservar tema de testes, reduzindo repeticao e conferindo fonte primaria.",
-      "evidencia": "Sinal nossos sistemas nao relata experiencia do autor. Corpo repete planejamento/execucao e beneficios; inclui limites de CI e complementaridade com testes deterministas. Nao aplicar noindex por esse falso positivo.",
+      "motivo": "Contextualizar os resultados no experimento primario, distinguir modelos e tempo de geracao/execucao, sem generalizar superioridade sobre testes humanos.",
+      "evidencia": "Fontes e trechos rastreados em dados/editorial/correcoes-piloto-agentes-2026-10.json. Ensaios propostos nao executados.",
       "revisao": {
-        "responsavel": "Codex (curadoria assistida; nao revisao humana)",
-        "em": "2026-10-09T22:52:01.412Z"
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T00:27:50.094Z"
       },
-      "conteudoHash": "788675941cff16a34361a0b613b54a8f295be39d50640551f2bedfd5d6411bf1"
+      "conteudoHash": "411fc0c8ed1b64a7dbe4610ac8a8e5d64044189a8b37d4321740ad9e7ee9fdf1"
     },
     {
       "url": "artigos/explorando-os-segredos-do-reservoir-sampling.html",

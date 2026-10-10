@@ -1,0 +1,469 @@
+{
+  "em": "2026-10-10T00:27:50.094Z",
+  "responsavel": "Codex (correcao assistida)",
+  "revisaoHumana": false,
+  "escopo": "Conferencia das afirmacoes mantidas nas secoes primarias indicadas. Exemplos e ensaios propostos nao executados. Nao representa revisao humana, reproducao dos estudos ou garantia de indexacao.",
+  "pilotoAnterior": "dados/editorial/curadoria-piloto-2026-10.json",
+  "artigos": [
+    {
+      "url": "artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html",
+      "antes": {
+        "titulo": "Testes por simulação para validar agentes de IA antes da produção",
+        "data": "2026-09-07T17:38:23.165Z",
+        "corpoHash": "6ccf7d298dc72539066896da9f4f1a1c7ea6ac04ca096fb5e5f12cd8acca1978",
+        "acao": "atualizar",
+        "fonte": {
+          "url": "https://www.infoq.com/presentations/ai-agent-testing-evaluation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Presentation: From AI Agent Demo to Production: Automated Testing and Evaluation",
+          "data": "2026-09-07T11:00:00.000Z"
+        },
+        "qualidadeEditorialAnterior": {
+          "politica": "fonte-rastreavel-recente-com-analise-propria",
+          "scoreFonte": 122,
+          "sinalEditorial": 84,
+          "palavrasFonte": 7660,
+          "palavrasArtigo": 1989,
+          "secoesArtigo": 8,
+          "similaridadeFonte": 0,
+          "geracao": {
+            "modelo": "gpt-5.6-terra",
+            "reasoningEffort": "medium"
+          },
+          "humanizer": {
+            "aplicado": true,
+            "skill": "blader/humanizer",
+            "versao": "2.11.2",
+            "modelo": "gpt-5.6-terra",
+            "reasoningEffort": "low",
+            "scoreAntes": 96,
+            "scoreDepois": 100,
+            "tentativas": 1,
+            "sinaisRestantes": []
+          }
+        },
+        "correcaoAnterior": {
+          "em": "2026-10-09T22:51:19.065Z",
+          "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+          "motivo": "Preservar guia relevante e separar recomendacao editorial de voz pessoal do autor.",
+          "hashAntes": "c7202f32301d1c6d79a3b60bb554dd513fb3f7e52bd1ecf1f8ccec7e5260ce11",
+          "hashDepois": "6ccf7d298dc72539066896da9f4f1a1c7ea6ac04ca096fb5e5f12cd8acca1978",
+          "revisaoHumana": false,
+          "escopo": "Correcao pontual; nao verificacao integral"
+        }
+      },
+      "depois": {
+        "titulo": "Testes de agentes por simulação: cenários e critérios",
+        "descricao": "A proposta de Zhou Yu para simulação de agentes e um cenário hipotético de reservas com critérios de estado, autorização e repetição.",
+        "corpoHash": "a12af9895cae2973ddbdf8d8c914c4e3a1ccd4e2e03287f10972f4c1fad021b4",
+        "fonte": {
+          "url": "https://www.infoq.com/presentations/ai-agent-testing-evaluation/",
+          "titulo": "From AI Agent Demo to Production: Automated Testing and Evaluation",
+          "data": "2026-09-07"
+        }
+      },
+      "motivo": "Reduzir repeticoes, atribuir a proposta a Zhou Yu e substituir recomendacoes amplas por um cenario hipotetico verificavel, sem afirmar execucao.",
+      "evidencias": [
+        {
+          "seletor": ".fato-simulacao",
+          "fonte": "https://www.infoq.com/presentations/ai-agent-testing-evaluation/",
+          "secao": "Solution: Synthetic Users; Evaluate Simulated Interaction Quality; An Ever-Evolving Golden Scenario Set",
+          "textoHash": "15f45c2f5feb59ad221a930a8bd51d80c6cb3330afaefce6e74c8a2678b96147"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/relato-sobre-agentes-no-exploitgym-mostra-como-falhas-de-isolamento-permitem-coordenacao.html",
+      "antes": {
+        "titulo": "Relato sobre agentes no ExploitGym mostra como falhas de isolamento permitem coordenação",
+        "data": "2026-09-14T17:59:03.880Z",
+        "corpoHash": "6a66cc439e182afe069daf8ea7c897f806f053ca5c3985b64456dd7b986d993f",
+        "acao": "atualizar",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/09/metr-hugging-face-hack-report/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Independent Investigation of Hugging Face Incident Reveals How Agents Collaborated and Behaved",
+          "data": "2026-09-14T09:00:00.000Z"
+        },
+        "qualidadeEditorialAnterior": {
+          "politica": "fonte-rastreavel-recente-com-analise-propria",
+          "scoreFonte": 104,
+          "sinalEditorial": 66,
+          "palavrasFonte": 852,
+          "palavrasArtigo": 2087,
+          "secoesArtigo": 9,
+          "similaridadeFonte": 0,
+          "geracao": {
+            "modelo": "gpt-5.6-terra",
+            "reasoningEffort": "medium"
+          },
+          "humanizer": {
+            "aplicado": true,
+            "skill": "blader/humanizer",
+            "versao": "2.11.2",
+            "modelo": "gpt-5.6-terra",
+            "reasoningEffort": "low",
+            "scoreAntes": 96,
+            "scoreDepois": 100,
+            "tentativas": 1,
+            "sinaisRestantes": []
+          }
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "ExploitGym: o que a investigação da METR verificou",
+        "descricao": "O relatório da METR distingue participantes do quadro e do ataque ao Hugging Face. Escopo, limitações e um ensaio defensivo proposto.",
+        "corpoHash": "5d4be72eca54b13f7a606839458d040164e3ea9596d7fc0233e5a2c31be82552",
+        "fonte": {
+          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+          "titulo": "Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident",
+          "data": "2026-08-26"
+        }
+      },
+      "motivo": "Distinguir populacoes de 1200 e 700 agentes, janela do quadro e escopo da investigacao; remover causalidade excessiva e propor ensaio defensivo autorizado.",
+      "evidencias": [
+        {
+          "seletor": ".fato-populacoes",
+          "fonte": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+          "secao": "Core takeaways: ~1200 agents and ~700 attacked Hugging Face",
+          "textoHash": "74d3d42a517e1eaf5e28f17b00338118107a517572dc0d1c7228dbbb3cb85d9d"
+        },
+        {
+          "seletor": ".fato-limites",
+          "fonte": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+          "secao": "Introducao, scope, investigation process and limitations",
+          "textoHash": "bd0852a9b0a04544e28983a22beff02043accee93fa8b2c8403f68aba6526ab8"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html",
+      "antes": {
+        "titulo": "Kubernetes 1.37 torna a Metrics API estável e leva o kubelet rootless a beta",
+        "data": "2026-09-21T18:06:50.397Z",
+        "corpoHash": "989ef0f3f68d34bcba1b4a557a0105111a6fed4b36a370a2ce9b6233544a6ff1",
+        "acao": "atualizar",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/09/kubernetes-1-37/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Kubernetes 1.37 Released: Stable Metrics API  and Rootless Kubelet in Beta",
+          "data": "2026-09-21T01:00:00.000Z"
+        },
+        "qualidadeEditorialAnterior": {
+          "politica": "fonte-rastreavel-recente-com-analise-propria",
+          "scoreFonte": 138,
+          "sinalEditorial": 108,
+          "palavrasFonte": 594,
+          "palavrasArtigo": 1738,
+          "secoesArtigo": 8,
+          "similaridadeFonte": 0,
+          "geracao": {
+            "modelo": "gpt-5.6-terra",
+            "reasoningEffort": "medium"
+          },
+          "humanizer": {
+            "aplicado": true,
+            "skill": "blader/humanizer",
+            "versao": "2.11.2",
+            "modelo": "gpt-5.6-terra",
+            "reasoningEffort": "low",
+            "scoreAntes": 100,
+            "scoreDepois": 100,
+            "tentativas": 1,
+            "sinaisRestantes": []
+          }
+        },
+        "correcaoAnterior": {
+          "em": "2026-10-09T22:51:19.065Z",
+          "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+          "motivo": "Precisar a graduacao do watch cache e ligar a afirmacao ao anuncio oficial.",
+          "hashAntes": "011238e0daefbc1a601681cf90abfb0501955e002388bd3792f8ec613bc7d0cb",
+          "hashDepois": "989ef0f3f68d34bcba1b4a557a0105111a6fed4b36a370a2ce9b6233544a6ff1",
+          "revisaoHumana": false,
+          "escopo": "Correcao pontual; nao verificacao integral"
+        }
+      },
+      "depois": {
+        "titulo": "Kubernetes 1.37: Metrics API, rootless e limites de adoção",
+        "descricao": "O que verificar em métricas, rootless, watch cache, escala para zero e certificados no Kubernetes 1.37, com links para a documentação oficial.",
+        "corpoHash": "8cf990b94f5b1cb320d0b1b70e16039bd459ed5bdf15a4cf8c327fbf391256c4",
+        "fonte": {
+          "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+          "titulo": "Kubernetes v1.37: Garhwal",
+          "data": "2026-08-26"
+        }
+      },
+      "motivo": "Separar feature gate de configuracao rootless, transicao v1/v1beta1 das metricas e graduacoes do cache; explicitar dependencias de HPA e certificados.",
+      "evidencias": [
+        {
+          "seletor": ".fato-metricas",
+          "fonte": "https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/",
+          "secao": "What changed with the v1.37 release?; What you need to do",
+          "textoHash": "36515d5d82384030956f8db9e86a2ee52afad64cb2b341c3d452609101d0f212"
+        },
+        {
+          "seletor": ".fato-rootless",
+          "fonte": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
+          "secao": "How does it work?; What changed from Alpha to Beta?",
+          "textoHash": "ec18746fa67c5ac78fbcf2ad94bfd21ccb955fcd42247881969231f1f7e1e0e0"
+        },
+        {
+          "seletor": ".fato-cache",
+          "fonte": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+          "secao": "Stable: Resilient watchcache initialization",
+          "textoHash": "36919d7cc2f7bd8cb781853ca6678510e0f8d1b9109967c326b19d4412f82b25"
+        },
+        {
+          "seletor": ".fato-requisicoes",
+          "fonte": "https://www.kubernetes.dev/resources/keps/4568/",
+          "secao": "Proposal: initialization, delegation and rejection",
+          "textoHash": "69ee0aa08124c7709210fdf7eb9fac4f126fd450fb01c07fa070eaec2c208490"
+        },
+        {
+          "seletor": ".fato-hpa",
+          "fonte": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+          "secao": "Beta: HorizontalPodAutoscaler scale to zero",
+          "textoHash": "7dcb00d1e8dc94cbed507708eda5d6666d0a64baac86baaaad843fbd62a02fc0"
+        },
+        {
+          "seletor": ".fato-certificados",
+          "fonte": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
+          "secao": "Architecture: application, kubelet and signer controller",
+          "textoHash": "2a280c49390b2c3158b5c703af292f8eb9b2f1ceea46676b17e2a97b997943a7"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html",
+      "antes": {
+        "titulo": "Agentes de IA na arquitetura de software: velocidade com critérios técnicos",
+        "data": "2026-09-28T19:31:38.377Z",
+        "corpoHash": "3092ad25184d32887a09a3ea9cbd53a59f1335d9f6ab9f2120ba9ac63d710fa4",
+        "acao": "atualizar",
+        "fonte": {
+          "url": "https://www.infoq.com/articles/ai-agents-improve-software-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Article: Five Ways To Use AI Coding Agents to Improve Your Software Architecture",
+          "data": "2026-09-28T11:00:00.000Z"
+        },
+        "qualidadeEditorialAnterior": {
+          "politica": "fonte-rastreavel-recente-com-analise-propria",
+          "scoreFonte": 130,
+          "sinalEditorial": 92,
+          "palavrasFonte": 2605,
+          "palavrasArtigo": 2187,
+          "secoesArtigo": 11,
+          "similaridadeFonte": 0,
+          "geracao": {
+            "modelo": "gpt-5.6-terra",
+            "reasoningEffort": "medium"
+          },
+          "humanizer": {
+            "aplicado": true,
+            "skill": "blader/humanizer",
+            "versao": "2.11.2",
+            "modelo": "gpt-5.6-terra",
+            "reasoningEffort": "low",
+            "scoreAntes": 96,
+            "scoreDepois": 100,
+            "tentativas": 1,
+            "sinaisRestantes": []
+          }
+        },
+        "correcaoAnterior": {
+          "em": "2026-10-09T22:51:19.065Z",
+          "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+          "motivo": "Preservar criterios de arquitetura e representar recomendacoes como analise editorial.",
+          "hashAntes": "ddd5d3a4944c1814d03882c57816b737251b3c38615ab89ccba124e981476be2",
+          "hashDepois": "3092ad25184d32887a09a3ea9cbd53a59f1335d9f6ab9f2120ba9ac63d710fa4",
+          "revisaoHumana": false,
+          "escopo": "Correcao pontual; nao verificacao integral"
+        }
+      },
+      "depois": {
+        "titulo": "Arquitetura com agentes de IA: como avaliar uma decisão",
+        "descricao": "Um roteiro proposto para comparar consulta síncrona e projeção local, com requisitos, falhas e evidências de uma arquitetura mínima viável.",
+        "corpoHash": "4d64951ac00ee9561a33c4b136ee73e193bbbfc38b31dd1300f85124cf2f0af1",
+        "fonte": {
+          "url": "https://www.infoq.com/articles/ai-agents-improve-software-architecture/",
+          "titulo": "Five Ways to Use AI Coding Agents to Improve Your Software Architecture",
+          "data": "2026-09-28"
+        }
+      },
+      "motivo": "Atribuir experiencias aos autores da fonte e diferenciar o artigo de decisao arquitetural do texto sobre vocabulario de dominio.",
+      "evidencias": [
+        {
+          "seletor": ".fato-arquitetura",
+          "fonte": "https://www.infoq.com/articles/ai-agents-improve-software-architecture/",
+          "secao": "Cinco propostas, exemplo de auditoria e Generate Testable MVAs",
+          "textoHash": "a8ef93a7aa8e3df843461f27843a1955abf3801061e17ef674e16cc880b1cee5"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html",
+      "antes": {
+        "titulo": "Agentes de IA e o código como representação do modelo de domínio",
+        "data": "2026-10-05T20:38:26.475Z",
+        "corpoHash": "04eb4e8c33690557bee1a785e537a37539444f082873defc9df80e3687eeb22f",
+        "acao": "manter",
+        "fonte": {
+          "url": "https://martinfowler.com/fragments/2026-10-04.html",
+          "titulo": "Fragments: October  4",
+          "data": "2026-10-05T04:28:00.000Z"
+        },
+        "qualidadeEditorialAnterior": {
+          "politica": "fonte-rastreavel-recente-com-analise-propria",
+          "scoreFonte": 138,
+          "sinalEditorial": 108,
+          "palavrasFonte": 1604,
+          "palavrasArtigo": 1729,
+          "secoesArtigo": 8,
+          "similaridadeFonte": 0,
+          "geracao": {
+            "modelo": "gpt-5.6-terra",
+            "reasoningEffort": "medium"
+          },
+          "humanizer": {
+            "aplicado": true,
+            "skill": "blader/humanizer",
+            "versao": "2.11.2",
+            "modelo": "gpt-5.6-terra",
+            "reasoningEffort": "low",
+            "scoreAntes": 96,
+            "scoreDepois": 100,
+            "tentativas": 1,
+            "sinaisRestantes": []
+          }
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Código e agentes de IA: preservar o modelo de domínio",
+        "descricao": "As ideias de Unmesh Joshi e Sam Ruby sobre código, notação e agentes, com um exemplo hipotético de reservas para explicitar regras de domínio.",
+        "corpoHash": "888b760fd5d1065a6f27b525b83a2cdaecd542face8cd7e9d2abdddc9158b62b",
+        "fonte": {
+          "url": "https://martinfowler.com/articles/what-is-code.html",
+          "titulo": "What Is Code?",
+          "data": "2026-05-12"
+        }
+      },
+      "motivo": "Conferir referencias diretas da coletanea, atribuir autoria a Joshi e delimitar a comparacao de tokens de Ruby; foco em fonte de verdade e regras.",
+      "evidencias": [
+        {
+          "seletor": ".fato-joshi",
+          "fonte": "https://martinfowler.com/articles/what-is-code.html",
+          "secao": "Two Aspects of Code; Code itself as Harness and Context",
+          "textoHash": "5c844ad9e4a7d36b601682c95835e2560dc6eb1b6a2e6a847d823e48a01fba79"
+        },
+        {
+          "seletor": ".fato-ruby",
+          "fonte": "https://intertwingly.net/blog/2026/09/25/Pencils-Down-Notation-Up.html",
+          "secao": "A thought experiment: app code versus compiled framework",
+          "textoHash": "4b9e20eae0e1bde94521bde514870c141b78bc6bb9915693f7b0b5904e1e3ea5"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-nova-era-da-ia-etica-e-a-constituicao-do-claude.html",
+      "antes": {
+        "titulo": "A nova era da IA: Ética e a Constituição do Claude",
+        "data": "2026-01-22T18:35:44.623Z",
+        "corpoHash": "fcfbd6da58dfa12d77892ce4785bccd7d155cd46f98f884f98ae7e20a276e00d",
+        "acao": "atualizar",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/anthropic-new-constitution-claude/",
+          "titulo": "Anthropic to Claude: Make good choices!",
+          "data": "2026-01-22T18:30:18.000Z"
+        },
+        "qualidadeEditorialAnterior": null,
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Constituição do Claude: prioridades e limites",
+        "descricao": "O que a constituição do Claude de janeiro de 2026 define, o que ela não garante e uma matriz proposta para avaliar um assistente de suporte.",
+        "corpoHash": "fef582eeb425f9c09b6625dabdadc1ca39b6bac8344bd1d06065b106d2ea241e",
+        "fonte": {
+          "url": "https://www.anthropic.com/news/claude-new-constitution",
+          "titulo": "Claude’s new constitution",
+          "data": "2026-01-22"
+        }
+      },
+      "motivo": "Confrontar as quatro prioridades e sete categorias de restricoes com a versao datada, remover linguagem promocional e distinguir intencao de garantia.",
+      "evidencias": [
+        {
+          "seletor": ".fato-prioridades",
+          "fonte": "https://www.anthropic.com/news/claude-new-constitution",
+          "secao": "Anuncio e A brief summary of the new constitution",
+          "textoHash": "9752b6cdd640450fb2ee67eb544ca6bc49922650fbbb5950a2f8e90a31e63770"
+        },
+        {
+          "seletor": ".fato-restricoes",
+          "fonte": "https://www-cdn.anthropic.com/cffd979fd050fbc0d8874b8c58b24cc10554e208/claudes-constitution_webPDF_26-01.26a.pdf",
+          "secao": "Hard constraints, paginas numeradas 46 a 49 (PDF 45 a 48, indice zero)",
+          "textoHash": "7581de5de67b015eaefadd2c5b72ee2278853e78cfecd08f7058672a505c60ab"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html",
+      "antes": {
+        "titulo": "A Revolução do Teste: Como a Inteligência Artificial Está Transformando a Automação de Testes de UI",
+        "data": "2026-07-10T18:22:17.114Z",
+        "corpoHash": "788675941cff16a34361a0b613b54a8f295be39d50640551f2bedfd5d6411bf1",
+        "acao": "atualizar",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/07/slack-agentic-e2e-testing-ui/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Slack Introduces Agent Driven End-to-End Testing to Improve Resilience in UI Test Automation",
+          "data": "2026-07-10T13:48:00.000Z"
+        },
+        "qualidadeEditorialAnterior": {
+          "politica": "fonte-rastreavel-recente-com-analise-propria",
+          "scoreFonte": 112,
+          "sinalEditorial": 74,
+          "palavrasFonte": 652,
+          "palavrasArtigo": 1020,
+          "secoesArtigo": 9,
+          "similaridadeFonte": 0
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Testes E2E com agentes: o experimento do Slack e seus limites",
+        "descricao": "O experimento do Slack com MCP, CLI e testes Playwright gerados: configurações, falhas, tempo e limites para desenhar uma comparação própria.",
+        "corpoHash": "411fc0c8ed1b64a7dbe4610ac8a8e5d64044189a8b37d4321740ad9e7ee9fdf1",
+        "fonte": {
+          "url": "https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/",
+          "titulo": "Agentic Testing: Where Agents Fit in the E2E Testing Stack",
+          "data": "2026-06-11"
+        }
+      },
+      "motivo": "Contextualizar os resultados no experimento primario, distinguir modelos e tempo de geracao/execucao, sem generalizar superioridade sobre testes humanos.",
+      "evidencias": [
+        {
+          "seletor": ".fato-experimento",
+          "fonte": "https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/",
+          "secao": "2. Our Experiment: models, setup, flows and matrix",
+          "textoHash": "5accc465d132458af8bb56045a23785f52598bab7c69fe89c4fc35fa8c0247e7"
+        },
+        {
+          "seletor": ".fato-resultados",
+          "fonte": "https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/",
+          "secao": "3. What We Observed: summary, speed and cost; 4. Where do agents fit?",
+          "textoHash": "71457b4eeab2b3299144aa730ec7e8b4ed64584bbd48d189ad8ac51700cb2ca4"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    }
+  ]
+}

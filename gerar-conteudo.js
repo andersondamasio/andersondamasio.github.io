@@ -44,6 +44,7 @@ const {
   normalizarFonteUrl
 } = require('./scripts/seo-source-citation');
 const { gerarSecoesConteudoUtil, hashCorpoEditorial } = require('./scripts/seo-helpful-content');
+const { estilosCodigoInline } = require('./scripts/seo-code-styles');
 const { descricaoPerfil, gerarApresentacaoPerfil, estilosPerfil } = require('./scripts/seo-profile');
 const { agruparArquivo, indiceMeses, conteudoMes, politicaListagem, estilosArquivo } = require('./scripts/seo-archive');
 const { gerarResourceHints } = require('./scripts/seo-resource-hints');
@@ -2562,6 +2563,7 @@ a:hover { text-decoration: underline; color: var(--link-hover);}
 .article-source-note { font-size: 0.9rem; }
 pre { background: var(--pre-bg); color: var(--pre-color); padding: 3rem 1rem 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
 code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
+${estilosCodigoInline}
 .copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
 .copy-button:hover { opacity: 1; background-color: var(--copy-bg-hover); color: var(--main-bg); }
 .back-link { text-align: center; margin-top: 2rem; }

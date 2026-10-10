@@ -149,6 +149,16 @@ O primeiro piloto esta registrado em `dados/editorial/curadoria-piloto-2026-10.j
 
 A auditoria ignora `.editorial/`, que contem previas e fragmentos privados nao publicados. Isso nao dispensa a auditoria dos HTML publicos. Para ampliar o QA visual, acrescente caminhos `artigos/...html` ao comando `node scripts/qa-seo-templates.js`.
 
+## Conferencia factual de artigos do acervo
+
+Os lotes posteriores ao piloto ficam em `dados/editorial/correcoes-fontes-primarias-2026-10.json` (cinco artigos) e `dados/editorial/correcoes-piloto-agentes-2026-10.json` (sete artigos). Cada registro guarda o corpo anterior por hash, motivo, nova versao, fontes e seletores dos trechos conferidos. O historico anterior nao e sobrescrito. Scores de geracao e Humanizer referentes ao corpo antigo ficam no historico, nao como avaliacao da versao reescrita.
+
+A conferencia assistida das fontes nao representa revisao humana, reproducao dos experimentos citados ou execucao dos roteiros propostos. Os textos distinguem esses limites. A suite de templates verifica correspondencia entre registro, corpo, fonte, descricao, datas e manifesto; esse teste estrutural nao comprova a veracidade das fontes.
+
+Quando a fonte fornece apenas uma data civil, guardar `AAAA-MM-DD`, sem inventar horario. O bloco editorial preserva esse dia; timestamps completos continuam sendo apresentados no fuso de Sao Paulo. Mudar a fonte principal requer preservar sua referencia anterior no relatorio de correcao, e nao aproveitar a data da noticia secundaria como se fosse a data do documento primario.
+
+`scripts/seo-code-styles.js` compartilha a regra de quebra de identificadores entre o template de novos artigos e o backfill. No acervo, a regra e inserida apenas em paginas com codigo inline; blocos `pre` conservam sua propria rolagem e o texto copiavel nao e modificado. Conferir telas de 320 px com identificadores longos e uma pagina com bloco de codigo ao alterar essa regra.
+
 ## Exemplos tecnicos reproduziveis
 
 `exemplos/reservoir-sampling/` acompanha a correcao do guia existente, mantendo sua URL. O projeto .NET 10 inclui implementacao, contrato e 13 verificacoes executaveis, sem pacotes externos. O CI compila e executa os testes; a suite de templates compara o codigo do HTML com o arquivo C#, evitando que um trecho divergente seja publicado. Rodar a partir do diretorio do exemplo para respeitar `global.json`.

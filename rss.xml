@@ -8,44 +8,44 @@
 <language>pt-BR</language>
 <lastBuildDate>Mon, 05 Oct 2026 20:38:26 GMT</lastBuildDate>
 <item>
-<title>Agentes de IA e o código como representação do modelo de domínio</title>
+<title>Código e agentes de IA: preservar o modelo de domínio</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html</link>
 <guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html</guid>
 <pubDate>Mon, 05 Oct 2026 20:38:26 GMT</pubDate>
 <category>Inteligência Artificial</category>
-<description>O debate sobre agentes de inteligência artificial costuma cair em dois extremos pouco produtivos: a previsão de que programadores deixarão de escrever e ler...</description>
+<description>As ideias de Unmesh Joshi e Sam Ruby sobre código, notação e agentes, com um exemplo hipotético de reservas para explicitar regras de domínio.</description>
 </item>
 <item>
-<title>Agentes de IA na arquitetura de software: velocidade com critérios técnicos</title>
+<title>Arquitetura com agentes de IA: como avaliar uma decisão</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html</link>
 <guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html</guid>
 <pubDate>Mon, 28 Sep 2026 19:31:38 GMT</pubDate>
 <category>Inteligência Artificial</category>
-<description>Agentes de programação baseados em IA já ultrapassaram o papel de autocomplete ou de geradores de trechos isolados. Com contexto suficiente, eles analisam...</description>
+<description>Um roteiro proposto para comparar consulta síncrona e projeção local, com requisitos, falhas e evidências de uma arquitetura mínima viável.</description>
 </item>
 <item>
-<title>Kubernetes 1.37 torna a Metrics API estável e leva o kubelet rootless a beta</title>
+<title>Kubernetes 1.37: Metrics API, rootless e limites de adoção</title>
 <link>https://www.andersondamasio.com.br/artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html</link>
 <guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html</guid>
 <pubDate>Mon, 21 Sep 2026 18:06:50 GMT</pubDate>
 <category>Cloud</category>
-<description>O Kubernetes 1.37, codinome Garhwal, reúne mudanças cujo peso está menos na quantidade de recursos e mais na maturidade de componentes centrais da...</description>
+<description>O que verificar em métricas, rootless, watch cache, escala para zero e certificados no Kubernetes 1.37, com links para a documentação oficial.</description>
 </item>
 <item>
-<title>Relato sobre agentes no ExploitGym mostra como falhas de isolamento permitem coordenação</title>
+<title>ExploitGym: o que a investigação da METR verificou</title>
 <link>https://www.andersondamasio.com.br/artigos/seguranca/relato-sobre-agentes-no-exploitgym-mostra-como-falhas-de-isolamento-permitem-coordenacao.html</link>
 <guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/relato-sobre-agentes-no-exploitgym-mostra-como-falhas-de-isolamento-permitem-coordenacao.html</guid>
 <pubDate>Mon, 14 Sep 2026 17:59:03 GMT</pubDate>
 <category>Segurança</category>
-<description>Um relato de pesquisadores da METR e da Redwood Research descreve um incidente no qual centenas de agentes de IA, concebidos para trabalhar isoladamente em...</description>
+<description>O relatório da METR distingue participantes do quadro e do ataque ao Hugging Face. Escopo, limitações e um ensaio defensivo proposto.</description>
 </item>
 <item>
-<title>Testes por simulação para validar agentes de IA antes da produção</title>
+<title>Testes de agentes por simulação: cenários e critérios</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html</link>
 <guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html</guid>
 <pubDate>Mon, 07 Sep 2026 17:38:23 GMT</pubDate>
 <category>Inteligência Artificial</category>
-<description>Agentes de IA conversacionais funcionam bem em demonstrações: respondem em múltiplos turnos, consultam ferramentas, recuperam dados, sugerem produtos e, em...</description>
+<description>A proposta de Zhou Yu para simulação de agentes e um cenário hipotético de reservas com critérios de estado, autorização e repetição.</description>
 </item>
 <item>
 <title>Engenharia de contexto para memória, custo e precisão em aplicações de IA generativa</title>
@@ -368,12 +368,12 @@
 <description>A recente crise de segurança envolvendo a agência de cibersegurança dos EUA, CISA, nos faz refletir sobre como a falta de planejamento pode custar caro em...</description>
 </item>
 <item>
-<title>A Revolução do Teste: Como a Inteligência Artificial Está Transformando a Automação de Testes de UI</title>
+<title>Testes E2E com agentes: o experimento do Slack e seus limites</title>
 <link>https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html</link>
 <guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html</guid>
 <pubDate>Fri, 10 Jul 2026 18:22:17 GMT</pubDate>
 <category>Desenvolvimento de Software</category>
-<description>Nos últimos anos, temos visto uma crescente demanda por sistemas de software mais resilientes e eficientes, especialmente em ambientes de entrega contínua....</description>
+<description>O experimento do Slack com MCP, CLI e testes Playwright gerados: configurações, falhas, tempo e limites para desenhar uma comparação própria.</description>
 </item>
 <item>
 <title>Transformação Ágil: A Revolução do Datadog com AI e Testes na Migração de Sistemas</title>
