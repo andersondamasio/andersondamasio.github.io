@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Kubernetes 1.37 torna a Metrics API estável e leva o kubelet rootless a beta</title>
-<meta name="description" content="O Kubernetes 1.37, codinome Garhwal, reúne mudanças cujo peso está menos na quantidade de recursos e mais na maturidade de componentes centrais da...">
+<title>Kubernetes 1.37: Metrics API, rootless e limites de adoção</title>
+<meta name="description" content="O que verificar em métricas, rootless, watch cache, escala para zero e certificados no Kubernetes 1.37, com links para a documentação oficial.">
 <meta name="author" content="Anderson Damasio">
-<meta name="keywords" content="Cloud, segurança, beta, estavel, kubernetes, metrics, kubelet, recursos, rootless, leva">
+<meta name="keywords" content="Cloud, metrics, rootless, kubernetes, adocao, cluster, limites, metricas, certificados, documentacao">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html">
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
@@ -15,48 +15,48 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Kubernetes 1.37 torna a Metrics API estável e leva o kubelet rootless a beta">
-<meta property="og:description" content="O Kubernetes 1.37, codinome Garhwal, reúne mudanças cujo peso está menos na quantidade de recursos e mais na maturidade de componentes centrais da...">
+<meta property="og:title" content="Kubernetes 1.37: Metrics API, rootless e limites de adoção">
+<meta property="og:description" content="O que verificar em métricas, rootless, watch cache, escala para zero e certificados no Kubernetes 1.37, com links para a documentação oficial.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-09-21T18:06:50.397Z">
-<meta property="article:modified_time" content="2026-10-09T22:51:19.065Z">
+<meta property="article:modified_time" content="2026-10-10T00:27:50.094Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kubernetes 1.37 torna a Metrics API estável e leva o kubelet rootless a beta">
-<meta name="twitter:description" content="O Kubernetes 1.37, codinome Garhwal, reúne mudanças cujo peso está menos na quantidade de recursos e mais na maturidade de componentes centrais da...">
+<meta name="twitter:title" content="Kubernetes 1.37: Metrics API, rootless e limites de adoção">
+<meta name="twitter:description" content="O que verificar em métricas, rootless, watch cache, escala para zero e certificados no Kubernetes 1.37, com links para a documentação oficial.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Kubernetes 1.37 torna a Metrics API estável e leva o kubelet rootless a beta",
-  "description": "O Kubernetes 1.37, codinome Garhwal, reúne mudanças cujo peso está menos na quantidade de recursos e mais na maturidade de componentes centrais da...",
+  "headline": "Kubernetes 1.37: Metrics API, rootless e limites de adoção",
+  "description": "O que verificar em métricas, rootless, watch cache, escala para zero e certificados no Kubernetes 1.37, com links para a documentação oficial.",
   "url": "https://www.andersondamasio.com.br/artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html"
   },
   "datePublished": "2026-09-21T18:06:50.397Z",
-  "dateModified": "2026-10-09T22:51:19.065Z",
+  "dateModified": "2026-10-10T00:27:50.094Z",
   "articleSection": "Cloud",
   "inLanguage": "pt-BR",
   "keywords": [
     "Cloud",
-    "segurança",
-    "beta",
-    "estavel",
-    "kubernetes",
     "metrics",
-    "kubelet",
-    "recursos",
     "rootless",
-    "leva"
+    "kubernetes",
+    "adocao",
+    "cluster",
+    "limites",
+    "metricas",
+    "certificados",
+    "documentacao"
   ],
-  "wordCount": 1765,
+  "wordCount": 660,
   "about": {
     "@type": "Thing",
     "name": "Cloud"
@@ -64,15 +64,11 @@
   "mentions": [
     {
       "@type": "Thing",
-      "name": "segurança"
+      "name": "metrics"
     },
     {
       "@type": "Thing",
-      "name": "beta"
-    },
-    {
-      "@type": "Thing",
-      "name": "estavel"
+      "name": "rootless"
     },
     {
       "@type": "Thing",
@@ -80,21 +76,25 @@
     },
     {
       "@type": "Thing",
-      "name": "metrics"
+      "name": "adocao"
     },
     {
       "@type": "Thing",
-      "name": "kubelet"
+      "name": "cluster"
+    },
+    {
+      "@type": "Thing",
+      "name": "limites"
     }
   ],
   "isAccessibleForFree": true,
   "copyrightYear": 2026,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "Kubernetes 1.37 Released: Stable Metrics API and Rootless Kubelet in Beta",
-    "url": "https://www.infoq.com/news/2026/09/kubernetes-1-37/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "name": "Kubernetes v1.37: Garhwal",
+    "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/"
   },
-  "citation": "https://www.infoq.com/news/2026/09/kubernetes-1-37/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "citation": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -153,7 +153,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Kubernetes 1.37 torna a Metrics API estável e leva o kubelet rootless a beta",
+      "name": "Kubernetes 1.37: Metrics API, rootless e limites de adoção",
       "item": "https://www.andersondamasio.com.br/artigos/cloud/kubernetes-1-37-torna-a-metrics-api-estavel-e-leva-o-kubelet-rootless-a-beta.html"
     }
   ]
@@ -229,6 +229,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-body code { overflow-wrap: anywhere; } .article-body pre code { overflow-wrap: normal; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -255,75 +256,47 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>Kubernetes 1.37 torna a Metrics API estável e leva o kubelet rootless a beta</h1>
+<h1>Kubernetes 1.37: Metrics API, rootless e limites de adoção</h1>
 
 <p class="article-meta">Publicado em: 21/09/2026 15:06</p>
 
-<div class="article-body"><p>O Kubernetes 1.37, codinome Garhwal, reúne mudanças cujo peso está menos na quantidade de recursos e mais na maturidade de componentes centrais da plataforma. A Metrics API torna-se estável, o kubelet sem privilégios de root avança para beta e o plano de controle recebe melhorias de resiliência. Em conjunto, essas alterações buscam tornar clusters grandes mais observáveis, previsíveis e resistentes a falhas operacionais.</p>
-<p>Para equipes que já rodam Kubernetes em produção, não basta percorrer a lista de feature gates. O release afeta áreas que frequentemente se encontram em incidentes: capacidade, segurança do nó e pressão sobre o etcd. Para quem começa agora, a versão também mostra como recursos antes experimentais passam gradualmente a ter condições de adoção mais segura.</p>
-<h2>O que compõe o Kubernetes 1.37</h2>
-<p>Segundo o anúncio de lançamento, o Kubernetes 1.37 inclui 67 aprimoramentos: 27 recursos alpha, 23 recursos promovidos a beta, 16 funcionalidades graduadas para disponibilidade geral ou estável e uma descontinuação ou remoção.</p>
-<p>Entre os pontos reportados estão a disponibilidade geral da API <em>metrics.k8s.io</em>, a promoção do kubelet em namespace de usuário para beta, a inicialização resiliente do watch cache como recurso estável e os certificados de pods também estáveis. O release inclui ainda escala para zero no Horizontal Pod Autoscaler em beta e ativada por padrão, além de recursos experimentais para escalonamento, checkpoint de pods e atualização de StatefulSets.</p>
-<p>Na prática, a versão ataca fragilidades conhecidas da operação: métricas com padronização insuficiente, componentes do nó com privilégios excessivos e reinicializações do API server que podem concentrar pressão sobre o armazenamento de estado do cluster.</p>
-<h2>Recursos estáveis, beta e alpha no release</h2>
-<h3>Metrics API torna-se uma interface estável</h3>
-<p>A Metrics API, acessada pelo grupo <em>metrics.k8s.io</em>, alcançou disponibilidade geral. Ela oferece uma interface comum para consultar métricas de uso de recursos em nós e pods, usada por ferramentas como <em>kubectl top</em> e por mecanismos de autoscaling. A fonte a relaciona diretamente a HPA e VPA.</p>
-<p>Convém separar duas coisas. A estabilidade da API não elimina a dependência de uma arquitetura de coleta bem montada. Em muitos ambientes, o Metrics Server segue como o provedor mais comum das métricas de uso imediato, enquanto Prometheus e outros sistemas de observabilidade cobrem retenção histórica, cardinalidade elevada, alertas e métricas de negócio.</p>
-<p>A promoção para estável reduz a incerteza para ferramentas e integrações que dependem dessa interface. Ainda assim, continua necessário validar a latência de coleta, a disponibilidade do componente provedor e a coerência dos <em>requests</em> e <em>limits</em> definidos nos workloads.</p>
-<h3>Kubelet rootless avança a beta e vem ativado por padrão</h3>
-<p>O recurso <em>KubeletInUserNamespace</em> foi promovido a beta e vem ativado por padrão, conforme o material de referência. Ele permite executar componentes centrais do nó, incluindo o kubelet, como um usuário sem privilégio de root no host, por meio de namespaces de usuário do Linux.</p>
-<p>O efeito esperado é limitar o impacto de uma eventual fuga de container ou de um comprometimento que alcance processos associados ao kubelet. É uma medida de defesa em profundidade: reduzir privilégios no host pode tornar uma cadeia de exploração menos valiosa para um invasor.</p>
-<p>Isso não representa garantia contra escapes de containers, falhas do kernel ou configurações permissivas de runtime. A segurança de Kubernetes continua dependente de várias camadas, como atualização do sistema operacional, políticas de admissão, segregação de identidades, proteção de credenciais e controle de acesso à API.</p>
-<h3>Watch cache resiliente protege o etcd sob pressão</h3>
-<p>No Kubernetes 1.37, o feature gate <code>WatchCacheInitializationPostStartHook</code> tornou-se estável e ficou permanentemente habilitado; ele já vinha ativo por padrão desde 1.36. O <code>ResilientWatchCacheInitialization</code> havia chegado a estável em 1.34. <a href="https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/">Fonte: anúncio oficial do Kubernetes 1.37</a>. Ela trata um problema comum em clusters extensos: quando o kube-apiserver reinicia ou perde conexão com seu cache, requisições simultâneas podem concentrar carga no etcd.</p>
-<p>Segundo a fonte, a funcionalidade passa a delegar requisições dentro de limites seguros e rejeita as demais com HTTP 429, sinalizando excesso de solicitações. A mudança protege o plano de controle em vez de tentar atender toda a demanda de uma vez e comprometer a base de estado do cluster.</p>
-<p>Nesse contexto, receber HTTP 429 não indica necessariamente um defeito da aplicação cliente. Pode ser um mecanismo deliberado de preservação do serviço. Clientes, controladores e automações precisam lidar com esse código usando retentativas progressivas, respeito a <em>backoff</em> e limites de concorrência.</p>
-<h2>Funcionalidades alpha exigem avaliação cuidadosa</h2>
-<p>Nem toda novidade do Kubernetes 1.37 tem o mesmo grau de prontidão para produção. O release inclui funcionalidades alpha que pedem avaliação mais criteriosa, em geral em ambientes isolados e com um plano claro de reversão.</p>
+<div class="article-body"><p>O Kubernetes 1.37 promove a Metrics API a estável e o suporte a componentes de nó rootless a beta. Isso não significa que atualizar a versão do cluster habilite toda a cadeia de métricas ou converta seus nós para rootless. A avaliação precisa separar maturidade da API, configuração e compatibilidade dos componentes.</p>
+<h2>Metrics API: versão estável não instala o provedor</h2>
+<p class="fato-metricas">O <a href="https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/">anúncio específico da Metrics API</a> registra a promoção de <code>metrics.k8s.io/v1</code>, sem mudança nos campos de CPU e memória em relação a <code>v1beta1</code>. O provedor, como o Metrics Server, precisa servir a versão e registrar seu <code>APIService</code>. No Kubernetes 1.37, <code>kubectl top</code> prefere v1 quando disponível, mas o controlador HPA ainda usa v1beta1. Por isso, a documentação orienta manter as duas versões durante a transição. Não é uma substituição de toda a observabilidade do cluster.</p>
+<h2>Rootless: a opção e o estado real do nó</h2>
+<p class="fato-rootless">Segundo a <a href="https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/">documentação da promoção de rootless a beta</a>, <code>KubeletInUserNamespace</code> fica habilitado por padrão, mas não move automaticamente o kubelet para um namespace de usuário. Clusters existentes que executam esses componentes como root continuam assim. O namespace deve ser preparado externamente. A opção também não deve ser confundida com <code>hostUsers: false</code>, que trata namespaces dos pods. A documentação aponta possíveis incompatibilidades com drivers CNI e CSI e ressalta que namespaces de usuário não mitigam vulnerabilidades do próprio kernel.</p>
+<h2>Watch cache: duas graduações diferentes</h2>
+<p class="fato-cache">O <a href="https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/">anúncio do release 1.37</a> distingue <code>ResilientWatchCacheInitialization</code>, estável desde 1.34, de <code>WatchCacheInitializationPostStartHook</code>, estável e permanentemente habilitado em 1.37, com padrão habilitado desde 1.36. O conjunto reduz pressão na inicialização do cache; não se deve atribuir todo esse comportamento como novidade exclusiva de 1.37.</p>
+<p class="fato-requisicoes">O <a href="https://www.kubernetes.dev/resources/keps/4568/">KEP-4568</a> descreve quais requisições podem ser encaminhadas ao etcd e quais são rejeitadas enquanto o cache não está pronto. Clientes precisam tratar respostas de limitação, como HTTP 429, sem transformá-las em tentativas imediatas e ilimitadas.</p>
+<h2>HPA e certificados: verificar as dependências</h2>
+<p class="fato-hpa">O release também promove a escala para zero do HPA a beta, habilitada por padrão. É necessário configurar <code>minReplicas: 0</code> e usar métricas de objetos ou externas; CPU e memória não permitem essa retomada sem pods ativos. Isso não equivale a desligar nós ou garantir economia de infraestrutura.</p>
+<p class="fato-certificados">A <a href="https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/">documentação de Pod Certificates e Cluster Trust Bundles</a> descreve fundamentos estáveis para emissão e distribuição de certificados. A arquitetura inclui aplicação, kubelet e um controlador assinador. A aplicação precisa consumir chaves, certificados e bundles para TLS ou mTLS. Portanto, não se trata de criptografia automática de todo o tráfego apenas por atualizar o cluster.</p>
+<div class="contribuicao-editorial">
+<h2>Roteiro proposto para homologação</h2>
+<p>Antes da atualização, registrar as versões do cluster, runtime, provedor de métricas e plugins de rede e armazenamento. Selecionar workloads de teste representativos e estabelecer os mesmos critérios de aceite para antes e depois.</p>
 <ul>
-  <li>O feature gate <em>InPlacePodVerticalScalingSchedulerPreemption</em> adiciona preempção orientada ao redimensionamento vertical em execução. A proposta é liberar recursos em um nó saturado ao remover workloads de prioridade menor, permitindo o redimensionamento pendente de uma aplicação mais prioritária.</li>
-  <li>O checkpoint e restore no nível de pod permite que o kubelet gere um checkpoint e restaure um pod a partir dele, com potencial utilidade em depuração e análise de segurança.</li>
-  <li>A estratégia <em>Recreate</em> para StatefulSets pode excluir todos os pods existentes durante um rollout. O objetivo é permitir recuperação mais limpa de pods travados ou pendentes em atualizações, sem remoção manual.</li>
+<li><strong>Métricas:</strong> conferir as versões realmente servidas, a disponibilidade dos APIServices e a continuidade da decisão do HPA. Uma resposta de <code>kubectl top</code> isoladamente não valida o autoscaling.</li>
+<li><strong>Rootless:</strong> verificar a identidade e o namespace dos processos do nó, além de montagem de volumes e conectividade dos pods de teste. A presença da feature gate não é o critério de sucesso.</li>
+<li><strong>Recuperação:</strong> em laboratório isolado, observar readiness e respostas dos clientes durante reinicialização controlada do plano de controle. Registrar o tempo de recuperação e a quantidade de tentativas, sem simular falhas em produção.</li>
+<li><strong>Escala para zero:</strong> medir o intervalo entre a chegada de trabalho e seu processamento, testar ausência de métricas e verificar separadamente o efeito sobre a capacidade faturada.</li>
+<li><strong>Certificados:</strong> conferir emissão, renovação, consumo pela aplicação e rejeição de uma identidade de teste não autorizada.</li>
 </ul>
-<p>Esses recursos lidam com situações operacionais difíceis: pressão de recursos em aplicações prioritárias, investigação do estado de processos e atualizações bloqueadas de cargas com estado. Ainda assim, o status alpha é decisivo. Sem estabilidade de API, garantias amplas de compatibilidade e com possível alteração de comportamento entre versões, não é prudente colocá-los como base de um processo crítico.</p>
-<p>O checkpoint de pods, por exemplo, requer atenção à proteção de dados. Um snapshot de memória e árvores de processo pode conter tokens, credenciais temporárias, dados de sessão ou informações de negócio. O recurso pode ajudar em análise forense, mas também amplia a superfície de dados sensíveis que exige controles de acesso, criptografia e retenção limitada.</p>
-<h2>Escala para zero pode reduzir custos, com limites práticos</h2>
-<p>O suporte do Horizontal Pod Autoscaler para escalar até zero foi promovido a beta e está habilitado por padrão, de acordo com a fonte. A motivação destacada são workloads de IA e machine learning, especialmente os que dependem de GPUs em provedores de nuvem.</p>
-<p>O potencial de economia é direto: se uma carga intermitente não tem demanda, manter réplicas em execução pode gerar custo desnecessário. Em contrapartida, escalar para zero leva a discussão para a experiência de uso e a capacidade de retomada. Uma API sob demanda pode sofrer <em>cold start</em>; um worker sem consumidores pode retornar rapidamente, enquanto um serviço que precisa carregar modelos grandes talvez não.</p>
-<p>Também não cabe concluir que escalar pods para zero desligará automaticamente nós ou GPUs. A economia efetiva depende da integração entre o autoscaling de pods, o provisionamento de nós, a estratégia de empacotamento de workloads e as políticas do provedor. Um pod pode desaparecer e, mesmo assim, deixar capacidade ociosa alocada no cluster.</p>
-<h2>Certificados de pods para comunicação interna</h2>
-<p>Os certificados de pods foram promovidos a estáveis. A fonte descreve o recurso como suporte nativo para comunicação segura entre pods, sem ferramentas externas para iniciar mTLS entre serviços internos.</p>
-<p>Isso pode reduzir dependências adicionais na entrega de identidade criptográfica entre workloads. Contudo, mTLS não se resume à emissão de certificados. Uma implementação segura precisa definir relações de confiança, autorização de identidades, rotação de certificados e o comportamento esperado quando a validação falha.</p>
-<p>Do ponto de vista arquitetural, certificados nativos podem simplificar parte do mecanismo, mas não substituem o desenho das políticas de comunicação. A equipe ainda precisa definir quais serviços podem se conectar, quais identidades serão aceitas e como investigar falhas de autenticação distribuída.</p>
-<h2>Como avaliar a atualização no ambiente</h2>
-<p>Uma adoção responsável do Kubernetes 1.37 deve começar pela compatibilidade operacional, e não pela ativação imediata de todos os recursos. Um roteiro objetivo pode seguir estas etapas.</p>
-<ol>
-  <li>Mapear a versão atual do cluster, dos runtimes de container, do sistema operacional dos nós e dos add-ons críticos, especialmente componentes de rede, armazenamento, ingress e observabilidade.</li>
-  <li>Validar a cadeia da Metrics API em homologação, incluindo disponibilidade do Metrics Server, comportamento de <em>kubectl top</em> e decisões de HPA baseadas em métricas de CPU e memória.</li>
-  <li>Revisar clientes internos que consultam a API do Kubernetes e confirmar que eles respeitam HTTP 429, usam retentativas com espera progressiva e não criam tempestades de requisições após falhas.</li>
-  <li>Testar o kubelet em namespace de usuário com as imagens, plugins CSI, requisitos de montagem, integrações de segurança e agentes de observabilidade usados pela organização.</li>
-  <li>Medir o tempo de retomada de workloads candidatos a escala para zero e confrontá-lo com o objetivo de serviço esperado para cada aplicação.</li>
-  <li>Manter recursos alpha desligados no ambiente produtivo até que exista um caso de uso claro, critérios de sucesso, telemetria e procedimento de rollback documentado.</li>
-</ol>
-<h2>Limites da notícia e riscos de operação</h2>
-<p>A fonte informa a graduação dos recursos, mas não substitui as notas oficiais de release, a documentação de atualização nem a matriz de compatibilidade do ambiente específico. Ela também não traz benchmarks, resultados de desempenho ou evidências de que as novidades terão o mesmo efeito em qualquer distribuição gerenciada ou instalação autogerenciada.</p>
-<p>Recursos ativados por padrão não são necessariamente transparentes. O kubelet rootless pode revelar incompatibilidades com integrações de baixo nível do host. A proteção do watch cache pode tornar respostas 429 mais frequentes em automações mal comportadas. A escala para zero pode reduzir custos, mas prejudicar a latência percebida se a aplicação não tiver uma estratégia de inicialização sob demanda.</p>
-<p>Também é importante distinguir estabilidade de recurso e maturidade organizacional. Uma API estável pode ser subutilizada por falta de observabilidade. Um mecanismo de certificados pode coexistir com políticas de identidade confusas. E um cluster mais resistente à pressão sobre o etcd ainda depende de capacidade planejada, monitoramento do plano de controle e testes de recuperação.</p>
-<h2>Uma atualização voltada à previsibilidade operacional</h2>
-<p>O Kubernetes 1.37 parece menos voltado a uma mudança isolada de grande impacto e mais à consolidação de fundamentos operacionais. Metrics API estável, watch cache resiliente e kubelet com menor privilégio favorecem, em conjunto, uma plataforma mais governável.</p>
-<p>Como recomendação de avaliação, equipes brasileiras não devem tratar esse release como atualização automática, nem ignorá-lo por parecer incremental. Vale priorizar recursos que reduzem risco estrutural: validar métricas para autoscaling, preparar clientes para respostas 429 e avaliar com cuidado a compatibilidade do modo rootless. As novidades alpha devem entrar no radar de pesquisa, sem assumir responsabilidade por workloads essenciais.</p>
-<p>Em Kubernetes, maturidade raramente significa habilitar tudo. Ela depende de entender as dependências, medir os efeitos no próprio ambiente e decidir com disciplina quais mecanismos podem chegar à produção.</p>
+</div>
+<div class="limites-editoriais">
+<h2>O que ficou fora</h2>
+<p>Esta análise seleciona recursos relevantes para operação; não é uma lista completa de mudanças nem um procedimento de upgrade. Os ensaios propostos não foram executados neste site. Recursos alpha e a sequência de atualização exigem consulta às notas oficiais e à documentação da distribuição usada. A disponibilidade no Kubernetes upstream não comprova suporte imediato de todo provedor gerenciado.</p>
+</div>
 </div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/news/2026/09/kubernetes-1-37/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener noreferrer">Kubernetes 1.37 Released: Stable Metrics API  and Rootless Kubelet in Beta</a> Data da fonte registrada: 20/09/2026.</p>
+<p><strong>Fonte principal:</strong> <a href="https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/" rel="noopener noreferrer">Kubernetes v1.37: Garhwal</a> Data da fonte registrada: 26/08/2026.</p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/news/2026/09/kubernetes-1-37/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Kubernetes 1.37 Released: Stable Metrics API and Rootless Kubelet in Beta</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/" target="_blank" rel="noopener noreferrer">Kubernetes v1.37: Garhwal</a>.</p>
 </section>
 
 <section class="related-articles" aria-labelledby="related-articles-title">

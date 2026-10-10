@@ -24,7 +24,7 @@ function revisaoCorresponde(editorial, corpoArtigo) {
 
 function dataLegivel(value) {
   return Number.isFinite(Date.parse(value)) ? new Intl.DateTimeFormat("pt-BR", {
-    timeZone: "America/Sao_Paulo", dateStyle: "short"
+    timeZone: /^\d{4}-\d{2}-\d{2}$/.test(value) ? "UTC" : "America/Sao_Paulo", dateStyle: "short"
   }).format(new Date(value)) : null;
 }
 

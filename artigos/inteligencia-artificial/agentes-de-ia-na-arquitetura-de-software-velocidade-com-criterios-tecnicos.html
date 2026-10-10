@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Agentes de IA na arquitetura de software: velocidade com critérios técnicos</title>
-<meta name="description" content="Agentes de programação baseados em IA já ultrapassaram o papel de autocomplete ou de geradores de trechos isolados. Com contexto suficiente, eles analisam...">
+<title>Arquitetura com agentes de IA: como avaliar uma decisão</title>
+<meta name="description" content="Um roteiro proposto para comparar consulta síncrona e projeção local, com requisitos, falhas e evidências de uma arquitetura mínima viável.">
 <meta name="author" content="Anderson Damasio">
-<meta name="keywords" content="Inteligência Artificial, arquitetura de software, segurança, agentes, criterios, agente, codigo, velocidade, tecnicos, artificial">
+<meta name="keywords" content="Inteligência Artificial, segurança, codigo, decisao, agentes, avaliar, artificial, consulta, deve, inteligencia">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html">
 <link rel="alternate" type="application/rss+xml" title="Anderson Damasio" href="https://www.andersondamasio.com.br/rss.xml">
@@ -15,48 +15,48 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Agentes de IA na arquitetura de software: velocidade com critérios técnicos">
-<meta property="og:description" content="Agentes de programação baseados em IA já ultrapassaram o papel de autocomplete ou de geradores de trechos isolados. Com contexto suficiente, eles analisam...">
+<meta property="og:title" content="Arquitetura com agentes de IA: como avaliar uma decisão">
+<meta property="og:description" content="Um roteiro proposto para comparar consulta síncrona e projeção local, com requisitos, falhas e evidências de uma arquitetura mínima viável.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-09-28T19:31:38.377Z">
-<meta property="article:modified_time" content="2026-10-09T22:51:19.065Z">
+<meta property="article:modified_time" content="2026-10-10T00:27:50.094Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Agentes de IA na arquitetura de software: velocidade com critérios técnicos">
-<meta name="twitter:description" content="Agentes de programação baseados em IA já ultrapassaram o papel de autocomplete ou de geradores de trechos isolados. Com contexto suficiente, eles analisam...">
+<meta name="twitter:title" content="Arquitetura com agentes de IA: como avaliar uma decisão">
+<meta name="twitter:description" content="Um roteiro proposto para comparar consulta síncrona e projeção local, com requisitos, falhas e evidências de uma arquitetura mínima viável.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Agentes de IA na arquitetura de software: velocidade com critérios técnicos",
-  "description": "Agentes de programação baseados em IA já ultrapassaram o papel de autocomplete ou de geradores de trechos isolados. Com contexto suficiente, eles analisam...",
+  "headline": "Arquitetura com agentes de IA: como avaliar uma decisão",
+  "description": "Um roteiro proposto para comparar consulta síncrona e projeção local, com requisitos, falhas e evidências de uma arquitetura mínima viável.",
   "url": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html"
   },
   "datePublished": "2026-09-28T19:31:38.377Z",
-  "dateModified": "2026-10-09T22:51:19.065Z",
+  "dateModified": "2026-10-10T00:27:50.094Z",
   "articleSection": "Inteligência Artificial",
   "inLanguage": "pt-BR",
   "keywords": [
     "Inteligência Artificial",
-    "arquitetura de software",
     "segurança",
-    "agentes",
-    "criterios",
-    "agente",
     "codigo",
-    "velocidade",
-    "tecnicos",
-    "artificial"
+    "decisao",
+    "agentes",
+    "avaliar",
+    "artificial",
+    "consulta",
+    "deve",
+    "inteligencia"
   ],
-  "wordCount": 2192,
+  "wordCount": 565,
   "about": {
     "@type": "Thing",
     "name": "Inteligência Artificial"
@@ -64,11 +64,15 @@
   "mentions": [
     {
       "@type": "Thing",
-      "name": "arquitetura de software"
+      "name": "segurança"
     },
     {
       "@type": "Thing",
-      "name": "segurança"
+      "name": "codigo"
+    },
+    {
+      "@type": "Thing",
+      "name": "decisao"
     },
     {
       "@type": "Thing",
@@ -76,25 +80,21 @@
     },
     {
       "@type": "Thing",
-      "name": "criterios"
+      "name": "avaliar"
     },
     {
       "@type": "Thing",
-      "name": "agente"
-    },
-    {
-      "@type": "Thing",
-      "name": "codigo"
+      "name": "artificial"
     }
   ],
   "isAccessibleForFree": true,
   "copyrightYear": 2026,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "Article: Five Ways To Use AI Coding Agents to Improve Your Software Architecture",
-    "url": "https://www.infoq.com/articles/ai-agents-improve-software-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "name": "Five Ways to Use AI Coding Agents to Improve Your Software Architecture",
+    "url": "https://www.infoq.com/articles/ai-agents-improve-software-architecture/"
   },
-  "citation": "https://www.infoq.com/articles/ai-agents-improve-software-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "citation": "https://www.infoq.com/articles/ai-agents-improve-software-architecture/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -153,7 +153,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Agentes de IA na arquitetura de software: velocidade com critérios técnicos",
+      "name": "Arquitetura com agentes de IA: como avaliar uma decisão",
       "item": "https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html"
     }
   ]
@@ -255,111 +255,59 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>Agentes de IA na arquitetura de software: velocidade com critérios técnicos</h1>
+<h1>Arquitetura com agentes de IA: como avaliar uma decisão</h1>
 
 <p class="article-meta">Publicado em: 28/09/2026 16:31</p>
 
-<div class="article-body"><p>Agentes de programação baseados em IA já ultrapassaram o papel de autocomplete ou de geradores de trechos isolados. Com contexto suficiente, eles analisam repositórios, mapeiam fluxos, propõem refatorações, escrevem testes e montam estruturas iniciais de aplicações. Isso pode acelerar bastante o trabalho, mas também amplia um risco familiar a qualquer arquiteto: produzir muito software antes de demonstrar que ele atende aos atributos de qualidade necessários.</p>
-<p>Uma análise internacional sobre o tema reúne cinco usos práticos desses agentes no apoio à arquitetura de software: documentar serviços legados, localizar falhas arquiteturais, realizar auditorias de segurança, fornecer bases técnicas para protótipos e gerar Arquiteturas Mínimas Viáveis, ou MVAs. O objetivo não é transferir a arquitetura para a IA, mas empregá-la para acelerar investigação, implementação e validação dentro de restrições bem definidas.</p>
-<h2>Velocidade depende de critérios arquiteturais mensuráveis</h2>
-<p>O ponto central da análise é direto: requisitos funcionais sozinhos não orientam um agente de IA a construir um sistema confiável. Se o time pedir apenas uma API, uma tela ou um fluxo de negócio, o agente provavelmente produzirá código funcional. Isso não garante latência aceitável, isolamento adequado entre domínios, rastreabilidade, segurança, resiliência ou custo operacional compatível com o cenário.</p>
-<p>Para que o resultado tenha utilidade arquitetural, as equipes precisam explicitar requisitos de atributos de qualidade, restrições, decisões já tomadas, trade-offs aceitos e critérios verificáveis. Em vez de solicitar “crie um serviço de pedidos”, uma instrução madura descreve objetivos como tempo máximo de resposta, limites de dependências, estratégia de autenticação, comportamento diante de indisponibilidade e evidências que os testes devem produzir.</p>
-<h2>Como os agentes de programação podem apoiar a arquitetura</h2>
-<p>O material de referência apresenta agentes de IA como instrumentos capazes de atuar em diferentes momentos do ciclo de vida arquitetural. Os usos descritos incluem leitura de código legado, mapeamento de fluxos de dados, identificação de problemas de design, análise de vulnerabilidades e geração de código de fundação para novos serviços ou aplicações.</p>
-<p>Há também uma recomendação explícita para limitar a atuação do agente. Em uma auditoria de segurança, por exemplo, ele deve acessar somente arquivos aprovados, segredos não devem entrar nos prompts e testes potencialmente agressivos precisam rodar em ambiente isolado, sem possibilidade de alcançar servidores produtivos.</p>
-<p>Outro ponto é validar a produção da IA com testes mensuráveis. A inspeção humana do código segue necessária, mas não prova por si só que uma decisão arquitetural atende às expectativas. Uma arquitetura mínima viável deve reunir componentes de negócio e mecanismos capazes de demonstrar que requisitos funcionais e não funcionais foram atendidos.</p>
-<h2>O agente reduz o custo de exploração, mas não decide a arquitetura</h2>
-<p>Há uma diferença relevante entre gerar código e tomar uma decisão de arquitetura. Gerar código consiste em transformar uma especificação em artefatos executáveis. Arquitetar consiste em escolher quais propriedades o sistema deve preservar diante de mudança, carga, falha, ataque, crescimento da equipe ou evolução do domínio.</p>
-<p>Um agente pode comparar padrões, localizar chamadas indevidas entre módulos, sugerir extração de interfaces e até produzir uma proposta de migração. Porém, ele não conhece automaticamente a prioridade de negócio, o orçamento operacional, o perfil de risco regulatório ou o custo organizacional de manter uma determinada solução. Esses elementos continuam sob responsabilidade humana.</p>
-<p>Na prática, a maior contribuição dos agentes está em encurtar o ciclo entre hipótese e evidência. Um arquiteto pode formular uma hipótese, como “este serviço deve manter o p95 abaixo de determinado limite sob concorrência definida”, e pedir ao agente que implemente uma versão inicial, prepare massa de testes, crie contêineres e monte um teste de carga. A decisão deixa de depender apenas de opinião e passa a contar com sinais técnicos observáveis.</p>
-<h3>Requisitos de qualidade não podem permanecer implícitos</h3>
-<p>Muitos times trabalham com requisitos arquiteturais implícitos. Espera-se que alguém “saiba” que não deve acessar diretamente a tabela de outro domínio, que uma integração externa deve ter timeout, que uma API pública precisa de versionamento ou que logs não podem vazar dados pessoais.</p>
-<p>Esse modelo já era frágil antes da IA. Com agentes capazes de produzir alterações em escala, ele se torna ainda mais perigoso. A ferramenta não deveria depender de convenções informais transmitidas em revisões de pull request ou conversas de corredor. Regras relevantes precisam estar versionadas, preferencialmente próximas ao código, e descritas de forma verificável.</p>
-<ul>
-  <li>Limites explícitos entre módulos, domínios e camadas.</li>
-  <li>Políticas de autenticação, autorização e gestão de segredos.</li>
-  <li>Metas de desempenho, disponibilidade e recuperação.</li>
-  <li>Convenções de APIs, contratos de eventos e versionamento.</li>
-  <li>Restrições de dependências, bibliotecas e licenças aceitas.</li>
-  <li>Regras de observabilidade, auditoria e tratamento de dados sensíveis.</li>
-</ul>
-<h2>Documentar legado é um ponto de partida de risco controlado</h2>
-<p>Sistemas legados costumam concentrar regras de negócio importantes em locais pouco visíveis: programas antigos, integrações proprietárias, procedimentos de banco, arquivos de configuração ou contratos de serviço sem documentação atualizada. Reescrever esse tipo de componente sem entendimento suficiente pode transferir defeitos antigos para uma plataforma nova, agora com maior velocidade de entrega.</p>
-<p>Um agente de IA pode ajudar a criar uma visão inicial do sistema, identificando entradas, saídas, chamadas externas, tabelas acessadas, regras condicionais e caminhos de exceção. Essa documentação não deve ser considerada verdade automática. Trata-se de um artefato de investigação que precisa ser confrontado com testes, telemetria disponível, especialistas do domínio e comportamento real em ambientes controlados.</p>
-<p>Um cenário hipotético ajuda a ilustrar: um serviço antigo consulta informações contratuais e será reutilizado por uma nova plataforma digital. Antes de expor esse serviço diretamente, o time pode pedir ao agente que localize regras de validação, dependências de banco, campos obrigatórios e situações em que o retorno é inconsistente. Em seguida, desenvolvedores e analistas validam as descobertas contra casos conhecidos do negócio. O ganho não está em “confiar na IA”, mas em reduzir o trabalho mecânico da leitura inicial.</p>
-<h2>Falhas arquiteturais precisam de regras locais e prioridade</h2>
-<p>Agentes podem localizar violações de padrões, duplicação de lógica, acoplamento excessivo, dependências cíclicas, APIs difíceis de consumir e acessos que atravessam fronteiras de domínio. Ainda assim, uma varredura ampla inevitavelmente encontrará muitos pontos passíveis de melhoria. Nem toda melhoria merece prioridade.</p>
-<p>Esse é um limite operacional importante. Se o time solicitar que a IA “encontre todos os problemas arquiteturais”, receberá uma lista potencialmente longa de sugestões, algumas úteis e outras meramente estilísticas. Sem critérios de impacto, risco e custo, a atividade pode virar uma fábrica de refatorações sem retorno claro.</p>
-<p>Uma abordagem mais eficaz formula perguntas estreitas. Por exemplo: identificar serviços que acessam diretamente o estado interno de outro domínio; localizar endpoints sem validação consistente de entrada; ou detectar bibliotecas proibidas pela política de engenharia. O agente ganha foco, e o time obtém resultados mais comparáveis.</p>
-<h3>Verificações automatizadas sustentam as regras de arquitetura</h3>
-<p>Regras arquiteturais que existem apenas em diagramas ou documentos tendem a perder força com o tempo. Sempre que possível, elas devem ser convertidas em verificações automatizadas. Isso pode incluir testes de dependência entre pacotes, validação de contratos, análise estática, políticas de infraestrutura e verificações no pipeline de integração contínua.</p>
-<p>O agente pode ajudar a criar essas verificações, mas a definição da regra deve partir do time. Uma boa regra não diz apenas “mantenha o código limpo”. Ela especifica, por exemplo, que o módulo de faturamento não pode depender diretamente do módulo de identidade, ou que controladores HTTP não podem executar consultas de banco sem atravessar uma camada definida.</p>
-<h2>Auditoria de segurança exige isolamento, revisão e proteção de contexto</h2>
-<p>O uso de agentes para segurança é promissor porque a ferramenta pode cruzar arquivos, dependências e fluxos de dados com rapidez. Ela pode apoiar a revisão de versões vulneráveis, sugerir correções, criar testes negativos e apontar locais onde entradas não são validadas ou onde a autorização parece incompleta.</p>
-<p>Mas a superfície de risco também aumenta. Prompts podem expor segredos, repositórios podem conter informações sensíveis e uma ferramenta com credenciais excessivas pode causar alterações indesejadas. O problema não é exclusivo da IA, mas sua autonomia e velocidade tornam o dano potencial maior.</p>
-<ul>
-  <li>Conceda ao agente o menor conjunto possível de permissões.</li>
-  <li>Masque chaves, tokens, senhas e dados pessoais antes de fornecer contexto.</li>
-  <li>Execute testes ofensivos apenas em redes e ambientes isolados.</li>
-  <li>Exija revisão humana para qualquer patch relacionado a segurança.</li>
-  <li>Registre prompts, arquivos analisados, alterações propostas e decisões de aprovação.</li>
-  <li>Valide atualizações de dependências quanto a compatibilidade, licença e efeito em produção.</li>
-</ul>
-<p>Também convém separar descoberta de correção. Primeiro, o agente identifica uma possível vulnerabilidade e apresenta evidências. Depois, o time reproduz, classifica o impacto e decide a estratégia de correção. Esse fluxo reduz o risco de aplicar patches plausíveis, porém inadequados ao contexto real.</p>
-<h2>Fundações reutilizáveis impedem que protótipos se tornem dívida permanente</h2>
-<p>Prototipar com IA é barato e rápido. O risco surge quando um protótipo criado para validar uma ideia passa a ser promovido gradualmente a produção. Sem observabilidade, política de erros, controle de acesso, automação de deploy e testes, o experimento pode se tornar uma base frágil para funções críticas.</p>
-<p>Uma alternativa mais madura é oferecer ao agente um conjunto de aplicações-base, templates de repositório e decisões previamente aprovadas. Em vez de começar do zero, a geração acontece dentro de uma fundação que já inclui estrutura de diretórios, padrões de API, telemetria, configuração de ambiente, pipeline e convenções de segurança.</p>
-<p>O benefício não está em padronizar tudo indiscriminadamente. Está em reduzir decisões repetitivas e preservar energia para os problemas que realmente diferenciam o produto. Um template deve evoluir como produto interno, com responsáveis, versão, documentação e critérios claros de adoção.</p>
-<h2>MVAs colocam promessas arquiteturais sob teste</h2>
-<p>A noção de Arquitetura Mínima Viável é especialmente útil em decisões com incerteza alta. Em vez de construir toda a solução e descobrir tarde que ela não suporta a carga, não atende uma integração ou viola uma exigência de segurança, o time monta a menor implementação capaz de provar ou refutar hipóteses relevantes.</p>
-<p>Uma MVA não é só um esqueleto de código. Ela precisa incluir o necessário para medir os atributos em discussão: ambiente reproduzível, dados de teste, instrumentação, testes de contrato, cenários de falha e, quando necessário, mecanismos de carga. Um agente pode gerar parte substancial desses artefatos, desde que receba critérios claros.</p>
+<div class="article-body"><p>Pedir a um agente que “melhore a arquitetura” deixa em aberto o que deve melhorar e como conferir o resultado. Uma tarefa mais útil delimita uma decisão, seus riscos e a evidência necessária para aceitá-la. Este artigo propõe um registro de avaliação para uma arquitetura mínima viável, sem tratar código gerado como comprovação de qualidade.</p>
+<h2>A proposta dos autores</h2>
+<p class="fato-arquitetura">Em <a href="https://www.infoq.com/articles/ai-agents-improve-software-architecture/">Five Ways to Use AI Coding Agents to Improve Your Software Architecture</a>, Pierre Pureur, Kurt Bittner e Todd Miller discutem documentação de legado, identificação de problemas arquiteturais, segurança, fundações reutilizáveis e arquiteturas mínimas viáveis. O argumento é fornecer requisitos de qualidade mensuráveis e executar testes para avaliá-los. Os autores relatam experiências próprias, inclusive com dependências de um cliente. Essas experiências são deles, não de Anderson Damasio. O texto traz sugestões e exemplos; não constitui um estudo comparativo que comprove ganhos universais.</p>
+<div class="contribuicao-editorial">
+<h2>Exemplo: consulta síncrona ou projeção local?</h2>
+<p>Considere um sistema hipotético que mostra a disponibilidade de um recurso. Há duas alternativas: consultar o serviço responsável a cada pedido ou manter uma projeção local atualizada por eventos. O objetivo do experimento é escolher como responder durante uma indisponibilidade curta, não construir o produto inteiro.</p>
+<p>Antes de gerar código, o responsável pelo produto precisa dizer quão antiga uma informação pode ser e quando a interface deve recusar apresentá-la. O agente não deve inventar esse limite. Tampouco deve transformar uma consulta de disponibilidade em promessa de reserva: confirmar uma operação continua exigindo a regra de negócio definida para ela.</p>
+<h3>Registro mínimo da decisão</h3>
+<dl>
+<dt>Pergunta</dt><dd>Qual alternativa atende à tolerância a dados desatualizados e ao tempo de resposta aceitos para esta consulta?</dd>
+<dt>Limites a preencher</dt><dd>Idade máxima do dado, latência permitida, volume esperado e comportamento quando não há informação confiável.</dd>
+<dt>Alternativas</dt><dd>Consulta síncrona com falha explícita; projeção local com informação de atualização e recusa após o limite acordado.</dd>
+<dt>Evidências</dt><dd>Versão do código, configuração, massa de teste, resultados por cenário e divergências encontradas.</dd>
+<dt>Decisão</dt><dd>Aceita, rejeitada ou inconclusiva, com justificativa e responsável. Ausência de uma medição não conta como aprovação.</dd>
+</dl>
+<h2>Os ensaios que diferenciam as alternativas</h2>
 <ol>
-  <li>Escolha uma decisão com risco significativo, como mensageria, armazenamento, particionamento ou integração externa.</li>
-  <li>Defina quais atributos serão avaliados e como serão medidos.</li>
-  <li>Descreva cenários representativos, incluindo falhas e mudanças esperadas.</li>
-  <li>Peça ao agente uma implementação mínima e os testes correspondentes.</li>
-  <li>Revise o código, execute os experimentos e registre os resultados.</li>
-  <li>Decida com base nas evidências, não apenas na qualidade aparente da geração.</li>
+<li><strong>Operação normal:</strong> usar a mesma sequência de alterações de disponibilidade e consultas nas duas implementações. Conferir a resposta com o estado de referência.</li>
+<li><strong>Fonte indisponível:</strong> interromper somente o serviço simulado. Verificar se a resposta segue a regra definida, sem apresentar dado antigo como atual.</li>
+<li><strong>Eventos duplicados ou atrasados:</strong> no protótipo com projeção, conferir se a sequência final corresponde ao estado esperado. Registrar explicitamente situações que o desenho não suporta.</li>
+<li><strong>Retomada:</strong> medir quando cada alternativa volta a responder corretamente após a fonte retornar, e não apenas quando os processos ficam ativos.</li>
+<li><strong>Mudança de requisito:</strong> alterar a tolerância a atraso e identificar código, configuração e testes afetados. Isso expõe o custo de evolução que o primeiro cenário pode esconder.</li>
 </ol>
-<h2>O que o material não permite concluir</h2>
-<p>O material de referência apresenta recomendações e possibilidades de uso, mas não fornece métricas comparativas sobre ganho de produtividade, redução de defeitos, eficácia de auditorias ou custo de adoção. Portanto, não é possível concluir que agentes de IA produzirão arquiteturas melhores em qualquer organização ou contexto.</p>
-<p>Também não há base para afirmar que uma ferramenta detectará todas as vulnerabilidades, compreenderá integralmente regras de negócio antigas ou substituirá atividades especializadas de arquitetura, segurança e validação. A qualidade da saída depende do contexto fornecido, da capacidade de revisão do time, das ferramentas conectadas ao fluxo e da disciplina de teste.</p>
-<p>Há ainda uma questão prática: quanto mais contexto se fornece ao agente, maior pode ser a utilidade da resposta, mas também maior é o cuidado necessário com confidencialidade, governança e retenção de dados. Esse equilíbrio deve ser deliberado, não assumido.</p>
-<h2>Como iniciar o uso com governança técnica</h2>
-<p>Para times que desejam começar, a recomendação desta análise é evitar uma adoção ampla e pouco estruturada. É mais seguro selecionar um problema limitado, definir critérios de sucesso e observar o comportamento do processo antes de expandir o uso.</p>
-<ul>
-  <li>Escolha um serviço legado não crítico para criar a primeira documentação assistida.</li>
-  <li>Crie um documento versionado com requisitos de qualidade, padrões e restrições técnicas.</li>
-  <li>Use o agente inicialmente em modo de leitura e sugestão, sem permissão de alteração autônoma.</li>
-  <li>Transforme regras arquiteturais recorrentes em testes automatizados ou políticas de pipeline.</li>
-  <li>Estabeleça uma revisão obrigatória para código, testes e alterações de dependências geradas pela ferramenta.</li>
-  <li>Meça tempo de análise, qualidade das sugestões aceitas, retrabalho e defeitos encontrados após a mudança.</li>
-  <li>Documente prompts eficazes, cenários de falha e limitações observadas como ativos do time.</li>
-</ul>
-<p>O aprendizado mais valioso provavelmente não estará no código produzido, mas na melhoria da linguagem arquitetural da equipe. Quando é necessário explicar restrições a uma máquina, ambiguidades antes toleradas tendem a aparecer. Isso pode ser desconfortável, mas é um efeito saudável.</p>
-<h2>Arquitetura continua sendo escolha explícita</h2>
-<p>Agentes de IA podem aumentar de forma relevante a capacidade de explorar alternativas, compreender código legado, automatizar verificações e produzir protótipos testáveis. A oportunidade é concreta, principalmente em atividades que exigem leitura extensa, comparação de padrões e preparação repetitiva de artefatos.</p>
-<p>O erro seria confundir rapidez de geração com garantia de qualidade. Código convincente pode estar arquiteturalmente errado, inseguro ou inadequado para mudanças futuras. A resposta não é rejeitar a ferramenta, mas inseri-la em um sistema de trabalho com requisitos claros, testes mensuráveis, permissões restritas e responsabilidade humana bem definida.</p>
-<p>A recomendação desta análise é tratar o agente como um colaborador extremamente rápido, sem autoridade para decidir sozinho quais riscos o negócio deve aceitar. A arquitetura permanece sendo o mecanismo pelo qual essas escolhas se tornam explícitas, verificáveis e sustentáveis ao longo do tempo.</p>
+<p>O agente pode preparar os dois protótipos e o executor, mas o oráculo do teste e os limites de aceite precisam de conferência independente. Se a mesma suposição equivocada aparecer no código e no teste gerado, uma execução verde não resolve a dúvida arquitetural.</p>
+</div>
+<div class="limites-editoriais">
+<h2>Como usar o resultado</h2>
+<p>Esse roteiro é uma proposta, ainda não executada. Não há aqui benchmark, validação de produto real ou afirmação de economia. Um protótipo aprovado para consulta também não fica automaticamente aprovado para operações que alteram estado.</p>
+<p>A questão complementar de como preservar conceitos e regras no código está na análise sobre <a href="/artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html">código como modelo de domínio</a>. Aqui, o foco é decidir entre alternativas mediante evidências.</p>
+</div>
 </div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/articles/ai-agents-improve-software-architecture/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener noreferrer">Article: Five Ways To Use AI Coding Agents to Improve Your Software Architecture</a> Data da fonte registrada: 28/09/2026.</p>
+<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/articles/ai-agents-improve-software-architecture/" rel="noopener noreferrer">Five Ways to Use AI Coding Agents to Improve Your Software Architecture</a> Data da fonte registrada: 28/09/2026.</p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/articles/ai-agents-improve-software-architecture/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Article: Five Ways To Use AI Coding Agents to Improve Your Software Architecture</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/articles/ai-agents-improve-software-architecture/" target="_blank" rel="noopener noreferrer">Five Ways to Use AI Coding Agents to Improve Your Software Architecture</a>.</p>
 </section>
 
 
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>
-<li><a href="/artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html">Agentes de IA e o código como representação do modelo de domínio</a><span>Inteligência Artificial</span></li>
-<li><a href="/artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html">Testes por simulação para validar agentes de IA antes da produção</a><span>Inteligência Artificial</span></li>
+<li><a href="/artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html">Código e agentes de IA: preservar o modelo de domínio</a><span>Inteligência Artificial</span></li>
+<li><a href="/artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html">Testes de agentes por simulação: cenários e critérios</a><span>Inteligência Artificial</span></li>
 <li><a href="/artigos/inteligencia-artificial/engenharia-de-contexto-para-memoria-custo-e-precisao-em-aplicacoes-de-ia-generativa.html">Engenharia de contexto para memória, custo e precisão em aplicações de IA generativa</a><span>Inteligência Artificial</span></li>
 <li><a href="/artigos/inteligencia-artificial/analise-de-causas-raiz-em-ia-o-novo-foco-em-engenharia-de-contexto.html">Análise de Causas Raiz em IA: O Novo Foco em Engenharia de Contexto</a><span>Inteligência Artificial</span></li>
 </ul>

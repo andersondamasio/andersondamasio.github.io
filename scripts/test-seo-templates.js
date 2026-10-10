@@ -7,6 +7,7 @@ const { execFileSync } = require("node:child_process");
 const cheerio = require("cheerio");
 const { inserirSecoesConteudoUtil, avaliarSecoesConteudoUtil, gerarSecoesConteudoUtil, hashCorpoEditorial } = require("./seo-helpful-content");
 const { criarPessoaSchema, criarWebSiteSchema } = require("./seo-identity");
+const { estilosCodigoInline, aplicarEstilosCodigoInline } = require("./seo-code-styles");
 const { defaultSeoImage, defaultArticleImages, getArticleStructuredImages } = require("./seo-assets");
 const { aprovacaoFixture } = require("./fixtures/editorial-review");
 const { reconstruirPaginasSeo, publicarRascunhoAprovado } = require("../gerar-conteudo");
@@ -43,6 +44,29 @@ test("bloco legado nao declara revisao e nao injeta checklist generico", () => {
   assert.match($.text(), /sem registro de revis/i);
   assert.doesNotMatch($.text(), /O que foi verificado|Como aplicar essa leitura/);
   assert.equal($("a[rel=author]").text(), "Anderson Damasio");
+});
+
+test("data civil da fonte nao retrocede um dia; timestamp respeita Sao Paulo", () => {
+  const data = sourceDate => cheerio.load(gerarSecoesConteudoUtil({ ...fonte, sourceDate })).text();
+  assert.match(data("2026-01-22"), /22\/01\/2026/);
+  assert.match(data("2026-01-22T01:00:00Z"), /21\/01\/2026/);
+  assert.match(data("2026-01-22T12:00:00Z"), /22\/01\/2026/);
+  assert.doesNotMatch(data(undefined), /Data da fonte registrada/);
+  assert.doesNotMatch(data("invalida"), /Data da fonte registrada/);
+});
+
+test("estilo de codigo inline e idempotente, preserva corpo e nao altera blocos pre", () => {
+  const corpo = '<p>Opcao <code>WatchCacheInitializationPostStartHook</code>.</p><pre><code>linha 1\n  linha 2</code></pre>';
+  const html = `<html><head><style>code { font-size: 1rem; }</style></head><body><div class="article-body">${corpo}</div></body></html>`;
+  const novo = aplicarEstilosCodigoInline(html);
+  assert.ok(novo.includes(estilosCodigoInline));
+  assert.equal(aplicarEstilosCodigoInline(novo), novo);
+  assert.equal(cheerio.load(novo)(".article-body").html(), corpo);
+  assert.match(estilosCodigoInline, /\.article-body pre code \{ overflow-wrap: normal; \}/);
+  const somenteBloco = html.replace('<p>Opcao <code>WatchCacheInitializationPostStartHook</code>.</p>', '');
+  assert.equal(aplicarEstilosCodigoInline(somenteBloco), somenteBloco);
+  const semCodigo = html.replace(corpo, '<p>Texto.</p>');
+  assert.equal(aplicarEstilosCodigoInline(semCodigo), semCodigo);
 });
 
 test("insercao respeita divs aninhadas, preserva codigo e e idempotente", () => {
@@ -99,13 +123,16 @@ test("exemplo executavel de Reservoir Sampling corresponde ao codigo publicado",
   assert.equal(hashCorpoEditorial(html(".article-body").html()), registro.correcaoEditorial.hashDepois);
 });
 
-test("correcoes com fontes primarias preservam rastreabilidade e nao criam aprovacao humana", () => {
+[
+  ["correcoes-fontes-primarias-2026-10.json", 5],
+  ["correcoes-piloto-agentes-2026-10.json", 7]
+].forEach(([arquivo, quantidade]) => test(`correcoes preservam rastreabilidade sem aprovacao humana: ${arquivo}`, () => {
   const root = path.join(__dirname, "..");
-  const relatorio = JSON.parse(fs.readFileSync(path.join(root, "dados/editorial/correcoes-fontes-primarias-2026-10.json"), "utf8"));
   const cadastro = JSON.parse(fs.readFileSync(path.join(root, "titulos.json"), "utf8"));
   const manifesto = JSON.parse(fs.readFileSync(path.join(root, "dados/indexacao.json"), "utf8"));
+  const relatorio = JSON.parse(fs.readFileSync(path.join(root, "dados/editorial", arquivo), "utf8"));
   assert.equal(relatorio.revisaoHumana, false);
-  assert.equal(relatorio.artigos.length, 5);
+  assert.equal(relatorio.artigos.length, quantidade);
   for (const artigo of relatorio.artigos) {
     const $ = cheerio.load(fs.readFileSync(path.join(root, artigo.url), "utf8"));
     const registro = cadastro.find(r => r.url === artigo.url);
@@ -123,6 +150,11 @@ test("correcoes com fontes primarias preservam rastreabilidade e nao criam aprov
     assert.equal(decisao.conteudoHash, artigo.depois.corpoHash);
     assert.equal(decisao.acao, "atualizar");
     assert.equal(registro.correcaoEditorial.revisaoHumana, false);
+    if (artigo.depois.fonte) {
+      assert.equal(registro.urlFonte, artigo.depois.fonte.url);
+      assert.equal(registro.dataFonte, artigo.depois.fonte.data);
+      assert.ok($(".article-validation a").toArray().some(a => $(a).attr("href") === registro.urlFonte));
+    }
     if (artigo.antes.qualidadeEditorialAnterior) assert.equal(registro.qualidadeEditorial, undefined);
     assert.equal($(".article-validation").attr("data-editorial-status"), "acervo-sem-revisao-registrada");
     assert.equal($(artigo.contribuicaoProposta).length, 1);
@@ -137,7 +169,7 @@ test("correcoes com fontes primarias preservam rastreabilidade e nao criam aprov
       assert.ok(fs.existsSync(path.join(root, $(a).attr("href").slice(1))));
     }
   }
-});
+}));
 
 test("home e pagina dois possuem finalidade e H1 diferentes, sem repetir biografia", () => workspace(root => {
   process.chdir(root);
@@ -186,6 +218,7 @@ test("publicacao revisada preserva aprovacao, descricao e data em dois backfills
   const executar = () => execFileSync(process.execPath, [path.join(__dirname, "seo-backfill-articles.js")], { cwd: root, stdio: "pipe" });
   executar();
   const primeiro = fs.readFileSync(url, "utf8");
+  assert.ok(primeiro.includes(estilosCodigoInline));
   executar();
   assert.equal(fs.readFileSync(url, "utf8"), primeiro);
   const $ = cheerio.load(primeiro);
