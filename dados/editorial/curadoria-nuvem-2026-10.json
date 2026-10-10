@@ -1,0 +1,409 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T13:15:52.509Z",
+  "base": "892509b777ce0a14f430027ff359ab4ddd7a87a7",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": false,
+  "escopo": "Dez correcoes documentais de nuvem e Smart TV e uma consolidacao de guia de hospedagem equivalente. Sem novo noindex de artigo mantido, benchmark, ensaio de infraestrutura ou chamada paga. Nao aprova rascunhos.",
+  "limitacaoFontes": "Corpos locais lidos integralmente e afirmacoes corrigidas com fontes primarias. Fontes jornalisticas anteriores permanecem no historico; nao se afirma nova verificacao integral dessas reportagens.",
+  "artigos": [
+    {
+      "url": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A dependência excessiva das gigantes da tecnologia: é hora de repensar nossa arquitetura de nuvem?",
+        "data": "2025-10-21T19:17:05.108Z",
+        "corpoHash": "c9acf40154ecd54b667f85b35bc2180738353ab4f32f4016f02bc0c6b0208388",
+        "fonte": {
+          "url": "https://www.bbc.com/news/articles/c0jdgp6n45po?at_medium=RSS&at_campaign=rss",
+          "titulo": "AWS outage: Are we relying too much on US big tech?",
+          "data": "2025-10-21T19:14:08.000Z"
+        }
+      },
+      "motivo": "Substituir atualidade vaga e diversificacao universal por incidente datado e criterios verificaveis de resiliencia.",
+      "evidencia": "Corpo lido integralmente: atribuia economia e necessidade futura de multicloud sem estudo da aplicacao. Relatorio primario permite contextualizar a dependencia.",
+      "aliases": [
+        "cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html"
+      ],
+      "depois": {
+        "titulo": "Falha da AWS em 2025: dependências antes de adotar multicloud",
+        "descricao": "O incidente do DynamoDB em 2025 e um roteiro para avaliar dependências, dados e recuperação antes de contratar uma segunda nuvem.",
+        "corpoHash": "fd6c31e584e86b293bb46ea87fc056cb5c145f8f69679ea87e9dee7ea00b54b2"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-incidente",
+          "fonte": "https://aws.amazon.com/message/101925/",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "6a7cb7cdb0da0512d29c2b4a9d08f6b4d58201aef0c6b2b01a13233908576085"
+        }
+      ],
+      "pergunta": "Quais dependencias precisam ser examinadas antes de escolher multicloud?",
+      "sobreposicao": "Sem outra URL ativa com a mesma fonte original normalizada. Ha textos de incidentes AWS relacionados ainda sujeitos a comparacao contextual; nao foram consolidados. Este roteiro foca o mapa de dependencias e a decisao de arquitetura.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/a-fragilidade-das-plataformas-licoes-do-incidente-da-railway-e-google-cloud.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A fragilidade das plataformas: lições do incidente da Railway e Google Cloud",
+        "data": "2026-05-30T11:26:12.550Z",
+        "corpoHash": "f67a187a9ae6ca54904ae899c7fe44fc6e73ff0cfd7e615b3005b985246c6811",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/05/railway-gcp-account-outage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Google Cloud Suspends Railway's Production Account, Causing Eight-Hour Platform-Wide Outage",
+          "data": "2026-05-30T10:03:00.000Z"
+        }
+      },
+      "motivo": "Distinguir alcance de servico, recuperacao e incerteza sobre a causa da suspensao.",
+      "evidencia": "Texto local tratava a causa como encerrada. A fonte primaria consultada contem descricoes divergentes; planos futuros nao provam implantacao.",
+      "aliases": [
+        "cloud/a-fragilidade-das-plataformas-licoes-do-incidente-da-railway-e-google-cloud.html"
+      ],
+      "depois": {
+        "titulo": "Railway em maio de 2026: cargas ativas, rotas indisponíveis",
+        "descricao": "O que o relatório da Railway permite concluir sobre o plano de controle e como planejar um ensaio de expiração de rotas.",
+        "corpoHash": "a32ee19dffdeb7eefac48c17cc35cd3064bb3b49a63587aecc0c54261a117b45"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-railway",
+          "fonte": "https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "4cbcaf5720149d09b4350418434fbd02c6e2743830800fa52fa879db09616ea2"
+        }
+      ],
+      "pergunta": "Uma carga em outro provedor continua acessivel se o plano de controle falhar?",
+      "sobreposicao": "Sem outro registro ativo com a mesma fonte original normalizada. Mantido separado do incidente AWS por examinar expiracao de rotas e conta, nao DNS regional.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/a-nuvem-que-vem-como-escolher-o-servico-de-hospedagem-ideal-pra-2025.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A nuvem que vem: como escolher o serviço de hospedagem ideal pra 2025",
+        "data": "2025-12-11T11:21:15.061Z",
+        "corpoHash": "6a1b48d445aee5250ca5e288bd57a83722c689354e8074b53e1518357e15b834",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/best-cloud-hosting/",
+          "titulo": "The best cloud hosting services for 2025: Expert tested",
+          "data": "2025-12-11T11:00:48.000Z"
+        }
+      },
+      "motivo": "Remover vivencia nao confirmada e titulo temporal vencido; tornar a escolha de hospedagem verificavel.",
+      "evidencia": "Corpo declarava mais de 19 anos como arquiteto e trabalho com varios provedores sem confirmacao. Nao havia benchmark ou ranking sustentado.",
+      "aliases": [
+        "cloud/a-nuvem-que-vem-como-escolher-o-servico-de-hospedagem-ideal-pra-2025.html"
+      ],
+      "depois": {
+        "titulo": "Hospedagem em nuvem: compare requisitos, operação e custo total",
+        "descricao": "Uma ficha para comparar hospedagem por carga, responsabilidade operacional, custo, teste e saída, sem ranking ou experiência pessoal inventada.",
+        "corpoHash": "eb9dd96be65598e8e473d4080a45469aaf3efc490c8a3da0515b0fe831fa2ce1"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-responsabilidade",
+          "fonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "5397875df2d689b67df2835c09f9dee38ae7407abe2dd91f7efb5debe1446db3"
+        },
+        {
+          "seletor": ".fato-estimativa",
+          "fonte": "https://aws.amazon.com/aws-cost-management/aws-pricing-calculator/",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "fee7a5cbcf505249c193a7bebc83e1086307df564a4599e14f22e6c46866753c"
+        }
+      ],
+      "pergunta": "Que informacoes comparar antes de contratar hospedagem para uma aplicacao?",
+      "sobreposicao": "Corpos de 2025 e 2026 lidos integralmente: ambos respondem como escolher hospedagem, com mesma fonte original e listas genericas. Consolidar o guia de 2026 neste destino revisado, sem supor ausencia de trafego. Criterios de carga, suporte, seguranca e custo sao preservados e delimitados.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/a-revolucao-da-nuvem-soberana-aws-e-a-autonomia-digital-da-europa.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A revolução da nuvem soberana: AWS e a autonomia digital da Europa",
+        "data": "2025-06-12T10:21:10.151Z",
+        "corpoHash": "3ad6b3d0950391e454b4003a8f3e0c5a73ef2a58219567492c659dff3dba56b1",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2025/06/aws-eu-sovereign-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "AWS Unveils Independent European Governance and Operations for European Sovereign Cloud",
+          "data": "2025-06-12T10:00:00.000Z"
+        }
+      },
+      "motivo": "Atualizar o anuncio e separar caracteristicas documentadas de conclusoes juridicas nao demonstradas.",
+      "evidencia": "Texto previa abertura ate 2025 e simplificava governanca e beneficios. Fonte atual permite datar a disponibilidade e especificar separacao tecnica.",
+      "aliases": [
+        "cloud/a-revolucao-da-nuvem-soberana-aws-e-a-autonomia-digital-da-europa.html"
+      ],
+      "depois": {
+        "titulo": "AWS European Sovereign Cloud: integração e governança",
+        "descricao": "O lançamento de janeiro de 2026 e um roteiro para conferir identidades, fluxos e requisitos, sem presumir conformidade jurídica automática.",
+        "corpoHash": "26d64904ef7285d4b05f5c704e5da05677847238c9ef17299c799208f51e807a"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-lancamento",
+          "fonte": "https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "87affd43c540a20a5f79490a253fc440c01cdb78a5b6b9bf9e8ec08b23805827"
+        }
+      ],
+      "pergunta": "O que verificar na integracao antes de migrar para a AWS European Sovereign Cloud?",
+      "sobreposicao": "Sem outro registro ativo com a mesma fonte original normalizada. Outro texto sobre soberania foi localizado e continua pendente; nao se assume equivalencia nem se redireciona sem revisao completa.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/a-revolucao-dos-plugins-automatizando-o-desdobramento-na-nuvem-com-aws.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A Revolução dos Plugins: Automatizando o Desdobramento na Nuvem com AWS",
+        "data": "2026-03-03T10:42:46.684Z",
+        "corpoHash": "3a9711bca0d567390dc732303c35e1e13db4e7e3cc39357b82b8e1d0d032043c",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/03/aws-launches-agent-plugins/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "AWS Launches Agent Plugins to Automate Cloud Deployment",
+          "data": "2026-03-03T10:13:00.000Z"
+        }
+      },
+      "motivo": "Separar exemplo promocional de resultado medido e explicitar criterios de autorizacao.",
+      "evidencia": "Corpo extrapolava a duracao de uma demonstracao para economia geral e atribuía garantia a varreduras. Sem execucao independente.",
+      "aliases": [
+        "cloud/a-revolucao-dos-plugins-automatizando-o-desdobramento-na-nuvem-com-aws.html"
+      ],
+      "depois": {
+        "titulo": "Agent Plugins da AWS: o que revisar antes de autorizar um deploy",
+        "descricao": "Revise destino, infraestrutura, credenciais, custos, dados e retorno antes de confirmar uma implantação preparada por agente.",
+        "corpoHash": "dc6688eaf212f292c7c5ce049cbb0224f5f80744c19291cec216a50721a89412"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-plugin",
+          "fonte": "https://aws.amazon.com/blogs/developer/introducing-agent-plugins-for-aws/",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "8afcf0d77b8c34bccb086b0d2dd7b52faa824d3a038dbf9d5cd95c55431977d9"
+        }
+      ],
+      "pergunta": "Que evidencias precisam acompanhar um plano de deploy produzido por agente?",
+      "sobreposicao": "Sem outro registro ativo com a mesma fonte original normalizada. Foco em revisao de mudanca de infraestrutura, distinto de consulta de dados por MCP.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/como-a-cloudflare-transformou-o-quicksilver-licoes-de-arquitetura-em-cache.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Como a Cloudflare Transformou o Quicksilver: Lições de Arquitetura em Cache",
+        "data": "2025-08-09T15:19:54.408Z",
+        "corpoHash": "ffd473d85fe98c743a908a78d9e62c36da653c28c829faf95ed1f4ffdd073038",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2025/08/cloudflare-key-value-store/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "How Cloudflare Migrated Quicksilver to Multi-Level Caching While Serving Billions of Requests",
+          "data": "2025-08-09T14:30:00.000Z"
+        }
+      },
+      "motivo": "Trocar recomendacao universal de camadas por contrato de leitura e limites de generalizacao.",
+      "evidencia": "Corpo generalizava melhora drastica ao adicionar cache sem requisitos de consistencia nem ensaio. Fonte primaria detalha fallback de versoes.",
+      "aliases": [
+        "cloud/como-a-cloudflare-transformou-o-quicksilver-licoes-de-arquitetura-em-cache.html"
+      ],
+      "depois": {
+        "titulo": "Quicksilver v2: contrato de leitura antes de adicionar cache",
+        "descricao": "O desenho relatado pela Cloudflare e perguntas para avaliar versões, faltas de cache e recuperação em outra aplicação.",
+        "corpoHash": "3c4b8ea7d5956aa06b06a35e90745595768346a1c7a30118e555218506aaf56d"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-cache",
+          "fonte": "https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-2-of-2/",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "a26de4df1f7445ecd81508bd287a7412d2f6c7701be3e4a58b3f398acffb06eb"
+        }
+      ],
+      "pergunta": "Como verificar se uma camada de cache preserva o contrato da aplicacao?",
+      "sobreposicao": "Sem outro registro ativo com a mesma fonte original normalizada. Mantido como estudo documental com roteiro, sem duplicar codigo ou alegar reproduzir o Quicksilver.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/desbravando-a-escalabilidade-um-milhao-de-sandboxes-em-um-so-servidor.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Desbravando a Escalabilidade: Um Milhão de Sandboxes em um Só Servidor",
+        "data": "2026-03-23T10:07:36.562Z",
+        "corpoHash": "fd141b218549ec8f4fcce4f448fbb5dbbaa1facc1efc8417a669af1329c5da58",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/03/qcon-million-sandboxes-server/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "QCon London 2026: Fixing the AI Infra Scale Problem by Stuffing 1M Sandboxes in a Single Server",
+          "data": "2026-03-23T10:02:00.000Z"
+        }
+      },
+      "motivo": "Distinguir densidade em espera de capacidade concorrente e resultado de demonstracao.",
+      "evidencia": "Texto anterior omitia o limite de concorrencia ao tirar conclusoes gerais de desempenho e isolamento. Transcricao primaria foi consultada, sem auditoria de video.",
+      "aliases": [
+        "cloud/desbravando-a-escalabilidade-um-milhao-de-sandboxes-em-um-so-servidor.html"
+      ],
+      "depois": {
+        "titulo": "Um milhão de sandboxes em espera não é um milhão de tarefas simultâneas",
+        "descricao": "Como separar ambientes mantidos, tarefas concorrentes e fila ao interpretar a demonstração de microVMs apresentada por Felipe Huici.",
+        "corpoHash": "8a0ba90dbafc5633633fa5f7124421219507212613714140f4476dc899758bca"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-sandboxes",
+          "fonte": "https://www.infoq.com/presentations/unikraft-microvm-sandboxes-cloud-scaling/",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "52fbae8c67f0d6bcbf9a2ef12a5202d7229e2ebc47988d52b1fa4a434cda1680"
+        }
+      ],
+      "pergunta": "Qual capacidade a demonstracao sustenta e o que falta medir para uma carga real?",
+      "sobreposicao": "Sem outro registro ativo com a mesma fonte original normalizada. Estimativa de concorrencia e intencao diferente de habilitacao de virtualizacao no EC2.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/gerenciando-protocolos-de-contexto-o-novo-futuro-da-integracao-em-nuvem.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Gerenciando Protocolos de Contexto: O Novo Futuro da Integração em Nuvem",
+        "data": "2025-12-18T10:25:26.049Z",
+        "corpoHash": "0f90e9c6fcc822bf7628a16c1a88dcf126b27392ce4f4a6f34f88b5a079c9a80",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2025/12/google-cloud-managed-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Google Cloud Launches Managed MCP Support",
+          "data": "2025-12-18T10:15:00.000Z"
+        }
+      },
+      "motivo": "Especificar endpoint e autorizacao, retirando comparacao de latencia sem evidencia.",
+      "evidencia": "Texto confundia descoberta, transformacao de APIs e acesso unificado, com opinioes de desenvolvedores nao identificados. Revisao usa anuncio e documentacao atual.",
+      "aliases": [
+        "cloud/gerenciando-protocolos-de-contexto-o-novo-futuro-da-integracao-em-nuvem.html"
+      ],
+      "depois": {
+        "titulo": "MCP gerenciado no Google Cloud: endpoints, permissões e limites",
+        "descricao": "Um contrato de acesso para conectar agentes a dados, com BigQuery como exemplo e distinção entre ferramentas de leitura e escrita.",
+        "corpoHash": "339b5f9963cd228c1317ee7b769b95609c58b85549df6391b51f9b5803ae9733"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-anuncio",
+          "fonte": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "b2178a105f9489ca9c23110e47cd585300eea62fe1dbafe50aeb5302a395bdcf"
+        },
+        {
+          "seletor": ".fato-bigquery",
+          "fonte": "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "cf674512ee96dccb72c11913ad5b74a582527c2ee99ac6c73bbdbd1acdcb95a8"
+        }
+      ],
+      "pergunta": "Como delimitar uma primeira tarefa de agente com MCP gerenciado?",
+      "sobreposicao": "Sem outro registro ativo com a mesma fonte original normalizada. BigQuery serve de exemplo verificavel de acesso, nao de comparativo de plataformas.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/nova-era-na-nuvem-a-revolucao-da-virtualizacao-aninhada-no-aws-ec2.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Nova Era na Nuvem: A Revolução da Virtualização Aninhada no AWS EC2",
+        "data": "2026-03-07T12:52:19.346Z",
+        "corpoHash": "b1b2e7bf8ee8060805cf62cf98a6bf64e56f463efc430e202a89bacaeebbd595",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/03/aws-ec2-nested-virtualization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "AWS Introduces Nested Virtualization on EC2 Instances",
+          "data": "2026-03-07T12:34:00.000Z"
+        }
+      },
+      "motivo": "Corrigir requisito de hospedagem e orientacoes vencidas antes de provisionamento.",
+      "evidencia": "Exemplo adicionava Tenancy=host; lista era exclusiva e ativacao limitada ao lancamento. Guia atual nao sustenta essas restricoes gerais.",
+      "aliases": [
+        "cloud/nova-era-na-nuvem-a-revolucao-da-virtualizacao-aninhada-no-aws-ec2.html"
+      ],
+      "depois": {
+        "titulo": "Virtualização aninhada no EC2: requisitos antes de criar instâncias",
+        "descricao": "Compatibilidade, limitações do Windows e planejamento de operação antes de habilitar virtualização aninhada em uma instância EC2.",
+        "corpoHash": "b3dfed89c68f8eb7b469c842683b7676eaf4667bf04a9ee71e2947f3733774b6"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-ec2",
+          "fonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nested-virtualization.html",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "4884764d9eec6d0a341823a4b9c2a42b660736fe6dba25a49ee653411b9143a1"
+        }
+      ],
+      "pergunta": "O que conferir antes de habilitar virtualizacao aninhada no EC2?",
+      "sobreposicao": "Sem outro registro ativo com a mesma fonte original normalizada. Requisitos de configuracao distintos de densidade de sandboxes, sem consolidacao.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "resolvePendenciaDe": "dados/editorial/curadoria-protecao-digital-2026-10.json",
+      "url": "artigos/tecnologia/a-revolucao-das-vpns-em-smart-tvs-conectando-se-ao-mundo-do-streaming-de-forma-segura.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A Revolução das VPNs em Smart TVs: Conectando-se ao Mundo do Streaming de Forma Segura",
+        "data": "2025-08-22T10:21:26.910Z",
+        "corpoHash": "a6951a575b0c5ab9a47a14c31659adc4512e0483f3422cc4b8f792722921b16d",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/best-smart-tv-vpns/",
+          "titulo": "The best smart TV VPNs of 2025: Expert tested and reviewed",
+          "data": "2025-08-22T10:15:18.000Z"
+        }
+      },
+      "motivo": "Resolver promessa de desbloqueio e recomendacao pessoal nao confirmada.",
+      "evidencia": "Corpo prometia catalogos, privacidade e bloqueio de anuncios, com preferencia pessoal por marca sem teste. Netflix documenta limitacoes especificas.",
+      "aliases": [
+        "tecnologia/a-revolucao-das-vpns-em-smart-tvs-conectando-se-ao-mundo-do-streaming-de-forma-segura.html"
+      ],
+      "depois": {
+        "titulo": "VPN na Smart TV: compatibilidade não garante acesso ao catálogo",
+        "descricao": "Confira aparelho, rede e regras do streaming antes de contratar uma VPN. A Netflix documenta restrições, não desbloqueio geral.",
+        "corpoHash": "441e9afe814abf62c61b7c3d11a17d1cb4e2242e34641c6903d30487c6cc92e2"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-netflix",
+          "fonte": "https://help.netflix.com/en/node/114701",
+          "consultadoEm": "2026-10-10T13:15:52.509Z",
+          "textoHash": "4fab34ce36f9f833e962738e54633c08a7421f032f4e3e7fd6d30e605b0be835"
+        }
+      ],
+      "pergunta": "Como conferir se uma VPN atende ao uso pretendido na Smart TV?",
+      "sobreposicao": "Sem outro registro ativo com a mesma fonte original normalizada. Intencao distinta de VPN em viagem e comparacao de marcas, como registrado no lote de protecao digital.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/cloud/a-revolucao-do-cloud-hosting-como-escolher-o-melhor-para-seu-negocio-em-2026.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "A Revolução do Cloud Hosting: Como Escolher o Melhor Para Seu Negócio em 2026",
+        "data": "2026-01-21T10:31:39.849Z",
+        "corpoHash": "5ae2e8ad51bbce2bf72715f8caddac0d2fd3360325b10a02f560f191886cbfb4",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/best-cloud-hosting/",
+          "titulo": "The best cloud hosting services for 2026: Expert tested and reviewed",
+          "data": "2026-01-21T10:01:11.000Z"
+        }
+      },
+      "motivo": "Consolidar dois guias genericos de escolha de hospedagem com intencao equivalente.",
+      "evidencia": "Leitura integral de ambos: guia de 2026 repete escalabilidade, suporte, seguranca, custo e teste, sem benchmark; destino revisado cobre esses criterios com limites. Mesma fonte foi evidencia auxiliar, nao criterio automatico.",
+      "alternativas": "Atualizar dois textos manteria a mesma pergunta sem evidencia comparativa distinta. Consolidacao preserva o acesso e snapshot integral; nao se presume ausencia de trafego nem penalidade.",
+      "aliases": [
+        "cloud/a-revolucao-do-cloud-hosting-como-escolher-o-melhor-para-seu-negocio-em-2026.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/1f533f2690375f85861537e37c6693f85e0d3c8fee55733f5d4788673ebbc71f.json",
+      "destinoEquivalente": "artigos/cloud/a-nuvem-que-vem-como-escolher-o-servico-de-hospedagem-ideal-pra-2025.html"
+    }
+  ]
+}

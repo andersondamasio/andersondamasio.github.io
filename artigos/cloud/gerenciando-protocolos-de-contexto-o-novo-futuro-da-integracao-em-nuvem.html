@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gerenciando Protocolos de Contexto: O Novo Futuro da Integração em Nuvem</title>
-<meta name="description" content="Recentemente, o Google Cloud anunciou um avanço empolgante na sua infraestrutura: servidores gerenciados para o Model Context Protocol (MCP). Para quem...">
+<title>MCP gerenciado no Google Cloud: endpoints, permissões e limites</title>
+<meta name="description" content="Um contrato de acesso para conectar agentes a dados, com BigQuery como exemplo e distinção entre ferramentas de leitura e escrita.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/cloud/gerenciando-protocolos-de-contexto-o-novo-futuro-da-integracao-em-nuvem.html">
@@ -14,36 +14,36 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Gerenciando Protocolos de Contexto: O Novo Futuro da Integração em Nuvem">
-<meta property="og:description" content="Recentemente, o Google Cloud anunciou um avanço empolgante na sua infraestrutura: servidores gerenciados para o Model Context Protocol (MCP). Para quem...">
+<meta property="og:title" content="MCP gerenciado no Google Cloud: endpoints, permissões e limites">
+<meta property="og:description" content="Um contrato de acesso para conectar agentes a dados, com BigQuery como exemplo e distinção entre ferramentas de leitura e escrita.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/cloud/gerenciando-protocolos-de-contexto-o-novo-futuro-da-integracao-em-nuvem.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2025-12-18T10:25:26.049Z">
-<meta property="article:modified_time" content="2025-12-18T10:25:26.049Z">
+<meta property="article:modified_time" content="2026-10-10T13:15:52.509Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Gerenciando Protocolos de Contexto: O Novo Futuro da Integração em Nuvem">
-<meta name="twitter:description" content="Recentemente, o Google Cloud anunciou um avanço empolgante na sua infraestrutura: servidores gerenciados para o Model Context Protocol (MCP). Para quem...">
+<meta name="twitter:title" content="MCP gerenciado no Google Cloud: endpoints, permissões e limites">
+<meta name="twitter:description" content="Um contrato de acesso para conectar agentes a dados, com BigQuery como exemplo e distinção entre ferramentas de leitura e escrita.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Gerenciando Protocolos de Contexto: O Novo Futuro da Integração em Nuvem",
-  "description": "Recentemente, o Google Cloud anunciou um avanço empolgante na sua infraestrutura: servidores gerenciados para o Model Context Protocol (MCP). Para quem...",
+  "headline": "MCP gerenciado no Google Cloud: endpoints, permissões e limites",
+  "description": "Um contrato de acesso para conectar agentes a dados, com BigQuery como exemplo e distinção entre ferramentas de leitura e escrita.",
   "url": "https://www.andersondamasio.com.br/artigos/cloud/gerenciando-protocolos-de-contexto-o-novo-futuro-da-integracao-em-nuvem.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/cloud/gerenciando-protocolos-de-contexto-o-novo-futuro-da-integracao-em-nuvem.html"
   },
   "datePublished": "2025-12-18T10:25:26.049Z",
-  "dateModified": "2025-12-18T10:25:26.049Z",
+  "dateModified": "2026-10-10T13:15:52.509Z",
   "articleSection": "Cloud",
   "inLanguage": "pt-BR",
-  "wordCount": 458,
+  "wordCount": 382,
   "about": {
     "@type": "Thing",
     "name": "Cloud"
@@ -52,10 +52,10 @@
   "copyrightYear": 2025,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "Google Cloud Launches Managed MCP Support",
-    "url": "https://www.infoq.com/news/2025/12/google-cloud-managed-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "name": "Use the BigQuery MCP server",
+    "url": "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp"
   },
-  "citation": "https://www.infoq.com/news/2025/12/google-cloud-managed-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "citation": "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -114,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Gerenciando Protocolos de Contexto: O Novo Futuro da Integração em Nuvem",
+      "name": "MCP gerenciado no Google Cloud: endpoints, permissões e limites",
       "item": "https://www.andersondamasio.com.br/artigos/cloud/gerenciando-protocolos-de-contexto-o-novo-futuro-da-integracao-em-nuvem.html"
     }
   ]
@@ -189,6 +189,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 .article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
 .article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
 .article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-body code { overflow-wrap: anywhere; } .article-body pre code { overflow-wrap: normal; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -215,39 +216,40 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>Gerenciando Protocolos de Contexto: O Novo Futuro da Integração em Nuvem</h1>
+<h1>MCP gerenciado no Google Cloud: endpoints, permissões e limites</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 
 <p class="article-meta">Publicado em: 18/12/2025 07:25</p>
 
-<div class="article-body"><p>Recentemente, o Google Cloud anunciou um avanço empolgante na sua infraestrutura: servidores gerenciados para o <strong>Model Context Protocol (MCP)</strong>. Para quem trabalha com integrações de sistemas e desenvolvimento de software, essa é uma notícia que merece atenção. A proposta é criar um ponto de acesço unificado, facilitando a vida dos desenvolvedores que utilizam serviços da Google. Mas será que essa novidade realmente resolve os desafios que já enfrentamos?</p>
-<h2>Introdução</h2>
-<p>O lançamento dos servidores MCP gerenciados pelo Google Cloud promete ser um divisor de águas para muitos desenvolvedores. A ideia é que, ao apontar seus agentes de IA ou clientes MCP para um endpoint consiteente, a integração entre serviços como <strong>Google Maps</strong> e <strong>BigQuery</strong> se torne muito mais simples. No entanto, surgem questionamentos sobre a real eficácia desse modelo em comparação com a execução local de códigos MCP. O que isso significa para nós, arquitetos de software?</p>
-<h2>Entendendo o MCP e sua Implementação</h2>
-<p>O <strong>MCP</strong>, muitas vezes chamado de "USB-C para IA", tem como objetivo criar um protocolo padronizado que possa ser utilizado. por diversos serviços. A ideia é que, ao utilizar servidores MCP gerenciados, os desenvolvedores consigam integrar suas soluções de forma mais eficiente, sem a necessidade de reinventar a roda a cada nova implementação. O Google está iniciando a implementação com serviços populares, como o <strong>Google Compute Engine</strong> e o <strong>Google Kubernetes Engine</strong>.</p>
-<h3>Desafios e Oportunidades</h3>
-<p>Um dos maiores desafios é a latência. Muitos desenvolvedores argumentam que executar códigos MCP localmente pode ser mais eficiente, especialmente quando se trata de acesso ao edge computing. A questão que fica é: será que a proposta do Google realmente traz benefícios adicionais, ou estamos apenas convertendo um protocolo em uma API remota semelhante às já existentes?</p>
-<h2>Dicas para Aproveitar o MCP</h2>
-<p>Se você está pensando em utilizar os novos servidores MCP, aqui vão algumas dicas que podem ajudar a maximizar sua experiência:</p>
-<ul>
-    <li><strong>Explore a API Cloud Registry:</strong> Utilize essa ferramenta para encontrar e gerenciar recursos MCP que atendam suas necessidades específicas.</li>
-    <li><strong>Integração com Apigee API Hub:</strong> Transforme suas APIs empresariais em servidores MCP, facilitando a governança e segurança das suas aplicações.</li>
-    <li><strong>Fique atento às atualizações:</strong> O Google planeja expandir o suporte ao MCP para outros serviços, então fique de olho nas novidades!</li>
-</ul>
-<h2>Conclusão</h2>
-<p>A chegada dos servidores MCP gerenciados do Google Cloud é, sem dúvida, um passo interessante em direção a uma integração mais fluida entre serviços. No entanto, é fundamental que nós, desenvolvedores e arquitetos de software, façamos uma análise crítica sobre a real necessidade dessa abordagem em nossos projetos. O que realmente importa é encontrar soluções que atendam às demandas dos usuários de forma rápida e eficiente. Então, vale a pena experimentar, mas não se esqueça de considerar as alternativas que podem ser mais adequadas às suas necessidades.</p>
-<p>
-<p></p></div>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T13:15:52.509Z">10/10/2026</time>: atribuições, limites e orientações corrigidos com fontes; a data da publicação original foi preservada.</p>
+<p>Conectar um agente a um serviço gerenciado não define, por si só, o que ele pode consultar ou alterar. Para uma integração útil, a escolha do endpoint precisa vir acompanhada de um contrato de acesso e de uma tarefa bem delimitada.</p>
+<h2>O anúncio e um endpoint concreto</h2>
+<p class="fato-anuncio">O <a href="https://cloud.google.com/blog/products/ai-machine-learning/announcing-official-mcp-support-for-google-services">anúncio do Google de 10 de dezembro de 2025</a> apresentou servidores MCP remotos gerenciados e expansão gradual entre serviços. Citou Google Maps, BigQuery, Compute Engine e GKE, além de descoberta pelo Cloud API Registry. Não deve ser lido como garantia de que um único endpoint oferece acesso irrestrito a todos os produtos.</p>
+<p class="fato-bigquery">A <a href="https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp">documentação do BigQuery MCP</a> especifica <code>https://bigquery.googleapis.com/mcp</code>, autenticação e controles de acesso. Ela distingue a ferramenta <code>execute_sql_readonly</code>, de leitura, de <code>execute_sql</code>, que também pode alterar dados, e documenta a restrição de ferramentas de escrita por política. A escolha da ferramenta faz parte da configuração, não apenas da redação do pedido.</p>
+<div class="contribuicao-editorial">
+<h2>Contrato proposto para uma primeira tarefa</h2>
+<p>Antes de conectar uma base real, documente uma tarefa pequena, como obter uma contagem agregada em dados de teste:</p>
+<ol>
+<li><strong>Escopo:</strong> projeto, conjunto de dados e informação que pode sair na resposta. Defina também o que não pode ser enviado ao modelo ou aparecer em logs.</li>
+<li><strong>Identidade:</strong> quem realizará a chamada e quais permissões efetivas terá. Não use a conta administrativa como atalho para eliminar um erro de acesso.</li>
+<li><strong>Ferramentas:</strong> permita apenas as operações necessárias. Para uma tarefa de leitura, não dependa exclusivamente de uma instrução em linguagem natural proibindo escrita.</li>
+<li><strong>Limites:</strong> estabeleça orçamento, duração, volume de resultados e condição de interrupção antes de executar consultas.</li>
+<li><strong>Evidência:</strong> compare a resposta com uma consulta de referência autorizada e registre os acessos negados esperados. Uma resposta plausível não demonstra que a consulta correta foi usada.</li>
+</ol>
+<p>Se o cliente não permite impor os controles necessários, mantenha a integração fora do ambiente real até resolver essa limitação. Descobrir uma ferramenta e estar autorizado a utilizá-la são etapas diferentes.</p>
+</div>
+<p class="limites-editoriais">Revisão documental sem conexão ao Google Cloud, consultas pagas ou teste de agente. Não foram medidas latência, precisão ou proteção contra injeção de instruções. Compatibilidade e permissões devem ser conferidas para o cliente e serviço escolhidos.</p>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/news/2025/12/google-cloud-managed-mcp/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener noreferrer">Google Cloud Launches Managed MCP Support</a> Data da fonte registrada: 18/12/2025.</p>
+<p><strong>Fonte principal:</strong> <a href="https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp" rel="noopener noreferrer">Use the BigQuery MCP server</a></p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/news/2025/12/google-cloud-managed-mcp/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Google Cloud Launches Managed MCP Support</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp" target="_blank" rel="noopener noreferrer">Use the BigQuery MCP server</a>.</p>
 </section>
 
 <section class="related-articles" aria-labelledby="related-articles-title">

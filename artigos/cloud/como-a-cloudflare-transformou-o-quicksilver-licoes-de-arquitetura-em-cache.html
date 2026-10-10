@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Como a Cloudflare Transformou o Quicksilver: Lições de Arquitetura em Cache</title>
-<meta name="description" content="Recentemente, me deparei com uma notícia fascinante sobre a Cloudflare e sua jornada para migrar o Quicksilver, seu sistema de armazanamento chave-valor...">
+<title>Quicksilver v2: contrato de leitura antes de adicionar cache</title>
+<meta name="description" content="O desenho relatado pela Cloudflare e perguntas para avaliar versões, faltas de cache e recuperação em outra aplicação.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/cloud/como-a-cloudflare-transformou-o-quicksilver-licoes-de-arquitetura-em-cache.html">
@@ -14,36 +14,36 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Como a Cloudflare Transformou o Quicksilver: Lições de Arquitetura em Cache">
-<meta property="og:description" content="Recentemente, me deparei com uma notícia fascinante sobre a Cloudflare e sua jornada para migrar o Quicksilver, seu sistema de armazanamento chave-valor...">
+<meta property="og:title" content="Quicksilver v2: contrato de leitura antes de adicionar cache">
+<meta property="og:description" content="O desenho relatado pela Cloudflare e perguntas para avaliar versões, faltas de cache e recuperação em outra aplicação.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/cloud/como-a-cloudflare-transformou-o-quicksilver-licoes-de-arquitetura-em-cache.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2025-08-09T15:19:54.408Z">
-<meta property="article:modified_time" content="2025-08-09T15:19:54.408Z">
+<meta property="article:modified_time" content="2026-10-10T13:15:52.509Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Como a Cloudflare Transformou o Quicksilver: Lições de Arquitetura em Cache">
-<meta name="twitter:description" content="Recentemente, me deparei com uma notícia fascinante sobre a Cloudflare e sua jornada para migrar o Quicksilver, seu sistema de armazanamento chave-valor...">
+<meta name="twitter:title" content="Quicksilver v2: contrato de leitura antes de adicionar cache">
+<meta name="twitter:description" content="O desenho relatado pela Cloudflare e perguntas para avaliar versões, faltas de cache e recuperação em outra aplicação.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Como a Cloudflare Transformou o Quicksilver: Lições de Arquitetura em Cache",
-  "description": "Recentemente, me deparei com uma notícia fascinante sobre a Cloudflare e sua jornada para migrar o Quicksilver, seu sistema de armazanamento chave-valor...",
+  "headline": "Quicksilver v2: contrato de leitura antes de adicionar cache",
+  "description": "O desenho relatado pela Cloudflare e perguntas para avaliar versões, faltas de cache e recuperação em outra aplicação.",
   "url": "https://www.andersondamasio.com.br/artigos/cloud/como-a-cloudflare-transformou-o-quicksilver-licoes-de-arquitetura-em-cache.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/cloud/como-a-cloudflare-transformou-o-quicksilver-licoes-de-arquitetura-em-cache.html"
   },
   "datePublished": "2025-08-09T15:19:54.408Z",
-  "dateModified": "2025-08-09T15:19:54.408Z",
+  "dateModified": "2026-10-10T13:15:52.509Z",
   "articleSection": "Cloud",
   "inLanguage": "pt-BR",
-  "wordCount": 574,
+  "wordCount": 369,
   "about": {
     "@type": "Thing",
     "name": "Cloud"
@@ -52,10 +52,10 @@
   "copyrightYear": 2025,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "How Cloudflare Migrated Quicksilver to Multi-Level Caching While Serving Billions of Requests",
-    "url": "https://www.infoq.com/news/2025/08/cloudflare-key-value-store/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "name": "Quicksilver v2: evolution of a globally distributed key-value store (Part 2)",
+    "url": "https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-2-of-2/"
   },
-  "citation": "https://www.infoq.com/news/2025/08/cloudflare-key-value-store/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "citation": "https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-2-of-2/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -114,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Como a Cloudflare Transformou o Quicksilver: Lições de Arquitetura em Cache",
+      "name": "Quicksilver v2: contrato de leitura antes de adicionar cache",
       "item": "https://www.andersondamasio.com.br/artigos/cloud/como-a-cloudflare-transformou-o-quicksilver-licoes-de-arquitetura-em-cache.html"
     }
   ]
@@ -215,40 +215,39 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>Como a Cloudflare Transformou o Quicksilver: Lições de Arquitetura em Cache</h1>
+<h1>Quicksilver v2: contrato de leitura antes de adicionar cache</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 
 <p class="article-meta">Publicado em: 09/08/2025 12:19</p>
 
-<div class="article-body"><p>Recentemente, me deparei com uma notícia fascinante sobre a Cloudflare e sua jornada para migrar o Quicksilver, seu sistema de armazanamento chave-valor interno, para uma arquitetura de cache em múltiplos níveis. A transformação deles é um ótimo exemplo de como a evolução da arquitetura de software pode trazer melhorias significativas em eficiência e desempenho, algo que todos nós, arquiteto de software, devemos ter em mente.</p>
-<h2>Introdução</h2>
-<p>Todo mundo que trabalha com tecnologia sabe que, com o crescimento dos dados, vem a necessidade de soluções mais inteligentes e escaláveis. A Cloudflare, com sua infraestrutura global, enfrentou o desafiu de gerenciar um conjunto de dados que crescia a passos largos – e como muitos de nós, eles precisaram repensar sua abordagem. A transição do Quicksilver de um sistema que armazenava tudo em todos os servidores para um modelo de cache em múltiplos níveis é um verdadeiro case de sucesso.</p>
-<h2>Uma Jornada Técnica</h2>
-<p>No início, o Quicksilver V1 armazenava dados em todos os servidores, o que não só era ineficiente, mas também estava se tornando insustentável com o aumento de 50% no volume de dados em apenas um ano. Para resolver isso, a equipe implementou o Quicksilver V1.5, que introduziu papéis de proxy e servidor de réplica, reduzindo em 50% o uso de disco. Um primeiro passo importante, sem dúvida.</p>
-<p>A grande virada veio com o Quicksilver V2, onde a Cloudflare adotou uma estratégia de cache em múltiplos níveis. Esta nova arquitetura compreende caches locais por servidor, caches sharded que abrangem todo o data center e réplicas de conjuntos de dados completos em nós de armazenamento especializados. Essa mudança não só melhorou a eficiência do armazenamento, mas também manteve a consistência dos dados e latências de leitura muito baixas.</p>
-<h3>Desafios e Soluções</h3>
-<p>Um dos maiores desafios foi garantir a consistência sequencial dos dados durante a migração. A equipe usou controle de concorrência de múltiplas versões (MVCC) e abordagens de janela deslizante para lidar com a replicação assíncrona. Isso é crucial, especialmente quando consideramos que a Quicksilver é amplamente utilizada em diversos serviços da Cloudflare, e qualquer mudança poderia quebrar a funcionalidade existente.</p>
-<h2>Dicas Avançadas</h2>
-<p>Se você está pensando em implementar uma arquitetura de cache em sua aplicação, aqui vão algumas dicas que podem fazer toda a diferença:</p>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T13:15:52.509Z">10/10/2026</time>: atribuições, limites e orientações corrigidos com fontes; a data da publicação original foi preservada.</p>
+<p>Adicionar camadas de cache pode reduzir acessos ao armazenamento e também criar novos caminhos de falha. O caso Quicksilver é útil para formular perguntas sobre distribuição e consistência, sem assumir que os resultados da Cloudflare se repetirão em outra aplicação.</p>
+<h2>O desenho relatado pela equipe</h2>
+<p class="fato-cache">Na <a href="https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-2-of-2/">segunda parte do relato sobre Quicksilver v2, de julho de 2025</a>, a Cloudflare descreve consultas ao cache local, depois ao cache particionado do data center e, se necessário, aos nós com réplicas completas. O cache particionado não mantém todas as versões antigas: quando falta a versão exigida, a consulta pode recorrer aos nós de armazenamento. Portanto, o caminho de leitura importa tanto quanto a taxa de acertos.</p>
+<div class="contribuicao-editorial">
+<h2>Contrato de leitura antes de uma camada adicional</h2>
+<p>Para avaliar uma aplicação diferente, use este roteiro proposto. Ele não é uma reprodução do Quicksilver:</p>
 <ul>
-    <li><strong>Entenda seu padrão de acesso.:</strong> Antes de decidir sobre a arquitetura de cache, analise como os dados são acessados. Isso pode influenciar a forma como você estrutura seus caches.</li>
-    <li><strong>Utilize camadas de cache:</strong> Como vimos no caso do Quicksilver, uma abordagem em múltiplos níveis pode melhorar drasticamente a taxa de acertos no cache. Experimente combinar caches locais e globais.</li>
-    <li><strong>Monitore e ajuste:</strong> A implementação de um sistema de monitoramento eficaz é essencial. Isso permite ajustar as estratégias de cache conforme a aplicação evolui.</li>
+<li><strong>Identifique o dado:</strong> uma preferência visual e uma permissão revogada podem exigir comportamentos distintos. Especifique quais leituras aceitam atraso e quais precisam falhar quando a informação não puder ser confirmada.</li>
+<li><strong>Defina a unidade consistente:</strong> se uma operação lê duas chaves relacionadas, diga se elas precisam representar a mesma versão lógica. Uma resposta rápida com uma combinação inválida não atende ao contrato.</li>
+<li><strong>Desenhe cada falta de cache:</strong> registre a próxima origem, timeout, política de repetição e comportamento se ela também falhar. Evite deixar esse caminho implícito.</li>
+<li><strong>Prepare cenários adversos:</strong> chave ausente, atualização concorrente, invalidação atrasada, cache reiniciado e origem indisponível. Anote resultado esperado antes de executar qualquer ensaio.</li>
+<li><strong>Meça o custo da complexidade:</strong> além de latência e acertos, observe erros, memória, tráfego entre camadas e esforço para descobrir qual versão produziu uma resposta.</li>
 </ul>
-<h2>Conclusão</h2>
-<p>A transição da Cloudflare para uma arquitetura de cache em múltiplos níveis no Quicksilver não é apenas um exemplo de inovação técnica, mas uma lição sobre como a adaptação é vital no mundo da tecnologia. Em um ambiente onde a performance e a eficiência são cruciais, as decisões arquitetônicas podem fazer toda a diferença. Se você ainda não considerou uma estratégia de cache em múltiplos níveis, talvez esteja na hora de dar uma olhada mais de perto...</p>
-<p>Ao refletir sobre essa jornada, fica claro que a evolução da arquitetura de software é um processo contínuo. Devemos sempre estar prontos para aprender com casos de sucesso, como o da Cloudflare, e aplicar essas lições em nossos projetos.</p>
+<p>A decisão de acrescentar cache deve apontar o gargalo que pretende resolver. Se a hipótese é reduzir acesso remoto, compare também o comportamento durante um reinício, quando ainda não há dados locais. Não transforme um resultado médio favorável em evidência sobre todas as situações de falha.</p>
+</div>
+<p class="limites-editoriais">Não houve acesso ao sistema da Cloudflare, benchmark independente ou ensaio do roteiro. As escolhas de consistência precisam ser definidas para a aplicação avaliada; o relato de um fornecedor não autoriza generalizar suas métricas.</p>
 </div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/news/2025/08/cloudflare-key-value-store/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener noreferrer">How Cloudflare Migrated Quicksilver to Multi-Level Caching While Serving Billions of Requests</a> Data da fonte registrada: 09/08/2025.</p>
+<p><strong>Fonte principal:</strong> <a href="https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-2-of-2/" rel="noopener noreferrer">Quicksilver v2: evolution of a globally distributed key-value store (Part 2)</a></p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/news/2025/08/cloudflare-key-value-store/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">How Cloudflare Migrated Quicksilver to Multi-Level Caching While Serving Billions of Requests</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-2-of-2/" target="_blank" rel="noopener noreferrer">Quicksilver v2: evolution of a globally distributed key-value store (Part 2)</a>.</p>
 </section>
 
 <section class="related-articles" aria-labelledby="related-articles-title">

@@ -1872,6 +1872,137 @@
       ],
       "destino": "artigos/seguranca/desbravando-a-internet-como-as-vpns-podem-transformar-suas-viagens.html",
       "destinoConteudoHash": "18a426acea201aefb505a029290e9d1546c9eda712256dc06f4a2bc56152bf1d"
+    },
+    {
+      "url": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html",
+      "acao": "atualizar",
+      "motivo": "Substituir atualidade vaga e diversificacao universal por incidente datado e criterios verificaveis de resiliencia.",
+      "evidencia": "Corpo lido integralmente: atribuia economia e necessidade futura de multicloud sem estudo da aplicacao. Relatorio primario permite contextualizar a dependencia.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:15:52.509Z"
+      },
+      "conteudoHash": "fd6c31e584e86b293bb46ea87fc056cb5c145f8f69679ea87e9dee7ea00b54b2"
+    },
+    {
+      "url": "artigos/cloud/a-fragilidade-das-plataformas-licoes-do-incidente-da-railway-e-google-cloud.html",
+      "acao": "atualizar",
+      "motivo": "Distinguir alcance de servico, recuperacao e incerteza sobre a causa da suspensao.",
+      "evidencia": "Texto local tratava a causa como encerrada. A fonte primaria consultada contem descricoes divergentes; planos futuros nao provam implantacao.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:15:52.509Z"
+      },
+      "conteudoHash": "a32ee19dffdeb7eefac48c17cc35cd3064bb3b49a63587aecc0c54261a117b45"
+    },
+    {
+      "url": "artigos/cloud/a-nuvem-que-vem-como-escolher-o-servico-de-hospedagem-ideal-pra-2025.html",
+      "acao": "atualizar",
+      "motivo": "Remover vivencia nao confirmada e titulo temporal vencido; tornar a escolha de hospedagem verificavel.",
+      "evidencia": "Corpo declarava mais de 19 anos como arquiteto e trabalho com varios provedores sem confirmacao. Nao havia benchmark ou ranking sustentado.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:15:52.509Z"
+      },
+      "conteudoHash": "eb9dd96be65598e8e473d4080a45469aaf3efc490c8a3da0515b0fe831fa2ce1"
+    },
+    {
+      "url": "artigos/cloud/a-revolucao-da-nuvem-soberana-aws-e-a-autonomia-digital-da-europa.html",
+      "acao": "atualizar",
+      "motivo": "Atualizar o anuncio e separar caracteristicas documentadas de conclusoes juridicas nao demonstradas.",
+      "evidencia": "Texto previa abertura ate 2025 e simplificava governanca e beneficios. Fonte atual permite datar a disponibilidade e especificar separacao tecnica.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:15:52.509Z"
+      },
+      "conteudoHash": "26d64904ef7285d4b05f5c704e5da05677847238c9ef17299c799208f51e807a"
+    },
+    {
+      "url": "artigos/cloud/a-revolucao-dos-plugins-automatizando-o-desdobramento-na-nuvem-com-aws.html",
+      "acao": "atualizar",
+      "motivo": "Separar exemplo promocional de resultado medido e explicitar criterios de autorizacao.",
+      "evidencia": "Corpo extrapolava a duracao de uma demonstracao para economia geral e atribuía garantia a varreduras. Sem execucao independente.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:15:52.509Z"
+      },
+      "conteudoHash": "dc6688eaf212f292c7c5ce049cbb0224f5f80744c19291cec216a50721a89412"
+    },
+    {
+      "url": "artigos/cloud/como-a-cloudflare-transformou-o-quicksilver-licoes-de-arquitetura-em-cache.html",
+      "acao": "atualizar",
+      "motivo": "Trocar recomendacao universal de camadas por contrato de leitura e limites de generalizacao.",
+      "evidencia": "Corpo generalizava melhora drastica ao adicionar cache sem requisitos de consistencia nem ensaio. Fonte primaria detalha fallback de versoes.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:15:52.509Z"
+      },
+      "conteudoHash": "3c4b8ea7d5956aa06b06a35e90745595768346a1c7a30118e555218506aaf56d"
+    },
+    {
+      "url": "artigos/cloud/desbravando-a-escalabilidade-um-milhao-de-sandboxes-em-um-so-servidor.html",
+      "acao": "atualizar",
+      "motivo": "Distinguir densidade em espera de capacidade concorrente e resultado de demonstracao.",
+      "evidencia": "Texto anterior omitia o limite de concorrencia ao tirar conclusoes gerais de desempenho e isolamento. Transcricao primaria foi consultada, sem auditoria de video.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:15:52.509Z"
+      },
+      "conteudoHash": "8a0ba90dbafc5633633fa5f7124421219507212613714140f4476dc899758bca"
+    },
+    {
+      "url": "artigos/cloud/gerenciando-protocolos-de-contexto-o-novo-futuro-da-integracao-em-nuvem.html",
+      "acao": "atualizar",
+      "motivo": "Especificar endpoint e autorizacao, retirando comparacao de latencia sem evidencia.",
+      "evidencia": "Texto confundia descoberta, transformacao de APIs e acesso unificado, com opinioes de desenvolvedores nao identificados. Revisao usa anuncio e documentacao atual.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:15:52.509Z"
+      },
+      "conteudoHash": "339b5f9963cd228c1317ee7b769b95609c58b85549df6391b51f9b5803ae9733"
+    },
+    {
+      "url": "artigos/cloud/nova-era-na-nuvem-a-revolucao-da-virtualizacao-aninhada-no-aws-ec2.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir requisito de hospedagem e orientacoes vencidas antes de provisionamento.",
+      "evidencia": "Exemplo adicionava Tenancy=host; lista era exclusiva e ativacao limitada ao lancamento. Guia atual nao sustenta essas restricoes gerais.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:15:52.509Z"
+      },
+      "conteudoHash": "b3dfed89c68f8eb7b469c842683b7676eaf4667bf04a9ee71e2947f3733774b6"
+    },
+    {
+      "url": "artigos/tecnologia/a-revolucao-das-vpns-em-smart-tvs-conectando-se-ao-mundo-do-streaming-de-forma-segura.html",
+      "acao": "atualizar",
+      "motivo": "Resolver promessa de desbloqueio e recomendacao pessoal nao confirmada.",
+      "evidencia": "Corpo prometia catalogos, privacidade e bloqueio de anuncios, com preferencia pessoal por marca sem teste. Netflix documenta limitacoes especificas.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:15:52.509Z"
+      },
+      "conteudoHash": "441e9afe814abf62c61b7c3d11a17d1cb4e2242e34641c6903d30487c6cc92e2"
+    },
+    {
+      "url": "artigos/cloud/a-revolucao-do-cloud-hosting-como-escolher-o-melhor-para-seu-negocio-em-2026.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar dois guias genericos de escolha de hospedagem com intencao equivalente.",
+      "evidencia": "Leitura integral de ambos: guia de 2026 repete escalabilidade, suporte, seguranca, custo e teste, sem benchmark; destino revisado cobre esses criterios com limites. Mesma fonte foi evidencia auxiliar, nao criterio automatico.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T13:15:52.509Z"
+      },
+      "conteudoHash": "5ae2e8ad51bbce2bf72715f8caddac0d2fd3360325b10a02f560f191886cbfb4",
+      "arquivoHash": "340a75aaf851f887543029e2e806ffc9c099d1ec7b4797259ae751d9e144a01a",
+      "registrosHash": "ce25c9bd9c3f9f1ed2005ec13be73b2923ae62ae41f35831af8d00e6fbbb1547",
+      "aliases": [
+        {
+          "url": "cloud/a-revolucao-do-cloud-hosting-como-escolher-o-melhor-para-seu-negocio-em-2026.html",
+          "arquivoHash": "a85262d0eef03fc8f17d86913c6b017ce4f160cb9c90faee1fb8b711ecb66fb3"
+        }
+      ],
+      "destino": "artigos/cloud/a-nuvem-que-vem-como-escolher-o-servico-de-hospedagem-ideal-pra-2025.html",
+      "destinoConteudoHash": "eb9dd96be65598e8e473d4080a45469aaf3efc490c8a3da0515b0fe831fa2ce1"
     }
   ]
 }
