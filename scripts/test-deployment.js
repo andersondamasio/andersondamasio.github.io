@@ -66,6 +66,27 @@ test("falha explicitamente quando artigo novo esta ausente ou o conteudo esta an
     assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(alteracoes), tentativas: 1 })).aceita, false);
   }
 });
+
+test("deploy confere origem, alias e destino de consolidacao e exclui seu snapshot", async () => {
+  const origem = "artigos/arquitetura/consolidado.html";
+  const alias = "arquitetura/consolidado.html";
+  const destino = "artigos/arquitetura/guia.html";
+  const redirect = html(`/${destino}`).replace("</head>", `<meta http-equiv="refresh" content="0; url=${baseUrl}/${destino}"></head>`);
+  const extras = {
+    "dados/indexacao.json": JSON.stringify({ decisoes: [{ url: origem, acao: "consolidar", arquivoHash: "e".repeat(64), destino, aliases: [{ url: alias }] }] }),
+    [origem]: redirect, [alias]: redirect, [destino]: html(`/${destino}`, "Guia consolidado")
+  };
+  const esperado = prepararVerificacao({ ler: f => extras[f] || arquivos[f], revisao: "e".repeat(40) });
+  for (const url of [origem, alias, destino]) assert.ok(esperado.arquivos.some(a => a.arquivo === url));
+  assert.equal(esperado.ausentes.length, 1);
+  assert.match(esperado.ausentes[0], /^dados\/editorial\/arquivados\/[a-f0-9]{64}\.json$/);
+  const versao = { ...extras, [esperado.ausentes[0]]: null };
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(versao), tentativas: 1 })).aceita, true);
+  for (const url of [origem, alias, destino, esperado.ausentes[0]]) {
+    const alterado = { ...versao, [url]: "Versao divergente ou snapshot publicado" };
+    assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(alterado), tentativas: 1 })).aceita, false);
+  }
+});
 test("recusa canonical/noindex incorretos e limita tentativas de propagacao", async () => {
   let esperas = 0;
   const resultado = await verificarPublicacao({ esperado, fetchImpl: mockFetch({ [artigo]: html("/errado") }), tentativas: 3, esperar: async () => { esperas++; } });

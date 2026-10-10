@@ -321,6 +321,122 @@
       "arquivoHash": "4ecec68c355eec566b9d37ffbcdb9a91a46c694052aed30f131a8e3e0840f564",
       "registrosHash": "a7aab1624fa3ed89aea7a654505a35fd2ddf85845056fdac5a517e46e6192ee1",
       "aliases": []
+    },
+    {
+      "url": "artigos/carreira/expert-generalistas-o-poder-da-curiosidade-na-arquitetura-de-software.html",
+      "acao": "atualizar",
+      "conteudoHash": "1dfd9b150e77634c5c65461c91539093fecd3b23fb0a900c16d58a9a28dec113",
+      "revisao": {
+        "responsavel": "Codex (consolidacao assistida; nao revisao humana)",
+        "em": "2026-10-10T00:58:39.966Z"
+      },
+      "motivo": "Manter a URL mais antiga como guia de generalistas e especialistas, com exemplo especifico e atribuicao.",
+      "evidencia": "Seis corpos lidos e comparados; fonte primaria conferida. Rastreabilidade em dados/editorial/consolidacao-generalistas-2026-10.json; exercicio nao executado."
+    },
+    {
+      "url": "artigos/desenvolvimento-de-software/expert-generalists-o-poder-do-conhecimento-multifacetado-na-arquitetura-de-software.html",
+      "acao": "consolidar",
+      "conteudoHash": "2cc29e36a78ff1c0efa0276a84b5331565a9ea362248bdd32db1711e4517568f",
+      "arquivoHash": "a12eb67e8f978f864a720062418582ada7570ed62cfb680b1054323246d70e56",
+      "registrosHash": "994d90ef47e0dc07488f6aaf020df01d18f205e8870c3f5291b603a05fae4fbf",
+      "aliases": [
+        {
+          "url": "desenvolvimento-de-software/expert-generalists-o-poder-do-conhecimento-multifacetado-na-arquitetura-de-software.html",
+          "arquivoHash": "57b43ca415c9f050e3384662622e9ad455db1b086c344c42705ea10e460f3863"
+        }
+      ],
+      "destino": "artigos/carreira/expert-generalistas-o-poder-da-curiosidade-na-arquitetura-de-software.html",
+      "destinoConteudoHash": "1dfd9b150e77634c5c65461c91539093fecd3b23fb0a900c16d58a9a28dec113",
+      "revisao": {
+        "responsavel": "Codex (consolidacao assistida; nao revisao humana)",
+        "em": "2026-10-10T00:58:39.966Z"
+      },
+      "motivo": "Texto sobreposto ao guia do mesmo conceito, sem contribuicao exclusiva que justifique outra pagina.",
+      "evidencia": "Leitura contextual das seis versoes, nao decisao por fonte igual isoladamente. Definicao e recomendacoes repetidas cobertas pelo guia. Ver dados/editorial/consolidacao-generalistas-2026-10.json."
+    },
+    {
+      "url": "artigos/carreira/a-importancia-do-generalista-especializado-na-arquitetura-de-software.html",
+      "acao": "consolidar",
+      "conteudoHash": "918262b69419098653326f0e272e3dd28f2173c036e7aa544eb8362d9d1bb41c",
+      "arquivoHash": "9cf261977693e073a2775a1781354d9157fc7d076d586502d8074cc9062d9059",
+      "registrosHash": "c1e8394200d727c85958b35bc0b1f8df1d43ce4637000c95a56be2b9d4f55a61",
+      "aliases": [
+        {
+          "url": "carreira/a-importancia-do-generalista-especializado-na-arquitetura-de-software.html",
+          "arquivoHash": "cf20e7e3b2b17759ba85426151b936e91ae2ed258f3b2f61f43a2cd19ac733f6"
+        }
+      ],
+      "destino": "artigos/carreira/expert-generalistas-o-poder-da-curiosidade-na-arquitetura-de-software.html",
+      "destinoConteudoHash": "1dfd9b150e77634c5c65461c91539093fecd3b23fb0a900c16d58a9a28dec113",
+      "revisao": {
+        "responsavel": "Codex (consolidacao assistida; nao revisao humana)",
+        "em": "2026-10-10T00:58:39.966Z"
+      },
+      "motivo": "Texto sobreposto ao guia do mesmo conceito, sem contribuicao exclusiva que justifique outra pagina.",
+      "evidencia": "Leitura contextual das seis versoes, nao decisao por fonte igual isoladamente. Definicao e recomendacoes repetidas cobertas pelo guia. Ver dados/editorial/consolidacao-generalistas-2026-10.json."
+    },
+    {
+      "url": "artigos/desenvolvimento-de-software/o-valor-dos-generalistas-por-que-a-diversidade-de-conhecimento-e-essencial-no-desenvolvimento-de-software.html",
+      "acao": "consolidar",
+      "conteudoHash": "c4610156bae87ee00d9bef70ee5192873716bf806356ec06a5b19c18b33a1bb8",
+      "arquivoHash": "235e6e3df337149d3a9b17a73c59d86cf0dea54ba3836529e3ea12406f8f1d69",
+      "registrosHash": "ee5fcdb5c7d488863b3968b1eaa9e167bf9a973069bf9825cf75e0b7cdfdbded",
+      "aliases": [
+        {
+          "url": "desenvolvimento-de-software/o-valor-dos-generalistas-por-que-a-diversidade-de-conhecimento-e-essencial-no-desenvolvimento-de-software.html",
+          "arquivoHash": "0a289bdf190134e19ecfa2701e5b3145498a9b70f303241b438fc404544f170d"
+        }
+      ],
+      "destino": "artigos/carreira/expert-generalistas-o-poder-da-curiosidade-na-arquitetura-de-software.html",
+      "destinoConteudoHash": "1dfd9b150e77634c5c65461c91539093fecd3b23fb0a900c16d58a9a28dec113",
+      "revisao": {
+        "responsavel": "Codex (consolidacao assistida; nao revisao humana)",
+        "em": "2026-10-10T00:58:39.966Z"
+      },
+      "motivo": "Texto sobreposto ao guia do mesmo conceito, sem contribuicao exclusiva que justifique outra pagina.",
+      "evidencia": "Leitura contextual das seis versoes, nao decisao por fonte igual isoladamente. Definicao e recomendacoes repetidas cobertas pelo guia. Ver dados/editorial/consolidacao-generalistas-2026-10.json."
+    },
+    {
+      "url": "artigos/carreira/crescendo-generalistas-expertos-o-futuro-da-arquitetura-de-software.html",
+      "acao": "consolidar",
+      "conteudoHash": "5e250e688f411fafd93e4252f20176fbe210ad4d30886c901b3422f6dfa59b8c",
+      "arquivoHash": "5665a5da59c60d40439195e612d33220796ce8860760a1957ae2c0ec08d1ddd1",
+      "registrosHash": "646787572d8dd1c30ae22db980e7bcb1829956084b3a57d977e22f95e147007e",
+      "aliases": [
+        {
+          "url": "carreira/crescendo-generalistas-expertos-o-futuro-da-arquitetura-de-software.html",
+          "arquivoHash": "2715c0a0f98dd497abb1f31183ac91af92437193552f7b91b2ea155d6bbaae34"
+        }
+      ],
+      "destino": "artigos/carreira/expert-generalistas-o-poder-da-curiosidade-na-arquitetura-de-software.html",
+      "destinoConteudoHash": "1dfd9b150e77634c5c65461c91539093fecd3b23fb0a900c16d58a9a28dec113",
+      "revisao": {
+        "responsavel": "Codex (consolidacao assistida; nao revisao humana)",
+        "em": "2026-10-10T00:58:39.966Z"
+      },
+      "motivo": "Texto sobreposto ao guia do mesmo conceito, sem contribuicao exclusiva que justifique outra pagina.",
+      "evidencia": "Leitura contextual das seis versoes, nao decisao por fonte igual isoladamente. Definicao e recomendacoes repetidas cobertas pelo guia. Ver dados/editorial/consolidacao-generalistas-2026-10.json."
+    },
+    {
+      "url": "artigos/carreira/a-revolucao-dos-generalistas-por-que-a-curiosidade-e-a-chave-no-desenvolvimento-de-software.html",
+      "acao": "consolidar",
+      "conteudoHash": "d426338f6f8918f044e2f05030860b0be5c9b935bba6c2c50572b18ee5189fc7",
+      "arquivoHash": "83f56963e2096b780d31546efd44c337321489a922439f3701991d566f0e05ee",
+      "registrosHash": "25641f0ae959edc5c844d54addf0369b6975b8ec27c279585a2fe500ea53fa74",
+      "aliases": [
+        {
+          "url": "carreira/a-revolucao-dos-generalistas-por-que-a-curiosidade-e-a-chave-no-desenvolvimento-de-software.html",
+          "arquivoHash": "59ff68d7f3bedad3b19ac38d55be540522fc1de91057bda5566d9a40a6742e74"
+        }
+      ],
+      "destino": "artigos/carreira/expert-generalistas-o-poder-da-curiosidade-na-arquitetura-de-software.html",
+      "destinoConteudoHash": "1dfd9b150e77634c5c65461c91539093fecd3b23fb0a900c16d58a9a28dec113",
+      "revisao": {
+        "responsavel": "Codex (consolidacao assistida; nao revisao humana)",
+        "em": "2026-10-10T00:58:39.966Z"
+      },
+      "motivo": "Texto sobreposto ao guia do mesmo conceito, sem contribuicao exclusiva que justifique outra pagina.",
+      "evidencia": "Leitura contextual das seis versoes, nao decisao por fonte igual isoladamente. Definicao e recomendacoes repetidas cobertas pelo guia. Ver dados/editorial/consolidacao-generalistas-2026-10.json."
     }
   ]
 }

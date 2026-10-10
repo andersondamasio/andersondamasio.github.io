@@ -58,6 +58,11 @@ async function main() {
           titulo: document.querySelector("h1")?.textContent.trim(),
           h1: document.querySelectorAll("h1").length,
           overflow: document.documentElement.scrollWidth > innerWidth + 1,
+          botoesSobreCodigo: [...document.querySelectorAll('.article-body pre')].filter(pre => {
+            const botao = pre.querySelector('.copy-button');
+            const codigo = pre.querySelector('code');
+            return botao && codigo && botao.getBoundingClientRect().bottom > codigo.getBoundingClientRect().top;
+          }).length,
           imagensQuebradas: [...document.images].filter(img => !img.complete || img.naturalWidth === 0).map(img => img.src),
           textoForaDaTela: [...document.querySelectorAll("h1,h2,main p,main li,nav a")].filter(el => {
             const r = el.getBoundingClientRect(); return r.width > 0 && (r.left < -1 || r.right > innerWidth + 1) && !el.closest(".scroll-container");
@@ -89,7 +94,7 @@ async function main() {
       if (!pagina.url().endsWith(destino) || !(await pagina.$(".article-body"))) throw new Error("Navegacao do arquivo para artigo falhou.");
       await contexto.close();
     }
-    const aceita = resultados.every(r => r.h1 === 1 && !r.overflow && !r.imagensQuebradas.length && !r.textoForaDaTela.length && !r.erros.length);
+    const aceita = resultados.every(r => r.h1 === 1 && !r.overflow && !r.botoesSobreCodigo && !r.imagensQuebradas.length && !r.textoForaDaTela.length && !r.erros.length);
     const relatorio = { verificadoEm: new Date().toISOString(), aceita, observacao: "Servidor local temporario; analytics e dominios externos bloqueados durante QA.", resultados };
     fs.writeFileSync(path.join(diretorio, "resultado.json"), JSON.stringify(relatorio, null, 2));
     console.log(JSON.stringify(relatorio, null, 2));

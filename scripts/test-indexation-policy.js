@@ -190,6 +190,28 @@ test("backup corrompido ou cadastro reintroduzido nao passa como decisao aplicad
   assert.throws(exigirManifestoAplicado, /Arquivo original divergiu/);
 }));
 
+test("CLI aplica consolidacao com alias e executa rebuild direto em processo novo", () => fixture(ctx => {
+  const alias = "arquitetura/revisar.html";
+  fs.mkdirSync("arquitetura");
+  const html = require("../gerar-conteudo").gerarHtmlAliasLegado({ origem: alias, destino: ctx.cadastro[0].url, titulo: "Alias" });
+  fs.writeFileSync(alias, html);
+  decidirCiclo(ctx, "consolidar");
+  ctx.manifesto.decisoes[0].aliases = [{ url: alias, arquivoHash: hashArquivo(html) }];
+  ctx.salvar();
+  const cli = path.join(__dirname, "indexation-policy.js");
+  const plano = JSON.parse(execFileSync(process.execPath, [cli], { encoding: "utf8" }));
+  execFileSync(process.execPath, [cli, "--apply", plano.hash], { stdio: "pipe" });
+  for (let i = 0; i < 2; i++) {
+    const saida = execFileSync(process.execPath, [path.join(__dirname, "..", "gerar-conteudo.js"), "--rebuild-seo"], { encoding: "utf8" });
+    assert.match(saida, /1 artigos public/);
+    for (const origem of [alias, ctx.cadastro[0].url]) {
+      const $ = cheerio.load(fs.readFileSync(origem, "utf8"));
+      assert.equal($("meta[http-equiv=refresh]").attr("content"), `0; url=https://www.andersondamasio.com.br/${ctx.cadastro[1].url}`);
+    }
+    assert.equal(JSON.parse(execFileSync(process.execPath, [cli, "--check"], { encoding: "utf8" })).alteracoes, 0);
+  }
+}));
+
 test("retirada com alias comprovado exclui ambos; referencias editoriais nao corrigidas revertem tudo", () => fixture(ctx => {
   const url = ctx.cadastro[0].url;
   const alias = "arquitetura/revisar.html";
