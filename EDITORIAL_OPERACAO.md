@@ -165,6 +165,18 @@ Quando a fonte fornece apenas uma data civil, guardar `AAAA-MM-DD`, sem inventar
 
 O mesmo modulo compartilha o espacamento superior dos blocos copiaveis. O backfill corrige a regra legada `pre` com padding de 1rem apenas quando ha bloco de codigo no corpo e estilo do botao Copiar; o template novo ja reserva 3rem acima do texto. A mudanca fica no CSS, preservando codigo e corpo editorial. O QA deve comparar tambem a base do botao com o inicio do codigo, pois ausencia de overflow nao detecta sobreposicao.
 
+## Metadados dos artigos
+
+`scripts/seo-article-metadata.js` compartilha o contrato entre a publicacao aprovada, o backfill e a auditoria. Nao extrair `keywords` ou entidades `mentions` por frequencia de palavras: o acervo nao possui cadastro de entidades revisadas. A ausencia desses campos e uma escolha desta geracao, nao uma proibicao do schema.org. A tag HTML `meta keywords` tambem nao e gerada para artigos; o Google informa que nao a usa para indexacao ou ranking.
+
+`wordCount` descreve a prosa do corpo: inclui titulos internos, listas, tabelas e codigo inline; exclui blocos `pre`, scripts, estilos, elementos ocultos e notas editoriais geradas. O parser decodifica entidades uma vez e separa blocos sem partir palavras com marcacao inline. Essa contagem nao mede qualidade nem determina indexacao. Os helpers antigos de texto usados nos filtros editoriais continuam independentes.
+
+Categoria e ano de copyright derivam do cadastro e da data de publicacao conhecida. Data ausente ou invalida nao recebe o ano corrente como substituto. A regra `articleJsonLdInconsistentMetadata` compara categoria, contagem, ano e acesso gratuito, exige o titular e impede o retorno das listas inferidas. Nao comprova a veracidade de afirmacoes do artigo. As verificacoes separadas de autoria, fontes, imagens, canonical e robots continuam ativas.
+
+`npm run test:seo:templates` cobre casos curtos, codigo, entidades HTML, datas desconhecidas, divergencias deliberadas e publicacao seguida de backfills. Alteracoes apenas nesses metadados nao renovam `datePublished`, `dateModified` ou `lastmod`, nem mudam corpo, aprovacao ou decisoes de indexacao.
+
+Referencias: [Article no Google](https://developers.google.com/search/docs/appearance/structured-data/article) e [metatags reconhecidas](https://developers.google.com/search/docs/crawling-indexing/special-tags). Propriedades aplicaveis ajudam a descrever a pagina; preencher contadores locais nao garante resultados enriquecidos, indexacao ou ranking.
+
 ## Exemplos tecnicos reproduziveis
 
 `exemplos/reservoir-sampling/` acompanha a correcao do guia existente, mantendo sua URL. O projeto .NET 10 inclui implementacao, contrato e 13 verificacoes executaveis, sem pacotes externos. O CI compila e executa os testes; a suite de templates compara o codigo do HTML com o arquivo C#, evitando que um trecho divergente seja publicado. Rodar a partir do diretorio do exemplo para respeitar `global.json`.

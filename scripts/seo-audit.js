@@ -5,7 +5,7 @@ const {
   defaultSeoImage,
   isBrandImage
 } = require("./seo-assets");
-const { artigoTemMetadadosDeRelevancia } = require("./seo-article-metadata");
+const { artigoTemMetadadosCoerentes } = require("./seo-article-metadata");
 const {
   categoriasCanonicas,
   minArtigosCategoriaIndexavel,
@@ -293,7 +293,7 @@ const stats = {
   missingJsonLd: [],
   articleJsonLdMisleadingImages: [],
   articleAuthorMissingLinkedIdentity: [],
-  articleJsonLdMissingRelevanceMetadata: [],
+  articleJsonLdInconsistentMetadata: [],
   articleMissingSourceCitation: [],
   articleMalformedSourceCitation: [],
   articleMissingValidationSection: [],
@@ -336,6 +336,7 @@ const canonicals = new Map();
 const robotsByFile = new Map();
 const indexableCanonicalByFile = new Map();
 const sourceByFile = new Map();
+const articleByFile = new Map();
 
 const generatorPath = path.join(root, "gerar-conteudo.js");
 if (fs.existsSync(generatorPath)) {
@@ -382,6 +383,7 @@ if (fs.existsSync(sourceTitlesPath)) {
       }
       const sourceUrl = normalizarFonteUrl(item?.urlFonte);
       const local = normalizeLocalUrl(item?.url);
+      if (local) articleByFile.set(local, item);
       if (sourceUrl && local) {
         sourceByFile.set(local, {
           sourceUrl,
@@ -568,8 +570,13 @@ for (const file of walk(root)) {
         if (!authorHasLinkedIdentity(item.author)) {
           pushExample(stats.articleAuthorMissingLinkedIdentity, fileRel);
         }
-        if (!artigoTemMetadadosDeRelevancia(item)) {
-          pushExample(stats.articleJsonLdMissingRelevanceMetadata, fileRel);
+        const registro = articleByFile.get(fileRel);
+        if (!artigoTemMetadadosCoerentes(item, {
+          articleHtml: $(".article-body").first().html(),
+          category: registro?.categoria || item.articleSection,
+          publishedDate: registro?.data || $('meta[property="article:published_time"]').attr("content")
+        }) || $('meta[name="keywords" i]').length) {
+          pushExample(stats.articleJsonLdInconsistentMetadata, fileRel);
         }
         const expectedSource = sourceByFile.get(fileRel);
         if (expectedSource && !artigoTemFonteEditorial(item, expectedSource.sourceUrl)) {
@@ -722,7 +729,7 @@ const report = {
     missingJsonLd: stats.missingJsonLd,
     articleJsonLdMisleadingImages: stats.articleJsonLdMisleadingImages,
     articleAuthorMissingLinkedIdentity: stats.articleAuthorMissingLinkedIdentity,
-    articleJsonLdMissingRelevanceMetadata: stats.articleJsonLdMissingRelevanceMetadata,
+    articleJsonLdInconsistentMetadata: stats.articleJsonLdInconsistentMetadata,
     articleMissingSourceCitation: stats.articleMissingSourceCitation,
     articleMalformedSourceCitation: stats.articleMalformedSourceCitation,
     articleMissingValidationSection: stats.articleMissingValidationSection,

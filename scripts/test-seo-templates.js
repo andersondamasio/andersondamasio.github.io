@@ -10,6 +10,7 @@ const { criarPessoaSchema, criarWebSiteSchema } = require("./seo-identity");
 const { estilosCodigoInline, aplicarEstilosCodigoInline, paddingBlocoCodigo, aplicarEspacoBotaoCopiar } = require("./seo-code-styles");
 const { defaultSeoImage, defaultArticleImages, getArticleStructuredImages } = require("./seo-assets");
 const { aprovacaoFixture } = require("./fixtures/editorial-review");
+const { criarMetadadosArtigo, contarPalavrasProsa } = require("./seo-article-metadata");
 const { reconstruirPaginasSeo, publicarRascunhoAprovado } = require("../gerar-conteudo");
 
 const fonte = { sourceUrl: "https://example.org/fonte", sourceTitle: "Fonte de teste" };
@@ -45,6 +46,34 @@ test("bloco legado nao declara revisao e nao injeta checklist generico", () => {
   assert.doesNotMatch($.text(), /O que foi verificado|Como aplicar essa leitura/);
   assert.equal($("a[rel=author]").text(), "Anderson Damasio");
 });
+
+test("auditoria confere metadados contra corpo e cadastro sem minimo de palavras", () => workspace(root => {
+  const corpo = '<p>Fila duravel.</p><pre><code>codigo nao e prosa</code></pre>';
+  const registros = ["correto", "contagem", "categoria", "ano", "entidades", "tag", "autoria"].map(nome => ({
+    titulo: `Contratos de mensagens ${nome}`, url: `artigos/arquitetura/${nome}.html`,
+    categoria: "Arquitetura", data: "2025-10-01T12:00:00Z"
+  }));
+  fs.mkdirSync(path.join(root, "artigos/arquitetura"), { recursive: true });
+  fs.writeFileSync(path.join(root, "titulos.json"), JSON.stringify(registros));
+  for (const [i, registro] of registros.entries()) {
+    const schema = { "@context": "https://schema.org", "@type": "BlogPosting",
+      ...criarMetadadosArtigo({ category: registro.categoria, articleHtml: corpo, publishedDate: registro.data }),
+      articleSection: registro.categoria, author: criarPessoaSchema(), copyrightHolder: criarPessoaSchema() };
+    if (i === 1) schema.wordCount = 100;
+    if (i === 2) schema.about.name = "Outro assunto";
+    if (i === 3) schema.copyrightYear = 2026;
+    if (i === 4) schema.mentions = [{ "@type": "Thing", name: "quem" }];
+    if (i === 6) schema.author = { "@type": "Person", name: "Sem identidade vinculada" };
+    fs.writeFileSync(path.join(root, registro.url), `<html lang="pt-BR"><head><title>${registro.titulo}</title>
+      ${i === 5 ? '<meta name="keywords" content="quem, fila, contratos">' : ''}
+      <script type="application/ld+json">${JSON.stringify(schema)}</script></head>
+      <body><main><h1>${registro.titulo}</h1><div class="article-body">${corpo}</div></main></body></html>`);
+  }
+  const report = JSON.parse(execFileSync(process.execPath, [path.join(__dirname, "seo-audit.js")], { cwd: root, encoding: "utf8" }));
+  assert.deepEqual(report.issues.articleJsonLdInconsistentMetadata.sort(), registros.slice(1, 6).map(x => x.url).sort());
+  assert.deepEqual(report.issues.articleAuthorMissingLinkedIdentity, [registros[6].url]);
+  assert.equal(report.issues.missingCanonical.length, 7);
+}));
 
 test("data civil da fonte nao retrocede um dia; timestamp respeita Sao Paulo", () => {
   const data = sourceDate => cheerio.load(gerarSecoesConteudoUtil({ ...fonte, sourceDate })).text();
@@ -225,6 +254,12 @@ test("publicacao revisada preserva aprovacao, descricao e data em dois backfills
   fs.writeFileSync("titulos.json", "[]");
   const aprovado = aprovacaoFixture();
   const { url } = publicarRascunhoAprovado(aprovado, { agora: new Date("2026-10-02T12:00:00Z") });
+  const publicado = cheerio.load(fs.readFileSync(url, "utf8"));
+  const schemaPublicado = JSON.parse(publicado("script[type='application/ld+json']").first().text());
+  assert.equal(schemaPublicado.wordCount, contarPalavrasProsa(aprovado.corpoArtigo));
+  assert.equal(schemaPublicado.keywords, undefined);
+  assert.equal(schemaPublicado.mentions, undefined);
+  assert.equal(publicado("meta[name=keywords]").length, 0);
   const registros = JSON.parse(fs.readFileSync("titulos.json", "utf8"));
   registros[0].seo.modifiedAt = "2026-10-03T12:00:00Z";
   fs.writeFileSync("titulos.json", JSON.stringify(registros));
@@ -241,6 +276,12 @@ test("publicacao revisada preserva aprovacao, descricao e data em dois backfills
   assert.equal($("meta[property='article:modified_time']").attr("content"), "2026-10-03T12:00:00.000Z");
   const schema = JSON.parse($("script[type='application/ld+json']").first().text());
   assert.equal(schema.image, undefined);
+  assert.equal(schema.wordCount, schemaPublicado.wordCount);
+  assert.equal(schema.keywords, undefined);
+  assert.equal(schema.mentions, undefined);
+  assert.equal($("meta[name=keywords]").length, 0);
+  assert.equal($(".article-body").html(), publicado(".article-body").html());
+  assert.deepEqual(JSON.parse(fs.readFileSync("titulos.json", "utf8")), registros);
   reconstruirPaginasSeo();
   const sitemap = cheerio.load(fs.readFileSync("sitemap.xml", "utf8"), { xmlMode: true });
   assert.equal(sitemap("url").filter((_, el) => sitemap(el).find("loc").text().endsWith(url)).find("lastmod").text(), "2026-10-03T12:00:00.000Z");

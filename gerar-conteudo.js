@@ -2424,11 +2424,9 @@ function publicarRascunhoAprovado(rascunho, { agora = new Date() } = {}) {
       : "";
     const articleUrl = absoluteUrl(urlLocal);
     const articleImage = imagemCapaUrl || defaultSeoImage;
-    const articleText = limparTextoArtigo(corpoArtigo);
     const articleMetadata = criarMetadadosArtigo({
-      title: titulo,
       category: categoria,
-      articleText,
+      articleHtml: corpoArtigo,
       publishedDate: dataISO
     });
     const sourceCitation = criarFonteSchema({
@@ -2470,7 +2468,6 @@ ${gerarSeoHead({
   image: articleImage,
   publishedTime: dataISO,
   modifiedTime: dataISO,
-  keywords: articleMetadata.keywords,
   structuredData: [
     {
       "@context": "https://schema.org",
