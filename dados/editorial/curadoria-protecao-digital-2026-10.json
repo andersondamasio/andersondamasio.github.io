@@ -1,0 +1,431 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T12:40:03.283Z",
+  "base": "7dae1c6584e97e896ce9e44ac5981e18312ad908",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": false,
+  "escopo": "Oito correcoes documentais e tres consolidacoes de intencao equivalente. Sem nova exclusao, noindex de artigo mantido, teste de produto ou chamada paga. Nao aprova rascunhos.",
+  "limitacaoFontes": "Corpos locais lidos integralmente e afirmacoes corrigidas com fontes primarias. Fontes jornalisticas anteriores permanecem no historico; nao se afirma nova verificacao integral dessas reportagens.",
+  "pendentesRelacionadas": [
+    {
+      "url": "artigos/tecnologia/a-revolucao-das-vpns-em-smart-tvs-conectando-se-ao-mundo-do-streaming-de-forma-segura.html",
+      "estado": "revisao_pendente",
+      "motivo": "Corpo lido: preferencia pessoal e garantias sem evidencia; intencao Smart TV diferente, nao consolidada por palavra-chave."
+    }
+  ],
+  "artigos": [
+    {
+      "url": "artigos/seguranca/a-liberdade-de-ter-seus-dados-em-casa-o-poder-do-auto-hospedagem.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A liberdade de ter seus dados em casa: o poder do auto-hospedagem",
+        "data": "2025-09-19T10:21:51.462Z",
+        "corpoHash": "05fa794313e01492b8a3d7ad0f178d314b31e51fd5fef8bcf6ec46f5d31f0d23",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/keep-your-data-out-of-third-party-clouds-by-self-hosting-heres-how/",
+          "titulo": "Keep your data out of third-party clouds by self-hosting - here's how",
+          "data": "2025-09-19T10:00:37.000Z"
+        }
+      },
+      "motivo": "Retirar migração pessoal não confirmada, superioridade automática da hospedagem doméstica e instalação sem requisitos de manutenção.",
+      "evidencia": "Leitura integral local: migração de notas e NAS atribuída ao autor, segurança e economia generalizadas. Manuais oficiais Nextcloud distinguem hardening e componentes de backup; não houve instalação ou teste de recuperação.",
+      "alternativas": "Preservar a pergunta sobre hospedar dados com responsabilidades e critérios de decisão; não trocar uma preferência inventada por promessa de segurança.",
+      "aliases": [
+        "seguranca/a-liberdade-de-ter-seus-dados-em-casa-o-poder-do-auto-hospedagem.html"
+      ],
+      "depois": {
+        "titulo": "Auto-hospedagem: o que assumir antes de migrar seus dados",
+        "descricao": "Responsabilidades de atualização, acesso e recuperação na auto-hospedagem, com documentação Nextcloud e um roteiro proposto de decisão.",
+        "corpoHash": "2277c8da75b3fd998de2337018231d47a00548e96f576aa44cdcf0d2d03daa16"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-hardening",
+          "fonte": "https://docs.nextcloud.com/server/stable/admin_manual/installation/harden_server.html",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "7afbdb6fc57550820c39a22716f0e75a853dbda8bc16d64667db8e44b7c15ca4"
+        },
+        {
+          "seletor": ".fato-backup",
+          "fonte": "https://docs.nextcloud.com/server/stable/admin_manual/maintenance/backup.html",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "cd0a0de978de5cdac0424212a5acdbc846b74aca7c9473e8e9d752414a7cfe31"
+        }
+      ],
+      "pergunta": "Quais responsabilidades precisam estar definidas antes de hospedar os próprios dados?",
+      "sobreposicao": "Nenhum outro registro com a mesma URL de fonte normalizada. Esse dado não prova ausência semântica de sobreposição; o recorte mantido é a decisão operacional sobre auto-hospedagem.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/a-seguranca-nao-precisa-ser-um-fardo-como-otimizar-a-experiencia-do-desenvolvedor.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A segurança não precisa ser um fardo: como otimizar a experiência do desenvolvedor",
+        "data": "2025-07-03T10:21:34.193Z",
+        "corpoHash": "2dcb13442fe9b3aeef13f88cd4aef7eab20ab3e7c9cf10cc46e8fe2af09df840",
+        "fonte": {
+          "url": "https://www.infoq.com/presentations/security-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Presentation: Security or Convenience - Why Not Both?",
+          "data": "2025-07-03T09:24:00.000Z"
+        }
+      },
+      "motivo": "Atribuir a proposta à palestrante, corrigir Pit of Success e retirar experiência pessoal e recomendação genérica de microsserviços.",
+      "evidencia": "Leitura integral do corpo local e transcrição primária InfoQ de Dorota Parad. O texto anterior convertia discussão de controles em recomendação universal e omitia a autoria do framework.",
+      "alternativas": "Conservar o framework com atribuição e exemplo hipotético de revisão de controle, sem afirmar implantação ou ganhos medidos.",
+      "aliases": [
+        "seguranca/a-seguranca-nao-precisa-ser-um-fardo-como-otimizar-a-experiencia-do-desenvolvedor.html"
+      ],
+      "depois": {
+        "titulo": "BLISS: como revisar segurança sem criar obstáculos inúteis",
+        "descricao": "A proposta BLISS de Dorota Parad e um roteiro para revisar controles de segurança, sem prescrever microsserviços ou relatar experiências não realizadas.",
+        "corpoHash": "409202e1ad97ff799a47781397f74151b81834679fa322f8307c1a8acc7632aa"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-bliss",
+          "fonte": "https://www.infoq.com/presentations/security-productivity/",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "da065a957736a9cfb6e69807cc1b13941e8f3c2d8399abaa2b9e53ef18114f82"
+        }
+      ],
+      "pergunta": "Como usar BLISS para revisar um controle sem perder seu objetivo de segurança?",
+      "sobreposicao": "Nenhum outro registro com a mesma fonte normalizada; não equivale a provar ausência de páginas relacionadas. O recorte é a aplicação crítica do framework apresentado.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/como-sincronizar-passkeys-em-diversos-dispositivos-uma-abordagem-pratica.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Como Sincronizar Passkeys em Diversos Dispositivos: Uma Abordagem Prática",
+        "data": "2025-07-30T21:19:47.575Z",
+        "corpoHash": "0f460af3015588702cf43deb9b49640a9a4145a943ea69121f0d71e3dcb946d3",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/how-to-sync-passkeys-in-chrome-across-your-android-iphone-mac-or-pc-and-why-you-should/",
+          "titulo": "How to sync passkeys in Chrome across your Android, iPhone, Mac, or PC (and why you should)",
+          "data": "2025-07-30T21:14:00.000Z"
+        }
+      },
+      "motivo": "Corrigir a confusão entre armazenamento local e sincronização, menus universais e relato pessoal de falha sem confirmação.",
+      "evidencia": "Leitura integral local: chave privada descrita como sempre restrita ao aparelho enquanto se promete sincronização. Documentação Google distingue provedores e opções de armazenamento, com requisitos específicos de iOS.",
+      "alternativas": "Substituir o passo a passo universal por diagnóstico do provedor e plataforma sem remover credenciais em contas reais.",
+      "aliases": [
+        "seguranca/como-sincronizar-passkeys-em-diversos-dispositivos-uma-abordagem-pratica.html"
+      ],
+      "depois": {
+        "titulo": "Passkeys entre dispositivos: confira onde a credencial foi salva",
+        "descricao": "Diferencie provedor, conta e armazenamento local antes de diagnosticar uma passkey ausente em outro aparelho. Fontes Google e roteiro de verificação.",
+        "corpoHash": "1442575a44175e276497af6afccf7669fe829d291c8930da943157a2fe19091f"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-armazenamento",
+          "fonte": "https://developers.google.com/identity/passkeys/supported-environments",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "936035b01c33d512f715a2f7f43e163ac2c675c1f635c10fdd591b6038f6cb74"
+        },
+        {
+          "seletor": ".fato-ios",
+          "fonte": "https://support.google.com/chrome/answer/13168025?hl=en&co=GENIE.Platform%3DiOS",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "bce78b89d7ffa2bcca5e783e9a522c34f467288b733151e214619eae1593d7dd"
+        }
+      ],
+      "pergunta": "O que conferir quando uma passkey não aparece em outro dispositivo?",
+      "sobreposicao": "Fonte original sem outro registro normalizado. Artigo de preparação para viagem tem pergunta diferente e recebe link complementar, não consolidação.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/como-proteger-seu-smartphone-de-espionagem-dicas-e-recursos-essenciais.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Como Proteger Seu Smartphone de Espionagem: Dicas e Recursos Essenciais",
+        "data": "2026-05-23T16:14:52.536Z",
+        "corpoHash": "aac4935110659afd6e3a0ef3b85a6fb3a5bae93c2e31318996baf092f6a5a812",
+        "fonte": {
+          "url": "https://techcrunch.com/2026/05/23/you-dont-have-to-click-anything-to-get-hacked-anymore-heres-how-to-fight-back/",
+          "titulo": "These special phone and app features can help protect you from spyware",
+          "data": "2026-05-23T16:00:00.000Z"
+        }
+      },
+      "motivo": "Separar proteção de conta e aparelho, retirar uso pessoal não confirmado e garantias de impedir espionagem.",
+      "evidencia": "Leitura integral local e documentação Apple/Google. Modo de Isolamento possui restrições específicas, sem impedir chamadas telefônicas comuns; Programa de Proteção Avançada da conta e proteção do dispositivo Android não são a mesma configuração.",
+      "alternativas": "Explicar escopo e requisitos documentados, sem alegar teste de ataque, eficácia absoluta ou configuração universal de aplicativos.",
+      "aliases": [
+        "seguranca/como-proteger-seu-smartphone-de-espionagem-dicas-e-recursos-essenciais.html"
+      ],
+      "depois": {
+        "titulo": "Proteção contra spyware: conta e aparelho exigem verificações diferentes",
+        "descricao": "Limites do Modo de Isolamento e diferença entre proteção da Conta Google e do Android, com fontes oficiais e uma ficha proposta para conferir requisitos.",
+        "corpoHash": "5845e6bdaa942e37e7eb0e123f3c7fffcff0d6e4172f4aa7c5e3cdc83ba5a00e"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-lockdown",
+          "fonte": "https://support.apple.com/pt-br/105120",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "ae9a7d2d54d6f5f34528fdf910d09eda21e53b304adf54a7dc35ea5c970ab205"
+        },
+        {
+          "seletor": ".fato-conta",
+          "fonte": "https://support.google.com/accounts/answer/7519408?hl=en",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "3c8b4cdbaa09a5c9faa81b14122c75f76bb440be522dac7c3ef7c6b130504fbf"
+        },
+        {
+          "seletor": ".fato-aparelho",
+          "fonte": "https://support.google.com/android/answer/16339980?hl=en",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "9f60d6cf99a6999a9be6015251b16d6eaefaa0ddae2fddbf8cb3f20b23cbe974"
+        }
+      ],
+      "pergunta": "Qual recurso protege a conta e qual altera o comportamento do aparelho?",
+      "sobreposicao": "Fonte original sem outro registro normalizado. Preservado recorte de proteções adicionais, distinto de localização de aparelho perdido.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/como-o-rooting-do-android-pode-ser-uma-armadilha-avaliando-riscos-e-beneficios.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Como o Rooting do Android Pode Ser Uma Armadilha: Avaliando Riscos e Benefícios",
+        "data": "2025-11-20T04:23:46.923Z",
+        "corpoHash": "bfe5dea9ee6ca0b05b0de4d7d24a32399421f51f46d1b6c9ddc4a3d202430fb2",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/12-reasons-not-to-root-your-android-phone-and-the-only-time-i-would/",
+          "titulo": "12 reasons not to root your Android phone - and the only time I would",
+          "data": "2025-11-20T03:00:36.000Z"
+        }
+      },
+      "motivo": "Retirar vivência não confirmada e roteiro genérico de desbloqueio que omitia restauração de fábrica, separando root, bootloader e compatibilidade.",
+      "evidencia": "Corpo local lido integralmente. AOSP explicita confirmação e restauração de fábrica ao desbloquear; ajuda Google alerta para perda de proteções em versões modificadas. Não foi conferida garantia específica nem modificado aparelho.",
+      "alternativas": "Manter decisão por requisitos, com alerta de perda de dados e sem comandos destrutivos; consolidar o segundo texto equivalente após leitura contextual.",
+      "aliases": [
+        "seguranca/como-o-rooting-do-android-pode-ser-uma-armadilha-avaliando-riscos-e-beneficios.html"
+      ],
+      "depois": {
+        "titulo": "Root no Android: permissões, bootloader e risco de perda de dados",
+        "descricao": "Entenda a diferença entre root e desbloqueio do bootloader e o risco de apagar dados, com documentação Android e critérios para decidir antes de modificar.",
+        "corpoHash": "9f15073256a78ae44b48c41061f5c82a5ca78bf5cd0a4c3de70e9c435cc93dd3"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-bootloader",
+          "fonte": "https://source.android.com/docs/core/architecture/bootloader/locking_unlocking",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "6284d06837eb9343b1ff3a494c84b19895be1ec68492757f7e11fbb3c887ea8d"
+        },
+        {
+          "seletor": ".fato-root",
+          "fonte": "https://support.google.com/accounts/answer/9211246?hl=en",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "0357d1d84717f5e40b8db1e52ad690189b0fdb39560058fcc6b25aa386c479d0"
+        }
+      ],
+      "pergunta": "O que muda ao obter root ou desbloquear o bootloader e quando adiar a modificação?",
+      "sobreposicao": "Origem raizes-do-android lida integralmente: mesma pergunta de riscos e benefícios, mesma fonte ZDNet e ausência de ensaio independente. Consolidada nesta URL com guia corrigido e cópia recuperável.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/surfshark-e-cyberghost-qual-vpn-e-a-melhor-opcao-para-voce.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Surfshark e CyberGhost: Qual VPN é a Melhor Opção para Você?",
+        "data": "2025-07-24T11:18:17.613Z",
+        "corpoHash": "b4ad744f79ee622dd1381399f50b6b90c7eabcdec37dff78645b1b2f6b8c60d8",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/surfshark-vs-cyberghost/",
+          "titulo": "Surfshark vs. CyberGhost: Which VPN should you get?",
+          "data": "2025-07-24T11:00:18.000Z"
+        }
+      },
+      "motivo": "Retirar teste de velocidade e preferência pessoal não confirmados, e separar declaração comercial de evidência medida.",
+      "evidencia": "Leitura integral local: vencedor de desempenho alegado sem execução e garantias de privacidade. Suportes oficiais publicam limites de dispositivos diferentes; EFF distingue alegação e auditoria de garantia permanente.",
+      "alternativas": "Comparar apenas requisitos documentados e propor protocolo de avaliação sem fabricar resultado ou recomendação de compra.",
+      "aliases": [
+        "seguranca/surfshark-e-cyberghost-qual-vpn-e-a-melhor-opcao-para-voce.html"
+      ],
+      "depois": {
+        "titulo": "Surfshark ou CyberGhost: requisitos para comparar as VPNs",
+        "descricao": "Limites de conexões informados por Surfshark e CyberGhost e critérios para comparar condições e desempenho, sem teste inventado ou vencedor sem evidência.",
+        "corpoHash": "e1347336907838f2a7f0fca98a560b2326fb2570f0518d8f171126a2789101d5"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-surfshark",
+          "fonte": "https://support.surfshark.com/hc/en-us/articles/360003069434-How-many-devices-can-I-use-with-Surfshark-simultaneously",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "7e1b4b4bef52b4d74c38a9fc460b62ad0a985036a030c9999d85905295e3ad44"
+        },
+        {
+          "seletor": ".fato-cyberghost",
+          "fonte": "https://support.cyberghostvpn.com/hc/en-us/articles/214371165-How-Many-Devices-Can-I-Use-at-the-Same-Time-with-One-Account-or-Subscription",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "dd92f93eccc628bcadc76a014da08804d0dcf0710520a6aec9010dc0f7ac24dd"
+        },
+        {
+          "seletor": ".fato-confianca",
+          "fonte": "https://ssd.eff.org/module/vpn.html",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "8a93c0d7d5d1d2cfb3a370886e6f3b982b18e6b24ef5d58ca2343bb99e1866a9"
+        }
+      ],
+      "pergunta": "Quais requisitos comparar entre Surfshark e CyberGhost antes de escolher?",
+      "sobreposicao": "Sem outro registro da mesma fonte normalizada. Comparação entre serviços e preparação de acesso em viagem têm perguntas diferentes; vínculo complementar sem consolidação.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/desbravando-a-internet-como-as-vpns-podem-transformar-suas-viagens.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Desbravando a Internet: Como as VPNs Podem Transformar Suas Viagens",
+        "data": "2025-08-06T09:29:24.997Z",
+        "corpoHash": "a055699c3f7a1fc22d6e01bf2180b27ed2e8d1ca6400449c26eac0ebaeab4771",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/best-travel-vpn/",
+          "titulo": "Best travel VPNs 2025: Expert-tested for streaming and avoiding censorship",
+          "data": "2025-08-06T09:15:15.000Z"
+        }
+      },
+      "motivo": "Retirar viagens pessoais inventadas, recomendação universal de assinatura e garantias de anonimato ou desbloqueio.",
+      "evidencia": "Corpo local lido integralmente. EFF delimita túnel, relação com HTTPS e confiança no provedor, sem anonimato completo nem acesso garantido a streaming. Marcas antes recomendadas não foram testadas.",
+      "alternativas": "Manter guia por necessidade de acesso, com contingência e limites explícitos; consolidar dois textos com a mesma intenção após leitura integral.",
+      "aliases": [
+        "seguranca/desbravando-a-internet-como-as-vpns-podem-transformar-suas-viagens.html"
+      ],
+      "depois": {
+        "titulo": "VPN em viagens: o que protege e o que precisa ser verificado",
+        "descricao": "O alcance do túnel VPN, os limites de anonimato e um roteiro para preparar acessos em viagens, sem garantir desbloqueio de serviços ou indicar marcas.",
+        "corpoHash": "18a426acea201aefb505a029290e9d1546c9eda712256dc06f4a2bc56152bf1d"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-tunel",
+          "fonte": "https://ssd.eff.org/module/vpn.html",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "fb3373ee4fcfe9f556a6316ab72f3b24d9bb08288284e37bc613ed157e5ab771"
+        }
+      ],
+      "pergunta": "Qual necessidade de acesso uma VPN resolve durante a viagem e o que conferir antes?",
+      "sobreposicao": "Lidas integralmente a-importancia-da-vpns e a-revolucao-das-vpns em viagens: mesma necessidade, fonte e recomendações genéricas, sem ensaio independente. Ambas consolidadas neste guia; não se presume que o destino tenha mais tráfego.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/como-proteger-seu-smartphone-durante-viagens-dicas-praticas-e-tecnologicas.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Como proteger seu smartphone durante viagens: dicas práticas e tecnológicas",
+        "data": "2025-09-09T05:18:11.953Z",
+        "corpoHash": "ec3d71d41ceb01d43558867ad59fd49e6278ee137b6c2499d07fe8944fc8afc1",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/traveling-soon-5-simple-ways-i-thwart-phone-thieves-and-you-can-too/",
+          "titulo": "Traveling soon? 5 simple ways I thwart phone thieves - and you can too",
+          "data": "2025-09-09T02:00:17.000Z"
+        }
+      },
+      "motivo": "Retirar rotina de viagens e recomendações de acessórios sem teste, substituindo prevenção garantida por preparação documentada.",
+      "evidencia": "Leitura integral local e ajuda Apple/Google: recursos possuem pré-requisitos e apagar tem consequências específicas. Artigo anterior atribuía viagens ao autor e sugeria proteção de acessórios sem avaliação.",
+      "alternativas": "Preservar a necessidade de proteção em viagem com ficha de recuperação e advertência sobre ações irreversíveis, sem executar controles de conta.",
+      "aliases": [
+        "seguranca/como-proteger-seu-smartphone-durante-viagens-dicas-praticas-e-tecnologicas.html"
+      ],
+      "depois": {
+        "titulo": "Antes de viajar: prepare o celular para perda de acesso e dados",
+        "descricao": "Confira dependências de localização, backup e recuperação de contas antes de viajar, com limites de Buscar e Find Hub e alertas sobre apagamento remoto.",
+        "corpoHash": "ef578e1e7dd41427debcea13b0f7c40faec139116b20d2716ed346ab5c67c64a"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-apple",
+          "fonte": "https://support.apple.com/en-us/120837",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "4a3efcca2f71c914dfa1f4846380049c6512a1c13206218c2a3a3dff0cca2ee6"
+        },
+        {
+          "seletor": ".fato-google",
+          "fonte": "https://support.google.com/accounts/answer/6160491?hl=en",
+          "consultadoEm": "2026-10-10T12:40:03.283Z",
+          "textoHash": "65812c6902bd0afee97d7ff7d6780b7d27c472dfaa4119abc3da3c8745d9fa52"
+        }
+      ],
+      "pergunta": "Quais dependências conferir antes de ficar sem acesso ao telefone durante uma viagem?",
+      "sobreposicao": "Fonte original sem outro registro normalizado. Passkeys e VPN tratam de partes diferentes do preparo e recebem links complementares.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/tecnologia/raizes-do-android-por-que-evitar-o-rooting-e-quando-vale-a-pena-quebrar-as-regras.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "Raízes do Android: Por Que Evitar o Rooting e Quando Vale a Pena Quebrar as Regras",
+        "data": "2025-11-21T12:40:28.611Z",
+        "corpoHash": "9f686aec5c001847ad3098e1fd89d9fe08bd944fae9ff7e9a7ff69397a65e17f",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/12-reasons-not-to-root-your-android-phone-and-the-only-time-i-would/",
+          "titulo": "12 reasons to avoid rooting your Android phone at all costs - and the only time I break the rules",
+          "data": "2025-11-21T12:37:00.000Z"
+        }
+      },
+      "motivo": "Consolidar a segunda discussão dos riscos e benefícios de root no guia corrigido, com intenção equivalente.",
+      "evidencia": "Origem e destino lidos integralmente: mesmos riscos, aplicativos, bloatware e preferência pessoal sem confirmação, mesma fonte ZDNet e nenhuma avaliação independente específica preservável na origem.",
+      "alternativas": "Preservar snapshot integral e redirecionar URL e alias diretamente ao guia equivalente; não decidir por idade, tamanho, palavra-chave ou tráfego presumido.",
+      "aliases": [
+        "tecnologia/raizes-do-android-por-que-evitar-o-rooting-e-quando-vale-a-pena-quebrar-as-regras.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/8188bff4d0bf66d2348c152a7282b71680775d86900e1d1980c2c438a71b5bab.json",
+      "destinoEquivalente": "artigos/seguranca/como-o-rooting-do-android-pode-ser-uma-armadilha-avaliando-riscos-e-beneficios.html"
+    },
+    {
+      "url": "artigos/seguranca/a-importancia-da-vpns-na-era-dos-viajantes-digitais.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "A importância da VPNs na era dos viajantes digitais",
+        "data": "2025-07-18T15:20:57.733Z",
+        "corpoHash": "0a212bb8c141ac9a6242e3032ec066384014c9b37d472ff86b0789611502fa04",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/best-travel-vpn/",
+          "titulo": "Best travel VPNs 2025: Expert-tested for streaming and bypassing country blocks",
+          "data": "2025-07-18T15:19:00.000Z"
+        }
+      },
+      "motivo": "Consolidar orientação genérica de VPN em viagem no guia corrigido, sem preservar garantias universais de segurança ou acesso.",
+      "evidencia": "Origem e destino lidos integralmente: mesma pergunta de acesso e Wi-Fi em viagens, mesma fonte e ausência de teste próprio. Origem recomenda múltiplas VPNs e proximidade de servidor como solução genérica sem evidência.",
+      "alternativas": "Snapshot recuperável e redirecionamentos diretos para guia de mesma intenção; não para comparação comercial ou home. Nenhum dado de tráfego foi presumido.",
+      "aliases": [
+        "seguranca/a-importancia-da-vpns-na-era-dos-viajantes-digitais.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/5861cc8dcb2f135620a3372b54479780d076819ddef75be1dc550b58cb2ed4f7.json",
+      "destinoEquivalente": "artigos/seguranca/desbravando-a-internet-como-as-vpns-podem-transformar-suas-viagens.html"
+    },
+    {
+      "url": "artigos/seguranca/a-revolucao-das-vpns-como-escolher-a-melhor-para-suas-viagens-em-2026.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "A revolução das VPNs: como escolher a melhor para suas viagens em 2026",
+        "data": "2026-03-08T09:33:11.739Z",
+        "corpoHash": "bfa0632ba7ad5e1cdb1c666da7d264f98f2e10db2d0133f6c8daf64edd33cf43",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/best-travel-vpn/",
+          "titulo": "Best travel VPNs of 2026: Expert tested and reviewed",
+          "data": "2026-03-08T09:00:13.000Z"
+        }
+      },
+      "motivo": "Consolidar outra orientação de VPN em viagem sem comparação independente nem informação específica do ano do título.",
+      "evidencia": "Origem e destino lidos integralmente: mesma necessidade, fonte e recomendações genéricas; título sugere escolha atualizada, mas corpo não apresenta avaliação de marcas nem medições. Promete anonimato e associa rede maior a velocidade sem teste.",
+      "alternativas": "Manter cópia integral e destino equivalente com limites e preparo de acesso; não inferir obsolescência somente pelo ano ou eliminar artigos de Smart TV com intenção diferente.",
+      "aliases": [
+        "seguranca/a-revolucao-das-vpns-como-escolher-a-melhor-para-suas-viagens-em-2026.html"
+      ],
+      "arquivoRecuperavel": "dados/editorial/arquivados/6dbc4c41fb0d5b005a9f97bbe356b7d0c5869c1f23f467a477f4a8266d14cf3d.json",
+      "destinoEquivalente": "artigos/seguranca/desbravando-a-internet-como-as-vpns-podem-transformar-suas-viagens.html"
+    }
+  ]
+}

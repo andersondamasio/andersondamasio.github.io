@@ -1721,6 +1721,157 @@
         "em": "2026-10-10T12:08:05.767Z"
       },
       "conteudoHash": "f039713716088ccef64a00759eab1c32c9156f178286eff548bf737d142228fb"
+    },
+    {
+      "url": "artigos/seguranca/a-liberdade-de-ter-seus-dados-em-casa-o-poder-do-auto-hospedagem.html",
+      "acao": "atualizar",
+      "motivo": "Retirar migração pessoal não confirmada, superioridade automática da hospedagem doméstica e instalação sem requisitos de manutenção.",
+      "evidencia": "Leitura integral local: migração de notas e NAS atribuída ao autor, segurança e economia generalizadas. Manuais oficiais Nextcloud distinguem hardening e componentes de backup; não houve instalação ou teste de recuperação.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:40:03.283Z"
+      },
+      "conteudoHash": "2277c8da75b3fd998de2337018231d47a00548e96f576aa44cdcf0d2d03daa16"
+    },
+    {
+      "url": "artigos/seguranca/a-seguranca-nao-precisa-ser-um-fardo-como-otimizar-a-experiencia-do-desenvolvedor.html",
+      "acao": "atualizar",
+      "motivo": "Atribuir a proposta à palestrante, corrigir Pit of Success e retirar experiência pessoal e recomendação genérica de microsserviços.",
+      "evidencia": "Leitura integral do corpo local e transcrição primária InfoQ de Dorota Parad. O texto anterior convertia discussão de controles em recomendação universal e omitia a autoria do framework.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:40:03.283Z"
+      },
+      "conteudoHash": "409202e1ad97ff799a47781397f74151b81834679fa322f8307c1a8acc7632aa"
+    },
+    {
+      "url": "artigos/seguranca/como-sincronizar-passkeys-em-diversos-dispositivos-uma-abordagem-pratica.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir a confusão entre armazenamento local e sincronização, menus universais e relato pessoal de falha sem confirmação.",
+      "evidencia": "Leitura integral local: chave privada descrita como sempre restrita ao aparelho enquanto se promete sincronização. Documentação Google distingue provedores e opções de armazenamento, com requisitos específicos de iOS.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:40:03.283Z"
+      },
+      "conteudoHash": "1442575a44175e276497af6afccf7669fe829d291c8930da943157a2fe19091f"
+    },
+    {
+      "url": "artigos/seguranca/como-proteger-seu-smartphone-de-espionagem-dicas-e-recursos-essenciais.html",
+      "acao": "atualizar",
+      "motivo": "Separar proteção de conta e aparelho, retirar uso pessoal não confirmado e garantias de impedir espionagem.",
+      "evidencia": "Leitura integral local e documentação Apple/Google. Modo de Isolamento possui restrições específicas, sem impedir chamadas telefônicas comuns; Programa de Proteção Avançada da conta e proteção do dispositivo Android não são a mesma configuração.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:40:03.283Z"
+      },
+      "conteudoHash": "5845e6bdaa942e37e7eb0e123f3c7fffcff0d6e4172f4aa7c5e3cdc83ba5a00e"
+    },
+    {
+      "url": "artigos/seguranca/como-o-rooting-do-android-pode-ser-uma-armadilha-avaliando-riscos-e-beneficios.html",
+      "acao": "atualizar",
+      "motivo": "Retirar vivência não confirmada e roteiro genérico de desbloqueio que omitia restauração de fábrica, separando root, bootloader e compatibilidade.",
+      "evidencia": "Corpo local lido integralmente. AOSP explicita confirmação e restauração de fábrica ao desbloquear; ajuda Google alerta para perda de proteções em versões modificadas. Não foi conferida garantia específica nem modificado aparelho.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:40:03.283Z"
+      },
+      "conteudoHash": "9f15073256a78ae44b48c41061f5c82a5ca78bf5cd0a4c3de70e9c435cc93dd3"
+    },
+    {
+      "url": "artigos/seguranca/surfshark-e-cyberghost-qual-vpn-e-a-melhor-opcao-para-voce.html",
+      "acao": "atualizar",
+      "motivo": "Retirar teste de velocidade e preferência pessoal não confirmados, e separar declaração comercial de evidência medida.",
+      "evidencia": "Leitura integral local: vencedor de desempenho alegado sem execução e garantias de privacidade. Suportes oficiais publicam limites de dispositivos diferentes; EFF distingue alegação e auditoria de garantia permanente.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:40:03.283Z"
+      },
+      "conteudoHash": "e1347336907838f2a7f0fca98a560b2326fb2570f0518d8f171126a2789101d5"
+    },
+    {
+      "url": "artigos/seguranca/desbravando-a-internet-como-as-vpns-podem-transformar-suas-viagens.html",
+      "acao": "atualizar",
+      "motivo": "Retirar viagens pessoais inventadas, recomendação universal de assinatura e garantias de anonimato ou desbloqueio.",
+      "evidencia": "Corpo local lido integralmente. EFF delimita túnel, relação com HTTPS e confiança no provedor, sem anonimato completo nem acesso garantido a streaming. Marcas antes recomendadas não foram testadas.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:40:03.283Z"
+      },
+      "conteudoHash": "18a426acea201aefb505a029290e9d1546c9eda712256dc06f4a2bc56152bf1d"
+    },
+    {
+      "url": "artigos/seguranca/como-proteger-seu-smartphone-durante-viagens-dicas-praticas-e-tecnologicas.html",
+      "acao": "atualizar",
+      "motivo": "Retirar rotina de viagens e recomendações de acessórios sem teste, substituindo prevenção garantida por preparação documentada.",
+      "evidencia": "Leitura integral local e ajuda Apple/Google: recursos possuem pré-requisitos e apagar tem consequências específicas. Artigo anterior atribuía viagens ao autor e sugeria proteção de acessórios sem avaliação.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:40:03.283Z"
+      },
+      "conteudoHash": "ef578e1e7dd41427debcea13b0f7c40faec139116b20d2716ed346ab5c67c64a"
+    },
+    {
+      "url": "artigos/tecnologia/raizes-do-android-por-que-evitar-o-rooting-e-quando-vale-a-pena-quebrar-as-regras.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar a segunda discussão dos riscos e benefícios de root no guia corrigido, com intenção equivalente.",
+      "evidencia": "Origem e destino lidos integralmente: mesmos riscos, aplicativos, bloatware e preferência pessoal sem confirmação, mesma fonte ZDNet e nenhuma avaliação independente específica preservável na origem.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:40:03.283Z"
+      },
+      "conteudoHash": "9f686aec5c001847ad3098e1fd89d9fe08bd944fae9ff7e9a7ff69397a65e17f",
+      "arquivoHash": "e3be1cf77dd9461fab955ca7fa9f6ee277ade1b601ab48ee11a7cdbb9e981e17",
+      "registrosHash": "b4b892b0fb8ea3ec952d742c00a95b9831be4f3c1a506dbecbf9923aff20b6f2",
+      "aliases": [
+        {
+          "url": "tecnologia/raizes-do-android-por-que-evitar-o-rooting-e-quando-vale-a-pena-quebrar-as-regras.html",
+          "arquivoHash": "46d0e8625251bacb953161033a655e5519e1acfc60c8d80b09190ffaba15a4bc"
+        }
+      ],
+      "destino": "artigos/seguranca/como-o-rooting-do-android-pode-ser-uma-armadilha-avaliando-riscos-e-beneficios.html",
+      "destinoConteudoHash": "9f15073256a78ae44b48c41061f5c82a5ca78bf5cd0a4c3de70e9c435cc93dd3"
+    },
+    {
+      "url": "artigos/seguranca/a-importancia-da-vpns-na-era-dos-viajantes-digitais.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar orientação genérica de VPN em viagem no guia corrigido, sem preservar garantias universais de segurança ou acesso.",
+      "evidencia": "Origem e destino lidos integralmente: mesma pergunta de acesso e Wi-Fi em viagens, mesma fonte e ausência de teste próprio. Origem recomenda múltiplas VPNs e proximidade de servidor como solução genérica sem evidência.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:40:03.283Z"
+      },
+      "conteudoHash": "0a212bb8c141ac9a6242e3032ec066384014c9b37d472ff86b0789611502fa04",
+      "arquivoHash": "3cf4b07467f9e14b9d29d64c04f3373a76415a8dfa63162642b20a30c23f2466",
+      "registrosHash": "9f9945df403470b271880d224bd7289725964992aeb6724ef2b45f775358cb90",
+      "aliases": [
+        {
+          "url": "seguranca/a-importancia-da-vpns-na-era-dos-viajantes-digitais.html",
+          "arquivoHash": "259765d505452659bc6d3d2c9223fc4b6cfb8b8bcb5837e4edffe9a09b71af43"
+        }
+      ],
+      "destino": "artigos/seguranca/desbravando-a-internet-como-as-vpns-podem-transformar-suas-viagens.html",
+      "destinoConteudoHash": "18a426acea201aefb505a029290e9d1546c9eda712256dc06f4a2bc56152bf1d"
+    },
+    {
+      "url": "artigos/seguranca/a-revolucao-das-vpns-como-escolher-a-melhor-para-suas-viagens-em-2026.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar outra orientação de VPN em viagem sem comparação independente nem informação específica do ano do título.",
+      "evidencia": "Origem e destino lidos integralmente: mesma necessidade, fonte e recomendações genéricas; título sugere escolha atualizada, mas corpo não apresenta avaliação de marcas nem medições. Promete anonimato e associa rede maior a velocidade sem teste.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T12:40:03.283Z"
+      },
+      "conteudoHash": "bfa0632ba7ad5e1cdb1c666da7d264f98f2e10db2d0133f6c8daf64edd33cf43",
+      "arquivoHash": "6e2575c3f4786f934d9ecc6cc62f5976fa326fe677fccd6de40d9187959235d1",
+      "registrosHash": "8523eba41c58128b2c51fdc58b9ff9fb17d2b0b7b38b865037b10f968d2805eb",
+      "aliases": [
+        {
+          "url": "seguranca/a-revolucao-das-vpns-como-escolher-a-melhor-para-suas-viagens-em-2026.html",
+          "arquivoHash": "fe4945a695b1b4bc802123eab0cfa558ee8e81f0f7fec07a7fec5456961a5613"
+        }
+      ],
+      "destino": "artigos/seguranca/desbravando-a-internet-como-as-vpns-podem-transformar-suas-viagens.html",
+      "destinoConteudoHash": "18a426acea201aefb505a029290e9d1546c9eda712256dc06f4a2bc56152bf1d"
     }
   ]
 }

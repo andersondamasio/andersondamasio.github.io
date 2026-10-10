@@ -12,6 +12,83 @@ const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.js
 const manifesto = JSON.parse(ler('dados/indexacao.json'));
 const cadastro = JSON.parse(ler('titulos.json'));
 
+test('protecao digital corrige oito guias sem aprovar rascunhos ou renovar a data original', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-protecao-digital-2026-10.json'));
+  assert.equal(lote.artigos.length, 11);
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.experimentosExecutados, false);
+  assert.equal(lote.metricasGoogle, null);
+  assert.equal(lote.linksExternosConhecidos, null);
+  const corrigidos = lote.artigos.filter(a => a.acao === 'atualizar');
+  assert.equal(corrigidos.length, 8);
+  for (const a of corrigidos) {
+    const q = cheerio.load(ler(a.url)), r = cadastro.find(r => r.url === a.url);
+    const d = manifesto.decisoes.find(d => d.url === a.url);
+    assert.equal(d.acao, 'atualizar'); assert.equal(d.motivo, a.motivo);
+    assert.equal(r.data, a.antes.data); assert.equal(r.seo.modifiedAt, lote.em);
+    assert.equal(r.correcaoEditorial.revisaoHumana, false);
+    assert.equal(r.correcaoEditorial.relatorio, 'dados/editorial/curadoria-protecao-digital-2026-10.json');
+    assert.equal(r.qualidadeEditorial, undefined); assert.equal(r.dataFonte, undefined);
+    assert.equal(q('h1').text(), a.depois.titulo);
+    assert.equal(q('meta[name=description]').attr('content'), a.depois.descricao);
+    assert.equal(q('meta[property="article:published_time"]').attr('content'), a.antes.data);
+    assert.equal(q('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    assert.doesNotMatch(q('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(hashCorpoEditorial(q('.article-body').html()), a.depois.corpoHash);
+    assert.equal(d.conteudoHash, a.depois.corpoHash);
+    assert.equal(q('.contribuicao-editorial').length, 1);
+    assert.equal(q('.limites-editoriais').length, 1);
+    assert.ok(a.pergunta && a.sobreposicao);
+    for (const e of a.evidencias) {
+      assert.equal(q(e.seletor).length, 1);
+      assert.equal(hashCorpoEditorial(q(e.seletor).html()), e.textoHash);
+      assert.equal(q(e.seletor).find('a').attr('href'), e.fonte);
+    }
+  }
+  const pagina = trecho => cheerio.load(ler(corrigidos.find(a => a.url.includes(trecho)).url));
+  assert.match(pagina('rooting')('.fato-bootloader').text(), /restauração de fábrica/);
+  assert.equal(pagina('rooting')('.article-body pre').length, 0);
+  assert.match(pagina('espionagem')('.fato-lockdown').text(), /Chamadas telefônicas.*continuam funcionando/);
+  assert.match(pagina('espionagem')('.fato-aparelho').text(), /Device protection.*Account protection/);
+  assert.match(pagina('surfshark')('.fato-cyberghost').text(), /sete dispositivos.*simultaneamente/);
+  assert.match(pagina('surfshark')('.limites-editoriais').text(), /Não foram contratadas ou testadas/);
+  assert.match(pagina('desbravando')('.fato-tunel').text(), /não garante.*streaming/);
+  assert.match(pagina('smartphone-durante')('.fato-google').text(), /impede continuar localizando/);
+  assert.match(pagina('smartphone-durante')('.fato-apple').text(), /retira o Bloqueio de Ativação/);
+  assert.match(pagina('experiencia-do-desenvolvedor')('.fato-bliss').text(), /Dorota Parad/);
+});
+
+test('tres consolidacoes de protecao digital preservam copias e apontam diretamente para guias equivalentes', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-protecao-digital-2026-10.json'));
+  const consolidados = lote.artigos.filter(a => a.acao === 'consolidar');
+  assert.equal(consolidados.length, 3);
+  const sitemap = cheerio.load(ler('sitemap.xml'), { xmlMode: true });
+  const urls = sitemap('loc').map((_, e) => sitemap(e).text()).get();
+  for (const a of consolidados) {
+    const d = manifesto.decisoes.find(d => d.url === a.url);
+    const copia = JSON.parse(ler(a.arquivoRecuperavel));
+    assert.equal(d.acao, 'consolidar'); assert.equal(d.destino, a.destinoEquivalente);
+    assert.equal(hashRegistros(copia.registros), d.registrosHash);
+    assert.equal(hashArquivo(copia.arquivos[0].html), d.arquivoHash);
+    assert.equal(hashCorpoEditorial(cheerio.load(copia.arquivos[0].html)('.article-body').html()), a.antes.corpoHash);
+    assert.ok(!cadastro.some(r => r.url === a.url));
+    for (const p of [a.url, ...a.aliases]) {
+      const q = cheerio.load(ler(p));
+      assert.equal(q('.article-body').length, 0);
+      assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${d.destino}`);
+      assert.equal(q('meta[http-equiv=refresh]').attr('content'), `0; url=https://www.andersondamasio.com.br/${d.destino}`);
+      assert.match(q('meta[name=robots]').attr('content'), /noindex/);
+      assert.ok(!urls.includes(`https://www.andersondamasio.com.br/${p}`));
+    }
+    const destino = cheerio.load(ler(d.destino));
+    assert.equal(hashCorpoEditorial(destino('.article-body').html()), d.destinoConteudoHash);
+    assert.doesNotMatch(destino('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(destino('meta[http-equiv=refresh]').length, 0);
+    assert.ok(urls.includes(`https://www.andersondamasio.com.br/${d.destino}`));
+  }
+});
+
 test('web nativa preserva cronologia e indexacao e distingue ensaio de revisao documental', () => {
   const lote = JSON.parse(ler('dados/editorial/curadoria-web-nativa-2026-10.json'));
   assert.equal(lote.revisaoHumana, false);
