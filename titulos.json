@@ -14136,13 +14136,25 @@
     "urlFonte": "https://techcrunch.com/2025/07/02/could-googles-veo-3-be-the-start-of-playable-world-models/"
   },
   {
-    "titulo": "A segurança não precisa ser um fardo: como otimizar a experiência do desenvolvedor",
-    "noticiaOriginal": "Presentation: Security or Convenience - Why Not Both?",
+    "titulo": "BLISS: como revisar segurança sem criar obstáculos inúteis",
+    "noticiaOriginal": "InfoQ: Security or Convenience - Why Not Both?",
     "url": "artigos/seguranca/a-seguranca-nao-precisa-ser-um-fardo-como-otimizar-a-experiencia-do-desenvolvedor.html",
     "data": "2025-07-03T10:21:34.193Z",
-    "dataFonte": "2025-07-03T09:24:00.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.infoq.com/presentations/security-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://www.infoq.com/presentations/security-productivity/",
+    "seo": {
+      "description": "A proposta BLISS de Dorota Parad e um roteiro para revisar controles de segurança, sem prescrever microsserviços ou relatar experiências não realizadas.",
+      "modifiedAt": "2026-10-10T12:40:03.283Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T12:40:03.283Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Atribuir a proposta à palestrante, corrigir Pit of Success e retirar experiência pessoal e recomendação genérica de microsserviços.",
+      "hashAntes": "2dcb13442fe9b3aeef13f88cd4aef7eab20ab3e7c9cf10cc46e8fe2af09df840",
+      "hashDepois": "409202e1ad97ff799a47781397f74151b81834679fa322f8307c1a8acc7632aa",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-protecao-digital-2026-10.json"
+    }
   },
   {
     "titulo": "Gerando Vídeos com Veo 3: O Futuro da Criação de Conteúdo em Nossas Mãos",
@@ -17119,15 +17131,6 @@
     "urlFonte": "https://www.zdnet.com/article/wacom-says-its-new-drawing-tablet-needs-no-setup-and-has-a-pen-that-cant-die/"
   },
   {
-    "titulo": "A importância da VPNs na era dos viajantes digitais",
-    "noticiaOriginal": "Best travel VPNs 2025: Expert-tested for streaming and bypassing country blocks",
-    "url": "artigos/seguranca/a-importancia-da-vpns-na-era-dos-viajantes-digitais.html",
-    "data": "2025-07-18T15:20:57.733Z",
-    "dataFonte": "2025-07-18T15:19:00.000Z",
-    "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/best-travel-vpn/"
-  },
-  {
     "titulo": "A revolução dos buscadores: DuckDuckGo e o desafio das imagens geradas por IA",
     "noticiaOriginal": "DuckDuckGo now lets you hide AI-generated images in search results",
     "url": "artigos/tecnologia/a-revolucao-dos-buscadores-duckduckgo-e-o-desafio-das-imagens-geradas-por-ia.html",
@@ -18268,13 +18271,25 @@
     ]
   },
   {
-    "titulo": "Surfshark e CyberGhost: Qual VPN é a Melhor Opção para Você?",
-    "noticiaOriginal": "Surfshark vs. CyberGhost: Which VPN should you get?",
+    "titulo": "Surfshark ou CyberGhost: requisitos para comparar as VPNs",
+    "noticiaOriginal": "Surfshark: simultaneous devices",
     "url": "artigos/seguranca/surfshark-e-cyberghost-qual-vpn-e-a-melhor-opcao-para-voce.html",
     "data": "2025-07-24T11:18:17.613Z",
-    "dataFonte": "2025-07-24T11:00:18.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/surfshark-vs-cyberghost/"
+    "urlFonte": "https://support.surfshark.com/hc/en-us/articles/360003069434-How-many-devices-can-I-use-with-Surfshark-simultaneously",
+    "seo": {
+      "description": "Limites de conexões informados por Surfshark e CyberGhost e critérios para comparar condições e desempenho, sem teste inventado ou vencedor sem evidência.",
+      "modifiedAt": "2026-10-10T12:40:03.283Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T12:40:03.283Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar teste de velocidade e preferência pessoal não confirmados, e separar declaração comercial de evidência medida.",
+      "hashAntes": "b4ad744f79ee622dd1381399f50b6b90c7eabcdec37dff78645b1b2f6b8c60d8",
+      "hashDepois": "e1347336907838f2a7f0fca98a560b2326fb2570f0518d8f171126a2789101d5",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-protecao-digital-2026-10.json"
+    }
   },
   {
     "titulo": "Rust e Serverless: A Dupla Dinâmica para Performance em Nuvem",
@@ -18520,13 +18535,25 @@
     "urlFonte": "https://www.zdnet.com/article/why-i-recommend-this-bluetooth-tracker-to-both-iphone-and-android-users-over-airtags/"
   },
   {
-    "titulo": "Como Sincronizar Passkeys em Diversos Dispositivos: Uma Abordagem Prática",
-    "noticiaOriginal": "How to sync passkeys in Chrome across your Android, iPhone, Mac, or PC (and why you should)",
+    "titulo": "Passkeys entre dispositivos: confira onde a credencial foi salva",
+    "noticiaOriginal": "Google Identity: Supported environments",
     "url": "artigos/seguranca/como-sincronizar-passkeys-em-diversos-dispositivos-uma-abordagem-pratica.html",
     "data": "2025-07-30T21:19:47.575Z",
-    "dataFonte": "2025-07-30T21:14:00.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/how-to-sync-passkeys-in-chrome-across-your-android-iphone-mac-or-pc-and-why-you-should/"
+    "urlFonte": "https://developers.google.com/identity/passkeys/supported-environments",
+    "seo": {
+      "description": "Diferencie provedor, conta e armazenamento local antes de diagnosticar uma passkey ausente em outro aparelho. Fontes Google e roteiro de verificação.",
+      "modifiedAt": "2026-10-10T12:40:03.283Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T12:40:03.283Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir a confusão entre armazenamento local e sincronização, menus universais e relato pessoal de falha sem confirmação.",
+      "hashAntes": "0f460af3015588702cf43deb9b49640a9a4145a943ea69121f0d71e3dcb946d3",
+      "hashDepois": "1442575a44175e276497af6afccf7669fe829d291c8930da943157a2fe19091f",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-protecao-digital-2026-10.json"
+    }
   },
   {
     "titulo": "Desafios de Segurança na Indústria Espacial: Lições que Podemos Aprender",
@@ -19819,13 +19846,25 @@
     "urlFonte": "https://www.zdnet.com/article/should-you-upgrade-from-m1-to-m4-macbook-pro-i-did-and-it-was-totally-worth-it/"
   },
   {
-    "titulo": "Desbravando a Internet: Como as VPNs Podem Transformar Suas Viagens",
-    "noticiaOriginal": "Best travel VPNs 2025: Expert-tested for streaming and avoiding censorship",
+    "titulo": "VPN em viagens: o que protege e o que precisa ser verificado",
+    "noticiaOriginal": "EFF: Choosing the VPN That's Right for You",
     "url": "artigos/seguranca/desbravando-a-internet-como-as-vpns-podem-transformar-suas-viagens.html",
     "data": "2025-08-06T09:29:24.997Z",
-    "dataFonte": "2025-08-06T09:15:15.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/best-travel-vpn/"
+    "urlFonte": "https://ssd.eff.org/module/vpn.html",
+    "seo": {
+      "description": "O alcance do túnel VPN, os limites de anonimato e um roteiro para preparar acessos em viagens, sem garantir desbloqueio de serviços ou indicar marcas.",
+      "modifiedAt": "2026-10-10T12:40:03.283Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T12:40:03.283Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar viagens pessoais inventadas, recomendação universal de assinatura e garantias de anonimato ou desbloqueio.",
+      "hashAntes": "a055699c3f7a1fc22d6e01bf2180b27ed2e8d1ca6400449c26eac0ebaeab4771",
+      "hashDepois": "18a426acea201aefb505a029290e9d1546c9eda712256dc06f4a2bc56152bf1d",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-protecao-digital-2026-10.json"
+    }
   },
   {
     "titulo": "Acessórios MagSafe: A Revolução em Funcionalidades para seu iPhone",
@@ -26571,13 +26610,25 @@
     "urlFonte": "https://techcrunch.com/2025/09/08/reorbit-lands-record-funding-to-take-on-musks-starlink-from-europe/"
   },
   {
-    "titulo": "Como proteger seu smartphone durante viagens: dicas práticas e tecnológicas",
-    "noticiaOriginal": "Traveling soon? 5 simple ways I thwart phone thieves - and you can too",
+    "titulo": "Antes de viajar: prepare o celular para perda de acesso e dados",
+    "noticiaOriginal": "Apple: If your iPhone or iPad was stolen",
     "url": "artigos/seguranca/como-proteger-seu-smartphone-durante-viagens-dicas-praticas-e-tecnologicas.html",
     "data": "2025-09-09T05:18:11.953Z",
-    "dataFonte": "2025-09-09T02:00:17.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/traveling-soon-5-simple-ways-i-thwart-phone-thieves-and-you-can-too/"
+    "urlFonte": "https://support.apple.com/en-us/120837",
+    "seo": {
+      "description": "Confira dependências de localização, backup e recuperação de contas antes de viajar, com limites de Buscar e Find Hub e alertas sobre apagamento remoto.",
+      "modifiedAt": "2026-10-10T12:40:03.283Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T12:40:03.283Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar rotina de viagens e recomendações de acessórios sem teste, substituindo prevenção garantida por preparação documentada.",
+      "hashAntes": "ec3d71d41ceb01d43558867ad59fd49e6278ee137b6c2499d07fe8944fc8afc1",
+      "hashDepois": "ef578e1e7dd41427debcea13b0f7c40faec139116b20d2716ed346ab5c67c64a",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-protecao-digital-2026-10.json"
+    }
   },
   {
     "titulo": "A migração do Vale do Silício: Desafios e Oportunidades para Startups de Tecnologia",
@@ -28659,13 +28710,25 @@
     "urlFonte": "https://www.zdnet.com/article/i-replaced-my-airpods-max-with-the-airpods-pro-3-and-didnt-mind-the-300-price-gap/"
   },
   {
-    "titulo": "A liberdade de ter seus dados em casa: o poder do auto-hospedagem",
-    "noticiaOriginal": "Keep your data out of third-party clouds by self-hosting - here's how",
+    "titulo": "Auto-hospedagem: o que assumir antes de migrar seus dados",
+    "noticiaOriginal": "Nextcloud: Backup",
     "url": "artigos/seguranca/a-liberdade-de-ter-seus-dados-em-casa-o-poder-do-auto-hospedagem.html",
     "data": "2025-09-19T10:21:51.462Z",
-    "dataFonte": "2025-09-19T10:00:37.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/keep-your-data-out-of-third-party-clouds-by-self-hosting-heres-how/"
+    "urlFonte": "https://docs.nextcloud.com/server/stable/admin_manual/maintenance/backup.html",
+    "seo": {
+      "description": "Responsabilidades de atualização, acesso e recuperação na auto-hospedagem, com documentação Nextcloud e um roteiro proposto de decisão.",
+      "modifiedAt": "2026-10-10T12:40:03.283Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T12:40:03.283Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar migração pessoal não confirmada, superioridade automática da hospedagem doméstica e instalação sem requisitos de manutenção.",
+      "hashAntes": "05fa794313e01492b8a3d7ad0f178d314b31e51fd5fef8bcf6ec46f5d31f0d23",
+      "hashDepois": "2277c8da75b3fd998de2337018231d47a00548e96f576aa44cdcf0d2d03daa16",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-protecao-digital-2026-10.json"
+    }
   },
   {
     "titulo": "Desvendando os Óculos Inteligentes da Meta: Vale a Pena Investir na Nova Geração?",
@@ -40997,13 +41060,25 @@
     "urlFonte": "https://www.zdnet.com/article/this-free-windows-app-turns-your-laptop-screen-into-a-ring-light-how-to-try-it/"
   },
   {
-    "titulo": "Como o Rooting do Android Pode Ser Uma Armadilha: Avaliando Riscos e Benefícios",
-    "noticiaOriginal": "12 reasons not to root your Android phone - and the only time I would",
+    "titulo": "Root no Android: permissões, bootloader e risco de perda de dados",
+    "noticiaOriginal": "Android: Lock and unlock the bootloader",
     "url": "artigos/seguranca/como-o-rooting-do-android-pode-ser-uma-armadilha-avaliando-riscos-e-beneficios.html",
     "data": "2025-11-20T04:23:46.923Z",
-    "dataFonte": "2025-11-20T03:00:36.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/12-reasons-not-to-root-your-android-phone-and-the-only-time-i-would/"
+    "urlFonte": "https://source.android.com/docs/core/architecture/bootloader/locking_unlocking",
+    "seo": {
+      "description": "Entenda a diferença entre root e desbloqueio do bootloader e o risco de apagar dados, com documentação Android e critérios para decidir antes de modificar.",
+      "modifiedAt": "2026-10-10T12:40:03.283Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T12:40:03.283Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar vivência não confirmada e roteiro genérico de desbloqueio que omitia restauração de fábrica, separando root, bootloader e compatibilidade.",
+      "hashAntes": "bfe5dea9ee6ca0b05b0de4d7d24a32399421f51f46d1b6c9ddc4a3d202430fb2",
+      "hashDepois": "9f15073256a78ae44b48c41061f5c82a5ca78bf5cd0a4c3de70e9c435cc93dd3",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-protecao-digital-2026-10.json"
+    }
   },
   {
     "titulo": "Como dar uma nova vida ao seu Galaxy Watch em 30 segundos",
@@ -41265,15 +41340,6 @@
     "dataFonte": "2025-11-21T11:00:31.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/t-mobile-will-give-you-an-iphone-16e-at-zero-cost-right-now-heres-how-to-get-one/"
-  },
-  {
-    "titulo": "Raízes do Android: Por Que Evitar o Rooting e Quando Vale a Pena Quebrar as Regras",
-    "noticiaOriginal": "12 reasons to avoid rooting your Android phone at all costs - and the only time I break the rules",
-    "url": "artigos/tecnologia/raizes-do-android-por-que-evitar-o-rooting-e-quando-vale-a-pena-quebrar-as-regras.html",
-    "data": "2025-11-21T12:40:28.611Z",
-    "dataFonte": "2025-11-21T12:37:00.000Z",
-    "categoria": "Tecnologia",
-    "urlFonte": "https://www.zdnet.com/article/12-reasons-not-to-root-your-android-phone-and-the-only-time-i-would/"
   },
   {
     "titulo": "Como proteger seu bolso da nova onda de fraudes digitais: O que é ghost tapping?",
@@ -61510,15 +61576,6 @@
     "urlFonte": "https://www.zdnet.com/article/windows-12-release-date-features-rumors-complaints/"
   },
   {
-    "titulo": "A revolução das VPNs: como escolher a melhor para suas viagens em 2026",
-    "noticiaOriginal": "Best travel VPNs of 2026: Expert tested and reviewed",
-    "url": "artigos/seguranca/a-revolucao-das-vpns-como-escolher-a-melhor-para-suas-viagens-em-2026.html",
-    "data": "2026-03-08T09:33:11.739Z",
-    "dataFonte": "2026-03-08T09:00:13.000Z",
-    "categoria": "Segurança",
-    "urlFonte": "https://www.zdnet.com/article/best-travel-vpn/"
-  },
-  {
     "titulo": "Como Consultar Dados Distribuídos sem Estresse: A Nova Funcionalidade do BigQuery",
     "noticiaOriginal": "Google BigQuery Previews Cross-Region SQL Queries for Distributed Data",
     "url": "artigos/banco-de-dados/como-consultar-dados-distribuidos-sem-estresse-a-nova-funcionalidade-do-bigquery.html",
@@ -70441,13 +70498,25 @@
     "urlFonte": "https://techcrunch.com/2026/05/23/nuclear-startup-deep-fission-says-its-going-public-again-and-i-have-questions/"
   },
   {
-    "titulo": "Como Proteger Seu Smartphone de Espionagem: Dicas e Recursos Essenciais",
-    "noticiaOriginal": "These special phone and app features can help protect you from spyware",
+    "titulo": "Proteção contra spyware: conta e aparelho exigem verificações diferentes",
+    "noticiaOriginal": "Apple: Sobre o Modo de Isolamento",
     "url": "artigos/seguranca/como-proteger-seu-smartphone-de-espionagem-dicas-e-recursos-essenciais.html",
     "data": "2026-05-23T16:14:52.536Z",
-    "dataFonte": "2026-05-23T16:00:00.000Z",
     "categoria": "Segurança",
-    "urlFonte": "https://techcrunch.com/2026/05/23/you-dont-have-to-click-anything-to-get-hacked-anymore-heres-how-to-fight-back/"
+    "urlFonte": "https://support.apple.com/pt-br/105120",
+    "seo": {
+      "description": "Limites do Modo de Isolamento e diferença entre proteção da Conta Google e do Android, com fontes oficiais e uma ficha proposta para conferir requisitos.",
+      "modifiedAt": "2026-10-10T12:40:03.283Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T12:40:03.283Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Separar proteção de conta e aparelho, retirar uso pessoal não confirmado e garantias de impedir espionagem.",
+      "hashAntes": "aac4935110659afd6e3a0ef3b85a6fb3a5bae93c2e31318996baf092f6a5a812",
+      "hashDepois": "5845e6bdaa942e37e7eb0e123f3c7fffcff0d6e4172f4aa7c5e3cdc83ba5a00e",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-protecao-digital-2026-10.json"
+    }
   },
   {
     "titulo": "A revolução dos aspiradores robóticos: como a tecnologia está transformando nossas casas",
