@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const cheerio = require("cheerio");
 const { avaliarGeneroEditorial } = require("./editorial-policy");
-const { normalizarFonteUrl } = require("./seo-source-citation");
+const { normalizarUrlComparacaoFonte } = require("./seo-source-citation");
 
 function listarHtml(diretorio, saida = []) {
   if (!fs.existsSync(diretorio)) return saida;
@@ -30,7 +30,7 @@ function inventariarAcervo(root = process.cwd()) {
       if (!porUrl.has(url)) porUrl.set(url, []);
       porUrl.get(url).push(registro);
     }
-    const fonte = normalizarFonteUrl(registro.urlFonte);
+    const fonte = normalizarUrlComparacaoFonte(registro.urlFonte);
     if (fonte) {
       if (!fontes.has(fonte)) fontes.set(fonte, []);
       fontes.get(fonte).push({ titulo: registro.titulo, url: registro.url || null });
@@ -49,7 +49,7 @@ function inventariarAcervo(root = process.cwd()) {
     const titulo = $("h1").first().text().trim();
     const genero = avaliarGeneroEditorial({ titulo, corpoArtigo: corpo.html() });
     const motivos = [...genero.motivos];
-    if (registrosUrl.some(registro => (fontes.get(normalizarFonteUrl(registro.urlFonte)) || []).length > 1)) {
+    if (registrosUrl.some(registro => (fontes.get(normalizarUrlComparacaoFonte(registro.urlFonte)) || []).length > 1)) {
       motivos.push("fonte-compartilhada-requer-comparacao");
     }
     if (!registrosUrl.length) motivos.push("sem-registro-com-url-explicita");
@@ -83,7 +83,7 @@ function inventariarAcervo(root = process.cwd()) {
     versao: 1,
     geradoEm: new Date().toISOString(),
     escopo: "HTML locais em artigos; sem consultas HTTP ou ao Search Console",
-    limites: "Sinais sao candidatos, nao erros confirmados. Sem consultar a fonte, citacoes podem ser sinalizadas. Ausencia de sinal nao aprova o artigo. Nenhuma decisao de indexacao e aplicada.",
+    limites: "Sinais sao candidatos, nao erros confirmados. URLs de fontes repetidas sao chaves de comparacao sem rastreamento conhecido, nao canonicals verificadas. Fonte compartilhada nao prova duplicidade de intencao. Sem consultar a fonte, citacoes podem ser sinalizadas. Ausencia de sinal nao aprova o artigo. Nenhuma decisao de indexacao e aplicada.",
     resumo: {
       artigos: artigos.length,
       candidatosVivencia: artigos.filter(artigo => artigo.sinais.length).length,

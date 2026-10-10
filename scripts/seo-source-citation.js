@@ -17,6 +17,23 @@ function limparTituloFonte(title) {
     .trim();
 }
 
+// Chave de triagem; nunca substitui a URL citada ou uma canonical publicada.
+function normalizarUrlComparacaoFonte(url) {
+  const normalizada = normalizarFonteUrl(url);
+  if (!normalizada) return null;
+  const parsed = new URL(normalizada);
+  if (parsed.username || parsed.password) return null;
+  for (const key of [...parsed.searchParams.keys()]) {
+    if (/^(utm_|fbclid$|gclid$|mc_cid$|mc_eid$|at_medium$|at_campaign$|cmpid$|guccounter$)/i.test(key)) {
+      parsed.searchParams.delete(key);
+    }
+  }
+  // Uniformiza a codificacao mesmo quando nao havia rastreamento para remover.
+  parsed.search = parsed.searchParams.toString();
+  // Uma barra no fim de um valor de query faz parte desse valor, nao do caminho.
+  return parsed.search ? parsed.href : parsed.href.replace(/\/$/, "");
+}
+
 function criarFonteSchema({ sourceUrl, sourceTitle }) {
   const url = normalizarFonteUrl(sourceUrl);
   if (!url) return null;
@@ -70,5 +87,6 @@ function artigoTemFonteEditorial(item, expectedSourceUrl) {
 module.exports = {
   artigoTemFonteEditorial,
   criarFonteSchema,
-  normalizarFonteUrl
+  normalizarFonteUrl,
+  normalizarUrlComparacaoFonte
 };

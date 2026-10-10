@@ -313,3 +313,36 @@ test("inventario e somente leitura e nunca resolve silenciosamente URLs ambiguas
   assert.equal(inventario.artigos[0].robots, "noindex,follow");
   assert.deepEqual(snapshot(root), antes);
 }));
+
+test('inventario agrupa variantes de rastreamento mas preserva conteudo e cadastro', async () => comWorkspace(root => {
+  fs.mkdirSync(path.join(root, 'artigos'), { recursive: true });
+  const registros = [
+    { titulo: 'Um assunto', url: 'artigos/a.html', urlFonte: 'https://example.org/doc?id=1&utm_source=feed#secao' },
+    { titulo: 'Outro recorte', url: 'artigos/b.html', urlFonte: 'https://example.org/doc?id=1' },
+    { titulo: 'Outra versao', url: 'artigos/c.html', urlFonte: 'https://example.org/doc?id=2' }
+  ];
+  for (const r of registros) fs.writeFileSync(path.join(root, r.url), `<h1>${r.titulo}</h1><div class="article-body"><p>Texto de fixture sem relato pessoal.</p></div>`);
+  fs.writeFileSync(path.join(root, 'titulos.json'), JSON.stringify(registros));
+  const antes = snapshot(root), resultado = inventariarAcervo(root);
+  assert.deepEqual(resultado.fontesRepetidas, [{ url: 'https://example.org/doc?id=1', registros: registros.slice(0, 2).map(({ titulo, url }) => ({ titulo, url })) }]);
+  for (const artigo of resultado.artigos) {
+    assert.equal(artigo.motivos.includes('fonte-compartilhada-requer-comparacao'), artigo.url !== 'artigos/c.html');
+    assert.equal(artigo.decisao, 'triagem_pendente');
+  }
+  assert.deepEqual(snapshot(root), antes);
+}));
+
+test('publicador integrado rejeita fonte reapresentada com UTM sem escrever site', async () => comWorkspace(root => {
+  const aprovado = aprovacaoFixture();
+  fs.writeFileSync(path.join(root, 'titulos.json'), JSON.stringify([{
+    titulo: 'Recorte com palavras diferentes', url: 'artigos/anterior.html',
+    urlFonte: aprovado.fonte.url + '?utm_medium=rss#resumo', data: '2026-09-01T00:00:00Z'
+  }]));
+  fs.writeFileSync(path.join(root, 'index.html'), 'Home protegida');
+  fs.writeFileSync(path.join(root, 'sitemap.xml'), 'Sitemap protegido');
+  fs.writeFileSync(path.join(root, 'rss.xml'), 'Feed protegido');
+  const antes = snapshot(root);
+  process.chdir(root);
+  assert.throws(() => publicarRascunhoAprovado(aprovado, { agora: new Date('2026-10-09T12:00:00Z') }), /sobreposicao-a-revisar/);
+  assert.deepEqual(snapshot(root), antes);
+}));

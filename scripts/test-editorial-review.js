@@ -89,6 +89,31 @@ test("HTML ativo e URLs inseguras sao recusados, codigo escapado permanece valid
   assert.equal(avaliarHtmlEditorial('<p>Exemplo:</p><pre><code>&lt;script&gt;alert(1)&lt;/script&gt;</code></pre>').aceita, true);
 });
 
+test('mesma fonte com rastreamento diferente exige revisao inclusive na publicacao', () => {
+  const r = rascunhoFixture();
+  const anterior = { titulo: 'Outro titulo sem palavras em comum', url: 'artigos/arquitetura/anterior.html',
+    urlFonte: r.fonte.url + '/?utm_source=feed&utm_campaign=noticias#secao' };
+  const candidatos = candidatosDuplicidade(r, [anterior]);
+  assert.deepEqual(candidatos, [{ url: anterior.url, titulo: anterior.titulo, mesmaFonte: true }]);
+  assert.ok(validarDossie(r, [anterior]).motivos.includes('sobreposicao-a-revisar'));
+  const aprovadoAntes = aprovacaoFixture(r);
+  const hashAntes = hashRascunho(aprovadoAntes);
+  assert.ok(validarAprovacao(aprovadoAntes, [anterior]).motivos.includes('sobreposicao-a-revisar'));
+  assert.equal(hashRascunho(aprovadoAntes), hashAntes);
+  r.dossie.duplicidade.candidatos = [{ ...candidatos[0], justificativa: 'Recorte diferente conferido apenas nesta fixture sintetica.' }];
+  assert.equal(validarDossie(r, [anterior]).aceita, true);
+  assert.equal(validarAprovacao(aprovacaoFixture(r, [anterior]), [anterior]).aceita, true);
+});
+
+test('comparacao nao confunde parametros de conteudo nem fontes ausentes', () => {
+  const r = { titulo: 'Uma nova pergunta sobre armazenamento', fonte: { url: 'https://example.org/doc?id=2' } };
+  assert.deepEqual(candidatosDuplicidade(r, [{ titulo: 'Tema distinto', url: 'artigos/a.html', urlFonte: 'https://example.org/doc?id=1&utm_source=feed' }]), []);
+  const semFonte = { titulo: 'Contratos de mensagens para eventos' };
+  assert.deepEqual(candidatosDuplicidade(semFonte, [{ ...semFonte, url: 'artigos/b.html' }]), [{ url: 'artigos/b.html', titulo: semFonte.titulo, mesmaFonte: false }]);
+  assert.deepEqual(candidatosDuplicidade(r, [{ titulo: r.titulo, urlFonte: r.fonte.url }]), []);
+  assert.deepEqual(candidatosDuplicidade(r, [{ titulo: r.titulo, url: 'artigos/a.html', urlFonte: r.fonte.url, localizacao: { estado: 'pendente' } }]), []);
+});
+
 test("imagem requer origem, direitos, texto alternativo e dimensoes", () => {
   const r = rascunhoFixture();
   r.corpoArtigo += '<figure><img src="/assets/teste.png" alt="Contrato de teste" width="800" height="500"><figcaption>Diagrama de teste.</figcaption></figure>';
