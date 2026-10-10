@@ -1,0 +1,278 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T06:44:46.166Z",
+  "base": "1fe543cac0d3c39cf2225606a8008a3cac456674",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": false,
+  "escopo": "Sete correcoes contextuais de seguranca com leitura integral, fontes primarias e limites. URLs, indexacao e publicacao original preservadas. Sem chamadas pagas, aprovacao de rascunho ou testes de seguranca em sistemas reais.",
+  "datasDasFontes": "Comunicados identificados por data historica; documentacao consultada na revisao sem inventar publicacao. Nenhum anuncio antigo tratado como oferta ou estado atual de investigacao.",
+  "pendentesRelacionadas": [
+    {
+      "url": "artigos/seguranca/a-importancia-da-resiliencia-em-sistemas-aprendizados-do-incidente-da-victoria-s-secret.html",
+      "motivo": "Leitura integral encontrou garantias genericas de isolamento de falhas com microservicos e saude inferida de status HTTP. Recorte de disponibilidade distinto da autorizacao; requer correcao tecnica propria, nao aprovado nesta etapa."
+    }
+  ],
+  "artigos": [
+    {
+      "url": "artigos/seguranca/victoria-s-secret-e-o-alerta-de-seguranca-licoes-para-arquitetos-de-software.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Victoria's Secret e o Alerta de Segurança: Lições para Arquitetos de Software",
+        "data": "2025-06-02T04:29:51.948Z",
+        "corpoHash": "f189f867e36da16088fe8720a21c39d40719926866984293995db4a78b6127fb",
+        "fonte": {
+          "url": "https://www.bbc.com/news/articles/cwy6l5573jyo",
+          "titulo": "Victoria's Secret takes down US website after 'security incident'",
+          "data": "2025-05-29T10:59:05.000Z"
+        }
+      },
+      "motivo": "Retirar middleware incompleto apresentado como garantia de seguranca e relato de projeto nao comprovado; distinguir fatos do incidente e proposta de autorizacao.",
+      "evidencia": "Leitura integral identificou AuthMiddleware sem registro/configuracao/politica de recurso e alegacao pessoal de rate limiting. Comunicado da companhia na SEC nao atribui o incidente a ASP.NET ou autenticacao.",
+      "depois": {
+        "titulo": "Victoria's Secret: incidente e limites de um exemplo de autenticação",
+        "descricao": "O comunicado de 2025 e uma revisão proposta de acesso em ASP.NET Core, sem atribuir causa ao incidente nem tratar um middleware isolado como proteção completa.",
+        "corpoHash": "a72c65197609f6fa30127cb51ea8c61007aef06552bbb0fa528397c8b6bc807d"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-incidente",
+          "fonte": "https://www.sec.gov/Archives/edgar/data/1856437/000185643725000026/ex991vsco632025.htm",
+          "consultadoEm": "2026-10-10T06:44:46.166Z",
+          "textoHash": "6ef0453261a04061cb6ed1685cef44510a0fa85c5e83da1e53ca44c9addc41df"
+        },
+        {
+          "seletor": ".fato-autenticacao",
+          "fonte": "https://learn.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-10.0",
+          "consultadoEm": "2026-10-10T06:44:46.166Z",
+          "textoHash": "64c759f8c98d66c10e52d6f5c3f1b7900749e018458770bc30978f980a1e00e9"
+        },
+        {
+          "seletor": ".fato-autorizacao",
+          "fonte": "https://learn.microsoft.com/en-us/aspnet/core/security/authorization/secure-data?view=aspnetcore-10.0",
+          "consultadoEm": "2026-10-10T06:44:46.166Z",
+          "textoHash": "085e0e5682ea4b5f0fa7947cbae0b8091f9eba810c0fa2dfa883c961f1601462"
+        }
+      ],
+      "pergunta": "O que o incidente permite afirmar e por que verificar login nao basta para autorizar acesso a um pedido?",
+      "sobreposicao": "Outro artigo da Victoria's Secret foi lido integralmente: trata de disponibilidade/health check, nao de autorizacao. Requer correcao propria de garantias e esta registrado como pendencia; sem consolidacao por empresa em comum.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/a-nova-era-dos-testes-de-ia-desvendando-riscos-e-seguranca.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A nova era dos testes de IA: desvendando riscos e segurança",
+        "data": "2025-06-28T06:26:40.231Z",
+        "corpoHash": "ec947edf259c76c4db942602c9b369c6d5e2e696058859a3de33e2bf12148d7f",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2025/06/ai-testing-guide/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "OWASP Launches AI Testing Guide to Address Security, Bias, and Risk in AI Systems",
+          "data": "2025-06-28T05:23:00.000Z"
+        }
+      },
+      "motivo": "Corrigir estado do guia, retirar experiencia pessoal e promessas de garantia de imparcialidade, privacidade ou robustez.",
+      "evidencia": "Pagina oficial registra v1 em 26/11/2025 e projeto incubador; artigo anterior a essa versao dizia experiencia e garantia de protecao sem resultados.",
+      "depois": {
+        "titulo": "OWASP AI Testing Guide: transformar riscos em testes verificáveis",
+        "descricao": "Conheça o recorte do AITG e um exemplo proposto de teste de acesso entre clientes, com configuração, evidência esperada e limites da conclusão.",
+        "corpoHash": "735062fc568cf56858a6346505f4a851a5f2a60a2f690f13c0abc9da970faa29"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-aitg",
+          "fonte": "https://owasp.org/projects/ai-testing-guide",
+          "consultadoEm": "2026-10-10T06:44:46.166Z",
+          "textoHash": "92e16aa18e9d93d49f179b713730ff201b2b5b901c8d320c3819d9241058204a"
+        }
+      ],
+      "pergunta": "Como formular um teste observavel de separacao de acesso em um assistente de IA?",
+      "sobreposicao": "Uma entrada encontrada por AITG/AI Testing Guide e pela fonte original. Artigo da formacao tem intencao distinta (avaliar ensino); link contextual entre eles, sem afirmar unicidade de todo o acervo.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/seguranca-em-alta-o-caso-do-vazamento-de-dados-da-max-life-insurance-e-suas-implicacoes.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Segurança em Alta: O Caso do Vazamento de Dados da Max Life Insurance e suas Implicações",
+        "data": "2025-07-02T18:29:58.617Z",
+        "corpoHash": "8a84b4b4ad95e32e39c24342f4c3b80ab971ee405ed16dab2ccb37f4045af07e",
+        "fonte": {
+          "url": "https://techcrunch.com/2025/07/02/indias-max-financial-says-hacker-accessed-customer-data-from-its-insurance-unit/",
+          "titulo": "India’s Max Financial says hacker accessed customer data from its insurance unit",
+          "data": "2025-07-02T18:18:39.000Z"
+        }
+      },
+      "motivo": "Corrigir vazamento tratado como confirmado, inferencias de causa e experiencia pessoal sem evidencia.",
+      "evidencia": "Comunicado primario descreve mensagem anonima alegando acesso e investigacao; nao traz conclusao pericial, quantidade ou causa comprovada. Recorte explicitamente historico, sem afirmar investigacao aberta hoje.",
+      "depois": {
+        "titulo": "Axis Max Life: o que o comunicado de julho de 2025 permite afirmar",
+        "descricao": "Distinga a alegação de acesso, as medidas divulgadas e o que o comunicado da Max Financial não comprovava sobre dados de clientes.",
+        "corpoHash": "32926275d59560bdfa5c86a1fde5a92e00633b73d2e8226fada41b93a7c12638"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-comunicado",
+          "fonte": "https://www.maxfinancialservices.com/static/uploads/stakeholder/sed02072025.pdf",
+          "consultadoEm": "2026-10-10T06:44:46.166Z",
+          "textoHash": "8abdb1401eb89e8ef5ddfb08fa2e2a922a66b253f3782e2637c21b628d5fc44d"
+        }
+      ],
+      "pergunta": "Como separar alegacao, informacao divulgada e conclusao tecnica ao ler esse comunicado?",
+      "sobreposicao": "Busca no catalogo por Axis Max/Max Life identificou esta entrada; sem candidato equivalente conhecido para consolidacao.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/como-proteger-seu-pc-de-virus-dicas-praticas-e-tecnicas-de-arquitetura-de-software.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Como Proteger Seu PC de Vírus: Dicas Práticas e Técnicas de Arquitetura de Software",
+        "data": "2025-12-04T17:24:17.860Z",
+        "corpoHash": "247b2eb6037aae7c6523d1eeb57fc23c28fbb034354cf0515e98dd42613e10b8",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/how-to-find-and-remove-pc-viruses-for-free/",
+          "titulo": "How to find and remove viruses on your Windows PC - 12 free methods that I can attest to",
+          "data": "2025-12-04T17:22:00.000Z"
+        }
+      },
+      "motivo": "Corrigir fluxo de verificacao, retirar relato pessoal e limpeza/reinstalacao genericas como garantia de protecao.",
+      "evidencia": "Leitura integral encontrou instrucoes incompletas de Safe Mode, verificacao completa nesse modo e sintomas tratados como diagnostico. Microsoft distingue completa de offline no ambiente de recuperacao.",
+      "depois": {
+        "titulo": "Suspeita de malware no Windows: verificações e registro para suporte",
+        "descricao": "Diferencie verificação completa e offline no Windows 11, registre alertas para o suporte e evite tratar lentidão como diagnóstico de infecção.",
+        "corpoHash": "1f04a6b75b4add57ac4885f1f4c03e893397ac075b9c598af1cf1a547bfcf7b9"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-completa",
+          "fonte": "https://support.microsoft.com/en-us/defender/antivirus-and-antimalware-software-faq",
+          "consultadoEm": "2026-10-10T06:44:46.166Z",
+          "textoHash": "25e896869314c57c71a02297f86d3597c6da2be3ee21208f09864cfedfec7420"
+        },
+        {
+          "seletor": ".fato-offline",
+          "fonte": "https://support.microsoft.com/en-us/windows/security/threat-malware-protection/virus-and-threat-protection-in-the-windows-security-app",
+          "consultadoEm": "2026-10-10T06:44:46.166Z",
+          "textoHash": "1b2298e4ed1e0e24e25057babafe7ee14fc99da523e22314f327530231163dce"
+        }
+      ],
+      "pergunta": "Quais verificacoes a documentacao distingue e que informacoes registrar antes de encaminhar a suspeita ao suporte?",
+      "sobreposicao": "Busca direcionada no titulo encontrou esta entrada de protecao de PC contra virus; nao e auditoria completa de todas as paginas de malware.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/desvendando-os-lacos-entre-arquitetura-e-seguranca-um-caminho-para-a-resiliencia.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Desvendando os Laços Entre Arquitetura e Segurança: Um Caminho para a Resiliência",
+        "data": "2026-03-27T09:59:41.619Z",
+        "corpoHash": "bb8e635f9ec63e14b8d92deedebfd3b918871b73b4d63165b58ae023f3e14353",
+        "fonte": {
+          "url": "https://www.infoq.com/presentations/security-architecture-systemic-vulnerabilities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Presentation: Security and Architecture: To Betray One Is To Destroy Both",
+          "data": "2026-03-27T09:27:00.000Z"
+        }
+      },
+      "motivo": "Devolver relatos profissionais a palestrante e retirar causalidade especulativa sobre CrowdStrike e garantias de resiliencia.",
+      "evidencia": "Texto dizia ja passei por isso e me deixou perplexo; transcricao identifica Shana Dacres-Lawrence. Metaforas atribuidas a palestra; exemplo separado como proposta hipotetica nao executada.",
+      "depois": {
+        "titulo": "Arquitetura e segurança: registrar decisões, restrições e evidências",
+        "descricao": "A discussão de Shana Dacres-Lawrence e um exemplo hipotético de registro de decisão para uma exportação de dados, sem aprovações ou experiências inventadas.",
+        "corpoHash": "1a0e89afdb96b59c35cc34ba814c251441d2a674396ce05d7cab674b99c7f6e5"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-palestra",
+          "fonte": "https://www.infoq.com/presentations/security-architecture-systemic-vulnerabilities/",
+          "consultadoEm": "2026-10-10T06:44:46.166Z",
+          "textoHash": "c520b219635b541b6155ad8a9978037af5d50cc48cb6aa1167a57b53ce035afc"
+        }
+      ],
+      "pergunta": "Como registrar uma decisao entre arquitetura e seguranca sem confundir conversa, implementacao e evidencia?",
+      "sobreposicao": "Uma entrada com a URL desta palestra no catalogo; os outros titulos genericos de arquitetura/seguranca nao foram considerados equivalentes apenas pelo titulo.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/ferramentas-de-seguranca-sera-que-os-drives-usb-criptografados-sao-realmente-a-prova-de-hackers.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Ferramentas de Segurança: Será que os Drives USB Criptografados São Realmente à Prova de Hackers?",
+        "data": "2026-05-11T21:21:58.538Z",
+        "corpoHash": "cfb6570f636ee1c1196d33d90edd290bf5ef34a334a9a29b0e0f8c08ec8f42f6",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/kingston-ironkey-locker50-g2-review/",
+          "titulo": "Can hackers break encrypted USB drives? I tried to find out",
+          "data": "2026-05-11T20:42:00.000Z"
+        }
+      },
+      "motivo": "Retirar falso teste destrutivo, confusao sobre cifragem do volume, imunidade a malware e regra unica de dez tentativas.",
+      "evidencia": "Manual LP50G2 pagina 17 distingue User com Admin, Admin e User-Only; leitura original encontrou eu testei isso e convite a testar seguranca sem procedimento. Nao usar manual do modelo anterior.",
+      "depois": {
+        "titulo": "IronKey Locker+ 50 G2: senhas, apagamento e limites da criptografia",
+        "descricao": "Entenda as diferenças entre Admin, User e User-Only no LP50G2 e os cuidados de uso, sem um teste pessoal ou promessa de imunidade a ataques.",
+        "corpoHash": "0c46337ca7e3f0d80edce4e4d2e820bf90204d30c254fccd3362249425076ae9"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-manual",
+          "fonte": "https://media.kingston.com/support/downloads/iklp50g2-user-guide.pdf",
+          "consultadoEm": "2026-10-10T06:44:46.166Z",
+          "textoHash": "1ff1a6292f6bbd010d0aecfeab98d7984991ae683d86320067db9454c21e2f12"
+        }
+      ],
+      "pergunta": "Quando o LP50G2 bloqueia usuario ou apaga dados e o que isso nao comprova sobre seguranca?",
+      "sobreposicao": "Uma entrada por IronKey/drives USB e uma pela fonte original no catalogo. Nenhuma consolidacao deduzida apenas do tema criptografia.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/seguranca/seguranca-e-privacidade-em-ia-o-novo-desafio-dos-arquitetos-de-software.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Segurança e Privacidade em IA: O Novo Desafio dos Arquitetos de Software",
+        "data": "2026-07-08T04:13:49.238Z",
+        "corpoHash": "aa8e17b90551aa9bbdefa5a46925ab0b44600a7139c67da1574b21ddc84b305d",
+        "qualidadeEditorialAnterior": {
+          "politica": "fonte-rastreavel-recente-com-analise-propria",
+          "scoreFonte": 110,
+          "sinalEditorial": 88,
+          "palavrasFonte": 493,
+          "palavrasArtigo": 982,
+          "secoesArtigo": 9,
+          "similaridadeFonte": 0
+        },
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/07/online-cohort-ai-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "InfoQ Opens AI Security & Privacy Engineering Cohort for Regulated Industries",
+          "data": "2026-07-06T12:00:00.000Z"
+        }
+      },
+      "motivo": "Retirar experiencia, promocao, obrigatoriedade de ferramenta e garantias de sandbox/conformidade; delimitar anuncio e avaliacao de aprendizado.",
+      "evidencia": "Anuncio primario comprova escopo declarado pelo organizador, nao eficacia do curso. Texto anterior repetia beneficios e afirmava Phoenix essencial e isolamento garantido sem teste.",
+      "depois": {
+        "titulo": "Formação em segurança de IA: o que avaliar além da grade do curso",
+        "descricao": "Perguntas para avaliar entregas, feedback e limites de uma formação em segurança de IA, a partir do anúncio histórico da InfoQ e sem recomendar matrícula.",
+        "corpoHash": "974104493b78e2c0e3fa1f4bab1932931b20995763d1bb5c4b63c57383979adc"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-programa",
+          "fonte": "https://www.infoq.com/news/2026/07/online-cohort-ai-security/",
+          "consultadoEm": "2026-10-10T06:44:46.166Z",
+          "textoHash": "1032c003dea79f06c2a390d912f8b352e3feeac9ad7b5d627e9089c1a905f05e"
+        }
+      ],
+      "pergunta": "Quais entregas e criterios perguntar antes de avaliar uma formacao em seguranca de IA?",
+      "sobreposicao": "Unica entrada pela URL do anuncio. Mantida a intencao de avaliar formacao, distinta do guia AITG; nenhuma recomendacao de compra ou disponibilidade atual inferida.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    }
+  ]
+}

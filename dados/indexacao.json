@@ -940,6 +940,83 @@
       ],
       "destino": "artigos/inteligencia-artificial/a-revolucao-da-voz-como-o-chatgpt-pode-transformar-sua-produtividade.html",
       "destinoConteudoHash": "14e8f9c1ad8f0f676d7b18ce965625cb2cc1673815a55265645b528bdcbb01a4"
+    },
+    {
+      "url": "artigos/seguranca/victoria-s-secret-e-o-alerta-de-seguranca-licoes-para-arquitetos-de-software.html",
+      "acao": "atualizar",
+      "motivo": "Retirar middleware incompleto apresentado como garantia de seguranca e relato de projeto nao comprovado; distinguir fatos do incidente e proposta de autorizacao.",
+      "evidencia": "Leitura integral identificou AuthMiddleware sem registro/configuracao/politica de recurso e alegacao pessoal de rate limiting. Comunicado da companhia na SEC nao atribui o incidente a ASP.NET ou autenticacao.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:44:46.166Z"
+      },
+      "conteudoHash": "a72c65197609f6fa30127cb51ea8c61007aef06552bbb0fa528397c8b6bc807d"
+    },
+    {
+      "url": "artigos/seguranca/a-nova-era-dos-testes-de-ia-desvendando-riscos-e-seguranca.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir estado do guia, retirar experiencia pessoal e promessas de garantia de imparcialidade, privacidade ou robustez.",
+      "evidencia": "Pagina oficial registra v1 em 26/11/2025 e projeto incubador; artigo anterior a essa versao dizia experiencia e garantia de protecao sem resultados.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:44:46.166Z"
+      },
+      "conteudoHash": "735062fc568cf56858a6346505f4a851a5f2a60a2f690f13c0abc9da970faa29"
+    },
+    {
+      "url": "artigos/seguranca/seguranca-em-alta-o-caso-do-vazamento-de-dados-da-max-life-insurance-e-suas-implicacoes.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir vazamento tratado como confirmado, inferencias de causa e experiencia pessoal sem evidencia.",
+      "evidencia": "Comunicado primario descreve mensagem anonima alegando acesso e investigacao; nao traz conclusao pericial, quantidade ou causa comprovada. Recorte explicitamente historico, sem afirmar investigacao aberta hoje.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:44:46.166Z"
+      },
+      "conteudoHash": "32926275d59560bdfa5c86a1fde5a92e00633b73d2e8226fada41b93a7c12638"
+    },
+    {
+      "url": "artigos/seguranca/como-proteger-seu-pc-de-virus-dicas-praticas-e-tecnicas-de-arquitetura-de-software.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir fluxo de verificacao, retirar relato pessoal e limpeza/reinstalacao genericas como garantia de protecao.",
+      "evidencia": "Leitura integral encontrou instrucoes incompletas de Safe Mode, verificacao completa nesse modo e sintomas tratados como diagnostico. Microsoft distingue completa de offline no ambiente de recuperacao.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:44:46.166Z"
+      },
+      "conteudoHash": "1f04a6b75b4add57ac4885f1f4c03e893397ac075b9c598af1cf1a547bfcf7b9"
+    },
+    {
+      "url": "artigos/seguranca/desvendando-os-lacos-entre-arquitetura-e-seguranca-um-caminho-para-a-resiliencia.html",
+      "acao": "atualizar",
+      "motivo": "Devolver relatos profissionais a palestrante e retirar causalidade especulativa sobre CrowdStrike e garantias de resiliencia.",
+      "evidencia": "Texto dizia ja passei por isso e me deixou perplexo; transcricao identifica Shana Dacres-Lawrence. Metaforas atribuidas a palestra; exemplo separado como proposta hipotetica nao executada.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:44:46.166Z"
+      },
+      "conteudoHash": "1a0e89afdb96b59c35cc34ba814c251441d2a674396ce05d7cab674b99c7f6e5"
+    },
+    {
+      "url": "artigos/seguranca/ferramentas-de-seguranca-sera-que-os-drives-usb-criptografados-sao-realmente-a-prova-de-hackers.html",
+      "acao": "atualizar",
+      "motivo": "Retirar falso teste destrutivo, confusao sobre cifragem do volume, imunidade a malware e regra unica de dez tentativas.",
+      "evidencia": "Manual LP50G2 pagina 17 distingue User com Admin, Admin e User-Only; leitura original encontrou eu testei isso e convite a testar seguranca sem procedimento. Nao usar manual do modelo anterior.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:44:46.166Z"
+      },
+      "conteudoHash": "0c46337ca7e3f0d80edce4e4d2e820bf90204d30c254fccd3362249425076ae9"
+    },
+    {
+      "url": "artigos/seguranca/seguranca-e-privacidade-em-ia-o-novo-desafio-dos-arquitetos-de-software.html",
+      "acao": "atualizar",
+      "motivo": "Retirar experiencia, promocao, obrigatoriedade de ferramenta e garantias de sandbox/conformidade; delimitar anuncio e avaliacao de aprendizado.",
+      "evidencia": "Anuncio primario comprova escopo declarado pelo organizador, nao eficacia do curso. Texto anterior repetia beneficios e afirmava Phoenix essencial e isolamento garantido sem teste.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T06:44:46.166Z"
+      },
+      "conteudoHash": "974104493b78e2c0e3fa1f4bab1932931b20995763d1bb5c4b63c57383979adc"
     }
   ]
 }
