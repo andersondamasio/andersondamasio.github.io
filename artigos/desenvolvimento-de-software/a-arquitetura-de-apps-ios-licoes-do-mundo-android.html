@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>A arquitetura de apps iOS: lições do mundo Android</title>
-<meta name="description" content="Quando falamos sobre desenvolvimento de aplicativos, muitos de nós acabamos por nos perder em padrões que, embora funcionem para pequenos projetos, não se...">
+<title>Arquitetura iOS e padrões Android: como testar o contrato de estado da tela</title>
+<meta name="description" content="Estado, ações e respostas fora de ordem em telas iOS: limites dos padrões Android e um roteiro proposto para verificar o comportamento da interface.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-arquitetura-de-apps-ios-licoes-do-mundo-android.html">
@@ -14,36 +14,36 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="A arquitetura de apps iOS: lições do mundo Android">
-<meta property="og:description" content="Quando falamos sobre desenvolvimento de aplicativos, muitos de nós acabamos por nos perder em padrões que, embora funcionem para pequenos projetos, não se...">
+<meta property="og:title" content="Arquitetura iOS e padrões Android: como testar o contrato de estado da tela">
+<meta property="og:description" content="Estado, ações e respostas fora de ordem em telas iOS: limites dos padrões Android e um roteiro proposto para verificar o comportamento da interface.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-arquitetura-de-apps-ios-licoes-do-mundo-android.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-02-26T09:54:43.901Z">
-<meta property="article:modified_time" content="2026-02-26T09:54:43.901Z">
+<meta property="article:modified_time" content="2026-10-10T10:15:07.040Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A arquitetura de apps iOS: lições do mundo Android">
-<meta name="twitter:description" content="Quando falamos sobre desenvolvimento de aplicativos, muitos de nós acabamos por nos perder em padrões que, embora funcionem para pequenos projetos, não se...">
+<meta name="twitter:title" content="Arquitetura iOS e padrões Android: como testar o contrato de estado da tela">
+<meta name="twitter:description" content="Estado, ações e respostas fora de ordem em telas iOS: limites dos padrões Android e um roteiro proposto para verificar o comportamento da interface.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "A arquitetura de apps iOS: lições do mundo Android",
-  "description": "Quando falamos sobre desenvolvimento de aplicativos, muitos de nós acabamos por nos perder em padrões que, embora funcionem para pequenos projetos, não se...",
+  "headline": "Arquitetura iOS e padrões Android: como testar o contrato de estado da tela",
+  "description": "Estado, ações e respostas fora de ordem em telas iOS: limites dos padrões Android e um roteiro proposto para verificar o comportamento da interface.",
   "url": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-arquitetura-de-apps-ios-licoes-do-mundo-android.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-arquitetura-de-apps-ios-licoes-do-mundo-android.html"
   },
   "datePublished": "2026-02-26T09:54:43.901Z",
-  "dateModified": "2026-02-26T09:54:43.901Z",
+  "dateModified": "2026-10-10T10:15:07.040Z",
   "articleSection": "Desenvolvimento de Software",
   "inLanguage": "pt-BR",
-  "wordCount": 532,
+  "wordCount": 675,
   "about": {
     "@type": "Thing",
     "name": "Desenvolvimento de Software"
@@ -52,10 +52,10 @@
   "copyrightYear": 2026,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "Article: Borrowing from Kotlin/Android to Architect Scalable iOS Apps in SwiftUI",
-    "url": "https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "name": "Borrowing from Kotlin/Android to Architect Scalable iOS Apps in SwiftUI",
+    "url": "https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/"
   },
-  "citation": "https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "citation": "https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -114,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "A arquitetura de apps iOS: lições do mundo Android",
+      "name": "Arquitetura iOS e padrões Android: como testar o contrato de estado da tela",
       "item": "https://www.andersondamasio.com.br/artigos/desenvolvimento-de-software/a-arquitetura-de-apps-ios-licoes-do-mundo-android.html"
     }
   ]
@@ -215,42 +215,48 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>A arquitetura de apps iOS: lições do mundo Android</h1>
+<h1>Arquitetura iOS e padrões Android: como testar o contrato de estado da tela</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 
 <p class="article-meta">Publicado em: 26/02/2026 06:54</p>
 
-<div class="article-body"><p>Quando falamos sobre desenvolvimento de aplicativos, muitos de nós acabamos por nos perder em padrões que, embora funcionem para pequenos projetos, não se sustentam quando a aplicação começa a crescer. Já pensou em como a arquitertura e as boas práticas do Android podem ser aplicadas no desenvolvimento de apps iOS? Pois é, esse assunto é mais relevante do que parece.</p>
-<h2>Introdução</h2>
-<p>Eu sempre acreditei que uma boa arquitetura é algo que deve ser independente da plataforma. Ao explorar o universo Android, percebi que muitos dos padrões e práticas que eles utilizam podem ser incrivelmente úteis para nós, desenvolvedores iOS. O que me chamou atenção foram os componentes de arquitetura do Android, que possuem documentação clara e exemplos reais que ajudam a estruturar aplicações mais complexas.</p>
-<h2>Separação de Responsabilidades</h2>
-<p>Um dos pontos que mais me impressionou foi a <strong>separação entre a lógica de negócios e a visão</strong>. No mundo Android, isso é feito com os ViewModels. Ao criar um contrato claro, onde todas as mutações de estado passam por um único método, conseguimos centralizar o logging, facilitar testes e ainda documentar o que nosso ViewModel realmente faz.</p>
-<h3>Estado Explícito</h3>
-<p>Outro conceito interessante é o uso de um estado explícito. Ao invés de ter várias propriedades observáveis, o ideal é utilizar um enum que represente claramente os diferentes estados da UI, como <em>Loading</em>, <em>Finished</em> e <em>Error</em>. Isso não só evita estados impossíveis, como também melhora a legibilidade do código. O Swift tem sua própria forma de lidar com isso, e a transição é bastante suave.</p>
-<h3>Centralizando Ações</h3>
-<p>Quando começamos a escalar um ViewModel, a quantidade de métodos para mutar estados pode ficar confusa. A solução é simples: crie um método único que centralize todas as ações. Dessa forma, qualquer mudança de estado é feita através de uma única entrada, o que torna o código muito mais fácil de entender e depurar. A leitura do código se torna muito mais intuitiva, e a manutenção se torna uma tarefa mais tranquila.</p>
-<h2>Dicas Avançadas</h2>
-<p>Agora, vamos a algumas dicas que podem fazer a diferença na hora de aplicar essas práticas:</p>
-<ul>
-    <li><strong>Use enums para ações</strong>: Isso ajuda a documentar as intenções do usuário e facilita a leitura do código.</li>
-    <li><strong>Crie uma camada de repositório</strong>: Essa camada deve ser responsável por gerenciar os dados da aplicação. Isso garante que você tenha um único ponto de verdade e facilita a sincronização entre diferentes partes da aplicação.</li>
-    <li><strong>Explore o uso de publishers</strong>: Ao adotar a programação reativa, você pode garantir que as mudanças nos dados sejam refletidas automaticamente na UI, evitando bugs e inconsistências.</li>
-</ul>
-<h2>Conclusão</h2>
-<p>Adotar padrões do mundo Android pode parecer um pouco estranho no início, mas, na verdade, eles trazem uma clareza que muitos projetos iOS carecem. Acredito que, ao implementar uma arquitetura bem definida, nós não só melhoramos a manutenção do código, mas também nos tornamos mais produtivos e menos propensos a erros. Portanto, não tenha medo de olhar para fora e aprender com o que já foi feito. Isso pode ser a chave para construir aplicações escaláveis e de qualidade.</p>
-<p>Resumindo, uma boa arquitetura é essencial. Não importa se você é um dev iOS ou Android, os princípios permanecem os mesmos. Vamos em frente, aprendendo e evoluindo!</p>
-<p>
-<p></p></div>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T10:15:07.040Z">10/10/2026</time>: atribuições e orientações corrigidas com fontes; a data da publicação original foi preservada.</p>
+<p>Uma tela pode ter dados visíveis, uma atualização em andamento e um aviso de falha ao mesmo tempo. Modelar tudo como estados mutuamente exclusivos só funciona quando essa exclusividade corresponde ao produto. O benefício está no contrato da tela, não na quantidade de enums ou de métodos.</p>
+<h2>Uma proposta de arquitetura, não uma regra universal</h2>
+<p class="fato-infoq">Ivan Bliznyuk apresenta, em <a href="https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/">Kotlin-Inspired Patterns for Scalable SwiftUI Apps</a>, de 26 de fevereiro de 2026, uma proposta de organização de estado, ações, ViewModels e repositórios. O artigo aproxima escolhas do ecossistema Android de uma aplicação SwiftUI. Essa é uma proposta do autor da fonte, não uma experiência pessoal de Anderson Damasio ou prova de que uma organização é superior em todo aplicativo.</p>
+<p class="fato-android">A documentação de <a href="https://developer.android.com/topic/architecture/ui-layer">camada de interface do Android</a> recomenda fluxo unidirecional e estado imutável exposto à interface. Ela também orienta adaptar as recomendações às necessidades e apresenta exemplos com métodos distintos no ViewModel e com indicador de carregamento. Isso não exige que toda ação passe por um único método nem que um booleano seja sempre um erro de modelagem.</p>
+<p>Como aplicação prática dessas ideias, separe duas perguntas: quais combinações de estado fazem sentido e quem pode alterá-las? Um enum ajuda quando as alternativas realmente se excluem. Campos separados podem representar dimensões independentes, desde que o contrato proíba combinações sem significado.</p>
+<h2>Reatividade não resolve a ordem das respostas</h2>
+<p>Considere duas buscas: a pessoa digita A, depois AB, e a resposta de A chega por último. Um mecanismo de observação pode propagar fielmente essa resposta antiga. Ainda é necessário definir se ela pode substituir o resultado da consulta mais recente.</p>
+<p class="fato-swift">O capítulo de <a href="https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/">concorrência do livro oficial de Swift</a> descreve cancelamento cooperativo: a tarefa precisa verificar o cancelamento e responder a ele. Solicitar cancelamento não deve ser tratado como prova de que todo trabalho já terminou.</p>
+<div class="contribuicao-editorial">
+<h2>Cinco sequências para testar o contrato da tela</h2>
+<p>Antes de criar uma hierarquia de classes, escreva a expectativa de cada sequência. Este é um roteiro proposto de teste, não o resultado de um aplicativo executado.</p>
+<ol>
+<li><strong>A e depois AB; A responde por último.</strong> Decida qual consulta é a atual. Controle a ordem das respostas e confira que A não substitui AB quando o contrato exige a consulta mais recente.</li>
+<li><strong>Dados visíveis; atualização falha.</strong> Decida se os dados anteriores ficam ou são limpos. Confira conteúdo, aviso e possibilidade de tentar novamente, sem uma tela vazia acidental.</li>
+<li><strong>Duas telas observam o mesmo item.</strong> Identifique a camada que possui o estado compartilhado. Altere o item por um caminho e verifique a política de atualização das duas telas.</li>
+<li><strong>Sair da tela durante a busca.</strong> Decida entre cancelar e permitir trabalho em segundo plano. Simule a saída e uma resposta tardia; confira que ela não produz efeito indevido na próxima tela.</li>
+<li><strong>Abrir uma prévia sem rede.</strong> Defina como fornecer dados de apresentação. Construa os estados de vazio, conteúdo, atualização e erro sem iniciar I/O real.</li>
+</ol>
+<p>Para o caso A/AB, uma opção é associar a requisição a um identificador e aceitar a resposta apenas se ela ainda corresponde à consulta atual. Isso é uma proposta de controle de resultado, não um substituto para isolamento de estado, cancelamento ou proteção de recursos. Para estado compartilhado, a escolha do repositório precisa incluir persistência, validade do cache e tratamento de conflitos, não somente a emissão de valores.</p>
+<p>O roteiro também ajuda na revisão de uma mudança: o comportamento esperado fica legível antes de discutir Combine, Observation ou uma biblioteca específica. Quando um teste falhar, será possível apontar qual sequência violou o contrato, em vez de atribuir a falha genericamente à arquitetura.</p>
+</div>
+<div class="limites-editoriais">
+<h2>Escopo desta análise</h2>
+<p>Não foi compilado Swift nem executado um aplicativo iOS ou Android nesta revisão. O roteiro e o controle por identificador são propostas para adaptação e teste. O texto não garante eliminação de bugs, sincronização automática, ausência de data races ou ganho de desempenho. O objetivo é separar organização do código de comportamentos que ainda precisam ser demonstrados.</p>
+</div>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener noreferrer">Article: Borrowing from Kotlin/Android to Architect Scalable iOS Apps in SwiftUI</a> Data da fonte registrada: 26/02/2026.</p>
+<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/" rel="noopener noreferrer">Borrowing from Kotlin/Android to Architect Scalable iOS Apps in SwiftUI</a> Data da fonte registrada: 26/02/2026.</p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Article: Borrowing from Kotlin/Android to Architect Scalable iOS Apps in SwiftUI</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/" target="_blank" rel="noopener noreferrer">Borrowing from Kotlin/Android to Architect Scalable iOS Apps in SwiftUI</a>.</p>
 </section>
 
 <section class="related-articles" aria-labelledby="related-articles-title">

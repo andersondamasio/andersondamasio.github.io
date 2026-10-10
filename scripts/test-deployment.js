@@ -81,6 +81,27 @@ test("documentos do repositorio nao podem virar paginas ou downloads publicos", 
   }
 });
 
+test('deploy exige snapshots executaveis atualizados e mantem README fora do Pages', async () => {
+  const nomes = ['aplicar.js', 'dados.json', 'executar.js', 'test.js'];
+  const fontes = Object.fromEntries(nomes.map(nome => [`exemplos/estado-versionado/${nome}`, `Conteudo ${nome}`]));
+  const ler = f => f === '_config.yml' ? "exclude: ['*.md', '**/*.md']" : fontes[f] || arquivos[f];
+  const esperado = prepararVerificacao({ ler, revisao: 'e'.repeat(40) });
+  for (const nome of nomes) assert.ok(esperado.arquivos.some(a => a.arquivo === `exemplos/estado-versionado/${nome}`));
+  const ausentes = Object.fromEntries(esperado.ausentes.map(f => [f, null]));
+  const conferir = alteracoes => verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...fontes, ...ausentes, ...alteracoes }), tentativas: 1 });
+  assert.equal((await conferir({})).aceita, true);
+  for (const nome of nomes) {
+    assert.equal((await conferir({ [`exemplos/estado-versionado/${nome}`]: null })).aceita, false);
+    assert.equal((await conferir({ [`exemplos/estado-versionado/${nome}`]: 'Obsoleto' })).aceita, false);
+  }
+  for (const extensao of ['md', 'html']) {
+    const arquivo = `exemplos/estado-versionado/README.${extensao}`;
+    assert.ok(esperado.ausentes.includes(arquivo));
+    assert.equal((await conferir({ [arquivo]: 'Documento exposto' })).aceita, false);
+  }
+  assert.throws(() => prepararVerificacao({ ler: f => f.endsWith('executar.js') ? undefined : ler(f), revisao: 'e'.repeat(40) }), /Arquivo do exemplo ausente/);
+});
+
 test('deploy exige os quatro arquivos do exemplo health e nao expoe build intermediario', async () => {
   const nomes = ['HealthChecks.csproj', 'HealthExample.cs', 'Program.cs', 'global.json'];
   const fontes = Object.fromEntries(nomes.map(nome => [`exemplos/health-checks/${nome}`, `Conteudo ${nome}`]));

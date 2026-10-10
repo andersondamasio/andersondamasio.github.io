@@ -536,12 +536,12 @@
 <description>Nos últimos tempos, a maneira como encaramos o desenvolvimento de software tem passado por uma transformação significativa. A discussão sobre a transição do...</description>
 </item>
 <item>
-<title>Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real</title>
+<title>Arquitetura orientada a eventos: estados atrasados, duplicados e conflitos</title>
 <link>https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html</link>
 <guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html</guid>
 <pubDate>Thu, 02 Jul 2026 17:46:52 GMT</pubDate>
 <category>Arquitetura</category>
-<description>Ao longo de minha trajetória como arquiteto de software, sempre estive em busca de soluções que alavanquem a escalabilidade e a eficiência de sistemas...</description>
+<description>Limites de Kafka e cache em um relato de arquitetura, com um exemplo Node.js testado para snapshots versionados, atrasos, duplicatas e conflitos.</description>
 </item>
 <item>
 <title>Desafios de Infraestrutura na Era da Inteligência Artificial: Como Navegar em um Novo Cenário</title>

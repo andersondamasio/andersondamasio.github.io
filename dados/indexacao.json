@@ -1470,6 +1470,39 @@
           "arquivoHash": "550347f0c67c481fc833bc6e9641cc9ae49a9731a8cb7b899d2b7dbe08ac20fe"
         }
       ]
+    },
+    {
+      "url": "artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html",
+      "acao": "atualizar",
+      "motivo": "Remover vivencia nao confirmada e prescricoes universais de Redis, RocksDB e assincronismo; distinguir timeout de poll de atraso minimo e resultado relatado de benchmark.",
+      "evidencia": "Corpo local e fonte InfoQ lidos integralmente. Conferido contrato poll(Duration) no KafkaConsumer 4.2. Cifra de startup atribuida ao caso, sem validar resultado original. Nao reproduzidas generalizacoes sobre GC ou RocksDB. Exemplo offline testa somente snapshots completos.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T10:15:07.040Z"
+      },
+      "conteudoHash": "e656ae8b837b3648d7a71bae493e285de3ed017f89dd5a2d2a6ec6436f49e5f1"
+    },
+    {
+      "url": "artigos/cloud/melhorando-sua-infraestrutura-na-nuvem-dicas-para-upgrades-sem-downtime.html",
+      "acao": "atualizar",
+      "motivo": "Remover relato pessoal de upgrades nao confirmado e promessa de evitar downtime; tornar verificavel o plano de compatibilidade e recuperacao.",
+      "evidencia": "Corpo local e fonte InfoQ lidos integralmente; orientacao AWS distingue reversibilidade e resposta a falhas. Ficha e exemplo de status sao propostas nao executadas, sem resultados de infraestrutura.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T10:15:07.040Z"
+      },
+      "conteudoHash": "a2c254e00ed3f7c1986836a27802aace12196f16204fcc989391d33b8abeaaa4"
+    },
+    {
+      "url": "artigos/desenvolvimento-de-software/a-arquitetura-de-apps-ios-licoes-do-mundo-android.html",
+      "acao": "atualizar",
+      "motivo": "Remover identificacao pessoal como desenvolvedor iOS e prescricao de enum/metodo unico como solucao universal; separar reatividade de ordenacao e cancelamento.",
+      "evidencia": "Corpo local e fonte InfoQ lidos integralmente; docs Android permitem adaptar UDF e mostram loading e metodos distintos. Livro Swift confirma cancelamento cooperativo. Roteiro proposto, sem compilacao Swift nem app executado.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T10:15:07.040Z"
+      },
+      "conteudoHash": "ed7e7c654249fe9dde52a531aabe360355995f704710448faa333a97695fe59c"
     }
   ]
 }

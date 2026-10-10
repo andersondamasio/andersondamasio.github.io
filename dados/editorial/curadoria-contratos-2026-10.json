@@ -1,0 +1,191 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T10:15:07.040Z",
+  "base": "dc0ee215860762986b7dd2854be25a2f6b616a76",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": true,
+  "escopo": "Tres correcoes contextuais, sem mudar URLs, indexacao ou datas originais. Um exemplo sintetico Node offline; nenhuma infraestrutura, app movel ou chamada paga executada. Nenhuma aprovacao de rascunho.",
+  "artigos": [
+    {
+      "url": "artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real",
+        "data": "2026-07-02T17:46:52.661Z",
+        "corpoHash": "69cf8f8103e665b98872b285dc9d452e5fe41be4b236b79808b80b388d97b8ce",
+        "fonte": {
+          "url": "https://www.infoq.com/articles/tradeoffs-event-driven-design/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Article: Scaling Java-Based Real-Time Systems: The Hidden Tradeoffs of Event-Driven Design",
+          "data": "2026-06-30T09:00:00.000Z"
+        },
+        "qualidadeEditorialAnterior": {
+          "politica": "fonte-rastreavel-recente-com-analise-propria",
+          "scoreFonte": 98,
+          "sinalEditorial": 84,
+          "palavrasFonte": 4056,
+          "palavrasArtigo": 893,
+          "secoesArtigo": 8,
+          "similaridadeFonte": 0
+        }
+      },
+      "depois": {
+        "titulo": "Arquitetura orientada a eventos: estados atrasados, duplicados e conflitos",
+        "descricao": "Limites de Kafka e cache em um relato de arquitetura, com um exemplo Node.js testado para snapshots versionados, atrasos, duplicatas e conflitos.",
+        "corpoHash": "e656ae8b837b3648d7a71bae493e285de3ed017f89dd5a2d2a6ec6436f49e5f1"
+      },
+      "motivo": "Remover vivencia nao confirmada e prescricoes universais de Redis, RocksDB e assincronismo; distinguir timeout de poll de atraso minimo e resultado relatado de benchmark.",
+      "evidencia": "Corpo local e fonte InfoQ lidos integralmente. Conferido contrato poll(Duration) no KafkaConsumer 4.2. Cifra de startup atribuida ao caso, sem validar resultado original. Nao reproduzidas generalizacoes sobre GC ou RocksDB. Exemplo offline testa somente snapshots completos.",
+      "evidencias": [
+        {
+          "seletor": ".fato-infoq",
+          "fonte": "https://www.infoq.com/articles/tradeoffs-event-driven-design/",
+          "consultadoEm": "2026-10-10T10:15:07.040Z",
+          "textoHash": "989362262f8bc5a6e7da29a6993b9cf255989bed5d05d535a6a5a3b0da02766b"
+        },
+        {
+          "seletor": ".fato-kafka",
+          "fonte": "https://kafka.apache.org/42/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
+          "consultadoEm": "2026-10-10T10:15:07.040Z",
+          "textoHash": "dbfba16fa7db858450b482ce9cb5eba6099055da3d0151b7cf044bf8e078ec74"
+        }
+      ],
+      "pergunta": "Como tratar snapshots atrasados ou repetidos sem confundir isso com uma garantia do broker?",
+      "publico": "Profissionais de desenvolvimento e arquitetura avaliando contratos e riscos de mudancas",
+      "sobreposicao": "Uma unica URL da mesma fonte no cadastro; nao prova ausencia de toda sobreposicao tematica. Recorte preservado e nenhum artigo consolidado.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais",
+      "experimento": {
+        "resultado": "passed",
+        "em": "2026-10-10T10:15:07.186Z",
+        "runtime": "v22.16.0",
+        "plataforma": "win32",
+        "testes": 8,
+        "chamadaModelo": false,
+        "testeProducao": false,
+        "sintetico": true,
+        "saida": {
+          "resultados": [
+            "aplicado",
+            "atrasado",
+            "duplicado",
+            "aplicado",
+            "conflito"
+          ],
+          "final": {
+            "id": "agente-1",
+            "versao": 3,
+            "estado": "disponivel"
+          }
+        },
+        "arquivos": [
+          {
+            "caminho": "exemplos/estado-versionado/aplicar.js",
+            "sha256": "475167a5296bbda392497e7391e8e453ecce559aaca88660cab75de302530a51"
+          },
+          {
+            "caminho": "exemplos/estado-versionado/dados.json",
+            "sha256": "0bad973e5e16f96109fed22569028ae6d99bcf21ca8de24fea44178a86534921"
+          },
+          {
+            "caminho": "exemplos/estado-versionado/executar.js",
+            "sha256": "44497aaf5d861ad0a14e3c82be575b476b3930b475cf379eff810637e6a8c4e2"
+          },
+          {
+            "caminho": "exemplos/estado-versionado/test.js",
+            "sha256": "688011d3223be50a6eb2e8ede2486b2e1948af5f879c06cb428d753068ba6b4d"
+          }
+        ]
+      }
+    },
+    {
+      "url": "artigos/cloud/melhorando-sua-infraestrutura-na-nuvem-dicas-para-upgrades-sem-downtime.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Melhorando sua Infraestrutura na Nuvem: Dicas para Upgrades sem Downtime",
+        "data": "2025-08-18T11:18:27.258Z",
+        "corpoHash": "306ec8e415fe5ec7f09c0d0faed90ca919551646b01c940470249d170b336847",
+        "fonte": {
+          "url": "https://www.infoq.com/articles/zero-downtime-cloud-upgrades/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Article: Zero-Downtime Critical Cloud Infrastructure Upgrades at Scale",
+          "data": "2025-08-18T11:00:00.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "Upgrades na nuvem: como verificar compatibilidade e preparar o rollback",
+        "descricao": "Ficha de compatibilidade entre versões antigas e novas, com critérios de interrupção e limites do rollback quando os dados também mudam.",
+        "corpoHash": "a2c254e00ed3f7c1986836a27802aace12196f16204fcc989391d33b8abeaaa4"
+      },
+      "motivo": "Remover relato pessoal de upgrades nao confirmado e promessa de evitar downtime; tornar verificavel o plano de compatibilidade e recuperacao.",
+      "evidencia": "Corpo local e fonte InfoQ lidos integralmente; orientacao AWS distingue reversibilidade e resposta a falhas. Ficha e exemplo de status sao propostas nao executadas, sem resultados de infraestrutura.",
+      "evidencias": [
+        {
+          "seletor": ".fato-infoq",
+          "fonte": "https://www.infoq.com/articles/zero-downtime-cloud-upgrades/",
+          "consultadoEm": "2026-10-10T10:15:07.040Z",
+          "textoHash": "b5cbfcfa22f9162fa4f5271e0690bfddeef10cc191da1744f979d793d352697e"
+        },
+        {
+          "seletor": ".fato-aws",
+          "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/change-enablement-in-the-cloud/change-enablement-cloud.html",
+          "consultadoEm": "2026-10-10T10:15:07.040Z",
+          "textoHash": "98dfd200736db381718a5c1301e78bb5aeb7e561207c69403c390e866cc89c97"
+        }
+      ],
+      "pergunta": "A versao antiga ainda consegue ler os dados gravados pela nova depois de um retorno?",
+      "publico": "Profissionais de desenvolvimento e arquitetura avaliando contratos e riscos de mudancas",
+      "sobreposicao": "Uma unica URL da mesma fonte no cadastro; nao prova ausencia de toda sobreposicao tematica. Recorte preservado e nenhum artigo consolidado.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/desenvolvimento-de-software/a-arquitetura-de-apps-ios-licoes-do-mundo-android.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A arquitetura de apps iOS: lições do mundo Android",
+        "data": "2026-02-26T09:54:43.901Z",
+        "corpoHash": "2ac1398d1f8d6d3337eadc6e3b931730d310c54beda6252b09e14fdba656d844",
+        "fonte": {
+          "url": "https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Article: Borrowing from Kotlin/Android to Architect Scalable iOS Apps in SwiftUI",
+          "data": "2026-02-26T09:00:00.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "Arquitetura iOS e padrões Android: como testar o contrato de estado da tela",
+        "descricao": "Estado, ações e respostas fora de ordem em telas iOS: limites dos padrões Android e um roteiro proposto para verificar o comportamento da interface.",
+        "corpoHash": "ed7e7c654249fe9dde52a531aabe360355995f704710448faa333a97695fe59c"
+      },
+      "motivo": "Remover identificacao pessoal como desenvolvedor iOS e prescricao de enum/metodo unico como solucao universal; separar reatividade de ordenacao e cancelamento.",
+      "evidencia": "Corpo local e fonte InfoQ lidos integralmente; docs Android permitem adaptar UDF e mostram loading e metodos distintos. Livro Swift confirma cancelamento cooperativo. Roteiro proposto, sem compilacao Swift nem app executado.",
+      "evidencias": [
+        {
+          "seletor": ".fato-infoq",
+          "fonte": "https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/",
+          "consultadoEm": "2026-10-10T10:15:07.040Z",
+          "textoHash": "42e98c5f1d00c12474b85fd27cd4366fc0f8ad95fcb28b13f0558d3cc8152a14"
+        },
+        {
+          "seletor": ".fato-android",
+          "fonte": "https://developer.android.com/topic/architecture/ui-layer",
+          "consultadoEm": "2026-10-10T10:15:07.040Z",
+          "textoHash": "f13531b931e62db3385d099576d1b31b7e7a29dcdda116fbf70ab4265f164e5a"
+        },
+        {
+          "seletor": ".fato-swift",
+          "fonte": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/",
+          "consultadoEm": "2026-10-10T10:15:07.040Z",
+          "textoHash": "a24b2f6d45a732ca7ac28cd305c04595d147f9f98b915ac713f2685eff915905"
+        }
+      ],
+      "pergunta": "Quais sequencias demonstram que o contrato de uma tela lida corretamente com estado e respostas tardias?",
+      "publico": "Profissionais de desenvolvimento e arquitetura avaliando contratos e riscos de mudancas",
+      "sobreposicao": "Uma unica URL da mesma fonte no cadastro; nao prova ausencia de toda sobreposicao tematica. Recorte preservado e nenhum artigo consolidado.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais",
+      "ajusteVisual": "QA encontrou overflow da tabela em 320 px. Mesmos cinco cenarios reorganizados como lista; sem mudanca global de CSS."
+    }
+  ]
+}

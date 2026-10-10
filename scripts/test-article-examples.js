@@ -19,6 +19,8 @@ test('codigo dos artigos coincide com arquivos executaveis, sem tags espurias', 
       ['code.language-csharp', 'exemplos/health-checks/HealthExample.cs']]],
     ['artigos/desvendando-os-misterios-por-tras-das-propriedades-emergentes-dos-llms.html', [
       ['code.language-javascript', 'exemplos/metricas-exatas/medir.js']]],
+    ['artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html', [
+      ['code.language-javascript', 'exemplos/estado-versionado/aplicar.js']]],
     ['artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html', [
       ['code.language-javascript', 'exemplos/nan-json/verificar.js']]]
   ];
@@ -67,6 +69,38 @@ test('CSS publicado e a saida real do conversor', () => {
   const $ = cheerio.load(ler('artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html'));
   assert.equal($('.article-body code.language-css').text(), converter(JSON.parse(ler('exemplos/design-tokens/tokens.json'))));
   assert.match($('.contribuicao-editorial').text(), /não implementa o formato DTCG/);
+});
+
+test('snapshots publicados correspondem ao exemplo executado e explicitam limites', () => {
+  const saida = JSON.parse(require('node:child_process').execFileSync(process.execPath,
+    [path.join(root, 'exemplos/estado-versionado/executar.js')], { encoding: 'utf8' }));
+  const lote = JSON.parse(ler('dados/editorial/curadoria-contratos-2026-10.json'));
+  const artigo = lote.artigos.find(a => a.experimento);
+  const q = cheerio.load(ler(artigo.url));
+  assert.deepEqual(saida, artigo.experimento.saida);
+  assert.deepEqual(saida.resultados, ['aplicado', 'atrasado', 'duplicado', 'aplicado', 'conflito']);
+  assert.deepEqual(saida.final, { id: 'agente-1', versao: 3, estado: 'disponivel' });
+  assert.equal(artigo.experimento.resultado, 'passed');
+  assert.equal(artigo.experimento.testes, 8);
+  assert.equal(artigo.experimento.chamadaModelo, false);
+  assert.equal(artigo.experimento.testeProducao, false);
+  assert.equal(artigo.experimento.sintetico, true);
+  for (const arquivo of artigo.experimento.arquivos) {
+    assert.equal(require('node:crypto').createHash('sha256').update(ler(arquivo.caminho)).digest('hex'), arquivo.sha256);
+    assert.ok(q('.article-body a').toArray().some(el => q(el).attr('href') === '/' + arquivo.caminho));
+  }
+  const resultados = q('.contribuicao-editorial tbody tr').map((_, el) => q(el).find('td').last().text()).get();
+  assert.deepEqual(resultados, saida.resultados);
+  assert.match(q('.resultado-executado').text(), /oito testes passaram/);
+  assert.match(q('.limites-editoriais').text(), /não detecta divergências históricas/);
+  assert.match(q('.limites-editoriais').text(), /comparação e a escrita precisariam ser atômicas/);
+  for (const a of lote.artigos) {
+    const b = cheerio.load(ler(a.url));
+    assert.equal(b('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.match(b('.nota-atualizacao').text(), /publicação original foi preservada/);
+    assert.equal(b('.contribuicao-editorial').length, 1);
+    assert.equal(b('.limites-editoriais').length, 1);
+  }
 });
 
 test('atualizacoes posteriores e referencia sem data nao falsificam cronologia', () => {

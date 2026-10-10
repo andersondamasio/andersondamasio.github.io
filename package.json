@@ -19,7 +19,7 @@
     "test:humanizer": "node scripts/test-humanizer-editorial.js",
     "test:editorial": "node --test scripts/test-editorial-policy.js scripts/test-editorial-review.js scripts/test-editorial-transaction.js scripts/test-editorial-preview.js scripts/test-editorial-queue.js",
     "test:seo:templates": "node --test scripts/test-seo-templates.js scripts/test-seo-article-metadata.js scripts/test-seo-icons.js scripts/test-editorial-legacy-curation.js",
-    "test:examples": "node --test exemplos/design-tokens/test.js exemplos/metricas-exatas/test.js scripts/test-article-examples.js",
+    "test:examples": "node --test exemplos/design-tokens/test.js exemplos/metricas-exatas/test.js exemplos/estado-versionado/test.js scripts/test-article-examples.js",
     "outreach:prepare": "node scripts/editorial-outreach.js",
     "seo:outcomes": "node scripts/seo-outcome-measurement.js",
     "test:seo:outreach": "node --test scripts/test-editorial-outreach.js scripts/test-seo-outcome-measurement.js",

@@ -70,6 +70,16 @@ function prepararVerificacao({ ler, lerBinario, revisao }) {
     }
     if (controlaDocumentos) ausentes.push('exemplos/metricas-exatas/README.md', 'exemplos/metricas-exatas/README.html');
   }
+  let exemploEstado;
+  try { exemploEstado = ler('exemplos/estado-versionado/aplicar.js'); } catch { /* Example absent in older revisions. */ }
+  if (exemploEstado) {
+    for (const nome of ['aplicar.js', 'dados.json', 'executar.js', 'test.js']) {
+      const arquivo = `exemplos/estado-versionado/${nome}`;
+      if (!ler(arquivo)?.trim()) throw new Error(`Arquivo do exemplo ausente: ${arquivo}`);
+      arquivos.push(arquivo);
+    }
+    if (controlaDocumentos) ausentes.push('exemplos/estado-versionado/README.md', 'exemplos/estado-versionado/README.html');
+  }
   const arquivosNoindex = [];
   try { manifestoTexto = ler("dados/indexacao.json"); } catch { /* Revisions before the indexation manifest are still verifiable. */ }
   if (manifestoTexto) {
