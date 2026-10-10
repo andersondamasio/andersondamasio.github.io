@@ -1,0 +1,7 @@
+[
+  { "id": "agente-1", "versao": 2, "estado": "em-chamada" },
+  { "id": "agente-1", "versao": 1, "estado": "disponivel" },
+  { "id": "agente-1", "versao": 2, "estado": "em-chamada" },
+  { "id": "agente-1", "versao": 3, "estado": "disponivel" },
+  { "id": "agente-1", "versao": 3, "estado": "indisponivel" }
+]

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real</title>
-<meta name="description" content="Ao longo de minha trajetória como arquiteto de software, sempre estive em busca de soluções que alavanquem a escalabilidade e a eficiência de sistemas...">
+<title>Arquitetura orientada a eventos: estados atrasados, duplicados e conflitos</title>
+<meta name="description" content="Limites de Kafka e cache em um relato de arquitetura, com um exemplo Node.js testado para snapshots versionados, atrasos, duplicatas e conflitos.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html">
@@ -14,36 +14,36 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real">
-<meta property="og:description" content="Ao longo de minha trajetória como arquiteto de software, sempre estive em busca de soluções que alavanquem a escalabilidade e a eficiência de sistemas...">
+<meta property="og:title" content="Arquitetura orientada a eventos: estados atrasados, duplicados e conflitos">
+<meta property="og:description" content="Limites de Kafka e cache em um relato de arquitetura, com um exemplo Node.js testado para snapshots versionados, atrasos, duplicatas e conflitos.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-07-02T17:46:52.661Z">
-<meta property="article:modified_time" content="2026-07-02T17:46:52.661Z">
+<meta property="article:modified_time" content="2026-10-10T10:15:07.040Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real">
-<meta name="twitter:description" content="Ao longo de minha trajetória como arquiteto de software, sempre estive em busca de soluções que alavanquem a escalabilidade e a eficiência de sistemas...">
+<meta name="twitter:title" content="Arquitetura orientada a eventos: estados atrasados, duplicados e conflitos">
+<meta name="twitter:description" content="Limites de Kafka e cache em um relato de arquitetura, com um exemplo Node.js testado para snapshots versionados, atrasos, duplicatas e conflitos.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real",
-  "description": "Ao longo de minha trajetória como arquiteto de software, sempre estive em busca de soluções que alavanquem a escalabilidade e a eficiência de sistemas...",
+  "headline": "Arquitetura orientada a eventos: estados atrasados, duplicados e conflitos",
+  "description": "Limites de Kafka e cache em um relato de arquitetura, com um exemplo Node.js testado para snapshots versionados, atrasos, duplicatas e conflitos.",
   "url": "https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html"
   },
   "datePublished": "2026-07-02T17:46:52.661Z",
-  "dateModified": "2026-07-02T17:46:52.661Z",
+  "dateModified": "2026-10-10T10:15:07.040Z",
   "articleSection": "Arquitetura",
   "inLanguage": "pt-BR",
-  "wordCount": 893,
+  "wordCount": 625,
   "about": {
     "@type": "Thing",
     "name": "Arquitetura"
@@ -52,10 +52,10 @@
   "copyrightYear": 2026,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "Article: Scaling Java-Based Real-Time Systems: The Hidden Tradeoffs of Event-Driven Design",
-    "url": "https://www.infoq.com/articles/tradeoffs-event-driven-design/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "name": "Scaling Java-Based Real-Time Systems: The Hidden Tradeoffs of Event-Driven Design",
+    "url": "https://www.infoq.com/articles/tradeoffs-event-driven-design/"
   },
-  "citation": "https://www.infoq.com/articles/tradeoffs-event-driven-design/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "citation": "https://www.infoq.com/articles/tradeoffs-event-driven-design/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -114,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real",
+      "name": "Arquitetura orientada a eventos: estados atrasados, duplicados e conflitos",
       "item": "https://www.andersondamasio.com.br/artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html"
     }
   ]
@@ -172,7 +172,7 @@ a:hover { text-decoration: underline; color: var(--link-hover);}
 .article-source p { margin: 0.35rem 0 0; }
 .article-source a { font-weight: 700; }
 .article-source-note { font-size: 0.9rem; }
-pre { background: var(--pre-bg); color: var(--pre-color); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
+pre { background: var(--pre-bg); color: var(--pre-color); padding: 3rem 1rem 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; position: relative; }
 code { font-family: 'Fira Code', 'Courier New', Courier, monospace; font-size: 0.95rem; }
 .copy-button { position: absolute; top: 8px; right: 8px; background: var(--copy-bg); color: var(--copy-color); border: none; padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 5px; cursor: pointer; opacity: 0.8; }
 .copy-button:hover { opacity: 1; background-color: var(--copy-bg-hover); color: var(--main-bg); }
@@ -190,6 +190,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 .related-articles a:hover { text-decoration: underline; }
 .related-articles span { display: block; margin-top: 0.15rem; color: var(--meta); font-size: 0.9rem; }
 
+.article-body code { overflow-wrap: anywhere; } .article-body pre code { overflow-wrap: normal; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -216,53 +217,91 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real</h1>
+<h1>Arquitetura orientada a eventos: estados atrasados, duplicados e conflitos</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 
 <p class="article-meta">Publicado em: 02/07/2026 14:46</p>
 
-<div class="article-body"><p>Ao longo de minha trajetória como arquiteto de software, sempre estive em busca de soluções que alavanquem a escalabilidade e a eficiência de sistemas complexos. Recentemente, li um artigo que trouxe à tona questões cruciais sobre a arquitetura orientada a eventos, especialmente em ambientes de comunicação em tempo real. A mensagem central era clara: as promessas da arquitetura orientada a eventos nem sempre se concretizam na prática, revelando um emaranhado de trade-offs que podem impactar severamente a performance e a experiência do usuário.</p>
-<h2>Resumo Executivo</h2>
-<p>O artigo destacou os desafios enfrentados por sistemas de comunicação em tempo real baseados em Java, que utilizam arquiteturas orientadas a eventos, especialmente com Kafka como backbone de mensageria. Questões como latência, inconsistências de estado em microserviços e a complexidade de escalabilidade foram abordadas, revelando que o que parece ideal em teoria pode se transformar em armadilhas na prática. Essa discussão é fundamental para qualquer arquiteto ou desenvolvedor que busca implementar soluções escaláveis e responsivas.</p>
-<h2>Fatos Reportados</h2>
-<p>O artigo apresentou uma série de observações sobre a implementação de uma plataforma de contact center em nuvem, que lidava com mais de oitenta mil chamadas em horários de pico. Os autores relataram que a adoção de uma arquitetura orientada a eventos, com Kafka como a principal ferramenta de mensageria, trouxe benefícios, mas também uma série de problemas que não eram evidentes durante o desenvolvimento. Um dos principais pontos foi que a consistência eventual em caminhos críticos, como sinalização de chamadas, se mostrou equivalente a falhas, resultando em roteamento de chamadas incorreto.</p>
-<h2>Interpretação Técnica</h2>
-<p>Embora a arquitetura orientada a eventos prometa desconexão, escalabilidade independente e isolamento de falhas, a realidade em sistemas de comunicação em tempo real exige uma abordagem mais cautelosa. Os autores descobriram que a latência introduzida por cada mensagem processada em um fluxo assíncrono pode comprometer a responsividade necessária em cenários críticos, como o atendimento a chamadas. Eles também identificaram um problema de desvio de cache entre microserviços, o que resultou em inconsistências silenciosas que foram difíceis de monitorar e corrigir.</p>
-<h3>Limitações do que Ainda Não Podemos Afirmar</h3>
-<p>Embora os autores tenham proposto soluções, como o uso de Redis como camada de cache local, a eficácia dessas abordagens em ambientes diferentes ainda não está completamente validada. Além disso, a complexidade de gerenciar a consistência em sistemas distribuídos permanece um desafio significativo, especialmente à medida que as arquiteturas evoluem e se tornam mais dinâmicas.</p>
-<h2>Explicação Técnica Aprofundada</h2>
-<p>Um dos principais problemas relatados foi a latência de inicialização causada pelo replay de eventos do Kafka, que tornou o escalonamento automático do Kubernetes ineficaz. Com a introdução do Redis como uma camada de cache compartilhada, os autores conseguiram reduzir o tempo de inicialização em sessenta por cento, eliminando a necessidade de reprocessar eventos do Kafka a cada inicialização. Essa mudança não apenas melhorou a responsividade, mas também mitigou a inconsistência de estado entre instâncias de microserviços.</p>
-<p>Outro ponto crítico foi a questão dos limites de partição no Kafka, que podem criar um teto invisível na escalabilidade horizontal. Os autores descobriram que, ao compartilhar tópicos entre serviços, a contagem de partições se tornava um fator limitante, dificultando a expansão independente de serviços. Além disso, a utilização do Kafka Streams com RocksDB foi identificada como inadequada para requisitos de latência sub-segundo, devido à latência imprevisível introduzida pelo processo de compactação.</p>
-<h2>Dicas Avançadas</h2>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T10:15:07.040Z">10/10/2026</time>: atribuições e orientações corrigidas com fontes; a data da publicação original foi preservada.</p>
+<p>Em um fluxo orientado a eventos, receber uma mensagem não basta para decidir se ela ainda representa o estado válido. Antes de escolher cache, broker ou número de consumidores, vale definir o que fazer com uma atualização atrasada, repetida ou contraditória.</p>
+<h2>O relato de origem e o que ele não demonstra</h2>
+<p class="fato-infoq">Sagar Deepak Joshi descreve mudanças em uma plataforma de contact center no artigo <a href="https://www.infoq.com/articles/tradeoffs-event-driven-design/">Tradeoffs in Event-Driven Design</a>, publicado em 30 de junho de 2026. O autor relata a troca de uma estratégia de cache local por estado compartilhado e uma redução de 60% no tempo de inicialização daquele sistema. É um resultado relatado pelo autor, não um teste deste site nem uma comparação controlada que determine a escolha para outros sistemas.</p>
+<p>Kafka e Redis não precisam disputar uma única função. Na avaliação de uma arquitetura, separe a necessidade de manter histórico e reprocessar mensagens da necessidade de consultar o estado atual. Depois registre quem pode atualizar esse estado, qual inconsistência é aceitável e como recuperar uma atualização perdida. A presença de um cache compartilhado, por si só, não responde a essas perguntas.</p>
+<h2>Timeout de leitura não é atraso mínimo obrigatório</h2>
+<p class="fato-kafka">A documentação do <a href="https://kafka.apache.org/42/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html">KafkaConsumer 4.2</a> especifica que <code>poll(Duration)</code> retorna imediatamente quando há registros disponíveis. O timeout determina a espera quando não há registros; callbacks de rebalanceamento podem ultrapassá-lo. Portanto, passar 100 ms não impõe um atraso mínimo de 100 ms a cada leitura. A mesma documentação informa que o consumidor não é thread-safe.</p>
+<p>Isso não promete baixa latência. Para investigar um atraso real, meça separadamente produção, disponibilidade para consumo, processamento e atualização da consulta. Não atribua todo o intervalo ao broker apenas pela configuração de timeout.</p>
+<div class="contribuicao-editorial">
+<h2>Um contrato pequeno para estados atrasados</h2>
+<p>O exemplo abaixo é uma proposta didática independente do caso citado. Cada mensagem traz um snapshot completo de um agente: identificador, versão e estado. A versão vem de uma única autoridade por entidade, cresce de forma monotônica e não é o horário do computador.</p>
 <ul>
-    <li><strong>Use padrões de comunicação síncronos para operações críticas:</strong> Para estados de chamadas e transições de agentes, considere usar comunicação síncrona ou streams de baixa latência.</li>
-    <li><strong>Implemente Redis desde o início:</strong> Ao invés de evoluir através de múltiplas gerações de gerenciamento de estado, comece com Redis como seu repositório de estado autoritativo.</li>
-    <li><strong>Evite blocos em threads de consumidores:</strong> Qualquer chamada externa deve ser feita de forma assíncrona, utilizando filas duráveis para garantir a continuidade do consumo.</li>
+<li>Versão maior: substituir o snapshot.</li>
+<li>Versão menor: preservar o atual e informar atraso.</li>
+<li>Mesma versão e mesmo estado: informar duplicação.</li>
+<li>Mesma versão e estado diferente: sinalizar conflito sem sobrescrever.</li>
 </ul>
-<h2>Aplicação Prática</h2>
-<p>Para arquitetos e desenvolvedores, a implementação das lições aprendidas deve ser feita de maneira proativa. Considere as seguintes ações:</p>
-<ul>
-    <li>Reavalie a arquitetura de comunicação de seu sistema: identifique onde a latência pode ser crítica e ajuste os padrões de comunicação conforme necessário.</li>
-    <li>Implemente um sistema de monitoramento robusto para identificar inconsistências de estado entre microserviços antes que se tornem problemas visíveis.</li>
-    <li>Desenvolva um plano de resiliência para suas dependências críticas, como Redis, garantindo que o sistema possa se recuperar rapidamente de falhas.</li>
-</ul>
-<h2>Riscos e Cuidados</h2>
-<p>É essencial abordar os riscos associados à implementação de arquiteturas orientadas a eventos. A dependência de uma única ferramenta, como Kafka ou Redis, pode se tornar um ponto único de falha. Além disso, a complexidade de manter a consistência em uma arquitetura distribuída pode levar a problemas silenciosos, que, se não monitorados, podem resultar em falhas significativas durante a operação.</p>
-<h2>Conclusão</h2>
-<p>Refletindo sobre os desafios discutidos, fica claro que a arquitetura orientada a eventos, embora poderosa, não é uma solução mágica. É fundamental planejar cuidadosamente cada aspecto da arquitetura, levando em consideração as exigências de latência e consistência do sistema. As lições aprendidas nos mostram que devemos estar atentos às armadilhas que podem surgir ao longo do caminho e que a flexibilidade e a resiliência são fundamentais para o sucesso de qualquer sistema de comunicação em tempo real.</p>
-<p>Por fim, sempre que possível, busque aplicar um olhar crítico e pragmático sobre as escolhas arquitetônicas. O sucesso não está apenas na adoção de novas tecnologias, mas na compreensão profunda de como elas se encaixam nas necessidades reais do seu negócio.</p>
-<p>
-<p></p></div>
+<p>Um salto de versão é aceito somente porque o snapshot contém o estado completo deste contrato. Não use a regra para incrementos de saldo, deltas de estoque ou eventos que precisam produzir um efeito a cada ocorrência.</p>
+<pre><code class="language-javascript">'use strict';
+
+function validar(snapshot) {
+  if (!snapshot || Object.getPrototypeOf(snapshot) !== Object.prototype ||
+      Object.keys(snapshot).sort().join(',') !== 'estado,id,versao' ||
+      typeof snapshot.id !== 'string' || !snapshot.id.trim() ||
+      snapshot.id !== snapshot.id.trim() ||
+      !Number.isSafeInteger(snapshot.versao) || snapshot.versao &lt; 0 ||
+      !['disponivel', 'em-chamada', 'indisponivel'].includes(snapshot.estado)) {
+    throw new TypeError('Snapshot invalido');
+  }
+}
+
+// Contrato: snapshots completos, sequencia monotona por entidade e um produtor.
+function aplicarSnapshot(atual, recebido) {
+  validar(recebido);
+  if (atual !== null) {
+    validar(atual);
+    if (atual.id !== recebido.id) throw new Error('Entidades diferentes');
+    if (recebido.versao &lt; atual.versao) {
+      return { resultado: 'atrasado', snapshot: { ...atual } };
+    }
+    if (recebido.versao === atual.versao) {
+      return {
+        resultado: recebido.estado === atual.estado ? 'duplicado' : 'conflito',
+        snapshot: { ...atual }
+      };
+    }
+  }
+  return { resultado: 'aplicado', snapshot: { ...recebido } };
+}
+
+module.exports = { aplicarSnapshot };
+</code></pre>
+<h3>Entradas e resultado reproduzível</h3>
+<table><thead><tr><th>Entrada</th><th>Estado recebido</th><th>Resultado</th></tr></thead><tbody>
+<tr><td>Versão 2</td><td>em-chamada</td><td>aplicado</td></tr>
+<tr><td>Versão 1</td><td>disponivel</td><td>atrasado</td></tr>
+<tr><td>Versão 2</td><td>em-chamada</td><td>duplicado</td></tr>
+<tr><td>Versão 3</td><td>disponivel</td><td>aplicado</td></tr>
+<tr><td>Versão 3</td><td>indisponivel</td><td>conflito</td></tr>
+</tbody></table>
+<p>O estado final permanece na versão 3, disponível. O conflito é retornado ao chamador; em uma aplicação, seria necessário decidir como registrá-lo e reconciliar a origem.</p>
+<p>Arquivos: <a href="/exemplos/estado-versionado/aplicar.js">função</a>, <a href="/exemplos/estado-versionado/dados.json">entradas</a>, <a href="/exemplos/estado-versionado/executar.js">execução</a> e <a href="/exemplos/estado-versionado/test.js">testes</a>. Com os quatro arquivos na mesma pasta, execute <code>node executar.js</code> e <code>node --test test.js</code>.</p>
+<p class="resultado-executado">Codex executou este exemplo localmente em Node.js: os oito testes passaram. Eles cobrem versões, conflito, validação, preservação das entradas e permutações sem conflito. Não foram executados Kafka, Redis ou um benchmark de produção.</p>
+</div>
+<div class="limites-editoriais">
+<h2>Limites antes de levar a regra a um sistema</h2>
+<p>A função só compara com a versão atual; não detecta divergências históricas já superadas. Havendo duas mensagens contraditórias da mesma versão, a primeira recebida pode determinar o estado mantido. A convergência testada pressupõe snapshots consistentes.</p>
+<p>O exemplo não persiste dados, não coordena consumidores concorrentes e não garante entrega exatamente uma vez. Em armazenamento compartilhado, a comparação e a escrita precisariam ser atômicas. Reinício, perda de estado e efeitos externos exigem testes próprios. O texto é uma análise baseada em fontes com um exercício sintético, não uma experiência profissional atribuída a Anderson Damasio.</p>
+</div>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/articles/tradeoffs-event-driven-design/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener noreferrer">Article: Scaling Java-Based Real-Time Systems: The Hidden Tradeoffs of Event-Driven Design</a> Data da fonte registrada: 30/06/2026.</p>
+<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/articles/tradeoffs-event-driven-design/" rel="noopener noreferrer">Scaling Java-Based Real-Time Systems: The Hidden Tradeoffs of Event-Driven Design</a> Data da fonte registrada: 30/06/2026.</p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/articles/tradeoffs-event-driven-design/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">Article: Scaling Java-Based Real-Time Systems: The Hidden Tradeoffs of Event-Driven Design</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/articles/tradeoffs-event-driven-design/" target="_blank" rel="noopener noreferrer">Scaling Java-Based Real-Time Systems: The Hidden Tradeoffs of Event-Driven Design</a>.</p>
 </section>
 
 <section class="related-articles" aria-labelledby="related-articles-title">

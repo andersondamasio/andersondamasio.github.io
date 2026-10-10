@@ -22201,13 +22201,26 @@
     "urlFonte": "https://www.zdnet.com/article/best-flip-phone/"
   },
   {
-    "titulo": "Melhorando sua Infraestrutura na Nuvem: Dicas para Upgrades sem Downtime",
-    "noticiaOriginal": "Article: Zero-Downtime Critical Cloud Infrastructure Upgrades at Scale",
+    "titulo": "Upgrades na nuvem: como verificar compatibilidade e preparar o rollback",
+    "noticiaOriginal": "Zero-Downtime Critical Cloud Infrastructure Upgrades at Scale",
     "url": "artigos/cloud/melhorando-sua-infraestrutura-na-nuvem-dicas-para-upgrades-sem-downtime.html",
     "data": "2025-08-18T11:18:27.258Z",
     "dataFonte": "2025-08-18T11:00:00.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.infoq.com/articles/zero-downtime-cloud-upgrades/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://www.infoq.com/articles/zero-downtime-cloud-upgrades/",
+    "seo": {
+      "description": "Ficha de compatibilidade entre versões antigas e novas, com critérios de interrupção e limites do rollback quando os dados também mudam.",
+      "modifiedAt": "2026-10-10T10:15:07.040Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T10:15:07.040Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover relato pessoal de upgrades nao confirmado e promessa de evitar downtime; tornar verificavel o plano de compatibilidade e recuperacao.",
+      "hashAntes": "306ec8e415fe5ec7f09c0d0faed90ca919551646b01c940470249d170b336847",
+      "hashDepois": "a2c254e00ed3f7c1986836a27802aace12196f16204fcc989391d33b8abeaaa4",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-contratos-2026-10.json"
+    }
   },
   {
     "titulo": "Meta na Berlinda: A Responsabilidade dos Desenvolvedores de IA em Proteger Nossos Filhos",
@@ -59689,13 +59702,26 @@
     "urlFonte": "https://www.infoq.com/news/2026/02/ms-agent-framework-rc/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   },
   {
-    "titulo": "A arquitetura de apps iOS: lições do mundo Android",
-    "noticiaOriginal": "Article: Borrowing from Kotlin/Android to Architect Scalable iOS Apps in SwiftUI",
+    "titulo": "Arquitetura iOS e padrões Android: como testar o contrato de estado da tela",
+    "noticiaOriginal": "Borrowing from Kotlin/Android to Architect Scalable iOS Apps in SwiftUI",
     "url": "artigos/desenvolvimento-de-software/a-arquitetura-de-apps-ios-licoes-do-mundo-android.html",
     "data": "2026-02-26T09:54:43.901Z",
     "dataFonte": "2026-02-26T09:00:00.000Z",
     "categoria": "Desenvolvimento de Software",
-    "urlFonte": "https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/",
+    "seo": {
+      "description": "Estado, ações e respostas fora de ordem em telas iOS: limites dos padrões Android e um roteiro proposto para verificar o comportamento da interface.",
+      "modifiedAt": "2026-10-10T10:15:07.040Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T10:15:07.040Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover identificacao pessoal como desenvolvedor iOS e prescricao de enum/metodo unico como solucao universal; separar reatividade de ordenacao e cancelamento.",
+      "hashAntes": "2ac1398d1f8d6d3337eadc6e3b931730d310c54beda6252b09e14fdba656d844",
+      "hashDepois": "ed7e7c654249fe9dde52a531aabe360355995f704710448faa333a97695fe59c",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-contratos-2026-10.json"
+    }
   },
   {
     "titulo": "Como o iPhone Transformou a Gravação de Chamadas em Algo Simples e Prático",
@@ -72601,21 +72627,25 @@
     }
   },
   {
-    "titulo": "Desmistificando a Arquitetura Orientada a Eventos: Desafios e Soluções em Sistemas em Tempo Real",
-    "noticiaOriginal": "Article: Scaling Java-Based Real-Time Systems: The Hidden Tradeoffs of Event-Driven Design",
+    "titulo": "Arquitetura orientada a eventos: estados atrasados, duplicados e conflitos",
+    "noticiaOriginal": "Scaling Java-Based Real-Time Systems: The Hidden Tradeoffs of Event-Driven Design",
     "url": "artigos/arquitetura/desmistificando-a-arquitetura-orientada-a-eventos-desafios-e-solucoes-em-sistemas-em-tempo-real.html",
     "data": "2026-07-02T17:46:52.661Z",
     "dataFonte": "2026-06-30T09:00:00.000Z",
     "categoria": "Arquitetura",
-    "urlFonte": "https://www.infoq.com/articles/tradeoffs-event-driven-design/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "qualidadeEditorial": {
-      "politica": "fonte-rastreavel-recente-com-analise-propria",
-      "scoreFonte": 98,
-      "sinalEditorial": 84,
-      "palavrasFonte": 4056,
-      "palavrasArtigo": 893,
-      "secoesArtigo": 8,
-      "similaridadeFonte": 0
+    "urlFonte": "https://www.infoq.com/articles/tradeoffs-event-driven-design/",
+    "seo": {
+      "description": "Limites de Kafka e cache em um relato de arquitetura, com um exemplo Node.js testado para snapshots versionados, atrasos, duplicatas e conflitos.",
+      "modifiedAt": "2026-10-10T10:15:07.040Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T10:15:07.040Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover vivencia nao confirmada e prescricoes universais de Redis, RocksDB e assincronismo; distinguir timeout de poll de atraso minimo e resultado relatado de benchmark.",
+      "hashAntes": "69cf8f8103e665b98872b285dc9d452e5fe41be4b236b79808b80b388d97b8ce",
+      "hashDepois": "e656ae8b837b3648d7a71bae493e285de3ed017f89dd5a2d2a6ec6436f49e5f1",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-contratos-2026-10.json"
     }
   },
   {
