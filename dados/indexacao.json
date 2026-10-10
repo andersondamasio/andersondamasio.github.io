@@ -1231,6 +1231,50 @@
       ],
       "destino": "artigos/inteligencia-artificial/a-nova-era-da-programacao-como-a-ia-esta-transformando-desenvolvedores-em-mestres.html",
       "destinoConteudoHash": "79f5a395aed14e3e94a02991214b2dc1fcc856baf81d503d89bd00e61d26b26f"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/o-futuro-do-desenvolvimento-entre-a-agilidade-e-a-ia.html",
+      "acao": "atualizar",
+      "motivo": "Remover participacao pessoal nao confirmada em retiro e garantias de TDD; atribuir discussoes e limites a Fowler.",
+      "evidencia": "Leitura integral e fonte primaria: Fowler relata o encontro, vincula ideias coletivas e alerta sobre vies de confirmacao no relato de TDD. Numeros do estudo de saude do codigo nao foram reproduzidos sem leitura da metodologia.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T08:53:53.149Z"
+      },
+      "conteudoHash": "83acc670418a43d101682f42663225d902d635c52d522202154bf0e17af8bf78"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/transformando-o-atendimento-como-a-ai-esta-mudando-o-jogo-na-industria-de-servicos.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir denominador, geografia e tempo da taxa; remover vivencia e arquitetura interna sem evidencia.",
+      "evidencia": "Carta pagina 4: usuarios que enviam mensagens ao assistente, idiomas ingles/frances/espanhol, EUA/Canada/Mexico. Comunicado oficial fixa emissao em 12/02/2026. A expressao so far this year nao permite tratar a taxa como medida integral de Q4 ou de todo o suporte. Resultado autodeclarado, nao auditado.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T08:53:53.149Z"
+      },
+      "conteudoHash": "164e862e8e886b0a2f566b768fde4b08b7a9da80bcf8c96a3065fb2335920eef"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-receita-do-sucesso-em-projetos-de-ia-5-passos-para-nao-errar.html",
+      "acao": "atualizar",
+      "motivo": "Retirar experiencias de empresa e grupo de trabalho nao confirmadas, recomendacao de produto e promessa de cinco passos sem erro.",
+      "evidencia": "Relato primario de Paul Neville descreve grupo, objetivos e proximas pesquisas, nao ROI verificado ou participacao de Anderson. Exemplo de prazo em chamado e proposta hipotetica, sem recomendacao previdenciaria ou financeira.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T08:53:53.149Z"
+      },
+      "conteudoHash": "0d2a406d73c550362db81b2e07571d9619c6a0cdc5fcc784d4deeeaf7b424eca"
+    },
+    {
+      "url": "artigos/tecnologia/construindo-equipes-no-novo-mundo-a-transformacao-da-cultura-de-engenharia-de-software.html",
+      "acao": "atualizar",
+      "motivo": "Atribuir percepcoes e previsoes ao entrevistado, sem tratar fala sobre carga cognitiva como resultado universal.",
+      "evidencia": "Leitura integral: minha carreira aparece em pergunta hipotetica, falso positivo para vivencia. Transcricao 03:10 e 11:32 atribui recorte incremental e expectativas a Grazier. Descartar esse sinal nao valida outras generalizacoes do artigo.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T08:53:53.149Z"
+      },
+      "conteudoHash": "d659e91b9fa2a185486088c98eb604788a77432ed7b2cdb21eea60b7891514e2"
     }
   ]
 }

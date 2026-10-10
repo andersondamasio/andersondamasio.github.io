@@ -12,6 +12,62 @@ const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.js
 const manifesto = JSON.parse(ler('dados/indexacao.json'));
 const cadastro = JSON.parse(ler('titulos.json'));
 
+test('correcoes de fatos preservam URLs, datas e evidencias sem aprovar vivencia ou experimento', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-fatos-2026-10.json'));
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.experimentosExecutados, false);
+  assert.equal(lote.metricasGoogle, null);
+  assert.equal(lote.artigos.length, 4);
+  for (const a of lote.artigos) {
+    const q = cheerio.load(ler(a.url)), r = cadastro.find(r => r.url === a.url);
+    assert.equal(a.acao, 'atualizar');
+    assert.equal(r.data, a.antes.data);
+    assert.equal(q('meta[property="article:published_time"]').attr('content'), a.antes.data);
+    assert.equal(r.revisaoHumana, undefined);
+    assert.equal(r.correcaoEditorial.revisaoHumana, false);
+    assert.equal(r.correcaoEditorial.relatorio, 'dados/editorial/curadoria-fatos-2026-10.json');
+    assert.equal(r.seo.modifiedAt, lote.em);
+    assert.equal(r.qualidadeEditorial, undefined);
+    assert.equal(q('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.equal(q('h1').text(), a.depois.titulo);
+    assert.equal(q('meta[name=description]').attr('content'), a.depois.descricao);
+    assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    assert.doesNotMatch(q('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(hashCorpoEditorial(q('.article-body').html()), a.depois.corpoHash);
+    assert.equal(manifesto.decisoes.find(d => d.url === a.url).conteudoHash, a.depois.corpoHash);
+    for (const e of a.evidencias) {
+      assert.equal(q(e.seletor).length, 1);
+      assert.equal(hashCorpoEditorial(q(e.seletor).html()), e.textoHash);
+      assert.equal(q(e.seletor).find('a').attr('href'), e.fonte);
+    }
+    assert.equal(q('.contribuicao-editorial').length, 1);
+    assert.equal(q('.limites-editoriais').length, 1);
+    assert.ok(a.pergunta && a.sobreposicao);
+    assert.doesNotMatch(q('.article-body').text(), /participei de um retiro|entrei na minha última empresa|participei de um grupo|aprendi ao longo de minha carreira/);
+  }
+});
+
+test('casos de IA delimitam denominador, fonte historica, falso positivo e propostas nao executadas', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-fatos-2026-10.json'));
+  const pagina = i => cheerio.load(ler(lote.artigos[i].url));
+  assert.match(pagina(0)('.fato-tdd').text(), /viés de confirmação/);
+  assert.match(pagina(0)('.limites-editoriais').text(), /propostas não executadas/);
+  const airbnb = pagina(1);
+  assert.match(airbnb('.fato-data').text(), /12 de fevereiro de 2026/);
+  assert.match(airbnb('.fato-denominador').text(), /Estados Unidos, Canadá e México/);
+  assert.match(airbnb('.fato-denominador').text(), /quando os usuários enviavam mensagens ao assistente/);
+  assert.match(airbnb('.fato-denominador').text(), /não todo o atendimento/);
+  assert.match(airbnb('.contribuicao-editorial').text(), /30 de 100, ou 30%/);
+  assert.match(airbnb('.limites-editoriais').text(), /protocolo não foi executado/);
+  assert.equal(cadastro.find(r => r.url === lote.artigos[1].url).dataFonte, '2026-02-12');
+  assert.match(pagina(2)('.fato-objetivos').text(), /próximos passos/);
+  assert.match(pagina(2)('.limites-editoriais').text(), /não fornece orientação previdenciária/);
+  assert.doesNotMatch(pagina(2)('.article-body').text(), /Dynamics 365/);
+  assert.match(lote.artigos[3].evidencia, /falso positivo/);
+  assert.match(pagina(3)('.fato-carga').text(), /expectativa é do entrevistado/);
+  assert.match(pagina(3)('.limites-editoriais').text(), /não é um instrumento psicológico validado/);
+});
+
 test('metricas e contexto preservam fontes, limites e historico sem aprovar experiencia pessoal', () => {
   const lote = JSON.parse(ler('dados/editorial/curadoria-metricas-contexto-2026-10.json'));
   assert.equal(lote.revisaoHumana, false);

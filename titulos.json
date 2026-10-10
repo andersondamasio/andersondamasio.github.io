@@ -19342,13 +19342,26 @@
     "urlFonte": "https://www.infoq.com/news/2025/08/java-news-roundup-jul28-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   },
   {
-    "titulo": "Construindo Equipes no Novo Mundo: A Transformação da Cultura de Engenharia de Software",
-    "noticiaOriginal": "Podcast: Team Building in the Brave New World: Transforming Software Engineering Culture and Leadership",
+    "titulo": "Adoção de IA na equipe: como acompanhar o esforço de aprendizagem",
+    "noticiaOriginal": "Team Building in the Brave New World: Transforming Software Engineering Culture and Leadership",
     "url": "artigos/tecnologia/construindo-equipes-no-novo-mundo-a-transformacao-da-cultura-de-engenharia-de-software.html",
     "data": "2025-08-04T04:58:13.137Z",
-    "dataFonte": "2025-08-01T09:00:00.000Z",
+    "dataFonte": "2025-08-01",
     "categoria": "Tecnologia",
-    "urlFonte": "https://www.infoq.com/podcasts/transforming-software-engineering-culture-leadership/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://www.infoq.com/podcasts/transforming-software-engineering-culture-leadership/",
+    "seo": {
+      "description": "A perspectiva de Duncan Grazier e um roteiro proposto para separar aprendizagem, revisão e dúvidas de requisito, sem prever ganhos de carreira.",
+      "modifiedAt": "2026-10-10T08:53:53.149Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T08:53:53.149Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Atribuir percepcoes e previsoes ao entrevistado, sem tratar fala sobre carga cognitiva como resultado universal.",
+      "hashAntes": "9fe613572c051fa8ed1b8dfba932bf0ce112be5da72b0b16edac90d32c1940d8",
+      "hashDepois": "d659e91b9fa2a185486088c98eb604788a77432ed7b2cdb21eea60b7891514e2",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-fatos-2026-10.json"
+    }
   },
   {
     "titulo": "Analisando Redes em Containers: A Revolução do Subtrace",
@@ -45405,13 +45418,26 @@
     "urlFonte": "https://www.zdnet.com/article/dell-16-premium-review/"
   },
   {
-    "titulo": "A receita do sucesso em projetos de IA: 5 passos para não errar",
-    "noticiaOriginal": "This company's AI success was built on 5 essential steps - see how they work for you",
+    "titulo": "Dados para projetos de IA: o que conferir antes de um piloto",
+    "noticiaOriginal": "Shaping the future: How we are driving digital transformation with the pensions industry",
     "url": "artigos/inteligencia-artificial/a-receita-do-sucesso-em-projetos-de-ia-5-passos-para-nao-errar.html",
     "data": "2025-12-12T08:32:30.745Z",
-    "dataFonte": "2025-12-12T02:00:40.000Z",
+    "dataFonte": "2025-12-08",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/ai-project-success-data-foundation-storytelling-artificial-intelligence/"
+    "urlFonte": "https://www.thepensionsregulator.gov.uk/media-hub/blogs/2025-blogs/shaping-the-future-how-we-are-driving-digital-transformation-with-the-pensions-industry",
+    "seo": {
+      "description": "Uma iniciativa do TPR como contexto para conferir origem, significado, atualização e acesso aos dados, com um exemplo hipotético de atendimento.",
+      "modifiedAt": "2026-10-10T08:53:53.149Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T08:53:53.149Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar experiencias de empresa e grupo de trabalho nao confirmadas, recomendacao de produto e promessa de cinco passos sem erro.",
+      "hashAntes": "7890686fc6ebf61c0cf5b36dee9ea5547a316a6387a8e2e8f8946fffa0c55c0c",
+      "hashDepois": "0d2a406d73c550362db81b2e07571d9619c6a0cdc5fcc784d4deeeaf7b424eca",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-fatos-2026-10.json"
+    }
   },
   {
     "titulo": "Desenvolvendo Lideranças Humanas no Mundo da Engenharia de Software",
@@ -57526,13 +57552,26 @@
     "urlFonte": "https://www.bbc.com/news/articles/cwy8dxz1g7zo?at_medium=RSS&at_campaign=rss"
   },
   {
-    "titulo": "Transformando o Atendimento: Como a AI Está Mudando o Jogo na Indústria de Serviços",
-    "noticiaOriginal": "Airbnb says a third of its customer support is now handled by AI in the US and Canada",
+    "titulo": "Atendimento com IA: o que a taxa anunciada pelo Airbnb mede",
+    "noticiaOriginal": "Airbnb Q4 2025 Shareholder Letter",
     "url": "artigos/inteligencia-artificial/transformando-o-atendimento-como-a-ai-esta-mudando-o-jogo-na-industria-de-servicos.html",
     "data": "2026-02-13T22:37:03.991Z",
-    "dataFonte": "2026-02-13T22:12:26.000Z",
+    "dataFonte": "2026-02-12",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://techcrunch.com/2026/02/13/airbnb-says-a-third-of-its-customer-support-is-now-handled-by-ai-in-the-u-s-and-canada/"
+    "urlFonte": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526048670/d58192dex991.htm",
+    "seo": {
+      "description": "O denominador do anúncio do Airbnb de fevereiro de 2026 e um roteiro proposto para avaliar resolução, reabertura e transferência para atendentes.",
+      "modifiedAt": "2026-10-10T08:53:53.149Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T08:53:53.149Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir denominador, geografia e tempo da taxa; remover vivencia e arquitetura interna sem evidencia.",
+      "hashAntes": "b9f941e4e60e2a5bc8733968cefc64626a6014dad7808e204c273a9cb5c4f36e",
+      "hashDepois": "164e862e8e886b0a2f566b768fde4b08b7a9da80bcf8c96a3065fb2335920eef",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-fatos-2026-10.json"
+    }
   },
   {
     "titulo": "O dilema do amor virtual: o que a morte do modelo GPT-4o nos ensina sobre a conexão humana?",
@@ -58370,13 +58409,26 @@
     "urlFonte": "https://techcrunch.com/2026/02/18/microsoft-says-office-bug-exposed-customers-confidential-emails-to-copilot-ai/"
   },
   {
-    "titulo": "O futuro do desenvolvimento: entre a agilidade e a IA",
+    "titulo": "IA no desenvolvimento: como revisar uma alteração antes de aceitá-la",
     "noticiaOriginal": "Fragments: February 18",
     "url": "artigos/inteligencia-artificial/o-futuro-do-desenvolvimento-entre-a-agilidade-e-a-ia.html",
     "data": "2026-02-18T15:55:38.428Z",
-    "dataFonte": "2026-02-18T15:53:00.000Z",
+    "dataFonte": "2026-02-18",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://martinfowler.com/fragments/2026-02-18.html"
+    "urlFonte": "https://martinfowler.com/fragments/2026-02-18.html",
+    "seo": {
+      "description": "Uma leitura das notas de Martin Fowler e uma ficha proposta de revisão: requisitos, riscos e evidências, sem transformar TDD em garantia.",
+      "modifiedAt": "2026-10-10T08:53:53.149Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T08:53:53.149Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover participacao pessoal nao confirmada em retiro e garantias de TDD; atribuir discussoes e limites a Fowler.",
+      "hashAntes": "59be79aaa454d408a343543bbb2ec0ddde169b0919c4ea967aad905b961f5edd",
+      "hashDepois": "83acc670418a43d101682f42663225d902d635c52d522202154bf0e17af8bf78",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-fatos-2026-10.json"
+    }
   },
   {
     "titulo": "A Batalha das Baterias: Um Olhar Técnico Sobre os Celulares com Maior Duração",
