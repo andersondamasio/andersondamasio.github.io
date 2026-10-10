@@ -12,6 +12,100 @@ const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.js
 const manifesto = JSON.parse(ler('dados/indexacao.json'));
 const cadastro = JSON.parse(ler('titulos.json'));
 
+test('atribuicoes e produtos preservam publicacao e distinguem documentacao de testes pessoais', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-atribuicao-produtos-2026-10.json'));
+  const corrigidos = lote.artigos.filter(a => a.acao === 'atualizar');
+  assert.equal(corrigidos.length, 6);
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.experimentosExecutados, false);
+  assert.equal(lote.metricasGoogle, null);
+  for (const a of corrigidos) {
+    const q = cheerio.load(ler(a.url)), r = cadastro.find(r => r.url === a.url);
+    assert.equal(r.data, a.antes.data);
+    assert.equal(r.revisaoHumana, undefined);
+    assert.equal(r.correcaoEditorial.revisaoHumana, false);
+    assert.equal(r.correcaoEditorial.relatorio, 'dados/editorial/curadoria-atribuicao-produtos-2026-10.json');
+    assert.equal(r.qualidadeEditorial, undefined);
+    assert.equal(r.seo.modifiedAt, lote.em);
+    assert.equal(q('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.equal(q('h1').text(), a.depois.titulo);
+    assert.equal(q('meta[name=description]').attr('content'), a.depois.descricao);
+    assert.equal(q('meta[property="article:published_time"]').attr('content'), a.antes.data);
+    assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    assert.doesNotMatch(q('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(hashCorpoEditorial(q('.article-body').html()), a.depois.corpoHash);
+    assert.equal(manifesto.decisoes.find(d => d.url === a.url).conteudoHash, a.depois.corpoHash);
+    assert.equal(q('.contribuicao-editorial').length, 1);
+    assert.equal(q('.limites-editoriais').length, 1);
+    assert.ok(a.pergunta && a.sobreposicao);
+    for (const e of a.evidencias) {
+      assert.equal(q(e.seletor).length, 1);
+      assert.equal(hashCorpoEditorial(q(e.seletor).html()), e.textoHash);
+      assert.equal(q(e.seletor).find('a').attr('href'), e.fonte);
+    }
+    assert.doesNotMatch(q('.article-body').text(), /eu testei|em minha experiência|nossa salvação|api\.smartlock\.com|api\.example\.com/i);
+  }
+});
+
+test('correcoes documentais removem API de fechadura e garantias indevidas sem simular execucao', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-atribuicao-produtos-2026-10.json'));
+  const pagina = trecho => cheerio.load(ler(lote.artigos.find(a => a.url.includes(trecho)).url));
+  const lock = pagina('revolucao-dos-fechaduras');
+  assert.equal(lock('.article-body pre').length, 0);
+  assert.match(lock('.fato-reserva').text(), /AAA.*palma e a câmera ficam desativados/);
+  assert.match(lock('.fato-dados').text(), /miniaturas.*nuvem/);
+  assert.match(lock('.article-body').text(), /endpoint de desbloqueio sem contrato/);
+  assert.match(lock('.contribuicao-editorial').text(), /não verificado/);
+  const caso = pagina('protegendo-nossos-websites');
+  assert.match(caso('.fato-caso').text(), /ScummVM, não um projeto de Anderson/);
+  assert.match(caso('.limites-editoriais').text(), /Não houve instalação de Anubis neste site/);
+  const acesso = pagina('batalha-contra');
+  assert.match(acesso('.fato-desafio').text(), /não é uma prova da identidade/);
+  const jobs = pagina('codigo-escondido');
+  assert.match(jobs('.fato-relato').text(), /Steve Hayman/);
+  assert.equal(jobs('.article-body pre').length, 0);
+  const camera = pagina('eufycam-s3');
+  assert.match(camera('.fato-kit').text(), /1080p.*Apple Home/);
+  assert.match(camera('.limites-editoriais').text(), /Não foram testados/);
+  const lorex = pagina('desvendando-o-novo-campainha');
+  assert.match(lorex('.fato-modelos').text(), /B451AJD\/B451AJDB/);
+  assert.match(lorex('.fato-modelos').text(), /B463AJD\/B463AJDB/);
+  assert.match(lorex('.limites-editoriais').text(), /Não foi possível identificar.*modelo exato/);
+});
+
+test('repeticoes de produtos tem destino equivalente direto e noticia Caro inventada e recuperavel', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-atribuicao-produtos-2026-10.json'));
+  const removidos = lote.artigos.filter(a => a.acao !== 'atualizar');
+  assert.equal(removidos.filter(a => a.acao === 'consolidar').length, 3);
+  assert.equal(removidos.filter(a => a.acao === 'retirar').length, 1);
+  for (const a of removidos) {
+    const d = manifesto.decisoes.find(d => d.url === a.url);
+    const backup = JSON.parse(ler(a.arquivoRecuperavel));
+    assert.equal(hashRegistros(backup.registros), d.registrosHash);
+    assert.equal(hashArquivo(backup.arquivos[0].html), d.arquivoHash);
+    assert.equal(hashCorpoEditorial(cheerio.load(backup.arquivos[0].html)('.article-body').html()), a.antes.corpoHash);
+    assert.ok(!cadastro.some(r => r.url === a.url));
+    for (const p of backup.arquivos) {
+      if (a.acao === 'retirar') {
+        assert.ok(!fs.existsSync(path.join(root, p.url)));
+        assert.equal(d.destino, undefined);
+        assert.equal(a.destinoEquivalente, null);
+        assert.equal(a.fonteCorrecao.url, 'https://martinfowler.com/articles/2025-caro.html');
+      } else {
+        const q = cheerio.load(ler(p.url));
+        const destino = cheerio.load(ler(a.destinoEquivalente));
+        assert.equal(q('.article-body').length, 0);
+        assert.match(q('meta[name=robots]').attr('content'), /noindex/);
+        assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.destinoEquivalente}`);
+        assert.equal(q('meta[http-equiv=refresh]').attr('content'), `0; url=https://www.andersondamasio.com.br/${a.destinoEquivalente}`);
+        assert.equal(destino('meta[http-equiv=refresh]').length, 0);
+        assert.doesNotMatch(destino('meta[name=robots]').attr('content'), /noindex/);
+        assert.equal(hashCorpoEditorial(destino('.article-body').html()), d.destinoConteudoHash);
+      }
+    }
+  }
+});
+
 test('alegacoes de testes de produtos sao substituidas por fontes e propostas explicitamente nao executadas', () => {
   const lote = JSON.parse(ler('dados/editorial/curadoria-testes-produtos-2026-10.json'));
   const corrigidos = lote.artigos.filter(a => a.acao === 'atualizar');

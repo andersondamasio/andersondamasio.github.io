@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Protegendo nossos websites: como Anúbis nos salvou de um ataque DDoS</title>
-<meta name="description" content="Sempre que vejo discussões sobre Anubis saved our websites from a DDoS attack, lembro de uma situação real em produção que vivenciei há alguns anos. Nossa...">
+<title>Anubis no caso ScummVM: o que o relato de mitigação permite concluir</title>
+<meta name="description" content="O caso ScummVM atribuído à fonte original e uma ficha proposta para distinguir recuperação do serviço, carga e bloqueios indevidos.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html">
@@ -14,42 +14,48 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Protegendo nossos websites: como Anúbis nos salvou de um ataque DDoS">
-<meta property="og:description" content="Sempre que vejo discussões sobre Anubis saved our websites from a DDoS attack, lembro de uma situação real em produção que vivenciei há alguns anos. Nossa...">
+<meta property="og:title" content="Anubis no caso ScummVM: o que o relato de mitigação permite concluir">
+<meta property="og:description" content="O caso ScummVM atribuído à fonte original e uma ficha proposta para distinguir recuperação do serviço, carga e bloqueios indevidos.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2025-05-02T06:25:44.258Z">
-<meta property="article:modified_time" content="2025-05-02T06:25:44.258Z">
+<meta property="article:modified_time" content="2026-10-10T07:48:34.922Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Protegendo nossos websites: como Anúbis nos salvou de um ataque DDoS">
-<meta name="twitter:description" content="Sempre que vejo discussões sobre Anubis saved our websites from a DDoS attack, lembro de uma situação real em produção que vivenciei há alguns anos. Nossa...">
+<meta name="twitter:title" content="Anubis no caso ScummVM: o que o relato de mitigação permite concluir">
+<meta name="twitter:description" content="O caso ScummVM atribuído à fonte original e uma ficha proposta para distinguir recuperação do serviço, carga e bloqueios indevidos.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Protegendo nossos websites: como Anúbis nos salvou de um ataque DDoS",
-  "description": "Sempre que vejo discussões sobre Anubis saved our websites from a DDoS attack, lembro de uma situação real em produção que vivenciei há alguns anos. Nossa...",
+  "headline": "Anubis no caso ScummVM: o que o relato de mitigação permite concluir",
+  "description": "O caso ScummVM atribuído à fonte original e uma ficha proposta para distinguir recuperação do serviço, carga e bloqueios indevidos.",
   "url": "https://www.andersondamasio.com.br/artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html"
   },
   "datePublished": "2025-05-02T06:25:44.258Z",
-  "dateModified": "2025-05-02T06:25:44.258Z",
+  "dateModified": "2026-10-10T07:48:34.922Z",
   "articleSection": "Outros",
   "inLanguage": "pt-BR",
-  "wordCount": 416,
+  "wordCount": 421,
   "about": {
     "@type": "Thing",
     "name": "Outros"
   },
   "isAccessibleForFree": true,
   "copyrightYear": 2025,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "The Day Anubis Saved Our Websites From a DDoS Attack",
+    "url": "https://felsqualle.com/posts/2025/05/anubis-saved-our-websites-from-a-ddos-attack/"
+  },
+  "citation": "https://felsqualle.com/posts/2025/05/anubis-saved-our-websites-from-a-ddos-attack/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -108,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Protegendo nossos websites: como Anúbis nos salvou de um ataque DDoS",
+      "name": "Anubis no caso ScummVM: o que o relato de mitigação permite concluir",
       "item": "https://www.andersondamasio.com.br/artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html"
     }
   ]
@@ -141,6 +147,10 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
 .article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
 .article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0; }
+.article-source a { font-weight: 700; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -166,18 +176,41 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 
 
 <main>
-<h1>Protegendo nossos websites: como Anúbis nos salvou de um ataque DDoS</h1>
+<h1>Anubis no caso ScummVM: o que o relato de mitigação permite concluir</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 <p class="article-meta">Publicado em: 02/05/2025 03:25</p>
 
-<div class="article-body">Sempre que vejo discussões sobre Anubis saved our websites from a DDoS attack, lembro de uma situação real em produção que vivenciei há alguns anos. Nossa equipe de desenvolvimento estava trabalhando duro para lançar um novo serviço online, quando fomos surpreendidos por um ataque massivo de negação de serviço. Foi um verdadeiro caos, com nossos servidores sobrecarregados, tempo de resposta extremamente lento e usuários frustrados.<br><br>Foi nesse momento de desespero que recorremos a Anúbis, uma ferramenta de proteção contra DDoS que provou ser nossa salvação. Com sua capacidade de identificar padrões de tráfego maliciosos e filtrá-los antes que atinjam nossa infraestrutura, conseguimos manter nossos websites no ar e nossos usuários satisfeitos.<br><br>Para quem não está familiarizado com o termo, DDoS (Distributed Denial of Service) é um tipo de ataque cibernético que visa sobrecarregar um servidor com um volume massivo de solicitações, tornando-o inacessível para usuários legítimos. Esse tipo de ataque pode causar prejuízos enormes para empresas de todos os tamanhos, desde pequenos negócios até grandes corporações.<br><br>No caso do nosso ataque, os criminosos cibernéticos estavam usando uma variedade de técnicas para tentar derrubar nossos websites. Foi aí que Anúbis entrou em ação, analisando o tráfego em tempo real, identificando padrões suspeitos e bloqueando automaticamente as solicitações maliciosas. Com sua inteligência artificial avançada, Anúbis conseguiu adaptar-se rapidamente às novas ameaças, mantendo nossos serviços online mesmo diante do ataque mais agressivo.<br><br>Uma das vantagens de Anúbis é sua integração fácil com diferentes tecnologias e linguagens de programação. Por exemplo, em aplicações desenvolvidas em C#, podemos utilizar a API fornecida pela ferramenta para configurar regras de segurança personalizadas e monitorar o tráfego em tempo real. Isso nos dá um controle refinado sobre o comportamento da aplicação e nos permite reagir rapidamente a qualquer ameaça que surja.<br><br>Além disso, Anúbis oferece insights valiosos sobre o tráfego da nossa aplicação, permitindo-nos identificar padrões de comportamento dos usuários e otimizar o desempenho do sistema. Com suas análises detalhadas e relatórios personalizáveis, podemos tomar decisões mais informadas e melhorar continuamente a segurança e a eficiência dos nossos websites.<br><br>Em conclusão, Anúbis provou ser uma ferramenta indispensável para proteger nossos websites contra ataques DDoS e garantir a disponibilidade dos nossos serviços online. Com sua capacidade de detectar e bloquear ameaças em tempo real, sua integração flexível com diferentes tecnologias e sua interface intuitiva, Anúbis se tornou um aliado essencial para nossa equipe de desenvolvimento. Recomendo a todos que estejam preocupados com a segurança online a considerar a implementação desta poderosa ferramenta em suas aplicações.</div>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T07:48:34.922Z">10/10/2026</time>: atribuições e orientações corrigidas com fontes; a data da publicação original foi preservada.</p>
+<p class="fato-caso">O relato publicado em 1º de maio de 2025 no site hoje chamado felsqualle.com descreve a infraestrutura do projeto ScummVM, não um projeto de Anderson Damasio. O autor relata saturação de Apache2, PHP-FPM e MariaDB e redução da carga após introduzir Anubis. É um resultado declarado naquele ambiente, sem reprodução independente neste artigo. <a href="https://felsqualle.com/posts/2025/05/anubis-saved-our-websites-from-a-ddos-attack/">Fonte: relato original sobre o incidente</a>.</p>
+<h2>Qual problema estava sendo tratado?</h2>
+<p>O ponto útil para uma análise de arquitetura é separar o volume de requisições do custo de atendê-las. No relato, páginas dinâmicas da wiki exigiam trabalho do banco e da aplicação. A interpretação proposta aqui é investigar qual recurso se esgota antes de escolher uma defesa; uma contagem isolada de acessos não responde a essa pergunta.</p>
+<p class="fato-projeto">O projeto Anubis descreve desafios aplicados às conexões para proteger recursos a montante contra scrapers. O próprio README alerta que a proteção pode impedir bots úteis e que a ferramenta não é necessária na maioria dos casos. Isso não sustenta a descrição anterior de uma inteligência artificial que aprende ataques ou de uma API C# pronta para uso. <a href="https://github.com/TecharoHQ/anubis">Fonte: README oficial do Anubis</a>.</p>
+<h2>Uma ficha para comparar a situação antes e depois</h2>
+<div class="contribuicao-editorial">
+<p>Este é um roteiro proposto para uma equipe que já administra o serviço. Não é um teste executado nem uma configuração recomendada para qualquer site.</p>
+<ul>
+<li><strong>Hipótese:</strong> requisições caras estão esgotando conexões do banco. Evidência a procurar: rotas, duração e conexões ocupadas no mesmo intervalo, sem guardar dados pessoais desnecessários.</li>
+<li><strong>Intervenção:</strong> registrar a versão e as regras alteradas, além de qualquer mudança simultânea na aplicação. Sem isso, atribuir a recuperação a uma única ferramenta pode ser precipitado.</li>
+<li><strong>Resultado técnico:</strong> comparar carga, erros e latência com a quantidade de requisições que efetivamente chegaram à aplicação. Uma queda de tráfego sozinha não demonstra melhora para o leitor.</li>
+<li><strong>Custo de acesso:</strong> verificar páginas públicas, navegadores suportados e clientes automatizados que precisam continuar funcionando. Registrar bloqueios indevidos e um procedimento de reversão antes da mudança.</li>
+</ul>
+<p>Uma decisão de adoção deve explicar tanto o recurso preservado quanto os acessos que a política passou a negar. Para essa segunda parte, consulte o <a href="/artigos/seguranca/a-batalha-contra-os-bots-como-proteger-seu-site-com-anubis.html">roteiro de avaliação de desafios e bots úteis</a>.</p>
+</div>
+<h2>Limites do caso</h2>
+<p class="limites-editoriais">O incidente pertence ao autor da fonte. Nenhum ataque, implantação ou teste de carga foi realizado para esta análise. O resultado relatado não comprova proteção contra qualquer DDoS, capacidade da rede ou ausência de falsos bloqueios. Não houve instalação de Anubis neste site.</p>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo.</p>
+<p><strong>Fonte principal:</strong> <a href="https://felsqualle.com/posts/2025/05/anubis-saved-our-websites-from-a-ddos-attack/" rel="noopener noreferrer">The Day Anubis Saved Our Websites From a DDoS Attack</a> Data da fonte registrada: 01/05/2025.</p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
+<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="https://felsqualle.com/posts/2025/05/anubis-saved-our-websites-from-a-ddos-attack/" target="_blank" rel="noopener noreferrer">The Day Anubis Saved Our Websites From a DDoS Attack</a>.</p>
+</section>
+
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>

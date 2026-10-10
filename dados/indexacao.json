@@ -1039,6 +1039,144 @@
         "em": "2026-10-10T07:16:10.519Z"
       },
       "conteudoHash": "d780acc73453bb9270d41cb0a85b6b7ba3e2642ec7c9767ed412865b7b436031"
+    },
+    {
+      "url": "artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir autoria do incidente, capacidades de IA e API C# nao documentadas e promessa de protecao universal.",
+      "evidencia": "Leitura integral do artigo e relato primario: incidente pertence a infraestrutura ScummVM. README oficial descreve desafios e limita bots uteis; nenhuma execucao propria.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:48:34.922Z"
+      },
+      "conteudoHash": "1b5cb76a7a37a9397a41ff214c363add9e1db494d8fd27f7335d08a70c95ca07"
+    },
+    {
+      "url": "artigos/seguranca/a-batalha-contra-os-bots-como-proteger-seu-site-com-anubis.html",
+      "acao": "atualizar",
+      "motivo": "Remover promessa de identificar humanos, bloqueio apenas de visitantes maliciosos e recomendacao de configuracao sem verificacao.",
+      "evidencia": "Leitura integral encontrou garantia de humanidade, estatistica atribuida indevidamente a scrapers e configuracao dita paranoica. Fontes primarias descrevem desafios e risco para bots uteis.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:48:34.922Z"
+      },
+      "conteudoHash": "3f1264459cb61fca08c2834bb1f71a9c6c46d74b2b4e1f10c2ffe47f8cfc38d1"
+    },
+    {
+      "url": "artigos/o-codigo-escondido-por-tras-do-elogio-de-steve-jobs.html",
+      "acao": "atualizar",
+      "motivo": "Restituir autoria e assunto da fonte, removendo vivencia de Anderson, codigo oculto inventado e exemplo HTTP sem relacao.",
+      "evidencia": "Texto completo de Hayman relata alias na NeXT em 1991, publicado em 06/05/2025. Nao trata de um algoritmo ou de experiencia de Anderson.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:48:34.922Z"
+      },
+      "conteudoHash": "b2ef7feabdda9c659f2297eb376e48a7974137c9e1ab1f0b7a4cfc6ef4c24c2c"
+    },
+    {
+      "url": "artigos/seguranca/a-revolucao-das-cameras-de-seguranca-por-que-a-eufycam-s3-pro-esta-mudando-o-jogo.html",
+      "acao": "atualizar",
+      "motivo": "Remover teste pessoal de detecao, garantia de energia solar e recomendacao de desempenho em todas as condicoes.",
+      "evidencia": "Leitura integral identificou experiencia de ajuste a 200 pes nao confirmada. Pagina do kit distingue 4K/Apple Home 1080p, armazenamento na base e condicoes de luz.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:48:34.922Z"
+      },
+      "conteudoHash": "0d08d520cefb22b5360e57c32454cea05c4ae3e82ac18fc6e1ba0c8d7a1ce8ec"
+    },
+    {
+      "url": "artigos/seguranca/desvendando-o-novo-campainha-inteligente-uma-revolucao-sem-taxas-mensais.html",
+      "acao": "atualizar",
+      "motivo": "Corrigir mistura de modelos, kit de sino, comparacao pessoal inventada e promessa de integracao universal.",
+      "evidencia": "Dois artigos Lorex lidos: mesmos recursos e falsa comparacao Eufy, sem SKU. Tabela oficial distingue B451AJD/B451AJDB e B463AJD/B463AJDB. Nao foi inferido o SKU dos reviews antigos.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:48:34.922Z"
+      },
+      "conteudoHash": "e0bb310887aa43d617d7948b81efb6dba827eb841f869077a00f72d18938dd7d"
+    },
+    {
+      "url": "artigos/seguranca/seguranca-e-inovacao-a-revolucao-dos-fechaduras-inteligentes-com-reconhecimento-de-palma.html",
+      "acao": "atualizar",
+      "motivo": "Remover endpoint de desbloqueio sem contrato, envio de biometria em exemplo e garantias de seguranca por biometria.",
+      "evidencia": "Codigo anterior usava api.smartlock.com sem fonte e inferia destravamento de status HTTP; nao foi executado. Fabricante documenta restricoes da alimentacao de reserva e envio opcional de miniaturas.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:48:34.922Z"
+      },
+      "conteudoHash": "88eda2c2b9a46ba40d6ee2aab3799c99672cf946e76cf76bd49b8e03d912a71a"
+    },
+    {
+      "url": "artigos/anubis-o-guardiao-inesperado-contra-ataques-ddos.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar a segunda narrativa do mesmo incidente ScummVM no relato com atribuicao corrigida.",
+      "evidencia": "Origem e destino lidos integralmente: mesmo titulo de noticia e intencao de entender Anubis no incidente. Origem confunde software/metafora e inventa experiencia; destino trata do caso, nao de outro assunto.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:48:34.922Z"
+      },
+      "conteudoHash": "989621fa02a86ee364908fe13d49d9f3ee2cdc911db7ed96fbc21f0db2a28640",
+      "arquivoHash": "27f36d239910003c4ce711d199d4f43df2a45841f75d73059923cffbabf7a976",
+      "registrosHash": "ef842ea7b92666aca5e3e56e83ca67f1bb5f07a86f8cf3daf72433185a99abd6",
+      "aliases": [],
+      "destino": "artigos/protegendo-nossos-websites-como-anubis-nos-salvou-de-um-ataque-ddos.html",
+      "destinoConteudoHash": "1b5cb76a7a37a9397a41ff214c363add9e1db494d8fd27f7335d08a70c95ca07"
+    },
+    {
+      "url": "artigos/tecnologia/um-novo-olhar-sobre-a-campainha-inteligente-a-lorex-2k-sem-taxas-mensais.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar apresentacao repetida da Lorex 2K no guia que distingue modelos e requisitos.",
+      "evidencia": "Leitura integral dos dois textos mostra mesma intencao de escolha, falsas comparacoes com Eufy e instalacao pessoal; nao ha ensaio independente a preservar como evidencia.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:48:34.922Z"
+      },
+      "conteudoHash": "35b94cf58f4a3e33105b8296fdcdf78f3b860ddfab7136b31bbeeeee9e70f9d3",
+      "arquivoHash": "3937c64bca96e8dcd40adc98c299850deebe20422f1c28b0d966e242c81388b8",
+      "registrosHash": "4565732c46f8e3d7c6c1cb090195f2a8791b8a94fae237f8698467dc6393c500",
+      "aliases": [
+        {
+          "url": "tecnologia/um-novo-olhar-sobre-a-campainha-inteligente-a-lorex-2k-sem-taxas-mensais.html",
+          "arquivoHash": "e46a529fddff059c62eed7881310370b2a1ab92731aea211573b65ebca201dc5"
+        }
+      ],
+      "destino": "artigos/seguranca/desvendando-o-novo-campainha-inteligente-uma-revolucao-sem-taxas-mensais.html",
+      "destinoConteudoHash": "e0bb310887aa43d617d7948b81efb6dba827eb841f869077a00f72d18938dd7d"
+    },
+    {
+      "url": "artigos/tecnologia/a-revolucao-das-fechaduras-inteligentes-como-a-biometria-ta-mudando-o-jogo.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar segunda apresentacao FamiLock S3 Max, corrigindo garantias, preco antigo e confusao com reconhecimento facial.",
+      "evidencia": "Leitura integral de origem/destino: mesmo produto e expectativa de seguranca/acesso; novo destino explica limites relevantes sem inventar teste ou experiencia pessoal.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:48:34.922Z"
+      },
+      "conteudoHash": "8bd1c86997c5019ab68060cc039968114636dc0f5c2849968c7bdbd4535553b4",
+      "arquivoHash": "f99af38b228c680432799bd028fc5400d914d1f9eefbe47cb1c2859f6f9e9c3c",
+      "registrosHash": "82724716573becb2f760068f32b6d0f6b3dc91c920ac8090b0ffe9f7db0b450b",
+      "aliases": [
+        {
+          "url": "tecnologia/a-revolucao-das-fechaduras-inteligentes-como-a-biometria-ta-mudando-o-jogo.html",
+          "arquivoHash": "d2ac041687e1e6a11d9c63afccb148e99cfbd2d5858ffb7e6f977fdb814e0958"
+        }
+      ],
+      "destino": "artigos/seguranca/seguranca-e-inovacao-a-revolucao-dos-fechaduras-inteligentes-com-reconhecimento-de-palma.html",
+      "destinoConteudoHash": "88eda2c2b9a46ba40d6ee2aab3799c99672cf946e76cf76bd49b8e03d912a71a"
+    },
+    {
+      "url": "artigos/o-sequestro-de-robert-caro-uma-licao-sobre-seguranca-em-sistemas.html",
+      "acao": "retirar",
+      "motivo": "Retirar noticia de sequestro por hacker inventada a partir de uma metafora de leitura, sem destino equivalente.",
+      "evidencia": "Fonte primaria de Martin Fowler, https://martinfowler.com/articles/2025-caro.html, datada 30/03/2025, trata da leitura de livros de Robert Caro. Nao relata sequestro cibernetico. Leitura integral do artigo local mostra incidente ficticio apresentado como fato e projeto pessoal sem evidencia; restante e aconselhamento generico.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T07:48:34.922Z"
+      },
+      "conteudoHash": "fe2dc03f022d76f4f33fa7c9a2034be1a7b6490aa6f261f540b85bc60a6c1401",
+      "arquivoHash": "6feeb721068da41206d3fde2317c9ec9c151e5d794af4c29fca70a453c2127a7",
+      "registrosHash": "3081f23c6706c6f91ce87b79b4f4b7734a45abc1479fa1f0aa7b9bf894469b9d",
+      "aliases": []
     }
   ]
 }
