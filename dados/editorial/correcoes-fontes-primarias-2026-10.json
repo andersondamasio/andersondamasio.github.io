@@ -1,0 +1,237 @@
+{
+  "em": "2026-10-09T23:58:05.140Z",
+  "responsavel": "Codex (correcao assistida)",
+  "revisaoHumana": false,
+  "escopo": "Leitura das fontes primarias citadas e revisao assistida do texto. Protocolos propostos nao executados; nao certifica indexacao ou produtividade.",
+  "pilotoAnterior": "dados/editorial/curadoria-piloto-2026-10.json",
+  "artigos": [
+    {
+      "url": "artigos/desenvolvimento-de-software/agilidade-no-desenvolvimento-como-as-novas-habilidades-dos-agentes-do-visual-studio-podem-revolucionar-sua-rotina.html",
+      "antes": {
+        "titulo": "Agilidade no Desenvolvimento: Como as Novas Habilidades dos Agentes do Visual Studio Podem Revolucionar Sua Rotina",
+        "data": "2026-07-15T05:30:35.273Z",
+        "corpoHash": "29179a5e5caa16374f82727e37c8588cf31cc7b586cc212f2b8a335abd7e832d",
+        "correcaoAnterior": null,
+        "qualidadeEditorialAnterior": {
+          "politica": "fonte-rastreavel-recente-com-analise-propria",
+          "scoreFonte": 116,
+          "sinalEditorial": 78,
+          "palavrasFonte": 937,
+          "palavrasArtigo": 868,
+          "secoesArtigo": 8,
+          "similaridadeFonte": 0
+        }
+      },
+      "depois": {
+        "titulo": "Agent Skills no Visual Studio: requisitos e avaliação",
+        "descricao": "Requisitos das skills integradas de .NET e Azure no Visual Studio e um protocolo proposto para avaliar código, permissões e retrabalho.",
+        "corpoHash": "ee66b8bb2252765eabd137f8be13d1f85e25291814a128e521fe915cfa0417b3"
+      },
+      "motivo": "Distinguir requisitos gerais e integrados, remover garantias de HTTP e desempenho sem evidencia e propor verificacoes independentes.",
+      "evidencias": [
+        {
+          "seletor": ".fato-anuncio",
+          "fonte": "https://devblogs.microsoft.com/visualstudio/built-in-agent-skills-in-visual-studio/",
+          "secao": "Anuncio de 14/07/2026: versao e fluxo Azure",
+          "textoHash": "60c6344d078c1ffbc388b35a4f79c8cc3f3fb9ecb425b8f59057ced5d999f300"
+        },
+        {
+          "seletor": ".fato-requisitos",
+          "fonte": "https://learn.microsoft.com/visualstudio/ide/visual-studio-github-copilot-get-started?view=visualstudio",
+          "secao": "Built-in agent skills: 18.8, workloads e habilitacao",
+          "textoHash": "9de8ad4775fe47144f83286d90e91618d57b52d3ab07484bc1bd5475773c3acd"
+        },
+        {
+          "seletor": ".fato-diferenca",
+          "fonte": "https://learn.microsoft.com/en-us/visualstudio/ide/copilot-agent-skills?view=visualstudio",
+          "secao": "Prerequisites e diferenca entre skills e agentes",
+          "textoHash": "b47c9d6a2bacb2393f42b01ac233f795a3992a4b41e7e4246a35819057e25173"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/programacao/migrando-para-github-como-a-arquitetura-de-software-pode-impulsionar-a-inovacao.html",
+      "antes": {
+        "titulo": "Migrando para GitHub: Como a Arquitetura de Software Pode Impulsionar a Inovação",
+        "data": "2026-06-03T18:48:48.993Z",
+        "corpoHash": "6f49ebe7d3b7c04a3d0b9b09fec1a647e59a1d344e8bd03ed620c17aa6075084",
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Azure DevOps para GitHub: critérios para uma migração",
+        "descricao": "O caso de migração da Microsoft, os limites do GitHub Enterprise Importer e critérios propostos para conferir permissões, pull requests e pipelines.",
+        "corpoHash": "107988f0c7defbfecd8fddd25268e8f9e4dbaaf6346906fe21af2d1defdf2535"
+      },
+      "motivo": "Atribuir numeros ao relato parcial da Microsoft, separar motivacao de produtividade medida e acrescentar limites de permissoes e criterios de aceite.",
+      "evidencias": [
+        {
+          "seletor": ".fato-cap",
+          "fonte": "https://devblogs.microsoft.com/devops/how-microsoft-is-migrating-repositories-to-github/",
+          "secao": "Caso CAP, seis meses anteriores ao anuncio de 03/06/2026",
+          "textoHash": "b28b949a94e971cbb460cbcf670df7dc34c509abbf2881589d8a7c60236fabd5"
+        },
+        {
+          "seletor": ".fato-hibrido",
+          "fonte": "https://devblogs.microsoft.com/devops/how-microsoft-is-migrating-repositories-to-github/",
+          "secao": "Modelo hibrido com Azure Boards e Pipelines",
+          "textoHash": "e2fa6bd64f71799902a7786a7ca8a789e8010e3cef838df49cc191eced5e1792"
+        },
+        {
+          "seletor": ".fato-inventario",
+          "fonte": "https://docs.github.com/en/enterprise-cloud@latest/migrations/ado/prepare-for-your-migration-from-azure-devops-to-github",
+          "secao": "Inventory e comando ADO2GH",
+          "textoHash": "b0762f0f3395ab50d875f34f40bb03d1845806127e2d9450ec0a2c6bccd087bf"
+        },
+        {
+          "seletor": ".fato-permissoes",
+          "fonte": "https://docs.github.com/en/enterprise-cloud@latest/migrations/ado/prepare-for-your-migration-from-azure-devops-to-github",
+          "secao": "Permissions: permissoes de repositorio nao sao migradas",
+          "textoHash": "cc51200ca6de4dc8027d3a8e6d543d4f10f510d7660f75bc94e581d5bfa4f52d"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/tecnologia/a-nova-era-do-visual-studio-o-que-a-microsoft-nos-trouxe.html",
+      "antes": {
+        "titulo": "A nova era do Visual Studio: O que a Microsoft nos trouxe?",
+        "data": "2026-06-02T17:27:56.127Z",
+        "corpoHash": "c385ca8d2923692052145c896160c467595199983ba0afbfb406b8c97cf32b7c",
+        "correcaoAnterior": {
+          "em": "2026-10-09T22:51:19.065Z",
+          "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+          "motivo": "Remover relato pessoal inventado e promessa de ganho sem teste.",
+          "hashAntes": "b3886d5ab80a16c7e513b52a9c89fa5976c4100c2f836aea734beeb1a4dfdb94",
+          "hashDepois": "c385ca8d2923692052145c896160c467595199983ba0afbfb406b8c97cf32b7c",
+          "revisaoHumana": false,
+          "escopo": "Correcao pontual; nao verificacao integral"
+        }
+      },
+      "depois": {
+        "titulo": "Visual Studio no Build 2026: anúncio e adoção",
+        "descricao": "O que o roteiro do Visual Studio no Build 2026 anunciou e como separar disponibilidade, testes propostos e limites antes de adotar os recursos.",
+        "corpoHash": "aa43a6982887a9723ae945566e3f6ba7db95d7f95ede77ed58bb731ee3abf4b5"
+      },
+      "motivo": "Tratar o anuncio como roadmap, retirar voz de vivencia e distinguir disponibilidade posterior de criterio proposto de adocao.",
+      "evidencias": [
+        {
+          "seletor": ".fato-roadmap",
+          "fonte": "https://devblogs.microsoft.com/visualstudio/whats-coming-next-in-visual-studio-our-microsoft-build-2026-announcements/",
+          "secao": "Roadmap de 02/06/2026",
+          "textoHash": "e49e04bbd1c028e78ebb6fc42e24fe72cd59fde8133f61ba7f2120cb1b40552b"
+        },
+        {
+          "seletor": ".fato-evolucao",
+          "fonte": "https://learn.microsoft.com/visualstudio/ide/visual-studio-github-copilot-get-started?view=visualstudio",
+          "secao": "Requisitos especificos posteriores de skills integradas",
+          "textoHash": "38d45fa445de251a9ef8d11bc298eddc1e5a70760adbb8a1678aae5c75f3d1be"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/devops/atualizacoes-cruciais-mantenha-seu-azure-devops-server-em-dia.html",
+      "antes": {
+        "titulo": "Atualizações Cruciais: Mantenha seu Azure DevOps Server em Dia!",
+        "data": "2026-05-14T17:21:22.532Z",
+        "corpoHash": "2da94eede2927d63ae45bd614a8b1532dca2182f01d58f2e35ff362555106cb7",
+        "correcaoAnterior": {
+          "em": "2026-10-09T22:51:19.065Z",
+          "responsavel": "Codex (curadoria assistida; nao revisao humana)",
+          "motivo": "Retirar atualidade artificial de uma noticia de maio e preparar instrucoes por versao.",
+          "hashAntes": "f586fff148d15e322e89a45eb3e5a67f1be081067379340980f46c5daff4cdc3",
+          "hashDepois": "2da94eede2927d63ae45bd614a8b1532dca2182f01d58f2e35ff362555106cb7",
+          "revisaoHumana": false,
+          "escopo": "Correcao pontual; nao verificacao integral"
+        }
+      },
+      "depois": {
+        "titulo": "Azure DevOps Server: patches de maio de 2026",
+        "descricao": "As quatro linhas cobertas pelos patches de maio de 2026, o alcance do CheckInstall e critérios propostos para validar uma atualização do Azure DevOps Server.",
+        "corpoHash": "75e2d9565ef4407c3c9537cbcbe66b488e375f025169d62ced30f729006f99e4"
+      },
+      "motivo": "Identificar versoes completas, separar correcoes funcionais e de seguranca, delimitar CheckInstall e evitar recomendacao automatica de pacote historico.",
+      "evidencias": [
+        {
+          "seletor": ".fato-anuncio",
+          "fonte": "https://devblogs.microsoft.com/devops/may-patches-for-azure-devops-server-3/",
+          "secao": "Anuncio historico de 14/05/2026",
+          "textoHash": "dad021229f247079253c60389a5fe5076eaf1fbbe817b5234b3a21b3ef1990a2"
+        },
+        {
+          "seletor": ".fato-server",
+          "fonte": "https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevopsserver?view=azure-devops",
+          "secao": "Azure DevOps Server Patch 4, 14/05/2026",
+          "textoHash": "c45e7fac953307057f469580a517f55da7f9c11cb44280b6a9ca1f4494cae43e"
+        },
+        {
+          "seletor": ".fato-2022",
+          "fonte": "https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2022u2?view=azure-devops",
+          "secao": "2022 Update 2 Patch 9, 14/05/2026",
+          "textoHash": "54d21e730fb7ff8c8bf97b5400068fda3918b8b3a2056b1d1d66a18d97c05992"
+        },
+        {
+          "seletor": ".fato-2020",
+          "fonte": "https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2020u1?view=azure-devops",
+          "secao": "2020 Update 1.2 Patch 19, 14/05/2026",
+          "textoHash": "de3feddcb182cf9d9c5acd4f60dc2e51fef5e71fed097180e8917899ddd2d8aa"
+        },
+        {
+          "seletor": ".fato-2019",
+          "fonte": "https://learn.microsoft.com/en-us/azure/devops/server/release-notes/azuredevops2019u1?view=azure-devops",
+          "secao": "2019 Update 1.2 Patch 13, 14/05/2026; nao Update 1.1",
+          "textoHash": "4181f5d068b16e972fb9be37fb4f82c023b19bb7c99e80aab5102c801462a49b"
+        },
+        {
+          "seletor": ".fato-checkinstall",
+          "fonte": "https://devblogs.microsoft.com/devops/may-patches-for-azure-devops-server-3/",
+          "secao": "Verificacao da instalacao do patch especifico",
+          "textoHash": "28faf24a996524efc85554a93b046d3beb38965a73dbd5f4ada17cb048abc0a9"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/programacao/a-nova-era-das-extensoes-o-que-o-sdk-estilo-pode-fazer-por-voce.html",
+      "antes": {
+        "titulo": "A Nova Era das Extensões: O Que o SDK Estilo Pode Fazer por Você",
+        "data": "2026-04-29T14:01:06.212Z",
+        "corpoHash": "9198bd1c89f862a495330c3505c9e5439de1009b7abbfe0e651d18502d43e93c",
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Extensões VSIX em SDK-style: migração e limites",
+        "descricao": "Escopo do suporte SDK-style para extensões VSSDK, limites do ganho de build relatado pela Microsoft e critérios para comparar pacote e depuração.",
+        "corpoHash": "0185713fc55bd757f3a1a87700934779827a9ed40cf1e3118604bdd53dd189de"
+      },
+      "motivo": "Distinguir VSSDK de VisualStudio.Extensibility e contextualizar benchmark interno, com verificacoes propostas sem alegar execucao.",
+      "evidencias": [
+        {
+          "seletor": ".fato-suporte",
+          "fonte": "https://devblogs.microsoft.com/visualstudio/sdk-style-support-for-extension-projects/",
+          "secao": "Anuncio de 29/04/2026: suporte e migracao opcional",
+          "textoHash": "1b1df732d55dbefb054ea11c1f1238efeb01eb9249d7b24e5807f0e415531680"
+        },
+        {
+          "seletor": ".fato-desempenho",
+          "fonte": "https://devblogs.microsoft.com/visualstudio/sdk-style-support-for-extension-projects/",
+          "secao": "Medicao interna em grandes solucoes e alteracoes pequenas",
+          "textoHash": "0f9b5673d016e78377a86dd3a5890e1a34e36dcc94c2304c14330c5e5e6dd6b3"
+        },
+        {
+          "seletor": ".fato-configuracao",
+          "fonte": "https://devblogs.microsoft.com/visualstudio/sdk-style-support-for-extension-projects/",
+          "secao": "WPF, deploy F5, VSSDKBuildToolsAutoSetup e VsixDeployOnDebug",
+          "textoHash": "87f6840bac9c6c675f34a964230c9ea8e0e125ae4acd95f70554e0eacba5978d"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    }
+  ]
+}

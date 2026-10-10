@@ -99,6 +99,46 @@ test("exemplo executavel de Reservoir Sampling corresponde ao codigo publicado",
   assert.equal(hashCorpoEditorial(html(".article-body").html()), registro.correcaoEditorial.hashDepois);
 });
 
+test("correcoes com fontes primarias preservam rastreabilidade e nao criam aprovacao humana", () => {
+  const root = path.join(__dirname, "..");
+  const relatorio = JSON.parse(fs.readFileSync(path.join(root, "dados/editorial/correcoes-fontes-primarias-2026-10.json"), "utf8"));
+  const cadastro = JSON.parse(fs.readFileSync(path.join(root, "titulos.json"), "utf8"));
+  const manifesto = JSON.parse(fs.readFileSync(path.join(root, "dados/indexacao.json"), "utf8"));
+  assert.equal(relatorio.revisaoHumana, false);
+  assert.equal(relatorio.artigos.length, 5);
+  for (const artigo of relatorio.artigos) {
+    const $ = cheerio.load(fs.readFileSync(path.join(root, artigo.url), "utf8"));
+    const registro = cadastro.find(r => r.url === artigo.url);
+    const decisao = manifesto.decisoes.find(r => r.url === artigo.url);
+    assert.equal(registro.data, artigo.antes.data);
+    assert.equal($("h1").text(), artigo.depois.titulo);
+    assert.equal(registro.titulo, artigo.depois.titulo);
+    assert.equal($("meta[name=description]").attr("content"), artigo.depois.descricao);
+    assert.equal(registro.seo.description, artigo.depois.descricao);
+    assert.equal(registro.seo.modifiedAt, relatorio.em);
+    assert.equal($("meta[property='article:published_time']").attr("content"), registro.data);
+    assert.equal($("meta[property='article:modified_time']").attr("content"), relatorio.em);
+    assert.equal($("link[rel=canonical]").attr("href"), `https://www.andersondamasio.com.br/${artigo.url}`);
+    assert.equal(hashCorpoEditorial($(".article-body").html()), artigo.depois.corpoHash);
+    assert.equal(decisao.conteudoHash, artigo.depois.corpoHash);
+    assert.equal(decisao.acao, "atualizar");
+    assert.equal(registro.correcaoEditorial.revisaoHumana, false);
+    if (artigo.antes.qualidadeEditorialAnterior) assert.equal(registro.qualidadeEditorial, undefined);
+    assert.equal($(".article-validation").attr("data-editorial-status"), "acervo-sem-revisao-registrada");
+    assert.equal($(artigo.contribuicaoProposta).length, 1);
+    assert.equal($(artigo.limites).length, 1);
+    // Confere o vinculo texto-fonte, nao a veracidade das afirmacoes.
+    for (const evidencia of artigo.evidencias) {
+      assert.equal($(evidencia.seletor).length, 1);
+      assert.equal(hashCorpoEditorial($(evidencia.seletor).html()), evidencia.textoHash);
+      assert.ok($(".article-body a").toArray().some(a => $(a).attr("href") === evidencia.fonte));
+    }
+    for (const a of $(".article-body a[href^='/']").toArray()) {
+      assert.ok(fs.existsSync(path.join(root, $(a).attr("href").slice(1))));
+    }
+  }
+});
+
 test("home e pagina dois possuem finalidade e H1 diferentes, sem repetir biografia", () => workspace(root => {
   process.chdir(root);
   fs.mkdirSync("artigos/arquitetura", { recursive: true });
