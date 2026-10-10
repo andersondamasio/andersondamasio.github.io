@@ -904,11 +904,25 @@
     "url": "artigos/desvendando-o-mundo-da-derivacao-automatica-esparsa.html"
   },
   {
-    "titulo": "ChatGPT: A revolução na busca de informações online",
-    "noticiaOriginal": "I've largely replaced Google with ChatGPT for looking things up",
+    "titulo": "Busca com ChatGPT: como conferir fontes antes de usar uma resposta",
+    "noticiaOriginal": "Web search",
     "data": "2025-04-30T02:06:00.137Z",
     "categoria": "Inteligência Artificial",
-    "url": "artigos/chatgpt-a-revolucao-na-busca-de-informacoes-online.html"
+    "url": "artigos/chatgpt-a-revolucao-na-busca-de-informacoes-online.html",
+    "urlFonte": "https://learn.chatgpt.com/docs/web-search",
+    "seo": {
+      "description": "Um roteiro proposto para verificar fontes, versões e limites de respostas de busca em dúvidas de software, sem assumir que uma citação comprova o fato.",
+      "modifiedAt": "2026-10-10T05:43:26.665Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T05:43:26.665Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar vivencia inventada, vinculo desatualizado a GPT-3, promessa de precisao e exemplo C# sem SDK verificavel.",
+      "hashAntes": "badf10e91a44455be4a0ed35d0b28159b39778577d89d85986fa607d42b9bba0",
+      "hashDepois": "b180805dde48ffa1d169bd6c6e39ad167e5917e589e602b82c4f06c50c38a94b",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-atribuicoes-2026-10.json"
+    }
   },
   {
     "titulo": "Performance em sistemas: desafios e estratégias para otimização",
@@ -1016,11 +1030,25 @@
     "url": "artigos/wikipedia-e-inteligencia-artificial-uma-parceria-de-sucesso.html"
   },
   {
-    "titulo": "Como eu criei o Wiki Perfeito e alcancei $250 mil em receita anual sem investidores",
-    "noticiaOriginal": "I created Perfect Wiki and reached $250k in annual revenue without investors",
+    "titulo": "Perfect Wiki: o relato de Ilia Pirozhenko e a investigação de um problema de produto",
+    "noticiaOriginal": "How I Created Perfect Wiki and Reached $250K in Annual Revenue Without Investors",
     "data": "2025-04-30T16:23:40.517Z",
     "categoria": "Empreendedorismo",
-    "url": "artigos/como-eu-criei-o-wiki-perfeito-e-alcancei-250-mil-em-receita-anual-sem-investidores.html"
+    "url": "artigos/como-eu-criei-o-wiki-perfeito-e-alcancei-250-mil-em-receita-anual-sem-investidores.html",
+    "urlFonte": "https://ipirozhenko.com/How-I-built-Microsoft-Teams-App-that-makes-250kARR_PI7xTHDx2tqg6bGTfQnX",
+    "seo": {
+      "description": "Atribuição correta do caso Perfect Wiki e uma proposta para investigar necessidades de uma integração, sem confundir receita declarada com resultado auditado.",
+      "modifiedAt": "2026-10-10T05:43:26.665Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T05:43:26.665Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar falsa autoria do negocio, receita atribuida a Anderson e causalidade nao sustentada entre microservicos e sucesso comercial.",
+      "hashAntes": "2c45975a549e00fbbc19c384007e95c454536ad5239f09a1e1ae703de6be6ec4",
+      "hashDepois": "df85346f74281b1302d4c4c48b28eb185cee42f3df0aba571e436ab6bd47915e",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-atribuicoes-2026-10.json"
+    }
   },
   {
     "titulo": "O Poder Oculto de DeepSeek-Prover-V2 nos Sistemas Modernos",
@@ -20515,15 +20543,6 @@
     "urlFonte": "https://www.zdnet.com/article/i-compared-the-best-headphones-from-apple-sony-bose-and-sonos-heres-how-the-airpods-max-wins/"
   },
   {
-    "titulo": "O que os fundadores precisam saber sobre saídas: muito além do básico",
-    "noticiaOriginal": "What founders need to know before choosing their exit — straight from Jai Das and Roseanne Wincek — at TechCrunch Disrupt 2025",
-    "url": "artigos/carreira/o-que-os-fundadores-precisam-saber-sobre-saidas-muito-alem-do-basico.html",
-    "data": "2025-08-10T15:19:48.413Z",
-    "dataFonte": "2025-08-08T14:30:00.000Z",
-    "categoria": "Carreira",
-    "urlFonte": "https://techcrunch.com/2025/08/08/what-founders-need-to-know-before-choosing-their-exit-at-techcrunch-disrupt-2025/"
-  },
-  {
     "titulo": "A Revolução do Áudio: O Que a Aquisição da WaveForms Significa para o Futuro da IA",
     "noticiaOriginal": "Meta acquires AI audio startup WaveForms",
     "url": "artigos/inteligencia-artificial/a-revolucao-do-audio-o-que-a-aquisicao-da-waveforms-significa-para-o-futuro-da-ia.html",
@@ -29513,15 +29532,6 @@
     "urlFonte": "https://www.bbc.com/news/articles/cpd92gpld0go?at_medium=RSS&at_campaign=rss"
   },
   {
-    "titulo": "A importância do armazenamento em nuvem em 2025: como não perder seus dados nunca mais",
-    "noticiaOriginal": "Why you need a cloud service in 2025 (and the 7 best I've used)",
-    "url": "artigos/cloud/a-importancia-do-armazenamento-em-nuvem-em-2025-como-nao-perder-seus-dados-nunca-mais.html",
-    "data": "2025-09-24T08:26:51.968Z",
-    "dataFonte": "2025-09-24T07:30:27.000Z",
-    "categoria": "Cloud",
-    "urlFonte": "https://www.zdnet.com/article/why-you-need-a-cloud-service-in-2025-and-the-7-best-ive-used/"
-  },
-  {
     "titulo": "Melhores Hostings para WordPress em 2025: O Que Você Precisa Saber Antes de Escolher",
     "noticiaOriginal": "The best WordPress hosting services of 2025: Expert tested",
     "url": "artigos/desenvolvimento-de-software/melhores-hostings-para-wordpress-em-2025-o-que-voce-precisa-saber-antes-de-escolher.html",
@@ -37653,15 +37663,6 @@
     "urlFonte": "https://techcrunch.com/2025/11/03/dias-ai-browser-starts-adding-arcs-greatest-hits-to-its-feature-set/"
   },
   {
-    "titulo": "Qual nuvem vale mais a pena em 2025? Dicas para escolher o armazenamento ideal",
-    "noticiaOriginal": "Which cloud storage service is most worth your money in 2025? I did the math, and here are 3 recs",
-    "url": "artigos/cloud/qual-nuvem-vale-mais-a-pena-em-2025-dicas-para-escolher-o-armazenamento-ideal.html",
-    "data": "2025-11-03T18:29:53.974Z",
-    "dataFonte": "2025-11-03T18:14:00.000Z",
-    "categoria": "Cloud",
-    "urlFonte": "https://www.zdnet.com/article/which-cloud-storage-service-is-most-worth-your-money-in-2025-i-did-the-math-and-here-are-3-recs/"
-  },
-  {
     "titulo": "A nova era da computação: OpenAI e Amazon firmam parceria bilionária",
     "noticiaOriginal": "OpenAI Signs $38 Billion Deal With Amazon",
     "url": "artigos/inteligencia-artificial/a-nova-era-da-computacao-openai-e-amazon-firmam-parceria-bilionaria.html",
@@ -37716,13 +37717,25 @@
     "urlFonte": "https://martinfowler.com/articles/2025-11-03-frags.html"
   },
   {
-    "titulo": "Como escolher o serviço de armazenamento em nuvem ideal em 2025? Uma análise técnica",
-    "noticiaOriginal": "Which cloud storage service should you buy in 2025? I compared the best options, and here's my pick",
+    "titulo": "Armazenamento em nuvem: critérios para comparar planos e recuperação",
+    "noticiaOriginal": "Verificar atividades e versões de arquivos",
     "url": "artigos/cloud/como-escolher-o-servico-de-armazenamento-em-nuvem-ideal-em-2025-uma-analise-tecnica.html",
     "data": "2025-11-04T03:11:36.765Z",
-    "dataFonte": "2025-11-04T03:00:33.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.zdnet.com/article/which-cloud-storage-service-should-you-buy-in-2025-i-compared-the-best-options-and-heres-my-pick/"
+    "urlFonte": "https://support.google.com/drive/answer/2409045?hl=pt-BR",
+    "seo": {
+      "description": "Compare acesso, histórico, recuperação, custo e exportação com uma ficha de decisão, sem preços desatualizados ou promessa de proteção absoluta.",
+      "modifiedAt": "2026-10-10T05:43:26.665Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T05:43:26.665Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir preferencias pessoais, comparacao de planos sem sustentacao, confusao 100TB/100GB e garantias de seguranca.",
+      "hashAntes": "71415f1a19439ad7a6626e2379d644e781417d51aa0e06416be2c2a9847014e5",
+      "hashDepois": "5cdea5e3e203532db2884b16a2e8dfde0caa957a70654705b9e24bb29df4e34e",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-atribuicoes-2026-10.json"
+    }
   },
   {
     "titulo": "A popularidade do Facebook Dating: uma análise sob a ótica da Arquitetura de Software",
@@ -43880,15 +43893,6 @@
     "dataFonte": "2025-12-05T09:17:00.000Z",
     "categoria": "Cloud",
     "urlFonte": "https://www.infoq.com/presentations/hybrid-cloud-native-networking-enterprise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
-  },
-  {
-    "titulo": "Construindo Resiliência: Lições para Alcançar o Sucesso na Arquitetura de Software",
-    "noticiaOriginal": "Climbing the career ladder? 5 secrets to building resilience from leaders who were once in your shoes",
-    "url": "artigos/carreira/construindo-resiliencia-licoes-para-alcancar-o-sucesso-na-arquitetura-de-software.html",
-    "data": "2025-12-05T10:23:38.432Z",
-    "dataFonte": "2025-12-05T10:00:38.000Z",
-    "categoria": "Carreira",
-    "urlFonte": "https://www.zdnet.com/article/climbing-the-career-ladder-5-secrets-to-building-resilience-from-leaders-who-were-once-in-your-shoes/"
   },
   {
     "titulo": "A desilusão do Pincode: Lições para o futuro do e-commerce",
@@ -60606,13 +60610,26 @@
     "urlFonte": "https://www.zdnet.com/article/optimum-will-give-you-fiber-internet-for-25-a-month-for-5-years-heres-how/"
   },
   {
-    "titulo": "A revolução verde na tecnologia: lições que todo arquiteto de software deve aprender",
-    "noticiaOriginal": "Presentation: What I Wish I Knew When I Started with Green IT",
+    "titulo": "Green IT: como comparar uma mudança de arquitetura com evidências",
+    "noticiaOriginal": "What I Wish I Knew When I Started with Green IT",
     "url": "artigos/arquitetura/a-revolucao-verde-na-tecnologia-licoes-que-todo-arquiteto-de-software-deve-aprender.html",
     "data": "2026-03-04T13:00:02.803Z",
-    "dataFonte": "2026-03-04T12:03:00.000Z",
+    "dataFonte": "2026-03-04",
     "categoria": "Arquitetura",
-    "urlFonte": "https://www.infoq.com/presentations/green-it/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://www.infoq.com/presentations/green-it/",
+    "seo": {
+      "description": "O caso de Ludi Akue na Lunii e uma proposta para avaliar uma mudança de software, distinguindo desempenho, estimativas e emissões verificadas.",
+      "modifiedAt": "2026-10-10T05:43:26.665Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T05:43:26.665Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir atribuicao da experiencia da Lunii a Anderson e recomendacoes universais de arquitetura sem medicao.",
+      "hashAntes": "0c4041a5e5cb9dfb368ab4b084752e4b032fec6fdf2506b7165873e3366cc6bf",
+      "hashDepois": "47c338d38ec73d0a75d1bba07c31e6c7e9eafaf8a7662afad8c45a6600bdad36",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-atribuicoes-2026-10.json"
+    }
   },
   {
     "titulo": "A revolução dos chatbots: como a colaboração pode aprimorar as respostas da IA",
