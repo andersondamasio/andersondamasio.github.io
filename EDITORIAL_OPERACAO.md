@@ -126,6 +126,16 @@ HTTP, canonical, robots e correspondencia com o Git sao observados separadamente
 
 O rebuild preserva o corpo existente de artigos noindex, em vez de os transformar em avisos de indisponibilidade. Eles ficam fora das superficies de promocao geradas e do sitemap/RSS; links contextuais deliberados no corpo nao sao removidos automaticamente. A decisao de noindex ainda exige curadoria individual e nao decorre apenas de um sinal de linguagem.
 
+## Leituras selecionadas
+
+`dados/leituras-selecionadas.json` e a fonte editorial de `guias.html` e da selecao na home. Cada grupo registra uma pergunta, contexto e resumos especificos dos artigos existentes. O titulo do link vem do catalogo; o resumo e o tipo de material sao curados explicitamente, nao escolhidos por recencia ou score. Os tipos distinguem exemplo executavel, exercicio proposto e analise de fontes. A selecao nao representa aprovacao humana nem atribui os experimentos de terceiros ao autor do site.
+
+O rebuild verifica URL unica no catalogo publicavel, arquivo com corpo, canonical proprio, ausencia de noindex/redirecionamento e hash do corpo associado ao resumo. Uma alteracao do texto exige reconferir o resumo e atualizar o hash na selecao, alem dos registros editoriais aplicaveis. Atualizar `atualizadoEm` quando a colecao mudar de forma substantiva, incluindo titulos/resumos; nao usar a data da execucao de cada build. Datas futuras e grupos vazios sao recusados antes de escrever as listagens. Remover um artigo selecionado exige decidir previamente como atualizar a colecao, sem ocultar um link quebrado silenciosamente.
+
+A pagina usa CollectionPage e ItemList, tem canonical proprio, links HTML e entrada no sitemap. Nao vira um artigo novo, nao altera a fila semanal e nao entra no RSS. `test:seo:navigation` cobre dados invalidos, escape, corpo alterado, dois rebuilds e acesso em dois links. O verificador publico inclui a colecao e seus destinos quando a home da revisao esperada os anuncia. O QA visual inclui a pagina e o fluxo home, tema e artigo com JavaScript desativado, em tres larguras.
+
+Referencias de criterio: [links rastreaveis e contexto](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) e [conteudo voltado as pessoas](https://developers.google.com/search/docs/fundamentals/creating-helpful-content). Uma selecao editorial facilita o acesso; nao comprova indexacao ou posicionamento.
+
 ## Decisoes por URL
 
 `dados/indexacao.json` registra decisoes por URL com motivo, evidencia, responsavel e data. `manter`, `atualizar` e `noindex` exigem URL resolvida e hash do corpo revisado. `consolidar` e `retirar` usam tambem hashes do arquivo inteiro e dos registros do catalogo. As URLs do perfil sao protegidas; adicionar URLs com valor comprovado a `protegidas` antes de preparar um lote. Ausencia de dado do Search Console nao significa ausencia de valor.

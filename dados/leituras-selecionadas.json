@@ -1,0 +1,70 @@
+{
+  "versao": 1,
+  "titulo": "Guias e exemplos técnicos",
+  "descricao": "Leituras sobre decisões de arquitetura, código C# e avaliação de agentes de IA, com fontes, exemplos e limites explícitos no site Anderson Damasio.",
+  "atualizadoEm": "2026-10-10T02:26:34.000Z",
+  "introducao": "Uma decisão técnica precisa de uma pergunta delimitada e de critérios para conferir a resposta. Estes materiais tratam de alternativas de arquitetura, comportamento do código e avaliação de agentes. As propostas de ensaio estão separadas dos testes efetivamente executados.",
+  "limites": "Os textos foram produzidos com apoio de IA e passam por correções assistidas. A seleção não equivale a revisão humana individual nem a experiência pessoal de Anderson Damasio. Fontes, procedimentos e limitações estão descritos em cada artigo.",
+  "grupos": [
+    {
+      "id": "decisoes-de-arquitetura",
+      "titulo": "Decisões de arquitetura",
+      "pergunta": "Qual alternativa atende ao requisito que precisa ser preservado?",
+      "contexto": "Antes de comparar tecnologias, defina a regra do produto e o comportamento esperado nas falhas. A decisão pode permanecer inconclusiva quando a evidência ainda não existe. Também é preciso combinar quem acompanha o fluxo completo e qual especialidade revisará cada detalhe.",
+      "leituras": [
+        {
+          "url": "artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html",
+          "tipo": "exercicio-proposto",
+          "resumo": "Um cenário hipotético de disponibilidade compara consulta síncrona e projeção local. O roteiro explicita tolerância a dados antigos, falhas e evidências necessárias; os protótipos não foram executados.",
+          "conteudoHash": "4d64951ac00ee9561a33c4b136ee73e193bbbfc38b31dd1300f85124cf2f0af1"
+        },
+        {
+          "url": "artigos/carreira/expert-generalistas-o-poder-da-curiosidade-na-arquitetura-de-software.html",
+          "tipo": "exercicio-proposto",
+          "resumo": "A divisão do trabalho entre generalistas e especialistas é examinada com uma reserva concorrente e uma ficha de perguntas, responsáveis e evidências. O exercício é hipotético e não mede produtividade.",
+          "conteudoHash": "1dfd9b150e77634c5c65461c91539093fecd3b23fb0a900c16d58a9a28dec113"
+        }
+      ]
+    },
+    {
+      "id": "codigo-e-contratos",
+      "titulo": "Código e contratos",
+      "pergunta": "O código preserva o comportamento esperado nos casos de limite?",
+      "contexto": "Um exemplo pequeno permite delimitar entradas, saídas e situações de erro. Quando uma expressão do domínio tem mais de um significado, essa ambiguidade precisa ser resolvida antes de aceitar a implementação. Compilar e verificar uma regra são evidências diferentes.",
+      "leituras": [
+        {
+          "url": "artigos/explorando-os-segredos-do-reservoir-sampling.html",
+          "tipo": "exemplo-executavel",
+          "resumo": "Implementação C# para uma entrada enumerável, com código do projeto e 13 verificações executáveis. Os testes cobrem limites e um caso pequeno de sorteios; não são benchmark nem certificação estatística.",
+          "conteudoHash": "5983ee2ea3e4773ff768178fb51caf1e8f91f7ea11bbeeb8b28ab900c8eed604"
+        },
+        {
+          "url": "artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html",
+          "tipo": "analise-de-fontes",
+          "resumo": "Discussão das ideias de Unmesh Joshi e Sam Ruby sobre a representação mantida como fonte de verdade. Um exemplo hipotético de empréstimos distingue catálogo, unidade e reserva, sem alegar execução.",
+          "conteudoHash": "888b760fd5d1065a6f27b525b83a2cdaecd542face8cd7e9d2abdddc9158b62b"
+        }
+      ]
+    },
+    {
+      "id": "avaliacao-de-agentes",
+      "titulo": "Avaliação de agentes de IA",
+      "pergunta": "O estado final corresponde à tarefa e à autorização recebidas?",
+      "contexto": "Uma resposta de sucesso na conversa não demonstra que a operação aconteceu corretamente. O estado inicial, as ações permitidas e os critérios de falha precisam estar definidos. A avaliação de uma tarefa conversacional e a proteção de um fluxo de interface respondem a perguntas distintas.",
+      "leituras": [
+        {
+          "url": "artigos/inteligencia-artificial/testes-por-simulacao-para-validar-agentes-de-ia-antes-da-producao.html",
+          "tipo": "exercicio-proposto",
+          "resumo": "A proposta de Zhou Yu é contextualizada com uma troca de reserva: ambiguidade, autorização, destino ocupado e resposta perdida. O roteiro de avaliação não foi executado neste site.",
+          "conteudoHash": "a12af9895cae2973ddbdf8d8c914c4e3a1ccd4e2e03287f10972f4c1fad021b4"
+        },
+        {
+          "url": "artigos/desenvolvimento-de-software/a-revolucao-do-teste-como-a-inteligencia-artificial-esta-transformando-a-automacao-de-testes-de-ui.html",
+          "tipo": "analise-de-fontes",
+          "resumo": "O experimento publicado pela engenharia do Slack distingue execução por agente de testes Playwright gerados. A análise separa modelos, fluxos e custos; o site não reproduziu o experimento.",
+          "conteudoHash": "411fc0c8ed1b64a7dbe4610ac8a8e5d64044189a8b37d4321740ad9e7ee9fdf1"
+        }
+      ]
+    }
+  ]
+}

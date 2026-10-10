@@ -46,6 +46,7 @@ const {
 const { gerarSecoesConteudoUtil, hashCorpoEditorial } = require('./scripts/seo-helpful-content');
 const { estilosCodigoInline, paddingBlocoCodigo } = require('./scripts/seo-code-styles');
 const { descricaoPerfil, gerarApresentacaoPerfil, estilosPerfil } = require('./scripts/seo-profile');
+const { urlLeituras, carregarLeituras, gerarResumoLeituras, gerarConteudoLeituras, criarSchemaLeituras, estilosLeituras } = require('./scripts/seo-selected-readings');
 const { agruparArquivo, indiceMeses, conteudoMes, politicaListagem, estilosArquivo } = require('./scripts/seo-archive');
 const { gerarResourceHints } = require('./scripts/seo-resource-hints');
 const { normalizarRobotsMeta } = require('./scripts/seo-robots');
@@ -153,7 +154,7 @@ function gerarGoogleAnalyticsTag(gaId = 'G-T15623VZYE') {
 `;
 }
 
-function gerarPaginasPorCategoria(titulos) {
+function gerarPaginasPorCategoria(titulos, leituras = null) {
   const agrupados = {};
   const paginasGeradas = new Set();
 
@@ -323,14 +324,14 @@ function gerarPaginasPorCategoria(titulos) {
     }
   }
 
-  gerarIndiceCategorias(agrupados);
+  gerarIndiceCategorias(agrupados, leituras);
   paginasGeradas.add("artigos/index.html");
   return paginasGeradas;
 }
 
 
 
-function gerarIndiceCategorias(agrupados) {
+function gerarIndiceCategorias(agrupados, leituras = null) {
   // Cria um array com categoria e data mais recente
   const categoriasOrdenadas = Object.entries(agrupados)
     .map(([categoria, artigos]) => {
@@ -432,6 +433,7 @@ function gerarIndiceCategorias(agrupados) {
 ${gerarHeaderNavegacao("..")}
 <main>
   <h1>Artigos</h1>
+  ${leituras ? `<p><a href="/${urlLeituras}">${escapeHTML(leituras.titulo)}</a></p>` : ''}
   <ul>
     ${links}
   </ul>
@@ -2689,7 +2691,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-function gerarIndicesPaginados(titulos) {
+function gerarIndicesPaginados(titulos, leituras = null) {
   const ordenados = prepararArtigosPublicaveis(titulos).sort((a, b) => new Date(b.data) - new Date(a.data));
   const paginas = Math.ceil(ordenados.length / artigosPorPagina);
   const paginasGeradas = new Set();
@@ -2717,7 +2719,7 @@ function gerarIndicesPaginados(titulos) {
       idx => idx === 0 ? "index.html" : `index${idx + 1}.html`
     );
 
-    const updated_time = dataMaisRecenteIso(artigosPagina);
+    const updated_time = dataMaisRecenteIso(i === 0 && leituras ? [...artigosPagina, { data: leituras.atualizadoEm }] : artigosPagina);
     const pagePath = i === 0 ? "/" : `index${i + 1}.html`;
     const pageTitle = i === 0
       ? `${siteName} - Arquiteto de Software e Desenvolvedor`
@@ -2857,7 +2859,7 @@ a:hover {
   color: var(--main-bg);
 }
 .pagination-gap { color: var(--footer); padding: 6px 2px; }
-${estilosPerfil}
+${estilosPerfil}${i === 0 && leituras ? '\n' + estilosLeituras : ''}
 </style>
 
 </head>
@@ -2872,7 +2874,7 @@ ${estilosPerfil}
 ${gerarHeaderNavegacao(".")}
 
 <main>
-${i === 0 ? gerarApresentacaoPerfil() : `<h1>Artigos de Anderson Damasio: p&aacute;gina ${i + 1}</h1>`}
+${i === 0 ? gerarApresentacaoPerfil() + (leituras ? '\n' + gerarResumoLeituras(leituras) : '') : `<h1>Artigos de Anderson Damasio: p&aacute;gina ${i + 1}</h1>`}
 <section aria-labelledby="articles-title">
 <h2 id="articles-title">${i === 0 ? "Artigos recentes" : "Arquivo de artigos"}</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
@@ -2985,7 +2987,32 @@ ${gerarFooterNavegacao("..")}
   return paginas;
 }
 
-function gerarSitemap(titulos) {
+function gerarPaginaLeituras(leituras) {
+  if (!leituras) return [];
+  const html = `<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+${gerarSeoHead({ title: `${leituras.titulo} | ${siteName}`, description: leituras.descricao,
+  canonicalPath: urlLeituras, modifiedTime: leituras.atualizadoEm,
+  structuredData: [criarSchemaLeituras(leituras), criarBreadcrumbJsonLd([{ name: 'Início', url: '/' }, { name: leituras.titulo, url: urlLeituras }])]
+})}
+<style>
+:root { --bg: #f4f6f7; --text: #252a2e; --link: #0a66c2; --footer: #58616b; }
+${estilosPerfil}
+${estilosLeituras}
+main > h1 { font-size: 2rem; line-height: 1.2; overflow-wrap: anywhere; }
+a { color: var(--link); text-decoration: none; } a:hover { text-decoration: underline; }
+</style></head><body>
+${gerarHeaderNavegacao('.')}
+<main><img src="/favicon.ico" alt="Marca de Anderson Damasio" width="48" height="48" decoding="async">
+<h1>${escapeHTML(leituras.titulo)}</h1>${gerarConteudoLeituras(leituras)}
+<p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p></main>
+${gerarFooterNavegacao('.')}
+</body></html>`;
+  escreverSeMudou(urlLeituras, html);
+  return [urlLeituras];
+}
+
+function gerarSitemap(titulos, leituras = null) {
   const entradas = new Map();
   const artigosPublicaveis = prepararArtigosPublicaveis(titulos);
 
@@ -3011,6 +3038,7 @@ function gerarSitemap(titulos) {
   const datasValidas = artigosPublicaveis
     .map(t => t.data ? new Date(t.data) : null)
     .filter(d => d && !Number.isNaN(d.getTime()));
+  if (leituras) datasValidas.push(new Date(leituras.atualizadoEm));
   const ultimaData = datasValidas.length
     ? new Date(Math.max(...datasValidas.map(d => d.getTime()))).toISOString()
     : null;
@@ -3021,6 +3049,7 @@ function gerarSitemap(titulos) {
   });
 
   adicionar("arquivo/index.html");
+  if (leituras) adicionar(urlLeituras, leituras.atualizadoEm);
   for (const grupo of agruparArquivo(artigosPublicaveis)) adicionar(grupo.url);
 
   const agrupados = {};
@@ -3150,17 +3179,19 @@ function atualizarPublicacaoSeo(titulosGerados) {
     throw new Error(`Rebuild interrompido: ${semRegistro.length} artigos sem vinculo no cadastro. Nenhum conteudo sera removido automaticamente. Exemplos: ${semRegistro.slice(0, 5).join(", ")}`);
   }
   agruparArquivo(artigosPublicaveis);
+  const leituras = carregarLeituras(artigosPublicaveis);
   const indisponiveisAlterados = gerarPaginasArtigosIndisponiveis(titulosGerados);
   const paginasValidas = new Set([
-    ...gerarIndicesPaginados(artigosPublicaveis),
-    ...gerarPaginasPorCategoria(artigosPublicaveis),
-    ...gerarArquivoCronologico(artigosPublicaveis)
+    ...gerarIndicesPaginados(artigosPublicaveis, leituras),
+    ...gerarPaginasPorCategoria(artigosPublicaveis, leituras),
+    ...gerarArquivoCronologico(artigosPublicaveis),
+    ...gerarPaginaLeituras(leituras)
   ]);
   const listagensObsoletas = gerarPaginasListagemObsoletas(paginasValidas);
   const aliasesAlterados = gerarPaginasCompatibilidadeLegadas(artigosPublicaveis);
   const artigosObsoletos = gerarPaginasArtigosObsoletos(artigosPublicaveis);
   const relacionadosAlterados = atualizarArtigosRelacionados(artigosPublicaveis);
-  gerarSitemap(artigosPublicaveis);
+  gerarSitemap(artigosPublicaveis, leituras);
   gerarRss(artigosPublicaveis);
   const linksCorrigidos = corrigirLinksLegadosHtml();
   return { artigosPublicaveis: artigosPublicaveis.length, aliasesAlterados, listagensObsoletas, indisponiveisAlterados, artigosObsoletos, relacionadosAlterados, linksCorrigidos };

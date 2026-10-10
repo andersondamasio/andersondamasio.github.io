@@ -32,7 +32,14 @@ function prepararVerificacao({ ler, revisao }) {
     if (!meses.length) throw new Error("Arquivo cronologico sem meses para verificar.");
     arquivosNavegacao = [...new Set(["artigos/index.html", "arquivo/index.html", meses[0].slice(1), meses.at(-1).slice(1)])];
   }
-  const arquivos = ["index.html", "sobre.html", "sitemap.xml", "rss.xml", "robots.txt", "ads.txt", ...recentes, ...arquivosNavegacao];
+  let arquivosLeituras = [];
+  if (home('a[href="/guias.html"]').length) {
+    const guias = cheerio.load(ler("guias.html"));
+    const destinos = guias('.reading-list a[href]').map((_, el) => guias(el).attr("href")).get();
+    if (!destinos.length || destinos.some(url => !/^\/artigos\/[a-z0-9/-]+\.html$/.test(url))) throw new Error("Selecao de guias sem destinos validos para verificar.");
+    arquivosLeituras = [...new Set(["guias.html", ...destinos.map(url => url.slice(1))])];
+  }
+  const arquivos = ["index.html", "sobre.html", "sitemap.xml", "rss.xml", "robots.txt", "ads.txt", ...recentes, ...arquivosNavegacao, ...arquivosLeituras];
   let controlaDocumentos = false;
   try { controlaDocumentos = Boolean(ler("_config.yml")); } catch { /* Older revisions predate the Pages publication policy. */ }
   const ausentes = controlaDocumentos ? ["EDITORIAL_OPERACAO", "SEO_MELHORIAS_REALIZADAS", "dados/humanizer-rules", "exemplos/reservoir-sampling/README"]
@@ -49,7 +56,7 @@ function prepararVerificacao({ ler, revisao }) {
     }
   }
   if (controlaDocumentos && /dados\/editorial\/arquivados/.test(ler("_config.yml"))) ausentes.push("dados/editorial/arquivados/historicos-2026-10.json");
-  return { revisao, recentes, arquivosNavegacao, ausentes: [...new Set(ausentes)], arquivos: [...new Set(arquivos)].map(arquivo => ({ arquivo, hash: digest(ler(arquivo)) })) };
+  return { revisao, recentes, arquivosNavegacao, arquivosLeituras, ausentes: [...new Set(ausentes)], arquivos: [...new Set(arquivos)].map(arquivo => ({ arquivo, hash: digest(ler(arquivo)) })) };
 }
 
 async function verificarPublicacao({ esperado, fetchImpl = fetch, baseUrl = siteUrl, tentativas = 4, intervaloMs = 15000, esperar = ms => new Promise(resolve => setTimeout(resolve, ms)) }) {
@@ -94,13 +101,14 @@ async function verificarPublicacao({ esperado, fetchImpl = fetch, baseUrl = site
       if (!itens.includes(url)) problemas.push(`Artigo ausente do RSS: ${arquivo}`);
       if (!linksHome.includes(url)) problemas.push(`Artigo ausente da home: ${arquivo}`);
     }
-    for (const arquivo of ["index.html", "sobre.html", ...esperado.recentes, ...(esperado.arquivosNavegacao || [])]) {
+    for (const arquivo of new Set(["index.html", "sobre.html", ...esperado.recentes, ...(esperado.arquivosNavegacao || []), ...(esperado.arquivosLeituras || [])])) {
       const $ = cheerio.load(paginas.get(arquivo) || "");
       const canonical = new URL(arquivo === "index.html" ? "/" : `/${arquivo}`, baseUrl).href;
       if ($("link[rel='canonical']").attr("href") !== canonical) problemas.push(`Canonical incorreto: ${arquivo}`);
       if (!$('title').text().trim() || !$('h1').text().trim()) problemas.push(`Titulo/H1 ausente: ${arquivo}`);
       if (/noindex/i.test($("meta[name='robots']").attr("content") || "")) problemas.push(`Noindex inesperado: ${arquivo}`);
       if (esperado.arquivosNavegacao?.includes(arquivo) && !locais.includes(canonical)) problemas.push(`Arquivo ausente do sitemap: ${arquivo}`);
+      if (esperado.arquivosLeituras?.includes(arquivo) && !locais.includes(canonical)) problemas.push(`Leitura selecionada ausente do sitemap: ${arquivo}`);
     }
     resultado = { revisaoEsperada: esperado.revisao, verificadoEm: new Date().toISOString(), tentativa, aceita: verificacoes.every(item => item.aceita) && !problemas.length, verificacoes, problemas };
     if (resultado.aceita) return resultado;

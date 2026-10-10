@@ -30,8 +30,10 @@ async function main() {
     const mesMaior = [...meses].sort((a, b) => b.artigos.length - a.artigos.length)[0]?.url;
     const extras = process.argv.slice(2);
     if (extras.some(arquivo => !/^artigos\/[a-z0-9/-]+\.html$/.test(arquivo))) throw new Error("QA adicional exige caminho local de artigo.");
-    const arquivos = [...new Set(["index.html", "sobre.html", "index2.html", recente, "artigos/index.html", "arquivo/index.html", mesMaior, ...extras].filter(Boolean))];
+    const guias = fs.existsSync("guias.html") ? "guias.html" : null;
+    const arquivos = [...new Set(["index.html", "sobre.html", "index2.html", recente, "artigos/index.html", "arquivo/index.html", mesMaior, guias, ...extras].filter(Boolean))];
     const resultados = [];
+    const fluxosLeituras = [];
     for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 844 }, { width: 320, height: 720 }]) {
       const contexto = await browser.createBrowserContext();
       const pagina = await contexto.newPage();
@@ -92,10 +94,28 @@ async function main() {
       const destino = await pagina.$eval(".article-index a", el => el.getAttribute("href"));
       await Promise.all([pagina.waitForNavigation({ waitUntil: "networkidle0" }), pagina.click(".article-index a")]);
       if (!pagina.url().endsWith(destino) || !(await pagina.$(".article-body"))) throw new Error("Navegacao do arquivo para artigo falhou.");
+      if (guias) {
+        await pagina.setJavaScriptEnabled(false);
+        await pagina.goto(`${origem}/index.html`, { waitUntil: "networkidle0" });
+        await Promise.all([pagina.waitForNavigation({ waitUntil: "networkidle0" }), pagina.click('.selected-readings h2 a')]);
+        if (!pagina.url().endsWith('/guias.html')) throw new Error("Navegacao para guias sem JavaScript falhou.");
+        await pagina.click('.reading-topics a:last-child');
+        const topico = await pagina.evaluate(() => {
+          const alvo = document.querySelector(location.hash);
+          return { seletor: location.hash, visivel: Boolean(alvo && alvo.getBoundingClientRect().top >= document.querySelector('header').getBoundingClientRect().bottom) };
+        });
+        if (!topico.visivel) throw new Error("Cabecalho encobre o tema selecionado nos guias.");
+        await pagina.screenshot({ path: path.join(diretorio, `guias-topico-${viewport.width}.png`), fullPage: false });
+        const link = `${topico.seletor} .reading-list a`;
+        const artigo = await pagina.$eval(link, el => el.getAttribute('href'));
+        await Promise.all([pagina.waitForNavigation({ waitUntil: "networkidle0" }), pagina.click(link)]);
+        if (!pagina.url().endsWith(artigo) || !(await pagina.$('.article-body'))) throw new Error("Navegacao do guia para artigo sem JavaScript falhou.");
+        fluxosLeituras.push({ largura: viewport.width, javascript: false, topico: topico.seletor, artigo, aceita: true });
+      }
       await contexto.close();
     }
     const aceita = resultados.every(r => r.h1 === 1 && !r.overflow && !r.botoesSobreCodigo && !r.imagensQuebradas.length && !r.textoForaDaTela.length && !r.erros.length);
-    const relatorio = { verificadoEm: new Date().toISOString(), aceita, observacao: "Servidor local temporario; analytics e dominios externos bloqueados durante QA.", resultados };
+    const relatorio = { verificadoEm: new Date().toISOString(), aceita, observacao: "Servidor local temporario; analytics e dominios externos bloqueados durante QA.", resultados, fluxosLeituras };
     fs.writeFileSync(path.join(diretorio, "resultado.json"), JSON.stringify(relatorio, null, 2));
     console.log(JSON.stringify(relatorio, null, 2));
     if (!aceita) process.exitCode = 1;
