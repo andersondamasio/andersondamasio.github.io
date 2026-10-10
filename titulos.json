@@ -14965,15 +14965,6 @@
     }
   },
   {
-    "titulo": "Como a IA Pode Salvar Seu Site: Uma Abordagem Prática para Problemas de Plugins",
-    "noticiaOriginal": "How I used ChatGPT to quickly fix a critical plugin - without touching a line of code",
-    "url": "artigos/inteligencia-artificial/como-a-ia-pode-salvar-seu-site-uma-abordagem-pratica-para-problemas-de-plugins.html",
-    "data": "2025-07-07T16:25:58.059Z",
-    "dataFonte": "2025-07-07T16:03:00.000Z",
-    "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/how-i-used-chatgpt-to-quickly-fix-a-critical-plugin-without-touching-a-line-of-code/"
-  },
-  {
     "titulo": "A Revolução da Mobilidade: Waymo e o Futuro dos Robotaxis nas Grandes Cidades",
     "noticiaOriginal": "Waymo starts robotaxi testing in Philadelphia and NYC",
     "url": "artigos/tecnologia-automotiva/a-revolucao-da-mobilidade-waymo-e-o-futuro-dos-robotaxis-nas-grandes-cidades.html",
@@ -15109,13 +15100,25 @@
     "urlFonte": "https://techcrunch.com/2025/07/07/openai-tightens-the-screws-on-security-to-keep-away-prying-eyes/"
   },
   {
-    "titulo": "Como um Plugin Quebrado Me Fez Usar IA Para Reescrever Meu Código e Salvar Meu Site",
-    "noticiaOriginal": "How I used ChatGPT to analyze, debug, and rewrite a broken plugin from scratch - in an hour",
+    "titulo": "Plugin WordPress com IA: o que revisar antes de substituir",
+    "noticiaOriginal": "WordPress: Nonces",
     "url": "artigos/programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html",
     "data": "2025-07-08T10:21:02.010Z",
-    "dataFonte": "2025-07-08T02:00:00.000Z",
     "categoria": "Programação",
-    "urlFonte": "https://www.zdnet.com/article/how-i-used-chatgpt-to-analyze-debug-and-rewrite-a-broken-plugin-from-scratch-in-an-hour/"
+    "urlFonte": "https://developer.wordpress.org/apis/security/nonces/",
+    "seo": {
+      "description": "Validação, permissões, nonces e escape de saída: uma ficha proposta para revisar a substituição de um plugin, sem prometer segurança automática.",
+      "modifiedAt": "2026-10-10T09:45:06.260Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T09:45:06.260Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover incidente e resultados pessoais nao confirmados, equivalencia entre sanitizacao e validacao e garantia de seguranca por geracao de codigo.",
+      "hashAntes": "7f8e8970af85c2df64c6ca3fafc4a8c29d2b520e4f00bab32e8ee66e5035f71b",
+      "hashDepois": "2bf59c5d72ac5def4f41543f2deea141da90aa77968dffc36fbb781b607f965d",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-uso-2026-10.json"
+    }
   },
   {
     "titulo": "Meta contrata guru da Apple em busca de revolução na IA",
@@ -28631,15 +28634,6 @@
     "urlFonte": "https://www.zdnet.com/article/i-compared-the-best-smartwatches-from-samsung-and-apple-heres-how-the-watch-series-11-wins/"
   },
   {
-    "titulo": "Quatro Dias, Quatro Add-ons: Como a IA Mudou Meu Jeito de Desenvolver",
-    "noticiaOriginal": "I got 4 years of product development done in 4 days for $200, and I'm still stunned",
-    "url": "artigos/inteligencia-artificial/quatro-dias-quatro-add-ons-como-a-ia-mudou-meu-jeito-de-desenvolver.html",
-    "data": "2025-09-19T07:22:54.615Z",
-    "dataFonte": "2025-09-19T07:00:00.000Z",
-    "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/i-got-4-years-of-product-development-done-in-4-days-for-200-and-im-still-stunned/"
-  },
-  {
     "titulo": "O exoesqueleto Hypershell X Ultra: um impulso para o nosso cotidiano",
     "noticiaOriginal": "I wore the viral $2,000 exoskeleton that supercharges your body, and it's legit",
     "url": "artigos/tecnologia/o-exoesqueleto-hypershell-x-ultra-um-impulso-para-o-nosso-cotidiano.html",
@@ -30747,15 +30741,6 @@
     "dataFonte": "2025-09-29T15:00:28.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://techcrunch.com/2025/09/29/trumps-energy-department-forbids-staff-from-saying-climate-change-or-green/"
-  },
-  {
-    "titulo": "Instalei essas 11 aplicações em todos os meus sistemas Linux e você também deveria",
-    "noticiaOriginal": "I install these 11 apps on every new Linux system, and you should, too - here's why",
-    "url": "artigos/tecnologia/instalei-essas-11-aplicacoes-em-todos-os-meus-sistemas-linux-e-voce-tambem-deveria.html",
-    "data": "2025-09-29T16:23:47.499Z",
-    "dataFonte": "2025-09-29T16:22:42.000Z",
-    "categoria": "Tecnologia",
-    "urlFonte": "https://www.zdnet.com/article/i-install-these-11-apps-on-every-new-linux-system-and-you-should-too-heres-why/"
   },
   {
     "titulo": "Claude Sonnet 4.5: A Revolução do Código nas Mãos de uma IA",
@@ -36447,13 +36432,26 @@
     "urlFonte": "https://techcrunch.com/2025/10/27/coi-energy-solves-a-conundrum-letting-businesses-sell-unused-electricity-catch-it-at-techcrunch-disrupt-2025/"
   },
   {
-    "titulo": "A nova era do fitness: o Coach da Fitbit e a revolução da saúde digital",
-    "noticiaOriginal": "Fitbit’s revamped app, with Gemini-powered health coach, rolls out to Premium users",
+    "titulo": "Coach da Fitbit: personalização não é avaliação médica",
+    "noticiaOriginal": "Fitbit personal health coach: public preview",
     "url": "artigos/inteligencia-artificial/a-nova-era-do-fitness-o-coach-da-fitbit-e-a-revolucao-da-saude-digital.html",
     "data": "2025-10-27T19:18:43.402Z",
-    "dataFonte": "2025-10-27T19:11:50.000Z",
+    "dataFonte": "2025-10-27",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://techcrunch.com/2025/10/27/fitbits-revamped-app-with-gemini-powered-health-coach-rolls-out-to-premium-users/"
+    "urlFonte": "https://blog.google/products-and-platforms/devices/fitbit/personal-health-coach-public-preview/",
+    "seo": {
+      "description": "O anúncio da prévia de 2025, a mudança para Google Health e os limites do coach, com uma ficha proposta para separar dados e recomendações.",
+      "modifiedAt": "2026-10-10T09:45:06.260Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T09:45:06.260Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Distinguir anuncio historico e disponibilidade atual, retirando a inferencia de que adaptar treino apos lesao prova adequacao clinica.",
+      "hashAntes": "8bb401d606504743433a8a00cbc5292cd0c91739bd4abea478fc375dcc359382",
+      "hashDepois": "6bbdd28dd2790b14a4693135dd75bf448823240a1724a55d84f9fdeddbd581ea",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-uso-2026-10.json"
+    }
   },
   {
     "titulo": "A ascensão do Gemini: O que a Arquitetura de Software tem a ver com isso?",
@@ -44338,15 +44336,6 @@
     "urlFonte": "https://techcrunch.com/2025/12/06/is-it-time-to-refound-your-startup/"
   },
   {
-    "titulo": "A revolução do bem-estar: como a IA do Fitbit Premium transformou meu treino",
-    "noticiaOriginal": "A month with Fitbit Premium on my Pixel Watch changed how I see AI health coaching",
-    "url": "artigos/inteligencia-artificial/a-revolucao-do-bem-estar-como-a-ia-do-fitbit-premium-transformou-meu-treino.html",
-    "data": "2025-12-06T21:18:55.471Z",
-    "dataFonte": "2025-12-05T18:28:00.000Z",
-    "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/a-month-with-fitbit-premium-on-my-pixel-watch-changed-how-i-see-ai-health-coaching/"
-  },
-  {
     "titulo": "Novas Lentes do Futuro: O Que Atrasos de Lançamento Revelam sobre a Indústria de Realidade Mista",
     "noticiaOriginal": "Meta reportedly delays mixed reality glasses until 2027",
     "url": "artigos/tecnologia/novas-lentes-do-futuro-o-que-atrasos-de-lancamento-revelam-sobre-a-industria-de-realidade-mista.html",
@@ -48240,15 +48229,6 @@
     "dataFonte": "2025-12-26T15:00:00.000Z",
     "categoria": "Cloud",
     "urlFonte": "https://www.infoq.com/news/2025/12/uber-infrastructure-benchmarking/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
-  },
-  {
-    "titulo": "A revolução das distribuições Linux: meu top 11 que moldaram a jornada",
-    "noticiaOriginal": "My 11 favorite Linux distributions of all time, ranked",
-    "url": "artigos/desenvolvimento-de-software/a-revolucao-das-distribuicoes-linux-meu-top-11-que-moldaram-a-jornada.html",
-    "data": "2025-12-26T16:26:17.864Z",
-    "dataFonte": "2025-12-26T16:11:00.000Z",
-    "categoria": "Desenvolvimento de Software",
-    "urlFonte": "https://www.zdnet.com/article/my-11-favorite-linux-distributions-of-all-time-ranked/"
   },
   {
     "titulo": "Transformando a Jardinagem: A Revolução do Controle de Ervas Daninhas Sem Químicos",

@@ -1351,6 +1351,125 @@
           "arquivoHash": "65aace860d29b5018bc68c564b001f85268f2bb04f97a4f78a097ce8e35cca30"
         }
       ]
+    },
+    {
+      "url": "artigos/programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html",
+      "acao": "atualizar",
+      "motivo": "Remover incidente e resultados pessoais nao confirmados, equivalencia entre sanitizacao e validacao e garantia de seguranca por geracao de codigo.",
+      "evidencia": "Leitura integral local: plugin anti-spam, 20 minutos, 21 segundos e reducao de spam atribuidos ao autor sem evidencia. Documentacao primaria WordPress diferencia validacao, sanitizacao, autorizacao e escape. Fontes ZDNet originais nao puderam ser abertas; nao se atribui o incidente a um jornalista por suposicao.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T09:45:06.260Z"
+      },
+      "conteudoHash": "2bf59c5d72ac5def4f41543f2deea141da90aa77968dffc36fbb781b607f965d"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-nova-era-do-fitness-o-coach-da-fitbit-e-a-revolucao-da-saude-digital.html",
+      "acao": "atualizar",
+      "motivo": "Distinguir anuncio historico e disponibilidade atual, retirando a inferencia de que adaptar treino apos lesao prova adequacao clinica.",
+      "evidencia": "Leitura integral local e anuncio oficial de 27/10/2025: previa para usuarios elegiveis nos EUA. Anuncio Google Health identifica mudanca de nome e ajuda oficial delimita uso informativo, sem substituir avaliacao profissional. Nao foi testado o produto nem avaliada eficacia.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T09:45:06.260Z"
+      },
+      "conteudoHash": "6bbdd28dd2790b14a4693135dd75bf448823240a1724a55d84f9fdeddbd581ea"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/como-a-ia-pode-salvar-seu-site-uma-abordagem-pratica-para-problemas-de-plugins.html",
+      "acao": "consolidar",
+      "motivo": "Consolidar a segunda narrativa de substituicao de plugin anti-spam no guia de revisao com documentacao primaria.",
+      "evidencia": "Leitura integral de origem/destino: mesmo recorte de analise e reescrita de plugin anti-spam por IA, inclusive mesmo tempo de analise alegado. A origem atribui o caso a terceiro, mas extrapola seguranca e recomenda comecar do zero sem criterios. Fontes ZDNet nao acessiveis; detalhes do incidente nao reafirmados.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T09:45:06.260Z"
+      },
+      "conteudoHash": "21dd5d1c6ea11b62fee6b193ac4d7628b231b79f10bb1d319f18e784a55f6fa7",
+      "arquivoHash": "a16af72247b366ac41e45b7136d5a7f3012993d97fc1ae97dab2f5936bd8644e",
+      "registrosHash": "93601fc5336bff28190da318941b9fafe376f69c34261d8a480dd0e2132f7136",
+      "aliases": [
+        {
+          "url": "inteligencia-artificial/como-a-ia-pode-salvar-seu-site-uma-abordagem-pratica-para-problemas-de-plugins.html",
+          "arquivoHash": "f654e94b5418fdae0ba0c40870827efe02ccd6d86a79f4e3874a6ab6de4957ad"
+        }
+      ],
+      "destino": "artigos/programacao/como-um-plugin-quebrado-me-fez-usar-ia-para-reescrever-meu-codigo-e-salvar-meu-site.html",
+      "destinoConteudoHash": "2bf59c5d72ac5def4f41543f2deea141da90aa77968dffc36fbb781b607f965d"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/quatro-dias-quatro-add-ons-como-a-ia-mudou-meu-jeito-de-desenvolver.html",
+      "acao": "retirar",
+      "motivo": "Retirar autoria de quatro add-ons e vitoria pessoal nao confirmadas, sem resultado ou recurso proprio verificavel.",
+      "evidencia": "Leitura integral: abertura e conclusao reivindicam desenvolvimento pessoal em quatro dias, enquanto o corpo menciona uma materia de terceiro. As dicas de uso de IA sao genericas e nao documentam os add-ons. Consulta da fonte original falhou; isso nao prova que a fonte seja falsa.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T09:45:06.260Z"
+      },
+      "conteudoHash": "646ed3a6ced06a3bdab2e19e6443730dff5c7b2cdce60cee58a84658aece2a4e",
+      "arquivoHash": "81587940fdb5a10d8027570df611f91b9a37dde22f93dcd5c0cf0ce68b773cc3",
+      "registrosHash": "6c24fb912b553b4f7db33a9f7e63f55f061225fa480b57c5cc6b3398bc1f44cd",
+      "aliases": [
+        {
+          "url": "inteligencia-artificial/quatro-dias-quatro-add-ons-como-a-ia-mudou-meu-jeito-de-desenvolver.html",
+          "arquivoHash": "4bfcb03a0b5d42df6fa1355e9b70fdfec96c41a2bdf3ea2fcde5717017ed10de"
+        }
+      ]
+    },
+    {
+      "url": "artigos/desenvolvimento-de-software/a-revolucao-das-distribuicoes-linux-meu-top-11-que-moldaram-a-jornada.html",
+      "acao": "retirar",
+      "motivo": "Retirar ranking autobiografico de distribuicoes e uso em projetos nao confirmados.",
+      "evidencia": "Leitura integral: relato de primeira experiencia com Caldera, preferencia por Pop!_OS e uso profissional sao apresentados como biografia do autor. Nao ha protocolo de comparacao ou medicao que sustente o ranking. Fonte original nao acessivel; nenhuma afirmacao de falsidade sobre a fonte.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T09:45:06.260Z"
+      },
+      "conteudoHash": "309eec14c0194f9cfd0e0a6b3ac36a25a789dfc6c98a7d194113a7c5ec5a6012",
+      "arquivoHash": "21ab0e9ec1ea6e6257976a19adec80af07f54455bdea0ce5e47b6af7447ab8e4",
+      "registrosHash": "8921d190f37c3118174cec43b5d4d0cae1680d53382dfab172f27214897110e4",
+      "aliases": [
+        {
+          "url": "desenvolvimento-de-software/a-revolucao-das-distribuicoes-linux-meu-top-11-que-moldaram-a-jornada.html",
+          "arquivoHash": "ee626c92a34998b84ee38bbad2f6eb652c4725857c70e66af6e864b190234107"
+        }
+      ]
+    },
+    {
+      "url": "artigos/tecnologia/instalei-essas-11-aplicacoes-em-todos-os-meus-sistemas-linux-e-voce-tambem-deveria.html",
+      "acao": "retirar",
+      "motivo": "Retirar rotina de instalacao nao confirmada e recomendacao universal de aplicativos sem requisitos ou avaliacao propria.",
+      "evidencia": "Leitura integral: titulo reivindica instalacoes pessoais, texto impoe conjunto universal e associacoes simplificadas de seguranca/compatibilidade sem teste. A lista nao distingue necessidades, ambiente nem criterios de escolha. Falha de acesso a fonte nao e o criterio de retirada.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T09:45:06.260Z"
+      },
+      "conteudoHash": "853896bc127f0f77444016fdfd85b2e73b009eb4bfedcb308bc6fd90041956a5",
+      "arquivoHash": "cd82192bcfccd361b70464cc3db0046ea20da5678a0ef1daa5b77448cc5377ee",
+      "registrosHash": "8b3823ad7f7a91dca27c5c9f604f8b6bffb7d6164adddb6c52ed4fe97cb05c2c",
+      "aliases": [
+        {
+          "url": "tecnologia/instalei-essas-11-aplicacoes-em-todos-os-meus-sistemas-linux-e-voce-tambem-deveria.html",
+          "arquivoHash": "a0cfa86716a80d267def618ae8b586eae5bfe1781bd64e2dca50e54c182682b4"
+        }
+      ]
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-do-bem-estar-como-a-ia-do-fitbit-premium-transformou-meu-treino.html",
+      "acao": "retirar",
+      "motivo": "Retirar teste de um mes e efeitos pessoais de saude/treino nao confirmados, com recomendacao de assinatura baseada nessa vivencia.",
+      "evidencia": "Leitura integral: uso de Pixel Watch, intensidade de treino, motivacao e beneficios sao atribuidos ao autor sem confirmacao. Orienta perguntar sobre sintomas e dieta sem delimitar uso informativo. A ajuda Google Health foi conferida; a reportagem ZDNet original nao foi acessivel.",
+      "revisao": {
+        "responsavel": "Codex (curadoria assistida)",
+        "em": "2026-10-10T09:45:06.260Z"
+      },
+      "conteudoHash": "82906e3da5388cd1607af4d89a877fd8553167514f86e22328666bafce54ddf3",
+      "arquivoHash": "08ccd71483c8c6780f60db9abc001b185f4143c005496942b01c9530ca4ba7b6",
+      "registrosHash": "0383526c01449890d6734655b5f1c673cb8b79d33f6e988032c35c42793fa6e5",
+      "aliases": [
+        {
+          "url": "inteligencia-artificial/a-revolucao-do-bem-estar-como-a-ia-do-fitbit-premium-transformou-meu-treino.html",
+          "arquivoHash": "550347f0c67c481fc833bc6e9641cc9ae49a9731a8cb7b899d2b7dbe08ac20fe"
+        }
+      ]
     }
   ]
 }
