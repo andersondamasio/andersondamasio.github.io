@@ -832,6 +832,93 @@ test('correcao de fluxos preserva historico e separa teste executado de proposta
   assert.equal(h('.contribuicao-editorial tbody tr').length, 5);
 });
 
+test('curadoria de nuvem preserva historico, evidencias e a pendencia resolvida de Smart TV', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-nuvem-2026-10.json'));
+  assert.equal(lote.artigos.length, 11);
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.experimentosExecutados, false);
+  assert.equal(lote.metricasGoogle, null);
+  const corrigidas = lote.artigos.filter(a => a.acao === 'atualizar');
+  assert.equal(corrigidas.length, 10);
+  const hosts = new Set(['aws.amazon.com', 'docs.aws.amazon.com', 'blog.railway.com',
+    'blog.cloudflare.com', 'www.infoq.com', 'cloud.google.com', 'docs.cloud.google.com', 'help.netflix.com']);
+  for (const a of corrigidas) {
+    const q = cheerio.load(ler(a.url));
+    const r = cadastro.find(r => r.url === a.url);
+    assert.equal(r.data, a.antes.data);
+    assert.equal(r.revisaoHumana, undefined);
+    assert.equal(r.correcaoEditorial.revisaoHumana, false);
+    assert.equal(r.correcaoEditorial.relatorio, 'dados/editorial/curadoria-nuvem-2026-10.json');
+    assert.equal(r.seo.modifiedAt, lote.em);
+    assert.equal(q('h1').text(), a.depois.titulo);
+    assert.equal(q('meta[name=description]').attr('content'), a.depois.descricao);
+    assert.equal(q('meta[property="article:published_time"]').attr('content'), a.antes.data);
+    assert.equal(q('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    assert.doesNotMatch(q('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(hashCorpoEditorial(q('.article-body').html()), a.depois.corpoHash);
+    assert.equal(manifesto.decisoes.find(d => d.url === a.url).conteudoHash, a.depois.corpoHash);
+    assert.equal(r.qualidadeEditorial, undefined);
+    assert.equal(q('.contribuicao-editorial').length, 1);
+    assert.equal(q('.limites-editoriais').length, 1);
+    assert.ok(a.pergunta && a.sobreposicao);
+    for (const e of a.evidencias) {
+      assert.ok(hosts.has(new URL(e.fonte).hostname));
+      assert.equal(q(e.seletor).length, 1);
+      assert.equal(hashCorpoEditorial(q(e.seletor).html()), e.textoHash);
+      assert.equal(q(e.seletor).find('a').attr('href'), e.fonte);
+    }
+    assert.doesNotMatch(q('.article-body').text(), /durante minha trajetória|pessoalmente, sou fã|como arquiteto de software com mais de 19 anos/i);
+  }
+  const tv = corrigidas.find(a => a.url.includes('smart-tvs'));
+  assert.equal(tv.resolvePendenciaDe, 'dados/editorial/curadoria-protecao-digital-2026-10.json');
+  assert.ok(JSON.parse(ler(tv.resolvePendenciaDe)).pendentesRelacionadas.some(p => p.url === tv.url));
+});
+
+test('nuvem distingue configuracao, demonstracao, incerteza e proposta nao executada', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-nuvem-2026-10.json'));
+  const pagina = trecho => cheerio.load(ler(lote.artigos.find(a => a.url.includes(trecho)).url));
+  const ec2 = pagina('virtualizacao-aninhada');
+  assert.equal(ec2('.article-body pre').length, 0);
+  assert.match(ec2('.fato-ec2').text(), /desde que esteja parada/);
+  assert.match(ec2('.fato-ec2').text(), /não exige Tenancy=host/);
+  assert.match(ec2('.fato-ec2').text(), /desativação automática de VSM/);
+  assert.match(pagina('railway').text(), /explicações divergentes/);
+  assert.match(pagina('railway')('.limites-editoriais').text(), /Não se atribui culpa definitiva/);
+  const escala = pagina('um-milhao-de-sandboxes');
+  assert.match(escala('.fato-sandboxes').text(), /scale-to-zero/);
+  assert.match(escala('.contribuicao-editorial').text(), /hipótese deste exemplo, não um dado observado/);
+  assert.match(escala('.limites-editoriais').text(), /vídeo não foi auditado/);
+  assert.match(pagina('revolucao-dos-plugins')('.fato-plugin').text(), /não é uma medição deste site/);
+  assert.match(pagina('quicksilver')('.fato-cache').text(), /versão exigida/);
+  assert.match(pagina('nuvem-soberana')('.limites-editoriais').text(), /parecer jurídico/);
+  const mcp = pagina('gerenciando-protocolos');
+  assert.match(mcp('.fato-bigquery').text(), /execute_sql_readonly/);
+  assert.match(mcp('.contribuicao-editorial').text(), /não dependa exclusivamente de uma instrução/);
+  assert.match(pagina('smart-tvs')('.fato-netflix').text(), /não há base para prometer desbloqueio geral/);
+});
+
+test('guia de hospedagem equivalente tem snapshot e dois encaminhamentos diretos', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-nuvem-2026-10.json'));
+  const a = lote.artigos.find(a => a.acao === 'consolidar');
+  assert.ok(a.alternativas && a.evidencia);
+  const d = manifesto.decisoes.find(d => d.url === a.url);
+  const copia = JSON.parse(ler(a.arquivoRecuperavel));
+  assert.equal(hashRegistros(copia.registros), d.registrosHash);
+  assert.equal(hashArquivo(copia.arquivos[0].html), d.arquivoHash);
+  assert.equal(copia.arquivos.length, 2);
+  assert.equal(cadastro.some(r => r.url === a.url), false);
+  const destino = cheerio.load(ler(a.destinoEquivalente));
+  assert.equal(hashCorpoEditorial(destino('.article-body').html()), d.destinoConteudoHash);
+  for (const p of [a.url, ...a.aliases]) {
+    const q = cheerio.load(ler(p));
+    assert.equal(q('.article-body').length, 0);
+    assert.match(q('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(q('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.destinoEquivalente}`);
+    assert.equal(q('meta[http-equiv=refresh]').attr('content'), `0; url=https://www.andersondamasio.com.br/${a.destinoEquivalente}`);
+  }
+});
+
 test('curadoria contextual tem decisoes individuais, sem inventar metricas ou aprovacao humana', () => {
   assert.equal(relatorio.revisaoHumana, false);
   assert.equal(relatorio.metricasGoogle, null);

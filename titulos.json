@@ -9950,13 +9950,25 @@
     "urlFonte": "https://www.infoq.com/articles/apiops-iac-reshaped-api-strategy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   },
   {
-    "titulo": "A revolução da nuvem soberana: AWS e a autonomia digital da Europa",
-    "noticiaOriginal": "AWS Unveils Independent European Governance and Operations for European Sovereign Cloud",
+    "titulo": "AWS European Sovereign Cloud: integração e governança",
+    "noticiaOriginal": "Opening the AWS European Sovereign Cloud",
     "url": "artigos/cloud/a-revolucao-da-nuvem-soberana-aws-e-a-autonomia-digital-da-europa.html",
     "data": "2025-06-12T10:21:10.151Z",
-    "dataFonte": "2025-06-12T10:00:00.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.infoq.com/news/2025/06/aws-eu-sovereign-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/",
+    "seo": {
+      "description": "O lançamento de janeiro de 2026 e um roteiro para conferir identidades, fluxos e requisitos, sem presumir conformidade jurídica automática.",
+      "modifiedAt": "2026-10-10T13:15:52.509Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:15:52.509Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Atualizar o anuncio e separar caracteristicas documentadas de conclusoes juridicas nao demonstradas.",
+      "hashAntes": "3ad6b3d0950391e454b4003a8f3e0c5a73ef2a58219567492c659dff3dba56b1",
+      "hashDepois": "26d64904ef7285d4b05f5c704e5da05677847238c9ef17299c799208f51e807a",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-nuvem-2026-10.json"
+    }
   },
   {
     "titulo": "A revolução dos agentes autônomos: o futuro da manutenção de código",
@@ -20482,13 +20494,25 @@
     "urlFonte": "https://www.zdnet.com/article/i-answered-the-million-dollar-question-about-buying-laptops-heres-the-ultimate-guide/"
   },
   {
-    "titulo": "Como a Cloudflare Transformou o Quicksilver: Lições de Arquitetura em Cache",
-    "noticiaOriginal": "How Cloudflare Migrated Quicksilver to Multi-Level Caching While Serving Billions of Requests",
+    "titulo": "Quicksilver v2: contrato de leitura antes de adicionar cache",
+    "noticiaOriginal": "Quicksilver v2: evolution of a globally distributed key-value store (Part 2)",
     "url": "artigos/cloud/como-a-cloudflare-transformou-o-quicksilver-licoes-de-arquitetura-em-cache.html",
     "data": "2025-08-09T15:19:54.408Z",
-    "dataFonte": "2025-08-09T14:30:00.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.infoq.com/news/2025/08/cloudflare-key-value-store/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-2-of-2/",
+    "seo": {
+      "description": "O desenho relatado pela Cloudflare e perguntas para avaliar versões, faltas de cache e recuperação em outra aplicação.",
+      "modifiedAt": "2026-10-10T13:15:52.509Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:15:52.509Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Trocar recomendacao universal de camadas por contrato de leitura e limites de generalizacao.",
+      "hashAntes": "ffd473d85fe98c743a908a78d9e62c36da653c28c829faf95ed1f4ffdd073038",
+      "hashDepois": "3c4b8ea7d5956aa06b06a35e90745595768346a1c7a30118e555218506aaf56d",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-nuvem-2026-10.json"
+    }
   },
   {
     "titulo": "Desmistificando o Preço dos Softwares de IA: O Que Está Por Trás dos R$ 1.000",
@@ -23039,13 +23063,25 @@
     "urlFonte": "https://www.zdnet.com/article/best-photo-editing-software/"
   },
   {
-    "titulo": "A Revolução das VPNs em Smart TVs: Conectando-se ao Mundo do Streaming de Forma Segura",
-    "noticiaOriginal": "The best smart TV VPNs of 2025: Expert tested and reviewed",
+    "titulo": "VPN na Smart TV: compatibilidade não garante acesso ao catálogo",
+    "noticiaOriginal": "Watching TV shows and movies through a VPN",
     "url": "artigos/tecnologia/a-revolucao-das-vpns-em-smart-tvs-conectando-se-ao-mundo-do-streaming-de-forma-segura.html",
     "data": "2025-08-22T10:21:26.910Z",
-    "dataFonte": "2025-08-22T10:15:18.000Z",
     "categoria": "Tecnologia",
-    "urlFonte": "https://www.zdnet.com/article/best-smart-tv-vpns/"
+    "urlFonte": "https://help.netflix.com/en/node/114701",
+    "seo": {
+      "description": "Confira aparelho, rede e regras do streaming antes de contratar uma VPN. A Netflix documenta restrições, não desbloqueio geral.",
+      "modifiedAt": "2026-10-10T13:15:52.509Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:15:52.509Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Resolver promessa de desbloqueio e recomendacao pessoal nao confirmada.",
+      "hashAntes": "a6951a575b0c5ab9a47a14c31659adc4512e0483f3422cc4b8f792722921b16d",
+      "hashDepois": "441e9afe814abf62c61b7c3d11a17d1cb4e2242e34641c6903d30487c6cc92e2",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-nuvem-2026-10.json"
+    }
   },
   {
     "titulo": "A volta dos clássicos: como a tecnologia está resgatando a mídia física em casa",
@@ -35296,13 +35332,25 @@
     "urlFonte": "https://techcrunch.com/2025/10/21/i-spent-a-month-living-with-a-430-ai-pet-the-casio-moflin/"
   },
   {
-    "titulo": "A dependência excessiva das gigantes da tecnologia: é hora de repensar nossa arquitetura de nuvem?",
-    "noticiaOriginal": "AWS outage: Are we relying too much on US big tech?",
+    "titulo": "Falha da AWS em 2025: dependências antes de adotar multicloud",
+    "noticiaOriginal": "Summary of the Amazon DynamoDB Service Disruption in the Northern Virginia (US-EAST-1) Region",
     "url": "artigos/cloud/a-dependencia-excessiva-das-gigantes-da-tecnologia-e-hora-de-repensar-nossa-arquitetura-de-nuvem.html",
     "data": "2025-10-21T19:17:05.108Z",
-    "dataFonte": "2025-10-21T19:14:08.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.bbc.com/news/articles/c0jdgp6n45po?at_medium=RSS&at_campaign=rss"
+    "urlFonte": "https://aws.amazon.com/message/101925/",
+    "seo": {
+      "description": "O incidente do DynamoDB em 2025 e um roteiro para avaliar dependências, dados e recuperação antes de contratar uma segunda nuvem.",
+      "modifiedAt": "2026-10-10T13:15:52.509Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:15:52.509Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Substituir atualidade vaga e diversificacao universal por incidente datado e criterios verificaveis de resiliencia.",
+      "hashAntes": "c9acf40154ecd54b667f85b35bc2180738353ab4f32f4016f02bc0c6b0208388",
+      "hashDepois": "fd6c31e584e86b293bb46ea87fc056cb5c145f8f69679ea87e9dee7ea00b54b2",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-nuvem-2026-10.json"
+    }
   },
   {
     "titulo": "Fal.ai: A Revolução Multimodal que Define o Futuro do Desenvolvimento de Software",
@@ -45276,13 +45324,25 @@
     "urlFonte": "https://www.zdnet.com/article/best-85-inch-tv/"
   },
   {
-    "titulo": "A nuvem que vem: como escolher o serviço de hospedagem ideal pra 2025",
-    "noticiaOriginal": "The best cloud hosting services for 2025: Expert tested",
+    "titulo": "Hospedagem em nuvem: compare requisitos, operação e custo total",
+    "noticiaOriginal": "AWS Shared Responsibility Model",
     "url": "artigos/cloud/a-nuvem-que-vem-como-escolher-o-servico-de-hospedagem-ideal-pra-2025.html",
     "data": "2025-12-11T11:21:15.061Z",
-    "dataFonte": "2025-12-11T11:00:48.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.zdnet.com/article/best-cloud-hosting/"
+    "urlFonte": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+    "seo": {
+      "description": "Uma ficha para comparar hospedagem por carga, responsabilidade operacional, custo, teste e saída, sem ranking ou experiência pessoal inventada.",
+      "modifiedAt": "2026-10-10T13:15:52.509Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:15:52.509Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover vivencia nao confirmada e titulo temporal vencido; tornar a escolha de hospedagem verificavel.",
+      "hashAntes": "6a1b48d445aee5250ca5e288bd57a83722c689354e8074b53e1518357e15b834",
+      "hashDepois": "eb9dd96be65598e8e473d4080a45469aaf3efc490c8a3da0515b0fe831fa2ce1",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-nuvem-2026-10.json"
+    }
   },
   {
     "titulo": "A arte de moldar engenheiros de machine learning: lições valiosas",
@@ -46672,13 +46732,25 @@
     "urlFonte": "https://www.zdnet.com/article/qcy-melobuds-n70-review/"
   },
   {
-    "titulo": "Gerenciando Protocolos de Contexto: O Novo Futuro da Integração em Nuvem",
-    "noticiaOriginal": "Google Cloud Launches Managed MCP Support",
+    "titulo": "MCP gerenciado no Google Cloud: endpoints, permissões e limites",
+    "noticiaOriginal": "Use the BigQuery MCP server",
     "url": "artigos/cloud/gerenciando-protocolos-de-contexto-o-novo-futuro-da-integracao-em-nuvem.html",
     "data": "2025-12-18T10:25:26.049Z",
-    "dataFonte": "2025-12-18T10:15:00.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.infoq.com/news/2025/12/google-cloud-managed-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp",
+    "seo": {
+      "description": "Um contrato de acesso para conectar agentes a dados, com BigQuery como exemplo e distinção entre ferramentas de leitura e escrita.",
+      "modifiedAt": "2026-10-10T13:15:52.509Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:15:52.509Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Especificar endpoint e autorizacao, retirando comparacao de latencia sem evidencia.",
+      "hashAntes": "0f90e9c6fcc822bf7628a16c1a88dcf126b27392ce4f4a6f34f88b5a079c9a80",
+      "hashDepois": "339b5f9963cd228c1317ee7b769b95609c58b85549df6391b51f9b5803ae9733",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-nuvem-2026-10.json"
+    }
   },
   {
     "titulo": "A revolução dos smartwatches à prova d'água: como a tecnologia pode ajudar na sua saúde",
@@ -53345,15 +53417,6 @@
     "dataFonte": "2026-01-21T09:17:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/how-to-build-a-winter-emergency-kit/"
-  },
-  {
-    "titulo": "A Revolução do Cloud Hosting: Como Escolher o Melhor Para Seu Negócio em 2026",
-    "noticiaOriginal": "The best cloud hosting services for 2026: Expert tested and reviewed",
-    "url": "artigos/cloud/a-revolucao-do-cloud-hosting-como-escolher-o-melhor-para-seu-negocio-em-2026.html",
-    "data": "2026-01-21T10:31:39.849Z",
-    "dataFonte": "2026-01-21T10:01:11.000Z",
-    "categoria": "Cloud",
-    "urlFonte": "https://www.zdnet.com/article/best-cloud-hosting/"
   },
   {
     "titulo": "Um olhar técnico sobre as melhores opções de hospedagem barata em 2026",
@@ -60681,13 +60744,25 @@
     "urlFonte": "https://www.infoq.com/news/2026/03/github-ai-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   },
   {
-    "titulo": "A Revolução dos Plugins: Automatizando o Desdobramento na Nuvem com AWS",
-    "noticiaOriginal": "AWS Launches Agent Plugins to Automate Cloud Deployment",
+    "titulo": "Agent Plugins da AWS: o que revisar antes de autorizar um deploy",
+    "noticiaOriginal": "Introducing Agent Plugins for AWS",
     "url": "artigos/cloud/a-revolucao-dos-plugins-automatizando-o-desdobramento-na-nuvem-com-aws.html",
     "data": "2026-03-03T10:42:46.684Z",
-    "dataFonte": "2026-03-03T10:13:00.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.infoq.com/news/2026/03/aws-launches-agent-plugins/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://aws.amazon.com/blogs/developer/introducing-agent-plugins-for-aws/",
+    "seo": {
+      "description": "Revise destino, infraestrutura, credenciais, custos, dados e retorno antes de confirmar uma implantação preparada por agente.",
+      "modifiedAt": "2026-10-10T13:15:52.509Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:15:52.509Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Separar exemplo promocional de resultado medido e explicitar criterios de autorizacao.",
+      "hashAntes": "3a9711bca0d567390dc732303c35e1e13db4e7e3cc39357b82b8e1d0d032043c",
+      "hashDepois": "dc6688eaf212f292c7c5ce049cbb0224f5f80744c19291cec216a50721a89412",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-nuvem-2026-10.json"
+    }
   },
   {
     "titulo": "Dispositivos Misteriosos: O Futuro da Tecnologia nas Mãos de Gebbia?",
@@ -61414,13 +61489,25 @@
     "urlFonte": "https://www.infoq.com/news/2026/03/cloudflare-post-quantum-ipsec/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   },
   {
-    "titulo": "Nova Era na Nuvem: A Revolução da Virtualização Aninhada no AWS EC2",
-    "noticiaOriginal": "AWS Introduces Nested Virtualization on EC2 Instances",
+    "titulo": "Virtualização aninhada no EC2: requisitos antes de criar instâncias",
+    "noticiaOriginal": "Use nested virtualization to run hypervisors in Amazon EC2 instances",
     "url": "artigos/cloud/nova-era-na-nuvem-a-revolucao-da-virtualizacao-aninhada-no-aws-ec2.html",
     "data": "2026-03-07T12:52:19.346Z",
-    "dataFonte": "2026-03-07T12:34:00.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.infoq.com/news/2026/03/aws-ec2-nested-virtualization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nested-virtualization.html",
+    "seo": {
+      "description": "Compatibilidade, limitações do Windows e planejamento de operação antes de habilitar virtualização aninhada em uma instância EC2.",
+      "modifiedAt": "2026-10-10T13:15:52.509Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:15:52.509Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir requisito de hospedagem e orientacoes vencidas antes de provisionamento.",
+      "hashAntes": "b1b2e7bf8ee8060805cf62cf98a6bf64e56f463efc430e202a89bacaeebbd595",
+      "hashDepois": "b3dfed89c68f8eb7b469c842683b7676eaf4667bf04a9ee71e2947f3733774b6",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-nuvem-2026-10.json"
+    }
   },
   {
     "titulo": "A nova era do som: Sony WH-1000XM6 e o impacto na experiência auditiva",
@@ -63925,13 +64012,25 @@
     "urlFonte": "https://www.zdnet.com/article/orbitiny-portable-modular-unique-linux-desktop/"
   },
   {
-    "titulo": "Desbravando a Escalabilidade: Um Milhão de Sandboxes em um Só Servidor",
-    "noticiaOriginal": "QCon London 2026: Fixing the AI Infra Scale Problem by Stuffing 1M Sandboxes in a Single Server",
+    "titulo": "Um milhão de sandboxes em espera não é um milhão de tarefas simultâneas",
+    "noticiaOriginal": "Fixing the AI Infra Scale Problem by Stuffing 1M Sandboxes in a Single Server",
     "url": "artigos/cloud/desbravando-a-escalabilidade-um-milhao-de-sandboxes-em-um-so-servidor.html",
     "data": "2026-03-23T10:07:36.562Z",
-    "dataFonte": "2026-03-23T10:02:00.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.infoq.com/news/2026/03/qcon-million-sandboxes-server/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://www.infoq.com/presentations/unikraft-microvm-sandboxes-cloud-scaling/",
+    "seo": {
+      "description": "Como separar ambientes mantidos, tarefas concorrentes e fila ao interpretar a demonstração de microVMs apresentada por Felipe Huici.",
+      "modifiedAt": "2026-10-10T13:15:52.509Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:15:52.509Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Distinguir densidade em espera de capacidade concorrente e resultado de demonstracao.",
+      "hashAntes": "fd141b218549ec8f4fcce4f448fbb5dbbaa1facc1efc8417a669af1329c5da58",
+      "hashDepois": "8a0ba90dbafc5633633fa5f7124421219507212613714140f4476dc899758bca",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-nuvem-2026-10.json"
+    }
   },
   {
     "titulo": "Data Mesh: Uma Nova Perspectiva para a Gestão de Dados nas Empresas",
@@ -71005,13 +71104,25 @@
     "urlFonte": "https://www.zdnet.com/article/google-search-alternatives-no-ai/"
   },
   {
-    "titulo": "A fragilidade das plataformas: lições do incidente da Railway e Google Cloud",
-    "noticiaOriginal": "Google Cloud Suspends Railway's Production Account, Causing Eight-Hour Platform-Wide Outage",
+    "titulo": "Railway em maio de 2026: cargas ativas, rotas indisponíveis",
+    "noticiaOriginal": "Incident Report: May 19, 2026 - GCP Account Suspension",
     "url": "artigos/cloud/a-fragilidade-das-plataformas-licoes-do-incidente-da-railway-e-google-cloud.html",
     "data": "2026-05-30T11:26:12.550Z",
-    "dataFonte": "2026-05-30T10:03:00.000Z",
     "categoria": "Cloud",
-    "urlFonte": "https://www.infoq.com/news/2026/05/railway-gcp-account-outage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage",
+    "seo": {
+      "description": "O que o relatório da Railway permite concluir sobre o plano de controle e como planejar um ensaio de expiração de rotas.",
+      "modifiedAt": "2026-10-10T13:15:52.509Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T13:15:52.509Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Distinguir alcance de servico, recuperacao e incerteza sobre a causa da suspensao.",
+      "hashAntes": "f67a187a9ae6ca54904ae899c7fe44fc6e73ff0cfd7e615b3005b985246c6811",
+      "hashDepois": "a32ee19dffdeb7eefac48c17cc35cd3064bb3b49a63587aecc0c54261a117b45",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-nuvem-2026-10.json"
+    }
   },
   {
     "titulo": "Desafios e Novas Oportunidades: O Futuro dos Navegadores na Era da IA",

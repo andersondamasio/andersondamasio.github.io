@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>A Revolução dos Plugins: Automatizando o Desdobramento na Nuvem com AWS</title>
-<meta name="description" content="Recentemente, o mundo da computação em nuvem ganhou um novo aliado: os Agent Plugins da AWS. Essa novidade promete transformar a maneira como arquitetamos,...">
+<title>Agent Plugins da AWS: o que revisar antes de autorizar um deploy</title>
+<meta name="description" content="Revise destino, infraestrutura, credenciais, custos, dados e retorno antes de confirmar uma implantação preparada por agente.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/cloud/a-revolucao-dos-plugins-automatizando-o-desdobramento-na-nuvem-com-aws.html">
@@ -14,36 +14,36 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="A Revolução dos Plugins: Automatizando o Desdobramento na Nuvem com AWS">
-<meta property="og:description" content="Recentemente, o mundo da computação em nuvem ganhou um novo aliado: os Agent Plugins da AWS. Essa novidade promete transformar a maneira como arquitetamos,...">
+<meta property="og:title" content="Agent Plugins da AWS: o que revisar antes de autorizar um deploy">
+<meta property="og:description" content="Revise destino, infraestrutura, credenciais, custos, dados e retorno antes de confirmar uma implantação preparada por agente.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/cloud/a-revolucao-dos-plugins-automatizando-o-desdobramento-na-nuvem-com-aws.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2026-03-03T10:42:46.684Z">
-<meta property="article:modified_time" content="2026-03-03T10:42:46.684Z">
+<meta property="article:modified_time" content="2026-10-10T13:15:52.509Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A Revolução dos Plugins: Automatizando o Desdobramento na Nuvem com AWS">
-<meta name="twitter:description" content="Recentemente, o mundo da computação em nuvem ganhou um novo aliado: os Agent Plugins da AWS. Essa novidade promete transformar a maneira como arquitetamos,...">
+<meta name="twitter:title" content="Agent Plugins da AWS: o que revisar antes de autorizar um deploy">
+<meta name="twitter:description" content="Revise destino, infraestrutura, credenciais, custos, dados e retorno antes de confirmar uma implantação preparada por agente.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "A Revolução dos Plugins: Automatizando o Desdobramento na Nuvem com AWS",
-  "description": "Recentemente, o mundo da computação em nuvem ganhou um novo aliado: os Agent Plugins da AWS. Essa novidade promete transformar a maneira como arquitetamos,...",
+  "headline": "Agent Plugins da AWS: o que revisar antes de autorizar um deploy",
+  "description": "Revise destino, infraestrutura, credenciais, custos, dados e retorno antes de confirmar uma implantação preparada por agente.",
   "url": "https://www.andersondamasio.com.br/artigos/cloud/a-revolucao-dos-plugins-automatizando-o-desdobramento-na-nuvem-com-aws.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/cloud/a-revolucao-dos-plugins-automatizando-o-desdobramento-na-nuvem-com-aws.html"
   },
   "datePublished": "2026-03-03T10:42:46.684Z",
-  "dateModified": "2026-03-03T10:42:46.684Z",
+  "dateModified": "2026-10-10T13:15:52.509Z",
   "articleSection": "Cloud",
   "inLanguage": "pt-BR",
-  "wordCount": 531,
+  "wordCount": 356,
   "about": {
     "@type": "Thing",
     "name": "Cloud"
@@ -52,10 +52,10 @@
   "copyrightYear": 2026,
   "isBasedOn": {
     "@type": "CreativeWork",
-    "name": "AWS Launches Agent Plugins to Automate Cloud Deployment",
-    "url": "https://www.infoq.com/news/2026/03/aws-launches-agent-plugins/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "name": "Introducing Agent Plugins for AWS",
+    "url": "https://aws.amazon.com/blogs/developer/introducing-agent-plugins-for-aws/"
   },
-  "citation": "https://www.infoq.com/news/2026/03/aws-launches-agent-plugins/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "citation": "https://aws.amazon.com/blogs/developer/introducing-agent-plugins-for-aws/",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -114,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "A Revolução dos Plugins: Automatizando o Desdobramento na Nuvem com AWS",
+      "name": "Agent Plugins da AWS: o que revisar antes de autorizar um deploy",
       "item": "https://www.andersondamasio.com.br/artigos/cloud/a-revolucao-dos-plugins-automatizando-o-desdobramento-na-nuvem-com-aws.html"
     }
   ]
@@ -189,6 +189,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 .article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
 .article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
 .article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-body code { overflow-wrap: anywhere; } .article-body pre code { overflow-wrap: normal; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -215,48 +216,40 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
   </nav>
 </header>
 <main>
-<h1>A Revolução dos Plugins: Automatizando o Desdobramento na Nuvem com AWS</h1>
+<h1>Agent Plugins da AWS: o que revisar antes de autorizar um deploy</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 
 <p class="article-meta">Publicado em: 03/03/2026 07:42</p>
 
-<div class="article-body"><p>Recentemente, o mundo da computação em nuvem ganhou um novo aliado: os <strong>Agent Plugins</strong> da AWS. Essa novidade promete transformar a maneira como arquitetamos, implantamos e operamos aplicações na nuvem, trazendo um sopro de eficiência e inovação. Como um Arquiteto de Software com anos de experiência, sinto que essa ferramenta pode ser um divisor de águas, principalmente na forma como lidamos com o desdobramento de projetos.</p>
-<h2>Introdução</h2>
-<p>O desafio de integrar desenvolmento e operações nunca foi tão evidente. Muitos de nós já passamos pela frustração de ter um código brilhante, mas a implantação ser um verdadeiro pesadelo... É aí que entra o plugin <strong>deploy-on-aws</strong>, que aceita comandos em linguagem natural e gera pipelines completos, com recomendações de arquitetura e estimativas de custo. Uma verdadeira mão na roda para quem precisa escalar soluções sem perder tempo. Vamos explorar como isso funciona e o que isso significa para nós, desenvolvedores e arquitetos.</p>
-<h2>Como Funciona o Plugin Deploy-on-AWS?</h2>
-<p>O plugin deploy-on-aws é uma parte crucial do repositório open-source da AWS, projetado para aprimorar a experiência de desenvolvimento. Ele opera em cinco etapas:</p>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T13:15:52.509Z">10/10/2026</time>: atribuições, limites e orientações corrigidos com fontes; a data da publicação original foi preservada.</p>
+<p>Um agente capaz de criar infraestrutura precisa entregar algo que possa ser revisado antes de receber autorização para aplicar mudanças. A pergunta útil não é apenas quanto tempo ele economiza, mas o que será criado, com quais permissões e como desfazer uma alteração malsucedida.</p>
+<h2>O fluxo descrito pela AWS</h2>
+<p class="fato-plugin">No <a href="https://aws.amazon.com/blogs/developer/introducing-agent-plugins-for-aws/">anúncio de 17 de fevereiro de 2026</a>, a AWS descreve o plugin <code>deploy-on-aws</code> com análise do projeto, recomendação de serviços, estimativa de custo, geração de CDK ou CloudFormation e implantação após confirmação. O tempo inferior a dez minutos citado na publicação pertence ao exemplo do fornecedor; não é uma medição deste site nem garantia para outros projetos.</p>
+<div class="contribuicao-editorial">
+<h2>O que exigir antes de confirmar</h2>
+<p>A ficha abaixo é uma proposta de revisão de uma mudança gerada por agente. Ela não foi executada em uma conta AWS:</p>
 <ol>
-    <li><strong>Análise:</strong> O plugin examina o código para identificar frameworks, bancos de dados e dependências.</li>
-    <li><strong>Recomendação:</strong> Sugere os serviços AWS mais adequados, justificando suas escolhas.</li>
-    <li><strong>Estimativa:</strong> Apresenta uma previsão de custos mensais com dados de preços em tempo real.</li>
-    <li><strong>Geração:</strong> Cria código de infraestrutura usando CDK ou CloudFormation.</li>
-    <li><strong>Desdobramento:</strong> Realiza a implantação após a confirmação do usuário.</li>
+<li><strong>Alvo:</strong> conta, região e ambiente explicitamente identificados. Se o agente não consegue demonstrar o destino da mudança, não autorize a aplicação.</li>
+<li><strong>Diferença de infraestrutura:</strong> recursos criados, alterados, substituídos e removidos. Examine especialmente substituição de banco, abertura de rede e políticas de retenção.</li>
+<li><strong>Credenciais:</strong> identidade que realizará o deploy, permissões necessárias e onde os segredos ficarão. Não cole credenciais de produção no texto de uma tarefa.</li>
+<li><strong>Estimativa:</strong> hipóteses de tráfego, armazenamento e componentes cobrados, além do teto autorizado. Registre o que não foi incluído.</li>
+<li><strong>Dados e retorno:</strong> migrações previstas, compatibilidade da versão anterior, backup e condição de restauração. Reverter arquivos de infraestrutura não deve ser tratado como prova de reversão dos dados.</li>
+<li><strong>Aceite:</strong> uma operação do usuário para validar depois da mudança, quem observa o resultado e quando interromper o procedimento.</li>
 </ol>
-<p>Imagine um cenário em que você digita "deploy this Express app to AWS". O plugin faz todo o trabalho, desde a análise até a implantação. Isso pode reduzir horas de configuração manual para menos de 10 minutos! É incrível pensar no tempo que podemos economizar e na agilidade que isso traz para o desenvolvimento.</p>
-<h2>Dicas Avançadas para Maximizar o Uso do Plugin</h2>
-<p>Embora os plugins sejam uma ferramenta poderosa, é essencial não deixar de lado o <strong>julgamento humano</strong>. Aqui estão algumas dicas que podem ajudar a tirar o máximo proveito dessa nova funcionalidade:</p>
-<ul>
-    <li><strong>Revisão de Código:</strong> Sempre revise o código gerado antes de desdobrar... Segurança e custos devem ser sua prioridade..</li>
-    <li><strong>Princípio da Menor Privilégio:</strong> Ao configurar credenciais AWS, siga este princípio para minimizar riscos.</li>
-    <li><strong>Testes de Segurança:</strong> Utilize ferramentas de varredura para garantir que o código de infraestrutura esteja em conformidade com as melhores práticas.</li>
-    <li><strong>Documentação:</strong> Mantenha uma boa documentação das decisões tomadas e das alterações realizadas. Isso é fundamental para a formalização do conhecimento organizacional.</li>
-</ul>
-<p>Essas práticas não só melhoram a segurança e a eficiência, mas também ajudam a construir um ambiente de desenvolvimento mais robusto e confiável.</p>
-<h2>Conclusão</h2>
-<p>A chegada dos Agent Plugins da AWS é um sinal claro de que estamos avançando em direção a um futuro onde a automação e a inteligência artificial serão fundamentais no desenvolvimento e na operação de aplicações. A integração dessa ferramenta pode reduzir significativamente a fricção entre escrever código e implantá-lo em escala. No entanto, nunca devemos esquecer que o <strong>julgamento humano</strong> ainda é insubstituível. Vamos abraçar essa nova era, mas com cautela! A combinação de automação com expertise humana é o que realmente fará a diferença.</p>
-<p>Então, o que você está esperando? Experimente os plugins e veja como eles podem transformar seu fluxo de trabalho!</p>
-<p>
-<p></p></div>
+<p>Associe a confirmação à versão exata do plano revisado. Se novos recursos ou permissões aparecerem depois, revise novamente. Um relatório de varredura pode ajudar a encontrar problemas, mas sua aprovação isolada não responde às perguntas sobre dados, custos e funcionamento.</p>
+</div>
+<p class="limites-editoriais">Revisão da documentação, sem instalação do plugin, acesso a credenciais, implantação ou teste de produtividade. O roteiro não certifica código gerado e não substitui a revisão da equipe responsável pelo ambiente.</p>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> <a href="https://www.infoq.com/news/2026/03/aws-launches-agent-plugins/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" rel="noopener noreferrer">AWS Launches Agent Plugins to Automate Cloud Deployment</a> Data da fonte registrada: 03/03/2026.</p>
+<p><strong>Fonte principal:</strong> <a href="https://aws.amazon.com/blogs/developer/introducing-agent-plugins-for-aws/" rel="noopener noreferrer">Introducing Agent Plugins for AWS</a></p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
 <section class="article-source" aria-labelledby="article-source-title">
 <h2 id="article-source-title">Fonte consultada</h2>
-<p>Este artigo foi inspirado em: <a href="https://www.infoq.com/news/2026/03/aws-launches-agent-plugins/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global" target="_blank" rel="noopener noreferrer">AWS Launches Agent Plugins to Automate Cloud Deployment</a>.</p>
+<p>Este artigo foi inspirado em: <a href="https://aws.amazon.com/blogs/developer/introducing-agent-plugins-for-aws/" target="_blank" rel="noopener noreferrer">Introducing Agent Plugins for AWS</a>.</p>
 </section>
 
 <section class="related-articles" aria-labelledby="related-articles-title">
@@ -264,7 +257,7 @@ footer { text-align: center; margin-top: 3rem; font-size: 0.95rem; color: var(--
 <ul>
 <li><a href="/artigos/cloud/acelerando-a-criacao-de-nos-no-gke-uma-revolucao-nas-nuvens.html">Acelerando a Criação de Nós no GKE: Uma Revolução nas Nuvens</a><span>Cloud</span></li>
 <li><a href="/artigos/cloud/a-vulnerabilidade-da-infraestrutura-digital-em-tempos-de-conflito.html">A vulnerabilidade da infraestrutura digital em tempos de conflito</a><span>Cloud</span></li>
-<li><a href="/artigos/cloud/nova-era-na-nuvem-a-revolucao-da-virtualizacao-aninhada-no-aws-ec2.html">Nova Era na Nuvem: A Revolução da Virtualização Aninhada no AWS EC2</a><span>Cloud</span></li>
+<li><a href="/artigos/cloud/nova-era-na-nuvem-a-revolucao-da-virtualizacao-aninhada-no-aws-ec2.html">Virtualização aninhada no EC2: requisitos antes de criar instâncias</a><span>Cloud</span></li>
 <li><a href="/artigos/cloud/local-uploads-a-revolucao-silenciosa-na-upload-de-dados-na-nuvem.html">Local Uploads: A Revolução Silenciosa na Upload de Dados na Nuvem</a><span>Cloud</span></li>
 </ul>
 </section>
