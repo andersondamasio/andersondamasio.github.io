@@ -12137,13 +12137,25 @@
     "urlFonte": "https://www.zdnet.com/article/ai-agents-will-threaten-humans-to-achieve-their-goals-anthropic-report-finds/"
   },
   {
-    "titulo": "A revolução da música no seu bolso: o que a nova atualização do Gemini traz para os fãs",
-    "noticiaOriginal": "Your Android phone just got a major Gemini upgrade for music fans - and it's free",
+    "titulo": "Identificar músicas no Android: caminhos pelo Google app e Gemini",
+    "noticiaOriginal": "Descubra qual música está tocando perto de você",
     "url": "artigos/inteligencia-artificial/a-revolucao-da-musica-no-seu-bolso-o-que-a-nova-atualizacao-do-gemini-traz-para-os-fas.html",
     "data": "2025-06-23T19:15:44.136Z",
-    "dataFonte": "2025-06-23T19:00:40.000Z",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/your-android-phone-just-got-a-major-gemini-upgrade-for-music-fans-and-its-free/"
+    "urlFonte": "https://support.google.com/websearch/answer/7554088?hl=pt-BR",
+    "seo": {
+      "description": "Entenda os acessos documentados à pesquisa de músicas e como registrar uma tentativa, sem confundir um resultado sugerido com precisão comprovada.",
+      "modifiedAt": "2026-10-10T06:13:50.811Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T06:13:50.811Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover falsa experiencia de reconhecimento, garantia de precisao e generalizacao para todos os aparelhos Android.",
+      "hashAntes": "77bdc536cadf8bbc96a5020a8be3caf4ba2c95772df8008532174cb67c9d45ec",
+      "hashDepois": "7302ea640e759a6331cd0c4114f400c090e043ab89686218be08b0938600d545",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-testes-produtos-2026-10.json"
+    }
   },
   {
     "titulo": "Desvendando as Novidades do .NET MAUI no iOS 26: O que Esperar da Interface de Vidro Líquido?",
@@ -20129,15 +20141,6 @@
     "urlFonte": "https://www.zdnet.com/article/microsoft-rolls-out-gpt-5-across-its-copilot-suite-heres-where-youll-find-it/"
   },
   {
-    "titulo": "A revolução da voz: Como o novo ChatGPT Voice pode transformar a interação com IA",
-    "noticiaOriginal": "This free GPT-5 feature is flying under the radar - but it's a game changer for me",
-    "url": "artigos/inteligencia-artificial/a-revolucao-da-voz-como-o-novo-chatgpt-voice-pode-transformar-a-interacao-com-ia.html",
-    "data": "2025-08-08T13:40:21.891Z",
-    "dataFonte": "2025-08-08T13:27:00.000Z",
-    "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/this-free-gpt-5-feature-is-flying-under-the-radar-but-its-a-game-changer-for-me/"
-  },
-  {
     "titulo": "Como Carregar Seu Tablet Sem Danificá-lo: Dicas de Um Arquiteto de Software",
     "noticiaOriginal": "How you're charging your tablet is slowly killing it - 3 methods to avoid (and the right way)",
     "url": "artigos/tecnologia/como-carregar-seu-tablet-sem-danifica-lo-dicas-de-um-arquiteto-de-software.html",
@@ -20723,13 +20726,25 @@
     "urlFonte": "https://www.bbc.com/news/articles/c4gzzlp7p3po?at_medium=RSS&at_campaign=rss"
   },
   {
-    "titulo": "A era do Microsoft Lens: alternativas e o impacto da mudança",
-    "noticiaOriginal": "Microsoft to shut down Lens and push users to Copilot - but you have other options",
+    "titulo": "Microsoft Lens encerrado: o que conferir antes de migrar as digitalizações",
+    "noticiaOriginal": "Retirement of Microsoft Lens",
     "url": "artigos/inteligencia-artificial/a-era-do-microsoft-lens-alternativas-e-o-impacto-da-mudanca.html",
     "data": "2025-08-11T14:22:52.931Z",
-    "dataFonte": "2025-08-11T14:03:00.000Z",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/microsoft-to-shut-down-lens-and-push-users-to-copilot-but-you-have-other-options/"
+    "urlFonte": "https://support.microsoft.com/en-us/lens/retirement-of-microsoft-lens",
+    "seo": {
+      "description": "Confira o cronograma oficial do Lens, a alternativa OneDrive e uma ficha para avaliar acesso, formato e destino dos documentos antes de migrar.",
+      "modifiedAt": "2026-10-10T06:13:50.811Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T06:13:50.811Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir cronograma antigo, substituto e recomendacoes baseadas em alegacao de teste pessoal nao comprovado.",
+      "hashAntes": "7ecd9d0732e4a23da681bb163c3e83d4bbf49857965112b17f7084f668bbf623",
+      "hashDepois": "fdef17a065ba4f2f4171363018096fe1d62bf96551bd771161c3a2f405f6f164",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-testes-produtos-2026-10.json"
+    }
   },
   {
     "titulo": "A revolução da saúde: como a IA pode transformar o monitoramento cerebral nas UTIs",
@@ -24111,13 +24126,25 @@
     "urlFonte": "https://martinfowler.com/articles/202508-ai-thoughts.html"
   },
   {
-    "titulo": "Copilot no Outlook: Vale a pena ou é só mais um \"brinquedo\" de IA?",
-    "noticiaOriginal": "7 ways to use Copilot in classic Outlook - and why I ultimately turned it off",
+    "titulo": "Copilot no Outlook: critérios para avaliar rascunhos e resumos",
+    "noticiaOriginal": "Draft an email message with Copilot in Outlook",
     "url": "artigos/inteligencia-artificial/copilot-no-outlook-vale-a-pena-ou-e-so-mais-um-brinquedo-de-ia.html",
     "data": "2025-08-28T15:19:49.700Z",
-    "dataFonte": "2025-08-28T15:16:00.000Z",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/7-ways-to-use-copilot-in-classic-outlook-and-why-i-ultimately-turned-it-off/"
+    "urlFonte": "https://support.microsoft.com/en-us/outlook/copilot-pages/draft-an-email-message-with-copilot-in-outlook",
+    "seo": {
+      "description": "Confira requisitos do Outlook clássico e um procedimento proposto para avaliar fatos, compromissos e esforço de revisão, sem enviar mensagens de teste.",
+      "modifiedAt": "2026-10-10T06:13:50.811Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T06:13:50.811Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover relato pessoal de teste e orientacao de desativacao nao sustentada; substituir recomendacao por criterios verificaveis.",
+      "hashAntes": "90dd9a60f22e5b1c6885b2e4737c212f166eba1995ededa52aa5d7c75dba5e3a",
+      "hashDepois": "4ab117489bb6b0a18e9171dad7ebaf13b2df815991219eca155ca5ac7a765b58",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-testes-produtos-2026-10.json"
+    }
   },
   {
     "titulo": "Um olhar crítico sobre a \"cringe\" da tecnologia: o impacto das IAs nas interações sociais",
@@ -62342,13 +62369,25 @@
     "urlFonte": "https://www.infoq.com/news/2026/03/google-bayesian-llm/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
   },
   {
-    "titulo": "A revolução da voz: como o ChatGPT pode transformar sua produtividade",
-    "noticiaOriginal": "I thought ChatGPT's voice mode was a gimmick - these 7 use cases changed my mind",
+    "titulo": "ChatGPT Voice e ditado: como revisar ideias antes de usar no trabalho",
+    "noticiaOriginal": "ChatGPT Voice",
     "url": "artigos/inteligencia-artificial/a-revolucao-da-voz-como-o-chatgpt-pode-transformar-sua-produtividade.html",
     "data": "2026-03-14T15:33:00.184Z",
-    "dataFonte": "2026-03-14T10:30:48.000Z",
     "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/chatgpt-voice-mode-tricks/"
+    "urlFonte": "https://learn.chatgpt.com/docs/features/voice",
+    "seo": {
+      "description": "Diferencie conversa por voz de ditado e use um exercício fictício para revisar fatos, hipóteses e permissões antes de aproveitar uma resposta no trabalho.",
+      "modifiedAt": "2026-10-10T06:13:50.811Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T06:13:50.811Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover falso teste pessoal, produtividade prometida e generalizacao de transcricao e disponibilidade; distinguir voz de ditado.",
+      "hashAntes": "e7a6d99b8094624bb05b27687d3b02cde4efe09d40682d8e185ea25f601a7af2",
+      "hashDepois": "14e8f9c1ad8f0f676d7b18ce965625cb2cc1673815a55265645b528bdcbb01a4",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-testes-produtos-2026-10.json"
+    }
   },
   {
     "titulo": "Demissões em Massa: A Revolução do Trabalho na Era da IA",
@@ -62640,15 +62679,6 @@
     "dataFonte": "2026-03-16T01:01:00.000Z",
     "categoria": "Tecnologia",
     "urlFonte": "https://www.zdnet.com/article/lg-s95tr-amazon-deal/"
-  },
-  {
-    "titulo": "A revolução da produtividade com o ChatGPT: como a voz pode ser sua aliada",
-    "noticiaOriginal": "7 surprisingly useful ways to use ChatGPT's voice mode, from a former skeptic",
-    "url": "artigos/inteligencia-artificial/a-revolucao-da-produtividade-com-o-chatgpt-como-a-voz-pode-ser-sua-aliada.html",
-    "data": "2026-03-16T10:11:21.962Z",
-    "dataFonte": "2026-03-16T10:00:31.000Z",
-    "categoria": "Inteligência Artificial",
-    "urlFonte": "https://www.zdnet.com/article/chatgpt-voice-mode-tricks/"
   },
   {
     "titulo": "Como otimizar sua Roku TV: dicas que vão além do básico",

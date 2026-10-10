@@ -1,0 +1,222 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T06:13:50.811Z",
+  "base": "39e3bc6feeb3d13485cc826cf3af6242a165e654",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "experimentosExecutados": false,
+  "escopo": "Quatro correcoes de alegacoes de testes e duas consolidacoes de voz com leitura individual. Sem noindex em massa, aprovacao de rascunho, compra ou teste de produto.",
+  "datasDasFontes": "Documentacao consultada nesta revisao; nao ha data de noticia inferida. Cronograma do Lens atribuido a fonte atual, sem apagar a data original do artigo.",
+  "pendentesRelacionadas": [
+    {
+      "url": "artigos/desenvolvimento-de-software/a-despedida-do-microsoft-lens-o-que-a-inteligencia-artificial-nos-ensina-sobre-simplicidade.html",
+      "motivo": "Leitura identificou indicacao antiga de Copilot e inferencias sobre intencoes da Microsoft; exige correcao contextual do recorte de design, sem aprovacao nesta etapa."
+    }
+  ],
+  "artigos": [
+    {
+      "url": "artigos/inteligencia-artificial/a-era-do-microsoft-lens-alternativas-e-o-impacto-da-mudanca.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A era do Microsoft Lens: alternativas e o impacto da mudança",
+        "data": "2025-08-11T14:22:52.931Z",
+        "corpoHash": "7ecd9d0732e4a23da681bb163c3e83d4bbf49857965112b17f7084f668bbf623",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/microsoft-to-shut-down-lens-and-push-users-to-copilot-but-you-have-other-options/",
+          "titulo": "Microsoft to shut down Lens and push users to Copilot - but you have other options",
+          "data": "2025-08-11T14:03:00.000Z"
+        }
+      },
+      "motivo": "Corrigir cronograma antigo, substituto e recomendacoes baseadas em alegacao de teste pessoal nao comprovado.",
+      "evidencia": "Leitura integral encontrou testei e aprovei, retirada em setembro/novembro/dezembro e recomendacao de Copilot. A fonte primaria atual informa janeiro/fevereiro/marco de 2026, OneDrive e limitacao de gravacao local.",
+      "depois": {
+        "titulo": "Microsoft Lens encerrado: o que conferir antes de migrar as digitalizações",
+        "descricao": "Confira o cronograma oficial do Lens, a alternativa OneDrive e uma ficha para avaliar acesso, formato e destino dos documentos antes de migrar.",
+        "corpoHash": "fdef17a065ba4f2f4171363018096fe1d62bf96551bd771161c3a2f405f6f164"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-encerramento",
+          "fonte": "https://support.microsoft.com/en-us/lens/retirement-of-microsoft-lens",
+          "consultadoEm": "2026-10-10T06:13:50.811Z",
+          "textoHash": "a0e491dec84e0866fa64ec7bdb031915ab97b815dc38c49532cc9de9da719cd3"
+        },
+        {
+          "seletor": ".fato-alternativa",
+          "fonte": "https://support.microsoft.com/en-us/lens/retirement-of-microsoft-lens",
+          "consultadoEm": "2026-10-10T06:13:50.811Z",
+          "textoHash": "0b6422b22dfa303e098711d5d7b5db8a0826022f75deb726ac93c6020298c37d"
+        }
+      ],
+      "pergunta": "O que conferir antes de migrar capturas do Lens para outro aplicativo?",
+      "publico": "Pessoas responsaveis por digitalizar e guardar documentos",
+      "sobreposicao": "Duas paginas Lens lidas. A outra discute simplicidade de produto, mas tambem tem indicacao antiga de Copilot; ficou registrada como correcao pendente, sem aprovacao ou retirada automatica.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-da-musica-no-seu-bolso-o-que-a-nova-atualizacao-do-gemini-traz-para-os-fas.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A revolução da música no seu bolso: o que a nova atualização do Gemini traz para os fãs",
+        "data": "2025-06-23T19:15:44.136Z",
+        "corpoHash": "77bdc536cadf8bbc96a5020a8be3caf4ba2c95772df8008532174cb67c9d45ec",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/your-android-phone-just-got-a-major-gemini-upgrade-for-music-fans-and-its-free/",
+          "titulo": "Your Android phone just got a major Gemini upgrade for music fans - and it's free",
+          "data": "2025-06-23T19:00:40.000Z"
+        }
+      },
+      "motivo": "Remover falsa experiencia de reconhecimento, garantia de precisao e generalizacao para todos os aparelhos Android.",
+      "evidencia": "Leitura integral encontrou pelo que eu testei, comparacao de canto/reproducao nao executada e disponibilidade universal. Ajuda primaria distingue acessos a pesquisa e recurso de notificacao Pixel.",
+      "depois": {
+        "titulo": "Identificar músicas no Android: caminhos pelo Google app e Gemini",
+        "descricao": "Entenda os acessos documentados à pesquisa de músicas e como registrar uma tentativa, sem confundir um resultado sugerido com precisão comprovada.",
+        "corpoHash": "7302ea640e759a6331cd0c4114f400c090e043ab89686218be08b0938600d545"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-pesquisa",
+          "fonte": "https://support.google.com/websearch/answer/7554088?hl=pt-BR",
+          "consultadoEm": "2026-10-10T06:13:50.811Z",
+          "textoHash": "d5675b3c5e8ef2ea558bd244b24f9832bd469566ee7922f26c8cda3c59a822d1"
+        },
+        {
+          "seletor": ".fato-gemini",
+          "fonte": "https://support.google.com/websearch/answer/7554088?hl=pt-BR",
+          "consultadoEm": "2026-10-10T06:13:50.811Z",
+          "textoHash": "e0e0ac643aa7ef6147f2c466e7eab4e0b5b431356c89449e1506fa223a728c39"
+        }
+      ],
+      "pergunta": "Como iniciar e conferir uma tentativa de identificar musica no Android?",
+      "publico": "Usuarios que precisam distinguir disponibilidade e resultado da pesquisa",
+      "sobreposicao": "Busca por Gemini e musica no catalogo encontrou esta entrada. Nao certifica unicidade de todos os textos sobre audio.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-da-voz-como-o-chatgpt-pode-transformar-sua-produtividade.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A revolução da voz: como o ChatGPT pode transformar sua produtividade",
+        "data": "2026-03-14T15:33:00.184Z",
+        "corpoHash": "e7a6d99b8094624bb05b27687d3b02cde4efe09d40682d8e185ea25f601a7af2",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/chatgpt-voice-mode-tricks/",
+          "titulo": "I thought ChatGPT's voice mode was a gimmick - these 7 use cases changed my mind",
+          "data": "2026-03-14T10:30:48.000Z"
+        }
+      },
+      "motivo": "Remover falso teste pessoal, produtividade prometida e generalizacao de transcricao e disponibilidade; distinguir voz de ditado.",
+      "evidencia": "Leitura de tres textos sobre voz do ChatGPT identificou mesmos usos genericos. Documentacao primaria atual do desktop delimita disponibilidade e distingue ditado revisavel de conversa ao vivo.",
+      "depois": {
+        "titulo": "ChatGPT Voice e ditado: como revisar ideias antes de usar no trabalho",
+        "descricao": "Diferencie conversa por voz de ditado e use um exercício fictício para revisar fatos, hipóteses e permissões antes de aproveitar uma resposta no trabalho.",
+        "corpoHash": "14e8f9c1ad8f0f676d7b18ce965625cb2cc1673815a55265645b528bdcbb01a4"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-voz",
+          "fonte": "https://learn.chatgpt.com/docs/features/voice",
+          "consultadoEm": "2026-10-10T06:13:50.811Z",
+          "textoHash": "840d82a6db8896ed790ed6da19e746d8e7d6592351d9eccabed3954965a72535"
+        },
+        {
+          "seletor": ".fato-ditado",
+          "fonte": "https://learn.chatgpt.com/docs/prompting",
+          "consultadoEm": "2026-10-10T06:13:50.811Z",
+          "textoHash": "f80e57c2daa605297d25c51ed86310c4bc55f79da8d9ed4fcd7834622674481b"
+        }
+      ],
+      "pergunta": "Como organizar ideias por voz sem transformar hipoteses em decisoes de trabalho?",
+      "publico": "Profissionais que avaliam entrada por voz e revisao de informacoes",
+      "sobreposicao": "Tres textos lidos integralmente. Dois cobrem o mesmo uso de voz para produtividade e recebem destino direto neste guia; copia recuperavel preserva suas versoes anteriores.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/copilot-no-outlook-vale-a-pena-ou-e-so-mais-um-brinquedo-de-ia.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Copilot no Outlook: Vale a pena ou é só mais um \"brinquedo\" de IA?",
+        "data": "2025-08-28T15:19:49.700Z",
+        "corpoHash": "90dd9a60f22e5b1c6885b2e4737c212f166eba1995ededa52aa5d7c75dba5e3a",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/7-ways-to-use-copilot-in-classic-outlook-and-why-i-ultimately-turned-it-off/",
+          "titulo": "7 ways to use Copilot in classic Outlook - and why I ultimately turned it off",
+          "data": "2025-08-28T15:16:00.000Z"
+        }
+      },
+      "motivo": "Remover relato pessoal de teste e orientacao de desativacao nao sustentada; substituir recomendacao por criterios verificaveis.",
+      "evidencia": "Leitura integral encontrou testei o Copilot e avaliacoes pessoais de carta e estilo. Fontes primarias descrevem requisitos, revisao do rascunho e referencias no resumo sem comprovar produtividade.",
+      "depois": {
+        "titulo": "Copilot no Outlook: critérios para avaliar rascunhos e resumos",
+        "descricao": "Confira requisitos do Outlook clássico e um procedimento proposto para avaliar fatos, compromissos e esforço de revisão, sem enviar mensagens de teste.",
+        "corpoHash": "4ab117489bb6b0a18e9171dad7ebaf13b2df815991219eca155ca5ac7a765b58"
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-requisitos",
+          "fonte": "https://support.microsoft.com/en-us/accessibility/copilot/use-microsoft-copilot-with-classic-outlook-with-screen-reader",
+          "consultadoEm": "2026-10-10T06:13:50.811Z",
+          "textoHash": "7bb275430b6397b645c5a252d65531f1b93deb5bf525ebc5bbe61886e2c44807"
+        },
+        {
+          "seletor": ".fato-rascunho",
+          "fonte": "https://support.microsoft.com/en-us/outlook/copilot-pages/draft-an-email-message-with-copilot-in-outlook",
+          "consultadoEm": "2026-10-10T06:13:50.811Z",
+          "textoHash": "ec5c20b7c5494e410a4d5e5ae858503cfc2c77645ffcc3972d6e42db63499c46"
+        },
+        {
+          "seletor": ".fato-resumo",
+          "fonte": "https://support.microsoft.com/en-us/outlook/copilot-pages/summarize-an-email-thread-with-copilot-in-outlook",
+          "consultadoEm": "2026-10-10T06:13:50.811Z",
+          "textoHash": "f35ed679d8fb0802edb367476332f3f37b4a127f1b77d6641460f283068c4da8"
+        }
+      ],
+      "pergunta": "Como avaliar um rascunho do Copilot no Outlook antes de usar mensagens reais?",
+      "publico": "Profissionais que redigem e revisam e-mails",
+      "sobreposicao": "Busca por Copilot e Outlook no titulo encontrou uma entrada. Nao e auditoria exaustiva de artigos sobre e-mail.",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-da-voz-como-o-novo-chatgpt-voice-pode-transformar-a-interacao-com-ia.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "A revolução da voz: Como o novo ChatGPT Voice pode transformar a interação com IA",
+        "data": "2025-08-08T13:40:21.891Z",
+        "corpoHash": "d127dd01aff635c2e7f44fb9e827dd33e7ddd20ff304c0ea6028006c19b85aee",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/this-free-gpt-5-feature-is-flying-under-the-radar-but-its-a-game-changer-for-me/",
+          "titulo": "This free GPT-5 feature is flying under the radar - but it's a game changer for me",
+          "data": "2025-08-08T13:27:00.000Z"
+        }
+      },
+      "motivo": "Consolidar introducao sobre uso de voz com promessas absolutas de compreensao e disponibilidade no guia documentado equivalente.",
+      "evidencia": "Leitura integral da origem e destino: ambos explicam conversa por voz e usos cotidianos; origem promete entender perfeitamente e nunca interromper, sem ensaio. Destino delimita disponibilidade, fluxo e revisao, sem substituir por tema diferente.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/7f2b0f49d3c29a8506b10c26df5ee194745cc0f95cb77171eddd1420cd2ca716.json",
+      "destinoEquivalente": "artigos/inteligencia-artificial/a-revolucao-da-voz-como-o-chatgpt-pode-transformar-sua-produtividade.html"
+    },
+    {
+      "url": "artigos/inteligencia-artificial/a-revolucao-da-produtividade-com-o-chatgpt-como-a-voz-pode-ser-sua-aliada.html",
+      "acao": "consolidar",
+      "antes": {
+        "titulo": "A revolução da produtividade com o ChatGPT: como a voz pode ser sua aliada",
+        "data": "2026-03-16T10:11:21.962Z",
+        "corpoHash": "ee8733e8a02c3ccae17e68ab522667db76a4c40bf7138f1844adc9c0d819a658",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/chatgpt-voice-mode-tricks/",
+          "titulo": "7 surprisingly useful ways to use ChatGPT's voice mode, from a former skeptic",
+          "data": "2026-03-16T10:00:31.000Z"
+        }
+      },
+      "motivo": "Consolidar orientacoes de voz/produtividade repetidas e comparacoes sem medicao em guia com limites e proposta verificavel.",
+      "evidencia": "Leitura integral: organizacao de ideias, entrevistas, traducao e multitarefa repetem a pagina mantida; alegacoes de feedback superior e transcricao geral nao sustentadas. Destino cobre avaliacao de uso profissional sem prometer ganhos.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/d63543aa2ba2741c2af313a44d22b6b813d08410d83e71f9ea151c2d05853cbc.json",
+      "destinoEquivalente": "artigos/inteligencia-artificial/a-revolucao-da-voz-como-o-chatgpt-pode-transformar-sua-produtividade.html"
+    }
+  ]
+}
