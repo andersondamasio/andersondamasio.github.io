@@ -708,6 +708,28 @@
       "arquivoHash": "3f640cbafeaad461691847b0c715b63884797614b3b0c8b6715c99bec88a88c2",
       "registrosHash": "6ac59fec9351cc502dc855e4fcebee1524700cfcd703f93b32b7af4973e91851",
       "aliases": []
+    },
+    {
+      "url": "artigos/cloud/a-nuvem-nao-e-so-um-lugar-e-a-salvacao-dos-seus-dados.html",
+      "acao": "atualizar",
+      "motivo": "Retirar preferencias e vivencia inventadas, promessas de protecao absoluta e comparacao comercial sem verificacao; orientar um ensaio delimitado de recuperacao.",
+      "evidencia": "Fontes e limites em dados/editorial/correcoes-backups-2026-10.json; roteiros propostos, sem execucao ou aprovacao humana.",
+      "revisao": {
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T05:20:15.394Z"
+      },
+      "conteudoHash": "6a32f0fdaeae00f42757aa378f6af360841ec6cb09b6fc467f5eac802925f1ea"
+    },
+    {
+      "url": "artigos/cloud/como-reduzir-seus-custos-com-armazenamento-em-nuvem-o-que-aprendi-com-decisoes-dificeis.html",
+      "acao": "atualizar",
+      "motivo": "Retirar experiencia pessoal e economia sem evidencia; corrigir recomendacao de backups mensais ou trimestrais sem RPO e separar custo de capacidade de recuperacao.",
+      "evidencia": "Fontes e limites em dados/editorial/correcoes-backups-2026-10.json; roteiros propostos, sem execucao ou aprovacao humana.",
+      "revisao": {
+        "responsavel": "Codex (correcao assistida)",
+        "em": "2026-10-10T05:20:15.394Z"
+      },
+      "conteudoHash": "059e39e5009e3f587145149d521d0170d47833aa0422a65728c189dc55a29a8c"
     }
   ]
 }

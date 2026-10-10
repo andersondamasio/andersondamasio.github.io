@@ -11,6 +11,41 @@ const relatorio = JSON.parse(ler('dados/editorial/curadoria-analogias-2026-10.js
 const manifesto = JSON.parse(ler('dados/indexacao.json'));
 const cadastro = JSON.parse(ler('titulos.json'));
 
+test('guias de backup preservam publicacao e indexacao, sem prometer testes ou vivencia inexistentes', () => {
+  const lote = JSON.parse(ler('dados/editorial/correcoes-backups-2026-10.json'));
+  assert.equal(lote.artigos.length, 2);
+  assert.equal(lote.revisaoHumana, false);
+  assert.equal(lote.testesDeRecuperacaoExecutados, false);
+  assert.equal(lote.metricasGoogle, null);
+  for (const a of lote.artigos) {
+    const $ = cheerio.load(ler(a.url));
+    const r = cadastro.find(r => r.url === a.url);
+    assert.equal(r.data, a.antes.data);
+    assert.equal(r.revisaoHumana, undefined);
+    assert.equal(r.correcaoEditorial.revisaoHumana, false);
+    assert.equal(r.seo.modifiedAt, lote.em);
+    assert.equal($('h1').text(), a.depois.titulo);
+    assert.equal($('meta[name=description]').attr('content'), a.depois.descricao);
+    assert.equal($('.nota-atualizacao time').attr('datetime'), lote.em);
+    assert.equal($('meta[property="article:published_time"]').attr('content'), a.antes.data);
+    assert.equal($('link[rel=canonical]').attr('href'), `https://www.andersondamasio.com.br/${a.url}`);
+    assert.doesNotMatch($('meta[name=robots]').attr('content'), /noindex/);
+    assert.equal(hashCorpoEditorial($('.article-body').html()), a.depois.corpoHash);
+    assert.equal(manifesto.decisoes.find(d => d.url === a.url).conteudoHash, a.depois.corpoHash);
+    assert.equal($('.contribuicao-editorial').length, 1);
+    assert.equal($('.limites-editoriais').length, 1);
+    assert.match($('.limites-editoriais').text(), /não (?:foi|foram).*test|não foi executado/i);
+    const outra = lote.artigos.find(b => b.url !== a.url);
+    assert.ok($('.article-body a').toArray().some(el => $(el).attr('href') === `/${outra.url}`));
+    for (const e of a.evidencias) {
+      assert.equal($(e.seletor).length, 1);
+      assert.equal(hashCorpoEditorial($(e.seletor).html()), e.textoHash);
+      assert.ok($(e.seletor).find('a').toArray().some(el => $(el).attr('href') === e.fonte));
+    }
+    assert.doesNotMatch($('.article-body').text(), /que aprendi ao longo da minha carreira|desafios que enfrentei|plano de backup mensal ou trimestral/i);
+  }
+});
+
 test('curadoria contextual tem decisoes individuais, sem inventar metricas ou aprovacao humana', () => {
   assert.equal(relatorio.revisaoHumana, false);
   assert.equal(relatorio.metricasGoogle, null);

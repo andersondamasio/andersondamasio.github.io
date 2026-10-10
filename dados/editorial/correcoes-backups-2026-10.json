@@ -1,0 +1,97 @@
+{
+  "em": "2026-10-10T05:20:15.394Z",
+  "base": "13157c48768d254cb886a3fba54aa4bb4d560853",
+  "responsavel": "Codex (correcao assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "testesDeRecuperacaoExecutados": false,
+  "datasDasFontes": "AWS sem data editorial identificada; 2024-12-30 no Google Cloud corresponde a Last reviewed/Last updated, nao a uma data de publicacao original comprovada.",
+  "escopo": "Duas correcoes factuais/editoriais em URLs existentes. Roteiros propostos, sem teste de provedor, restauracao real ou economia medida. Nao aprova artigo novo.",
+  "sobreposicao": {
+    "metodo": "Busca de titulos por backup/recuperacao/armazenamento e leitura dos tres textos de nuvem abaixo. As duas correcoes atendem perguntas distintas e se ligam por links contextuais; nao certifica unicidade de todo o acervo.",
+    "pendentes": [
+      "artigos/cloud/a-importancia-do-armazenamento-em-nuvem-em-2025-como-nao-perder-seus-dados-nunca-mais.html",
+      "artigos/cloud/qual-nuvem-vale-mais-a-pena-em-2025-dicas-para-escolher-o-armazenamento-ideal.html",
+      "artigos/cloud/como-escolher-o-servico-de-armazenamento-em-nuvem-ideal-em-2025-uma-analise-tecnica.html"
+    ],
+    "motivo": "Tambem contem garantias indevidas, opinioes atribuidas e/ou comparacoes comerciais sem sustentacao conferida. Necessitam decisao contextual propria; nenhuma consolidacao foi autorizada por esta leitura."
+  },
+  "artigos": [
+    {
+      "url": "artigos/cloud/a-nuvem-nao-e-so-um-lugar-e-a-salvacao-dos-seus-dados.html",
+      "antes": {
+        "titulo": "A nuvem não é só um lugar, é a salvação dos seus dados",
+        "data": "2025-09-25T03:39:35.449Z",
+        "corpoHash": "c2c669369dfc4346d8deff702d4972fb283bdd8a7d0ee8713a824ee545fffc2a",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/why-a-good-cloud-service-is-non-negotiable-in-2025-and-7-i-actually-trust/",
+          "titulo": "Why a good cloud service is non-negotiable in 2025 - and 7 I actually trust",
+          "data": "2025-09-25T02:00:34.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "Backup em nuvem: como verificar se seus dados são recuperáveis",
+        "descricao": "Um roteiro proposto com arquivos fictícios para conferir versão, acesso e tempo de restauração, sem prometer proteção absoluta nem avaliar provedores.",
+        "corpoHash": "6a32f0fdaeae00f42757aa378f6af360841ec6cb09b6fc467f5eac802925f1ea"
+      },
+      "motivo": "Retirar preferencias e vivencia inventadas, promessas de protecao absoluta e comparacao comercial sem verificacao; orientar um ensaio delimitado de recuperacao.",
+      "publico": "Profissionais responsaveis por arquivos e recuperacao de dados",
+      "pergunta": "Como verificar se a copia guardada pode ser recuperada e utilizada?",
+      "objetivo": "Avaliar requisitos e evidencias antes de recomendar armazenamento ou alterar backups.",
+      "evidencias": [
+        {
+          "seletor": ".fato-recuperacao",
+          "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/rel_backing_up_data_periodic_recovery_testing_data.html",
+          "secao": "Desired outcome e common anti-patterns",
+          "consultadoEm": "2026-10-10T05:20:15.394Z",
+          "textoHash": "0355127c1ee445bb04cf5b53708fe93993e0753590e4ecbf6ab18e7c3350959c"
+        },
+        {
+          "seletor": ".fato-objetivos",
+          "fonte": "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+          "secao": "Basics of DR planning, definicoes de RPO e RTO",
+          "consultadoEm": "2026-10-10T05:20:15.394Z",
+          "textoHash": "4075004b84eb7441aa2a65280befa8aadf9c4506131fffd103a708faef60921d"
+        }
+      ]
+    },
+    {
+      "url": "artigos/cloud/como-reduzir-seus-custos-com-armazenamento-em-nuvem-o-que-aprendi-com-decisoes-dificeis.html",
+      "antes": {
+        "titulo": "Como Reduzir Seus Custos com Armazenamento em Nuvem: O Que Aprendi com Decisões Difíceis",
+        "data": "2025-08-28T12:38:32.926Z",
+        "corpoHash": "df98744b74a62de88a7544ae365d238a55e92df16083edb6c0dd72eab0e22876",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/how-i-cut-my-monthly-cloud-storage-bill-in-half-with-5-tough-decisions/",
+          "titulo": "How I cut my monthly cloud storage bill in half - with 5 tough decisions",
+          "data": "2025-08-28T12:18:00.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "Custos de backup: o que avaliar antes de reduzir a frequência",
+        "descricao": "Critérios para comparar custo, retenção e perda aceitável antes de alterar backups, com cenário hipotético e sem recomendar intervalos genéricos.",
+        "corpoHash": "059e39e5009e3f587145149d521d0170d47833aa0422a65728c189dc55a29a8c"
+      },
+      "motivo": "Retirar experiencia pessoal e economia sem evidencia; corrigir recomendacao de backups mensais ou trimestrais sem RPO e separar custo de capacidade de recuperacao.",
+      "publico": "Profissionais responsaveis por arquivos e recuperacao de dados",
+      "pergunta": "Que requisitos conferir antes de reduzir custos ou frequencia de backup?",
+      "objetivo": "Avaliar requisitos e evidencias antes de recomendar armazenamento ou alterar backups.",
+      "evidencias": [
+        {
+          "seletor": ".fato-frequencia",
+          "fonte": "https://docs.cloud.google.com/architecture/framework/reliability/perform-testing-for-recovery-from-data-loss",
+          "secao": "Schedule regular and frequent backups; Verify backup consistency; Principle overview",
+          "consultadoEm": "2026-10-10T05:20:15.394Z",
+          "textoHash": "93f521c7ccbc1530b9f722c1511cc8af8ec1c60e00468cb4734dbfac24b2d778"
+        },
+        {
+          "seletor": ".fato-validacao",
+          "fonte": "https://docs.aws.amazon.com/wellarchitected/latest/framework/rel_backing_up_data_periodic_recovery_testing_data.html",
+          "secao": "Desired outcome e Implementation steps",
+          "consultadoEm": "2026-10-10T05:20:15.394Z",
+          "textoHash": "87e010ccb626f461581e588cb87a43090f696cf198195afc9f64de8d216c95d8"
+        }
+      ]
+    }
+  ]
+}
