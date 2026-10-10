@@ -50,9 +50,12 @@ function prepararVerificacao({ ler, lerBinario, revisao }) {
   const ausentes = controlaDocumentos ? ["EDITORIAL_OPERACAO", "SEO_MELHORIAS_REALIZADAS", "dados/humanizer-rules", "exemplos/reservoir-sampling/README", "exemplos/design-tokens/README", "exemplos/fila-cpp/README"]
     .flatMap(nome => [`${nome}.md`, `${nome}.html`]) : [];
   let manifestoTexto;
+  const arquivosNoindex = [];
   try { manifestoTexto = ler("dados/indexacao.json"); } catch { /* Revisions before the indexation manifest are still verifiable. */ }
   if (manifestoTexto) {
     const manifesto = JSON.parse(manifestoTexto);
+    arquivosNoindex.push(...manifesto.decisoes.filter(d => d.acao === "noindex").map(d => d.url));
+    arquivos.push(...arquivosNoindex);
     for (const d of manifesto.decisoes.filter(d => ["retirar", "consolidar"].includes(d.acao))) {
       const origens = [d.url, ...(d.aliases || []).map(a => a.url)];
       if (d.acao === "retirar") ausentes.push(...origens);
@@ -67,7 +70,7 @@ function prepararVerificacao({ ler, lerBinario, revisao }) {
     verificaveis.push({ arquivo: 'favicon.ico', hash: digestBinario(lerBinario('favicon.ico')), binario: true });
     ausentes.push('_assets/brand-ad.png');
   }
-  return { revisao, recentes, arquivosNavegacao, arquivosLeituras, ausentes: [...new Set(ausentes)], arquivos: verificaveis };
+  return { revisao, recentes, arquivosNavegacao, arquivosLeituras, arquivosNoindex, ausentes: [...new Set(ausentes)], arquivos: verificaveis };
 }
 
 async function verificarPublicacao({ esperado, fetchImpl = fetch, baseUrl = siteUrl, tentativas = 4, intervaloMs = 15000, esperar = ms => new Promise(resolve => setTimeout(resolve, ms)) }) {
@@ -120,6 +123,27 @@ async function verificarPublicacao({ esperado, fetchImpl = fetch, baseUrl = site
       if (/noindex/i.test($("meta[name='robots']").attr("content") || "")) problemas.push(`Noindex inesperado: ${arquivo}`);
       if (esperado.arquivosNavegacao?.includes(arquivo) && !locais.includes(canonical)) problemas.push(`Arquivo ausente do sitemap: ${arquivo}`);
       if (esperado.arquivosLeituras?.includes(arquivo) && !locais.includes(canonical)) problemas.push(`Leitura selecionada ausente do sitemap: ${arquivo}`);
+    }
+    const descoberta = new Set(["index.html", ...(esperado.arquivosNavegacao || []), "guias.html"]);
+    for (const arquivo of esperado.arquivosNoindex || []) {
+      const $ = cheerio.load(paginas.get(arquivo) || "");
+      const url = new URL(`/${arquivo}`, baseUrl).href;
+      if ($("link[rel='canonical']").attr("href") !== url) problemas.push(`Canonical de noindex incorreto: ${arquivo}`);
+      if (!/\bnoindex\b/i.test($("meta[name='robots' i]").attr("content") || "")) problemas.push(`Noindex esperado ausente: ${arquivo}`);
+      if (locais.includes(url) || itens.includes(url)) problemas.push(`Noindex em sitemap/RSS: ${arquivo}`);
+      for (const origem of descoberta) {
+        const pagina = cheerio.load(paginas.get(origem) || "");
+        const promovido = pagina("a[href]").toArray().some(a => {
+          try {
+            const destino = new URL(pagina(a).attr("href"), new URL(`/${origem}`, baseUrl));
+            destino.search = "";
+            destino.hash = "";
+            return destino.href === url;
+          }
+          catch { return false; }
+        });
+        if (promovido) problemas.push(`Noindex promovido em ${origem}: ${arquivo}`);
+      }
     }
     resultado = { revisaoEsperada: esperado.revisao, verificadoEm: new Date().toISOString(), tentativa, aceita: verificacoes.every(item => item.aceita) && !problemas.length, verificacoes, problemas };
     if (resultado.aceita) return resultado;

@@ -1,0 +1,279 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T04:45:26.250Z",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "escopo": "Leitura contextual de treze artigos. Tres correcoes, quatro noindex e seis retiradas recuperaveis. Nao e diagnostico de penalidade, prova de falta de trafego ou aprovacao de rascunho.",
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "artigos": [
+    {
+      "url": "artigos/a-conexao-entre-crap-towns-e-arquitetura-de-software-moderna.html",
+      "acao": "noindex",
+      "antes": {
+        "titulo": "A conexão entre \"Crap Towns\" e arquitetura de software moderna",
+        "data": "2025-04-26T01:20:11.934Z",
+        "corpoHash": "ff8c20a7c8f084170bf84db019d332d4048cb59b4526f9beb5588e5f9122bfaf",
+        "fonte": {
+          "titulo": "I wrote a book called \"Crap Towns\". It seemed funny at the time"
+        }
+      },
+      "motivo": "A leitura integral nao entrega analise do livro nem decisao tecnica; a comparacao com planejamento urbano apenas encadeia MVC, SOLID e microservicos.",
+      "evidencia": "O texto nao identifica passagem do livro, URL de fonte, caso de sistema, restricao ou resultado verificavel. Mantido acessivel como arquivo, sem promocao na busca; ausencia de metricas nao foi tratada como ausencia de trafego."
+    },
+    {
+      "url": "artigos/a-tendencia-do-cloth-na-arquitetura-de-software-moderna.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A tendência do Cloth na arquitetura de software moderna",
+        "data": "2025-04-26T06:22:58.685Z",
+        "corpoHash": "afd66ba0750e2a4a9cff5ad861ff3116f0c567a65019e09843764d7668d380bb",
+        "fonte": {
+          "titulo": "Cloth"
+        }
+      },
+      "motivo": "Corrigir a interpretacao de Cloth como tecido inteligente sustentavel: a fonte recuperada e uma demonstracao grafica no navegador.",
+      "evidencia": "O titulo do HTML identifica Verlet simulation test e a interface renderizada mostra Cloth Type, Points, Drag, Stiffness e Tear Resistance. O roteiro de avaliacao e proposto, nao um ensaio executado.",
+      "depois": {
+        "titulo": "Cloth no navegador: como avaliar uma simulação visual",
+        "descricao": "A demonstração de Cloth, seus controles visíveis e um roteiro proposto para comparar parâmetros e desempenho, sem confundir simulação com tecido inteligente.",
+        "corpoHash": "b5ef932823862e9502d2d14559b9246bb0e63a862cc5cac96067bfd57f87d158",
+        "fonte": {
+          "url": "https://www.cloudofoz.com/verlet-test/",
+          "titulo": "@cloudofoz - Verlet simulation test"
+        }
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-cloth",
+          "fonte": "https://www.cloudofoz.com/verlet-test/",
+          "consultadoEm": "2026-10-10T04:45:26.250Z",
+          "textoHash": "d0227b1e5a7689a859f384e20e3b9c9bc9edab050ed049bc5d7dc5f036754ed8"
+        }
+      ],
+      "sobreposicao": "Busca no catalogo por titulo e fonte encontrou uma entrada para este projeto/ensaio. Depuracao tem outros temas, mas nao foi identificado outro roteiro da mesma fonte. Nao e prova de unicidade de todo o acervo.",
+      "limites": ".limites-editoriais",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limitacaoFonte": "O cadastro original nao guardava URL. A fonte recuperada fundamenta esta correcao; datas desconhecidas nao foram inferidas. Nao houve reproducao de imagens nem aprovacao humana."
+    },
+    {
+      "url": "artigos/a-conexao-entre-a-ordem-de-materiais-radioativos-na-australia-e-arquitetura-de-software-moderna.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "A conexão entre a ordem de materiais radioativos na Austrália e arquitetura de software moderna",
+        "data": "2025-04-26T08:20:47.186Z",
+        "corpoHash": "33a3d577425a0e2135b2ea16e0fa1209c593238be80310af55eda29ef2a595a3",
+        "fonte": {
+          "titulo": "Australian who ordered radioactive materials walks away from court"
+        }
+      },
+      "motivo": "Retirar relato judicial sem fonte rastreavel que usa um caso sensivel apenas como pretexto para recomendacoes genericas de seguranca.",
+      "evidencia": "Leitura integral: menciona importacao de material radioativo e saida do tribunal, mas nao identifica processo, decisao, data ou documento. Autenticacao e criptografia aparecem sem sistema ou requisito concreto; nao ha substituto equivalente conferido.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/3a5ec6bffaa87c5dac4ad5b19a7048aa490f07eefcd8c3106cec3b65a5aee06b.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/o-fim-de-todos-os-problemas-de-prostata-uma-analise-tecnica-sobre-a-conexao-entre-essa-tendencia-e-praticas-modernas-de-arquitetura-de-software.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "O fim de todos os problemas de próstata? Uma análise técnica sobre a conexão entre essa tendência e práticas modernas de arquitetura de software",
+        "data": "2025-04-26T10:16:50.389Z",
+        "corpoHash": "3bb25c680eb53d9560a45dc6c1fe15382ef3ca7335e15f193185acf00a8496bd",
+        "fonte": {
+          "titulo": "An end to all this prostate trouble?"
+        }
+      },
+      "motivo": "Retirar promessa medica nao sustentada usada como analogia de arquitetura, sem orientacao tecnica concreta ou fonte clinica verificavel.",
+      "evidencia": "Leitura integral: titulo e abertura apresentam o fim dos problemas de prostata como possibilidade de descoberta sem estudo ou fonte; o restante associa saude a microservicos e automacao. Nao foi feito diagnostico medico nem identificada pagina equivalente para redirecionar.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/4d44d831c90abfccbc5ea9c2b10f72d15caa2eaa2e76b2ea1166ff9b5f9dae48.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/implicacoes-da-perda-de-mark-zuckerberg-no-caso-antitruste-do-facebook-para-a-arquitetura-de-software-moderna.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "Implicações da perda de Mark Zuckerberg no caso antitruste do Facebook para a arquitetura de software moderna",
+        "data": "2025-04-26T11:13:14.200Z",
+        "corpoHash": "17897744648a143468875af7b268cc6df789991391f154c8408d3fab9c1e28cd",
+        "fonte": {
+          "titulo": "Mark Zuckerberg personally lost the Facebook antitrust case"
+        }
+      },
+      "motivo": "Retirar alegacao de resultado judicial sem documentacao e inferencias de conformidade antitruste que nao sao demonstradas pelo artigo.",
+      "evidencia": "Leitura integral: transforma a manchete em derrota e decisao judicial, sem tribunal, processo, data ou fonte primaria. Nao ha evidencia tecnica que conecte a arquitetura proposta ao cumprimento legal. A curadoria nao afirma qual foi o desfecho real do processo.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/b23ea27c90457bbca8ce004a99ba00a5a7b1f61fe14d40efc1c6fd7397ca44d0.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/desafios-da-arquitetura-de-software-em-meio-a-perdas-financeiras-e-acoes-judiciais.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "Desafios da Arquitetura de Software em meio a perdas financeiras e ações judiciais",
+        "data": "2025-04-26T13:22:13.273Z",
+        "corpoHash": "5286e54b67fcaec08c0d4eb8a15fa06f48d446f626ec34af5b3255975f6d2bb2",
+        "fonte": {
+          "titulo": "Backblaze: Mounting Losses, Lawsuits, Sham Accounting, Insider Selling"
+        }
+      },
+      "motivo": "Retirar acusacoes financeiras e judiciais sem atribuicao rastreavel e prescricao de reestruturacao de software sem evidencia sobre o sistema da empresa.",
+      "evidencia": "Leitura integral: trata alegacoes sobre Backblaze como fatos sem URL, documentos ou resposta da companhia, depois recomenda mudancas arquiteturais. Nao se conclui que as alegacoes sejam verdadeiras ou falsas; o texto publicado nao as sustenta.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/6dd273732778c6c7674f3bac7e7658ccd3944703727e871ae3acecd94cce63e2.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Como a tendência \"Stuffed-Na(a)N\" se conecta à arquitetura de software moderna",
+        "data": "2025-04-26T17:13:15.149Z",
+        "corpoHash": "620313cd219f235757930df464c766cbcec7131ed1485f3414a3024bef8db8bf",
+        "fonte": {
+          "titulo": "Stuffed-Na(a)N: stuff your NaNs"
+        }
+      },
+      "motivo": "Corrigir a descricao como preenchimento de valores ausentes e as promessas de seguranca; distinguir codificacao em NaN, validacao e serializacao.",
+      "evidencia": "README do repositorio apresenta encode/decode de texto em NaNs, nao imputacao de valores. ECMAScript especifica Number.isNaN sem coercao e JSON de numeros nao finitos como null; exemplo proprio testavel separado da biblioteca.",
+      "depois": {
+        "titulo": "Stuffed-Na(a)N: dados em NaN e o limite da serialização JSON",
+        "descricao": "O projeto codifica texto em valores NaN; não preenche dados ausentes. Um exemplo Node.js verifica a perda dessa representação ao serializar em JSON.",
+        "corpoHash": "57e6acd3f765c98f19b804a9b77a6ab9d1ada7e2e077cd92fa52316c6c4b90a7",
+        "fonte": {
+          "url": "https://github.com/si14/stuffed-naan-js",
+          "titulo": "Stuffed-Na(a)N: stuff your NaNs"
+        }
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-naan",
+          "fonte": "https://github.com/si14/stuffed-naan-js",
+          "consultadoEm": "2026-10-10T04:45:26.250Z",
+          "textoHash": "10f79bf49f6438761a4628770e5d7f44484321c8905ddc37de8996e10768fcdd"
+        },
+        {
+          "seletor": ".fato-ecmascript",
+          "consultadoEm": "2026-10-10T04:45:26.250Z",
+          "fontes": [
+            "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.isnan",
+            "https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonproperty"
+          ],
+          "textoHash": "18806215d258d58b2e96e79092c9fad2776de8ecbfb02e8d7c87c36c977bff2e"
+        }
+      ],
+      "sobreposicao": "Busca no catalogo por titulo e fonte encontrou uma entrada para este projeto/ensaio. Depuracao tem outros temas, mas nao foi identificado outro roteiro da mesma fonte. Nao e prova de unicidade de todo o acervo.",
+      "limites": ".limites-editoriais",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limitacaoFonte": "O cadastro original nao guardava URL. A fonte recuperada fundamenta esta correcao; datas desconhecidas nao foram inferidas. Nao houve reproducao de imagens nem aprovacao humana."
+    },
+    {
+      "url": "artigos/a-importancia-da-flexibilidade-e-adaptabilidade-na-arquitetura-de-software-licoes-aprendidas-com-thank-you-for-holding-my-duck.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A importância da flexibilidade e adaptabilidade na arquitetura de software: lições aprendidas com \"Thank you for holding my duck\"",
+        "data": "2025-04-26T18:21:40.334Z",
+        "corpoHash": "d8f7b53023b6354f72256618aae9596ac85cba20a6db89dd72810ad2c40ef574",
+        "fonte": {
+          "titulo": "Thank you for holding my duck (2021)"
+        }
+      },
+      "motivo": "Corrigir a interpretacao como padrao de arquitetura flexivel: a fonte trata de explicar um problema a outra pessoa durante a resolucao.",
+      "evidencia": "Ensaio assinado por Geoffrey Irving, de 08/03/2021, atribui a narrativa a terceiros e nao estabelece a origem historica com certeza. O procedimento proposto aqui nao foi aplicado em equipe e nao e vivencia de Anderson.",
+      "depois": {
+        "titulo": "Explicar um problema para depurar: um roteiro de conversa técnica",
+        "descricao": "O relato de Geoffrey Irving sobre explicar problemas a um colega e um roteiro proposto de depuração com evidências, hipóteses e critério de encerramento.",
+        "corpoHash": "7d44b84a4f116eacb3941726b5560517ff7681b16fa4210d412d38cad165f35b",
+        "fonte": {
+          "url": "https://naml.us/post/thank-you-for-holding-my-duck/",
+          "titulo": "Thank you for holding my duck",
+          "data": "2021-03-08"
+        }
+      },
+      "evidencias": [
+        {
+          "seletor": ".fato-irving",
+          "fonte": "https://naml.us/post/thank-you-for-holding-my-duck/",
+          "consultadoEm": "2026-10-10T04:45:26.250Z",
+          "textoHash": "93c7f892cdd7c5474cc3e0ae907fa39aaf7bf57dc9a6e907e83e1037161d2569"
+        }
+      ],
+      "sobreposicao": "Busca no catalogo por titulo e fonte encontrou uma entrada para este projeto/ensaio. Depuracao tem outros temas, mas nao foi identificado outro roteiro da mesma fonte. Nao e prova de unicidade de todo o acervo.",
+      "limites": ".limites-editoriais",
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limitacaoFonte": "O cadastro original nao guardava URL. A fonte recuperada fundamenta esta correcao; datas desconhecidas nao foram inferidas. Nao houve reproducao de imagens nem aprovacao humana."
+    },
+    {
+      "url": "artigos/o-questionamento-do-status-sem-fins-lucrativos-da-wikipedia-e-sua-conexao-com-praticas-modernas-de-arquitetura-de-software.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "O questionamento do status sem fins lucrativos da Wikipedia e sua conexão com práticas modernas de arquitetura de software",
+        "data": "2025-04-26T04:20:13.134Z",
+        "corpoHash": "488fbb56cfb8e7c2424be47376e28df08b015e53a398ae687187ca7eade2ee60",
+        "fonte": {
+          "titulo": "Wikipedia’s nonprofit status questioned by D.C. U.S. attorney"
+        }
+      },
+      "motivo": "Retirar alegacoes juridicas e tributarias sem documento e conselhos de monetizacao que nao demonstram uma decisao de arquitetura.",
+      "evidencia": "Leitura integral: atribui acusacoes sobre reservas e isencao fiscal sem citar documento do procurador, mistura Wikipedia e fundacao e sugere assinaturas/anuncios como arquitetura. Nenhuma conclusao sobre regularidade tributaria foi verificada ou assumida nesta curadoria.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/7b4e52b8d815da9f8446df57a7b70a4c429fa7a1bee3d155376f60d0a824ce15.json",
+      "destinoEquivalente": null
+    },
+    {
+      "url": "artigos/the-friendship-recession-the-lost-art-of-connecting.html",
+      "acao": "noindex",
+      "antes": {
+        "titulo": "The Friendship Recession: The Lost Art of Connecting",
+        "data": "2025-04-26T12:31:45.891Z",
+        "corpoHash": "93e580647b807cde008a97d96f0cf221267474788d22de89c0be7ceb7ba9d95e",
+        "fonte": {
+          "titulo": "The Friendship Recession: The Lost Art of Connecting"
+        }
+      },
+      "motivo": "Analogia entre amizades e componentes de software nao entrega o tema anunciado nem um problema tecnico verificavel; manter apenas acesso direto por ora.",
+      "evidencia": "Leitura integral: crise de conexao humana e apresentada sem fonte identificada, seguida de Scrum, Kanban, microservicos e API-first sem caso, restricoes ou comparacao. Nao foi usada contagem de palavras nem trafego desconhecido como criterio."
+    },
+    {
+      "url": "artigos/barlow-s-principles-of-adult-behaviour.html",
+      "acao": "noindex",
+      "antes": {
+        "titulo": "Barlow's Principles of Adult Behaviour",
+        "data": "2025-04-26T19:13:01.178Z",
+        "corpoHash": "25883892083afa4917b324c7c032d37ad3517631ae0db064ccfb079b7bc05da3",
+        "fonte": {
+          "titulo": "Barlow's Principles of Adult Behaviour"
+        }
+      },
+      "motivo": "O texto nao apresenta os principios anunciados nem sua fonte; a transposicao generica para maturidade profissional nao cumpre a promessa do titulo.",
+      "evidencia": "Leitura integral: responsabilidade, autonomia e maturidade sao associadas a bugs e arquitetura sem passagem atribuida a Barlow ou exemplo especifico. Preservar o arquivo, mas retirar de sitemap e superficies de descoberta ate eventual revisao documental."
+    },
+    {
+      "url": "artigos/a-incerteza-dos-economistas-e-a-importancia-da-flexibilidade-na-arquitetura-de-software.html",
+      "acao": "noindex",
+      "antes": {
+        "titulo": "A incerteza dos economistas e a importância da flexibilidade na arquitetura de software",
+        "data": "2025-04-26T20:17:33.410Z",
+        "corpoHash": "66db30c5fdc4bf0036cda66a6b96913862c3a00dadac976b6e137b3350d4580d",
+        "fonte": {
+          "titulo": "Economists don't know what's going on"
+        }
+      },
+      "motivo": "A analogia com previsoes economicas nao sustenta as recomendacoes arquiteturais, que permanecem genericas e sem custos ou limites.",
+      "evidencia": "Leitura integral: usa a manchete sobre economistas sem fonte rastreavel e recomenda microservicos e flexibilidade sem cenario, alternativas ou evidencias. Mantido acessivel; nao ha decisao baseada em idade, tamanho ou ausencia de cliques."
+    },
+    {
+      "url": "artigos/como-remover-x-dos-passaportes-dos-eua-uma-abordagem-tecnica.html",
+      "acao": "retirar",
+      "antes": {
+        "titulo": "Como remover \"X\" dos passaportes dos EUA: uma abordagem técnica",
+        "data": "2025-05-05T21:16:36.058Z",
+        "corpoHash": "bcb87e513e7bcf140051d47e97ba32cf37efb53aa08f645bcbfae5a334ed89b7",
+        "fonte": {
+          "titulo": "Commenting on removing \"X\" on US passports",
+          "data": "2025-02-26T16:49:00.000Z"
+        }
+      },
+      "motivo": "Retirar orientacao sensivel sobre documentos oficiais com vivencia pessoal inventada e codigo que nao implementa o procedimento prometido.",
+      "evidencia": "Leitura integral: abertura afirma experiencia em producao nao confirmada; Passport.RemoveElement e PassportService.UpdatePassport sao esbocos vazios. Nenhum requisito oficial, contrato de API ou autorizacao sustenta o procedimento; nao redirecionar a um guia tecnico nao equivalente.",
+      "arquivoRecuperavel": "dados/editorial/arquivados/5b43a1c72466765f575b01ab1eb29a9481b6ac7a0b56b31531300353a69044ef.json",
+      "destinoEquivalente": null
+    }
+  ]
+}

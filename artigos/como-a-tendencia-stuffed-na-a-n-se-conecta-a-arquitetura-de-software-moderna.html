@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Como a tendência "Stuffed-Na(a)N" se conecta à arquitetura de software moderna</title>
-<meta name="description" content="Como a tendência &quot;Stuffed-Na(a)N&quot; se conecta à arquitetura de software modernaNos últimos anos, temos presenciado um aumento significativo na quantidade de...">
+<title>Stuffed-Na(a)N: dados em NaN e o limite da serialização JSON</title>
+<meta name="description" content="O projeto codifica texto em valores NaN; não preenche dados ausentes. Um exemplo Node.js verifica a perda dessa representação ao serializar em JSON.">
 <meta name="author" content="Anderson Damasio">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.andersondamasio.com.br/artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html">
@@ -14,42 +14,48 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Anderson Damasio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Como a tendência &quot;Stuffed-Na(a)N&quot; se conecta à arquitetura de software moderna">
-<meta property="og:description" content="Como a tendência &quot;Stuffed-Na(a)N&quot; se conecta à arquitetura de software modernaNos últimos anos, temos presenciado um aumento significativo na quantidade de...">
+<meta property="og:title" content="Stuffed-Na(a)N: dados em NaN e o limite da serialização JSON">
+<meta property="og:description" content="O projeto codifica texto em valores NaN; não preenche dados ausentes. Um exemplo Node.js verifica a perda dessa representação ao serializar em JSON.">
 <meta property="og:url" content="https://www.andersondamasio.com.br/artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html">
 <meta property="og:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 <meta property="og:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <meta property="article:published_time" content="2025-04-26T17:13:15.149Z">
-<meta property="article:modified_time" content="2025-04-26T17:13:15.149Z">
+<meta property="article:modified_time" content="2026-10-10T04:45:26.250Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Como a tendência &quot;Stuffed-Na(a)N&quot; se conecta à arquitetura de software moderna">
-<meta name="twitter:description" content="Como a tendência &quot;Stuffed-Na(a)N&quot; se conecta à arquitetura de software modernaNos últimos anos, temos presenciado um aumento significativo na quantidade de...">
+<meta name="twitter:title" content="Stuffed-Na(a)N: dados em NaN e o limite da serialização JSON">
+<meta name="twitter:description" content="O projeto codifica texto em valores NaN; não preenche dados ausentes. Um exemplo Node.js verifica a perda dessa representação ao serializar em JSON.">
 <meta name="twitter:image" content="https://www.andersondamasio.com.br/images/capa_anderson-damasio-16x9.jpg">
 <meta name="twitter:image:alt" content="Anderson Damasio - arquitetura de software e tecnologia">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Como a tendência \"Stuffed-Na(a)N\" se conecta à arquitetura de software moderna",
-  "description": "Como a tendência \"Stuffed-Na(a)N\" se conecta à arquitetura de software modernaNos últimos anos, temos presenciado um aumento significativo na quantidade de...",
+  "headline": "Stuffed-Na(a)N: dados em NaN e o limite da serialização JSON",
+  "description": "O projeto codifica texto em valores NaN; não preenche dados ausentes. Um exemplo Node.js verifica a perda dessa representação ao serializar em JSON.",
   "url": "https://www.andersondamasio.com.br/artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.andersondamasio.com.br/artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html"
   },
   "datePublished": "2025-04-26T17:13:15.149Z",
-  "dateModified": "2025-04-26T17:13:15.149Z",
+  "dateModified": "2026-10-10T04:45:26.250Z",
   "articleSection": "Arquitetura",
   "inLanguage": "pt-BR",
-  "wordCount": 307,
+  "wordCount": 374,
   "about": {
     "@type": "Thing",
     "name": "Arquitetura"
   },
   "isAccessibleForFree": true,
   "copyrightYear": 2025,
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "Stuffed-Na(a)N: stuff your NaNs",
+    "url": "https://github.com/si14/stuffed-naan-js"
+  },
+  "citation": "https://github.com/si14/stuffed-naan-js",
   "author": {
     "@type": "Person",
     "@id": "https://www.andersondamasio.com.br/#anderson-damasio",
@@ -108,7 +114,7 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Como a tendência \"Stuffed-Na(a)N\" se conecta à arquitetura de software moderna",
+      "name": "Stuffed-Na(a)N: dados em NaN e o limite da serialização JSON",
       "item": "https://www.andersondamasio.com.br/artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html"
     }
   ]
@@ -141,6 +147,12 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 .article-validation h2, .article-usefulness h2 { margin-top: 0; font-size: 1.15rem; color: var(--text, #333); }
 .article-validation ul, .article-usefulness ul { margin: 0; padding-left: 1.2rem; }
 .article-validation li, .article-usefulness li { margin: 0.5rem 0; }
+.article-source { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); font-size: 0.95rem; color: var(--meta); }
+.article-source h2 { margin: 0 0 0.5rem; color: var(--text); font-size: 1rem; }
+.article-source p { margin: 0; }
+.article-source a { font-weight: 700; }
+.article-body code { overflow-wrap: anywhere; } .article-body pre code { overflow-wrap: normal; }
+.article-body pre { box-sizing: border-box; max-width: 100%; overflow-x: auto; padding: 1rem; background: var(--pre-bg, #f4f4f4); color: var(--pre-color, #222); border-radius: 4px; }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T15623VZYE"></script>
 <script>
@@ -166,22 +178,75 @@ main { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; bo
 
 
 <main>
-<h1>Como a tendência "Stuffed-Na(a)N" se conecta à arquitetura de software moderna</h1>
+<h1>Stuffed-Na(a)N: dados em NaN e o limite da serialização JSON</h1>
 <p class="article-byline" style="font-size:0.95rem;line-height:1.6;margin:0.5rem 0 1rem">Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA. <a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a>.</p>
 <p class="article-meta">Publicado em: 26/04/2025 17:13</p>
-<div class="article-body">Título: Como a tendência "Stuffed-Na(a)N" se conecta à arquitetura de software moderna<br><br>Nos últimos anos, temos presenciado um aumento significativo na quantidade de dados gerados e utilizados pelas empresas em todo o mundo. Com isso, torna-se cada vez mais importante garantir a integridade e consistência desses dados, principalmente quando lidamos com valores ausentes ou nulos, representados pelo NaN (Not a Number) em linguagens de programação como Python e JavaScript.<br><br>Nesse contexto, surge a tendência "Stuffed-Na(a)N", que propõe uma abordagem inovadora para lidar com esses valores faltantes. Em vez de simplesmente descartá-los ou substituí-los por um valor padrão, como era comum no passado, a ideia por trás do "Stuffed-Na(a)N" é preencher esses espaços vazios com informações relevantes e significativas.<br><br>Essa prática está alinhada com os princípios da arquitetura de software moderna, que valoriza a transparência, escalabilidade e resiliência dos sistemas. Ao adotar o "Stuffed-Na(a)N", os desenvolvedores podem melhorar a qualidade e confiabilidade dos dados manipulados, evitando problemas como vazamento de informações ou distorções nos resultados de análises e processamentos.<br><br>Além disso, essa abordagem contribui para a criação de sistemas mais robustos e adaptáveis, capazes de lidar de forma mais eficiente com situações imprevistas ou cenários de exceção. Ao tratar os valores NaN de maneira mais inteligente e proativa, os desenvolvedores podem garantir a consistência e integridade dos dados, promovendo uma experiência mais satisfatória para os usuários finais.<br><br>Em suma, a tendência "Stuffed-Na(a)N" representa um avanço significativo na forma como lidamos com valores faltantes em nossos sistemas, demonstrando como a inovação e a criatividade podem ser aplicadas até mesmo em aspectos aparentemente simples como a manipulação de dados. Ao incorporar essa prática em suas estratégias de arquitetura de software, as empresas podem se posicionar de forma mais competitiva no mercado, oferecendo soluções mais confiáveis e eficientes aos seus clientes.</div>
+<div class="article-body"><p class="nota-atualizacao">Atualização editorial em <time datetime="2026-10-10T04:45:26.250Z">10/10/2026</time>: interpretação da fonte corrigida; a data da publicação original foi preservada.</p>
+<p>Guardar informação em uma representação numérica não equivale a preservar essa informação em todos os formatos de transporte. O projeto Stuffed-Na(a)N ajuda a discutir essa diferença, mas sua proposta foi descrita incorretamente na versão anterior deste artigo.</p>
+<div class="fato-naan">
+<h2>Codificação, não preenchimento de dados ausentes</h2>
+<p>O <a href="https://github.com/si14/stuffed-naan-js">repositório Stuffed-Na(a)N</a> apresenta funções para codificar texto em valores NaN e recuperá-lo. A explicação usa os bits da representação de NaN. Isso não corresponde a imputar valores faltantes em uma base de dados, nem demonstra proteção contra vazamentos. As afirmações de segurança e de integridade da versão anterior foram retiradas.</p>
+</div>
+<div class="fato-ecmascript">
+<h2>Uma fronteira concreta: JSON</h2>
+<p>Na especificação ECMAScript, <a href="https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.isnan">Number.isNaN</a> não converte o argumento antes de verificá-lo. Já a <a href="https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonproperty">serialização JSON de um número não finito</a> produz <code>null</code>, quando não há transformação personalizada. Um objeto que antes continha NaN pode, portanto, voltar do JSON contendo null. Os dois valores não significavam necessariamente a mesma coisa para a aplicação.</p>
+</div>
+<div class="contribuicao-editorial">
+<h2>Exemplo executável de um contrato explícito</h2>
+<p>Este exemplo próprio modela uma leitura numérica: null significa ausência, um número não finito significa leitura inválida e um número finito significa leitura válida. Strings e outros tipos são rejeitados. É uma escolha didática de contrato, não uma regra universal para sensores ou bancos de dados.</p>
+<pre><code class="language-javascript">'use strict';
+const assert = require('node:assert/strict');
+
+function prepararLeitura(valor) {
+  if (valor === null) return { estado: 'ausente', valor: null };
+  if (typeof valor !== 'number') throw new TypeError('Esperado numero ou null');
+  if (!Number.isFinite(valor)) return { estado: 'invalida', valor: null };
+  return { estado: 'valida', valor };
+}
+
+assert.equal(Number.isNaN(NaN), true);
+assert.equal(Number.isNaN(null), false);
+assert.equal(Number.isNaN('NaN'), false);
+assert.deepEqual(JSON.parse(JSON.stringify({ valor: NaN })), { valor: null });
+assert.deepEqual(prepararLeitura(null), { estado: 'ausente', valor: null });
+for (const valor of [NaN, Infinity, -Infinity]) {
+  assert.deepEqual(prepararLeitura(valor), { estado: 'invalida', valor: null });
+}
+for (const valor of [0, 3.5, -2]) {
+  assert.deepEqual(prepararLeitura(valor), { estado: 'valida', valor });
+}
+for (const valor of ['NaN', '2', undefined, {}, true]) {
+  assert.throws(() =&gt; prepararLeitura(valor), TypeError);
+}
+const leituras = [null, NaN, 0].map(prepararLeitura);
+assert.deepEqual(JSON.parse(JSON.stringify(leituras)), leituras);
+console.log('Contrato JSON verificado.');
+</code></pre>
+<p>O <a href="/exemplos/nan-json/verificar.js">arquivo completo do exemplo</a> pode ser executado com <code>node verificar.js</code>, sem instalar pacotes. As asserções conferem a conversão de NaN em null, a distinção dos estados, a rejeição de texto e o transporte do contrato pelo JSON. A saída esperada é <code>Contrato JSON verificado.</code></p>
+<p>Em uma API, produtor e consumidor precisariam concordar com esses estados. Um consumidor que interprete toda ausência de valor como zero continuaria errado mesmo recebendo JSON válido. Antes de alterar um contrato existente, acrescente casos de ausência e de valor inválido aos testes dos dois lados e defina como clientes antigos serão tratados.</p>
+</div>
+<div class="limites-editoriais">
+<h2>Alcance da verificação</h2>
+<p>O exemplo verifica comportamento de JavaScript e o contrato proposto. Ele não executa a biblioteca Stuffed-Na(a)N, não testa a preservação dos bits de NaN entre motores e não constitui um formato de armazenamento, criptografia ou benchmark. A verificação automatizada também não substitui revisão humana do artigo.</p>
+</div>
+</div>
 <section class="article-validation" data-editorial-status="acervo-sem-revisao-registrada" aria-labelledby="article-validation-title">
 <h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>
 <p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">Anderson Damasio</a>. Conte&uacute;do produzido com apoio de IA.</p>
-<p><strong>Fonte principal:</strong> URL n&atilde;o cadastrada no acervo.</p>
+<p><strong>Fonte principal:</strong> <a href="https://github.com/si14/stuffed-naan-js" rel="noopener noreferrer">Stuffed-Na(a)N: stuff your NaNs</a></p>
 <p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>
 <p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>
 </section>
+<section class="article-source" aria-labelledby="article-source-title">
+<h2 id="article-source-title">Fonte consultada</h2>
+<p>Este artigo foi inspirado em: <a href="https://github.com/si14/stuffed-naan-js" target="_blank" rel="noopener noreferrer">Stuffed-Na(a)N: stuff your NaNs</a>.</p>
+</section>
+
 <section class="related-articles" aria-labelledby="related-articles-title">
 <h2 id="related-articles-title">Artigos relacionados</h2>
 <ul>
 <li><a href="/artigos/a-importancia-da-criacao-de-sistemas-operacionais-como-hobby-na-arquitetura-de-software-moderna.html">A importância da criação de sistemas operacionais como hobby na arquitetura de software moderna</a><span>Arquitetura</span></li>
-<li><a href="/artigos/a-importancia-da-flexibilidade-e-adaptabilidade-na-arquitetura-de-software-licoes-aprendidas-com-thank-you-for-holding-my-duck.html">A importância da flexibilidade e adaptabilidade na arquitetura de software: lições aprendidas com "Thank you for holding my duck"</a><span>Arquitetura</span></li>
+<li><a href="/artigos/a-importancia-da-flexibilidade-e-adaptabilidade-na-arquitetura-de-software-licoes-aprendidas-com-thank-you-for-holding-my-duck.html">Explicar um problema para depurar: um roteiro de conversa técnica</a><span>Arquitetura</span></li>
 <li><a href="/artigos/adivinhacao-de-locais-em-fotos-uma-nova-abordagem-surreal-e-distopica-na-arquitetura-de-software.html">Adivinhação de locais em fotos: uma nova abordagem surreal e distópica na arquitetura de software</a><span>Arquitetura</span></li>
 <li><a href="/artigos/a-integracao-da-inteligencia-artificial-na-arquitetura-de-software-o-papel-dos-large-language-models.html">A integração da inteligência artificial na arquitetura de software: o papel dos Large Language Models</a><span>Arquitetura</span></li>
 </ul>

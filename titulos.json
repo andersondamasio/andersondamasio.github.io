@@ -133,13 +133,6 @@
     "url": "artigos/utilizando-apis-de-ia-para-personalizacao-de-servicos-uma-abordagem-moderna-em-arquitetura-de-software.html"
   },
   {
-    "titulo": "O questionamento do status sem fins lucrativos da Wikipedia e sua conexão com práticas modernas de arquitetura de software",
-    "noticiaOriginal": "Wikipedia’s nonprofit status questioned by D.C. U.S. attorney",
-    "data": "2025-04-26T04:20:13.134Z",
-    "categoria": "Arquitetura",
-    "url": "artigos/o-questionamento-do-status-sem-fins-lucrativos-da-wikipedia-e-sua-conexao-com-praticas-modernas-de-arquitetura-de-software.html"
-  },
-  {
     "titulo": "O futuro da configuração de software: a era do Parallel ./configure",
     "noticiaOriginal": "Parallel ./configure",
     "data": "2025-04-26T05:16:02.518Z",
@@ -147,11 +140,25 @@
     "url": "artigos/o-futuro-da-configuracao-de-software-a-era-do-parallel-configure.html"
   },
   {
-    "titulo": "A tendência do Cloth na arquitetura de software moderna",
-    "noticiaOriginal": "Cloth",
+    "titulo": "Cloth no navegador: como avaliar uma simulação visual",
+    "noticiaOriginal": "@cloudofoz - Verlet simulation test",
     "data": "2025-04-26T06:22:58.685Z",
     "categoria": "Arquitetura",
-    "url": "artigos/a-tendencia-do-cloth-na-arquitetura-de-software-moderna.html"
+    "url": "artigos/a-tendencia-do-cloth-na-arquitetura-de-software-moderna.html",
+    "urlFonte": "https://www.cloudofoz.com/verlet-test/",
+    "seo": {
+      "description": "A demonstração de Cloth, seus controles visíveis e um roteiro proposto para comparar parâmetros e desempenho, sem confundir simulação com tecido inteligente.",
+      "modifiedAt": "2026-10-10T04:45:26.250Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T04:45:26.250Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir a interpretacao de Cloth como tecido inteligente sustentavel: a fonte recuperada e uma demonstracao grafica no navegador.",
+      "hashAntes": "afd66ba0750e2a4a9cff5ad861ff3116f0c567a65019e09843764d7668d380bb",
+      "hashDepois": "b5ef932823862e9502d2d14559b9246bb0e63a862cc5cac96067bfd57f87d158",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-analogias-2026-10.json"
+    }
   },
   {
     "titulo": "A Importância da Arquitetura de Software na Contratação de um Engenheiro de Back End/Plataforma pela MobileBoost",
@@ -161,13 +168,6 @@
     "url": "artigos/a-importancia-da-arquitetura-de-software-na-contratacao-de-um-engenheiro-de-back-end-plataforma-pela-mobileboost.html"
   },
   {
-    "titulo": "A conexão entre a ordem de materiais radioativos na Austrália e arquitetura de software moderna",
-    "noticiaOriginal": "Australian who ordered radioactive materials walks away from court",
-    "data": "2025-04-26T08:20:47.186Z",
-    "categoria": "Arquitetura",
-    "url": "artigos/a-conexao-entre-a-ordem-de-materiais-radioativos-na-australia-e-arquitetura-de-software-moderna.html"
-  },
-  {
     "titulo": "O impacto do arquivo \"/etc/hosts\" na arquitetura de software moderna",
     "noticiaOriginal": "Writing \"/etc/hosts\" breaks the Substack editor",
     "data": "2025-04-26T09:16:49.030Z",
@@ -175,32 +175,11 @@
     "url": "artigos/o-impacto-do-arquivo-etc-hosts-na-arquitetura-de-software-moderna.html"
   },
   {
-    "titulo": "O fim de todos os problemas de próstata? Uma análise técnica sobre a conexão entre essa tendência e práticas modernas de arquitetura de software",
-    "noticiaOriginal": "An end to all this prostate trouble?",
-    "data": "2025-04-26T10:16:50.389Z",
-    "categoria": "Arquitetura",
-    "url": "artigos/o-fim-de-todos-os-problemas-de-prostata-uma-analise-tecnica-sobre-a-conexao-entre-essa-tendencia-e-praticas-modernas-de-arquitetura-de-software.html"
-  },
-  {
-    "titulo": "Implicações da perda de Mark Zuckerberg no caso antitruste do Facebook para a arquitetura de software moderna",
-    "noticiaOriginal": "Mark Zuckerberg personally lost the Facebook antitrust case",
-    "data": "2025-04-26T11:13:14.200Z",
-    "categoria": "Arquitetura",
-    "url": "artigos/implicacoes-da-perda-de-mark-zuckerberg-no-caso-antitruste-do-facebook-para-a-arquitetura-de-software-moderna.html"
-  },
-  {
     "titulo": "The Friendship Recession: The Lost Art of Connecting",
     "noticiaOriginal": "The Friendship Recession: The Lost Art of Connecting",
     "data": "2025-04-26T12:31:45.891Z",
     "categoria": "Outros",
     "url": "artigos/the-friendship-recession-the-lost-art-of-connecting.html"
-  },
-  {
-    "titulo": "Desafios da Arquitetura de Software em meio a perdas financeiras e ações judiciais",
-    "noticiaOriginal": "Backblaze: Mounting Losses, Lawsuits, Sham Accounting, Insider Selling",
-    "data": "2025-04-26T13:22:13.273Z",
-    "categoria": "Arquitetura",
-    "url": "artigos/desafios-da-arquitetura-de-software-em-meio-a-perdas-financeiras-e-acoes-judiciais.html"
   },
   {
     "titulo": "A integração da inteligência artificial na arquitetura de software: o papel dos Large Language Models",
@@ -224,18 +203,47 @@
     "url": "artigos/a-importancia-da-criacao-de-sistemas-operacionais-como-hobby-na-arquitetura-de-software-moderna.html"
   },
   {
-    "titulo": "Como a tendência \"Stuffed-Na(a)N\" se conecta à arquitetura de software moderna",
+    "titulo": "Stuffed-Na(a)N: dados em NaN e o limite da serialização JSON",
     "noticiaOriginal": "Stuffed-Na(a)N: stuff your NaNs",
     "data": "2025-04-26T17:13:15.149Z",
     "categoria": "Arquitetura",
-    "url": "artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html"
+    "url": "artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html",
+    "urlFonte": "https://github.com/si14/stuffed-naan-js",
+    "seo": {
+      "description": "O projeto codifica texto em valores NaN; não preenche dados ausentes. Um exemplo Node.js verifica a perda dessa representação ao serializar em JSON.",
+      "modifiedAt": "2026-10-10T04:45:26.250Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T04:45:26.250Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir a descricao como preenchimento de valores ausentes e as promessas de seguranca; distinguir codificacao em NaN, validacao e serializacao.",
+      "hashAntes": "620313cd219f235757930df464c766cbcec7131ed1485f3414a3024bef8db8bf",
+      "hashDepois": "57e6acd3f765c98f19b804a9b77a6ab9d1ada7e2e077cd92fa52316c6c4b90a7",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-analogias-2026-10.json"
+    }
   },
   {
-    "titulo": "A importância da flexibilidade e adaptabilidade na arquitetura de software: lições aprendidas com \"Thank you for holding my duck\"",
-    "noticiaOriginal": "Thank you for holding my duck (2021)",
+    "titulo": "Explicar um problema para depurar: um roteiro de conversa técnica",
+    "noticiaOriginal": "Thank you for holding my duck",
     "data": "2025-04-26T18:21:40.334Z",
     "categoria": "Arquitetura",
-    "url": "artigos/a-importancia-da-flexibilidade-e-adaptabilidade-na-arquitetura-de-software-licoes-aprendidas-com-thank-you-for-holding-my-duck.html"
+    "url": "artigos/a-importancia-da-flexibilidade-e-adaptabilidade-na-arquitetura-de-software-licoes-aprendidas-com-thank-you-for-holding-my-duck.html",
+    "urlFonte": "https://naml.us/post/thank-you-for-holding-my-duck/",
+    "dataFonte": "2021-03-08",
+    "seo": {
+      "description": "O relato de Geoffrey Irving sobre explicar problemas a um colega e um roteiro proposto de depuração com evidências, hipóteses e critério de encerramento.",
+      "modifiedAt": "2026-10-10T04:45:26.250Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T04:45:26.250Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir a interpretacao como padrao de arquitetura flexivel: a fonte trata de explicar um problema a outra pessoa durante a resolucao.",
+      "hashAntes": "d8f7b53023b6354f72256618aae9596ac85cba20a6db89dd72810ad2c40ef574",
+      "hashDepois": "7d44b84a4f116eacb3941726b5560517ff7681b16fa4210d412d38cad165f35b",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-analogias-2026-10.json"
+    }
   },
   {
     "titulo": "Barlow's Principles of Adult Behaviour",
@@ -2012,14 +2020,6 @@
     "url": "artigos/explorando-o-suporte-a-java-js-e-python-nos-planos-de-teste.html",
     "data": "2025-05-05T20:19:46.347Z",
     "dataFonte": "2025-03-21T06:50:20.000Z",
-    "categoria": "Outros"
-  },
-  {
-    "titulo": "Como remover \"X\" dos passaportes dos EUA: uma abordagem técnica",
-    "noticiaOriginal": "Commenting on removing \"X\" on US passports",
-    "url": "artigos/como-remover-x-dos-passaportes-dos-eua-uma-abordagem-tecnica.html",
-    "data": "2025-05-05T21:16:36.058Z",
-    "dataFonte": "2025-02-26T16:49:00.000Z",
     "categoria": "Outros"
   },
   {

@@ -101,6 +101,48 @@ test("deploy exige 404/410 para retiradas e nao publica copias arquivadas", asyn
   assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(ausentes), tentativas: 1 })).aceita, true);
   assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...ausentes, [removido]: html(`/${removido}`, "Indisponivel") }), tentativas: 1 })).aceita, false);
 });
+
+test("deploy confere noindex deliberado, sem exigir remocao da pagina", async () => {
+  const antigo = 'artigos/arquivo/sem-promocao.html';
+  const extras = {
+    'dados/indexacao.json': JSON.stringify({ decisoes: [{ url: antigo, acao: 'noindex' }] }),
+    [antigo]: html(`/${antigo}`).replace('</head>', '<meta name="robots" content="noindex, follow"></head>')
+  };
+  const esperado = prepararVerificacao({ ler: f => extras[f] || arquivos[f], revisao: 'a'.repeat(40) });
+  assert.deepEqual(esperado.arquivosNoindex, [antigo]);
+  assert.ok(esperado.arquivos.some(a => a.arquivo === antigo));
+  assert.ok(!esperado.ausentes.includes(antigo));
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(extras), tentativas: 1 })).aceita, true);
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...extras, [antigo]: null }), tentativas: 1 })).aceita, false);
+  for (const pagina of [html(`/${antigo}`), extras[antigo].replace(`/${antigo}`, '/errado.html')]) {
+    const dados = { ...extras, [antigo]: pagina };
+    const esperado = prepararVerificacao({ ler: f => dados[f] || arquivos[f], revisao: 'a'.repeat(40) });
+    const r = await verificarPublicacao({ esperado, fetchImpl: mockFetch(dados), tentativas: 1 });
+    assert.equal(r.verificacoes.every(v => v.aceita), true, 'Mesmo HTML que o Git nao dispensa contrato de indexacao');
+    assert.equal(r.aceita, false);
+  }
+});
+
+test("deploy recusa promocao de noindex mesmo quando o Git tambem o promove", async () => {
+  const antigo = 'artigos/arquivo/sem-promocao.html';
+  const extras = {
+    'dados/indexacao.json': JSON.stringify({ decisoes: [{ url: antigo, acao: 'noindex' }] }),
+    [antigo]: html(`/${antigo}`).replace('</head>', '<meta name="robots" content="noindex, follow"></head>')
+  };
+  const casos = [
+    { 'sitemap.xml': arquivos['sitemap.xml'].replace('</urlset>', `<url><loc>${baseUrl}/${antigo}</loc></url></urlset>`) },
+    { 'rss.xml': arquivos['rss.xml'].replace('</channel>', `<item><link>${baseUrl}/${antigo}</link></item></channel>`) },
+    { 'index.html': arquivos['index.html'].replace('</body>', `<a href="/${antigo}#trecho">Arquivo</a></body>`) }
+  ];
+  for (const c of casos) {
+    const dados = { ...extras, ...c };
+    const esperado = prepararVerificacao({ ler: f => dados[f] || arquivos[f], revisao: 'a'.repeat(40) });
+    const r = await verificarPublicacao({ esperado, fetchImpl: mockFetch(dados), tentativas: 1 });
+    assert.equal(r.verificacoes.every(v => v.aceita), true);
+    assert.equal(r.aceita, false);
+    assert.ok(r.problemas.some(p => /Noindex em|Noindex promovido/.test(p)));
+  }
+});
 test("falha explicitamente quando artigo novo esta ausente ou o conteudo esta antigo", async () => {
   for (const alteracoes of [{ [artigo]: null }, { [artigo]: html(`/${artigo}`, "versao antiga") }, { "sitemap.xml": "<urlset/>" }, { "rss.xml": "<rss/>" }, { "index.html": html("/") }]) {
     assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(alteracoes), tentativas: 1 })).aceita, false);

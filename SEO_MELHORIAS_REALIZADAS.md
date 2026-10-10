@@ -6,6 +6,8 @@ Ultima atualizacao: 25/06/2026
 
 Este documento resume o processo de melhoria, rebuild e aplicacao de SEO feito no projeto do site/blog Anderson Damasio.
 
+Nota de contexto (10/10/2026): este documento preserva o historico de maio/junho, nao um diagnostico atual. Os contratos vigentes estao em [EDITORIAL_OPERACAO.md](EDITORIAL_OPERACAO.md). Algumas regras abaixo foram substituidas, incluindo listas inferidas de keywords/mentions e blocos genericos de utilidade. Nao usar os contadores historicos como resultado da auditoria atual nem como prova de indexacao no Google.
+
 ## Objetivo
 
 Padronizar o SEO das paginas existentes e garantir que as proximas paginas geradas pelo projeto ja nascam com os metadados corretos.
