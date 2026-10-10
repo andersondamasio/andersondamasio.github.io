@@ -1,0 +1,213 @@
+{
+  "versao": 1,
+  "em": "2026-10-10T12:08:05.767Z",
+  "base": "05dca02ef55fd6db8159fa50eb45b0b1032b0544",
+  "responsavel": "Codex (curadoria assistida)",
+  "revisaoHumana": false,
+  "metricasGoogle": null,
+  "linksExternosConhecidos": null,
+  "escopo": "Três correções técnicas; dois exemplos locais executados e uma revisão exclusivamente documental. URLs e datas originais preservadas. Sem novas retiradas ou noindex. Não constitui aprovação humana nem revisão de rascunho.",
+  "execucao": {
+    "em": "2026-10-10T12:06:34.997Z",
+    "navegador": "Chrome/154.0.8037.99",
+    "teste": "scripts/test-native-article-examples.js",
+    "testes": 2,
+    "resultado": "passed",
+    "chamadaModelo": false,
+    "testeProducao": false
+  },
+  "artigos": [
+    {
+      "url": "artigos/programacao/ja-passei-por-situacoes-em-que-plain-vanilla-web-guide-for-de-frameworking-yourself-foi-o-divisor-entre-sucesso-e-retrabalho.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Já passei por situações em que Plain Vanilla Web – Guide for de-frameworking yourself foi o divisor entre sucesso e retrabalho.",
+        "data": "2025-05-11T18:43:38.691Z",
+        "corpoHash": "cacf6456d35d1279486b50985292f301af848de44b8a22ab7467daa5cf2843b9",
+        "fonte": {
+          "url": "https://plainvanillaweb.com/index.html",
+          "titulo": "Plain Vanilla Web – Guide for de-frameworking yourself",
+          "data": "2025-05-11T16:31:58.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "Plain Vanilla: quando um elemento HTML substitui um componente",
+        "descricao": "Exemplo de details testado sem JavaScript, limites da abordagem Plain Vanilla e critérios para substituir um componente sem perder comportamento.",
+        "corpoHash": "3e7bd150e81891241d2e4d0d73cf80e16d3e75393bb7940f968b973ada24906e"
+      },
+      "motivo": "Remover vivência não confirmada e corrigir a confusão entre cliente HTTP em C# e API de servidor; demonstrar um recurso nativo pertinente ao front-end.",
+      "evidencia": "Leitura integral do texto anterior e das fontes Plain Vanilla e MDN; fragmento details executado no Chrome com JavaScript da página desativado.",
+      "aliases": [
+        "programacao/ja-passei-por-situacoes-em-que-plain-vanilla-web-guide-for-de-frameworking-yourself-foi-o-divisor-entre-sucesso-e-retrabalho.html"
+      ],
+      "evidencias": [
+        {
+          "seletor": ".fato-plain",
+          "fonte": "https://plainvanillaweb.com/index.html",
+          "consultadoEm": "2026-10-10T12:08:05.767Z",
+          "textoHash": "584a56ee57fdfc1cb412dedfeb758d015635c4f73ab92ec25b01df872d526c58"
+        },
+        {
+          "seletor": ".fato-details",
+          "fonte": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details",
+          "consultadoEm": "2026-10-10T12:08:05.767Z",
+          "textoHash": "75a5ef844ec9e8879011f75edf716d2e8e0359ebfb1b62e9a3e8810b1d7e3c8b"
+        }
+      ],
+      "pergunta": "Quando details atende ao contrato de um componente sem depender de JavaScript?",
+      "sobreposicao": "Busca focal no catálogo encontrou uma URL ativa sobre Plain Vanilla; preservada com uma contribuição executável específica.",
+      "contribuicao": ".contribuicao-editorial",
+      "limites": ".limites-editoriais",
+      "experimentoExecutado": true,
+      "experimento": {
+        "sintetico": true,
+        "resultado": "passed",
+        "navegador": "Chrome/154.0.8037.99",
+        "em": "2026-10-10T12:06:34.997Z",
+        "arquivo": {
+          "caminho": "exemplos/web-nativa/detalhes.txt",
+          "sha256": "24ca1ddbb942250de29b5d951513cc1bc1e95224ad23e80c15ee660cc4f7b756"
+        },
+        "saida": {
+          "javascript": false,
+          "estados": [
+            false,
+            true,
+            false,
+            true
+          ],
+          "interacoes": [
+            "inicial",
+            "clique",
+            "Enter",
+            "Space"
+          ]
+        }
+      }
+    },
+    {
+      "url": "artigos/programacao/a-nova-era-do-tempo-como-a-temporal-api-pode-revolucionar-o-desenvolvimento-web.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "A nova era do tempo: Como a Temporal API pode revolucionar o desenvolvimento web",
+        "data": "2026-02-17T08:48:35.667Z",
+        "corpoHash": "7e81e60e26c3ebd85b78036be7e683cad369482c9b3cff8a22ac667e36aa3218",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/02/chrome-temporal-date-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "Chrome 144 Ships Temporal API: Advancing JavaScript Date/Time Standardisation",
+          "data": "2026-02-17T08:00:00.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "Temporal: um dia de calendário e 24 horas são contratos diferentes",
+        "descricao": "Exemplo executado com Temporal compara um dia e 24 horas, rejeita horários ambíguos e explica os limites de suporte e persistência.",
+        "corpoHash": "93448f163f112e2b78540b64f9058932bcc0463caecad82c2e9f8c260b432a32"
+      },
+      "motivo": "Retirar experiência pessoal inventada e generalizações de compatibilidade; demonstrar aritmética de calendário, duração e rejeição de ambiguidades.",
+      "evidencia": "Tipos e operações confrontados com TC39, suporte contextualizado pelas notas oficiais do Chrome 144; casos sintéticos executados na implementação nativa do Chrome instalado.",
+      "aliases": [
+        "programacao/a-nova-era-do-tempo-como-a-temporal-api-pode-revolucionar-o-desenvolvimento-web.html"
+      ],
+      "evidencias": [
+        {
+          "seletor": ".fato-tipos",
+          "fonte": "https://tc39.es/proposal-temporal/docs/",
+          "consultadoEm": "2026-10-10T12:08:05.767Z",
+          "textoHash": "034934adac517aa766102188fc9aca65c3e4dead04c245ec1e5e5958f7821ad3"
+        },
+        {
+          "seletor": ".fato-suporte",
+          "fonte": "https://developer.chrome.com/blog/new-in-chrome-144",
+          "consultadoEm": "2026-10-10T12:08:05.767Z",
+          "textoHash": "067209d05a82b05576f1bd4cd5c622721b5f0aae63437e2d0f63064d0bf3a757"
+        },
+        {
+          "seletor": ".fato-fuso",
+          "fonte": "https://tc39.es/proposal-temporal/docs/zoneddatetime.html",
+          "consultadoEm": "2026-10-10T12:08:05.767Z",
+          "textoHash": "75f6a2bc17840749a72d764888e965558c16110bfb5b9b4c9ab1b6c2f284abe2"
+        }
+      ],
+      "pergunta": "O contrato exige o mesmo horário local no dia seguinte ou exatamente 24 horas transcorridas?",
+      "sobreposicao": "Busca focal no catálogo encontrou uma URL ativa sobre Temporal; mantida com um ensaio sintético reproduzível, sem alegação de migração em produção.",
+      "contribuicao": ".contribuicao-editorial",
+      "limites": ".limites-editoriais",
+      "experimentoExecutado": true,
+      "experimento": {
+        "sintetico": true,
+        "resultado": "passed",
+        "navegador": "Chrome/154.0.8037.99",
+        "em": "2026-10-10T12:06:34.997Z",
+        "arquivo": {
+          "caminho": "exemplos/temporal/comparar.js",
+          "sha256": "f8b76441f4f9eefe5c4e88de11d5a67566ee38a883c1265a6ba9ea1558b97b77"
+        },
+        "saida": {
+          "dataOriginal": "2026-02-13",
+          "seteDiasDepois": "2026-02-20",
+          "partida": "2026-03-07T12:00:00-05:00[America/New_York]",
+          "diaSeguinte": "2026-03-08T12:00:00-04:00[America/New_York]",
+          "horasTranscorridas": 23,
+          "apos24Horas": "2026-03-08T13:00:00-04:00[America/New_York]",
+          "horarioInexistenteRejeitado": true,
+          "horarioRepetidoRejeitado": true
+        }
+      }
+    },
+    {
+      "url": "artigos/devops/gerenciando-maquinas-virtuais-no-linux-uma-abordagem-simples-e-eficaz.html",
+      "acao": "atualizar",
+      "antes": {
+        "titulo": "Gerenciando Máquinas Virtuais no Linux: Uma Abordagem Simples e Eficaz",
+        "data": "2026-01-27T22:26:01.367Z",
+        "corpoHash": "e230cbfb604e873211d85b82954beb96873c8cfe7440648f930367f73cf620b1",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/using-cockpit-as-a-virtual-machine-manager-on-linux/",
+          "titulo": "Need to manage virtual machines on Linux? I found an easier way",
+          "data": "2026-01-27T22:15:37.000Z"
+        }
+      },
+      "depois": {
+        "titulo": "Cockpit para máquinas virtuais: componente, acesso e certificado",
+        "descricao": "Confira cockpit-machines, acesso HTTPS, certificado e permissões antes de administrar VMs. Roteiro documental, sem simular instalação ou migração.",
+        "corpoHash": "f039713716088ccef64a00759eab1c32c9156f178286eff548bf737d142228fb"
+      },
+      "motivo": "Corrigir orientação de aceitar alerta de certificado, instalação genérica e alegação de API sem contrato; remover migração pessoal não confirmada.",
+      "evidencia": "Texto integral confrontado com documentação oficial de execução, aplicativos, tecnologias do cockpit-machines e TLS. Nenhuma VM, instalação ou migração executada.",
+      "aliases": [
+        "devops/gerenciando-maquinas-virtuais-no-linux-uma-abordagem-simples-e-eficaz.html"
+      ],
+      "evidencias": [
+        {
+          "seletor": ".fato-machines",
+          "fonte": "https://cockpit-project.org/applications.html",
+          "consultadoEm": "2026-10-10T12:08:05.767Z",
+          "textoHash": "5faa19905b5aa70221a2ed0c66082f38a023b192133d52b8a3a00da37b57a827"
+        },
+        {
+          "seletor": ".fato-integracao",
+          "fonte": "https://github.com/cockpit-project/cockpit-machines",
+          "consultadoEm": "2026-10-10T12:08:05.767Z",
+          "textoHash": "048799a7851f8d2a5e1ddafddd9b130d8a371bf1002849708de6ae0a7e63357c"
+        },
+        {
+          "seletor": ".fato-acesso",
+          "fonte": "https://cockpit-project.org/running.html",
+          "consultadoEm": "2026-10-10T12:08:05.767Z",
+          "textoHash": "5f9fde6377de5217f9276e48a427996b818b16b69307a90960326a240252c3b1"
+        },
+        {
+          "seletor": ".fato-tls",
+          "fonte": "https://docs.cockpit-project.org/cockpit-guide/main/guide/https.html",
+          "consultadoEm": "2026-10-10T12:08:05.767Z",
+          "textoHash": "72c4b3c0079cf698964b2297e66fa2879370583e03d0527fd0870c8a1ddfa7cc"
+        }
+      ],
+      "pergunta": "O que conferir no componente de virtualização, na conta e na conexão antes de administrar VMs?",
+      "sobreposicao": "Busca focal no catálogo encontrou uma URL ativa sobre Cockpit; preservada como orientação documental com ficha de verificação não executada.",
+      "contribuicao": ".contribuicao-editorial",
+      "limites": ".limites-editoriais",
+      "experimentoExecutado": false
+    }
+  ]
+}

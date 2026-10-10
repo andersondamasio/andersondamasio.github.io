@@ -9,6 +9,10 @@ const ler = arquivo => fs.readFileSync(path.join(root, arquivo), 'utf8').replace
 
 test('codigo dos artigos coincide com arquivos executaveis, sem tags espurias', () => {
   const casos = [
+    ['artigos/programacao/ja-passei-por-situacoes-em-que-plain-vanilla-web-guide-for-de-frameworking-yourself-foi-o-divisor-entre-sucesso-e-retrabalho.html', [
+      ['code.language-html', 'exemplos/web-nativa/detalhes.txt']]],
+    ['artigos/programacao/a-nova-era-do-tempo-como-a-temporal-api-pode-revolucionar-o-desenvolvimento-web.html', [
+      ['code.language-javascript', 'exemplos/temporal/comparar.js']]],
     ['artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html', [
       ['code.language-json', 'exemplos/design-tokens/tokens.json'],
       ['code.language-javascript', 'exemplos/design-tokens/converter.js']]],
@@ -33,6 +37,35 @@ test('codigo dos artigos coincide com arquivos executaveis, sem tags espurias', 
     }
     assert.equal($('.article-body pre br').length, 0);
     assert.equal($('.article-body iostream, .article-body condition_variable').length, 0);
+  }
+});
+
+test('exemplos nativos publicados preservam resultado executado e hashes das fontes', () => {
+  const lote = JSON.parse(ler('dados/editorial/curadoria-web-nativa-2026-10.json'));
+  assert.equal(lote.execucao.testes, 2);
+  assert.equal(lote.execucao.resultado, 'passed');
+  assert.equal(lote.execucao.chamadaModelo, false);
+  assert.equal(lote.execucao.testeProducao, false);
+  const exemplos = lote.artigos.filter(a => a.experimentoExecutado);
+  assert.equal(exemplos.length, 2);
+  for (const a of exemplos) {
+    const q = cheerio.load(ler(a.url)), e = a.experimento;
+    assert.equal(require('node:crypto').createHash('sha256').update(ler(e.arquivo.caminho)).digest('hex'), e.arquivo.sha256);
+    assert.equal(q(`.article-body a[href="/${e.arquivo.caminho}"]`).length, 1);
+    assert.equal(e.resultado, 'passed'); assert.equal(e.sintetico, true);
+    assert.equal(e.navegador, lote.execucao.navegador);
+    assert.match(q('.resultado-executado').text(), /Codex/);
+    assert.match(q('.limites-editoriais').text(), /não.*(?:vivência|relatos)/);
+    if (e.arquivo.caminho.includes('temporal')) {
+      assert.deepEqual(JSON.parse(q('code.language-json').text()), e.saida);
+      assert.equal(e.saida.horasTranscorridas, 23);
+      assert.equal(e.saida.horarioRepetidoRejeitado, true);
+      assert.equal(e.saida.horarioInexistenteRejeitado, true);
+    } else {
+      assert.equal(e.saida.javascript, false);
+      assert.deepEqual(e.saida.estados, [false, true, false, true]);
+      assert.deepEqual(e.saida.interacoes, ['inicial', 'clique', 'Enter', 'Space']);
+    }
   }
 });
 

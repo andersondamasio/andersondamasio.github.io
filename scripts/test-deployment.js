@@ -81,6 +81,20 @@ test("documentos do repositorio nao podem virar paginas ou downloads publicos", 
   }
 });
 
+test('deploy confere os dois exemplos nativos e rejeita ausencia ou versao obsoleta', async () => {
+  const nomes = ['exemplos/temporal/comparar.js', 'exemplos/web-nativa/detalhes.txt'];
+  const fontes = Object.fromEntries(nomes.map(nome => [nome, `Conteudo ${nome}`]));
+  const ler = f => fontes[f] || arquivos[f];
+  const esperado = prepararVerificacao({ ler, revisao: 'e'.repeat(40) });
+  for (const nome of nomes) assert.ok(esperado.arquivos.some(a => a.arquivo === nome));
+  const conferir = alteracoes => verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...fontes, ...alteracoes }), tentativas: 1 });
+  assert.equal((await conferir({})).aceita, true);
+  for (const nome of nomes) for (const conteudo of [null, 'Obsoleto']) {
+    assert.equal((await conferir({ [nome]: conteudo })).aceita, false);
+  }
+  assert.throws(() => prepararVerificacao({ ler: f => f.endsWith('detalhes.txt') ? undefined : ler(f), revisao: 'e'.repeat(40) }), /Arquivo do exemplo ausente/);
+});
+
 test('deploy exige snapshots executaveis atualizados e mantem README fora do Pages', async () => {
   const nomes = ['aplicar.js', 'dados.json', 'executar.js', 'test.js'];
   const fontes = Object.fromEntries(nomes.map(nome => [`exemplos/estado-versionado/${nome}`, `Conteudo ${nome}`]));

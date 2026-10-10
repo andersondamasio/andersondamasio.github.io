@@ -3357,13 +3357,25 @@
     "urlFonte": "https://www.customerexperiencedive.com/news/klarna-reinvests-human-talent-customer-service-AI-chatbot/747586/"
   },
   {
-    "titulo": "Já passei por situações em que Plain Vanilla Web – Guide for de-frameworking yourself foi o divisor entre sucesso e retrabalho.",
-    "noticiaOriginal": "Plain Vanilla Web – Guide for de-frameworking yourself",
+    "titulo": "Plain Vanilla: quando um elemento HTML substitui um componente",
+    "noticiaOriginal": "Plain Vanilla Web",
     "url": "artigos/programacao/ja-passei-por-situacoes-em-que-plain-vanilla-web-guide-for-de-frameworking-yourself-foi-o-divisor-entre-sucesso-e-retrabalho.html",
     "data": "2025-05-11T18:43:38.691Z",
-    "dataFonte": "2025-05-11T16:31:58.000Z",
     "categoria": "Programação",
-    "urlFonte": "https://plainvanillaweb.com/index.html"
+    "urlFonte": "https://plainvanillaweb.com/index.html",
+    "seo": {
+      "description": "Exemplo de details testado sem JavaScript, limites da abordagem Plain Vanilla e critérios para substituir um componente sem perder comportamento.",
+      "modifiedAt": "2026-10-10T12:08:05.767Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T12:08:05.767Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Remover vivência não confirmada e corrigir a confusão entre cliente HTTP em C# e API de servidor; demonstrar um recurso nativo pertinente ao front-end.",
+      "hashAntes": "cacf6456d35d1279486b50985292f301af848de44b8a22ab7467daa5cf2843b9",
+      "hashDepois": "3e7bd150e81891241d2e4d0d73cf80e16d3e75393bb7940f968b973ada24906e",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-web-nativa-2026-10.json"
+    }
   },
   {
     "titulo": "Já passei por situações em que Fitness tracker Whoop faces unhappy customers over upgrade policy foi o divisor entre sucesso e retrabalho.",
@@ -54569,13 +54581,25 @@
     "urlFonte": "https://techcrunch.com/2026/01/27/anthropic-reportedly-upped-its-latest-raise-to-20b/"
   },
   {
-    "titulo": "Gerenciando Máquinas Virtuais no Linux: Uma Abordagem Simples e Eficaz",
-    "noticiaOriginal": "Need to manage virtual machines on Linux? I found an easier way",
+    "titulo": "Cockpit para máquinas virtuais: componente, acesso e certificado",
+    "noticiaOriginal": "Running Cockpit",
     "url": "artigos/devops/gerenciando-maquinas-virtuais-no-linux-uma-abordagem-simples-e-eficaz.html",
     "data": "2026-01-27T22:26:01.367Z",
-    "dataFonte": "2026-01-27T22:15:37.000Z",
     "categoria": "DevOps",
-    "urlFonte": "https://www.zdnet.com/article/using-cockpit-as-a-virtual-machine-manager-on-linux/"
+    "urlFonte": "https://cockpit-project.org/running.html",
+    "seo": {
+      "description": "Confira cockpit-machines, acesso HTTPS, certificado e permissões antes de administrar VMs. Roteiro documental, sem simular instalação ou migração.",
+      "modifiedAt": "2026-10-10T12:08:05.767Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T12:08:05.767Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Corrigir orientação de aceitar alerta de certificado, instalação genérica e alegação de API sem contrato; remover migração pessoal não confirmada.",
+      "hashAntes": "e230cbfb604e873211d85b82954beb96873c8cfe7440648f930367f73cf620b1",
+      "hashDepois": "f039713716088ccef64a00759eab1c32c9156f178286eff548bf737d142228fb",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-web-nativa-2026-10.json"
+    }
   },
   {
     "titulo": "A porta automática para pets que você não sabia que precisava",
@@ -58111,13 +58135,25 @@
     "urlFonte": "https://www.wired.com/story/the-small-english-town-swept-up-in-the-global-ai-arms-race/"
   },
   {
-    "titulo": "A nova era do tempo: Como a Temporal API pode revolucionar o desenvolvimento web",
-    "noticiaOriginal": "Chrome 144 Ships Temporal API: Advancing JavaScript Date/Time Standardisation",
+    "titulo": "Temporal: um dia de calendário e 24 horas são contratos diferentes",
+    "noticiaOriginal": "Temporal documentation",
     "url": "artigos/programacao/a-nova-era-do-tempo-como-a-temporal-api-pode-revolucionar-o-desenvolvimento-web.html",
     "data": "2026-02-17T08:48:35.667Z",
-    "dataFonte": "2026-02-17T08:00:00.000Z",
     "categoria": "Programação",
-    "urlFonte": "https://www.infoq.com/news/2026/02/chrome-temporal-date-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    "urlFonte": "https://tc39.es/proposal-temporal/docs/",
+    "seo": {
+      "description": "Exemplo executado com Temporal compara um dia e 24 horas, rejeita horários ambíguos e explica os limites de suporte e persistência.",
+      "modifiedAt": "2026-10-10T12:08:05.767Z"
+    },
+    "correcaoEditorial": {
+      "em": "2026-10-10T12:08:05.767Z",
+      "responsavel": "Codex (curadoria assistida)",
+      "motivo": "Retirar experiência pessoal inventada e generalizações de compatibilidade; demonstrar aritmética de calendário, duração e rejeição de ambiguidades.",
+      "hashAntes": "7e81e60e26c3ebd85b78036be7e683cad369482c9b3cff8a22ac667e36aa3218",
+      "hashDepois": "93448f163f112e2b78540b64f9058932bcc0463caecad82c2e9f8c260b432a32",
+      "revisaoHumana": false,
+      "relatorio": "dados/editorial/curadoria-web-nativa-2026-10.json"
+    }
   },
   {
     "titulo": "A Revolução do Autoscaling: Como o Edge Computing Desafia o Kubernetes",
