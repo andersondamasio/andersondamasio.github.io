@@ -167,7 +167,8 @@ test("exemplo executavel de Reservoir Sampling corresponde ao codigo publicado",
 
 [
   ["correcoes-fontes-primarias-2026-10.json", 5],
-  ["correcoes-piloto-agentes-2026-10.json", 7]
+  ["correcoes-piloto-agentes-2026-10.json", 7],
+  ["correcoes-contextuais-01-2026-10.json", 4]
 ].forEach(([arquivo, quantidade]) => test(`correcoes preservam rastreabilidade sem aprovacao humana: ${arquivo}`, () => {
   const root = path.join(__dirname, "..");
   const cadastro = JSON.parse(fs.readFileSync(path.join(root, "titulos.json"), "utf8"));
@@ -212,6 +213,37 @@ test("exemplo executavel de Reservoir Sampling corresponde ao codigo publicado",
     }
   }
 }));
+
+test("lote contextual distingue atualizacao, fonte substituida e publicacao original", () => {
+  const root = path.join(__dirname, "..");
+  const relatorio = JSON.parse(fs.readFileSync(path.join(root, "dados/editorial/correcoes-contextuais-01-2026-10.json"), "utf8"));
+  const cadastro = JSON.parse(fs.readFileSync(path.join(root, "titulos.json"), "utf8"));
+  for (const artigo of relatorio.artigos) {
+    const $ = cheerio.load(fs.readFileSync(path.join(root, artigo.url), "utf8"));
+    assert.equal($(".article-body .nota-atualizacao time").attr("datetime"), relatorio.em);
+    assert.match($(".article-body .nota-atualizacao").text(), /publicação original foi preservada/);
+    assert.equal($("meta[name=robots]").attr("content").includes("noindex"), false);
+    assert.ok(artigo.antes.fonte.url && artigo.antes.fonte.data);
+    assert.ok(artigo.sobreposicao);
+    for (const evidencia of artigo.evidencias) {
+      assert.ok($(evidencia.seletor).find("a").toArray().some(a => $(a).attr("href") === evidencia.fonte));
+    }
+  }
+  const gestao = relatorio.artigos.find(a => a.url.includes("como-se-destacar-na-gestao"));
+  const registro = cadastro.find(r => r.url === gestao.url);
+  assert.match(gestao.antes.fonte.url, /zdnet\.com/);
+  assert.match(registro.urlFonte, /handbook\.gitlab\.com/);
+  assert.equal(registro.dataFonte, undefined, "Nao herdar a data da fonte substituida");
+  assert.equal(gestao.depois.fonte.data, undefined);
+  const $ = cheerio.load(fs.readFileSync(path.join(root, gestao.url), "utf8"));
+  assert.match($(".limites-editoriais").text(), /ZDNet que não pôde ser conferida/);
+  const dados = relatorio.artigos.find(a => a.url.includes("aquisicoes.html"));
+  const d = cheerio.load(fs.readFileSync(path.join(root, dados.url), "utf8"));
+  assert.match(d(".fato-informatica-acordo").text(), /não comprovava o fechamento/);
+  assert.match(d(".fato-informatica-fechamento").text(), /18\/11\/2025/);
+  assert.match(d(".fato-informatica-fechamento").text(), /posterior à data original/);
+  assert.match(d(".fato-fivetran-posterior").text(), /03\/03\/2026/);
+});
 
 test("home e pagina dois possuem finalidade e H1 diferentes, sem repetir biografia", () => workspace(root => {
   process.chdir(root);

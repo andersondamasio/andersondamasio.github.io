@@ -1,0 +1,185 @@
+{
+  "em": "2026-10-10T02:04:10.178Z",
+  "responsavel": "Codex (correcao assistida)",
+  "revisaoHumana": false,
+  "escopo": "Revisao contextual de quatro corpos e das fontes citadas. Exemplos hipoteticos nao executados; nao certifica o acervo inteiro, indexacao, promocao ou desempenho.",
+  "artigos": [
+    {
+      "url": "artigos/carreira/como-engenheiros-de-software-podem-escalar-na-carreira-e-ampliar-sua-influencia.html",
+      "antes": {
+        "titulo": "Como Engenheiros de Software Podem Escalar na Carreira e Ampliar sua Influência",
+        "data": "2025-06-22T08:23:52.449Z",
+        "corpoHash": "f7835e859efdf5ed0f4e482a70ba6abf772065ebb38390cc3a4a5f96c00363d9",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2025/06/software-engineer-career/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "How Software Engineers Can Grow Their Career",
+          "data": "2025-06-19T11:50:00.000Z"
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Carreira em software: registrar contribuições com evidências",
+        "descricao": "As recomendações de Bruno Rey e uma ficha proposta para documentar contribuições técnicas, reconhecer colegas e separar resultados de expectativas.",
+        "corpoHash": "8215ae8d32c7891cf7845504112bdbd2fcbaada227aa7a7b6720e242e056c383",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2025/06/software-engineer-career/",
+          "titulo": "How Software Engineers Can Grow Their Career",
+          "data": "2025-06-19"
+        }
+      },
+      "motivo": "Atribuir os conselhos a Bruno Rey, retirar vivencia indevida e propor registro verificavel de contribuicoes, sem promessa de promocao.",
+      "sobreposicao": "Foco em registrar contribuicao tecnica individual, distinto do artigo sobre transicao para gestao. Fonte unica no catalogo; leitura contextual nao indicou consolidacao neste lote.",
+      "evidencias": [
+        {
+          "seletor": ".fato-carreira",
+          "fonte": "https://www.infoq.com/news/2025/06/software-engineer-career/",
+          "secao": "Entrevista de Ben Linders: ambicao, capacidade, oportunidade e registro de contribuicoes",
+          "consultadoEm": "2026-10-10T02:04:10.178Z",
+          "textoHash": "42227d473026e870bff22124741fcc69c4b83b68bdc9cbf73f9e4ca34ae11d12"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/carreira/como-escalar-organizacoes-sem-perder-a-essencia-a-importancia-da-confianca-e-seguranca-psicologica.html",
+      "antes": {
+        "titulo": "Como Escalar Organizações sem Perder a Essência: A Importância da Confiança e Segurança Psicológica",
+        "data": "2026-04-02T11:49:24.397Z",
+        "corpoHash": "a77f17da911fdad3cf7db9935fd49b0b637937183a81ee43e92115e1a2069603",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/04/trust-psychological-safety-scale/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+          "titulo": "How to Handle Trusts and Psychological Safety When Scaling Organizations",
+          "data": "2026-04-02T11:04:00.000Z"
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Confiança e segurança psicológica entre equipes de software",
+        "descricao": "A distinção apresentada por Charlotte de Jong Schouwenburg e um exercício proposto para tratar dúvidas, dependências e decisões entre equipes.",
+        "corpoHash": "2e4b287ae12c5d6f3e27a6aa7c2ca504ba172244345bdae5035dec3764defa99",
+        "fonte": {
+          "url": "https://www.infoq.com/news/2026/04/trust-psychological-safety-scale/",
+          "titulo": "How to Handle Trust and Psychological Safety When Scaling Organizations",
+          "data": "2026-04-02"
+        }
+      },
+      "motivo": "Atribuir conceitos a entrevistada, retirar reflexao pessoal inventada e delimitar exercicio de resposta a incerteza, sem medir clima ou produtividade.",
+      "sobreposicao": "Foco em como receber duvidas e acompanhar respostas entre equipes. O guia de generalistas trata da divisao de responsabilidades; nao sao artigos equivalentes.",
+      "evidencias": [
+        {
+          "seletor": ".fato-confianca",
+          "fonte": "https://www.infoq.com/news/2026/04/trust-psychological-safety-scale/",
+          "secao": "Entrevista de Ben Linders: confianca interpessoal e seguranca psicologica coletiva",
+          "consultadoEm": "2026-10-10T02:04:10.178Z",
+          "textoHash": "40ee234312cff69c438eb2952b7a1df57c6b3097fe124dc6c33ccb9009817a99"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/carreira/como-se-destacar-na-gestao-licoes-de-um-arquiteto-de-software.html",
+      "antes": {
+        "titulo": "Como se Destacar na Gestão: Lições de um Arquiteto de Software",
+        "data": "2026-01-19T10:31:49.591Z",
+        "corpoHash": "699a6cf1820509d18c75c88e0fc52c6f57895c01e376884047218ec1fce816d9",
+        "fonte": {
+          "url": "https://www.zdnet.com/article/5-ways-to-prove-youre-ready-to-become-a-manager/",
+          "titulo": "Ready to be a manager? 5 ways to prove you deserve the job",
+          "data": "2026-01-19T10:00:48.000Z"
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Gestão de engenharia: responsabilidades antes da transição",
+        "descricao": "A definição de Engineering Manager da GitLab e um exercício proposto para discutir responsabilidades, limites de autoridade e prioridades antes da transição.",
+        "corpoHash": "af292ee56afc4e542012a9e94a9d2a31cbb026dc3a301ef076186f5070130e8a",
+        "fonte": {
+          "url": "https://handbook.gitlab.com/job-description-library/engineering/development/management/engineering-manager/",
+          "titulo": "Engineering Manager"
+        }
+      },
+      "motivo": "Substituir licoes pessoais nao comprovadas por responsabilidades atribuidas a GitLab e exercicio hipotetico. Fonte anterior indisponivel, sem alegar verificacao.",
+      "sobreposicao": "Responsabilidades de gestao de pessoas e de compromissos, distintas do registro de contribuicoes tecnicas individuais. Mantida URL existente, sem consolidacao.",
+      "limitacaoFonte": "ZDNet indisponivel para consulta. Fonte principal substituida pelo handbook publico da GitLab; data de publicacao desconhecida, sem reutilizar a data da ZDNet ou lastmod como publicacao.",
+      "evidencias": [
+        {
+          "seletor": ".fato-gestao",
+          "fonte": "https://handbook.gitlab.com/job-description-library/engineering/development/management/engineering-manager/",
+          "secao": "Engineering Manager: responsibilities e requisitos de lideranca tecnica; definicao especifica da GitLab",
+          "consultadoEm": "2026-10-10T02:04:10.178Z",
+          "textoHash": "b5587210e6d0ce4da6f3b17e289a973fca0f167c881b7557569ef229a4b82e27"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    },
+    {
+      "url": "artigos/banco-de-dados/transformacao-da-industria-de-dados-o-impacto-da-ia-e-a-nova-era-das-aquisicoes.html",
+      "antes": {
+        "titulo": "Transformação da Indústria de Dados: O Impacto da IA e a Nova Era das Aquisições",
+        "data": "2025-07-07T15:20:05.457Z",
+        "corpoHash": "e2b3135b71633233663273301c07e570b52f224266875542306f797e9819e3af",
+        "fonte": {
+          "url": "https://techcrunch.com/2025/07/07/ai-is-forcing-the-data-industry-to-consolidate-but-thats-not-the-whole-story/",
+          "titulo": "AI is forcing the data industry to consolidate — but that’s not the whole story",
+          "data": "2025-07-07T15:00:00.000Z"
+        },
+        "correcaoAnterior": null
+      },
+      "depois": {
+        "titulo": "Dados e IA: o que os anúncios de aquisições de 2025 comprovam",
+        "descricao": "Acordos e registros posteriores de Databricks, Fivetran e Salesforce, com um roteiro proposto para conferir integrações sem confundir anúncio com resultado.",
+        "corpoHash": "067b9072a5ce0b4b24b4fe944860c486d3bb0d777ab54471443c71b133967db9",
+        "fonte": {
+          "url": "https://www.databricks.com/blog/databricks-neon",
+          "titulo": "Databricks + Neon",
+          "data": "2025-05-14"
+        }
+      },
+      "motivo": "Separar acordos, fechamento e declaracoes comerciais; registrar fatos posteriores como atualizacao datada e propor verificacoes sem alegar execucao.",
+      "sobreposicao": "Leitura contextual do artigo e conferencia de fontes primarias. Nenhum outro registro usa a mesma fonte original, inclusive sem parametros; isso nao certifica unicidade tematica de todo o acervo.",
+      "limitacaoFonte": "Recorte historico, nao acompanhamento em tempo real das operacoes. TechCrunch preservado somente como referencia anterior; novas afirmacoes ancoradas nos comunicados citados.",
+      "evidencias": [
+        {
+          "seletor": ".fato-fivetran",
+          "fonte": "https://www.fivetran.com/press/fivetran-signs-agreement-to-acquire-census-delivering-the-first-end-to-end-data-movement-platform-for-the-ai-era",
+          "secao": "Comunicado de 01/05/2025: acordo e condicoes de fechamento",
+          "consultadoEm": "2026-10-10T02:04:10.178Z",
+          "textoHash": "49c2161682c32bcf86746f007cd16c57dc53491de61daef02fc7e8b422e5097c"
+        },
+        {
+          "seletor": ".fato-neon",
+          "fonte": "https://www.databricks.com/blog/databricks-neon",
+          "secao": "Anuncio de 14/05/2025: acordo e expectativas posteriores ao fechamento",
+          "consultadoEm": "2026-10-10T02:04:10.178Z",
+          "textoHash": "d5effcb8b4fedd981c88b3d01188fd55bb6d99b572a6147ea255dccae2da902d"
+        },
+        {
+          "seletor": ".fato-informatica-acordo",
+          "fonte": "https://www.salesforce.com/news/press-releases/2025/05/27/salesforce-signs-definitive-agreement-to-acquire-informatica/",
+          "secao": "Comunicado de 27/05/2025: valor patrimonial, investimento existente e condicoes",
+          "consultadoEm": "2026-10-10T02:04:10.178Z",
+          "textoHash": "34320b14df775622a1f3a8c96a1c34883659a122643624c136673ecb5de95086"
+        },
+        {
+          "seletor": ".fato-informatica-fechamento",
+          "fonte": "https://www.salesforce.com/news/press-releases/2025/11/18/salesforce-completes-acquisition-of-informatica/",
+          "secao": "Conclusao confirmada em 18/11/2025, posterior a publicacao original",
+          "consultadoEm": "2026-10-10T02:04:10.178Z",
+          "textoHash": "e50f2f1c67ae484da8b3333b3daaa9df7b12252c0897e41ae1250965c521e36b"
+        },
+        {
+          "seletor": ".fato-fivetran-posterior",
+          "fonte": "https://www.fivetran.com/blog/what-is-reverse-etl",
+          "secao": "Texto de 03/03/2026 relata aquisicao em maio de 2025 e Fivetran Activations",
+          "consultadoEm": "2026-10-10T02:04:10.178Z",
+          "textoHash": "bc85450d174695d8b095c5f7d5cc992542f0feaf4057a938ba7374bd435e6e46"
+        }
+      ],
+      "contribuicaoProposta": ".contribuicao-editorial",
+      "limites": ".limites-editoriais"
+    }
+  ]
+}
