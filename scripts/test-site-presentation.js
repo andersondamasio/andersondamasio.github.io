@@ -11,6 +11,26 @@ const entrada = `<!doctype html><html><head><meta charset="UTF-8"><title>Artigo<
 const runtime = fs.readFileSync(path.join(__dirname, 'site-interactions.js'), 'utf8');
 const cookies = fs.readFileSync(path.join(__dirname, 'cookies-banner.js'), 'utf8');
 
+test('paginas principais mantem rodape completo e contato ligado a privacidade', () => {
+  for (const file of ['sobre.html', 'contato.html', 'politica.html', 'termos.html', 'obrigado.html']) {
+    const $ = cheerio.load(fs.readFileSync(path.join(__dirname, '..', file), 'utf8'), { sourceCodeLocationInfo: true });
+    assert.equal($('footer').length, 1, file);
+    assert.ok($('footer')[0].sourceCodeLocation.endTag, `Rodape fechado: ${file}`);
+    assert.equal($('footer nav a[href="/politica.html"]').length, 1, file);
+    assert.equal($('#cookie-banner').closest('footer').length, 0, file);
+    assert.match($('footer').text(), /Anderson Damasio/, file);
+    if (file === 'contato.html') {
+      assert.equal($('#contact-form').attr('aria-describedby'), 'contact-privacy');
+      assert.equal($('#contact-privacy a').attr('href'), '/politica.html');
+    }
+    if (file === 'politica.html') {
+      assert.match($('main').text(), /nome, e-mail e o conte\u00fado da mensagem/);
+      assert.equal($('main a[href="https://formsubmit.co/privacy.pdf"]').length, 1);
+      assert.doesNotMatch($('main').text(), /n\u00e3o coleta informa\u00e7\u00f5es pessoais diretamente|coleta dados an\u00f4nimos|garantir a prote\u00e7\u00e3o/);
+    }
+  }
+});
+
 test('home usa marca discreta e rodape sem chamada comercial; sobre permanece explicito', () => {
   const entradaHome = '<html><head><meta charset="UTF-8"><title>Anderson Damasio</title></head><body><header><nav><a href="/">Inicio</a></nav></header><main class="home-page">' + gerarApresentacaoPerfil(new Date('2026-10-11T12:00:00Z')) + '</main><footer><nav></nav></footer></body></html>';
   const saida = aplicarLayoutSite(entradaHome, 'index.html');

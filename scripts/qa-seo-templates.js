@@ -105,7 +105,7 @@ async function main() {
       if (guias) {
         await pagina.setJavaScriptEnabled(false);
         await pagina.goto(`${origem}/index.html`, { waitUntil: "networkidle0" });
-        await Promise.all([pagina.waitForNavigation({ waitUntil: "networkidle0" }), pagina.click('.selected-readings h2 a')]);
+        await Promise.all([pagina.waitForNavigation({ waitUntil: "networkidle0" }), pagina.click('.selected-readings a[href="/guias.html"]')]);
         if (!pagina.url().endsWith('/guias.html')) throw new Error("Navegacao para guias sem JavaScript falhou.");
         await pagina.click('.reading-topics a:last-child');
         const topico = await pagina.evaluate(() => {
