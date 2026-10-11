@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 231</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-batalha-das-cameras-iphone-17-vs-iphone-17-pro-e-o-impacto-na-fotografia.html">A batalha das câmeras: iPhone 17 vs. iPhone 17 Pro e o impacto na fotografia</a><time datetime="2026-01-16T01:47:18.070Z">15/01/2026 22:47</time></li>
-<li><a href="artigos/inteligencia-artificial/a-danca-das-cadeiras-no-mundo-da-ia-quem-fica-e-quem-sai.html">A dança das cadeiras no mundo da IA: quem fica e quem sai?</a><time datetime="2026-01-15T23:24:09.556Z">15/01/2026 20:24</time></li>
-<li><a href="artigos/desenvolvimento-de-software/a-tempestade-perfeita-como-uma-queda-de-rede-pode-revelar-falhas-na-arquitetura-de-sistemas.html">A tempestade perfeita: como uma queda de rede pode revelar falhas na arquitetura de sistemas</a><time datetime="2026-01-15T22:24:48.897Z">15/01/2026 19:24</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-inteligencia-artificial-desvendando-o-impacto-do-raid-da-openai.html">A Nova Era da Inteligência Artificial: Desvendando o Impacto do Raid da OpenAI</a><time datetime="2026-01-15T21:24:20.976Z">15/01/2026 18:24</time></li>
-<li><a href="artigos/seguranca/atencao-com-seus-fones-de-ouvido-bluetooth-eles-podem-estar-em-risco.html">Atenção com seus fones de ouvido Bluetooth: eles podem estar em risco!</a><time datetime="2026-01-15T20:28:30.783Z">15/01/2026 17:28</time></li>
-<li><a href="artigos/tecnologia/como-aproveitar-o-wi-fi-gratis-em-voos-da-american-airlines-tecnologia-a-favor-do-viajante.html">Como aproveitar o Wi-Fi grátis em voos da American Airlines: tecnologia a favor do viajante</a><time datetime="2026-01-15T19:27:32.511Z">15/01/2026 16:27</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-fronteira-da-tecnologia-como-a-merge-labs-pode-transformar-a-interacao-humano-maquina.html">A nova fronteira da tecnologia: como a Merge Labs pode transformar a interação humano-máquina</a><time datetime="2026-01-15T18:39:40.287Z">15/01/2026 15:39</time></li>
-<li><a href="artigos/tecnologia/como-a-arquitetura-de-software-pode-ajudar-a-evitar-paradas-de-rede-licoes-da-queda-da-verizon.html">Como a Arquitetura de Software Pode Ajudar a Evitar Paradas de Rede: Lições da Queda da Verizon</a><time datetime="2026-01-15T17:34:09.766Z">15/01/2026 14:34</time></li>
-<li><a href="artigos/inteligencia-artificial/a-fusao-entre-humanos-e-maquinas-uma-nova-era-de-interfaces-neurais.html">A fusão entre humanos e máquinas: uma nova era de interfaces neurais</a><time datetime="2026-01-15T16:37:46.313Z">15/01/2026 13:37</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-planos-de-familia-t-mobile-da-um-no-na-concorrencia.html">A revolução dos planos de família: T-Mobile dá um nó na concorrência!</a><time datetime="2026-01-15T15:36:14.687Z">15/01/2026 12:36</time></li>
+<li><a href="artigos/tecnologia/a-batalha-das-cameras-iphone-17-vs-iphone-17-pro-e-o-impacto-na-fotografia.html">A batalha das câmeras: iPhone 17 vs. iPhone 17 Pro e o impacto na fotografia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-16T01:47:18.070Z">15/01/2026 22:47</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-danca-das-cadeiras-no-mundo-da-ia-quem-fica-e-quem-sai.html">A dança das cadeiras no mundo da IA: quem fica e quem sai?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-15T23:24:09.556Z">15/01/2026 20:24</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/a-tempestade-perfeita-como-uma-queda-de-rede-pode-revelar-falhas-na-arquitetura-de-sistemas.html">A tempestade perfeita: como uma queda de rede pode revelar falhas na arquitetura de sistemas</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-01-15T22:24:48.897Z">15/01/2026 19:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-inteligencia-artificial-desvendando-o-impacto-do-raid-da-openai.html">A Nova Era da Inteligência Artificial: Desvendando o Impacto do Raid da OpenAI</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-15T21:24:20.976Z">15/01/2026 18:24</time></div></li>
+<li><a href="artigos/seguranca/atencao-com-seus-fones-de-ouvido-bluetooth-eles-podem-estar-em-risco.html">Atenção com seus fones de ouvido Bluetooth: eles podem estar em risco!</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-01-15T20:28:30.783Z">15/01/2026 17:28</time></div></li>
+<li><a href="artigos/tecnologia/como-aproveitar-o-wi-fi-gratis-em-voos-da-american-airlines-tecnologia-a-favor-do-viajante.html">Como aproveitar o Wi-Fi grátis em voos da American Airlines: tecnologia a favor do viajante</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-15T19:27:32.511Z">15/01/2026 16:27</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-fronteira-da-tecnologia-como-a-merge-labs-pode-transformar-a-interacao-humano-maquina.html">A nova fronteira da tecnologia: como a Merge Labs pode transformar a interação humano-máquina</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-15T18:39:40.287Z">15/01/2026 15:39</time></div></li>
+<li><a href="artigos/tecnologia/como-a-arquitetura-de-software-pode-ajudar-a-evitar-paradas-de-rede-licoes-da-queda-da-verizon.html">Como a Arquitetura de Software Pode Ajudar a Evitar Paradas de Rede: Lições da Queda da Verizon</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-15T17:34:09.766Z">15/01/2026 14:34</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-fusao-entre-humanos-e-maquinas-uma-nova-era-de-interfaces-neurais.html">A fusão entre humanos e máquinas: uma nova era de interfaces neurais</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-15T16:37:46.313Z">15/01/2026 13:37</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-planos-de-familia-t-mobile-da-um-no-na-concorrencia.html">A revolução dos planos de família: T-Mobile dá um nó na concorrência!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-15T15:36:14.687Z">15/01/2026 12:36</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 213</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-revolucao-das-playlists-como-a-nova-funcao-do-spotify-transforma-a-curadoria-musical.html">A revolução das playlists: como a nova função do Spotify transforma a curadoria musical</a><time datetime="2026-01-24T08:30:20.838Z">24/01/2026 05:30</time></li>
-<li><a href="artigos/banco-de-dados/abertura-de-patente-da-oracle-um-novo-horizonte-para-algoritmos-de-ordenacao-em-bancos-de-dados-open-source.html">Abertura de Patente da Oracle: Um Novo Horizonte para Algoritmos de Ordenação em Bancos de Dados Open Source</a><time datetime="2026-01-24T07:22:51.949Z">24/01/2026 04:22</time></li>
-<li><a href="artigos/inteligencia-artificial/a-corrida-do-legal-tech-harvey-e-a-busca-pela-inovacao.html">A corrida do legal tech: Harvey e a busca pela inovação</a><time datetime="2026-01-24T06:34:28.449Z">24/01/2026 03:34</time></li>
-<li><a href="artigos/tecnologia/a-apple-e-o-crescimento-do-iphone-na-india-oportunidades-e-desafios-no-mercado-de-smartphones.html">A Apple e o Crescimento do iPhone na Índia: Oportunidades e Desafios no Mercado de Smartphones</a><time datetime="2026-01-24T05:24:16.805Z">24/01/2026 02:24</time></li>
-<li><a href="artigos/seguranca/o-que-a-nova-politica-de-privacidade-do-tiktok-nos-ensina-sobre-dados-sensiveis.html">O que a nova política de privacidade do TikTok nos ensina sobre dados sensíveis</a><time datetime="2026-01-24T04:38:25.173Z">24/01/2026 01:38</time></li>
-<li><a href="artigos/tecnologia/como-melhorar-a-experiencia-de-assistir-tv-dicas-de-configuracao-e-arquitetura-de-software.html">Como Melhorar a Experiência de Assistir TV: Dicas de Configuração e Arquitetura de Software</a><time datetime="2026-01-24T03:29:55.107Z">24/01/2026 00:29</time></li>
-<li><a href="artigos/tecnologia/aproveite-a-internet-com-estilo-planos-da-verizon-que-valem-a-pena.html">Aproveite a Internet com Estilo: Planos da Verizon que Valem a Pena!</a><time datetime="2026-01-24T01:44:38.133Z">23/01/2026 22:44</time></li>
-<li><a href="artigos/inteligencia-artificial/a-corrida-da-ia-china-e-o-impacto-no-futuro-do-desenvolvimento-de-software.html">A corrida da IA: China e o impacto no futuro do desenvolvimento de software</a><time datetime="2026-01-23T23:24:17.196Z">23/01/2026 20:24</time></li>
-<li><a href="artigos/tecnologia/desconfie-do-app-de-clima-como-confiar-em-meteorologistas-e-tecnologia-para-prever-tempestades.html">Desconfie do app de clima: como confiar em meteorologistas e tecnologia para prever tempestades</a><time datetime="2026-01-23T22:21:25.294Z">23/01/2026 19:21</time></li>
-<li><a href="artigos/seguranca/a-guerra-das-startups-espionagem-processos-e-o-futuro-da-inovacao.html">A guerra das startups: espionagem, processos e o futuro da inovação</a><time datetime="2026-01-23T21:24:14.821Z">23/01/2026 18:24</time></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-das-playlists-como-a-nova-funcao-do-spotify-transforma-a-curadoria-musical.html">A revolução das playlists: como a nova função do Spotify transforma a curadoria musical</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-24T08:30:20.838Z">24/01/2026 05:30</time></div></li>
+<li><a href="artigos/banco-de-dados/abertura-de-patente-da-oracle-um-novo-horizonte-para-algoritmos-de-ordenacao-em-bancos-de-dados-open-source.html">Abertura de Patente da Oracle: Um Novo Horizonte para Algoritmos de Ordenação em Bancos de Dados Open Source</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2026-01-24T07:22:51.949Z">24/01/2026 04:22</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-corrida-do-legal-tech-harvey-e-a-busca-pela-inovacao.html">A corrida do legal tech: Harvey e a busca pela inovação</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-24T06:34:28.449Z">24/01/2026 03:34</time></div></li>
+<li><a href="artigos/tecnologia/a-apple-e-o-crescimento-do-iphone-na-india-oportunidades-e-desafios-no-mercado-de-smartphones.html">A Apple e o Crescimento do iPhone na Índia: Oportunidades e Desafios no Mercado de Smartphones</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-24T05:24:16.805Z">24/01/2026 02:24</time></div></li>
+<li><a href="artigos/seguranca/o-que-a-nova-politica-de-privacidade-do-tiktok-nos-ensina-sobre-dados-sensiveis.html">O que a nova política de privacidade do TikTok nos ensina sobre dados sensíveis</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-01-24T04:38:25.173Z">24/01/2026 01:38</time></div></li>
+<li><a href="artigos/tecnologia/como-melhorar-a-experiencia-de-assistir-tv-dicas-de-configuracao-e-arquitetura-de-software.html">Como Melhorar a Experiência de Assistir TV: Dicas de Configuração e Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-24T03:29:55.107Z">24/01/2026 00:29</time></div></li>
+<li><a href="artigos/tecnologia/aproveite-a-internet-com-estilo-planos-da-verizon-que-valem-a-pena.html">Aproveite a Internet com Estilo: Planos da Verizon que Valem a Pena!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-24T01:44:38.133Z">23/01/2026 22:44</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-corrida-da-ia-china-e-o-impacto-no-futuro-do-desenvolvimento-de-software.html">A corrida da IA: China e o impacto no futuro do desenvolvimento de software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-23T23:24:17.196Z">23/01/2026 20:24</time></div></li>
+<li><a href="artigos/tecnologia/desconfie-do-app-de-clima-como-confiar-em-meteorologistas-e-tecnologia-para-prever-tempestades.html">Desconfie do app de clima: como confiar em meteorologistas e tecnologia para prever tempestades</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-23T22:21:25.294Z">23/01/2026 19:21</time></div></li>
+<li><a href="artigos/seguranca/a-guerra-das-startups-espionagem-processos-e-o-futuro-da-inovacao.html">A guerra das startups: espionagem, processos e o futuro da inovação</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-01-23T21:24:14.821Z">23/01/2026 18:24</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

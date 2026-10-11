@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 737</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/seguranca/quando-a-inteligencia-artificial-se-torna-uma-ameaca-licoes-de-seguranca-para-desenvolvedores.html">Quando a Inteligência Artificial se Torna uma Ameaça: Lições de Segurança para Desenvolvedores</a><time datetime="2025-05-24T16:21:20.808Z">24/05/2025 13:21</time></li>
-<li><a href="artigos/tecnologia/kesha-e-a-revolucao-dos-criadores-como-a-tecnologia-pode-empoderar-artistas-na-era-digital.html">Kesha e a Revolução dos Criadores: Como a Tecnologia Pode Empoderar Artistas na Era Digital</a><time datetime="2025-05-24T15:18:21.867Z">24/05/2025 12:18</time></li>
-<li><a href="artigos/seguranca/a-protecao-da-privacidade-digital-um-dilema-entre-seguranca-e-controle-parental.html">A proteção da privacidade digital: um dilema entre segurança e controle parental</a><time datetime="2025-05-24T14:16:44.580Z">24/05/2025 11:16</time></li>
-<li><a href="artigos/seguranca/como-a-arquitetura-de-software-pode-minimizar-riscos-em-terceiros.html">Como a Arquitetura de Software Pode Minimizar Riscos em Terceiros</a><time datetime="2025-05-24T13:25:47.174Z">24/05/2025 10:25</time></li>
-<li><a href="artigos/inteligencia-artificial/jarvis-da-cisco-a-revolucao-da-engenharia-de-plataformas-com-ia.html">JARVIS da Cisco: A Revolução da Engenharia de Plataformas com IA</a><time datetime="2025-05-24T12:33:55.294Z">24/05/2025 09:33</time></li>
-<li><a href="artigos/inteligencia-artificial/construtores-de-sites-com-ia-o-futuro-do-desenvolvimento-web-em-2025.html">Construtores de Sites com IA: O Futuro do Desenvolvimento Web em 2025</a><time datetime="2025-05-24T11:14:48.259Z">24/05/2025 08:14</time></li>
-<li><a href="artigos/cloud/uber-e-a-revolucao-kubernetes-licoes-para-arquitetos-de-software.html">Uber e a Revolução Kubernetes: Lições para Arquitetos de Software</a><time datetime="2025-05-24T09:17:48.960Z">24/05/2025 06:17</time></li>
-<li><a href="artigos/inteligencia-artificial/acelerando-a-inteligencia-artificial-como-o-novo-litert-revoluciona-a-inferencia-em-dispositivos-moveis.html">Acelerando a Inteligência Artificial: Como o Novo LiteRT Revoluciona a Inferência em Dispositivos Móveis</a><time datetime="2025-05-24T08:21:35.496Z">24/05/2025 05:21</time></li>
-<li><a href="artigos/inteligencia-artificial/mistral-ai-o-despertar-de-uma-nova-era-na-inteligencia-artificial-europeia.html">Mistral AI: O Despertar de uma Nova Era na Inteligência Artificial Europeia</a><time datetime="2025-05-24T07:17:20.028Z">24/05/2025 04:17</time></li>
-<li><a href="artigos/banco-de-dados/redis-o-retorno-ao-codigo-aberto-e-as-implicacoes-para-arquitetura-de-software.html">Redis: O Retorno ao Código Aberto e as Implicações para Arquitetura de Software</a><time datetime="2025-05-24T06:24:02.964Z">24/05/2025 03:24</time></li>
+<li><a href="artigos/seguranca/quando-a-inteligencia-artificial-se-torna-uma-ameaca-licoes-de-seguranca-para-desenvolvedores.html">Quando a Inteligência Artificial se Torna uma Ameaça: Lições de Segurança para Desenvolvedores</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-05-24T16:21:20.808Z">24/05/2025 13:21</time></div></li>
+<li><a href="artigos/tecnologia/kesha-e-a-revolucao-dos-criadores-como-a-tecnologia-pode-empoderar-artistas-na-era-digital.html">Kesha e a Revolução dos Criadores: Como a Tecnologia Pode Empoderar Artistas na Era Digital</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-05-24T15:18:21.867Z">24/05/2025 12:18</time></div></li>
+<li><a href="artigos/seguranca/a-protecao-da-privacidade-digital-um-dilema-entre-seguranca-e-controle-parental.html">A proteção da privacidade digital: um dilema entre segurança e controle parental</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-05-24T14:16:44.580Z">24/05/2025 11:16</time></div></li>
+<li><a href="artigos/seguranca/como-a-arquitetura-de-software-pode-minimizar-riscos-em-terceiros.html">Como a Arquitetura de Software Pode Minimizar Riscos em Terceiros</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-05-24T13:25:47.174Z">24/05/2025 10:25</time></div></li>
+<li><a href="artigos/inteligencia-artificial/jarvis-da-cisco-a-revolucao-da-engenharia-de-plataformas-com-ia.html">JARVIS da Cisco: A Revolução da Engenharia de Plataformas com IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-05-24T12:33:55.294Z">24/05/2025 09:33</time></div></li>
+<li><a href="artigos/inteligencia-artificial/construtores-de-sites-com-ia-o-futuro-do-desenvolvimento-web-em-2025.html">Construtores de Sites com IA: O Futuro do Desenvolvimento Web em 2025</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-05-24T11:14:48.259Z">24/05/2025 08:14</time></div></li>
+<li><a href="artigos/cloud/uber-e-a-revolucao-kubernetes-licoes-para-arquitetos-de-software.html">Uber e a Revolução Kubernetes: Lições para Arquitetos de Software</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-05-24T09:17:48.960Z">24/05/2025 06:17</time></div></li>
+<li><a href="artigos/inteligencia-artificial/acelerando-a-inteligencia-artificial-como-o-novo-litert-revoluciona-a-inferencia-em-dispositivos-moveis.html">Acelerando a Inteligência Artificial: Como o Novo LiteRT Revoluciona a Inferência em Dispositivos Móveis</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-05-24T08:21:35.496Z">24/05/2025 05:21</time></div></li>
+<li><a href="artigos/inteligencia-artificial/mistral-ai-o-despertar-de-uma-nova-era-na-inteligencia-artificial-europeia.html">Mistral AI: O Despertar de uma Nova Era na Inteligência Artificial Europeia</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-05-24T07:17:20.028Z">24/05/2025 04:17</time></div></li>
+<li><a href="artigos/banco-de-dados/redis-o-retorno-ao-codigo-aberto-e-as-implicacoes-para-arquitetura-de-software.html">Redis: O Retorno ao Código Aberto e as Implicações para Arquitetura de Software</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2025-05-24T06:24:02.964Z">24/05/2025 03:24</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

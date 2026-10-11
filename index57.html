@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 57</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/desenvolvimento-de-software/inovacao-e-sustentabilidade-o-crescimento-exponencial-de-startups-de-servicos-e-o-papel-da-arquitetura-de-software.html">Inovação e Sustentabilidade: O Crescimento Exponencial de Startups de Serviços e o Papel da Arquitetura de Software</a><time datetime="2026-04-25T05:16:35.355Z">25/04/2026 02:16</time></li>
-<li><a href="artigos/tecnologia/a-era-da-tecnologia-militar-reflexoes-sobre-o-manifesto-de-karp-e-seu-impacto-na-sociedade.html">A era da tecnologia militar: reflexões sobre o manifesto de Karp e seu impacto na sociedade</a><time datetime="2026-04-25T02:31:19.756Z">24/04/2026 23:31</time></li>
-<li><a href="artigos/tecnologia/a-linha-tenue-entre-inovacao-e-fraude-licoes-do-caso-aspiration.html">A linha tênue entre inovação e fraude: lições do caso Aspiration</a><time datetime="2026-04-24T23:43:51.307Z">24/04/2026 20:43</time></li>
-<li><a href="artigos/tecnologia/como-a-palantir-e-o-irs-estao-usando-tecnologia-para-desmascarar-crimes-financeiros.html">Como a Palantir e o IRS estão usando tecnologia para desmascarar crimes financeiros?</a><time datetime="2026-04-24T22:43:59.668Z">24/04/2026 19:43</time></li>
-<li><a href="artigos/inteligencia-artificial/a-fusao-transatlantica-a-nova-era-da-inteligencia-artificial.html">A fusão transatlântica: a nova era da inteligência artificial</a><time datetime="2026-04-24T21:52:49.151Z">24/04/2026 18:52</time></li>
-<li><a href="artigos/inteligencia-artificial/a-corrida-pelos-melhores-cerebros-da-tecnologia-a-batalha-entre-meta-e-thinking-machines.html">A corrida pelos melhores cérebros da tecnologia: a batalha entre Meta e Thinking Machines</a><time datetime="2026-04-24T20:53:14.038Z">24/04/2026 17:53</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-do-controle-criativo-como-a-comfyui-transforma-a-geracao-de-midias-com-ia.html">A revolução do controle criativo: como a ComfyUI transforma a geração de mídias com IA</a><time datetime="2026-04-24T19:58:18.941Z">24/04/2026 16:58</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-hotspots-o-que-a-proibicao-da-fcc-significa-para-nos.html">A nova era dos hotspots: o que a proibição da FCC significa para nós?</a><time datetime="2026-04-24T18:57:47.945Z">24/04/2026 15:57</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-gadgets-como-dispositivos-inusitados-podem-transformar-sua-casa-em-um-lar-inteligente.html">A revolução dos gadgets: como dispositivos inusitados podem transformar sua casa em um lar inteligente</a><time datetime="2026-04-24T17:57:18.095Z">24/04/2026 14:57</time></li>
-<li><a href="artigos/tecnologia/os-segredos-de-um-entretenimento-acessivel-como-otimizar-suas-assinaturas-de-streaming.html">Os segredos de um entretenimento acessível: como otimizar suas assinaturas de streaming</a><time datetime="2026-04-24T17:01:52.779Z">24/04/2026 14:01</time></li>
+<li><a href="artigos/desenvolvimento-de-software/inovacao-e-sustentabilidade-o-crescimento-exponencial-de-startups-de-servicos-e-o-papel-da-arquitetura-de-software.html">Inovação e Sustentabilidade: O Crescimento Exponencial de Startups de Serviços e o Papel da Arquitetura de Software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-04-25T05:16:35.355Z">25/04/2026 02:16</time></div></li>
+<li><a href="artigos/tecnologia/a-era-da-tecnologia-militar-reflexoes-sobre-o-manifesto-de-karp-e-seu-impacto-na-sociedade.html">A era da tecnologia militar: reflexões sobre o manifesto de Karp e seu impacto na sociedade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-25T02:31:19.756Z">24/04/2026 23:31</time></div></li>
+<li><a href="artigos/tecnologia/a-linha-tenue-entre-inovacao-e-fraude-licoes-do-caso-aspiration.html">A linha tênue entre inovação e fraude: lições do caso Aspiration</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-24T23:43:51.307Z">24/04/2026 20:43</time></div></li>
+<li><a href="artigos/tecnologia/como-a-palantir-e-o-irs-estao-usando-tecnologia-para-desmascarar-crimes-financeiros.html">Como a Palantir e o IRS estão usando tecnologia para desmascarar crimes financeiros?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-24T22:43:59.668Z">24/04/2026 19:43</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-fusao-transatlantica-a-nova-era-da-inteligencia-artificial.html">A fusão transatlântica: a nova era da inteligência artificial</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-24T21:52:49.151Z">24/04/2026 18:52</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-corrida-pelos-melhores-cerebros-da-tecnologia-a-batalha-entre-meta-e-thinking-machines.html">A corrida pelos melhores cérebros da tecnologia: a batalha entre Meta e Thinking Machines</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-24T20:53:14.038Z">24/04/2026 17:53</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-do-controle-criativo-como-a-comfyui-transforma-a-geracao-de-midias-com-ia.html">A revolução do controle criativo: como a ComfyUI transforma a geração de mídias com IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-24T19:58:18.941Z">24/04/2026 16:58</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-hotspots-o-que-a-proibicao-da-fcc-significa-para-nos.html">A nova era dos hotspots: o que a proibição da FCC significa para nós?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-24T18:57:47.945Z">24/04/2026 15:57</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-gadgets-como-dispositivos-inusitados-podem-transformar-sua-casa-em-um-lar-inteligente.html">A revolução dos gadgets: como dispositivos inusitados podem transformar sua casa em um lar inteligente</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-24T17:57:18.095Z">24/04/2026 14:57</time></div></li>
+<li><a href="artigos/tecnologia/os-segredos-de-um-entretenimento-acessivel-como-otimizar-suas-assinaturas-de-streaming.html">Os segredos de um entretenimento acessível: como otimizar suas assinaturas de streaming</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-24T17:01:52.779Z">24/04/2026 14:01</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

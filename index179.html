@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 179</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-inteligencia-artificial-do-hype-a-producao-real.html">A nova era da Inteligência Artificial: do hype à produção real</a><time datetime="2026-02-10T13:16:50.388Z">10/02/2026 10:16</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-vps-como-escolher-o-melhor-para-seu-projeto-em-2026.html">A Revolução do VPS: Como Escolher o Melhor para Seu Projeto em 2026</a><time datetime="2026-02-10T11:08:55.645Z">10/02/2026 08:08</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-comunicacoes-como-o-voip-esta-transformando-o-mundo-dos-negocios.html">A revolução das comunicações: como o VoIP está transformando o mundo dos negócios</a><time datetime="2026-02-10T10:04:13.472Z">10/02/2026 07:04</time></li>
-<li><a href="artigos/programacao/waku-a-nova-jogada-no-tabuleiro-dos-frameworks-react.html">Waku: A Nova Jogada no Tabuleiro dos Frameworks React</a><time datetime="2026-02-10T08:59:10.065Z">10/02/2026 05:59</time></li>
-<li><a href="artigos/inteligencia-artificial/a-armadilha-da-produtividade-como-a-ai-pode-estar-nos-levando-ao-burnout.html">A armadilha da produtividade: como a AI pode estar nos levando ao burnout</a><time datetime="2026-02-10T07:07:44.814Z">10/02/2026 04:07</time></li>
-<li><a href="artigos/tecnologia/o-poder-dos-nfc-como-um-simples-adesivo-pode-compartilhar-sua-senha-de-wi-fi.html">O poder dos NFC: como um simples adesivo pode compartilhar sua senha de Wi-Fi</a><time datetime="2026-02-10T05:07:48.448Z">10/02/2026 02:07</time></li>
-<li><a href="artigos/tecnologia/como-reiniciar-seu-android-sem-apertar-o-botao-truques-que-so-os-experts-conhecem.html">Como reiniciar seu Android sem apertar o botão: truques que só os experts conhecem</a><time datetime="2026-02-10T02:29:45.858Z">09/02/2026 23:29</time></li>
-<li><a href="artigos/tecnologia-automotiva/a-revolucao-dos-robotaxis-como-a-waymo-esta-mudando-o-transito-em-nashville.html">A revolução dos robotáxis: como a Waymo está mudando o trânsito em Nashville</a><time datetime="2026-02-09T23:39:46.860Z">09/02/2026 20:39</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-cameras-por-que-a-logitech-mevo-core-pode-ser-um-game-changer.html">A revolução das câmeras: Por que a Logitech Mevo Core pode ser um game changer</a><time datetime="2026-02-09T22:39:19.818Z">09/02/2026 19:39</time></li>
-<li><a href="artigos/fintech/como-a-aquisicao-do-app-step-pode-transformar-a-educacao-financeira-de-geracoes-futuras.html">Como a Aquisição do App Step Pode Transformar a Educação Financeira de Gerações Futuras</a><time datetime="2026-02-09T21:42:00.439Z">09/02/2026 18:42</time></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-inteligencia-artificial-do-hype-a-producao-real.html">A nova era da Inteligência Artificial: do hype à produção real</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-10T13:16:50.388Z">10/02/2026 10:16</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-vps-como-escolher-o-melhor-para-seu-projeto-em-2026.html">A Revolução do VPS: Como Escolher o Melhor para Seu Projeto em 2026</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-10T11:08:55.645Z">10/02/2026 08:08</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-comunicacoes-como-o-voip-esta-transformando-o-mundo-dos-negocios.html">A revolução das comunicações: como o VoIP está transformando o mundo dos negócios</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-10T10:04:13.472Z">10/02/2026 07:04</time></div></li>
+<li><a href="artigos/programacao/waku-a-nova-jogada-no-tabuleiro-dos-frameworks-react.html">Waku: A Nova Jogada no Tabuleiro dos Frameworks React</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-02-10T08:59:10.065Z">10/02/2026 05:59</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-armadilha-da-produtividade-como-a-ai-pode-estar-nos-levando-ao-burnout.html">A armadilha da produtividade: como a AI pode estar nos levando ao burnout</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-10T07:07:44.814Z">10/02/2026 04:07</time></div></li>
+<li><a href="artigos/tecnologia/o-poder-dos-nfc-como-um-simples-adesivo-pode-compartilhar-sua-senha-de-wi-fi.html">O poder dos NFC: como um simples adesivo pode compartilhar sua senha de Wi-Fi</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-10T05:07:48.448Z">10/02/2026 02:07</time></div></li>
+<li><a href="artigos/tecnologia/como-reiniciar-seu-android-sem-apertar-o-botao-truques-que-so-os-experts-conhecem.html">Como reiniciar seu Android sem apertar o botão: truques que só os experts conhecem</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-10T02:29:45.858Z">09/02/2026 23:29</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/a-revolucao-dos-robotaxis-como-a-waymo-esta-mudando-o-transito-em-nashville.html">A revolução dos robotáxis: como a Waymo está mudando o trânsito em Nashville</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2026-02-09T23:39:46.860Z">09/02/2026 20:39</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-cameras-por-que-a-logitech-mevo-core-pode-ser-um-game-changer.html">A revolução das câmeras: Por que a Logitech Mevo Core pode ser um game changer</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-09T22:39:19.818Z">09/02/2026 19:39</time></div></li>
+<li><a href="artigos/fintech/como-a-aquisicao-do-app-step-pode-transformar-a-educacao-financeira-de-geracoes-futuras.html">Como a Aquisição do App Step Pode Transformar a Educação Financeira de Gerações Futuras</a><div class="article-list-meta"><span>Fintech</span><time datetime="2026-02-09T21:42:00.439Z">09/02/2026 18:42</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

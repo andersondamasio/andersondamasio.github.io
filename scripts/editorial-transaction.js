@@ -21,8 +21,13 @@ function destinoSeguro(root, arquivo) {
 function gravarAtomico(destino, conteudo) {
   const temporario = `${destino}.editorial-tmp`;
   fs.mkdirSync(path.dirname(destino), { recursive: true });
-  fs.writeFileSync(temporario, conteudo, { flag: "wx" });
-  fs.renameSync(temporario, destino);
+  const fd = fs.openSync(temporario, 'wx');
+  try {
+    try { fs.writeFileSync(fd, conteudo); } finally { fs.closeSync(fd); }
+    fs.renameSync(temporario, destino);
+  } finally {
+    if (fs.existsSync(temporario)) fs.unlinkSync(temporario);
+  }
 }
 
 function registrarAlteracao(arquivo) {
@@ -39,7 +44,7 @@ function registrarAlteracao(arquivo) {
 }
 
 function escreverPublicacao(arquivo, conteudo) {
-  if (!transacao) return fs.writeFileSync(arquivo, conteudo);
+  if (!transacao) return gravarAtomico(arquivo, conteudo);
   gravarAtomico(registrarAlteracao(arquivo), conteudo);
 }
 
@@ -104,4 +109,4 @@ function recuperarPublicacaoInterrompida(root = process.cwd()) {
   limparJournal(root, pasta);
 }
 
-module.exports = { executarPublicacao, escreverPublicacao, removerPublicacao, recuperarPublicacaoInterrompida };
+module.exports = { executarPublicacao, escreverPublicacao, removerPublicacao, recuperarPublicacaoInterrompida, gravarAtomico };

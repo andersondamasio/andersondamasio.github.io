@@ -45,6 +45,18 @@ function prepararVerificacao({ ler, lerBinario, revisao }) {
     arquivosLeituras = [...new Set(["guias.html", ...destinos.map(url => url.slice(1))])];
   }
   const arquivos = ["index.html", "sobre.html", "sitemap.xml", "rss.xml", "robots.txt", "ads.txt", ...recentes, ...arquivosNavegacao, ...arquivosLeituras];
+  if (home('link[href="/scripts/site-theme.css"]').length) {
+    for (const arquivo of ['scripts/site-theme.css', 'scripts/theme-toggle.js']) {
+      if (!ler(arquivo)?.trim()) throw new Error(`Recurso de tema ausente: ${arquivo}`);
+      arquivos.push(arquivo);
+    }
+  }
+  if (home('link[href="/scripts/site-presentation.css"]').length) {
+    for (const arquivo of ['scripts/site-presentation.css', 'scripts/site-interactions.js', 'scripts/cookies-banner.js']) {
+      if (!ler(arquivo)?.trim()) throw new Error(`Recurso de apresentacao ausente: ${arquivo}`);
+      arquivos.push(arquivo);
+    }
+  }
   let controlaDocumentos = false;
   try { controlaDocumentos = Boolean(ler("_config.yml")); } catch { /* Older revisions predate the Pages publication policy. */ }
   const ausentes = controlaDocumentos ? ["EDITORIAL_OPERACAO", "SEO_MELHORIAS_REALIZADAS", "dados/humanizer-rules", "exemplos/reservoir-sampling/README", "exemplos/design-tokens/README", "exemplos/fila-cpp/README", "exemplos/health-checks/README"]

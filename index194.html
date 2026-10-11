@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 194</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-desconfianca-em-ia-um-desafio-a-ser-superado-com-treinamento-e-transparencia.html">A desconfiança em IA: um desafio a ser superado com treinamento e transparência</a><time datetime="2026-02-02T08:45:31.444Z">02/02/2026 05:45</time></li>
-<li><a href="artigos/desenvolvimento-de-software/a-resiliencia-das-plataformas-digitais-licoes-do-apagao-do-tiktok.html">A resiliência das plataformas digitais: lições do apagão do TikTok</a><time datetime="2026-02-02T07:53:36.102Z">02/02/2026 04:53</time></li>
-<li><a href="artigos/tecnologia/como-escolher-entre-windows-11-home-e-pro-uma-decisao-que-pode-transformar-seu-pc.html">Como escolher entre Windows 11 Home e Pro: Uma decisão que pode transformar seu PC</a><time datetime="2026-02-02T06:08:16.397Z">02/02/2026 03:08</time></li>
-<li><a href="artigos/desenvolvimento-de-software/desvendando-as-novidades-do-ecossistema-java-o-que-esperar-de-jakarta-ee-12-e-outras-atualizacoes.html">Desvendando as Novidades do Ecossistema Java: O que Esperar de Jakarta EE 12 e Outras Atualizações</a><time datetime="2026-02-02T05:01:20.333Z">02/02/2026 02:01</time></li>
-<li><a href="artigos/seguranca/monitorando-a-seguranca-ring-e-blink-em-foco.html">Monitorando a Segurança: Ring e Blink em Foco</a><time datetime="2026-02-02T02:10:59.410Z">01/02/2026 23:10</time></li>
-<li><a href="artigos/seguranca/desvendando-as-sombras-a-conexao-entre-hacking-e-seguranca-digital.html">Desvendando as Sombras: A Conexão entre Hacking e Segurança Digital</a><time datetime="2026-02-01T23:27:54.927Z">01/02/2026 20:27</time></li>
-<li><a href="artigos/inteligencia-artificial/ai-e-as-demissoes-uma-cortina-de-fumaca-ou-uma-transformacao-real.html">AI e as Demissões: Uma Cortina de Fumaça ou uma Transformação Real?</a><time datetime="2026-02-01T22:27:24.087Z">01/02/2026 19:27</time></li>
-<li><a href="artigos/blockchain/a-nova-corrida-das-stablecoins-o-que-tether-pode-nos-ensinar-sobre-o-futuro-financeiro.html">A nova corrida das stablecoins: O que Tether pode nos ensinar sobre o futuro financeiro</a><time datetime="2026-02-01T21:26:53.702Z">01/02/2026 18:26</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-conglomerados-pessoais-um-olhar-sobre-a-arquitetura-de-musk.html">A nova era dos conglomerados pessoais: um olhar sobre a arquitetura de Musk</a><time datetime="2026-02-01T20:30:00.255Z">01/02/2026 17:30</time></li>
-<li><a href="artigos/tecnologia/a-batalha-das-bilheteiras-como-documentarios-podem-impactar-o-mercado-do-streaming.html">A batalha das bilheteiras: Como documentários podem impactar o mercado do streaming</a><time datetime="2026-02-01T19:27:22.717Z">01/02/2026 16:27</time></li>
+<li><a href="artigos/inteligencia-artificial/a-desconfianca-em-ia-um-desafio-a-ser-superado-com-treinamento-e-transparencia.html">A desconfiança em IA: um desafio a ser superado com treinamento e transparência</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-02T08:45:31.444Z">02/02/2026 05:45</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/a-resiliencia-das-plataformas-digitais-licoes-do-apagao-do-tiktok.html">A resiliência das plataformas digitais: lições do apagão do TikTok</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-02-02T07:53:36.102Z">02/02/2026 04:53</time></div></li>
+<li><a href="artigos/tecnologia/como-escolher-entre-windows-11-home-e-pro-uma-decisao-que-pode-transformar-seu-pc.html">Como escolher entre Windows 11 Home e Pro: Uma decisão que pode transformar seu PC</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-02T06:08:16.397Z">02/02/2026 03:08</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/desvendando-as-novidades-do-ecossistema-java-o-que-esperar-de-jakarta-ee-12-e-outras-atualizacoes.html">Desvendando as Novidades do Ecossistema Java: O que Esperar de Jakarta EE 12 e Outras Atualizações</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-02-02T05:01:20.333Z">02/02/2026 02:01</time></div></li>
+<li><a href="artigos/seguranca/monitorando-a-seguranca-ring-e-blink-em-foco.html">Monitorando a Segurança: Ring e Blink em Foco</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-02T02:10:59.410Z">01/02/2026 23:10</time></div></li>
+<li><a href="artigos/seguranca/desvendando-as-sombras-a-conexao-entre-hacking-e-seguranca-digital.html">Desvendando as Sombras: A Conexão entre Hacking e Segurança Digital</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-01T23:27:54.927Z">01/02/2026 20:27</time></div></li>
+<li><a href="artigos/inteligencia-artificial/ai-e-as-demissoes-uma-cortina-de-fumaca-ou-uma-transformacao-real.html">AI e as Demissões: Uma Cortina de Fumaça ou uma Transformação Real?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-01T22:27:24.087Z">01/02/2026 19:27</time></div></li>
+<li><a href="artigos/blockchain/a-nova-corrida-das-stablecoins-o-que-tether-pode-nos-ensinar-sobre-o-futuro-financeiro.html">A nova corrida das stablecoins: O que Tether pode nos ensinar sobre o futuro financeiro</a><div class="article-list-meta"><span>Blockchain</span><time datetime="2026-02-01T21:26:53.702Z">01/02/2026 18:26</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-conglomerados-pessoais-um-olhar-sobre-a-arquitetura-de-musk.html">A nova era dos conglomerados pessoais: um olhar sobre a arquitetura de Musk</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-01T20:30:00.255Z">01/02/2026 17:30</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-das-bilheteiras-como-documentarios-podem-impactar-o-mercado-do-streaming.html">A batalha das bilheteiras: Como documentários podem impactar o mercado do streaming</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-01T19:27:22.717Z">01/02/2026 16:27</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 181</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-evolucao-das-baterias-por-que-a-tecnologia-de-estado-solido-ainda-nao-chegou-ao-nosso-dia-a-dia.html">A evolução das baterias: Por que a tecnologia de estado sólido ainda não chegou ao nosso dia a dia?</a><time datetime="2026-02-09T05:02:45.222Z">09/02/2026 02:02</time></li>
-<li><a href="artigos/seguranca/a-tela-que-cuida-da-sua-privacidade-o-que-esperar-do-galaxy-s26-ultra.html">A tela que cuida da sua privacidade: O que esperar do Galaxy S26 Ultra</a><time datetime="2026-02-09T02:12:59.823Z">08/02/2026 23:12</time></li>
-<li><a href="artigos/desenvolvimento-de-software/como-a-arquitetura-de-software-pode-aprender-com-os-fracassos-do-cinema.html">Como a Arquitetura de Software Pode Aprender com os Fracassos do Cinema</a><time datetime="2026-02-08T23:35:00.608Z">08/02/2026 20:35</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-mapas-como-comaps-esta-mudando-o-jogo-da-privacidade.html">A revolução dos mapas: Como CoMaps está mudando o jogo da privacidade</a><time datetime="2026-02-08T22:31:06.396Z">08/02/2026 19:31</time></li>
-<li><a href="artigos/inteligencia-artificial/a-tecnologia-que-recria-o-passado-um-dilema-entre-arte-e-inovacao.html">A tecnologia que recria o passado: um dilema entre arte e inovação</a><time datetime="2026-02-08T21:30:17.260Z">08/02/2026 18:30</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-dominios-ai-com-e-o-futuro-da-inteligencia-artificial.html">A nova era dos domínios: AI.com e o futuro da inteligência artificial</a><time datetime="2026-02-08T20:31:16.367Z">08/02/2026 17:31</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-peso-leve-o-lg-gram-17-e-a-busca-pela-ergonomia-perfeita.html">A revolução do peso leve: o LG Gram 17 e a busca pela ergonomia perfeita</a><time datetime="2026-02-08T19:28:41.736Z">08/02/2026 16:28</time></li>
-<li><a href="artigos/tecnologia/marcha-em-favor-dos-bilionarios-o-que-isso-tem-a-ver-com-tecnologia-e-arquitetura-de-software.html">Marcha em Favor dos Bilionários: O Que Isso Tem a Ver com Tecnologia e Arquitetura de Software?</a><time datetime="2026-02-08T18:39:49.910Z">08/02/2026 15:39</time></li>
-<li><a href="artigos/tecnologia/a-corrida-dos-robotaxis-16-bilhoes-e-o-suficiente-para-a-revolucao.html">A corrida dos robotaxis: $16 bilhões é o suficiente para a revolução?</a><time datetime="2026-02-08T17:30:06.772Z">08/02/2026 14:30</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-publicidade-como-a-ia-esta-mudando-o-jogo-no-super-bowl.html">A revolução da publicidade: como a IA está mudando o jogo no Super Bowl</a><time datetime="2026-02-08T16:34:17.626Z">08/02/2026 13:34</time></li>
+<li><a href="artigos/tecnologia/a-evolucao-das-baterias-por-que-a-tecnologia-de-estado-solido-ainda-nao-chegou-ao-nosso-dia-a-dia.html">A evolução das baterias: Por que a tecnologia de estado sólido ainda não chegou ao nosso dia a dia?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-09T05:02:45.222Z">09/02/2026 02:02</time></div></li>
+<li><a href="artigos/seguranca/a-tela-que-cuida-da-sua-privacidade-o-que-esperar-do-galaxy-s26-ultra.html">A tela que cuida da sua privacidade: O que esperar do Galaxy S26 Ultra</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-09T02:12:59.823Z">08/02/2026 23:12</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/como-a-arquitetura-de-software-pode-aprender-com-os-fracassos-do-cinema.html">Como a Arquitetura de Software Pode Aprender com os Fracassos do Cinema</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-02-08T23:35:00.608Z">08/02/2026 20:35</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-mapas-como-comaps-esta-mudando-o-jogo-da-privacidade.html">A revolução dos mapas: Como CoMaps está mudando o jogo da privacidade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-08T22:31:06.396Z">08/02/2026 19:31</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-tecnologia-que-recria-o-passado-um-dilema-entre-arte-e-inovacao.html">A tecnologia que recria o passado: um dilema entre arte e inovação</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-08T21:30:17.260Z">08/02/2026 18:30</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-dominios-ai-com-e-o-futuro-da-inteligencia-artificial.html">A nova era dos domínios: AI.com e o futuro da inteligência artificial</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-08T20:31:16.367Z">08/02/2026 17:31</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-peso-leve-o-lg-gram-17-e-a-busca-pela-ergonomia-perfeita.html">A revolução do peso leve: o LG Gram 17 e a busca pela ergonomia perfeita</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-08T19:28:41.736Z">08/02/2026 16:28</time></div></li>
+<li><a href="artigos/tecnologia/marcha-em-favor-dos-bilionarios-o-que-isso-tem-a-ver-com-tecnologia-e-arquitetura-de-software.html">Marcha em Favor dos Bilionários: O Que Isso Tem a Ver com Tecnologia e Arquitetura de Software?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-08T18:39:49.910Z">08/02/2026 15:39</time></div></li>
+<li><a href="artigos/tecnologia/a-corrida-dos-robotaxis-16-bilhoes-e-o-suficiente-para-a-revolucao.html">A corrida dos robotaxis: $16 bilhões é o suficiente para a revolução?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-08T17:30:06.772Z">08/02/2026 14:30</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-publicidade-como-a-ia-esta-mudando-o-jogo-no-super-bowl.html">A revolução da publicidade: como a IA está mudando o jogo no Super Bowl</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-08T16:34:17.626Z">08/02/2026 13:34</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

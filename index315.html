@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 315</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/conexoes-de-5g-a-revolucao-em-linhas-acessiveis-e-o-papel-da-arquitetura-de-software.html">Conexões de 5G: A Revolução em Linhas Acessíveis e o Papel da Arquitetura de Software</a><time datetime="2025-12-08T11:20:46.097Z">08/12/2025 08:20</time></li>
-<li><a href="artigos/carreira/a-nova-era-da-ia-como-se-preparar-e-se-destacar-no-mercado-de-trabalho.html">A nova era da IA: Como se preparar e se destacar no mercado de trabalho</a><time datetime="2025-12-08T10:25:16.635Z">08/12/2025 07:25</time></li>
-<li><a href="artigos/seguranca/a-nova-era-das-imagens-de-conteiner-seguranca-e-performance-em-um-so-pacote.html">A nova era das imagens de contêiner: segurança e performance em um só pacote</a><time datetime="2025-12-08T09:30:06.477Z">08/12/2025 06:30</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-multitools-praticidade-e-economia-em-um-so-lugar.html">A revolução dos multitools: praticidade e economia em um só lugar</a><time datetime="2025-12-08T08:32:42.184Z">08/12/2025 05:32</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-airtags-como-um-case-pode-aumentar-a-vida-util-e-a-praticidade.html">A revolução das AirTags: como um case pode aumentar a vida útil e a praticidade</a><time datetime="2025-12-08T07:25:30.146Z">08/12/2025 04:25</time></li>
-<li><a href="artigos/desenvolvimento-de-software/construindo-o-futuro-do-java-o-que-esperar-com-o-jdk-26-e-mais.html">Construindo o Futuro do Java: O Que Esperar com o JDK 26 e Mais</a><time datetime="2025-12-08T06:36:32.087Z">08/12/2025 03:36</time></li>
-<li><a href="artigos/tecnologia/a-fusao-da-gigante-netflix-com-a-warner-um-dilema-para-o-futuro-do-streaming.html">A fusão da gigante Netflix com a Warner: um dilema para o futuro do streaming?</a><time datetime="2025-12-08T05:24:01.296Z">08/12/2025 02:24</time></li>
-<li><a href="artigos/tecnologia/a-disputa-do-entretenimento-netflix-warner-e-a-forca-de-um-encontro-inesperado.html">A disputa do entretenimento: Netflix, Warner e a força de um encontro inesperado</a><time datetime="2025-12-08T04:35:45.929Z">08/12/2025 01:35</time></li>
-<li><a href="artigos/tecnologia/acessorios-que-transformam-seu-airtag-em-um-aliado-de-viagem.html">Acessórios que Transformam seu AirTag em um Aliado de Viagem</a><time datetime="2025-12-08T03:24:25.313Z">08/12/2025 00:24</time></li>
-<li><a href="artigos/tecnologia/a-fusao-de-gigantes-impactos-no-mercado-de-streaming-e-a-arquitetura-de-software.html">A fusão de gigantes: impactos no mercado de streaming e a arquitetura de software</a><time datetime="2025-12-08T01:40:48.945Z">07/12/2025 22:40</time></li>
+<li><a href="artigos/tecnologia/conexoes-de-5g-a-revolucao-em-linhas-acessiveis-e-o-papel-da-arquitetura-de-software.html">Conexões de 5G: A Revolução em Linhas Acessíveis e o Papel da Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-08T11:20:46.097Z">08/12/2025 08:20</time></div></li>
+<li><a href="artigos/carreira/a-nova-era-da-ia-como-se-preparar-e-se-destacar-no-mercado-de-trabalho.html">A nova era da IA: Como se preparar e se destacar no mercado de trabalho</a><div class="article-list-meta"><span>Carreira</span><time datetime="2025-12-08T10:25:16.635Z">08/12/2025 07:25</time></div></li>
+<li><a href="artigos/seguranca/a-nova-era-das-imagens-de-conteiner-seguranca-e-performance-em-um-so-pacote.html">A nova era das imagens de contêiner: segurança e performance em um só pacote</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-08T09:30:06.477Z">08/12/2025 06:30</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-multitools-praticidade-e-economia-em-um-so-lugar.html">A revolução dos multitools: praticidade e economia em um só lugar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-08T08:32:42.184Z">08/12/2025 05:32</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-airtags-como-um-case-pode-aumentar-a-vida-util-e-a-praticidade.html">A revolução das AirTags: como um case pode aumentar a vida útil e a praticidade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-08T07:25:30.146Z">08/12/2025 04:25</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/construindo-o-futuro-do-java-o-que-esperar-com-o-jdk-26-e-mais.html">Construindo o Futuro do Java: O Que Esperar com o JDK 26 e Mais</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-12-08T06:36:32.087Z">08/12/2025 03:36</time></div></li>
+<li><a href="artigos/tecnologia/a-fusao-da-gigante-netflix-com-a-warner-um-dilema-para-o-futuro-do-streaming.html">A fusão da gigante Netflix com a Warner: um dilema para o futuro do streaming?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-08T05:24:01.296Z">08/12/2025 02:24</time></div></li>
+<li><a href="artigos/tecnologia/a-disputa-do-entretenimento-netflix-warner-e-a-forca-de-um-encontro-inesperado.html">A disputa do entretenimento: Netflix, Warner e a força de um encontro inesperado</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-08T04:35:45.929Z">08/12/2025 01:35</time></div></li>
+<li><a href="artigos/tecnologia/acessorios-que-transformam-seu-airtag-em-um-aliado-de-viagem.html">Acessórios que Transformam seu AirTag em um Aliado de Viagem</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-08T03:24:25.313Z">08/12/2025 00:24</time></div></li>
+<li><a href="artigos/tecnologia/a-fusao-de-gigantes-impactos-no-mercado-de-streaming-e-a-arquitetura-de-software.html">A fusão de gigantes: impactos no mercado de streaming e a arquitetura de software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-08T01:40:48.945Z">07/12/2025 22:40</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

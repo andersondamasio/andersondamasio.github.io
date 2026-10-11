@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 186</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-tecnologia-das-telonas-como-os-tvs-de-hoje-estao-moldando-nossa-experiencia.html">A tecnologia das telonas: como os TVs de hoje estão moldando nossa experiência</a><time datetime="2026-02-06T16:46:56.742Z">06/02/2026 13:46</time></li>
-<li><a href="artigos/seguranca/salt-typhoon-a-tempestade-cibernetica-que-ameaca-organizacoes-globais.html">Salt Typhoon: A Tempestade Cibernética que Ameaça Organizações Globais</a><time datetime="2026-02-06T15:43:05.711Z">06/02/2026 12:43</time></li>
-<li><a href="artigos/desenvolvimento-de-software/spotify-aperta-o-cerco-novas-regras-para-desenvolvedores-desafiam-criatividade.html">Spotify aperta o cerco: novas regras para desenvolvedores desafiam criatividade</a><time datetime="2026-02-06T14:07:46.478Z">06/02/2026 11:07</time></li>
-<li><a href="artigos/tecnologia/desafios-de-responsabilidade-digital-o-caso-tiktok-e-o-futuro-das-plataformas-de-midia.html">Desafios de Responsabilidade Digital: O Caso TikTok e o Futuro das Plataformas de Mídia</a><time datetime="2026-02-06T13:02:01.041Z">06/02/2026 10:02</time></li>
-<li><a href="artigos/blockchain/a-queda-do-bitcoin-licoes-para-arquitetos-de-software-na-era-da-volatilidade.html">A queda do Bitcoin: lições para arquitetos de software na era da volatilidade</a><time datetime="2026-02-06T11:37:06.722Z">06/02/2026 08:37</time></li>
-<li><a href="artigos/programacao/expansao-do-swift-de-aplicativos-a-servicos-de-alto-desempenho.html">Expansão do Swift: De Aplicativos a Serviços de Alto Desempenho</a><time datetime="2026-02-06T10:42:52.680Z">06/02/2026 07:42</time></li>
-<li><a href="artigos/tecnologia/o-impacto-da-tecnologia-de-tvs-na-experiencia-de-entretenimento.html">O impacto da tecnologia de TVs na experiência de entretenimento</a><time datetime="2026-02-06T09:45:20.504Z">06/02/2026 06:45</time></li>
-<li><a href="artigos/desenvolvimento-de-software/base-ui-a-nova-fronteira-de-componentes-acessiveis-para-react.html">Base UI: A Nova Fronteira de Componentes Acessíveis para React</a><time datetime="2026-02-06T08:44:17.017Z">06/02/2026 05:44</time></li>
-<li><a href="artigos/tecnologia/os-desafios-dos-fones-de-ouvido-abertos-sony-vs-bose.html">Os desafios dos fones de ouvido abertos: Sony vs. Bose</a><time datetime="2026-02-06T07:49:56.948Z">06/02/2026 04:49</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-quantica-esta-aqui-coda-e-a-nova-era-da-programacao.html">A revolução quântica está aqui: Coda e a nova era da programação</a><time datetime="2026-02-06T06:58:39.037Z">06/02/2026 03:58</time></li>
+<li><a href="artigos/tecnologia/a-tecnologia-das-telonas-como-os-tvs-de-hoje-estao-moldando-nossa-experiencia.html">A tecnologia das telonas: como os TVs de hoje estão moldando nossa experiência</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T16:46:56.742Z">06/02/2026 13:46</time></div></li>
+<li><a href="artigos/seguranca/salt-typhoon-a-tempestade-cibernetica-que-ameaca-organizacoes-globais.html">Salt Typhoon: A Tempestade Cibernética que Ameaça Organizações Globais</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-06T15:43:05.711Z">06/02/2026 12:43</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/spotify-aperta-o-cerco-novas-regras-para-desenvolvedores-desafiam-criatividade.html">Spotify aperta o cerco: novas regras para desenvolvedores desafiam criatividade</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-02-06T14:07:46.478Z">06/02/2026 11:07</time></div></li>
+<li><a href="artigos/tecnologia/desafios-de-responsabilidade-digital-o-caso-tiktok-e-o-futuro-das-plataformas-de-midia.html">Desafios de Responsabilidade Digital: O Caso TikTok e o Futuro das Plataformas de Mídia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T13:02:01.041Z">06/02/2026 10:02</time></div></li>
+<li><a href="artigos/blockchain/a-queda-do-bitcoin-licoes-para-arquitetos-de-software-na-era-da-volatilidade.html">A queda do Bitcoin: lições para arquitetos de software na era da volatilidade</a><div class="article-list-meta"><span>Blockchain</span><time datetime="2026-02-06T11:37:06.722Z">06/02/2026 08:37</time></div></li>
+<li><a href="artigos/programacao/expansao-do-swift-de-aplicativos-a-servicos-de-alto-desempenho.html">Expansão do Swift: De Aplicativos a Serviços de Alto Desempenho</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-02-06T10:42:52.680Z">06/02/2026 07:42</time></div></li>
+<li><a href="artigos/tecnologia/o-impacto-da-tecnologia-de-tvs-na-experiencia-de-entretenimento.html">O impacto da tecnologia de TVs na experiência de entretenimento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T09:45:20.504Z">06/02/2026 06:45</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/base-ui-a-nova-fronteira-de-componentes-acessiveis-para-react.html">Base UI: A Nova Fronteira de Componentes Acessíveis para React</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-02-06T08:44:17.017Z">06/02/2026 05:44</time></div></li>
+<li><a href="artigos/tecnologia/os-desafios-dos-fones-de-ouvido-abertos-sony-vs-bose.html">Os desafios dos fones de ouvido abertos: Sony vs. Bose</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T07:49:56.948Z">06/02/2026 04:49</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-quantica-esta-aqui-coda-e-a-nova-era-da-programacao.html">A revolução quântica está aqui: Coda e a nova era da programação</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T06:58:39.037Z">06/02/2026 03:58</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -3,6 +3,7 @@ function aceitarCookies() {
   dataExpiracao.setFullYear(dataExpiracao.getFullYear() + 1);
   document.cookie = "cookieConsent=true; expires=" + dataExpiracao.toUTCString() + "; path=/";
   document.getElementById('cookie-banner').style.display = 'none';
+  document.documentElement.style.removeProperty('--cookie-space');
 }
 
 function getCookie(nome) {
@@ -12,7 +13,16 @@ function getCookie(nome) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+  const banner = document.getElementById('cookie-banner');
+  if (!banner) return;
   if (getCookie('cookieConsent') === 'true') {
-    document.getElementById('cookie-banner').style.display = 'none';
+    banner.style.display = 'none';
+    return;
   }
+  // Keep the full footer reachable while the notice is visible, including at zoom.
+  const reservarEspaco = () => document.documentElement.style.setProperty('--cookie-space', `${banner.getBoundingClientRect().height}px`);
+  banner.classList.add('cookies-ready');
+  reservarEspaco();
+  if (window.ResizeObserver) new ResizeObserver(reservarEspaco).observe(banner);
+  else window.addEventListener('resize', reservarEspaco);
 });

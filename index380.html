@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 380</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-versatilidade-do-lenovo-ideapad-5i-um-aliado-para-o-dia-a-dia.html">A versatilidade do Lenovo IdeaPad 5i: um aliado para o dia a dia</a><time datetime="2025-11-08T11:16:36.352Z">08/11/2025 08:16</time></li>
-<li><a href="artigos/tecnologia/o-apple-watch-o-que-considerar-antes-de-comprar-o-seu.html">O Apple Watch: O Que Considerar Antes de Comprar o Seu</a><time datetime="2025-11-08T10:19:54.410Z">08/11/2025 07:19</time></li>
-<li><a href="artigos/tecnologia/a-tecnologia-a-seu-favor-presentes-que-vao-alem-do-comum.html">A tecnologia a seu favor: presentes que vão além do comum</a><time datetime="2025-11-08T09:19:31.846Z">08/11/2025 06:19</time></li>
-<li><a href="artigos/tecnologia/a-hora-de-aproveitar-ofertas-e-agora-black-friday-e-suas-armadilhas.html">A hora de aproveitar ofertas é agora: Black Friday e suas armadilhas</a><time datetime="2025-11-08T08:26:07.315Z">08/11/2025 05:26</time></li>
-<li><a href="artigos/seguranca/a-vulnerabilidade-que-abala-gigantes-o-caso-do-washington-post-e-oracle.html">A vulnerabilidade que abala gigantes: o caso do Washington Post e Oracle</a><time datetime="2025-11-08T07:18:17.818Z">08/11/2025 04:18</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-das-tvs-hdr10-advanced-e-o-futuro-do-entretenimento.html">A nova era das TVs: HDR10+ Advanced e o futuro do entretenimento</a><time datetime="2025-11-08T06:28:26.546Z">08/11/2025 03:28</time></li>
-<li><a href="artigos/inteligencia-artificial/a-ascensao-do-chatgpt-como-a-arquitetura-de-software-esta-moldando-o-futuro-dos-negocios.html">A ascensão do ChatGPT: como a arquitetura de software está moldando o futuro dos negócios</a><time datetime="2025-11-08T05:19:59.495Z">08/11/2025 02:19</time></li>
-<li><a href="artigos/tecnologia/como-aproveitar-as-ofertas-de-tv-na-black-friday-e-impulsionar-sua-experiencia-em-home-theater.html">Como Aproveitar as Ofertas de TV na Black Friday e Impulsionar sua Experiência em Home Theater</a><time datetime="2025-11-08T04:23:11.859Z">08/11/2025 01:23</time></li>
-<li><a href="artigos/inteligencia-artificial/desvendando-a-maquina-por-que-a-toxicidade-e-mais-dificil-de-imitar-que-a-inteligencia.html">Desvendando a Máquina: Por que a Toxicidade é Mais Difícil de Imitar que a Inteligência</a><time datetime="2025-11-08T03:03:46.811Z">08/11/2025 00:03</time></li>
-<li><a href="artigos/tecnologia/como-aproveitar-as-ofertas-da-black-friday-para-expandir-seu-setup-de-jogos.html">Como Aproveitar as Ofertas da Black Friday para Expandir Seu Setup de Jogos</a><time datetime="2025-11-08T01:23:21.471Z">07/11/2025 22:23</time></li>
+<li><a href="artigos/tecnologia/a-versatilidade-do-lenovo-ideapad-5i-um-aliado-para-o-dia-a-dia.html">A versatilidade do Lenovo IdeaPad 5i: um aliado para o dia a dia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-08T11:16:36.352Z">08/11/2025 08:16</time></div></li>
+<li><a href="artigos/tecnologia/o-apple-watch-o-que-considerar-antes-de-comprar-o-seu.html">O Apple Watch: O Que Considerar Antes de Comprar o Seu</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-08T10:19:54.410Z">08/11/2025 07:19</time></div></li>
+<li><a href="artigos/tecnologia/a-tecnologia-a-seu-favor-presentes-que-vao-alem-do-comum.html">A tecnologia a seu favor: presentes que vão além do comum</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-08T09:19:31.846Z">08/11/2025 06:19</time></div></li>
+<li><a href="artigos/tecnologia/a-hora-de-aproveitar-ofertas-e-agora-black-friday-e-suas-armadilhas.html">A hora de aproveitar ofertas é agora: Black Friday e suas armadilhas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-08T08:26:07.315Z">08/11/2025 05:26</time></div></li>
+<li><a href="artigos/seguranca/a-vulnerabilidade-que-abala-gigantes-o-caso-do-washington-post-e-oracle.html">A vulnerabilidade que abala gigantes: o caso do Washington Post e Oracle</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-08T07:18:17.818Z">08/11/2025 04:18</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-das-tvs-hdr10-advanced-e-o-futuro-do-entretenimento.html">A nova era das TVs: HDR10+ Advanced e o futuro do entretenimento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-08T06:28:26.546Z">08/11/2025 03:28</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-ascensao-do-chatgpt-como-a-arquitetura-de-software-esta-moldando-o-futuro-dos-negocios.html">A ascensão do ChatGPT: como a arquitetura de software está moldando o futuro dos negócios</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-08T05:19:59.495Z">08/11/2025 02:19</time></div></li>
+<li><a href="artigos/tecnologia/como-aproveitar-as-ofertas-de-tv-na-black-friday-e-impulsionar-sua-experiencia-em-home-theater.html">Como Aproveitar as Ofertas de TV na Black Friday e Impulsionar sua Experiência em Home Theater</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-08T04:23:11.859Z">08/11/2025 01:23</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desvendando-a-maquina-por-que-a-toxicidade-e-mais-dificil-de-imitar-que-a-inteligencia.html">Desvendando a Máquina: Por que a Toxicidade é Mais Difícil de Imitar que a Inteligência</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-08T03:03:46.811Z">08/11/2025 00:03</time></div></li>
+<li><a href="artigos/tecnologia/como-aproveitar-as-ofertas-da-black-friday-para-expandir-seu-setup-de-jogos.html">Como Aproveitar as Ofertas da Black Friday para Expandir Seu Setup de Jogos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-08T01:23:21.471Z">07/11/2025 22:23</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

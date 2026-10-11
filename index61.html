@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 61</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/seguranca/a-nova-arquitetura-mcp-desafios-e-oportunidades-para-a-governanca-em-sistemas-de-ia.html">A Nova Arquitetura MCP: Desafios e Oportunidades para a Governança em Sistemas de IA</a><time datetime="2026-04-22T07:52:02.269Z">22/04/2026 04:52</time></li>
-<li><a href="artigos/tecnologia/como-as-tvs-enganam-o-olho-a-verdade-por-tras-do-brilho-nas-lojas.html">Como as TVs Enganam o Olho: A Verdade por Trás do Brilho nas Lojas</a><time datetime="2026-04-22T05:30:54.706Z">22/04/2026 02:30</time></li>
-<li><a href="artigos/tecnologia/a-batalha-das-oleds-lg-g6-ou-lg-g5-o-que-a-tecnologia-nos-ensina.html">A batalha das OLEDs: LG G6 ou LG G5? O que a tecnologia nos ensina</a><time datetime="2026-04-22T02:37:20.502Z">21/04/2026 23:37</time></li>
-<li><a href="artigos/seguranca/a-invasao-do-mythos-uma-licao-sobre-seguranca-em-ia.html">A invasão do Mythos: uma lição sobre segurança em IA</a><time datetime="2026-04-21T23:40:12.648Z">21/04/2026 20:40</time></li>
-<li><a href="artigos/tecnologia/despedida-de-tim-cook-o-legado-de-inovacao-e-desafios-na-era-apple.html">Despedida de Tim Cook: O Legado de Inovação e Desafios na Era Apple</a><time datetime="2026-04-21T22:43:20.667Z">21/04/2026 19:43</time></li>
-<li><a href="artigos/seguranca/a-revolucao-da-ia-nas-defesas-ciberneticas-promessas-e-perigos.html">A revolução da IA nas defesas cibernéticas: promessas e perigos</a><time datetime="2026-04-21T21:50:00.596Z">21/04/2026 18:50</time></li>
-<li><a href="artigos/tecnologia/a-transicao-de-lideranca-na-apple-desafios-e-oportunidades-a-vista.html">A transição de liderança na Apple: desafios e oportunidades à vista</a><time datetime="2026-04-21T20:57:52.466Z">21/04/2026 17:57</time></li>
-<li><a href="artigos/inteligencia-artificial/a-responsabilidade-das-ias-limites-e-implicacoes-no-mundo-real.html">A responsabilidade das IAs: limites e implicações no mundo real</a><time datetime="2026-04-21T19:16:34.599Z">21/04/2026 16:16</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-da-conectividade-meta-ray-bans-e-internet-de-fibra-na-sua-casa.html">A nova era da conectividade: Meta Ray-Bans e Internet de fibra na sua casa</a><time datetime="2026-04-21T17:06:36.464Z">21/04/2026 14:06</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-protecao-digital-youtube-e-a-deteccao-de-imagens-geradas-por-ia.html">A nova era da proteção digital: YouTube e a detecção de imagens geradas por IA</a><time datetime="2026-04-21T15:17:46.590Z">21/04/2026 12:17</time></li>
+<li><a href="artigos/seguranca/a-nova-arquitetura-mcp-desafios-e-oportunidades-para-a-governanca-em-sistemas-de-ia.html">A Nova Arquitetura MCP: Desafios e Oportunidades para a Governança em Sistemas de IA</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-22T07:52:02.269Z">22/04/2026 04:52</time></div></li>
+<li><a href="artigos/tecnologia/como-as-tvs-enganam-o-olho-a-verdade-por-tras-do-brilho-nas-lojas.html">Como as TVs Enganam o Olho: A Verdade por Trás do Brilho nas Lojas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-22T05:30:54.706Z">22/04/2026 02:30</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-das-oleds-lg-g6-ou-lg-g5-o-que-a-tecnologia-nos-ensina.html">A batalha das OLEDs: LG G6 ou LG G5? O que a tecnologia nos ensina</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-22T02:37:20.502Z">21/04/2026 23:37</time></div></li>
+<li><a href="artigos/seguranca/a-invasao-do-mythos-uma-licao-sobre-seguranca-em-ia.html">A invasão do Mythos: uma lição sobre segurança em IA</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-21T23:40:12.648Z">21/04/2026 20:40</time></div></li>
+<li><a href="artigos/tecnologia/despedida-de-tim-cook-o-legado-de-inovacao-e-desafios-na-era-apple.html">Despedida de Tim Cook: O Legado de Inovação e Desafios na Era Apple</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-21T22:43:20.667Z">21/04/2026 19:43</time></div></li>
+<li><a href="artigos/seguranca/a-revolucao-da-ia-nas-defesas-ciberneticas-promessas-e-perigos.html">A revolução da IA nas defesas cibernéticas: promessas e perigos</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-21T21:50:00.596Z">21/04/2026 18:50</time></div></li>
+<li><a href="artigos/tecnologia/a-transicao-de-lideranca-na-apple-desafios-e-oportunidades-a-vista.html">A transição de liderança na Apple: desafios e oportunidades à vista</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-21T20:57:52.466Z">21/04/2026 17:57</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-responsabilidade-das-ias-limites-e-implicacoes-no-mundo-real.html">A responsabilidade das IAs: limites e implicações no mundo real</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-21T19:16:34.599Z">21/04/2026 16:16</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-da-conectividade-meta-ray-bans-e-internet-de-fibra-na-sua-casa.html">A nova era da conectividade: Meta Ray-Bans e Internet de fibra na sua casa</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-21T17:06:36.464Z">21/04/2026 14:06</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-protecao-digital-youtube-e-a-deteccao-de-imagens-geradas-por-ia.html">A nova era da proteção digital: YouTube e a detecção de imagens geradas por IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-21T15:17:46.590Z">21/04/2026 12:17</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

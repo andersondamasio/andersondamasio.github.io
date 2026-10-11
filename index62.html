@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 62</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/o-que-a-motorola-pode-nos-ensinar-sobre-a-arquitetura-de-smartphones-dobraveis.html">O que a Motorola pode nos ensinar sobre a arquitetura de smartphones dobráveis</a><time datetime="2026-04-21T13:31:18.724Z">21/04/2026 10:31</time></li>
-<li><a href="artigos/seguranca/descomplicando-a-criptografia-de-arquivos-em-android-com-openkeychain.html">Descomplicando a Criptografia de Arquivos em Android com OpenKeyChain</a><time datetime="2026-04-21T11:12:20.609Z">21/04/2026 08:12</time></li>
-<li><a href="artigos/tecnologia/mini-pcs-de-jogos-a-revolucao-dos-pequenos-gigantes-na-tecnologia.html">Mini PCs de Jogos: A Revolução dos Pequenos Gigantes na Tecnologia</a><time datetime="2026-04-21T09:32:01.635Z">21/04/2026 06:32</time></li>
-<li><a href="artigos/tecnologia/novas-direcoes-o-desafio-da-apple-com-a-chegada-de-ternus.html">Novas Direções: O Desafio da Apple com a Chegada de Ternus</a><time datetime="2026-04-21T07:55:30.776Z">21/04/2026 04:55</time></li>
-<li><a href="artigos/inteligencia-artificial/project-think-a-revolucao-dos-agentes-de-ia-na-nuvem.html">Project Think: A Revolução dos Agentes de IA na Nuvem</a><time datetime="2026-04-21T05:32:22.697Z">21/04/2026 02:32</time></li>
-<li><a href="artigos/tecnologia/o-novo-capitao-da-apple-o-que-a-trajetoria-de-john-ternus-revela-sobre-o-futuro-da-tecnologia.html">O novo capitão da Apple: o que a trajetória de John Ternus revela sobre o futuro da tecnologia</a><time datetime="2026-04-21T02:39:13.559Z">20/04/2026 23:39</time></li>
-<li><a href="artigos/cloud/a-nova-alianca-amazon-e-anthropic-na-corrida-da-computacao-em-nuvem.html">A nova aliança: Amazon e Anthropic na corrida da computação em nuvem</a><time datetime="2026-04-20T23:47:33.943Z">20/04/2026 20:47</time></li>
-<li><a href="artigos/carreira/a-nova-era-da-apple-desafios-e-oportunidades-com-a-chegada-de-ternus.html">A nova era da Apple: desafios e oportunidades com a chegada de Ternus</a><time datetime="2026-04-20T21:51:39.970Z">20/04/2026 18:51</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-da-apple-o-que-a-transicao-de-lideranca-pode-nos-ensinar-sobre-inovacao.html">A nova era da Apple: o que a transição de liderança pode nos ensinar sobre inovação</a><time datetime="2026-04-20T20:50:59.906Z">20/04/2026 17:50</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-silenciosa-dos-recursos-de-mensagem-no-seu-pixel.html">A revolução silenciosa dos recursos de mensagem no seu Pixel</a><time datetime="2026-04-20T19:17:14.911Z">20/04/2026 16:17</time></li>
+<li><a href="artigos/tecnologia/o-que-a-motorola-pode-nos-ensinar-sobre-a-arquitetura-de-smartphones-dobraveis.html">O que a Motorola pode nos ensinar sobre a arquitetura de smartphones dobráveis</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-21T13:31:18.724Z">21/04/2026 10:31</time></div></li>
+<li><a href="artigos/seguranca/descomplicando-a-criptografia-de-arquivos-em-android-com-openkeychain.html">Descomplicando a Criptografia de Arquivos em Android com OpenKeyChain</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-21T11:12:20.609Z">21/04/2026 08:12</time></div></li>
+<li><a href="artigos/tecnologia/mini-pcs-de-jogos-a-revolucao-dos-pequenos-gigantes-na-tecnologia.html">Mini PCs de Jogos: A Revolução dos Pequenos Gigantes na Tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-21T09:32:01.635Z">21/04/2026 06:32</time></div></li>
+<li><a href="artigos/tecnologia/novas-direcoes-o-desafio-da-apple-com-a-chegada-de-ternus.html">Novas Direções: O Desafio da Apple com a Chegada de Ternus</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-21T07:55:30.776Z">21/04/2026 04:55</time></div></li>
+<li><a href="artigos/inteligencia-artificial/project-think-a-revolucao-dos-agentes-de-ia-na-nuvem.html">Project Think: A Revolução dos Agentes de IA na Nuvem</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-21T05:32:22.697Z">21/04/2026 02:32</time></div></li>
+<li><a href="artigos/tecnologia/o-novo-capitao-da-apple-o-que-a-trajetoria-de-john-ternus-revela-sobre-o-futuro-da-tecnologia.html">O novo capitão da Apple: o que a trajetória de John Ternus revela sobre o futuro da tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-21T02:39:13.559Z">20/04/2026 23:39</time></div></li>
+<li><a href="artigos/cloud/a-nova-alianca-amazon-e-anthropic-na-corrida-da-computacao-em-nuvem.html">A nova aliança: Amazon e Anthropic na corrida da computação em nuvem</a><div class="article-list-meta"><span>Cloud</span><time datetime="2026-04-20T23:47:33.943Z">20/04/2026 20:47</time></div></li>
+<li><a href="artigos/carreira/a-nova-era-da-apple-desafios-e-oportunidades-com-a-chegada-de-ternus.html">A nova era da Apple: desafios e oportunidades com a chegada de Ternus</a><div class="article-list-meta"><span>Carreira</span><time datetime="2026-04-20T21:51:39.970Z">20/04/2026 18:51</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-da-apple-o-que-a-transicao-de-lideranca-pode-nos-ensinar-sobre-inovacao.html">A nova era da Apple: o que a transição de liderança pode nos ensinar sobre inovação</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-20T20:50:59.906Z">20/04/2026 17:50</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-silenciosa-dos-recursos-de-mensagem-no-seu-pixel.html">A revolução silenciosa dos recursos de mensagem no seu Pixel</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-20T19:17:14.911Z">20/04/2026 16:17</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

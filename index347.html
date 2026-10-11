@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 347</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-e-o-medo-do-desconhecido-o-que-a-arquitetura-de-software-pode-fazer.html">A Inteligência Artificial e o Medo do Desconhecido: O Que A Arquitetura de Software Pode Fazer?</a><time datetime="2025-11-23T18:27:45.371Z">23/11/2025 15:27</time></li>
-<li><a href="artigos/tecnologia-automotiva/o-ponto-de-virada-dos-robotaxis-onde-a-arquitetura-de-software-entra-em-cena.html">O ponto de virada dos robotaxis: onde a arquitetura de software entra em cena</a><time datetime="2025-11-23T17:17:44.728Z">23/11/2025 14:17</time></li>
-<li><a href="artigos/inteligencia-artificial/desconexao-digital-a-influencia-perigosa-de-chatbots-na-saude-mental.html">Desconexão Digital: A Influência Perigosa de Chatbots na Saúde Mental</a><time datetime="2025-11-23T16:23:16.752Z">23/11/2025 13:23</time></li>
-<li><a href="artigos/inteligencia-artificial/a-ascensao-dos-agentes-de-ia-licoes-do-sucesso-da-sierra.html">A ascensão dos agentes de IA: lições do sucesso da Sierra</a><time datetime="2025-11-23T15:19:06.370Z">23/11/2025 12:19</time></li>
-<li><a href="artigos/tecnologia/a-batalha-dos-streamings-roku-ou-fire-stick-o-que-a-arquitetura-de-software-nos-ensina.html">A batalha dos streamings: Roku ou Fire Stick? O que a Arquitetura de Software nos ensina</a><time datetime="2025-11-23T14:18:09.684Z">23/11/2025 11:18</time></li>
-<li><a href="artigos/tecnologia/a-guerra-dos-precos-como-algoritmos-podem-elevar-custos-sem-colusao.html">A Guerra dos Preços: Como Algoritmos Podem Elevar Custos Sem Colusão</a><time datetime="2025-11-23T13:24:48.327Z">23/11/2025 10:24</time></li>
-<li><a href="artigos/tecnologia/aproveitando-a-black-friday-ferramentas-inusitadas-que-todo-arquiteto-de-software-deveria-conhecer.html">Aproveitando a Black Friday: Ferramentas Inusitadas que Todo Arquiteto de Software Deveria Conhecer</a><time datetime="2025-11-23T12:36:07.665Z">23/11/2025 09:36</time></li>
-<li><a href="artigos/seguranca/a-seguranca-em-tempos-de-crise-o-papel-da-arquitetura-de-software.html">A segurança em tempos de crise: o papel da Arquitetura de Software</a><time datetime="2025-11-23T11:16:41.465Z">23/11/2025 08:16</time></li>
-<li><a href="artigos/tecnologia/a-nova-onda-dos-smartwatches-mais-do-que-so-estilo-uma-revolucao-no-monitoramento-de-saude.html">A nova onda dos smartwatches: mais do que só estilo, uma revolução no monitoramento de saúde</a><time datetime="2025-11-23T10:20:27.296Z">23/11/2025 07:20</time></li>
-<li><a href="artigos/seguranca/uma-chave-perdida-e-a-confianca-em-sistemas-de-votacao.html">Uma chave perdida e a confiança em sistemas de votação</a><time datetime="2025-11-23T09:20:24.853Z">23/11/2025 06:20</time></li>
+<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-e-o-medo-do-desconhecido-o-que-a-arquitetura-de-software-pode-fazer.html">A Inteligência Artificial e o Medo do Desconhecido: O Que A Arquitetura de Software Pode Fazer?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-23T18:27:45.371Z">23/11/2025 15:27</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/o-ponto-de-virada-dos-robotaxis-onde-a-arquitetura-de-software-entra-em-cena.html">O ponto de virada dos robotaxis: onde a arquitetura de software entra em cena</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-11-23T17:17:44.728Z">23/11/2025 14:17</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desconexao-digital-a-influencia-perigosa-de-chatbots-na-saude-mental.html">Desconexão Digital: A Influência Perigosa de Chatbots na Saúde Mental</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-23T16:23:16.752Z">23/11/2025 13:23</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-ascensao-dos-agentes-de-ia-licoes-do-sucesso-da-sierra.html">A ascensão dos agentes de IA: lições do sucesso da Sierra</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-23T15:19:06.370Z">23/11/2025 12:19</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-dos-streamings-roku-ou-fire-stick-o-que-a-arquitetura-de-software-nos-ensina.html">A batalha dos streamings: Roku ou Fire Stick? O que a Arquitetura de Software nos ensina</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-23T14:18:09.684Z">23/11/2025 11:18</time></div></li>
+<li><a href="artigos/tecnologia/a-guerra-dos-precos-como-algoritmos-podem-elevar-custos-sem-colusao.html">A Guerra dos Preços: Como Algoritmos Podem Elevar Custos Sem Colusão</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-23T13:24:48.327Z">23/11/2025 10:24</time></div></li>
+<li><a href="artigos/tecnologia/aproveitando-a-black-friday-ferramentas-inusitadas-que-todo-arquiteto-de-software-deveria-conhecer.html">Aproveitando a Black Friday: Ferramentas Inusitadas que Todo Arquiteto de Software Deveria Conhecer</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-23T12:36:07.665Z">23/11/2025 09:36</time></div></li>
+<li><a href="artigos/seguranca/a-seguranca-em-tempos-de-crise-o-papel-da-arquitetura-de-software.html">A segurança em tempos de crise: o papel da Arquitetura de Software</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-23T11:16:41.465Z">23/11/2025 08:16</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-onda-dos-smartwatches-mais-do-que-so-estilo-uma-revolucao-no-monitoramento-de-saude.html">A nova onda dos smartwatches: mais do que só estilo, uma revolução no monitoramento de saúde</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-23T10:20:27.296Z">23/11/2025 07:20</time></div></li>
+<li><a href="artigos/seguranca/uma-chave-perdida-e-a-confianca-em-sistemas-de-votacao.html">Uma chave perdida e a confiança em sistemas de votação</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-23T09:20:24.853Z">23/11/2025 06:20</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

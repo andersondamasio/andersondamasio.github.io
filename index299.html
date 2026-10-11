@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 299</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-era-do-slop-como-a-arquitetura-de-software-pode-transformar-a-qualidade-do-conteudo-digital.html">A era do "slop": como a Arquitetura de Software pode transformar a qualidade do conteúdo digital</a><time datetime="2025-12-15T19:47:04.466Z">15/12/2025 16:47</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-wi-fi-vale-a-pena-investir-em-um-sistema-mesh.html">A Revolução do Wi-Fi: Vale a Pena Investir em um Sistema Mesh?</a><time datetime="2025-12-15T18:34:12.576Z">15/12/2025 15:34</time></li>
-<li><a href="artigos/tecnologia/desvendando-as-novas-lentes-do-futuro-as-oculos-ar-rayneo-x3-pro.html">Desvendando as Novas Lentes do Futuro: As Óculos AR RayNeo X3 Pro</a><time datetime="2025-12-15T17:26:46.095Z">15/12/2025 14:26</time></li>
-<li><a href="artigos/tecnologia/aquisicao-da-warner-bros-discovery-a-revolucao-do-entretenimento-e-seu-impacto-na-arquitetura-de-software.html">Aquisição da Warner Bros. Discovery: A Revolução do Entretenimento e seu Impacto na Arquitetura de Software</a><time datetime="2025-12-15T16:32:30.277Z">15/12/2025 13:32</time></li>
-<li><a href="artigos/robotica/a-revolucao-dos-robotaxis-o-que-a-tesla-nos-ensina-sobre-a-arquitetura-de-software.html">A revolução dos Robotaxis: O que a Tesla nos ensina sobre a Arquitetura de Software</a><time datetime="2025-12-15T15:26:08.104Z">15/12/2025 12:26</time></li>
-<li><a href="artigos/carreira/a-importancia-de-estar-na-vanguarda-como-a-participacao-em-organizacoes-de-padroes-pode-transformar-sua-carreira.html">A importância de estar na vanguarda: como a participação em organizações de padrões pode transformar sua carreira</a><time datetime="2025-12-15T14:27:42.786Z">15/12/2025 11:27</time></li>
-<li><a href="artigos/tecnologia/a-arte-de-trabalhar-remotamente-dicas-para-usar-macos-no-ipad-em-viagens.html">A arte de trabalhar remotamente: Dicas para usar MacOS no iPad em viagens</a><time datetime="2025-12-15T13:42:26.023Z">15/12/2025 10:42</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-otimizacao-como-alphaevolve-pode-transformar-nossos-algoritmos.html">A Revolução da Otimização: Como AlphaEvolve Pode Transformar Nossos Algoritmos</a><time datetime="2025-12-15T12:48:03.903Z">15/12/2025 09:48</time></li>
-<li><a href="artigos/carreira/desbravando-a-escalada-na-carreira-de-ti-oportunidades-em-tempos-de-ia.html">Desbravando a Escalada na Carreira de TI: Oportunidades em Tempos de IA</a><time datetime="2025-12-15T11:20:59.868Z">15/12/2025 08:20</time></li>
-<li><a href="artigos/carreira/a-luta-por-direitos-no-mundo-dos-games-o-que-a-demissao-em-massa-da-rockstar-nos-ensina.html">A luta por direitos no mundo dos games: o que a demissão em massa da Rockstar nos ensina</a><time datetime="2025-12-15T10:27:51.642Z">15/12/2025 07:27</time></li>
+<li><a href="artigos/inteligencia-artificial/a-era-do-slop-como-a-arquitetura-de-software-pode-transformar-a-qualidade-do-conteudo-digital.html">A era do "slop": como a Arquitetura de Software pode transformar a qualidade do conteúdo digital</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-15T19:47:04.466Z">15/12/2025 16:47</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-wi-fi-vale-a-pena-investir-em-um-sistema-mesh.html">A Revolução do Wi-Fi: Vale a Pena Investir em um Sistema Mesh?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-15T18:34:12.576Z">15/12/2025 15:34</time></div></li>
+<li><a href="artigos/tecnologia/desvendando-as-novas-lentes-do-futuro-as-oculos-ar-rayneo-x3-pro.html">Desvendando as Novas Lentes do Futuro: As Óculos AR RayNeo X3 Pro</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-15T17:26:46.095Z">15/12/2025 14:26</time></div></li>
+<li><a href="artigos/tecnologia/aquisicao-da-warner-bros-discovery-a-revolucao-do-entretenimento-e-seu-impacto-na-arquitetura-de-software.html">Aquisição da Warner Bros. Discovery: A Revolução do Entretenimento e seu Impacto na Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-15T16:32:30.277Z">15/12/2025 13:32</time></div></li>
+<li><a href="artigos/robotica/a-revolucao-dos-robotaxis-o-que-a-tesla-nos-ensina-sobre-a-arquitetura-de-software.html">A revolução dos Robotaxis: O que a Tesla nos ensina sobre a Arquitetura de Software</a><div class="article-list-meta"><span>Robótica</span><time datetime="2025-12-15T15:26:08.104Z">15/12/2025 12:26</time></div></li>
+<li><a href="artigos/carreira/a-importancia-de-estar-na-vanguarda-como-a-participacao-em-organizacoes-de-padroes-pode-transformar-sua-carreira.html">A importância de estar na vanguarda: como a participação em organizações de padrões pode transformar sua carreira</a><div class="article-list-meta"><span>Carreira</span><time datetime="2025-12-15T14:27:42.786Z">15/12/2025 11:27</time></div></li>
+<li><a href="artigos/tecnologia/a-arte-de-trabalhar-remotamente-dicas-para-usar-macos-no-ipad-em-viagens.html">A arte de trabalhar remotamente: Dicas para usar MacOS no iPad em viagens</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-15T13:42:26.023Z">15/12/2025 10:42</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-otimizacao-como-alphaevolve-pode-transformar-nossos-algoritmos.html">A Revolução da Otimização: Como AlphaEvolve Pode Transformar Nossos Algoritmos</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-15T12:48:03.903Z">15/12/2025 09:48</time></div></li>
+<li><a href="artigos/carreira/desbravando-a-escalada-na-carreira-de-ti-oportunidades-em-tempos-de-ia.html">Desbravando a Escalada na Carreira de TI: Oportunidades em Tempos de IA</a><div class="article-list-meta"><span>Carreira</span><time datetime="2025-12-15T11:20:59.868Z">15/12/2025 08:20</time></div></li>
+<li><a href="artigos/carreira/a-luta-por-direitos-no-mundo-dos-games-o-que-a-demissao-em-massa-da-rockstar-nos-ensina.html">A luta por direitos no mundo dos games: o que a demissão em massa da Rockstar nos ensina</a><div class="article-list-meta"><span>Carreira</span><time datetime="2025-12-15T10:27:51.642Z">15/12/2025 07:27</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

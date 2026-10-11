@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 320</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-pesquisa-como-a-ai-esta-transformando-a-forma-de-entender-o-consumidor.html">A nova era da pesquisa: como a AI está transformando a forma de entender o consumidor</a><time datetime="2025-12-06T04:23:42.502Z">06/12/2025 01:23</time></li>
-<li><a href="artigos/inteligencia-artificial/o-futuro-da-comunicacao-como-a-ia-pode-ser-sua-aliada-mas-nao-sua-substituta.html">O futuro da comunicação: como a IA pode ser sua aliada, mas não sua substituta</a><time datetime="2025-12-06T03:11:16.306Z">06/12/2025 00:11</time></li>
-<li><a href="artigos/tecnologia/a-arte-digital-e-a-robotica-a-intersecao-entre-criatividade-e-tecnologia.html">A arte digital e a robótica: a interseção entre criatividade e tecnologia</a><time datetime="2025-12-06T01:26:23.197Z">05/12/2025 22:26</time></li>
-<li><a href="artigos/seguranca/a-seguranca-das-nossas-criancas-em-primeiro-lugar-o-dilema-dos-robotaxis.html">A segurança das nossas crianças em primeiro lugar: o dilema dos robotaxis</a><time datetime="2025-12-05T23:20:56.687Z">05/12/2025 20:20</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-agentes-de-ia-a-nova-fronteira-da-arquitetura-de-software.html">A Revolução dos Agentes de IA: A Nova Fronteira da Arquitetura de Software</a><time datetime="2025-12-05T22:20:58.706Z">05/12/2025 19:20</time></li>
-<li><a href="artigos/tecnologia/a-nova-fronteira-do-bem-estar-como-a-tecnologia-pode-monitorar-nosso-estresse.html">A nova fronteira do bem-estar: Como a tecnologia pode monitorar nosso estresse</a><time datetime="2025-12-05T21:28:38.718Z">05/12/2025 18:28</time></li>
-<li><a href="artigos/inteligencia-artificial/desafios-na-corrida-dos-chatbots-a-batalha-entre-chatgpt-e-gemini.html">Desafios na Corrida dos Chatbots: A Batalha Entre ChatGPT e Gemini</a><time datetime="2025-12-05T20:24:27.686Z">05/12/2025 17:24</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-no-audio-como-os-oneplus-buds-pro-3-trazem-inovacao-e-economia.html">A revolução no áudio: como os OnePlus Buds Pro 3 trazem inovação e economia</a><time datetime="2025-12-05T19:19:04.475Z">05/12/2025 16:19</time></li>
-<li><a href="artigos/tecnologia/earbuds-que-nao-quebram-o-banco-a-revolucao-do-som-acessivel.html">Earbuds que não quebram o banco: A Revolução do Som Acessível</a><time datetime="2025-12-05T18:29:21.475Z">05/12/2025 15:29</time></li>
-<li><a href="artigos/tecnologia/o-futuro-da-democracia-como-a-tecnologia-pode-iluminar-as-reunioes-de-conselhos-municipais.html">O futuro da democracia: como a tecnologia pode iluminar as reuniões de conselhos municipais</a><time datetime="2025-12-05T17:20:48.149Z">05/12/2025 14:20</time></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-pesquisa-como-a-ai-esta-transformando-a-forma-de-entender-o-consumidor.html">A nova era da pesquisa: como a AI está transformando a forma de entender o consumidor</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-06T04:23:42.502Z">06/12/2025 01:23</time></div></li>
+<li><a href="artigos/inteligencia-artificial/o-futuro-da-comunicacao-como-a-ia-pode-ser-sua-aliada-mas-nao-sua-substituta.html">O futuro da comunicação: como a IA pode ser sua aliada, mas não sua substituta</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-06T03:11:16.306Z">06/12/2025 00:11</time></div></li>
+<li><a href="artigos/tecnologia/a-arte-digital-e-a-robotica-a-intersecao-entre-criatividade-e-tecnologia.html">A arte digital e a robótica: a interseção entre criatividade e tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-06T01:26:23.197Z">05/12/2025 22:26</time></div></li>
+<li><a href="artigos/seguranca/a-seguranca-das-nossas-criancas-em-primeiro-lugar-o-dilema-dos-robotaxis.html">A segurança das nossas crianças em primeiro lugar: o dilema dos robotaxis</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-05T23:20:56.687Z">05/12/2025 20:20</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-agentes-de-ia-a-nova-fronteira-da-arquitetura-de-software.html">A Revolução dos Agentes de IA: A Nova Fronteira da Arquitetura de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-05T22:20:58.706Z">05/12/2025 19:20</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-fronteira-do-bem-estar-como-a-tecnologia-pode-monitorar-nosso-estresse.html">A nova fronteira do bem-estar: Como a tecnologia pode monitorar nosso estresse</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-05T21:28:38.718Z">05/12/2025 18:28</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desafios-na-corrida-dos-chatbots-a-batalha-entre-chatgpt-e-gemini.html">Desafios na Corrida dos Chatbots: A Batalha Entre ChatGPT e Gemini</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-05T20:24:27.686Z">05/12/2025 17:24</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-no-audio-como-os-oneplus-buds-pro-3-trazem-inovacao-e-economia.html">A revolução no áudio: como os OnePlus Buds Pro 3 trazem inovação e economia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-05T19:19:04.475Z">05/12/2025 16:19</time></div></li>
+<li><a href="artigos/tecnologia/earbuds-que-nao-quebram-o-banco-a-revolucao-do-som-acessivel.html">Earbuds que não quebram o banco: A Revolução do Som Acessível</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-05T18:29:21.475Z">05/12/2025 15:29</time></div></li>
+<li><a href="artigos/tecnologia/o-futuro-da-democracia-como-a-tecnologia-pode-iluminar-as-reunioes-de-conselhos-municipais.html">O futuro da democracia: como a tecnologia pode iluminar as reuniões de conselhos municipais</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-05T17:20:48.149Z">05/12/2025 14:20</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

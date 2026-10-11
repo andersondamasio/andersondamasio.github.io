@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 110</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/tubi-e-a-revolucao-do-streaming-como-a-arquitetura-de-software-pode-impulsionar-conteudos-originais.html">Tubi e a Revolução do Streaming: Como a Arquitetura de Software Pode Impulsionar Conteúdos Originais</a><time datetime="2026-03-19T13:10:03.661Z">19/03/2026 10:10</time></li>
-<li><a href="artigos/tecnologia/transforme-seu-armazenamento-como-um-case-pcie-pode-revolucionar-seu-fluxo-de-trabalho.html">Transforme seu Armazenamento: Como um Case PCIe Pode Revolucionar seu Fluxo de Trabalho</a><time datetime="2026-03-19T11:40:23.106Z">19/03/2026 08:40</time></li>
-<li><a href="artigos/seguranca/descobrindo-vulnerabilidades-como-a-ia-esta-mudando-o-jogo-da-seguranca-em-software.html">Descobrindo Vulnerabilidades: Como a IA Está Mudando o Jogo da Segurança em Software</a><time datetime="2026-03-19T10:49:58.516Z">19/03/2026 07:49</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-do-net-o-que-esperar-da-preview-2-do-net-11.html">A nova era do .NET: O que esperar da Preview 2 do .NET 11?</a><time datetime="2026-03-19T09:47:00.039Z">19/03/2026 06:47</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-ai-o-futuro-dos-modelos-compactos-e-o-que-isso-significa-para-a-arquitetura-de-software.html">Transformando AI: O Futuro dos Modelos Compactos e o Que Isso Significa Para a Arquitetura de Software</a><time datetime="2026-03-19T08:46:19.346Z">19/03/2026 05:46</time></li>
-<li><a href="artigos/inteligencia-artificial/automatizando-o-caos-como-a-edra-esta-transformando-dados-em-conhecimento-pratico.html">Automatizando o Caos: Como a Edra Está Transformando Dados em Conhecimento Prático</a><time datetime="2026-03-19T07:10:27.283Z">19/03/2026 04:10</time></li>
-<li><a href="artigos/tecnologia/transforme-seu-velho-android-em-um-extensor-wi-fi-e-diga-adeus-as-zonas-mortas.html">Transforme seu velho Android em um Extensor Wi-Fi e Diga Adeus às Zonas Mortas</a><time datetime="2026-03-19T06:03:06.464Z">19/03/2026 03:03</time></li>
-<li><a href="artigos/seguranca/identificacao-de-vitimas-o-papel-crucial-da-tecnologia-na-luta-contra-o-abuso-infantil.html">Identificação de Vítimas: O Papel Crucial da Tecnologia na Luta Contra o Abuso Infantil</a><time datetime="2026-03-19T04:58:47.766Z">19/03/2026 01:58</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-organizacao-como-a-inteligencia-artificial-transforma-suas-abas-em-produtividade.html">A revolução da organização: como a inteligência artificial transforma suas abas em produtividade</a><time datetime="2026-03-19T02:14:03.708Z">18/03/2026 23:14</time></li>
-<li><a href="artigos/carreira/agradecimentos-e-ironias-o-futuro-dos-desenvolvedores-na-era-da-ia.html">Agradecimentos e Ironias: O Futuro dos Desenvolvedores na Era da IA</a><time datetime="2026-03-18T23:34:57.316Z">18/03/2026 20:34</time></li>
+<li><a href="artigos/tecnologia/tubi-e-a-revolucao-do-streaming-como-a-arquitetura-de-software-pode-impulsionar-conteudos-originais.html">Tubi e a Revolução do Streaming: Como a Arquitetura de Software Pode Impulsionar Conteúdos Originais</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-19T13:10:03.661Z">19/03/2026 10:10</time></div></li>
+<li><a href="artigos/tecnologia/transforme-seu-armazenamento-como-um-case-pcie-pode-revolucionar-seu-fluxo-de-trabalho.html">Transforme seu Armazenamento: Como um Case PCIe Pode Revolucionar seu Fluxo de Trabalho</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-19T11:40:23.106Z">19/03/2026 08:40</time></div></li>
+<li><a href="artigos/seguranca/descobrindo-vulnerabilidades-como-a-ia-esta-mudando-o-jogo-da-seguranca-em-software.html">Descobrindo Vulnerabilidades: Como a IA Está Mudando o Jogo da Segurança em Software</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-19T10:49:58.516Z">19/03/2026 07:49</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-do-net-o-que-esperar-da-preview-2-do-net-11.html">A nova era do .NET: O que esperar da Preview 2 do .NET 11?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-19T09:47:00.039Z">19/03/2026 06:47</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-ai-o-futuro-dos-modelos-compactos-e-o-que-isso-significa-para-a-arquitetura-de-software.html">Transformando AI: O Futuro dos Modelos Compactos e o Que Isso Significa Para a Arquitetura de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-19T08:46:19.346Z">19/03/2026 05:46</time></div></li>
+<li><a href="artigos/inteligencia-artificial/automatizando-o-caos-como-a-edra-esta-transformando-dados-em-conhecimento-pratico.html">Automatizando o Caos: Como a Edra Está Transformando Dados em Conhecimento Prático</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-19T07:10:27.283Z">19/03/2026 04:10</time></div></li>
+<li><a href="artigos/tecnologia/transforme-seu-velho-android-em-um-extensor-wi-fi-e-diga-adeus-as-zonas-mortas.html">Transforme seu velho Android em um Extensor Wi-Fi e Diga Adeus às Zonas Mortas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-19T06:03:06.464Z">19/03/2026 03:03</time></div></li>
+<li><a href="artigos/seguranca/identificacao-de-vitimas-o-papel-crucial-da-tecnologia-na-luta-contra-o-abuso-infantil.html">Identificação de Vítimas: O Papel Crucial da Tecnologia na Luta Contra o Abuso Infantil</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-19T04:58:47.766Z">19/03/2026 01:58</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-organizacao-como-a-inteligencia-artificial-transforma-suas-abas-em-produtividade.html">A revolução da organização: como a inteligência artificial transforma suas abas em produtividade</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-19T02:14:03.708Z">18/03/2026 23:14</time></div></li>
+<li><a href="artigos/carreira/agradecimentos-e-ironias-o-futuro-dos-desenvolvedores-na-era-da-ia.html">Agradecimentos e Ironias: O Futuro dos Desenvolvedores na Era da IA</a><div class="article-list-meta"><span>Carreira</span><time datetime="2026-03-18T23:34:57.316Z">18/03/2026 20:34</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

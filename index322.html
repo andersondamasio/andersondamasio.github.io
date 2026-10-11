@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 322</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/o-futuro-e-agora-como-a-grab-esta-moldando-a-qualidade-de-dados-em-tempo-real.html">O futuro é agora: como a Grab está moldando a qualidade de dados em tempo real</a><time datetime="2025-12-05T05:22:15.406Z">05/12/2025 02:22</time></li>
-<li><a href="artigos/programacao/a-batalha-das-distros-debian-ou-ubuntu-qual-e-a-sua-vibe.html">A batalha das distros: Debian ou Ubuntu, qual é a sua vibe?</a><time datetime="2025-12-05T04:31:29.971Z">05/12/2025 01:31</time></li>
-<li><a href="artigos/inteligencia-artificial/como-a-arquitetura-de-software-pode-impulsionar-agentes-de-ia-na-nuvem.html">Como a Arquitetura de Software Pode Impulsionar Agentes de IA na Nuvem</a><time datetime="2025-12-05T03:20:37.009Z">05/12/2025 00:20</time></li>
-<li><a href="artigos/inteligencia-artificial/a-batalha-dos-direitos-autorais-no-mundo-da-ia-quem-e-o-verdadeiro-dono-da-informacao.html">A batalha dos direitos autorais no mundo da IA: quem é o verdadeiro dono da informação?</a><time datetime="2025-12-05T01:31:25.184Z">04/12/2025 22:31</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-saude-como-a-ia-pode-transformar-diagnosticos-e-prolongar-nossa-vida.html">A revolução da saúde: como a IA pode transformar diagnósticos e prolongar nossa vida</a><time datetime="2025-12-04T23:21:10.170Z">04/12/2025 20:21</time></li>
-<li><a href="artigos/tecnologia/o-poder-da-alexa-como-otimizar-sua-casa-inteligente-com-comandos-praticos.html">O poder da Alexa: como otimizar sua casa inteligente com comandos práticos</a><time datetime="2025-12-04T22:19:56.864Z">04/12/2025 19:19</time></li>
-<li><a href="artigos/tecnologia/a-batalha-das-rotas-waze-ou-google-maps-quem-leva-a-melhor.html">A batalha das rotas: Waze ou Google Maps, quem leva a melhor?</a><time datetime="2025-12-04T21:22:04.498Z">04/12/2025 18:22</time></li>
-<li><a href="artigos/inteligencia-artificial/a-bolha-da-ia-riscos-e-oportunidades-na-arquitetura-de-software.html">A bolha da IA: Riscos e Oportunidades na Arquitetura de Software</a><time datetime="2025-12-04T20:36:00.850Z">04/12/2025 17:36</time></li>
-<li><a href="artigos/tecnologia/entenda-o-que-as-cores-das-portas-usb-dizem-sobre-seu-desempenho.html">Entenda o que as cores das portas USB dizem sobre seu desempenho</a><time datetime="2025-12-04T19:23:01.114Z">04/12/2025 16:23</time></li>
-<li><a href="artigos/seguranca/espionagem-digital-quando-os-fabricantes-de-spyware-cruzam-a-linha.html">Espionagem digital: quando os fabricantes de spyware cruzam a linha</a><time datetime="2025-12-04T18:34:22.958Z">04/12/2025 15:34</time></li>
+<li><a href="artigos/tecnologia/o-futuro-e-agora-como-a-grab-esta-moldando-a-qualidade-de-dados-em-tempo-real.html">O futuro é agora: como a Grab está moldando a qualidade de dados em tempo real</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-05T05:22:15.406Z">05/12/2025 02:22</time></div></li>
+<li><a href="artigos/programacao/a-batalha-das-distros-debian-ou-ubuntu-qual-e-a-sua-vibe.html">A batalha das distros: Debian ou Ubuntu, qual é a sua vibe?</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-12-05T04:31:29.971Z">05/12/2025 01:31</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-a-arquitetura-de-software-pode-impulsionar-agentes-de-ia-na-nuvem.html">Como a Arquitetura de Software Pode Impulsionar Agentes de IA na Nuvem</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-05T03:20:37.009Z">05/12/2025 00:20</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-batalha-dos-direitos-autorais-no-mundo-da-ia-quem-e-o-verdadeiro-dono-da-informacao.html">A batalha dos direitos autorais no mundo da IA: quem é o verdadeiro dono da informação?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-05T01:31:25.184Z">04/12/2025 22:31</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-saude-como-a-ia-pode-transformar-diagnosticos-e-prolongar-nossa-vida.html">A revolução da saúde: como a IA pode transformar diagnósticos e prolongar nossa vida</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-04T23:21:10.170Z">04/12/2025 20:21</time></div></li>
+<li><a href="artigos/tecnologia/o-poder-da-alexa-como-otimizar-sua-casa-inteligente-com-comandos-praticos.html">O poder da Alexa: como otimizar sua casa inteligente com comandos práticos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-04T22:19:56.864Z">04/12/2025 19:19</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-das-rotas-waze-ou-google-maps-quem-leva-a-melhor.html">A batalha das rotas: Waze ou Google Maps, quem leva a melhor?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-04T21:22:04.498Z">04/12/2025 18:22</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-bolha-da-ia-riscos-e-oportunidades-na-arquitetura-de-software.html">A bolha da IA: Riscos e Oportunidades na Arquitetura de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-04T20:36:00.850Z">04/12/2025 17:36</time></div></li>
+<li><a href="artigos/tecnologia/entenda-o-que-as-cores-das-portas-usb-dizem-sobre-seu-desempenho.html">Entenda o que as cores das portas USB dizem sobre seu desempenho</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-04T19:23:01.114Z">04/12/2025 16:23</time></div></li>
+<li><a href="artigos/seguranca/espionagem-digital-quando-os-fabricantes-de-spyware-cruzam-a-linha.html">Espionagem digital: quando os fabricantes de spyware cruzam a linha</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-04T18:34:22.958Z">04/12/2025 15:34</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

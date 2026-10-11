@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 199</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia-automotiva/a-revolucao-das-cidades-o-futuro-dos-robos-taxis-e-a-aposta-da-uber.html">A revolução das cidades: o futuro dos robôs-táxis e a aposta da Uber</a><time datetime="2026-01-30T19:35:37.849Z">30/01/2026 16:35</time></li>
-<li><a href="artigos/tecnologia/explorando-o-mundo-digital-ps5-e-a-revolucao-das-bibliotecas-virtuais.html">Explorando O Mundo Digital: PS5 E A Revolução das Bibliotecas Virtuais</a><time datetime="2026-01-30T18:45:19.476Z">30/01/2026 15:45</time></li>
-<li><a href="artigos/tecnologia/a-crise-da-conectividade-licoes-do-apagao-da-verizon-e-o-papel-da-arquitetura-de-software.html">A crise da conectividade: lições do apagão da Verizon e o papel da Arquitetura de Software</a><time datetime="2026-01-30T17:36:52.412Z">30/01/2026 14:36</time></li>
-<li><a href="artigos/tecnologia/o-laptop-dos-sonhos-a-revolucao-do-asus-expertbook-ultra-b9-na-arquitetura-de-software.html">O Laptop dos Sonhos: A Revolução do Asus ExpertBook Ultra B9 na Arquitetura de Software</a><time datetime="2026-01-30T16:42:02.365Z">30/01/2026 13:42</time></li>
-<li><a href="artigos/tecnologia/como-otimizar-a-bateria-do-seu-android-dicas-praticas-e-tecnicas.html">Como otimizar a bateria do seu Android: dicas práticas e técnicas</a><time datetime="2026-01-30T15:37:19.333Z">30/01/2026 12:37</time></li>
-<li><a href="artigos/robotica/robos-de-limpeza-baratos-vale-a-pena-investir.html">Robôs de Limpeza Baratos: Vale a Pena Investir?</a><time datetime="2026-01-30T14:39:40.158Z">30/01/2026 11:39</time></li>
-<li><a href="artigos/inteligencia-artificial/como-desmascarar-imagens-geradas-por-ia-dicas-e-ferramentas-que-voce-precisa-conhecer.html">Como Desmascarar Imagens Geradas por IA: Dicas e Ferramentas que Você Precisa Conhecer</a><time datetime="2026-01-30T13:59:43.953Z">30/01/2026 10:59</time></li>
-<li><a href="artigos/tecnologia/o-futuro-da-tv-como-a-amazon-esta-mudando-o-jogo-com-a-nova-fire-tv-omni-qled.html">O futuro da TV: Como a Amazon está mudando o jogo com a nova Fire TV Omni QLED</a><time datetime="2026-01-30T12:58:18.517Z">30/01/2026 09:58</time></li>
-<li><a href="artigos/tecnologia/aproveitando-as-ofertas-do-dia-dos-presidentes-como-a-tecnologia-pode-te-ajudar.html">Aproveitando as Ofertas do Dia dos Presidentes: Como a Tecnologia Pode Te Ajudar</a><time datetime="2026-01-30T11:31:21.831Z">30/01/2026 08:31</time></li>
-<li><a href="artigos/desenvolvimento-de-software/o-futuro-dos-crms-imobiliarios-a-tecnologia-que-transforma-vendas.html">O futuro dos CRMs imobiliários: A tecnologia que transforma vendas</a><time datetime="2026-01-30T10:36:59.542Z">30/01/2026 07:36</time></li>
+<li><a href="artigos/tecnologia-automotiva/a-revolucao-das-cidades-o-futuro-dos-robos-taxis-e-a-aposta-da-uber.html">A revolução das cidades: o futuro dos robôs-táxis e a aposta da Uber</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2026-01-30T19:35:37.849Z">30/01/2026 16:35</time></div></li>
+<li><a href="artigos/tecnologia/explorando-o-mundo-digital-ps5-e-a-revolucao-das-bibliotecas-virtuais.html">Explorando O Mundo Digital: PS5 E A Revolução das Bibliotecas Virtuais</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-30T18:45:19.476Z">30/01/2026 15:45</time></div></li>
+<li><a href="artigos/tecnologia/a-crise-da-conectividade-licoes-do-apagao-da-verizon-e-o-papel-da-arquitetura-de-software.html">A crise da conectividade: lições do apagão da Verizon e o papel da Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-30T17:36:52.412Z">30/01/2026 14:36</time></div></li>
+<li><a href="artigos/tecnologia/o-laptop-dos-sonhos-a-revolucao-do-asus-expertbook-ultra-b9-na-arquitetura-de-software.html">O Laptop dos Sonhos: A Revolução do Asus ExpertBook Ultra B9 na Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-30T16:42:02.365Z">30/01/2026 13:42</time></div></li>
+<li><a href="artigos/tecnologia/como-otimizar-a-bateria-do-seu-android-dicas-praticas-e-tecnicas.html">Como otimizar a bateria do seu Android: dicas práticas e técnicas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-30T15:37:19.333Z">30/01/2026 12:37</time></div></li>
+<li><a href="artigos/robotica/robos-de-limpeza-baratos-vale-a-pena-investir.html">Robôs de Limpeza Baratos: Vale a Pena Investir?</a><div class="article-list-meta"><span>Robótica</span><time datetime="2026-01-30T14:39:40.158Z">30/01/2026 11:39</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-desmascarar-imagens-geradas-por-ia-dicas-e-ferramentas-que-voce-precisa-conhecer.html">Como Desmascarar Imagens Geradas por IA: Dicas e Ferramentas que Você Precisa Conhecer</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-30T13:59:43.953Z">30/01/2026 10:59</time></div></li>
+<li><a href="artigos/tecnologia/o-futuro-da-tv-como-a-amazon-esta-mudando-o-jogo-com-a-nova-fire-tv-omni-qled.html">O futuro da TV: Como a Amazon está mudando o jogo com a nova Fire TV Omni QLED</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-30T12:58:18.517Z">30/01/2026 09:58</time></div></li>
+<li><a href="artigos/tecnologia/aproveitando-as-ofertas-do-dia-dos-presidentes-como-a-tecnologia-pode-te-ajudar.html">Aproveitando as Ofertas do Dia dos Presidentes: Como a Tecnologia Pode Te Ajudar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-30T11:31:21.831Z">30/01/2026 08:31</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/o-futuro-dos-crms-imobiliarios-a-tecnologia-que-transforma-vendas.html">O futuro dos CRMs imobiliários: A tecnologia que transforma vendas</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-01-30T10:36:59.542Z">30/01/2026 07:36</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

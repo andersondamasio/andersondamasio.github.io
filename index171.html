@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 171</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/carreira/um-novo-olhar-sobre-o-capital-como-o-investimento-em-fundadores-subestimados-pode-transformar-o-mercado.html">Um novo olhar sobre o capital: como o investimento em fundadores subestimados pode transformar o mercado</a><time datetime="2026-02-14T21:27:33.878Z">14/02/2026 18:27</time></li>
-<li><a href="artigos/inteligencia-artificial/a-moda-encontrou-a-tecnologia-como-a-arquitetura-de-software-pode-transformar-desfiles.html">A moda encontrou a tecnologia: como a Arquitetura de Software pode transformar desfiles</a><time datetime="2026-02-14T20:30:08.708Z">14/02/2026 17:30</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-moda-em-codigo-a-revolucao-dos-avatares-virtuais-no-e-commerce.html">Transformando Moda em Código: A Revolução dos Avatares Virtuais no E-commerce</a><time datetime="2026-02-14T19:27:31.955Z">14/02/2026 16:27</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-das-ias-hollywood-em-crise-com-o-seedance-2-0.html">A revolução das IAs: Hollywood em crise com o Seedance 2.0</a><time datetime="2026-02-14T18:38:03.052Z">14/02/2026 15:38</time></li>
-<li><a href="artigos/tecnologia/estrategias-de-economia-como-utilizar-tecnologia-para-reduzir-custos-com-impostos.html">Estratégias de Economia: Como Utilizar Tecnologia para Reduzir Custos com Impostos</a><time datetime="2026-02-14T17:29:07.854Z">14/02/2026 14:29</time></li>
-<li><a href="artigos/tecnologia/a-nova-onda-de-investimentos-como-a-india-esta-moldando-o-futuro-das-startups.html">A nova onda de investimentos: como a Índia está moldando o futuro das startups</a><time datetime="2026-02-14T16:32:14.203Z">14/02/2026 13:32</time></li>
-<li><a href="artigos/devops/a-revolucao-no-gerenciamento-de-incidentes-como-a-inteligencia-artificial-pode-salvar-seu-dia.html">A revolução no gerenciamento de incidentes: como a inteligência artificial pode salvar seu dia</a><time datetime="2026-02-14T15:28:34.577Z">14/02/2026 12:28</time></li>
-<li><a href="artigos/inteligencia-artificial/desbravando-o-futuro-como-agentes-autonomos-estao-transformando-o-desenvolvimento-de-software.html">Desbravando o Futuro: Como Agentes Autônomos Estão Transformando o Desenvolvimento de Software</a><time datetime="2026-02-14T14:30:30.166Z">14/02/2026 11:30</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-leitor-porque-o-kindle-paperwhite-segue-sendo-meu-preferido.html">A Revolução do Leitor: Porque o Kindle Paperwhite Segue Sendo Meu Preferido</a><time datetime="2026-02-14T13:47:23.267Z">14/02/2026 10:47</time></li>
-<li><a href="artigos/tecnologia/desvendando-as-melhores-opcoes-de-oculos-xr-o-que-e-realmente-essencial.html">Desvendando as melhores opções de óculos XR: o que é realmente essencial?</a><time datetime="2026-02-14T12:51:29.697Z">14/02/2026 09:51</time></li>
+<li><a href="artigos/carreira/um-novo-olhar-sobre-o-capital-como-o-investimento-em-fundadores-subestimados-pode-transformar-o-mercado.html">Um novo olhar sobre o capital: como o investimento em fundadores subestimados pode transformar o mercado</a><div class="article-list-meta"><span>Carreira</span><time datetime="2026-02-14T21:27:33.878Z">14/02/2026 18:27</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-moda-encontrou-a-tecnologia-como-a-arquitetura-de-software-pode-transformar-desfiles.html">A moda encontrou a tecnologia: como a Arquitetura de Software pode transformar desfiles</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-14T20:30:08.708Z">14/02/2026 17:30</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-moda-em-codigo-a-revolucao-dos-avatares-virtuais-no-e-commerce.html">Transformando Moda em Código: A Revolução dos Avatares Virtuais no E-commerce</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-14T19:27:31.955Z">14/02/2026 16:27</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-das-ias-hollywood-em-crise-com-o-seedance-2-0.html">A revolução das IAs: Hollywood em crise com o Seedance 2.0</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-14T18:38:03.052Z">14/02/2026 15:38</time></div></li>
+<li><a href="artigos/tecnologia/estrategias-de-economia-como-utilizar-tecnologia-para-reduzir-custos-com-impostos.html">Estratégias de Economia: Como Utilizar Tecnologia para Reduzir Custos com Impostos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-14T17:29:07.854Z">14/02/2026 14:29</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-onda-de-investimentos-como-a-india-esta-moldando-o-futuro-das-startups.html">A nova onda de investimentos: como a Índia está moldando o futuro das startups</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-14T16:32:14.203Z">14/02/2026 13:32</time></div></li>
+<li><a href="artigos/devops/a-revolucao-no-gerenciamento-de-incidentes-como-a-inteligencia-artificial-pode-salvar-seu-dia.html">A revolução no gerenciamento de incidentes: como a inteligência artificial pode salvar seu dia</a><div class="article-list-meta"><span>DevOps</span><time datetime="2026-02-14T15:28:34.577Z">14/02/2026 12:28</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desbravando-o-futuro-como-agentes-autonomos-estao-transformando-o-desenvolvimento-de-software.html">Desbravando o Futuro: Como Agentes Autônomos Estão Transformando o Desenvolvimento de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-14T14:30:30.166Z">14/02/2026 11:30</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-leitor-porque-o-kindle-paperwhite-segue-sendo-meu-preferido.html">A Revolução do Leitor: Porque o Kindle Paperwhite Segue Sendo Meu Preferido</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-14T13:47:23.267Z">14/02/2026 10:47</time></div></li>
+<li><a href="artigos/tecnologia/desvendando-as-melhores-opcoes-de-oculos-xr-o-que-e-realmente-essencial.html">Desvendando as melhores opções de óculos XR: o que é realmente essencial?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-14T12:51:29.697Z">14/02/2026 09:51</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

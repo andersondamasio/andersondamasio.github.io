@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 175</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/transformando-investimentos-em-inovacoes-o-caso-anthropic-e-o-futuro-da-ia.html">Transformando Investimentos em Inovações: O Caso Anthropic e o Futuro da IA</a><time datetime="2026-02-12T21:36:20.264Z">12/02/2026 18:36</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-a-complexidade-da-procura-por-fornecedores-com-ia.html">Transformando a Complexidade da Procura por Fornecedores com IA</a><time datetime="2026-02-12T20:38:05.356Z">12/02/2026 17:38</time></li>
-<li><a href="artigos/tecnologia/a-arquitetura-do-ar-o-impacto-da-desregulamentacao-na-qualidade-do-ar-e-na-tecnologia.html">A arquitetura do ar: O impacto da desregulamentação na qualidade do ar e na tecnologia</a><time datetime="2026-02-12T19:13:57.369Z">12/02/2026 16:13</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-programacao-como-o-codex-spark-pode-revolucionar-seu-fluxo-de-trabalho.html">A nova era da programacão: como o Codex-Spark pode revolucionar seu fluxo de trabalho</a><time datetime="2026-02-12T18:02:00.378Z">12/02/2026 15:02</time></li>
-<li><a href="artigos/seguranca/coupang-e-o-desafio-da-seguranca-de-dados-licoes-de-arquitetura-em-meio-a-crises.html">Coupang e o desafio da segurança de dados: lições de arquitetura em meio a crises</a><time datetime="2026-02-12T17:01:32.542Z">12/02/2026 14:01</time></li>
-<li><a href="artigos/desenvolvimento-de-software/melhorando-a-experiencia-com-airpods-o-toque-que-faz-a-diferenca.html">Melhorando a Experiência com AirPods: O Toque Que Faz a Diferença</a><time datetime="2026-02-12T15:56:15.638Z">12/02/2026 12:56</time></li>
-<li><a href="artigos/tecnologia/o-dilema-da-curadoria-de-noticias-a-etica-por-tras-do-algoritmo.html">O dilema da curadoria de notícias: a ética por trás do algoritmo</a><time datetime="2026-02-12T14:50:41.018Z">12/02/2026 11:50</time></li>
-<li><a href="artigos/seguranca/a-explosao-da-exploracao-humana-como-a-tecnologia-pode-ajudar-a-combate-la.html">A explosão da exploração humana: como a tecnologia pode ajudar a combatê-la</a><time datetime="2026-02-12T13:10:40.879Z">12/02/2026 10:10</time></li>
-<li><a href="artigos/desenvolvimento-de-software/equipes-diversas-o-poder-do-session-0-na-arquitetura-de-software.html">Equipes Diversas: O Poder do Session 0 na Arquitetura de Software</a><time datetime="2026-02-12T11:43:29.380Z">12/02/2026 08:43</time></li>
-<li><a href="artigos/tecnologia/acessorios-que-transformam-como-a-hyperdrive-revoluciona-o-uso-de-ssds-externos.html">Acessórios que Transformam: Como a HyperDrive Revoluciona o Uso de SSDs Externos</a><time datetime="2026-02-12T10:48:48.731Z">12/02/2026 07:48</time></li>
+<li><a href="artigos/inteligencia-artificial/transformando-investimentos-em-inovacoes-o-caso-anthropic-e-o-futuro-da-ia.html">Transformando Investimentos em Inovações: O Caso Anthropic e o Futuro da IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-12T21:36:20.264Z">12/02/2026 18:36</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-a-complexidade-da-procura-por-fornecedores-com-ia.html">Transformando a Complexidade da Procura por Fornecedores com IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-12T20:38:05.356Z">12/02/2026 17:38</time></div></li>
+<li><a href="artigos/tecnologia/a-arquitetura-do-ar-o-impacto-da-desregulamentacao-na-qualidade-do-ar-e-na-tecnologia.html">A arquitetura do ar: O impacto da desregulamentação na qualidade do ar e na tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-12T19:13:57.369Z">12/02/2026 16:13</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-programacao-como-o-codex-spark-pode-revolucionar-seu-fluxo-de-trabalho.html">A nova era da programacão: como o Codex-Spark pode revolucionar seu fluxo de trabalho</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-12T18:02:00.378Z">12/02/2026 15:02</time></div></li>
+<li><a href="artigos/seguranca/coupang-e-o-desafio-da-seguranca-de-dados-licoes-de-arquitetura-em-meio-a-crises.html">Coupang e o desafio da segurança de dados: lições de arquitetura em meio a crises</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-12T17:01:32.542Z">12/02/2026 14:01</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/melhorando-a-experiencia-com-airpods-o-toque-que-faz-a-diferenca.html">Melhorando a Experiência com AirPods: O Toque Que Faz a Diferença</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-02-12T15:56:15.638Z">12/02/2026 12:56</time></div></li>
+<li><a href="artigos/tecnologia/o-dilema-da-curadoria-de-noticias-a-etica-por-tras-do-algoritmo.html">O dilema da curadoria de notícias: a ética por trás do algoritmo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-12T14:50:41.018Z">12/02/2026 11:50</time></div></li>
+<li><a href="artigos/seguranca/a-explosao-da-exploracao-humana-como-a-tecnologia-pode-ajudar-a-combate-la.html">A explosão da exploração humana: como a tecnologia pode ajudar a combatê-la</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-12T13:10:40.879Z">12/02/2026 10:10</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/equipes-diversas-o-poder-do-session-0-na-arquitetura-de-software.html">Equipes Diversas: O Poder do Session 0 na Arquitetura de Software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-02-12T11:43:29.380Z">12/02/2026 08:43</time></div></li>
+<li><a href="artigos/tecnologia/acessorios-que-transformam-como-a-hyperdrive-revoluciona-o-uso-de-ssds-externos.html">Acessórios que Transformam: Como a HyperDrive Revoluciona o Uso de SSDs Externos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-12T10:48:48.731Z">12/02/2026 07:48</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

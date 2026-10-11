@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 356</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/melhorando-sua-experiencia-de-streaming-roku-vs-fire-stick.html">Melhorando sua Experiência de Streaming: Roku vs Fire Stick</a><time datetime="2025-11-19T15:22:50.046Z">19/11/2025 12:22</time></li>
-<li><a href="artigos/programacao/a-revolucao-do-vibe-coding-um-olhar-sobre-o-futuro-da-programacao.html">A revolução do "vibe coding": um olhar sobre o futuro da programação</a><time datetime="2025-11-19T14:20:55.263Z">19/11/2025 11:20</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-carteiras-magsafe-e-a-integracao-com-a-tecnologia.html">A revolução dos carteiras: MagSafe e a integração com a tecnologia</a><time datetime="2025-11-19T13:33:04.691Z">19/11/2025 10:33</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-codigo-como-a-europa-esta-moldando-o-futuro-da-tecnologia.html">A revolução do código: como a Europa está moldando o futuro da tecnologia</a><time datetime="2025-11-19T12:42:36.488Z">19/11/2025 09:42</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-das-tvs-de-40-polegadas-tecnologia-e-espaco-em-harmonia.html">A nova era das TVs de 40 polegadas: tecnologia e espaço em harmonia</a><time datetime="2025-11-19T11:18:50.683Z">19/11/2025 08:18</time></li>
-<li><a href="artigos/cloud/novos-rumos-nas-nuvens-python-e-orquestracao-de-ai-com-cloudflare-workflows.html">Novos Rumos nas Nuvens: Python e Orquestração de AI com Cloudflare Workflows</a><time datetime="2025-11-19T10:23:29.129Z">19/11/2025 07:23</time></li>
-<li><a href="artigos/cloud/construindo-arquiteturas-de-eventos-em-nuvens-multiplas-o-desafio-da-modernizacao.html">Construindo Arquiteturas de Eventos em Nuvens Múltiplas: O Desafio da Modernização</a><time datetime="2025-11-19T09:24:00.948Z">19/11/2025 06:24</time></li>
-<li><a href="artigos/programacao/a-nova-era-do-f-refinamentos-que-fazem-a-diferenca.html">A nova era do F#: Refinamentos que fazem a diferença</a><time datetime="2025-11-19T08:28:19.565Z">19/11/2025 05:28</time></li>
-<li><a href="artigos/tecnologia/transformando-o-ciclo-a-revolucao-das-copas-menstruais-inteligentes.html">Transformando o Ciclo: A Revolução das Copas Menstruais Inteligentes</a><time datetime="2025-11-19T07:21:01.453Z">19/11/2025 04:21</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-bem-estar-digital-tiktok-badges-e-a-arquitetura-da-saude-mental.html">A revolução do bem-estar digital: TikTok, badges e a arquitetura da saúde mental</a><time datetime="2025-11-19T06:30:42.229Z">19/11/2025 03:30</time></li>
+<li><a href="artigos/tecnologia/melhorando-sua-experiencia-de-streaming-roku-vs-fire-stick.html">Melhorando sua Experiência de Streaming: Roku vs Fire Stick</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-19T15:22:50.046Z">19/11/2025 12:22</time></div></li>
+<li><a href="artigos/programacao/a-revolucao-do-vibe-coding-um-olhar-sobre-o-futuro-da-programacao.html">A revolução do "vibe coding": um olhar sobre o futuro da programação</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-11-19T14:20:55.263Z">19/11/2025 11:20</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-carteiras-magsafe-e-a-integracao-com-a-tecnologia.html">A revolução dos carteiras: MagSafe e a integração com a tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-19T13:33:04.691Z">19/11/2025 10:33</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-codigo-como-a-europa-esta-moldando-o-futuro-da-tecnologia.html">A revolução do código: como a Europa está moldando o futuro da tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-19T12:42:36.488Z">19/11/2025 09:42</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-das-tvs-de-40-polegadas-tecnologia-e-espaco-em-harmonia.html">A nova era das TVs de 40 polegadas: tecnologia e espaço em harmonia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-19T11:18:50.683Z">19/11/2025 08:18</time></div></li>
+<li><a href="artigos/cloud/novos-rumos-nas-nuvens-python-e-orquestracao-de-ai-com-cloudflare-workflows.html">Novos Rumos nas Nuvens: Python e Orquestração de AI com Cloudflare Workflows</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-11-19T10:23:29.129Z">19/11/2025 07:23</time></div></li>
+<li><a href="artigos/cloud/construindo-arquiteturas-de-eventos-em-nuvens-multiplas-o-desafio-da-modernizacao.html">Construindo Arquiteturas de Eventos em Nuvens Múltiplas: O Desafio da Modernização</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-11-19T09:24:00.948Z">19/11/2025 06:24</time></div></li>
+<li><a href="artigos/programacao/a-nova-era-do-f-refinamentos-que-fazem-a-diferenca.html">A nova era do F#: Refinamentos que fazem a diferença</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-11-19T08:28:19.565Z">19/11/2025 05:28</time></div></li>
+<li><a href="artigos/tecnologia/transformando-o-ciclo-a-revolucao-das-copas-menstruais-inteligentes.html">Transformando o Ciclo: A Revolução das Copas Menstruais Inteligentes</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-19T07:21:01.453Z">19/11/2025 04:21</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-bem-estar-digital-tiktok-badges-e-a-arquitetura-da-saude-mental.html">A revolução do bem-estar digital: TikTok, badges e a arquitetura da saúde mental</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-19T06:30:42.229Z">19/11/2025 03:30</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

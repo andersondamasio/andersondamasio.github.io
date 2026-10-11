@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 240</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/entregas-nas-nuvens-o-futuro-dos-drones-e-o-papel-do-software.html">Entregas nas Nuvens: O Futuro dos Drones e o Papel do Software</a><time datetime="2026-01-11T19:19:00.702Z">11/01/2026 16:19</time></li>
-<li><a href="artigos/inteligencia-artificial/a-queda-dos-resumos-de-ia-do-google-um-alerta-para-a-saude-digital.html">A queda dos resumos de IA do Google: um alerta para a saúde digital</a><time datetime="2026-01-11T18:31:43.747Z">11/01/2026 15:31</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-nuclear-como-reatores-menores-podem-mudar-o-jogo.html">A nova era nuclear: como reatores menores podem mudar o jogo</a><time datetime="2026-01-11T17:20:18.668Z">11/01/2026 14:20</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-gadgets-como-a-tecnologia-da-ces-2026-pode-transformar-nossas-vidas.html">A Revolução dos Gadgets: Como a Tecnologia da CES 2026 Pode Transformar Nossas Vidas</a><time datetime="2026-01-11T16:27:27.094Z">11/01/2026 13:27</time></li>
-<li><a href="artigos/seguranca/a-batalha-contra-deepfakes-o-papel-da-tecnologia-na-protecao-de-direitos-digitais.html">A batalha contra deepfakes: o papel da tecnologia na proteção de direitos digitais</a><time datetime="2026-01-11T15:22:47.011Z">11/01/2026 12:22</time></li>
-<li><a href="artigos/tecnologia/a-batalha-dos-suportes-vale-a-pena-gastar-150-reais-no-seu-airpods-max.html">A batalha dos suportes: vale a pena gastar 150 reais no seu AirPods Max?</a><time datetime="2026-01-11T14:21:26.662Z">11/01/2026 11:21</time></li>
-<li><a href="artigos/inteligencia-artificial/experiencia-imersiva-os-novos-oculos-ai-que-podem-mudar-tudo.html">Experiência Imersiva: Os Novos Óculos AI que Podem Mudar Tudo</a><time datetime="2026-01-11T13:32:32.820Z">11/01/2026 10:32</time></li>
-<li><a href="artigos/tecnologia/descubra-os-novos-rastreadores-bluetooth-que-fazem-sombra-aos-airtags.html">Descubra os novos rastreadores Bluetooth que fazem sombra aos AirTags</a><time datetime="2026-01-11T12:43:03.721Z">11/01/2026 09:43</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-ia-fisica-como-a-arquitetura-de-software-entra-em-cena.html">A Revolução da IA Física: Como a Arquitetura de Software Entra em Cena</a><time datetime="2026-01-11T11:20:05.886Z">11/01/2026 08:20</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-o-seguro-a-revolucao-da-ia-na-allianz-e-o-papel-da-arquitetura-de-software.html">Transformando o Seguro: A Revolução da IA na Allianz e o Papel da Arquitetura de Software</a><time datetime="2026-01-11T10:23:55.742Z">11/01/2026 07:23</time></li>
+<li><a href="artigos/tecnologia/entregas-nas-nuvens-o-futuro-dos-drones-e-o-papel-do-software.html">Entregas nas Nuvens: O Futuro dos Drones e o Papel do Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-11T19:19:00.702Z">11/01/2026 16:19</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-queda-dos-resumos-de-ia-do-google-um-alerta-para-a-saude-digital.html">A queda dos resumos de IA do Google: um alerta para a saúde digital</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-11T18:31:43.747Z">11/01/2026 15:31</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-nuclear-como-reatores-menores-podem-mudar-o-jogo.html">A nova era nuclear: como reatores menores podem mudar o jogo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-11T17:20:18.668Z">11/01/2026 14:20</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-gadgets-como-a-tecnologia-da-ces-2026-pode-transformar-nossas-vidas.html">A Revolução dos Gadgets: Como a Tecnologia da CES 2026 Pode Transformar Nossas Vidas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-11T16:27:27.094Z">11/01/2026 13:27</time></div></li>
+<li><a href="artigos/seguranca/a-batalha-contra-deepfakes-o-papel-da-tecnologia-na-protecao-de-direitos-digitais.html">A batalha contra deepfakes: o papel da tecnologia na proteção de direitos digitais</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-01-11T15:22:47.011Z">11/01/2026 12:22</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-dos-suportes-vale-a-pena-gastar-150-reais-no-seu-airpods-max.html">A batalha dos suportes: vale a pena gastar 150 reais no seu AirPods Max?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-11T14:21:26.662Z">11/01/2026 11:21</time></div></li>
+<li><a href="artigos/inteligencia-artificial/experiencia-imersiva-os-novos-oculos-ai-que-podem-mudar-tudo.html">Experiência Imersiva: Os Novos Óculos AI que Podem Mudar Tudo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-11T13:32:32.820Z">11/01/2026 10:32</time></div></li>
+<li><a href="artigos/tecnologia/descubra-os-novos-rastreadores-bluetooth-que-fazem-sombra-aos-airtags.html">Descubra os novos rastreadores Bluetooth que fazem sombra aos AirTags</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-11T12:43:03.721Z">11/01/2026 09:43</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-ia-fisica-como-a-arquitetura-de-software-entra-em-cena.html">A Revolução da IA Física: Como a Arquitetura de Software Entra em Cena</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-11T11:20:05.886Z">11/01/2026 08:20</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-o-seguro-a-revolucao-da-ia-na-allianz-e-o-papel-da-arquitetura-de-software.html">Transformando o Seguro: A Revolução da IA na Allianz e o Papel da Arquitetura de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-11T10:23:55.742Z">11/01/2026 07:23</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

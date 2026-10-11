@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 391</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/qualidade-de-som-por-que-alto-falantes-com-fio-sao-uma-jogada-certa-para-seu-espaco-externo.html">Qualidade de Som: Por que Alto-falantes com Fio São uma Jogada Certa para Seu Espaço Externo</a><time datetime="2025-11-03T09:24:43.461Z">03/11/2025 06:24</time></li>
-<li><a href="artigos/programacao/java-e-o-futuro-o-que-esperar-do-jdk-26-e-outras-inovacoes.html">Java e o Futuro: O Que Esperar do JDK 26 e Outras Inovações</a><time datetime="2025-11-03T08:30:53.940Z">03/11/2025 05:30</time></li>
-<li><a href="artigos/tecnologia-automotiva/o-impacto-do-novo-acordo-comercial-entre-eua-e-china-na-arquitetura-de-software-automotivo.html">O impacto do novo acordo comercial entre EUA e China na arquitetura de software automotivo</a><time datetime="2025-11-03T07:20:58.965Z">03/11/2025 04:20</time></li>
-<li><a href="artigos/tecnologia/a-nova-tecnologia-que-promete-salvar-seu-lar-de-incendios-eletricos.html">A nova tecnologia que promete salvar seu lar de incêndios elétricos</a><time datetime="2025-11-03T06:33:50.158Z">03/11/2025 03:33</time></li>
-<li><a href="artigos/tecnologia/o-futuro-das-smart-glasses-vale-a-pena-investir-nas-novas-meta-ray-bans.html">O futuro das smart glasses: vale a pena investir nas novas Meta Ray-Bans?</a><time datetime="2025-11-03T05:22:55.938Z">03/11/2025 02:22</time></li>
-<li><a href="artigos/tecnologia/descubra-como-o-menu-secreto-dos-smartphones-samsung-pode-otimizar-sua-conexao-a-internet.html">Descubra como o menu secreto dos smartphones Samsung pode otimizar sua conexão à internet</a><time datetime="2025-11-03T04:29:17.808Z">03/11/2025 01:29</time></li>
-<li><a href="artigos/inteligencia-artificial/a-introspeccao-das-maquinas-o-que-a-arquitetura-de-software-pode-aprender-com-isso.html">A introspecção das máquinas: o que a arquitetura de software pode aprender com isso</a><time datetime="2025-11-03T03:18:30.272Z">03/11/2025 00:18</time></li>
-<li><a href="artigos/tecnologia/como-o-x-da-alphabet-esta-revolucionando-inovacoes-com-a-estrategia-de-spinouts.html">Como o X da Alphabet está Revolucionando Inovações com a Estratégia de Spinouts</a><time datetime="2025-11-03T01:30:37.539Z">02/11/2025 22:30</time></li>
-<li><a href="artigos/tecnologia/transformando-o-futuro-do-desenvolvimento-o-que-esperar-do-visual-studio-2026.html">Transformando o Futuro do Desenvolvimento: O que Esperar do Visual Studio 2026</a><time datetime="2025-11-02T23:17:47.904Z">02/11/2025 20:17</time></li>
-<li><a href="artigos/devops/a-nova-era-da-conformidade-como-o-devops-esta-revolucionando-auditorias-e-controles.html">A nova era da conformidade: como o DevOps está revolucionando auditorias e controles</a><time datetime="2025-11-02T22:18:18.850Z">02/11/2025 19:18</time></li>
+<li><a href="artigos/tecnologia/qualidade-de-som-por-que-alto-falantes-com-fio-sao-uma-jogada-certa-para-seu-espaco-externo.html">Qualidade de Som: Por que Alto-falantes com Fio São uma Jogada Certa para Seu Espaço Externo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-03T09:24:43.461Z">03/11/2025 06:24</time></div></li>
+<li><a href="artigos/programacao/java-e-o-futuro-o-que-esperar-do-jdk-26-e-outras-inovacoes.html">Java e o Futuro: O Que Esperar do JDK 26 e Outras Inovações</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-11-03T08:30:53.940Z">03/11/2025 05:30</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/o-impacto-do-novo-acordo-comercial-entre-eua-e-china-na-arquitetura-de-software-automotivo.html">O impacto do novo acordo comercial entre EUA e China na arquitetura de software automotivo</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-11-03T07:20:58.965Z">03/11/2025 04:20</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-tecnologia-que-promete-salvar-seu-lar-de-incendios-eletricos.html">A nova tecnologia que promete salvar seu lar de incêndios elétricos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-03T06:33:50.158Z">03/11/2025 03:33</time></div></li>
+<li><a href="artigos/tecnologia/o-futuro-das-smart-glasses-vale-a-pena-investir-nas-novas-meta-ray-bans.html">O futuro das smart glasses: vale a pena investir nas novas Meta Ray-Bans?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-03T05:22:55.938Z">03/11/2025 02:22</time></div></li>
+<li><a href="artigos/tecnologia/descubra-como-o-menu-secreto-dos-smartphones-samsung-pode-otimizar-sua-conexao-a-internet.html">Descubra como o menu secreto dos smartphones Samsung pode otimizar sua conexão à internet</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-03T04:29:17.808Z">03/11/2025 01:29</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-introspeccao-das-maquinas-o-que-a-arquitetura-de-software-pode-aprender-com-isso.html">A introspecção das máquinas: o que a arquitetura de software pode aprender com isso</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-03T03:18:30.272Z">03/11/2025 00:18</time></div></li>
+<li><a href="artigos/tecnologia/como-o-x-da-alphabet-esta-revolucionando-inovacoes-com-a-estrategia-de-spinouts.html">Como o X da Alphabet está Revolucionando Inovações com a Estratégia de Spinouts</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-03T01:30:37.539Z">02/11/2025 22:30</time></div></li>
+<li><a href="artigos/tecnologia/transformando-o-futuro-do-desenvolvimento-o-que-esperar-do-visual-studio-2026.html">Transformando o Futuro do Desenvolvimento: O que Esperar do Visual Studio 2026</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-02T23:17:47.904Z">02/11/2025 20:17</time></div></li>
+<li><a href="artigos/devops/a-nova-era-da-conformidade-como-o-devops-esta-revolucionando-auditorias-e-controles.html">A nova era da conformidade: como o DevOps está revolucionando auditorias e controles</a><div class="article-list-meta"><span>DevOps</span><time datetime="2025-11-02T22:18:18.850Z">02/11/2025 19:18</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

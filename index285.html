@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 285</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/os-gadgets-que-transformam-a-vida-em-2025-como-a-tecnologia-pode-facilitar-nosso-dia-a-dia.html">Os gadgets que transformam a vida em 2025: como a tecnologia pode facilitar nosso dia a dia</a><time datetime="2025-12-22T05:26:30.166Z">22/12/2025 02:26</time></li>
-<li><a href="artigos/programacao/a-evolucao-do-java-novidades-e-tendencias-que-moldam-o-futuro-do-desenvolvimento.html">A evolução do Java: Novidades e tendências que moldam o futuro do desenvolvimento</a><time datetime="2025-12-22T04:42:07.591Z">22/12/2025 01:42</time></li>
-<li><a href="artigos/robotica/a-tecnologia-em-acao-licoes-do-apagao-que-paralisou-os-robotaxis-da-waymo.html">A tecnologia em ação: lições do apagão que paralisou os robotaxis da Waymo</a><time datetime="2025-12-22T03:44:24.602Z">22/12/2025 00:44</time></li>
-<li><a href="artigos/tecnologia/melhore-a-experiencia-da-sua-samsung-tv-dicas-que-voce-nao-pode-ignorar.html">Melhore a Experiência da Sua Samsung TV: Dicas que Você Não Pode Ignorar!</a><time datetime="2025-12-22T01:47:07.466Z">21/12/2025 22:47</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-ia-o-que-esperar-em-2026.html">A Revolução da IA: O Que Esperar em 2026?</a><time datetime="2025-12-21T23:20:48.683Z">21/12/2025 20:20</time></li>
-<li><a href="artigos/tecnologia/desafios-da-industria-de-hardware-licoes-para-desenvolvimento-de-software.html">Desafios da Indústria de Hardware: Lições para Desenvolvimento de Software</a><time datetime="2025-12-21T22:21:46.270Z">21/12/2025 19:21</time></li>
-<li><a href="artigos/programacao/descomplicando-apis-como-o-orpc-revoluciona-o-desenvolvimento-com-tipos-seguros.html">Descomplicando APIs: Como o oRPC Revoluciona o Desenvolvimento com Tipos Seguros</a><time datetime="2025-12-21T21:19:55.205Z">21/12/2025 18:19</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-ferramenta-do-google-como-a-arquitetura-de-software-pode-ajudar-a-distinguir-videos-gerados-por-ia.html">A nova ferramenta do Google: Como a Arquitetura de Software pode ajudar a distinguir vídeos gerados por IA</a><time datetime="2025-12-21T20:23:29.271Z">21/12/2025 17:23</time></li>
-<li><a href="artigos/tecnologia/a-magia-do-som-lg-inova-com-o-sistema-dolby-atmos-flexconnect.html">A magia do som: LG inova com o sistema Dolby Atmos FlexConnect</a><time datetime="2025-12-21T19:17:36.924Z">21/12/2025 16:17</time></li>
-<li><a href="artigos/inteligencia-artificial/cuga-o-agente-configuravel-que-esta-mudando-o-jogo-da-automacao.html">CUGA: O Agente Configurável que Está Mudando o Jogo da Automação</a><time datetime="2025-12-21T18:29:44.309Z">21/12/2025 15:29</time></li>
+<li><a href="artigos/tecnologia/os-gadgets-que-transformam-a-vida-em-2025-como-a-tecnologia-pode-facilitar-nosso-dia-a-dia.html">Os gadgets que transformam a vida em 2025: como a tecnologia pode facilitar nosso dia a dia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-22T05:26:30.166Z">22/12/2025 02:26</time></div></li>
+<li><a href="artigos/programacao/a-evolucao-do-java-novidades-e-tendencias-que-moldam-o-futuro-do-desenvolvimento.html">A evolução do Java: Novidades e tendências que moldam o futuro do desenvolvimento</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-12-22T04:42:07.591Z">22/12/2025 01:42</time></div></li>
+<li><a href="artigos/robotica/a-tecnologia-em-acao-licoes-do-apagao-que-paralisou-os-robotaxis-da-waymo.html">A tecnologia em ação: lições do apagão que paralisou os robotaxis da Waymo</a><div class="article-list-meta"><span>Robótica</span><time datetime="2025-12-22T03:44:24.602Z">22/12/2025 00:44</time></div></li>
+<li><a href="artigos/tecnologia/melhore-a-experiencia-da-sua-samsung-tv-dicas-que-voce-nao-pode-ignorar.html">Melhore a Experiência da Sua Samsung TV: Dicas que Você Não Pode Ignorar!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-22T01:47:07.466Z">21/12/2025 22:47</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-ia-o-que-esperar-em-2026.html">A Revolução da IA: O Que Esperar em 2026?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-21T23:20:48.683Z">21/12/2025 20:20</time></div></li>
+<li><a href="artigos/tecnologia/desafios-da-industria-de-hardware-licoes-para-desenvolvimento-de-software.html">Desafios da Indústria de Hardware: Lições para Desenvolvimento de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-21T22:21:46.270Z">21/12/2025 19:21</time></div></li>
+<li><a href="artigos/programacao/descomplicando-apis-como-o-orpc-revoluciona-o-desenvolvimento-com-tipos-seguros.html">Descomplicando APIs: Como o oRPC Revoluciona o Desenvolvimento com Tipos Seguros</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-12-21T21:19:55.205Z">21/12/2025 18:19</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-ferramenta-do-google-como-a-arquitetura-de-software-pode-ajudar-a-distinguir-videos-gerados-por-ia.html">A nova ferramenta do Google: Como a Arquitetura de Software pode ajudar a distinguir vídeos gerados por IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-21T20:23:29.271Z">21/12/2025 17:23</time></div></li>
+<li><a href="artigos/tecnologia/a-magia-do-som-lg-inova-com-o-sistema-dolby-atmos-flexconnect.html">A magia do som: LG inova com o sistema Dolby Atmos FlexConnect</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-21T19:17:36.924Z">21/12/2025 16:17</time></div></li>
+<li><a href="artigos/inteligencia-artificial/cuga-o-agente-configuravel-que-esta-mudando-o-jogo-da-automacao.html">CUGA: O Agente Configurável que Está Mudando o Jogo da Automação</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-21T18:29:44.309Z">21/12/2025 15:29</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

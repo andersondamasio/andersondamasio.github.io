@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 18</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/seguranca/a-nova-sombra-do-android-seguranca-ou-invasao-silenciosa.html">A nova sombra do Android: Segurança ou invasão silenciosa?</a><time datetime="2026-06-09T15:59:29.181Z">09/06/2026 12:59</time></li>
-<li><a href="artigos/tecnologia/a-energia-que-voce-nao-ve-como-um-simples-interruptor-pode-salvar-seu-bolso.html">A energia que você não vê: como um simples interruptor pode salvar seu bolso</a><time datetime="2026-06-09T12:43:00.137Z">09/06/2026 09:43</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-das-ferramentas-de-orcamentacao-como-escolher-a-melhor-para-sua-empresa.html">A nova era das ferramentas de orçamentação: como escolher a melhor para sua empresa</a><time datetime="2026-06-09T09:48:23.254Z">09/06/2026 06:48</time></li>
-<li><a href="artigos/tecnologia/impulsionando-a-entrega-rapida-o-desafio-do-crescimento-sustentavel-na-era-do-ipo.html">Impulsionando a Entrega Rápida: O Desafio do Crescimento Sustentável na Era do IPO</a><time datetime="2026-06-09T05:11:51.701Z">09/06/2026 02:11</time></li>
-<li><a href="artigos/desenvolvimento-de-software/como-a-nova-era-do-macos-pode-revolucionar-seu-fluxo-de-trabalho.html">Como a Nova Era do MacOS Pode Revolucionar seu Fluxo de Trabalho</a><time datetime="2026-06-09T00:12:35.484Z">08/06/2026 21:12</time></li>
-<li><a href="artigos/inteligencia-artificial/novos-rumos-openai-e-anthropic-rumo-a-bolsa-de-valores.html">Novos Rumos: OpenAI e Anthropic Rumo à Bolsa de Valores</a><time datetime="2026-06-08T22:32:26.729Z">08/06/2026 19:32</time></li>
-<li><a href="artigos/seguranca/a-vulnerabilidade-dos-gigantes-o-hack-que-abalou-os-projetos-de-codigo-aberto-da-microsoft.html">A vulnerabilidade dos gigantes: o hack que abalou os projetos de código aberto da Microsoft</a><time datetime="2026-06-08T20:20:20.118Z">08/06/2026 17:20</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-do-ios-como-se-preparar-para-a-revolucao-do-ios-27.html">A nova era do iOS: Como se preparar para a revolução do iOS 27</a><time datetime="2026-06-08T18:17:12.990Z">08/06/2026 15:17</time></li>
-<li><a href="artigos/programacao/a-arte-de-descomplicar-urls-como-o-pinterest-otimiza-a-deduplicacao-de-conteudo.html">A arte de descomplicar URLs: como o Pinterest otimiza a deduplicação de conteúdo</a><time datetime="2026-06-08T14:54:59.423Z">08/06/2026 11:54</time></li>
-<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-como-coparental-uma-nova-era-na-maternidade.html">A Inteligência Artificial como Coparental: Uma Nova Era na Maternidade</a><time datetime="2026-06-08T10:59:42.151Z">08/06/2026 07:59</time></li>
+<li><a href="artigos/seguranca/a-nova-sombra-do-android-seguranca-ou-invasao-silenciosa.html">A nova sombra do Android: Segurança ou invasão silenciosa?</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-06-09T15:59:29.181Z">09/06/2026 12:59</time></div></li>
+<li><a href="artigos/tecnologia/a-energia-que-voce-nao-ve-como-um-simples-interruptor-pode-salvar-seu-bolso.html">A energia que você não vê: como um simples interruptor pode salvar seu bolso</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-06-09T12:43:00.137Z">09/06/2026 09:43</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-das-ferramentas-de-orcamentacao-como-escolher-a-melhor-para-sua-empresa.html">A nova era das ferramentas de orçamentação: como escolher a melhor para sua empresa</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-06-09T09:48:23.254Z">09/06/2026 06:48</time></div></li>
+<li><a href="artigos/tecnologia/impulsionando-a-entrega-rapida-o-desafio-do-crescimento-sustentavel-na-era-do-ipo.html">Impulsionando a Entrega Rápida: O Desafio do Crescimento Sustentável na Era do IPO</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-06-09T05:11:51.701Z">09/06/2026 02:11</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/como-a-nova-era-do-macos-pode-revolucionar-seu-fluxo-de-trabalho.html">Como a Nova Era do MacOS Pode Revolucionar seu Fluxo de Trabalho</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-06-09T00:12:35.484Z">08/06/2026 21:12</time></div></li>
+<li><a href="artigos/inteligencia-artificial/novos-rumos-openai-e-anthropic-rumo-a-bolsa-de-valores.html">Novos Rumos: OpenAI e Anthropic Rumo à Bolsa de Valores</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-06-08T22:32:26.729Z">08/06/2026 19:32</time></div></li>
+<li><a href="artigos/seguranca/a-vulnerabilidade-dos-gigantes-o-hack-que-abalou-os-projetos-de-codigo-aberto-da-microsoft.html">A vulnerabilidade dos gigantes: o hack que abalou os projetos de código aberto da Microsoft</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-06-08T20:20:20.118Z">08/06/2026 17:20</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-do-ios-como-se-preparar-para-a-revolucao-do-ios-27.html">A nova era do iOS: Como se preparar para a revolução do iOS 27</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-06-08T18:17:12.990Z">08/06/2026 15:17</time></div></li>
+<li><a href="artigos/programacao/a-arte-de-descomplicar-urls-como-o-pinterest-otimiza-a-deduplicacao-de-conteudo.html">A arte de descomplicar URLs: como o Pinterest otimiza a deduplicação de conteúdo</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-06-08T14:54:59.423Z">08/06/2026 11:54</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-como-coparental-uma-nova-era-na-maternidade.html">A Inteligência Artificial como Coparental: Uma Nova Era na Maternidade</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-06-08T10:59:42.151Z">08/06/2026 07:59</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

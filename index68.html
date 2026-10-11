@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 68</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/revolucao-no-streaming-o-legado-de-reed-hastings-e-o-futuro-da-netflix.html">Revolução no Streaming: O Legado de Reed Hastings e o Futuro da Netflix</a><time datetime="2026-04-16T21:47:44.710Z">16/04/2026 18:47</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-chips-como-a-arquitetura-de-software-pode-escalar-a-ia.html">A revolução dos chips: como a arquitetura de software pode escalar a IA</a><time datetime="2026-04-16T20:52:54.355Z">16/04/2026 17:52</time></li>
-<li><a href="artigos/inteligencia-artificial/a-batalha-da-inteligencia-artificial-codex-se-reinventa-para-enfrentar-claude-code.html">A batalha da inteligência artificial: Codex se reinventa para enfrentar Claude Code</a><time datetime="2026-04-16T19:19:15.740Z">16/04/2026 16:19</time></li>
-<li><a href="artigos/seguranca/como-a-arquitetura-de-software-pode-ajudar-a-evitar-quedas-em-redes-sociais.html">Como a Arquitetura de Software Pode Ajudar a Evitar Quedas em Redes Sociais</a><time datetime="2026-04-16T17:19:24.497Z">16/04/2026 14:19</time></li>
-<li><a href="artigos/tecnologia/tidal-e-qobuz-o-embate-dos-servicos-de-streaming-hi-res-e-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">Tidal e Qobuz: O embate dos serviços de streaming hi-res e o que a Arquitetura de Software tem a ver com isso</a><time datetime="2026-04-16T13:48:52.150Z">16/04/2026 10:48</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-do-pensamento-escrevendo-com-a-mente.html">A revolução do pensamento: escrevendo com a mente</a><time datetime="2026-04-16T11:07:39.478Z">16/04/2026 08:07</time></li>
-<li><a href="artigos/seguranca/a-seguranca-online-das-criancas-um-desafio-para-a-tecnologia.html">A segurança online das crianças: um desafio para a tecnologia</a><time datetime="2026-04-16T09:24:29.331Z">16/04/2026 06:24</time></li>
-<li><a href="artigos/tecnologia/a-escalada-dos-precos-dos-pcs-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">A escalada dos preços dos PCs: o que a arquitetura de software tem a ver com isso?</a><time datetime="2026-04-16T07:51:01.784Z">16/04/2026 04:51</time></li>
-<li><a href="artigos/tecnologia/a-solucao-que-voce-nao-sabia-que-precisava-revertendo-atualizacoes-do-google-services-no-android.html">A solução que você não sabia que precisava: revertendo atualizações do Google Services no Android</a><time datetime="2026-04-16T05:36:15.755Z">16/04/2026 02:36</time></li>
-<li><a href="artigos/tecnologia/como-configurar-seu-televisor-para-nao-cair-na-armadilha-das-cores-vivas.html">Como Configurar Seu Televisor Para Não Cair na Armadilha das Cores Vivas</a><time datetime="2026-04-16T02:42:04.997Z">15/04/2026 23:42</time></li>
+<li><a href="artigos/tecnologia/revolucao-no-streaming-o-legado-de-reed-hastings-e-o-futuro-da-netflix.html">Revolução no Streaming: O Legado de Reed Hastings e o Futuro da Netflix</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-16T21:47:44.710Z">16/04/2026 18:47</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-chips-como-a-arquitetura-de-software-pode-escalar-a-ia.html">A revolução dos chips: como a arquitetura de software pode escalar a IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-16T20:52:54.355Z">16/04/2026 17:52</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-batalha-da-inteligencia-artificial-codex-se-reinventa-para-enfrentar-claude-code.html">A batalha da inteligência artificial: Codex se reinventa para enfrentar Claude Code</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-16T19:19:15.740Z">16/04/2026 16:19</time></div></li>
+<li><a href="artigos/seguranca/como-a-arquitetura-de-software-pode-ajudar-a-evitar-quedas-em-redes-sociais.html">Como a Arquitetura de Software Pode Ajudar a Evitar Quedas em Redes Sociais</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-16T17:19:24.497Z">16/04/2026 14:19</time></div></li>
+<li><a href="artigos/tecnologia/tidal-e-qobuz-o-embate-dos-servicos-de-streaming-hi-res-e-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">Tidal e Qobuz: O embate dos serviços de streaming hi-res e o que a Arquitetura de Software tem a ver com isso</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-16T13:48:52.150Z">16/04/2026 10:48</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-do-pensamento-escrevendo-com-a-mente.html">A revolução do pensamento: escrevendo com a mente</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-16T11:07:39.478Z">16/04/2026 08:07</time></div></li>
+<li><a href="artigos/seguranca/a-seguranca-online-das-criancas-um-desafio-para-a-tecnologia.html">A segurança online das crianças: um desafio para a tecnologia</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-16T09:24:29.331Z">16/04/2026 06:24</time></div></li>
+<li><a href="artigos/tecnologia/a-escalada-dos-precos-dos-pcs-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">A escalada dos preços dos PCs: o que a arquitetura de software tem a ver com isso?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-16T07:51:01.784Z">16/04/2026 04:51</time></div></li>
+<li><a href="artigos/tecnologia/a-solucao-que-voce-nao-sabia-que-precisava-revertendo-atualizacoes-do-google-services-no-android.html">A solução que você não sabia que precisava: revertendo atualizações do Google Services no Android</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-16T05:36:15.755Z">16/04/2026 02:36</time></div></li>
+<li><a href="artigos/tecnologia/como-configurar-seu-televisor-para-nao-cair-na-armadilha-das-cores-vivas.html">Como Configurar Seu Televisor Para Não Cair na Armadilha das Cores Vivas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-16T02:42:04.997Z">15/04/2026 23:42</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

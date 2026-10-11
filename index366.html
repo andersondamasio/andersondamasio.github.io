@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 366</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-revolucao-dos-airtags-como-a-tecnologia-de-rastreamento-pode-transformar-nossas-vidas.html">A Revolução dos AirTags: Como a Tecnologia de Rastreamento Pode Transformar Nossas Vidas</a><time datetime="2025-11-14T22:20:05.632Z">14/11/2025 19:20</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-baratos-onde-a-economia-encontra-a-performance.html">A revolução dos smartphones baratos: onde a economia encontra a performance</a><time datetime="2025-11-14T21:19:14.431Z">14/11/2025 18:19</time></li>
-<li><a href="artigos/tecnologia/a-corrida-das-ofertas-como-o-ecossistema-de-software-pode-impulsionar-suas-compras-na-black-friday.html">A corrida das ofertas: como o ecossistema de software pode impulsionar suas compras na Black Friday</a><time datetime="2025-11-14T20:23:15.633Z">14/11/2025 17:23</time></li>
-<li><a href="artigos/tecnologia/a-hora-de-garantir-seu-chromebook-ofertas-imperdiveis-ja-estao-na-area.html">A hora de garantir seu Chromebook: ofertas imperdíveis já estão na área!</a><time datetime="2025-11-14T19:17:12.765Z">14/11/2025 16:17</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-do-em-dash-por-que-a-mudanca-no-chatgpt-pode-impactar-a-escrita-digital.html">A era do em dash: por que a mudança no ChatGPT pode impactar a escrita digital</a><time datetime="2025-11-14T18:29:04.842Z">14/11/2025 15:29</time></li>
-<li><a href="artigos/seguranca/a-nova-face-da-fraudes-ciberneticas-o-caso-dos-trabalhadores-remotos-da-coreia-do-norte.html">A nova face da fraudes cibernéticas: o caso dos ‘trabalhadores remotos’ da Coreia do Norte</a><time datetime="2025-11-14T17:18:49.879Z">14/11/2025 14:18</time></li>
-<li><a href="artigos/seguranca/a-revolucao-das-ciberameacas-quando-a-ia-se-torna-o-atacante.html">A revolução das ciberameaças: quando a IA se torna o atacante</a><time datetime="2025-11-14T16:26:56.718Z">14/11/2025 13:26</time></li>
-<li><a href="artigos/fintech/transformacao-digital-o-que-o-ipo-da-pine-labs-nos-ensinou-sobre-fintechs-e-arquitetura-de-software.html">Transformação Digital: O Que o IPO da Pine Labs nos Ensinou sobre Fintechs e Arquitetura de Software</a><time datetime="2025-11-14T15:19:41.305Z">14/11/2025 12:19</time></li>
-<li><a href="artigos/inteligencia-artificial/kubernetes-a-nova-fronteira-para-a-computacao-de-ai.html">Kubernetes: A Nova Fronteira para a Computação de AI</a><time datetime="2025-11-14T14:21:03.589Z">14/11/2025 11:21</time></li>
-<li><a href="artigos/inteligencia-artificial/acelerando-o-codigo-o-impacto-do-gpt-5-1-no-desenvolvimento-de-software.html">Acelerando o Código: O Impacto do GPT-5.1 no Desenvolvimento de Software</a><time datetime="2025-11-14T13:31:15.996Z">14/11/2025 10:31</time></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-airtags-como-a-tecnologia-de-rastreamento-pode-transformar-nossas-vidas.html">A Revolução dos AirTags: Como a Tecnologia de Rastreamento Pode Transformar Nossas Vidas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-14T22:20:05.632Z">14/11/2025 19:20</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-baratos-onde-a-economia-encontra-a-performance.html">A revolução dos smartphones baratos: onde a economia encontra a performance</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-14T21:19:14.431Z">14/11/2025 18:19</time></div></li>
+<li><a href="artigos/tecnologia/a-corrida-das-ofertas-como-o-ecossistema-de-software-pode-impulsionar-suas-compras-na-black-friday.html">A corrida das ofertas: como o ecossistema de software pode impulsionar suas compras na Black Friday</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-14T20:23:15.633Z">14/11/2025 17:23</time></div></li>
+<li><a href="artigos/tecnologia/a-hora-de-garantir-seu-chromebook-ofertas-imperdiveis-ja-estao-na-area.html">A hora de garantir seu Chromebook: ofertas imperdíveis já estão na área!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-14T19:17:12.765Z">14/11/2025 16:17</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-do-em-dash-por-que-a-mudanca-no-chatgpt-pode-impactar-a-escrita-digital.html">A era do em dash: por que a mudança no ChatGPT pode impactar a escrita digital</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-14T18:29:04.842Z">14/11/2025 15:29</time></div></li>
+<li><a href="artigos/seguranca/a-nova-face-da-fraudes-ciberneticas-o-caso-dos-trabalhadores-remotos-da-coreia-do-norte.html">A nova face da fraudes cibernéticas: o caso dos ‘trabalhadores remotos’ da Coreia do Norte</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-14T17:18:49.879Z">14/11/2025 14:18</time></div></li>
+<li><a href="artigos/seguranca/a-revolucao-das-ciberameacas-quando-a-ia-se-torna-o-atacante.html">A revolução das ciberameaças: quando a IA se torna o atacante</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-14T16:26:56.718Z">14/11/2025 13:26</time></div></li>
+<li><a href="artigos/fintech/transformacao-digital-o-que-o-ipo-da-pine-labs-nos-ensinou-sobre-fintechs-e-arquitetura-de-software.html">Transformação Digital: O Que o IPO da Pine Labs nos Ensinou sobre Fintechs e Arquitetura de Software</a><div class="article-list-meta"><span>Fintech</span><time datetime="2025-11-14T15:19:41.305Z">14/11/2025 12:19</time></div></li>
+<li><a href="artigos/inteligencia-artificial/kubernetes-a-nova-fronteira-para-a-computacao-de-ai.html">Kubernetes: A Nova Fronteira para a Computação de AI</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-14T14:21:03.589Z">14/11/2025 11:21</time></div></li>
+<li><a href="artigos/inteligencia-artificial/acelerando-o-codigo-o-impacto-do-gpt-5-1-no-desenvolvimento-de-software.html">Acelerando o Código: O Impacto do GPT-5.1 no Desenvolvimento de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-14T13:31:15.996Z">14/11/2025 10:31</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

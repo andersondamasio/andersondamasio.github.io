@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 85</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/aumentar-a-vram-vale-a-pena-desvendando-os-limites-da-memoria-virtual.html">Aumentar a VRAM vale a pena? Desvendando os limites da memória virtual</a><time datetime="2026-04-04T02:12:05.362Z">03/04/2026 23:12</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-redes-sociais-anonimas-o-caso-do-fizz-na-arabia-saudita.html">A Revolução das Redes Sociais Anônimas: O Caso do Fizz na Arábia Saudita</a><time datetime="2026-04-03T22:38:12.318Z">03/04/2026 19:38</time></li>
-<li><a href="artigos/inteligencia-artificial/transformacoes-na-lideranca-da-openai-o-que-isso-significa-para-o-futuro-da-tecnologia.html">Transformações na Liderança da OpenAI: O Que Isso Significa para o Futuro da Tecnologia?</a><time datetime="2026-04-03T20:41:54.669Z">03/04/2026 17:41</time></li>
-<li><a href="artigos/inteligencia-artificial/playlist-ai-como-a-tecnologia-pode-transformar-a-forma-de-descobrir-musica.html">Playlist AI: Como a Tecnologia Pode Transformar a Forma de Descobrir Música</a><time datetime="2026-04-03T18:51:54.634Z">03/04/2026 15:51</time></li>
-<li><a href="artigos/programacao/desbravando-as-novidades-do-swift-6-3-android-e-c-interop-ao-seu-alcance.html">Desbravando as Novidades do Swift 6.3: Android e C Interop Ao Seu Alcance</a><time datetime="2026-04-03T17:39:25.910Z">03/04/2026 14:39</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-monitores-baratos-vale-a-pena-investir.html">A nova era dos monitores baratos: vale a pena investir?</a><time datetime="2026-04-03T16:44:33.635Z">03/04/2026 13:44</time></li>
-<li><a href="artigos/tecnologia/como-economizar-na-gasolina-apps-gratuitos-que-facilitam-a-busca-pelos-melhores-precos.html">Como economizar na gasolina: apps gratuitos que facilitam a busca pelos melhores preços</a><time datetime="2026-04-03T15:44:26.075Z">03/04/2026 12:44</time></li>
-<li><a href="artigos/tecnologia/por-que-youtube-premium-e-o-caminho-para-quem-quer-fugir-das-interrupcoes.html">Por que YouTube Premium é o caminho para quem quer fugir das interrupções</a><time datetime="2026-04-03T14:46:56.790Z">03/04/2026 11:46</time></li>
-<li><a href="artigos/tecnologia/a-batalha-contra-a-tela-bloom-card-e-brick-na-luta-pela-nossa-atencao.html">A batalha contra a tela: Bloom Card e Brick na luta pela nossa atenção</a><time datetime="2026-04-03T13:08:17.736Z">03/04/2026 10:08</time></li>
-<li><a href="artigos/programacao/a-nova-era-do-compartilhamento-de-codigo-module-federation-2-0.html">A nova era do compartilhamento de código: Module Federation 2.0</a><time datetime="2026-04-03T11:42:17.834Z">03/04/2026 08:42</time></li>
+<li><a href="artigos/tecnologia/aumentar-a-vram-vale-a-pena-desvendando-os-limites-da-memoria-virtual.html">Aumentar a VRAM vale a pena? Desvendando os limites da memória virtual</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-04T02:12:05.362Z">03/04/2026 23:12</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-redes-sociais-anonimas-o-caso-do-fizz-na-arabia-saudita.html">A Revolução das Redes Sociais Anônimas: O Caso do Fizz na Arábia Saudita</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-03T22:38:12.318Z">03/04/2026 19:38</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformacoes-na-lideranca-da-openai-o-que-isso-significa-para-o-futuro-da-tecnologia.html">Transformações na Liderança da OpenAI: O Que Isso Significa para o Futuro da Tecnologia?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-03T20:41:54.669Z">03/04/2026 17:41</time></div></li>
+<li><a href="artigos/inteligencia-artificial/playlist-ai-como-a-tecnologia-pode-transformar-a-forma-de-descobrir-musica.html">Playlist AI: Como a Tecnologia Pode Transformar a Forma de Descobrir Música</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-03T18:51:54.634Z">03/04/2026 15:51</time></div></li>
+<li><a href="artigos/programacao/desbravando-as-novidades-do-swift-6-3-android-e-c-interop-ao-seu-alcance.html">Desbravando as Novidades do Swift 6.3: Android e C Interop Ao Seu Alcance</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-04-03T17:39:25.910Z">03/04/2026 14:39</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-monitores-baratos-vale-a-pena-investir.html">A nova era dos monitores baratos: vale a pena investir?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-03T16:44:33.635Z">03/04/2026 13:44</time></div></li>
+<li><a href="artigos/tecnologia/como-economizar-na-gasolina-apps-gratuitos-que-facilitam-a-busca-pelos-melhores-precos.html">Como economizar na gasolina: apps gratuitos que facilitam a busca pelos melhores preços</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-03T15:44:26.075Z">03/04/2026 12:44</time></div></li>
+<li><a href="artigos/tecnologia/por-que-youtube-premium-e-o-caminho-para-quem-quer-fugir-das-interrupcoes.html">Por que YouTube Premium é o caminho para quem quer fugir das interrupções</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-03T14:46:56.790Z">03/04/2026 11:46</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-contra-a-tela-bloom-card-e-brick-na-luta-pela-nossa-atencao.html">A batalha contra a tela: Bloom Card e Brick na luta pela nossa atenção</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-03T13:08:17.736Z">03/04/2026 10:08</time></div></li>
+<li><a href="artigos/programacao/a-nova-era-do-compartilhamento-de-codigo-module-federation-2-0.html">A nova era do compartilhamento de código: Module Federation 2.0</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-04-03T11:42:17.834Z">03/04/2026 08:42</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

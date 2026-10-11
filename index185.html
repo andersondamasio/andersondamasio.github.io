@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 185</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-chips-como-a-cerebras-esta-mudando-o-jogo-da-inteligencia-artificial.html">A revolução dos chips: como a Cerebras está mudando o jogo da inteligência artificial</a><time datetime="2026-02-07T05:45:27.010Z">07/02/2026 02:45</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-auracast-como-a-tecnologia-de-audio-pode-transformar-sua-experiencia-em-casa.html">A revolução do Auracast: como a tecnologia de áudio pode transformar sua experiência em casa</a><time datetime="2026-02-07T04:14:48.987Z">07/02/2026 01:14</time></li>
-<li><a href="artigos/tecnologia/transformando-seu-tablet-em-um-e-reader-dicas-e-truques-para-uma-experiencia-de-leitura-incrivel.html">Transformando Seu Tablet em um E-Reader: Dicas e Truques para uma Experiência de Leitura Incrível</a><time datetime="2026-02-07T02:01:18.143Z">06/02/2026 23:01</time></li>
-<li><a href="artigos/tecnologia/como-a-nova-tv-da-sony-pode-revolucionar-seu-entretenimento-em-casa.html">Como a Nova TV da Sony Pode Revolucionar Seu Entretenimento em Casa</a><time datetime="2026-02-06T23:29:20.798Z">06/02/2026 20:29</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-do-gerenciamento-de-sites-claude-agora-e-seu-assistente-no-wordpress.html">A nova era do gerenciamento de sites: Claude agora é seu assistente no WordPress</a><time datetime="2026-02-06T22:26:46.373Z">06/02/2026 19:26</time></li>
-<li><a href="artigos/tecnologia/a-batalha-dos-streams-apple-music-ou-spotify-a-escolha-do-arquiteto-de-software.html">A batalha dos streams: Apple Music ou Spotify? A escolha do arquiteto de software</a><time datetime="2026-02-06T21:34:02.541Z">06/02/2026 18:34</time></li>
-<li><a href="artigos/programacao/construindo-apps-em-tempo-recorde-a-revolucao-da-inteligencia-artificial-na-programacao.html">Construindo Apps em Tempo Recorde: A Revolução da Inteligência Artificial na Programação</a><time datetime="2026-02-06T20:37:12.617Z">06/02/2026 17:37</time></li>
-<li><a href="artigos/inteligencia-artificial/visao-agente-o-futuro-da-interacao-entre-ia-e-imagens.html">Visão Agente: O Futuro da Interação entre IA e Imagens</a><time datetime="2026-02-06T19:40:50.246Z">06/02/2026 16:40</time></li>
-<li><a href="artigos/tecnologia/como-elon-musk-esta-redefinindo-o-poder-dos-fundadores-na-era-da-inovacao.html">Como Elon Musk Está Redefinindo o Poder dos Fundadores na Era da Inovação</a><time datetime="2026-02-06T18:54:40.760Z">06/02/2026 15:54</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-celulares-para-criancas-controle-total-na-palma-da-mao.html">A nova era dos celulares para crianças: controle total na palma da mão</a><time datetime="2026-02-06T17:44:44.714Z">06/02/2026 14:44</time></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-chips-como-a-cerebras-esta-mudando-o-jogo-da-inteligencia-artificial.html">A revolução dos chips: como a Cerebras está mudando o jogo da inteligência artificial</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-07T05:45:27.010Z">07/02/2026 02:45</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-auracast-como-a-tecnologia-de-audio-pode-transformar-sua-experiencia-em-casa.html">A revolução do Auracast: como a tecnologia de áudio pode transformar sua experiência em casa</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-07T04:14:48.987Z">07/02/2026 01:14</time></div></li>
+<li><a href="artigos/tecnologia/transformando-seu-tablet-em-um-e-reader-dicas-e-truques-para-uma-experiencia-de-leitura-incrivel.html">Transformando Seu Tablet em um E-Reader: Dicas e Truques para uma Experiência de Leitura Incrível</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-07T02:01:18.143Z">06/02/2026 23:01</time></div></li>
+<li><a href="artigos/tecnologia/como-a-nova-tv-da-sony-pode-revolucionar-seu-entretenimento-em-casa.html">Como a Nova TV da Sony Pode Revolucionar Seu Entretenimento em Casa</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T23:29:20.798Z">06/02/2026 20:29</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-do-gerenciamento-de-sites-claude-agora-e-seu-assistente-no-wordpress.html">A nova era do gerenciamento de sites: Claude agora é seu assistente no WordPress</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-06T22:26:46.373Z">06/02/2026 19:26</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-dos-streams-apple-music-ou-spotify-a-escolha-do-arquiteto-de-software.html">A batalha dos streams: Apple Music ou Spotify? A escolha do arquiteto de software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T21:34:02.541Z">06/02/2026 18:34</time></div></li>
+<li><a href="artigos/programacao/construindo-apps-em-tempo-recorde-a-revolucao-da-inteligencia-artificial-na-programacao.html">Construindo Apps em Tempo Recorde: A Revolução da Inteligência Artificial na Programação</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-02-06T20:37:12.617Z">06/02/2026 17:37</time></div></li>
+<li><a href="artigos/inteligencia-artificial/visao-agente-o-futuro-da-interacao-entre-ia-e-imagens.html">Visão Agente: O Futuro da Interação entre IA e Imagens</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-06T19:40:50.246Z">06/02/2026 16:40</time></div></li>
+<li><a href="artigos/tecnologia/como-elon-musk-esta-redefinindo-o-poder-dos-fundadores-na-era-da-inovacao.html">Como Elon Musk Está Redefinindo o Poder dos Fundadores na Era da Inovação</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T18:54:40.760Z">06/02/2026 15:54</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-celulares-para-criancas-controle-total-na-palma-da-mao.html">A nova era dos celulares para crianças: controle total na palma da mão</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T17:44:44.714Z">06/02/2026 14:44</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

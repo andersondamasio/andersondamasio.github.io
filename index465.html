@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 465</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/mudancas-a-vista-como-a-ia-esta-transformando-todos-os-trabalhos-nao-so-os-de-ti.html">Mudanças à Vista: Como a IA Está Transformando Todos os Trabalhos, Não Só os de TI</a><time datetime="2025-09-30T20:22:21.982Z">30/09/2025 17:22</time></li>
-<li><a href="artigos/tecnologia/a-nova-revolucao-das-cores-como-o-display-p3-pode-transformar-suas-fotos.html">A nova revolução das cores: como o Display P3 pode transformar suas fotos</a><time datetime="2025-09-30T19:16:29.688Z">30/09/2025 16:16</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-dispositivos-amazon-uma-nova-era-na-tecnologia-domestica.html">A revolução dos dispositivos Amazon: uma nova era na tecnologia doméstica</a><time datetime="2025-09-30T18:27:48.527Z">30/09/2025 15:27</time></li>
-<li><a href="artigos/tecnologia/fusao-de-gigantes-o-impacto-da-unificacao-da-fubo-com-a-hulu-live-tv.html">Fusão de Gigantes: O Impacto da Unificação da Fubo com a Hulu Live TV</a><time datetime="2025-09-30T17:18:33.488Z">30/09/2025 14:18</time></li>
-<li><a href="artigos/inteligencia-artificial/hance-e-a-revolucao-do-audio-como-inovacao-e-arquitetura-de-software-transformam-a-comunicacao.html">Hance e a Revolução do Áudio: Como Inovação e Arquitetura de Software Transformam a Comunicação</a><time datetime="2025-09-30T16:25:48.221Z">30/09/2025 13:25</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-tv-como-a-alexa-transforma-a-experiencia-do-usuario-com-ia.html">A revolução da TV: como a Alexa+ transforma a experiência do usuário com IA</a><time datetime="2025-09-30T15:19:54.013Z">30/09/2025 12:19</time></li>
-<li><a href="artigos/tecnologia/novas-fronteiras-o-que-esperar-do-proximo-evento-da-amazon-em-2025.html">Novas Fronteiras: O Que Esperar do Próximo Evento da Amazon em 2025</a><time datetime="2025-09-30T14:20:10.348Z">30/09/2025 11:20</time></li>
-<li><a href="artigos/tecnologia/a-nova-cara-do-oneplus-15-inovacao-sem-parceria-mas-com-potencial.html">A nova cara do OnePlus 15: inovação sem parceria, mas com potencial</a><time datetime="2025-09-30T13:31:06.356Z">30/09/2025 10:31</time></li>
-<li><a href="artigos/inteligencia-artificial/ferramentas-de-ia-o-futuro-da-criacao-de-apps-em-nossas-maos.html">Ferramentas de IA: O Futuro da Criação de Apps em Nossas Mãos</a><time datetime="2025-09-30T12:40:29.755Z">30/09/2025 09:40</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-relogios-inteligentes-samsung-galaxy-em-promocao-na-t-mobile.html">A revolução dos relógios inteligentes: Samsung Galaxy em promoção na T-Mobile</a><time datetime="2025-09-30T11:19:09.320Z">30/09/2025 08:19</time></li>
+<li><a href="artigos/inteligencia-artificial/mudancas-a-vista-como-a-ia-esta-transformando-todos-os-trabalhos-nao-so-os-de-ti.html">Mudanças à Vista: Como a IA Está Transformando Todos os Trabalhos, Não Só os de TI</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-09-30T20:22:21.982Z">30/09/2025 17:22</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-revolucao-das-cores-como-o-display-p3-pode-transformar-suas-fotos.html">A nova revolução das cores: como o Display P3 pode transformar suas fotos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-30T19:16:29.688Z">30/09/2025 16:16</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-dispositivos-amazon-uma-nova-era-na-tecnologia-domestica.html">A revolução dos dispositivos Amazon: uma nova era na tecnologia doméstica</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-30T18:27:48.527Z">30/09/2025 15:27</time></div></li>
+<li><a href="artigos/tecnologia/fusao-de-gigantes-o-impacto-da-unificacao-da-fubo-com-a-hulu-live-tv.html">Fusão de Gigantes: O Impacto da Unificação da Fubo com a Hulu Live TV</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-30T17:18:33.488Z">30/09/2025 14:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/hance-e-a-revolucao-do-audio-como-inovacao-e-arquitetura-de-software-transformam-a-comunicacao.html">Hance e a Revolução do Áudio: Como Inovação e Arquitetura de Software Transformam a Comunicação</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-09-30T16:25:48.221Z">30/09/2025 13:25</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-tv-como-a-alexa-transforma-a-experiencia-do-usuario-com-ia.html">A revolução da TV: como a Alexa+ transforma a experiência do usuário com IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-09-30T15:19:54.013Z">30/09/2025 12:19</time></div></li>
+<li><a href="artigos/tecnologia/novas-fronteiras-o-que-esperar-do-proximo-evento-da-amazon-em-2025.html">Novas Fronteiras: O Que Esperar do Próximo Evento da Amazon em 2025</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-30T14:20:10.348Z">30/09/2025 11:20</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-cara-do-oneplus-15-inovacao-sem-parceria-mas-com-potencial.html">A nova cara do OnePlus 15: inovação sem parceria, mas com potencial</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-30T13:31:06.356Z">30/09/2025 10:31</time></div></li>
+<li><a href="artigos/inteligencia-artificial/ferramentas-de-ia-o-futuro-da-criacao-de-apps-em-nossas-maos.html">Ferramentas de IA: O Futuro da Criação de Apps em Nossas Mãos</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-09-30T12:40:29.755Z">30/09/2025 09:40</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-relogios-inteligentes-samsung-galaxy-em-promocao-na-t-mobile.html">A revolução dos relógios inteligentes: Samsung Galaxy em promoção na T-Mobile</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-30T11:19:09.320Z">30/09/2025 08:19</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

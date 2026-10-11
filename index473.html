@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 473</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-hora-de-economizar-como-aproveitar-as-promocoes-da-apple-no-prime-day.html">A hora de economizar: como aproveitar as promoções da Apple no Prime Day</a><time datetime="2025-09-27T05:19:04.749Z">27/09/2025 02:19</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-monitores-como-o-oled-da-lg-pode-transformar-seu-setup.html">A nova era dos monitores: como o OLED da LG pode transformar seu setup</a><time datetime="2025-09-27T04:23:20.339Z">27/09/2025 01:23</time></li>
-<li><a href="artigos/inteligencia-artificial/como-a-ia-pode-ajudar-a-mapear-especies-a-conexao-entre-brambles-e-ouricos.html">Como a IA Pode Ajudar a Mapear Espécies: A Conexão Entre Brambles e Ouriços</a><time datetime="2025-09-27T03:28:35.267Z">27/09/2025 00:28</time></li>
-<li><a href="artigos/inteligencia-artificial/criando-colaboracao-inteligente-como-o-chatgpt-esta-transformando-o-trabalho-em-equipe.html">Criando Colaboração Inteligente: Como o ChatGPT Está Transformando o Trabalho em Equipe</a><time datetime="2025-09-27T02:54:36.392Z">26/09/2025 23:54</time></li>
-<li><a href="artigos/seguranca/a-era-dos-dados-como-a-arquitetura-de-software-pode-ser-sua-aliada-em-tempos-de-brechas.html">A era dos dados: como a arquitetura de software pode ser sua aliada em tempos de brechas</a><time datetime="2025-09-27T01:18:11.414Z">26/09/2025 22:18</time></li>
-<li><a href="artigos/seguranca/hackers-de-bercario-o-lado-sombrio-da-seguranca-das-criancas-na-era-digital.html">Hackers de Berçário: O Lado Sombrio da Segurança das Crianças na Era Digital</a><time datetime="2025-09-26T23:18:12.747Z">26/09/2025 20:18</time></li>
-<li><a href="artigos/tecnologia/a-hora-do-som-como-escolher-o-speaker-portatil-ideal-para-voce.html">A hora do som: como escolher o speaker portátil ideal para você</a><time datetime="2025-09-26T22:17:55.452Z">26/09/2025 19:17</time></li>
-<li><a href="artigos/tecnologia/10-dicas-para-turbinar-seu-wi-fi-transforme-sua-conexao-em-casa.html">10 Dicas para Turbinar seu Wi-Fi: Transforme sua Conexão em Casa</a><time datetime="2025-09-26T21:16:57.412Z">26/09/2025 18:16</time></li>
-<li><a href="artigos/programacao/vibe-coding-o-futuro-da-engenharia-ou-apenas-mais-uma-moda.html">Vibe Coding: O Futuro da Engenharia ou Apenas Mais uma Moda?</a><time datetime="2025-09-26T20:22:20.890Z">26/09/2025 17:22</time></li>
-<li><a href="artigos/tecnologia/como-o-costco-esta-se-preparando-para-encarar-a-amazon-na-era-das-compras-online.html">Como o Costco Está se Preparando para Encarar a Amazon na Era das Compras Online</a><time datetime="2025-09-26T19:17:33.649Z">26/09/2025 16:17</time></li>
+<li><a href="artigos/tecnologia/a-hora-de-economizar-como-aproveitar-as-promocoes-da-apple-no-prime-day.html">A hora de economizar: como aproveitar as promoções da Apple no Prime Day</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-27T05:19:04.749Z">27/09/2025 02:19</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-monitores-como-o-oled-da-lg-pode-transformar-seu-setup.html">A nova era dos monitores: como o OLED da LG pode transformar seu setup</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-27T04:23:20.339Z">27/09/2025 01:23</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-a-ia-pode-ajudar-a-mapear-especies-a-conexao-entre-brambles-e-ouricos.html">Como a IA Pode Ajudar a Mapear Espécies: A Conexão Entre Brambles e Ouriços</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-09-27T03:28:35.267Z">27/09/2025 00:28</time></div></li>
+<li><a href="artigos/inteligencia-artificial/criando-colaboracao-inteligente-como-o-chatgpt-esta-transformando-o-trabalho-em-equipe.html">Criando Colaboração Inteligente: Como o ChatGPT Está Transformando o Trabalho em Equipe</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-09-27T02:54:36.392Z">26/09/2025 23:54</time></div></li>
+<li><a href="artigos/seguranca/a-era-dos-dados-como-a-arquitetura-de-software-pode-ser-sua-aliada-em-tempos-de-brechas.html">A era dos dados: como a arquitetura de software pode ser sua aliada em tempos de brechas</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-09-27T01:18:11.414Z">26/09/2025 22:18</time></div></li>
+<li><a href="artigos/seguranca/hackers-de-bercario-o-lado-sombrio-da-seguranca-das-criancas-na-era-digital.html">Hackers de Berçário: O Lado Sombrio da Segurança das Crianças na Era Digital</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-09-26T23:18:12.747Z">26/09/2025 20:18</time></div></li>
+<li><a href="artigos/tecnologia/a-hora-do-som-como-escolher-o-speaker-portatil-ideal-para-voce.html">A hora do som: como escolher o speaker portátil ideal para você</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-26T22:17:55.452Z">26/09/2025 19:17</time></div></li>
+<li><a href="artigos/tecnologia/10-dicas-para-turbinar-seu-wi-fi-transforme-sua-conexao-em-casa.html">10 Dicas para Turbinar seu Wi-Fi: Transforme sua Conexão em Casa</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-26T21:16:57.412Z">26/09/2025 18:16</time></div></li>
+<li><a href="artigos/programacao/vibe-coding-o-futuro-da-engenharia-ou-apenas-mais-uma-moda.html">Vibe Coding: O Futuro da Engenharia ou Apenas Mais uma Moda?</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-09-26T20:22:20.890Z">26/09/2025 17:22</time></div></li>
+<li><a href="artigos/tecnologia/como-o-costco-esta-se-preparando-para-encarar-a-amazon-na-era-das-compras-online.html">Como o Costco Está se Preparando para Encarar a Amazon na Era das Compras Online</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-26T19:17:33.649Z">26/09/2025 16:17</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

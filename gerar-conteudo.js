@@ -53,6 +53,7 @@ const { agruparArquivo, indiceMeses, conteudoMes, politicaListagem, estilosArqui
 const { gerarResourceHints } = require('./scripts/seo-resource-hints');
 const { normalizarRobotsMeta } = require('./scripts/seo-robots');
 const { descricaoSeoUtilizavel } = require('./scripts/seo-description');
+const { aplicarLayoutSite } = require('./scripts/site-presentation');
 const {
   avaliarSinaisHumanizer,
   carregarRegrasHumanizer,
@@ -81,7 +82,9 @@ function normalizarConteudoTexto(conteudo) {
 }
 
 function escreverArquivoTexto(arquivo, conteudo) {
-  escreverPublicacao(arquivo, normalizarConteudoTexto(conteudo));
+  const atualizado = normalizarConteudoTexto(aplicarLayoutSite(conteudo, arquivo));
+  if (fs.existsSync(arquivo) && fs.readFileSync(arquivo, 'utf8') === atualizado) return;
+  escreverPublicacao(arquivo, atualizado);
 }
 
 function slugify(str) {
@@ -348,7 +351,7 @@ function gerarIndiceCategorias(agrupados, leituras = null) {
   // Gera os links com base na ordem
   const links = categoriasOrdenadas.map(({ categoria, artigos }) => {
     const slug = slugify(categoria);
-    return `<li><a href="${slug}.html">${categoria}</a> (${artigos.length})</li>`;
+    return `<li><a href="${slug}.html"><span>${escapeHTML(categoria)}</span><span class="category-count">${artigos.length}</span></a></li>`;
   }).join("\n");
   const arquivo = agruparArquivo(Object.values(agrupados).flat());
 
@@ -437,7 +440,7 @@ ${gerarHeaderNavegacao("..")}
 <main>
   <h1>Artigos</h1>
   ${leituras ? `<p><a href="/${urlLeituras}">${escapeHTML(leituras.titulo)}</a></p>` : ''}
-  <ul>
+  <ul class="category-index">
     ${links}
   </ul>
   ${indiceMeses(arquivo)}
@@ -1161,7 +1164,7 @@ function listarHtmlSite(dir = ".", saida = []) {
 }
 
 function escreverSeMudou(arquivo, conteudo) {
-  const conteudoNormalizado = normalizarConteudoTexto(conteudo);
+  const conteudoNormalizado = normalizarConteudoTexto(aplicarLayoutSite(conteudo, arquivo));
   const atual = fs.existsSync(arquivo) ? fs.readFileSync(arquivo, "utf8") : null;
   if (atual === conteudoNormalizado) return false;
 
@@ -1326,7 +1329,14 @@ ${gerarSeoHead({
     const arquivo = local && urlLocalParaArquivo(local);
     if (!arquivo || arquivoIndexavel(arquivo)) continue;
     // Indexing policy is not absence of content. Preserve an existing article body.
-    if (fs.existsSync(arquivo) && /class=["'][^"']*\barticle-body\b/i.test(fs.readFileSync(arquivo, "utf8"))) continue;
+    if (fs.existsSync(arquivo)) {
+      const existente = fs.readFileSync(arquivo, "utf8");
+      if (/class=["'][^"']*\barticle-body\b/i.test(existente)) {
+        const atualizado = aplicarLayoutSite(existente, arquivo);
+        if (atualizado !== existente) escreverPublicacao(arquivo, atualizado);
+        continue;
+      }
+    }
 
     alterados += gerarIndisponivel({
       local,
@@ -1376,6 +1386,7 @@ function atualizarArtigosRelacionados(artigos) {
         : html.replace(/<\/body>/i, `${relacionados}\n</body>`);
     }
 
+    html = aplicarLayoutSite(html, arquivo);
     if (html !== htmlOriginal) {
       escreverArquivoTexto(arquivo, html);
       alterados += 1;
@@ -2675,6 +2686,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function gerarIndicesPaginados(titulos, leituras = null) {
   const ordenados = prepararArtigosPublicaveis(titulos).sort((a, b) => new Date(b.data) - new Date(a.data));
+  const resumosSelecionados = new Map((leituras?.grupos || []).flatMap(g => g.leituras).map(item => [item.url, item.resumo]));
   const paginas = Math.ceil(ordenados.length / artigosPorPagina);
   const paginasGeradas = new Set();
 
@@ -2692,7 +2704,8 @@ function gerarIndicesPaginados(titulos, leituras = null) {
     const artigosPagina = ordenados.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
     const links = artigosPagina.map(t => {
       const data = formatDateTime(new Date(t.data));
-      return `<li><a href="${t.url}">${escapeHTML(t.titulo)}</a><time datetime="${escapeAttribute(t.data)}">${data}</time></li>`;
+      const resumo = resumosSelecionados.get(t.url);
+      return `<li><a href="${t.url}">${escapeHTML(t.titulo)}</a><div class="article-list-meta"><span>${escapeHTML(t.categoria || '')}</span><time datetime="${escapeAttribute(t.data)}">${data}</time></div>${resumo ? `<p class="article-list-summary">${escapeHTML(resumo)}</p>` : ''}</li>`;
     }).join("\n");
 
     const paginacao = criarPaginacaoCompacta(

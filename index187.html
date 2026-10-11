@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 187</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/como-a-arquitetura-de-software-pode-melhorar-a-experiencia-de-testes-de-fones-de-ouvido.html">Como a Arquitetura de Software Pode Melhorar a Experiência de Testes de Fones de Ouvido</a><time datetime="2026-02-06T05:56:41.144Z">06/02/2026 02:56</time></li>
-<li><a href="artigos/tecnologia/a-batalha-dos-sons-samsung-hw-q990f-vs-sonos-arc-ultra.html">A batalha dos sons: Samsung HW-Q990F vs. Sonos Arc Ultra</a><time datetime="2026-02-06T04:51:01.163Z">06/02/2026 01:51</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-linux-por-que-o-elementaryos-e-a-melhor-opcao-para-todos.html">A Revolução do Linux: Por Que o ElementaryOS é a Melhor Opção Para Todos</a><time datetime="2026-02-06T02:05:00.433Z">05/02/2026 23:05</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-busca-como-o-reddit-pode-transformar-a-experiencia-do-usuario-com-ia.html">A revolução da busca: como o Reddit pode transformar a experiência do usuário com IA</a><time datetime="2026-02-05T23:26:39.879Z">05/02/2026 20:26</time></li>
-<li><a href="artigos/tecnologia/a-era-da-desilusao-o-impacto-das-demissoes-na-cobertura-tecnologica.html">A era da desilusão: O impacto das demissões na cobertura tecnológica</a><time datetime="2026-02-05T22:30:35.086Z">05/02/2026 19:30</time></li>
-<li><a href="artigos/inteligencia-artificial/a-corrida-por-numeros-um-olhar-critico-sobre-o-crescimento-acelerado-das-startups.html">A corrida por números: um olhar crítico sobre o crescimento acelerado das startups</a><time datetime="2026-02-05T21:31:48.427Z">05/02/2026 18:31</time></li>
-<li><a href="artigos/seguranca/a-face-da-tecnologia-riscos-e-desafios-do-reconhecimento-facial-na-imigracao.html">A face da tecnologia: riscos e desafios do reconhecimento facial na imigração</a><time datetime="2026-02-05T20:39:02.755Z">05/02/2026 17:39</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-corrida-dos-chatbots-quem-vai-ficar-sem-anuncios.html">A nova corrida dos chatbots: quem vai ficar sem anúncios?</a><time datetime="2026-02-05T19:40:40.426Z">05/02/2026 16:40</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-da-exploracao-smartphones-na-lua.html">A nova era da exploração: smartphones na lua!</a><time datetime="2026-02-05T18:50:47.756Z">05/02/2026 15:50</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-fronteira-da-automacao-claude-opus-4-6-e-o-futuro-do-trabalho.html">A Nova Fronteira da Automação: Claude Opus 4.6 e o Futuro do Trabalho</a><time datetime="2026-02-05T17:51:01.229Z">05/02/2026 14:51</time></li>
+<li><a href="artigos/tecnologia/como-a-arquitetura-de-software-pode-melhorar-a-experiencia-de-testes-de-fones-de-ouvido.html">Como a Arquitetura de Software Pode Melhorar a Experiência de Testes de Fones de Ouvido</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T05:56:41.144Z">06/02/2026 02:56</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-dos-sons-samsung-hw-q990f-vs-sonos-arc-ultra.html">A batalha dos sons: Samsung HW-Q990F vs. Sonos Arc Ultra</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T04:51:01.163Z">06/02/2026 01:51</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-linux-por-que-o-elementaryos-e-a-melhor-opcao-para-todos.html">A Revolução do Linux: Por Que o ElementaryOS é a Melhor Opção Para Todos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-06T02:05:00.433Z">05/02/2026 23:05</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-busca-como-o-reddit-pode-transformar-a-experiencia-do-usuario-com-ia.html">A revolução da busca: como o Reddit pode transformar a experiência do usuário com IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-05T23:26:39.879Z">05/02/2026 20:26</time></div></li>
+<li><a href="artigos/tecnologia/a-era-da-desilusao-o-impacto-das-demissoes-na-cobertura-tecnologica.html">A era da desilusão: O impacto das demissões na cobertura tecnológica</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-05T22:30:35.086Z">05/02/2026 19:30</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-corrida-por-numeros-um-olhar-critico-sobre-o-crescimento-acelerado-das-startups.html">A corrida por números: um olhar crítico sobre o crescimento acelerado das startups</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-05T21:31:48.427Z">05/02/2026 18:31</time></div></li>
+<li><a href="artigos/seguranca/a-face-da-tecnologia-riscos-e-desafios-do-reconhecimento-facial-na-imigracao.html">A face da tecnologia: riscos e desafios do reconhecimento facial na imigração</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-05T20:39:02.755Z">05/02/2026 17:39</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-corrida-dos-chatbots-quem-vai-ficar-sem-anuncios.html">A nova corrida dos chatbots: quem vai ficar sem anúncios?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-05T19:40:40.426Z">05/02/2026 16:40</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-da-exploracao-smartphones-na-lua.html">A nova era da exploração: smartphones na lua!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-05T18:50:47.756Z">05/02/2026 15:50</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-fronteira-da-automacao-claude-opus-4-6-e-o-futuro-do-trabalho.html">A Nova Fronteira da Automação: Claude Opus 4.6 e o Futuro do Trabalho</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-05T17:51:01.229Z">05/02/2026 14:51</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

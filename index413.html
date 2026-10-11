@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 413</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-influencia-da-tecnologia-na-politica-licoes-de-san-francisco.html">A influência da tecnologia na política: lições de San Francisco</a><time datetime="2025-10-24T06:30:35.362Z">24/10/2025 03:30</time></li>
-<li><a href="artigos/seguranca/impacto-de-ciberataques-na-industria-automotiva-uma-reflexao-necessaria.html">Impacto de Ciberataques na Indústria Automotiva: Uma Reflexão Necessária</a><time datetime="2025-10-24T05:19:42.322Z">24/10/2025 02:19</time></li>
-<li><a href="artigos/tecnologia-automotiva/a-crise-do-aluminio-e-a-batalha-por-eletrificacao-o-dilema-da-ford.html">A crise do alumínio e a batalha por eletrificação: o dilema da Ford</a><time datetime="2025-10-24T04:23:37.982Z">24/10/2025 01:23</time></li>
-<li><a href="artigos/tecnologia/a-reviravolta-da-intel-o-que-a-arquitetura-de-chip-pode-nos-ensinar.html">A reviravolta da Intel: O que a arquitetura de chip pode nos ensinar?</a><time datetime="2025-10-24T03:39:59.992Z">24/10/2025 00:39</time></li>
-<li><a href="artigos/tecnologia/construindo-palacios-digitais-o-papel-da-tecnologia-na-nova-era-de-trump.html">Construindo Palácios Digitais: O Papel da Tecnologia na Nova Era de Trump</a><time datetime="2025-10-24T03:01:39.907Z">24/10/2025 00:01</time></li>
-<li><a href="artigos/tecnologia/rugged-e-potente-o-desafio-de-equilibrar-resistencia-e-desempenho-em-smartphones.html">Rugged e Potente: O Desafio de Equilibrar Resistência e Desempenho em Smartphones</a><time datetime="2025-10-24T01:22:47.956Z">23/10/2025 22:22</time></li>
-<li><a href="artigos/tecnologia/o-futuro-do-plastico-como-a-tecnologia-pode-salvar-a-reciclagem.html">O futuro do plástico: como a tecnologia pode salvar a reciclagem?</a><time datetime="2025-10-23T23:17:46.874Z">23/10/2025 20:17</time></li>
-<li><a href="artigos/inteligencia-artificial/gerando-imagens-com-ai-a-revolucao-da-criatividade-no-snapchat.html">Gerando Imagens com AI: A Revolução da Criatividade no Snapchat</a><time datetime="2025-10-23T22:20:12.319Z">23/10/2025 19:20</time></li>
-<li><a href="artigos/blockchain/a-revolucao-das-criptomoedas-e-o-perdao-de-cz-o-que-isso-significa-para-o-futuro.html">A revolução das criptomoedas e o perdão de CZ: o que isso significa para o futuro?</a><time datetime="2025-10-23T21:18:35.896Z">23/10/2025 18:18</time></li>
-<li><a href="artigos/desenvolvimento-de-software/uma-revolucao-a-vista-o-que-o-galaxy-s26-pode-ensinar-sobre-arquitetura-de-software.html">Uma revolução à vista: o que o Galaxy S26 pode ensinar sobre arquitetura de software</a><time datetime="2025-10-23T20:21:24.493Z">23/10/2025 17:21</time></li>
+<li><a href="artigos/tecnologia/a-influencia-da-tecnologia-na-politica-licoes-de-san-francisco.html">A influência da tecnologia na política: lições de San Francisco</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-24T06:30:35.362Z">24/10/2025 03:30</time></div></li>
+<li><a href="artigos/seguranca/impacto-de-ciberataques-na-industria-automotiva-uma-reflexao-necessaria.html">Impacto de Ciberataques na Indústria Automotiva: Uma Reflexão Necessária</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-10-24T05:19:42.322Z">24/10/2025 02:19</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/a-crise-do-aluminio-e-a-batalha-por-eletrificacao-o-dilema-da-ford.html">A crise do alumínio e a batalha por eletrificação: o dilema da Ford</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-10-24T04:23:37.982Z">24/10/2025 01:23</time></div></li>
+<li><a href="artigos/tecnologia/a-reviravolta-da-intel-o-que-a-arquitetura-de-chip-pode-nos-ensinar.html">A reviravolta da Intel: O que a arquitetura de chip pode nos ensinar?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-24T03:39:59.992Z">24/10/2025 00:39</time></div></li>
+<li><a href="artigos/tecnologia/construindo-palacios-digitais-o-papel-da-tecnologia-na-nova-era-de-trump.html">Construindo Palácios Digitais: O Papel da Tecnologia na Nova Era de Trump</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-24T03:01:39.907Z">24/10/2025 00:01</time></div></li>
+<li><a href="artigos/tecnologia/rugged-e-potente-o-desafio-de-equilibrar-resistencia-e-desempenho-em-smartphones.html">Rugged e Potente: O Desafio de Equilibrar Resistência e Desempenho em Smartphones</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-24T01:22:47.956Z">23/10/2025 22:22</time></div></li>
+<li><a href="artigos/tecnologia/o-futuro-do-plastico-como-a-tecnologia-pode-salvar-a-reciclagem.html">O futuro do plástico: como a tecnologia pode salvar a reciclagem?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-23T23:17:46.874Z">23/10/2025 20:17</time></div></li>
+<li><a href="artigos/inteligencia-artificial/gerando-imagens-com-ai-a-revolucao-da-criatividade-no-snapchat.html">Gerando Imagens com AI: A Revolução da Criatividade no Snapchat</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-23T22:20:12.319Z">23/10/2025 19:20</time></div></li>
+<li><a href="artigos/blockchain/a-revolucao-das-criptomoedas-e-o-perdao-de-cz-o-que-isso-significa-para-o-futuro.html">A revolução das criptomoedas e o perdão de CZ: o que isso significa para o futuro?</a><div class="article-list-meta"><span>Blockchain</span><time datetime="2025-10-23T21:18:35.896Z">23/10/2025 18:18</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/uma-revolucao-a-vista-o-que-o-galaxy-s26-pode-ensinar-sobre-arquitetura-de-software.html">Uma revolução à vista: o que o Galaxy S26 pode ensinar sobre arquitetura de software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-10-23T20:21:24.493Z">23/10/2025 17:21</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

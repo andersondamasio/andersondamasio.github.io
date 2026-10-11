@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 358</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/explorando-o-mundo-do-linux-fedora-ou-ubuntu.html">Explorando o Mundo do Linux: Fedora ou Ubuntu?</a><time datetime="2025-11-18T16:28:16.799Z">18/11/2025 13:28</time></li>
-<li><a href="artigos/tecnologia-automotiva/a-revolucao-dos-robotaxis-o-futuro-sem-motoristas-esta-chegando.html">A revolução dos robotaxis: o futuro sem motoristas está chegando</a><time datetime="2025-11-18T15:23:21.999Z">18/11/2025 12:23</time></li>
-<li><a href="artigos/tecnologia/o-dilema-da-preservacao-amor-tecnologia-e-etica.html">O dilema da preservação: amor, tecnologia e ética</a><time datetime="2025-11-18T14:21:14.197Z">18/11/2025 11:21</time></li>
-<li><a href="artigos/cloud/como-a-fragilidade-da-infraestrutura-da-web-pode-impactar-seus-projetos-de-software.html">Como a Fragilidade da Infraestrutura da Web Pode Impactar Seus Projetos de Software</a><time datetime="2025-11-18T13:33:32.025Z">18/11/2025 10:33</time></li>
-<li><a href="artigos/tecnologia/a-fragilidade-da-internet-o-que-aprendemos-com-a-queda-da-cloudflare.html">A fragilidade da internet: O que aprendemos com a queda da Cloudflare?</a><time datetime="2025-11-18T12:41:54.122Z">18/11/2025 09:41</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-telas-como-monitores-estao-transformando-a-experiencia-gamer-e-de-trabalho.html">A revolução das telas: Como monitores estão transformando a experiência gamer e de trabalho</a><time datetime="2025-11-18T11:19:55.330Z">18/11/2025 08:19</time></li>
-<li><a href="artigos/seguranca/o-lado-obscuro-da-ia-quando-a-tecnologia-vira-arma.html">O lado obscuro da IA: quando a tecnologia vira arma</a><time datetime="2025-11-18T10:24:48.228Z">18/11/2025 07:24</time></li>
-<li><a href="artigos/tecnologia/a-inovacao-egipcia-que-pode-baratear-sua-conta-de-luz.html">A inovação egípcia que pode baratear sua conta de luz</a><time datetime="2025-11-18T09:23:24.673Z">18/11/2025 06:23</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-do-mastodon-desmistificando-a-transicao-para-o-nao-lucro.html">A nova era do Mastodon: desmistificando a transição para o não lucro</a><time datetime="2025-11-18T08:28:27.551Z">18/11/2025 05:28</time></li>
-<li><a href="artigos/inteligencia-artificial/a-bolha-da-ia-um-aviso-de-pichai-e-o-que-podemos-aprender-com-isso.html">A bolha da IA: um aviso de Pichai e o que podemos aprender com isso</a><time datetime="2025-11-18T07:21:09.760Z">18/11/2025 04:21</time></li>
+<li><a href="artigos/tecnologia/explorando-o-mundo-do-linux-fedora-ou-ubuntu.html">Explorando o Mundo do Linux: Fedora ou Ubuntu?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-18T16:28:16.799Z">18/11/2025 13:28</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/a-revolucao-dos-robotaxis-o-futuro-sem-motoristas-esta-chegando.html">A revolução dos robotaxis: o futuro sem motoristas está chegando</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-11-18T15:23:21.999Z">18/11/2025 12:23</time></div></li>
+<li><a href="artigos/tecnologia/o-dilema-da-preservacao-amor-tecnologia-e-etica.html">O dilema da preservação: amor, tecnologia e ética</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-18T14:21:14.197Z">18/11/2025 11:21</time></div></li>
+<li><a href="artigos/cloud/como-a-fragilidade-da-infraestrutura-da-web-pode-impactar-seus-projetos-de-software.html">Como a Fragilidade da Infraestrutura da Web Pode Impactar Seus Projetos de Software</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-11-18T13:33:32.025Z">18/11/2025 10:33</time></div></li>
+<li><a href="artigos/tecnologia/a-fragilidade-da-internet-o-que-aprendemos-com-a-queda-da-cloudflare.html">A fragilidade da internet: O que aprendemos com a queda da Cloudflare?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-18T12:41:54.122Z">18/11/2025 09:41</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-telas-como-monitores-estao-transformando-a-experiencia-gamer-e-de-trabalho.html">A revolução das telas: Como monitores estão transformando a experiência gamer e de trabalho</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-18T11:19:55.330Z">18/11/2025 08:19</time></div></li>
+<li><a href="artigos/seguranca/o-lado-obscuro-da-ia-quando-a-tecnologia-vira-arma.html">O lado obscuro da IA: quando a tecnologia vira arma</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-18T10:24:48.228Z">18/11/2025 07:24</time></div></li>
+<li><a href="artigos/tecnologia/a-inovacao-egipcia-que-pode-baratear-sua-conta-de-luz.html">A inovação egípcia que pode baratear sua conta de luz</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-18T09:23:24.673Z">18/11/2025 06:23</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-do-mastodon-desmistificando-a-transicao-para-o-nao-lucro.html">A nova era do Mastodon: desmistificando a transição para o não lucro</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-18T08:28:27.551Z">18/11/2025 05:28</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-bolha-da-ia-um-aviso-de-pichai-e-o-que-podemos-aprender-com-isso.html">A bolha da IA: um aviso de Pichai e o que podemos aprender com isso</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-18T07:21:09.760Z">18/11/2025 04:21</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

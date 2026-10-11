@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 335</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-revolucao-silenciosa-das-mulheres-nos-esportes.html">A revolução silenciosa das mulheres nos esportes</a><time datetime="2025-11-29T06:30:25.984Z">29/11/2025 03:30</time></li>
-<li><a href="artigos/tecnologia/aproveite-as-ofertas-de-black-friday-e-transforme-seu-setup-com-o-ps5.html">Aproveite as Ofertas de Black Friday e Transforme Seu Setup com o PS5</a><time datetime="2025-11-29T05:20:39.006Z">29/11/2025 02:20</time></li>
-<li><a href="artigos/tecnologia/aproveite-as-ofertas-da-black-friday-no-sam-s-club-como-a-tecnologia-pode-ajudar-na-sua-escolha.html">Aproveite as Ofertas da Black Friday no Sam's Club: Como a Tecnologia Pode Ajudar na Sua Escolha</a><time datetime="2025-11-29T04:24:43.485Z">29/11/2025 01:24</time></li>
-<li><a href="artigos/tecnologia/aproveitando-as-ofertas-como-a-arquitetura-de-software-pode-otimizar-suas-compras-na-black-friday.html">Aproveitando as Ofertas: Como a Arquitetura de Software Pode Otimizar suas Compras na Black Friday</a><time datetime="2025-11-29T03:12:56.413Z">29/11/2025 00:12</time></li>
-<li><a href="artigos/tecnologia/aproveitando-as-ofertas-de-black-friday-como-escolher-o-smartphone-ideal.html">Aproveitando as Ofertas de Black Friday: Como Escolher o Smartphone Ideal</a><time datetime="2025-11-29T01:26:59.981Z">28/11/2025 22:26</time></li>
-<li><a href="artigos/tecnologia/aproveite-as-ofertas-de-black-friday-laptops-que-fazem-a-diferenca-para-desenvolvedores.html">Aproveite as Ofertas de Black Friday: Laptops que Fazem a Diferença para Desenvolvedores</a><time datetime="2025-11-28T23:20:29.401Z">28/11/2025 20:20</time></li>
-<li><a href="artigos/tecnologia/aproveitando-a-black-friday-como-a-arquitetura-de-software-pode-te-ajudar-a-fazer-compras-mais-inteligentes.html">Aproveitando a Black Friday: Como a Arquitetura de Software Pode Te Ajudar a Fazer Compras Mais Inteligentes</a><time datetime="2025-11-28T22:19:38.522Z">28/11/2025 19:19</time></li>
-<li><a href="artigos/tecnologia/a-hora-de-aproveitar-as-ofertas-black-friday-e-o-mundo-dos-ipads.html">A hora de aproveitar as ofertas: Black Friday e o mundo dos iPads</a><time datetime="2025-11-28T21:18:39.275Z">28/11/2025 18:18</time></li>
-<li><a href="artigos/tecnologia/como-enviar-cartoes-presente-digitais-de-forma-inteligente-e-pratica-neste-natal.html">Como Enviar Cartões Presente Digitais de Forma Inteligente e Prática Neste Natal</a><time datetime="2025-11-28T20:23:40.146Z">28/11/2025 17:23</time></li>
-<li><a href="artigos/tecnologia/melhores-rastreadore-bluetooth-para-android-chipolo-da-um-show-em-relacao-aos-airtags.html">Melhores Rastreadore Bluetooth para Android: Chipolo dá um Show em relação aos AirTags</a><time datetime="2025-11-28T19:17:02.904Z">28/11/2025 16:17</time></li>
+<li><a href="artigos/tecnologia/a-revolucao-silenciosa-das-mulheres-nos-esportes.html">A revolução silenciosa das mulheres nos esportes</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-29T06:30:25.984Z">29/11/2025 03:30</time></div></li>
+<li><a href="artigos/tecnologia/aproveite-as-ofertas-de-black-friday-e-transforme-seu-setup-com-o-ps5.html">Aproveite as Ofertas de Black Friday e Transforme Seu Setup com o PS5</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-29T05:20:39.006Z">29/11/2025 02:20</time></div></li>
+<li><a href="artigos/tecnologia/aproveite-as-ofertas-da-black-friday-no-sam-s-club-como-a-tecnologia-pode-ajudar-na-sua-escolha.html">Aproveite as Ofertas da Black Friday no Sam's Club: Como a Tecnologia Pode Ajudar na Sua Escolha</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-29T04:24:43.485Z">29/11/2025 01:24</time></div></li>
+<li><a href="artigos/tecnologia/aproveitando-as-ofertas-como-a-arquitetura-de-software-pode-otimizar-suas-compras-na-black-friday.html">Aproveitando as Ofertas: Como a Arquitetura de Software Pode Otimizar suas Compras na Black Friday</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-29T03:12:56.413Z">29/11/2025 00:12</time></div></li>
+<li><a href="artigos/tecnologia/aproveitando-as-ofertas-de-black-friday-como-escolher-o-smartphone-ideal.html">Aproveitando as Ofertas de Black Friday: Como Escolher o Smartphone Ideal</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-29T01:26:59.981Z">28/11/2025 22:26</time></div></li>
+<li><a href="artigos/tecnologia/aproveite-as-ofertas-de-black-friday-laptops-que-fazem-a-diferenca-para-desenvolvedores.html">Aproveite as Ofertas de Black Friday: Laptops que Fazem a Diferença para Desenvolvedores</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-28T23:20:29.401Z">28/11/2025 20:20</time></div></li>
+<li><a href="artigos/tecnologia/aproveitando-a-black-friday-como-a-arquitetura-de-software-pode-te-ajudar-a-fazer-compras-mais-inteligentes.html">Aproveitando a Black Friday: Como a Arquitetura de Software Pode Te Ajudar a Fazer Compras Mais Inteligentes</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-28T22:19:38.522Z">28/11/2025 19:19</time></div></li>
+<li><a href="artigos/tecnologia/a-hora-de-aproveitar-as-ofertas-black-friday-e-o-mundo-dos-ipads.html">A hora de aproveitar as ofertas: Black Friday e o mundo dos iPads</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-28T21:18:39.275Z">28/11/2025 18:18</time></div></li>
+<li><a href="artigos/tecnologia/como-enviar-cartoes-presente-digitais-de-forma-inteligente-e-pratica-neste-natal.html">Como Enviar Cartões Presente Digitais de Forma Inteligente e Prática Neste Natal</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-28T20:23:40.146Z">28/11/2025 17:23</time></div></li>
+<li><a href="artigos/tecnologia/melhores-rastreadore-bluetooth-para-android-chipolo-da-um-show-em-relacao-aos-airtags.html">Melhores Rastreadore Bluetooth para Android: Chipolo dá um Show em relação aos AirTags</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-28T19:17:02.904Z">28/11/2025 16:17</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

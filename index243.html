@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 243</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-revolucao-dos-wearables-peri-e-a-saude-feminina-em-foco.html">A revolução dos wearables: Peri e a saúde feminina em foco</a><time datetime="2026-01-10T11:19:57.280Z">10/01/2026 08:19</time></li>
-<li><a href="artigos/tecnologia/nuclear-a-nova-fronteira-da-energia-para-data-centers-e-o-papel-da-arquitetura-de-software.html">Nuclear: A Nova Fronteira da Energia para Data Centers e o Papel da Arquitetura de Software</a><time datetime="2026-01-10T10:23:02.159Z">10/01/2026 07:23</time></li>
-<li><a href="artigos/tecnologia/novas-atualizacoes-do-ios-por-que-a-adocao-do-ios-26-esta-mais-lenta-que-o-normal.html">Novas Atualizações do iOS: Por Que a Adoção do iOS 26 Está Mais Lenta Que o Normal?</a><time datetime="2026-01-10T09:22:58.116Z">10/01/2026 06:22</time></li>
-<li><a href="artigos/seguranca/a-vulnerabilidade-mongobleed-um-alerta-para-os-desenvolvedores-de-banco-de-dados.html">A vulnerabilidade MongoBleed: um alerta para os desenvolvedores de banco de dados</a><time datetime="2026-01-10T08:29:05.922Z">10/01/2026 05:29</time></li>
-<li><a href="artigos/tecnologia/a-tecnologia-a-favor-da-saude-feminina-como-um-dispositivo-inovador-pode-transformar-o-acompanhamento-da-perimenopausa.html">A tecnologia a favor da saúde feminina: como um dispositivo inovador pode transformar o acompanhamento da perimenopausa</a><time datetime="2026-01-10T07:22:15.428Z">10/01/2026 04:22</time></li>
-<li><a href="artigos/tecnologia/desempenho-e-estilo-a-revolucao-dos-fones-de-ouvido-nada.html">Desempenho e Estilo: A Revolução dos Fones de Ouvido Nada</a><time datetime="2026-01-10T06:33:18.791Z">10/01/2026 03:33</time></li>
-<li><a href="artigos/inteligencia-artificial/desafios-eticos-na-era-da-ia-o-caso-grok-e-a-sexualizacao-de-imagens.html">Desafios Éticos na Era da IA: O Caso Grok e a Sexualização de Imagens</a><time datetime="2026-01-10T05:24:02.341Z">10/01/2026 02:24</time></li>
-<li><a href="artigos/inteligencia-artificial/a-tempestade-perfeita-como-a-arquitetura-de-software-se-relaciona-com-escandalos-corporativos.html">A tempestade perfeita: como a arquitetura de software se relaciona com escândalos corporativos</a><time datetime="2026-01-10T04:36:23.278Z">10/01/2026 01:36</time></li>
-<li><a href="artigos/robotica/desvendando-os-robos-do-futuro-inovacoes-e-oportunidades-na-arquitetura-de-software.html">Desvendando os Robôs do Futuro: Inovações e Oportunidades na Arquitetura de Software</a><time datetime="2026-01-10T03:26:57.233Z">10/01/2026 00:26</time></li>
-<li><a href="artigos/inteligencia-artificial/desvendando-o-futuro-como-a-openai-busca-avaliar-o-desempenho-de-ia-com-tarefas-do-mundo-real.html">Desvendando o Futuro: Como a OpenAI Busca Avaliar o Desempenho de IA com Tarefas do Mundo Real</a><time datetime="2026-01-10T01:43:37.411Z">09/01/2026 22:43</time></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-wearables-peri-e-a-saude-feminina-em-foco.html">A revolução dos wearables: Peri e a saúde feminina em foco</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-10T11:19:57.280Z">10/01/2026 08:19</time></div></li>
+<li><a href="artigos/tecnologia/nuclear-a-nova-fronteira-da-energia-para-data-centers-e-o-papel-da-arquitetura-de-software.html">Nuclear: A Nova Fronteira da Energia para Data Centers e o Papel da Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-10T10:23:02.159Z">10/01/2026 07:23</time></div></li>
+<li><a href="artigos/tecnologia/novas-atualizacoes-do-ios-por-que-a-adocao-do-ios-26-esta-mais-lenta-que-o-normal.html">Novas Atualizações do iOS: Por Que a Adoção do iOS 26 Está Mais Lenta Que o Normal?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-10T09:22:58.116Z">10/01/2026 06:22</time></div></li>
+<li><a href="artigos/seguranca/a-vulnerabilidade-mongobleed-um-alerta-para-os-desenvolvedores-de-banco-de-dados.html">A vulnerabilidade MongoBleed: um alerta para os desenvolvedores de banco de dados</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-01-10T08:29:05.922Z">10/01/2026 05:29</time></div></li>
+<li><a href="artigos/tecnologia/a-tecnologia-a-favor-da-saude-feminina-como-um-dispositivo-inovador-pode-transformar-o-acompanhamento-da-perimenopausa.html">A tecnologia a favor da saúde feminina: como um dispositivo inovador pode transformar o acompanhamento da perimenopausa</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-10T07:22:15.428Z">10/01/2026 04:22</time></div></li>
+<li><a href="artigos/tecnologia/desempenho-e-estilo-a-revolucao-dos-fones-de-ouvido-nada.html">Desempenho e Estilo: A Revolução dos Fones de Ouvido Nada</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-10T06:33:18.791Z">10/01/2026 03:33</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desafios-eticos-na-era-da-ia-o-caso-grok-e-a-sexualizacao-de-imagens.html">Desafios Éticos na Era da IA: O Caso Grok e a Sexualização de Imagens</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-10T05:24:02.341Z">10/01/2026 02:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-tempestade-perfeita-como-a-arquitetura-de-software-se-relaciona-com-escandalos-corporativos.html">A tempestade perfeita: como a arquitetura de software se relaciona com escândalos corporativos</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-10T04:36:23.278Z">10/01/2026 01:36</time></div></li>
+<li><a href="artigos/robotica/desvendando-os-robos-do-futuro-inovacoes-e-oportunidades-na-arquitetura-de-software.html">Desvendando os Robôs do Futuro: Inovações e Oportunidades na Arquitetura de Software</a><div class="article-list-meta"><span>Robótica</span><time datetime="2026-01-10T03:26:57.233Z">10/01/2026 00:26</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desvendando-o-futuro-como-a-openai-busca-avaliar-o-desempenho-de-ia-com-tarefas-do-mundo-real.html">Desvendando o Futuro: Como a OpenAI Busca Avaliar o Desempenho de IA com Tarefas do Mundo Real</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-10T01:43:37.411Z">09/01/2026 22:43</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

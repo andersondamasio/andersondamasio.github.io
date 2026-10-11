@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 326</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/desenvolvimento-de-software/a-nova-era-do-next-js-caching-explicito-e-turbopack-em-foco.html">A Nova Era do Next.js: Caching Explícito e Turbopack em Foco</a><time datetime="2025-12-03T08:30:39.460Z">03/12/2025 05:30</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-revolucao-da-saude-digital-como-a-ia-esta-transformando-a-interacao-com-os-usuarios.html">A nova revolução da saúde digital: como a IA está transformando a interação com os usuários</a><time datetime="2025-12-03T07:23:11.394Z">03/12/2025 04:23</time></li>
-<li><a href="artigos/tecnologia/a-hora-de-atualizar-sua-tv-chegou-aproveite-as-ofertas-ciberneticas.html">A hora de atualizar sua TV chegou: aproveite as ofertas cibernéticas!</a><time datetime="2025-12-03T06:33:49.564Z">03/12/2025 03:33</time></li>
-<li><a href="artigos/tecnologia/novas-ofertas-de-ipads-a-hora-de-atualizar-seu-dispositivo-e-agora.html">Novas Ofertas de iPads: A Hora de Atualizar Seu Dispositivo é Agora!</a><time datetime="2025-12-03T05:21:31.212Z">03/12/2025 02:21</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-compras-como-a-tecnologia-molda-o-futuro-do-varejo.html">A revolução das compras: como a tecnologia molda o futuro do varejo</a><time datetime="2025-12-03T04:30:47.346Z">03/12/2025 01:30</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-ia-deepseek-e-o-desafio-aos-gigantes-do-setor.html">A nova era da IA: DeepSeek e o desafio aos gigantes do setor</a><time datetime="2025-12-03T03:18:49.262Z">03/12/2025 00:18</time></li>
-<li><a href="artigos/tecnologia/a-corrida-pelas-ofertas-imperdiveis-do-cyber-monday-vale-a-pena.html">A corrida pelas ofertas imperdíveis do Cyber Monday: vale a pena?</a><time datetime="2025-12-03T01:30:18.483Z">02/12/2025 22:30</time></li>
-<li><a href="artigos/tecnologia/streaming-em-promocao-como-aproveitar-as-ofertas-de-cyber-monday-com-inteligencia.html">Streaming em Promoção: Como Aproveitar as Ofertas de Cyber Monday com Inteligência</a><time datetime="2025-12-02T23:20:10.599Z">02/12/2025 20:20</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-dos-agentes-autonomos-como-a-aws-esta-redefinindo-o-desenvolvimento-de-software.html">A era dos agentes autônomos: como a AWS está redefinindo o desenvolvimento de software</a><time datetime="2025-12-02T22:19:47.584Z">02/12/2025 19:19</time></li>
-<li><a href="artigos/tecnologia/a-caca-as-ofertas-como-a-tecnologia-pode-te-ajudar-a-economizar-ainda-mais.html">A caça às ofertas: como a tecnologia pode te ajudar a economizar ainda mais</a><time datetime="2025-12-02T21:21:56.854Z">02/12/2025 18:21</time></li>
+<li><a href="artigos/desenvolvimento-de-software/a-nova-era-do-next-js-caching-explicito-e-turbopack-em-foco.html">A Nova Era do Next.js: Caching Explícito e Turbopack em Foco</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-12-03T08:30:39.460Z">03/12/2025 05:30</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-revolucao-da-saude-digital-como-a-ia-esta-transformando-a-interacao-com-os-usuarios.html">A nova revolução da saúde digital: como a IA está transformando a interação com os usuários</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-03T07:23:11.394Z">03/12/2025 04:23</time></div></li>
+<li><a href="artigos/tecnologia/a-hora-de-atualizar-sua-tv-chegou-aproveite-as-ofertas-ciberneticas.html">A hora de atualizar sua TV chegou: aproveite as ofertas cibernéticas!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-03T06:33:49.564Z">03/12/2025 03:33</time></div></li>
+<li><a href="artigos/tecnologia/novas-ofertas-de-ipads-a-hora-de-atualizar-seu-dispositivo-e-agora.html">Novas Ofertas de iPads: A Hora de Atualizar Seu Dispositivo é Agora!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-03T05:21:31.212Z">03/12/2025 02:21</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-compras-como-a-tecnologia-molda-o-futuro-do-varejo.html">A revolução das compras: como a tecnologia molda o futuro do varejo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-03T04:30:47.346Z">03/12/2025 01:30</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-ia-deepseek-e-o-desafio-aos-gigantes-do-setor.html">A nova era da IA: DeepSeek e o desafio aos gigantes do setor</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-03T03:18:49.262Z">03/12/2025 00:18</time></div></li>
+<li><a href="artigos/tecnologia/a-corrida-pelas-ofertas-imperdiveis-do-cyber-monday-vale-a-pena.html">A corrida pelas ofertas imperdíveis do Cyber Monday: vale a pena?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-03T01:30:18.483Z">02/12/2025 22:30</time></div></li>
+<li><a href="artigos/tecnologia/streaming-em-promocao-como-aproveitar-as-ofertas-de-cyber-monday-com-inteligencia.html">Streaming em Promoção: Como Aproveitar as Ofertas de Cyber Monday com Inteligência</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-02T23:20:10.599Z">02/12/2025 20:20</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-dos-agentes-autonomos-como-a-aws-esta-redefinindo-o-desenvolvimento-de-software.html">A era dos agentes autônomos: como a AWS está redefinindo o desenvolvimento de software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-02T22:19:47.584Z">02/12/2025 19:19</time></div></li>
+<li><a href="artigos/tecnologia/a-caca-as-ofertas-como-a-tecnologia-pode-te-ajudar-a-economizar-ainda-mais.html">A caça às ofertas: como a tecnologia pode te ajudar a economizar ainda mais</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-02T21:21:56.854Z">02/12/2025 18:21</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

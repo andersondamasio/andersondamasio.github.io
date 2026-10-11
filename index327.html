@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 327</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/o-futuro-nuclear-como-microreatores-podem-transformar-a-energia-e-a-arquitetura-de-sistemas.html">O futuro nuclear: como microreatores podem transformar a energia e a arquitetura de sistemas</a><time datetime="2025-12-02T20:26:36.015Z">02/12/2025 17:26</time></li>
-<li><a href="artigos/tecnologia/oportunidade-de-upgrade-os-melhores-laptops-em-promocao-pos-cyber-monday.html">Oportunidade de Upgrade: Os Melhores Laptops em Promoção Pós-Cyber Monday</a><time datetime="2025-12-02T19:29:16.084Z">02/12/2025 16:29</time></li>
-<li><a href="artigos/tecnologia/como-a-tecnologia-pode-transformar-sua-casa-em-uma-galeria-de-arte.html">Como a Tecnologia Pode Transformar sua Casa em uma Galeria de Arte</a><time datetime="2025-12-02T18:35:11.665Z">02/12/2025 15:35</time></li>
-<li><a href="artigos/tecnologia/como-montar-um-setup-matador-para-trabalhar-com-mac-mini-sem-estourar-o-orcamento.html">Como montar um setup matador para trabalhar com Mac Mini sem estourar o orçamento</a><time datetime="2025-12-02T17:28:37.260Z">02/12/2025 14:28</time></li>
-<li><a href="artigos/inteligencia-artificial/desvendando-o-aws-re-invent-2025-o-que-esperar-e-como-acompanhar.html">Desvendando o AWS re:Invent 2025: O que esperar e como acompanhar</a><time datetime="2025-12-02T16:30:04.965Z">02/12/2025 13:30</time></li>
-<li><a href="artigos/tecnologia/atraia-a-atencao-airpods-em-promocao-e-a-tecnologia-que-faz-a-diferenca.html">Atraia a Atenção: AirPods em Promoção e a Tecnologia que Faz a Diferença</a><time datetime="2025-12-02T15:36:57.409Z">02/12/2025 12:36</time></li>
-<li><a href="artigos/tecnologia/streaming-em-promocao-oportunidades-para-economizar-com-tecnologia.html">Streaming em Promoção: Oportunidades para Economizar com Tecnologia</a><time datetime="2025-12-02T14:23:36.901Z">02/12/2025 11:23</time></li>
-<li><a href="artigos/tecnologia/a-batalha-das-plataformas-de-streaming-amazon-music-entra-na-danca-com-2025-delivered.html">A batalha das plataformas de streaming: Amazon Music entra na dança com 2025 Delivered</a><time datetime="2025-12-02T13:38:23.703Z">02/12/2025 10:38</time></li>
-<li><a href="artigos/seguranca/a-era-dos-smartphones-sob-vigilancia-o-impacto-da-nova-politica-indiana.html">A era dos smartphones sob vigilância: o impacto da nova política indiana</a><time datetime="2025-12-02T12:44:25.348Z">02/12/2025 09:44</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-movel-na-neurociencia-como-a-tecnologia-pode-salvar-cerebros.html">A revolução móvel na neurociência: como a tecnologia pode salvar cérebros</a><time datetime="2025-12-02T11:21:22.054Z">02/12/2025 08:21</time></li>
+<li><a href="artigos/tecnologia/o-futuro-nuclear-como-microreatores-podem-transformar-a-energia-e-a-arquitetura-de-sistemas.html">O futuro nuclear: como microreatores podem transformar a energia e a arquitetura de sistemas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-02T20:26:36.015Z">02/12/2025 17:26</time></div></li>
+<li><a href="artigos/tecnologia/oportunidade-de-upgrade-os-melhores-laptops-em-promocao-pos-cyber-monday.html">Oportunidade de Upgrade: Os Melhores Laptops em Promoção Pós-Cyber Monday</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-02T19:29:16.084Z">02/12/2025 16:29</time></div></li>
+<li><a href="artigos/tecnologia/como-a-tecnologia-pode-transformar-sua-casa-em-uma-galeria-de-arte.html">Como a Tecnologia Pode Transformar sua Casa em uma Galeria de Arte</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-02T18:35:11.665Z">02/12/2025 15:35</time></div></li>
+<li><a href="artigos/tecnologia/como-montar-um-setup-matador-para-trabalhar-com-mac-mini-sem-estourar-o-orcamento.html">Como montar um setup matador para trabalhar com Mac Mini sem estourar o orçamento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-02T17:28:37.260Z">02/12/2025 14:28</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desvendando-o-aws-re-invent-2025-o-que-esperar-e-como-acompanhar.html">Desvendando o AWS re:Invent 2025: O que esperar e como acompanhar</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-02T16:30:04.965Z">02/12/2025 13:30</time></div></li>
+<li><a href="artigos/tecnologia/atraia-a-atencao-airpods-em-promocao-e-a-tecnologia-que-faz-a-diferenca.html">Atraia a Atenção: AirPods em Promoção e a Tecnologia que Faz a Diferença</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-02T15:36:57.409Z">02/12/2025 12:36</time></div></li>
+<li><a href="artigos/tecnologia/streaming-em-promocao-oportunidades-para-economizar-com-tecnologia.html">Streaming em Promoção: Oportunidades para Economizar com Tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-02T14:23:36.901Z">02/12/2025 11:23</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-das-plataformas-de-streaming-amazon-music-entra-na-danca-com-2025-delivered.html">A batalha das plataformas de streaming: Amazon Music entra na dança com 2025 Delivered</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-02T13:38:23.703Z">02/12/2025 10:38</time></div></li>
+<li><a href="artigos/seguranca/a-era-dos-smartphones-sob-vigilancia-o-impacto-da-nova-politica-indiana.html">A era dos smartphones sob vigilância: o impacto da nova política indiana</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-02T12:44:25.348Z">02/12/2025 09:44</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-movel-na-neurociencia-como-a-tecnologia-pode-salvar-cerebros.html">A revolução móvel na neurociência: como a tecnologia pode salvar cérebros</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-02T11:21:22.054Z">02/12/2025 08:21</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

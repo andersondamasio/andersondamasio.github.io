@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 83</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-nova-onda-dos-jogos-como-a-simulacao-de-tarefas-cotidianas-esta-moldando-o-entretenimento.html">A nova onda dos jogos: como a simulação de tarefas cotidianas está moldando o entretenimento</a><time datetime="2026-04-05T09:43:32.317Z">05/04/2026 06:43</time></li>
-<li><a href="artigos/seguranca/a-nova-onda-de-hackers-como-a-seguranca-em-software-pode-salvar-seu-codigo.html">A nova onda de hackers: como a segurança em software pode salvar seu código</a><time datetime="2026-04-05T08:47:12.352Z">05/04/2026 05:47</time></li>
-<li><a href="artigos/tecnologia/como-posicionar-seu-roteador-para-maximiza-a-conexao-wi-fi.html">Como Posicionar Seu Roteador para Maximizá a Conexão Wi-Fi</a><time datetime="2026-04-05T07:11:08.752Z">05/04/2026 04:11</time></li>
-<li><a href="artigos/tecnologia/como-revitalizar-seu-android-dicas-praticas-para-acelerar-o-desempenho-do-seu-dispositivo.html">Como Revitalizar Seu Android: Dicas Práticas para Acelerar o Desempenho do Seu Dispositivo</a><time datetime="2026-04-05T05:16:49.139Z">05/04/2026 02:16</time></li>
-<li><a href="artigos/tecnologia/como-a-tecnologia-pode-salvar-suas-plantas-enquanto-voce-viaja.html">Como a Tecnologia Pode Salvar Suas Plantas Enquanto Você Viaja</a><time datetime="2026-04-05T02:33:21.802Z">04/04/2026 23:33</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-coleiras-inteligentes-como-a-tecnologia-pode-transformar-a-pecuaria.html">A revolução das coleiras inteligentes: como a tecnologia pode transformar a pecuária</a><time datetime="2026-04-04T23:36:00.602Z">04/04/2026 20:36</time></li>
-<li><a href="artigos/seguranca/desconstruindo-a-crise-como-a-arquitetura-de-software-pode-evitar-escandalos-de-compliance.html">Desconstruindo a Crise: Como a Arquitetura de Software Pode Evitar Escândalos de Compliance</a><time datetime="2026-04-04T22:35:03.656Z">04/04/2026 19:35</time></li>
-<li><a href="artigos/tecnologia/revolucionando-a-pecuaria-o-impacto-da-tecnologia-nas-fazendas-do-futuro.html">Revolucionando a Pecuária: O Impacto da Tecnologia nas Fazendas do Futuro</a><time datetime="2026-04-04T21:36:02.446Z">04/04/2026 18:36</time></li>
-<li><a href="artigos/seguranca/evite-sobrecargas-7-aparelhos-que-nao-devem-ser-ligados-em-extensoes.html">Evite sobrecargas: 7 aparelhos que não devem ser ligados em extensões</a><time datetime="2026-04-04T20:36:38.929Z">04/04/2026 17:36</time></li>
-<li><a href="artigos/tecnologia/a-era-do-ram-virtual-uma-solucao-barata-ou-uma-armadilha.html">A era do RAM virtual: uma solução barata ou uma armadilha?</a><time datetime="2026-04-04T19:35:49.517Z">04/04/2026 16:35</time></li>
+<li><a href="artigos/tecnologia/a-nova-onda-dos-jogos-como-a-simulacao-de-tarefas-cotidianas-esta-moldando-o-entretenimento.html">A nova onda dos jogos: como a simulação de tarefas cotidianas está moldando o entretenimento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-05T09:43:32.317Z">05/04/2026 06:43</time></div></li>
+<li><a href="artigos/seguranca/a-nova-onda-de-hackers-como-a-seguranca-em-software-pode-salvar-seu-codigo.html">A nova onda de hackers: como a segurança em software pode salvar seu código</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-05T08:47:12.352Z">05/04/2026 05:47</time></div></li>
+<li><a href="artigos/tecnologia/como-posicionar-seu-roteador-para-maximiza-a-conexao-wi-fi.html">Como Posicionar Seu Roteador para Maximizá a Conexão Wi-Fi</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-05T07:11:08.752Z">05/04/2026 04:11</time></div></li>
+<li><a href="artigos/tecnologia/como-revitalizar-seu-android-dicas-praticas-para-acelerar-o-desempenho-do-seu-dispositivo.html">Como Revitalizar Seu Android: Dicas Práticas para Acelerar o Desempenho do Seu Dispositivo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-05T05:16:49.139Z">05/04/2026 02:16</time></div></li>
+<li><a href="artigos/tecnologia/como-a-tecnologia-pode-salvar-suas-plantas-enquanto-voce-viaja.html">Como a Tecnologia Pode Salvar Suas Plantas Enquanto Você Viaja</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-05T02:33:21.802Z">04/04/2026 23:33</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-coleiras-inteligentes-como-a-tecnologia-pode-transformar-a-pecuaria.html">A revolução das coleiras inteligentes: como a tecnologia pode transformar a pecuária</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-04T23:36:00.602Z">04/04/2026 20:36</time></div></li>
+<li><a href="artigos/seguranca/desconstruindo-a-crise-como-a-arquitetura-de-software-pode-evitar-escandalos-de-compliance.html">Desconstruindo a Crise: Como a Arquitetura de Software Pode Evitar Escândalos de Compliance</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-04T22:35:03.656Z">04/04/2026 19:35</time></div></li>
+<li><a href="artigos/tecnologia/revolucionando-a-pecuaria-o-impacto-da-tecnologia-nas-fazendas-do-futuro.html">Revolucionando a Pecuária: O Impacto da Tecnologia nas Fazendas do Futuro</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-04T21:36:02.446Z">04/04/2026 18:36</time></div></li>
+<li><a href="artigos/seguranca/evite-sobrecargas-7-aparelhos-que-nao-devem-ser-ligados-em-extensoes.html">Evite sobrecargas: 7 aparelhos que não devem ser ligados em extensões</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-04T20:36:38.929Z">04/04/2026 17:36</time></div></li>
+<li><a href="artigos/tecnologia/a-era-do-ram-virtual-uma-solucao-barata-ou-uma-armadilha.html">A era do RAM virtual: uma solução barata ou uma armadilha?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-04T19:35:49.517Z">04/04/2026 16:35</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

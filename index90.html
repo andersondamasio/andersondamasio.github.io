@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 90</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-voz-speechify-e-o-futuro-da-ditado-em-pcs.html">A revolução da voz: Speechify e o futuro da ditado em PCs</a><time datetime="2026-03-31T13:22:50.726Z">31/03/2026 10:22</time></li>
-<li><a href="artigos/tecnologia/transformando-sua-casa-em-um-oasis-verde-gadgets-que-vao-te-ajudar.html">Transformando sua casa em um oásis verde: gadgets que vão te ajudar</a><time datetime="2026-03-31T12:05:20.981Z">31/03/2026 09:05</time></li>
-<li><a href="artigos/tecnologia/transformando-a-carga-a-revolucao-dos-carregadores-sem-fio.html">Transformando a Carga: A Revolução dos Carregadores Sem Fio</a><time datetime="2026-03-31T10:16:28.037Z">31/03/2026 07:16</time></li>
-<li><a href="artigos/tecnologia/a-facetime-e-o-mundo-android-desmistificando-a-comunicacao-entre-plataformas.html">A FaceTime e o Mundo Android: Desmistificando a Comunicação Entre Plataformas</a><time datetime="2026-03-31T09:04:54.902Z">31/03/2026 06:04</time></li>
-<li><a href="artigos/tecnologia/a-evolucao-dos-smartphones-vale-a-pena-trocar-seu-s24-pelo-s26.html">A evolução dos smartphones: vale a pena trocar seu S24 pelo S26?</a><time datetime="2026-03-31T07:19:19.932Z">31/03/2026 04:19</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-ssds-como-a-tecnologia-nfc-transforma-o-armazenamento-portatil.html">A revolução dos SSDs: como a tecnologia NFC transforma o armazenamento portátil</a><time datetime="2026-03-31T05:13:53.764Z">31/03/2026 02:13</time></li>
-<li><a href="artigos/inteligencia-artificial/desvendando-o-crescimento-do-chatbot-privacy-first-da-duckduckgo.html">Desvendando o Crescimento do Chatbot Privacy-First da DuckDuckGo</a><time datetime="2026-03-31T02:28:57.057Z">30/03/2026 23:28</time></li>
-<li><a href="artigos/seguranca/litellm-a-decisao-dificil-de-romper-com-um-parceiro-controverso.html">LiteLLM: A Decisão Difícil de Romper com um Parceiro Controverso</a><time datetime="2026-03-30T23:39:39.611Z">30/03/2026 20:39</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-e-readers-como-a-tecnologia-pode-transformar-sua-leitura.html">A revolução dos e-readers: como a tecnologia pode transformar sua leitura</a><time datetime="2026-03-30T22:40:55.812Z">30/03/2026 19:40</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-cadernos-digitais-um-olhar-tecnico-sobre-a-produtividade.html">A revolução dos cadernos digitais: um olhar técnico sobre a produtividade</a><time datetime="2026-03-30T21:46:27.236Z">30/03/2026 18:46</time></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-voz-speechify-e-o-futuro-da-ditado-em-pcs.html">A revolução da voz: Speechify e o futuro da ditado em PCs</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-31T13:22:50.726Z">31/03/2026 10:22</time></div></li>
+<li><a href="artigos/tecnologia/transformando-sua-casa-em-um-oasis-verde-gadgets-que-vao-te-ajudar.html">Transformando sua casa em um oásis verde: gadgets que vão te ajudar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-31T12:05:20.981Z">31/03/2026 09:05</time></div></li>
+<li><a href="artigos/tecnologia/transformando-a-carga-a-revolucao-dos-carregadores-sem-fio.html">Transformando a Carga: A Revolução dos Carregadores Sem Fio</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-31T10:16:28.037Z">31/03/2026 07:16</time></div></li>
+<li><a href="artigos/tecnologia/a-facetime-e-o-mundo-android-desmistificando-a-comunicacao-entre-plataformas.html">A FaceTime e o Mundo Android: Desmistificando a Comunicação Entre Plataformas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-31T09:04:54.902Z">31/03/2026 06:04</time></div></li>
+<li><a href="artigos/tecnologia/a-evolucao-dos-smartphones-vale-a-pena-trocar-seu-s24-pelo-s26.html">A evolução dos smartphones: vale a pena trocar seu S24 pelo S26?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-31T07:19:19.932Z">31/03/2026 04:19</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-ssds-como-a-tecnologia-nfc-transforma-o-armazenamento-portatil.html">A revolução dos SSDs: como a tecnologia NFC transforma o armazenamento portátil</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-31T05:13:53.764Z">31/03/2026 02:13</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desvendando-o-crescimento-do-chatbot-privacy-first-da-duckduckgo.html">Desvendando o Crescimento do Chatbot Privacy-First da DuckDuckGo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-31T02:28:57.057Z">30/03/2026 23:28</time></div></li>
+<li><a href="artigos/seguranca/litellm-a-decisao-dificil-de-romper-com-um-parceiro-controverso.html">LiteLLM: A Decisão Difícil de Romper com um Parceiro Controverso</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-30T23:39:39.611Z">30/03/2026 20:39</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-e-readers-como-a-tecnologia-pode-transformar-sua-leitura.html">A revolução dos e-readers: como a tecnologia pode transformar sua leitura</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-30T22:40:55.812Z">30/03/2026 19:40</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-cadernos-digitais-um-olhar-tecnico-sobre-a-produtividade.html">A revolução dos cadernos digitais: um olhar técnico sobre a produtividade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-30T21:46:27.236Z">30/03/2026 18:46</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

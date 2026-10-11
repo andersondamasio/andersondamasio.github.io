@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 230</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-navegadores-como-o-puma-browser-pode-mudar-sua-experiencia-mobile.html">A revolução dos navegadores: como o Puma Browser pode mudar sua experiência mobile</a><time datetime="2026-01-16T12:46:29.532Z">16/01/2026 09:46</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-crms-como-a-arquitetura-de-software-pode-transformar-relacionamentos.html">A Revolução dos CRMs: Como a Arquitetura de Software Pode Transformar Relacionamentos</a><time datetime="2026-01-16T11:22:29.363Z">16/01/2026 08:22</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-wallets-como-a-tecnologia-magsafe-esta-mudando-nossa-relacao-com-os-acessorios.html">A nova era dos wallets: como a tecnologia MagSafe está mudando nossa relação com os acessórios</a><time datetime="2026-01-16T10:26:42.457Z">16/01/2026 07:26</time></li>
-<li><a href="artigos/carreira/a-cultura-de-engenharia-o-que-realmente-faz-times-funcionar.html">A Cultura de Engenharia: O Que Realmente Faz Times Funcionar</a><time datetime="2026-01-16T09:30:12.828Z">16/01/2026 06:30</time></li>
-<li><a href="artigos/inteligencia-artificial/como-a-nova-lideranca-da-anthropic-pode-transformar-o-cenario-da-ia-na-india.html">Como a Nova Liderança da Anthropic Pode Transformar o Cenário da IA na Índia</a><time datetime="2026-01-16T08:32:54.819Z">16/01/2026 05:32</time></li>
-<li><a href="artigos/inteligencia-artificial/a-batalha-dos-titas-da-tecnologia-o-que-podemos-aprender-com-os-conflitos-do-vale-do-silicio.html">A batalha dos titãs da tecnologia: o que podemos aprender com os conflitos do Vale do Silício</a><time datetime="2026-01-16T07:27:13.264Z">16/01/2026 04:27</time></li>
-<li><a href="artigos/tecnologia/aprimore-sua-jogatina-3-ajustes-que-todo-gamer-deve-conhecer-na-ps5.html">Aprimore sua jogatina: 3 ajustes que todo gamer deve conhecer na PS5</a><time datetime="2026-01-16T06:36:55.043Z">16/01/2026 03:36</time></li>
-<li><a href="artigos/tecnologia/como-revitalizar-seu-roku-tv-dicas-praticas-para-nao-perder-a-serie-favorita.html">Como Revitalizar Seu Roku TV: Dicas Práticas Para Não Perder a Série Favorita</a><time datetime="2026-01-16T05:27:40.735Z">16/01/2026 02:27</time></li>
-<li><a href="artigos/inteligencia-artificial/novas-regras-de-ia-um-passo-a-frente-ou-so-mais-um-entrave.html">Novas regras de IA: um passo à frente ou só mais um entrave?</a><time datetime="2026-01-16T04:43:00.857Z">16/01/2026 01:43</time></li>
-<li><a href="artigos/seguranca/manter-sua-maquina-segura-no-fim-do-suporte-a-solucao-com-0patch.html">Manter sua máquina segura no fim do suporte: a solução com 0patch</a><time datetime="2026-01-16T03:42:33.435Z">16/01/2026 00:42</time></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-navegadores-como-o-puma-browser-pode-mudar-sua-experiencia-mobile.html">A revolução dos navegadores: como o Puma Browser pode mudar sua experiência mobile</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-16T12:46:29.532Z">16/01/2026 09:46</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-crms-como-a-arquitetura-de-software-pode-transformar-relacionamentos.html">A Revolução dos CRMs: Como a Arquitetura de Software Pode Transformar Relacionamentos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-16T11:22:29.363Z">16/01/2026 08:22</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-wallets-como-a-tecnologia-magsafe-esta-mudando-nossa-relacao-com-os-acessorios.html">A nova era dos wallets: como a tecnologia MagSafe está mudando nossa relação com os acessórios</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-16T10:26:42.457Z">16/01/2026 07:26</time></div></li>
+<li><a href="artigos/carreira/a-cultura-de-engenharia-o-que-realmente-faz-times-funcionar.html">A Cultura de Engenharia: O Que Realmente Faz Times Funcionar</a><div class="article-list-meta"><span>Carreira</span><time datetime="2026-01-16T09:30:12.828Z">16/01/2026 06:30</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-a-nova-lideranca-da-anthropic-pode-transformar-o-cenario-da-ia-na-india.html">Como a Nova Liderança da Anthropic Pode Transformar o Cenário da IA na Índia</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-16T08:32:54.819Z">16/01/2026 05:32</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-batalha-dos-titas-da-tecnologia-o-que-podemos-aprender-com-os-conflitos-do-vale-do-silicio.html">A batalha dos titãs da tecnologia: o que podemos aprender com os conflitos do Vale do Silício</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-16T07:27:13.264Z">16/01/2026 04:27</time></div></li>
+<li><a href="artigos/tecnologia/aprimore-sua-jogatina-3-ajustes-que-todo-gamer-deve-conhecer-na-ps5.html">Aprimore sua jogatina: 3 ajustes que todo gamer deve conhecer na PS5</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-16T06:36:55.043Z">16/01/2026 03:36</time></div></li>
+<li><a href="artigos/tecnologia/como-revitalizar-seu-roku-tv-dicas-praticas-para-nao-perder-a-serie-favorita.html">Como Revitalizar Seu Roku TV: Dicas Práticas Para Não Perder a Série Favorita</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-16T05:27:40.735Z">16/01/2026 02:27</time></div></li>
+<li><a href="artigos/inteligencia-artificial/novas-regras-de-ia-um-passo-a-frente-ou-so-mais-um-entrave.html">Novas regras de IA: um passo à frente ou só mais um entrave?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-16T04:43:00.857Z">16/01/2026 01:43</time></div></li>
+<li><a href="artigos/seguranca/manter-sua-maquina-segura-no-fim-do-suporte-a-solucao-com-0patch.html">Manter sua máquina segura no fim do suporte: a solução com 0patch</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-01-16T03:42:33.435Z">16/01/2026 00:42</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

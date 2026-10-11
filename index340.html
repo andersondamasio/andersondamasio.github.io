@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 340</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/um-despertador-que-ilumina-seu-dia-tecnologia-contra-a-depressao-sazonal.html">Um despertador que ilumina seu dia: tecnologia contra a depressão sazonal</a><time datetime="2025-11-26T22:20:43.347Z">26/11/2025 19:20</time></li>
-<li><a href="artigos/tecnologia/um-olhar-critico-sobre-sensores-inteligentes-o-ting-e-a-seguranca-domestica.html">Um Olhar Crítico sobre Sensores Inteligentes: O Ting e a Segurança Doméstica</a><time datetime="2025-11-26T21:19:21.668Z">26/11/2025 18:19</time></li>
-<li><a href="artigos/robotica/a-era-dos-robos-como-aproveitar-as-melhores-promocoes-de-aspiradores-inteligentes.html">A era dos robôs: como aproveitar as melhores promoções de aspiradores inteligentes</a><time datetime="2025-11-26T20:24:04.798Z">26/11/2025 17:24</time></li>
-<li><a href="artigos/seguranca/a-era-digital-e-suas-vulnerabilidades-o-impacto-dos-ataques-ciberneticos-nas-cidades.html">A era digital e suas vulnerabilidades: o impacto dos ataques cibernéticos nas cidades</a><time datetime="2025-11-26T19:17:38.928Z">26/11/2025 16:17</time></li>
-<li><a href="artigos/tecnologia/a-nova-joia-da-tecnologia-vestivel-google-pixel-watch-4-em-promocao.html">A nova joia da tecnologia vestível: Google Pixel Watch 4 em promoção!</a><time datetime="2025-11-26T18:27:05.826Z">26/11/2025 15:27</time></li>
-<li><a href="artigos/inteligencia-artificial/energia-solar-e-inteligencia-artificial-a-nova-fronteira-do-desenvolvimento-sustentavel.html">Energia Solar e Inteligência Artificial: A Nova Fronteira do Desenvolvimento Sustentável</a><time datetime="2025-11-26T17:20:07.818Z">26/11/2025 14:20</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-da-casa-inteligente-como-a-tecnologia-pode-transformar-seu-lar.html">A revolução da casa inteligente: como a tecnologia pode transformar seu lar</a><time datetime="2025-11-26T16:27:34.038Z">26/11/2025 13:27</time></li>
-<li><a href="artigos/tecnologia/a-black-friday-do-walmart-e-a-conexao-com-a-arquitetura-de-software.html">A Black Friday do Walmart e a Conexão com a Arquitetura de Software</a><time datetime="2025-11-26T15:20:50.053Z">26/11/2025 12:20</time></li>
-<li><a href="artigos/tecnologia/a-black-friday-da-apple-oportunidades-que-voce-nao-pode-perder.html">A Black Friday da Apple: Oportunidades que Você Não Pode Perder</a><time datetime="2025-11-26T14:22:32.825Z">26/11/2025 11:22</time></li>
-<li><a href="artigos/programacao/a-magica-do-vibe-coding-quando-a-pressa-pode-ser-inimiga-da-perfeicao.html">A mágica do vibe coding: quando a pressa pode ser inimiga da perfeição</a><time datetime="2025-11-26T13:36:03.772Z">26/11/2025 10:36</time></li>
+<li><a href="artigos/tecnologia/um-despertador-que-ilumina-seu-dia-tecnologia-contra-a-depressao-sazonal.html">Um despertador que ilumina seu dia: tecnologia contra a depressão sazonal</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-26T22:20:43.347Z">26/11/2025 19:20</time></div></li>
+<li><a href="artigos/tecnologia/um-olhar-critico-sobre-sensores-inteligentes-o-ting-e-a-seguranca-domestica.html">Um Olhar Crítico sobre Sensores Inteligentes: O Ting e a Segurança Doméstica</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-26T21:19:21.668Z">26/11/2025 18:19</time></div></li>
+<li><a href="artigos/robotica/a-era-dos-robos-como-aproveitar-as-melhores-promocoes-de-aspiradores-inteligentes.html">A era dos robôs: como aproveitar as melhores promoções de aspiradores inteligentes</a><div class="article-list-meta"><span>Robótica</span><time datetime="2025-11-26T20:24:04.798Z">26/11/2025 17:24</time></div></li>
+<li><a href="artigos/seguranca/a-era-digital-e-suas-vulnerabilidades-o-impacto-dos-ataques-ciberneticos-nas-cidades.html">A era digital e suas vulnerabilidades: o impacto dos ataques cibernéticos nas cidades</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-26T19:17:38.928Z">26/11/2025 16:17</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-joia-da-tecnologia-vestivel-google-pixel-watch-4-em-promocao.html">A nova joia da tecnologia vestível: Google Pixel Watch 4 em promoção!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-26T18:27:05.826Z">26/11/2025 15:27</time></div></li>
+<li><a href="artigos/inteligencia-artificial/energia-solar-e-inteligencia-artificial-a-nova-fronteira-do-desenvolvimento-sustentavel.html">Energia Solar e Inteligência Artificial: A Nova Fronteira do Desenvolvimento Sustentável</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-26T17:20:07.818Z">26/11/2025 14:20</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-da-casa-inteligente-como-a-tecnologia-pode-transformar-seu-lar.html">A revolução da casa inteligente: como a tecnologia pode transformar seu lar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-26T16:27:34.038Z">26/11/2025 13:27</time></div></li>
+<li><a href="artigos/tecnologia/a-black-friday-do-walmart-e-a-conexao-com-a-arquitetura-de-software.html">A Black Friday do Walmart e a Conexão com a Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-26T15:20:50.053Z">26/11/2025 12:20</time></div></li>
+<li><a href="artigos/tecnologia/a-black-friday-da-apple-oportunidades-que-voce-nao-pode-perder.html">A Black Friday da Apple: Oportunidades que Você Não Pode Perder</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-26T14:22:32.825Z">26/11/2025 11:22</time></div></li>
+<li><a href="artigos/programacao/a-magica-do-vibe-coding-quando-a-pressa-pode-ser-inimiga-da-perfeicao.html">A mágica do vibe coding: quando a pressa pode ser inimiga da perfeição</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-11-26T13:36:03.772Z">26/11/2025 10:36</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

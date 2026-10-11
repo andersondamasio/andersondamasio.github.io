@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 284</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/como-a-inteligencia-artificial-pode-dar-um-fim-na-procrastinacao.html">Como a Inteligência Artificial Pode Dar um Fim na Procrastinação</a><time datetime="2025-12-22T15:24:24.930Z">22/12/2025 12:24</time></li>
-<li><a href="artigos/robotica/o-futuro-das-mobilidades-uber-e-lyft-apostam-em-robotaxis-chineses-no-reino-unido.html">O futuro das mobilidades: Uber e Lyft apostam em robotáxis chineses no Reino Unido</a><time datetime="2025-12-22T14:22:59.097Z">22/12/2025 11:22</time></li>
-<li><a href="artigos/devops/transformando-testes-em-acoes-o-novo-test-run-hub-do-azure.html">Transformando Testes em Ações: O Novo Test Run Hub do Azure</a><time datetime="2025-12-22T13:36:33.413Z">22/12/2025 10:36</time></li>
-<li><a href="artigos/tecnologia/a-ilusao-dos-dongles-como-nao-cair-em-armadilhas-tecnologicas.html">A ilusão dos dongles: como não cair em armadilhas tecnológicas</a><time datetime="2025-12-22T12:44:03.643Z">22/12/2025 09:44</time></li>
-<li><a href="artigos/desenvolvimento-de-software/como-a-nova-era-do-java-esta-transformando-o-desenvolvimento-de-software.html">Como a Nova Era do Java Está Transformando o Desenvolvimento de Software</a><time datetime="2025-12-22T11:20:34.523Z">22/12/2025 08:20</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-das-recomendacoes-como-o-modelo-gem-da-meta-esta-mudando-o-jogo.html">A nova era das recomendações: como o modelo GEM da Meta está mudando o jogo</a><time datetime="2025-12-22T10:24:30.617Z">22/12/2025 07:24</time></li>
-<li><a href="artigos/cloud/neptune-a-nova-fronteira-da-automacao-em-nuvem.html">Neptune: A Nova Fronteira da Automação em Nuvem</a><time datetime="2025-12-22T09:30:38.712Z">22/12/2025 06:30</time></li>
-<li><a href="artigos/devops/reduzindo-os-tempos-de-build-no-android-licoes-do-pinterest-para-otimizacao-de-ci.html">Reduzindo os Tempos de Build no Android: Lições do Pinterest para Otimização de CI</a><time datetime="2025-12-22T08:32:41.779Z">22/12/2025 05:32</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-do-tiktok-seguranca-ou-perda-de-relevancia.html">A nova era do TikTok: segurança ou perda de relevância?</a><time datetime="2025-12-22T07:26:50.552Z">22/12/2025 04:26</time></li>
-<li><a href="artigos/tecnologia/os-fones-de-ouvido-do-futuro-sony-wh-1000xm6-e-a-evolucao-da-tecnologia-de-cancelamento.html">Os fones de ouvido do futuro: Sony WH-1000XM6 e a evolução da tecnologia de cancelamento</a><time datetime="2025-12-22T06:37:10.990Z">22/12/2025 03:37</time></li>
+<li><a href="artigos/inteligencia-artificial/como-a-inteligencia-artificial-pode-dar-um-fim-na-procrastinacao.html">Como a Inteligência Artificial Pode Dar um Fim na Procrastinação</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-22T15:24:24.930Z">22/12/2025 12:24</time></div></li>
+<li><a href="artigos/robotica/o-futuro-das-mobilidades-uber-e-lyft-apostam-em-robotaxis-chineses-no-reino-unido.html">O futuro das mobilidades: Uber e Lyft apostam em robotáxis chineses no Reino Unido</a><div class="article-list-meta"><span>Robótica</span><time datetime="2025-12-22T14:22:59.097Z">22/12/2025 11:22</time></div></li>
+<li><a href="artigos/devops/transformando-testes-em-acoes-o-novo-test-run-hub-do-azure.html">Transformando Testes em Ações: O Novo Test Run Hub do Azure</a><div class="article-list-meta"><span>DevOps</span><time datetime="2025-12-22T13:36:33.413Z">22/12/2025 10:36</time></div></li>
+<li><a href="artigos/tecnologia/a-ilusao-dos-dongles-como-nao-cair-em-armadilhas-tecnologicas.html">A ilusão dos dongles: como não cair em armadilhas tecnológicas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-22T12:44:03.643Z">22/12/2025 09:44</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/como-a-nova-era-do-java-esta-transformando-o-desenvolvimento-de-software.html">Como a Nova Era do Java Está Transformando o Desenvolvimento de Software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-12-22T11:20:34.523Z">22/12/2025 08:20</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-das-recomendacoes-como-o-modelo-gem-da-meta-esta-mudando-o-jogo.html">A nova era das recomendações: como o modelo GEM da Meta está mudando o jogo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-22T10:24:30.617Z">22/12/2025 07:24</time></div></li>
+<li><a href="artigos/cloud/neptune-a-nova-fronteira-da-automacao-em-nuvem.html">Neptune: A Nova Fronteira da Automação em Nuvem</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-12-22T09:30:38.712Z">22/12/2025 06:30</time></div></li>
+<li><a href="artigos/devops/reduzindo-os-tempos-de-build-no-android-licoes-do-pinterest-para-otimizacao-de-ci.html">Reduzindo os Tempos de Build no Android: Lições do Pinterest para Otimização de CI</a><div class="article-list-meta"><span>DevOps</span><time datetime="2025-12-22T08:32:41.779Z">22/12/2025 05:32</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-do-tiktok-seguranca-ou-perda-de-relevancia.html">A nova era do TikTok: segurança ou perda de relevância?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-22T07:26:50.552Z">22/12/2025 04:26</time></div></li>
+<li><a href="artigos/tecnologia/os-fones-de-ouvido-do-futuro-sony-wh-1000xm6-e-a-evolucao-da-tecnologia-de-cancelamento.html">Os fones de ouvido do futuro: Sony WH-1000XM6 e a evolução da tecnologia de cancelamento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-22T06:37:10.990Z">22/12/2025 03:37</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

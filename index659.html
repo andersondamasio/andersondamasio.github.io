@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 659</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/desafios-e-oportunidades-o-impacto-do-agi-nas-negociacoes-tecnologicas.html">Desafios e Oportunidades: O Impacto do AGI nas Negociações Tecnológicas</a><time datetime="2025-06-29T01:46:49.874Z">28/06/2025 22:46</time></li>
-<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-pode-ser-a-nova-terapia.html">A Inteligência Artificial pode ser a nova terapia?</a><time datetime="2025-06-28T23:18:00.869Z">28/06/2025 20:18</time></li>
-<li><a href="artigos/inteligencia-artificial/a-corrida-pela-inteligencia-artificial-quem-sai-levando-talentos.html">A corrida pela inteligência artificial: quem saí levando talentos?</a><time datetime="2025-06-28T22:17:35.591Z">28/06/2025 19:17</time></li>
-<li><a href="artigos/inteligencia-artificial/a-batalha-entre-humanos-e-maquinas-o-futuro-da-criatividade-sob-ameaca.html">A batalha entre humanos e máquinas: o futuro da criatividade sob ameaça</a><time datetime="2025-06-28T21:17:03.914Z">28/06/2025 18:17</time></li>
-<li><a href="artigos/robotica/como-escolher-o-aspirador-robo-ideal-para-lidar-com-o-pelo-dos-pets.html">Como Escolher o Aspirador Robô Ideal para Lidar com o Pelo dos Pets</a><time datetime="2025-06-28T20:19:44.791Z">28/06/2025 17:19</time></li>
-<li><a href="artigos/inteligencia-artificial/a-corrida-pelo-talento-em-ia-o-que-a-meta-busca-com-suas-novas-contratacoes.html">A corrida pelo talento em IA: O que a Meta busca com suas novas contratações?</a><time datetime="2025-06-28T19:15:04.851Z">28/06/2025 16:15</time></li>
-<li><a href="artigos/seguranca/a-nova-era-da-identidade-digital-entre-inovacao-e-riscos-de-privacidade.html">A nova era da identidade digital: entre inovação e riscos de privacidade</a><time datetime="2025-06-28T18:25:02.176Z">28/06/2025 15:25</time></li>
-<li><a href="artigos/inteligencia-artificial/a-corrida-pela-inteligencia-artificial-como-as-empresas-estao-moldando-o-futuro.html">A corrida pela inteligência artificial: como as empresas estão moldando o futuro</a><time datetime="2025-06-28T17:16:15.358Z">28/06/2025 14:16</time></li>
-<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-que-virou-dono-de-negocio-um-ensaio-sobre-os-limites-e-riscos.html">A inteligência artificial que virou “dono de negócio”: um ensaio sobre os limites e riscos</a><time datetime="2025-06-28T16:23:12.255Z">28/06/2025 13:23</time></li>
-<li><a href="artigos/cloud/containers-na-nuvem-a-revolucao-silenciosa-da-cloudflare.html">Containers na Nuvem: A Revolução Silenciosa da Cloudflare</a><time datetime="2025-06-28T15:18:35.383Z">28/06/2025 12:18</time></li>
+<li><a href="artigos/inteligencia-artificial/desafios-e-oportunidades-o-impacto-do-agi-nas-negociacoes-tecnologicas.html">Desafios e Oportunidades: O Impacto do AGI nas Negociações Tecnológicas</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-29T01:46:49.874Z">28/06/2025 22:46</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-pode-ser-a-nova-terapia.html">A Inteligência Artificial pode ser a nova terapia?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-28T23:18:00.869Z">28/06/2025 20:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-corrida-pela-inteligencia-artificial-quem-sai-levando-talentos.html">A corrida pela inteligência artificial: quem saí levando talentos?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-28T22:17:35.591Z">28/06/2025 19:17</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-batalha-entre-humanos-e-maquinas-o-futuro-da-criatividade-sob-ameaca.html">A batalha entre humanos e máquinas: o futuro da criatividade sob ameaça</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-28T21:17:03.914Z">28/06/2025 18:17</time></div></li>
+<li><a href="artigos/robotica/como-escolher-o-aspirador-robo-ideal-para-lidar-com-o-pelo-dos-pets.html">Como Escolher o Aspirador Robô Ideal para Lidar com o Pelo dos Pets</a><div class="article-list-meta"><span>Robótica</span><time datetime="2025-06-28T20:19:44.791Z">28/06/2025 17:19</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-corrida-pelo-talento-em-ia-o-que-a-meta-busca-com-suas-novas-contratacoes.html">A corrida pelo talento em IA: O que a Meta busca com suas novas contratações?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-28T19:15:04.851Z">28/06/2025 16:15</time></div></li>
+<li><a href="artigos/seguranca/a-nova-era-da-identidade-digital-entre-inovacao-e-riscos-de-privacidade.html">A nova era da identidade digital: entre inovação e riscos de privacidade</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-06-28T18:25:02.176Z">28/06/2025 15:25</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-corrida-pela-inteligencia-artificial-como-as-empresas-estao-moldando-o-futuro.html">A corrida pela inteligência artificial: como as empresas estão moldando o futuro</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-28T17:16:15.358Z">28/06/2025 14:16</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-que-virou-dono-de-negocio-um-ensaio-sobre-os-limites-e-riscos.html">A inteligência artificial que virou “dono de negócio”: um ensaio sobre os limites e riscos</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-28T16:23:12.255Z">28/06/2025 13:23</time></div></li>
+<li><a href="artigos/cloud/containers-na-nuvem-a-revolucao-silenciosa-da-cloudflare.html">Containers na Nuvem: A Revolução Silenciosa da Cloudflare</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-06-28T15:18:35.383Z">28/06/2025 12:18</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

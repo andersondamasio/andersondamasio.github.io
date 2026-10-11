@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 82</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/raspberry-pi-o-novo-luxo-da-tecnologia-hobbyista.html">Raspberry Pi: O Novo Luxo da Tecnologia Hobbyista</a><time datetime="2026-04-06T02:34:26.475Z">05/04/2026 23:34</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-lobsters-como-a-ia-esta-mudando-o-jogo-na-china.html">A Revolução dos "Lobsters": Como a IA Está Mudando o Jogo na China</a><time datetime="2026-04-05T23:38:49.955Z">05/04/2026 20:38</time></li>
-<li><a href="artigos/inteligencia-artificial/copilot-o-brincar-com-a-inteligencia-artificial-e-seus-riscos.html">Copilot: O Brincar com a Inteligência Artificial e Seus Riscos</a><time datetime="2026-04-05T20:39:12.600Z">05/04/2026 17:39</time></li>
-<li><a href="artigos/tecnologia/a-etica-nas-apostas-reflexoes-sobre-a-tecnologia-e-o-mercado-de-previsoes.html">A ética nas apostas: reflexões sobre a tecnologia e o mercado de previsões</a><time datetime="2026-04-05T19:38:31.086Z">05/04/2026 16:38</time></li>
-<li><a href="artigos/tecnologia/revolucao-nas-nuvens-a-nova-era-dos-data-centers-orbitais-e-o-futuro-da-arquitetura-de-software.html">Revolução nas Nuvens: A Nova Era dos Data Centers Orbitais e o Futuro da Arquitetura de Software</a><time datetime="2026-04-05T17:36:04.078Z">05/04/2026 14:36</time></li>
-<li><a href="artigos/tecnologia/a-transparencia-na-mobilidade-autonoma-um-desafio-para-o-futuro.html">A transparência na mobilidade autônoma: um desafio para o futuro</a><time datetime="2026-04-05T16:41:29.495Z">05/04/2026 13:41</time></li>
-<li><a href="artigos/tecnologia/revolucao-ou-decepcao-o-legado-da-apple-e-suas-inovacoes.html">Revolução ou Decepção? O Legado da Apple e suas Inovações</a><time datetime="2026-04-05T14:41:55.195Z">05/04/2026 11:41</time></li>
-<li><a href="artigos/robotica/a-revolucao-dos-robos-como-o-japao-esta-transformando-a-industria-com-ai-fisica.html">A Revolução dos Robôs: Como o Japão Está Transformando a Indústria com AI Física</a><time datetime="2026-04-05T14:01:23.259Z">05/04/2026 11:01</time></li>
-<li><a href="artigos/tecnologia/um-novo-jeito-de-ver-o-linux-prism-e-suas-facilidades.html">Um novo jeito de ver o Linux: Prism e suas facilidades</a><time datetime="2026-04-05T13:02:21.784Z">05/04/2026 10:02</time></li>
-<li><a href="artigos/tecnologia/como-encontrar-o-melhor-preco-de-combustivel-em-2026-dicas-de-apps-e-tecnologia.html">Como Encontrar o Melhor Preço de Combustível em 2026: Dicas de Apps e Tecnologia</a><time datetime="2026-04-05T11:34:52.273Z">05/04/2026 08:34</time></li>
+<li><a href="artigos/tecnologia/raspberry-pi-o-novo-luxo-da-tecnologia-hobbyista.html">Raspberry Pi: O Novo Luxo da Tecnologia Hobbyista</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-06T02:34:26.475Z">05/04/2026 23:34</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-lobsters-como-a-ia-esta-mudando-o-jogo-na-china.html">A Revolução dos "Lobsters": Como a IA Está Mudando o Jogo na China</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-05T23:38:49.955Z">05/04/2026 20:38</time></div></li>
+<li><a href="artigos/inteligencia-artificial/copilot-o-brincar-com-a-inteligencia-artificial-e-seus-riscos.html">Copilot: O Brincar com a Inteligência Artificial e Seus Riscos</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-05T20:39:12.600Z">05/04/2026 17:39</time></div></li>
+<li><a href="artigos/tecnologia/a-etica-nas-apostas-reflexoes-sobre-a-tecnologia-e-o-mercado-de-previsoes.html">A ética nas apostas: reflexões sobre a tecnologia e o mercado de previsões</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-05T19:38:31.086Z">05/04/2026 16:38</time></div></li>
+<li><a href="artigos/tecnologia/revolucao-nas-nuvens-a-nova-era-dos-data-centers-orbitais-e-o-futuro-da-arquitetura-de-software.html">Revolução nas Nuvens: A Nova Era dos Data Centers Orbitais e o Futuro da Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-05T17:36:04.078Z">05/04/2026 14:36</time></div></li>
+<li><a href="artigos/tecnologia/a-transparencia-na-mobilidade-autonoma-um-desafio-para-o-futuro.html">A transparência na mobilidade autônoma: um desafio para o futuro</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-05T16:41:29.495Z">05/04/2026 13:41</time></div></li>
+<li><a href="artigos/tecnologia/revolucao-ou-decepcao-o-legado-da-apple-e-suas-inovacoes.html">Revolução ou Decepção? O Legado da Apple e suas Inovações</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-05T14:41:55.195Z">05/04/2026 11:41</time></div></li>
+<li><a href="artigos/robotica/a-revolucao-dos-robos-como-o-japao-esta-transformando-a-industria-com-ai-fisica.html">A Revolução dos Robôs: Como o Japão Está Transformando a Indústria com AI Física</a><div class="article-list-meta"><span>Robótica</span><time datetime="2026-04-05T14:01:23.259Z">05/04/2026 11:01</time></div></li>
+<li><a href="artigos/tecnologia/um-novo-jeito-de-ver-o-linux-prism-e-suas-facilidades.html">Um novo jeito de ver o Linux: Prism e suas facilidades</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-05T13:02:21.784Z">05/04/2026 10:02</time></div></li>
+<li><a href="artigos/tecnologia/como-encontrar-o-melhor-preco-de-combustivel-em-2026-dicas-de-apps-e-tecnologia.html">Como Encontrar o Melhor Preço de Combustível em 2026: Dicas de Apps e Tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-05T11:34:52.273Z">05/04/2026 08:34</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

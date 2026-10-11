@@ -20,12 +20,16 @@ function workspace(run) {
   const base = fs.realpathSync(os.tmpdir());
   const root = fs.mkdtempSync(path.join(base, "perfil-template-test-"));
   const cwd = process.cwd();
-  try { return run(root); } finally {
+  try { process.chdir(root); return run(root); } finally {
     process.chdir(cwd);
     if (path.dirname(path.resolve(root)) !== base || !path.basename(root).startsWith("perfil-template-test-")) throw new Error("Temporario fora do escopo.");
     fs.rmSync(root, { recursive: true, force: true });
   }
 }
+
+test('workspace sempre isola caminhos relativos fora do repositorio', () => workspace(root => {
+  assert.equal(process.cwd(), root);
+}));
 
 test("auditoria publica ignora previas privadas sem ignorar HTML publico invalido", () => workspace(root => {
   const audit = () => JSON.parse(execFileSync(process.execPath, [path.join(__dirname, "seo-audit.js")], { cwd: root, encoding: "utf8" }));
@@ -306,7 +310,22 @@ test("home e pagina dois possuem finalidade e H1 diferentes, sem repetir biograf
   assert.doesNotMatch(pagina("main").text(), /desde 2005|Atuo com desenvolvimento/);
   assert.equal(home(".article-index li").length, 10);
   assert.equal(pagina(".article-index li").length, 1);
+  for (const $ of [home, pagina]) {
+    assert.equal($('header.site-header').length, 1);
+    assert.equal($('head link[href="/scripts/site-presentation.css"]').length, 1);
+    assert.equal($('header #theme-select option').length, 3);
+    assert.equal($('head script[src="/scripts/theme-toggle.js"]').length, 1);
+    assert.equal($('#theme-toggle').length, 0);
+  }
   assert.match(pagina('link[rel=canonical]').attr("href"), /index2.html$/);
+  const original = fs.readFileSync('index.html', 'utf8');
+  const data = new Date('2020-01-01T00:00:00Z');
+  fs.utimesSync('index.html', data, data);
+  reconstruirPaginasSeo();
+  assert.equal(fs.statSync('index.html').mtimeMs, data.getTime(), 'Rebuild nao regrava um arquivo identico');
+  fs.writeFileSync('index.html', original.replace('Anderson Damasio</h1>', 'Titulo alterado</h1>'));
+  reconstruirPaginasSeo();
+  assert.equal(fs.readFileSync('index.html', 'utf8'), original, 'Rebuild continua corrigindo um arquivo diferente');
 }));
 
 test("sobre e gerado de fonte unica, possui contato real e ProfilePage completo", () => workspace(root => {
@@ -333,6 +352,12 @@ test("publicacao revisada preserva aprovacao, descricao e data em dois backfills
   const aprovado = aprovacaoFixture();
   const { url } = publicarRascunhoAprovado(aprovado, { agora: new Date("2026-10-02T12:00:00Z") });
   const publicado = cheerio.load(fs.readFileSync(url, "utf8"));
+  assert.equal(publicado('header.site-header').length, 1);
+  assert.equal(publicado('.article-breadcrumbs').length, 1);
+  assert.equal(publicado('head script[src="/scripts/site-interactions.js"]').length, 1);
+  assert.equal(publicado('header #theme-select option').length, 3);
+  assert.equal(publicado('head link[href="/scripts/site-theme.css"]').length, 1);
+  assert.equal(publicado('head script[src="/scripts/theme-toggle.js"]').length, 1);
   assert.equal(avaliarAutoriaVisivel(publicado), true);
   const schemaPublicado = JSON.parse(publicado("script[type='application/ld+json']").first().text());
   assert.equal(schemaPublicado.wordCount, contarPalavrasProsa(aprovado.corpoArtigo));
@@ -383,4 +408,25 @@ test("backfill e rebuild alternados nao disputam espacos perto das fontes", () =
   assert.deepEqual(segunda, primeira);
   execFileSync(process.execPath, [path.join(__dirname, "seo-backfill-articles.js")], { cwd: root, stdio: "pipe" });
   assert.deepEqual(arquivos.map(a => fs.readFileSync(a.url, "utf8")), segunda);
+}));
+
+test('backfill direcionado restaura prioridade da capa, preserva outro artigo e e estavel', () => workspace(root => {
+  const { aplicarLayoutSite } = require('./site-presentation');
+  fs.mkdirSync('artigos/arquitetura', { recursive: true });
+  const artigos = ['alvo', 'outro'].map(id => ({ titulo: `Contrato ${id}`, url: `artigos/arquitetura/${id}.html`, categoria: 'Arquitetura', data: '2026-10-01T12:00:00Z', urlFonte: 'https://example.org/fonte', noticiaOriginal: 'Documento de contratos' }));
+  fs.writeFileSync('titulos.json', JSON.stringify(artigos));
+  for (const a of artigos) fs.writeFileSync(a.url, aplicarLayoutSite(`<html><head><meta charset="UTF-8"><title>${a.titulo}</title></head><body><header><nav></nav></header><main><h1>${a.titulo}</h1><img src="https://example.org/capa.jpg" alt="Diagrama de contrato" decoding="async" loading="lazy"><div class="article-body"><p>Contrato delimitado para um exemplo de mensagens.</p></div></main></body></html>`, a.url));
+  const outro = fs.readFileSync(artigos[1].url, 'utf8');
+  const executar = alvo => execFileSync(process.execPath, [path.join(__dirname, 'seo-backfill-articles.js'), `--file=${alvo}`], { cwd: root, stdio: 'pipe' });
+  executar(artigos[0].url);
+  const primeiro = fs.readFileSync(artigos[0].url, 'utf8');
+  const $ = cheerio.load(primeiro);
+  assert.equal($('main > img').attr('fetchpriority'), 'high');
+  assert.equal($('main > img').attr('loading'), undefined);
+  assert.equal($('header img').length, 0);
+  executar(artigos[0].url);
+  assert.equal(fs.readFileSync(artigos[0].url, 'utf8'), primeiro);
+  assert.equal(fs.readFileSync(artigos[1].url, 'utf8'), outro);
+  assert.equal(aplicarLayoutSite(primeiro, artigos[0].url), primeiro);
+  assert.throws(() => executar('../fora.html'));
 }));

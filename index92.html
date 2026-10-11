@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 92</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-queda-do-sora-licoes-de-uma-ferramenta-que-nao-decolou.html">A queda do Sora: lições de uma ferramenta que não decolou</a><time datetime="2026-03-30T05:29:11.004Z">30/03/2026 02:29</time></li>
-<li><a href="artigos/tecnologia/a-hora-da-virada-do-windows-como-a-arquitetura-de-software-pode-salvar-o-sistema.html">A hora da virada do Windows: como a Arquitetura de Software pode salvar o sistema</a><time datetime="2026-03-30T02:33:24.415Z">29/03/2026 23:33</time></li>
-<li><a href="artigos/tecnologia/a-corrida-das-empresas-chinesas-hong-kong-como-novo-berco-tecnologico.html">A corrida das empresas chinesas: Hong Kong como novo berço tecnológico</a><time datetime="2026-03-29T23:37:53.164Z">29/03/2026 20:37</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-fones-de-ouvido-como-a-tecnologia-acessivel-transforma-nossa-experiencia-sonora.html">A nova era dos fones de ouvido: como a tecnologia acessível transforma nossa experiência sonora</a><time datetime="2026-03-29T22:35:58.888Z">29/03/2026 19:35</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-smartphones-sem-protuberancias-a-evolucao-do-design-na-pixel-10a.html">A nova era dos smartphones sem protuberâncias: a evolução do design na Pixel 10a</a><time datetime="2026-03-29T21:36:27.685Z">29/03/2026 18:36</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-o-android-a-nova-era-das-aplicacoes-agentes.html">Transformando o Android: A Nova Era das Aplicações Agentes</a><time datetime="2026-03-29T20:37:09.352Z">29/03/2026 17:37</time></li>
-<li><a href="artigos/seguranca/a-seguranca-em-nuvem-kubernetes-kubescape-e-o-desafio-da-inteligencia-artificial.html">A segurança em nuvem: Kubernetes, Kubescape e o desafio da inteligência artificial</a><time datetime="2026-03-29T19:36:54.309Z">29/03/2026 16:36</time></li>
-<li><a href="artigos/tecnologia/a-hora-de-trocar-de-celular-como-a-tecnologia-pode-nos-ajudar-na-escolha-certa.html">A hora de trocar de celular: como a tecnologia pode nos ajudar na escolha certa</a><time datetime="2026-03-29T18:46:56.167Z">29/03/2026 15:46</time></li>
-<li><a href="artigos/robotica/desafios-de-mobilidade-o-que-acontece-quando-um-robotaxi-fica-parado.html">Desafios de Mobilidade: O Que Acontece Quando um Robotaxi Fica Parado?</a><time datetime="2026-03-29T17:35:20.753Z">29/03/2026 14:35</time></li>
-<li><a href="artigos/inteligencia-artificial/a-bolha-do-video-ai-a-realidade-de-sora.html">A bolha do vídeo AI: a realidade de Sora</a><time datetime="2026-03-29T16:40:07.680Z">29/03/2026 13:40</time></li>
+<li><a href="artigos/inteligencia-artificial/a-queda-do-sora-licoes-de-uma-ferramenta-que-nao-decolou.html">A queda do Sora: lições de uma ferramenta que não decolou</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-30T05:29:11.004Z">30/03/2026 02:29</time></div></li>
+<li><a href="artigos/tecnologia/a-hora-da-virada-do-windows-como-a-arquitetura-de-software-pode-salvar-o-sistema.html">A hora da virada do Windows: como a Arquitetura de Software pode salvar o sistema</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-30T02:33:24.415Z">29/03/2026 23:33</time></div></li>
+<li><a href="artigos/tecnologia/a-corrida-das-empresas-chinesas-hong-kong-como-novo-berco-tecnologico.html">A corrida das empresas chinesas: Hong Kong como novo berço tecnológico</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-29T23:37:53.164Z">29/03/2026 20:37</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-fones-de-ouvido-como-a-tecnologia-acessivel-transforma-nossa-experiencia-sonora.html">A nova era dos fones de ouvido: como a tecnologia acessível transforma nossa experiência sonora</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-29T22:35:58.888Z">29/03/2026 19:35</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-smartphones-sem-protuberancias-a-evolucao-do-design-na-pixel-10a.html">A nova era dos smartphones sem protuberâncias: a evolução do design na Pixel 10a</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-29T21:36:27.685Z">29/03/2026 18:36</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-o-android-a-nova-era-das-aplicacoes-agentes.html">Transformando o Android: A Nova Era das Aplicações Agentes</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-29T20:37:09.352Z">29/03/2026 17:37</time></div></li>
+<li><a href="artigos/seguranca/a-seguranca-em-nuvem-kubernetes-kubescape-e-o-desafio-da-inteligencia-artificial.html">A segurança em nuvem: Kubernetes, Kubescape e o desafio da inteligência artificial</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-29T19:36:54.309Z">29/03/2026 16:36</time></div></li>
+<li><a href="artigos/tecnologia/a-hora-de-trocar-de-celular-como-a-tecnologia-pode-nos-ajudar-na-escolha-certa.html">A hora de trocar de celular: como a tecnologia pode nos ajudar na escolha certa</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-29T18:46:56.167Z">29/03/2026 15:46</time></div></li>
+<li><a href="artigos/robotica/desafios-de-mobilidade-o-que-acontece-quando-um-robotaxi-fica-parado.html">Desafios de Mobilidade: O Que Acontece Quando um Robotaxi Fica Parado?</a><div class="article-list-meta"><span>Robótica</span><time datetime="2026-03-29T17:35:20.753Z">29/03/2026 14:35</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-bolha-do-video-ai-a-realidade-de-sora.html">A bolha do vídeo AI: a realidade de Sora</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-29T16:40:07.680Z">29/03/2026 13:40</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

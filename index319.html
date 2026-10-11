@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 319</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/desenvolvimento-de-software/a-explosao-dos-wrapped-oportunidades-e-desafios-para-o-desenvolvimento-de-software.html">A explosão dos "Wrapped": Oportunidades e Desafios para o Desenvolvimento de Software</a><time datetime="2025-12-06T14:18:26.517Z">06/12/2025 11:18</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-governanca-como-a-deteccao-de-shadow-ai-pode-transformar-sua-estrategia-de-software.html">A nova era da governança: como a Detecção de Shadow AI pode transformar sua estratégia de software</a><time datetime="2025-12-06T13:28:16.874Z">06/12/2025 10:28</time></li>
-<li><a href="artigos/seguranca/como-proteger-sua-casa-inteligente-dicas-de-um-arquiteto-de-software.html">Como Proteger Sua Casa Inteligente: Dicas de um Arquiteto de Software</a><time datetime="2025-12-06T12:38:56.981Z">06/12/2025 09:38</time></li>
-<li><a href="artigos/inteligencia-artificial/como-chatbots-estao-moldando-nossas-opinioes-um-olhar-critico-da-arquitetura-de-software.html">Como chatbots estão moldando nossas opiniões: um olhar crítico da arquitetura de software</a><time datetime="2025-12-06T11:17:14.271Z">06/12/2025 08:17</time></li>
-<li><a href="artigos/inteligencia-artificial/explorando-o-futuro-das-compras-com-ai-uma-revolucao-silenciosa.html">Explorando o Futuro das Compras com AI: Uma Revolução Silenciosa</a><time datetime="2025-12-06T10:21:16.031Z">06/12/2025 07:21</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-dispositivos-ai-limitless-se-junta-ao-imperio-da-meta.html">A nova era dos dispositivos AI: Limitless se junta ao império da Meta</a><time datetime="2025-12-06T09:21:14.590Z">06/12/2025 06:21</time></li>
-<li><a href="artigos/tecnologia/oasis-de-valoracoes-como-spacex-e-o-mercado-privado-redefinem-o-futuro.html">Oásis de Valorações: Como SpaceX e o Mercado Privado Redefinem o Futuro</a><time datetime="2025-12-06T08:26:39.226Z">06/12/2025 05:26</time></li>
-<li><a href="artigos/tecnologia-automotiva/desafios-da-inteligencia-artificial-nas-estradas-o-caso-da-tesla-e-seu-fsd.html">Desafios da Inteligência Artificial nas Estradas: O Caso da Tesla e Seu FSD</a><time datetime="2025-12-06T07:19:36.985Z">06/12/2025 04:19</time></li>
-<li><a href="artigos/inteligencia-artificial/desvendando-o-quebra-cabeca-da-ia-como-gigantes-da-tecnologia-estao-transformando-o-cenario.html">Desvendando o Quebra-Cabeça da IA: Como Gigantes da Tecnologia Estão Transformando o Cenário</a><time datetime="2025-12-06T06:30:13.217Z">06/12/2025 03:30</time></li>
-<li><a href="artigos/seguranca/a-fama-no-mundo-digital-o-preco-da-exposicao-e-a-seguranca-dos-criadores-de-conteudo.html">A fama no mundo digital: o preço da exposição e a segurança dos criadores de conteúdo</a><time datetime="2025-12-06T05:21:02.067Z">06/12/2025 02:21</time></li>
+<li><a href="artigos/desenvolvimento-de-software/a-explosao-dos-wrapped-oportunidades-e-desafios-para-o-desenvolvimento-de-software.html">A explosão dos "Wrapped": Oportunidades e Desafios para o Desenvolvimento de Software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-12-06T14:18:26.517Z">06/12/2025 11:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-governanca-como-a-deteccao-de-shadow-ai-pode-transformar-sua-estrategia-de-software.html">A nova era da governança: como a Detecção de Shadow AI pode transformar sua estratégia de software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-06T13:28:16.874Z">06/12/2025 10:28</time></div></li>
+<li><a href="artigos/seguranca/como-proteger-sua-casa-inteligente-dicas-de-um-arquiteto-de-software.html">Como Proteger Sua Casa Inteligente: Dicas de um Arquiteto de Software</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-06T12:38:56.981Z">06/12/2025 09:38</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-chatbots-estao-moldando-nossas-opinioes-um-olhar-critico-da-arquitetura-de-software.html">Como chatbots estão moldando nossas opiniões: um olhar crítico da arquitetura de software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-06T11:17:14.271Z">06/12/2025 08:17</time></div></li>
+<li><a href="artigos/inteligencia-artificial/explorando-o-futuro-das-compras-com-ai-uma-revolucao-silenciosa.html">Explorando o Futuro das Compras com AI: Uma Revolução Silenciosa</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-06T10:21:16.031Z">06/12/2025 07:21</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-dispositivos-ai-limitless-se-junta-ao-imperio-da-meta.html">A nova era dos dispositivos AI: Limitless se junta ao império da Meta</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-06T09:21:14.590Z">06/12/2025 06:21</time></div></li>
+<li><a href="artigos/tecnologia/oasis-de-valoracoes-como-spacex-e-o-mercado-privado-redefinem-o-futuro.html">Oásis de Valorações: Como SpaceX e o Mercado Privado Redefinem o Futuro</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-06T08:26:39.226Z">06/12/2025 05:26</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/desafios-da-inteligencia-artificial-nas-estradas-o-caso-da-tesla-e-seu-fsd.html">Desafios da Inteligência Artificial nas Estradas: O Caso da Tesla e Seu FSD</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-12-06T07:19:36.985Z">06/12/2025 04:19</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desvendando-o-quebra-cabeca-da-ia-como-gigantes-da-tecnologia-estao-transformando-o-cenario.html">Desvendando o Quebra-Cabeça da IA: Como Gigantes da Tecnologia Estão Transformando o Cenário</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-06T06:30:13.217Z">06/12/2025 03:30</time></div></li>
+<li><a href="artigos/seguranca/a-fama-no-mundo-digital-o-preco-da-exposicao-e-a-seguranca-dos-criadores-de-conteudo.html">A fama no mundo digital: o preço da exposição e a segurança dos criadores de conteúdo</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-06T05:21:02.067Z">06/12/2025 02:21</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

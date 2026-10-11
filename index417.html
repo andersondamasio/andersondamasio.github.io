@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 417</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/cloud/a-nova-era-da-engenharia-em-nuvem-como-a-inteligencia-artificial-esta-mudando-o-jogo.html">A nova era da engenharia em nuvem: como a inteligência artificial está mudando o jogo</a><time datetime="2025-10-22T11:18:24.240Z">22/10/2025 08:18</time></li>
-<li><a href="artigos/seguranca/a-revolucao-das-vpns-como-escolher-a-melhor-para-proteger-sua-privacidade.html">A revolução das VPNs: Como escolher a melhor para proteger sua privacidade</a><time datetime="2025-10-22T10:24:10.014Z">22/10/2025 07:24</time></li>
-<li><a href="artigos/tecnologia/a-evolucao-dos-smartwatches-android-o-que-esperar-em-2025.html">A evolução dos smartwatches Android: o que esperar em 2025?</a><time datetime="2025-10-22T09:23:10.677Z">22/10/2025 06:23</time></li>
-<li><a href="artigos/tecnologia/os-fones-de-ouvido-que-vao-alem-do-preco-como-a-tecnologia-pode-transformar-sua-experiencia-sonora.html">Os fones de ouvido que vão além do preço: como a tecnologia pode transformar sua experiência sonora</a><time datetime="2025-10-22T08:31:17.455Z">22/10/2025 05:31</time></li>
-<li><a href="artigos/seguranca/a-batalha-invisivel-como-escolher-o-melhor-antivirus-para-proteger-seu-pc.html">A batalha invisível: Como escolher o melhor antivírus para proteger seu PC</a><time datetime="2025-10-22T07:21:35.872Z">22/10/2025 04:21</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-dispositivos-o-que-o-galaxy-xr-revela-sobre-as-smart-glasses.html">A nova era dos dispositivos: o que o Galaxy XR revela sobre as smart glasses</a><time datetime="2025-10-22T06:32:10.237Z">22/10/2025 03:32</time></li>
-<li><a href="artigos/tecnologia/samsung-se-prepara-para-a-guerra-dos-oculos-inteligentes-o-que-isso-significa-para-a-arquitetura-de-software.html">Samsung se prepara para a guerra dos óculos inteligentes: o que isso significa para a arquitetura de software?</a><time datetime="2025-10-22T05:21:39.864Z">22/10/2025 02:21</time></li>
-<li><a href="artigos/tecnologia/a-nova-realidade-do-entretenimento-samsung-galaxy-xr-e-suas-possibilidades.html">A nova realidade do entretenimento: Samsung Galaxy XR e suas possibilidades</a><time datetime="2025-10-22T04:24:07.480Z">22/10/2025 01:24</time></li>
-<li><a href="artigos/inteligencia-artificial/oportunidade-de-ouro-como-garantir-acesso-gratis-ao-perplexity-pro.html">Oportunidade de Ouro: Como Garantir Acesso Grátis ao Perplexity Pro</a><time datetime="2025-10-22T03:11:43.253Z">22/10/2025 00:11</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-smartphones-oneplus-15-pode-mudar-o-jogo.html">A nova era dos smartphones: OnePlus 15 pode mudar o jogo</a><time datetime="2025-10-22T01:28:00.954Z">21/10/2025 22:28</time></li>
+<li><a href="artigos/cloud/a-nova-era-da-engenharia-em-nuvem-como-a-inteligencia-artificial-esta-mudando-o-jogo.html">A nova era da engenharia em nuvem: como a inteligência artificial está mudando o jogo</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-10-22T11:18:24.240Z">22/10/2025 08:18</time></div></li>
+<li><a href="artigos/seguranca/a-revolucao-das-vpns-como-escolher-a-melhor-para-proteger-sua-privacidade.html">A revolução das VPNs: Como escolher a melhor para proteger sua privacidade</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-10-22T10:24:10.014Z">22/10/2025 07:24</time></div></li>
+<li><a href="artigos/tecnologia/a-evolucao-dos-smartwatches-android-o-que-esperar-em-2025.html">A evolução dos smartwatches Android: o que esperar em 2025?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-22T09:23:10.677Z">22/10/2025 06:23</time></div></li>
+<li><a href="artigos/tecnologia/os-fones-de-ouvido-que-vao-alem-do-preco-como-a-tecnologia-pode-transformar-sua-experiencia-sonora.html">Os fones de ouvido que vão além do preço: como a tecnologia pode transformar sua experiência sonora</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-22T08:31:17.455Z">22/10/2025 05:31</time></div></li>
+<li><a href="artigos/seguranca/a-batalha-invisivel-como-escolher-o-melhor-antivirus-para-proteger-seu-pc.html">A batalha invisível: Como escolher o melhor antivírus para proteger seu PC</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-10-22T07:21:35.872Z">22/10/2025 04:21</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-dispositivos-o-que-o-galaxy-xr-revela-sobre-as-smart-glasses.html">A nova era dos dispositivos: o que o Galaxy XR revela sobre as smart glasses</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-22T06:32:10.237Z">22/10/2025 03:32</time></div></li>
+<li><a href="artigos/tecnologia/samsung-se-prepara-para-a-guerra-dos-oculos-inteligentes-o-que-isso-significa-para-a-arquitetura-de-software.html">Samsung se prepara para a guerra dos óculos inteligentes: o que isso significa para a arquitetura de software?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-22T05:21:39.864Z">22/10/2025 02:21</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-realidade-do-entretenimento-samsung-galaxy-xr-e-suas-possibilidades.html">A nova realidade do entretenimento: Samsung Galaxy XR e suas possibilidades</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-22T04:24:07.480Z">22/10/2025 01:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/oportunidade-de-ouro-como-garantir-acesso-gratis-ao-perplexity-pro.html">Oportunidade de Ouro: Como Garantir Acesso Grátis ao Perplexity Pro</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-22T03:11:43.253Z">22/10/2025 00:11</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-smartphones-oneplus-15-pode-mudar-o-jogo.html">A nova era dos smartphones: OnePlus 15 pode mudar o jogo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-22T01:28:00.954Z">21/10/2025 22:28</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

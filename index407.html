@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 407</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-nova-era-dos-motores-como-a-tecnologia-de-foguetes-pode-revolucionar-a-energia-limpa.html">A nova era dos motores: Como a tecnologia de foguetes pode revolucionar a energia limpa</a><time datetime="2025-10-26T23:19:51.214Z">26/10/2025 20:19</time></li>
-<li><a href="artigos/robotica/desvendando-o-moflin-o-robo-peludo-que-pode-revolucionar-o-conceito-de-companhia.html">Desvendando o Moflin: O Robô Peludo Que Pode Revolucionar o Conceito de Companhia</a><time datetime="2025-10-26T22:20:01.425Z">26/10/2025 19:20</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-monitores-quando-a-tela-se-torna-seu-mundo.html">A nova era dos monitores: quando a tela se torna seu mundo</a><time datetime="2025-10-26T21:17:29.430Z">26/10/2025 18:17</time></li>
-<li><a href="artigos/tecnologia/a-publicidade-esta-chegando-ao-mapa-o-que-isso-significa-para-o-futuro-do-apple-maps.html">A publicidade está chegando ao mapa: o que isso significa para o futuro do Apple Maps?</a><time datetime="2025-10-26T20:22:50.341Z">26/10/2025 17:22</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-startups-como-a-arquitetura-de-software-pode-impulsionar-inovacoes.html">A revolução das startups: como a arquitetura de software pode impulsionar inovações</a><time datetime="2025-10-26T19:15:49.838Z">26/10/2025 16:15</time></li>
-<li><a href="artigos/tecnologia/a-danca-das-cadeiras-digitais-o-futuro-do-tiktok-e-suas-implicacoes-para-a-tecnologia.html">A dança das cadeiras digitais: o futuro do TikTok e suas implicações para a tecnologia</a><time datetime="2025-10-26T18:27:53.704Z">26/10/2025 15:27</time></li>
-<li><a href="artigos/tecnologia/como-a-t-mobile-esta-transformando-a-troca-de-esims-em-um-passeio-no-parque.html">Como a T-Mobile Está Transformando a Troca de eSIMs em um Passeio no Parque</a><time datetime="2025-10-26T17:18:20.283Z">26/10/2025 14:18</time></li>
-<li><a href="artigos/inteligencia-artificial/o-imperio-dos-robos-controle-e-as-oportunidades-de-mercado.html">O império dos robôs: controle e as oportunidades de mercado</a><time datetime="2025-10-26T16:22:44.295Z">26/10/2025 13:22</time></li>
-<li><a href="artigos/tecnologia/desvendando-o-som-o-que-os-fones-dali-io-8-tem-a-nos-ensinar-sobre-qualidade-e-tecnologia.html">Desvendando o Som: O Que os Fones Dali IO-8 Têm a Nos Ensinar Sobre Qualidade e Tecnologia</a><time datetime="2025-10-26T15:20:09.601Z">26/10/2025 12:20</time></li>
-<li><a href="artigos/desenvolvimento-de-software/a-revolucao-do-amanha-como-a-arquitetura-de-software-molda-o-futuro-das-startups.html">A revolução do amanhã: como a arquitetura de software molda o futuro das startups</a><time datetime="2025-10-26T14:19:28.829Z">26/10/2025 11:19</time></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-motores-como-a-tecnologia-de-foguetes-pode-revolucionar-a-energia-limpa.html">A nova era dos motores: Como a tecnologia de foguetes pode revolucionar a energia limpa</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-26T23:19:51.214Z">26/10/2025 20:19</time></div></li>
+<li><a href="artigos/robotica/desvendando-o-moflin-o-robo-peludo-que-pode-revolucionar-o-conceito-de-companhia.html">Desvendando o Moflin: O Robô Peludo Que Pode Revolucionar o Conceito de Companhia</a><div class="article-list-meta"><span>Robótica</span><time datetime="2025-10-26T22:20:01.425Z">26/10/2025 19:20</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-monitores-quando-a-tela-se-torna-seu-mundo.html">A nova era dos monitores: quando a tela se torna seu mundo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-26T21:17:29.430Z">26/10/2025 18:17</time></div></li>
+<li><a href="artigos/tecnologia/a-publicidade-esta-chegando-ao-mapa-o-que-isso-significa-para-o-futuro-do-apple-maps.html">A publicidade está chegando ao mapa: o que isso significa para o futuro do Apple Maps?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-26T20:22:50.341Z">26/10/2025 17:22</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-startups-como-a-arquitetura-de-software-pode-impulsionar-inovacoes.html">A revolução das startups: como a arquitetura de software pode impulsionar inovações</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-26T19:15:49.838Z">26/10/2025 16:15</time></div></li>
+<li><a href="artigos/tecnologia/a-danca-das-cadeiras-digitais-o-futuro-do-tiktok-e-suas-implicacoes-para-a-tecnologia.html">A dança das cadeiras digitais: o futuro do TikTok e suas implicações para a tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-26T18:27:53.704Z">26/10/2025 15:27</time></div></li>
+<li><a href="artigos/tecnologia/como-a-t-mobile-esta-transformando-a-troca-de-esims-em-um-passeio-no-parque.html">Como a T-Mobile Está Transformando a Troca de eSIMs em um Passeio no Parque</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-26T17:18:20.283Z">26/10/2025 14:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/o-imperio-dos-robos-controle-e-as-oportunidades-de-mercado.html">O império dos robôs: controle e as oportunidades de mercado</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-26T16:22:44.295Z">26/10/2025 13:22</time></div></li>
+<li><a href="artigos/tecnologia/desvendando-o-som-o-que-os-fones-dali-io-8-tem-a-nos-ensinar-sobre-qualidade-e-tecnologia.html">Desvendando o Som: O Que os Fones Dali IO-8 Têm a Nos Ensinar Sobre Qualidade e Tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-26T15:20:09.601Z">26/10/2025 12:20</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/a-revolucao-do-amanha-como-a-arquitetura-de-software-molda-o-futuro-das-startups.html">A revolução do amanhã: como a arquitetura de software molda o futuro das startups</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-10-26T14:19:28.829Z">26/10/2025 11:19</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

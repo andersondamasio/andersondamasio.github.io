@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 703</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-hora-da-verdade-apple-precisa-mostrar-servico-na-era-da-ia.html">A hora da verdade: Apple precisa mostrar serviço na era da IA</a><time datetime="2025-06-08T14:17:26.212Z">08/06/2025 11:17</time></li>
-<li><a href="artigos/programacao/como-otimizar-seus-projetos-c-dicas-praticas-para-navegar-em-grandes-solucoes.html">Como Otimizar Seus Projetos C++: Dicas Práticas para Navegar em Grandes Soluções</a><time datetime="2025-06-08T13:26:36.145Z">08/06/2025 10:26</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-do-coding-claude-code-e-o-futuro-da-programacao.html">A revolução do coding: Claude Code e o futuro da programação</a><time datetime="2025-06-08T12:35:05.493Z">08/06/2025 09:35</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-inteligencia-artificial-gemini-2-5-pro-e-a-revolucao-dos-prompts.html">A nova era da inteligência artificial: Gemini 2.5 Pro e a revolução dos prompts</a><time datetime="2025-06-08T11:14:54.626Z">08/06/2025 08:14</time></li>
-<li><a href="artigos/tecnologia/palantir-entre-a-defesa-e-a-transparencia-na-era-da-informacao.html">Palantir: Entre a Defesa e a Transparência na Era da Informação</a><time datetime="2025-06-08T10:18:33.928Z">08/06/2025 07:18</time></li>
-<li><a href="artigos/inteligencia-artificial/gerenciando-o-futuro-das-imagens-como-a-arquitetura-de-software-impulsiona-a-revolucao-da-ia-visual.html">Gerenciando o Futuro das Imagens: Como a Arquitetura de Software Impulsiona a Revolução da IA Visual</a><time datetime="2025-06-08T09:18:07.279Z">08/06/2025 06:18</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-programacao-gitlab-18-0-e-a-integracao-de-ia-no-dia-a-dia-do-devsecops.html">A Revolução da Programação: GitLab 18.0 e a Integração de IA no Dia a Dia do DevSecOps</a><time datetime="2025-06-08T08:22:10.375Z">08/06/2025 05:22</time></li>
-<li><a href="artigos/inteligencia-artificial/o-ponto-de-virada-da-apple-em-ia-o-que-esperar-da-wwdc.html">O ponto de virada da Apple em IA: O que esperar da WWDC?</a><time datetime="2025-06-08T07:16:55.215Z">08/06/2025 04:16</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-dados-em-decisoes-como-a-arquitetura-de-software-pode-impulsionar-a-era-da-ia.html">Transformando Dados em Decisões: Como a Arquitetura de Software Pode Impulsionar a Era da IA</a><time datetime="2025-06-08T06:28:00.768Z">08/06/2025 03:28</time></li>
-<li><a href="artigos/inteligencia-artificial/inteligencia-artificial-em-tempos-de-crise-o-novo-papel-dos-modelos-da-anthropic.html">Inteligência Artificial em Tempos de Crise: O Novo Papel dos Modelos da Anthropic</a><time datetime="2025-06-08T05:19:14.165Z">08/06/2025 02:19</time></li>
+<li><a href="artigos/inteligencia-artificial/a-hora-da-verdade-apple-precisa-mostrar-servico-na-era-da-ia.html">A hora da verdade: Apple precisa mostrar serviço na era da IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-08T14:17:26.212Z">08/06/2025 11:17</time></div></li>
+<li><a href="artigos/programacao/como-otimizar-seus-projetos-c-dicas-praticas-para-navegar-em-grandes-solucoes.html">Como Otimizar Seus Projetos C++: Dicas Práticas para Navegar em Grandes Soluções</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-06-08T13:26:36.145Z">08/06/2025 10:26</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-do-coding-claude-code-e-o-futuro-da-programacao.html">A revolução do coding: Claude Code e o futuro da programação</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-08T12:35:05.493Z">08/06/2025 09:35</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-inteligencia-artificial-gemini-2-5-pro-e-a-revolucao-dos-prompts.html">A nova era da inteligência artificial: Gemini 2.5 Pro e a revolução dos prompts</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-08T11:14:54.626Z">08/06/2025 08:14</time></div></li>
+<li><a href="artigos/tecnologia/palantir-entre-a-defesa-e-a-transparencia-na-era-da-informacao.html">Palantir: Entre a Defesa e a Transparência na Era da Informação</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-06-08T10:18:33.928Z">08/06/2025 07:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/gerenciando-o-futuro-das-imagens-como-a-arquitetura-de-software-impulsiona-a-revolucao-da-ia-visual.html">Gerenciando o Futuro das Imagens: Como a Arquitetura de Software Impulsiona a Revolução da IA Visual</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-08T09:18:07.279Z">08/06/2025 06:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-programacao-gitlab-18-0-e-a-integracao-de-ia-no-dia-a-dia-do-devsecops.html">A Revolução da Programação: GitLab 18.0 e a Integração de IA no Dia a Dia do DevSecOps</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-08T08:22:10.375Z">08/06/2025 05:22</time></div></li>
+<li><a href="artigos/inteligencia-artificial/o-ponto-de-virada-da-apple-em-ia-o-que-esperar-da-wwdc.html">O ponto de virada da Apple em IA: O que esperar da WWDC?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-08T07:16:55.215Z">08/06/2025 04:16</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-dados-em-decisoes-como-a-arquitetura-de-software-pode-impulsionar-a-era-da-ia.html">Transformando Dados em Decisões: Como a Arquitetura de Software Pode Impulsionar a Era da IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-08T06:28:00.768Z">08/06/2025 03:28</time></div></li>
+<li><a href="artigos/inteligencia-artificial/inteligencia-artificial-em-tempos-de-crise-o-novo-papel-dos-modelos-da-anthropic.html">Inteligência Artificial em Tempos de Crise: O Novo Papel dos Modelos da Anthropic</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-08T05:19:14.165Z">08/06/2025 02:19</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

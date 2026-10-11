@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 806</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html">Stuffed-Na(a)N: dados em NaN e o limite da serialização JSON</a><time datetime="2025-04-26T17:13:15.149Z">26/04/2025 14:13</time></li>
-<li><a href="artigos/a-importancia-da-criacao-de-sistemas-operacionais-como-hobby-na-arquitetura-de-software-moderna.html">A importância da criação de sistemas operacionais como hobby na arquitetura de software moderna</a><time datetime="2025-04-26T16:19:50.781Z">26/04/2025 13:19</time></li>
-<li><a href="artigos/adivinhacao-de-locais-em-fotos-uma-nova-abordagem-surreal-e-distopica-na-arquitetura-de-software.html">Adivinhação de locais em fotos: uma nova abordagem surreal e distópica na arquitetura de software</a><time datetime="2025-04-26T15:15:55.911Z">26/04/2025 12:15</time></li>
-<li><a href="artigos/a-integracao-da-inteligencia-artificial-na-arquitetura-de-software-o-papel-dos-large-language-models.html">A integração da inteligência artificial na arquitetura de software: o papel dos Large Language Models</a><time datetime="2025-04-26T14:14:31.971Z">26/04/2025 11:14</time></li>
-<li><a href="artigos/o-impacto-do-arquivo-etc-hosts-na-arquitetura-de-software-moderna.html">O impacto do arquivo "/etc/hosts" na arquitetura de software moderna</a><time datetime="2025-04-26T09:16:49.030Z">26/04/2025 06:16</time></li>
-<li><a href="artigos/a-importancia-da-arquitetura-de-software-na-contratacao-de-um-engenheiro-de-back-end-plataforma-pela-mobileboost.html">A Importância da Arquitetura de Software na Contratação de um Engenheiro de Back End/Plataforma pela MobileBoost</a><time datetime="2025-04-26T07:15:26.112Z">26/04/2025 04:15</time></li>
-<li><a href="artigos/a-tendencia-do-cloth-na-arquitetura-de-software-moderna.html">Cloth no navegador: como avaliar uma simulação visual</a><time datetime="2025-04-26T06:22:58.685Z">26/04/2025 03:22</time></li>
-<li><a href="artigos/o-futuro-da-configuracao-de-software-a-era-do-parallel-configure.html">O futuro da configuração de software: a era do Parallel ./configure</a><time datetime="2025-04-26T05:16:02.518Z">26/04/2025 02:16</time></li>
-<li><a href="artigos/utilizando-apis-de-ia-para-personalizacao-de-servicos-uma-abordagem-moderna-em-arquitetura-de-software.html">Utilizando APIs de IA para personalização de serviços: Uma abordagem moderna em arquitetura de software</a><time datetime="2025-04-26T03:34:39.414Z">26/04/2025 00:34</time></li>
-<li><a href="artigos/a-conexao-entre-o-berkeley-humanoid-lite-e-a-arquitetura-de-software-moderna.html">A conexão entre o Berkeley Humanoid Lite e a arquitetura de software moderna</a><time datetime="2025-04-26T02:58:14.532Z">25/04/2025 23:58</time></li>
+<li><a href="artigos/como-a-tendencia-stuffed-na-a-n-se-conecta-a-arquitetura-de-software-moderna.html">Stuffed-Na(a)N: dados em NaN e o limite da serialização JSON</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2025-04-26T17:13:15.149Z">26/04/2025 14:13</time></div></li>
+<li><a href="artigos/a-importancia-da-criacao-de-sistemas-operacionais-como-hobby-na-arquitetura-de-software-moderna.html">A importância da criação de sistemas operacionais como hobby na arquitetura de software moderna</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2025-04-26T16:19:50.781Z">26/04/2025 13:19</time></div></li>
+<li><a href="artigos/adivinhacao-de-locais-em-fotos-uma-nova-abordagem-surreal-e-distopica-na-arquitetura-de-software.html">Adivinhação de locais em fotos: uma nova abordagem surreal e distópica na arquitetura de software</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2025-04-26T15:15:55.911Z">26/04/2025 12:15</time></div></li>
+<li><a href="artigos/a-integracao-da-inteligencia-artificial-na-arquitetura-de-software-o-papel-dos-large-language-models.html">A integração da inteligência artificial na arquitetura de software: o papel dos Large Language Models</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2025-04-26T14:14:31.971Z">26/04/2025 11:14</time></div></li>
+<li><a href="artigos/o-impacto-do-arquivo-etc-hosts-na-arquitetura-de-software-moderna.html">O impacto do arquivo "/etc/hosts" na arquitetura de software moderna</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2025-04-26T09:16:49.030Z">26/04/2025 06:16</time></div></li>
+<li><a href="artigos/a-importancia-da-arquitetura-de-software-na-contratacao-de-um-engenheiro-de-back-end-plataforma-pela-mobileboost.html">A Importância da Arquitetura de Software na Contratação de um Engenheiro de Back End/Plataforma pela MobileBoost</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2025-04-26T07:15:26.112Z">26/04/2025 04:15</time></div></li>
+<li><a href="artigos/a-tendencia-do-cloth-na-arquitetura-de-software-moderna.html">Cloth no navegador: como avaliar uma simulação visual</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2025-04-26T06:22:58.685Z">26/04/2025 03:22</time></div></li>
+<li><a href="artigos/o-futuro-da-configuracao-de-software-a-era-do-parallel-configure.html">O futuro da configuração de software: a era do Parallel ./configure</a><div class="article-list-meta"><span>Outros</span><time datetime="2025-04-26T05:16:02.518Z">26/04/2025 02:16</time></div></li>
+<li><a href="artigos/utilizando-apis-de-ia-para-personalizacao-de-servicos-uma-abordagem-moderna-em-arquitetura-de-software.html">Utilizando APIs de IA para personalização de serviços: Uma abordagem moderna em arquitetura de software</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2025-04-26T03:34:39.414Z">26/04/2025 00:34</time></div></li>
+<li><a href="artigos/a-conexao-entre-o-berkeley-humanoid-lite-e-a-arquitetura-de-software-moderna.html">A conexão entre o Berkeley Humanoid Lite e a arquitetura de software moderna</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2025-04-26T02:58:14.532Z">25/04/2025 23:58</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

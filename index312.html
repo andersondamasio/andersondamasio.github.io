@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 312</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia-automotiva/rivian-o-futuro-da-mobilidade-com-um-assistente-de-ia-inovador.html">Rivian: O Futuro da Mobilidade com um Assistente de IA Inovador</a><time datetime="2025-12-09T20:23:18.239Z">09/12/2025 17:23</time></li>
-<li><a href="artigos/inteligencia-artificial/amazon-ring-reconhecimento-facial-tecnologia-e-a-questao-da-privacidade.html">Amazon Ring: Reconhecimento Facial, Tecnologia e a Questão da Privacidade</a><time datetime="2025-12-09T19:17:25.122Z">09/12/2025 16:17</time></li>
-<li><a href="artigos/seguranca/a-protecao-das-chamadas-como-a-tecnologia-pode-salvar-nossas-familias-de-fraudes.html">A proteção das chamadas: como a tecnologia pode salvar nossas famílias de fraudes</a><time datetime="2025-12-09T18:51:11.479Z">09/12/2025 15:51</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-dos-agentes-como-a-arquitetura-de-software-pode-moldar-o-futuro-da-ia.html">A era dos agentes: como a arquitetura de software pode moldar o futuro da IA</a><time datetime="2025-12-09T17:33:10.519Z">09/12/2025 14:33</time></li>
-<li><a href="artigos/tecnologia/como-dar-um-up-na-performance-do-seu-pc-com-windows-11-dicas-praticas-e-eficazes.html">Como dar um "up" na performance do seu PC com Windows 11: dicas práticas e eficazes</a><time datetime="2025-12-09T16:29:07.300Z">09/12/2025 13:29</time></li>
-<li><a href="artigos/tecnologia/a-protecao-do-seu-smartphone-como-evitar-surpresas-em-viagens.html">A proteção do seu smartphone: como evitar surpresas em viagens</a><time datetime="2025-12-09T15:25:51.907Z">09/12/2025 12:25</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-silenciosa-da-ia-como-linus-torvalds-ve-o-futuro-do-codigo.html">A revolução silenciosa da IA: como Linus Torvalds vê o futuro do código</a><time datetime="2025-12-09T14:24:03.726Z">09/12/2025 11:24</time></li>
-<li><a href="artigos/tecnologia/reparos-digitais-como-bots-estao-mudando-a-forma-de-consertar-nossos-dispositivos.html">Reparos Digitais: Como Bots Estão Mudando a Forma de Consertar Nossos Dispositivos</a><time datetime="2025-12-09T13:37:59.365Z">09/12/2025 10:37</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-das-ias-o-dilema-entre-inovacao-e-direitos-autorais.html">A era das IAs: o dilema entre inovação e direitos autorais</a><time datetime="2025-12-09T12:48:50.547Z">09/12/2025 09:48</time></li>
-<li><a href="artigos/tecnologia/transformando-ofertas-em-oportunidades-como-escolher-o-smartphone-certo-na-era-das-promocoes.html">Transformando Ofertas em Oportunidades: Como Escolher o Smartphone Certo na Era das Promoções</a><time datetime="2025-12-09T11:21:21.533Z">09/12/2025 08:21</time></li>
+<li><a href="artigos/tecnologia-automotiva/rivian-o-futuro-da-mobilidade-com-um-assistente-de-ia-inovador.html">Rivian: O Futuro da Mobilidade com um Assistente de IA Inovador</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-12-09T20:23:18.239Z">09/12/2025 17:23</time></div></li>
+<li><a href="artigos/inteligencia-artificial/amazon-ring-reconhecimento-facial-tecnologia-e-a-questao-da-privacidade.html">Amazon Ring: Reconhecimento Facial, Tecnologia e a Questão da Privacidade</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-09T19:17:25.122Z">09/12/2025 16:17</time></div></li>
+<li><a href="artigos/seguranca/a-protecao-das-chamadas-como-a-tecnologia-pode-salvar-nossas-familias-de-fraudes.html">A proteção das chamadas: como a tecnologia pode salvar nossas famílias de fraudes</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-09T18:51:11.479Z">09/12/2025 15:51</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-dos-agentes-como-a-arquitetura-de-software-pode-moldar-o-futuro-da-ia.html">A era dos agentes: como a arquitetura de software pode moldar o futuro da IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-09T17:33:10.519Z">09/12/2025 14:33</time></div></li>
+<li><a href="artigos/tecnologia/como-dar-um-up-na-performance-do-seu-pc-com-windows-11-dicas-praticas-e-eficazes.html">Como dar um "up" na performance do seu PC com Windows 11: dicas práticas e eficazes</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-09T16:29:07.300Z">09/12/2025 13:29</time></div></li>
+<li><a href="artigos/tecnologia/a-protecao-do-seu-smartphone-como-evitar-surpresas-em-viagens.html">A proteção do seu smartphone: como evitar surpresas em viagens</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-09T15:25:51.907Z">09/12/2025 12:25</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-silenciosa-da-ia-como-linus-torvalds-ve-o-futuro-do-codigo.html">A revolução silenciosa da IA: como Linus Torvalds vê o futuro do código</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-09T14:24:03.726Z">09/12/2025 11:24</time></div></li>
+<li><a href="artigos/tecnologia/reparos-digitais-como-bots-estao-mudando-a-forma-de-consertar-nossos-dispositivos.html">Reparos Digitais: Como Bots Estão Mudando a Forma de Consertar Nossos Dispositivos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-09T13:37:59.365Z">09/12/2025 10:37</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-das-ias-o-dilema-entre-inovacao-e-direitos-autorais.html">A era das IAs: o dilema entre inovação e direitos autorais</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-09T12:48:50.547Z">09/12/2025 09:48</time></div></li>
+<li><a href="artigos/tecnologia/transformando-ofertas-em-oportunidades-como-escolher-o-smartphone-certo-na-era-das-promocoes.html">Transformando Ofertas em Oportunidades: Como Escolher o Smartphone Certo na Era das Promoções</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-09T11:21:21.533Z">09/12/2025 08:21</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

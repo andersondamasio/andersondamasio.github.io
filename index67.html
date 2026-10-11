@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 67</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/programacao/a-nova-era-do-c-reflexao-seguranca-e-conectividade.html">A nova era do C++: Reflexão, Segurança e Conectividade</a><time datetime="2026-04-17T15:01:01.975Z">17/04/2026 12:01</time></li>
-<li><a href="artigos/seguranca/a-importancia-da-arquitetura-resiliente-em-tempos-de-ddos.html">A importância da Arquitetura Resiliente em Tempos de DDoS</a><time datetime="2026-04-17T13:24:23.374Z">17/04/2026 10:24</time></li>
-<li><a href="artigos/inteligencia-artificial/como-o-app-gemini-para-mac-pode-revolucionar-seu-fluxo-de-trabalho.html">Como o App Gemini para Mac Pode Revolucionar Seu Fluxo de Trabalho</a><time datetime="2026-04-17T11:58:48.679Z">17/04/2026 08:58</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-revisao-de-codigo-como-a-ia-pode-transformar-o-desenvolvimento-de-software.html">A revolução da revisão de código: como a IA pode transformar o desenvolvimento de software</a><time datetime="2026-04-17T11:00:58.671Z">17/04/2026 08:00</time></li>
-<li><a href="artigos/tecnologia/a-era-das-tvs-de-50-polegadas-como-escolher-a-melhor-para-seu-lar.html">A era das TVs de 50 polegadas: como escolher a melhor para seu lar</a><time datetime="2026-04-17T09:21:27.309Z">17/04/2026 06:21</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-governanca-de-agentes-como-a-aws-pode-transformar-sua-arquitetura.html">A nova era da governança de agentes: como a AWS pode transformar sua arquitetura</a><time datetime="2026-04-17T07:51:13.142Z">17/04/2026 04:51</time></li>
-<li><a href="artigos/inteligencia-artificial/sequoia-capital-um-salto-gigante-no-mundo-da-inteligencia-artificial.html">Sequoia Capital: Um Salto Gigante no Mundo da Inteligência Artificial</a><time datetime="2026-04-17T05:33:05.010Z">17/04/2026 02:33</time></li>
-<li><a href="artigos/tecnologia/a-nova-briga-dos-alto-falantes-denon-desafia-a-lideranca-da-sonos.html">A nova briga dos alto-falantes: Denon desafia a liderança da Sonos</a><time datetime="2026-04-17T02:38:06.769Z">16/04/2026 23:38</time></li>
-<li><a href="artigos/inteligencia-artificial/o-futuro-do-trabalho-a-era-dos-gemeos-digitais-e-seus-impactos.html">O futuro do trabalho: a era dos gêmeos digitais e seus impactos</a><time datetime="2026-04-16T23:46:06.786Z">16/04/2026 20:46</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-producao-audiovisual-como-a-ia-esta-mudando-o-jogo.html">A revolução da produção audiovisual: como a IA está mudando o jogo</a><time datetime="2026-04-16T22:45:10.070Z">16/04/2026 19:45</time></li>
+<li><a href="artigos/programacao/a-nova-era-do-c-reflexao-seguranca-e-conectividade.html">A nova era do C++: Reflexão, Segurança e Conectividade</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-04-17T15:01:01.975Z">17/04/2026 12:01</time></div></li>
+<li><a href="artigos/seguranca/a-importancia-da-arquitetura-resiliente-em-tempos-de-ddos.html">A importância da Arquitetura Resiliente em Tempos de DDoS</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-17T13:24:23.374Z">17/04/2026 10:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-o-app-gemini-para-mac-pode-revolucionar-seu-fluxo-de-trabalho.html">Como o App Gemini para Mac Pode Revolucionar Seu Fluxo de Trabalho</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-17T11:58:48.679Z">17/04/2026 08:58</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-revisao-de-codigo-como-a-ia-pode-transformar-o-desenvolvimento-de-software.html">A revolução da revisão de código: como a IA pode transformar o desenvolvimento de software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-17T11:00:58.671Z">17/04/2026 08:00</time></div></li>
+<li><a href="artigos/tecnologia/a-era-das-tvs-de-50-polegadas-como-escolher-a-melhor-para-seu-lar.html">A era das TVs de 50 polegadas: como escolher a melhor para seu lar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-17T09:21:27.309Z">17/04/2026 06:21</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-governanca-de-agentes-como-a-aws-pode-transformar-sua-arquitetura.html">A nova era da governança de agentes: como a AWS pode transformar sua arquitetura</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-17T07:51:13.142Z">17/04/2026 04:51</time></div></li>
+<li><a href="artigos/inteligencia-artificial/sequoia-capital-um-salto-gigante-no-mundo-da-inteligencia-artificial.html">Sequoia Capital: Um Salto Gigante no Mundo da Inteligência Artificial</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-17T05:33:05.010Z">17/04/2026 02:33</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-briga-dos-alto-falantes-denon-desafia-a-lideranca-da-sonos.html">A nova briga dos alto-falantes: Denon desafia a liderança da Sonos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-17T02:38:06.769Z">16/04/2026 23:38</time></div></li>
+<li><a href="artigos/inteligencia-artificial/o-futuro-do-trabalho-a-era-dos-gemeos-digitais-e-seus-impactos.html">O futuro do trabalho: a era dos gêmeos digitais e seus impactos</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-16T23:46:06.786Z">16/04/2026 20:46</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-producao-audiovisual-como-a-ia-esta-mudando-o-jogo.html">A revolução da produção audiovisual: como a IA está mudando o jogo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-16T22:45:10.070Z">16/04/2026 19:45</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

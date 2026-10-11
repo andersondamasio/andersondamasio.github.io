@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 396</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/seguranca/camadas-de-seguranca-o-caminho-para-enfrentar-ameacas-ciberneticas-com-ia.html">Camadas de Segurança: O Caminho para Enfrentar Ameaças Cibernéticas com IA</a><time datetime="2025-10-31T23:20:56.087Z">31/10/2025 20:20</time></li>
-<li><a href="artigos/seguranca/explorando-vunerabilidades-o-que-podemos-aprender-com-os-recentes-ataques.html">Explorando Vunerabilidades: O Que Podemos Aprender com os Recentes Ataques?</a><time datetime="2025-10-31T22:21:19.379Z">31/10/2025 19:21</time></li>
-<li><a href="artigos/tecnologia/melhores-ofertas-de-celulares-na-black-friday-o-que-a-arquitetura-de-software-pode-nos-ensinar.html">Melhores Ofertas de Celulares na Black Friday: O Que a Arquitetura de Software Pode nos Ensinar</a><time datetime="2025-10-31T21:18:40.307Z">31/10/2025 18:18</time></li>
-<li><a href="artigos/tecnologia/bluesky-atinge-40-milhoes-de-usuarios-e-testa-deslikes-o-que-isso-significa-para-a-personalizacao.html">Bluesky atinge 40 milhões de usuários e testa "deslikes": O que isso significa para a personalização?</a><time datetime="2025-10-31T20:23:49.446Z">31/10/2025 17:23</time></li>
-<li><a href="artigos/inteligencia-artificial/a-bolha-da-ia-o-que-a-arquitetura-de-software-pode-aprender-com-as-aquisicoes-frustradas.html">A bolha da IA: o que a arquitetura de software pode aprender com as aquisições frustradas</a><time datetime="2025-10-31T19:15:49.372Z">31/10/2025 16:15</time></li>
-<li><a href="artigos/tecnologia/como-revitalizar-seu-roku-tv-dicas-praticas-para-um-desempenho-rapido.html">Como Revitalizar Seu Roku TV: Dicas Práticas Para um Desempenho Rápido</a><time datetime="2025-10-31T18:29:35.910Z">31/10/2025 15:29</time></li>
-<li><a href="artigos/cloud/a-ascensao-da-aws-oportunidades-e-desafios-na-era-da-ia.html">A ascensão da AWS: Oportunidades e desafios na era da IA</a><time datetime="2025-10-31T17:19:32.195Z">31/10/2025 14:19</time></li>
-<li><a href="artigos/tecnologia/a-verdadeira-magia-do-google-pixel-watch-7-funcionalidades-que-voce-nao-pode-ignorar.html">A verdadeira magia do Google Pixel Watch: 7 funcionalidades que você não pode ignorar</a><time datetime="2025-10-31T16:27:15.670Z">31/10/2025 13:27</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-ai-o-que-a-apple-pode-nos-ensinar-sobre-aquisicoes-e-inovacao.html">A revolução da AI: O que a Apple pode nos ensinar sobre aquisições e inovação</a><time datetime="2025-10-31T15:20:22.862Z">31/10/2025 12:20</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-modelagem-3d-como-a-ai-esta-transformando-o-design.html">A revolução da modelagem 3D: como a AI está transformando o design</a><time datetime="2025-10-31T14:20:43.224Z">31/10/2025 11:20</time></li>
+<li><a href="artigos/seguranca/camadas-de-seguranca-o-caminho-para-enfrentar-ameacas-ciberneticas-com-ia.html">Camadas de Segurança: O Caminho para Enfrentar Ameaças Cibernéticas com IA</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-10-31T23:20:56.087Z">31/10/2025 20:20</time></div></li>
+<li><a href="artigos/seguranca/explorando-vunerabilidades-o-que-podemos-aprender-com-os-recentes-ataques.html">Explorando Vunerabilidades: O Que Podemos Aprender com os Recentes Ataques?</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-10-31T22:21:19.379Z">31/10/2025 19:21</time></div></li>
+<li><a href="artigos/tecnologia/melhores-ofertas-de-celulares-na-black-friday-o-que-a-arquitetura-de-software-pode-nos-ensinar.html">Melhores Ofertas de Celulares na Black Friday: O Que a Arquitetura de Software Pode nos Ensinar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-31T21:18:40.307Z">31/10/2025 18:18</time></div></li>
+<li><a href="artigos/tecnologia/bluesky-atinge-40-milhoes-de-usuarios-e-testa-deslikes-o-que-isso-significa-para-a-personalizacao.html">Bluesky atinge 40 milhões de usuários e testa "deslikes": O que isso significa para a personalização?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-31T20:23:49.446Z">31/10/2025 17:23</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-bolha-da-ia-o-que-a-arquitetura-de-software-pode-aprender-com-as-aquisicoes-frustradas.html">A bolha da IA: o que a arquitetura de software pode aprender com as aquisições frustradas</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-31T19:15:49.372Z">31/10/2025 16:15</time></div></li>
+<li><a href="artigos/tecnologia/como-revitalizar-seu-roku-tv-dicas-praticas-para-um-desempenho-rapido.html">Como Revitalizar Seu Roku TV: Dicas Práticas Para um Desempenho Rápido</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-31T18:29:35.910Z">31/10/2025 15:29</time></div></li>
+<li><a href="artigos/cloud/a-ascensao-da-aws-oportunidades-e-desafios-na-era-da-ia.html">A ascensão da AWS: Oportunidades e desafios na era da IA</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-10-31T17:19:32.195Z">31/10/2025 14:19</time></div></li>
+<li><a href="artigos/tecnologia/a-verdadeira-magia-do-google-pixel-watch-7-funcionalidades-que-voce-nao-pode-ignorar.html">A verdadeira magia do Google Pixel Watch: 7 funcionalidades que você não pode ignorar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-31T16:27:15.670Z">31/10/2025 13:27</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-ai-o-que-a-apple-pode-nos-ensinar-sobre-aquisicoes-e-inovacao.html">A revolução da AI: O que a Apple pode nos ensinar sobre aquisições e inovação</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-31T15:20:22.862Z">31/10/2025 12:20</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-modelagem-3d-como-a-ai-esta-transformando-o-design.html">A revolução da modelagem 3D: como a AI está transformando o design</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-31T14:20:43.224Z">31/10/2025 11:20</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

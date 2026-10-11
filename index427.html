@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 427</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-nova-cara-da-dell-o-que-o-dell-14-premium-traz-para-o-mundo-do-desenvolvimento.html">A nova cara da Dell: O que o Dell 14 Premium traz para o mundo do desenvolvimento</a><time datetime="2025-10-17T18:25:39.222Z">17/10/2025 15:25</time></li>
-<li><a href="artigos/inteligencia-artificial/desvendando-a-ilusao-o-que-a-falta-de-suporte-da-openai-revela-sobre-a-ia.html">Desvendando a Ilusão: O Que A Falta de Suporte da OpenAI Revela Sobre a IA</a><time datetime="2025-10-17T17:24:43.301Z">17/10/2025 14:24</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-economia-das-tarefas-digitais-como-motoristas-da-uber-estao-treinando-ia.html">A nova economia das tarefas digitais: como motoristas da Uber estão treinando IA</a><time datetime="2025-10-17T16:25:38.554Z">17/10/2025 13:25</time></li>
-<li><a href="artigos/tecnologia/aumentos-na-conta-de-internet-como-a-arquitetura-de-software-pode-ajudar-a-entender.html">Aumentos na conta de internet: como a Arquitetura de Software pode ajudar a entender</a><time datetime="2025-10-17T15:21:56.098Z">17/10/2025 12:21</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-do-whatsapp-como-a-arquitetura-de-software-pode-combater-o-spam.html">A nova era do WhatsApp: como a arquitetura de software pode combater o spam</a><time datetime="2025-10-17T14:20:10.983Z">17/10/2025 11:20</time></li>
-<li><a href="artigos/inteligencia-artificial/a-batalha-entre-humanos-e-maquinas-quem-realmente-escreve-na-internet.html">A batalha entre humanos e máquinas: quem realmente escreve na internet?</a><time datetime="2025-10-17T13:29:15.021Z">17/10/2025 10:29</time></li>
-<li><a href="artigos/tecnologia/novas-fronteiras-da-moda-como-a-vlge-esta-transformando-o-comercio-virtual.html">Novas Fronteiras da Moda: Como a VLGE Está Transformando o Comércio Virtual</a><time datetime="2025-10-17T12:41:21.865Z">17/10/2025 09:41</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-criatividade-digital-sora-e-os-desafios-da-autenticidade.html">A nova era da criatividade digital: Sora e os desafios da autenticidade</a><time datetime="2025-10-17T11:18:01.108Z">17/10/2025 08:18</time></li>
-<li><a href="artigos/tecnologia/sony-bravia-8-ii-a-revolucao-do-cinema-em-casa-com-tecnologia-de-ponta.html">Sony Bravia 8 II: A Revolução do Cinema em Casa com Tecnologia de Ponta</a><time datetime="2025-10-17T10:24:24.517Z">17/10/2025 07:24</time></li>
-<li><a href="artigos/desenvolvimento-de-software/organizacoes-fluidas-o-futuro-das-equipes-componiveis-no-desenvolvimento-de-software.html">Organizações Fluidas: O Futuro das Equipes Componíveis no Desenvolvimento de Software</a><time datetime="2025-10-17T09:22:48.675Z">17/10/2025 06:22</time></li>
+<li><a href="artigos/tecnologia/a-nova-cara-da-dell-o-que-o-dell-14-premium-traz-para-o-mundo-do-desenvolvimento.html">A nova cara da Dell: O que o Dell 14 Premium traz para o mundo do desenvolvimento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-17T18:25:39.222Z">17/10/2025 15:25</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desvendando-a-ilusao-o-que-a-falta-de-suporte-da-openai-revela-sobre-a-ia.html">Desvendando a Ilusão: O Que A Falta de Suporte da OpenAI Revela Sobre a IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-17T17:24:43.301Z">17/10/2025 14:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-economia-das-tarefas-digitais-como-motoristas-da-uber-estao-treinando-ia.html">A nova economia das tarefas digitais: como motoristas da Uber estão treinando IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-17T16:25:38.554Z">17/10/2025 13:25</time></div></li>
+<li><a href="artigos/tecnologia/aumentos-na-conta-de-internet-como-a-arquitetura-de-software-pode-ajudar-a-entender.html">Aumentos na conta de internet: como a Arquitetura de Software pode ajudar a entender</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-17T15:21:56.098Z">17/10/2025 12:21</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-do-whatsapp-como-a-arquitetura-de-software-pode-combater-o-spam.html">A nova era do WhatsApp: como a arquitetura de software pode combater o spam</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-17T14:20:10.983Z">17/10/2025 11:20</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-batalha-entre-humanos-e-maquinas-quem-realmente-escreve-na-internet.html">A batalha entre humanos e máquinas: quem realmente escreve na internet?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-17T13:29:15.021Z">17/10/2025 10:29</time></div></li>
+<li><a href="artigos/tecnologia/novas-fronteiras-da-moda-como-a-vlge-esta-transformando-o-comercio-virtual.html">Novas Fronteiras da Moda: Como a VLGE Está Transformando o Comércio Virtual</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-17T12:41:21.865Z">17/10/2025 09:41</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-criatividade-digital-sora-e-os-desafios-da-autenticidade.html">A nova era da criatividade digital: Sora e os desafios da autenticidade</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-17T11:18:01.108Z">17/10/2025 08:18</time></div></li>
+<li><a href="artigos/tecnologia/sony-bravia-8-ii-a-revolucao-do-cinema-em-casa-com-tecnologia-de-ponta.html">Sony Bravia 8 II: A Revolução do Cinema em Casa com Tecnologia de Ponta</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-17T10:24:24.517Z">17/10/2025 07:24</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/organizacoes-fluidas-o-futuro-das-equipes-componiveis-no-desenvolvimento-de-software.html">Organizações Fluidas: O Futuro das Equipes Componíveis no Desenvolvimento de Software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-10-17T09:22:48.675Z">17/10/2025 06:22</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

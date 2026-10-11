@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 277</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/como-revitalizar-sua-smart-tv-usando-o-usb-dicas-praticas-e-eficazes.html">Como Revitalizar sua Smart TV Usando o USB: Dicas Práticas e Eficazes</a><time datetime="2025-12-25T20:25:52.818Z">25/12/2025 17:25</time></li>
-<li><a href="artigos/tecnologia/aquecendo-o-futuro-a-revolucao-dos-aquecedores-inteligentes.html">Aquecendo o Futuro: A Revolução dos Aquecedores Inteligentes</a><time datetime="2025-12-25T19:18:31.823Z">25/12/2025 16:18</time></li>
-<li><a href="artigos/seguranca/desvendando-a-historia-do-virus-malaga-como-um-malware-mudou-o-cenario-tecnologico-da-espanha.html">Desvendando a História do Vírus Málaga: Como um Malware Mudou o Cenário Tecnológico da Espanha</a><time datetime="2025-12-25T18:31:36.240Z">25/12/2025 15:31</time></li>
-<li><a href="artigos/tecnologia/a-tecnologia-e-a-batalha-contra-as-distracoes-como-se-concentrar-no-mundo-digital.html">A tecnologia e a batalha contra as distrações: como se concentrar no mundo digital</a><time datetime="2025-12-25T17:20:31.378Z">25/12/2025 14:20</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-do-desperdicio-como-a-tecnologia-esta-moldando-o-futuro-do-setor-alimenticio.html">A revolução do desperdício: como a tecnologia está moldando o futuro do setor alimentício</a><time datetime="2025-12-25T16:28:21.004Z">25/12/2025 13:28</time></li>
-<li><a href="artigos/inteligencia-artificial/desvendando-a-complexidade-como-a-arquitetura-de-software-pode-prevenir-a-amnesia-arquitetural-na-era-da-ia.html">Desvendando a Complexidade: Como a Arquitetura de Software Pode Prevenir a Amnésia Arquitetural na Era da IA</a><time datetime="2025-12-25T15:22:45.669Z">25/12/2025 12:22</time></li>
-<li><a href="artigos/desenvolvimento-de-software/o-lado-transparente-da-telemetria-no-ubuntu-beneficios-e-desafios.html">O lado transparente da telemetria no Ubuntu: benefícios e desafios</a><time datetime="2025-12-25T14:21:56.535Z">25/12/2025 11:21</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-tablets-o-que-a-yoga-tab-plus-pode-ensinar-aos-desenvolvedores.html">A revolução dos tablets: o que a Yoga Tab Plus pode ensinar aos desenvolvedores</a><time datetime="2025-12-25T13:34:13.569Z">25/12/2025 10:34</time></li>
-<li><a href="artigos/inteligencia-artificial/conectando-se-com-o-cliente-o-papel-da-ia-na-revolucao-das-experiencias.html">Conectando-se com o Cliente: O Papel da IA na Revolução das Experiências</a><time datetime="2025-12-25T12:43:14.949Z">25/12/2025 09:43</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-da-sonoridade-como-a-creative-stage-pro-pode-transformar-sua-experiencia-na-tv.html">A revolução da sonoridade: como a Creative Stage Pro pode transformar sua experiência na TV</a><time datetime="2025-12-25T11:20:18.054Z">25/12/2025 08:20</time></li>
+<li><a href="artigos/tecnologia/como-revitalizar-sua-smart-tv-usando-o-usb-dicas-praticas-e-eficazes.html">Como Revitalizar sua Smart TV Usando o USB: Dicas Práticas e Eficazes</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-25T20:25:52.818Z">25/12/2025 17:25</time></div></li>
+<li><a href="artigos/tecnologia/aquecendo-o-futuro-a-revolucao-dos-aquecedores-inteligentes.html">Aquecendo o Futuro: A Revolução dos Aquecedores Inteligentes</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-25T19:18:31.823Z">25/12/2025 16:18</time></div></li>
+<li><a href="artigos/seguranca/desvendando-a-historia-do-virus-malaga-como-um-malware-mudou-o-cenario-tecnologico-da-espanha.html">Desvendando a História do Vírus Málaga: Como um Malware Mudou o Cenário Tecnológico da Espanha</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-25T18:31:36.240Z">25/12/2025 15:31</time></div></li>
+<li><a href="artigos/tecnologia/a-tecnologia-e-a-batalha-contra-as-distracoes-como-se-concentrar-no-mundo-digital.html">A tecnologia e a batalha contra as distrações: como se concentrar no mundo digital</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-25T17:20:31.378Z">25/12/2025 14:20</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-do-desperdicio-como-a-tecnologia-esta-moldando-o-futuro-do-setor-alimenticio.html">A revolução do desperdício: como a tecnologia está moldando o futuro do setor alimentício</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-25T16:28:21.004Z">25/12/2025 13:28</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desvendando-a-complexidade-como-a-arquitetura-de-software-pode-prevenir-a-amnesia-arquitetural-na-era-da-ia.html">Desvendando a Complexidade: Como a Arquitetura de Software Pode Prevenir a Amnésia Arquitetural na Era da IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-25T15:22:45.669Z">25/12/2025 12:22</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/o-lado-transparente-da-telemetria-no-ubuntu-beneficios-e-desafios.html">O lado transparente da telemetria no Ubuntu: benefícios e desafios</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-12-25T14:21:56.535Z">25/12/2025 11:21</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-tablets-o-que-a-yoga-tab-plus-pode-ensinar-aos-desenvolvedores.html">A revolução dos tablets: o que a Yoga Tab Plus pode ensinar aos desenvolvedores</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-25T13:34:13.569Z">25/12/2025 10:34</time></div></li>
+<li><a href="artigos/inteligencia-artificial/conectando-se-com-o-cliente-o-papel-da-ia-na-revolucao-das-experiencias.html">Conectando-se com o Cliente: O Papel da IA na Revolução das Experiências</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-25T12:43:14.949Z">25/12/2025 09:43</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-da-sonoridade-como-a-creative-stage-pro-pode-transformar-sua-experiencia-na-tv.html">A revolução da sonoridade: como a Creative Stage Pro pode transformar sua experiência na TV</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-25T11:20:18.054Z">25/12/2025 08:20</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

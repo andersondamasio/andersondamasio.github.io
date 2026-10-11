@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 384</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/transformando-mini-pcs-em-potencias-linux-a-revolucao-do-desktop-compacto.html">Transformando Mini PCs em Potências Linux: A Revolução do Desktop Compacto</a><time datetime="2025-11-06T15:25:38.523Z">06/11/2025 12:25</time></li>
-<li><a href="artigos/seguranca/malware-em-evolucao-como-a-arquitetura-de-software-pode-enfrentar-a-nova-era-das-ameacas.html">Malware em Evolução: Como a Arquitetura de Software Pode Enfrentar A Nova Era das Ameaças</a><time datetime="2025-11-06T14:23:16.848Z">06/11/2025 11:23</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-onda-dos-modelos-de-difusao-o-futuro-do-codigo-e-do-texto.html">A nova onda dos modelos de difusão: o futuro do código e do texto</a><time datetime="2025-11-06T13:36:13.200Z">06/11/2025 10:36</time></li>
-<li><a href="artigos/tecnologia/a-nova-onda-do-e-commerce-como-o-walmart-pode-revolucionar-suas-compras.html">A nova onda do e-commerce: como o Walmart+ pode revolucionar suas compras</a><time datetime="2025-11-06T12:41:12.498Z">06/11/2025 09:41</time></li>
-<li><a href="artigos/inteligencia-artificial/desmistificando-o-jogo-a-inteligencia-artificial-e-o-risco-financeiro.html">Desmistificando o Jogo: A Inteligência Artificial e o Risco Financeiro</a><time datetime="2025-11-06T11:19:14.609Z">06/11/2025 08:19</time></li>
-<li><a href="artigos/tecnologia/como-aproveitar-as-ofertas-de-black-friday-para-comprar-seu-novo-laptop.html">Como Aproveitar as Ofertas de Black Friday para Comprar seu Novo Laptop</a><time datetime="2025-11-06T10:23:21.275Z">06/11/2025 07:23</time></li>
-<li><a href="artigos/tecnologia/a-tecnologia-que-protege-seu-smartphone-como-uma-armadura.html">A tecnologia que protege seu smartphone como uma armadura</a><time datetime="2025-11-06T09:22:27.390Z">06/11/2025 06:22</time></li>
-<li><a href="artigos/tecnologia/a-combinacao-perfeita-como-a-tecnologia-pode-revolucionar-o-design-de-acessorios.html">A combinação perfeita: como a tecnologia pode revolucionar o design de acessórios</a><time datetime="2025-11-06T08:29:30.677Z">06/11/2025 05:29</time></li>
-<li><a href="artigos/tecnologia/acelere-seu-android-dicas-praticas-para-revitalizar-seu-smartphone.html">Acelere seu Android: Dicas Práticas para Revitalizar Seu Smartphone</a><time datetime="2025-11-06T07:20:24.355Z">06/11/2025 04:20</time></li>
-<li><a href="artigos/tecnologia/maximize-a-bateria-do-seu-galaxy-7-hacks-que-voce-precisa-conhecer.html">Maximize a Bateria do Seu Galaxy: 7 Hacks que Você Precisa Conhecer</a><time datetime="2025-11-06T06:32:49.630Z">06/11/2025 03:32</time></li>
+<li><a href="artigos/tecnologia/transformando-mini-pcs-em-potencias-linux-a-revolucao-do-desktop-compacto.html">Transformando Mini PCs em Potências Linux: A Revolução do Desktop Compacto</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-06T15:25:38.523Z">06/11/2025 12:25</time></div></li>
+<li><a href="artigos/seguranca/malware-em-evolucao-como-a-arquitetura-de-software-pode-enfrentar-a-nova-era-das-ameacas.html">Malware em Evolução: Como a Arquitetura de Software Pode Enfrentar A Nova Era das Ameaças</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-06T14:23:16.848Z">06/11/2025 11:23</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-onda-dos-modelos-de-difusao-o-futuro-do-codigo-e-do-texto.html">A nova onda dos modelos de difusão: o futuro do código e do texto</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-06T13:36:13.200Z">06/11/2025 10:36</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-onda-do-e-commerce-como-o-walmart-pode-revolucionar-suas-compras.html">A nova onda do e-commerce: como o Walmart+ pode revolucionar suas compras</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-06T12:41:12.498Z">06/11/2025 09:41</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desmistificando-o-jogo-a-inteligencia-artificial-e-o-risco-financeiro.html">Desmistificando o Jogo: A Inteligência Artificial e o Risco Financeiro</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-06T11:19:14.609Z">06/11/2025 08:19</time></div></li>
+<li><a href="artigos/tecnologia/como-aproveitar-as-ofertas-de-black-friday-para-comprar-seu-novo-laptop.html">Como Aproveitar as Ofertas de Black Friday para Comprar seu Novo Laptop</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-06T10:23:21.275Z">06/11/2025 07:23</time></div></li>
+<li><a href="artigos/tecnologia/a-tecnologia-que-protege-seu-smartphone-como-uma-armadura.html">A tecnologia que protege seu smartphone como uma armadura</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-06T09:22:27.390Z">06/11/2025 06:22</time></div></li>
+<li><a href="artigos/tecnologia/a-combinacao-perfeita-como-a-tecnologia-pode-revolucionar-o-design-de-acessorios.html">A combinação perfeita: como a tecnologia pode revolucionar o design de acessórios</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-06T08:29:30.677Z">06/11/2025 05:29</time></div></li>
+<li><a href="artigos/tecnologia/acelere-seu-android-dicas-praticas-para-revitalizar-seu-smartphone.html">Acelere seu Android: Dicas Práticas para Revitalizar Seu Smartphone</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-06T07:20:24.355Z">06/11/2025 04:20</time></div></li>
+<li><a href="artigos/tecnologia/maximize-a-bateria-do-seu-galaxy-7-hacks-que-voce-precisa-conhecer.html">Maximize a Bateria do Seu Galaxy: 7 Hacks que Você Precisa Conhecer</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-06T06:32:49.630Z">06/11/2025 03:32</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 291</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/descomplicando-o-investimento-em-bombas-de-calor-por-que-2026-pode-ser-o-ano-da-mudanca.html">Descomplicando o Investimento em Bombas de Calor: Por Que 2026 Pode Ser o Ano da Mudança</a><time datetime="2025-12-19T11:20:41.571Z">19/12/2025 08:20</time></li>
-<li><a href="artigos/inteligencia-artificial/desenvolvendo-saude-digital-licoes-da-implementacao-de-ai-em-produtos-de-saude.html">Desenvolvendo Saúde Digital: Lições da Implementação de AI em Produtos de Saúde</a><time datetime="2025-12-19T10:24:49.080Z">19/12/2025 07:24</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-arquitetura-de-software-entre-humanos-e-maquinas.html">A nova era da Arquitetura de Software: entre humanos e máquinas</a><time datetime="2025-12-19T09:26:17.976Z">19/12/2025 06:26</time></li>
-<li><a href="artigos/fintech/um-novo-horizonte-para-pagamentos-a-flexibilidade-dos-limites-nos-cartoes-de-contato.html">Um novo horizonte para pagamentos: A flexibilidade dos limites nos cartões de contato</a><time datetime="2025-12-19T08:31:30.048Z">19/12/2025 05:31</time></li>
-<li><a href="artigos/tecnologia/comparando-as-estrelas-do-streaming-roku-e-fire-stick-em-2025.html">Comparando as Estrelas do Streaming: Roku e Fire Stick em 2025</a><time datetime="2025-12-19T07:23:59.001Z">19/12/2025 04:23</time></li>
-<li><a href="artigos/tecnologia/aprimorando-sua-roku-tv-dicas-para-performance-imbativel.html">Aprimorando sua Roku TV: Dicas para Performance Imbatível</a><time datetime="2025-12-19T06:34:06.767Z">19/12/2025 03:34</time></li>
-<li><a href="artigos/tecnologia/como-a-arquitetura-de-software-pode-impedir-crises-de-aplicativos.html">Como a Arquitetura de Software Pode Impedir Crises de Aplicativos</a><time datetime="2025-12-19T05:23:30.796Z">19/12/2025 02:23</time></li>
-<li><a href="artigos/inteligencia-artificial/desvendando-os-melhores-geradores-de-imagens-com-ia-uma-analise-da-evolucao-em-2025.html">Desvendando os Melhores Geradores de Imagens com IA: Uma Análise da Evolução em 2025</a><time datetime="2025-12-19T04:36:03.108Z">19/12/2025 01:36</time></li>
-<li><a href="artigos/inteligencia-artificial/inteligencia-artificial-em-2025-o-que-vale-a-pena-investir.html">Inteligência Artificial em 2025: O Que Vale a Pena Investir?</a><time datetime="2025-12-19T03:26:09.192Z">19/12/2025 00:26</time></li>
-<li><a href="artigos/tecnologia/transformando-sua-casa-em-um-lar-inteligente-os-comandos-que-fazem-a-diferenca.html">Transformando sua casa em um lar inteligente: os comandos que fazem a diferença</a><time datetime="2025-12-19T01:42:28.134Z">18/12/2025 22:42</time></li>
+<li><a href="artigos/tecnologia/descomplicando-o-investimento-em-bombas-de-calor-por-que-2026-pode-ser-o-ano-da-mudanca.html">Descomplicando o Investimento em Bombas de Calor: Por Que 2026 Pode Ser o Ano da Mudança</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-19T11:20:41.571Z">19/12/2025 08:20</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desenvolvendo-saude-digital-licoes-da-implementacao-de-ai-em-produtos-de-saude.html">Desenvolvendo Saúde Digital: Lições da Implementação de AI em Produtos de Saúde</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-19T10:24:49.080Z">19/12/2025 07:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-arquitetura-de-software-entre-humanos-e-maquinas.html">A nova era da Arquitetura de Software: entre humanos e máquinas</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-19T09:26:17.976Z">19/12/2025 06:26</time></div></li>
+<li><a href="artigos/fintech/um-novo-horizonte-para-pagamentos-a-flexibilidade-dos-limites-nos-cartoes-de-contato.html">Um novo horizonte para pagamentos: A flexibilidade dos limites nos cartões de contato</a><div class="article-list-meta"><span>Fintech</span><time datetime="2025-12-19T08:31:30.048Z">19/12/2025 05:31</time></div></li>
+<li><a href="artigos/tecnologia/comparando-as-estrelas-do-streaming-roku-e-fire-stick-em-2025.html">Comparando as Estrelas do Streaming: Roku e Fire Stick em 2025</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-19T07:23:59.001Z">19/12/2025 04:23</time></div></li>
+<li><a href="artigos/tecnologia/aprimorando-sua-roku-tv-dicas-para-performance-imbativel.html">Aprimorando sua Roku TV: Dicas para Performance Imbatível</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-19T06:34:06.767Z">19/12/2025 03:34</time></div></li>
+<li><a href="artigos/tecnologia/como-a-arquitetura-de-software-pode-impedir-crises-de-aplicativos.html">Como a Arquitetura de Software Pode Impedir Crises de Aplicativos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-19T05:23:30.796Z">19/12/2025 02:23</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desvendando-os-melhores-geradores-de-imagens-com-ia-uma-analise-da-evolucao-em-2025.html">Desvendando os Melhores Geradores de Imagens com IA: Uma Análise da Evolução em 2025</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-19T04:36:03.108Z">19/12/2025 01:36</time></div></li>
+<li><a href="artigos/inteligencia-artificial/inteligencia-artificial-em-2025-o-que-vale-a-pena-investir.html">Inteligência Artificial em 2025: O Que Vale a Pena Investir?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-19T03:26:09.192Z">19/12/2025 00:26</time></div></li>
+<li><a href="artigos/tecnologia/transformando-sua-casa-em-um-lar-inteligente-os-comandos-que-fazem-a-diferenca.html">Transformando sua casa em um lar inteligente: os comandos que fazem a diferença</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-19T01:42:28.134Z">18/12/2025 22:42</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

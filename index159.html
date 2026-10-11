@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 159</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/indus-ai-a-nova-fronteira-das-conversas-em-inteligencia-artificial-na-india.html">Indus AI: A Nova Fronteira das Conversas em Inteligência Artificial na Índia</a><time datetime="2026-02-21T06:45:34.073Z">21/02/2026 03:45</time></li>
-<li><a href="artigos/seguranca/como-a-privacidade-pode-causar-desconforto-reflexoes-sobre-a-tela-do-s25-ultra.html">Como a Privacidade Pode Causar Desconforto: Reflexões sobre a Tela do S25 Ultra</a><time datetime="2026-02-21T05:45:43.869Z">21/02/2026 02:45</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-agentes-de-ia-o-que-a-arquitetura-de-software-pode-aprender.html">A Revolução dos Agentes de IA: O que a Arquitetura de Software Pode Aprender</a><time datetime="2026-02-21T04:13:16.953Z">21/02/2026 01:13</time></li>
-<li><a href="artigos/tecnologia/mini-pcs-a-revolucao-compacta-que-pode-salvar-seu-bolso.html">Mini PCs: A Revolução Compacta que Pode Salvar Seu Bolso</a><time datetime="2026-02-21T02:01:27.728Z">20/02/2026 23:01</time></li>
-<li><a href="artigos/tecnologia/o-futuro-da-economia-criativa-alem-dos-anuncios-e-o-papel-da-tecnologia.html">O futuro da economia criativa: além dos anuncios e o papel da tecnologia</a><time datetime="2026-02-20T23:31:58.490Z">20/02/2026 20:31</time></li>
-<li><a href="artigos/tecnologia/conectando-seu-android-ao-linux-controle-total-na-palma-da-mao.html">Conectando seu Android ao Linux: Controle Total na Palma da Mão</a><time datetime="2026-02-20T22:30:02.139Z">20/02/2026 19:30</time></li>
-<li><a href="artigos/tecnologia/a-nova-batalha-dos-smartphones-pixel-10a-ou-pixel-10.html">A nova batalha dos smartphones: Pixel 10a ou Pixel 10?</a><time datetime="2026-02-20T21:28:40.650Z">20/02/2026 18:28</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-na-contabilidade-como-a-tecnologia-pode-simplificar-a-preparacao-de-relatorios-financeiros.html">A revolução na contabilidade: como a tecnologia pode simplificar a preparação de relatórios financeiros</a><time datetime="2026-02-20T19:40:08.698Z">20/02/2026 16:40</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-do-verificador-de-informacoes-como-a-google-esta-mudando-o-jogo.html">A nova era do verificador de informações: Como a Google está mudando o jogo</a><time datetime="2026-02-20T18:51:28.262Z">20/02/2026 15:51</time></li>
-<li><a href="artigos/seguranca/a-nova-era-dos-crimes-ciberneticos-como-a-tecnologia-se-torna-aliada-de-regimes-autoritarios.html">A nova era dos crimes cibernéticos: como a tecnologia se torna aliada de regimes autoritários</a><time datetime="2026-02-20T17:41:20.319Z">20/02/2026 14:41</time></li>
+<li><a href="artigos/inteligencia-artificial/indus-ai-a-nova-fronteira-das-conversas-em-inteligencia-artificial-na-india.html">Indus AI: A Nova Fronteira das Conversas em Inteligência Artificial na Índia</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-21T06:45:34.073Z">21/02/2026 03:45</time></div></li>
+<li><a href="artigos/seguranca/como-a-privacidade-pode-causar-desconforto-reflexoes-sobre-a-tela-do-s25-ultra.html">Como a Privacidade Pode Causar Desconforto: Reflexões sobre a Tela do S25 Ultra</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-21T05:45:43.869Z">21/02/2026 02:45</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-agentes-de-ia-o-que-a-arquitetura-de-software-pode-aprender.html">A Revolução dos Agentes de IA: O que a Arquitetura de Software Pode Aprender</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-21T04:13:16.953Z">21/02/2026 01:13</time></div></li>
+<li><a href="artigos/tecnologia/mini-pcs-a-revolucao-compacta-que-pode-salvar-seu-bolso.html">Mini PCs: A Revolução Compacta que Pode Salvar Seu Bolso</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-21T02:01:27.728Z">20/02/2026 23:01</time></div></li>
+<li><a href="artigos/tecnologia/o-futuro-da-economia-criativa-alem-dos-anuncios-e-o-papel-da-tecnologia.html">O futuro da economia criativa: além dos anuncios e o papel da tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-20T23:31:58.490Z">20/02/2026 20:31</time></div></li>
+<li><a href="artigos/tecnologia/conectando-seu-android-ao-linux-controle-total-na-palma-da-mao.html">Conectando seu Android ao Linux: Controle Total na Palma da Mão</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-20T22:30:02.139Z">20/02/2026 19:30</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-batalha-dos-smartphones-pixel-10a-ou-pixel-10.html">A nova batalha dos smartphones: Pixel 10a ou Pixel 10?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-20T21:28:40.650Z">20/02/2026 18:28</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-na-contabilidade-como-a-tecnologia-pode-simplificar-a-preparacao-de-relatorios-financeiros.html">A revolução na contabilidade: como a tecnologia pode simplificar a preparação de relatórios financeiros</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-20T19:40:08.698Z">20/02/2026 16:40</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-do-verificador-de-informacoes-como-a-google-esta-mudando-o-jogo.html">A nova era do verificador de informações: Como a Google está mudando o jogo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-20T18:51:28.262Z">20/02/2026 15:51</time></div></li>
+<li><a href="artigos/seguranca/a-nova-era-dos-crimes-ciberneticos-como-a-tecnologia-se-torna-aliada-de-regimes-autoritarios.html">A nova era dos crimes cibernéticos: como a tecnologia se torna aliada de regimes autoritários</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-20T17:41:20.319Z">20/02/2026 14:41</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

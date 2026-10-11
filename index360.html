@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 360</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/aproveitando-a-black-friday-oportunidade-de-ouro-com-macbook-pro-refurbished.html">Aproveitando a Black Friday: Oportunidade de Ouro com MacBook Pro Refurbished</a><time datetime="2025-11-17T18:29:52.665Z">17/11/2025 15:29</time></li>
-<li><a href="artigos/seguranca/a-seguranca-na-era-das-passkeys-sera-que-os-autenticadores-moveis-sao-a-solucao.html">A segurança na era das passkeys: será que os autenticadores móveis são a solução?</a><time datetime="2025-11-17T17:27:55.828Z">17/11/2025 14:27</time></li>
-<li><a href="artigos/tecnologia/um-celular-de-r-180-que-desafia-os-tops-de-linha-vale-a-pena.html">Um celular de R$180 que desafia os tops de linha: vale a pena?</a><time datetime="2025-11-17T16:28:23.533Z">17/11/2025 13:28</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-silenciosa-dos-chiplets-como-a-eficiencia-energetica-pode-transformar-a-tecnologia.html">A revolução silenciosa dos chiplets: como a eficiência energética pode transformar a tecnologia</a><time datetime="2025-11-17T15:23:37.426Z">17/11/2025 12:23</time></li>
-<li><a href="artigos/seguranca/surveillance-em-xeque-o-caso-da-protei-e-as-licoes-para-a-arquitetura-de-software.html">Surveillance em Xeque: O Caso da Protei e as Lições para a Arquitetura de Software</a><time datetime="2025-11-17T13:33:18.690Z">17/11/2025 10:33</time></li>
-<li><a href="artigos/seguranca/como-garantir-sua-privacidade-online-ativando-o-dns-privado-no-android.html">Como garantir sua privacidade online: Ativando o DNS Privado no Android</a><time datetime="2025-11-17T12:41:35.863Z">17/11/2025 09:41</time></li>
-<li><a href="artigos/carreira/como-a-inteligencia-artificial-esta-transformando-o-empreendedorismo-digital.html">Como a Inteligência Artificial Está Transformando o Empreendedorismo Digital</a><time datetime="2025-11-17T11:18:51.963Z">17/11/2025 08:18</time></li>
-<li><a href="artigos/tecnologia/macbook-air-vs-macbook-pro-qual-e-o-seu-match-perfeito.html">MacBook Air vs MacBook Pro: Qual é o seu match perfeito?</a><time datetime="2025-11-17T10:24:11.938Z">17/11/2025 07:24</time></li>
-<li><a href="artigos/inteligencia-artificial/kimi-k2-a-revolucao-dos-modelos-de-linguagem-abertos.html">Kimi K2: A Revolução dos Modelos de Linguagem Abertos</a><time datetime="2025-11-17T09:26:20.948Z">17/11/2025 06:26</time></li>
-<li><a href="artigos/desenvolvimento-de-software/a-revolucao-do-net-10-e-suas-melhorias-no-maui-o-que-voce-precisa-saber.html">A revolução do .NET 10 e suas melhorias no MAUI: o que você precisa saber</a><time datetime="2025-11-17T08:30:18.677Z">17/11/2025 05:30</time></li>
+<li><a href="artigos/tecnologia/aproveitando-a-black-friday-oportunidade-de-ouro-com-macbook-pro-refurbished.html">Aproveitando a Black Friday: Oportunidade de Ouro com MacBook Pro Refurbished</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-17T18:29:52.665Z">17/11/2025 15:29</time></div></li>
+<li><a href="artigos/seguranca/a-seguranca-na-era-das-passkeys-sera-que-os-autenticadores-moveis-sao-a-solucao.html">A segurança na era das passkeys: será que os autenticadores móveis são a solução?</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-17T17:27:55.828Z">17/11/2025 14:27</time></div></li>
+<li><a href="artigos/tecnologia/um-celular-de-r-180-que-desafia-os-tops-de-linha-vale-a-pena.html">Um celular de R$180 que desafia os tops de linha: vale a pena?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-17T16:28:23.533Z">17/11/2025 13:28</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-silenciosa-dos-chiplets-como-a-eficiencia-energetica-pode-transformar-a-tecnologia.html">A revolução silenciosa dos chiplets: como a eficiência energética pode transformar a tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-17T15:23:37.426Z">17/11/2025 12:23</time></div></li>
+<li><a href="artigos/seguranca/surveillance-em-xeque-o-caso-da-protei-e-as-licoes-para-a-arquitetura-de-software.html">Surveillance em Xeque: O Caso da Protei e as Lições para a Arquitetura de Software</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-17T13:33:18.690Z">17/11/2025 10:33</time></div></li>
+<li><a href="artigos/seguranca/como-garantir-sua-privacidade-online-ativando-o-dns-privado-no-android.html">Como garantir sua privacidade online: Ativando o DNS Privado no Android</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-17T12:41:35.863Z">17/11/2025 09:41</time></div></li>
+<li><a href="artigos/carreira/como-a-inteligencia-artificial-esta-transformando-o-empreendedorismo-digital.html">Como a Inteligência Artificial Está Transformando o Empreendedorismo Digital</a><div class="article-list-meta"><span>Carreira</span><time datetime="2025-11-17T11:18:51.963Z">17/11/2025 08:18</time></div></li>
+<li><a href="artigos/tecnologia/macbook-air-vs-macbook-pro-qual-e-o-seu-match-perfeito.html">MacBook Air vs MacBook Pro: Qual é o seu match perfeito?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-17T10:24:11.938Z">17/11/2025 07:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/kimi-k2-a-revolucao-dos-modelos-de-linguagem-abertos.html">Kimi K2: A Revolução dos Modelos de Linguagem Abertos</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-17T09:26:20.948Z">17/11/2025 06:26</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/a-revolucao-do-net-10-e-suas-melhorias-no-maui-o-que-voce-precisa-saber.html">A revolução do .NET 10 e suas melhorias no MAUI: o que você precisa saber</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-11-17T08:30:18.677Z">17/11/2025 05:30</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

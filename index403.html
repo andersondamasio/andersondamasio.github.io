@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 403</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-nova-experiencia-netflix-para-criancas-um-passo-a-frente-na-navegacao-e-usabilidade.html">A nova experiência Netflix para crianças: um passo a frente na navegação e usabilidade</a><time datetime="2025-10-28T19:17:21.815Z">28/10/2025 16:17</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-notebooks-acer-aspire-16-ai-surpreende-com-custo-beneficio.html">A nova era dos notebooks: Acer Aspire 16 AI surpreende com custo-benefício</a><time datetime="2025-10-28T18:30:28.291Z">28/10/2025 15:30</time></li>
-<li><a href="artigos/tecnologia/como-um-glitch-de-teclado-pode-transformar-sua-experiencia-com-o-iphone.html">Como um Glitch de Teclado Pode Transformar sua Experiência com o iPhone</a><time datetime="2025-10-28T17:19:57.414Z">28/10/2025 14:19</time></li>
-<li><a href="artigos/tecnologia/black-friday-2025-como-a-arquitetura-de-software-pode-transformar-suas-compras.html">Black Friday 2025: Como a Arquitetura de Software Pode Transformar Suas Compras</a><time datetime="2025-10-28T16:35:46.814Z">28/10/2025 13:35</time></li>
-<li><a href="artigos/inteligencia-artificial/memoria-para-ia-a-revolucao-que-pode-transformar-nossos-apps.html">Memória para IA: A Revolução que Pode Transformar Nossos Apps</a><time datetime="2025-10-28T15:23:01.934Z">28/10/2025 12:23</time></li>
-<li><a href="artigos/tecnologia/a-nova-falha-do-iphone-o-que-esta-por-tras-dos-erros-de-digitacao.html">A nova falha do iPhone: O que está por trás dos erros de digitação?</a><time datetime="2025-10-28T14:22:05.723Z">28/10/2025 11:22</time></li>
-<li><a href="artigos/tecnologia/a-arte-de-comprar-como-a-arquitetura-de-software-pode-te-ajudar-nas-promocoes-de-black-friday.html">A arte de comprar: como a Arquitetura de Software pode te ajudar nas promoções de Black Friday</a><time datetime="2025-10-28T13:32:56.123Z">28/10/2025 10:32</time></li>
-<li><a href="artigos/cloud/a-nova-era-da-infraestrutura-como-o-project-infragraph-pode-revolucionar-a-automacao.html">A nova era da infraestrutura: como o Project Infragraph pode revolucionar a automação</a><time datetime="2025-10-28T12:42:23.526Z">28/10/2025 09:42</time></li>
-<li><a href="artigos/tecnologia/a-black-friday-ja-chegou-antes-do-esperado-como-aproveitar-as-ofertas-com-inteligencia.html">A Black Friday já chegou antes do esperado: como aproveitar as ofertas com inteligência?</a><time datetime="2025-10-28T11:17:32.120Z">28/10/2025 08:17</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-da-compressao-de-dados-openzl-e-suas-possibilidades.html">A Nova Era da Compressão de Dados: OpenZL e suas Possibilidades</a><time datetime="2025-10-28T10:23:06.352Z">28/10/2025 07:23</time></li>
+<li><a href="artigos/tecnologia/a-nova-experiencia-netflix-para-criancas-um-passo-a-frente-na-navegacao-e-usabilidade.html">A nova experiência Netflix para crianças: um passo a frente na navegação e usabilidade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-28T19:17:21.815Z">28/10/2025 16:17</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-notebooks-acer-aspire-16-ai-surpreende-com-custo-beneficio.html">A nova era dos notebooks: Acer Aspire 16 AI surpreende com custo-benefício</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-28T18:30:28.291Z">28/10/2025 15:30</time></div></li>
+<li><a href="artigos/tecnologia/como-um-glitch-de-teclado-pode-transformar-sua-experiencia-com-o-iphone.html">Como um Glitch de Teclado Pode Transformar sua Experiência com o iPhone</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-28T17:19:57.414Z">28/10/2025 14:19</time></div></li>
+<li><a href="artigos/tecnologia/black-friday-2025-como-a-arquitetura-de-software-pode-transformar-suas-compras.html">Black Friday 2025: Como a Arquitetura de Software Pode Transformar Suas Compras</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-28T16:35:46.814Z">28/10/2025 13:35</time></div></li>
+<li><a href="artigos/inteligencia-artificial/memoria-para-ia-a-revolucao-que-pode-transformar-nossos-apps.html">Memória para IA: A Revolução que Pode Transformar Nossos Apps</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-28T15:23:01.934Z">28/10/2025 12:23</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-falha-do-iphone-o-que-esta-por-tras-dos-erros-de-digitacao.html">A nova falha do iPhone: O que está por trás dos erros de digitação?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-28T14:22:05.723Z">28/10/2025 11:22</time></div></li>
+<li><a href="artigos/tecnologia/a-arte-de-comprar-como-a-arquitetura-de-software-pode-te-ajudar-nas-promocoes-de-black-friday.html">A arte de comprar: como a Arquitetura de Software pode te ajudar nas promoções de Black Friday</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-28T13:32:56.123Z">28/10/2025 10:32</time></div></li>
+<li><a href="artigos/cloud/a-nova-era-da-infraestrutura-como-o-project-infragraph-pode-revolucionar-a-automacao.html">A nova era da infraestrutura: como o Project Infragraph pode revolucionar a automação</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-10-28T12:42:23.526Z">28/10/2025 09:42</time></div></li>
+<li><a href="artigos/tecnologia/a-black-friday-ja-chegou-antes-do-esperado-como-aproveitar-as-ofertas-com-inteligencia.html">A Black Friday já chegou antes do esperado: como aproveitar as ofertas com inteligência?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-28T11:17:32.120Z">28/10/2025 08:17</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-da-compressao-de-dados-openzl-e-suas-possibilidades.html">A Nova Era da Compressão de Dados: OpenZL e suas Possibilidades</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-28T10:23:06.352Z">28/10/2025 07:23</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

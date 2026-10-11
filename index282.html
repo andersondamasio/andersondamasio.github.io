@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 282</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-nova-ferramenta-secreta-do-iphone-como-encontrar-seu-celular-sem-estresse.html">A nova ferramenta secreta do iPhone: como encontrar seu celular sem estresse</a><time datetime="2025-12-23T13:37:44.115Z">23/12/2025 10:37</time></li>
-<li><a href="artigos/banco-de-dados/a-nova-era-das-consultas-pinecone-e-a-inovacao-dos-nos-de-leitura-dedicados.html">A nova era das consultas: Pinecone e a inovação dos Nós de Leitura Dedicados</a><time datetime="2025-12-23T12:45:19.987Z">23/12/2025 09:45</time></li>
-<li><a href="artigos/seguranca/a-revolucao-das-vpns-no-linux-seguranca-e-performance-ao-seu-alcance.html">A Revolução das VPNs no Linux: Segurança e Performance ao Seu Alcance</a><time datetime="2025-12-23T11:20:59.807Z">23/12/2025 08:20</time></li>
-<li><a href="artigos/tecnologia/um-legado-em-chamas-a-perda-de-um-icone-dos-games-e-suas-licoes-para-a-tecnologia.html">Um legado em chamas: a perda de um ícone dos games e suas lições para a tecnologia</a><time datetime="2025-12-23T10:25:55.647Z">23/12/2025 07:25</time></li>
-<li><a href="artigos/tecnologia/desvendando-lubuntu-e-xubuntu-a-escolha-ideal-para-seu-pc.html">Desvendando Lubuntu e Xubuntu: A Escolha Ideal para seu PC</a><time datetime="2025-12-23T09:27:37.928Z">23/12/2025 06:27</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-o-trabalho-3-maneiras-de-usar-ai-sem-medo.html">Transformando o Trabalho: 3 Maneiras de Usar AI Sem Medo</a><time datetime="2025-12-23T08:31:36.158Z">23/12/2025 05:31</time></li>
-<li><a href="artigos/tecnologia/encontrou-seu-iphone-o-truque-da-camera-que-pode-salvar-o-dia.html">Encontrou seu iPhone? O truque da câmera que pode salvar o dia!</a><time datetime="2025-12-23T07:25:51.651Z">23/12/2025 04:25</time></li>
-<li><a href="artigos/seguranca/como-a-privacidade-se-esconde-atras-da-dns-ative-o-modo-privado-no-android.html">Como a privacidade se esconde atrás da DNS: ative o modo privado no Android!</a><time datetime="2025-12-23T06:36:02.496Z">23/12/2025 03:36</time></li>
-<li><a href="artigos/seguranca/a-armadilha-digital-como-os-cibercriminosos-usam-empregos-falsos-para-financiar-regimes.html">A armadilha digital: como os cibercriminosos usam empregos falsos para financiar regimes</a><time datetime="2025-12-23T05:26:22.308Z">23/12/2025 02:26</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-das-compras-como-a-inteligencia-artificial-pode-transformar-sua-experiencia-no-e-commerce.html">A revolução das compras: como a inteligência artificial pode transformar sua experiência no e-commerce</a><time datetime="2025-12-23T04:39:45.651Z">23/12/2025 01:39</time></li>
+<li><a href="artigos/tecnologia/a-nova-ferramenta-secreta-do-iphone-como-encontrar-seu-celular-sem-estresse.html">A nova ferramenta secreta do iPhone: como encontrar seu celular sem estresse</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-23T13:37:44.115Z">23/12/2025 10:37</time></div></li>
+<li><a href="artigos/banco-de-dados/a-nova-era-das-consultas-pinecone-e-a-inovacao-dos-nos-de-leitura-dedicados.html">A nova era das consultas: Pinecone e a inovação dos Nós de Leitura Dedicados</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2025-12-23T12:45:19.987Z">23/12/2025 09:45</time></div></li>
+<li><a href="artigos/seguranca/a-revolucao-das-vpns-no-linux-seguranca-e-performance-ao-seu-alcance.html">A Revolução das VPNs no Linux: Segurança e Performance ao Seu Alcance</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-23T11:20:59.807Z">23/12/2025 08:20</time></div></li>
+<li><a href="artigos/tecnologia/um-legado-em-chamas-a-perda-de-um-icone-dos-games-e-suas-licoes-para-a-tecnologia.html">Um legado em chamas: a perda de um ícone dos games e suas lições para a tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-23T10:25:55.647Z">23/12/2025 07:25</time></div></li>
+<li><a href="artigos/tecnologia/desvendando-lubuntu-e-xubuntu-a-escolha-ideal-para-seu-pc.html">Desvendando Lubuntu e Xubuntu: A Escolha Ideal para seu PC</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-23T09:27:37.928Z">23/12/2025 06:27</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-o-trabalho-3-maneiras-de-usar-ai-sem-medo.html">Transformando o Trabalho: 3 Maneiras de Usar AI Sem Medo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-23T08:31:36.158Z">23/12/2025 05:31</time></div></li>
+<li><a href="artigos/tecnologia/encontrou-seu-iphone-o-truque-da-camera-que-pode-salvar-o-dia.html">Encontrou seu iPhone? O truque da câmera que pode salvar o dia!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-23T07:25:51.651Z">23/12/2025 04:25</time></div></li>
+<li><a href="artigos/seguranca/como-a-privacidade-se-esconde-atras-da-dns-ative-o-modo-privado-no-android.html">Como a privacidade se esconde atrás da DNS: ative o modo privado no Android!</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-23T06:36:02.496Z">23/12/2025 03:36</time></div></li>
+<li><a href="artigos/seguranca/a-armadilha-digital-como-os-cibercriminosos-usam-empregos-falsos-para-financiar-regimes.html">A armadilha digital: como os cibercriminosos usam empregos falsos para financiar regimes</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-23T05:26:22.308Z">23/12/2025 02:26</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-das-compras-como-a-inteligencia-artificial-pode-transformar-sua-experiencia-no-e-commerce.html">A revolução das compras: como a inteligência artificial pode transformar sua experiência no e-commerce</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-23T04:39:45.651Z">23/12/2025 01:39</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 352</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/uma-oportunidade-imperdivel-como-o-iphone-16e-pode-ser-seu-por-zero-reais.html">Uma oportunidade imperdível: como o iPhone 16e pode ser seu por zero reais!</a><time datetime="2025-11-21T11:18:16.846Z">21/11/2025 08:18</time></li>
-<li><a href="artigos/tecnologia/monitores-em-promocao-o-que-esperar-da-black-friday-2025.html">Monitores em Promoção: O Que Esperar da Black Friday 2025?</a><time datetime="2025-11-21T10:22:20.914Z">21/11/2025 07:22</time></li>
-<li><a href="artigos/tecnologia/melhores-gadgets-de-bem-estar-para-a-black-friday-tecnologia-que-cuida-de-voce.html">Melhores Gadgets de Bem-Estar para a Black Friday: Tecnologia que Cuida de Você</a><time datetime="2025-11-21T09:22:29.012Z">21/11/2025 06:22</time></li>
-<li><a href="artigos/programacao/a-nova-era-do-desenvolvimento-uno-platform-6-4-e-a-magia-da-ai.html">A nova era do desenvolvimento: Uno Platform 6.4 e a magia da AI</a><time datetime="2025-11-21T08:29:25.501Z">21/11/2025 05:29</time></li>
-<li><a href="artigos/tecnologia/como-a-forma-que-voce-carrega-seu-tablet-pode-estar-arruinando-a-bateria.html">Como a forma que você carrega seu tablet pode estar arruinando a bateria</a><time datetime="2025-11-21T07:21:00.559Z">21/11/2025 04:21</time></li>
-<li><a href="artigos/inteligencia-artificial/como-a-ia-pode-aumentar-sua-divida-tecnica-e-como-evitar-esse-perigo.html">Como a IA Pode Aumentar Sua Dívida Técnica e Como Evitar Esse Perigo</a><time datetime="2025-11-21T06:32:09.321Z">21/11/2025 03:32</time></li>
-<li><a href="artigos/programacao/uma-nova-era-no-desenvolvimento-spring-framework-7-e-boot-4-trazem-inovacoes-essenciais.html">Uma nova era no desenvolvimento: Spring Framework 7 e Boot 4 trazem inovações essenciais</a><time datetime="2025-11-21T05:21:27.705Z">21/11/2025 02:21</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-cameras-mirrorless-quando-trocar-de-lado-vale-a-pena.html">A Revolução das Câmeras Mirrorless: Quando Trocar de Lado Vale a Pena?</a><time datetime="2025-11-21T04:24:35.071Z">21/11/2025 01:24</time></li>
-<li><a href="artigos/seguranca/evite-os-fantasmas-como-proteger-seu-bolso-da-nova-moda-de-fraudes.html">"Evite os Fantasmas: Como Proteger seu Bolso da Nova Moda de Fraudes"</a><time datetime="2025-11-21T03:12:40.376Z">21/11/2025 00:12</time></li>
-<li><a href="artigos/tecnologia/aumente-a-vida-util-do-seu-iphone-com-dicas-tecnicas-menos-bateria-mais-performance.html">Aumente a Vida Útil do Seu iPhone com Dicas Técnicas: Menos Bateria, Mais Performance</a><time datetime="2025-11-21T01:27:08.857Z">20/11/2025 22:27</time></li>
+<li><a href="artigos/tecnologia/uma-oportunidade-imperdivel-como-o-iphone-16e-pode-ser-seu-por-zero-reais.html">Uma oportunidade imperdível: como o iPhone 16e pode ser seu por zero reais!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-21T11:18:16.846Z">21/11/2025 08:18</time></div></li>
+<li><a href="artigos/tecnologia/monitores-em-promocao-o-que-esperar-da-black-friday-2025.html">Monitores em Promoção: O Que Esperar da Black Friday 2025?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-21T10:22:20.914Z">21/11/2025 07:22</time></div></li>
+<li><a href="artigos/tecnologia/melhores-gadgets-de-bem-estar-para-a-black-friday-tecnologia-que-cuida-de-voce.html">Melhores Gadgets de Bem-Estar para a Black Friday: Tecnologia que Cuida de Você</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-21T09:22:29.012Z">21/11/2025 06:22</time></div></li>
+<li><a href="artigos/programacao/a-nova-era-do-desenvolvimento-uno-platform-6-4-e-a-magia-da-ai.html">A nova era do desenvolvimento: Uno Platform 6.4 e a magia da AI</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-11-21T08:29:25.501Z">21/11/2025 05:29</time></div></li>
+<li><a href="artigos/tecnologia/como-a-forma-que-voce-carrega-seu-tablet-pode-estar-arruinando-a-bateria.html">Como a forma que você carrega seu tablet pode estar arruinando a bateria</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-21T07:21:00.559Z">21/11/2025 04:21</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-a-ia-pode-aumentar-sua-divida-tecnica-e-como-evitar-esse-perigo.html">Como a IA Pode Aumentar Sua Dívida Técnica e Como Evitar Esse Perigo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-21T06:32:09.321Z">21/11/2025 03:32</time></div></li>
+<li><a href="artigos/programacao/uma-nova-era-no-desenvolvimento-spring-framework-7-e-boot-4-trazem-inovacoes-essenciais.html">Uma nova era no desenvolvimento: Spring Framework 7 e Boot 4 trazem inovações essenciais</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-11-21T05:21:27.705Z">21/11/2025 02:21</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-cameras-mirrorless-quando-trocar-de-lado-vale-a-pena.html">A Revolução das Câmeras Mirrorless: Quando Trocar de Lado Vale a Pena?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-21T04:24:35.071Z">21/11/2025 01:24</time></div></li>
+<li><a href="artigos/seguranca/evite-os-fantasmas-como-proteger-seu-bolso-da-nova-moda-de-fraudes.html">"Evite os Fantasmas: Como Proteger seu Bolso da Nova Moda de Fraudes"</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-21T03:12:40.376Z">21/11/2025 00:12</time></div></li>
+<li><a href="artigos/tecnologia/aumente-a-vida-util-do-seu-iphone-com-dicas-tecnicas-menos-bateria-mais-performance.html">Aumente a Vida Útil do Seu iPhone com Dicas Técnicas: Menos Bateria, Mais Performance</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-21T01:27:08.857Z">20/11/2025 22:27</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

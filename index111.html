@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 111</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/transformando-tv-em-arte-a-revolucao-visual-do-samsung-frame-pro.html">Transformando TV em Arte: A Revolução Visual do Samsung Frame Pro</a><time datetime="2026-03-18T22:36:59.825Z">18/03/2026 19:36</time></li>
-<li><a href="artigos/logistica/a-corrida-pela-entrega-ultrarrapida-como-a-arquitetura-de-software-pode-acelerar-seu-negocio.html">A corrida pela entrega ultrarrápida: como a arquitetura de software pode acelerar seu negócio</a><time datetime="2026-03-18T21:45:31.427Z">18/03/2026 18:45</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-smartphones-o-fim-dos-apps-e-o-surgimento-dos-agentes-de-ia.html">A revolução dos smartphones: o fim dos apps e o surgimento dos agentes de IA</a><time datetime="2026-03-18T20:40:31.926Z">18/03/2026 17:40</time></li>
-<li><a href="artigos/tecnologia/aproveite-as-ofertas-de-primavera-da-amazon-tecnologia-a-precos-imperdiveis.html">Aproveite as Ofertas de Primavera da Amazon: Tecnologia a Preços Imperdíveis!</a><time datetime="2026-03-18T19:59:15.045Z">18/03/2026 16:59</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-do-consumo-quando-chatbots-e-e-commerce-se-encontram.html">A nova era do consumo: quando chatbots e e-commerce se encontram</a><time datetime="2026-03-18T18:08:44.379Z">18/03/2026 15:08</time></li>
-<li><a href="artigos/desenvolvimento-de-software/minimalismo-no-linux-por-que-uma-instalacao-basica-pode-ser-a-melhor-opcao.html">Minimalismo no Linux: Por que uma Instalação Básica Pode Ser a Melhor Opção</a><time datetime="2026-03-18T17:04:11.915Z">18/03/2026 14:04</time></li>
-<li><a href="artigos/inteligencia-artificial/como-a-inteligencia-artificial-esta-reescrevendo-o-codigo-do-futuro.html">Como a Inteligência Artificial Está Reescrevendo o Código do Futuro</a><time datetime="2026-03-18T15:06:40.743Z">18/03/2026 12:06</time></li>
-<li><a href="artigos/seguranca/a-urgencia-da-sbom-da-boa-pratica-a-obrigatoriedade-legal.html">A urgência da SBOM: da boa prática à obrigatoriedade legal</a><time datetime="2026-03-18T13:15:43.109Z">18/03/2026 10:15</time></li>
-<li><a href="artigos/programacao/a-nova-era-do-java-o-que-o-jdk-26-traz-de-inovador-para-a-arquitetura-de-software.html">A nova era do Java: O que o JDK 26 traz de inovador para a arquitetura de software?</a><time datetime="2026-03-18T11:49:55.278Z">18/03/2026 08:49</time></li>
-<li><a href="artigos/programacao/desvendando-lifetimes-em-rust-uma-nova-perspectiva.html">Desvendando Lifetimes em Rust: Uma Nova Perspectiva</a><time datetime="2026-03-18T10:59:45.107Z">18/03/2026 07:59</time></li>
+<li><a href="artigos/tecnologia/transformando-tv-em-arte-a-revolucao-visual-do-samsung-frame-pro.html">Transformando TV em Arte: A Revolução Visual do Samsung Frame Pro</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-18T22:36:59.825Z">18/03/2026 19:36</time></div></li>
+<li><a href="artigos/logistica/a-corrida-pela-entrega-ultrarrapida-como-a-arquitetura-de-software-pode-acelerar-seu-negocio.html">A corrida pela entrega ultrarrápida: como a arquitetura de software pode acelerar seu negócio</a><div class="article-list-meta"><span>Logística</span><time datetime="2026-03-18T21:45:31.427Z">18/03/2026 18:45</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-smartphones-o-fim-dos-apps-e-o-surgimento-dos-agentes-de-ia.html">A revolução dos smartphones: o fim dos apps e o surgimento dos agentes de IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-18T20:40:31.926Z">18/03/2026 17:40</time></div></li>
+<li><a href="artigos/tecnologia/aproveite-as-ofertas-de-primavera-da-amazon-tecnologia-a-precos-imperdiveis.html">Aproveite as Ofertas de Primavera da Amazon: Tecnologia a Preços Imperdíveis!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-18T19:59:15.045Z">18/03/2026 16:59</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-do-consumo-quando-chatbots-e-e-commerce-se-encontram.html">A nova era do consumo: quando chatbots e e-commerce se encontram</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-18T18:08:44.379Z">18/03/2026 15:08</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/minimalismo-no-linux-por-que-uma-instalacao-basica-pode-ser-a-melhor-opcao.html">Minimalismo no Linux: Por que uma Instalação Básica Pode Ser a Melhor Opção</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-03-18T17:04:11.915Z">18/03/2026 14:04</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-a-inteligencia-artificial-esta-reescrevendo-o-codigo-do-futuro.html">Como a Inteligência Artificial Está Reescrevendo o Código do Futuro</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-18T15:06:40.743Z">18/03/2026 12:06</time></div></li>
+<li><a href="artigos/seguranca/a-urgencia-da-sbom-da-boa-pratica-a-obrigatoriedade-legal.html">A urgência da SBOM: da boa prática à obrigatoriedade legal</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-18T13:15:43.109Z">18/03/2026 10:15</time></div></li>
+<li><a href="artigos/programacao/a-nova-era-do-java-o-que-o-jdk-26-traz-de-inovador-para-a-arquitetura-de-software.html">A nova era do Java: O que o JDK 26 traz de inovador para a arquitetura de software?</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-03-18T11:49:55.278Z">18/03/2026 08:49</time></div></li>
+<li><a href="artigos/programacao/desvendando-lifetimes-em-rust-uma-nova-perspectiva.html">Desvendando Lifetimes em Rust: Uma Nova Perspectiva</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-03-18T10:59:45.107Z">18/03/2026 07:59</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

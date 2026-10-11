@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 139</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-nova-era-das-telas-thunderbolt-5-e-a-revolucao-da-conectividade.html">A nova era das telas: Thunderbolt 5 e a revolução da conectividade</a><time datetime="2026-03-03T15:01:35.472Z">03/03/2026 12:01</time></li>
-<li><a href="artigos/inteligencia-artificial/explorando-a-escalabilidade-em-sistemas-multi-agentes-uma-nova-abordagem.html">Explorando a Escalabilidade em Sistemas Multi-Agentes: Uma Nova Abordagem</a><time datetime="2026-03-03T14:05:24.848Z">03/03/2026 11:05</time></li>
-<li><a href="artigos/seguranca/desvendando-o-anonimato-como-llms-estao-transformando-a-seguranca-digital.html">Desvendando o Anonimato: Como LLMs Estão Transformando a Segurança Digital</a><time datetime="2026-03-03T13:01:37.217Z">03/03/2026 10:01</time></li>
-<li><a href="artigos/inteligencia-artificial/dispositivos-misteriosos-o-futuro-da-tecnologia-nas-maos-de-gebbia.html">Dispositivos Misteriosos: O Futuro da Tecnologia nas Mãos de Gebbia?</a><time datetime="2026-03-03T11:36:07.668Z">03/03/2026 08:36</time></li>
-<li><a href="artigos/cloud/a-revolucao-dos-plugins-automatizando-o-desdobramento-na-nuvem-com-aws.html">Agent Plugins da AWS: o que revisar antes de autorizar um deploy</a><time datetime="2026-03-03T10:42:46.684Z">03/03/2026 07:42</time></li>
-<li><a href="artigos/desenvolvimento-de-software/desafios-e-oportunidades-o-futuro-do-open-source-em-um-mundo-de-ia.html">Desafios e Oportunidades: O Futuro do Open Source em um Mundo de IA</a><time datetime="2026-03-03T09:45:29.562Z">03/03/2026 06:45</time></li>
-<li><a href="artigos/cloud/acelerando-a-criacao-de-nos-no-gke-uma-revolucao-nas-nuvens.html">Acelerando a Criação de Nós no GKE: Uma Revolução nas Nuvens</a><time datetime="2026-03-03T08:44:24.196Z">03/03/2026 05:44</time></li>
-<li><a href="artigos/tecnologia/o-crescimento-do-mercado-de-servicos-domesticos-uma-oportunidade-para-a-tecnologia.html">O crescimento do mercado de serviços domésticos: uma oportunidade para a tecnologia</a><time datetime="2026-03-03T07:04:52.746Z">03/03/2026 04:04</time></li>
-<li><a href="artigos/cloud/a-vulnerabilidade-da-infraestrutura-digital-em-tempos-de-conflito.html">A vulnerabilidade da infraestrutura digital em tempos de conflito</a><time datetime="2026-03-03T05:53:57.700Z">03/03/2026 02:53</time></li>
-<li><a href="artigos/desenvolvimento-de-software/desenhando-antes-de-codificar-a-arte-da-colaboracao-em-software.html">Desenhando antes de Codificar: A Arte da Colaboração em Software</a><time datetime="2026-03-03T04:49:58.597Z">03/03/2026 01:49</time></li>
+<li><a href="artigos/tecnologia/a-nova-era-das-telas-thunderbolt-5-e-a-revolucao-da-conectividade.html">A nova era das telas: Thunderbolt 5 e a revolução da conectividade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-03T15:01:35.472Z">03/03/2026 12:01</time></div></li>
+<li><a href="artigos/inteligencia-artificial/explorando-a-escalabilidade-em-sistemas-multi-agentes-uma-nova-abordagem.html">Explorando a Escalabilidade em Sistemas Multi-Agentes: Uma Nova Abordagem</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-03T14:05:24.848Z">03/03/2026 11:05</time></div></li>
+<li><a href="artigos/seguranca/desvendando-o-anonimato-como-llms-estao-transformando-a-seguranca-digital.html">Desvendando o Anonimato: Como LLMs Estão Transformando a Segurança Digital</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-03T13:01:37.217Z">03/03/2026 10:01</time></div></li>
+<li><a href="artigos/inteligencia-artificial/dispositivos-misteriosos-o-futuro-da-tecnologia-nas-maos-de-gebbia.html">Dispositivos Misteriosos: O Futuro da Tecnologia nas Mãos de Gebbia?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-03T11:36:07.668Z">03/03/2026 08:36</time></div></li>
+<li><a href="artigos/cloud/a-revolucao-dos-plugins-automatizando-o-desdobramento-na-nuvem-com-aws.html">Agent Plugins da AWS: o que revisar antes de autorizar um deploy</a><div class="article-list-meta"><span>Cloud</span><time datetime="2026-03-03T10:42:46.684Z">03/03/2026 07:42</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/desafios-e-oportunidades-o-futuro-do-open-source-em-um-mundo-de-ia.html">Desafios e Oportunidades: O Futuro do Open Source em um Mundo de IA</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-03-03T09:45:29.562Z">03/03/2026 06:45</time></div></li>
+<li><a href="artigos/cloud/acelerando-a-criacao-de-nos-no-gke-uma-revolucao-nas-nuvens.html">Acelerando a Criação de Nós no GKE: Uma Revolução nas Nuvens</a><div class="article-list-meta"><span>Cloud</span><time datetime="2026-03-03T08:44:24.196Z">03/03/2026 05:44</time></div></li>
+<li><a href="artigos/tecnologia/o-crescimento-do-mercado-de-servicos-domesticos-uma-oportunidade-para-a-tecnologia.html">O crescimento do mercado de serviços domésticos: uma oportunidade para a tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-03T07:04:52.746Z">03/03/2026 04:04</time></div></li>
+<li><a href="artigos/cloud/a-vulnerabilidade-da-infraestrutura-digital-em-tempos-de-conflito.html">A vulnerabilidade da infraestrutura digital em tempos de conflito</a><div class="article-list-meta"><span>Cloud</span><time datetime="2026-03-03T05:53:57.700Z">03/03/2026 02:53</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/desenhando-antes-de-codificar-a-arte-da-colaboracao-em-software.html">Desenhando antes de Codificar: A Arte da Colaboração em Software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-03-03T04:49:58.597Z">03/03/2026 01:49</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>
