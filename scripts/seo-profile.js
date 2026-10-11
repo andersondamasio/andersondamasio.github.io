@@ -2,13 +2,19 @@ const { authorName, authorSameAs } = require("./seo-identity");
 
 const descricaoPerfil = "Anderson Damasio, arquiteto de software com atua\u00e7\u00e3o em desenvolvimento de sistemas desde 2005. Perfil, contato e artigos sobre arquitetura e tecnologia.";
 
-function gerarApresentacaoPerfil() {
+function anosMinimosDeExperiencia(data = new Date()) {
+  const ano = Number(new Intl.DateTimeFormat('en', { year: 'numeric', timeZone: 'America/Sao_Paulo' }).format(data));
+  // Only the starting year is known, not the anniversary within that year.
+  return Math.max(0, ano - 2005 - 1);
+}
+
+function gerarApresentacaoPerfil(data = new Date()) {
   return `<section class="profile-intro" aria-labelledby="profile-title">
 <img src="/favicon.ico" alt="Marca de Anderson Damasio" width="48" height="48" decoding="async" class="profile-mark">
 <h1 id="profile-title">${authorName}</h1>
 <p class="profile-role">Arquiteto de Software</p>
-<p>Atuo com desenvolvimento de sistemas desde 2005. Este &eacute; meu site pessoal, com perfil profissional e artigos sobre arquitetura de software e tecnologia.</p>
-<nav class="profile-links" aria-label="Perfil e contato"><a href="/sobre.html">Sobre Anderson Damasio</a><a href="${authorSameAs[0]}" rel="me noopener noreferrer">LinkedIn</a><a href="/contato.html">Contato</a></nav>
+<p class="profile-description">Atuo no desenvolvimento de sistemas h&aacute; mais de <span data-experience-start="2005">${anosMinimosDeExperiencia(data)}</span> anos.</p>
+<nav class="profile-links" aria-label="Sobre o perfil"><a href="/sobre.html">Sobre mim</a><a href="${authorSameAs[0]}" rel="me noopener noreferrer">LinkedIn</a></nav>
 </section>`;
 }
 
@@ -53,4 +59,4 @@ body.dark-theme .profile-role { color: #79d7c5; }
 @media (max-width: 540px) { main { padding: 1rem; } .profile-intro h1 { font-size: 1.9rem; } }
 `;
 
-module.exports = { descricaoPerfil, gerarApresentacaoPerfil, gerarSobrePerfil, estilosPerfil };
+module.exports = { descricaoPerfil, gerarApresentacaoPerfil, gerarSobrePerfil, estilosPerfil, anosMinimosDeExperiencia };

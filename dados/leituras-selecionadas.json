@@ -5,6 +5,26 @@
   "atualizadoEm": "2026-10-10T04:08:03.000Z",
   "introducao": "Uma decisão técnica precisa de uma pergunta delimitada e de critérios para conferir a resposta. Estes materiais tratam de alternativas de arquitetura, comportamento do código e avaliação de agentes. As propostas de ensaio estão separadas dos testes efetivamente executados.",
   "limites": "Os textos foram produzidos com apoio de IA e passam por correções assistidas. A seleção não equivale a revisão humana individual nem a experiência pessoal de Anderson Damasio. Fontes, procedimentos e limitações estão descritos em cada artigo.",
+  "destaquesInicio": [
+    {
+      "url": "artigos/explorando-os-segredos-do-reservoir-sampling.html",
+      "categoria": "Algoritmos",
+      "titulo": "Reservoir sampling: seleção aleatória em fluxos",
+      "resumo": "Um exemplo em C# para selecionar itens de um fluxo, com código e testes."
+    },
+    {
+      "url": "artigos/design-tokens-a-arquitetura-secreta-por-tras-de-interfaces-de-usuario-incriveis.html",
+      "categoria": "Frontend",
+      "titulo": "Design tokens: consistência entre interfaces",
+      "resumo": "Conversão de tokens em variáveis CSS, com validação de entrada."
+    },
+    {
+      "url": "artigos/inteligencia-artificial/agentes-de-ia-na-arquitetura-de-software-velocidade-com-criterios-tecnicos.html",
+      "categoria": "Arquitetura e IA",
+      "titulo": "Agentes de IA: critérios para decisões de arquitetura",
+      "resumo": "Um cenário hipotético para comparar alternativas, limites e evidências."
+    }
+  ],
   "grupos": [
     {
       "id": "decisoes-de-arquitetura",

@@ -56,11 +56,55 @@ html .category-index .category-count { color: var(--meta); font-size: .8125rem; 
 html #cookie-banner { box-sizing: border-box; position: static !important; width: 100%; padding: .75rem 1.25rem !important; box-shadow: none !important; text-align: left; font-size: .8125rem !important; line-height: 1.5; }
 html #cookie-banner.cookies-ready { position: fixed !important; }
 html #cookie-banner:not(.cookies-ready) button { display: none; }
+/* The compact profile layout is exclusive to the homepage. */
+html body.home-site { background: var(--main-bg); --header-bg: var(--main-bg); --header-color: var(--text); }
+html body.home-site > header.site-header { padding-inline: max(1.5rem, calc((100% - 912px) / 2)) !important; grid-template-columns: minmax(44px, 1fr) auto auto; }
+html .home-site .site-brand .brand-mark { width: 32px; height: 32px; }
+html .home-site #site-navigation a { font-weight: 500; }
+html .home-site #site-navigation a[aria-current] { color: var(--link) !important; }
+html body > main.home-page { padding-top: 3rem; padding-bottom: 1.5rem; }
+html .home-page > section { padding-block: 2rem; }
+html .home-page > .profile-intro { padding-top: 0; padding-bottom: 2rem; }
+html .home-page h1 { font-size: 2rem; margin-bottom: .5rem; font-weight: 650; letter-spacing: 0; }
+html .home-page .profile-role { font-size: 1.125rem; margin-bottom: .75rem; }
+html .home-page .profile-description { color: var(--meta); margin: 0; font-size: 1.0625rem; }
+html .home-page .profile-links { gap: 1.5rem; margin-top: 1rem; }
+html .home-page .profile-links a { min-height: 2.75rem; display: inline-flex; align-items: center; font-weight: 500; text-decoration: underline; text-underline-offset: .2em; }
+html .home-page h2 { font-size: 1.25rem; margin-bottom: 1.25rem; }
+html .home-page .selected-readings h2 a { color: var(--text); }
+html .home-page .selected-readings > ul { gap: 1.25rem; }
+html .home-page .reading-card { display: flex; flex-direction: column; min-width: 0; border: 1px solid var(--border); border-radius: 4px; padding: 1.25rem; }
+html .home-page .reading-category { color: var(--meta); font-size: .75rem; font-weight: 600; text-transform: uppercase; margin-bottom: .65rem; }
+html .home-page .reading-card h3 { font-size: 1.0625rem; line-height: 1.45; font-weight: 600; margin-bottom: .6rem; }
+html .home-page .reading-description { color: var(--meta); font-size: .9375rem; line-height: 1.55; margin-bottom: .75rem; }
+html .home-page .reading-link { align-self: flex-start; display: inline-flex; align-items: center; gap: .75rem; min-height: 2.75rem; margin-top: auto; font-weight: 500; text-decoration: underline; text-underline-offset: .2em; }
+html .home-section-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1rem; margin-bottom: 1rem; }
+html .home-section-heading h2 { margin: 0; }
+html .home-section-heading > a, html .home-archive-link a { font-weight: 500; font-size: .875rem; }
+html .home-section-heading > a { display: inline-flex; align-items: center; gap: .75rem; min-height: 2.75rem; }
+html .home-page .article-index { border-top: 1px solid var(--border); }
+html .home-page .article-index > li { padding: 1rem 0; }
+html .home-page .article-index > li > a { display: block; color: var(--text); font-weight: 500; line-height: 1.5; }
+html .home-page .article-list-meta { margin-top: .35rem; }
+html .home-page .home-archive-link { margin: .75rem 0 0; }
+html .home-archive-link a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+html .home-footer { border-top: 1px solid var(--border); }
+html .home-footer-inner { max-width: 912px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+html .home-footer .brand-mark { width: 28px; height: 28px; flex-shrink: 0; background: url('/favicon.ico') center / contain no-repeat; }
+html .home-footer .footer-navigation { margin: 0; gap: .25rem 1.25rem; justify-content: flex-end; }
+html .home-footer a { font-weight: 400; }
 @media (max-width: 1050px) and (min-width: 761px) {
   html body > header.site-header { gap: 1rem; grid-template-columns: minmax(100px, 1fr) auto auto; }
   html .site-header .theme-control > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 }
 @media (max-width: 760px) {
+  html body.home-site > header.site-header { padding-inline: 1rem !important; grid-template-columns: minmax(0, 1fr) auto auto; }
+  html body > main.home-page { padding-top: 1.75rem; }
+  html .home-page h1 { font-size: 1.75rem; }
+  html .home-page > section { padding-block: 1.5rem; }
+  html .home-page .selected-readings > ul { grid-template-columns: 1fr; gap: 1rem; }
+  html .home-page .reading-card { padding: 1rem 1.25rem; }
+  html .home-footer .footer-navigation { gap: .25rem .85rem; }
   html body > main { padding: 1.5rem 1rem; }
   html .article-body h2[id] { scroll-margin-top: 1rem; }
   html body > header.site-header { position: relative; grid-template-columns: minmax(0, 1fr) auto auto; gap: .5rem; padding: .5rem 1rem !important; }

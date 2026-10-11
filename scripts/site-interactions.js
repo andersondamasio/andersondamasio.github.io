@@ -1,5 +1,13 @@
 (function () {
   'use strict';
+  const experiencia = document.querySelector('.home-page [data-experience-start]');
+  if (experiencia) {
+    const inicio = Number(experiencia.dataset.experienceStart);
+    const ano = Number(new Intl.DateTimeFormat('en', { year: 'numeric', timeZone: 'America/Sao_Paulo' }).format(new Date()));
+    // Keep the server-rendered fallback if the visitor's clock is behind.
+    const anos = ano - inicio - 1;
+    if (Number.isInteger(inicio) && inicio >= 1900 && anos >= Number(experiencia.textContent)) experiencia.textContent = String(anos);
+  }
   const header = document.querySelector('.site-header');
   header?.querySelector('#theme-select')?.setAttribute('title', 'Tema do site');
   const toggle = header?.querySelector('.nav-toggle');

@@ -5,10 +5,41 @@ const path = require('node:path');
 const cheerio = require('cheerio');
 const { JSDOM } = require('jsdom');
 const { aplicarApresentacaoSite, aplicarLayoutSite } = require('./site-presentation');
+const { gerarApresentacaoPerfil, gerarSobrePerfil, anosMinimosDeExperiencia } = require('./seo-profile');
 const corpo = '<div class="article-body"><p>Texto &amp; exemplo.</p><pre><code>  if (a &lt; b) {\n    exemplo();\n  }</code></pre>' + [1, 2, 3, 4].map(n => `<h2${n === 1 ? ' id="existente"' : ''}>Secao ${n}</h2><p>Texto ${n}</p>`).join('') + '</div>';
 const entrada = `<!doctype html><html><head><meta charset="UTF-8"><title>Artigo</title><meta name="robots" content="noindex,follow"><link rel="canonical" href="https://www.andersondamasio.com.br/artigos/exemplo.html"></head><body><header><nav><a href="/index.html">Inicio</a></nav></header><main><h1>Artigo</h1>${corpo}<footer><nav><a href="/politica.html">Privacidade</a> | <a href="/politica.html">Politica</a></nav></footer></main></body></html>`;
 const runtime = fs.readFileSync(path.join(__dirname, 'site-interactions.js'), 'utf8');
 const cookies = fs.readFileSync(path.join(__dirname, 'cookies-banner.js'), 'utf8');
+
+test('home usa marca discreta e rodape sem chamada comercial; sobre permanece explicito', () => {
+  const entradaHome = '<html><head><meta charset="UTF-8"><title>Anderson Damasio</title></head><body><header><nav><a href="/">Inicio</a></nav></header><main class="home-page">' + gerarApresentacaoPerfil(new Date('2026-10-11T12:00:00Z')) + '</main><footer><nav></nav></footer></body></html>';
+  const saida = aplicarLayoutSite(entradaHome, 'index.html');
+  assert.equal(aplicarLayoutSite(saida, 'index.html'), saida);
+  const $ = cheerio.load(saida);
+  assert.equal($('.site-brand').text(), '');
+  assert.match($('.site-brand').attr('aria-label'), /Anderson Damasio/);
+  assert.equal($('.profile-description').text(), 'Atuo no desenvolvimento de sistemas h\u00e1 mais de 20 anos.');
+  assert.equal($('.profile-links a').length, 2);
+  assert.equal($('.home-footer a[href="/contato.html"]').length, 1);
+  assert.equal($('.home-footer a[href="https://www.linkedin.com/in/andersondamasio/"]').length, 1);
+  assert.doesNotMatch($('main').text(), /desde 2005|contrata|servi\u00e7os/i);
+  assert.match(cheerio.load(gerarSobrePerfil())('main, body').text(), /desde 2005/);
+  assert.equal(cheerio.load(aplicarLayoutSite(entrada, 'sobre.html'))('.site-brand').text(), 'Anderson Damasio');
+});
+
+test('experiencia atualiza pelo ano brasileiro sem antecipar aniversario ou regredir fallback', t => {
+  for (const [data, esperado] of [
+    ['2026-10-11T12:00:00Z', 20], ['2027-01-01T02:59:59Z', 20],
+    ['2027-01-01T03:00:00Z', 21], ['2028-06-01T00:00:00Z', 22], ['2025-10-01T00:00:00Z', 20]
+  ]) {
+    const dom = new JSDOM(`<main class="home-page">${gerarApresentacaoPerfil(new Date('2026-10-11T12:00:00Z'))}</main>`, { runScripts: 'outside-only' });
+    t.after(() => dom.window.close());
+    dom.window.Date = class extends Date { constructor() { super(data); } };
+    dom.window.eval(runtime);
+    assert.equal(Number(dom.window.document.querySelector('[data-experience-start]').textContent), esperado);
+    assert.equal(Math.max(20, anosMinimosDeExperiencia(new Date(data))), esperado);
+  }
+});
 
 test('layout preserva corpo bruto e metadados e e idempotente inclusive apos tema', () => {
   for (const source of [entrada, entrada.replace(/\n/g, '\r\n')]) {

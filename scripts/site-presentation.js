@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const cheerio = require('cheerio');
 const { aplicarTemaSite, controleTema } = require('./site-theme');
-const { siteUrl } = require('./seo-identity');
+const { siteUrl, authorSameAs } = require('./seo-identity');
 
 const escapar = value => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -19,7 +19,7 @@ function linksNavegacao(guias) {
 
 function gerarCabecalho(arquivo, guias) {
   const atual = secaoAtual(arquivo);
-  return `<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, in\u00edcio"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+  return `<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, in\u00edcio"><span class="brand-mark" aria-hidden="true"></span>${arquivo === 'index.html' ? '' : '<span>Anderson Damasio</span>'}</a>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
 <nav id="site-navigation" aria-label="Navega\u00e7\u00e3o principal">${linksNavegacao(guias).map(([href, texto]) => `<a href="${href}"${href === atual ? ` aria-current="${arquivo === href.slice(1) ? 'page' : 'true'}"` : ''}>${texto}</a>`).join('')}</nav>
 ${controleTema}</header>`;
@@ -65,7 +65,10 @@ function aplicarApresentacaoSite(html, arquivo, { guias = fs.existsSync('guias.h
   for (const el of $('link[href="/scripts/site-presentation.css"], script[src="/scripts/site-interactions.js"], .article-breadcrumbs, .article-toc, main > img[src="/favicon.ico"], main .profile-mark').toArray()) substituir(el, '');
   edits.push({ inicio: head.endTag.startOffset, fim: head.endTag.startOffset, valor: '<link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script>' });
   if ($('.article-body').length) edits.push({ inicio: main.startTag.endOffset, fim: main.startTag.endOffset, valor: gerarBreadcrumbs($) });
+  const footerHome = arquivo === 'index.html' ? $('body > footer')[0] : null;
+  if (footerHome) substituir(footerHome, `<footer class="home-footer"><div class="home-footer-inner"><span class="brand-mark" aria-hidden="true"></span><nav class="footer-navigation" aria-label="Links do rodap\u00e9"><a href="/contato.html">Contato</a><a href="${authorSameAs[0]}" rel="me noopener noreferrer">LinkedIn</a><a href="/politica.html">Privacidade</a><a href="/termos.html">Termos</a></nav></div></footer>`);
   for (const nav of $('footer nav').toArray()) {
+    if (footerHome && $(nav).closest('footer')[0] === footerHome) continue;
     if ($(nav).closest('.article-body').length) continue;
     const links = [...linksNavegacao(guias), ['/termos.html', 'Termos de Uso'], ['/politica.html', 'Pol\u00edtica de Privacidade']];
     substituir(nav, `<nav class="footer-navigation" aria-label="Links do rodap\u00e9">${links.map(([href, texto]) => `<a href="${href}">${texto}</a>`).join('')}</nav>`);

@@ -50,14 +50,26 @@ function carregarLeituras(artigos, root = process.cwd()) {
     });
     return { ...grupo, leituras };
   });
-  return { ...selecao, grupos };
+  const leituras = new Map(grupos.flatMap(grupo => grupo.leituras.map(item => [item.url, { ...item, categoria: grupo.titulo }])));
+  let destaquesInicio = [...leituras.values()].slice(0, 3);
+  if (selecao.destaquesInicio !== undefined) {
+    exigir(Array.isArray(selecao.destaquesInicio) && selecao.destaquesInicio.length > 0 && selecao.destaquesInicio.length <= 3, 'destaques da home');
+    const destaques = new Set();
+    destaquesInicio = selecao.destaquesInicio.map(item => {
+      exigir(item && leituras.has(item.url) && !destaques.has(item.url), 'destaque fora da selecao ou repetido');
+      exigir([item.titulo, item.categoria, item.resumo].every(texto), 'textos do destaque');
+      destaques.add(item.url);
+      return { ...leituras.get(item.url), titulo: item.titulo, categoria: item.categoria, resumo: item.resumo };
+    });
+  }
+  return { ...selecao, grupos, destaquesInicio };
 }
 
 function gerarResumoLeituras(selecao) {
   if (!selecao) return "";
   return `<section class="selected-readings" aria-labelledby="selected-readings-title">
-<h2 id="selected-readings-title"><a href="/${urlLeituras}">${escapar(selecao.titulo)}</a></h2>
-<ul>${selecao.grupos.map(grupo => `<li><h3><a href="/${urlLeituras}#${grupo.id}">${escapar(grupo.titulo)}</a></h3><p>${escapar(grupo.pergunta)}</p></li>`).join("\n")}</ul>
+<h2 id="selected-readings-title"><a href="/${urlLeituras}">Leituras selecionadas</a></h2>
+<ul>${selecao.destaquesInicio.map(item => `<li class="reading-card"><p class="reading-category">${escapar(item.categoria)}</p><h3>${escapar(item.titulo)}</h3><p class="reading-description">${escapar(item.resumo)}</p><a class="reading-link" href="/${item.url}" aria-label="Ler guia: ${escapar(item.titulo)}">Ler guia <span aria-hidden="true">&rarr;</span></a></li>`).join("\n")}</ul>
 </section>`;
 }
 

@@ -48,7 +48,9 @@ test("selecao valida preserva escopo e usa titulo atual do cadastro com escape",
   assert.equal(schema.mainEntity.itemListElement[0].name, artigo.titulo);
   assert.equal(schema.review, undefined);
   const home = cheerio.load(gerarResumoLeituras(selecao));
-  assert.equal(home('a[href="/guias.html#contratos"]').length, 1);
+  assert.equal(home(`a[href="/${artigo.url}"]`).length, 1);
+  assert.equal(home('.reading-card h3').text(), artigo.titulo);
+  assert.equal(home('a[href="/guias.html"]').length, 1);
   assert.equal(home(".article-body").length, 0);
   assert.equal(gerarResumoLeituras(null), "");
 }));
@@ -101,7 +103,8 @@ test("rebuild liga home e assuntos aos guias, preserva corpo e datas e e estavel
   assert.deepEqual(arquivos.map(p => fs.readFileSync(p, "utf8")), antes);
   const guias = cheerio.load(fs.readFileSync("guias.html", "utf8"));
   const home = cheerio.load(fs.readFileSync('index.html', 'utf8'));
-  assert.equal(home('.article-list-summary').text(), selecao.grupos[0].leituras[0].resumo);
+  assert.equal(home('.reading-description').text(), selecao.grupos[0].leituras[0].resumo);
+  assert.equal(home('.article-list-summary').length, 0);
   assert.equal(home('.article-list-meta > span').text(), artigo.categoria);
   assert.equal(home('sem').length, 0);
   assert.equal(guias('link[rel=canonical]').attr('href'), 'https://www.andersondamasio.com.br/guias.html');
@@ -129,4 +132,34 @@ test("configuracao invalida interrompe rebuild antes de alterar arquivos publico
   assert.equal(fs.readFileSync('index.html', 'utf8'), 'Home anterior');
   assert.equal(fs.existsSync('guias.html'), false);
   assert.equal(fs.existsSync('sitemap.xml'), false);
+}));
+
+test('destaques sao um subconjunto validado, com texto escapado e sem mudar os guias', () => workspace(root => {
+  const { artigo, selecao, salvar } = preparar();
+  const antes = carregarLeituras([artigo], root);
+  selecao.destaquesInicio = [{ url: artigo.url, titulo: 'Titulo <curto>', categoria: 'A & B', resumo: 'Exemplo <hipotetico>.' }];
+  salvar();
+  const depois = carregarLeituras([artigo], root);
+  assert.equal(gerarConteudoLeituras(depois), gerarConteudoLeituras(antes));
+  assert.deepEqual(criarSchemaLeituras(depois), criarSchemaLeituras(antes));
+  const $ = cheerio.load(gerarResumoLeituras(depois));
+  assert.equal($('.reading-card').length, 1);
+  assert.equal($('.reading-card h3').text(), 'Titulo <curto>');
+  assert.equal($('.reading-category').text(), 'A & B');
+  assert.equal($('.reading-link').attr('aria-label'), 'Ler guia: Titulo <curto>');
+  assert.equal($('curto, hipotetico').length, 0);
+}));
+
+test('recusa destaques invalidos antes de reescrever a home', () => workspace(root => {
+  const { artigo, selecao, salvar } = preparar();
+  const destaque = { url: artigo.url, titulo: 'Contrato', categoria: 'Arquitetura', resumo: 'Exemplo hipotetico.' };
+  fs.writeFileSync('index.html', 'Home anterior');
+  for (const destaques of [null, [], {}, [null], [destaque, destaque], Array(4).fill(destaque),
+    [{ ...destaque, url: 'artigos/fora.html' }], [{ ...destaque, url: 'https://example.org/' }],
+    [{ ...destaque, titulo: '' }], [{ ...destaque, categoria: null }], [{ ...destaque, resumo: ' ' }]]) {
+    selecao.destaquesInicio = destaques; salvar();
+    assert.throws(() => carregarLeituras([artigo], root), /Selecao de leituras invalida/);
+    assert.throws(() => reconstruirPaginasSeo(), /Selecao de leituras invalida/);
+    assert.equal(fs.readFileSync('index.html', 'utf8'), 'Home anterior');
+  }
 }));
