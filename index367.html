@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 367</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-arte-de-comprar-como-o-desenvolvimento-de-software-pode-otimizar-suas-compras-de-black-friday.html">A arte de comprar: como o desenvolvimento de software pode otimizar suas compras de Black Friday</a><time datetime="2025-11-14T12:41:13.851Z">14/11/2025 09:41</time></li>
-<li><a href="artigos/seguranca/a-revolucao-dos-vpns-por-que-voce-deveria-apostar-neles-em-2025.html">A Revolução dos VPNs: Por Que Você Deveria Apostar Neles em 2025?</a><time datetime="2025-11-14T11:18:50.603Z">14/11/2025 08:18</time></li>
-<li><a href="artigos/tecnologia/oneplus-15-o-flagship-que-pode-revolucionar-a-experiencia-android.html">OnePlus 15: O Flagship Que Pode Revolucionar a Experiência Android</a><time datetime="2025-11-14T10:23:19.991Z">14/11/2025 07:23</time></li>
-<li><a href="artigos/inteligencia-artificial/reduzindo-falsos-positivos-em-geracao-aumentada-o-desafio-do-cache-semantico-no-setor-bancario.html">Reduzindo Falsos Positivos em Geração Aumentada: O Desafio do Cache Semântico no Setor Bancário</a><time datetime="2025-11-14T09:22:51.143Z">14/11/2025 06:22</time></li>
-<li><a href="artigos/seguranca/o-futuro-sem-senhas-como-os-autenticadores-de-passkeys-estao-moldando-a-seguranca-digital.html">O futuro sem senhas: como os autenticadores de passkeys estão moldando a segurança digital</a><time datetime="2025-11-14T08:27:21.624Z">14/11/2025 05:27</time></li>
-<li><a href="artigos/desenvolvimento-de-software/como-construir-um-produto-que-os-clientes-amam-desde-o-dia-um.html">Como Construir um Produto que os Clientes Amam Desde o Dia Um</a><time datetime="2025-11-14T07:20:55.186Z">14/11/2025 04:20</time></li>
-<li><a href="artigos/tecnologia/a-tecnologia-que-te-libera-do-vicio-como-um-gadget-pode-mudar-sua-relacao-com-o-celular.html">A tecnologia que te libera do vício: como um gadget pode mudar sua relação com o celular</a><time datetime="2025-11-14T06:31:58.719Z">14/11/2025 03:31</time></li>
-<li><a href="artigos/tecnologia/samsung-e-oneplus-a-batalha-das-cameras-de-smartphones-e-o-papel-da-arquitetura-de-software.html">Samsung e OnePlus: A Batalha das Câmeras de Smartphones e o Papel da Arquitetura de Software</a><time datetime="2025-11-14T05:21:05.364Z">14/11/2025 02:21</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-do-codigo-como-o-gpt-5-1-pode-transformar-seu-fluxo-de-trabalho.html">A revolução do código: como o GPT-5.1 pode transformar seu fluxo de trabalho</a><time datetime="2025-11-14T04:24:55.273Z">14/11/2025 01:24</time></li>
-<li><a href="artigos/inteligencia-artificial/construindo-o-futuro-como-a-antropic-esta-mudando-o-jogo-da-infraestrutura-de-ia.html">Construindo o Futuro: Como a Antropic Está Mudando o Jogo da Infraestrutura de IA</a><time datetime="2025-11-14T03:13:54.877Z">14/11/2025 00:13</time></li>
+<li><a href="artigos/tecnologia/a-arte-de-comprar-como-o-desenvolvimento-de-software-pode-otimizar-suas-compras-de-black-friday.html">A arte de comprar: como o desenvolvimento de software pode otimizar suas compras de Black Friday</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-14T12:41:13.851Z">14/11/2025 09:41</time></div></li>
+<li><a href="artigos/seguranca/a-revolucao-dos-vpns-por-que-voce-deveria-apostar-neles-em-2025.html">A Revolução dos VPNs: Por Que Você Deveria Apostar Neles em 2025?</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-14T11:18:50.603Z">14/11/2025 08:18</time></div></li>
+<li><a href="artigos/tecnologia/oneplus-15-o-flagship-que-pode-revolucionar-a-experiencia-android.html">OnePlus 15: O Flagship Que Pode Revolucionar a Experiência Android</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-14T10:23:19.991Z">14/11/2025 07:23</time></div></li>
+<li><a href="artigos/inteligencia-artificial/reduzindo-falsos-positivos-em-geracao-aumentada-o-desafio-do-cache-semantico-no-setor-bancario.html">Reduzindo Falsos Positivos em Geração Aumentada: O Desafio do Cache Semântico no Setor Bancário</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-14T09:22:51.143Z">14/11/2025 06:22</time></div></li>
+<li><a href="artigos/seguranca/o-futuro-sem-senhas-como-os-autenticadores-de-passkeys-estao-moldando-a-seguranca-digital.html">O futuro sem senhas: como os autenticadores de passkeys estão moldando a segurança digital</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-14T08:27:21.624Z">14/11/2025 05:27</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/como-construir-um-produto-que-os-clientes-amam-desde-o-dia-um.html">Como Construir um Produto que os Clientes Amam Desde o Dia Um</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-11-14T07:20:55.186Z">14/11/2025 04:20</time></div></li>
+<li><a href="artigos/tecnologia/a-tecnologia-que-te-libera-do-vicio-como-um-gadget-pode-mudar-sua-relacao-com-o-celular.html">A tecnologia que te libera do vício: como um gadget pode mudar sua relação com o celular</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-14T06:31:58.719Z">14/11/2025 03:31</time></div></li>
+<li><a href="artigos/tecnologia/samsung-e-oneplus-a-batalha-das-cameras-de-smartphones-e-o-papel-da-arquitetura-de-software.html">Samsung e OnePlus: A Batalha das Câmeras de Smartphones e o Papel da Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-14T05:21:05.364Z">14/11/2025 02:21</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-do-codigo-como-o-gpt-5-1-pode-transformar-seu-fluxo-de-trabalho.html">A revolução do código: como o GPT-5.1 pode transformar seu fluxo de trabalho</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-14T04:24:55.273Z">14/11/2025 01:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/construindo-o-futuro-como-a-antropic-esta-mudando-o-jogo-da-infraestrutura-de-ia.html">Construindo o Futuro: Como a Antropic Está Mudando o Jogo da Infraestrutura de IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-14T03:13:54.877Z">14/11/2025 00:13</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

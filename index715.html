@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 715</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/desenhando-mundos-virtuais-como-a-character-ai-revoluciona-a-interacao-com-ia.html">Desenhando Mundos Virtuais: Como a Character.AI Revoluciona a Interação com IA</a><time datetime="2025-06-03T06:29:08.891Z">03/06/2025 03:29</time></li>
-<li><a href="artigos/tecnologia/o-fim-do-google-como-conhecemos-a-hora-da-virada-para-novas-oportunidades.html">O fim do Google como conhecemos: a hora da virada para novas oportunidades</a><time datetime="2025-06-03T05:20:15.845Z">03/06/2025 02:20</time></li>
-<li><a href="artigos/tecnologia/despertando-o-espirito-da-web-construindo-comunidades-em-tempos-de-ia.html">Despertando o Espírito da Web: Construindo Comunidades em Tempos de IA</a><time datetime="2025-06-03T04:26:10.485Z">03/06/2025 01:26</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-ia-nos-dispositivos-samsung-o-que-esperar.html">A revolução da IA nos dispositivos Samsung: O que esperar?</a><time datetime="2025-06-03T03:16:23.725Z">03/06/2025 00:16</time></li>
-<li><a href="artigos/tecnologia/como-a-tecnologia-pode-tornar-a-justica-mais-acessivel-para-trabalhadores.html">Como a Tecnologia Pode Tornar a Justiça Mais Acessível para Trabalhadores</a><time datetime="2025-06-03T01:28:39.110Z">02/06/2025 22:28</time></li>
-<li><a href="artigos/tecnologia/a-queda-do-motor-britanico-reflexoes-sobre-a-inovacao-e-o-risco.html">A Queda do Motor Britânico: Reflexões sobre a Inovação e o Risco</a><time datetime="2025-06-02T23:18:32.007Z">02/06/2025 20:18</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-do-suporte-tecnico-como-a-ia-pode-libertar-os-profissionais-de-ti.html">A revolução do suporte técnico: como a IA pode libertar os profissionais de TI</a><time datetime="2025-06-02T22:57:25.707Z">02/06/2025 19:57</time></li>
-<li><a href="artigos/banco-de-dados/a-nova-onda-de-aquisicoes-snowflake-e-a-busca-pela-excelencia-em-dados.html">A nova onda de aquisições: Snowflake e a busca pela excelência em dados</a><time datetime="2025-06-02T22:37:00.953Z">02/06/2025 19:37</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-parceiros-a-estrategia-da-broadcom-e-suas-implicacoes.html">A nova era dos parceiros: a estratégia da Broadcom e suas implicações</a><time datetime="2025-06-02T22:19:52.057Z">02/06/2025 19:19</time></li>
-<li><a href="artigos/inteligencia-artificial/o-futuro-da-publicidade-em-video-como-a-ia-esta-transformando-o-mercado.html">O futuro da publicidade em vídeo: como a IA está transformando o mercado</a><time datetime="2025-06-02T21:19:14.515Z">02/06/2025 18:19</time></li>
+<li><a href="artigos/inteligencia-artificial/desenhando-mundos-virtuais-como-a-character-ai-revoluciona-a-interacao-com-ia.html">Desenhando Mundos Virtuais: Como a Character.AI Revoluciona a Interação com IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-03T06:29:08.891Z">03/06/2025 03:29</time></div></li>
+<li><a href="artigos/tecnologia/o-fim-do-google-como-conhecemos-a-hora-da-virada-para-novas-oportunidades.html">O fim do Google como conhecemos: a hora da virada para novas oportunidades</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-06-03T05:20:15.845Z">03/06/2025 02:20</time></div></li>
+<li><a href="artigos/tecnologia/despertando-o-espirito-da-web-construindo-comunidades-em-tempos-de-ia.html">Despertando o Espírito da Web: Construindo Comunidades em Tempos de IA</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-06-03T04:26:10.485Z">03/06/2025 01:26</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-ia-nos-dispositivos-samsung-o-que-esperar.html">A revolução da IA nos dispositivos Samsung: O que esperar?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-03T03:16:23.725Z">03/06/2025 00:16</time></div></li>
+<li><a href="artigos/tecnologia/como-a-tecnologia-pode-tornar-a-justica-mais-acessivel-para-trabalhadores.html">Como a Tecnologia Pode Tornar a Justiça Mais Acessível para Trabalhadores</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-06-03T01:28:39.110Z">02/06/2025 22:28</time></div></li>
+<li><a href="artigos/tecnologia/a-queda-do-motor-britanico-reflexoes-sobre-a-inovacao-e-o-risco.html">A Queda do Motor Britânico: Reflexões sobre a Inovação e o Risco</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-06-02T23:18:32.007Z">02/06/2025 20:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-do-suporte-tecnico-como-a-ia-pode-libertar-os-profissionais-de-ti.html">A revolução do suporte técnico: como a IA pode libertar os profissionais de TI</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-02T22:57:25.707Z">02/06/2025 19:57</time></div></li>
+<li><a href="artigos/banco-de-dados/a-nova-onda-de-aquisicoes-snowflake-e-a-busca-pela-excelencia-em-dados.html">A nova onda de aquisições: Snowflake e a busca pela excelência em dados</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2025-06-02T22:37:00.953Z">02/06/2025 19:37</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-parceiros-a-estrategia-da-broadcom-e-suas-implicacoes.html">A nova era dos parceiros: a estratégia da Broadcom e suas implicações</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-06-02T22:19:52.057Z">02/06/2025 19:19</time></div></li>
+<li><a href="artigos/inteligencia-artificial/o-futuro-da-publicidade-em-video-como-a-ia-esta-transformando-o-mercado.html">O futuro da publicidade em vídeo: como a IA está transformando o mercado</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-02T21:19:14.515Z">02/06/2025 18:19</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

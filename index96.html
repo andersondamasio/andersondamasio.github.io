@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 96</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/robotica/a-revolucao-das-maquinas-como-a-inteligencia-fisica-pode-transformar-o-futuro-da-robotica.html">A Revolução das Máquinas: Como a Inteligência Física Pode Transformar o Futuro da Robótica</a><time datetime="2026-03-28T02:11:41.175Z">27/03/2026 23:11</time></li>
-<li><a href="artigos/tecnologia/a-nova-api-de-instalacao-web-o-futuro-das-pwas-ao-alcance-de-todos.html">A nova API de Instalação Web: O futuro das PWAs ao alcance de todos</a><time datetime="2026-03-27T23:36:51.064Z">27/03/2026 20:36</time></li>
-<li><a href="artigos/seguranca/a-protecao-digital-que-voce-nao-pode-ignorar-a-importancia-de-um-bom-antivirus.html">A proteção digital que você não pode ignorar: a importância de um bom antivírus</a><time datetime="2026-03-27T22:39:29.569Z">27/03/2026 19:39</time></li>
-<li><a href="artigos/tecnologia/como-os-fones-de-ouvido-antigos-da-sony-continuam-relevantes-em-2026.html">Como os Fones de Ouvido Antigos da Sony Continuam Relevantes em 2026</a><time datetime="2026-03-27T21:39:12.218Z">27/03/2026 18:39</time></li>
-<li><a href="artigos/tecnologia/aproveitando-as-ofertas-de-ram-como-a-arquitetura-de-software-pode-impactar-sua-experiencia-gamer.html">Aproveitando as Ofertas de RAM: Como a Arquitetura de Software Pode Impactar sua Experiência Gamer</a><time datetime="2026-03-27T20:43:30.180Z">27/03/2026 17:43</time></li>
-<li><a href="artigos/tecnologia/o-carregador-que-voce-nao-sabia-que-precisava-anker-nano-45w-com-display-inteligente.html">O carregador que você não sabia que precisava: Anker Nano 45W com display inteligente</a><time datetime="2026-03-27T19:46:06.589Z">27/03/2026 16:46</time></li>
-<li><a href="artigos/tecnologia/novas-telas-oled-a-revolucao-que-chega-com-descontos-irresistiveis.html">Novas Telas OLED: A Revolução que Chega com Descontos Irresistíveis</a><time datetime="2026-03-27T19:00:11.813Z">27/03/2026 16:00</time></li>
-<li><a href="artigos/tecnologia/transforme-sua-casa-em-um-lar-inteligente-com-gadgets-incriveis-por-menos-de-r-250.html">Transforme sua casa em um lar inteligente com gadgets incríveis por menos de R$ 250!</a><time datetime="2026-03-27T17:54:54.144Z">27/03/2026 14:54</time></li>
-<li><a href="artigos/tecnologia/como-as-taxas-de-atualizacao-das-tvs-impactam-na-qualidade-da-imagem-e-na-experiencia-do-usuario.html">Como as Taxas de Atualização das TVs Impactam na Qualidade da Imagem e na Experiência do Usuário</a><time datetime="2026-03-27T17:00:06.407Z">27/03/2026 14:00</time></li>
-<li><a href="artigos/tecnologia/aproveite-a-liquidacao-de-primavera-da-amazon-ssds-de-alto-desempenho-com-descontos-imperdiveis.html">Aproveite a Liquidação de Primavera da Amazon: SSDs de Alto Desempenho com Descontos Imperdíveis</a><time datetime="2026-03-27T15:58:02.065Z">27/03/2026 12:58</time></li>
+<li><a href="artigos/robotica/a-revolucao-das-maquinas-como-a-inteligencia-fisica-pode-transformar-o-futuro-da-robotica.html">A Revolução das Máquinas: Como a Inteligência Física Pode Transformar o Futuro da Robótica</a><div class="article-list-meta"><span>Robótica</span><time datetime="2026-03-28T02:11:41.175Z">27/03/2026 23:11</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-api-de-instalacao-web-o-futuro-das-pwas-ao-alcance-de-todos.html">A nova API de Instalação Web: O futuro das PWAs ao alcance de todos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-27T23:36:51.064Z">27/03/2026 20:36</time></div></li>
+<li><a href="artigos/seguranca/a-protecao-digital-que-voce-nao-pode-ignorar-a-importancia-de-um-bom-antivirus.html">A proteção digital que você não pode ignorar: a importância de um bom antivírus</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-27T22:39:29.569Z">27/03/2026 19:39</time></div></li>
+<li><a href="artigos/tecnologia/como-os-fones-de-ouvido-antigos-da-sony-continuam-relevantes-em-2026.html">Como os Fones de Ouvido Antigos da Sony Continuam Relevantes em 2026</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-27T21:39:12.218Z">27/03/2026 18:39</time></div></li>
+<li><a href="artigos/tecnologia/aproveitando-as-ofertas-de-ram-como-a-arquitetura-de-software-pode-impactar-sua-experiencia-gamer.html">Aproveitando as Ofertas de RAM: Como a Arquitetura de Software Pode Impactar sua Experiência Gamer</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-27T20:43:30.180Z">27/03/2026 17:43</time></div></li>
+<li><a href="artigos/tecnologia/o-carregador-que-voce-nao-sabia-que-precisava-anker-nano-45w-com-display-inteligente.html">O carregador que você não sabia que precisava: Anker Nano 45W com display inteligente</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-27T19:46:06.589Z">27/03/2026 16:46</time></div></li>
+<li><a href="artigos/tecnologia/novas-telas-oled-a-revolucao-que-chega-com-descontos-irresistiveis.html">Novas Telas OLED: A Revolução que Chega com Descontos Irresistíveis</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-27T19:00:11.813Z">27/03/2026 16:00</time></div></li>
+<li><a href="artigos/tecnologia/transforme-sua-casa-em-um-lar-inteligente-com-gadgets-incriveis-por-menos-de-r-250.html">Transforme sua casa em um lar inteligente com gadgets incríveis por menos de R$ 250!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-27T17:54:54.144Z">27/03/2026 14:54</time></div></li>
+<li><a href="artigos/tecnologia/como-as-taxas-de-atualizacao-das-tvs-impactam-na-qualidade-da-imagem-e-na-experiencia-do-usuario.html">Como as Taxas de Atualização das TVs Impactam na Qualidade da Imagem e na Experiência do Usuário</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-27T17:00:06.407Z">27/03/2026 14:00</time></div></li>
+<li><a href="artigos/tecnologia/aproveite-a-liquidacao-de-primavera-da-amazon-ssds-de-alto-desempenho-com-descontos-imperdiveis.html">Aproveite a Liquidação de Primavera da Amazon: SSDs de Alto Desempenho com Descontos Imperdíveis</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-27T15:58:02.065Z">27/03/2026 12:58</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 170</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-revolucao-dos-projetores-samsung-freestyle-2-e-o-futuro-do-entretenimento.html">A revolução dos projetores: Samsung Freestyle 2 e o futuro do entretenimento</a><time datetime="2026-02-15T10:29:55.276Z">15/02/2026 07:29</time></li>
-<li><a href="artigos/inteligencia-artificial/a-saida-do-curso-de-ciencia-da-computacao-onde-os-estudantes-estao-indo.html">A saída do curso de Ciência da Computação: onde os estudantes estão indo?</a><time datetime="2026-02-15T09:35:08.327Z">15/02/2026 06:35</time></li>
-<li><a href="artigos/tecnologia/o-novo-echo-hub-da-amazon-a-revolucao-no-controle-da-casa-inteligente.html">O novo Echo Hub da Amazon: a revolução no controle da casa inteligente</a><time datetime="2026-02-15T08:37:17.938Z">15/02/2026 05:37</time></li>
-<li><a href="artigos/devops/localstack-o-fim-de-uma-era-ou-apenas-uma-nova-fase.html">LocalStack em 2026: autenticação, CI e revisão da migração</a><time datetime="2026-02-15T07:41:59.674Z">15/02/2026 04:41</time></li>
-<li><a href="artigos/tecnologia/a-nova-geracao-de-laptops-o-vivobook-s15-como-uma-opcao-acessivel-e-poderosa.html">A nova geração de laptops: o Vivobook S15 como uma opção acessível e poderosa</a><time datetime="2026-02-15T06:56:33.291Z">15/02/2026 03:56</time></li>
-<li><a href="artigos/tecnologia/experiencia-de-cinema-na-palma-da-mao-o-futuro-das-lentes-xr.html">Experiência de Cinema na Palma da Mão: O Futuro das Lentes XR</a><time datetime="2026-02-15T05:59:29.772Z">15/02/2026 02:59</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-da-tv-por-que-a-hisense-u8qg-e-uma-escolha-inteligente-e-como-a-tecnologia-pode-moldar-nossas-experiencias.html">A revolução da TV: Por que a Hisense U8QG é uma escolha inteligente e como a tecnologia pode moldar nossas experiências</a><time datetime="2026-02-15T04:57:13.050Z">15/02/2026 01:57</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-das-ferramentas-de-ia-vale-a-pena-investir.html">A nova era das ferramentas de IA: vale a pena investir?</a><time datetime="2026-02-15T02:14:28.506Z">14/02/2026 23:14</time></li>
-<li><a href="artigos/tecnologia/como-o-echo-show-11-reforca-a-arquitetura-da-casa-inteligente-e-seus-desafios.html">Como o Echo Show 11 Reforça a Arquitetura da Casa Inteligente e Seus Desafios</a><time datetime="2026-02-14T23:27:52.881Z">14/02/2026 20:27</time></li>
-<li><a href="artigos/seguranca/a-seguranca-da-ia-um-mito-em-tempos-de-desregramento.html">A segurança da IA: um mito em tempos de desregramento?</a><time datetime="2026-02-14T22:26:58.205Z">14/02/2026 19:26</time></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-projetores-samsung-freestyle-2-e-o-futuro-do-entretenimento.html">A revolução dos projetores: Samsung Freestyle 2 e o futuro do entretenimento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-15T10:29:55.276Z">15/02/2026 07:29</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-saida-do-curso-de-ciencia-da-computacao-onde-os-estudantes-estao-indo.html">A saída do curso de Ciência da Computação: onde os estudantes estão indo?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-15T09:35:08.327Z">15/02/2026 06:35</time></div></li>
+<li><a href="artigos/tecnologia/o-novo-echo-hub-da-amazon-a-revolucao-no-controle-da-casa-inteligente.html">O novo Echo Hub da Amazon: a revolução no controle da casa inteligente</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-15T08:37:17.938Z">15/02/2026 05:37</time></div></li>
+<li><a href="artigos/devops/localstack-o-fim-de-uma-era-ou-apenas-uma-nova-fase.html">LocalStack em 2026: autenticação, CI e revisão da migração</a><div class="article-list-meta"><span>DevOps</span><time datetime="2026-02-15T07:41:59.674Z">15/02/2026 04:41</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-geracao-de-laptops-o-vivobook-s15-como-uma-opcao-acessivel-e-poderosa.html">A nova geração de laptops: o Vivobook S15 como uma opção acessível e poderosa</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-15T06:56:33.291Z">15/02/2026 03:56</time></div></li>
+<li><a href="artigos/tecnologia/experiencia-de-cinema-na-palma-da-mao-o-futuro-das-lentes-xr.html">Experiência de Cinema na Palma da Mão: O Futuro das Lentes XR</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-15T05:59:29.772Z">15/02/2026 02:59</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-da-tv-por-que-a-hisense-u8qg-e-uma-escolha-inteligente-e-como-a-tecnologia-pode-moldar-nossas-experiencias.html">A revolução da TV: Por que a Hisense U8QG é uma escolha inteligente e como a tecnologia pode moldar nossas experiências</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-15T04:57:13.050Z">15/02/2026 01:57</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-das-ferramentas-de-ia-vale-a-pena-investir.html">A nova era das ferramentas de IA: vale a pena investir?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-15T02:14:28.506Z">14/02/2026 23:14</time></div></li>
+<li><a href="artigos/tecnologia/como-o-echo-show-11-reforca-a-arquitetura-da-casa-inteligente-e-seus-desafios.html">Como o Echo Show 11 Reforça a Arquitetura da Casa Inteligente e Seus Desafios</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-14T23:27:52.881Z">14/02/2026 20:27</time></div></li>
+<li><a href="artigos/seguranca/a-seguranca-da-ia-um-mito-em-tempos-de-desregramento.html">A segurança da IA: um mito em tempos de desregramento?</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-14T22:26:58.205Z">14/02/2026 19:26</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

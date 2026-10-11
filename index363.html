@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 363</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-arte-de-cacar-tvs-na-black-friday-vale-a-pena.html">A arte de caçar TVs na Black Friday: vale a pena?</a><time datetime="2025-11-16T08:25:01.870Z">16/11/2025 05:25</time></li>
-<li><a href="artigos/tecnologia/transforme-sua-tv-em-um-hub-inteligente-5-maneiras-de-explorar-seu-chromecast-alem-do-streaming.html">Transforme sua TV em um hub inteligente: 5 maneiras de explorar seu Chromecast além do streaming</a><time datetime="2025-11-16T07:18:56.881Z">16/11/2025 04:18</time></li>
-<li><a href="artigos/tecnologia/a-batalha-dos-flagships-oneplus-15-vs-samsung-galaxy-s25-ultra.html">A batalha dos flagships: OnePlus 15 vs. Samsung Galaxy S25 Ultra</a><time datetime="2025-11-16T06:29:33.856Z">16/11/2025 03:29</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-oneplus-15-supera-s25-ultra-em-desempenho-e-autonomia.html">A revolução dos smartphones: OnePlus 15 supera S25 Ultra em desempenho e autonomia</a><time datetime="2025-11-16T05:20:05.151Z">16/11/2025 02:20</time></li>
-<li><a href="artigos/tecnologia/a-oportunidade-perfeita-o-monitor-certo-para-gamers-e-profissionais.html">A oportunidade perfeita: o monitor certo para gamers e profissionais</a><time datetime="2025-11-16T04:26:51.443Z">16/11/2025 01:26</time></li>
-<li><a href="artigos/tecnologia/a-nova-batalha-dos-fones-vale-a-pena-investir-nos-airpods-pro-3.html">A nova batalha dos fones: vale a pena investir nos AirPods Pro 3?</a><time datetime="2025-11-16T03:19:42.911Z">16/11/2025 00:19</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-laptops-microsoft-surface-laptop-em-foco.html">A nova era dos laptops: Microsoft Surface Laptop em foco</a><time datetime="2025-11-16T01:41:01.049Z">15/11/2025 22:41</time></li>
-<li><a href="artigos/tecnologia/novas-ofertas-de-black-friday-como-a-tecnologia-pode-transformar-sua-experiencia-de-compra.html">Novas ofertas de Black Friday: como a tecnologia pode transformar sua experiência de compra</a><time datetime="2025-11-15T23:18:18.560Z">15/11/2025 20:18</time></li>
-<li><a href="artigos/tecnologia/a-batalha-legal-do-seculo-quando-a-tecnologia-encontra-a-fraude.html">A batalha legal do século: quando a tecnologia encontra a fraude</a><time datetime="2025-11-15T22:16:07.659Z">15/11/2025 19:16</time></li>
-<li><a href="artigos/tecnologia/inovacoes-em-tecnologia-o-caso-apple-e-masimo-e-o-desafio-da-propriedade-intelectual.html">Inovações em Tecnologia: O Caso Apple e Masimo e o Desafio da Propriedade Intelectual</a><time datetime="2025-11-15T21:17:05.554Z">15/11/2025 18:17</time></li>
+<li><a href="artigos/tecnologia/a-arte-de-cacar-tvs-na-black-friday-vale-a-pena.html">A arte de caçar TVs na Black Friday: vale a pena?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-16T08:25:01.870Z">16/11/2025 05:25</time></div></li>
+<li><a href="artigos/tecnologia/transforme-sua-tv-em-um-hub-inteligente-5-maneiras-de-explorar-seu-chromecast-alem-do-streaming.html">Transforme sua TV em um hub inteligente: 5 maneiras de explorar seu Chromecast além do streaming</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-16T07:18:56.881Z">16/11/2025 04:18</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-dos-flagships-oneplus-15-vs-samsung-galaxy-s25-ultra.html">A batalha dos flagships: OnePlus 15 vs. Samsung Galaxy S25 Ultra</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-16T06:29:33.856Z">16/11/2025 03:29</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-oneplus-15-supera-s25-ultra-em-desempenho-e-autonomia.html">A revolução dos smartphones: OnePlus 15 supera S25 Ultra em desempenho e autonomia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-16T05:20:05.151Z">16/11/2025 02:20</time></div></li>
+<li><a href="artigos/tecnologia/a-oportunidade-perfeita-o-monitor-certo-para-gamers-e-profissionais.html">A oportunidade perfeita: o monitor certo para gamers e profissionais</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-16T04:26:51.443Z">16/11/2025 01:26</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-batalha-dos-fones-vale-a-pena-investir-nos-airpods-pro-3.html">A nova batalha dos fones: vale a pena investir nos AirPods Pro 3?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-16T03:19:42.911Z">16/11/2025 00:19</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-laptops-microsoft-surface-laptop-em-foco.html">A nova era dos laptops: Microsoft Surface Laptop em foco</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-16T01:41:01.049Z">15/11/2025 22:41</time></div></li>
+<li><a href="artigos/tecnologia/novas-ofertas-de-black-friday-como-a-tecnologia-pode-transformar-sua-experiencia-de-compra.html">Novas ofertas de Black Friday: como a tecnologia pode transformar sua experiência de compra</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-15T23:18:18.560Z">15/11/2025 20:18</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-legal-do-seculo-quando-a-tecnologia-encontra-a-fraude.html">A batalha legal do século: quando a tecnologia encontra a fraude</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-15T22:16:07.659Z">15/11/2025 19:16</time></div></li>
+<li><a href="artigos/tecnologia/inovacoes-em-tecnologia-o-caso-apple-e-masimo-e-o-desafio-da-propriedade-intelectual.html">Inovações em Tecnologia: O Caso Apple e Masimo e o Desafio da Propriedade Intelectual</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-15T21:17:05.554Z">15/11/2025 18:17</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

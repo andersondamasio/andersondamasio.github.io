@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 140</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/o-crescimento-explosivo-de-assistentes-de-programacao-o-caso-do-cursor.html">O crescimento explosivo de assistentes de programação: O caso do Cursor</a><time datetime="2026-03-03T02:10:05.513Z">02/03/2026 23:10</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-custos-em-ia-como-transformar-despesas-em-lucros.html">A nova era dos custos em IA: como transformar despesas em lucros</a><time datetime="2026-03-03T00:00:23.854Z">02/03/2026 21:00</time></li>
-<li><a href="artigos/tecnologia/instagram-e-a-controversia-da-saude-mental-um-olhar-tecnico-para-o-impacto-das-metricas.html">Instagram e a Controvérsia da Saúde Mental: Um Olhar Técnico para o Impacto das Métricas</a><time datetime="2026-03-02T22:30:03.979Z">02/03/2026 19:30</time></li>
-<li><a href="artigos/tecnologia/a-modularidade-em-laptops-o-futuro-esta-mais-perto-do-que-parece.html">A modularidade em laptops: o futuro está mais perto do que parece</a><time datetime="2026-03-02T22:14:50.972Z">02/03/2026 19:14</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-displays-como-a-tcl-esta-transformando-a-experiencia-mobile.html">A nova era dos displays: como a TCL está transformando a experiência mobile</a><time datetime="2026-03-02T21:18:30.870Z">02/03/2026 18:18</time></li>
-<li><a href="artigos/seguranca/como-proteger-seu-negocio-na-era-da-inteligencia-artificial-taticas-essenciais.html">Como Proteger seu Negócio na Era da Inteligência Artificial: Táticas Essenciais</a><time datetime="2026-03-02T19:44:06.055Z">02/03/2026 16:44</time></li>
-<li><a href="artigos/inteligencia-artificial/revolucao-no-chatbot-por-que-claude-esta-tomando-o-lugar-do-chatgpt.html">Revolução no Chatbot: Por que Claude Está Tomando o Lugar do ChatGPT?</a><time datetime="2026-03-02T18:52:55.077Z">02/03/2026 15:52</time></li>
-<li><a href="artigos/tecnologia/nebios-uma-nova-esperanca-para-o-desktop-linux-ou-apenas-mais-uma-promessa.html">NebiOS: Uma Nova Esperança para o Desktop Linux ou Apenas Mais Uma Promessa?</a><time datetime="2026-03-02T17:49:37.250Z">02/03/2026 14:49</time></li>
-<li><a href="artigos/tecnologia/a-nova-cara-do-nothing-phone-4a-inovacao-e-estilo-em-todas-as-cores.html">A nova cara do Nothing Phone 4a: inovação e estilo em todas as cores</a><time datetime="2026-03-02T16:49:45.648Z">02/03/2026 13:49</time></li>
-<li><a href="artigos/carreira/como-o-turbotax-pode-facilitar-a-vida-do-pequeno-empreendedor.html">Como o TurboTax Pode Facilitar a Vida do Pequeno Empreendedor</a><time datetime="2026-03-02T15:45:58.356Z">02/03/2026 12:45</time></li>
+<li><a href="artigos/inteligencia-artificial/o-crescimento-explosivo-de-assistentes-de-programacao-o-caso-do-cursor.html">O crescimento explosivo de assistentes de programação: O caso do Cursor</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-03T02:10:05.513Z">02/03/2026 23:10</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-custos-em-ia-como-transformar-despesas-em-lucros.html">A nova era dos custos em IA: como transformar despesas em lucros</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-03T00:00:23.854Z">02/03/2026 21:00</time></div></li>
+<li><a href="artigos/tecnologia/instagram-e-a-controversia-da-saude-mental-um-olhar-tecnico-para-o-impacto-das-metricas.html">Instagram e a Controvérsia da Saúde Mental: Um Olhar Técnico para o Impacto das Métricas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-02T22:30:03.979Z">02/03/2026 19:30</time></div></li>
+<li><a href="artigos/tecnologia/a-modularidade-em-laptops-o-futuro-esta-mais-perto-do-que-parece.html">A modularidade em laptops: o futuro está mais perto do que parece</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-02T22:14:50.972Z">02/03/2026 19:14</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-displays-como-a-tcl-esta-transformando-a-experiencia-mobile.html">A nova era dos displays: como a TCL está transformando a experiência mobile</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-02T21:18:30.870Z">02/03/2026 18:18</time></div></li>
+<li><a href="artigos/seguranca/como-proteger-seu-negocio-na-era-da-inteligencia-artificial-taticas-essenciais.html">Como Proteger seu Negócio na Era da Inteligência Artificial: Táticas Essenciais</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-02T19:44:06.055Z">02/03/2026 16:44</time></div></li>
+<li><a href="artigos/inteligencia-artificial/revolucao-no-chatbot-por-que-claude-esta-tomando-o-lugar-do-chatgpt.html">Revolução no Chatbot: Por que Claude Está Tomando o Lugar do ChatGPT?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-02T18:52:55.077Z">02/03/2026 15:52</time></div></li>
+<li><a href="artigos/tecnologia/nebios-uma-nova-esperanca-para-o-desktop-linux-ou-apenas-mais-uma-promessa.html">NebiOS: Uma Nova Esperança para o Desktop Linux ou Apenas Mais Uma Promessa?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-02T17:49:37.250Z">02/03/2026 14:49</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-cara-do-nothing-phone-4a-inovacao-e-estilo-em-todas-as-cores.html">A nova cara do Nothing Phone 4a: inovação e estilo em todas as cores</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-02T16:49:45.648Z">02/03/2026 13:49</time></div></li>
+<li><a href="artigos/carreira/como-o-turbotax-pode-facilitar-a-vida-do-pequeno-empreendedor.html">Como o TurboTax Pode Facilitar a Vida do Pequeno Empreendedor</a><div class="article-list-meta"><span>Carreira</span><time datetime="2026-03-02T15:45:58.356Z">02/03/2026 12:45</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

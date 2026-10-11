@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 122</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-revolucao-nas-rotas-google-maps-e-a-nova-era-da-navegacao.html">A revolução nas rotas: Google Maps e a nova era da navegação</a><time datetime="2026-03-12T17:08:11.769Z">12/03/2026 14:08</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-colaboradores-em-criadores-de-agentes-de-ia-o-futuro-da-automacao-no-trabalho.html">Transformando Colaboradores em Criadores de Agentes de IA: O Futuro da Automação no Trabalho</a><time datetime="2026-03-12T16:03:14.768Z">12/03/2026 13:03</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-wi-fi-7-vale-a-pena-investir-em-um-roteador-mesh.html">A Revolução do Wi-Fi 7: Vale a Pena Investir em um Roteador Mesh?</a><time datetime="2026-03-12T14:11:43.889Z">12/03/2026 11:11</time></li>
-<li><a href="artigos/inteligencia-artificial/como-o-google-esta-transformando-noticias-em-previsoes-de-chuvas-torrenciais.html">Como o Google está Transformando Notícias em Previsões de Chuvas Torrenciais</a><time datetime="2026-03-12T13:03:37.721Z">12/03/2026 10:03</time></li>
-<li><a href="artigos/seguranca/novos-desafios-a-vista-os-certificados-de-seguranca-do-seu-pc-podem-estar-prestes-a-expirar.html">Novos desafios à vista: os certificados de segurança do seu PC podem estar prestes a expirar</a><time datetime="2026-03-12T10:44:35.833Z">12/03/2026 07:44</time></li>
-<li><a href="artigos/seguranca/a-nova-era-das-vpns-como-escolher-a-melhor-para-streaming.html">A nova era das VPNs: como escolher a melhor para streaming?</a><time datetime="2026-03-12T09:46:41.483Z">12/03/2026 06:46</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-dos-atores-virtuais-tilly-norwood-e-os-desafios-da-criacao-musical-em-ia.html">A era dos atores virtuais: Tilly Norwood e os desafios da criação musical em IA</a><time datetime="2026-03-12T08:45:53.599Z">12/03/2026 05:45</time></li>
-<li><a href="artigos/seguranca/construindo-seguranca-como-adaptar-suas-automacao-com-identidades-de-servico.html">Construindo Segurança: Como Adaptar Suas Automação com Identidades de Serviço</a><time datetime="2026-03-12T07:51:10.251Z">12/03/2026 04:51</time></li>
-<li><a href="artigos/seguranca/a-nova-era-da-responsabilidade-digital-como-as-plataformas-sociais-devem-se-adaptar.html">A nova era da responsabilidade digital: como as plataformas sociais devem se adaptar</a><time datetime="2026-03-12T07:00:08.818Z">12/03/2026 04:00</time></li>
-<li><a href="artigos/seguranca/a-guerra-cibernetica-e-os-novos-caminhos-da-arquitetura-de-software.html">A guerra cibernética e os novos caminhos da arquitetura de software</a><time datetime="2026-03-12T05:55:26.322Z">12/03/2026 02:55</time></li>
+<li><a href="artigos/tecnologia/a-revolucao-nas-rotas-google-maps-e-a-nova-era-da-navegacao.html">A revolução nas rotas: Google Maps e a nova era da navegação</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-12T17:08:11.769Z">12/03/2026 14:08</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-colaboradores-em-criadores-de-agentes-de-ia-o-futuro-da-automacao-no-trabalho.html">Transformando Colaboradores em Criadores de Agentes de IA: O Futuro da Automação no Trabalho</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-12T16:03:14.768Z">12/03/2026 13:03</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-wi-fi-7-vale-a-pena-investir-em-um-roteador-mesh.html">A Revolução do Wi-Fi 7: Vale a Pena Investir em um Roteador Mesh?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-12T14:11:43.889Z">12/03/2026 11:11</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-o-google-esta-transformando-noticias-em-previsoes-de-chuvas-torrenciais.html">Como o Google está Transformando Notícias em Previsões de Chuvas Torrenciais</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-12T13:03:37.721Z">12/03/2026 10:03</time></div></li>
+<li><a href="artigos/seguranca/novos-desafios-a-vista-os-certificados-de-seguranca-do-seu-pc-podem-estar-prestes-a-expirar.html">Novos desafios à vista: os certificados de segurança do seu PC podem estar prestes a expirar</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-12T10:44:35.833Z">12/03/2026 07:44</time></div></li>
+<li><a href="artigos/seguranca/a-nova-era-das-vpns-como-escolher-a-melhor-para-streaming.html">A nova era das VPNs: como escolher a melhor para streaming?</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-12T09:46:41.483Z">12/03/2026 06:46</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-dos-atores-virtuais-tilly-norwood-e-os-desafios-da-criacao-musical-em-ia.html">A era dos atores virtuais: Tilly Norwood e os desafios da criação musical em IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-12T08:45:53.599Z">12/03/2026 05:45</time></div></li>
+<li><a href="artigos/seguranca/construindo-seguranca-como-adaptar-suas-automacao-com-identidades-de-servico.html">Construindo Segurança: Como Adaptar Suas Automação com Identidades de Serviço</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-12T07:51:10.251Z">12/03/2026 04:51</time></div></li>
+<li><a href="artigos/seguranca/a-nova-era-da-responsabilidade-digital-como-as-plataformas-sociais-devem-se-adaptar.html">A nova era da responsabilidade digital: como as plataformas sociais devem se adaptar</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-12T07:00:08.818Z">12/03/2026 04:00</time></div></li>
+<li><a href="artigos/seguranca/a-guerra-cibernetica-e-os-novos-caminhos-da-arquitetura-de-software.html">A guerra cibernética e os novos caminhos da arquitetura de software</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-12T05:55:26.322Z">12/03/2026 02:55</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

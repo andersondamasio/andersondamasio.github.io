@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 785</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/conectando-talentos-e-inovacao-hightouch-yc-s19-esta-recrutando.html">Conectando talentos e inovação: Hightouch (YC S19) está recrutando!</a><time datetime="2025-05-04T17:26:33.922Z">04/05/2025 14:26</time></li>
-<li><a href="artigos/gerenciando-e-visualizando-tags-no-git-domine-essa-ferramenta-essencial.html">Gerenciando e Visualizando Tags no Git: Domine essa Ferramenta Essencial</a><time datetime="2025-05-04T17:19:47.377Z">04/05/2025 14:19</time></li>
-<li><a href="artigos/o-pluralsight-acaba-de-evoluir-descubra-como-aproveitar-ao-maximo-essa-nova-possibilidade.html">O Pluralsight Acaba de Evoluir: Descubra Como Aproveitar ao Máximo essa Nova Possibilidade</a><time datetime="2025-05-04T17:14:03.543Z">04/05/2025 14:14</time></li>
-<li><a href="artigos/analisando-o-uso-de-cpu-em-multiplos-processos-no-visual-studio.html">Analisando o Uso de CPU em Múltiplos Processos no Visual Studio</a><time datetime="2025-05-04T17:04:23.046Z">04/05/2025 14:04</time></li>
-<li><a href="artigos/net-aspire-e-a-integracao-com-azure-functions-desvendando-a-potencia-dessa-dupla.html">.NET Aspire e a Integração com Azure Functions: Desvendando a Potência dessa Dupla!</a><time datetime="2025-05-04T17:02:01.689Z">04/05/2025 14:02</time></li>
-<li><a href="artigos/github-copilot-a-revolucao-da-codificacao-colaborativa-no-visual-studio-17-14-preview-3.html">GitHub Copilot: A revolução da codificação colaborativa no Visual Studio 17.14 Preview 3</a><time datetime="2025-05-04T16:39:53.654Z">04/05/2025 13:39</time></li>
-<li><a href="artigos/atualizacao-azure-devops-refrescando-tokens-e-versao-5-do-terraform.html">Atualização Azure DevOps: Refrescando Tokens e Versão 5 do Terraform</a><time datetime="2025-05-04T16:20:12.572Z">04/05/2025 13:20</time></li>
-<li><a href="artigos/fundamentos-da-arquitetura-de-software-desvendando-os-segredos-por-tras-de-lucasrbsouza.html">Fundamentos da Arquitetura de Software: Desvendando os Segredos por Trás de @LucasrbSouza</a><time datetime="2025-05-04T16:14:46.502Z">04/05/2025 13:14</time></li>
-<li><a href="artigos/arquitetura-de-software-decifrando-os-40min-de-estudo-que-parecem-grego.html">Arquitetura de Software: Decifrando os 40min de Estudo que Parecem Grego</a><time datetime="2025-05-04T15:40:42.817Z">04/05/2025 12:40</time></li>
-<li><a href="artigos/propriedade-intelectual-o-poder-da-inovacao-e-protecao-no-mundo-tecnologico.html">Propriedade Intelectual: O Poder da Inovação e Proteção no Mundo Tecnológico</a><time datetime="2025-05-04T15:36:55.417Z">04/05/2025 12:36</time></li>
+<li><a href="artigos/conectando-talentos-e-inovacao-hightouch-yc-s19-esta-recrutando.html">Conectando talentos e inovação: Hightouch (YC S19) está recrutando!</a><div class="article-list-meta"><span>Outros</span><time datetime="2025-05-04T17:26:33.922Z">04/05/2025 14:26</time></div></li>
+<li><a href="artigos/gerenciando-e-visualizando-tags-no-git-domine-essa-ferramenta-essencial.html">Gerenciando e Visualizando Tags no Git: Domine essa Ferramenta Essencial</a><div class="article-list-meta"><span>Outros</span><time datetime="2025-05-04T17:19:47.377Z">04/05/2025 14:19</time></div></li>
+<li><a href="artigos/o-pluralsight-acaba-de-evoluir-descubra-como-aproveitar-ao-maximo-essa-nova-possibilidade.html">O Pluralsight Acaba de Evoluir: Descubra Como Aproveitar ao Máximo essa Nova Possibilidade</a><div class="article-list-meta"><span>Outros</span><time datetime="2025-05-04T17:14:03.543Z">04/05/2025 14:14</time></div></li>
+<li><a href="artigos/analisando-o-uso-de-cpu-em-multiplos-processos-no-visual-studio.html">Analisando o Uso de CPU em Múltiplos Processos no Visual Studio</a><div class="article-list-meta"><span>Outros</span><time datetime="2025-05-04T17:04:23.046Z">04/05/2025 14:04</time></div></li>
+<li><a href="artigos/net-aspire-e-a-integracao-com-azure-functions-desvendando-a-potencia-dessa-dupla.html">.NET Aspire e a Integração com Azure Functions: Desvendando a Potência dessa Dupla!</a><div class="article-list-meta"><span>Outros</span><time datetime="2025-05-04T17:02:01.689Z">04/05/2025 14:02</time></div></li>
+<li><a href="artigos/github-copilot-a-revolucao-da-codificacao-colaborativa-no-visual-studio-17-14-preview-3.html">GitHub Copilot: A revolução da codificação colaborativa no Visual Studio 17.14 Preview 3</a><div class="article-list-meta"><span>Outros</span><time datetime="2025-05-04T16:39:53.654Z">04/05/2025 13:39</time></div></li>
+<li><a href="artigos/atualizacao-azure-devops-refrescando-tokens-e-versao-5-do-terraform.html">Atualização Azure DevOps: Refrescando Tokens e Versão 5 do Terraform</a><div class="article-list-meta"><span>Outros</span><time datetime="2025-05-04T16:20:12.572Z">04/05/2025 13:20</time></div></li>
+<li><a href="artigos/fundamentos-da-arquitetura-de-software-desvendando-os-segredos-por-tras-de-lucasrbsouza.html">Fundamentos da Arquitetura de Software: Desvendando os Segredos por Trás de @LucasrbSouza</a><div class="article-list-meta"><span>Outros</span><time datetime="2025-05-04T16:14:46.502Z">04/05/2025 13:14</time></div></li>
+<li><a href="artigos/arquitetura-de-software-decifrando-os-40min-de-estudo-que-parecem-grego.html">Arquitetura de Software: Decifrando os 40min de Estudo que Parecem Grego</a><div class="article-list-meta"><span>Outros</span><time datetime="2025-05-04T15:40:42.817Z">04/05/2025 12:40</time></div></li>
+<li><a href="artigos/propriedade-intelectual-o-poder-da-inovacao-e-protecao-no-mundo-tecnologico.html">Propriedade Intelectual: O Poder da Inovação e Proteção no Mundo Tecnológico</a><div class="article-list-meta"><span>Outros</span><time datetime="2025-05-04T15:36:55.417Z">04/05/2025 12:36</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

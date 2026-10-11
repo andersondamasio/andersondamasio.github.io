@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 393</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/licenciamento-de-imagens-o-novo-caminho-da-ia-e-o-papel-da-etica.html">Licenciamento de Imagens: O Novo Caminho da IA e o Papel da Ética</a><time datetime="2025-11-02T10:20:40.215Z">02/11/2025 07:20</time></li>
-<li><a href="artigos/tecnologia/a-nova-revolucao-dos-smartwatches-mobvoi-ticwatch-pro-5-enduro.html">A nova revolução dos smartwatches: Mobvoi TicWatch Pro 5 Enduro</a><time datetime="2025-11-02T09:24:47.749Z">02/11/2025 06:24</time></li>
-<li><a href="artigos/seguranca/como-a-arquitetura-de-software-pode-proteger-contra-ataques-governamentais.html">Como a Arquitetura de Software Pode Proteger Contra Ataques Governamentais</a><time datetime="2025-11-02T08:22:39.265Z">02/11/2025 05:22</time></li>
-<li><a href="artigos/tecnologia/como-turbinar-seu-ps5-3-dicas-para-um-desempenho-de-outro-nivel.html">Como turbinar seu PS5: 3 dicas para um desempenho de outro nível</a><time datetime="2025-11-02T07:20:06.493Z">02/11/2025 04:20</time></li>
-<li><a href="artigos/tecnologia/a-nova-cara-dos-chromebooks-acer-chromebook-plus-spin-514-e-a-aposta-que-voce-precisa-considerar.html">A nova cara dos Chromebooks: Acer Chromebook Plus Spin 514 é a aposta que você precisa considerar</a><time datetime="2025-11-02T06:30:18.613Z">02/11/2025 03:30</time></li>
-<li><a href="artigos/tecnologia/transformando-a-saude-o-polar-loop-e-a-revolucao-dos-wearables-sem-taxa-mensal.html">Transformando a Saúde: O Polar Loop e a Revolução dos Wearables Sem Taxa Mensal</a><time datetime="2025-11-02T05:20:02.180Z">02/11/2025 02:20</time></li>
-<li><a href="artigos/seguranca/hackers-e-a-fragilidade-das-instituicoes-um-alerta-para-a-seguranca-digital.html">Hackers e a Fragilidade das Instituições: Um Alerta para a Segurança Digital</a><time datetime="2025-11-02T04:23:46.964Z">02/11/2025 01:23</time></li>
-<li><a href="artigos/tecnologia/ferramentas-que-transformam-o-impacto-da-tecnologia-em-medicoes-precisos.html">Ferramentas que Transformam: O Impacto da Tecnologia em Medições Precisos</a><time datetime="2025-11-02T03:18:06.268Z">02/11/2025 00:18</time></li>
-<li><a href="artigos/tecnologia/tatuagens-no-campo-tecnologico-a-nova-fronteira-da-criatividade.html">Tatuagens no Campo Tecnológico: A Nova Fronteira da Criatividade</a><time datetime="2025-11-02T01:39:32.646Z">01/11/2025 22:39</time></li>
-<li><a href="artigos/desenvolvimento-de-software/construindo-pontes-como-o-sdk-swift-para-android-pode-revolucionar-o-desenvolvimento-multiplataforma.html">Construindo Pontes: Como o SDK Swift para Android Pode Revolucionar o Desenvolvimento Multiplataforma</a><time datetime="2025-11-01T23:19:07.367Z">01/11/2025 20:19</time></li>
+<li><a href="artigos/inteligencia-artificial/licenciamento-de-imagens-o-novo-caminho-da-ia-e-o-papel-da-etica.html">Licenciamento de Imagens: O Novo Caminho da IA e o Papel da Ética</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-02T10:20:40.215Z">02/11/2025 07:20</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-revolucao-dos-smartwatches-mobvoi-ticwatch-pro-5-enduro.html">A nova revolução dos smartwatches: Mobvoi TicWatch Pro 5 Enduro</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-02T09:24:47.749Z">02/11/2025 06:24</time></div></li>
+<li><a href="artigos/seguranca/como-a-arquitetura-de-software-pode-proteger-contra-ataques-governamentais.html">Como a Arquitetura de Software Pode Proteger Contra Ataques Governamentais</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-02T08:22:39.265Z">02/11/2025 05:22</time></div></li>
+<li><a href="artigos/tecnologia/como-turbinar-seu-ps5-3-dicas-para-um-desempenho-de-outro-nivel.html">Como turbinar seu PS5: 3 dicas para um desempenho de outro nível</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-02T07:20:06.493Z">02/11/2025 04:20</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-cara-dos-chromebooks-acer-chromebook-plus-spin-514-e-a-aposta-que-voce-precisa-considerar.html">A nova cara dos Chromebooks: Acer Chromebook Plus Spin 514 é a aposta que você precisa considerar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-02T06:30:18.613Z">02/11/2025 03:30</time></div></li>
+<li><a href="artigos/tecnologia/transformando-a-saude-o-polar-loop-e-a-revolucao-dos-wearables-sem-taxa-mensal.html">Transformando a Saúde: O Polar Loop e a Revolução dos Wearables Sem Taxa Mensal</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-02T05:20:02.180Z">02/11/2025 02:20</time></div></li>
+<li><a href="artigos/seguranca/hackers-e-a-fragilidade-das-instituicoes-um-alerta-para-a-seguranca-digital.html">Hackers e a Fragilidade das Instituições: Um Alerta para a Segurança Digital</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-02T04:23:46.964Z">02/11/2025 01:23</time></div></li>
+<li><a href="artigos/tecnologia/ferramentas-que-transformam-o-impacto-da-tecnologia-em-medicoes-precisos.html">Ferramentas que Transformam: O Impacto da Tecnologia em Medições Precisos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-02T03:18:06.268Z">02/11/2025 00:18</time></div></li>
+<li><a href="artigos/tecnologia/tatuagens-no-campo-tecnologico-a-nova-fronteira-da-criatividade.html">Tatuagens no Campo Tecnológico: A Nova Fronteira da Criatividade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-02T01:39:32.646Z">01/11/2025 22:39</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/construindo-pontes-como-o-sdk-swift-para-android-pode-revolucionar-o-desenvolvimento-multiplataforma.html">Construindo Pontes: Como o SDK Swift para Android Pode Revolucionar o Desenvolvimento Multiplataforma</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-11-01T23:19:07.367Z">01/11/2025 20:19</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

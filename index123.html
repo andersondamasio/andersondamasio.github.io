@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 123</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-corrida-pela-interface-cerebro-maquina-o-caso-da-gestala.html">A corrida pela interface cérebro-máquina: o caso da Gestala</a><time datetime="2026-03-12T04:50:55.978Z">12/03/2026 01:50</time></li>
-<li><a href="artigos/seguranca/atencao-um-buraco-de-seguranca-que-pode-afetar-1-em-cada-4-celulares-android.html">Atenção! Um Buraco de Segurança que Pode Afetar 1 em Cada 4 Celulares Android</a><time datetime="2026-03-12T02:08:57.897Z">11/03/2026 23:08</time></li>
-<li><a href="artigos/tecnologia/nuro-desbravando-as-ruas-de-toquio-com-veiculos-autonomos.html">Nuro: Desbravando as Ruas de Tóquio com Veículos Autônomos</a><time datetime="2026-03-11T23:30:29.983Z">11/03/2026 20:30</time></li>
-<li><a href="artigos/fintech/a-era-dos-neobanks-o-que-a-saida-do-fi-nos-ensina-sobre-inovacao-e-adaptacao.html">A era dos neobanks: o que a saída do Fi nos ensina sobre inovação e adaptação</a><time datetime="2026-03-11T22:31:03.696Z">11/03/2026 19:31</time></li>
-<li><a href="artigos/tecnologia/a-nova-referencia-dos-laptops-samsung-galaxy-book-6-ultra.html">A nova referência dos laptops: Samsung Galaxy Book 6 Ultra</a><time datetime="2026-03-11T21:37:40.644Z">11/03/2026 18:37</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-lojas-de-apps-altstore-pal-e-o-futuro-do-fediverse.html">A revolução das lojas de apps: AltStore PAL e o futuro do fediverse</a><time datetime="2026-03-11T20:38:36.467Z">11/03/2026 17:38</time></li>
-<li><a href="artigos/tecnologia/baterias-solidas-o-futuro-da-portabilidade-e-seguranca-em-energia.html">Baterias Sólidas: O Futuro da Portabilidade e Segurança em Energia</a><time datetime="2026-03-11T19:45:27.792Z">11/03/2026 16:45</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-coding-como-a-replit-esta-moldando-o-futuro-do-desenvolvimento-de-software.html">A revolução do coding: como a Replit está moldando o futuro do desenvolvimento de software</a><time datetime="2026-03-11T18:57:44.064Z">11/03/2026 15:57</time></li>
-<li><a href="artigos/tecnologia/a-nova-onda-das-bebidas-funcionais-licoes-de-poppi-para-startups.html">A nova onda das bebidas funcionais: lições de Poppi para startups</a><time datetime="2026-03-11T17:53:10.795Z">11/03/2026 14:53</time></li>
-<li><a href="artigos/seguranca/quando-a-seguranca-entra-em-colapso-o-caso-do-hacker-e-os-arquivos-do-fbi.html">Quando a Segurança Entra em Colapso: O Caso do Hacker e os Arquivos do FBI</a><time datetime="2026-03-11T16:56:44.896Z">11/03/2026 13:56</time></li>
+<li><a href="artigos/inteligencia-artificial/a-corrida-pela-interface-cerebro-maquina-o-caso-da-gestala.html">A corrida pela interface cérebro-máquina: o caso da Gestala</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-12T04:50:55.978Z">12/03/2026 01:50</time></div></li>
+<li><a href="artigos/seguranca/atencao-um-buraco-de-seguranca-que-pode-afetar-1-em-cada-4-celulares-android.html">Atenção! Um Buraco de Segurança que Pode Afetar 1 em Cada 4 Celulares Android</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-12T02:08:57.897Z">11/03/2026 23:08</time></div></li>
+<li><a href="artigos/tecnologia/nuro-desbravando-as-ruas-de-toquio-com-veiculos-autonomos.html">Nuro: Desbravando as Ruas de Tóquio com Veículos Autônomos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-11T23:30:29.983Z">11/03/2026 20:30</time></div></li>
+<li><a href="artigos/fintech/a-era-dos-neobanks-o-que-a-saida-do-fi-nos-ensina-sobre-inovacao-e-adaptacao.html">A era dos neobanks: o que a saída do Fi nos ensina sobre inovação e adaptação</a><div class="article-list-meta"><span>Fintech</span><time datetime="2026-03-11T22:31:03.696Z">11/03/2026 19:31</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-referencia-dos-laptops-samsung-galaxy-book-6-ultra.html">A nova referência dos laptops: Samsung Galaxy Book 6 Ultra</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-11T21:37:40.644Z">11/03/2026 18:37</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-lojas-de-apps-altstore-pal-e-o-futuro-do-fediverse.html">A revolução das lojas de apps: AltStore PAL e o futuro do fediverse</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-11T20:38:36.467Z">11/03/2026 17:38</time></div></li>
+<li><a href="artigos/tecnologia/baterias-solidas-o-futuro-da-portabilidade-e-seguranca-em-energia.html">Baterias Sólidas: O Futuro da Portabilidade e Segurança em Energia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-11T19:45:27.792Z">11/03/2026 16:45</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-coding-como-a-replit-esta-moldando-o-futuro-do-desenvolvimento-de-software.html">A revolução do coding: como a Replit está moldando o futuro do desenvolvimento de software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-11T18:57:44.064Z">11/03/2026 15:57</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-onda-das-bebidas-funcionais-licoes-de-poppi-para-startups.html">A nova onda das bebidas funcionais: lições de Poppi para startups</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-11T17:53:10.795Z">11/03/2026 14:53</time></div></li>
+<li><a href="artigos/seguranca/quando-a-seguranca-entra-em-colapso-o-caso-do-hacker-e-os-arquivos-do-fbi.html">Quando a Segurança Entra em Colapso: O Caso do Hacker e os Arquivos do FBI</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-11T16:56:44.896Z">11/03/2026 13:56</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

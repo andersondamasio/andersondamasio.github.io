@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 126</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/seguranca/a-responsabilidade-das-plataformas-de-ia-um-olhar-sobre-o-caso-do-tiroteio-no-canada.html">A responsabilidade das plataformas de IA: um olhar sobre o caso do tiroteio no Canadá</a><time datetime="2026-03-10T11:36:53.688Z">10/03/2026 08:36</time></li>
-<li><a href="artigos/programacao/desbravando-o-vinext-uma-nova-fronteira-no-desenvolvimento-com-vite-e-ia.html">Desbravando o Vinext: Uma Nova Fronteira no Desenvolvimento com Vite e IA</a><time datetime="2026-03-10T10:43:06.532Z">10/03/2026 07:43</time></li>
-<li><a href="artigos/tecnologia/transformando-o-futuro-como-a-uzum-esta-redefinindo-o-cenario-digital-no-uzbequistao.html">Transformando o Futuro: Como a Uzum Está Redefinindo o Cenário Digital no Uzbequistão</a><time datetime="2026-03-10T07:45:29.464Z">10/03/2026 04:45</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-como-a-producao-indiana-pode-mudar-o-jogo-da-apple.html">A revolução dos smartphones: como a produção indiana pode mudar o jogo da Apple</a><time datetime="2026-03-10T06:54:13.644Z">10/03/2026 03:54</time></li>
-<li><a href="artigos/seguranca/explorando-as-sombras-como-ferramentas-de-hacking-estao-nas-maos-erradas.html">Explorando as Sombras: Como Ferramentas de Hacking Estão nas Mãos Erradas</a><time datetime="2026-03-10T04:17:52.498Z">10/03/2026 01:17</time></li>
-<li><a href="artigos/tecnologia/como-a-arquitetura-de-software-pode-impactar-na-escolha-entre-youtube-premium-e-premium-lite.html">Como a Arquitetura de Software Pode Impactar na Escolha entre YouTube Premium e Premium Lite</a><time datetime="2026-03-10T02:02:32.628Z">09/03/2026 23:02</time></li>
-<li><a href="artigos/tecnologia/novos-ceus-o-futuro-dos-taxis-aereos-eletricos-e-seu-impacto-na-arquitetura-de-software.html">Novos Céus: O Futuro dos Taxis Aéreos Elétricos e seu Impacto na Arquitetura de Software</a><time datetime="2026-03-09T22:32:32.728Z">09/03/2026 19:32</time></li>
-<li><a href="artigos/inteligencia-artificial/a-defesa-de-anthropic-um-alerta-para-a-industria-de-ia-e-suas-implicacoes-na-arquitetura-de-software.html">A defesa de Anthropic: um alerta para a indústria de IA e suas implicações na arquitetura de software</a><time datetime="2026-03-09T21:37:12.862Z">09/03/2026 18:37</time></li>
-<li><a href="artigos/tecnologia/como-dar-uma-nova-vida-ao-seu-windows-11-dicas-praticas-de-limpeza-e-otimizacao.html">Como dar uma nova vida ao seu Windows 11: dicas práticas de limpeza e otimização</a><time datetime="2026-03-09T20:38:44.730Z">09/03/2026 17:38</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-do-codigo-como-ferramentas-de-ia-estao-moldando-o-futuro-da-revisao-de-software.html">A revolução do código: como ferramentas de IA estão moldando o futuro da revisão de software</a><time datetime="2026-03-09T19:44:51.982Z">09/03/2026 16:44</time></li>
+<li><a href="artigos/seguranca/a-responsabilidade-das-plataformas-de-ia-um-olhar-sobre-o-caso-do-tiroteio-no-canada.html">A responsabilidade das plataformas de IA: um olhar sobre o caso do tiroteio no Canadá</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-10T11:36:53.688Z">10/03/2026 08:36</time></div></li>
+<li><a href="artigos/programacao/desbravando-o-vinext-uma-nova-fronteira-no-desenvolvimento-com-vite-e-ia.html">Desbravando o Vinext: Uma Nova Fronteira no Desenvolvimento com Vite e IA</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-03-10T10:43:06.532Z">10/03/2026 07:43</time></div></li>
+<li><a href="artigos/tecnologia/transformando-o-futuro-como-a-uzum-esta-redefinindo-o-cenario-digital-no-uzbequistao.html">Transformando o Futuro: Como a Uzum Está Redefinindo o Cenário Digital no Uzbequistão</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-10T07:45:29.464Z">10/03/2026 04:45</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-como-a-producao-indiana-pode-mudar-o-jogo-da-apple.html">A revolução dos smartphones: como a produção indiana pode mudar o jogo da Apple</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-10T06:54:13.644Z">10/03/2026 03:54</time></div></li>
+<li><a href="artigos/seguranca/explorando-as-sombras-como-ferramentas-de-hacking-estao-nas-maos-erradas.html">Explorando as Sombras: Como Ferramentas de Hacking Estão nas Mãos Erradas</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-10T04:17:52.498Z">10/03/2026 01:17</time></div></li>
+<li><a href="artigos/tecnologia/como-a-arquitetura-de-software-pode-impactar-na-escolha-entre-youtube-premium-e-premium-lite.html">Como a Arquitetura de Software Pode Impactar na Escolha entre YouTube Premium e Premium Lite</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-10T02:02:32.628Z">09/03/2026 23:02</time></div></li>
+<li><a href="artigos/tecnologia/novos-ceus-o-futuro-dos-taxis-aereos-eletricos-e-seu-impacto-na-arquitetura-de-software.html">Novos Céus: O Futuro dos Taxis Aéreos Elétricos e seu Impacto na Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-09T22:32:32.728Z">09/03/2026 19:32</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-defesa-de-anthropic-um-alerta-para-a-industria-de-ia-e-suas-implicacoes-na-arquitetura-de-software.html">A defesa de Anthropic: um alerta para a indústria de IA e suas implicações na arquitetura de software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-09T21:37:12.862Z">09/03/2026 18:37</time></div></li>
+<li><a href="artigos/tecnologia/como-dar-uma-nova-vida-ao-seu-windows-11-dicas-praticas-de-limpeza-e-otimizacao.html">Como dar uma nova vida ao seu Windows 11: dicas práticas de limpeza e otimização</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-09T20:38:44.730Z">09/03/2026 17:38</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-do-codigo-como-ferramentas-de-ia-estao-moldando-o-futuro-da-revisao-de-software.html">A revolução do código: como ferramentas de IA estão moldando o futuro da revisão de software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-09T19:44:51.982Z">09/03/2026 16:44</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

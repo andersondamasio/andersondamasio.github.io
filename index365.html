@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 365</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/cloud/a-nuvem-soberana-e-o-futuro-da-residencia-de-dados-no-brasil.html">A Nuvem Soberana e o Futuro da Residência de Dados no Brasil</a><time datetime="2025-11-15T10:19:47.226Z">15/11/2025 07:19</time></li>
-<li><a href="artigos/tecnologia/a-escolha-certa-airpods-pro-2-ou-pro-3-entenda-suas-diferencas-e-aproveite-as-promocoes.html">A escolha certa: AirPods Pro 2 ou Pro 3? Entenda suas diferenças e aproveite as promoções</a><time datetime="2025-11-15T09:19:11.367Z">15/11/2025 06:19</time></li>
-<li><a href="artigos/tecnologia/um-relogio-inteligente-que-vale-a-pena-o-que-o-oneplus-watch-2r-tem-a-oferecer.html">Um relógio inteligente que vale a pena? O que o OnePlus Watch 2R tem a oferecer</a><time datetime="2025-11-15T08:24:43.799Z">15/11/2025 05:24</time></li>
-<li><a href="artigos/tecnologia/oportunidades-na-black-friday-como-escolher-o-smartwatch-ideal.html">Oportunidades na Black Friday: Como Escolher o Smartwatch Ideal</a><time datetime="2025-11-15T07:18:36.079Z">15/11/2025 04:18</time></li>
-<li><a href="artigos/tecnologia/o-apple-watch-que-vale-a-pena-comprar-agora-spoiler-nao-e-o-mais-novo.html">O Apple Watch que vale a pena comprar agora? Spoiler: não é o mais novo!</a><time datetime="2025-11-15T06:28:39.348Z">15/11/2025 03:28</time></li>
-<li><a href="artigos/tecnologia-automotiva/a-nova-era-da-seguranca-em-veiculos-autonomos.html">A nova era da segurança em veículos autônomos</a><time datetime="2025-11-15T05:19:52.403Z">15/11/2025 02:19</time></li>
-<li><a href="artigos/tecnologia/a-cacada-as-ofertas-como-a-arquitetura-de-software-pode-transformar-sua-experiencia-de-compras.html">A Caçada às Ofertas: Como a Arquitetura de Software Pode Transformar sua Experiência de Compras</a><time datetime="2025-11-15T04:23:16.671Z">15/11/2025 01:23</time></li>
-<li><a href="artigos/tecnologia/a-nova-onda-da-realidade-virtual-meta-quest-3s-e-suas-vantagens-imbativeis.html">A nova onda da realidade virtual: Meta Quest 3S e suas vantagens imbatíveis</a><time datetime="2025-11-15T03:08:10.402Z">15/11/2025 00:08</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-numeros-o-que-a-openai-e-microsoft-revelam-sobre-o-futuro-da-ia.html">A revolução dos números: o que a OpenAI e Microsoft revelam sobre o futuro da IA</a><time datetime="2025-11-15T01:25:49.730Z">14/11/2025 22:25</time></li>
-<li><a href="artigos/inteligencia-artificial/a-corrida-do-codigo-aberto-como-os-eua-podem-manter-a-lideranca-em-ia.html">A corrida do código aberto: como os EUA podem manter a liderança em IA</a><time datetime="2025-11-14T23:19:08.155Z">14/11/2025 20:19</time></li>
+<li><a href="artigos/cloud/a-nuvem-soberana-e-o-futuro-da-residencia-de-dados-no-brasil.html">A Nuvem Soberana e o Futuro da Residência de Dados no Brasil</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-11-15T10:19:47.226Z">15/11/2025 07:19</time></div></li>
+<li><a href="artigos/tecnologia/a-escolha-certa-airpods-pro-2-ou-pro-3-entenda-suas-diferencas-e-aproveite-as-promocoes.html">A escolha certa: AirPods Pro 2 ou Pro 3? Entenda suas diferenças e aproveite as promoções</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-15T09:19:11.367Z">15/11/2025 06:19</time></div></li>
+<li><a href="artigos/tecnologia/um-relogio-inteligente-que-vale-a-pena-o-que-o-oneplus-watch-2r-tem-a-oferecer.html">Um relógio inteligente que vale a pena? O que o OnePlus Watch 2R tem a oferecer</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-15T08:24:43.799Z">15/11/2025 05:24</time></div></li>
+<li><a href="artigos/tecnologia/oportunidades-na-black-friday-como-escolher-o-smartwatch-ideal.html">Oportunidades na Black Friday: Como Escolher o Smartwatch Ideal</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-15T07:18:36.079Z">15/11/2025 04:18</time></div></li>
+<li><a href="artigos/tecnologia/o-apple-watch-que-vale-a-pena-comprar-agora-spoiler-nao-e-o-mais-novo.html">O Apple Watch que vale a pena comprar agora? Spoiler: não é o mais novo!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-15T06:28:39.348Z">15/11/2025 03:28</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/a-nova-era-da-seguranca-em-veiculos-autonomos.html">A nova era da segurança em veículos autônomos</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-11-15T05:19:52.403Z">15/11/2025 02:19</time></div></li>
+<li><a href="artigos/tecnologia/a-cacada-as-ofertas-como-a-arquitetura-de-software-pode-transformar-sua-experiencia-de-compras.html">A Caçada às Ofertas: Como a Arquitetura de Software Pode Transformar sua Experiência de Compras</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-15T04:23:16.671Z">15/11/2025 01:23</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-onda-da-realidade-virtual-meta-quest-3s-e-suas-vantagens-imbativeis.html">A nova onda da realidade virtual: Meta Quest 3S e suas vantagens imbatíveis</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-15T03:08:10.402Z">15/11/2025 00:08</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-numeros-o-que-a-openai-e-microsoft-revelam-sobre-o-futuro-da-ia.html">A revolução dos números: o que a OpenAI e Microsoft revelam sobre o futuro da IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-15T01:25:49.730Z">14/11/2025 22:25</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-corrida-do-codigo-aberto-como-os-eua-podem-manter-a-lideranca-em-ia.html">A corrida do código aberto: como os EUA podem manter a liderança em IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-14T23:19:08.155Z">14/11/2025 20:19</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

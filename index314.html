@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 314</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia-automotiva/a-revolucao-das-robotaxis-como-a-arquitetura-de-software-impulsiona-o-futuro-do-transporte.html">A Revolução das Robotaxis: Como a Arquitetura de Software Impulsiona o Futuro do Transporte</a><time datetime="2025-12-08T22:21:21.391Z">08/12/2025 19:21</time></li>
-<li><a href="artigos/tecnologia/a-crise-de-lideranca-na-industria-automotiva-licoes-para-o-desenvolvimento-de-software.html">A crise de liderança na indústria automotiva: lições para o desenvolvimento de software</a><time datetime="2025-12-08T21:18:58.688Z">08/12/2025 18:18</time></li>
-<li><a href="artigos/inteligencia-artificial/o-novo-fundo-da-tiger-global-um-reflexo-da-cautela-no-mercado-de-venture-capital.html">O novo fundo da Tiger Global: um reflexo da cautela no mercado de Venture Capital</a><time datetime="2025-12-08T20:26:00.085Z">08/12/2025 17:26</time></li>
-<li><a href="artigos/inteligencia-artificial/descomplicando-o-codigo-a-revolucao-do-claude-code-no-slack.html">Descomplicando o Código: A Revolução do Claude Code no Slack</a><time datetime="2025-12-08T19:18:54.664Z">08/12/2025 16:18</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-do-tempo-como-o-chatgpt-esta-transformando-a-produtividade-no-trabalho.html">A Era do Tempo: Como o ChatGPT Está Transformando a Produtividade no Trabalho</a><time datetime="2025-12-08T18:33:25.443Z">08/12/2025 15:33</time></li>
-<li><a href="artigos/desenvolvimento-de-software/a-nova-era-das-interacoes-sociais-tiktok-e-suas-colecoes-compartilhadas.html">A nova era das interações sociais: TikTok e suas coleções compartilhadas</a><time datetime="2025-12-08T17:22:07.382Z">08/12/2025 14:22</time></li>
-<li><a href="artigos/tecnologia/gerenciando-pacotes-linux-snap-ou-flatpak-o-que-escolher-e-por-que.html">Gerenciando Pacotes Linux: Snap ou Flatpak? O Que Escolher e Por Quê?</a><time datetime="2025-12-08T16:29:48.405Z">08/12/2025 13:29</time></li>
-<li><a href="artigos/tecnologia/paramount-e-netflix-a-guerra-dos-gigantes-do-entretenimento.html">Paramount e Netflix: A Guerra dos Gigantes do Entretenimento</a><time datetime="2025-12-08T15:24:38.033Z">08/12/2025 12:24</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-da-privacidade-como-um-novo-operador-desafia-as-telecomunicacoes.html">A revolução da privacidade: como um novo operador desafia as telecomunicações</a><time datetime="2025-12-08T14:23:49.577Z">08/12/2025 11:23</time></li>
-<li><a href="artigos/tecnologia-automotiva/a-revolucao-dos-carros-conectados-como-o-linux-vai-transformar-nossa-experiencia-automotiva.html">A revolução dos carros conectados: como o Linux vai transformar nossa experiência automotiva</a><time datetime="2025-12-08T13:38:27.338Z">08/12/2025 10:38</time></li>
+<li><a href="artigos/tecnologia-automotiva/a-revolucao-das-robotaxis-como-a-arquitetura-de-software-impulsiona-o-futuro-do-transporte.html">A Revolução das Robotaxis: Como a Arquitetura de Software Impulsiona o Futuro do Transporte</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-12-08T22:21:21.391Z">08/12/2025 19:21</time></div></li>
+<li><a href="artigos/tecnologia/a-crise-de-lideranca-na-industria-automotiva-licoes-para-o-desenvolvimento-de-software.html">A crise de liderança na indústria automotiva: lições para o desenvolvimento de software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-08T21:18:58.688Z">08/12/2025 18:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/o-novo-fundo-da-tiger-global-um-reflexo-da-cautela-no-mercado-de-venture-capital.html">O novo fundo da Tiger Global: um reflexo da cautela no mercado de Venture Capital</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-08T20:26:00.085Z">08/12/2025 17:26</time></div></li>
+<li><a href="artigos/inteligencia-artificial/descomplicando-o-codigo-a-revolucao-do-claude-code-no-slack.html">Descomplicando o Código: A Revolução do Claude Code no Slack</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-08T19:18:54.664Z">08/12/2025 16:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-do-tempo-como-o-chatgpt-esta-transformando-a-produtividade-no-trabalho.html">A Era do Tempo: Como o ChatGPT Está Transformando a Produtividade no Trabalho</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-08T18:33:25.443Z">08/12/2025 15:33</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/a-nova-era-das-interacoes-sociais-tiktok-e-suas-colecoes-compartilhadas.html">A nova era das interações sociais: TikTok e suas coleções compartilhadas</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-12-08T17:22:07.382Z">08/12/2025 14:22</time></div></li>
+<li><a href="artigos/tecnologia/gerenciando-pacotes-linux-snap-ou-flatpak-o-que-escolher-e-por-que.html">Gerenciando Pacotes Linux: Snap ou Flatpak? O Que Escolher e Por Quê?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-08T16:29:48.405Z">08/12/2025 13:29</time></div></li>
+<li><a href="artigos/tecnologia/paramount-e-netflix-a-guerra-dos-gigantes-do-entretenimento.html">Paramount e Netflix: A Guerra dos Gigantes do Entretenimento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-08T15:24:38.033Z">08/12/2025 12:24</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-da-privacidade-como-um-novo-operador-desafia-as-telecomunicacoes.html">A revolução da privacidade: como um novo operador desafia as telecomunicações</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-08T14:23:49.577Z">08/12/2025 11:23</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/a-revolucao-dos-carros-conectados-como-o-linux-vai-transformar-nossa-experiencia-automotiva.html">A revolução dos carros conectados: como o Linux vai transformar nossa experiência automotiva</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-12-08T13:38:27.338Z">08/12/2025 10:38</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 162</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia-automotiva/a-nova-era-dos-robotaxis-em-nova-york-um-sonho-adiado.html">A nova era dos robotaxis em Nova York: um sonho adiado?</a><time datetime="2026-02-19T16:56:31.746Z">19/02/2026 13:56</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-silenciosa-do-linux-vale-a-pena-abandonar-o-windows.html">A revolução silenciosa do Linux: vale a pena abandonar o Windows?</a><time datetime="2026-02-19T15:52:07.797Z">19/02/2026 12:52</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-busca-como-a-ai-pode-transformar-o-streaming.html">A revolução da busca: como a AI pode transformar o streaming</a><time datetime="2026-02-19T14:50:05.556Z">19/02/2026 11:50</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-impressao-3d-como-a-ia-esta-moldando-o-futuro-da-manufatura.html">A revolução da impressão 3D: como a IA está moldando o futuro da manufatura</a><time datetime="2026-02-19T13:09:37.626Z">19/02/2026 10:09</time></li>
-<li><a href="artigos/inteligencia-artificial/construindo-o-futuro-o-impacto-da-revolucao-da-ia-na-arquitetura-de-software.html">Construindo o Futuro: O Impacto da Revolução da IA na Arquitetura de Software</a><time datetime="2026-02-19T11:41:32.514Z">19/02/2026 08:41</time></li>
-<li><a href="artigos/inteligencia-artificial/desvendando-o-desenvolvimento-guiado-por-especificacoes-a-nova-fronteira-da-colaboracao-em-software.html">Desvendando o Desenvolvimento Guiado por Especificações: A Nova Fronteira da Colaboração em Software</a><time datetime="2026-02-19T09:48:15.300Z">19/02/2026 06:48</time></li>
-<li><a href="artigos/tecnologia/o-que-faz-um-laptop-de-jogos-ser-tambem-um-bom-companheiro-de-trabalho.html">O que faz um laptop de jogos ser também um bom companheiro de trabalho?</a><time datetime="2026-02-19T08:46:19.643Z">19/02/2026 05:46</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-fintech-na-india-como-a-openai-e-a-pine-labs-estao-mudando-o-jogo.html">A revolução fintech na Índia: como a OpenAI e a Pine Labs estão mudando o jogo</a><time datetime="2026-02-19T07:13:55.499Z">19/02/2026 04:13</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-da-inteligencia-artificial-ganha-forca-no-brasil-com-a-parceria-openai-e-tata.html">A era da inteligência artificial ganha força no Brasil com a parceria OpenAI e Tata</a><time datetime="2026-02-19T06:02:38.783Z">19/02/2026 03:02</time></li>
-<li><a href="artigos/tecnologia/como-limpar-o-cache-do-seu-android-e-dar-um-gas-no-desempenho.html">Como limpar o cache do seu Android e dar um gás no desempenho</a><time datetime="2026-02-19T04:55:23.705Z">19/02/2026 01:55</time></li>
+<li><a href="artigos/tecnologia-automotiva/a-nova-era-dos-robotaxis-em-nova-york-um-sonho-adiado.html">A nova era dos robotaxis em Nova York: um sonho adiado?</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2026-02-19T16:56:31.746Z">19/02/2026 13:56</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-silenciosa-do-linux-vale-a-pena-abandonar-o-windows.html">A revolução silenciosa do Linux: vale a pena abandonar o Windows?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-19T15:52:07.797Z">19/02/2026 12:52</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-busca-como-a-ai-pode-transformar-o-streaming.html">A revolução da busca: como a AI pode transformar o streaming</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-19T14:50:05.556Z">19/02/2026 11:50</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-impressao-3d-como-a-ia-esta-moldando-o-futuro-da-manufatura.html">A revolução da impressão 3D: como a IA está moldando o futuro da manufatura</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-19T13:09:37.626Z">19/02/2026 10:09</time></div></li>
+<li><a href="artigos/inteligencia-artificial/construindo-o-futuro-o-impacto-da-revolucao-da-ia-na-arquitetura-de-software.html">Construindo o Futuro: O Impacto da Revolução da IA na Arquitetura de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-19T11:41:32.514Z">19/02/2026 08:41</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desvendando-o-desenvolvimento-guiado-por-especificacoes-a-nova-fronteira-da-colaboracao-em-software.html">Desvendando o Desenvolvimento Guiado por Especificações: A Nova Fronteira da Colaboração em Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-19T09:48:15.300Z">19/02/2026 06:48</time></div></li>
+<li><a href="artigos/tecnologia/o-que-faz-um-laptop-de-jogos-ser-tambem-um-bom-companheiro-de-trabalho.html">O que faz um laptop de jogos ser também um bom companheiro de trabalho?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-19T08:46:19.643Z">19/02/2026 05:46</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-fintech-na-india-como-a-openai-e-a-pine-labs-estao-mudando-o-jogo.html">A revolução fintech na Índia: como a OpenAI e a Pine Labs estão mudando o jogo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-19T07:13:55.499Z">19/02/2026 04:13</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-da-inteligencia-artificial-ganha-forca-no-brasil-com-a-parceria-openai-e-tata.html">A era da inteligência artificial ganha força no Brasil com a parceria OpenAI e Tata</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-19T06:02:38.783Z">19/02/2026 03:02</time></div></li>
+<li><a href="artigos/tecnologia/como-limpar-o-cache-do-seu-android-e-dar-um-gas-no-desempenho.html">Como limpar o cache do seu Android e dar um gás no desempenho</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-19T04:55:23.705Z">19/02/2026 01:55</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -78,3 +78,29 @@ test("recuperacao explicita restaura journal de processo interrompido", () => wo
   assert.equal(fs.readFileSync(destino, "utf8"), "antes");
   assert.equal(fs.existsSync(pasta), false);
 }));
+
+test('escrita fora de transacao substitui arquivo completo e remove temporario', () => workspace(root => {
+  const arquivo = path.join(root, 'index.html');
+  fs.writeFileSync(arquivo, 'antes');
+  escreverPublicacao(arquivo, 'depois');
+  assert.equal(fs.readFileSync(arquivo, 'utf8'), 'depois');
+  assert.equal(fs.existsSync(`${arquivo}.editorial-tmp`), false);
+}));
+
+for (const etapa of ['writeFileSync', 'renameSync']) test(`falha em ${etapa} preserva original e limpa apenas o temporario criado`, t => workspace(root => {
+  const arquivo = path.join(root, 'index.html');
+  fs.writeFileSync(arquivo, 'original completo');
+  t.mock.method(fs, etapa, () => { throw new Error('falha simulada de disco'); });
+  assert.throws(() => escreverPublicacao(arquivo, 'atualizado'), /falha simulada/);
+  assert.equal(fs.readFileSync(arquivo, 'utf8'), 'original completo');
+  assert.equal(fs.existsSync(`${arquivo}.editorial-tmp`), false);
+}));
+
+test('temporario preexistente e preservado e impede sobrescrita', () => workspace(root => {
+  const arquivo = path.join(root, 'index.html');
+  fs.writeFileSync(arquivo, 'antes');
+  fs.writeFileSync(`${arquivo}.editorial-tmp`, 'arquivo de outra operacao');
+  assert.throws(() => escreverPublicacao(arquivo, 'depois'), /EEXIST/);
+  assert.equal(fs.readFileSync(arquivo, 'utf8'), 'antes');
+  assert.equal(fs.readFileSync(`${arquivo}.editorial-tmp`, 'utf8'), 'arquivo de outra operacao');
+}));

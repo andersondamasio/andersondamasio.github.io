@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 378</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-amizade-toxica-entre-kim-kardashian-e-chatgpt-um-alerta-para-profissionais-de-tecnologia.html">A amizade tóxica entre Kim Kardashian e ChatGPT: um alerta para profissionais de tecnologia</a><time datetime="2025-11-09T09:18:55.787Z">09/11/2025 06:18</time></li>
-<li><a href="artigos/tecnologia/descobrindo-as-inovacoes-do-futuro-o-que-o-techcrunch-disrupt-2025-nos-ensinou.html">Descobrindo as Inovações do Futuro: O que o TechCrunch Disrupt 2025 nos Ensinou</a><time datetime="2025-11-09T08:23:11.525Z">09/11/2025 05:23</time></li>
-<li><a href="artigos/desenvolvimento-de-software/como-um-bilionario-vive-licoes-de-elon-musk-para-a-arquitetura-de-software.html">Como um Bilionário Vive: Lições de Elon Musk para a Arquitetura de Software</a><time datetime="2025-11-09T07:18:46.698Z">09/11/2025 04:18</time></li>
-<li><a href="artigos/cloud/desvendando-as-capabilidades-da-aws-planejamento-eficiente-em-ambientes-globais.html">Desvendando as Capabilidades da AWS: Planejamento Eficiente em Ambientes Globais</a><time datetime="2025-11-09T06:30:26.094Z">09/11/2025 03:30</time></li>
-<li><a href="artigos/seguranca/explorando-a-vulnerabilidade-critica-do-redis-o-que-voce-precisa-saber.html">Explorando a Vulnerabilidade Crítica do Redis: O que Você Precisa Saber</a><time datetime="2025-11-09T05:19:28.752Z">09/11/2025 02:19</time></li>
-<li><a href="artigos/tecnologia/a-nova-onda-dos-relogios-minimalistas-vale-a-pena-deixar-o-smartwatch-de-lado.html">A nova onda dos relógios minimalistas: vale a pena deixar o smartwatch de lado?</a><time datetime="2025-11-09T04:23:08.356Z">09/11/2025 01:23</time></li>
-<li><a href="artigos/tecnologia/imprimindo-resultados-como-um-pequeno-equipamento-mudou-meu-escritorio.html">Imprimindo Resultados: Como um Pequeno Equipamento Mudou Meu Escritório</a><time datetime="2025-11-09T03:14:44.019Z">09/11/2025 00:14</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-do-hdr-como-o-hdr10-avancado-pode-revolucionar-sua-experiencia-de-entretenimento.html">A nova era do HDR: Como o HDR10+ Avançado pode revolucionar sua experiência de entretenimento</a><time datetime="2025-11-09T01:38:35.199Z">08/11/2025 22:38</time></li>
-<li><a href="artigos/tecnologia/a-nova-joia-da-hp-o-omnibook-7-aero-e-suas-promessas.html">A nova joia da HP: O OmniBook 7 Aero e suas promessas</a><time datetime="2025-11-08T23:18:12.654Z">08/11/2025 20:18</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-autenticidade-por-que-criar-sem-ia-e-a-nova-fronteira-do-entretenimento.html">A Revolução da Autenticidade: Por Que Criar Sem IA É a Nova Fronteira do Entretenimento</a><time datetime="2025-11-08T22:17:20.789Z">08/11/2025 19:17</time></li>
+<li><a href="artigos/inteligencia-artificial/a-amizade-toxica-entre-kim-kardashian-e-chatgpt-um-alerta-para-profissionais-de-tecnologia.html">A amizade tóxica entre Kim Kardashian e ChatGPT: um alerta para profissionais de tecnologia</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-09T09:18:55.787Z">09/11/2025 06:18</time></div></li>
+<li><a href="artigos/tecnologia/descobrindo-as-inovacoes-do-futuro-o-que-o-techcrunch-disrupt-2025-nos-ensinou.html">Descobrindo as Inovações do Futuro: O que o TechCrunch Disrupt 2025 nos Ensinou</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-09T08:23:11.525Z">09/11/2025 05:23</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/como-um-bilionario-vive-licoes-de-elon-musk-para-a-arquitetura-de-software.html">Como um Bilionário Vive: Lições de Elon Musk para a Arquitetura de Software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-11-09T07:18:46.698Z">09/11/2025 04:18</time></div></li>
+<li><a href="artigos/cloud/desvendando-as-capabilidades-da-aws-planejamento-eficiente-em-ambientes-globais.html">Desvendando as Capabilidades da AWS: Planejamento Eficiente em Ambientes Globais</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-11-09T06:30:26.094Z">09/11/2025 03:30</time></div></li>
+<li><a href="artigos/seguranca/explorando-a-vulnerabilidade-critica-do-redis-o-que-voce-precisa-saber.html">Explorando a Vulnerabilidade Crítica do Redis: O que Você Precisa Saber</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-09T05:19:28.752Z">09/11/2025 02:19</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-onda-dos-relogios-minimalistas-vale-a-pena-deixar-o-smartwatch-de-lado.html">A nova onda dos relógios minimalistas: vale a pena deixar o smartwatch de lado?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-09T04:23:08.356Z">09/11/2025 01:23</time></div></li>
+<li><a href="artigos/tecnologia/imprimindo-resultados-como-um-pequeno-equipamento-mudou-meu-escritorio.html">Imprimindo Resultados: Como um Pequeno Equipamento Mudou Meu Escritório</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-09T03:14:44.019Z">09/11/2025 00:14</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-do-hdr-como-o-hdr10-avancado-pode-revolucionar-sua-experiencia-de-entretenimento.html">A nova era do HDR: Como o HDR10+ Avançado pode revolucionar sua experiência de entretenimento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-09T01:38:35.199Z">08/11/2025 22:38</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-joia-da-hp-o-omnibook-7-aero-e-suas-promessas.html">A nova joia da HP: O OmniBook 7 Aero e suas promessas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-08T23:18:12.654Z">08/11/2025 20:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-autenticidade-por-que-criar-sem-ia-e-a-nova-fronteira-do-entretenimento.html">A Revolução da Autenticidade: Por Que Criar Sem IA É a Nova Fronteira do Entretenimento</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-08T22:17:20.789Z">08/11/2025 19:17</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

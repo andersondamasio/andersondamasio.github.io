@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 409</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/cloud/o-poder-da-centralizacao-amazon-ec2-capacity-manager-e-a-nova-era-da-gestao-de-capacidade.html">O Poder da Centralização: Amazon EC2 Capacity Manager e a Nova Era da Gestão de Capacidade</a><time datetime="2025-10-26T03:13:03.093Z">26/10/2025 00:13</time></li>
-<li><a href="artigos/desenvolvimento-de-software/o-que-a-nova-geracao-de-laptops-gamers-pode-ensinar-sobre-arquitetura-de-software.html">O que a nova geração de laptops gamers pode ensinar sobre arquitetura de software</a><time datetime="2025-10-26T01:29:59.555Z">25/10/2025 22:29</time></li>
-<li><a href="artigos/tecnologia/gadgets-incriveis-para-presentear-quem-ja-tem-de-tudo.html">Gadgets Incríveis para Presentear Quem Já Tem de Tudo</a><time datetime="2025-10-25T23:18:52.781Z">25/10/2025 20:18</time></li>
-<li><a href="artigos/cloud/como-a-dependencia-de-nuvem-pode-desmoronar-a-web-licoes-do-colapso-da-aws.html">Como a Dependência de Nuvem Pode Desmoronar a Web: Lições do Colapso da AWS</a><time datetime="2025-10-25T22:17:28.612Z">25/10/2025 19:17</time></li>
-<li><a href="artigos/tecnologia/como-salvar-seu-pc-da-tela-preta-dicas-para-nao-entrar-em-panico.html">Como Salvar Seu PC da Tela Preta: Dicas para Não Entrar em Pânico</a><time datetime="2025-10-25T21:18:30.836Z">25/10/2025 18:18</time></li>
-<li><a href="artigos/inteligencia-artificial/a-musica-do-futuro-como-a-ia-pode-transformar-a-criacao-musical.html">A música do futuro: como a IA pode transformar a criação musical</a><time datetime="2025-10-25T20:20:46.733Z">25/10/2025 17:20</time></li>
-<li><a href="artigos/seguranca/a-tecnologia-em-seguranca-quando-o-reconhecimento-falha-e-um-lanche-vira-arma.html">A tecnologia em segurança: quando o reconhecimento falha e um lanche vira arma</a><time datetime="2025-10-25T19:17:15.977Z">25/10/2025 16:17</time></li>
-<li><a href="artigos/tecnologia/uma-maquina-poderosa-que-voce-nem-imaginava.html">Uma máquina poderosa que você nem imaginava</a><time datetime="2025-10-25T18:27:28.529Z">25/10/2025 15:27</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-dos-navegadores-com-inteligencia-artificial-uma-revolucao-ou-so-mais-uma-moda-passageira.html">A era dos navegadores com inteligência artificial: Uma revolução ou só mais uma moda passageira?</a><time datetime="2025-10-25T17:18:45.810Z">25/10/2025 14:18</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-smartwatches-vale-a-pena-investir-no-galaxy-watch-fe.html">A revolução dos smartwatches: vale a pena investir no Galaxy Watch FE?</a><time datetime="2025-10-25T16:23:58.760Z">25/10/2025 13:23</time></li>
+<li><a href="artigos/cloud/o-poder-da-centralizacao-amazon-ec2-capacity-manager-e-a-nova-era-da-gestao-de-capacidade.html">O Poder da Centralização: Amazon EC2 Capacity Manager e a Nova Era da Gestão de Capacidade</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-10-26T03:13:03.093Z">26/10/2025 00:13</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/o-que-a-nova-geracao-de-laptops-gamers-pode-ensinar-sobre-arquitetura-de-software.html">O que a nova geração de laptops gamers pode ensinar sobre arquitetura de software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-10-26T01:29:59.555Z">25/10/2025 22:29</time></div></li>
+<li><a href="artigos/tecnologia/gadgets-incriveis-para-presentear-quem-ja-tem-de-tudo.html">Gadgets Incríveis para Presentear Quem Já Tem de Tudo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-25T23:18:52.781Z">25/10/2025 20:18</time></div></li>
+<li><a href="artigos/cloud/como-a-dependencia-de-nuvem-pode-desmoronar-a-web-licoes-do-colapso-da-aws.html">Como a Dependência de Nuvem Pode Desmoronar a Web: Lições do Colapso da AWS</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-10-25T22:17:28.612Z">25/10/2025 19:17</time></div></li>
+<li><a href="artigos/tecnologia/como-salvar-seu-pc-da-tela-preta-dicas-para-nao-entrar-em-panico.html">Como Salvar Seu PC da Tela Preta: Dicas para Não Entrar em Pânico</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-25T21:18:30.836Z">25/10/2025 18:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-musica-do-futuro-como-a-ia-pode-transformar-a-criacao-musical.html">A música do futuro: como a IA pode transformar a criação musical</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-25T20:20:46.733Z">25/10/2025 17:20</time></div></li>
+<li><a href="artigos/seguranca/a-tecnologia-em-seguranca-quando-o-reconhecimento-falha-e-um-lanche-vira-arma.html">A tecnologia em segurança: quando o reconhecimento falha e um lanche vira arma</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-10-25T19:17:15.977Z">25/10/2025 16:17</time></div></li>
+<li><a href="artigos/tecnologia/uma-maquina-poderosa-que-voce-nem-imaginava.html">Uma máquina poderosa que você nem imaginava</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-25T18:27:28.529Z">25/10/2025 15:27</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-dos-navegadores-com-inteligencia-artificial-uma-revolucao-ou-so-mais-uma-moda-passageira.html">A era dos navegadores com inteligência artificial: Uma revolução ou só mais uma moda passageira?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-25T17:18:45.810Z">25/10/2025 14:18</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-smartwatches-vale-a-pena-investir-no-galaxy-watch-fe.html">A revolução dos smartwatches: vale a pena investir no Galaxy Watch FE?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-25T16:23:58.760Z">25/10/2025 13:23</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 120</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/novas-publicidades-no-youtube-como-a-tecnologia-pode-ajudar-a-melhorar-a-experiencia-do-usuario.html">Novas publicidades no YouTube: como a tecnologia pode ajudar a melhorar a experiência do usuário</a><time datetime="2026-03-13T18:45:48.397Z">13/03/2026 15:45</time></li>
-<li><a href="artigos/tecnologia/macbook-neo-o-novo-jogador-no-mercado-com-descontos-surpreendentes.html">MacBook Neo: O Novo Jogador no Mercado com Descontos Surpreendentes</a><time datetime="2026-03-13T17:40:52.342Z">13/03/2026 14:40</time></li>
-<li><a href="artigos/seguranca/a-revolucao-da-ciberseguranca-como-o-gigante-google-apostou-no-futuro-da-tecnologia.html">A revolução da cibersegurança: como o gigante Google apostou no futuro da tecnologia</a><time datetime="2026-03-13T16:44:06.137Z">13/03/2026 13:44</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-som-como-um-sistema-de-audio-pode-transformar-sua-experiencia-em-casa.html">A revolução do som: como um sistema de áudio pode transformar sua experiência em casa</a><time datetime="2026-03-13T15:46:27.990Z">13/03/2026 12:46</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-streaming-como-a-ai-e-o-mobile-primeiro-impactam-a-arquitetura-de-software.html">Transformando Streaming: Como a AI e o Mobile Primeiro Impactam a Arquitetura de Software</a><time datetime="2026-03-13T14:07:02.233Z">13/03/2026 11:07</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-das-classificacoes-de-jogos-o-impacto-das-loot-boxes-na-adolescencia.html">A nova era das classificações de jogos: o impacto das loot boxes na adolescência</a><time datetime="2026-03-13T13:02:38.778Z">13/03/2026 10:02</time></li>
-<li><a href="artigos/desenvolvimento-de-software/desvendando-as-armadilhas-do-windows-11-uma-viagem-de-um-arquiteto-de-software.html">Desvendando as Armadilhas do Windows 11: Uma Viagem de um Arquiteto de Software</a><time datetime="2026-03-13T11:50:50.040Z">13/03/2026 08:50</time></li>
-<li><a href="artigos/tecnologia/como-o-modo-seguro-pode-salvar-seu-android-de-app-problematicos.html">Como o Modo Seguro Pode Salvar Seu Android de App Problemáticos</a><time datetime="2026-03-13T10:40:53.995Z">13/03/2026 07:40</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-arquitetura-misturando-aguas-e-oleos-na-inteligencia-artificial.html">A nova era da Arquitetura: misturando águas e óleos na Inteligência Artificial</a><time datetime="2026-03-13T09:43:08.975Z">13/03/2026 06:43</time></li>
-<li><a href="artigos/inteligencia-artificial/desconfianca-digital-a-relacao-entre-pacientes-e-a-ia-na-saude.html">Desconfiança Digital: A Relação Entre Pacientes e a IA na Saúde</a><time datetime="2026-03-13T08:43:18.846Z">13/03/2026 05:43</time></li>
+<li><a href="artigos/tecnologia/novas-publicidades-no-youtube-como-a-tecnologia-pode-ajudar-a-melhorar-a-experiencia-do-usuario.html">Novas publicidades no YouTube: como a tecnologia pode ajudar a melhorar a experiência do usuário</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-13T18:45:48.397Z">13/03/2026 15:45</time></div></li>
+<li><a href="artigos/tecnologia/macbook-neo-o-novo-jogador-no-mercado-com-descontos-surpreendentes.html">MacBook Neo: O Novo Jogador no Mercado com Descontos Surpreendentes</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-13T17:40:52.342Z">13/03/2026 14:40</time></div></li>
+<li><a href="artigos/seguranca/a-revolucao-da-ciberseguranca-como-o-gigante-google-apostou-no-futuro-da-tecnologia.html">A revolução da cibersegurança: como o gigante Google apostou no futuro da tecnologia</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-13T16:44:06.137Z">13/03/2026 13:44</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-som-como-um-sistema-de-audio-pode-transformar-sua-experiencia-em-casa.html">A revolução do som: como um sistema de áudio pode transformar sua experiência em casa</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-13T15:46:27.990Z">13/03/2026 12:46</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-streaming-como-a-ai-e-o-mobile-primeiro-impactam-a-arquitetura-de-software.html">Transformando Streaming: Como a AI e o Mobile Primeiro Impactam a Arquitetura de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-13T14:07:02.233Z">13/03/2026 11:07</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-das-classificacoes-de-jogos-o-impacto-das-loot-boxes-na-adolescencia.html">A nova era das classificações de jogos: o impacto das loot boxes na adolescência</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-13T13:02:38.778Z">13/03/2026 10:02</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/desvendando-as-armadilhas-do-windows-11-uma-viagem-de-um-arquiteto-de-software.html">Desvendando as Armadilhas do Windows 11: Uma Viagem de um Arquiteto de Software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-03-13T11:50:50.040Z">13/03/2026 08:50</time></div></li>
+<li><a href="artigos/tecnologia/como-o-modo-seguro-pode-salvar-seu-android-de-app-problematicos.html">Como o Modo Seguro Pode Salvar Seu Android de App Problemáticos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-13T10:40:53.995Z">13/03/2026 07:40</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-arquitetura-misturando-aguas-e-oleos-na-inteligencia-artificial.html">A nova era da Arquitetura: misturando águas e óleos na Inteligência Artificial</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-13T09:43:08.975Z">13/03/2026 06:43</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desconfianca-digital-a-relacao-entre-pacientes-e-a-ia-na-saude.html">Desconfiança Digital: A Relação Entre Pacientes e a IA na Saúde</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-13T08:43:18.846Z">13/03/2026 05:43</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 256</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/banco-de-dados/a-revolucao-dos-dados-como-o-duckdb-traz-o-iceberg-para-o-navegador.html">A revolução dos dados: como o DuckDB traz o Iceberg para o navegador</a><time datetime="2026-01-04T13:34:25.736Z">04/01/2026 10:34</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-fones-de-ouvido-como-a-tecnologia-pode-transformar-a-comunicacao.html">A nova era dos fones de ouvido: como a tecnologia pode transformar a comunicação</a><time datetime="2026-01-04T12:43:36.774Z">04/01/2026 09:43</time></li>
-<li><a href="artigos/tecnologia/a-evolucao-dos-smartwatches-muito-alem-do-que-um-simples-acessorio.html">A evolução dos smartwatches: muito além do que um simples acessório</a><time datetime="2026-01-04T11:19:30.365Z">04/01/2026 08:19</time></li>
-<li><a href="artigos/tecnologia/aprimorando-sua-samsung-transforme-sua-tv-antiga-em-uma-maquina-de-entretenimento.html">Aprimorando sua Samsung: Transforme sua TV antiga em uma máquina de entretenimento</a><time datetime="2026-01-04T10:22:57.810Z">04/01/2026 07:22</time></li>
-<li><a href="artigos/tecnologia/melhore-a-experiencia-da-sua-tv-com-estas-dicas-hdmi.html">Melhore a Experiência da Sua TV com Estas Dicas HDMI</a><time datetime="2026-01-04T09:22:28.610Z">04/01/2026 06:22</time></li>
-<li><a href="artigos/tecnologia/um-projetor-portatil-que-promete-revolucionar-suas-experiencias-audiovisuais.html">Um projetor portátil que promete revolucionar suas experiências audiovisuais</a><time datetime="2026-01-04T08:29:58.163Z">04/01/2026 05:29</time></li>
-<li><a href="artigos/tecnologia/a-nova-cara-do-moto-g-vale-a-pena-o-investimento.html">A nova cara do Moto G: vale a pena o investimento?</a><time datetime="2026-01-04T07:23:33.012Z">04/01/2026 04:23</time></li>
-<li><a href="artigos/tecnologia/mudando-o-email-o-que-a-novidade-do-gmail-pode-significar-para-voce.html">Mudando o Email: O Que a Novidade do Gmail Pode Significar Para Você</a><time datetime="2026-01-04T06:34:44.401Z">04/01/2026 03:34</time></li>
-<li><a href="artigos/tecnologia/uma-ferramenta-que-cabe-na-palma-da-mao-e-na-sua-vida.html">Uma ferramenta que cabe na palma da mão e na sua vida</a><time datetime="2026-01-04T05:28:57.755Z">04/01/2026 02:28</time></li>
-<li><a href="artigos/tecnologia/o-futuro-da-tecnologia-o-que-esperar-da-ces-2026.html">O futuro da tecnologia: O que esperar da CES 2026?</a><time datetime="2026-01-04T04:51:44.013Z">04/01/2026 01:51</time></li>
+<li><a href="artigos/banco-de-dados/a-revolucao-dos-dados-como-o-duckdb-traz-o-iceberg-para-o-navegador.html">A revolução dos dados: como o DuckDB traz o Iceberg para o navegador</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2026-01-04T13:34:25.736Z">04/01/2026 10:34</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-fones-de-ouvido-como-a-tecnologia-pode-transformar-a-comunicacao.html">A nova era dos fones de ouvido: como a tecnologia pode transformar a comunicação</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-04T12:43:36.774Z">04/01/2026 09:43</time></div></li>
+<li><a href="artigos/tecnologia/a-evolucao-dos-smartwatches-muito-alem-do-que-um-simples-acessorio.html">A evolução dos smartwatches: muito além do que um simples acessório</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-04T11:19:30.365Z">04/01/2026 08:19</time></div></li>
+<li><a href="artigos/tecnologia/aprimorando-sua-samsung-transforme-sua-tv-antiga-em-uma-maquina-de-entretenimento.html">Aprimorando sua Samsung: Transforme sua TV antiga em uma máquina de entretenimento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-04T10:22:57.810Z">04/01/2026 07:22</time></div></li>
+<li><a href="artigos/tecnologia/melhore-a-experiencia-da-sua-tv-com-estas-dicas-hdmi.html">Melhore a Experiência da Sua TV com Estas Dicas HDMI</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-04T09:22:28.610Z">04/01/2026 06:22</time></div></li>
+<li><a href="artigos/tecnologia/um-projetor-portatil-que-promete-revolucionar-suas-experiencias-audiovisuais.html">Um projetor portátil que promete revolucionar suas experiências audiovisuais</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-04T08:29:58.163Z">04/01/2026 05:29</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-cara-do-moto-g-vale-a-pena-o-investimento.html">A nova cara do Moto G: vale a pena o investimento?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-04T07:23:33.012Z">04/01/2026 04:23</time></div></li>
+<li><a href="artigos/tecnologia/mudando-o-email-o-que-a-novidade-do-gmail-pode-significar-para-voce.html">Mudando o Email: O Que a Novidade do Gmail Pode Significar Para Você</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-04T06:34:44.401Z">04/01/2026 03:34</time></div></li>
+<li><a href="artigos/tecnologia/uma-ferramenta-que-cabe-na-palma-da-mao-e-na-sua-vida.html">Uma ferramenta que cabe na palma da mão e na sua vida</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-04T05:28:57.755Z">04/01/2026 02:28</time></div></li>
+<li><a href="artigos/tecnologia/o-futuro-da-tecnologia-o-que-esperar-da-ces-2026.html">O futuro da tecnologia: O que esperar da CES 2026?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-04T04:51:44.013Z">04/01/2026 01:51</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

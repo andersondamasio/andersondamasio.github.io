@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 9</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/melhor-som-sem-fio-sennheiser-momentum-5-ou-sony-wh-1000xm6.html">Melhor Som sem Fio: Sennheiser Momentum 5 ou Sony WH-1000XM6?</a><time datetime="2026-06-22T04:16:06.666Z">22/06/2026 01:16</time></li>
-<li><a href="artigos/tecnologia-automotiva/o-futuro-das-ruas-a-corrida-dos-robotaxis-e-a-supremacia-chinesa.html">O futuro das ruas: a corrida dos robotaxis e a supremacia chinesa</a><time datetime="2026-06-21T23:18:19.447Z">21/06/2026 20:18</time></li>
-<li><a href="artigos/tecnologia/a-desinformacao-no-mundo-das-apostas-um-olhar-critico-sobre-a-etica-digital.html">A desinformação no mundo das apostas: um olhar crítico sobre a ética digital</a><time datetime="2026-06-21T21:19:10.085Z">21/06/2026 18:19</time></li>
-<li><a href="artigos/desenvolvimento-de-software/um-adeus-a-criatividade-a-tragica-perda-de-claude-guillemot-e-o-impacto-na-industria-dos-games.html">Um Adeus à Criatividade: A Trágica Perda de Claude Guillemot e o Impacto na Indústria dos Games</a><time datetime="2026-06-21T19:47:10.461Z">21/06/2026 16:47</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-dados-em-decisoes-o-poder-da-analise-semantica-na-era-da-ia.html">Transformando Dados em Decisões: O Poder da Análise Semântica na Era da IA</a><time datetime="2026-06-21T17:34:03.467Z">21/06/2026 14:34</time></li>
-<li><a href="artigos/inteligencia-artificial/a-guerra-das-ias-quem-sai-ganhando-com-o-apagao-da-anthropic.html">A guerra das IAs: quem sai ganhando com o apagão da Anthropic?</a><time datetime="2026-06-21T15:57:12.869Z">21/06/2026 12:57</time></li>
-<li><a href="artigos/tecnologia/como-um-painel-solar-de-17-pode-dar-vida-infinita-a-sua-campainha.html">Como um painel solar de $17 pode dar vida infinita à sua campainha</a><time datetime="2026-06-21T13:11:40.411Z">21/06/2026 10:11</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-modular-no-mundo-dos-notebooks-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">A revolução modular no mundo dos notebooks: o que a arquitetura de software tem a ver com isso?</a><time datetime="2026-06-21T10:08:28.233Z">21/06/2026 07:08</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-digital-o-impacto-da-proibicao-de-redes-sociais-para-menores-de-16-anos.html">A nova era digital: O impacto da proibição de redes sociais para menores de 16 anos</a><time datetime="2026-06-21T06:06:56.366Z">21/06/2026 03:06</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-limpeza-como-a-inteligencia-artificial-esta-transformando-nossa-rotina.html">A revolução da limpeza: como a inteligência artificial está transformando nossa rotina</a><time datetime="2026-06-21T00:11:52.397Z">20/06/2026 21:11</time></li>
+<li><a href="artigos/tecnologia/melhor-som-sem-fio-sennheiser-momentum-5-ou-sony-wh-1000xm6.html">Melhor Som sem Fio: Sennheiser Momentum 5 ou Sony WH-1000XM6?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-06-22T04:16:06.666Z">22/06/2026 01:16</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/o-futuro-das-ruas-a-corrida-dos-robotaxis-e-a-supremacia-chinesa.html">O futuro das ruas: a corrida dos robotaxis e a supremacia chinesa</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2026-06-21T23:18:19.447Z">21/06/2026 20:18</time></div></li>
+<li><a href="artigos/tecnologia/a-desinformacao-no-mundo-das-apostas-um-olhar-critico-sobre-a-etica-digital.html">A desinformação no mundo das apostas: um olhar crítico sobre a ética digital</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-06-21T21:19:10.085Z">21/06/2026 18:19</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/um-adeus-a-criatividade-a-tragica-perda-de-claude-guillemot-e-o-impacto-na-industria-dos-games.html">Um Adeus à Criatividade: A Trágica Perda de Claude Guillemot e o Impacto na Indústria dos Games</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-06-21T19:47:10.461Z">21/06/2026 16:47</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-dados-em-decisoes-o-poder-da-analise-semantica-na-era-da-ia.html">Transformando Dados em Decisões: O Poder da Análise Semântica na Era da IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-06-21T17:34:03.467Z">21/06/2026 14:34</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-guerra-das-ias-quem-sai-ganhando-com-o-apagao-da-anthropic.html">A guerra das IAs: quem sai ganhando com o apagão da Anthropic?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-06-21T15:57:12.869Z">21/06/2026 12:57</time></div></li>
+<li><a href="artigos/tecnologia/como-um-painel-solar-de-17-pode-dar-vida-infinita-a-sua-campainha.html">Como um painel solar de $17 pode dar vida infinita à sua campainha</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-06-21T13:11:40.411Z">21/06/2026 10:11</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-modular-no-mundo-dos-notebooks-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">A revolução modular no mundo dos notebooks: o que a arquitetura de software tem a ver com isso?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-06-21T10:08:28.233Z">21/06/2026 07:08</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-digital-o-impacto-da-proibicao-de-redes-sociais-para-menores-de-16-anos.html">A nova era digital: O impacto da proibição de redes sociais para menores de 16 anos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-06-21T06:06:56.366Z">21/06/2026 03:06</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-limpeza-como-a-inteligencia-artificial-esta-transformando-nossa-rotina.html">A revolução da limpeza: como a inteligência artificial está transformando nossa rotina</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-06-21T00:11:52.397Z">20/06/2026 21:11</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -28,6 +28,35 @@ test("publicacao deve corresponder a revisao e as superficies de descoberta", as
   assert.equal(resultado.revisaoEsperada, "a".repeat(40));
 });
 
+test('deploy confere CSS e script do tema e rejeita recurso ausente ou desatualizado', async () => {
+  const extras = { ...arquivos,
+    'index.html': arquivos['index.html'].replace('</head>', '<link rel="stylesheet" href="/scripts/site-theme.css"><script src="/scripts/theme-toggle.js"></script></head>'),
+    'scripts/site-theme.css': 'html { color-scheme: light dark; }',
+    'scripts/theme-toggle.js': '/* versao do teste */'
+  };
+  const esperado = prepararVerificacao({ ler: f => extras[f], revisao: 'a'.repeat(40) });
+  assert.ok(esperado.arquivos.some(a => a.arquivo === 'scripts/site-theme.css'));
+  assert.ok(esperado.arquivos.some(a => a.arquivo === 'scripts/theme-toggle.js'));
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(extras), tentativas: 1 })).aceita, true);
+  for (const arquivo of ['scripts/site-theme.css', 'scripts/theme-toggle.js']) {
+    for (const value of [null, 'versao antiga']) assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...extras, [arquivo]: value }), tentativas: 1 })).aceita, false);
+    assert.throws(() => prepararVerificacao({ ler: f => f === arquivo ? undefined : extras[f], revisao: 'a'.repeat(40) }), /Recurso de tema ausente/);
+  }
+});
+
+test('deploy confere apresentacao e comportamento do banner e rejeita versao antiga', async () => {
+  const nomes = ['scripts/site-presentation.css', 'scripts/site-interactions.js', 'scripts/cookies-banner.js'];
+  const extras = { ...arquivos, ...Object.fromEntries(nomes.map(n => [n, `Recurso ${n}`])),
+    'index.html': arquivos['index.html'].replace('</head>', '<link rel="stylesheet" href="/scripts/site-presentation.css"></head>') };
+  const esperado = prepararVerificacao({ ler: f => extras[f], revisao: 'a'.repeat(40) });
+  assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch(extras), tentativas: 1 })).aceita, true);
+  for (const nome of nomes) {
+    assert.ok(esperado.arquivos.some(a => a.arquivo === nome));
+    assert.equal((await verificarPublicacao({ esperado, fetchImpl: mockFetch({ ...extras, [nome]: 'antigo' }), tentativas: 1 })).aceita, false);
+    assert.throws(() => prepararVerificacao({ ler: f => f === nome ? undefined : extras[f], revisao: 'a'.repeat(40) }), /Recurso de apresentacao ausente/);
+  }
+});
+
 test('deploy confere bytes do icone e mantem a fonte original fora do Pages', async () => {
   const icone = Buffer.from([0, 0, 1, 0, 13, 10, 255, 128]);
   const ler = f => f === '_config.yml' ? 'exclude:\n  - _assets/\n' : arquivos[f];

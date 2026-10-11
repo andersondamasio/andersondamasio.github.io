@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 180</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/novas-lentes-do-futuro-o-que-as-oculos-xr-revelam-sobre-a-arquitetura-de-software.html">Novas Lentes do Futuro: O que as Óculos XR Revelam sobre a Arquitetura de Software</a><time datetime="2026-02-09T20:41:35.685Z">09/02/2026 17:41</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-docks-como-um-simples-adaptador-pode-transformar-seu-setup.html">A revolução dos docks: como um simples adaptador pode transformar seu setup</a><time datetime="2026-02-09T17:59:59.774Z">09/02/2026 14:59</time></li>
-<li><a href="artigos/tecnologia/novas-ofertas-do-youtube-tv-o-que-a-arquitetura-de-software-pode-aprender.html">Novas Ofertas do YouTube TV: O Que a Arquitetura de Software Pode Aprender?</a><time datetime="2026-02-09T15:59:21.453Z">09/02/2026 12:59</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-armazenamento-como-um-ssd-m-2-pode-turbinar-seu-pc-antigo.html">A revolução do armazenamento: como um SSD M.2 pode turbinar seu PC antigo</a><time datetime="2026-02-09T14:55:04.407Z">09/02/2026 11:55</time></li>
-<li><a href="artigos/tecnologia/a-batalha-das-plataformas-de-streaming-spotify-e-apple-music-na-era-do-audio.html">A batalha das plataformas de streaming: Spotify e Apple Music na era do áudio</a><time datetime="2026-02-09T13:12:25.731Z">09/02/2026 10:12</time></li>
-<li><a href="artigos/inteligencia-artificial/construindo-modelos-de-linguagem-em-ambientes-desafiadores-licoes-praticas-para-o-futuro-da-ia.html">Construindo Modelos de Linguagem em Ambientes Desafiadores: Lições Práticas para o Futuro da IA</a><time datetime="2026-02-09T11:47:36.235Z">09/02/2026 08:47</time></li>
-<li><a href="artigos/seguranca/a-revolucao-do-armazenamento-como-o-lexar-touchlock-promete-facilitar-nossa-vida.html">A revolução do armazenamento: como o Lexar TouchLock promete facilitar nossa vida</a><time datetime="2026-02-09T10:07:04.880Z">09/02/2026 07:07</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-do-linux-quais-distros-vao-brilhar-em-2026.html">A nova era do Linux: quais distros vão brilhar em 2026?</a><time datetime="2026-02-09T08:59:56.980Z">09/02/2026 05:59</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-agentes-de-ia-a-revolucao-da-definicao-padrao.html">Transformando Agentes de IA: A Revolução da Definição Padrão</a><time datetime="2026-02-09T08:00:25.297Z">09/02/2026 05:00</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-som-em-casa-como-a-lg-e-a-dolby-atmos-estao-transformando-nossa-experiencia.html">A revolução do som em casa: como a LG e a Dolby Atmos estão transformando nossa experiência</a><time datetime="2026-02-09T06:15:27.206Z">09/02/2026 03:15</time></li>
+<li><a href="artigos/tecnologia/novas-lentes-do-futuro-o-que-as-oculos-xr-revelam-sobre-a-arquitetura-de-software.html">Novas Lentes do Futuro: O que as Óculos XR Revelam sobre a Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-09T20:41:35.685Z">09/02/2026 17:41</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-docks-como-um-simples-adaptador-pode-transformar-seu-setup.html">A revolução dos docks: como um simples adaptador pode transformar seu setup</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-09T17:59:59.774Z">09/02/2026 14:59</time></div></li>
+<li><a href="artigos/tecnologia/novas-ofertas-do-youtube-tv-o-que-a-arquitetura-de-software-pode-aprender.html">Novas Ofertas do YouTube TV: O Que a Arquitetura de Software Pode Aprender?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-09T15:59:21.453Z">09/02/2026 12:59</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-armazenamento-como-um-ssd-m-2-pode-turbinar-seu-pc-antigo.html">A revolução do armazenamento: como um SSD M.2 pode turbinar seu PC antigo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-09T14:55:04.407Z">09/02/2026 11:55</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-das-plataformas-de-streaming-spotify-e-apple-music-na-era-do-audio.html">A batalha das plataformas de streaming: Spotify e Apple Music na era do áudio</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-09T13:12:25.731Z">09/02/2026 10:12</time></div></li>
+<li><a href="artigos/inteligencia-artificial/construindo-modelos-de-linguagem-em-ambientes-desafiadores-licoes-praticas-para-o-futuro-da-ia.html">Construindo Modelos de Linguagem em Ambientes Desafiadores: Lições Práticas para o Futuro da IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-09T11:47:36.235Z">09/02/2026 08:47</time></div></li>
+<li><a href="artigos/seguranca/a-revolucao-do-armazenamento-como-o-lexar-touchlock-promete-facilitar-nossa-vida.html">A revolução do armazenamento: como o Lexar TouchLock promete facilitar nossa vida</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-09T10:07:04.880Z">09/02/2026 07:07</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-do-linux-quais-distros-vao-brilhar-em-2026.html">A nova era do Linux: quais distros vão brilhar em 2026?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-09T08:59:56.980Z">09/02/2026 05:59</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-agentes-de-ia-a-revolucao-da-definicao-padrao.html">Transformando Agentes de IA: A Revolução da Definição Padrão</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-09T08:00:25.297Z">09/02/2026 05:00</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-som-em-casa-como-a-lg-e-a-dolby-atmos-estao-transformando-nossa-experiencia.html">A revolução do som em casa: como a LG e a Dolby Atmos estão transformando nossa experiência</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-09T06:15:27.206Z">09/02/2026 03:15</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

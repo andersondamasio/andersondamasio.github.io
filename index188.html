@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 188</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-revolucao-das-tvs-grandes-vale-a-pena-investir-em-uma-hisense-de-98-polegadas.html">A revolução das TVs grandes: vale a pena investir em uma Hisense de 98 polegadas?</a><time datetime="2026-02-05T16:51:45.481Z">05/02/2026 13:51</time></li>
-<li><a href="artigos/tecnologia/o-que-a-resistencia-de-um-tablet-revela-sobre-o-futuro-da-tecnologia.html">O que a resistência de um tablet revela sobre o futuro da tecnologia</a><time datetime="2026-02-05T15:44:33.812Z">05/02/2026 12:44</time></li>
-<li><a href="artigos/inteligencia-artificial/a-voz-como-interface-o-futuro-da-interacao-com-a-ia.html">A voz como interface: o futuro da interação com a IA</a><time datetime="2026-02-05T14:45:21.085Z">05/02/2026 11:45</time></li>
-<li><a href="artigos/tecnologia/tecnologia-em-maos-a-revolucao-dos-tablets-da-samsung-em-2026.html">Tecnologia em Mãos: A Revolução dos Tablets da Samsung em 2026</a><time datetime="2026-02-05T13:04:45.952Z">05/02/2026 10:04</time></li>
-<li><a href="artigos/inteligencia-artificial/a-queda-do-cinema-como-a-ia-esta-transformando-a-narrativa-hollywoodiana.html">A Queda do Cinema: Como a IA Está Transformando a Narrativa Hollywoodiana</a><time datetime="2026-02-05T11:38:40.071Z">05/02/2026 08:38</time></li>
-<li><a href="artigos/tecnologia/como-os-roborocks-estao-transformando-a-limpeza-domestica-e-o-desenvolvimento-de-software.html">Como os Roborocks Estão Transformando a Limpeza Doméstica e o Desenvolvimento de Software</a><time datetime="2026-02-05T10:43:30.110Z">05/02/2026 07:43</time></li>
-<li><a href="artigos/seguranca/kali-linux-ou-parrot-os-qual-distro-de-seguranca-e-a-melhor-opcao-para-voce.html">Kali Linux ou Parrot OS: Qual Distro de Segurança é a Melhor Opção para Você?</a><time datetime="2026-02-05T09:47:08.563Z">05/02/2026 06:47</time></li>
-<li><a href="artigos/tecnologia/teste-de-cabos-usb-a-importancia-de-conhecer-seu-equipamento.html">Teste de Cabos USB: A Importância de Conhecer Seu Equipamento</a><time datetime="2026-02-05T08:45:16.004Z">05/02/2026 05:45</time></li>
-<li><a href="artigos/tecnologia/alternativas-ao-windows-linux-mint-e-zorin-os-em-foco.html">Alternativas ao Windows: Linux Mint e Zorin OS em Foco</a><time datetime="2026-02-05T07:56:30.331Z">05/02/2026 04:56</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-carregadores-portateis-agora-e-sem-fio.html">A revolução dos carregadores portáteis: Agora é sem fio!</a><time datetime="2026-02-05T07:02:00.375Z">05/02/2026 04:02</time></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-tvs-grandes-vale-a-pena-investir-em-uma-hisense-de-98-polegadas.html">A revolução das TVs grandes: vale a pena investir em uma Hisense de 98 polegadas?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-05T16:51:45.481Z">05/02/2026 13:51</time></div></li>
+<li><a href="artigos/tecnologia/o-que-a-resistencia-de-um-tablet-revela-sobre-o-futuro-da-tecnologia.html">O que a resistência de um tablet revela sobre o futuro da tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-05T15:44:33.812Z">05/02/2026 12:44</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-voz-como-interface-o-futuro-da-interacao-com-a-ia.html">A voz como interface: o futuro da interação com a IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-05T14:45:21.085Z">05/02/2026 11:45</time></div></li>
+<li><a href="artigos/tecnologia/tecnologia-em-maos-a-revolucao-dos-tablets-da-samsung-em-2026.html">Tecnologia em Mãos: A Revolução dos Tablets da Samsung em 2026</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-05T13:04:45.952Z">05/02/2026 10:04</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-queda-do-cinema-como-a-ia-esta-transformando-a-narrativa-hollywoodiana.html">A Queda do Cinema: Como a IA Está Transformando a Narrativa Hollywoodiana</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-05T11:38:40.071Z">05/02/2026 08:38</time></div></li>
+<li><a href="artigos/tecnologia/como-os-roborocks-estao-transformando-a-limpeza-domestica-e-o-desenvolvimento-de-software.html">Como os Roborocks Estão Transformando a Limpeza Doméstica e o Desenvolvimento de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-05T10:43:30.110Z">05/02/2026 07:43</time></div></li>
+<li><a href="artigos/seguranca/kali-linux-ou-parrot-os-qual-distro-de-seguranca-e-a-melhor-opcao-para-voce.html">Kali Linux ou Parrot OS: Qual Distro de Segurança é a Melhor Opção para Você?</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-02-05T09:47:08.563Z">05/02/2026 06:47</time></div></li>
+<li><a href="artigos/tecnologia/teste-de-cabos-usb-a-importancia-de-conhecer-seu-equipamento.html">Teste de Cabos USB: A Importância de Conhecer Seu Equipamento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-05T08:45:16.004Z">05/02/2026 05:45</time></div></li>
+<li><a href="artigos/tecnologia/alternativas-ao-windows-linux-mint-e-zorin-os-em-foco.html">Alternativas ao Windows: Linux Mint e Zorin OS em Foco</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-05T07:56:30.331Z">05/02/2026 04:56</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-carregadores-portateis-agora-e-sem-fio.html">A revolução dos carregadores portáteis: Agora é sem fio!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-05T07:02:00.375Z">05/02/2026 04:02</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

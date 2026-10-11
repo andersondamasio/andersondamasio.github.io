@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 117</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-revolucao-dos-tablets-como-o-lenovo-tab-one-pode-ser-a-solucao-perfeita-para-o-seu-dia-a-dia.html">A revolução dos tablets: Como o Lenovo Tab One pode ser a solução perfeita para o seu dia a dia</a><time datetime="2026-03-15T07:50:21.850Z">15/03/2026 04:50</time></li>
-<li><a href="artigos/tecnologia/o-dilema-do-vicio-em-celulares-como-a-arquitetura-de-software-pode-nos-ajudar-a-desconectar.html">O dilema do vício em celulares: como a Arquitetura de Software pode nos ajudar a desconectar</a><time datetime="2026-03-15T07:00:57.685Z">15/03/2026 04:00</time></li>
-<li><a href="artigos/inteligencia-artificial/a-batalha-da-inteligencia-artificial-o-que-podemos-aprender.html">A batalha da Inteligência Artificial: O que podemos aprender?</a><time datetime="2026-03-15T05:10:13.805Z">15/03/2026 02:10</time></li>
-<li><a href="artigos/inteligencia-artificial/a-batalha-entre-criatividade-e-tecnologia-spielberg-e-a-ia-no-cinema.html">A batalha entre criatividade e tecnologia: Spielberg e a IA no cinema</a><time datetime="2026-03-15T02:28:55.766Z">14/03/2026 23:28</time></li>
-<li><a href="artigos/tecnologia/a-nova-geracao-do-macbook-descontos-truques-e-o-que-voce-precisa-saber.html">A nova geração do MacBook: Descontos, truques e o que você precisa saber</a><time datetime="2026-03-14T23:32:14.714Z">14/03/2026 20:32</time></li>
-<li><a href="artigos/tecnologia/um-novo-horizonte-como-a-anduril-esta-moldando-o-futuro-da-tecnologia-militar.html">Um novo horizonte: Como a Anduril está moldando o futuro da tecnologia militar</a><time datetime="2026-03-14T22:30:51.733Z">14/03/2026 19:30</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-reparo-macbook-neo-e-a-nova-era-da-manutencao.html">A revolução do reparo: MacBook Neo e a nova era da manutenção</a><time datetime="2026-03-14T21:31:53.088Z">14/03/2026 18:31</time></li>
-<li><a href="artigos/desenvolvimento-de-software/como-a-grab-revolucionou-o-cache-de-imagens-em-android-com-tlru.html">Como a Grab Revolucionou o Cache de Imagens em Android com TLRU</a><time datetime="2026-03-14T20:32:50.158Z">14/03/2026 17:32</time></li>
-<li><a href="artigos/seguranca/a-nova-era-dos-ataques-invisiveis-como-a-arquitetura-de-software-pode-nos-proteger.html">A nova era dos ataques invisíveis: como a arquitetura de software pode nos proteger</a><time datetime="2026-03-14T19:31:35.882Z">14/03/2026 16:31</time></li>
-<li><a href="artigos/tecnologia/como-escolher-entre-netflix-premium-e-standard-uma-analise-tecnica-para-o-consumidor-esperto.html">Como escolher entre Netflix Premium e Standard: uma análise técnica para o consumidor esperto</a><time datetime="2026-03-14T18:43:04.159Z">14/03/2026 15:43</time></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-tablets-como-o-lenovo-tab-one-pode-ser-a-solucao-perfeita-para-o-seu-dia-a-dia.html">A revolução dos tablets: Como o Lenovo Tab One pode ser a solução perfeita para o seu dia a dia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-15T07:50:21.850Z">15/03/2026 04:50</time></div></li>
+<li><a href="artigos/tecnologia/o-dilema-do-vicio-em-celulares-como-a-arquitetura-de-software-pode-nos-ajudar-a-desconectar.html">O dilema do vício em celulares: como a Arquitetura de Software pode nos ajudar a desconectar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-15T07:00:57.685Z">15/03/2026 04:00</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-batalha-da-inteligencia-artificial-o-que-podemos-aprender.html">A batalha da Inteligência Artificial: O que podemos aprender?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-15T05:10:13.805Z">15/03/2026 02:10</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-batalha-entre-criatividade-e-tecnologia-spielberg-e-a-ia-no-cinema.html">A batalha entre criatividade e tecnologia: Spielberg e a IA no cinema</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-15T02:28:55.766Z">14/03/2026 23:28</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-geracao-do-macbook-descontos-truques-e-o-que-voce-precisa-saber.html">A nova geração do MacBook: Descontos, truques e o que você precisa saber</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-14T23:32:14.714Z">14/03/2026 20:32</time></div></li>
+<li><a href="artigos/tecnologia/um-novo-horizonte-como-a-anduril-esta-moldando-o-futuro-da-tecnologia-militar.html">Um novo horizonte: Como a Anduril está moldando o futuro da tecnologia militar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-14T22:30:51.733Z">14/03/2026 19:30</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-reparo-macbook-neo-e-a-nova-era-da-manutencao.html">A revolução do reparo: MacBook Neo e a nova era da manutenção</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-14T21:31:53.088Z">14/03/2026 18:31</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/como-a-grab-revolucionou-o-cache-de-imagens-em-android-com-tlru.html">Como a Grab Revolucionou o Cache de Imagens em Android com TLRU</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-03-14T20:32:50.158Z">14/03/2026 17:32</time></div></li>
+<li><a href="artigos/seguranca/a-nova-era-dos-ataques-invisiveis-como-a-arquitetura-de-software-pode-nos-proteger.html">A nova era dos ataques invisíveis: como a arquitetura de software pode nos proteger</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-14T19:31:35.882Z">14/03/2026 16:31</time></div></li>
+<li><a href="artigos/tecnologia/como-escolher-entre-netflix-premium-e-standard-uma-analise-tecnica-para-o-consumidor-esperto.html">Como escolher entre Netflix Premium e Standard: uma análise técnica para o consumidor esperto</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-14T18:43:04.159Z">14/03/2026 15:43</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

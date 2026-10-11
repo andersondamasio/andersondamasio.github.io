@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 106</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/galaxy-buds-4-pro-a-revolucao-silenciosa-que-voce-nao-pode-ignorar.html">Galaxy Buds 4 Pro: A Revolução Silenciosa que Você Não Pode Ignorar</a><time datetime="2026-03-22T05:58:14.757Z">22/03/2026 02:58</time></li>
-<li><a href="artigos/inteligencia-artificial/como-criar-agentes-de-ia-mais-eficazes-sem-gerar-desconfianca.html">Como criar agentes de IA mais eficazes sem gerar desconfiança</a><time datetime="2026-03-22T04:56:33.329Z">22/03/2026 01:56</time></li>
-<li><a href="artigos/tecnologia/como-o-google-esta-transformando-a-troca-de-arquivos-entre-android-e-iphone.html">Como o Google Está Transformando a Troca de Arquivos entre Android e iPhone</a><time datetime="2026-03-22T02:15:02.415Z">21/03/2026 23:15</time></li>
-<li><a href="artigos/inteligencia-artificial/a-polemica-das-maquinas-como-a-ia-pode-impactar-a-criatividade-na-literatura.html">A polêmica das máquinas: como a IA pode impactar a criatividade na literatura</a><time datetime="2026-03-21T21:29:50.861Z">21/03/2026 18:29</time></li>
-<li><a href="artigos/tecnologia/a-evolucao-das-redes-sociais-licoes-de-duas-decadas-de-tweets.html">A evolução das redes sociais: lições de duas décadas de tweets</a><time datetime="2026-03-21T20:32:11.428Z">21/03/2026 17:32</time></li>
-<li><a href="artigos/seguranca/a-verdade-por-tras-da-conformidade-digital-como-evitar-armadilhas.html">A verdade por trás da conformidade digital: como evitar armadilhas</a><time datetime="2026-03-21T17:30:57.994Z">21/03/2026 14:30</time></li>
-<li><a href="artigos/inteligencia-artificial/por-que-wall-street-nao-se-empolgou-com-a-apresentacao-da-nvidia.html">Por que Wall Street não se empolgou com a apresentação da Nvidia?</a><time datetime="2026-03-21T16:34:25.541Z">21/03/2026 13:34</time></li>
-<li><a href="artigos/tecnologia/como-startups-estao-transformando-o-poder-das-estrelas-em-energia-a-terra.html">Como Startups Estão Transformando o Poder das Estrelas em Energia à Terra</a><time datetime="2026-03-21T14:31:44.775Z">21/03/2026 11:31</time></li>
-<li><a href="artigos/arquitetura/repensando-a-mensageria-tansu-io-e-o-futuro-dos-brokers-sem-estado.html">Repensando a Mensageria: Tansu.io e o Futuro dos Brokers Sem Estado</a><time datetime="2026-03-21T10:31:28.111Z">21/03/2026 07:31</time></li>
-<li><a href="artigos/tecnologia/como-transformar-sua-casa-em-um-lar-inteligente-sem-quebrar-o-banco.html">Como Transformar sua Casa em um Lar Inteligente sem Quebrar o Banco</a><time datetime="2026-03-21T09:36:43.198Z">21/03/2026 06:36</time></li>
+<li><a href="artigos/tecnologia/galaxy-buds-4-pro-a-revolucao-silenciosa-que-voce-nao-pode-ignorar.html">Galaxy Buds 4 Pro: A Revolução Silenciosa que Você Não Pode Ignorar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-22T05:58:14.757Z">22/03/2026 02:58</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-criar-agentes-de-ia-mais-eficazes-sem-gerar-desconfianca.html">Como criar agentes de IA mais eficazes sem gerar desconfiança</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-22T04:56:33.329Z">22/03/2026 01:56</time></div></li>
+<li><a href="artigos/tecnologia/como-o-google-esta-transformando-a-troca-de-arquivos-entre-android-e-iphone.html">Como o Google Está Transformando a Troca de Arquivos entre Android e iPhone</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-22T02:15:02.415Z">21/03/2026 23:15</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-polemica-das-maquinas-como-a-ia-pode-impactar-a-criatividade-na-literatura.html">A polêmica das máquinas: como a IA pode impactar a criatividade na literatura</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-21T21:29:50.861Z">21/03/2026 18:29</time></div></li>
+<li><a href="artigos/tecnologia/a-evolucao-das-redes-sociais-licoes-de-duas-decadas-de-tweets.html">A evolução das redes sociais: lições de duas décadas de tweets</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-21T20:32:11.428Z">21/03/2026 17:32</time></div></li>
+<li><a href="artigos/seguranca/a-verdade-por-tras-da-conformidade-digital-como-evitar-armadilhas.html">A verdade por trás da conformidade digital: como evitar armadilhas</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-21T17:30:57.994Z">21/03/2026 14:30</time></div></li>
+<li><a href="artigos/inteligencia-artificial/por-que-wall-street-nao-se-empolgou-com-a-apresentacao-da-nvidia.html">Por que Wall Street não se empolgou com a apresentação da Nvidia?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-21T16:34:25.541Z">21/03/2026 13:34</time></div></li>
+<li><a href="artigos/tecnologia/como-startups-estao-transformando-o-poder-das-estrelas-em-energia-a-terra.html">Como Startups Estão Transformando o Poder das Estrelas em Energia à Terra</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-21T14:31:44.775Z">21/03/2026 11:31</time></div></li>
+<li><a href="artigos/arquitetura/repensando-a-mensageria-tansu-io-e-o-futuro-dos-brokers-sem-estado.html">Repensando a Mensageria: Tansu.io e o Futuro dos Brokers Sem Estado</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2026-03-21T10:31:28.111Z">21/03/2026 07:31</time></div></li>
+<li><a href="artigos/tecnologia/como-transformar-sua-casa-em-um-lar-inteligente-sem-quebrar-o-banco.html">Como Transformar sua Casa em um Lar Inteligente sem Quebrar o Banco</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-21T09:36:43.198Z">21/03/2026 06:36</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 746</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/seguranca/a-ascensao-dos-agentes-de-ia-como-a-arquitetura-de-software-pode-mitigar-desafios-e-ampliar-oportunidades.html">A ascensão dos agentes de IA: como a Arquitetura de Software pode mitigar desafios e ampliar oportunidades</a><time datetime="2025-05-20T16:24:04.711Z">20/05/2025 13:24</time></li>
-<li><a href="artigos/carreira/a-importancia-do-voluntariado-em-eventos-de-tecnologia-uma-visao-pratica-para-arquitetos-de-software.html">A importância do voluntariado em eventos de tecnologia: uma visão prática para arquitetos de software</a><time datetime="2025-05-20T15:25:20.095Z">20/05/2025 12:25</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-inteligencia-artificial-o-papel-fundamental-da-arquitetura-de-software.html">A Revolução da Inteligência Artificial: O Papel Fundamental da Arquitetura de Software</a><time datetime="2025-05-20T14:18:49.702Z">20/05/2025 11:18</time></li>
-<li><a href="artigos/tecnologia/acessibilidade-em-foco-oportunidades-para-startups-de-tecnologia-assistiva.html">Acessibilidade em Foco: Oportunidades para Startups de Tecnologia Assistiva</a><time datetime="2025-05-20T13:32:01.967Z">20/05/2025 10:32</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-programacao-como-ferramentas-autonomas-estao-transformando-o-desenvolvimento-de-software.html">A nova era da programação: como ferramentas autônomas estão transformando o desenvolvimento de software</a><time datetime="2025-05-20T12:39:29.745Z">20/05/2025 09:39</time></li>
-<li><a href="artigos/desenvolvimento-de-software/desvendando-o-google-i-o-2025-oportunidades-e-desafios-para-arquitetos-de-software.html">Desvendando o Google I/O 2025: Oportunidades e Desafios para Arquitetos de Software</a><time datetime="2025-05-20T11:16:07.350Z">20/05/2025 08:16</time></li>
-<li><a href="artigos/inteligencia-artificial/transformacao-digital-como-a-nova-ia-da-aws-pode-revolucionar-a-modernizacao-de-sistemas-legados.html">Transformação Digital: Como a Nova IA da AWS Pode Revolucionar a Modernização de Sistemas Legados</a><time datetime="2025-05-20T10:20:49.737Z">20/05/2025 07:20</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-arqueologia-digital-como-a-inteligencia-artificial-pode-transformar-nossas-descobertas.html">A Revolução da Arqueologia Digital: Como a Inteligência Artificial Pode Transformar Nossas Descobertas</a><time datetime="2025-05-20T08:26:17.912Z">20/05/2025 05:26</time></li>
-<li><a href="artigos/banco-de-dados/a-nova-era-dos-bancos-digitais-como-a-arquitetura-de-software-pode-ajudar-na-transicao-de-startups-para-grandes-instituicoes-financeiras.html">A nova era dos bancos digitais: como a Arquitetura de Software pode ajudar na transição de startups para grandes instituições financeiras</a><time datetime="2025-05-20T07:18:57.422Z">20/05/2025 04:18</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-do-entretenimento-infantil-como-a-tecnologia-molda-o-futuro-de-programas-iconicos.html">A nova era do entretenimento infantil: como a tecnologia molda o futuro de programas icônicos</a><time datetime="2025-05-20T06:27:40.140Z">20/05/2025 03:27</time></li>
+<li><a href="artigos/seguranca/a-ascensao-dos-agentes-de-ia-como-a-arquitetura-de-software-pode-mitigar-desafios-e-ampliar-oportunidades.html">A ascensão dos agentes de IA: como a Arquitetura de Software pode mitigar desafios e ampliar oportunidades</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-05-20T16:24:04.711Z">20/05/2025 13:24</time></div></li>
+<li><a href="artigos/carreira/a-importancia-do-voluntariado-em-eventos-de-tecnologia-uma-visao-pratica-para-arquitetos-de-software.html">A importância do voluntariado em eventos de tecnologia: uma visão prática para arquitetos de software</a><div class="article-list-meta"><span>Carreira</span><time datetime="2025-05-20T15:25:20.095Z">20/05/2025 12:25</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-inteligencia-artificial-o-papel-fundamental-da-arquitetura-de-software.html">A Revolução da Inteligência Artificial: O Papel Fundamental da Arquitetura de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-05-20T14:18:49.702Z">20/05/2025 11:18</time></div></li>
+<li><a href="artigos/tecnologia/acessibilidade-em-foco-oportunidades-para-startups-de-tecnologia-assistiva.html">Acessibilidade em Foco: Oportunidades para Startups de Tecnologia Assistiva</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-05-20T13:32:01.967Z">20/05/2025 10:32</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-programacao-como-ferramentas-autonomas-estao-transformando-o-desenvolvimento-de-software.html">A nova era da programação: como ferramentas autônomas estão transformando o desenvolvimento de software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-05-20T12:39:29.745Z">20/05/2025 09:39</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/desvendando-o-google-i-o-2025-oportunidades-e-desafios-para-arquitetos-de-software.html">Desvendando o Google I/O 2025: Oportunidades e Desafios para Arquitetos de Software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-05-20T11:16:07.350Z">20/05/2025 08:16</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformacao-digital-como-a-nova-ia-da-aws-pode-revolucionar-a-modernizacao-de-sistemas-legados.html">Transformação Digital: Como a Nova IA da AWS Pode Revolucionar a Modernização de Sistemas Legados</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-05-20T10:20:49.737Z">20/05/2025 07:20</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-arqueologia-digital-como-a-inteligencia-artificial-pode-transformar-nossas-descobertas.html">A Revolução da Arqueologia Digital: Como a Inteligência Artificial Pode Transformar Nossas Descobertas</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-05-20T08:26:17.912Z">20/05/2025 05:26</time></div></li>
+<li><a href="artigos/banco-de-dados/a-nova-era-dos-bancos-digitais-como-a-arquitetura-de-software-pode-ajudar-na-transicao-de-startups-para-grandes-instituicoes-financeiras.html">A nova era dos bancos digitais: como a Arquitetura de Software pode ajudar na transição de startups para grandes instituições financeiras</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2025-05-20T07:18:57.422Z">20/05/2025 04:18</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-do-entretenimento-infantil-como-a-tecnologia-molda-o-futuro-de-programas-iconicos.html">A nova era do entretenimento infantil: como a tecnologia molda o futuro de programas icônicos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-05-20T06:27:40.140Z">20/05/2025 03:27</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

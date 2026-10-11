@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 385</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/carreira/a-nova-era-do-trabalho-como-se-adaptar-as-mudancas-trazidas-pela-ia.html">A nova era do trabalho: como se adaptar às mudanças trazidas pela IA</a><time datetime="2025-11-06T05:20:53.304Z">06/11/2025 02:20</time></li>
-<li><a href="artigos/seguranca/como-a-atualizacao-do-family-center-do-discord-pode-transformar-a-seguranca-online-dos-jovens.html">Como a Atualização do Family Center do Discord Pode Transformar a Segurança Online dos Jovens</a><time datetime="2025-11-06T04:27:21.081Z">06/11/2025 01:27</time></li>
-<li><a href="artigos/inteligencia-artificial/minix-er937-ai-o-mini-pc-que-desafia-a-logica-da-potencia.html">Minix ER937-AI: O Mini PC que Desafia a Lógica da Potência</a><time datetime="2025-11-06T03:17:02.755Z">06/11/2025 00:17</time></li>
-<li><a href="artigos/tecnologia/a-corrida-entre-quanticos-e-artificiais-quem-vai-dominar-o-futuro.html">A corrida entre quânticos e artificiais: quem vai dominar o futuro?</a><time datetime="2025-11-06T01:28:15.479Z">05/11/2025 22:28</time></li>
-<li><a href="artigos/seguranca/desmistificando-o-malware-a-realidade-da-ia-na-ciberseguranca.html">Desmistificando o Malware: A Realidade da IA na Cibersegurança</a><time datetime="2025-11-05T23:21:10.127Z">05/11/2025 20:21</time></li>
-<li><a href="artigos/inteligencia-artificial/a-batalha-do-futuro-amazon-versus-perplexity-e-o-poder-da-ia-nas-compras.html">A batalha do futuro: Amazon versus Perplexity e o poder da IA nas compras</a><time datetime="2025-11-05T22:22:14.426Z">05/11/2025 19:22</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-data-centers-como-a-infraestrutura-de-ia-esta-transformando-a-economia-dos-eua.html">A Revolução dos Data Centers: Como a Infraestrutura de IA Está Transformando a Economia dos EUA</a><time datetime="2025-11-05T21:19:44.737Z">05/11/2025 18:19</time></li>
-<li><a href="artigos/seguranca/a-importancia-da-seguranca-de-dados-licoes-do-caso-at-t.html">A importância da segurança de dados: lições do caso AT&amp;T</a><time datetime="2025-11-05T20:24:38.799Z">05/11/2025 17:24</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-do-codigo-aberto-na-ia-como-o-pinterest-esta-mudando-o-jogo.html">A revolução do código aberto na IA: como o Pinterest está mudando o jogo</a><time datetime="2025-11-05T19:17:22.591Z">05/11/2025 16:17</time></li>
-<li><a href="artigos/tecnologia/t-mobile-revoluciona-a-comunicacao-de-emergencia-sms-via-satelite-para-todos.html">T-Mobile revoluciona a comunicação de emergência: SMS via satélite para todos!</a><time datetime="2025-11-05T18:29:47.119Z">05/11/2025 15:29</time></li>
+<li><a href="artigos/carreira/a-nova-era-do-trabalho-como-se-adaptar-as-mudancas-trazidas-pela-ia.html">A nova era do trabalho: como se adaptar às mudanças trazidas pela IA</a><div class="article-list-meta"><span>Carreira</span><time datetime="2025-11-06T05:20:53.304Z">06/11/2025 02:20</time></div></li>
+<li><a href="artigos/seguranca/como-a-atualizacao-do-family-center-do-discord-pode-transformar-a-seguranca-online-dos-jovens.html">Como a Atualização do Family Center do Discord Pode Transformar a Segurança Online dos Jovens</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-06T04:27:21.081Z">06/11/2025 01:27</time></div></li>
+<li><a href="artigos/inteligencia-artificial/minix-er937-ai-o-mini-pc-que-desafia-a-logica-da-potencia.html">Minix ER937-AI: O Mini PC que Desafia a Lógica da Potência</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-06T03:17:02.755Z">06/11/2025 00:17</time></div></li>
+<li><a href="artigos/tecnologia/a-corrida-entre-quanticos-e-artificiais-quem-vai-dominar-o-futuro.html">A corrida entre quânticos e artificiais: quem vai dominar o futuro?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-06T01:28:15.479Z">05/11/2025 22:28</time></div></li>
+<li><a href="artigos/seguranca/desmistificando-o-malware-a-realidade-da-ia-na-ciberseguranca.html">Desmistificando o Malware: A Realidade da IA na Cibersegurança</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-05T23:21:10.127Z">05/11/2025 20:21</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-batalha-do-futuro-amazon-versus-perplexity-e-o-poder-da-ia-nas-compras.html">A batalha do futuro: Amazon versus Perplexity e o poder da IA nas compras</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-05T22:22:14.426Z">05/11/2025 19:22</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-data-centers-como-a-infraestrutura-de-ia-esta-transformando-a-economia-dos-eua.html">A Revolução dos Data Centers: Como a Infraestrutura de IA Está Transformando a Economia dos EUA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-05T21:19:44.737Z">05/11/2025 18:19</time></div></li>
+<li><a href="artigos/seguranca/a-importancia-da-seguranca-de-dados-licoes-do-caso-at-t.html">A importância da segurança de dados: lições do caso AT&amp;T</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-05T20:24:38.799Z">05/11/2025 17:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-do-codigo-aberto-na-ia-como-o-pinterest-esta-mudando-o-jogo.html">A revolução do código aberto na IA: como o Pinterest está mudando o jogo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-05T19:17:22.591Z">05/11/2025 16:17</time></div></li>
+<li><a href="artigos/tecnologia/t-mobile-revoluciona-a-comunicacao-de-emergencia-sms-via-satelite-para-todos.html">T-Mobile revoluciona a comunicação de emergência: SMS via satélite para todos!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-05T18:29:47.119Z">05/11/2025 15:29</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

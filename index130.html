@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 130</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-de-40-dolares-um-desafio-tecnologico.html">A revolução dos smartphones de 40 dólares: um desafio tecnológico</a><time datetime="2026-03-08T05:47:53.448Z">08/03/2026 02:47</time></li>
-<li><a href="artigos/tecnologia/samsung-promete-arrebentar-com-seus-oculos-inteligentes-em-2026.html">Samsung promete arrebentar com seus óculos inteligentes em 2026</a><time datetime="2026-03-08T04:47:26.367Z">08/03/2026 01:47</time></li>
-<li><a href="artigos/tecnologia/bose-quietcomfort-ultra-2-refinamento-ou-apenas-mais-do-mesmo.html">Bose QuietComfort Ultra 2: Refinamento ou Apenas Mais do Mesmo?</a><time datetime="2026-03-08T02:08:45.604Z">07/03/2026 23:08</time></li>
-<li><a href="artigos/tecnologia/a-ilusao-do-conhecimento-a-nova-funcao-do-grammarly-e-suas-implicacoes.html">A Ilusão do Conhecimento: A Nova Função do Grammarly e suas Implicações</a><time datetime="2026-03-07T23:26:35.236Z">07/03/2026 20:26</time></li>
-<li><a href="artigos/tecnologia/desafios-do-comercio-global-a-batalha-da-nintendo-e-o-impacto-das-tarifas.html">Desafios do Comércio Global: A Batalha da Nintendo e o Impacto das Tarifas</a><time datetime="2026-03-07T22:31:38.989Z">07/03/2026 19:31</time></li>
-<li><a href="artigos/inteligencia-artificial/a-saida-de-caitlin-kalinowski-licoes-para-o-futuro-da-robotica-e-da-ia.html">A saída de Caitlin Kalinowski: lições para o futuro da robótica e da IA</a><time datetime="2026-03-07T21:25:23.016Z">07/03/2026 18:25</time></li>
-<li><a href="artigos/inteligencia-artificial/a-espera-pelo-modo-adulto-do-chatgpt-uma-reflexao-sobre-prioridades-e-desenvolvimento.html">A espera pelo "modo adulto" do ChatGPT: uma reflexão sobre prioridades e desenvolvimento</a><time datetime="2026-03-07T20:29:40.912Z">07/03/2026 17:29</time></li>
-<li><a href="artigos/carreira/como-criar-um-produto-viral-licoes-de-quem-comecou-do-zero.html">Como criar um produto viral: lições de quem começou do zero</a><time datetime="2026-03-07T19:25:26.455Z">07/03/2026 16:25</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-avaliacao-como-a-dropbox-turbina-a-geracao-de-respostas-com-llms.html">A Revolução da Avaliação: Como a Dropbox Turbina a Geração de Respostas com LLMs</a><time datetime="2026-03-07T18:37:48.938Z">07/03/2026 15:37</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-notebooks-lenovo-qual-e-o-melhor-para-voce.html">A Nova Era dos Notebooks Lenovo: Qual é o Melhor para Você?</a><time datetime="2026-03-07T17:25:37.846Z">07/03/2026 14:25</time></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-de-40-dolares-um-desafio-tecnologico.html">A revolução dos smartphones de 40 dólares: um desafio tecnológico</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-08T05:47:53.448Z">08/03/2026 02:47</time></div></li>
+<li><a href="artigos/tecnologia/samsung-promete-arrebentar-com-seus-oculos-inteligentes-em-2026.html">Samsung promete arrebentar com seus óculos inteligentes em 2026</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-08T04:47:26.367Z">08/03/2026 01:47</time></div></li>
+<li><a href="artigos/tecnologia/bose-quietcomfort-ultra-2-refinamento-ou-apenas-mais-do-mesmo.html">Bose QuietComfort Ultra 2: Refinamento ou Apenas Mais do Mesmo?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-08T02:08:45.604Z">07/03/2026 23:08</time></div></li>
+<li><a href="artigos/tecnologia/a-ilusao-do-conhecimento-a-nova-funcao-do-grammarly-e-suas-implicacoes.html">A Ilusão do Conhecimento: A Nova Função do Grammarly e suas Implicações</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-07T23:26:35.236Z">07/03/2026 20:26</time></div></li>
+<li><a href="artigos/tecnologia/desafios-do-comercio-global-a-batalha-da-nintendo-e-o-impacto-das-tarifas.html">Desafios do Comércio Global: A Batalha da Nintendo e o Impacto das Tarifas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-07T22:31:38.989Z">07/03/2026 19:31</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-saida-de-caitlin-kalinowski-licoes-para-o-futuro-da-robotica-e-da-ia.html">A saída de Caitlin Kalinowski: lições para o futuro da robótica e da IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-07T21:25:23.016Z">07/03/2026 18:25</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-espera-pelo-modo-adulto-do-chatgpt-uma-reflexao-sobre-prioridades-e-desenvolvimento.html">A espera pelo "modo adulto" do ChatGPT: uma reflexão sobre prioridades e desenvolvimento</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-07T20:29:40.912Z">07/03/2026 17:29</time></div></li>
+<li><a href="artigos/carreira/como-criar-um-produto-viral-licoes-de-quem-comecou-do-zero.html">Como criar um produto viral: lições de quem começou do zero</a><div class="article-list-meta"><span>Carreira</span><time datetime="2026-03-07T19:25:26.455Z">07/03/2026 16:25</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-avaliacao-como-a-dropbox-turbina-a-geracao-de-respostas-com-llms.html">A Revolução da Avaliação: Como a Dropbox Turbina a Geração de Respostas com LLMs</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-07T18:37:48.938Z">07/03/2026 15:37</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-notebooks-lenovo-qual-e-o-melhor-para-voce.html">A Nova Era dos Notebooks Lenovo: Qual é o Melhor para Você?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-07T17:25:37.846Z">07/03/2026 14:25</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

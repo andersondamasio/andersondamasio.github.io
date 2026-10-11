@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 402</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/transformando-ideias-em-inovacoes-o-papel-da-arquitetura-de-software-nas-startups-de-2025.html">Transformando Ideias em Inovações: O Papel da Arquitetura de Software nas Startups de 2025</a><time datetime="2025-10-29T07:22:17.101Z">29/10/2025 04:22</time></li>
-<li><a href="artigos/seguranca/como-a-arquitetura-de-software-pode-ajudar-na-luta-contra-ciberataques.html">Como a Arquitetura de Software Pode Ajudar na Luta Contra Ciberataques</a><time datetime="2025-10-29T06:33:29.150Z">29/10/2025 03:33</time></li>
-<li><a href="artigos/seguranca/a-sombra-da-vigilancia-licoes-da-espionagem-digital-e-a-arquitetura-de-sistemas.html">A sombra da vigilância: lições da espionagem digital e a arquitetura de sistemas</a><time datetime="2025-10-29T05:22:49.648Z">29/10/2025 02:22</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-da-saude-como-seu-banheiro-pode-se-tornar-um-aliado-no-monitoramento-da-saude.html">A nova era da saúde: como seu banheiro pode se tornar um aliado no monitoramento da saúde</a><time datetime="2025-10-29T04:29:56.232Z">29/10/2025 01:29</time></li>
-<li><a href="artigos/inteligencia-artificial/navegando-na-era-da-automacao-como-o-strawberry-browser-pode-transformar-seu-dia-a-dia.html">Navegando na Era da Automação: Como o Strawberry Browser Pode Transformar Seu Dia a Dia</a><time datetime="2025-10-29T03:16:35.345Z">29/10/2025 00:16</time></li>
-<li><a href="artigos/seguranca/a-seguranca-em-sistemas-e-como-um-carro-se-nao-tiver-manutencao-voce-corre-o-risco-de-ficar-na-estrada.html">A segurança em sistemas é como um carro: se não tiver manutenção, você corre o risco de ficar na estrada.</a><time datetime="2025-10-29T01:30:40.088Z">28/10/2025 22:30</time></li>
-<li><a href="artigos/seguranca/a-nova-era-da-verificacao-de-idade-como-o-google-play-esta-mudando-o-jogo.html">A nova era da verificação de idade: como o Google Play está mudando o jogo</a><time datetime="2025-10-28T23:19:22.062Z">28/10/2025 20:19</time></li>
-<li><a href="artigos/inteligencia-artificial/novas-estradas-como-a-arquitetura-de-software-impulsiona-caminhoes-autonomos.html">Novas Estradas: Como a Arquitetura de Software Impulsiona Caminhões Autônomos</a><time datetime="2025-10-28T22:21:20.550Z">28/10/2025 19:21</time></li>
-<li><a href="artigos/tecnologia-automotiva/a-revolucao-dos-caminhoes-autonomos-o-que-isso-significa-para-a-logistica.html">A revolução dos caminhões autônomos: o que isso significa para a logística?</a><time datetime="2025-10-28T21:20:11.277Z">28/10/2025 18:20</time></li>
-<li><a href="artigos/tecnologia/como-a-arquitetura-de-software-pode-ajudar-na-corrida-por-ofertas-de-black-friday.html">Como a Arquitetura de Software Pode Ajudar na Corrida por Ofertas de Black Friday</a><time datetime="2025-10-28T20:23:40.274Z">28/10/2025 17:23</time></li>
+<li><a href="artigos/tecnologia/transformando-ideias-em-inovacoes-o-papel-da-arquitetura-de-software-nas-startups-de-2025.html">Transformando Ideias em Inovações: O Papel da Arquitetura de Software nas Startups de 2025</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-29T07:22:17.101Z">29/10/2025 04:22</time></div></li>
+<li><a href="artigos/seguranca/como-a-arquitetura-de-software-pode-ajudar-na-luta-contra-ciberataques.html">Como a Arquitetura de Software Pode Ajudar na Luta Contra Ciberataques</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-10-29T06:33:29.150Z">29/10/2025 03:33</time></div></li>
+<li><a href="artigos/seguranca/a-sombra-da-vigilancia-licoes-da-espionagem-digital-e-a-arquitetura-de-sistemas.html">A sombra da vigilância: lições da espionagem digital e a arquitetura de sistemas</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-10-29T05:22:49.648Z">29/10/2025 02:22</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-da-saude-como-seu-banheiro-pode-se-tornar-um-aliado-no-monitoramento-da-saude.html">A nova era da saúde: como seu banheiro pode se tornar um aliado no monitoramento da saúde</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-29T04:29:56.232Z">29/10/2025 01:29</time></div></li>
+<li><a href="artigos/inteligencia-artificial/navegando-na-era-da-automacao-como-o-strawberry-browser-pode-transformar-seu-dia-a-dia.html">Navegando na Era da Automação: Como o Strawberry Browser Pode Transformar Seu Dia a Dia</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-29T03:16:35.345Z">29/10/2025 00:16</time></div></li>
+<li><a href="artigos/seguranca/a-seguranca-em-sistemas-e-como-um-carro-se-nao-tiver-manutencao-voce-corre-o-risco-de-ficar-na-estrada.html">A segurança em sistemas é como um carro: se não tiver manutenção, você corre o risco de ficar na estrada.</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-10-29T01:30:40.088Z">28/10/2025 22:30</time></div></li>
+<li><a href="artigos/seguranca/a-nova-era-da-verificacao-de-idade-como-o-google-play-esta-mudando-o-jogo.html">A nova era da verificação de idade: como o Google Play está mudando o jogo</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-10-28T23:19:22.062Z">28/10/2025 20:19</time></div></li>
+<li><a href="artigos/inteligencia-artificial/novas-estradas-como-a-arquitetura-de-software-impulsiona-caminhoes-autonomos.html">Novas Estradas: Como a Arquitetura de Software Impulsiona Caminhões Autônomos</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-28T22:21:20.550Z">28/10/2025 19:21</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/a-revolucao-dos-caminhoes-autonomos-o-que-isso-significa-para-a-logistica.html">A revolução dos caminhões autônomos: o que isso significa para a logística?</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-10-28T21:20:11.277Z">28/10/2025 18:20</time></div></li>
+<li><a href="artigos/tecnologia/como-a-arquitetura-de-software-pode-ajudar-na-corrida-por-ofertas-de-black-friday.html">Como a Arquitetura de Software Pode Ajudar na Corrida por Ofertas de Black Friday</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-28T20:23:40.274Z">28/10/2025 17:23</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

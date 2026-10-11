@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 125</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/programacao/a-nova-era-das-previsoes-como-a-integracao-de-kalshi-e-threads-pode-revolucionar-a-interacao-social.html">A nova era das previsões: como a integração de Kalshi e Threads pode revolucionar a interação social</a><time datetime="2026-03-10T23:31:33.723Z">10/03/2026 20:31</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-dos-videos-falsos-como-a-arquitetura-de-software-pode-ajudar-a-combater-a-desinformacao.html">A era dos vídeos falsos: como a arquitetura de software pode ajudar a combater a desinformação</a><time datetime="2026-03-10T22:33:17.038Z">10/03/2026 19:33</time></li>
-<li><a href="artigos/tecnologia/explorando-as-novas-fronteiras-do-som-o-que-as-caixas-sonos-tem-a-oferecer.html">Explorando as Novas Fronteiras do Som: O Que as Caixas Sonos Têm a Oferecer</a><time datetime="2026-03-10T21:34:25.056Z">10/03/2026 18:34</time></li>
-<li><a href="artigos/tecnologia/como-liberar-espaco-no-seu-iphone-dicas-que-vao-alem-do-basico.html">Como liberar espaço no seu iPhone: Dicas que vão além do básico</a><time datetime="2026-03-10T20:38:56.970Z">10/03/2026 17:38</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-silenciosa-como-a-ia-esta-transformando-o-mercado-de-trabalho-em-ti.html">A Revolução Silenciosa: Como a IA Está Transformando o Mercado de Trabalho em TI</a><time datetime="2026-03-10T19:41:57.835Z">10/03/2026 16:41</time></li>
-<li><a href="artigos/inteligencia-artificial/a-ilusao-da-inteligencia-apps-ai-que-lucram-mas-perdem-usuarios-rapido.html">A ilusão da inteligência: apps AI que lucram, mas perdem usuários rápido</a><time datetime="2026-03-10T18:59:30.491Z">10/03/2026 15:59</time></li>
-<li><a href="artigos/tecnologia/como-proteger-seus-dados-a-nova-funcionalidade-de-modo-de-reparacao-do-android.html">Como Proteger Seus Dados: A Nova Funcionalidade de Modo de Reparação do Android</a><time datetime="2026-03-10T17:06:46.083Z">10/03/2026 14:06</time></li>
-<li><a href="artigos/tecnologia/novos-sons-na-era-da-portabilidade-o-que-a-sonos-nos-revela.html">Novos Sons na Era da Portabilidade: O que a Sonos nos Revela</a><time datetime="2026-03-10T16:16:26.822Z">10/03/2026 13:16</time></li>
-<li><a href="artigos/tecnologia/samsung-galaxy-s26-ultra-vale-a-pena-o-upgrade-ou-nao.html">Samsung Galaxy S26 Ultra: Vale a pena o upgrade ou não?</a><time datetime="2026-03-10T14:09:29.363Z">10/03/2026 11:09</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-laptops-macbook-neo-e-suas-alternativas.html">A nova era dos laptops: MacBook Neo e suas alternativas</a><time datetime="2026-03-10T13:04:09.681Z">10/03/2026 10:04</time></li>
+<li><a href="artigos/programacao/a-nova-era-das-previsoes-como-a-integracao-de-kalshi-e-threads-pode-revolucionar-a-interacao-social.html">A nova era das previsões: como a integração de Kalshi e Threads pode revolucionar a interação social</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-03-10T23:31:33.723Z">10/03/2026 20:31</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-dos-videos-falsos-como-a-arquitetura-de-software-pode-ajudar-a-combater-a-desinformacao.html">A era dos vídeos falsos: como a arquitetura de software pode ajudar a combater a desinformação</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-10T22:33:17.038Z">10/03/2026 19:33</time></div></li>
+<li><a href="artigos/tecnologia/explorando-as-novas-fronteiras-do-som-o-que-as-caixas-sonos-tem-a-oferecer.html">Explorando as Novas Fronteiras do Som: O Que as Caixas Sonos Têm a Oferecer</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-10T21:34:25.056Z">10/03/2026 18:34</time></div></li>
+<li><a href="artigos/tecnologia/como-liberar-espaco-no-seu-iphone-dicas-que-vao-alem-do-basico.html">Como liberar espaço no seu iPhone: Dicas que vão além do básico</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-10T20:38:56.970Z">10/03/2026 17:38</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-silenciosa-como-a-ia-esta-transformando-o-mercado-de-trabalho-em-ti.html">A Revolução Silenciosa: Como a IA Está Transformando o Mercado de Trabalho em TI</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-10T19:41:57.835Z">10/03/2026 16:41</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-ilusao-da-inteligencia-apps-ai-que-lucram-mas-perdem-usuarios-rapido.html">A ilusão da inteligência: apps AI que lucram, mas perdem usuários rápido</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-10T18:59:30.491Z">10/03/2026 15:59</time></div></li>
+<li><a href="artigos/tecnologia/como-proteger-seus-dados-a-nova-funcionalidade-de-modo-de-reparacao-do-android.html">Como Proteger Seus Dados: A Nova Funcionalidade de Modo de Reparação do Android</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-10T17:06:46.083Z">10/03/2026 14:06</time></div></li>
+<li><a href="artigos/tecnologia/novos-sons-na-era-da-portabilidade-o-que-a-sonos-nos-revela.html">Novos Sons na Era da Portabilidade: O que a Sonos nos Revela</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-10T16:16:26.822Z">10/03/2026 13:16</time></div></li>
+<li><a href="artigos/tecnologia/samsung-galaxy-s26-ultra-vale-a-pena-o-upgrade-ou-nao.html">Samsung Galaxy S26 Ultra: Vale a pena o upgrade ou não?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-10T14:09:29.363Z">10/03/2026 11:09</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-laptops-macbook-neo-e-suas-alternativas.html">A nova era dos laptops: MacBook Neo e suas alternativas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-10T13:04:09.681Z">10/03/2026 10:04</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

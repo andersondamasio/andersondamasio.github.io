@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 116</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/unacademy-e-upgrad-a-revolucao-silenciosa-do-edtech-na-india.html">Unacademy e upGrad: A Revolução Silenciosa do Edtech na Índia</a><time datetime="2026-03-15T17:31:52.351Z">15/03/2026 14:31</time></li>
-<li><a href="artigos/tecnologia-automotiva/a-volta-de-kalanick-e-o-renascimento-dos-veiculos-autonomos-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">A volta de Kalanick e o renascimento dos veículos autônomos: o que a arquitetura de software tem a ver com isso?</a><time datetime="2026-03-15T16:36:51.696Z">15/03/2026 13:36</time></li>
-<li><a href="artigos/arquitetura/o-que-o-mega-negocio-da-wiz-nos-ensina-sobre-a-arquitetura-de-software.html">O que o mega negócio da Wiz nos ensina sobre a Arquitetura de Software</a><time datetime="2026-03-15T15:33:18.008Z">15/03/2026 12:33</time></li>
-<li><a href="artigos/robotica/a-revolucao-das-maquinas-por-que-o-novo-olhar-de-rj-scaringe-pode-mudar-tudo.html">A revolução das máquinas: Por que o novo olhar de RJ Scaringe pode mudar tudo</a><time datetime="2026-03-15T14:34:19.150Z">15/03/2026 11:34</time></li>
-<li><a href="artigos/seguranca/como-proteger-seu-android-16-com-estilo-dicas-para-nao-ficar-na-mao.html">Como Proteger Seu Android 16 com Estilo: Dicas para Não Ficar na Mão</a><time datetime="2026-03-15T13:52:40.822Z">15/03/2026 10:52</time></li>
-<li><a href="artigos/tecnologia/como-a-tecnologia-pode-ajudar-a-melhorar-seu-sono-e-acordar-sem-despertador.html">Como a Tecnologia Pode Ajudar a Melhorar Seu Sono e Acordar sem Despertador</a><time datetime="2026-03-15T12:57:23.862Z">15/03/2026 09:57</time></li>
-<li><a href="artigos/tecnologia/ferramentas-sem-fio-um-upgrade-na-sua-caixa-de-ferramentas-e-na-sua-vida.html">Ferramentas sem Fio: Um Upgrade na Sua Caixa de Ferramentas e na Sua Vida</a><time datetime="2026-03-15T11:30:23.375Z">15/03/2026 08:30</time></li>
-<li><a href="artigos/seguranca/gerenciando-o-futuro-openclaw-e-os-desafios-de-seguranca-na-nuvem.html">Gerenciando o Futuro: OpenClaw e os Desafios de Segurança na Nuvem</a><time datetime="2026-03-15T10:34:15.343Z">15/03/2026 07:34</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-hds-externos-escolha-o-melhor-para-sua-arquitetura-digital.html">A nova era dos HDs externos: escolha o melhor para sua arquitetura digital</a><time datetime="2026-03-15T09:39:02.804Z">15/03/2026 06:39</time></li>
-<li><a href="artigos/observabilidade/a-nova-era-do-elastic-como-a-versao-9-3-0-revoluciona-a-busca-e-a-observabilidade.html">A nova era do Elastic: Como a versão 9.3.0 revoluciona a busca e a observabilidade</a><time datetime="2026-03-15T08:41:04.466Z">15/03/2026 05:41</time></li>
+<li><a href="artigos/tecnologia/unacademy-e-upgrad-a-revolucao-silenciosa-do-edtech-na-india.html">Unacademy e upGrad: A Revolução Silenciosa do Edtech na Índia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-15T17:31:52.351Z">15/03/2026 14:31</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/a-volta-de-kalanick-e-o-renascimento-dos-veiculos-autonomos-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">A volta de Kalanick e o renascimento dos veículos autônomos: o que a arquitetura de software tem a ver com isso?</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2026-03-15T16:36:51.696Z">15/03/2026 13:36</time></div></li>
+<li><a href="artigos/arquitetura/o-que-o-mega-negocio-da-wiz-nos-ensina-sobre-a-arquitetura-de-software.html">O que o mega negócio da Wiz nos ensina sobre a Arquitetura de Software</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2026-03-15T15:33:18.008Z">15/03/2026 12:33</time></div></li>
+<li><a href="artigos/robotica/a-revolucao-das-maquinas-por-que-o-novo-olhar-de-rj-scaringe-pode-mudar-tudo.html">A revolução das máquinas: Por que o novo olhar de RJ Scaringe pode mudar tudo</a><div class="article-list-meta"><span>Robótica</span><time datetime="2026-03-15T14:34:19.150Z">15/03/2026 11:34</time></div></li>
+<li><a href="artigos/seguranca/como-proteger-seu-android-16-com-estilo-dicas-para-nao-ficar-na-mao.html">Como Proteger Seu Android 16 com Estilo: Dicas para Não Ficar na Mão</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-15T13:52:40.822Z">15/03/2026 10:52</time></div></li>
+<li><a href="artigos/tecnologia/como-a-tecnologia-pode-ajudar-a-melhorar-seu-sono-e-acordar-sem-despertador.html">Como a Tecnologia Pode Ajudar a Melhorar Seu Sono e Acordar sem Despertador</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-15T12:57:23.862Z">15/03/2026 09:57</time></div></li>
+<li><a href="artigos/tecnologia/ferramentas-sem-fio-um-upgrade-na-sua-caixa-de-ferramentas-e-na-sua-vida.html">Ferramentas sem Fio: Um Upgrade na Sua Caixa de Ferramentas e na Sua Vida</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-15T11:30:23.375Z">15/03/2026 08:30</time></div></li>
+<li><a href="artigos/seguranca/gerenciando-o-futuro-openclaw-e-os-desafios-de-seguranca-na-nuvem.html">Gerenciando o Futuro: OpenClaw e os Desafios de Segurança na Nuvem</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-15T10:34:15.343Z">15/03/2026 07:34</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-hds-externos-escolha-o-melhor-para-sua-arquitetura-digital.html">A nova era dos HDs externos: escolha o melhor para sua arquitetura digital</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-15T09:39:02.804Z">15/03/2026 06:39</time></div></li>
+<li><a href="artigos/observabilidade/a-nova-era-do-elastic-como-a-versao-9-3-0-revoluciona-a-busca-e-a-observabilidade.html">A nova era do Elastic: Como a versão 9.3.0 revoluciona a busca e a observabilidade</a><div class="article-list-meta"><span>Observabilidade</span><time datetime="2026-03-15T08:41:04.466Z">15/03/2026 05:41</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

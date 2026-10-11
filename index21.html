@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 21</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/carreira/acordando-vcs-historias-de-horror-e-a-realidade-do-pitch.html">Acordando VCs: Histórias de Horror e a Realidade do Pitch</a><time datetime="2026-06-06T03:31:41.712Z">06/06/2026 00:31</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-founders-licoes-do-reid-hoffman-para-o-desenvolvimento-de-software.html">A nova era dos founders: lições do Reid Hoffman para o desenvolvimento de software</a><time datetime="2026-06-05T23:14:36.443Z">05/06/2026 20:14</time></li>
-<li><a href="artigos/seguranca/ibm-e-os-fantasmas-do-passado-brechas-de-seguranca-que-ninguem-viu.html">IBM e os Fantasmas do Passado: Brechas de Segurança que Ninguém Viu</a><time datetime="2026-06-05T21:31:33.340Z">05/06/2026 18:31</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-inteligencia-artificial-e-o-papel-do-governo.html">A nova era da inteligência artificial e o papel do governo</a><time datetime="2026-06-05T19:59:49.840Z">05/06/2026 16:59</time></li>
-<li><a href="artigos/tecnologia-automotiva/a-revolucao-das-baterias-como-a-arquitetura-e-o-desenvolvimento-de-software-podem-impulsionar-o-futuro-eletrico-da-gm.html">A revolução das baterias: como a arquitetura e o desenvolvimento de software podem impulsionar o futuro elétrico da GM</a><time datetime="2026-06-05T18:00:35.871Z">05/06/2026 15:00</time></li>
-<li><a href="artigos/tecnologia-automotiva/a-revolucao-do-android-auto-por-que-ele-e-melhor-que-o-sistema-da-sua-maquina.html">A revolução do Android Auto: por que ele é melhor que o sistema da sua máquina</a><time datetime="2026-06-05T15:58:32.004Z">05/06/2026 12:58</time></li>
-<li><a href="artigos/inteligencia-artificial/raspberry-pi-o-pequeno-gigante-que-esta-transformando-a-era-da-ia.html">Raspberry Pi: O Pequeno Gigante que Está Transformando a Era da IA</a><time datetime="2026-06-05T12:43:45.438Z">05/06/2026 09:43</time></li>
-<li><a href="artigos/seguranca/seguranca-em-tempos-de-ia-desafios-e-estrategias-para-arquitetos-de-software.html">Segurança em Tempos de IA: Desafios e Estratégias para Arquitetos de Software</a><time datetime="2026-06-05T09:55:21.597Z">05/06/2026 06:55</time></li>
-<li><a href="artigos/inteligencia-artificial/pensando-em-maquinas-o-futuro-da-interacao-com-ia.html">Pensando em Máquinas: O Futuro da Interação com IA</a><time datetime="2026-06-05T05:23:18.554Z">05/06/2026 02:23</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-do-entretenimento-quando-tecnologia-e-diversao-se-encontram-no-jogo.html">A nova era do entretenimento: quando tecnologia e diversão se encontram no jogo</a><time datetime="2026-06-05T00:13:21.144Z">04/06/2026 21:13</time></li>
+<li><a href="artigos/carreira/acordando-vcs-historias-de-horror-e-a-realidade-do-pitch.html">Acordando VCs: Histórias de Horror e a Realidade do Pitch</a><div class="article-list-meta"><span>Carreira</span><time datetime="2026-06-06T03:31:41.712Z">06/06/2026 00:31</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-founders-licoes-do-reid-hoffman-para-o-desenvolvimento-de-software.html">A nova era dos founders: lições do Reid Hoffman para o desenvolvimento de software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-06-05T23:14:36.443Z">05/06/2026 20:14</time></div></li>
+<li><a href="artigos/seguranca/ibm-e-os-fantasmas-do-passado-brechas-de-seguranca-que-ninguem-viu.html">IBM e os Fantasmas do Passado: Brechas de Segurança que Ninguém Viu</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-06-05T21:31:33.340Z">05/06/2026 18:31</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-inteligencia-artificial-e-o-papel-do-governo.html">A nova era da inteligência artificial e o papel do governo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-06-05T19:59:49.840Z">05/06/2026 16:59</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/a-revolucao-das-baterias-como-a-arquitetura-e-o-desenvolvimento-de-software-podem-impulsionar-o-futuro-eletrico-da-gm.html">A revolução das baterias: como a arquitetura e o desenvolvimento de software podem impulsionar o futuro elétrico da GM</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2026-06-05T18:00:35.871Z">05/06/2026 15:00</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/a-revolucao-do-android-auto-por-que-ele-e-melhor-que-o-sistema-da-sua-maquina.html">A revolução do Android Auto: por que ele é melhor que o sistema da sua máquina</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2026-06-05T15:58:32.004Z">05/06/2026 12:58</time></div></li>
+<li><a href="artigos/inteligencia-artificial/raspberry-pi-o-pequeno-gigante-que-esta-transformando-a-era-da-ia.html">Raspberry Pi: O Pequeno Gigante que Está Transformando a Era da IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-06-05T12:43:45.438Z">05/06/2026 09:43</time></div></li>
+<li><a href="artigos/seguranca/seguranca-em-tempos-de-ia-desafios-e-estrategias-para-arquitetos-de-software.html">Segurança em Tempos de IA: Desafios e Estratégias para Arquitetos de Software</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-06-05T09:55:21.597Z">05/06/2026 06:55</time></div></li>
+<li><a href="artigos/inteligencia-artificial/pensando-em-maquinas-o-futuro-da-interacao-com-ia.html">Pensando em Máquinas: O Futuro da Interação com IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-06-05T05:23:18.554Z">05/06/2026 02:23</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-do-entretenimento-quando-tecnologia-e-diversao-se-encontram-no-jogo.html">A nova era do entretenimento: quando tecnologia e diversão se encontram no jogo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-06-05T00:13:21.144Z">04/06/2026 21:13</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

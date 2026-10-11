@@ -19,6 +19,8 @@ const {
 } = require("./seo-identity");
 const { gerarResourceHints } = require("./seo-resource-hints");
 const { normalizarRobotsMeta } = require("./seo-robots");
+const { aplicarLayoutSite } = require("./site-presentation");
+const { gravarAtomico } = require("./editorial-transaction");
 const { descricaoSeoUtilizavel } = require("./seo-description");
 const {
   criarFonteSchema,
@@ -346,6 +348,7 @@ function collectHeadAssets(head) {
       if (/rel=["']alternate["']/i.test(value) && /application\/rss\+xml/i.test(value)) continue;
       if (/rel=["'](?:preconnect|dns-prefetch)["']/i.test(value)) continue;
       if (/application\/ld\+json/i.test(value)) continue;
+      if (/\/scripts\/(?:theme-toggle\.js|site-theme\.css|site-presentation\.css|site-interactions\.js)/i.test(value)) continue;
       assets.push(value.trim());
     }
   }
@@ -448,7 +451,13 @@ const { byUrl, byTitle } = loadTitles();
 let changed = 0;
 let skipped = 0;
 
-for (const file of walk(root)) {
+const alvo = process.argv.find(arg => arg.startsWith('--file='))?.slice('--file='.length).replace(/\\/g, '/');
+const arquivos = walk(root).filter(file => alvo === undefined || rel(file) === alvo);
+if (alvo !== undefined && (arquivos.length !== 1 || !/^artigos\/.*\.html$/.test(alvo))) {
+  throw new Error('Selecione com --file= um artigo HTML existente dentro de artigos/.');
+}
+
+for (const file of arquivos) {
   const fileRel = rel(file);
   if (!fileRel.startsWith("artigos/") && fileRel !== "artigo.html") continue;
 
@@ -504,15 +513,16 @@ for (const file of walk(root)) {
     sourceDate,
     editorial: metaByUrl?.editorial
   });
-  const updatedHtml = aplicarEspacoBotaoCopiar(aplicarEstilosBlocoLegado(aplicarEstilosCodigoInline(inserirAutoriaVisivel(htmlComConteudoUtil))))
+  let updatedHtml = aplicarEspacoBotaoCopiar(aplicarEstilosBlocoLegado(aplicarEstilosCodigoInline(inserirAutoriaVisivel(htmlComConteudoUtil))))
     .replace(/<html(?![^>]*\blang=)([^>]*)>/i, '<html lang="pt-BR"$1>')
     .replace(/(<head[\s\S]*?>)([\s\S]*?)(<\/head>)/i, (_, open, head, close) => {
       return `${open}${rebuildHead(head, seo)}${close}`;
     })
     .replace(/[ \t]+$/gm, "");
 
+  updatedHtml = aplicarLayoutSite(updatedHtml, fileRel);
   if (updatedHtml !== html) {
-    fs.writeFileSync(file, updatedHtml);
+    gravarAtomico(file, updatedHtml);
     changed += 1;
   }
 }

@@ -16,6 +16,8 @@ const {
 } = require("./seo-identity");
 const { normalizarRobotsMeta } = require("./seo-robots");
 const { gerarSobrePerfil, estilosPerfil } = require("./seo-profile");
+const { aplicarLayoutSite } = require("./site-presentation");
+const { gravarAtomico } = require("./editorial-transaction");
 
 const root = process.cwd();
 const rssUrl = `${siteUrl}/rss.xml`;
@@ -103,6 +105,7 @@ function collectHeadAssets(head) {
       if (/rel=["']alternate["']/i.test(value) && /application\/rss\+xml/i.test(value)) continue;
       if (/rel=["'](?:preconnect|dns-prefetch)["']/i.test(value)) continue;
       if (/application\/ld\+json/i.test(value)) continue;
+      if (/\/scripts\/(?:theme-toggle\.js|site-theme\.css|site-presentation\.css|site-interactions\.js)/i.test(value)) continue;
       assets.push(value.trim());
     }
   }
@@ -183,8 +186,9 @@ for (const page of pages) {
       .replace(/<\/head>/i, `<style id="profile-styles">${estilosPerfil}</style>\n</head>`);
   }
 
+  updated = aplicarLayoutSite(updated, page.file);
   if (updated !== html) {
-    fs.writeFileSync(file, updated);
+    gravarAtomico(file, updated);
     changed += 1;
   }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 334</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/as-melhores-ofertas-de-black-friday-como-a-tecnologia-pode-te-ajudar-a-economizar.html">As melhores ofertas de Black Friday: como a tecnologia pode te ajudar a economizar</a><time datetime="2025-11-29T16:24:29.244Z">29/11/2025 13:24</time></li>
-<li><a href="artigos/tecnologia/uma-tv-que-vale-o-investimento-por-que-a-hisense-u8n-e-a-escolha-certa-para-gamers-e-cinefilos.html">Uma TV que vale o investimento: Por que a Hisense U8N é a escolha certa para gamers e cinéfilos</a><time datetime="2025-11-29T15:20:03.541Z">29/11/2025 12:20</time></li>
-<li><a href="artigos/tecnologia/descontos-que-valem-ouro-como-a-arquitetura-de-software-pode-te-ajudar-a-navegar-no-caos-da-black-friday.html">Descontos que Valem Ouro: Como a Arquitetura de Software Pode Te Ajudar a Navegar no Caos da Black Friday</a><time datetime="2025-11-29T14:19:24.475Z">29/11/2025 11:19</time></li>
-<li><a href="artigos/cloud/azure-virtual-desktop-a-revolucao-hibrida-que-chegou-para-ficar.html">Azure Virtual Desktop: A Revolução Híbrida que Chegou para Ficar</a><time datetime="2025-11-29T13:28:07.107Z">29/11/2025 10:28</time></li>
-<li><a href="artigos/devops/docker-desktop-4-50-a-revolucao-no-desenvolvimento-com-conteineres-e-ia.html">Docker Desktop 4.50: A Revolução no Desenvolvimento com Contêineres e IA</a><time datetime="2025-11-29T12:38:46.205Z">29/11/2025 09:38</time></li>
-<li><a href="artigos/tecnologia/ferramentas-sem-fio-a-revolucao-na-sua-caixa-de-ferramentas-e-no-desenvolvimento-de-software.html">Ferramentas sem Fio: A Revolução na Sua Caixa de Ferramentas e no Desenvolvimento de Software</a><time datetime="2025-11-29T11:16:53.901Z">29/11/2025 08:16</time></li>
-<li><a href="artigos/devops/a-aposentadoria-do-ingress-nginx-o-que-isso-significa-para-a-comunidade-kubernetes.html">A aposentadoria do Ingress NGINX: O que isso significa para a comunidade Kubernetes?</a><time datetime="2025-11-29T10:20:57.851Z">29/11/2025 07:20</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-gadgets-o-que-os-brasileiros-estao-comprando-na-black-friday.html">A revolução dos gadgets: o que os brasileiros estão comprando na Black Friday?</a><time datetime="2025-11-29T09:21:00.252Z">29/11/2025 06:21</time></li>
-<li><a href="artigos/inteligencia-artificial/como-o-evalite-pode-revolucionar-o-teste-de-aplicacoes-com-ia.html">Como o Evalite Pode Revolucionar o Teste de Aplicações com IA</a><time datetime="2025-11-29T08:26:51.665Z">29/11/2025 05:26</time></li>
-<li><a href="artigos/tecnologia/as-super-ofertas-da-black-friday-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">As Super Ofertas da Black Friday: O Que a Arquitetura de Software Tem a Ver com Isso?</a><time datetime="2025-11-29T07:19:55.780Z">29/11/2025 04:19</time></li>
+<li><a href="artigos/tecnologia/as-melhores-ofertas-de-black-friday-como-a-tecnologia-pode-te-ajudar-a-economizar.html">As melhores ofertas de Black Friday: como a tecnologia pode te ajudar a economizar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-29T16:24:29.244Z">29/11/2025 13:24</time></div></li>
+<li><a href="artigos/tecnologia/uma-tv-que-vale-o-investimento-por-que-a-hisense-u8n-e-a-escolha-certa-para-gamers-e-cinefilos.html">Uma TV que vale o investimento: Por que a Hisense U8N é a escolha certa para gamers e cinéfilos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-29T15:20:03.541Z">29/11/2025 12:20</time></div></li>
+<li><a href="artigos/tecnologia/descontos-que-valem-ouro-como-a-arquitetura-de-software-pode-te-ajudar-a-navegar-no-caos-da-black-friday.html">Descontos que Valem Ouro: Como a Arquitetura de Software Pode Te Ajudar a Navegar no Caos da Black Friday</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-29T14:19:24.475Z">29/11/2025 11:19</time></div></li>
+<li><a href="artigos/cloud/azure-virtual-desktop-a-revolucao-hibrida-que-chegou-para-ficar.html">Azure Virtual Desktop: A Revolução Híbrida que Chegou para Ficar</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-11-29T13:28:07.107Z">29/11/2025 10:28</time></div></li>
+<li><a href="artigos/devops/docker-desktop-4-50-a-revolucao-no-desenvolvimento-com-conteineres-e-ia.html">Docker Desktop 4.50: A Revolução no Desenvolvimento com Contêineres e IA</a><div class="article-list-meta"><span>DevOps</span><time datetime="2025-11-29T12:38:46.205Z">29/11/2025 09:38</time></div></li>
+<li><a href="artigos/tecnologia/ferramentas-sem-fio-a-revolucao-na-sua-caixa-de-ferramentas-e-no-desenvolvimento-de-software.html">Ferramentas sem Fio: A Revolução na Sua Caixa de Ferramentas e no Desenvolvimento de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-29T11:16:53.901Z">29/11/2025 08:16</time></div></li>
+<li><a href="artigos/devops/a-aposentadoria-do-ingress-nginx-o-que-isso-significa-para-a-comunidade-kubernetes.html">A aposentadoria do Ingress NGINX: O que isso significa para a comunidade Kubernetes?</a><div class="article-list-meta"><span>DevOps</span><time datetime="2025-11-29T10:20:57.851Z">29/11/2025 07:20</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-gadgets-o-que-os-brasileiros-estao-comprando-na-black-friday.html">A revolução dos gadgets: o que os brasileiros estão comprando na Black Friday?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-29T09:21:00.252Z">29/11/2025 06:21</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-o-evalite-pode-revolucionar-o-teste-de-aplicacoes-com-ia.html">Como o Evalite Pode Revolucionar o Teste de Aplicações com IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-29T08:26:51.665Z">29/11/2025 05:26</time></div></li>
+<li><a href="artigos/tecnologia/as-super-ofertas-da-black-friday-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">As Super Ofertas da Black Friday: O Que a Arquitetura de Software Tem a Ver com Isso?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-29T07:19:55.780Z">29/11/2025 04:19</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 527</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/google-e-o-antitruste-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">Google e o Antitruste: O Que a Arquitetura de Software Tem a Ver com Isso?</a><time datetime="2025-09-03T05:17:25.029Z">03/09/2025 02:17</time></li>
-<li><a href="artigos/tecnologia-automotiva/expansao-da-mobilidade-waymo-leva-tecnologia-de-robotaxi-ao-frio-de-denver-e-seattle.html">Expansão da Mobilidade: Waymo Leva Tecnologia de Robotaxi ao Frio de Denver e Seattle</a><time datetime="2025-09-03T04:22:14.666Z">03/09/2025 01:22</time></li>
-<li><a href="artigos/seguranca/desvendando-o-gigante-licoes-do-maior-ataque-ddos-da-historia.html">Desvendando o Gigante: Lições do Maior Ataque DDoS da História</a><time datetime="2025-09-03T03:28:26.861Z">03/09/2025 00:28</time></li>
-<li><a href="artigos/tecnologia/a-bateria-do-seu-iphone-esta-te-deixando-na-mao-entenda-como-a-tecnologia-pode-ajudar.html">A bateria do seu iPhone está te deixando na mão? Entenda como a tecnologia pode ajudar</a><time datetime="2025-09-03T02:54:54.950Z">02/09/2025 23:54</time></li>
-<li><a href="artigos/tecnologia/novas-fronteiras-da-localizacao-como-o-airtag-revoluciona-a-recuperacao-de-objetos-perdidos.html">Novas Fronteiras da Localização: Como o AirTag Revoluciona a Recuperação de Objetos Perdidos</a><time datetime="2025-09-03T01:19:15.370Z">02/09/2025 22:19</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-da-concorrencia-digital-como-a-arquitetura-de-software-pode-se-adaptar.html">A nova era da concorrência digital: como a arquitetura de software pode se adaptar</a><time datetime="2025-09-02T23:17:58.634Z">02/09/2025 20:17</time></li>
-<li><a href="artigos/tecnologia/a-batalha-do-chrome-o-que-a-decisao-do-juiz-significa-para-o-futuro-da-tecnologia.html">A batalha do Chrome: o que a decisão do juiz significa para o futuro da tecnologia</a><time datetime="2025-09-02T22:18:08.974Z">02/09/2025 19:18</time></li>
-<li><a href="artigos/tecnologia/a-era-dos-convites-o-fim-do-prime-invitee-e-o-que-vem-por-ai.html">A era dos convites: o fim do Prime Invitee e o que vem por aí</a><time datetime="2025-09-02T21:17:12.764Z">02/09/2025 18:17</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-abordagem-da-openai-o-que-podemos-aprender-com-as-mudancas-na-seguranca-das-ia.html">A nova abordagem da OpenAI: o que podemos aprender com as mudanças na segurança das IA</a><time datetime="2025-09-02T20:20:37.566Z">02/09/2025 17:20</time></li>
-<li><a href="artigos/tecnologia/desvendando-as-funcionalidades-ocultas-da-camera-pixel-como-elevar-seus-videos-a-outro-nivel.html">Desvendando as Funcionalidades Ocultas da Câmera Pixel: Como Elevar Seus Vídeos a Outro Nível</a><time datetime="2025-09-02T19:16:35.128Z">02/09/2025 16:16</time></li>
+<li><a href="artigos/tecnologia/google-e-o-antitruste-o-que-a-arquitetura-de-software-tem-a-ver-com-isso.html">Google e o Antitruste: O Que a Arquitetura de Software Tem a Ver com Isso?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-03T05:17:25.029Z">03/09/2025 02:17</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/expansao-da-mobilidade-waymo-leva-tecnologia-de-robotaxi-ao-frio-de-denver-e-seattle.html">Expansão da Mobilidade: Waymo Leva Tecnologia de Robotaxi ao Frio de Denver e Seattle</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-09-03T04:22:14.666Z">03/09/2025 01:22</time></div></li>
+<li><a href="artigos/seguranca/desvendando-o-gigante-licoes-do-maior-ataque-ddos-da-historia.html">Desvendando o Gigante: Lições do Maior Ataque DDoS da História</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-09-03T03:28:26.861Z">03/09/2025 00:28</time></div></li>
+<li><a href="artigos/tecnologia/a-bateria-do-seu-iphone-esta-te-deixando-na-mao-entenda-como-a-tecnologia-pode-ajudar.html">A bateria do seu iPhone está te deixando na mão? Entenda como a tecnologia pode ajudar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-03T02:54:54.950Z">02/09/2025 23:54</time></div></li>
+<li><a href="artigos/tecnologia/novas-fronteiras-da-localizacao-como-o-airtag-revoluciona-a-recuperacao-de-objetos-perdidos.html">Novas Fronteiras da Localização: Como o AirTag Revoluciona a Recuperação de Objetos Perdidos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-03T01:19:15.370Z">02/09/2025 22:19</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-da-concorrencia-digital-como-a-arquitetura-de-software-pode-se-adaptar.html">A nova era da concorrência digital: como a arquitetura de software pode se adaptar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-02T23:17:58.634Z">02/09/2025 20:17</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-do-chrome-o-que-a-decisao-do-juiz-significa-para-o-futuro-da-tecnologia.html">A batalha do Chrome: o que a decisão do juiz significa para o futuro da tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-02T22:18:08.974Z">02/09/2025 19:18</time></div></li>
+<li><a href="artigos/tecnologia/a-era-dos-convites-o-fim-do-prime-invitee-e-o-que-vem-por-ai.html">A era dos convites: o fim do Prime Invitee e o que vem por aí</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-02T21:17:12.764Z">02/09/2025 18:17</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-abordagem-da-openai-o-que-podemos-aprender-com-as-mudancas-na-seguranca-das-ia.html">A nova abordagem da OpenAI: o que podemos aprender com as mudanças na segurança das IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-09-02T20:20:37.566Z">02/09/2025 17:20</time></div></li>
+<li><a href="artigos/tecnologia/desvendando-as-funcionalidades-ocultas-da-camera-pixel-como-elevar-seus-videos-a-outro-nivel.html">Desvendando as Funcionalidades Ocultas da Câmera Pixel: Como Elevar Seus Vídeos a Outro Nível</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-02T19:16:35.128Z">02/09/2025 16:16</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

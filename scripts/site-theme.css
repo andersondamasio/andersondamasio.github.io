@@ -1,0 +1,142 @@
+html:root {
+  color-scheme: light;
+  --bg: #f4f6f7;
+  --text: #252a2e;
+  --main-bg: #ffffff;
+  --link: #095ea9;
+  --link-hover: #074a85;
+  --footer: #52616b;
+  --meta: #52616b;
+  --border: #bbc6cd;
+  --control-border: #73808a;
+  --accent: #067264;
+  --soft-bg: #edf2f5;
+  --header-bg: #0a66c2;
+  --header-color: #ffffff;
+  --pre-bg: #edf1f4;
+  --pre-color: #20252a;
+  --copy-bg: #095ea9;
+  --copy-color: #ffffff;
+  --copy-bg-hover: #074a85;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #17191b;
+  --text: #e4e8eb;
+  --main-bg: #212427;
+  --link: #96c6ff;
+  --link-hover: #c9e1ff;
+  --footer: #b8c2c9;
+  --meta: #b8c2c9;
+  --border: #505a61;
+  --control-border: #80909b;
+  --accent: #81d8c6;
+  --soft-bg: #2a3035;
+  --header-bg: #212427;
+  --header-color: #ffffff;
+  --pre-bg: #141719;
+  --pre-color: #e4e8eb;
+  --copy-bg: #96c6ff;
+  --copy-color: #141719;
+  --copy-bg-hover: #c9e1ff;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+}
+
+/* CSS alone follows the system when JavaScript is disabled or unavailable. */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]):not([data-theme="dark"]) {
+    color-scheme: dark;
+    --bg: #17191b;
+    --text: #e4e8eb;
+    --main-bg: #212427;
+    --link: #96c6ff;
+    --link-hover: #c9e1ff;
+    --footer: #b8c2c9;
+    --meta: #b8c2c9;
+    --border: #505a61;
+    --control-border: #80909b;
+    --accent: #81d8c6;
+    --soft-bg: #2a3035;
+    --header-bg: #212427;
+    --header-color: #ffffff;
+    --pre-bg: #141719;
+    --pre-color: #e4e8eb;
+    --copy-bg: #96c6ff;
+    --copy-color: #141719;
+    --copy-bg-hover: #c9e1ff;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+  }
+}
+
+html body { background: var(--bg); color: var(--text); }
+html body > main { background-color: var(--main-bg); overflow-wrap: anywhere; }
+html main:has(.profile-intro), html main:has(.reading-topics), html main.archive-content { background: transparent; }
+html a { color: var(--link); }
+html a:hover { color: var(--link-hover); }
+html main h1, html main h2, html main h3 { color: var(--text); }
+html .back-link a { color: var(--link); border-color: var(--link); }
+html .profile-role { color: var(--accent); }
+html .article-meta, html .article-source, html .article-index time,
+html .reading-kind, html .archive-months span, html .article-index span { color: var(--meta); }
+html footer { color: var(--footer) !important; }
+html main section, html .article-index li, html .reading-list li,
+html .archive-months, html .article-source { border-color: var(--border); }
+html .archive-days a { border-color: var(--accent); }
+html .article-validation, html .article-usefulness { background: var(--soft-bg); border-color: var(--accent); }
+html .article-body pre { background: var(--pre-bg); color: var(--pre-color); }
+html .copy-button { background: var(--copy-bg); color: var(--copy-color); }
+html .copy-button:hover { background: var(--copy-bg-hover); color: var(--copy-color); }
+html .scroll-container a:hover, html .scroll-container a.active,
+html .back-link a:hover { background: var(--copy-bg); color: var(--copy-color); }
+html .article-body :not(pre) > code { background: var(--soft-bg); color: var(--text); }
+html .article-body pre code { background: transparent; color: inherit; }
+html main blockquote { border-left: 3px solid var(--accent); margin-left: 0; padding-left: 1rem; color: var(--text); }
+html main table { border-collapse: collapse; max-width: 100%; }
+html main th, html main td { border: 1px solid var(--border); padding: .65rem; }
+html main th { background: var(--soft-bg); color: var(--text); }
+html main input, html main textarea, html main select {
+  background: var(--main-bg); color: var(--text); border-color: var(--control-border);
+}
+html main input::placeholder, html main textarea::placeholder { color: var(--meta); opacity: 1; }
+html main button[type="submit"] { background: var(--copy-bg); color: var(--copy-color); }
+html main button[type="submit"]:hover { background: var(--copy-bg-hover); }
+html :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+/* Inline colors belong to older templates; scope overrides to the site shell. */
+html body > header {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: .5rem 2rem; padding: .65rem 1.25rem !important;
+  background: var(--header-bg) !important; color: var(--header-color);
+}
+html body > header > nav { gap: .5rem 1.5rem !important; align-items: center; }
+html body > header a { color: var(--header-color) !important; min-height: 2.75rem; display: inline-flex; align-items: center; }
+html body > header :focus-visible { outline-color: var(--header-color); }
+.theme-control { display: none; align-items: center; gap: .5rem; font-size: .875rem; font-weight: 500; white-space: nowrap; }
+html.theme-ready .theme-control { display: inline-flex; }
+html .theme-control select {
+  font: inherit; width: 7rem; height: 2.75rem; padding: .35rem .5rem;
+  border: 1px solid var(--control-border); border-radius: 4px;
+  background: var(--main-bg); color: var(--text); cursor: pointer;
+}
+html #cookie-banner { background: var(--main-bg) !important; color: var(--text) !important; border-top: 1px solid var(--border); gap: .75rem; }
+html #cookie-banner a { color: var(--link) !important; }
+html #cookie-banner button { background: var(--copy-bg) !important; color: var(--copy-color) !important; min-height: 2.75rem; flex-shrink: 0; }
+@media (max-width: 540px) {
+  html body > header { gap: .25rem; padding: .5rem 1rem !important; }
+  html body > header > nav { width: 100%; gap: .25rem 1rem !important; }
+  html #cookie-banner { flex-wrap: wrap; }
+  html #cookie-banner button { margin-left: 0 !important; }
+}
+@media print {
+  html .theme-control { display: none !important; }
+  html:root {
+    color-scheme: light;
+    --bg: #ffffff; --main-bg: #ffffff; --text: #000000;
+    --link: #095ea9; --footer: #52616b; --meta: #52616b;
+    --accent: #067264; --soft-bg: #edf2f5; --border: #bbc6cd;
+    --pre-bg: #edf1f4; --pre-color: #20252a;
+  }
+  html body, html body > main { background: white; color: black; }
+}

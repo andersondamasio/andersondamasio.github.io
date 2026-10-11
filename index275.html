@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 275</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/fazendo-amigos-em-tempos-de-solidao-como-apps-de-socializacao-podem-ajudar.html">Fazendo Amigos em Tempos de Solidão: Como Apps de Socialização Podem Ajudar</a><time datetime="2025-12-26T19:18:57.099Z">26/12/2025 16:18</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-das-startups-o-que-esperar-em-2026.html">A nova era das startups: o que esperar em 2026?</a><time datetime="2025-12-26T18:31:40.737Z">26/12/2025 15:31</time></li>
-<li><a href="artigos/tecnologia/transformando-a-jardinagem-a-revolucao-do-controle-de-ervas-daninhas-sem-quimicos.html">Transformando a Jardinagem: A Revolução do Controle de Ervas Daninhas Sem Químicos</a><time datetime="2025-12-26T17:20:10.194Z">26/12/2025 14:20</time></li>
-<li><a href="artigos/cloud/como-a-uber-esta-transformando-o-benchmarking-de-infraestrutura-em-um-jogo-de-dados.html">Como a Uber Está Transformando o Benchmarking de Infraestrutura em um Jogo de Dados</a><time datetime="2025-12-26T15:23:25.336Z">26/12/2025 12:23</time></li>
-<li><a href="artigos/seguranca/novas-narrativas-ciberneticas-historias-de-seguranca-que-deveriamos-celebrar.html">Novas Narrativas Cibernéticas: Histórias de Segurança que Deveríamos Celebrar</a><time datetime="2025-12-26T14:22:29.648Z">26/12/2025 11:22</time></li>
-<li><a href="artigos/tecnologia/economizando-energia-desplugando-dispositivos-em-casa-e-a-arquitetura-de-software.html">Economizando Energia: Desplugando Dispositivos em Casa e a Arquitetura de Software</a><time datetime="2025-12-26T13:34:55.595Z">26/12/2025 10:34</time></li>
-<li><a href="artigos/tecnologia/como-liberar-espaco-no-seu-iphone-dicas-de-um-arquiteto-de-software.html">Como liberar espaço no seu iPhone: Dicas de um Arquiteto de Software</a><time datetime="2025-12-26T12:43:46.501Z">26/12/2025 09:43</time></li>
-<li><a href="artigos/tecnologia/a-batalha-dos-aneis-oura-ring-3-ou-4-o-que-a-tecnologia-pode-nos-ensinar.html">A batalha dos anéis: Oura Ring 3 ou 4? O que a tecnologia pode nos ensinar</a><time datetime="2025-12-26T11:20:48.239Z">26/12/2025 08:20</time></li>
-<li><a href="artigos/tecnologia/uma-nova-experiencia-sonora-oneplus-buds-4-para-quem-nao-abre-mao-de-qualidade.html">Uma nova experiência sonora: OnePlus Buds 4 para quem não abre mão de qualidade</a><time datetime="2025-12-26T10:24:21.058Z">26/12/2025 07:24</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-a-educacao-o-papel-da-ia-na-superacao-da-desigualdade.html">Transformando a Educação: O Papel da IA na Superação da Desigualdade</a><time datetime="2025-12-26T09:24:56.141Z">26/12/2025 06:24</time></li>
+<li><a href="artigos/tecnologia/fazendo-amigos-em-tempos-de-solidao-como-apps-de-socializacao-podem-ajudar.html">Fazendo Amigos em Tempos de Solidão: Como Apps de Socialização Podem Ajudar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-26T19:18:57.099Z">26/12/2025 16:18</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-das-startups-o-que-esperar-em-2026.html">A nova era das startups: o que esperar em 2026?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-26T18:31:40.737Z">26/12/2025 15:31</time></div></li>
+<li><a href="artigos/tecnologia/transformando-a-jardinagem-a-revolucao-do-controle-de-ervas-daninhas-sem-quimicos.html">Transformando a Jardinagem: A Revolução do Controle de Ervas Daninhas Sem Químicos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-26T17:20:10.194Z">26/12/2025 14:20</time></div></li>
+<li><a href="artigos/cloud/como-a-uber-esta-transformando-o-benchmarking-de-infraestrutura-em-um-jogo-de-dados.html">Como a Uber Está Transformando o Benchmarking de Infraestrutura em um Jogo de Dados</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-12-26T15:23:25.336Z">26/12/2025 12:23</time></div></li>
+<li><a href="artigos/seguranca/novas-narrativas-ciberneticas-historias-de-seguranca-que-deveriamos-celebrar.html">Novas Narrativas Cibernéticas: Histórias de Segurança que Deveríamos Celebrar</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-26T14:22:29.648Z">26/12/2025 11:22</time></div></li>
+<li><a href="artigos/tecnologia/economizando-energia-desplugando-dispositivos-em-casa-e-a-arquitetura-de-software.html">Economizando Energia: Desplugando Dispositivos em Casa e a Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-26T13:34:55.595Z">26/12/2025 10:34</time></div></li>
+<li><a href="artigos/tecnologia/como-liberar-espaco-no-seu-iphone-dicas-de-um-arquiteto-de-software.html">Como liberar espaço no seu iPhone: Dicas de um Arquiteto de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-26T12:43:46.501Z">26/12/2025 09:43</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-dos-aneis-oura-ring-3-ou-4-o-que-a-tecnologia-pode-nos-ensinar.html">A batalha dos anéis: Oura Ring 3 ou 4? O que a tecnologia pode nos ensinar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-26T11:20:48.239Z">26/12/2025 08:20</time></div></li>
+<li><a href="artigos/tecnologia/uma-nova-experiencia-sonora-oneplus-buds-4-para-quem-nao-abre-mao-de-qualidade.html">Uma nova experiência sonora: OnePlus Buds 4 para quem não abre mão de qualidade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-26T10:24:21.058Z">26/12/2025 07:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-a-educacao-o-papel-da-ia-na-superacao-da-desigualdade.html">Transformando a Educação: O Papel da IA na Superação da Desigualdade</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-26T09:24:56.141Z">26/12/2025 06:24</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

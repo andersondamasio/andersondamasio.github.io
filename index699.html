@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 699</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-revolucao-das-fintechs-como-a-tebi-esta-moldando-o-futuro-da-gestao-de-negocios-na-hospitalidade.html">A revolução das fintechs: como a Tebi está moldando o futuro da gestão de negócios na hospitalidade</a><time datetime="2025-06-10T12:40:48.188Z">10/06/2025 09:40</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-ipad-o-que-podemos-esperar-do-ipados-26.html">A revolução do iPad: o que podemos esperar do iPadOS 26?</a><time datetime="2025-06-10T11:17:31.486Z">10/06/2025 08:17</time></li>
-<li><a href="artigos/inteligencia-artificial/a-verdade-por-tras-dos-chatbots-eles-estao-mentindo-pra-voce.html">A verdade por trás dos chatbots: eles estão mentindo pra você</a><time datetime="2025-06-10T10:21:46.378Z">10/06/2025 07:21</time></li>
-<li><a href="artigos/cloud/a-nova-era-do-gerenciamento-kubernetes-como-o-eks-dashboard-transforma-a-visao-multi-cloud.html">A nova era do gerenciamento Kubernetes: Como o EKS Dashboard transforma a visão multi-cloud</a><time datetime="2025-06-10T08:26:49.143Z">10/06/2025 05:26</time></li>
-<li><a href="artigos/desenvolvimento-de-software/novas-interfaces-e-inteligencia-o-que-esperar-do-ios-26-e-suas-implicacoes-para-desenvolvedores.html">Novas Interfaces e Inteligência: O Que Esperar do iOS 26 e Suas Implicações para Desenvolvedores</a><time datetime="2025-06-10T07:18:49.040Z">10/06/2025 04:18</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-widgets-espaciais-como-o-visionos-26-transforma-a-experiencia-de-interacao.html">A nova era dos widgets espaciais: como o visionOS 26 transforma a experiência de interação</a><time datetime="2025-06-10T06:28:19.227Z">10/06/2025 03:28</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-bilhoes-como-a-arquitetura-de-software-impulsiona-o-crescimento-da-openai.html">A revolução dos bilhões: como a Arquitetura de Software impulsiona o crescimento da OpenAI</a><time datetime="2025-06-10T05:20:25.551Z">10/06/2025 02:20</time></li>
-<li><a href="artigos/tecnologia-automotiva/a-revolucao-eletrica-da-china-um-olhar-tecnico-e-suas-implicacoes-para-a-industria-automotiva.html">A revolução elétrica da China: um olhar técnico e suas implicações para a indústria automotiva</a><time datetime="2025-06-10T04:27:13.691Z">10/06/2025 01:27</time></li>
-<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-da-apple-um-passo-de-cada-vez-ou-fuga-para-o-futuro.html">A Inteligência Artificial da Apple: Um Passo de Cada Vez ou Fuga Para o Futuro?</a><time datetime="2025-06-10T03:19:03.607Z">10/06/2025 00:19</time></li>
-<li><a href="artigos/tecnologia/drone-shows-a-nova-fronteira-da-tecnologia-em-eventos.html">Drone Shows: A Nova Fronteira da Tecnologia em Eventos</a><time datetime="2025-06-09T23:18:27.150Z">09/06/2025 20:18</time></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-fintechs-como-a-tebi-esta-moldando-o-futuro-da-gestao-de-negocios-na-hospitalidade.html">A revolução das fintechs: como a Tebi está moldando o futuro da gestão de negócios na hospitalidade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-06-10T12:40:48.188Z">10/06/2025 09:40</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-ipad-o-que-podemos-esperar-do-ipados-26.html">A revolução do iPad: o que podemos esperar do iPadOS 26?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-06-10T11:17:31.486Z">10/06/2025 08:17</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-verdade-por-tras-dos-chatbots-eles-estao-mentindo-pra-voce.html">A verdade por trás dos chatbots: eles estão mentindo pra você</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-10T10:21:46.378Z">10/06/2025 07:21</time></div></li>
+<li><a href="artigos/cloud/a-nova-era-do-gerenciamento-kubernetes-como-o-eks-dashboard-transforma-a-visao-multi-cloud.html">A nova era do gerenciamento Kubernetes: Como o EKS Dashboard transforma a visão multi-cloud</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-06-10T08:26:49.143Z">10/06/2025 05:26</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/novas-interfaces-e-inteligencia-o-que-esperar-do-ios-26-e-suas-implicacoes-para-desenvolvedores.html">Novas Interfaces e Inteligência: O Que Esperar do iOS 26 e Suas Implicações para Desenvolvedores</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-06-10T07:18:49.040Z">10/06/2025 04:18</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-widgets-espaciais-como-o-visionos-26-transforma-a-experiencia-de-interacao.html">A nova era dos widgets espaciais: como o visionOS 26 transforma a experiência de interação</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-06-10T06:28:19.227Z">10/06/2025 03:28</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-bilhoes-como-a-arquitetura-de-software-impulsiona-o-crescimento-da-openai.html">A revolução dos bilhões: como a Arquitetura de Software impulsiona o crescimento da OpenAI</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-10T05:20:25.551Z">10/06/2025 02:20</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/a-revolucao-eletrica-da-china-um-olhar-tecnico-e-suas-implicacoes-para-a-industria-automotiva.html">A revolução elétrica da China: um olhar técnico e suas implicações para a indústria automotiva</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-06-10T04:27:13.691Z">10/06/2025 01:27</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-da-apple-um-passo-de-cada-vez-ou-fuga-para-o-futuro.html">A Inteligência Artificial da Apple: Um Passo de Cada Vez ou Fuga Para o Futuro?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-06-10T03:19:03.607Z">10/06/2025 00:19</time></div></li>
+<li><a href="artigos/tecnologia/drone-shows-a-nova-fronteira-da-tecnologia-em-eventos.html">Drone Shows: A Nova Fronteira da Tecnologia em Eventos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-06-09T23:18:27.150Z">09/06/2025 20:18</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

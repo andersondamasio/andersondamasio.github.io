@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 44</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/como-transformar-seu-sonos-em-uma-experiencia-sonora-imersiva-e-personalizada.html">Como Transformar Seu Sonos em uma Experiência Sonora Imersiva e Personalizada</a><time datetime="2026-05-10T13:23:13.291Z">10/05/2026 10:23</time></li>
-<li><a href="artigos/tecnologia/a-batalha-das-redes-quem-realmente-domina-o-5g-fora-das-grandes-cidades.html">A batalha das redes: quem realmente domina o 5G fora das grandes cidades?</a><time datetime="2026-05-10T11:57:22.876Z">10/05/2026 08:57</time></li>
-<li><a href="artigos/tecnologia/descubra-os-codigos-secretos-da-netflix-e-potencialize-sua-experiencia-de-stream.html">Descubra os Códigos Secretos da Netflix e Potencialize sua Experiência de Stream</a><time datetime="2026-05-10T10:19:27.139Z">10/05/2026 07:19</time></li>
-<li><a href="artigos/tecnologia/aproveite-o-melhor-do-microsoft-365-sem-gastar-um-centavo.html">Aproveite o Melhor do Microsoft 365 Sem Gastar um Centavo</a><time datetime="2026-05-10T08:59:14.347Z">10/05/2026 05:59</time></li>
-<li><a href="artigos/tecnologia/acelerando-seu-roku-dicas-para-desempenho-superior.html">Acelerando seu Roku: Dicas para Desempenho Superior</a><time datetime="2026-05-10T06:17:32.877Z">10/05/2026 03:17</time></li>
-<li><a href="artigos/inteligencia-artificial/desafios-e-oportunidades-da-ia-de-voz-na-india-o-caso-do-wispr-flow.html">Desafios e Oportunidades da IA de Voz na Índia: O Caso do Wispr Flow</a><time datetime="2026-05-10T02:59:05.939Z">09/05/2026 23:59</time></li>
-<li><a href="artigos/inteligencia-artificial/desvendando-a-nova-linguagem-da-inteligencia-artificial-o-que-voce-precisa-saber.html">Desvendando a Nova Linguagem da Inteligência Artificial: O Que Você Precisa Saber</a><time datetime="2026-05-09T21:48:36.739Z">09/05/2026 18:48</time></li>
-<li><a href="artigos/fintech/a-queda-da-parker-licoes-para-a-arquitetura-de-sistemas-em-fintechs.html">A queda da Parker: lições para a arquitetura de sistemas em fintechs</a><time datetime="2026-05-09T20:48:11.103Z">09/05/2026 17:48</time></li>
-<li><a href="artigos/seguranca/a-privacidade-do-motorista-e-o-dilema-dos-dados-um-alerta-para-as-montadoras.html">A privacidade do motorista e o dilema dos dados: um alerta para as montadoras</a><time datetime="2026-05-09T19:07:28.657Z">09/05/2026 16:07</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-da-fotografia-instantanea-como-a-instax-wide-400-transforma-memorias-em-grandes-momentos.html">A nova era da fotografia instantânea: como a Instax Wide 400 transforma memórias em grandes momentos</a><time datetime="2026-05-09T15:58:37.221Z">09/05/2026 12:58</time></li>
+<li><a href="artigos/tecnologia/como-transformar-seu-sonos-em-uma-experiencia-sonora-imersiva-e-personalizada.html">Como Transformar Seu Sonos em uma Experiência Sonora Imersiva e Personalizada</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-10T13:23:13.291Z">10/05/2026 10:23</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-das-redes-quem-realmente-domina-o-5g-fora-das-grandes-cidades.html">A batalha das redes: quem realmente domina o 5G fora das grandes cidades?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-10T11:57:22.876Z">10/05/2026 08:57</time></div></li>
+<li><a href="artigos/tecnologia/descubra-os-codigos-secretos-da-netflix-e-potencialize-sua-experiencia-de-stream.html">Descubra os Códigos Secretos da Netflix e Potencialize sua Experiência de Stream</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-10T10:19:27.139Z">10/05/2026 07:19</time></div></li>
+<li><a href="artigos/tecnologia/aproveite-o-melhor-do-microsoft-365-sem-gastar-um-centavo.html">Aproveite o Melhor do Microsoft 365 Sem Gastar um Centavo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-10T08:59:14.347Z">10/05/2026 05:59</time></div></li>
+<li><a href="artigos/tecnologia/acelerando-seu-roku-dicas-para-desempenho-superior.html">Acelerando seu Roku: Dicas para Desempenho Superior</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-10T06:17:32.877Z">10/05/2026 03:17</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desafios-e-oportunidades-da-ia-de-voz-na-india-o-caso-do-wispr-flow.html">Desafios e Oportunidades da IA de Voz na Índia: O Caso do Wispr Flow</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-10T02:59:05.939Z">09/05/2026 23:59</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desvendando-a-nova-linguagem-da-inteligencia-artificial-o-que-voce-precisa-saber.html">Desvendando a Nova Linguagem da Inteligência Artificial: O Que Você Precisa Saber</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-09T21:48:36.739Z">09/05/2026 18:48</time></div></li>
+<li><a href="artigos/fintech/a-queda-da-parker-licoes-para-a-arquitetura-de-sistemas-em-fintechs.html">A queda da Parker: lições para a arquitetura de sistemas em fintechs</a><div class="article-list-meta"><span>Fintech</span><time datetime="2026-05-09T20:48:11.103Z">09/05/2026 17:48</time></div></li>
+<li><a href="artigos/seguranca/a-privacidade-do-motorista-e-o-dilema-dos-dados-um-alerta-para-as-montadoras.html">A privacidade do motorista e o dilema dos dados: um alerta para as montadoras</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-05-09T19:07:28.657Z">09/05/2026 16:07</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-da-fotografia-instantanea-como-a-instax-wide-400-transforma-memorias-em-grandes-momentos.html">A nova era da fotografia instantânea: como a Instax Wide 400 transforma memórias em grandes momentos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-09T15:58:37.221Z">09/05/2026 12:58</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

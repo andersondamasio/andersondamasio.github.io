@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 343</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-black-friday-e-suas-oportunidades-como-a-tecnologia-pode-te-ajudar-a-nao-cair-em-ciladas.html">A Black Friday e suas oportunidades: como a tecnologia pode te ajudar a não cair em ciladas</a><time datetime="2025-11-25T14:21:58.290Z">25/11/2025 11:21</time></li>
-<li><a href="artigos/seguranca/atencao-o-perigo-das-ferramentas-de-navegacao-com-ia-como-o-hashjack-pode-impactar-sua-seguranca.html">Atenção! O Perigo das Ferramentas de Navegação com IA: Como o HashJack Pode Impactar Sua Segurança</a><time datetime="2025-11-25T13:35:24.973Z">25/11/2025 10:35</time></li>
-<li><a href="artigos/desenvolvimento-de-software/oportunidades-e-desafios-o-que-a-black-friday-pode-ensinar-sobre-arquitetura-de-sistemas.html">Oportunidades e Desafios: O Que a Black Friday Pode Ensinar Sobre Arquitetura de Sistemas</a><time datetime="2025-11-25T12:43:11.526Z">25/11/2025 09:43</time></li>
-<li><a href="artigos/tecnologia-automotiva/como-um-carro-eletrico-pode-salvar-sua-casa-em-blackouts-a-revolucao-do-v2h.html">Como um carro elétrico pode salvar sua casa em blackouts: a revolução do V2H</a><time datetime="2025-11-25T11:20:06.675Z">25/11/2025 08:20</time></li>
-<li><a href="artigos/tecnologia/o-que-faz-da-lg-g4-oled-a-escolha-favorita-de-quem-ama-tecnologia.html">O que faz da LG G4 OLED a escolha favorita de quem ama tecnologia</a><time datetime="2025-11-25T10:25:33.532Z">25/11/2025 07:25</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-analise-de-testes-como-a-ia-pode-transformar-a-qualidade-do-software.html">A Revolução da Análise de Testes: Como a IA Pode Transformar a Qualidade do Software</a><time datetime="2025-11-25T09:24:36.690Z">25/11/2025 06:24</time></li>
-<li><a href="artigos/devops/a-nova-era-da-migracao-em-observabilidade-como-o-groundcover-esta-mudando-o-jogo.html">A nova era da migração em observabilidade: como o groundcover está mudando o jogo</a><time datetime="2025-11-25T08:29:18.164Z">25/11/2025 05:29</time></li>
-<li><a href="artigos/programacao/novidades-java-o-que-ha-de-novo-nas-tecnologias-que-moldam-o-futuro-do-desenvolvimento.html">Novidades Java: O que há de novo nas tecnologias que moldam o futuro do desenvolvimento</a><time datetime="2025-11-25T07:21:23.482Z">25/11/2025 04:21</time></li>
-<li><a href="artigos/programacao/desmistificando-o-opus-4-5-o-melhor-modelo-de-codificacao-ou-apenas-mais-um.html">Desmistificando o Opus 4.5: O Melhor Modelo de Codificação ou Apenas Mais Um?</a><time datetime="2025-11-25T06:32:45.468Z">25/11/2025 03:32</time></li>
-<li><a href="artigos/desenvolvimento-de-software/gig-economy-na-india-avancos-e-desafios-da-legislacao-trabalhista.html">Gig Economy na Índia: Avanços e Desafios da Legislação Trabalhista</a><time datetime="2025-11-25T05:22:11.361Z">25/11/2025 02:22</time></li>
+<li><a href="artigos/tecnologia/a-black-friday-e-suas-oportunidades-como-a-tecnologia-pode-te-ajudar-a-nao-cair-em-ciladas.html">A Black Friday e suas oportunidades: como a tecnologia pode te ajudar a não cair em ciladas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-25T14:21:58.290Z">25/11/2025 11:21</time></div></li>
+<li><a href="artigos/seguranca/atencao-o-perigo-das-ferramentas-de-navegacao-com-ia-como-o-hashjack-pode-impactar-sua-seguranca.html">Atenção! O Perigo das Ferramentas de Navegação com IA: Como o HashJack Pode Impactar Sua Segurança</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-25T13:35:24.973Z">25/11/2025 10:35</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/oportunidades-e-desafios-o-que-a-black-friday-pode-ensinar-sobre-arquitetura-de-sistemas.html">Oportunidades e Desafios: O Que a Black Friday Pode Ensinar Sobre Arquitetura de Sistemas</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-11-25T12:43:11.526Z">25/11/2025 09:43</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/como-um-carro-eletrico-pode-salvar-sua-casa-em-blackouts-a-revolucao-do-v2h.html">Como um carro elétrico pode salvar sua casa em blackouts: a revolução do V2H</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-11-25T11:20:06.675Z">25/11/2025 08:20</time></div></li>
+<li><a href="artigos/tecnologia/o-que-faz-da-lg-g4-oled-a-escolha-favorita-de-quem-ama-tecnologia.html">O que faz da LG G4 OLED a escolha favorita de quem ama tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-25T10:25:33.532Z">25/11/2025 07:25</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-analise-de-testes-como-a-ia-pode-transformar-a-qualidade-do-software.html">A Revolução da Análise de Testes: Como a IA Pode Transformar a Qualidade do Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-25T09:24:36.690Z">25/11/2025 06:24</time></div></li>
+<li><a href="artigos/devops/a-nova-era-da-migracao-em-observabilidade-como-o-groundcover-esta-mudando-o-jogo.html">A nova era da migração em observabilidade: como o groundcover está mudando o jogo</a><div class="article-list-meta"><span>DevOps</span><time datetime="2025-11-25T08:29:18.164Z">25/11/2025 05:29</time></div></li>
+<li><a href="artigos/programacao/novidades-java-o-que-ha-de-novo-nas-tecnologias-que-moldam-o-futuro-do-desenvolvimento.html">Novidades Java: O que há de novo nas tecnologias que moldam o futuro do desenvolvimento</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-11-25T07:21:23.482Z">25/11/2025 04:21</time></div></li>
+<li><a href="artigos/programacao/desmistificando-o-opus-4-5-o-melhor-modelo-de-codificacao-ou-apenas-mais-um.html">Desmistificando o Opus 4.5: O Melhor Modelo de Codificação ou Apenas Mais Um?</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-11-25T06:32:45.468Z">25/11/2025 03:32</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/gig-economy-na-india-avancos-e-desafios-da-legislacao-trabalhista.html">Gig Economy na Índia: Avanços e Desafios da Legislação Trabalhista</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-11-25T05:22:11.361Z">25/11/2025 02:22</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 167</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/desenvolvimento-de-software/a-arte-de-simplificar-como-a-visao-condensada-pode-transformar-seu-kanban.html">A arte de simplificar: como a visão condensada pode transformar seu Kanban</a><time datetime="2026-02-16T21:32:09.227Z">16/02/2026 18:32</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-displays-inteligentes-echo-show-11-e-suas-promessas.html">A nova era dos displays inteligentes: Echo Show 11 e suas promessas</a><time datetime="2026-02-16T20:34:35.037Z">16/02/2026 17:34</time></li>
-<li><a href="artigos/tecnologia/melhores-ofertas-em-oculos-inteligentes-a-revolucao-abaixo-de-r-200.html">Melhores Ofertas em Óculos Inteligentes: A Revolução Abaixo de R$200</a><time datetime="2026-02-16T19:35:49.883Z">16/02/2026 16:35</time></li>
-<li><a href="artigos/tecnologia/o-poder-dos-carregadores-compactos-como-a-tecnologia-portatil-pode-otimizar-sua-vida.html">O poder dos carregadores compactos: como a tecnologia portátil pode otimizar sua vida</a><time datetime="2026-02-16T18:46:40.166Z">16/02/2026 15:46</time></li>
-<li><a href="artigos/inteligencia-artificial/como-a-ricursive-intelligence-esta-transformando-o-design-de-chips-com-ia.html">Como a Ricursive Intelligence Está Transformando o Design de Chips com IA</a><time datetime="2026-02-16T17:41:26.956Z">16/02/2026 14:41</time></li>
-<li><a href="artigos/tecnologia/descontos-do-dia-dos-presidentes-tecnologia-em-alta-e-dicas-de-compra-para-voce.html">Descontos do Dia dos Presidentes: Tecnologia em Alta e Dicas de Compra para Você</a><time datetime="2026-02-16T16:46:33.788Z">16/02/2026 13:46</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-audio-em-casa-como-uma-soundbar-pode-transformar-sua-experiencia.html">A revolução do áudio em casa: como uma soundbar pode transformar sua experiência</a><time datetime="2026-02-16T15:43:36.144Z">16/02/2026 12:43</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-avioes-batendo-asas-a-nova-fronteira-da-inteligencia-artificial.html">A Revolução dos Aviões Batendo Asas: A Nova Fronteira da Inteligência Artificial</a><time datetime="2026-02-16T14:44:06.421Z">16/02/2026 11:44</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-das-empresas-autonomas-o-que-falta-para-a-realidade.html">A Revolução das Empresas Autônomas: O Que Falta para a Realidade?</a><time datetime="2026-02-16T13:06:23.994Z">16/02/2026 10:06</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-ia-na-india-um-novo-horizonte-para-arquitetura-de-software.html">A Revolução da IA na Índia: Um Novo Horizonte para Arquitetura de Software</a><time datetime="2026-02-16T11:43:47.878Z">16/02/2026 08:43</time></li>
+<li><a href="artigos/desenvolvimento-de-software/a-arte-de-simplificar-como-a-visao-condensada-pode-transformar-seu-kanban.html">A arte de simplificar: como a visão condensada pode transformar seu Kanban</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-02-16T21:32:09.227Z">16/02/2026 18:32</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-displays-inteligentes-echo-show-11-e-suas-promessas.html">A nova era dos displays inteligentes: Echo Show 11 e suas promessas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-16T20:34:35.037Z">16/02/2026 17:34</time></div></li>
+<li><a href="artigos/tecnologia/melhores-ofertas-em-oculos-inteligentes-a-revolucao-abaixo-de-r-200.html">Melhores Ofertas em Óculos Inteligentes: A Revolução Abaixo de R$200</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-16T19:35:49.883Z">16/02/2026 16:35</time></div></li>
+<li><a href="artigos/tecnologia/o-poder-dos-carregadores-compactos-como-a-tecnologia-portatil-pode-otimizar-sua-vida.html">O poder dos carregadores compactos: como a tecnologia portátil pode otimizar sua vida</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-16T18:46:40.166Z">16/02/2026 15:46</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-a-ricursive-intelligence-esta-transformando-o-design-de-chips-com-ia.html">Como a Ricursive Intelligence Está Transformando o Design de Chips com IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-16T17:41:26.956Z">16/02/2026 14:41</time></div></li>
+<li><a href="artigos/tecnologia/descontos-do-dia-dos-presidentes-tecnologia-em-alta-e-dicas-de-compra-para-voce.html">Descontos do Dia dos Presidentes: Tecnologia em Alta e Dicas de Compra para Você</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-16T16:46:33.788Z">16/02/2026 13:46</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-audio-em-casa-como-uma-soundbar-pode-transformar-sua-experiencia.html">A revolução do áudio em casa: como uma soundbar pode transformar sua experiência</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-16T15:43:36.144Z">16/02/2026 12:43</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-avioes-batendo-asas-a-nova-fronteira-da-inteligencia-artificial.html">A Revolução dos Aviões Batendo Asas: A Nova Fronteira da Inteligência Artificial</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-16T14:44:06.421Z">16/02/2026 11:44</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-das-empresas-autonomas-o-que-falta-para-a-realidade.html">A Revolução das Empresas Autônomas: O Que Falta para a Realidade?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-16T13:06:23.994Z">16/02/2026 10:06</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-ia-na-india-um-novo-horizonte-para-arquitetura-de-software.html">A Revolução da IA na Índia: Um Novo Horizonte para Arquitetura de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-16T11:43:47.878Z">16/02/2026 08:43</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 376</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-montanha-russa-do-investimento-em-ia-rightmove-e-as-licoes-para-o-futuro.html">A montanha-russa do investimento em IA: Rightmove e as lições para o futuro</a><time datetime="2025-11-10T07:21:18.937Z">10/11/2025 04:21</time></li>
-<li><a href="artigos/tecnologia/nova-onda-espacial-desafios-da-blue-origin-e-o-impacto-na-arquitetura-de-software.html">Nova Onda Espacial: Desafios da Blue Origin e o Impacto na Arquitetura de Software</a><time datetime="2025-11-10T06:32:45.290Z">10/11/2025 03:32</time></li>
-<li><a href="artigos/tecnologia-automotiva/exportacao-de-chips-um-alivio-para-a-industria-automotiva-e-o-papel-da-arquitetura-de-software.html">Exportação de Chips: Um Alívio para a Indústria Automotiva e o Papel da Arquitetura de Software</a><time datetime="2025-11-10T05:21:42.051Z">10/11/2025 02:21</time></li>
-<li><a href="artigos/tecnologia/chipolo-loop-o-novo-coracao-dos-localizadores-de-objetos.html">Chipolo Loop: O Novo Coração dos Localizadores de Objetos</a><time datetime="2025-11-10T04:29:01.065Z">10/11/2025 01:29</time></li>
-<li><a href="artigos/programacao/novas-fronteiras-do-java-o-que-esperar-do-jdk-26.html">Novas Fronteiras do Java: O Que Esperar do JDK 26?</a><time datetime="2025-11-10T03:20:58.267Z">10/11/2025 00:20</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-fones-abertos-som-imersivo-sem-perder-a-conexao-com-o-mundo.html">A revolução dos fones abertos: som imersivo sem perder a conexão com o mundo</a><time datetime="2025-11-10T01:40:08.895Z">09/11/2025 22:40</time></li>
-<li><a href="artigos/tecnologia/a-batalha-dos-streamings-youtube-tv-e-o-credito-por-blackout-disney.html">A batalha dos streamings: YouTube TV e o crédito por blackout Disney</a><time datetime="2025-11-09T23:19:25.922Z">09/11/2025 20:19</time></li>
-<li><a href="artigos/carreira/a-nova-face-do-empreendedorismo-elegancia-e-tecnologia-em-sintonia.html">A nova face do empreendedorismo: elegância e tecnologia em sintonia</a><time datetime="2025-11-09T22:18:51.800Z">09/11/2025 19:18</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-tvs-o-futuro-brilhante-do-entretenimento-em-nossas-casas.html">A Revolução das TVs: O Futuro Brilhante do Entretenimento em Nossas Casas</a><time datetime="2025-11-09T21:17:41.963Z">09/11/2025 18:17</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-das-relacoes-digitais-amor-e-inteligencia-artificial.html">A nova era das relações digitais: amor e inteligência artificial</a><time datetime="2025-11-09T20:20:37.533Z">09/11/2025 17:20</time></li>
+<li><a href="artigos/inteligencia-artificial/a-montanha-russa-do-investimento-em-ia-rightmove-e-as-licoes-para-o-futuro.html">A montanha-russa do investimento em IA: Rightmove e as lições para o futuro</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-10T07:21:18.937Z">10/11/2025 04:21</time></div></li>
+<li><a href="artigos/tecnologia/nova-onda-espacial-desafios-da-blue-origin-e-o-impacto-na-arquitetura-de-software.html">Nova Onda Espacial: Desafios da Blue Origin e o Impacto na Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-10T06:32:45.290Z">10/11/2025 03:32</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/exportacao-de-chips-um-alivio-para-a-industria-automotiva-e-o-papel-da-arquitetura-de-software.html">Exportação de Chips: Um Alívio para a Indústria Automotiva e o Papel da Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-11-10T05:21:42.051Z">10/11/2025 02:21</time></div></li>
+<li><a href="artigos/tecnologia/chipolo-loop-o-novo-coracao-dos-localizadores-de-objetos.html">Chipolo Loop: O Novo Coração dos Localizadores de Objetos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-10T04:29:01.065Z">10/11/2025 01:29</time></div></li>
+<li><a href="artigos/programacao/novas-fronteiras-do-java-o-que-esperar-do-jdk-26.html">Novas Fronteiras do Java: O Que Esperar do JDK 26?</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-11-10T03:20:58.267Z">10/11/2025 00:20</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-fones-abertos-som-imersivo-sem-perder-a-conexao-com-o-mundo.html">A revolução dos fones abertos: som imersivo sem perder a conexão com o mundo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-10T01:40:08.895Z">09/11/2025 22:40</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-dos-streamings-youtube-tv-e-o-credito-por-blackout-disney.html">A batalha dos streamings: YouTube TV e o crédito por blackout Disney</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-09T23:19:25.922Z">09/11/2025 20:19</time></div></li>
+<li><a href="artigos/carreira/a-nova-face-do-empreendedorismo-elegancia-e-tecnologia-em-sintonia.html">A nova face do empreendedorismo: elegância e tecnologia em sintonia</a><div class="article-list-meta"><span>Carreira</span><time datetime="2025-11-09T22:18:51.800Z">09/11/2025 19:18</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-tvs-o-futuro-brilhante-do-entretenimento-em-nossas-casas.html">A Revolução das TVs: O Futuro Brilhante do Entretenimento em Nossas Casas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-09T21:17:41.963Z">09/11/2025 18:17</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-das-relacoes-digitais-amor-e-inteligencia-artificial.html">A nova era das relações digitais: amor e inteligência artificial</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-11-09T20:20:37.533Z">09/11/2025 17:20</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

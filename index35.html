@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 35</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/os-fones-de-ouvido-da-marshall-portabilidade-e-performance-em-um-so-lugar.html">Os fones de ouvido da Marshall: Portabilidade e performance em um só lugar</a><time datetime="2026-05-19T12:15:54.098Z">19/05/2026 09:15</time></li>
-<li><a href="artigos/programacao/vite-8-o-futuro-das-builds-frontend-com-performance-de-outro-nivel.html">Vite 8: O Futuro das Builds Frontend com Performance de Outro Nível</a><time datetime="2026-05-19T08:42:06.464Z">19/05/2026 05:42</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-do-android-o-que-o-google-i-o-2026-nos-ensina-sobre-a-arquitetura-de-software.html">A nova era do Android: O que o Google I/O 2026 nos ensina sobre a Arquitetura de Software</a><time datetime="2026-05-19T05:05:53.274Z">19/05/2026 02:05</time></li>
-<li><a href="artigos/robotica/a-revolucao-das-maquinas-como-a-robotica-pode-transformar-a-industria-textil.html">A revolução das máquinas: Como a robótica pode transformar a indústria têxtil</a><time datetime="2026-05-19T00:11:28.272Z">18/05/2026 21:11</time></li>
-<li><a href="artigos/tecnologia/a-batalha-judicial-de-musk-e-openai-licoes-para-a-arquitetura-de-software.html">A batalha judicial de Musk e OpenAI: Lições para a Arquitetura de Software</a><time datetime="2026-05-18T22:07:06.398Z">18/05/2026 19:07</time></li>
-<li><a href="artigos/seguranca/acelerando-a-inseguranca-como-proteger-sua-arquitetura-na-era-dos-ataques-em-nuvem.html">Acelerando a Insegurança: Como Proteger sua Arquitetura na Era dos Ataques em Nuvem</a><time datetime="2026-05-18T20:30:13.595Z">18/05/2026 17:30</time></li>
-<li><a href="artigos/tecnologia/aumento-de-precos-no-playstation-plus-uma-oportunidade-para-repensar-a-arquitetura-de-servicos.html">Aumento de Preços no PlayStation Plus: Uma Oportunidade para Repensar a Arquitetura de Serviços</a><time datetime="2026-05-18T18:56:54.349Z">18/05/2026 15:56</time></li>
-<li><a href="artigos/programacao/desbravando-o-hyprland-como-aprender-com-a-ia-na-configuracao-de-ambientes-tiling.html">Desbravando o Hyprland: Como Aprender com a IA na Configuração de Ambientes Tiling</a><time datetime="2026-05-18T16:28:21.468Z">18/05/2026 13:28</time></li>
-<li><a href="artigos/desenvolvimento-de-software/construindo-uma-arquitetura-segura-para-servidores-mcp-na-nuvem-licoes-praticas.html">Construindo uma Arquitetura Segura para Servidores MCP na Nuvem: Lições Práticas</a><time datetime="2026-05-18T12:35:53.927Z">18/05/2026 09:35</time></li>
-<li><a href="artigos/desenvolvimento-de-software/a-nova-era-da-navegacao-como-a-navigation-api-pode-transformar-spas.html">A nova era da navegação: como a Navigation API pode transformar SPAs</a><time datetime="2026-05-18T08:08:46.318Z">18/05/2026 05:08</time></li>
+<li><a href="artigos/tecnologia/os-fones-de-ouvido-da-marshall-portabilidade-e-performance-em-um-so-lugar.html">Os fones de ouvido da Marshall: Portabilidade e performance em um só lugar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-19T12:15:54.098Z">19/05/2026 09:15</time></div></li>
+<li><a href="artigos/programacao/vite-8-o-futuro-das-builds-frontend-com-performance-de-outro-nivel.html">Vite 8: O Futuro das Builds Frontend com Performance de Outro Nível</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-05-19T08:42:06.464Z">19/05/2026 05:42</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-do-android-o-que-o-google-i-o-2026-nos-ensina-sobre-a-arquitetura-de-software.html">A nova era do Android: O que o Google I/O 2026 nos ensina sobre a Arquitetura de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-19T05:05:53.274Z">19/05/2026 02:05</time></div></li>
+<li><a href="artigos/robotica/a-revolucao-das-maquinas-como-a-robotica-pode-transformar-a-industria-textil.html">A revolução das máquinas: Como a robótica pode transformar a indústria têxtil</a><div class="article-list-meta"><span>Robótica</span><time datetime="2026-05-19T00:11:28.272Z">18/05/2026 21:11</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-judicial-de-musk-e-openai-licoes-para-a-arquitetura-de-software.html">A batalha judicial de Musk e OpenAI: Lições para a Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-18T22:07:06.398Z">18/05/2026 19:07</time></div></li>
+<li><a href="artigos/seguranca/acelerando-a-inseguranca-como-proteger-sua-arquitetura-na-era-dos-ataques-em-nuvem.html">Acelerando a Insegurança: Como Proteger sua Arquitetura na Era dos Ataques em Nuvem</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-05-18T20:30:13.595Z">18/05/2026 17:30</time></div></li>
+<li><a href="artigos/tecnologia/aumento-de-precos-no-playstation-plus-uma-oportunidade-para-repensar-a-arquitetura-de-servicos.html">Aumento de Preços no PlayStation Plus: Uma Oportunidade para Repensar a Arquitetura de Serviços</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-18T18:56:54.349Z">18/05/2026 15:56</time></div></li>
+<li><a href="artigos/programacao/desbravando-o-hyprland-como-aprender-com-a-ia-na-configuracao-de-ambientes-tiling.html">Desbravando o Hyprland: Como Aprender com a IA na Configuração de Ambientes Tiling</a><div class="article-list-meta"><span>Programação</span><time datetime="2026-05-18T16:28:21.468Z">18/05/2026 13:28</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/construindo-uma-arquitetura-segura-para-servidores-mcp-na-nuvem-licoes-praticas.html">Construindo uma Arquitetura Segura para Servidores MCP na Nuvem: Lições Práticas</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-05-18T12:35:53.927Z">18/05/2026 09:35</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/a-nova-era-da-navegacao-como-a-navigation-api-pode-transformar-spas.html">A nova era da navegação: como a Navigation API pode transformar SPAs</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-05-18T08:08:46.318Z">18/05/2026 05:08</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

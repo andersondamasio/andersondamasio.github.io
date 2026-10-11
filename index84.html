@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 84</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/aumentando-os-custos-o-impacto-da-nova-politica-de-precos-da-anthropic.html">Aumentando os Custos: O Impacto da Nova Política de Preços da Anthropic</a><time datetime="2026-04-04T16:40:36.939Z">04/04/2026 13:40</time></li>
-<li><a href="artigos/tecnologia/a-batalha-das-oleds-g5-vs-g6-e-como-isso-se-relaciona-com-a-arquitetura-de-software.html">A batalha das OLEDs: G5 vs. G6 e como isso se relaciona com a Arquitetura de Software</a><time datetime="2026-04-04T15:36:15.658Z">04/04/2026 12:36</time></li>
-<li><a href="artigos/inteligencia-artificial/desenvolvendo-com-inteligencia-o-poder-dos-agentes-multiplos-na-criacao-de-software.html">Desenvolvendo com Inteligência: O Poder dos Agentes Múltiplos na Criação de Software</a><time datetime="2026-04-04T14:38:38.171Z">04/04/2026 11:38</time></li>
-<li><a href="artigos/seguranca/o-novo-campo-de-batalha-como-a-arquitetura-de-software-pode-ajudar-a-combater-drones.html">O novo campo de batalha: como a Arquitetura de Software pode ajudar a combater drones</a><time datetime="2026-04-04T13:58:58.946Z">04/04/2026 10:58</time></li>
-<li><a href="artigos/carreira/como-evitar-as-armadilhas-do-mercado-de-trabalho-em-tempos-de-incerteza.html">Como evitar as armadilhas do mercado de trabalho em tempos de incerteza</a><time datetime="2026-04-04T13:00:05.636Z">04/04/2026 10:00</time></li>
-<li><a href="artigos/seguranca/como-limpar-sua-presenca-online-uma-analise-do-privacybee-e-suas-alternativas.html">Como Limpar sua Presença Online: Uma Análise do PrivacyBee e Suas Alternativas</a><time datetime="2026-04-04T09:43:00.668Z">04/04/2026 06:43</time></li>
-<li><a href="artigos/banco-de-dados/montando-bancos-de-dados-a-revolucao-do-tigerfs-e-a-simplicidade-dos-sistemas-de-arquivos.html">Montando Bancos de Dados: A Revolução do TigerFS e a Simplicidade dos Sistemas de Arquivos</a><time datetime="2026-04-04T08:45:18.787Z">04/04/2026 05:45</time></li>
-<li><a href="artigos/tecnologia/monitores-acessiveis-como-um-modelo-de-84-surpreendeu-e-pode-ser-a-solucao-ideal-para-muitos.html">Monitores acessíveis: como um modelo de $84 surpreendeu e pode ser a solução ideal para muitos</a><time datetime="2026-04-04T07:08:22.365Z">04/04/2026 04:08</time></li>
-<li><a href="artigos/arquitetura/a-crise-dos-fornecedores-licoes-do-mercado-automotivo-para-a-arquitetura-de-software.html">A crise dos fornecedores: lições do mercado automotivo para a Arquitetura de Software</a><time datetime="2026-04-04T06:01:47.224Z">04/04/2026 03:01</time></li>
-<li><a href="artigos/inteligencia-artificial/a-batalha-das-estrelas-anthropic-openai-e-o-impacto-do-spacex-no-mercado-privado.html">A batalha das estrelas: Anthropic, OpenAI e o impacto do SpaceX no mercado privado</a><time datetime="2026-04-04T04:55:04.250Z">04/04/2026 01:55</time></li>
+<li><a href="artigos/inteligencia-artificial/aumentando-os-custos-o-impacto-da-nova-politica-de-precos-da-anthropic.html">Aumentando os Custos: O Impacto da Nova Política de Preços da Anthropic</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-04T16:40:36.939Z">04/04/2026 13:40</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-das-oleds-g5-vs-g6-e-como-isso-se-relaciona-com-a-arquitetura-de-software.html">A batalha das OLEDs: G5 vs. G6 e como isso se relaciona com a Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-04T15:36:15.658Z">04/04/2026 12:36</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desenvolvendo-com-inteligencia-o-poder-dos-agentes-multiplos-na-criacao-de-software.html">Desenvolvendo com Inteligência: O Poder dos Agentes Múltiplos na Criação de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-04T14:38:38.171Z">04/04/2026 11:38</time></div></li>
+<li><a href="artigos/seguranca/o-novo-campo-de-batalha-como-a-arquitetura-de-software-pode-ajudar-a-combater-drones.html">O novo campo de batalha: como a Arquitetura de Software pode ajudar a combater drones</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-04T13:58:58.946Z">04/04/2026 10:58</time></div></li>
+<li><a href="artigos/carreira/como-evitar-as-armadilhas-do-mercado-de-trabalho-em-tempos-de-incerteza.html">Como evitar as armadilhas do mercado de trabalho em tempos de incerteza</a><div class="article-list-meta"><span>Carreira</span><time datetime="2026-04-04T13:00:05.636Z">04/04/2026 10:00</time></div></li>
+<li><a href="artigos/seguranca/como-limpar-sua-presenca-online-uma-analise-do-privacybee-e-suas-alternativas.html">Como Limpar sua Presença Online: Uma Análise do PrivacyBee e Suas Alternativas</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-04-04T09:43:00.668Z">04/04/2026 06:43</time></div></li>
+<li><a href="artigos/banco-de-dados/montando-bancos-de-dados-a-revolucao-do-tigerfs-e-a-simplicidade-dos-sistemas-de-arquivos.html">Montando Bancos de Dados: A Revolução do TigerFS e a Simplicidade dos Sistemas de Arquivos</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2026-04-04T08:45:18.787Z">04/04/2026 05:45</time></div></li>
+<li><a href="artigos/tecnologia/monitores-acessiveis-como-um-modelo-de-84-surpreendeu-e-pode-ser-a-solucao-ideal-para-muitos.html">Monitores acessíveis: como um modelo de $84 surpreendeu e pode ser a solução ideal para muitos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-04-04T07:08:22.365Z">04/04/2026 04:08</time></div></li>
+<li><a href="artigos/arquitetura/a-crise-dos-fornecedores-licoes-do-mercado-automotivo-para-a-arquitetura-de-software.html">A crise dos fornecedores: lições do mercado automotivo para a Arquitetura de Software</a><div class="article-list-meta"><span>Arquitetura</span><time datetime="2026-04-04T06:01:47.224Z">04/04/2026 03:01</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-batalha-das-estrelas-anthropic-openai-e-o-impacto-do-spacex-no-mercado-privado.html">A batalha das estrelas: Anthropic, OpenAI e o impacto do SpaceX no mercado privado</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-04-04T04:55:04.250Z">04/04/2026 01:55</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

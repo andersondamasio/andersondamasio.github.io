@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 40</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/seguranca/a-nova-onda-de-phishing-como-hackers-tentam-invadir-contas-do-signal.html">A nova onda de phishing: como hackers tentam invadir contas do Signal</a><time datetime="2026-05-14T14:16:22.123Z">14/05/2026 11:16</time></li>
-<li><a href="artigos/tecnologia/a-arte-de-escalar-sistemas-sociais-em-organizacoes-de-software.html">A Arte de Escalar Sistemas Sociais em Organizações de Software</a><time datetime="2026-05-14T11:57:49.018Z">14/05/2026 08:57</time></li>
-<li><a href="artigos/inteligencia-artificial/mudancas-em-ia-o-que-podemos-aprender-com-os-erros-de-claude-code.html">Mudanças em IA: O Que Podemos Aprender com os Erros de Claude Code</a><time datetime="2026-05-14T09:40:49.350Z">14/05/2026 06:40</time></li>
-<li><a href="artigos/inteligencia-artificial/quem-define-a-verdade-nas-respostas-da-ia.html">Quem Define a Verdade nas Respostas da IA?</a><time datetime="2026-05-14T06:51:52.158Z">14/05/2026 03:51</time></li>
-<li><a href="artigos/saude/ouca-com-atencao-a-regra-60-60-para-proteger-sua-audicao.html">Ouça com Atenção: A Regra 60-60 para Proteger sua Audição</a><time datetime="2026-05-14T03:57:21.972Z">14/05/2026 00:57</time></li>
-<li><a href="artigos/tecnologia/a-transicao-de-mensagens-o-fim-do-aplicativo-da-samsung-e-o-que-vem-por-ai.html">A transição de mensagens: o fim do aplicativo da Samsung e o que vem por aí</a><time datetime="2026-05-14T00:03:50.399Z">13/05/2026 21:03</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-das-cadeiras-confortaveis-reflexoes-sobre-o-julgamento-musk-v-altman-e-seu-impacto-na-tecnologia.html">A Era das Cadeiras Confortáveis: Reflexões sobre o Julgamento Musk v. Altman e seu Impacto na Tecnologia</a><time datetime="2026-05-13T22:17:07.515Z">13/05/2026 19:17</time></li>
-<li><a href="artigos/desenvolvimento-de-software/a-batalha-das-ferramentas-de-design-adobe-express-ou-canva.html">A batalha das ferramentas de design: Adobe Express ou Canva?</a><time datetime="2026-05-13T20:56:16.790Z">13/05/2026 17:56</time></li>
-<li><a href="artigos/inteligencia-artificial/quem-confia-em-sam-altman-a-credibilidade-em-jogo-no-mundo-da-ia.html">Quem Confia em Sam Altman? A Credibilidade em Jogo no Mundo da IA</a><time datetime="2026-05-13T16:31:15.886Z">13/05/2026 13:31</time></li>
-<li><a href="artigos/inteligencia-artificial/aprendendo-a-usar-o-claude-cursos-gratuitos-que-fazem-a-diferenca.html">Aprendendo a Usar o Claude: Cursos Gratuitos que Fazem a Diferença</a><time datetime="2026-05-13T13:17:01.085Z">13/05/2026 10:17</time></li>
+<li><a href="artigos/seguranca/a-nova-onda-de-phishing-como-hackers-tentam-invadir-contas-do-signal.html">A nova onda de phishing: como hackers tentam invadir contas do Signal</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-05-14T14:16:22.123Z">14/05/2026 11:16</time></div></li>
+<li><a href="artigos/tecnologia/a-arte-de-escalar-sistemas-sociais-em-organizacoes-de-software.html">A Arte de Escalar Sistemas Sociais em Organizações de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-14T11:57:49.018Z">14/05/2026 08:57</time></div></li>
+<li><a href="artigos/inteligencia-artificial/mudancas-em-ia-o-que-podemos-aprender-com-os-erros-de-claude-code.html">Mudanças em IA: O Que Podemos Aprender com os Erros de Claude Code</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-14T09:40:49.350Z">14/05/2026 06:40</time></div></li>
+<li><a href="artigos/inteligencia-artificial/quem-define-a-verdade-nas-respostas-da-ia.html">Quem Define a Verdade nas Respostas da IA?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-14T06:51:52.158Z">14/05/2026 03:51</time></div></li>
+<li><a href="artigos/saude/ouca-com-atencao-a-regra-60-60-para-proteger-sua-audicao.html">Ouça com Atenção: A Regra 60-60 para Proteger sua Audição</a><div class="article-list-meta"><span>Saúde</span><time datetime="2026-05-14T03:57:21.972Z">14/05/2026 00:57</time></div></li>
+<li><a href="artigos/tecnologia/a-transicao-de-mensagens-o-fim-do-aplicativo-da-samsung-e-o-que-vem-por-ai.html">A transição de mensagens: o fim do aplicativo da Samsung e o que vem por aí</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-14T00:03:50.399Z">13/05/2026 21:03</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-das-cadeiras-confortaveis-reflexoes-sobre-o-julgamento-musk-v-altman-e-seu-impacto-na-tecnologia.html">A Era das Cadeiras Confortáveis: Reflexões sobre o Julgamento Musk v. Altman e seu Impacto na Tecnologia</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-13T22:17:07.515Z">13/05/2026 19:17</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/a-batalha-das-ferramentas-de-design-adobe-express-ou-canva.html">A batalha das ferramentas de design: Adobe Express ou Canva?</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-05-13T20:56:16.790Z">13/05/2026 17:56</time></div></li>
+<li><a href="artigos/inteligencia-artificial/quem-confia-em-sam-altman-a-credibilidade-em-jogo-no-mundo-da-ia.html">Quem Confia em Sam Altman? A Credibilidade em Jogo no Mundo da IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-13T16:31:15.886Z">13/05/2026 13:31</time></div></li>
+<li><a href="artigos/inteligencia-artificial/aprendendo-a-usar-o-claude-cursos-gratuitos-que-fazem-a-diferenca.html">Aprendendo a Usar o Claude: Cursos Gratuitos que Fazem a Diferença</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-13T13:17:01.085Z">13/05/2026 10:17</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

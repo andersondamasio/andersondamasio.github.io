@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 36</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-nova-onda-dos-cacadores-de-reliquias-como-um-metal-detector-pode-ser-seu-primeiro-passo-na-tecnologia.html">A nova onda dos caçadores de relíquias: como um metal detector pode ser seu primeiro passo na tecnologia</a><time datetime="2026-05-18T03:59:52.520Z">18/05/2026 00:59</time></li>
-<li><a href="artigos/tecnologia/a-estrategia-por-tras-do-sucesso-da-amazon-licoes-para-o-desenvolvimento-de-software.html">A estratégia por trás do sucesso da Amazon: lições para o desenvolvimento de software</a><time datetime="2026-05-18T00:03:11.065Z">17/05/2026 21:03</time></li>
-<li><a href="artigos/inteligencia-artificial/desconfianca-no-mundo-das-ias-o-caso-openai-e-a-questao-da-credibilidade.html">Desconfiança no Mundo das IAs: O Caso OpenAI e a Questão da Credibilidade</a><time datetime="2026-05-17T22:59:26.519Z">17/05/2026 19:59</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-na-codificacao-como-a-orquestracao-de-agentes-pode-transformar-o-desenvolvimento-de-software.html">A Revolução na Codificação: Como a Orquestração de Agentes Pode Transformar o Desenvolvimento de Software</a><time datetime="2026-05-17T22:01:25.784Z">17/05/2026 19:01</time></li>
-<li><a href="artigos/inteligencia-artificial/nova-era-para-a-siri-privacidade-e-a-revolucao-dos-chats.html">Nova Era para a Siri: Privacidade e a Revolução dos Chats</a><time datetime="2026-05-17T20:56:49.327Z">17/05/2026 17:56</time></li>
-<li><a href="artigos/inteligencia-artificial/a-corrida-por-habilidades-em-ia-o-futuro-da-industria-automotiva.html">A corrida por habilidades em IA: o futuro da indústria automotiva</a><time datetime="2026-05-17T19:13:42.500Z">17/05/2026 16:13</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-inteligencia-artificial-entre-o-medo-e-a-esperanca.html">A revolução da inteligência artificial: entre o medo e a esperança</a><time datetime="2026-05-17T17:16:14.293Z">17/05/2026 14:16</time></li>
-<li><a href="artigos/robotica/comparativo-pratico-roborock-ou-ecovacs-qual-aspirador-robo-vale-a-pena.html">Comparativo Prático: Roborock ou Ecovacs? Qual Aspirador Robô Vale a Pena?</a><time datetime="2026-05-17T16:05:00.134Z">17/05/2026 13:05</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-da-tecnologia-fisica-o-impacto-da-cerebras-na-arquitetura-de-software.html">A revolução da tecnologia física: O impacto da Cerebras na arquitetura de software</a><time datetime="2026-05-17T15:01:55.054Z">17/05/2026 12:01</time></li>
-<li><a href="artigos/tecnologia/a-batalha-dos-smartphones-samsung-e-motorola-em-foco.html">A batalha dos smartphones: Samsung e Motorola em foco</a><time datetime="2026-05-17T13:25:49.252Z">17/05/2026 10:25</time></li>
+<li><a href="artigos/tecnologia/a-nova-onda-dos-cacadores-de-reliquias-como-um-metal-detector-pode-ser-seu-primeiro-passo-na-tecnologia.html">A nova onda dos caçadores de relíquias: como um metal detector pode ser seu primeiro passo na tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-18T03:59:52.520Z">18/05/2026 00:59</time></div></li>
+<li><a href="artigos/tecnologia/a-estrategia-por-tras-do-sucesso-da-amazon-licoes-para-o-desenvolvimento-de-software.html">A estratégia por trás do sucesso da Amazon: lições para o desenvolvimento de software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-18T00:03:11.065Z">17/05/2026 21:03</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desconfianca-no-mundo-das-ias-o-caso-openai-e-a-questao-da-credibilidade.html">Desconfiança no Mundo das IAs: O Caso OpenAI e a Questão da Credibilidade</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-17T22:59:26.519Z">17/05/2026 19:59</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-na-codificacao-como-a-orquestracao-de-agentes-pode-transformar-o-desenvolvimento-de-software.html">A Revolução na Codificação: Como a Orquestração de Agentes Pode Transformar o Desenvolvimento de Software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-17T22:01:25.784Z">17/05/2026 19:01</time></div></li>
+<li><a href="artigos/inteligencia-artificial/nova-era-para-a-siri-privacidade-e-a-revolucao-dos-chats.html">Nova Era para a Siri: Privacidade e a Revolução dos Chats</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-17T20:56:49.327Z">17/05/2026 17:56</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-corrida-por-habilidades-em-ia-o-futuro-da-industria-automotiva.html">A corrida por habilidades em IA: o futuro da indústria automotiva</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-17T19:13:42.500Z">17/05/2026 16:13</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-inteligencia-artificial-entre-o-medo-e-a-esperanca.html">A revolução da inteligência artificial: entre o medo e a esperança</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-17T17:16:14.293Z">17/05/2026 14:16</time></div></li>
+<li><a href="artigos/robotica/comparativo-pratico-roborock-ou-ecovacs-qual-aspirador-robo-vale-a-pena.html">Comparativo Prático: Roborock ou Ecovacs? Qual Aspirador Robô Vale a Pena?</a><div class="article-list-meta"><span>Robótica</span><time datetime="2026-05-17T16:05:00.134Z">17/05/2026 13:05</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-da-tecnologia-fisica-o-impacto-da-cerebras-na-arquitetura-de-software.html">A revolução da tecnologia física: O impacto da Cerebras na arquitetura de software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-17T15:01:55.054Z">17/05/2026 12:01</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-dos-smartphones-samsung-e-motorola-em-foco.html">A batalha dos smartphones: Samsung e Motorola em foco</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-17T13:25:49.252Z">17/05/2026 10:25</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

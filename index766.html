@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 766</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/banco-de-dados/como-construir-um-banco-de-dados-sem-um-servidor-desafios-e-possibilidades.html">Como Construir um Banco de Dados Sem um Servidor: Desafios e Possibilidades</a><time datetime="2025-05-12T01:55:01.612Z">11/05/2025 22:55</time></li>
-<li><a href="artigos/programacao/a-matematica-formal-ganha-um-aliado-poderoso-com-o-deepseek-prover-v2.html">A Matemática Formal ganha um aliado poderoso com o DeepSeek Prover-V2</a><time datetime="2025-05-12T01:50:03.640Z">11/05/2025 22:50</time></li>
-<li><a href="artigos/tecnologia/desafios-e-oportunidades-na-techcrunch-all-stage-2025.html">Desafios e Oportunidades na TechCrunch All Stage 2025</a><time datetime="2025-05-12T01:33:35.865Z">11/05/2025 22:33</time></li>
-<li><a href="artigos/desenvolvimento-de-software/a-importancia-da-resiliencia-tecnica-licoes-de-whitney-wolfe-herd-sobre-burnout-e-recuperacao.html">A importância da resiliência técnica: lições de Whitney Wolfe Herd sobre burnout e recuperação</a><time datetime="2025-05-12T01:29:11.945Z">11/05/2025 22:29</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-semicondutores-nos-eua-em-2025-o-que-esperar.html">A revolução dos semicondutores nos EUA em 2025: o que esperar?</a><time datetime="2025-05-12T01:21:09.806Z">11/05/2025 22:21</time></li>
-<li><a href="artigos/inteligencia-artificial/openai-a-ascensao-acelerada-da-adocao-empresarial.html">OpenAI: A Ascensão Acelerada da Adoção Empresarial</a><time datetime="2025-05-12T01:00:48.185Z">11/05/2025 22:00</time></li>
-<li><a href="artigos/seguranca/google-vai-pagar-us-1-4-bilhao-para-encerrar-processos-de-privacidade-o-que-isso-significa-para-a-arquitetura-de-software.html">Google vai pagar US$ 1,4 bilhão para encerrar processos de privacidade: o que isso significa para a arquitetura de software?</a><time datetime="2025-05-12T00:52:21.684Z">11/05/2025 21:52</time></li>
-<li><a href="artigos/tecnologia/o-ceo-do-instacart-parte-para-a-openai-uma-nova-era-na-tecnologia.html">O CEO do Instacart parte para a OpenAI: uma nova era na tecnologia?</a><time datetime="2025-05-12T00:45:23.821Z">11/05/2025 21:45</time></li>
-<li><a href="artigos/programacao/ftc-adia-aplicacao-da-regra-de-clique-para-cancelar-entenda-o-impacto.html">FTC adia aplicação da regra de clique para cancelar: entenda o impacto</a><time datetime="2025-05-12T00:32:56.815Z">11/05/2025 21:32</time></li>
-<li><a href="artigos/tecnologia/vampiros-da-tecnologia-novo-investimento-em-startup-de-testes-sanguineos.html">Vampiros da Tecnologia: Novo Investimento em Startup de Testes Sanguíneos</a><time datetime="2025-05-12T00:22:12.231Z">11/05/2025 21:22</time></li>
+<li><a href="artigos/banco-de-dados/como-construir-um-banco-de-dados-sem-um-servidor-desafios-e-possibilidades.html">Como Construir um Banco de Dados Sem um Servidor: Desafios e Possibilidades</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2025-05-12T01:55:01.612Z">11/05/2025 22:55</time></div></li>
+<li><a href="artigos/programacao/a-matematica-formal-ganha-um-aliado-poderoso-com-o-deepseek-prover-v2.html">A Matemática Formal ganha um aliado poderoso com o DeepSeek Prover-V2</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-05-12T01:50:03.640Z">11/05/2025 22:50</time></div></li>
+<li><a href="artigos/tecnologia/desafios-e-oportunidades-na-techcrunch-all-stage-2025.html">Desafios e Oportunidades na TechCrunch All Stage 2025</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-05-12T01:33:35.865Z">11/05/2025 22:33</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/a-importancia-da-resiliencia-tecnica-licoes-de-whitney-wolfe-herd-sobre-burnout-e-recuperacao.html">A importância da resiliência técnica: lições de Whitney Wolfe Herd sobre burnout e recuperação</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-05-12T01:29:11.945Z">11/05/2025 22:29</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-semicondutores-nos-eua-em-2025-o-que-esperar.html">A revolução dos semicondutores nos EUA em 2025: o que esperar?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-05-12T01:21:09.806Z">11/05/2025 22:21</time></div></li>
+<li><a href="artigos/inteligencia-artificial/openai-a-ascensao-acelerada-da-adocao-empresarial.html">OpenAI: A Ascensão Acelerada da Adoção Empresarial</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-05-12T01:00:48.185Z">11/05/2025 22:00</time></div></li>
+<li><a href="artigos/seguranca/google-vai-pagar-us-1-4-bilhao-para-encerrar-processos-de-privacidade-o-que-isso-significa-para-a-arquitetura-de-software.html">Google vai pagar US$ 1,4 bilhão para encerrar processos de privacidade: o que isso significa para a arquitetura de software?</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-05-12T00:52:21.684Z">11/05/2025 21:52</time></div></li>
+<li><a href="artigos/tecnologia/o-ceo-do-instacart-parte-para-a-openai-uma-nova-era-na-tecnologia.html">O CEO do Instacart parte para a OpenAI: uma nova era na tecnologia?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-05-12T00:45:23.821Z">11/05/2025 21:45</time></div></li>
+<li><a href="artigos/programacao/ftc-adia-aplicacao-da-regra-de-clique-para-cancelar-entenda-o-impacto.html">FTC adia aplicação da regra de clique para cancelar: entenda o impacto</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-05-12T00:32:56.815Z">11/05/2025 21:32</time></div></li>
+<li><a href="artigos/tecnologia/vampiros-da-tecnologia-novo-investimento-em-startup-de-testes-sanguineos.html">Vampiros da Tecnologia: Novo Investimento em Startup de Testes Sanguíneos</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-05-12T00:22:12.231Z">11/05/2025 21:22</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

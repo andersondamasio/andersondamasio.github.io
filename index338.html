@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 338</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/streaming-como-o-black-friday-pode-transformar-sua-experiencia-de-entretenimento.html">Streaming: Como o Black Friday Pode Transformar Sua Experiência de Entretenimento</a><time datetime="2025-11-27T20:21:21.726Z">27/11/2025 17:21</time></li>
-<li><a href="artigos/tecnologia/os-melhores-descontos-de-tv-na-black-friday-o-que-voce-precisa-saber-para-nao-perder.html">Os Melhores Descontos de TV na Black Friday: O Que Você Precisa Saber Para Não Perder!</a><time datetime="2025-11-27T19:17:13.951Z">27/11/2025 16:17</time></li>
-<li><a href="artigos/tecnologia/a-escolha-do-smartwatch-ideal-apple-watch-se-2-como-uma-opcao-acessivel.html">A escolha do smartwatch ideal: Apple Watch SE 2 como uma opção acessível</a><time datetime="2025-11-27T18:28:52.326Z">27/11/2025 15:28</time></li>
-<li><a href="artigos/tecnologia/descontos-que-valem-ouro-o-que-a-arquitetura-de-software-pode-aprender-com-as-promocoes-de-black-friday.html">Descontos que Valem Ouro: O Que a Arquitetura de Software Pode Aprender com as Promoções de Black Friday</a><time datetime="2025-11-27T17:18:09.912Z">27/11/2025 14:18</time></li>
-<li><a href="artigos/tecnologia/aproveitando-as-ofertas-de-black-friday-como-a-arquitetura-de-software-pode-te-ajudar-a-comprar-melhor.html">Aproveitando as Ofertas de Black Friday: Como a Arquitetura de Software Pode Te Ajudar a Comprar Melhor</a><time datetime="2025-11-27T16:26:10.110Z">27/11/2025 13:26</time></li>
-<li><a href="artigos/tecnologia/oportunidades-imperdiveis-como-a-tecnologia-pode-te-ajudar-a-aproveitar-o-black-friday-de-forma-mais-inteligente.html">Oportunidades imperdíveis: Como a tecnologia pode te ajudar a aproveitar o Black Friday de forma mais inteligente</a><time datetime="2025-11-27T15:22:38.870Z">27/11/2025 12:22</time></li>
-<li><a href="artigos/tecnologia/melhores-ofertas-de-black-friday-como-a-tecnologia-pode-te-ajudar-a-economizar.html">Melhores ofertas de Black Friday: como a tecnologia pode te ajudar a economizar</a><time datetime="2025-11-27T14:24:24.921Z">27/11/2025 11:24</time></li>
-<li><a href="artigos/tecnologia/a-magsafe-revolution-acessorios-que-transformam-seu-dia-a-dia.html">A MagSafe Revolution: Acessórios que Transformam seu Dia a Dia</a><time datetime="2025-11-27T13:33:42.949Z">27/11/2025 10:33</time></li>
-<li><a href="artigos/desenvolvimento-de-software/criando-times-de-software-que-realmente-fazem-a-diferenca.html">Criando Times de Software que Realmente Fazem a Diferença</a><time datetime="2025-11-27T12:43:03.686Z">27/11/2025 09:43</time></li>
-<li><a href="artigos/tecnologia/promocoes-de-black-friday-como-a-arquitetura-de-software-pode-te-ajudar-a-economizar.html">Promoções de Black Friday: Como a Arquitetura de Software Pode te Ajudar a Economizar</a><time datetime="2025-11-27T11:19:58.775Z">27/11/2025 08:19</time></li>
+<li><a href="artigos/tecnologia/streaming-como-o-black-friday-pode-transformar-sua-experiencia-de-entretenimento.html">Streaming: Como o Black Friday Pode Transformar Sua Experiência de Entretenimento</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-27T20:21:21.726Z">27/11/2025 17:21</time></div></li>
+<li><a href="artigos/tecnologia/os-melhores-descontos-de-tv-na-black-friday-o-que-voce-precisa-saber-para-nao-perder.html">Os Melhores Descontos de TV na Black Friday: O Que Você Precisa Saber Para Não Perder!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-27T19:17:13.951Z">27/11/2025 16:17</time></div></li>
+<li><a href="artigos/tecnologia/a-escolha-do-smartwatch-ideal-apple-watch-se-2-como-uma-opcao-acessivel.html">A escolha do smartwatch ideal: Apple Watch SE 2 como uma opção acessível</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-27T18:28:52.326Z">27/11/2025 15:28</time></div></li>
+<li><a href="artigos/tecnologia/descontos-que-valem-ouro-o-que-a-arquitetura-de-software-pode-aprender-com-as-promocoes-de-black-friday.html">Descontos que Valem Ouro: O Que a Arquitetura de Software Pode Aprender com as Promoções de Black Friday</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-27T17:18:09.912Z">27/11/2025 14:18</time></div></li>
+<li><a href="artigos/tecnologia/aproveitando-as-ofertas-de-black-friday-como-a-arquitetura-de-software-pode-te-ajudar-a-comprar-melhor.html">Aproveitando as Ofertas de Black Friday: Como a Arquitetura de Software Pode Te Ajudar a Comprar Melhor</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-27T16:26:10.110Z">27/11/2025 13:26</time></div></li>
+<li><a href="artigos/tecnologia/oportunidades-imperdiveis-como-a-tecnologia-pode-te-ajudar-a-aproveitar-o-black-friday-de-forma-mais-inteligente.html">Oportunidades imperdíveis: Como a tecnologia pode te ajudar a aproveitar o Black Friday de forma mais inteligente</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-27T15:22:38.870Z">27/11/2025 12:22</time></div></li>
+<li><a href="artigos/tecnologia/melhores-ofertas-de-black-friday-como-a-tecnologia-pode-te-ajudar-a-economizar.html">Melhores ofertas de Black Friday: como a tecnologia pode te ajudar a economizar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-27T14:24:24.921Z">27/11/2025 11:24</time></div></li>
+<li><a href="artigos/tecnologia/a-magsafe-revolution-acessorios-que-transformam-seu-dia-a-dia.html">A MagSafe Revolution: Acessórios que Transformam seu Dia a Dia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-27T13:33:42.949Z">27/11/2025 10:33</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/criando-times-de-software-que-realmente-fazem-a-diferenca.html">Criando Times de Software que Realmente Fazem a Diferença</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-11-27T12:43:03.686Z">27/11/2025 09:43</time></div></li>
+<li><a href="artigos/tecnologia/promocoes-de-black-friday-como-a-arquitetura-de-software-pode-te-ajudar-a-economizar.html">Promoções de Black Friday: Como a Arquitetura de Software Pode te Ajudar a Economizar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-27T11:19:58.775Z">27/11/2025 08:19</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

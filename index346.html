@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 346</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/programacao/novas-fronteiras-do-spring-o-que-ha-de-novo-na-arquitetura-de-software.html">Novas Fronteiras do Spring: O Que Há de Novo na Arquitetura de Software?</a><time datetime="2025-11-24T06:32:39.646Z">24/11/2025 03:32</time></li>
-<li><a href="artigos/tecnologia/a-luz-que-nunca-apaga-como-as-tecnologias-de-iluminacao-podem-transformar-seu-lar.html">A luz que nunca apaga: como as tecnologias de iluminação podem transformar seu lar</a><time datetime="2025-11-24T05:22:21.588Z">24/11/2025 02:22</time></li>
-<li><a href="artigos/tecnologia/como-a-tecnologia-pode-transformar-o-sorvete-caseiro-em-uma-experiencia-gourmet.html">Como a Tecnologia Pode Transformar o Sorvete Caseiro em uma Experiência Gourmet</a><time datetime="2025-11-24T04:35:29.778Z">24/11/2025 01:35</time></li>
-<li><a href="artigos/desenvolvimento-de-software/aproveite-a-black-friday-como-um-cobertor-quentinho-pode-melhorar-seu-codigo.html">Aproveite a Black Friday: Como um Cobertor Quentinho Pode Melhorar seu Código</a><time datetime="2025-11-24T03:25:18.406Z">24/11/2025 00:25</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-da-tv-oled-por-que-a-lg-c5-e-a-escolha-perfeita-sem-quebrar-o-banco.html">A revolução da TV OLED: Por que a LG C5 é a escolha perfeita sem quebrar o banco</a><time datetime="2025-11-24T01:42:31.848Z">23/11/2025 22:42</time></li>
-<li><a href="artigos/seguranca/como-proteger-seu-roteador-asus-um-alerta-para-usuarios-desatentos.html">Como proteger seu roteador Asus: um alerta para usuários desatentos</a><time datetime="2025-11-23T23:19:21.870Z">23/11/2025 20:19</time></li>
-<li><a href="artigos/seguranca/roblox-e-a-seguranca-infantil-um-debate-necessario.html">Roblox e a Segurança Infantil: Um Debate Necessário</a><time datetime="2025-11-23T22:20:48.441Z">23/11/2025 19:20</time></li>
-<li><a href="artigos/tecnologia/a-nova-feature-da-x-e-o-impacto-da-localizacao-no-discurso-online.html">A nova feature da X e o impacto da localização no discurso online</a><time datetime="2025-11-23T21:18:52.417Z">23/11/2025 18:18</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-das-newsletters-como-se-destacar-na-multidao-digital.html">A nova era das newsletters: como se destacar na multidão digital</a><time datetime="2025-11-23T20:22:56.293Z">23/11/2025 17:22</time></li>
-<li><a href="artigos/banco-de-dados/a-nova-era-do-armazenamento-como-o-bigtable-do-google-cloud-esta-mudando-o-jogo.html">A nova era do armazenamento: como o Bigtable do Google Cloud está mudando o jogo</a><time datetime="2025-11-23T19:17:00.738Z">23/11/2025 16:17</time></li>
+<li><a href="artigos/programacao/novas-fronteiras-do-spring-o-que-ha-de-novo-na-arquitetura-de-software.html">Novas Fronteiras do Spring: O Que Há de Novo na Arquitetura de Software?</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-11-24T06:32:39.646Z">24/11/2025 03:32</time></div></li>
+<li><a href="artigos/tecnologia/a-luz-que-nunca-apaga-como-as-tecnologias-de-iluminacao-podem-transformar-seu-lar.html">A luz que nunca apaga: como as tecnologias de iluminação podem transformar seu lar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-24T05:22:21.588Z">24/11/2025 02:22</time></div></li>
+<li><a href="artigos/tecnologia/como-a-tecnologia-pode-transformar-o-sorvete-caseiro-em-uma-experiencia-gourmet.html">Como a Tecnologia Pode Transformar o Sorvete Caseiro em uma Experiência Gourmet</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-24T04:35:29.778Z">24/11/2025 01:35</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/aproveite-a-black-friday-como-um-cobertor-quentinho-pode-melhorar-seu-codigo.html">Aproveite a Black Friday: Como um Cobertor Quentinho Pode Melhorar seu Código</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-11-24T03:25:18.406Z">24/11/2025 00:25</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-da-tv-oled-por-que-a-lg-c5-e-a-escolha-perfeita-sem-quebrar-o-banco.html">A revolução da TV OLED: Por que a LG C5 é a escolha perfeita sem quebrar o banco</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-24T01:42:31.848Z">23/11/2025 22:42</time></div></li>
+<li><a href="artigos/seguranca/como-proteger-seu-roteador-asus-um-alerta-para-usuarios-desatentos.html">Como proteger seu roteador Asus: um alerta para usuários desatentos</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-23T23:19:21.870Z">23/11/2025 20:19</time></div></li>
+<li><a href="artigos/seguranca/roblox-e-a-seguranca-infantil-um-debate-necessario.html">Roblox e a Segurança Infantil: Um Debate Necessário</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-11-23T22:20:48.441Z">23/11/2025 19:20</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-feature-da-x-e-o-impacto-da-localizacao-no-discurso-online.html">A nova feature da X e o impacto da localização no discurso online</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-23T21:18:52.417Z">23/11/2025 18:18</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-das-newsletters-como-se-destacar-na-multidao-digital.html">A nova era das newsletters: como se destacar na multidão digital</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-11-23T20:22:56.293Z">23/11/2025 17:22</time></div></li>
+<li><a href="artigos/banco-de-dados/a-nova-era-do-armazenamento-como-o-bigtable-do-google-cloud-esta-mudando-o-jogo.html">A nova era do armazenamento: como o Bigtable do Google Cloud está mudando o jogo</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2025-11-23T19:17:00.738Z">23/11/2025 16:17</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 244</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/o-despertar-da-tecnologia-do-sono-como-a-ozlo-esta-transformando-dados-em-bem-estar.html">O despertar da tecnologia do sono: como a Ozlo está transformando dados em bem-estar</a><time datetime="2026-01-09T23:22:57.299Z">09/01/2026 20:22</time></li>
-<li><a href="artigos/tecnologia/as-inovacoes-do-futuro-o-que-eu-compraria-no-ces-2026.html">As inovações do futuro: o que eu compraria no CES 2026</a><time datetime="2026-01-09T22:23:36.655Z">09/01/2026 19:23</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-laptops-novas-inovacoes-que-prometem-mudar-o-jogo.html">A Revolução dos Laptops: Novas Inovações que Prometem Mudar o Jogo</a><time datetime="2026-01-09T21:23:16.094Z">09/01/2026 18:23</time></li>
-<li><a href="artigos/seguranca/o-impacto-da-ia-e-da-etica-quando-a-tecnologia-ultrapassa-os-limites.html">O impacto da IA e da ética: quando a tecnologia ultrapassa os limites</a><time datetime="2026-01-09T20:26:53.640Z">09/01/2026 17:26</time></li>
-<li><a href="artigos/tecnologia/revolucao-nas-lentes-como-os-oculos-inteligentes-estao-transformando-a-tecnologia-do-futuro.html">Revolução nas Lentes: Como os Óculos Inteligentes Estão Transformando a Tecnologia do Futuro</a><time datetime="2026-01-09T19:22:38.972Z">09/01/2026 16:22</time></li>
-<li><a href="artigos/tecnologia/uma-nova-era-de-audio-como-os-oneplus-buds-pro-3-estao-mudando-o-jogo.html">Uma nova era de áudio: como os OnePlus Buds Pro 3 estão mudando o jogo</a><time datetime="2026-01-09T18:34:47.497Z">09/01/2026 15:34</time></li>
-<li><a href="artigos/seguranca/a-era-dos-deepfakes-como-a-tecnologia-pode-ser-uma-faca-de-dois-gumes.html">A era dos deepfakes: como a tecnologia pode ser uma faca de dois gumes</a><time datetime="2026-01-09T17:26:01.696Z">09/01/2026 14:26</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-tvs-gigantes-como-escolher-a-sua.html">A revolução das TVs gigantes: como escolher a sua?</a><time datetime="2026-01-09T16:30:54.019Z">09/01/2026 13:30</time></li>
-<li><a href="artigos/inteligencia-artificial/desafios-eticos-e-tecnicos-na-era-da-geracao-de-imagens-por-ia.html">Desafios Éticos e Técnicos na Era da Geração de Imagens por IA</a><time datetime="2026-01-09T15:26:55.084Z">09/01/2026 12:26</time></li>
-<li><a href="artigos/banco-de-dados/a-nova-era-da-consistencia-eventual-desmistificando-corrosion-no-fly-io.html">A nova era da consistência eventual: desmistificando Corrosion no Fly.io</a><time datetime="2026-01-09T14:27:12.557Z">09/01/2026 11:27</time></li>
+<li><a href="artigos/tecnologia/o-despertar-da-tecnologia-do-sono-como-a-ozlo-esta-transformando-dados-em-bem-estar.html">O despertar da tecnologia do sono: como a Ozlo está transformando dados em bem-estar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-09T23:22:57.299Z">09/01/2026 20:22</time></div></li>
+<li><a href="artigos/tecnologia/as-inovacoes-do-futuro-o-que-eu-compraria-no-ces-2026.html">As inovações do futuro: o que eu compraria no CES 2026</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-09T22:23:36.655Z">09/01/2026 19:23</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-laptops-novas-inovacoes-que-prometem-mudar-o-jogo.html">A Revolução dos Laptops: Novas Inovações que Prometem Mudar o Jogo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-09T21:23:16.094Z">09/01/2026 18:23</time></div></li>
+<li><a href="artigos/seguranca/o-impacto-da-ia-e-da-etica-quando-a-tecnologia-ultrapassa-os-limites.html">O impacto da IA e da ética: quando a tecnologia ultrapassa os limites</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-01-09T20:26:53.640Z">09/01/2026 17:26</time></div></li>
+<li><a href="artigos/tecnologia/revolucao-nas-lentes-como-os-oculos-inteligentes-estao-transformando-a-tecnologia-do-futuro.html">Revolução nas Lentes: Como os Óculos Inteligentes Estão Transformando a Tecnologia do Futuro</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-09T19:22:38.972Z">09/01/2026 16:22</time></div></li>
+<li><a href="artigos/tecnologia/uma-nova-era-de-audio-como-os-oneplus-buds-pro-3-estao-mudando-o-jogo.html">Uma nova era de áudio: como os OnePlus Buds Pro 3 estão mudando o jogo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-09T18:34:47.497Z">09/01/2026 15:34</time></div></li>
+<li><a href="artigos/seguranca/a-era-dos-deepfakes-como-a-tecnologia-pode-ser-uma-faca-de-dois-gumes.html">A era dos deepfakes: como a tecnologia pode ser uma faca de dois gumes</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-01-09T17:26:01.696Z">09/01/2026 14:26</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-tvs-gigantes-como-escolher-a-sua.html">A revolução das TVs gigantes: como escolher a sua?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-01-09T16:30:54.019Z">09/01/2026 13:30</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desafios-eticos-e-tecnicos-na-era-da-geracao-de-imagens-por-ia.html">Desafios Éticos e Técnicos na Era da Geração de Imagens por IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-01-09T15:26:55.084Z">09/01/2026 12:26</time></div></li>
+<li><a href="artigos/banco-de-dados/a-nova-era-da-consistencia-eventual-desmistificando-corrosion-no-fly-io.html">A nova era da consistência eventual: desmistificando Corrosion no Fly.io</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2026-01-09T14:27:12.557Z">09/01/2026 11:27</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 325</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-era-dos-agentes-de-ai-entre-promessas-e-realidades.html">A era dos agentes de AI: entre promessas e realidades</a><time datetime="2025-12-03T18:36:20.253Z">03/12/2025 15:36</time></li>
-<li><a href="artigos/seguranca/fraudes-digitais-como-a-arquitetura-de-software-pode-ajudar-a-combate-las.html">Fraudes digitais: como a arquitetura de software pode ajudar a combatê-las</a><time datetime="2025-12-03T17:24:56.562Z">03/12/2025 14:24</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-llms-como-a-aws-esta-revolucionando-a-personalizacao-de-modelos.html">A nova era dos LLMs: como a AWS está revolucionando a personalização de modelos</a><time datetime="2025-12-03T16:30:43.525Z">03/12/2025 13:30</time></li>
-<li><a href="artigos/programacao/mudancas-nos-atalhos-do-visual-studio-o-dilema-da-memoria-muscular.html">Mudanças nos atalhos do Visual Studio: O dilema da memória muscular</a><time datetime="2025-12-03T15:25:14.175Z">03/12/2025 12:25</time></li>
-<li><a href="artigos/tecnologia/os-encantos-do-linux-elementary-os-ou-ubuntu-budgie-descubra-qual-se-encaixa-no-seu-estilo.html">Os encantos do Linux: elementary OS ou Ubuntu Budgie? Descubra qual se encaixa no seu estilo!</a><time datetime="2025-12-03T14:22:59.675Z">03/12/2025 11:22</time></li>
-<li><a href="artigos/inteligencia-artificial/permita-me-apresentar-o-conteudo-solicitado.html">Permita-me apresentar o conteúdo solicitado:</a><time datetime="2025-12-03T13:37:09.890Z">03/12/2025 10:37</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-do-windows-o-que-esperar-do-futuro.html">A Nova Era do Windows: O Que Esperar do Futuro?</a><time datetime="2025-12-03T12:44:10.038Z">03/12/2025 09:44</time></li>
-<li><a href="artigos/seguranca/a-revolta-digital-o-fiasco-da-instalacao-obrigatoria-de-apps.html">A revolta digital: o fiasco da instalação obrigatória de apps</a><time datetime="2025-12-03T11:20:41.063Z">03/12/2025 08:20</time></li>
-<li><a href="artigos/tecnologia/a-tecnologia-que-bombou-nas-compras-de-fim-de-ano-e-o-que-aprendemos-com-isso.html">A tecnologia que bombou nas compras de fim de ano e o que aprendemos com isso</a><time datetime="2025-12-03T10:25:48.179Z">03/12/2025 07:25</time></li>
-<li><a href="artigos/seguranca/desafios-da-confianca-digital-como-a-arquitetura-de-software-pode-combater-a-era-dos-deepfakes.html">Desafios da Confiança Digital: Como a Arquitetura de Software pode Combater a Era dos Deepfakes</a><time datetime="2025-12-03T09:26:18.092Z">03/12/2025 06:26</time></li>
+<li><a href="artigos/inteligencia-artificial/a-era-dos-agentes-de-ai-entre-promessas-e-realidades.html">A era dos agentes de AI: entre promessas e realidades</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-03T18:36:20.253Z">03/12/2025 15:36</time></div></li>
+<li><a href="artigos/seguranca/fraudes-digitais-como-a-arquitetura-de-software-pode-ajudar-a-combate-las.html">Fraudes digitais: como a arquitetura de software pode ajudar a combatê-las</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-03T17:24:56.562Z">03/12/2025 14:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-llms-como-a-aws-esta-revolucionando-a-personalizacao-de-modelos.html">A nova era dos LLMs: como a AWS está revolucionando a personalização de modelos</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-03T16:30:43.525Z">03/12/2025 13:30</time></div></li>
+<li><a href="artigos/programacao/mudancas-nos-atalhos-do-visual-studio-o-dilema-da-memoria-muscular.html">Mudanças nos atalhos do Visual Studio: O dilema da memória muscular</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-12-03T15:25:14.175Z">03/12/2025 12:25</time></div></li>
+<li><a href="artigos/tecnologia/os-encantos-do-linux-elementary-os-ou-ubuntu-budgie-descubra-qual-se-encaixa-no-seu-estilo.html">Os encantos do Linux: elementary OS ou Ubuntu Budgie? Descubra qual se encaixa no seu estilo!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-03T14:22:59.675Z">03/12/2025 11:22</time></div></li>
+<li><a href="artigos/inteligencia-artificial/permita-me-apresentar-o-conteudo-solicitado.html">Permita-me apresentar o conteúdo solicitado:</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-03T13:37:09.890Z">03/12/2025 10:37</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-do-windows-o-que-esperar-do-futuro.html">A Nova Era do Windows: O Que Esperar do Futuro?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-03T12:44:10.038Z">03/12/2025 09:44</time></div></li>
+<li><a href="artigos/seguranca/a-revolta-digital-o-fiasco-da-instalacao-obrigatoria-de-apps.html">A revolta digital: o fiasco da instalação obrigatória de apps</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-03T11:20:41.063Z">03/12/2025 08:20</time></div></li>
+<li><a href="artigos/tecnologia/a-tecnologia-que-bombou-nas-compras-de-fim-de-ano-e-o-que-aprendemos-com-isso.html">A tecnologia que bombou nas compras de fim de ano e o que aprendemos com isso</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-03T10:25:48.179Z">03/12/2025 07:25</time></div></li>
+<li><a href="artigos/seguranca/desafios-da-confianca-digital-como-a-arquitetura-de-software-pode-combater-a-era-dos-deepfakes.html">Desafios da Confiança Digital: Como a Arquitetura de Software pode Combater a Era dos Deepfakes</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-12-03T09:26:18.092Z">03/12/2025 06:26</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

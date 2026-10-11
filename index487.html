@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 487</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/o-futuro-das-data-centers-do-chao-da-terra-para-as-estrelas.html">O futuro das data centers: do chão da terra para as estrelas</a><time datetime="2025-09-20T21:17:11.431Z">20/09/2025 18:17</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-do-tiktok-como-a-arquitetura-de-software-pode-moldar-o-futuro-da-plataforma.html">A nova era do TikTok: como a Arquitetura de Software pode moldar o futuro da plataforma</a><time datetime="2025-09-20T20:19:45.214Z">20/09/2025 17:19</time></li>
-<li><a href="artigos/carreira/como-a-nova-taxa-do-h-1b-pode-impactar-o-futuro-dos-profissionais-de-tecnologia.html">Como a Nova Taxa do H-1B Pode Impactar o Futuro dos Profissionais de Tecnologia</a><time datetime="2025-09-20T19:14:35.152Z">20/09/2025 16:14</time></li>
-<li><a href="artigos/tecnologia/transformando-artes-performaticas-a-intersecao-da-tecnologia-e-criatividade.html">Transformando Artes Performáticas: A Interseção da Tecnologia e Criatividade</a><time datetime="2025-09-20T18:23:44.689Z">20/09/2025 15:23</time></li>
-<li><a href="artigos/programacao/a-revolucao-do-node-js-nas-bordas-da-nuvem.html">A revolução do Node.js nas bordas da nuvem</a><time datetime="2025-09-20T17:14:40.112Z">20/09/2025 14:14</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-e-commerce-como-phia-esta-moldando-o-futuro-das-compras.html">A revolução do e-commerce: como Phia está moldando o futuro das compras</a><time datetime="2025-09-20T16:21:24.387Z">20/09/2025 13:21</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-youtube-novas-ferramentas-e-a-era-da-criatividade-aumentada.html">A Revolução do YouTube: Novas Ferramentas e a Era da Criatividade Aumentada</a><time datetime="2025-09-20T15:18:38.370Z">20/09/2025 12:18</time></li>
-<li><a href="artigos/tecnologia/oportunidades-em-alta-como-a-arquitetura-de-software-pode-impulsionar-startups-no-disrupt-2025.html">Oportunidades em Alta: Como a Arquitetura de Software Pode Impulsionar Startups no Disrupt 2025</a><time datetime="2025-09-20T14:17:12.178Z">20/09/2025 11:17</time></li>
-<li><a href="artigos/tecnologia/como-transformar-suas-fotos-em-experiencias-3d-com-o-novo-ios-26.html">Como transformar suas fotos em experiências 3D com o novo iOS 26</a><time datetime="2025-09-20T13:23:42.255Z">20/09/2025 10:23</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-o-que-a-linha-iphone-17-nos-ensina-sobre-escolhas-tecnologicas.html">A Revolução dos Smartphones: O Que a Linha iPhone 17 Nos Ensina Sobre Escolhas Tecnológicas</a><time datetime="2025-09-20T12:34:55.823Z">20/09/2025 09:34</time></li>
+<li><a href="artigos/tecnologia/o-futuro-das-data-centers-do-chao-da-terra-para-as-estrelas.html">O futuro das data centers: do chão da terra para as estrelas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-20T21:17:11.431Z">20/09/2025 18:17</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-do-tiktok-como-a-arquitetura-de-software-pode-moldar-o-futuro-da-plataforma.html">A nova era do TikTok: como a Arquitetura de Software pode moldar o futuro da plataforma</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-20T20:19:45.214Z">20/09/2025 17:19</time></div></li>
+<li><a href="artigos/carreira/como-a-nova-taxa-do-h-1b-pode-impactar-o-futuro-dos-profissionais-de-tecnologia.html">Como a Nova Taxa do H-1B Pode Impactar o Futuro dos Profissionais de Tecnologia</a><div class="article-list-meta"><span>Carreira</span><time datetime="2025-09-20T19:14:35.152Z">20/09/2025 16:14</time></div></li>
+<li><a href="artigos/tecnologia/transformando-artes-performaticas-a-intersecao-da-tecnologia-e-criatividade.html">Transformando Artes Performáticas: A Interseção da Tecnologia e Criatividade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-20T18:23:44.689Z">20/09/2025 15:23</time></div></li>
+<li><a href="artigos/programacao/a-revolucao-do-node-js-nas-bordas-da-nuvem.html">A revolução do Node.js nas bordas da nuvem</a><div class="article-list-meta"><span>Programação</span><time datetime="2025-09-20T17:14:40.112Z">20/09/2025 14:14</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-e-commerce-como-phia-esta-moldando-o-futuro-das-compras.html">A revolução do e-commerce: como Phia está moldando o futuro das compras</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-20T16:21:24.387Z">20/09/2025 13:21</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-youtube-novas-ferramentas-e-a-era-da-criatividade-aumentada.html">A Revolução do YouTube: Novas Ferramentas e a Era da Criatividade Aumentada</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-20T15:18:38.370Z">20/09/2025 12:18</time></div></li>
+<li><a href="artigos/tecnologia/oportunidades-em-alta-como-a-arquitetura-de-software-pode-impulsionar-startups-no-disrupt-2025.html">Oportunidades em Alta: Como a Arquitetura de Software Pode Impulsionar Startups no Disrupt 2025</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-20T14:17:12.178Z">20/09/2025 11:17</time></div></li>
+<li><a href="artigos/tecnologia/como-transformar-suas-fotos-em-experiencias-3d-com-o-novo-ios-26.html">Como transformar suas fotos em experiências 3D com o novo iOS 26</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-20T13:23:42.255Z">20/09/2025 10:23</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-o-que-a-linha-iphone-17-nos-ensina-sobre-escolhas-tecnologicas.html">A Revolução dos Smartphones: O Que a Linha iPhone 17 Nos Ensina Sobre Escolhas Tecnológicas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-09-20T12:34:55.823Z">20/09/2025 09:34</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

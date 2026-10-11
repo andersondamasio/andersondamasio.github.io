@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 3</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/seguranca/gitlab-19-2-revolucionando-a-seguranca-com-automacao-inteligente.html">GitLab 19.2: Revolucionando a Segurança com Automação Inteligente</a><time datetime="2026-07-21T08:26:22.158Z">21/07/2026 05:26</time></li>
-<li><a href="artigos/desenvolvimento-de-software/novidades-no-java-impacto-das-value-objects-e-inovacoes-em-ferramentas-de-desenvolvimento.html">Novidades no Java: Impacto das Value Objects e Inovações em Ferramentas de Desenvolvimento</a><time datetime="2026-07-20T21:58:55.116Z">20/07/2026 18:58</time></li>
-<li><a href="artigos/inteligencia-artificial/revolucionando-a-construcao-de-agentes-com-a-abordagem-model-driven.html">Revolucionando a Construção de Agentes com a Abordagem Model-Driven</a><time datetime="2026-07-20T15:49:04.635Z">20/07/2026 12:49</time></li>
-<li><a href="artigos/inteligencia-artificial/revolucao-nas-homepages-como-a-netflix-transformou-a-personalizacao-com-genpage.html">Revolução nas Homepages: Como a Netflix Transformou a Personalização com GenPage</a><time datetime="2026-07-19T20:07:28.192Z">19/07/2026 17:07</time></li>
-<li><a href="artigos/cloud/a-revolucao-na-infraestrutura-como-o-cloudformation-express-mode-pode-transformar-seus-deployments.html">A Revolução na Infraestrutura: Como o CloudFormation Express Mode Pode Transformar Seus Deployments</a><time datetime="2026-07-19T08:15:05.927Z">19/07/2026 05:15</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-do-conhecimento-empresarial-pinecone-nexus-e-o-futuro-dos-agentes-de-ia.html">A Revolução do Conhecimento Empresarial: Pinecone Nexus e o Futuro dos Agentes de IA</a><time datetime="2026-07-18T22:48:57.548Z">18/07/2026 19:48</time></li>
-<li><a href="artigos/tecnologia/o-futuro-da-riqueza-tecnologica-redistribuicao-ou-autossuficiencia.html">O Futuro da Riqueza Tecnológica: Redistribuição ou Autossuficiência?</a><time datetime="2026-07-18T14:51:50.763Z">18/07/2026 11:51</time></li>
-<li><a href="artigos/banco-de-dados/dolt-2-0-a-revolucao-do-controle-de-versoes-em-bancos-de-dados-sql.html">Dolt 2.0: A Revolução do Controle de Versões em Bancos de Dados SQL</a><time datetime="2026-07-18T07:47:38.175Z">18/07/2026 04:47</time></li>
-<li><a href="artigos/inteligencia-artificial/infraestrutura-nativa-em-nuvem-o-alicerce-da-inteligencia-artificial-autonoma.html">Infraestrutura Nativa em Nuvem: O Alicerce da Inteligência Artificial Autônoma</a><time datetime="2026-07-17T19:06:24.513Z">17/07/2026 16:06</time></li>
-<li><a href="artigos/inteligencia-artificial/infraestrutura-de-inteligencia-artificial-do-brilho-das-agentes-a-solidez-da-plataforma.html">Infraestrutura de Inteligência Artificial: Do Brilho das Agentes à Solidez da Plataforma</a><time datetime="2026-07-17T11:20:40.188Z">17/07/2026 08:20</time></li>
+<li><a href="artigos/seguranca/gitlab-19-2-revolucionando-a-seguranca-com-automacao-inteligente.html">GitLab 19.2: Revolucionando a Segurança com Automação Inteligente</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-07-21T08:26:22.158Z">21/07/2026 05:26</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/novidades-no-java-impacto-das-value-objects-e-inovacoes-em-ferramentas-de-desenvolvimento.html">Novidades no Java: Impacto das Value Objects e Inovações em Ferramentas de Desenvolvimento</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-07-20T21:58:55.116Z">20/07/2026 18:58</time></div></li>
+<li><a href="artigos/inteligencia-artificial/revolucionando-a-construcao-de-agentes-com-a-abordagem-model-driven.html">Revolucionando a Construção de Agentes com a Abordagem Model-Driven</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-07-20T15:49:04.635Z">20/07/2026 12:49</time></div></li>
+<li><a href="artigos/inteligencia-artificial/revolucao-nas-homepages-como-a-netflix-transformou-a-personalizacao-com-genpage.html">Revolução nas Homepages: Como a Netflix Transformou a Personalização com GenPage</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-07-19T20:07:28.192Z">19/07/2026 17:07</time></div></li>
+<li><a href="artigos/cloud/a-revolucao-na-infraestrutura-como-o-cloudformation-express-mode-pode-transformar-seus-deployments.html">A Revolução na Infraestrutura: Como o CloudFormation Express Mode Pode Transformar Seus Deployments</a><div class="article-list-meta"><span>Cloud</span><time datetime="2026-07-19T08:15:05.927Z">19/07/2026 05:15</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-do-conhecimento-empresarial-pinecone-nexus-e-o-futuro-dos-agentes-de-ia.html">A Revolução do Conhecimento Empresarial: Pinecone Nexus e o Futuro dos Agentes de IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-07-18T22:48:57.548Z">18/07/2026 19:48</time></div></li>
+<li><a href="artigos/tecnologia/o-futuro-da-riqueza-tecnologica-redistribuicao-ou-autossuficiencia.html">O Futuro da Riqueza Tecnológica: Redistribuição ou Autossuficiência?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-07-18T14:51:50.763Z">18/07/2026 11:51</time></div></li>
+<li><a href="artigos/banco-de-dados/dolt-2-0-a-revolucao-do-controle-de-versoes-em-bancos-de-dados-sql.html">Dolt 2.0: A Revolução do Controle de Versões em Bancos de Dados SQL</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2026-07-18T07:47:38.175Z">18/07/2026 04:47</time></div></li>
+<li><a href="artigos/inteligencia-artificial/infraestrutura-nativa-em-nuvem-o-alicerce-da-inteligencia-artificial-autonoma.html">Infraestrutura Nativa em Nuvem: O Alicerce da Inteligência Artificial Autônoma</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-07-17T19:06:24.513Z">17/07/2026 16:06</time></div></li>
+<li><a href="artigos/inteligencia-artificial/infraestrutura-de-inteligencia-artificial-do-brilho-das-agentes-a-solidez-da-plataforma.html">Infraestrutura de Inteligência Artificial: Do Brilho das Agentes à Solidez da Plataforma</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-07-17T11:20:40.188Z">17/07/2026 08:20</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

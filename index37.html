@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 37</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/banco-de-dados/transformando-dados-em-conexoes-a-revolucao-do-data-mesh-no-mundo-das-fintechs.html">Transformando Dados em Conexões: A Revolução do Data Mesh no Mundo das Fintechs</a><time datetime="2026-05-17T11:11:15.012Z">17/05/2026 08:11</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-armazenamento-como-escolher-o-nas-ideal-para-suas-necessidades.html">A revolução do armazenamento: como escolher o NAS ideal para suas necessidades</a><time datetime="2026-05-17T09:10:40.480Z">17/05/2026 06:10</time></li>
-<li><a href="artigos/tecnologia/a-liberdade-dos-leitores-o-que-o-jailbreak-dos-kindles-revela-sobre-a-tecnologia-atual.html">A liberdade dos leitores: O que o jailbreak dos Kindles revela sobre a tecnologia atual</a><time datetime="2026-05-17T03:29:24.621Z">17/05/2026 00:29</time></li>
-<li><a href="artigos/inteligencia-artificial/a-fusao-da-inteligencia-como-a-estrategia-de-produto-da-openai-pode-influenciar-o-desenvolvimento-de-software.html">A fusão da inteligência: Como a estratégia de produto da OpenAI pode influenciar o desenvolvimento de software</a><time datetime="2026-05-16T23:58:38.987Z">16/05/2026 20:58</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-do-marketing-digital-como-sistemas-inteligentes-estao-mudando-o-jogo.html">A revolução do marketing digital: como sistemas inteligentes estão mudando o jogo</a><time datetime="2026-05-16T22:49:32.870Z">16/05/2026 19:49</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-do-ai-local-ubuntu-desafia-o-status-quo.html">A revolução do AI local: Ubuntu desafia o status quo</a><time datetime="2026-05-16T21:55:08.698Z">16/05/2026 18:55</time></li>
-<li><a href="artigos/inteligencia-artificial/o-abismo-da-era-da-ia-como-nao-ser-deixado-para-tras.html">O abismo da era da IA: como não ser deixado para trás</a><time datetime="2026-05-16T20:51:25.298Z">16/05/2026 17:51</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-do-llm-arxiv-e-o-futuro-da-pesquisa-cientifica.html">A era do LLM: ArXiv e o futuro da pesquisa científica</a><time datetime="2026-05-16T19:09:31.127Z">16/05/2026 16:09</time></li>
-<li><a href="artigos/inteligencia-artificial/transformando-ideias-em-experiencias-o-novo-rumo-da-estrategia-de-produto-na-openai.html">Transformando Ideias em Experiências: O Novo Rumo da Estratégia de Produto na OpenAI</a><time datetime="2026-05-16T17:11:35.949Z">16/05/2026 14:11</time></li>
-<li><a href="artigos/tecnologia/o-gadget-que-promete-erguer-sua-postura-e-sua-produtividade.html">O gadget que promete erguer sua postura e sua produtividade</a><time datetime="2026-05-16T16:04:29.248Z">16/05/2026 13:04</time></li>
+<li><a href="artigos/banco-de-dados/transformando-dados-em-conexoes-a-revolucao-do-data-mesh-no-mundo-das-fintechs.html">Transformando Dados em Conexões: A Revolução do Data Mesh no Mundo das Fintechs</a><div class="article-list-meta"><span>Banco de Dados</span><time datetime="2026-05-17T11:11:15.012Z">17/05/2026 08:11</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-armazenamento-como-escolher-o-nas-ideal-para-suas-necessidades.html">A revolução do armazenamento: como escolher o NAS ideal para suas necessidades</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-17T09:10:40.480Z">17/05/2026 06:10</time></div></li>
+<li><a href="artigos/tecnologia/a-liberdade-dos-leitores-o-que-o-jailbreak-dos-kindles-revela-sobre-a-tecnologia-atual.html">A liberdade dos leitores: O que o jailbreak dos Kindles revela sobre a tecnologia atual</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-17T03:29:24.621Z">17/05/2026 00:29</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-fusao-da-inteligencia-como-a-estrategia-de-produto-da-openai-pode-influenciar-o-desenvolvimento-de-software.html">A fusão da inteligência: Como a estratégia de produto da OpenAI pode influenciar o desenvolvimento de software</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-16T23:58:38.987Z">16/05/2026 20:58</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-do-marketing-digital-como-sistemas-inteligentes-estao-mudando-o-jogo.html">A revolução do marketing digital: como sistemas inteligentes estão mudando o jogo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-16T22:49:32.870Z">16/05/2026 19:49</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-do-ai-local-ubuntu-desafia-o-status-quo.html">A revolução do AI local: Ubuntu desafia o status quo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-16T21:55:08.698Z">16/05/2026 18:55</time></div></li>
+<li><a href="artigos/inteligencia-artificial/o-abismo-da-era-da-ia-como-nao-ser-deixado-para-tras.html">O abismo da era da IA: como não ser deixado para trás</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-16T20:51:25.298Z">16/05/2026 17:51</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-do-llm-arxiv-e-o-futuro-da-pesquisa-cientifica.html">A era do LLM: ArXiv e o futuro da pesquisa científica</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-16T19:09:31.127Z">16/05/2026 16:09</time></div></li>
+<li><a href="artigos/inteligencia-artificial/transformando-ideias-em-experiencias-o-novo-rumo-da-estrategia-de-produto-na-openai.html">Transformando Ideias em Experiências: O Novo Rumo da Estratégia de Produto na OpenAI</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-16T17:11:35.949Z">16/05/2026 14:11</time></div></li>
+<li><a href="artigos/tecnologia/o-gadget-que-promete-erguer-sua-postura-e-sua-produtividade.html">O gadget que promete erguer sua postura e sua produtividade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-16T16:04:29.248Z">16/05/2026 13:04</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

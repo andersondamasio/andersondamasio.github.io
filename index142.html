@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 142</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-revolucao-dos-tablets-acessiveis-descubra-o-lenovo-tab-one.html">A revolução dos tablets acessíveis: descubra o Lenovo Tab One</a><time datetime="2026-03-02T02:08:49.630Z">01/03/2026 23:08</time></li>
-<li><a href="artigos/seguranca/como-a-arquitetura-de-software-pode-ajudar-na-seguranca-da-nova-geracao-online.html">Como a Arquitetura de Software Pode Ajudar na Segurança da Nova Geração Online</a><time datetime="2026-03-01T23:28:05.366Z">01/03/2026 20:28</time></li>
-<li><a href="artigos/tecnologia/como-otimizar-seu-ps5-dicas-para-performance-e-privacidade.html">Como otimizar seu PS5: Dicas para performance e privacidade</a><time datetime="2026-03-01T22:27:20.286Z">01/03/2026 19:27</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-o-que-um-robo-de-bolso-nos-ensina-sobre-tecnologia.html">A revolução dos smartphones: o que um robô de bolso nos ensina sobre tecnologia</a><time datetime="2026-03-01T21:26:52.849Z">01/03/2026 18:26</time></li>
-<li><a href="artigos/seguranca/explorando-alternativas-ao-discord-seguranca-e-privacidade-em-primeiro-lugar.html">Explorando Alternativas ao Discord: Segurança e Privacidade em Primeiro Lugar</a><time datetime="2026-03-01T20:30:52.669Z">01/03/2026 17:30</time></li>
-<li><a href="artigos/blockchain/explorando-o-mercado-de-previsoes-o-que-o-caso-iraniano-nos-ensina.html">Explorando o Mercado de Previsões: O Que o Caso Iraniano Nos Ensina?</a><time datetime="2026-03-01T19:25:40.949Z">01/03/2026 16:25</time></li>
-<li><a href="artigos/tecnologia/monitoramento-de-pressao-arterial-a-batalha-entre-wearables-e-cuffs-tradicionais.html">Monitoramento de Pressão Arterial: A Batalha Entre Wearables e Cuffs Tradicionais</a><time datetime="2026-03-01T18:37:49.709Z">01/03/2026 15:37</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-onda-do-saas-o-que-os-investidores-realmente-querem.html">A nova onda do SaaS: o que os investidores realmente querem?</a><time datetime="2026-03-01T17:25:50.610Z">01/03/2026 14:25</time></li>
-<li><a href="artigos/inteligencia-artificial/a-etica-da-inteligencia-artificial-e-seus-desafios-com-o-governo.html">A ética da inteligência artificial e seus desafios com o governo</a><time datetime="2026-03-01T16:32:14.355Z">01/03/2026 13:32</time></li>
-<li><a href="artigos/tecnologia/honor-reinventa-os-dobraveis-uma-bateria-gigante-e-uma-estrutura-resistente.html">Honor Reinventa os Dobráveis: Uma Bateria Gigante e Uma Estrutura Resistente</a><time datetime="2026-03-01T15:27:07.262Z">01/03/2026 12:27</time></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-tablets-acessiveis-descubra-o-lenovo-tab-one.html">A revolução dos tablets acessíveis: descubra o Lenovo Tab One</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-02T02:08:49.630Z">01/03/2026 23:08</time></div></li>
+<li><a href="artigos/seguranca/como-a-arquitetura-de-software-pode-ajudar-na-seguranca-da-nova-geracao-online.html">Como a Arquitetura de Software Pode Ajudar na Segurança da Nova Geração Online</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-01T23:28:05.366Z">01/03/2026 20:28</time></div></li>
+<li><a href="artigos/tecnologia/como-otimizar-seu-ps5-dicas-para-performance-e-privacidade.html">Como otimizar seu PS5: Dicas para performance e privacidade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-01T22:27:20.286Z">01/03/2026 19:27</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-dos-smartphones-o-que-um-robo-de-bolso-nos-ensina-sobre-tecnologia.html">A revolução dos smartphones: o que um robô de bolso nos ensina sobre tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-01T21:26:52.849Z">01/03/2026 18:26</time></div></li>
+<li><a href="artigos/seguranca/explorando-alternativas-ao-discord-seguranca-e-privacidade-em-primeiro-lugar.html">Explorando Alternativas ao Discord: Segurança e Privacidade em Primeiro Lugar</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-03-01T20:30:52.669Z">01/03/2026 17:30</time></div></li>
+<li><a href="artigos/blockchain/explorando-o-mercado-de-previsoes-o-que-o-caso-iraniano-nos-ensina.html">Explorando o Mercado de Previsões: O Que o Caso Iraniano Nos Ensina?</a><div class="article-list-meta"><span>Blockchain</span><time datetime="2026-03-01T19:25:40.949Z">01/03/2026 16:25</time></div></li>
+<li><a href="artigos/tecnologia/monitoramento-de-pressao-arterial-a-batalha-entre-wearables-e-cuffs-tradicionais.html">Monitoramento de Pressão Arterial: A Batalha Entre Wearables e Cuffs Tradicionais</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-01T18:37:49.709Z">01/03/2026 15:37</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-onda-do-saas-o-que-os-investidores-realmente-querem.html">A nova onda do SaaS: o que os investidores realmente querem?</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-01T17:25:50.610Z">01/03/2026 14:25</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-etica-da-inteligencia-artificial-e-seus-desafios-com-o-governo.html">A ética da inteligência artificial e seus desafios com o governo</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-01T16:32:14.355Z">01/03/2026 13:32</time></div></li>
+<li><a href="artigos/tecnologia/honor-reinventa-os-dobraveis-uma-bateria-gigante-e-uma-estrutura-resistente.html">Honor Reinventa os Dobráveis: Uma Bateria Gigante e Uma Estrutura Resistente</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-01T15:27:07.262Z">01/03/2026 12:27</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

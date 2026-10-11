@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 48</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-agentes-quando-a-ia-comeca-a-sonhar.html">A revolução dos agentes: quando a IA começa a "sonhar"</a><time datetime="2026-05-06T16:32:53.568Z">06/05/2026 13:32</time></li>
-<li><a href="artigos/tecnologia/a-importancia-da-presencia-em-eventos-de-tecnologia-como-credibilidade-e-networking-podem-alavancar-seu-negocio.html">A importância da presençia em eventos de tecnologia: como credibilidade e networking podem alavancar seu negócio</a><time datetime="2026-05-06T14:15:28.794Z">06/05/2026 11:15</time></li>
-<li><a href="artigos/tecnologia/a-batalha-dos-construtores-de-sites-wix-x-squarespace-e-o-que-isso-significa-para-o-futuro-digital.html">A batalha dos construtores de sites: Wix x Squarespace e o que isso significa para o futuro digital</a><time datetime="2026-05-06T11:12:17.623Z">06/05/2026 08:12</time></li>
-<li><a href="artigos/carreira/como-identificar-vagas-fraudulentas-e-proteger-sua-carreira-na-era-digital.html">Como Identificar Vagas Fraudulentas e Proteger Sua Carreira na Era Digital</a><time datetime="2026-05-06T06:03:28.770Z">06/05/2026 03:03</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-games-no-linux-bazzite-se-destaca.html">A nova era dos games no Linux: Bazzite se destaca!</a><time datetime="2026-05-06T02:53:24.159Z">05/05/2026 23:53</time></li>
-<li><a href="artigos/inteligencia-artificial/como-a-sap-esta-apostando-no-futuro-da-ia-em-dados-estruturados.html">Como a SAP Está Apostando no Futuro da IA em Dados Estruturados</a><time datetime="2026-05-05T23:52:37.663Z">05/05/2026 20:52</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-dados-como-a-altara-esta-transformando-as-ciencias-fisicas.html">A revolução dos dados: como a Altara está transformando as ciências físicas</a><time datetime="2026-05-05T23:00:15.879Z">05/05/2026 20:00</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-da-personalizacao-ios-27-e-o-futuro-dos-modelos-de-ia.html">A nova era da personalização: iOS 27 e o futuro dos modelos de IA</a><time datetime="2026-05-05T21:07:18.119Z">05/05/2026 18:07</time></li>
-<li><a href="artigos/tecnologia/a-transicao-do-samsung-messages-como-se-preparar-para-a-mudanca.html">A transição do Samsung Messages: Como se preparar para a mudança</a><time datetime="2026-05-05T19:31:01.056Z">05/05/2026 16:31</time></li>
-<li><a href="artigos/inteligencia-artificial/a-era-dos-chatbots-medicos-entre-a-inovacao-e-a-responsabilidade.html">A era dos chatbots médicos: entre a inovação e a responsabilidade</a><time datetime="2026-05-05T18:02:53.197Z">05/05/2026 15:02</time></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-agentes-quando-a-ia-comeca-a-sonhar.html">A revolução dos agentes: quando a IA começa a "sonhar"</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-06T16:32:53.568Z">06/05/2026 13:32</time></div></li>
+<li><a href="artigos/tecnologia/a-importancia-da-presencia-em-eventos-de-tecnologia-como-credibilidade-e-networking-podem-alavancar-seu-negocio.html">A importância da presençia em eventos de tecnologia: como credibilidade e networking podem alavancar seu negócio</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-06T14:15:28.794Z">06/05/2026 11:15</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-dos-construtores-de-sites-wix-x-squarespace-e-o-que-isso-significa-para-o-futuro-digital.html">A batalha dos construtores de sites: Wix x Squarespace e o que isso significa para o futuro digital</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-06T11:12:17.623Z">06/05/2026 08:12</time></div></li>
+<li><a href="artigos/carreira/como-identificar-vagas-fraudulentas-e-proteger-sua-carreira-na-era-digital.html">Como Identificar Vagas Fraudulentas e Proteger Sua Carreira na Era Digital</a><div class="article-list-meta"><span>Carreira</span><time datetime="2026-05-06T06:03:28.770Z">06/05/2026 03:03</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-games-no-linux-bazzite-se-destaca.html">A nova era dos games no Linux: Bazzite se destaca!</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-06T02:53:24.159Z">05/05/2026 23:53</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-a-sap-esta-apostando-no-futuro-da-ia-em-dados-estruturados.html">Como a SAP Está Apostando no Futuro da IA em Dados Estruturados</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-05T23:52:37.663Z">05/05/2026 20:52</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-dos-dados-como-a-altara-esta-transformando-as-ciencias-fisicas.html">A revolução dos dados: como a Altara está transformando as ciências físicas</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-05T23:00:15.879Z">05/05/2026 20:00</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-da-personalizacao-ios-27-e-o-futuro-dos-modelos-de-ia.html">A nova era da personalização: iOS 27 e o futuro dos modelos de IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-05T21:07:18.119Z">05/05/2026 18:07</time></div></li>
+<li><a href="artigos/tecnologia/a-transicao-do-samsung-messages-como-se-preparar-para-a-mudanca.html">A transição do Samsung Messages: Como se preparar para a mudança</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-05T19:31:01.056Z">05/05/2026 16:31</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-era-dos-chatbots-medicos-entre-a-inovacao-e-a-responsabilidade.html">A era dos chatbots médicos: entre a inovação e a responsabilidade</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-05T18:02:53.197Z">05/05/2026 15:02</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

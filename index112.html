@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 112</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/ofertas-imperdiveis-o-que-a-arquitetura-de-software-tem-a-ver-com-as-vendas-de-primavera-da-amazon.html">Ofertas Imperdíveis: O Que a Arquitetura de Software Tem a Ver com as Vendas de Primavera da Amazon</a><time datetime="2026-03-18T09:58:53.529Z">18/03/2026 06:58</time></li>
-<li><a href="artigos/tecnologia/a-primavera-da-tecnologia-como-o-desenvolvimento-de-software-pode-aproveitar-as-ofertas-da-amazon.html">A Primavera da Tecnologia: Como o Desenvolvimento de Software Pode Aproveitar as Ofertas da Amazon</a><time datetime="2026-03-18T08:55:21.188Z">18/03/2026 05:55</time></li>
-<li><a href="artigos/tecnologia/a-nova-era-dos-laptops-macbook-neo-e-a-transformacao-do-mercado.html">A nova era dos laptops: MacBook Neo e a transformação do mercado</a><time datetime="2026-03-18T07:56:53.939Z">18/03/2026 04:56</time></li>
-<li><a href="artigos/observabilidade/construindo-grafo-do-conhecimento-a-nova-fronteira-da-observabilidade-no-software.html">Construindo Grafo do Conhecimento: A Nova Fronteira da Observabilidade no Software</a><time datetime="2026-03-18T05:00:37.070Z">18/03/2026 02:00</time></li>
-<li><a href="artigos/tecnologia/macbook-neo-ou-air-qual-e-o-melhor-para-seu-dia-a-dia.html">MacBook Neo ou Air: Qual é o Melhor para Seu dia a dia?</a><time datetime="2026-03-17T23:37:40.002Z">17/03/2026 20:37</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-inteligencia-artificial-o-caso-claude-code-e-suas-implicacoes.html">A revolução da inteligência artificial: o caso Claude Code e suas implicações</a><time datetime="2026-03-17T22:54:35.613Z">17/03/2026 19:54</time></li>
-<li><a href="artigos/tecnologia/a-batalha-legal-das-previsoes-kalshi-e-o-dilema-do-jogo.html">A batalha legal das previsões: Kalshi e o dilema do jogo</a><time datetime="2026-03-17T21:42:23.824Z">17/03/2026 18:42</time></li>
-<li><a href="artigos/inteligencia-artificial/como-a-mistral-pode-revolucionar-a-customizacao-em-projetos-de-ia-nas-empresas.html">Como a Mistral Pode Revolucionar a Customização em Projetos de IA nas Empresas</a><time datetime="2026-03-17T21:06:50.157Z">17/03/2026 18:06</time></li>
-<li><a href="artigos/inteligencia-artificial/desenvolvimento-de-ia-o-pentagono-e-a-busca-por-alternativas-a-anthropic.html">Desenvolvimento de IA: O Pentágono e a Busca por Alternativas a Anthropic</a><time datetime="2026-03-17T19:14:25.758Z">17/03/2026 16:14</time></li>
-<li><a href="artigos/tecnologia/samsung-galaxy-s26-ultra-o-melhor-android-que-voce-vai-amar-mas-nao-precisa-trocar.html">Samsung Galaxy S26 Ultra: O Melhor Android que Você Vai Amar, Mas Não Precisa Trocar</a><time datetime="2026-03-17T18:02:24.872Z">17/03/2026 15:02</time></li>
+<li><a href="artigos/tecnologia/ofertas-imperdiveis-o-que-a-arquitetura-de-software-tem-a-ver-com-as-vendas-de-primavera-da-amazon.html">Ofertas Imperdíveis: O Que a Arquitetura de Software Tem a Ver com as Vendas de Primavera da Amazon</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-18T09:58:53.529Z">18/03/2026 06:58</time></div></li>
+<li><a href="artigos/tecnologia/a-primavera-da-tecnologia-como-o-desenvolvimento-de-software-pode-aproveitar-as-ofertas-da-amazon.html">A Primavera da Tecnologia: Como o Desenvolvimento de Software Pode Aproveitar as Ofertas da Amazon</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-18T08:55:21.188Z">18/03/2026 05:55</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-era-dos-laptops-macbook-neo-e-a-transformacao-do-mercado.html">A nova era dos laptops: MacBook Neo e a transformação do mercado</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-18T07:56:53.939Z">18/03/2026 04:56</time></div></li>
+<li><a href="artigos/observabilidade/construindo-grafo-do-conhecimento-a-nova-fronteira-da-observabilidade-no-software.html">Construindo Grafo do Conhecimento: A Nova Fronteira da Observabilidade no Software</a><div class="article-list-meta"><span>Observabilidade</span><time datetime="2026-03-18T05:00:37.070Z">18/03/2026 02:00</time></div></li>
+<li><a href="artigos/tecnologia/macbook-neo-ou-air-qual-e-o-melhor-para-seu-dia-a-dia.html">MacBook Neo ou Air: Qual é o Melhor para Seu dia a dia?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-17T23:37:40.002Z">17/03/2026 20:37</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-inteligencia-artificial-o-caso-claude-code-e-suas-implicacoes.html">A revolução da inteligência artificial: o caso Claude Code e suas implicações</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-17T22:54:35.613Z">17/03/2026 19:54</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-legal-das-previsoes-kalshi-e-o-dilema-do-jogo.html">A batalha legal das previsões: Kalshi e o dilema do jogo</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-17T21:42:23.824Z">17/03/2026 18:42</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-a-mistral-pode-revolucionar-a-customizacao-em-projetos-de-ia-nas-empresas.html">Como a Mistral Pode Revolucionar a Customização em Projetos de IA nas Empresas</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-17T21:06:50.157Z">17/03/2026 18:06</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desenvolvimento-de-ia-o-pentagono-e-a-busca-por-alternativas-a-anthropic.html">Desenvolvimento de IA: O Pentágono e a Busca por Alternativas a Anthropic</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-17T19:14:25.758Z">17/03/2026 16:14</time></div></li>
+<li><a href="artigos/tecnologia/samsung-galaxy-s26-ultra-o-melhor-android-que-voce-vai-amar-mas-nao-precisa-trocar.html">Samsung Galaxy S26 Ultra: O Melhor Android que Você Vai Amar, Mas Não Precisa Trocar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-03-17T18:02:24.872Z">17/03/2026 15:02</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

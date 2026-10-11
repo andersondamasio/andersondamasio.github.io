@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 296</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/como-a-moengage-esta-transformando-o-cenario-de-engajamento-do-cliente-com-inteligencia-artificial.html">Como a MoEngage Está Transformando o Cenário de Engajamento do Cliente com Inteligência Artificial</a><time datetime="2025-12-17T05:24:44.604Z">17/12/2025 02:24</time></li>
-<li><a href="artigos/inteligencia-artificial/como-identificar-textos-gerados-por-ia-dicas-para-desenvolvedores.html">Como Identificar Textos Gerados por IA: Dicas para Desenvolvedores</a><time datetime="2025-12-17T04:34:50.297Z">17/12/2025 01:34</time></li>
-<li><a href="artigos/fintech/monzo-o-dilema-da-expansao-e-o-tempo-de-ipo-em-foco.html">Monzo: O Dilema da Expansão e o Tempo de IPO em Foco</a><time datetime="2025-12-17T03:22:07.114Z">17/12/2025 00:22</time></li>
-<li><a href="artigos/tecnologia/desvendando-os-propositos-ocultos-do-marketing-da-tesla-licoes-para-desenvolvedores-de-software.html">Desvendando os Propósitos Ocultos do Marketing da Tesla: Lições para Desenvolvedores de Software</a><time datetime="2025-12-17T01:29:46.878Z">16/12/2025 22:29</time></li>
-<li><a href="artigos/tecnologia/novas-tvs-micro-rgb-da-samsung-uma-revolucao-nas-imagens-e-o-papel-da-arquitetura-de-software.html">Novas TVs Micro RGB da Samsung: Uma Revolução nas Imagens e o Papel da Arquitetura de Software</a><time datetime="2025-12-16T23:21:29.311Z">16/12/2025 20:21</time></li>
-<li><a href="artigos/tecnologia/a-nostalgia-do-cinema-o-que-wikiflix-nos-ensina-sobre-plataformas-de-streaming.html">A nostalgia do cinema: o que WikiFlix nos ensina sobre plataformas de streaming</a><time datetime="2025-12-16T22:21:30.184Z">16/12/2025 19:21</time></li>
-<li><a href="artigos/tecnologia/como-a-luta-pelo-nome-twitter-reflete-desafios-na-arquitetura-de-marcas-digitais.html">Como a Luta pelo Nome "Twitter" Reflete Desafios na Arquitetura de Marcas Digitais</a><time datetime="2025-12-16T21:22:22.521Z">16/12/2025 18:22</time></li>
-<li><a href="artigos/tecnologia-automotiva/slate-o-desafio-de-atrai-mais-clientes-em-um-mercado-de-caminhoes-eletricos-em-crise.html">Slate: O Desafio de Atraí mais Clientes em um Mercado de Caminhões Elétricos em Crise</a><time datetime="2025-12-16T20:26:16.762Z">16/12/2025 17:26</time></li>
-<li><a href="artigos/tecnologia/desperte-o-potencial-do-seu-oneplus-10-dicas-para-turbinar-seu-desempenho.html">Desperte o Potencial do Seu OnePlus: 10 Dicas para Turbinar Seu Desempenho</a><time datetime="2025-12-16T19:21:26.354Z">16/12/2025 16:21</time></li>
-<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-oculos-inteligentes-escutando-melhor-em-meio-ao-barulho.html">A nova era dos óculos inteligentes: escutando melhor em meio ao barulho</a><time datetime="2025-12-16T18:34:00.117Z">16/12/2025 15:34</time></li>
+<li><a href="artigos/inteligencia-artificial/como-a-moengage-esta-transformando-o-cenario-de-engajamento-do-cliente-com-inteligencia-artificial.html">Como a MoEngage Está Transformando o Cenário de Engajamento do Cliente com Inteligência Artificial</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-17T05:24:44.604Z">17/12/2025 02:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-identificar-textos-gerados-por-ia-dicas-para-desenvolvedores.html">Como Identificar Textos Gerados por IA: Dicas para Desenvolvedores</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-17T04:34:50.297Z">17/12/2025 01:34</time></div></li>
+<li><a href="artigos/fintech/monzo-o-dilema-da-expansao-e-o-tempo-de-ipo-em-foco.html">Monzo: O Dilema da Expansão e o Tempo de IPO em Foco</a><div class="article-list-meta"><span>Fintech</span><time datetime="2025-12-17T03:22:07.114Z">17/12/2025 00:22</time></div></li>
+<li><a href="artigos/tecnologia/desvendando-os-propositos-ocultos-do-marketing-da-tesla-licoes-para-desenvolvedores-de-software.html">Desvendando os Propósitos Ocultos do Marketing da Tesla: Lições para Desenvolvedores de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-17T01:29:46.878Z">16/12/2025 22:29</time></div></li>
+<li><a href="artigos/tecnologia/novas-tvs-micro-rgb-da-samsung-uma-revolucao-nas-imagens-e-o-papel-da-arquitetura-de-software.html">Novas TVs Micro RGB da Samsung: Uma Revolução nas Imagens e o Papel da Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-16T23:21:29.311Z">16/12/2025 20:21</time></div></li>
+<li><a href="artigos/tecnologia/a-nostalgia-do-cinema-o-que-wikiflix-nos-ensina-sobre-plataformas-de-streaming.html">A nostalgia do cinema: o que WikiFlix nos ensina sobre plataformas de streaming</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-16T22:21:30.184Z">16/12/2025 19:21</time></div></li>
+<li><a href="artigos/tecnologia/como-a-luta-pelo-nome-twitter-reflete-desafios-na-arquitetura-de-marcas-digitais.html">Como a Luta pelo Nome "Twitter" Reflete Desafios na Arquitetura de Marcas Digitais</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-16T21:22:22.521Z">16/12/2025 18:22</time></div></li>
+<li><a href="artigos/tecnologia-automotiva/slate-o-desafio-de-atrai-mais-clientes-em-um-mercado-de-caminhoes-eletricos-em-crise.html">Slate: O Desafio de Atraí mais Clientes em um Mercado de Caminhões Elétricos em Crise</a><div class="article-list-meta"><span>Tecnologia Automotiva</span><time datetime="2025-12-16T20:26:16.762Z">16/12/2025 17:26</time></div></li>
+<li><a href="artigos/tecnologia/desperte-o-potencial-do-seu-oneplus-10-dicas-para-turbinar-seu-desempenho.html">Desperte o Potencial do Seu OnePlus: 10 Dicas para Turbinar Seu Desempenho</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-12-16T19:21:26.354Z">16/12/2025 16:21</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-nova-era-dos-oculos-inteligentes-escutando-melhor-em-meio-ao-barulho.html">A nova era dos óculos inteligentes: escutando melhor em meio ao barulho</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-12-16T18:34:00.117Z">16/12/2025 15:34</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

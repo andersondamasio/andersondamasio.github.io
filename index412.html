@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 412</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/um-novo-olhar-sobre-laptops-montando-sua-maquina-ideal-com-linux.html">Um novo olhar sobre laptops: montando sua máquina ideal com Linux</a><time datetime="2025-10-24T16:25:13.940Z">24/10/2025 13:25</time></li>
-<li><a href="artigos/tecnologia/transformando-dores-em-oportunidades-o-que-aprender-com-o-techcrunch-disrupt-2025.html">Transformando Dores em Oportunidades: O que Aprender com o TechCrunch Disrupt 2025</a><time datetime="2025-10-24T15:21:13.179Z">24/10/2025 12:21</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-do-audio-o-que-os-novos-fones-da-bose-podem-ensinar-sobre-arquitetura-de-software.html">A Revolução do Áudio: O Que os Novos Fones da Bose Podem Ensinar Sobre Arquitetura de Software</a><time datetime="2025-10-24T14:22:06.923Z">24/10/2025 11:22</time></li>
-<li><a href="artigos/inteligencia-artificial/a-ameaca-da-ia-generativa-ao-codigo-aberto-um-novo-desafio-para-desenvolvedores.html">A ameaça da IA generativa ao código aberto: um novo desafio para desenvolvedores</a><time datetime="2025-10-24T13:31:17.877Z">24/10/2025 10:31</time></li>
-<li><a href="artigos/desenvolvimento-de-software/a-nova-era-do-docusaurus-ia-e-internacionalizacao-na-medida-certa.html">A nova era do Docusaurus: IA e internacionalização na medida certa</a><time datetime="2025-10-24T12:41:21.080Z">24/10/2025 09:41</time></li>
-<li><a href="artigos/inteligencia-artificial/como-os-gigantes-da-tecnologia-estao-construindo-o-futuro-a-revolucao-dos-data-centers-de-ia.html">Como os Gigantes da Tecnologia Estão Construindo o Futuro: A Revolução dos Data Centers de IA</a><time datetime="2025-10-24T11:17:58.050Z">24/10/2025 08:17</time></li>
-<li><a href="artigos/cloud/ebs-volume-clones-revolucao-instantanea-em-copias-de-dados-na-nuvem.html">EBS Volume Clones: Revolução Instantânea em Cópias de Dados na Nuvem</a><time datetime="2025-10-24T10:24:01.059Z">24/10/2025 07:24</time></li>
-<li><a href="artigos/carreira/desenvolvendo-lideres-a-jornada-de-autoconhecimento-na-engenharia.html">Desenvolvendo Líderes: A Jornada de Autoconhecimento na Engenharia</a><time datetime="2025-10-24T09:23:41.977Z">24/10/2025 06:23</time></li>
-<li><a href="artigos/tecnologia/a-nova-sensacao-do-mercado-acer-swift-16-ai-o-portatil-que-surpreende.html">A nova sensação do mercado: Acer Swift 16 AI, o portátil que surpreende</a><time datetime="2025-10-24T08:26:44.758Z">24/10/2025 05:26</time></li>
-<li><a href="artigos/inteligencia-artificial/a-revolucao-da-interface-como-a-aquisicao-da-sky-pode-transformar-a-experiencia-no-mac.html">A revolução da interface: como a aquisição da Sky pode transformar a experiência no Mac</a><time datetime="2025-10-24T07:21:13.701Z">24/10/2025 04:21</time></li>
+<li><a href="artigos/tecnologia/um-novo-olhar-sobre-laptops-montando-sua-maquina-ideal-com-linux.html">Um novo olhar sobre laptops: montando sua máquina ideal com Linux</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-24T16:25:13.940Z">24/10/2025 13:25</time></div></li>
+<li><a href="artigos/tecnologia/transformando-dores-em-oportunidades-o-que-aprender-com-o-techcrunch-disrupt-2025.html">Transformando Dores em Oportunidades: O que Aprender com o TechCrunch Disrupt 2025</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-24T15:21:13.179Z">24/10/2025 12:21</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-do-audio-o-que-os-novos-fones-da-bose-podem-ensinar-sobre-arquitetura-de-software.html">A Revolução do Áudio: O Que os Novos Fones da Bose Podem Ensinar Sobre Arquitetura de Software</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-24T14:22:06.923Z">24/10/2025 11:22</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-ameaca-da-ia-generativa-ao-codigo-aberto-um-novo-desafio-para-desenvolvedores.html">A ameaça da IA generativa ao código aberto: um novo desafio para desenvolvedores</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-24T13:31:17.877Z">24/10/2025 10:31</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/a-nova-era-do-docusaurus-ia-e-internacionalizacao-na-medida-certa.html">A nova era do Docusaurus: IA e internacionalização na medida certa</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-10-24T12:41:21.080Z">24/10/2025 09:41</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-os-gigantes-da-tecnologia-estao-construindo-o-futuro-a-revolucao-dos-data-centers-de-ia.html">Como os Gigantes da Tecnologia Estão Construindo o Futuro: A Revolução dos Data Centers de IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-24T11:17:58.050Z">24/10/2025 08:17</time></div></li>
+<li><a href="artigos/cloud/ebs-volume-clones-revolucao-instantanea-em-copias-de-dados-na-nuvem.html">EBS Volume Clones: Revolução Instantânea em Cópias de Dados na Nuvem</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-10-24T10:24:01.059Z">24/10/2025 07:24</time></div></li>
+<li><a href="artigos/carreira/desenvolvendo-lideres-a-jornada-de-autoconhecimento-na-engenharia.html">Desenvolvendo Líderes: A Jornada de Autoconhecimento na Engenharia</a><div class="article-list-meta"><span>Carreira</span><time datetime="2025-10-24T09:23:41.977Z">24/10/2025 06:23</time></div></li>
+<li><a href="artigos/tecnologia/a-nova-sensacao-do-mercado-acer-swift-16-ai-o-portatil-que-surpreende.html">A nova sensação do mercado: Acer Swift 16 AI, o portátil que surpreende</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-24T08:26:44.758Z">24/10/2025 05:26</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-revolucao-da-interface-como-a-aquisicao-da-sky-pode-transformar-a-experiencia-no-mac.html">A revolução da interface: como a aquisição da Sky pode transformar a experiência no Mac</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-24T07:21:13.701Z">24/10/2025 04:21</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

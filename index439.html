@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 439</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/tecnologia/a-era-do-windows-10-esta-chegando-ao-fim-o-que-voce-precisa-saber.html">A era do Windows 10 está chegando ao fim: o que você precisa saber?</a><time datetime="2025-10-12T09:19:24.389Z">12/10/2025 06:19</time></li>
-<li><a href="artigos/tecnologia/a-solucao-barata-para-manter-seus-airpods-limpos-e-funcionando.html">A solução barata para manter seus AirPods limpos e funcionando</a><time datetime="2025-10-12T08:24:34.197Z">12/10/2025 05:24</time></li>
-<li><a href="artigos/cloud/o-futuro-dos-containers-como-o-ecs-managed-instances-pode-transformar-sua-arquitetura.html">O Futuro dos Containers: Como o ECS Managed Instances Pode Transformar Sua Arquitetura</a><time datetime="2025-10-12T07:16:55.945Z">12/10/2025 04:16</time></li>
-<li><a href="artigos/tecnologia/a-batalha-das-vendas-costco-vs-amazon-prime-e-como-a-tecnologia-pode-ajudar.html">A batalha das vendas: Costco vs Amazon Prime e como a tecnologia pode ajudar</a><time datetime="2025-10-12T06:26:47.262Z">12/10/2025 03:26</time></li>
-<li><a href="artigos/tecnologia/a-batalha-dos-precos-como-o-walmart-esta-se-destacando-no-cenario-de-vendas-de-tecnologia.html">A batalha dos preços: Como o Walmart está se destacando no cenário de vendas de tecnologia</a><time datetime="2025-10-12T05:23:38.622Z">12/10/2025 02:23</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-da-reparabilidade-o-pixel-watch-4-e-suas-licoes-para-o-futuro.html">A revolução da reparabilidade: o Pixel Watch 4 e suas lições para o futuro</a><time datetime="2025-10-12T04:24:04.034Z">12/10/2025 01:24</time></li>
-<li><a href="artigos/desenvolvimento-de-software/a-revolucao-dos-legendas-como-isso-pode-impactar-o-desenvolvimento-de-software.html">A revolução dos legendas: como isso pode impactar o desenvolvimento de software</a><time datetime="2025-10-12T03:02:42.515Z">12/10/2025 00:02</time></li>
-<li><a href="artigos/inteligencia-artificial/como-usar-as-novidades-do-perplexity-pro-para-turbinar-sua-experiencia-com-ia.html">Como Usar as Novidades do Perplexity Pro para Turbinar sua Experiência com IA</a><time datetime="2025-10-12T01:25:25.818Z">11/10/2025 22:25</time></li>
-<li><a href="artigos/seguranca/a-armadilha-digital-do-pirata-da-folha-de-pagamento.html">A armadilha digital do “Pirata da Folha de Pagamento”</a><time datetime="2025-10-11T23:18:49.036Z">11/10/2025 20:18</time></li>
-<li><a href="artigos/tecnologia/a-guerra-do-comercio-e-a-importancia-das-terras-raras-na-tecnologia.html">A guerra do comércio e a importância das terras raras na tecnologia</a><time datetime="2025-10-11T22:17:04.990Z">11/10/2025 19:17</time></li>
+<li><a href="artigos/tecnologia/a-era-do-windows-10-esta-chegando-ao-fim-o-que-voce-precisa-saber.html">A era do Windows 10 está chegando ao fim: o que você precisa saber?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-12T09:19:24.389Z">12/10/2025 06:19</time></div></li>
+<li><a href="artigos/tecnologia/a-solucao-barata-para-manter-seus-airpods-limpos-e-funcionando.html">A solução barata para manter seus AirPods limpos e funcionando</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-12T08:24:34.197Z">12/10/2025 05:24</time></div></li>
+<li><a href="artigos/cloud/o-futuro-dos-containers-como-o-ecs-managed-instances-pode-transformar-sua-arquitetura.html">O Futuro dos Containers: Como o ECS Managed Instances Pode Transformar Sua Arquitetura</a><div class="article-list-meta"><span>Cloud</span><time datetime="2025-10-12T07:16:55.945Z">12/10/2025 04:16</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-das-vendas-costco-vs-amazon-prime-e-como-a-tecnologia-pode-ajudar.html">A batalha das vendas: Costco vs Amazon Prime e como a tecnologia pode ajudar</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-12T06:26:47.262Z">12/10/2025 03:26</time></div></li>
+<li><a href="artigos/tecnologia/a-batalha-dos-precos-como-o-walmart-esta-se-destacando-no-cenario-de-vendas-de-tecnologia.html">A batalha dos preços: Como o Walmart está se destacando no cenário de vendas de tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-12T05:23:38.622Z">12/10/2025 02:23</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-da-reparabilidade-o-pixel-watch-4-e-suas-licoes-para-o-futuro.html">A revolução da reparabilidade: o Pixel Watch 4 e suas lições para o futuro</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-12T04:24:04.034Z">12/10/2025 01:24</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/a-revolucao-dos-legendas-como-isso-pode-impactar-o-desenvolvimento-de-software.html">A revolução dos legendas: como isso pode impactar o desenvolvimento de software</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2025-10-12T03:02:42.515Z">12/10/2025 00:02</time></div></li>
+<li><a href="artigos/inteligencia-artificial/como-usar-as-novidades-do-perplexity-pro-para-turbinar-sua-experiencia-com-ia.html">Como Usar as Novidades do Perplexity Pro para Turbinar sua Experiência com IA</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2025-10-12T01:25:25.818Z">11/10/2025 22:25</time></div></li>
+<li><a href="artigos/seguranca/a-armadilha-digital-do-pirata-da-folha-de-pagamento.html">A armadilha digital do “Pirata da Folha de Pagamento”</a><div class="article-list-meta"><span>Segurança</span><time datetime="2025-10-11T23:18:49.036Z">11/10/2025 20:18</time></div></li>
+<li><a href="artigos/tecnologia/a-guerra-do-comercio-e-a-importancia-das-terras-raras-na-tecnologia.html">A guerra do comércio e a importância das terras raras na tecnologia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2025-10-11T22:17:04.990Z">11/10/2025 19:17</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

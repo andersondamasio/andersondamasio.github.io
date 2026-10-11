@@ -100,6 +100,10 @@ test("rebuild liga home e assuntos aos guias, preserva corpo e datas e e estavel
   reconstruirPaginasSeo();
   assert.deepEqual(arquivos.map(p => fs.readFileSync(p, "utf8")), antes);
   const guias = cheerio.load(fs.readFileSync("guias.html", "utf8"));
+  const home = cheerio.load(fs.readFileSync('index.html', 'utf8'));
+  assert.equal(home('.article-list-summary').text(), selecao.grupos[0].leituras[0].resumo);
+  assert.equal(home('.article-list-meta > span').text(), artigo.categoria);
+  assert.equal(home('sem').length, 0);
   assert.equal(guias('link[rel=canonical]').attr('href'), 'https://www.andersondamasio.com.br/guias.html');
   assert.doesNotMatch(guias('meta[name=robots]').attr('content'), /noindex/);
   assert.equal(guias('h1').length, 1);

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 144</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/devops/a-nova-era-do-argo-cd-melhorias-que-fazem-a-diferenca-no-dia-a-dia-da-operacao.html">A nova era do Argo CD: melhorias que fazem a diferença no dia a dia da operação</a><time datetime="2026-03-01T04:57:29.222Z">01/03/2026 01:57</time></li>
-<li><a href="artigos/inteligencia-artificial/a-armadilha-que-a-anthropic-construiu-para-si-mesma.html">A armadilha que a Anthropic construiu para si mesma</a><time datetime="2026-03-01T02:17:20.402Z">28/02/2026 23:17</time></li>
-<li><a href="artigos/tecnologia/o-dilema-do-upgrade-galaxy-s26-ultra-vale-a-pena.html">O dilema do upgrade: Galaxy S26 Ultra vale a pena?</a><time datetime="2026-02-28T23:25:28.701Z">28/02/2026 20:25</time></li>
-<li><a href="artigos/tecnologia/samsung-galaxy-s26-escolha-certa-em-um-mar-de-opcoes.html">Samsung Galaxy S26: Escolha Certa em um Mar de Opções</a><time datetime="2026-02-28T22:26:36.703Z">28/02/2026 19:26</time></li>
-<li><a href="artigos/inteligencia-artificial/a-ascensao-dos-chatbots-uma-licao-de-arquitetura-de-software-e-negociacoes.html">A ascensão dos chatbots: uma lição de arquitetura de software e negociações</a><time datetime="2026-02-28T21:25:04.668Z">28/02/2026 18:25</time></li>
-<li><a href="artigos/tecnologia/mini-pcs-a-revolucao-compacta-que-pode-transformar-seu-setup.html">Mini PCs: A Revolução Compacta que Pode Transformar seu Setup</a><time datetime="2026-02-28T20:30:28.869Z">28/02/2026 17:30</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-na-sua-mesa-como-uma-estacao-de-carregamento-pode-mudar-seu-dia-a-dia.html">A revolução na sua mesa: como uma estação de carregamento pode mudar seu dia a dia</a><time datetime="2026-02-28T19:24:27.671Z">28/02/2026 16:24</time></li>
-<li><a href="artigos/tecnologia/a-revolucao-das-inovacoes-moveis-o-que-esperar-do-mwc-2026.html">A revolução das inovações móveis: o que esperar do MWC 2026?</a><time datetime="2026-02-28T18:37:13.752Z">28/02/2026 15:37</time></li>
-<li><a href="artigos/robotica/a-revolucao-dos-robos-como-a-china-esta-dominando-o-futuro-da-robotica-humanoide.html">A revolução dos robôs: como a China está dominando o futuro da robótica humanoide</a><time datetime="2026-02-28T17:24:14.474Z">28/02/2026 14:24</time></li>
-<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-e-seus-limites-um-debate-necessario.html">A inteligência artificial e seus limites: um debate necessário</a><time datetime="2026-02-28T16:30:45.110Z">28/02/2026 13:30</time></li>
+<li><a href="artigos/devops/a-nova-era-do-argo-cd-melhorias-que-fazem-a-diferenca-no-dia-a-dia-da-operacao.html">A nova era do Argo CD: melhorias que fazem a diferença no dia a dia da operação</a><div class="article-list-meta"><span>DevOps</span><time datetime="2026-03-01T04:57:29.222Z">01/03/2026 01:57</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-armadilha-que-a-anthropic-construiu-para-si-mesma.html">A armadilha que a Anthropic construiu para si mesma</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-03-01T02:17:20.402Z">28/02/2026 23:17</time></div></li>
+<li><a href="artigos/tecnologia/o-dilema-do-upgrade-galaxy-s26-ultra-vale-a-pena.html">O dilema do upgrade: Galaxy S26 Ultra vale a pena?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-28T23:25:28.701Z">28/02/2026 20:25</time></div></li>
+<li><a href="artigos/tecnologia/samsung-galaxy-s26-escolha-certa-em-um-mar-de-opcoes.html">Samsung Galaxy S26: Escolha Certa em um Mar de Opções</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-28T22:26:36.703Z">28/02/2026 19:26</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-ascensao-dos-chatbots-uma-licao-de-arquitetura-de-software-e-negociacoes.html">A ascensão dos chatbots: uma lição de arquitetura de software e negociações</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-28T21:25:04.668Z">28/02/2026 18:25</time></div></li>
+<li><a href="artigos/tecnologia/mini-pcs-a-revolucao-compacta-que-pode-transformar-seu-setup.html">Mini PCs: A Revolução Compacta que Pode Transformar seu Setup</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-28T20:30:28.869Z">28/02/2026 17:30</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-na-sua-mesa-como-uma-estacao-de-carregamento-pode-mudar-seu-dia-a-dia.html">A revolução na sua mesa: como uma estação de carregamento pode mudar seu dia a dia</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-28T19:24:27.671Z">28/02/2026 16:24</time></div></li>
+<li><a href="artigos/tecnologia/a-revolucao-das-inovacoes-moveis-o-que-esperar-do-mwc-2026.html">A revolução das inovações móveis: o que esperar do MWC 2026?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-02-28T18:37:13.752Z">28/02/2026 15:37</time></div></li>
+<li><a href="artigos/robotica/a-revolucao-dos-robos-como-a-china-esta-dominando-o-futuro-da-robotica-humanoide.html">A revolução dos robôs: como a China está dominando o futuro da robótica humanoide</a><div class="article-list-meta"><span>Robótica</span><time datetime="2026-02-28T17:24:14.474Z">28/02/2026 14:24</time></div></li>
+<li><a href="artigos/inteligencia-artificial/a-inteligencia-artificial-e-seus-limites-um-debate-necessario.html">A inteligência artificial e seus limites: um debate necessário</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-02-28T16:30:45.110Z">28/02/2026 13:30</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>

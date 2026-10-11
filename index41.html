@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"><meta name="color-scheme" content="light dark"><script src="/scripts/theme-toggle.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Padrão -->
@@ -207,24 +207,15 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 </style>
 
-</head>
+<link rel="stylesheet" href="/scripts/site-theme.css"><link rel="stylesheet" href="/scripts/site-presentation.css"><script defer src="/scripts/site-interactions.js"></script></head>
 <body>
-<button id="theme-toggle" aria-label="Alternar tema"
-  style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
-         background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
-         padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; box-shadow: var(--box-shadow);">
-  🌙 Escuro
-</button>
 
 
-<header style="background: #0a66c2; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-  <nav style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-    <a href="./index.html" style="color: white; font-weight: 600; text-decoration: none;">Início</a>
-    <a href="./artigos/index.html" style="color: white; font-weight: 600; text-decoration: none;">Artigos</a>
-    <a href="./sobre.html" style="color: white; font-weight: 600; text-decoration: none;">Sobre</a>
-    <a href="./contato.html" style="color: white; font-weight: 600; text-decoration: none;">Contato</a>
-  </nav>
-</header>
+
+<header class="site-header"><a class="site-brand" href="/index.html" aria-label="Anderson Damasio, início"><span class="brand-mark" aria-hidden="true"></span><span>Anderson Damasio</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+<nav id="site-navigation" aria-label="Navegação principal"><a href="/index.html">Início</a><a href="/artigos/index.html" aria-current="true">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a></nav>
+<label class="theme-control" for="theme-select"><span>Tema</span><select id="theme-select" name="theme"><option value="system">Sistema</option><option value="light">Claro</option><option value="dark">Escuro</option></select></label></header>
 
 <main>
 <h1>Artigos de Anderson Damasio: p&aacute;gina 41</h1>
@@ -232,16 +223,16 @@ body.dark-theme .profile-role { color: #79d7c5; }
 <h2 id="articles-title">Arquivo de artigos</h2>
 <p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
 <ul class="article-index">
-<li><a href="artigos/inteligencia-artificial/a-era-das-esposas-tristes-quando-a-ai-toma-conta-do-lar.html">A Era das Esposas Tristes: Quando a AI Toma Conta do Lar</a><time datetime="2026-05-13T10:33:16.666Z">13/05/2026 07:33</time></li>
-<li><a href="artigos/observabilidade/a-nova-era-do-profiling-continuo-como-pyroscope-2-0-transforma-a-observabilidade.html">A nova era do profiling contínuo: como Pyroscope 2.0 transforma a observabilidade</a><time datetime="2026-05-13T08:08:41.043Z">13/05/2026 05:08</time></li>
-<li><a href="artigos/tecnologia/fedora-kinoite-e-silverblue-qual-a-melhor-imutabilidade-para-o-seu-desktop.html">Fedora Kinoite e Silverblue: Qual a Melhor Imutabilidade para o Seu Desktop?</a><time datetime="2026-05-13T04:52:43.156Z">13/05/2026 01:52</time></li>
-<li><a href="artigos/inteligencia-artificial/desafios-e-controversias-a-saga-da-inteligencia-artificial-sob-a-otica-da-ambicao.html">Desafios e Controvérsias: A Saga da Inteligência Artificial sob a Ótica da Ambição</a><time datetime="2026-05-13T00:16:49.338Z">12/05/2026 21:16</time></li>
-<li><a href="artigos/tecnologia/como-um-sistema-de-wi-fi-pode-transformar-sua-casa-em-um-verdadeiro-hub-de-conectividade.html">Como um sistema de Wi-Fi pode transformar sua casa em um verdadeiro hub de conectividade</a><time datetime="2026-05-12T21:25:25.714Z">12/05/2026 18:25</time></li>
-<li><a href="artigos/tecnologia/encontrando-seu-controle-remoto-da-roku-dicas-praticas-e-tecnologicas.html">Encontrando seu controle remoto da Roku: dicas práticas e tecnológicas</a><time datetime="2026-05-12T19:57:45.581Z">12/05/2026 16:57</time></li>
-<li><a href="artigos/tecnologia/novas-fronteiras-do-android-como-a-arquitetura-de-software-potencializa-inovacoes.html">Novas Fronteiras do Android: Como a Arquitetura de Software Potencializa Inovações</a><time datetime="2026-05-12T17:16:14.098Z">12/05/2026 14:16</time></li>
-<li><a href="artigos/seguranca/instructure-e-o-dilema-da-seguranca-o-que-aprendemos-com-o-caso-canvas.html">Instructure e o dilema da segurança: o que aprendemos com o caso Canvas</a><time datetime="2026-05-12T14:45:06.862Z">12/05/2026 11:45</time></li>
-<li><a href="artigos/seguranca/como-a-nova-integracao-do-github-pode-revolucionar-a-seguranca-em-desenvolvimento.html">Como a Nova Integração do GitHub Pode Revolucionar a Segurança em Desenvolvimento</a><time datetime="2026-05-12T12:01:05.681Z">12/05/2026 09:01</time></li>
-<li><a href="artigos/desenvolvimento-de-software/a-batalha-das-distros-linux-mint-ou-elementary-os.html">A batalha das distros: Linux Mint ou Elementary OS?</a><time datetime="2026-05-12T09:43:59.379Z">12/05/2026 06:43</time></li>
+<li><a href="artigos/inteligencia-artificial/a-era-das-esposas-tristes-quando-a-ai-toma-conta-do-lar.html">A Era das Esposas Tristes: Quando a AI Toma Conta do Lar</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-13T10:33:16.666Z">13/05/2026 07:33</time></div></li>
+<li><a href="artigos/observabilidade/a-nova-era-do-profiling-continuo-como-pyroscope-2-0-transforma-a-observabilidade.html">A nova era do profiling contínuo: como Pyroscope 2.0 transforma a observabilidade</a><div class="article-list-meta"><span>Observabilidade</span><time datetime="2026-05-13T08:08:41.043Z">13/05/2026 05:08</time></div></li>
+<li><a href="artigos/tecnologia/fedora-kinoite-e-silverblue-qual-a-melhor-imutabilidade-para-o-seu-desktop.html">Fedora Kinoite e Silverblue: Qual a Melhor Imutabilidade para o Seu Desktop?</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-13T04:52:43.156Z">13/05/2026 01:52</time></div></li>
+<li><a href="artigos/inteligencia-artificial/desafios-e-controversias-a-saga-da-inteligencia-artificial-sob-a-otica-da-ambicao.html">Desafios e Controvérsias: A Saga da Inteligência Artificial sob a Ótica da Ambição</a><div class="article-list-meta"><span>Inteligência Artificial</span><time datetime="2026-05-13T00:16:49.338Z">12/05/2026 21:16</time></div></li>
+<li><a href="artigos/tecnologia/como-um-sistema-de-wi-fi-pode-transformar-sua-casa-em-um-verdadeiro-hub-de-conectividade.html">Como um sistema de Wi-Fi pode transformar sua casa em um verdadeiro hub de conectividade</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-12T21:25:25.714Z">12/05/2026 18:25</time></div></li>
+<li><a href="artigos/tecnologia/encontrando-seu-controle-remoto-da-roku-dicas-praticas-e-tecnologicas.html">Encontrando seu controle remoto da Roku: dicas práticas e tecnológicas</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-12T19:57:45.581Z">12/05/2026 16:57</time></div></li>
+<li><a href="artigos/tecnologia/novas-fronteiras-do-android-como-a-arquitetura-de-software-potencializa-inovacoes.html">Novas Fronteiras do Android: Como a Arquitetura de Software Potencializa Inovações</a><div class="article-list-meta"><span>Tecnologia</span><time datetime="2026-05-12T17:16:14.098Z">12/05/2026 14:16</time></div></li>
+<li><a href="artigos/seguranca/instructure-e-o-dilema-da-seguranca-o-que-aprendemos-com-o-caso-canvas.html">Instructure e o dilema da segurança: o que aprendemos com o caso Canvas</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-05-12T14:45:06.862Z">12/05/2026 11:45</time></div></li>
+<li><a href="artigos/seguranca/como-a-nova-integracao-do-github-pode-revolucionar-a-seguranca-em-desenvolvimento.html">Como a Nova Integração do GitHub Pode Revolucionar a Segurança em Desenvolvimento</a><div class="article-list-meta"><span>Segurança</span><time datetime="2026-05-12T12:01:05.681Z">12/05/2026 09:01</time></div></li>
+<li><a href="artigos/desenvolvimento-de-software/a-batalha-das-distros-linux-mint-ou-elementary-os.html">A batalha das distros: Linux Mint ou Elementary OS?</a><div class="article-list-meta"><span>Desenvolvimento de Software</span><time datetime="2026-05-12T09:43:59.379Z">12/05/2026 06:43</time></div></li>
 </ul>
 
 <nav class="scroll-container" aria-label="Paginação">
@@ -252,12 +243,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 </main>
 
 <footer>
-  <nav style="margin-bottom: 1rem;">
-    <a href="sobre.html">Sobre</a> |
-    <a href="contato.html">Contato</a> |
-    <a href="termos.html">Termos de Uso</a> |
-    <a href="politica.html">Política de Privacidade</a>
-  </nav>
+  <nav class="footer-navigation" aria-label="Links do rodapé"><a href="/index.html">Início</a><a href="/artigos/index.html">Artigos</a><a href="/guias.html">Guias</a><a href="/sobre.html">Sobre</a><a href="/contato.html">Contato</a><a href="/termos.html">Termos de Uso</a><a href="/politica.html">Política de Privacidade</a></nav>
   &copy; 2025 Anderson Damasio – Todos os direitos reservados
 </footer>
 
@@ -295,7 +281,7 @@ body.dark-theme .profile-role { color: #79d7c5; }
 
 <script src="/scripts/cookies-banner.js"></script>
 
-<script src="/scripts/theme-toggle.js"></script>
+
 
 
 </body>
