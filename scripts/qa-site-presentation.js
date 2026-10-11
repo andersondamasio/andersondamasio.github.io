@@ -34,6 +34,26 @@ async function main() {
         const response = await p.goto(`${origin}/${file}`, { waitUntil: 'load' });
         assert.equal(response.status(), 200);
         await p.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+        if (file === 'index.html') {
+          const home = await p.evaluate(() => {
+            const cards = [...document.querySelectorAll('.reading-card')];
+            return {
+              intro: document.querySelector('.profile-description').textContent,
+              profileLinks: [...document.querySelectorAll('.profile-links a')].map(a => a.textContent),
+              cards: cards.length, recent: document.querySelectorAll('.article-index > li').length,
+              columns: new Set(cards.map(el => Math.round(el.getBoundingClientRect().left))).size,
+              inside: cards.every(el => [...el.children].every(child => child.getBoundingClientRect().right <= el.getBoundingClientRect().right && child.getBoundingClientRect().bottom <= el.getBoundingClientRect().bottom)),
+              nameSize: parseFloat(getComputedStyle(document.querySelector('h1')).fontSize),
+              commercialContact: document.querySelectorAll('main a[href="/contato.html"]').length
+            };
+          });
+          assert.match(home.intro, /Atuo no desenvolvimento de sistemas h\u00e1 mais de \d+ anos\./);
+          assert.deepEqual(home.profileLinks, ['Sobre mim', 'LinkedIn']);
+          assert.equal(home.cards, 3); assert.equal(home.recent, 3);
+          assert.equal(home.columns, width <= 760 ? 1 : 3);
+          assert.ok(home.inside && home.nameSize <= 32);
+          assert.equal(home.commercialContact, 0);
+        }
         const brandLoaded = await p.$eval('.brand-mark', el => new Promise(resolve => {
           const url = getComputedStyle(el).backgroundImage.match(/^url\(["']?(.*?)["']?\)$/)?.[1];
           if (!url) return resolve(false);
@@ -113,6 +133,16 @@ async function main() {
     await p.goto(origin, { waitUntil: 'load' });
     assert.equal(await p.$eval('#cookie-banner', e => getComputedStyle(e).display), 'none');
     interactions.push('contact-required', 'cookie-dismiss', 'cookie-persistence');
+    const readings = await p.$$eval('.reading-link', links => links.map(a => a.getAttribute('href')));
+    for (const href of readings) {
+      await p.goto(origin, { waitUntil: 'load' });
+      const navigation = p.waitForNavigation({ waitUntil: 'load' });
+      await p.click(`.reading-link[href="${href}"]`); await navigation;
+      assert.equal(new URL(p.url()).pathname, href);
+      assert.equal(await p.$eval('link[rel="canonical"]', el => new URL(el.href).pathname), href);
+      assert.ok(await p.$('.article-body'));
+    }
+    interactions.push('home-selected-readings');
     await ctx.close();
 
     for (const scenario of ['no-javascript', 'blocked-interactions']) {
@@ -121,6 +151,10 @@ async function main() {
       assert.ok(await p.$eval('#site-navigation', e => e.getBoundingClientRect().height > 0));
       assert.equal(await p.$('.article-toc'), null);
       if (scenario === 'no-javascript') assert.equal(await p.$eval('#cookie-banner', e => getComputedStyle(e).position), 'static');
+      assert.equal(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+      await p.goto(origin, { waitUntil: 'load' });
+      assert.equal(await p.$$eval('.reading-link', links => links.length), 3);
+      assert.match(await p.$eval('.profile-description', el => el.textContent), /h\u00e1 mais de \d+ anos/);
       assert.equal(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
       interactions.push(scenario); await ctx.close();
     }

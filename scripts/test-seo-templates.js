@@ -305,10 +305,17 @@ test("home e pagina dois possuem finalidade e H1 diferentes, sem repetir biograf
   const home = cheerio.load(fs.readFileSync("index.html", "utf8"));
   const pagina = cheerio.load(fs.readFileSync("index2.html", "utf8"));
   assert.equal(home("h1").text(), "Anderson Damasio");
-  assert.match(home("main").text(), /desde 2005/);
+  assert.match(home('.profile-description').text(), /Atuo no desenvolvimento de sistemas h\u00e1 mais de \d+ anos\./);
+  assert.equal(home('body.home-site > main.home-page').length, 1);
+  assert.equal(pagina('.home-site, .home-page').length, 0);
+  assert.deepEqual(home('.profile-links a').map((_, e) => home(e).text()).get(), ['Sobre mim', 'LinkedIn']);
+  assert.equal(home('main a[href="/contato.html"]').length, 0);
+  assert.equal(home('main a[href="/artigos/index.html"]').length, 1);
+  assert.equal(home('main a[href="/arquivo/index.html"]').length, 1);
+  assert.equal(home('main .scroll-container').length, 0);
   assert.match(pagina("h1").text(), /página 2/);
   assert.doesNotMatch(pagina("main").text(), /desde 2005|Atuo com desenvolvimento/);
-  assert.equal(home(".article-index li").length, 10);
+  assert.equal(home(".article-index li").length, 3);
   assert.equal(pagina(".article-index li").length, 1);
   for (const $ of [home, pagina]) {
     assert.equal($('header.site-header').length, 1);

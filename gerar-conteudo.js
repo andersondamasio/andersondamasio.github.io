@@ -2702,9 +2702,10 @@ function gerarIndicesPaginados(titulos, leituras = null) {
 
   for (let i = 0; i < paginas; i++) {
     const artigosPagina = ordenados.slice(i * artigosPorPagina, (i + 1) * artigosPorPagina);
-    const links = artigosPagina.map(t => {
+    const artigosExibidos = i === 0 ? artigosPagina.slice(0, 3) : artigosPagina;
+    const links = artigosExibidos.map(t => {
       const data = formatDateTime(new Date(t.data));
-      const resumo = resumosSelecionados.get(t.url);
+      const resumo = i === 0 ? null : resumosSelecionados.get(t.url);
       return `<li><a href="${t.url}">${escapeHTML(t.titulo)}</a><div class="article-list-meta"><span>${escapeHTML(t.categoria || '')}</span><time datetime="${escapeAttribute(t.data)}">${data}</time></div>${resumo ? `<p class="article-list-summary">${escapeHTML(resumo)}</p>` : ''}</li>`;
     }).join("\n");
 
@@ -2858,7 +2859,7 @@ ${estilosPerfil}${i === 0 && leituras ? '\n' + estilosLeituras : ''}
 </style>
 
 </head>
-<body>
+<body${i === 0 ? ' class="home-site"' : ''}>
 <button id="theme-toggle" aria-label="Alternar tema"
   style="position: fixed; top: 1.5rem; right: 1.5rem; z-index: 2000;
          background: var(--main-bg); border: 1px solid var(--link); color: var(--link);
@@ -2868,15 +2869,15 @@ ${estilosPerfil}${i === 0 && leituras ? '\n' + estilosLeituras : ''}
 
 ${gerarHeaderNavegacao(".")}
 
-<main>
+<main${i === 0 ? ' class="home-page"' : ''}>
 ${i === 0 ? gerarApresentacaoPerfil() + (leituras ? '\n' + gerarResumoLeituras(leituras) : '') : `<h1>Artigos de Anderson Damasio: p&aacute;gina ${i + 1}</h1>`}
 <section aria-labelledby="articles-title">
-<h2 id="articles-title">${i === 0 ? "Artigos recentes" : "Arquivo de artigos"}</h2>
-<p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>
+${i === 0 ? '<div class="home-section-heading">\n' : ''}<h2 id="articles-title">${i === 0 ? "Artigos recentes" : "Arquivo de artigos"}</h2>
+${i === 0 ? '<a href="/artigos/index.html">Ver todos os artigos <span aria-hidden="true">&rarr;</span></a></div>' : '<p><a href="/artigos/index.html">Todos os assuntos</a> &middot; <a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>'}
 <ul class="article-index">
 ${links}
 </ul>
-${paginacao}
+${i === 0 ? '<p class="home-archive-link"><a href="/arquivo/index.html">Arquivo por m&ecirc;s</a></p>' : paginacao}
 </section>
 </main>
 

@@ -167,9 +167,11 @@ async function main() {
       if (scenario === 'blocked-storage') await pg.evaluateOnNewDocument(() => Object.defineProperty(window, 'localStorage', { get() { throw new Error('Blocked'); } }));
       if (scenario === 'blocked-script') { await pg.setRequestInterception(false); await pg.setRequestInterception(true); pg.removeAllListeners('request'); pg.on('request', req => req.url().startsWith(origin) && !req.url().includes('theme-toggle.js') ? req.continue() : req.abort()); }
       const errors = []; pg.on('pageerror', e => errors.push(e.message));
+      await pg.goto(`${origin}/sobre.html`, { waitUntil: 'load' });
+      assert.equal(await pg.$eval('body', el => getComputedStyle(el).backgroundColor), 'rgb(23, 25, 27)', `${scenario}: sobre`);
       await pg.goto(origin, { waitUntil: 'load' });
       const bg = await pg.$eval('body', el => getComputedStyle(el).backgroundColor);
-      assert.equal(bg, 'rgb(23, 25, 27)', scenario);
+      assert.equal(bg, 'rgb(33, 36, 39)', `${scenario}: home`);
       if (scenario === 'blocked-storage') {
         await pg.select('#theme-select', 'light');
         assert.equal(await pg.$eval('html', el => el.dataset.theme), 'light');
