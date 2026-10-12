@@ -51,6 +51,8 @@ test("selecao valida preserva escopo e usa titulo atual do cadastro com escape",
   assert.equal(home(`a[href="/${artigo.url}"]`).length, 1);
   assert.equal(home('.reading-card h3').text(), artigo.titulo);
   assert.equal(home('a[href="/guias.html"]').length, 1);
+  assert.equal(home('h2 a').length, 0);
+  assert.match(home('.home-section-heading > a').text(), /Ver todos os guias/);
   assert.equal(home(".article-body").length, 0);
   assert.equal(gerarResumoLeituras(null), "");
 }));

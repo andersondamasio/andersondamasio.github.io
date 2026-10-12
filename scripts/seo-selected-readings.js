@@ -68,7 +68,7 @@ function carregarLeituras(artigos, root = process.cwd()) {
 function gerarResumoLeituras(selecao) {
   if (!selecao) return "";
   return `<section class="selected-readings" aria-labelledby="selected-readings-title">
-<h2 id="selected-readings-title"><a href="/${urlLeituras}">Leituras selecionadas</a></h2>
+<div class="home-section-heading"><h2 id="selected-readings-title">Leituras selecionadas</h2><a href="/${urlLeituras}">Ver todos os guias <span aria-hidden="true">&rarr;</span></a></div>
 <ul>${selecao.destaquesInicio.map(item => `<li class="reading-card"><p class="reading-category">${escapar(item.categoria)}</p><h3>${escapar(item.titulo)}</h3><p class="reading-description">${escapar(item.resumo)}</p><a class="reading-link" href="/${item.url}" aria-label="Ler guia: ${escapar(item.titulo)}">Ler guia <span aria-hidden="true">&rarr;</span></a></li>`).join("\n")}</ul>
 </section>`;
 }

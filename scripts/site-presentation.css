@@ -27,13 +27,14 @@ html .site-brand { gap: .6rem; justify-self: start; font-size: .9375rem; text-de
 html .site-brand .brand-mark { display: block; width: 28px; height: 28px; flex-shrink: 0; border-radius: 2px; background: url('/favicon.ico') center / contain no-repeat; }
 html .site-brand > span:not(.brand-mark) { max-width: 10rem; line-height: 1.2; text-align: left; }
 html #site-navigation { display: flex; justify-content: center; flex-wrap: wrap; gap: .25rem 1rem !important; }
-html #site-navigation a { font-size: .9375rem; border-bottom: 2px solid transparent; box-sizing: border-box; text-decoration: none; }
+html #site-navigation a { font-size: .9375rem; font-weight: 500; line-height: 1.4; border-bottom: 2px solid transparent; box-sizing: border-box; text-decoration: none; }
 html #site-navigation a:hover { text-decoration: underline; }
 html #site-navigation a[aria-current] { border-bottom-color: currentColor; }
 html .site-header .theme-control { justify-self: end; }
 html .site-header .nav-toggle { display: none; }
 html .footer-navigation { display: flex; flex-wrap: wrap; justify-content: center; gap: .25rem 1.25rem; margin-bottom: 1rem; }
-html .footer-navigation a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+html .footer-navigation a { display: inline-flex; align-items: center; min-height: 2.75rem; font-weight: 400; line-height: 1.4; }
+html .reading-topics a { display: inline-flex; align-items: center; min-height: 2.75rem; font-weight: 500; }
 html footer { padding: 1.5rem 1rem; margin-top: 1rem !important; font-size: .875rem; }
 html .scroll-container { flex-wrap: wrap; align-items: center; gap: .5rem; padding: 0; overflow: visible; }
 html .scroll-container a { display: inline-flex; align-items: center; min-height: 2.75rem; border-radius: 4px; font-size: .875rem; }
@@ -60,7 +61,6 @@ html #cookie-banner:not(.cookies-ready) button { display: none; }
 html body.home-site { background: var(--main-bg); --header-bg: var(--main-bg); --header-color: var(--text); }
 html body.home-site > header.site-header { padding-inline: max(1.5rem, calc((100% - 912px) / 2)) !important; grid-template-columns: minmax(44px, 1fr) auto auto; }
 html .home-site .site-brand .brand-mark { width: 32px; height: 32px; }
-html .home-site #site-navigation a { font-weight: 500; }
 html .home-site #site-navigation a[aria-current] { color: var(--link) !important; }
 html body > main.home-page { padding-top: 3rem; padding-bottom: 1.5rem; }
 html .home-page > section { padding-block: 2rem; }
@@ -71,7 +71,6 @@ html .home-page .profile-description { color: var(--meta); margin: 0; font-size:
 html .home-page .profile-links { gap: 1.5rem; margin-top: 1rem; }
 html .home-page .profile-links a { min-height: 2.75rem; display: inline-flex; align-items: center; font-weight: 500; text-decoration: underline; text-underline-offset: .2em; }
 html .home-page h2 { font-size: 1.25rem; margin-bottom: 1.25rem; }
-html .home-page .selected-readings h2 a { color: var(--text); }
 html .home-page .selected-readings > ul { gap: 1.25rem; }
 html .home-page .reading-card { display: flex; flex-direction: column; min-width: 0; border: 1px solid var(--border); border-radius: 4px; padding: 1.25rem; }
 html .home-page .reading-category { color: var(--meta); font-size: .75rem; font-weight: 600; text-transform: uppercase; margin-bottom: .65rem; }

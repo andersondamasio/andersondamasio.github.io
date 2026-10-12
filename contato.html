@@ -142,18 +142,19 @@ button:hover {
   <h1>Contato</h1>
   <p>Entre em contato comigo por e-mail:</p>
   <p><a href="mailto:anderson@andersondamasio.com.br">anderson@andersondamasio.com.br</a></p>
-  <p>Ou conecte-se comigo pelo <a href="https://www.linkedin.com/in/andersondamasio/" target="_blank">LinkedIn</a>.</p>
+  <p>Ou conecte-se comigo pelo <a href="https://www.linkedin.com/in/andersondamasio/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
 
   <h2>Envie uma mensagem</h2>
-  <form id="contact-form" action="https://formsubmit.co/anderson@andersondamasio.com.br" method="POST">
+  <p id="contact-privacy">Nome, e-mail e mensagem são encaminhados pelo FormSubmit. Consulte a <a href="/politica.html">Política de Privacidade</a>.</p>
+  <form id="contact-form" action="https://formsubmit.co/anderson@andersondamasio.com.br" method="POST" aria-describedby="contact-privacy">
     <input type="hidden" name="_next" value="https://www.andersondamasio.com.br/obrigado.html">
     <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
     <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required>
+    <input type="text" id="nome" name="nome" autocomplete="name" required>
 
     <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" autocomplete="email" required>
 
     <label for="mensagem">Mensagem:</label>
     <textarea id="mensagem" name="mensagem" rows="5" minlength="10" required></textarea>

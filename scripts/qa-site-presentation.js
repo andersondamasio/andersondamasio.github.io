@@ -2,13 +2,20 @@ const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const puppeteer = require('puppeteer');
+const cheerio = require('cheerio');
+const { secaoAtual } = require('./site-presentation');
 
 async function main() {
   const output = '.editorial/qa-presentation';
   fs.mkdirSync(output, { recursive: true });
   const origin = process.env.SITE_PREVIEW_URL || JSON.parse(fs.readFileSync('.editorial/qa-theme/preview.json', 'utf8')).url;
   const article = 'artigos/inteligencia-artificial/engenharia-de-contexto-para-memoria-custo-e-precisao-em-aplicacoes-de-ia-generativa.html';
-  const pages = ['index.html', 'sobre.html', 'contato.html', 'artigos/index.html', 'guias.html', article, 'artigos/explorando-os-segredos-do-reservoir-sampling.html'];
+  const selection = JSON.parse(fs.readFileSync('dados/leituras-selecionadas.json', 'utf8'));
+  const home = cheerio.load(fs.readFileSync('index.html', 'utf8'));
+  const archive = cheerio.load(fs.readFileSync('arquivo/index.html', 'utf8'));
+  const month = archive('a[href]').map((_, e) => archive(e).attr('href')).get().find(href => /^\/arquivo\/\d{4}-\d{2}\.html$/.test(href));
+  const pages = [...new Set(['index.html', 'sobre.html', 'contato.html', 'obrigado.html', 'politica.html', 'termos.html', 'artigos/index.html', 'guias.html', 'arquivo/index.html', month.slice(1), 'index2.html', 'artigos/inteligencia-artificial.html', article,
+    ...selection.grupos.flatMap(g => g.leituras.map(r => r.url)), ...home('.article-index a').map((_, e) => home(e).attr('href').replace(/^\//, '')).get()])];
   const browser = await puppeteer.launch({ headless: true, executablePath: process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe' });
   const results = [], interactions = [];
   async function page(width, theme, javascript = true, blocked = false) {
@@ -53,6 +60,12 @@ async function main() {
           assert.equal(home.columns, width <= 760 ? 1 : 3);
           assert.ok(home.inside && home.nameSize <= 32);
           assert.equal(home.commercialContact, 0);
+          const actions = await p.$$eval('.home-section-heading > a', links => links.map(el => {
+            const css = getComputedStyle(el);
+            return { font: css.fontFamily, size: css.fontSize, weight: css.fontWeight, color: css.color, decoration: css.textDecorationLine };
+          }));
+          assert.equal(actions.length, 2);
+          assert.deepEqual(actions[0], actions[1], 'Guias e artigos usam o mesmo estilo de acesso');
         }
         const brandLoaded = await p.$eval('.brand-mark', el => new Promise(resolve => {
           const url = getComputedStyle(el).backgroundImage.match(/^url\(["']?(.*?)["']?\)$/)?.[1];
@@ -70,6 +83,11 @@ async function main() {
             brokenImages: [...document.images].filter(img => !img.complete || !img.naturalWidth).map(img => img.src),
             outside: [...document.querySelectorAll('h1,h2,main p,nav a,header button,header select')].filter(visible).filter(e => !e.closest('pre,.scroll-container')).filter(e => { const r = e.getBoundingClientRect(); return r.left < -1 || r.right > innerWidth + 1; }).map(e => e.textContent.slice(0, 80)),
             toc: document.querySelectorAll('.article-toc').length,
+            navStyles: [...document.querySelectorAll('#site-navigation a')].map(el => {
+              const css = getComputedStyle(el);
+              return { label: el.textContent, weight: css.fontWeight, size: css.fontSize, line: css.lineHeight, font: css.fontFamily };
+            }),
+            footerStyles: [...document.querySelectorAll('.footer-navigation a')].map(el => getComputedStyle(el).fontWeight),
             activeLinks: document.querySelectorAll('#site-navigation a[aria-current]').length };
         });
         const name = file === article ? 'artigo' : file.replace(/\.html$/, '').replace(/\//g, '-');
@@ -83,7 +101,7 @@ async function main() {
             covered: [...document.querySelectorAll('footer a')].filter(e => e.getBoundingClientRect().bottom > top + 1).map(e => e.textContent) };
         });
         if (file === 'index.html' && width === 390) await p.screenshot({ path: path.join(output, `rodape-${theme}.png`) });
-        results.push({ file, width, theme, brandLoaded, ...data, ...footer, errors: [...errors] });
+        results.push({ file, width, theme, brandLoaded, expectedActiveLinks: secaoAtual(file) ? 1 : 0, ...data, ...footer, errors: [...errors] });
       }
       await ctx.close();
     }
@@ -128,6 +146,40 @@ async function main() {
     await p.goto(`${origin}/contato.html`, { waitUntil: 'load' });
     assert.equal(await p.$eval('#contact-form', form => form.checkValidity()), false);
     assert.equal(await p.$eval('main h2', e => e.textContent), 'Envie uma mensagem');
+    // Observe client validation without ever posting a real message to FormSubmit.
+    await p.evaluate(() => {
+      window.__contactSubmission = null;
+      document.querySelector('#contact-form').addEventListener('submit', event => {
+        window.__contactSubmission = { prevented: event.defaultPrevented, fields: Object.fromEntries(new FormData(event.target)) };
+        event.preventDefault();
+      });
+    });
+    await p.type('#nome', 'Teste local');
+    await p.type('#email', 'qa@example.org');
+    await p.type('#mensagem', '             ');
+    async function submitContact() {
+      await p.$eval('#contact-form button[type="submit"]', el => el.scrollIntoView({ block: 'center' }));
+      assert.ok(await p.$eval('#contact-form button[type="submit"]', el => {
+        const r = el.getBoundingClientRect();
+        return document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2) === el;
+      }), 'Botao do formulario acessivel apos rolagem, inclusive com aviso de cookies');
+      await p.click('#contact-form button[type="submit"]');
+    }
+    await submitContact();
+    assert.equal(await p.evaluate(() => window.__contactSubmission?.prevented), true);
+    assert.equal(await p.$eval('#mensagem', el => el.validity.customError), true);
+    await p.$eval('#mensagem', el => { el.value = ''; el.dispatchEvent(new Event('input', { bubbles: true })); });
+    await p.type('#mensagem', 'Mensagem de teste local sem envio externo.');
+    await p.$eval('[name="_honey"]', el => { el.value = 'spam'; });
+    await submitContact();
+    assert.equal(await p.evaluate(() => window.__contactSubmission?.prevented), true);
+    await p.$eval('[name="_honey"]', el => { el.value = ''; });
+    await submitContact();
+    const submission = await p.evaluate(() => window.__contactSubmission);
+    assert.equal(submission.prevented, false);
+    assert.equal(submission.fields.mensagem, 'Mensagem de teste local sem envio externo.');
+    assert.equal(submission.fields._next, 'https://www.andersondamasio.com.br/obrigado.html');
+    interactions.push('contact-whitespace', 'contact-honeypot', 'contact-valid-without-external-send');
     await p.click('#cookie-banner button');
     await p.waitForFunction(() => getComputedStyle(document.body).paddingBottom === '0px');
     await p.goto(origin, { waitUntil: 'load' });
@@ -158,7 +210,7 @@ async function main() {
       assert.equal(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
       interactions.push(scenario); await ctx.close();
     }
-    const failures = results.filter(r => !r.brandLoaded || r.overflow || r.overlaps.length || r.brokenImages.length || r.outside.length || r.covered.length || r.errors.length || r.theme !== r.resolvedTheme || r.activeLinks !== 1 || (r.width <= 760 && r.headerHeight > 70));
+    const failures = results.filter(r => !r.brandLoaded || r.overflow || r.overlaps.length || r.brokenImages.length || r.outside.length || r.covered.length || r.errors.length || r.theme !== r.resolvedTheme || r.activeLinks !== r.expectedActiveLinks || r.navStyles.some(s => s.weight !== '500' || s.size !== '15px' || s.line !== '21px' || s.font !== '"Segoe UI", sans-serif') || r.footerStyles.some(weight => weight !== '400') || (r.width <= 760 && r.headerHeight > 70));
     const report = { accepted: !failures.length, verifiedAt: new Date().toISOString(), cases: results.length, interactions, failures, results };
     fs.writeFileSync(path.join(output, 'browser.json'), JSON.stringify(report, null, 2));
     console.log(JSON.stringify({ ...report, results: undefined }, null, 2));
