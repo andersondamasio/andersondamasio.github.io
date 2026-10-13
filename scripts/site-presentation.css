@@ -18,7 +18,7 @@ html .article-meta, html .article-byline { font-size: .875rem; }
 html main:has(#contact-form) > h2 { font-size: 1.25rem; margin: 2rem 0 1rem; }
 html #contact-form { margin-top: 1rem; }
 html body > header.site-header {
-  box-sizing: border-box; display: grid; grid-template-columns: minmax(150px, 1fr) auto minmax(140px, 1fr);
+  box-sizing: border-box; display: grid; grid-template-columns: minmax(150px, 1fr) auto minmax(150px, 1fr);
   gap: 1.5rem; padding: .5rem max(1.5rem, calc((100% - 1200px) / 2)) !important;
   align-items: center; position: sticky; top: 0; z-index: 1000;
   background: var(--header-bg); box-shadow: 0 1px 0 var(--border);
@@ -59,8 +59,6 @@ html #cookie-banner.cookies-ready { position: fixed !important; }
 html #cookie-banner:not(.cookies-ready) button { display: none; }
 /* The compact profile layout is exclusive to the homepage. */
 html body.home-site { background: var(--main-bg); --header-bg: var(--main-bg); --header-color: var(--text); }
-html body.home-site > header.site-header { padding-inline: max(1.5rem, calc((100% - 912px) / 2)) !important; grid-template-columns: minmax(44px, 1fr) auto auto; }
-html .home-site .site-brand .brand-mark { width: 32px; height: 32px; }
 html .home-site #site-navigation a[aria-current] { color: var(--link) !important; }
 html body > main.home-page { padding-top: 3rem; padding-bottom: 1.5rem; }
 html .home-page > section { padding-block: 2rem; }
@@ -93,11 +91,11 @@ html .home-footer .brand-mark { width: 28px; height: 28px; flex-shrink: 0; backg
 html .home-footer .footer-navigation { margin: 0; gap: .25rem 1.25rem; justify-content: flex-end; }
 html .home-footer a { font-weight: 400; }
 @media (max-width: 1050px) and (min-width: 761px) {
-  html body > header.site-header { gap: 1rem; grid-template-columns: minmax(100px, 1fr) auto auto; }
+  html body > header.site-header { gap: 1rem; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+  html .site-brand > span:not(.brand-mark) { max-width: 6rem; }
   html .site-header .theme-control > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 }
 @media (max-width: 760px) {
-  html body.home-site > header.site-header { padding-inline: 1rem !important; grid-template-columns: minmax(0, 1fr) auto auto; }
   html body > main.home-page { padding-top: 1.75rem; }
   html .home-page h1 { font-size: 1.75rem; }
   html .home-page > section { padding-block: 1.5rem; }
