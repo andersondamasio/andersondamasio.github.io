@@ -17,7 +17,7 @@ async function main() {
   const pages = [...new Set(['index.html', 'sobre.html', 'contato.html', 'obrigado.html', 'politica.html', 'termos.html', 'artigos/index.html', 'guias.html', 'arquivo/index.html', month.slice(1), 'index2.html', 'artigos/inteligencia-artificial.html', article,
     ...selection.grupos.flatMap(g => g.leituras.map(r => r.url)), ...home('.article-index a').map((_, e) => home(e).attr('href').replace(/^\//, '')).get()])];
   const browser = await puppeteer.launch({ headless: true, executablePath: process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe' });
-  const results = [], interactions = [];
+  const results = [], interactions = [], headerAlignment = [];
   async function page(width, theme, javascript = true, blocked = false) {
     const ctx = await browser.createBrowserContext(), p = await ctx.newPage();
     await p.setViewport({ width, height: 900 });
@@ -32,6 +32,54 @@ async function main() {
     return { ctx, p };
   }
   try {
+    for (const width of [1920, 1440, 1051, 1050, 820, 761, 760, 390, 320]) for (const theme of ['light', 'dark']) {
+      const { ctx, p } = await page(width, theme);
+      let reference;
+      for (const file of ['index.html', 'artigos/index.html', 'sobre.html', 'contato.html', 'guias.html', article]) {
+        const response = await p.goto(`${origin}/${file}`, { waitUntil: 'load' });
+        assert.equal(response.status(), 200);
+        if (width <= 760) await p.click('.nav-toggle');
+        const geometry = await p.evaluate(() => {
+          const rect = selector => {
+            const { x, y, width, height } = document.querySelector(selector).getBoundingClientRect();
+            return { x, y, width, height };
+          };
+          return {
+            header: rect('.site-header'), mark: rect('.site-header .brand-mark'),
+            navigation: rect('#site-navigation'), theme: rect('#theme-select'),
+            toggle: rect('.nav-toggle'),
+            links: [...document.querySelectorAll('#site-navigation a')].map(el => {
+              const { x, y, width, height } = el.getBoundingClientRect();
+              return { x, y, width, height };
+            })
+          };
+        });
+        const context = `${file}, ${width}px, ${theme}`;
+        const close = (actual, expected, label) => assert.ok(Math.abs(actual - expected) <= 1, `${label}: ${actual} vs ${expected} (${context})`);
+        if (reference) {
+          for (const key of ['header', 'mark', 'navigation', 'theme', 'toggle']) {
+            for (const dimension of ['x', 'y', 'width', 'height']) close(geometry[key][dimension], reference[key][dimension], `${key}.${dimension}`);
+          }
+          assert.equal(geometry.links.length, reference.links.length, context);
+          for (const [i, link] of geometry.links.entries()) {
+            for (const dimension of ['x', 'y', 'width', 'height']) close(link[dimension], reference.links[i][dimension], `link ${i}.${dimension}`);
+          }
+        } else reference = geometry;
+        close(geometry.navigation.x + geometry.navigation.width / 2, width / 2, 'Menu centralizado');
+        if (width > 760) {
+          const boxes = await p.$$eval('.site-brand, #site-navigation, .theme-control', elements => elements.map(el => {
+            const { left, right, top, bottom } = el.getBoundingClientRect();
+            return { left, right, top, bottom };
+          }));
+          assert.ok(boxes[0].right <= boxes[1].left && boxes[1].right <= boxes[2].left, `Cabecalho sem sobreposicao (${context})`);
+          assert.ok(geometry.header.height <= 70, `Cabecalho compacto (${context})`);
+        }
+        assert.equal(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false, context);
+        headerAlignment.push({ file, width, theme, ...geometry });
+      }
+      await ctx.close();
+    }
+
     for (const width of [1440, 820, 390, 320]) for (const theme of ['light', 'dark']) {
       const { ctx, p } = await page(width, theme);
       const errors = [];
@@ -211,9 +259,9 @@ async function main() {
       interactions.push(scenario); await ctx.close();
     }
     const failures = results.filter(r => !r.brandLoaded || r.overflow || r.overlaps.length || r.brokenImages.length || r.outside.length || r.covered.length || r.errors.length || r.theme !== r.resolvedTheme || r.activeLinks !== r.expectedActiveLinks || r.navStyles.some(s => s.weight !== '500' || s.size !== '15px' || s.line !== '21px' || s.font !== '"Segoe UI", sans-serif') || r.footerStyles.some(weight => weight !== '400') || (r.width <= 760 && r.headerHeight > 70));
-    const report = { accepted: !failures.length, verifiedAt: new Date().toISOString(), cases: results.length, interactions, failures, results };
+    const report = { accepted: !failures.length, verifiedAt: new Date().toISOString(), cases: results.length, headerCases: headerAlignment.length, interactions, failures, results, headerAlignment };
     fs.writeFileSync(path.join(output, 'browser.json'), JSON.stringify(report, null, 2));
-    console.log(JSON.stringify({ ...report, results: undefined }, null, 2));
+    console.log(JSON.stringify({ ...report, results: undefined, headerAlignment: undefined }, null, 2));
     if (failures.length) process.exitCode = 1;
   } finally { await browser.close(); }
 }
