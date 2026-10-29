@@ -629,8 +629,29 @@ A auditoria estrita tambem ganhou as verificacoes `malformedArticleHtml` e `arti
 Apos a limpeza de monetizacao, o HTML publicado deve manter apenas recursos Google conhecidos:
 
 - Google tag/Analytics (`G-T15623VZYE`).
+- Google AdSense (`ca-pub-3323198858252165`), nas paginas elegiveis descritas abaixo.
 
 O `ads.txt` tambem fica restrito ao publisher autorizado do Google AdSense, evitando linhas de parceiros antigos ou redes intermediarias.
+
+### Padronizacao do AdSense (28/10/2026)
+
+- `scripts/site-adsense.js` e a fonte unica do carregador oficial, com `async` e `crossorigin="anonymous"`, inserido uma unica vez no `head`.
+- O layout compartilhado e os backfills aplicam a regra na inicial, Sobre, Guias e artigos indexaveis com canonical proprio e corpo editorial.
+- Formularios, paginas legais, listagens, redirecionamentos e paginas `noindex` ficam sem o carregador. O produto independente `beijaoupassa/` nao e alterado.
+- A auditoria estrita rejeita ausencia, duplicacao, publisher/atributos incorretos e inclusao do carregador em paginas excluidas. Os testes tambem conferem o publisher do `ads.txt`.
+- Nao ha alteracao de textos, datas, metadados de SEO, CSS, configuracao de cookies ou Analytics por esta padronizacao.
+- A revisao em andamento e as configuracoes de anuncios automaticos na conta AdSense nao sao alteradas pelo codigo.
+
+Validacao antes de publicar:
+
+```bash
+npm run seo:maintain
+npm run test:seo:templates
+npm run test:rebuild:site
+npm run qa:adsense
+```
+
+O teste de navegador simula carregamento, falha e atraso do script sem executar anuncios reais ou gerar impressoes. Verifica layout, navegacao e temas em desktop e celular. Nao comprova posicionamento de anuncios reais, CLS apos veiculacao, aprovacao da conta ou resultados de busca. Depois da aprovacao, o posicionamento definido pelo AdSense precisa de avaliacao separada.
 
 ### Workflow automatico dos proximos artigos
 

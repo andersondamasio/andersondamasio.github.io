@@ -26,6 +26,7 @@ const {
 const { avaliarSecoesConteudoUtil } = require("./seo-helpful-content");
 const { avaliarAutoriaVisivel } = require("./seo-article-byline");
 const { descricaoSeoUtilizavel } = require("./seo-description");
+const { validarAdsense } = require('./site-adsense');
 
 const root = process.cwd();
 const siteUrl = "https://www.andersondamasio.com.br";
@@ -278,6 +279,7 @@ function summarizeDuplicates(map) {
 
 const stats = {
   htmlFiles: 0,
+  invalidAdsense: [],
   missingLang: [],
   missingTitle: [],
   overlongTitle: [],
@@ -402,6 +404,7 @@ for (const file of walk(root)) {
   const $ = cheerio.load(html);
   const fileRel = rel(file);
   stats.htmlFiles += 1;
+  for (const error of validarAdsense($, fileRel)) pushExample(stats.invalidAdsense, `${fileRel}: ${error}`);
 
   const title = ($("title").first().text() || "").trim();
   const description = ($('meta[name="description" i]').attr("content") || "").trim();
@@ -719,6 +722,7 @@ if (!fs.existsSync(rssPath)) {
 const report = {
   htmlFiles: stats.htmlFiles,
   issues: {
+    invalidAdsense: stats.invalidAdsense,
     missingLang: stats.missingLang,
     missingTitle: stats.missingTitle,
     overlongTitle: stats.overlongTitle,

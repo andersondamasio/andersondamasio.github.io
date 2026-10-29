@@ -105,6 +105,7 @@ function collectHeadAssets(head) {
       if (/rel=["']alternate["']/i.test(value) && /application\/rss\+xml/i.test(value)) continue;
       if (/rel=["'](?:preconnect|dns-prefetch)["']/i.test(value)) continue;
       if (/application\/ld\+json/i.test(value)) continue;
+      if (/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js/i.test(value)) continue;
       if (/\/scripts\/(?:theme-toggle\.js|site-theme\.css|site-presentation\.css|site-interactions\.js)/i.test(value)) continue;
       assets.push(value.trim());
     }

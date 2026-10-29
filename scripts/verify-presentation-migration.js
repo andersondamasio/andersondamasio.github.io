@@ -3,7 +3,7 @@ const path = require('node:path');
 const { createHash } = require('node:crypto');
 const cheerio = require('cheerio');
 
-const pasta = '.editorial/qa-presentation';
+const pasta = process.argv.includes('--adsense') ? '.editorial/qa-adsense' : '.editorial/qa-presentation';
 const hash = texto => createHash('sha256').update(texto).digest('hex');
 function snapshot(dir = '.', saida = {}) {
   for (const item of fs.readdirSync(dir, { withFileTypes: true })) {
