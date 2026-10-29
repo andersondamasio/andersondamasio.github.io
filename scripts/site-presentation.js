@@ -2,6 +2,7 @@ const fs = require('node:fs');
 const cheerio = require('cheerio');
 const { aplicarTemaSite, controleTema } = require('./site-theme');
 const { siteUrl, authorSameAs } = require('./seo-identity');
+const { normalizarAdsense } = require('./site-adsense');
 
 const escapar = value => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -83,5 +84,5 @@ function aplicarApresentacaoSite(html, arquivo, { guias = fs.existsSync('guias.h
   return html;
 }
 
-const aplicarLayoutSite = (html, arquivo) => aplicarApresentacaoSite(aplicarTemaSite(html, arquivo), arquivo);
+const aplicarLayoutSite = (html, arquivo) => normalizarAdsense(aplicarApresentacaoSite(aplicarTemaSite(html, arquivo), arquivo), arquivo);
 module.exports = { aplicarApresentacaoSite, aplicarLayoutSite, gerarCabecalho, secaoAtual };
