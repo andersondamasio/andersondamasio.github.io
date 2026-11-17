@@ -17,7 +17,7 @@ function serializarEstavel(valor) {
 
 function hashRascunho(rascunho) {
   // Approval/status fields are not content. Everything else invalidates approval on change.
-  const { revisaoHumana, estado, publicado, ...conteudo } = rascunho;
+  const { revisaoHumana, revisaoAutomatica, estado, publicado, ...conteudo } = rascunho;
   return createHash("sha256").update(serializarEstavel(JSON.parse(JSON.stringify(conteudo)))).digest("hex");
 }
 
@@ -148,7 +148,11 @@ function aprovarRascunho(rascunho, { responsavel, checklist, confirmacaoHumana }
 }
 
 function validarAprovacao(rascunho, titulos = [], agora = new Date()) {
+  if (rascunho.revisaoAutomatica && !rascunho.revisaoHumana) {
+    return require('./editorial-auto-policy').validarAprovacaoAutomatica(rascunho, titulos, agora);
+  }
   const resultado = validarDossie(rascunho, titulos);
+  if (rascunho.revisaoHumana && rascunho.revisaoAutomatica) resultado.motivos.push('revisoes-ambiguas');
   const revisao = rascunho.revisaoHumana;
   const data = Date.parse(revisao?.aprovadaEm);
   if (rascunho.estado !== "aprovado" || !revisao || revisao.hash !== hashRascunho(rascunho) ||

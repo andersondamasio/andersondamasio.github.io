@@ -31,18 +31,26 @@ function dataLegivel(value) {
 function gerarSecoesConteudoUtil({ sourceUrl, sourceTitle, sourceDate, editorial, corpoArtigo = "" }) {
   const url = normalizarFonteUrl(sourceUrl);
   const revisado = revisaoCorresponde(editorial, corpoArtigo);
+  const automatica = editorial?.revisaoAutomatica;
+  const revisadoAutomaticamente = Boolean(automatica?.tipo === 'ia' && automatica.modelo &&
+    automatica.politica === require('./editorial-auto-policy').politicaAutomatica &&
+    automatica.declaracao === 'REVISAO AUTOMATIZADA; SEM APROVACAO HUMANA INDIVIDUAL' &&
+    automatica.hash === editorial.hash && editorial.conteudoHash === hashCorpoEditorial(corpoArtigo) &&
+    Number.isFinite(Date.parse(automatica.aprovadaEm)));
   const fonte = url ? `<a href="${escapeHtml(url)}" rel="noopener noreferrer">${escapeHtml(sourceTitle || url)}</a>` : "URL n&atilde;o cadastrada no acervo.";
   const dataFonte = dataLegivel(sourceDate);
-  const outrasFontes = revisado ? (editorial.dossie?.fontes || []).filter(f => f.url !== sourceUrl && normalizarFonteUrl(f.url)) : [];
+  const outrasFontes = revisado || revisadoAutomaticamente ? (editorial.dossie?.fontes || []).filter(f => f.url !== sourceUrl && normalizarFonteUrl(f.url)) : [];
   return [
-    '<section class="article-validation" data-editorial-status="' + (revisado ? "revisado" : "acervo-sem-revisao-registrada") + '" aria-labelledby="article-validation-title">',
+    '<section class="article-validation" data-editorial-status="' + (revisado ? "revisado" : revisadoAutomaticamente ? 'revisao-automatizada' : "acervo-sem-revisao-registrada") + '" aria-labelledby="article-validation-title">',
     '<h2 id="article-validation-title">Fontes e responsabilidade editorial</h2>',
     `<p>Respons&aacute;vel pelo site: <a href="/sobre.html" rel="author">${escapeHtml(authorName)}</a>. Conte&uacute;do produzido com apoio de IA.</p>`,
     `<p><strong>Fonte principal:</strong> ${fonte}${dataFonte ? ` Data da fonte registrada: ${escapeHtml(dataFonte)}.` : ""}</p>`,
     ...outrasFontes.map(f => `<p><strong>Fonte complementar:</strong> <a href="${escapeHtml(f.url)}" rel="noopener noreferrer">${escapeHtml(f.titulo)}</a>.</p>`),
     revisado
       ? `<p><strong>Revis&atilde;o editorial:</strong> ${escapeHtml(editorial.revisaoHumana.responsavel)}, em ${dataLegivel(editorial.revisaoHumana.aprovadaEm)}.</p><p><strong>Limites:</strong> ${escapeHtml(editorial.dossie?.limites)}</p>`
-      : '<p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>',
+      : revisadoAutomaticamente
+        ? `<p><strong>Revis&atilde;o automatizada:</strong> ${escapeHtml(automatica.modelo)}, em ${dataLegivel(automatica.aprovadaEm)}. Sem aprova&ccedil;&atilde;o humana individual. A confer&ecirc;ncia por IA pode conter erros e n&atilde;o equivale a uma apura&ccedil;&atilde;o independente.</p><p><strong>Limites:</strong> ${escapeHtml(editorial.dossie?.limites)}</p>`
+        : '<p><strong>Status editorial:</strong> artigo do acervo sem registro de revis&atilde;o humana individual nesta vers&atilde;o. A indica&ccedil;&atilde;o da fonte n&atilde;o comprova cada afirma&ccedil;&atilde;o do texto.</p>',
     '<p><a href="/sobre.html#criterios-editoriais">Crit&eacute;rios editoriais</a> &middot; <a href="/contato.html">Sugerir uma corre&ccedil;&atilde;o</a></p>',
     '</section>'
   ].join("\n");
@@ -75,7 +83,7 @@ function avaliarSecoesConteudoUtil($) {
   const secao = $(".article-validation");
   const status = secao.attr("data-editorial-status");
   return {
-    validationOk: secao.length === 1 && ["revisado", "acervo-sem-revisao-registrada"].includes(status) &&
+    validationOk: secao.length === 1 && ["revisado", "revisao-automatizada", "acervo-sem-revisao-registrada"].includes(status) &&
       secao.find('a[rel="author"][href="/sobre.html"]').length === 1 &&
       /fonte principal/i.test(secao.text()) && !/o que foi verificado/i.test(secao.text()),
     // Practical value belongs in the article, not in a repeated category checklist.

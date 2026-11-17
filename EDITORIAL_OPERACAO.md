@@ -1,6 +1,6 @@
 # Geracao, revisao e publicacao de artigos
 
-O gerador entrega rascunhos. Um artigo so entra no site depois de uma revisao humana registrada para a versao exata do texto. A rotina semanal gera uma pauta na segunda-feira, as 09h de Sao Paulo; publicar e uma operacao separada, limitada a um novo artigo a cada sete dias, inclusive nas execucoes manuais.
+O gerador entrega rascunhos. A rotina semanal de segunda-feira, as 09h20 de Sao Paulo (12h20 UTC), pode gerar, revisar por IA e publicar sem aprovacao humana individual. A revisao automatizada e identificada no artigo e nao equivale a verificacao factual infalivel. Continua limitado a um novo artigo a cada sete dias, inclusive nas execucoes manuais. O GitHub pode atrasar o agendamento.
 
 Os artigos sao noticias, guias e analises baseados em fontes. Nao sao relatos de vivencia pessoal de Anderson Damasio. A IA e o Humanizer nao podem inventar projetos, testes, clientes, resultados nem revisao humana. O modelo permanece configuravel; trocar o modelo nao substitui a conferencia das afirmacoes.
 
@@ -14,11 +14,25 @@ Esse comando usa as credenciais configuradas no ambiente e pode consumir credito
 
 O resultado fica em `.editorial/rascunhos/`, ignorado pelo Git. O comando padrao `npm start` tambem gera apenas rascunho; o antigo parametro `somenteRascunho: false` nao autoriza publicacao. Se a fonte for rejeitada ou nao houver pauta elegivel, a rotina pode encerrar sem rascunho.
 
-No GitHub, `gerar-e-commitar` conserva o nome historico, mas agora tem somente leitura do repositorio. Guarda os JSON como artefatos por 14 dias. Artefatos seguem a visibilidade e as permissoes do repositorio: nao devem conter segredos, dados privados ou copias integrais de fontes. A rotina nao faz commit de artigos automaticamente.
+No GitHub, `gerar-e-commitar` conserva o nome historico, mas agora e apenas manual, com acesso de leitura, para produzir rascunhos sem publicar. O agendamento semanal esta no workflow **Publicar artigo revisado**, evitando duas geracoes separadas. Artefatos seguem a visibilidade e as permissoes do repositorio: nao devem conter segredos, dados privados ou copias integrais de fontes.
+
+## Revisao e publicacao automaticas
+
+Esta modalidade foi autorizada em 17/11/2026. Nao usa o nome do proprietario como revisor nem preenche `revisaoHumana`. O registro `revisaoAutomatica` identifica modelo, data, politica e hash da versao. O artigo informa que houve revisao por IA, sem aprovacao humana individual.
+
+Quando nao ha pacote na fila, o publicador verifica a cadencia antes de consumir API, gera um rascunho e executa `npm run article:auto -- revisar caminho.json`. A etapa de revisao usa uma chamada separada ao modelo configurado em `OPENAI_REVIEW_MODEL` (padrao `gpt-5.6-terra`), alem das chamadas ja utilizadas na geracao/Humanizer. A revisao pode recusar o texto, mas nao pode reescreve-lo e aprovar a propria alteracao silenciosamente.
+
+O coletor consulta a fonte principal e ate quatro links de fontes primarias de dominios explicitamente cadastrados em `scripts/editorial-auto.js`. Exige HTTPS, limita tamanho/tempo/redirecionamentos e bloqueia destinos de rede privada. Documentos e artigos sao dados nao confiaveis, nao instrucoes para o revisor. Falha de leitura, paywall ou ausencia de fonte primaria retenciona o rascunho. PDFs nao sao extraidos por esse leitor automatico; podem ser conferidos pelo Codex em uma revisao especifica, como no artigo da Uber.
+
+A aprovacao exige parecer sem pendencias, dossie, todos os paragrafos mapeados, fonte primaria sustentando ao menos uma afirmacao factual e ancoras curtas localizadas nos textos efetivamente consultados. Hashes vinculam o pacote a essa versao; mudancas invalidam a aprovacao. Nova sobreposicao, revisao com mais de sete dias e pacotes ja publicados bloqueiam o envio. Imagens, tabelas e exemplos de codigo ficam fora desta primeira modalidade automatica e exigem validacao especifica. As protecoes de numeros/URLs do Humanizer continuam ativas.
+
+Essas checagens e o parecer do modelo reduzem riscos, mas nao provam verdade, cobertura semantica completa, direitos ou utilidade. O modelo pode errar inclusive ao classificar uma frase. Um controle estrutural ou uma nota de estilo nao e prova de qualidade factual. O responsavel pelo site continua sendo Anderson Damasio, sem atribuicao de uma revisao pessoal inexistente.
+
+Em caso de retencao, o workflow falha sem publicar, guarda o rascunho por 90 dias e registra o resultado no resumo do Actions. Uma recusa nao e convertida em aprovacao para cumprir calendario. A etapa seguinte prepara o artigo, reconstrui o site, audita SEO, comita e verifica o Pages pela revisao exata. Nao ha promessa de artigo semanal quando a pauta nao passa nos controles.
 
 ## Conferir texto e evidencias
 
-Preencha o `dossie` no JSON gerado. O Codex pode pesquisar, comparar fontes, propor correcoes e preparar esse dossie; a declaracao de revisao humana pertence ao revisor.
+Preencha o `dossie` no JSON gerado, manualmente ou na modalidade automatizada. O Codex pode pesquisar, comparar fontes, corrigir e revisar com registro de IA; uma declaracao de revisao humana pertence exclusivamente a quem realizou essa revisao.
 
 | Campo | O que conferir |
 | --- | --- |
@@ -66,11 +80,11 @@ O hash vincula a aprovacao ao texto, titulo, resumo, fontes, pauta, evidencias e
 
 ## Publicar e verificar
 
-Commitado o pacote aprovado em `main`, inclua seu caminho em `pacotes` no arquivo `dados/editorial/fila.json`. A fila respeita essa ordem e nunca busca rascunhos privados. O workflow **Publicar artigo revisado** consulta a fila nas segundas-feiras, as 09h20 de Sao Paulo (12h20 UTC). O GitHub pode atrasar o horario agendado. Fila vazia, inteiramente publicada ou intervalo semanal ainda nao cumprido encerram sem publicacao; nao ha aprovacao automatica nem promessa de um artigo semanal sem revisao humana.
+Para usar um pacote preparado separadamente, comite-o em `main` e inclua seu caminho em `pacotes` no arquivo `dados/editorial/fila.json`, ou informe o pacote no disparo manual. A fila respeita essa ordem. Quando esta vazia ou inteiramente publicada, o workflow pode gerar uma nova pauta e submete-la a revisao automatizada. O intervalo semanal nao cumprido encerra sem geracao ou publicacao. Pacote explicito invalido falha, sem ser substituido por outro artigo.
 
 Para antecipar a consulta, execute o mesmo workflow manualmente, deixando `pacote` vazio para usar a fila ou informando o caminho de um pacote aprovado. Ele confere a aprovacao novamente contra o acervo atual, impede colisao de URL e repeticao de pacote, respeita o intervalo de sete dias, reconstrui o site e executa a auditoria antes de commitar e solicitar o build do Pages. Pacote alterado, invalido ou sem arquivo interrompe a execucao para correcao, em vez de ser pulado silenciosamente. Nenhuma chamada de IA ocorre nessa etapa.
 
-`npm run article:queue` permite testar a selecao local sem escrever no artigo, aprovar, consumir API ou publicar. O JSON inicial da fila esta vazio. Aprovacoes anteriores continuam exigindo uma versao identica e podem precisar de nova revisao de sobreposicao se o acervo mudou.
+`npm run article:queue` permite testar a selecao local sem escrever no artigo, aprovar, consumir API ou publicar. Aceita pacotes humanos e automatizados; aprovacao e sobreposicao sao revalidadas no acervo atual. `npm run article:auto -- gerar` gera e revisa, mas apenas prepara um pacote: commit e deploy pertencem ao workflow. O modo `revisar caminho.json` tambem consome API. Nao executar para aprovar testes sinteticos como se fossem artigos reais.
 
 Alternativamente, prepare os arquivos locais com `npm run article:review -- publicar "dados/editorial/aprovados/HASH.json"`, execute `npm run seo:maintain` e confira o diff antes do commit e push. O retorno local nao confirma deploy online. O workflow de verificacao publica deve comparar as paginas servidas com a revisao esperada depois do Pages.
 

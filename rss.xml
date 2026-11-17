@@ -6,7 +6,15 @@
 <atom:link href="https://www.andersondamasio.com.br/rss.xml" rel="self" type="application/rss+xml" />
 <description>Artigos de Anderson Damasio sobre arquitetura de software, desenvolvimento, tecnologia e inteligência artificial.</description>
 <language>pt-BR</language>
-<lastBuildDate>Mon, 05 Oct 2026 20:38:26 GMT</lastBuildDate>
+<lastBuildDate>Tue, 17 Nov 2026 14:05:25 GMT</lastBuildDate>
+<item>
+<title>Uber e Fireworks AI: limites do acesso de fornecedores a dados</title>
+<link>https://www.andersondamasio.com.br/artigos/seguranca/uber-e-fireworks-ai-limites-do-acesso-de-fornecedores-a-dados.html</link>
+<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/seguranca/uber-e-fireworks-ai-limites-do-acesso-de-fornecedores-a-dados.html</guid>
+<pubDate>Tue, 17 Nov 2026 14:05:25 GMT</pubDate>
+<category>Segurança</category>
+<description>O aviso da Uber e a atualização da Fireworks mostram os limites de acessos delegados. Um roteiro proposto ajuda a avaliar escopo, revogação e auditoria.</description>
+</item>
 <item>
 <title>Código e agentes de IA: preservar o modelo de domínio</title>
 <link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/agentes-de-ia-e-o-codigo-como-representacao-do-modelo-de-dominio.html</link>
@@ -798,14 +806,6 @@
 <pubDate>Sat, 20 Jun 2026 00:16:43 GMT</pubDate>
 <category>Tecnologia</category>
 <description>Nos últimos tempos, o mercado de laptops gamers tem se tornado um verdadeiro campo de batalha entre marcas e modelos. Se você é fã de jogos e está buscando...</description>
-</item>
-<item>
-<title>A batalha invisível: controle de exportação de IA e suas armadilhas</title>
-<link>https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-batalha-invisivel-controle-de-exportacao-de-ia-e-suas-armadilhas.html</link>
-<guid isPermaLink="true">https://www.andersondamasio.com.br/artigos/inteligencia-artificial/a-batalha-invisivel-controle-de-exportacao-de-ia-e-suas-armadilhas.html</guid>
-<pubDate>Fri, 19 Jun 2026 23:03:07 GMT</pubDate>
-<category>Inteligência Artificial</category>
-<description>Nos últimos tempos, a discussão sobre controle de exportação de tecnologias de inteligência artificial (IA) tem ganhado força, especialmente após a recente...</description>
 </item>
 </channel>
 </rss>
