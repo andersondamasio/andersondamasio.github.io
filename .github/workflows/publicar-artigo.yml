@@ -123,7 +123,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: revisao-editorial-${{ github.run_id }}
-          path: .editorial/rascunhos/*.json
+          path: |
+            .editorial/rascunhos/*.json
+            .editorial/revisoes/*.json
           include-hidden-files: true
           if-no-files-found: ignore
           retention-days: 90

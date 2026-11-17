@@ -80,7 +80,7 @@ async function coletarFontes(r, buscar = buscarHtml) {
 }
 
 function prepararAprovacao(r, parecer, fontes, titulos, modelo, agora = new Date()) {
-  if (!parecer || typeof parecer !== 'object' || !parecer.dossie || parecer.decisao !== 'publicar') throw new Error('Revisor nao liberou o artigo.');
+  if (!parecer || typeof parecer !== 'object' || !parecer.dossie || parecer.decisao !== 'publicar') throw new Error(`Revisor nao liberou o artigo: ${Array.isArray(parecer?.pendencias) ? parecer.pendencias.join('; ').slice(0, 500) : 'parecer invalido'}`);
   if (r.revisaoEditorial?.aceita === false) throw new Error('Rascunho retido pelo controle editorial; corrigir antes de reavaliar.');
   if (candidatosDuplicidade(r, titulos).length) throw new Error('Sobreposicao exige reconciliar a pauta.');
   const $ = cheerio.load(r.corpoArtigo, null, false);
@@ -113,7 +113,7 @@ function prepararAprovacao(r, parecer, fontes, titulos, modelo, agora = new Date
   }, titulos, agora);
 }
 
-async function revisar(r, { fontes, consultar = coletarFontes, avaliar, titulos = [], modelo = process.env.OPENAI_REVIEW_MODEL || 'gpt-5.6-terra' } = {}) {
+async function revisar(r, { fontes, consultar = coletarFontes, avaliar, registrar = () => {}, titulos = [], modelo = process.env.OPENAI_REVIEW_MODEL || 'gpt-5.6-terra' } = {}) {
   if (r.revisaoEditorial?.aceita === false || r.qualidadeArtigo?.aceita === false || r.qualidadeFonte?.aceita === false) throw new Error('Rascunho retido pelo controle editorial.');
   if (r.corpoArtigo.length > 20000 || candidatosDuplicidade(r, titulos).length) throw new Error('Rascunho fora do limite de revisao automatica ou com sobreposicao.');
   fontes ||= await consultar(r);
@@ -124,7 +124,10 @@ Retorne JSON: {decisao:"publicar"|"reter",pendencias:[],controles:{${controles.m
       { role: 'user', content: JSON.stringify({ artigo: { titulo: r.titulo, resumo: r.resumo, corpoArtigo: r.corpoArtigo }, fontes: fontes.map(({ html, ...f }) => f) }) }] });
   const content = response.choices?.[0]?.message?.content;
   if (response.choices?.[0]?.finish_reason !== 'stop') throw new Error('Revisao incompleta; nenhuma aprovacao emitida.');
-  return prepararAprovacao(r, JSON.parse(content), fontes, titulos, modelo);
+  const parecer = JSON.parse(content);
+  registrar({ modelo, verificadoEm: new Date().toISOString(), decisao: parecer.decisao,
+    pendencias: parecer.pendencias, controles: parecer.controles });
+  return prepararAprovacao(r, parecer, fontes, titulos, modelo);
 }
 
 async function main() {
@@ -138,7 +141,11 @@ async function main() {
   const destino = modo === 'gerar' ? (await gerador.gerar()).arquivo : arquivo;
   if (!destino) throw new Error('Geracao nao entregou rascunho.');
   const r = JSON.parse(fs.readFileSync(destino, 'utf8'));
-  const aprovado = await revisar(r, { titulos, avaliar: async payload => (await gerador.chamarOpenAiChatCompletion(payload)).data });
+  const aprovado = await revisar(r, { titulos, avaliar: async payload => (await gerador.chamarOpenAiChatCompletion(payload)).data,
+    registrar: relatorio => {
+      fs.mkdirSync('.editorial/revisoes', { recursive: true });
+      fs.writeFileSync(`.editorial/revisoes/${hashRascunho(r)}.json`, JSON.stringify(relatorio, null, 2));
+    } });
   const pacote = `dados/editorial/aprovados/${hashRascunho(aprovado)}.json`;
   fs.mkdirSync(path.dirname(pacote), { recursive: true });
   fs.writeFileSync(pacote, JSON.stringify(aprovado, null, 2) + '\n', { flag: 'wx' });

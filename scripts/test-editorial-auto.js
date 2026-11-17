@@ -70,6 +70,17 @@ test('revisor separado recebe dados como nao confiaveis e nao libera resposta tr
   }
 });
 
+test('recusa do modelo conserva motivos para diagnostico sem aprovar', async () => {
+  const f = fixture();
+  const relatorios = [];
+  const resposta = { ...f.parecer, decisao: 'reter', pendencias: ['A fonte nao sustenta o titulo.'] };
+  await assert.rejects(revisar(f.r, { fontes: f.fontes, registrar: r => relatorios.push(r),
+    avaliar: async () => ({ choices: [{ finish_reason: 'stop', message: { content: JSON.stringify(resposta) } }] }) }), /nao sustenta o titulo/);
+  assert.equal(relatorios.length, 1);
+  assert.equal(relatorios[0].decisao, 'reter');
+  assert.equal(relatorios[0].dossie, undefined);
+});
+
 test('busca usa primaria predefinida, retem ausencia e nao executa instrucoes no HTML', async () => {
   const f = fixture();
   const html = '<main><a href="https://kubernetes.io/docs/concepts/">Fonte</a><a href="http://127.0.0.1/">local</a></main>';
