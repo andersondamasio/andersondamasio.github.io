@@ -74059,5 +74059,184 @@
       "revisaoHumana": false,
       "relatorio": "dados/editorial/correcoes-piloto-agentes-2026-10.json"
     }
+  },
+  {
+    "titulo": "Uber e Fireworks AI: limites do acesso de fornecedores a dados",
+    "noticiaOriginal": "Aviso de incidente da Uber à Procuradoria de Iowa",
+    "url": "artigos/seguranca/uber-e-fireworks-ai-limites-do-acesso-de-fornecedores-a-dados.html",
+    "data": "2026-11-17T14:05:25.176Z",
+    "dataFonte": "2026-11-10",
+    "categoria": "Segurança",
+    "urlFonte": "https://www.iowaattorneygeneral.gov/media/cms/11102026_Uber_Technologies_Inc_089721E61CBAB.pdf",
+    "seo": {
+      "description": "O aviso da Uber e a atualização da Fireworks mostram os limites de acessos delegados. Um roteiro proposto ajuda a avaliar escopo, revogação e auditoria.",
+      "modifiedAt": "2026-11-17T14:05:25.176Z"
+    },
+    "editorial": {
+      "hash": "8707e05434402104b5618f52ca2cd7a97d09aac76bab70bf811b0929be1506be",
+      "conteudoHash": "cb3d991ff79ecdec0648aee66e14236bef2129e007092d423d734d0c617f43de",
+      "politica": "2026-10-09.1",
+      "revisaoHumana": null,
+      "revisaoAutomatica": {
+        "tipo": "ia",
+        "modelo": "gpt-6.1-sol (Codex; consulta de fontes nesta conversa)",
+        "politica": "2026-11-17.1",
+        "aprovadaEm": "2026-11-17T14:00:06.643Z",
+        "hash": "8707e05434402104b5618f52ca2cd7a97d09aac76bab70bf811b0929be1506be",
+        "declaracao": "REVISAO AUTOMATIZADA; SEM APROVACAO HUMANA INDIVIDUAL"
+      },
+      "dossie": {
+        "pauta": {
+          "publico": "Desenvolvedores e arquitetos de software",
+          "pergunta": "Como delimitar e testar o acesso de um fornecedor a dados sensíveis?",
+          "genero": "analise-baseada-em-fontes"
+        },
+        "fontes": [
+          {
+            "url": "https://www.iowaattorneygeneral.gov/media/cms/11102026_Uber_Technologies_Inc_089721E61CBAB.pdf",
+            "titulo": "Aviso de incidente da Uber à Procuradoria de Iowa",
+            "tipo": "primaria",
+            "consultadaEm": "2026-11-17T14:00:06.643Z",
+            "resumoEvidencia": "Carta de 10/11: cronologia, dados envolvidos, armazenamento e limites do acesso relatado."
+          },
+          {
+            "url": "https://techcrunch.com/2026/11/16/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/",
+            "titulo": "Identificação da fornecedora",
+            "tipo": "secundaria",
+            "consultadaEm": "2026-11-17T14:00:06.643Z",
+            "resumoEvidencia": "Identificação da fornecedora."
+          },
+          {
+            "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
+            "titulo": "Atualização do incidente de outubro de 2026 da Fireworks",
+            "tipo": "primaria",
+            "consultadaEm": "2026-11-17T14:00:06.643Z",
+            "resumoEvidencia": "Boletim de 09/11: categorias afetadas e medidas de resposta; não identifica a Uber."
+          },
+          {
+            "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+            "titulo": "NIST SP 800-207: Zero Trust Architecture",
+            "tipo": "primaria",
+            "consultadaEm": "2026-11-17T14:00:06.643Z",
+            "resumoEvidencia": "Resumo oficial: confiança não decorre da localização de rede; autenticação e autorização são distintas."
+          }
+        ],
+        "afirmacoes": [
+          {
+            "tipo": "fato",
+            "trecho": "Em aviso de 10 de novembro de 2026 enviado à Procuradoria de Iowa, a Uber relatou que um invasor usou credenciais internas comprometidas de um fornecedor para acessar dados da empresa. Segundo o documento, a fornecedora avisou a Uber em 9 de outubro; a investigação confirmou em 13 de outubro que o acesso havia ocorrido no dia 7.",
+            "fonteUrl": "https://www.iowaattorneygeneral.gov/media/cms/11102026_Uber_Technologies_Inc_089721E61CBAB.pdf",
+            "ancora": "On October 9, 2026",
+            "localizacaoNaFonte": "Página 1 da carta: parágrafos de cronologia e descrição do ambiente.",
+            "verificacao": "Atribuição conferida no documento citado, preservando seu escopo e seus limites."
+          },
+          {
+            "tipo": "fato",
+            "trecho": "O aviso descreve imagens de carteiras de habilitação e os dados extraídos delas: nome, endereço, data de nascimento e número do documento. Eles estavam em um ambiente de armazenamento em nuvem criado para o trabalho do fornecedor. A Uber afirmou que os alertas não foram acionados porque o acesso usou credenciais válidas e fluxos habilitados pelo comprometimento no fornecedor. Essas credenciais, segundo a empresa, não davam acesso a outros sistemas da Uber.",
+            "fonteUrl": "https://www.iowaattorneygeneral.gov/media/cms/11102026_Uber_Technologies_Inc_089721E61CBAB.pdf",
+            "ancora": "valid credentials",
+            "localizacaoNaFonte": "Página 1 da carta: parágrafos de cronologia e descrição do ambiente.",
+            "verificacao": "Atribuição conferida no documento citado, preservando seu escopo e seus limites."
+          },
+          {
+            "tipo": "fato",
+            "trecho": "A Uber identificou a Fireworks como fornecedora à TechCrunch.",
+            "fonteUrl": "https://techcrunch.com/2026/11/16/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/",
+            "ancora": "Fireworks.ai",
+            "localizacaoNaFonte": "Declaração de porta-voz atribuída pela reportagem.",
+            "verificacao": "Atribuição conferida no documento citado, preservando seu escopo e seus limites."
+          },
+          {
+            "tipo": "fato",
+            "trecho": "A atualização oficial da Fireworks, de 9 de novembro, relata impacto em informações de conta e cobrança e, para parte dos clientes, em segredos, datasets e modelos incompletos. A empresa também descreve atividade adicional em outubro e medidas de contenção. Esse boletim não identifica a Uber; os dois relatos não devem ser tratados como uma descrição única de todos os sistemas afetados.",
+            "fonteUrl": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
+            "ancora": "account and billing information",
+            "localizacaoNaFonte": "The update e What we have done.",
+            "verificacao": "Atribuição conferida no documento citado, preservando seu escopo e seus limites."
+          },
+          {
+            "tipo": "inferencia",
+            "trecho": "O recorte útil para arquitetura é o acesso delegado: quais dados uma identidade externa consegue ler e como interromper esse acesso. O relato de alertas não acionados não demonstra que toda detecção com credenciais válidas falhará, nem permite atribuir o incidente a um produto específico de monitoramento.",
+            "verificacao": "Proposta ou limite explicitamente identificado; não descreve teste executado nem experiência pessoal."
+          },
+          {
+            "tipo": "fato",
+            "trecho": "A publicação NIST SP 800-207 define uma arquitetura zero trust sem confiança implícita baseada apenas na localização de rede ou na propriedade de um ativo. Ela distingue autenticação de autorização e orienta a proteção de recursos, em vez de tratar um segmento de rede como garantia de confiança.",
+            "fonteUrl": "https://csrc.nist.gov/pubs/sp/800/207/final",
+            "ancora": "no implicit trust",
+            "localizacaoNaFonte": "Abstract da publicação.",
+            "verificacao": "Atribuição conferida no documento citado, preservando seu escopo e seus limites."
+          },
+          {
+            "tipo": "exemplo-hipotetico",
+            "trecho": "Considere uma integração hipotética em que um fornecedor precisa processar documentos de um único lote. Uma proposta é conceder acesso apenas ao lote necessário, com identidade própria e prazo de validade. O critério de aceitação seria verificar se essa identidade consegue consultar outro lote ou permanecer ativa depois do prazo. Isso é uma proposta de teste, não um teste executado neste artigo.",
+            "verificacao": "Proposta ou limite explicitamente identificado; não descreve teste executado nem experiência pessoal."
+          },
+          {
+            "tipo": "inferencia",
+            "trecho": "Para preparar essa avaliação, a equipe pode registrar as respostas às seguintes perguntas antes de liberar a integração:",
+            "verificacao": "Proposta ou limite explicitamente identificado; não descreve teste executado nem experiência pessoal."
+          },
+          {
+            "tipo": "inferencia",
+            "trecho": "Quais arquivos e campos o fornecedor realmente precisa receber? Existe uma alternativa que evite enviar o documento completo?",
+            "verificacao": "Proposta ou limite explicitamente identificado; não descreve teste executado nem experiência pessoal."
+          },
+          {
+            "tipo": "inferencia",
+            "trecho": "Qual identidade faz cada leitura? Quem consegue conceder novas permissões a essa identidade?",
+            "verificacao": "Proposta ou limite explicitamente identificado; não descreve teste executado nem experiência pessoal."
+          },
+          {
+            "tipo": "inferencia",
+            "trecho": "Como revogar o acesso no emissor da credencial e confirmar que a próxima requisição é recusada?",
+            "verificacao": "Proposta ou limite explicitamente identificado; não descreve teste executado nem experiência pessoal."
+          },
+          {
+            "tipo": "inferencia",
+            "trecho": "Quais registros permitem reconstruir os dados consultados e distinguir a atividade do fornecedor das demais integrações?",
+            "verificacao": "Proposta ou limite explicitamente identificado; não descreve teste executado nem experiência pessoal."
+          },
+          {
+            "tipo": "inferencia",
+            "trecho": "As respostas formam um roteiro verificável: limitar o conjunto de dados, tentar acessos fora do escopo em ambiente controlado, revogar a credencial e conferir a trilha de auditoria. O roteiro pode ajudar a avaliar uma integração, mas não demonstra que esses controles evitariam o incidente relatado.",
+            "verificacao": "Proposta ou limite explicitamente identificado; não descreve teste executado nem experiência pessoal."
+          },
+          {
+            "tipo": "inferencia",
+            "trecho": "Os documentos consultados não permitem reconstruir a cadeia completa do ataque nem determinar todas as permissões envolvidas. Esta análise não investigou os ambientes das empresas, não executou os testes propostos e não estabelece o número final de pessoas afetadas.",
+            "verificacao": "Proposta ou limite explicitamente identificado; não descreve teste executado nem experiência pessoal."
+          },
+          {
+            "tipo": "inferencia",
+            "trecho": "Documentos: aviso da Uber à Procuradoria de Iowa; reportagem da TechCrunch; atualização de segurança da Fireworks.",
+            "verificacao": "Lista de referências consultadas, sem acrescentar conclusão factual."
+          },
+          {
+            "tipo": "inferencia",
+            "trecho": "Referência técnica: NIST SP 800-207: Zero Trust Architecture.",
+            "verificacao": "Lista de referências consultadas, sem acrescentar conclusão factual."
+          }
+        ],
+        "contribuicao": {
+          "descricao": "Roteiro proposto com critério de aceitação para acesso delegado e revogação, separado da notícia.",
+          "trecho": "Considere uma integração hipotética em que um fornecedor precisa processar documentos de um único lote. Uma proposta é conceder acesso apenas ao lote necessário, com identidade própria e prazo de validade. O critério de aceitação seria verificar se essa identidade consegue consultar outro lote ou permanecer ativa depois do prazo. Isso é uma proposta de teste, não um teste executado neste artigo."
+        },
+        "limites": "Os documentos consultados não permitem reconstruir a cadeia completa do ataque nem determinar todas as permissões envolvidas. Esta análise não investigou os ambientes das empresas, não executou os testes propostos e não estabelece o número final de pessoas afetadas.",
+        "duplicidade": {
+          "candidatos": [],
+          "decisao": "novo-artigo",
+          "justificativa": "Pauta do incidente recente e roteiro de acesso delegado sem fonte idêntica no catálogo atual."
+        },
+        "midias": []
+      },
+      "geracao": {
+        "modelo": "gpt-5.6-terra",
+        "origem": "GitHub Actions"
+      },
+      "humanizer": {
+        "revisadoPor": "Codex com skill humanizer; sem nova chamada paga"
+      }
+    }
   }
 ]

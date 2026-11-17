@@ -34,10 +34,34 @@ jobs:
       - run: npm ci
         env:
           PUPPETEER_SKIP_DOWNLOAD: 'true'
-      - name: Selecionar proximo pacote aprovado
-        id: fila
+      - name: Consultar fila existente
+        id: consulta
         env:
           PACOTE: ${{ inputs.pacote }}
+        run: npm run article:queue
+      - name: Validar gerador e revisor automatico antes de consumir API
+        if: steps.consulta.outputs.elegivel != 'true' && inputs.pacote == ''
+        run: npm run test:editorial
+      - name: Instalar navegador para extracao de fontes
+        if: steps.consulta.outputs.elegivel != 'true' && inputs.pacote == ''
+        run: npx puppeteer browsers install chrome
+      - name: Gerar e revisar automaticamente quando nao houver pacote
+        if: steps.consulta.outputs.elegivel != 'true' && inputs.pacote == ''
+        id: automatica
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_DRAFT_MODEL: gpt-5.6-terra
+          OPENAI_DRAFT_REASONING_EFFORT: medium
+          OPENAI_HUMANIZER_MODEL: gpt-5.6-terra
+          OPENAI_HUMANIZER_REASONING_EFFORT: low
+          OPENAI_REVIEW_MODEL: gpt-5.6-terra
+          TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        run: npm run article:auto -- gerar
+      - name: Selecionar pacote validado para publicacao
+        id: fila
+        env:
+          PACOTE: ${{ steps.automatica.outputs.pacote || steps.consulta.outputs.pacote || inputs.pacote }}
         run: npm run article:queue
       - name: Validar protecoes editoriais
         if: steps.fila.outputs.elegivel == 'true'
@@ -52,7 +76,7 @@ jobs:
           PACOTE: ${{ steps.fila.outputs.pacote }}
         run: |
           [[ "$PACOTE" =~ ^dados/editorial/aprovados/[a-f0-9]{64}\.json$ ]] || exit 1
-          git ls-files --error-unmatch -- "$PACOTE"
+          test -f "$PACOTE"
           npm run article:review -- conferir "$PACOTE"
           npm run article:review -- publicar "$PACOTE"
       - name: Rebuild e auditoria antes do commit
@@ -80,6 +104,29 @@ jobs:
           export EXPECTED_REVISION="$(git rev-parse HEAD)"
           node scripts/wait-for-pages.js
           node scripts/verify-deployment.js
+      - name: Registrar resultado editorial no resumo
+        if: always()
+        env:
+          RESULTADO: ${{ job.status }}
+          PACOTE: ${{ steps.fila.outputs.pacote }}
+          ELEGIVEL: ${{ steps.fila.outputs.elegivel }}
+        run: |
+          printf '## Publicacao editorial\nResultado: %s\nPacote: `%s`\n' "$RESULTADO" "$PACOTE" >> "$GITHUB_STEP_SUMMARY"
+          if [[ "$ELEGIVEL" == 'true' && "$RESULTADO" == 'success' ]]; then
+            printf '\nPublicacao e verificacao online concluidas.\n' >> "$GITHUB_STEP_SUMMARY"
+          else
+            printf '\nNenhuma nova publicacao confirmada nesta execucao. Consulte os motivos de retencao ou a cadencia nos passos acima.\n' >> "$GITHUB_STEP_SUMMARY"
+          fi
+          printf '\nRevisao automatizada nao equivale a aprovacao humana. Erros de fonte, revisao ou auditoria bloqueiam a publicacao.\n' >> "$GITHUB_STEP_SUMMARY"
+      - name: Preservar rascunhos e relatorios
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: revisao-editorial-${{ github.run_id }}
+          path: .editorial/rascunhos/*.json
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 90
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -2427,12 +2427,13 @@ function publicarRascunhoAprovado(rascunho, { agora = new Date() } = {}) {
       sourceUrl: noticia.url,
       sourceTitle: noticia.titulo
     });
-    const sourceDate = noticia.data ? new Date(noticia.data).toISOString() : null;
+    const sourceDate = noticia.data ? (/^\d{4}-\d{2}-\d{2}$/.test(noticia.data) ? noticia.data : new Date(noticia.data).toISOString()) : null;
     const editorial = {
-      hash: rascunho.revisaoHumana.hash,
+      hash: (rascunho.revisaoHumana || rascunho.revisaoAutomatica).hash,
       conteudoHash: hashCorpoEditorial(corpoArtigo),
       politica: rascunho.politica,
       revisaoHumana: rascunho.revisaoHumana,
+      ...(rascunho.revisaoAutomatica ? { revisaoAutomatica: rascunho.revisaoAutomatica } : {}),
       dossie: rascunho.dossie,
       geracao: rascunho.geracao || null,
       humanizer: rascunho.humanizer || null
@@ -3199,7 +3200,7 @@ function reconstruirPaginasSeo() {
   console.log(`SEO reconstruído para ${resultado.artigosPublicaveis} artigos publicáveis. Aliases atualizados: ${resultado.aliasesAlterados}. Listagens obsoletas: ${resultado.listagensObsoletas}. Artigos indisponíveis: ${resultado.indisponiveisAlterados}. Artigos obsoletos: ${resultado.artigosObsoletos}. Relacionados atualizados: ${resultado.relacionadosAlterados}. HTMLs com links corrigidos: ${resultado.linksCorrigidos}.`);
 }
 
-module.exports = { gerar, publicarRascunhoAprovado, humanizarArtigoGerado, reconstruirPaginasSeo, prepararArtigosPublicaveis, gerarArquivoCronologico, gerarHtmlAliasLegado, gerarSeoHead, gerarDescricaoSeo };
+module.exports = { gerar, publicarRascunhoAprovado, humanizarArtigoGerado, chamarOpenAiChatCompletion, reconstruirPaginasSeo, prepararArtigosPublicaveis, gerarArquivoCronologico, gerarHtmlAliasLegado, gerarSeoHead, gerarDescricaoSeo };
 
 if (require.main === module) {
   if (process.argv.includes("--rebuild-seo") && process.argv.includes("--draft-only")) {

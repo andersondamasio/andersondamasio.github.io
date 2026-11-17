@@ -19,7 +19,7 @@ function selecionarPacote({ root = process.cwd(), pacote = "", agora = new Date(
     if (path.dirname(real) !== base) throw new Error("Pacote fora do diretorio aprovado.");
     const rascunho = ler(arquivo);
     const hash = formatoPacote.exec(arquivo)[1];
-    if (hashRascunho(rascunho) !== hash || rascunho.revisaoHumana?.hash !== hash) throw new Error(`Hash divergente: ${arquivo}`);
+    if (hashRascunho(rascunho) !== hash || (rascunho.revisaoHumana || rascunho.revisaoAutomatica)?.hash !== hash) throw new Error(`Hash divergente: ${arquivo}`);
     if (publicados.has(hash)) {
       if (pacote) throw new Error("Pacote ja publicado.");
       continue;

@@ -2,9 +2,7 @@ name: gerar-e-commitar
 
 on:
   workflow_dispatch:
-  schedule:
-    # GitHub Actions usa UTC; toda segunda as 12:00 UTC equivale a 09:00 em Sao Paulo.
-    - cron: "0 12 * * 1"
+  # Geracao semanal agora integra o publicador. Este fluxo conserva o modo rascunho manual.
 
 permissions:
   contents: read
