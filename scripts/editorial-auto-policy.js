@@ -29,8 +29,11 @@ function avaliarRevisaoAutomatica(r, titulos = [], agora = new Date()) {
   const afirmacoes = r.dossie?.afirmacoes || [];
   // Every prose block must be accounted for; structural checks are not a truth detector.
   const blocos = $('p, li, blockquote').toArray().filter(el => !$(el).children('p, li, blockquote, ul, ol').length)
-    .map(el => textoHtml($(el).html())).filter(t => t.length >= 15);
+    .map(el => textoHtml($(el).html())).filter(Boolean);
   if (!blocos.length || blocos.some(b => !afirmacoes.some(a => textoHtml(a.trecho) === b))) motivos.push('cobertura-de-afirmacoes-incompleta');
+  const textoForaDosBlocos = $.root().find('*').addBack().contents().toArray().some(n =>
+    n.type === 'text' && n.data.trim() && !$(n).parent().closest('p, li, blockquote, h2, h3, h4').length);
+  if (textoForaDosBlocos) motivos.push('texto-fora-do-mapa-de-afirmacoes');
   for (const a of afirmacoes.filter(a => a.tipo === 'fato')) {
     if (!fontes.some(f => f.url === a.fonteUrl) || !a.ancora || a.ancora.length < 10 || a.ancora.length > 140) motivos.push('fato-sem-ancora');
   }

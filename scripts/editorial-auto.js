@@ -97,7 +97,7 @@ function prepararAprovacao(r, parecer, fontes, titulos, modelo, agora = new Date
       .flatMap(a => String(a.ancora || '').trim().split(/\s+/));
     if (palavras.length > 25) throw new Error('Excesso de citacao literal nas ancoras da fonte.');
   }
-  const paragrafos = $('p,li,blockquote').toArray().map(e => textoHtml($.html(e))).filter(t => t.length >= 15);
+  const paragrafos = $('p,li,blockquote').toArray().map(e => textoHtml($.html(e))).filter(Boolean);
   for (const trecho of paragrafos) {
     if (!afirmacoes.some(a => textoHtml(a.trecho) === trecho)) throw new Error('Mapa nao cobre todos os paragrafos.');
   }

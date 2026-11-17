@@ -50,7 +50,10 @@ test('recusa pendencias, fatos sem ancora, cobertura incompleta, fonte inventada
     f => { f.parecer.dossie.afirmacoes[0].ancora = 'Frase que nao consta na fonte consultada.'; },
     f => { f.parecer.dossie.fontes[0].url = 'https://example.org/inventada'; },
     f => { f.r.revisaoEditorial.aceita = false; }, f => { f.r.corpoArtigo += '<img src="/a.png">'; },
-    f => { f.fontes[0].consultadaEm = '2000-01-01'; }]) {
+    f => { f.fontes[0].consultadaEm = '2000-01-01'; },
+    f => { f.r.corpoArtigo += '<p>100% seguro.</p>'; },
+    f => { f.r.corpoArtigo += '<div>Uma nova afirmacao fora dos paragrafos mapeados.</div>'; },
+    f => { f.r.qualidadeArtigo = { aceita: false }; }]) {
     const f = fixture(); alterar(f); assert.throws(f.aprovar);
   }
 });
